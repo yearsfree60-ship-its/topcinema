@@ -1,0 +1,13 @@
+{
+  "name": "manhwa-prepare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "تحضير مسبق (offline) لفصل مانهوا: متصفح حقيقي يفتح الصفحة، يستخرج روابط الصور، يضغطها محليًا، وينشرها كملفات ثابتة عبر GitHub Pages.",
+  "scripts": {
+    "prepare-chapters": "node scripts/prepare.js"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "sharp": "^0.33.5"
+  }
+}
