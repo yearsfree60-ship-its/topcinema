@@ -1,14 +1,38 @@
 {
   "manga": {
-    "azorafly.com__the-villains-daughter-plans-to-run-away": {
-      "name": "the villains daughter plans to run away",
+    "azorafly.com__xxx": {
+      "name": "xxx",
       "chapters": [
+        {
+          "label": "الفصل 2",
+          "chNum": 2.0,
+          "sourceUrl": "https://azorafly.com/series/xxx/chapter-2",
+          "images": [
+            "https://cdn.jsdelivr.net/gh/yearsfree60-ship-its/topcinema@output/output/azorafly.com__xxx/ch-2/001.webp"
+          ]
+        },
+        {
+          "label": "الفصل 3",
+          "chNum": 3.0,
+          "sourceUrl": "https://azorafly.com/series/xxx/chapter-3",
+          "images": [
+            "https://cdn.jsdelivr.net/gh/yearsfree60-ship-its/topcinema@output/output/azorafly.com__xxx/ch-3/001.webp"
+          ]
+        },
+        {
+          "label": "الفصل 4",
+          "chNum": 4.0,
+          "sourceUrl": "https://azorafly.com/series/xxx/chapter-4",
+          "images": [
+            "https://cdn.jsdelivr.net/gh/yearsfree60-ship-its/topcinema@output/output/azorafly.com__xxx/ch-4/001.webp"
+          ]
+        },
         {
           "label": "الفصل 5",
           "chNum": 5.0,
-          "sourceUrl": "https://azorafly.com/series/the-villains-daughter-plans-to-run-away/chapter-2  https://azorafly.com/series/the-villains-daughter-plans-to-run-away/chapter-3  https://azorafly.com/series/the-villains-daughter-plans-to-run-away/chapter-4  https://azorafly.com/series/the-villains-daughter-plans-to-run-away/chapter-5",
+          "sourceUrl": "https://azorafly.com/series/xxx/chapter-5",
           "images": [
-            "https://cdn.jsdelivr.net/gh/yearsfree60-ship-its/topcinema@output/output/azorafly.com__the-villains-daughter-plans-to-run-away/ch-5/001.webp"
+            "https://cdn.jsdelivr.net/gh/yearsfree60-ship-its/topcinema@output/output/azorafly.com__xxx/ch-5/001.webp"
           ]
         }
       ]
