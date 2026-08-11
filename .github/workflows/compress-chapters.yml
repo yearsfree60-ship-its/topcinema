@@ -46,7 +46,7 @@ jobs:
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           OUTPUT_DIR: output
-          CDN_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output
+          CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
         run: python compress_chapters.py
 
       - name: نشر النتائج على فرع output
@@ -80,7 +80,7 @@ jobs:
         run: |
           echo "=================================================="
           echo "manifest.json:"
-          echo "https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
           echo "=================================================="
 
       - name: إجبار تحديث كاش jsDelivr فورًا
