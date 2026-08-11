@@ -41,13 +41,25 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     u = urlparse(url)
     parts = [p for p in u.path.split("/") if p]
     chapter_num = None
-    for p in reversed(parts):
-        m = re.search(r"(\d+)$", p)
+    chapter_part_index = None
+    for i in range(len(parts) - 1, -1, -1):
+        m = re.search(r"(\d+)$", parts[i])
         if m:
             chapter_num = m.group(1)
+            chapter_part_index = i
             break
-    manga_parts = [p for p in parts if not re.fullmatch(r"\d+", p) and p.lower() not in
-                   ("chapter", "chapters", "manga", "series", "read", "manhwa")]
+    # نستبعد من اسم المانهوا: أي جزء رقمي بحت، وأي جزء هو تحديدًا رقم الفصل
+    # (حتى لو ملتصق بكلمة مثل "chapter-2")، وكلمات البنية الشائعة (chapter/manga/series...)
+    STRUCTURE_WORDS = {"chapter", "chapters", "manga", "series", "read", "manhwa", "ch"}
+    manga_parts = []
+    for i, p in enumerate(parts):
+        if i == chapter_part_index:
+            continue
+        if re.fullmatch(r"\d+", p):
+            continue
+        if p.lower() in STRUCTURE_WORDS:
+            continue
+        manga_parts.append(p)
     manga_name = manga_parts[-1] if manga_parts else u.hostname
     return f"{u.hostname}__{slugify(manga_name)}", (chapter_num or "0")
 
