@@ -82,4 +82,8 @@ jobs:
           echo "manifest.json:"
           echo "https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json"
           echo "=================================================="
-          echo "قد يحتاج جسدليفر بضع دقائق ليعكس أحدث نسخة (كاش)."
+
+      - name: إجبار تحديث كاش jsDelivr فورًا
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
+          echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
