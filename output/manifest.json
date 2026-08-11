@@ -1,3 +1,35 @@
 {
-  "manga": {}
+  "manga": {
+    "olympustaff.com__altragaa-almay-llaaab-almsto-alaks": {
+      "name": "altragaa almay llaaab almsto alaks",
+      "chapters": [
+        {
+          "label": "الفصل 41",
+          "chNum": 41.0,
+          "sourceUrl": "https://olympustaff.com/series/altragaa-almay-llaaab-almsto-alaks/41",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-41/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-41/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-41/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-41/013.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-41/014.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-41/015.webp"
+          ]
+        },
+        {
+          "label": "الفصل 42",
+          "chNum": 42.0,
+          "sourceUrl": "https://olympustaff.com/series/altragaa-almay-llaaab-almsto-alaks/42",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-42/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-42/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-42/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-42/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-42/011.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__altragaa-almay-llaaab-almsto-alaks/ch-42/012.webp"
+          ]
+        }
+      ]
+    }
+  }
 }
