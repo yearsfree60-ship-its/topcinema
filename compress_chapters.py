@@ -161,7 +161,10 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
 
 
 async def main():
-    chapter_urls = [u.strip() for u in CHAPTER_URLS_RAW.splitlines() if u.strip()]
+    chapter_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
+    print(f"📋 تم استخراج {len(chapter_urls)} رابط صالح من المدخلات:")
+    for u in chapter_urls:
+        print(f"   - {u}")
     if not chapter_urls:
         print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
         sys.exit(1)
