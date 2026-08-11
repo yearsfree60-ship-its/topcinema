@@ -51,6 +51,55 @@ jobs:
 
       - name: نشر النتائج على فرع output
         run: |
+          set -e
+          git config user.name "manhwa-bot"
+          git config user.email "bot@users.noreply.github.com"
+
+          # نحفظ مجلد الإخراج الجديد خارج شجرة git مؤقتًا قبل تبديل الفروع
+          mv output /tmp/output-new
+
+          if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+            # الفرع output موجود مسبقًا: نجيبه بتاريخه كاملًا حتى تتراكم الفصول القديمة
+            git fetch origin output
+            git checkout output
+          else
+            # أول تشغيلة: ننشئ الفرع من الصفر بدون تاريخ main
+            git checkout --orphan output
+            git rm -rf . > /dev/null 2>&1 || true
+          fi
+
+          # ندمج الفصول الجديدة فوق الموجودة (لا يحذف فصول سابقة، فقط يضيف/يحدّث)
+          mkdir -p output
+          cp -r /tmp/output-new/. output/
+
+          git add output
+          git commit -m "تحديث الفصول المضغوطة - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "لا تغييرات جديدة"
+          git push origin output
+
+      - name: رابط النتيجة
+        run: |
+          echo "=================================================="
+          echo "manifest.json:"
+          echo "https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json"
+          echo "=================================================="
+          echo "قد يحتاج جسدليفر بضع دقائق ليعكس أحدث نسخة (كاش)."
+
+      - name: تثبيت المكتبات
+        run: |
+          pip install --quiet playwright pillow requests
+          python -m playwright install --with-deps chromium
+
+      - name: تشغيل الضغط
+        env:
+          CHAPTER_URLS: ${{ inputs.chapter_urls }}
+          IMG_QUALITY: ${{ inputs.quality }}
+          IMG_MAX_WIDTH: ${{ inputs.max_width }}
+          OUTPUT_DIR: output
+          CDN_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output
+        run: python compress_chapters.py
+
+      - name: نشر النتائج على فرع output
+        run: |
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
           git checkout --orphan output-tmp
