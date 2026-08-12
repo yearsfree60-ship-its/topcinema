@@ -46,8 +46,6 @@ jobs:
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           OUTPUT_DIR: output
-          # تحويل من jsDelivr إلى raw.githubusercontent.com: كاش قصير وموحّد (~5 دقائق)
-          # بدون "كاش اسم الفرع" المنفصل الذي كان يعلّق على أول commit ولا يتحدّث أبدًا
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
         run: python compress_chapters.py
 
@@ -84,3 +82,8 @@ jobs:
           echo "manifest.json:"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
           echo "=================================================="
+
+      - name: إجبار تحديث كاش jsDelivr فورًا
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
+          echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
