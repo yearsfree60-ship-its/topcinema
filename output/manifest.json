@@ -1,311 +1,293 @@
 {
   "manga": {
-    "olympustaff.com__smf": {
-      "name": "smf",
+    "azorafly.com__in-this-life-i-will-be-the-lord": {
+      "name": "in this life i will be the lord",
       "chapters": [
         {
-          "label": "الفصل 21",
-          "chNum": 21.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/21",
+          "label": "الفصل 0",
+          "chNum": 0.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-0",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-21/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-21/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-21/003.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-0/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-0/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-0/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-0/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-0/005.webp"
           ]
         },
         {
-          "label": "الفصل 22",
-          "chNum": 22.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/22",
+          "label": "الفصل 1",
+          "chNum": 1.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-1",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-22/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-22/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-22/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-22/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-22/005.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-1/008.webp"
           ]
         },
         {
-          "label": "الفصل 23",
-          "chNum": 23.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/23",
+          "label": "الفصل 2",
+          "chNum": 2.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-2",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/008.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/009.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/010.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/011.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/012.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/013.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/014.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/015.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/016.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/017.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/018.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/019.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/020.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/021.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/022.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/023.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/024.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/025.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/026.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/027.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-23/028.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-2/007.webp"
           ]
         },
         {
-          "label": "الفصل 24",
-          "chNum": 24.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/24",
+          "label": "الفصل 3",
+          "chNum": 3.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-3",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-24/007.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-3/008.webp"
           ]
         },
         {
-          "label": "الفصل 25",
-          "chNum": 25.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/25",
+          "label": "الفصل 4",
+          "chNum": 4.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-4",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-25/007.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-4/007.webp"
           ]
         },
         {
-          "label": "الفصل 26",
-          "chNum": 26.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/26",
+          "label": "الفصل 5",
+          "chNum": 5.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-5",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-26/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-26/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-26/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-26/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-26/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-26/006.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-5/007.webp"
           ]
         },
         {
-          "label": "الفصل 27",
-          "chNum": 27.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/27",
+          "label": "الفصل 6",
+          "chNum": 6.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-6",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-27/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-27/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-27/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-27/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-27/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-27/006.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-6/007.webp"
           ]
         },
         {
-          "label": "الفصل 28",
-          "chNum": 28.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/28",
+          "label": "الفصل 7",
+          "chNum": 7.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-7",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-28/007.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-7/007.webp"
           ]
         },
         {
-          "label": "الفصل 29",
-          "chNum": 29.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/29",
+          "label": "الفصل 8",
+          "chNum": 8.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-8",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-29/008.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-8/007.webp"
           ]
         },
         {
-          "label": "الفصل 30",
-          "chNum": 30.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/30",
+          "label": "الفصل 9",
+          "chNum": 9.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-9",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-30/007.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-9/007.webp"
           ]
         },
         {
-          "label": "الفصل 31",
-          "chNum": 31.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/31",
+          "label": "الفصل 10",
+          "chNum": 10.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-10",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-31/007.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-10/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-10/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-10/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-10/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-10/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-10/006.webp"
           ]
         },
         {
-          "label": "الفصل 32",
-          "chNum": 32.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/32",
+          "label": "الفصل 11",
+          "chNum": 11.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-11",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/008.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-32/009.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-11/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-11/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-11/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-11/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-11/005.webp"
           ]
         },
         {
-          "label": "الفصل 33",
-          "chNum": 33.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/33",
+          "label": "الفصل 12",
+          "chNum": 12.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-12",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/008.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-33/009.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-12/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-12/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-12/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-12/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-12/005.webp"
           ]
         },
         {
-          "label": "الفصل 34",
-          "chNum": 34.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/34",
+          "label": "الفصل 13",
+          "chNum": 13.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-13",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-34/007.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-13/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-13/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-13/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-13/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-13/005.webp"
           ]
         },
         {
-          "label": "الفصل 35",
-          "chNum": 35.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/35",
+          "label": "الفصل 14",
+          "chNum": 14.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-14",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-35/008.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-14/007.webp"
           ]
         },
         {
-          "label": "الفصل 36",
-          "chNum": 36.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/36",
+          "label": "الفصل 15",
+          "chNum": 15.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-15",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/008.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-36/009.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-15/007.webp"
           ]
         },
         {
-          "label": "الفصل 37",
-          "chNum": 37.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/37",
+          "label": "الفصل 16",
+          "chNum": 16.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-16",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-37/008.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-16/007.webp"
           ]
         },
         {
-          "label": "الفصل 38",
-          "chNum": 38.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/38",
+          "label": "الفصل 17",
+          "chNum": 17.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-17",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-38/008.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-17/007.webp"
           ]
         },
         {
-          "label": "الفصل 39",
-          "chNum": 39.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/39",
+          "label": "الفصل 18",
+          "chNum": 18.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-18",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-39/008.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-18/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-18/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-18/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-18/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-18/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-18/006.webp"
           ]
         },
         {
-          "label": "الفصل 40",
-          "chNum": 40.0,
-          "sourceUrl": "https://olympustaff.com/series/SMF/40",
+          "label": "الفصل 19",
+          "chNum": 19.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-19",
           "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__smf/ch-40/008.webp"
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-19/007.webp"
+          ]
+        },
+        {
+          "label": "الفصل 20",
+          "chNum": 20.0,
+          "sourceUrl": "https://azorafly.com/series/in-this-life-i-will-be-the-lord/chapter-20",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__in-this-life-i-will-be-the-lord/ch-20/008.webp"
           ]
         }
       ]
