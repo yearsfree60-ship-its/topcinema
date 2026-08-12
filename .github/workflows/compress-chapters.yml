@@ -37,7 +37,7 @@ jobs:
 
       - name: تثبيت المكتبات
         run: |
-          pip install --quiet playwright pillow requests
+          pip install --quiet playwright pillow requests curl_cffi
           python -m playwright install --with-deps chromium
 
       - name: تشغيل الضغط
@@ -47,6 +47,11 @@ jobs:
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           OUTPUT_DIR: output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
+          # بروكسي اختياري لتجاوز حجب نطاقات IP السحابية (مواقع محمية بقوة).
+          # أضف secret اسمه PROXY_URL في إعدادات المستودع (Settings > Secrets
+          # and variables > Actions) بالشكل: http://user:pass@host:port
+          # واتركه بلا قيمة إن لم تحتجه — المواقع الأخف حماية تعمل بدونه.
+          PROXY_URL: ${{ secrets.PROXY_URL }}
         run: python compress_chapters.py
 
       - name: نشر النتائج على فرع output
