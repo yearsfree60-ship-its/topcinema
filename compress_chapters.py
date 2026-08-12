@@ -7,17 +7,21 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 استراتيجية الاستخراج (من الأخف إلى الأثقل):
 1) طلب HTTP مباشر بمحاكاة بصمة TLS لمتصفح Chrome حقيقي (curl_cffi إن كانت
    متاحة) — بعض أنظمة الحماية تحجب تحديدًا بصمة TLS الخاصة بمكتبة
-   requests/Python الافتراضية (وتختلف عن بصمة أي متصفح حقيقي) وترفض الطلب
-   فورًا (403) دون فحص أي شيء آخر فيه.
+   requests/Python الافتراضية وترفض الطلب فورًا (403) دون فحص أي شيء آخر.
 2) طلب requests عادي كاحتياط إن لم تتوفر curl_cffi.
-3) إن فشلت كل محاولات HTTP المباشر (صفر صور، صفحة تحقق، أو حجب)، ننتقل
+3) إن فشلت (1) و(2) بسبب حجب محتمل على مستوى IP (لا بصمة الطلب)، وكان
+   REWRITE_PROXY_BASE مضبوطًا (رابط بروكسي إعادة كتابة بصيغة ?url=...، مثل
+   Cloudflare Worker)، نمرّر الطلب المباشر عبره — هذا يغيّر عنوان IP الظاهر
+   للموقع الهدف فعليًا (عكس بصمة TLS، ما يتغيّر بدون هذا).
+4) إن فشلت كل محاولات HTTP المباشر (صفر صور، صفحة تحقق، أو حجب)، ننتقل
    لمتصفح Chromium حقيقي مؤتمت عبر Playwright.
 
 ملاحظة مهمة عن حدود هذا الحل:
-إن كانت الحماية تحجب أساسًا نطاقات عناوين IP السحابية (AWS/Azure/GCP، وهذا
-يشمل عناوين GitHub Actions) بدل فحص بصمة الطلب، فلا يوجد أي تعديل برمجي في
-هذا السكربت يتجاوز ذلك بشكل مضمون — الحل العملي الوحيد هو استخدام بروكسي
-(عبر متغير البيئة PROXY_URL أدناه) يوفّر عنوان IP غير مصنّف كسحابي/بوتات.
+إن كانت الحماية تحجب نطاقات عناوين IP السحابية (AWS/Azure/GCP، وهذا يشمل
+عناوين GitHub Actions) عند كل من الطلب المباشر والمتصفح، فلا يوجد أي تعديل
+برمجي محلي يتجاوز ذلك بشكل مضمون إلا بتغيير عنوان IP الظاهر فعليًا — إما عبر
+REWRITE_PROXY_BASE (خطوة 3 أعلاه، تغطي الطلب المباشر وتحميل الصور فقط) أو
+PROXY_URL (بروكسي حقيقي host:port، يغطي المتصفح أيضًا).
 """
 import asyncio
 import json
@@ -25,7 +29,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, quote
 
 import requests
 from PIL import Image
@@ -42,7 +46,7 @@ QUALITY = int(os.environ.get("IMG_QUALITY", "25"))
 MAX_WIDTH = int(os.environ.get("IMG_MAX_WIDTH", "700"))
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
-CDN_BASE = os.environ.get("CDN_BASE", "")  # مثال: https://cdn.jsdelivr.net/gh/USER/REPO@output
+CDN_BASE = os.environ.get("CDN_BASE", "")  # مثال: https://raw.githubusercontent.com/USER/REPO/output/output
 
 # مهلات وسلوك التحميل — قابلة للتعديل عبر متغيرات البيئة بدون تعديل الكود
 NAV_TIMEOUT_MS = int(os.environ.get("NAV_TIMEOUT_MS", "30000"))
@@ -51,10 +55,16 @@ CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
 MIN_IMAGES_HTTP = int(os.environ.get("MIN_IMAGES_HTTP", "2"))
 
-# بروكسي اختياري (مثل: http://user:pass@host:port) يُستخدم في كل الطلبات
-# (HTTP المباشر + المتصفح + تحميل الصور) — ضروري فقط إن كان الموقع يحجب
-# نطاقات IP السحابية تحديدًا بدل فحص بصمة الطلب.
+# بروكسي حقيقي اختياري (مثل: http://user:pass@host:port) يُستخدم في كل
+# الطلبات (HTTP المباشر + المتصفح + تحميل الصور) — الحل الأشمل لحجب IP لكنه
+# يحتاج خدمة بروكسي حقيقية (host:port)، مو بروكسي إعادة كتابة بصيغة ?url=
 PROXY_URL = os.environ.get("PROXY_URL", "").strip() or None
+
+# بروكسي إعادة كتابة اختياري (مثل Cloudflare Worker بصيغة:
+# https://xxx.workers.dev/?url=<encoded>) — لا يعمل كبروكسي حقيقي مع
+# Playwright/requests لكنه يغيّر عنوان IP الظاهر للطلب المباشر ولتحميل
+# الصور، وهو غالبًا كافٍ لو الحجب على مستوى IP فقط بدون حاجة لمتصفح كامل
+REWRITE_PROXY_BASE = os.environ.get("REWRITE_PROXY_BASE", "").strip() or None
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
@@ -72,6 +82,10 @@ def requests_proxies() -> dict | None:
     if not PROXY_URL:
         return None
     return {"http": PROXY_URL, "https": PROXY_URL}
+
+
+def build_rewrite_url(target_url: str) -> str:
+    return f"{REWRITE_PROXY_BASE}?url={quote(target_url, safe='')}"
 
 
 def slugify(text: str) -> str:
@@ -137,11 +151,30 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
     return dedupe(found)
 
 
+def _try_plain_request(url: str, timeout: int = 20) -> str | None:
+    """طلب requests عادي بدون بصمة TLS خاصة — يُستخدم مباشرة، وأيضًا لجلب
+    محتوى عبر بروكسي إعادة الكتابة (حيث بصمة TLS مو مهمة لأن الطلب الفعلي
+    للموقع الهدف يصدر من خادم البروكسي نفسه، مو من جهازنا)."""
+    headers = {
+        "User-Agent": UA,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,ar;q=0.8",
+    }
+    try:
+        resp = requests.get(url, headers=headers, timeout=timeout)
+        resp.raise_for_status()
+        return resp.text
+    except Exception as e:
+        print(f"  ⚠️ فشل الطلب ({url[:60]}...): {e}")
+        return None
+
+
 def fetch_via_http(chapter_url: str) -> list[str]:
     """
-    محاولة أولى وأسرع: طلب HTTP مباشر بدون متصفح كامل، بمحاكاة بصمة TLS
-    لمتصفح حقيقي إن كانت curl_cffi متاحة (تحل حالات الحجب المعتمدة على بصمة
-    الطلب فقط؛ لا تحل حجب IP — لذلك ندعم PROXY_URL أيضًا).
+    محاولة أولى وأسرع: طلب HTTP مباشر بدون متصفح كامل. يجرّب بالترتيب:
+    بصمة TLS حقيقية (curl_cffi) → requests عادي → عبر بروكسي إعادة الكتابة
+    إن كان معرّفًا (REWRITE_PROXY_BASE) — هذا الأخير يفيد تحديدًا لو الحجب
+    على مستوى IP وليس بصمة الطلب.
     """
     headers = {
         "User-Agent": UA,
@@ -172,13 +205,34 @@ def fetch_via_http(chapter_url: str) -> list[str]:
             html = resp.text
         except Exception as e:
             print(f"  ⚠️ فشل الطلب المباشر (HTTP): {e}")
-            return []
 
-    if any(marker in html.lower() for marker in CHALLENGE_MARKERS):
-        print("  🛡️ الطلب المباشر أعاد صفحة تحقق/حماية — سيتم تجربة المتصفح")
-        return []
+    if html is not None and any(marker in html.lower() for marker in CHALLENGE_MARKERS):
+        print("  🛡️ الطلب المباشر أعاد صفحة تحقق/حماية")
+        html = None
 
-    return extract_images_from_html(html, chapter_url)
+    if html is not None:
+        found = extract_images_from_html(html, chapter_url)
+        if found:
+            return found
+        print("  ⚠️ الطلب المباشر نجح لكن بدون العثور على صور بالمحتوى")
+
+    # فشل كل شيء أعلاه (بصمة TLS، requests عادي، أو رجعت صفحة تحقق/بدون صور)
+    # — هذا نمط حجب على مستوى IP وليس بصمة الطلب. نجرّب عبر بروكسي إعادة
+    # الكتابة إن كان متوفرًا، لأنه الوحيد اللي يغيّر عنوان IP الظاهر هنا.
+    if REWRITE_PROXY_BASE:
+        print("  🌍 تجربة عبر بروكسي إعادة الكتابة (REWRITE_PROXY_BASE)...")
+        rewritten_html = _try_plain_request(build_rewrite_url(chapter_url))
+        if rewritten_html:
+            if any(marker in rewritten_html.lower() for marker in CHALLENGE_MARKERS):
+                print("  🛡️ حتى عبر البروكسي: صفحة تحقق/حماية")
+                return []
+            found = extract_images_from_html(rewritten_html, chapter_url)
+            if found:
+                print(f"  ✅ نجح عبر بروكسي إعادة الكتابة: {len(found)} صورة")
+                return found
+            print("  ⚠️ نجح الطلب عبر البروكسي لكن بدون صور")
+
+    return []
 
 
 async def looks_like_challenge_page(page) -> bool:
@@ -325,8 +379,8 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
 
     if not image_urls:
         print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
-        if not PROXY_URL:
-            print("  💡 إن كان هذا يتكرر مع هذا الموقع تحديدًا، جرّب ضبط PROXY_URL (بروكسي) — الحجب هنا يبدو على مستوى IP وليس بصمة الطلب فقط")
+        if not PROXY_URL and not REWRITE_PROXY_BASE:
+            print("  💡 إن كان هذا يتكرر مع هذا الموقع تحديدًا، جرّب ضبط REWRITE_PROXY_BASE أو PROXY_URL — الحجب هنا يبدو على مستوى IP وليس بصمة الطلب فقط")
         return None
 
     manga_id, chapter_num = manga_slug_from_url(chapter_url)
@@ -335,6 +389,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
 
     saved_paths = []
     for i, img_url in enumerate(image_urls, start=1):
+        raw_bytes = None
         try:
             resp = requests.get(
                 img_url,
@@ -343,13 +398,29 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
                 proxies=requests_proxies(),
             )
             resp.raise_for_status()
-            compressed = compress_image(resp.content, MAX_WIDTH, QUALITY)
+            raw_bytes = resp.content
+        except Exception as e:
+            if REWRITE_PROXY_BASE:
+                try:
+                    resp = requests.get(build_rewrite_url(img_url), timeout=20)
+                    resp.raise_for_status()
+                    raw_bytes = resp.content
+                except Exception as e2:
+                    print(f"  ⚠️ فشلت صورة {i} حتى عبر البروكسي: {e2}")
+            else:
+                print(f"  ⚠️ فشلت صورة {i}: {e}")
+
+        if raw_bytes is None:
+            continue
+
+        try:
+            compressed = compress_image(raw_bytes, MAX_WIDTH, QUALITY)
             filename = f"{i:03d}.webp"
             (chapter_dir / filename).write_bytes(compressed)
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-            print(f"  ✅ {i}/{len(image_urls)} — {len(resp.content)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
+            print(f"  ✅ {i}/{len(image_urls)} — {len(raw_bytes)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
-            print(f"  ⚠️ فشلت صورة {i}: {e}")
+            print(f"  ⚠️ فشل ضغط صورة {i}: {e}")
 
     if not saved_paths:
         return None
@@ -372,7 +443,9 @@ async def main():
         sys.exit(1)
 
     if PROXY_URL:
-        print("🌍 يتم استخدام بروكسي مُعرَّف عبر PROXY_URL لكل الطلبات")
+        print("🌍 يتم استخدام بروكسي حقيقي (PROXY_URL) لكل الطلبات")
+    if REWRITE_PROXY_BASE:
+        print("🌍 بروكسي إعادة الكتابة (REWRITE_PROXY_BASE) مفعّل كاحتياط للطلب المباشر وتحميل الصور")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     results = []
