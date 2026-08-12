@@ -6,13 +6,23 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
 روابط الصور، يحمّلها، يضغطها فعليًا بمكتبة Pillow، ويحفظها في مجلد الإخراج
 مع ملف manifest.json يصف كل مانهوا وفصولها وروابط صورها النهائية.
 
-ملاحظة تصميم مهمة:
-لا يعتمد هذا السكربت على "networkidle" لاعتبار الصفحة جاهزة. كثير من مواقع
-المانجا (خصوصًا المدعومة بإعلانات) فيها طلبات شبكة دورية لا تتوقف أبدًا
-(إعلانات/تتبّع/نبضات AJAX)، فحالة "خمول الشبكة" لا تتحقق مطلقًا حتى لو كانت
-الصفحة والصور قد اكتملت فعليًا منذ اللحظة الأولى — وهذا كان سبب فشل الاستخراج
-على بعض المواقع مع نجاحه على مواقع أخرى أخف. البديل هنا: تحميل أسرع
-(domcontentloaded) ثم انتظار مخصص يفحص عدد الصور الحقيقية في الصفحة حتى يستقر.
+ملاحظات تصميم مهمة (تراكمت من التشخيص الفعلي لمشاكل واجهناها):
+
+1) لا يعتمد هذا السكربت على "networkidle" لاعتبار الصفحة جاهزة. كثير من مواقع
+   المانجا (خصوصًا المدعومة بإعلانات) فيها طلبات شبكة دورية لا تتوقف أبدًا،
+   فحالة "خمول الشبكة" لا تتحقق مطلقًا حتى لو اكتمل المحتوى فعليًا.
+
+2) تحميل الصور نفسها يتم عبر Playwright (نفس جلسة المتصفح وكوكيزها وبصمتها)
+   وليس عبر مكتبة requests منفصلة — لأن بعض المواقع ترفض تحميل الصور من
+   خارج جلسة المتصفح الحقيقية (تسبّب خطأ "cannot identify image" رغم أن
+   الرابط نفسه صحيح ويعمل داخل نفس متصفح Playwright الذي فتح الصفحة).
+
+3) الاستخراج يجرّب أولًا محدّدات CSS معروفة لحاويات محتوى المانجا الحقيقي
+   (Madara وما شابه) قبل اللجوء لكل وسوم <img> في الصفحة — لتفادي التقاط
+   شعار الموقع أو الإعلانات أو صور مصغّرة لمانهوات أخرى في الشريط الجانبي.
+
+4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
+   (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
 """
 import asyncio
 import json
@@ -22,7 +32,6 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 
-import requests
 from PIL import Image
 from io import BytesIO
 from playwright.async_api import async_playwright
@@ -31,25 +40,39 @@ QUALITY = int(os.environ.get("IMG_QUALITY", "25"))
 MAX_WIDTH = int(os.environ.get("IMG_MAX_WIDTH", "700"))
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
-CDN_BASE = os.environ.get("CDN_BASE", "")  # مثال: https://cdn.jsdelivr.net/gh/USER/REPO@output
+CDN_BASE = os.environ.get("CDN_BASE", "")
 
-# مهلات وسلوك التحميل — قابلة للتعديل عبر متغيرات البيئة بدون تعديل الكود
 NAV_TIMEOUT_MS = int(os.environ.get("NAV_TIMEOUT_MS", "30000"))
 CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
 
+# أقصى بعد مسموح لأي صورة (عرض أو طول) قبل إعادة تحجيمه إجباريًا — يحمي من
+# فشل ترميز WebP الذي له حد صارم 16383 بكسل، بغضّ النظر عن إعداد العرض الأقصى
+WEBP_HARD_LIMIT = 16000
+
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
-IMG_EXT_PATTERN = re.compile(r"\.(jpe?g|png|webp|avif)(\?|$)", re.I)
 
-# عبارات شائعة في صفحات تحقق/حماية (Cloudflare وما شابه) — لاكتشافها والتعامل معها
+# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية (Madara وما شابه من قوالب
+# ووردبريس) — تُجرَّب أولًا لتضييق الاستخراج على المحتوى الحقيقي فقط
+CONTENT_SELECTORS = [
+    ".reading-content img",
+    ".page-break img",
+    ".text-left img",
+    "#readerarea img",
+    ".chapter-content img",
+]
+
 CHALLENGE_MARKERS = [
     "just a moment", "checking your browser", "attention required",
     "cf-browser-verification", "ddos protection by", "verifying you are human",
     "enable javascript and cookies",
 ]
+
+IMG_SRC_JS = """els => els.map(e => e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
+     || e.getAttribute('data-original') || e.currentSrc || e.src).filter(Boolean)"""
 
 
 def slugify(text: str) -> str:
@@ -69,8 +92,6 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
             chapter_num = m.group(1)
             chapter_part_index = i
             break
-    # نستبعد من اسم المانهوا: أي جزء رقمي بحت، وأي جزء هو تحديدًا رقم الفصل
-    # (حتى لو ملتصق بكلمة مثل "chapter-2")، وكلمات البنية الشائعة (chapter/manga/series...)
     STRUCTURE_WORDS = {"chapter", "chapters", "manga", "series", "read", "manhwa", "ch"}
     manga_parts = []
     for i, p in enumerate(parts):
@@ -86,7 +107,6 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
 
 
 async def looks_like_challenge_page(page) -> bool:
-    """يفحص إن كانت الصفحة الحالية صفحة تحقق/حماية بدل المحتوى الحقيقي."""
     try:
         title = (await page.title() or "").lower()
         body_text = ""
@@ -99,7 +119,6 @@ async def looks_like_challenge_page(page) -> bool:
 
 
 async def count_real_images(page) -> int:
-    """يعدّ عناصر <img> التي تحمل رابط صورة حقيقي (وليس data: أو فارغ أو قصير جدًا)."""
     try:
         return await page.eval_on_selector_all(
             "img",
@@ -114,12 +133,6 @@ async def count_real_images(page) -> int:
 
 
 async def wait_for_real_images(page, max_wait_ms: int, poll_ms: int) -> int:
-    """
-    يفحص عدد الصور الحقيقية بشكل متكرر حتى يستقر الرقم مرتين متتاليتين أو ينتهي
-    الوقت — هذا بديل موثوق لانتظار "خمول الشبكة" الذي لا يتحقق أبدًا في مواقع
-    فيها إعلانات/سكربتات تتبّع مستمرة، مع تجنّب إنهاء الانتظار قبل اكتمال الصور
-    فعليًا (كما يحدث مع وقت ثابت وحيد).
-    """
     elapsed = 0
     last_count = -1
     stable_rounds = 0
@@ -137,35 +150,6 @@ async def wait_for_real_images(page, max_wait_ms: int, poll_ms: int) -> int:
     return max(last_count, 0)
 
 
-async def extract_image_urls(page, base_url: str) -> list[str]:
-    # 1) أولوية: أي صور داخل noscript (تُستخدم كبديل حقيقي عند التحميل الكسول)
-    noscript_imgs = await page.eval_on_selector_all(
-        "noscript", "els => els.map(e => e.innerHTML)"
-    )
-    found = []
-    for html in noscript_imgs:
-        for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', html):
-            found.append(urljoin(base_url, m.group(1)))
-    if found:
-        return dedupe(found)
-
-    # 2) وسوم <img> الحقيقية بعد اكتمال تحميل الصفحة (data-src أو src بعد تنفيذ الجافاسكربت)
-    imgs = await page.eval_on_selector_all(
-        "img",
-        """els => els.map(e => e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
-             || e.getAttribute('data-original') || e.currentSrc || e.src)"""
-    )
-    found = [urljoin(base_url, u) for u in imgs if u and not u.startswith("data:")]
-    if found:
-        return dedupe(found)
-
-    # 3) احتياط: أي رابط بامتداد صورة داخل كود الصفحة الكامل
-    html = await page.content()
-    found = [urljoin(base_url, m.group(0)) for m in
-             re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
-    return dedupe(found)
-
-
 def dedupe(urls: list[str]) -> list[str]:
     seen, out = set(), []
     for u in urls:
@@ -175,21 +159,88 @@ def dedupe(urls: list[str]) -> list[str]:
     return out
 
 
+async def extract_image_urls(page, base_url: str) -> list[str]:
+    # 0) أولوية قصوى: محدّدات محتوى معروفة — تستبعد الشعار/الإعلانات تلقائيًا
+    for selector in CONTENT_SELECTORS:
+        try:
+            urls = await page.eval_on_selector_all(selector, IMG_SRC_JS)
+        except Exception:
+            urls = []
+        found = [urljoin(base_url, u) for u in urls if u and not u.startswith("data:")]
+        if len(found) >= 3:
+            return dedupe(found)
+
+    # 1) صور داخل noscript (بديل حقيقي شائع عند التحميل الكسول)
+    noscript_imgs = await page.eval_on_selector_all("noscript", "els => els.map(e => e.innerHTML)")
+    found = []
+    for html in noscript_imgs:
+        for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', html):
+            found.append(urljoin(base_url, m.group(1)))
+    if found:
+        return dedupe(found)
+
+    # 2) كل وسوم <img> في الصفحة (احتياط أخير، عرضة لالتقاط شعار/إعلانات)
+    imgs = await page.eval_on_selector_all("img", IMG_SRC_JS)
+    found = [urljoin(base_url, u) for u in imgs if u and not u.startswith("data:")]
+    if found:
+        return dedupe(found)
+
+    # 3) احتياط نهائي: أي رابط بامتداد صورة داخل كود الصفحة الكامل
+    html = await page.content()
+    found = [urljoin(base_url, m.group(0)) for m in
+             re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
+    return dedupe(found)
+
+
 def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
     img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
+
+    # نتحقق من العرض والطول معًا: صورة ضيقة لكن طويلة جدًا (أو العكس) تتجاوز
+    # حد WebP الصارم (16383 بكسل) حتى لو عرضها ضمن الحد المطلوب أصلًا
+    scale = 1.0
     if img.width > max_width:
-        new_h = int(img.height * (max_width / img.width))
-        img = img.resize((max_width, new_h), Image.LANCZOS)
+        scale = min(scale, max_width / img.width)
+    if img.width * scale > WEBP_HARD_LIMIT:
+        scale = min(scale, WEBP_HARD_LIMIT / img.width)
+    if img.height * scale > WEBP_HARD_LIMIT:
+        scale = min(scale, WEBP_HARD_LIMIT / img.height)
+
+    if scale < 1.0:
+        new_w = max(1, int(img.width * scale))
+        new_h = max(1, int(img.height * scale))
+        img = img.resize((new_w, new_h), Image.LANCZOS)
+
     out = BytesIO()
     img.save(out, format="WEBP", quality=quality, method=6)
     return out.getvalue()
 
 
-async def open_and_collect(browser, chapter_url: str, attempt: int) -> tuple[list[str], str]:
+async def fetch_image_bytes(context, img_url: str, referer: str):
+    """
+    يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية) بدل
+    مكتبة requests منفصلة — يحل مشكلة رفض بعض المواقع للتحميل من خارج
+    جلسة متصفح حقيقية (السبب الأغلب وراء خطأ "cannot identify image").
+    """
+    try:
+        resp = await context.request.get(
+            img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20000,
+        )
+        if not resp.ok:
+            return None
+        body = await resp.body()
+        if not body or len(body) < 500:
+            return None
+        return body
+    except Exception:
+        return None
+
+
+async def open_and_collect(browser, chapter_url: str, attempt: int):
     """
     محاولة واحدة لفتح الصفحة واستخراج روابط الصور.
-    يعيد (روابط_الصور, سبب_الفشل_إن_وجد).
+    يعيد (context, روابط_الصور, سبب_الفشل) — الـcontext يبقى مفتوحًا لأن
+    تحميل الصور لاحقًا يحتاج نفس الجلسة (كوكيز) التي فتحت الصفحة بنجاح.
     """
     context = await browser.new_context(
         user_agent=UA,
@@ -197,8 +248,6 @@ async def open_and_collect(browser, chapter_url: str, attempt: int) -> tuple[lis
         locale="en-US",
         extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
     )
-    # تقليل بصمة الأتمتة — بعض المواقع تكشف navigator.webdriver لتُظهر تحدي حماية
-    # أو تُبقي الصفحة "مشغولة" بطلبات دورية لا تنتهي بدل عرض المحتوى الحقيقي
     await context.add_init_script(
         "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
     )
@@ -207,9 +256,6 @@ async def open_and_collect(browser, chapter_url: str, attempt: int) -> tuple[lis
     navigated = False
     wait_strategy = "domcontentloaded" if attempt == 1 else "load"
     try:
-        # domcontentloaded/load أخف وأكثر موثوقية من networkidle: بعض المواقع
-        # (إعلانات، تتبّع، نبضات AJAX دورية) لا تدخل "خمول شبكة" أبدًا، فيفشل
-        # networkidle دومًا حتى لو اكتمل محتوى الصفحة والصور منذ ثوانٍ.
         await page.goto(chapter_url, wait_until=wait_strategy, timeout=NAV_TIMEOUT_MS)
         navigated = True
     except Exception as e:
@@ -223,27 +269,39 @@ async def open_and_collect(browser, chapter_url: str, attempt: int) -> tuple[lis
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
+    # تمرير تدريجي لأسفل الصفحة لتحفيز أي تحميل كسول يعتمد على ظهور العنصر
+    # بالشاشة (IntersectionObserver) — احتياط إضافي حتى لو المحدّدات نجحت
+    try:
+        for _ in range(6):
+            await page.mouse.wheel(0, 3000)
+            await page.wait_for_timeout(400)
+        await page.mouse.wheel(0, -20000)
+    except Exception:
+        pass
+
     found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
     print(f"  🖼️ صور حقيقية مكتشفة قبل الاستخراج: {found_count}")
 
     image_urls = await extract_image_urls(page, chapter_url)
-    await context.close()
+    await page.close()
 
     if not navigated:
-        return image_urls, "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)"
+        await context.close()
+        return None, [], "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)"
     if not image_urls:
-        return image_urls, "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
-    return image_urls, ""
+        await context.close()
+        return None, [], "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
+    return context, image_urls, ""
 
 
 async def process_chapter(browser, chapter_url: str, index: int, total: int):
     print(f"[{index}/{total}] فتح: {chapter_url}")
 
-    image_urls, fail_reason = [], ""
+    context, image_urls, fail_reason = None, [], ""
     for attempt in range(1, RETRY_PER_CHAPTER + 1):
         if attempt > 1:
             print(f"  🔁 إعادة محاولة #{attempt}")
-        image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt)
+        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt)
         if image_urls:
             break
 
@@ -257,16 +315,20 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
 
     saved_paths = []
     for i, img_url in enumerate(image_urls, start=1):
+        raw = await fetch_image_bytes(context, img_url, chapter_url)
+        if not raw:
+            print(f"  ⚠️ فشلت صورة {i}: تعذّر تحميل البايتات (رفض الخادم أو رابط غير صالح)")
+            continue
         try:
-            resp = requests.get(img_url, headers={"User-Agent": UA, "Referer": chapter_url}, timeout=20)
-            resp.raise_for_status()
-            compressed = compress_image(resp.content, MAX_WIDTH, QUALITY)
+            compressed = compress_image(raw, MAX_WIDTH, QUALITY)
             filename = f"{i:03d}.webp"
             (chapter_dir / filename).write_bytes(compressed)
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-            print(f"  ✅ {i}/{len(image_urls)} — {len(resp.content)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
+            print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
-            print(f"  ⚠️ فشلت صورة {i}: {e}")
+            print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e}")
+
+    await context.close()
 
     if not saved_paths:
         return None
@@ -292,7 +354,6 @@ async def main():
     results = []
 
     async with async_playwright() as p:
-        # تعطيل علم الأتمتة الظاهر لبعض سكربتات كشف البوتات على مواقع المانجا
         browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
         for i, url in enumerate(chapter_urls, start=1):
             r = await process_chapter(browser, url, i, len(chapter_urls))
@@ -300,7 +361,6 @@ async def main():
                 results.append(r)
         await browser.close()
 
-    # بناء manifest.json: مجموعة حسب المانهوا، كل فصل فيه روابط صوره النهائية (CDN)
     manifest = {"manga": {}}
     for r in results:
         mid = r["manga_id"]
