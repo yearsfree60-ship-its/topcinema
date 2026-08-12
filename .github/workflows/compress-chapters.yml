@@ -47,11 +47,13 @@ jobs:
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           OUTPUT_DIR: output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
-          # بروكسي اختياري لتجاوز حجب نطاقات IP السحابية (مواقع محمية بقوة).
-          # أضف secret اسمه PROXY_URL في إعدادات المستودع (Settings > Secrets
-          # and variables > Actions) بالشكل: http://user:pass@host:port
-          # واتركه بلا قيمة إن لم تحتجه — المواقع الأخف حماية تعمل بدونه.
+          # بروكسي حقيقي اختياري (host:port) لتجاوز حجب نطاقات IP السحابية —
+          # أضف secret اسمه PROXY_URL بالشكل: http://user:pass@host:port
           PROXY_URL: ${{ secrets.PROXY_URL }}
+          # بديل أخف: بروكسي إعادة كتابة (Cloudflare Worker بصيغة ?url=...)
+          # يغطي الطلب المباشر وتحميل الصور فقط (مو المتصفح) — لا يحتاج secret،
+          # يمكن كتابته مباشرة لأنه رابط عام أصلًا
+          REWRITE_PROXY_BASE: https://manhwa-proxy.yearsfree60.workers.dev
         run: python compress_chapters.py
 
       - name: نشر النتائج على فرع output
@@ -87,8 +89,3 @@ jobs:
           echo "manifest.json:"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
           echo "=================================================="
-
-      - name: إجبار تحديث كاش jsDelivr فورًا
-        run: |
-          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
-          echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
