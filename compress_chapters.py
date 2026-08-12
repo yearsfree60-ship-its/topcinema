@@ -5,14 +5,19 @@
 manifest.json يصف كل مانهوا وفصولها وروابط صورها النهائية.
 
 استراتيجية الاستخراج (من الأخف إلى الأثقل):
-1) طلب HTTP مباشر بدون متصفح (requests) — أسرع بكثير، ولا يحمل بصمة "متصفح
-   مؤتمت" التي تستهدفها بعض أنظمة الحماية (Cloudflare/WAF ونحوها). كثير من
-   مواقع المانجا تُخرج الصور مباشرة داخل HTML الأساسي دون أي جافاسكربت، فهذا
-   يكفي وحده لمعظم المواقع.
-2) إن فشل الطلب المباشر (صفر صور، أو صفحة تحقق/حماية)، ننتقل لمتصفح Chromium
-   حقيقي مؤتمت عبر Playwright، وهذا يمرّ تلقائيًا أغلب أنظمة التحميل الكسول
-   التي تحتاج تنفيذ جافاسكربت (غير مضمون 100% مع الحماية المتقدمة التي تستهدف
-   المتصفحات المؤتمتة بالتحديد).
+1) طلب HTTP مباشر بمحاكاة بصمة TLS لمتصفح Chrome حقيقي (curl_cffi إن كانت
+   متاحة) — بعض أنظمة الحماية تحجب تحديدًا بصمة TLS الخاصة بمكتبة
+   requests/Python الافتراضية (وتختلف عن بصمة أي متصفح حقيقي) وترفض الطلب
+   فورًا (403) دون فحص أي شيء آخر فيه.
+2) طلب requests عادي كاحتياط إن لم تتوفر curl_cffi.
+3) إن فشلت كل محاولات HTTP المباشر (صفر صور، صفحة تحقق، أو حجب)، ننتقل
+   لمتصفح Chromium حقيقي مؤتمت عبر Playwright.
+
+ملاحظة مهمة عن حدود هذا الحل:
+إن كانت الحماية تحجب أساسًا نطاقات عناوين IP السحابية (AWS/Azure/GCP، وهذا
+يشمل عناوين GitHub Actions) بدل فحص بصمة الطلب، فلا يوجد أي تعديل برمجي في
+هذا السكربت يتجاوز ذلك بشكل مضمون — الحل العملي الوحيد هو استخدام بروكسي
+(عبر متغير البيئة PROXY_URL أدناه) يوفّر عنوان IP غير مصنّف كسحابي/بوتات.
 """
 import asyncio
 import json
@@ -27,6 +32,12 @@ from PIL import Image
 from io import BytesIO
 from playwright.async_api import async_playwright
 
+try:
+    from curl_cffi import requests as curl_requests
+    HAS_CURL_CFFI = True
+except ImportError:
+    HAS_CURL_CFFI = False
+
 QUALITY = int(os.environ.get("IMG_QUALITY", "25"))
 MAX_WIDTH = int(os.environ.get("IMG_MAX_WIDTH", "700"))
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
@@ -38,21 +49,29 @@ NAV_TIMEOUT_MS = int(os.environ.get("NAV_TIMEOUT_MS", "30000"))
 CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
-# أقل عدد صور نعتبر عنده نتيجة الطلب المباشر "ناجحة" (يمنع الوقوع في فخ صفحة
-# تحقق/حماية تحتوي صورة شعار واحدة فقط)
 MIN_IMAGES_HTTP = int(os.environ.get("MIN_IMAGES_HTTP", "2"))
+
+# بروكسي اختياري (مثل: http://user:pass@host:port) يُستخدم في كل الطلبات
+# (HTTP المباشر + المتصفح + تحميل الصور) — ضروري فقط إن كان الموقع يحجب
+# نطاقات IP السحابية تحديدًا بدل فحص بصمة الطلب.
+PROXY_URL = os.environ.get("PROXY_URL", "").strip() or None
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
 IMG_EXT_PATTERN = re.compile(r"\.(jpe?g|png|webp|avif)(\?|$)", re.I)
 
-# عبارات شائعة في صفحات تحقق/حماية (Cloudflare وما شابه) — لاكتشافها والتعامل معها
 CHALLENGE_MARKERS = [
     "just a moment", "checking your browser", "attention required",
     "cf-browser-verification", "ddos protection by", "verifying you are human",
     "enable javascript and cookies",
 ]
+
+
+def requests_proxies() -> dict | None:
+    if not PROXY_URL:
+        return None
+    return {"http": PROXY_URL, "https": PROXY_URL}
 
 
 def slugify(text: str) -> str:
@@ -96,12 +115,6 @@ def dedupe(urls: list[str]) -> list[str]:
 
 
 def extract_images_from_html(html: str, base_url: str) -> list[str]:
-    """
-    يستخرج روابط الصور من نص HTML خام (بدون تنفيذ جافاسكربت). يفضّل بدائل
-    التحميل الكسول الحقيقية (data-src/data-lazy-src/data-original) إن وجدت
-    داخل نفس وسم <img>، وإلا يستخدم src العادي — هذا يغطي أغلب المواقع سواء
-    كانت تُخرج الصور مباشرة (كما هو الحال هنا) أو عبر placeholders بسيطة.
-    """
     found = []
     for tag_match in re.finditer(r"<img\b[^>]*>", html, re.I):
         tag = tag_match.group(0)
@@ -119,7 +132,6 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
             found.append(urljoin(base_url, u))
     if found:
         return dedupe(found)
-    # احتياط أخير: أي رابط بامتداد صورة داخل الكود الكامل
     found = [urljoin(base_url, m.group(0)) for m in
              re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
     return dedupe(found)
@@ -127,22 +139,41 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
 
 def fetch_via_http(chapter_url: str) -> list[str]:
     """
-    محاولة أولى وأسرع: طلب HTTP مباشر بدون متصفح. لا تحمل بصمة "متصفح مؤتمت"،
-    فتتجاوز أنظمة الحماية التي تستهدف تحديدًا Playwright/Selenium ونحوها.
+    محاولة أولى وأسرع: طلب HTTP مباشر بدون متصفح كامل، بمحاكاة بصمة TLS
+    لمتصفح حقيقي إن كانت curl_cffi متاحة (تحل حالات الحجب المعتمدة على بصمة
+    الطلب فقط؛ لا تحل حجب IP — لذلك ندعم PROXY_URL أيضًا).
     """
     headers = {
         "User-Agent": UA,
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9,ar;q=0.8",
     }
-    try:
-        resp = requests.get(chapter_url, headers=headers, timeout=20)
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"  ⚠️ فشل الطلب المباشر (HTTP): {e}")
-        return []
+    proxies = requests_proxies()
+    html = None
 
-    html = resp.text
+    if HAS_CURL_CFFI:
+        try:
+            resp = curl_requests.get(
+                chapter_url, headers=headers, timeout=20,
+                impersonate="chrome124",
+                proxies=proxies,
+            )
+            if resp.status_code < 400:
+                html = resp.text
+            else:
+                print(f"  ⚠️ curl_cffi (بصمة TLS حقيقية) أعاد الحالة {resp.status_code}")
+        except Exception as e:
+            print(f"  ⚠️ فشل curl_cffi: {e}")
+
+    if html is None:
+        try:
+            resp = requests.get(chapter_url, headers=headers, timeout=20, proxies=proxies)
+            resp.raise_for_status()
+            html = resp.text
+        except Exception as e:
+            print(f"  ⚠️ فشل الطلب المباشر (HTTP): {e}")
+            return []
+
     if any(marker in html.lower() for marker in CHALLENGE_MARKERS):
         print("  🛡️ الطلب المباشر أعاد صفحة تحقق/حماية — سيتم تجربة المتصفح")
         return []
@@ -266,14 +297,13 @@ async def open_and_collect_via_browser(browser, chapter_url: str, attempt: int) 
     if not navigated:
         return image_urls, "لم يتم تحميل الصفحة أصلًا بالمتصفح (انتهت المهلة)"
     if not image_urls:
-        return image_urls, "اكتمل تحميل الصفحة بالمتصفح لكن لم يُعثر على صور"
+        return image_urls, "اكتمل تحميل الصفحة بالمتصفح لكن لم يُعثر على صور — على الأغلب حجب على مستوى IP/حماية متقدمة يتطلب بروكسي (PROXY_URL)"
     return image_urls, ""
 
 
 async def process_chapter(browser, chapter_url: str, index: int, total: int):
     print(f"[{index}/{total}] فتح: {chapter_url}")
 
-    # الخطوة 1: طلب مباشر بدون متصفح — أسرع ويتجاوز حماية تستهدف المتصفحات المؤتمتة
     print("  🌐 محاولة طلب مباشر (بدون متصفح)...")
     image_urls = await asyncio.to_thread(fetch_via_http, chapter_url)
     fail_reason = ""
@@ -295,6 +325,8 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
 
     if not image_urls:
         print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
+        if not PROXY_URL:
+            print("  💡 إن كان هذا يتكرر مع هذا الموقع تحديدًا، جرّب ضبط PROXY_URL (بروكسي) — الحجب هنا يبدو على مستوى IP وليس بصمة الطلب فقط")
         return None
 
     manga_id, chapter_num = manga_slug_from_url(chapter_url)
@@ -304,7 +336,12 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
     saved_paths = []
     for i, img_url in enumerate(image_urls, start=1):
         try:
-            resp = requests.get(img_url, headers={"User-Agent": UA, "Referer": chapter_url}, timeout=20)
+            resp = requests.get(
+                img_url,
+                headers={"User-Agent": UA, "Referer": chapter_url},
+                timeout=20,
+                proxies=requests_proxies(),
+            )
             resp.raise_for_status()
             compressed = compress_image(resp.content, MAX_WIDTH, QUALITY)
             filename = f"{i:03d}.webp"
@@ -334,11 +371,17 @@ async def main():
         print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
         sys.exit(1)
 
+    if PROXY_URL:
+        print("🌍 يتم استخدام بروكسي مُعرَّف عبر PROXY_URL لكل الطلبات")
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     results = []
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        launch_kwargs = {"args": ["--disable-blink-features=AutomationControlled"]}
+        if PROXY_URL:
+            launch_kwargs["proxy"] = {"server": PROXY_URL}
+        browser = await p.chromium.launch(**launch_kwargs)
         for i, url in enumerate(chapter_urls, start=1):
             r = await process_chapter(browser, url, i, len(chapter_urls))
             if r:
