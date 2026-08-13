@@ -216,24 +216,35 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     return out.getvalue()
 
 
+IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
+IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
+
+
 async def fetch_image_bytes(context, img_url: str, referer: str):
     """
     يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية) بدل
     مكتبة requests منفصلة — يحل مشكلة رفض بعض المواقع للتحميل من خارج
     جلسة متصفح حقيقية (السبب الأغلب وراء خطأ "cannot identify image").
+
+    يعيد المحاولة عدة مرات بفاصل زمني متزايد عند الفشل: في الفصول الطويلة
+    (مئات الصور)، خادم الصور أحيانًا يحدّد معدل الطلبات مؤقتًا (Rate Limiting)
+    بعد سيل من الطلبات المتتالية على نفس الجلسة، فيرفض دفعة صور مرة وحدة ثم
+    يعود يقبل بعد قليل — إعادة المحاولة بفاصل قصير تتعافى من هذا تلقائيًا.
     """
-    try:
-        resp = await context.request.get(
-            img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20000,
-        )
-        if not resp.ok:
-            return None
-        body = await resp.body()
-        if not body or len(body) < 500:
-            return None
-        return body
-    except Exception:
-        return None
+    for attempt in range(1, IMG_FETCH_RETRIES + 1):
+        try:
+            resp = await context.request.get(
+                img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20000,
+            )
+            if resp.ok:
+                body = await resp.body()
+                if body and len(body) >= 500:
+                    return body
+        except Exception:
+            pass
+        if attempt < IMG_FETCH_RETRIES:
+            await asyncio.sleep(0.6 * attempt)
+    return None
 
 
 async def open_and_collect(browser, chapter_url: str, attempt: int):
@@ -314,10 +325,12 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
     saved_paths = []
+    failed_indices = []
     for i, img_url in enumerate(image_urls, start=1):
         raw = await fetch_image_bytes(context, img_url, chapter_url)
         if not raw:
-            print(f"  ⚠️ فشلت صورة {i}: تعذّر تحميل البايتات (رفض الخادم أو رابط غير صالح)")
+            print(f"  ⚠️ فشلت صورة {i}: تعذّر تحميل البايتات بعد {IMG_FETCH_RETRIES} محاولات")
+            failed_indices.append(i)
             continue
         try:
             compressed = compress_image(raw, MAX_WIDTH, QUALITY)
@@ -327,6 +340,33 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
             print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
             print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e}")
+        # فاصل بسيط بين كل صورة والتالية لتقليل احتمال إثارة تحديد معدل
+        # الطلبات من الأساس في الفصول الطويلة (مئات الصور على نفس الجلسة)
+        await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+
+    # تمريرة أخيرة: إعادة محاولة الصور اللي فشلت نهائيًا بعد إكمال البقية،
+    # بعد ما يكون خادم الصور احتمالًا تعافى من أي تحديد معدل طلبات مؤقت
+    if failed_indices:
+        print(f"  🔁 إعادة محاولة نهائية لـ {len(failed_indices)} صورة فشلت...")
+        still_failed = []
+        for i in failed_indices:
+            img_url = image_urls[i - 1]
+            raw = await fetch_image_bytes(context, img_url, chapter_url)
+            if raw:
+                try:
+                    compressed = compress_image(raw, MAX_WIDTH, QUALITY)
+                    filename = f"{i:03d}.webp"
+                    (chapter_dir / filename).write_bytes(compressed)
+                    saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                    print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
+                except Exception as e:
+                    print(f"  ⚠️ فشلت صورة {i} أثناء الضغط بعد إعادة المحاولة: {e}")
+                    still_failed.append(i)
+            else:
+                still_failed.append(i)
+            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+        if still_failed:
+            print(f"  ❌ تعذّر تحميل {len(still_failed)} صورة نهائيًا: {still_failed}")
 
     await context.close()
 
