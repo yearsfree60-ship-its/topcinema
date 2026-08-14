@@ -43,6 +43,22 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
 4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
    (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
 
+4.1) [مُضاف] رقم "الجودة" في WebP (0-100) ليس نسبة مئوية من الحجم النهائي —
+   إنه مقياس جودة بصري داخلي لا يرتبط خطيًا بحجم الملف. صورة بسيطة (خطوط/
+   ألوان مسطحة) قد تُضغَط أصلًا بكفاءة عالية فتبقى قريبة من حجمها الأصلي حتى
+   بجودة منخفضة جدًا (لوحظ فعليًا: 172ك.ب ← 169ك.ب عند جودة 30). لذلك أصبح
+   الوضع الافتراضي الآن "استهداف نسبة حجم حقيقية" (COMPRESSION_MODE=ratio):
+   الرقم الذي يختاره المستخدم (مثلًا 30) يُفهَم كنسبة مئوية من حجم الصورة
+   الأصلية، ويُبحث بالبحث الثنائي (binary search) عن قيمة جودة WebP تُنتج
+   فعليًا حجمًا قريبًا من تلك النسبة لكل صورة على حدة. الوضع القديم (تمرير
+   الرقم مباشرة كمعامل جودة WebP خام) لا يزال متاحًا عبر COMPRESSION_MODE=fixed
+   لمن يفضّل التحكم اليدوي المباشر.
+
+4.2) [مُضاف] بعض صور PNG المحوّلة تحمل قناة شفافية (alpha) غير مستخدمة
+   فعليًا (كل البكسلات معتمة 100%) — هذه القناة تُبقي حجم WebP كبيرًا بغضّ
+   النظر عن إعداد الجودة. يُكتشف هذا تلقائيًا (فحص أقصى وأدنى قيمة alpha)
+   وتُحذف القناة إن كانت فارغة فعليًا، قبل الضغط.
+
 5) الحكم بنجاح/فشل تحميل الصفحة يعتمد على وجود صور مستخرجة فعليًا، وليس على
    إطلاق حدث goto (domcontentloaded/load) بذاته. بعض الصفحات (خصوصًا الفصل
    الأول من مانهوا، حيث يوجد محتوى ترويجي إضافي) ترسم محتواها الحقيقي كاملًا
@@ -71,6 +87,20 @@ from playwright.async_api import async_playwright
 
 QUALITY = int(os.environ.get("IMG_QUALITY", "25"))
 MAX_WIDTH = int(os.environ.get("IMG_MAX_WIDTH", "700"))
+
+# [مُضاف] وضع الضغط: "ratio" (افتراضي) يعني أن IMG_QUALITY يُفهَم كنسبة مئوية
+# حقيقية مستهدفة من حجم الصورة الأصلية (مثلًا 30 = ~30% من الحجم الأصلي)،
+# ويُبحث تلقائيًا (binary search) عن جودة WebP التي تحقق ذلك فعليًا لكل صورة.
+# "fixed" يعيد السلوك القديم: تمرير IMG_QUALITY مباشرة كمعامل جودة WebP خام
+# (0-100) دون أي ربط فعلي بنسبة الحجم الناتج.
+COMPRESSION_MODE = os.environ.get("COMPRESSION_MODE", "ratio").strip().lower()
+
+# حدود البحث عن الجودة في وضع "ratio" — لا ننزل تحت MIN_QUALITY مهما بعُد
+# الحجم الناتج عن الهدف (تفاديًا لتشويه بصري غير مقبول)، ولا نرفع فوق
+# MAX_QUALITY_SEARCH (لا فائدة من جودة قريبة من 100 في صور مانهوا مضغوطة أصلًا)
+MIN_QUALITY = int(os.environ.get("IMG_MIN_QUALITY", "8"))
+MAX_QUALITY_SEARCH = int(os.environ.get("IMG_MAX_QUALITY_SEARCH", "95"))
+RATIO_SEARCH_ITERS = int(os.environ.get("IMG_RATIO_SEARCH_ITERS", "7"))
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
 CDN_BASE = os.environ.get("CDN_BASE", "")
@@ -79,6 +109,19 @@ NAV_TIMEOUT_MS = int(os.environ.get("NAV_TIMEOUT_MS", "30000"))
 CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
+
+# [مُضاف] ميزانية زمنية للانتظار الفعلي حتى تُحل صفحة تحقق Cloudflare (أو ما
+# شابه) — بدل انتظار ثابت 5 ثوانٍ + إعادة تحميل مرة واحدة فقط. التحديات
+# الحقيقية (JS Challenge/Turnstile) قد تحتاج حتى 30-45 ثانية، خصوصًا من
+# عناوين IP مصنّفة كمراكز بيانات (وهذا حال أغلب بيئات CI مثل GitHub Actions).
+CHALLENGE_MAX_WAIT_MS = int(os.environ.get("CHALLENGE_MAX_WAIT_MS", "45000"))
+CHALLENGE_POLL_MS = int(os.environ.get("CHALLENGE_POLL_MS", "3000"))
+
+# [مُضاف] مجلد لحفظ حالة الجلسة (كوكيز التحقق مثل cf_clearance) لكل نطاق على
+# حدة، بحيث لو نجحنا في تجاوز الحماية لفصل واحد، تُستخدم نفس الكوكيز للفصول
+# التالية من نفس الموقع بدل إعادة اختبار الحماية من الصفر في كل فصل — كان
+# هذا الشكل السابق (context جديد تمامًا لكل فصل) يهدر أي مصادقة سابقة.
+STORAGE_STATE_DIR = Path(os.environ.get("STORAGE_STATE_DIR", ".storage_state"))
 
 # إذا فُعِّل هذا (STRICT_DOMAIN_FILTER=1) يتم استبعاد أي صورة من نطاق (domain)
 # غير النطاق الأغلب بين صور الفصل — بعض المواقع تحمّل ودجات التوصيات من
@@ -297,10 +340,24 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     return dedupe(found)
 
 
-def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
-    img = Image.open(BytesIO(raw_bytes))
-    img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
+def _drop_unused_alpha(img: Image.Image) -> Image.Image:
+    """
+    [مُضاف] يحذف قناة الشفافية إن كانت غير مستخدمة فعليًا (كل البكسلات
+    معتمة 100%) — قناة alpha فارغة تُبقي حجم WebP كبيرًا بغضّ النظر عن
+    إعداد الجودة، وهي شائعة في صور PNG محوّلة آليًا من مصادر مختلفة.
+    """
+    if img.mode in ("RGBA", "LA"):
+        try:
+            alpha = img.getchannel("A")
+            lo, hi = alpha.getextrema()
+            if lo == 255 and hi == 255:
+                img = img.convert("RGB") if img.mode == "RGBA" else img.convert("L")
+        except Exception:
+            pass
+    return img
 
+
+def _resize_for_limits(img: Image.Image, max_width: int) -> Image.Image:
     # نتحقق من العرض والطول معًا: صورة ضيقة لكن طويلة جدًا (أو العكس) تتجاوز
     # حد WebP الصارم (16383 بكسل) حتى لو عرضها ضمن الحد المطلوب أصلًا
     scale = 1.0
@@ -310,15 +367,82 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
         scale = min(scale, WEBP_HARD_LIMIT / img.width)
     if img.height * scale > WEBP_HARD_LIMIT:
         scale = min(scale, WEBP_HARD_LIMIT / img.height)
-
     if scale < 1.0:
         new_w = max(1, int(img.width * scale))
         new_h = max(1, int(img.height * scale))
         img = img.resize((new_w, new_h), Image.LANCZOS)
+    return img
 
+
+def _encode_webp(img: Image.Image, quality: int) -> bytes:
     out = BytesIO()
     img.save(out, format="WEBP", quality=quality, method=6)
     return out.getvalue()
+
+
+def _compress_to_target_ratio(img: Image.Image, original_size: int, ratio_percent: int):
+    """
+    [مُضاف] هذا هو قلب "التحكم الحقيقي": بدل تمرير الرقم كمعامل WebP خام،
+    نبحث فعليًا (بحث ثنائي) عن جودة WebP التي تُنتج حجمًا قريبًا من
+    (ratio_percent% من الحجم الأصلي) — لأن العلاقة بين رقم الجودة وحجم
+    الملف الناتج ليست خطية ولا موحّدة بين الصور (تعتمد على تعقيد المحتوى).
+
+    يعيد (bytes, جودة_مستخدمة, تم_بلوغ_الحد_الأدنى_دون_تحقيق_الهدف: bool)
+    """
+    target_size = max(1024, int(original_size * (ratio_percent / 100.0)))
+
+    # فحص سريع: حتى بأعلى جودة بحث، هل الحجم أصلًا أصغر من أو يساوي الهدف؟
+    # (يحدث لصور صغيرة/بسيطة أصلًا) — لا داعي لأي بحث إضافي، نأخذ أفضل جودة
+    data_hi = _encode_webp(img, MAX_QUALITY_SEARCH)
+    if len(data_hi) <= target_size:
+        return data_hi, MAX_QUALITY_SEARCH, False
+
+    # فحص الحد الأدنى: إذا حتى أدنى جودة مسموحة لا تصل للهدف (صورة معقدة
+    # جدًا أو هدف صغير جدًا)، نقبل بأدنى جودة كأفضل ما يمكن ونُبلّغ بذلك
+    data_lo = _encode_webp(img, MIN_QUALITY)
+    if len(data_lo) >= target_size:
+        return data_lo, MIN_QUALITY, True
+
+    # بحث ثنائي بين lo و hi عن أقرب جودة تُنتج حجمًا قريبًا من الهدف
+    lo, hi = MIN_QUALITY, MAX_QUALITY_SEARCH
+    best_bytes, best_q, best_diff = data_lo, MIN_QUALITY, abs(len(data_lo) - target_size)
+    for _ in range(RATIO_SEARCH_ITERS):
+        if hi - lo <= 1:
+            break
+        mid = (lo + hi) // 2
+        data_mid = _encode_webp(img, mid)
+        diff = abs(len(data_mid) - target_size)
+        if diff < best_diff:
+            best_bytes, best_q, best_diff = data_mid, mid, diff
+        if len(data_mid) > target_size:
+            hi = mid
+        else:
+            lo = mid
+    return best_bytes, best_q, False
+
+
+def compress_image(raw_bytes: bytes, max_width: int, quality: int):
+    """
+    [مُعدَّل] يعيد الآن (bytes, جودة_مستخدمة, ملاحظة|None) بدل bytes فقط.
+    في وضع COMPRESSION_MODE=ratio (الافتراضي): quality تُفهَم كنسبة مئوية
+    حقيقية مستهدفة من الحجم الأصلي، ويُبحث تلقائيًا عن جودة WebP تحققها.
+    في وضع COMPRESSION_MODE=fixed: السلوك القديم — quality تُمرَّر مباشرة
+    كمعامل WebP خام دون أي استهداف لحجم فعلي.
+    """
+    img = Image.open(BytesIO(raw_bytes))
+    img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
+    img = _drop_unused_alpha(img)
+    img = _resize_for_limits(img, max_width)
+
+    if COMPRESSION_MODE == "fixed":
+        return _encode_webp(img, quality), quality, None
+
+    data, used_q, hit_floor = _compress_to_target_ratio(img, len(raw_bytes), quality)
+    note = None
+    if hit_floor:
+        note = (f"تعذّر بلوغ نسبة {quality}% المطلوبة حتى بأدنى جودة ({MIN_QUALITY})، "
+                f"استُخدم أفضل الممكن")
+    return data, used_q, note
 
 
 IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
@@ -362,21 +486,36 @@ async def fetch_image_bytes(context, img_url: str, referer: str):
     return None, last_reason
 
 
-async def open_and_collect(browser, chapter_url: str, attempt: int):
+async def wait_out_challenge(page) -> bool:
     """
-    محاولة واحدة لفتح الصفحة واستخراج روابط الصور.
-    يعيد (context, روابط_الصور, سبب_الفشل) — الـcontext يبقى مفتوحًا لأن
-    تحميل الصور لاحقًا يحتاج نفس الجلسة (كوكيز) التي فتحت الصفحة بنجاح.
+    [مُضاف] بدل انتظار ثابت 5 ثوانٍ ثم إعادة تحميل واحدة فقط: يبقى يفحص كل
+    CHALLENGE_POLL_MS إن كانت صفحة التحقق ما زالت ظاهرة، ويعيد التحميل بين
+    كل فحص وآخر، ضمن ميزانية زمنية إجمالية CHALLENGE_MAX_WAIT_MS. يعيد True
+    إن اختفت علامات صفحة التحقق (نجاح محتمل)، أو False إن استمرت حتى نفاد
+    الميزانية الزمنية (على الأغلب تحدٍ لا يمكن حله من هذه البيئة/العنوان).
     """
-    context = await browser.new_context(
-        user_agent=UA,
-        viewport={"width": 1280, "height": 1000},
-        locale="en-US",
-        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
-    )
-    await context.add_init_script(
-        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-    )
+    elapsed = 0
+    while elapsed < CHALLENGE_MAX_WAIT_MS:
+        await page.wait_for_timeout(CHALLENGE_POLL_MS)
+        elapsed += CHALLENGE_POLL_MS
+        if not await looks_like_challenge_page(page):
+            return True
+        try:
+            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+        except Exception:
+            pass
+        if not await looks_like_challenge_page(page):
+            return True
+    return False
+
+
+async def open_and_collect(context, chapter_url: str, attempt: int, state_path: Path):
+    """
+    محاولة واحدة لفتح الصفحة واستخراج روابط الصور، باستخدام context مشترك
+    (يُمرَّر من الخارج) بدل إنشاء context جديد في كل محاولة — هذا يحافظ على
+    أي كوكيز تحقق (مثل cf_clearance) رُبحت سابقًا لنفس النطاق. يعيد
+    (نجاح: bool, روابط_الصور, سبب_الفشل).
+    """
     page = await context.new_page()
 
     navigated = False
@@ -388,12 +527,21 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
         print(f"  ⚠️ تعذّر تحميل الصفحة ({wait_strategy}): {e}")
 
     if navigated and await looks_like_challenge_page(page):
-        print("  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار وإعادة تحميل")
-        await page.wait_for_timeout(5000)
-        try:
-            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
-        except Exception as e:
-            print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
+        print(f"  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار حتى {CHALLENGE_MAX_WAIT_MS//1000} ثانية")
+        cleared = await wait_out_challenge(page)
+        if cleared:
+            print("  ✅ يبدو أن صفحة التحقق زالت — نتابع الاستخراج")
+            try:
+                STORAGE_STATE_DIR.mkdir(parents=True, exist_ok=True)
+                await context.storage_state(path=str(state_path))
+            except Exception:
+                pass
+        else:
+            print("  ❌ صفحة التحقق لم تُحَل ضمن المهلة — على الأغلب حماية Cloudflare متقدمة "
+                  "(Managed Challenge/Turnstile) ترفض بيئة التشغيل الحالية (عنوان IP لخوادم CI "
+                  "مصنّف عالي الخطورة غالبًا). لا يوجد حل برمجي مضمون 100% لهذا من داخل GitHub Actions.")
+            await page.close()
+            return False, [], "صفحة تحقق Cloudflare لم تُحَل ضمن المهلة الزمنية"
 
     # تمرير تدريجي لأسفل الصفحة لتحفيز أي تحميل كسول يعتمد على ظهور العنصر
     # بالشاشة (IntersectionObserver) — احتياط إضافي حتى لو المحدّدات نجحت
@@ -417,22 +565,50 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
     # (إعلان فيديو، سكربت تتبّع معلّق...)، فرفض النتيجة في هذه الحالة كان
     # يُهدر بيانات صحيحة مكتشفة فعليًا بلا داعٍ.
     if not image_urls:
-        await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
-        return None, [], reason
+        return False, [], reason
     if not navigated:
         print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
-    return context, image_urls, ""
+    return True, image_urls, ""
 
 
-async def process_chapter(browser, chapter_url: str, index: int, total: int):
+def domain_of(url: str) -> str:
+    return urlparse(url).hostname or "unknown"
+
+
+async def get_or_create_context(browser, domain: str):
+    """
+    [مُضاف] يُنشئ context واحدًا فقط لكل نطاق (وليس لكل فصل)، ويحمّل حالة
+    جلسة محفوظة سابقًا (storage_state) إن وُجدت — أي كوكيز تحقق (cf_clearance)
+    رُبحت في تشغيلة سابقة أو فصل سابق من نفس الموقع تُستخدم مباشرة، فيقل
+    احتمال مواجهة صفحة التحقق من الأساس بدل اختبارها من الصفر في كل مرة.
+    """
+    STORAGE_STATE_DIR.mkdir(parents=True, exist_ok=True)
+    state_path = STORAGE_STATE_DIR / f"{domain}.json"
+    kwargs = dict(
+        user_agent=UA,
+        viewport={"width": 1280, "height": 1000},
+        locale="en-US",
+        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
+    )
+    if state_path.exists():
+        kwargs["storage_state"] = str(state_path)
+        print(f"  🍪 استُخدمت جلسة محفوظة سابقًا لنطاق {domain}")
+    context = await browser.new_context(**kwargs)
+    await context.add_init_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+    )
+    return context, state_path
+
+
+async def process_chapter(context, state_path: Path, chapter_url: str, index: int, total: int):
     print(f"[{index}/{total}] فتح: {chapter_url}")
 
-    context, image_urls, fail_reason = None, [], ""
+    ok, image_urls, fail_reason = False, [], ""
     for attempt in range(1, RETRY_PER_CHAPTER + 1):
         if attempt > 1:
             print(f"  🔁 إعادة محاولة #{attempt}")
-        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt)
+        ok, image_urls, fail_reason = await open_and_collect(context, chapter_url, attempt, state_path)
         if image_urls:
             break
 
@@ -453,11 +629,15 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
             failed_indices.append(i)
             continue
         try:
-            compressed = compress_image(raw, MAX_WIDTH, QUALITY)
+            compressed, used_q, note = compress_image(raw, MAX_WIDTH, QUALITY)
             filename = f"{i:03d}.webp"
             (chapter_dir / filename).write_bytes(compressed)
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-            print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
+            pct = (len(compressed) / len(raw) * 100) if raw else 0
+            extra = f" — جودة WebP={used_q}" if COMPRESSION_MODE == "ratio" else ""
+            print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب ({pct:.0f}%){extra}")
+            if note:
+                print(f"     ⚠️ {note}")
         except Exception as e:
             print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
         # فاصل بسيط بين كل صورة والتالية لتقليل احتمال إثارة تحديد معدل
@@ -474,11 +654,15 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
             raw, reason = await fetch_image_bytes(context, img_url, chapter_url)
             if raw:
                 try:
-                    compressed = compress_image(raw, MAX_WIDTH, QUALITY)
+                    compressed, used_q, note = compress_image(raw, MAX_WIDTH, QUALITY)
                     filename = f"{i:03d}.webp"
                     (chapter_dir / filename).write_bytes(compressed)
                     saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-                    print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
+                    pct = (len(compressed) / len(raw) * 100) if raw else 0
+                    extra = f" — جودة WebP={used_q}" if COMPRESSION_MODE == "ratio" else ""
+                    print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب ({pct:.0f}%){extra}")
+                    if note:
+                        print(f"     ⚠️ {note}")
                 except Exception as e:
                     print(f"  ⚠️ فشلت صورة {i} أثناء الضغط بعد إعادة المحاولة: {e} — الرابط: {img_url}")
                     still_failed.append(i)
@@ -489,7 +673,9 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
         if still_failed:
             print(f"  ❌ تعذّر تحميل {len(still_failed)} صورة نهائيًا: {still_failed}")
 
-    await context.close()
+    # [مُعدَّل] لا نُغلق الـcontext هنا بعد الآن — أصبح مشتركًا بين كل فصول
+    # نفس النطاق (يُغلق مرة واحدة في main() بعد معالجة كل فصول ذلك النطاق)
+    # حتى تبقى كوكيز التحقق (cf_clearance) صالحة للفصل التالي من نفس الموقع.
 
     if not saved_paths:
         return None
@@ -515,11 +701,35 @@ async def main():
     results = []
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        # [مُعدَّل] نحاول أولًا تشغيل Chrome الحقيقي المثبَّت (channel="chrome")
+        # بدل نسخة Chromium المرفقة الافتراضية — بصمة Chrome الحقيقي أقرب لما
+        # يتوقعه Cloudflare من متصفح مستخدم عادي، فاحتمال نجاحها أعلى قليلًا.
+        # لو لم يكن مثبَّتًا في البيئة (مثل GitHub Actions بدون خطوة تثبيت
+        # إضافية)، نعود تلقائيًا لـChromium العادي.
+        try:
+            browser = await p.chromium.launch(
+                channel="chrome", args=["--disable-blink-features=AutomationControlled"]
+            )
+            print("🌐 تم تشغيل Chrome الحقيقي (channel=chrome)")
+        except Exception:
+            browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+            print("🌐 Chrome الحقيقي غير متاح — تشغيل Chromium الافتراضي")
+
+        # [مُعدَّل] نُجمّع الفصول حسب النطاق ونُنشئ context واحدًا فقط لكل
+        # نطاق (بدل واحد لكل فصل) — يُغلق بعد معالجة كل فصول ذلك النطاق.
+        # هذا يحافظ على كوكيز التحقق (cf_clearance) بين فصول نفس الموقع.
+        by_domain: dict[str, list[tuple[int, str]]] = {}
         for i, url in enumerate(chapter_urls, start=1):
-            r = await process_chapter(browser, url, i, len(chapter_urls))
-            if r:
-                results.append(r)
+            by_domain.setdefault(domain_of(url), []).append((i, url))
+
+        for domain, items in by_domain.items():
+            context, state_path = await get_or_create_context(browser, domain)
+            for i, url in items:
+                r = await process_chapter(context, state_path, url, i, len(chapter_urls))
+                if r:
+                    results.append(r)
+            await context.close()
+
         await browser.close()
 
     manifest = {"manga": {}}
