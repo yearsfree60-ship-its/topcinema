@@ -1,20 +1,58 @@
 #!/usr/bin/env python3
 """
 يقرأ قائمة روابط فصول (سطر لكل رابط) من متغيرات البيئة، يفتح كل صفحة بمتصفح
-Chromium حقيقي مؤتمت (Playwright)، يستخرج روابط الصور، يحمّلها، يضغطها فعليًا
-بمكتبة Pillow، ويحفظها في مجلد الإخراج مع ملف manifest.json.
+Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا أغلب أنظمة التحميل الكسول
+وبعض تحديات Cloudflare البسيطة (غير مضمون 100% مع الحماية المتقدمة) — يستخرج
+روابط الصور، يحمّلها، يضغطها فعليًا بمكتبة Pillow، ويحفظها في مجلد الإخراج
+مع ملف manifest.json يصف كل مانهوا وفصولها وروابط صورها النهائية.
 
-[محدَّث] تم إصلاح مشكلة "cannot identify image file": السبب الجذري كان أن
-دالة تحميل الصورة تعتبر أي رد HTTP ناجح بحجم ≥ 500 بايت "صورة صالحة" بدون
-التحقق فعليًا من أنها صورة قابلة للفك — فحين يفعّل السيرفر حظر معدل طلبات
-مؤقت (rate limiting) ويرد بصفحة تحذير صغيرة بحالة 200 OK، كانت تُقبل خطأً
-وتنفجر لاحقًا عند الضغط، دون أن تدخل في نظام إعادة المحاولة أصلًا.
+ملاحظات تصميم مهمة (تراكمت من التشخيص الفعلي لمشاكل واجهناها):
+
+1) لا يعتمد هذا السكربت على "networkidle" لاعتبار الصفحة جاهزة. كثير من مواقع
+   المانجا (خصوصًا المدعومة بإعلانات) فيها طلبات شبكة دورية لا تتوقف أبدًا،
+   فحالة "خمول الشبكة" لا تتحقق مطلقًا حتى لو اكتمل المحتوى فعليًا.
+
+2) تحميل الصور نفسها يتم عبر Playwright (نفس جلسة المتصفح وكوكيزها وبصمتها)
+   وليس عبر مكتبة requests منفصلة — لأن بعض المواقع ترفض تحميل الصور من
+   خارج جلسة المتصفح الحقيقية (تسبّب خطأ "cannot identify image" رغم أن
+   الرابط نفسه صحيح ويعمل داخل نفس متصفح Playwright الذي فتح الصفحة).
+
+3) الاستخراج يجرّب أولًا محدّدات CSS معروفة لحاويات محتوى المانجا الحقيقي
+   (Madara وما شابه) قبل اللجوء لكل وسوم <img> في الصفحة — لتفادي التقاط
+   شعار الموقع أو الإعلانات أو صور مصغّرة لمانهوات أخرى في الشريط الجانبي.
+
+3.1) [مُضاف] حتى ضمن نفس حاوية المحتوى (.reading-content مثلًا) قد يُحقن
+   قالب الموقع ودجت ثابت (مثل "قد يعجبك أيضًا" / صور مانهوات مشابهة) بنفس
+   وسوم <img> الحقيقية، دون أي إشارة في رابط الصورة نفسه تدل على أنه ودجت.
+   لذلك أصبح الاستخراج الآن يفحص "سياق" كل صورة (أصولها/parents في الـDOM
+   حتى 5 مستويات) ويستبعد أي صورة أصلها يحمل class/id يوحي بأنه قسم
+   "مقترح/مشابه/تعليقات/إعلان" بدل الاعتماد فقط على نمط نصي في رابط الصورة.
+   هذا اكتُشف لأن عدد الصور الفاشلة كان ثابتًا بدقة (6 صور) في كل فصل بغض
+   النظر عن طول الفصل — وهو دليل حاسم على عنصر ثابت التكرار في القالب،
+   وليس فشل شبكة عشوائيًا.
+
+4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
+   (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
+
+5) الحكم بنجاح/فشل تحميل الصفحة يعتمد على وجود صور مستخرجة فعليًا، وليس على
+   إطلاق حدث goto (domcontentloaded/load) بذاته. بعض الصفحات (خصوصًا الفصل
+   الأول من مانهوا، حيث يوجد محتوى ترويجي إضافي) ترسم محتواها الحقيقي كاملًا
+   ويظهر فيها عشرات الصور الحقيقية، لكن حدث goto يتعلّق ولا يُطلَق أبدًا بسبب
+   مورد بطيء غير متعلق بالمحتوى (إعلان فيديو، سكربت تتبّع معلّق...). رفض
+   النتيجة تلقائيًا في هذه الحالة كان يُهدر بيانات صحيحة مكتشفة فعليًا.
+
+6) [مُضاف] عند فشل تحميل بايتات صورة، يُتحقق الآن من content-type فعليًا
+   قبل تمريرها لـ Pillow، ويُطبع السبب الدقيق (status/content-type/الرابط
+   الكامل) بدل الاكتفاء برسالة Pillow العامة "cannot identify image file"
+   التي لا تفسّر شيئًا. هذا يجعل أي سبب فشل مستقبلي قابلًا للتشخيص فورًا
+   من اللوج نفسه دون تخمين.
 """
 import asyncio
 import json
 import os
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 
@@ -33,12 +71,32 @@ CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
 
+# إذا فُعِّل هذا (STRICT_DOMAIN_FILTER=1) يتم استبعاد أي صورة من نطاق (domain)
+# غير النطاق الأغلب بين صور الفصل — بعض المواقع تحمّل ودجات التوصيات من
+# نطاق خارجي (شبكة إعلانات/خدمة توصيات) مختلف عن نطاق CDN صور المانهوا نفسه.
+# مُعطَّل افتراضيًا لأن بعض المواقع الشرعية توزّع صورها على أكثر من نطاق CDN.
+STRICT_DOMAIN_FILTER = os.environ.get("STRICT_DOMAIN_FILTER", "0") == "1"
+
+# أقصى بعد مسموح لأي صورة (عرض أو طول) قبل إعادة تحجيمه إجباريًا — يحمي من
+# فشل ترميز WebP الذي له حد صارم 16383 بكسل، بغضّ النظر عن إعداد العرض الأقصى
 WEBP_HARD_LIMIT = 16000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
 
+# [مُضاف] أنماط أسماء classes/ids شائعة لحاويات "ودجات" غير محتوى القراءة
+# الفعلي — مقترحات/مانهوات مشابهة/تعليقات/إعلانات/كاروسيل إلخ. يُفحص بها
+# سياق (أصول DOM) كل صورة بغضّ النظر عن مدى بُعدها عن المحدّد الرئيسي.
+WIDGET_CONTEXT_PATTERN = re.compile(
+    r"related|similar|recommend|suggest|you-may|you_may|might-like|"
+    r"widget|sidebar|comment|carousel|swiper|sponsor|advert|banner-ad|"
+    r"next-chap|prev-chap|also-read|readers-also|trending|popular-manga",
+    re.I,
+)
+
+# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية (Madara وما شابه من قوالب
+# ووردبريس) — تُجرَّب أولًا لتضييق الاستخراج على المحتوى الحقيقي فقط
 CONTENT_SELECTORS = [
     ".reading-content img",
     ".page-break img",
@@ -53,8 +111,21 @@ CHALLENGE_MARKERS = [
     "enable javascript and cookies",
 ]
 
-IMG_SRC_JS = """els => els.map(e => e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
-     || e.getAttribute('data-original') || e.currentSrc || e.src).filter(Boolean)"""
+# [مُعدَّل] يعيد الآن لكل عنصر <img> كائنًا يحوي رابطه + نص "سياقه" (classes
+# وids لخمسة مستويات من الأصول في الـDOM) بدل رابط مجرّد فقط — هذا ما يمكّن
+# فلترة الودجات لاحقًا بالاعتماد على بنية الصفحة الفعلية لا على تخمين نصي.
+IMG_SRC_WITH_CONTEXT_JS = """els => els.map(e => {
+    const u = e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
+        || e.getAttribute('data-original') || e.currentSrc || e.src;
+    let anc = e, depth = 0, ctx = '';
+    while (anc && depth < 5) {
+        ctx += ' ' + (anc.className && anc.className.toString ? anc.className.toString() : '')
+             + ' ' + (anc.id || '');
+        anc = anc.parentElement;
+        depth++;
+    }
+    return {url: u, ctx: ctx.toLowerCase()};
+}).filter(x => x.url)"""
 
 
 def slugify(text: str) -> str:
@@ -63,6 +134,7 @@ def slugify(text: str) -> str:
 
 
 def manga_slug_from_url(url: str) -> tuple[str, str]:
+    """يحاول استخراج (اسم_مانهوا_تقريبي, رقم_الفصل) من بنية الرابط الشائعة."""
     u = urlparse(url)
     parts = [p for p in u.path.split("/") if p]
     chapter_num = None
@@ -140,16 +212,55 @@ def dedupe(urls: list[str]) -> list[str]:
     return out
 
 
+def _filter_widget_context(items: list[dict], base_url: str) -> list[str]:
+    """
+    [مُضاف] يستبعد أي صورة يحمل أحد أصولها في الـDOM (حتى 5 مستويات) اسم
+    class/id يطابق WIDGET_CONTEXT_PATTERN، ثم يطبّق فلترة النطاق الاختيارية
+    (STRICT_DOMAIN_FILTER) ثم dedupe المعتاد. يطبع عدد الصور المستبعدة
+    بسبب الودجت ليكون التشخيص واضحًا في اللوج مباشرة.
+    """
+    kept, excluded_widget = [], 0
+    for item in items:
+        u = item.get("url")
+        ctx = item.get("ctx", "")
+        if not u or u.startswith("data:"):
+            continue
+        if WIDGET_CONTEXT_PATTERN.search(ctx):
+            excluded_widget += 1
+            continue
+        kept.append(urljoin(base_url, u))
+
+    if excluded_widget:
+        print(f"  🧹 استُبعدت {excluded_widget} صورة بسبب سياق ودجت (مقترح/مشابه/إعلان...)")
+
+    kept = dedupe(kept)
+
+    if STRICT_DOMAIN_FILTER and len(kept) >= 4:
+        domains = [urlparse(u).hostname for u in kept]
+        majority_domain, _ = Counter(domains).most_common(1)[0]
+        before = len(kept)
+        kept = [u for u in kept if urlparse(u).hostname == majority_domain]
+        if len(kept) != before:
+            print(f"  🌐 استُبعدت {before - len(kept)} صورة من نطاق مختلف عن {majority_domain}")
+
+    return kept
+
+
 async def extract_image_urls(page, base_url: str) -> list[str]:
+    # 0) أولوية قصوى: محدّدات محتوى معروفة — تستبعد الشعار/الإعلانات تلقائيًا.
+    #    الآن نستخدم النسخة الواعية بالسياق (مع ctx) لفلترة أي ودجت مُحقَن
+    #    داخل نفس الحاوية (كما اكتُشف: عدد ثابت 6 صور في كل فصل بغض النظر
+    #    عن طوله — دليل قاطع على ودجت قالب ثابت لا فشل شبكة عشوائي).
     for selector in CONTENT_SELECTORS:
         try:
-            urls = await page.eval_on_selector_all(selector, IMG_SRC_JS)
+            items = await page.eval_on_selector_all(selector, IMG_SRC_WITH_CONTEXT_JS)
         except Exception:
-            urls = []
-        found = [urljoin(base_url, u) for u in urls if u and not u.startswith("data:")]
+            items = []
+        found = _filter_widget_context(items, base_url)
         if len(found) >= 3:
-            return dedupe(found)
+            return found
 
+    # 1) صور داخل noscript (بديل حقيقي شائع عند التحميل الكسول)
     noscript_imgs = await page.eval_on_selector_all("noscript", "els => els.map(e => e.innerHTML)")
     found = []
     for html in noscript_imgs:
@@ -158,11 +269,15 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     if found:
         return dedupe(found)
 
-    imgs = await page.eval_on_selector_all("img", IMG_SRC_JS)
-    found = [urljoin(base_url, u) for u in imgs if u and not u.startswith("data:")]
+    # 2) كل وسوم <img> في الصفحة (احتياط أخير، عرضة لالتقاط شعار/إعلانات)
+    #    نستخدم أيضًا النسخة الواعية بالسياق هنا لأنها أوسع نطاقًا وأكثر
+    #    عرضة لالتقاط ودجات، لا فقط الشعار/الإعلانات المغطاة بـIGNORE_PATTERN.
+    items = await page.eval_on_selector_all("img", IMG_SRC_WITH_CONTEXT_JS)
+    found = _filter_widget_context(items, base_url)
     if found:
-        return dedupe(found)
+        return found
 
+    # 3) احتياط نهائي: أي رابط بامتداد صورة داخل كود الصفحة الكامل
     html = await page.content()
     found = [urljoin(base_url, m.group(0)) for m in
              re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
@@ -173,6 +288,8 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
     img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
 
+    # نتحقق من العرض والطول معًا: صورة ضيقة لكن طويلة جدًا (أو العكس) تتجاوز
+    # حد WebP الصارم (16383 بكسل) حتى لو عرضها ضمن الحد المطلوب أصلًا
     scale = 1.0
     if img.width > max_width:
         scale = min(scale, max_width / img.width)
@@ -191,63 +308,53 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     return out.getvalue()
 
 
-IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "5"))
-IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "450"))
-IMG_FETCH_BACKOFF_BASE_S = float(os.environ.get("IMG_FETCH_BACKOFF_BASE_S", "1.5"))
-
-
-def _looks_like_valid_image(body: bytes) -> bool:
-    """
-    [مضاف] يتحقق أن البايتات صورة صالحة فعليًا وليست صفحة HTML/JSON صغيرة
-    (تحذير حظر معدل طلبات، صفحة خطأ...) تمرّ خطأً من فحص "الحجم ≥ 500 بايت
-    + حالة HTTP ناجحة" القديم. Image.verify() يتحقق من سلامة بنية الصورة
-    دون فك تشفيرها بالكامل، فهو رخيص وسريع بما يكفي ليُستخدم على كل صورة.
-    """
-    try:
-        img = Image.open(BytesIO(body))
-        img.verify()
-        return True
-    except Exception:
-        return False
+IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
+IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
 
 
 async def fetch_image_bytes(context, img_url: str, referer: str):
     """
-    يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية).
+    يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية) بدل
+    مكتبة requests منفصلة — يحل مشكلة رفض بعض المواقع للتحميل من خارج
+    جلسة متصفح حقيقية (السبب الأغلب وراء خطأ "cannot identify image").
 
-    [محدَّث] لا يكفي أن يرد السيرفر بحالة HTTP ناجحة وحجم بايتات معقول: عند
-    تفعيل حظر معدل الطلبات المؤقت (rate limiting) — وهو الحالة الأشيع في
-    الفصول الطويلة (مئات الصور على نفس الجلسة المتتالية) — كثير من
-    السيرفرات/الـCDN ترد بحالة 200 OK وجسم استجابة صغير (صفحة تحذير) بدل
-    رفض صريح، فيمر هذا الجسم من فحص الحجم القديم بسهولة (أكبر من 500 بايت)
-    ويُقبل خطأً كـ"صورة محمّلة بنجاح"، ثم ينفجر لاحقًا عند فك تشفيره فعليًا
-    كصورة أثناء الضغط — وهذا بالضبط مصدر أخطاء "cannot identify image file"
-    التي كانت لا تُعاد محاولتها أبدًا لأنها كانت تُكتشف بعد فوات الأوان.
-    الآن يتم التحقق من صحة الصورة *هنا*، بحيث تدخل هذه الحالة تلقائيًا ضمن
-    حلقة إعادة المحاولة والتأخير المتصاعد (backoff) أدناه بدل أن تُفلت منها.
+    يعيد المحاولة عدة مرات بفاصل زمني متزايد عند الفشل: في الفصول الطويلة
+    (مئات الصور)، خادم الصور أحيانًا يحدّد معدل الطلبات مؤقتًا (Rate Limiting)
+    بعد سيل من الطلبات المتتالية على نفس الجلسة، فيرفض دفعة صور مرة وحدة ثم
+    يعود يقبل بعد قليل — إعادة المحاولة بفاصل قصير تتعافى من هذا تلقائيًا.
 
-    فاصل التأخير المتصاعد بين المحاولات مُطوَّل عمدًا (1.5s × رقم المحاولة
-    بدل 0.6s سابقًا) لإعطاء نافذة الحظر المؤقتة فرصة أكبر للانتهاء فعليًا،
-    ولتقليل وتيرة الطلبات شبه الثابتة التي تُسهّل على أي جدار حماية (WAF)
-    التعرف على نمط "بوت".
+    [مُعدَّل] يعيد الآن (bytes|None, سبب_الفشل|None) بدل bytes|None فقط —
+    يتحقق من content-type فعليًا قبل قبول الاستجابة كصورة صالحة، ويحتفظ
+    بآخر سبب فشل دقيق (status/content-type/استثناء) ليُطبع في اللوج بدل
+    رسالة Pillow العامة التي لا تفسّر شيئًا.
     """
+    last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
             resp = await context.request.get(
                 img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20000,
             )
-            if resp.ok:
+            ctype = resp.headers.get("content-type", "")
+            if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 body = await resp.body()
-                if body and len(body) >= 500 and _looks_like_valid_image(body):
-                    return body
-        except Exception:
-            pass
+                if body and len(body) >= 500:
+                    return body, None
+                last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(body) if body else 0} بايت)"
+            else:
+                last_reason = f"status={resp.status} content-type={ctype!r}"
+        except Exception as e:
+            last_reason = f"استثناء: {e}"
         if attempt < IMG_FETCH_RETRIES:
-            await asyncio.sleep(IMG_FETCH_BACKOFF_BASE_S * attempt)
-    return None
+            await asyncio.sleep(0.6 * attempt)
+    return None, last_reason
 
 
 async def open_and_collect(browser, chapter_url: str, attempt: int):
+    """
+    محاولة واحدة لفتح الصفحة واستخراج روابط الصور.
+    يعيد (context, روابط_الصور, سبب_الفشل) — الـcontext يبقى مفتوحًا لأن
+    تحميل الصور لاحقًا يحتاج نفس الجلسة (كوكيز) التي فتحت الصفحة بنجاح.
+    """
     context = await browser.new_context(
         user_agent=UA,
         viewport={"width": 1280, "height": 1000},
@@ -275,6 +382,8 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
+    # تمرير تدريجي لأسفل الصفحة لتحفيز أي تحميل كسول يعتمد على ظهور العنصر
+    # بالشاشة (IntersectionObserver) — احتياط إضافي حتى لو المحدّدات نجحت
     try:
         for _ in range(6):
             await page.mouse.wheel(0, 3000)
@@ -289,6 +398,11 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
     image_urls = await extract_image_urls(page, chapter_url)
     await page.close()
 
+    # الحكم بالنجاح يعتمد على وجود صور مستخرجة فعليًا، وليس على إطلاق حدث
+    # goto (domcontentloaded/load): بعض الصفحات ترسم محتواها الحقيقي كاملًا
+    # (والصور معه) قبل أن يتعلّق الحدث نفسه بسبب مورد بطيء غير متعلق بالمحتوى
+    # (إعلان فيديو، سكربت تتبّع معلّق...)، فرفض النتيجة في هذه الحالة كان
+    # يُهدر بيانات صحيحة مكتشفة فعليًا بلا داعٍ.
     if not image_urls:
         await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
@@ -320,9 +434,9 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
     saved_paths = []
     failed_indices = []
     for i, img_url in enumerate(image_urls, start=1):
-        raw = await fetch_image_bytes(context, img_url, chapter_url)
+        raw, reason = await fetch_image_bytes(context, img_url, chapter_url)
         if not raw:
-            print(f"  ⚠️ فشلت صورة {i}: تعذّر تحميل بايتات صورة صالحة بعد {IMG_FETCH_RETRIES} محاولات")
+            print(f"  ⚠️ فشلت صورة {i}: {reason} — الرابط: {img_url}")
             failed_indices.append(i)
             continue
         try:
@@ -332,18 +446,19 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
             print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
-            # [محدَّث] الآن نُضيف هذه الحالة أيضًا لقائمة إعادة المحاولة
-            # النهائية بدل إهمالها كما كان يحدث سابقًا.
-            print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e}")
-            failed_indices.append(i)
+            print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
+        # فاصل بسيط بين كل صورة والتالية لتقليل احتمال إثارة تحديد معدل
+        # الطلبات من الأساس في الفصول الطويلة (مئات الصور على نفس الجلسة)
         await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
 
+    # تمريرة أخيرة: إعادة محاولة الصور اللي فشلت نهائيًا بعد إكمال البقية،
+    # بعد ما يكون خادم الصور احتمالًا تعافى من أي تحديد معدل طلبات مؤقت
     if failed_indices:
         print(f"  🔁 إعادة محاولة نهائية لـ {len(failed_indices)} صورة فشلت...")
         still_failed = []
         for i in failed_indices:
             img_url = image_urls[i - 1]
-            raw = await fetch_image_bytes(context, img_url, chapter_url)
+            raw, reason = await fetch_image_bytes(context, img_url, chapter_url)
             if raw:
                 try:
                     compressed = compress_image(raw, MAX_WIDTH, QUALITY)
@@ -352,9 +467,10 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
                     saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
                     print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
                 except Exception as e:
-                    print(f"  ⚠️ فشلت صورة {i} أثناء الضغط بعد إعادة المحاولة: {e}")
+                    print(f"  ⚠️ فشلت صورة {i} أثناء الضغط بعد إعادة المحاولة: {e} — الرابط: {img_url}")
                     still_failed.append(i)
             else:
+                print(f"  ⚠️ فشلت صورة {i} نهائيًا: {reason} — الرابط: {img_url}")
                 still_failed.append(i)
             await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
         if still_failed:
