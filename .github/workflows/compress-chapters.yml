@@ -38,7 +38,22 @@ jobs:
       - name: تثبيت المكتبات
         run: |
           pip install --quiet playwright pillow requests
+          # [مُعدَّل] نُثبّت Chrome الحقيقي إضافة لـChromium — السكربت يحاول
+          # channel="chrome" أولًا لأن بصمته أقرب لمتصفح مستخدم حقيقي أمام
+          # فحوصات Cloudflare، ثم يسقط تلقائيًا لـChromium لو تعذّر ذلك.
           python -m playwright install --with-deps chromium
+          python -m playwright install --with-deps chrome
+
+      - name: استرجاع كوكيز الجلسة المحفوظة (إن وُجدت)
+        uses: actions/cache@v4
+        with:
+          path: .storage_state
+          # مفتاح ثابت (بدون تاريخ) لكي تُسترجع نفس الكوكيز عبر التشغيلات
+          # المتتالية أيضًا لا فقط داخل نفس التشغيلة — كوكيز cf_clearance
+          # المُربحة اليوم قد تبقى صالحة للتشغيلة القادمة وتوفّر تحدي Cloudflare
+          key: cf-storage-state-v1
+          restore-keys: |
+            cf-storage-state-
 
       - name: تشغيل الضغط
         env:
