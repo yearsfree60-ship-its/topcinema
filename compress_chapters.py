@@ -21,15 +21,22 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    (Madara وما شابه) قبل اللجوء لكل وسوم <img> في الصفحة — لتفادي التقاط
    شعار الموقع أو الإعلانات أو صور مصغّرة لمانهوات أخرى في الشريط الجانبي.
 
-3.1) [مُضاف] حتى ضمن نفس حاوية المحتوى (.reading-content مثلًا) قد يُحقن
-   قالب الموقع ودجت ثابت (مثل "قد يعجبك أيضًا" / صور مانهوات مشابهة) بنفس
-   وسوم <img> الحقيقية، دون أي إشارة في رابط الصورة نفسه تدل على أنه ودجت.
-   لذلك أصبح الاستخراج الآن يفحص "سياق" كل صورة (أصولها/parents في الـDOM
-   حتى 5 مستويات) ويستبعد أي صورة أصلها يحمل class/id يوحي بأنه قسم
-   "مقترح/مشابه/تعليقات/إعلان" بدل الاعتماد فقط على نمط نصي في رابط الصورة.
-   هذا اكتُشف لأن عدد الصور الفاشلة كان ثابتًا بدقة (6 صور) في كل فصل بغض
-   النظر عن طول الفصل — وهو دليل حاسم على عنصر ثابت التكرار في القالب،
-   وليس فشل شبكة عشوائيًا.
+3.1) حتى ضمن نفس حاوية المحتوى (.reading-content مثلًا) قد يُحقن قالب
+   الموقع ودجت ثابت (مثل "قد يعجبك أيضًا" / صور مانهوات مشابهة) بنفس وسوم
+   <img> الحقيقية، دون أي إشارة في رابط الصورة نفسه تدل على أنه ودجت. لذلك
+   الاستخراج يفحص "سياق" كل صورة (أصولها/parents في الـDOM حتى 5 مستويات)
+   ويستبعد أي صورة أصلها يحمل class/id يوحي بأنه قسم "مقترح/مشابه/تعليقات/
+   إعلان" بدل الاعتماد فقط على نمط نصي في رابط الصورة.
+
+3.2) [مُضاف] التمرير عبر الصفحة أصبح تراكميًا لا لقطة واحدة أخيرة: صفحات
+   القراءة الطويلة (عشرات/مئات الصور) غالبًا تستخدم تحميلًا كسولًا أو
+   virtualization يُلغي (unmount) الصور البعيدة عن منطقة العرض لتوفير
+   الذاكرة. لقطة واحدة بعد الرجوع للأعلى كانت تلتقط فقط الصور القريبة من
+   أعلى الصفحة وقت اللقطة (اكتُشف هذا لأن العدد المكتشف كان ثابتًا ومطابقًا
+   تمامًا لعدد الصور المرئية دون أي تمرير، بغض النظر عن طول الفصل الفعلي).
+   الآن يُمرَّر تدريجيًا بخطوات تتحقق من scrollHeight الحقيقي، ويُجمَّع كل
+   رابط صورة ظهر في أي لحظة أثناء الرحلة (حتى لو اختفى لاحقًا من الـDOM)،
+   بدل الاعتماد على حالة الصفحة النهائية فقط.
 
 4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
    (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
@@ -41,11 +48,10 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    مورد بطيء غير متعلق بالمحتوى (إعلان فيديو، سكربت تتبّع معلّق...). رفض
    النتيجة تلقائيًا في هذه الحالة كان يُهدر بيانات صحيحة مكتشفة فعليًا.
 
-6) [مُضاف] عند فشل تحميل بايتات صورة، يُتحقق الآن من content-type فعليًا
-   قبل تمريرها لـ Pillow، ويُطبع السبب الدقيق (status/content-type/الرابط
-   الكامل) بدل الاكتفاء برسالة Pillow العامة "cannot identify image file"
-   التي لا تفسّر شيئًا. هذا يجعل أي سبب فشل مستقبلي قابلًا للتشخيص فورًا
-   من اللوج نفسه دون تخمين.
+6) عند فشل تحميل بايتات صورة، يُتحقق من content-type فعليًا قبل تمريرها
+   لـ Pillow، ويُطبع السبب الدقيق (status/content-type/الرابط الكامل) بدل
+   الاكتفاء برسالة Pillow العامة "cannot identify image file" التي لا
+   تفسّر شيئًا. هذا يجعل أي سبب فشل مستقبلي قابلًا للتشخيص فورًا من اللوج.
 """
 import asyncio
 import json
@@ -71,6 +77,10 @@ CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
 
+# سقف أمان لعدد خطوات التمرير التراكمي (فصول بمئات الصور تحتاج خطوات أكثر)
+SCROLL_MAX_STEPS = int(os.environ.get("SCROLL_MAX_STEPS", "400"))
+SCROLL_STEP_WAIT_MS = int(os.environ.get("SCROLL_STEP_WAIT_MS", "350"))
+
 # إذا فُعِّل هذا (STRICT_DOMAIN_FILTER=1) يتم استبعاد أي صورة من نطاق (domain)
 # غير النطاق الأغلب بين صور الفصل — بعض المواقع تحمّل ودجات التوصيات من
 # نطاق خارجي (شبكة إعلانات/خدمة توصيات) مختلف عن نطاق CDN صور المانهوا نفسه.
@@ -85,9 +95,9 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 
 IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
 
-# [مُضاف] أنماط أسماء classes/ids شائعة لحاويات "ودجات" غير محتوى القراءة
-# الفعلي — مقترحات/مانهوات مشابهة/تعليقات/إعلانات/كاروسيل إلخ. يُفحص بها
-# سياق (أصول DOM) كل صورة بغضّ النظر عن مدى بُعدها عن المحدّد الرئيسي.
+# أنماط أسماء classes/ids شائعة لحاويات "ودجات" غير محتوى القراءة الفعلي —
+# مقترحات/مانهوات مشابهة/تعليقات/إعلانات/كاروسيل إلخ. يُفحص بها سياق (أصول
+# DOM) كل صورة بغضّ النظر عن مدى بُعدها عن المحدّد الرئيسي.
 WIDGET_CONTEXT_PATTERN = re.compile(
     r"related|similar|recommend|suggest|you-may|you_may|might-like|"
     r"widget|sidebar|comment|carousel|swiper|sponsor|advert|banner-ad|"
@@ -111,9 +121,9 @@ CHALLENGE_MARKERS = [
     "enable javascript and cookies",
 ]
 
-# [مُعدَّل] يعيد الآن لكل عنصر <img> كائنًا يحوي رابطه + نص "سياقه" (classes
-# وids لخمسة مستويات من الأصول في الـDOM) بدل رابط مجرّد فقط — هذا ما يمكّن
-# فلترة الودجات لاحقًا بالاعتماد على بنية الصفحة الفعلية لا على تخمين نصي.
+# يعيد لكل عنصر <img> كائنًا يحوي رابطه + نص "سياقه" (classes وids لخمسة
+# مستويات من الأصول في الـDOM) — هذا ما يمكّن فلترة الودجات بالاعتماد على
+# بنية الصفحة الفعلية لا على تخمين نصي في رابط الصورة نفسه.
 IMG_SRC_WITH_CONTEXT_JS = """els => els.map(e => {
     const u = e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
         || e.getAttribute('data-original') || e.currentSrc || e.src;
@@ -186,6 +196,8 @@ async def count_real_images(page) -> int:
 
 
 async def wait_for_real_images(page, max_wait_ms: int, poll_ms: int) -> int:
+    """تشخيصي فقط (رقم تقريبي يُطبع في اللوج) — الاستخراج الفعلي يعتمد على
+    التمرير التراكمي في collect_images_while_scrolling وليس على هذا العدّ."""
     elapsed = 0
     last_count = -1
     stable_rounds = 0
@@ -212,10 +224,80 @@ def dedupe(urls: list[str]) -> list[str]:
     return out
 
 
+async def collect_images_while_scrolling(page, selector: str) -> list[dict]:
+    """
+    يمرّر عبر الصفحة تدريجيًا (يتحقق من موضع التمرير الحقيقي مقابل ارتفاع
+    الصفحة الفعلي)، ويجمع كل عناصر الصور التي ظهرت تحت هذا المحدّد في أي
+    لحظة أثناء الرحلة، بدل الاعتماد على لقطة واحدة أخيرة. هذا يحل مشكلة
+    الصفحات التي تُلغي تحميل (unmount) الصور البعيدة عن منطقة العرض
+    (تحميل كسول/virtualization)، لأن كل رابط يُحفظ لحظة ظهوره ولا يُفقد
+    حتى لو اختفى لاحقًا من الـDOM.
+    """
+    seen: dict[str, str] = {}
+
+    def merge(items):
+        for it in items:
+            u = it.get("url")
+            if u and u not in seen:
+                seen[u] = it.get("ctx", "")
+
+    try:
+        await page.evaluate("window.scrollTo(0, 0)")
+    except Exception:
+        pass
+    await page.wait_for_timeout(300)
+
+    stable_rounds = 0
+    for _ in range(SCROLL_MAX_STEPS):
+        try:
+            items = await page.eval_on_selector_all(selector, IMG_SRC_WITH_CONTEXT_JS)
+        except Exception:
+            items = []
+        before = len(seen)
+        merge(items)
+        grew = len(seen) > before
+
+        try:
+            reached_bottom = await page.evaluate(
+                "(window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 50)"
+            )
+        except Exception:
+            reached_bottom = True
+
+        if reached_bottom and not grew:
+            stable_rounds += 1
+            if stable_rounds >= 2:
+                break
+        else:
+            stable_rounds = 0
+
+        if not reached_bottom:
+            try:
+                await page.evaluate("window.scrollBy(0, Math.round(window.innerHeight * 0.85))")
+            except Exception:
+                pass
+        await page.wait_for_timeout(SCROLL_STEP_WAIT_MS)
+
+    # جولتان أخيرتان صريحتان (أسفل الصفحة تمامًا، ثم أعلاها) كاحتياط إضافي
+    for pos_expr in ["document.body.scrollHeight", "0"]:
+        try:
+            await page.evaluate(f"window.scrollTo(0, {pos_expr})")
+        except Exception:
+            pass
+        await page.wait_for_timeout(400)
+        try:
+            items = await page.eval_on_selector_all(selector, IMG_SRC_WITH_CONTEXT_JS)
+            merge(items)
+        except Exception:
+            pass
+
+    return [{"url": u, "ctx": ctx} for u, ctx in seen.items()]
+
+
 def _filter_widget_context(items: list[dict], base_url: str) -> list[str]:
     """
-    [مُضاف] يستبعد أي صورة يحمل أحد أصولها في الـDOM (حتى 5 مستويات) اسم
-    class/id يطابق WIDGET_CONTEXT_PATTERN، ثم يطبّق فلترة النطاق الاختيارية
+    يستبعد أي صورة يحمل أحد أصولها في الـDOM (حتى 5 مستويات) اسم class/id
+    يطابق WIDGET_CONTEXT_PATTERN، ثم يطبّق فلترة النطاق الاختيارية
     (STRICT_DOMAIN_FILTER) ثم dedupe المعتاد. يطبع عدد الصور المستبعدة
     بسبب الودجت ليكون التشخيص واضحًا في اللوج مباشرة.
     """
@@ -247,13 +329,11 @@ def _filter_widget_context(items: list[dict], base_url: str) -> list[str]:
 
 
 async def extract_image_urls(page, base_url: str) -> list[str]:
-    # 0) أولوية قصوى: محدّدات محتوى معروفة — تستبعد الشعار/الإعلانات تلقائيًا.
-    #    الآن نستخدم النسخة الواعية بالسياق (مع ctx) لفلترة أي ودجت مُحقَن
-    #    داخل نفس الحاوية (كما اكتُشف: عدد ثابت 6 صور في كل فصل بغض النظر
-    #    عن طوله — دليل قاطع على ودجت قالب ثابت لا فشل شبكة عشوائي).
+    # 0) أولوية قصوى: محدّدات محتوى معروفة — تُجمع تراكميًا أثناء تمرير
+    #    كامل للصفحة (وليس بلقطة واحدة)، ثم تُفلتَر من سياق الودجات.
     for selector in CONTENT_SELECTORS:
         try:
-            items = await page.eval_on_selector_all(selector, IMG_SRC_WITH_CONTEXT_JS)
+            items = await collect_images_while_scrolling(page, selector)
         except Exception:
             items = []
         found = _filter_widget_context(items, base_url)
@@ -269,10 +349,13 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     if found:
         return dedupe(found)
 
-    # 2) كل وسوم <img> في الصفحة (احتياط أخير، عرضة لالتقاط شعار/إعلانات)
-    #    نستخدم أيضًا النسخة الواعية بالسياق هنا لأنها أوسع نطاقًا وأكثر
-    #    عرضة لالتقاط ودجات، لا فقط الشعار/الإعلانات المغطاة بـIGNORE_PATTERN.
-    items = await page.eval_on_selector_all("img", IMG_SRC_WITH_CONTEXT_JS)
+    # 2) كل وسوم <img> في الصفحة (احتياط أخير، عرضة لالتقاط شعار/إعلانات) —
+    #    نفس التجميع التراكمي أثناء التمرير، لأنه أوسع نطاقًا وأكثر عرضة
+    #    لتفويت صور بسبب virtualization إن اعتمدنا على لقطة واحدة.
+    try:
+        items = await collect_images_while_scrolling(page, "img")
+    except Exception:
+        items = []
     found = _filter_widget_context(items, base_url)
     if found:
         return found
@@ -323,10 +406,9 @@ async def fetch_image_bytes(context, img_url: str, referer: str):
     بعد سيل من الطلبات المتتالية على نفس الجلسة، فيرفض دفعة صور مرة وحدة ثم
     يعود يقبل بعد قليل — إعادة المحاولة بفاصل قصير تتعافى من هذا تلقائيًا.
 
-    [مُعدَّل] يعيد الآن (bytes|None, سبب_الفشل|None) بدل bytes|None فقط —
-    يتحقق من content-type فعليًا قبل قبول الاستجابة كصورة صالحة، ويحتفظ
-    بآخر سبب فشل دقيق (status/content-type/استثناء) ليُطبع في اللوج بدل
-    رسالة Pillow العامة التي لا تفسّر شيئًا.
+    يعيد (bytes|None, سبب_الفشل|None): يتحقق من content-type فعليًا قبل قبول
+    الاستجابة كصورة صالحة، ويحتفظ بآخر سبب فشل دقيق (status/content-type/
+    استثناء) ليُطبع في اللوج بدل رسالة Pillow العامة التي لا تفسّر شيئًا.
     """
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
@@ -382,18 +464,10 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
-    # تمرير تدريجي لأسفل الصفحة لتحفيز أي تحميل كسول يعتمد على ظهور العنصر
-    # بالشاشة (IntersectionObserver) — احتياط إضافي حتى لو المحدّدات نجحت
-    try:
-        for _ in range(6):
-            await page.mouse.wheel(0, 3000)
-            await page.wait_for_timeout(400)
-        await page.mouse.wheel(0, -20000)
-    except Exception:
-        pass
-
+    # عدّ تشخيصي سريع فقط (يُطبع في اللوج) — الاستخراج الفعلي بالأسفل يقوم
+    # بتمريره الشامل الخاص به عبر collect_images_while_scrolling
     found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
-    print(f"  🖼️ صور حقيقية مكتشفة قبل الاستخراج: {found_count}")
+    print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
 
     image_urls = await extract_image_urls(page, chapter_url)
     await page.close()
@@ -401,14 +475,13 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
     # الحكم بالنجاح يعتمد على وجود صور مستخرجة فعليًا، وليس على إطلاق حدث
     # goto (domcontentloaded/load): بعض الصفحات ترسم محتواها الحقيقي كاملًا
     # (والصور معه) قبل أن يتعلّق الحدث نفسه بسبب مورد بطيء غير متعلق بالمحتوى
-    # (إعلان فيديو، سكربت تتبّع معلّق...)، فرفض النتيجة في هذه الحالة كان
-    # يُهدر بيانات صحيحة مكتشفة فعليًا بلا داعٍ.
     if not image_urls:
         await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
         return None, [], reason
     if not navigated:
         print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
+    print(f"  📊 إجمالي الصور بعد التمرير التراكمي الكامل: {len(image_urls)}")
     return context, image_urls, ""
 
 
