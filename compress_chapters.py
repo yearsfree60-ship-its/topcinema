@@ -14,46 +14,42 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
 
 2) تحميل الصور نفسها يتم عبر Playwright (نفس جلسة المتصفح وكوكيزها وبصمتها)
    وليس عبر مكتبة requests منفصلة — لأن بعض المواقع ترفض تحميل الصور من
-   خارج جلسة المتصفح الحقيقية (تسبّب خطأ "cannot identify image" رغم أن
-   الرابط نفسه صحيح ويعمل داخل نفس متصفح Playwright الذي فتح الصفحة).
+   خارج جلسة المتصفح الحقيقية.
 
-3) الاستخراج يفحص "سياق" كل صورة (أصولها/parents في الـDOM حتى 5 مستويات)
-   ويستبعد أي صورة أصلها يحمل class/id يوحي بأنه قسم "مقترح/مشابه/تعليقات/
-   إعلان" — لأن بعض القوالب تحقن ودجات كهذي بنفس وسوم <img> الحقيقية دون أي
-   إشارة نصية في رابط الصورة نفسه تدل على أنه ودجت.
-
-3.1) الجمع يتم بتمرير تراكمي واحد فقط لكل الصفحة: يجمع كل عناصر <img> ولكل
-   عنصر نسجّل أيضًا "أي محدّدات من قائمة معروفة (Madara وما شابه) يطابقها
-   فعليًا" (عبر Element.matches) في نفس الجولة. بعد الجمع مرة واحدة: نستبعد
-   صور الودجات حسب السياق، ثم نفضّل الصور الواقعة داخل محدّد معروف (بترتيب
-   أولويته) إن كان عددها كافيًا، وإلا نستخدم كل الصور المتبقية — بدون أي
-   تمرير إضافي (كان تكرار التمرير لكل محدّد على حدة يسبب دقائق طويلة لفصل
-   واحد في مواقع لا تطابق أي محدّد معروف).
-
-3.2) التمرير عبر الصفحة تراكمي لا لقطة واحدة أخيرة — يحل مشكلة الصفحات التي
-   تُلغي تحميل (unmount) الصور البعيدة عن منطقة العرض (تحميل كسول/
-   virtualization)، وله سقف زمني إجمالي (لا سقف خطوات فقط) يحمي من صفحات
-   تنمو باستمرار (ودجت "تحميل المزيد" مثلًا).
+3) الاستخراج يفحص "سياق" كل صورة (أصولها في الـDOM حتى 5 مستويات) ويستبعد
+   أي صورة أصلها يوحي بأنه ودجت "مقترح/مشابه/إعلان"، ويجمع كل الصور بتمرير
+   تراكمي واحد فقط لكل الصفحة (لا تمرير منفصل لكل محدّد CSS مُخمَّن).
 
 4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
    (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
 
 5) الحكم بنجاح/فشل تحميل الصفحة يعتمد على وجود صور مستخرجة فعليًا، وليس على
-   إطلاق حدث goto (domcontentloaded/load) بذاته — بعض الصفحات ترسم محتواها
-   الحقيقي كاملًا حتى لو تعلّق الحدث نفسه بسبب مورد بطيء غير متعلق بالمحتوى.
+   إطلاق حدث goto بذاته.
 
 6) عند فشل تحميل بايتات صورة، يُتحقق من content-type فعليًا قبل تمريرها
-   لـ Pillow، ويُطبع السبب الدقيق بدل رسالة Pillow العامة التي لا تفسّر شيئًا.
+   لـ Pillow، ويُطبع السبب الدقيق بدل رسالة Pillow العامة غير المفسِّرة.
 
-7) [مُضاف] الدفع التدريجي الفعلي: إن كان ENABLE_INCREMENTAL_PUSH مفعّلًا
-   و GIT_COMMIT_DIR مضبوطًا (تمررهما خطوة الـ workflow)، يُنفَّذ commit+push
-   حقيقي (git عبر subprocess، في thread منفصل حتى لا يحجب حلقة الأحداث غير
-   المتزامنة) فور نجاح كل فصل — لا بعد اكتمال كل الفصول. في نسخة سابقة كانت
-   خطوة الـ workflow تمرّر هذين المتغيّرين لكن السكربت لم يكن يقرأهما إطلاقًا
-   (خلل: الدفع "التدريجي" لم يكن يحدث فعليًا، والدفع الحقيقي الوحيد كان
-   الدفعة الأخيرة في نهاية الـ job). إن كان ENABLE_INCREMENTAL_PUSH مُعطَّلًا،
-   لا يُنفَّذ أي أمر git من هنا إطلاقًا، وتبقى خطوة "الدفع الاحتياطي النهائي"
-   في الـ workflow هي المسؤولة عن دفعة واحدة بالنهاية.
+7) manifest.json يُدمَج بدل إعادة الكتابة الكاملة (يُجلب أحدث نسخة من الفرع
+   البعيد فعليًا قبل الكتابة النهائية، وتُدمج فيها فصول هذه التشغيلة).
+
+8) استراتيجية إعادة محاولة الدفع: fetch + reset مختلط (mixed) + إعادة commit
+   فوق أحدث نقطة على البعيد (بلا git rebase، هش جدًا مع JSON مُولَّد بالكامل).
+
+9) الدفع التدريجي الفعلي: إن كان ENABLE_INCREMENTAL_PUSH مفعّلًا و
+   GIT_COMMIT_DIR مضبوطًا، يُنفَّذ commit+push حقيقي فور نجاح كل فصل.
+
+10) [إصلاح جذري جديد] تجاوز "جدار مانع الإعلانات": بعض المواقع (مثل
+    dilar.tube) تعرض صفحة اعتراضية فورية بعد التحميل تطلب تعطيل أي أداة حظر
+    إعلانات، مع رابط "متابعة على أي حال" وعدّ تنازلي — طالما هذا الجدار
+    موجود، محتوى القراءة الحقيقي (والصور) لا يوجد بالـDOM إطلاقًا مهما طال
+    الانتظار أو أُعيدت المحاولة. يُكتشف الجدار بالبحث عن نص رابط التجاوز
+    المعروف، يُنتظَر عدّه التنازلي (هامش أمان ٩ث)، ثم يُضغط تلقائيًا.
+
+11) [تحسين جذري جديد] سياق متصفح واحد (context) لكل التشغيلة كاملة بدل سياق
+    منفصل لكل فصل: لو موقع يتذكر تجاوز جدار مانع الإعلانات عبر كوكيز أو
+    localStorage (شائع جدًا)، إعادة استخدام نفس السياق عبر كل الفصول تعني
+    مواجهة الجدار مرة واحدة بالفصل الأول فقط، وتخطّيه تلقائيًا في كل ما بعده
+    — توفير وقت حقيقي، وسلوك تصفح أقرب لمستخدم حقيقي (جلسة واحدة مستمرة).
 """
 import asyncio
 import json
@@ -81,25 +77,16 @@ CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
 
-# سقف أمان لعدد خطوات التمرير التراكمي (فصول بمئات الصور تحتاج خطوات أكثر)
 SCROLL_MAX_STEPS = int(os.environ.get("SCROLL_MAX_STEPS", "400"))
 SCROLL_STEP_WAIT_MS = int(os.environ.get("SCROLL_STEP_WAIT_MS", "350"))
-# سقف زمني إجمالي (بالثواني) للتمرير التراكمي بغضّ النظر عن عدد الخطوات
 SCROLL_MAX_TOTAL_SEC = int(os.environ.get("SCROLL_MAX_TOTAL_SEC", "90"))
 
-# إذا فُعِّل هذا يتم استبعاد أي صورة من نطاق (domain) غير النطاق الأغلب بين
-# صور الفصل — مُعطَّل افتراضيًا لأن بعض المواقع الشرعية توزّع صورها على أكثر
-# من نطاق CDN. يُتحكم به الآن من زر في الـ workflow (strict_domain_filter)
 STRICT_DOMAIN_FILTER = os.environ.get("STRICT_DOMAIN_FILTER", "0") == "1"
 
-# الدفع التدريجي: commit+push حقيقي بعد كل فصل ناجح (زر enable_incremental_push
-# في الـ workflow). يعمل فقط إن كان GIT_COMMIT_DIR مضبوطًا فعليًا.
 ENABLE_INCREMENTAL_PUSH = os.environ.get("ENABLE_INCREMENTAL_PUSH", "true").strip().lower() == "true"
 GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip() or None
 GIT_BRANCH = os.environ.get("GIT_BRANCH", "output").strip() or "output"
 
-# أقصى بعد مسموح لأي صورة (عرض أو طول) قبل إعادة تحجيمه إجباريًا — يحمي من
-# فشل ترميز WebP الذي له حد صارم 16383 بكسل، بغضّ النظر عن إعداد العرض الأقصى
 WEBP_HARD_LIMIT = 16000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
@@ -126,6 +113,13 @@ CHALLENGE_MARKERS = [
     "cf-browser-verification", "ddos protection by", "verifying you are human",
     "enable javascript and cookies",
 ]
+
+# نص رابط/زر "تجاوز جدار مانع الإعلانات" — قابل للتوسعة لاحقًا لو صادفنا
+# صيغ نصية أخرى بمواقع جديدة
+ADBLOCK_WALL_TEXT_PATTERN = re.compile(
+    r"continue anyway|proceed anyway|متابعة على أي حال|المتابعة على أي حال|تجاوز والمتابعة",
+    re.I,
+)
 
 COLLECT_IMAGES_JS = """(els, selectors) => els.map(e => {
     const u = e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
@@ -176,6 +170,24 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     return f"{u.hostname}__{slugify(manga_name)}", (chapter_num or "0")
 
 
+async def dismiss_adblock_wall(page) -> bool:
+    """يكتشف جدار "مانع إعلانات" (مثل dilar.tube) ويتجاوزه. يرجّع True لو
+    وُجد الجدار فعليًا وتم التعامل معه، و False لو ما كان موجودًا أصلًا
+    (الحالة الشائعة بعد أول فصل بفضل إعادة استخدام نفس السياق)."""
+    try:
+        locator = page.get_by_text(ADBLOCK_WALL_TEXT_PATTERN)
+        if await locator.count() == 0:
+            return False
+        print("  🧱 اكتُشف جدار \"مانع إعلانات\" — انتظار العد التنازلي ثم تجاوزه")
+        await page.wait_for_timeout(9000)  # هامش أمان فوق أطول عدّ تنازلي لوحظ (٧ث)
+        await locator.first.click(timeout=5000)
+        await page.wait_for_timeout(1200)
+        return True
+    except Exception as e:
+        print(f"  ⚠️ تعذّرت محاولة تجاوز جدار مانع الإعلانات: {e}")
+        return False
+
+
 async def looks_like_challenge_page(page) -> bool:
     try:
         title = (await page.title() or "").lower()
@@ -203,8 +215,6 @@ async def count_real_images(page) -> int:
 
 
 async def wait_for_real_images(page, max_wait_ms: int, poll_ms: int) -> int:
-    """تشخيصي فقط (رقم تقريبي يُطبع في اللوج) — الاستخراج الفعلي يعتمد على
-    التمرير التراكمي في collect_images_while_scrolling وليس على هذا العدّ."""
     elapsed = 0
     last_count = -1
     stable_rounds = 0
@@ -232,8 +242,6 @@ def dedupe(urls: list[str]) -> list[str]:
 
 
 async def collect_images_while_scrolling(page, content_selectors: list[str]) -> list[dict]:
-    """تمرير تراكمي واحد فقط لكل الصفحة — يجمع كل عناصر <img> ومعها سياقها
-    وأي محدّدات معروفة تطابقها، في نفس الجولة."""
     seen: dict[str, dict] = {}
 
     def merge(items):
@@ -389,8 +397,6 @@ IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
 
 
 async def fetch_image_bytes(context, img_url: str, referer: str):
-    """يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية).
-    يعيد (bytes|None, سبب_الفشل|None) مع إعادة محاولة عند الفشل."""
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
@@ -416,64 +422,102 @@ def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git"] + args, cwd=cwd, capture_output=True, text=True)
 
 
-def _git_commit_and_push_sync(commit_dir: str, branch: str, message: str) -> tuple[bool, str]:
+def _read_remote_manifest_sync(commit_dir: str, branch: str) -> dict | None:
+    """يقرأ manifest.json كما هو على الفرع البعيد حاليًا (بدون التأثير على
+    working tree) عبر git show — لا يعتمد على النسخة المحلية القديمة."""
+    _run_git(["fetch", "origin", branch], commit_dir)
+    show = _run_git(["show", f"origin/{branch}:output/manifest.json"], commit_dir)
+    if show.returncode != 0:
+        return None
+    try:
+        return json.loads(show.stdout)
+    except Exception:
+        return None
+
+
+def merge_manifest_dict(base: dict, results: list) -> dict:
+    """يدمج نتائج هذه التشغيلة داخل manifest.json موجود مسبقًا (بدل إعادة
+    بنائه من الصفر) — يستبدل الفصل لو أُعيد معالجته (نفس chNum)، يضيفه لو
+    جديد، ويحافظ على كل مانهوا/فصل آخر لم تمسّه هذه التشغيلة بلا تغيير."""
+    manifest = {"manga": {k: {**v, "chapters": list(v.get("chapters", []))}
+                           for k, v in (base or {}).get("manga", {}).items()}}
+    for r in results:
+        mid = r["manga_id"]
+        entry = manifest["manga"].setdefault(mid, {
+            "name": mid.split("__", 1)[-1].replace("-", " "),
+            "chapters": [],
+        })
+        chNum = float(r["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", r["chapter_num"]) else 0
+        images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
+        new_chapter = {
+            "label": f"الفصل {r['chapter_num']}",
+            "chNum": chNum,
+            "sourceUrl": r["source_url"],
+            "images": images_cdn,
+        }
+        replaced = False
+        for idx, ch in enumerate(entry["chapters"]):
+            if ch.get("chNum") == chNum:
+                entry["chapters"][idx] = new_chapter
+                replaced = True
+                break
+        if not replaced:
+            entry["chapters"].append(new_chapter)
+
+    for mid in manifest["manga"]:
+        manifest["manga"][mid]["chapters"].sort(key=lambda c: c["chNum"])
+    return manifest
+
+
+def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attempts: int = 5) -> tuple[bool, str]:
     """
-    ينفَّذ في thread منفصل (استدعاؤه دومًا عبر asyncio.to_thread) لأن
-    subprocess.run حاجب (blocking) ولا يجوز تشغيله مباشرة داخل event loop
-    غير متزامن — كان سيُجمّد كل تحميل الصور والفصول التالية أثناء انتظار
-    الشبكة لعملية git push.
+    يدفع أي تغييرات موجودة حاليًا في working tree الخاص بالـworktree.
+    عند رفض الدفع (الفرع البعيد تقدّم)، لا نستخدم git rebase — عرضة لتعارضات
+    دمج نصي سهلة على ملفات JSON مُولَّدة بالكامل حتى لو كانت التغييرات فعليًا
+    متوافقة منطقيًا. بدلًا من ذلك: نجلب أحدث نسخة، ونعمل reset مختلط (mixed)
+    يُرجع مؤشر الفرع المحلي لآخر نقطة على البعيد دون لمس ملفات القرص إطلاقًا
+    (كل ما كان محليًا يتحوّل تلقائيًا لتغييرات غير مُلتَزمة)، ثم نُعيد
+    add+commit لحالة القرص الحالية فوق أحدث نسخة مباشرة — بلا أي آلية دمج.
     """
     add = _run_git(["add", "output"], commit_dir)
     if add.returncode != 0:
         return False, f"git add فشل: {add.stderr.strip()[:200]}"
-
     diff = _run_git(["diff", "--cached", "--quiet"], commit_dir)
     if diff.returncode == 0:
         return True, "لا تغييرات جديدة (تخطي الدفع)"
-
     commit = _run_git(["commit", "-m", message], commit_dir)
     if commit.returncode != 0:
         return False, f"git commit فشل: {commit.stderr.strip()[:200]}"
 
-    for attempt in range(1, 4):
+    for attempt in range(1, max_attempts + 1):
         push = _run_git(["push", "origin", f"HEAD:{branch}"], commit_dir)
         if push.returncode == 0:
             return True, "تم الدفع"
+
         _run_git(["fetch", "origin", branch], commit_dir)
-        _run_git(["rebase", f"origin/{branch}"], commit_dir)
+        _run_git(["reset", f"origin/{branch}"], commit_dir)
+        _run_git(["add", "output"], commit_dir)
+        diff2 = _run_git(["diff", "--cached", "--quiet"], commit_dir)
+        if diff2.returncode == 0:
+            return True, "أصبحت التغييرات مطابقة لأحدث نسخة على البعيد أصلًا"
+        _run_git(["commit", "-m", message], commit_dir)
         time.sleep(attempt * 2)
 
-    return False, "فشل الدفع بعد عدة محاولات (سيُعالجه الدفع الاحتياطي النهائي بالـ workflow)"
+    return False, "فشل الدفع بعد عدة محاولات (سيُعالجه الدفع الاحتياطي النهائي بالـ workflow إن وُجد)"
 
 
-async def push_chapter_incrementally(manga_id: str, chapter_num: str) -> None:
-    """
-    يُستدعى فور نجاح حفظ صور فصل واحد. لا يفعل شيئًا إن كان الدفع التدريجي
-    مُعطَّلًا (ENABLE_INCREMENTAL_PUSH=false) أو GIT_COMMIT_DIR غير مضبوط —
-    في هذه الحالة، خطوة "الدفع الاحتياطي النهائي" بالـ workflow هي المسؤولة
-    عن دفعة واحدة في نهاية التشغيل.
-    """
+async def push_now(message: str) -> None:
     if not ENABLE_INCREMENTAL_PUSH or not GIT_COMMIT_DIR:
         return
-    message = f"إضافة {manga_id} - الفصل {chapter_num}"
-    ok, msg = await asyncio.to_thread(_git_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, message)
-    print(f"  {'✅' if ok else '⚠️'} دفع تدريجي: {msg}")
+    ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, message)
+    print(f"  {'✅' if ok else '⚠️'} دفع: {msg}")
 
 
-async def open_and_collect(browser, chapter_url: str, attempt: int):
-    """
-    محاولة واحدة لفتح الصفحة واستخراج روابط الصور.
-    يعيد (context, روابط_الصور, سبب_الفشل).
-    """
-    context = await browser.new_context(
-        user_agent=UA,
-        viewport={"width": 1280, "height": 1000},
-        locale="en-US",
-        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
-    )
-    await context.add_init_script(
-        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-    )
+async def open_and_collect(context, chapter_url: str, attempt: int):
+    """يفتح صفحة جديدة (page) داخل السياق (context) المشترك المُمرَّر —
+    السياق نفسه يُنشأ مرة واحدة فقط لكل التشغيلة بالكامل في main()، ما يعني
+    الكوكيز وlocalStorage (بما فيها تجاوز أي جدار مانع إعلانات) تُحفظ
+    وتُستخدَم تلقائيًا عبر كل الفصول التالية."""
     page = await context.new_page()
 
     navigated = False
@@ -484,15 +528,23 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
     except Exception as e:
         print(f"  ⚠️ تعذّر تحميل الصفحة ({wait_strategy}): {e}")
 
-    if navigated and await looks_like_challenge_page(page):
-        print("  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار وإعادة تحميل")
-        await page.wait_for_timeout(5000)
-        try:
-            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
-        except Exception as e:
-            print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
+    if navigated:
+        await dismiss_adblock_wall(page)
+
+        if await looks_like_challenge_page(page):
+            print("  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار وإعادة تحميل")
+            await page.wait_for_timeout(5000)
+            try:
+                await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+                await dismiss_adblock_wall(page)
+            except Exception as e:
+                print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
     found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
+    if found_count == 0 and navigated:
+        # احتياط: لو ظهر جدار مانع الإعلانات متأخرًا بعد بدء الانتظار
+        if await dismiss_adblock_wall(page):
+            found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
     print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
 
     t0 = time.monotonic()
@@ -501,23 +553,22 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
     await page.close()
 
     if not image_urls:
-        await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
-        return None, [], reason
+        return [], reason
     if not navigated:
         print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
     print(f"  📊 إجمالي الصور بعد التمرير التراكمي: {len(image_urls)}")
-    return context, image_urls, ""
+    return image_urls, ""
 
 
-async def process_chapter(browser, chapter_url: str, index: int, total: int):
+async def process_chapter(context, chapter_url: str, index: int, total: int):
     print(f"[{index}/{total}] فتح: {chapter_url}")
 
-    context, image_urls, fail_reason = None, [], ""
+    image_urls, fail_reason = [], ""
     for attempt in range(1, RETRY_PER_CHAPTER + 1):
         if attempt > 1:
             print(f"  🔁 إعادة محاولة #{attempt}")
-        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt)
+        image_urls, fail_reason = await open_and_collect(context, chapter_url, attempt)
         if image_urls:
             break
 
@@ -570,20 +621,25 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
         if still_failed:
             print(f"  ❌ تعذّر تحميل {len(still_failed)} صورة نهائيًا: {still_failed}")
 
-    await context.close()
-
     if not saved_paths:
         return None
 
-    # دفع تدريجي فوري لهذا الفصل (إن كان مفعّلًا) — لا ننتظر بقية الفصول
-    await push_chapter_incrementally(manga_id, chapter_num)
-
-    return {
+    result = {
         "manga_id": manga_id,
         "chapter_num": chapter_num,
         "source_url": chapter_url,
         "image_paths": saved_paths,
     }
+
+    if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR:
+        remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+        merged = merge_manifest_dict(remote or {}, [result])
+        (OUTPUT_DIR / "manifest.json").write_text(
+            json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        await push_now(f"إضافة {manga_id} - الفصل {chapter_num}")
+
+    return result
 
 
 async def main():
@@ -595,7 +651,7 @@ async def main():
         print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
         sys.exit(1)
 
-    print(f"⚙️ الدفع التدريجي: {'مفعّل' if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR else 'مُعطَّل (دفعة واحدة بالنهاية عبر الـ workflow)'}")
+    print(f"⚙️ الدفع التدريجي: {'مفعّل' if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR else 'مُعطَّل (دفعة واحدة بالنهاية)'}")
     print(f"⚙️ فلترة النطاق الصارمة: {'مفعّلة' if STRICT_DOMAIN_FILTER else 'مُعطَّلة'}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -603,44 +659,47 @@ async def main():
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        # سياق واحد فقط لكل التشغيلة (بدل سياق منفصل لكل فصل) — يحافظ على
+        # الكوكيز وlocalStorage عبر كل الفصول، فيتخطى أي جدار "مانع إعلانات"
+        # تلقائيًا بعد أول فصل، ويقلل عدد الجلسات المنفصلة المفتوحة على الموقع
+        context = await browser.new_context(
+            user_agent=UA,
+            viewport={"width": 1280, "height": 1000},
+            locale="en-US",
+            extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
+        )
+        await context.add_init_script(
+            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+        )
         for i, url in enumerate(chapter_urls, start=1):
-            r = await process_chapter(browser, url, i, len(chapter_urls))
+            r = await process_chapter(context, url, i, len(chapter_urls))
             if r:
                 results.append(r)
+        await context.close()
         await browser.close()
 
-    manifest = {"manga": {}}
-    for r in results:
-        mid = r["manga_id"]
-        if mid not in manifest["manga"]:
-            manifest["manga"][mid] = {
-                "name": mid.split("__", 1)[-1].replace("-", " "),
-                "chapters": []
-            }
-        images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
-        manifest["manga"][mid]["chapters"].append({
-            "label": f"الفصل {r['chapter_num']}",
-            "chNum": float(r["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", r["chapter_num"]) else 0,
-            "sourceUrl": r["source_url"],
-            "images": images_cdn,
-        })
+    base_manifest = {"manga": {}}
+    if GIT_COMMIT_DIR:
+        remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+        if remote:
+            base_manifest = remote
+    elif (OUTPUT_DIR / "manifest.json").exists():
+        try:
+            base_manifest = json.loads((OUTPUT_DIR / "manifest.json").read_text(encoding="utf-8"))
+        except Exception:
+            print("  ⚠️ تعذّر قراءة manifest.json المحلي الحالي — سيُعاد بناؤه من نتائج هذه التشغيلة فقط")
 
-    for mid in manifest["manga"]:
-        manifest["manga"][mid]["chapters"].sort(key=lambda c: c["chNum"])
-
+    manifest = merge_manifest_dict(base_manifest, results)
     (OUTPUT_DIR / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     print(f"\n✅ اكتمل: {len(results)} فصل من أصل {len(chapter_urls)}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
 
-    # دفعة أخيرة تضمن أن manifest.json نفسه (وأي فصل لم يُدفع لأي سبب) يُحفظ،
-    # حتى لو كان الدفع التدريجي مفعّلًا — لأنه دُفع سابقًا فصلًا بفصل قبل أن
-    # يُكتب manifest.json (يُكتب بعد كل الفصول)، فلازم دفعة أخيرة صريحة له
     if GIT_COMMIT_DIR:
-        await push_chapter_incrementally("manifest", "نهائي")
+        ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تحديث manifest.json ونتائج التشغيل")
+        print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
 
 
 if __name__ == "__main__":
     asyncio.run(main())
-   
