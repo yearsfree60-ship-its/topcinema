@@ -170,7 +170,37 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     return f"{u.hostname}__{slugify(manga_name)}", (chapter_num or "0")
 
 
-async def dismiss_adblock_wall(page, max_wait_ms: int = 90000) -> bool:
+async def dump_adblock_wall_diagnostics(page):
+    """تشخيص مباشر من نفس بيئة التشغيل الفعلية (لا تخمين): نطبع HTML الزر
+    وسياقه القريب، وكل السكربتات المحمّلة بالصفحة، لفهم الآلية الحقيقية
+    اللي يعتمد عليها الموقع لتفعيل زر التجاوز قبل أي محاولة إصلاح جديدة."""
+    try:
+        info = await page.evaluate("""
+            () => {
+                const btn = document.querySelector('#_fb_continue');
+                let container = btn;
+                for (let i = 0; i < 3 && container && container.parentElement; i++) {
+                    container = container.parentElement;
+                }
+                return {
+                    btnOuter: btn ? btn.outerHTML : null,
+                    containerOuter: container ? container.outerHTML.slice(0, 2500) : null,
+                    scripts: Array.from(document.scripts).map(s => s.src || ('(inline, ' + (s.textContent||'').length + ' حرف)')),
+                };
+            }
+        """)
+        print("  🔍 [تشخيص] HTML الزر:")
+        print("     " + str(info.get('btnOuter'))[:800])
+        print("  🔍 [تشخيص] الحاوية المحيطة (أول 2500 حرف):")
+        print("     " + str(info.get('containerOuter'))[:2500])
+        print("  🔍 [تشخيص] السكربتات المحمّلة بالصفحة:")
+        for s in info.get('scripts', []):
+            print("     - " + s)
+    except Exception as e:
+        print(f"  ⚠️ تعذّر جمع التشخيص الإضافي: {e}")
+
+
+async def dismiss_adblock_wall(page, max_wait_ms: int = 12000) -> bool:
     """يكتشف جدار "مانع إعلانات" (مثل dilar.tube) ويتجاوزه. يرجّع True لو
     وُجد الجدار فعليًا وتم التعامل معه، و False لو ما كان موجودًا أصلًا
     (الحالة الشائعة بعد أول فصل بفضل إعادة استخدام نفس السياق).
@@ -197,7 +227,8 @@ async def dismiss_adblock_wall(page, max_wait_ms: int = 90000) -> bool:
             await page.wait_for_timeout(poll_ms)
             elapsed += poll_ms
         if not ready:
-            print(f"  ⚠️ الزر لم يصبح جاهزًا خلال {max_wait_ms//1000}ث — سنحاول الضغط القسري كملاذ أخير")
+            print(f"  ⚠️ الزر لم يصبح جاهزًا خلال {max_wait_ms//1000}ث — سنجمع تشخيصًا قبل محاولة أخيرة")
+            await dump_adblock_wall_diagnostics(page)
         try:
             await target.click(timeout=3000)
         except Exception:
@@ -282,6 +313,13 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
             else:
                 seen[u]["matched"].update(it.get("matched", []))
 
+    def content_matched_count() -> int:
+        # نعدّ فقط الصور اللي طابقت أحد محدّدات محتوى القراءة الفعلية (مو أي
+        # صورة بالصفحة) — لأن أقسام "مقترح لك/مانجا مشابهة" أسفل الصفحة تكبر
+        # بلا توقف عبر lazy load أثناء التمرير، فتمنع شرط "استقرار العدد
+        # الكلي" من التحقق أبدًا حتى لو صور الفصل الحقيقية اكتملت من زمان
+        return sum(1 for v in seen.values() if v["matched"])
+
     try:
         await page.evaluate("window.scrollTo(0, 0)")
     except Exception:
@@ -290,6 +328,9 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
 
     start = time.monotonic()
     stable_rounds = 0
+    content_stable_rounds = 0
+    last_content_count = -1
+    CONTENT_STABLE_ROUNDS_REQUIRED = 4
     for _ in range(SCROLL_MAX_STEPS):
         if time.monotonic() - start > SCROLL_MAX_TOTAL_SEC:
             print(f"  ⏱️ توقف التمرير عند السقف الزمني ({SCROLL_MAX_TOTAL_SEC}ث) — استخدام ما جُمع حتى الآن")
@@ -301,6 +342,13 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
         before = len(seen)
         merge(items)
         grew = len(seen) > before
+
+        cur_content = content_matched_count()
+        if cur_content > 0 and cur_content == last_content_count:
+            content_stable_rounds += 1
+        else:
+            content_stable_rounds = 0
+        last_content_count = cur_content
 
         try:
             reached_bottom = await page.evaluate(
@@ -315,6 +363,12 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
                 break
         else:
             stable_rounds = 0
+
+        # توقف مبكر: صور محتوى القراءة الفعلية استقرت لعدة جولات متتالية —
+        # لا داعي نكمل التمرير حتى لو باقي الصفحة (ودجات مقترحة) لسا يكبر
+        if content_stable_rounds >= CONTENT_STABLE_ROUNDS_REQUIRED:
+            print(f"  ⏱️ استقرت صور محتوى القراءة الفعلية ({cur_content}) لـ{CONTENT_STABLE_ROUNDS_REQUIRED} جولات متتالية — إيقاف التمرير مبكرًا")
+            break
 
         if not reached_bottom:
             try:
