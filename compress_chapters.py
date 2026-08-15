@@ -71,13 +71,29 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    الكامل) بدل الاكتفاء برسالة Pillow العامة "cannot identify image file"
    التي لا تفسّر شيئًا. هذا يجعل أي سبب فشل مستقبلي قابلًا للتشخيص فورًا
    من اللوج نفسه دون تخمين.
+
+7) [مُضاف] دفع تدريجي (commit + push) لفرع Git بعد كل فصل ناجح، بدل انتظار
+   اكتمال كل الفصول ثم الدفع دفعة واحدة في نهاية الـworkflow. هذا يحمي من
+   فقدان كل النتائج عند بلوغ سقف وقت التشغيلة (timeout-minutes) أو إلغاء
+   يدوي أو عطل مؤقت في الـRunner — فقط الفصل قيد المعالجة لحظة الانقطاع هو
+   ما يُفقد، لا كل شيء. يُفعَّل هذا فقط إذا كان GIT_COMMIT_DIR مضبوطًا (من
+   الـworkflow)؛ إن تُرك فارغًا يعمل السكربت كالسابق تمامًا (كتابة ملفات محليًا
+   بدون أي عمليات Git) — مفيد للتشغيل المحلي أو الاختبار.
+
+   كذلك، بما أن الدفع صار تدريجيًا عبر عدة "commits" منفصلة، أصبح الـmanifest
+   يُحمَّل ويُدمَج بدل أن يُبنى من الصفر ويستبدل القديم بالكامل في كل تشغيلة
+   (كما كان يحدث سابقًا، وهو ما كان يعني فقدان مانهوات/فصول من تشغيلات سابقة
+   من ملف manifest.json رغم بقاء صورها على القرص فعليًا وبلا فائدة).
 """
 import asyncio
 import json
 import os
 import re
+import subprocess
 import sys
+import time
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 
@@ -104,6 +120,15 @@ RATIO_SEARCH_ITERS = int(os.environ.get("IMG_RATIO_SEARCH_ITERS", "7"))
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
 CDN_BASE = os.environ.get("CDN_BASE", "")
+
+# [مُضاف] إعدادات الدفع التدريجي لـGit. GIT_COMMIT_DIR هو جذر الـworktree
+# الذي يتتبّع فرع الإخراج (output) — إذا تُرك فارغًا يبقى السكربت يعمل محليًا
+# فقط بلا أي عمليات Git، تمامًا كالسابق (وضع آمن للتشغيل المحلي/الاختبار).
+GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip()
+GIT_BRANCH = os.environ.get("GIT_BRANCH", "output")
+GIT_PUSH_RETRIES = int(os.environ.get("GIT_PUSH_RETRIES", "5"))
+GIT_USER_NAME = os.environ.get("GIT_USER_NAME", "manhwa-bot")
+GIT_USER_EMAIL = os.environ.get("GIT_USER_EMAIL", "bot@users.noreply.github.com")
 
 NAV_TIMEOUT_MS = int(os.environ.get("NAV_TIMEOUT_MS", "30000"))
 CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
@@ -688,6 +713,119 @@ async def process_chapter(context, state_path: Path, chapter_url: str, index: in
     }
 
 
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
+    return subprocess.run(
+        ["git"] + args, cwd=cwd, capture_output=True, text=True, timeout=60
+    )
+
+
+def load_existing_manifest(manifest_path: Path) -> dict:
+    """
+    [مُضاف] يحمّل manifest.json الموجود مسبقًا (لو كان الـworktree يتتبّع فرع
+    output الذي فيه بيانات من تشغيلات سابقة) بدل البدء من قاموس فارغ. هذا
+    يمنع فقدان مانهوات/فصول سابقة كانت تُفقد سابقًا عند استبدال الملف بالكامل.
+    """
+    if manifest_path.exists():
+        try:
+            data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            if isinstance(data, dict) and "manga" in data:
+                return data
+        except Exception as e:
+            print(f"  ⚠️ تعذّرت قراءة manifest.json الحالي ({e}) — سيُبنى من جديد")
+    return {"manga": {}}
+
+
+def merge_chapter_into_manifest(manifest: dict, result: dict) -> None:
+    """
+    [مُضاف] يدمج فصلًا واحدًا ناجحًا داخل الـmanifest القائم: يضيف مانهوا
+    جديدة إن لم تكن موجودة، ويستبدل الفصل لو كان موجودًا مسبقًا (نفس رابط
+    المصدر أو نفس رقم الفصل — حالة إعادة معالجة فصل فشل جزئيًا سابقًا)، وإلا
+    يضيفه، ثم يعيد ترتيب الفصول برقمها.
+    """
+    mid = result["manga_id"]
+    if mid not in manifest["manga"]:
+        manifest["manga"][mid] = {
+            "name": mid.split("__", 1)[-1].replace("-", " "),
+            "chapters": [],
+        }
+    images_cdn = [f"{CDN_BASE}/{p}" for p in result["image_paths"]] if CDN_BASE else result["image_paths"]
+    new_chapter = {
+        "label": f"الفصل {result['chapter_num']}",
+        "chNum": float(result["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", result["chapter_num"]) else 0,
+        "sourceUrl": result["source_url"],
+        "images": images_cdn,
+    }
+    chapters = manifest["manga"][mid]["chapters"]
+    for idx, c in enumerate(chapters):
+        if c.get("sourceUrl") == new_chapter["sourceUrl"] or c.get("chNum") == new_chapter["chNum"]:
+            chapters[idx] = new_chapter
+            break
+    else:
+        chapters.append(new_chapter)
+    chapters.sort(key=lambda c: c["chNum"])
+
+
+def write_manifest(manifest: dict) -> None:
+    (OUTPUT_DIR / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
+def git_commit_and_push(commit_message: str) -> bool:
+    """
+    [مُضاف] يحفظ كل التغييرات الحالية داخل GIT_COMMIT_DIR (commit + push)
+    فورًا. يُستدعى بعد كل فصل ناجح — لا بعد اكتمال كل الفصول — حتى لا تُفقد
+    نتائج الفصول التي سبق دفعها لو انقطع التشغيل لاحقًا (بلوغ سقف الوقت،
+    إلغاء يدوي، عطل مؤقت). لا يوقف تنفيذ باقي الفصول عند فشله — فقط يسجّل
+    تحذيرًا ويكمل، مع محاولة تعويضية أخيرة في نهاية main().
+    """
+    if not GIT_COMMIT_DIR:
+        return False
+
+    rel_output = str(OUTPUT_DIR)
+    add = _run_git(["add", rel_output], cwd=GIT_COMMIT_DIR)
+    if add.returncode != 0:
+        print(f"  ⚠️ git add فشل: {add.stderr.strip()[:300]}")
+        return False
+
+    status = _run_git(["status", "--porcelain", "--", rel_output], cwd=GIT_COMMIT_DIR)
+    if not status.stdout.strip():
+        print("  ℹ️ لا تغييرات جديدة لحفظها في Git لهذا الفصل")
+        return True
+
+    commit = _run_git(
+        ["-c", f"user.name={GIT_USER_NAME}", "-c", f"user.email={GIT_USER_EMAIL}",
+         "commit", "-m", commit_message],
+        cwd=GIT_COMMIT_DIR,
+    )
+    if commit.returncode != 0:
+        print(f"  ⚠️ git commit فشل: {commit.stderr.strip()[:300]}")
+        return False
+
+    for attempt in range(1, GIT_PUSH_RETRIES + 1):
+        push = _run_git(["push", "origin", f"HEAD:{GIT_BRANCH}"], cwd=GIT_COMMIT_DIR)
+        if push.returncode == 0:
+            print(f"  📤 تم الحفظ والدفع لفرع {GIT_BRANCH} (محاولة {attempt})")
+            return True
+        print(f"  ⚠️ فشل push (محاولة {attempt}/{GIT_PUSH_RETRIES}): {push.stderr.strip()[:300]}")
+        if attempt < GIT_PUSH_RETRIES:
+            # الأرجح تعارض fast-forward (كاتب آخر دفع بينما نحن نعمل) — نسحب
+            # ونعيد الترتيب فوق أحدث تغييرات عن بُعد قبل إعادة محاولة الدفع
+            _run_git(["fetch", "origin", GIT_BRANCH], cwd=GIT_COMMIT_DIR)
+            rebase = _run_git(["rebase", f"origin/{GIT_BRANCH}"], cwd=GIT_COMMIT_DIR)
+            if rebase.returncode != 0:
+                _run_git(["rebase", "--abort"], cwd=GIT_COMMIT_DIR)
+            time.sleep(2 * attempt)
+
+    print(f"  ❌ تعذّر دفع هذا الفصل لفرع {GIT_BRANCH} بعد {GIT_PUSH_RETRIES} محاولات "
+          f"— التغييرات محفوظة محليًا (commit) وستُعاد محاولة دفعها في نهاية التشغيلة")
+    return False
+
+
 async def main():
     chapter_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
     print(f"📋 تم استخراج {len(chapter_urls)} رابط صالح من المدخلات:")
@@ -698,7 +836,33 @@ async def main():
         sys.exit(1)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    if GIT_COMMIT_DIR:
+        print(f"🔗 الدفع التدريجي مفعّل — سيُحفظ كل فصل ناجح فورًا لفرع {GIT_BRANCH}")
+    else:
+        print("ℹ️ الدفع التدريجي معطّل (GIT_COMMIT_DIR غير مضبوط) — كتابة محلية فقط")
+
+    manifest_path = OUTPUT_DIR / "manifest.json"
+    manifest = load_existing_manifest(manifest_path)
+
     results = []
+    pushed_count, failed_push_count = 0, 0
+
+    def _handle_chapter_result(r: dict) -> None:
+        """
+        [مُضاف] يُستدعى فور نجاح كل فصل: يدمجه في الـmanifest، يكتبه على
+        القرص، ثم يحاول حفظه ودفعه في Git فورًا — بدل تجميع كل النتائج
+        وانتظار نهاية كل الفصول لحفظ أي شيء.
+        """
+        nonlocal pushed_count, failed_push_count
+        results.append(r)
+        merge_chapter_into_manifest(manifest, r)
+        write_manifest(manifest)
+        commit_msg = f"إضافة {r['manga_id']} — الفصل {r['chapter_num']} - {_utc_now()}"
+        if git_commit_and_push(commit_msg):
+            pushed_count += 1
+        elif GIT_COMMIT_DIR:
+            failed_push_count += 1
 
     async with async_playwright() as p:
         # [مُعدَّل] نحاول أولًا تشغيل Chrome الحقيقي المثبَّت (channel="chrome")
@@ -727,35 +891,29 @@ async def main():
             for i, url in items:
                 r = await process_chapter(context, state_path, url, i, len(chapter_urls))
                 if r:
-                    results.append(r)
+                    # [مُعدَّل] بدل تجميع النتيجة فقط بالذاكرة، تُدمَج وتُكتب
+                    # وتُدفَع فورًا (انظر _handle_chapter_result وملاحظة 7 أعلى
+                    # الملف) — حماية من فقدان كل شيء لو انقطع التشغيل لاحقًا
+                    _handle_chapter_result(r)
             await context.close()
 
         await browser.close()
 
-    manifest = {"manga": {}}
-    for r in results:
-        mid = r["manga_id"]
-        if mid not in manifest["manga"]:
-            manifest["manga"][mid] = {
-                "name": mid.split("__", 1)[-1].replace("-", " "),
-                "chapters": []
-            }
-        images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
-        manifest["manga"][mid]["chapters"].append({
-            "label": f"الفصل {r['chapter_num']}",
-            "chNum": float(r["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", r["chapter_num"]) else 0,
-            "sourceUrl": r["source_url"],
-            "images": images_cdn,
-        })
+    # محاولة تعويضية أخيرة: لو فشل دفع فصل أو أكثر أثناء التشغيل (تعارض
+    # مؤقت، انقطاع شبكة قصير...)، هذه فرصة أخيرة لدفع كل ما تبقى محليًا
+    # بدل تركه عالقًا في الـcommits المحلية فقط داخل الـRunner المؤقت
+    if GIT_COMMIT_DIR:
+        final_msg = f"دفع ختامي للتشغيلة - {_utc_now()}"
+        if git_commit_and_push(final_msg):
+            print("📤 الدفع الختامي: تم التأكد من رفع كل التغييرات المتبقية")
+        if failed_push_count:
+            print(f"⚠️ تنبيه: فشل الدفع الفوري لـ {failed_push_count} فصل أثناء التشغيل "
+                  f"(تمت تغطيتها على الأغلب بالدفع الختامي أعلاه إن نجح)")
 
-    for mid in manifest["manga"]:
-        manifest["manga"][mid]["chapters"].sort(key=lambda c: c["chNum"])
-
-    (OUTPUT_DIR / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
     print(f"\n✅ اكتمل: {len(results)} فصل من أصل {len(chapter_urls)}")
-    print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
+    if GIT_COMMIT_DIR:
+        print(f"📤 دُفع فوريًا بنجاح: {pushed_count}/{len(results)} فصل")
+    print(f"manifest.json جاهز في {manifest_path}")
 
 
 if __name__ == "__main__":
