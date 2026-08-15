@@ -17,6 +17,31 @@ on:
         required: false
         default: "800"
         type: string
+      enable_incremental_push:
+        description: "دفع كل فصل فور اكتماله (أبطأ قليلًا لكل فصل بسبب commit+push، لكن لو انقطع التشغيل تبقى الفصول المكتملة محفوظة). عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
+        required: false
+        default: true
+        type: boolean
+      resume_existing_output:
+        description: "الاستمرار على فرع output الحالي بتاريخه (آمن، يحافظ على الفصول السابقة). عطّله فقط لو تريد تصفير الأرشيف بالكامل والبدء من فرع نظيف — أسرع بجلب الفرع لكنه يمسح كل شيء سابق نهائيًا"
+        required: false
+        default: true
+        type: boolean
+      strict_domain_filter:
+        description: "استبعاد أي صورة من نطاق (domain) مختلف عن الأغلبية بين صور الفصل. احذر: قد يحذف صورًا شرعية لو كان الموقع يوزّع صوره على أكثر من CDN فعليًا"
+        required: false
+        default: false
+        type: boolean
+      retry_per_chapter:
+        description: "عدد محاولات فتح الصفحة بالمتصفح لكل فصل عند الفشل"
+        required: false
+        default: "2"
+        type: string
+      img_fetch_retries:
+        description: "عدد محاولات تحميل بايتات كل صورة عند الفشل"
+        required: false
+        default: "3"
+        type: string
 
 # صلاحية الكتابة مطلوبة لدفع الصور المضغوطة لفرع output
 permissions:
@@ -25,10 +50,8 @@ permissions:
 jobs:
   compress:
     runs-on: ubuntu-latest
-    # [مُعدَّل] رُفعت من 120 إلى 180 دقيقة كهامش أمان إضافي، بحذر من إلغاء
-    # التشغيلة قسرًا في المنتصف. مع ذلك يبقى الدفع التدريجي (أدناه) هو خط
-    # الدفاع الحقيقي: حتى لو ضُرب هذا السقف فعليًا، الفصول التي اكتملت قبله
-    # تكون قد دُفعت بالفعل لفرع output، فلا يُفقد إلا الفصل قيد المعالجة لحظتها.
+    # مع الدفع التدريجي (حين يكون مفعّلًا)، الفصول المكتملة تُحفظ فور دفعها،
+    # فحتى لو ضُرب هذا السقف فعليًا لا يُفقد إلا الفصل قيد المعالجة لحظتها.
     timeout-minutes: 240
     steps:
       - name: تحميل المستودع
@@ -44,23 +67,29 @@ jobs:
           pip install --quiet playwright pillow requests
           python -m playwright install --with-deps chromium
 
-      # [مُضاف] نجهّز فرع output كـ"git worktree" منفصل بجانب الفرع الحالي،
-      # بدل التبديل بين الفروع بعد انتهاء كل شيء (كما كان سابقًا). هذا يسمح
-      # للسكربت بعمل commit + push لكل فصل فور نجاحه أثناء التشغيل نفسه —
-      # لا بعد اكتمال كل الفصول — عبر متغيّر GIT_COMMIT_DIR الذي يُمرَّر له.
-      - name: تجهيز فرع الإخراج (git worktree) للدفع التدريجي
+      # هذه الخطوة ضرورية بغضّ النظر عن تفعيل الدفع التدريجي أو لا — سواء
+      # دفعنا بعد كل فصل أو دفعة واحدة بالنهاية، لازم مكان صحيح (فرع output)
+      # نكتب فيه وندفع منه. resume_existing_output يتحكم فقط هل نبني على
+      # تاريخ الفرع الحالي (آمن) أو نبدأ فرعًا نظيفًا (أسرع جلبًا، لكن يمسح
+      # كل الفصول السابقة نهائيًا — استخدمه بحذر).
+      - name: تجهيز فرع الإخراج (git worktree)
+        env:
+          RESUME_EXISTING_OUTPUT: ${{ inputs.resume_existing_output }}
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
           git fetch origin --quiet || true
 
-          if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
-            # الفرع output موجود مسبقًا: نفتحه كـworktree منفصل بتاريخه كاملًا
+          if [ "$RESUME_EXISTING_OUTPUT" = "true" ] && git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+            # الفرع output موجود مسبقًا ونريد الاستمرار عليه بتاريخه كاملًا
             git worktree add output-worktree origin/output
             git -C output-worktree checkout -B output origin/output
           else
-            # أول تشغيلة: ننشئ الفرع من الصفر (orphan) بدون تاريخ الفرع الحالي
+            # فرع نظيف: إما أول تشغيلة، أو طُلب تصفير الأرشيف صراحة
+            if [ "$RESUME_EXISTING_OUTPUT" != "true" ]; then
+              echo "⚠️ تم اختيار البدء من فرع نظيف — سيُستبدل أي فرع output موجود بالكامل عند أول دفع"
+            fi
             git worktree add --detach output-worktree
             git -C output-worktree checkout --orphan output
             git -C output-worktree rm -rf . > /dev/null 2>&1 || true
@@ -70,23 +99,29 @@ jobs:
           mkdir -p output-worktree/output
           echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
 
-      - name: تشغيل الضغط (مع دفع تدريجي بعد كل فصل)
+      - name: تشغيل الضغط
         env:
           CHAPTER_URLS: ${{ inputs.chapter_urls }}
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
-          # [مُضاف] تفعيل الدفع التدريجي: كل فصل ناجح يُحفظ (commit) ويُدفع
-          # (push) لفرع output فورًا من داخل السكربت نفسه، بدل انتظار النهاية
+          # الدفع التدريجي الفعلي (commit+push بعد كل فصل ناجح) يُنفَّذ الآن
+          # فعليًا داخل compress_chapters.py، مربوطًا بهذا المفتاح
+          ENABLE_INCREMENTAL_PUSH: ${{ inputs.enable_incremental_push }}
           GIT_COMMIT_DIR: ${{ env.OUTPUT_WORKTREE }}
           GIT_BRANCH: output
+          STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
+          RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
+          IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
         run: python compress_chapters.py
 
-      # [مُضاف] شبكة أمان أخيرة: تعمل حتى لو فشل السكربت أو انقطع (بلوغ سقف
-      # الوقت، إلغاء يدوي، عطل عابر) قبل أن يتمكن هو نفسه من الدفع الختامي
-      # داخل main(). لا تكرّر شيئًا لو كل التغييرات مدفوعة أصلًا (لا فرق حينها)
-      - name: دفع احتياطي نهائي (شبكة أمان في حال توقف السكربت مبكرًا)
+      # شبكة أمان أخيرة: تعمل حتى لو فشل السكربت أو انقطع (بلوغ سقف الوقت،
+      # إلغاء يدوي، عطل عابر) قبل أن يتمكن من دفع آخر فصل. إن كان الدفع
+      # التدريجي مفعّلًا، هذه الخطوة عادة لا تجد شيئًا إضافيًا لدفعه (كل شيء
+      # مدفوع أصلًا فصلًا بفصل). إن كان مُعطَّلًا، هذه الخطوة هي الدفعة
+      # الوحيدة لكل النتائج دفعة واحدة بالنهاية.
+      - name: دفع احتياطي نهائي (شبكة أمان)
         if: always()
         run: |
           if [ -z "$OUTPUT_WORKTREE" ] || [ ! -d "$OUTPUT_WORKTREE" ]; then
