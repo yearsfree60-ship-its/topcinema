@@ -10,12 +10,12 @@ on:
       quality:
         description: "جودة الضغط (10-90)"
         required: false
-        default: "25"
+        default: "30"
         type: string
       max_width:
         description: "العرض الأقصى بالبكسل"
         required: false
-        default: "700"
+        default: "800"
         type: string
 
 # صلاحية الكتابة مطلوبة لدفع الصور المضغوطة لفرع output
@@ -25,7 +25,11 @@ permissions:
 jobs:
   compress:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    # [مُعدَّل] رُفعت من 120 إلى 180 دقيقة كهامش أمان إضافي، بحذر من إلغاء
+    # التشغيلة قسرًا في المنتصف. مع ذلك يبقى الدفع التدريجي (أدناه) هو خط
+    # الدفاع الحقيقي: حتى لو ضُرب هذا السقف فعليًا، الفصول التي اكتملت قبله
+    # تكون قد دُفعت بالفعل لفرع output، فلا يُفقد إلا الفصل قيد المعالجة لحظتها.
+    timeout-minutes: 240
     steps:
       - name: تحميل المستودع
         uses: actions/checkout@v4
@@ -38,60 +42,82 @@ jobs:
       - name: تثبيت المكتبات
         run: |
           pip install --quiet playwright pillow requests
-          # [مُعدَّل] نُثبّت Chrome الحقيقي إضافة لـChromium — السكربت يحاول
-          # channel="chrome" أولًا لأن بصمته أقرب لمتصفح مستخدم حقيقي أمام
-          # فحوصات Cloudflare، ثم يسقط تلقائيًا لـChromium لو تعذّر ذلك.
           python -m playwright install --with-deps chromium
-          python -m playwright install --with-deps chrome
 
-      - name: استرجاع كوكيز الجلسة المحفوظة (إن وُجدت)
-        uses: actions/cache@v4
-        with:
-          path: .storage_state
-          # مفتاح ثابت (بدون تاريخ) لكي تُسترجع نفس الكوكيز عبر التشغيلات
-          # المتتالية أيضًا لا فقط داخل نفس التشغيلة — كوكيز cf_clearance
-          # المُربحة اليوم قد تبقى صالحة للتشغيلة القادمة وتوفّر تحدي Cloudflare
-          key: cf-storage-state-v1
-          restore-keys: |
-            cf-storage-state-
-
-      - name: تشغيل الضغط
-        env:
-          CHAPTER_URLS: ${{ inputs.chapter_urls }}
-          IMG_QUALITY: ${{ inputs.quality }}
-          IMG_MAX_WIDTH: ${{ inputs.max_width }}
-          OUTPUT_DIR: output
-          CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
-        run: python compress_chapters.py
-
-      - name: نشر النتائج على فرع output
+      # [مُضاف] نجهّز فرع output كـ"git worktree" منفصل بجانب الفرع الحالي،
+      # بدل التبديل بين الفروع بعد انتهاء كل شيء (كما كان سابقًا). هذا يسمح
+      # للسكربت بعمل commit + push لكل فصل فور نجاحه أثناء التشغيل نفسه —
+      # لا بعد اكتمال كل الفصول — عبر متغيّر GIT_COMMIT_DIR الذي يُمرَّر له.
+      - name: تجهيز فرع الإخراج (git worktree) للدفع التدريجي
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
-
-          # نحفظ مجلد الإخراج الجديد خارج شجرة git مؤقتًا قبل تبديل الفروع
-          mv output /tmp/output-new
+          git fetch origin --quiet || true
 
           if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
-            # الفرع output موجود مسبقًا: نجيبه بتاريخه كاملًا حتى تتراكم الفصول القديمة
-            git fetch origin output
-            git checkout output
+            # الفرع output موجود مسبقًا: نفتحه كـworktree منفصل بتاريخه كاملًا
+            git worktree add output-worktree origin/output
+            git -C output-worktree checkout -B output origin/output
           else
-            # أول تشغيلة: ننشئ الفرع من الصفر بدون تاريخ main
-            git checkout --orphan output
-            git rm -rf . > /dev/null 2>&1 || true
+            # أول تشغيلة: ننشئ الفرع من الصفر (orphan) بدون تاريخ الفرع الحالي
+            git worktree add --detach output-worktree
+            git -C output-worktree checkout --orphan output
+            git -C output-worktree rm -rf . > /dev/null 2>&1 || true
+            git -C output-worktree commit --allow-empty -m "تهيئة فرع output"
           fi
 
-          # ندمج الفصول الجديدة فوق الموجودة (لا يحذف فصول سابقة، فقط يضيف/يحدّث)
-          mkdir -p output
-          cp -r /tmp/output-new/. output/
+          mkdir -p output-worktree/output
+          echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
 
-          git add output
-          git commit -m "تحديث الفصول المضغوطة - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "لا تغييرات جديدة"
-          git push origin output
+      - name: تشغيل الضغط (مع دفع تدريجي بعد كل فصل)
+        env:
+          CHAPTER_URLS: ${{ inputs.chapter_urls }}
+          IMG_QUALITY: ${{ inputs.quality }}
+          IMG_MAX_WIDTH: ${{ inputs.max_width }}
+          OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
+          CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
+          # [مُضاف] تفعيل الدفع التدريجي: كل فصل ناجح يُحفظ (commit) ويُدفع
+          # (push) لفرع output فورًا من داخل السكربت نفسه، بدل انتظار النهاية
+          GIT_COMMIT_DIR: ${{ env.OUTPUT_WORKTREE }}
+          GIT_BRANCH: output
+        run: python compress_chapters.py
+
+      # [مُضاف] شبكة أمان أخيرة: تعمل حتى لو فشل السكربت أو انقطع (بلوغ سقف
+      # الوقت، إلغاء يدوي، عطل عابر) قبل أن يتمكن هو نفسه من الدفع الختامي
+      # داخل main(). لا تكرّر شيئًا لو كل التغييرات مدفوعة أصلًا (لا فرق حينها)
+      - name: دفع احتياطي نهائي (شبكة أمان في حال توقف السكربت مبكرًا)
+        if: always()
+        run: |
+          if [ -z "$OUTPUT_WORKTREE" ] || [ ! -d "$OUTPUT_WORKTREE" ]; then
+            echo "لا يوجد worktree لدفعه (فشلت خطوة التجهيز على الأغلب) — تخطي"
+            exit 0
+          fi
+          cd "$OUTPUT_WORKTREE"
+          git add output || true
+          if git diff --cached --quiet; then
+            echo "لا تغييرات إضافية غير مدفوعة — كل شيء محفوظ أصلًا"
+          else
+            git commit -m "دفع احتياطي نهائي - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            success=0
+            for i in 1 2 3 4 5; do
+              if git push origin HEAD:output; then
+                success=1
+                break
+              fi
+              echo "فشلت محاولة الدفع #$i — إعادة محاولة بعد سحب أحدث تغييرات..."
+              git fetch origin output || true
+              git rebase origin/output || git rebase --abort || true
+              sleep $((i * 3))
+            done
+            if [ "$success" -ne 1 ]; then
+              echo "⚠️ تعذّر الدفع الاحتياطي النهائي بعد كل المحاولات — قد تحتاج لدفع يدوي لاحقًا"
+              exit 1
+            fi
+          fi
 
       - name: رابط النتيجة
+        if: always()
         run: |
           echo "=================================================="
           echo "manifest.json:"
@@ -99,6 +125,7 @@ jobs:
           echo "=================================================="
 
       - name: إجبار تحديث كاش jsDelivr فورًا
+        if: always()
         run: |
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
           echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
