@@ -358,24 +358,18 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     filtered = _filter_widget_context(items)
 
     if filtered:
-        for selector in CONTENT_SELECTORS:
-            matched_urls = dedupe(
-                [urljoin(base_url, u) for u, it in ((it_url, it) for it_url, it in
-                    ((it.get("_dummy"), it) for it in []))]
-            )  # placeholder removed below
-
-        # (إعادة صياغة الحلقة أعلاه بشكل صحيح ومباشر بدل التعقيد غير المجدي)
-        by_selector_priority = []
+        # نفضّل الصور الواقعة فعليًا داخل أحد المحدّدات المعروفة، بترتيب
+        # أولويتها، دون أي تمرير إضافي — البيانات كلها مُجمَّعة مسبقًا
         for selector in CONTENT_SELECTORS:
             matched_urls = dedupe([
-                urljoin(base_url, item_url)
-                for item_url, item in _zip_urls(filtered)
+                urljoin(base_url, item["url"])
+                for item in filtered
                 if selector in item["matched"]
             ])
             if len(matched_urls) >= 3:
                 return _apply_domain_filter(matched_urls)
 
-        all_urls = dedupe([urljoin(base_url, item_url) for item_url, item in _zip_urls(filtered)])
+        all_urls = dedupe([urljoin(base_url, item["url"]) for item in filtered])
         if all_urls:
             return _apply_domain_filter(all_urls)
 
@@ -640,3 +634,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+   
