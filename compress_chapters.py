@@ -31,51 +31,8 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    النظر عن طول الفصل — وهو دليل حاسم على عنصر ثابت التكرار في القالب،
    وليس فشل شبكة عشوائيًا.
 
-3.2) [مُضاف] اكتُشف لاحقًا أن الصور الست الثابتة في هذا الموقع تحديدًا ليست
-   ودجت "مقترحات" بل شريط أيقونات تفاعل (إعجاب/حب/ضحك...) بصيغة SVG من
-   /theme/emotes/svg/ — وهي ثابتة في كل صفحة بحكم قالب الموقع نفسه لا بحكم
-   المحتوى. فشلها في الضغط ليس بسبب الشبكة أو الجلسة، بل لأن Pillow لا يدعم
-   فك ترميز SVG أصلًا (تنسيق متجهي وليس نقطيًا) — فيرمي "cannot identify
-   image file" حتى لو تم تحميل الملف بنجاح ومكتمل 100%. لذلك أصبح
-   IGNORE_PATTERN يستبعد أي رابط بامتداد .svg أو داخل مسار /theme/ أو يحوي
-   كلمة emote/reaction، قبل حتى محاولة تحميله.
-
-3.3) [مُضاف] اكتُشف لاحقًا خلل معاكس تمامًا لما سبق: فلتر "سياق الودجت" نفسه
-   (الفقرة 3.1) كان يُطبَّق أيضًا على نتائج المحدّدات الموثوقة (CONTENT_SELECTORS)
-   لا فقط على المسار الاحتياطي العام — فاستبعد صورًا حقيقية بالخطأ في موقع
-   يبني قارئ الفصل بمكتبة Swiper.js (فصول فيها الحاوية الحقيقية لكل صفحة
-   تحمل class تحوي كلمة "swiper"، وهي أحد أنماط WIDGET_CONTEXT_PATTERN). نتيجة
-   ذلك: فُقد 5 من أصل 10 صور فصل حقيقية بصمت تام دون أي رسالة خطأ ظاهرة.
-   الإصلاح: فلتر سياق الودجت أصبح يُطبَّق فقط على المسار الاحتياطي العام (كل
-   وسوم <img> في الصفحة، حين لا يوجد محدّد موثوق أصلًا) — أما نتائج
-   CONTENT_SELECTORS فتُثَق بها مباشرة (فقط IGNORE_PATTERN + dedupe الأساسي)
-   لأن المحدّد نفسه مخصص ومعروف كحاوية قراءة حقيقية، فتطبيق تخمين إضافي فوقه
-   يخاطر باستبعاد محتوى حقيقي أكثر مما يحمي من ودجت مزيف. كذلك أُضيف تحذير
-   تشخيصي عام (_warn_if_fewer_than_expected): يقارن عدد الصور المستخرجة أخيرًا
-   بالعدد الخام المكتشف بالصفحة (wait_for_real_images)، ويطبع تنبيهًا صريحًا
-   في اللوج لو الفارق كبير (أقل من 70%) — بغضّ النظر عن الموقع أو القالب —
-   بدل صمت يُخفي فقدان بيانات حقيقية مستقبلًا على أي موقع آخر غير مُختبَر بعد.
-   كذلك وُسّعت قائمة CONTENT_SELECTORS لتغطي أنماط قوالب أكثر تنوعًا (لا Madara
-   فقط)، لأن السكربت أصبح يُستخدم فعليًا على مواقع/قوالب مختلفة تمامًا.
-
 4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
    (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
-
-4.1) [مُضاف] رقم "الجودة" في WebP (0-100) ليس نسبة مئوية من الحجم النهائي —
-   إنه مقياس جودة بصري داخلي لا يرتبط خطيًا بحجم الملف. صورة بسيطة (خطوط/
-   ألوان مسطحة) قد تُضغَط أصلًا بكفاءة عالية فتبقى قريبة من حجمها الأصلي حتى
-   بجودة منخفضة جدًا (لوحظ فعليًا: 172ك.ب ← 169ك.ب عند جودة 30). لذلك أصبح
-   الوضع الافتراضي الآن "استهداف نسبة حجم حقيقية" (COMPRESSION_MODE=ratio):
-   الرقم الذي يختاره المستخدم (مثلًا 30) يُفهَم كنسبة مئوية من حجم الصورة
-   الأصلية، ويُبحث بالبحث الثنائي (binary search) عن قيمة جودة WebP تُنتج
-   فعليًا حجمًا قريبًا من تلك النسبة لكل صورة على حدة. الوضع القديم (تمرير
-   الرقم مباشرة كمعامل جودة WebP خام) لا يزال متاحًا عبر COMPRESSION_MODE=fixed
-   لمن يفضّل التحكم اليدوي المباشر.
-
-4.2) [مُضاف] بعض صور PNG المحوّلة تحمل قناة شفافية (alpha) غير مستخدمة
-   فعليًا (كل البكسلات معتمة 100%) — هذه القناة تُبقي حجم WebP كبيرًا بغضّ
-   النظر عن إعداد الجودة. يُكتشف هذا تلقائيًا (فحص أقصى وأدنى قيمة alpha)
-   وتُحذف القناة إن كانت فارغة فعليًا، قبل الضغط.
 
 5) الحكم بنجاح/فشل تحميل الصفحة يعتمد على وجود صور مستخرجة فعليًا، وليس على
    إطلاق حدث goto (domcontentloaded/load) بذاته. بعض الصفحات (خصوصًا الفصل
@@ -89,29 +46,13 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    الكامل) بدل الاكتفاء برسالة Pillow العامة "cannot identify image file"
    التي لا تفسّر شيئًا. هذا يجعل أي سبب فشل مستقبلي قابلًا للتشخيص فورًا
    من اللوج نفسه دون تخمين.
-
-7) [مُضاف] دفع تدريجي (commit + push) لفرع Git بعد كل فصل ناجح، بدل انتظار
-   اكتمال كل الفصول ثم الدفع دفعة واحدة في نهاية الـworkflow. هذا يحمي من
-   فقدان كل النتائج عند بلوغ سقف وقت التشغيلة (timeout-minutes) أو إلغاء
-   يدوي أو عطل مؤقت في الـRunner — فقط الفصل قيد المعالجة لحظة الانقطاع هو
-   ما يُفقد، لا كل شيء. يُفعَّل هذا فقط إذا كان GIT_COMMIT_DIR مضبوطًا (من
-   الـworkflow)؛ إن تُرك فارغًا يعمل السكربت كالسابق تمامًا (كتابة ملفات محليًا
-   بدون أي عمليات Git) — مفيد للتشغيل المحلي أو الاختبار.
-
-   كذلك، بما أن الدفع صار تدريجيًا عبر عدة "commits" منفصلة، أصبح الـmanifest
-   يُحمَّل ويُدمَج بدل أن يُبنى من الصفر ويستبدل القديم بالكامل في كل تشغيلة
-   (كما كان يحدث سابقًا، وهو ما كان يعني فقدان مانهوات/فصول من تشغيلات سابقة
-   من ملف manifest.json رغم بقاء صورها على القرص فعليًا وبلا فائدة).
 """
 import asyncio
 import json
 import os
 import re
-import subprocess
 import sys
-import time
 from collections import Counter
-from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 
@@ -121,50 +62,14 @@ from playwright.async_api import async_playwright
 
 QUALITY = int(os.environ.get("IMG_QUALITY", "25"))
 MAX_WIDTH = int(os.environ.get("IMG_MAX_WIDTH", "700"))
-
-# [مُضاف] وضع الضغط: "ratio" (افتراضي) يعني أن IMG_QUALITY يُفهَم كنسبة مئوية
-# حقيقية مستهدفة من حجم الصورة الأصلية (مثلًا 30 = ~30% من الحجم الأصلي)،
-# ويُبحث تلقائيًا (binary search) عن جودة WebP التي تحقق ذلك فعليًا لكل صورة.
-# "fixed" يعيد السلوك القديم: تمرير IMG_QUALITY مباشرة كمعامل جودة WebP خام
-# (0-100) دون أي ربط فعلي بنسبة الحجم الناتج.
-COMPRESSION_MODE = os.environ.get("COMPRESSION_MODE", "ratio").strip().lower()
-
-# حدود البحث عن الجودة في وضع "ratio" — لا ننزل تحت MIN_QUALITY مهما بعُد
-# الحجم الناتج عن الهدف (تفاديًا لتشويه بصري غير مقبول)، ولا نرفع فوق
-# MAX_QUALITY_SEARCH (لا فائدة من جودة قريبة من 100 في صور مانهوا مضغوطة أصلًا)
-MIN_QUALITY = int(os.environ.get("IMG_MIN_QUALITY", "8"))
-MAX_QUALITY_SEARCH = int(os.environ.get("IMG_MAX_QUALITY_SEARCH", "95"))
-RATIO_SEARCH_ITERS = int(os.environ.get("IMG_RATIO_SEARCH_ITERS", "7"))
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
 CDN_BASE = os.environ.get("CDN_BASE", "")
-
-# [مُضاف] إعدادات الدفع التدريجي لـGit. GIT_COMMIT_DIR هو جذر الـworktree
-# الذي يتتبّع فرع الإخراج (output) — إذا تُرك فارغًا يبقى السكربت يعمل محليًا
-# فقط بلا أي عمليات Git، تمامًا كالسابق (وضع آمن للتشغيل المحلي/الاختبار).
-GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip()
-GIT_BRANCH = os.environ.get("GIT_BRANCH", "output")
-GIT_PUSH_RETRIES = int(os.environ.get("GIT_PUSH_RETRIES", "5"))
-GIT_USER_NAME = os.environ.get("GIT_USER_NAME", "manhwa-bot")
-GIT_USER_EMAIL = os.environ.get("GIT_USER_EMAIL", "bot@users.noreply.github.com")
 
 NAV_TIMEOUT_MS = int(os.environ.get("NAV_TIMEOUT_MS", "30000"))
 CONTENT_WAIT_MS = int(os.environ.get("CONTENT_WAIT_MS", "20000"))
 CONTENT_POLL_MS = int(os.environ.get("CONTENT_POLL_MS", "800"))
 RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
-
-# [مُضاف] ميزانية زمنية للانتظار الفعلي حتى تُحل صفحة تحقق Cloudflare (أو ما
-# شابه) — بدل انتظار ثابت 5 ثوانٍ + إعادة تحميل مرة واحدة فقط. التحديات
-# الحقيقية (JS Challenge/Turnstile) قد تحتاج حتى 30-45 ثانية، خصوصًا من
-# عناوين IP مصنّفة كمراكز بيانات (وهذا حال أغلب بيئات CI مثل GitHub Actions).
-CHALLENGE_MAX_WAIT_MS = int(os.environ.get("CHALLENGE_MAX_WAIT_MS", "45000"))
-CHALLENGE_POLL_MS = int(os.environ.get("CHALLENGE_POLL_MS", "3000"))
-
-# [مُضاف] مجلد لحفظ حالة الجلسة (كوكيز التحقق مثل cf_clearance) لكل نطاق على
-# حدة، بحيث لو نجحنا في تجاوز الحماية لفصل واحد، تُستخدم نفس الكوكيز للفصول
-# التالية من نفس الموقع بدل إعادة اختبار الحماية من الصفر في كل فصل — كان
-# هذا الشكل السابق (context جديد تمامًا لكل فصل) يهدر أي مصادقة سابقة.
-STORAGE_STATE_DIR = Path(os.environ.get("STORAGE_STATE_DIR", ".storage_state"))
 
 # إذا فُعِّل هذا (STRICT_DOMAIN_FILTER=1) يتم استبعاد أي صورة من نطاق (domain)
 # غير النطاق الأغلب بين صور الفصل — بعض المواقع تحمّل ودجات التوصيات من
@@ -178,11 +83,7 @@ WEBP_HARD_LIMIT = 16000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
-IGNORE_PATTERN = re.compile(
-    r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad|"
-    r"emote|reaction|/theme/|\.svg(?:\?|$)",
-    re.I,
-)
+IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
 
 # [مُضاف] أنماط أسماء classes/ids شائعة لحاويات "ودجات" غير محتوى القراءة
 # الفعلي — مقترحات/مانهوات مشابهة/تعليقات/إعلانات/كاروسيل إلخ. يُفحص بها
@@ -194,29 +95,14 @@ WIDGET_CONTEXT_PATTERN = re.compile(
     re.I,
 )
 
-# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية عبر أشهر القوالب/الأنظمة —
-# [مُوسَّع] أُضيفت محدّدات إضافية لتغطية قوالب أخرى غير Madara (المصدر الأصلي
-# لهذه القائمة)، لأن نفس السكربت يُستخدم الآن على مواقع/قوالب متنوعة، ولكل
-# قالب اسم حاوية قراءة مختلف تمامًا رغم تشابه الوظيفة.
+# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية (Madara وما شابه من قوالب
+# ووردبريس) — تُجرَّب أولًا لتضييق الاستخراج على المحتوى الحقيقي فقط
 CONTENT_SELECTORS = [
     ".reading-content img",
     ".page-break img",
     ".text-left img",
     "#readerarea img",
     ".chapter-content img",
-    ".read-content img",
-    ".entry-content img",
-    ".container-chapter-reader img",
-    ".chapter-images img",
-    "#chapter-images img",
-    ".comic-page img",
-    ".reader-area img",
-    ".vung-doc img",
-    ".read-container img",
-    ".chapter-container img",
-    ".manga-reading-box img",
-    "#chapterImages img",
-    ".page-image img",
 ]
 
 CHALLENGE_MARKERS = [
@@ -360,36 +246,19 @@ def _filter_widget_context(items: list[dict], base_url: str) -> list[str]:
     return kept
 
 
-async def extract_image_urls(page, base_url: str, expected_count: int = 0) -> list[str]:
-    # 0) نجرّب كل المحدّدات الموثوقة معًا، ونختار الأفضل (الأعلى عددًا) بينها
-    #    بدل الاكتفاء بأول محدّد يحقق الحد الأدنى (3) فقط — بعض القوالب تطابق
-    #    أكثر من محدّد بأعداد مختلفة، فالمحدّد الأول بالترتيب قد لا يكون الأشمل.
-    #
-    #    [مُهم] لا نطبّق فلتر "سياق الودجت" (WIDGET_CONTEXT_PATTERN) هنا إطلاقًا،
-    #    فقط IGNORE_PATTERN (شعار/أيقونة/SVG...) + dedupe. السبب: هذه المحدّدات
-    #    مخصصة أصلًا ومعروفة كحاويات قراءة حقيقية — تطبيق تخمين إضافي فوقها قد
-    #    يستبعد صورًا حقيقية بالخطأ. مثال حقيقي حدث فعليًا: موقع يبني قارئ
-    #    الفصل بمكتبة Swiper.js، فكانت كل صورة صفحة تُستبعد ظنًا أنها "كاروسيل
-    #    ودجت مقترحات" (لأن class الحاوية تحوي كلمة swiper) رغم أنها الصفحات
-    #    الفعلية نفسها — وهذا فقد نصف صور الفصل (5 من 10) دون أي خطأ ظاهر.
-    #    فلتر سياق الودجت يبقى مفعّلًا فقط في المسار الاحتياطي الأوسع (خطوة 2
-    #    أدناه) حيث لا يوجد محدّد موثوق أصلًا ونحتاج فعلًا لتمييز المحتوى.
-    best_found: list[str] = []
-    best_selector = None
+async def extract_image_urls(page, base_url: str) -> list[str]:
+    # 0) أولوية قصوى: محدّدات محتوى معروفة — تستبعد الشعار/الإعلانات تلقائيًا.
+    #    الآن نستخدم النسخة الواعية بالسياق (مع ctx) لفلترة أي ودجت مُحقَن
+    #    داخل نفس الحاوية (كما اكتُشف: عدد ثابت 6 صور في كل فصل بغض النظر
+    #    عن طوله — دليل قاطع على ودجت قالب ثابت لا فشل شبكة عشوائي).
     for selector in CONTENT_SELECTORS:
         try:
             items = await page.eval_on_selector_all(selector, IMG_SRC_WITH_CONTEXT_JS)
         except Exception:
             items = []
-        urls = [urljoin(base_url, it["url"]) for it in items
-                if it.get("url") and not it["url"].startswith("data:")]
-        urls = dedupe(urls)
-        if len(urls) > len(best_found):
-            best_found, best_selector = urls, selector
-
-    if len(best_found) >= 3:
-        _warn_if_fewer_than_expected(best_found, expected_count, f"المحدّد '{best_selector}'")
-        return best_found
+        found = _filter_widget_context(items, base_url)
+        if len(found) >= 3:
+            return found
 
     # 1) صور داخل noscript (بديل حقيقي شائع عند التحميل الكسول)
     noscript_imgs = await page.eval_on_selector_all("noscript", "els => els.map(e => e.innerHTML)")
@@ -398,59 +267,27 @@ async def extract_image_urls(page, base_url: str, expected_count: int = 0) -> li
         for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', html):
             found.append(urljoin(base_url, m.group(1)))
     if found:
-        found = dedupe(found)
-        _warn_if_fewer_than_expected(found, expected_count, "noscript")
-        return found
+        return dedupe(found)
 
-    # 2) كل وسوم <img> في الصفحة (احتياط أخير، لا يوجد محدّد موثوق هنا، لذلك
-    #    فلتر سياق الودجت مفعّل فعليًا في هذا المسار تحديدًا — عرضة لالتقاط
-    #    شعار/إعلانات/ودجات حقيقية، لا فقط صفحات المانهوا)
+    # 2) كل وسوم <img> في الصفحة (احتياط أخير، عرضة لالتقاط شعار/إعلانات)
+    #    نستخدم أيضًا النسخة الواعية بالسياق هنا لأنها أوسع نطاقًا وأكثر
+    #    عرضة لالتقاط ودجات، لا فقط الشعار/الإعلانات المغطاة بـIGNORE_PATTERN.
     items = await page.eval_on_selector_all("img", IMG_SRC_WITH_CONTEXT_JS)
     found = _filter_widget_context(items, base_url)
     if found:
-        _warn_if_fewer_than_expected(found, expected_count, "كل وسوم img (احتياطي)")
         return found
 
     # 3) احتياط نهائي: أي رابط بامتداد صورة داخل كود الصفحة الكامل
     html = await page.content()
     found = [urljoin(base_url, m.group(0)) for m in
              re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
-    found = dedupe(found)
-    _warn_if_fewer_than_expected(found, expected_count, "استخراج نصي احتياطي")
-    return found
+    return dedupe(found)
 
 
-def _warn_if_fewer_than_expected(found: list[str], expected_count: int, source: str) -> None:
-    """
-    [مُضاف] تحذير تشخيصي عام (وليس مقتصرًا على موقع بعينه): يقارن عدد الصور
-    المستخرجة فعليًا مقابل العدد "الخام" المكتشف مسبقًا بالصفحة (found_count
-    من wait_for_real_images). فجوة كبيرة (أقل من 70% من المتوقع) تعني على
-    الأغلب أن فلترة ما (محدّد ضيق جدًا، أو نمط سياق) استبعدت صورًا حقيقية
-    بالخطأ — يُطبع تحذير واضح فورًا في اللوج بدل صمت يخفي فقدان بيانات صحيحة.
-    """
-    if expected_count and len(found) < expected_count * 0.7:
-        print(f"  ⚠️ تحذير: {source} استخرج {len(found)} صورة فقط من أصل {expected_count} "
-              f"مكتشفة مبدئيًا في الصفحة — يُحتمل وجود صور حقيقية استُبعدت بالخطأ، راجع اللوج أعلاه")
+def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
+    img = Image.open(BytesIO(raw_bytes))
+    img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
 
-
-def _drop_unused_alpha(img: Image.Image) -> Image.Image:
-    """
-    [مُضاف] يحذف قناة الشفافية إن كانت غير مستخدمة فعليًا (كل البكسلات
-    معتمة 100%) — قناة alpha فارغة تُبقي حجم WebP كبيرًا بغضّ النظر عن
-    إعداد الجودة، وهي شائعة في صور PNG محوّلة آليًا من مصادر مختلفة.
-    """
-    if img.mode in ("RGBA", "LA"):
-        try:
-            alpha = img.getchannel("A")
-            lo, hi = alpha.getextrema()
-            if lo == 255 and hi == 255:
-                img = img.convert("RGB") if img.mode == "RGBA" else img.convert("L")
-        except Exception:
-            pass
-    return img
-
-
-def _resize_for_limits(img: Image.Image, max_width: int) -> Image.Image:
     # نتحقق من العرض والطول معًا: صورة ضيقة لكن طويلة جدًا (أو العكس) تتجاوز
     # حد WebP الصارم (16383 بكسل) حتى لو عرضها ضمن الحد المطلوب أصلًا
     scale = 1.0
@@ -460,82 +297,15 @@ def _resize_for_limits(img: Image.Image, max_width: int) -> Image.Image:
         scale = min(scale, WEBP_HARD_LIMIT / img.width)
     if img.height * scale > WEBP_HARD_LIMIT:
         scale = min(scale, WEBP_HARD_LIMIT / img.height)
+
     if scale < 1.0:
         new_w = max(1, int(img.width * scale))
         new_h = max(1, int(img.height * scale))
         img = img.resize((new_w, new_h), Image.LANCZOS)
-    return img
 
-
-def _encode_webp(img: Image.Image, quality: int) -> bytes:
     out = BytesIO()
     img.save(out, format="WEBP", quality=quality, method=6)
     return out.getvalue()
-
-
-def _compress_to_target_ratio(img: Image.Image, original_size: int, ratio_percent: int):
-    """
-    [مُضاف] هذا هو قلب "التحكم الحقيقي": بدل تمرير الرقم كمعامل WebP خام،
-    نبحث فعليًا (بحث ثنائي) عن جودة WebP التي تُنتج حجمًا قريبًا من
-    (ratio_percent% من الحجم الأصلي) — لأن العلاقة بين رقم الجودة وحجم
-    الملف الناتج ليست خطية ولا موحّدة بين الصور (تعتمد على تعقيد المحتوى).
-
-    يعيد (bytes, جودة_مستخدمة, تم_بلوغ_الحد_الأدنى_دون_تحقيق_الهدف: bool)
-    """
-    target_size = max(1024, int(original_size * (ratio_percent / 100.0)))
-
-    # فحص سريع: حتى بأعلى جودة بحث، هل الحجم أصلًا أصغر من أو يساوي الهدف؟
-    # (يحدث لصور صغيرة/بسيطة أصلًا) — لا داعي لأي بحث إضافي، نأخذ أفضل جودة
-    data_hi = _encode_webp(img, MAX_QUALITY_SEARCH)
-    if len(data_hi) <= target_size:
-        return data_hi, MAX_QUALITY_SEARCH, False
-
-    # فحص الحد الأدنى: إذا حتى أدنى جودة مسموحة لا تصل للهدف (صورة معقدة
-    # جدًا أو هدف صغير جدًا)، نقبل بأدنى جودة كأفضل ما يمكن ونُبلّغ بذلك
-    data_lo = _encode_webp(img, MIN_QUALITY)
-    if len(data_lo) >= target_size:
-        return data_lo, MIN_QUALITY, True
-
-    # بحث ثنائي بين lo و hi عن أقرب جودة تُنتج حجمًا قريبًا من الهدف
-    lo, hi = MIN_QUALITY, MAX_QUALITY_SEARCH
-    best_bytes, best_q, best_diff = data_lo, MIN_QUALITY, abs(len(data_lo) - target_size)
-    for _ in range(RATIO_SEARCH_ITERS):
-        if hi - lo <= 1:
-            break
-        mid = (lo + hi) // 2
-        data_mid = _encode_webp(img, mid)
-        diff = abs(len(data_mid) - target_size)
-        if diff < best_diff:
-            best_bytes, best_q, best_diff = data_mid, mid, diff
-        if len(data_mid) > target_size:
-            hi = mid
-        else:
-            lo = mid
-    return best_bytes, best_q, False
-
-
-def compress_image(raw_bytes: bytes, max_width: int, quality: int):
-    """
-    [مُعدَّل] يعيد الآن (bytes, جودة_مستخدمة, ملاحظة|None) بدل bytes فقط.
-    في وضع COMPRESSION_MODE=ratio (الافتراضي): quality تُفهَم كنسبة مئوية
-    حقيقية مستهدفة من الحجم الأصلي، ويُبحث تلقائيًا عن جودة WebP تحققها.
-    في وضع COMPRESSION_MODE=fixed: السلوك القديم — quality تُمرَّر مباشرة
-    كمعامل WebP خام دون أي استهداف لحجم فعلي.
-    """
-    img = Image.open(BytesIO(raw_bytes))
-    img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
-    img = _drop_unused_alpha(img)
-    img = _resize_for_limits(img, max_width)
-
-    if COMPRESSION_MODE == "fixed":
-        return _encode_webp(img, quality), quality, None
-
-    data, used_q, hit_floor = _compress_to_target_ratio(img, len(raw_bytes), quality)
-    note = None
-    if hit_floor:
-        note = (f"تعذّر بلوغ نسبة {quality}% المطلوبة حتى بأدنى جودة ({MIN_QUALITY})، "
-                f"استُخدم أفضل الممكن")
-    return data, used_q, note
 
 
 IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
@@ -579,36 +349,21 @@ async def fetch_image_bytes(context, img_url: str, referer: str):
     return None, last_reason
 
 
-async def wait_out_challenge(page) -> bool:
+async def open_and_collect(browser, chapter_url: str, attempt: int):
     """
-    [مُضاف] بدل انتظار ثابت 5 ثوانٍ ثم إعادة تحميل واحدة فقط: يبقى يفحص كل
-    CHALLENGE_POLL_MS إن كانت صفحة التحقق ما زالت ظاهرة، ويعيد التحميل بين
-    كل فحص وآخر، ضمن ميزانية زمنية إجمالية CHALLENGE_MAX_WAIT_MS. يعيد True
-    إن اختفت علامات صفحة التحقق (نجاح محتمل)، أو False إن استمرت حتى نفاد
-    الميزانية الزمنية (على الأغلب تحدٍ لا يمكن حله من هذه البيئة/العنوان).
+    محاولة واحدة لفتح الصفحة واستخراج روابط الصور.
+    يعيد (context, روابط_الصور, سبب_الفشل) — الـcontext يبقى مفتوحًا لأن
+    تحميل الصور لاحقًا يحتاج نفس الجلسة (كوكيز) التي فتحت الصفحة بنجاح.
     """
-    elapsed = 0
-    while elapsed < CHALLENGE_MAX_WAIT_MS:
-        await page.wait_for_timeout(CHALLENGE_POLL_MS)
-        elapsed += CHALLENGE_POLL_MS
-        if not await looks_like_challenge_page(page):
-            return True
-        try:
-            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
-        except Exception:
-            pass
-        if not await looks_like_challenge_page(page):
-            return True
-    return False
-
-
-async def open_and_collect(context, chapter_url: str, attempt: int, state_path: Path):
-    """
-    محاولة واحدة لفتح الصفحة واستخراج روابط الصور، باستخدام context مشترك
-    (يُمرَّر من الخارج) بدل إنشاء context جديد في كل محاولة — هذا يحافظ على
-    أي كوكيز تحقق (مثل cf_clearance) رُبحت سابقًا لنفس النطاق. يعيد
-    (نجاح: bool, روابط_الصور, سبب_الفشل).
-    """
+    context = await browser.new_context(
+        user_agent=UA,
+        viewport={"width": 1280, "height": 1000},
+        locale="en-US",
+        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
+    )
+    await context.add_init_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+    )
     page = await context.new_page()
 
     navigated = False
@@ -620,21 +375,12 @@ async def open_and_collect(context, chapter_url: str, attempt: int, state_path: 
         print(f"  ⚠️ تعذّر تحميل الصفحة ({wait_strategy}): {e}")
 
     if navigated and await looks_like_challenge_page(page):
-        print(f"  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار حتى {CHALLENGE_MAX_WAIT_MS//1000} ثانية")
-        cleared = await wait_out_challenge(page)
-        if cleared:
-            print("  ✅ يبدو أن صفحة التحقق زالت — نتابع الاستخراج")
-            try:
-                STORAGE_STATE_DIR.mkdir(parents=True, exist_ok=True)
-                await context.storage_state(path=str(state_path))
-            except Exception:
-                pass
-        else:
-            print("  ❌ صفحة التحقق لم تُحَل ضمن المهلة — على الأغلب حماية Cloudflare متقدمة "
-                  "(Managed Challenge/Turnstile) ترفض بيئة التشغيل الحالية (عنوان IP لخوادم CI "
-                  "مصنّف عالي الخطورة غالبًا). لا يوجد حل برمجي مضمون 100% لهذا من داخل GitHub Actions.")
-            await page.close()
-            return False, [], "صفحة تحقق Cloudflare لم تُحَل ضمن المهلة الزمنية"
+        print("  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار وإعادة تحميل")
+        await page.wait_for_timeout(5000)
+        try:
+            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+        except Exception as e:
+            print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
     # تمرير تدريجي لأسفل الصفحة لتحفيز أي تحميل كسول يعتمد على ظهور العنصر
     # بالشاشة (IntersectionObserver) — احتياط إضافي حتى لو المحدّدات نجحت
@@ -649,7 +395,7 @@ async def open_and_collect(context, chapter_url: str, attempt: int, state_path: 
     found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
     print(f"  🖼️ صور حقيقية مكتشفة قبل الاستخراج: {found_count}")
 
-    image_urls = await extract_image_urls(page, chapter_url, expected_count=found_count)
+    image_urls = await extract_image_urls(page, chapter_url)
     await page.close()
 
     # الحكم بالنجاح يعتمد على وجود صور مستخرجة فعليًا، وليس على إطلاق حدث
@@ -658,50 +404,22 @@ async def open_and_collect(context, chapter_url: str, attempt: int, state_path: 
     # (إعلان فيديو، سكربت تتبّع معلّق...)، فرفض النتيجة في هذه الحالة كان
     # يُهدر بيانات صحيحة مكتشفة فعليًا بلا داعٍ.
     if not image_urls:
+        await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
-        return False, [], reason
+        return None, [], reason
     if not navigated:
         print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
-    return True, image_urls, ""
+    return context, image_urls, ""
 
 
-def domain_of(url: str) -> str:
-    return urlparse(url).hostname or "unknown"
-
-
-async def get_or_create_context(browser, domain: str):
-    """
-    [مُضاف] يُنشئ context واحدًا فقط لكل نطاق (وليس لكل فصل)، ويحمّل حالة
-    جلسة محفوظة سابقًا (storage_state) إن وُجدت — أي كوكيز تحقق (cf_clearance)
-    رُبحت في تشغيلة سابقة أو فصل سابق من نفس الموقع تُستخدم مباشرة، فيقل
-    احتمال مواجهة صفحة التحقق من الأساس بدل اختبارها من الصفر في كل مرة.
-    """
-    STORAGE_STATE_DIR.mkdir(parents=True, exist_ok=True)
-    state_path = STORAGE_STATE_DIR / f"{domain}.json"
-    kwargs = dict(
-        user_agent=UA,
-        viewport={"width": 1280, "height": 1000},
-        locale="en-US",
-        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
-    )
-    if state_path.exists():
-        kwargs["storage_state"] = str(state_path)
-        print(f"  🍪 استُخدمت جلسة محفوظة سابقًا لنطاق {domain}")
-    context = await browser.new_context(**kwargs)
-    await context.add_init_script(
-        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-    )
-    return context, state_path
-
-
-async def process_chapter(context, state_path: Path, chapter_url: str, index: int, total: int):
+async def process_chapter(browser, chapter_url: str, index: int, total: int):
     print(f"[{index}/{total}] فتح: {chapter_url}")
 
-    ok, image_urls, fail_reason = False, [], ""
+    context, image_urls, fail_reason = None, [], ""
     for attempt in range(1, RETRY_PER_CHAPTER + 1):
         if attempt > 1:
             print(f"  🔁 إعادة محاولة #{attempt}")
-        ok, image_urls, fail_reason = await open_and_collect(context, chapter_url, attempt, state_path)
+        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt)
         if image_urls:
             break
 
@@ -722,15 +440,11 @@ async def process_chapter(context, state_path: Path, chapter_url: str, index: in
             failed_indices.append(i)
             continue
         try:
-            compressed, used_q, note = compress_image(raw, MAX_WIDTH, QUALITY)
+            compressed = compress_image(raw, MAX_WIDTH, QUALITY)
             filename = f"{i:03d}.webp"
             (chapter_dir / filename).write_bytes(compressed)
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-            pct = (len(compressed) / len(raw) * 100) if raw else 0
-            extra = f" — جودة WebP={used_q}" if COMPRESSION_MODE == "ratio" else ""
-            print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب ({pct:.0f}%){extra}")
-            if note:
-                print(f"     ⚠️ {note}")
+            print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
             print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
         # فاصل بسيط بين كل صورة والتالية لتقليل احتمال إثارة تحديد معدل
@@ -747,15 +461,11 @@ async def process_chapter(context, state_path: Path, chapter_url: str, index: in
             raw, reason = await fetch_image_bytes(context, img_url, chapter_url)
             if raw:
                 try:
-                    compressed, used_q, note = compress_image(raw, MAX_WIDTH, QUALITY)
+                    compressed = compress_image(raw, MAX_WIDTH, QUALITY)
                     filename = f"{i:03d}.webp"
                     (chapter_dir / filename).write_bytes(compressed)
                     saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-                    pct = (len(compressed) / len(raw) * 100) if raw else 0
-                    extra = f" — جودة WebP={used_q}" if COMPRESSION_MODE == "ratio" else ""
-                    print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب ({pct:.0f}%){extra}")
-                    if note:
-                        print(f"     ⚠️ {note}")
+                    print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
                 except Exception as e:
                     print(f"  ⚠️ فشلت صورة {i} أثناء الضغط بعد إعادة المحاولة: {e} — الرابط: {img_url}")
                     still_failed.append(i)
@@ -766,9 +476,7 @@ async def process_chapter(context, state_path: Path, chapter_url: str, index: in
         if still_failed:
             print(f"  ❌ تعذّر تحميل {len(still_failed)} صورة نهائيًا: {still_failed}")
 
-    # [مُعدَّل] لا نُغلق الـcontext هنا بعد الآن — أصبح مشتركًا بين كل فصول
-    # نفس النطاق (يُغلق مرة واحدة في main() بعد معالجة كل فصول ذلك النطاق)
-    # حتى تبقى كوكيز التحقق (cf_clearance) صالحة للفصل التالي من نفس الموقع.
+    await context.close()
 
     if not saved_paths:
         return None
@@ -781,119 +489,6 @@ async def process_chapter(context, state_path: Path, chapter_url: str, index: in
     }
 
 
-def _utc_now() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
-
-def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
-    return subprocess.run(
-        ["git"] + args, cwd=cwd, capture_output=True, text=True, timeout=60
-    )
-
-
-def load_existing_manifest(manifest_path: Path) -> dict:
-    """
-    [مُضاف] يحمّل manifest.json الموجود مسبقًا (لو كان الـworktree يتتبّع فرع
-    output الذي فيه بيانات من تشغيلات سابقة) بدل البدء من قاموس فارغ. هذا
-    يمنع فقدان مانهوات/فصول سابقة كانت تُفقد سابقًا عند استبدال الملف بالكامل.
-    """
-    if manifest_path.exists():
-        try:
-            data = json.loads(manifest_path.read_text(encoding="utf-8"))
-            if isinstance(data, dict) and "manga" in data:
-                return data
-        except Exception as e:
-            print(f"  ⚠️ تعذّرت قراءة manifest.json الحالي ({e}) — سيُبنى من جديد")
-    return {"manga": {}}
-
-
-def merge_chapter_into_manifest(manifest: dict, result: dict) -> None:
-    """
-    [مُضاف] يدمج فصلًا واحدًا ناجحًا داخل الـmanifest القائم: يضيف مانهوا
-    جديدة إن لم تكن موجودة، ويستبدل الفصل لو كان موجودًا مسبقًا (نفس رابط
-    المصدر أو نفس رقم الفصل — حالة إعادة معالجة فصل فشل جزئيًا سابقًا)، وإلا
-    يضيفه، ثم يعيد ترتيب الفصول برقمها.
-    """
-    mid = result["manga_id"]
-    if mid not in manifest["manga"]:
-        manifest["manga"][mid] = {
-            "name": mid.split("__", 1)[-1].replace("-", " "),
-            "chapters": [],
-        }
-    images_cdn = [f"{CDN_BASE}/{p}" for p in result["image_paths"]] if CDN_BASE else result["image_paths"]
-    new_chapter = {
-        "label": f"الفصل {result['chapter_num']}",
-        "chNum": float(result["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", result["chapter_num"]) else 0,
-        "sourceUrl": result["source_url"],
-        "images": images_cdn,
-    }
-    chapters = manifest["manga"][mid]["chapters"]
-    for idx, c in enumerate(chapters):
-        if c.get("sourceUrl") == new_chapter["sourceUrl"] or c.get("chNum") == new_chapter["chNum"]:
-            chapters[idx] = new_chapter
-            break
-    else:
-        chapters.append(new_chapter)
-    chapters.sort(key=lambda c: c["chNum"])
-
-
-def write_manifest(manifest: dict) -> None:
-    (OUTPUT_DIR / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-
-
-def git_commit_and_push(commit_message: str) -> bool:
-    """
-    [مُضاف] يحفظ كل التغييرات الحالية داخل GIT_COMMIT_DIR (commit + push)
-    فورًا. يُستدعى بعد كل فصل ناجح — لا بعد اكتمال كل الفصول — حتى لا تُفقد
-    نتائج الفصول التي سبق دفعها لو انقطع التشغيل لاحقًا (بلوغ سقف الوقت،
-    إلغاء يدوي، عطل مؤقت). لا يوقف تنفيذ باقي الفصول عند فشله — فقط يسجّل
-    تحذيرًا ويكمل، مع محاولة تعويضية أخيرة في نهاية main().
-    """
-    if not GIT_COMMIT_DIR:
-        return False
-
-    rel_output = str(OUTPUT_DIR)
-    add = _run_git(["add", rel_output], cwd=GIT_COMMIT_DIR)
-    if add.returncode != 0:
-        print(f"  ⚠️ git add فشل: {add.stderr.strip()[:300]}")
-        return False
-
-    status = _run_git(["status", "--porcelain", "--", rel_output], cwd=GIT_COMMIT_DIR)
-    if not status.stdout.strip():
-        print("  ℹ️ لا تغييرات جديدة لحفظها في Git لهذا الفصل")
-        return True
-
-    commit = _run_git(
-        ["-c", f"user.name={GIT_USER_NAME}", "-c", f"user.email={GIT_USER_EMAIL}",
-         "commit", "-m", commit_message],
-        cwd=GIT_COMMIT_DIR,
-    )
-    if commit.returncode != 0:
-        print(f"  ⚠️ git commit فشل: {commit.stderr.strip()[:300]}")
-        return False
-
-    for attempt in range(1, GIT_PUSH_RETRIES + 1):
-        push = _run_git(["push", "origin", f"HEAD:{GIT_BRANCH}"], cwd=GIT_COMMIT_DIR)
-        if push.returncode == 0:
-            print(f"  📤 تم الحفظ والدفع لفرع {GIT_BRANCH} (محاولة {attempt})")
-            return True
-        print(f"  ⚠️ فشل push (محاولة {attempt}/{GIT_PUSH_RETRIES}): {push.stderr.strip()[:300]}")
-        if attempt < GIT_PUSH_RETRIES:
-            # الأرجح تعارض fast-forward (كاتب آخر دفع بينما نحن نعمل) — نسحب
-            # ونعيد الترتيب فوق أحدث تغييرات عن بُعد قبل إعادة محاولة الدفع
-            _run_git(["fetch", "origin", GIT_BRANCH], cwd=GIT_COMMIT_DIR)
-            rebase = _run_git(["rebase", f"origin/{GIT_BRANCH}"], cwd=GIT_COMMIT_DIR)
-            if rebase.returncode != 0:
-                _run_git(["rebase", "--abort"], cwd=GIT_COMMIT_DIR)
-            time.sleep(2 * attempt)
-
-    print(f"  ❌ تعذّر دفع هذا الفصل لفرع {GIT_BRANCH} بعد {GIT_PUSH_RETRIES} محاولات "
-          f"— التغييرات محفوظة محليًا (commit) وستُعاد محاولة دفعها في نهاية التشغيلة")
-    return False
-
-
 async def main():
     chapter_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
     print(f"📋 تم استخراج {len(chapter_urls)} رابط صالح من المدخلات:")
@@ -904,84 +499,40 @@ async def main():
         sys.exit(1)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    if GIT_COMMIT_DIR:
-        print(f"🔗 الدفع التدريجي مفعّل — سيُحفظ كل فصل ناجح فورًا لفرع {GIT_BRANCH}")
-    else:
-        print("ℹ️ الدفع التدريجي معطّل (GIT_COMMIT_DIR غير مضبوط) — كتابة محلية فقط")
-
-    manifest_path = OUTPUT_DIR / "manifest.json"
-    manifest = load_existing_manifest(manifest_path)
-
     results = []
-    pushed_count, failed_push_count = 0, 0
-
-    def _handle_chapter_result(r: dict) -> None:
-        """
-        [مُضاف] يُستدعى فور نجاح كل فصل: يدمجه في الـmanifest، يكتبه على
-        القرص، ثم يحاول حفظه ودفعه في Git فورًا — بدل تجميع كل النتائج
-        وانتظار نهاية كل الفصول لحفظ أي شيء.
-        """
-        nonlocal pushed_count, failed_push_count
-        results.append(r)
-        merge_chapter_into_manifest(manifest, r)
-        write_manifest(manifest)
-        commit_msg = f"إضافة {r['manga_id']} — الفصل {r['chapter_num']} - {_utc_now()}"
-        if git_commit_and_push(commit_msg):
-            pushed_count += 1
-        elif GIT_COMMIT_DIR:
-            failed_push_count += 1
 
     async with async_playwright() as p:
-        # [مُعدَّل] نحاول أولًا تشغيل Chrome الحقيقي المثبَّت (channel="chrome")
-        # بدل نسخة Chromium المرفقة الافتراضية — بصمة Chrome الحقيقي أقرب لما
-        # يتوقعه Cloudflare من متصفح مستخدم عادي، فاحتمال نجاحها أعلى قليلًا.
-        # لو لم يكن مثبَّتًا في البيئة (مثل GitHub Actions بدون خطوة تثبيت
-        # إضافية)، نعود تلقائيًا لـChromium العادي.
-        try:
-            browser = await p.chromium.launch(
-                channel="chrome", args=["--disable-blink-features=AutomationControlled"]
-            )
-            print("🌐 تم تشغيل Chrome الحقيقي (channel=chrome)")
-        except Exception:
-            browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-            print("🌐 Chrome الحقيقي غير متاح — تشغيل Chromium الافتراضي")
-
-        # [مُعدَّل] نُجمّع الفصول حسب النطاق ونُنشئ context واحدًا فقط لكل
-        # نطاق (بدل واحد لكل فصل) — يُغلق بعد معالجة كل فصول ذلك النطاق.
-        # هذا يحافظ على كوكيز التحقق (cf_clearance) بين فصول نفس الموقع.
-        by_domain: dict[str, list[tuple[int, str]]] = {}
+        browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
         for i, url in enumerate(chapter_urls, start=1):
-            by_domain.setdefault(domain_of(url), []).append((i, url))
-
-        for domain, items in by_domain.items():
-            context, state_path = await get_or_create_context(browser, domain)
-            for i, url in items:
-                r = await process_chapter(context, state_path, url, i, len(chapter_urls))
-                if r:
-                    # [مُعدَّل] بدل تجميع النتيجة فقط بالذاكرة، تُدمَج وتُكتب
-                    # وتُدفَع فورًا (انظر _handle_chapter_result وملاحظة 7 أعلى
-                    # الملف) — حماية من فقدان كل شيء لو انقطع التشغيل لاحقًا
-                    _handle_chapter_result(r)
-            await context.close()
-
+            r = await process_chapter(browser, url, i, len(chapter_urls))
+            if r:
+                results.append(r)
         await browser.close()
 
-    # محاولة تعويضية أخيرة: لو فشل دفع فصل أو أكثر أثناء التشغيل (تعارض
-    # مؤقت، انقطاع شبكة قصير...)، هذه فرصة أخيرة لدفع كل ما تبقى محليًا
-    # بدل تركه عالقًا في الـcommits المحلية فقط داخل الـRunner المؤقت
-    if GIT_COMMIT_DIR:
-        final_msg = f"دفع ختامي للتشغيلة - {_utc_now()}"
-        if git_commit_and_push(final_msg):
-            print("📤 الدفع الختامي: تم التأكد من رفع كل التغييرات المتبقية")
-        if failed_push_count:
-            print(f"⚠️ تنبيه: فشل الدفع الفوري لـ {failed_push_count} فصل أثناء التشغيل "
-                  f"(تمت تغطيتها على الأغلب بالدفع الختامي أعلاه إن نجح)")
+    manifest = {"manga": {}}
+    for r in results:
+        mid = r["manga_id"]
+        if mid not in manifest["manga"]:
+            manifest["manga"][mid] = {
+                "name": mid.split("__", 1)[-1].replace("-", " "),
+                "chapters": []
+            }
+        images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
+        manifest["manga"][mid]["chapters"].append({
+            "label": f"الفصل {r['chapter_num']}",
+            "chNum": float(r["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", r["chapter_num"]) else 0,
+            "sourceUrl": r["source_url"],
+            "images": images_cdn,
+        })
 
+    for mid in manifest["manga"]:
+        manifest["manga"][mid]["chapters"].sort(key=lambda c: c["chNum"])
+
+    (OUTPUT_DIR / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print(f"\n✅ اكتمل: {len(results)} فصل من أصل {len(chapter_urls)}")
-    if GIT_COMMIT_DIR:
-        print(f"📤 دُفع فوريًا بنجاح: {pushed_count}/{len(results)} فصل")
-    print(f"manifest.json جاهز في {manifest_path}")
+    print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
 
 
 if __name__ == "__main__":
