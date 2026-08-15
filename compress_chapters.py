@@ -40,6 +40,24 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    IGNORE_PATTERN يستبعد أي رابط بامتداد .svg أو داخل مسار /theme/ أو يحوي
    كلمة emote/reaction، قبل حتى محاولة تحميله.
 
+3.3) [مُضاف] اكتُشف لاحقًا خلل معاكس تمامًا لما سبق: فلتر "سياق الودجت" نفسه
+   (الفقرة 3.1) كان يُطبَّق أيضًا على نتائج المحدّدات الموثوقة (CONTENT_SELECTORS)
+   لا فقط على المسار الاحتياطي العام — فاستبعد صورًا حقيقية بالخطأ في موقع
+   يبني قارئ الفصل بمكتبة Swiper.js (فصول فيها الحاوية الحقيقية لكل صفحة
+   تحمل class تحوي كلمة "swiper"، وهي أحد أنماط WIDGET_CONTEXT_PATTERN). نتيجة
+   ذلك: فُقد 5 من أصل 10 صور فصل حقيقية بصمت تام دون أي رسالة خطأ ظاهرة.
+   الإصلاح: فلتر سياق الودجت أصبح يُطبَّق فقط على المسار الاحتياطي العام (كل
+   وسوم <img> في الصفحة، حين لا يوجد محدّد موثوق أصلًا) — أما نتائج
+   CONTENT_SELECTORS فتُثَق بها مباشرة (فقط IGNORE_PATTERN + dedupe الأساسي)
+   لأن المحدّد نفسه مخصص ومعروف كحاوية قراءة حقيقية، فتطبيق تخمين إضافي فوقه
+   يخاطر باستبعاد محتوى حقيقي أكثر مما يحمي من ودجت مزيف. كذلك أُضيف تحذير
+   تشخيصي عام (_warn_if_fewer_than_expected): يقارن عدد الصور المستخرجة أخيرًا
+   بالعدد الخام المكتشف بالصفحة (wait_for_real_images)، ويطبع تنبيهًا صريحًا
+   في اللوج لو الفارق كبير (أقل من 70%) — بغضّ النظر عن الموقع أو القالب —
+   بدل صمت يُخفي فقدان بيانات حقيقية مستقبلًا على أي موقع آخر غير مُختبَر بعد.
+   كذلك وُسّعت قائمة CONTENT_SELECTORS لتغطي أنماط قوالب أكثر تنوعًا (لا Madara
+   فقط)، لأن السكربت أصبح يُستخدم فعليًا على مواقع/قوالب مختلفة تمامًا.
+
 4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
    (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
 
@@ -176,14 +194,29 @@ WIDGET_CONTEXT_PATTERN = re.compile(
     re.I,
 )
 
-# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية (Madara وما شابه من قوالب
-# ووردبريس) — تُجرَّب أولًا لتضييق الاستخراج على المحتوى الحقيقي فقط
+# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية عبر أشهر القوالب/الأنظمة —
+# [مُوسَّع] أُضيفت محدّدات إضافية لتغطية قوالب أخرى غير Madara (المصدر الأصلي
+# لهذه القائمة)، لأن نفس السكربت يُستخدم الآن على مواقع/قوالب متنوعة، ولكل
+# قالب اسم حاوية قراءة مختلف تمامًا رغم تشابه الوظيفة.
 CONTENT_SELECTORS = [
     ".reading-content img",
     ".page-break img",
     ".text-left img",
     "#readerarea img",
     ".chapter-content img",
+    ".read-content img",
+    ".entry-content img",
+    ".container-chapter-reader img",
+    ".chapter-images img",
+    "#chapter-images img",
+    ".comic-page img",
+    ".reader-area img",
+    ".vung-doc img",
+    ".read-container img",
+    ".chapter-container img",
+    ".manga-reading-box img",
+    "#chapterImages img",
+    ".page-image img",
 ]
 
 CHALLENGE_MARKERS = [
@@ -327,19 +360,36 @@ def _filter_widget_context(items: list[dict], base_url: str) -> list[str]:
     return kept
 
 
-async def extract_image_urls(page, base_url: str) -> list[str]:
-    # 0) أولوية قصوى: محدّدات محتوى معروفة — تستبعد الشعار/الإعلانات تلقائيًا.
-    #    الآن نستخدم النسخة الواعية بالسياق (مع ctx) لفلترة أي ودجت مُحقَن
-    #    داخل نفس الحاوية (كما اكتُشف: عدد ثابت 6 صور في كل فصل بغض النظر
-    #    عن طوله — دليل قاطع على ودجت قالب ثابت لا فشل شبكة عشوائي).
+async def extract_image_urls(page, base_url: str, expected_count: int = 0) -> list[str]:
+    # 0) نجرّب كل المحدّدات الموثوقة معًا، ونختار الأفضل (الأعلى عددًا) بينها
+    #    بدل الاكتفاء بأول محدّد يحقق الحد الأدنى (3) فقط — بعض القوالب تطابق
+    #    أكثر من محدّد بأعداد مختلفة، فالمحدّد الأول بالترتيب قد لا يكون الأشمل.
+    #
+    #    [مُهم] لا نطبّق فلتر "سياق الودجت" (WIDGET_CONTEXT_PATTERN) هنا إطلاقًا،
+    #    فقط IGNORE_PATTERN (شعار/أيقونة/SVG...) + dedupe. السبب: هذه المحدّدات
+    #    مخصصة أصلًا ومعروفة كحاويات قراءة حقيقية — تطبيق تخمين إضافي فوقها قد
+    #    يستبعد صورًا حقيقية بالخطأ. مثال حقيقي حدث فعليًا: موقع يبني قارئ
+    #    الفصل بمكتبة Swiper.js، فكانت كل صورة صفحة تُستبعد ظنًا أنها "كاروسيل
+    #    ودجت مقترحات" (لأن class الحاوية تحوي كلمة swiper) رغم أنها الصفحات
+    #    الفعلية نفسها — وهذا فقد نصف صور الفصل (5 من 10) دون أي خطأ ظاهر.
+    #    فلتر سياق الودجت يبقى مفعّلًا فقط في المسار الاحتياطي الأوسع (خطوة 2
+    #    أدناه) حيث لا يوجد محدّد موثوق أصلًا ونحتاج فعلًا لتمييز المحتوى.
+    best_found: list[str] = []
+    best_selector = None
     for selector in CONTENT_SELECTORS:
         try:
             items = await page.eval_on_selector_all(selector, IMG_SRC_WITH_CONTEXT_JS)
         except Exception:
             items = []
-        found = _filter_widget_context(items, base_url)
-        if len(found) >= 3:
-            return found
+        urls = [urljoin(base_url, it["url"]) for it in items
+                if it.get("url") and not it["url"].startswith("data:")]
+        urls = dedupe(urls)
+        if len(urls) > len(best_found):
+            best_found, best_selector = urls, selector
+
+    if len(best_found) >= 3:
+        _warn_if_fewer_than_expected(best_found, expected_count, f"المحدّد '{best_selector}'")
+        return best_found
 
     # 1) صور داخل noscript (بديل حقيقي شائع عند التحميل الكسول)
     noscript_imgs = await page.eval_on_selector_all("noscript", "els => els.map(e => e.innerHTML)")
@@ -348,21 +398,39 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
         for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', html):
             found.append(urljoin(base_url, m.group(1)))
     if found:
-        return dedupe(found)
+        found = dedupe(found)
+        _warn_if_fewer_than_expected(found, expected_count, "noscript")
+        return found
 
-    # 2) كل وسوم <img> في الصفحة (احتياط أخير، عرضة لالتقاط شعار/إعلانات)
-    #    نستخدم أيضًا النسخة الواعية بالسياق هنا لأنها أوسع نطاقًا وأكثر
-    #    عرضة لالتقاط ودجات، لا فقط الشعار/الإعلانات المغطاة بـIGNORE_PATTERN.
+    # 2) كل وسوم <img> في الصفحة (احتياط أخير، لا يوجد محدّد موثوق هنا، لذلك
+    #    فلتر سياق الودجت مفعّل فعليًا في هذا المسار تحديدًا — عرضة لالتقاط
+    #    شعار/إعلانات/ودجات حقيقية، لا فقط صفحات المانهوا)
     items = await page.eval_on_selector_all("img", IMG_SRC_WITH_CONTEXT_JS)
     found = _filter_widget_context(items, base_url)
     if found:
+        _warn_if_fewer_than_expected(found, expected_count, "كل وسوم img (احتياطي)")
         return found
 
     # 3) احتياط نهائي: أي رابط بامتداد صورة داخل كود الصفحة الكامل
     html = await page.content()
     found = [urljoin(base_url, m.group(0)) for m in
              re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
-    return dedupe(found)
+    found = dedupe(found)
+    _warn_if_fewer_than_expected(found, expected_count, "استخراج نصي احتياطي")
+    return found
+
+
+def _warn_if_fewer_than_expected(found: list[str], expected_count: int, source: str) -> None:
+    """
+    [مُضاف] تحذير تشخيصي عام (وليس مقتصرًا على موقع بعينه): يقارن عدد الصور
+    المستخرجة فعليًا مقابل العدد "الخام" المكتشف مسبقًا بالصفحة (found_count
+    من wait_for_real_images). فجوة كبيرة (أقل من 70% من المتوقع) تعني على
+    الأغلب أن فلترة ما (محدّد ضيق جدًا، أو نمط سياق) استبعدت صورًا حقيقية
+    بالخطأ — يُطبع تحذير واضح فورًا في اللوج بدل صمت يخفي فقدان بيانات صحيحة.
+    """
+    if expected_count and len(found) < expected_count * 0.7:
+        print(f"  ⚠️ تحذير: {source} استخرج {len(found)} صورة فقط من أصل {expected_count} "
+              f"مكتشفة مبدئيًا في الصفحة — يُحتمل وجود صور حقيقية استُبعدت بالخطأ، راجع اللوج أعلاه")
 
 
 def _drop_unused_alpha(img: Image.Image) -> Image.Image:
@@ -581,7 +649,7 @@ async def open_and_collect(context, chapter_url: str, attempt: int, state_path: 
     found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
     print(f"  🖼️ صور حقيقية مكتشفة قبل الاستخراج: {found_count}")
 
-    image_urls = await extract_image_urls(page, chapter_url)
+    image_urls = await extract_image_urls(page, chapter_url, expected_count=found_count)
     await page.close()
 
     # الحكم بالنجاح يعتمد على وجود صور مستخرجة فعليًا، وليس على إطلاق حدث
