@@ -170,18 +170,46 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     return f"{u.hostname}__{slugify(manga_name)}", (chapter_num or "0")
 
 
-async def dismiss_adblock_wall(page) -> bool:
+async def dismiss_adblock_wall(page, max_wait_ms: int = 90000) -> bool:
     """يكتشف جدار "مانع إعلانات" (مثل dilar.tube) ويتجاوزه. يرجّع True لو
     وُجد الجدار فعليًا وتم التعامل معه، و False لو ما كان موجودًا أصلًا
-    (الحالة الشائعة بعد أول فصل بفضل إعادة استخدام نفس السياق)."""
+    (الحالة الشائعة بعد أول فصل بفضل إعادة استخدام نفس السياق).
+
+    ملاحظة تصميم مهمة: زر التجاوز يُولَد بالـDOM فورًا لكنه disabled وغير
+    مرئي حتى ينتهي عدّ تنازلي فعلي بالموقع — والمدة الحقيقية غير معروفة
+    مسبقًا (قد تطول داخل GitHub Actions لأن طلبات فحص الإعلانات نفسها
+    محجوبة على مستوى الشبكة، فتنتظر انتهاء مهلتها بدل فشل فوري). لذلك
+    نَستطلِع (poll) جاهزية الزر فعليًا بدل انتظار مدة ثابتة مخمَّنة."""
     try:
         locator = page.get_by_text(ADBLOCK_WALL_TEXT_PATTERN)
         if await locator.count() == 0:
             return False
-        print("  🧱 اكتُشف جدار \"مانع إعلانات\" — انتظار العد التنازلي ثم تجاوزه")
-        await page.wait_for_timeout(9000)  # هامش أمان فوق أطول عدّ تنازلي لوحظ (٧ث)
-        await locator.first.click(timeout=5000)
-        await page.wait_for_timeout(1200)
+        print(f"  🧱 اكتُشف جدار \"مانع إعلانات\" — بانتظار تفعّل زر التجاوز (حتى {max_wait_ms//1000}ث)")
+        target = locator.first
+        elapsed, poll_ms, ready = 0, 1000, False
+        while elapsed < max_wait_ms:
+            try:
+                if await target.is_visible() and await target.is_enabled():
+                    ready = True
+                    break
+            except Exception:
+                pass
+            await page.wait_for_timeout(poll_ms)
+            elapsed += poll_ms
+        if not ready:
+            print(f"  ⚠️ الزر لم يصبح جاهزًا خلال {max_wait_ms//1000}ث — سنحاول الضغط القسري كملاذ أخير")
+        try:
+            await target.click(timeout=3000)
+        except Exception:
+            try:
+                # ملاذ أخير: ضغط قسري عبر JS مباشرة (يتجاوز فحوصات "مرئي/مفعّل"
+                # الخاصة بـPlaywright) — قد لا ينجح لو المعالج نفسه يتحقق من
+                # حالة disabled داخليًا، لكنه يستحق المحاولة قبل الاستسلام
+                await target.evaluate("el => el.click()")
+            except Exception as e2:
+                print(f"  ⚠️ فشل حتى الضغط القسري: {e2}")
+                return False
+        await page.wait_for_timeout(1500)
         return True
     except Exception as e:
         print(f"  ⚠️ تعذّرت محاولة تجاوز جدار مانع الإعلانات: {e}")
