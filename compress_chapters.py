@@ -22,46 +22,44 @@ Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا
    إعلان" — لأن بعض القوالب تحقن ودجات كهذي بنفس وسوم <img> الحقيقية دون أي
    إشارة نصية في رابط الصورة نفسه تدل على أنه ودجت.
 
-3.1) [إصلاح جذري] الجمع يتم بتمرير تراكمي واحد فقط لكل الصفحة (لا 5-6 مرات):
-   في نسخة سابقة كان الكود يجرّب محدّدات CSS خاصة بقالب Madara واحدًا تلو
-   الآخر (.reading-content, .page-break, .text-left, #readerarea,
-   .chapter-content)، وكل محاولة تعيد تمرير الصفحة بالكامل من الصفر بحثًا
-   عن تطابق. في مواقع لا تستخدم قالب Madara (كهذا الموقع)، لا شيء يطابق، فكان
-   يُهدر التمرير الكامل حتى 5 مرات قبل الوصول أخيرًا للخطة الاحتياطية (كل
-   <img> في الصفحة) — وهذا فعليًا ما تسبب في دقائق طويلة لفصل واحد فقط.
-   الآن: تمرير واحد يجمع كل عناصر <img> في الصفحة، ولكل عنصر نسجّل أيضًا "أي
-   محدّدات من القائمة يطابقها فعليًا" (عبر Element.matches) في نفس الجولة.
-   بعد الجمع مرة واحدة: نستبعد صور الودجات حسب السياق، ثم نفضّل الصور التي
-   وقعت فعليًا داخل أحد المحدّدات المعروفة (بترتيب أولويتها) إن كان عددها
-   كافيًا، وإلا نستخدم كل الصور المتبقية بعد الفلترة — بدون أي تمرير إضافي.
+3.1) الجمع يتم بتمرير تراكمي واحد فقط لكل الصفحة: يجمع كل عناصر <img> ولكل
+   عنصر نسجّل أيضًا "أي محدّدات من قائمة معروفة (Madara وما شابه) يطابقها
+   فعليًا" (عبر Element.matches) في نفس الجولة. بعد الجمع مرة واحدة: نستبعد
+   صور الودجات حسب السياق، ثم نفضّل الصور الواقعة داخل محدّد معروف (بترتيب
+   أولويته) إن كان عددها كافيًا، وإلا نستخدم كل الصور المتبقية — بدون أي
+   تمرير إضافي (كان تكرار التمرير لكل محدّد على حدة يسبب دقائق طويلة لفصل
+   واحد في مواقع لا تطابق أي محدّد معروف).
 
-3.2) التمرير عبر الصفحة تراكمي لا لقطة واحدة أخيرة: صفحات القراءة الطويلة
-   (عشرات/مئات الصور) غالبًا تستخدم تحميلًا كسولًا أو virtualization يُلغي
-   (unmount) الصور البعيدة عن منطقة العرض لتوفير الذاكرة. لقطة واحدة كانت
-   تلتقط فقط الصور القريبة من نقطة اللقطة. الآن يُمرَّر تدريجيًا بخطوات
-   تتحقق من scrollHeight الحقيقي، ويُجمَّع كل رابط صورة ظهر في أي لحظة أثناء
-   الرحلة (حتى لو اختفى لاحقًا من الـDOM)، بدل الاعتماد على الحالة النهائية.
-   وله سقف زمني إجمالي (لا سقف خطوات فقط) يحمي من صفحات تنمو باستمرار
-   (ودجت "تحميل المزيد" مثلًا) بدل أن تعلّق التنفيذ لدقائق بلا داعٍ.
+3.2) التمرير عبر الصفحة تراكمي لا لقطة واحدة أخيرة — يحل مشكلة الصفحات التي
+   تُلغي تحميل (unmount) الصور البعيدة عن منطقة العرض (تحميل كسول/
+   virtualization)، وله سقف زمني إجمالي (لا سقف خطوات فقط) يحمي من صفحات
+   تنمو باستمرار (ودجت "تحميل المزيد" مثلًا).
 
 4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
    (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
 
 5) الحكم بنجاح/فشل تحميل الصفحة يعتمد على وجود صور مستخرجة فعليًا، وليس على
-   إطلاق حدث goto (domcontentloaded/load) بذاته. بعض الصفحات ترسم محتواها
-   الحقيقي كاملًا ويظهر فيها عشرات الصور الحقيقية، لكن حدث goto يتعلّق ولا
-   يُطلَق أبدًا بسبب مورد بطيء غير متعلق بالمحتوى (إعلان فيديو، سكربت تتبّع
-   معلّق...). رفض النتيجة تلقائيًا في هذه الحالة كان يُهدر بيانات صحيحة.
+   إطلاق حدث goto (domcontentloaded/load) بذاته — بعض الصفحات ترسم محتواها
+   الحقيقي كاملًا حتى لو تعلّق الحدث نفسه بسبب مورد بطيء غير متعلق بالمحتوى.
 
 6) عند فشل تحميل بايتات صورة، يُتحقق من content-type فعليًا قبل تمريرها
-   لـ Pillow، ويُطبع السبب الدقيق (status/content-type/الرابط الكامل) بدل
-   الاكتفاء برسالة Pillow العامة "cannot identify image file" التي لا
-   تفسّر شيئًا. هذا يجعل أي سبب فشل مستقبلي قابلًا للتشخيص فورًا من اللوج.
+   لـ Pillow، ويُطبع السبب الدقيق بدل رسالة Pillow العامة التي لا تفسّر شيئًا.
+
+7) [مُضاف] الدفع التدريجي الفعلي: إن كان ENABLE_INCREMENTAL_PUSH مفعّلًا
+   و GIT_COMMIT_DIR مضبوطًا (تمررهما خطوة الـ workflow)، يُنفَّذ commit+push
+   حقيقي (git عبر subprocess، في thread منفصل حتى لا يحجب حلقة الأحداث غير
+   المتزامنة) فور نجاح كل فصل — لا بعد اكتمال كل الفصول. في نسخة سابقة كانت
+   خطوة الـ workflow تمرّر هذين المتغيّرين لكن السكربت لم يكن يقرأهما إطلاقًا
+   (خلل: الدفع "التدريجي" لم يكن يحدث فعليًا، والدفع الحقيقي الوحيد كان
+   الدفعة الأخيرة في نهاية الـ job). إن كان ENABLE_INCREMENTAL_PUSH مُعطَّلًا،
+   لا يُنفَّذ أي أمر git من هنا إطلاقًا، وتبقى خطوة "الدفع الاحتياطي النهائي"
+   في الـ workflow هي المسؤولة عن دفعة واحدة بالنهاية.
 """
 import asyncio
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from collections import Counter
@@ -86,15 +84,19 @@ RETRY_PER_CHAPTER = int(os.environ.get("RETRY_PER_CHAPTER", "2"))
 # سقف أمان لعدد خطوات التمرير التراكمي (فصول بمئات الصور تحتاج خطوات أكثر)
 SCROLL_MAX_STEPS = int(os.environ.get("SCROLL_MAX_STEPS", "400"))
 SCROLL_STEP_WAIT_MS = int(os.environ.get("SCROLL_STEP_WAIT_MS", "350"))
-# سقف زمني إجمالي (بالثواني) للتمرير التراكمي بغضّ النظر عن عدد الخطوات —
-# يحمي من صفحات فيها ودجت "تحميل المزيد" ينمو بلا توقف (ملاحظة 3.2)
+# سقف زمني إجمالي (بالثواني) للتمرير التراكمي بغضّ النظر عن عدد الخطوات
 SCROLL_MAX_TOTAL_SEC = int(os.environ.get("SCROLL_MAX_TOTAL_SEC", "90"))
 
-# إذا فُعِّل هذا (STRICT_DOMAIN_FILTER=1) يتم استبعاد أي صورة من نطاق (domain)
-# غير النطاق الأغلب بين صور الفصل — بعض المواقع تحمّل ودجات التوصيات من
-# نطاق خارجي (شبكة إعلانات/خدمة توصيات) مختلف عن نطاق CDN صور المانهوا نفسه.
-# مُعطَّل افتراضيًا لأن بعض المواقع الشرعية توزّع صورها على أكثر من نطاق CDN.
+# إذا فُعِّل هذا يتم استبعاد أي صورة من نطاق (domain) غير النطاق الأغلب بين
+# صور الفصل — مُعطَّل افتراضيًا لأن بعض المواقع الشرعية توزّع صورها على أكثر
+# من نطاق CDN. يُتحكم به الآن من زر في الـ workflow (strict_domain_filter)
 STRICT_DOMAIN_FILTER = os.environ.get("STRICT_DOMAIN_FILTER", "0") == "1"
+
+# الدفع التدريجي: commit+push حقيقي بعد كل فصل ناجح (زر enable_incremental_push
+# في الـ workflow). يعمل فقط إن كان GIT_COMMIT_DIR مضبوطًا فعليًا.
+ENABLE_INCREMENTAL_PUSH = os.environ.get("ENABLE_INCREMENTAL_PUSH", "true").strip().lower() == "true"
+GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip() or None
+GIT_BRANCH = os.environ.get("GIT_BRANCH", "output").strip() or "output"
 
 # أقصى بعد مسموح لأي صورة (عرض أو طول) قبل إعادة تحجيمه إجباريًا — يحمي من
 # فشل ترميز WebP الذي له حد صارم 16383 بكسل، بغضّ النظر عن إعداد العرض الأقصى
@@ -104,9 +106,6 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 
 IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
 
-# أنماط أسماء classes/ids شائعة لحاويات "ودجات" غير محتوى القراءة الفعلي —
-# مقترحات/مانهوات مشابهة/تعليقات/إعلانات/كاروسيل إلخ. يُفحص بها سياق (أصول
-# DOM) كل صورة بغضّ النظر عن مدى بُعدها عن المحدّد الرئيسي.
 WIDGET_CONTEXT_PATTERN = re.compile(
     r"related|similar|recommend|suggest|you-may|you_may|might-like|"
     r"widget|sidebar|comment|carousel|swiper|sponsor|advert|banner-ad|"
@@ -114,9 +113,6 @@ WIDGET_CONTEXT_PATTERN = re.compile(
     re.I,
 )
 
-# محدّدات CSS شائعة لحاويات صفحات المانجا الحقيقية (Madara وما شابه من قوالب
-# ووردبريس) — تُستخدم كـ"تفضيل" بعد الجمع الشامل (وليس كأساس لتمرير منفصل
-# لكل واحد منها)، بترتيب الأولوية.
 CONTENT_SELECTORS = [
     ".reading-content img",
     ".page-break img",
@@ -131,10 +127,6 @@ CHALLENGE_MARKERS = [
     "enable javascript and cookies",
 ]
 
-# يعيد لكل عنصر <img> في الصفحة (تمرير واحد لكل الصفحة): رابطه، "سياقه"
-# (classes/ids لخمسة مستويات من الأصول)، وأي محدّدات من CONTENT_SELECTORS
-# يطابقها فعليًا (تُمرَّر كوسيط ثانٍ) — هذا ما يلغي الحاجة لتمرير منفصل لكل
-# محدّد على حدة، لأن كل المعلومات تُجمع في نفس الجولة الواحدة.
 COLLECT_IMAGES_JS = """(els, selectors) => els.map(e => {
     const u = e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
         || e.getAttribute('data-original') || e.currentSrc || e.src;
@@ -240,13 +232,8 @@ def dedupe(urls: list[str]) -> list[str]:
 
 
 async def collect_images_while_scrolling(page, content_selectors: list[str]) -> list[dict]:
-    """
-    تمرير تراكمي واحد فقط لكل الصفحة: يجمع كل عناصر <img> ومعها "سياقها"
-    و"أي محدّدات معروفة تطابقها" في نفس الجولة — بدل إعادة التمرير الكامل
-    مرة منفصلة لكل محدّد مُخمَّن (كان هذا سبب دقائق طويلة لفصل واحد فقط في
-    مواقع لا تطابق قوالب Madara). يتحقق من موضع التمرير الحقيقي مقابل
-    ارتفاع الصفحة الفعلي، وله سقف زمني إجمالي إضافة لسقف الخطوات.
-    """
+    """تمرير تراكمي واحد فقط لكل الصفحة — يجمع كل عناصر <img> ومعها سياقها
+    وأي محدّدات معروفة تطابقها، في نفس الجولة."""
     seen: dict[str, dict] = {}
 
     def merge(items):
@@ -300,7 +287,6 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
                 pass
         await page.wait_for_timeout(SCROLL_STEP_WAIT_MS)
 
-    # جولتان أخيرتان صريحتان (أسفل الصفحة تمامًا، ثم أعلاها) كاحتياط إضافي
     for pos_expr in ["document.body.scrollHeight", "0"]:
         try:
             await page.evaluate(f"window.scrollTo(0, {pos_expr})")
@@ -317,9 +303,6 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
 
 
 def _filter_widget_context(items: list[dict]) -> list[dict]:
-    """يستبعد أي صورة يحمل أحد أصولها في الـDOM class/id يطابق
-    WIDGET_CONTEXT_PATTERN، مع إبقاء بيانات "المحدّدات المطابقة" لكل صورة
-    ناجية لاستخدامها لاحقًا في تفضيل حاوية معروفة دون أي تمرير إضافي."""
     kept, excluded_widget = [], 0
     for item in items:
         if WIDGET_CONTEXT_PATTERN.search(item.get("ctx", "")):
@@ -344,12 +327,6 @@ def _apply_domain_filter(urls: list[str]) -> list[str]:
 
 
 async def extract_image_urls(page, base_url: str) -> list[str]:
-    """
-    يجمع كل الصور بتمرير واحد فقط (collect_images_while_scrolling)، ثم
-    يستبعد صور الودجات، ثم يفضّل الصور الواقعة فعليًا داخل أحد المحدّدات
-    المعروفة (بترتيب أولويتها) إن كان عددها كافيًا (3 فأكثر) — وإلا يستخدم
-    كل الصور المتبقية بعد الفلترة. لا يوجد أي تمرير إضافي مهما كانت النتيجة.
-    """
     try:
         items = await collect_images_while_scrolling(page, CONTENT_SELECTORS)
     except Exception:
@@ -358,8 +335,6 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     filtered = _filter_widget_context(items)
 
     if filtered:
-        # نفضّل الصور الواقعة فعليًا داخل أحد المحدّدات المعروفة، بترتيب
-        # أولويتها، دون أي تمرير إضافي — البيانات كلها مُجمَّعة مسبقًا
         for selector in CONTENT_SELECTORS:
             matched_urls = dedupe([
                 urljoin(base_url, item["url"])
@@ -373,7 +348,6 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
         if all_urls:
             return _apply_domain_filter(all_urls)
 
-    # احتياط: صور داخل noscript (بديل حقيقي شائع عند التحميل الكسول)
     noscript_imgs = await page.eval_on_selector_all("noscript", "els => els.map(e => e.innerHTML)")
     found = []
     for html in noscript_imgs:
@@ -382,7 +356,6 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     if found:
         return dedupe(found)
 
-    # احتياط نهائي: أي رابط بامتداد صورة داخل كود الصفحة الكامل
     html = await page.content()
     found = [urljoin(base_url, m.group(0)) for m in
              re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
@@ -393,8 +366,6 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
     img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
 
-    # نتحقق من العرض والطول معًا: صورة ضيقة لكن طويلة جدًا (أو العكس) تتجاوز
-    # حد WebP الصارم (16383 بكسل) حتى لو عرضها ضمن الحد المطلوب أصلًا
     scale = 1.0
     if img.width > max_width:
         scale = min(scale, max_width / img.width)
@@ -418,20 +389,8 @@ IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
 
 
 async def fetch_image_bytes(context, img_url: str, referer: str):
-    """
-    يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية) بدل
-    مكتبة requests منفصلة — يحل مشكلة رفض بعض المواقع للتحميل من خارج
-    جلسة متصفح حقيقية (السبب الأغلب وراء خطأ "cannot identify image").
-
-    يعيد المحاولة عدة مرات بفاصل زمني متزايد عند الفشل: في الفصول الطويلة
-    (مئات الصور)، خادم الصور أحيانًا يحدّد معدل الطلبات مؤقتًا (Rate Limiting)
-    بعد سيل من الطلبات المتتالية على نفس الجلسة، فيرفض دفعة صور مرة وحدة ثم
-    يعود يقبل بعد قليل — إعادة المحاولة بفاصل قصير تتعافى من هذا تلقائيًا.
-
-    يعيد (bytes|None, سبب_الفشل|None): يتحقق من content-type فعليًا قبل قبول
-    الاستجابة كصورة صالحة، ويحتفظ بآخر سبب فشل دقيق (status/content-type/
-    استثناء) ليُطبع في اللوج بدل رسالة Pillow العامة التي لا تفسّر شيئًا.
-    """
+    """يحمّل الصورة عبر نفس جلسة متصفح Playwright (كوكيز + بصمة حقيقية).
+    يعيد (bytes|None, سبب_الفشل|None) مع إعادة محاولة عند الفشل."""
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
@@ -453,11 +412,58 @@ async def fetch_image_bytes(context, img_url: str, referer: str):
     return None, last_reason
 
 
+def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
+    return subprocess.run(["git"] + args, cwd=cwd, capture_output=True, text=True)
+
+
+def _git_commit_and_push_sync(commit_dir: str, branch: str, message: str) -> tuple[bool, str]:
+    """
+    ينفَّذ في thread منفصل (استدعاؤه دومًا عبر asyncio.to_thread) لأن
+    subprocess.run حاجب (blocking) ولا يجوز تشغيله مباشرة داخل event loop
+    غير متزامن — كان سيُجمّد كل تحميل الصور والفصول التالية أثناء انتظار
+    الشبكة لعملية git push.
+    """
+    add = _run_git(["add", "output"], commit_dir)
+    if add.returncode != 0:
+        return False, f"git add فشل: {add.stderr.strip()[:200]}"
+
+    diff = _run_git(["diff", "--cached", "--quiet"], commit_dir)
+    if diff.returncode == 0:
+        return True, "لا تغييرات جديدة (تخطي الدفع)"
+
+    commit = _run_git(["commit", "-m", message], commit_dir)
+    if commit.returncode != 0:
+        return False, f"git commit فشل: {commit.stderr.strip()[:200]}"
+
+    for attempt in range(1, 4):
+        push = _run_git(["push", "origin", f"HEAD:{branch}"], commit_dir)
+        if push.returncode == 0:
+            return True, "تم الدفع"
+        _run_git(["fetch", "origin", branch], commit_dir)
+        _run_git(["rebase", f"origin/{branch}"], commit_dir)
+        time.sleep(attempt * 2)
+
+    return False, "فشل الدفع بعد عدة محاولات (سيُعالجه الدفع الاحتياطي النهائي بالـ workflow)"
+
+
+async def push_chapter_incrementally(manga_id: str, chapter_num: str) -> None:
+    """
+    يُستدعى فور نجاح حفظ صور فصل واحد. لا يفعل شيئًا إن كان الدفع التدريجي
+    مُعطَّلًا (ENABLE_INCREMENTAL_PUSH=false) أو GIT_COMMIT_DIR غير مضبوط —
+    في هذه الحالة، خطوة "الدفع الاحتياطي النهائي" بالـ workflow هي المسؤولة
+    عن دفعة واحدة في نهاية التشغيل.
+    """
+    if not ENABLE_INCREMENTAL_PUSH or not GIT_COMMIT_DIR:
+        return
+    message = f"إضافة {manga_id} - الفصل {chapter_num}"
+    ok, msg = await asyncio.to_thread(_git_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, message)
+    print(f"  {'✅' if ok else '⚠️'} دفع تدريجي: {msg}")
+
+
 async def open_and_collect(browser, chapter_url: str, attempt: int):
     """
     محاولة واحدة لفتح الصفحة واستخراج روابط الصور.
-    يعيد (context, روابط_الصور, سبب_الفشل) — الـcontext يبقى مفتوحًا لأن
-    تحميل الصور لاحقًا يحتاج نفس الجلسة (كوكيز) التي فتحت الصفحة بنجاح.
+    يعيد (context, روابط_الصور, سبب_الفشل).
     """
     context = await browser.new_context(
         user_agent=UA,
@@ -486,8 +492,6 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
-    # عدّ تشخيصي سريع فقط (يُطبع في اللوج) — الاستخراج الفعلي بالأسفل يقوم
-    # بتمريره الشامل الخاص به عبر collect_images_while_scrolling
     found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
     print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
 
@@ -496,9 +500,6 @@ async def open_and_collect(browser, chapter_url: str, attempt: int):
     print(f"  ⏱️ زمن الاستخراج (تمرير واحد): {time.monotonic() - t0:.1f}ث")
     await page.close()
 
-    # الحكم بالنجاح يعتمد على وجود صور مستخرجة فعليًا، وليس على إطلاق حدث
-    # goto (domcontentloaded/load): بعض الصفحات ترسم محتواها الحقيقي كاملًا
-    # (والصور معه) قبل أن يتعلّق الحدث نفسه بسبب مورد بطيء غير متعلق بالمحتوى
     if not image_urls:
         await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
@@ -544,12 +545,8 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
             print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
             print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
-        # فاصل بسيط بين كل صورة والتالية لتقليل احتمال إثارة تحديد معدل
-        # الطلبات من الأساس في الفصول الطويلة (مئات الصور على نفس الجلسة)
         await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
 
-    # تمريرة أخيرة: إعادة محاولة الصور اللي فشلت نهائيًا بعد إكمال البقية،
-    # بعد ما يكون خادم الصور احتمالًا تعافى من أي تحديد معدل طلبات مؤقت
     if failed_indices:
         print(f"  🔁 إعادة محاولة نهائية لـ {len(failed_indices)} صورة فشلت...")
         still_failed = []
@@ -578,6 +575,9 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
     if not saved_paths:
         return None
 
+    # دفع تدريجي فوري لهذا الفصل (إن كان مفعّلًا) — لا ننتظر بقية الفصول
+    await push_chapter_incrementally(manga_id, chapter_num)
+
     return {
         "manga_id": manga_id,
         "chapter_num": chapter_num,
@@ -594,6 +594,9 @@ async def main():
     if not chapter_urls:
         print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
         sys.exit(1)
+
+    print(f"⚙️ الدفع التدريجي: {'مفعّل' if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR else 'مُعطَّل (دفعة واحدة بالنهاية عبر الـ workflow)'}")
+    print(f"⚙️ فلترة النطاق الصارمة: {'مفعّلة' if STRICT_DOMAIN_FILTER else 'مُعطَّلة'}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     results = []
@@ -630,6 +633,12 @@ async def main():
     )
     print(f"\n✅ اكتمل: {len(results)} فصل من أصل {len(chapter_urls)}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
+
+    # دفعة أخيرة تضمن أن manifest.json نفسه (وأي فصل لم يُدفع لأي سبب) يُحفظ،
+    # حتى لو كان الدفع التدريجي مفعّلًا — لأنه دُفع سابقًا فصلًا بفصل قبل أن
+    # يُكتب manifest.json (يُكتب بعد كل الفصول)، فلازم دفعة أخيرة صريحة له
+    if GIT_COMMIT_DIR:
+        await push_chapter_incrementally("manifest", "نهائي")
 
 
 if __name__ == "__main__":
