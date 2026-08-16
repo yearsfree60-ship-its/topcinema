@@ -121,6 +121,15 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 7) كل فصل معزول بـtry/except في حلقة المعالجة الرئيسية — خطأ غير متوقع في
    فصل واحد (عطل Playwright، استثناء شبكة، إلخ) لا يُسقط بقية الفصول ولا
    نتائجها المتراكمة، حتى لو كان الدفع التدريجي مُعطَّلًا.
+
+8) لكل تشغيلة رابط manifest مستقل خاص بها فقط: output/runs/run-<RUN_ID>.json
+   (RUN_ID = رقم تشغيلة GitHub Actions، أو طابع زمني محلي إن لم يُمرَّر). يُبنى
+   هذا الملف من نتائج هذه التشغيلة فقط (results) دون أي قراءة أو دمج مع
+   manifest.json البعيد — فهو منفصل تمامًا، لا يتراكم عبر التشغيلات. بالمقابل
+   manifest.json الرئيسي يستمر بالتراكم والدمج كالمعتاد (انظر ملاحظة 4) ولا
+   يُحذف أو يُعاد بناؤه من الصفر أبدًا. الصور نفسها لا تُنسخ ولا تُنقل بين
+   الرابطين — كلاهما يشير لنفس ملفات الصور الموجودة فعليًا في المستودع، لذا
+   لا وجود لأي خطر حذف على الأرشيف المتراكم من تشغيلات سابقة (أيام/أسابيع).
 """
 import asyncio
 import json
@@ -175,6 +184,13 @@ STRICT_DOMAIN_FILTER = os.environ.get("STRICT_DOMAIN_FILTER", "0") == "1"
 ENABLE_INCREMENTAL_PUSH = os.environ.get("ENABLE_INCREMENTAL_PUSH", "true").strip().lower() == "true"
 GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip() or None
 GIT_BRANCH = os.environ.get("GIT_BRANCH", "output").strip() or "output"
+
+# معرّف فريد لهذه التشغيلة تحديدًا (رقم تشغيلة GitHub Actions عادةً، يُمرَّر
+# من الـworkflow). يُستخدم لإنشاء رابط manifest منفصل يحوي فقط فصول هذه
+# التشغيلة — لا يمس manifest.json الرئيسي المتراكم ولا أي صورة قديمة إطلاقًا.
+# لو شُغِّل السكربت محليًا بدون RUN_ID، يُستخدم طابع زمني كبديل فريد.
+RUN_ID = os.environ.get("RUN_ID", "").strip() or f"local-{int(time.time())}"
+RUN_MANIFEST_RELPATH = f"runs/run-{RUN_ID}.json"
 
 IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
 IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
@@ -724,6 +740,14 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     out = BytesIO()
     img.save(out, format="WEBP", quality=quality, method=6)
     return out.getvalue()
+
+
+def build_run_manifest(results: list) -> dict:
+    """يبني manifest مستقل يحوي فقط فصول هذه التشغيلة (results الحالية)، بدون
+    أي دمج مع manifest.json الرئيسي البعيد أو المحلي — رابط منفصل تمامًا يعرض
+    فقط ما تم العمل عليه الآن، بينما يبقى الأرشيف الرئيسي (manifest.json
+    وكل الصور المخزنة من تشغيلات سابقة) دون أي حذف أو تعديل."""
+    return merge_manifest_dict({}, results)
 
 
 def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
@@ -1349,6 +1373,14 @@ async def main():
             failed_urls.append(url)
             return
         results.append(result)
+        # manifest التشغيلة الحالية يُكتب محليًا دومًا (بغض النظر عن الدفع
+        # التدريجي) — يعكس فقط فصول هذه التشغيلة حتى هذه اللحظة، ولا يُقرأ
+        # أو يُدمَج مع أي نسخة بعيدة، فهو ملف مستقل تمامًا عن manifest.json.
+        run_manifest_path = OUTPUT_DIR / RUN_MANIFEST_RELPATH
+        run_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        run_manifest_path.write_text(
+            json.dumps(build_run_manifest(results), ensure_ascii=False, indent=2), encoding="utf-8"
+        )
         if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR:
             async with git_lock:
                 remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
@@ -1405,6 +1437,15 @@ async def main():
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+    # يُكتب دومًا في النهاية أيضًا — يضمن وجود الرابط حتى لو كان الدفع
+    # التدريجي مُعطَّلًا (لم يُكتب أثناء المعالجة)، أو حتى لو فشلت كل الفصول
+    # (عندها يحوي قوائم فارغة، لكن الرابط يبقى موجودًا ومتسقًا لهذه التشغيلة).
+    run_manifest_path = OUTPUT_DIR / RUN_MANIFEST_RELPATH
+    run_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    run_manifest_path.write_text(
+        json.dumps(build_run_manifest(results), ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
     if GIT_COMMIT_DIR:
         ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تحديث manifest.json ونتائج التشغيل")
         print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
@@ -1420,6 +1461,7 @@ async def main():
         for u in failed_urls:
             print(f"     - {u}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
+    print(f"🔗 manifest خاص بهذه التشغيلة فقط (بدون أي تأثير على الأرشيف المتراكم): {OUTPUT_DIR}/{RUN_MANIFEST_RELPATH}")
     print("=" * 50)
 
     if failed_urls and len(results) == 0 and len(skipped_urls) == 0:
