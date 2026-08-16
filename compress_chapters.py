@@ -5,131 +5,67 @@
 manifest.json يصف كل مانهوا وفصولها وروابط صورها النهائية.
 
 ============================== بروفايلات المواقع ==============================
-بدل محاولة "تخمين" الأسلوب المناسب من الصفر لكل موقع (وهو ما كان يهدر دقائق
-كاملة أحيانًا)، السكربت يقرأ SITE_PROFILE من البيئة (تختاره من قائمة منسدلة في
-الـ workflow) ويطبّق مباشرة الأسلوب المثبت تجريبيًا لهذا الموقع تحديدًا:
-
-- azorafly    → HTTP مباشر بدون متصفح إطلاقًا. الصور موجودة كـ noscript أو
-                data-src في HTML الثابت نفسه، ولا يوجد حجب Cloudflare ولا
-                حماية سرقة (hotlink) تمنع تحميلها بطلب عادي. الأسرع والأخف
-                من كل البروفايلات — لا يُطلق متصفح Chromium إطلاقًا لهذا الموقع.
-                فصوله مستقلة تمامًا عن بعضها (لا جلسة مشتركة)، لذا تُعالَج
-                بالتوازي (HTTP_CONCURRENCY) بدل التسلسل — تسريع حقيقي.
-
-- mangatuk    → يحتاج متصفح حقيقي (كوكيز/جلسة Playwright لتحميل الصور نفسها،
-                وإلا فشل "cannot identify image"). لا يحتاج تمريرًا تراكميًا
-                طويلًا (الصور تظهر مباشرة دون virtualization)، ولا فلترة
-                ودجات (لا يوجد قسم "مقترح" يتداخل مع محتوى القراءة). يتساهل
-                مع تأخر حدث goto (الفصل الأول تحديدًا كان يتعلّق أحيانًا بسبب
-                مورد بطيء غير متعلق بالمحتوى — نعتمد على وجود صور حقيقية لا
-                على الحدث نفسه). فصوله الطويلة (مئات الصور) عرضة لتحديد معدل
-                طلبات، فيُعتمد عليه إعادة محاولة + تأخير بين كل صورة أكثر.
-
-- mangatime   → يحتاج متصفح حقيقي + تمرير تراكمي إجباري (تحميل كسول حقيقي
-                يُلغي الصور البعيدة عن الشاشة من الـDOM/virtualization)، ويحتاج
-                فلترة سياق الودجات (قسم "مانجا مقترحة" يحقن صورًا بنفس وسوم
-                <img> الحقيقية ضمن نفس منطقة القراءة تقريبًا). لا يطابق أي
-                محدّد قالب معروف (ليس Madara)، فيعتمد على الاستخراج العام.
-
-- olympustaff → محمي بـCloudflare على الطلب المباشر (403 + تحدٍّ) لذا يحتاج
-                متصفح حقيقي، لكنه يجتاز التحدي تلقائيًا عبر متصفح Playwright
-                عادي دون أي تدخل إضافي (لا صفحة تحقق تظهر في مسار المتصفح).
-                لا يحتاج تمريرًا تراكميًا (عدد الصور لا يزداد بعد التمرير —
-                لا يوجد تحميل كسول حقيقي مرتبط بالتمرير هنا)، ويحتاج فلترة
-                ودجات (صور أفاتار/عناصر واجهة تتسلل ضمن نفس منطقة القراءة).
-                يطابق محددات القالب الحالية (.reading-content / .page-break)
-                جيدًا فلا حاجة لمحدد جديد. حماية السرقة (hotlink) غير مفعّلة
-                على صور الفصل نفسها (نجح التحميل المباشر بلا جلسة أيضًا).
-
-- manga_starz → غير مدعوم تلقائيًا. محمي بتحدي Cloudflare كامل يكتشف بصمة
-                الأتمتة حتى مع متصفح Chromium حقيقي مؤتمت (لا حل معروف حاليًا
-                غير بروكسي residential حقيقي، لم يُختبر). السكربت يتوقف فورًا
-                لهذا البروفايل برسالة واضحة بدل إهدار وقت تشغيل على محاولات
-                ستفشل حتمًا.
-
-- auto        → السلوك العام الآمن الافتراضي لأي موقع لم نُشخّصه بعد: متصفح
-                حقيقي + تمرير تراكمي كامل + فلترة ودجات (يغطي أوسع نطاق حالات
-                حتى لو لم يكن الأمثل أداءً لموقع بعينه).
-
-كل قراءة لمفاتيح بروفايل اختيارية (do_scroll/do_widget_filter/fetch_mode) تمر
-عبر .get() بقيمة افتراضية آمنة، حتى لو أُضيف بروفايل جديد لاحقًا ونُسي أحد
-المفاتيح عن طريق الخطأ — لا ينهار السكربت بـKeyError.
+- azorafly    → HTTP مباشر بدون متصفح إطلاقًا (معالجة متزامنة محدودة).
+- mangatuk    → متصفح حقيقي، لقطة واحدة بدون تمرير، بدون فلترة ودجات.
+- mangatime   → متصفح حقيقي + تمرير تراكمي إجباري + فلترة ودجات.
+- olympustaff → متصفح حقيقي (يجتاز Cloudflare تلقائيًا)، بدون تمرير، مع فلترة
+                ودجات.
+- manga_starz → غير مدعوم — يوقف التشغيلة فورًا (قبل معالجة أي فصل، فلا
+                فقدان لأي نتائج).
+- auto        → السلوك العام الآمن الافتراضي.
 ================================================================================
 
-============================== وضع التشخيص (DIAGNOSTIC_MODE) ==================
-غرضه مختلف تمامًا عن التشغيل العادي: لا يُنزّل ولا يضغط أي فصل فعليًا، ولا
-يستخدم بروفايل الموقع المختار في الـ workflow إطلاقًا (يتجاهله عمدًا، لأن
-الموقع الجديد بالتعريف ليس له بروفايل صحيح بعد). بدلًا من ذلك يفحص كل رابط
-مُدخَل بثلاث خطوات مستقلة ليجيب على السؤال العملي الوحيد المهم فعلًا عند بناء
-بروفايل جديد: "هل هذا الموقع يشبه azorafly (خفيف) أم mangatuk/mangatime
-(يحتاج متصفحًا كاملًا)، وبأي إعدادات تحديدًا؟":
+============================== وضع التشخيص (DIAGNOSTIC_MODE) — موسّع ==========
+يفحص كل رابط مُدخَل بخمس مراحل مستقلة (لا يُنزّل/يضغط أي فصل فعليًا):
 
-  ① فحص HTTP خام (بدون Playwright إطلاقًا) — نفس أسلوب azorafly تمامًا، فقط
-     لغرض المقارنة: هل صور الصفحة موجودة أصلًا في HTML الثابت (noscript أو
-     data-src) أم أنها تُحقَن بجافاسكربت بعد التحميل (عندها HTTP وحده غير كافٍ)؟
-     يُسجَّل أيضًا رمز الاستجابة وترويسات دالة (cf-ray تدل على Cloudflare).
+  ① فحص HTTP خام — نفس أسلوب azorafly، لمعرفة هل الصور موجودة بالـHTML الثابت.
 
-  ② فحص متصفح كامل — تحميل الصفحة، عدّ الصور الحقيقية عند ثلاث لحظات مختلفة
-     (فور التحميل / بعد الانتظار العادي / بعد تمرير تراكمي كامل) لمعرفة هل
-     الفرق بينها كبير (يعني تحميلًا كسولًا حقيقيًا يستلزم do_scroll=True) أم
-     لا فرق يُذكر (يعني snapshot سريع بلا تمرير يكفي). كذلك تُحسب مطابقة كل
-     محدد من CONTENT_SELECTORS الحالية على حدة، وعدد الصور غير المطابقة لأي
-     محدد معروف (مؤشر على حاجة محدد CSS جديد)، وتُفلتَر سياقات الودجات لمعرفة
-     هل do_widget_filter مفيد هنا أصلًا أم يحذف صورًا حقيقية بالخطأ، وتوزيع
-     النطاقات بين روابط الصور (مؤشر لفائدة strict_domain_filter). تُحفظ أيضًا
-     لقطة شاشة كاملة للصفحة كمرجع بصري سريع.
+  ② فحص متصفح كامل — منحنى نمو عدد الصور بثلاث لحظات، مطابقة المحددات
+     الحالية، فلترة الودجات، توزيع النطاقات، لقطة شاشة مرجعية.
 
-  ③ فحص حماية السرقة (hotlink) على صورة عينة واحدة — تحميلها بطلب HTTP عادي
-     بلا جلسة مقابل تحميلها عبر جلسة كوكيز المتصفح نفسها. نجاح الأول يعني
-     fetch_mode="http" ممكن، ونجاح الثاني فقط يعني حاجة حقيقية لـfetch_mode="browser".
+  ③ فحص حماية السرقة (hotlink) على صورة عينة — مباشر بلا جلسة مقابل عبر
+     جلسة المتصفح.
 
-نتيجة كل هذا: توصية جاهزة تُطبَع بصيغة قابلة للصق المباشر داخل قاموس PROFILES
-أعلاه، بدل تخمين الإعدادات الأربعة (fetch_mode/do_scroll/do_widget_filter)
-يدويًا بالتجربة والخطأ كما حدث سابقًا مع المواقع الثلاثة المدعومة حاليًا.
-كل تقرير يُكتب أيضًا كملف JSON + لقطة شاشة في output/diagnostics، ويُرفَع
-كأرتيفاكت GitHub Actions مستقل بغض النظر عن نجاح/فشل بقية الخطوات، ويُدفَع
-لفرع output إن كان الدفع التدريجي مفعّلًا — نسختان احتياطيتان بدل واحدة.
+  ④ [جديد] ملف تعريف الحماية الكامل — يجمع من كل ما سبق:
+     - تصنيف اسم مزوّد الحماية تحديدًا (Cloudflare/PerimeterX/DataDome/
+       Imperva/Akamai/hCaptcha/reCAPTCHA/Sucuri/جدار مانع إعلانات) بمطابقة
+       توقيعات نصية معروفة على HTML الثابت وعنوان/جسم صفحة المتصفح معًا.
+     - رصد طلبات الشبكة الفعلية أثناء تحميل الصفحة بالمتصفح مقابل نطاقات
+       معروفة لكل مزوّد — دليل مباشر أدق من مطابقة النص وحدها.
+     - جدار مانع الإعلانات (إن وُجد): قياس فعلي (لا تخمين) لعدد الثواني
+       حتى يصبح زر التجاوز قابلًا للضغط، ثم ضغطه وإعادة قياس عدد الصور
+       بعده للتأكد من ظهور المحتوى الحقيقي.
+     - اختبار إعادة استخدام الكوكيز: بعد أي تحدٍّ يحلّه المتصفح، تُجرَّب
+       نفس الكوكيز بطلب HTTP عادي بدون متصفح — يجاوب: هل حل التحدي مرة
+       واحدة بالمتصفح ثم HTTP سريع لكل الفصول التالية استراتيجية ممكنة؟
+     - ترويسات موسّعة: retry-after, x-sucuri-id, x-datadome, x-iinfo
+       (Incapsula), cf-cache-status, cf-mitigated.
+
+  ⑤ [جديد] فحص تحديد المعدل (Rate Limiting) — عدة طلبات HTTP سريعة متتالية
+     لنفس الرابط، رصد 429/403 أو ترويسة Retry-After — يفيد تحديد
+     HTTP_CONCURRENCY الآمن لهذا الموقع تحديدًا بدل التخمين.
+
+نتيجة كل هذا: توصية آلية جاهزة للصق داخل PROFILES، مع ملف JSON تفصيلي +
+لقطة شاشة لكل رابط في output/diagnostics، مرفوعة كأرتيفاكت GitHub Actions
+مستقل، ومدفوعة لفرع output إن كان الدفع التدريجي مفعّلًا.
 ================================================================================
 
 ملاحظات تصميم عامة أخرى (تراكمت من التشخيص الفعلي عبر المحادثة):
 
-1) لا يعتمد أي مسار متصفح على "networkidle" لاعتبار الصفحة جاهزة — مواقع فيها
-   إعلانات/تتبّع لا تدخل خمول شبكة أبدًا حتى لو اكتمل المحتوى فعليًا.
-
-2) الحكم بنجاح/فشل تحميل صفحة (في مسار المتصفح) يعتمد على وجود صور مستخرجة
-   فعليًا، لا على إطلاق حدث goto بذاته — هذا سلوك عام مفيد لكل المواقع، وليس
-   خاصًا ببروفايل بعينه، فأبقيناه غير مرتبط بالبروفايل عمدًا.
-
+1) لا يعتمد أي مسار متصفح على "networkidle" لاعتبار الصفحة جاهزة.
+2) الحكم بنجاح/فشل تحميل صفحة يعتمد على وجود صور مستخرجة فعليًا، لا حدث goto.
 3) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط (حد WebP الصارم 16383 بكسل).
-
-4) manifest.json يُدمَج مع أحدث نسخة على الفرع البعيد فعليًا قبل كل كتابة —
-   لا يُعاد بناؤه من الصفر — لتفادي تعارضات "add/add" عند الدفع. الدمج يشمل
-   دومًا **كل نتائج هذه التشغيلة المتراكمة حتى هذه اللحظة**، وليس نتيجة الفصل
-   الحالي فقط — هذا إصلاح لخلل حقيقي: لو دفع فصل سابق فشل بعد كل محاولاته لكن
-   صوره محفوظة محليًا/في تشغيلة سابقة، إعادة بناء manifest.json من (بعيد +
-   فصل واحد فقط) كانت تُسقطه بصمت من القائمة رغم بقاء صوره في المستودع.
-
-5) استراتيجية إعادة محاولة الدفع: fetch + reset مختلط + إعادة commit، بدل
-   git rebase الهش مع ملفات JSON مُولَّدة بالكامل.
-
-6) الدفع التدريجي الفعلي (commit+push بعد كل فصل ناجح) يعمل إن كان
-   ENABLE_INCREMENTAL_PUSH مفعّلًا و GIT_COMMIT_DIR مضبوطًا. كل عمليات القراءة
-   من البعيد + الدمج + الكتابة + الدفع محمية بقفل asyncio.Lock واحد مشترك،
-   حتى مع معالجة فصول HTTP بالتوازي — يمنع تعارض عدة commits في نفس اللحظة
-   وتضارب قراءة/كتابة manifest.json.
-
-7) كل فصل معزول بـtry/except في حلقة المعالجة الرئيسية — خطأ غير متوقع في
-   فصل واحد (عطل Playwright، استثناء شبكة، إلخ) لا يُسقط بقية الفصول ولا
-   نتائجها المتراكمة، حتى لو كان الدفع التدريجي مُعطَّلًا.
-
-8) لكل تشغيلة رابط manifest مستقل خاص بها فقط: output/runs/run-<RUN_ID>.json
-   (RUN_ID = رقم تشغيلة GitHub Actions، أو طابع زمني محلي إن لم يُمرَّر). يُبنى
-   هذا الملف من نتائج هذه التشغيلة فقط (results) دون أي قراءة أو دمج مع
-   manifest.json البعيد — فهو منفصل تمامًا، لا يتراكم عبر التشغيلات. بالمقابل
-   manifest.json الرئيسي يستمر بالتراكم والدمج كالمعتاد (انظر ملاحظة 4) ولا
-   يُحذف أو يُعاد بناؤه من الصفر أبدًا. الصور نفسها لا تُنسخ ولا تُنقل بين
-   الرابطين — كلاهما يشير لنفس ملفات الصور الموجودة فعليًا في المستودع، لذا
-   لا وجود لأي خطر حذف على الأرشيف المتراكم من تشغيلات سابقة (أيام/أسابيع).
+4) manifest.json يُدمَج مع أحدث نسخة بعيدة، ويشمل كل نتائج التشغيلة المتراكمة
+   حتى هذه اللحظة (لا الفصل الحالي وحده) لتفادي فقدان صامت لفصول سابقة.
+5) استراتيجية إعادة محاولة الدفع: fetch + reset مختلط، بدل git rebase الهش.
+6) الدفع التدريجي محمي بقفل asyncio.Lock واحد مشترك حتى مع HTTP بالتوازي.
+7) كل فصل معزول بـtry/except في حلقة المعالجة الرئيسية.
+8) لكل تشغيلة manifest مستقل خاص بها: output/runs/run-<RUN_ID>.json — لا
+   يُدمَج مع الأرشيف الرئيسي ولا يؤثر عليه، والصور نفسها مشتركة بلا نسخ.
+9) المطابقة بمنطق الدمج على sourceUrl/num الفعلي لا chNum المشتق (يتصادم
+   لأي فصل رقمه غير عددي بحت).
+10) رابط مكرر بالمدخلات يُستبعد (مهم خصوصًا مع HTTP_CONCURRENCY لمنع تعارض
+    كتابة ملفات فعلي على نفس مجلد الفصل من نسختين متزامنتين).
 """
 import asyncio
 import json
@@ -148,10 +84,6 @@ from io import BytesIO
 from playwright.async_api import async_playwright
 
 def _clamp_int(raw_value: str, default: int, lo: int, hi: int, name: str) -> int:
-    """تحويل آمن لمتغير بيئة رقمي: قيمة غير قابلة للتحويل ترجع للافتراضي بدل
-    انهيار السكربت بـValueError عند الاستيراد، وقيمة خارج النطاق المعقول
-    (مثلًا جودة ضغط 500 أو توازي HTTP بالمئات) تُقصّ لأقرب حد بدل قبولها
-    كما هي وإرباك بقية المنطق أو إرهاق الموقع المصدر بطلبات مفرطة."""
     try:
         value = int(raw_value)
     except (TypeError, ValueError):
@@ -185,46 +117,24 @@ ENABLE_INCREMENTAL_PUSH = os.environ.get("ENABLE_INCREMENTAL_PUSH", "true").stri
 GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip() or None
 GIT_BRANCH = os.environ.get("GIT_BRANCH", "output").strip() or "output"
 
-# معرّف فريد لهذه التشغيلة تحديدًا (رقم تشغيلة GitHub Actions عادةً، يُمرَّر
-# من الـworkflow). يُستخدم لإنشاء رابط manifest منفصل يحوي فقط فصول هذه
-# التشغيلة — لا يمس manifest.json الرئيسي المتراكم ولا أي صورة قديمة إطلاقًا.
-# لو شُغِّل السكربت محليًا بدون RUN_ID، يُستخدم طابع زمني كبديل فريد.
 RUN_ID = os.environ.get("RUN_ID", "").strip() or f"local-{int(time.time())}"
 RUN_MANIFEST_RELPATH = f"runs/run-{RUN_ID}.json"
 
 IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
 IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
 
-# عدد الفصول التي تُعالَج بالتوازي لبروفايل HTTP المباشر فقط (لا جلسة مشتركة
-# بين الفصول في هذا المسار، فالتوازي آمن وسريع). لا يؤثر على مسار المتصفح،
-# الذي يبقى تسلسليًا كما كان. مسقوف بحد أقصى 10 لتفادي إغراق الموقع المصدر
-# بطلبات متزامنة مفرطة قد تُفعّل حماية أو تحديد معدل.
 HTTP_CONCURRENCY = _clamp_int(os.environ.get("HTTP_CONCURRENCY", "3"), 3, 1, 10, "HTTP_CONCURRENCY")
 
-# تخطي الفصول الموجودة مسبقًا في manifest.json البعيد (بنفس معرّف المانهوا
-# ورقم الفصل ولديها صور فعلية) بدل إعادة تحميلها وضغطها من الصفر. مفيد جدًا
-# عند إعادة تشغيل نفس دفعة الروابط الكبيرة بعد فشل جزئي — يوفر وقتًا وطلبات
-# شبكة حقيقية. يعمل فقط حين GIT_COMMIT_DIR مضبوط (نحتاج قراءة manifest بعيد).
 SKIP_EXISTING_CHAPTERS = os.environ.get("SKIP_EXISTING_CHAPTERS", "true").strip().lower() == "true"
 
-# وضع التشخيص: يوقف كامل خط الإنتاج العادي (تحميل/ضغط/دفع فصول) ويشغّل بدلًا
-# منه فحصًا عميقًا لكل رابط مُدخَل تمهيدًا لبناء بروفايل جديد — انظر الشرح
-# المطوّل أعلى الملف. مقروء كنص وليس '1'/'0' مثل STRICT_DOMAIN_FILTER لأن
-# الـ workflow يمرره كـ ${{ inputs.diagnostic_mode }} مباشرة (نفس أسلوب
-# ENABLE_INCREMENTAL_PUSH و SKIP_EXISTING_CHAPTERS).
 DIAGNOSTIC_MODE = os.environ.get("DIAGNOSTIC_MODE", "false").strip().lower() == "true"
 
 WEBP_HARD_LIMIT = 16000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
-# جلسة requests واحدة معاد استخدامها (بروفايل HTTP فقط) بدل فتح اتصال
-# TCP/TLS جديد لكل طلب — تجمع اتصالات (connection pooling) حقيقية، مهمة
-# خصوصًا مع HTTP_CONCURRENCY > 1 حيث كانت كل صورة/فصل تفتح اتصالًا مستقلًا.
 _HTTP_SESSION = requests.Session()
-_HTTP_ADAPTER = requests.adapters.HTTPAdapter(
-    pool_connections=20, pool_maxsize=20, max_retries=0
-)
+_HTTP_ADAPTER = requests.adapters.HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=0)
 _HTTP_SESSION.mount("http://", _HTTP_ADAPTER)
 _HTTP_SESSION.mount("https://", _HTTP_ADAPTER)
 
@@ -249,11 +159,52 @@ CONTENT_SELECTORS = [
     ".chapter-content img",
 ]
 
-CHALLENGE_MARKERS = [
-    "just a moment", "checking your browser", "attention required",
-    "cf-browser-verification", "ddos protection by", "verifying you are human",
+# عنوان مميز يكفي وحده كمؤشر قوي (Cloudflare يضع عنوانًا مختلفًا بوضوح)
+CHALLENGE_TITLE_MARKERS = [
+    "just a moment", "attention required", "access denied", "ddos protection by",
+]
+# عبارات جسم عامة — تحتاج عبارتين معًا لتفادي إيجابيات كاذبة على مواقع لا
+# علاقة لها بـCloudflare (شفناها فعليًا مع جدار مانع إعلانات على dilar.tube)
+CHALLENGE_BODY_MARKERS = [
+    "checking your browser", "cf-browser-verification", "verifying you are human",
     "enable javascript and cookies",
 ]
+
+# نص رابط/زر "تجاوز جدار مانع الإعلانات"
+ADBLOCK_WALL_TEXT_PATTERN = re.compile(
+    r"continue anyway|proceed anyway|متابعة على أي حال|المتابعة على أي حال|تجاوز والمتابعة",
+    re.I,
+)
+
+# ============================== توقيعات مزوّدي الحماية المعروفة ==============================
+# كل توقيع: (اسم المزوّد المعروض بالتقرير، عبارات نصية تُطابَق على HTML/عنوان/جسم)
+KNOWN_PROTECTION_SIGNATURES = [
+    ("Cloudflare", ["just a moment", "checking your browser", "cf-browser-verification",
+                     "attention required! | cloudflare", "ddos protection by cloudflare"]),
+    ("Cloudflare Turnstile", ["cf-turnstile", "challenges.cloudflare.com/turnstile"]),
+    ("PerimeterX / HUMAN Security", ["pardon our interruption", "px-captcha", "perimeterx", "_px3", "_pxhd"]),
+    ("DataDome", ["datadome", "geo.captcha-delivery.com", "dd_cookie_test"]),
+    ("Imperva / Incapsula", ["incapsula incident id", "_incapsula_resource", "incident id"]),
+    ("Akamai Bot Manager", ["akamai bot manager", "_abck", "ak_bmsc"]),
+    ("hCaptcha", ["hcaptcha.com", "h-captcha"]),
+    ("Google reCAPTCHA", ["recaptcha.net", "g-recaptcha"]),
+    ("Sucuri Firewall", ["sucuri website firewall", "access denied - sucuri"]),
+    ("جدار مانع إعلانات (Adblock Wall)", ["continue anyway", "متابعة على أي حال",
+                                            "disable your ad blocker", "adblock detected",
+                                            "please disable adblock"]),
+]
+
+# نطاقات/مسارات شبكية معروفة لمزوّدي حماية — تُفحص على كل طلب شبكة فعلي أثناء
+# تحميل الصفحة بالمتصفح (دليل مباشر أدق من مطابقة النص وحدها)
+PROTECTION_VENDOR_NETWORK_PATTERNS = {
+    "Cloudflare Challenge": ["challenges.cloudflare.com", "/cdn-cgi/challenge-platform"],
+    "PerimeterX / HUMAN": ["px-cloud.net", "perimeterx.net", "client.px-cloud.net"],
+    "DataDome": ["datadome.co", "geo.captcha-delivery.com"],
+    "Imperva / Incapsula": ["incapsula.com", "imperva.com"],
+    "Akamai Bot Manager": ["akamaized.net"],
+    "hCaptcha": ["hcaptcha.com"],
+    "Google reCAPTCHA": ["google.com/recaptcha", "recaptcha.net"],
+}
 
 COLLECT_IMAGES_JS = """(els, selectors) => els.map(e => {
     const u = e.getAttribute('data-src') || e.getAttribute('data-lazy-src')
@@ -272,48 +223,31 @@ COLLECT_IMAGES_JS = """(els, selectors) => els.map(e => {
     return {url: u, ctx: ctx.toLowerCase(), matched};
 }).filter(x => x.url)"""
 
+
+def classify_protection_signatures(text: str) -> list[str]:
+    """يطابق نصًا (HTML خام، أو عنوان+جسم صفحة متصفح) مقابل توقيعات مزوّدي
+    الحماية المعروفة، ويرجّع أسماء كل من طابق (قد يكون أكثر من واحد)."""
+    low = text.lower()
+    return [name for name, sigs in KNOWN_PROTECTION_SIGNATURES if any(s in low for s in sigs)]
+
+
 # ============================== بروفايلات المواقع ==============================
 SITE_PROFILE = os.environ.get("SITE_PROFILE", "auto").strip().lower()
 
 PROFILES = {
-    "azorafly": {
-        "label": "أزورافلاي",
-        "fetch_mode": "http",
-    },
-    "mangatuk": {
-        "label": "مانجا توك",
-        "fetch_mode": "browser",
-        "do_scroll": False,
-        "do_widget_filter": False,
-    },
-    "mangatime": {
-        "label": "مانجا تايم",
-        "fetch_mode": "browser",
-        "do_scroll": True,
-        "do_widget_filter": True,
-    },
-    "olympustaff": {
-        "label": "أولمبوس ستاف",
-        "fetch_mode": "browser",
-        "do_scroll": False,
-        "do_widget_filter": True,
-    },
+    "azorafly": {"label": "أزورافلاي", "fetch_mode": "http"},
+    "mangatuk": {"label": "مانجا توك", "fetch_mode": "browser", "do_scroll": False, "do_widget_filter": False},
+    "mangatime": {"label": "مانجا تايم", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
+    "olympustaff": {"label": "أولمبوس ستاف", "fetch_mode": "browser", "do_scroll": False, "do_widget_filter": True},
     "manga_starz": {
         "label": "ستار مانجا",
         "fetch_mode": "unsupported",
         "unsupported_reason": (
             "محمي بتحدي Cloudflare كامل يكتشف بصمة الأتمتة حتى مع متصفح "
-            "Chromium حقيقي مؤتمت. لا حل معروف تلقائيًا حاليًا — يحتاج نسخ "
-            "روابط الصور يدويًا من متصفح حقيقي بعد اجتياز التحدي، أو بروكسي "
-            "residential حقيقي (لم يُختبر بعد)."
+            "Chromium حقيقي مؤتمت. لا حل معروف تلقائيًا حاليًا."
         ),
     },
-    "auto": {
-        "label": "تلقائي (عام)",
-        "fetch_mode": "browser",
-        "do_scroll": True,
-        "do_widget_filter": True,
-    },
+    "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
 }
 
 
@@ -331,7 +265,6 @@ def slugify(text: str) -> str:
 
 
 def manga_slug_from_url(url: str) -> tuple[str, str]:
-    """يحاول استخراج (اسم_مانهوا_تقريبي, رقم_الفصل) من بنية الرابط الشائعة."""
     u = urlparse(url)
     parts = [p for p in u.path.split("/") if p]
     chapter_num = None
@@ -368,9 +301,6 @@ def dedupe(urls: list[str]) -> list[str]:
 # ---------------------------- مسار HTTP المباشر (azorafly) ----------------------------
 
 def extract_images_from_html(html: str, base_url: str) -> list[str]:
-    """يستخرج روابط الصور من نص HTML خام دون تنفيذ جافاسكربت. يفضّل noscript
-    (بديل حقيقي للتحميل الكسول)، ثم data-src/data-lazy-src/data-original لكل
-    <img>، وإلا src العادي."""
     noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
     found = []
     for block in noscript_blocks:
@@ -401,9 +331,14 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
     return dedupe(found)
 
 
+def _looks_like_challenge_html(html: str) -> bool:
+    low = html.lower()
+    if any(m in low for m in CHALLENGE_TITLE_MARKERS):
+        return True
+    return sum(1 for m in CHALLENGE_BODY_MARKERS if m in low) >= 2
+
+
 def fetch_via_http_simple_sync(chapter_url: str) -> tuple[list[str], str]:
-    """جلب HTML ثابت بطلب عادي بدون متصفح — كافٍ تمامًا لمواقع مثل أزورافلاي
-    التي لا تستخدم حماية Cloudflare ولا حماية سرقة (hotlink) على الصور."""
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
         resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
@@ -411,7 +346,7 @@ def fetch_via_http_simple_sync(chapter_url: str) -> tuple[list[str], str]:
     except Exception as e:
         return [], f"فشل الطلب المباشر: {e}"
     html = resp.text
-    if any(m in html.lower() for m in CHALLENGE_MARKERS):
+    if _looks_like_challenge_html(html):
         return [], "صفحة تحقق/حماية ظهرت حتى بطلب مباشر — هذا البروفايل غير مناسب لهذا الرابط تحديدًا"
     urls = extract_images_from_html(html, chapter_url)
     if not urls:
@@ -442,18 +377,22 @@ async def fetch_image_bytes_http(img_url: str, referer: str):
     return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer)
 
 
-# ---------------------------- مسار المتصفح (mangatuk / mangatime / auto) ----------------------------
+# ---------------------------- مسار المتصفح (mangatuk / mangatime / olympustaff / auto) ----------------------------
 
 async def looks_like_challenge_page(page) -> bool:
     try:
         title = (await page.title() or "").lower()
+    except Exception:
+        title = ""
+    if any(m in title for m in CHALLENGE_TITLE_MARKERS):
+        return True
+    try:
         body_text = ""
         if await page.query_selector("body"):
             body_text = (await page.inner_text("body"))[:800].lower()
     except Exception:
         return False
-    combined = f"{title} {body_text}"
-    return any(marker in combined for marker in CHALLENGE_MARKERS)
+    return sum(1 for m in CHALLENGE_BODY_MARKERS if m in body_text) >= 2
 
 
 async def count_real_images(page) -> int:
@@ -488,9 +427,53 @@ async def wait_for_real_images(page, max_wait_ms: int, poll_ms: int) -> int:
     return max(last_count, 0)
 
 
+async def dismiss_adblock_wall_timed(page, max_wait_ms: int = 45000) -> dict:
+    """نسخة تشخيصية من كاشف/متجاوِز جدار مانع الإعلانات: تقيس فعليًا (لا
+    تخمين) كم ثانية استغرق الزر ليصبح مرئيًا وغير معطّل، بدل انتظار مدة
+    ثابتة. تُستخدَم بوضع التشخيص فقط لقياس القيمة الحقيقية لكل موقع."""
+    result = {"detected": False, "became_ready_after_sec": None, "clicked": False,
+              "button_snippet": None, "timed_out": False}
+    try:
+        locator = page.get_by_text(ADBLOCK_WALL_TEXT_PATTERN)
+        if await locator.count() == 0:
+            return result
+        result["detected"] = True
+        target = locator.first
+        try:
+            result["button_snippet"] = (await target.evaluate("el => el.outerHTML"))[:300]
+        except Exception:
+            pass
+
+        start = time.monotonic()
+        elapsed_ms, poll_ms, ready = 0, 1000, False
+        while elapsed_ms < max_wait_ms:
+            try:
+                if await target.is_visible() and await target.is_enabled():
+                    ready = True
+                    break
+            except Exception:
+                pass
+            await page.wait_for_timeout(poll_ms)
+            elapsed_ms += poll_ms
+        result["became_ready_after_sec"] = round(time.monotonic() - start, 1)
+        result["timed_out"] = not ready
+
+        try:
+            await target.click(timeout=3000)
+            result["clicked"] = True
+        except Exception:
+            try:
+                await target.evaluate("el => el.click()")
+                result["clicked"] = True
+            except Exception:
+                result["clicked"] = False
+        await page.wait_for_timeout(1200)
+    except Exception as e:
+        result["error"] = str(e)
+    return result
+
+
 async def collect_images_while_scrolling(page, content_selectors: list[str]) -> list[dict]:
-    """تمرير تراكمي كامل (مطلوب فقط لمواقع فيها تحميل كسول حقيقي/virtualization
-    مثل mangatime — do_scroll=False يتخطى هذا كليًا لصالح لقطة واحدة سريعة)."""
     seen: dict[str, dict] = {}
 
     def merge(items):
@@ -503,6 +486,9 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
             else:
                 seen[u]["matched"].update(it.get("matched", []))
 
+    def content_matched_count() -> int:
+        return sum(1 for v in seen.values() if v["matched"])
+
     try:
         await page.evaluate("window.scrollTo(0, 0)")
     except Exception:
@@ -511,6 +497,9 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
 
     start = time.monotonic()
     stable_rounds = 0
+    content_stable_rounds = 0
+    last_content_count = -1
+    CONTENT_STABLE_ROUNDS_REQUIRED = 4
     for _ in range(SCROLL_MAX_STEPS):
         if time.monotonic() - start > SCROLL_MAX_TOTAL_SEC:
             print(f"  ⏱️ توقف التمرير عند السقف الزمني ({SCROLL_MAX_TOTAL_SEC}ث) — استخدام ما جُمع حتى الآن")
@@ -522,6 +511,13 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
         before = len(seen)
         merge(items)
         grew = len(seen) > before
+
+        cur_content = content_matched_count()
+        if cur_content > 0 and cur_content == last_content_count:
+            content_stable_rounds += 1
+        else:
+            content_stable_rounds = 0
+        last_content_count = cur_content
 
         try:
             reached_bottom = await page.evaluate(
@@ -536,6 +532,10 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
                 break
         else:
             stable_rounds = 0
+
+        if content_stable_rounds >= CONTENT_STABLE_ROUNDS_REQUIRED:
+            print(f"  ⏱️ استقرت صور محتوى القراءة الفعلية ({cur_content}) — إيقاف التمرير مبكرًا")
+            break
 
         if not reached_bottom:
             try:
@@ -560,9 +560,6 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
 
 
 async def snapshot_images(page, content_selectors: list[str]) -> list[dict]:
-    """لقطة واحدة سريعة (بدون تمرير) — تكفي لمواقع لا تستخدم تحميلًا كسولًا
-    حقيقيًا مرتبطًا بالتمرير (mangatuk / olympustaff)، وأسرع بكثير من التمرير
-    التراكمي."""
     try:
         items = await page.eval_on_selector_all("img", COLLECT_IMAGES_JS, content_selectors)
     except Exception:
@@ -633,8 +630,6 @@ async def extract_image_urls(page, base_url: str, do_scroll: bool, do_widget_fil
 
 
 async def fetch_image_bytes(context, img_url: str, referer: str):
-    """تحميل عبر جلسة المتصفح نفسها (كوكيز حقيقية) — ضروري لمواقع مثل
-    mangatuk التي ترفض تحميل الصور من خارج جلسة متصفح حقيقية."""
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
@@ -658,14 +653,10 @@ async def fetch_image_bytes(context, img_url: str, referer: str):
 
 async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dict):
     context = await browser.new_context(
-        user_agent=UA,
-        viewport={"width": 1280, "height": 1000},
-        locale="en-US",
+        user_agent=UA, viewport={"width": 1280, "height": 1000}, locale="en-US",
         extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
     )
-    await context.add_init_script(
-        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-    )
+    await context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
     page = await context.new_page()
 
     navigated = False
@@ -688,17 +679,12 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
     print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
 
     t0 = time.monotonic()
-    # .get() بقيم افتراضية آمنة: لو أُضيف بروفايل جديد ونُسي أحد المفتاحين لا
-    # ينهار السكربت بـKeyError — يفترض السلوك الأكثر أمانًا (تمرير + فلترة).
     do_scroll = profile.get("do_scroll", True)
     do_widget_filter = profile.get("do_widget_filter", True)
     image_urls = await extract_image_urls(page, chapter_url, do_scroll, do_widget_filter)
     print(f"  ⏱️ زمن الاستخراج: {time.monotonic() - t0:.1f}ث")
     await page.close()
 
-    # عام لكل المواقع (وليس خاصًا ببروفايل بعينه): الحكم بالنجاح على وجود صور
-    # مستخرجة فعليًا، لا على إطلاق حدث goto بذاته — حل مشكلة الفصل الأول في
-    # mangatuk حيث كانت الصفحة ترسم محتواها الحقيقي كاملًا رغم تعلّق الحدث
     if not image_urls:
         await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
@@ -714,9 +700,6 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
 def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
 
-    # إصلاح: تحويل صور P mode (لوحة ألوان) إلى RGB مباشرة كان يُفقد الشفافية
-    # لو كانت موجودة فعليًا (GIF/PNG مفهرسة بقناة شفافية). الآن نحافظ عليها
-    # كـRGBA عند وجود معلومات شفافية حقيقية، وإلا نحوّل لـRGB كالسابق.
     if img.mode == "P":
         img = img.convert("RGBA") if "transparency" in img.info else img.convert("RGB")
     elif img.mode == "CMYK":
@@ -743,10 +726,6 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
 
 
 def build_run_manifest(results: list) -> dict:
-    """يبني manifest مستقل يحوي فقط فصول هذه التشغيلة (results الحالية)، بدون
-    أي دمج مع manifest.json الرئيسي البعيد أو المحلي — رابط منفصل تمامًا يعرض
-    فقط ما تم العمل عليه الآن، بينما يبقى الأرشيف الرئيسي (manifest.json
-    وكل الصور المخزنة من تشغيلات سابقة) دون أي حذف أو تعديل."""
     return merge_manifest_dict({}, results)
 
 
@@ -770,24 +749,12 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
                            for k, v in (base or {}).get("manga", {}).items()}}
     for r in results:
         mid = r["manga_id"]
-        entry = manifest["manga"].setdefault(mid, {
-            "name": mid.split("__", 1)[-1].replace("-", " "),
-            "chapters": [],
-        })
+        entry = manifest["manga"].setdefault(mid, {"name": mid.split("__", 1)[-1].replace("-", " "), "chapters": []})
         chNum = float(r["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", r["chapter_num"]) else 0
         images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
         new_chapter = {
-            "label": f"الفصل {r['chapter_num']}",
-            # المفتاح الحقيقي لمنع التكرار هو النص الخام لرقم الفصل، لا chNum
-            # المُشتق. إصلاح خلل حقيقي: أي فصل برقم غير عددي بحت (مثل "extra"
-            # أو "omake" أو حتى "5b") يحصل جميعها على chNum=0، وكانت المقارنة
-            # القديمة (ch.get("chNum") == chNum) تجعل كل فصل جديد من هذا النوع
-            # يستبدل الفصل غير العددي السابق بصمت ويفقد صوره من manifest.json
-            # رغم بقائها فعليًا على القرص/المستودع.
-            "num": r["chapter_num"],
-            "chNum": chNum,
-            "sourceUrl": r["source_url"],
-            "images": images_cdn,
+            "label": f"الفصل {r['chapter_num']}", "num": r["chapter_num"], "chNum": chNum,
+            "sourceUrl": r["source_url"], "images": images_cdn,
         }
         replaced = False
         for idx, ch in enumerate(entry["chapters"]):
@@ -798,9 +765,6 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
                     replaced = True
                     break
             else:
-                # توافق خلفي: فصول مدفوعة قبل هذا الإصلاح لا تملك حقل "num"
-                # بعد — تُقارَن بـchNum كما كان سابقًا، لمرة واحدة فقط إلى أن
-                # تُعاد كتابتها بالحقل الجديد.
                 if ch.get("chNum") == chNum:
                     entry["chapters"][idx] = new_chapter
                     replaced = True
@@ -809,8 +773,6 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
             entry["chapters"].append(new_chapter)
 
     for mid in manifest["manga"]:
-        # ترتيب ثانوي بنص "num" لضمان ترتيب ثابت (deterministic) بين عدة
-        # فصول غير عددية تتشارك chNum=0، بدل ترتيب عشوائي حسب ترتيب الإدراج.
         manifest["manga"][mid]["chapters"].sort(key=lambda c: (c["chNum"], str(c.get("num", ""))))
     return manifest
 
@@ -830,7 +792,6 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
         push = _run_git(["push", "origin", f"HEAD:{branch}"], commit_dir)
         if push.returncode == 0:
             return True, "تم الدفع"
-
         _run_git(["fetch", "origin", branch], commit_dir)
         _run_git(["reset", f"origin/{branch}"], commit_dir)
         _run_git(["add", "output"], commit_dir)
@@ -839,7 +800,6 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
             return True, "أصبحت التغييرات مطابقة لأحدث نسخة على البعيد أصلًا"
         _run_git(["commit", "-m", message], commit_dir)
         time.sleep(attempt * 2)
-
     return False, "فشل الدفع بعد عدة محاولات (سيُعالجه الدفع الاحتياطي النهائي بالـ workflow إن وُجد)"
 
 
@@ -851,16 +811,11 @@ async def push_now(message: str) -> None:
 
 
 async def get_chapter_images(browser, chapter_url: str, profile: dict):
-    """يعيد (context_أو_None, روابط_الصور, سبب_الفشل) بحسب أسلوب الجلب في
-    البروفايل — مسار HTTP مباشر لا يحتاج/ينشئ أي context متصفح إطلاقًا."""
     fetch_mode = profile.get("fetch_mode", "browser")
     if fetch_mode == "http":
         fail_reason = ""
         for attempt in range(1, RETRY_PER_CHAPTER + 1):
             if attempt > 1:
-                # إصلاح: كانت إعادة المحاولة تحدث فورًا بلا أي تأخير — تأخير
-                # متصاعد بسيط يقلل فرصة الاصطدام بنفس سبب الفشل مباشرة (حدّ
-                # معدل مؤقت من الموقع، انقطاع شبكة عابر، إلخ).
                 delay = 1.5 * attempt
                 print(f"  🔁 إعادة محاولة طلب مباشر #{attempt} (بعد {delay:.1f}ث)")
                 await asyncio.sleep(delay)
@@ -946,43 +901,34 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     if not saved_paths:
         return None
 
-    return {
-        "manga_id": manga_id,
-        "chapter_num": chapter_num,
-        "source_url": chapter_url,
-        "image_paths": saved_paths,
-    }
+    return {"manga_id": manga_id, "chapter_num": chapter_num, "source_url": chapter_url, "image_paths": saved_paths}
 
 
-# ============================== وضع التشخيص ==============================
+# ============================== وضع التشخيص (موسّع) ==============================
 
 def _static_probe_sync(url: str) -> dict:
-    """فحص HTTP خام بدون متصفح إطلاقًا — نفس أسلوب بروفايل azorafly تحديدًا،
-    هنا فقط بغرض التشخيص/المقارنة: يجمع كل مؤشر يفيد لتحديد هل هذا الموقع
-    يمكن معاملته كـazorafly (خفيف وسريع) أم يحتاج متصفحًا كاملًا فعلًا."""
     result = {
-        "status_code": None,
-        "headers_of_interest": {},
-        "challenge_detected": False,
-        "images_via_noscript": 0,
-        "images_via_data_attr": 0,
-        "images_via_plain_src": 0,
-        "sample_image_urls": [],
-        "error": None,
+        "status_code": None, "headers_of_interest": {}, "challenge_detected": False,
+        "protection_signatures": [], "images_via_noscript": 0, "images_via_data_attr": 0,
+        "images_via_plain_src": 0, "sample_image_urls": [], "raw_cookies_received": [], "error": None,
     }
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
         resp = _HTTP_SESSION.get(url, headers=headers, timeout=20)
         result["status_code"] = resp.status_code
-        for h in ("server", "cf-ray", "cf-mitigated", "content-type", "set-cookie"):
+        # ترويسات موسّعة: مؤشرات مباشرة لمزوّدي حماية معروفين تحديدًا
+        for h in ("server", "cf-ray", "cf-mitigated", "cf-cache-status", "content-type",
+                   "set-cookie", "retry-after", "x-sucuri-id", "x-datadome", "x-iinfo"):
             if h in resp.headers:
-                result["headers_of_interest"][h] = resp.headers[h][:120]
+                result["headers_of_interest"][h] = resp.headers[h][:150]
+        result["raw_cookies_received"] = list(resp.cookies.keys())
         html = resp.text
     except Exception as e:
         result["error"] = f"{e}"
         return result
 
-    result["challenge_detected"] = any(m in html.lower() for m in CHALLENGE_MARKERS)
+    result["challenge_detected"] = _looks_like_challenge_html(html)
+    result["protection_signatures"] = classify_protection_signatures(html)
 
     noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
     ns_imgs = []
@@ -1016,36 +962,90 @@ def _static_probe_sync(url: str) -> dict:
     return result
 
 
-async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
-    """فحص متصفح كامل بثلاث لحظات قياس مختلفة لعدّ الصور، لمعرفة هل التمرير
-    التراكمي مفيد فعلاً هنا أم لا (منحنى نمو العدد)، بالإضافة لمطابقة
-    المحددات الحالية وفلترة الودجات وتوزيع النطاقات ولقطة شاشة مرجعية."""
-    result = {
-        "navigated": False,
-        "title": None,
-        "challenge_detected": False,
-        "images_at_t0": None,
-        "images_after_wait": None,
-        "images_after_scroll": None,
-        "selector_match_counts": {},
-        "unmatched_img_count": 0,
-        "widget_excluded_count": 0,
-        "widget_excluded_samples": [],
-        "domain_distribution": {},
-        "screenshot_path": None,
-        "hotlink_probe": None,
-        "error": None,
+def _rate_limit_probe_sync(url: str, n: int = 4) -> dict:
+    """يرسل عدة طلبات HTTP سريعة متتالية لنفس الرابط ويرصد 429/403 أو
+    ترويسة Retry-After — يفيد بتحديد HTTP_CONCURRENCY آمن لهذا الموقع
+    تحديدًا بدل التخمين. عدد محدود عمدًا (4) لتفادي إرهاق الموقع المصدر."""
+    statuses = []
+    retry_after = None
+    t0 = time.monotonic()
+    for _ in range(n):
+        try:
+            r = _HTTP_SESSION.get(url, headers={"User-Agent": UA}, timeout=15)
+            statuses.append(r.status_code)
+            if "retry-after" in r.headers:
+                retry_after = r.headers["retry-after"]
+        except Exception as e:
+            statuses.append(f"error:{e}")
+    elapsed = round(time.monotonic() - t0, 2)
+    blocked = any(isinstance(s, int) and s in (429, 403) for s in statuses)
+    return {
+        "requests_sent": n, "elapsed_sec": elapsed, "status_codes": statuses,
+        "rate_limited_detected": blocked, "retry_after_header": retry_after,
     }
+
+
+async def _cookie_reuse_probe(context, url: str) -> dict:
+    """يختبر إعادة استخدام كوكيز جلسة المتصفح (بعد حل أي تحدٍّ) بطلب HTTP
+    عادي بدون متصفح لاحقًا — يجاوب سؤالًا عمليًا مهمًا: هل استراتيجية هجينة
+    (حل التحدي مرة واحدة بالمتصفح، ثم HTTP سريع لكل الفصول التالية) ممكنة
+    لهذا الموقع، أم يحتاج متصفحًا كاملًا لكل فصل بلا استثناء؟"""
+    try:
+        cookies = await context.cookies()
+    except Exception:
+        cookies = []
+    if not cookies:
+        return {"tested": False, "reason": "لا كوكيز بالجلسة لاختبارها"}
+
+    jar = requests.cookies.RequestsCookieJar()
+    for c in cookies:
+        try:
+            jar.set(c["name"], c["value"], domain=c.get("domain", "") or "", path=c.get("path", "/") or "/")
+        except Exception:
+            continue
+
+    try:
+        resp = await asyncio.to_thread(
+            lambda: _HTTP_SESSION.get(url, headers={"User-Agent": UA}, cookies=jar, timeout=20)
+        )
+        success = resp.ok and not _looks_like_challenge_html(resp.text)
+        return {
+            "tested": True, "success": success, "status_code": resp.status_code,
+            "cookie_count_reused": len(cookies),
+        }
+    except Exception as e:
+        return {"tested": True, "success": False, "error": str(e), "cookie_count_reused": len(cookies)}
+
+
+async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
+    result = {
+        "navigated": False, "title": None, "challenge_detected": False, "protection_signatures": [],
+        "images_at_t0": None, "images_after_wait": None, "images_after_scroll": None,
+        "selector_match_counts": {}, "unmatched_img_count": 0, "widget_excluded_count": 0,
+        "widget_excluded_samples": [], "domain_distribution": {}, "screenshot_path": None,
+        "hotlink_probe": None, "network_vendor_hits": {}, "adblock_wall": None,
+        "cookie_reuse_probe": None, "error": None,
+    }
+
     context = await browser.new_context(
-        user_agent=UA,
-        viewport={"width": 1280, "height": 1000},
-        locale="en-US",
+        user_agent=UA, viewport={"width": 1280, "height": 1000}, locale="en-US",
         extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
     )
-    await context.add_init_script(
-        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-    )
+    await context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
     page = await context.new_page()
+
+    # رصد طلبات الشبكة الفعلية أثناء تحميل الصفحة مقابل نطاقات مزوّدي حماية
+    # معروفين — دليل مباشر أدق من مطابقة النص وحدها (يلتقط أيضًا سكربتات
+    # تُحمَّل بصمت بدون أي أثر نصي ظاهر بالصفحة النهائية)
+    vendor_hits: dict[str, set] = {}
+
+    def _on_request(request):
+        url_l = request.url.lower()
+        for vendor, patterns in PROTECTION_VENDOR_NETWORK_PATTERNS.items():
+            if any(p in url_l for p in patterns):
+                vendor_hits.setdefault(vendor, set()).add(request.url[:160])
+
+    page.on("request", _on_request)
 
     try:
         await page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
@@ -1065,6 +1065,17 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
             await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
+
+    # جدار مانع إعلانات: كشف + قياس فعلي لمدة العدّ التنازلي + تجاوز
+    result["adblock_wall"] = await dismiss_adblock_wall_timed(page)
+
+    try:
+        body_text = ""
+        if await page.query_selector("body"):
+            body_text = (await page.inner_text("body"))[:1500]
+        result["protection_signatures"] = classify_protection_signatures((result["title"] or "") + " " + body_text)
+    except Exception:
+        pass
 
     result["images_at_t0"] = await count_real_images(page)
     result["images_after_wait"] = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
@@ -1111,21 +1122,24 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
         raw_browser, reason_browser = await fetch_image_bytes(context, sample_url, url)
         result["hotlink_probe"] = {
             "sample_url": sample_url,
-            "direct_http_success": raw_http is not None,
-            "direct_http_size": len(raw_http) if raw_http else 0,
+            "direct_http_success": raw_http is not None, "direct_http_size": len(raw_http) if raw_http else 0,
             "direct_http_fail_reason": reason_http,
-            "browser_session_success": raw_browser is not None,
-            "browser_session_size": len(raw_browser) if raw_browser else 0,
+            "browser_session_success": raw_browser is not None, "browser_session_size": len(raw_browser) if raw_browser else 0,
             "browser_session_fail_reason": reason_browser,
         }
+
+    # اختبار إعادة استخدام كوكيز الجلسة بطلب HTTP عادي — بعد كل ما سبق (حتى
+    # يشمل أي كوكيز نتجت عن تجاوز جدار/تحدٍّ)
+    result["cookie_reuse_probe"] = await _cookie_reuse_probe(context, url)
+
+    page.remove_listener("request", _on_request)
+    result["network_vendor_hits"] = {k: sorted(v)[:3] for k, v in vendor_hits.items()}
 
     await context.close()
     return result
 
 
 def _recommend_profile(static_r: dict, browser_r: dict) -> dict:
-    """توصية آلية بإعدادات بروفايل جديد بناءً على نتائج الفحصين، بدل تخمين
-    fetch_mode/do_scroll/do_widget_filter يدويًا بالتجربة والخطأ."""
     reasons = []
     fetch_mode = "browser"
 
@@ -1138,14 +1152,29 @@ def _recommend_profile(static_r: dict, browser_r: dict) -> dict:
 
     if static_total >= 3 and not static_r.get("challenge_detected") and hp and hp["direct_http_success"]:
         fetch_mode = "http"
-        reasons.append("الفحص الثابت (بدون متصفح) وجد صورًا كافية في HTML الخام، ولم تظهر صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة")
+        reasons.append("الفحص الثابت وجد صورًا كافية بالـHTML الخام، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة")
     else:
         if static_r.get("challenge_detected"):
-            reasons.append("صفحة تحقق/حماية ظهرت حتى في الطلب الثابت — يحتاج متصفحًا حقيقيًا على الأقل")
+            sigs = static_r.get("protection_signatures") or browser_r.get("protection_signatures") or []
+            sig_txt = f" ({', '.join(sigs)})" if sigs else ""
+            reasons.append(f"صفحة تحقق/حماية ظهرت حتى بالطلب الثابت{sig_txt} — يحتاج متصفحًا حقيقيًا على الأقل")
         if static_total < 3:
             reasons.append("HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل")
         if hp and not hp["direct_http_success"] and hp["browser_session_success"]:
             reasons.append("صورة العينة رفضت التحميل المباشر بدون جلسة، ونجحت فقط عبر جلسة متصفح — حماية سرقة (hotlink) حقيقية")
+
+    cr = browser_r.get("cookie_reuse_probe") or {}
+    if fetch_mode == "browser" and cr.get("tested") and cr.get("success"):
+        reasons.append(
+            "⭐ اكتشاف مهم: إعادة استخدام كوكيز جلسة المتصفح نجحت بطلب HTTP عادي لاحقًا — "
+            "استراتيجية هجينة (حل التحدي مرة واحدة بمتصفح، ثم HTTP سريع لبقية الفصول) ممكنة "
+            "نظريًا هنا، رغم أن fetch_mode='browser' هو الخيار الآمن المتاح حاليًا بالكود"
+        )
+
+    aw = browser_r.get("adblock_wall") or {}
+    if aw.get("detected"):
+        wait_txt = f"{aw.get('became_ready_after_sec')}ث" if aw.get("became_ready_after_sec") is not None else "غير محدد"
+        reasons.append(f"جدار مانع إعلانات مكتشَف — استغرق زر التجاوز {wait_txt} ليصبح جاهزًا فعليًا")
 
     t0 = browser_r.get("images_at_t0") or 0
     after_scroll = browser_r.get("images_after_scroll") or 0
@@ -1153,9 +1182,7 @@ def _recommend_profile(static_r: dict, browser_r: dict) -> dict:
     do_widget_filter = (browser_r.get("widget_excluded_count") or 0) > 0
 
     return {
-        "fetch_mode": fetch_mode,
-        "do_scroll": do_scroll,
-        "do_widget_filter": do_widget_filter,
+        "fetch_mode": fetch_mode, "do_scroll": do_scroll, "do_widget_filter": do_widget_filter,
         "reasons": reasons,
     }
 
@@ -1175,28 +1202,40 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
         if static_r["headers_of_interest"]:
             print(f"   ترويسات ملفتة: {static_r['headers_of_interest']}")
         print(f"   صفحة تحقق/حماية مكتشفة: {'نعم ⚠️' if static_r['challenge_detected'] else 'لا'}")
+        if static_r["protection_signatures"]:
+            print(f"   🛡️ مزوّد الحماية المُصنَّف: {', '.join(static_r['protection_signatures'])}")
         print(f"   صور عبر noscript: {static_r['images_via_noscript']} | عبر data-src: {static_r['images_via_data_attr']} | عبر src عادي: {static_r['images_via_plain_src']}")
         if static_r["sample_image_urls"]:
             print("   عينة روابط صور من HTML الثابت:")
             for u in static_r["sample_image_urls"]:
                 print(f"     - {u}")
 
-    print("② فحص متصفح كامل (تحميل + انتظار + تمرير تراكمي)...")
+    print("② فحص متصفح كامل (تحميل + جدار إعلانات + انتظار + تمرير تراكمي)...")
     browser_r = await _browser_probe(browser, url, diag_dir, slug)
     if browser_r["error"]:
         print(f"   ⚠️ {browser_r['error']}")
     print(f"   عنوان الصفحة: {browser_r['title']!r}")
     print(f"   صفحة تحقق/حماية مكتشفة عبر المتصفح: {'نعم ⚠️' if browser_r['challenge_detected'] else 'لا'}")
-    print(f"   منحنى نمو عدد الصور — عند أول لحظة: {browser_r['images_at_t0']} → بعد الانتظار العادي: {browser_r['images_after_wait']} → بعد تمرير تراكمي كامل: {browser_r['images_after_scroll']}")
-    print(f"   مطابقة المحددات الحالية (CONTENT_SELECTORS): {browser_r['selector_match_counts']}")
-    print(f"   صور لا تطابق أي محدد معروف حاليًا: {browser_r['unmatched_img_count']}" +
-          ("  ← يُرجَّح الحاجة لإضافة محدد CSS جديد" if browser_r['unmatched_img_count'] else ""))
+    if browser_r["protection_signatures"]:
+        print(f"   🛡️ مزوّد الحماية المُصنَّف (متصفح): {', '.join(browser_r['protection_signatures'])}")
+    if browser_r["network_vendor_hits"]:
+        print("   🌐 طلبات شبكة مطابقة لمزوّدي حماية معروفين (دليل مباشر):")
+        for vendor, samples in browser_r["network_vendor_hits"].items():
+            print(f"     - {vendor}: {samples}")
+    aw = browser_r.get("adblock_wall") or {}
+    if aw.get("detected"):
+        status = "⏱️ لم يصبح جاهزًا خلال المهلة القصوى" if aw.get("timed_out") else f"جاهز بعد {aw.get('became_ready_after_sec')}ث"
+        print(f"   🧱 جدار مانع إعلانات مكتشَف — {status} — تم الضغط: {'نعم' if aw.get('clicked') else 'لا'}")
+    print(f"   منحنى نمو عدد الصور — أول لحظة: {browser_r['images_at_t0']} → بعد الانتظار: {browser_r['images_after_wait']} → بعد التمرير: {browser_r['images_after_scroll']}")
+    print(f"   مطابقة المحددات الحالية: {browser_r['selector_match_counts']}")
+    print(f"   صور لا تطابق أي محدد معروف: {browser_r['unmatched_img_count']}" +
+          ("  ← يُرجَّح الحاجة لمحدد CSS جديد" if browser_r['unmatched_img_count'] else ""))
     if browser_r["widget_excluded_count"]:
-        print(f"   🧹 فلتر الودجات استبعد {browser_r['widget_excluded_count']} صورة — عينات من السياق المستبعَد: {browser_r['widget_excluded_samples']}")
+        print(f"   🧹 فلتر الودجات استبعد {browser_r['widget_excluded_count']} صورة — عينات: {browser_r['widget_excluded_samples']}")
     else:
-        print("   🧹 فلتر الودجات لم يستبعد أي صورة (قد يكون غير ضروري لهذا الموقع)")
+        print("   🧹 فلتر الودجات لم يستبعد أي صورة (قد يكون غير ضروري)")
     if browser_r["domain_distribution"]:
-        print(f"   توزيع النطاقات بين روابط الصور: {browser_r['domain_distribution']}")
+        print(f"   توزيع النطاقات: {browser_r['domain_distribution']}")
 
     hp = browser_r.get("hotlink_probe")
     if hp:
@@ -1210,20 +1249,33 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
             session_line += f" — السبب: {hp['browser_session_fail_reason']}"
         print(session_line)
     else:
-        print("③ لم يتوفر رابط صورة عينة لفحص حماية السرقة (لم تُستخرج أي صورة من الصفحة أصلًا)")
+        print("③ لم يتوفر رابط صورة عينة لفحص حماية السرقة")
+
+    cr = browser_r.get("cookie_reuse_probe") or {}
+    print("④ اختبار إعادة استخدام كوكيز الجلسة بطلب HTTP عادي...")
+    if not cr.get("tested"):
+        print(f"   لم يُختبَر: {cr.get('reason', '—')}")
+    else:
+        outcome = "✅ نجح — قد تصلح استراتيجية هجينة (حل مرة واحدة + HTTP لاحقًا)" if cr.get("success") else "❌ فشل — يحتاج متصفحًا لكل فصل"
+        print(f"   {outcome} (status={cr.get('status_code')}, كوكيز مُعاد استخدامها: {cr.get('cookie_count_reused')})")
+
+    print("⑤ فحص تحديد المعدل (Rate Limiting) — 4 طلبات سريعة متتالية...")
+    rl = await asyncio.to_thread(_rate_limit_probe_sync, url)
+    print(f"   الحالات: {rl['status_codes']} خلال {rl['elapsed_sec']}ث — تحديد معدل مكتشَف: {'نعم ⚠️' if rl['rate_limited_detected'] else 'لا'}"
+          + (f" — Retry-After: {rl['retry_after_header']}" if rl['retry_after_header'] else ""))
 
     if browser_r["screenshot_path"]:
         print(f"   🖼️ لقطة شاشة مرجعية محفوظة: {browser_r['screenshot_path']}")
 
     recommendation = _recommend_profile(static_r, browser_r)
-    print("④ التوصية المقترحة لبروفايل جديد:")
+    print("⑥ التوصية المقترحة لبروفايل جديد:")
     print(f"   fetch_mode المقترح: {recommendation['fetch_mode']}")
     if recommendation["fetch_mode"] == "browser":
         print(f"   do_scroll المقترح: {recommendation['do_scroll']}")
         print(f"   do_widget_filter المقترح: {recommendation['do_widget_filter']}")
     for reason in recommendation["reasons"]:
         print(f"   • {reason}")
-    print("   جاهز للصق داخل قاموس PROFILES أعلى الملف:")
+    print("   جاهز للصق داخل قاموس PROFILES:")
     if recommendation["fetch_mode"] == "http":
         print('   "اسم_الموقع": {"label": "...", "fetch_mode": "http"},')
     else:
@@ -1234,10 +1286,8 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
     print("═" * 60)
 
     report = {
-        "url": url,
-        "static_probe": static_r,
-        "browser_probe": browser_r,
-        "recommendation": recommendation,
+        "url": url, "static_probe": static_r, "browser_probe": browser_r,
+        "rate_limit_probe": rl, "recommendation": recommendation,
     }
     (diag_dir / f"{slug}-report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
@@ -1246,9 +1296,9 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
 
 
 async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
-    print("🔬 وضع التشخيص مفعّل — لن يُنزَّل أو يُضغط أي فصل فعليًا، ولن يُستخدم اختيار الموقع المصدر إطلاقًا")
+    print("🔬 وضع التشخيص مفعّل (موسّع) — لن يُنزَّل أو يُضغط أي فصل فعليًا، ولن يُستخدم اختيار الموقع المصدر إطلاقًا")
     if len(chapter_urls) > 3:
-        print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط لوضع التشخيص (كل رابط يفتح متصفحًا كاملًا ويطيل زمن التشغيلة). سيُتابَع بكل الروابط رغم ذلك")
+        print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا ويشغّل 5 مراحل فحص). سيُتابَع بكل الروابط رغم ذلك")
 
     diag_dir = OUTPUT_DIR / "diagnostics"
     diag_dir.mkdir(parents=True, exist_ok=True)
@@ -1285,11 +1335,6 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
 async def main():
     raw_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
 
-    # إصلاح: رابط مكرر في المدخلات لم يكن يُستبعد. مع HTTP_CONCURRENCY > 1 هذا
-    # ليس مجرد هدر — رابطان متطابقان ينتجان نفس manga_id/chapter_num، فتُعالَج
-    # نسختان بالتوازي وتكتبان لنفس مجلد الفصل في نفس اللحظة (تعارض كتابة ملفات
-    # فعلي، لا نظري). تسلسليًا (مسار المتصفح) كان هدر وقت فقط، لكن يستحق
-    # الإصلاح في كل الحالات.
     seen, chapter_urls, dup_count = set(), [], 0
     for u in raw_urls:
         if u in seen:
@@ -1307,9 +1352,6 @@ async def main():
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # وضع التشخيص مستقل تمامًا عن بقية خط الإنتاج ويتجاهل بروفايل الموقع
-    # المختار عمدًا (بما فيه "manga_starz" غير المدعوم) — الهدف بالتحديد هو
-    # فحص موقع ليس له بروفايل صحيح بعد.
     if DIAGNOSTIC_MODE:
         await run_diagnostic_mode(chapter_urls)
         return
@@ -1327,11 +1369,6 @@ async def main():
     if fetch_mode == "http":
         print(f"⚙️ التوازي (HTTP فقط): {HTTP_CONCURRENCY} فصل بالتوازي")
 
-    # -------- تخطي الفصول الموجودة مسبقًا في manifest.json البعيد --------
-    # تحسين أداء عند إعادة تشغيل نفس دفعة الروابط (شائع بعد فشل جزئي أو
-    # لإضافة فصول جديدة لنفس الأرشيف): فصل محفوظ فعليًا بصوره لا يُعاد تحميله
-    # وضغطه من الصفر — توفير شبكة ووقت حقيقيين، خصوصًا لفصول mangatuk/mangatime
-    # الطويلة (مئات الصور عبر متصفح).
     existing_keys: set[tuple[str, str]] = set()
     if GIT_COMMIT_DIR and SKIP_EXISTING_CHAPTERS:
         remote_manifest = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
@@ -1359,13 +1396,8 @@ async def main():
         for u in skipped_urls:
             print(f"   - {u}")
 
-    # نتائج هذه التشغيلة المتراكمة حتى الآن — إصلاح: الدفع التدريجي يدمج
-    # دائمًا (بعيد + كل هذه القائمة)، لا (بعيد + الفصل الحالي فقط)، حتى لا
-    # يختفي فصل ناجح سابقًا لو فشل دفعه تحديدًا مؤقتًا.
     results: list = []
     failed_urls: list[str] = []
-    # قفل واحد مشترك لكل عمليات git (قراءة/دمج/كتابة/دفع) — ضروري خصوصًا مع
-    # معالجة فصول HTTP بالتوازي كي لا تتزاحم عدة عمليات commit في نفس اللحظة.
     git_lock = asyncio.Lock()
 
     async def handle_result(url, result):
@@ -1373,9 +1405,6 @@ async def main():
             failed_urls.append(url)
             return
         results.append(result)
-        # manifest التشغيلة الحالية يُكتب محليًا دومًا (بغض النظر عن الدفع
-        # التدريجي) — يعكس فقط فصول هذه التشغيلة حتى هذه اللحظة، ولا يُقرأ
-        # أو يُدمَج مع أي نسخة بعيدة، فهو ملف مستقل تمامًا عن manifest.json.
         run_manifest_path = OUTPUT_DIR / RUN_MANIFEST_RELPATH
         run_manifest_path.parent.mkdir(parents=True, exist_ok=True)
         run_manifest_path.write_text(
@@ -1391,9 +1420,6 @@ async def main():
                 await push_now(f"إضافة {result['manga_id']} - الفصل {result['chapter_num']}")
 
     async def run_chapter_safe(browser, url, index, total, profile):
-        # إصلاح: عزل كل فصل بـtry/except — خطأ غير متوقع في فصل واحد (عطل
-        # Playwright، استثناء شبكة نادر، إلخ) لم يعد يُسقط بقية الفصول ولا
-        # نتائجها المتراكمة، حتى لو كان الدفع التدريجي مُعطَّلًا.
         try:
             return await process_chapter(browser, url, index, total, profile)
         except Exception as e:
@@ -1402,8 +1428,6 @@ async def main():
 
     total = len(chapter_urls)
     if fetch_mode == "http":
-        # لا حاجة لإطلاق Chromium إطلاقًا لهذا البروفايل — توفير وقت تشغيل حقيقي.
-        # فصوله مستقلة تمامًا (لا جلسة/كوكيز مشتركة)، فتُعالَج بالتوازي.
         print("🚀 بروفايل HTTP مباشر — لن يُطلَق متصفح Chromium لهذه التشغيلة")
         sem = asyncio.Semaphore(HTTP_CONCURRENCY)
 
@@ -1437,9 +1461,6 @@ async def main():
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    # يُكتب دومًا في النهاية أيضًا — يضمن وجود الرابط حتى لو كان الدفع
-    # التدريجي مُعطَّلًا (لم يُكتب أثناء المعالجة)، أو حتى لو فشلت كل الفصول
-    # (عندها يحوي قوائم فارغة، لكن الرابط يبقى موجودًا ومتسقًا لهذه التشغيلة).
     run_manifest_path = OUTPUT_DIR / RUN_MANIFEST_RELPATH
     run_manifest_path.parent.mkdir(parents=True, exist_ok=True)
     run_manifest_path.write_text(
@@ -1450,7 +1471,6 @@ async def main():
         ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تحديث manifest.json ونتائج التشغيل")
         print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
 
-    # -------------------------- ملخص نهائي --------------------------
     print("\n" + "=" * 50)
     print("📊 ملخص التشغيلة")
     print(f"  ✅ نجح: {len(results)} فصل")
@@ -1461,14 +1481,10 @@ async def main():
         for u in failed_urls:
             print(f"     - {u}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
-    print(f"🔗 manifest خاص بهذه التشغيلة فقط (بدون أي تأثير على الأرشيف المتراكم): {OUTPUT_DIR}/{RUN_MANIFEST_RELPATH}")
+    print(f"🔗 manifest خاص بهذه التشغيلة فقط: {OUTPUT_DIR}/{RUN_MANIFEST_RELPATH}")
     print("=" * 50)
 
     if failed_urls and len(results) == 0 and len(skipped_urls) == 0:
-        # فشلت كل الفصول بلا استثناء ولم يُتخطَّ أي شيء — على الأغلب مشكلة
-        # عامة (بروفايل خاطئ، الموقع كله واقع، حظر IP) لا مشكلة بفصل بعينه.
-        # إنهاء برمز خطأ يجعل GitHub Actions يُظهر التشغيلة "فاشلة" بوضوح
-        # بدل نجاح مضلِّل بصفر فصول محفوظة.
         print("🚫 فشلت كل الفصول — التحقق من صحة الروابط/البروفايل المختار مطلوب")
         sys.exit(1)
 
