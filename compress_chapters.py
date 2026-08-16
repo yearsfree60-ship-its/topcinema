@@ -13,6 +13,8 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
                 data-src في HTML الثابت نفسه، ولا يوجد حجب Cloudflare ولا
                 حماية سرقة (hotlink) تمنع تحميلها بطلب عادي. الأسرع والأخف
                 من كل البروفايلات — لا يُطلق متصفح Chromium إطلاقًا لهذا الموقع.
+                فصوله مستقلة تمامًا عن بعضها (لا جلسة مشتركة)، لذا تُعالَج
+                بالتوازي (HTTP_CONCURRENCY) بدل التسلسل — تسريع حقيقي.
 
 - mangatuk    → يحتاج متصفح حقيقي (كوكيز/جلسة Playwright لتحميل الصور نفسها،
                 وإلا فشل "cannot identify image"). لا يحتاج تمريرًا تراكميًا
@@ -38,6 +40,10 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 - auto        → السلوك العام الآمن الافتراضي لأي موقع لم نُشخّصه بعد: متصفح
                 حقيقي + تمرير تراكمي كامل + فلترة ودجات (يغطي أوسع نطاق حالات
                 حتى لو لم يكن الأمثل أداءً لموقع بعينه).
+
+كل قراءة لمفاتيح بروفايل اختيارية (do_scroll/do_widget_filter/fetch_mode) تمر
+عبر .get() بقيمة افتراضية آمنة، حتى لو أُضيف بروفايل جديد لاحقًا ونُسي أحد
+المفاتيح عن طريق الخطأ — لا ينهار السكربت بـKeyError.
 ================================================================================
 
 ملاحظات تصميم عامة أخرى (تراكمت من التشخيص الفعلي عبر المحادثة):
@@ -52,13 +58,24 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 3) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط (حد WebP الصارم 16383 بكسل).
 
 4) manifest.json يُدمَج مع أحدث نسخة على الفرع البعيد فعليًا قبل كل كتابة —
-   لا يُعاد بناؤه من الصفر — لتفادي تعارضات "add/add" عند الدفع.
+   لا يُعاد بناؤه من الصفر — لتفادي تعارضات "add/add" عند الدفع. الدمج يشمل
+   دومًا **كل نتائج هذه التشغيلة المتراكمة حتى هذه اللحظة**، وليس نتيجة الفصل
+   الحالي فقط — هذا إصلاح لخلل حقيقي: لو دفع فصل سابق فشل بعد كل محاولاته لكن
+   صوره محفوظة محليًا/في تشغيلة سابقة، إعادة بناء manifest.json من (بعيد +
+   فصل واحد فقط) كانت تُسقطه بصمت من القائمة رغم بقاء صوره في المستودع.
 
 5) استراتيجية إعادة محاولة الدفع: fetch + reset مختلط + إعادة commit، بدل
    git rebase الهش مع ملفات JSON مُولَّدة بالكامل.
 
 6) الدفع التدريجي الفعلي (commit+push بعد كل فصل ناجح) يعمل إن كان
-   ENABLE_INCREMENTAL_PUSH مفعّلًا و GIT_COMMIT_DIR مضبوطًا.
+   ENABLE_INCREMENTAL_PUSH مفعّلًا و GIT_COMMIT_DIR مضبوطًا. كل عمليات القراءة
+   من البعيد + الدمج + الكتابة + الدفع محمية بقفل asyncio.Lock واحد مشترك،
+   حتى مع معالجة فصول HTTP بالتوازي — يمنع تعارض عدة commits في نفس اللحظة
+   وتضارب قراءة/كتابة manifest.json.
+
+7) كل فصل معزول بـtry/except في حلقة المعالجة الرئيسية — خطأ غير متوقع في
+   فصل واحد (عطل Playwright، استثناء شبكة، إلخ) لا يُسقط بقية الفصول ولا
+   نتائجها المتراكمة، حتى لو كان الدفع التدريجي مُعطَّلًا.
 """
 import asyncio
 import json
@@ -76,8 +93,25 @@ from PIL import Image
 from io import BytesIO
 from playwright.async_api import async_playwright
 
-QUALITY = int(os.environ.get("IMG_QUALITY", "25"))
-MAX_WIDTH = int(os.environ.get("IMG_MAX_WIDTH", "700"))
+def _clamp_int(raw_value: str, default: int, lo: int, hi: int, name: str) -> int:
+    """تحويل آمن لمتغير بيئة رقمي: قيمة غير قابلة للتحويل ترجع للافتراضي بدل
+    انهيار السكربت بـValueError عند الاستيراد، وقيمة خارج النطاق المعقول
+    (مثلًا جودة ضغط 500 أو توازي HTTP بالمئات) تُقصّ لأقرب حد بدل قبولها
+    كما هي وإرباك بقية المنطق أو إرهاق الموقع المصدر بطلبات مفرطة."""
+    try:
+        value = int(raw_value)
+    except (TypeError, ValueError):
+        print(f"⚠️ قيمة غير صالحة لـ{name}='{raw_value}' — استخدام الافتراضي {default}")
+        return default
+    if value < lo or value > hi:
+        clamped = max(lo, min(hi, value))
+        print(f"⚠️ {name}={value} خارج النطاق المسموح [{lo}, {hi}] — تم ضبطه إلى {clamped}")
+        return clamped
+    return value
+
+
+QUALITY = _clamp_int(os.environ.get("IMG_QUALITY", "25"), 25, 1, 100, "IMG_QUALITY")
+MAX_WIDTH = _clamp_int(os.environ.get("IMG_MAX_WIDTH", "700"), 700, 50, 10000, "IMG_MAX_WIDTH")
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
 CDN_BASE = os.environ.get("CDN_BASE", "")
@@ -100,9 +134,31 @@ GIT_BRANCH = os.environ.get("GIT_BRANCH", "output").strip() or "output"
 IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
 IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
 
+# عدد الفصول التي تُعالَج بالتوازي لبروفايل HTTP المباشر فقط (لا جلسة مشتركة
+# بين الفصول في هذا المسار، فالتوازي آمن وسريع). لا يؤثر على مسار المتصفح،
+# الذي يبقى تسلسليًا كما كان. مسقوف بحد أقصى 10 لتفادي إغراق الموقع المصدر
+# بطلبات متزامنة مفرطة قد تُفعّل حماية أو تحديد معدل.
+HTTP_CONCURRENCY = _clamp_int(os.environ.get("HTTP_CONCURRENCY", "3"), 3, 1, 10, "HTTP_CONCURRENCY")
+
+# تخطي الفصول الموجودة مسبقًا في manifest.json البعيد (بنفس معرّف المانهوا
+# ورقم الفصل ولديها صور فعلية) بدل إعادة تحميلها وضغطها من الصفر. مفيد جدًا
+# عند إعادة تشغيل نفس دفعة الروابط الكبيرة بعد فشل جزئي — يوفر وقتًا وطلبات
+# شبكة حقيقية. يعمل فقط حين GIT_COMMIT_DIR مضبوط (نحتاج قراءة manifest بعيد).
+SKIP_EXISTING_CHAPTERS = os.environ.get("SKIP_EXISTING_CHAPTERS", "true").strip().lower() == "true"
+
 WEBP_HARD_LIMIT = 16000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+# جلسة requests واحدة معاد استخدامها (بروفايل HTTP فقط) بدل فتح اتصال
+# TCP/TLS جديد لكل طلب — تجمع اتصالات (connection pooling) حقيقية، مهمة
+# خصوصًا مع HTTP_CONCURRENCY > 1 حيث كانت كل صورة/فصل تفتح اتصالًا مستقلًا.
+_HTTP_SESSION = requests.Session()
+_HTTP_ADAPTER = requests.adapters.HTTPAdapter(
+    pool_connections=20, pool_maxsize=20, max_retries=0
+)
+_HTTP_SESSION.mount("http://", _HTTP_ADAPTER)
+_HTTP_SESSION.mount("https://", _HTTP_ADAPTER)
 
 IGNORE_PATTERN = re.compile(
     r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad|"
@@ -276,7 +332,7 @@ def fetch_via_http_simple_sync(chapter_url: str) -> tuple[list[str], str]:
     التي لا تستخدم حماية Cloudflare ولا حماية سرقة (hotlink) على الصور."""
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
-        resp = requests.get(chapter_url, headers=headers, timeout=20)
+        resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
         resp.raise_for_status()
     except Exception as e:
         return [], f"فشل الطلب المباشر: {e}"
@@ -293,7 +349,7 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
-            resp = requests.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
+            resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
             ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
@@ -557,7 +613,11 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
     print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
 
     t0 = time.monotonic()
-    image_urls = await extract_image_urls(page, chapter_url, profile["do_scroll"], profile["do_widget_filter"])
+    # .get() بقيم افتراضية آمنة: لو أُضيف بروفايل جديد ونُسي أحد المفتاحين لا
+    # ينهار السكربت بـKeyError — يفترض السلوك الأكثر أمانًا (تمرير + فلترة).
+    do_scroll = profile.get("do_scroll", True)
+    do_widget_filter = profile.get("do_widget_filter", True)
+    image_urls = await extract_image_urls(page, chapter_url, do_scroll, do_widget_filter)
     print(f"  ⏱️ زمن الاستخراج: {time.monotonic() - t0:.1f}ث")
     await page.close()
 
@@ -578,7 +638,16 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
 
 def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
-    img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
+
+    # إصلاح: تحويل صور P mode (لوحة ألوان) إلى RGB مباشرة كان يُفقد الشفافية
+    # لو كانت موجودة فعليًا (GIF/PNG مفهرسة بقناة شفافية). الآن نحافظ عليها
+    # كـRGBA عند وجود معلومات شفافية حقيقية، وإلا نحوّل لـRGB كالسابق.
+    if img.mode == "P":
+        img = img.convert("RGBA") if "transparency" in img.info else img.convert("RGB")
+    elif img.mode == "CMYK":
+        img = img.convert("RGB")
+    elif img.mode == "LA":
+        img = img.convert("RGBA")
 
     scale = 1.0
     if img.width > max_width:
@@ -626,21 +695,40 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
         images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
         new_chapter = {
             "label": f"الفصل {r['chapter_num']}",
+            # المفتاح الحقيقي لمنع التكرار هو النص الخام لرقم الفصل، لا chNum
+            # المُشتق. إصلاح خلل حقيقي: أي فصل برقم غير عددي بحت (مثل "extra"
+            # أو "omake" أو حتى "5b") يحصل جميعها على chNum=0، وكانت المقارنة
+            # القديمة (ch.get("chNum") == chNum) تجعل كل فصل جديد من هذا النوع
+            # يستبدل الفصل غير العددي السابق بصمت ويفقد صوره من manifest.json
+            # رغم بقائها فعليًا على القرص/المستودع.
+            "num": r["chapter_num"],
             "chNum": chNum,
             "sourceUrl": r["source_url"],
             "images": images_cdn,
         }
         replaced = False
         for idx, ch in enumerate(entry["chapters"]):
-            if ch.get("chNum") == chNum:
-                entry["chapters"][idx] = new_chapter
-                replaced = True
-                break
+            existing_num = ch.get("num")
+            if existing_num is not None:
+                if existing_num == r["chapter_num"]:
+                    entry["chapters"][idx] = new_chapter
+                    replaced = True
+                    break
+            else:
+                # توافق خلفي: فصول مدفوعة قبل هذا الإصلاح لا تملك حقل "num"
+                # بعد — تُقارَن بـchNum كما كان سابقًا، لمرة واحدة فقط إلى أن
+                # تُعاد كتابتها بالحقل الجديد.
+                if ch.get("chNum") == chNum:
+                    entry["chapters"][idx] = new_chapter
+                    replaced = True
+                    break
         if not replaced:
             entry["chapters"].append(new_chapter)
 
     for mid in manifest["manga"]:
-        manifest["manga"][mid]["chapters"].sort(key=lambda c: c["chNum"])
+        # ترتيب ثانوي بنص "num" لضمان ترتيب ثابت (deterministic) بين عدة
+        # فصول غير عددية تتشارك chNum=0، بدل ترتيب عشوائي حسب ترتيب الإدراج.
+        manifest["manga"][mid]["chapters"].sort(key=lambda c: (c["chNum"], str(c.get("num", ""))))
     return manifest
 
 
@@ -682,11 +770,17 @@ async def push_now(message: str) -> None:
 async def get_chapter_images(browser, chapter_url: str, profile: dict):
     """يعيد (context_أو_None, روابط_الصور, سبب_الفشل) بحسب أسلوب الجلب في
     البروفايل — مسار HTTP مباشر لا يحتاج/ينشئ أي context متصفح إطلاقًا."""
-    if profile["fetch_mode"] == "http":
+    fetch_mode = profile.get("fetch_mode", "browser")
+    if fetch_mode == "http":
         fail_reason = ""
         for attempt in range(1, RETRY_PER_CHAPTER + 1):
             if attempt > 1:
-                print(f"  🔁 إعادة محاولة طلب مباشر #{attempt}")
+                # إصلاح: كانت إعادة المحاولة تحدث فورًا بلا أي تأخير — تأخير
+                # متصاعد بسيط يقلل فرصة الاصطدام بنفس سبب الفشل مباشرة (حدّ
+                # معدل مؤقت من الموقع، انقطاع شبكة عابر، إلخ).
+                delay = 1.5 * attempt
+                print(f"  🔁 إعادة محاولة طلب مباشر #{attempt} (بعد {delay:.1f}ث)")
+                await asyncio.sleep(delay)
             image_urls, fail_reason = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url)
             if image_urls:
                 return None, image_urls, ""
@@ -715,8 +809,10 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     chapter_dir = OUTPUT_DIR / manga_id / f"ch-{chapter_num}"
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
+    fetch_mode = profile.get("fetch_mode", "browser")
+
     async def download(img_url: str):
-        if profile["fetch_mode"] == "http":
+        if fetch_mode == "http":
             return await fetch_image_bytes_http(img_url, chapter_url)
         return await fetch_image_bytes(context, img_url, chapter_url)
 
@@ -767,27 +863,31 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     if not saved_paths:
         return None
 
-    result = {
+    return {
         "manga_id": manga_id,
         "chapter_num": chapter_num,
         "source_url": chapter_url,
         "image_paths": saved_paths,
     }
 
-    if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR:
-        remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
-        merged = merge_manifest_dict(remote or {}, [result])
-        (OUTPUT_DIR / "manifest.json").write_text(
-            json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
-        await push_now(f"إضافة {manga_id} - الفصل {chapter_num}")
-
-    return result
-
 
 async def main():
-    chapter_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
-    print(f"📋 تم استخراج {len(chapter_urls)} رابط صالح من المدخلات:")
+    raw_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
+
+    # إصلاح: رابط مكرر في المدخلات لم يكن يُستبعد. مع HTTP_CONCURRENCY > 1 هذا
+    # ليس مجرد هدر — رابطان متطابقان ينتجان نفس manga_id/chapter_num، فتُعالَج
+    # نسختان بالتوازي وتكتبان لنفس مجلد الفصل في نفس اللحظة (تعارض كتابة ملفات
+    # فعلي، لا نظري). تسلسليًا (مسار المتصفح) كان هدر وقت فقط، لكن يستحق
+    # الإصلاح في كل الحالات.
+    seen, chapter_urls, dup_count = set(), [], 0
+    for u in raw_urls:
+        if u in seen:
+            dup_count += 1
+            continue
+        seen.add(u)
+        chapter_urls.append(u)
+
+    print(f"📋 تم استخراج {len(chapter_urls)} رابط صالح من المدخلات" + (f" (استُبعد {dup_count} مكرر)" if dup_count else "") + ":")
     for u in chapter_urls:
         print(f"   - {u}")
     if not chapter_urls:
@@ -797,30 +897,102 @@ async def main():
     profile = get_profile()
     print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
 
-    if profile["fetch_mode"] == "unsupported":
+    fetch_mode = profile.get("fetch_mode", "browser")
+    if fetch_mode == "unsupported":
         print(f"🚫 {profile['label']} غير مدعوم تلقائيًا: {profile.get('unsupported_reason', '')}")
         sys.exit(1)
 
     print(f"⚙️ الدفع التدريجي: {'مفعّل' if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR else 'مُعطَّل (دفعة واحدة بالنهاية)'}")
     print(f"⚙️ فلترة النطاق الصارمة: {'مفعّلة' if STRICT_DOMAIN_FILTER else 'مُعطَّلة'}")
+    if fetch_mode == "http":
+        print(f"⚙️ التوازي (HTTP فقط): {HTTP_CONCURRENCY} فصل بالتوازي")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    results = []
 
-    if profile["fetch_mode"] == "http":
-        # لا حاجة لإطلاق Chromium إطلاقًا لهذا البروفايل — توفير وقت تشغيل حقيقي
+    # -------- تخطي الفصول الموجودة مسبقًا في manifest.json البعيد --------
+    # تحسين أداء عند إعادة تشغيل نفس دفعة الروابط (شائع بعد فشل جزئي أو
+    # لإضافة فصول جديدة لنفس الأرشيف): فصل محفوظ فعليًا بصوره لا يُعاد تحميله
+    # وضغطه من الصفر — توفير شبكة ووقت حقيقيين، خصوصًا لفصول mangatuk/mangatime
+    # الطويلة (مئات الصور عبر متصفح).
+    existing_keys: set[tuple[str, str]] = set()
+    if GIT_COMMIT_DIR and SKIP_EXISTING_CHAPTERS:
+        remote_manifest = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+        if remote_manifest:
+            for mid, entry in remote_manifest.get("manga", {}).items():
+                for ch in entry.get("chapters", []):
+                    num = ch.get("num")
+                    if num is not None and ch.get("images"):
+                        existing_keys.add((mid, num))
+        if existing_keys:
+            print(f"⚙️ تخطي الفصول الموجودة مسبقًا: مفعّل ({len(existing_keys)} فصل محفوظ حاليًا على فرع {GIT_BRANCH})")
+
+    to_process: list[tuple[int, str]] = []
+    skipped_urls: list[str] = []
+    for i, url in enumerate(chapter_urls, start=1):
+        if existing_keys:
+            mid, cnum = manga_slug_from_url(url)
+            if (mid, cnum) in existing_keys:
+                skipped_urls.append(url)
+                continue
+        to_process.append((i, url))
+
+    if skipped_urls:
+        print(f"⏭️ تخطي {len(skipped_urls)} فصل موجود مسبقًا:")
+        for u in skipped_urls:
+            print(f"   - {u}")
+
+    # نتائج هذه التشغيلة المتراكمة حتى الآن — إصلاح: الدفع التدريجي يدمج
+    # دائمًا (بعيد + كل هذه القائمة)، لا (بعيد + الفصل الحالي فقط)، حتى لا
+    # يختفي فصل ناجح سابقًا لو فشل دفعه تحديدًا مؤقتًا.
+    results: list = []
+    failed_urls: list[str] = []
+    # قفل واحد مشترك لكل عمليات git (قراءة/دمج/كتابة/دفع) — ضروري خصوصًا مع
+    # معالجة فصول HTTP بالتوازي كي لا تتزاحم عدة عمليات commit في نفس اللحظة.
+    git_lock = asyncio.Lock()
+
+    async def handle_result(url, result):
+        if result is None:
+            failed_urls.append(url)
+            return
+        results.append(result)
+        if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR:
+            async with git_lock:
+                remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+                merged = merge_manifest_dict(remote or {}, results)
+                (OUTPUT_DIR / "manifest.json").write_text(
+                    json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                await push_now(f"إضافة {result['manga_id']} - الفصل {result['chapter_num']}")
+
+    async def run_chapter_safe(browser, url, index, total, profile):
+        # إصلاح: عزل كل فصل بـtry/except — خطأ غير متوقع في فصل واحد (عطل
+        # Playwright، استثناء شبكة نادر، إلخ) لم يعد يُسقط بقية الفصول ولا
+        # نتائجها المتراكمة، حتى لو كان الدفع التدريجي مُعطَّلًا.
+        try:
+            return await process_chapter(browser, url, index, total, profile)
+        except Exception as e:
+            print(f"[{index}/{total}] ❌ خطأ غير متوقع أثناء معالجة الفصل: {e}")
+            return None
+
+    total = len(chapter_urls)
+    if fetch_mode == "http":
+        # لا حاجة لإطلاق Chromium إطلاقًا لهذا البروفايل — توفير وقت تشغيل حقيقي.
+        # فصوله مستقلة تمامًا (لا جلسة/كوكيز مشتركة)، فتُعالَج بالتوازي.
         print("🚀 بروفايل HTTP مباشر — لن يُطلَق متصفح Chromium لهذه التشغيلة")
-        for i, url in enumerate(chapter_urls, start=1):
-            r = await process_chapter(None, url, i, len(chapter_urls), profile)
-            if r:
-                results.append(r)
+        sem = asyncio.Semaphore(HTTP_CONCURRENCY)
+
+        async def bounded(index, url):
+            async with sem:
+                r = await run_chapter_safe(None, url, index, total, profile)
+                await handle_result(url, r)
+
+        await asyncio.gather(*[bounded(i, url) for i, url in to_process])
     else:
         async with async_playwright() as p:
             browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-            for i, url in enumerate(chapter_urls, start=1):
-                r = await process_chapter(browser, url, i, len(chapter_urls), profile)
-                if r:
-                    results.append(r)
+            for i, url in to_process:
+                r = await run_chapter_safe(browser, url, i, total, profile)
+                await handle_result(url, r)
             await browser.close()
 
     base_manifest = {"manga": {}}
@@ -838,12 +1010,31 @@ async def main():
     (OUTPUT_DIR / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"\n✅ اكتمل: {len(results)} فصل من أصل {len(chapter_urls)}")
-    print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
 
     if GIT_COMMIT_DIR:
         ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تحديث manifest.json ونتائج التشغيل")
         print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
+
+    # -------------------------- ملخص نهائي --------------------------
+    print("\n" + "=" * 50)
+    print("📊 ملخص التشغيلة")
+    print(f"  ✅ نجح: {len(results)} فصل")
+    if skipped_urls:
+        print(f"  ⏭️ تم تخطيه (موجود مسبقًا): {len(skipped_urls)} فصل")
+    if failed_urls:
+        print(f"  ❌ فشل: {len(failed_urls)} فصل")
+        for u in failed_urls:
+            print(f"     - {u}")
+    print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
+    print("=" * 50)
+
+    if failed_urls and len(results) == 0 and len(skipped_urls) == 0:
+        # فشلت كل الفصول بلا استثناء ولم يُتخطَّ أي شيء — على الأغلب مشكلة
+        # عامة (بروفايل خاطئ، الموقع كله واقع، حظر IP) لا مشكلة بفصل بعينه.
+        # إنهاء برمز خطأ يجعل GitHub Actions يُظهر التشغيلة "فاشلة" بوضوح
+        # بدل نجاح مضلِّل بصفر فصول محفوظة.
+        print("🚫 فشلت كل الفصول — التحقق من صحة الروابط/البروفايل المختار مطلوب")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
