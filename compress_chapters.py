@@ -46,6 +46,41 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 المفاتيح عن طريق الخطأ — لا ينهار السكربت بـKeyError.
 ================================================================================
 
+============================== وضع التشخيص (DIAGNOSTIC_MODE) ==================
+غرضه مختلف تمامًا عن التشغيل العادي: لا يُنزّل ولا يضغط أي فصل فعليًا، ولا
+يستخدم بروفايل الموقع المختار في الـ workflow إطلاقًا (يتجاهله عمدًا، لأن
+الموقع الجديد بالتعريف ليس له بروفايل صحيح بعد). بدلًا من ذلك يفحص كل رابط
+مُدخَل بثلاث خطوات مستقلة ليجيب على السؤال العملي الوحيد المهم فعلًا عند بناء
+بروفايل جديد: "هل هذا الموقع يشبه azorafly (خفيف) أم mangatuk/mangatime
+(يحتاج متصفحًا كاملًا)، وبأي إعدادات تحديدًا؟":
+
+  ① فحص HTTP خام (بدون Playwright إطلاقًا) — نفس أسلوب azorafly تمامًا، فقط
+     لغرض المقارنة: هل صور الصفحة موجودة أصلًا في HTML الثابت (noscript أو
+     data-src) أم أنها تُحقَن بجافاسكربت بعد التحميل (عندها HTTP وحده غير كافٍ)؟
+     يُسجَّل أيضًا رمز الاستجابة وترويسات دالة (cf-ray تدل على Cloudflare).
+
+  ② فحص متصفح كامل — تحميل الصفحة، عدّ الصور الحقيقية عند ثلاث لحظات مختلفة
+     (فور التحميل / بعد الانتظار العادي / بعد تمرير تراكمي كامل) لمعرفة هل
+     الفرق بينها كبير (يعني تحميلًا كسولًا حقيقيًا يستلزم do_scroll=True) أم
+     لا فرق يُذكر (يعني snapshot سريع بلا تمرير يكفي). كذلك تُحسب مطابقة كل
+     محدد من CONTENT_SELECTORS الحالية على حدة، وعدد الصور غير المطابقة لأي
+     محدد معروف (مؤشر على حاجة محدد CSS جديد)، وتُفلتَر سياقات الودجات لمعرفة
+     هل do_widget_filter مفيد هنا أصلًا أم يحذف صورًا حقيقية بالخطأ، وتوزيع
+     النطاقات بين روابط الصور (مؤشر لفائدة strict_domain_filter). تُحفظ أيضًا
+     لقطة شاشة كاملة للصفحة كمرجع بصري سريع.
+
+  ③ فحص حماية السرقة (hotlink) على صورة عينة واحدة — تحميلها بطلب HTTP عادي
+     بلا جلسة مقابل تحميلها عبر جلسة كوكيز المتصفح نفسها. نجاح الأول يعني
+     fetch_mode="http" ممكن، ونجاح الثاني فقط يعني حاجة حقيقية لـfetch_mode="browser".
+
+نتيجة كل هذا: توصية جاهزة تُطبَع بصيغة قابلة للصق المباشر داخل قاموس PROFILES
+أعلاه، بدل تخمين الإعدادات الأربعة (fetch_mode/do_scroll/do_widget_filter)
+يدويًا بالتجربة والخطأ كما حدث سابقًا مع المواقع الثلاثة المدعومة حاليًا.
+كل تقرير يُكتب أيضًا كملف JSON + لقطة شاشة في output/diagnostics، ويُرفَع
+كأرتيفاكت GitHub Actions مستقل بغض النظر عن نجاح/فشل بقية الخطوات، ويُدفَع
+لفرع output إن كان الدفع التدريجي مفعّلًا — نسختان احتياطيتان بدل واحدة.
+================================================================================
+
 ملاحظات تصميم عامة أخرى (تراكمت من التشخيص الفعلي عبر المحادثة):
 
 1) لا يعتمد أي مسار متصفح على "networkidle" لاعتبار الصفحة جاهزة — مواقع فيها
@@ -145,6 +180,13 @@ HTTP_CONCURRENCY = _clamp_int(os.environ.get("HTTP_CONCURRENCY", "3"), 3, 1, 10,
 # عند إعادة تشغيل نفس دفعة الروابط الكبيرة بعد فشل جزئي — يوفر وقتًا وطلبات
 # شبكة حقيقية. يعمل فقط حين GIT_COMMIT_DIR مضبوط (نحتاج قراءة manifest بعيد).
 SKIP_EXISTING_CHAPTERS = os.environ.get("SKIP_EXISTING_CHAPTERS", "true").strip().lower() == "true"
+
+# وضع التشخيص: يوقف كامل خط الإنتاج العادي (تحميل/ضغط/دفع فصول) ويشغّل بدلًا
+# منه فحصًا عميقًا لكل رابط مُدخَل تمهيدًا لبناء بروفايل جديد — انظر الشرح
+# المطوّل أعلى الملف. مقروء كنص وليس '1'/'0' مثل STRICT_DOMAIN_FILTER لأن
+# الـ workflow يمرره كـ ${{ inputs.diagnostic_mode }} مباشرة (نفس أسلوب
+# ENABLE_INCREMENTAL_PUSH و SKIP_EXISTING_CHAPTERS).
+DIAGNOSTIC_MODE = os.environ.get("DIAGNOSTIC_MODE", "false").strip().lower() == "true"
 
 WEBP_HARD_LIMIT = 16000
 
@@ -871,6 +913,334 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     }
 
 
+# ============================== وضع التشخيص ==============================
+
+def _static_probe_sync(url: str) -> dict:
+    """فحص HTTP خام بدون متصفح إطلاقًا — نفس أسلوب بروفايل azorafly تحديدًا،
+    هنا فقط بغرض التشخيص/المقارنة: يجمع كل مؤشر يفيد لتحديد هل هذا الموقع
+    يمكن معاملته كـazorafly (خفيف وسريع) أم يحتاج متصفحًا كاملًا فعلًا."""
+    result = {
+        "status_code": None,
+        "headers_of_interest": {},
+        "challenge_detected": False,
+        "images_via_noscript": 0,
+        "images_via_data_attr": 0,
+        "images_via_plain_src": 0,
+        "sample_image_urls": [],
+        "error": None,
+    }
+    headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+    try:
+        resp = _HTTP_SESSION.get(url, headers=headers, timeout=20)
+        result["status_code"] = resp.status_code
+        for h in ("server", "cf-ray", "cf-mitigated", "content-type", "set-cookie"):
+            if h in resp.headers:
+                result["headers_of_interest"][h] = resp.headers[h][:120]
+        html = resp.text
+    except Exception as e:
+        result["error"] = f"{e}"
+        return result
+
+    result["challenge_detected"] = any(m in html.lower() for m in CHALLENGE_MARKERS)
+
+    noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
+    ns_imgs = []
+    for block in noscript_blocks:
+        for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', block):
+            ns_imgs.append(urljoin(url, m.group(1)))
+    ns_imgs = dedupe(ns_imgs)
+    result["images_via_noscript"] = len(ns_imgs)
+
+    data_imgs, plain_imgs = [], []
+    for tag_match in re.finditer(r"<img\b[^>]*>", html, re.I):
+        tag = tag_match.group(0)
+        got_data = False
+        for attr in ("data-src", "data-lazy-src", "data-original"):
+            m = re.search(rf'{attr}=["\']([^"\']+)["\']', tag, re.I)
+            if m:
+                data_imgs.append(urljoin(url, m.group(1)))
+                got_data = True
+                break
+        if not got_data:
+            m = re.search(r'\bsrc=["\']([^"\']+)["\']', tag, re.I)
+            if m and not m.group(1).startswith("data:"):
+                plain_imgs.append(urljoin(url, m.group(1)))
+    data_imgs = dedupe(data_imgs)
+    plain_imgs = dedupe(plain_imgs)
+    result["images_via_data_attr"] = len(data_imgs)
+    result["images_via_plain_src"] = len(plain_imgs)
+
+    best_list = ns_imgs or data_imgs or plain_imgs
+    result["sample_image_urls"] = best_list[:3]
+    return result
+
+
+async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
+    """فحص متصفح كامل بثلاث لحظات قياس مختلفة لعدّ الصور، لمعرفة هل التمرير
+    التراكمي مفيد فعلًا هنا أم لا (منحنى نمو العدد)، بالإضافة لمطابقة
+    المحددات الحالية وفلترة الودجات وتوزيع النطاقات ولقطة شاشة مرجعية."""
+    result = {
+        "navigated": False,
+        "title": None,
+        "challenge_detected": False,
+        "images_at_t0": None,
+        "images_after_wait": None,
+        "images_after_scroll": None,
+        "selector_match_counts": {},
+        "unmatched_img_count": 0,
+        "widget_excluded_count": 0,
+        "widget_excluded_samples": [],
+        "domain_distribution": {},
+        "screenshot_path": None,
+        "hotlink_probe": None,
+        "error": None,
+    }
+    context = await browser.new_context(
+        user_agent=UA,
+        viewport={"width": 1280, "height": 1000},
+        locale="en-US",
+        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
+    )
+    await context.add_init_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+    )
+    page = await context.new_page()
+
+    try:
+        await page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
+        result["navigated"] = True
+    except Exception as e:
+        result["error"] = f"فشل التحميل الأولي (domcontentloaded): {e}"
+
+    try:
+        result["title"] = await page.title()
+    except Exception:
+        pass
+
+    result["challenge_detected"] = await looks_like_challenge_page(page)
+    if result["challenge_detected"]:
+        await page.wait_for_timeout(5000)
+        try:
+            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+        except Exception as e:
+            print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
+
+    result["images_at_t0"] = await count_real_images(page)
+    result["images_after_wait"] = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
+
+    try:
+        screenshot_path = diag_dir / f"{slug}-screenshot.png"
+        await page.screenshot(path=str(screenshot_path), full_page=False)
+        result["screenshot_path"] = str(screenshot_path.relative_to(OUTPUT_DIR))
+    except Exception as e:
+        print(f"  ⚠️ تعذّر أخذ لقطة شاشة: {e}")
+
+    scrolled_items = await collect_images_while_scrolling(page, CONTENT_SELECTORS)
+    result["images_after_scroll"] = len(scrolled_items)
+
+    selector_counts = {sel: 0 for sel in CONTENT_SELECTORS}
+    unmatched = 0
+    for item in scrolled_items:
+        if item["matched"]:
+            for sel in item["matched"]:
+                selector_counts[sel] = selector_counts.get(sel, 0) + 1
+        else:
+            unmatched += 1
+    result["selector_match_counts"] = selector_counts
+    result["unmatched_img_count"] = unmatched
+
+    filtered = _filter_widget_context(scrolled_items)
+    result["widget_excluded_count"] = len(scrolled_items) - len(filtered)
+    result["widget_excluded_samples"] = [
+        it["ctx"].strip()[:80] for it in scrolled_items
+        if WIDGET_CONTEXT_PATTERN.search(it.get("ctx", ""))
+    ][:3]
+
+    domains = Counter(urlparse(it["url"]).hostname for it in scrolled_items if it.get("url"))
+    result["domain_distribution"] = dict(domains.most_common(5))
+
+    sample_url = None
+    for it in scrolled_items:
+        if it.get("url"):
+            sample_url = urljoin(url, it["url"])
+            break
+
+    if sample_url:
+        raw_http, reason_http = await asyncio.to_thread(fetch_image_bytes_http_sync, sample_url, url)
+        raw_browser, reason_browser = await fetch_image_bytes(context, sample_url, url)
+        result["hotlink_probe"] = {
+            "sample_url": sample_url,
+            "direct_http_success": raw_http is not None,
+            "direct_http_size": len(raw_http) if raw_http else 0,
+            "direct_http_fail_reason": reason_http,
+            "browser_session_success": raw_browser is not None,
+            "browser_session_size": len(raw_browser) if raw_browser else 0,
+            "browser_session_fail_reason": reason_browser,
+        }
+
+    await context.close()
+    return result
+
+
+def _recommend_profile(static_r: dict, browser_r: dict) -> dict:
+    """توصية آلية بإعدادات بروفايل جديد بناءً على نتائج الفحصين، بدل تخمين
+    fetch_mode/do_scroll/do_widget_filter يدويًا بالتجربة والخطأ."""
+    reasons = []
+    fetch_mode = "browser"
+
+    static_total = max(
+        static_r.get("images_via_noscript", 0),
+        static_r.get("images_via_data_attr", 0),
+        static_r.get("images_via_plain_src", 0),
+    )
+    hp = browser_r.get("hotlink_probe")
+
+    if static_total >= 3 and not static_r.get("challenge_detected") and hp and hp["direct_http_success"]:
+        fetch_mode = "http"
+        reasons.append("الفحص الثابت (بدون متصفح) وجد صورًا كافية في HTML الخام، ولم تظهر صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة")
+    else:
+        if static_r.get("challenge_detected"):
+            reasons.append("صفحة تحقق/حماية ظهرت حتى في الطلب الثابت — يحتاج متصفحًا حقيقيًا على الأقل")
+        if static_total < 3:
+            reasons.append("HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل")
+        if hp and not hp["direct_http_success"] and hp["browser_session_success"]:
+            reasons.append("صورة العينة رفضت التحميل المباشر بدون جلسة، ونجحت فقط عبر جلسة متصفح — حماية سرقة (hotlink) حقيقية")
+
+    t0 = browser_r.get("images_at_t0") or 0
+    after_scroll = browser_r.get("images_after_scroll") or 0
+    do_scroll = after_scroll > max(3, int(t0 * 1.15))
+    do_widget_filter = (browser_r.get("widget_excluded_count") or 0) > 0
+
+    return {
+        "fetch_mode": fetch_mode,
+        "do_scroll": do_scroll,
+        "do_widget_filter": do_widget_filter,
+        "reasons": reasons,
+    }
+
+
+async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
+    slug = slugify((urlparse(url).hostname or "site") + "-" + str(abs(hash(url)) % 10000))
+    print("\n" + "═" * 60)
+    print(f"🔬 تقرير تشخيصي: {url}")
+    print("═" * 60)
+
+    print("① فحص HTTP خام (بدون Playwright إطلاقًا)...")
+    static_r = await asyncio.to_thread(_static_probe_sync, url)
+    if static_r["error"]:
+        print(f"   ❌ فشل الطلب المباشر: {static_r['error']}")
+    else:
+        print(f"   حالة الاستجابة: {static_r['status_code']}")
+        if static_r["headers_of_interest"]:
+            print(f"   ترويسات ملفتة: {static_r['headers_of_interest']}")
+        print(f"   صفحة تحقق/حماية مكتشفة: {'نعم ⚠️' if static_r['challenge_detected'] else 'لا'}")
+        print(f"   صور عبر noscript: {static_r['images_via_noscript']} | عبر data-src: {static_r['images_via_data_attr']} | عبر src عادي: {static_r['images_via_plain_src']}")
+        if static_r["sample_image_urls"]:
+            print("   عينة روابط صور من HTML الثابت:")
+            for u in static_r["sample_image_urls"]:
+                print(f"     - {u}")
+
+    print("② فحص متصفح كامل (تحميل + انتظار + تمرير تراكمي)...")
+    browser_r = await _browser_probe(browser, url, diag_dir, slug)
+    if browser_r["error"]:
+        print(f"   ⚠️ {browser_r['error']}")
+    print(f"   عنوان الصفحة: {browser_r['title']!r}")
+    print(f"   صفحة تحقق/حماية مكتشفة عبر المتصفح: {'نعم ⚠️' if browser_r['challenge_detected'] else 'لا'}")
+    print(f"   منحنى نمو عدد الصور — عند أول لحظة: {browser_r['images_at_t0']} → بعد الانتظار العادي: {browser_r['images_after_wait']} → بعد تمرير تراكمي كامل: {browser_r['images_after_scroll']}")
+    print(f"   مطابقة المحددات الحالية (CONTENT_SELECTORS): {browser_r['selector_match_counts']}")
+    print(f"   صور لا تطابق أي محدد معروف حاليًا: {browser_r['unmatched_img_count']}" +
+          ("  ← يُرجَّح الحاجة لإضافة محدد CSS جديد" if browser_r['unmatched_img_count'] else ""))
+    if browser_r["widget_excluded_count"]:
+        print(f"   🧹 فلتر الودجات استبعد {browser_r['widget_excluded_count']} صورة — عينات من السياق المستبعَد: {browser_r['widget_excluded_samples']}")
+    else:
+        print("   🧹 فلتر الودجات لم يستبعد أي صورة (قد يكون غير ضروري لهذا الموقع)")
+    if browser_r["domain_distribution"]:
+        print(f"   توزيع النطاقات بين روابط الصور: {browser_r['domain_distribution']}")
+
+    hp = browser_r.get("hotlink_probe")
+    if hp:
+        print("③ فحص حماية السرقة (hotlink) على صورة عينة واحدة...")
+        direct_line = f"   تحميل مباشر بلا جلسة: {'✅ نجح' if hp['direct_http_success'] else '❌ فشل'} ({hp['direct_http_size']} بايت)"
+        if not hp["direct_http_success"]:
+            direct_line += f" — السبب: {hp['direct_http_fail_reason']}"
+        print(direct_line)
+        session_line = f"   تحميل عبر جلسة متصفح: {'✅ نجح' if hp['browser_session_success'] else '❌ فشل'} ({hp['browser_session_size']} بايت)"
+        if not hp["browser_session_success"]:
+            session_line += f" — السبب: {hp['browser_session_fail_reason']}"
+        print(session_line)
+    else:
+        print("③ لم يتوفر رابط صورة عينة لفحص حماية السرقة (لم تُستخرج أي صورة من الصفحة أصلًا)")
+
+    if browser_r["screenshot_path"]:
+        print(f"   🖼️ لقطة شاشة مرجعية محفوظة: {browser_r['screenshot_path']}")
+
+    recommendation = _recommend_profile(static_r, browser_r)
+    print("④ التوصية المقترحة لبروفايل جديد:")
+    print(f"   fetch_mode المقترح: {recommendation['fetch_mode']}")
+    if recommendation["fetch_mode"] == "browser":
+        print(f"   do_scroll المقترح: {recommendation['do_scroll']}")
+        print(f"   do_widget_filter المقترح: {recommendation['do_widget_filter']}")
+    for reason in recommendation["reasons"]:
+        print(f"   • {reason}")
+    print("   جاهز للصق داخل قاموس PROFILES أعلى الملف:")
+    if recommendation["fetch_mode"] == "http":
+        print('   "اسم_الموقع": {"label": "...", "fetch_mode": "http"},')
+    else:
+        print(
+            f'   "اسم_الموقع": {{"label": "...", "fetch_mode": "browser", '
+            f'"do_scroll": {recommendation["do_scroll"]}, "do_widget_filter": {recommendation["do_widget_filter"]}}},'
+        )
+    print("═" * 60)
+
+    report = {
+        "url": url,
+        "static_probe": static_r,
+        "browser_probe": browser_r,
+        "recommendation": recommendation,
+    }
+    (diag_dir / f"{slug}-report.json").write_text(
+        json.dumps(report, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
+    )
+    return report
+
+
+async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
+    print("🔬 وضع التشخيص مفعّل — لن يُنزَّل أو يُضغط أي فصل فعليًا، ولن يُستخدم اختيار الموقع المصدر إطلاقًا")
+    if len(chapter_urls) > 3:
+        print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط لوضع التشخيص (كل رابط يفتح متصفحًا كاملًا ويطيل زمن التشغيلة). سيُتابَع بكل الروابط رغم ذلك")
+
+    diag_dir = OUTPUT_DIR / "diagnostics"
+    diag_dir.mkdir(parents=True, exist_ok=True)
+
+    reports = []
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        for url in chapter_urls:
+            try:
+                report = await diagnose_url(browser, url, diag_dir)
+                reports.append(report)
+            except Exception as e:
+                print(f"❌ خطأ غير متوقع أثناء تشخيص {url}: {e}")
+                reports.append({"url": url, "error": str(e)})
+        await browser.close()
+
+    (diag_dir / "summary.json").write_text(
+        json.dumps(reports, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
+    )
+
+    if GIT_COMMIT_DIR:
+        ok, msg = await asyncio.to_thread(
+            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تقرير تشخيصي جديد لموقع لم يُعتمد بعد"
+        )
+        print(f"{'✅' if ok else '⚠️'} دفع تقرير التشخيص: {msg}")
+
+    print("\n" + "=" * 50)
+    print(f"✅ اكتمل التشخيص لـ {len(reports)} رابط")
+    print(f"📁 التقارير التفصيلية + لقطات الشاشة في: {diag_dir}")
+    print("📎 كما تُرفَع نسخة كأرتيفاكت مستقل في صفحة التشغيلة على GitHub Actions")
+    print("=" * 50)
+
+
 async def main():
     raw_urls = [u for u in re.split(r'[\s,،؛;]+', CHAPTER_URLS_RAW.strip()) if u.startswith('http')]
 
@@ -894,6 +1264,15 @@ async def main():
         print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
         sys.exit(1)
 
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    # وضع التشخيص مستقل تمامًا عن بقية خط الإنتاج ويتجاهل بروفايل الموقع
+    # المختار عمدًا (بما فيه "manga_starz" غير المدعوم) — الهدف بالتحديد هو
+    # فحص موقع ليس له بروفايل صحيح بعد.
+    if DIAGNOSTIC_MODE:
+        await run_diagnostic_mode(chapter_urls)
+        return
+
     profile = get_profile()
     print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
 
@@ -906,8 +1285,6 @@ async def main():
     print(f"⚙️ فلترة النطاق الصارمة: {'مفعّلة' if STRICT_DOMAIN_FILTER else 'مُعطَّلة'}")
     if fetch_mode == "http":
         print(f"⚙️ التوازي (HTTP فقط): {HTTP_CONCURRENCY} فصل بالتوازي")
-
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # -------- تخطي الفصول الموجودة مسبقًا في manifest.json البعيد --------
     # تحسين أداء عند إعادة تشغيل نفس دفعة الروابط (شائع بعد فشل جزئي أو
