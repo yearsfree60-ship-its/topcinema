@@ -1,0 +1,101 @@
+{
+  "url": "https://procomic.net/ar/chapter/ill-be-taking-a-break-for-personal-reasons-1-35884",
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a2bf2301acf8eafb-ORD",
+      "cf-cache-status": "BYPASS",
+      "content-type": "text/html; charset=utf-8",
+      "set-cookie": "language=ar; Path=/; Expires=Mon, 16 Aug 2027 08:40:53 GMT; Max-Age=31536000; Domain=.procomic.net; Secure; SameSite=lax"
+    },
+    "challenge_detected": false,
+    "protection_signatures": [],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 7,
+    "extracted_sample_urls": [
+      "https://app.procomic.net/seo/595/1771608459317-vrk3ad55tph.jpg",
+      "https://app.procomic.net/chapters/595/35884/p1/1771607719125-sjmf7fjg2yj-5c3332a9b749-desktop.avif",
+      "https://cdn3.procomic.net/595/35884/1771607719125-sjmf7fjg2yj.avif"
+    ],
+    "sample_image_urls": [],
+    "raw_cookies_received": [
+      "language"
+    ],
+    "error": null
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "I’ll Be Taking A Break For Personal… - الفصل 1 | ProComic",
+    "challenge_detected": false,
+    "protection_signatures": [],
+    "images_at_t0": 2,
+    "images_after_wait": 2,
+    "images_after_scroll": 191,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 191,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "domain_distribution": {
+      "procomic.net": 187,
+      "app.procomic.net": 3,
+      "s3.pubfuture.com": 1
+    },
+    "screenshot_path": "diagnostics/procomic-net-2712-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://app.procomic.net/chapters/595/35884/p1/1771607719125-sjmf7fjg2yj-5c3332a9b749-desktop.avif",
+      "direct_http_success": true,
+      "direct_http_size": 523793,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 523793,
+      "browser_session_fail_reason": null
+    },
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 10
+    },
+    "error": null,
+    "content_images_before_scroll": 2
+  },
+  "rate_limit_probe": {
+    "requests_sent": 4,
+    "elapsed_sec": 0.75,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "retry_after_header": null
+  },
+  "recommendation": {
+    "fetch_mode": "http",
+    "do_scroll": true,
+    "do_widget_filter": false,
+    "suggested_http_concurrency": 3,
+    "reasons": [
+      "مسار HTTP المباشر الفعلي (extract_images_from_html) سيستخرج 7 صورة فعليًا، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة",
+      "لا تحديد معدل ظاهر في فحص سريع (4 طلبات) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية"
+    ]
+  }
+}
