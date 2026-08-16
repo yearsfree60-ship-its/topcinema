@@ -1,0 +1,87 @@
+{
+  "url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a2be8d1c3bd4a219-MSP",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "sample_image_urls": [],
+    "raw_cookies_received": [],
+    "error": null
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "Dilar - الصفحة الرئيسية",
+    "challenge_detected": false,
+    "protection_signatures": [],
+    "images_at_t0": 0,
+    "images_after_wait": 0,
+    "images_after_scroll": 0,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 0,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "domain_distribution": {},
+    "screenshot_path": "diagnostics/dilar-tube-8715-screenshot.png",
+    "hotlink_probe": null,
+    "network_vendor_hits": {
+      "Cloudflare Challenge": [
+        "blob:https://challenges.cloudflare.com/1210aff8-a28e-444c-a3b9-b91742487225",
+        "blob:https://challenges.cloudflare.com/2f92bf35-aa25-4f45-a6f8-fff4b8a07c87",
+        "blob:https://challenges.cloudflare.com/efa7dd6b-448e-4b85-8fa8-714d5b10608e"
+      ]
+    },
+    "adblock_wall": {
+      "detected": true,
+      "became_ready_after_sec": 45.2,
+      "clicked": true,
+      "button_snippet": "<button id=\"_fb_continue\" class=\"_fb_btn _fb_btn_sec disabled\" disabled=\"\">المتابعة على أي حال <span id=\"_fb_countdown\">(7)</span></button>",
+      "timed_out": true
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 3
+    },
+    "error": null
+  },
+  "rate_limit_probe": {
+    "requests_sent": 4,
+    "elapsed_sec": 0.21,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": true,
+    "retry_after_header": null
+  },
+  "recommendation": {
+    "fetch_mode": "browser",
+    "do_scroll": false,
+    "do_widget_filter": false,
+    "reasons": [
+      "صفحة تحقق/حماية ظهرت حتى بالطلب الثابت (Cloudflare) — يحتاج متصفحًا حقيقيًا على الأقل",
+      "HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل",
+      "جدار مانع إعلانات مكتشَف — استغرق زر التجاوز 45.2ث ليصبح جاهزًا فعليًا"
+    ]
+  }
+}
