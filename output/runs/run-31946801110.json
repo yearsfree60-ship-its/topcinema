@@ -1,0 +1,23 @@
+{
+  "manga": {
+    "azorafly.com__only-for-love": {
+      "name": "only for love",
+      "chapters": [
+        {
+          "label": "الفصل 3",
+          "num": "3",
+          "chNum": 3.0,
+          "sourceUrl": "https://azorafly.com/series/only-for-love/chapter-3",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__only-for-love/ch-3/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__only-for-love/ch-3/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__only-for-love/ch-3/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__only-for-love/ch-3/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__only-for-love/ch-3/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__only-for-love/ch-3/006.webp"
+          ]
+        }
+      ]
+    }
+  }
+}
