@@ -16,6 +16,7 @@ on:
           - mangatuk
           - mangatime
           - olympustaff
+          - procomic
           - auto
         default: auto
       quality:
