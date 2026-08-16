@@ -1,57 +1,64 @@
 #!/usr/bin/env python3
 """
-يقرأ قائمة روابط فصول (سطر لكل رابط) من متغيرات البيئة، يفتح كل صفحة بمتصفح
-Chromium حقيقي مؤتمت (Playwright) — هذا يمرّ تلقائيًا أغلب أنظمة التحميل الكسول
-وبعض تحديات Cloudflare البسيطة (غير مضمون 100% مع الحماية المتقدمة) — يستخرج
-روابط الصور، يحمّلها، يضغطها فعليًا بمكتبة Pillow، ويحفظها في مجلد الإخراج
-مع ملف manifest.json يصف كل مانهوا وفصولها وروابط صورها النهائية.
+يقرأ قائمة روابط فصول (سطر لكل رابط) من متغيرات البيئة، يستخرج روابط الصور،
+يحمّلها، يضغطها فعليًا بمكتبة Pillow، ويحفظها في مجلد الإخراج مع ملف
+manifest.json يصف كل مانهوا وفصولها وروابط صورها النهائية.
 
-ملاحظات تصميم مهمة (تراكمت من التشخيص الفعلي لمشاكل واجهناها):
+============================== بروفايلات المواقع ==============================
+بدل محاولة "تخمين" الأسلوب المناسب من الصفر لكل موقع (وهو ما كان يهدر دقائق
+كاملة أحيانًا)، السكربت يقرأ SITE_PROFILE من البيئة (تختاره من قائمة منسدلة في
+الـ workflow) ويطبّق مباشرة الأسلوب المثبت تجريبيًا لهذا الموقع تحديدًا:
 
-1) لا يعتمد هذا السكربت على "networkidle" لاعتبار الصفحة جاهزة. كثير من مواقع
-   المانجا (خصوصًا المدعومة بإعلانات) فيها طلبات شبكة دورية لا تتوقف أبدًا،
-   فحالة "خمول الشبكة" لا تتحقق مطلقًا حتى لو اكتمل المحتوى فعليًا.
+- azorafly    → HTTP مباشر بدون متصفح إطلاقًا. الصور موجودة كـ noscript أو
+                data-src في HTML الثابت نفسه، ولا يوجد حجب Cloudflare ولا
+                حماية سرقة (hotlink) تمنع تحميلها بطلب عادي. الأسرع والأخف
+                من كل البروفايلات — لا يُطلق متصفح Chromium إطلاقًا لهذا الموقع.
 
-2) تحميل الصور نفسها يتم عبر Playwright (نفس جلسة المتصفح وكوكيزها وبصمتها)
-   وليس عبر مكتبة requests منفصلة — لأن بعض المواقع ترفض تحميل الصور من
-   خارج جلسة المتصفح الحقيقية.
+- mangatuk    → يحتاج متصفح حقيقي (كوكيز/جلسة Playwright لتحميل الصور نفسها،
+                وإلا فشل "cannot identify image"). لا يحتاج تمريرًا تراكميًا
+                طويلًا (الصور تظهر مباشرة دون virtualization)، ولا فلترة
+                ودجات (لا يوجد قسم "مقترح" يتداخل مع محتوى القراءة). يتساهل
+                مع تأخر حدث goto (الفصل الأول تحديدًا كان يتعلّق أحيانًا بسبب
+                مورد بطيء غير متعلق بالمحتوى — نعتمد على وجود صور حقيقية لا
+                على الحدث نفسه). فصوله الطويلة (مئات الصور) عرضة لتحديد معدل
+                طلبات، فيُعتمد عليه إعادة محاولة + تأخير بين كل صورة أكثر.
 
-3) الاستخراج يفحص "سياق" كل صورة (أصولها في الـDOM حتى 5 مستويات) ويستبعد
-   أي صورة أصلها يوحي بأنه ودجت "مقترح/مشابه/إعلان"، ويجمع كل الصور بتمرير
-   تراكمي واحد فقط لكل الصفحة (لا تمرير منفصل لكل محدّد CSS مُخمَّن).
+- mangatime   → يحتاج متصفح حقيقي + تمرير تراكمي إجباري (تحميل كسول حقيقي
+                يُلغي الصور البعيدة عن الشاشة من الـDOM/virtualization)، ويحتاج
+                فلترة سياق الودجات (قسم "مانجا مقترحة" يحقن صورًا بنفس وسوم
+                <img> الحقيقية ضمن نفس منطقة القراءة تقريبًا). لا يطابق أي
+                محدّد قالب معروف (ليس Madara)، فيعتمد على الاستخراج العام.
 
-4) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط، لأن حد WebP الصارم
-   (16383 بكسل لأي بعد) قد يُتجاوز حتى لو كان العرض ضمن الحد المطلوب.
+- manga_starz → غير مدعوم تلقائيًا. محمي بتحدي Cloudflare كامل يكتشف بصمة
+                الأتمتة حتى مع متصفح Chromium حقيقي مؤتمت (لا حل معروف حاليًا
+                غير بروكسي residential حقيقي، لم يُختبر). السكربت يتوقف فورًا
+                لهذا البروفايل برسالة واضحة بدل إهدار وقت تشغيل على محاولات
+                ستفشل حتمًا.
 
-5) الحكم بنجاح/فشل تحميل الصفحة يعتمد على وجود صور مستخرجة فعليًا، وليس على
-   إطلاق حدث goto بذاته.
+- auto        → السلوك العام الآمن الافتراضي لأي موقع لم نُشخّصه بعد: متصفح
+                حقيقي + تمرير تراكمي كامل + فلترة ودجات (يغطي أوسع نطاق حالات
+                حتى لو لم يكن الأمثل أداءً لموقع بعينه).
+================================================================================
 
-6) عند فشل تحميل بايتات صورة، يُتحقق من content-type فعليًا قبل تمريرها
-   لـ Pillow، ويُطبع السبب الدقيق بدل رسالة Pillow العامة غير المفسِّرة.
+ملاحظات تصميم عامة أخرى (تراكمت من التشخيص الفعلي عبر المحادثة):
 
-7) [إصلاح جذري] manifest.json يُدمَج الآن بدل إعادة الكتابة الكاملة: في نسخة
-   سابقة كان يُعاد بناء manifest.json من الصفر بالاعتماد فقط على فصول
-   التشغيلة الحالية، متجاهلًا كل ما تراكم من تشغيلات سابقة على فرع output.
-   نتيجة ذلك: كل تشغيلة تنتج نسخة "غير مترابطة تاريخيًا" بالكامل مع النسخة
-   السابقة على البعيد، فأي محاولة دمج (rebase) بينهما تفشل بتعارض
-   "add/add" فورًا — حتى لو كانت المحتويات فعليًا متوافقة منطقيًا (فصول
-   إضافية فقط، لا تعديل متضارب). الآن: قبل الكتابة النهائية، يُجلب أحدث
-   manifest.json من الفرع البعيد فعليًا (git fetch + git show)، وتُدمج فيه
-   فصول هذه التشغيلة (استبدال الفصل لو أُعيد معالجته، إضافته لو جديد) —
-   فتصبح كل تشغيلة امتدادًا متجانسًا للسابقة، لا نسخة منفصلة عنها.
+1) لا يعتمد أي مسار متصفح على "networkidle" لاعتبار الصفحة جاهزة — مواقع فيها
+   إعلانات/تتبّع لا تدخل خمول شبكة أبدًا حتى لو اكتمل المحتوى فعليًا.
 
-8) [إصلاح جذري] استراتيجية إعادة محاولة الدفع تغيّرت من git rebase إلى
-   fetch + reset مختلط (mixed) + إعادة commit فوق أحدث نقطة على البعيد.
-   rebase مناسب لملفات نصية حرة يُدمَج تاريخها سطرًا بسطر، لكنه هش جدًا مع
-   JSON مُولَّد برمجيًا بالكامل — أي اختلاف تنسيق بسيط بين نسختين يُنتج
-   تعارضًا فوريًا. الـreset المختلط لا يمس ملفات القرص إطلاقًا (كل ما كان
-   محليًا يتحوّل لتغييرات غير مُلتزمة فحسب)، فقط يُرجع مؤشر الفرع لأحدث نقطة
-   بعيدة، ثم نُعيد commit لحالة القرص الحالية (المدموجة مسبقًا بالفعل بفضل
-   النقطة 7) فوقها مباشرة — بلا أي آلية دمج نصي، وبلا أي احتمال تعارض.
+2) الحكم بنجاح/فشل تحميل صفحة (في مسار المتصفح) يعتمد على وجود صور مستخرجة
+   فعليًا، لا على إطلاق حدث goto بذاته — هذا سلوك عام مفيد لكل المواقع، وليس
+   خاصًا ببروفايل بعينه، فأبقيناه غير مرتبط بالبروفايل عمدًا.
 
-9) [مُضاف] الدفع التدريجي الفعلي: إن كان ENABLE_INCREMENTAL_PUSH مفعّلًا
-   و GIT_COMMIT_DIR مضبوطًا، يُنفَّذ commit+push حقيقي (عبر subprocess في
-   thread منفصل حتى لا يحجب حلقة الأحداث) فور نجاح كل فصل.
+3) الصورة يُتحقق من عرضها وطولها معًا قبل الضغط (حد WebP الصارم 16383 بكسل).
+
+4) manifest.json يُدمَج مع أحدث نسخة على الفرع البعيد فعليًا قبل كل كتابة —
+   لا يُعاد بناؤه من الصفر — لتفادي تعارضات "add/add" عند الدفع.
+
+5) استراتيجية إعادة محاولة الدفع: fetch + reset مختلط + إعادة commit، بدل
+   git rebase الهش مع ملفات JSON مُولَّدة بالكامل.
+
+6) الدفع التدريجي الفعلي (commit+push بعد كل فصل ناجح) يعمل إن كان
+   ENABLE_INCREMENTAL_PUSH مفعّلًا و GIT_COMMIT_DIR مضبوطًا.
 """
 import asyncio
 import json
@@ -64,6 +71,7 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 
+import requests
 from PIL import Image
 from io import BytesIO
 from playwright.async_api import async_playwright
@@ -88,6 +96,9 @@ STRICT_DOMAIN_FILTER = os.environ.get("STRICT_DOMAIN_FILTER", "0") == "1"
 ENABLE_INCREMENTAL_PUSH = os.environ.get("ENABLE_INCREMENTAL_PUSH", "true").strip().lower() == "true"
 GIT_COMMIT_DIR = os.environ.get("GIT_COMMIT_DIR", "").strip() or None
 GIT_BRANCH = os.environ.get("GIT_BRANCH", "output").strip() or "output"
+
+IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
+IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
 
 WEBP_HARD_LIMIT = 16000
 
@@ -133,6 +144,52 @@ COLLECT_IMAGES_JS = """(els, selectors) => els.map(e => {
     return {url: u, ctx: ctx.toLowerCase(), matched};
 }).filter(x => x.url)"""
 
+# ============================== بروفايلات المواقع ==============================
+SITE_PROFILE = os.environ.get("SITE_PROFILE", "auto").strip().lower()
+
+PROFILES = {
+    "azorafly": {
+        "label": "أزورافلاي",
+        "fetch_mode": "http",
+    },
+    "mangatuk": {
+        "label": "مانجا توك",
+        "fetch_mode": "browser",
+        "do_scroll": False,
+        "do_widget_filter": False,
+    },
+    "mangatime": {
+        "label": "مانجا تايم",
+        "fetch_mode": "browser",
+        "do_scroll": True,
+        "do_widget_filter": True,
+    },
+    "manga_starz": {
+        "label": "ستار مانجا",
+        "fetch_mode": "unsupported",
+        "unsupported_reason": (
+            "محمي بتحدي Cloudflare كامل يكتشف بصمة الأتمتة حتى مع متصفح "
+            "Chromium حقيقي مؤتمت. لا حل معروف تلقائيًا حاليًا — يحتاج نسخ "
+            "روابط الصور يدويًا من متصفح حقيقي بعد اجتياز التحدي، أو بروكسي "
+            "residential حقيقي (لم يُختبر بعد)."
+        ),
+    },
+    "auto": {
+        "label": "تلقائي (عام)",
+        "fetch_mode": "browser",
+        "do_scroll": True,
+        "do_widget_filter": True,
+    },
+}
+
+
+def get_profile() -> dict:
+    profile = PROFILES.get(SITE_PROFILE)
+    if profile is None:
+        print(f"⚠️ بروفايل غير معروف '{SITE_PROFILE}' — الرجوع للبروفايل العام (auto)")
+        profile = PROFILES["auto"]
+    return profile
+
 
 def slugify(text: str) -> str:
     text = re.sub(r"[^a-zA-Z0-9\u0600-\u06FF]+", "-", text).strip("-").lower()
@@ -164,6 +221,94 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     manga_name = manga_parts[-1] if manga_parts else u.hostname
     return f"{u.hostname}__{slugify(manga_name)}", (chapter_num or "0")
 
+
+def dedupe(urls: list[str]) -> list[str]:
+    seen, out = set(), []
+    for u in urls:
+        if u not in seen and not IGNORE_PATTERN.search(u):
+            seen.add(u)
+            out.append(u)
+    return out
+
+
+# ---------------------------- مسار HTTP المباشر (azorafly) ----------------------------
+
+def extract_images_from_html(html: str, base_url: str) -> list[str]:
+    """يستخرج روابط الصور من نص HTML خام دون تنفيذ جافاسكربت. يفضّل noscript
+    (بديل حقيقي للتحميل الكسول)، ثم data-src/data-lazy-src/data-original لكل
+    <img>، وإلا src العادي."""
+    noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
+    found = []
+    for block in noscript_blocks:
+        for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', block):
+            found.append(urljoin(base_url, m.group(1)))
+    if found:
+        return dedupe(found)
+
+    for tag_match in re.finditer(r"<img\b[^>]*>", html, re.I):
+        tag = tag_match.group(0)
+        u = None
+        for attr in ("data-src", "data-lazy-src", "data-original"):
+            m = re.search(rf'{attr}=["\']([^"\']+)["\']', tag, re.I)
+            if m:
+                u = m.group(1)
+                break
+        if not u:
+            m = re.search(r'\bsrc=["\']([^"\']+)["\']', tag, re.I)
+            if m:
+                u = m.group(1)
+        if u and not u.startswith("data:"):
+            found.append(urljoin(base_url, u))
+    if found:
+        return dedupe(found)
+
+    found = [urljoin(base_url, m.group(0)) for m in
+             re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
+    return dedupe(found)
+
+
+def fetch_via_http_simple_sync(chapter_url: str) -> tuple[list[str], str]:
+    """جلب HTML ثابت بطلب عادي بدون متصفح — كافٍ تمامًا لمواقع مثل أزورافلاي
+    التي لا تستخدم حماية Cloudflare ولا حماية سرقة (hotlink) على الصور."""
+    headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+    try:
+        resp = requests.get(chapter_url, headers=headers, timeout=20)
+        resp.raise_for_status()
+    except Exception as e:
+        return [], f"فشل الطلب المباشر: {e}"
+    html = resp.text
+    if any(m in html.lower() for m in CHALLENGE_MARKERS):
+        return [], "صفحة تحقق/حماية ظهرت حتى بطلب مباشر — هذا البروفايل غير مناسب لهذا الرابط تحديدًا"
+    urls = extract_images_from_html(html, chapter_url)
+    if not urls:
+        return [], "لم يُعثر على صور في HTML الثابت"
+    return urls, ""
+
+
+def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | None, str | None]:
+    last_reason = "سبب غير معروف"
+    for attempt in range(1, IMG_FETCH_RETRIES + 1):
+        try:
+            resp = requests.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
+            ctype = resp.headers.get("content-type", "")
+            if resp.ok and (ctype.startswith("image/") or ctype == ""):
+                if resp.content and len(resp.content) >= 500:
+                    return resp.content, None
+                last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(resp.content)} بايت)"
+            else:
+                last_reason = f"status={resp.status_code} content-type={ctype!r}"
+        except Exception as e:
+            last_reason = f"استثناء: {e}"
+        if attempt < IMG_FETCH_RETRIES:
+            time.sleep(0.6 * attempt)
+    return None, last_reason
+
+
+async def fetch_image_bytes_http(img_url: str, referer: str):
+    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer)
+
+
+# ---------------------------- مسار المتصفح (mangatuk / mangatime / auto) ----------------------------
 
 async def looks_like_challenge_page(page) -> bool:
     try:
@@ -209,16 +354,9 @@ async def wait_for_real_images(page, max_wait_ms: int, poll_ms: int) -> int:
     return max(last_count, 0)
 
 
-def dedupe(urls: list[str]) -> list[str]:
-    seen, out = set(), []
-    for u in urls:
-        if u not in seen and not IGNORE_PATTERN.search(u):
-            seen.add(u)
-            out.append(u)
-    return out
-
-
 async def collect_images_while_scrolling(page, content_selectors: list[str]) -> list[dict]:
+    """تمرير تراكمي كامل (مطلوب فقط لمواقع فيها تحميل كسول حقيقي/virtualization
+    مثل mangatime — do_scroll=False يتخطى هذا كليًا لصالح لقطة واحدة سريعة)."""
     seen: dict[str, dict] = {}
 
     def merge(items):
@@ -287,6 +425,17 @@ async def collect_images_while_scrolling(page, content_selectors: list[str]) -> 
     return [{"url": u, "ctx": v["ctx"], "matched": v["matched"]} for u, v in seen.items()]
 
 
+async def snapshot_images(page, content_selectors: list[str]) -> list[dict]:
+    """لقطة واحدة سريعة (بدون تمرير) — تكفي لمواقع لا تستخدم تحميلًا كسولًا
+    حقيقيًا مرتبطًا بالتمرير (mangatuk)، وأسرع بكثير من التمرير التراكمي."""
+    try:
+        items = await page.eval_on_selector_all("img", COLLECT_IMAGES_JS, content_selectors)
+    except Exception:
+        items = []
+    return [{"url": it["url"], "ctx": it.get("ctx", ""), "matched": set(it.get("matched", []))}
+            for it in items if it.get("url")]
+
+
 def _filter_widget_context(items: list[dict]) -> list[dict]:
     kept, excluded_widget = [], 0
     for item in items:
@@ -311,13 +460,14 @@ def _apply_domain_filter(urls: list[str]) -> list[str]:
     return urls
 
 
-async def extract_image_urls(page, base_url: str) -> list[str]:
+async def extract_image_urls(page, base_url: str, do_scroll: bool, do_widget_filter: bool) -> list[str]:
     try:
-        items = await collect_images_while_scrolling(page, CONTENT_SELECTORS)
+        items = await (collect_images_while_scrolling(page, CONTENT_SELECTORS) if do_scroll
+                       else snapshot_images(page, CONTENT_SELECTORS))
     except Exception:
         items = []
 
-    filtered = _filter_widget_context(items)
+    filtered = _filter_widget_context(items) if do_widget_filter else items
 
     if filtered:
         for selector in CONTENT_SELECTORS:
@@ -347,6 +497,81 @@ async def extract_image_urls(page, base_url: str) -> list[str]:
     return dedupe(found)
 
 
+async def fetch_image_bytes(context, img_url: str, referer: str):
+    """تحميل عبر جلسة المتصفح نفسها (كوكيز حقيقية) — ضروري لمواقع مثل
+    mangatuk التي ترفض تحميل الصور من خارج جلسة متصفح حقيقية."""
+    last_reason = "سبب غير معروف"
+    for attempt in range(1, IMG_FETCH_RETRIES + 1):
+        try:
+            resp = await context.request.get(
+                img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20000,
+            )
+            ctype = resp.headers.get("content-type", "")
+            if resp.ok and (ctype.startswith("image/") or ctype == ""):
+                body = await resp.body()
+                if body and len(body) >= 500:
+                    return body, None
+                last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(body) if body else 0} بايت)"
+            else:
+                last_reason = f"status={resp.status} content-type={ctype!r}"
+        except Exception as e:
+            last_reason = f"استثناء: {e}"
+        if attempt < IMG_FETCH_RETRIES:
+            await asyncio.sleep(0.6 * attempt)
+    return None, last_reason
+
+
+async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dict):
+    context = await browser.new_context(
+        user_agent=UA,
+        viewport={"width": 1280, "height": 1000},
+        locale="en-US",
+        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
+    )
+    await context.add_init_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+    )
+    page = await context.new_page()
+
+    navigated = False
+    wait_strategy = "domcontentloaded" if attempt == 1 else "load"
+    try:
+        await page.goto(chapter_url, wait_until=wait_strategy, timeout=NAV_TIMEOUT_MS)
+        navigated = True
+    except Exception as e:
+        print(f"  ⚠️ تعذّر تحميل الصفحة ({wait_strategy}): {e}")
+
+    if navigated and await looks_like_challenge_page(page):
+        print("  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار وإعادة تحميل")
+        await page.wait_for_timeout(5000)
+        try:
+            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+        except Exception as e:
+            print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
+
+    found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
+    print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
+
+    t0 = time.monotonic()
+    image_urls = await extract_image_urls(page, chapter_url, profile["do_scroll"], profile["do_widget_filter"])
+    print(f"  ⏱️ زمن الاستخراج: {time.monotonic() - t0:.1f}ث")
+    await page.close()
+
+    # عام لكل المواقع (وليس خاصًا ببروفايل بعينه): الحكم بالنجاح على وجود صور
+    # مستخرجة فعليًا، لا على إطلاق حدث goto بذاته — حل مشكلة الفصل الأول في
+    # mangatuk حيث كانت الصفحة ترسم محتواها الحقيقي كاملًا رغم تعلّق الحدث
+    if not image_urls:
+        await context.close()
+        reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
+        return None, [], reason
+    if not navigated:
+        print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
+    print(f"  📊 إجمالي الصور: {len(image_urls)}")
+    return context, image_urls, ""
+
+
+# ---------------------------- منطق مشترك (يعمل مهما كان المسار) ----------------------------
+
 def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
     img = img.convert("RGB") if img.mode in ("P", "CMYK") else img
@@ -369,39 +594,11 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int) -> bytes:
     return out.getvalue()
 
 
-IMG_FETCH_RETRIES = int(os.environ.get("IMG_FETCH_RETRIES", "3"))
-IMG_FETCH_DELAY_MS = int(os.environ.get("IMG_FETCH_DELAY_MS", "120"))
-
-
-async def fetch_image_bytes(context, img_url: str, referer: str):
-    last_reason = "سبب غير معروف"
-    for attempt in range(1, IMG_FETCH_RETRIES + 1):
-        try:
-            resp = await context.request.get(
-                img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20000,
-            )
-            ctype = resp.headers.get("content-type", "")
-            if resp.ok and (ctype.startswith("image/") or ctype == ""):
-                body = await resp.body()
-                if body and len(body) >= 500:
-                    return body, None
-                last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(body) if body else 0} بايت)"
-            else:
-                last_reason = f"status={resp.status} content-type={ctype!r}"
-        except Exception as e:
-            last_reason = f"استثناء: {e}"
-        if attempt < IMG_FETCH_RETRIES:
-            await asyncio.sleep(0.6 * attempt)
-    return None, last_reason
-
-
 def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git"] + args, cwd=cwd, capture_output=True, text=True)
 
 
 def _read_remote_manifest_sync(commit_dir: str, branch: str) -> dict | None:
-    """يقرأ manifest.json كما هو على الفرع البعيد حاليًا (بدون التأثير على
-    working tree) عبر git show — لا يعتمد على النسخة المحلية القديمة."""
     _run_git(["fetch", "origin", branch], commit_dir)
     show = _run_git(["show", f"origin/{branch}:output/manifest.json"], commit_dir)
     if show.returncode != 0:
@@ -413,9 +610,6 @@ def _read_remote_manifest_sync(commit_dir: str, branch: str) -> dict | None:
 
 
 def merge_manifest_dict(base: dict, results: list) -> dict:
-    """يدمج نتائج هذه التشغيلة داخل manifest.json موجود مسبقًا (بدل إعادة
-    بنائه من الصفر) — يستبدل الفصل لو أُعيد معالجته (نفس chNum)، يضيفه لو
-    جديد، ويحافظ على كل مانهوا/فصل آخر لم تمسّه هذه التشغيلة بلا تغيير."""
     manifest = {"manga": {k: {**v, "chapters": list(v.get("chapters", []))}
                            for k, v in (base or {}).get("manga", {}).items()}}
     for r in results:
@@ -447,15 +641,6 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
 
 
 def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attempts: int = 5) -> tuple[bool, str]:
-    """
-    يدفع أي تغييرات موجودة حاليًا في working tree الخاص بالـworktree.
-    عند رفض الدفع (الفرع البعيد تقدّم)، لا نستخدم git rebase — عرضة لتعارضات
-    دمج نصي سهلة على ملفات JSON مُولَّدة بالكامل حتى لو كانت التغييرات فعليًا
-    متوافقة منطقيًا. بدلًا من ذلك: نجلب أحدث نسخة، ونعمل reset مختلط (mixed)
-    يُرجع مؤشر الفرع المحلي لآخر نقطة على البعيد دون لمس ملفات القرص إطلاقًا
-    (كل ما كان محليًا يتحوّل تلقائيًا لتغييرات غير مُلتَزمة)، ثم نُعيد
-    add+commit لحالة القرص الحالية فوق أحدث نسخة مباشرة — بلا أي آلية دمج.
-    """
     add = _run_git(["add", "output"], commit_dir)
     if add.returncode != 0:
         return False, f"git add فشل: {add.stderr.strip()[:200]}"
@@ -490,62 +675,33 @@ async def push_now(message: str) -> None:
     print(f"  {'✅' if ok else '⚠️'} دفع: {msg}")
 
 
-async def open_and_collect(browser, chapter_url: str, attempt: int):
-    context = await browser.new_context(
-        user_agent=UA,
-        viewport={"width": 1280, "height": 1000},
-        locale="en-US",
-        extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
-    )
-    await context.add_init_script(
-        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-    )
-    page = await context.new_page()
-
-    navigated = False
-    wait_strategy = "domcontentloaded" if attempt == 1 else "load"
-    try:
-        await page.goto(chapter_url, wait_until=wait_strategy, timeout=NAV_TIMEOUT_MS)
-        navigated = True
-    except Exception as e:
-        print(f"  ⚠️ تعذّر تحميل الصفحة ({wait_strategy}): {e}")
-
-    if navigated and await looks_like_challenge_page(page):
-        print("  🛡️ صفحة تحقق/حماية محتملة (Cloudflare أو ما شابه) — انتظار وإعادة تحميل")
-        await page.wait_for_timeout(5000)
-        try:
-            await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
-        except Exception as e:
-            print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
-
-    found_count = await wait_for_real_images(page, CONTENT_WAIT_MS, CONTENT_POLL_MS)
-    print(f"  🖼️ صور حقيقية مكتشفة عند أعلى الصفحة (تشخيصي): {found_count}")
-
-    t0 = time.monotonic()
-    image_urls = await extract_image_urls(page, chapter_url)
-    print(f"  ⏱️ زمن الاستخراج (تمرير واحد): {time.monotonic() - t0:.1f}ث")
-    await page.close()
-
-    if not image_urls:
-        await context.close()
-        reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
-        return None, [], reason
-    if not navigated:
-        print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
-    print(f"  📊 إجمالي الصور بعد التمرير التراكمي: {len(image_urls)}")
-    return context, image_urls, ""
-
-
-async def process_chapter(browser, chapter_url: str, index: int, total: int):
-    print(f"[{index}/{total}] فتح: {chapter_url}")
+async def get_chapter_images(browser, chapter_url: str, profile: dict):
+    """يعيد (context_أو_None, روابط_الصور, سبب_الفشل) بحسب أسلوب الجلب في
+    البروفايل — مسار HTTP مباشر لا يحتاج/ينشئ أي context متصفح إطلاقًا."""
+    if profile["fetch_mode"] == "http":
+        fail_reason = ""
+        for attempt in range(1, RETRY_PER_CHAPTER + 1):
+            if attempt > 1:
+                print(f"  🔁 إعادة محاولة طلب مباشر #{attempt}")
+            image_urls, fail_reason = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url)
+            if image_urls:
+                return None, image_urls, ""
+        return None, [], fail_reason
 
     context, image_urls, fail_reason = None, [], ""
     for attempt in range(1, RETRY_PER_CHAPTER + 1):
         if attempt > 1:
             print(f"  🔁 إعادة محاولة #{attempt}")
-        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt)
+        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt, profile)
         if image_urls:
             break
+    return context, image_urls, fail_reason
+
+
+async def process_chapter(browser, chapter_url: str, index: int, total: int, profile: dict):
+    print(f"[{index}/{total}] فتح: {chapter_url} — بروفايل: {profile['label']}")
+
+    context, image_urls, fail_reason = await get_chapter_images(browser, chapter_url, profile)
 
     if not image_urls:
         print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
@@ -555,10 +711,15 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
     chapter_dir = OUTPUT_DIR / manga_id / f"ch-{chapter_num}"
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
+    async def download(img_url: str):
+        if profile["fetch_mode"] == "http":
+            return await fetch_image_bytes_http(img_url, chapter_url)
+        return await fetch_image_bytes(context, img_url, chapter_url)
+
     saved_paths = []
     failed_indices = []
     for i, img_url in enumerate(image_urls, start=1):
-        raw, reason = await fetch_image_bytes(context, img_url, chapter_url)
+        raw, reason = await download(img_url)
         if not raw:
             print(f"  ⚠️ فشلت صورة {i}: {reason} — الرابط: {img_url}")
             failed_indices.append(i)
@@ -578,7 +739,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
         still_failed = []
         for i in failed_indices:
             img_url = image_urls[i - 1]
-            raw, reason = await fetch_image_bytes(context, img_url, chapter_url)
+            raw, reason = await download(img_url)
             if raw:
                 try:
                     compressed = compress_image(raw, MAX_WIDTH, QUALITY)
@@ -596,7 +757,8 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
         if still_failed:
             print(f"  ❌ تعذّر تحميل {len(still_failed)} صورة نهائيًا: {still_failed}")
 
-    await context.close()
+    if context:
+        await context.close()
 
     if not saved_paths:
         return None
@@ -608,9 +770,6 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int):
         "image_paths": saved_paths,
     }
 
-    # دفع تدريجي فوري لهذا الفصل: نبني manifest.json مدموجًا مع أحدث نسخة
-    # بعيدة (وليس فقط نتائج هذه التشغيلة) قبل كل دفعة تدريجية، حتى يبقى
-    # الملف دومًا امتدادًا متجانسًا للفرع البعيد لا نسخة منفصلة عنه
     if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR:
         remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
         merged = merge_manifest_dict(remote or {}, [result])
@@ -631,24 +790,35 @@ async def main():
         print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
         sys.exit(1)
 
+    profile = get_profile()
+    print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
+
+    if profile["fetch_mode"] == "unsupported":
+        print(f"🚫 {profile['label']} غير مدعوم تلقائيًا: {profile.get('unsupported_reason', '')}")
+        sys.exit(1)
+
     print(f"⚙️ الدفع التدريجي: {'مفعّل' if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR else 'مُعطَّل (دفعة واحدة بالنهاية)'}")
     print(f"⚙️ فلترة النطاق الصارمة: {'مفعّلة' if STRICT_DOMAIN_FILTER else 'مُعطَّلة'}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     results = []
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+    if profile["fetch_mode"] == "http":
+        # لا حاجة لإطلاق Chromium إطلاقًا لهذا البروفايل — توفير وقت تشغيل حقيقي
+        print("🚀 بروفايل HTTP مباشر — لن يُطلَق متصفح Chromium لهذه التشغيلة")
         for i, url in enumerate(chapter_urls, start=1):
-            r = await process_chapter(browser, url, i, len(chapter_urls))
+            r = await process_chapter(None, url, i, len(chapter_urls), profile)
             if r:
                 results.append(r)
-        await browser.close()
+    else:
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+            for i, url in enumerate(chapter_urls, start=1):
+                r = await process_chapter(browser, url, i, len(chapter_urls), profile)
+                if r:
+                    results.append(r)
+            await browser.close()
 
-    # نبني manifest.json النهائي بدمج نتائج كل التشغيلة فوق أحدث نسخة بعيدة
-    # فعليًا (لا فوق نسخة محلية قديمة، ولا من الصفر) — هذا يضمن أن أي فصل
-    # دفعه الدفع التدريجي (لتشغيلات أخرى موازية نظريًا، أو تشغيلة سابقة أثناء
-    # هذه الجلسة) لا يُفقد، وأن الدفعة النهائية امتداد متجانس دومًا لا تعارض
     base_manifest = {"manga": {}}
     if GIT_COMMIT_DIR:
         remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
@@ -667,9 +837,6 @@ async def main():
     print(f"\n✅ اكتمل: {len(results)} فصل من أصل {len(chapter_urls)}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
 
-    # دفعة أخيرة: إن كان الدفع التدريجي مفعّلًا هذه غالبًا لا تجد شيئًا جديدًا
-    # (كل فصل دُفع فور اكتماله)؛ إن كان مُعطَّلًا هذه هي الدفعة الوحيدة لكل
-    # النتائج دفعة واحدة، مبنية بنفس منطق الدمج الآمن أعلاه
     if GIT_COMMIT_DIR:
         ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تحديث manifest.json ونتائج التشغيل")
         print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
