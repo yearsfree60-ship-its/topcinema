@@ -48,11 +48,6 @@ on:
         required: false
         default: true
         type: boolean
-      resume_existing_output:
-        description: "الاستمرار على فرع output الحالي بتاريخه (آمن). عطّله فقط لتصفير الأرشيف بالكامل والبدء من فرع نظيف"
-        required: false
-        default: true
-        type: boolean
       strict_domain_filter:
         description: "استبعاد أي صورة من نطاق مختلف عن الأغلبية بين صور الفصل"
         required: false
@@ -94,22 +89,20 @@ jobs:
           pip install --quiet playwright pillow requests
           python -m playwright install --with-deps chromium
 
+      # [تعديل] لم يعد هناك أي خيار لتصفير الأرشيف. التشغيلة تستأنف دومًا
+      # على فرع output الحالي بتاريخه الكامل إن وُجد، وإلا تُنشئه فارغًا
+      # أول مرة فقط. هذا يضمن عدم حذف أي فصل مضغوط سابقًا مهما حدث.
       - name: تجهيز فرع الإخراج (git worktree)
-        env:
-          RESUME_EXISTING_OUTPUT: ${{ inputs.resume_existing_output }}
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
           git fetch origin --quiet || true
 
-          if [ "$RESUME_EXISTING_OUTPUT" = "true" ] && git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+          if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
             git worktree add output-worktree origin/output
             git -C output-worktree checkout -B output origin/output
           else
-            if [ "$RESUME_EXISTING_OUTPUT" != "true" ]; then
-              echo "⚠️ تم اختيار البدء من فرع نظيف — سيُستبدل أي فرع output موجود بالكامل عند أول دفع"
-            fi
             git worktree add --detach output-worktree
             git -C output-worktree checkout --orphan output
             git -C output-worktree rm -rf . > /dev/null 2>&1 || true
@@ -176,12 +169,18 @@ jobs:
             fi
           fi
 
+      # [تعديل] الآن يطبع رابطين: الأرشيف الكامل (كل الفصول المضغوطة تاريخيًا،
+      # لم يُلمَس) + رابط manifest مستقل خاص فقط بفصول هذه التشغيلة تحديدًا
+      # (output/runs/run-<RUN_ID>.json) — بلا أي حذف أو تصفير للأرشيف الرئيسي.
       - name: رابط النتيجة
         if: always() && !inputs.diagnostic_mode
         run: |
           echo "=================================================="
-          echo "manifest.json:"
+          echo "manifest.json الكامل (كل الفصول المضغوطة سابقًا وحاليًا، لم يُحذف منه شيء):"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
+          echo ""
+          echo "manifest خاص بهذه التشغيلة فقط (فصول تم العمل عليها الآن حصرًا):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/runs/run-${{ github.run_id }}.json"
           echo "=================================================="
 
       - name: رابط تقارير التشخيص
@@ -211,4 +210,5 @@ jobs:
         if: always() && !inputs.diagnostic_mode
         run: |
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
+          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/runs/run-${{ github.run_id }}.json" || true
           echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
