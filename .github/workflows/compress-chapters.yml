@@ -8,15 +8,15 @@ on:
         required: true
         type: string
       site:
-        description: "الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد)"
+        description: "الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). ملاحظة: عند تفعيل وضع التشخيص أدناه، هذا الاختيار يُتجاهَل تمامًا"
         required: true
         type: choice
         options:
+          - auto
           - azorafly
           - mangatuk
           - mangatime
           - manga_starz
-          - auto
         default: auto
       quality:
         description: "جودة الضغط (10-90)"
@@ -63,6 +63,11 @@ on:
         required: false
         default: "3"
         type: string
+      diagnostic_mode:
+        description: "وضع تشخيص موقع جديد: لا يُنزّل أو يُضغط أي فصل فعليًا. يفحص كل رابط مُدخَل بعمق (HTTP خام بدون متصفح، ثم متصفح كامل مع تمرير، ثم اختبار حماية السرقة على صورة عينة) ويكتب تقريرًا مفصلًا + لقطة شاشة، تمهيدًا لإضافة بروفايل جديد. يتجاهل اختيار 'الموقع المصدر' أعلاه بالكامل. يُفضَّل تمرير رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا)"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -130,7 +135,17 @@ jobs:
           STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
           RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
+          DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
         run: python compress_chapters.py
+
+      - name: رفع تقرير التشخيص كأرتيفاكت (نسخة احتياطية للتشغيلة، وضع التشخيص فقط)
+        if: ${{ always() && inputs.diagnostic_mode }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostic-report
+          path: ${{ env.OUTPUT_WORKTREE }}/output/diagnostics
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: دفع احتياطي نهائي (شبكة أمان)
         if: always()
@@ -175,6 +190,8 @@ jobs:
           echo "=================================================="
           echo "manifest.json:"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
+          echo "diagnostics (إن كان وضع التشخيص مفعّلًا):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/summary.json"
           echo "=================================================="
 
       - name: إجبار تحديث كاش jsDelivr فورًا
