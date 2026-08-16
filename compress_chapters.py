@@ -10,8 +10,6 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 - mangatime   → متصفح حقيقي + تمرير تراكمي إجباري + فلترة ودجات.
 - olympustaff → متصفح حقيقي (يجتاز Cloudflare تلقائيًا)، بدون تمرير، مع فلترة
                 ودجات.
-- manga_starz → غير مدعوم — يوقف التشغيلة فورًا (قبل معالجة أي فصل، فلا
-                فقدان لأي نتائج).
 - auto        → السلوك العام الآمن الافتراضي.
 ================================================================================
 
@@ -66,6 +64,24 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
    لأي فصل رقمه غير عددي بحت).
 10) رابط مكرر بالمدخلات يُستبعد (مهم خصوصًا مع HTTP_CONCURRENCY لمنع تعارض
     كتابة ملفات فعلي على نفس مجلد الفصل من نسختين متزامنتين).
+
+================================== إصلاحات ====================================
+[تصحيح حرج ١] عمليات git (add/read remote manifest) كانت تستخدم المسار
+  الحرفي الثابت "output" بدل احترام OUTPUT_DIR القابل للتخصيص عبر متغير
+  بيئة. أي تشغيلة بـOUTPUT_DIR مختلف كانت تفقد نتائجها بصمت (git لا يجد
+  تغييرات لأنه يراقب مجلدًا فارغًا). الآن تُستخدم OUTPUT_DIR فعليًا،
+  ومسار الدفع نسبي لمجلد GIT_COMMIT_DIR (يُتحقق من أن OUTPUT_DIR فرع من
+  GIT_COMMIT_DIR وإلا يُبلَّغ الخطأ بوضوح بدل فشل صامت).
+[تصحيح حرج ٢] استخراج الصور من <noscript> (بمساري HTTP والمتصفح) كان يثق
+  بأول كتلة noscript تحوي أي <img> دون تحقق، فقد يخطف بكسل تتبع/تحليلات لا
+  علاقة له بالمحتوى ويُسقط الاستخراج الحقيقي بصمت. الآن يُشترط عدد أدنى من
+  الصور (MIN_NOSCRIPT_IMAGES) قبل اعتماد نتيجة noscript كمصدر نهائي، وإلا
+  يُتابَع للطرق الأخرى (data-src / src عادي).
+[تصحيح حرج ٣] عمليات git الفرعية (fetch/show/add/commit/push) لم تكن
+  محمية من استثناءات غير متوقعة (git غير مثبت، GIT_COMMIT_DIR ليس
+  مستودعًا، صلاحيات...) فتوقف السكربت كاملًا بدل معالجة الخطأ بلطف. الآن
+  _run_git تُغلَّف بـtry/except وتُرجع نتيجة فاشلة واضحة بدل رمي استثناء.
+================================================================================
 """
 import asyncio
 import json
@@ -79,6 +95,8 @@ from pathlib import Path
 from urllib.parse import urlparse, urljoin
 
 import requests
+import requests.adapters  # استيراد صريح — كان يعمل سابقًا فقط بأثر جانبي غير موثّق
+import requests.cookies   # لاستخدام RequestsCookieJar في فحص إعادة استخدام الكوكيز
 from PIL import Image
 from io import BytesIO
 from playwright.async_api import async_playwright
@@ -131,12 +149,31 @@ DIAGNOSTIC_MODE = os.environ.get("DIAGNOSTIC_MODE", "false").strip().lower() == 
 
 WEBP_HARD_LIMIT = 16000
 
+# [تصحيح حرج ١] الحد الأدنى لعدد صور noscript قبل اعتمادها كمصدر نهائي —
+# يمنع خطف بكسل تتبع/تحليلات وحيد داخل <noscript> لا علاقة له بالمحتوى.
+MIN_NOSCRIPT_IMAGES = 2
+
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 _HTTP_SESSION = requests.Session()
 _HTTP_ADAPTER = requests.adapters.HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=0)
 _HTTP_SESSION.mount("http://", _HTTP_ADAPTER)
 _HTTP_SESSION.mount("https://", _HTTP_ADAPTER)
+
+
+class _NoCookiePolicy(__import__("http.cookiejar", fromlist=["DefaultCookiePolicy"]).DefaultCookiePolicy):
+    """يمنع _HTTP_SESSION المشتركة من تخزين أي كوكيز واردة إطلاقًا. بدون هذا،
+    كل استجابة (بما فيها فحص إعادة استخدام الكوكيز بوضع التشخيص) كانت تُراكم
+    كوكيزها داخل جلسة الاتصال المشتركة — تلوّث حالة غير مقصود بين طلبات غير
+    مرتبطة، ونمو غير محدود عبر تشغيلة طويلة تضم مئات الفصول. البروفايلات التي
+    تستخدم fetch_mode='http' (أزورافلاي) لا تحتاج كوكيز أصلًا، فتعطيلها هنا
+    آمن تمامًا ويُبقي الفائدة الحقيقية من الجلسة المشتركة (تجميع اتصالات)."""
+
+    def set_ok(self, cookie, request):
+        return False
+
+
+_HTTP_SESSION.cookies.set_policy(_NoCookiePolicy())
 
 IGNORE_PATTERN = re.compile(
     r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad|"
@@ -239,14 +276,6 @@ PROFILES = {
     "mangatuk": {"label": "مانجا توك", "fetch_mode": "browser", "do_scroll": False, "do_widget_filter": False},
     "mangatime": {"label": "مانجا تايم", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
     "olympustaff": {"label": "أولمبوس ستاف", "fetch_mode": "browser", "do_scroll": False, "do_widget_filter": True},
-    "manga_starz": {
-        "label": "ستار مانجا",
-        "fetch_mode": "unsupported",
-        "unsupported_reason": (
-            "محمي بتحدي Cloudflare كامل يكتشف بصمة الأتمتة حتى مع متصفح "
-            "Chromium حقيقي مؤتمت. لا حل معروف تلقائيًا حاليًا."
-        ),
-    },
     "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
 }
 
@@ -306,9 +335,13 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
     for block in noscript_blocks:
         for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', block):
             found.append(urljoin(base_url, m.group(1)))
-    if found:
-        return dedupe(found)
+    found = dedupe(found)
+    # [تصحيح حرج ٢] لا نثق بـnoscript إلا إذا حوى عددًا كافيًا من الصور،
+    # وإلا فهو على الأرجح بكسل تتبع/تحليلات معزول لا علاقة له بمحتوى الفصل.
+    if len(found) >= MIN_NOSCRIPT_IMAGES:
+        return found
 
+    data_src_found = []
     for tag_match in re.finditer(r"<img\b[^>]*>", html, re.I):
         tag = tag_match.group(0)
         u = None
@@ -322,13 +355,18 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
             if m:
                 u = m.group(1)
         if u and not u.startswith("data:"):
-            found.append(urljoin(base_url, u))
-    if found:
-        return dedupe(found)
+            data_src_found.append(urljoin(base_url, u))
+    data_src_found = dedupe(data_src_found)
+    if data_src_found:
+        return data_src_found
 
-    found = [urljoin(base_url, m.group(0)) for m in
-             re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
-    return dedupe(found)
+    # آخر ملاذ: صور noscript حتى لو كانت أقل من الحد الأدنى، خير من لا شيء
+    if found:
+        return found
+
+    plain_found = [urljoin(base_url, m.group(0)) for m in
+                    re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
+    return dedupe(plain_found)
 
 
 def _looks_like_challenge_html(html: str) -> bool:
@@ -615,18 +653,26 @@ async def extract_image_urls(page, base_url: str, do_scroll: bool, do_widget_fil
         if all_urls:
             return _apply_domain_filter(all_urls)
 
+    # [تصحيح حرج ٢] نفس منطق الحد الأدنى: لا نثق بـnoscript بمتصفح إلا إذا
+    # حوى عددًا كافيًا من الصور، وإلا نتابع لآخر ملاذ (مسح HTML الخام للصفحة).
     noscript_imgs = await page.eval_on_selector_all("noscript", "els => els.map(e => e.innerHTML)")
     found = []
     for html in noscript_imgs:
         for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', html):
             found.append(urljoin(base_url, m.group(1)))
-    if found:
-        return dedupe(found)
+    found = dedupe(found)
+    if len(found) >= MIN_NOSCRIPT_IMAGES:
+        return found
 
     html = await page.content()
-    found = [urljoin(base_url, m.group(0)) for m in
-             re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
-    return dedupe(found)
+    plain_found = [urljoin(base_url, m.group(0)) for m in
+                    re.finditer(r'https?://[^\s"\'<>\\]+?\.(?:jpg|jpeg|png|webp|avif)', html)]
+    plain_found = dedupe(plain_found)
+    if plain_found:
+        return plain_found
+
+    # آخر ملاذ: صور noscript حتى لو أقل من الحد الأدنى، خير من لا شيء
+    return found
 
 
 async def fetch_image_bytes(context, img_url: str, referer: str):
@@ -729,13 +775,44 @@ def build_run_manifest(results: list) -> dict:
     return merge_manifest_dict({}, results)
 
 
+# [تصحيح حرج ٣] _run_git الآن لا يرمي استثناءً أبدًا: أي فشل (git غير
+# مثبت، مسار غير موجود، صلاحيات...) يُحوَّل لـCompletedProcess وهمي بكود
+# رجوع غير صفري ورسالة خطأ واضحة بدل إيقاف السكربت بالكامل.
 def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
-    return subprocess.run(["git"] + args, cwd=cwd, capture_output=True, text=True)
+    try:
+        return subprocess.run(["git"] + args, cwd=cwd, capture_output=True, text=True)
+    except Exception as e:
+        return subprocess.CompletedProcess(
+            args=["git"] + args, returncode=1, stdout="", stderr=f"تعذّر تشغيل git: {e}"
+        )
+
+
+# [تصحيح حرج ١] مسار output النسبي داخل مستودع git يجب أن يعكس OUTPUT_DIR
+# الفعلي، لا اسمًا ثابتًا. نحسبه مرة واحدة ونتحقق أنه فرع فعلي من
+# GIT_COMMIT_DIR، وإلا نُبلِّغ بوضوح بدل فشل صامت لاحقًا.
+def _compute_git_relative_output_dir(commit_dir: str) -> str | None:
+    try:
+        commit_root = Path(commit_dir).resolve()
+        output_abs = OUTPUT_DIR.resolve()
+        rel = output_abs.relative_to(commit_root)
+        return str(rel).replace(os.sep, "/")
+    except Exception:
+        print(
+            f"⚠️ OUTPUT_DIR ({OUTPUT_DIR}) ليس فرعًا من GIT_COMMIT_DIR ({commit_dir}) — "
+            "لن تعمل عمليات git (add/read remote manifest) بشكل صحيح على هذا المسار"
+        )
+        return None
 
 
 def _read_remote_manifest_sync(commit_dir: str, branch: str) -> dict | None:
-    _run_git(["fetch", "origin", branch], commit_dir)
-    show = _run_git(["show", f"origin/{branch}:output/manifest.json"], commit_dir)
+    git_rel_output = _compute_git_relative_output_dir(commit_dir)
+    if git_rel_output is None:
+        return None
+    fetch = _run_git(["fetch", "origin", branch], commit_dir)
+    if fetch.returncode != 0:
+        print(f"  ⚠️ فشل git fetch: {fetch.stderr.strip()[:200]}")
+        return None
+    show = _run_git(["show", f"origin/{branch}:{git_rel_output}/manifest.json"], commit_dir)
     if show.returncode != 0:
         return None
     try:
@@ -778,7 +855,14 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
 
 
 def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attempts: int = 5) -> tuple[bool, str]:
-    add = _run_git(["add", "output"], commit_dir)
+    # [تصحيح حرج ١] نستخدم مسار OUTPUT_DIR الفعلي المحسوب نسبيًا لمستودع
+    # git، بدل الاسم الحرفي الثابت "output" الذي كان يتجاهل تخصيص
+    # OUTPUT_DIR بالكامل ويسبب فقدان نتائج صامتًا.
+    git_rel_output = _compute_git_relative_output_dir(commit_dir)
+    if git_rel_output is None:
+        return False, f"OUTPUT_DIR ({OUTPUT_DIR}) ليس داخل GIT_COMMIT_DIR ({commit_dir}) — تعذّر تحديد مسار الدفع"
+
+    add = _run_git(["add", git_rel_output], commit_dir)
     if add.returncode != 0:
         return False, f"git add فشل: {add.stderr.strip()[:200]}"
     diff = _run_git(["diff", "--cached", "--quiet"], commit_dir)
@@ -794,7 +878,7 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
             return True, "تم الدفع"
         _run_git(["fetch", "origin", branch], commit_dir)
         _run_git(["reset", f"origin/{branch}"], commit_dir)
-        _run_git(["add", "output"], commit_dir)
+        _run_git(["add", git_rel_output], commit_dir)
         diff2 = _run_git(["diff", "--cached", "--quiet"], commit_dir)
         if diff2.returncode == 0:
             return True, "أصبحت التغييرات مطابقة لأحدث نسخة على البعيد أصلًا"
@@ -910,7 +994,8 @@ def _static_probe_sync(url: str) -> dict:
     result = {
         "status_code": None, "headers_of_interest": {}, "challenge_detected": False,
         "protection_signatures": [], "images_via_noscript": 0, "images_via_data_attr": 0,
-        "images_via_plain_src": 0, "sample_image_urls": [], "raw_cookies_received": [], "error": None,
+        "images_via_plain_src": 0, "extracted_image_count": 0, "extracted_sample_urls": [],
+        "sample_image_urls": [], "raw_cookies_received": [], "error": None,
     }
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
@@ -957,7 +1042,18 @@ def _static_probe_sync(url: str) -> dict:
     result["images_via_data_attr"] = len(data_imgs)
     result["images_via_plain_src"] = len(plain_imgs)
 
-    best_list = ns_imgs or data_imgs or plain_imgs
+    # [إصلاح] عدّ منفصل (noscript/data-attr/plain-src) مفيد للتشخيص البصري،
+    # لكنه لا يطابق أولوية الاختيار الفعلية في extract_images_from_html()
+    # (noscript إن بلغ الحد الأدنى ← وإلا data-attr ← ...). أخذ max() الثلاثة
+    # كان يُنتج رقمًا متفائلًا قد لا يتحقق فعليًا في مسار HTTP بالإنتاج. الآن
+    # نستدعي دالة الإنتاج الحقيقية نفسها لعدد ونماذج موثوقة 100%.
+    extracted = extract_images_from_html(html, url)
+    result["extracted_image_count"] = len(extracted)
+    result["extracted_sample_urls"] = extracted[:3]
+
+    # [تصحيح حرج ٢] نفس منطق الحد الأدنى هنا أيضًا في عرض عينة الصور
+    # التشخيصية، لتفادي تضليل التوصية الآلية ببكسل تتبع وحيد.
+    best_list = (ns_imgs if len(ns_imgs) >= MIN_NOSCRIPT_IMAGES else []) or data_imgs or plain_imgs or ns_imgs
     result["sample_image_urls"] = best_list[:3]
     return result
 
@@ -1087,6 +1183,15 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     except Exception as e:
         print(f"  ⚠️ تعذّر أخذ لقطة شاشة: {e}")
 
+    # [إصلاح] "images_at_t0"/"images_after_wait" عدّ خام لكل <img> بالصفحة
+    # (شامل الودجات/الشريط الجانبي)، وقريب من الصفر دائمًا فور domcontentloaded
+    # — استخدامه لتقرير "هل يحتاج تمريرًا؟" يجعل الشرط صحيحًا شبه دائمًا حتى
+    # لمواقع لا تحتاج تمريرًا إطلاقًا. نأخذ بدلًا منه لقطة صور مطابقة فعليًا
+    # لمحددات المحتوى (CONTENT_SELECTORS) *قبل* أي تمرير — وهي نفس المقارنة
+    # المستخدَمة لاتخاذ قرار do_scroll الحقيقي في الإنتاج.
+    snapshot_items = await snapshot_images(page, CONTENT_SELECTORS)
+    result["content_images_before_scroll"] = len(snapshot_items)
+
     scrolled_items = await collect_images_while_scrolling(page, CONTENT_SELECTORS)
     result["images_after_scroll"] = len(scrolled_items)
 
@@ -1139,27 +1244,23 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     return result
 
 
-def _recommend_profile(static_r: dict, browser_r: dict) -> dict:
+def _recommend_profile(static_r: dict, browser_r: dict, rate_limit_r: dict | None = None) -> dict:
     reasons = []
     fetch_mode = "browser"
 
-    static_total = max(
-        static_r.get("images_via_noscript", 0),
-        static_r.get("images_via_data_attr", 0),
-        static_r.get("images_via_plain_src", 0),
-    )
+    static_total = static_r.get("extracted_image_count", 0)
     hp = browser_r.get("hotlink_probe")
 
     if static_total >= 3 and not static_r.get("challenge_detected") and hp and hp["direct_http_success"]:
         fetch_mode = "http"
-        reasons.append("الفحص الثابت وجد صورًا كافية بالـHTML الخام، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة")
+        reasons.append(f"مسار HTTP المباشر الفعلي (extract_images_from_html) سيستخرج {static_total} صورة فعليًا، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة")
     else:
         if static_r.get("challenge_detected"):
             sigs = static_r.get("protection_signatures") or browser_r.get("protection_signatures") or []
             sig_txt = f" ({', '.join(sigs)})" if sigs else ""
             reasons.append(f"صفحة تحقق/حماية ظهرت حتى بالطلب الثابت{sig_txt} — يحتاج متصفحًا حقيقيًا على الأقل")
         if static_total < 3:
-            reasons.append("HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل")
+            reasons.append(f"مسار HTTP المباشر الفعلي سيستخرج {static_total} صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)")
         if hp and not hp["direct_http_success"] and hp["browser_session_success"]:
             reasons.append("صورة العينة رفضت التحميل المباشر بدون جلسة، ونجحت فقط عبر جلسة متصفح — حماية سرقة (hotlink) حقيقية")
 
@@ -1176,14 +1277,33 @@ def _recommend_profile(static_r: dict, browser_r: dict) -> dict:
         wait_txt = f"{aw.get('became_ready_after_sec')}ث" if aw.get("became_ready_after_sec") is not None else "غير محدد"
         reasons.append(f"جدار مانع إعلانات مكتشَف — استغرق زر التجاوز {wait_txt} ليصبح جاهزًا فعليًا")
 
-    t0 = browser_r.get("images_at_t0") or 0
+    # [إصلاح] المقارنة الصحيحة لقرار do_scroll: صور مطابقة لمحددات المحتوى
+    # *قبل* التمرير مقابل بعده — لا العدّ الخام شبه الصفري عند t0 (انظر
+    # التعليق في _browser_probe). توافق خلفي: لو الحقل الجديد غير متوفر
+    # (نتيجة قديمة محفوظة)، نرجع للمقياس القديم بدل الانهيار.
+    before_scroll = browser_r.get("content_images_before_scroll")
+    if before_scroll is None:
+        before_scroll = browser_r.get("images_at_t0") or 0
     after_scroll = browser_r.get("images_after_scroll") or 0
-    do_scroll = after_scroll > max(3, int(t0 * 1.15))
+    do_scroll = after_scroll > max(3, int(before_scroll * 1.15))
     do_widget_filter = (browser_r.get("widget_excluded_count") or 0) > 0
+
+    # [إصلاح] ربط فحص تحديد المعدل (⑤) فعليًا بالتوصية النهائية — كان يُطبَع
+    # منفصلًا فقط رغم أن التوثيق يَعِد بأنه "يفيد تحديد HTTP_CONCURRENCY الآمن".
+    rl = rate_limit_r or {}
+    if rl.get("rate_limited_detected"):
+        suggested_http_concurrency = 1
+        reasons.append(
+            f"⚠️ تحديد معدل مكتشَف فعليًا (حالات: {rl.get('status_codes')}) — "
+            f"يُنصَح بـHTTP_CONCURRENCY=1 لهذا الموقع تحديدًا بدل الافتراضي"
+        )
+    else:
+        suggested_http_concurrency = 3
+        reasons.append("لا تحديد معدل ظاهر في فحص سريع (4 طلبات) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية")
 
     return {
         "fetch_mode": fetch_mode, "do_scroll": do_scroll, "do_widget_filter": do_widget_filter,
-        "reasons": reasons,
+        "suggested_http_concurrency": suggested_http_concurrency, "reasons": reasons,
     }
 
 
@@ -1205,6 +1325,7 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
         if static_r["protection_signatures"]:
             print(f"   🛡️ مزوّد الحماية المُصنَّف: {', '.join(static_r['protection_signatures'])}")
         print(f"   صور عبر noscript: {static_r['images_via_noscript']} | عبر data-src: {static_r['images_via_data_attr']} | عبر src عادي: {static_r['images_via_plain_src']}")
+        print(f"   📌 العدد الذي سيُستخرَج فعليًا بمسار HTTP المباشر (نفس منطق الإنتاج): {static_r['extracted_image_count']}")
         if static_r["sample_image_urls"]:
             print("   عينة روابط صور من HTML الثابت:")
             for u in static_r["sample_image_urls"]:
@@ -1267,12 +1388,14 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
     if browser_r["screenshot_path"]:
         print(f"   🖼️ لقطة شاشة مرجعية محفوظة: {browser_r['screenshot_path']}")
 
-    recommendation = _recommend_profile(static_r, browser_r)
+    recommendation = _recommend_profile(static_r, browser_r, rl)
     print("⑥ التوصية المقترحة لبروفايل جديد:")
     print(f"   fetch_mode المقترح: {recommendation['fetch_mode']}")
     if recommendation["fetch_mode"] == "browser":
         print(f"   do_scroll المقترح: {recommendation['do_scroll']}")
         print(f"   do_widget_filter المقترح: {recommendation['do_widget_filter']}")
+    if recommendation["fetch_mode"] == "http":
+        print(f"   HTTP_CONCURRENCY المقترح لهذا الموقع: {recommendation['suggested_http_concurrency']}")
     for reason in recommendation["reasons"]:
         print(f"   • {reason}")
     print("   جاهز للصق داخل قاموس PROFILES:")
@@ -1360,9 +1483,6 @@ async def main():
     print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
 
     fetch_mode = profile.get("fetch_mode", "browser")
-    if fetch_mode == "unsupported":
-        print(f"🚫 {profile['label']} غير مدعوم تلقائيًا: {profile.get('unsupported_reason', '')}")
-        sys.exit(1)
 
     print(f"⚙️ الدفع التدريجي: {'مفعّل' if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR else 'مُعطَّل (دفعة واحدة بالنهاية)'}")
     print(f"⚙️ فلترة النطاق الصارمة: {'مفعّلة' if STRICT_DOMAIN_FILTER else 'مُعطَّلة'}")
