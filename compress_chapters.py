@@ -10,6 +10,11 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
 - mangatime   → متصفح حقيقي + تمرير تراكمي إجباري + فلترة ودجات.
 - olympustaff → متصفح حقيقي (يجتاز Cloudflare تلقائيًا)، بدون تمرير، مع فلترة
                 ودجات.
+- procomic    → HTTP مباشر. لا توجد وسوم <img> فعلية بالـHTML الخام إطلاقًا؛
+                الصور تصل فقط عبر آخر ملاذ نصي عام (JSON/script مُضمَّن).
+                تُطبَّق تصفية allowlist صارمة بنمط '/pN/' بمسار الرابط
+                لاستبعاد صورة OG/SEO المصغّرة ونسخة CDN المكررة لصفحة1، مع
+                فرز الصفحات برقمها الفعلي بدل ترتيب ظهورها بالنص الخام.
 - auto        → السلوك العام الآمن الافتراضي.
 ================================================================================
 
@@ -81,6 +86,21 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
   محمية من استثناءات غير متوقعة (git غير مثبت، GIT_COMMIT_DIR ليس
   مستودعًا، صلاحيات...) فتوقف السكربت كاملًا بدل معالجة الخطأ بلطف. الآن
   _run_git تُغلَّف بـtry/except وتُرجع نتيجة فاشلة واضحة بدل رمي استثناء.
+[إضافة موقع جديد — procomic] تشخيص فعلي (JSON مرفق من المستخدم على رابط
+  فصل حقيقي) كشف أن procomic.net لا يملك وسوم <img> فعلية بالـHTML الخام
+  إطلاقًا (noscript/data-src/plain-src كلها صفر) — الصور تصل فقط عبر آخر
+  ملاذ نصي عام بـextract_images_from_html (مسح regex على النص الخام يلتقط
+  روابط JSON مُضمَّن مسبقًا، نمط شائع بتطبيقات SSR كـNext.js). كذلك فحص
+  المتصفح الكامل غير موثوق هنا (191 صورة بعد التمرير، 0 منها طابق أي محدد
+  محتوى معروف، وغالبيتها أيقونات واجهة procomic.net نفسه + صورة إعلان من
+  s3.pubfuture.com). الاستخراج النصي العام رغم نجاحه يُرجع مزيجًا يحتاج
+  تصفية: صورة OG/SEO مصغّرة واحدة (لا علاقة لها بصفحات الفصل)، ونسخة
+  معاينة مكررة لصفحة1 على cdn3.procomic.net (نفس اسم الملف الأساسي، لكن
+  بمسار بلا مجلد صفحة 'pN'، بعكس كل صور المحتوى الحقيقية التي تمر حصرًا
+  عبر app.procomic.net/chapters/{manga}/{chapter}/pN/...). أُضيفت آلية
+  allowlist عامة قابلة لإعادة الاستخدام لأي بروفايل مستقبلي مشابه
+  (http_content_pattern) بدل حل مخصص صلب لـprocomic وحده — راجع
+  _apply_http_content_filter و_page_number_from_url أدناه.
 ================================================================================
 """
 import asyncio
@@ -276,6 +296,17 @@ PROFILES = {
     "mangatuk": {"label": "مانجا توك", "fetch_mode": "browser", "do_scroll": False, "do_widget_filter": False},
     "mangatime": {"label": "مانجا تايم", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
     "olympustaff": {"label": "أولمبوس ستاف", "fetch_mode": "browser", "do_scroll": False, "do_widget_filter": True},
+    "procomic": {
+        "label": "برو كوميك",
+        "fetch_mode": "http",
+        # [إضافة موقع جديد] procomic لا يملك وسوم <img> فعلية بالـHTML
+        # الخام (يعتمد على استخراج regex عام على نص/JSON مُضمَّن مسبقًا).
+        # صور المحتوى الحقيقية تمر حصرًا عبر app.procomic.net/chapters/
+        # {manga}/{chapter}/pN/... — هذا النمط allowlist صارم يستبعد تلقائيًا
+        # صورة OG/SEO المصغّرة الوحيدة، ونسخة المعاينة المكررة لصفحة1 على
+        # cdn3.procomic.net (بلا مجلد pN بمسارها). راجع _apply_http_content_filter.
+        "http_content_pattern": r"app\.procomic\.net/chapters/.+?/p\d+/",
+    },
     "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
 }
 
@@ -327,7 +358,7 @@ def dedupe(urls: list[str]) -> list[str]:
     return out
 
 
-# ---------------------------- مسار HTTP المباشر (azorafly) ----------------------------
+# ---------------------------- مسار HTTP المباشر (azorafly / procomic) ----------------------------
 
 def extract_images_from_html(html: str, base_url: str) -> list[str]:
     noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
@@ -376,7 +407,41 @@ def _looks_like_challenge_html(html: str) -> bool:
     return sum(1 for m in CHALLENGE_BODY_MARKERS if m in low) >= 2
 
 
-def fetch_via_http_simple_sync(chapter_url: str) -> tuple[list[str], str]:
+def _page_number_from_url(url: str) -> float:
+    """يستخرج رقم صفحة الفصل من الرابط لو وُجد نمط '/pN/' الشائع (مثل
+    procomic: /chapters/{manga}/{chapter}/p3/...). يُستخدَم فقط لإعادة ترتيب
+    قائمة صور مستخرَجة عبر مسار fallback نصي عام لا يضمن ترتيب الصفحات
+    الفعلي (يعتمد ترتيب ظهورها بالنص الخام/JSON المُضمَّن فقط). الروابط
+    التي لا تطابق النمط تُدفَع لنهاية القائمة (inf) بدل كسر الفرز.
+    """
+    m = re.search(r"/p(\d+)/", url)
+    return float(m.group(1)) if m else float("inf")
+
+
+def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
+    """[إضافة procomic] بعض المواقع تُخرِج عبر مسار HTTP المباشر صور محتوى
+    حقيقية مختلطة بصور زائدة لا علاقة لها بصفحات الفصل (صورة OG/SEO مصغّرة،
+    نسخة معاينة مكررة على نطاق CDN آخر...). 'http_content_pattern' الاختياري
+    بالبروفايل يسمح بتحديد نمط تضمين (allowlist) صارم بدل استبعاد كل حالة
+    زائدة بمنطق عام قد يخطئ على مواقع أخرى. إن لم يُطابق أي رابط النمط
+    (تغيّر بنية الموقع مثلًا) نرجع للقائمة الأصلية كاملة بدل إرجاع فصل فارغ
+    بصمت — فشل واضح بالخطوة التالية أفضل من فقدان صامت.
+    """
+    pattern = profile.get("http_content_pattern")
+    if not pattern:
+        return urls
+    filtered = [u for u in urls if re.search(pattern, u)]
+    if not filtered:
+        print("  ⚠️ لم يُطابق أي رابط نمط المحتوى المتوقع لهذا البروفايل — استخدام القائمة الكاملة دون تصفية")
+        return urls
+    excluded = len(urls) - len(filtered)
+    if excluded:
+        print(f"  🧹 [procomic] استُبعدت {excluded} صورة زائدة (SEO/معاينة مكررة) بواسطة allowlist المحتوى")
+    filtered.sort(key=_page_number_from_url)
+    return filtered
+
+
+def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str]:
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
         resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
@@ -389,6 +454,8 @@ def fetch_via_http_simple_sync(chapter_url: str) -> tuple[list[str], str]:
     urls = extract_images_from_html(html, chapter_url)
     if not urls:
         return [], "لم يُعثر على صور في HTML الثابت"
+    if profile:
+        urls = _apply_http_content_filter(urls, profile)
     return urls, ""
 
 
@@ -903,7 +970,7 @@ async def get_chapter_images(browser, chapter_url: str, profile: dict):
                 delay = 1.5 * attempt
                 print(f"  🔁 إعادة محاولة طلب مباشر #{attempt} (بعد {delay:.1f}ث)")
                 await asyncio.sleep(delay)
-            image_urls, fail_reason = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url)
+            image_urls, fail_reason = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url, profile)
             if image_urls:
                 return None, image_urls, ""
         return None, [], fail_reason
