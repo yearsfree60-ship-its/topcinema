@@ -4,20 +4,19 @@ on:
   workflow_dispatch:
     inputs:
       chapter_urls:
-        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح) — كلها من نفس الموقع المختار أدناه"
+        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح) — كلها من نفس الموقع المختار أدناه. بوضع التشخيص: رابط أو رابطين فقط يكفي (كل رابط يشغّل 5 مراحل فحص كاملة)"
         required: true
         type: string
       site:
-        description: "الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). ملاحظة: عند تفعيل وضع التشخيص أدناه، هذا الاختيار يُتجاهَل تمامًا"
+        description: "الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). يُتجاهَل كليًا لو diagnostic_mode مفعّلًا"
         required: true
         type: choice
         options:
-          - auto
           - azorafly
           - mangatuk
           - mangatime
           - olympustaff
-          - manga_starz
+          - auto
         default: auto
       quality:
         description: "جودة الضغط (10-90)"
@@ -39,8 +38,18 @@ on:
         required: false
         default: true
         type: boolean
+      diagnostic_mode:
+        description: "وضع التشخيص: لا يُنزَّل/يُضغط أي فصل فعليًا. يفحص روابط chapter_urls بخمس مراحل (HTTP خام، متصفح كامل، حماية سرقة، تصنيف مزوّد الحماية، تحديد المعدل) وينتج توصية بروفايل جاهزة للصق + تقرير JSON + لقطة شاشة لكل رابط. يتجاهل اختيار الموقع أعلاه كليًا"
+        required: false
+        default: false
+        type: boolean
       enable_incremental_push:
         description: "دفع كل فصل فور اكتماله. عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
+        required: false
+        default: true
+        type: boolean
+      resume_existing_output:
+        description: "الاستمرار على فرع output الحالي بتاريخه (آمن). عطّله فقط لتصفير الأرشيف بالكامل والبدء من فرع نظيف"
         required: false
         default: true
         type: boolean
@@ -59,11 +68,6 @@ on:
         required: false
         default: "3"
         type: string
-      diagnostic_mode:
-        description: "وضع تشخيص موقع جديد: لا يُنزّل أو يُضغط أي فصل فعليًا. يفحص كل رابط مُدخَل بعمق (HTTP خام بدون متصفح، ثم متصفح كامل مع تمرير، ثم اختبار حماية السرقة على صورة عينة) ويكتب تقريرًا مفصلًا + لقطة شاشة، تمهيدًا لإضافة بروفايل جديد. يتجاهل اختيار 'الموقع المصدر' أعلاه بالكامل. يُفضَّل تمرير رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا)"
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
@@ -91,24 +95,21 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: تجهيز فرع الإخراج (git worktree)
-        # يستمر دومًا على فرع output الحالي بتاريخه الكامل إن وُجد (لا يوجد
-        # خيار لتصفيره أو حذفه من هذا الـworkflow إطلاقًا — الأرشيف المتراكم
-        # من تشغيلات سابقة، أيامًا أو أسابيع، محمي دومًا). فرع output يُنشأ
-        # نظيفًا فقط في أول مرة على الإطلاق (لا وجود له بعد على المستودع).
-        # لعرض فصول تشغيلة بعينها فقط دون البحث بين كل الأرشيف، استخدم رابط
-        # manifest الخاص بهذه التشغيلة (runs/run-<RUN_ID>.json) الذي يُطبَع
-        # في خطوة "رابط النتيجة" أدناه — دون أي حذف لما سبق.
+        env:
+          RESUME_EXISTING_OUTPUT: ${{ inputs.resume_existing_output }}
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
           git fetch origin --quiet || true
 
-          if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+          if [ "$RESUME_EXISTING_OUTPUT" = "true" ] && git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
             git worktree add output-worktree origin/output
             git -C output-worktree checkout -B output origin/output
           else
-            echo "ℹ️ لا يوجد فرع output بعد على المستودع — سيُنشأ نظيفًا لأول مرة"
+            if [ "$RESUME_EXISTING_OUTPUT" != "true" ]; then
+              echo "⚠️ تم اختيار البدء من فرع نظيف — سيُستبدل أي فرع output موجود بالكامل عند أول دفع"
+            fi
             git worktree add --detach output-worktree
             git -C output-worktree checkout --orphan output
             git -C output-worktree rm -rf . > /dev/null 2>&1 || true
@@ -126,6 +127,8 @@ jobs:
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
+          DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
+          RUN_ID: ${{ github.run_id }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
           ENABLE_INCREMENTAL_PUSH: ${{ inputs.enable_incremental_push }}
@@ -134,18 +137,7 @@ jobs:
           STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
           RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
-          DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
-          RUN_ID: ${{ github.run_id }}
         run: python compress_chapters.py
-
-      - name: رفع تقرير التشخيص كأرتيفاكت (نسخة احتياطية للتشغيلة، وضع التشخيص فقط)
-        if: ${{ always() && inputs.diagnostic_mode }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: diagnostic-report
-          path: ${{ env.OUTPUT_WORKTREE }}/output/diagnostics
-          if-no-files-found: ignore
-          retention-days: 14
 
       - name: دفع احتياطي نهائي (شبكة أمان)
         if: always()
@@ -185,22 +177,38 @@ jobs:
           fi
 
       - name: رابط النتيجة
-        if: always()
+        if: always() && !inputs.diagnostic_mode
         run: |
           echo "=================================================="
-          echo "manifest.json (الأرشيف الكامل المتراكم — كل التشغيلات):"
+          echo "manifest.json:"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
-          echo ""
-          echo "manifest خاص بفصول هذه التشغيلة فقط (لن يظهر إلا إذا اختير وضع تشخيص=false):"
-          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/runs/run-${{ github.run_id }}.json"
-          echo ""
-          echo "diagnostics (إن كان وضع التشخيص مفعّلًا):"
-          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/summary.json"
           echo "=================================================="
 
+      - name: رابط تقارير التشخيص
+        if: always() && inputs.diagnostic_mode
+        run: |
+          echo "=================================================="
+          echo "ملخص التشخيص (على فرع output إن كان الدفع متاحًا):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/summary.json"
+          echo "أو حمّل أرتيفاكت 'diagnostics-${{ github.run_id }}' من صفحة هذه التشغيلة أعلاه (يضم لقطات الشاشة أيضًا)"
+          echo "=================================================="
+
+      # رفع مجلد التشخيص (JSON + لقطات شاشة) كأرتيفاكت مستقل لهذه التشغيلة —
+      # الكود نفسه يطبع رسالة تَعِد بهذا؛ بدون هذه الخطوة كانت الرسالة غير
+      # صحيحة لأن شيئًا لم يكن يُرفَع فعليًا. يعمل فقط إن كان diagnostic_mode
+      # مفعّلًا (المجلد لن يوجد أصلًا في التشغيل العادي)؛ if-no-files-found
+      # يمنع فشل الخطوة لو لم يوجد المجلد.
+      - name: رفع تقارير التشخيص كأرتيفاكت
+        if: always() && inputs.diagnostic_mode
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostics-${{ github.run_id }}
+          path: ${{ env.OUTPUT_WORKTREE }}/output/diagnostics
+          if-no-files-found: warn
+          retention-days: 14
+
       - name: إجبار تحديث كاش jsDelivr فورًا
-        if: always()
+        if: always() && !inputs.diagnostic_mode
         run: |
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
-          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/runs/run-${{ github.run_id }}.json" || true
           echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
