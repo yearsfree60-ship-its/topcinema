@@ -44,11 +44,6 @@ on:
         required: false
         default: true
         type: boolean
-      resume_existing_output:
-        description: "الاستمرار على فرع output الحالي بتاريخه (آمن). عطّله فقط لتصفير الأرشيف بالكامل والبدء من فرع نظيف"
-        required: false
-        default: true
-        type: boolean
       strict_domain_filter:
         description: "استبعاد أي صورة من نطاق مختلف عن الأغلبية بين صور الفصل"
         required: false
@@ -96,21 +91,24 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: تجهيز فرع الإخراج (git worktree)
-        env:
-          RESUME_EXISTING_OUTPUT: ${{ inputs.resume_existing_output }}
+        # يستمر دومًا على فرع output الحالي بتاريخه الكامل إن وُجد (لا يوجد
+        # خيار لتصفيره أو حذفه من هذا الـworkflow إطلاقًا — الأرشيف المتراكم
+        # من تشغيلات سابقة، أيامًا أو أسابيع، محمي دومًا). فرع output يُنشأ
+        # نظيفًا فقط في أول مرة على الإطلاق (لا وجود له بعد على المستودع).
+        # لعرض فصول تشغيلة بعينها فقط دون البحث بين كل الأرشيف، استخدم رابط
+        # manifest الخاص بهذه التشغيلة (runs/run-<RUN_ID>.json) الذي يُطبَع
+        # في خطوة "رابط النتيجة" أدناه — دون أي حذف لما سبق.
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
           git fetch origin --quiet || true
 
-          if [ "$RESUME_EXISTING_OUTPUT" = "true" ] && git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+          if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
             git worktree add output-worktree origin/output
             git -C output-worktree checkout -B output origin/output
           else
-            if [ "$RESUME_EXISTING_OUTPUT" != "true" ]; then
-              echo "⚠️ تم اختيار البدء من فرع نظيف — سيُستبدل أي فرع output موجود بالكامل عند أول دفع"
-            fi
+            echo "ℹ️ لا يوجد فرع output بعد على المستودع — سيُنشأ نظيفًا لأول مرة"
             git worktree add --detach output-worktree
             git -C output-worktree checkout --orphan output
             git -C output-worktree rm -rf . > /dev/null 2>&1 || true
@@ -137,6 +135,7 @@ jobs:
           RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
           DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
+          RUN_ID: ${{ github.run_id }}
         run: python compress_chapters.py
 
       - name: رفع تقرير التشخيص كأرتيفاكت (نسخة احتياطية للتشغيلة، وضع التشخيص فقط)
@@ -189,8 +188,12 @@ jobs:
         if: always()
         run: |
           echo "=================================================="
-          echo "manifest.json:"
+          echo "manifest.json (الأرشيف الكامل المتراكم — كل التشغيلات):"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
+          echo ""
+          echo "manifest خاص بفصول هذه التشغيلة فقط (لن يظهر إلا إذا اختير وضع تشخيص=false):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/runs/run-${{ github.run_id }}.json"
+          echo ""
           echo "diagnostics (إن كان وضع التشخيص مفعّلًا):"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/summary.json"
           echo "=================================================="
@@ -199,4 +202,5 @@ jobs:
         if: always()
         run: |
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
+          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/runs/run-${{ github.run_id }}.json" || true
           echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
