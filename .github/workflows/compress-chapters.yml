@@ -28,6 +28,16 @@ on:
         required: false
         default: "800"
         type: string
+      http_concurrency:
+        description: "عدد الفصول المُعالَجة بالتوازي (بروفايل azorafly/HTTP فقط، حد أقصى 10 — بلا تأثير على البروفايلات الأخرى)"
+        required: false
+        default: "3"
+        type: string
+      skip_existing_chapters:
+        description: "تخطي أي فصل محفوظ مسبقًا على فرع output (بنفس المانهوا ورقم الفصل) بدل إعادة تحميله وضغطه"
+        required: false
+        default: true
+        type: boolean
       enable_incremental_push:
         description: "دفع كل فصل فور اكتماله. عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
         required: false
@@ -110,6 +120,8 @@ jobs:
           SITE_PROFILE: ${{ inputs.site }}
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
+          HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
+          SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
           ENABLE_INCREMENTAL_PUSH: ${{ inputs.enable_incremental_push }}
