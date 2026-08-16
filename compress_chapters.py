@@ -104,7 +104,11 @@ WEBP_HARD_LIMIT = 16000
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
-IGNORE_PATTERN = re.compile(r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad", re.I)
+IGNORE_PATTERN = re.compile(
+    r"logo|icon|avatar|sprite|placeholder|loading\.gif|banner-ad|"
+    r"emote|reaction|\.svg(\?|$)",
+    re.I,
+)
 
 WIDGET_CONTEXT_PATTERN = re.compile(
     r"related|similar|recommend|suggest|you-may|you_may|might-like|"
