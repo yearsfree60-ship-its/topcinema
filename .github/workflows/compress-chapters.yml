@@ -4,9 +4,20 @@ on:
   workflow_dispatch:
     inputs:
       chapter_urls:
-        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح)"
+        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح) — كلها من نفس الموقع المختار أدناه"
         required: true
         type: string
+      site:
+        description: "الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد)"
+        required: true
+        type: choice
+        options:
+          - azorafly
+          - mangatuk
+          - mangatime
+          - manga_starz
+          - auto
+        default: auto
       quality:
         description: "جودة الضغط (10-90)"
         required: false
@@ -18,22 +29,22 @@ on:
         default: "800"
         type: string
       enable_incremental_push:
-        description: "دفع كل فصل فور اكتماله (أبطأ قليلًا لكل فصل بسبب commit+push، لكن لو انقطع التشغيل تبقى الفصول المكتملة محفوظة). عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
+        description: "دفع كل فصل فور اكتماله. عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
         required: false
         default: true
         type: boolean
       resume_existing_output:
-        description: "الاستمرار على فرع output الحالي بتاريخه (آمن، يحافظ على الفصول السابقة). عطّله فقط لو تريد تصفير الأرشيف بالكامل والبدء من فرع نظيف — أسرع بجلب الفرع لكنه يمسح كل شيء سابق نهائيًا"
+        description: "الاستمرار على فرع output الحالي بتاريخه (آمن). عطّله فقط لتصفير الأرشيف بالكامل والبدء من فرع نظيف"
         required: false
         default: true
         type: boolean
       strict_domain_filter:
-        description: "استبعاد أي صورة من نطاق (domain) مختلف عن الأغلبية بين صور الفصل. احذر: قد يحذف صورًا شرعية لو كان الموقع يوزّع صوره على أكثر من CDN فعليًا"
+        description: "استبعاد أي صورة من نطاق مختلف عن الأغلبية بين صور الفصل"
         required: false
         default: false
         type: boolean
       retry_per_chapter:
-        description: "عدد محاولات فتح الصفحة بالمتصفح لكل فصل عند الفشل"
+        description: "عدد محاولات جلب الفصل عند الفشل"
         required: false
         default: "2"
         type: string
@@ -43,15 +54,12 @@ on:
         default: "3"
         type: string
 
-# صلاحية الكتابة مطلوبة لدفع الصور المضغوطة لفرع output
 permissions:
   contents: write
 
 jobs:
   compress:
     runs-on: ubuntu-latest
-    # مع الدفع التدريجي (حين يكون مفعّلًا)، الفصول المكتملة تُحفظ فور دفعها،
-    # فحتى لو ضُرب هذا السقف فعليًا لا يُفقد إلا الفصل قيد المعالجة لحظتها.
     timeout-minutes: 240
     steps:
       - name: تحميل المستودع
@@ -62,16 +70,15 @@ jobs:
         with:
           python-version: "3.11"
 
+      # ملاحظة: تثبيت Playwright/Chromium يحدث دومًا حتى لو اخترت بروفايلًا
+      # لا يحتاج متصفح (أزورافلاي مثلًا) — لأن هذه خطوة ثابتة قبل معرفة
+      # المدخلات وقت بناء الصورة. السكربت نفسه هو من يتخطى إطلاق المتصفح
+      # فعليًا حين لا يحتاجه البروفايل (توفير وقت التشغيل الفعلي، لا التثبيت)
       - name: تثبيت المكتبات
         run: |
           pip install --quiet playwright pillow requests
           python -m playwright install --with-deps chromium
 
-      # هذه الخطوة ضرورية بغضّ النظر عن تفعيل الدفع التدريجي أو لا — سواء
-      # دفعنا بعد كل فصل أو دفعة واحدة بالنهاية، لازم مكان صحيح (فرع output)
-      # نكتب فيه وندفع منه. resume_existing_output يتحكم فقط هل نبني على
-      # تاريخ الفرع الحالي (آمن) أو نبدأ فرعًا نظيفًا (أسرع جلبًا، لكن يمسح
-      # كل الفصول السابقة نهائيًا — استخدمه بحذر).
       - name: تجهيز فرع الإخراج (git worktree)
         env:
           RESUME_EXISTING_OUTPUT: ${{ inputs.resume_existing_output }}
@@ -82,11 +89,9 @@ jobs:
           git fetch origin --quiet || true
 
           if [ "$RESUME_EXISTING_OUTPUT" = "true" ] && git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
-            # الفرع output موجود مسبقًا ونريد الاستمرار عليه بتاريخه كاملًا
             git worktree add output-worktree origin/output
             git -C output-worktree checkout -B output origin/output
           else
-            # فرع نظيف: إما أول تشغيلة، أو طُلب تصفير الأرشيف صراحة
             if [ "$RESUME_EXISTING_OUTPUT" != "true" ]; then
               echo "⚠️ تم اختيار البدء من فرع نظيف — سيُستبدل أي فرع output موجود بالكامل عند أول دفع"
             fi
@@ -102,12 +107,11 @@ jobs:
       - name: تشغيل الضغط
         env:
           CHAPTER_URLS: ${{ inputs.chapter_urls }}
+          SITE_PROFILE: ${{ inputs.site }}
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
-          # الدفع التدريجي الفعلي (commit+push بعد كل فصل ناجح) يُنفَّذ الآن
-          # فعليًا داخل compress_chapters.py، مربوطًا بهذا المفتاح
           ENABLE_INCREMENTAL_PUSH: ${{ inputs.enable_incremental_push }}
           GIT_COMMIT_DIR: ${{ env.OUTPUT_WORKTREE }}
           GIT_BRANCH: output
@@ -116,11 +120,6 @@ jobs:
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
         run: python compress_chapters.py
 
-      # شبكة أمان أخيرة: تعمل حتى لو فشل السكربت أو انقطع (بلوغ سقف الوقت،
-      # إلغاء يدوي، عطل عابر) قبل أن يتمكن من دفع آخر فصل. إن كان الدفع
-      # التدريجي مفعّلًا، هذه الخطوة عادة لا تجد شيئًا إضافيًا لدفعه (كل شيء
-      # مدفوع أصلًا فصلًا بفصل). إن كان مُعطَّلًا، هذه الخطوة هي الدفعة
-      # الوحيدة لكل النتائج دفعة واحدة بالنهاية.
       - name: دفع احتياطي نهائي (شبكة أمان)
         if: always()
         run: |
@@ -140,9 +139,16 @@ jobs:
                 success=1
                 break
               fi
-              echo "فشلت محاولة الدفع #$i — إعادة محاولة بعد سحب أحدث تغييرات..."
+              echo "فشلت محاولة الدفع #$i — إعادة محاولة بعد إعادة البناء فوق أحدث نسخة..."
               git fetch origin output || true
-              git rebase origin/output || git rebase --abort || true
+              # reset مختلط بدل rebase: لا يلمس ملفات القرص، فقط يُرجع مؤشر
+              # الفرع لأحدث نقطة بعيدة، ثم نعيد commit فوقها مباشرة — بلا
+              # أي آلية دمج نصي يمكن أن تتعارض على ملف JSON مُولَّد بالكامل
+              git reset origin/output
+              git add output || true
+              if ! git diff --cached --quiet; then
+                git commit -m "دفع احتياطي نهائي - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+              fi
               sleep $((i * 3))
             done
             if [ "$success" -ne 1 ]; then
