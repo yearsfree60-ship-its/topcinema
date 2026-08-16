@@ -1,0 +1,20 @@
+{
+  "manga": {
+    "procomic.net__en": {
+      "name": "en",
+      "chapters": [
+        {
+          "label": "الفصل 35765",
+          "num": "35765",
+          "chNum": 35765.0,
+          "sourceUrl": "https://procomic.net/en/chapter/ill-be-taking-a-break-for-personal-reasons-2-35765",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/procomic.net__en/ch-35765/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/procomic.net__en/ch-35765/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/procomic.net__en/ch-35765/003.webp"
+          ]
+        }
+      ]
+    }
+  }
+}
