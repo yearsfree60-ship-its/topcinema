@@ -1,0 +1,96 @@
+{
+  "url": "https://manga-starz.net/manga/one-day-i-became-a-princess/1/",
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a2bebb3aea28282c-IAD",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "sample_image_urls": [],
+    "raw_cookies_received": [],
+    "error": null
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "domain_distribution": {
+      "manga-starz.net": 1
+    },
+    "screenshot_path": "diagnostics/manga-starz-net-9751-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://manga-starz.net/favicon.ico",
+      "direct_http_success": false,
+      "direct_http_size": 0,
+      "direct_http_fail_reason": "status=403 content-type='text/html; charset=UTF-8'",
+      "browser_session_success": false,
+      "browser_session_size": 0,
+      "browser_session_fail_reason": "status=403 content-type='text/html; charset=UTF-8'"
+    },
+    "network_vendor_hits": {
+      "Cloudflare Challenge": [
+        "blob:https://challenges.cloudflare.com/07620efc-cc28-417d-a91f-eecfe42db54e",
+        "blob:https://challenges.cloudflare.com/12dec1df-2631-42c6-80ff-6adc4f0551c0",
+        "blob:https://challenges.cloudflare.com/1d0d0eff-b079-489c-8bbd-2b00dcaf91f3"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "error": null
+  },
+  "rate_limit_probe": {
+    "requests_sent": 4,
+    "elapsed_sec": 0.2,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": true,
+    "retry_after_header": null
+  },
+  "recommendation": {
+    "fetch_mode": "browser",
+    "do_scroll": false,
+    "do_widget_filter": false,
+    "reasons": [
+      "صفحة تحقق/حماية ظهرت حتى بالطلب الثابت (Cloudflare) — يحتاج متصفحًا حقيقيًا على الأقل",
+      "HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل"
+    ]
+  }
+}

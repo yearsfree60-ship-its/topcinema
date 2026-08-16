@@ -1,11 +1,11 @@
 [
   {
-    "url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
+    "url": "https://manga-starz.net/manga/one-day-i-became-a-princess/1/",
     "static_probe": {
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a2be8d1c3bd4a219-MSP",
+        "cf-ray": "a2bebb3aea28282c-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -22,12 +22,14 @@
     },
     "browser_probe": {
       "navigated": true,
-      "title": "Dilar - الصفحة الرئيسية",
-      "challenge_detected": false,
-      "protection_signatures": [],
-      "images_at_t0": 0,
-      "images_after_wait": 0,
-      "images_after_scroll": 0,
+      "title": "Just a moment...",
+      "challenge_detected": true,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 1,
+      "images_after_wait": 1,
+      "images_after_scroll": 1,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -35,37 +37,45 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 0,
+      "unmatched_img_count": 1,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "domain_distribution": {},
-      "screenshot_path": "diagnostics/dilar-tube-8715-screenshot.png",
-      "hotlink_probe": null,
+      "domain_distribution": {
+        "manga-starz.net": 1
+      },
+      "screenshot_path": "diagnostics/manga-starz-net-9751-screenshot.png",
+      "hotlink_probe": {
+        "sample_url": "https://manga-starz.net/favicon.ico",
+        "direct_http_success": false,
+        "direct_http_size": 0,
+        "direct_http_fail_reason": "status=403 content-type='text/html; charset=UTF-8'",
+        "browser_session_success": false,
+        "browser_session_size": 0,
+        "browser_session_fail_reason": "status=403 content-type='text/html; charset=UTF-8'"
+      },
       "network_vendor_hits": {
         "Cloudflare Challenge": [
-          "blob:https://challenges.cloudflare.com/1210aff8-a28e-444c-a3b9-b91742487225",
-          "blob:https://challenges.cloudflare.com/2f92bf35-aa25-4f45-a6f8-fff4b8a07c87",
-          "blob:https://challenges.cloudflare.com/efa7dd6b-448e-4b85-8fa8-714d5b10608e"
+          "blob:https://challenges.cloudflare.com/07620efc-cc28-417d-a91f-eecfe42db54e",
+          "blob:https://challenges.cloudflare.com/12dec1df-2631-42c6-80ff-6adc4f0551c0",
+          "blob:https://challenges.cloudflare.com/1d0d0eff-b079-489c-8bbd-2b00dcaf91f3"
         ]
       },
       "adblock_wall": {
-        "detected": true,
-        "became_ready_after_sec": 45.2,
-        "clicked": true,
-        "button_snippet": "<button id=\"_fb_continue\" class=\"_fb_btn _fb_btn_sec disabled\" disabled=\"\">المتابعة على أي حال <span id=\"_fb_countdown\">(7)</span></button>",
-        "timed_out": true
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": true,
-        "success": false,
-        "status_code": 403,
-        "cookie_count_reused": 3
+        "tested": false,
+        "reason": "لا كوكيز بالجلسة لاختبارها"
       },
       "error": null
     },
     "rate_limit_probe": {
       "requests_sent": 4,
-      "elapsed_sec": 0.21,
+      "elapsed_sec": 0.2,
       "status_codes": [
         403,
         403,
@@ -81,8 +91,7 @@
       "do_widget_filter": false,
       "reasons": [
         "صفحة تحقق/حماية ظهرت حتى بالطلب الثابت (Cloudflare) — يحتاج متصفحًا حقيقيًا على الأقل",
-        "HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل",
-        "جدار مانع إعلانات مكتشَف — استغرق زر التجاوز 45.2ث ليصبح جاهزًا فعليًا"
+        "HTML الثابت لا يحوي صورًا كافية — الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل"
       ]
     }
   }
