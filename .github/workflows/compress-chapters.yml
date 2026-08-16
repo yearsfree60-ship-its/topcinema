@@ -4,41 +4,79 @@ on:
   workflow_dispatch:
     inputs:
       chapter_urls:
-        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح)"
+        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح) — كلها من نفس الموقع المختار أدناه"
         required: true
         type: string
       site:
-        description: "الموقع (اختر بروفايله الجاهز، أو اتركه تلقائي)"
-        required: false
-        default: "auto"
+        description: "الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). ملاحظة: عند تفعيل وضع التشخيص أدناه، هذا الاختيار يُتجاهَل تمامًا"
+        required: true
         type: choice
         options:
           - auto
           - azorafly
-          - manga-starz
           - mangatuk
           - mangatime
-          - dilar
           - olympustaff
+          - manga_starz
+        default: auto
       quality:
         description: "جودة الضغط (10-90)"
         required: false
-        default: "25"
+        default: "30"
         type: string
       max_width:
         description: "العرض الأقصى بالبكسل"
         required: false
-        default: "700"
+        default: "800"
         type: string
+      http_concurrency:
+        description: "عدد الفصول المُعالَجة بالتوازي (بروفايل azorafly/HTTP فقط، حد أقصى 10 — بلا تأثير على البروفايلات الأخرى)"
+        required: false
+        default: "3"
+        type: string
+      skip_existing_chapters:
+        description: "تخطي أي فصل محفوظ مسبقًا على فرع output (بنفس المانهوا ورقم الفصل) بدل إعادة تحميله وضغطه"
+        required: false
+        default: true
+        type: boolean
+      enable_incremental_push:
+        description: "دفع كل فصل فور اكتماله. عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
+        required: false
+        default: true
+        type: boolean
+      resume_existing_output:
+        description: "الاستمرار على فرع output الحالي بتاريخه (آمن). عطّله فقط لتصفير الأرشيف بالكامل والبدء من فرع نظيف"
+        required: false
+        default: true
+        type: boolean
+      strict_domain_filter:
+        description: "استبعاد أي صورة من نطاق مختلف عن الأغلبية بين صور الفصل"
+        required: false
+        default: false
+        type: boolean
+      retry_per_chapter:
+        description: "عدد محاولات جلب الفصل عند الفشل"
+        required: false
+        default: "2"
+        type: string
+      img_fetch_retries:
+        description: "عدد محاولات تحميل بايتات كل صورة عند الفشل"
+        required: false
+        default: "3"
+        type: string
+      diagnostic_mode:
+        description: "وضع تشخيص موقع جديد: لا يُنزّل أو يُضغط أي فصل فعليًا. يفحص كل رابط مُدخَل بعمق (HTTP خام بدون متصفح، ثم متصفح كامل مع تمرير، ثم اختبار حماية السرقة على صورة عينة) ويكتب تقريرًا مفصلًا + لقطة شاشة، تمهيدًا لإضافة بروفايل جديد. يتجاهل اختيار 'الموقع المصدر' أعلاه بالكامل. يُفضَّل تمرير رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا)"
+        required: false
+        default: false
+        type: boolean
 
-# صلاحية الكتابة مطلوبة لدفع الصور المضغوطة لفرع output
 permissions:
   contents: write
 
 jobs:
   compress:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - name: تحميل المستودع
         uses: actions/checkout@v4
@@ -48,10 +86,39 @@ jobs:
         with:
           python-version: "3.11"
 
+      # ملاحظة: تثبيت Playwright/Chromium يحدث دومًا حتى لو اخترت بروفايلًا
+      # لا يحتاج متصفح (أزورافلاي مثلًا) — لأن هذه خطوة ثابتة قبل معرفة
+      # المدخلات وقت بناء الصورة. السكربت نفسه هو من يتخطى إطلاق المتصفح
+      # فعليًا حين لا يحتاجه البروفايل (توفير وقت التشغيل الفعلي، لا التثبيت)
       - name: تثبيت المكتبات
         run: |
-          pip install --quiet playwright pillow httpx curl_cffi
+          pip install --quiet playwright pillow requests
           python -m playwright install --with-deps chromium
+
+      - name: تجهيز فرع الإخراج (git worktree)
+        env:
+          RESUME_EXISTING_OUTPUT: ${{ inputs.resume_existing_output }}
+        run: |
+          set -e
+          git config user.name "manhwa-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git fetch origin --quiet || true
+
+          if [ "$RESUME_EXISTING_OUTPUT" = "true" ] && git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+            git worktree add output-worktree origin/output
+            git -C output-worktree checkout -B output origin/output
+          else
+            if [ "$RESUME_EXISTING_OUTPUT" != "true" ]; then
+              echo "⚠️ تم اختيار البدء من فرع نظيف — سيُستبدل أي فرع output موجود بالكامل عند أول دفع"
+            fi
+            git worktree add --detach output-worktree
+            git -C output-worktree checkout --orphan output
+            git -C output-worktree rm -rf . > /dev/null 2>&1 || true
+            git -C output-worktree commit --allow-empty -m "تهيئة فرع output"
+          fi
+
+          mkdir -p output-worktree/output
+          echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
 
       - name: تشغيل الضغط
         env:
@@ -59,45 +126,77 @@ jobs:
           SITE_PROFILE: ${{ inputs.site }}
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
-          OUTPUT_DIR: output
-          CDN_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output
+          HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
+          SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
+          OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
+          CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
+          ENABLE_INCREMENTAL_PUSH: ${{ inputs.enable_incremental_push }}
+          GIT_COMMIT_DIR: ${{ env.OUTPUT_WORKTREE }}
+          GIT_BRANCH: output
+          STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
+          RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
+          IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
+          DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
         run: python compress_chapters.py
 
-      - name: نشر النتائج على فرع output
+      - name: رفع تقرير التشخيص كأرتيفاكت (نسخة احتياطية للتشغيلة، وضع التشخيص فقط)
+        if: ${{ always() && inputs.diagnostic_mode }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostic-report
+          path: ${{ env.OUTPUT_WORKTREE }}/output/diagnostics
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: دفع احتياطي نهائي (شبكة أمان)
+        if: always()
         run: |
-          set -e
-          git config user.name "manhwa-bot"
-          git config user.email "bot@users.noreply.github.com"
-
-          # نحفظ مجلد الإخراج الجديد خارج شجرة git مؤقتًا قبل تبديل الفروع
-          mv output /tmp/output-new
-
-          if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
-            # الفرع output موجود مسبقًا: نجيبه بتاريخه كاملًا حتى تتراكم الفصول القديمة
-            git fetch origin output
-            git checkout output
+          if [ -z "$OUTPUT_WORKTREE" ] || [ ! -d "$OUTPUT_WORKTREE" ]; then
+            echo "لا يوجد worktree لدفعه (فشلت خطوة التجهيز على الأغلب) — تخطي"
+            exit 0
+          fi
+          cd "$OUTPUT_WORKTREE"
+          git add output || true
+          if git diff --cached --quiet; then
+            echo "لا تغييرات إضافية غير مدفوعة — كل شيء محفوظ أصلًا"
           else
-            # أول تشغيلة: ننشئ الفرع من الصفر بدون تاريخ main
-            git checkout --orphan output
-            git rm -rf . > /dev/null 2>&1 || true
+            git commit -m "دفع احتياطي نهائي - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+            success=0
+            for i in 1 2 3 4 5; do
+              if git push origin HEAD:output; then
+                success=1
+                break
+              fi
+              echo "فشلت محاولة الدفع #$i — إعادة محاولة بعد إعادة البناء فوق أحدث نسخة..."
+              git fetch origin output || true
+              # reset مختلط بدل rebase: لا يلمس ملفات القرص، فقط يُرجع مؤشر
+              # الفرع لأحدث نقطة بعيدة، ثم نعيد commit فوقها مباشرة — بلا
+              # أي آلية دمج نصي يمكن أن تتعارض على ملف JSON مُولَّد بالكامل
+              git reset origin/output
+              git add output || true
+              if ! git diff --cached --quiet; then
+                git commit -m "دفع احتياطي نهائي - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+              fi
+              sleep $((i * 3))
+            done
+            if [ "$success" -ne 1 ]; then
+              echo "⚠️ تعذّر الدفع الاحتياطي النهائي بعد كل المحاولات — قد تحتاج لدفع يدوي لاحقًا"
+              exit 1
+            fi
           fi
 
-          # ندمج الفصول الجديدة فوق الموجودة (لا يحذف فصول سابقة، فقط يضيف/يحدّث)
-          mkdir -p output
-          cp -r /tmp/output-new/. output/
-
-          git add output
-          git commit -m "تحديث الفصول المضغوطة - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "لا تغييرات جديدة"
-          git push origin output
-
       - name: رابط النتيجة
+        if: always()
         run: |
           echo "=================================================="
           echo "manifest.json:"
-          echo "https://cdn.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/manifest.json"
+          echo "diagnostics (إن كان وضع التشخيص مفعّلًا):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/summary.json"
           echo "=================================================="
 
       - name: إجبار تحديث كاش jsDelivr فورًا
+        if: always()
         run: |
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
           echo "تم إرسال طلب تحديث الكاش. لو ظهرت بيانات قديمة رغم ذلك، انتظر دقيقتين وحاول ثانية."
