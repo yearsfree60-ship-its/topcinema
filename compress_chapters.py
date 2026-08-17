@@ -107,6 +107,8 @@ import asyncio
 import json
 import os
 import re
+import socket
+import ssl
 import subprocess
 import sys
 import time
@@ -168,6 +170,12 @@ SKIP_EXISTING_CHAPTERS = os.environ.get("SKIP_EXISTING_CHAPTERS", "true").strip(
 DIAGNOSTIC_MODE = os.environ.get("DIAGNOSTIC_MODE", "false").strip().lower() == "true"
 
 WEBP_HARD_LIMIT = 16000
+
+# [إصلاح منطقي ج] حد أدنى لأبعاد الصورة (طول/عرض) كي تُعتبر صفحة مانهوا
+# حقيقية لا صورة بديلة/حظر صغيرة — راجع _validate_image_bytes.
+MIN_IMAGE_DIMENSION = _clamp_int(
+    os.environ.get("MIN_IMAGE_DIMENSION", "150"), 150, 10, 2000, "MIN_IMAGE_DIMENSION"
+)
 
 # [تصحيح حرج ١] الحد الأدنى لعدد صور noscript قبل اعتمادها كمصدر نهائي —
 # يمنع خطف بكسل تتبع/تحليلات وحيد داخل <noscript> لا علاقة له بالمحتوى.
@@ -279,6 +287,34 @@ COLLECT_IMAGES_JS = """(els, selectors) => els.map(e => {
     }
     return {url: u, ctx: ctx.toLowerCase(), matched};
 }).filter(x => x.url)"""
+
+
+def _suggest_selectors_from_unmatched(items: list[dict]) -> list[str]:
+    """[شبه مجاني] COLLECT_IMAGES_JS يجمع ctx (كلاسات/id لخمس مستويات آباء)
+    لكل صورة أصلًا، لكن يُستخدم فقط لفلترة الودجات — الصور unmatched يُحفَظ
+    عددها فقط بلا تفاصيل. هنا نجمّع أكثر أسماء كلاسات/id تكرارًا ضمن ctx
+    الصور التي لم تطابق أي محدد من CONTENT_SELECTORS، ونستبعد التوكنات
+    العامة (ودجات/إعلانات معروفة مسبقًا بـWIDGET_CONTEXT_PATTERN، وتوكنات
+    شائعة جدًا وغير دالة مثل img/lazy) — اقتراح محدد CSS جاهز للصق داخل
+    CONTENT_SELECTORS، بصفر آلية جديدة (إعادة استخدام ctx المُجمَّع أصلًا)."""
+    GENERIC_TOKENS = {
+        "img", "image", "lazy", "loaded", "loading", "src", "wp", "content",
+        "post", "entry", "container", "wrap", "wrapper", "item", "list",
+        "attachment", "size", "full", "aligncenter", "alignnone",
+    }
+    token_counts: Counter = Counter()
+    for it in items:
+        if it.get("matched"):
+            continue
+        ctx = it.get("ctx", "")
+        if WIDGET_CONTEXT_PATTERN.search(ctx):
+            continue
+        for token in re.findall(r"[a-z][a-z0-9_-]{2,}", ctx):
+            if token in GENERIC_TOKENS or token.isdigit():
+                continue
+            token_counts[token] += 1
+    suggested = [f".{tok}" for tok, cnt in token_counts.most_common(8) if cnt >= 2]
+    return suggested
 
 
 def classify_protection_signatures(text: str) -> list[str]:
@@ -459,6 +495,28 @@ def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) ->
     return urls, ""
 
 
+def _validate_image_bytes(raw_bytes: bytes) -> tuple[bool, str]:
+    """[إصلاح منطقي ج] معيار ">= 500 بايت + content-type يبدأ بـimage/" وحده
+    ضعيف جدًا: أنظمة حماية كثيرة ترجع 200 مع صورة صغيرة "محظور"/placeholder
+    بدل رفض صريح، وتعبر هذي الصورة البديلة سقف 500 بايت بسهولة. هنا نفتح
+    البايتات فعليًا بـPIL (نفس آلية compress_image) ونتحقق من أبعاد معقولة
+    لصفحة مانهوا حقيقية قبل اعتبارها نجاح — تُستخدم بمسار HTTP والمتصفح معًا،
+    وبالتشخيص والإنتاج معًا (نفس الدالتين تُستخدَمان بـprocess_chapter)."""
+    try:
+        probe = Image.open(BytesIO(raw_bytes))
+        probe.verify()
+    except Exception as e:
+        return False, f"ليست صورة صالحة (فشل فك PIL): {e}"
+    try:
+        img = Image.open(BytesIO(raw_bytes))
+        w, h = img.size
+    except Exception as e:
+        return False, f"تعذّرت قراءة أبعاد الصورة بعد التحقق: {e}"
+    if w < MIN_IMAGE_DIMENSION or h < MIN_IMAGE_DIMENSION:
+        return False, f"أبعاد صغيرة جدًا لصفحة مانهوا حقيقية ({w}x{h}) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+    return True, ""
+
+
 def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | None, str | None]:
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
@@ -467,8 +525,12 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
             ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
-                    return resp.content, None
-                last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(resp.content)} بايت)"
+                    valid, why = _validate_image_bytes(resp.content)
+                    if valid:
+                        return resp.content, None
+                    last_reason = why
+                else:
+                    last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(resp.content)} بايت)"
             else:
                 last_reason = f"status={resp.status_code} content-type={ctype!r}"
         except Exception as e:
@@ -753,8 +815,12 @@ async def fetch_image_bytes(context, img_url: str, referer: str):
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 body = await resp.body()
                 if body and len(body) >= 500:
-                    return body, None
-                last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(body) if body else 0} بايت)"
+                    valid, why = await asyncio.to_thread(_validate_image_bytes, body)
+                    if valid:
+                        return body, None
+                    last_reason = why
+                else:
+                    last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(body) if body else 0} بايت)"
             else:
                 last_reason = f"status={resp.status} content-type={ctype!r}"
         except Exception as e:
@@ -785,6 +851,13 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
         await page.wait_for_timeout(5000)
         try:
             await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+            # [إصلاح منطقي أ] لا نفترض أن الreload حلّ التحدي — نعيد الفحص
+            # فعليًا بعده مباشرة (أغلب تحديات Cloudflare JS تنحل تلقائيًا
+            # خلال الانتظار، لكن ليس كلها).
+            if await looks_like_challenge_page(page):
+                print("  ⚠️ التحدي ما زال ظاهرًا بعد إعادة التحميل")
+            else:
+                print("  ✅ التحدي انحل بعد إعادة التحميل")
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
 
@@ -845,6 +918,119 @@ def build_run_manifest(results: list) -> dict:
 # [تصحيح حرج ٣] _run_git الآن لا يرمي استثناءً أبدًا: أي فشل (git غير
 # مثبت، مسار غير موجود، صلاحيات...) يُحوَّل لـCompletedProcess وهمي بكود
 # رجوع غير صفري ورسالة خطأ واضحة بدل إيقاف السكربت بالكامل.
+def _read_remote_text_sync(commit_dir: str, branch: str, relpath: str) -> str | None:
+    """[معلومة مفقودة — تتبع تاريخي] نسخة عامة من _read_remote_manifest_sync
+    تقرأ أي ملف نصي (لا manifest.json تحديدًا) من فرع git البعيد — تُستخدم
+    لقراءة تاريخ التشخيص السابق لموقع معيّن."""
+    fetch = _run_git(["fetch", "origin", branch], commit_dir)
+    if fetch.returncode != 0:
+        return None
+    show = _run_git(["show", f"origin/{branch}:{relpath}"], commit_dir)
+    if show.returncode != 0:
+        return None
+    return show.stdout
+
+
+def _load_diagnostic_history_sync(site_slug: str) -> list:
+    """[معلومة مفقودة] تتبّع تاريخي: يقرأ تشخيصات سابقة لنفس الموقع (بحسب
+    hostname) من فرع الإخراج البعيد (GIT_BRANCH) إن توفّر GIT_COMMIT_DIR،
+    وإلا من النسخة المحلية — نفس فرع/مجلد الإخراج المستخدَم أصلًا، بلا أي
+    بنية تخزين جديدة."""
+    relpath = f"diagnostics/history/{site_slug}.json"
+    local_path = OUTPUT_DIR / relpath
+    if GIT_COMMIT_DIR:
+        git_rel_output = _compute_git_relative_output_dir(GIT_COMMIT_DIR)
+        if git_rel_output:
+            text = _read_remote_text_sync(GIT_COMMIT_DIR, GIT_BRANCH, f"{git_rel_output}/{relpath}")
+            if text:
+                try:
+                    return json.loads(text)
+                except Exception:
+                    pass
+    if local_path.exists():
+        try:
+            return json.loads(local_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return []
+
+
+def _save_diagnostic_history_sync(site_slug: str, history: list) -> None:
+    # نحتفظ بآخر 20 فحصًا فقط لكل موقع — كافٍ لرصد التغيّر دون نمو غير محدود.
+    path = OUTPUT_DIR / "diagnostics" / "history" / f"{site_slug}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(history[-20:], ensure_ascii=False, indent=2, default=str), encoding="utf-8")
+
+
+def _diff_diagnostic_snapshots(previous: dict, current: dict) -> list[str]:
+    """[معلومة مفقودة] يقارن أهم مؤشرات سلوك الحماية بين آخر فحص محفوظ
+    والفحص الحالي — بروفايل شغّال اليوم ممكن ينكسر بصمت بعد أسابيع لو
+    الموقع غيّر سلوك حمايته دون أي تنبيه."""
+    fields = {
+        "fetch_mode_recommended": "fetch_mode المقترح",
+        "challenge_detected_static": "صفحة تحقق (HTTP خام)",
+        "challenge_detected_browser": "صفحة تحقق (متصفح)",
+        "protection_signatures": "مزوّد الحماية المصنَّف",
+        "referer_only_sufficient": "كفاية Referer وحده",
+        "rate_limited_detected": "تحديد معدل مكتشَف",
+        "signed_url_params": "معاملات روابط موقّعة",
+    }
+    changes = []
+    for key, label in fields.items():
+        old_v, new_v = previous.get(key), current.get(key)
+        if old_v != new_v:
+            changes.append(f"{label}: {old_v!r} ← {new_v!r}")
+    return changes
+
+
+def _tls_and_server_info_sync(url: str) -> dict:
+    """[معلومة مفقودة] شهادة TLS + IP الخادم المستجيب عبر socket/ssl
+    القياسيتين، بلا أي مكتبة جديدة — يكشف مزوّد CDN/WAF حتى لو الترويسات
+    مخفية عمدًا (بعض المزوّدين يُصدرون شهادات SSL بأسماء مميزة، أو يشغّلون
+    على مدى IP معروف)."""
+    result = {"server_ip": None, "tls_issuer": None, "tls_subject": None, "tls_not_after": None, "error": None}
+    host = urlparse(url).hostname
+    if not host:
+        result["error"] = "تعذّر استخراج hostname من الرابط"
+        return result
+    try:
+        result["server_ip"] = socket.gethostbyname(host)
+    except Exception as e:
+        result["error"] = f"فشل تحليل DNS: {e}"
+        return result
+    try:
+        ctx = ssl.create_default_context()
+        with socket.create_connection((host, 443), timeout=10) as sock:
+            with ctx.wrap_socket(sock, server_hostname=host) as ssock:
+                cert = ssock.getpeercert()
+        issuer = dict(x[0] for x in cert.get("issuer", []))
+        subject = dict(x[0] for x in cert.get("subject", []))
+        result["tls_issuer"] = issuer.get("organizationName") or issuer.get("commonName")
+        result["tls_subject"] = subject.get("commonName")
+        result["tls_not_after"] = cert.get("notAfter")
+    except Exception as e:
+        result["error"] = f"فشل مصافحة TLS: {e}"
+    return result
+
+
+def _runner_network_info_sync() -> dict:
+    """[معلومة مفقودة] IP/ASN الخاص بالـrunner نفسه — مهم بالذات لأن الأنبوب
+    يشتغل على GitHub Actions: يفرّق بسرعة بين 'اشتغل من جهاز/شبكة عادية
+    محليًا' و'انحظر لأنه IP مركز بيانات (datacenter ASN) معروف لمزوّدي
+    الحماية'. طلب واحد خفيف لخدمة عامة مجانية بلا مفتاح API."""
+    try:
+        resp = requests.get("https://ipinfo.io/json", timeout=8)
+        if resp.ok:
+            data = resp.json()
+            return {
+                "ip": data.get("ip"), "org_asn": data.get("org"),
+                "city": data.get("city"), "country": data.get("country"), "error": None,
+            }
+        return {"ip": None, "org_asn": None, "city": None, "country": None, "error": f"status={resp.status_code}"}
+    except Exception as e:
+        return {"ip": None, "org_asn": None, "city": None, "country": None, "error": f"{e}"}
+
+
 def _run_git(args: list[str], cwd: str) -> subprocess.CompletedProcess:
     try:
         return subprocess.run(["git"] + args, cwd=cwd, capture_output=True, text=True)
@@ -1062,7 +1248,7 @@ def _static_probe_sync(url: str) -> dict:
         "status_code": None, "headers_of_interest": {}, "challenge_detected": False,
         "protection_signatures": [], "images_via_noscript": 0, "images_via_data_attr": 0,
         "images_via_plain_src": 0, "extracted_image_count": 0, "extracted_sample_urls": [],
-        "sample_image_urls": [], "raw_cookies_received": [], "error": None,
+        "sample_image_urls": [], "signed_url_params": [], "raw_cookies_received": [], "error": None,
     }
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
@@ -1117,6 +1303,7 @@ def _static_probe_sync(url: str) -> dict:
     extracted = extract_images_from_html(html, url)
     result["extracted_image_count"] = len(extracted)
     result["extracted_sample_urls"] = extracted[:3]
+    result["signed_url_params"] = _detect_signed_url_params(extracted)
 
     # [تصحيح حرج ٢] نفس منطق الحد الأدنى هنا أيضًا في عرض عينة الصور
     # التشخيصية، لتفادي تضليل التوصية الآلية ببكسل تتبع وحيد.
@@ -1125,10 +1312,92 @@ def _static_probe_sync(url: str) -> dict:
     return result
 
 
+SIGNED_URL_PARAM_PATTERN = re.compile(
+    r"(?:^|[?&])(token|sig|signature|expires|expiry|exp|policy|key-pair-id|"
+    r"x-amz-signature|x-amz-expires|x-amz-security-token|auth|hash|st|e)=",
+    re.I,
+)
+
+
+def _detect_signed_url_params(urls: list[str]) -> list[str]:
+    """[معلومة مفقودة] كشف روابط صور موقّعة/منتهية الصلاحية (token=, expires=,
+    sig=, X-Amz-Signature...) — يحدد هل استراتيجية "استخرج روابط الصور الآن،
+    حمّلها لاحقًا" آمنة أصلًا لهذا الموقع، أم أن الرابط قد ينتهي قبل استخدامه
+    فعليًا (مهم بالذات مع الدفع التدريجي/إعادة المحاولة المتأخرة)."""
+    found: set[str] = set()
+    for u in urls:
+        query = urlparse(u).query
+        for m in SIGNED_URL_PARAM_PATTERN.finditer("?" + query):
+            found.add(m.group(1).lower())
+    return sorted(found)
+
+
+def _pick_sample_urls(items: list[dict], base_url: str, n: int = 3) -> list[str]:
+    """[معلومة مفقودة] sample_url سابقًا كان يأخذ أول عنصر ظاهر بالقائمة
+    فقط. سلوك الحماية/CDN قد يختلف فعليًا بين أول/وسط/آخر صورة بالفصل
+    (أرقام صفحات مختلفة بالمسار، أحيانًا نطاقات CDN مختلفة لدفعات مختلفة).
+    هنا نلتقط حتى n عيّنات موزّعة بالتساوي (أولى/وسط/أخيرة) بدل واحدة."""
+    urls = dedupe([urljoin(base_url, it["url"]) for it in items if it.get("url")])
+    if len(urls) <= n:
+        return urls
+    idxs = sorted({0, len(urls) // 2, len(urls) - 1})
+    return [urls[i] for i in idxs][:n]
+
+
+async def _hotlink_probe_one(context, sample_url: str, page_url: str) -> dict:
+    """عزل ثلاثي (بند ب) لصورة عيّنة واحدة — مستخرَجة بدالة مشتركة كي تُطبَّق
+    على عدة عيّنات (بند "عدة صور عيّنة") بلا تكرار كود."""
+    no_ref_ok, no_ref_size, no_ref_reason = await asyncio.to_thread(
+        _fetch_image_probe_variant_sync, sample_url, None
+    )
+    ref_ok, ref_size, ref_reason = await asyncio.to_thread(
+        _fetch_image_probe_variant_sync, sample_url, page_url
+    )
+    raw_browser, reason_browser = await fetch_image_bytes(context, sample_url, page_url)
+    return {
+        "sample_url": sample_url,
+        "no_referer_success": no_ref_ok, "no_referer_size": no_ref_size,
+        "no_referer_fail_reason": no_ref_reason,
+        # [توافق خلفي] direct_http_* = محاولة Referer فقط.
+        "direct_http_success": ref_ok, "direct_http_size": ref_size,
+        "direct_http_fail_reason": ref_reason,
+        "browser_session_success": raw_browser is not None, "browser_session_size": len(raw_browser) if raw_browser else 0,
+        "browser_session_fail_reason": reason_browser,
+        "referer_only_sufficient": (not no_ref_ok) and ref_ok,
+    }
+
+
+async def _rate_limit_probe_image(img_url: str, referer: str, n: int = 4) -> dict:
+    """[إصلاح منطقي هـ] الحمل الحقيقي وقت التشغيل يتركز على CDN الصور (كل
+    فصل يُحمَّل صوره تسلسليًا، لكن HTTP_CONCURRENCY فصول تتزامن فعليًا معًا)،
+    لا على رابط صفحة الفصل. هذا الفحص يرسل n طلبات *بالتوازي الفعلي* (لا
+    تسلسليًا بلا تأخير فقط) لنفس رابط الصورة العيّنة — يحاكي نمط الحمل
+    الحقيقي على CDN الصور بدل رابط HTML الذي لا يتكرر تحميله أصلًا."""
+    def _one():
+        try:
+            r = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=15)
+            return r.status_code, r.headers.get("retry-after")
+        except Exception as e:
+            return f"error:{e}", None
+
+    t0 = time.monotonic()
+    outcomes = await asyncio.gather(*[asyncio.to_thread(_one) for _ in range(n)])
+    elapsed = round(time.monotonic() - t0, 2)
+    statuses = [o[0] for o in outcomes]
+    retry_after = next((o[1] for o in outcomes if o[1]), None)
+    blocked = any(isinstance(s, int) and s in (429, 403) for s in statuses)
+    return {
+        "target": "image_cdn", "sample_url": img_url, "requests_sent": n,
+        "elapsed_sec": elapsed, "status_codes": statuses,
+        "rate_limited_detected": blocked, "retry_after_header": retry_after,
+    }
+
+
 def _rate_limit_probe_sync(url: str, n: int = 4) -> dict:
     """يرسل عدة طلبات HTTP سريعة متتالية لنفس الرابط ويرصد 429/403 أو
-    ترويسة Retry-After — يفيد بتحديد HTTP_CONCURRENCY آمن لهذا الموقع
-    تحديدًا بدل التخمين. عدد محدود عمدًا (4) لتفادي إرهاق الموقع المصدر."""
+    ترويسة Retry-After. [احتياطي] يُستخدَم فقط لو تعذّر إيجاد رابط صورة
+    عيّنة — الفحص الأساسي أصبح على رابط صورة عبر _rate_limit_probe_image
+    (راجع الإصلاح المنطقي هـ: الحمل الحقيقي يتركز على CDN الصور لا الصفحة)."""
     statuses = []
     retry_after = None
     t0 = time.monotonic()
@@ -1143,8 +1412,8 @@ def _rate_limit_probe_sync(url: str, n: int = 4) -> dict:
     elapsed = round(time.monotonic() - t0, 2)
     blocked = any(isinstance(s, int) and s in (429, 403) for s in statuses)
     return {
-        "requests_sent": n, "elapsed_sec": elapsed, "status_codes": statuses,
-        "rate_limited_detected": blocked, "retry_after_header": retry_after,
+        "target": "page_url", "sample_url": url, "requests_sent": n, "elapsed_sec": elapsed,
+        "status_codes": statuses, "rate_limited_detected": blocked, "retry_after_header": retry_after,
     }
 
 
@@ -1180,14 +1449,38 @@ async def _cookie_reuse_probe(context, url: str) -> dict:
         return {"tested": True, "success": False, "error": str(e), "cookie_count_reused": len(cookies)}
 
 
+def _fetch_image_probe_variant_sync(img_url: str, referer: str | None) -> tuple[bool, int, str | None]:
+    """[إصلاح منطقي ب] محاولة تحميل وحيدة بلا إعادة محاولة (فحص تشخيصي، لا
+    إنتاج) — مع Referer أو بدونه، بلا كوكيز دائمًا (_HTTP_SESSION مضبوطة
+    على رفض تخزين أي كوكيز واردة). تُستخدم لعزل هل الحماية Referer فقط
+    (شائع وسهل التعامل معه بـrequests عادي) أم تحتاج جلسة متصفح كاملة."""
+    headers = {"User-Agent": UA}
+    if referer:
+        headers["Referer"] = referer
+    try:
+        resp = _HTTP_SESSION.get(img_url, headers=headers, timeout=20)
+        ctype = resp.headers.get("content-type", "")
+        size = len(resp.content) if resp.content else 0
+        if resp.ok and (ctype.startswith("image/") or ctype == ""):
+            if resp.content and size >= 500:
+                valid, why = _validate_image_bytes(resp.content)
+                return valid, size, (None if valid else why)
+            return False, size, f"جسم الاستجابة فارغ/صغير جدًا ({size} بايت)"
+        return False, size, f"status={resp.status_code} content-type={ctype!r}"
+    except Exception as e:
+        return False, 0, f"استثناء: {e}"
+
+
 async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     result = {
-        "navigated": False, "title": None, "challenge_detected": False, "protection_signatures": [],
+        "navigated": False, "title": None, "challenge_detected": False,
+        "challenge_resolved_after_reload": None, "protection_signatures": [],
         "images_at_t0": None, "images_after_wait": None, "images_after_scroll": None,
         "selector_match_counts": {}, "unmatched_img_count": 0, "widget_excluded_count": 0,
-        "widget_excluded_samples": [], "domain_distribution": {}, "screenshot_path": None,
-        "hotlink_probe": None, "network_vendor_hits": {}, "adblock_wall": None,
-        "cookie_reuse_probe": None, "error": None,
+        "widget_excluded_samples": [], "suggested_selectors": [], "domain_distribution": {},
+        "signed_url_params": [], "screenshot_path": None, "hotlink_probe": None,
+        "hotlink_probes": [], "network_vendor_hits": {},
+        "adblock_wall": None, "cookie_reuse_probe": None, "error": None,
     }
 
     context = await browser.new_context(
@@ -1226,8 +1519,19 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
         await page.wait_for_timeout(5000)
         try:
             await page.reload(wait_until="load", timeout=NAV_TIMEOUT_MS)
+            # [إصلاح منطقي أ] فحص ثانٍ فعلي بعد الreload بدل افتراض الحل
+            # التلقائي، + إعادة التقاط العنوان (كان يُحفَظ سابقًا من *قبل*
+            # الreload، فلو صار تحدٍّ يبقى عنوان صفحة التحقق بالتقرير النهائي
+            # لا العنوان الحقيقي بعد ما تحل).
+            still_challenge = await looks_like_challenge_page(page)
+            result["challenge_resolved_after_reload"] = not still_challenge
+            try:
+                result["title"] = await page.title()
+            except Exception:
+                pass
         except Exception as e:
             print(f"  ⚠️ فشلت إعادة التحميل بعد صفحة التحقق: {e}")
+            result["challenge_resolved_after_reload"] = False
 
     # جدار مانع إعلانات: كشف + قياس فعلي لمدة العدّ التنازلي + تجاوز
     result["adblock_wall"] = await dismiss_adblock_wall_timed(page)
@@ -1272,6 +1576,7 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
             unmatched += 1
     result["selector_match_counts"] = selector_counts
     result["unmatched_img_count"] = unmatched
+    result["suggested_selectors"] = _suggest_selectors_from_unmatched(scrolled_items)
 
     filtered = _filter_widget_context(scrolled_items)
     result["widget_excluded_count"] = len(scrolled_items) - len(filtered)
@@ -1283,22 +1588,17 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     domains = Counter(urlparse(it["url"]).hostname for it in scrolled_items if it.get("url"))
     result["domain_distribution"] = dict(domains.most_common(5))
 
-    sample_url = None
-    for it in scrolled_items:
-        if it.get("url"):
-            sample_url = urljoin(url, it["url"])
-            break
+    result["signed_url_params"] = _detect_signed_url_params(
+        [it["url"] for it in scrolled_items if it.get("url")]
+    )
 
-    if sample_url:
-        raw_http, reason_http = await asyncio.to_thread(fetch_image_bytes_http_sync, sample_url, url)
-        raw_browser, reason_browser = await fetch_image_bytes(context, sample_url, url)
-        result["hotlink_probe"] = {
-            "sample_url": sample_url,
-            "direct_http_success": raw_http is not None, "direct_http_size": len(raw_http) if raw_http else 0,
-            "direct_http_fail_reason": reason_http,
-            "browser_session_success": raw_browser is not None, "browser_session_size": len(raw_browser) if raw_browser else 0,
-            "browser_session_fail_reason": reason_browser,
-        }
+    # [إصلاح منطقي ب + معلومة مفقودة "عدة صور عيّنة"] حتى 3 عيّنات موزّعة
+    # (أولى/وسط/أخيرة) بدل واحدة فقط — كل واحدة تخضع للعزل الثلاثي الكامل.
+    sample_urls = _pick_sample_urls(scrolled_items, url, n=3)
+    for s_url in sample_urls:
+        result["hotlink_probes"].append(await _hotlink_probe_one(context, s_url, url))
+    if result["hotlink_probes"]:
+        result["hotlink_probe"] = result["hotlink_probes"][0]  # توافق خلفي (عينة أولى)
 
     # اختبار إعادة استخدام كوكيز الجلسة بطلب HTTP عادي — بعد كل ما سبق (حتى
     # يشمل أي كوكيز نتجت عن تجاوز جدار/تحدٍّ)
@@ -1311,7 +1611,32 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     return result
 
 
-def _recommend_profile(static_r: dict, browser_r: dict, rate_limit_r: dict | None = None) -> dict:
+def _diff_browser_probes(a: dict, b: dict) -> list[str]:
+    """[معلومة مفقودة — إعادة فحص مزدوج] يقارن أهم مؤشرات نتيجتَي فحص متصفح
+    منفصلتين (كل واحدة بجلسة نظيفة كاملة عبر browser.new_context) لنفس
+    الرابط — أنظمة حماية كثيرة احتمالية (تسمح أحيانًا وتمنع أحيانًا)، وفحص
+    وحيد لا يعكس هذا التذبذب."""
+    fields = {
+        "challenge_detected": "صفحة تحقق مكتشفة",
+        "protection_signatures": "مزوّد الحماية المصنَّف",
+        "images_after_scroll": "عدد الصور بعد التمرير",
+        "unmatched_img_count": "صور غير مطابقة",
+    }
+    diffs = []
+    for key, label in fields.items():
+        va, vb = a.get(key), b.get(key)
+        if va != vb:
+            diffs.append(f"{label}: الأول={va!r} الثاني={vb!r}")
+    hp_a = (a.get("hotlink_probes") or [{}])[0]
+    hp_b = (b.get("hotlink_probes") or [{}])[0]
+    if hp_a.get("referer_only_sufficient") != hp_b.get("referer_only_sufficient"):
+        diffs.append(
+            f"كفاية Referer وحده: الأول={hp_a.get('referer_only_sufficient')!r} الثاني={hp_b.get('referer_only_sufficient')!r}"
+        )
+    return diffs
+
+
+def _recommend_profile(static_r: dict, browser_r: dict, rate_limit_r: dict | None = None, consistency_diffs: list[str] | None = None) -> dict:
     reasons = []
     fetch_mode = "browser"
 
@@ -1330,6 +1655,34 @@ def _recommend_profile(static_r: dict, browser_r: dict, rate_limit_r: dict | Non
             reasons.append(f"مسار HTTP المباشر الفعلي سيستخرج {static_total} صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)")
         if hp and not hp["direct_http_success"] and hp["browser_session_success"]:
             reasons.append("صورة العينة رفضت التحميل المباشر بدون جلسة، ونجحت فقط عبر جلسة متصفح — حماية سرقة (hotlink) حقيقية")
+
+    if hp and hp.get("referer_only_sufficient"):
+        reasons.append(
+            "💡 عزل الحماية: صورة العينة رفضت التحميل بلا Referer، ونجحت بمجرد إرسال Referer صحيح "
+            "بلا أي جلسة/كوكيز — الحماية Referer فقط، ويمكن التعامل معها بطلب HTTP عادي (requests) بلا متصفح"
+        )
+
+    hotlink_probes = browser_r.get("hotlink_probes") or []
+    if len({p["direct_http_success"] for p in hotlink_probes}) > 1:
+        reasons.append(
+            "⚠️ نتيجة فحص hotlink تذبذبت بين عيّنات مختلفة (أولى/وسط/أخيرة) — "
+            "التوصية أعلاه مبنية على العيّنة الأولى فقط، يُنصَح بمراجعة التقرير التفصيلي قبل الاعتماد"
+        )
+
+    signed_params = list(set((static_r.get("signed_url_params") or []) + (browser_r.get("signed_url_params") or [])))
+    if signed_params:
+        reasons.append(
+            f"🔑 روابط الصور تحمل معاملات توقيع/انتهاء صلاحية ({', '.join(signed_params)}) — "
+            "أي استراتيجية 'استخرج الروابط الآن وحمّلها لاحقًا' (تأخير، إعادة محاولة متأخرة) قد تفشل "
+            "لأن الرابط ينتهي؛ يُفضَّل التحميل فور الاستخراج مباشرة"
+        )
+
+    if consistency_diffs:
+        reasons.append(
+            "🎲 فحص مزدوج (جلستان نظيفتان منفصلتان) أظهر تذبذبًا: " + " | ".join(consistency_diffs) +
+            " — الحماية غالبًا احتمالية لا ثابتة؛ التوصية أعلاه مبنية على التكرار الأول فقط، "
+            "يُفضَّل تشغيل التشخيص أكثر من مرة قبل الاعتماد النهائي"
+        )
 
     cr = browser_r.get("cookie_reuse_probe") or {}
     if fetch_mode == "browser" and cr.get("tested") and cr.get("success"):
@@ -1358,15 +1711,16 @@ def _recommend_profile(static_r: dict, browser_r: dict, rate_limit_r: dict | Non
     # [إصلاح] ربط فحص تحديد المعدل (⑤) فعليًا بالتوصية النهائية — كان يُطبَع
     # منفصلًا فقط رغم أن التوثيق يَعِد بأنه "يفيد تحديد HTTP_CONCURRENCY الآمن".
     rl = rate_limit_r or {}
+    rl_target_txt = "CDN الصور" if rl.get("target") == "image_cdn" else "رابط الصفحة (احتياطي)"
     if rl.get("rate_limited_detected"):
         suggested_http_concurrency = 1
         reasons.append(
-            f"⚠️ تحديد معدل مكتشَف فعليًا (حالات: {rl.get('status_codes')}) — "
+            f"⚠️ تحديد معدل مكتشَف فعليًا على {rl_target_txt} (حالات: {rl.get('status_codes')}) — "
             f"يُنصَح بـHTTP_CONCURRENCY=1 لهذا الموقع تحديدًا بدل الافتراضي"
         )
     else:
         suggested_http_concurrency = 3
-        reasons.append("لا تحديد معدل ظاهر في فحص سريع (4 طلبات) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية")
+        reasons.append(f"لا تحديد معدل ظاهر في فحص موازٍ سريع (4 طلبات على {rl_target_txt}) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية")
 
     return {
         "fetch_mode": fetch_mode, "do_scroll": do_scroll, "do_widget_filter": do_widget_filter,
@@ -1374,11 +1728,22 @@ def _recommend_profile(static_r: dict, browser_r: dict, rate_limit_r: dict | Non
     }
 
 
-async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
+async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | None = None) -> dict:
     slug = slugify((urlparse(url).hostname or "site") + "-" + str(abs(hash(url)) % 10000))
+    site_slug = slugify(urlparse(url).hostname or "site")
     print("\n" + "═" * 60)
     print(f"🔬 تقرير تشخيصي: {url}")
     print("═" * 60)
+
+    print("⓪ معلومات شبكة أساسية (TLS + IP الخادم)...")
+    tls_info = await asyncio.to_thread(_tls_and_server_info_sync, url)
+    if tls_info["error"]:
+        print(f"   ⚠️ {tls_info['error']}")
+    else:
+        print(f"   IP الخادم: {tls_info['server_ip']}")
+        print(f"   شهادة TLS — الجهة المُصدِرة: {tls_info['tls_issuer']!r} | الاسم: {tls_info['tls_subject']!r} | تنتهي: {tls_info['tls_not_after']}")
+    if runner_info and not runner_info.get("error"):
+        print(f"   🌐 IP/موقع الـrunner الحالي: {runner_info.get('ip')} ({runner_info.get('org_asn')}, {runner_info.get('city')}/{runner_info.get('country')})")
 
     print("① فحص HTTP خام (بدون Playwright إطلاقًا)...")
     static_r = await asyncio.to_thread(_static_probe_sync, url)
@@ -1397,6 +1762,9 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
             print("   عينة روابط صور من HTML الثابت:")
             for u in static_r["sample_image_urls"]:
                 print(f"     - {u}")
+        if static_r["signed_url_params"]:
+            print(f"   🔑 روابط موقّعة/منتهية الصلاحية مكتشفة (معاملات: {static_r['signed_url_params']}) — "
+                  f"'استخرج الآن حمّل لاحقًا' قد لا يكون آمنًا هنا")
 
     print("② فحص متصفح كامل (تحميل + جدار إعلانات + انتظار + تمرير تراكمي)...")
     browser_r = await _browser_probe(browser, url, diag_dir, slug)
@@ -1404,6 +1772,8 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
         print(f"   ⚠️ {browser_r['error']}")
     print(f"   عنوان الصفحة: {browser_r['title']!r}")
     print(f"   صفحة تحقق/حماية مكتشفة عبر المتصفح: {'نعم ⚠️' if browser_r['challenge_detected'] else 'لا'}")
+    if browser_r["challenge_resolved_after_reload"] is not None:
+        print(f"   🔁 حالة التحدي بعد إعادة التحميل: {'✅ انحل تلقائيًا' if browser_r['challenge_resolved_after_reload'] else '⚠️ ما زال عالقًا'}")
     if browser_r["protection_signatures"]:
         print(f"   🛡️ مزوّد الحماية المُصنَّف (متصفح): {', '.join(browser_r['protection_signatures'])}")
     if browser_r["network_vendor_hits"]:
@@ -1418,24 +1788,51 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
     print(f"   مطابقة المحددات الحالية: {browser_r['selector_match_counts']}")
     print(f"   صور لا تطابق أي محدد معروف: {browser_r['unmatched_img_count']}" +
           ("  ← يُرجَّح الحاجة لمحدد CSS جديد" if browser_r['unmatched_img_count'] else ""))
+    if browser_r["suggested_selectors"]:
+        print(f"   💡 محددات CSS مقترَحة (من الأنماط المتكررة بالصور غير المطابقة): {browser_r['suggested_selectors']}")
     if browser_r["widget_excluded_count"]:
         print(f"   🧹 فلتر الودجات استبعد {browser_r['widget_excluded_count']} صورة — عينات: {browser_r['widget_excluded_samples']}")
     else:
         print("   🧹 فلتر الودجات لم يستبعد أي صورة (قد يكون غير ضروري)")
     if browser_r["domain_distribution"]:
         print(f"   توزيع النطاقات: {browser_r['domain_distribution']}")
+    if browser_r["signed_url_params"]:
+        print(f"   🔑 روابط موقّعة/منتهية الصلاحية مكتشفة عبر المتصفح (معاملات: {browser_r['signed_url_params']})")
 
-    hp = browser_r.get("hotlink_probe")
-    if hp:
-        print("③ فحص حماية السرقة (hotlink) على صورة عينة واحدة...")
-        direct_line = f"   تحميل مباشر بلا جلسة: {'✅ نجح' if hp['direct_http_success'] else '❌ فشل'} ({hp['direct_http_size']} بايت)"
-        if not hp["direct_http_success"]:
-            direct_line += f" — السبب: {hp['direct_http_fail_reason']}"
-        print(direct_line)
-        session_line = f"   تحميل عبر جلسة متصفح: {'✅ نجح' if hp['browser_session_success'] else '❌ فشل'} ({hp['browser_session_size']} بايت)"
-        if not hp["browser_session_success"]:
-            session_line += f" — السبب: {hp['browser_session_fail_reason']}"
-        print(session_line)
+    print("②-تكرار إعادة فحص كامل بجلسة نظيفة ثانية (فحص اتساق/احتمالية الحماية)...")
+    browser_r2 = await _browser_probe(browser, url, diag_dir, slug + "-run2")
+    consistency_diffs = _diff_browser_probes(browser_r, browser_r2)
+    if consistency_diffs:
+        print("   🎲 تذبذب مكتشَف بين التكرارين (حماية غالبًا احتمالية):")
+        for d in consistency_diffs:
+            print(f"     - {d}")
+    else:
+        print("   ✅ النتيجة متطابقة بين التكرارين — لا تذبذب ظاهر ضمن هذا الفحص")
+
+    hotlink_probes = browser_r.get("hotlink_probes") or []
+    if hotlink_probes:
+        print(f"③ فحص حماية السرقة (hotlink) على {len(hotlink_probes)} صورة عيّنة (أولى/وسط/أخيرة) — عزل ثلاثي لكل واحدة...")
+        for i, hp in enumerate(hotlink_probes, start=1):
+            print(f"   — عيّنة {i}: {hp['sample_url']}")
+            no_ref_line = f"     بلا Referer وبلا كوكيز: {'✅ نجح' if hp['no_referer_success'] else '❌ فشل'} ({hp['no_referer_size']} بايت)"
+            if not hp["no_referer_success"]:
+                no_ref_line += f" — السبب: {hp['no_referer_fail_reason']}"
+            print(no_ref_line)
+            direct_line = f"     بReferer صحيح وبلا كوكيز: {'✅ نجح' if hp['direct_http_success'] else '❌ فشل'} ({hp['direct_http_size']} بايت)"
+            if not hp["direct_http_success"]:
+                direct_line += f" — السبب: {hp['direct_http_fail_reason']}"
+            print(direct_line)
+            session_line = f"     بجلسة متصفح كاملة: {'✅ نجح' if hp['browser_session_success'] else '❌ فشل'} ({hp['browser_session_size']} بايت)"
+            if not hp["browser_session_success"]:
+                session_line += f" — السبب: {hp['browser_session_fail_reason']}"
+            print(session_line)
+            if hp.get("referer_only_sufficient"):
+                print("     💡 استنتاج: الحماية Referer فقط لهذي العيّنة")
+        # [إصلاح منطقي متوقّع] هل النتيجة متسقة عبر العيّنات؟ عيّنة واحدة كانت
+        # تخفي تذبذبًا محتملًا بين أول/وسط/آخر صورة بالفصل.
+        modes = {hp["direct_http_success"] for hp in hotlink_probes}
+        if len(modes) > 1:
+            print("   ⚠️ تذبذب: نتيجة الحماية اختلفت بين العيّنات (بعضها نجح بReferer فقط وبعضها لا) — التوصية أدناه مبنية على العيّنة الأولى فقط")
     else:
         print("③ لم يتوفر رابط صورة عينة لفحص حماية السرقة")
 
@@ -1447,15 +1844,23 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
         outcome = "✅ نجح — قد تصلح استراتيجية هجينة (حل مرة واحدة + HTTP لاحقًا)" if cr.get("success") else "❌ فشل — يحتاج متصفحًا لكل فصل"
         print(f"   {outcome} (status={cr.get('status_code')}, كوكيز مُعاد استخدامها: {cr.get('cookie_count_reused')})")
 
-    print("⑤ فحص تحديد المعدل (Rate Limiting) — 4 طلبات سريعة متتالية...")
-    rl = await asyncio.to_thread(_rate_limit_probe_sync, url)
+    print("⑤ فحص تحديد المعدل (Rate Limiting) — 4 طلبات موازية فعليًا...")
+    rate_limit_sample = None
+    if hotlink_probes:
+        rate_limit_sample = hotlink_probes[0]["sample_url"]
+    if rate_limit_sample:
+        print(f"   🎯 الهدف: رابط صورة CDN عيّنة (يحاكي الحمل الحقيقي وقت التشغيل): {rate_limit_sample}")
+        rl = await _rate_limit_probe_image(rate_limit_sample, url)
+    else:
+        print("   ⚠️ لا رابط صورة متاح — رجوع لرابط الصفحة (أقل تمثيلًا للحمل الحقيقي)")
+        rl = await asyncio.to_thread(_rate_limit_probe_sync, url)
     print(f"   الحالات: {rl['status_codes']} خلال {rl['elapsed_sec']}ث — تحديد معدل مكتشَف: {'نعم ⚠️' if rl['rate_limited_detected'] else 'لا'}"
           + (f" — Retry-After: {rl['retry_after_header']}" if rl['retry_after_header'] else ""))
 
     if browser_r["screenshot_path"]:
         print(f"   🖼️ لقطة شاشة مرجعية محفوظة: {browser_r['screenshot_path']}")
 
-    recommendation = _recommend_profile(static_r, browser_r, rl)
+    recommendation = _recommend_profile(static_r, browser_r, rl, consistency_diffs)
     print("⑥ التوصية المقترحة لبروفايل جديد:")
     print(f"   fetch_mode المقترح: {recommendation['fetch_mode']}")
     if recommendation["fetch_mode"] == "browser":
@@ -1473,11 +1878,42 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
             f'   "اسم_الموقع": {{"label": "...", "fetch_mode": "browser", '
             f'"do_scroll": {recommendation["do_scroll"]}, "do_widget_filter": {recommendation["do_widget_filter"]}}},'
         )
+
+    # [معلومة مفقودة — تتبع تاريخي] مقارنة بآخر فحص محفوظ لنفس الموقع (بحسب
+    # hostname) على فرع الإخراج، وحفظ لقطة جديدة بالتاريخ للفحوصات القادمة.
+    first_hp = hotlink_probes[0] if hotlink_probes else {}
+    current_snapshot = {
+        "date": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
+        "url": url,
+        "fetch_mode_recommended": recommendation["fetch_mode"],
+        "challenge_detected_static": static_r.get("challenge_detected"),
+        "challenge_detected_browser": browser_r.get("challenge_detected"),
+        "protection_signatures": sorted(set((static_r.get("protection_signatures") or []) + (browser_r.get("protection_signatures") or []))),
+        "referer_only_sufficient": first_hp.get("referer_only_sufficient"),
+        "rate_limited_detected": rl.get("rate_limited_detected"),
+        "signed_url_params": sorted(set((static_r.get("signed_url_params") or []) + (browser_r.get("signed_url_params") or []))),
+    }
+    history = await asyncio.to_thread(_load_diagnostic_history_sync, site_slug)
+    print("⑦ تتبّع تاريخي (مقارنة بآخر فحص محفوظ لهذا الموقع)...")
+    history_diffs = []
+    if history:
+        history_diffs = _diff_diagnostic_snapshots(history[-1], current_snapshot)
+        if history_diffs:
+            print(f"   🚨 تغيّر سلوك الحماية منذ آخر فحص ({history[-1].get('date', '؟')}):")
+            for d in history_diffs:
+                print(f"     - {d}")
+        else:
+            print(f"   ✅ لا تغيّر ملحوظ منذ آخر فحص محفوظ ({history[-1].get('date', '؟')})")
+    else:
+        print("   ℹ️ لا يوجد فحص سابق محفوظ لهذا الموقع — هذه أول لقطة تاريخية")
+    await asyncio.to_thread(_save_diagnostic_history_sync, site_slug, history + [current_snapshot])
     print("═" * 60)
 
     report = {
-        "url": url, "static_probe": static_r, "browser_probe": browser_r,
-        "rate_limit_probe": rl, "recommendation": recommendation,
+        "url": url, "tls_and_server_info": tls_info, "runner_network_info": runner_info,
+        "static_probe": static_r, "browser_probe": browser_r, "browser_probe_second_run": browser_r2,
+        "consistency_diffs": consistency_diffs, "rate_limit_probe": rl,
+        "recommendation": recommendation, "history_diffs_since_last_run": history_diffs,
     }
     (diag_dir / f"{slug}-report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
@@ -1488,17 +1924,26 @@ async def diagnose_url(browser, url: str, diag_dir: Path) -> dict:
 async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     print("🔬 وضع التشخيص مفعّل (موسّع) — لن يُنزَّل أو يُضغط أي فصل فعليًا، ولن يُستخدم اختيار الموقع المصدر إطلاقًا")
     if len(chapter_urls) > 3:
-        print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا ويشغّل 5 مراحل فحص). سيُتابَع بكل الروابط رغم ذلك")
+        print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا ويشغّل فحصًا مزدوجًا لكل مرحلة). سيُتابَع بكل الروابط رغم ذلك")
 
     diag_dir = OUTPUT_DIR / "diagnostics"
     diag_dir.mkdir(parents=True, exist_ok=True)
+
+    # [معلومة مفقودة] IP/ASN الخاص بالـrunner — طلب واحد يكفي لكل التشغيلة
+    # (نفس الشبكة لكل الروابط بهذه التشغيلة)، لا لكل رابط على حدة.
+    print("🌐 جلب معلومات شبكة الـrunner الحالي (IP/ASN)...")
+    runner_info = await asyncio.to_thread(_runner_network_info_sync)
+    if runner_info.get("error"):
+        print(f"   ⚠️ تعذّر جلب معلومات الشبكة: {runner_info['error']}")
+    else:
+        print(f"   IP: {runner_info.get('ip')} | ASN/مزوّد: {runner_info.get('org_asn')} | الموقع: {runner_info.get('city')}/{runner_info.get('country')}")
 
     reports = []
     async with async_playwright() as p:
         browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
         for url in chapter_urls:
             try:
-                report = await diagnose_url(browser, url, diag_dir)
+                report = await diagnose_url(browser, url, diag_dir, runner_info)
                 reports.append(report)
             except Exception as e:
                 print(f"❌ خطأ غير متوقع أثناء تشخيص {url}: {e}")
@@ -1511,7 +1956,7 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
 
     if GIT_COMMIT_DIR:
         ok, msg = await asyncio.to_thread(
-            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تقرير تشخيصي جديد لموقع لم يُعتمد بعد"
+            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تقرير تشخيصي جديد + تحديث التتبع التاريخي"
         )
         print(f"{'✅' if ok else '⚠️'} دفع تقرير التشخيص: {msg}")
 
