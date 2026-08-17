@@ -1,51 +1,56 @@
 [
   {
-    "url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
+    "url": "https://procomic.net/en/chapter/ill-be-taking-a-break-for-personal-reasons-111-35765",
     "tls_and_server_info": {
-      "server_ip": "172.67.213.90",
-      "tls_issuer": "Google Trust Services",
-      "tls_subject": "dilar.tube",
-      "tls_not_after": "Oct  5 02:27:48 2026 GMT",
+      "server_ip": "104.21.45.19",
+      "tls_issuer": "Let's Encrypt",
+      "tls_subject": "procomic.net",
+      "tls_not_after": "Sep 26 19:23:08 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "40.116.93.48",
+      "ip": "20.83.158.135",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Chicago",
+      "city": "Dulles Town Center",
       "country": "US",
       "error": null
     },
     "static_probe": {
-      "status_code": 403,
+      "status_code": 200,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a2c5a84ee8be2220-ORD",
-        "cf-mitigated": "challenge",
-        "content-type": "text/html; charset=UTF-8"
+        "cf-ray": "a2c5c3637b5ad630-IAD",
+        "cf-cache-status": "BYPASS",
+        "content-type": "text/html; charset=utf-8",
+        "set-cookie": "language=en; Path=/; Expires=Tue, 17 Aug 2027 03:58:56 GMT; Max-Age=31536000; Domain=.procomic.net; Secure; SameSite=lax"
       },
-      "challenge_detected": true,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
+      "challenge_detected": false,
+      "protection_signatures": [],
       "images_via_noscript": 0,
       "images_via_data_attr": 0,
       "images_via_plain_src": 0,
-      "extracted_image_count": 0,
-      "extracted_sample_urls": [],
+      "extracted_image_count": 7,
+      "extracted_sample_urls": [
+        "https://app.procomic.net/seo/595/1771608459317-vrk3ad55tph.jpg",
+        "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
+        "https://cdn3.procomic.net/595/35765/1771606151219-6i4c1lzwszr.avif"
+      ],
       "sample_image_urls": [],
       "signed_url_params": [],
-      "raw_cookies_received": [],
+      "raw_cookies_received": [
+        "language"
+      ],
       "error": null
     },
     "browser_probe": {
       "navigated": true,
-      "title": "Dilar - الصفحة الرئيسية",
+      "title": "I’ll Be Taking A Break For… - chapter 111 | ProComic",
       "challenge_detected": false,
       "challenge_resolved_after_reload": null,
       "protection_signatures": [],
-      "images_at_t0": 0,
-      "images_after_wait": 0,
-      "images_after_scroll": 0,
+      "images_at_t0": 2,
+      "images_after_wait": 2,
+      "images_after_scroll": 122,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -53,47 +58,109 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 0,
+      "unmatched_img_count": 122,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [],
-      "domain_distribution": {},
-      "signed_url_params": [],
-      "screenshot_path": "diagnostics/dilar-tube-4132-screenshot.png",
-      "hotlink_probe": null,
-      "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge": [
-          "blob:https://challenges.cloudflare.com/03fea1af-8403-476b-89bd-81a3604eb449",
-          "blob:https://challenges.cloudflare.com/7e31d0c2-fbce-4b35-9065-93526e9efdf2",
-          "blob:https://challenges.cloudflare.com/88f33026-1906-4571-bbe4-1bd85d9e94a1"
-        ]
+      "suggested_selectors": [
+        ".flex",
+        ".flex-col",
+        ".w-full",
+        ".block",
+        ".transition-colors",
+        ".rounded-lg",
+        ".border",
+        ".px-2"
+      ],
+      "domain_distribution": {
+        "procomic.net": 118,
+        "app.procomic.net": 3,
+        "s3.pubfuture.com": 1
       },
+      "signed_url_params": [
+        "expires",
+        "token"
+      ],
+      "screenshot_path": "diagnostics/procomic-net-2761-screenshot.png",
+      "hotlink_probe": {
+        "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
+        "no_referer_success": true,
+        "no_referer_size": 728346,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 728346,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 728346,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      "hotlink_probes": [
+        {
+          "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
+          "no_referer_success": true,
+          "no_referer_size": 728346,
+          "no_referer_fail_reason": null,
+          "direct_http_success": true,
+          "direct_http_size": 728346,
+          "direct_http_fail_reason": null,
+          "browser_session_success": true,
+          "browser_session_size": 728346,
+          "browser_session_fail_reason": null,
+          "referer_only_sufficient": false
+        },
+        {
+          "sample_url": "https://procomic.net/api/cdn-image?expires=1786939200&token=opCL4wMuZD0xXB1AiwWDpJ4VOhdjEyVb64Pz9M18DaE&url=https%3A%2F%2Fcdn3.procomic.net%2F595%2F35765%2F1771606381754-qmkcvtvjge.avif",
+          "no_referer_success": false,
+          "no_referer_size": 25,
+          "no_referer_fail_reason": "status=410 content-type='application/json'",
+          "direct_http_success": false,
+          "direct_http_size": 25,
+          "direct_http_fail_reason": "status=410 content-type='application/json'",
+          "browser_session_success": false,
+          "browser_session_size": 0,
+          "browser_session_fail_reason": "status=410 content-type='application/json'",
+          "referer_only_sufficient": false
+        },
+        {
+          "sample_url": "https://procomic.net/_next/image?url=%2FSticker%2Fcomment-broken_heart.avif&w=96&q=75",
+          "no_referer_success": false,
+          "no_referer_size": 2003,
+          "no_referer_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
+          "direct_http_success": false,
+          "direct_http_size": 2003,
+          "direct_http_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
+          "browser_session_success": false,
+          "browser_session_size": 0,
+          "browser_session_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
+          "referer_only_sufficient": false
+        }
+      ],
+      "network_vendor_hits": {},
       "adblock_wall": {
-        "detected": true,
-        "became_ready_after_sec": 45.2,
-        "clicked": true,
-        "button_snippet": "<button id=\"_fb_continue\" class=\"_fb_btn _fb_btn_sec disabled\" disabled=\"\">المتابعة على أي حال <span id=\"_fb_countdown\">(7)</span></button>",
-        "timed_out": true
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
       },
       "cookie_reuse_probe": {
         "tested": true,
-        "success": false,
-        "status_code": 403,
-        "cookie_count_reused": 3
+        "success": true,
+        "status_code": 200,
+        "cookie_count_reused": 12
       },
       "error": null,
-      "content_images_before_scroll": 0
+      "content_images_before_scroll": 2
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "Dilar - الصفحة الرئيسية",
+      "title": "I’ll Be Taking A Break For… - chapter 111 | ProComic",
       "challenge_detected": false,
       "challenge_resolved_after_reload": null,
       "protection_signatures": [],
-      "images_at_t0": 0,
-      "images_after_wait": 0,
-      "images_after_scroll": 0,
+      "images_at_t0": 2,
+      "images_after_wait": 2,
+      "images_after_scroll": 122,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -101,63 +168,125 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 0,
+      "unmatched_img_count": 122,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [],
-      "domain_distribution": {},
-      "signed_url_params": [],
-      "screenshot_path": "diagnostics/dilar-tube-4132-run2-screenshot.png",
-      "hotlink_probe": null,
-      "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge": [
-          "blob:https://challenges.cloudflare.com/061e5113-2112-43e1-9cda-f9f0f8361d37",
-          "blob:https://challenges.cloudflare.com/8920bdff-bee9-4456-9813-2a6644ecb69c",
-          "blob:https://challenges.cloudflare.com/cff4eab3-f215-422f-a359-640d02b1966c"
-        ]
+      "suggested_selectors": [
+        ".flex",
+        ".flex-col",
+        ".w-full",
+        ".block",
+        ".transition-colors",
+        ".rounded-lg",
+        ".border",
+        ".px-2"
+      ],
+      "domain_distribution": {
+        "procomic.net": 118,
+        "app.procomic.net": 3,
+        "s3.pubfuture.com": 1
       },
+      "signed_url_params": [
+        "expires",
+        "token"
+      ],
+      "screenshot_path": "diagnostics/procomic-net-2761-run2-screenshot.png",
+      "hotlink_probe": {
+        "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
+        "no_referer_success": true,
+        "no_referer_size": 728346,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 728346,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 728346,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      "hotlink_probes": [
+        {
+          "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
+          "no_referer_success": true,
+          "no_referer_size": 728346,
+          "no_referer_fail_reason": null,
+          "direct_http_success": true,
+          "direct_http_size": 728346,
+          "direct_http_fail_reason": null,
+          "browser_session_success": true,
+          "browser_session_size": 728346,
+          "browser_session_fail_reason": null,
+          "referer_only_sufficient": false
+        },
+        {
+          "sample_url": "https://procomic.net/api/cdn-image?expires=1786939800&token=BMjqRI9jwsl3WLEdJoKyYvEKJQcsCw5b7KPelUl-U6c&url=https%3A%2F%2Fcdn3.procomic.net%2F595%2F35765%2F1771606381754-qmkcvtvjge.avif",
+          "no_referer_success": true,
+          "no_referer_size": 33956,
+          "no_referer_fail_reason": null,
+          "direct_http_success": true,
+          "direct_http_size": 33956,
+          "direct_http_fail_reason": null,
+          "browser_session_success": true,
+          "browser_session_size": 33956,
+          "browser_session_fail_reason": null,
+          "referer_only_sufficient": false
+        },
+        {
+          "sample_url": "https://procomic.net/_next/image?url=%2FSticker%2Fcomment-broken_heart.avif&w=96&q=75",
+          "no_referer_success": false,
+          "no_referer_size": 2003,
+          "no_referer_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
+          "direct_http_success": false,
+          "direct_http_size": 2003,
+          "direct_http_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
+          "browser_session_success": false,
+          "browser_session_size": 0,
+          "browser_session_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
+          "referer_only_sufficient": false
+        }
+      ],
+      "network_vendor_hits": {},
       "adblock_wall": {
-        "detected": true,
-        "became_ready_after_sec": 45.2,
-        "clicked": true,
-        "button_snippet": "<button id=\"_fb_continue\" class=\"_fb_btn _fb_btn_sec disabled\" disabled=\"\">المتابعة على أي حال <span id=\"_fb_countdown\">(7)</span></button>",
-        "timed_out": true
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
       },
       "cookie_reuse_probe": {
         "tested": true,
-        "success": false,
-        "status_code": 403,
-        "cookie_count_reused": 3
+        "success": true,
+        "status_code": 200,
+        "cookie_count_reused": 11
       },
       "error": null,
-      "content_images_before_scroll": 0
+      "content_images_before_scroll": 2
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
-      "target": "page_url",
-      "sample_url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
+      "target": "image_cdn",
+      "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
       "requests_sent": 4,
-      "elapsed_sec": 0.15,
+      "elapsed_sec": 0.11,
       "status_codes": [
-        403,
-        403,
-        403,
-        403
+        200,
+        200,
+        200,
+        200
       ],
-      "rate_limited_detected": true,
+      "rate_limited_detected": false,
       "retry_after_header": null
     },
     "recommendation": {
-      "fetch_mode": "browser",
-      "do_scroll": false,
+      "fetch_mode": "http",
+      "do_scroll": true,
       "do_widget_filter": false,
-      "suggested_http_concurrency": 1,
+      "suggested_http_concurrency": 3,
       "reasons": [
-        "صفحة تحقق/حماية ظهرت حتى بالطلب الثابت (Cloudflare) — يحتاج متصفحًا حقيقيًا على الأقل",
-        "مسار HTTP المباشر الفعلي سيستخرج 0 صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)",
-        "جدار مانع إعلانات مكتشَف — استغرق زر التجاوز 45.2ث ليصبح جاهزًا فعليًا",
-        "⚠️ تحديد معدل مكتشَف فعليًا على رابط الصفحة (احتياطي) (حالات: [403, 403, 403, 403]) — يُنصَح بـHTTP_CONCURRENCY=1 لهذا الموقع تحديدًا بدل الافتراضي"
+        "مسار HTTP المباشر الفعلي (extract_images_from_html) سيستخرج 7 صورة فعليًا، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة",
+        "⚠️ نتيجة فحص hotlink تذبذبت بين عيّنات مختلفة (أولى/وسط/أخيرة) — التوصية أعلاه مبنية على العيّنة الأولى فقط، يُنصَح بمراجعة التقرير التفصيلي قبل الاعتماد",
+        "🔑 روابط الصور تحمل معاملات توقيع/انتهاء صلاحية (expires, token) — أي استراتيجية 'استخرج الروابط الآن وحمّلها لاحقًا' (تأخير، إعادة محاولة متأخرة) قد تفشل لأن الرابط ينتهي؛ يُفضَّل التحميل فور الاستخراج مباشرة",
+        "لا تحديد معدل ظاهر في فحص موازٍ سريع (4 طلبات على CDN الصور) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية"
       ]
     },
     "history_diffs_since_last_run": []
