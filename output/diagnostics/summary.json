@@ -1,40 +1,51 @@
 [
   {
-    "url": "https://procomic.net/ar/chapter/ill-be-taking-a-break-for-personal-reasons-1-35884",
+    "url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
+    "tls_and_server_info": {
+      "server_ip": "172.67.213.90",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "dilar.tube",
+      "tls_not_after": "Oct  5 02:27:48 2026 GMT",
+      "error": null
+    },
+    "runner_network_info": {
+      "ip": "40.116.93.48",
+      "org_asn": "AS8075 Microsoft Corporation",
+      "city": "Chicago",
+      "country": "US",
+      "error": null
+    },
     "static_probe": {
-      "status_code": 200,
+      "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a2bf2301acf8eafb-ORD",
-        "cf-cache-status": "BYPASS",
-        "content-type": "text/html; charset=utf-8",
-        "set-cookie": "language=ar; Path=/; Expires=Mon, 16 Aug 2027 08:40:53 GMT; Max-Age=31536000; Domain=.procomic.net; Secure; SameSite=lax"
+        "cf-ray": "a2c5a84ee8be2220-ORD",
+        "cf-mitigated": "challenge",
+        "content-type": "text/html; charset=UTF-8"
       },
-      "challenge_detected": false,
-      "protection_signatures": [],
+      "challenge_detected": true,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_via_noscript": 0,
       "images_via_data_attr": 0,
       "images_via_plain_src": 0,
-      "extracted_image_count": 7,
-      "extracted_sample_urls": [
-        "https://app.procomic.net/seo/595/1771608459317-vrk3ad55tph.jpg",
-        "https://app.procomic.net/chapters/595/35884/p1/1771607719125-sjmf7fjg2yj-5c3332a9b749-desktop.avif",
-        "https://cdn3.procomic.net/595/35884/1771607719125-sjmf7fjg2yj.avif"
-      ],
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
       "sample_image_urls": [],
-      "raw_cookies_received": [
-        "language"
-      ],
+      "signed_url_params": [],
+      "raw_cookies_received": [],
       "error": null
     },
     "browser_probe": {
       "navigated": true,
-      "title": "I’ll Be Taking A Break For Personal… - الفصل 1 | ProComic",
+      "title": "Dilar - الصفحة الرئيسية",
       "challenge_detected": false,
+      "challenge_resolved_after_reload": null,
       "protection_signatures": [],
-      "images_at_t0": 2,
-      "images_after_wait": 2,
-      "images_after_scroll": 191,
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -42,62 +53,113 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 191,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "domain_distribution": {
-        "procomic.net": 187,
-        "app.procomic.net": 3,
-        "s3.pubfuture.com": 1
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/dilar-tube-4132-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge": [
+          "blob:https://challenges.cloudflare.com/03fea1af-8403-476b-89bd-81a3604eb449",
+          "blob:https://challenges.cloudflare.com/7e31d0c2-fbce-4b35-9065-93526e9efdf2",
+          "blob:https://challenges.cloudflare.com/88f33026-1906-4571-bbe4-1bd85d9e94a1"
+        ]
       },
-      "screenshot_path": "diagnostics/procomic-net-2712-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://app.procomic.net/chapters/595/35884/p1/1771607719125-sjmf7fjg2yj-5c3332a9b749-desktop.avif",
-        "direct_http_success": true,
-        "direct_http_size": 523793,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 523793,
-        "browser_session_fail_reason": null
-      },
-      "network_vendor_hits": {},
       "adblock_wall": {
-        "detected": false,
-        "became_ready_after_sec": null,
-        "clicked": false,
-        "button_snippet": null,
-        "timed_out": false
+        "detected": true,
+        "became_ready_after_sec": 45.2,
+        "clicked": true,
+        "button_snippet": "<button id=\"_fb_continue\" class=\"_fb_btn _fb_btn_sec disabled\" disabled=\"\">المتابعة على أي حال <span id=\"_fb_countdown\">(7)</span></button>",
+        "timed_out": true
       },
       "cookie_reuse_probe": {
         "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 10
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 3
       },
       "error": null,
-      "content_images_before_scroll": 2
+      "content_images_before_scroll": 0
     },
+    "browser_probe_second_run": {
+      "navigated": true,
+      "title": "Dilar - الصفحة الرئيسية",
+      "challenge_detected": false,
+      "challenge_resolved_after_reload": null,
+      "protection_signatures": [],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/dilar-tube-4132-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge": [
+          "blob:https://challenges.cloudflare.com/061e5113-2112-43e1-9cda-f9f0f8361d37",
+          "blob:https://challenges.cloudflare.com/8920bdff-bee9-4456-9813-2a6644ecb69c",
+          "blob:https://challenges.cloudflare.com/cff4eab3-f215-422f-a359-640d02b1966c"
+        ]
+      },
+      "adblock_wall": {
+        "detected": true,
+        "became_ready_after_sec": 45.2,
+        "clicked": true,
+        "button_snippet": "<button id=\"_fb_continue\" class=\"_fb_btn _fb_btn_sec disabled\" disabled=\"\">المتابعة على أي حال <span id=\"_fb_countdown\">(7)</span></button>",
+        "timed_out": true
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 3
+      },
+      "error": null,
+      "content_images_before_scroll": 0
+    },
+    "consistency_diffs": [],
     "rate_limit_probe": {
+      "target": "page_url",
+      "sample_url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
       "requests_sent": 4,
-      "elapsed_sec": 0.75,
+      "elapsed_sec": 0.15,
       "status_codes": [
-        200,
-        200,
-        200,
-        200
+        403,
+        403,
+        403,
+        403
       ],
-      "rate_limited_detected": false,
+      "rate_limited_detected": true,
       "retry_after_header": null
     },
     "recommendation": {
-      "fetch_mode": "http",
-      "do_scroll": true,
+      "fetch_mode": "browser",
+      "do_scroll": false,
       "do_widget_filter": false,
-      "suggested_http_concurrency": 3,
+      "suggested_http_concurrency": 1,
       "reasons": [
-        "مسار HTTP المباشر الفعلي (extract_images_from_html) سيستخرج 7 صورة فعليًا، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة",
-        "لا تحديد معدل ظاهر في فحص سريع (4 طلبات) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية"
+        "صفحة تحقق/حماية ظهرت حتى بالطلب الثابت (Cloudflare) — يحتاج متصفحًا حقيقيًا على الأقل",
+        "مسار HTTP المباشر الفعلي سيستخرج 0 صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)",
+        "جدار مانع إعلانات مكتشَف — استغرق زر التجاوز 45.2ث ليصبح جاهزًا فعليًا",
+        "⚠️ تحديد معدل مكتشَف فعليًا على رابط الصفحة (احتياطي) (حالات: [403, 403, 403, 403]) — يُنصَح بـHTTP_CONCURRENCY=1 لهذا الموقع تحديدًا بدل الافتراضي"
       ]
-    }
+    },
+    "history_diffs_since_last_run": []
   }
 ]
