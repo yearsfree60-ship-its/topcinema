@@ -111,12 +111,30 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
   الحذف ضمنيًا منذ git 2.0) كان يعتبرها "محذوفة" من القرص ويُدرج حذفها
   بالـcommit التالي — فيُدفَع هذا الحذف فعليًا، ماحيًا بصمت نتيجة تشغيلة
   أخرى ناجحة تمامًا (لوحظ فعليًا: ملف runs/run-<id>.json لتشغيلة نجحت
-  ودفعت بنجاح حسب سجلّها الخاص، اختفى لاحقًا من الفرع البعيد). الإصلاح:
-  التقاط قائمة الملفات التي غيّرها التزام هذه التشغيلة تحديدًا (قبل أي
-  reset، عبر git diff --name-only) وتقييد كل "git add" بعد reset على تلك
-  القائمة فقط — بدل مجلد الإخراج كامل — في كل من compress_chapters.py
-  (_commit_and_push_sync) وخطوة "دفع احتياطي نهائي" بملف الـworkflow،
-  بحيث لا تُلمَس إطلاقًا أي ملفات لم تكتبها هذه التشغيلة نفسها.
+  ودفعت بنجاح حسب سجلّها الخاص، اختفى لاحقًا من الفرع البعيد). محاولة
+  الإصلاح الأولى قيّدت "git add" بعد reset فقط (عبر git diff --name-only
+  المُلتقَط بعد أول commit)، لكنها تركت أول "git add" بكل استدعاء (قبل أي
+  تعارض) بلا تقييد.
+[تصحيح حرج ٥] اكتُشف أن تصحيح ٤ غير مكتمل: بعد أول تعارض يُحلّ بنجاح ضمن
+  نفس التشغيلة (فصل رقم 1 مثلًا)، يصبح HEAD المحلي يطابق origin عند لحظة
+  الـreset — وهو يتضمن بالفهرس ملفات تشغيلات أخرى (runs/run-<آخر>.json…)
+  غائبة فعليًا عن قرص هذا الـworktree. عند اكتمال الفصل التالي (استدعاء
+  جديد لـ_commit_and_push_sync عبر push_now)، أول "git add <مجلد الإخراج
+  كامل>" بذلك الاستدعاء (غير المحمي بمنطق ٤، لأنه قبل أي reset في هذا
+  الاستدعاء تحديدًا) يقارن القرص بهذا الفهرس "الملوَّث"، يعتبر تلك الملفات
+  محذوفة، ويدفع حذفها — أحيانًا من أول محاولة push دون حتى المرور بمسار
+  إعادة المحاولة، أي بصمت أشد. الإصلاح الجذري: التخلي كليًا عن أي
+  "git add <مجلد>" (بأي موضع، أول إضافة أو بعد reset) واستبداله بقائمة
+  مسارات صريحة (whitelist) تُبنى من بيانات التشغيلة نفسها لا من فحص فرق
+  git التفاعلي: manifest.json + runs/run-<RUN_ID>.json + مجلد كل فصل
+  كُتب فعليًا ضمن `results` حتى هذه اللحظة (وفي وضع التشخيص: مجلد
+  diagnostics بكامله فقط). _commit_and_push_sync أصبحت تتطلب allowed_paths
+  (نسبية لـOUTPUT_DIR) صراحةً من كل مستدعٍ، وتُستخدم نفس القائمة في كل
+  عمليات git add بلا استثناء — أول إضافة وإعادة المحاولة بعد reset على حد
+  سواء — فلا تُلمَس إطلاقًا أي مسارات لم تكتبها هذه التشغيلة، بصرف النظر
+  عن حالة الفهرس بعد أي عدد من عمليات reset.
+  (خطوة "دفع احتياطي نهائي" بملف الـworkflow لا تزال تستخدم "git add
+  output" غير المقيّد بالكامل — إصلاحها بند منفصل لاحق).
 ================================================================================
 """
 import asyncio
@@ -1123,7 +1141,18 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
     return manifest
 
 
-def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attempts: int = 5) -> tuple[bool, str]:
+def _commit_and_push_sync(
+    commit_dir: str, branch: str, message: str, allowed_paths: list[str], max_attempts: int = 5
+) -> tuple[bool, str]:
+    """
+    [تصحيح حرج ٥] allowed_paths إلزامية الآن: قائمة مسارات نسبية لـ
+    OUTPUT_DIR (مثل "manifest.json"، "runs/run-123.json"،
+    "manga-id/ch-5") تحدد صراحةً ما هذه التشغيلة مخوّلة إضافته/دفعه.
+    تُستخدم نفس القائمة حرفيًا في كل استدعاء git add بهذه الدالة — أول
+    إضافة وأي إضافة لاحقة بعد reset — ولا يوجد أي "git add <مجلد>" شامل
+    في أي موضع. هذا يمنع جذريًا حذف ملفات تشغيلات أخرى محتملة الوجود
+    بالفهرس بعد reset (راجع تصحيح ٤ و٥ بترويسة الملف لتفاصيل السيناريو).
+    """
     # [تصحيح حرج ١] نستخدم مسار OUTPUT_DIR الفعلي المحسوب نسبيًا لمستودع
     # git، بدل الاسم الحرفي الثابت "output" الذي كان يتجاهل تخصيص
     # OUTPUT_DIR بالكامل ويسبب فقدان نتائج صامتًا.
@@ -1131,7 +1160,14 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
     if git_rel_output is None:
         return False, f"OUTPUT_DIR ({OUTPUT_DIR}) ليس داخل GIT_COMMIT_DIR ({commit_dir}) — تعذّر تحديد مسار الدفع"
 
-    add = _run_git(["add", git_rel_output], commit_dir)
+    if not allowed_paths:
+        return True, "لا توجد مسارات مصرّح بها لهذه التشغيلة (لا شيء لإضافته)"
+
+    # إزالة أي تكرار مع الحفاظ على الترتيب — تكرار مسار بنفس git add غير
+    # ضار فعليًا، لكن الأنظف تفاديه.
+    add_paths = list(dict.fromkeys(f"{git_rel_output}/{p}" for p in allowed_paths))
+
+    add = _run_git(["add", "--"] + add_paths, commit_dir)
     if add.returncode != 0:
         return False, f"git add فشل: {add.stderr.strip()[:200]}"
     diff = _run_git(["diff", "--cached", "--quiet"], commit_dir)
@@ -1141,34 +1177,18 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
     if commit.returncode != 0:
         return False, f"git commit فشل: {commit.stderr.strip()[:200]}"
 
-    # [تصحيح حرج ٤] نلتقط أسماء الملفات التي غيّرها التزامنا المحلي تحديدًا
-    # — الآن، قبل أي reset — لاستخدامها لاحقًا بدل "git add <مجلد الإخراج
-    # كامل>" الشامل بعد أي reset. السبب: "git reset origin/<branch>" ينقل
-    # الفهرس (index) ليطابق أحدث نسخة بعيدة لكنه لا يمس قرص هذه التشغيلة
-    # إطلاقًا. لو تشغيلة أخرى منفصلة (نسخة GitHub Actions runner مختلفة)
-    # دفعت بنجاح ملفات جديدة (مثل runs/run-<معرّف آخر>.json، أو صور فصل
-    # مانهوا أخرى) بين محاولتي دفع هذه التشغيلة، فسيحتوي الفهرس بعد reset
-    # على تلك الملفات، لكنها غائبة تمامًا عن قرص هذه التشغيلة (كل تشغيلة
-    # لها worktree مستقل خاص بها من الصفر). "git add <مجلد>" (منذ git 2.0
-    # يشمل رصد الحذف ضمنيًا) كان حينها يعتبرها "محذوفة" ويُدرجها بنفس
-    # الـcommit التالي — فيُدفَع حذفها فعليًا، ماحيًا نتيجة تشغيلة أخرى
-    # ناجحة تمامًا بصمت. تقييد "git add" على قائمة الملفات المحددة التي
-    # هذه التشغيلة كتبتها فعليًا يمنع هذا السيناريو جذريًا: أي ملف لم
-    # تكتبه هذه التشغيلة لن يُلمَس إطلاقًا مهما حدث بالفهرس بعد أي reset.
-    changed_result = _run_git(["diff", "--name-only", "HEAD~1", "HEAD"], commit_dir)
-    changed_files = [p.strip() for p in changed_result.stdout.splitlines() if p.strip()]
-    if not changed_files:
-        # احتياط نادر: لو تعذّر تحديد القائمة لأي سبب، نعود للسلوك القديم
-        # (مجلد الإخراج كامل) بدل تعطيل الدفع كليًا.
-        changed_files = [git_rel_output]
-
     for attempt in range(1, max_attempts + 1):
         push = _run_git(["push", "origin", f"HEAD:{branch}"], commit_dir)
         if push.returncode == 0:
             return True, "تم الدفع"
+        # "git reset origin/<branch>" (مختلط) ينقل الفهرس ليطابق أحدث
+        # نسخة بعيدة، بلا لمس قرص هذه التشغيلة إطلاقًا. لو الفهرس الجديد
+        # يحوي ملفات تشغيلات أخرى غير موجودة على هذا القرص، فإن تقييد
+        # الإضافة على add_paths حصرًا (بدل أي "git add <مجلد>") يضمن عدم
+        # اعتبارها "محذوفة" ودفع حذفها بالخطأ.
         _run_git(["fetch", "origin", branch], commit_dir)
         _run_git(["reset", f"origin/{branch}"], commit_dir)
-        _run_git(["add", "--"] + changed_files, commit_dir)
+        _run_git(["add", "--"] + add_paths, commit_dir)
         diff2 = _run_git(["diff", "--cached", "--quiet"], commit_dir)
         if diff2.returncode == 0:
             return True, "أصبحت التغييرات مطابقة لأحدث نسخة على البعيد أصلًا"
@@ -1177,11 +1197,25 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
     return False, "فشل الدفع بعد عدة محاولات (سيُعالجه الدفع الاحتياطي النهائي بالـ workflow إن وُجد)"
 
 
-async def push_now(message: str) -> None:
+async def push_now(message: str, allowed_paths: list[str]) -> None:
     if not ENABLE_INCREMENTAL_PUSH or not GIT_COMMIT_DIR:
         return
-    ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, message)
+    ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, message, allowed_paths)
     print(f"  {'✅' if ok else '⚠️'} دفع: {msg}")
+
+
+def _owned_chapter_paths(results: list) -> list[str]:
+    """
+    [تصحيح حرج ٥] يبني قائمة المسارات (نسبية لـOUTPUT_DIR) التي هذه
+    التشغيلة كتبتها فعليًا حتى هذه اللحظة: manifest.json + ملف manifest
+    الخاص بهذه التشغيلة + مجلد كل فصل مضغوط ضمن results. يُستخدم كـ
+    allowed_paths في كل استدعاء دفع بالمسار العادي (غير التشخيصي)، بدل
+    الاعتماد على فحص فرق git التفاعلي بعد كل commit.
+    """
+    paths = ["manifest.json", RUN_MANIFEST_RELPATH]
+    for r in results:
+        paths.append(f"{r['manga_id']}/ch-{r['chapter_num']}")
+    return list(dict.fromkeys(paths))
 
 
 async def get_chapter_images(browser, chapter_url: str, profile: dict):
@@ -1992,8 +2026,17 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     )
 
     if GIT_COMMIT_DIR:
+        # [تصحيح حرج ٥] وضع التشخيص يكتب حصرًا ضمن output/diagnostics/ ولا
+        # يلمس manifest.json أو مجلدات الفصول إطلاقًا — تقييد allowed_paths
+        # على مجلد diagnostics فقط يمنع أي احتمال لحذف نتائج فصول تشغيلات
+        # أخرى بنفس الآلية الموصوفة أعلاه، دون الحاجة لتعداد كل ملف تشخيصي
+        # فرعي (تقارير/لقطات شاشة/تتبع تاريخي) بالاسم.
         ok, msg = await asyncio.to_thread(
-            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تقرير تشخيصي جديد + تحديث التتبع التاريخي"
+            _commit_and_push_sync,
+            GIT_COMMIT_DIR,
+            GIT_BRANCH,
+            "تقرير تشخيصي جديد + تحديث التتبع التاريخي",
+            ["diagnostics"],
         )
         print(f"{'✅' if ok else '⚠️'} دفع تقرير التشخيص: {msg}")
 
@@ -2086,7 +2129,10 @@ async def main():
                 (OUTPUT_DIR / "manifest.json").write_text(
                     json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
                 )
-                await push_now(f"إضافة {result['manga_id']} - الفصل {result['chapter_num']}")
+                await push_now(
+                    f"إضافة {result['manga_id']} - الفصل {result['chapter_num']}",
+                    _owned_chapter_paths(results),
+                )
 
     async def run_chapter_safe(browser, url, index, total, profile):
         try:
@@ -2116,28 +2162,7 @@ async def main():
 
     base_manifest = {"manga": {}}
     if GIT_COMMIT_DIR:
-        remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
-        if remote:
-            base_manifest = remote
-    elif (OUTPUT_DIR / "manifest.json").exists():
-        try:
-            base_manifest = json.loads((OUTPUT_DIR / "manifest.json").read_text(encoding="utf-8"))
-        except Exception:
-            print("  ⚠️ تعذّر قراءة manifest.json المحلي الحالي — سيُعاد بناؤه من نتائج هذه التشغيلة فقط")
-
-    manifest = merge_manifest_dict(base_manifest, results)
-    (OUTPUT_DIR / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-
-    run_manifest_path = OUTPUT_DIR / RUN_MANIFEST_RELPATH
-    run_manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    run_manifest_path.write_text(
-        json.dumps(build_run_manifest(results), ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-
-    if GIT_COMMIT_DIR:
-        ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, "تحديث manifest.json ونتائج التشغيل")
+          )
         print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
 
     print("\n" + "=" * 50)
