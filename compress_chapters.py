@@ -101,6 +101,22 @@ manifest.json يصف كل مانهوا وفصولها وروابط صورها ا
   allowlist عامة قابلة لإعادة الاستخدام لأي بروفايل مستقبلي مشابه
   (http_content_pattern) بدل حل مخصص صلب لـprocomic وحده — راجع
   _apply_http_content_filter و_page_number_from_url أدناه.
+[تصحيح حرج ٤] عند تعارض دفع (push غير fast-forward بسبب تشغيلة GitHub
+  Actions أخرى منفصلة دفعت بينما هذه التشغيلة كانت تعالج)، منطق إعادة
+  المحاولة كان يعمل: fetch ثم "git reset origin/<branch>" (ينقل الفهرس
+  ليطابق البعيد الجديد بلا لمس القرص إطلاقًا) ثم "git add <مجلد الإخراج
+  كامل>". المشكلة: لو التشغيلة الأخرى الناجحة أضافت ملفات (runs/run-
+  <معرّف آخر>.json، أو صور فصل مانهوا مختلف) غير موجودة على قرص هذه
+  التشغيلة (كل تشغيلة worktree مستقل من الصفر)، فإن "git add" (يشمل رصد
+  الحذف ضمنيًا منذ git 2.0) كان يعتبرها "محذوفة" من القرص ويُدرج حذفها
+  بالـcommit التالي — فيُدفَع هذا الحذف فعليًا، ماحيًا بصمت نتيجة تشغيلة
+  أخرى ناجحة تمامًا (لوحظ فعليًا: ملف runs/run-<id>.json لتشغيلة نجحت
+  ودفعت بنجاح حسب سجلّها الخاص، اختفى لاحقًا من الفرع البعيد). الإصلاح:
+  التقاط قائمة الملفات التي غيّرها التزام هذه التشغيلة تحديدًا (قبل أي
+  reset، عبر git diff --name-only) وتقييد كل "git add" بعد reset على تلك
+  القائمة فقط — بدل مجلد الإخراج كامل — في كل من compress_chapters.py
+  (_commit_and_push_sync) وخطوة "دفع احتياطي نهائي" بملف الـworkflow،
+  بحيث لا تُلمَس إطلاقًا أي ملفات لم تكتبها هذه التشغيلة نفسها.
 ================================================================================
 """
 import asyncio
@@ -1125,13 +1141,34 @@ def _commit_and_push_sync(commit_dir: str, branch: str, message: str, max_attemp
     if commit.returncode != 0:
         return False, f"git commit فشل: {commit.stderr.strip()[:200]}"
 
+    # [تصحيح حرج ٤] نلتقط أسماء الملفات التي غيّرها التزامنا المحلي تحديدًا
+    # — الآن، قبل أي reset — لاستخدامها لاحقًا بدل "git add <مجلد الإخراج
+    # كامل>" الشامل بعد أي reset. السبب: "git reset origin/<branch>" ينقل
+    # الفهرس (index) ليطابق أحدث نسخة بعيدة لكنه لا يمس قرص هذه التشغيلة
+    # إطلاقًا. لو تشغيلة أخرى منفصلة (نسخة GitHub Actions runner مختلفة)
+    # دفعت بنجاح ملفات جديدة (مثل runs/run-<معرّف آخر>.json، أو صور فصل
+    # مانهوا أخرى) بين محاولتي دفع هذه التشغيلة، فسيحتوي الفهرس بعد reset
+    # على تلك الملفات، لكنها غائبة تمامًا عن قرص هذه التشغيلة (كل تشغيلة
+    # لها worktree مستقل خاص بها من الصفر). "git add <مجلد>" (منذ git 2.0
+    # يشمل رصد الحذف ضمنيًا) كان حينها يعتبرها "محذوفة" ويُدرجها بنفس
+    # الـcommit التالي — فيُدفَع حذفها فعليًا، ماحيًا نتيجة تشغيلة أخرى
+    # ناجحة تمامًا بصمت. تقييد "git add" على قائمة الملفات المحددة التي
+    # هذه التشغيلة كتبتها فعليًا يمنع هذا السيناريو جذريًا: أي ملف لم
+    # تكتبه هذه التشغيلة لن يُلمَس إطلاقًا مهما حدث بالفهرس بعد أي reset.
+    changed_result = _run_git(["diff", "--name-only", "HEAD~1", "HEAD"], commit_dir)
+    changed_files = [p.strip() for p in changed_result.stdout.splitlines() if p.strip()]
+    if not changed_files:
+        # احتياط نادر: لو تعذّر تحديد القائمة لأي سبب، نعود للسلوك القديم
+        # (مجلد الإخراج كامل) بدل تعطيل الدفع كليًا.
+        changed_files = [git_rel_output]
+
     for attempt in range(1, max_attempts + 1):
         push = _run_git(["push", "origin", f"HEAD:{branch}"], commit_dir)
         if push.returncode == 0:
             return True, "تم الدفع"
         _run_git(["fetch", "origin", branch], commit_dir)
         _run_git(["reset", f"origin/{branch}"], commit_dir)
-        _run_git(["add", git_rel_output], commit_dir)
+        _run_git(["add", "--"] + changed_files, commit_dir)
         diff2 = _run_git(["diff", "--cached", "--quiet"], commit_dir)
         if diff2.returncode == 0:
             return True, "أصبحت التغييرات مطابقة لأحدث نسخة على البعيد أصلًا"
