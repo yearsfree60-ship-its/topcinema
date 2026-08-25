@@ -31,5 +31,16 @@
     "referer_only_sufficient": null,
     "rate_limited_detected": false,
     "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 06:29:10 UTC",
+    "url": "https://mangatuk.com/series/the-infinite-mage/145",
+    "fetch_mode_recommended": "browser",
+    "challenge_detected_static": false,
+    "challenge_detected_browser": false,
+    "protection_signatures": [],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "signed_url_params": []
   }
 ]
