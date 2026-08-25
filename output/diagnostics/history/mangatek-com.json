@@ -1,0 +1,15 @@
+[
+  {
+    "date": "2026-08-25 06:01:59 UTC",
+    "url": "https://mangatek.com/reader/catastrophic-necromancer/1",
+    "fetch_mode_recommended": "browser",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": true,
+    "signed_url_params": []
+  }
+]

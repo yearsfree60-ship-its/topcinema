@@ -1,56 +1,53 @@
 [
   {
-    "url": "https://procomic.net/en/chapter/ill-be-taking-a-break-for-personal-reasons-111-35765",
+    "url": "https://mangatek.com/reader/catastrophic-necromancer/1",
     "tls_and_server_info": {
-      "server_ip": "104.21.45.19",
-      "tls_issuer": "Let's Encrypt",
-      "tls_subject": "procomic.net",
-      "tls_not_after": "Sep 26 19:23:08 2026 GMT",
+      "server_ip": "172.67.154.23",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "mangatek.com",
+      "tls_not_after": "Nov 13 15:31:42 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.83.158.135",
+      "ip": "74.235.90.84",
       "org_asn": "AS8075 Microsoft Corporation",
       "city": "Dulles Town Center",
       "country": "US",
       "error": null
     },
     "static_probe": {
-      "status_code": 200,
+      "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a2c5c3637b5ad630-IAD",
-        "cf-cache-status": "BYPASS",
-        "content-type": "text/html; charset=utf-8",
-        "set-cookie": "language=en; Path=/; Expires=Tue, 17 Aug 2027 03:58:56 GMT; Max-Age=31536000; Domain=.procomic.net; Secure; SameSite=lax"
+        "cf-ray": "a3086016db45d962-IAD",
+        "content-type": "text/html; charset=UTF-8"
       },
-      "challenge_detected": false,
-      "protection_signatures": [],
+      "challenge_detected": true,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_via_noscript": 0,
       "images_via_data_attr": 0,
       "images_via_plain_src": 0,
-      "extracted_image_count": 7,
-      "extracted_sample_urls": [
-        "https://app.procomic.net/seo/595/1771608459317-vrk3ad55tph.jpg",
-        "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
-        "https://cdn3.procomic.net/595/35765/1771606151219-6i4c1lzwszr.avif"
-      ],
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
       "sample_image_urls": [],
       "signed_url_params": [],
-      "raw_cookies_received": [
-        "language"
-      ],
-      "error": null
+      "raw_cookies_received": [],
+      "error": null,
+      "elapsed_sec": 0.04
     },
     "browser_probe": {
       "navigated": true,
-      "title": "I’ll Be Taking A Break For… - chapter 111 | ProComic",
-      "challenge_detected": false,
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
-      "images_at_t0": 2,
-      "images_after_wait": 2,
-      "images_after_scroll": 122,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -58,84 +55,22 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 122,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [
-        ".flex",
-        ".flex-col",
-        ".w-full",
-        ".block",
-        ".transition-colors",
-        ".rounded-lg",
-        ".border",
-        ".px-2"
-      ],
-      "domain_distribution": {
-        "procomic.net": 118,
-        "app.procomic.net": 3,
-        "s3.pubfuture.com": 1
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-1725-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge": [
+          "https://mangatek.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.4231567103619297:1787634022:rAiRIV_OiWH6lZv_D4Z6s2vbdV1lEDsVwT8ueXzaWFQ/a30860175",
+          "https://mangatek.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/e694063b5082/main.js?",
+          "https://mangatek.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+        ]
       },
-      "signed_url_params": [
-        "expires",
-        "token"
-      ],
-      "screenshot_path": "diagnostics/procomic-net-2761-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
-        "no_referer_success": true,
-        "no_referer_size": 728346,
-        "no_referer_fail_reason": null,
-        "direct_http_success": true,
-        "direct_http_size": 728346,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 728346,
-        "browser_session_fail_reason": null,
-        "referer_only_sufficient": false
-      },
-      "hotlink_probes": [
-        {
-          "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
-          "no_referer_success": true,
-          "no_referer_size": 728346,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 728346,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 728346,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false
-        },
-        {
-          "sample_url": "https://procomic.net/api/cdn-image?expires=1786939200&token=opCL4wMuZD0xXB1AiwWDpJ4VOhdjEyVb64Pz9M18DaE&url=https%3A%2F%2Fcdn3.procomic.net%2F595%2F35765%2F1771606381754-qmkcvtvjge.avif",
-          "no_referer_success": false,
-          "no_referer_size": 25,
-          "no_referer_fail_reason": "status=410 content-type='application/json'",
-          "direct_http_success": false,
-          "direct_http_size": 25,
-          "direct_http_fail_reason": "status=410 content-type='application/json'",
-          "browser_session_success": false,
-          "browser_session_size": 0,
-          "browser_session_fail_reason": "status=410 content-type='application/json'",
-          "referer_only_sufficient": false
-        },
-        {
-          "sample_url": "https://procomic.net/_next/image?url=%2FSticker%2Fcomment-broken_heart.avif&w=96&q=75",
-          "no_referer_success": false,
-          "no_referer_size": 2003,
-          "no_referer_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
-          "direct_http_success": false,
-          "direct_http_size": 2003,
-          "direct_http_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
-          "browser_session_success": false,
-          "browser_session_size": 0,
-          "browser_session_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
-          "referer_only_sufficient": false
-        }
-      ],
-      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -145,22 +80,64 @@
       },
       "cookie_reuse_probe": {
         "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 12
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": false,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": false,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
       },
       "error": null,
-      "content_images_before_scroll": 2
+      "goto_elapsed_sec": 0.09,
+      "navigation_timing": {
+        "ttfb_ms": 6,
+        "dom_content_loaded_ms": 86,
+        "load_event_ms": 87,
+        "transfer_size_bytes": 2765
+      },
+      "wait_for_images_elapsed_sec": 20.13,
+      "scroll_elapsed_sec": 1.56,
+      "total_probe_elapsed_sec": 27.08,
+      "content_images_before_scroll": 0
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "I’ll Be Taking A Break For… - chapter 111 | ProComic",
-      "challenge_detected": false,
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
-      "images_at_t0": 2,
-      "images_after_wait": 2,
-      "images_after_scroll": 122,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -168,84 +145,22 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 122,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [
-        ".flex",
-        ".flex-col",
-        ".w-full",
-        ".block",
-        ".transition-colors",
-        ".rounded-lg",
-        ".border",
-        ".px-2"
-      ],
-      "domain_distribution": {
-        "procomic.net": 118,
-        "app.procomic.net": 3,
-        "s3.pubfuture.com": 1
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-1725-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge": [
+          "https://mangatek.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.4231567103619297:1787634022:rAiRIV_OiWH6lZv_D4Z6s2vbdV1lEDsVwT8ueXzaWFQ/a308615ea",
+          "https://mangatek.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/e694063b5082/main.js?",
+          "https://mangatek.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+        ]
       },
-      "signed_url_params": [
-        "expires",
-        "token"
-      ],
-      "screenshot_path": "diagnostics/procomic-net-2761-run2-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
-        "no_referer_success": true,
-        "no_referer_size": 728346,
-        "no_referer_fail_reason": null,
-        "direct_http_success": true,
-        "direct_http_size": 728346,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 728346,
-        "browser_session_fail_reason": null,
-        "referer_only_sufficient": false
-      },
-      "hotlink_probes": [
-        {
-          "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
-          "no_referer_success": true,
-          "no_referer_size": 728346,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 728346,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 728346,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false
-        },
-        {
-          "sample_url": "https://procomic.net/api/cdn-image?expires=1786939800&token=BMjqRI9jwsl3WLEdJoKyYvEKJQcsCw5b7KPelUl-U6c&url=https%3A%2F%2Fcdn3.procomic.net%2F595%2F35765%2F1771606381754-qmkcvtvjge.avif",
-          "no_referer_success": true,
-          "no_referer_size": 33956,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 33956,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 33956,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false
-        },
-        {
-          "sample_url": "https://procomic.net/_next/image?url=%2FSticker%2Fcomment-broken_heart.avif&w=96&q=75",
-          "no_referer_success": false,
-          "no_referer_size": 2003,
-          "no_referer_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
-          "direct_http_success": false,
-          "direct_http_size": 2003,
-          "direct_http_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
-          "browser_session_success": false,
-          "browser_session_size": 0,
-          "browser_session_fail_reason": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (96x96) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي",
-          "referer_only_sufficient": false
-        }
-      ],
-      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -255,40 +170,92 @@
       },
       "cookie_reuse_probe": {
         "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 11
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": false,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": false,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
       },
       "error": null,
-      "content_images_before_scroll": 2
+      "goto_elapsed_sec": 0.06,
+      "navigation_timing": {
+        "ttfb_ms": 6,
+        "dom_content_loaded_ms": 59,
+        "load_event_ms": 59,
+        "transfer_size_bytes": 2762
+      },
+      "wait_for_images_elapsed_sec": 20.11,
+      "scroll_elapsed_sec": 1.45,
+      "total_probe_elapsed_sec": 26.9,
+      "content_images_before_scroll": 0
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
-      "target": "image_cdn",
-      "sample_url": "https://app.procomic.net/chapters/595/35765/p1/1771606151219-6i4c1lzwszr-df36e2373d44-desktop.avif",
+      "target": "page_url",
+      "sample_url": "https://mangatek.com/reader/catastrophic-necromancer/1",
       "requests_sent": 4,
-      "elapsed_sec": 0.11,
+      "elapsed_sec": 0.02,
       "status_codes": [
-        200,
-        200,
-        200,
-        200
+        403,
+        403,
+        403,
+        403
       ],
-      "rate_limited_detected": false,
+      "rate_limited_detected": true,
       "retry_after_header": null
     },
     "recommendation": {
-      "fetch_mode": "http",
-      "do_scroll": true,
+      "fetch_mode": "browser",
+      "do_scroll": false,
       "do_widget_filter": false,
-      "suggested_http_concurrency": 3,
+      "suggested_http_concurrency": 1,
       "reasons": [
-        "مسار HTTP المباشر الفعلي (extract_images_from_html) سيستخرج 7 صورة فعليًا، بلا صفحة تحقق، ونجح تحميل صورة عينة بطلب مباشر بلا جلسة",
-        "⚠️ نتيجة فحص hotlink تذبذبت بين عيّنات مختلفة (أولى/وسط/أخيرة) — التوصية أعلاه مبنية على العيّنة الأولى فقط، يُنصَح بمراجعة التقرير التفصيلي قبل الاعتماد",
-        "🔑 روابط الصور تحمل معاملات توقيع/انتهاء صلاحية (expires, token) — أي استراتيجية 'استخرج الروابط الآن وحمّلها لاحقًا' (تأخير، إعادة محاولة متأخرة) قد تفشل لأن الرابط ينتهي؛ يُفضَّل التحميل فور الاستخراج مباشرة",
-        "لا تحديد معدل ظاهر في فحص موازٍ سريع (4 طلبات على CDN الصور) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية"
-      ]
+        "صفحة تحقق/حماية ظهرت حتى بالطلب الثابت (Cloudflare) — يحتاج متصفحًا حقيقيًا على الأقل",
+        "مسار HTTP المباشر الفعلي سيستخرج 0 صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)",
+        "⚠️ فحص فعلي: navigator.webdriver بقي ظاهرًا حتى بعد تطبيق playwright-stealth — الترقيع لم ينجح لهذا الموقع تحديدًا (سبب تقني بالموقع نفسه أو تعارض إصدار)، يستحق فحصًا يدويًا للقطة الشاشة",
+        "ℹ️ مقارنة فعلية: لا فرق ملحوظ بين بلا stealth وبstealth (نفس نتيجة التحقق وعدد الصور تقريبًا) — الحماية هنا على الأرجح تعتمد على شيء غير بصمة المتصفح (IP/معدل الطلبات مثلًا)، راجع فحص تحديد المعدل أدناه",
+        "⚠️ تحديد معدل مكتشَف فعليًا على رابط الصفحة (احتياطي) (حالات: [403, 403, 403, 403]) — يُنصَح بـHTTP_CONCURRENCY=1 لهذا الموقع تحديدًا بدل الافتراضي",
+        "⏱️ انتظار استقرار الصور استغرق كامل المهلة الحالية (20000ms) دون استقرار واضح — يُبقى وقت الانتظار كما هو بدل تقليصه (تقليصه هنا قد يقطع تحميل صور لم تصل بعد)"
+      ],
+      "suggested_content_wait_ms": 20000,
+      "do_stealth": false,
+      "suggested_selectors": []
     },
-    "history_diffs_since_last_run": []
+    "history_diffs_since_last_run": [],
+    "diagnostic_run_files": {
+      "report": "diagnostics/mangatek-com-1725-report.json",
+      "screenshots": [
+        "diagnostics/mangatek-com-1725-screenshot.png",
+        "diagnostics/mangatek-com-1725-run2-screenshot.png"
+      ]
+    }
   }
 ]
