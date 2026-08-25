@@ -1,0 +1,453 @@
+{
+  "url": "https://mangatime.org/manhwa/kidnapped-dragons/chapter/25",
+  "tls_and_server_info": {
+    "server_ip": "172.67.179.78",
+    "tls_issuer": "Let's Encrypt",
+    "tls_subject": "mangatime.org",
+    "tls_not_after": "Oct  5 09:21:18 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "52.183.216.103",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "San Antonio",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a30a064bef6f6b6d-DFW",
+      "cf-cache-status": "DYNAMIC",
+      "content-type": "text/html"
+    },
+    "challenge_detected": false,
+    "protection_category": "none",
+    "protection_signatures": [],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 1,
+    "extracted_sample_urls": [
+      "https://mangatime.org/og/default.jpg"
+    ],
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.26
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "مانجا ومانهوا مترجمة عربية — قراءة عربية | مانجا تايم",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 0,
+    "images_after_wait": 6,
+    "images_after_scroll": 23,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 23,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [
+      ".w-full",
+      ".duration-300",
+      ".relative",
+      ".bg-surface-1",
+      ".flex",
+      ".flex-col",
+      ".h-auto",
+      ".block"
+    ],
+    "domain_distribution": {
+      "mangatime.org": 23
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatime-org-690-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
+      "no_referer_success": true,
+      "no_referer_size": 766862,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 766862,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 766862,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false,
+      "image_cache_headers": {
+        "cache-control": "public, max-age=31536000, immutable",
+        "age": "77"
+      }
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
+        "no_referer_success": true,
+        "no_referer_size": 766862,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 766862,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 766862,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "age": "77"
+        }
+      },
+      {
+        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/011-3e4a3036.webp",
+        "no_referer_success": true,
+        "no_referer_size": 724888,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 724888,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 724888,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "age": "45"
+        }
+      },
+      {
+        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/022-3bb05cbf.webp",
+        "no_referer_success": true,
+        "no_referer_size": 905446,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 905446,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 905446,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "age": "6"
+        }
+      }
+    ],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2,
+      "cookie_names_reused": [
+        "GL_GI10",
+        "GL_UI4"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 6,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.71,
+    "navigation_timing": {
+      "ttfb_ms": 570,
+      "dom_content_loaded_ms": 702,
+      "load_event_ms": 704,
+      "transfer_size_bytes": 37795
+    },
+    "wait_for_images_elapsed_sec": 4.83,
+    "scroll_elapsed_sec": 72.31,
+    "total_probe_elapsed_sec": 79.11,
+    "scroll_rounds_completed": 187,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, must-revalidate",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a30a064dfa7e686c-DFW",
+      "content-encoding": "zstd",
+      "content-language": "ar",
+      "content-type": "text/html",
+      "date": "Tue, 25 Aug 2026 10:48:29 GMT",
+      "last-modified": "Tue, 25 Aug 2026 09:46:06 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=v%2F8oms4N9UXyXANjz5BZey3hgoI%2BbqhZhyomF7RTwB4usaO6YFjDX%2FCdcohDgqMqlxv%2FgSyBv7hHxfn3wwSrxcOKM6ttbwaVgydc4itkg3Oj4EjY872w%2FOgf7nrC%2BOQj\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfEdge;dur=11,cfOrigin;dur=543",
+      "vary": "Accept-Encoding, User-Agent, Cookie, Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "il.koboldmoreish.com",
+      "static.cloudflareinsights.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 3
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "مانجا ومانهوا مترجمة عربية — قراءة عربية | مانجا تايم",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 0,
+    "images_after_wait": 6,
+    "images_after_scroll": 23,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 23,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [
+      ".w-full",
+      ".duration-300",
+      ".relative",
+      ".bg-surface-1",
+      ".flex",
+      ".flex-col",
+      ".h-auto",
+      ".block"
+    ],
+    "domain_distribution": {
+      "mangatime.org": 23
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatime-org-690-run2-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
+      "no_referer_success": true,
+      "no_referer_size": 766862,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 766862,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 766862,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false,
+      "image_cache_headers": {
+        "cache-control": "public, max-age=31536000, immutable",
+        "age": "161"
+      }
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
+        "no_referer_success": true,
+        "no_referer_size": 766862,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 766862,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 766862,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "age": "161"
+        }
+      },
+      {
+        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/011-3e4a3036.webp",
+        "no_referer_success": true,
+        "no_referer_size": 724888,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 724888,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 724888,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "age": "129"
+        }
+      },
+      {
+        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/022-3bb05cbf.webp",
+        "no_referer_success": true,
+        "no_referer_size": 905446,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 905446,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 905446,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "age": "91"
+        }
+      }
+    ],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2,
+      "cookie_names_reused": [
+        "GL_GI10",
+        "GL_UI4"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 6,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.79,
+    "navigation_timing": {
+      "ttfb_ms": 568,
+      "dom_content_loaded_ms": 772,
+      "load_event_ms": 798,
+      "transfer_size_bytes": 37839
+    },
+    "wait_for_images_elapsed_sec": 3.22,
+    "scroll_elapsed_sec": 75.14,
+    "total_probe_elapsed_sec": 80.57,
+    "scroll_rounds_completed": 190,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, must-revalidate",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a30a08570ef52ca4-DFW",
+      "content-encoding": "zstd",
+      "content-language": "ar",
+      "content-type": "text/html",
+      "date": "Tue, 25 Aug 2026 10:49:53 GMT",
+      "last-modified": "Tue, 25 Aug 2026 09:46:06 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fWbf%2Fg17CDx6RZohrz7NILF5Prrj3zVPAVDbMVebsGs2PC16MsXHTgoGRUap%2FzQAfMxXn%2Bj%2FsAsa%2BAtdiLJhwdiy7U2r7X97wGq30MoByEVEuta9QNiFUblVMJ36Pg2L\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfEdge;dur=12,cfOrigin;dur=538",
+      "vary": "Accept-Encoding, User-Agent, Cookie, Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "il.koboldmoreish.com",
+      "static.cloudflareinsights.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 3
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "image_cdn",
+    "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
+    "requests_sent": 4,
+    "elapsed_sec": 0.18,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangatime-org-690-report.json",
+    "screenshots": [
+      "diagnostics/mangatime-org-690-screenshot.png",
+      "diagnostics/mangatime-org-690-run2-screenshot.png"
+    ]
+  }
+}
