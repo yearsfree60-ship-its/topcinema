@@ -52,6 +52,11 @@ on:
         required: false
         default: false
         type: boolean
+      deep_diagnostic:
+        description: "لا يعمل إلا مع diagnostic_mode مفعّلًا (يُتجاهَل غير ذلك). يضيف مسبارين لا يقيسهما التشخيص العادي إطلاقًا: تسريب Runtime.enable (بروتوكول CDP نفسه، لا JS fingerprint — السبب الموثّق فعليًا لتعطّل stealth الحالي ضد Cloudflare/DataDome الحديثة) وتسريب sourceURL لسكربتات page.evaluate، مع تجميعهما وباقي طبقات الفحص القائمة بخريطة detection_surface_map موحّدة لكل رابط. يُضاعِف زمن التشخيص تقريبًا لكل رابط (~90-180ث إضافية)"
+        required: false
+        default: false
+        type: boolean
       enable_incremental_push:
         description: "دفع كل فصل فور اكتماله. عطّله لدفعة واحدة أسرع بالنهاية فقط — لكن انقطاع التشغيل حينها يفقد كل شيء غير مدفوع"
         required: false
@@ -135,6 +140,7 @@ jobs:
           HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
+          DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           RUN_ID: ${{ github.run_id }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
