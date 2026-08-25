@@ -1,0 +1,317 @@
+{
+  "url": "https://starzmanga.com/manga/pick-me-up/1/",
+  "tls_and_server_info": {
+    "server_ip": "172.67.189.207",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "starzmanga.com",
+    "tls_not_after": "Nov 22 12:34:08 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "20.120.164.102",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Moses Lake",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a3096f6f0addf01b-SEA",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.05
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "starzmanga.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/starzmanga-com-5788-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/05b6fa76-a5d8-4aca-b2c0-479829dc5677",
+        "blob:https://challenges.cloudflare.com/08dfbfcc-f73d-43bd-9cc3-ee4dffc12782",
+        "blob:https://challenges.cloudflare.com/67fadb58-aa1f-4e6a-a2d3-2198f1b1fc5a"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.1,
+    "navigation_timing": {
+      "ttfb_ms": 9,
+      "dom_content_loaded_ms": 94,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4087
+    },
+    "wait_for_images_elapsed_sec": 1.62,
+    "scroll_elapsed_sec": 1.91,
+    "total_probe_elapsed_sec": 17.17,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a3096f6fba257688-SEA",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-OFBYT4BQkjY5gV4Omht2cf' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Tue, 25 Aug 2026 09:05:29 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PKAsv0ji3Ag2sTU4q%2BuoxUi6kVzZKmecze606DKTeNHpdX0DJhywYp9w7UIDj%2BkGGZtSH8twMOV4MDtGGawyEClHbHNE2s7EA60mhxJmy33lUFXyJrqNfpbapl61O7QvcQ%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a3096f6fba257688\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 8 ثوانٍ: Page.wait_for_selector: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n"
+    },
+    "content_images_before_scroll": 1
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "starzmanga.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/starzmanga-com-5788-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/097628ea-b06a-4824-b4c9-565051bdab0a",
+        "blob:https://challenges.cloudflare.com/301ac39a-8614-4156-9b76-0827bf1f4977",
+        "blob:https://challenges.cloudflare.com/30b85960-5247-414b-8bd7-63d6de34215c"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.08,
+    "navigation_timing": {
+      "ttfb_ms": 10,
+      "dom_content_loaded_ms": 77,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4084
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 2.08,
+    "total_probe_elapsed_sec": 17.26,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a30970096d076827-SEA",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-sTzuKqMFrokL44tLbSRB2i' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Tue, 25 Aug 2026 09:05:54 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nR49WIAdVxKroLYWCJMWUR1%2BxWyJ7mOtqkwawVqrAXikyZEhkQrCQuyeL7jhFkF2eqvRQOodVs8CBIXDoqZ7dRceOU5HiroUu7NzCvljgFVVsCt%2Fh6ALlgrTduIKzhYeNg%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a30970096d076827\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 8 ثوانٍ: Page.wait_for_selector: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n"
+    },
+    "content_images_before_scroll": 1
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://starzmanga.com/manga/pick-me-up/1/",
+    "requests_sent": 4,
+    "elapsed_sec": 0.19,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "diagnostic_run_files": {
+    "report": "diagnostics/starzmanga-com-5788-report.json",
+    "screenshots": [
+      "diagnostics/starzmanga-com-5788-screenshot.png",
+      "diagnostics/starzmanga-com-5788-run2-screenshot.png"
+    ]
+  }
+}
