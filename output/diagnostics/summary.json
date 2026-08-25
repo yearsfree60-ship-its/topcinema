@@ -1,54 +1,56 @@
 [
   {
-    "url": "https://mangatime.org/manhwa/kidnapped-dragons/chapter/1",
+    "url": "https://mangadar.com/manga/tomb-raid-king/1/",
     "tls_and_server_info": {
-      "server_ip": "104.21.64.79",
-      "tls_issuer": "Let's Encrypt",
-      "tls_subject": "mangatime.org",
-      "tls_not_after": "Oct  5 09:21:18 2026 GMT",
+      "server_ip": "172.67.155.87",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "mangadar.com",
+      "tls_not_after": "Oct 20 02:44:58 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "52.183.216.103",
+      "ip": "172.215.210.48",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "San Antonio",
+      "city": "Cheyenne",
       "country": "US",
       "error": null
     },
     "static_probe": {
-      "status_code": 200,
+      "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a30a01982ec26b32-DFW",
-        "cf-cache-status": "DYNAMIC",
-        "content-type": "text/html"
+        "cf-ray": "a30d0cc85c130d03-DFW",
+        "cf-mitigated": "challenge",
+        "content-type": "text/html; charset=UTF-8"
       },
-      "challenge_detected": false,
-      "protection_category": "none",
-      "protection_signatures": [],
+      "challenge_detected": true,
+      "protection_category": "solvable_challenge",
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_via_noscript": 0,
       "images_via_data_attr": 0,
       "images_via_plain_src": 0,
-      "extracted_image_count": 1,
-      "extracted_sample_urls": [
-        "https://mangatime.org/og/default.jpg"
-      ],
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
       "sample_image_urls": [],
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.64
+      "elapsed_sec": 0.09
     },
     "browser_probe": {
       "navigated": true,
-      "title": "مانجا ومانهوا مترجمة عربية — قراءة عربية | مانجا تايم",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
+      "title": "Just a moment...",
+      "challenge_detected": true,
+      "protection_category": "solvable_challenge",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_at_t0": 1,
-      "images_after_wait": 4,
-      "images_after_scroll": 26,
+      "images_after_wait": 1,
+      "images_after_scroll": 1,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -56,95 +58,24 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 26,
+      "unmatched_img_count": 1,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [
-        ".w-full",
-        ".relative",
-        ".duration-300",
-        ".bg-surface-1",
-        ".flex",
-        ".flex-col",
-        ".h-auto",
-        ".block"
-      ],
+      "suggested_selectors": [],
       "domain_distribution": {
-        "mangatime.org": 26
+        "mangadar.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangatime-org-18-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/001-11a37882.webp",
-        "no_referer_success": true,
-        "no_referer_size": 532926,
-        "no_referer_fail_reason": null,
-        "direct_http_success": true,
-        "direct_http_size": 532926,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 532926,
-        "browser_session_fail_reason": null,
-        "referer_only_sufficient": false,
-        "image_cache_headers": {
-          "cache-control": "public, max-age=31536000, immutable",
-          "age": "48565"
-        }
+      "screenshot_path": "diagnostics/mangadar-com-3582-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge (تفاعلي)": [
+          "blob:https://challenges.cloudflare.com/093bd22b-62a0-41c9-8ee9-b4054999d310",
+          "blob:https://challenges.cloudflare.com/17059952-de5c-4556-8d3d-468d9ae1b7ef",
+          "blob:https://challenges.cloudflare.com/37200bb9-6a08-4bfe-b12b-8097a65d4ce5"
+        ]
       },
-      "hotlink_probes": [
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/001-11a37882.webp",
-          "no_referer_success": true,
-          "no_referer_size": 532926,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 532926,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 532926,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "48565"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/013-7f899e5f.webp",
-          "no_referer_success": true,
-          "no_referer_size": 742328,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 742328,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 742328,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "50"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/025-92826bf2.webp",
-          "no_referer_success": true,
-          "no_referer_size": 1155246,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 1155246,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 1155246,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "9"
-          }
-        }
-      ],
-      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -153,14 +84,8 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 2,
-        "cookie_names_reused": [
-          "GL_GI10",
-          "GL_UI4"
-        ]
+        "tested": false,
+        "reason": "لا كوكيز بالجلسة لاختبارها"
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -175,9 +100,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
-          "images_after_wait": 6,
+          "challenge_detected": true,
+          "protection_category": "solvable_challenge",
+          "images_after_wait": 1,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -187,62 +112,139 @@
             ],
             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
           },
-          "error": null
+          "error": null,
+          "deep_diagnostic": {
+            "cdp_runtime_enable_leak": false,
+            "sourceurl_leak": {
+              "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+              "suspect_patterns_found": []
+            }
+          }
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": true
+        "image_count_differs": false,
+        "deep_diagnostic_comparison": {
+          "cdp_runtime_enable_leak_with_stealth": false,
+          "cdp_runtime_enable_leak_without_stealth": false,
+          "leak_present_regardless_of_stealth": false,
+          "sourceurl_leak_with_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          },
+          "sourceurl_leak_without_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          }
+        }
       },
       "error": null,
-      "goto_elapsed_sec": 0.89,
-      "navigation_timing": {
-        "ttfb_ms": 596,
-        "dom_content_loaded_ms": 889,
-        "load_event_ms": 889,
-        "transfer_size_bytes": 37973
+      "deep_diagnostic": {
+        "cdp_runtime_enable_leak": false,
+        "sourceurl_leak": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        }
       },
-      "wait_for_images_elapsed_sec": 2.41,
-      "scroll_elapsed_sec": 86.29,
-      "total_probe_elapsed_sec": 91.65,
-      "scroll_rounds_completed": 220,
+      "goto_elapsed_sec": 0.16,
+      "navigation_timing": {
+        "ttfb_ms": 22,
+        "dom_content_loaded_ms": 151,
+        "load_event_ms": null,
+        "transfer_size_bytes": 4102
+      },
+      "wait_for_images_elapsed_sec": 1.63,
+      "scroll_elapsed_sec": 1.81,
+      "total_probe_elapsed_sec": 83.42,
+      "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
+        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a30a019c6e025298-DFW",
+        "cf-mitigated": "challenge",
+        "cf-ray": "a30d0cc959211d52-DFW",
         "content-encoding": "zstd",
-        "content-language": "ar",
-        "content-type": "text/html",
-        "date": "Tue, 25 Aug 2026 10:45:17 GMT",
-        "last-modified": "Tue, 25 Aug 2026 09:46:06 GMT",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-VluaNbY8lNG7Ps0UCGkams' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-type": "text/html; charset=UTF-8",
+        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+        "cross-origin-embedder-policy": "require-corp",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Tue, 25 Aug 2026 19:37:11 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "referrer-policy": "strict-origin-when-cross-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TNVLEnYV2fckghTj1dyyHbY16eU46UqmindIDm5RSKJJ9MaNteKk7F%2FgmUr3RST9D0wQZNTbCvVqmnoL%2FgqP0t7MLIq%2BrhFmy1vm1UHbTXjZbbSuGELAuCO%2B98zxT5SU\"}]}",
+        "origin-agent-cluster": "?1",
+        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jWpPjfblxS9%2FHN10b%2BjHipfc8cyf49kSDB78t8uoQ2RmAxR0q1RLQgiVbT3R4ieUQj4lR7wywdbbLeuDuONStTWQIXEHW1Y3rN9N936DAEGkVWxWRpwJ86X8hW0Ha80%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfEdge;dur=7,cfOrigin;dur=577",
-        "vary": "Accept-Encoding, User-Agent, Cookie, Accept-Encoding",
+        "server-timing": "chlray;desc=\"a30d0cc959211d52\"",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "il.koboldmoreish.com",
-        "static.cloudflareinsights.com"
+        "brunhild.challenges.cloudflare.com",
+        "challenges.cloudflare.com"
       ],
-      "turnstile_click_attempt": null,
-      "extended_challenge_probe": null,
-      "content_images_before_scroll": 3
+      "turnstile_click_attempt": {
+        "iframe_found": false,
+        "clicked": false,
+        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+        "click_method": "none",
+        "attempt_number": 3
+      },
+      "extended_challenge_probe": {
+        "pure_wait": {
+          "max_wait_sec": 60,
+          "poll_interval_sec": 2,
+          "resolved_during_pure_wait": false,
+          "elapsed_until_resolved_sec": null,
+          "final_category_after_wait": "solvable_challenge"
+        },
+        "click_attempts": [
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 1
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 2
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 3
+          }
+        ],
+        "final_after_reload": {
+          "attempted": true,
+          "category": "solvable_challenge",
+          "resolved": false,
+          "error": null
+        }
+      },
+      "content_images_before_scroll": 1
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "مانجا ومانهوا مترجمة عربية — قراءة عربية | مانجا تايم",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
-      "images_at_t0": 0,
-      "images_after_wait": 6,
-      "images_after_scroll": 26,
+      "title": "Just a moment...",
+      "challenge_detected": true,
+      "protection_category": "solvable_challenge",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 1,
+      "images_after_wait": 1,
+      "images_after_scroll": 1,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -250,95 +252,24 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 26,
+      "unmatched_img_count": 1,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [
-        ".w-full",
-        ".duration-300",
-        ".relative",
-        ".bg-surface-1",
-        ".flex",
-        ".flex-col",
-        ".h-auto",
-        ".block"
-      ],
+      "suggested_selectors": [],
       "domain_distribution": {
-        "mangatime.org": 26
+        "mangadar.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangatime-org-18-run2-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/001-11a37882.webp",
-        "no_referer_success": true,
-        "no_referer_size": 532926,
-        "no_referer_fail_reason": null,
-        "direct_http_success": true,
-        "direct_http_size": 532926,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 532926,
-        "browser_session_fail_reason": null,
-        "referer_only_sufficient": false,
-        "image_cache_headers": {
-          "cache-control": "public, max-age=31536000, immutable",
-          "age": "48661"
-        }
+      "screenshot_path": "diagnostics/mangadar-com-3582-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge (تفاعلي)": [
+          "blob:https://challenges.cloudflare.com/133043eb-445b-423a-a5af-15fddda7693c",
+          "blob:https://challenges.cloudflare.com/2f2cf7cd-0130-4066-92dc-5eede0776e2d",
+          "blob:https://challenges.cloudflare.com/91baf5d6-915c-46f2-8a10-78dc130f1133"
+        ]
       },
-      "hotlink_probes": [
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/001-11a37882.webp",
-          "no_referer_success": true,
-          "no_referer_size": 532926,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 532926,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 532926,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "48661"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/013-7f899e5f.webp",
-          "no_referer_success": true,
-          "no_referer_size": 742328,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 742328,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 742328,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "145"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/025-92826bf2.webp",
-          "no_referer_success": true,
-          "no_referer_size": 1155246,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 1155246,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 1155246,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "104"
-          }
-        }
-      ],
-      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -347,14 +278,8 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 2,
-        "cookie_names_reused": [
-          "GL_GI10",
-          "GL_UI4"
-        ]
+        "tested": false,
+        "reason": "لا كوكيز بالجلسة لاختبارها"
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -369,9 +294,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
-          "images_after_wait": 6,
+          "challenge_detected": true,
+          "protection_category": "solvable_challenge",
+          "images_after_wait": 1,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -381,127 +306,227 @@
             ],
             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
           },
-          "error": null
+          "error": null,
+          "deep_diagnostic": {
+            "cdp_runtime_enable_leak": false,
+            "sourceurl_leak": {
+              "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+              "suspect_patterns_found": []
+            }
+          }
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": false,
+        "deep_diagnostic_comparison": {
+          "cdp_runtime_enable_leak_with_stealth": false,
+          "cdp_runtime_enable_leak_without_stealth": false,
+          "leak_present_regardless_of_stealth": false,
+          "sourceurl_leak_with_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          },
+          "sourceurl_leak_without_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          }
+        }
       },
       "error": null,
-      "goto_elapsed_sec": 0.73,
-      "navigation_timing": {
-        "ttfb_ms": 565,
-        "dom_content_loaded_ms": 731,
-        "load_event_ms": 732,
-        "transfer_size_bytes": 37651
+      "deep_diagnostic": {
+        "cdp_runtime_enable_leak": false,
+        "sourceurl_leak": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        }
       },
-      "wait_for_images_elapsed_sec": 3.22,
-      "scroll_elapsed_sec": 86.16,
-      "total_probe_elapsed_sec": 91.45,
-      "scroll_rounds_completed": 222,
+      "goto_elapsed_sec": 0.14,
+      "navigation_timing": {
+        "ttfb_ms": 22,
+        "dom_content_loaded_ms": 134,
+        "load_event_ms": null,
+        "transfer_size_bytes": 4100
+      },
+      "wait_for_images_elapsed_sec": 1.61,
+      "scroll_elapsed_sec": 1.72,
+      "total_probe_elapsed_sec": 83.42,
+      "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
+        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a30a03f09acc70a3-DFW",
+        "cf-mitigated": "challenge",
+        "cf-ray": "a30d0f0258786806-DFW",
         "content-encoding": "zstd",
-        "content-language": "ar",
-        "content-type": "text/html",
-        "date": "Tue, 25 Aug 2026 10:46:52 GMT",
-        "last-modified": "Tue, 25 Aug 2026 09:46:06 GMT",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-I31knh2XOput37ceElxcz5' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-type": "text/html; charset=UTF-8",
+        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+        "cross-origin-embedder-policy": "require-corp",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Tue, 25 Aug 2026 19:38:42 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "referrer-policy": "strict-origin-when-cross-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=03qei%2FlBk%2BUFrOOwgnTLflDOlJqPCLbBNbjgZBtMu050IM5nuIzRUNZXaLGlHpiPO%2BYc%2FyJqATk0sErKtcwyLaufETCnLWumFGScaaP%2FdJIe4oMDOvnNo0N5uxvA5rGt\"}]}",
+        "origin-agent-cluster": "?1",
+        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nJ0LV34aZHGLQ1pCRaZIv6WoKSbl05lP8V85FhWjJRTvvZC9NDZja0OsElz5AwlLdiMOeD1kQFBUrjjYMXUnQ1Kcwc2eVq%2BAOLmferscJSqEOYFP1QbfJ8R2gImEFgM%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfEdge;dur=14,cfOrigin;dur=536",
-        "vary": "Accept-Encoding, User-Agent, Cookie, Accept-Encoding",
+        "server-timing": "chlray;desc=\"a30d0f0258786806\"",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "il.koboldmoreish.com",
-        "static.cloudflareinsights.com"
+        "brunhild.challenges.cloudflare.com",
+        "challenges.cloudflare.com"
       ],
-      "turnstile_click_attempt": null,
-      "extended_challenge_probe": null,
-      "content_images_before_scroll": 3
+      "turnstile_click_attempt": {
+        "iframe_found": false,
+        "clicked": false,
+        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+        "click_method": "none",
+        "attempt_number": 3
+      },
+      "extended_challenge_probe": {
+        "pure_wait": {
+          "max_wait_sec": 60,
+          "poll_interval_sec": 2,
+          "resolved_during_pure_wait": false,
+          "elapsed_until_resolved_sec": null,
+          "final_category_after_wait": "solvable_challenge"
+        },
+        "click_attempts": [
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 1
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 2
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 3
+          }
+        ],
+        "final_after_reload": {
+          "attempted": true,
+          "category": "solvable_challenge",
+          "resolved": false,
+          "error": null
+        }
+      },
+      "content_images_before_scroll": 1
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
-      "target": "image_cdn",
-      "sample_url": "https://mangatime.org/uploads/chapters/6a48ecc25dbdedf27e8278a5/001-11a37882.webp",
+      "target": "page_url",
+      "sample_url": "https://mangadar.com/manga/tomb-raid-king/1/",
       "requests_sent": 4,
-      "elapsed_sec": 0.24,
+      "elapsed_sec": 0.42,
       "status_codes": [
-        200,
-        200,
-        200,
-        200
+        403,
+        403,
+        403,
+        403
       ],
       "rate_limited_detected": false,
-      "static_block_detected": false,
+      "static_block_detected": true,
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
+    "detection_surface_map": {
+      "js_fingerprint_layer": {
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs_with_stealth": false,
+        "image_count_differs_with_stealth": false
+      },
+      "cdp_protocol_layer": {
+        "tested": true,
+        "runtime_enable_leak_with_stealth": false,
+        "runtime_enable_leak_without_stealth": false,
+        "leak_present_regardless_of_stealth": false,
+        "sourceurl_suspect_patterns_with_stealth": [],
+        "sourceurl_suspect_patterns_without_stealth": []
+      },
+      "hotlink_layer": {
+        "referer_only_sufficient": null,
+        "direct_http_success": null
+      },
+      "rate_limit_layer": {
+        "rate_limited_detected": false,
+        "static_block_detected": true
+      }
+    },
     "diagnostic_run_files": {
-      "report": "diagnostics/mangatime-org-18-report.json",
+      "report": "diagnostics/mangadar-com-3582-report.json",
       "screenshots": [
-        "diagnostics/mangatime-org-18-screenshot.png",
-        "diagnostics/mangatime-org-18-run2-screenshot.png"
+        "diagnostics/mangadar-com-3582-screenshot.png",
+        "diagnostics/mangadar-com-3582-run2-screenshot.png"
       ]
     }
   },
   {
-    "url": "https://mangatime.org/manhwa/kidnapped-dragons/chapter/25",
+    "url": "https://mangadar.com/manga/tomb-raid-king/100/",
     "tls_and_server_info": {
-      "server_ip": "172.67.179.78",
-      "tls_issuer": "Let's Encrypt",
-      "tls_subject": "mangatime.org",
-      "tls_not_after": "Oct  5 09:21:18 2026 GMT",
+      "server_ip": "104.21.7.7",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "mangadar.com",
+      "tls_not_after": "Oct 20 02:44:58 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "52.183.216.103",
+      "ip": "172.215.210.48",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "San Antonio",
+      "city": "Cheyenne",
       "country": "US",
       "error": null
     },
     "static_probe": {
-      "status_code": 200,
+      "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a30a064bef6f6b6d-DFW",
-        "cf-cache-status": "DYNAMIC",
-        "content-type": "text/html"
+        "cf-ray": "a30d11421c0f46cb-DFW",
+        "cf-mitigated": "challenge",
+        "content-type": "text/html; charset=UTF-8"
       },
-      "challenge_detected": false,
-      "protection_category": "none",
-      "protection_signatures": [],
+      "challenge_detected": true,
+      "protection_category": "solvable_challenge",
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_via_noscript": 0,
       "images_via_data_attr": 0,
       "images_via_plain_src": 0,
-      "extracted_image_count": 1,
-      "extracted_sample_urls": [
-        "https://mangatime.org/og/default.jpg"
-      ],
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
       "sample_image_urls": [],
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.26
+      "elapsed_sec": 0.09
     },
     "browser_probe": {
       "navigated": true,
-      "title": "مانجا ومانهوا مترجمة عربية — قراءة عربية | مانجا تايم",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
-      "images_at_t0": 0,
-      "images_after_wait": 6,
-      "images_after_scroll": 23,
+      "title": "Just a moment...",
+      "challenge_detected": true,
+      "protection_category": "solvable_challenge",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 1,
+      "images_after_wait": 1,
+      "images_after_scroll": 1,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -509,95 +534,24 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 23,
+      "unmatched_img_count": 1,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [
-        ".w-full",
-        ".duration-300",
-        ".relative",
-        ".bg-surface-1",
-        ".flex",
-        ".flex-col",
-        ".h-auto",
-        ".block"
-      ],
+      "suggested_selectors": [],
       "domain_distribution": {
-        "mangatime.org": 23
+        "mangadar.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangatime-org-690-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
-        "no_referer_success": true,
-        "no_referer_size": 766862,
-        "no_referer_fail_reason": null,
-        "direct_http_success": true,
-        "direct_http_size": 766862,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 766862,
-        "browser_session_fail_reason": null,
-        "referer_only_sufficient": false,
-        "image_cache_headers": {
-          "cache-control": "public, max-age=31536000, immutable",
-          "age": "77"
-        }
+      "screenshot_path": "diagnostics/mangadar-com-420-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge (تفاعلي)": [
+          "blob:https://challenges.cloudflare.com/0bd0321b-4aeb-4656-ab11-982b3411118e",
+          "blob:https://challenges.cloudflare.com/1554b4dc-7fa0-4b03-9eac-9c57c3a3194e",
+          "blob:https://challenges.cloudflare.com/dc6a57bd-26c4-453c-9825-e996136ea50d"
+        ]
       },
-      "hotlink_probes": [
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
-          "no_referer_success": true,
-          "no_referer_size": 766862,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 766862,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 766862,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "77"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/011-3e4a3036.webp",
-          "no_referer_success": true,
-          "no_referer_size": 724888,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 724888,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 724888,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "45"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/022-3bb05cbf.webp",
-          "no_referer_success": true,
-          "no_referer_size": 905446,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 905446,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 905446,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "6"
-          }
-        }
-      ],
-      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -606,14 +560,8 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 2,
-        "cookie_names_reused": [
-          "GL_GI10",
-          "GL_UI4"
-        ]
+        "tested": false,
+        "reason": "لا كوكيز بالجلسة لاختبارها"
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -628,9 +576,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
-          "images_after_wait": 6,
+          "challenge_detected": true,
+          "protection_category": "solvable_challenge",
+          "images_after_wait": 1,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -640,62 +588,139 @@
             ],
             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
           },
-          "error": null
+          "error": null,
+          "deep_diagnostic": {
+            "cdp_runtime_enable_leak": false,
+            "sourceurl_leak": {
+              "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+              "suspect_patterns_found": []
+            }
+          }
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": false,
+        "deep_diagnostic_comparison": {
+          "cdp_runtime_enable_leak_with_stealth": false,
+          "cdp_runtime_enable_leak_without_stealth": false,
+          "leak_present_regardless_of_stealth": false,
+          "sourceurl_leak_with_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          },
+          "sourceurl_leak_without_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          }
+        }
       },
       "error": null,
-      "goto_elapsed_sec": 0.71,
-      "navigation_timing": {
-        "ttfb_ms": 570,
-        "dom_content_loaded_ms": 702,
-        "load_event_ms": 704,
-        "transfer_size_bytes": 37795
+      "deep_diagnostic": {
+        "cdp_runtime_enable_leak": false,
+        "sourceurl_leak": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        }
       },
-      "wait_for_images_elapsed_sec": 4.83,
-      "scroll_elapsed_sec": 72.31,
-      "total_probe_elapsed_sec": 79.11,
-      "scroll_rounds_completed": 187,
+      "goto_elapsed_sec": 0.14,
+      "navigation_timing": {
+        "ttfb_ms": 23,
+        "dom_content_loaded_ms": 135,
+        "load_event_ms": null,
+        "transfer_size_bytes": 4118
+      },
+      "wait_for_images_elapsed_sec": 1.63,
+      "scroll_elapsed_sec": 2.02,
+      "total_probe_elapsed_sec": 83.63,
+      "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
+        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a30a064dfa7e686c-DFW",
+        "cf-mitigated": "challenge",
+        "cf-ray": "a30d114309dcb81a-DFW",
         "content-encoding": "zstd",
-        "content-language": "ar",
-        "content-type": "text/html",
-        "date": "Tue, 25 Aug 2026 10:48:29 GMT",
-        "last-modified": "Tue, 25 Aug 2026 09:46:06 GMT",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-cxIR7zyKHuRlSpgOhbWUKk' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-type": "text/html; charset=UTF-8",
+        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+        "cross-origin-embedder-policy": "require-corp",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Tue, 25 Aug 2026 19:40:15 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "referrer-policy": "strict-origin-when-cross-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=v%2F8oms4N9UXyXANjz5BZey3hgoI%2BbqhZhyomF7RTwB4usaO6YFjDX%2FCdcohDgqMqlxv%2FgSyBv7hHxfn3wwSrxcOKM6ttbwaVgydc4itkg3Oj4EjY872w%2FOgf7nrC%2BOQj\"}]}",
+        "origin-agent-cluster": "?1",
+        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0KyqmRk9bMo2OR4WgnFlCqus1%2BTEXo7eXbH6sigy2wecubkETs%2FOS14Fo6o291ZonpMYNJCwaE7fo4N%2Fs8jaQYe1rOiOqGEuYJbIwY%2F%2B5EyJrOv7ogeMmU72t224SjY%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfEdge;dur=11,cfOrigin;dur=543",
-        "vary": "Accept-Encoding, User-Agent, Cookie, Accept-Encoding",
+        "server-timing": "chlray;desc=\"a30d114309dcb81a\"",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "il.koboldmoreish.com",
-        "static.cloudflareinsights.com"
+        "brunhild.challenges.cloudflare.com",
+        "challenges.cloudflare.com"
       ],
-      "turnstile_click_attempt": null,
-      "extended_challenge_probe": null,
-      "content_images_before_scroll": 3
+      "turnstile_click_attempt": {
+        "iframe_found": false,
+        "clicked": false,
+        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+        "click_method": "none",
+        "attempt_number": 3
+      },
+      "extended_challenge_probe": {
+        "pure_wait": {
+          "max_wait_sec": 60,
+          "poll_interval_sec": 2,
+          "resolved_during_pure_wait": false,
+          "elapsed_until_resolved_sec": null,
+          "final_category_after_wait": "solvable_challenge"
+        },
+        "click_attempts": [
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 1
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 2
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 3
+          }
+        ],
+        "final_after_reload": {
+          "attempted": true,
+          "category": "solvable_challenge",
+          "resolved": false,
+          "error": null
+        }
+      },
+      "content_images_before_scroll": 1
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "مانجا ومانهوا مترجمة عربية — قراءة عربية | مانجا تايم",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
-      "images_at_t0": 0,
-      "images_after_wait": 6,
-      "images_after_scroll": 23,
+      "title": "Just a moment...",
+      "challenge_detected": true,
+      "protection_category": "solvable_challenge",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 1,
+      "images_after_wait": 1,
+      "images_after_scroll": 1,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -703,95 +728,24 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 23,
+      "unmatched_img_count": 1,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
-      "suggested_selectors": [
-        ".w-full",
-        ".duration-300",
-        ".relative",
-        ".bg-surface-1",
-        ".flex",
-        ".flex-col",
-        ".h-auto",
-        ".block"
-      ],
+      "suggested_selectors": [],
       "domain_distribution": {
-        "mangatime.org": 23
+        "mangadar.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangatime-org-690-run2-screenshot.png",
-      "hotlink_probe": {
-        "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
-        "no_referer_success": true,
-        "no_referer_size": 766862,
-        "no_referer_fail_reason": null,
-        "direct_http_success": true,
-        "direct_http_size": 766862,
-        "direct_http_fail_reason": null,
-        "browser_session_success": true,
-        "browser_session_size": 766862,
-        "browser_session_fail_reason": null,
-        "referer_only_sufficient": false,
-        "image_cache_headers": {
-          "cache-control": "public, max-age=31536000, immutable",
-          "age": "161"
-        }
+      "screenshot_path": "diagnostics/mangadar-com-420-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {
+        "Cloudflare Challenge (تفاعلي)": [
+          "blob:https://challenges.cloudflare.com/0b99373e-cb31-4497-ba98-2510b4764cd7",
+          "blob:https://challenges.cloudflare.com/1da4222c-e9a8-475a-9428-5ecba87828ce",
+          "blob:https://challenges.cloudflare.com/9b2c6b0e-bd99-440e-8348-69c552ed8637"
+        ]
       },
-      "hotlink_probes": [
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
-          "no_referer_success": true,
-          "no_referer_size": 766862,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 766862,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 766862,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "161"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/011-3e4a3036.webp",
-          "no_referer_success": true,
-          "no_referer_size": 724888,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 724888,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 724888,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "129"
-          }
-        },
-        {
-          "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/022-3bb05cbf.webp",
-          "no_referer_success": true,
-          "no_referer_size": 905446,
-          "no_referer_fail_reason": null,
-          "direct_http_success": true,
-          "direct_http_size": 905446,
-          "direct_http_fail_reason": null,
-          "browser_session_success": true,
-          "browser_session_size": 905446,
-          "browser_session_fail_reason": null,
-          "referer_only_sufficient": false,
-          "image_cache_headers": {
-            "cache-control": "public, max-age=31536000, immutable",
-            "age": "91"
-          }
-        }
-      ],
-      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -800,14 +754,8 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": true,
-        "success": true,
-        "status_code": 200,
-        "cookie_count_reused": 2,
-        "cookie_names_reused": [
-          "GL_GI10",
-          "GL_UI4"
-        ]
+        "tested": false,
+        "reason": "لا كوكيز بالجلسة لاختبارها"
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -822,9 +770,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
-          "images_after_wait": 6,
+          "challenge_detected": true,
+          "protection_category": "solvable_challenge",
+          "images_after_wait": 1,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -834,74 +782,172 @@
             ],
             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
           },
-          "error": null
+          "error": null,
+          "deep_diagnostic": {
+            "cdp_runtime_enable_leak": false,
+            "sourceurl_leak": {
+              "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+              "suspect_patterns_found": []
+            }
+          }
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": false,
+        "deep_diagnostic_comparison": {
+          "cdp_runtime_enable_leak_with_stealth": false,
+          "cdp_runtime_enable_leak_without_stealth": false,
+          "leak_present_regardless_of_stealth": false,
+          "sourceurl_leak_with_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          },
+          "sourceurl_leak_without_stealth": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          }
+        }
       },
       "error": null,
-      "goto_elapsed_sec": 0.79,
-      "navigation_timing": {
-        "ttfb_ms": 568,
-        "dom_content_loaded_ms": 772,
-        "load_event_ms": 798,
-        "transfer_size_bytes": 37839
+      "deep_diagnostic": {
+        "cdp_runtime_enable_leak": false,
+        "sourceurl_leak": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        }
       },
-      "wait_for_images_elapsed_sec": 3.22,
-      "scroll_elapsed_sec": 75.14,
-      "total_probe_elapsed_sec": 80.57,
-      "scroll_rounds_completed": 190,
+      "goto_elapsed_sec": 0.14,
+      "navigation_timing": {
+        "ttfb_ms": 22,
+        "dom_content_loaded_ms": 135,
+        "load_event_ms": null,
+        "transfer_size_bytes": 4106
+      },
+      "wait_for_images_elapsed_sec": 1.61,
+      "scroll_elapsed_sec": 1.82,
+      "total_probe_elapsed_sec": 83.43,
+      "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
+        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a30a08570ef52ca4-DFW",
+        "cf-mitigated": "challenge",
+        "cf-ray": "a30d137d8e036806-DFW",
         "content-encoding": "zstd",
-        "content-language": "ar",
-        "content-type": "text/html",
-        "date": "Tue, 25 Aug 2026 10:49:53 GMT",
-        "last-modified": "Tue, 25 Aug 2026 09:46:06 GMT",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-R2maXbwXAJ2ZXHApE1m7QA' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-type": "text/html; charset=UTF-8",
+        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+        "cross-origin-embedder-policy": "require-corp",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Tue, 25 Aug 2026 19:41:46 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "referrer-policy": "strict-origin-when-cross-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fWbf%2Fg17CDx6RZohrz7NILF5Prrj3zVPAVDbMVebsGs2PC16MsXHTgoGRUap%2FzQAfMxXn%2Bj%2FsAsa%2BAtdiLJhwdiy7U2r7X97wGq30MoByEVEuta9QNiFUblVMJ36Pg2L\"}]}",
+        "origin-agent-cluster": "?1",
+        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7lxjhJGI144ZxQYERyHn2EmuJ9sydJ9ui8OP1KfEqRAEVPz2RwVxSQyforBozy7KEffAO5C93vKkWw%2BYWpUUzkC3DSVL2yjZJxwTGN0DJsVxODieLMYruoNLCAVtk1k%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfEdge;dur=12,cfOrigin;dur=538",
-        "vary": "Accept-Encoding, User-Agent, Cookie, Accept-Encoding",
+        "server-timing": "chlray;desc=\"a30d137d8e036806\"",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "il.koboldmoreish.com",
-        "static.cloudflareinsights.com"
+        "brunhild.challenges.cloudflare.com",
+        "challenges.cloudflare.com"
       ],
-      "turnstile_click_attempt": null,
-      "extended_challenge_probe": null,
-      "content_images_before_scroll": 3
+      "turnstile_click_attempt": {
+        "iframe_found": false,
+        "clicked": false,
+        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+        "click_method": "none",
+        "attempt_number": 3
+      },
+      "extended_challenge_probe": {
+        "pure_wait": {
+          "max_wait_sec": 60,
+          "poll_interval_sec": 2,
+          "resolved_during_pure_wait": false,
+          "elapsed_until_resolved_sec": null,
+          "final_category_after_wait": "solvable_challenge"
+        },
+        "click_attempts": [
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 1
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 2
+          },
+          {
+            "iframe_found": false,
+            "clicked": false,
+            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+            "click_method": "none",
+            "attempt_number": 3
+          }
+        ],
+        "final_after_reload": {
+          "attempted": true,
+          "category": "solvable_challenge",
+          "resolved": false,
+          "error": null
+        }
+      },
+      "content_images_before_scroll": 1
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
-      "target": "image_cdn",
-      "sample_url": "https://mangatime.org/uploads/chapters/6a4905765dbdedf27e832d47/001-0b99607e.webp",
+      "target": "page_url",
+      "sample_url": "https://mangadar.com/manga/tomb-raid-king/100/",
       "requests_sent": 4,
-      "elapsed_sec": 0.18,
+      "elapsed_sec": 0.47,
       "status_codes": [
-        200,
-        200,
-        200,
-        200
+        403,
+        403,
+        403,
+        403
       ],
       "rate_limited_detected": false,
-      "static_block_detected": false,
+      "static_block_detected": true,
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
+    "detection_surface_map": {
+      "js_fingerprint_layer": {
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs_with_stealth": false,
+        "image_count_differs_with_stealth": false
+      },
+      "cdp_protocol_layer": {
+        "tested": true,
+        "runtime_enable_leak_with_stealth": false,
+        "runtime_enable_leak_without_stealth": false,
+        "leak_present_regardless_of_stealth": false,
+        "sourceurl_suspect_patterns_with_stealth": [],
+        "sourceurl_suspect_patterns_without_stealth": []
+      },
+      "hotlink_layer": {
+        "referer_only_sufficient": null,
+        "direct_http_success": null
+      },
+      "rate_limit_layer": {
+        "rate_limited_detected": false,
+        "static_block_detected": true
+      }
+    },
     "diagnostic_run_files": {
-      "report": "diagnostics/mangatime-org-690-report.json",
+      "report": "diagnostics/mangadar-com-420-report.json",
       "screenshots": [
-        "diagnostics/mangatime-org-690-screenshot.png",
-        "diagnostics/mangatime-org-690-run2-screenshot.png"
+        "diagnostics/mangadar-com-420-screenshot.png",
+        "diagnostics/mangadar-com-420-run2-screenshot.png"
       ]
     }
   }
