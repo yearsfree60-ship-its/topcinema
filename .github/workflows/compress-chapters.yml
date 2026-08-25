@@ -24,6 +24,14 @@ on:
         required: false
         default: "30"
         type: string
+      output_format:
+        description: "صيغة الصور الناتجة — WEBP سريع الترميز وآمن افتراضيًا. AVIF أصغر حجمًا (خصوصًا للصفحات الملونة/المتدرجة) لكن ترميزه أبطأ بعشرات المرات — مع أعداد فصول كبيرة قد يقترب من مهلة الـ240 دقيقة"
+        required: false
+        default: webp
+        type: choice
+        options:
+          - webp
+          - avif
       max_width:
         description: "العرض الأقصى بالبكسل"
         required: false
@@ -85,9 +93,13 @@ jobs:
       # لا يحتاج متصفح (أزورافلاي مثلًا) — لأن هذه خطوة ثابتة قبل معرفة
       # المدخلات وقت بناء الصورة. السكربت نفسه هو من يتخطى إطلاق المتصفح
       # فعليًا حين لا يحتاجه البروفايل (توفير وقت التشغيل الفعلي، لا التثبيت)
+      # [تحسين احترافي] أُضيفت playwright-stealth (تمويه بصمة المتصفح —
+      # راجع _STEALTH بالسكربت) و pillow-avif-plugin (يُستخدَم فقط لو
+      # output_format=avif؛ تثبيته دومًا آمن وغير مكلف وقتًا — السكربت
+      # نفسه يتحقق من IMG_FORMAT ويستورده شرطيًا وقت التشغيل فقط).
       - name: تثبيت المكتبات
         run: |
-          pip install --quiet playwright pillow requests
+          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin
           python -m playwright install --with-deps chromium
 
       # [تعديل] لم يعد هناك أي خيار لتصفير الأرشيف. التشغيلة تستأنف دومًا
@@ -119,6 +131,7 @@ jobs:
           SITE_PROFILE: ${{ inputs.site }}
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
+          IMG_FORMAT: ${{ inputs.output_format }}
           HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
@@ -206,7 +219,12 @@ jobs:
           echo "=================================================="
           echo "ملخص التشخيص (على فرع output إن كان الدفع متاحًا):"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/summary.json"
-          echo "أو حمّل أرتيفاكت 'diagnostics-${{ github.run_id }}' من صفحة هذه التشغيلة أعلاه (يضم لقطات الشاشة أيضًا)"
+          echo ""
+          echo "📦 أرشيف zip خاص بهذه التشغيلة فقط (تقارير + لقطات الشاشة معًا) —"
+          echo "رابط تنزيل مباشر بلا تسجيل دخول، يعمل بموثوقية على أندرويد:"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/diagnostics/runs/run-${{ github.run_id }}.zip"
+          echo ""
+          echo "أو حمّل أرتيفاكت 'diagnostics-${{ github.run_id }}' من صفحة هذه التشغيلة أعلاه (نسخة احتياطية، يتطلب تسجيل دخول لـGitHub وقد لا ينزّل بسلاسة على الجوال)"
           echo "=================================================="
 
       # رفع مجلد التشخيص (JSON + لقطات شاشة) كأرتيفاكت مستقل لهذه التشغيلة —
