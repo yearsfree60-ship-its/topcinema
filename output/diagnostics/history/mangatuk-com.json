@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2026-08-25 06:14:35 UTC",
+    "url": "https://mangatuk.com/series/tears-on-a-withered-flower/chapter-1",
+    "fetch_mode_recommended": "browser",
+    "challenge_detected_static": false,
+    "challenge_detected_browser": false,
+    "protection_signatures": [],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 06:15:10 UTC",
+    "url": "https://mangatuk.com/series/tears-on-a-withered-flower/chapter-50",
+    "fetch_mode_recommended": "browser",
+    "challenge_detected_static": false,
+    "challenge_detected_browser": false,
+    "protection_signatures": [],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 06:15:28 UTC",
+    "url": "https://mangatuk.com/series/tears-on-a-withered-flower/chapter-100",
+    "fetch_mode_recommended": "browser",
+    "challenge_detected_static": false,
+    "challenge_detected_browser": false,
+    "protection_signatures": [],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "signed_url_params": []
+  }
+]

@@ -1,0 +1,397 @@
+{
+  "url": "https://mangatuk.com/series/tears-on-a-withered-flower/chapter-50",
+  "tls_and_server_info": {
+    "server_ip": "104.21.1.54",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "mangatuk.com",
+    "tls_not_after": "Nov  4 19:39:09 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "20.97.196.160",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Boydton",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a308751bf93b54b2-IAD",
+      "cf-cache-status": "DYNAMIC",
+      "content-type": "text/html; charset=utf-8"
+    },
+    "challenge_detected": false,
+    "protection_signatures": [],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 1,
+    "extracted_image_count": 1,
+    "extracted_sample_urls": [
+      "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp"
+    ],
+    "sample_image_urls": [
+      "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp"
+    ],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 1.06
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "مانهوا كورية Tears on a Withered Flower | مانجاتك",
+    "challenge_detected": false,
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 2,
+    "images_after_wait": 7,
+    "images_after_scroll": 59,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 1,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 58,
+    "widget_excluded_count": 1,
+    "widget_excluded_samples": [
+      "transition-opacity duration-300 opacity-100 size-full rounded-[inherit] object-c"
+    ],
+    "suggested_selectors": [
+      ".relative",
+      ".h-full",
+      ".w-full",
+      ".overflow-hidden",
+      ".bg-muted",
+      ".grid-cols-",
+      ".auto_minmax",
+      ".object-cover"
+    ],
+    "domain_distribution": {
+      "content.mangatuk.com": 59
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatuk-com-120-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp",
+      "no_referer_success": true,
+      "no_referer_size": 127386,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 127386,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 127386,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp",
+        "no_referer_success": true,
+        "no_referer_size": 127386,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 127386,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 127386,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/axis/chapter-thumbnails/wpser_8063be9ecbddf5cb92a38a1bcc/wpchap_5b773ee0ad01332b8fb0e04780/r1.webp",
+        "no_referer_success": true,
+        "no_referer_size": 25340,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 25340,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 25340,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/axis/chapter-thumbnails/wpser_8063be9ecbddf5cb92a38a1bcc/wpchap_707cfd45436cb819f3f826825c/r1.webp",
+        "no_referer_success": true,
+        "no_referer_size": 31712,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 31712,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 31712,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      }
+    ],
+    "network_vendor_hits": {
+      "Cloudflare Challenge": [
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.4231567103619297:1787634022:rAiRIV_OiWH6lZv_D4Z6s2vbdV1lEDsVwT8ueXzaWFQ/a30875232",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/e694063b5082/main.js?",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "images_after_wait": 7,
+        "fingerprint": {
+          "webdriver": false,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": false,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 1.29,
+    "navigation_timing": {
+      "ttfb_ms": 9,
+      "dom_content_loaded_ms": 1286,
+      "load_event_ms": 1286,
+      "transfer_size_bytes": 88149
+    },
+    "wait_for_images_elapsed_sec": 2.57,
+    "scroll_elapsed_sec": 7.88,
+    "total_probe_elapsed_sec": 13.75,
+    "content_images_before_scroll": 7
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "مانهوا كورية Tears on a Withered Flower | مانجاتك",
+    "challenge_detected": false,
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 6,
+    "images_after_wait": 7,
+    "images_after_scroll": 59,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 1,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 58,
+    "widget_excluded_count": 1,
+    "widget_excluded_samples": [
+      "transition-opacity duration-300 opacity-100 size-full rounded-[inherit] object-c"
+    ],
+    "suggested_selectors": [
+      ".relative",
+      ".h-full",
+      ".w-full",
+      ".overflow-hidden",
+      ".bg-muted",
+      ".grid-cols-",
+      ".auto_minmax",
+      ".object-cover"
+    ],
+    "domain_distribution": {
+      "content.mangatuk.com": 59
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatuk-com-120-run2-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp",
+      "no_referer_success": true,
+      "no_referer_size": 127386,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 127386,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 127386,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp",
+        "no_referer_success": true,
+        "no_referer_size": 127386,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 127386,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 127386,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/axis/chapter-thumbnails/wpser_8063be9ecbddf5cb92a38a1bcc/wpchap_5b773ee0ad01332b8fb0e04780/r1.webp",
+        "no_referer_success": true,
+        "no_referer_size": 25340,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 25340,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 25340,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/axis/covers/kpg8wuhm4jkb79dbv6l70dx8.webp",
+        "no_referer_success": true,
+        "no_referer_size": 163532,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 163532,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 163532,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      }
+    ],
+    "network_vendor_hits": {
+      "Cloudflare Challenge": [
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.4231567103619297:1787634022:rAiRIV_OiWH6lZv_D4Z6s2vbdV1lEDsVwT8ueXzaWFQ/a308758fb",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/e694063b5082/main.js?",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "images_after_wait": 7,
+        "fingerprint": {
+          "webdriver": false,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": false,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 1.02,
+    "navigation_timing": {
+      "ttfb_ms": 10,
+      "dom_content_loaded_ms": 1017,
+      "load_event_ms": 1017,
+      "transfer_size_bytes": 88321
+    },
+    "wait_for_images_elapsed_sec": 1.66,
+    "scroll_elapsed_sec": 7.46,
+    "total_probe_elapsed_sec": 12.37,
+    "content_images_before_scroll": 7
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "image_cdn",
+    "sample_url": "https://content.mangatuk.com/axis/covers/ikvtf177kiteq4sibd12w15q.webp",
+    "requests_sent": 4,
+    "elapsed_sec": 0.02,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "retry_after_header": null
+  },
+  "recommendation": {
+    "fetch_mode": "browser",
+    "do_scroll": true,
+    "do_widget_filter": true,
+    "suggested_http_concurrency": 3,
+    "reasons": [
+      "مسار HTTP المباشر الفعلي سيستخرج 1 صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)",
+      "⭐ اكتشاف مهم: إعادة استخدام كوكيز جلسة المتصفح نجحت بطلب HTTP عادي لاحقًا — استراتيجية هجينة (حل التحدي مرة واحدة بمتصفح، ثم HTTP سريع لبقية الفصول) ممكنة نظريًا هنا، رغم أن fetch_mode='browser' هو الخيار الآمن المتاح حاليًا بالكود",
+      "⚠️ فحص فعلي: navigator.webdriver بقي ظاهرًا حتى بعد تطبيق playwright-stealth — الترقيع لم ينجح لهذا الموقع تحديدًا (سبب تقني بالموقع نفسه أو تعارض إصدار)، يستحق فحصًا يدويًا للقطة الشاشة",
+      "ℹ️ مقارنة فعلية: لا فرق ملحوظ بين بلا stealth وبstealth (نفس نتيجة التحقق وعدد الصور تقريبًا) — الحماية هنا على الأرجح تعتمد على شيء غير بصمة المتصفح (IP/معدل الطلبات مثلًا)، راجع فحص تحديد المعدل أدناه",
+      "لا تحديد معدل ظاهر في فحص موازٍ سريع (4 طلبات على CDN الصور) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية",
+      "⏱️ الصور استقرت فعليًا (مقاس، لا تخمين) خلال 2.57ث — وقت انتظار مقترَح لهذا الموقع 5000ms بدل 20000ms الثابت لكل المواقع"
+    ],
+    "suggested_content_wait_ms": 5000,
+    "do_stealth": false,
+    "suggested_selectors": [
+      ".relative",
+      ".h-full",
+      ".w-full",
+      ".overflow-hidden",
+      ".bg-muted",
+      ".grid-cols-",
+      ".auto_minmax",
+      ".object-cover"
+    ]
+  },
+  "history_diffs_since_last_run": [],
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangatuk-com-120-report.json",
+    "screenshots": [
+      "diagnostics/mangatuk-com-120-screenshot.png",
+      "diagnostics/mangatuk-com-120-run2-screenshot.png"
+    ]
+  }
+}
