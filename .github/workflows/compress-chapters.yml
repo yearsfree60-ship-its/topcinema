@@ -52,6 +52,11 @@ on:
         required: false
         default: false
         type: boolean
+      ocr_experiment_mode:
+        description: "المرحلة ١ (تجريبية): يستخدم بروفايل الموقع المختار أعلاه فعليًا لجلب الفصول (بعكس diagnostic_mode الذي يتجاهله)، لكن بدل الضغط والحفظ يُشغّل OCR إنجليزي فقط على كل صورة خام وينتج نص+JSON مرتّبَين لكل فصل (بلا حفظ أي صورة). لا يلمس manifest.json أو مجلدات الفصول العادية إطلاقًا"
+        required: false
+        default: false
+        type: boolean
       deep_diagnostic:
         description: "لا يعمل إلا مع diagnostic_mode مفعّلًا (يُتجاهَل غير ذلك). يضيف مسبارين لا يقيسهما التشخيص العادي إطلاقًا: تسريب Runtime.enable (بروتوكول CDP نفسه، لا JS fingerprint — السبب الموثّق فعليًا لتعطّل stealth الحالي ضد Cloudflare/DataDome الحديثة) وتسريب sourceURL لسكربتات page.evaluate، مع تجميعهما وباقي طبقات الفحص القائمة بخريطة detection_surface_map موحّدة لكل رابط. يُضاعِف زمن التشخيص تقريبًا لكل رابط (~90-180ث إضافية)"
         required: false
@@ -102,10 +107,29 @@ jobs:
       # راجع _STEALTH بالسكربت) و pillow-avif-plugin (يُستخدَم فقط لو
       # output_format=avif؛ تثبيته دومًا آمن وغير مكلف وقتًا — السكربت
       # نفسه يتحقق من IMG_FORMAT ويستورده شرطيًا وقت التشغيل فقط).
+      # [جديد — المرحلة ١] paddleocr/paddlepaddle تُثبَّت دومًا (نفس منطق
+      # Playwright/pillow-avif الثابت أعلاه) — السكربت نفسه يستوردها بشكل
+      # كسول (lazy import) ولا يلمسها إطلاقًا لو ocr_experiment_mode معطّلًا،
+      # فلا تكلفة زمن تشغيل فعلي على أي تشغيلة عادية، فقط زمن تثبيت pip.
       - name: تثبيت المكتبات
         run: |
-          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin
+          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr paddlepaddle
           python -m playwright install --with-deps chromium
+
+      # [جديد — المرحلة ١] كاش نماذج PaddleOCR بين التشغيلات — بدونه كل
+      # تشغيلة (worktree/رانر جديد من الصفر) تُعيد تحميل نماذج الكشف+التعرّف
+      # من الإنترنت من جديد، وهذا وقت مهدور من مهلة الـ240 دقيقة المشتركة
+      # مع الجلب والضغط. المسار قد يختلف بين إصدارات المكتبة (~/.paddlex
+      # هو المسار الحالي المعروف)، فأُضيف أكثر من مسار محتمل احتياطًا.
+      - name: كاش نماذج PaddleOCR
+        if: inputs.ocr_experiment_mode
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.paddlex
+            ~/.paddleocr
+            ~/.paddlehub
+          key: paddleocr-models-en-v1
 
       # [تعديل] لم يعد هناك أي خيار لتصفير الأرشيف. التشغيلة تستأنف دومًا
       # على فرع output الحالي بتاريخه الكامل إن وُجد، وإلا تُنشئه فارغًا
@@ -140,6 +164,7 @@ jobs:
           HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
+          OCR_EXPERIMENT_MODE: ${{ inputs.ocr_experiment_mode }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           RUN_ID: ${{ github.run_id }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
@@ -208,8 +233,27 @@ jobs:
       # [تعديل] الآن يطبع رابطين: الأرشيف الكامل (كل الفصول المضغوطة تاريخيًا،
       # لم يُلمَس) + رابط manifest مستقل خاص فقط بفصول هذه التشغيلة تحديدًا
       # (output/runs/run-<RUN_ID>.json) — بلا أي حذف أو تصفير للأرشيف الرئيسي.
+      - name: رابط نتائج تجربة OCR
+        if: always() && inputs.ocr_experiment_mode
+        run: |
+          echo "=================================================="
+          echo "📦 أرشيف zip خاص بهذه التشغيلة (نص+JSON لكل فصل) — رابط تنزيل مباشر بلا تسجيل دخول:"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/runs/run-${{ github.run_id }}.zip"
+          echo ""
+          echo "أو حمّل أرتيفاكت 'ocr-experiment-${{ github.run_id }}' من صفحة هذه التشغيلة أعلاه (نسخة احتياطية)"
+          echo "=================================================="
+
+      - name: رفع نتائج تجربة OCR كأرتيفاكت
+        if: always() && inputs.ocr_experiment_mode
+        uses: actions/upload-artifact@v4
+        with:
+          name: ocr-experiment-${{ github.run_id }}
+          path: ${{ env.OUTPUT_WORKTREE }}/output/ocr_experiment
+          if-no-files-found: warn
+          retention-days: 14
+
       - name: رابط النتيجة
-        if: always() && !inputs.diagnostic_mode
+        if: always() && !inputs.diagnostic_mode && !inputs.ocr_experiment_mode
         run: |
           echo "=================================================="
           echo "manifest.json الكامل (كل الفصول المضغوطة سابقًا وحاليًا، لم يُحذف منه شيء):"
@@ -248,7 +292,7 @@ jobs:
           retention-days: 14
 
       - name: إجبار تحديث كاش jsDelivr فورًا
-        if: always() && !inputs.diagnostic_mode
+        if: always() && !inputs.diagnostic_mode && !inputs.ocr_experiment_mode
         run: |
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/manifest.json" || true
           curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@output/output/runs/run-${{ github.run_id }}.json" || true
