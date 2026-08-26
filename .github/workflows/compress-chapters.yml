@@ -111,9 +111,15 @@ jobs:
       # Playwright/pillow-avif الثابت أعلاه) — السكربت نفسه يستوردها بشكل
       # كسول (lazy import) ولا يلمسها إطلاقًا لو ocr_experiment_mode معطّلًا،
       # فلا تكلفة زمن تشغيل فعلي على أي تشغيلة عادية، فقط زمن تثبيت pip.
+      # [تثبيت إصدار — موثَّق] paddleocr==3.2.0 + paddlepaddle==3.1.1 مثبَّتان
+      # صراحة بدل السحب المفتوح: توثيق PaddleOCR الرسمي (سجل إصدارات PyPI،
+      # 3.2.0 بتاريخ 2025-08-21) يؤكد دعمًا كاملًا لـPaddlePaddle 3.1.0/3.1.1،
+      # وهذا الثنائي يسبق تمامًا خلل PIR/oneDNN الذي أكّد فريق Paddle نفسه
+      # (issue #77340) أنه ارتداد بدأ فقط من PaddlePaddle 3.3.0 فصاعدًا. أي
+      # فتح الإصدار للأعلى مستقبلًا قد يجلب الخلل من جديد دون سبب وجيه.
       - name: تثبيت المكتبات
         run: |
-          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr paddlepaddle
+          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1
           python -m playwright install --with-deps chromium
 
       # [جديد — المرحلة ١] كاش نماذج PaddleOCR بين التشغيلات — بدونه كل
