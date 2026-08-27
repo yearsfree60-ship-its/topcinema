@@ -17,12 +17,27 @@
 - _commit_and_push_sync — دفع نتائج تجربة OCR لفرع الإخراج.
 - OUTPUT_DIR, RUN_ID, GIT_COMMIT_DIR, GIT_BRANCH, IMG_FETCH_DELAY_MS,
   SITE_PROFILE — ثوابت بيئة/تشغيلة مشتركة.
+- HTTP_CONCURRENCY — [جديد] نفس ثابت التوازي المستخدَم فعليًا بمسار
+  الإنتاج الرئيسي (process_chapter بمسار HTTP)، يُعاد استخدامه هنا حرفيًا
+  لتقييد عدد الفصول التي تُنزَّل صورها بالتوازي — راجع بند (1) أدناه.
+
+[جديد — بند (1) من تحليل التسريع الفعلي] هذا الملف كان تسلسليًا بالكامل
+سابقًا (فصل، ثم صفحاته، كلٌّ بانتظار الآخر). الآن: مسار HTTP يُشغِّل عدة
+منتِجين (فصول، مقيَّدون بـHTTP_CONCURRENCY تمامًا كمسار الإنتاج) يُنزِّلون
+الصور بالتوازي على حلقة asyncio، بينما مستهلك OCR واحد مشترك (يبقى على
+خيط PaddleOCR المخصَّص الوحيد — لا تغيير على إصلاح أمان الخيوط) يسحب أي
+صفحة جاهزة فور توفرها من أي فصل عبر asyncio.Queue. الفائدة: زمن الشبكة
+لكل الفصول يتداخل مع زمن OCR (CPU) بدل أن يُضاف إليه تسلسليًا. مسار
+المتصفح (غير HTTP) يبقى تسلسليًا بين الفصول (يطابق قيد مسار الإنتاج نفسه
+بمعالجة الفصول بالمتصفح)، لكن يستخدم نفس تقنية منتِج/مستهلِك على مستوى
+صفحات الفصل الواحد (تحميل الصفحة التالية يتداخل مع OCR الصفحة الحالية).
 """
 import asyncio
 import json
 import os
 import tempfile
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 from io import BytesIO
 from pathlib import Path
 
@@ -32,6 +47,7 @@ from playwright.async_api import async_playwright
 from compress_chapters import (
     GIT_BRANCH,
     GIT_COMMIT_DIR,
+    HTTP_CONCURRENCY,
     IMG_FETCH_DELAY_MS,
     OUTPUT_DIR,
     RUN_ID,
@@ -58,11 +74,70 @@ from compress_chapters import (
 _PADDLEOCR_ENGINE = None  # يُهيَّأ مرة واحدة فقط — تحميل النماذج ثقيل نسبيًا
 _PADDLEOCR_MKLDNN_FALLBACK_DONE = False  # يمنع تكرار إعادة التهيئة أكثر من مرة
 
+# [جديد — إصلاح جذري لعطل OCR المتناوب فصلًا-كاملًا، مؤكَّد ببحث خارجي فعلي:
+# GitHub PaddlePaddle/PaddleOCR issue #16238 (يطابق حرفيًا "RuntimeError:
+# std::exception" المرصود بلوجات هذا المشروع فعليًا) وتقارير مشابهة
+# (#16362 / #16950 / #16196) ومناقشة #14567 (segfault فعلي مع
+# ThreadPoolExecutor بأكثر من عامل خيط)] محرك الاستدلال الأصلي لـPaddle
+# (predictor.run() بلغة C++) غير آمن عبر الخيوط: أول استدعاء predict() من
+# خيط OS يبني/يهيّئ حالة داخلية مرتبطة بذلك الخيط تحديدًا، وأي استدعاء لاحق
+# من خيط مختلف يفشل بـstd::exception. asyncio.to_thread (المستخدَم سابقًا
+# بهذا الملف) يستخدم مجمَّع الخيوط الافتراضي لبايثون (عدة عمّال محتملين، لا
+# ضمان أي خيط يُستخدَم لكل نداء) — وهذا يفسّر فعليًا التناوب "فصل ينجح
+# بالكامل ثم الفصل التالي يفشل بالكامل من صفحته الأولى" المرصود بتشغيلة
+# pickmeupgacha.com (79 فصل): لحظة وقوع أول predict() على خيط مختلف عن خيط
+# التهيئة الأول، يفشل كل predict() لاحق يقع على ذلك الخيط بلا استثناء.
+# الحل الموثَّق مجتمعيًا (مشروع rust-paddle-ocr المتخصص بأمان الخيوط لمحرك
+# Paddle نفسه): تخصيص خيط واحد فقط يملك المحرك حصريًا طوال عمر البرنامج،
+# وكل الطلبات تمر له عبر طابور/منفِّذ واحد — لا مجمَّع متعدد العمّال أبدًا.
+# max_workers=1 هنا يضمن حرفيًا أن كل استدعاء OCR طوال التشغيلة الكاملة (كل
+# الـ79 فصل) يقع فعليًا على نفس خيط OS الذي بُني عليه _PADDLEOCR_ENGINE أول
+# مرة، بصرف النظر عن نشاط حلقة asyncio الأخرى (تحميل صور HTTP، النوم بين
+# الصفحات...). يُبنى مرة واحدة على مستوى الوحدة (module-level) لا لكل فصل،
+# كي يبقى نفس الخيط طوال التشغيلة كاملة، ويُغلَق صراحة بنهاية
+# run_ocr_experiment_mode عبر _shutdown_ocr_thread().
+_OCR_THREAD_EXECUTOR = ThreadPoolExecutor(
+    max_workers=1, thread_name_prefix="paddleocr-single-thread"
+)
+
+
+async def _run_on_ocr_thread(func, *args):
+    """يُشغِّل func (مزامَنة/blocking) حصرًا على خيط OCR المخصَّص الوحيد أعلاه،
+    بدل asyncio.to_thread (مجمَّع افتراضي متعدد العمّال). يُستخدَم لكل نداء
+    له علاقة بمحرك PaddleOCR (predict مباشرة أو إعادة بنائه) — أبدًا
+    asyncio.to_thread مباشرة لأي من هذه العمليات، حفاظًا على ثبات الخيط."""
+    loop = asyncio.get_running_loop()
+    return await loop.run_in_executor(_OCR_THREAD_EXECUTOR, func, *args)
+
+
+def _shutdown_ocr_thread() -> None:
+    """يُغلق منفِّذ خيط OCR المخصَّص بلطف بنهاية التشغيلة (تحرير الخيط ومحرك
+    Paddle المحمَّل بذاكرته). لا يُستدعى بين الفصول — الاستمرارية على نفس
+    الخيط طوال التشغيلة هي بيت القصيد من هذا الإصلاح."""
+    _OCR_THREAD_EXECUTOR.shutdown(wait=True, cancel_futures=False)
+
 # [تصحيح — PIR/oneDNN] النص الحرفي الذي يظهر في NotImplementedError عند خلل
 # ConvertPirAttribute2RuntimeAttribute (issue #77340 على مستودع Paddle
 # الرسمي). يُستخدَم كفحص نصي دقيق لا except عام، حتى لا نُخفي أخطاء أخرى
 # فعلية تحت غطاء "fallback".
 _PIR_ONEDNN_ERROR_MARKER = "ConvertPirAttribute2RuntimeAttribute"
+
+# [جديد — طبقة أمان ثانية، تكمِّل الإصلاح الجذري بخيط OCR المخصَّص أعلاه
+# (_OCR_THREAD_EXECUTOR)، لا تُغني عنه] رسائل تعطّل أصلي (native crash)
+# معروفة موثَّقة فعليًا بمستودع PaddlePaddle/PaddleOCR الرسمي (issues
+# #16238 / #16362 / #16950 / #16196) لأعطال متعددة الأسباب المحتملة داخل
+# محرك C++ (تزامن خيطي، تراكم ذاكرة oneDNN...) — رسالتها **غير فارغة**
+# خلافًا لاستثناء C++ الفارغ المُعالَج سابقًا، لذا لم تكن تُلتقَط إطلاقًا
+# بالشرط القديم (`if str(e).strip(): raise`). يُطابَق هنا نص الرسالة حصرًا
+# (لا Exception عام كامل) كي لا نُخفي أخطاء منطقية حقيقية أخرى (رابط صورة
+# تالف، صيغة PNG غير صالحة...) تحت غطاء "fallback".
+# [جديد — رُفِع من محاولة واحدة فقط بعد رصد فعلي بتشغيلة حقيقية: صفحتان
+# متتاليتان (11 و12 من فصل 12 صفحة) فشلتا رغم إعادة البناء+محاولة واحدة،
+# ما يعني أن محاولة واحدة لا تكفي دومًا (سواء لأن إعادة بناء المحرك
+# يحتاج أكثر من مرة أحيانًا، أو لأن سببًا آخر غير عابر يتكرر). قابل
+# للتعديل عبر متغير بيئة بنفس نمط بقية ثوابت الملف.
+OCR_ENGINE_CRASH_MAX_RETRIES = int(os.environ.get("OCR_ENGINE_CRASH_MAX_RETRIES", "3"))
+_NATIVE_ENGINE_CRASH_MARKERS = ("std::exception", "Unknown exception", "static Infer fail")
 
 # [جديد — تحديد صريح لسعة كاش oneDNN] الافتراضي الداخلي لمحرك Paddle هو 10
 # نواة (kernel) مخزَّنة بالذاكرة الأصلية (native memory، خارج نطاق GC
@@ -105,6 +180,17 @@ OCR_TILE_HEIGHT = int(os.environ.get("OCR_TILE_HEIGHT", "3000"))
 OCR_TILE_OVERLAP = int(os.environ.get("OCR_TILE_OVERLAP", "80"))
 OCR_TILE_WIDTH = int(os.environ.get("OCR_TILE_WIDTH", "800"))
 _OCR_WIDTH_WARNED = False  # يمنع تكرار تحذير العرض الأوسع من المتوقَّع لكل صفحة
+
+# [جديد — بند (1)] الحد الأقصى لعدد الصفحات "الجاهزة لكن لم تُستهلَك بعد"
+# المسموح تراكمها بطابور التحميل/OCR المشترك، لكل مسار (HTTP متعدد الفصول
+# أو المتصفح أحادي الفصل). صفحات ويبتون خام قد تكون عدة ميغابايت لكل
+# صفحة — بلا سقف، لو تجاوزت سرعة التنزيل سرعة OCR (متوقَّع، لأن OCR على
+# خيط واحد فقط) قد تتراكم عشرات الصفحات بالذاكرة بلا داعٍ. القيمة
+# الافتراضية مرتبطة بـHTTP_CONCURRENCY (ضعف عدد الفصول المتوازية تقريبًا،
+# كهامش تخزين مؤقت معقول) بدل رقم ثابت اعتباطي.
+OCR_DOWNLOAD_QUEUE_SIZE = int(
+    os.environ.get("OCR_DOWNLOAD_QUEUE_SIZE", str(max(2, HTTP_CONCURRENCY * 2)))
+)
 
 
 def _build_paddleocr_engine(enable_mkldnn: bool):
@@ -229,29 +315,52 @@ def _dedupe_overlap_boxes(items: list[dict]) -> list[dict]:
     return kept
 
 
-def _predict_with_engine_fallback(tmp_path: str):
-    """[استُخرِج من ocr_extract_english_sync كي يُعاد استخدامه لكل بلاطة على
-    حدة بعد بند (2)، بدل مرة واحدة للصورة الكاملة] نفس منطق احتياطي PIR/
-    oneDNN واستثناء C++ الفارغ دون أي تغيير سلوكي."""
+def _predict_with_engine_fallback(tmp_paths: list[str], diag: dict | None = None):
+    """[عُدِّلت — بند (4) من تحليل التسريع: تجميع بلاطات] كانت تُستدعى لكل
+    بلاطة على حدة (tmp_path مفرد)؛ الآن tmp_paths قائمة مسارات كل بلاطات
+    الصفحة الواحدة، تُمرَّر لـpredict() بنداء واحد فقط (توثيق PaddleOCR
+    الرسمي يؤكد أن input يقبل قائمة مسارات، وتُرجَع نتيجة واحدة لكل عنصر
+    بنفس الترتيب) — يقلل overhead عبور حدود Python↔C++ لكل صفحة من (عدد
+    البلاطات) نداء إلى نداء واحد، خصوصًا مؤثِّر بالصفحات الطويلة (4-5
+    بلاطات). باقي منطق الاحتياط (PIR/oneDNN، تعطّل أصلي عام، إعادة
+    المحاولة) بلا تغيير جوهري، يُعاد تطبيقه على الدفعة كاملة عند الفشل
+    (لا بلاطة مفردة) — مقبول لأن أي فشل من هذا النوع مرتبط أصلًا بحالة
+    المحرك نفسه (خيط/ذاكرة) لا بمحتوى بلاطة بعينها. خط الدفاع الأول
+    الفعلي يبقى تشغيل كل نداءات predict() حصرًا على خيط OS المخصَّص
+    (_OCR_THREAD_EXECUTOR بأعلى الملف)."""
     global _PADDLEOCR_ENGINE
     engine = _get_paddleocr_engine()
     generic_attempts = 0
+    diag_str = (
+        f" | تشخيص: صفحة#{diag.get('page_index')} "
+        f"({diag.get('page_width')}×{diag.get('page_height')}px) — "
+        f"{diag.get('tile_count')} بلاطة بدفعة واحدة، شكل أول بلاطة "
+        f"{diag.get('tile_shape')}"
+        if diag else ""
+    )
     while True:
         try:
-            return engine.predict(tmp_path)
+            return engine.predict(tmp_paths)
         except NotImplementedError as e:
             if _PIR_ONEDNN_ERROR_MARKER not in str(e) or _PADDLEOCR_MKLDNN_FALLBACK_DONE:
                 raise
             engine = _reinit_paddleocr_engine_without_mkldnn()
             continue
         except Exception as e:
-            if str(e).strip() or generic_attempts >= 1:
+            msg = str(e).strip()
+            is_known_native_crash = (not msg) or any(marker in msg for marker in _NATIVE_ENGINE_CRASH_MARKERS)
+            if not is_known_native_crash or generic_attempts >= OCR_ENGINE_CRASH_MAX_RETRIES:
+                if is_known_native_crash:
+                    print(
+                        f"  ❌ [OCR تشخيص فشل نهائي] استنفدت {generic_attempts} "
+                        f"محاولة إعادة بناء لخطأ ({msg or 'رسالة فارغة'}){diag_str}"
+                    )
                 raise
             generic_attempts += 1
             print(
-                "  ⚠️ [OCR احتياطي] استثناء C++ فارغ (str(e) فارغ) — "
-                "على الأرجح تراكم ذاكرة أصلية (oneDNN) وسط الفصل. "
-                "إعادة بناء محرك PaddleOCR ومحاولة هذه البلاطة مرة أخرى."
+                f"  ⚠️ [OCR احتياطي] محاولة {generic_attempts}/{OCR_ENGINE_CRASH_MAX_RETRIES} — "
+                f"استثناء محرك أصلي ({msg or 'رسالة فارغة'}){diag_str} — "
+                "إعادة بناء محرك PaddleOCR ومحاولة دفعة هذه الصفحة مرة أخرى."
             )
             engine = _reinit_paddleocr_engine(
                 enable_mkldnn=not _PADDLEOCR_MKLDNN_FALLBACK_DONE
@@ -281,35 +390,52 @@ def _current_rss_mb() -> float | None:
         return None
 
 
-def ocr_extract_english_sync(raw_bytes: bytes) -> list[dict]:
-    """يُشغَّل عبر asyncio.to_thread. يُرجع صناديق نص خام بلا فرز/تجميع بعد:
-    كل عنصر {bbox: [xmin,ymin,xmax,ymax], text: str, confidence: float}.
-    [بند 2] الصورة تُقسَّم أولًا لبلاطات ثابتة الشكل (_tile_image_fixed_shape)
-    بدل تمرير الصفحة كاملة بارتفاعها المتفاوت — كل بلاطة تُكتَب كملف مؤقت
-    منفصل ويُمرَّر مساره لـpredict() (يطابق مسار الاستخدام الموثَّق رسميًا
-    بـPaddleOCR 3.x)، وإحداثيات y لكل صندوق ناتج تُعوَّض بـy_offset البلاطة
-    لتبقى الإحداثيات النهائية بمرجعية الصفحة الأصلية الكاملة كما كانت."""
+def ocr_extract_english_sync(raw_bytes: bytes, page_index: int | None = None) -> list[dict]:
+    """يُشغَّل عبر _run_on_ocr_thread (خيط OCR المخصَّص). يُرجع صناديق نص خام
+    بلا فرز/تجميع بعد: كل عنصر {bbox: [xmin,ymin,xmax,ymax], text: str,
+    confidence: float}. [بند 2] الصورة تُقسَّم أولًا لبلاطات ثابتة الشكل
+    (_tile_image_fixed_shape) بدل تمرير الصفحة كاملة بارتفاعها المتفاوت.
+    [بند 4] كل بلاطات الصفحة تُكتَب كملفات مؤقتة أولًا، ثم تُمرَّر كقائمة
+    مسارات واحدة لـpredict() بنداء واحد فقط (بدل نداء منفصل لكل بلاطة) —
+    راجع توثيق _predict_with_engine_fallback. إحداثيات y لكل صندوق ناتج
+    تُعوَّض بـy_offset البلاطة المطابقة (results[i] يقابل tiles[i] بنفس
+    الترتيب) لتبقى الإحداثيات النهائية بمرجعية الصفحة الأصلية الكاملة كما
+    كانت. page_index (اختياري، لأغراض التشخيص فقط) يُمرَّر لـ
+    _predict_with_engine_fallback مع أبعاد الصفحة الفعلية — يظهر تلقائيًا
+    برسائل الفشل بلا أي تغيير بمنطق الاستخراج نفسه."""
     img = Image.open(BytesIO(raw_bytes)).convert("RGB")
+    page_width, page_height = img.size
     tiles = _tile_image_fixed_shape(img)
+    tile_count = len(tiles)
 
-    all_items: list[dict] = []
-    for tile_img, y_offset in tiles:
-        tmp_path = None
-        try:
+    tmp_paths: list[str] = []
+    try:
+        for tile_img, _y_offset in tiles:
             with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
                 tmp_path = tmp.name
             tile_img.save(tmp_path, format="PNG")
-            result = _predict_with_engine_fallback(tmp_path)
-        finally:
-            if tmp_path:
-                try:
-                    os.remove(tmp_path)
-                except OSError:
-                    pass
+            tmp_paths.append(tmp_path)
 
-        if not result:
-            continue
-        res = result[0]
+        diag = {
+            "page_index": page_index,
+            "page_width": page_width,
+            "page_height": page_height,
+            "tile_count": tile_count,
+            "tile_shape": f"{tiles[0][0].width}×{tiles[0][0].height}" if tiles else "-",
+        }
+        results = _predict_with_engine_fallback(tmp_paths, diag)
+    finally:
+        for p in tmp_paths:
+            try:
+                os.remove(p)
+            except OSError:
+                pass
+
+    if not results:
+        return []
+
+    all_items: list[dict] = []
+    for (tile_img, y_offset), res in zip(tiles, results):
         texts = res.get("rec_texts") or []
         scores = res.get("rec_scores") or []
         boxes = res.get("rec_boxes")
@@ -390,13 +516,84 @@ def format_ocr_page_text(page_num: int, sentences: list[dict]) -> str:
     return "\n".join(lines)
 
 
+async def _ocr_handle_page(
+    label: str,
+    page_num: int,
+    raw: bytes | None,
+    reason: str | None,
+    total_pages,
+    page_texts: list,
+    page_json: list,
+    pages_since_rebuild: int,
+) -> int:
+    """[جديد — بند (1)] معالجة OCR لصفحة واحدة جاهزة (raw bytes مُنزَّلة
+    مسبقًا)، مُستخرَجة كدالة مشتركة يستدعيها كل من مسار HTTP متعدد الفصول
+    (_ocr_http_consumer) ومسار المتصفح أحادي الفصل (ocr_process_chapter) —
+    نفس منطق المعالجة والتشخيص واحد فقط، لا نسختان منفصلتان قد تنحرفان.
+    يُستدعى دومًا بترتيب page_num الصحيح تصاعديًا (يضمنه كل من المنتِج
+    الواحد لكل فصل ونظام FIFO للطابور)، فـpage_texts.append/page_json.append
+    تبقيان بالترتيب الصحيح بلا حاجة لفرز لاحق. pages_since_rebuild يُمرَّر
+    ذهابًا وإيابًا صراحةً (بدل متغير عمومي) — بمسار HTTP يُمرَّره المستدعي
+    كعدّاد **عام لكل التشغيلة** (لا لكل فصل) لأن إعادة البناء الوقائي [بند
+    3] مرتبطة بتراكم الذاكرة الأصلية لمحرك OCR نفسه (خيط واحد مشترك بين كل
+    الفصول الآن)، لا بحدود فصل بعينه — تغيير مقصود عن السلوك الأصلي (كان
+    يُصفَّر كل فصل جديد) أصبح غير متماسك بعد أن صار الاستهلاك متداخلًا بين
+    عدة فصول."""
+    if not raw:
+        print(f"  ⚠️ فشل تحميل {label} صفحة {page_num}: {reason}")
+        return pages_since_rebuild
+
+    rss_before = _current_rss_mb()
+    try:
+        items = await _run_on_ocr_thread(ocr_extract_english_sync, raw, page_num)
+        sentences = group_ocr_lines_into_sentences(items)
+        page_texts.append(format_ocr_page_text(page_num, sentences))
+        page_json.append({"page": page_num, "sentences": sentences})
+        sfx_count = sum(1 for s in sentences if s["sfx_suspect"])
+        rss_after = _current_rss_mb()
+        rss_note = (
+            f" | RSS: {rss_before:.0f}→{rss_after:.0f}MB (Δ{rss_after - rss_before:+.0f})"
+            if rss_before is not None and rss_after is not None else ""
+        )
+        print(f"  ✅ {label} صفحة {page_num}/{total_pages} — {len(sentences)} بند نص ({sfx_count} مُعلَّم [sfx?]){rss_note}")
+    except Exception as e:
+        rss_after = _current_rss_mb()
+        rss_note = f" | RSS عند الفشل: {rss_after:.0f}MB" if rss_after is not None else ""
+        print(f"  ⚠️ فشل OCR لـ{label} صفحة {page_num}: {e}{rss_note}")
+
+    # [بند 3] إعادة بناء وقائية دورية — تحرّر أي تراكم ذاكرة أصلية متبقٍ
+    # بصرف النظر عن نجاح/فشل الصفحة الحالية، فتُحتسَب الصفحات الفاشلة أيضًا
+    # ضمن العداد (نفس تكلفة الاستدعاء على المحرك).
+    pages_since_rebuild += 1
+    if pages_since_rebuild >= OCR_ENGINE_REBUILD_EVERY_N_PAGES:
+        print(
+            f"  🔄 [OCR وقائي] إعادة بناء محرك PaddleOCR بعد "
+            f"{pages_since_rebuild} صفحة (تحرير ذاكرة أصلية دوري، بند 3)"
+        )
+        await _run_on_ocr_thread(
+            _reinit_paddleocr_engine, not _PADDLEOCR_MKLDNN_FALLBACK_DONE
+        )
+        pages_since_rebuild = 0
+    return pages_since_rebuild
+
+
 async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int, profile: dict) -> dict | None:
     """مرآة لـprocess_chapter لكن بدل compress_image+حفظ صورة: OCR على raw
     مباشرة (أبدًا على نسخة مضغوطة). يعيد استخدام get_chapter_images كاملة —
-    نفس بروفايل الموقع ونفس منطق إعادة المحاولة المستخدم بالإنتاج الفعلي."""
+    نفس بروفايل الموقع ونفس منطق إعادة المحاولة المستخدم بالإنتاج الفعلي.
+    [جديد — بند (1)، مسار المتصفح] يُستخدَم فقط عندما fetch_mode != "http"
+    (المتصفح يبقى تسلسليًا بين الفصول — يطابق قيد process_chapter بمسار
+    الإنتاج نفسه لهذا المسار، لا Semaphore/gather هناك أيضًا لمعالجة
+    الفصول بالمتصفح). لكن **داخل** الفصل الواحد: منتِج يُنزِّل الصفحات
+    بالتتابع (يحترم IMG_FETCH_DELAY_MS كما كان) بينما مستهلك مستقل (على
+    خيط asyncio نفسه، لا خيط OS إضافي) يستهلك عبر asyncio.Queue — بينما
+    المستهلك ينتظر predict() على خيط OCR المخصَّص، المنتِج يواصل تحميل
+    الصفحة التالية على حلقة asyncio الرئيسية، فيتداخل زمن الشبكة مع زمن
+    OCR بدل انتظار تسلسلي صرف."""
     print(f"[{index}/{total}] 🔤 تجربة OCR: {chapter_url} — بروفايل: {profile['label']}")
 
     context, image_urls, fail_reason = await get_chapter_images(browser, chapter_url, profile)
+
     if not image_urls:
         print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
         return None
@@ -411,50 +608,32 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
 
     page_texts: list[str] = []
     page_json: list[dict] = []
-    # [بند 3] عداد صفحات منذ آخر إعادة بناء للمحرك — يُصفَّر كل فصل جديد
-    # (الدالة نفسها تُستدعى مرة لكل فصل)، لا عبر التشغيلة كاملة.
-    pages_since_rebuild = 0
-    for i, img_url in enumerate(image_urls, start=1):
-        raw, reason = await download(img_url)
-        if not raw:
-            print(f"  ⚠️ فشل تحميل صفحة {i} للـOCR: {reason}")
-            continue
-        # [بند 5] قياس RSS فعلي قبل/بعد كل صفحة — تحقق تجريبي من فرضية
-        # تراكم الذاكرة، لا تخمين. None بصمت لو تعذّر القياس (بيئة لا تدعم
-        # /proc أو resource) كي لا يُعطَّل OCR نفسه بسبب فشل قياس جانبي.
-        rss_before = _current_rss_mb()
-        try:
-            items = await asyncio.to_thread(ocr_extract_english_sync, raw)
-            sentences = group_ocr_lines_into_sentences(items)
-            page_texts.append(format_ocr_page_text(i, sentences))
-            page_json.append({"page": i, "sentences": sentences})
-            sfx_count = sum(1 for s in sentences if s["sfx_suspect"])
-            rss_after = _current_rss_mb()
-            rss_note = (
-                f" | RSS: {rss_before:.0f}→{rss_after:.0f}MB (Δ{rss_after - rss_before:+.0f})"
-                if rss_before is not None and rss_after is not None else ""
-            )
-            print(f"  ✅ صفحة {i}/{len(image_urls)} — {len(sentences)} بند نص ({sfx_count} مُعلَّم [sfx?]){rss_note}")
-        except Exception as e:
-            rss_after = _current_rss_mb()
-            rss_note = f" | RSS عند الفشل: {rss_after:.0f}MB" if rss_after is not None else ""
-            print(f"  ⚠️ فشل OCR للصفحة {i}: {e}{rss_note}")
+    total_pages = len(image_urls)
+    label = f"[{index}/{total}]"
 
-        # [بند 3] إعادة بناء وقائية دورية — تحرّر أي تراكم ذاكرة أصلية
-        # متبقٍ بصرف النظر عن نجاح/فشل الصفحة الحالية، فتُحتسَب الصفحات
-        # الفاشلة أيضًا ضمن العداد (نفس تكلفة الاستدعاء على المحرك).
-        pages_since_rebuild += 1
-        if pages_since_rebuild >= OCR_ENGINE_REBUILD_EVERY_N_PAGES:
-            print(
-                f"  🔄 [OCR وقائي] إعادة بناء محرك PaddleOCR بعد "
-                f"{pages_since_rebuild} صفحة (تحرير ذاكرة أصلية دوري، بند 3)"
-            )
-            await asyncio.to_thread(
-                _reinit_paddleocr_engine, not _PADDLEOCR_MKLDNN_FALLBACK_DONE
-            )
-            pages_since_rebuild = 0
+    queue: asyncio.Queue = asyncio.Queue(maxsize=OCR_DOWNLOAD_QUEUE_SIZE)
 
-        await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+    async def producer():
+        for i, img_url in enumerate(image_urls, start=1):
+            raw, reason = await download(img_url)
+            await queue.put((i, raw, reason))
+            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+
+    async def consumer():
+        pages_since_rebuild = 0
+        for _ in range(total_pages):
+            i, raw, reason = await queue.get()
+            pages_since_rebuild = await _ocr_handle_page(
+                label, i, raw, reason, total_pages, page_texts, page_json, pages_since_rebuild,
+            )
+
+    producer_task = asyncio.create_task(producer())
+    await consumer()
+    # المستهلك استهلك بالضبط total_pages عنصر، فالمنتِج انتهى فعليًا هنا —
+    # هذا await لا ينتظر عمليًا، فقط يُعيد رفع أي استثناء غير متوقَّع من
+    # المنتِج (مثلًا تحميل صورة رمى استثناءً لم يُلتقَط داخل download نفسه)
+    # بدل ابتلاعه صامتًا بمهمة خلفية منسية.
+    await producer_task
 
     if context:
         await context.close()
@@ -472,6 +651,115 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
     }
 
 
+async def _ocr_http_chapter_producer(
+    sem: asyncio.Semaphore, queue: asyncio.Queue, index: int, url: str, total: int, profile: dict,
+) -> None:
+    """[جديد — بند (1)، مسار HTTP] منتِج واحد لكل فصل، مقيَّد بـHTTP_CONCURRENCY
+    عبر sem (نفس نمط process_chapter بمسار الإنتاج الرئيسي — راجع
+    asyncio.Semaphore(HTTP_CONCURRENCY) هناك). يجلب قائمة صور الفصل أولًا،
+    ثم يُنزِّل صفحاته بالتتابع (يحترم IMG_FETCH_DELAY_MS كسابقًا) ويدفع كل
+    صفحة جاهزة فورًا لطابور OCR المشترك بدل انتظار استهلاكها — عدة منتِجين
+    (حتى HTTP_CONCURRENCY فصل) يعملون بالتوازي فعليًا على حلقة asyncio
+    الواحدة. get_chapter_images بمسار HTTP لا تُرجع context أبدًا (مؤكَّد من
+    كود compress_chapters.py — يُعيد None صراحة لهذا المسار)، فلا حاجة
+    لإغلاقه هنا خلافًا لمسار المتصفح."""
+    async with sem:
+        try:
+            _context, image_urls, fail_reason = await get_chapter_images(None, url, profile)
+        except Exception as e:
+            print(f"[{index}/{total}] ❌ خطأ غير متوقع أثناء جلب صور الفصل: {e}")
+            await queue.put(("ERROR", index, None, None))
+            return
+
+        if not image_urls:
+            print(f"[{index}/{total}] ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
+            await queue.put(("ERROR", index, None, None))
+            return
+
+        manga_id, chapter_num = manga_slug_from_url(url)
+        print(f"[{index}/{total}] 🔤 تجربة OCR: {url} — بروفايل: {profile['label']} ({len(image_urls)} صفحة)")
+
+        for i, img_url in enumerate(image_urls, start=1):
+            raw, reason = await fetch_image_bytes_http(img_url, url)
+            await queue.put(("PAGE", index, i, (raw, reason)))
+            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+
+        await queue.put(("DONE", index, len(image_urls), {
+            "manga_id": manga_id,
+            "chapter_num": chapter_num,
+            "source_url": url,
+            "chapter_slug": f"{manga_id}__ch-{chapter_num}",
+        }))
+
+
+async def _ocr_http_consumer(queue: asyncio.Queue, total_chapters: int) -> list:
+    """[جديد — بند (1)، مسار HTTP] المستهلك الوحيد المشترك بين كل الفصول —
+    يسحب أي عنصر جاهز فور توفره بصرف النظر عن الفصل الذي جاء منه، ويُشغِّل
+    OCR حصرًا على خيط PaddleOCR المخصَّص (_run_on_ocr_thread، بلا تغيير على
+    إصلاح أمان الخيوط). بينما هذا الاستدعاء ينتظر predict() على الخيط
+    المخصَّص، منتِجو الفصول الأخرى (حتى HTTP_CONCURRENCY بالتوازي) يواصلون
+    التحميل على حلقة asyncio الرئيسية — زمن الشبكة الكلي لكل الفصول يتداخل
+    مع زمن OCR بدل أن يُضاف إليه تسلسليًا. ترتيب صفحات كل فصل على حدة
+    مضمون رغم التداخل بين الفصول: كل منتِج فصل يدفع صفحاته للطابور المشترك
+    بترتيب تصاعدي، وطابور FIFO يحافظ على الترتيب النسبي لعناصر أي مصدر
+    واحد حتى مع تداخل مصادر أخرى بينها. ينتهي بالضبط عندما يصل DONE/ERROR
+    من كل فصل — وبما أن كل منتِج يدفع DONE/ERROR بعد كل صفحاته دومًا (لا
+    قبلها)، وصول هذه الإشارة لآخر فصل متبقٍ يعني حتمًا استهلاك كل صفحاته
+    فعليًا قبلها."""
+    chapters: dict[int, dict] = {}
+    finalized: dict[int, dict | None] = {}
+    remaining_producers = total_chapters
+    pages_since_rebuild = 0  # عدّاد عام للتشغيلة كاملة — راجع تعليق _ocr_handle_page
+
+    def acc(idx: int) -> dict:
+        return chapters.setdefault(idx, {
+            "page_texts": [], "page_json": [], "meta": None, "total_pages": None, "n_done": 0,
+        })
+
+    def maybe_finalize(idx: int) -> None:
+        c = chapters.get(idx)
+        if c is None or c["meta"] is None or c["total_pages"] is None:
+            return
+        if c["n_done"] < c["total_pages"]:
+            return
+        if c["page_texts"]:
+            finalized[idx] = {
+                **c["meta"],
+                "text": "\n\n".join(c["page_texts"]),
+                "pages": c["page_json"],
+            }
+        else:
+            finalized[idx] = None
+        del chapters[idx]
+
+    while remaining_producers > 0:
+        kind, index, a, b = await queue.get()
+        if kind == "ERROR":
+            remaining_producers -= 1
+            finalized.setdefault(index, None)
+            continue
+        if kind == "DONE":
+            c = acc(index)
+            c["total_pages"] = a
+            c["meta"] = b
+            remaining_producers -= 1
+            maybe_finalize(index)
+            continue
+        # kind == "PAGE"
+        c = acc(index)
+        page_num = a
+        raw, reason = b
+        label = f"فصل#{index}"
+        pages_since_rebuild = await _ocr_handle_page(
+            label, page_num, raw, reason, c["total_pages"] or "?",
+            c["page_texts"], c["page_json"], pages_since_rebuild,
+        )
+        c["n_done"] += 1
+        maybe_finalize(index)
+
+    return [finalized[i] for i in sorted(finalized) if finalized[i] is not None]
+
+
 async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     print("🔤 المرحلة ١: تجربة استخراج النص الإنجليزي (OCR) — لن يُضغط أو يُحفَظ أي صورة، النتيجة نص+JSON فقط")
     profile = get_profile()
@@ -484,27 +772,43 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     total = len(chapter_urls)
     results: list = []
 
-    async def run_one(browser, i, url):
-        try:
-            return await ocr_process_chapter(browser, url, i, total, profile)
-        except Exception as e:
-            print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء تجربة OCR: {e}")
-            return None
-
-    if fetch_mode == "http":
-        print("🚀 بروفايل HTTP مباشر — لن يُطلَق متصفح Chromium لهذه التشغيلة")
-        for i, url in enumerate(chapter_urls, start=1):
-            r = await run_one(None, i, url)
-            if r:
-                results.append(r)
-    else:
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-            for i, url in enumerate(chapter_urls, start=1):
-                r = await run_one(browser, i, url)
-                if r:
-                    results.append(r)
-            await browser.close()
+    try:
+        if fetch_mode == "http":
+            # [بند 1] منتِجون متعددون (فصول، مقيَّدون بـHTTP_CONCURRENCY —
+            # نفس نمط مسار الإنتاج الرئيسي) + مستهلك OCR واحد مشترك، عوضًا
+            # عن التسلسل الكامل السابق (فصل، ثم التالي، بلا أي تزامن).
+            print("🚀 بروفايل HTTP مباشر — لن يُطلَق متصفح Chromium لهذه التشغيلة")
+            print(
+                f"⚙️ [بند 1] تحميل حتى {HTTP_CONCURRENCY} فصل بالتوازي، "
+                f"مستهلك OCR واحد مشترك (سعة طابور: {OCR_DOWNLOAD_QUEUE_SIZE})"
+            )
+            queue: asyncio.Queue = asyncio.Queue(maxsize=OCR_DOWNLOAD_QUEUE_SIZE)
+            sem = asyncio.Semaphore(HTTP_CONCURRENCY)
+            producer_tasks = [
+                asyncio.create_task(_ocr_http_chapter_producer(sem, queue, i, url, total, profile))
+                for i, url in enumerate(chapter_urls, start=1)
+            ]
+            consumer_task = asyncio.create_task(_ocr_http_consumer(queue, total))
+            await asyncio.gather(*producer_tasks)
+            results = await consumer_task
+        else:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+                for i, url in enumerate(chapter_urls, start=1):
+                    try:
+                        r = await ocr_process_chapter(browser, url, i, total, profile)
+                    except Exception as e:
+                        print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء تجربة OCR: {e}")
+                        r = None
+                    if r:
+                        results.append(r)
+                await browser.close()
+    finally:
+        # [جديد] إغلاق خيط OCR المخصَّص فور انتهاء آخر استخدام فعلي له —
+        # كل معالجة الفصول (وبالتالي كل نداءات predict) انتهت هنا، وما
+        # تبقى (كتابة ملفات/zip/دفع git) لا علاقة له بمحرك OCR إطلاقًا.
+        # finally يضمن الإغلاق حتى لو استُثنِي خطأ غير متوقَّع.
+        _shutdown_ocr_thread()
 
     files_written: list[Path] = []
     for r in results:
@@ -551,5 +855,3 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         print(f"🔗 أرشيف zip خاص بهذه التشغيلة فقط (نص+JSON لكل فصل): {OUTPUT_DIR}/{run_zip_relpath}")
     print("⚠️ تذكير: هذه تجربة — راجع البنود المُعلَّمة [sfx?] والتجميع قبل اعتماد الناتج نهائيًا")
     print("=" * 50)
-
-
