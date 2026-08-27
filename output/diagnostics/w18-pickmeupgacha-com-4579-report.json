@@ -1,0 +1,361 @@
+{
+  "url": "https://w18.pickmeupgacha.com/pick-me-up-infinite-gacha-chapter-1/",
+  "tls_and_server_info": {
+    "server_ip": "104.21.31.239",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "pickmeupgacha.com",
+    "tls_not_after": "Oct 25 04:17:15 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "172.172.157.2",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Dulles Town Center",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a31805dc4dd8b154-IAD",
+      "cf-cache-status": "DYNAMIC",
+      "content-type": "text/html"
+    },
+    "challenge_detected": false,
+    "protection_category": "none",
+    "protection_signatures": [],
+    "images_via_noscript": 11,
+    "images_via_data_attr": 11,
+    "images_via_plain_src": 13,
+    "extracted_image_count": 11,
+    "extracted_sample_urls": [
+      "https://abyssrift.com/Gacha/VOUOS9y.webp",
+      "https://abyssrift.com/Gacha/Zd9YapT.webp",
+      "https://abyssrift.com/Gacha/pHAFfog.webp"
+    ],
+    "sample_image_urls": [
+      "https://abyssrift.com/Gacha/VOUOS9y.webp",
+      "https://abyssrift.com/Gacha/Zd9YapT.webp",
+      "https://abyssrift.com/Gacha/pHAFfog.webp"
+    ],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.26
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "Pick Me Up, Infinite Gacha Chapter 1 – Pick Me Up Infinite Gacha",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 24,
+    "images_after_wait": 24,
+    "images_after_scroll": 24,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 24,
+    "widget_excluded_count": 24,
+    "widget_excluded_samples": [
+      "...ize-large    elementor-image  elementor-widget-container  elementor-element elementor-...",
+      "...lazy-loaded      elementor-widget-container  elementor-element elementor-...",
+      "...lazy-hidden      elementor-widget-container  elementor-element elementor-..."
+    ],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "abyssrift.com": 12,
+      "w18.pickmeupgacha.com": 2,
+      "star-embracingswordmaster.com": 1,
+      "myst-might-mayhem.com": 1,
+      "regressingknight.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/w18-pickmeupgacha-com-4579-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2,
+      "cookie_names_reused": [
+        "_ga",
+        "_ga_G87QN92031"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 24,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.79,
+    "navigation_timing": {
+      "ttfb_ms": 236,
+      "dom_content_loaded_ms": 783,
+      "load_event_ms": null,
+      "transfer_size_bytes": 10925
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 72.07,
+    "total_probe_elapsed_sec": 75.02,
+    "scroll_rounds_completed": 185,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a31805de2fc6064d-IAD",
+      "content-encoding": "zstd",
+      "content-type": "text/html",
+      "date": "Thu, 27 Aug 2026 03:34:52 GMT",
+      "last-modified": "Wed, 26 Aug 2026 13:25:26 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=z9zTvD6M%2FI0VxzoA5cdG9AguOzGVG7gKxwGhTw4cU5H4x00IA%2B2uzo91dXkHo8%2FTCHAwaCIuN7Gy8ex4pZ2uM4IKl%2BvBAk%2FIZrpIavBM0nQNIjxaLu6GnW9sLpfoIxIz5is9P47xKLQ%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=18,cfOrigin;dur=209",
+      "vary": "Accept-Encoding"
+    },
+    "all_third_party_domains": [
+      "100regression.com",
+      "abyssrift.com",
+      "cdn.jsdelivr.net",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "greatmagereturns.com",
+      "myst-might-mayhem.com",
+      "overgeared.club",
+      "questionsthinaccept.com",
+      "readnanomachine.com",
+      "regressingknight.com",
+      "secondliferanker.com",
+      "star-embracingswordmaster.com",
+      "static.cloudflareinsights.com",
+      "swordhound.com",
+      "swordkingstory.com",
+      "w111.overgeared.club",
+      "w111.swordkingstory.com",
+      "w12.regressingknight.com",
+      "w25.swordhound.com",
+      "w3.greatmagereturns.com",
+      "w5.100regression.com",
+      "w5.myst-might-mayhem.com",
+      "w71.readnanomachine.com",
+      "w81.secondliferanker.com",
+      "www.google-analytics.com",
+      "www.googletagmanager.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 24
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "Pick Me Up, Infinite Gacha Chapter 1 – Pick Me Up Infinite Gacha",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 24,
+    "images_after_wait": 24,
+    "images_after_scroll": 24,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 24,
+    "widget_excluded_count": 24,
+    "widget_excluded_samples": [
+      "...ize-large    elementor-image  elementor-widget-container  elementor-element elementor-...",
+      "...lazy-loaded      elementor-widget-container  elementor-element elementor-...",
+      "...lazy-hidden      elementor-widget-container  elementor-element elementor-..."
+    ],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "abyssrift.com": 12,
+      "w18.pickmeupgacha.com": 2,
+      "star-embracingswordmaster.com": 1,
+      "myst-might-mayhem.com": 1,
+      "regressingknight.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/w18-pickmeupgacha-com-4579-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2,
+      "cookie_names_reused": [
+        "_ga",
+        "_ga_G87QN92031"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 24,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.5,
+    "navigation_timing": {
+      "ttfb_ms": 225,
+      "dom_content_loaded_ms": 501,
+      "load_event_ms": null,
+      "transfer_size_bytes": 10925
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 71.77,
+    "total_probe_elapsed_sec": 74.42,
+    "scroll_rounds_completed": 187,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a31807c69cb9979d-IAD",
+      "content-encoding": "zstd",
+      "content-type": "text/html",
+      "date": "Thu, 27 Aug 2026 03:36:10 GMT",
+      "last-modified": "Wed, 26 Aug 2026 13:25:26 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5DFuugfcXRS3o%2BDJcc5tM%2F5wNbBgkZKrkN4AwoWeWEApyWOR%2F%2FKhHASMqKz5maZf69SCnp5pM3oSyNtsvQNucUCUbq%2FwpmnQ2OV8MgHIjCsI3agmD3zv%2Bc4KHlYv2e0KdUQTJcwxTSI%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=207",
+      "vary": "Accept-Encoding"
+    },
+    "all_third_party_domains": [
+      "100regression.com",
+      "abyssrift.com",
+      "cdn.jsdelivr.net",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "greatmagereturns.com",
+      "myst-might-mayhem.com",
+      "overgeared.club",
+      "questionsthinaccept.com",
+      "readnanomachine.com",
+      "regressingknight.com",
+      "secondliferanker.com",
+      "star-embracingswordmaster.com",
+      "static.cloudflareinsights.com",
+      "swordhound.com",
+      "swordkingstory.com",
+      "w111.overgeared.club",
+      "w111.swordkingstory.com",
+      "w12.regressingknight.com",
+      "w25.swordhound.com",
+      "w3.greatmagereturns.com",
+      "w5.100regression.com",
+      "w5.myst-might-mayhem.com",
+      "w71.readnanomachine.com",
+      "w81.secondliferanker.com",
+      "www.google-analytics.com",
+      "www.googletagmanager.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 24
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://w18.pickmeupgacha.com/pick-me-up-infinite-gacha-chapter-1/",
+    "requests_sent": 4,
+    "elapsed_sec": 0.9,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "diagnostic_run_files": {
+    "report": "diagnostics/w18-pickmeupgacha-com-4579-report.json",
+    "screenshots": [
+      "diagnostics/w18-pickmeupgacha-com-4579-screenshot.png",
+      "diagnostics/w18-pickmeupgacha-com-4579-run2-screenshot.png"
+    ]
+  }
+}
