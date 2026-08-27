@@ -192,6 +192,18 @@ OCR_DOWNLOAD_QUEUE_SIZE = int(
     os.environ.get("OCR_DOWNLOAD_QUEUE_SIZE", str(max(2, HTTP_CONCURRENCY * 2)))
 )
 
+# [جديد — بحث فعلي بتوثيق PaddleOCR الرسمي] عدد خيوط حساب CPU للمحرك
+# (config.set_cpu_math_library_num_threads داخليًا) — كان غير مضبوط صراحةً
+# سابقًا (يعتمد على افتراضي المكتبة الداخلي غير الموثَّق هنا رسميًا، بعض
+# المصادر المجتمعية تذكر 10). قائمة تحسين CPU الرسمية بتوثيق PaddleOCR
+# تنصّ صراحةً: "Set optimal threads: Match physical core count". القيمة
+# الافتراضية 2 تطابق عدد الأنوية الفعلي لرانر GitHub Actions لمستودع خاص
+# (مؤكَّد ببحث سابق بهذا المشروع: Tenki، مواصفات رانرات 2026). يُطبَّق فقط
+# لأن محرك الاستدلال الافتراضي هنا هو paddle_static (لم نحدد engine=
+# صراحة) — التوثيق الرسمي يذكر أن cpu_threads لا يُطبَّق مع محركات بديلة
+# (onnxruntime/transformers)، غير مستخدَمة هنا أصلًا.
+OCR_CPU_THREADS = int(os.environ.get("OCR_CPU_THREADS", "2"))
+
 
 def _build_paddleocr_engine(enable_mkldnn: bool):
     from paddleocr import PaddleOCR
@@ -207,14 +219,33 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
     # رام على إصدارات 3.x الحديثة — رانر GitHub Actions القياسي يملك 7GB
     # فقط، فتعطيله دومًا يعني استبدال خطأ فوري بخطأ OOM صامت أسوأ. يُعطَّل
     # فقط كخطوة احتياطية لمرة واحدة عند حدوث الخلل فعليًا (انظر أدناه).
-    return PaddleOCR(
+    # [جديد] cpu_threads=OCR_CPU_THREADS — راجع تعليق الثابت أعلاه.
+    rss_before = _current_rss_mb()
+    engine = PaddleOCR(
         lang="en",
         use_doc_orientation_classify=False,
         use_doc_unwarping=False,
         use_textline_orientation=False,
         enable_mkldnn=enable_mkldnn,
         mkldnn_cache_capacity=OCR_MKLDNN_CACHE_CAPACITY,
+        cpu_threads=OCR_CPU_THREADS,
     )
+    # [جديد — قياس فعلي لا تخمين] يُسجَّل بكل بناء/إعادة بناء (البناء
+    # الأول + كل إعادة بناء دورية بند 3) — عدة عينات عبر التشغيلة الواحدة
+    # بدل عينة واحدة فقط. الهدف: معرفة البصمة الفعلية لذاكرة محرك واحد
+    # بـenable_mkldnn=True تحديدًا (القيمة المستخدَمة فعليًا بهذا المشروع)
+    # — غير موثَّقة بأي مصدر رسمي وُجد بالبحث (فقط رقم enable_mkldnn=False
+    # ~43GB موثَّق بـissue #17955). هذا الرقم مطلوب صراحةً قبل الحكم بأمان
+    # تشغيل محركين بعمليتين منفصلتين (multiprocessing) لاستغلال النواة
+    # الثانية فعليًا — قرار مؤجَّل حتى تتوفر هذه القياسات من تشغيلة حقيقية.
+    rss_after = _current_rss_mb()
+    if rss_before is not None and rss_after is not None:
+        print(
+            f"  📏 [قياس RSS — بناء محرك OCR] {rss_before:.0f}MB → {rss_after:.0f}MB "
+            f"(Δ{rss_after - rss_before:+.0f}MB) | mkldnn={enable_mkldnn} "
+            f"cpu_threads={OCR_CPU_THREADS} — يُستخدَم لاحقًا لتقييم أمان تشغيل عمليتين OCR متوازيتين"
+        )
+    return engine
 
 
 def _get_paddleocr_engine():
@@ -470,16 +501,43 @@ def _bbox_left(bbox) -> float:
 OCR_CLUSTER_GAP_RATIO = float(os.environ.get("OCR_CLUSTER_GAP_RATIO", "0.6"))
 # فرق أفقي أقصى (بكسل) بين بداية سطرين ليُعتبَرا نفس العمود/الفقاعة تقريبًا
 OCR_CLUSTER_X_TOLERANCE = int(os.environ.get("OCR_CLUSTER_X_TOLERANCE", "400"))
-# صناديق بأقل من هذا عدد أحرف أبجدية تُعلَّم كمرشح مؤثر صوتي/رمز — لا تُحذَف،
-# فقط تُعلَّم [sfx?] ليراجعها المستخدم (حذف صامت = فقدان بيانات غير مقبول)
+# [مُعدَّل — بطلب صريح لاحق] بنود مُجمَّعة (بعد دمج الأسطر المتجاورة بنفس
+# البند بواسطة group_ocr_lines_into_sentences) بأقل من هذا عدد أحرف أبجدية
+# ضمن نص البند المُجمَّع كاملًا تُعتبَر مؤثر صوتي/رمز وتُستبعَد نهائيًا (نص
+# وJSON معًا) — لا وسم [sfx?]. التصميم الأسبق (وسم بلا حذف، "حذف صامت =
+# فقدان بيانات غير مقبول") استُبدِل عمدًا بقرار صريح من المستخدم. الفلترة
+# تعمل بعد التجميع (على نص البند الكامل المُدمَج)، لا على كل صندوق خام
+# منفرد قبل الدمج — بقرار صريح لاحق: فلترة الصندوق المنفرد قبل الدمج كانت
+# تُخاطر بإسقاط كلمة قصيرة حقيقية قبل أن تُتاح لها فرصة الاندماج مع بقية
+# جملتها. راجع _filter_sfx_sentences أدناه.
 OCR_SFX_MIN_LETTERS = int(os.environ.get("OCR_SFX_MIN_LETTERS", "3"))
+
+
+def _filter_sfx_sentences(sentences: list[dict]) -> tuple[list[dict], int]:
+    """[مُعدَّل] يُستبعد كل بند مُجمَّع (بعد group_ocr_lines_into_sentences)
+    إن كان عدد الأحرف الأبجدية بنص البند الكامل (بعد دمج كل أسطره) أقل من
+    OCR_SFX_MIN_LETTERS — يُعامَل كمؤثر صوتي/رمز، لا نص حقيقي. يعمل هنا
+    (بعد التجميع) لا قبله، كي لا يُسقط كلمة قصيرة حقيقية قبل أن تندمج مع
+    بقية جملتها ضمن نفس البند. يُعيد (البنود المتبقية، عدد المُستبعَد) —
+    العدد يُستخدَم لطباعة إحصاء فقط، لا لأي منطق لاحق."""
+    kept: list[dict] = []
+    dropped = 0
+    for s in sentences:
+        letters = sum(c.isalpha() for c in s["text"])
+        if letters < OCR_SFX_MIN_LETTERS:
+            dropped += 1
+        else:
+            kept.append(s)
+    return kept, dropped
 
 
 def group_ocr_lines_into_sentences(items: list[dict]) -> list[dict]:
     """يفرز الصناديق (أعلى فأسفل أولًا، يسار فيمين لحل تعادل نفس السطر تقريبًا
     — مناسب لشريط ويبتون عمودي مستمر)، ثم يُجمِّع الأسطر المتتالية القريبة
     رأسيًا والمتقاربة أفقيًا كبند واحد. كل بند ناتج:
-    {text: str, confidence: float (أدنى ثقة ضمن البند), sfx_suspect: bool}."""
+    {text: str, confidence: float (أدنى ثقة ضمن البند)}.
+    [مُعدَّل] لا حقل sfx_suspect هنا — فلترة sfx تتم بعد هذه الدالة عبر
+    _filter_sfx_sentences على نص البند المُجمَّع كاملًا (راجع _ocr_handle_page)."""
     boxes = sorted(items, key=lambda it: (_bbox_top(it["bbox"]), _bbox_left(it["bbox"])))
     groups: list[list[dict]] = []
     for it in boxes:
@@ -499,20 +557,20 @@ def group_ocr_lines_into_sentences(items: list[dict]) -> list[dict]:
     for g in groups:
         text = " ".join(x["text"] for x in g)
         conf = min(x["confidence"] for x in g)
-        letters = sum(c.isalpha() for c in text)
-        sentences.append({"text": text, "confidence": round(conf, 3), "sfx_suspect": letters < OCR_SFX_MIN_LETTERS})
+        sentences.append({"text": text, "confidence": round(conf, 3)})
     return sentences
 
 
 def format_ocr_page_text(page_num: int, sentences: list[dict]) -> str:
-    """نفس بنية ملف الترجمة النموذجي المرجعي: 'Page NNN' ثم 'NNN-M. <text>'،
-    مع وسم [sfx?] بدل حذف صامت لما يُشتبه أنه مؤثر صوتي/رمز."""
+    """نفس بنية ملف الترجمة النموذجي المرجعي: 'Page NNN' ثم 'NNN-M. <text>'.
+    [مُعدَّل] لا وسم [sfx?] — بنود sfx مُستبعَدة بالكامل قبل وصول sentences
+    هنا (راجع _filter_sfx_sentences، تُستدعى بعد التجميع مباشرة في
+    _ocr_handle_page)، فالترقيم المتسلسل هنا تلقائيًا بلا فجوات."""
     lines = [f"Page {page_num:03d}"]
     idx = 0
     for s in sentences:
         idx += 1
-        tag = " [sfx?]" if s["sfx_suspect"] else ""
-        lines.append(f"{page_num:03d}-{idx}. {s['text']}{tag}")
+        lines.append(f"{page_num:03d}-{idx}. {s['text']}")
     return "\n".join(lines)
 
 
@@ -547,15 +605,18 @@ async def _ocr_handle_page(
     try:
         items = await _run_on_ocr_thread(ocr_extract_english_sync, raw, page_num)
         sentences = group_ocr_lines_into_sentences(items)
+        # [مُعدَّل] استبعاد بنود sfx بعد التجميع (على نص البند المُدمَج
+        # كاملًا) — لا قبل التجميع، كي لا تُسقَط كلمة قصيرة حقيقية قبل أن
+        # تندمج مع بقية جملتها. راجع _filter_sfx_sentences.
+        sentences, sfx_dropped = _filter_sfx_sentences(sentences)
         page_texts.append(format_ocr_page_text(page_num, sentences))
         page_json.append({"page": page_num, "sentences": sentences})
-        sfx_count = sum(1 for s in sentences if s["sfx_suspect"])
         rss_after = _current_rss_mb()
         rss_note = (
             f" | RSS: {rss_before:.0f}→{rss_after:.0f}MB (Δ{rss_after - rss_before:+.0f})"
             if rss_before is not None and rss_after is not None else ""
         )
-        print(f"  ✅ {label} صفحة {page_num}/{total_pages} — {len(sentences)} بند نص ({sfx_count} مُعلَّم [sfx?]){rss_note}")
+        print(f"  ✅ {label} صفحة {page_num}/{total_pages} — {len(sentences)} بند نص ({sfx_dropped} مُستبعَد [sfx]){rss_note}")
     except Exception as e:
         rss_after = _current_rss_mb()
         rss_note = f" | RSS عند الفشل: {rss_after:.0f}MB" if rss_after is not None else ""
@@ -853,5 +914,5 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     print(f"📁 النتائج محليًا في: {ocr_dir}")
     if zip_ok:
         print(f"🔗 أرشيف zip خاص بهذه التشغيلة فقط (نص+JSON لكل فصل): {OUTPUT_DIR}/{run_zip_relpath}")
-    print("⚠️ تذكير: هذه تجربة — راجع البنود المُعلَّمة [sfx?] والتجميع قبل اعتماد الناتج نهائيًا")
+    print("⚠️ تذكير: هذه تجربة — بنود sfx مُستبعَدة نهائيًا من الناتج (لا وسم للمراجعة)، تحقق من عتبة OCR_SFX_MIN_LETTERS والتجميع قبل اعتماد الناتج نهائيًا")
     print("=" * 50)
