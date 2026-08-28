@@ -298,15 +298,28 @@ jobs:
       # لـrun-<RUN_ID> لو لم يُعثر على أي zip إطلاقًا (فشل كامل مثلًا) —
       # يطابق fallback البايثون نفسه بالضبط، فلا يظهر رابط/اسم أرتيفاكت
       # مكسور بأي حالة.
+      # [إصلاح — التقاط zip تشغيلة سابقة خطأً] مجلد ocr_experiment/runs/
+      # يتراكم عبر التشغيلات (لا حذف لأي zip قديم، والـworktree يسحب فرع
+      # output الموجود فعليًا بكامل تاريخه). البحث السابق (`ls *.zip | head
+      # -n1`، ترتيب أبجدي لا زمني) قد يلتقط zip تشغيلة مختلفة تمامًا لو
+      # تراكم أكثر من ملف بالمجلد. ocr_extraction.py يُضيف الآن RUN_ID
+      # الحالي دومًا كلاحقة ثابتة لاسم الملف (راجع تعليق zip_stem هناك) —
+      # صيغتان ممكنتان فقط بالضبط: "run-<RUN_ID>.zip" (لا عنوان وصفي متاح)
+      # أو "<عنوان وصفي>__run-<RUN_ID>.zip". البحث هنا يطابق هاتين الصيغتين
+      # حصرًا (لا `*.zip` عام) — يستحيل بنيويًا التقاط ملف تشغيلة أخرى، بصرف
+      # النظر عن عدد الأرشيفات المتراكمة بالمجلد.
       - name: تحديد اسم أرشيف zip الفعلي (وضع تجربة OCR)
         id: ocr_zip_name
         if: always() && inputs.ocr_experiment_mode
         run: |
-          zip_path="$(ls "$OUTPUT_WORKTREE"/output/ocr_experiment/runs/*.zip 2>/dev/null | head -n1 || true)"
+          run_suffix="run-${{ github.run_id }}"
+          zip_path="$(ls "$OUTPUT_WORKTREE/output/ocr_experiment/runs/${run_suffix}.zip" \
+                         "$OUTPUT_WORKTREE"/output/ocr_experiment/runs/*"__${run_suffix}.zip" \
+                         2>/dev/null | head -n1 || true)"
           if [ -n "$zip_path" ]; then
             zip_name="$(basename "$zip_path" .zip)"
           else
-            echo "⚠️ لم يُعثر على أي أرشيف zip بمجلد runs — الرجوع للتسمية الافتراضية run-${{ github.run_id }}"
+            echo "⚠️ لم يُعثر على أرشيف zip يطابق هذه التشغيلة (${run_suffix}) بمجلد runs — الرجوع للتسمية الافتراضية run-${{ github.run_id }}"
             zip_name="run-${{ github.run_id }}"
           fi
           echo "zip_name=$zip_name" >> "$GITHUB_OUTPUT"
