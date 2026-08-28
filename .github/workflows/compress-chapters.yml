@@ -181,7 +181,46 @@ jobs:
           STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
           RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
-        run: python compress_chapters.py
+        # [جديد — بند 3 من خطة إصلاح تناقض PIR/OOM] حلقة إعادة تشغيل عملية
+        # Python كاملة عند خروج compress_chapters.py بكود 75 تحديدًا — هذا
+        # الكود مخصَّص حصرًا لوضع ocr_experiment_mode عند تجاوز OCR_MAX_RSS_MB
+        # (راجع run_ocr_experiment_mode بـocr_extraction.py). أي كود خروج
+        # آخر (0 نجاح، 1 فشل كامل، أو أي رمز آخر) يُخرج فورًا بنفس الكود —
+        # يطابق سلوك الخطوة السابق تمامًا لكل الأوضاع الأخرى (ضغط/تشخيص)
+        # التي لا تُصدر 75 إطلاقًا. "if cmd; then" (لا "cmd; code=$?") لازم
+        # هنا تحديدًا لأن shell الافتراضي بأكشنز يعمل بـ"set -e" ضمنيًا —
+        # التقاط $? مباشرة بعد أمر فاشل تحت set -e لن يُنفَّذ أصلًا (الصدفة
+        # تُنهي السكربت فورًا عند فشل أي أمر بسيط خارج سياق شرطي)، والوضع
+        # الشرطي (if) مُستثنى صراحة من هذا السلوك. لا سقف صريح لعدد
+        # الإعادات (قرار صريح — راجع الخطة) — فقط timeout-minutes: 240
+        # الكلي بأعلى الملف يحدّ التكرار عمليًا. remaining_urls.txt يُقرَأ
+        # من نفس مسار OUTPUT_DIR (نفس worktree يبقى على قرص الرانر بين
+        # استدعاءات Python المتتالية ضمن نفس خطوة الـworkflow هذه).
+        run: |
+          current_chapter_urls="$CHAPTER_URLS"
+          attempt=1
+          while true; do
+            if [ "$attempt" -gt 1 ]; then
+              echo "=================================================="
+              echo "🔁 [بند 3] محاولة تشغيل رقم $attempt (بعد تجاوز OCR_MAX_RSS_MB بالمحاولة السابقة)"
+              echo "=================================================="
+            fi
+            if CHAPTER_URLS="$current_chapter_urls" python compress_chapters.py; then
+              exit_code=0
+            else
+              exit_code=$?
+            fi
+            if [ "$exit_code" -ne 75 ]; then
+              exit "$exit_code"
+            fi
+            remaining_file="$OUTPUT_DIR/ocr_experiment/remaining_urls.txt"
+            if [ ! -s "$remaining_file" ]; then
+              echo "⚠️ [بند 3] كود خروج 75 (تجاوز RSS) لكن remaining_urls.txt فارغ أو غير موجود — توقف بدل حلقة لا نهائية"
+              exit 1
+            fi
+            current_chapter_urls="$(cat "$remaining_file")"
+            attempt=$((attempt + 1))
+          done
 
       - name: دفع احتياطي نهائي (شبكة أمان)
         if: always()
