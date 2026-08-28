@@ -523,10 +523,43 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
             chapter_num = m.group(1)
             chapter_part_index = i
             break
+
+    # [جديد — إصلاح: رقم فصل يُقرأ "0" خطأً لمواقع الـslug-الواحد] الفحص
+    # أعلاه (\d+)$ يطابق فقط رقمًا في *نهاية* جزء المسار — يفشل صامتًا
+    # لمواقع تضع الرابط كاملًا كجزء مسار واحد ورقم الفصل بمنتصفه، مثل
+    # onlinesololevelingmanga.com: "/read-solo-leveling-manga-chapter-1-online/"
+    # (لا ينتهي الجزء برقم؛ "1" تتبعها "-online"). رُصد فعليًا بلوج حقيقي
+    # (رقم الفصل خرج "0" لفصل عنوانه الفعلي رقم 1). احتياطي فقط — يعمل حصرًا
+    # لو فشل الفحص الأول، فلا يغيّر سلوك أي موقع يعمل بشكل صحيح الآن (كل
+    # المواقع متعددة أجزاء المسار الحالية: mangatuk/mangatime/olympustaff/
+    # procomic/azorafly تستمر بالفحص الأول كما هو تمامًا). يبحث عن
+    # "chapter"/"ch" (مفرد أو جمع) متبوعة برقم (عشري اختياري لفصول كـ10.5)
+    # داخل أي جزء، مع شرطة/underscore اختياريين قبل الكلمة وبعد الرقم مباشرة.
+    # خلافًا للفحص الأول (يستبعد جزء الفصل كاملًا من اسم المانهوا لاحقًا،
+    # لأنه غالبًا جزء مسار مستقل هو رقم الفصل فقط) — هنا الجزء المطابق هو
+    # الرابط بأكمله عادة (يحوي أيضًا اسم المانهوا)، فيُبقى الجزء بعد حذف
+    # علامة الفصل ورقمها منه فقط (fallback_span)، لا استبعاده كاملًا.
+    fallback_part_index = None
+    fallback_span = None
+    if chapter_num is None:
+        for i, p in enumerate(parts):
+            m = re.search(r"[-_]?chapters?[-_]?(\d+(?:\.\d+)?)(?=[-_]|$)", p, re.I)
+            if m:
+                chapter_num = m.group(1)
+                fallback_part_index = i
+                fallback_span = m.span()
+                break
+
     STRUCTURE_WORDS = {"chapter", "chapters", "manga", "series", "read", "manhwa", "ch"}
     manga_parts = []
     for i, p in enumerate(parts):
         if i == chapter_part_index:
+            continue
+        if i == fallback_part_index:
+            start, end = fallback_span
+            residual = re.sub(r"[-_]{2,}", "-", p[:start] + p[end:]).strip("-_")
+            if residual:
+                manga_parts.append(residual)
             continue
         if re.fullmatch(r"\d+", p):
             continue
