@@ -36,6 +36,7 @@ import asyncio
 import gc
 import json
 import os
+import re
 import sys
 import tempfile
 import zipfile
@@ -61,6 +62,29 @@ from compress_chapters import (
     get_profile,
     manga_slug_from_url,
 )
+
+# [إضافة] تجاوز يدوي اختياري لاسم المانهوا بتسمية أرشيف/أرتيفاكت هذه
+# التشغيلة — يتفوّق دومًا على أي عنوان مُخمَّن تلقائيًا من HTML الصفحة.
+MANGA_TITLE_OVERRIDE = os.environ.get("MANGA_TITLE_OVERRIDE", "").strip()
+
+_FILENAME_FORBIDDEN_CHARS_RE = re.compile(r'[\\/:*?"<>|]')
+_FILENAME_MAX_LEN = 120
+
+
+def _sanitize_filename(name: str) -> str:
+    """ينظّف سلسلة نصية لاستخدامها كاسم ملف/مسار آمن عبر أنظمة تشغيل
+    مختلفة (Windows/macOS/Linux معًا — الأرشيف قد يُفتَح على أي منها):
+    يستبدل \\ / : * ? " < > | بشرطة سفلية، يطوي المسافات المتكررة، ويحدّ
+    الطول الكلي (~120 حرفًا) لتفادي مشاكل مسارات طويلة جدًا. يُرجع سلسلة
+    فارغة فقط لو كانت المدخلة نفسها فارغة/كلها محارف محظورة — يُعالَج ذلك
+    بـfallback عند نقطة الاستدعاء، لا هنا."""
+    if not name:
+        return ""
+    cleaned = _FILENAME_FORBIDDEN_CHARS_RE.sub("_", name)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" ._")
+    if len(cleaned) > _FILENAME_MAX_LEN:
+        cleaned = cleaned[:_FILENAME_MAX_LEN].strip(" ._")
+    return cleaned
 
 
 # ============================== المرحلة ١: تجربة OCR الإنجليزي ==============================
@@ -590,12 +614,24 @@ def _bbox_bottom(bbox) -> float:
 def _bbox_left(bbox) -> float:
     return bbox[0]
 
+def _bbox_right(bbox) -> float:
+    return bbox[2]
+
 
 # [قابل للتعديل بعد تجربة على فصل حقيقي] عتبة تجميع الأسطر المتتالية رأسيًا
 # ضمن نفس البند (تقريب هندسي لحدود الفقاعة — لا يوجد كاشف فقاعات فعلي هنا)
 OCR_CLUSTER_GAP_RATIO = float(os.environ.get("OCR_CLUSTER_GAP_RATIO", "0.6"))
-# فرق أفقي أقصى (بكسل) بين بداية سطرين ليُعتبَرا نفس العمود/الفقاعة تقريبًا
-OCR_CLUSTER_X_TOLERANCE = int(os.environ.get("OCR_CLUSTER_X_TOLERANCE", "400"))
+# [أُعيد تصميمه — إصلاح جذري، راجع group_ocr_lines_into_sentences] تسامح
+# صغير (بكسل) حول التراكب الأفقي الفعلي بين صندوقين ليُعتبَرا بنفس
+# الفقاعة/العمود. اسم *جديد* عمدًا لا مجرد إعادة تسمية لـ
+# OCR_CLUSTER_X_TOLERANCE القديم: كانت 400px مسافة بين حافتين يساريين
+# (~نصف عرض البلاطة OCR_TILE_WIDTH)، تتحقق شبه دائمًا بين أي فقاعتين
+# متجاورتين فتُسبِّب دمج فقاعات مختلفة. المعيار الآن تراكب هندسي فعلي على
+# محور x (انظر أدناه)، لا مسافة — والقيمتان غير قابلتين لإعادة الاستخدام
+# كقيمة واحدة لبعضهما. لو كانت تشغيلة سابقة تضبط OCR_CLUSTER_X_TOLERANCE
+# صراحة بالبيئة فلن يُعاد تطبيق نفس الخلل صامتًا؛ الضبط الآن يحتاج اسم
+# المتغير الجديد بقيمة مناسبة (افتراضي 20px يكفي عمليًا لعدم دقة الصندوق).
+OCR_CLUSTER_X_OVERLAP_TOLERANCE = int(os.environ.get("OCR_CLUSTER_X_OVERLAP_TOLERANCE", "20"))
 # [مُعدَّل — بطلب صريح لاحق] بنود مُجمَّعة (بعد دمج الأسطر المتجاورة بنفس
 # البند بواسطة group_ocr_lines_into_sentences) بأقل من هذا عدد أحرف أبجدية
 # ضمن نص البند المُجمَّع كاملًا تُعتبَر مؤثر صوتي/رمز وتُستبعَد نهائيًا (نص
@@ -627,26 +663,94 @@ def _filter_sfx_sentences(sentences: list[dict]) -> tuple[list[dict], int]:
 
 
 def group_ocr_lines_into_sentences(items: list[dict]) -> list[dict]:
-    """يفرز الصناديق (أعلى فأسفل أولًا، يسار فيمين لحل تعادل نفس السطر تقريبًا
-    — مناسب لشريط ويبتون عمودي مستمر)، ثم يُجمِّع الأسطر المتتالية القريبة
-    رأسيًا والمتقاربة أفقيًا كبند واحد. كل بند ناتج:
+    """[أُعيد تصميمه بالكامل — إصلاح جذري] يُجمِّع كل الصناديق المنتمية
+    فعليًا لنفس الفقاعة/العمود كبند واحد، عبر Union-Find (مكوّنات متصلة)
+    بدل مقارنة كل صندوق بـ"آخر صندوق أُضيف" فقط. كل زوج صناديق (i, j) —
+    العدد بالصفحة الواحدة عشرات فقط، فـO(n²) غير مكلف إطلاقًا — يُفحَص
+    بشرطين معًا (كلاهما لازم للدمج):
+    - رأسي: الفجوة بين الأعلى والأسفل ≤ ارتفاع السطر (متوسط ارتفاعي
+      الصندوقين) × OCR_CLUSTER_GAP_RATIO.
+    - أفقي (مصدر الخلل الأصلي): تراكب هندسي فعلي على محور x بين الصندوقين
+      — min(right) - max(left) — بتسامح صغير
+      OCR_CLUSTER_X_OVERLAP_TOLERANCE لعدم دقة الصندوق، لا فرق مسافة بين
+      حافتين يساريين كما بالإصدار السابق.
+    أي زوج يحقق الشرطين يُوحَّد بنفس المجموعة (union)، بصرف النظر عن ترتيب
+    ظهوره بالفرز الأولي — فالإصدار السابق كان عرضة لتشابك أسطر فقاعتين
+    متجاورتين أفقيًا بنفس المستوى تقريبًا داخل الفرز، ثم يُلحِق سطرًا من
+    فقاعة بمجموعة فقاعة تانية غلط لأنه يقارن بـ"آخر عنصر أُضيف" فقط لا
+    بالفقاعة الحقيقية كاملةً.
+
+    داخل كل مجموعة نهائية: فرز بـ(top, left) لإعادة بناء ترتيب الأسطر
+    الصحيح. بين المجموعات: فرز بـ(أعلى top بالمجموعة، ثم left) لضمان ترتيب
+    قراءة الصفحة ككل يبقى منطقيًا. كل بند ناتج:
     {text: str, confidence: float (أدنى ثقة ضمن البند)}.
+
+    [ملاحظة صريحة عن حد الخوارزمية] تجميع قائم على تراكب/قرب مثل هذا يمكن
+    نظريًا أن يُسلسِل (transitively) صندوقين غير مرتبطين فعليًا لو وُجد
+    صندوق ثالث "جسر" بينهما جغرافيًا — نادر جدًا عمليًا، ولا يوجد حل أدق
+    بلا كاشف فقاعات فعلي حقيقي (خارج نطاق هذا الإصلاح).
     [مُعدَّل] لا حقل sfx_suspect هنا — فلترة sfx تتم بعد هذه الدالة عبر
     _filter_sfx_sentences على نص البند المُجمَّع كاملًا (راجع _ocr_handle_page)."""
-    boxes = sorted(items, key=lambda it: (_bbox_top(it["bbox"]), _bbox_left(it["bbox"])))
+    n = len(items)
+    if n == 0:
+        return []
+
+    # --- Union-Find (مكوّنات متصلة) بضغط مسار جزئي (path halving) ---
+    parent = list(range(n))
+
+    def find(x: int) -> int:
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(x: int, y: int) -> None:
+        rx, ry = find(x), find(y)
+        if rx != ry:
+            parent[rx] = ry
+
+    for i in range(n):
+        bbox_i = items[i]["bbox"]
+        top_i, bottom_i = _bbox_top(bbox_i), _bbox_bottom(bbox_i)
+        left_i, right_i = _bbox_left(bbox_i), _bbox_right(bbox_i)
+        height_i = (bottom_i - top_i) or 1
+        for j in range(i + 1, n):
+            bbox_j = items[j]["bbox"]
+            top_j, bottom_j = _bbox_top(bbox_j), _bbox_bottom(bbox_j)
+            left_j, right_j = _bbox_left(bbox_j), _bbox_right(bbox_j)
+            height_j = (bottom_j - top_j) or 1
+
+            # ارتفاع السطر المرجعي هنا متوسط ارتفاعي الصندوقين (لا ارتفاع
+            # "آخر عنصر" فقط كالإصدار السابق) — تعميم متماثل ضروري لأن كل
+            # زوج يُفحَص الآن بصرف النظر عن أيهما "أُضيف أولًا"
+            line_h = (height_i + height_j) / 2
+            # فجوة سالبة (تراكب رأسي، أي بنفس "الصف" تقريبًا) تحقق الشرط
+            # دومًا — الفصل عندئذٍ على الفاحص الأفقي وحده (بالضبط حالة
+            # فقاعتين متجاورتين أفقيًا بنفس المستوى اللي وصفها التحليل)
+            vertical_gap = max(top_i, top_j) - min(bottom_i, bottom_j)
+            close_vertically = vertical_gap <= line_h * OCR_CLUSTER_GAP_RATIO
+
+            x_overlap = min(right_i, right_j) - max(left_i, left_j)
+            close_horizontally = x_overlap >= -OCR_CLUSTER_X_OVERLAP_TOLERANCE
+
+            if close_vertically and close_horizontally:
+                union(i, j)
+
+    # تجميع الصناديق حسب جذرها النهائي = كل فقاعة/سطر متصل كمجموعة واحدة،
+    # بصرف النظر عن ترتيب ظهورها بالفرز الأولي
+    root_to_indices: dict[int, list[int]] = {}
+    for idx in range(n):
+        root_to_indices.setdefault(find(idx), []).append(idx)
+
     groups: list[list[dict]] = []
-    for it in boxes:
-        placed = False
-        if groups:
-            last = groups[-1][-1]
-            gap = _bbox_top(it["bbox"]) - _bbox_bottom(last["bbox"])
-            line_h = (_bbox_bottom(last["bbox"]) - _bbox_top(last["bbox"])) or 1
-            x_close = abs(_bbox_left(it["bbox"]) - _bbox_left(last["bbox"])) <= OCR_CLUSTER_X_TOLERANCE
-            if gap <= line_h * OCR_CLUSTER_GAP_RATIO and x_close:
-                groups[-1].append(it)
-                placed = True
-        if not placed:
-            groups.append([it])
+    for indices in root_to_indices.values():
+        group_items = [items[idx] for idx in indices]
+        group_items.sort(key=lambda it: (_bbox_top(it["bbox"]), _bbox_left(it["bbox"])))
+        groups.append(group_items)
+
+    # بين المجموعات: فرز بـ(أعلى top بالمجموعة، ثم left) — فقاعتان
+    # متجاورتان بنفس المستوى تظهران متتاليتين من اليسار لليمين، بدل تشابك
+    groups.sort(key=lambda g: (_bbox_top(g[0]["bbox"]), _bbox_left(g[0]["bbox"])))
 
     sentences = []
     for g in groups:
@@ -748,7 +852,7 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
     OCR بدل انتظار تسلسلي صرف."""
     print(f"[{index}/{total}] 🔤 تجربة OCR: {chapter_url} — بروفايل: {profile['label']}")
 
-    context, image_urls, fail_reason = await get_chapter_images(browser, chapter_url, profile)
+    context, image_urls, fail_reason, title = await get_chapter_images(browser, chapter_url, profile)
 
     if not image_urls:
         print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
@@ -802,6 +906,7 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
         "chapter_num": chapter_num,
         "source_url": chapter_url,
         "chapter_slug": f"{manga_id}__ch-{chapter_num}",
+        "manga_title": title,
         "text": "\n\n".join(page_texts),
         "pages": page_json,
     }
@@ -832,7 +937,7 @@ async def _ocr_http_chapter_producer(
             await queue.put(("SKIPPED", index, None, None))
             return
         try:
-            _context, image_urls, fail_reason = await get_chapter_images(None, url, profile)
+            _context, image_urls, fail_reason, title = await get_chapter_images(None, url, profile)
         except Exception as e:
             print(f"[{index}/{total}] ❌ خطأ غير متوقع أثناء جلب صور الفصل: {e}")
             await queue.put(("ERROR", index, None, None))
@@ -856,13 +961,14 @@ async def _ocr_http_chapter_producer(
             "chapter_num": chapter_num,
             "source_url": url,
             "chapter_slug": f"{manga_id}__ch-{chapter_num}",
+            "manga_title": title,
         }))
 
 
 async def _ocr_http_consumer(
     queue: asyncio.Queue, total_chapters: int, chapter_urls: list[str],
     ocr_dir: "Path", stop_event: asyncio.Event,
-) -> tuple[list["Path"], list[str], int]:
+) -> tuple[list["Path"], list[str], int, list[dict]]:
     """[جديد — بند (1)، مسار HTTP] المستهلك الوحيد المشترك بين كل الفصول —
     يسحب أي عنصر جاهز فور توفره بصرف النظر عن الفصل الذي جاء منه، ويُشغِّل
     OCR حصرًا على خيط PaddleOCR المخصَّص (_run_on_ocr_thread، بلا تغيير على
@@ -884,14 +990,20 @@ async def _ocr_http_consumer(
     لفحص RSS، بعكس SKIPPED التي لم تُعالَج إطلاقًا) تُفحَص RSS الحالية،
     ولو تجاوزت OCR_MAX_RSS_MB يُضبَط stop_event (يمنع المنتِجين من بدء
     فصول جديدة — راجع _ocr_http_chapter_producer) بلا إلغاء أي فصل جارٍ
-    فعلًا. يُعيد (files_written, skipped_urls, success_count) — لا حاجة
-    لقائمة نتائج كاملة بالذاكرة بعد الآن، كل نتيجة نجحت كُتبت/دُفعت فورًا."""
+    فعلًا. يُعيد (files_written, skipped_urls, success_count, succeeded_meta)
+    — succeeded_meta قائمة {index, manga_id, chapter_num, manga_title} لكل
+    فصل نجح، بترتيب اكتمال حر (لا ترتيب دخول القائمة الأصلية، لأن مسار
+    HTTP متوازٍ)، لكن كل عنصر معه index الأصلي بقائمة chapter_urls —
+    يُستخدَم لاحقًا بـrun_ocr_experiment_mode لتحديد "أول مانهوا" بالترتيب
+    الصحيح عند تسمية أرشيف zip، لا بترتيب انتهاء المعالجة. لا حاجة لقائمة
+    نتائج كاملة بالذاكرة بعد الآن، كل نتيجة نجحت كُتبت/دُفعت فورًا."""
     chapters: dict[int, dict] = {}
     remaining_producers = total_chapters
     pages_since_rebuild = 0  # عدّاد عام للتشغيلة كاملة — راجع تعليق _ocr_handle_page
     files_written: list[Path] = []
     skipped_urls: list[str] = []
     success_count = 0
+    succeeded_meta: list[dict] = []
 
     def acc(idx: int) -> dict:
         return chapters.setdefault(idx, {
@@ -911,6 +1023,12 @@ async def _ocr_http_consumer(
             )
             files_written.extend([txt_path, json_path])
             success_count += 1
+            succeeded_meta.append({
+                "index": idx,
+                "manga_id": chapter_result["manga_id"],
+                "chapter_num": chapter_result["chapter_num"],
+                "manga_title": chapter_result.get("manga_title", ""),
+            })
             if GIT_COMMIT_DIR:
                 ok, msg = await asyncio.to_thread(
                     _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
@@ -974,7 +1092,7 @@ async def _ocr_http_consumer(
         if result is not None:
             await finalize_and_push(index, result)
 
-    return files_written, skipped_urls, success_count
+    return files_written, skipped_urls, success_count, succeeded_meta
 
 
 async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
@@ -1002,6 +1120,11 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     files_written: list[Path] = []
     skipped_urls: list[str] = []
     success_count = 0
+    # [إضافة] {index, manga_id, chapter_num, manga_title} لكل فصل نجح، بترتيب
+    # اكتمال حر لكن كل عنصر معه index الأصلي بقائمة chapter_urls — يُستخدَم
+    # أدناه لتسمية أرشيف zip بعنوان "أول مانهوا" الصحيح (حسب ترتيب الدخول
+    # لا ترتيب انتهاء المعالجة، مهم خصوصًا بمسار HTTP المتوازي).
+    succeeded_meta: list[dict] = []
 
     try:
         if fetch_mode == "http":
@@ -1026,7 +1149,7 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                 _ocr_http_consumer(queue, total, chapter_urls, ocr_dir, stop_event)
             )
             await asyncio.gather(*producer_tasks)
-            files_written, skipped_urls, success_count = await consumer_task
+            files_written, skipped_urls, success_count, succeeded_meta = await consumer_task
         else:
             # [بند 3] مسار المتصفح تسلسلي أصلًا (فصل بعد آخر، بلا تزامن) —
             # لا "فصول جارية" أخرى لإنهائها عند التوقف، فقط الفصول التالية
@@ -1048,6 +1171,12 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                         json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
                         files_written += [txt_path, json_path]
                         success_count += 1
+                        succeeded_meta.append({
+                            "index": i,
+                            "manga_id": r["manga_id"],
+                            "chapter_num": r["chapter_num"],
+                            "manga_title": r.get("manga_title", ""),
+                        })
                         if GIT_COMMIT_DIR:
                             ok, msg = await asyncio.to_thread(
                                 _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
@@ -1072,7 +1201,42 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         # finally يضمن الإغلاق حتى لو استُثنِي خطأ غير متوقَّع.
         _shutdown_ocr_thread()
 
-    run_zip_relpath = f"ocr_experiment/runs/run-{RUN_ID}.zip"
+    # [إضافة — تسمية وصفية لأرشيف zip] بدل الاسم الثابت run-<RUN_ID> فقط،
+    # نبني اسمًا يحمل اسم المانهوا وأرقام الفصول لو توفّرت بيانات كافية:
+    # manga_title_override (المدخل اليدوي بالـworkflow) يتفوّق دومًا لو
+    # مُعطًى، وإلا عنوان أول فصل حسب index الأصلي بقائمة chapter_urls (لا
+    # ترتيب اكتمال المعالجة الحر بمسار HTTP المتوازي) — راجع succeeded_meta
+    # أعلاه. أرقام الفصول = كل chapter_num الفريدة من الفصول الناجحة، مرتبة
+    # رقميًا حيثما أمكن (فصول برقم غير عددي بحت تُدفَع لنهاية الترتيب بدل
+    # كسر الفرز — راجع ملاحظة manga_slug_from_url بـcompress_chapters.py).
+    # أي فشل بأي خطوة هنا (لا عنوان مُتاح، فشل تنظيف الاسم...) → fallback
+    # تلقائي فوري للتسمية القديمة run-<RUN_ID> — صفر مخاطرة على استمرار
+    # التشغيلة نفسها.
+    descriptive_zip_stem = None
+    try:
+        if succeeded_meta:
+            zip_title = MANGA_TITLE_OVERRIDE or (
+                min(succeeded_meta, key=lambda m: m["index"]).get("manga_title") or ""
+            )
+            if zip_title:
+                def _chapter_sort_key(n: str):
+                    try:
+                        return (0, float(n))
+                    except (TypeError, ValueError):
+                        return (1, n)
+
+                chapter_nums = sorted({m["chapter_num"] for m in succeeded_meta}, key=_chapter_sort_key)
+                candidate = _sanitize_filename(f"{zip_title} - ch {','.join(chapter_nums)}")
+                if candidate:
+                    descriptive_zip_stem = candidate
+    except Exception as e:
+        print(f"⚠️ تعذّر بناء اسم وصفي لأرشيف zip — الرجوع للتسمية الافتراضية run-{RUN_ID}: {e}")
+        descriptive_zip_stem = None
+
+    zip_stem = descriptive_zip_stem or f"run-{RUN_ID}"
+    if descriptive_zip_stem:
+        print(f"🏷️ اسم أرشيف zip الوصفي: {zip_stem}.zip")
+    run_zip_relpath = f"ocr_experiment/runs/{zip_stem}.zip"
     run_zip_path = OUTPUT_DIR / run_zip_relpath
     run_zip_path.parent.mkdir(parents=True, exist_ok=True)
     zip_ok, zipped_count = True, 0
