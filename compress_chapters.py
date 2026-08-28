@@ -167,6 +167,7 @@ raw.githubusercontent.com مباشر — يعمل تنزيله بلا تسجيل
 ================================================================================
 """
 import asyncio
+import html as html_lib
 import json
 import os
 import random
@@ -587,6 +588,68 @@ def extract_images_from_html(html: str, base_url: str) -> list[str]:
     return dedupe(plain_found)
 
 
+# [إضافة — استخراج عنوان المانهوا التلقائي] يُستخدَم حصرًا بتسمية أرشيف
+# zip الناتج (تجربة OCR) — لا يمس الاستخراج/الضغط الفعلي لأي صورة. تخمين
+# أفضل جهد فقط (بعض المواقع تضع اسم الموقع فقط بـog:title)، لذا يبقى
+# manga_title_override اليدوي بالـworkflow الخيار الأدق دومًا لو التخمين
+# غير مُرضٍ.
+_TITLE_CHAPTER_CUT_RE = re.compile(r"\s*(?:chapter|ch\.?|الفصل)\s*\d+.*$", re.I)
+_TITLE_SITE_SUFFIX_RE = re.compile(r"\s*[-–—|:]\s*[^-–—|:]*$")
+
+
+def _clean_manga_title(raw: str) -> str:
+    """ينظّف عنوان صفحة/وسم HTML خام إلى اسم مانهوا مرجّح: يقصّ أول ذكر
+    لكلمة 'Chapter'/'الفصل' ورقم يليها وكل ما بعده (رقم الفصل نفسه ليس
+    جزءًا من اسم المانهوا)؛ إن لم توجد كلمة فصل إطلاقًا، يقصّ بدل ذلك أي
+    لاحقة اسم موقع شائعة مفصولة بشرطة/خط عمودي/نقطتين (' - SiteName',
+    ' | SiteName'). يُرجع سلسلة فارغة لو لم يتبقَّ شيء ذو معنى."""
+    if not raw:
+        return ""
+    text = html_lib.unescape(raw).strip()
+    text = re.sub(r"\s+", " ", text)
+    m = _TITLE_CHAPTER_CUT_RE.search(text)
+    if m:
+        text = text[: m.start()].strip()
+    else:
+        text = _TITLE_SITE_SUFFIX_RE.sub("", text).strip()
+    return text.strip(" -–—|:")
+
+
+def extract_manga_title_from_html(html: str) -> str:
+    """يستخرج اسم المانهوا المرجّح من HTML خام لصفحة فصل، بالترتيب: meta
+    og:title → <title> → أول <h1>. أفضل تخمين تلقائي فقط، لا دقة مضمونة —
+    راجع manga_title_override بالـworkflow للتصحيح اليدوي."""
+    m = re.search(
+        r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)["\']',
+        html, re.I,
+    )
+    if not m:
+        # بعض المواقع تعكس ترتيب property/content بالوسم
+        m = re.search(
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:title["\']',
+            html, re.I,
+        )
+    if m:
+        cleaned = _clean_manga_title(m.group(1))
+        if cleaned:
+            return cleaned
+
+    m = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
+    if m:
+        cleaned = _clean_manga_title(m.group(1))
+        if cleaned:
+            return cleaned
+
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.I | re.S)
+    if m:
+        inner = re.sub(r"<[^>]+>", " ", m.group(1))  # قد يحوي وسوم فرعية (span...)
+        cleaned = _clean_manga_title(inner)
+        if cleaned:
+            return cleaned
+
+    return ""
+
+
 def _classify_protection_category(text: str) -> str:
     """[تصحيح حرج جديد] يميّز 'final_block' (حظر WAF/IP نهائي — الانتظار
     لا يفيد) عن 'solvable_challenge' (تحدٍّ متصفح قابل للحل) عن 'none'.
@@ -649,22 +712,24 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
     return filtered
 
 
-def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str]:
+def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
     headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
     try:
         resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
         resp.raise_for_status()
     except Exception as e:
-        return [], f"فشل الطلب المباشر: {e}"
+        return [], f"فشل الطلب المباشر: {e}", ""
     html = resp.text
     if _looks_like_challenge_html(html):
-        return [], "صفحة تحقق/حماية ظهرت حتى بطلب مباشر — هذا البروفايل غير مناسب لهذا الرابط تحديدًا"
+        return [], "صفحة تحقق/حماية ظهرت حتى بطلب مباشر — هذا البروفايل غير مناسب لهذا الرابط تحديدًا", ""
     urls = extract_images_from_html(html, chapter_url)
     if not urls:
-        return [], "لم يُعثر على صور في HTML الثابت"
+        return [], "لم يُعثر على صور في HTML الثابت", ""
     if profile:
         urls = _apply_http_content_filter(urls, profile)
-    return urls, ""
+    # [إضافة] نفس html المجلوب أصلًا لاستخراج الصور — بلا أي طلب شبكة إضافي.
+    title = extract_manga_title_from_html(html)
+    return urls, "", title
 
 
 def _validate_image_bytes(raw_bytes: bytes) -> tuple[bool, str]:
@@ -1337,16 +1402,30 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
     selectors = CONTENT_SELECTORS + extra_selectors if extra_selectors else CONTENT_SELECTORS
     image_urls = await extract_image_urls(page, chapter_url, do_scroll, do_widget_filter, selectors)
     print(f"  ⏱️ زمن الاستخراج: {time.monotonic() - t0:.1f}ث")
+
+    # [إضافة — استخراج العنوان] يجب أن يحدث هنا، قبل page.close() مباشرة —
+    # لا فرصة لقراءة محتوى الصفحة من بعده. مقيَّد بـimage_urls غير فارغة
+    # عمدًا: لو الصفحة صفحة تحدٍّ/حظر (لا صور محتوى فعلية)، عنوانها غالبًا
+    # نصّ التحدي نفسه ("Just a moment...") لا اسم المانهوا — لا فائدة من
+    # التقاطه، وأفضل ترك title فارغًا يُعالَج لاحقًا (fallback بالتسمية).
+    title = ""
+    if image_urls:
+        try:
+            page_html = await page.content()
+            title = extract_manga_title_from_html(page_html)
+        except Exception as e:
+            print(f"  ⚠️ تعذّر استخراج عنوان المانهوا من الصفحة: {e}")
+
     await page.close()
 
     if not image_urls:
         await context.close()
         reason = "لم يتم تحميل الصفحة أصلًا (انتهت المهلة)" if not navigated else "اكتمل تحميل الصفحة لكن لم يُعثر على صور"
-        return None, [], reason
+        return None, [], reason, ""
     if not navigated:
         print("  ℹ️ ملاحظة: حدث goto لم يُطلَق (انتهت مهلته) لكن المحتوى الحقيقي كان قد اكتمل فعليًا — نُكمل به")
     print(f"  📊 إجمالي الصور: {len(image_urls)}")
-    return context, image_urls, ""
+    return context, image_urls, "", title
 
 
 # ---------------------------- منطق مشترك (يعمل مهما كان المسار) ----------------------------
@@ -1548,6 +1627,9 @@ def _owned_chapter_paths(results: list) -> list[str]:
 
 
 async def get_chapter_images(browser, chapter_url: str, profile: dict):
+    """يُرجع دومًا 4-tuple: (context, image_urls, fail_reason, title) —
+    title تخمين أفضل جهد لاسم المانهوا (قد تكون فارغة)، بمسارَي HTTP
+    والمتصفح معًا."""
     fetch_mode = profile.get("fetch_mode", "browser")
     if fetch_mode == "http":
         fail_reason = ""
@@ -1556,25 +1638,27 @@ async def get_chapter_images(browser, chapter_url: str, profile: dict):
                 delay = 1.5 * attempt
                 print(f"  🔁 إعادة محاولة طلب مباشر #{attempt} (بعد {delay:.1f}ث)")
                 await asyncio.sleep(delay)
-            image_urls, fail_reason = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url, profile)
+            image_urls, fail_reason, title = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url, profile)
             if image_urls:
-                return None, image_urls, ""
-        return None, [], fail_reason
+                return None, image_urls, "", title
+        return None, [], fail_reason, ""
 
-    context, image_urls, fail_reason = None, [], ""
+    context, image_urls, fail_reason, title = None, [], "", ""
     for attempt in range(1, RETRY_PER_CHAPTER + 1):
         if attempt > 1:
             print(f"  🔁 إعادة محاولة #{attempt}")
-        context, image_urls, fail_reason = await open_and_collect(browser, chapter_url, attempt, profile)
+        context, image_urls, fail_reason, title = await open_and_collect(browser, chapter_url, attempt, profile)
         if image_urls:
             break
-    return context, image_urls, fail_reason
+    return context, image_urls, fail_reason, title
 
 
 async def process_chapter(browser, chapter_url: str, index: int, total: int, profile: dict):
     print(f"[{index}/{total}] فتح: {chapter_url} — بروفايل: {profile['label']}")
 
-    context, image_urls, fail_reason = await get_chapter_images(browser, chapter_url, profile)
+    # title (اسم المانهوا المُخمَّن) غير مطلوب بمسار الضغط العادي — يُتجاهل
+    # هنا عمدًا (يُستخدَم فقط بتسمية أرشيف zip بوضع تجربة OCR).
+    context, image_urls, fail_reason, _title = await get_chapter_images(browser, chapter_url, profile)
 
     if not image_urls:
         print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
