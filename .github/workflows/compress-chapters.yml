@@ -57,6 +57,14 @@ on:
         required: false
         default: false
         type: boolean
+      ocr_detection_model:
+        description: "نموذج كشف النص (detection) لوضع تجربة OCR — mobile أسرع بكثير على CPU (~60% حسب قياسات PaddleOCR الرسمية) بفرق دقة أقل من 1% للنص الإنجليزي المطبوع تحديدًا، server أدق للنصوص الفنية/المعقدة. يُتجاهَل كليًا لو ocr_experiment_mode غير مفعّل"
+        required: false
+        default: server
+        type: choice
+        options:
+          - server
+          - mobile
       deep_diagnostic:
         description: "لا يعمل إلا مع diagnostic_mode مفعّلًا (يُتجاهَل غير ذلك). يضيف مسبارين لا يقيسهما التشخيص العادي إطلاقًا: تسريب Runtime.enable (بروتوكول CDP نفسه، لا JS fingerprint — السبب الموثّق فعليًا لتعطّل stealth الحالي ضد Cloudflare/DataDome الحديثة) وتسريب sourceURL لسكربتات page.evaluate، مع تجميعهما وباقي طبقات الفحص القائمة بخريطة detection_surface_map موحّدة لكل رابط. يُضاعِف زمن التشخيص تقريبًا لكل رابط (~90-180ث إضافية)"
         required: false
@@ -171,6 +179,7 @@ jobs:
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
           OCR_EXPERIMENT_MODE: ${{ inputs.ocr_experiment_mode }}
+          OCR_DETECTION_MODEL: ${{ inputs.ocr_detection_model }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           RUN_ID: ${{ github.run_id }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
