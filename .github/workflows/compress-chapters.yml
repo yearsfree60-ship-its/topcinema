@@ -310,6 +310,24 @@ jobs:
             zip_name="run-${{ github.run_id }}"
           fi
           echo "zip_name=$zip_name" >> "$GITHUB_OUTPUT"
+          # [إضافة — إصلاح رابط raw.githubusercontent.com للأسماء الوصفية]
+          # zip_name قد يحوي مسافات/حروف غير ASCII (عنوان مانهوا عربي مثلًا،
+          # كـ"سولو لفلنق - ch 0") لو نجح التخمين التلقائي للعنوان أو استُخدم
+          # manga_title_override. تمرير هذا الاسم خامًا (بلا ترميز) داخل رابط
+          # raw.githubusercontent.com بالخطوة التالية كان يُنتج رابطًا غير
+          # صالح فعليًا: المسافة تقطع اكتشاف الرابط عند أول اقتباس تلقائي
+          # بعارض لوج GitHub Actions (فتُفتح صفحة 404 صغيرة بدل الأرشيف
+          # الفعلي، تبدو للمستخدم كملف zip فارغ/تالف عند حفظها وفتحها كأرشيف)،
+          # وRFC 3986 أصلًا يشترط ترميز المسافة والحروف غير ASCII بمسار أي
+          # URL. الحل: مخرَج إضافي zip_name_encoded مُرمَّز بـurllib.parse.quote
+          # (متوفرة دومًا — python3 مثبَّت افتراضيًا على رانرات GitHub
+          # المستضافة، لا حاجة لانتظار خطوة تثبيت الحزم اللاحقة)، يُستخدَم
+          # حصرًا داخل الرابط. الاسم الخام zip_name أعلاه يبقى كما هو ويُستخدَم
+          # للمسار المحلي على القرص واسم الـartifact نفسه (لا يمر عبر متصفح
+          # كرابط، فلا حاجة لترميزه هناك — واختبار فعلي أكّد أن الـartifact
+          # يعمل صحيحًا بالاسم الوصفي غير المُرمَّز).
+          zip_name_encoded="$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "$zip_name")"
+          echo "zip_name_encoded=$zip_name_encoded" >> "$GITHUB_OUTPUT"
 
       # [تعديل] الآن يطبع رابطين: الأرشيف الكامل (كل الفصول المضغوطة تاريخيًا،
       # لم يُلمَس) + رابط manifest مستقل خاص فقط بفصول هذه التشغيلة تحديدًا
@@ -319,7 +337,7 @@ jobs:
         run: |
           echo "=================================================="
           echo "📦 أرشيف zip خاص بهذه التشغيلة (نص+JSON لكل فصل) — رابط تنزيل مباشر بلا تسجيل دخول:"
-          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/runs/${{ steps.ocr_zip_name.outputs.zip_name }}.zip"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/runs/${{ steps.ocr_zip_name.outputs.zip_name_encoded }}.zip"
           echo ""
           echo "أو حمّل أرتيفاكت '${{ steps.ocr_zip_name.outputs.zip_name }}' من صفحة هذه التشغيلة أعلاه (نسخة احتياطية)"
           echo "=================================================="
