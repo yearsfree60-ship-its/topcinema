@@ -217,13 +217,37 @@ OCR_DOWNLOAD_QUEUE_SIZE = int(
 # (config.set_cpu_math_library_num_threads داخليًا) — كان غير مضبوط صراحةً
 # سابقًا (يعتمد على افتراضي المكتبة الداخلي غير الموثَّق هنا رسميًا، بعض
 # المصادر المجتمعية تذكر 10). قائمة تحسين CPU الرسمية بتوثيق PaddleOCR
-# تنصّ صراحةً: "Set optimal threads: Match physical core count". القيمة
-# الافتراضية 2 تطابق عدد الأنوية الفعلي لرانر GitHub Actions لمستودع خاص
-# (مؤكَّد ببحث سابق بهذا المشروع: Tenki، مواصفات رانرات 2026). يُطبَّق فقط
-# لأن محرك الاستدلال الافتراضي هنا هو paddle_static (لم نحدد engine=
+# تنصّ صراحةً: "Set optimal threads: Match physical core count". يُطبَّق
+# فقط لأن محرك الاستدلال الافتراضي هنا هو paddle_static (لم نحدد engine=
 # صراحة) — التوثيق الرسمي يذكر أن cpu_threads لا يُطبَّق مع محركات بديلة
 # (onnxruntime/transformers)، غير مستخدَمة هنا أصلًا.
-OCR_CPU_THREADS = int(os.environ.get("OCR_CPU_THREADS", "2"))
+# [مُصحَّح] القيمة الافتراضية كانت 2 بافتراض "مستودع خاص = نواتان" — افتراض
+# غير صحيح لهذا المشروع تحديدًا: مستودع topcinema عام (public) فعليًا
+# (مؤكَّد من المستخدم مباشرة)، وتوثيق GitHub الحالي (2026) ينص صراحةً أن
+# المستودعات العامة تحصل على رانر Linux قياسي بـ4 أنوية (vCPU)، لا نواتين
+# (النواتان محصورتان بالمستودعات الخاصة فقط). القيمة الافتراضية صارت 4
+# لمطابقة العتاد الفعلي المتاح فعليًا لهذه التشغيلة، بلا أي تغيير بمنطق
+# الاستدلال نفسه — قابلة للتراجع لـ2 عبر متغير البيئة نفسه لو أصبح
+# المستودع خاصًا مستقبلًا.
+OCR_CPU_THREADS = int(os.environ.get("OCR_CPU_THREADS", "4"))
+
+
+# [جديد — مدخل ocr_detection_model بملف الـworkflow] اختيار نموذج الكشف
+# (detection) بين server (افتراضي — يطابق السلوك السابق قبل هذه الميزة
+# حرفيًا، بلا أي تغيير ضمني على تشغيلات لم تُعدَّل مدخلاتها صراحةً) وmobile
+# (الأسرع على CPU حسب التقرير الفني الرسمي لـPaddleOCR 3.0: نسخة server
+# مُحسَّنة لعتاد التسريع كـGPU، ونسخة mobile مُصمَّمة خصيصًا لبيئات CPU
+# فقط — وهذا بالضبط رانر GitHub Actions هنا، لا GPU إطلاقًا). يُقرَأ مرة
+# واحدة فقط عند استيراد الوحدة (ثابت طوال التشغيلة كاملة، تمامًا كثبات
+# اختيار الموقع/الوضع لكل تشغيلة لا لكل فصل) — القيمة تصل عبر متغير بيئة
+# OCR_DETECTION_MODEL الذي يضبطه ملف الـworkflow من مدخل القائمة المنسدلة
+# نفسه، لا حاجة لتمريره عبر compress_chapters.py (نفس نمط قراءة
+# OCR_CPU_THREADS مباشرة من os.environ أعلاه).
+OCR_DETECTION_MODEL_NAME = (
+    "PP-OCRv5_mobile_det"
+    if os.environ.get("OCR_DETECTION_MODEL", "server") == "mobile"
+    else "PP-OCRv5_server_det"
+)
 
 
 def _build_paddleocr_engine(enable_mkldnn: bool):
@@ -250,6 +274,7 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
     rss_before = _current_rss_mb()
     engine = PaddleOCR(
         lang="en",
+        text_detection_model_name=OCR_DETECTION_MODEL_NAME,
         use_doc_orientation_classify=False,
         use_doc_unwarping=False,
         use_textline_orientation=False,
@@ -270,7 +295,7 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
         print(
             f"  📏 [قياس RSS — بناء محرك OCR] {rss_before:.0f}MB → {rss_after:.0f}MB "
             f"(Δ{rss_after - rss_before:+.0f}MB) | mkldnn={enable_mkldnn} "
-            f"cpu_threads={OCR_CPU_THREADS}"
+            f"cpu_threads={OCR_CPU_THREADS} det_model={OCR_DETECTION_MODEL_NAME}"
         )
     return engine
 
@@ -966,6 +991,7 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     print("🔤 المرحلة ١: تجربة استخراج النص الإنجليزي (OCR) — لن يُضغط أو يُحفَظ أي صورة، النتيجة نص+JSON فقط")
     profile = get_profile()
     print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
+    print(f"⚙️ نموذج الكشف (detection): {OCR_DETECTION_MODEL_NAME}")
     print(f"⚙️ [بند 3] حد RSS الأقصى: {OCR_MAX_RSS_MB}MB — يُفحَص بعد اكتمال كل فصل")
     fetch_mode = profile.get("fetch_mode", "browser")
 
