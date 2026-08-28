@@ -1233,7 +1233,20 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         print(f"⚠️ تعذّر بناء اسم وصفي لأرشيف zip — الرجوع للتسمية الافتراضية run-{RUN_ID}: {e}")
         descriptive_zip_stem = None
 
-    zip_stem = descriptive_zip_stem or f"run-{RUN_ID}"
+    # [إصلاح — التقاط ملف zip خطأ عبر تشغيلات متعددة] مجلد ocr_experiment/runs/
+    # يتراكم عبر التشغيلات (لا حذف لأي zip قديم — الـworktree يسحب فرع output
+    # الموجود فعليًا بكامل تاريخه في كل تشغيلة). خطوة الـworkflow "تحديد اسم
+    # أرشيف zip الفعلي" تكتشف اسم هذا الملف من القرص لأنه لا يمكن معرفته
+    # مسبقًا باليml (اسم وصفي متغيّر) — وكانت تعتمد على `ls .../*.zip | head
+    # -n1` (ترتيب أبجدي، لا زمني) فقد تلتقط zip تشغيلة سابقة مختلفة تمامًا
+    # مع تراكم أكثر من ملف. الحل: RUN_ID الحالي يُضاف الآن دومًا كلاحقة ثابتة
+    # لاسم الملف (حتى مع الاسم الوصفي) — فيبقى الاسم مقروءًا للبشر (العنوان +
+    # أرقام الفصول بادئة، لا لاحقة) بينما يضمن RUN_ID أن نمط بحث اليml
+    # (المُحدَّث بنفس التعديل ليطابق `*__run-<RUN_ID>.zip` أو `run-<RUN_ID>.zip`
+    # حصرًا) يلتقط ملف هذه التشغيلة بالضبط دومًا، بصرف النظر عن عدد الأرشيفات
+    # القديمة المتراكمة بنفس المجلد. لا تغيير على منطق التسمية الوصفية نفسه
+    # فوق هذا السطر — فقط إضافة اللاحقة قبل البناء النهائي.
+    zip_stem = f"{descriptive_zip_stem}__run-{RUN_ID}" if descriptive_zip_stem else f"run-{RUN_ID}"
     if descriptive_zip_stem:
         print(f"🏷️ اسم أرشيف zip الوصفي: {zip_stem}.zip")
     run_zip_relpath = f"ocr_experiment/runs/{zip_stem}.zip"
