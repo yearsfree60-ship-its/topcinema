@@ -33,8 +33,10 @@
 صفحات الفصل الواحد (تحميل الصفحة التالية يتداخل مع OCR الصفحة الحالية).
 """
 import asyncio
+import gc
 import json
 import os
+import sys
 import tempfile
 import zipfile
 from concurrent.futures import ThreadPoolExecutor
@@ -159,6 +161,25 @@ OCR_MKLDNN_CACHE_CAPACITY = int(os.environ.get("OCR_MKLDNN_CACHE_CAPACITY", "2")
 # صغيرة (إعادة تحميل نموذج مرة كل N صفحة، لا كل صفحة).
 OCR_ENGINE_REBUILD_EVERY_N_PAGES = int(os.environ.get("OCR_ENGINE_REBUILD_EVERY_N_PAGES", "15"))
 
+# [جديد — بند (3) من خطة إصلاح تناقض PIR/OOM: حد RSS أقصى صريح] لا اعتماد
+# بعد الآن على "إعادة البناء الدورية" (أعلاه) كحل تراكم ذاكرة أصلية —
+# ذاكرة RSS للعملية ذاتها لا تتراجع أبدًا مهما أُعيد بناء المحرك (نظام
+# التشغيل وحده يستعيدها بإنهاء العملية فعليًا). يُفحَص بعد اكتمال كل فصل
+# (نجاحًا أو فشلًا — راجع _ocr_http_consumer/run_ocr_experiment_mode)، لا
+# بين الصفحات، لتفادي قطع فصل بمنتصفه. القيمة الافتراضية 4000MB مبنية على:
+# رانر GitHub Actions القياسي يوفر 7GB إجمالاً؛ هامش الأمان (~3GB) يستوعب
+# نمو RSS المتبقي داخل الفصل الجاري وقت الفحص (الفحص بعد اكتمال الفصل لا
+# أثناءه) بالإضافة لطابور تنزيل الصور المتزامن (عدة منتِجين حتى
+# HTTP_CONCURRENCY) وعمليات git الفرعية — هامش أضيق (مثلاً 6000) يخاطر بأن
+# يسبق تجاوز الذاكرة الفعلي نقطة الفحص نفسها (OOM kill من نظام التشغيل بلا
+# فرصة حفظ، وهو بالضبط ما يحاول هذا الحد تفاديه). عند التجاوز: العملية
+# الحالية تتوقف عن قبول فصول جديدة، تُنهي ما تبقى بالطابور بأمان، تحفظ/تدفع
+# كل شيء، ثم تخرج بكود 75 (راجع sys.exit بنهاية run_ocr_experiment_mode)
+# ليعيد الـworkflow تشغيل عملية Python جديدة بالكامل لبقية الفصول عبر
+# remaining_urls.txt — لا سقف صريح لعدد إعادات التشغيل هذه، فقط مهلة
+# الـ240 دقيقة الكلية للتشغيلة (قرار صريح، راجع ملف الـworkflow).
+OCR_MAX_RSS_MB = int(os.environ.get("OCR_MAX_RSS_MB", "4000"))
+
 # [جديد — بند (2) من خطة الإصلاح: تطبيع شكل الصورة قبل predict()] صفحات
 # ويبتون هنا بارتفاع مختلف كليًا كل صفحة تقريبًا (شريط طويل متغيّر من
 # ~12700 إلى ~13500px بالعينة الفعلية المفحوصة) — حتى مع سعة كاش صغيرة
@@ -220,6 +241,12 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
     # فقط، فتعطيله دومًا يعني استبدال خطأ فوري بخطأ OOM صامت أسوأ. يُعطَّل
     # فقط كخطوة احتياطية لمرة واحدة عند حدوث الخلل فعليًا (انظر أدناه).
     # [جديد] cpu_threads=OCR_CPU_THREADS — راجع تعليق الثابت أعلاه.
+    # [مُعدَّل — بند (4)] gc.collect() هنا شبكة أمان إضافية (المستدعي هو من
+    # يُسقِط مرجع المحرك القديم صراحةً قبل هذا النداء أصلًا — راجع
+    # _reinit_paddleocr_engine أدناه) — يضمن تحرير أي كائن بايثون معلَّق
+    # بدورة مرجعية (cyclic reference لا يُفرِج عنها العدّ المرجعي وحده) قبل
+    # قياس rss_before، لا بعده.
+    gc.collect()
     rss_before = _current_rss_mb()
     engine = PaddleOCR(
         lang="en",
@@ -230,20 +257,20 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
         mkldnn_cache_capacity=OCR_MKLDNN_CACHE_CAPACITY,
         cpu_threads=OCR_CPU_THREADS,
     )
-    # [جديد — قياس فعلي لا تخمين] يُسجَّل بكل بناء/إعادة بناء (البناء
-    # الأول + كل إعادة بناء دورية بند 3) — عدة عينات عبر التشغيلة الواحدة
-    # بدل عينة واحدة فقط. الهدف: معرفة البصمة الفعلية لذاكرة محرك واحد
-    # بـenable_mkldnn=True تحديدًا (القيمة المستخدَمة فعليًا بهذا المشروع)
-    # — غير موثَّقة بأي مصدر رسمي وُجد بالبحث (فقط رقم enable_mkldnn=False
-    # ~43GB موثَّق بـissue #17955). هذا الرقم مطلوب صراحةً قبل الحكم بأمان
-    # تشغيل محركين بعمليتين منفصلتين (multiprocessing) لاستغلال النواة
-    # الثانية فعليًا — قرار مؤجَّل حتى تتوفر هذه القياسات من تشغيلة حقيقية.
+    # [مُعدَّل — بند (4)] سجل تشخيصي عام لمراقبة نمو ذاكرة محرك OCR عبر
+    # التشغيلة (كل بناء أول + كل إعادة بناء دورية بند 3) — لا يُستخدَم لأي
+    # قرار توازي مستقبلي (فكرة تشغيل محركين بعمليتين منفصلتين استغلالًا
+    # للنواة الثانية أُلغيت صراحةً ببند 3 لصالح عملية واحدة مستقرة + حد
+    # RSS أقصى وإعادة تشغيل)؛ الرقم مفيد فقط لتتبّع بصمة الذاكرة الفعلية
+    # هنا. القياس دقيق الآن (لا القديم والجديد معًا): rss_before أعلاه
+    # يُقاس بعد إسقاط مرجع المحرك القديم صراحةً وgc.collect() (من المستدعي
+    # ثم هنا)، لا أثناء بقائه حيًا كما كان سابقًا.
     rss_after = _current_rss_mb()
     if rss_before is not None and rss_after is not None:
         print(
             f"  📏 [قياس RSS — بناء محرك OCR] {rss_before:.0f}MB → {rss_after:.0f}MB "
             f"(Δ{rss_after - rss_before:+.0f}MB) | mkldnn={enable_mkldnn} "
-            f"cpu_threads={OCR_CPU_THREADS} — يُستخدَم لاحقًا لتقييم أمان تشغيل عمليتين OCR متوازيتين"
+            f"cpu_threads={OCR_CPU_THREADS}"
         )
     return engine
 
@@ -263,8 +290,19 @@ def _reinit_paddleocr_engine(enable_mkldnn: bool):
     المخزَّنة تُفقَد كليًا عند بناء كائن PaddleOCR جديد. لا تُعطِّل mkldnn هنا
     دائمًا (بعكس الاحتياطي المخصَّص لخلل PIR) لأن التراكم أصلًا محدود الآن
     بـOCR_MKLDNN_CACHE_CAPACITY، فلا داعٍ للتضحية بتسريع oneDNN الكامل لمجرد
-    إعادة بناء دورية."""
+    إعادة بناء دورية.
+
+    [مُعدَّل — بند (4): تصحيح توقيت قياس RSS] المرجع العمومي القديم يُسقَط
+    صراحةً (= None) وgc.collect() **قبل** استدعاء _build_paddleocr_engine،
+    لا بعده كما كان سابقًا. السلوك السابق (الاستبدال بعد اكتمال البناء
+    الجديد بالكامل) كان يعني أن rss_before/rss_after داخل _build_
+    paddleocr_engine تُقاسان بينما المحرك القديم لا يزال حيًا مُشارًا إليه
+    طوال بناء الجديد — فتُقاس ذاكرة المحركين معًا لا الجديد وحده، وΔ
+    المطبوعة كانت مضلِّلة لكل إعادة بناء (البناء الأول فقط كان سليمًا، إذ
+    لا محرك قديم أصلًا حينها)."""
     global _PADDLEOCR_ENGINE
+    _PADDLEOCR_ENGINE = None
+    gc.collect()
     _PADDLEOCR_ENGINE = _build_paddleocr_engine(enable_mkldnn=enable_mkldnn)
     return _PADDLEOCR_ENGINE
 
@@ -273,7 +311,10 @@ def _reinit_paddleocr_engine_without_mkldnn():
     """[احتياطي — مرة واحدة فقط] يُستدعى حصرًا عند رصد نص الخلل
     ConvertPirAttribute2RuntimeAttribute تحديدًا. يعيد تهيئة المحرك
     بـenable_mkldnn=False ويسجّل تحذيرًا عربيًا واضحًا في اللوج كي يُلاحَظ
-    لو تكرر (يعني أن التثبيت المثبَّت لم يعد يطابق الافتراض الموثَّق)."""
+    لو تكرر (يعني أن التثبيت المثبَّت لم يعد يطابق الافتراض الموثَّق).
+
+    [مُعدَّل — بند (4)] نفس تصحيح توقيت القياس بـ_reinit_paddleocr_engine —
+    إسقاط صريح للمرجع القديم + gc.collect() قبل البناء الجديد لا بعده."""
     global _PADDLEOCR_ENGINE, _PADDLEOCR_MKLDNN_FALLBACK_DONE
     print(
         "⚠️ [OCR احتياطي] رُصد خلل PIR/oneDNN "
@@ -282,6 +323,8 @@ def _reinit_paddleocr_engine_without_mkldnn():
         "إن تكرر هذا التحذير بشكل متكرر، فالتثبيت الفعلي لم يعد يطابق "
         "paddleocr==3.2.0 / paddlepaddle==3.1.1 الموثَّقين كآمنين."
     )
+    _PADDLEOCR_ENGINE = None
+    gc.collect()
     _PADDLEOCR_ENGINE = _build_paddleocr_engine(enable_mkldnn=False)
     _PADDLEOCR_MKLDNN_FALLBACK_DONE = True
     return _PADDLEOCR_ENGINE
@@ -373,10 +416,26 @@ def _predict_with_engine_fallback(tmp_paths: list[str], diag: dict | None = None
         try:
             return engine.predict(tmp_paths)
         except NotImplementedError as e:
-            if _PIR_ONEDNN_ERROR_MARKER not in str(e) or _PADDLEOCR_MKLDNN_FALLBACK_DONE:
+            if _PIR_ONEDNN_ERROR_MARKER not in str(e):
                 raise
-            engine = _reinit_paddleocr_engine_without_mkldnn()
-            continue
+            # [بند 1 — إصلاح عاجل] لا نُعطِّل mkldnn تلقائيًا هنا بعد الآن.
+            # تعطيله عند هذا الخلل تحديدًا كان "إصلاحًا" يستبدل خطأ فوري
+            # بمشكلة أخطر وصامتة: استهلاك ~43GB رام موثَّق (issue #17955)
+            # على رانر لا يملك سوى 7GB. الفشل الآمن هنا هو ترك الاستثناء
+            # يصعد كما هو — يُسجَّل ويُعامَل كفشل عادي لهذه الصفحة فقط عبر
+            # معالج الاستثناء العام بـ_ocr_handle_page (لا إيقاف للتشغيلة
+            # كاملة). أي بديل آخر (مثلًا محرك استدلال مختلف) يحتاج تحققًا
+            # مستقلًا فعليًا قبل اعتماده، لا افتراضًا سريعًا هنا.
+            print(
+                "🚨 [تحذير حرج — OCR] رُصد خلل PIR/oneDNN "
+                f"({_PIR_ONEDNN_ERROR_MARKER}) رغم الإصدارات المثبَّتة "
+                "المتوقَّعة (paddleocr==3.2.0 / paddlepaddle==3.1.1). لن "
+                "يُعطَّل mkldnn تلقائيًا — ستفشل هذه الصفحة بأمان وتُسجَّل "
+                f"كفشل عادي{diag_str}. إن تكرر هذا التحذير كثيرًا فالتثبيت "
+                "الفعلي لم يعد يطابق الإصدارات الموثَّقة كآمنة، ويلزم فحصه "
+                "فعليًا (لا افتراض)."
+            )
+            raise
         except Exception as e:
             msg = str(e).strip()
             is_known_native_crash = (not msg) or any(marker in msg for marker in _NATIVE_ENGINE_CRASH_MARKERS)
@@ -393,6 +452,17 @@ def _predict_with_engine_fallback(tmp_paths: list[str], diag: dict | None = None
                 f"استثناء محرك أصلي ({msg or 'رسالة فارغة'}){diag_str} — "
                 "إعادة بناء محرك PaddleOCR ومحاولة دفعة هذه الصفحة مرة أخرى."
             )
+            # [مُعدَّل — بند (4)، إصلاح إضافي مكتشَف أثناء تصحيح توقيت
+            # القياس] المتغير المحلي engine هنا كان يُبقي مرجعًا حيًا
+            # للمحرك القديم طوال استدعاء _reinit_paddleocr_engine بأكمله
+            # (بايثون يُقيِّم الطرف الأيمن بالكامل — بما يشمل gc.collect()
+            # الجديد داخل _build_paddleocr_engine — قبل إعادة ربط الاسم
+            # المحلي engine بالنتيجة)، فيُبطل جزءًا من إصلاح التوقيت أعلاه
+            # بهذا المسار تحديدًا: مسار إعادة البناء عند تعطّل فعلي
+            # للمحرك، وهو المسار الأهم عمليًا (لا الدوري فقط بند 3). إسقاط
+            # المرجع المحلي صراحةً هنا أيضًا قبل الاستدعاء يضمن أن
+            # gc.collect() الداخلي يرى بالفعل صفر مراجع للمحرك القديم.
+            del engine
             engine = _reinit_paddleocr_engine(
                 enable_mkldnn=not _PADDLEOCR_MKLDNN_FALLBACK_DONE
             )
@@ -714,6 +784,7 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
 
 async def _ocr_http_chapter_producer(
     sem: asyncio.Semaphore, queue: asyncio.Queue, index: int, url: str, total: int, profile: dict,
+    stop_event: asyncio.Event,
 ) -> None:
     """[جديد — بند (1)، مسار HTTP] منتِج واحد لكل فصل، مقيَّد بـHTTP_CONCURRENCY
     عبر sem (نفس نمط process_chapter بمسار الإنتاج الرئيسي — راجع
@@ -723,8 +794,18 @@ async def _ocr_http_chapter_producer(
     (حتى HTTP_CONCURRENCY فصل) يعملون بالتوازي فعليًا على حلقة asyncio
     الواحدة. get_chapter_images بمسار HTTP لا تُرجع context أبدًا (مؤكَّد من
     كود compress_chapters.py — يُعيد None صراحة لهذا المسار)، فلا حاجة
-    لإغلاقه هنا خلافًا لمسار المتصفح."""
+    لإغلاقه هنا خلافًا لمسار المتصفح.
+
+    [جديد — بند (3)] stop_event يُضبَط من المستهلك عند تجاوز OCR_MAX_RSS_MB.
+    لا إلغاء لأي منتِج بدأ التنزيل فعلًا (يكمل فصله الجاري بأمان كسابقًا)؛
+    الفحص هنا فقط يمنع منتِجًا لم يبدأ بعد (لا يزال ينتظر sem أو بدأ للتو)
+    من بدء تنزيل فصل *جديد* بعد نقطة التوقف — رسالة SKIPPED تُعلم المستهلك
+    بأن هذا الفصل لم يُعالَج إطلاقًا فيُضاف لقائمة remaining_urls.txt، لا
+    لقائمة الفصول الفاشلة (ERROR) التي لا تُعاد تلقائيًا."""
     async with sem:
+        if stop_event.is_set():
+            await queue.put(("SKIPPED", index, None, None))
+            return
         try:
             _context, image_urls, fail_reason = await get_chapter_images(None, url, profile)
         except Exception as e:
@@ -753,7 +834,10 @@ async def _ocr_http_chapter_producer(
         }))
 
 
-async def _ocr_http_consumer(queue: asyncio.Queue, total_chapters: int) -> list:
+async def _ocr_http_consumer(
+    queue: asyncio.Queue, total_chapters: int, chapter_urls: list[str],
+    ocr_dir: "Path", stop_event: asyncio.Event,
+) -> tuple[list["Path"], list[str], int]:
     """[جديد — بند (1)، مسار HTTP] المستهلك الوحيد المشترك بين كل الفصول —
     يسحب أي عنصر جاهز فور توفره بصرف النظر عن الفصل الذي جاء منه، ويُشغِّل
     OCR حصرًا على خيط PaddleOCR المخصَّص (_run_on_ocr_thread، بلا تغيير على
@@ -763,48 +847,93 @@ async def _ocr_http_consumer(queue: asyncio.Queue, total_chapters: int) -> list:
     مع زمن OCR بدل أن يُضاف إليه تسلسليًا. ترتيب صفحات كل فصل على حدة
     مضمون رغم التداخل بين الفصول: كل منتِج فصل يدفع صفحاته للطابور المشترك
     بترتيب تصاعدي، وطابور FIFO يحافظ على الترتيب النسبي لعناصر أي مصدر
-    واحد حتى مع تداخل مصادر أخرى بينها. ينتهي بالضبط عندما يصل DONE/ERROR
-    من كل فصل — وبما أن كل منتِج يدفع DONE/ERROR بعد كل صفحاته دومًا (لا
-    قبلها)، وصول هذه الإشارة لآخر فصل متبقٍ يعني حتمًا استهلاك كل صفحاته
-    فعليًا قبلها."""
+    واحد حتى مع تداخل مصادر أخرى بينها. ينتهي بالضبط عندما يصل
+    DONE/ERROR/SKIPPED من كل فصل — وبما أن كل منتِج يدفع واحدة من هذه
+    الإشارات الثلاث دومًا كإشارة ختامية وحيدة، وصولها لآخر فصل متبقٍ يعني
+    حتمًا انتهاء كل مصادره فعليًا قبلها.
+
+    [جديد — بند (3)] كتابة/دفع Git يحدثان هنا فورًا عند اكتمال كل فصل (لا
+    تجميع بالنهاية كسابقًا) — شرط لازم لضمان "حفظ ما أُنجز" فعليًا لو
+    تعطّلت العملية بكود 75 (تجاوز RSS) أو حتى بانقطاع غير متوقَّع. بعد كل
+    اكتمال (نجاحًا DONE أو فشلًا ERROR — كلاهما "انتهاء محاولة" يُحتسَب
+    لفحص RSS، بعكس SKIPPED التي لم تُعالَج إطلاقًا) تُفحَص RSS الحالية،
+    ولو تجاوزت OCR_MAX_RSS_MB يُضبَط stop_event (يمنع المنتِجين من بدء
+    فصول جديدة — راجع _ocr_http_chapter_producer) بلا إلغاء أي فصل جارٍ
+    فعلًا. يُعيد (files_written, skipped_urls, success_count) — لا حاجة
+    لقائمة نتائج كاملة بالذاكرة بعد الآن، كل نتيجة نجحت كُتبت/دُفعت فورًا."""
     chapters: dict[int, dict] = {}
-    finalized: dict[int, dict | None] = {}
     remaining_producers = total_chapters
     pages_since_rebuild = 0  # عدّاد عام للتشغيلة كاملة — راجع تعليق _ocr_handle_page
+    files_written: list[Path] = []
+    skipped_urls: list[str] = []
+    success_count = 0
 
     def acc(idx: int) -> dict:
         return chapters.setdefault(idx, {
             "page_texts": [], "page_json": [], "meta": None, "total_pages": None, "n_done": 0,
         })
 
-    def maybe_finalize(idx: int) -> None:
+    async def finalize_and_push(idx: int, chapter_result: dict | None) -> None:
+        nonlocal success_count
+        if chapter_result is not None:
+            out_dir = ocr_dir / chapter_result["chapter_slug"]
+            out_dir.mkdir(parents=True, exist_ok=True)
+            txt_path = out_dir / "text_en.txt"
+            json_path = out_dir / "text_en.json"
+            txt_path.write_text(chapter_result["text"], encoding="utf-8")
+            json_path.write_text(
+                json.dumps(chapter_result, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            files_written.extend([txt_path, json_path])
+            success_count += 1
+            if GIT_COMMIT_DIR:
+                ok, msg = await asyncio.to_thread(
+                    _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                    f"OCR: {chapter_result['manga_id']} - الفصل {chapter_result['chapter_num']}",
+                    ["ocr_experiment"],
+                )
+                print(f"  {'✅' if ok else '⚠️'} دفع فصل OCR: {msg}")
+        # [بند 3] فحص RSS بعد كل محاولة فصل تكتمل فعليًا (نجاحًا أو فشلًا)
+        if not stop_event.is_set():
+            rss = _current_rss_mb()
+            if rss is not None and rss >= OCR_MAX_RSS_MB:
+                stop_event.set()
+                print(
+                    f"🚨 [بند 3] RSS الحالية ({rss:.0f}MB) تجاوزت OCR_MAX_RSS_MB "
+                    f"({OCR_MAX_RSS_MB}MB) — إيقاف قبول فصول جديدة، إنهاء الفصول "
+                    "الجارية حاليًا بأمان، ثم خروج بكود 75 لإعادة تشغيل عملية "
+                    "Python جديدة على بقية الفصول المتبقية"
+                )
+
+    def maybe_finalize(idx: int) -> dict | None:
         c = chapters.get(idx)
         if c is None or c["meta"] is None or c["total_pages"] is None:
-            return
+            return None
         if c["n_done"] < c["total_pages"]:
-            return
+            return None
+        result = None
         if c["page_texts"]:
-            finalized[idx] = {
-                **c["meta"],
-                "text": "\n\n".join(c["page_texts"]),
-                "pages": c["page_json"],
-            }
-        else:
-            finalized[idx] = None
+            result = {**c["meta"], "text": "\n\n".join(c["page_texts"]), "pages": c["page_json"]}
         del chapters[idx]
+        return result
 
     while remaining_producers > 0:
         kind, index, a, b = await queue.get()
+        if kind == "SKIPPED":
+            remaining_producers -= 1
+            skipped_urls.append(chapter_urls[index - 1])
+            continue
         if kind == "ERROR":
             remaining_producers -= 1
-            finalized.setdefault(index, None)
+            await finalize_and_push(index, None)
             continue
         if kind == "DONE":
             c = acc(index)
             c["total_pages"] = a
             c["meta"] = b
             remaining_producers -= 1
-            maybe_finalize(index)
+            result = maybe_finalize(index)
+            await finalize_and_push(index, result)
             continue
         # kind == "PAGE"
         c = acc(index)
@@ -816,22 +945,37 @@ async def _ocr_http_consumer(queue: asyncio.Queue, total_chapters: int) -> list:
             c["page_texts"], c["page_json"], pages_since_rebuild,
         )
         c["n_done"] += 1
-        maybe_finalize(index)
+        result = maybe_finalize(index)
+        if result is not None:
+            await finalize_and_push(index, result)
 
-    return [finalized[i] for i in sorted(finalized) if finalized[i] is not None]
+    return files_written, skipped_urls, success_count
 
 
 async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
+    """[مُعدَّلة — بند (3)] الفرق الجوهري عن سابقًا: الكتابة/الدفع لكل فصل
+    تحدث فورًا عند اكتماله (داخل _ocr_http_consumer لمسار HTTP، أو مباشرة
+    بحلقة مسار المتصفح أدناه) بدل تجميع كل النتائج بالذاكرة والكتابة/الدفع
+    مرة واحدة بالنهاية — شرط لازم لضمان عدم فقدان أي فصل أُنجز فعلًا لو
+    توقفت هذه العملية (تجاوز RSS أو انقطاع غير متوقَّع). عند تجاوز
+    OCR_MAX_RSS_MB: تتوقف هذه الدالة عن بدء فصول جديدة، تُنهي ما تبقى
+    بأمان، تكتب remaining_urls.txt بالفصول التي لم تُعالَج إطلاقًا، وتخرج
+    بكود 75 (لا استثناء يُرفَع — sys.exit صريح) ليعيد الـworkflow تشغيل
+    عملية Python جديدة بهذه القائمة تحديدًا (بلا سقف صريح لعدد الإعادات،
+    فقط مهلة الـ240 دقيقة الكلية للتشغيلة — قرار صريح بملف الـworkflow)."""
     print("🔤 المرحلة ١: تجربة استخراج النص الإنجليزي (OCR) — لن يُضغط أو يُحفَظ أي صورة، النتيجة نص+JSON فقط")
     profile = get_profile()
     print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
+    print(f"⚙️ [بند 3] حد RSS الأقصى: {OCR_MAX_RSS_MB}MB — يُفحَص بعد اكتمال كل فصل")
     fetch_mode = profile.get("fetch_mode", "browser")
 
     ocr_dir = OUTPUT_DIR / "ocr_experiment"
     ocr_dir.mkdir(parents=True, exist_ok=True)
 
     total = len(chapter_urls)
-    results: list = []
+    files_written: list[Path] = []
+    skipped_urls: list[str] = []
+    success_count = 0
 
     try:
         if fetch_mode == "http":
@@ -843,16 +987,24 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                 f"⚙️ [بند 1] تحميل حتى {HTTP_CONCURRENCY} فصل بالتوازي، "
                 f"مستهلك OCR واحد مشترك (سعة طابور: {OCR_DOWNLOAD_QUEUE_SIZE})"
             )
+            stop_event = asyncio.Event()
             queue: asyncio.Queue = asyncio.Queue(maxsize=OCR_DOWNLOAD_QUEUE_SIZE)
             sem = asyncio.Semaphore(HTTP_CONCURRENCY)
             producer_tasks = [
-                asyncio.create_task(_ocr_http_chapter_producer(sem, queue, i, url, total, profile))
+                asyncio.create_task(
+                    _ocr_http_chapter_producer(sem, queue, i, url, total, profile, stop_event)
+                )
                 for i, url in enumerate(chapter_urls, start=1)
             ]
-            consumer_task = asyncio.create_task(_ocr_http_consumer(queue, total))
+            consumer_task = asyncio.create_task(
+                _ocr_http_consumer(queue, total, chapter_urls, ocr_dir, stop_event)
+            )
             await asyncio.gather(*producer_tasks)
-            results = await consumer_task
+            files_written, skipped_urls, success_count = await consumer_task
         else:
+            # [بند 3] مسار المتصفح تسلسلي أصلًا (فصل بعد آخر، بلا تزامن) —
+            # لا "فصول جارية" أخرى لإنهائها عند التوقف، فقط الفصول التالية
+            # بالقائمة التي لم تبدأ بعد (chapter_urls[i:]) تُعتبَر متبقية.
             async with async_playwright() as p:
                 browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
                 for i, url in enumerate(chapter_urls, start=1):
@@ -862,24 +1014,37 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                         print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء تجربة OCR: {e}")
                         r = None
                     if r:
-                        results.append(r)
+                        out_dir = ocr_dir / r["chapter_slug"]
+                        out_dir.mkdir(parents=True, exist_ok=True)
+                        txt_path = out_dir / "text_en.txt"
+                        json_path = out_dir / "text_en.json"
+                        txt_path.write_text(r["text"], encoding="utf-8")
+                        json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
+                        files_written += [txt_path, json_path]
+                        success_count += 1
+                        if GIT_COMMIT_DIR:
+                            ok, msg = await asyncio.to_thread(
+                                _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                                f"OCR: {r['manga_id']} - الفصل {r['chapter_num']}", ["ocr_experiment"],
+                            )
+                            print(f"  {'✅' if ok else '⚠️'} دفع فصل OCR: {msg}")
+                    rss = _current_rss_mb()
+                    if rss is not None and rss >= OCR_MAX_RSS_MB:
+                        print(
+                            f"🚨 [بند 3] RSS الحالية ({rss:.0f}MB) تجاوزت "
+                            f"OCR_MAX_RSS_MB ({OCR_MAX_RSS_MB}MB) بعد الفصل "
+                            f"{i}/{total} — إيقاف عن بدء فصول جديدة (مسار "
+                            "المتصفح تسلسلي، لا فصول جارية أخرى لإنهائها)"
+                        )
+                        skipped_urls = chapter_urls[i:]
+                        break
                 await browser.close()
     finally:
         # [جديد] إغلاق خيط OCR المخصَّص فور انتهاء آخر استخدام فعلي له —
         # كل معالجة الفصول (وبالتالي كل نداءات predict) انتهت هنا، وما
-        # تبقى (كتابة ملفات/zip/دفع git) لا علاقة له بمحرك OCR إطلاقًا.
+        # تبقى (zip/دفع git احتياطي/remaining_urls) لا علاقة له بمحرك OCR.
         # finally يضمن الإغلاق حتى لو استُثنِي خطأ غير متوقَّع.
         _shutdown_ocr_thread()
-
-    files_written: list[Path] = []
-    for r in results:
-        out_dir = ocr_dir / r["chapter_slug"]
-        out_dir.mkdir(parents=True, exist_ok=True)
-        txt_path = out_dir / "text_en.txt"
-        json_path = out_dir / "text_en.json"
-        txt_path.write_text(r["text"], encoding="utf-8")
-        json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
-        files_written += [txt_path, json_path]
 
     run_zip_relpath = f"ocr_experiment/runs/run-{RUN_ID}.zip"
     run_zip_path = OUTPUT_DIR / run_zip_relpath
@@ -899,20 +1064,49 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         print(f"🗜️ أُنشئ أرشيف zip خاص بهذه التشغيلة فقط ({zipped_count} ملف): {run_zip_relpath}")
 
     if GIT_COMMIT_DIR:
-        # يكتب حصرًا ضمن ocr_experiment/ — نفس فلسفة تقييد allowed_paths
-        # المستخدمة بوضع التشخيص، لا يلمس manifest.json أو مجلدات الفصول
+        # [بند 3] دفع احتياطي شامل — كل فصل نجح دُفع فورًا فعلًا (أعلاه)،
+        # هذا يغطي فقط ملف zip هذه التشغيلة (يُبنى بعد اكتمال الحلقة، لا
+        # يمكن دفعه فوريًا كالفصول) وأي ملف آخر لم يُدفَع لسبب ما.
         ok, msg = await asyncio.to_thread(
             _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
-            f"تجربة OCR — {len(results)} فصل", ["ocr_experiment"],
+            f"تجربة OCR — دفع احتياطي نهائي ({success_count} فصل)", ["ocr_experiment"],
         )
-        print(f"{'✅' if ok else '⚠️'} دفع نتائج تجربة OCR: {msg}")
+        print(f"{'✅' if ok else '⚠️'} دفع احتياطي نهائي لتجربة OCR: {msg}")
+
+    # [جديد — بند 3] الفصول التي لم تُعالَج إطلاقًا (تجاوز RSS) تُكتب هنا
+    # ليقرأها استدعاء compress_chapters.py التالي (عبر متغير CHAPTER_URLS
+    # الذي يضبطه الـworkflow) — هذا هو نفسه ما يحل "أي الفصول أُنجزت" بلا
+    # حاجة لآلية skip منفصلة (بعكس SKIP_EXISTING_CHAPTERS بالمسار الرئيسي):
+    # القائمة المتبقية هنا مبنية أصلًا من الفصول التي لم تُعالَج، لا التي
+    # عولجت وفشلت (تلك تبقى بقائمة الفشل العادية، لا تُعاد تلقائيًا).
+    if skipped_urls:
+        remaining_path = ocr_dir / "remaining_urls.txt"
+        remaining_path.write_text("\n".join(skipped_urls) + "\n", encoding="utf-8")
+        if GIT_COMMIT_DIR:
+            ok, msg = await asyncio.to_thread(
+                _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                f"OCR: حفظ {len(skipped_urls)} رابط متبقٍ بعد تجاوز RSS", ["ocr_experiment"],
+            )
+            print(f"{'✅' if ok else '⚠️'} دفع قائمة الفصول المتبقية: {msg}")
 
     print("\n" + "=" * 50)
-    print(f"✅ اكتملت تجربة OCR لـ {len(results)}/{total} فصل")
-    if len(results) < total:
-        print(f"  ❌ فشل: {total - len(results)} فصل (راجع الرسائل أعلاه)")
+    print(f"✅ اكتملت تجربة OCR لـ {success_count}/{total} فصل بهذه العملية")
+    attempted = total - len(skipped_urls)
+    if success_count < attempted:
+        print(f"  ❌ فشل: {attempted - success_count} فصل (راجع الرسائل أعلاه)")
+    if skipped_urls:
+        print(f"  ⏸️ لم يُعالَج (متبقٍ لعملية تالية): {len(skipped_urls)} فصل")
     print(f"📁 النتائج محليًا في: {ocr_dir}")
     if zip_ok:
         print(f"🔗 أرشيف zip خاص بهذه التشغيلة فقط (نص+JSON لكل فصل): {OUTPUT_DIR}/{run_zip_relpath}")
     print("⚠️ تذكير: هذه تجربة — بنود sfx مُستبعَدة نهائيًا من الناتج (لا وسم للمراجعة)، تحقق من عتبة OCR_SFX_MIN_LETTERS والتجميع قبل اعتماد الناتج نهائيًا")
     print("=" * 50)
+
+    if skipped_urls:
+        print(
+            f"⏸️ [بند 3] توقفت هذه العملية بعد تجاوز OCR_MAX_RSS_MB "
+            f"({OCR_MAX_RSS_MB}MB) — {len(skipped_urls)} فصل متبقٍ محفوظ في "
+            "ocr_experiment/remaining_urls.txt"
+        )
+        print("🔁 يُتوقَّع من خطوة \"تشغيل الضغط\" بملف الـworkflow إعادة تشغيل عملية Python جديدة بهذه القائمة تلقائيًا")
+        sys.exit(75)
