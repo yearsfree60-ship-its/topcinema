@@ -57,6 +57,11 @@ on:
         required: false
         default: false
         type: boolean
+      manga_title_override:
+        description: "تجاوز يدوي اختياري لاسم المانهوا بتسمية أرشيف zip واسم الأرتيفاكت (وضع تجربة OCR فقط). اتركه فارغًا للاعتماد على التخمين التلقائي من عنوان صفحة أول فصل — لو التخمين غير مُرضٍ أو فشل، استخدم هذا الحقل"
+        required: false
+        default: ""
+        type: string
       ocr_detection_model:
         description: "نموذج كشف النص (detection) لوضع تجربة OCR — mobile أسرع بكثير على CPU (~60% حسب قياسات PaddleOCR الرسمية) بفرق دقة أقل من 1% للنص الإنجليزي المطبوع تحديدًا، server أدق للنصوص الفنية/المعقدة. يُتجاهَل كليًا لو ocr_experiment_mode غير مفعّل"
         required: false
@@ -179,6 +184,7 @@ jobs:
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           DIAGNOSTIC_MODE: ${{ inputs.diagnostic_mode }}
           OCR_EXPERIMENT_MODE: ${{ inputs.ocr_experiment_mode }}
+          MANGA_TITLE_OVERRIDE: ${{ inputs.manga_title_override }}
           OCR_DETECTION_MODEL: ${{ inputs.ocr_detection_model }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           RUN_ID: ${{ github.run_id }}
@@ -284,6 +290,27 @@ jobs:
             fi
           fi
 
+      # [إضافة] compress_chapters.py/ocr_extraction.py الآن يسمّيان أرشيف
+      # zip بعنوان المانهوا وأرقام الفصول (لو تخمين العنوان التلقائي نجح أو
+      # عبر manga_title_override اليدوي)، لا run-<RUN_ID> ثابتًا دومًا —
+      # الاسم الفعلي غير معروف مسبقًا وقت كتابة هذا الملف، فتُقرأ الخطوة هنا
+      # اسم الملف الفعلي من القرص بعد اكتمال Python مباشرة. fallback تلقائي
+      # لـrun-<RUN_ID> لو لم يُعثر على أي zip إطلاقًا (فشل كامل مثلًا) —
+      # يطابق fallback البايثون نفسه بالضبط، فلا يظهر رابط/اسم أرتيفاكت
+      # مكسور بأي حالة.
+      - name: تحديد اسم أرشيف zip الفعلي (وضع تجربة OCR)
+        id: ocr_zip_name
+        if: always() && inputs.ocr_experiment_mode
+        run: |
+          zip_path="$(ls "$OUTPUT_WORKTREE"/output/ocr_experiment/runs/*.zip 2>/dev/null | head -n1 || true)"
+          if [ -n "$zip_path" ]; then
+            zip_name="$(basename "$zip_path" .zip)"
+          else
+            echo "⚠️ لم يُعثر على أي أرشيف zip بمجلد runs — الرجوع للتسمية الافتراضية run-${{ github.run_id }}"
+            zip_name="run-${{ github.run_id }}"
+          fi
+          echo "zip_name=$zip_name" >> "$GITHUB_OUTPUT"
+
       # [تعديل] الآن يطبع رابطين: الأرشيف الكامل (كل الفصول المضغوطة تاريخيًا،
       # لم يُلمَس) + رابط manifest مستقل خاص فقط بفصول هذه التشغيلة تحديدًا
       # (output/runs/run-<RUN_ID>.json) — بلا أي حذف أو تصفير للأرشيف الرئيسي.
@@ -292,16 +319,16 @@ jobs:
         run: |
           echo "=================================================="
           echo "📦 أرشيف zip خاص بهذه التشغيلة (نص+JSON لكل فصل) — رابط تنزيل مباشر بلا تسجيل دخول:"
-          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/runs/run-${{ github.run_id }}.zip"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/runs/${{ steps.ocr_zip_name.outputs.zip_name }}.zip"
           echo ""
-          echo "أو حمّل أرتيفاكت 'ocr-experiment-${{ github.run_id }}' من صفحة هذه التشغيلة أعلاه (نسخة احتياطية)"
+          echo "أو حمّل أرتيفاكت '${{ steps.ocr_zip_name.outputs.zip_name }}' من صفحة هذه التشغيلة أعلاه (نسخة احتياطية)"
           echo "=================================================="
 
       - name: رفع نتائج تجربة OCR كأرتيفاكت
         if: always() && inputs.ocr_experiment_mode
         uses: actions/upload-artifact@v4
         with:
-          name: ocr-experiment-${{ github.run_id }}
+          name: ${{ steps.ocr_zip_name.outputs.zip_name }}
           path: ${{ env.OUTPUT_WORKTREE }}/output/ocr_experiment
           if-no-files-found: warn
           retention-days: 14
