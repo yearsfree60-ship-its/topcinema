@@ -39,6 +39,7 @@ CDP/Runtime.enable بعد — هذه ميزة معلَّقة منفصلة تما
 """
 import asyncio
 import json
+import os
 import re
 import socket
 import ssl
@@ -210,6 +211,158 @@ def _runner_network_info_sync() -> dict:
         return {"ip": None, "org_asn": None, "city": None, "country": None, "error": f"status={resp.status_code}"}
     except Exception as e:
         return {"ip": None, "org_asn": None, "city": None, "country": None, "error": f"{e}"}
+
+
+# ============================== تشخيص عميق (DEEP_DIAGNOSTIC) ==============================
+# [إضافة] الخيار موجود فعليًا بملف الـworkflow (compress-chapters-11.yml،
+# متغيّر deep_diagnostic) ويُمرَّر كمتغيّر بيئة DEEP_DIAGNOSTIC منذ إضافته،
+# لكن لم يكن يُقرأ أو يُستخدَم بأي جزء من الكود حتى الآن — هذا هو التفعيل
+# الفعلي الأول له. يعمل فقط لو diagnostic_mode مفعّلًا أصلًا (كما موثَّق
+# بوصف الخيار بالـYAML).
+DEEP_DIAGNOSTIC = os.environ.get("DEEP_DIAGNOSTIC", "").strip().lower() in ("1", "true", "yes")
+
+
+async def _runtime_enable_ab_probe(url: str) -> dict:
+    """[إضافة — DEEP_DIAGNOSTIC] مقارنة A/B فعلية لتسريب أمر CDP
+    'Runtime.enable' — توثيق منشور منذ 2024 (Antoine Vastel/DataDome)
+    ومؤكَّد بمصادر أحدث يُثبت أن مكتبات الأتمتة الشائعة (Playwright/
+    Puppeteer ومنها Playwright نفسه المُستخدَم بالممر الرئيسي هنا) تُصدر
+    هذا الأمر تلقائيًا عند إدارة سياقات تنفيذ الصفحة، وأن هذا الإصدار
+    نفسه — بمعزل تام عن أي بصمة JS مثل navigator.webdriver التي يُصحّحها
+    stealth — إشارة أتمتة يعتمدها Cloudflare/DataDome فعليًا.
+
+    الفحص هنا مستقل تمامًا عن stealth_comparison الموجود مسبقًا (ذاك يقيس
+    أثر تصحيح خصائص JS فقط، لا مستوى بروتوكول CDP نفسه): يُشغَّل هنا متصفح
+    منفصل كليًا عبر حزمة patchright (بديل مطابق لواجهة Playwright، مساحة
+    استيراد مختلفة تمامًا — patchright.async_api — فلا تعارض مع حزمة
+    playwright الأصلية المُثبَّتة بنفس البيئة)، والتي تتفادى بنية المكتبة
+    نفسها استدعاء Runtime.enable. تُعاد استخدام classify_challenge_page
+    وprobe_challenge_with_extended_wait الموجودتين فعليًا حرفيًا بلا أي
+    نسخة موازية — كلاهما يستدعيان واجهة Page عامة فقط (title/query_selector/
+    inner_text/wait_for_timeout/reload)، وpatchright مصمَّم كبديل مطابق
+    لهذه الواجهة تمامًا فتعمل بلا أي تعديل.
+
+    حقل خام بالكامل: النتيجة تُقارَن يدويًا (بالتقرير) بنتيجة browser_probe
+    الرئيسي لنفس الرابط — لا حكم/استنتاج مُدمَج هنا حول "هل هذا هو السبب".
+    لو حزمة patchright غير مثبَّتة، يُسجَّل ذلك بحقل error بدل كسر التشخيص
+    كله (استيراد كسول داخل الدالة تحديدًا لهذا السبب)."""
+    result = {
+        "tested": False, "patchright_available": False,
+        "protection_category": None, "challenge_detected": None,
+        "resolved_after_reload": None, "elapsed_sec": None, "error": None,
+    }
+    try:
+        from patchright.async_api import async_playwright as _patchright_async_playwright
+    except ImportError as e:
+        result["error"] = f"حزمة patchright غير مثبَّتة بهذه البيئة: {e}"
+        return result
+    result["patchright_available"] = True
+
+    t0 = time.monotonic()
+    try:
+        async with _patchright_async_playwright() as pr:
+            pr_browser = await pr.chromium.launch()
+            try:
+                pr_context = await pr_browser.new_context(
+                    user_agent=UA, viewport={"width": 1280, "height": 1000}, locale="en-US",
+                    extra_http_headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"},
+                )
+                pr_page = await pr_context.new_page()
+                try:
+                    await pr_page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
+                except Exception as e:
+                    result["error"] = f"فشل التحميل الأولي عبر patchright: {e}"
+
+                category = await classify_challenge_page(pr_page)
+                result["tested"] = True
+                result["protection_category"] = category
+                result["challenge_detected"] = category != "none"
+
+                if category == "solvable_challenge":
+                    probe = await probe_challenge_with_extended_wait(pr_page)
+                    final = probe["final_after_reload"]
+                    if final["attempted"]:
+                        result["protection_category"] = final["category"] or category
+                        result["resolved_after_reload"] = bool(final["resolved"])
+                    elif probe["pure_wait"]["resolved_during_pure_wait"]:
+                        result["resolved_after_reload"] = True
+                        result["protection_category"] = probe["pure_wait"]["final_category_after_wait"]
+                else:
+                    result["resolved_after_reload"] = category == "none"
+
+                await pr_context.close()
+            finally:
+                await pr_browser.close()
+    except Exception as e:
+        result["error"] = ((result["error"] + " | ") if result["error"] else "") + f"استثناء عام بمتصفح patchright: {e}"
+    result["elapsed_sec"] = round(time.monotonic() - t0, 2)
+    return result
+
+
+SOURCE_URL_LEAK_JS = """() => {
+    try { throw new Error('diagnostic-source-url-probe'); }
+    catch (e) { return e.stack || null; }
+}"""
+
+
+async def _source_url_leak_probe(browser, url: str) -> dict:
+    """[إضافة — DEEP_DIAGNOSTIC] بصمة stack خام لاستدعاء page.evaluate واحد
+    داخل الصفحة — سكربتات page.evaluate/addInitScript المُحقَنة عبر CDP
+    تحمل بصمة sourceURL اصطناعية (مصدر مكتبة الأتمتة نفسها، لا الصفحة)
+    يمكن لأي سكربت حماية يعمل بنفس الصفحة قراءتها بفحص .stack لاستثناء
+    مُلتقَط — هذا ما تصحّحه rebrowser-patches/patchright تحديدًا (sourceURL
+    عام مميَّز). تسجيل خام فقط هنا: النص الكامل لـ.stack كما وصل، بلا أي
+    مطابقة لسلسلة 'معروفة' مفترَضة — القرار اليدوي لاحقًا يحدد هل يحمل
+    توقيعًا مميِّزًا فعليًا لهذا الموقع تحديدًا."""
+    result = {"tested": False, "stack_sample": None, "error": None}
+    try:
+        context = await browser.new_context(user_agent=UA)
+    except Exception as e:
+        result["error"] = f"فشل فتح سياق منفصل: {e}"
+        return result
+    try:
+        page = await context.new_page()
+        try:
+            await page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
+        except Exception as e:
+            result["error"] = f"فشل التحميل الأولي: {e}"
+        try:
+            result["stack_sample"] = await page.evaluate(SOURCE_URL_LEAK_JS)
+            result["tested"] = True
+        except Exception as e:
+            result["error"] = ((result["error"] + " | ") if result["error"] else "") + f"فشل evaluate: {e}"
+    finally:
+        await context.close()
+    return result
+
+
+async def _deep_diagnostic_probes(browser, url: str, main_protection_category: str) -> dict:
+    """[إضافة — DEEP_DIAGNOSTIC] يُستدعى فقط لو DEEP_DIAGNOSTIC مفعّل
+    وmain_protection_category == 'solvable_challenge' لهذا الرابط تحديدًا
+    (نتيجة browser_probe الرئيسي) — لا فائدة تشخيصية من تشغيله على رابط
+    غير محجوب أصلًا أو محظور حظرًا نهائيًا لا علاقة له بتسريبات CDP.
+    يُجمِّع مسبارين خامّين فقط (راجع تعليق كل دالة) بلا أي طبقة استنتاج/
+    تسمية إضافية مُدمَجة بالكود."""
+    print("🧬 تشخيص عميق (DEEP_DIAGNOSTIC) — تسريب Runtime.enable (A/B عبر patchright) + بصمة sourceURL...")
+    runtime_r = await _runtime_enable_ab_probe(url)
+    if runtime_r["error"]:
+        print(f"   ⚠️ مسبار Runtime.enable: {runtime_r['error']}")
+    elif runtime_r["tested"]:
+        print(f"   نتيجة عبر patchright (بلا تسريب Runtime.enable): تصنيف={runtime_r['protection_category']} "
+              f"| انحل بعد الإعادة={runtime_r['resolved_after_reload']} | زمن={runtime_r['elapsed_sec']}ث")
+        print(f"   ↔️ للمقارنة المباشرة — نتيجة الممر الرئيسي (Playwright عادي، بتسريب Runtime.enable): "
+              f"تصنيف={main_protection_category}")
+
+    source_r = await _source_url_leak_probe(browser, url)
+    if source_r["error"]:
+        print(f"   ⚠️ مسبار sourceURL: {source_r['error']}")
+    elif source_r["tested"]:
+        print(f"   بصمة stack مُلتقَطة (أول 120 حرفًا): {(source_r['stack_sample'] or '')[:120]!r}")
+
+    return {
+        "runtime_enable_leak_probe": runtime_r,
+        "source_url_leak_probe": source_r,
+    }
 
 
 # ============================== وضع التشخيص (موسّع) ==============================
@@ -1033,6 +1186,14 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     else:
         print("   ✅ النتيجة متطابقة بين التكرارين")
 
+    deep_diag = None
+    if DEEP_DIAGNOSTIC:
+        if browser_r.get("protection_category") == "solvable_challenge":
+            deep_diag = await _deep_diagnostic_probes(browser, url, browser_r.get("protection_category"))
+        else:
+            print(f"🧬 تشخيص عميق (DEEP_DIAGNOSTIC): تخطّي — تصنيف الرابط الحالي "
+                  f"{browser_r.get('protection_category')!r} (يعمل فقط على solvable_challenge)")
+
     hotlink_probes = browser_r.get("hotlink_probes") or []
     if hotlink_probes:
         print(f"③ فحص حماية السرقة (hotlink) على {len(hotlink_probes)} صورة عيّنة (أولى/وسط/أخيرة) — عزل ثلاثي لكل واحدة...")
@@ -1143,6 +1304,7 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
         "static_probe": static_r, "browser_probe": browser_r, "browser_probe_second_run": browser_r2,
         "consistency_diffs": consistency_diffs, "rate_limit_probe": rl,
         "history_diffs_since_last_run": history_diffs,
+        "deep_diagnostic": deep_diag,
         "diagnostic_run_files": {
             "report": report_relpath,
             "screenshots": [
@@ -1158,6 +1320,7 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
 
 async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     print("🔬 وضع التشخيص مفعّل (موسّع) — لن يُنزَّل أو يُضغط أي فصل فعليًا، ولن يُستخدم اختيار الموقع المصدر إطلاقًا")
+    print(f"🧬 DEEP_DIAGNOSTIC: {'مفعّل — يضيف مسبارَي Runtime.enable/sourceURL لكل رابط solvable_challenge (~90-180ث إضافية لكل رابط)' if DEEP_DIAGNOSTIC else 'غير مفعّل'}")
     if len(chapter_urls) > 3:
         print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا ويشغّل فحصًا مزدوجًا لكل مرحلة). سيُتابَع بكل الروابط رغم ذلك")
 
@@ -1255,5 +1418,3 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     if zip_ok:
         print(f"🔗 أرشيف zip خاص بهذه التشغيلة فقط (تقارير + صور، رابط تنزيل مباشر يعمل على أندرويد): {OUTPUT_DIR}/{run_zip_relpath}")
     print("=" * 50)
-
-
