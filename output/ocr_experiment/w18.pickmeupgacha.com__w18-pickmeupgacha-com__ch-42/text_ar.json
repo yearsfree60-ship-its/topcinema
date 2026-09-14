@@ -1,0 +1,923 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "42",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "PICK ME UP R",
+          "confidence": 0.093,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ART WASAKBASAK (3B2S) ADAPTATION CHO WOONEH (REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.959,
+          "text_ar": "الفن: واساكباساك (3B2S) | الاقتباس: تشو وونيه (ريديك ستودي) | الأصل: هيرمود"
+        },
+        {
+          "text": "LOKi, WHAT iF MASTER DiDN'T CHANGE?",
+          "confidence": 0.946,
+          "text_ar": "لوكي، ماذا لو لم يتغير السيد؟"
+        },
+        {
+          "text": "THAT'S NOT POSSIBLE.",
+          "confidence": 0.978,
+          "text_ar": "هذا غير ممكن."
+        },
+        {
+          "text": "WHEN'S THE NEXT CHANCE?",
+          "confidence": 0.962,
+          "text_ar": "متى ستكون الفرصة القادمة؟"
+        },
+        {
+          "text": "YOU MEAN TO USE THE iNTERNET?",
+          "confidence": 0.952,
+          "text_ar": "هل تقصد استخدام الإنترنت؟"
+        },
+        {
+          "text": "IT DEPENDS ON HOW FAST THE iNTERVENTiON POiNTS ARE COLLECTED.",
+          "confidence": 0.976,
+          "text_ar": "يعتمد الأمر على سرعة تجميع نقاط التدخل."
+        },
+        {
+          "text": "WHAT IS AN INTERVENTIONPOINT ANYWAY?",
+          "confidence": 0.961,
+          "text_ar": "ما هي نقاط التدخل هذه على أي حال؟"
+        },
+        {
+          "text": "IT'S WHAT THE MOEBiUS USES TO MESS WiTH CAUSE AND EFFECT AND THE RULES.",
+          "confidence": 0.97,
+          "text_ar": "إنها ما يستخدمه موبيوس للعبث بقوانين السبب والنتيجة."
+        },
+        {
+          "text": "WHEN MASTER LOGS iN AND iS ACTiVE, THE INTERVENTiON POiNTS PiLE UP.",
+          "confidence": 0.947,
+          "text_ar": "عندما يسجل السيد دخوله ويكون نشطاً، تتراكم نقاط التدخل."
+        },
+        {
+          "text": "THE POiNTS PiLE UP FASTER iF YOU GO UP A FLOOR LEVEL TOO.",
+          "confidence": 0.956,
+          "text_ar": "تتراكم النقاط بشكل أسرع إذا صعدت إلى مستوى طابق أعلى أيضاً."
+        },
+        {
+          "text": "AND THE GEMS!",
+          "confidence": 0.937,
+          "text_ar": "والجواهر!"
+        },
+        {
+          "text": "THEY'RE THE PHYSiCAL EMBODiMENT OF INTERVENTiON POiNTS. A JEWEL CONTAiNiNG THE POWER OF CREATiON.",
+          "confidence": 0.963,
+          "text_ar": "إنها التجسيد المادي لنقاط التدخل. جوهرة تحتوي على قوة الخلق."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "THAT'S THE KIND OF POWER SPENDING REAL LIFE MONEY HAD?",
+          "confidence": 0.934,
+          "text_ar": "أهذه هي القوة التي يمنحها إنفاق المال الحقيقي؟"
+        },
+        {
+          "text": "A HUMAN'S MONEY COULD POSSESS A GREAT DEEP-SEATED GRUDGE.",
+          "confidence": 0.951,
+          "text_ar": "يمكن لمال الإنسان أن يحمل ضغينة عميقة الجذور."
+        },
+        {
+          "text": "CYBER MONEY iS GREAT, BUT WHAT'S BETTER iS CASH!",
+          "confidence": 0.986,
+          "text_ar": "المال الرقمي رائع، لكن النقد أفضل!"
+        },
+        {
+          "text": "IF YOU BRiNG CASH TO THE HEADQUARTERS, YOU GET A 1% BONUS REWARD.",
+          "confidence": 0.913,
+          "text_ar": "إذا أحضرت نقداً إلى المقر، ستحصل على مكافأة إضافية بنسبة 1%."
+        },
+        {
+          "text": "ONE PERCENT?",
+          "confidence": 0.982,
+          "text_ar": "واحد بالمئة؟"
+        },
+        {
+          "text": "THAT'S A SCROOGE AMOUNT.",
+          "confidence": 0.977,
+          "text_ar": "هذا مبلغ بخيل جداً."
+        },
+        {
+          "text": "WE'RE GOING OUT FOR THE FIRST TIME IN A WHILE.",
+          "confidence": 0.933,
+          "text_ar": "سنخرج لأول مرة منذ فترة طويلة."
+        },
+        {
+          "text": "WE RESTED FOR WAY TOO LONG.",
+          "confidence": 0.939,
+          "text_ar": "لقد استرحنا لفترة طويلة جداً."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.977,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "'PARTY 1' IS OPERABLE.",
+          "confidence": 0.928,
+          "text_ar": "'الفريق 1' جاهز للعمل."
+        },
+        {
+          "text": "From this point onwards, were taking back our refusal to fight.",
+          "confidence": 0.913,
+          "text_ar": "من هذه اللحظة فصاعداً، نحن نتراجع عن رفضنا للقتال."
+        },
+        {
+          "text": "AMAZING, MASTER. YOU'VE CHANGED THE MINDS OF THE HEROES!",
+          "confidence": 0.873,
+          "text_ar": "مذهل يا سيد. لقد غيرت رأي الأبطال!"
+        },
+        {
+          "text": "I DIDN'T REALLY CARE EITHER WAY, BUT THIS IS GOOD.",
+          "confidence": 0.956,
+          "text_ar": "لم أكن أهتم حقاً بأي من الحالتين، لكن هذا جيد."
+        },
+        {
+          "text": "AREN'T YOU ITCHING TO FIGHT?",
+          "confidence": 0.951,
+          "text_ar": "ألا تشعر برغبة عارمة في القتال؟"
+        },
+        {
+          "text": "..NO, NOT REALLY...",
+          "confidence": 0.952,
+          "text_ar": "..لا، ليس حقاً..."
+        },
+        {
+          "text": "YEAH, ITCHING...",
+          "confidence": 0.932,
+          "text_ar": "أجل، أشعر بها..."
+        },
+        {
+          "text": "I SURE AM ITCHING!",
+          "confidence": 0.991,
+          "text_ar": "أنا بالتأكيد أشعر برغبة عارمة!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "HYUNG-NIM,EVENIF MASTER CHANGED HIS MIND, WE'RE STILL A GROUP OF FOUR.",
+          "confidence": 0.933,
+          "text_ar": "أخي الأكبر، حتى لو غير السيد رأيه، ما زلنا مجموعة من أربعة."
+        },
+        {
+          "text": "WE'RE LACKING A MEMBER.",
+          "confidence": 0.974,
+          "text_ar": "ينقصنا عضو واحد."
+        },
+        {
+          "text": "DON'T WORRY ABOUT THAT.",
+          "confidence": 0.975,
+          "text_ar": "لا تقلق بشأن ذلك."
+        },
+        {
+          "text": "EDiS! MASTER ASKED YOU TO JOiN iN ON PARTY 1 TEMPORARiLY!",
+          "confidence": 0.926,
+          "text_ar": "إيديس! طلب منك السيد الانضمام إلى الفريق 1 مؤقتاً!"
+        },
+        {
+          "text": "COME!",
+          "confidence": 0.988,
+          "text_ar": "تعالي!"
+        },
+        {
+          "text": "DIDYOUUNDO YOUR REFUSAL TO FIGHT?",
+          "confidence": 0.956,
+          "text_ar": "هل تراجعتِ عن رفضك للقتال؟"
+        },
+        {
+          "text": "AS YOU CAN SEE.",
+          "confidence": 0.824,
+          "text_ar": "كما ترين."
+        },
+        {
+          "text": "WHAT ABOUT MASTER?",
+          "confidence": 0.974,
+          "text_ar": "وماذا عن السيد؟"
+        },
+        {
+          "text": "YOU'LL SEE.",
+          "confidence": 0.97,
+          "text_ar": "سترين."
+        },
+        {
+          "text": "'PARTY 2' IS OPERABLE.",
+          "confidence": 0.974,
+          "text_ar": "'الفريق 2' جاهز للعمل."
+        },
+        {
+          "text": "ALRIGHT, IF YOU GUYS SAY SO...",
+          "confidence": 0.882,
+          "text_ar": "حسناً، إذا كنتم تقولون ذلك..."
+        },
+        {
+          "text": "EDIS (★★★) HAS JOINED 'PARTY 1'!",
+          "confidence": 0.891,
+          "text_ar": "انضمت إيديس (★★★) إلى 'الفريق 1'!"
+        },
+        {
+          "text": "OPEN, CRACK OF SPACE AND TiME!",
+          "confidence": 0.921,
+          "text_ar": "انفتح، يا صدع الزمان والمكان!"
+        },
+        {
+          "text": "I WON'T BE ABLE TO STAY LONG.",
+          "confidence": 0.975,
+          "text_ar": "لن أتمكن من البقاء طويلاً."
+        },
+        {
+          "text": "I DON'T INTEND ON ASKING YOU TO STAY LONG.",
+          "confidence": 0.948,
+          "text_ar": "لا أنوي مطالبتك بالبقاء طويلاً."
+        },
+        {
+          "text": "YOU CAN LEAD PARTY Z AGAIN ONCE WE CLEAR THE 15TH FLOOR.",
+          "confidence": 0.926,
+          "text_ar": "يمكنك قيادة الفريق 2 مجدداً بمجرد أن نتجاوز الطابق الخامس عشر."
+        },
+        {
+          "text": "MAIN DUNGEON, THE CURRENT CHALLENGE FLOOR IS THE 8TH FLOOR.",
+          "confidence": 0.942,
+          "text_ar": "الزنزانة الرئيسية، طابق التحدي الحالي هو الطابق الثامن."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "[CLIMBTHETOWER ANDSAVE THEWORLD! <MAINDUNGEON> CURRENT FLOORLEVEL -8-",
+          "confidence": 0.917,
+          "text_ar": "[تسلق البرج وأنقذ العالم! <الزنزانة الرئيسية> مستوى الطابق الحالي -8-]"
+        },
+        {
+          "text": "THE GATES WILL OPEN IN TEN SECONDS. GET READY!",
+          "confidence": 0.944,
+          "text_ar": "ستفتح البوابات خلال عشر ثوانٍ. استعدوا!"
+        },
+        {
+          "text": "FLOOR 8 MISSION TYPE - SUBJUGATION OBJECTIVE -ANNIHILATE YOUR ENEMIES",
+          "confidence": 0.941,
+          "text_ar": "نوع مهمة الطابق 8: إخضاع | الهدف: إبادة أعدائك"
+        },
+        {
+          "text": "IT'S THE 8TH FLOOR.",
+          "confidence": 0.929,
+          "text_ar": "إنه الطابق الثامن."
+        },
+        {
+          "text": "IT'S TIME TO SHOW OFF WHAT WE'VE BEEN TRAINING.",
+          "confidence": 0.939,
+          "text_ar": "حان الوقت لاستعراض ما تدربنا عليه."
+        },
+        {
+          "text": "GOBLIN RIDER LV. 9 X27",
+          "confidence": 0.934,
+          "text_ar": "راكب الغول (مستوى 9) ×27"
+        },
+        {
+          "text": "Inoεrt!",
+          "confidence": 0.786,
+          "text_ar": "إشعال!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "Ignitel",
+          "confidence": 0.847,
+          "text_ar": "إشعال!"
+        },
+        {
+          "text": "十 43++6 都 1 Ai6 0 X",
+          "confidence": 0.041,
+          "text_ar": "هجوم!"
+        },
+        {
+          "text": "SHE CAN CAST IN TEN SECONDS WHAT USED TO TAKE HER FORTY.",
+          "confidence": 0.949,
+          "text_ar": "يمكنها الآن إلقاء تعويذة في عشر ثوانٍ كانت تستغرق منها أربعين."
+        },
+        {
+          "text": "IT'S THE LAST LEVEL!",
+          "confidence": 0.94,
+          "text_ar": "إنه المستوى الأخير!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "聚 2 X F",
+          "confidence": 0.06,
+          "text_ar": "هجوم!"
+        },
+        {
+          "text": "..WHAT DID YOU CALL ME FOR?",
+          "confidence": 0.879,
+          "text_ar": "..لماذا استدعيتني؟"
+        },
+        {
+          "text": "STAGE CLEAR! AARON (★), EOLKA (★★★) LEVEL UP",
+          "confidence": 0.863,
+          "text_ar": "تم مسح المرحلة! آرون (★)، إولكا (★★★) ارتقيا في المستوى"
+        },
+        {
+          "text": "REWARDS",
+          "confidence": 0.995,
+          "text_ar": "المكافآت"
+        },
+        {
+          "text": "LEATHER (C) X 3",
+          "confidence": 0.949,
+          "text_ar": "جلد (C) ×3"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.961,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "SINCE JENNA CAN SHOOT SO MUCH FASTER NOW, I'LL BE ABLE TO TRUST HER TO TRUSTHERTO HAVE MY BACK.",
+          "confidence": 0.966,
+          "text_ar": "بما أن جينا تستطيع الإطلاق بشكل أسرع الآن، سأتمكن من الوثوق بها لتغطية ظهري."
+        },
+        {
+          "text": "WERE YOU BORED?",
+          "confidence": 0.974,
+          "text_ar": "هل كنت تشعر بالملل؟"
+        },
+        {
+          "text": "IT WAS FUN TO WATCH.",
+          "confidence": 0.961,
+          "text_ar": "كان من الممتع المشاهدة."
+        },
+        {
+          "text": "EDIS HASN'T ADJUSTED TO THE PARTY, BUT SHE'S CLEVER. SHE'LL FIND HER ROLE SOON.",
+          "confidence": 0.95,
+          "text_ar": "لم تتأقلم إيديس مع الفريق بعد، لكنها ذكية. ستجد دورها قريباً."
+        },
+        {
+          "text": "MVP - EOLKA (★★★)",
+          "confidence": 0.915,
+          "text_ar": "أفضل لاعب - إولكا (★★★)"
+        },
+        {
+          "text": "EOLKA HAS GOTTENMUCH MORE FLEXIBLE WITH HER MAGIC TOO.",
+          "confidence": 0.971,
+          "text_ar": "أصبحت إولكا أكثر مرونة في استخدام سحرها أيضاً."
+        },
+        {
+          "text": "THAT'S IT FOR TODAY, RIGHT?",
+          "confidence": 0.954,
+          "text_ar": "هذا كل شيء لهذا اليوم، أليس كذلك؟"
+        },
+        {
+          "text": "I'MALL TIRED FROM USING MAGIC.",
+          "confidence": 0.953,
+          "text_ar": "أنا متعبة من استخدام السحر."
+        },
+        {
+          "text": "IT'S DEFINITELY DIFFERENT FROM LAST TIME.",
+          "confidence": 0.96,
+          "text_ar": "الأمر مختلف بالتأكيد عن المرة السابقة."
+        },
+        {
+          "text": "IT'S NOT OVER.",
+          "confidence": 0.911,
+          "text_ar": "لم ينتهِ الأمر بعد."
+        },
+        {
+          "text": "IGET TIREO WHEN I USE MAGIC!",
+          "confidence": 0.933,
+          "text_ar": "أشعر بالتعب عندما أستخدم السحر!"
+        },
+        {
+          "text": "阳 DON'T WORRY. YOU WON'T HAVE TO WORK TOO MUCH.",
+          "confidence": 0.238,
+          "text_ar": "لا تقلقي. لن تضطري للعمل كثيراً."
+        },
+        {
+          "text": "I OON'T TRUST YOU! I'VE BEEN DECEIVED BY THOSE WOROS ONE TOO MANY TIMES!",
+          "confidence": 0.91,
+          "text_ar": "أنا لا أثق بك! لقد خُدعت بتلك الكلمات مرات عديدة!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "MASTER, THERE IS A MEMBER AVAILABLE FOR RESEARCH.",
+          "confidence": 0.955,
+          "text_ar": "سيد، هناك عضو متاح للبحث."
+        },
+        {
+          "text": "WHY DON'T YOU TRY STARTING ARESEARCH? ACCOMPLISHMENTSFROM RESEARCH IS THE BASIS TO ASMOOTH-FUNCTIONING LOBBY!",
+          "confidence": 0.931,
+          "text_ar": "لماذا لا تحاول البدء ببحث؟ إنجازات البحث هي الأساس لردهة تعمل بسلاسة!"
+        },
+        {
+          "text": "THE MAGIC HALL?",
+          "confidence": 0.992,
+          "text_ar": "قاعة السحر؟"
+        },
+        {
+          "text": "WHYDID YOU BRING ME HERE?",
+          "confidence": 0.98,
+          "text_ar": "لماذا أحضرتني إلى هنا؟"
+        },
+        {
+          "text": "I TOLD YOU, YOU WON'T HAVE TO EXERTYOURSELF PHYSICALLY.",
+          "confidence": 0.925,
+          "text_ar": "قلت لك، لن تضطري لبذل مجهود بدني."
+        },
+        {
+          "text": "WHAT YOU NEED TO DO 1S RESEARCH.",
+          "confidence": 0.55,
+          "text_ar": "ما تحتاجين للقيام به هو البحث."
+        },
+        {
+          "text": "RESEARCH!",
+          "confidence": 0.997,
+          "text_ar": "البحث!"
+        },
+        {
+          "text": "CURRENT DEVELOPMENT 1. HERO REACTION RESEARCH (LV. 0) 2. FACILITY EXPANSION RESEARCH (LEV 0) 3. DUNGEON DEPTH RESEARCH (LV. 0)",
+          "confidence": 0.896,
+          "text_ar": "التطوير الحالي: 1. بحث رد فعل البطل (مستوى 0) 2. بحث توسيع المنشأة (مستوى 0) 3. بحث عمق الزنزانة (مستوى 0)"
+        },
+        {
+          "text": "TIPS YOUCAN EARNRESEARCH POINTS BY PUTTING MEMBERS IN THE RESEARCH LAB. TRY UPGRADING THE LOBBY TO YOUR TASTE WITH RESEARCH POINTS!",
+          "confidence": 0.885,
+          "text_ar": "نصائح: يمكنك كسب نقاط بحث بوضع الأعضاء في مختبر البحث. حاول ترقية الردهة حسب ذوقك باستخدام نقاط البحث!"
+        },
+        {
+          "text": "RESEARCHER RECOMMENDED LIST!",
+          "confidence": 0.972,
+          "text_ar": "قائمة الباحثين الموصى بهم!"
+        },
+        {
+          "text": "EOLKA(★★★) WILL YOU NAME EOLKA (★★★) AS THE RESEARCHER?",
+          "confidence": 0.944,
+          "text_ar": "إولكا (★★★) هل ستعين إولكا (★★★) كباحثة؟"
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.923,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "DON'T JUSTPOP OUT OF NOWHERE LIKE THAT!",
+          "confidence": 0.952,
+          "text_ar": "لا تظهر من العدم هكذا!"
+        },
+        {
+          "text": "you SCARED ME.",
+          "confidence": 0.71,
+          "text_ar": "لقد أخفتني."
+        },
+        {
+          "text": "SHUSH. GET USED TO iT.",
+          "confidence": 0.905,
+          "text_ar": "اصمتي. اعتادي على ذلك."
+        },
+        {
+          "text": "IT'S NOT LiKE I APPEAR LiKE THiS BECAUSE I WANT TO.",
+          "confidence": 0.953,
+          "text_ar": "ليس الأمر وكأنني أظهر هكذا لأنني أريد ذلك."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "SEE THAT YOU DESK OVER THERE?",
+          "confidence": 0.58,
+          "text_ar": "أترين ذلك المكتب هناك؟"
+        },
+        {
+          "text": "YOU JUST NEED TO SOLVE THE PROBLEM AND PUT iT iN THE CONTAiNER OVER THERE.",
+          "confidence": 0.954,
+          "text_ar": "تحتاجين فقط لحل المشكلة ووضعها في الحاوية هناك."
+        },
+        {
+          "text": "THIS IS STUFFI LEARNED IN THE MAGIC ACADEMY...",
+          "confidence": 0.913,
+          "text_ar": "هذا ما تعلمته في أكاديمية السحر..."
+        },
+        {
+          "text": "WHY DOI HAVE TO...",
+          "confidence": 0.923,
+          "text_ar": "لماذا يجب علي..."
+        },
+        {
+          "text": "MASTER ORDERED YOU TO!",
+          "confidence": 0.889,
+          "text_ar": "السيد أمرك بذلك!"
+        },
+        {
+          "text": "DO AS HE SAID iF YOU DON'T WANT A LECTURE!",
+          "confidence": 0.92,
+          "text_ar": "افعلي ما قاله إذا كنتِ لا تريدين محاضرة!"
+        },
+        {
+          "text": ".can'tread any of this.",
+          "confidence": 0.863,
+          "text_ar": "..لا أستطيع قراءة أي من هذا."
+        },
+        {
+          "text": "YOU HAVE EARNED 1 RESEARCH POINT!",
+          "confidence": 0.957,
+          "text_ar": "لقد كسبتِ نقطة بحث واحدة!"
+        },
+        {
+          "text": "THE CURRENT RESEARCH SPEED IS 10/H. 10 GEMS WILL BE SPENT EACH HOUR.",
+          "confidence": 0.948,
+          "text_ar": "سرعة البحث الحالية هي 10/ساعة. سيتم إنفاق 10 جواهر كل ساعة."
+        },
+        {
+          "text": "10 POINTS PER HOUR IS VERY BAD.",
+          "confidence": 0.96,
+          "text_ar": "10 نقاط في الساعة سيئة جداً."
+        },
+        {
+          "text": "THE EFFICIENCY ISN'T GOOD.",
+          "confidence": 0.973,
+          "text_ar": "الكفاءة ليست جيدة."
+        },
+        {
+          "text": "I GUESS THAT'S TO BE EXPECTED SINCE SHE DOESNT HAVEANYRESEARCH SKILLS.",
+          "confidence": 0.941,
+          "text_ar": "أظن أن هذا متوقع لأنها لا تملك أي مهارات بحث."
+        },
+        {
+          "text": "SETTING RESEARCH TIME.",
+          "confidence": 0.956,
+          "text_ar": "ضبط وقت البحث."
+        },
+        {
+          "text": "THREE HOURS PER DAY! TIPS THE RESEARCHER MAY BE DISGRUNTLED IFYOU SETTOO LONG OF A TIME FOR RESEARCH! DON'T FORGET THAT THEY HAVETHEIROWN LIVES TOO.",
+          "confidence": 0.924,
+          "text_ar": "ثلاث ساعات في اليوم! نصائح: قد يكون الباحث مستاءً إذا حددت وقتاً طويلاً للبحث! لا تنسَ أن لديهم حياتهم الخاصة أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "YOU GOTTA DO THiS THREE HOURS EVERYDAY!",
+          "confidence": 0.916,
+          "text_ar": "عليكِ القيام بهذا لثلاث ساعات كل يوم!"
+        },
+        {
+          "text": "THREE HOURS?!",
+          "confidence": 0.972,
+          "text_ar": "ثلاث ساعات؟!"
+        },
+        {
+          "text": "NO! THIS HURTS MY HEAO!",
+          "confidence": 0.863,
+          "text_ar": "لا! هذا يؤلم رأسي!"
+        },
+        {
+          "text": "EOLKA(★★★) EXPRESSES CONTEMPT!",
+          "confidence": 0.971,
+          "text_ar": "إولكا (★★★) تعبر عن استيائها!"
+        },
+        {
+          "text": "THIS ISN'T EASY!",
+          "confidence": 0.949,
+          "text_ar": "هذا ليس سهلاً!"
+        },
+        {
+          "text": "I'M ALREAOY OYING TRYING TO SOLVE IT!",
+          "confidence": 0.916,
+          "text_ar": "أنا أموت بالفعل محاولة حلها!"
+        },
+        {
+          "text": "WITH THIS ON TOP OF EVERYTHING, I'M BEING TREATEO LIKE △SLAVE!",
+          "confidence": 0.872,
+          "text_ar": "بإضافة هذا لكل شيء آخر، يتم معاملتي كعبدة!"
+        },
+        {
+          "text": "I GUESS THAT'S TRUE.",
+          "confidence": 0.96,
+          "text_ar": "أظن أن هذا صحيح."
+        },
+        {
+          "text": "SHE HAS A PRETTY IMPACTED SCHEDULE.",
+          "confidence": 0.933,
+          "text_ar": "جدولها مزدحم للغاية."
+        },
+        {
+          "text": "A WAY TO MAINTAIN EOLKA'S DRIVE WITHOUT ALSO LOSING TIME.",
+          "confidence": 0.946,
+          "text_ar": "طريقة للحفاظ على حماس إولكا دون إضاعة الوقت."
+        },
+        {
+          "text": "ISELLE, A REQUEST TO MASTER.",
+          "confidence": 0.899,
+          "text_ar": "إيسيل، طلب إلى السيد."
+        },
+        {
+          "text": "HAN(★★) WANTS A FUR COAT.' WILL YOU GIFT IT TO HIM?",
+          "confidence": 0.903,
+          "text_ar": "هان (★★) يريد 'معطفاً من الفرو'. هل ستهديه إياه؟"
+        },
+        {
+          "text": "3,000 GOLD WILL BE SPENT.",
+          "confidence": 0.944,
+          "text_ar": "سيتم إنفاق 3,000 ذهبة."
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.994,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "YOU WANTED THIS, RIGHT? IT'S UPFRONT PAYMENT. Ill give youmore if work well. you-do-your",
+          "confidence": 0.872,
+          "text_ar": "أردتِ هذا، أليس كذلك؟ إنه دفعة مقدمة. سأعطيكِ المزيد إذا عملتِ جيداً."
+        },
+        {
+          "text": "You-you dave Iry to change my mind with gilts??",
+          "confidence": 0.795,
+          "text_ar": "أتحاول تغيير رأيي بالهدايا؟"
+        },
+        {
+          "text": "How shameless!",
+          "confidence": 0.896,
+          "text_ar": "يا لقلة الحياء!"
+        },
+        {
+          "text": "THEN JUST GIVEIT BACK IF YOU DON'T WANT IT.",
+          "confidence": 0.94,
+          "text_ar": "إذن أعيديه إن كنتِ لا تريدينه."
+        },
+        {
+          "text": "WHO SAIO I OON'T WANT IT?! I'LL OO IT!",
+          "confidence": 0.835,
+          "text_ar": "من قال أنني لا أريده؟! سأفعلها!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "ANYTNG CONTINUED TO CHANGE THINGS.",
+          "confidence": 0.953,
+          "text_ar": "واصل أنيتنج تغيير الأمور."
+        },
+        {
+          "text": "HE SENT MEMBERS TO THE WEEKDAY DUNGEONS,",
+          "confidence": 0.989,
+          "text_ar": "أرسل أعضاء إلى زنازين أيام الأسبوع،"
+        },
+        {
+          "text": "AND HAD WEAPONS CREATED IN THE EQUIPMENT CENTER.",
+          "confidence": 0.954,
+          "text_ar": "وجعل الأسلحة تُصنع في مركز المعدات."
+        },
+        {
+          "text": "HE FORMED A NEW PARTY 3.",
+          "confidence": 0.938,
+          "text_ar": "شكل فريقاً ثالثاً جديداً."
+        },
+        {
+          "text": "IT WAS A NEWBIE PARTY MADE UP OF NEWCOMERS.",
+          "confidence": 0.977,
+          "text_ar": "كان فريقاً للمبتدئين مكوناً من وافدين جدد."
+        },
+        {
+          "text": "MASTER HAS DEFINITELY CHANGED.",
+          "confidence": 0.989,
+          "text_ar": "لقد تغير السيد بالتأكيد."
+        },
+        {
+          "text": "NOT BAD.",
+          "confidence": 0.978,
+          "text_ar": "ليس سيئاً."
+        },
+        {
+          "text": "HEY,",
+          "confidence": 0.953,
+          "text_ar": "مهلاً،"
+        },
+        {
+          "text": "EVEN IF I CAN ONLY USE FLAME-TYPE MAGIC, I'M GOODWITH THEORIES ON OTHER STUFF.",
+          "confidence": 0.931,
+          "text_ar": "حتى لو كنت أستطيع استخدام السحر من نوع اللهب فقط، فأنا جيد في نظريات الأشياء الأخرى."
+        },
+        {
+          "text": "I THINK YOU'RE PRETTY TALENTED.",
+          "confidence": 0.941,
+          "text_ar": "أعتقد أنك موهوبة جداً."
+        },
+        {
+          "text": "DO YOU HAVE ANY INTER- EST IN LEARNING MAGIC?",
+          "confidence": 0.933,
+          "text_ar": "هل لديك أي اهتمام بتعلم السحر؟"
+        },
+        {
+          "text": "TO LEARN MAGIC?",
+          "confidence": 0.997,
+          "text_ar": "تعلم السحر؟"
+        },
+        {
+          "text": "IT'DBE HARD FORJUST ME TO TEACH YOU,",
+          "confidence": 0.932,
+          "text_ar": "سيكون من الصعب أن أعلمك وحدي،"
+        },
+        {
+          "text": "BUT IT'D BE POSSIBLE WITH THE BOOKS HERE.",
+          "confidence": 0.946,
+          "text_ar": "لكن سيكون ذلك ممكناً مع الكتب الموجودة هنا."
+        },
+        {
+          "text": "AS A 2-STAR, MY CLASS IS BEGINNER.",
+          "confidence": 0.949,
+          "text_ar": "بصفتي من فئة النجمتين، فئتي هي مبتدئ."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "I CAN CHOOSE A CLASS FROM 3-STAR ONWARDS.",
+          "confidence": 0.943,
+          "text_ar": "يمكنني اختيار فئة من فئة 3 نجوم فما فوق."
+        },
+        {
+          "text": "HANISL",
+          "confidence": 0.975,
+          "text_ar": "هان إسرات!"
+        },
+        {
+          "text": "AT THIS RATE, I'LL PROBABLY BECOME A WARRIOR.BUT IFIFULFILL THE CONDITIONS,ICAN OPEN THE PATH TO A HIDDEN CLASS.",
+          "confidence": 0.92,
+          "text_ar": "بهذا المعدل، سأصبح محارباً على الأرجح. لكن إذا استوفيت الشروط، يمكنني فتح الطريق لفئة مخفية."
+        },
+        {
+          "text": "ONE OF THOSE IS THE MAGE SWORDSMAN.",
+          "confidence": 0.959,
+          "text_ar": "إحدى تلك الفئات هي مبارز السحر."
+        },
+        {
+          "text": "JUST BECAUSE IT'S A HIDDEN CLASS, DOESN'T MEAN IT'S STRONG THOUGH.",
+          "confidence": 0.941,
+          "text_ar": "مجرد كونها فئة مخفية لا يعني أنها قوية."
+        },
+        {
+          "text": "NO THANKS.",
+          "confidence": 0.987,
+          "text_ar": "لا شكراً."
+        },
+        {
+          "text": "I LIKE TO FOCUS ON ONE THING.",
+          "confidence": 0.826,
+          "text_ar": "أحب التركيز على شيء واحد."
+        },
+        {
+          "text": "LET ME KNOW IF YOU EVER CHANGE YOUR MIND.",
+          "confidence": 0.92,
+          "text_ar": "أخبرني إذا غيرت رأيك يوماً ما."
+        },
+        {
+          "text": "YOU'RE ASKING BECAUSE YOU DON'T WANNA SOLVE PROBLEMS ON YOUR ONW, HUH?",
+          "confidence": 0.894,
+          "text_ar": "أنت تسأل لأنك لا تريد حل المشكلات بنفسك، أليس كذلك؟"
+        },
+        {
+          "text": "WH-WHAT A PRESUMPTUOUS ASSUMPTION!",
+          "confidence": 0.91,
+          "text_ar": "ي-يا له من افتراض متغطرس!"
+        },
+        {
+          "text": "I GUESS I WAS CORRECT.",
+          "confidence": 0.92,
+          "text_ar": "أظن أنني كنت محقاً."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.965,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "HMph 1",
+          "confidence": 0.52,
+          "text_ar": "همف!"
+        },
+        {
+          "text": "HOW WAS YOUR LIFE BEFORE COMING HERE?",
+          "confidence": 0.916,
+          "text_ar": "كيف كانت حياتك قبل المجيء إلى هنا؟"
+        },
+        {
+          "text": "ME? I WAS ME?I WAS A FARMER.",
+          "confidence": 0.937,
+          "text_ar": "أنا؟ كنت مزارعاً."
+        },
+        {
+          "text": "LIAR, WHO WOULD BELIEVE THAT?",
+          "confidence": 0.942,
+          "text_ar": "كاذب، من سيصدق ذلك؟"
+        },
+        {
+          "text": "…FOCUS ON YOUR PROBLEMS.",
+          "confidence": 0.876,
+          "text_ar": "..ركزي على مشاكلك."
+        },
+        {
+          "text": "SHE WAS A DAUGHTER OF ARENOWNED FAMILYBEFORE THIS,",
+          "confidence": 0.953,
+          "text_ar": "كانت ابنة عائلة مرموقة قبل ذلك،"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "BUT THE FAMILY WAS RUINED BECAUSE OF WAR.",
+          "confidence": 0.877,
+          "text_ar": "لكن العائلة دُمرت بسبب الحرب."
+        },
+        {
+          "text": "WH-WHAT IS THAT?!",
+          "confidence": 0.938,
+          "text_ar": "م-ما هذا؟!"
+        },
+        {
+          "text": "IT'S I5 BEGINNING.",
+          "confidence": 0.275,
+          "text_ar": "إنها البداية."
+        },
+        {
+          "text": "<PARTY I>",
+          "confidence": 0.899,
+          "text_ar": "<الفريق 1>"
+        },
+        {
+          "text": "★★ HAN ISLAT",
+          "confidence": 0.599,
+          "text_ar": "★★ هان إسرات"
+        },
+        {
+          "text": "JENNA CIRAI",
+          "confidence": 0.967,
+          "text_ar": "جينا سيراي"
+        },
+        {
+          "text": "AARON DELCUT",
+          "confidence": 0.966,
+          "text_ar": "آرون ديلكوت"
+        },
+        {
+          "text": "XX EOLKA RIVEL STRASHUR",
+          "confidence": 0.396,
+          "text_ar": "XX إولكا ريفيل ستراشور"
+        },
+        {
+          "text": "★** EDIS CALLEN",
+          "confidence": 0.385,
+          "text_ar": "★★★ إيديس كالين"
+        },
+        {
+          "text": "C AR ATＲI",
+          "confidence": 0.478,
+          "text_ar": "C أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.765,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.99,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
