@@ -1,0 +1,718 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "52",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "YOU MIGHT LAUGH AT IT.",
+          "confidence": 0.983,
+          "text_ar": "قد تضحك على هذا."
+        },
+        {
+          "text": "We're froma different world.",
+          "confidence": 0.965,
+          "text_ar": "نحن من عالم مختلف."
+        },
+        {
+          "text": "PICK ME UP",
+          "confidence": 0.878,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ART WASAKBASAK(3B2S) ARTWASAKBASAK(3B2S) ADAPTATION CHOWOONEH (REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.955,
+          "text_ar": "الرسم: واساكباساك (3B2S) | الاقتباس: تشو وونيه (ريديك ستودي) | الأصل: هيرمود"
+        },
+        {
+          "text": "A DIFFERENT WORLD?",
+          "confidence": 0.986,
+          "text_ar": "عالم مختلف؟"
+        },
+        {
+          "text": "WHAT DO YOU MEAN?",
+          "confidence": 0.883,
+          "text_ar": "ما الذي تعنيه؟"
+        },
+        {
+          "text": "THERE IS NOTHING TO DO UNTILDAWN ANYWAY.",
+          "confidence": 0.956,
+          "text_ar": "لا يوجد شيء لنفعله حتى الفجر على أي حال."
+        },
+        {
+          "text": "I'M SURE IT'LL BE OKAY TO TALK TO HER A BIT.",
+          "confidence": 0.953,
+          "text_ar": "أنا متأكد أنه لا بأس بالتحدث معها قليلًا."
+        },
+        {
+          "text": "A REAL SHITTY PLACE.",
+          "confidence": 0.982,
+          "text_ar": "مكان لعين حقًا."
+        },
+        {
+          "text": "WE'RE HERE BECAUSE OF A MISSION.",
+          "confidence": 0.985,
+          "text_ar": "نحن هنا بسبب مهمة."
+        },
+        {
+          "text": "IN THAT WORLD, WE'RE GIVEN MISSIONS, AND IF WE CAN'T COMPLETE THEM, WE DIE.",
+          "confidence": 0.929,
+          "text_ar": "في ذلك العالم، نُكلف بمهام، وإذا لم نتمكن من إكمالها، نموت."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "OUR MISSION THIS TIME WAS TO PROTECT SOMEONE.",
+          "confidence": 0.949,
+          "text_ar": "مهمتنا هذه المرة كانت حماية شخص ما."
+        },
+        {
+          "text": "WE DIDN'T KNOW WHOM IT WAS,",
+          "confidence": 0.951,
+          "text_ar": "لم نكن نعرف من هو،"
+        },
+        {
+          "text": "BUT WE REALIZED THAT IT WAS YOU.",
+          "confidence": 0.942,
+          "text_ar": "لكننا أدركنا أنه أنتِ."
+        },
+        {
+          "text": "WE DIE IF WE FAIL TO PROTECT THE TARGET.",
+          "confidence": 0.967,
+          "text_ar": "نموت إذا فشلنا في حماية الهدف."
+        },
+        {
+          "text": "W-WAIT.",
+          "confidence": 0.992,
+          "text_ar": "ا-انتظر."
+        },
+        {
+          "text": "SO YOU GUYS CAME FROM ANOTH- ER WORLD...",
+          "confidence": 0.853,
+          "text_ar": "إذًا أنتما جئتما من عالم آخر..."
+        },
+        {
+          "text": "TO CARRY OUT A MISSION HERE?",
+          "confidence": 0.852,
+          "text_ar": "لتنفيذ مهمة هنا؟"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.987,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "YES.WE'LL BE FORCIBLY RETURNED TO OUR WORLD ONCE WE'RE DONE WITH THE MISSION.",
+          "confidence": 0.926,
+          "text_ar": "نعم. سنعود قسرًا إلى عالمنا بمجرد انتهائنا من المهمة."
+        },
+        {
+          "text": "THAT'S WHY I CAN'T HELP YOU.",
+          "confidence": 0.922,
+          "text_ar": "لهذا السبب لا يمكنني مساعدتك."
+        },
+        {
+          "text": "WHAT AN ABSURD STORY. ANOTHER WORLD...",
+          "confidence": 0.939,
+          "text_ar": "يا لها من قصة سخيفة. عالم آخر..."
+        },
+        {
+          "text": "ARE YOU LYING SO YOU CAN REJECT MY REQUEST?",
+          "confidence": 0.921,
+          "text_ar": "هل تكذب لكي ترفض طلبي؟"
+        },
+        {
+          "text": "YOU CAN BELIEVE WHATEVER YOU WANT. IT DOESN'T MATTER TO ME.",
+          "confidence": 0.924,
+          "text_ar": "يمكنك تصديق ما تشائين. لا يهم بالنسبة لي."
+        },
+        {
+          "text": "OKAY. I BELIEVE you.",
+          "confidence": 0.783,
+          "text_ar": "حسنًا. أنا أصدقك."
+        },
+        {
+          "text": "YOU'RE WARRIORS FROM ANOTHER WORLD.",
+          "confidence": 0.933,
+          "text_ar": "أنتما محاربان من عالم آخر."
+        },
+        {
+          "text": "I WON'T DOUBT YOUR STORY",
+          "confidence": 0.969,
+          "text_ar": "لن أشكك في قصتكما"
+        },
+        {
+          "text": "SINCE YOU DIDN'T LAUGH AT MINE.",
+          "confidence": 0.884,
+          "text_ar": "بما أنكما لم تضحكا على قصتي."
+        },
+        {
+          "text": "I GET THAT YOU HAVE YOUR REASONS.",
+          "confidence": 0.868,
+          "text_ar": "أتفهم أن لديكما أسبابكما."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "I WON'T TRY AND CHANGE YOUR MIND ANYMORE. YOU DO YOUR JOB.",
+          "confidence": 0.939,
+          "text_ar": "لن أحاول تغيير رأيكما بعد الآن. قوما بعملكما."
+        },
+        {
+          "text": "AND I'LL DO MINE.",
+          "confidence": 0.935,
+          "text_ar": "وسأقوم أنا بعملي."
+        },
+        {
+          "text": "WHAT'S YOUR JOB THEN?",
+          "confidence": 0.937,
+          "text_ar": "ما هو عملك إذًا؟"
+        },
+        {
+          "text": "IT'S OBVIOUS, ISN'T IT?",
+          "confidence": 0.907,
+          "text_ar": "إنه واضح، أليس كذلك؟"
+        },
+        {
+          "text": "IT'S TO PREVENT MY DREAMS FROM BE- COMING REALITY. COMINGREALITY.",
+          "confidence": 0.939,
+          "text_ar": "منع أحلامي من أن تصبح حقيقة."
+        },
+        {
+          "text": "WERE YOU THE ONE WHO CALLED THE PEOPLE TO THE SQUARE?",
+          "confidence": 0.925,
+          "text_ar": "هل كنتِ أنتِ من نادى الناس إلى الساحة؟"
+        },
+        {
+          "text": "YOU MEAN THE WHITE SILVER HALL.",
+          "confidence": 0.964,
+          "text_ar": "تقصد قاعة الفضة البيضاء."
+        },
+        {
+          "text": "YES. I WAS GOING TO GIVE A SPEECH.",
+          "confidence": 0.899,
+          "text_ar": "نعم. كنت سألقي خطابًا."
+        },
+        {
+          "text": "FOR WHAT?",
+          "confidence": 0.967,
+          "text_ar": "لأي غرض؟"
+        },
+        {
+          "text": "不W I'M NOTHING COMPARED TO MY BROTHER AT THE MOMENT.",
+          "confidence": 0.169,
+          "text_ar": "أنا لا شيء مقارنة بأخي في هذه اللحظة."
+        },
+        {
+          "text": "IN ORDER TO GAIN MORE INFLUENCE.",
+          "confidence": 0.934,
+          "text_ar": "من أجل اكتساب المزيد من النفوذ."
+        },
+        {
+          "text": "INFLUENCE, HUH?",
+          "confidence": 0.996,
+          "text_ar": "نفوذ، هاه؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "IF IT WEREN'T FOR US, THIS CHILD WOULD'VE SURELY DIED HERE.",
+          "confidence": 0.962,
+          "text_ar": "لولا وجودنا، لكانت هذه الطفلة قد ماتت هنا بالتأكيد."
+        },
+        {
+          "text": "IF THERE IS MEANING TO THE MISSIONS OF PICK ME UP,",
+          "confidence": 0.964,
+          "text_ar": "إذا كان هناك معنى لمهام \"التقطني\"،"
+        },
+        {
+          "text": "IT IS THAT FRIACIS IS AN NPC WORTH SAVING.",
+          "confidence": 0.951,
+          "text_ar": "فهو أن فرياسيس لاغنر شخصية غير لاعبة تستحق الإنقاذ."
+        },
+        {
+          "text": "MY NAME IS HAN.",
+          "confidence": 0.947,
+          "text_ar": "اسمي هان."
+        },
+        {
+          "text": "...HAN.",
+          "confidence": 0.887,
+          "text_ar": "...هان."
+        },
+        {
+          "text": "...HAN.",
+          "confidence": 0.854,
+          "text_ar": "...هان."
+        },
+        {
+          "text": "THANK YOU. I WOULD'VE DIED IF IT WEREN'T FOR YOU.",
+          "confidence": 0.934,
+          "text_ar": "شكرًا لك. كنت سأموت لولاكما."
+        },
+        {
+          "text": "WE'RE NOT DONE YET.",
+          "confidence": 0.94,
+          "text_ar": "لم ننتهِ بعد."
+        },
+        {
+          "text": "I SEE.",
+          "confidence": 0.953,
+          "text_ar": "أفهم."
+        },
+        {
+          "text": "DO YOU HAVE ANY CLUE WHY THEY'RE TRYING TO KILL YOU?",
+          "confidence": 0.911,
+          "text_ar": "هل لديك أي فكرة عن سبب محاولتهم قتلك؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "YOU'RE TOO CONSPICUOUS. YOURE LIKE A WALKING BILL- BOARD.",
+          "confidence": 0.903,
+          "text_ar": "أنتِ ملفتة للنظر أكثر من اللازم. تبدين كلوحة إعلانات متحركة."
+        },
+        {
+          "text": "BILLBOARD?",
+          "confidence": 0.993,
+          "text_ar": "لوحة إعلانات؟"
+        },
+        {
+          "text": "YOU WANT ME TO WEAR THIS?",
+          "confidence": 0.93,
+          "text_ar": "هل تريد مني ارتداء هذا؟"
+        },
+        {
+          "text": "THEN WHAT ABOUT WHATI'M WEARING RIGHT NOW...?",
+          "confidence": 0.949,
+          "text_ar": "إذًا ماذا عن ما أرتديه الآن...؟"
+        },
+        {
+          "text": "WE'RE GONNATHROW IT OUT. THERE'S A DUMPSTER OUTSIDE.",
+          "confidence": 0.956,
+          "text_ar": "سنرميه. توجد حاوية قمامة في الخارج."
+        },
+        {
+          "text": "DO YOU NOT WANT TO?",
+          "confidence": 0.945,
+          "text_ar": "ألا ترغبين في ذلك؟"
+        },
+        {
+          "text": "NO.I EXPECTED THIS EXPECTED THIS MUCH.",
+          "confidence": 0.835,
+          "text_ar": "لا. لقد توقعت هذا القدر."
+        },
+        {
+          "text": "BUT...",
+          "confidence": 0.946,
+          "text_ar": "لكن..."
+        },
+        {
+          "text": "LET ME BE ALONE.",
+          "confidence": 0.959,
+          "text_ar": "دعوني وحدي."
+        },
+        {
+          "text": "I CAN HEAR HER...",
+          "confidence": 0.921,
+          "text_ar": "أستطيع سماعها..."
+        },
+        {
+          "text": "..IS SHE CRYING?",
+          "confidence": 0.835,
+          "text_ar": "..هل تبكي؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "EVEN IF IT IS JUST BY NAME, SHE IS STILL A PRINCESS.",
+          "confidence": 0.957,
+          "text_ar": "حتى لو كان ذلك بالاسم فقط، فهي لا تزال أميرة."
+        },
+        {
+          "text": "SHE IS AT MOST FIFTEEN.",
+          "confidence": 0.951,
+          "text_ar": "إنها في الخامسة عشرة من عمرها كحد أقصى."
+        },
+        {
+          "text": "I AM SURE IT IS HARD FOR HER TO ACCEPT THE CURRENT SITUATION SHE IS IN.",
+          "confidence": 0.95,
+          "text_ar": "أنا متأكد من أنه من الصعب عليها تقبل الوضع الحالي الذي هي فيه."
+        },
+        {
+          "text": "THE TEXTURE IS WEIRD.",
+          "confidence": 0.985,
+          "text_ar": "ملمس القماش غريب."
+        },
+        {
+          "text": "I'M SURE IT IS. THE BUGS WERE LAYING EGGS ON IT.",
+          "confidence": 0.956,
+          "text_ar": "أنا متأكد من ذلك. كانت الحشرات تضع بيوضها عليه."
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.975,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.979,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "I'M JUST JOKING.",
+          "confidence": 0.946,
+          "text_ar": "أنا أمزح فقط."
+        },
+        {
+          "text": "DON'T MAKE JOKES LIKE THAT!",
+          "confidence": 0.942,
+          "text_ar": "لا تمزح بمثل هذه المزاحات!"
+        },
+        {
+          "text": "WE'LL LEAVE IN TWO TO THREE HOURS. YOU SHOULD SLEEP.",
+          "confidence": 0.944,
+          "text_ar": "سنغادر خلال ساعتين إلى ثلاث ساعات. يجب أن تنامي."
+        },
+        {
+          "text": "司 OY",
+          "confidence": 0.203,
+          "text_ar": "آرون"
+        },
+        {
+          "text": "IF SOMETHING HAPPENS TOAARON,ILLRECEIVEASTATUS ABNORMALITY MESSAGEE.",
+          "confidence": 0.836,
+          "text_ar": "إذا حدث شيء لآرون، سأتلقى رسالة بحالة غير طبيعية."
+        },
+        {
+          "text": "WE STILL HAVE TIME.",
+          "confidence": 0.956,
+          "text_ar": "لا يزال لدينا وقت."
+        },
+        {
+          "text": "HOLD ON JUST A BIT MORE.",
+          "confidence": 0.984,
+          "text_ar": "اصبري قليلًا فقط."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I ENDED UP TALKING TOO MUCH.",
+          "confidence": 0.99,
+          "text_ar": "انتهى بي الأمر بالتحدث كثيرًا."
+        },
+        {
+          "text": "SHE'S SLEEPING WELL.",
+          "confidence": 0.973,
+          "text_ar": "إنها نائمة بعمق."
+        },
+        {
+          "text": "WHAT ABOUT THE EXIT?",
+          "confidence": 0.928,
+          "text_ar": "ماذا عن المخرج؟"
+        },
+        {
+          "text": "I FOUND IT.",
+          "confidence": 0.918,
+          "text_ar": "لقد وجدته."
+        },
+        {
+          "text": "THERE'S A SMALL PROBLEM, THOUGH.",
+          "confidence": 0.972,
+          "text_ar": "لكن هناك مشكلة صغيرة."
+        },
+        {
+          "text": "HUMAN KNIGHT LV. 21",
+          "confidence": 0.949,
+          "text_ar": "فارس بشري مستوى 21"
+        },
+        {
+          "text": "HUMAN SOLDIER LV. 11 X 21",
+          "confidence": 0.856,
+          "text_ar": "جندي بشري مستوى 11 × 21"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "TWENTY-TWO IN TOTAL.",
+          "confidence": 0.989,
+          "text_ar": "اثنان وعشرون في المجموع."
+        },
+        {
+          "text": "THAT'S WAY TOO MANY FOR JUST THE TWO OF US.",
+          "confidence": 0.954,
+          "text_ar": "هذا عدد كبير جدًا بالنسبة لنا نحن الاثنين فقط."
+        },
+        {
+          "text": "SHOULD WE GO TO ANOTHER GATE?",
+          "confidence": 0.964,
+          "text_ar": "هل يجب أن نذهب إلى بوابة أخرى؟"
+        },
+        {
+          "text": "WE'DJUST WASTE TIME. I'M SURE IT'S THE SAME THERE.",
+          "confidence": 0.939,
+          "text_ar": "سنضيع الوقت فقط. أنا متأكد أن الوضع مشابه هناك."
+        },
+        {
+          "text": "I COULD MAYBE GET THROUGH JUST BY MYSELF,",
+          "confidence": 0.955,
+          "text_ar": "ربما يمكنني العبور بمفردي،"
+        },
+        {
+          "text": "BUT I CAN'T OVERLOOK THE PRINCESS.",
+          "confidence": 0.972,
+          "text_ar": "لكن لا يمكنني التخلي عن الأميرة."
+        },
+        {
+          "text": "IT ONLY COUNTS AS SUCCESS IF SHE MAKES IT OUT OF THE GATES.",
+          "confidence": 0.966,
+          "text_ar": "لا تُحتسب المهمة ناجحة إلا إذا خرجت من البوابات."
+        },
+        {
+          "text": "AND THAT KNIGHT'S LEVEL.",
+          "confidence": 0.991,
+          "text_ar": "ومستوى ذلك الفارس..."
+        },
+        {
+          "text": "HUMAN KNIGHT LV.21",
+          "confidence": 0.949,
+          "text_ar": "فارس بشري مستوى 21"
+        },
+        {
+          "text": "ALEVEL Z1 KNIGHT ISAT LEAST FIVE LEVELS HIGHER THAN MOST KNIGHTS I'VE DEALT WITH.",
+          "confidence": 0.914,
+          "text_ar": "فارس بمستوى 21 أعلى بخمسة مستويات على الأقل من معظم الفرسان الذين تعاملت معهم."
+        },
+        {
+          "text": "I HAVE NO CHOICE.",
+          "confidence": 0.981,
+          "text_ar": "ليس لدي خيار."
+        },
+        {
+          "text": "EDIS, DO YOU KNOW WHERE AARON'S PARTY IS?",
+          "confidence": 0.922,
+          "text_ar": "إيديس، هل تعرف أين تقع فرقة آرون؟"
+        },
+        {
+          "text": "BUT YOU KNOW THE LAYOUT OF Hn THIS CITY?",
+          "confidence": 0.183,
+          "text_ar": "لكن هل تعرف تخطيط هذه المدينة؟"
+        },
+        {
+          "text": "THERE'S A DRESS AND CROWN IF YOU GO BACK TO THE SHELTER.",
+          "confidence": 0.934,
+          "text_ar": "يوجد فستان وتاج إذا عدت إلى المخبأ."
+        },
+        {
+          "text": "FIND JENNA AND HAVE HER PUT IT ON.",
+          "confidence": 0.926,
+          "text_ar": "اعثر على جينا واجعلها ترتديهما."
+        },
+        {
+          "text": "..ARE YOU-",
+          "confidence": 0.815,
+          "text_ar": "..هل أنت-"
+        },
+        {
+          "text": "were gonna use her as bait.",
+          "confidence": 0.875,
+          "text_ar": "سنستخدمها كطُعم."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "ACCORDING TO EDIS' INFORMATION, WE CAN'T LEAVE ANY OTHER WAY.",
+          "confidence": 0.94,
+          "text_ar": "وفقًا لمعلومات إيديس، لا يمكننا المغادرة بأي طريقة أخرى."
+        },
+        {
+          "text": "WE COULD INSPECT MORE IF WE HAD THE TIME,",
+          "confidence": 0.942,
+          "text_ar": "كنا لنستكشف أكثر لو كان لدينا الوقت،"
+        },
+        {
+          "text": "BUT WE DON'T KNOW HOW LONG AARON WILL BE ABLE TO HOLD OUT.",
+          "confidence": 0.958,
+          "text_ar": "لكننا لا نعرف إلى متى سيتمكن آرون من الصمود."
+        },
+        {
+          "text": "IF JENNA DISGUISES AS THE PRINCESS AND CREATES CHAOS,I'MSURESOMEOF THE SOLDIERS HERE WILL LEAVE.",
+          "confidence": 0.967,
+          "text_ar": "إذا تنكرت جينا كأميرة وأحدثت فوضى، أنا متأكد أن بعض الجنود هنا سيغادرون."
+        },
+        {
+          "text": "ALRIGHT. I'LL BE BACK.",
+          "confidence": 0.953,
+          "text_ar": "حسنًا. سأعود."
+        },
+        {
+          "text": "I'LL HAVE TO LEAVE THE SHIELD HERE. THERE'SA RISK OF IT REFLECTING LIGHT.",
+          "confidence": 0.922,
+          "text_ar": "سأضطر لترك الدرع هنا. هناك خطر من انعكاس الضوء عليه."
+        },
+        {
+          "text": "AN HOUR AT MOST. WE'LL MAKE IT OUT OF HERE IN THAT TIME.",
+          "confidence": 0.927,
+          "text_ar": "ساعة على الأكثر. سنخرج من هنا في ذلك الوقت."
+        },
+        {
+          "text": "YOU STAY INSIDE.",
+          "confidence": 0.962,
+          "text_ar": "ابقِ في الداخل."
+        },
+        {
+          "text": "RUN OUTSIDE WHEN I GIVE A SIGNAL.",
+          "confidence": 0.937,
+          "text_ar": "اركضي للخارج عندما أعطيكِ الإشارة."
+        },
+        {
+          "text": "EVEN IF YOU'RE HURT?",
+          "confidence": 0.899,
+          "text_ar": "حتى لو كنت مصابًا؟"
+        },
+        {
+          "text": "EVEN IF I'M DEAD.",
+          "confidence": 0.948,
+          "text_ar": "حتى لو كنت ميتًا."
+        },
+        {
+          "text": "..ALRIGHT.",
+          "confidence": 0.86,
+          "text_ar": "..حسنًا."
+        },
+        {
+          "text": "P化e",
+          "confidence": 0.239,
+          "text_ar": "توقف"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "I GUESS THIS IS OUR LAST MOMENT TOGETHER.",
+          "confidence": 0.953,
+          "text_ar": "أظن أن هذه هي لحظتنا الأخيرة معًا."
+        },
+        {
+          "text": "PROBABLY.",
+          "confidence": 0.995,
+          "text_ar": "على الأرجح."
+        },
+        {
+          "text": "yon",
+          "confidence": 0.421,
+          "text_ar": "آرون"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.986,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "..HOWLONG DO WE HAVE TO WAIT?",
+          "confidence": 0.907,
+          "text_ar": "..كم من الوقت علينا الانتظار؟"
+        },
+        {
+          "text": "HE MIGHT DIE AT THIS RATE.",
+          "confidence": 0.987,
+          "text_ar": "قد يموت بهذا المعدل."
+        },
+        {
+          "text": "..OPPA, PLEASE.",
+          "confidence": 0.953,
+          "text_ar": "..أخي، أرجوك."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "WE CAN'T STALL ANY LONGER.",
+          "confidence": 0.981,
+          "text_ar": "لا يمكننا المماطلة أكثر من ذلك."
+        },
+        {
+          "text": "WE WILL LEAVE THE CITY BEFORE DAWN.",
+          "confidence": 0.985,
+          "text_ar": "سنغادر المدينة قبل الفجر."
+        },
+        {
+          "text": "<PARTYI) IPARTVIN",
+          "confidence": 0.751,
+          "text_ar": "الفرقة"
+        },
+        {
+          "text": "** AARON DELCUT",
+          "confidence": 0.474,
+          "text_ar": "آرون ديلكوت"
+        },
+        {
+          "text": "★★ JENNA CIRAI",
+          "confidence": 0.591,
+          "text_ar": "جينا سيراي"
+        },
+        {
+          "text": "★★ HAN ISLAT",
+          "confidence": 0.586,
+          "text_ar": "هان إسرات"
+        },
+        {
+          "text": "XX EOLKA RIVEL STRASHUR",
+          "confidence": 0.362,
+          "text_ar": "إولكا ريفيل ستراشور"
+        },
+        {
+          "text": "EDIS CALLEN",
+          "confidence": 0.949,
+          "text_ar": "إيديس كالين"
+        },
+        {
+          "text": "AR ATRI",
+          "confidence": 0.675,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "[ REDICESTUDIO",
+          "confidence": 0.7,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.991,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
