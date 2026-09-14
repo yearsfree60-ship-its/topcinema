@@ -1,0 +1,793 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "8",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "PICK ME UP",
+          "confidence": 0.796,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "NOW, NOW,FOCUS UP, EVERYONE!!",
+          "confidence": 0.938,
+          "text_ar": "هيا، هيا، ركّزوا جميعًا!!"
+        },
+        {
+          "text": "ARE THERE ANY CARPENTERS AMONGST YOU?",
+          "confidence": 0.965,
+          "text_ar": "هل يوجد بينكم أي نجّارين؟"
+        },
+        {
+          "text": "IF THERE ARE, COME TO THE SiDE.",
+          "confidence": 0.967,
+          "text_ar": "إن وُجد، فليأتِ إلى الجانب."
+        },
+        {
+          "text": "WHAT ARE THEY DOING?",
+          "confidence": 0.945,
+          "text_ar": "ما الذي يفعلونه؟"
+        },
+        {
+          "text": "DIVIDING THE ROLES,",
+          "confidence": 0.97,
+          "text_ar": "يوزعون الأدوار،"
+        },
+        {
+          "text": "SINCE THERE ARE MANY FA- CILITIES NOW.",
+          "confidence": 0.948,
+          "text_ar": "بما أن هناك العديد من المرافق الآن."
+        },
+        {
+          "text": "IFTHE PREVIOUS GUYS WHO DIED ARE SUMMONED NOW,",
+          "confidence": 0.957,
+          "text_ar": "إذا تم استدعاء الرفاق الذين ماتوا سابقًا الآن،"
+        },
+        {
+          "text": "I'MSURE THEY CAN DO NON- COMBAT JOBS.",
+          "confidence": 0.946,
+          "text_ar": "أنا متأكد من قدرتهم على القيام بأعمال غير قتالية."
+        },
+        {
+          "text": "THE SYSTEM OF THE LOUNGE WILL CHANGE NOW.",
+          "confidence": 0.959,
+          "text_ar": "سيتغير نظام الردهة الآن."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.969,
+          "text_ar": "مُرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "FORMING A PARTY. DRAG ANDDROP THE HEROES!",
+          "confidence": 0.933,
+          "text_ar": "تشكيل فريق. اسحب الأبطال وأفلتهم!"
+        },
+        {
+          "text": "2 PARTY JID (★), HANSEN (★), JOHN (★), TEDDY (★)",
+          "confidence": 0.929,
+          "text_ar": "الفريق 2: جيد (★)، هانسن (★)، جون (★)، تيدي (★)"
+        },
+        {
+          "text": "AND IF YOU DON'T HAVE ANY STARS, YOU HAVE TO USE YOUR BODY.",
+          "confidence": 0.941,
+          "text_ar": "وإن لم تكن تمتلك أي نجوم، فعليك استخدام جسدك."
+        },
+        {
+          "text": "AS FOR USELESS PEOPLE, IT WOULD BE A WASTE TO FEED THEM WITH EVEN COLDRICE OR POTATOES.",
+          "confidence": 0.968,
+          "text_ar": "أما بالنسبة لعديمي الفائدة، فسيكون إطعامهم حتى الأرز البارد أو البطاطس مضيعة."
+        },
+        {
+          "text": "MASTER WILL START TO SEPARATE THE USEFUL ONES.",
+          "confidence": 0.947,
+          "text_ar": "سيبدأ السيد بفصل النافعين منهم."
+        },
+        {
+          "text": "HE WILL THIN OUT THE FRESH 1-STARS BY SENDING THEM INTO THE DUNGEON.",
+          "confidence": 0.942,
+          "text_ar": "سيصفي أصحاب النجمة الواحدة الجدد بإرسالهم إلى الزنزانة."
+        },
+        {
+          "text": "HURRY UP AND GET iN THERE!",
+          "confidence": 0.958,
+          "text_ar": "أسرعوا وادخلوا إلى هناك!"
+        },
+        {
+          "text": "IF YOU CAN'T ADAPT TO THE SITUATION, YOU'LL DIEFROMNATURAL SELECTION.",
+          "confidence": 0.899,
+          "text_ar": "إن لم تستطيعوا التكيف مع الوضع، فستموتون بالانتخاب الطبيعي."
+        },
+        {
+          "text": "IT'S PROBABLY STAGE 1.",
+          "confidence": 0.908,
+          "text_ar": "على الأرجح أنها المرحلة الأولى."
+        },
+        {
+          "text": "Wvn",
+          "confidence": 0.269,
+          "text_ar": "آه"
+        },
+        {
+          "text": "JOHN (★) HAS RETURNED TO THE GODDESS'S ARMS! HIS GRIT WILL BE REMEMBERED FOREVER!",
+          "confidence": 0.944,
+          "text_ar": "عاد جون (★) إلى أحضان الإلهة! ستظل شجاعته محفورة في الذاكرة للأبد!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "ONE GUY DIED ALREADY.",
+          "confidence": 0.977,
+          "text_ar": "مات أحدهم بالفعل."
+        },
+        {
+          "text": "SHOULDN'T THEY HAVE EXPLAINED IT BETTER?",
+          "confidence": 0.961,
+          "text_ar": "ألم يكن يجدر بهم شرح الأمر بشكل أفضل؟"
+        },
+        {
+          "text": "THERE IS NO NEED TO EXPLAIN TO PEOPLE WHO DIE ON THE LOWEST STAGE.",
+          "confidence": 0.971,
+          "text_ar": "لا حاجة للشرح لأشخاص يموتون في أدنى مرحلة."
+        },
+        {
+          "text": "TEDDY (★) HAS RETURNED TO THE GODDESS'S ARMS! HIS GRIT WILL BE REMEMBERED FOREVER!",
+          "confidence": 0.963,
+          "text_ar": "عاد تيدي (★) إلى أحضان الإلهة! ستظل شجاعته محفورة في الذاكرة للأبد!"
+        },
+        {
+          "text": "TWO ALREADY DIED HERE,",
+          "confidence": 0.964,
+          "text_ar": "اثنان ماتا هنا بالفعل،"
+        },
+        {
+          "text": "BUT TWO ALSO SURVIVED.",
+          "confidence": 0.959,
+          "text_ar": "لكن اثنين نجيا أيضًا."
+        },
+        {
+          "text": "DiKA! DEKARD! SiGLER! CHLOE!",
+          "confidence": 0.943,
+          "text_ar": "ديكا! ديكارد! سيغلر! كلوي!"
+        },
+        {
+          "text": "F-FIGHT MONSTERS...",
+          "confidence": 0.887,
+          "text_ar": "قـ-قاتلوا الوحوش..."
+        },
+        {
+          "text": "I CAN'T! I CAN'T DO THAT!",
+          "confidence": 0.904,
+          "text_ar": "لا أستطيع! لا يمكنني فعل ذلك!"
+        },
+        {
+          "text": "I'LL FIGHT WITH YOU!",
+          "confidence": 0.974,
+          "text_ar": "سأقاتل معك!"
+        },
+        {
+          "text": "WHAT? IT'S NOT YOUR FiGHT, SO BACK OFF.",
+          "confidence": 0.968,
+          "text_ar": "ماذا؟ هذا ليس قتالك، لذا تراجع."
+        },
+        {
+          "text": "THAT OPPA, WAS HE ALWAYS LIKE THAT?",
+          "confidence": 0.953,
+          "text_ar": "ذلك الأخ، هل كان دائمًا هكذا؟"
+        },
+        {
+          "text": "ISELLE, LET AARON JOIN THE PARTY.",
+          "confidence": 0.937,
+          "text_ar": "إيسيل، دعي آرون ينضم للفريق."
+        },
+        {
+          "text": "HE'S ALSO LACKING IN REAL COMBATSKILLS,SO IT'S NOT BAD.",
+          "confidence": 0.936,
+          "text_ar": "هو أيضًا يفتقر لمهارات القتال الحقيقية، لذا ليس الأمر سيئًا."
+        },
+        {
+          "text": "AARON (★) WANTS TO JOIN THE PARTY. WILL YOU ACCEPT?",
+          "confidence": 0.957,
+          "text_ar": "آرون (★) يريد الانضمام للفريق. هل تقبل؟"
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.999,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "AARON.",
+          "confidence": 0.996,
+          "text_ar": "آرون."
+        },
+        {
+          "text": "TIP: HEROES WILL OFTEN WANT COMBAT. THEY WILL PERFORM BETTER IN THOSE FIGHTS.",
+          "confidence": 0.943,
+          "text_ar": "تلميح: غالبًا ما يرغب الأبطال في القتال. سيؤدون بشكل أفضل في تلك المعارك."
+        },
+        {
+          "text": "IT'S GOOD THATYOURE HELPING THEM, BUT DON'T SET A PRECEDENT LIKE ME.",
+          "confidence": 0.92,
+          "text_ar": "من الجيد أنك تساعدهم، لكن لا تضع سابقة كما فعلتُ أنا."
+        },
+        {
+          "text": "GOT IT.",
+          "confidence": 0.969,
+          "text_ar": "فهمت."
+        },
+        {
+          "text": "I WANT TO GO BACK AND EAT~",
+          "confidence": 0.946,
+          "text_ar": "أريد العودة وتناول الطعام~"
+        },
+        {
+          "text": "THAT MASTER ONLY MADE ME EAT POTATOES HERE.",
+          "confidence": 0.979,
+          "text_ar": "ذلك السيد لم يجعلني آكل هنا سوى البطاطس."
+        },
+        {
+          "text": "I'M NOT SURE IF SHE HAS TACT OR NOT.",
+          "confidence": 0.919,
+          "text_ar": "لست متأكدًا إن كانت تملك اللباقة أم لا."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "THE SKY IS BRIGHT.",
+          "confidence": 0.947,
+          "text_ar": "السماء مشرقة."
+        },
+        {
+          "text": "IT'S LOOKING AT US,",
+          "confidence": 0.889,
+          "text_ar": "إنها تنظر إلينا،"
+        },
+        {
+          "text": "LIKE HOW AGODLOOKS DOWN UPON THE WORLD.",
+          "confidence": 0.922,
+          "text_ar": "كما ينظر إله إلى العالم من علٍ."
+        },
+        {
+          "text": "\\fra{} 交",
+          "confidence": 0.333,
+          "text_ar": "تواصل"
+        },
+        {
+          "text": "DON'T WORRY.",
+          "confidence": 0.976,
+          "text_ar": "لا تقلق."
+        },
+        {
+          "text": "THE GOD ISN'T THAT FREE TO LISTEN TO EVERY SINGLE PERSON'S VOICE.",
+          "confidence": 0.955,
+          "text_ar": "الإله ليس متفرغًا للاستماع إلى صوت كل شخص على حدة."
+        },
+        {
+          "text": "OUR VOICES ARE NOT HEARD.",
+          "confidence": 0.954,
+          "text_ar": "أصواتنا لا تُسمع."
+        },
+        {
+          "text": "JENNA（★)SHOWSDISTASTEATTHECOOKING. HAN（★) SHOWS DISTASTE AT THECOOKING",
+          "confidence": 0.911,
+          "text_ar": "جينا (★) تبدي استياءها من الطهي. هان (★) يبدي استياءه من الطهي."
+        },
+        {
+          "text": "WITH AFILTER, IT IS SENT TO THE MASTER.",
+          "confidence": 0.952,
+          "text_ar": "عبر مرشح، يتم إرسال ذلك للسيد."
+        },
+        {
+          "text": "STAGE CLEAR!",
+          "confidence": 0.976,
+          "text_ar": "تم مسح المرحلة!"
+        },
+        {
+          "text": "NO ONE DIED.",
+          "confidence": 0.97,
+          "text_ar": "لم يمت أحد."
+        },
+        {
+          "text": "AARON,HOW MANY GOBLINS DIDYOU KILL?",
+          "confidence": 0.965,
+          "text_ar": "آرون، كم غولًا قتلت؟"
+        },
+        {
+          "text": "ONE.",
+          "confidence": 0.991,
+          "text_ar": "واحد."
+        },
+        {
+          "text": "GOOD. YOU UNDERSTOOD THE INTENT.",
+          "confidence": 0.938,
+          "text_ar": "جيد. لقد فهمت القصد."
+        },
+        {
+          "text": "LET'S GO BACK.",
+          "confidence": 0.967,
+          "text_ar": "لنعد."
+        },
+        {
+          "text": "ARE WE FINALLY ESCAPING POTATOES?",
+          "confidence": 0.933,
+          "text_ar": "هل سنتخلص أخيرًا من البطاطس؟"
+        },
+        {
+          "text": "OOH~!",
+          "confidence": 0.967,
+          "text_ar": "أوه~!"
+        },
+        {
+          "text": "THE BUILDING DEFINITELY GOT BETTER.",
+          "confidence": 0.977,
+          "text_ar": "المبنى تحسن بالتأكيد."
+        },
+        {
+          "text": "SINCE THERE IS A DININGROOM NOW, CAN WE EAT EXPENSIVE FOOD?",
+          "confidence": 0.941,
+          "text_ar": "بما أن هناك غرفة طعام الآن، هل يمكننا تناول طعام فاخر؟"
+        },
+        {
+          "text": "AS LONG AS THE MASTER DOESN'T CONSIDER US USELESS.",
+          "confidence": 0.952,
+          "text_ar": "طالما أن السيد لا يعتبرنا عديمي فائدة."
+        },
+        {
+          "text": "IT'S LIKE WE GOT THE HIGHEST GRADE OF LAMB STEAK!",
+          "confidence": 0.889,
+          "text_ar": "يبدو وكأننا حصلنا على أجود أنواع شرائح لحم الضأن!"
+        },
+        {
+          "text": "HYUNG-NIM, I'M OKAY WITH TURKEY!",
+          "confidence": 0.934,
+          "text_ar": "هيونغ-نيم، أنا راضٍ بالديك الرومي!"
+        },
+        {
+          "text": "DO YOU REMEMBER WHAT I JUST SAID?",
+          "confidence": 0.916,
+          "text_ar": "هل تتذكر ما قلته للتو؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "THERE ARE CONDIMENTS, BUT TH-THESE ARE THE ONLY INGREDIENTS!",
+          "confidence": 0.93,
+          "text_ar": "توجد توابل، لكن هـ-هذه هي المكونات الوحيدة!"
+        },
+        {
+          "text": "THIS BASTARD... HE SAID HE WAS A COOK..",
+          "confidence": 0.903,
+          "text_ar": "هذا الوغد... قال إنه طباخ.."
+        },
+        {
+          "text": "DOLF(★)",
+          "confidence": 0.971,
+          "text_ar": "دولف (★)"
+        },
+        {
+          "text": "LV 1 (EXP 0/10)",
+          "confidence": 0.994,
+          "text_ar": "المستوى 1 (الخبرة 0/10)"
+        },
+        {
+          "text": "CLASS: NOVICE STRENGTH: 12/12 INTELLIGENCE: 11/11 AGILITY: 10/10 HEALTH: 12/12 POSSESSED SKILL: NONE",
+          "confidence": 0.958,
+          "text_ar": "الفئة: مبتدئ، القوة: 12/12، الذكاء: 11/11، الرشاقة: 10/10، الصحة: 12/12، المهارة المكتسبة: لا يوجد"
+        },
+        {
+          "text": "HE DOESN'T EVEN HAVE A \"COOKING SKILL\".",
+          "confidence": 0.891,
+          "text_ar": "إنه لا يملك حتى \"مهارة الطبخ\"."
+        },
+        {
+          "text": "DOES ANYONE ELSE HAVE A \"COOKING SKILL\"?",
+          "confidence": 0.956,
+          "text_ar": "هل يملك أي شخص آخر \"مهارة طبخ\"؟"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.966,
+          "text_ar": "مُرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "YOU, ARE YOU CHOLOE?",
+          "confidence": 0.934,
+          "text_ar": "أنتِ، هل أنتِ كلوي؟"
+        },
+        {
+          "text": "M-ME?",
+          "confidence": 0.979,
+          "text_ar": "أ-أنا؟"
+        },
+        {
+          "text": "YOU'LL DO THE COOKING FROM NOWON.",
+          "confidence": 0.937,
+          "text_ar": "ستتولين الطبخ من الآن فصاعدًا."
+        },
+        {
+          "text": "WILL YOU MAKE CHLOE (★) THE COOK? DOLF (★)'S SPOT WILL BE TAKEN.",
+          "confidence": 0.966,
+          "text_ar": "هل ستجعل كلوي (★) الطباخة؟ سيتم استبدال مكان دولف (★)."
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.995,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "W-WAIT. I WILL MAKE SOMETHING BETTER!",
+          "confidence": 0.952,
+          "text_ar": "انـ-انتظر. سأصنع شيئًا أفضل!"
+        },
+        {
+          "text": "I COMPLIMENT YOUR SITUATIONREADING, BUT IFYOU WANTED TO LIE, YOU SHOULDN'T HAVE LIED ABOUT SOMETHING YOU'LL GET CAUGHT ON.",
+          "confidence": 0.938,
+          "text_ar": "أحييك على قراءتك للموقف، لكن إن أردت الكذب، كان يجب ألا تكذب بشأن شيء ستُكشف فيه."
+        },
+        {
+          "text": "THIS IS THE LAST TIME I'LL OVER- LOOK THIS.",
+          "confidence": 0.947,
+          "text_ar": "هذه آخر مرة أتغاضى فيها عن هذا."
+        },
+        {
+          "text": "K o o 口",
+          "confidence": 0.159,
+          "text_ar": "كـ-كـ"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "YUMMY!SO POTATOES CAN HAVE SO MANY DIFFERENT TASTES...",
+          "confidence": 0.935,
+          "text_ar": "لذيذ! لذا يمكن للبطاطس أن تمتلك مذاقات مختلفة جدًا..."
+        },
+        {
+          "text": "BECAUSE THERE WERE MANY CONDIMENTS...",
+          "confidence": 0.933,
+          "text_ar": "لأنه كان هناك الكثير من التوابل..."
+        },
+        {
+          "text": "EAT WHILE YOU LISTEN. I WON'T SAY IT TWICE.",
+          "confidence": 0.95,
+          "text_ar": "كلوا وأنتم تستمعون. لن أكرر كلامي مرتين."
+        },
+        {
+          "text": "TELL THE NEXT NEWBIES THE SAME THING.",
+          "confidence": 0.982,
+          "text_ar": "أخبروا الوافدين الجدد القادمين بنفس الشيء."
+        },
+        {
+          "text": "IF YOU DON'T WANT TO END UP DYING, THAT IS.",
+          "confidence": 0.916,
+          "text_ar": "إن كنتم لا ترغبون في أن ينتهي بكم الأمر موتى، طبعًا."
+        },
+        {
+          "text": "IS THAT... TRUE?",
+          "confidence": 0.934,
+          "text_ar": "هل هذا... صحيح؟"
+        },
+        {
+          "text": "IHAVEN'TFOUGHT AT ALL BEFOREI GOT HERE EITHER. EVERYONE, YOU GOT THIS.",
+          "confidence": 0.939,
+          "text_ar": "أنا أيضًا لم أقاتل على الإطلاق قبل مجيئي إلى هنا. يا رفاق، يمكنكم فعلها."
+        },
+        {
+          "text": "ARE US TWO DOING SOMETHING ELSE?",
+          "confidence": 0.967,
+          "text_ar": "هل نقوم نحن الاثنان بشيء آخر؟"
+        },
+        {
+          "text": "ENOK AND CHLOE, YOU'RE THE CARPENTER AND THE COOK. YOU CAN HELP US IN OTHER WAYS.",
+          "confidence": 0.936,
+          "text_ar": "إينوك وكلوي، أنتما النجّار والطباخة. يمكنكما مساعدتنا بطرق أخرى."
+        },
+        {
+          "text": "I...I CAN ALSO BE A CARPENTER...",
+          "confidence": 0.849,
+          "text_ar": "أنا... يمكنني أن أكون نجّارًا أيضًا..."
+        },
+        {
+          "text": "IF YOU LIE AGAIN, SHOULD I RECOMMENDYOU AS THE FIRST SACRIFICE TO THE SYNTHESIS?",
+          "confidence": 0.96,
+          "text_ar": "إن كذبت مجددًا، هل يجب أن أوصي بك كأول أضحية لعملية التوليف؟"
+        },
+        {
+          "text": "I THINK YOULL BE GREAT.",
+          "confidence": 0.935,
+          "text_ar": "أظن أنك ستكون رائعًا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "NON-COMBAT JOBS HAVE HIGHER CHANCES OF SURVIVAL,BUT YOU SHOULDN'T REST EASY.",
+          "confidence": 0.94,
+          "text_ar": "الأعمال غير القتالية فرص نجاتها أعلى، لكن لا يجب أن تطمئنوا."
+        },
+        {
+          "text": "SPOTS ARE LIMITED, SO IFA BETTER SKILLED PERSONGETS SUMMONED, YOU'LL END UP WITH A COMBAT JOB.",
+          "confidence": 0.929,
+          "text_ar": "الأماكن محدودة، لذا إن تم استدعاء شخص أكثر مهارة، سينتهي بك الأمر في عمل قتالي."
+        },
+        {
+          "text": "FROM THE 2ND DAY, THE SIMPLE LIFE SLOWLY STARTEO TO CHANGE.",
+          "confidence": 0.922,
+          "text_ar": "من اليوم الثاني، بدأت الحياة البسيطة تتغير ببطء."
+        },
+        {
+          "text": "ONLY 3?",
+          "confidence": 0.975,
+          "text_ar": "ثلاثة فقط؟"
+        },
+        {
+          "text": "GIDE, HANSEN, ANO DIKA.",
+          "confidence": 0.88,
+          "text_ar": "جيد، هانسن، وديكا."
+        },
+        {
+          "text": "BOYS WHO ARS 20 AND UNDER JOINED THE TRAINING.",
+          "confidence": 0.95,
+          "text_ar": "انضم الفتيان الذين تبلغ أعمارهم 20 عامًا فما دون إلى التدريب."
+        },
+        {
+          "text": "I GUESS IOUESS EVERYONE ELSE IS SCARED AND IS LOOKING FOR A LOOKINGFOR A PLACE TO HIDE.",
+          "confidence": 0.627,
+          "text_ar": "أظن أن الجميع خائفون ويبحثون عن مكان للاختباء."
+        },
+        {
+          "text": "I WAS GETTING BORED OF SPARRING WITH AARON, SO I GUESS WE CAN CHANGE THE MOODABIT.",
+          "confidence": 0.957,
+          "text_ar": "بدأت أشعر بالملل من المبارزة مع آرون، لذا أظن أننا نستطيع تغيير الأجواء قليلًا."
+        },
+        {
+          "text": "I GUESS AARON WAS A BAD INFLUENCE ON THEM. THEY HAVE BEEN CALLING ME HYUNG-NIM.",
+          "confidence": 0.944,
+          "text_ar": "أظن أن آرون كان تأثيرًا سيئًا عليهم. لقد بدأوا ينادونني بهيونغ-نيم."
+        },
+        {
+          "text": "AROUND 7~8 STAT DIFFERENCE FROM ME. THE GAP BETWEEN A CHILO AND AN ADULT.",
+          "confidence": 0.911,
+          "text_ar": "حوالي 7~8 نقاط فرق عني. الفجوة بين طفل وشخص بالغ."
+        },
+        {
+          "text": "IF IT WAS EARTH, SHORT- TERM GROWTH LIKE THIS WOULON'T HAVE BEEN POSSIBLE.",
+          "confidence": 0.96,
+          "text_ar": "لو كنا على الأرض، لما كان نمو سريع كهذا ممكنًا."
+        },
+        {
+          "text": "JENNA'S LOW-RANK ARCHERY SKILL HAS ALREAOY REACHED LEVEL 5.",
+          "confidence": 0.954,
+          "text_ar": "مهارة الرماية منخفضة الرتبة لجينا وصلت بالفعل للمستوى 5."
+        },
+        {
+          "text": "HER LOW-RANK DAGGER SKILL HAS ALSO REACHED LEVEL 2.",
+          "confidence": 0.943,
+          "text_ar": "مهارتها في الخنجر منخفضة الرتبة وصلت أيضًا للمستوى 2."
+        },
+        {
+          "text": "AARON'S SPEAR SKILL HAS REACHED LEVEL Z, BUT HASN'T BEEN PROGRESS- ING ANY HIGHER.",
+          "confidence": 0.955,
+          "text_ar": "مهارة الرمح لآرون وصلت للمستوى 2، لكنها لم تتقدم لأعلى من ذلك."
+        },
+        {
+          "text": "HE WAS THE FIRST TO COME TO TRAIN ANO THE LAST TO HEAD HOME,",
+          "confidence": 0.963,
+          "text_ar": "كان أول من يأتي للتدريب وآخر من يعود للمنزل،"
+        },
+        {
+          "text": "BUT HE DION'T GET AUSEFUL SKILL.",
+          "confidence": 0.974,
+          "text_ar": "لكنه لم يحصل على مهارة مفيدة."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "THE THREE IN FRONT OF ME ALL HAVE LEVEL 1 SWOROSMANSHIP.",
+          "confidence": 0.983,
+          "text_ar": "الثلاثة أمامي جميعهم يملكون مهارة المبارزة بالمستوى 1."
+        },
+        {
+          "text": "MAYBE BECAUSE THEY'RE OF SIMILAR AGE, THEIR SPIRITS ARE IN HARMONY.",
+          "confidence": 0.967,
+          "text_ar": "ربما لأنهم في سن متقاربة، أرواحهم في انسجام."
+        },
+        {
+          "text": "H-HYUNG-NIM, YOU ARE STRONG.",
+          "confidence": 0.975,
+          "text_ar": "هـ-هيونغ-نيم، أنت قوي."
+        },
+        {
+          "text": "BECAUSE I'M HIGH-LEVEL, IDIOT.",
+          "confidence": 0.979,
+          "text_ar": "لأنني ذو مستوى عالٍ، أيها الأحمق."
+        },
+        {
+          "text": "LEVEL?",
+          "confidence": 0.995,
+          "text_ar": "مستوى؟"
+        },
+        {
+          "text": "WELL, THEY'RE BETTER THAN THE OTHER GUYS HIDING AWAY.",
+          "confidence": 0.96,
+          "text_ar": "حسنًا، هم أفضل من الآخرين المختبئين."
+        },
+        {
+          "text": "YOU GUYS WILL SEE SOON.",
+          "confidence": 0.882,
+          "text_ar": "سترون قريبًا يا رفاق."
+        },
+        {
+          "text": "A FEW DAYS LATER, THE FREE 10 PULL HAPPENED AGAIN.",
+          "confidence": 0.903,
+          "text_ar": "بعد بضعة أيام، حدثت عملية السحب المجاني لـ 10 مرات مجددًا."
+        },
+        {
+          "text": "THIS TIME, WITHOUT ME EVEN HAVING TO ACT, AARON AND THE OTHER THREE HANOLEO IT.",
+          "confidence": 0.939,
+          "text_ar": "هذه المرة، دون أن أضطر للتدخل، تعامل آرون والثلاثة الآخرون مع الأمر."
+        },
+        {
+          "text": "ONLY ONE PERSON DIED IN THE \"THINNING\" PROCESS.",
+          "confidence": 0.967,
+          "text_ar": "شخص واحد فقط مات في عملية \"التصفية\"."
+        },
+        {
+          "text": "MORE PEOPLE ARE COMING.",
+          "confidence": 0.99,
+          "text_ar": "المزيد من الناس قادمون."
+        },
+        {
+          "text": "THERE WILL ONLY BE MORE.",
+          "confidence": 0.977,
+          "text_ar": "لن يكون هناك سوى المزيد."
+        },
+        {
+          "text": "BUT WHY IS THE MASTER NOTGOING TO THE STH STAGE?",
+          "confidence": 0.96,
+          "text_ar": "لكن لماذا لا يذهب السيد إلى المرحلة الخامسة؟"
+        },
+        {
+          "text": "IT'S BEEN A LONG TIME SINCE HE CLEARED THE 4TH STAGE.",
+          "confidence": 0.951,
+          "text_ar": "لقد مر وقت طويل منذ أن أنهى المرحلة الرابعة."
+        },
+        {
+          "text": "OF COURSE HE ISN'T. THE STH STAGE IS ON ACOMPLETELY DIFFERENT LEVEL.",
+          "confidence": 0.942,
+          "text_ar": "بالطبع لن يذهب. المرحلة الخامسة في مستوى مختلف تمامًا."
+        },
+        {
+          "text": "THE 1 PARTY MEM- BERS HAVEN'T BEEN SELECTED YET.",
+          "confidence": 0.93,
+          "text_ar": "لم يتم اختيار أعضاء الفريق الأول بعد."
+        },
+        {
+          "text": "EVERYS STAGES, THE DIFFICULTY SPIKES.",
+          "confidence": 0.946,
+          "text_ar": "كل خمس مراحل، تزداد الصعوبة بشكل حاد."
+        },
+        {
+          "text": "IT'S LIKE THE IOEA OF A BOSS STAGE.",
+          "confidence": 0.965,
+          "text_ar": "الأمر أشبه بفكرة مرحلة الزعيم."
+        },
+        {
+          "text": "EVEN I'M NOT 100% SURE IF I'LL SURVIVE.",
+          "confidence": 0.966,
+          "text_ar": "حتى أنا لست متأكدًا بنسبة 100% إن كنت سأنجو."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.951,
+          "text_ar": "مُرفع من: PICKMELPGACHA.COM"
+        },
+        {
+          "text": "AFTER THINNING, EVEN WITH TRAINING, HOW MANY WILL DIE...",
+          "confidence": 0.906,
+          "text_ar": "بعد التصفية، وحتى مع التدريب، كم سيموت..."
+        },
+        {
+          "text": "AND TO WHAT EXTENT OF HELL WILL THE DIFFICULTY SPIKE.",
+          "confidence": 0.955,
+          "text_ar": "وإلى أي مدى من الجحيم ستصل الصعوبة."
+        },
+        {
+          "text": "I OON'T NEED TO TELL JENNA.",
+          "confidence": 0.879,
+          "text_ar": "لا أحتاج لإخبار جينا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "<COMBAT TEAM>",
+          "confidence": 0.913,
+          "text_ar": "<فريق القتال>"
+        },
+        {
+          "text": "JENNA CiRAi",
+          "confidence": 0.948,
+          "text_ar": "جينا سيراي"
+        },
+        {
+          "text": "HAN ISRAT",
+          "confidence": 0.944,
+          "text_ar": "هان إسرات"
+        },
+        {
+          "text": "AARON DELCUT",
+          "confidence": 0.959,
+          "text_ar": "آرون ديلكوت"
+        },
+        {
+          "text": "DiKA",
+          "confidence": 0.985,
+          "text_ar": "ديكا"
+        },
+        {
+          "text": "HANSEN",
+          "confidence": 1.0,
+          "text_ar": "هانسن"
+        },
+        {
+          "text": "GiDE",
+          "confidence": 0.993,
+          "text_ar": "جيد"
+        },
+        {
+          "text": "<SUPPORT>",
+          "confidence": 0.972,
+          "text_ar": "<الدعم>"
+        },
+        {
+          "text": "ENOK",
+          "confidence": 0.989,
+          "text_ar": "إينوك"
+        },
+        {
+          "text": "CHLOE",
+          "confidence": 0.995,
+          "text_ar": "كلوي"
+        },
+        {
+          "text": "（C A ATRＩ",
+          "confidence": 0.464,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.687,
+          "text_ar": "ريديس ستوديو"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.994,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
