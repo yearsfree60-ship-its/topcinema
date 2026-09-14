@@ -1,0 +1,451 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "48",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "WE ONLY HAVE A FEW MINUTES LEFT.",
+          "confidence": 0.963,
+          "text_ar": "لم يتبقَّ لدينا سوى بضع دقائق."
+        },
+        {
+          "text": "IF WE DON'T MANAGE TO FIND THEM IN THAT TIME,",
+          "confidence": 0.963,
+          "text_ar": "إن لم نتمكن من العثور عليهم في هذا الوقت،"
+        },
+        {
+          "text": "WE'LL ALL DIE!",
+          "confidence": 0.968,
+          "text_ar": "سنموت جميعًا!"
+        },
+        {
+          "text": "TOP",
+          "confidence": 0.59,
+          "text_ar": "الطابق العلوي"
+        },
+        {
+          "text": "FLOOR 15 FLOOR.15 MISSION TYPE - GUARD OBJECTIVE -PROTECT ACERTAIN INDIVIDUAL.",
+          "confidence": 0.814,
+          "text_ar": "الطابق 15. نوع المهمة: حراسة. الهدف: حماية شخص معين."
+        },
+        {
+          "text": "REMAINING TIME: ???",
+          "confidence": 0.961,
+          "text_ar": "الوقت المتبقي: ؟؟؟"
+        },
+        {
+          "text": "EOLKA!",
+          "confidence": 0.992,
+          "text_ar": "إولكا!"
+        },
+        {
+          "text": "IKNOW!",
+          "confidence": 0.976,
+          "text_ar": "أعلم ذلك!"
+        },
+        {
+          "text": "A 0 中 T",
+          "confidence": 0.135,
+          "text_ar": "تنبيه"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "WH-WHO ARE YOU?!",
+          "confidence": 0.9,
+          "text_ar": "مـ-من أنت؟!"
+        },
+        {
+          "text": "HOWDID YOU GET IN HERE...?",
+          "confidence": 0.942,
+          "text_ar": "كيف دخلت إلى هنا...؟"
+        },
+        {
+          "text": "THERE'S NO CHANGE IN THE MESSAGE WINDOW.",
+          "confidence": 0.974,
+          "text_ar": "لا يوجد أي تغيير في نافذة الرسائل."
+        },
+        {
+          "text": "...IT'S NOT HIM.",
+          "confidence": 0.793,
+          "text_ar": "...إنه ليس هو."
+        },
+        {
+          "text": "THE HALLWAYS MUST BE THE EN- TRANCES!",
+          "confidence": 0.971,
+          "text_ar": "لا بد أن الممرات هي المداخل!"
+        },
+        {
+          "text": "WHERE OO YOU THINK YOU ARE?!",
+          "confidence": 0.904,
+          "text_ar": "أين تظن نفسك؟!"
+        },
+        {
+          "text": "YOU GUYS GO TAKE CARE OF THE RIGHT PATH AND COME AFTER US.",
+          "confidence": 0.813,
+          "text_ar": "يا رفاق، تولوا أمر المسار الأيمن والحقوا بنا."
+        },
+        {
+          "text": "I'MGONNA GO LEFT.",
+          "confidence": 0.986,
+          "text_ar": "سأذهب أنا جهة اليسار."
+        },
+        {
+          "text": "WE'LL CATCH UP WITH YOU SOON.",
+          "confidence": 0.929,
+          "text_ar": "سنلحق بكم قريبًا."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.983,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "GET HIM!",
+          "confidence": 0.984,
+          "text_ar": "اقبضوا عليه!"
+        },
+        {
+          "text": "I'LL KILL Yー!!!",
+          "confidence": 0.889,
+          "text_ar": "سأقتلك أيها-!!!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "WHERE ARE YOU?",
+          "confidence": 0.967,
+          "text_ar": "أين أنت؟"
+        },
+        {
+          "text": "THAT OLD MAN WASN'T THE TARGET.",
+          "confidence": 0.986,
+          "text_ar": "ذلك العجوز لم يكن الهدف."
+        },
+        {
+          "text": "EVERYONE, QUIET!",
+          "confidence": 0.987,
+          "text_ar": "اصمتوا جميعًا!"
+        },
+        {
+          "text": "THE SUN'S SUCCESSOR?",
+          "confidence": 0.99,
+          "text_ar": "خليفة الشمس؟"
+        },
+        {
+          "text": "THE SUN'S SUCCESSORISMAKING HERENTRANCE.",
+          "confidence": 0.917,
+          "text_ar": "خليفة الشمس في طريقها للظهور."
+        },
+        {
+          "text": "DO NOT CAUSE ARUCKUS!",
+          "confidence": 0.957,
+          "text_ar": "لا تسببوا جلبة!"
+        },
+        {
+          "text": "MAGIC AMPLIFICATION.",
+          "confidence": 0.991,
+          "text_ar": "تضخيم السحر."
+        },
+        {
+          "text": "THERE'S NO TIME. WE'REGONNA ENTER THETEMPLE.",
+          "confidence": 0.94,
+          "text_ar": "ليس لدينا وقت. سندخل إلى المعبد."
+        },
+        {
+          "text": "NSIDE?",
+          "confidence": 0.976,
+          "text_ar": "إلى الداخل؟"
+        },
+        {
+          "text": "THE SUN'S SUCCESSOR MUST BE THE TARGET!",
+          "confidence": 0.963,
+          "text_ar": "لا بد أن خليفة الشمس هي الهدف!"
+        },
+        {
+          "text": "I AM KYLE VON STRAUSS!",
+          "confidence": 0.892,
+          "text_ar": "أنا كايل فون شتراوس!"
+        },
+        {
+          "text": "ENEMIES OF THE STRAUSS FAMILY! AS THE HOLY KNIGHT RELAYING THE ANGER OF THE GOOOESS!",
+          "confidence": 0.945,
+          "text_ar": "يا أعداء عائلة شتراوس! بصفتي الفارس المقدس الذي ينقل غضب الإلهة!"
+        },
+        {
+          "text": "I WILL GET RIO OF-",
+          "confidence": 0.772,
+          "text_ar": "سأقضي على-"
+        },
+        {
+          "text": "W-WAIT, I'M INTROOUCING MYSELF...",
+          "confidence": 0.935,
+          "text_ar": "انـ-انتظر، أنا أُعرّف عن نفسي..."
+        },
+        {
+          "text": "WAIT! STOP IGNORING ME!",
+          "confidence": 0.92,
+          "text_ar": "انتظر! توقف عن تجاهلي!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "WHERE ARE YOU?!",
+          "confidence": 0.89,
+          "text_ar": "أين أنت؟!"
+        },
+        {
+          "text": "WHERE?!",
+          "confidence": 0.997,
+          "text_ar": "أين؟!"
+        },
+        {
+          "text": "WHERE!",
+          "confidence": 0.996,
+          "text_ar": "أين!"
+        },
+        {
+          "text": "KEUK!",
+          "confidence": 0.991,
+          "text_ar": "أخ!"
+        },
+        {
+          "text": "NOT EVERYONE HERE CAN SEE US?",
+          "confidence": 0.957,
+          "text_ar": "ألا يستطيع الجميع هنا رؤيتنا؟"
+        },
+        {
+          "text": "THERE ARE PROBABLY LESS THAN THREE MINUTES REMAIN- ING!",
+          "confidence": 0.955,
+          "text_ar": "ربما لم يتبقَّ سوى أقل من ثلاث دقائق!"
+        },
+        {
+          "text": "THERE ISN'T TIME!",
+          "confidence": 0.965,
+          "text_ar": "ليس هناك وقت!"
+        },
+        {
+          "text": "HUFF",
+          "confidence": 0.7,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "M 厂 H0",
+          "confidence": 0.09,
+          "text_ar": "تنبيه"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "心 XN E 4 1",
+          "confidence": 0.088,
+          "text_ar": "تنبيه"
+        },
+        {
+          "text": "DEATHTO THE HERETIC.",
+          "confidence": 0.969,
+          "text_ar": "الموت للهرطوقي."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "PICK MEUP 口",
+          "confidence": 0.846,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ART WASAKBASAK (3B2S) ADAPTATION CHO WOONEH (REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.962,
+          "text_ar": "الرسم: واساكباساك (3B2S)، الاقتباس: تشو وونيه (ريديك ستودي)، العمل الأصلي: هيرمود"
+        },
+        {
+          "text": "OH 1 4 . 0 X",
+          "confidence": 0.119,
+          "text_ar": "تنبيه"
+        },
+        {
+          "text": "YOUR HIGHNESS.",
+          "confidence": 0.953,
+          "text_ar": "سموك."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.982,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "THERE ARE CITIZENS WAITING AT THE SQUARE.",
+          "confidence": 0.987,
+          "text_ar": "هناك مواطنون ينتظرون في الساحة."
+        },
+        {
+          "text": "BUT IS THERE SOME TROUBLE IN THE GARDEN?",
+          "confidence": 0.949,
+          "text_ar": "ولكن هل هناك مشكلة في الحديقة؟"
+        },
+        {
+          "text": "I THINK THERE IS AN INVADER.",
+          "confidence": 0.93,
+          "text_ar": "أعتقد أن هناك متسللًا."
+        },
+        {
+          "text": "WE'LL TAKE CARE OF THEM. DO NOT WORRY.",
+          "confidence": 0.918,
+          "text_ar": "سنتولى أمرهم. لا تقلق."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "THEY'RE ON A DIFFERENT LEVEL FROM THE SOLDIERS DOWN THERE!",
+          "confidence": 0.96,
+          "text_ar": "إنهم في مستوى مختلف تمامًا عن الجنود الموجودين هناك!"
+        },
+        {
+          "text": "云 MK 中 0",
+          "confidence": 0.098,
+          "text_ar": "تنبيه"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": []
+    },
+    {
+      "page": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "I APPRECIATE THE CHANCE YOU HAVE GIVEN ME.",
+          "confidence": 0.951,
+          "text_ar": "أنا ممتن للفرصة التي منحتني إياها."
+        },
+        {
+          "text": "I WON'T FORGET IT.",
+          "confidence": 0.98,
+          "text_ar": "لن أنساها."
+        },
+        {
+          "text": "OF COURSE, YOUR HIGHNESS. THE GODDESS WILL ALSO BE HAPPY.",
+          "confidence": 0.901,
+          "text_ar": "بالطبع يا سموك. الإلهة ستكون سعيدة أيضًا."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.982,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "..INVADER!",
+          "confidence": 0.762,
+          "text_ar": "..متسلل!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "..YOU MANAGEO TO GET THROUGH THE GUAROS?!",
+          "confidence": 0.769,
+          "text_ar": "..لقد تمكنت من تجاوز الحراس؟!"
+        },
+        {
+          "text": "KEUK!",
+          "confidence": 0.985,
+          "text_ar": "أخ!"
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.992,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "DIE!!!",
+          "confidence": 0.766,
+          "text_ar": "مُت!!!"
+        },
+        {
+          "text": "HE'S AIMING NOT FOR ME,",
+          "confidence": 0.963,
+          "text_ar": "إنه لا يستهدفني أنا،"
+        },
+        {
+          "text": "BUT FOR HER?!",
+          "confidence": 0.968,
+          "text_ar": "بل يستهدفها هي؟!"
+        },
+        {
+          "text": "<PARTY 1>",
+          "confidence": 0.935,
+          "text_ar": "<الفريق 1>"
+        },
+        {
+          "text": "★★ AARON DELCUT",
+          "confidence": 0.704,
+          "text_ar": "★★ آرون ديلكوت"
+        },
+        {
+          "text": "★★ JENNA CIRAI",
+          "confidence": 0.624,
+          "text_ar": "★★ جينا سيراي"
+        },
+        {
+          "text": "★★ HAN ISLAT",
+          "confidence": 0.826,
+          "text_ar": "★★ هان إسرات"
+        },
+        {
+          "text": "*X EDLKA RIVEL STRASHUR",
+          "confidence": 0.276,
+          "text_ar": "*X إولكا ريفيل ستراشور"
+        },
+        {
+          "text": "EDIS CALLEN",
+          "confidence": 0.967,
+          "text_ar": "إيديس كالين"
+        },
+        {
+          "text": "C AR AＴＲＩ",
+          "confidence": 0.538,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.873,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.996,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
