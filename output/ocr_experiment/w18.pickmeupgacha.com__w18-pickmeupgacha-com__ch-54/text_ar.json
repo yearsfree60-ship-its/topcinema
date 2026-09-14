@@ -1,0 +1,582 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "54",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "HAN(★★) IS INFLICTEDWITH POISON. HIS HPWILLBEREDUCEDFORAPERIODOFTIME.",
+          "confidence": 0.921,
+          "text_ar": "هان (★★) مُصاب بالسم. ستنخفض نقاط حياته لفترة من الزمن."
+        },
+        {
+          "text": "HAN!",
+          "confidence": 0.984,
+          "text_ar": "هان!"
+        },
+        {
+          "text": "PON'T STOP!!!! 4",
+          "confidence": 0.253,
+          "text_ar": "لا تتوقف!!!!"
+        },
+        {
+          "text": "PICK ME UP IN",
+          "confidence": 0.856,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ART WASAKBASAK (3B2S) ADAPTATIONCHOWOONEH(REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.953,
+          "text_ar": "الرسم: واساكباساك، الاقتباس: تشو وونيه (ريديك ستودي)، العمل الأصلي: هيرمود"
+        },
+        {
+          "text": "PARTY AT RISK OF DEATH!",
+          "confidence": 0.937,
+          "text_ar": "الفريق في خطر الموت!"
+        },
+        {
+          "text": "MASTER, THE PARTY IS IN DANGER!",
+          "confidence": 0.961,
+          "text_ar": "سيدي، الفريق في خطر!"
+        },
+        {
+          "text": "HAN(★★) IS INFLICTED WITH BLEEDING. HIS HPWILLBEREDUCEDFORAPERIODOFTIME",
+          "confidence": 0.89,
+          "text_ar": "هان (★★) مُصاب بالنزيف. ستنخفض نقاط حياته لفترة من الزمن."
+        },
+        {
+          "text": "YD 一",
+          "confidence": 0.081,
+          "text_ar": "آه!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.973,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "EWN",
+          "confidence": 0.331,
+          "text_ar": "أوه!"
+        },
+        {
+          "text": "IF IT WEREN'T FOR THE BREASTPLATE, MY RIBS WOULD'VE BEEN SHATTERED!",
+          "confidence": 0.922,
+          "text_ar": "لولا درع الصدر، لتحطمت أضلاعي!"
+        },
+        {
+          "text": "THANKFULLY, I THINK I DID JUST AS MUCH DAMAGE.",
+          "confidence": 0.931,
+          "text_ar": "لحسن الحظ، أعتقد أنني ألحقت به ضررًا مماثلًا."
+        },
+        {
+          "text": "DOES IT HURT?",
+          "confidence": 0.92,
+          "text_ar": "هل يؤلمك؟"
+        },
+        {
+          "text": "2 EDIS(★★) IS INFLICTED WITH BLEEDING. HER HP WILL BEREDUCED FOR A PERIOD OF TIME.",
+          "confidence": 0.315,
+          "text_ar": "إيديس (★★) مُصابة بالنزيف. ستنخفض نقاط حياتها لفترة من الزمن."
+        },
+        {
+          "text": "I HAVE NO TIME!",
+          "confidence": 0.919,
+          "text_ar": "ليس لدي وقت!"
+        },
+        {
+          "text": "WHAT THE HELL ARE YOU LOOKING AT?!",
+          "confidence": 0.924,
+          "text_ar": "ما الذي تنظر إليه بحق الجحيم؟!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": []
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": ".DAMMIT! THE POISON IS SPREADING TOO FAST!",
+          "confidence": 0.929,
+          "text_ar": "تبًا! السم ينتشر بسرعة كبيرة!"
+        },
+        {
+          "text": "COUGY",
+          "confidence": 0.614,
+          "text_ar": "سعال"
+        },
+        {
+          "text": "COUGM",
+          "confidence": 0.451,
+          "text_ar": "سعال"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "THIS IS BULLSHIT.",
+          "confidence": 0.937,
+          "text_ar": "هذا هراء."
+        },
+        {
+          "text": "REW",
+          "confidence": 0.796,
+          "text_ar": "آه"
+        },
+        {
+          "text": "THAT'S GOODBYE.",
+          "confidence": 0.996,
+          "text_ar": "هذا هو الوداع."
+        },
+        {
+          "text": "I'M TIRED.",
+          "confidence": 0.977,
+          "text_ar": "أنا متعب."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "HUFF",
+          "confidence": 0.919,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "HUFF",
+          "confidence": 0.82,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "HUFF",
+          "confidence": 0.962,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMEUPGACHA.COM",
+          "confidence": 0.966,
+          "text_ar": "تم الرفع من: PICKMEUPGACHA.COM"
+        },
+        {
+          "text": "THE TARGET HAS ESCAPED THE CITY.",
+          "confidence": 0.918,
+          "text_ar": "لقد هرب الهدف من المدينة."
+        },
+        {
+          "text": "MVP - HAN(★★)",
+          "confidence": 0.909,
+          "text_ar": "أفضل لاعب - هان (★★)"
+        },
+        {
+          "text": "HAN ISLAT",
+          "confidence": 0.97,
+          "text_ar": "هان إسرات"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "STAGE CLEAR!",
+          "confidence": 0.957,
+          "text_ar": "تم اجتياز المرحلة!"
+        },
+        {
+          "text": "HAN(★★), JENNA (★★) AARON(★★), EOLKA(★★★), EDIS (★★★) LEVELED UP!",
+          "confidence": 0.891,
+          "text_ar": "هان (★★)، جينا (★★)، آرون (★★)، إولكا (★★★)، إيديس (★★★) ارتقوا في المستوى!"
+        },
+        {
+          "text": "REWARD",
+          "confidence": 0.991,
+          "text_ar": "المكافأة"
+        },
+        {
+          "text": "IRON ORE (A) X 3",
+          "confidence": 0.966,
+          "text_ar": "خام الحديد (A) × 3"
+        },
+        {
+          "text": "WHOA! I THOUGHT I WAS GONNA OIE! d",
+          "confidence": 0.158,
+          "text_ar": "يا للهول! ظننت أنني سأموت!"
+        },
+        {
+          "text": "YOU WERE THE ONE WHO MAOE ME WEAR THAT WEIRO OUTFIT, RIGHT?",
+          "confidence": 0.936,
+          "text_ar": "أنت من جعلني أرتدي ذلك الزي الغريب، أليس كذلك؟"
+        },
+        {
+          "text": "DID YOU NOT LIKE IT?",
+          "confidence": 0.935,
+          "text_ar": "ألم يعجبك؟"
+        },
+        {
+          "text": "Itlooked really expensive.",
+          "confidence": 0.96,
+          "text_ar": "بدا باهظ الثمن حقًا."
+        },
+        {
+          "text": "THAT'S NOT THE ISSUE! DIO YOU KNOW THAT ALL THE SOLOIERS WERE TRYING TO KILL ME?!",
+          "confidence": 0.919,
+          "text_ar": "ليست هذه هي المشكلة! هل تعلم أن كل الجنود كانوا يحاولون قتلي؟!"
+        },
+        {
+          "text": "BUT NO ONE DIED.",
+          "confidence": 0.958,
+          "text_ar": "لكن لم يمت أحد."
+        },
+        {
+          "text": "RECORDING COMPLETE!",
+          "confidence": 0.971,
+          "text_ar": "اكتمل التسجيل!"
+        },
+        {
+          "text": "THE VIDEO HAS BEEN SAVED. THE VIDEOWILL BE SAVED TOYOUR GALLERY. YOU CAN SHARE IT WITH OTHER USERS ON THE INTERNET.",
+          "confidence": 0.939,
+          "text_ar": "تم حفظ الفيديو في معرض الصور الخاص بك. يمكنك مشاركته مع مستخدمين آخرين على الإنترنت."
+        },
+        {
+          "text": "GOOD JOB, EVERYONE.",
+          "confidence": 0.956,
+          "text_ar": "عمل رائع يا رفاق."
+        },
+        {
+          "text": "NO ONE DIED, AND WE CLEARED THE BOSS STAGE.",
+          "confidence": 0.974,
+          "text_ar": "لم يمت أحد، وقد اجتزنا مرحلة الزعيم."
+        },
+        {
+          "text": "MASTER, WILL YOU DISCONNECT?",
+          "confidence": 0.92,
+          "text_ar": "سيدي، هل ستسجل الخروج؟"
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.995,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "ESPECIALLY YOU, EDIS. THIS WOULD HAVE BEEN REALLY HARD WITHOUT YOU.",
+          "confidence": 0.959,
+          "text_ar": "أنتِ تحديدًا يا إيديس. كان الأمر ليكون صعبًا للغاية بدونك."
+        },
+        {
+          "text": "I JUST DID WHAT I SHOULD.",
+          "confidence": 0.958,
+          "text_ar": "لقد قمت بما كان علي فعله فقط."
+        },
+        {
+          "text": "I'LL GO BACK TO MY PARTY NOW.",
+          "confidence": 0.922,
+          "text_ar": "سأعود إلى فريقي الآن."
+        },
+        {
+          "text": "I DIDN'T INTEND ON STAYING FOR LONG ANYWAY, AND I'M SURE MASTER WILL BRING SOMEONE IN.",
+          "confidence": 0.954,
+          "text_ar": "لم أكن أنوي البقاء طويلًا على أي حال، وأنا متأكدة من أن السيد سيحضر شخصًا آخر."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "THIS ENTIRE THING, ALONG WITH THE BAIT PLAN, WOULD HAVE BEEN IMPOSSIBLE WITHOUT EDIS' GEOGRAPHICALKNOWLEDGE AND INFORMATION GATHERING,",
+          "confidence": 0.939,
+          "text_ar": "هذا الأمر برمته، إلى جانب خطة الطُعم، كان مستحيلًا لولا معرفة إيديس الجغرافية وجمعها للمعلومات،"
+        },
+        {
+          "text": "SO I GUESS THE REAL MVP OF THIS MISSION IS EDIS.",
+          "confidence": 0.97,
+          "text_ar": "لذا أعتقد أن أفضل لاعب في هذه المهمة هو إيديس."
+        },
+        {
+          "text": "YOU ALMOST KILL US EACH TIME.",
+          "confidence": 0.938,
+          "text_ar": "أنت تكاد تقتلنا في كل مرة."
+        },
+        {
+          "text": "I'M GONNA GO REST.",
+          "confidence": 0.955,
+          "text_ar": "سأذهب لأرتاح."
+        },
+        {
+          "text": "I FEEL LIKE MY SKIN'S NOT GONNALIKE THE LACK OF SLEEP.",
+          "confidence": 0.921,
+          "text_ar": "أشعر أن بشرتي لن تحب قلة النوم هذه."
+        },
+        {
+          "text": "AARON OPPA, DON'T BE SO SAD.",
+          "confidence": 0.95,
+          "text_ar": "أخي آرون، لا تكن حزينًا جدًا."
+        },
+        {
+          "text": "YOU WERE JUST UNLUCKY. IT'S NOT LIKE YOU WERE A BURDEN.",
+          "confidence": 0.949,
+          "text_ar": "لقد كنت سيئ الحظ فقط. لست عبئًا علينا."
+        },
+        {
+          "text": "HYUNG-NIM.",
+          "confidence": 0.991,
+          "text_ar": "أخي الأكبر."
+        },
+        {
+          "text": "I'M SORRY. BECAUSE OF ME...",
+          "confidence": 0.944,
+          "text_ar": "أنا آسف. بسببي..."
+        },
+        {
+          "text": "YOU'RE AWARE.",
+          "confidence": 0.972,
+          "text_ar": "أنت تدرك ذلك."
+        },
+        {
+          "text": "DON'T DO THAT AGAIN. I'M NOT GONNA SAVE YOU TWICE.",
+          "confidence": 0.959,
+          "text_ar": "لا تفعل ذلك مجددًا. لن أنقذك مرتين."
+        },
+        {
+          "text": "IS THERE A GUARANTEE THAT THE SAME THING WON'T HAPPEN NEXT TIME?",
+          "confidence": 0.946,
+          "text_ar": "هل هناك ضمان بأن الشيء نفسه لن يحدث في المرة القادمة؟"
+        },
+        {
+          "text": "WHAT THE HELL ARE YOU TALK- ING ABOUT?",
+          "confidence": 0.943,
+          "text_ar": "عن ماذا تتحدث بحق الجحيم؟"
+        },
+        {
+          "text": "DO YOU INTEND ON TAKING ME ALL THE WAY TO THE END OF THIS TOWER?",
+          "confidence": 0.922,
+          "text_ar": "هل تنوي اصطحابي حتى نهاية هذا البرج؟"
+        },
+        {
+          "text": "I DON'T THINK I CAN CATCH UP WITH THE REST OF YOU NO MATTER HOW MUCH I TRY.",
+          "confidence": 0.918,
+          "text_ar": "لا أعتقد أنني أستطيع اللحاق بكم مهما حاولت."
+        },
+        {
+          "text": "I THINK THE GAP BETWEEN US GROWS EVERY DAY.",
+          "confidence": 0.977,
+          "text_ar": "أعتقد أن الفجوة بيننا تزداد كل يوم."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "EOLKA,",
+          "confidence": 0.975,
+          "text_ar": "إولكا،"
+        },
+        {
+          "text": "JENNA",
+          "confidence": 0.998,
+          "text_ar": "جينا"
+        },
+        {
+          "text": "AND YOU TOO.",
+          "confidence": 0.884,
+          "text_ar": "وأنت أيضًا."
+        },
+        {
+          "text": "...I'M SORRY.",
+          "confidence": 0.854,
+          "text_ar": "...أنا آسف."
+        },
+        {
+          "text": "I WAS JUST SPEAKING NONSENSE.",
+          "confidence": 0.958,
+          "text_ar": "كنت أهذي فقط."
+        },
+        {
+          "text": "IT IS TRUE THAT WE TOOK A LOT OF LOSSES BECAUSE OF AARON THIS TIME.",
+          "confidence": 0.945,
+          "text_ar": "صحيح أننا تكبدنا الكثير من الخسائر بسبب آرون هذه المرة."
+        },
+        {
+          "text": "IF HE HADN'T GOTTEN INJURED, WE WOULD NOT HAVE HAD TO RISK SO MUCH.",
+          "confidence": 0.943,
+          "text_ar": "لو لم يُصب، لما اضطررنا للمخاطرة بكل هذا."
+        },
+        {
+          "text": "BUT I WAS THE ONE WHO CHOSE TO SAVE HIM.",
+          "confidence": 0.931,
+          "text_ar": "لكنني كنت من اختار إنقاذه."
+        },
+        {
+          "text": "MY LACK OF JUDGMENT WAS WHAT PUT US IN DANGER.",
+          "confidence": 0.96,
+          "text_ar": "سوء تقديري هو ما عرضنا للخطر."
+        },
+        {
+          "text": "AARON'S CURRENT LEVEL IS 14.",
+          "confidence": 0.989,
+          "text_ar": "مستوى آرون الحالي هو 14."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "THERE ISN'T A DIFFERENCE IN LEVEL, BUT THE STAT GROWTH RATE IS DIFFERENT.",
+          "confidence": 0.97,
+          "text_ar": "لا يوجد فرق في المستوى، لكن معدل نمو الإحصائيات مختلف."
+        },
+        {
+          "text": "JENNA AND I HAD OUR STATS GO UP BY 5 OR EVEN 6 WHEN WE LEVELED UP,",
+          "confidence": 0.946,
+          "text_ar": "ارتفعت إحصائياتي وإحصائيات جينا بمقدار 5 أو حتى 6 عند الارتقاء في المستوى،"
+        },
+        {
+          "text": "BUT AARON'S DID NOT CHANGE.",
+          "confidence": 0.966,
+          "text_ar": "لكن إحصائيات آرون لم تتغير."
+        },
+        {
+          "text": "IT IS EVEN WORSE WHEN WE CONSIDER SKILLS.",
+          "confidence": 0.962,
+          "text_ar": "والأمر أسوأ عندما نأخذ المهارات في الاعتبار."
+        },
+        {
+          "text": "HIS PROFICIENCY IS LOW, AND HE HAS VERY FEW SKILLS TOO.",
+          "confidence": 0.952,
+          "text_ar": "كفاءته منخفضة، ولديه القليل جدًا من المهارات أيضًا."
+        },
+        {
+          "text": "HE HAS GOOD BASIC COMBAT SKILLS, BUT HE IS NOT GOOD AT UTILIZING THEM.",
+          "confidence": 0.934,
+          "text_ar": "لديه مهارات قتالية أساسية جيدة، لكنه لا يجيد استخدامها."
+        },
+        {
+          "text": "WE CAN SOMEHOW DO WITH WHAT HE HAS FOR NOW,",
+          "confidence": 0.973,
+          "text_ar": "يمكننا تدبر الأمر بما لديه حاليًا،"
+        },
+        {
+          "text": "BUT THE GAP WILL CONTINUE TO WIDEN AS TIME GOES ON.",
+          "confidence": 0.957,
+          "text_ar": "لكن الفجوة ستستمر في الاتساع مع مرور الوقت."
+        },
+        {
+          "text": "IN THE END, HE WILL BE LEFT OUT,",
+          "confidence": 0.931,
+          "text_ar": "في النهاية، سيتم استبعاده،"
+        },
+        {
+          "text": "OR FROM LACK OF SKILL,",
+          "confidence": 0.928,
+          "text_ar": "أو بسبب نقص المهارة،"
+        },
+        {
+          "text": "END UP DYING DURING DYINGDURING A MISSION.",
+          "confidence": 0.962,
+          "text_ar": "سينتهي به الأمر ميتًا أثناء مهمة."
+        },
+        {
+          "text": "WE DON'T HAVE MUCH TIME LEFT WITH HIM.",
+          "confidence": 0.948,
+          "text_ar": "لم يعد لدينا الكثير من الوقت معه."
+        },
+        {
+          "text": "HE'S NOT TALENTED ENOUGH.",
+          "confidence": 0.937,
+          "text_ar": "إنه ليس موهوبًا بما يكفي."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.992,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "I DIDN'T ABANDON HIM BECAUSE HE HAD GROWNON ME,",
+          "confidence": 0.959,
+          "text_ar": "لم أتخلَّ عنه لأنني تعلقت به،"
+        },
+        {
+          "text": "BUTIHAVEN'T BECOME SO IRRATIONAL THAT I WOULD KEEP A USELESS MEMBER.",
+          "confidence": 0.949,
+          "text_ar": "لكنني لم أصبح غير عقلاني لدرجة الاحتفاظ بعضو عديم الفائدة."
+        },
+        {
+          "text": "IF HE CANNOT KEEP UP. HE WILL BE LEFT BEHIND.",
+          "confidence": 0.904,
+          "text_ar": "إذا لم يستطع المواكبة، فسيُترك خلف الركب."
+        },
+        {
+          "text": "THATTRUTH HAS ALWAYS BEEN VALID.",
+          "confidence": 0.968,
+          "text_ar": "هذه الحقيقة كانت دائمًا صالحة."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "<PARTYI)",
+          "confidence": 0.814,
+          "text_ar": "<الفريق>"
+        },
+        {
+          "text": "★★ AARON DELCUT",
+          "confidence": 0.553,
+          "text_ar": "★★ آرون ديلكوت"
+        },
+        {
+          "text": "★* HAN ISLAT",
+          "confidence": 0.682,
+          "text_ar": "★★ هان إسرات"
+        },
+        {
+          "text": "JENNA CIRAI",
+          "confidence": 0.991,
+          "text_ar": "جينا سيراي"
+        },
+        {
+          "text": "EOLKA RIVEL STRASHUR",
+          "confidence": 0.948,
+          "text_ar": "إولكا ريفيل ستراشور"
+        },
+        {
+          "text": "EDIS CALLEN",
+          "confidence": 0.941,
+          "text_ar": "إيديس كالين"
+        },
+        {
+          "text": "（IC AR ATRI",
+          "confidence": 0.575,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "[ REDICESTUDIO",
+          "confidence": 0.5,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.995,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
