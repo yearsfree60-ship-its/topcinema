@@ -95,6 +95,11 @@ on:
         options:
           - server
           - mobile
+      translate_to_arabic:
+        description: "[استخراج_نص فقط] ترجمة النص المستخرَج آليًا للعربية (سياقية، نداء واحد لكل فصل عبر Gemini المجاني) بجانب النص الإنجليزي — يتطلب ضبط سر GEMINI_API_KEY بإعدادات المستودع، وإلا تُعطَّل تلقائيًا بتحذير بلا أي تأثير على باقي الميزات (نص إنجليزي فقط)"
+        required: false
+        default: true
+        type: boolean
 
       # ── 🔍 الحقل التالي فعّال بوضع "تشخيص" فقط ──
       deep_diagnostic:
@@ -137,9 +142,14 @@ jobs:
       # وهذا الثنائي يسبق تمامًا خلل PIR/oneDNN الذي أكّد فريق Paddle نفسه
       # (issue #77340) أنه ارتداد بدأ فقط من PaddlePaddle 3.3.0 فصاعدًا. أي
       # فتح الإصدار للأعلى مستقبلًا قد يجلب الخلل من جديد دون سبب وجيه.
+      # [جديد — ترجمة سياقية EN→AR] google-genai (حزمة Gemini الرسمية
+      # الحالية — راجع تبرير اختيار Gemini/gemini-3.1-flash-lite بترويسة
+      # translate_to_arabic.py) تُثبَّت دومًا بنفس منطق paddleocr أعلاه: لا
+      # تكلفة زمن تشغيل فعلي على أي تشغيلة لا تفعّل الترجمة (استيراد مؤجَّل
+      # بالسكربت)، فقط زمن تثبيت pip إضافي بسيط.
       - name: تثبيت المكتبات
         run: |
-          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1
+          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1 google-genai
           python -m playwright install --with-deps chromium
 
       # [جديد — تفعيل DEEP_DIAGNOSTIC] patchright حزمة منفصلة تمامًا عن
@@ -206,6 +216,8 @@ jobs:
           OCR_EXPERIMENT_MODE: ${{ inputs.mode == 'استخراج_نص' }}
           MANGA_TITLE_OVERRIDE: ${{ inputs.manga_title_override }}
           OCR_DETECTION_MODEL: ${{ inputs.ocr_detection_model }}
+          TRANSLATE_TO_ARABIC: ${{ inputs.translate_to_arabic }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           RUN_ID: ${{ github.run_id }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
