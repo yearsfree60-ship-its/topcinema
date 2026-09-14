@@ -59,28 +59,6 @@ on:
         default: true
         type: boolean
 
-      # ── 🔍 الحقل التالي فعّال بوضع "تشخيص" فقط ──
-      deep_diagnostic:
-        description: "[تشخيص فقط] يضيف مسبارين لا يقيسهما التشخيص العادي إطلاقًا: تسريب Runtime.enable (بروتوكول CDP نفسه، لا JS fingerprint) وتسريب sourceURL لسكربتات page.evaluate، مع تجميعهما وباقي طبقات الفحص القائمة بخريطة detection_surface_map موحّدة لكل رابط. يُضاعِف زمن التشخيص تقريبًا لكل رابط (~90-180ث إضافية)"
-        required: false
-        default: false
-        type: boolean
-
-      # ── 📝 الحقلان التاليان فعّالان بوضع "استخراج_نص" فقط ──
-      manga_title_override:
-        description: "[استخراج_نص فقط] تجاوز يدوي اختياري لاسم المانهوا بتسمية أرشيف zip واسم الأرتيفاكت. اتركه فارغًا للاعتماد على التخمين التلقائي من عنوان صفحة أول فصل — لو التخمين غير مُرضٍ أو فشل، استخدم هذا الحقل"
-        required: false
-        default: ""
-        type: string
-      ocr_detection_model:
-        description: "[استخراج_نص فقط] نموذج كشف النص (detection) — mobile أسرع بكثير على CPU (~60% حسب قياسات PaddleOCR الرسمية) بفرق دقة أقل من 1% للنص الإنجليزي المطبوع تحديدًا، server أدق للنصوص الفنية/المعقدة"
-        required: false
-        default: server
-        type: choice
-        options:
-          - server
-          - mobile
-
       # ── ⚙️ الحقول التالية مشتركة بين "إنتاج" و"استخراج_نص" (تُتجاهَل بوضع التشخيص) ──
       http_concurrency:
         description: "[إنتاج + استخراج_نص] عدد الفصول المُعالَجة بالتوازي (بروفايل azorafly/HTTP فقط، حد أقصى 10 — بلا تأثير على البروفايلات الأخرى)"
@@ -102,6 +80,28 @@ on:
         required: false
         default: "3"
         type: string
+
+      # ── 📝 الحقلان التاليان فعّالان بوضع "استخراج_نص" فقط ──
+      manga_title_override:
+        description: "[استخراج_نص فقط] تجاوز يدوي اختياري لاسم المانهوا بتسمية أرشيف zip واسم الأرتيفاكت. اتركه فارغًا للاعتماد على التخمين التلقائي من عنوان صفحة أول فصل — لو التخمين غير مُرضٍ أو فشل، استخدم هذا الحقل"
+        required: false
+        default: ""
+        type: string
+      ocr_detection_model:
+        description: "[استخراج_نص فقط] نموذج كشف النص (detection) — mobile أسرع بكثير على CPU (~60% حسب قياسات PaddleOCR الرسمية) بفرق دقة أقل من 1% للنص الإنجليزي المطبوع تحديدًا، server أدق للنصوص الفنية/المعقدة"
+        required: false
+        default: server
+        type: choice
+        options:
+          - server
+          - mobile
+
+      # ── 🔍 الحقل التالي فعّال بوضع "تشخيص" فقط ──
+      deep_diagnostic:
+        description: "[تشخيص فقط] يضيف مسبارين لا يقيسهما التشخيص العادي إطلاقًا: تسريب Runtime.enable (بروتوكول CDP نفسه، لا JS fingerprint) وتسريب sourceURL لسكربتات page.evaluate، مع تجميعهما وباقي طبقات الفحص القائمة بخريطة detection_surface_map موحّدة لكل رابط. يُضاعِف زمن التشخيص تقريبًا لكل رابط (~90-180ث إضافية)"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
