@@ -1,0 +1,1148 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "41",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "PICK MEUP",
+          "confidence": 0.919,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ART WASAKBASAK (3B2S) ADAPTATION CHOWOONEH (REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.972,
+          "text_ar": "الفن: واساكباساك (3B2S) | الاقتباس: تشو وونيه (ريديك ستودي) | الأصل: هيرمود"
+        },
+        {
+          "text": "FIVE MINUTES SINCE ENTRY.",
+          "confidence": 0.988,
+          "text_ar": "مرت خمس دقائق منذ الدخول."
+        },
+        {
+          "text": "I GUESS THEY'RE DOING FINE SEEING AS I HAVEN'T GOTTEN ANY STAT MESSAGES.",
+          "confidence": 0.953,
+          "text_ar": "أظن أنهم بخير، بما أنني لم أتلقَّ أي رسائل عن الحالة."
+        },
+        {
+          "text": "MISSION FAILED MASSACRE",
+          "confidence": 0.982,
+          "text_ar": "فشلت المهمة: مذبحة"
+        },
+        {
+          "text": "NOKIN(★★★)HASRETURNED TO THEGODDESS' EMBRACE. HIS FIGHTINGSPIRITWILL BE REMEMBEREDFOR ETERNITY. WINARD(★★★)HASRETURNEDTOTHEGODDESS' EMBRACE. HISFIGHTINGSPIRITWILL BE REMEMBEREDFOR ETERNITY JELAN(★★★) HAS RETURNED TO THE GODDESS' EMBRACE. HISFIGHTINGSPIRITWILL BE REMEMBEREDFOR ETERNITY ROBEIL (★) HASRETURNEDTOTHEGODDESS' EMBRACE. HIS FIGHTING SPIRITWILL BE REMEMBEREDFOR ETERNITY. JIAN(★) HASRETURNEDTOTHEGODDESS'EMBRACE. HIS FIGHTINGSPIRITWILL BE REMEMBEREDFOR ETERNITY. HISFIGHTINGSPIRITWILLBEREMEMBEREDFORETERNITY.",
+          "confidence": 0.932,
+          "text_ar": "عاد نوكين (★★★) إلى أحضان الإلهة. ستظل روحه القتالية خالدة للأبد. عاد وينارد (★★★) إلى أحضان الإلهة. ستظل روحه القتالية خالدة للأبد. عاد جيلان (★★★) إلى أحضان الإلهة. ستظل روحه القتالية خالدة للأبد. عاد روبيل (★) إلى أحضان الإلهة. ستظل روحه القتالية خالدة للأبد. عاد جيان (★) إلى أحضان الإلهة. ستظل روحه القتالية خالدة للأبد."
+        },
+        {
+          "text": "ALL OF PARTY 3 IS DEAD ALREADY?!",
+          "confidence": 0.952,
+          "text_ar": "هل قُضي على الفريق الثالث بالكامل بالفعل؟!"
+        },
+        {
+          "text": "'PARTY 3' HAS BEEN KILLED. YOU LOSE!",
+          "confidence": 0.929,
+          "text_ar": "تم القضاء على 'الفريق الثالث'. لقد خسرت!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "IT'S ONLY BEEN FIVE MINUTES SINCE THEY WENT IN.",
+          "confidence": 0.966,
+          "text_ar": "لم تمر سوى خمس دقائق منذ دخولهم."
+        },
+        {
+          "text": "…IT MUST HAVE BEEN A SPECIAL MISSION!",
+          "confidence": 0.935,
+          "text_ar": "...لا بد أنها كانت مهمة خاصة!"
+        },
+        {
+          "text": "WH-WHAT?! WHAT'S HAP- PENING...?!",
+          "confidence": 0.931,
+          "text_ar": "مـ-ماذا؟! ما الذي يحدث...؟!"
+        },
+        {
+          "text": "MASTER, WILL YOU LOG OUT?",
+          "confidence": 0.885,
+          "text_ar": "سيدي، هل ستسجل الخروج؟"
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.995,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "MASTER JUST THREW HiS PHONE.",
+          "confidence": 0.975,
+          "text_ar": "لقد رمى السيد هاتفه للتو."
+        },
+        {
+          "text": "THEN GOODBYE!",
+          "confidence": 0.989,
+          "text_ar": "إذًا وداعًا!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.971,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "THiS iS A BiG PROBLEM! WHAT DO WE DO?!",
+          "confidence": 0.902,
+          "text_ar": "هذه مشكلة كبيرة! ماذا سنفعل؟!"
+        },
+        {
+          "text": "THERE ARE A LOT OF PEOPLE WATCHING.",
+          "confidence": 0.957,
+          "text_ar": "هناك الكثير من الناس يشاهدون."
+        },
+        {
+          "text": "LET ME GO.",
+          "confidence": 0.96,
+          "text_ar": "دعني أذهب."
+        },
+        {
+          "text": "LET'S GO BACK. THERE'S NOTHING MORE TO WATCH.",
+          "confidence": 0.901,
+          "text_ar": "لنعد. لم يعد هناك شيء يستحق المشاهدة."
+        },
+        {
+          "text": "WHAT ABOUT PARTY 3?",
+          "confidence": 0.945,
+          "text_ar": "وماذا عن الفريق الثالث؟"
+        },
+        {
+          "text": "THEY'RE ALL DEAD.",
+          "confidence": 0.949,
+          "text_ar": "لقد ماتوا جميعًا."
+        },
+        {
+          "text": "THEY WERE ALL WIPED OUT BEFORE THEY EVEN REALLY GOT TO START.",
+          "confidence": 0.96,
+          "text_ar": "تمت إبادتهم جميعًا قبل أن يبدؤوا حتى."
+        },
+        {
+          "text": "THEY PROBABLY DIDN'T EVEN GET ANY HINTS ABOUT THE 15TH FLOOR RAID, SO THEY DIED FOR NOTHING,REALLY.",
+          "confidence": 0.951,
+          "text_ar": "على الأرجح لم يحصلوا حتى على أي تلميحات حول غارة الطابق الخامس عشر، لذا ماتوا هباءً، حقًا."
+        },
+        {
+          "text": "THEY JUST WENT IN THOUGH.",
+          "confidence": 0.957,
+          "text_ar": "لكنهم دخلوا للتو."
+        },
+        {
+          "text": "THAT'S JUST HOW BAD THEY ARE.",
+          "confidence": 0.978,
+          "text_ar": "هذا يوضح مدى سوء مستواهم."
+        },
+        {
+          "text": "AFTER THAT, ANYTNG DIDN'T LONG IN AGAIN FOR A LONG TIME.",
+          "confidence": 0.951,
+          "text_ar": "بعد ذلك، لم يسجل أنيتنج دخوله مجددًا لفترة طويلة."
+        },
+        {
+          "text": "UWAAAH!",
+          "confidence": 0.978,
+          "text_ar": "أوه!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "LOKil",
+          "confidence": 0.705,
+          "text_ar": "لوكي!"
+        },
+        {
+          "text": "WHAT DO WE DO?! WHAT DO WE DO?!",
+          "confidence": 0.95,
+          "text_ar": "ماذا نفعل؟! ماذا نفعل؟!"
+        },
+        {
+          "text": "WHAT DO WE DO00O?!! 武",
+          "confidence": 0.291,
+          "text_ar": "ماذا نفعل؟!!"
+        },
+        {
+          "text": "I'M TRAINING. GO BACK TO SLEEP.",
+          "confidence": 0.964,
+          "text_ar": "أنا أتدرب. عودوا للنوم."
+        },
+        {
+          "text": "WE JUST NEED TO LIVE OUR LIVES LIKE USUAL.",
+          "confidence": 0.942,
+          "text_ar": "علينا فقط أن نعيش حياتنا كالمعتاد."
+        },
+        {
+          "text": "WAKE UP, EAT BREAKFAST, TRAIN.",
+          "confidence": 0.958,
+          "text_ar": "استيقظوا، تناولوا الإفطار، تدربوا."
+        },
+        {
+          "text": "EAT LUNCH, TRAIN.",
+          "confidence": 0.989,
+          "text_ar": "تناولوا الغداء، تدربوا."
+        },
+        {
+          "text": "MORE TRAINING UNTIL DINNER.",
+          "confidence": 0.964,
+          "text_ar": "المزيد من التدريب حتى العشاء."
+        },
+        {
+          "text": "IT'S ALREADY BEEN TEN DAYS!",
+          "confidence": 0.953,
+          "text_ar": "لقد مرت عشرة أيام بالفعل!"
+        },
+        {
+          "text": "THE OTHER 1-STAR GUYS ARE ALL STARTiNG TO SLACK OFF!",
+          "confidence": 0.943,
+          "text_ar": "الآخرون من فئة النجمة الواحدة بدأوا جميعًا في التكاسل!"
+        },
+        {
+          "text": "THEY'RE ALL GETTING LOOSE BECAUSE THERE'S NO MASTER OR SYNTHESiS TO WORRY ABOUT!",
+          "confidence": 0.834,
+          "text_ar": "لقد أصبحوا مستهترين لأنه لا يوجد سيد أو عملية دمج للقلق بشأنها!"
+        },
+        {
+          "text": "NO ONE EVEN GOES TO THE WEEKDAY DUNGEON ANYMORE OTHER THAN A FEW!",
+          "confidence": 0.932,
+          "text_ar": "لم يعد أحد يذهب إلى زنزانة أيام الأسبوع سوى القلة!"
+        },
+        {
+          "text": "TEN DAYS HERE.",
+          "confidence": 0.988,
+          "text_ar": "عشرة أيام هنا."
+        },
+        {
+          "text": "IT'S BEEN THREE DAYS IN REAL LIFE.",
+          "confidence": 0.954,
+          "text_ar": "لقد مرت ثلاثة أيام في العالم الحقيقي."
+        },
+        {
+          "text": "VIN",
+          "confidence": 0.237,
+          "text_ar": "فين"
+        },
+        {
+          "text": "LOADING COMPLETE. TOUCH!",
+          "confidence": 0.97,
+          "text_ar": "اكتمل التحميل. المس الشاشة!"
+        },
+        {
+          "text": "WELCOME TO PICK ME UP!",
+          "confidence": 0.988,
+          "text_ar": "مرحبًا بك في 'التقطني'!"
+        },
+        {
+          "text": "WHAT? HE'S ALREADY BACK?",
+          "confidence": 0.977,
+          "text_ar": "ماذا؟ هل عاد بالفعل؟"
+        },
+        {
+          "text": "MASTEEEERR~~!!",
+          "confidence": 0.998,
+          "text_ar": "سيددددي~~!!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "YOU HAVE TAKEN A SCREENSHOT. THE CURRENT IMAGE WILL BE SAVED TO GALLERY.",
+          "confidence": 0.922,
+          "text_ar": "لقد التقطت لقطة شاشة. سيتم حفظ الصورة الحالية في المعرض."
+        },
+        {
+          "text": "MASTER, WILL YOU LOG OUT?",
+          "confidence": 0.962,
+          "text_ar": "سيدي، هل ستسجل الخروج؟"
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.993,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "THEN GOODBYE! HIENGOODDIE!",
+          "confidence": 0.783,
+          "text_ar": "إذًا وداعًا!"
+        },
+        {
+          "text": "HE LOGGED iN AFTER ALL THAT TiME JUST TO DO NOTHiNG?",
+          "confidence": 0.949,
+          "text_ar": "هل سجل دخوله بعد كل هذا الوقت فقط لكي لا يفعل شيئًا؟"
+        },
+        {
+          "text": "IS HE REALLY PLANNiNG TO QUiT.?",
+          "confidence": 0.877,
+          "text_ar": "هل يخطط حقًا للاعتزال؟"
+        },
+        {
+          "text": "HE DIDN'T NOT DO ANYTHING.",
+          "confidence": 0.962,
+          "text_ar": "لم يمتنع عن فعل أي شيء."
+        },
+        {
+          "text": "HE TOOK A SCREENSHOT.",
+          "confidence": 0.932,
+          "text_ar": "لقد التقط لقطة شاشة."
+        },
+        {
+          "text": "WHY?",
+          "confidence": 0.994,
+          "text_ar": "لماذا؟"
+        },
+        {
+          "text": "WHY DO YOU THINK?",
+          "confidence": 0.85,
+          "text_ar": "لماذا تظنين؟"
+        },
+        {
+          "text": "A SOUVENIR?",
+          "confidence": 0.882,
+          "text_ar": "كتذكار؟"
+        },
+        {
+          "text": "WHAT'S YOUR HOBBY AGAIN, ISELLE?",
+          "confidence": 0.934,
+          "text_ar": "ما هي هوايتك مجددًا يا إيسيل؟"
+        },
+        {
+          "text": "SURFiNG THE iNTERNET.",
+          "confidence": 0.976,
+          "text_ar": "تصفح الإنترنت."
+        },
+        {
+          "text": "SO YOU CAN CONNECT TO THE INTERNET.",
+          "confidence": 0.893,
+          "text_ar": "إذًا يمكنك الاتصال بالإنترنت."
+        },
+        {
+          "text": "OF COURSE.",
+          "confidence": 0.863,
+          "text_ar": "بالطبع."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.994,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "YOU'RE GONNA HAVE TO HELP ME.",
+          "confidence": 0.912,
+          "text_ar": "سيتعين عليك مساعدتي."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "WAIT!",
+          "confidence": 0.891,
+          "text_ar": "انتظري!"
+        },
+        {
+          "text": "YOU'RE GONNA USE THE iNTERNET HERE???",
+          "confidence": 0.93,
+          "text_ar": "هل ستستخدمين الإنترنت من هنا؟؟؟"
+        },
+        {
+          "text": "IF I CAN.",
+          "confidence": 0.939,
+          "text_ar": "إذا كان بإمكاني ذلك."
+        },
+        {
+          "text": "YEAH, YOU CAN!",
+          "confidence": 0.872,
+          "text_ar": "أجل، يمكنكِ!"
+        },
+        {
+          "text": "THEN WHY ARE YOU HESITATING?",
+          "confidence": 0.976,
+          "text_ar": "إذًا لماذا تترددين؟"
+        },
+        {
+          "text": "IT'S NOT AN EASY THiNG TO iNTERVENE WiTH ANOTHER DiMENSiON.",
+          "confidence": 0.952,
+          "text_ar": "ليس من السهل التدخل في بُعد آخر."
+        },
+        {
+          "text": "THERE WiLL BE PENALTiES!",
+          "confidence": 0.98,
+          "text_ar": "ستكون هناك عقوبات!"
+        },
+        {
+          "text": "YOU HAVE TO COLLECT ALL THE iNTERVENiNG POiNTS LEFT OVER BY MASTER",
+          "confidence": 0.97,
+          "text_ar": "عليكِ جمع كل نقاط التدخل التي تركها السيد."
+        },
+        {
+          "text": "IF YOU'RE JUST GONNA LOOK, YOU'LL HAVE MORE THAN AN HOUR.",
+          "confidence": 0.94,
+          "text_ar": "إذا كنتِ ستكتفين بالمشاهدة فقط، فسيكون لديكِ أكثر من ساعة."
+        },
+        {
+          "text": "BUT iF YOU WANT TO DiRECTLY iNTERVENE BY WRiTiNG A POST OR COMMENTiNG, YOU'LL HAVE MUCH LESS TiME!",
+          "confidence": 0.934,
+          "text_ar": "لكن إذا أردتِ التدخل مباشرة بكتابة منشور أو تعليق، فسيكون لديكِ وقت أقل بكثير!"
+        },
+        {
+          "text": "My hobby's not an easy one.",
+          "confidence": 0.784,
+          "text_ar": "هوايتي ليست سهلة."
+        },
+        {
+          "text": "THAT DOES SOUND DIFFICULT.",
+          "confidence": 0.979,
+          "text_ar": "يبدو ذلك صعبًا حقًا."
+        },
+        {
+          "text": "YEAH. I HATE iT. Phew",
+          "confidence": 0.813,
+          "text_ar": "أجل. أنا أكره ذلك. أف..."
+        },
+        {
+          "text": "IT'S BEEN FOREVER SiNCE I ViSiTED THE RAGNALOKi BLOG.",
+          "confidence": 0.97,
+          "text_ar": "لقد مر وقت طويل منذ أن زرت مدونة راجنالوكي."
+        },
+        {
+          "text": "STILL... I HAVE TO USE IT.",
+          "confidence": 0.951,
+          "text_ar": "ومع ذلك... يجب أن أستخدمها."
+        },
+        {
+          "text": "YOURSELF?",
+          "confidence": 0.987,
+          "text_ar": "بنفسكِ؟"
+        },
+        {
+          "text": "IF POSSIBLE.",
+          "confidence": 0.966,
+          "text_ar": "إن أمكن."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.989,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "OKAY! 1",
+          "confidence": 0.163,
+          "text_ar": "حسنًا! 1"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "IF iT'S FOR YOU, LOKi!",
+          "confidence": 0.869,
+          "text_ar": "إذا كان من أجلك يا لوكي!"
+        },
+        {
+          "text": "Resolve",
+          "confidence": 0.976,
+          "text_ar": "عزم"
+        },
+        {
+          "text": "HiYAAA! FAiRY POWER!",
+          "confidence": 0.92,
+          "text_ar": "هيا! طاقة الجنيات!"
+        },
+        {
+          "text": "SORRY, BUT 1 CAN'T KEEP iT UP FOR LONG!",
+          "confidence": 0.863,
+          "text_ar": "آسفة، لكن لا يمكنني الحفاظ على هذا الوضع طويلًا!"
+        },
+        {
+          "text": "DO YOU NEED TO BE IN THAT POSITION?",
+          "confidence": 0.955,
+          "text_ar": "هل يجب أن تكوني في ذلك الوضع؟"
+        },
+        {
+          "text": "FOCUS!",
+          "confidence": 0.975,
+          "text_ar": "ركزي!"
+        },
+        {
+          "text": "IT'S MY FOCUSING POSiTiON!",
+          "confidence": 0.899,
+          "text_ar": "إنه وضع التركيز الخاص بي!"
+        },
+        {
+          "text": "HURRY.",
+          "confidence": 0.943,
+          "text_ar": "أسرعي."
+        },
+        {
+          "text": "STAY QUIET IF YOU'RE TIRED.",
+          "confidence": 0.93,
+          "text_ar": "ابقي هادئة إذا كنتِ متعبة."
+        },
+        {
+          "text": "I'LL DO IT QUICKLY.",
+          "confidence": 0.945,
+          "text_ar": "سأفعل ذلك بسرعة."
+        },
+        {
+          "text": "PICKMEUP",
+          "confidence": 0.96,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "PICK MEUP OFFICIALFORUM",
+          "confidence": 0.923,
+          "text_ar": "المنتدى الرسمي لـ 'التقطني'"
+        },
+        {
+          "text": "IT'S BEEN A WHILE SINCE I LOGGED ONTO THIS SITE.",
+          "confidence": 0.942,
+          "text_ar": "لقد مر وقت طويل منذ أن سجلت دخولي إلى هذا الموقع."
+        },
+        {
+          "text": "Join",
+          "confidence": 0.993,
+          "text_ar": "انضم"
+        },
+        {
+          "text": "Newposts Pick Me Up News Notices ? Update 0 Events PastEvents 1 Pick Me Up gui FAQ(Frequen Game Guide Beginner/Coming back user guide GM Questions PickMe UpCommunity Role call H Level Up Board L Level Up Board Rules General Screenshots 0 Tutorial Board H LJob discussion Board Job discussion Board Tutorial Videos Q Errors/Bugs Report Suggestions Board 1",
+          "confidence": 0.062,
+          "text_ar": "منشورات جديدة، أخبار 'التقطني'، إعلانات، تحديثات، فعاليات، فعاليات سابقة، دليل اللعبة، دليل المبتدئين/العائدين، أسئلة مدير اللعبة، مجتمع 'التقطني'، نداء الأدوار، لوحة رفع المستوى، قوانين لوحة رفع المستوى، لقطات شاشة عامة، لوحة الدروس التعليمية، لوحة مناقشة الوظائف، فيديوهات تعليمية، تقرير الأخطاء/الثغرات، لوحة الاقتراحات."
+        },
+        {
+          "text": "Upd Notices March 29 GN LET'S SEE. hxi THE JOB DISCUSSION BOARD... prma",
+          "confidence": 0.886,
+          "text_ar": "إعلانات التحديث 29 مارس، لنرَ. لوحة مناقشة الوظائف..."
+        },
+        {
+          "text": "Look [Notice] March 29t [Event] Google [Notice] Checkec Pick Me Up [Share] Guest [Event] March Update schedule Niflheimr Lookatm [Notice] [Event] 3",
+          "confidence": 0.915,
+          "text_ar": "نظرة، [إعلان] 29 مارس، [فعالية] جوجل، [إعلان] تحقق، 'التقطني'، [مشاركة] ضيف، [فعالية] جدول تحديث مارس، نيفلهيمر، نظرة، [إعلان]، [فعالية] 3"
+        },
+        {
+          "text": "Pick MeUp Management Pol",
+          "confidence": 0.926,
+          "text_ar": "سياسة إدارة 'التقطني'"
+        },
+        {
+          "text": "Forum Management Polini- Game Management F es 乙 Terms and Conditions Personal Information Handling",
+          "confidence": 0.751,
+          "text_ar": "إدارة المنتدى، إدارة اللعبة، الشروط والأحكام، معالجة المعلومات الشخصية"
+        },
+        {
+          "text": "Uaah",
+          "confidence": 0.998,
+          "text_ar": "أوه"
+        },
+        {
+          "text": "Ongoingeve",
+          "confidence": 0.973,
+          "text_ar": "فعاليات جارية"
+        },
+        {
+          "text": "Pick Me Up Storage",
+          "confidence": 0.935,
+          "text_ar": "مخزن 'التقطني'"
+        },
+        {
+          "text": "Google",
+          "confidence": 0.994,
+          "text_ar": "جوجل"
+        },
+        {
+          "text": "I KNEW IT.",
+          "confidence": 0.991,
+          "text_ar": "كنت أعلم ذلك."
+        },
+        {
+          "text": "JobDiscuss",
+          "confidence": 0.987,
+          "text_ar": "مناقشة الوظائف"
+        },
+        {
+          "text": "p I'M STUCK, PLZ HELP. I'm STuck, PLz help.",
+          "confidence": 0.572,
+          "text_ar": "أنا عالق، أرجو المساعدة."
+        },
+        {
+          "text": "HOWEVER(WINDF***)",
+          "confidence": 0.948,
+          "text_ar": "مع ذلك (رياح***)"
+        },
+        {
+          "text": "HELLO,",
+          "confidence": 0.995,
+          "text_ar": "مرحبًا،"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I WANT TO ASK SOMETHING.",
+          "confidence": 0.951,
+          "text_ar": "أريد أن أسأل عن شيء."
+        },
+        {
+          "text": "IT'S BEEN A LITTLE LESS THAN A MONTH SINCEISTARTED.",
+          "confidence": 0.984,
+          "text_ar": "مر أقل من شهر بقليل منذ أن بدأت."
+        },
+        {
+          "text": "IT WAS GOING SMOOTHLY AT FIRST, BUT I'VE BEEN KIND OF HITTING A WALL LATELY.",
+          "confidence": 0.966,
+          "text_ar": "كان الأمر يسير بسلاسة في البداية، لكنني اصطدمت بجدار مؤخرًا."
+        },
+        {
+          "text": "I'M SURE I'VE BEEN DOING THINGS THE WAY I'M SUPPOSED TO.",
+          "confidence": 0.973,
+          "text_ar": "أنا متأكد من أنني كنت أفعل الأشياء كما ينبغي."
+        },
+        {
+          "text": "THIS IS WHAT MY LOBBY LOOKS LIKE RIGHT NOW.",
+          "confidence": 0.983,
+          "text_ar": "هذا ما تبدو عليه ردهتي الآن."
+        },
+        {
+          "text": "IS THIS MY ILLUSTRATION?",
+          "confidence": 0.918,
+          "text_ar": "هل هذه هي رسوم شخصيتي؟"
+        },
+        {
+          "text": "I REALLYAM A GAME CHARAC- TER, HUH?",
+          "confidence": 0.976,
+          "text_ar": "أنا حقًا شخصية في لعبة، هاه؟"
+        },
+        {
+          "text": "★★ HANISLAT",
+          "confidence": 0.828,
+          "text_ar": "★★ هان إسرات"
+        },
+        {
+          "text": "JENNA CIRAI",
+          "confidence": 0.946,
+          "text_ar": "جينا سيراي"
+        },
+        {
+          "text": "AARONDELCU",
+          "confidence": 0.99,
+          "text_ar": "آرون ديلكوت"
+        },
+        {
+          "text": "USHER",
+          "confidence": 0.927,
+          "text_ar": "أشر"
+        },
+        {
+          "text": "EDISCALLEN",
+          "confidence": 0.955,
+          "text_ar": "إيديس كالين"
+        },
+        {
+          "text": "WHO DREW THEM?",
+          "confidence": 0.994,
+          "text_ar": "من الذي رسمهم؟"
+        },
+        {
+          "text": "EVERYONE'S ROASTING HIM IN THE COMMENTS.",
+          "confidence": 0.987,
+          "text_ar": "الجميع يسخرون منه في التعليقات."
+        },
+        {
+          "text": "COMMENTS",
+          "confidence": 0.996,
+          "text_ar": "التعليقات"
+        },
+        {
+          "text": "OPULARITY|NEWES",
+          "confidence": 0.934,
+          "text_ar": "الأكثر شعبية | الأحدث"
+        },
+        {
+          "text": "DEFROD THAT'SREALLYHOWYOUPLAYED? HOWDIDYOUEVENGETTO THE14THFLOOR?",
+          "confidence": 0.982,
+          "text_ar": "ديفورد: هل هذه حقًا طريقة لعبك؟ كيف وصلت حتى للطابق الرابع عشر؟"
+        },
+        {
+          "text": "HEADCRUSHER POST TOO LONG. NEED TLDR.",
+          "confidence": 0.969,
+          "text_ar": "هيدكراشر: المنشور طويل جدًا. أحتاج لملخص."
+        },
+        {
+          "text": "JENKAINO TLDR - OP IS STAGE 4 I'M SO GOOD DISEASE. IT'S INFECTIOUS, BE CAREFUL!",
+          "confidence": 0.916,
+          "text_ar": "جينكا: لا يوجد ملخص - صاحب المنشور مصاب بمرض 'أنا في المرحلة الرابعة وأنا بارع جدًا'. إنه معدٍ، احذروا!"
+        },
+        {
+          "text": "ONEPIECETWOPIECE 14TH FLOOR? DAMN YOU REALLY WERE HARD CARRIED LMAO;; THERE'S REALLY NO SOLUTION FOR YOU. IFIWERE YOUR HERO, I'D JUST QUIT LMAO.",
+          "confidence": 0.965,
+          "text_ar": "ون بيس تو بيس: الطابق الرابع عشر؟ تباً، لقد تم حملك بقوة لدرجة السخرية. لا يوجد حل لك حقًا. لو كنت بطل قصتك، لاعتزلت اللعبة فورًا."
+        },
+        {
+          "text": "ASSASSININTHEDARK YOU NEED SOME INTROSPECTION. YOU SEEMED LIKE YOU DID FINE AT FIRST AND THEN STRAYED OFF SOMEWHERE.",
+          "confidence": 0.956,
+          "text_ar": "أساسين إن ذا دارك: أنت بحاجة لبعض التأمل الذاتي. بدا أنك كنت بخير في البداية ثم انحرفت عن المسار في مكان ما."
+        },
+        {
+          "text": "OPICKME ARE YOU FR? YOU SENT THEM ALL TO ONE PARTY EVENTHOUGH THEY WERE ALL ENEMIES? DID YOU WANT A COLOSSEUM OR SMTH?",
+          "confidence": 0.942,
+          "text_ar": "أوبيك مي: هل أنت جاد؟ أرسلتهم جميعًا في فريق واحد رغم أنهم جميعًا أعداء؟ هل كنت تريد كولوسيوم أم ماذا؟"
+        },
+        {
+          "text": "SIGIN YEAH RIGHT. BUT WHY'S THAT 2-STAR'S STATS LIKE THAT? IT'S WEIRD. HOW MANY SKILLS DOES HE HAVE?",
+          "confidence": 0.944,
+          "text_ar": "سيجين: أجل صحيح. لكن لماذا إحصائيات تلك الشخصية ذات النجمتين هكذا؟ إنه أمر غريب. كم مهارة لديه؟"
+        },
+        {
+          "text": "OPICKME HE WAS PROB HARD CARRIED BY THAT ONE AMIRITE",
+          "confidence": 0.965,
+          "text_ar": "أوبيك مي: على الأرجح تم حمله بقوة من قبل ذلك الواحد، أليس كذلك؟"
+        },
+        {
+          "text": "MAKKEN113 IDEK WHERE TO START. ID HAVE TO WRITE A WHOLE ESSAY. YOU NEED TO READ ALL THE POSTS IN THE TUTORIAL BOARD INCLUDING LOKI-NIM'S.",
+          "confidence": 0.951,
+          "text_ar": "ماكين113: لا أعرف حتى من أين أبدأ. سأضطر لكتابة مقال كامل. تحتاج لقراءة كل المنشورات في لوحة الدروس بما في ذلك منشورات لوكي."
+        },
+        {
+          "text": "Resolve",
+          "confidence": 0.892,
+          "text_ar": "عزم"
+        },
+        {
+          "text": "..IDON'T HAVE MUCH TIME. ISELLE'S REACHING HER LIMIT.",
+          "confidence": 0.94,
+          "text_ar": "..ليس لدي الكثير من الوقت. إيسيل تصل إلى حدودها."
+        },
+        {
+          "text": "IF I HAND OVER THE DOCUMENTS IN MY CLOUD OVER TO ANYTNG, 水",
+          "confidence": 0.476,
+          "text_ar": "إذا سلمت المستندات الموجودة في سحابتي إلى أنيتنج،"
+        },
+        {
+          "text": "THEN ANYTNG SHOULD CHANGE.",
+          "confidence": 0.991,
+          "text_ar": "فحينها يجب أن يتغير أنيتنج."
+        },
+        {
+          "text": "WRITE MAIL SEND",
+          "confidence": 0.967,
+          "text_ar": "كتابة بريد، إرسال"
+        },
+        {
+          "text": "DRAFTS PREVIEW 北 WRITE TO SELF WilldF****@papape. ATTACH FILE PICKMEUPDOCUMENT Y PLAYRECORDS HEROGROWTHRECORDANDOTHE D a a a",
+          "confidence": 0.19,
+          "text_ar": "المسودات، معاينة، الكتابة لنفسي، إرفاق ملف، مستند 'التقطني'، سجلات اللعب، سجل نمو البطل، وغيرها"
+        },
+        {
+          "text": "SENDER RECEIVER TITLE ATTACH FILE",
+          "confidence": 0.956,
+          "text_ar": "المرسل، المستلم، العنوان، إرفاق ملف"
+        },
+        {
+          "text": "FONT",
+          "confidence": 0.974,
+          "text_ar": "الخط"
+        },
+        {
+          "text": "SIZE",
+          "confidence": 0.987,
+          "text_ar": "الحجم"
+        },
+        {
+          "text": "LOKIHAN CHECK YOUR EMAIL.YOUJUST NEED TO READ WHATISENT.",
+          "confidence": 0.961,
+          "text_ar": "لوكي هان: تفقد بريدك الإلكتروني. تحتاج فقط لقراءة ما أرسلته."
+        },
+        {
+          "text": "NOTRIUS WHO'S THIS? IS THIS LOKI?",
+          "confidence": 0.975,
+          "text_ar": "نوتريوس: من هذا؟ هل هذا لوكي؟"
+        },
+        {
+          "text": "WARRRRRRRRRRRR11 I DONT THINK SO",
+          "confidence": 0.957,
+          "text_ar": "واررررررر11: لا أعتقد ذلك."
+        },
+        {
+          "text": "YAKUZAIDOL HOLY SHIT THATS THE REAL DEAL CHECK HIS NICKNAME WITH THE POSTS ITS THE SAME",
+          "confidence": 0.97,
+          "text_ar": "ياكوزا أيدول: يا للهول، هذا هو الشخص الحقيقي، تحقق من لقبه مع المنشورات، إنه نفسه."
+        },
+        {
+          "text": "PIZZATOWNCHICKENCITY WTF!!! WHERE HAVE YOU BEEN?!! LOKI-NIM, PLS READ MY MESSAGES. GIMME SOME ADVICE INSTEAD OF THIS NARCISSIST..",
+          "confidence": 0.944,
+          "text_ar": "بيتزا تاون تشيكن سيتي: تباً!!! أين كنت؟!! يا لوكي، أرجوك اقرأ رسائلي. أعطني بعض النصائح بدلًا من هذا النرجسي.."
+        },
+        {
+          "text": "DADARI WHY SHOULD HE DO THAT FOR YOU? I HEARD YOU NEED TO PAY LIKE 1K TO GET COUNSELING FROM HIM",
+          "confidence": 0.943,
+          "text_ar": "داداري: لماذا سيفعل ذلك من أجلك؟ سمعت أنك بحاجة لدفع حوالي 1 ألف للحصول على استشارة منه."
+        },
+        {
+          "text": "NOSa",
+          "confidence": 0.475,
+          "text_ar": "نوسا"
+        },
+        {
+          "text": "MAYBE I SHOULD'VE POSTED ANONY- MOUSLY.",
+          "confidence": 0.934,
+          "text_ar": "ربما كان يجب أن أنشر دون الكشف عن هويتي."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "GOOD WORK.I GOT IT DONE.",
+          "confidence": 0.967,
+          "text_ar": "عمل جيد. لقد أنجزت المهمة."
+        },
+        {
+          "text": "DiD iT GO WELL? W 飞",
+          "confidence": 0.245,
+          "text_ar": "هل سارت الأمور على ما يرام؟"
+        },
+        {
+          "text": "REALLY?",
+          "confidence": 0.964,
+          "text_ar": "حقًا؟"
+        },
+        {
+          "text": "IT DEPENDS NOW ON HOW ANYTNG TAKES IT.",
+          "confidence": 0.909,
+          "text_ar": "يعتمد الأمر الآن على كيفية تقبل أنيتنج للأمر."
+        },
+        {
+          "text": "IT LOOKED LiKE YOU SENT SOMETHiNG TO HiM. WHAT WAS iT?",
+          "confidence": 0.953,
+          "text_ar": "بدا وكأنك أرسلت شيئًا إليه. ما كان ذلك؟"
+        },
+        {
+          "text": "Huff",
+          "confidence": 0.576,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "Huff",
+          "confidence": 0.83,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "MY PLAY RECORDS.",
+          "confidence": 0.957,
+          "text_ar": "سجلات لعبي."
+        },
+        {
+          "text": "AND OTHERS.",
+          "confidence": 0.993,
+          "text_ar": "وأشياء أخرى."
+        },
+        {
+          "text": "TEXT OF THE HEAVENS?!",
+          "confidence": 0.943,
+          "text_ar": "نص السماوات؟!"
+        },
+        {
+          "text": "WHAT'S THAT?",
+          "confidence": 0.979,
+          "text_ar": "ما ذلك؟"
+        },
+        {
+          "text": "THERE ARE RUMORS THAT THE TUTORiAL THAT'S OUT THERE iSN'T THE COMPLETE ONE!",
+          "confidence": 0.958,
+          "text_ar": "هناك شائعات بأن الدرس التعليمي الموجود ليس هو الكامل!"
+        },
+        {
+          "text": "THAT THE REAL TUTORiAL iS KEPT BY LOKi!",
+          "confidence": 0.933,
+          "text_ar": "وأن الدرس التعليمي الحقيقي يحتفظ به لوكي!"
+        },
+        {
+          "text": "APPARENTLY THAT BOOK HAS EVERYTHiNG ABOUT THE GAME!",
+          "confidence": 0.947,
+          "text_ar": "على ما يبدو، ذلك الكتاب يحتوي على كل شيء عن اللعبة!"
+        },
+        {
+          "text": "DiD YOU SEND THAT TO MASTER?",
+          "confidence": 0.936,
+          "text_ar": "هل أرسلت ذلك للسيد؟"
+        },
+        {
+          "text": "GET AWAY FROM ME.",
+          "confidence": 0.978,
+          "text_ar": "ابتعد عني."
+        },
+        {
+          "text": "YOU'RE HALF RIGHT.",
+          "confidence": 0.955,
+          "text_ar": "أنت محق جزئيًا."
+        },
+        {
+          "text": "I SENT MY PLAY RECORDS AND THE DOCUMENTS OF THE ANALYSIS I'VE MADE OVER TWO YEARS.",
+          "confidence": 0.938,
+          "text_ar": "أرسلت سجلات لعبي ومستندات التحليل التي قمت بها على مدار عامين."
+        },
+        {
+          "text": "IT'S ALMOST LIKE A THESIS.",
+          "confidence": 0.964,
+          "text_ar": "إنها أشبه بأطروحة."
+        },
+        {
+          "text": "IT REALLY EXiSTED..",
+          "confidence": 0.988,
+          "text_ar": "لقد كانت موجودة حقًا.."
+        },
+        {
+          "text": "I CAN'T SAY THAT IT CONTAINS EVERY SINGLE THING ABOUT PICK ME UP,",
+          "confidence": 0.95,
+          "text_ar": "لا أستطيع القول إنها تحتوي على كل شيء عن 'التقطني'،"
+        },
+        {
+          "text": "BUT IT'S TRUE THAT IT HAS MY EVERYTHING.",
+          "confidence": 0.945,
+          "text_ar": "لكن صحيح أنها تحتوي على كل ما لدي."
+        },
+        {
+          "text": "ALTHOUGH IDON'T KNOW WHETHER ANYTNG WILL ACTUALLY READ IT ALL,",
+          "confidence": 0.914,
+          "text_ar": "على الرغم من أنني لا أعرف ما إذا كان أنيتنج سيقرأها كلها بالفعل،"
+        },
+        {
+          "text": "IT'S ABOUT AS LONG AS THREE TO FOUR BOOKS SINCE I DIDN'T THINK ANYONE ELSE WOULD READ IT.",
+          "confidence": 0.954,
+          "text_ar": "إلا أنها بطول ثلاثة إلى أربعة كتب، لأنني لم أعتقد أن أي شخص آخر سيقرأها."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "BUT IF HE DOES READ ALL OF IT,",
+          "confidence": 0.961,
+          "text_ar": "لكن إذا قرأها كلها،"
+        },
+        {
+          "text": "AND REALLY UNDERSTANDS IT,",
+          "confidence": 0.96,
+          "text_ar": "وفهمها حقًا،"
+        },
+        {
+          "text": "THEN THINGS WILL GET PRETTY INTERESTING.",
+          "confidence": 0.923,
+          "text_ar": "فسيصبح الأمر مثيرًا للاهتمام."
+        },
+        {
+          "text": "WHETHER HE WILL LOSE HIS INTEREST IN THE GAME AND QUIT,",
+          "confidence": 0.939,
+          "text_ar": "سواء سيفقد اهتمامه باللعبة ويعتزل،"
+        },
+        {
+          "text": "OR TRY AGAIN.",
+          "confidence": 0.989,
+          "text_ar": "أو سيحاول مجددًا."
+        },
+        {
+          "text": "LOADING COMPLETE. TOUCH!",
+          "confidence": 0.971,
+          "text_ar": "اكتمل التحميل. المس الشاشة!"
+        },
+        {
+          "text": "DDD",
+          "confidence": 0.939,
+          "text_ar": "دي دي دي"
+        },
+        {
+          "text": "WELCOME TO PICK ME UP!",
+          "confidence": 0.991,
+          "text_ar": "مرحبًا بك في 'التقطني'!"
+        },
+        {
+          "text": "HE'S FINALLY HERE.",
+          "confidence": 0.943,
+          "text_ar": "لقد وصل أخيرًا."
+        },
+        {
+          "text": "LOKi!",
+          "confidence": 0.975,
+          "text_ar": "لوكي!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.982,
+          "text_ar": "تم الرفع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": ".I-iT'S MASTER'S GiFT!",
+          "confidence": 0.939,
+          "text_ar": "إ-إنها هدية السيد!"
+        },
+        {
+          "text": "PURCHASINGWAR HORSESTATUEWITH5O00 GOLD. GIFTINGWAR HORSE STATUE' TO HAN(★★) GIFTINGWAR HORSESTATUE'TO HAN(★★)!",
+          "confidence": 0.904,
+          "text_ar": "شراء تمثال حصان الحرب بـ 5000 ذهبية. إهداء 'تمثال حصان الحرب' إلى هان (★★)!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "GIVE IT HERE.",
+          "confidence": 0.987,
+          "text_ar": "أعطني إياه."
+        },
+        {
+          "text": "YOU'RE GONNA BREAK iT AGAiN?",
+          "confidence": 0.945,
+          "text_ar": "هل ستكسره مجددًا؟"
+        },
+        {
+          "text": "I EDITED THE ENDOF THE DOCUMENT BEFORE SENDING IT.",
+          "confidence": 0.957,
+          "text_ar": "لقد قمت بتحرير نهاية المستند قبل إرساله."
+        },
+        {
+          "text": "IPUTIN A SENTENCE SAYING TO GIFT A HERO HE LIKES A WAR HORSE STATUE MORE THAN TWICE.",
+          "confidence": 0.941,
+          "text_ar": "وضعت جملة تقول بإهداء تمثال حصان الحرب لبطل يحبه أكثر من مرتين."
+        },
+        {
+          "text": "HAN(★★)IS HAPPY WITH THE 'WAR HORSE STATUE'. FAVORABILITY INCREASED",
+          "confidence": 0.92,
+          "text_ar": "هان (★★) سعيد بـ 'تمثال حصان الحرب'. زادت نسبة التفضيل."
+        },
+        {
+          "text": "HE READ THE ENTIRE THING.",
+          "confidence": 0.991,
+          "text_ar": "لقد قرأ الأمر برمته."
+        },
+        {
+          "text": "I DON'T NEED A CASUAL PLAYER ASA MASTER.",
+          "confidence": 0.957,
+          "text_ar": "لا أحتاج للاعب عرضي كسيد."
+        },
+        {
+          "text": "IF HE REALLY INTENDS TO CLIMB TO THE TOP OF THE TOWER,",
+          "confidence": 0.968,
+          "text_ar": "إذا كان ينوي حقًا تسلق قمة البرج،"
+        },
+        {
+          "text": "THEN HE NEEDS TO BE AT MY LEVEL.",
+          "confidence": 0.976,
+          "text_ar": "فعليه أن يكون في مستواي."
+        },
+        {
+          "text": "OTHERWISE,HE WON'T BE ABLE TO CONTROL ME.",
+          "confidence": 0.969,
+          "text_ar": "وإلا، فلن يتمكن من التحكم بي."
+        },
+        {
+          "text": "HE PROBABLY DOESN'T UNDERSTAND THE ENTIRE DOCUMENT WELL,BUT",
+          "confidence": 0.967,
+          "text_ar": "ربما لا يفهم المستند بالكامل جيدًا، لكن"
+        },
+        {
+          "text": "IF YOU HAVE THE WILL,",
+          "confidence": 0.964,
+          "text_ar": "إذا كان لديك الإرادة،"
+        },
+        {
+          "text": "I WILL MAKE YOU THE BEST YOU CAN BE.",
+          "confidence": 0.832,
+          "text_ar": "سأجعلك الأفضل على الإطلاق."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "'PARTY 1' IS OPERABLE.",
+          "confidence": 0.938,
+          "text_ar": "'الفريق الأول' جاهز للعمل."
+        },
+        {
+          "text": "<PARTY 3>",
+          "confidence": 0.937,
+          "text_ar": "<الفريق الثالث>"
+        },
+        {
+          "text": "MISSIONFAILED MISSIONFAILED",
+          "confidence": 0.982,
+          "text_ar": "فشلت المهمة، فشلت المهمة"
+        },
+        {
+          "text": "MISSIONFAILED",
+          "confidence": 0.983,
+          "text_ar": "فشلت المهمة"
+        },
+        {
+          "text": "★*★ WINARD",
+          "confidence": 0.689,
+          "text_ar": "★★★ وينارد"
+        },
+        {
+          "text": "★*★ JELAN",
+          "confidence": 0.759,
+          "text_ar": "★★★ جيلان"
+        },
+        {
+          "text": "NOKIN",
+          "confidence": 0.99,
+          "text_ar": "نوكين"
+        },
+        {
+          "text": "MISSIONFAILED",
+          "confidence": 0.978,
+          "text_ar": "فشلت المهمة"
+        },
+        {
+          "text": "MISSIONFAILED",
+          "confidence": 0.989,
+          "text_ar": "فشلت المهمة"
+        },
+        {
+          "text": "* JIAN",
+          "confidence": 0.427,
+          "text_ar": "★ جيان"
+        },
+        {
+          "text": "ROBEIL",
+          "confidence": 0.986,
+          "text_ar": "روبيل"
+        },
+        {
+          "text": "（2C AR ATRＩ",
+          "confidence": 0.554,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "[] REDICESTUDIO",
+          "confidence": 0.624,
+          "text_ar": "[] ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.992,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
