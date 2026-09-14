@@ -1,0 +1,723 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "9",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "PICK ME UP",
+          "confidence": 0.861,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "FLOOR 4",
+          "confidence": 0.891,
+          "text_ar": "الطابق الرابع"
+        },
+        {
+          "text": "MISSIONCATEGORY-SUBJUGATION GOAL - ANNIHILATE ALL THE ENEMIES!",
+          "confidence": 0.976,
+          "text_ar": "فئة المهمة: إخضاع. الهدف: إبادة جميع الأعداء!"
+        },
+        {
+          "text": "WE'LL BE IN YOUR CARE!",
+          "confidence": 0.848,
+          "text_ar": "نحن تحت رعايتك!"
+        },
+        {
+          "text": "DON'TBE NERVOUS.",
+          "confidence": 0.981,
+          "text_ar": "لا تتوتروا."
+        },
+        {
+          "text": "yOU GUYS ARE JUST SHIELDS.",
+          "confidence": 0.629,
+          "text_ar": "أنتم مجرد دروع."
+        },
+        {
+          "text": "YOU DON'T NEED TO PUSH YOURSELVES WITH THE ATTACK.",
+          "confidence": 0.942,
+          "text_ar": "لا حاجة لأن تضغطوا على أنفسكم في الهجوم."
+        },
+        {
+          "text": "YOU'LL HAVE A SPEAR AND ARROWS BACKING YOU UP.",
+          "confidence": 0.907,
+          "text_ar": "سيكون لديكم رماح وسهام تدعمكم."
+        },
+        {
+          "text": "HIYAAAH!!",
+          "confidence": 0.946,
+          "text_ar": "هيااااا!!"
+        },
+        {
+          "text": "THE WEAK HAVE THEIR OWN WAY OFFIGHTING!",
+          "confidence": 0.957,
+          "text_ar": "للضعفاء طريقتهم الخاصة في القتال!"
+        },
+        {
+          "text": "UGH!",
+          "confidence": 0.941,
+          "text_ar": "أوه!"
+        },
+        {
+          "text": "THAT'S THE FORMATION!",
+          "confidence": 0.978,
+          "text_ar": "تلك هي التشكيلة!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "INSTEAO OF INOIVIOUAL POWER, COMBINE ALL YOUR STRENGTH!",
+          "confidence": 0.895,
+          "text_ar": "بدلًا من القوة الفردية، ادمجوا كل قوتكم معًا!"
+        },
+        {
+          "text": "KIEEK!",
+          "confidence": 0.976,
+          "text_ar": "كياااك!"
+        },
+        {
+          "text": "I'M NOT GOING TO FIGHT.",
+          "confidence": 0.948,
+          "text_ar": "لن أقاتل."
+        },
+        {
+          "text": "ICAN CLEAR THISSTAGEALLRY THIS STAGE ALL BY MYSELF.",
+          "confidence": 0.658,
+          "text_ar": "يمكنني إنهاء هذه المرحلة بمفردي تمامًا."
+        },
+        {
+          "text": "HOWEVER, IF IGET INVOLVED, THEY WON'T GET ANY FORMATION PRACTICE.",
+          "confidence": 0.967,
+          "text_ar": "ومع ذلك، إذا تدخلت، فلن يحصلوا على أي تدريب على التشكيلات."
+        },
+        {
+          "text": "UPLOADEDFROM: PICKMELIPGACHA.COM",
+          "confidence": 0.977,
+          "text_ar": "مُحمل من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "STAGE CLEAR! GIDE(★)AND HANSEN (★) HAVE LEVELEDUP! MVP - JENNA (★)",
+          "confidence": 0.919,
+          "text_ar": "تم إخلاء المرحلة! ارتقى مستوى جيد (★) وهانسن (★)! أفضل لاعب - جينا (★)"
+        },
+        {
+          "text": "REWARD",
+          "confidence": 0.998,
+          "text_ar": "المكافأة"
+        },
+        {
+          "text": "'IRON ORE (C)' X2",
+          "confidence": 0.958,
+          "text_ar": "خام الحديد (C) ×2"
+        },
+        {
+          "text": "'LEATHER (C)' X1",
+          "confidence": 0.984,
+          "text_ar": "جلد (C) ×1"
+        },
+        {
+          "text": "I OON'T KNOW WHAT TYPE OF MISSION WILL BE GIVEN ON THE FIFTH FLOOR.",
+          "confidence": 0.94,
+          "text_ar": "لا أعرف نوع المهمة التي ستُعطى في الطابق الخامس."
+        },
+        {
+          "text": "ANO AMONG THE MISSIONS GIVEN, THERE IS A MISSION THATIWON'T BE ABLE TO OO ALONE.",
+          "confidence": 0.908,
+          "text_ar": "ومن بين المهام المعطاة، هناك مهمة لن أتمكن من القيام بها وحدي."
+        },
+        {
+          "text": "HOW WAS IT?",
+          "confidence": 0.98,
+          "text_ar": "كيف كان الأمر؟"
+        },
+        {
+          "text": "MMW",
+          "confidence": 0.473,
+          "text_ar": "ممم"
+        },
+        {
+          "text": "WHAT DO YOU MEAN, IT WAS A PIECE OF CAKE!",
+          "confidence": 0.938,
+          "text_ar": "ماذا تقصد؟ كانت سهلة للغاية!"
+        },
+        {
+          "text": "THEY DID GOOD.",
+          "confidence": 0.943,
+          "text_ar": "لقد أدوا بشكل جيد."
+        },
+        {
+          "text": "I AGREE.",
+          "confidence": 0.978,
+          "text_ar": "أوافقك الرأي."
+        },
+        {
+          "text": "THE TIME THAT THE MASTER IS LOGGEO OFF HAS INCREASED A LOT.",
+          "confidence": 0.951,
+          "text_ar": "زادت المدة التي يكون فيها السيد غير متصل بالإنترنت كثيرًا."
+        },
+        {
+          "text": "IN THE SECONO TEN PULL, THEY GAINED A BLACKSMITH AS WELL AS A TANNER AND HAVE BEGUN TO PROOUCE EQUIPMENT.",
+          "confidence": 0.949,
+          "text_ar": "في السحب الثاني، حصلوا على حداد ودباغ وبدأوا في إنتاج المعدات."
+        },
+        {
+          "text": "THE BLACKSMITH ANO TANNER ARE COLLABORATING WITH THE CARPENTER TO MAKE THE EQUIPMENT.",
+          "confidence": 0.962,
+          "text_ar": "يتعاون الحداد والدباغ مع النجار لصنع المعدات."
+        },
+        {
+          "text": "THEY MOSTLY CREATE E-RANK SWOROS ANO SHIELOS.",
+          "confidence": 0.955,
+          "text_ar": "يصنعون في الغالب سيوفًا ودروعًا من الرتبة E."
+        },
+        {
+          "text": "THESE WERE GIVEN TO THE NEW HEROES ANO INCREASED THEIR SURVIVABILITY EXPONENTIALLY.",
+          "confidence": 0.944,
+          "text_ar": "تم إعطاء هذه للأبطال الجدد وزادت من فرص بقائهم على قيد الحياة بشكل كبير."
+        },
+        {
+          "text": "FOR THE MAIN PARTY, HIGHER QUALITY EQUIPMENT WAS GIVEN.",
+          "confidence": 0.954,
+          "text_ar": "بالنسبة للفريق الرئيسي، تم إعطاؤهم معدات ذات جودة أعلى."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "AND THREE PEOPLE WHO WEREN'T ACTIVE WERE SYNTHESIZED.",
+          "confidence": 0.959,
+          "text_ar": "وتم دمج ثلاثة أشخاص لم يكونوا نشطين."
+        },
+        {
+          "text": "THEY WERE PEOPLE WHO NEVER CAME TO THE TRAINING HALL ANO SAID THAT THEY WOULO RUN AWAY WHILE LOOKING FOR THE EXIT.",
+          "confidence": 0.944,
+          "text_ar": "كانوا أشخاصًا لم يأتوا أبدًا إلى قاعة التدريب وقالوا إنهم سيهربون بينما يبحثون عن المخرج."
+        },
+        {
+          "text": "AMONG THEM WAS DOLF, WHO HAD LIED ABOUT HIS TITLE.",
+          "confidence": 0.931,
+          "text_ar": "من بينهم كان دولف، الذي كذب بشأن لقبه."
+        },
+        {
+          "text": "AFTER A FEW DAYS PASSED",
+          "confidence": 0.965,
+          "text_ar": "بعد مرور بضعة أيام"
+        },
+        {
+          "text": "IS TODAY THE FOURTH FLOOR AGAIN?",
+          "confidence": 0.935,
+          "text_ar": "هل اليوم هو الطابق الرابع مجددًا؟"
+        },
+        {
+          "text": "山 印城",
+          "confidence": 0.255,
+          "text_ar": "مدينة"
+        },
+        {
+          "text": "I WANT TO GO TO THE NEXT FLOOR..",
+          "confidence": 0.924,
+          "text_ar": "أريد الذهاب إلى الطابق التالي.."
+        },
+        {
+          "text": "ISELLE, WE'LL HEAD TO THE FIFTH FLOOR TODAY, RIGHT?",
+          "confidence": 0.964,
+          "text_ar": "إيسيل، سنتوجه إلى الطابق الخامس اليوم، أليس كذلك؟"
+        },
+        {
+          "text": "ITHINK SO!",
+          "confidence": 0.987,
+          "text_ar": "أعتقد ذلك!"
+        },
+        {
+          "text": "OH,WE'RE REALLY GOING TO THE FIFTH FLOOR?",
+          "confidence": 0.961,
+          "text_ar": "أوه، هل سنذهب حقًا إلى الطابق الخامس؟"
+        },
+        {
+          "text": "IT'S GOING TO BE A LITTLE DIFFERENT.",
+          "confidence": 0.977,
+          "text_ar": "سيكون الأمر مختلفًا قليلًا."
+        },
+        {
+          "text": "IDON'T MIND IF YOU'RE RELAXED, BUT DON'T GET TOO RELAXED.",
+          "confidence": 0.94,
+          "text_ar": "لا أمانع أن تكونوا مسترخين، لكن لا تسترخوا أكثر من اللازم."
+        },
+        {
+          "text": "WE'LL KEEP THAT IN MINO!",
+          "confidence": 0.954,
+          "text_ar": "سنضع ذلك في الحسبان!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "HYUNG-NIM, THERE AREN'T ANY MONSTERS...",
+          "confidence": 0.918,
+          "text_ar": "أخي الأكبر، لا توجد أي وحوش..."
+        },
+        {
+          "text": "FIRST, WE'LL HEAD TO THE CITY CENTER AND DETERMINE THE SITUATION. FALL INTO LINE!",
+          "confidence": 0.958,
+          "text_ar": "أولًا، سنتوجه إلى وسط المدينة ونحدد الموقف. اصطفوا!"
+        },
+        {
+          "text": "YES, SIR!",
+          "confidence": 0.945,
+          "text_ar": "علم!"
+        },
+        {
+          "text": "THE CITY IS EMPTY AND NOT ONLY THE MONSTER,S BUT THERE AREN'T ANY CIVILIANS EITHER.",
+          "confidence": 0.936,
+          "text_ar": "المدينة فارغة، ولا توجد وحوش، ولا حتى مدنيون."
+        },
+        {
+          "text": "THIS ISN'T A SUBJUGATION MISSION.",
+          "confidence": 0.979,
+          "text_ar": "هذه ليست مهمة إخضاع."
+        },
+        {
+          "text": "A-ACKKKKK!!",
+          "confidence": 0.996,
+          "text_ar": "آآآآه!!"
+        },
+        {
+          "text": "H-HYUNG- NIM, HERE, OVER HEREEE!",
+          "confidence": 0.928,
+          "text_ar": "أ-أخي الأكبر، هنا، تعال إلى هنا!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "JUST WHAT IS THIS PLACE? THERE ARE BUILDINGS BUT NO PEOPLE...",
+          "confidence": 0.958,
+          "text_ar": "ما هذا المكان بالضبط؟ توجد مبانٍ ولكن لا يوجد بشر..."
+        },
+        {
+          "text": "THERE ARE BLOOD STAINS, BUT IT'S ALL DRIED UP.",
+          "confidence": 0.939,
+          "text_ar": "توجد بقع دماء، لكنها جافة تمامًا."
+        },
+        {
+          "text": "THIS IS COMPLETELY DIFFERENTTOWHAT WE'VE BEEN DOING UP UNTIL NOW.",
+          "confidence": 0.933,
+          "text_ar": "هذا مختلف تمامًا عما كنا نفعله حتى الآن."
+        },
+        {
+          "text": "THATWAS NOTHING COMPARED TO THIS.",
+          "confidence": 0.97,
+          "text_ar": "لم يكن ذلك شيئًا مقارنة بهذا."
+        },
+        {
+          "text": "JENNA, CAN YOU CLIMB THAT CLOCK TOWER?",
+          "confidence": 0.948,
+          "text_ar": "جينا، هل يمكنك تسلق برج الساعة ذاك؟"
+        },
+        {
+          "text": "YES, SIR! 心",
+          "confidence": 0.164,
+          "text_ar": "نعم، سيدي!"
+        },
+        {
+          "text": "DO YOU SEE ANYTHING?",
+          "confidence": 0.977,
+          "text_ar": "هل ترين أي شيء؟"
+        },
+        {
+          "text": "ERR, SO, I SEE THE CITY...",
+          "confidence": 0.925,
+          "text_ar": "إمم، حسنًا، أرى المدينة..."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM PICKMEUPGACHA.COM",
+          "confidence": 0.969,
+          "text_ar": "مُحمل من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "I WOULD LIKE TO THINK I SAW THIS WRONG, BUT...",
+          "confidence": 0.941,
+          "text_ar": "أود أن أظن أنني رأيت هذا بشكل خاطئ، لكن..."
+        },
+        {
+          "text": "WHAT OO YOU SEE, MISS JENNA?!",
+          "confidence": 0.919,
+          "text_ar": "ماذا ترين يا آنسة جينا؟!"
+        },
+        {
+          "text": "P-PLEASE WAIT!",
+          "confidence": 0.97,
+          "text_ar": "ر-رجاءً انتظر!"
+        },
+        {
+          "text": "IS THIS OKAY? FOR IT TO BE LIKE THIS?",
+          "confidence": 0.956,
+          "text_ar": "هل هذا بخير؟ أن يكون الأمر هكذا؟"
+        },
+        {
+          "text": "THERE ΔREΔLOT OF GOBLINS OUTSIDE THE CITY!",
+          "confidence": 0.827,
+          "text_ar": "هناك الكثير من الغيلان خارج المدينة!"
+        },
+        {
+          "text": "I THINK THEY'RE COMING THIS WAY!",
+          "confidence": 0.961,
+          "text_ar": "أعتقد أنهم قادمون إلى هنا!"
+        },
+        {
+          "text": "HOW MANY?!",
+          "confidence": 0.958,
+          "text_ar": "كم عددهم؟!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "FLOOR 5",
+          "confidence": 0.938,
+          "text_ar": "الطابق الخامس"
+        },
+        {
+          "text": "MISSION CATEGORY SURVIVAL GOAL - SURVIVE THE HORDE OF ENEMIES! GOBLIN LV.? X 1846",
+          "confidence": 0.913,
+          "text_ar": "فئة المهمة: نجاة. الهدف: النجاة من حشد الأعداء! غول (مستوى؟) × 1846"
+        },
+        {
+          "text": "A THOUSANO GOBLINS?DIO YOU SEE THAT CORRECTLY?!",
+          "confidence": 0.913,
+          "text_ar": "ألف غول؟ هل رأيت ذلك بشكل صحيح؟!"
+        },
+        {
+          "text": "I WISH IT WEREN'T THE CASE!",
+          "confidence": 0.949,
+          "text_ar": "أتمنى ألا يكون الأمر كذلك!"
+        },
+        {
+          "text": "COME DOWN FOR NOW.",
+          "confidence": 0.918,
+          "text_ar": "انزلي الآن."
+        },
+        {
+          "text": "HYUNG-NIM, OIO SOMETHING GO WRONG?",
+          "confidence": 0.911,
+          "text_ar": "أخي الأكبر، هل حدث خطأ ما؟"
+        },
+        {
+          "text": "DON'TBE SCARED.THIS MISSION ISN'T SUB JUGATION, BUT SURVIVAL.",
+          "confidence": 0.912,
+          "text_ar": "لا تخافوا. هذه المهمة ليست إخضاعًا، بل نجاة."
+        },
+        {
+          "text": "WE JUST NEED TO STAY ALIVE FOR A CERTAIN AMOUNT OF TIME.",
+          "confidence": 0.949,
+          "text_ar": "نحن فقط بحاجة للبقاء على قيد الحياة لفترة معينة من الوقت."
+        },
+        {
+          "text": "W-WE CAN HIDE THEN, RIGHT?",
+          "confidence": 0.956,
+          "text_ar": "ي-يمكننا الاختباء إذن، أليس كذلك؟"
+        },
+        {
+          "text": "WE CAN'T GO INSIDE THE BUILDINGS.",
+          "confidence": 0.961,
+          "text_ar": "لا يمكننا دخول المباني."
+        },
+        {
+          "text": "LET'S CHANGE OUR LOCATION FIRST.",
+          "confidence": 0.917,
+          "text_ar": "لنغير موقعنا أولًا."
+        },
+        {
+          "text": "HOW LONG DO WE NEEO TO SURVIVE FOR?",
+          "confidence": 0.894,
+          "text_ar": "كم من الوقت نحتاج للبقاء على قيد الحياة؟"
+        },
+        {
+          "text": "TEN MINUTES. AFTER THE ENEMIES ARRIVE,WE JUST NEED TO STAY ALIVE FOR TEN MINUTES.",
+          "confidence": 0.921,
+          "text_ar": "عشر دقائق. بعد وصول الأعداء، نحتاج فقط للبقاء على قيد الحياة لعشر دقائق."
+        },
+        {
+          "text": "THEN THAT'S DOABLE!",
+          "confidence": 0.896,
+          "text_ar": "إذن هذا ممكن!"
+        },
+        {
+          "text": "OUR LUCK ISN'T GOOD.",
+          "confidence": 0.985,
+          "text_ar": "حظنا ليس جيدًا."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "THE POSSIBILITY OF A PARTY SURVIVING A SURVIVAL MISSION FROM PAST FLOORS WAS 9%.",
+          "confidence": 0.942,
+          "text_ar": "كان احتمال نجاة الفريق في مهمة نجاة من الطوابق السابقة 9%."
+        },
+        {
+          "text": "AVOIO THE MAIN STREETS.LET'S GO TO AN ALLEY.",
+          "confidence": 0.906,
+          "text_ar": "تجنبوا الشوارع الرئيسية. لنذهب إلى زقاق."
+        },
+        {
+          "text": "OKAY!",
+          "confidence": 0.993,
+          "text_ar": "حسنًا!"
+        },
+        {
+          "text": "THERE AREN'T MANY HIGH-RISE BUILDINGS, BUT THERE HAVE BEEN LOTS OF COMPLAINTS ABOUT 'HEROES BEING PULVARIZED' IN LOW-RISE BUILDINGS.",
+          "confidence": 0.972,
+          "text_ar": "لا توجد العديد من المباني الشاهقة، ولكن كانت هناك الكثير من الشكاوى حول 'سحق الأبطال' في المباني منخفضة الارتفاع."
+        },
+        {
+          "text": "ISN'T THERE A BETTER PLACE?",
+          "confidence": 0.954,
+          "text_ar": "ألا يوجد مكان أفضل؟"
+        },
+        {
+          "text": "THERE AREN'T ANY GOOD BUILDINGS ANYWHERE ELSE, SO IN THE END,THEY'LL JUST BURST THROUGH.",
+          "confidence": 0.945,
+          "text_ar": "لا توجد مبانٍ جيدة في أي مكان آخر، لذا في النهاية، سيقتحمون المكان."
+        },
+        {
+          "text": "WE DON'T HAVE ANY MORE TIME TO LOOK FOR ANOTHER PLACE.",
+          "confidence": 0.947,
+          "text_ar": "ليس لدينا المزيد من الوقت للبحث عن مكان آخر."
+        },
+        {
+          "text": "LET'S GO WITH THIS LOCATION.",
+          "confidence": 0.941,
+          "text_ar": "لنختر هذا الموقع."
+        },
+        {
+          "text": "THE PASSAGEWAY IS SMALL, SO WE JUST 3MAL VVEJD3T 二 NEED TO FIGHTONE NEEDTOFIGHTONE ATA TIME. AT A TIME.",
+          "confidence": 0.128,
+          "text_ar": "الممر ضيق، لذا نحتاج فقط للقتال واحدًا تلو الآخر."
+        },
+        {
+          "text": "IT DOESN'T MATTER IF THEY'RE IN THE THOUSANDS.",
+          "confidence": 0.932,
+          "text_ar": "لا يهم إذا كانوا بالآلاف."
+        },
+        {
+          "text": "YEAH,WE'LL TRYIT!",
+          "confidence": 0.93,
+          "text_ar": "أجل، سنجرب ذلك!"
+        },
+        {
+          "text": "I'LL TAKE THE LEFT PASSAGEWAY AND AARONWILL TAKE THE RIGHT.",
+          "confidence": 0.958,
+          "text_ar": "سآخذ الممر الأيسر وسيتولى آرون الممر الأيمن."
+        },
+        {
+          "text": "BOTH GIDE ANDHANSENWILL TAKE THE BACK PASSAGEWAY.",
+          "confidence": 0.972,
+          "text_ar": "سيتولى كل من جيد وهانسن الممر الخلفي."
+        },
+        {
+          "text": "LET'S FIGHT WHILE TAKING TURNS. DON'THELPOUTANDUSE THE TIME TO CATCH YOUR BREATH.OKAY?",
+          "confidence": 0.947,
+          "text_ar": "لنقاتل بالتبادل. لا تتقاعسوا واستغلوا الوقت لالتقاط أنفاسكم. مفهوم؟"
+        },
+        {
+          "text": "OKAY!",
+          "confidence": 0.995,
+          "text_ar": "مفهوم!"
+        },
+        {
+          "text": "JENNA, YOULL BE ON STANDBY IN THE MIDDLE OF THE INTERSECTION.",
+          "confidence": 0.942,
+          "text_ar": "جينا، ستكونين في وضع الاستعداد في منتصف التقاطع."
+        },
+        {
+          "text": "USE YOUR ARROWS SPARINGLY ANDONLY SHOOT WHEN I TELL YOU TO.",
+          "confidence": 0.86,
+          "text_ar": "استخدمي سهامك باعتدال وأطلقي فقط عندما أخبرك بذلك."
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.994,
+          "text_ar": "علم."
+        },
+        {
+          "text": "BEFORE THE GOBLINS ARRIVE, MAkE Δ BARRICADE!",
+          "confidence": 0.752,
+          "text_ar": "قبل وصول الغيلان، اصنعوا متراسًا!"
+        },
+        {
+          "text": "KEEP THIS IN MINO! IF THEY PENETRATE THROUGH ONE PASSAGEWAY, WE'RE ALL GOING TO DIE!",
+          "confidence": 0.877,
+          "text_ar": "ضعوا هذا في الحسبان! إذا اخترقوا ممرًا واحدًا، فسنموت جميعًا!"
+        },
+        {
+          "text": "WE GOT IT!",
+          "confidence": 0.974,
+          "text_ar": "فهمنا!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "THIRTY MINUTES...",
+          "confidence": 0.979,
+          "text_ar": "ثلاثون دقيقة..."
+        },
+        {
+          "text": "I DON'T THINK IT'S THE LOBBY TIME, BUT INSTEAD ALIGNED WITH REAL TIME.",
+          "confidence": 0.982,
+          "text_ar": "لا أعتقد أنه وقت الردهة، بل يتزامن مع الوقت الفعلي."
+        },
+        {
+          "text": "THE TIMER WILL START THE MOMENT WE FACE THE GOBLINS.",
+          "confidence": 0.972,
+          "text_ar": "سيبدأ المؤقت في اللحظة التي نواجه فيها الغيلان."
+        },
+        {
+          "text": ". S 福 Mo",
+          "confidence": 0.044,
+          "text_ar": "..."
+        },
+        {
+          "text": "DAMN IT! WE COULONT EVEN FINISH BUILOING THE BARRICADE!",
+          "confidence": 0.952,
+          "text_ar": "تبًا! لم نتمكن حتى من إنهاء بناء المتراس!"
+        },
+        {
+          "text": "THEY'RE COMING!!",
+          "confidence": 0.964,
+          "text_ar": "إنهم قادمون!!"
+        },
+        {
+          "text": "SINCE IT'S COME TO THIS, MAKE△WALLWITH THEIR CORPSES!",
+          "confidence": 0.908,
+          "text_ar": "بما أن الأمر وصل إلى هذا الحد، اصنعوا جدارًا من جثثهم!"
+        },
+        {
+          "text": "RIGHT!",
+          "confidence": 0.996,
+          "text_ar": "حاضر!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "YOU SHIT..!",
+          "confidence": 0.939,
+          "text_ar": "أيها اللعين..!"
+        },
+        {
+          "text": "KIEEEK!",
+          "confidence": 0.848,
+          "text_ar": "كياااك!"
+        },
+        {
+          "text": "LET ME KNOW ANYTIME YOU'RE TIRED.",
+          "confidence": 0.955,
+          "text_ar": "أخبرني في أي وقت تشعر فيه بالتعب."
+        },
+        {
+          "text": "IT'S ONE PATTERN.",
+          "confidence": 0.942,
+          "text_ar": "إنه نمط واحد."
+        },
+        {
+          "text": "HAA, THESE BASTAROS, SERIOUSLY.",
+          "confidence": 0.868,
+          "text_ar": "هاه، هؤلاء الأوغاد، بجدية."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.986,
+          "text_ar": "مُحمل من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "WE JUST NEEO TO SURVIVE FOR TEN MINUTES, RIGHT?!",
+          "confidence": 0.955,
+          "text_ar": "نحتاج فقط للبقاء على قيد الحياة لعشر دقائق، أليس كذلك؟!"
+        },
+        {
+          "text": "HAVE I EVER LIEO TO YOU?!",
+          "confidence": 0.908,
+          "text_ar": "هل كذبت عليكم من قبل؟!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "WE CAN'T DIE IN A PLACE LIKE THIS!",
+          "confidence": 0.967,
+          "text_ar": "لا يمكننا الموت في مكان كهذا!"
+        },
+        {
+          "text": "<PARTY 1>",
+          "confidence": 0.958,
+          "text_ar": "<الفريق 1>"
+        },
+        {
+          "text": "JENNA CIRAI",
+          "confidence": 0.986,
+          "text_ar": "جينا سيراي"
+        },
+        {
+          "text": "ISLAT HAN",
+          "confidence": 0.968,
+          "text_ar": "إسرات هان"
+        },
+        {
+          "text": "AARON DELCUT",
+          "confidence": 0.971,
+          "text_ar": "آرون ديلكوت"
+        },
+        {
+          "text": "★ HANSEN",
+          "confidence": 0.399,
+          "text_ar": "★ هانسن"
+        },
+        {
+          "text": "GIDE",
+          "confidence": 0.992,
+          "text_ar": "جيد"
+        },
+        {
+          "text": "（C AR ATRI",
+          "confidence": 0.51,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.9,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.996,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
