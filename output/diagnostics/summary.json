@@ -9,9 +9,9 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.171.126.214",
+      "ip": "52.230.165.16",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Phoenix",
+      "city": "Des Moines",
       "country": "US",
       "error": null
     },
@@ -19,7 +19,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3abf083b8f9f037-SJC",
+        "cf-ray": "a3ac5c19eddb5769-ORD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -37,7 +37,7 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.09
+      "elapsed_sec": 0.07
     },
     "browser_probe": {
       "navigated": true,
@@ -66,14 +66,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-2181-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-7392-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/119686cb-61a8-4b7b-bbd0-4fa6b5f77e17",
-          "blob:https://challenges.cloudflare.com/45e308ed-c7b9-49a4-b93b-eb03186ce320",
-          "blob:https://challenges.cloudflare.com/4f945340-35be-4481-9535-3927b73367df"
+          "blob:https://challenges.cloudflare.com/12abf74c-1dc8-42bd-8a21-38d57e7451e8",
+          "blob:https://challenges.cloudflare.com/3d40f211-48e6-4087-998d-2c5b668c88ea",
+          "blob:https://challenges.cloudflare.com/8d5b809a-0eee-4aae-b4ed-8455b68db803"
         ]
       },
       "adblock_wall": {
@@ -119,38 +119,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.18,
+      "goto_elapsed_sec": 1.9,
       "navigation_timing": {
-        "ttfb_ms": 20,
-        "dom_content_loaded_ms": 171,
+        "ttfb_ms": 15,
+        "dom_content_loaded_ms": 1840,
         "load_event_ms": null,
-        "transfer_size_bytes": 4114
+        "transfer_size_bytes": 4101
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.94,
-      "total_probe_elapsed_sec": 83.58,
+      "scroll_elapsed_sec": 1.8,
+      "total_probe_elapsed_sec": 89.44,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a3abf0854a59e6fa-SJC",
+        "cf-ray": "a3ac5c349e9ac667-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-Yu9FSYKRQvKDFQoPVawg2I' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-xbAlQFrxbFBjfGVS2N2BVK' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 02:25:09 GMT",
+        "date": "Mon, 14 Sep 2026 03:38:40 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZzIaudkT96dFf4v%2FdA9%2BLch%2FMu%2BanrPjp9vAehtQdvgk0%2FR90d2O7%2FUCV24rnh8FenDS2oy%2BUdOPDaS%2FE3B8oRCqfGKoU8mH1h4he43i%2BTqO0Z483xXLx1wVSA6FBTbMhg%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OY%2BCgNKOG8%2Fy5rTrM%2FqVz2qv18cskvNY4oJgY4z%2FwvUoJmUmmOnar9ye4hLQ%2BmssHkEiRphqAl95s4kCx%2BFh3keCJvlINEhwLmvbpSQhToed7o7IXevweLFMg1%2BukHNI%2BA%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3abf0854a59e6fa\"",
+        "server-timing": "chlray;desc=\"a3ac5c349e9ac667\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -232,14 +232,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-2181-run2-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-7392-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/02219c4a-ead0-4c3a-8c6b-ecf9a791c9db",
-          "blob:https://challenges.cloudflare.com/28eb09d7-7516-427b-b9f0-8b2ad6a4b784",
-          "blob:https://challenges.cloudflare.com/65987a46-7a36-46bd-a043-0961578874b8"
+          "blob:https://challenges.cloudflare.com/1358ae85-562b-496c-abd2-2dec00f45e36",
+          "blob:https://challenges.cloudflare.com/198f5236-e2c3-4ebc-9e57-27506ec79013",
+          "blob:https://challenges.cloudflare.com/4aabb621-0ed7-4ba8-b9f7-621fc21ebdbf"
         ]
       },
       "adblock_wall": {
@@ -285,38 +285,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.14,
+      "goto_elapsed_sec": 0.11,
       "navigation_timing": {
-        "ttfb_ms": 23,
-        "dom_content_loaded_ms": 131,
+        "ttfb_ms": 18,
+        "dom_content_loaded_ms": 106,
         "load_event_ms": null,
-        "transfer_size_bytes": 4107
+        "transfer_size_bytes": 4108
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 2.07,
-      "total_probe_elapsed_sec": 83.63,
+      "scroll_elapsed_sec": 1.79,
+      "total_probe_elapsed_sec": 83.28,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a3abf2bdd99db976-SJC",
+        "cf-ray": "a3ac5e777e445769-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-WDIKEu98rW0DptqFbQBAYb' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-AGdFXzwj2QElKxpVU59P2e' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 02:26:40 GMT",
+        "date": "Mon, 14 Sep 2026 03:40:13 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8D%2FPuQNxkDRH4e8qOhNbdrUjw%2FxOsIj64dtR%2BZGmQBYyPVORwSGAh3DZ2IWNr084HSI4WoMLc9P0073k3n9dTjlFHFpm9mlFRsP1TGfZ4OV%2BDeivf5XON6ZC054iqS9L5A%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XBl0fB0uny6ui0CD7KJZ5xvEUtQamzMH1qmaYU%2BhHl21v6Mjmvw2JgDWQ83oap2bZRpU0lwYROwV4l7CHqInjhszFi3w9%2BLdn8Nek8vG2cJxSBiF8NuSZs0pVWyoDuayJA%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3abf2bdd99db976\"",
+        "server-timing": "chlray;desc=\"a3ac5e777e445769\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -376,7 +376,7 @@
       "target": "page_url",
       "sample_url": "https://starzmanga.com/manga/i-am-the-fated-villain/1/",
       "requests_sent": 4,
-      "elapsed_sec": 0.33,
+      "elapsed_sec": 0.28,
       "status_codes": [
         403,
         403,
@@ -388,11 +388,27 @@
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
+    "deep_diagnostic": {
+      "runtime_enable_leak_probe": {
+        "tested": true,
+        "patchright_available": true,
+        "protection_category": "solvable_challenge",
+        "challenge_detected": true,
+        "resolved_after_reload": false,
+        "elapsed_sec": 76.68,
+        "error": null
+      },
+      "source_url_leak_probe": {
+        "tested": true,
+        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "error": null
+      }
+    },
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-2181-report.json",
+      "report": "diagnostics/starzmanga-com-7392-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-2181-screenshot.png",
-        "diagnostics/starzmanga-com-2181-run2-screenshot.png"
+        "diagnostics/starzmanga-com-7392-screenshot.png",
+        "diagnostics/starzmanga-com-7392-run2-screenshot.png"
       ]
     }
   },
@@ -406,9 +422,9 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.171.126.214",
+      "ip": "52.230.165.16",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Phoenix",
+      "city": "Des Moines",
       "country": "US",
       "error": null
     },
@@ -416,7 +432,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3abf4fc7ed72574-SJC",
+        "cf-ray": "a3ac6293f87b4848-ORD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -434,7 +450,7 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.08
+      "elapsed_sec": 0.07
     },
     "browser_probe": {
       "navigated": true,
@@ -463,14 +479,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-5821-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-609-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0efcaf0f-9493-4c2f-87b8-3aedf7ade888",
-          "blob:https://challenges.cloudflare.com/25749263-db70-46e4-a4dd-0f57f9c66b23",
-          "blob:https://challenges.cloudflare.com/558c58e9-16d0-4ebe-97d4-8e57f023ac8d"
+          "blob:https://challenges.cloudflare.com/0c9ee146-d255-4bba-8081-c0bc3e16cc28",
+          "blob:https://challenges.cloudflare.com/3a6a7308-362b-4089-abcf-c2024dd865b0",
+          "blob:https://challenges.cloudflare.com/412affa8-b992-454a-b7fa-da5f62d6b1df"
         ]
       },
       "adblock_wall": {
@@ -516,38 +532,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.1,
+      "goto_elapsed_sec": 0.12,
       "navigation_timing": {
-        "ttfb_ms": 13,
-        "dom_content_loaded_ms": 99,
+        "ttfb_ms": 18,
+        "dom_content_loaded_ms": 116,
         "load_event_ms": null,
         "transfer_size_bytes": 4108
       },
-      "wait_for_images_elapsed_sec": 1.64,
-      "scroll_elapsed_sec": 1.79,
-      "total_probe_elapsed_sec": 83.43,
+      "wait_for_images_elapsed_sec": 1.61,
+      "scroll_elapsed_sec": 2.0,
+      "total_probe_elapsed_sec": 83.41,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a3abf4fd1c76cba0-LAX",
+        "cf-ray": "a3ac6294a9e4549d-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-wvsYo0p2EDEdWDggaAgtuM' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-rnO2EFA1E6LpAvtddKsoZj' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 02:28:12 GMT",
+        "date": "Mon, 14 Sep 2026 03:43:01 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dLNRCOYsWl5nN76qMRWkkO0VGUH8OXmBP%2BG0gifUnOWrj2STSLWOCKHdIHwGd0RkHmoIuGynglAn1C3K7UgoQcPP8CfwmVJaDBHGKy5FHzDAiwivaRp3LKpY4hBFaeiCZQ%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6S%2F70DGTUADEmt44cJnzd7Gmv8pPT0LCeLhpkM66X001R4JAx49proXSeGQ1hq6fZFxqLqOjY%2FVLaep0TM%2BkL1qdFlBTpRmoZzOpxbNAJSvHCT9gzrOtni1XOdB4l9tvvQ%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3abf4fd1c76cba0\"",
+        "server-timing": "chlray;desc=\"a3ac6294a9e4549d\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -629,14 +645,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-5821-run2-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-609-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/3d91b09e-4f41-4850-8263-c05b29523e7b",
-          "blob:https://challenges.cloudflare.com/416c9749-9b4b-4d32-8b2a-0fb268b586fb",
-          "blob:https://challenges.cloudflare.com/7db49277-9d9d-4fd3-87fa-4ae7d69ddd55"
+          "blob:https://challenges.cloudflare.com/4c72ae0e-eafb-4418-8097-175c21b22d91",
+          "blob:https://challenges.cloudflare.com/74fb1103-2f8b-4f23-a431-5bab9df5dccf",
+          "blob:https://challenges.cloudflare.com/97bbdeff-7fa1-40d2-bd8f-51f0365fbf54"
         ]
       },
       "adblock_wall": {
@@ -682,38 +698,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.13,
+      "goto_elapsed_sec": 0.1,
       "navigation_timing": {
-        "ttfb_ms": 20,
-        "dom_content_loaded_ms": 122,
+        "ttfb_ms": 16,
+        "dom_content_loaded_ms": 100,
         "load_event_ms": null,
-        "transfer_size_bytes": 4108
+        "transfer_size_bytes": 4116
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.91,
-      "total_probe_elapsed_sec": 83.52,
+      "scroll_elapsed_sec": 1.97,
+      "total_probe_elapsed_sec": 83.36,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a3abf735dd90ad44-SJC",
+        "cf-ray": "a3ac64cc1e993c96-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-fYXfrt3UlnSXHfcX036pB8' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-Ulj6zC1d4Ys1A53qznnFfR' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 02:29:43 GMT",
+        "date": "Mon, 14 Sep 2026 03:44:32 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6FtjHzzZFvdQl7IYbWnfJmaMU1P4hnEfhmQL1HiHbgecdMfb5Z7oqF8H2HtRVCoVkFqH6kZSaeTpS0St9b%2B4V%2BYRNldCHtIlgtWMm8cBjjfCN5oXMY3BmMGT4IwXZ%2Fd8uw%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=eAVAj1rZG55ooAOu4D2qmMzWaB%2FZ1ywC12R71QQ8PGOj1KxsswDvEUfjqPub5mDQKwxM10YSyD1rcXyMCFuvTQm5l7rTUpVjcfl1bUfLYqw%2FwVCS24NtMkQdhNSdAJ5H5Q%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3abf735dd90ad44\"",
+        "server-timing": "chlray;desc=\"a3ac64cc1e993c96\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -773,7 +789,7 @@
       "target": "page_url",
       "sample_url": "https://starzmanga.com/manga/i-am-the-fated-villain/2/",
       "requests_sent": 4,
-      "elapsed_sec": 0.35,
+      "elapsed_sec": 0.33,
       "status_codes": [
         403,
         403,
@@ -785,27 +801,43 @@
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
+    "deep_diagnostic": {
+      "runtime_enable_leak_probe": {
+        "tested": true,
+        "patchright_available": true,
+        "protection_category": "solvable_challenge",
+        "challenge_detected": true,
+        "resolved_after_reload": false,
+        "elapsed_sec": 75.27,
+        "error": null
+      },
+      "source_url_leak_probe": {
+        "tested": true,
+        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "error": null
+      }
+    },
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-5821-report.json",
+      "report": "diagnostics/starzmanga-com-609-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-5821-screenshot.png",
-        "diagnostics/starzmanga-com-5821-run2-screenshot.png"
+        "diagnostics/starzmanga-com-609-screenshot.png",
+        "diagnostics/starzmanga-com-609-run2-screenshot.png"
       ]
     }
   },
   {
     "url": "https://starzmanga.com/manga/i-am-the-fated-villain/3/",
     "tls_and_server_info": {
-      "server_ip": "172.67.189.207",
+      "server_ip": "104.21.33.104",
       "tls_issuer": "Google Trust Services",
       "tls_subject": "starzmanga.com",
       "tls_not_after": "Nov 22 12:34:08 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.171.126.214",
+      "ip": "52.230.165.16",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Phoenix",
+      "city": "Des Moines",
       "country": "US",
       "error": null
     },
@@ -813,7 +845,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3abf9737dd4ac07-SJC",
+        "cf-ray": "a3ac68de6c465769-ORD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -831,7 +863,7 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.08
+      "elapsed_sec": 0.07
     },
     "browser_probe": {
       "navigated": true,
@@ -860,14 +892,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-5265-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-1393-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0e37750a-00ee-4f63-ab6d-7d9cbf3273ee",
-          "blob:https://challenges.cloudflare.com/61f2ffd3-c15f-483a-8077-e11b3670ccbc",
-          "blob:https://challenges.cloudflare.com/716becbd-4752-456c-bc4b-864d9cc7e47a"
+          "blob:https://challenges.cloudflare.com/0043da11-0d8f-4383-b44c-4e8004bfb490",
+          "blob:https://challenges.cloudflare.com/1758c849-611d-4b1d-a7a8-3cd36cab3654",
+          "blob:https://challenges.cloudflare.com/365c279a-0e29-4bad-a3b4-bee9b1e55eaa"
         ]
       },
       "adblock_wall": {
@@ -913,38 +945,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.13,
+      "goto_elapsed_sec": 0.11,
       "navigation_timing": {
-        "ttfb_ms": 24,
-        "dom_content_loaded_ms": 131,
+        "ttfb_ms": 16,
+        "dom_content_loaded_ms": 105,
         "load_event_ms": null,
-        "transfer_size_bytes": 4107
+        "transfer_size_bytes": 4100
       },
-      "wait_for_images_elapsed_sec": 1.64,
-      "scroll_elapsed_sec": 2.08,
-      "total_probe_elapsed_sec": 83.71,
+      "wait_for_images_elapsed_sec": 1.61,
+      "scroll_elapsed_sec": 1.97,
+      "total_probe_elapsed_sec": 83.36,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a3abf9744acaf9f9-SJC",
+        "cf-ray": "a3ac68df2c341042-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-ZRioyqKE2ZM4zpZ5hM02CF' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-MRh8K2fHEvkaHfhQLCIIBv' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 02:31:15 GMT",
+        "date": "Mon, 14 Sep 2026 03:47:19 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=an4C3KbKi191hRc72ZBYMBZExAKMP4XtUeBizshZ5ovBJmmqdHz0sUocp6r78DZWMNDLgSp4az%2FgbcmMZKvh998fCa4emyMcBcTnD%2BFv8J3AivJvm2UEyg0hLjM82eiWhg%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=E%2F%2FFVRLosDbA7RDYJB%2BN7Oaw33zTBTsQzSHimldcIFbI6s2bbBnqf0cVloL3Kehod8i%2Fi%2FsYf5bba7P79%2BO7AVLBGlh1hXRnDtPuRgZWMPFfHEGlFtNhZF46ugv%2FXlSkKA%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3abf9744acaf9f9\"",
+        "server-timing": "chlray;desc=\"a3ac68df2c341042\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -1026,14 +1058,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-5265-run2-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-1393-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/18f187ed-cc86-47af-9e33-07027a255594",
-          "blob:https://challenges.cloudflare.com/2849ee8e-8f36-4d1d-b23d-b7f65c691ab8",
-          "blob:https://challenges.cloudflare.com/38864024-f678-4acc-ba52-b27ae4bf4ac1"
+          "blob:https://challenges.cloudflare.com/1552af47-9354-436c-bffe-8aa784679a86",
+          "blob:https://challenges.cloudflare.com/65c2ed37-7ee7-42fe-a4c1-a78935b1b110",
+          "blob:https://challenges.cloudflare.com/8a210530-7806-448c-9374-ebb64be69390"
         ]
       },
       "adblock_wall": {
@@ -1079,38 +1111,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.14,
+      "goto_elapsed_sec": 0.11,
       "navigation_timing": {
-        "ttfb_ms": 21,
-        "dom_content_loaded_ms": 134,
+        "ttfb_ms": 17,
+        "dom_content_loaded_ms": 112,
         "load_event_ms": null,
-        "transfer_size_bytes": 4109
+        "transfer_size_bytes": 4108
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.86,
-      "total_probe_elapsed_sec": 83.3,
+      "scroll_elapsed_sec": 1.79,
+      "total_probe_elapsed_sec": 83.31,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a3abfbae6834f037-SJC",
+        "cf-ray": "a3ac6b165d61341a-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-wLOgEef8oIKWiiPv49sX74' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-Ge9vyWlLhY7SUoRGHoQ5hQ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 02:32:47 GMT",
+        "date": "Mon, 14 Sep 2026 03:48:50 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8rfr71dafUhcJx9J8ARQkKzyiqacdMqaGBXC%2FYZMO9%2FBKf1thJOi1wtyORUNW2iolFol2vMH8V0wTaFa9M%2BUGxLgitWtWEf0VVx9IiXbAiXeIwL%2FisURK1DhASN0R1jSYA%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=f4hAqgo2CY4XCm99%2B8vwktSazP%2F3TCrcQ6fXncl5kPe2n4wAOcRFYJ4CCbYX2kuG5A7MmzCB%2F1o7Ep1plwZrGzn3C2VQqcHwQbVW9Der3QYTtu%2FiRZRiXJ8u1p6qPP7lwQ%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3abfbae6834f037\"",
+        "server-timing": "chlray;desc=\"a3ac6b165d61341a\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -1170,7 +1202,7 @@
       "target": "page_url",
       "sample_url": "https://starzmanga.com/manga/i-am-the-fated-villain/3/",
       "requests_sent": 4,
-      "elapsed_sec": 0.33,
+      "elapsed_sec": 0.29,
       "status_codes": [
         403,
         403,
@@ -1182,11 +1214,27 @@
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
+    "deep_diagnostic": {
+      "runtime_enable_leak_probe": {
+        "tested": true,
+        "patchright_available": true,
+        "protection_category": "solvable_challenge",
+        "challenge_detected": true,
+        "resolved_after_reload": false,
+        "elapsed_sec": 76.49,
+        "error": null
+      },
+      "source_url_leak_probe": {
+        "tested": true,
+        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "error": null
+      }
+    },
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-5265-report.json",
+      "report": "diagnostics/starzmanga-com-1393-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-5265-screenshot.png",
-        "diagnostics/starzmanga-com-5265-run2-screenshot.png"
+        "diagnostics/starzmanga-com-1393-screenshot.png",
+        "diagnostics/starzmanga-com-1393-run2-screenshot.png"
       ]
     }
   }
