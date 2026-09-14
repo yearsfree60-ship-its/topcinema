@@ -1,0 +1,528 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "45",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "WH-WHAT...?",
+          "confidence": 0.948,
+          "text_ar": "مـ-ماذا...؟"
+        },
+        {
+          "text": "H-HUMAN SOLDIERS?",
+          "confidence": 0.968,
+          "text_ar": "جـ-جنود بشر؟"
+        },
+        {
+          "text": "H-HYUNG-NIM..! THEY AREN'T... MONSTERS..!",
+          "confidence": 0.911,
+          "text_ar": "أخي الأكبر..! إنهم ليسوا... وحوشًا..!"
+        },
+        {
+          "text": "THEY'RE... HUMAN!",
+          "confidence": 0.965,
+          "text_ar": "إنهم... بشر!"
+        },
+        {
+          "text": "SO WHAT? ARE YOU NOT GONNA FIGHT?",
+          "confidence": 0.913,
+          "text_ar": "وماذا في ذلك؟ ألن تقاتل؟"
+        },
+        {
+          "text": "N-NO, THAT'S NOT...!!!",
+          "confidence": 0.897,
+          "text_ar": "لـ-لا، ليس الأمر كذلك...!!!"
+        },
+        {
+          "text": "WE...WE SHOULO TALK TO THEM FIRST...!",
+          "confidence": 0.917,
+          "text_ar": "علينا... علينا التحدث معهم أولًا...!"
+        },
+        {
+          "text": "I AGREE! WE MIGHT BE △BLE TO GET SOME INFORMATIONABOUT THIS PLACE!",
+          "confidence": 0.923,
+          "text_ar": "أوافقك الرأي! ربما نتمكن من الحصول على بعض المعلومات عن هذا المكان!"
+        },
+        {
+          "text": "WE MIGHT NOT HAVE TO FIGHT!",
+          "confidence": 0.973,
+          "text_ar": "ربما لن نضطر للقتال!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "...nNOT FIGHT?",
+          "confidence": 0.832,
+          "text_ar": "...ألا نقاتل؟"
+        },
+        {
+          "text": "W-WE SHOULD AVOIDUNNECESSARY KILLING...",
+          "confidence": 0.96,
+          "text_ar": "يـ-يجب أن نتجنب القتل غير الضروري..."
+        },
+        {
+          "text": "WHAT ABOUT YOU?",
+          "confidence": 0.898,
+          "text_ar": "ماذا عنك؟"
+        },
+        {
+          "text": "THEY'RE DIFFERENT FROM NPCS.",
+          "confidence": 0.967,
+          "text_ar": "إنهم مختلفون عن الشخصيات غير اللاعبة."
+        },
+        {
+          "text": "THEY CAN SEE US.",
+          "confidence": 0.935,
+          "text_ar": "إنهم يستطيعون رؤيتنا."
+        },
+        {
+          "text": "THAT MEANS THEY'RE ENEMIES.",
+          "confidence": 0.957,
+          "text_ar": "هذا يعني أنهم أعداء."
+        },
+        {
+          "text": "WHAT ARE YOU DOING? RAISE YOUR WEAPONS.",
+          "confidence": 0.924,
+          "text_ar": "ما الذي تفعلونه؟ ارفعوا أسلحتكم."
+        },
+        {
+          "text": "H-HYUNG- NIM!!!",
+          "confidence": 0.894,
+          "text_ar": "أخـ-أخي الأكبر!!!"
+        },
+        {
+          "text": "IF YOU DON'T WANT TO FIGHT, THEN...",
+          "confidence": 0.898,
+          "text_ar": "إذا كنتم لا ترغبون في القتال، إذًا..."
+        },
+        {
+          "text": "ARE YOU GUYS...",
+          "confidence": 0.873,
+          "text_ar": "هل أنتم يا رفاق..."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.975,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "gonna stopme?",
+          "confidence": 0.987,
+          "text_ar": "ستحاولون منعي؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "PICKN MEUP 口",
+          "confidence": 0.834,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ART WASAKBASAK (3B2S) ADAPTATION CHO WOONEH (REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.954,
+          "text_ar": "الرسم: واساكباساك (3B2S) | الاقتباس: تشو وونيه (ريديك ستودي) | الأصل: هيرمود"
+        },
+        {
+          "text": "PHEWA",
+          "confidence": 0.706,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "YOU GUYs DO AS YOU WISH.",
+          "confidence": 0.862,
+          "text_ar": "افعلوا ما يحلو لكم يا رفاق."
+        },
+        {
+          "text": "TH-THANK YOU.",
+          "confidence": 0.975,
+          "text_ar": "شـ-شكرًا لك."
+        },
+        {
+          "text": "HHEW",
+          "confidence": 0.634,
+          "text_ar": "زفرة"
+        },
+        {
+          "text": "I'LL TRY TO TALK TO THEM.",
+          "confidence": 0.959,
+          "text_ar": "سأحاول التحدث معهم."
+        },
+        {
+          "text": "MYNAME IS AARON!",
+          "confidence": 0.895,
+          "text_ar": "اسمي آرون!"
+        },
+        {
+          "text": "I WOULO LIKE TO TALK TO YOU!",
+          "confidence": 0.949,
+          "text_ar": "أود التحدث إليكم!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "WE WOULO LIKE TO TALK TOO!",
+          "confidence": 0.962,
+          "text_ar": "ونحن أيضًا نود التحدث!"
+        },
+        {
+          "text": "WE WERE BROUGHT HERE OUT OF NOWHERE!",
+          "confidence": 0.961,
+          "text_ar": "لقد أُحضرنا إلى هنا فجأة من العدم!"
+        },
+        {
+          "text": "HOW?!",
+          "confidence": 0.967,
+          "text_ar": "كيف؟!"
+        },
+        {
+          "text": "IT'S TOO COMPLEX TO REALLY SAY! WHY OON'T YOU COME CLOSER?!",
+          "confidence": 0.897,
+          "text_ar": "الأمر معقد للغاية بحيث لا يمكن شرحه! لماذا لا تقتربون أكثر؟!"
+        },
+        {
+          "text": "THEN I'LL COME!",
+          "confidence": 0.908,
+          "text_ar": "سأقترب إذًا!"
+        },
+        {
+          "text": "PUT OOWN YOUR WEAPON FIRST!",
+          "confidence": 0.887,
+          "text_ar": "ألقِ سلاحك أولًا!"
+        },
+        {
+          "text": "AMT",
+          "confidence": 0.524,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "MY COLLEAGUES ARE △ BIT FEARFUL!",
+          "confidence": 0.89,
+          "text_ar": "زملائي خائفون قليلًا!"
+        },
+        {
+          "text": "WE OON'T INTENO TO FIGHT, SO DON'T WORRY!",
+          "confidence": 0.914,
+          "text_ar": "نحن لا ننوي القتال، فلا تقلقوا!"
+        },
+        {
+          "text": "WE JUST WANT TO GO BACK!",
+          "confidence": 0.93,
+          "text_ar": "نريد فقط العودة!"
+        },
+        {
+          "text": "ARE YOU STUPID? YOU'RE REALLY GONNAJUST DO AS THEY SAY? 1 -",
+          "confidence": 0.27,
+          "text_ar": "هل أنت أحمق؟ هل ستفعل حقًا ما يقولونه؟"
+        },
+        {
+          "text": "YOU GUYS COME HERE! WITHOUT YOUR WEAPONS!",
+          "confidence": 0.968,
+          "text_ar": "تعالوا إلى هنا! بدون أسلحتكم!"
+        },
+        {
+          "text": "THAT'S GONNA BE OIFFICULT!",
+          "confidence": 0.944,
+          "text_ar": "سيكون ذلك صعبًا!"
+        },
+        {
+          "text": "YOU WANT US TO BE THE ONLY ONES TO OROP OUR WEAPONS?!",
+          "confidence": 0.897,
+          "text_ar": "تريد منا أن نكون الوحيدين الذين يلقون أسلحتهم؟!"
+        },
+        {
+          "text": "WHAT KINO OF BULLSHIT IS THAT?!",
+          "confidence": 0.915,
+          "text_ar": "أي نوع من الهراء هذا؟!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "ALRIGHT!",
+          "confidence": 0.994,
+          "text_ar": "حسنًا!"
+        },
+        {
+          "text": "THREE OF US WILL GO!",
+          "confidence": 0.928,
+          "text_ar": "سيذهب ثلاثة منا!"
+        },
+        {
+          "text": "WE'RE UNARMED, AS YOU CAN SEE.",
+          "confidence": 0.907,
+          "text_ar": "نحن غير مسلحين، كما ترون."
+        },
+        {
+          "text": "型卫球",
+          "confidence": 0.302,
+          "text_ar": "صوت تحرك"
+        },
+        {
+          "text": "I WOULD PREFER YOU TO DO THE SAME.",
+          "confidence": 0.949,
+          "text_ar": "أفضل أن تفعلوا المثل."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.991,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "IS THAT GOOD ENOUGH?",
+          "confidence": 0.977,
+          "text_ar": "هل هذا كافٍ؟"
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.996,
+          "text_ar": "حسنًا."
+        },
+        {
+          "text": "姓工球",
+          "confidence": 0.388,
+          "text_ar": "صوت تحرك"
+        },
+        {
+          "text": "NOW WE CAN TALK.",
+          "confidence": 0.913,
+          "text_ar": "الآن يمكننا التحدث."
+        },
+        {
+          "text": "BUT YOU KNOW?",
+          "confidence": 0.939,
+          "text_ar": "لكن، هل تعلم؟"
+        },
+        {
+          "text": "I KEEP HEARING THIS ENDLESS VOICE IN MY HEAD.",
+          "confidence": 0.952,
+          "text_ar": "أسمع هذا الصوت الذي لا ينتهي في رأسي."
+        },
+        {
+          "text": "I CAN'T STOP IT NO MATTER WHAT I DO.",
+          "confidence": 0.947,
+          "text_ar": "لا أستطيع إيقافه مهما فعلت."
+        },
+        {
+          "text": "THE VOICE IS TALKING TO ME",
+          "confidence": 0.968,
+          "text_ar": "الصوت يتحدث معي"
+        },
+        {
+          "text": "RIGHT NoW TOO.",
+          "confidence": 0.889,
+          "text_ar": "الآن أيضًا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "OH, WHAT IS IT SAYING?",
+          "confidence": 0.927,
+          "text_ar": "أوه، وماذا يقول؟"
+        },
+        {
+          "text": "Kill Yov GUYS!!!",
+          "confidence": 0.794,
+          "text_ar": "اقتلوا هؤلاء الرفاق!!!"
+        },
+        {
+          "text": "I'VE SEEN THIS WHEN I WAS A MASTER.",
+          "confidence": 0.937,
+          "text_ar": "لقد رأيت هذا عندما كنت سيدًا."
+        },
+        {
+          "text": "THE HEROES WHO HESITATED TO ATTACK ALL ENDED UP DEAD.",
+          "confidence": 0.951,
+          "text_ar": "الأبطال الذين ترددوا في الهجوم انتهى بهم الأمر جميعًا موتى."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "A COMPROMISE DOES NOT EXIST,",
+          "confidence": 0.934,
+          "text_ar": "لا وجود للحلول الوسط،"
+        },
+        {
+          "text": "WHOEVER IT MAY BE,",
+          "confidence": 0.949,
+          "text_ar": "أيًا كان من يكونون،"
+        },
+        {
+          "text": "AND HOWEVER THEY MAY BE!",
+          "confidence": 0.965,
+          "text_ar": "ومهما كانت طبيعتهم!"
+        },
+        {
+          "text": "KEUK!",
+          "confidence": 0.983,
+          "text_ar": "كيوك!"
+        },
+        {
+          "text": "HEY, YOU.",
+          "confidence": 0.957,
+          "text_ar": "مهلًا، أنت."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "KILL OR BE KILLED.",
+          "confidence": 0.963,
+          "text_ar": "اقتل أو تُقتل."
+        },
+        {
+          "text": "DO YOU STILL WANT TO TRY TALKING TO THEM?",
+          "confidence": 0.921,
+          "text_ar": "هل ما زلت ترغب في محاولة التحدث معهم؟"
+        },
+        {
+          "text": "I'LL FIGHT.",
+          "confidence": 0.982,
+          "text_ar": "سأقاتل."
+        },
+        {
+          "text": "JENNA, WHAT ABOUT YOU?",
+          "confidence": 0.803,
+          "text_ar": "جينا، ماذا عنكِ؟"
+        },
+        {
+          "text": "IF WE DON'T KILL, WE'LL BE KILLED INSTEAD.",
+          "confidence": 0.941,
+          "text_ar": "إذا لم نقتل، فسنُقتل نحن بدلًا من ذلك."
+        },
+        {
+          "text": "OBVIOUSLY.",
+          "confidence": 0.984,
+          "text_ar": "بالطبع."
+        },
+        {
+          "text": "IT'S OKAY.",
+          "confidence": 0.949,
+          "text_ar": "لا بأس."
+        },
+        {
+          "text": "I WAS PREPARED FOR THIS.",
+          "confidence": 0.903,
+          "text_ar": "لقد كنت مستعدًا لهذا."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.981,
+          "text_ar": "تم الرفع بواسطة: PICKMELPGACHA.COM"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "I'M REAOY!!!",
+          "confidence": 0.835,
+          "text_ar": "أنا مستعد!!!"
+        },
+        {
+          "text": "SEEMS LIKE I WAS WORRIED FOR NO REASON.",
+          "confidence": 0.947,
+          "text_ar": "يبدو أنني كنت قلقًا بلا سبب."
+        },
+        {
+          "text": "I TOLD YOU.",
+          "confidence": 0.965,
+          "text_ar": "أخبرتكم بذلك."
+        },
+        {
+          "text": "IT DOESN'T MATTER WHETHER THE ENEMY IS A MONSTER OR A HUMAN.",
+          "confidence": 0.955,
+          "text_ar": "لا يهم ما إذا كان العدو وحشًا أم إنسانًا."
+        },
+        {
+          "text": "WHAT I CONSIDERED THE MOST IMPORTANT WHEN CHOOSING PARTY MEMBERS WASN'T STRENGTH OR TALENT, BUT MENTALITY.",
+          "confidence": 0.965,
+          "text_ar": "ما اعتبرته الأكثر أهمية عند اختيار أعضاء الفريق لم يكن القوة أو الموهبة، بل العقلية."
+        },
+        {
+          "text": "THE DESIRE TO LIVE AND THE WILLINGNESS TO DO WHATEVER IT TAKES TO SURVIVE!",
+          "confidence": 0.958,
+          "text_ar": "الرغبة في العيش والاستعداد لفعل أي شيء من أجل البقاء!"
+        },
+        {
+          "text": "THESE GUYS RRE THE ONES THAT RRE MONSTERS INSTERD OF HUMANS.",
+          "confidence": 0.898,
+          "text_ar": "هؤلاء الرفاق هم الوحوش الحقيقيون بدلًا من البشر."
+        },
+        {
+          "text": "Prepare for battle.",
+          "confidence": 0.958,
+          "text_ar": "استعدوا للمعركة."
+        },
+        {
+          "text": "<PARTY 1>",
+          "confidence": 0.93,
+          "text_ar": "<الفريق 1>"
+        },
+        {
+          "text": "★★ AARON DELCUT",
+          "confidence": 0.701,
+          "text_ar": "★★ آرون ديلكوت"
+        },
+        {
+          "text": "★★ HAN ISLAT",
+          "confidence": 0.719,
+          "text_ar": "★★ هان إسرات"
+        },
+        {
+          "text": "★★ JENNA CIRAI",
+          "confidence": 0.728,
+          "text_ar": "★★ جينا سيراي"
+        },
+        {
+          "text": "EDLKA RIVEL STRASHUR",
+          "confidence": 0.95,
+          "text_ar": "إولكا ريفيل ستراشور"
+        },
+        {
+          "text": "EDIS CALLEN",
+          "confidence": 0.981,
+          "text_ar": "إيديس كالين"
+        },
+        {
+          "text": ")C AR ATRⅠ",
+          "confidence": 0.444,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.923,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.991,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
