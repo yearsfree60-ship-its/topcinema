@@ -1,0 +1,478 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "29",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "OGRE LV.23",
+          "confidence": 0.955,
+          "text_ar": "غول ضخم مستوى 23"
+        },
+        {
+          "text": "THEY BROUGHT A BIG FRIEND.",
+          "confidence": 0.974,
+          "text_ar": "لقد أحضروا صديقًا ضخمًا معهم."
+        },
+        {
+          "text": "I'M ASSIGNING ROLES!",
+          "confidence": 0.927,
+          "text_ar": "سأوزع الأدوار الآن!"
+        },
+        {
+          "text": "EOLKA,CREATE △FIREWALL ANO STOP THE GOBLINS!",
+          "confidence": 0.85,
+          "text_ar": "إولكا، أنشئي جدارًا ناريًا وأوقفي الغيلان!"
+        },
+        {
+          "text": "AARON, PROTECT EOLKA!",
+          "confidence": 0.979,
+          "text_ar": "آرون، احمِ إولكا!"
+        },
+        {
+          "text": "I CAN STOP THE GOBLINS, BUT WHAT △BOUT THAT MONSTER?!",
+          "confidence": 0.883,
+          "text_ar": "يمكنني إيقاف الغيلان، لكن ماذا عن ذلك الوحش؟!"
+        },
+        {
+          "text": "MY FIREWALL WON'T STOP HIM!",
+          "confidence": 0.907,
+          "text_ar": "جداري الناري لن يوقفه!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "STOP TALKING NONSENSE ANO START!",
+          "confidence": 0.924,
+          "text_ar": "توقفي عن الثرثرة وابدئي فورًا!"
+        },
+        {
+          "text": "I'LL TAKE CARE OF THIS PIG!",
+          "confidence": 0.942,
+          "text_ar": "سأتولى أنا أمر هذا الخنزير!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.991,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "IF I GET HIT EVEN ONCE, I'LL DIE.",
+          "confidence": 0.965,
+          "text_ar": "إذا تلقيت ضربة واحدة فقط، فسأموت."
+        },
+        {
+          "text": "A SHIELD OR WHATEVER WON'T DO ANYTHING IN THE FACE OF UNPARALLELED STRENGTH.",
+          "confidence": 0.955,
+          "text_ar": "الدرع أو أي شيء مشابه لن يجدي نفعًا أمام هذه القوة الغاشمة."
+        },
+        {
+          "text": "EVEN THOUGH IT'LL TAKE MORE TIME, THE ONLY WAY IS TO GRADUALLY ATTACK IT!",
+          "confidence": 0.931,
+          "text_ar": "رغم أن الأمر سيستغرق وقتًا أطول، إلا أن الطريقة الوحيدة هي مهاجمته تدريجيًا!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "KIEEEK!",
+          "confidence": 0.958,
+          "text_ar": "كيااااا!"
+        },
+        {
+          "text": "OH! I THINK IT'S WORKING!",
+          "confidence": 0.891,
+          "text_ar": "أوه! أعتقد أن الخطة تنجح!"
+        },
+        {
+          "text": "SINCE THE TARGET IS LARGE, IT'S AN EASIER OPPONENT COMPAREO TO THE GOBLINS!",
+          "confidence": 0.908,
+          "text_ar": "بما أن الهدف ضخم، فهو خصم أسهل مقارنة بالغيلان!"
+        },
+        {
+          "text": "IT CAN'T DOOGE,SO IFI STACKDAMAGE LIKE THIS...!",
+          "confidence": 0.888,
+          "text_ar": "لا يمكنه المراوغة، لذا إذا تراكمت الأضرار هكذا...!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "..I-I TAKE IT BACK!I THINK THE GOBLINS ARE EASIER!",
+          "confidence": 0.826,
+          "text_ar": "أ-أنا أسحب كلامي! أعتقد أن الغيلان أسهل!"
+        },
+        {
+          "text": "IT'S NOT DODGING BECAUSE IT PROBABLY DOESN'T HAVE TO.",
+          "confidence": 0.965,
+          "text_ar": "إنه لا يراوغ لأنه على الأرجح لا يحتاج لذلك."
+        },
+        {
+          "text": "IF IT'S NOT A HIT TO ITS VITAL POINT, THEN IT WON'T HARM IT, SO SAVE \"YOUR ARROWS.",
+          "confidence": 0.903,
+          "text_ar": "إذا لم تكن الضربة في نقطة حيوية، فلن تؤذيه، لذا وفري سهامك."
+        },
+        {
+          "text": "DOES IT EVEN HAVE A VITAL POINT?!",
+          "confidence": 0.9,
+          "text_ar": "وهل لديه نقطة حيوية أصلًا؟!"
+        },
+        {
+          "text": "H-HUH?! HAN!!",
+          "confidence": 0.951,
+          "text_ar": "هـ-هاه؟! هان!!"
+        },
+        {
+          "text": "THIS IS BAO!!",
+          "confidence": 0.788,
+          "text_ar": "هذا سيء!!"
+        },
+        {
+          "text": "THERE'S ONE MORE OVER THERE!",
+          "confidence": 0.948,
+          "text_ar": "هناك واحد آخر هناك!"
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.995,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "DAMN IT, AARON HAS HIS HANDS FULL WITH THE GOBLINS,",
+          "confidence": 0.958,
+          "text_ar": "تبًا، آرون مشغول تمامًا بالتعامل مع الغيلان،"
+        },
+        {
+          "text": "AND THE DISTRIBUTION OF OUR STRENGTH FELL THROUGH BECAUSE ONE MORE SHOWED UP.",
+          "confidence": 0.959,
+          "text_ar": "وتوزيع قوانا اختل لأن واحدًا آخر قد ظهر."
+        },
+        {
+          "text": "THE LONGER THIS GOES ON, THE MOREDISADVANTAGEOUS THIS SITUATION WILL BE FOR US.",
+          "confidence": 0.95,
+          "text_ar": "كلما طال أمد هذا القتال، زاد وضعنا سوءًا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "THEN...!",
+          "confidence": 0.983,
+          "text_ar": "إذن...!"
+        },
+        {
+          "text": "WE NEED TO TAKE THE RISK!",
+          "confidence": 0.987,
+          "text_ar": "علينا المخاطرة!"
+        },
+        {
+          "text": "WE'RE GOING TO IGNORE THE PAIN!",
+          "confidence": 0.973,
+          "text_ar": "سنتجاهل الألم!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "THIS BASTARD IS A MALE, TOO.. Ah, Iguess it's notnow?",
+          "confidence": 0.86,
+          "text_ar": "هذا الوغد ذكر أيضًا.. آه، أظن أنه ليس كذلك الآن؟"
+        },
+        {
+          "text": "AH.. THERE IS A VITAL POINT...",
+          "confidence": 0.874,
+          "text_ar": "آه.. توجد نقطة حيوية..."
+        },
+        {
+          "text": "TL/N: NOT THE BALLS; PR/N: CASTRATION 101",
+          "confidence": 0.902,
+          "text_ar": "ملاحظة المترجم: ليست الخصيتين؛ ملاحظة المراجع: درس في الإخصاء."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.982,
+          "text_ar": "تم الرفع بواسطة: PICKMELPGACHA.COM"
+        },
+        {
+          "text": "IT'S SHALLOW!",
+          "confidence": 0.778,
+          "text_ar": "لقد كانت ضربة سطحية!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "BUT,",
+          "confidence": 0.902,
+          "text_ar": "لكن،"
+        },
+        {
+          "text": "IT DOESN'T MATTER!",
+          "confidence": 0.96,
+          "text_ar": "لا يهم!"
+        },
+        {
+          "text": "ONE DOWN.",
+          "confidence": 0.991,
+          "text_ar": "سقط الأول."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "NEXT IS...",
+          "confidence": 0.974,
+          "text_ar": "التالي هو..."
+        },
+        {
+          "text": "HAN! THERE'S ONE COMING THIS WAY!!",
+          "confidence": 0.901,
+          "text_ar": "هان! هناك واحد قادم في هذا الاتجاه!!"
+        },
+        {
+          "text": "IS IT AFTER EOLKA?!",
+          "confidence": 0.95,
+          "text_ar": "هل يستهدف إولكا؟!"
+        },
+        {
+          "text": "JENNA! LURE IT WITH YOUR ARROWS!",
+          "confidence": 0.952,
+          "text_ar": "جينا! استدرجيه بأسهمك!"
+        },
+        {
+          "text": "ACK!",
+          "confidence": 0.991,
+          "text_ar": "آه!"
+        },
+        {
+          "text": "NO! WE'RE TOO LATE! TOO L4TEL",
+          "confidence": 0.737,
+          "text_ar": "لا! لقد فات الأوان! فات الأوان!"
+        },
+        {
+          "text": "9#n EOLKA!!",
+          "confidence": 0.133,
+          "text_ar": "إولكا!!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "KYAA! 1 7",
+          "confidence": 0.301,
+          "text_ar": "كيااا!"
+        },
+        {
+          "text": "WHAT'S THAT?",
+          "confidence": 0.992,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "A VAGUE DOUBT.",
+          "confidence": 0.958,
+          "text_ar": "شك مبهم."
+        },
+        {
+          "text": "THE OAM THAT COLLAPSEO ON THE SEVENTH FLOOR.",
+          "confidence": 0.924,
+          "text_ar": "السد الذي انهار في الطابق السابع."
+        },
+        {
+          "text": "LIKE SOMETHING HAO HIT IT, THE BROKEN FRAGMENTS ANO HOLES IN THE OIRT.",
+          "confidence": 0.917,
+          "text_ar": "يبدو كأن شيئًا ما قد اصطدم به، الشظايا المحطمة والثقوب في التراب."
+        },
+        {
+          "text": "A GOBLIN THAT DOESN'T HAVE A WEAPON BUT HAS POWER TO DESTROY THE CASTLE WALL AND BUILOING. AND BOILOING.",
+          "confidence": 0.876,
+          "text_ar": "غول لا يملك سلاحًا لكنه يملك القوة لتدمير سور القلعة والمباني."
+        },
+        {
+          "text": "SHIT!",
+          "confidence": 0.987,
+          "text_ar": "تبًا!"
+        },
+        {
+          "text": "IT'S NOT AIMING FOR EOLKA!",
+          "confidence": 0.932,
+          "text_ar": "إنه لا يستهدف إولكا!"
+        },
+        {
+          "text": "IT'S GOING FOR THE OAM!!",
+          "confidence": 0.912,
+          "text_ar": "إنه يتجه نحو السد!!"
+        },
+        {
+          "text": "JENNA!",
+          "confidence": 0.967,
+          "text_ar": "جينا!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "YOU THINK...",
+          "confidence": 0.938,
+          "text_ar": "هل تظن..."
+        },
+        {
+          "text": "I'lL LET YOU DO THAT?!",
+          "confidence": 0.823,
+          "text_ar": "أنني سأسمح لك بذلك؟!"
+        },
+        {
+          "text": "YOU'RE GOING TO DIE HERE!!",
+          "confidence": 0.962,
+          "text_ar": "ستموت هنا!!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.98,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "KERUK...!",
+          "confidence": 0.948,
+          "text_ar": "كيروك...!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "。 M ob OF",
+          "confidence": 0.078,
+          "text_ar": "همف!"
+        },
+        {
+          "text": "山 Vupp",
+          "confidence": 0.063,
+          "text_ar": "ثب!"
+        },
+        {
+          "text": "THAT WAS CLOSE, BUT WE BARELY...",
+          "confidence": 0.96,
+          "text_ar": "كانت قريبة، لكننا بالكاد..."
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.977,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "HAN! WE KILLEO THE REMAINING GOBLINS!",
+          "confidence": 0.906,
+          "text_ar": "هان! لقد قضينا على الغيلان المتبقية!"
+        },
+        {
+          "text": "WHAT SHOULO WE DO NOW?!",
+          "confidence": 0.877,
+          "text_ar": "ماذا علينا أن نفعل الآن؟!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "ooo",
+          "confidence": 0.291,
+          "text_ar": "..."
+        },
+        {
+          "text": "WE FAILED.",
+          "confidence": 0.993,
+          "text_ar": "لقد فشلنا."
+        },
+        {
+          "text": "IF THE INFORMATION AND PREDICTIONS IOBTAINED WERE ACCURATE,",
+          "confidence": 0.961,
+          "text_ar": "إذا كانت المعلومات والتوقعات التي حصلت عليها دقيقة،"
+        },
+        {
+          "text": "THEN THERE ARE PROBABLY REINFORCEMENTS BEYOND THE DAM THAT WILL COME THROUGH THE FOREST.",
+          "confidence": 0.945,
+          "text_ar": "فمن المحتمل وجود تعزيزات خلف السد ستأتي عبر الغابة."
+        },
+        {
+          "text": "HOWEVER, AS THE DAM HAS NOW COLLAPSED, THEY WON'T BE ABLE TO CROSS THE RIVER.",
+          "confidence": 0.952,
+          "text_ar": "ومع ذلك، بما أن السد قد انهار الآن، فلن يتمكنوا من عبور النهر."
+        },
+        {
+          "text": "AT THIS RATE, TEN PEOPLE FROM PARTY1AND2,",
+          "confidence": 0.952,
+          "text_ar": "بهذا المعدل، عشرة أشخاص من الفريقين الأول والثاني،"
+        },
+        {
+          "text": "ALONGSIOE 360 SOLDIERS WHO ARE DEFENDING THEFORTRESS,",
+          "confidence": 0.955,
+          "text_ar": "إلى جانب 360 جنديًا يدافعون عن الحصن،"
+        },
+        {
+          "text": "WILL NEED TO STOP MORE THAN THREE THOUSAND GOBLINS.",
+          "confidence": 0.94,
+          "text_ar": "سيحتاجون لإيقاف أكثر من ثلاثة آلاف غول."
+        },
+        {
+          "text": "THEN...",
+          "confidence": 0.985,
+          "text_ar": "إذن..."
+        },
+        {
+          "text": "HAN!",
+          "confidence": 0.982,
+          "text_ar": "هان!"
+        },
+        {
+          "text": "HAN...?",
+          "confidence": 0.921,
+          "text_ar": "هان...؟"
+        },
+        {
+          "text": "WHAT SHOULD WE DO NOW?!",
+          "confidence": 0.942,
+          "text_ar": "ماذا يجب أن نفعل الآن؟!"
+        },
+        {
+          "text": "AR ATRＩ",
+          "confidence": 0.625,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "[ REDICESTUDIO",
+          "confidence": 0.568,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.988,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
