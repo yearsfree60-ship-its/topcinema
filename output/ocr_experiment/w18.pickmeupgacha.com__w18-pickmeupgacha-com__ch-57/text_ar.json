@@ -1,0 +1,878 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "57",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I DON'T CARE WHO YOU WERE BEFORE.",
+          "confidence": 0.933,
+          "text_ar": "لا يهمني من كنتَ قبل مجيئك إلى هنا."
+        },
+        {
+          "text": "WHETHER YOUWEREAN ARISTOCRAT OR GARBAGE,",
+          "confidence": 0.959,
+          "text_ar": "سواء كنت أرستقراطيًا أو مجرد حثالة،"
+        },
+        {
+          "text": "SHOW THAT YOU'RE USEFUL IF YOU WANT TO LIVE.",
+          "confidence": 0.949,
+          "text_ar": "أثبت أنك مفيد إن أردت البقاء على قيد الحياة."
+        },
+        {
+          "text": "SHOW YOUR WORTH.",
+          "confidence": 0.888,
+          "text_ar": "أظهر قيمتك."
+        },
+        {
+          "text": "THAT'S APPARENTLY WHAT MR. HAN SAID.",
+          "confidence": 0.969,
+          "text_ar": "هذا ما قاله السيد هان على ما يبدو."
+        },
+        {
+          "text": "YOU BETTER FOLLOWTHE RULES STRICTLYIFYOUWANT TO GET USED TO THIS PLACE.",
+          "confidence": 0.953,
+          "text_ar": "من الأفضل لك اتباع القواعد بصرامة إن أردت التأقلم مع هذا المكان."
+        },
+        {
+          "text": "DON'T BOTHER DON'TBOTHEK PARTY 1 AND Z. PARTY 1 AND 2.",
+          "confidence": 0.95,
+          "text_ar": "لا تعبث مع الفريقين الأول والثاني."
+        },
+        {
+          "text": "THEY'RE REAL MONSTERS.",
+          "confidence": 0.959,
+          "text_ar": "إنهم وحوش حقيقية."
+        },
+        {
+          "text": "I JUST SAW THEM TRAINING.",
+          "confidence": 0.963,
+          "text_ar": "لقد رأيتهم للتو وهم يتدربون."
+        },
+        {
+          "text": "IF THEY CAN GET THAT STRONG WITH TRAINING,",
+          "confidence": 0.963,
+          "text_ar": "إذا كان بإمكانهم أن يصبحوا بهذه القوة من خلال التدريب،"
+        },
+        {
+          "text": "THEN I FEEL LIKE I COULD TAKE ON THAT AARON.",
+          "confidence": 0.95,
+          "text_ar": "فأشعر أنني أستطيع مواجهة ذلك المدعو آرون."
+        },
+        {
+          "text": "SO HOW STRONG IS THIS HAN?",
+          "confidence": 0.923,
+          "text_ar": "إذًا، ما مدى قوة هان هذا؟"
+        },
+        {
+          "text": "THATI'M NOT SURE OF.I'VE NEVER BEEN IN THEIR PARTY...",
+          "confidence": 0.917,
+          "text_ar": "لست متأكدًا من ذلك، لم يسبق لي أن كنت في فريقهم..."
+        },
+        {
+          "text": "THENWHERE DID YOU HEAR THESE RUMORS FROM?",
+          "confidence": 0.94,
+          "text_ar": "إذًا من أين سمعت هذه الشائعات؟"
+        },
+        {
+          "text": "FROM JENNA.",
+          "confidence": 0.998,
+          "text_ar": "من جينا."
+        },
+        {
+          "text": "SHE TELLS US A LOT OF THINGS UNLIKE THE OTHER MEMBERS OF THAT PARTY.",
+          "confidence": 0.922,
+          "text_ar": "إنها تخبرنا بالكثير من الأشياء على عكس الأعضاء الآخرين في ذلك الفريق."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "HAVEYOU EVER WITNESSED SYNTHESIS?",
+          "confidence": 0.986,
+          "text_ar": "هل سبق لك أن شهدت عملية التوليف؟"
+        },
+        {
+          "text": "I CAME HERE AFTER MASTERSTOPPED WITH IT. THAT'S WHY I'M STILL ALIVE TOO.",
+          "confidence": 0.938,
+          "text_ar": "لقد جئت إلى هنا بعد أن توقف السيد عن استخدامها. ولهذا السبب ما زلت على قيد الحياة."
+        },
+        {
+          "text": "SYNTHESIS...",
+          "confidence": 0.959,
+          "text_ar": "التوليف..."
+        },
+        {
+          "text": "YOU CAN GET STRONGER WITH EACH BATTLE,",
+          "confidence": 0.918,
+          "text_ar": "يمكنك أن تصبح أقوى مع كل معركة،"
+        },
+        {
+          "text": "AND EARN VARIOUS SKILLS THE MORE YOU TRAIN...",
+          "confidence": 0.897,
+          "text_ar": "وتكتسب مهارات متنوعة كلما تدربت أكثر..."
+        },
+        {
+          "text": "THIS AND PLACE'S LEADER IS HAN...",
+          "confidence": 0.949,
+          "text_ar": "وقائد هذا المكان هو هان..."
+        },
+        {
+          "text": "ALRIGHT, THANKS FOR THE INFORMATION.",
+          "confidence": 0.966,
+          "text_ar": "حسنًا، شكرًا لك على المعلومات."
+        },
+        {
+          "text": "AH, MY NAME'S ALLAN.",
+          "confidence": 0.912,
+          "text_ar": "آه، اسمي ألان."
+        },
+        {
+          "text": "IF YOU HAVE ANY MORE QUESTIONSI",
+          "confidence": 0.893,
+          "text_ar": "إذا كان لديك المزيد من الأسئلة..."
+        },
+        {
+          "text": "SORRY.",
+          "confidence": 0.988,
+          "text_ar": "عذرًا."
+        },
+        {
+          "text": "I'M NOT INTERESTED IN YOUR NAME.",
+          "confidence": 0.911,
+          "text_ar": "لست مهتمًا بمعرفة اسمك."
+        },
+        {
+          "text": "PICK MEUP",
+          "confidence": 0.95,
+          "text_ar": "التقطني"
+        },
+        {
+          "text": "ARTWASAKBASAK(3B2S) ADAPTATIONCHOWOONEH(REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.98,
+          "text_ar": "الرسم: واساكباساك، الاقتباس: تشو وونيه (ريديك ستودي)، العمل الأصلي: هيرمود"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.987,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "WHAT THE HELL ARE YOU DOING?",
+          "confidence": 0.939,
+          "text_ar": "ما الذي تفعله بحق الجحيم؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "IT'S FINE AS LonG As I dOn'T KILL HIM, RIGHT?",
+          "confidence": 0.714,
+          "text_ar": "لا بأس طالما أنني لن أقتله، أليس كذلك؟"
+        },
+        {
+          "text": "I HEARD WHAT KIND OF HARDSHIPS MY SUNBAES HAD TO ENDURE.",
+          "confidence": 0.932,
+          "text_ar": "لقد سمعت عن أنواع المصاعب التي كان على كبار السن تحملها."
+        },
+        {
+          "text": "IT MUST HAVE BEEN REAL EXCITING.",
+          "confidence": 0.908,
+          "text_ar": "لا بد أنها كانت تجربة مثيرة حقًا."
+        },
+        {
+          "text": "I'M RATHER UPSET THAT IM LATE TO THE PARTY.",
+          "confidence": 0.926,
+          "text_ar": "أنا منزعج قليلًا لأنني تأخرت عن الحفلة."
+        },
+        {
+          "text": "TO ME, IT DOESN'T LOOK LIKE IT MATTERS WHETHERYOUPROVE YOUR WORTH OR NOT.",
+          "confidence": 0.922,
+          "text_ar": "بالنسبة لي، لا يبدو أن الأمر يهم سواء أثبتَّ قيمتك أم لا."
+        },
+        {
+          "text": "FROM WHAT I HEARD, THERE WAS A REALLY GOOD SYSTEM TO GET RID OF TRASH.",
+          "confidence": 0.949,
+          "text_ar": "مما سمعته، كان هناك نظام جيد جدًا للتخلص من الحثالة."
+        },
+        {
+          "text": "SEEMS LIKE MASTER DOESN'TUSE IT THOUGH, WEIRDLY ENOUGH.",
+          "confidence": 0.966,
+          "text_ar": "يبدو أن السيد لا يستخدمه رغم ذلك، وهو أمر غريب."
+        },
+        {
+          "text": "YOU CAN PUT YOUR ARM BACK ON YOUR OWN. ONYOUR OWN",
+          "confidence": 0.946,
+          "text_ar": "يمكنك إعادة ذراعك بنفسك. بنفسك."
+        },
+        {
+          "text": "IT'LL STICK ONITS OWNIF YOU JUST PRESS IT THERE.",
+          "confidence": 0.915,
+          "text_ar": "ستلتصق من تلقاء نفسها إذا ضغطت عليها فقط."
+        },
+        {
+          "text": "AH, DO YOU NOT KNOW THAT BECAUSE YOU'VE NEVER EXPERIENCED IT BEFORE?",
+          "confidence": 0.904,
+          "text_ar": "آه، ألا تعرف ذلك لأنك لم تجربه من قبل؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "I CAME BACKTD A RATHER INTERESTING EVENT.",
+          "confidence": 0.847,
+          "text_ar": "لقد عدت لأشهد حدثًا مثيرًا للاهتمام."
+        },
+        {
+          "text": "ILIKEIT VERY MUCH.",
+          "confidence": 0.877,
+          "text_ar": "أعجبني ذلك كثيرًا."
+        },
+        {
+          "text": "I'M QUITE BORED. DOES ANYONE ELSE WANTTHEIR ARMS CUTOFF?",
+          "confidence": 0.941,
+          "text_ar": "أشعر بالملل الشديد. هل يريد أي شخص آخر أن تُقطع ذراعاه؟"
+        },
+        {
+          "text": "YOu PSYCHOTIC BASTARD!",
+          "confidence": 0.58,
+          "text_ar": "أيها المختل عقليًا!"
+        },
+        {
+          "text": "I THINK IT'S BETTER TO BE A PSYCHO THAN TO BE A USELESS PIG. WOULDN'TYOU AGREE?",
+          "confidence": 0.932,
+          "text_ar": "أعتقد أنه من الأفضل أن تكون مختلًا على أن تكون خنزيرًا عديم الفائدة. ألا توافقني الرأي؟"
+        },
+        {
+          "text": "VELKIST, WHAT ARE YOU STEPPINGIN FOR?",
+          "confidence": 0.956,
+          "text_ar": "فيلكيست، لماذا تتدخل؟"
+        },
+        {
+          "text": "SORRY, BUT I WAS JUST SO DISGUSTED THAT MY BODY REACTED BEFORE MY HEAD COULD.",
+          "confidence": 0.906,
+          "text_ar": "عذرًا، لكنني شعرت بالاشمئزاز لدرجة أن جسدي تصرف قبل أن يفكر عقلي."
+        },
+        {
+          "text": "HE WAS LUCKY.",
+          "confidence": 0.981,
+          "text_ar": "لقد كان محظوظًا."
+        },
+        {
+          "text": "IF IT WEREN'T FOR VELKIST, HIS HEAD WOULD'VE BEEN CRUSHED BY ISELLE.",
+          "confidence": 0.951,
+          "text_ar": "لولا فيلكيست، لكان رأسه قد سُحق على يد إيسيل."
+        },
+        {
+          "text": "DIDYOU HEAR?",
+          "confidence": 0.97,
+          "text_ar": "هل سمعت؟"
+        },
+        {
+          "text": "THAT THE FIRST FLOOR AND SECOND FLOOR ARE BEING DIVIDED?",
+          "confidence": 0.963,
+          "text_ar": "بأن الطابق الأول والطابق الثاني يتم فصلهما؟"
+        },
+        {
+          "text": "THE FIRSTFLOOR IS A SHITHOLE WHEREAS THE SECOND FLOOR IS LUXURIOUS.",
+          "confidence": 0.95,
+          "text_ar": "الطابق الأول حظيرة قذرة بينما الطابق الثاني فاخر."
+        },
+        {
+          "text": "THAT'S ABOUT RIGHT.",
+          "confidence": 0.996,
+          "text_ar": "هذا صحيح تقريبًا."
+        },
+        {
+          "text": "YOU GUYS ARE ALSO FIRST FLOOR.",
+          "confidence": 0.798,
+          "text_ar": "أنتم أيضًا في الطابق الأول."
+        },
+        {
+          "text": "DON'T WORRY. I'LL MAKE IT UP SOON ENOUGH.",
+          "confidence": 0.956,
+          "text_ar": "لا تقلق. سأعوض ذلك قريبًا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "I'LL SUMMARIZE AGAIN FOR THE IDIOTS.",
+          "confidence": 0.987,
+          "text_ar": "سألخص الأمر مجددًا من أجل الأغبياء."
+        },
+        {
+          "text": "OF THE THIRTY-FIVE, THIRTEEN ARE ON THE SECOND FLOOR.",
+          "confidence": 0.968,
+          "text_ar": "من بين الخمسة وثلاثين، هناك ثلاثة عشر في الطابق الثاني."
+        },
+        {
+          "text": "THE OTHER TWENTY-TWO ARE ON THE FIRST.",
+          "confidence": 0.986,
+          "text_ar": "والاثنان وعشرون الآخرون في الطابق الأول."
+        },
+        {
+          "text": "SECOND FLOOR GUYS CAN USE ALL FACILITIES FREELY.",
+          "confidence": 0.981,
+          "text_ar": "يمكن لأهل الطابق الثاني استخدام كل المرافق بحرية."
+        },
+        {
+          "text": "THE FIRST FLOOR CAN'T.",
+          "confidence": 0.962,
+          "text_ar": "أما الطابق الأول فلا يمكنهم ذلك."
+        },
+        {
+          "text": "YOU'RE ALL DEAD IF YOU TRY TO SNEAK UP TO THE SECOND FLOOR!",
+          "confidence": 0.933,
+          "text_ar": "ستلقون حتفكم إذا حاولتم التسلل إلى الطابق الثاني!"
+        },
+        {
+          "text": "YOU GOTTA GET BETTER IN YOUR SKILLS IF YOU WANT TO MAKE IT TO THE SECOND FLOOR.",
+          "confidence": 0.944,
+          "text_ar": "عليكم تحسين مهاراتكم إن أردتم الوصول إلى الطابق الثاني."
+        },
+        {
+          "text": "LOOK HERE! THE PERFECT ROLE MODEL!",
+          "confidence": 0.991,
+          "text_ar": "انظروا هنا! القدوة المثالية!"
+        },
+        {
+          "text": "HE'S THE INVINCIBLE SUPER ACE! LEARN FROM HIM!",
+          "confidence": 0.989,
+          "text_ar": "إنه الآس الخارق الذي لا يقهر! تعلموا منه!"
+        },
+        {
+          "text": "DID YOU SEE HOW HE DID ON THE FIFTEENTH FLOOR?HUH?!",
+          "confidence": 0.903,
+          "text_ar": "هل رأيتم أداءه في الطابق الخامس عشر؟ ها؟!"
+        },
+        {
+          "text": "HIS GENIUS TECHNIQUES AND一 UGYAAH",
+          "confidence": 0.763,
+          "text_ar": "تقنياته العبقرية و... أرغغغ!"
+        },
+        {
+          "text": "SHOW OFF YOUR SKILLS IF YOU WANT TO LIVE A GOOD LIFE.",
+          "confidence": 0.903,
+          "text_ar": "أظهروا مهاراتكم إن أردتم عيش حياة كريمة."
+        },
+        {
+          "text": "MASTER'S WATCHING YOU.",
+          "confidence": 0.976,
+          "text_ar": "السيد يراقبكم."
+        },
+        {
+          "text": "IF HE THINKS YOU'RE DOING WELL ENOUGH, HE'LL SEND YOU TO THE SECOND FLOOR.",
+          "confidence": 0.93,
+          "text_ar": "إذا اعتقد أن أداءكم جيد بما يكفي، سيرسلكم إلى الطابق الثاني."
+        },
+        {
+          "text": "BUT IT'S TOO HARSH.",
+          "confidence": 0.834,
+          "text_ar": "لكن هذا قاسٍ جدًا."
+        },
+        {
+          "text": "WE WERE DRAGGED HERE AGAINST OVR WILL.",
+          "confidence": 0.704,
+          "text_ar": "لقد تم جرنا إلى هنا ضد إرادتنا."
+        },
+        {
+          "text": "AND NOW WE HAVE TO LIVE HIKE THISZ",
+          "confidence": 0.833,
+          "text_ar": "والآن علينا العيش هكذا."
+        },
+        {
+          "text": "IIY",
+          "confidence": 0.483,
+          "text_ar": "آي!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "That's enough.",
+          "confidence": 0.955,
+          "text_ar": "هذا يكفي."
+        },
+        {
+          "text": "YOU AND I ARE THE SAME. WE WERE ALSO DRAGGED HERE.",
+          "confidence": 0.958,
+          "text_ar": "أنا وأنت متشابهان. لقد تم جرنا إلى هنا أيضًا."
+        },
+        {
+          "text": "NO, IT WAS WORSE FOR US ACTUALLY.",
+          "confidence": 0.91,
+          "text_ar": "لا، بل كان الأمر أسوأ بالنسبة لنا في الواقع."
+        },
+        {
+          "text": "WASN'T IT, JENNA?",
+          "confidence": 0.972,
+          "text_ar": "أليس كذلك يا جينا؟"
+        },
+        {
+          "text": "MM,THAT'S TRUE. WE DIDN'T EVEN HAVE FOOD.",
+          "confidence": 0.924,
+          "text_ar": "مم، هذا صحيح. لم يكن لدينا حتى طعام."
+        },
+        {
+          "text": "AND ONE MISTAKE MEANT SYNTHESIS.",
+          "confidence": 0.971,
+          "text_ar": "وكان خطأ واحد يعني التوليف."
+        },
+        {
+          "text": "DID YOU THINK WE TRAINED ALL DAY BECAUSE WE LIKE IT? It all.pays off.",
+          "confidence": 0.907,
+          "text_ar": "هل ظننتم أننا تدربنا طوال اليوم لأننا نحب ذلك؟ كل هذا يؤتي ثماره."
+        },
+        {
+          "text": "THAT MEANS...",
+          "confidence": 0.921,
+          "text_ar": "هذا يعني..."
+        },
+        {
+          "text": "you WAnt us TO FIGHT LIKE YOU Guys?",
+          "confidence": 0.771,
+          "text_ar": "تريدون منا أن نقاتل مثلكم؟"
+        },
+        {
+          "text": "EXACTLY.",
+          "confidence": 0.983,
+          "text_ar": "بالضبط."
+        },
+        {
+          "text": "THERE ISN'T A BIG NEED FOR SUPPORT ROLES AND GATHERING ROLES YET.",
+          "confidence": 0.955,
+          "text_ar": "لا توجد حاجة كبيرة لأدوار الدعم أو الجمع بعد."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "MOST ARE COMBAT ROLES, AND THE MINORITY WHO'S TALENTED WILL MAKE IT TO THE SECOND FLOOR.",
+          "confidence": 0.956,
+          "text_ar": "معظم الأدوار قتالية، والأقلية الموهوبة ستصل إلى الطابق الثاني."
+        },
+        {
+          "text": "HALF HAVE ACCEPTED THIS.",
+          "confidence": 0.983,
+          "text_ar": "نصفهم تقبلوا هذا الأمر."
+        },
+        {
+          "text": "THE OTHER HALF IS IN DENIAL.",
+          "confidence": 0.991,
+          "text_ar": "والنصف الآخر في حالة إنكار."
+        },
+        {
+          "text": "I GUESS IT'S WORSE SINCE THEY USED TO HAVE ALL THE LUXURIES.",
+          "confidence": 0.974,
+          "text_ar": "أظن أن الأمر أسوأ بالنسبة لهم لأنهم اعتادوا على كل تلك الرفاهية."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.986,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "FOR A SYSTEM TRANSITION, YOU NEEDED TO PUSH OFF FREE GACHA OR GO ABOUT IT GRADUALLY.",
+          "confidence": 0.92,
+          "text_ar": "من أجل انتقال النظام، كان عليك التخلص من الغاشا المجانية أو القيام بذلك تدريجيًا."
+        },
+        {
+          "text": "THERE IS BOUND TO BE RESISTANCE WHEN YOU CHANGE TOO MUCH AT ONCE WHEN THINGS ARE ALREADY SET IN PLACE.",
+          "confidence": 0.943,
+          "text_ar": "لا بد من وجود مقاومة عندما تغير الكثير في وقت واحد بينما الأمور مستقرة بالفعل."
+        },
+        {
+          "text": "LIKE THIS.",
+          "confidence": 0.994,
+          "text_ar": "مثل هذا."
+        },
+        {
+          "text": "YOU WANT ME TO GO FIGHT OUT THERE WHILE BEING TREATED LIKE TRASH?",
+          "confidence": 0.939,
+          "text_ar": "تريد مني أن أخرج للقتال هناك بينما أعامل كالحثالة؟"
+        },
+        {
+          "text": "WHAT KIND OF UNFAIR BULLSHIT IS THAT?!",
+          "confidence": 0.945,
+          "text_ar": "أي نوع من الهراء غير العادل هذا؟!"
+        },
+        {
+          "text": "WE WILL NOT ACCEPT IT.",
+          "confidence": 0.972,
+          "text_ar": "لن نقبل بذلك."
+        },
+        {
+          "text": "YOU DIDN'T FIGHT EVEN WHEN YOU WERE BEING WELL-FED.",
+          "confidence": 0.953,
+          "text_ar": "لم تكونوا تقاتلون حتى عندما كنتم تحصلون على طعام جيد."
+        },
+        {
+          "text": "ISN'T THAT RIGHT, COMRADES?",
+          "confidence": 0.968,
+          "text_ar": "أليس كذلك أيها الرفاق؟"
+        },
+        {
+          "text": "YEAH! WE'LL TAKE BACK WHAT IS RIGHTFULLY OURS!",
+          "confidence": 0.798,
+          "text_ar": "أجل! سنستعيد ما هو حق لنا!"
+        },
+        {
+          "text": "DID YOU THINK WE WOULDN'T KNOW THE SECRET YOU'RE HIDING?",
+          "confidence": 0.954,
+          "text_ar": "هل ظننتم أننا لن نعرف السر الذي تخفونه؟"
+        },
+        {
+          "text": "SECRET?",
+          "confidence": 0.998,
+          "text_ar": "سر؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "HOW TO CHANGE MASTER'S MIND.",
+          "confidence": 0.921,
+          "text_ar": "كيفية تغيير رأي السيد."
+        },
+        {
+          "text": "I KNOW THAT THAT MONSTER CAN'T PUT HIS HAND ON US!",
+          "confidence": 0.886,
+          "text_ar": "أعلم أن ذلك الوحش لا يمكنه وضع يده علينا!"
+        },
+        {
+          "text": "I'M SURE YOU TRIED REAL HARO TO HIDE IT, BLIT WE ALL KNOW!",
+          "confidence": 0.886,
+          "text_ar": "أنا متأكد أنكم حاولتم جاهدين إخفاء ذلك، لكننا جميعًا نعرف!"
+        },
+        {
+          "text": "WHAT? RISK MY LIFE AND FIGHT MONSTERS IF I WANT TO LIVE A DECENT LIFE?",
+          "confidence": 0.974,
+          "text_ar": "ماذا؟ أخاطر بحياتي وأقاتل الوحوش إن أردت عيش حياة كريمة؟"
+        },
+        {
+          "text": "THAT'S INSANE!",
+          "confidence": 0.978,
+          "text_ar": "هذا جنون!"
+        },
+        {
+          "text": "THAT'S RIGHT!",
+          "confidence": 0.966,
+          "text_ar": "هذا صحيح!"
+        },
+        {
+          "text": "WE WILL REFUSETO FIGHT!",
+          "confidence": 0.946,
+          "text_ar": "سنرفض القتال!"
+        },
+        {
+          "text": "SITHAN (★) HAS REFUSED TO PARTICIPATE!",
+          "confidence": 0.979,
+          "text_ar": "سيثان (★) رفض المشاركة!"
+        },
+        {
+          "text": "PARTY 4 IS INOPERABLE.",
+          "confidence": 0.929,
+          "text_ar": "الفريق 4 خارج الخدمة."
+        },
+        {
+          "text": "PARTY 5 IS INOPERABLE.",
+          "confidence": 0.963,
+          "text_ar": "الفريق 5 خارج الخدمة."
+        },
+        {
+          "text": "MASSIVE STRIKE! THE HEROES ARE REVOLTING!",
+          "confidence": 0.988,
+          "text_ar": "إضراب جماعي! الأبطال يتمردون!"
+        },
+        {
+          "text": "TEN ARE ACTUALLY REFUSING TO FIGHT, HUH?",
+          "confidence": 0.965,
+          "text_ar": "عشرة يرفضون القتال فعلًا، هاه؟"
+        },
+        {
+          "text": "THEY DON'T EVEN KNOW THEIR PLACE.",
+          "confidence": 0.932,
+          "text_ar": "إنهم لا يعرفون حتى مكانهم الصحيح."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "CUT OFF ONE ARM EACH WITH THIS SWORD.",
+          "confidence": 0.903,
+          "text_ar": "اقطعوا ذراعًا واحدة لكل منكم بهذا السيف."
+        },
+        {
+          "text": "LIKE HIM.",
+          "confidence": 0.975,
+          "text_ar": "مثله."
+        },
+        {
+          "text": "THEN I'LL LET YOU LIVE.",
+          "confidence": 0.972,
+          "text_ar": "حينها سأسمح لكم بالعيش."
+        },
+        {
+          "text": "A-AREYOU OVT OF YOVR MINDSZ",
+          "confidence": 0.854,
+          "text_ar": "هـ-هل فقدتم عقولكم؟"
+        },
+        {
+          "text": "IFWORDSWONT WORK,THENIHAVE NO CHOICE.",
+          "confidence": 0.939,
+          "text_ar": "إذا لم تنجح الكلمات، فلا خيار لدي."
+        },
+        {
+          "text": "TSARATHER EXPENSINE LESSON FEE.",
+          "confidence": 0.944,
+          "text_ar": "إنها رسوم درس باهظة الثمن."
+        },
+        {
+          "text": "H-HMPH! WHAT A BULLSHIT THREAT.",
+          "confidence": 0.959,
+          "text_ar": "هـ-همف! يا له من تهديد سخيف."
+        },
+        {
+          "text": "WE ALREADY KNOW,",
+          "confidence": 0.958,
+          "text_ar": "نحن نعلم بالفعل،"
+        },
+        {
+          "text": "WE CAN REFLISE MASTER'S ORDERS!",
+          "confidence": 0.965,
+          "text_ar": "يمكننا رفض أوامر السيد!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "THAT'S NOT WRONG.",
+          "confidence": 0.975,
+          "text_ar": "هذا ليس خطأ."
+        },
+        {
+          "text": "HEROES HAVE THE RIGHT TO DISOBEY MASTER,",
+          "confidence": 0.979,
+          "text_ar": "للأبطال الحق في عصيان السيد،"
+        },
+        {
+          "text": "AND ISELLE CAN'T PUT A HAND ON A HERO EXCEPT FOR SPECIAL CIRCUMSTANCES.",
+          "confidence": 0.953,
+          "text_ar": "ولا يمكن لإيسيل وضع يدها على بطل إلا في ظروف خاصة."
+        },
+        {
+          "text": "LEAVE IT. WE WERE RISKING OUR LIVES WHEN WE DISOBEYED.",
+          "confidence": 0.955,
+          "text_ar": "اترك الأمر. كنا نخاطر بحياتنا عندما عصينا الأوامر."
+        },
+        {
+          "text": "YOU GUYs AREN'T IN THE SAME SITUATION.",
+          "confidence": 0.844,
+          "text_ar": "أنتم لستم في نفس الموقف."
+        },
+        {
+          "text": "HOWIS IT DIFFERENT?! WE'RE ALSO WERE ALSO RISKING OUR LIVES!",
+          "confidence": 0.907,
+          "text_ar": "كيف يختلف الأمر؟! نحن أيضًا كنا نخاطر بحياتنا!"
+        },
+        {
+          "text": "YOUDON'T EVEN KNOW WHAT IT MEANS TOI",
+          "confidence": 0.846,
+          "text_ar": "أنت لا تعرف حتى ماذا يعني أن..."
+        },
+        {
+          "text": "THAT'S A GOOD ATTITUDE. THEN RISK YOUR LIVES.",
+          "confidence": 0.926,
+          "text_ar": "هذا موقف جيد. إذًا خاطروا بحياتكم."
+        },
+        {
+          "text": "I DON'T NEED YOU TO TELL ME TO-",
+          "confidence": 0.925,
+          "text_ar": "لا أحتاجك لتخبرني بـ..."
+        },
+        {
+          "text": "VELKIST, ALLAN, LESLEY!",
+          "confidence": 0.948,
+          "text_ar": "فيلكيست، ألان، ليسلي!"
+        },
+        {
+          "text": "ENTER THAT DOOR. NOW!",
+          "confidence": 0.91,
+          "text_ar": "ادخلوا ذلك الباب. الآن!"
+        },
+        {
+          "text": "IS THAT SYNTHESIS?",
+          "confidence": 0.981,
+          "text_ar": "هل هذا هو التوليف؟"
+        },
+        {
+          "text": "THAT IT IS.",
+          "confidence": 0.967,
+          "text_ar": "إنه كذلك."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "GET IN THERE! WE HAVE NO TIME.",
+          "confidence": 0.985,
+          "text_ar": "ادخلوا إلى هناك! ليس لدينا وقت."
+        },
+        {
+          "text": "WHAT",
+          "confidence": 0.996,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "SYNTHESISZ",
+          "confidence": 0.936,
+          "text_ar": "التوليف؟"
+        },
+        {
+          "text": "IS THIS YOUR FIRST TIME SEEING IT?",
+          "confidence": 0.96,
+          "text_ar": "هل هذه هي المرة الأولى التي ترونه فيها؟"
+        },
+        {
+          "text": "WHAT ARE YOU DOING? I'M GONNA PUSH YOU IN IF YOU DON'T GO.",
+          "confidence": 0.917,
+          "text_ar": "ما الذي تفعلونه؟ سأدفعكم للداخل إن لم تذهبوا."
+        },
+        {
+          "text": "HOWFUNNY. HOWEUNNY THEYKNOWABOUT DISOBEYING BUT NOT ABOUTSYNTHESIS.",
+          "confidence": 0.927,
+          "text_ar": "كم هذا مضحك. يعرفون عن العصيان ولكن ليس عن التوليف."
+        },
+        {
+          "text": "I DID TELL THEM ABOUT IT, BUT I GUESS THEYWEREN'TPAYING ATTENTION.",
+          "confidence": 0.942,
+          "text_ar": "لقد أخبرتهم بالأمر، لكن يبدو أنهم لم يكونوا منتبهين."
+        },
+        {
+          "text": "IT'S BEEN A WHILE SINCE A SYNTHESIS HAPPENED.",
+          "confidence": 0.969,
+          "text_ar": "لقد مر وقت طويل منذ حدوث آخر توليف."
+        },
+        {
+          "text": "NOW THERE ARE MORE GUYS WHO DON'T KNOW ABOUT IT THAN THE ONES WHO DO.",
+          "confidence": 0.932,
+          "text_ar": "الآن هناك المزيد من الأشخاص الذين لا يعرفون عنه أكثر ممن يعرفون."
+        },
+        {
+          "text": "WILL YOU PROCEED WITH THE SYNTHESIS?",
+          "confidence": 0.993,
+          "text_ar": "هل ستشرع في عملية التوليف؟"
+        },
+        {
+          "text": "YES",
+          "confidence": 0.993,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "I-IMPOSSIBLE.",
+          "confidence": 0.986,
+          "text_ar": "مـ-مستحيل."
+        },
+        {
+          "text": "AH, YOU'RE ALLAN. NICE TO SEE YOU AGAIN.",
+          "confidence": 0.931,
+          "text_ar": "آه، أنت ألان. من الجيد رؤيتك مجددًا."
+        },
+        {
+          "text": "THANKS FOR LAST TIME. YOU TAUGHT ME A LOT.",
+          "confidence": 0.916,
+          "text_ar": "شكرًا على المرة الماضية. لقد علمتني الكثير."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "DID YOU SAY I CAN ASK YOU THINGS?",
+          "confidence": 0.969,
+          "text_ar": "هل قلت إن بإمكاني سؤالك عن أشياء؟"
+        },
+        {
+          "text": "I'M SORRY.",
+          "confidence": 0.9,
+          "text_ar": "أنا آسف."
+        },
+        {
+          "text": "I GUESS I WON'T BE ABLE TO ASK YOU ANYTHING NOW.",
+          "confidence": 0.931,
+          "text_ar": "أظن أنني لن أتمكن من سؤالك عن أي شيء الآن."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.98,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "SYNTHESIS COMPLETE! ALLAN (★) HAS BECOME LIGHT. LESLEY (★) HAS BECOME LIGHT.",
+          "confidence": 0.946,
+          "text_ar": "اكتمل التوليف! ألان (★) أصبح ضوءًا. ليسلي (★) أصبح ضوءًا."
+        },
+        {
+          "text": "VELKIST (★★) HAS LEVELLED UP! VELKIST(★★)HASLEVELLEUP! NEW SKILL LEARNED!",
+          "confidence": 0.705,
+          "text_ar": "فيلكيست (★★) ارتقى في المستوى! تم تعلم مهارة جديدة!"
+        },
+        {
+          "text": "THAT FEELS GOOO AS HELL!",
+          "confidence": 0.818,
+          "text_ar": "هذا الشعور رائع حقًا!"
+        },
+        {
+          "text": "THAT'S NOT ENOUGH!! ISN'T THERE MORE?!",
+          "confidence": 0.924,
+          "text_ar": "هذا لا يكفي!! ألا يوجد المزيد؟!"
+        },
+        {
+          "text": "ISTILL SEE QUITE A FEW OFFERINGS!!!",
+          "confidence": 0.928,
+          "text_ar": "ما زلت أرى الكثير من القرابين!!!"
+        },
+        {
+          "text": "AR ATRI 入",
+          "confidence": 0.089,
+          "text_ar": "آر أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.868,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.995,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
