@@ -71,6 +71,22 @@ _FILENAME_FORBIDDEN_CHARS_RE = re.compile(r'[\\/:*?"<>|]')
 _FILENAME_MAX_LEN = 120
 
 
+async def _translate_chapter_if_enabled(chapter_result: dict, out_dir: Path) -> list[Path]:
+    """[جديد — ترجمة سياقية EN→AR] يستدعي وحدة translate_to_arabic.py
+    (استيراد مؤجَّل lazy — بنفس نمط استيراد paddleocr هنا، كي لا تُثقل أي
+    تشغيلة لا تفعّل الترجمة بزمن استيراد/فشل استيراد غير ضروري لو الحزمة
+    google-genai غير مثبَّتة لسببٍ ما). فشل الاستيراد نفسه أو أي خطأ غير
+    متوقَّع بالترجمة يُعامَل بنفس فلسفة عزل الأخطاء المتّبعة بباقي هذا الملف:
+    تحذير واحد يُطبَع، الفصل يبقى ناجحًا بنصه الإنجليزي فقط، لا استثناء يصعد
+    للمستدعي (فشل الترجمة لا يُسقط الفصل ولا التشغيلة كاملة أبدًا)."""
+    try:
+        from translate_to_arabic import translate_chapter_to_arabic
+        return await translate_chapter_to_arabic(chapter_result, OUTPUT_DIR, out_dir)
+    except Exception as e:
+        print(f"  ⚠️ [ترجمة] تعذّر تشغيل وحدة الترجمة لهذا الفصل: {e}")
+        return []
+
+
 def _sanitize_filename(name: str) -> str:
     """ينظّف سلسلة نصية لاستخدامها كاسم ملف/مسار آمن عبر أنظمة تشغيل
     مختلفة (Windows/macOS/Linux معًا — الأرشيف قد يُفتَح على أي منها):
@@ -1022,6 +1038,11 @@ async def _ocr_http_consumer(
                 json.dumps(chapter_result, ensure_ascii=False, indent=2), encoding="utf-8"
             )
             files_written.extend([txt_path, json_path])
+            # [جديد — ترجمة] نداء واحد لكامل الفصل (راجع تبرير هذا القرار
+            # بترويسة translate_to_arabic.py)، قبل الدفع كي تُدفَع ملفات
+            # text_ar.* بنفس commit فصل الـOCR الإنجليزي — allowed_paths
+            # الحالي (["ocr_experiment"]) يغطيها بلا أي تعديل إضافي.
+            files_written.extend(await _translate_chapter_if_enabled(chapter_result, out_dir))
             success_count += 1
             succeeded_meta.append({
                 "index": idx,
@@ -1170,6 +1191,8 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                         txt_path.write_text(r["text"], encoding="utf-8")
                         json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
                         files_written += [txt_path, json_path]
+                        # [جديد — ترجمة] راجع نفس الملاحظة بـ_ocr_http_consumer أعلاه
+                        files_written += await _translate_chapter_if_enabled(r, out_dir)
                         success_count += 1
                         succeeded_meta.append({
                             "index": i,
@@ -1300,6 +1323,11 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     if skipped_urls:
         print(f"  ⏸️ لم يُعالَج (متبقٍ لعملية تالية): {len(skipped_urls)} فصل")
     print(f"📁 النتائج محليًا في: {ocr_dir}")
+    try:
+        from translate_to_arabic import translation_active
+        print(f"🌐 الترجمة العربية: {'مفعّلة' if translation_active() else 'معطّلة'} (راجع كل فصل أعلاه لتفاصيل النجاح/الفشل الفردي)")
+    except Exception:
+        pass
     if zip_ok:
         print(f"🔗 أرشيف zip خاص بهذه التشغيلة فقط (نص+JSON لكل فصل): {OUTPUT_DIR}/{run_zip_relpath}")
     print("⚠️ تذكير: هذه تجربة — بنود sfx مُستبعَدة نهائيًا من الناتج (لا وسم للمراجعة)، تحقق من عتبة OCR_SFX_MIN_LETTERS والتجميع قبل اعتماد الناتج نهائيًا")
