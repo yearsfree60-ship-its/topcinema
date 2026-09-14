@@ -1,0 +1,678 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "16",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "getlost.",
+          "confidence": 0.968,
+          "text_ar": "اغرب عن وجهي."
+        },
+        {
+          "text": "Betorel get angry.",
+          "confidence": 0.964,
+          "text_ar": "بيتوريل يغضب."
+        },
+        {
+          "text": "ART WASAKBASAK (3B2S) ADAPTATION CHO WOONEH (REDICE STUDIO) ORIGINALHERMODE",
+          "confidence": 0.96,
+          "text_ar": "الرسم: واساكباساك (3B2S) | الاقتباس: تشو وونيه (ريديك ستودي) | الأصل: هيرمود"
+        },
+        {
+          "text": "AARON. WHILE YOUHAD YOUR LEG CUT OFF AND WERE BLEEDING LIKE HELL,",
+          "confidence": 0.948,
+          "text_ar": "آرون، بينما كانت ساقك مقطوعة وكنت تنزف بشدة،"
+        },
+        {
+          "text": "THESE GUYS WERE SLACKING AND SLEEPING.",
+          "confidence": 0.974,
+          "text_ar": "كان هؤلاء يتكاسلون وينامون."
+        },
+        {
+          "text": "DON'T PITY THEM.",
+          "confidence": 0.965,
+          "text_ar": "لا تشفق عليهم."
+        },
+        {
+          "text": "DIKA, DID YOU JUST FIGHT?",
+          "confidence": 0.92,
+          "text_ar": "ديكا، هل كنت تقاتل للتو؟"
+        },
+        {
+          "text": "HOWDO YOU KNOW?",
+          "confidence": 0.943,
+          "text_ar": "كيف عرفت؟"
+        },
+        {
+          "text": "HOW COULD I NOT KNOW WHEN YOU GOT ALL THOSE CUTS AND BRUISES ON YOUR FACE?",
+          "confidence": 0.926,
+          "text_ar": "كيف لي ألا أعرف وأنت تحمل كل تلك الجروح والكدمات على وجهك؟"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.988,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "UH...IT WAS JUST A SIMPLE DUEL.",
+          "confidence": 0.96,
+          "text_ar": "أوه... لقد كان مجرد نزال بسيط."
+        },
+        {
+          "text": "THERE WAS A REQUEST FOR IT...",
+          "confidence": 0.938,
+          "text_ar": "كان هناك طلب لذلك..."
+        },
+        {
+          "text": "ALRIGHT. YOU GUYS GO IN AND REST.",
+          "confidence": 0.938,
+          "text_ar": "حسناً. اذهبا للداخل واستريحا."
+        },
+        {
+          "text": "WHY AREN'T YOU GOING IN?",
+          "confidence": 0.94,
+          "text_ar": "لماذا لا تدخلان؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "STAGE CLEAR!",
+          "confidence": 0.975,
+          "text_ar": "تم اجتياز المرحلة!"
+        },
+        {
+          "text": "THEY'RE ALL JUST WEAKLINGS!",
+          "confidence": 0.96,
+          "text_ar": "إنهم مجرد ضعفاء!"
+        },
+        {
+          "text": "I CAN'T BELIEVE THERE WERE ONLY GOBLINS.IT'S NOTEVEN ENOUGH TO GET ME EXCITED.",
+          "confidence": 0.965,
+          "text_ar": "لا أصدق أنه لم يكن هناك سوى غوبلن. لم يكن الأمر كافياً حتى لإثارة حماسي."
+        },
+        {
+          "text": "WHO ARE YOU?",
+          "confidence": 0.869,
+          "text_ar": "من أنت؟"
+        },
+        {
+          "text": "ISN'T THAT NONE OF YOUR BUSINESS?",
+          "confidence": 0.932,
+          "text_ar": "أليس هذا من شأنك؟"
+        },
+        {
+          "text": "HEY, WHO THE HEiL ARE YOU TO SPEAK SO ARROGANTLY?",
+          "confidence": 0.908,
+          "text_ar": "مهلاً، من أنت بحق الجحيم لتتحدث بغطرسة هكذا؟"
+        },
+        {
+          "text": "YOU WERE THE ONE WHO FIRST SPOKE CASUALLY TO ME.",
+          "confidence": 0.952,
+          "text_ar": "أنت من بدأت بالتحدث معي بغير رسمية أولاً."
+        },
+        {
+          "text": "WHO THE HELL ARE YOU?",
+          "confidence": 0.884,
+          "text_ar": "من أنت بحق الجحيم؟"
+        },
+        {
+          "text": "I'M AVANT DEJACQUES.",
+          "confidence": 0.962,
+          "text_ar": "أنا أفانت ديجاك."
+        },
+        {
+          "text": "THE CAPTAIN OF THE PULVERIZING WOLVES MERCENARY. YOU ARE?",
+          "confidence": 0.958,
+          "text_ar": "قائد مرتزقة الذئاب الساحقة. وأنت؟"
+        },
+        {
+          "text": "ISLAT HAN.",
+          "confidence": 0.985,
+          "text_ar": "إسرات هان."
+        },
+        {
+          "text": "YOU HAVE A WEAPON TOO. ARE YOU A MER- CENARY?",
+          "confidence": 0.945,
+          "text_ar": "لديك سلاح أيضاً. هل أنت مرتزق؟"
+        },
+        {
+          "text": "NO, I WAS A FARMER.",
+          "confidence": 0.935,
+          "text_ar": "لا، كنت مزارعاً."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "A FARMER?",
+          "confidence": 0.967,
+          "text_ar": "مزارع؟"
+        },
+        {
+          "text": "ARE THOSE PEOPLE GATHERED HERE JUST NOW, EVERYONE THAT'S HERE?",
+          "confidence": 0.945,
+          "text_ar": "هل هؤلاء الأشخاص المتجمعون هنا الآن، هم كل من هنا؟"
+        },
+        {
+          "text": "YEA, WHAT ABOUT IT?",
+          "confidence": 0.929,
+          "text_ar": "أجل، وما شأنك بذلك؟"
+        },
+        {
+          "text": "I SEE.",
+          "confidence": 0.968,
+          "text_ar": "فهمت."
+        },
+        {
+          "text": "MASTER HASSTARTED10 CONSECUTIVE SUMMONS. I'M LOOKINGFORWARD TOSEEING WHAT HEROES WILL APPEAR!",
+          "confidence": 0.953,
+          "text_ar": "بدأ السيد 10 عمليات استدعاء متتالية. أنا متشوق لرؤية الأبطال الذين سيظهرون!"
+        },
+        {
+          "text": "10 CONSECUTIVE SUMMONS OUT OF NOWHERE?",
+          "confidence": 0.956,
+          "text_ar": "10 استدعاءات متتالية من العدم؟"
+        },
+        {
+          "text": "ISEE.IGUESS THERE'S A REASON FOR THE SUMMONS.",
+          "confidence": 0.943,
+          "text_ar": "أرى ذلك. أعتقد أن هناك سبباً لهذا الاستدعاء."
+        },
+        {
+          "text": "MASTER HAS STARTED SYNTHESIZING.",
+          "confidence": 0.987,
+          "text_ar": "بدأ السيد عملية الدمج."
+        },
+        {
+          "text": "DRAG AND DROP THE HEROES THAT WILL BE USED AS SACRIFICES FOR THE HERO THAT YOU WANT TO BE SYNTHESIZEDWITH! SACRIFICED HEROES WILL BECONSUMED.",
+          "confidence": 0.96,
+          "text_ar": "اسحب وأسقط الأبطال الذين سيُستخدمون كقرابين للبطل الذي تريد دمجه! سيتم استهلاك الأبطال المضحى بهم."
+        },
+        {
+          "text": "$\\frac{}{}$",
+          "confidence": 0.754,
+          "text_ar": "..."
+        },
+        {
+          "text": "WHERE AM I?",
+          "confidence": 0.942,
+          "text_ar": "أين أنا؟"
+        },
+        {
+          "text": "WHAT'S THIS?",
+          "confidence": 0.98,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "WHAT'S GoING oN?",
+          "confidence": 0.761,
+          "text_ar": "ما الذي يحدث؟"
+        },
+        {
+          "text": "MASTER HAS SUMMONED USELESS PEOPLE AGAIN!",
+          "confidence": 0.95,
+          "text_ar": "لقد استدعى السيد أشخاصاً عديمي الفائدة مرة أخرى!"
+        },
+        {
+          "text": "JAKEN, DiMAN, LEXiGEL GO iNTO THE SYNTHESiS CENTER!",
+          "confidence": 0.97,
+          "text_ar": "جاكين، ديمان، ليكسيجيل، اذهبوا إلى مركز الدمج!"
+        },
+        {
+          "text": "W-WHO ARE YOU?! HOW DO YOU KNOW MY NAME?",
+          "confidence": 0.895,
+          "text_ar": "مـ-من أنت؟! كيف تعرف اسمي؟"
+        },
+        {
+          "text": "MASTER ASKED YoU TO Go iN, So jUST SHUT UP AND GO iN!",
+          "confidence": 0.776,
+          "text_ar": "طلب منك السيد الذهاب، لذا اصمت واذهب فقط!"
+        },
+        {
+          "text": "ARE YOU DIMAN? YOU LOOK LIKE ONE.",
+          "confidence": 0.943,
+          "text_ar": "هل أنت ديمان؟ تبدو كواحد منهم."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "NO WAY...",
+          "confidence": 0.911,
+          "text_ar": "مستحيل..."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.962,
+          "text_ar": "أجل."
+        },
+        {
+          "text": "BUT, THEY JUST ARRIVED!",
+          "confidence": 0.981,
+          "text_ar": "لكنهم وصلوا للتو!"
+        },
+        {
+          "text": "JAKEN! BRING ONE MORE WITH YOU!",
+          "confidence": 0.902,
+          "text_ar": "جاكين! أحضر واحداً آخر معك!"
+        },
+        {
+          "text": "WHO'S LEXIGEL?",
+          "confidence": 0.942,
+          "text_ar": "من هو ليكسيجيل؟"
+        },
+        {
+          "text": "IT'S MY FIRST TIME SEEING PAID SUMMONS.DO THEY JUST DISREGARD EVERYONE ELSE?",
+          "confidence": 0.938,
+          "text_ar": "هذه أول مرة أرى فيها استدعاءات مدفوعة. هل يتجاهلون الجميع هكذا؟"
+        },
+        {
+          "text": "THIS IS WRONG!",
+          "confidence": 0.975,
+          "text_ar": "هذا خطأ!"
+        },
+        {
+          "text": "AT THE VERY LEAST, THEY SHOULO' BE GIVEN △ CHANCE! HOW IS THIS ALLOWEO?!",
+          "confidence": 0.905,
+          "text_ar": "على الأقل، يجب أن يحصلوا على فرصة! كيف يُسمح بهذا؟!"
+        },
+        {
+          "text": "ANYTNG IS MAKING A GREAT MISTAKE.",
+          "confidence": 0.969,
+          "text_ar": "أنيتنج يرتكب خطأً فادحاً."
+        },
+        {
+          "text": "WHILE IT'S TRUE THAT THERE ARE 1-STAR HEROES WHO ARE TALENTED, MOST 1-STAR HEROES ARE USELESS.",
+          "confidence": 0.928,
+          "text_ar": "صحيح أن هناك أبطالاً من فئة نجمة واحدة موهوبين، لكن معظمهم عديمو الفائدة."
+        },
+        {
+          "text": "HOWEVER, HE'S USING 1-STAR HEROES FOR SYNTHESIS WITHOUT ANY FORM OF EXAMINATION.",
+          "confidence": 0.965,
+          "text_ar": "ومع ذلك، فهو يستخدم أبطالاً من فئة نجمة واحدة للدمج دون أي فحص."
+        },
+        {
+          "text": "HAHA. I FEEL LIKE I'VE GOTTEN Δ LOT STRONGER!",
+          "confidence": 0.848,
+          "text_ar": "هاها. أشعر وكأنني أصبحت أقوى بكثير!"
+        },
+        {
+          "text": "JAKAN(★★★) LEVELED UP!",
+          "confidence": 0.97,
+          "text_ar": "جاكان (★★★) ارتقى في المستوى!"
+        },
+        {
+          "text": "AVANT, SORiALL, DANiEL!",
+          "confidence": 0.942,
+          "text_ar": "أفانت، سوريال، دانييل!"
+        },
+        {
+          "text": "WH-WHAT?! WHATARE YOU TRYING TO OO?!",
+          "confidence": 0.921,
+          "text_ar": "مـ-ماذا؟! ماذا تحاول أن تفعل؟!"
+        },
+        {
+          "text": "S-SAVE ME PLEASE!!",
+          "confidence": 0.968,
+          "text_ar": "سـ-ساعدوني أرجوكم!!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "STOP THEM FROM GETTING AWAY!",
+          "confidence": 0.909,
+          "text_ar": "أوقفوهم عن الهرب!"
+        },
+        {
+          "text": "WHAT ARE YOU DOING? AREN'T YOU ALSO APART OF THE PULVERIZ- ING WOLVES?",
+          "confidence": 0.854,
+          "text_ar": "ما الذي تفعله؟ ألم تكن أيضاً جزءاً من الذئاب الساحقة؟"
+        },
+        {
+          "text": "ISELLE. SEND A TIP TO THE MASTER.",
+          "confidence": 0.924,
+          "text_ar": "إيسيل. أرسلي نصيحة للسيد."
+        },
+        {
+          "text": "TELL HIM THAT HE WON'T KNOW WHICH1-STARHEROIS USEFUL WITHOUT USING THEM BEFOREHAND.",
+          "confidence": 0.947,
+          "text_ar": "أخبريه أنه لن يعرف أي بطل من فئة نجمة واحدة مفيد دون استخدامه مسبقاً."
+        },
+        {
+          "text": "食化城",
+          "confidence": 0.271,
+          "text_ar": "..."
+        },
+        {
+          "text": "W-WAiT A MiNUTE!",
+          "confidence": 0.979,
+          "text_ar": "انـ-انتظر دقيقة!"
+        },
+        {
+          "text": "TIPS IF YOU DON'T TRY USING THE 1-STAR HERO, YOU WON'T KNOW IF THEY'RE GOOD. HOW ABOUT TAKING THE TIME TO FIND OUT BEFORE SYNTHESIZING THEM RIGHT AWAY?",
+          "confidence": 0.937,
+          "text_ar": "نصيحة: إذا لم تجرب استخدام البطل من فئة نجمة واحدة، فلن تعرف ما إذا كان جيداً. ماذا عن أخذ الوقت لمعرفة ذلك قبل دمجهم فوراً؟"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.976,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "I'VE EXPERIENCED A LOT OF THINGS SINCEICAME HERE.",
+          "confidence": 0.962,
+          "text_ar": "لقد مررت بالكثير من الأشياء منذ قدومي إلى هنا."
+        },
+        {
+          "text": "SO MANY THINGS HAPPENED THAT IT'S ENOUGH TO CHANGE PEOPLE.",
+          "confidence": 0.922,
+          "text_ar": "حدثت أمور كثيرة لدرجة أنها كافية لتغيير الناس."
+        },
+        {
+          "text": "WHO ARE YOU TO GET IN OUR WAY?",
+          "confidence": 0.942,
+          "text_ar": "من أنت لتقف في طريقنا؟"
+        },
+        {
+          "text": "GET IN yOUR WAY?",
+          "confidence": 0.877,
+          "text_ar": "أقف في طريقكم؟"
+        },
+        {
+          "text": "I WAS JUST GIVING HIM ADVICE.",
+          "confidence": 0.918,
+          "text_ar": "كنت أقدم له نصيحة فقط."
+        },
+        {
+          "text": "WHY? NOT HAPPY?",
+          "confidence": 0.94,
+          "text_ar": "لماذا؟ لست سعيداً؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "FUCKING LUNATIC!",
+          "confidence": 0.992,
+          "text_ar": "مجنون لعين!"
+        },
+        {
+          "text": "I MISSED ONPURPOSE.",
+          "confidence": 0.966,
+          "text_ar": "لقد أخطأت عمداً."
+        },
+        {
+          "text": "BASTAROS!",
+          "confidence": 0.981,
+          "text_ar": "أوغاد!"
+        },
+        {
+          "text": "DID YOU JUST RAISE YOUR WEAPON AT US?",
+          "confidence": 0.921,
+          "text_ar": "هل رفعت سلاحك في وجهنا للتو؟"
+        },
+        {
+          "text": "AVANT, LET'S STOP HERE FOR TODAY. IT'S ALREADY LATE...",
+          "confidence": 0.944,
+          "text_ar": "أفانت، لنتوقف هنا اليوم. الوقت تأخر بالفعل..."
+        },
+        {
+          "text": "SHUT UP!",
+          "confidence": 0.955,
+          "text_ar": "اصمت!"
+        },
+        {
+          "text": "DO YOU KNOW WHO WE ARE?",
+          "confidence": 0.963,
+          "text_ar": "هل تعرف من نحن؟"
+        },
+        {
+          "text": "I DO.",
+          "confidence": 0.881,
+          "text_ar": "أعرف."
+        },
+        {
+          "text": "You're trash.",
+          "confidence": 0.862,
+          "text_ar": "أنتم حثالة."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "YOU'VE SHOWN HOSTILITY TO AVANT(★★★)! YOU'VE SHOWN HOSTILITY TO JAKEN(★★★)! YOU'VE SHOWN HOSTILITY TO WAVE(★★★)! YOU'VE SHOWN HOSTILITY TO BEIGNIN(★★★)!",
+          "confidence": 0.961,
+          "text_ar": "لقد أظهرت عدائية تجاه أفانت (★★★)! أظهرت عدائية تجاه جاكين (★★★)! أظهرت عدائية تجاه ويف (★★★)! أظهرت عدائية تجاه بينين (★★★)!"
+        },
+        {
+          "text": "HOSTILITY HAS BEEN FORMED BETWEEN HAN(★) AND THE PULVERIZING WOLVES TEAM. PLEASE TAKE NOTE OF THE RELATIONSHIPS BETWEEN HEROES!",
+          "confidence": 0.971,
+          "text_ar": "تشكلت علاقة عدائية بين هان (★) وفريق الذئاب الساحقة. يرجى الانتباه للعلاقات بين الأبطال!"
+        },
+        {
+          "text": "STOP T! IT'S FORBiDDEN FOR HEROES TO FiGHT AMONG EACH OTHER!",
+          "confidence": 0.867,
+          "text_ar": "توقف! ممنوع على الأبطال القتال فيما بينهم!"
+        },
+        {
+          "text": "DO YOU WANT TO BE PUNiSHED BY THE MASTER?!",
+          "confidence": 0.964,
+          "text_ar": "هل تريد أن يعاقبك السيد؟!"
+        },
+        {
+          "text": "I DON'T THINK IT'S FORBIDDEN THOUGH.",
+          "confidence": 0.929,
+          "text_ar": "لا أعتقد أنه ممنوع رغم ذلك."
+        },
+        {
+          "text": "THAT'S TRUE, BUT!",
+          "confidence": 0.921,
+          "text_ar": "هذا صحيح، لكن!"
+        },
+        {
+          "text": "HEY, BE HONEST. YOU GUYS AREN'T MERCENARIES, RIGHT?",
+          "confidence": 0.94,
+          "text_ar": "مهلاً، كن صادقاً. أنتم لستم مرتزقة، أليس كذلك؟"
+        },
+        {
+          "text": "WHAT BULLSHIT IS THAT? WE'RE MERCENARIES WHO ONLY MOVE IF THERE'S A COMMISSION.",
+          "confidence": 0.947,
+          "text_ar": "أي هراء هذا؟ نحن مرتزقة لا نتحرك إلا إذا كان هناك تكليف."
+        },
+        {
+          "text": "DON'T BULLSHIT.",
+          "confidence": 0.992,
+          "text_ar": "لا تتفوه بالهراء."
+        },
+        {
+          "text": "YOU'RE A THIEF TROUPE.",
+          "confidence": 0.963,
+          "text_ar": "أنتم عصابة لصوص."
+        },
+        {
+          "text": "I'MBEING NICE HERE AND YET YOU'RE CROSSING LINES.",
+          "confidence": 0.951,
+          "text_ar": "أنا أتعامل بلطف هنا ومع ذلك أنت تتجاوز الحدود."
+        },
+        {
+          "text": "WANT ME TO CUT YOU IN HALF?",
+          "confidence": 0.93,
+          "text_ar": "هل تريدني أن أقطعك إلى نصفين؟"
+        },
+        {
+          "text": "ISELLE. GUYS LIKE THEM WILL ONLY GET IN OUR WAY.",
+          "confidence": 0.955,
+          "text_ar": "إيسيل. أمثالهم لن يسببوا لنا سوى المتاعب."
+        },
+        {
+          "text": "THERE ARE TIMES WHEN HEROES WITH NASTY PERSONALITIES ARE SUMMONED REGARDLESS OF RANK.",
+          "confidence": 0.956,
+          "text_ar": "هناك أوقات يتم فيها استدعاء أبطال ذوي شخصيات سيئة بغض النظر عن رتبتهم."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "THEY'LL BE THE CULPRITS OF CAUSING CHAOS TO THE WAITING ROOM'S ORDER AND REDUCING EFFICIENCY",
+          "confidence": 0.961,
+          "text_ar": "سيكونون سبباً في إحداث الفوضى في نظام غرفة الانتظار وتقليل الكفاءة."
+        },
+        {
+          "text": "THAT MEANS THEY'RE TRASH THAT NEEDS TO BE GOTTEN RIDOF.",
+          "confidence": 0.944,
+          "text_ar": "هذا يعني أنهم حثالة يجب التخلص منهم."
+        },
+        {
+          "text": "BUT STiLL...",
+          "confidence": 0.896,
+          "text_ar": "لكن مع ذلك..."
+        },
+        {
+          "text": "Oper duel.",
+          "confidence": 0.908,
+          "text_ar": "طلب نزال."
+        },
+        {
+          "text": "HAN(★) IS REQUESTING A DUEL WITH AVANT!",
+          "confidence": 0.947,
+          "text_ar": "هان (★) يطلب نزالاً مع أفانت!"
+        },
+        {
+          "text": "TIPS DUELS ARE A WAY TO RESOLVE CONFLICTS BETWEEN HEROES. SPECIAL CONDITIONS CAN ALSO BE SET IF BOTH SIDES AGREE TO THEM.",
+          "confidence": 0.946,
+          "text_ar": "نصيحة: النزالات هي وسيلة لحل النزاعات بين الأبطال. يمكن أيضاً وضع شروط خاصة إذا وافق الطرفان عليها."
+        },
+        {
+          "text": "YOU'RE TOTALLY NUTS, HUH?",
+          "confidence": 0.952,
+          "text_ar": "أنت مجنون تماماً، أليس كذلك؟"
+        },
+        {
+          "text": "WHAT DID WE EVEN DO TO YOU?",
+          "confidence": 0.937,
+          "text_ar": "ما الذي فعلناه لك حتى؟"
+        },
+        {
+          "text": "JUST THINK OF THIS AS A CRAZY DOG BITING YOU.",
+          "confidence": 0.959,
+          "text_ar": "اعتبر هذا مجرد كلب مسعور يعضك."
+        },
+        {
+          "text": "I KNOW HOW GUYS LIKE YOU BEHAVE.",
+          "confidence": 0.949,
+          "text_ar": "أنا أعرف كيف يتصرف أمثالك."
+        },
+        {
+          "text": "THE REASON WHY YOU ASKED ME IF THAT'S EVERYONE IN THE PLAZA IS PROBABLY TO CHECK US OUT.",
+          "confidence": 0.948,
+          "text_ar": "السبب الذي جعلك تسألني عما إذا كان هؤلاء هم كل من في الساحة هو على الأرجح لتفحصنا."
+        },
+        {
+          "text": "AFTER ALL, IT'D BE TROUBLESOME FOR YOU IF THERE'S SOMEONE STRONG.",
+          "confidence": 0.939,
+          "text_ar": "ففي النهاية، سيكون من المزعج لك وجود شخص قوي."
+        },
+        {
+          "text": "WHATYOU'RE ROING NOW IS BECAUSE DOING NOW IS BECAUSE YOU DECIDED THAT NO ONE'S STRONG ENOUGH, RIGHT?",
+          "confidence": 0.901,
+          "text_ar": "ما تفعله الآن هو لأنك قررت أنه لا يوجد أحد قوي بما يكفي، أليس كذلك؟"
+        },
+        {
+          "text": "AND EVEN IF YOU CONSUME A NEW1 STAR,",
+          "confidence": 0.947,
+          "text_ar": "وحتى لو استهلكت بطلاً جديداً من فئة نجمة واحدة،"
+        },
+        {
+          "text": "IT WOULDN'T BE ENOUGH, WOULD IT?",
+          "confidence": 0.959,
+          "text_ar": "لن يكون كافياً، أليس كذلك؟"
+        },
+        {
+          "text": "OHO. ARE YOU SAYING YOU'LL BECOME A SACRIFICE?",
+          "confidence": 0.942,
+          "text_ar": "أوهو. هل تقول إنك ستصبح قرباناً؟"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.985,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "WHAT THE HELL ARE YOU SAYING RIGHT NOW?",
+          "confidence": 0.944,
+          "text_ar": "ما الذي تتفوه به بحق الجحيم الآن؟"
+        },
+        {
+          "text": "IT'S SIMPLE. IFI WIN, I'LL CONSUME HIM.",
+          "confidence": 0.872,
+          "text_ar": "الأمر بسيط. إذا فزت، سأستهلكه."
+        },
+        {
+          "text": "IF HE WINS, HE'LL CONSUME ME.",
+          "confidence": 0.965,
+          "text_ar": "إذا فاز هو، سيستهلكني."
+        },
+        {
+          "text": "μeh 1",
+          "confidence": 0.513,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "AVANT(★★★) AGREED TO THE DUEL. BOTH HEROES HAVE DECIDED ON THE CONDITION OF 'SYNTHESIZING'. DO YOU AGREE?",
+          "confidence": 0.892,
+          "text_ar": "أفانت (★★★) وافق على النزال. قرر كلا البطلين شرط 'الدمج'. هل توافق؟"
+        },
+        {
+          "text": "Yes",
+          "confidence": 0.999,
+          "text_ar": "نعم"
+        },
+        {
+          "text": "this is interesting.",
+          "confidence": 0.902,
+          "text_ar": "هذا مثير للاهتمام."
+        },
+        {
+          "text": "C AR ATRＩ",
+          "confidence": 0.479,
+          "text_ar": "..."
+        },
+        {
+          "text": "[ REDICESTUDIO",
+          "confidence": 0.432,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.993,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
