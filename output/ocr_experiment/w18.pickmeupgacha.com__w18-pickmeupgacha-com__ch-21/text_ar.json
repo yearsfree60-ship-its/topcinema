@@ -1,0 +1,562 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "21",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "REASON TO FIGHT?",
+          "confidence": 0.98,
+          "text_ar": "هل لديك سبب للقتال؟"
+        },
+        {
+          "text": "IF YOU DON'T FIGHT, THEN YOU'LL END UP LIKE THOSE PEOPLE YOU JUST CONSUMED.",
+          "confidence": 0.925,
+          "text_ar": "إن لم تقاتلي، فسينتهي بكِ المطاف مثل أولئك الذين التهمتِهم للتو."
+        },
+        {
+          "text": "I'LL ASK YOU AGAIN. WHAT MAGIC CAN YOU USE?",
+          "confidence": 0.888,
+          "text_ar": "سأسألكِ مجددًا. ما هو السحر الذي يمكنكِ استخدامه؟"
+        },
+        {
+          "text": "FIRE...",
+          "confidence": 0.971,
+          "text_ar": "النار..."
+        },
+        {
+          "text": "THE HIGHEST I CAN CAST IS THIRD- CIRCLE FIRE MAGIC.",
+          "confidence": 0.952,
+          "text_ar": "أقصى ما يمكنني إلقاؤه هو سحر النار من الدائرة الثالثة."
+        },
+        {
+          "text": "I KNOW THAT YOU CAN USE FIRE MAGIC. ANYTHING ELSE?",
+          "confidence": 0.953,
+          "text_ar": "أعلم أنكِ تستخدمين سحر النار. هل هناك شيء آخر؟"
+        },
+        {
+          "text": "CAN YOU USE TELEPORTATION, OR ANY OTHER SUPPORT-TYPE MAGIC?",
+          "confidence": 0.938,
+          "text_ar": "هل يمكنكِ استخدام الانتقال الآني، أو أي نوع آخر من سحر الدعم؟"
+        },
+        {
+          "text": "SUPPORT MAGIC? THAT'S MAGIC THAT A 3-RUNA WOULD LEARN. Asking if a fire mage can use support magic, gosh.….",
+          "confidence": 0.908,
+          "text_ar": "سحر الدعم؟ هذا سحر يتعلمه من هم في الرتبة الثالثة (3-Runa). أن تسأل ساحرة نار عما إذا كانت تجيد سحر الدعم، يا إلهي..."
+        },
+        {
+          "text": "SO YOU'RE SAYING YOU 'CAN'T'.",
+          "confidence": 0.899,
+          "text_ar": "إذًا أنتِ تقولين إنكِ 'لا تستطيعين'."
+        },
+        {
+          "text": "YOU HAVE A COMPLAINT, OR SOMETHING?",
+          "confidence": 0.95,
+          "text_ar": "هل لديكِ اعتراض أو شيء ما؟"
+        },
+        {
+          "text": "YOU'RE GOING TO BE SO SURPRISED THAT YOU'LL FALL OVER AFTER SEEING MY FIRE MAGIC. Supportmagic could never compare to it",
+          "confidence": 0.908,
+          "text_ar": "ستتفاجئين لدرجة أنكِ ستسقطين أرضًا بعد رؤية سحر النار الخاص بي. سحر الدعم لا يمكنه مقارنته أبدًا."
+        },
+        {
+          "text": "IT'S A LITTLE UNFORTUNATE. D7NT",
+          "confidence": 0.649,
+          "text_ar": "هذا مؤسف قليلًا."
+        },
+        {
+          "text": "Sheineeast Sheineeds to beas skilled asshe isarrogant",
+          "confidence": 0.861,
+          "text_ar": "يجب أن تكون مهاراتها بقدر غرورها."
+        },
+        {
+          "text": "A DEFENSE SYSTEM IS MORE VERSATILE THAN AN ATTACK SYSTEM.",
+          "confidence": 0.952,
+          "text_ar": "نظام الدفاع أكثر تنوعًا من نظام الهجوم."
+        },
+        {
+          "text": "IASKEO BECAUSE, WHILE SHE DOESN'T HAVE A SKILL WINDOW,THERE'S STILL A POSSIBILITY THAT SHE'LL AWAKEN. BUT IT OOESN'T SEEM LIKE IT.",
+          "confidence": 0.923,
+          "text_ar": "سألتُ لأنها، رغم افتقارها لنافذة المهارات، لا تزال هناك احتمالية أن توقظ قدراتها. لكن لا يبدو أن ذلك سيحدث."
+        },
+        {
+          "text": "BUT STILL, A MAGE IS A MAGE.",
+          "confidence": 0.932,
+          "text_ar": "لكن مع ذلك، الساحر يظل ساحرًا."
+        },
+        {
+          "text": "FROM NOW ON,YOU NEED TO FIGHT WITH US. YOU UNDERSTAND THAT, RIGHT?",
+          "confidence": 0.918,
+          "text_ar": "من الآن فصاعدًا، عليكِ القتال معنا. أتفهمين ذلك، صحيح؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "IDO.ALTHOUGH I DON'T LIKE IT.",
+          "confidence": 0.973,
+          "text_ar": "أفهم. رغم أنني لا أحب ذلك."
+        },
+        {
+          "text": "DO YOU HAVE EXPERIENCE FIGHTING AGAINST MONSTERS?",
+          "confidence": 0.952,
+          "text_ar": "هل لديكِ خبرة في قتال الوحوش؟"
+        },
+        {
+          "text": "OF COURSE! THEY CALL ME RIVEL'S WITCH!",
+          "confidence": 0.956,
+          "text_ar": "بالطبع! إنهم يدعونني بساحرة ريفيل!"
+        },
+        {
+          "text": "DID THEY ENTER A LOWER-TIERED FLOOR FOR A TEST OEMONSTRATION?",
+          "confidence": 0.964,
+          "text_ar": "هل دخلوا طابقًا من مستوى أدنى من أجل اختبار تجريبي؟"
+        },
+        {
+          "text": "LOOKING AT EDIS' EXPRESSION, IT SEEMS LIKE RODERICK WAS STRONGER THAN SHE THOUGHT.",
+          "confidence": 0.941,
+          "text_ar": "بالنظر إلى تعابير إيديس، يبدو أن رودريك كان أقوى مما كانت تظن."
+        },
+        {
+          "text": "NOW'S OUR TURN. GET READY. KEADY.",
+          "confidence": 0.711,
+          "text_ar": "الآن دورنا. استعدوا."
+        },
+        {
+          "text": "PARTY 1 WiLL ENTER THE CRACK OF SPACE AND TiME!",
+          "confidence": 0.973,
+          "text_ar": "الفريق الأول سيدخل صدع الزمان والمكان!"
+        },
+        {
+          "text": "let's go.",
+          "confidence": 0.839,
+          "text_ar": "لننطلق."
+        },
+        {
+          "text": "PICE ME UP .",
+          "confidence": 0.154,
+          "text_ar": "احملني."
+        },
+        {
+          "text": "B2DCD",
+          "confidence": 0.55,
+          "text_ar": "..."
+        },
+        {
+          "text": "CLIMB THE TOWER AND SAVE THE WORLD! MAIN DUNGEON: 7 STAGES CONQUERED",
+          "confidence": 0.966,
+          "text_ar": "تسلق البرج وأنقذ العالم! الزنزانة الرئيسية: تم غزو 7 مراحل."
+        },
+        {
+          "text": "WE'LL PROBABLYGO FOR THE FOURTH FLOOR.",
+          "confidence": 0.962,
+          "text_ar": "على الأرجح سنتوجه إلى الطابق الرابع."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.988,
+          "text_ar": "مرفوع من: PICKMELPGACHA.COM"
+        },
+        {
+          "text": "THE STAGE ON THE NEXT FLOOR IS PROBABLY LOCKEO.",
+          "confidence": 0.951,
+          "text_ar": "المرحلة في الطابق التالي مغلقة على الأرجح."
+        },
+        {
+          "text": "IF WE WANT TO TEST HER MAGIC, THE FOURTH FLOOR WILL BE ENOUGH, AS IT HAS A MIX OF HARPIES AND GOBLINS.",
+          "confidence": 0.942,
+          "text_ar": "إذا أردنا اختبار سحرها، فالطابق الرابع سيكون كافيًا، فهو يحتوي على مزيج من الهاربيز والعفاريت."
+        },
+        {
+          "text": "WHAT I NEEO TO FINO OUT IS WHAT TYPE OF MAGE SHE IS.",
+          "confidence": 0.899,
+          "text_ar": "ما أحتاج لمعرفته هو أي نوع من السحرة هي."
+        },
+        {
+          "text": "WHEN THE FIGHTSTARTS, WE'RE GOING TO STAND DOWN.",
+          "confidence": 0.968,
+          "text_ar": "عندما يبدأ القتال، سنتراجع للوراء."
+        },
+        {
+          "text": "SINCE WE NEED TO ASSESS YOUR MAGIC ABILITIES.",
+          "confidence": 0.968,
+          "text_ar": "لأننا بحاجة لتقييم قدراتكِ السحرية."
+        },
+        {
+          "text": "WH-WHAT? WHAT AREYOU TALKING ABOUT?!",
+          "confidence": 0.918,
+          "text_ar": "مـ-ماذا؟ عما تتحدث؟!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "THE FOURTH FLOOR CAN BE CON- QUERED BY ONE OF US THREE ALONE.",
+          "confidence": 0.918,
+          "text_ar": "الطابق الرابع يمكن لأي واحد منا الثلاثة غزوه بمفرده."
+        },
+        {
+          "text": "ARE YOU PERHAPS NOT CONFIDENT BECAUSE YOUR LEVEL IS LOW?",
+          "confidence": 0.946,
+          "text_ar": "هل أنتِ غير واثقة لأن مستواكِ منخفض؟"
+        },
+        {
+          "text": "YOU SAID I'M GOING TO BE SO SURPRISED I'LL FALL OVER AFTER SEEING YOUR MAGIC.",
+          "confidence": 0.942,
+          "text_ar": "قلتِ إنني سأتفاجأ لدرجة أنني سأسقط أرضًا بعد رؤية سحركِ."
+        },
+        {
+          "text": "THAT'S TRUE, BUT I'M SPECIAL!",
+          "confidence": 0.897,
+          "text_ar": "هذا صحيح، لكنني مميزة!"
+        },
+        {
+          "text": "SPECIAL?",
+          "confidence": 0.997,
+          "text_ar": "مميزة؟"
+        },
+        {
+          "text": "A-ANYWAYS, WHEN YOU SEE IT, YOU'RE GOING TO BE SURPRISED.",
+          "confidence": 0.936,
+          "text_ar": "عـ-على أي حال، عندما ترينه، ستتفاجأ."
+        },
+        {
+          "text": "THEN, LET'S GO!",
+          "confidence": 0.964,
+          "text_ar": "إذًا، لننطلق!"
+        },
+        {
+          "text": "THE DOOR WILL OPEN AFTER TEN SECONDS. PLEASE GET READY.",
+          "confidence": 0.975,
+          "text_ar": "سيفتح الباب بعد عشر ثوانٍ. يرجى الاستعداد."
+        },
+        {
+          "text": "G-GOODLUCK, HAN!",
+          "confidence": 0.971,
+          "text_ar": "حـ-حظًا موفقًا، هان!"
+        },
+        {
+          "text": "MASTER, THIS BASTARD..!",
+          "confidence": 0.963,
+          "text_ar": "سيدي، هذا الوغد..!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "MAIN DUNGEON THE CURRENT CHALLENGE FLOOR IS THE 8TH FLOOR.",
+          "confidence": 0.947,
+          "text_ar": "الزنزانة الرئيسية، طابق التحدي الحالي هو الطابق الثامن."
+        },
+        {
+          "text": "IT'S THE EIGHTH FLOOR!EVERYONE, FOCUS ANO TAKE OUT YOUR WEAPONS!",
+          "confidence": 0.9,
+          "text_ar": "إنه الطابق الثامن! الجميع، ركزوا وأخرجوا أسلحتكم!"
+        },
+        {
+          "text": "DIDNT YOU SAY YOU WERE GOING TO STAND DOWN...2",
+          "confidence": 0.827,
+          "text_ar": "ألم تقل أننا سنتراجع؟"
+        },
+        {
+          "text": "And weren't we Going to the fourth floor?",
+          "confidence": 0.893,
+          "text_ar": "وألم نكن سنذهب للطابق الرابع؟"
+        },
+        {
+          "text": "wow.The eighth Hoor all ofa sudden?",
+          "confidence": 0.856,
+          "text_ar": "واو. الطابق الثامن فجأة؟"
+        },
+        {
+          "text": "SHUT UP!",
+          "confidence": 0.973,
+          "text_ar": "اصمتوا!"
+        },
+        {
+          "text": "HAA... WAS HE PISSED OFF ABOUT WHAT HAPPENED LAST TIME?! Being stingy about one 3-star.. eating",
+          "confidence": 0.849,
+          "text_ar": "آه... هل كان غاضبًا مما حدث في المرة الماضية؟ يتصرف ببخل بسبب نجمة واحدة..."
+        },
+        {
+          "text": "HE'S TELLING US TO GET FUCKED.",
+          "confidence": 0.972,
+          "text_ar": "إنه يخبرنا بأن نذهب للجحيم."
+        },
+        {
+          "text": "OR HE'S SAYING THAT USING THE FOURTH FLOOR ASA TESTIS BORING?",
+          "confidence": 0.935,
+          "text_ar": "أم أنه يقول إن استخدام الطابق الرابع للاختبار أمر ممل؟"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.992,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "I THINK I'VE SEEN THAT BEFORE...?",
+          "confidence": 0.915,
+          "text_ar": "أعتقد أنني رأيت هذا من قبل...؟"
+        },
+        {
+          "text": "EVERYONE, DODGE!",
+          "confidence": 0.975,
+          "text_ar": "الجميع، تفادوا الهجوم!"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.994,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "DON'T BE CLUELESS!",
+          "confidence": 0.963,
+          "text_ar": "لا تكن غافلًا!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "SHIT, TO THINK IT'S THOSE GUYS...!",
+          "confidence": 0.93,
+          "text_ar": "تبًا، أن يكون هؤلاء هم الأعداء...!"
+        },
+        {
+          "text": "FLOOR 8 MISSION TYPE - SUBJUGATION OBJECTIVE - ANNIHILATE YOUR ENEMIES GOBLIN RAIDER LV. 9 (X27)",
+          "confidence": 0.934,
+          "text_ar": "الطابق 8، نوع المهمة: إخضاع، الهدف: إبادة الأعداء، عفريت غازٍ مستوى 9 (27x)"
+        },
+        {
+          "text": "IT'S NOT JUST ONE,BUTALMOST THIRTYOF THEM!",
+          "confidence": 0.939,
+          "text_ar": "ليس واحدًا فقط، بل قرابة الثلاثين منهم!"
+        },
+        {
+          "text": "ISN'T THAT THE SAME AS A CAVALRY?!",
+          "confidence": 0.962,
+          "text_ar": "أليس هذا بمثابة سلاح فرسان؟"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELPGACHA.COM",
+          "confidence": 0.97,
+          "text_ar": "مرفوع من: PICKMELPGACHA.COM"
+        },
+        {
+          "text": "JENNA! SHOOT YOUR ARROWS!",
+          "confidence": 0.956,
+          "text_ar": "جينا! أطلقي سهامكِ!"
+        },
+        {
+          "text": "O 1 事 美",
+          "confidence": 0.092,
+          "text_ar": "..."
+        },
+        {
+          "text": "ON TOP OF THAT, THE TOPOGRAPHY IS UNEVEN.",
+          "confidence": 0.943,
+          "text_ar": "علاوة على ذلك، التضاريس غير مستوية."
+        },
+        {
+          "text": "AARON, THE MOMENT THEY COME AT US, MOVE TO THE SIDE AND ATTACK.",
+          "confidence": 0.945,
+          "text_ar": "آرون، في اللحظة التي يهاجموننا فيها، تحرك للجانب وهاجم."
+        },
+        {
+          "text": "CAN YOU DO IT?",
+          "confidence": 0.96,
+          "text_ar": "هل يمكنك فعل ذلك؟"
+        },
+        {
+          "text": "YES! I WILL TRY!",
+          "confidence": 0.931,
+          "text_ar": "نعم! سأحاول!"
+        },
+        {
+          "text": "EOLKA! YOU...!",
+          "confidence": 0.932,
+          "text_ar": "إولكا! أنتِ...!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": []
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "AARON!",
+          "confidence": 0.964,
+          "text_ar": "آرون!"
+        },
+        {
+          "text": "YES!",
+          "confidence": 0.958,
+          "text_ar": "نعم!"
+        },
+        {
+          "text": "EOLKA! CAST!",
+          "confidence": 0.979,
+          "text_ar": "إولكا! ألقِ السحر!"
+        },
+        {
+          "text": "CASTZ",
+          "confidence": 0.833,
+          "text_ar": "ألقِ السحر!"
+        },
+        {
+          "text": "DON'T MAKE ME REPEAT MYSELF!",
+          "confidence": 0.941,
+          "text_ar": "لا تجعليني أكرر كلامي!"
+        },
+        {
+          "text": "YOU SAIO YOU'RE Δ MAGE! KILL THEM ALL!",
+          "confidence": 0.903,
+          "text_ar": "قلتِ إنكِ ساحرة! اقتليهم جميعًا!"
+        },
+        {
+          "text": "I NEEO TIME!",
+          "confidence": 0.875,
+          "text_ar": "أحتاج إلى وقت!"
+        },
+        {
+          "text": "HOW LONG?",
+          "confidence": 0.97,
+          "text_ar": "كم من الوقت؟"
+        },
+        {
+          "text": "ONE MINUTE!",
+          "confidence": 0.989,
+          "text_ar": "دقيقة واحدة!"
+        },
+        {
+          "text": "JUST CAST!",
+          "confidence": 0.979,
+          "text_ar": "فقط ألقِ السحر!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "La Gran Sedus. 166业",
+          "confidence": 0.645,
+          "text_ar": "..."
+        },
+        {
+          "text": "THAT'S... MAGIC?!",
+          "confidence": 0.926,
+          "text_ar": "هل هذا... سحر؟!"
+        },
+        {
+          "text": "AARON,BLOCK THE BOLTS THAT ARE BEING SHOT AT JENNA! LET HER FOCUS ON SHOOTING!",
+          "confidence": 0.912,
+          "text_ar": "آرون، تصدَّ للسهام التي تُطلق على جينا! دعها تركز على الإطلاق!"
+        },
+        {
+          "text": "GOT IT!",
+          "confidence": 0.96,
+          "text_ar": "فهمت!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.977,
+          "text_ar": "مرفوع من: PICKMELIPGACHA.COM"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "SHIT, SO THEIR FIRST PRIORITY IS TAKING OUT THE MAGE?",
+          "confidence": 0.958,
+          "text_ar": "تبًا، هل أولويتهم الأولى هي القضاء على الساحرة؟"
+        },
+        {
+          "text": "I CAN BUY TIME, BUT BLOCKING ALL OF THEM WILL BE DIFFICULT.",
+          "confidence": 0.958,
+          "text_ar": "يمكنني كسب الوقت، لكن صدها جميعًا سيكون صعبًا."
+        },
+        {
+          "text": "I MIGHT NEED TO USE SHIELD MAGIC AND BLOCK A COUPLE BOLTS...",
+          "confidence": 0.968,
+          "text_ar": "قد أحتاج لاستخدام سحر الدرع لصد بعض السهام..."
+        },
+        {
+          "text": "EOLKA!YOU CAN HIT INCOMING SHIELOS, RIGHT?",
+          "confidence": 0.938,
+          "text_ar": "إولكا! يمكنكِ إصابة الدروع القادمة، صحيح؟"
+        },
+        {
+          "text": "ARE YOU NOT LISTENING TO ME, OR CAN YOU NOT REPLY?!",
+          "confidence": 0.897,
+          "text_ar": "هل أنتِ لا تستمعين إليّ، أم أنكِ لا تستطيعين الرد؟!"
+        },
+        {
+          "text": "IF YOU STANO THERE, YOU'LL GET CAUGHT UP IN THE ATTACK!",
+          "confidence": 0.947,
+          "text_ar": "إذا بقيتِ واقفة هناك، فستعلقين في الهجوم!"
+        },
+        {
+          "text": "NO WAY...",
+          "confidence": 0.966,
+          "text_ar": "مستحيل..."
+        },
+        {
+          "text": "FORGET ABOUT THE BARRIER,",
+          "confidence": 0.949,
+          "text_ar": "انسَ أمر الحاجز،"
+        },
+        {
+          "text": "SHE CAN'T EVEN USE MOBILE CASTING?!",
+          "confidence": 0.931,
+          "text_ar": "إنها لا تستطيع حتى استخدام الإلقاء أثناء الحركة؟!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "EOLKA RIVEL STRASHUR",
+          "confidence": 0.944,
+          "text_ar": "إولكا ريفيل ستراشور"
+        },
+        {
+          "text": "EOLKA RIVEL STRASHUR(★★★) LV.2 (EXP 0/20) CLASS: MAGICIAN STRENGTH: 7/7 INTELLIGENCE: 36/36 HP: 8/8 AGILITY: 7/7 SKILLS: INTERMEDIATE FIRE MAGIC (LV.2)",
+          "confidence": 0.928,
+          "text_ar": "إولكا ريفيل ستراشور (★★★) المستوى 2 (خبرة 0/20) الفئة: ساحرة، القوة: 7/7، الذكاء: 36/36، الصحة: 8/8، الرشاقة: 7/7، المهارات: سحر نار متوسط (مستوى 2)"
+        },
+        {
+          "text": "（C AR ATRI",
+          "confidence": 0.531,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "REDICESTUDIO",
+          "confidence": 0.798,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.985,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
