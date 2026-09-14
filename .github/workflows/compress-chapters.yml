@@ -135,6 +135,19 @@ jobs:
           pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1
           python -m playwright install --with-deps chromium
 
+      # [جديد — تفعيل DEEP_DIAGNOSTIC] patchright حزمة منفصلة تمامًا عن
+      # playwright (مساحة استيراد مختلفة: patchright.async_api لا
+      # playwright.async_api) — لا تعارض ولا استبدال لحزمة playwright
+      # المثبَّتة أعلاه، تُستخدَم فقط داخل مسبار تسريب Runtime.enable
+      # بوضع التشخيص العميق. مشروطة بـdiagnostic_mode + deep_diagnostic
+      # معًا كي لا تُثقل أي تشغيلة إنتاج عادية بوقت تثبيت/تنزيل Chromium
+      # إضافي لا تحتاجه إطلاقًا.
+      - name: تثبيت patchright (تشخيص عميق فقط)
+        if: inputs.diagnostic_mode && inputs.deep_diagnostic
+        run: |
+          pip install --quiet patchright
+          patchright install chromium
+
       # [جديد — المرحلة ١] كاش نماذج PaddleOCR بين التشغيلات — بدونه كل
       # تشغيلة (worktree/رانر جديد من الصفر) تُعيد تحميل نماذج الكشف+التعرّف
       # من الإنترنت من جديد، وهذا وقت مهدور من مهلة الـ240 دقيقة المشتركة
