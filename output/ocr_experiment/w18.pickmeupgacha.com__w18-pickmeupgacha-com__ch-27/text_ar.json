@@ -1,0 +1,592 @@
+{
+  "manga_id": "w18.pickmeupgacha.com__w18-pickmeupgacha-com",
+  "chapter_num": "27",
+  "manga_title": "Pick Me Up, Infinite Gacha",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "SO, WHAT WE NEED TO DO IS...",
+          "confidence": 0.923,
+          "text_ar": "إذًا، ما نحتاج إلى فعله هو..."
+        },
+        {
+          "text": "GO OUT THE EAST GATE AND KILL THE GOBLINS.",
+          "confidence": 0.949,
+          "text_ar": "الخروج من البوابة الشرقية وقتل الغيلان."
+        },
+        {
+          "text": "XTA",
+          "confidence": 0.308,
+          "text_ar": "توقف!"
+        },
+        {
+          "text": "WE NEED TO STOP THE DAMFROM COL- LAPSING.",
+          "confidence": 0.949,
+          "text_ar": "علينا منع السد من الانهيار."
+        },
+        {
+          "text": "THEN, THAT MEANS...!",
+          "confidence": 0.954,
+          "text_ar": "إذًا، هذا يعني...!"
+        },
+        {
+          "text": "YEAH.",
+          "confidence": 0.995,
+          "text_ar": "أجل."
+        },
+        {
+          "text": "WE'RE GOING AFTER THEIR HEADS.",
+          "confidence": 0.948,
+          "text_ar": "سنذهب لنقطف رؤوسهم."
+        },
+        {
+          "text": "PICK ME UP R .",
+          "confidence": 0.124,
+          "text_ar": "التقطني."
+        },
+        {
+          "text": "ARTWASAKBASAK(3B2S) ADAPTATION CHO WOONEH (REDICE STUDIO) ORIGINAL HERMODE",
+          "confidence": 0.947,
+          "text_ar": "الفن: واساكباساك، الاقتباس: تشو وونيه (ريديك ستودي)، الأصل: هيرمود"
+        },
+        {
+          "text": "HURRY!MOVE THE REFUGEES TO THE INNER WALL!",
+          "confidence": 0.961,
+          "text_ar": "أسرعوا! انقلوا اللاجئين إلى الجدار الداخلي!"
+        },
+        {
+          "text": "STANO IN LINE PROPERLY! DON'T CUT IN!",
+          "confidence": 0.895,
+          "text_ar": "قفوا في طابور بانتظام! لا تتجاوزوا الدور!"
+        },
+        {
+          "text": "GO IN ONE PERSON ATΔTIME!",
+          "confidence": 0.884,
+          "text_ar": "ادخلوا شخصًا تلو الآخر!"
+        },
+        {
+          "text": "I JUST BARELY GOT PAST.",
+          "confidence": 0.963,
+          "text_ar": "لقد بالكاد تمكنت من العبور."
+        },
+        {
+          "text": "Fnt",
+          "confidence": 0.283,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "WE ONLY MADE IT THROUGH THE GATE OF THE INNER WALL. THE REAL DEAL IS IN FRONT OFUS. OF DS.",
+          "confidence": 0.862,
+          "text_ar": "لقد عبرنا بوابة الجدار الداخلي فقط. المعركة الحقيقية أمامنا مباشرة."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "THAT'S THE GATE THAT LEADS OUTSIDE.",
+          "confidence": 0.988,
+          "text_ar": "تلك هي البوابة التي تؤدي إلى الخارج."
+        },
+        {
+          "text": "JENNA, GO ON TOP OF THE WALL AND CHECK THE SITUATION OUTSIDE!",
+          "confidence": 0.923,
+          "text_ar": "جينا، اصعدي فوق الجدار وافحصي الوضع في الخارج!"
+        },
+        {
+          "text": "YES, SIR!",
+          "confidence": 0.919,
+          "text_ar": "علم، سيدي!"
+        },
+        {
+          "text": "AARON, GET READY TO OPEN THE GATE!",
+          "confidence": 0.882,
+          "text_ar": "آرون، استعد لفتح البوابة!"
+        },
+        {
+          "text": "YES!",
+          "confidence": 0.983,
+          "text_ar": "حاضر!"
+        },
+        {
+          "text": "EOLKA, YOU CAST!",
+          "confidence": 0.925,
+          "text_ar": "إولكا، ابدئي بالتعويذ!"
+        },
+        {
+          "text": "AS SOON AS THE GATE OPENS, USE STAGE TWO FLAMES!",
+          "confidence": 0.93,
+          "text_ar": "بمجرد أن تفتح البوابة، استخدمي المرحلة الثانية من النيران!"
+        },
+        {
+          "text": "UNDERSTOOO!",
+          "confidence": 0.898,
+          "text_ar": "مفهوووم!"
+        },
+        {
+          "text": "HE'S HERE TOO.",
+          "confidence": 0.941,
+          "text_ar": "إنه هنا أيضًا."
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.972,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "AARON,PULL THE PULLEY THAT OPENS THE GATE.",
+          "confidence": 0.97,
+          "text_ar": "آرون، اسحب البكرة التي تفتح البوابة."
+        },
+        {
+          "text": "WH-WHAT? THE GATE'S OPENING!",
+          "confidence": 0.98,
+          "text_ar": "مـ-ماذا؟ البوابة تفتح!"
+        },
+        {
+          "text": "WHAT?! WHY? DIO THE GOBLINS INFILTRATE?",
+          "confidence": 0.93,
+          "text_ar": "ماذا؟! لماذا؟ هل تسلل الغيلان إلى الداخل؟"
+        },
+        {
+          "text": "XXX NO! IT'S OPENING BY ITSELF!",
+          "confidence": 0.551,
+          "text_ar": "لا! إنها تفتح من تلقاء نفسها!"
+        },
+        {
+          "text": "IT'S TURNING ON ITS OWN!",
+          "confidence": 0.939,
+          "text_ar": "إنها تدور وحدها!"
+        },
+        {
+          "text": "WHAT'S THAT SOUNO?! STOO IT RIGHT NOW!",
+          "confidence": 0.909,
+          "text_ar": "ما هذا الصوت؟! أوقفوها فورًا!"
+        },
+        {
+          "text": "HAN,THERE ARE △LRE△OY SO MANY GOBLINS GATHERED RIGHT OUTSIOE THE GATE.",
+          "confidence": 0.775,
+          "text_ar": "هان، هناك الكثير من الغيلان متجمعة بالفعل خارج البوابة مباشرة."
+        },
+        {
+          "text": "WILL THEY MOB US ALL ΔTONCE IF THE GATE OPENS?",
+          "confidence": 0.817,
+          "text_ar": "هل سيهجمون علينا جميعًا دفعة واحدة إذا فتحت البوابة؟"
+        },
+        {
+          "text": "IT OOESN'T MATTER, GET OOWN, NOW!",
+          "confidence": 0.868,
+          "text_ar": "لا يهم، انبطحوا، الآن!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "EOLKA WILL OPEN UP △ PATH FOR US WITH MAGIC!",
+          "confidence": 0.925,
+          "text_ar": "إولكا ستفتح لنا طريقًا بالسحر!"
+        },
+        {
+          "text": "WE'RE GOING TO STOP THE SOLOIERS FROM INTERFERING!",
+          "confidence": 0.955,
+          "text_ar": "سنمنع الجنود من التدخل!"
+        },
+        {
+          "text": "WHAT'S HAPPENING?! DIO AN EVIL SPIRIT INVAOE?!",
+          "confidence": 0.912,
+          "text_ar": "ما الذي يحدث؟! هل غزتنا روح شريرة؟!"
+        },
+        {
+          "text": "STOP IT! PUT YOUR LIVES ON THE LINE AND STOP IT!!",
+          "confidence": 0.922,
+          "text_ar": "توقفوا! خاطروا بحياتكم وأوقفوها!!"
+        },
+        {
+          "text": "HIYAH.",
+          "confidence": 0.994,
+          "text_ar": "هيا."
+        },
+        {
+          "text": "HEOK!",
+          "confidence": 0.991,
+          "text_ar": "أخ!"
+        },
+        {
+          "text": "ACKKK!",
+          "confidence": 0.986,
+          "text_ar": "آه!"
+        },
+        {
+          "text": "La Gran Integio. Hl小公",
+          "confidence": 0.227,
+          "text_ar": "لا غران إنتيجيو."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "Sre",
+          "confidence": 0.22,
+          "text_ar": "صرير"
+        },
+        {
+          "text": "KIEEK!",
+          "confidence": 0.988,
+          "text_ar": "كياك!"
+        },
+        {
+          "text": "I-ISITA GHOST?! WHERE IS THIS BAS- TARO?!",
+          "confidence": 0.905,
+          "text_ar": "هـ-هل هذا شبح؟! أين هذا اللقيط؟!"
+        },
+        {
+          "text": "I WON'T LET YOU HAVE YOUR... Keok!",
+          "confidence": 0.931,
+          "text_ar": "لن أدعك تأخذ... أخ!"
+        },
+        {
+          "text": "..DID THE GODDESS ABANDON USE!",
+          "confidence": 0.744,
+          "text_ar": "..هل تخلت عنا الآلهة؟!"
+        },
+        {
+          "text": "RAIN.",
+          "confidence": 0.98,
+          "text_ar": "مطر."
+        },
+        {
+          "text": "THE RAIN WON'T STOP HER FLAMES, RIGHT?",
+          "confidence": 0.916,
+          "text_ar": "المطر لن يطفئ نيرانها، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "FLY AWAY!",
+          "confidence": 0.926,
+          "text_ar": "طيري بعيدًا!"
+        },
+        {
+          "text": "Ianite! /",
+          "confidence": 0.908,
+          "text_ar": "إيانيت!"
+        },
+        {
+          "text": "DON'T BLOW UP THE GATE!",
+          "confidence": 0.955,
+          "text_ar": "لا تفجروا البوابة!"
+        },
+        {
+          "text": "MAKE IT EXPLODE OUTSIDE!",
+          "confidence": 0.945,
+          "text_ar": "اجعلوها تنفجر في الخارج!"
+        },
+        {
+          "text": "Burn!",
+          "confidence": 0.981,
+          "text_ar": "احترقي!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "#ANIN 心",
+          "confidence": 0.506,
+          "text_ar": "هاني"
+        },
+        {
+          "text": "JENNA, AARON!",
+          "confidence": 0.973,
+          "text_ar": "جينا، آرون!"
+        },
+        {
+          "text": "YES SIR! I'LL BE GOING AHEAO!",
+          "confidence": 0.822,
+          "text_ar": "علم سيدي! سأسبقكم!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.977,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "PHEW...",
+          "confidence": 0.932,
+          "text_ar": "أوه..."
+        },
+        {
+          "text": "DRINK ONE EACH TIME YOU USE IT.",
+          "confidence": 0.944,
+          "text_ar": "اشرب واحدة في كل مرة تستخدمها."
+        },
+        {
+          "text": "I KNOW!",
+          "confidence": 0.962,
+          "text_ar": "أعلم!"
+        },
+        {
+          "text": "WE'VE BARELY STARTED. CAN YOU DO IT?",
+          "confidence": 0.92,
+          "text_ar": "لقد بدأنا للتو. هل يمكنك فعلها؟"
+        },
+        {
+          "text": "I CAN. WHO DO YOU TAKE ME FOR?!",
+          "confidence": 0.933,
+          "text_ar": "أستطيع. بمن تظنني؟!"
+        },
+        {
+          "text": "I CAN USE IT Δ HUNOREO TIMES MORE!",
+          "confidence": 0.809,
+          "text_ar": "يمكنني استخدامها مئة مرة أخرى!"
+        },
+        {
+          "text": "HEY.",
+          "confidence": 0.954,
+          "text_ar": "مهلاً."
+        },
+        {
+          "text": "YESE YES!",
+          "confidence": 0.911,
+          "text_ar": "نعم، نعم!"
+        },
+        {
+          "text": "ARE YOU STILL PLANNING ON FOLLOWING US?",
+          "confidence": 0.913,
+          "text_ar": "هل لا تزال تخطط لاتباعنا؟"
+        },
+        {
+          "text": "TL/N:WHY HISNOSELIKETHATPINOCCHIO PR/N: STOP BULLYING HIM CLARA",
+          "confidence": 0.95,
+          "text_ar": "توقفوا عن مضايقته."
+        },
+        {
+          "text": "SHURN (★) ISSCARED! ALL STATS HAVE BEEN DECREASED BY 30%.",
+          "confidence": 0.863,
+          "text_ar": "شورن خائف! انخفضت جميع إحصائياته بنسبة 30%."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "GO TO EDIS. SHE'LL TELL YOU WHAT TO DO.",
+          "confidence": 0.971,
+          "text_ar": "اذهب إلى إيديس. ستخبرك بما يجب عليك فعله."
+        },
+        {
+          "text": "IF YOU'RE STILL ALIVE AFTER THE FIGHT, I'LL AC- KNOWLEDGE YOU.",
+          "confidence": 0.937,
+          "text_ar": "إذا كنت لا تزال على قيد الحياة بعد القتال، فسأعترف بك."
+        },
+        {
+          "text": "I-I UNOERSTANO. ACK!",
+          "confidence": 0.879,
+          "text_ar": "أ-أفهم ذلك. أخ!"
+        },
+        {
+          "text": "THE GATE'S CLOSING AGAIN.",
+          "confidence": 0.987,
+          "text_ar": "البوابة تغلق مجددًا."
+        },
+        {
+          "text": "M0 ON",
+          "confidence": 0.25,
+          "text_ar": "استمر"
+        },
+        {
+          "text": "IF YOU'RE GOING TO CLOSE IT,CLOSE IT QUICKLY.",
+          "confidence": 0.911,
+          "text_ar": "إذا كنت ستغلقها، فأغلقها بسرعة."
+        },
+        {
+          "text": "THE ESCAPE ROUTE IS BLOCKEO.",
+          "confidence": 0.954,
+          "text_ar": "طريق الهروب مسدود."
+        },
+        {
+          "text": "THE ONLY WAY NOW IS FORWARO.",
+          "confidence": 0.961,
+          "text_ar": "الطريق الوحيد الآن هو المضي قدمًا."
+        },
+        {
+          "text": "I'll Kill you all!",
+          "confidence": 0.906,
+          "text_ar": "سأقتلكم جميعًا!"
+        },
+        {
+          "text": "EVERYONE, TO YOUR POSiTIOnS!",
+          "confidence": 0.761,
+          "text_ar": "الجميع، إلى مواقعكم!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "EOLKA, STAGE ONE.",
+          "confidence": 0.992,
+          "text_ar": "إولكا، المرحلة الأولى."
+        },
+        {
+          "text": "IT'S FINE IF YOUR FIREPOWER IS WEAK. TRY TO SPREAD YOUR FLAMES AND COVER AS MANY AREAS AS YOU CAN.",
+          "confidence": 0.934,
+          "text_ar": "لا بأس إن كانت قوتك النارية ضعيفة. حاولي نشر نيرانك وتغطية أكبر قدر ممكن من المناطق."
+        },
+        {
+          "text": "OKAY.",
+          "confidence": 0.993,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "THE RAIN IS GETTING HEAVIER!",
+          "confidence": 0.974,
+          "text_ar": "المطر يزداد غزارة!"
+        },
+        {
+          "text": "THE GOBLINS WILL PASS THROUGH THE FIRE ANO ATTACK US!",
+          "confidence": 0.882,
+          "text_ar": "سيعبر الغيلان عبر النار ويهاجموننا!"
+        },
+        {
+          "text": "TWENTY SECONDS LEFT UNTIL EOLKA CASTS!",
+          "confidence": 0.987,
+          "text_ar": "بقي عشرون ثانية حتى تبدأ إولكا بالتعويذ!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "THEY'RE LOCKING ONTO EOLKA!",
+          "confidence": 0.958,
+          "text_ar": "إنهم يركزون هجومهم على إولكا!"
+        },
+        {
+          "text": "CHANGE POSITIONS!",
+          "confidence": 0.988,
+          "text_ar": "غيروا مواقعكم!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "RUN THROUGH!",
+          "confidence": 0.99,
+          "text_ar": "اركضوا عبرها!"
+        },
+        {
+          "text": "UPLOADED FROM: PICKMELIPGACHA.COM",
+          "confidence": 0.967,
+          "text_ar": "تم الرفع بواسطة: PICKMELIPGACHA.COM"
+        },
+        {
+          "text": "ALTHOUGH THE HEAT WAS PASSING THROUGH THE LEATHER ARMOR,",
+          "confidence": 0.973,
+          "text_ar": "على الرغم من أن الحرارة كانت تتسرب عبر الدروع الجلدية،"
+        },
+        {
+          "text": "IT WAS SOMEWHAT BEARABLE.",
+          "confidence": 0.972,
+          "text_ar": "إلا أنها كانت محتملة نوعًا ما."
+        },
+        {
+          "text": "WE'RE LUCKY TO HAVE EOLKA JOIN OUR PARTY.",
+          "confidence": 0.969,
+          "text_ar": "نحن محظوظون بانضمام إولكا إلى فريقنا."
+        },
+        {
+          "text": "BUT FOR IT TO RAIN...",
+          "confidence": 0.966,
+          "text_ar": "لكن أن تمطر..."
+        },
+        {
+          "text": "EOLKA, CAST AGAIN!",
+          "confidence": 0.899,
+          "text_ar": "إولكا، عاودي التعويذ!"
+        },
+        {
+          "text": "BECAUSE OF THE RAIN, THE FIRE BARRICADE IS EXTIN- GUISHING RAPIDLY!",
+          "confidence": 0.978,
+          "text_ar": "بسبب المطر، الحاجز الناري ينطفئ بسرعة!"
+        },
+        {
+          "text": "AARON, SUPPORT OUR RIGHT FLANK!",
+          "confidence": 0.926,
+          "text_ar": "آرون، ادعم جناحنا الأيمن!"
+        },
+        {
+          "text": "LEAVE THIS TO ME!",
+          "confidence": 0.973,
+          "text_ar": "اترك هذا لي!"
+        },
+        {
+          "text": "ANOTHER TWENTY SEC- ONDS!",
+          "confidence": 0.945,
+          "text_ar": "عشرون ثانية أخرى!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "CHANGE POSITIONS!",
+          "confidence": 0.986,
+          "text_ar": "غيروا مواقعكم!"
+        },
+        {
+          "text": "MOVE FORWARO WHILE USING THE FIRE △S△ SHIELO!",
+          "confidence": 0.881,
+          "text_ar": "تقدموا للأمام مع استخدام النار كدرع!"
+        },
+        {
+          "text": "WE'LL CONTINUE ON LIKE THIS UNTIL WE REACH THE RIVER!",
+          "confidence": 0.938,
+          "text_ar": "سنستمر على هذا المنوال حتى نصل إلى النهر!"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "C A ATRⅠ",
+          "confidence": 0.536,
+          "text_ar": "أتري"
+        },
+        {
+          "text": "[ REDICE STUDIO",
+          "confidence": 0.469,
+          "text_ar": "ريديك ستودي"
+        },
+        {
+          "text": "atri@atri-inc.me",
+          "confidence": 0.979,
+          "text_ar": "atri@atri-inc.me"
+        }
+      ]
+    }
+  ]
+}
