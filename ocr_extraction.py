@@ -1504,6 +1504,11 @@ async def run_retranslate_mode(chapter_urls: list[str]) -> None:
     skipped_no_ocr: list[str] = []
     succeeded = 0
     files_written: list[Path] = []
+    # [جديد — رابط خاص بهذه التشغيلة] بنفس شكل succeeded_meta بمسار OCR
+    # تمامًا (راجع _ocr_http_consumer أعلاه) — {index, manga_id, chapter_num,
+    # manga_title} لكل فصل تُرجم بنجاح فعليًا بهذه التشغيلة تحديدًا (فوريًا
+    # أو عبر المحاولة الأخيرة أدناه)، تُستخدَم لبناء اسم/محتوى zip وصفي.
+    succeeded_meta: list[dict] = []
 
     for i, url in enumerate(urls, start=1):
         manga_id, chapter_num = manga_slug_from_url(url)
@@ -1526,6 +1531,10 @@ async def run_retranslate_mode(chapter_urls: list[str]) -> None:
         if files:
             succeeded += 1
             files_written.extend(files)
+            succeeded_meta.append({
+                "index": i, "manga_id": manga_id, "chapter_num": chapter_num,
+                "manga_title": chapter_result.get("manga_title"),
+            })
             if GIT_COMMIT_DIR:
                 ok, msg = await asyncio.to_thread(
                     _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
@@ -1533,11 +1542,19 @@ async def run_retranslate_mode(chapter_urls: list[str]) -> None:
                 )
                 print(f"  {'✅' if ok else '⚠️'} دفع: {msg}")
         else:
-            pending.append({"chapter_result": chapter_result, "out_dir": out_dir})
+            pending.append({"chapter_result": chapter_result, "out_dir": out_dir, "index": i})
 
     still_failed, retry_files = await _final_retry_translations(pending)
     files_written.extend(retry_files)
     succeeded += len(pending) - len(still_failed)
+    still_failed_ids = {id(it) for it in still_failed}
+    for it in pending:
+        if id(it) not in still_failed_ids:
+            cr = it["chapter_result"]
+            succeeded_meta.append({
+                "index": it["index"], "manga_id": cr["manga_id"], "chapter_num": cr["chapter_num"],
+                "manga_title": cr.get("manga_title"),
+            })
 
     # [قرار المستخدم — استبدال كامل] إعادة بناء failed_translations.txt من
     # الصفر بما بقي فاشلًا فعليًا الآن فقط (سواء أتى من الملف القديم أو
@@ -1551,7 +1568,6 @@ async def run_retranslate_mode(chapter_urls: list[str]) -> None:
             for it in still_failed
         ]
         fail_path.write_text("\n".join(fail_lines) + "\n", encoding="utf-8")
-        files_written.append(fail_path)
         fail_file_changed = True
         print(f"  ❌ {len(still_failed)} فصل بقي بلا ترجمة حتى بعد المحاولة الأخيرة — {fail_path.name} أُعيد بناؤه بهذه القائمة فقط")
     elif fail_path.exists():
@@ -1566,6 +1582,67 @@ async def run_retranslate_mode(chapter_urls: list[str]) -> None:
         )
         print(f"  {'✅' if ok else '⚠️'} دفع تحديث القائمة: {msg}")
 
+    # [جديد — رابط خاص بهذه التشغيلة، بنفس نمط zip وضع تجربة OCR حرفيًا]
+    # بدل الاكتفاء بملف failed_translations.txt المشترك بين كل التشغيلات
+    # (لا يمثّل "نتائج هذه التشغيلة" وحدها)، يُبنى هنا أرشيف zip مستقل يحوي
+    # فقط text_ar.json/.txt للفصول التي تُرجمت فعليًا بهذه التشغيلة تحديدًا
+    # (+ failed_translations.txt الحالي إن وُجد، للمرجعية). بادئة "retranslate-"
+    # تميّزه بصريًا داخل نفس مجلد ocr_experiment/runs/ عن أرشيفات وضع تجربة
+    # OCR، وRUN_ID كلاحقة ثابتة (نفس منطق OCR تمامًا) يمنع أي تصادم اسم عبر
+    # تشغيلات متعددة متراكمة بنفس المجلد بصرف النظر عن الاسم الوصفي.
+    descriptive_zip_stem = None
+    try:
+        if succeeded_meta:
+            zip_title = MANGA_TITLE_OVERRIDE or (
+                min(succeeded_meta, key=lambda m: m["index"]).get("manga_title") or ""
+            )
+            if zip_title:
+                def _chapter_sort_key(n: str):
+                    try:
+                        return (0, float(n))
+                    except (TypeError, ValueError):
+                        return (1, n)
+
+                chapter_nums = sorted({m["chapter_num"] for m in succeeded_meta}, key=_chapter_sort_key)
+                candidate = _sanitize_filename(f"{zip_title} - ch {','.join(chapter_nums)}")
+                if candidate:
+                    descriptive_zip_stem = candidate
+    except Exception as e:
+        print(f"⚠️ تعذّر بناء اسم وصفي لأرشيف zip — الرجوع للتسمية الافتراضية retranslate-run-{RUN_ID}: {e}")
+        descriptive_zip_stem = None
+
+    zip_stem = f"retranslate-{descriptive_zip_stem}__run-{RUN_ID}" if descriptive_zip_stem else f"retranslate-run-{RUN_ID}"
+    if descriptive_zip_stem:
+        print(f"🏷️ اسم أرشيف zip الوصفي: {zip_stem}.zip")
+    run_zip_relpath = f"ocr_experiment/runs/{zip_stem}.zip"
+    run_zip_path = OUTPUT_DIR / run_zip_relpath
+    run_zip_path.parent.mkdir(parents=True, exist_ok=True)
+    zip_files = list(files_written)
+    if fail_path.exists() and fail_path not in zip_files:
+        zip_files.append(fail_path)
+    zip_ok, zipped_count = True, 0
+    if zip_files:
+        try:
+            with zipfile.ZipFile(run_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+                for fp in zip_files:
+                    if fp.is_file():
+                        zf.write(fp, arcname=fp.relative_to(ocr_dir))
+                        zipped_count += 1
+        except Exception as e:
+            zip_ok = False
+            print(f"⚠️ تعذّر إنشاء zip إعادة الترجمة: {e}")
+    else:
+        zip_ok = False  # لا ملفات إطلاقًا (كل الروابط تخطّت/فشلت) — لا فائدة من zip فارغ
+
+    if zip_ok:
+        print(f"🗜️ أُنشئ أرشيف zip خاص بهذه التشغيلة فقط ({zipped_count} ملف): {run_zip_relpath}")
+        if GIT_COMMIT_DIR:
+            ok, msg = await asyncio.to_thread(
+                _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                f"إعادة ترجمة: أرشيف تشغيلة {RUN_ID}", ["ocr_experiment"],
+            )
+            print(f"  {'✅' if ok else '⚠️'} دفع أرشيف التشغيلة: {msg}")
+
     print("\n" + "=" * 50)
     summary = f"✅ انتهى وضع إعادة الترجمة: {succeeded}/{total} فصل تُرجم بنجاح"
     if still_failed:
@@ -1573,5 +1650,7 @@ async def run_retranslate_mode(chapter_urls: list[str]) -> None:
     if skipped_no_ocr:
         summary += f"، {len(skipped_no_ocr)} تخطّي (بلا text_en.json مسبق)"
     print(summary)
+    if zip_ok:
+        print(f"🔗 أرشيف zip خاص بهذه التشغيلة فقط: {OUTPUT_DIR}/{run_zip_relpath}")
     print(f"📁 النتائج محليًا في: {ocr_dir}")
     print("=" * 50)
