@@ -71,17 +71,33 @@ _FILENAME_FORBIDDEN_CHARS_RE = re.compile(r'[\\/:*?"<>|]')
 _FILENAME_MAX_LEN = 120
 
 
-async def _translate_chapter_if_enabled(chapter_result: dict, out_dir: Path) -> list[Path]:
+async def _translate_chapter_if_enabled(
+    chapter_result: dict, out_dir: Path, failed_translations: list[dict] | None = None
+) -> list[Path]:
     """[جديد — ترجمة سياقية EN→AR] يستدعي وحدة translate_to_arabic.py
     (استيراد مؤجَّل lazy — بنفس نمط استيراد paddleocr هنا، كي لا تُثقل أي
     تشغيلة لا تفعّل الترجمة بزمن استيراد/فشل استيراد غير ضروري لو الحزمة
     google-genai غير مثبَّتة لسببٍ ما). فشل الاستيراد نفسه أو أي خطأ غير
     متوقَّع بالترجمة يُعامَل بنفس فلسفة عزل الأخطاء المتّبعة بباقي هذا الملف:
     تحذير واحد يُطبَع، الفصل يبقى ناجحًا بنصه الإنجليزي فقط، لا استثناء يصعد
-    للمستدعي (فشل الترجمة لا يُسقط الفصل ولا التشغيلة كاملة أبدًا)."""
+    للمستدعي (فشل الترجمة لا يُسقط الفصل ولا التشغيلة كاملة أبدًا).
+
+    [جديد — بعد بحث فعلي بخطأ 503 "high demand"، راجع تبريره الكامل
+    بـtranslate_to_arabic.py] لو failed_translations مُمرَّرة (غير None) وفشلت
+    الترجمة فعليًا (لا "معطّلة أصلًا") مع وجود جمل فعلية بالفصل، يُضاف الفصل
+    لطابور إعادة المحاولة النهائي بنهاية كامل التشغيلة — عندها يكون قد مرّ
+    عادةً دقائق فعلية (زمن معالجة بقية الفصول)، وهو بالضبط ما تحتاجه ذروة
+    ازدحام مؤقَّتة موثَّقة رسميًا لتنقضي. الاستدعاء الثاني (بالطابور النهائي
+    نفسه) يمرّر None كي لا يُعاد فصل فشل بعد إعادة المحاولة النهائية لطابور
+    لا وجود له أصلًا حينها."""
     try:
-        from translate_to_arabic import translate_chapter_to_arabic
-        return await translate_chapter_to_arabic(chapter_result, OUTPUT_DIR, out_dir)
+        from translate_to_arabic import translate_chapter_to_arabic, translation_active
+        files = await translate_chapter_to_arabic(chapter_result, OUTPUT_DIR, out_dir)
+        if not files and failed_translations is not None and translation_active():
+            pages = chapter_result.get("pages") or []
+            if any(p.get("sentences") for p in pages):
+                failed_translations.append({"chapter_result": chapter_result, "out_dir": out_dir})
+        return files
     except Exception as e:
         print(f"  ⚠️ [ترجمة] تعذّر تشغيل وحدة الترجمة لهذا الفصل: {e}")
         return []
@@ -983,7 +999,7 @@ async def _ocr_http_chapter_producer(
 
 async def _ocr_http_consumer(
     queue: asyncio.Queue, total_chapters: int, chapter_urls: list[str],
-    ocr_dir: "Path", stop_event: asyncio.Event,
+    ocr_dir: "Path", stop_event: asyncio.Event, failed_translations: list[dict],
 ) -> tuple[list["Path"], list[str], int, list[dict]]:
     """[جديد — بند (1)، مسار HTTP] المستهلك الوحيد المشترك بين كل الفصول —
     يسحب أي عنصر جاهز فور توفره بصرف النظر عن الفصل الذي جاء منه، ويُشغِّل
@@ -1042,7 +1058,7 @@ async def _ocr_http_consumer(
             # بترويسة translate_to_arabic.py)، قبل الدفع كي تُدفَع ملفات
             # text_ar.* بنفس commit فصل الـOCR الإنجليزي — allowed_paths
             # الحالي (["ocr_experiment"]) يغطيها بلا أي تعديل إضافي.
-            files_written.extend(await _translate_chapter_if_enabled(chapter_result, out_dir))
+            files_written.extend(await _translate_chapter_if_enabled(chapter_result, out_dir, failed_translations))
             success_count += 1
             succeeded_meta.append({
                 "index": idx,
@@ -1116,6 +1132,50 @@ async def _ocr_http_consumer(
     return files_written, skipped_urls, success_count, succeeded_meta
 
 
+async def _final_retry_translations(pending: list[dict]) -> tuple[list[dict], list["Path"]]:
+    """[مُستخرَجة كدالة مشتركة] نفس آلية إعادة المحاولة الهجينة بالضبط (فشل
+    سريع داخل _call_gemini_with_retry بـtranslate_to_arabic.py، ثم انتظار
+    GEMINI_FINAL_RETRY_DELAY_SEC، ثم محاولة أخيرة واحدة لكل فصل) — تُستخدَم
+    بمسارين: نهاية تشغيلة OCR عادية (run_ocr_experiment_mode أدناه) ووضع
+    إعادة الترجمة المستقل (run_retranslate_mode). راجع التبرير الكامل
+    (503 "high demand" مؤقَّت بطرف Gemini) بترويسة translate_to_arabic.py.
+
+    pending: قائمة {"chapter_result": dict, "out_dir": Path} — نفس شكل
+    failed_translations بالضبط. يُعيد (still_failed, files_written):
+    still_failed بنفس الشكل للعناصر التي فشلت حتى بعد هذه المحاولة الأخيرة،
+    files_written مسارات text_ar.json/.txt لكل ما نجح هنا فعليًا."""
+    if not pending:
+        return [], []
+    delay = int(os.environ.get("GEMINI_FINAL_RETRY_DELAY_SEC", "45"))
+    print(
+        f"🔁 [ترجمة] {len(pending)} فصل فشلت ترجمته (غالبًا ازدحام مؤقَّت بطرف "
+        "Gemini نفسه — لا خطأ بهذا المشروع ولا بمفتاحك) — انتظار "
+        f"{delay}ث ثم محاولة أخيرة واحدة لكل فصل"
+    )
+    await asyncio.sleep(delay)
+    still_failed: list[dict] = []
+    files_written: list[Path] = []
+    for item in pending:
+        cr, od = item["chapter_result"], item["out_dir"]
+        # failed_translations=None هنا عمدًا: لا طابور "ثالث" — لو فشلت هذه
+        # المحاولة الأخيرة أيضًا، الفصل يُسجَّل مباشرة لدى المستدعي كفشل
+        # نهائي، لا حلقة إعادة محاولة تتكرر إلى ما لا نهاية.
+        retried_files = await _translate_chapter_if_enabled(cr, od, None)
+        if retried_files:
+            files_written.extend(retried_files)
+            if GIT_COMMIT_DIR:
+                ok, msg = await asyncio.to_thread(
+                    _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                    f"ترجمة متأخرة نجحت: {cr['manga_id']} - الفصل {cr['chapter_num']}", ["ocr_experiment"],
+                )
+                print(f"  {'✅' if ok else '⚠️'} دفع ترجمة متأخرة ({cr['chapter_num']}): {msg}")
+        else:
+            still_failed.append(item)
+    if not still_failed:
+        print("  ✅ [ترجمة] نجحت المحاولة الأخيرة لكل الفصول التي فشلت")
+    return still_failed, files_written
+
+
 async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     """[مُعدَّلة — بند (3)] الفرق الجوهري عن سابقًا: الكتابة/الدفع لكل فصل
     تحدث فورًا عند اكتماله (داخل _ocr_http_consumer لمسار HTTP، أو مباشرة
@@ -1146,6 +1206,11 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     # أدناه لتسمية أرشيف zip بعنوان "أول مانهوا" الصحيح (حسب ترتيب الدخول
     # لا ترتيب انتهاء المعالجة، مهم خصوصًا بمسار HTTP المتوازي).
     succeeded_meta: list[dict] = []
+    # [جديد — ترجمة] فصول نجح OCR بها لكن فشلت ترجمتها العربية فعليًا (503
+    # "high demand" غالبًا — راجع تبرير كامل بترويسة translate_to_arabic.py
+    # وبـ_translate_chapter_if_enabled أعلاه) رغم كون الترجمة مفعّلة وسليمة
+    # الإعداد؛ تُعاد محاولتها مرة أخيرة بعد اكتمال كل الفصول الأخرى أدناه.
+    failed_translations: list[dict] = []
 
     try:
         if fetch_mode == "http":
@@ -1167,7 +1232,7 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                 for i, url in enumerate(chapter_urls, start=1)
             ]
             consumer_task = asyncio.create_task(
-                _ocr_http_consumer(queue, total, chapter_urls, ocr_dir, stop_event)
+                _ocr_http_consumer(queue, total, chapter_urls, ocr_dir, stop_event, failed_translations)
             )
             await asyncio.gather(*producer_tasks)
             files_written, skipped_urls, success_count, succeeded_meta = await consumer_task
@@ -1192,7 +1257,7 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
                         json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
                         files_written += [txt_path, json_path]
                         # [جديد — ترجمة] راجع نفس الملاحظة بـ_ocr_http_consumer أعلاه
-                        files_written += await _translate_chapter_if_enabled(r, out_dir)
+                        files_written += await _translate_chapter_if_enabled(r, out_dir, failed_translations)
                         success_count += 1
                         succeeded_meta.append({
                             "index": i,
@@ -1223,6 +1288,45 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         # تبقى (zip/دفع git احتياطي/remaining_urls) لا علاقة له بمحرك OCR.
         # finally يضمن الإغلاق حتى لو استُثنِي خطأ غير متوقَّع.
         _shutdown_ocr_thread()
+
+    # [جديد — ترجمة، بعد بحث فعلي بخطأ 503 "high demand" — راجع التبرير
+    # الكامل بترويسة translate_to_arabic.py] فصول فشلت ترجمتها العربية
+    # فعليًا أثناء التشغيلة (لا "معطّلة أصلًا") تُعاد لمحاولة أخيرة هنا، بعد
+    # اكتمال كل الفصول الأخرى تمامًا — بحلول هذه اللحظة عادةً تكون قد مرّت
+    # دقائق فعلية (زمن معالجة بقية الفصول)، وهذا بالضبط ما تحتاجه "ذروة
+    # الطلب المؤقتة" الموثَّقة رسميًا بتوثيق Gemini لتنقضي (خلافًا لإعادة
+    # محاولة فورية خلال ثوانٍ قليلة داخل translate_to_arabic.py نفسها، غير
+    # كافية غالبًا لنفس النافذة الزمنية كما رُصد فعليًا بتشغيلة حقيقية).
+    # مهلة إضافية صريحة قبل البدء (GEMINI_FINAL_RETRY_DELAY_SEC) تحديدًا
+    # لتشغيلات قصيرة جدًا (فصل أو فصلين) لا يمر بها وقت كافٍ طبيعيًا بين أول
+    # فشل واكتمال التشغيلة. هذا القسم يقع عمدًا *قبل* بناء أرشيف zip أدناه
+    # كي تُضَمَّن أي ترجمة نجحت هنا فعليًا بأرشيف هذه التشغيلة.
+    # القيمة الافتراضية هنا (بلا فصول فشلت أصلًا) تُستخدَم لاحقًا بملخص
+    # النهاية — تُستبدَل فقط لو failed_translations غير فارغة أدناه.
+    still_failed_translations, retry_files = await _final_retry_translations(failed_translations)
+    files_written.extend(retry_files)
+    if still_failed_translations:
+        fail_lines = [
+            f"{it['chapter_result']['manga_id']} - الفصل {it['chapter_result']['chapter_num']} "
+            f"— {it['chapter_result'].get('source_url', '')}"
+            for it in still_failed_translations
+        ]
+        fail_path = ocr_dir / "failed_translations.txt"
+        fail_path.write_text("\n".join(fail_lines) + "\n", encoding="utf-8")
+        files_written.append(fail_path)
+        print(
+            f"  ❌ [ترجمة] {len(still_failed_translations)} فصل بقي بلا "
+            f"ترجمة عربية حتى بعد المحاولة الأخيرة — راجع {fail_path.name} "
+            "(النص الإنجليزي محفوظ سليمًا لكل هذه الفصول بلا أي تأثير — يمكن "
+            "إعادة ترجمتها لاحقًا بوضع «إعادة_ترجمة» بلا إعادة OCR إطلاقًا)"
+        )
+        if GIT_COMMIT_DIR:
+            ok, msg = await asyncio.to_thread(
+                _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                f"ترجمة: {len(still_failed_translations)} فصل بلا ترجمة حتى بعد إعادة المحاولة النهائية",
+                ["ocr_experiment"],
+            )
+            print(f"  {'✅' if ok else '⚠️'} دفع قائمة الفصول بلا ترجمة: {msg}")
 
     # [إضافة — تسمية وصفية لأرشيف zip] بدل الاسم الثابت run-<RUN_ID> فقط،
     # نبني اسمًا يحمل اسم المانهوا وأرقام الفصول لو توفّرت بيانات كافية:
@@ -1326,6 +1430,8 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
     try:
         from translate_to_arabic import translation_active
         print(f"🌐 الترجمة العربية: {'مفعّلة' if translation_active() else 'معطّلة'} (راجع كل فصل أعلاه لتفاصيل النجاح/الفشل الفردي)")
+        if still_failed_translations:
+            print(f"  ⚠️ {len(still_failed_translations)} فصل بلا ترجمة عربية حتى بعد المحاولة الأخيرة — راجع ocr_experiment/failed_translations.txt")
     except Exception:
         pass
     if zip_ok:
@@ -1341,3 +1447,131 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         )
         print("🔁 يُتوقَّع من خطوة \"تشغيل الضغط\" بملف الـworkflow إعادة تشغيل عملية Python جديدة بهذه القائمة تلقائيًا")
         sys.exit(75)
+
+
+async def run_retranslate_mode(chapter_urls: list[str]) -> None:
+    """[جديد — وضع إعادة الترجمة فقط] لا تحميل صور ولا OCR إطلاقًا — يقرأ
+    ocr_experiment/<chapter_slug>/text_en.json المحفوظ مسبقًا بفرع output
+    (chapter_result كامل بنفس الشكل الذي يحتاجه translate_chapter_to_arabic
+    تمامًا — راجع finalize_and_push أعلاه حيث كُتب أصلًا) ويعيد ترجمته فقط.
+    مخصَّص لفصول فشلت ترجمتها العربية رغم نجاح OCR (503 "high demand" مؤقَّت
+    من Gemini غالبًا)، بلا أي حاجة لإعادة تحميل الصور أو تشغيل PaddleOCR من
+    جديد فقط لأجل الترجمة.
+
+    CHAPTER_URLS فارغة (chapter_urls == []) = اكتشاف تلقائي من
+    ocr_experiment/failed_translations.txt (نفس الصيغة التي يكتبها
+    run_ocr_experiment_mode بالضبط: "{manga_id} - الفصل {chapter_num} —
+    {source_url}" — يُستخرَج الرابط بمطابقة آخر توكن يبدأ بـhttp). روابط
+    محدَّدة يدويًا = تُترجَم وتُستبدَل ترجمتها بالكامل حتى لو نجحت سابقًا
+    (قرار صريح من المستخدم — text_ar.json/.txt يُكتَبان دومًا بلا شرط وجود
+    مسبق، راجع نهاية translate_chapter_to_arabic).
+
+    بعد الانتهاء: failed_translations.txt يُعاد بناؤه من الصفر بما تبقّى
+    فاشلًا فعليًا فقط (أو يُحذَف كليًا لو نجح الجميع) — لا تراكم قائمة قديمة
+    غير دقيقة. فصول بلا text_en.json إطلاقًا (لم تمرّ بـOCR من قبل) تُستبعَد
+    من هذا الملف تحديدًا (ليست "فشل ترجمة"، بل تحتاج تشغيلة OCR أولًا)."""
+    print("🌐 وضع إعادة الترجمة فقط — بلا تحميل صور أو OCR، قراءة text_en.json الموجود مسبقًا فقط")
+    ocr_dir = OUTPUT_DIR / "ocr_experiment"
+    ocr_dir.mkdir(parents=True, exist_ok=True)
+    fail_path = ocr_dir / "failed_translations.txt"
+
+    url_re = re.compile(r"(https?://\S+)\s*$")
+
+    if chapter_urls:
+        urls = chapter_urls
+        print(f"📋 {len(urls)} رابط محدَّد يدويًا بالمدخلات — ستُستبدَل ترجمته بالكامل حتى لو نجحت سابقًا")
+    else:
+        if not fail_path.exists():
+            print(f"⚠️ CHAPTER_URLS فارغة ولا يوجد {fail_path.name} بفرع output — لا شيء لإعادة ترجمته، إنهاء بلا خطأ")
+            return
+        urls = []
+        for line in fail_path.read_text(encoding="utf-8").splitlines():
+            m = url_re.search(line.strip())
+            if m:
+                urls.append(m.group(1))
+        if not urls:
+            print(f"⚠️ {fail_path.name} موجود لكن بلا أي رابط قابل للاستخراج بصيغته الحالية — تحقّق منه يدويًا")
+            return
+        print(f"📋 اكتُشف {len(urls)} رابط تلقائيًا من {fail_path.name}")
+
+    from translate_to_arabic import translation_active
+    if not translation_active():
+        print("❌ الترجمة معطّلة (TRANSLATE_TO_ARABIC=false أو GEMINI_API_KEY غير مضبوط بأسرار المستودع) — لا فائدة من المتابعة، إنهاء")
+        return
+
+    total = len(urls)
+    pending: list[dict] = []  # فشلت المحاولة الأولى — تدخل طابور إعادة المحاولة الأخيرة المشترك
+    skipped_no_ocr: list[str] = []
+    succeeded = 0
+    files_written: list[Path] = []
+
+    for i, url in enumerate(urls, start=1):
+        manga_id, chapter_num = manga_slug_from_url(url)
+        chapter_slug = f"{manga_id}__ch-{chapter_num}"
+        json_path = ocr_dir / chapter_slug / "text_en.json"
+        if not json_path.exists():
+            print(f"[{i}/{total}] ⚠️ {chapter_slug}: لا يوجد text_en.json بفرع output (لم يمرّ بـOCR من قبل إطلاقًا) — تخطّي")
+            skipped_no_ocr.append(url)
+            continue
+        try:
+            chapter_result = json.loads(json_path.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"[{i}/{total}] ⚠️ {chapter_slug}: تعذّرت قراءة text_en.json ({e}) — تخطّي")
+            skipped_no_ocr.append(url)
+            continue
+
+        out_dir = json_path.parent
+        print(f"[{i}/{total}] 🌐 إعادة ترجمة: {chapter_slug}")
+        files = await _translate_chapter_if_enabled(chapter_result, out_dir, None)
+        if files:
+            succeeded += 1
+            files_written.extend(files)
+            if GIT_COMMIT_DIR:
+                ok, msg = await asyncio.to_thread(
+                    _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                    f"إعادة ترجمة: {manga_id} - الفصل {chapter_num}", ["ocr_experiment"],
+                )
+                print(f"  {'✅' if ok else '⚠️'} دفع: {msg}")
+        else:
+            pending.append({"chapter_result": chapter_result, "out_dir": out_dir})
+
+    still_failed, retry_files = await _final_retry_translations(pending)
+    files_written.extend(retry_files)
+    succeeded += len(pending) - len(still_failed)
+
+    # [قرار المستخدم — استبدال كامل] إعادة بناء failed_translations.txt من
+    # الصفر بما بقي فاشلًا فعليًا الآن فقط (سواء أتى من الملف القديم أو
+    # رابط يدوي جديد فشل) — لا دمج مع محتوى قديم. skipped_no_ocr مُستبعَدة
+    # عمدًا (راجع الشرح بترويسة هذه الدالة).
+    fail_file_changed = False
+    if still_failed:
+        fail_lines = [
+            f"{it['chapter_result']['manga_id']} - الفصل {it['chapter_result']['chapter_num']} "
+            f"— {it['chapter_result'].get('source_url', '')}"
+            for it in still_failed
+        ]
+        fail_path.write_text("\n".join(fail_lines) + "\n", encoding="utf-8")
+        files_written.append(fail_path)
+        fail_file_changed = True
+        print(f"  ❌ {len(still_failed)} فصل بقي بلا ترجمة حتى بعد المحاولة الأخيرة — {fail_path.name} أُعيد بناؤه بهذه القائمة فقط")
+    elif fail_path.exists():
+        fail_path.unlink()
+        fail_file_changed = True
+        print(f"  🗑️ {fail_path.name} حُذف — كل الفصول المستهدَفة بهذه التشغيلة تُرجمت بنجاح")
+
+    if GIT_COMMIT_DIR and fail_file_changed:
+        ok, msg = await asyncio.to_thread(
+            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+            "إعادة ترجمة: تحديث failed_translations.txt", ["ocr_experiment"],
+        )
+        print(f"  {'✅' if ok else '⚠️'} دفع تحديث القائمة: {msg}")
+
+    print("\n" + "=" * 50)
+    summary = f"✅ انتهى وضع إعادة الترجمة: {succeeded}/{total} فصل تُرجم بنجاح"
+    if still_failed:
+        summary += f"، {len(still_failed)} ما زال فاشلًا"
+    if skipped_no_ocr:
+        summary += f"، {len(skipped_no_ocr)} تخطّي (بلا text_en.json مسبق)"
+    print(summary)
+    print(f"📁 النتائج محليًا في: {ocr_dir}")
+    print("=" * 50)
