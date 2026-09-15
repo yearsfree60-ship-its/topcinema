@@ -132,3 +132,14 @@ jobs:
             exit 1
           fi
           echo "✅ تم الحذف والدفع بنجاح"
+
+      # [إضافة] jsDelivr يخزّن نسخة manifest.json مؤقتًا حتى 7 أيام افتراضيًا
+      # (توثيق jsDelivr الرسمي: jsdelivr.com/tools/purge) — بدون هذه الخطوة
+      # تستمر صفحة العرض بقراءة نسخة قديمة تحوي المحذوف رغم نجاح الحذف
+      # والدفع فعليًا بالخطوة أعلاه. best-effort (|| true): فشل التفريغ لا
+      # يجب أن يُفشل التشغيلة بعد نجاح الحذف الفعلي.
+      - name: تفريغ كاش jsDelivr لـ manifest.json
+        if: success()
+        run: |
+          curl -sf "https://purge.jsdelivr.net/gh/${{ github.repository }}@${GIT_BRANCH}/output/manifest.json" || true
+          echo "طُلب تفريغ كاش jsDelivr — قد يحتاج التحديث الكامل عالميًا بضع دقائق"
