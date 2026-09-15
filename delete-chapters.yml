@@ -1,0 +1,133 @@
+name: حذف مانهوات/فصول من المستودع
+
+on:
+  workflow_dispatch:
+    inputs:
+      delete_payload:
+        description: >-
+          JSON: {"full_manga": ["id1", ...], "chapters": [{"manga_id": "id2", "num": "12"}, ...]}.
+          يُولَّد تلقائيًا من صفحة manhwa-saver-github-only.html (شجرة الحذف) — لا يُفترَض تعديله يدويًا.
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DELETE_PAYLOAD: ${{ inputs.delete_payload }}
+      GIT_BRANCH: output
+    steps:
+      - name: تحميل المستودع
+        uses: actions/checkout@v4
+
+      - name: تجهيز فرع output (git worktree)
+        run: |
+          set -e
+          git config user.name "manhwa-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git fetch origin --quiet
+
+          if ! git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+            echo "❌ فرع output غير موجود أصلًا — لا شيء لحذفه"
+            exit 1
+          fi
+          git worktree add output-worktree origin/output
+          git -C output-worktree checkout -B output origin/output
+          echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
+
+      - name: التحقق من صحة delete_payload
+        run: |
+          python3 -c "
+          import json, os, sys
+          try:
+              p = json.loads(os.environ['DELETE_PAYLOAD'])
+          except Exception as e:
+              print(f'❌ delete_payload ليس JSON صالحًا: {e}'); sys.exit(1)
+          if not isinstance(p.get('full_manga', []), list) or not isinstance(p.get('chapters', []), list):
+              print('❌ بنية delete_payload غير متوقَّعة'); sys.exit(1)
+          if not p.get('full_manga') and not p.get('chapters'):
+              print('❌ delete_payload فارغ — لا شيء محدد للحذف'); sys.exit(1)
+          print(f\"✅ صالح: {len(p.get('full_manga', []))} مانهوا كاملة، {len(p.get('chapters', []))} فصل منفرد\")
+          "
+
+      # [تصحيح حرج مُتّبَع من compress_chapters.py] لا "git rm -r output/" ولا
+      # "git add -A" أبدًا. كل عملية git تقتصر على قائمة مسارات صريحة
+      # محسوبة في delete_manager.py compute-targets — هذا يمنع جذريًا لمس
+      # ملفات مانهوات/تشغيلات أخرى غير مقصودة بهذا الطلب.
+      - name: حساب المسارات المستهدَفة
+        env:
+          OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
+        run: |
+          python3 delete_manager.py compute-targets > /tmp/targets.txt
+          echo "المسارات المستهدَفة:"
+          cat /tmp/targets.txt
+          if [ ! -s /tmp/targets.txt ]; then
+            echo "⚠️ لا مسارات فعلية على القرص تطابق delete_payload — الأرجح أنها حُذفت مسبقًا"
+          fi
+
+      - name: حذف الملفات + تحديث manifest.json + الدفع
+        env:
+          OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
+        run: |
+          set -e
+          cd "$OUTPUT_WORKTREE"
+          git_rel_output="output"
+
+          # allowed_paths (نسبية لجذر git، أي بادئة git_rel_output دومًا) —
+          # نفس قائمة /tmp/targets.txt + manifest.json حصرًا.
+          add_paths=("$git_rel_output/manifest.json")
+          while IFS= read -r t; do
+            add_paths+=("$git_rel_output/$t")
+          done < /tmp/targets.txt
+
+          apply_and_stage () {
+            # يُعاد استدعاؤها بكل محاولة دفع: يسحب أحدث manifest.json من
+            # origin مباشرة (لا نسخة محلية قديمة محتملة)، يطبّق الحذف عليها
+            # (عملية آمنة التكرار)، يكتبها بالقرص، ثم يحذف مجلدات الفصول/OCR
+            # الفعلية (git rm --ignore-unmatch: آمن حتى لو حُذفت مسبقًا
+            # بمحاولة سابقة)، ثم يضيف بالضبط add_paths لا أكثر.
+            git show "origin/${GIT_BRANCH}:${git_rel_output}/manifest.json" > /tmp/remote_manifest.json 2>/dev/null || echo '{}' > /tmp/remote_manifest.json
+            python3 "$GITHUB_WORKSPACE/delete_manager.py" apply-manifest /tmp/remote_manifest.json "${OUTPUT_DIR}/manifest.json"
+
+            while IFS= read -r t; do
+              git rm -r --ignore-unmatch --quiet -- "$git_rel_output/$t" || true
+            done < /tmp/targets.txt
+
+            git add -- "${add_paths[@]}"
+          }
+
+          apply_and_stage
+          if git diff --cached --quiet; then
+            echo "لا تغييرات (ربما حُذف هذا المحتوى مسبقًا) — لا حاجة لدفع"
+            exit 0
+          fi
+          git commit -m "حذف مانهوات/فصول محدَّدة (run ${{ github.run_id }})"
+
+          success=0
+          for i in 1 2 3 4 5; do
+            if git push origin "HEAD:${GIT_BRANCH}"; then
+              success=1
+              break
+            fi
+            echo "فشلت محاولة الدفع #$i — إعادة المحاولة بعد إعادة المزامنة مع origin..."
+            git fetch origin "$GIT_BRANCH"
+            git reset "origin/${GIT_BRANCH}"
+            apply_and_stage
+            if git diff --cached --quiet; then
+              echo "أصبح الحذف مطابقًا لأحدث نسخة على origin أصلًا"
+              success=1
+              break
+            fi
+            git commit -m "حذف مانهوات/فصول محدَّدة (run ${{ github.run_id }})"
+            sleep $((i * 3))
+          done
+
+          if [ "$success" -ne 1 ]; then
+            echo "❌ تعذّر الدفع بعد كل المحاولات"
+            exit 1
+          fi
+          echo "✅ تم الحذف والدفع بنجاح"
