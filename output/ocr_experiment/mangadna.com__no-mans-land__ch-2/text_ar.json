@@ -10,7 +10,7 @@
         {
           "text": "ARE YOU ALRIGHT?",
           "confidence": 0.954,
-          "text_ar": "هل أنتِ بخير؟"
+          "text_ar": "هل أنت بخير؟"
         }
       ]
     },
@@ -45,7 +45,7 @@
         {
           "text": "YOU SHOULDN'T BE UNDERESTIMATING SLIMES.",
           "confidence": 0.974,
-          "text_ar": "لا ينبغي لكِ الاستهانة بالوحوش الهلامية."
+          "text_ar": "لا ينبغي لكِ الاستهانة بالهلاميات."
         },
         {
           "text": "STEP STEP",
@@ -60,12 +60,12 @@
         {
           "text": "THEY'RE KNOWN TOBE THE CAUSE OF A LOTOF DEATHS AROUND HERE, YOU KNOW?",
           "confidence": 0.942,
-          "text_ar": "إنها معروفة بأنها سبب الكثير من الوفيات هنا، أتعلمين؟"
+          "text_ar": "أتعلمين؟ هي معروفة بكونها سببًا للكثير من الوفيات هنا."
         },
         {
           "text": "WELL, YOU SHOULD BE THANKFUL I FOUND YOU JUST IN TIME!",
           "confidence": 0.942,
-          "text_ar": "حسناً، يجب أن تكوني ممتنة لأنني وجدتكِ في الوقت المناسب!"
+          "text_ar": "حسنًا، يجب أن تكوني ممتنة لأنني وجدتكِ في الوقت المناسب!"
         }
       ]
     },
@@ -80,7 +80,7 @@
         {
           "text": "YOU'RE NOT SAYING ANYTHING.",
           "confidence": 0.991,
-          "text_ar": "أنتِ لا تقولين شيئاً."
+          "text_ar": "أنتِ لا تقولين شيئًا."
         },
         {
           "text": "DON'T HAVE ANYTHING TO SAY TO YOUR SAVIOR?",
@@ -90,17 +90,17 @@
         {
           "text": "HELLOOOO?",
           "confidence": 0.984,
-          "text_ar": "مرحباً؟"
+          "text_ar": "مرحبًااا؟"
         },
         {
           "text": "FWIP",
           "confidence": 0.96,
-          "text_ar": "خفقة"
+          "text_ar": "حفيف"
         },
         {
           "text": "ANYONE IN THERE??",
           "confidence": 0.974,
-          "text_ar": "هل من أحد هنا؟"
+          "text_ar": "هل هناك أحد بالداخل؟؟"
         }
       ]
     },
@@ -130,7 +130,7 @@
         {
           "text": "THIS THICKNESS!! STROKE",
           "confidence": 0.981,
-          "text_ar": "هذه السماكة!! مسح"
+          "text_ar": "هذه السماكة!! تدليك"
         }
       ]
     },
@@ -145,12 +145,12 @@
         {
           "text": "FONDLE NGH!",
           "confidence": 0.979,
-          "text_ar": "تحسس.. آه!"
+          "text_ar": "مداعبة، آه!"
         },
         {
           "text": "FONDLE",
           "confidence": 0.973,
-          "text_ar": "تحسس"
+          "text_ar": "مداعبة"
         },
         {
           "text": "THESE...",
@@ -175,7 +175,7 @@
         {
           "text": "AHHHHH!",
           "confidence": 0.986,
-          "text_ar": "آآآه!"
+          "text_ar": "آآآآه!"
         }
       ]
     },
@@ -185,7 +185,7 @@
         {
           "text": "WHAT DO YOU THINK YOU'RE DOING?",
           "confidence": 0.955,
-          "text_ar": "ما الذي تظنين أنكِ تفعلينه؟"
+          "text_ar": "ما الذي تظن أنك تفعله؟"
         }
       ]
     },
@@ -209,7 +209,7 @@
         {
           "text": "IS ALSO REAL!",
           "confidence": 0.906,
-          "text_ar": "حقيقي أيضاً!"
+          "text_ar": "حقيقي أيضًا!"
         }
       ]
     },
@@ -223,7 +223,7 @@
         {
           "text": "GUUUH...",
           "confidence": 0.923,
-          "text_ar": "غوووه..."
+          "text_ar": "آه..."
         },
         {
           "text": "WHAT...",
@@ -233,27 +233,27 @@
         {
           "text": "WHAT ARE YOU, SOME SORT OF PERV!?",
           "confidence": 0.951,
-          "text_ar": "ما خطبكِ، هل أنتِ منحرفة أم ماذا!؟"
+          "text_ar": "ما خطبك، هل أنت منحرف أم ماذا!؟"
         },
         {
           "text": "WHY THE HELL DID YOU TOUCH MY EARS LIKE THAT?",
           "confidence": 0.945,
-          "text_ar": "لماذا بحق الجحيم لمستِ أذنيّ هكذا؟"
+          "text_ar": "لماذا بحق الجحيم لمست أذني بتلك الطريقة؟"
         },
         {
           "text": "FLUSH",
           "confidence": 0.974,
-          "text_ar": "توهج"
+          "text_ar": "احمرار"
         },
         {
           "text": "FLUSH",
           "confidence": 0.983,
-          "text_ar": "توهج"
+          "text_ar": "احمرار"
         },
         {
           "text": "NOW THEY FEEL ALL HOT.",
           "confidence": 0.952,
-          "text_ar": "الآن أشعر بحرارتهما."
+          "text_ar": "الآن أشعر بحرارة فيهما."
         }
       ]
     },
@@ -278,7 +278,7 @@
         {
           "text": "ANOTHER SLIME?",
           "confidence": 0.991,
-          "text_ar": "وحش هلامي آخر؟"
+          "text_ar": "هلامية أخرى؟"
         }
       ]
     },
@@ -288,12 +288,12 @@
         {
           "text": "JEEZ, THESE SLIME ARE DUMBER THAN I THOUGHT.",
           "confidence": 0.975,
-          "text_ar": "يا إلهي، هذه الوحوش الهلامية أغبى مما ظننت."
+          "text_ar": "يا إلهي، هذه الهلاميات أغبى مما ظننت."
         },
         {
           "text": "THEY MAY BE A THREAT IN WAVES, BUT JUST ONE IS...",
           "confidence": 0.902,
-          "text_ar": "قد تكون خطيرة في مجموعات، لكن واحداً فقط هو..."
+          "text_ar": "قد تكون تهديدًا في جماعات، لكن واحدة فقط هي..."
         },
         {
           "text": "HUH...?",
@@ -373,17 +373,17 @@
         {
           "text": "CRAP, THEY'VE BLOCKED THE PATH!!",
           "confidence": 0.949,
-          "text_ar": "تباً، لقد سدوا الطريق!!"
+          "text_ar": "تبًا، لقد أغلقن الطريق!!"
         },
         {
           "text": "HMPH! YOU LITTLE SHITS!",
           "confidence": 0.986,
-          "text_ar": "همف! أيتها الحثالة الصغيرة!"
+          "text_ar": "همف! أيتها الحقيرات الصغيرات!"
         },
         {
           "text": "ICAN TAKE ALL OF yOU-",
           "confidence": 0.759,
-          "text_ar": "أستطيع القضاء عليكم جميعاً-"
+          "text_ar": "أستطيع التغلب عليكن جميعًا-"
         },
         {
           "text": "HEHEH...",
@@ -418,12 +418,12 @@
         {
           "text": "IF YOU'RE LOOKING FOR GRATITUDE, YOU CAN FORGET ABOUT IT.",
           "confidence": 0.948,
-          "text_ar": "إذا كنتِ تنتظرين الامتنان، فيمكنكِ نسيان الأمر."
+          "text_ar": "إذا كنتِ تنتظرين الامتنان، فانسَي الأمر."
         },
         {
           "text": "SAY WHAT?",
           "confidence": 0.936,
-          "text_ar": "ماذا قلتَ؟"
+          "text_ar": "ماذا قلت؟"
         },
         {
           "text": "I WAKE UP IN AN UNFAMILAR FOREST.",
@@ -438,12 +438,12 @@
         {
           "text": "ZIIp",
           "confidence": 0.636,
-          "text_ar": "سحباً"
+          "text_ar": "سحبة سحاب"
         },
         {
           "text": "SURROUNDED BY SLIMES AND ELVES...",
           "confidence": 0.962,
-          "text_ar": "محاطاً بالوحوش الهلامية والقزمات..."
+          "text_ar": "محاطًا بالهلاميات والقزمات..."
         },
         {
           "text": "AND THIS \"EMERGENCY SITUATION\" I'VE BEEN THRUST IN CAN ONLY MEAN ONE THING...",
@@ -453,7 +453,7 @@
         {
           "text": "THAT'S RIGHT, I'VE BEEN TRANSPORTED TO ANOTHER WORLD!",
           "confidence": 0.957,
-          "text_ar": "هذا صحيح، لقد انتقلت إلى عالم آخر!"
+          "text_ar": "هذا صحيح، لقد نُقلت إلى عالم آخر!"
         }
       ]
     },
@@ -468,7 +468,7 @@
         {
           "text": "I'M A WARRIOR SENT HERE TO SAVE THIS WORLD!!",
           "confidence": 0.952,
-          "text_ar": "أنا محارب أُرسل إلى هنا لإنقاذ هذا العالم!!"
+          "text_ar": "أنا محارب أُرسلت إلى هنا لإنقاذ هذا العالم!!"
         }
       ]
     },
@@ -478,7 +478,7 @@
         {
           "text": "WWm",
           "confidence": 0.411,
-          "text_ar": "همهمة"
+          "text_ar": "همم"
         }
       ]
     },
@@ -488,7 +488,7 @@
         {
           "text": "COME AGAIN, BOSS?",
           "confidence": 0.981,
-          "text_ar": "هل يمكنكِ تكرار ذلك يا رئيستي؟"
+          "text_ar": "هل يمكنكِ التكرار يا رئيسة؟"
         }
       ]
     },
@@ -498,7 +498,7 @@
         {
           "text": "Creator Heemin",
           "confidence": 0.993,
-          "text_ar": "الخالق هيمين"
+          "text_ar": "المبتكر هيمين"
         },
         {
           "text": "Elf Girl",
@@ -508,7 +508,7 @@
         {
           "text": "BEING TRANSPORTED, OR REBORN.IT BASICALLY MEANS GETTING WARPED TOAN ALTERNATE WORLDCAUSED BY AN ACCIDENT OR BY DEATH.",
           "confidence": 0.913,
-          "text_ar": "الانتقال، أو الولادة من جديد. يعني أساساً الانتقال إلى عالم بديل بسبب حادث أو الموت."
+          "text_ar": "النقل أو الولادة من جديد، يعني ببساطة الانتقال إلى عالم بديل بسبب حادث أو الموت."
         },
         {
           "text": "PEOPLEFROMOUR WORLD ARE SENT TO THE OTHER SIDE AS REINFORCEMENTS WHEN THE GODS ARE IN NEED OF A BRAVE WARRIOR.",
@@ -533,12 +533,12 @@
         {
           "text": "THE CHOSEN WARRIOR GETS BLESSINGS FROM THE GOD...",
           "confidence": 0.916,
-          "text_ar": "يحصل المحارب المختار على بركات من الإله..."
+          "text_ar": "المحارب المختار يحصل على بركات من الإله..."
         },
         {
           "text": "IWILL ALWAYS BE WITH YOU...",
           "confidence": 0.9,
-          "text_ar": "سأكون معك دائماً..."
+          "text_ar": "سأكون معك دائمًا..."
         },
         {
           "text": "STR UP↑ DEX UP↑ INTUP↑",
@@ -548,22 +548,22 @@
         {
           "text": "..WARRIOR JOHANNA.",
           "confidence": 0.929,
-          "text_ar": "..المحاربة جوهانا."
+          "text_ar": "...المحاربة جوهانا."
         },
         {
           "text": ".BUILDS RELATIONSHIPS...",
           "confidence": 0.898,
-          "text_ar": ".تبني علاقات..."
+          "text_ar": "...يبني علاقات..."
         },
         {
           "text": "YOU'RE TOORE TOUGH!",
           "confidence": 0.793,
-          "text_ar": "أنتِ قوية جداً!"
+          "text_ar": "أنتِ قاسية جدًا!"
         },
         {
           "text": ".USES MAGIC...",
           "confidence": 0.9,
-          "text_ar": ".تستخدم السحر..."
+          "text_ar": "...يستخدم السحر..."
         }
       ]
     },
@@ -573,7 +573,7 @@
         {
           "text": "HOW DARE A PUNY HUMAN LIKE YOU.",
           "confidence": 0.922,
-          "text_ar": "كيف يجرؤ إنسان ضئيل مثلك."
+          "text_ar": "كيف يجرؤ بشري ضئيل مثلك."
         },
         {
           "text": "COMD",
@@ -588,27 +588,27 @@
         {
           "text": ".AND GETS STRONG ENOUGH TO CHALLENGE THE MIGHTY ASCENDANT, OR SOMETHING LIKE THAT!",
           "confidence": 0.901,
-          "text_ar": ".ويصبح قوياً بما يكفي لتحدي الصاعد العظيم، أو شيء من هذا القبيل!"
+          "text_ar": "...ويصبح قويًا بما يكفي لتحدي الصاعد العظيم، أو شيء من هذا القبيل!"
         },
         {
           "text": "SO WHAT ABILITIES HAS THIS WORLD'S GOD BLESSED ME WITH?",
           "confidence": 0.945,
-          "text_ar": "إذن ما هي القدرات التي باركني بها إله هذا العالم؟"
+          "text_ar": "إذًا ما هي القدرات التي منحني إياها إله هذا العالم؟"
         },
         {
           "text": "MAGIC?",
           "confidence": 0.995,
-          "text_ar": "السحر؟"
+          "text_ar": "سحر؟"
         },
         {
           "text": "AN ANCIENT ARTIFACT?",
           "confidence": 0.964,
-          "text_ar": "قطعة أثرية قديمة؟"
+          "text_ar": "أثر قديم؟"
         },
         {
           "text": "ADVENTURE, HERE I COME!",
           "confidence": 0.957,
-          "text_ar": "المغامرة، ها أنا ذا!"
+          "text_ar": "المغامرة، ها أنا قادم!"
         }
       ]
     },
@@ -618,22 +618,22 @@
         {
           "text": "I, LEE SEON-WOONG, WILL USE MY POWER TO LIBERATE YOU ALL!",
           "confidence": 0.946,
-          "text_ar": "أنا، لي سيون-وونغ، سأستخدم قوتي لتحريركم جميعاً!"
+          "text_ar": "أنا، لي سيون-وونغ، سأستخدم قوتي لتحريركم جميعًا!"
         },
         {
           "text": "THIS PERSON... SHE CAN'T BE SERIOUS...",
           "confidence": 0.874,
-          "text_ar": "هذا الشخص... لا يمكن أن يكون جاداً..."
+          "text_ar": "هذا الشخص... لا يمكن أن يكون جادًا..."
         },
         {
           "text": "IS SHE ACTUALLY GONNA...?",
           "confidence": 0.908,
-          "text_ar": "هل ستفعل ذلك حقاً...؟"
+          "text_ar": "هل سيفعل ذلك حقًا...؟"
         },
         {
           "text": "THESE LITTLE SLIMES? NOT EVEN A PROBLEM! LEAVE IT TO ME!",
           "confidence": 0.924,
-          "text_ar": "هذه الوحوش الهلامية الصغيرة؟ ليست مشكلة حتى! اتركي الأمر لي!"
+          "text_ar": "هذه الهلاميات الصغيرة؟ ليست مشكلة حتى! اتركي الأمر لي!"
         }
       ]
     },
@@ -643,7 +643,7 @@
         {
           "text": "FWIP",
           "confidence": 0.953,
-          "text_ar": "خفقة"
+          "text_ar": "حفيف"
         },
         {
           "text": "NOW THEN.",
@@ -653,7 +653,7 @@
         {
           "text": "FWIP",
           "confidence": 0.922,
-          "text_ar": "خفقة"
+          "text_ar": "حفيف"
         },
         {
           "text": "TIME FOR MYINITIATIONINTO THIS WORLD.",
@@ -663,7 +663,7 @@
         {
           "text": "HUU. HERE WE GO...",
           "confidence": 0.806,
-          "text_ar": "هوو. لننطلق..."
+          "text_ar": "هوو. لنبدأ..."
         },
         {
           "text": "GULP",
@@ -706,7 +706,7 @@
         {
           "text": "EXCUSE ME... WHAT ARE YOU DOING?",
           "confidence": 0.943,
-          "text_ar": "عذراً... ماذا تفعل؟"
+          "text_ar": "عذرًا... ماذا تفعل؟"
         }
       ]
     },
@@ -721,7 +721,7 @@
         {
           "text": "AND WHAT'S THAT, YOU FUCKING NERD?",
           "confidence": 0.971,
-          "text_ar": "وما هذا، أيها المهووس اللعين؟"
+          "text_ar": "وما ذلك، أيها المهووس اللعين؟"
         }
       ]
     },
@@ -731,17 +731,17 @@
         {
           "text": "LIKE SOMETHING THAT SHOWS MY STATS OR MY SKILLS...NO?",
           "confidence": 0.945,
-          "text_ar": "مثل شيء يظهر إحصائياتي أو مهاراتي... ألا يوجد؟"
+          "text_ar": "شيء يظهر إحصائياتي أو مهاراتي... أليس كذلك؟"
         },
         {
           "text": "STILL NOT FOLLOWING HERE.",
           "confidence": 0.982,
-          "text_ar": "لا أزال لا أفهم ما تقوله."
+          "text_ar": "ما زلت لا أفهم."
         },
         {
           "text": "I'VE SEEN PROTAGONISTSOF ALL PROTAGONISTSOEALL THE COMICS I'VE READ DO IT!I'M SURE OFIT!",
           "confidence": 0.941,
-          "text_ar": "لقد رأيت أبطال كل القصص التي قرأتها يفعلون ذلك! أنا متأكد من ذلك!"
+          "text_ar": "لقد رأيت أبطال كل القصص التي قرأتها يفعلون ذلك! أنا متأكد!"
         }
       ]
     },
@@ -751,17 +751,17 @@
         {
           "text": "THAT SOUNDS LIKE A YOU PROBLEM!",
           "confidence": 0.95,
-          "text_ar": "هذه مشكلتك الخاصة!"
+          "text_ar": "هذه مشكلتك أنت!"
         },
         {
           "text": "AND WHAT THE HELL ARE YOU EVEN TALKING ABOUT!?",
           "confidence": 0.972,
-          "text_ar": "وما الذي تتحدث عنه بحق الجحيم!؟"
+          "text_ar": "وعن ماذا تتحدث بحق الجحيم!؟"
         },
         {
           "text": "GOD DAMMIT! WHAT KIND OF SHITTY GAME IS THIS?",
           "confidence": 0.949,
-          "text_ar": "تباً! أي نوع من الألعاب القذرة هذه؟"
+          "text_ar": "تبًا! أي نوع من الألعاب القذرة هذه؟"
         },
         {
           "text": "WHAT KIND OF CRUEL GOD PUT ME HERE WITHOUT ANY CHEATS OR STRATEGIES?!",
@@ -781,7 +781,7 @@
         {
           "text": "ACK! THEY'RE COMING!",
           "confidence": 0.972,
-          "text_ar": "آخ! إنهم قادمون!"
+          "text_ar": "آخ! إنها قادمة!"
         }
       ]
     },
@@ -791,7 +791,7 @@
         {
           "text": "IT'S COMING TO CHOKE ME AGAIN!",
           "confidence": 0.948,
-          "text_ar": "إنه قادم لخنقي مجدداً!"
+          "text_ar": "إنها تقترب لتخنقني مجددًا!"
         },
         {
           "text": "SOMEONE HELP ME!!!",
@@ -816,7 +816,7 @@
         {
           "text": "FWIP",
           "confidence": 0.908,
-          "text_ar": "خفقة"
+          "text_ar": "حفيف"
         }
       ]
     },
@@ -826,27 +826,27 @@
         {
           "text": "\"NOTA PROBLEM\"MY ASS...",
           "confidence": 0.89,
-          "text_ar": "\"ليست مشكلة\" مؤخرتي..."
+          "text_ar": "تبًا لـ \"ليست مشكلة\"..."
         },
         {
           "text": "STAY STILL.",
           "confidence": 0.985,
-          "text_ar": "ابقَ ثابتاً."
+          "text_ar": "ابقَ ساكنًا."
         },
         {
           "text": "oe ry M m",
           "confidence": 0.335,
-          "text_ar": "همهمة"
+          "text_ar": "همم"
         },
         {
           "text": "Mwin",
           "confidence": 0.401,
-          "text_ar": "همهمة"
+          "text_ar": "همم"
         },
         {
           "text": "THE THING WITH SLIMES IS, THEY ALL",
           "confidence": 0.939,
-          "text_ar": "الأمر في الوحوش الهلامية هو أنها جميعاً"
+          "text_ar": "الأمر مع الهلاميات هو أنها جميعًا"
         }
       ]
     },
@@ -856,7 +856,7 @@
         {
           "text": "HAVE A MARBLE \"CORE\" INSIDE THEM.",
           "confidence": 0.975,
-          "text_ar": "تملك \"جوهرة\" بداخلها."
+          "text_ar": "تمتلك \"نواة\" كروية بداخلها."
         },
         {
           "text": "THAT'S THEIR WEAKNESS!",
@@ -871,7 +871,7 @@
         {
           "text": "WHOOSH A",
           "confidence": 0.093,
-          "text_ar": "وش"
+          "text_ar": "هواء"
         }
       ]
     },
@@ -900,7 +900,7 @@
         {
           "text": "GOD DAMN...",
           "confidence": 0.973,
-          "text_ar": "تباً..."
+          "text_ar": "تبًا..."
         }
       ]
     },
@@ -910,7 +910,7 @@
         {
           "text": "ALL THOSE SLIMES IN ONE FELL SWOOP???",
           "confidence": 0.964,
-          "text_ar": "كل تلك الوحوش الهلامية بضربة واحدة؟؟"
+          "text_ar": "كل تلك الهلاميات بضربة واحدة؟؟؟"
         },
         {
           "text": "WHEW.",
@@ -925,7 +925,7 @@
         {
           "text": "SWISH",
           "confidence": 0.942,
-          "text_ar": "سويش"
+          "text_ar": "سووش"
         },
         {
           "text": "YOU.",
@@ -945,17 +945,17 @@
         {
           "text": "SORRY? WHAT HAVE I DONE?",
           "confidence": 0.959,
-          "text_ar": "عذراً؟ ماذا فعلت؟"
+          "text_ar": "عذرًا؟ ماذا فعلت؟"
         },
         {
           "text": "DON'T PLAY WITH ME!",
           "confidence": 0.97,
-          "text_ar": "لا تتلاعب بي!"
+          "text_ar": "لا تتلاعب معي!"
         },
         {
           "text": "YOU OBVIOUSLY DID SOMETHING TO AGGRAVATE ALL THOSE SLIMES!",
           "confidence": 0.961,
-          "text_ar": "من الواضح أنك فعلت شيئاً لاستفزاز كل تلك الوحوش الهلامية!"
+          "text_ar": "من الواضح أنك فعلت شيئًا لاستفزاز كل تلك الهلاميات!"
         },
         {
           "text": "WHAT????",
@@ -965,17 +965,17 @@
         {
           "text": "THAT'S NOT IT! YOU'RE GETTING AWFULLYCLOSE BY THE WAY...",
           "confidence": 0.905,
-          "text_ar": "ليس هذا هو الأمر! وبالمناسبة، أنت تقترب كثيراً..."
+          "text_ar": "ليس هذا! وبالمناسبة، أنتِ تقتربين كثيرًا..."
         },
         {
           "text": "THAT'S NOT IT?",
           "confidence": 0.951,
-          "text_ar": "أليس هذا هو الأمر؟"
+          "text_ar": "أليس هذا هو السبب؟"
         },
         {
           "text": "YOU BETTER PRAYI DON'T FIND ANYTHING THAT CONNECTS YOU TO THE \"DEMON\" WHILE I SEARCH YOU!",
           "confidence": 0.838,
-          "text_ar": "من الأفضل أن تدعو ألا أجد أي شيء يربطك بـ \"الشيطان\" بينما أفتشك!"
+          "text_ar": "من الأفضل لك أن تدعو ألا أجد أي شيء يربطك بـ \"الشيطان\" بينما أفتشك!"
         }
       ]
     },
@@ -990,17 +990,17 @@
         {
           "text": "YOU'RE GONNA PAT ME DOWN?",
           "confidence": 0.961,
-          "text_ar": "هل ستفتشني؟"
+          "text_ar": "هل ستفتشينني؟"
         },
         {
           "text": "WAIT, HOLD ON.",
           "confidence": 0.949,
-          "text_ar": "انتظر، تمهل."
+          "text_ar": "انتظري، تمهلي."
         },
         {
           "text": "DON'T YOU \"HOLD ON\"ME!",
           "confidence": 0.917,
-          "text_ar": "لا تقل لي \"تمهل\"!"
+          "text_ar": "لا تقولي لي \"تمهل\"!"
         },
         {
           "text": "HUH?",
@@ -1029,12 +1029,12 @@
         {
           "text": "EXCUSE ME...",
           "confidence": 0.93,
-          "text_ar": "عذراً..."
+          "text_ar": "عذرًا..."
         },
         {
           "text": "..ARE YOU ALRIG-",
           "confidence": 0.855,
-          "text_ar": "..هل أنت بخير-"
+          "text_ar": "...هل أنتِ بخي-"
         }
       ]
     },
@@ -1044,17 +1044,17 @@
         {
           "text": "UGH, THESE DAMN SLIMES.",
           "confidence": 0.979,
-          "text_ar": "أوه، هذه الوحوش الهلامية اللعينة."
+          "text_ar": "أوه، هذه الهلاميات اللعينة."
         },
         {
           "text": "KILLING THEM OFF IS ALWAYS SUCH A MESS.",
           "confidence": 0.963,
-          "text_ar": "القضاء عليها دائماً ما يسبب فوضى."
+          "text_ar": "القضاء عليها دائمًا ما يترك فوضى."
         },
         {
           "text": "I WISH THE REST OF THEIR BODIES EVAPORATED LIKE THEIRCORES...",
           "confidence": 0.957,
-          "text_ar": "أتمنى لو تبخرت بقية أجسادها مثل جواهرها..."
+          "text_ar": "أتمنى لو تبخرت بقية أجسادها مثل نواتها..."
         }
       ]
     },
@@ -1069,7 +1069,7 @@
         {
           "text": "HOT DAMN...",
           "confidence": 0.981,
-          "text_ar": "تباً..."
+          "text_ar": "تبًا..."
         },
         {
           "text": "THIS IS...",
@@ -1084,7 +1084,7 @@
         {
           "text": "WAIT.",
           "confidence": 0.993,
-          "text_ar": "انتظر."
+          "text_ar": "انتظري."
         },
         {
           "text": "SOMETHING'S BEEN POKINGME SINCE BEFORE.",
@@ -1099,7 +1099,7 @@
         {
           "text": "WAIT!",
           "confidence": 0.994,
-          "text_ar": "انتظر!"
+          "text_ar": "انتظري!"
         },
         {
           "text": "THAT'S...!",
@@ -1114,7 +1114,7 @@
         {
           "text": "MMPH!",
           "confidence": 0.989,
-          "text_ar": "همف!"
+          "text_ar": "ممف!"
         },
         {
           "text": "HUH?",
@@ -1158,7 +1158,7 @@
         {
           "text": "….HELL IS THIS??",
           "confidence": 0.855,
-          "text_ar": "….ما هذا؟؟"
+          "text_ar": "...الذي يحدث هنا؟؟"
         }
       ]
     },
@@ -1168,7 +1168,7 @@
         {
           "text": "YEP. THAT'S MY DICK.",
           "confidence": 0.947,
-          "text_ar": "أجل. هذا هو ديك."
+          "text_ar": "أجل. هذا ديك."
         }
       ]
     },
@@ -1234,7 +1234,7 @@
         {
           "text": "鬼畜英雄",
           "confidence": 0.982,
-          "text_ar": "المحارب الممسوخ"
+          "text_ar": "بطل الجنون"
         },
         {
           "text": "よのき",
@@ -1253,7 +1253,7 @@
         {
           "text": "- 1 FAS.",
           "confidence": 0.188,
-          "text_ar": "الفصل الأول"
+          "text_ar": "فصل"
         }
       ]
     }
