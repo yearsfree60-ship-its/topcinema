@@ -9,57 +9,51 @@
       "sentences": [
         {
           "text": "WHAT'S... THIS?",
-          "confidence": 0.971,
+          "confidence": 0.961,
           "text_ar": "ما... هذا؟"
         },
         {
           "text": "BADUM",
-          "confidence": 0.952,
+          "confidence": 0.956,
           "text_ar": "نبض"
         },
         {
           "text": "BADUM",
-          "confidence": 0.955,
+          "confidence": 0.956,
           "text_ar": "نبض"
         },
         {
           "text": "WHAT'S THIS???",
-          "confidence": 0.95,
-          "text_ar": "ما هذا بحق الجحيم؟"
+          "confidence": 0.967,
+          "text_ar": "ما هذا بحق الجحيم؟؟؟"
         }
       ]
     },
     {
       "page": 3,
-      "sentences": [
-        {
-          "text": "A AH...",
-          "confidence": 0.128,
-          "text_ar": "آه..."
-        }
-      ]
+      "sentences": []
     },
     {
       "page": 4,
       "sentences": [
         {
-          "text": "BULO M",
-          "confidence": 0.624,
-          "text_ar": "توهج"
+          "text": "BWL",
+          "confidence": 0.598,
+          "text_ar": "زئير"
         },
         {
-          "text": "JUDGING BY ITS MOVEMENT, THIS IS MOST CERTAINLY A TRAP SET UP BY A DEMON.",
-          "confidence": 0.95,
-          "text_ar": "بناءً على حركته، هذا بالتأكيد فخ نصبه شيطان."
+          "text": "JUDGING BY ITS MOVEMENT, THIS IS MOST CERTAINLY A TRAP SET UP BYA DEMON.",
+          "confidence": 0.953,
+          "text_ar": "بالنظر إلى حركته، هذه بالتأكيد فخ نصبه شيطان."
         },
         {
-          "text": "SHING I MUST CUT IT OFF IMMEDIATELY.",
-          "confidence": 0.94,
-          "text_ar": "شينغ! يجب أن أقطعه فوراً."
+          "text": "I MUST CUT IT OFF IMMEDIATELY.",
+          "confidence": 0.944,
+          "text_ar": "يجب أن أقطعه فوراً."
         },
         {
-          "text": "ARE YOU FUCKING CnA 212",
-          "confidence": 0.305,
+          "text": "ARE FUCKING YOU TnAVIIIO",
+          "confidence": 0.382,
           "text_ar": "هل أنت مجنون بحق الجحيم؟"
         }
       ]
@@ -68,34 +62,34 @@
       "page": 5,
       "sentences": [
         {
-          "text": "CRAZI",
-          "confidence": 0.746,
-          "text_ar": "جنون"
+          "text": "KALY!?!?!！ T 3 1",
+          "confidence": 0.102,
+          "text_ar": "كالي!؟!؟!"
         },
         {
-          "text": "No Man's",
-          "confidence": 0.934,
-          "text_ar": "لا يخص أحداً"
+          "text": "Tan's and F",
+          "confidence": 0.149,
+          "text_ar": "تان و..."
         },
         {
           "text": "Creator Heemin",
-          "confidence": 0.987,
+          "confidence": 0.994,
           "text_ar": "المبتكر هيمين"
         },
         {
           "text": "What is That?",
-          "confidence": 0.992,
+          "confidence": 0.911,
           "text_ar": "ما ذلك؟"
         },
         {
           "text": "STOP RESISTING!",
-          "confidence": 0.909,
-          "text_ar": "توقف عن المقاومة!"
+          "confidence": 0.982,
+          "text_ar": "توقفي عن المقاومة!"
         },
         {
           "text": "I HAVE TO EXTRACT IT BEFORE IT OVERTAKES YOU.",
-          "confidence": 0.843,
-          "text_ar": "يجب أن أستخرجه قبل أن يسيطر عليك."
+          "confidence": 0.801,
+          "text_ar": "عليّ استئصاله قبل أن يسيطر عليكِ."
         }
       ]
     },
@@ -103,19 +97,19 @@
       "page": 6,
       "sentences": [
         {
-          "text": "HOW COULD I STAY STILL WHEN I'M ABOUT TO HAVE A PERFECTLY FINE DICK CUT OFF?!!",
-          "confidence": 0.91,
-          "text_ar": "كيف أبقى ساكناً بينما توشك على قطع ديك سليم تماماً؟!!"
+          "text": "HOW COULD I STAY STILL WHEN I'M ABOUT TO HAVE A PERFECTLYFINE DICK CUT OFF?!!",
+          "confidence": 0.932,
+          "text_ar": "كيف لي أن أبقى ساكناً بينما أوشك على فقدان ديك سليم تماماً؟!؟"
         },
         {
           "text": "DICK?",
-          "confidence": 0.996,
+          "confidence": 0.995,
           "text_ar": "ديك؟"
         },
         {
           "text": "THIS IS A DICK?",
-          "confidence": 0.957,
-          "text_ar": "هل هذا ديك؟"
+          "confidence": 0.959,
+          "text_ar": "هذا ديك؟"
         }
       ]
     },
@@ -124,7 +118,7 @@
       "sentences": [
         {
           "text": "WHAT'S THAT?",
-          "confidence": 0.996,
+          "confidence": 0.986,
           "text_ar": "ما ذلك؟"
         },
         {
@@ -138,18 +132,18 @@
       "page": 8,
       "sentences": [
         {
-          "text": "YOU KNOW... A PENIS? THAT DANGLY THING BETWEEN A MAN'S-",
-          "confidence": 0.874,
-          "text_ar": "أتعلمين... العضو الذكري؟ ذلك الشيء المتدلي بين..."
+          "text": "YOU KNOW.. A PENIS? THAT DANGLY THING BETWEEN A MAN'S-",
+          "confidence": 0.876,
+          "text_ar": "أتعلمين.. قضيب؟ ذلك الشيء المتدلي بين رجلي الرجل..."
         },
         {
           "text": "MAN?",
-          "confidence": 0.98,
+          "confidence": 0.96,
           "text_ar": "رجل؟"
         },
         {
           "text": "AND WHAT'S THAT?",
-          "confidence": 0.989,
+          "confidence": 0.956,
           "text_ar": "وما ذلك؟"
         }
       ]
@@ -159,7 +153,7 @@
       "sentences": [
         {
           "text": "WHAT???",
-          "confidence": 0.992,
+          "confidence": 0.973,
           "text_ar": "ماذا؟؟؟"
         },
         {
@@ -169,8 +163,8 @@
         },
         {
           "text": "YOU GOTTA BE JOKING, RIGHT?",
-          "confidence": 0.946,
-          "text_ar": "أنتِ تمزحين، أليس كذلك؟"
+          "confidence": 0.938,
+          "text_ar": "لا بد أنكِ تمزحين، أليس كذلك؟"
         }
       ]
     },
@@ -178,13 +172,13 @@
       "page": 10,
       "sentences": [
         {
-          "text": "ARE YOU SLEEP TALKINGOR SOMETHING?",
-          "confidence": 0.949,
-          "text_ar": "هل تتحدثين أثناء نومك أو شيء من هذا القبيل؟"
+          "text": "ARE YOU SLEEP TALKING OR SOMETHING?",
+          "confidence": 0.966,
+          "text_ar": "هل تتحدثين أثناء نومك أم ماذا؟"
         },
         {
-          "text": "I'VE NEVER SEEN OR HEARD OF THIS THING YOUCALL AMAN.",
-          "confidence": 0.945,
+          "text": "I'VE NEVER SEEN OR HEARD OF THIS THING YOU CALL A MAN.",
+          "confidence": 0.94,
           "text_ar": "لم أرَ أو أسمع قط بهذا الشيء الذي تسمينه رجلاً."
         }
       ]
@@ -194,22 +188,22 @@
       "sentences": [
         {
           "text": "EXCUSE ME...?",
-          "confidence": 0.954,
-          "text_ar": "عذراً...؟"
+          "confidence": 0.918,
+          "text_ar": "عفواً...؟"
         },
         {
           "text": "WHAT DID SHE JUST SAY!?",
-          "confidence": 0.96,
+          "confidence": 0.954,
           "text_ar": "ما الذي قالته للتو!؟"
         },
         {
-          "text": "SHE DOESN'T KNOW...WHAT A MANIS?",
-          "confidence": 0.949,
+          "text": "SHE DOESN'T KNOW...WHAT A MAN IS?",
+          "confidence": 0.869,
           "text_ar": "إنها لا تعرف... ما هو الرجل؟"
         },
         {
-          "text": "ISEE WHAT'SGOING ON...",
-          "confidence": 0.935,
+          "text": "I SEE WHAT'S GOING ON...",
+          "confidence": 0.947,
           "text_ar": "بدأت أفهم ما يحدث..."
         }
       ]
@@ -219,23 +213,23 @@
       "sentences": [
         {
           "text": "THAT CURSE BETWEENYOUR LEGS IS STARTING TO CORRUPT YOUR HEAD.",
-          "confidence": 0.941,
-          "text_ar": "تلك اللعنة بين ساقيك بدأت تفسد عقلك."
+          "confidence": 0.925,
+          "text_ar": "تلك اللعنة بين ساقيكِ بدأت تفسد عقلك."
         },
         {
           "text": "IT'S MUCH MORE POWERFUL THAN I THOUGHT...",
-          "confidence": 0.931,
+          "confidence": 0.944,
           "text_ar": "إنها أقوى بكثير مما ظننت..."
         },
         {
-          "text": "SHING I'LL CUT IT OFF.",
-          "confidence": 0.943,
-          "text_ar": "شينغ! سأقطعها."
+          "text": "I'LL CUT IT OFF.",
+          "confidence": 0.945,
+          "text_ar": "سأقوم بقطعه."
         },
         {
           "text": "HOLD ON, WAITWAITWAIT WAITWAIT!",
-          "confidence": 0.962,
-          "text_ar": "انتظري، انتظري، انتظري!"
+          "confidence": 0.96,
+          "text_ar": "تمهلي، انتظري انتظري انتظري!"
         }
       ]
     },
@@ -243,23 +237,18 @@
       "page": 13,
       "sentences": [
         {
-          "text": "I SAID WAIT A MINUTE YOU LITTLE...",
-          "confidence": 0.933,
-          "text_ar": "قلت انتظري لحظة أيتها الصغيرة..."
+          "text": "I SAID WAIT A MINUTE YOU LITTLE... SHING",
+          "confidence": 0.924,
+          "text_ar": "قلت انتظري دقيقة أيتها الصغيرة... شينغ"
         },
         {
-          "text": "SHING",
-          "confidence": 0.988,
-          "text_ar": "شينغ"
-        },
-        {
-          "text": "YOU GOTTA LISTEN TOME!",
-          "confidence": 0.852,
+          "text": "YOU GOTTA LISTEN TO ME!",
+          "confidence": 0.785,
           "text_ar": "عليكِ أن تستمعي إلي!"
         },
         {
           "text": "HEY!!",
-          "confidence": 0.989,
+          "confidence": 0.979,
           "text_ar": "مهلاً!!"
         }
       ]
@@ -268,19 +257,19 @@
       "page": 14,
       "sentences": [
         {
-          "text": "DAMMIT, SHE AIN'T LISTENING AT ALL!!",
+          "text": "DAMMIT,SHE AIN'T LISTENING AT ALL!!",
           "confidence": 0.919,
           "text_ar": "تباً، إنها لا تستمع على الإطلاق!!"
         },
         {
-          "text": "IF I DON'T STOP HER, SHE'S SERIOUSLY GOING TO CUT MY DICKOFF! HEHEHEHE!",
-          "confidence": 0.906,
-          "text_ar": "إن لم أوقفها، ستقطع ديكي حقاً! هيهيهيهي!"
+          "text": "IF I DON'T STOP HER, SHE'S SERIOUSLY GOING TO CUT MY DICK OFF! HEHEHEHE!",
+          "confidence": 0.91,
+          "text_ar": "إن لم أوقفها، فهي ستقطع ديكي بجدية! هيهيهيهي!"
         },
         {
-          "text": "INEED A PLAN...LIKE RIGHT NOW!",
-          "confidence": 0.88,
-          "text_ar": "أحتاج إلى خطة... الآن فوراً!"
+          "text": "I NEED A PLAN...LIKE RIGHT NOW!",
+          "confidence": 0.889,
+          "text_ar": "أحتاج لخطة... الآن فوراً!"
         }
       ]
     },
@@ -288,18 +277,18 @@
       "page": 15,
       "sentences": [
         {
-          "text": "C'MON, THINK, THINK.",
-          "confidence": 0.948,
-          "text_ar": "هيا، فكّر، فكّر."
+          "text": "C'MON, THINK, THINK..",
+          "confidence": 0.953,
+          "text_ar": "هيا، فكر، فكر..."
         },
         {
-          "text": "THINKOF SOMETHING...",
-          "confidence": 0.96,
-          "text_ar": "فكّر في شيء ما..."
+          "text": "THINK OF SOMETHING...",
+          "confidence": 0.944,
+          "text_ar": "فكر في شيء ما..."
         },
         {
           "text": "AHA!",
-          "confidence": 0.96,
+          "confidence": 0.976,
           "text_ar": "أها!"
         }
       ]
@@ -314,27 +303,27 @@
         },
         {
           "text": "W-WHAT...",
-          "confidence": 0.913,
+          "confidence": 0.945,
           "text_ar": "مـ-ماذا..."
         },
         {
           "text": ".WHAT ARE YOU DOING?",
-          "confidence": 0.911,
-          "text_ar": "...ما الذي تفعلينه؟"
+          "confidence": 0.914,
+          "text_ar": "..ما الذي تفعلينه؟"
         },
         {
           "text": "DAMN...HER ASS IS SO TIGHT THAT IT HURTSTO EVEN SLAP IT...",
-          "confidence": 0.865,
-          "text_ar": "اللعنة... مؤخرتها مشدودة جداً لدرجة أن صفعها يؤلم..."
+          "confidence": 0.841,
+          "text_ar": "تباً... مؤخرتها مشدودة لدرجة أن صفعها يؤلم..."
         },
         {
           "text": "SQUEEZE",
-          "confidence": 0.969,
+          "confidence": 0.968,
           "text_ar": "عصر"
         },
         {
           "text": "GRAB",
-          "confidence": 0.985,
+          "confidence": 0.937,
           "text_ar": "إمساك"
         }
       ]
@@ -343,14 +332,9 @@
       "page": 17,
       "sentences": [
         {
-          "text": "SLIR",
-          "confidence": 0.896,
-          "text_ar": "انزلاق"
-        },
-        {
-          "text": ".SO THIS IS A PUSSY...IT'S BEAUTIFUL...",
-          "confidence": 0.851,
-          "text_ar": "...إذن هذا هو الفرج... إنه جميل..."
+          "text": ".SO THIS IS A PUSSY... IT'S BEAUTIFUL...",
+          "confidence": 0.847,
+          "text_ar": "..إذن هذا هو المهبل... إنه جميل..."
         }
       ]
     },
@@ -359,28 +343,28 @@
       "sentences": [
         {
           "text": ".I'VE NEVER SEEN ONE IN THE FLESH...",
-          "confidence": 0.899,
-          "text_ar": "...لم أرَ واحداً على الحقيقة من قبل..."
+          "confidence": 0.916,
+          "text_ar": "..لم أرَ واحداً في الحقيقة من قبل..."
         },
         {
           "text": "THE FAINT SCENT OF SWEAT AND PISS PERMEATING THROUGH HER CLOSED LABIA...",
-          "confidence": 0.921,
-          "text_ar": "رائحة العرق والبول الخفيفة تتسرب من خلال شفرتيها المغلقتين..."
+          "confidence": 0.927,
+          "text_ar": "رائحة خفيفة من العرق والبول تتسرب من خلال شفراتها المنغلقة..."
         },
         {
-          "text": ".THE SHAPE... THE COLOR... IT'S ENOUGH TO DRIVE A MAN CRAZY.",
-          "confidence": 0.756,
-          "text_ar": "...الشكل... واللون... إنه كافٍ لجعل أي رجل يجن."
+          "text": ".THE SHAPE... THE COLOR...IT'S ENOUGHTO DRIVE A MAN CRAZY.",
+          "confidence": 0.843,
+          "text_ar": "..الشكل... اللون... إنه كافٍ لجعل الرجل يفقد صوابه."
         },
         {
           "text": "ALRIGHT...",
-          "confidence": 0.96,
+          "confidence": 0.931,
           "text_ar": "حسناً..."
         },
         {
           "text": "TIME TO SAVE MY PENIS!",
-          "confidence": 0.974,
-          "text_ar": "حان وقت إنقاذ عضوي الذكري!"
+          "confidence": 0.975,
+          "text_ar": "حان وقت إنقاذ قضيبي!"
         }
       ]
     },
@@ -389,37 +373,32 @@
       "sentences": [
         {
           "text": "WHAT...ARE YOU DOING DOWN THERE?",
-          "confidence": 0.956,
+          "confidence": 0.971,
           "text_ar": "ماذا... تفعل هناك بالأسفل؟"
         },
         {
-          "text": "HAA",
-          "confidence": 0.994,
-          "text_ar": "هاه"
-        },
-        {
-          "text": "HAA",
-          "confidence": 0.99,
-          "text_ar": "هاه"
+          "text": "HAA HAA",
+          "confidence": 0.988,
+          "text_ar": "هاه هاه"
         },
         {
           "text": "WHY ARE YOU PUTTING YOUR TONGUE...",
-          "confidence": 0.933,
+          "confidence": 0.955,
           "text_ar": "لماذا تضع لسانك..."
         },
         {
           "text": "SLURP",
-          "confidence": 0.843,
-          "text_ar": "مصه"
+          "confidence": 0.821,
+          "text_ar": "رشف"
         },
         {
           "text": "LICK",
-          "confidence": 0.984,
-          "text_ar": "لعق"
+          "confidence": 0.976,
+          "text_ar": "لحس"
         },
         {
-          "text": "WHY ARE YOUPUTTING YOUR TONGUE IN THERE?",
-          "confidence": 0.951,
+          "text": "WHY ARE YOU PUTTING YOUR TONGUE IN THERE?",
+          "confidence": 0.954,
           "text_ar": "لماذا تضع لسانك هناك؟"
         }
       ]
@@ -429,42 +408,42 @@
       "sentences": [
         {
           "text": "SLURP",
-          "confidence": 0.945,
-          "text_ar": "مصه"
+          "confidence": 0.916,
+          "text_ar": "رشف"
         },
         {
           "text": "SLURP",
-          "confidence": 0.861,
-          "text_ar": "مصه"
+          "confidence": 0.9,
+          "text_ar": "رشف"
         },
         {
           "text": "THISIS THE ONLY WAY!!",
-          "confidence": 0.962,
+          "confidence": 0.972,
           "text_ar": "هذه هي الطريقة الوحيدة!!"
         },
         {
           "text": "HNNGH!",
-          "confidence": 0.992,
+          "confidence": 0.996,
           "text_ar": "آه!"
         },
         {
           "text": "STOP IT.",
-          "confidence": 0.959,
+          "confidence": 0.966,
           "text_ar": "توقف."
         },
         {
           "text": "AHH",
-          "confidence": 0.99,
+          "confidence": 0.989,
           "text_ar": "آه"
         },
         {
           "text": "WAIT.",
-          "confidence": 0.986,
+          "confidence": 0.989,
           "text_ar": "انتظر."
         },
         {
           "text": "YOUR WARM TONGUE IS INSIDE ME...",
-          "confidence": 0.939,
+          "confidence": 0.935,
           "text_ar": "لسانك الدافئ بالداخل..."
         }
       ]
@@ -473,24 +452,19 @@
       "page": 21,
       "sentences": [
         {
-          "text": "HAA... LIGK",
-          "confidence": 0.785,
-          "text_ar": "هاه... لعق"
+          "text": "HAA...",
+          "confidence": 0.968,
+          "text_ar": "هاه..."
         },
         {
           "text": "LICK",
-          "confidence": 0.986,
-          "text_ar": "لعق"
+          "confidence": 0.814,
+          "text_ar": "لحس"
         },
         {
-          "text": "LICK",
-          "confidence": 0.923,
-          "text_ar": "لعق"
-        },
-        {
-          "text": "SLAP",
-          "confidence": 0.906,
-          "text_ar": "صفعة"
+          "text": "LICK LICK",
+          "confidence": 0.905,
+          "text_ar": "لحس لحس"
         }
       ]
     },
@@ -499,7 +473,7 @@
       "sentences": [
         {
           "text": "I'VE",
-          "confidence": 0.974,
+          "confidence": 0.987,
           "text_ar": "لم"
         }
       ]
@@ -509,8 +483,13 @@
       "sentences": [
         {
           "text": "NEVER...",
-          "confidence": 0.948,
+          "confidence": 0.944,
           "text_ar": "أشعر..."
+        },
+        {
+          "text": "SHIVER し M",
+          "confidence": 0.249,
+          "text_ar": "ارتجاف"
         },
         {
           "text": "SHIVER",
@@ -518,18 +497,13 @@
           "text_ar": "ارتجاف"
         },
         {
-          "text": "SHIVER",
-          "confidence": 0.984,
-          "text_ar": "ارتجاف"
-        },
-        {
-          "text": "..FELT SOMETHINGLIKE THIS BEFORE...",
-          "confidence": 0.839,
-          "text_ar": "...بشيء كهذا من قبل..."
+          "text": "..FELT SOMETHING LIKE THIS BEFORE...",
+          "confidence": 0.833,
+          "text_ar": "..بشيء كهذا من قبل..."
         },
         {
           "text": "CLANK",
-          "confidence": 0.995,
+          "confidence": 0.996,
           "text_ar": "رنين"
         }
       ]
@@ -539,23 +513,18 @@
       "sentences": [
         {
           "text": "HAA...",
-          "confidence": 0.977,
+          "confidence": 0.905,
           "text_ar": "هاه..."
         },
         {
           "text": "HAA...",
-          "confidence": 0.978,
+          "confidence": 0.925,
           "text_ar": "هاه..."
         },
         {
           "text": "SLURR",
-          "confidence": 0.953,
-          "text_ar": "مصه"
-        },
-        {
-          "text": "SLUUUURP UNNGH 0",
-          "confidence": 0.337,
-          "text_ar": "آه..."
+          "confidence": 0.905,
+          "text_ar": "رشف"
         }
       ]
     },
@@ -563,33 +532,28 @@
       "page": 25,
       "sentences": [
         {
-          "text": "SUCK)",
-          "confidence": 0.791,
-          "text_ar": "امتصاص"
+          "text": "SUCK",
+          "confidence": 0.85,
+          "text_ar": "مص"
         },
         {
-          "text": "TWITCH",
-          "confidence": 0.988,
-          "text_ar": "تشنج"
+          "text": "TWITCH M",
+          "confidence": 0.231,
+          "text_ar": "انتفاض"
         },
         {
           "text": "SHIVER",
-          "confidence": 0.988,
+          "confidence": 0.93,
           "text_ar": "ارتجاف"
         },
         {
           "text": "TWITCH",
-          "confidence": 0.986,
-          "text_ar": "تشنج"
+          "confidence": 0.984,
+          "text_ar": "انتفاض"
         },
         {
-          "text": "SLUMMURP",
-          "confidence": 0.614,
-          "text_ar": "مصه"
-        },
-        {
-          "text": "DRIPo",
-          "confidence": 0.774,
+          "text": "DRIP",
+          "confidence": 0.961,
           "text_ar": "تقطير"
         }
       ]
@@ -599,38 +563,38 @@
       "sentences": [
         {
           "text": "HAA...",
-          "confidence": 0.963,
+          "confidence": 0.934,
           "text_ar": "هاه..."
         },
         {
           "text": "SHIVER",
-          "confidence": 0.974,
+          "confidence": 0.987,
           "text_ar": "ارتجاف"
         },
         {
-          "text": "SHIVER",
-          "confidence": 0.981,
+          "text": "M SHIVER",
+          "confidence": 0.483,
           "text_ar": "ارتجاف"
         },
         {
           "text": "HAA...",
-          "confidence": 0.948,
+          "confidence": 0.961,
           "text_ar": "هاه..."
         },
         {
           "text": "HUFF HUFF",
-          "confidence": 0.9,
+          "confidence": 0.92,
           "text_ar": "لهاث"
         },
         {
           "text": "HNGH...!",
-          "confidence": 0.93,
+          "confidence": 0.915,
           "text_ar": "آه...!"
         },
         {
           "text": "SQUIRT SPLAT",
-          "confidence": 0.954,
-          "text_ar": "قذف"
+          "confidence": 0.948,
+          "text_ar": "تدفق"
         }
       ]
     },
@@ -638,44 +602,34 @@
       "page": 27,
       "sentences": [
         {
-          "text": "I DID IT...",
-          "confidence": 0.892,
-          "text_ar": "لقد فعلتها..."
+          "text": "IDID IT...",
+          "confidence": 0.881,
+          "text_ar": "فعلتها..."
         },
         {
           "text": "I MADE HER...",
-          "confidence": 0.896,
-          "text_ar": "لقد جعلتها..."
+          "confidence": 0.953,
+          "text_ar": "جعلتها..."
         },
         {
           "text": "CUM!",
-          "confidence": 0.913,
+          "confidence": 0.933,
           "text_ar": "تصل للنشوة!"
         },
         {
           "text": "HUFF",
-          "confidence": 0.988,
+          "confidence": 0.994,
           "text_ar": "لهاث"
         },
         {
           "text": "HUFF",
-          "confidence": 0.889,
+          "confidence": 0.919,
           "text_ar": "لهاث"
         },
         {
-          "text": "THERE YOU HAVE IT, THAT WAS LEE SEON-WOONG'S LAST DITCHEFFORTTO SAVE HIS DICK...",
-          "confidence": 0.933,
-          "text_ar": "وها قد حدث، كانت تلك محاولة لي سيون-وونغ الأخيرة لإنقاذ دكه..."
-        },
-        {
-          "text": "TREMBLE",
-          "confidence": 0.99,
-          "text_ar": "ارتجاف"
-        },
-        {
-          "text": "HUFF",
-          "confidence": 0.963,
-          "text_ar": "لهاث"
+          "text": "THERE YOUHAVE IT, THAT WAS LEE SEON-WOONG'S LAST DITCHEFFORTTO SAVE HIS DICK...",
+          "confidence": 0.91,
+          "text_ar": "ها قد رأيتم، كانت تلك محاولة لي سيون-وونغ الأخيرة لإنقاذ دِيكه..."
         },
         {
           "text": "TREMBLE",
@@ -684,7 +638,17 @@
         },
         {
           "text": "HUFF",
-          "confidence": 0.774,
+          "confidence": 0.974,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "TREMBLE",
+          "confidence": 0.991,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "W HUFF",
+          "confidence": 0.255,
           "text_ar": "لهاث"
         }
       ]
@@ -693,38 +657,38 @@
       "page": 28,
       "sentences": [
         {
-          "text": "..ACUNNILINGUS PERFORMANCE LIKE HIS LIFE DEPENDED ON IT!",
-          "confidence": 0.899,
-          "text_ar": "...أداء لعق فرج وكأن حياته تعتمد عليه!"
+          "text": ".A CUNNILINGUS PERFORMANCE LIKE HIS LIFE DEPENDED ON IT!",
+          "confidence": 0.857,
+          "text_ar": "..أداء جنس فموي وكأن حياته تعتمد عليه!"
         },
         {
           "text": "ESCAPING AFTER TIRING HER OUT FROM AN ORGASM...",
-          "confidence": 0.929,
+          "confidence": 0.884,
           "text_ar": "الهروب بعد إرهاقها بالنشوة..."
         },
         {
           "text": "DEFINITELY WASN'T AN INTRICATE PLAN...",
-          "confidence": 0.932,
-          "text_ar": "بالتأكيد لم تكن خطة معقدة..."
+          "confidence": 0.967,
+          "text_ar": "لم تكن خطة معقدة بالتأكيد..."
         },
         {
-          "text": "HONESTY, IDIDN'T KNOW I HAD IT IN ME TO PULL IT OFF!",
-          "confidence": 0.929,
-          "text_ar": "بصراحة، لم أكن أعلم أنني أمتلك القدرة على فعلها!"
+          "text": "HONESTY, I DIDN'T KNOW I HAD IT IN ME TO PULL IT OFF!",
+          "confidence": 0.93,
+          "text_ar": "بصراحة، لم أكن أعلم أنني أمتلك القدرة على فعل ذلك!"
         },
         {
           "text": "OKAY...",
-          "confidence": 0.961,
+          "confidence": 0.955,
           "text_ar": "حسناً..."
         },
         {
-          "text": "NOWIGOTTA DIP BEFORE SHE COMES TO HER SENSES...",
-          "confidence": 0.945,
-          "text_ar": "الآن يجب أن أهرب قبل أن تستعيد وعيها..."
+          "text": "NOWI GOTTA DIP BEFORE SHE COMES TO HER SENSES...",
+          "confidence": 0.929,
+          "text_ar": "الآن عليّ المغادرة قبل أن تستعيد وعيها..."
         },
         {
           "text": "HNNNGH!!",
-          "confidence": 0.997,
+          "confidence": 0.995,
           "text_ar": "آه!!"
         }
       ]
@@ -734,17 +698,17 @@
       "sentences": [
         {
           "text": "HUH?",
-          "confidence": 0.987,
+          "confidence": 0.996,
           "text_ar": "هاه؟"
         },
         {
           "text": "SHE'S NOT BUDGING...",
-          "confidence": 0.938,
-          "text_ar": "إنها لا تتزحزح..."
+          "confidence": 0.936,
+          "text_ar": "إنها لا تتحرك..."
         },
         {
           "text": "YOU'LL PAY FOR THIS...",
-          "confidence": 0.969,
+          "confidence": 0.94,
           "text_ar": "ستدفع ثمن هذا..."
         }
       ]
@@ -754,17 +718,12 @@
       "sentences": [
         {
           "text": "UNFORGIVABLE...",
-          "confidence": 0.968,
+          "confidence": 0.958,
           "text_ar": "لا يغتفر..."
         },
         {
-          "text": "SLIP",
-          "confidence": 0.912,
-          "text_ar": "انزلاق"
-        },
-        {
           "text": "I WAS ONLY TRYING TO GET RID OF THAT DEMONIC THING ON YOU...",
-          "confidence": 0.896,
+          "confidence": 0.9,
           "text_ar": "كنت أحاول فقط التخلص من ذلك الشيء الشيطاني الذي عليكِ..."
         }
       ]
@@ -773,14 +732,14 @@
       "page": 31,
       "sentences": [
         {
-          "text": "FIRST YOU GROPE MY EARS... ANDNOW...THIS HUMILIATION...",
-          "confidence": 0.938,
+          "text": "FIRST YOU GROPE MY EARS... AND NOW...THIS HUMILIATION...",
+          "confidence": 0.879,
           "text_ar": "أولاً تحسست أذني... والآن... هذا الإذلال..."
         },
         {
-          "text": "I'M GONNA BITE WHOLE THE DAMN THING OFF!!",
-          "confidence": 0.962,
-          "text_ar": "سأقضم ذلك الشيء اللعين بالكامل!!"
+          "text": "I'M GONNA BITE THE WHOLE DAMN THING OFF!!",
+          "confidence": 0.957,
+          "text_ar": "سأقوم بقضم ذلك الشيء اللعين بالكامل!!"
         }
       ]
     },
@@ -788,18 +747,18 @@
       "page": 32,
       "sentences": [
         {
-          "text": "WAIT,LET'S JUST BE RATIONAL FOR A MINUTE!",
-          "confidence": 0.969,
-          "text_ar": "انتظري، لنكن عقلانيين للحظة!"
+          "text": "WAIT, LET'S JUST BE RATIONAL FOR A MINUTE!",
+          "confidence": 0.946,
+          "text_ar": "انتظري، لنكن عقلانيين لدقيقة!"
         },
         {
           "text": "RATIONAL? RATIONAL??",
-          "confidence": 0.994,
+          "confidence": 0.988,
           "text_ar": "عقلاني؟ عقلاني؟"
         },
         {
           "text": "I'VE NEVER BEEN MORE RATIONAL IN MY LIFE!!",
-          "confidence": 0.949,
+          "confidence": 0.94,
           "text_ar": "لم أكن أكثر عقلانية في حياتي من الآن!!"
         }
       ]
@@ -814,12 +773,12 @@
         },
         {
           "text": "MY PANTS...",
-          "confidence": 0.942,
+          "confidence": 0.956,
           "text_ar": "سروالي..."
         },
         {
           "text": "DON'T TAKE OFF MY PANTS!!!",
-          "confidence": 0.938,
+          "confidence": 0.988,
           "text_ar": "لا تنزعي سروالي!!!"
         }
       ]
@@ -828,13 +787,8 @@
       "page": 34,
       "sentences": [
         {
-          "text": "SLAP",
-          "confidence": 0.961,
-          "text_ar": "صفعة"
-        },
-        {
           "text": "HUH?",
-          "confidence": 0.993,
+          "confidence": 0.992,
           "text_ar": "هاه؟"
         }
       ]
@@ -844,17 +798,17 @@
       "sentences": [
         {
           "text": "BADUM",
-          "confidence": 0.961,
+          "confidence": 0.969,
           "text_ar": "نبض"
         },
         {
           "text": "BADUM",
-          "confidence": 0.966,
+          "confidence": 0.969,
           "text_ar": "نبض"
         },
         {
           "text": "WHAT?",
-          "confidence": 0.994,
+          "confidence": 0.996,
           "text_ar": "ماذا؟"
         }
       ]
@@ -864,22 +818,22 @@
       "sentences": [
         {
           "text": "A CHUNK OF FLESH?",
-          "confidence": 0.939,
+          "confidence": 0.94,
           "text_ar": "قطعة لحم؟"
         },
         {
           "text": "BADUM",
-          "confidence": 0.941,
+          "confidence": 0.961,
           "text_ar": "نبض"
         },
         {
           "text": "BADUM",
-          "confidence": 0.952,
+          "confidence": 0.919,
           "text_ar": "نبض"
         },
         {
           "text": "BADUM",
-          "confidence": 0.946,
+          "confidence": 0.933,
           "text_ar": "نبض"
         }
       ]
@@ -889,30 +843,24 @@
       "sentences": [
         {
           "text": "BADUM",
-          "confidence": 0.98,
+          "confidence": 0.973,
           "text_ar": "نبض"
         },
         {
           "text": "I TOLD YOU, THAT'S MY DICK.",
-          "confidence": 0.872,
-          "text_ar": "قلت لكِ، هذا ديكي."
+          "confidence": 0.873,
+          "text_ar": "أخبرتك، هذا دِيكي."
         },
         {
           "text": "To be continued",
-          "confidence": 0.981,
+          "confidence": 0.993,
           "text_ar": "يتبع"
         }
       ]
     },
     {
       "page": 38,
-      "sentences": [
-        {
-          "text": "illain oILL",
-          "confidence": 0.912,
-          "text_ar": "شرير"
-        }
-      ]
+      "sentences": []
     },
     {
       "page": 39,
@@ -926,9 +874,9 @@
       "page": 41,
       "sentences": [
         {
-          "text": "喜卫卫",
-          "confidence": 0.567,
-          "text_ar": "حارس"
+          "text": "喜人卫卫",
+          "confidence": 0.523,
+          "text_ar": "هيمين"
         }
       ]
     },
@@ -937,13 +885,8 @@
       "sentences": [
         {
           "text": "RODOOO",
-          "confidence": 0.613,
+          "confidence": 0.491,
           "text_ar": "رودو"
-        },
-        {
-          "text": "空喜召生 07 REDCESUDC1",
-          "confidence": 0.381,
-          "text_ar": "فارغ"
         }
       ]
     },
@@ -951,9 +894,9 @@
       "page": 43,
       "sentences": [
         {
-          "text": "MOBYOICI E A",
-          "confidence": 0.39,
-          "text_ar": "موب"
+          "text": "DICK OY EYENIAL",
+          "confidence": 0.441,
+          "text_ar": "ديك"
         }
       ]
     },
@@ -967,11 +910,11 @@
         {
           "text": "鬼畜英雄",
           "confidence": 0.982,
-          "text_ar": "بطل شيطاني"
+          "text_ar": "بطل الجنون"
         },
         {
           "text": "よのき",
-          "confidence": 0.984,
+          "confidence": 0.969,
           "text_ar": "يونيكي"
         }
       ]
@@ -984,9 +927,9 @@
       "page": 47,
       "sentences": [
         {
-          "text": "FAS",
-          "confidence": 0.992,
-          "text_ar": "فاس"
+          "text": "- 1 FAS.",
+          "confidence": 0.188,
+          "text_ar": "الفصل الأول"
         }
       ]
     }
