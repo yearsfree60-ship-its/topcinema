@@ -427,18 +427,56 @@ jobs:
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/runs/run-${{ github.run_id }}.json"
           echo "=================================================="
 
-      # [جديد — وضع إعادة_ترجمة] لا أرشيف zip يُبنى بهذا الوضع (لا خطوات
-      # OCR إطلاقًا) — فقط تحديث مباشر لملفات text_ar.json/.txt الموجودة
-      # مسبقًا + failed_translations.txt، وكلاهما دُفع بالفعل أولًا بأول
-      # داخل run_retranslate_mode نفسها. هذه الخطوة إعلامية فقط.
-      - name: ملخّص إعادة الترجمة
+      # [جديد — رابط خاص بهذه التشغيلة، بنفس نمط وضع تجربة OCR حرفيًا] راجع
+      # التبرير الكامل (بادئة retranslate-، RUN_ID كلاحقة ثابتة تمنع تصادم
+      # الاسم عبر تشغيلات متراكمة بنفس المجلد) بترويسة بناء zip داخل
+      # run_retranslate_mode بـocr_extraction.py.
+      - name: تحديد اسم أرشيف zip الفعلي (وضع إعادة الترجمة)
+        id: retranslate_zip_name
         if: always() && inputs.mode == 'إعادة_ترجمة'
         run: |
+          run_suffix="retranslate-run-${{ github.run_id }}"
+          zip_path="$(ls "$OUTPUT_WORKTREE/output/ocr_experiment/runs/${run_suffix}.zip" \
+                         "$OUTPUT_WORKTREE"/output/ocr_experiment/runs/retranslate-*"__run-${{ github.run_id }}.zip" \
+                         2>/dev/null | head -n1 || true)"
+          if [ -n "$zip_path" ]; then
+            zip_name="$(basename "$zip_path" .zip)"
+            found=1
+          else
+            echo "⚠️ لم يُعثر على أرشيف zip يطابق هذه التشغيلة (لا فصول تُرجمت فعليًا بها على الأغلب — راجع لوج خطوة \"تشغيل الضغط\" أعلاه)"
+            zip_name="$run_suffix"
+            found=0
+          fi
+          echo "zip_name=$zip_name" >> "$GITHUB_OUTPUT"
+          echo "found=$found" >> "$GITHUB_OUTPUT"
+          zip_name_encoded="$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "$zip_name")"
+          echo "zip_name_encoded=$zip_name_encoded" >> "$GITHUB_OUTPUT"
+
+      - name: رابط نتائج إعادة الترجمة
+        if: always() && inputs.mode == 'إعادة_ترجمة' && steps.retranslate_zip_name.outputs.found == '1'
+        run: |
           echo "=================================================="
-          echo "قائمة الفصول التي ما زالت بلا ترجمة (إن وُجدت — 404 يعني نجحت كل الفصول المستهدَفة):"
-          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/failed_translations.txt"
+          echo "📦 أرشيف zip خاص بهذه التشغيلة فقط (الترجمات + failed_translations.txt الحالي) — رابط تنزيل مباشر بلا تسجيل دخول:"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/runs/${{ steps.retranslate_zip_name.outputs.zip_name_encoded }}.zip"
           echo ""
-          echo "راجع لوج هذه الخطوة أعلاه (\"تشغيل الضغط\") لتفاصيل كل فصل على حدة"
+          echo "أو حمّل أرتيفاكت '${{ steps.retranslate_zip_name.outputs.zip_name }}' من صفحة هذه التشغيلة أعلاه (نسخة احتياطية)"
+          echo "=================================================="
+
+      - name: رفع نتائج إعادة الترجمة كأرتيفاكت
+        if: always() && inputs.mode == 'إعادة_ترجمة' && steps.retranslate_zip_name.outputs.found == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.retranslate_zip_name.outputs.zip_name }}
+          path: ${{ env.OUTPUT_WORKTREE }}/output/ocr_experiment/runs/${{ steps.retranslate_zip_name.outputs.zip_name }}.zip
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: ملخّص إعادة الترجمة (لا فصول تُرجمت فعليًا)
+        if: always() && inputs.mode == 'إعادة_ترجمة' && steps.retranslate_zip_name.outputs.found != '1'
+        run: |
+          echo "=================================================="
+          echo "لم يُنتَج أرشيف خاص بهذه التشغيلة (لم يُترجَم أي فصل فعليًا بها — إما لا شيء لإعادة ترجمته، أو فشلت كل المحاولات). راجع لوج خطوة \"تشغيل الضغط\" أعلاه للتفاصيل، وملف failed_translations.txt الحالي إن وُجد:"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/failed_translations.txt"
           echo "=================================================="
 
       - name: رابط تقارير التشخيص
