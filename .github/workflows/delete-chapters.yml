@@ -77,19 +77,20 @@ jobs:
           cd "$OUTPUT_WORKTREE"
           git_rel_output="output"
 
-          # allowed_paths (نسبية لجذر git، أي بادئة git_rel_output دومًا) —
-          # نفس قائمة /tmp/targets.txt + manifest.json حصرًا.
-          add_paths=("$git_rel_output/manifest.json")
-          while IFS= read -r t; do
-            add_paths+=("$git_rel_output/$t")
-          done < /tmp/targets.txt
+          # manifest.json فقط تُضاف بـgit add — تعديل بملف موجود فعلًا.
+          # مسارات targets.txt (مجلدات فصول/OCR) لا تُضاف بـgit add إطلاقًا:
+          # git rm أدناه يُسجّل حذفها بالفهرس بنفسه، وإعادة تمرير مسار لم
+          # يعد موجودًا لا بالقرص ولا بالفهرس لـgit add تفشل بـ"did not
+          # match any files" — هذا بالضبط سبب فشل التشغيلة السابقة.
+          manifest_path="$git_rel_output/manifest.json"
 
           apply_and_stage () {
             # يُعاد استدعاؤها بكل محاولة دفع: يسحب أحدث manifest.json من
             # origin مباشرة (لا نسخة محلية قديمة محتملة)، يطبّق الحذف عليها
             # (عملية آمنة التكرار)، يكتبها بالقرص، ثم يحذف مجلدات الفصول/OCR
             # الفعلية (git rm --ignore-unmatch: آمن حتى لو حُذفت مسبقًا
-            # بمحاولة سابقة)، ثم يضيف بالضبط add_paths لا أكثر.
+            # بمحاولة سابقة، ويُسجّل حذفها بالفهرس بنفسه)، ثم يضيف تعديل
+            # manifest.json حصرًا.
             git show "origin/${GIT_BRANCH}:${git_rel_output}/manifest.json" > /tmp/remote_manifest.json 2>/dev/null || echo '{}' > /tmp/remote_manifest.json
             python3 "$GITHUB_WORKSPACE/delete_manager.py" apply-manifest /tmp/remote_manifest.json "${OUTPUT_DIR}/manifest.json"
 
@@ -97,7 +98,7 @@ jobs:
               git rm -r --ignore-unmatch --quiet -- "$git_rel_output/$t" || true
             done < /tmp/targets.txt
 
-            git add -- "${add_paths[@]}"
+            git add -- "$manifest_path"
           }
 
           apply_and_stage
