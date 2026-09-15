@@ -1,17 +1,17 @@
 [
   {
-    "url": "https://starzmanga.com/manga/i-am-the-fated-villain/1/",
+    "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
     "tls_and_server_info": {
-      "server_ip": "104.21.33.104",
+      "server_ip": "172.67.152.235",
       "tls_issuer": "Google Trust Services",
-      "tls_subject": "starzmanga.com",
-      "tls_not_after": "Nov 22 12:34:08 2026 GMT",
+      "tls_subject": "comix.to",
+      "tls_not_after": "Nov 25 12:49:51 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "52.230.165.16",
+      "ip": "52.188.87.48",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Des Moines",
+      "city": "Dulles Town Center",
       "country": "US",
       "error": null
     },
@@ -19,7 +19,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3ac5c19eddb5769-ORD",
+        "cf-ray": "a3b6adf45ad0fe3b-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -37,18 +37,16 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.07
+      "elapsed_sec": 0.03
     },
     "browser_probe": {
       "navigated": true,
-      "title": "Just a moment...",
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "challenge_resolved_after_reload": false,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_at_t0": 1,
+      "title": "God-level Assassin, I'm the Shadow · Ch.140",
+      "challenge_detected": false,
+      "protection_category": "none",
+      "challenge_resolved_after_reload": null,
+      "protection_signatures": [],
+      "images_at_t0": 0,
       "images_after_wait": 1,
       "images_after_scroll": 1,
       "selector_match_counts": {
@@ -63,17 +61,17 @@
       "widget_excluded_samples": [],
       "suggested_selectors": [],
       "domain_distribution": {
-        "starzmanga.com": 1
+        "comix.to": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-7392-screenshot.png",
+      "screenshot_path": "diagnostics/comix-to-5552-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/12abf74c-1dc8-42bd-8a21-38d57e7451e8",
-          "blob:https://challenges.cloudflare.com/3d40f211-48e6-4087-998d-2c5b668c88ea",
-          "blob:https://challenges.cloudflare.com/8d5b809a-0eee-4aae-b4ed-8455b68db803"
+          "blob:https://challenges.cloudflare.com/17028d16-fcde-40d4-97ac-30d55164de9f",
+          "blob:https://challenges.cloudflare.com/60c4e2a4-96b2-4c00-a7e5-5ec03d37edd4",
+          "blob:https://challenges.cloudflare.com/d993f08c-05f2-4cd9-a58c-f947d04e477e"
         ]
       },
       "adblock_wall": {
@@ -84,8 +82,13 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": false,
-        "reason": "لا كوكيز بالجلسة لاختبارها"
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -100,9 +103,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "images_after_wait": 1,
+          "challenge_detected": false,
+          "protection_category": "none",
+          "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -116,105 +119,56 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": true
       },
       "error": null,
-      "goto_elapsed_sec": 1.9,
+      "goto_elapsed_sec": 0.46,
       "navigation_timing": {
-        "ttfb_ms": 15,
-        "dom_content_loaded_ms": 1840,
+        "ttfb_ms": 214,
+        "dom_content_loaded_ms": 447,
         "load_event_ms": null,
-        "transfer_size_bytes": 4101
+        "transfer_size_bytes": 2847
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.8,
-      "total_probe_elapsed_sec": 89.44,
+      "wait_for_images_elapsed_sec": 2.43,
+      "scroll_elapsed_sec": 1.83,
+      "total_probe_elapsed_sec": 5.22,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cf-mitigated": "challenge",
-        "cf-ray": "a3ac5c349e9ac667-ORD",
+        "cache-control": "no-cache, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a3b6adf5cd3ce3c4-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-xbAlQFrxbFBjfGVS2N2BVK' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-        "content-type": "text/html; charset=UTF-8",
-        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "cross-origin-embedder-policy": "require-corp",
-        "cross-origin-opener-policy": "same-origin",
-        "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 03:38:40 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 15 Sep 2026 09:42:07 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "origin-agent-cluster": "?1",
-        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-        "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OY%2BCgNKOG8%2Fy5rTrM%2FqVz2qv18cskvNY4oJgY4z%2FwvUoJmUmmOnar9ye4hLQ%2BmssHkEiRphqAl95s4kCx%2BFh3keCJvlINEhwLmvbpSQhToed7o7IXevweLFMg1%2BukHNI%2BA%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Zm2jZ%2FOl9bHuRjhMmZNaUFzAl0ocOHwYYz4aido03%2BQe8tCxBXyJurMhB70K01I1I71AxPaa2tNowtPArJx%2BZM0pb1Kd6enN4jrS0hJ5CvC%2Fqv4Lv5qY%2B9USag%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3ac5c349e9ac667\"",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "SAMEORIGIN"
+        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=18,cfOrigin;dur=189",
+        "vary": "accept-encoding",
+        "x-request-id": "aa895ee130f8cd80d51b2c9857b9edf9"
       },
       "all_third_party_domains": [
         "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com"
+        "challenges.cloudflare.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "static.cloudflareinsights.com",
+        "whos.amung.us"
       ],
-      "turnstile_click_attempt": {
-        "iframe_found": false,
-        "clicked": false,
-        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-        "click_method": "none",
-        "attempt_number": 3
-      },
-      "extended_challenge_probe": {
-        "pure_wait": {
-          "max_wait_sec": 60,
-          "poll_interval_sec": 2,
-          "resolved_during_pure_wait": false,
-          "elapsed_until_resolved_sec": null,
-          "final_category_after_wait": "solvable_challenge"
-        },
-        "click_attempts": [
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 1
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 2
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 3
-          }
-        ],
-        "final_after_reload": {
-          "attempted": true,
-          "category": "solvable_challenge",
-          "resolved": false,
-          "error": null
-        }
-      },
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
       "content_images_before_scroll": 1
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "Just a moment...",
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "challenge_resolved_after_reload": false,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_at_t0": 1,
+      "title": "God-level Assassin, I'm the Shadow · Ch.140",
+      "challenge_detected": false,
+      "protection_category": "none",
+      "challenge_resolved_after_reload": null,
+      "protection_signatures": [],
+      "images_at_t0": 0,
       "images_after_wait": 1,
       "images_after_scroll": 1,
       "selector_match_counts": {
@@ -229,17 +183,17 @@
       "widget_excluded_samples": [],
       "suggested_selectors": [],
       "domain_distribution": {
-        "starzmanga.com": 1
+        "comix.to": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-7392-run2-screenshot.png",
+      "screenshot_path": "diagnostics/comix-to-5552-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/1358ae85-562b-496c-abd2-2dec00f45e36",
-          "blob:https://challenges.cloudflare.com/198f5236-e2c3-4ebc-9e57-27506ec79013",
-          "blob:https://challenges.cloudflare.com/4aabb621-0ed7-4ba8-b9f7-621fc21ebdbf"
+          "blob:https://challenges.cloudflare.com/27bdc4ca-e135-4cbd-958f-5b2121b28aae",
+          "blob:https://challenges.cloudflare.com/908ea33f-c1c8-4085-9dbd-a10ca9ca1f24",
+          "blob:https://challenges.cloudflare.com/e76ca11d-94c0-468b-94ab-37300df85044"
         ]
       },
       "adblock_wall": {
@@ -250,8 +204,13 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": false,
-        "reason": "لا كوكيز بالجلسة لاختبارها"
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -266,9 +225,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "images_after_wait": 1,
+          "challenge_detected": false,
+          "protection_category": "none",
+          "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -282,101 +241,54 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": true
       },
       "error": null,
-      "goto_elapsed_sec": 0.11,
+      "goto_elapsed_sec": 0.36,
       "navigation_timing": {
-        "ttfb_ms": 18,
-        "dom_content_loaded_ms": 106,
+        "ttfb_ms": 204,
+        "dom_content_loaded_ms": 350,
         "load_event_ms": null,
-        "transfer_size_bytes": 4108
+        "transfer_size_bytes": 2851
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.79,
-      "total_probe_elapsed_sec": 83.28,
+      "wait_for_images_elapsed_sec": 2.43,
+      "scroll_elapsed_sec": 1.9,
+      "total_probe_elapsed_sec": 4.97,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cf-mitigated": "challenge",
-        "cf-ray": "a3ac5e777e445769-ORD",
+        "cache-control": "no-cache, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a3b6ae99c803b885-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-AGdFXzwj2QElKxpVU59P2e' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-        "content-type": "text/html; charset=UTF-8",
-        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "cross-origin-embedder-policy": "require-corp",
-        "cross-origin-opener-policy": "same-origin",
-        "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 03:40:13 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 15 Sep 2026 09:42:33 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "origin-agent-cluster": "?1",
-        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-        "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XBl0fB0uny6ui0CD7KJZ5xvEUtQamzMH1qmaYU%2BhHl21v6Mjmvw2JgDWQ83oap2bZRpU0lwYROwV4l7CHqInjhszFi3w9%2BLdn8Nek8vG2cJxSBiF8NuSZs0pVWyoDuayJA%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gqfe%2FkoWjOlny%2FILmG0hSw8hdHTA4i3GD2NOwsiFKRMzkBLUcC1tTr82XUyL7aQmZci%2B4bywjBX3qWvKQjqQVM1OIJ3%2BQcST1zImL3tJ7uAdNC6BHVZ8LJV05A%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3ac5e777e445769\"",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "SAMEORIGIN"
+        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=195",
+        "vary": "accept-encoding",
+        "x-request-id": "aa895ee130f8cd80d51b2c9857b9edf9"
       },
       "all_third_party_domains": [
         "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com"
+        "challenges.cloudflare.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "static.cloudflareinsights.com",
+        "whos.amung.us"
       ],
-      "turnstile_click_attempt": {
-        "iframe_found": false,
-        "clicked": false,
-        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-        "click_method": "none",
-        "attempt_number": 3
-      },
-      "extended_challenge_probe": {
-        "pure_wait": {
-          "max_wait_sec": 60,
-          "poll_interval_sec": 2,
-          "resolved_during_pure_wait": false,
-          "elapsed_until_resolved_sec": null,
-          "final_category_after_wait": "solvable_challenge"
-        },
-        "click_attempts": [
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 1
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 2
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 3
-          }
-        ],
-        "final_after_reload": {
-          "attempted": true,
-          "category": "solvable_challenge",
-          "resolved": false,
-          "error": null
-        }
-      },
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
       "content_images_before_scroll": 1
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
       "target": "page_url",
-      "sample_url": "https://starzmanga.com/manga/i-am-the-fated-villain/1/",
+      "sample_url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
       "requests_sent": 4,
-      "elapsed_sec": 0.28,
+      "elapsed_sec": 0.14,
       "status_codes": [
         403,
         403,
@@ -388,43 +300,28 @@
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
-    "deep_diagnostic": {
-      "runtime_enable_leak_probe": {
-        "tested": true,
-        "patchright_available": true,
-        "protection_category": "solvable_challenge",
-        "challenge_detected": true,
-        "resolved_after_reload": false,
-        "elapsed_sec": 76.68,
-        "error": null
-      },
-      "source_url_leak_probe": {
-        "tested": true,
-        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
-        "error": null
-      }
-    },
+    "deep_diagnostic": null,
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-7392-report.json",
+      "report": "diagnostics/comix-to-5552-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-7392-screenshot.png",
-        "diagnostics/starzmanga-com-7392-run2-screenshot.png"
+        "diagnostics/comix-to-5552-screenshot.png",
+        "diagnostics/comix-to-5552-run2-screenshot.png"
       ]
     }
   },
   {
-    "url": "https://starzmanga.com/manga/i-am-the-fated-villain/2/",
+    "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-2",
     "tls_and_server_info": {
-      "server_ip": "172.67.189.207",
+      "server_ip": "104.21.49.220",
       "tls_issuer": "Google Trust Services",
-      "tls_subject": "starzmanga.com",
-      "tls_not_after": "Nov 22 12:34:08 2026 GMT",
+      "tls_subject": "comix.to",
+      "tls_not_after": "Nov 25 12:49:51 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "52.230.165.16",
+      "ip": "52.188.87.48",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Des Moines",
+      "city": "Dulles Town Center",
       "country": "US",
       "error": null
     },
@@ -432,7 +329,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3ac6293f87b4848-ORD",
+        "cf-ray": "a3b6af3fabb3adf1-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -450,18 +347,16 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.07
+      "elapsed_sec": 0.03
     },
     "browser_probe": {
       "navigated": true,
-      "title": "Just a moment...",
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "challenge_resolved_after_reload": false,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_at_t0": 1,
+      "title": "God-level Assassin, I'm the Shadow · Ch.140",
+      "challenge_detected": false,
+      "protection_category": "none",
+      "challenge_resolved_after_reload": null,
+      "protection_signatures": [],
+      "images_at_t0": 0,
       "images_after_wait": 1,
       "images_after_scroll": 1,
       "selector_match_counts": {
@@ -476,17 +371,17 @@
       "widget_excluded_samples": [],
       "suggested_selectors": [],
       "domain_distribution": {
-        "starzmanga.com": 1
+        "comix.to": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-609-screenshot.png",
+      "screenshot_path": "diagnostics/comix-to-106-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0c9ee146-d255-4bba-8081-c0bc3e16cc28",
-          "blob:https://challenges.cloudflare.com/3a6a7308-362b-4089-abcf-c2024dd865b0",
-          "blob:https://challenges.cloudflare.com/412affa8-b992-454a-b7fa-da5f62d6b1df"
+          "blob:https://challenges.cloudflare.com/5cec3e9a-df80-4235-9eab-d602ff18689d",
+          "blob:https://challenges.cloudflare.com/60fba297-010d-4123-a36f-a8024d307bdd",
+          "blob:https://challenges.cloudflare.com/e6663689-4578-4d7c-98d8-c18d8f874a09"
         ]
       },
       "adblock_wall": {
@@ -497,8 +392,13 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": false,
-        "reason": "لا كوكيز بالجلسة لاختبارها"
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -513,9 +413,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "images_after_wait": 1,
+          "challenge_detected": false,
+          "protection_category": "none",
+          "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -529,105 +429,56 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": true
       },
       "error": null,
-      "goto_elapsed_sec": 0.12,
+      "goto_elapsed_sec": 0.63,
       "navigation_timing": {
-        "ttfb_ms": 18,
-        "dom_content_loaded_ms": 116,
+        "ttfb_ms": 201,
+        "dom_content_loaded_ms": 624,
         "load_event_ms": null,
-        "transfer_size_bytes": 4108
+        "transfer_size_bytes": 2916
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 2.0,
-      "total_probe_elapsed_sec": 83.41,
+      "wait_for_images_elapsed_sec": 2.46,
+      "scroll_elapsed_sec": 1.91,
+      "total_probe_elapsed_sec": 5.18,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cf-mitigated": "challenge",
-        "cf-ray": "a3ac6294a9e4549d-ORD",
+        "cache-control": "no-cache, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a3b6af400c62d640-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-rnO2EFA1E6LpAvtddKsoZj' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-        "content-type": "text/html; charset=UTF-8",
-        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "cross-origin-embedder-policy": "require-corp",
-        "cross-origin-opener-policy": "same-origin",
-        "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 03:43:01 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 15 Sep 2026 09:43:00 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "origin-agent-cluster": "?1",
-        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-        "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6S%2F70DGTUADEmt44cJnzd7Gmv8pPT0LCeLhpkM66X001R4JAx49proXSeGQ1hq6fZFxqLqOjY%2FVLaep0TM%2BkL1qdFlBTpRmoZzOpxbNAJSvHCT9gzrOtni1XOdB4l9tvvQ%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fuJBfDi%2FlnJkcqh7dgW0dEC2xsFf6jo4nDC1F7TyJlyOPUpUsnxWU82dbd6Bk%2BkRxSvdWw0qzvRe1jImmtgKTfX3fgw7sSFxl4%2BU8Mlk6rxhQU1SezC13cOwCw%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3ac6294a9e4549d\"",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "SAMEORIGIN"
+        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=3,cfOrigin;dur=194",
+        "vary": "accept-encoding",
+        "x-request-id": "969f558748e821f03ce306bc1c8b6670"
       },
       "all_third_party_domains": [
         "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com"
+        "challenges.cloudflare.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "static.cloudflareinsights.com",
+        "whos.amung.us"
       ],
-      "turnstile_click_attempt": {
-        "iframe_found": false,
-        "clicked": false,
-        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-        "click_method": "none",
-        "attempt_number": 3
-      },
-      "extended_challenge_probe": {
-        "pure_wait": {
-          "max_wait_sec": 60,
-          "poll_interval_sec": 2,
-          "resolved_during_pure_wait": false,
-          "elapsed_until_resolved_sec": null,
-          "final_category_after_wait": "solvable_challenge"
-        },
-        "click_attempts": [
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 1
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 2
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 3
-          }
-        ],
-        "final_after_reload": {
-          "attempted": true,
-          "category": "solvable_challenge",
-          "resolved": false,
-          "error": null
-        }
-      },
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
       "content_images_before_scroll": 1
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "Just a moment...",
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "challenge_resolved_after_reload": false,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_at_t0": 1,
+      "title": "God-level Assassin, I'm the Shadow · Ch.140",
+      "challenge_detected": false,
+      "protection_category": "none",
+      "challenge_resolved_after_reload": null,
+      "protection_signatures": [],
+      "images_at_t0": 0,
       "images_after_wait": 1,
       "images_after_scroll": 1,
       "selector_match_counts": {
@@ -642,17 +493,17 @@
       "widget_excluded_samples": [],
       "suggested_selectors": [],
       "domain_distribution": {
-        "starzmanga.com": 1
+        "comix.to": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-609-run2-screenshot.png",
+      "screenshot_path": "diagnostics/comix-to-106-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/4c72ae0e-eafb-4418-8097-175c21b22d91",
-          "blob:https://challenges.cloudflare.com/74fb1103-2f8b-4f23-a431-5bab9df5dccf",
-          "blob:https://challenges.cloudflare.com/97bbdeff-7fa1-40d2-bd8f-51f0365fbf54"
+          "blob:https://challenges.cloudflare.com/29e041f4-03ff-45e6-a161-c7ba79675a37",
+          "blob:https://challenges.cloudflare.com/d4b766c4-482d-4d89-86d3-930dce31b8e2",
+          "blob:https://challenges.cloudflare.com/ee11ac0a-475a-470a-9571-cc2f36167235"
         ]
       },
       "adblock_wall": {
@@ -663,8 +514,13 @@
         "timed_out": false
       },
       "cookie_reuse_probe": {
-        "tested": false,
-        "reason": "لا كوكيز بالجلسة لاختبارها"
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
       },
       "fingerprint_with_stealth": {
         "webdriver": false,
@@ -679,9 +535,9 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "images_after_wait": 1,
+          "challenge_detected": false,
+          "protection_category": "none",
+          "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
             "hasWindowChrome": false,
@@ -695,101 +551,54 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": false
+        "image_count_differs": true
       },
       "error": null,
-      "goto_elapsed_sec": 0.1,
+      "goto_elapsed_sec": 0.34,
       "navigation_timing": {
-        "ttfb_ms": 16,
-        "dom_content_loaded_ms": 100,
+        "ttfb_ms": 195,
+        "dom_content_loaded_ms": 335,
         "load_event_ms": null,
-        "transfer_size_bytes": 4116
+        "transfer_size_bytes": 2851
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.97,
-      "total_probe_elapsed_sec": 83.36,
+      "wait_for_images_elapsed_sec": 2.43,
+      "scroll_elapsed_sec": 1.85,
+      "total_probe_elapsed_sec": 4.92,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
-        "cf-mitigated": "challenge",
-        "cf-ray": "a3ac64cc1e993c96-ORD",
+        "cache-control": "no-cache, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a3b6afe449b6b885-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-Ulj6zC1d4Ys1A53qznnFfR' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-        "content-type": "text/html; charset=UTF-8",
-        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "cross-origin-embedder-policy": "require-corp",
-        "cross-origin-opener-policy": "same-origin",
-        "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 03:44:32 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 15 Sep 2026 09:43:26 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "origin-agent-cluster": "?1",
-        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-        "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=eAVAj1rZG55ooAOu4D2qmMzWaB%2FZ1ywC12R71QQ8PGOj1KxsswDvEUfjqPub5mDQKwxM10YSyD1rcXyMCFuvTQm5l7rTUpVjcfl1bUfLYqw%2FwVCS24NtMkQdhNSdAJ5H5Q%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iW9DmKBmfKDoAM4bxoC4HQHqIGBHizMmpxiiAjAuDGu%2BRlO7%2F8HhBIXDZKQWSBUbVmRrIPfUmwvd64ZbibdoR6LxfuIJoGF8qeritgEipwFBRPXVeLIt1cc6mQ%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3ac64cc1e993c96\"",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "SAMEORIGIN"
+        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=186",
+        "vary": "accept-encoding",
+        "x-request-id": "969f558748e821f03ce306bc1c8b6670"
       },
       "all_third_party_domains": [
         "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com"
+        "challenges.cloudflare.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "static.cloudflareinsights.com",
+        "whos.amung.us"
       ],
-      "turnstile_click_attempt": {
-        "iframe_found": false,
-        "clicked": false,
-        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-        "click_method": "none",
-        "attempt_number": 3
-      },
-      "extended_challenge_probe": {
-        "pure_wait": {
-          "max_wait_sec": 60,
-          "poll_interval_sec": 2,
-          "resolved_during_pure_wait": false,
-          "elapsed_until_resolved_sec": null,
-          "final_category_after_wait": "solvable_challenge"
-        },
-        "click_attempts": [
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 1
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 2
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 3
-          }
-        ],
-        "final_after_reload": {
-          "attempted": true,
-          "category": "solvable_challenge",
-          "resolved": false,
-          "error": null
-        }
-      },
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
       "content_images_before_scroll": 1
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
       "target": "page_url",
-      "sample_url": "https://starzmanga.com/manga/i-am-the-fated-villain/2/",
+      "sample_url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-2",
       "requests_sent": 4,
-      "elapsed_sec": 0.33,
+      "elapsed_sec": 0.13,
       "status_codes": [
         403,
         403,
@@ -801,440 +610,12 @@
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
-    "deep_diagnostic": {
-      "runtime_enable_leak_probe": {
-        "tested": true,
-        "patchright_available": true,
-        "protection_category": "solvable_challenge",
-        "challenge_detected": true,
-        "resolved_after_reload": false,
-        "elapsed_sec": 75.27,
-        "error": null
-      },
-      "source_url_leak_probe": {
-        "tested": true,
-        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
-        "error": null
-      }
-    },
+    "deep_diagnostic": null,
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-609-report.json",
+      "report": "diagnostics/comix-to-106-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-609-screenshot.png",
-        "diagnostics/starzmanga-com-609-run2-screenshot.png"
-      ]
-    }
-  },
-  {
-    "url": "https://starzmanga.com/manga/i-am-the-fated-villain/3/",
-    "tls_and_server_info": {
-      "server_ip": "104.21.33.104",
-      "tls_issuer": "Google Trust Services",
-      "tls_subject": "starzmanga.com",
-      "tls_not_after": "Nov 22 12:34:08 2026 GMT",
-      "error": null
-    },
-    "runner_network_info": {
-      "ip": "52.230.165.16",
-      "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Des Moines",
-      "country": "US",
-      "error": null
-    },
-    "static_probe": {
-      "status_code": 403,
-      "headers_of_interest": {
-        "server": "cloudflare",
-        "cf-ray": "a3ac68de6c465769-ORD",
-        "cf-mitigated": "challenge",
-        "content-type": "text/html; charset=UTF-8"
-      },
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_via_noscript": 0,
-      "images_via_data_attr": 0,
-      "images_via_plain_src": 0,
-      "extracted_image_count": 0,
-      "extracted_sample_urls": [],
-      "sample_image_urls": [],
-      "signed_url_params": [],
-      "raw_cookies_received": [],
-      "error": null,
-      "elapsed_sec": 0.07
-    },
-    "browser_probe": {
-      "navigated": true,
-      "title": "Just a moment...",
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "challenge_resolved_after_reload": false,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_at_t0": 1,
-      "images_after_wait": 1,
-      "images_after_scroll": 1,
-      "selector_match_counts": {
-        ".reading-content img": 0,
-        ".page-break img": 0,
-        ".text-left img": 0,
-        "#readerarea img": 0,
-        ".chapter-content img": 0
-      },
-      "unmatched_img_count": 1,
-      "widget_excluded_count": 0,
-      "widget_excluded_samples": [],
-      "suggested_selectors": [],
-      "domain_distribution": {
-        "starzmanga.com": 1
-      },
-      "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-1393-screenshot.png",
-      "hotlink_probe": null,
-      "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0043da11-0d8f-4383-b44c-4e8004bfb490",
-          "blob:https://challenges.cloudflare.com/1758c849-611d-4b1d-a7a8-3cd36cab3654",
-          "blob:https://challenges.cloudflare.com/365c279a-0e29-4bad-a3b4-bee9b1e55eaa"
-        ]
-      },
-      "adblock_wall": {
-        "detected": false,
-        "became_ready_after_sec": null,
-        "clicked": false,
-        "button_snippet": null,
-        "timed_out": false
-      },
-      "cookie_reuse_probe": {
-        "tested": false,
-        "reason": "لا كوكيز بالجلسة لاختبارها"
-      },
-      "fingerprint_with_stealth": {
-        "webdriver": false,
-        "hasWindowChrome": true,
-        "pluginsLength": 3,
-        "languages": [
-          "en-US",
-          "en"
-        ],
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-      },
-      "stealth_comparison": {
-        "no_stealth": {
-          "navigated": true,
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "images_after_wait": 1,
-          "fingerprint": {
-            "webdriver": true,
-            "hasWindowChrome": false,
-            "pluginsLength": 0,
-            "languages": [
-              "en-US"
-            ],
-            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-          },
-          "error": null
-        },
-        "webdriver_flag_hidden_by_stealth": true,
-        "challenge_outcome_differs": false,
-        "image_count_differs": false
-      },
-      "error": null,
-      "goto_elapsed_sec": 0.11,
-      "navigation_timing": {
-        "ttfb_ms": 16,
-        "dom_content_loaded_ms": 105,
-        "load_event_ms": null,
-        "transfer_size_bytes": 4100
-      },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.97,
-      "total_probe_elapsed_sec": 83.36,
-      "scroll_rounds_completed": 3,
-      "scroll_stop_reason": "stable_no_growth_at_bottom",
-      "navigation_response_headers": {
-        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "cf-mitigated": "challenge",
-        "cf-ray": "a3ac68df2c341042-ORD",
-        "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-MRh8K2fHEvkaHfhQLCIIBv' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-        "content-type": "text/html; charset=UTF-8",
-        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "cross-origin-embedder-policy": "require-corp",
-        "cross-origin-opener-policy": "same-origin",
-        "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 03:47:19 GMT",
-        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "origin-agent-cluster": "?1",
-        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-        "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=E%2F%2FFVRLosDbA7RDYJB%2BN7Oaw33zTBTsQzSHimldcIFbI6s2bbBnqf0cVloL3Kehod8i%2Fi%2FsYf5bba7P79%2BO7AVLBGlh1hXRnDtPuRgZWMPFfHEGlFtNhZF46ugv%2FXlSkKA%3D%3D\"}]}",
-        "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3ac68df2c341042\"",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "SAMEORIGIN"
-      },
-      "all_third_party_domains": [
-        "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com"
-      ],
-      "turnstile_click_attempt": {
-        "iframe_found": false,
-        "clicked": false,
-        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-        "click_method": "none",
-        "attempt_number": 3
-      },
-      "extended_challenge_probe": {
-        "pure_wait": {
-          "max_wait_sec": 60,
-          "poll_interval_sec": 2,
-          "resolved_during_pure_wait": false,
-          "elapsed_until_resolved_sec": null,
-          "final_category_after_wait": "solvable_challenge"
-        },
-        "click_attempts": [
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 1
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 2
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 3
-          }
-        ],
-        "final_after_reload": {
-          "attempted": true,
-          "category": "solvable_challenge",
-          "resolved": false,
-          "error": null
-        }
-      },
-      "content_images_before_scroll": 1
-    },
-    "browser_probe_second_run": {
-      "navigated": true,
-      "title": "Just a moment...",
-      "challenge_detected": true,
-      "protection_category": "solvable_challenge",
-      "challenge_resolved_after_reload": false,
-      "protection_signatures": [
-        "Cloudflare"
-      ],
-      "images_at_t0": 1,
-      "images_after_wait": 1,
-      "images_after_scroll": 1,
-      "selector_match_counts": {
-        ".reading-content img": 0,
-        ".page-break img": 0,
-        ".text-left img": 0,
-        "#readerarea img": 0,
-        ".chapter-content img": 0
-      },
-      "unmatched_img_count": 1,
-      "widget_excluded_count": 0,
-      "widget_excluded_samples": [],
-      "suggested_selectors": [],
-      "domain_distribution": {
-        "starzmanga.com": 1
-      },
-      "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-1393-run2-screenshot.png",
-      "hotlink_probe": null,
-      "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/1552af47-9354-436c-bffe-8aa784679a86",
-          "blob:https://challenges.cloudflare.com/65c2ed37-7ee7-42fe-a4c1-a78935b1b110",
-          "blob:https://challenges.cloudflare.com/8a210530-7806-448c-9374-ebb64be69390"
-        ]
-      },
-      "adblock_wall": {
-        "detected": false,
-        "became_ready_after_sec": null,
-        "clicked": false,
-        "button_snippet": null,
-        "timed_out": false
-      },
-      "cookie_reuse_probe": {
-        "tested": false,
-        "reason": "لا كوكيز بالجلسة لاختبارها"
-      },
-      "fingerprint_with_stealth": {
-        "webdriver": false,
-        "hasWindowChrome": true,
-        "pluginsLength": 3,
-        "languages": [
-          "en-US",
-          "en"
-        ],
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-      },
-      "stealth_comparison": {
-        "no_stealth": {
-          "navigated": true,
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "images_after_wait": 1,
-          "fingerprint": {
-            "webdriver": true,
-            "hasWindowChrome": false,
-            "pluginsLength": 0,
-            "languages": [
-              "en-US"
-            ],
-            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-          },
-          "error": null
-        },
-        "webdriver_flag_hidden_by_stealth": true,
-        "challenge_outcome_differs": false,
-        "image_count_differs": false
-      },
-      "error": null,
-      "goto_elapsed_sec": 0.11,
-      "navigation_timing": {
-        "ttfb_ms": 17,
-        "dom_content_loaded_ms": 112,
-        "load_event_ms": null,
-        "transfer_size_bytes": 4108
-      },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.79,
-      "total_probe_elapsed_sec": 83.31,
-      "scroll_rounds_completed": 3,
-      "scroll_stop_reason": "stable_no_growth_at_bottom",
-      "navigation_response_headers": {
-        "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "cf-mitigated": "challenge",
-        "cf-ray": "a3ac6b165d61341a-ORD",
-        "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-Ge9vyWlLhY7SUoRGHoQ5hQ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-        "content-type": "text/html; charset=UTF-8",
-        "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-        "cross-origin-embedder-policy": "require-corp",
-        "cross-origin-opener-policy": "same-origin",
-        "cross-origin-resource-policy": "same-origin",
-        "date": "Mon, 14 Sep 2026 03:48:50 GMT",
-        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "origin-agent-cluster": "?1",
-        "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-        "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=f4hAqgo2CY4XCm99%2B8vwktSazP%2F3TCrcQ6fXncl5kPe2n4wAOcRFYJ4CCbYX2kuG5A7MmzCB%2F1o7Ep1plwZrGzn3C2VQqcHwQbVW9Der3QYTtu%2FiRZRiXJ8u1p6qPP7lwQ%3D%3D\"}]}",
-        "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a3ac6b165d61341a\"",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "SAMEORIGIN"
-      },
-      "all_third_party_domains": [
-        "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com"
-      ],
-      "turnstile_click_attempt": {
-        "iframe_found": false,
-        "clicked": false,
-        "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-        "click_method": "none",
-        "attempt_number": 3
-      },
-      "extended_challenge_probe": {
-        "pure_wait": {
-          "max_wait_sec": 60,
-          "poll_interval_sec": 2,
-          "resolved_during_pure_wait": false,
-          "elapsed_until_resolved_sec": null,
-          "final_category_after_wait": "solvable_challenge"
-        },
-        "click_attempts": [
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 1
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 2
-          },
-          {
-            "iframe_found": false,
-            "clicked": false,
-            "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
-            "click_method": "none",
-            "attempt_number": 3
-          }
-        ],
-        "final_after_reload": {
-          "attempted": true,
-          "category": "solvable_challenge",
-          "resolved": false,
-          "error": null
-        }
-      },
-      "content_images_before_scroll": 1
-    },
-    "consistency_diffs": [],
-    "rate_limit_probe": {
-      "target": "page_url",
-      "sample_url": "https://starzmanga.com/manga/i-am-the-fated-villain/3/",
-      "requests_sent": 4,
-      "elapsed_sec": 0.29,
-      "status_codes": [
-        403,
-        403,
-        403,
-        403
-      ],
-      "rate_limited_detected": false,
-      "static_block_detected": true,
-      "retry_after_header": null
-    },
-    "history_diffs_since_last_run": [],
-    "deep_diagnostic": {
-      "runtime_enable_leak_probe": {
-        "tested": true,
-        "patchright_available": true,
-        "protection_category": "solvable_challenge",
-        "challenge_detected": true,
-        "resolved_after_reload": false,
-        "elapsed_sec": 76.49,
-        "error": null
-      },
-      "source_url_leak_probe": {
-        "tested": true,
-        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
-        "error": null
-      }
-    },
-    "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-1393-report.json",
-      "screenshots": [
-        "diagnostics/starzmanga-com-1393-screenshot.png",
-        "diagnostics/starzmanga-com-1393-run2-screenshot.png"
+        "diagnostics/comix-to-106-screenshot.png",
+        "diagnostics/comix-to-106-run2-screenshot.png"
       ]
     }
   }
