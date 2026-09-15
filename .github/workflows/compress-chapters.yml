@@ -4,17 +4,18 @@ on:
   workflow_dispatch:
     inputs:
       chapter_urls:
-        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح) — كلها من نفس الموقع المختار أدناه. بوضع التشخيص: رابط أو رابطين فقط يكفي (كل رابط يشغّل 5 مراحل فحص كاملة)"
+        description: "روابط الفصول (رابط في كل سطر، 10 أو أكثر مسموح) — كلها من نفس الموقع المختار أدناه. بوضع التشخيص: رابط أو رابطين فقط يكفي. بوضع إعادة_ترجمة: اتركه فارغًا للاكتشاف التلقائي من failed_translations.txt، أو حدّد روابط بعينها لإعادة ترجمتها قسرًا (تُستبدَل ترجمتها بالكامل حتى لو نجحت سابقًا)"
         required: true
         type: string
       mode:
-        description: "الوضع — يحدّد أي الحقول بالأسفل فعليًا مؤثّرة لهذه التشغيلة (كل الحقول تبقى ظاهرة دومًا — GitHub Actions لا يدعم إخفاء حقول ديناميكيًا حسب اختيار آخر، هذا قيد المنصة نفسها لا هذا الملف؛ الحقول مُجمَّعة ومُعلَّمة بالأسفل حسب الوضع لتسهيل التصفح فقط). إنتاج = تحميل+ضغط+حفظ فعلي. تشخيص = فحص فقط بلا تحميل حقيقي. استخراج_نص = تجربة OCR (مرحلة ١)"
+        description: "الوضع — يحدّد أي الحقول بالأسفل فعليًا مؤثّرة لهذه التشغيلة (كل الحقول تبقى ظاهرة دومًا — GitHub Actions لا يدعم إخفاء حقول ديناميكيًا حسب اختيار آخر، هذا قيد المنصة نفسها لا هذا الملف؛ الحقول مُجمَّعة ومُعلَّمة بالأسفل حسب الوضع لتسهيل التصفح فقط). إنتاج = تحميل+ضغط+حفظ فعلي. تشخيص = فحص فقط بلا تحميل حقيقي. استخراج_نص = تجربة OCR (مرحلة ١). إعادة_ترجمة = إعادة ترجمة فصول مُستخرَجة مسبقًا فقط، بلا تحميل صور أو OCR إطلاقًا (أسرع بكثير)"
         required: true
         type: choice
         options:
           - إنتاج
           - تشخيص
           - استخراج_نص
+          - إعادة_ترجمة
         default: إنتاج
       site:
         description: "[إنتاج + استخراج_نص] الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). يُتجاهَل كليًا بوضع التشخيص"
@@ -147,9 +148,27 @@ jobs:
       # translate_to_arabic.py) تُثبَّت دومًا بنفس منطق paddleocr أعلاه: لا
       # تكلفة زمن تشغيل فعلي على أي تشغيلة لا تفعّل الترجمة (استيراد مؤجَّل
       # بالسكربت)، فقط زمن تثبيت pip إضافي بسيط.
-      - name: تثبيت المكتبات
+      # [جديد — وضع إعادة_ترجمة، تسريع كامل] هذه الخطوة فقط تُثبَّت دومًا —
+      # الحد الأدنى الفعلي الذي يحتاجه compress_chapters.py ليُستورَد أصلًا
+      # (playwright/playwright_stealth/PIL مستوردة على مستوى الملف نفسه —
+      # راجع ترويستيه، لا بديل حتى لو لم يُستخدَم المتصفح فعليًا بوضع
+      # إعادة_ترجمة) + google-genai لازمة للترجمة بكل الأوضاع التي تفعّلها.
+      # لا تُثبَّت متصفحات Chromium هنا (خطوة منفصلة أدناه، مشروطة) — حزمة
+      # playwright نفسها خفيفة، المُكلِّف زمنًا هو تنزيل المتصفح تحديدًا.
+      - name: تثبيت المكتبات (أساسي — كل الأوضاع)
         run: |
-          pip install --quiet playwright pillow requests playwright-stealth pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1 google-genai
+          pip install --quiet playwright playwright-stealth pillow requests google-genai
+
+      # [جديد — وضع إعادة_ترجمة، تسريع كامل] paddleocr/paddlepaddle (ثقيلتان،
+      # تثبيت دقائق) وتنزيل متصفح Chromium (دقيقة+) لا حاجة لأي منهما بوضع
+      # إعادة_ترجمة إطلاقًا — لا تحميل صور ولا OCR يحدث به (راجع
+      # run_retranslate_mode بـocr_extraction.py: يقرأ text_en.json من القرص
+      # مباشرة فقط). pillow-avif-plugin (يُستخدَم فقط لو output_format=avif
+      # بوضع الإنتاج) مُدرَجة هنا أيضًا بنفس المنطق — غير لازمة لإعادة الترجمة.
+      - name: تثبيت متطلبات المتصفح وOCR (كل الأوضاع ما عدا إعادة_ترجمة)
+        if: inputs.mode != 'إعادة_ترجمة'
+        run: |
+          pip install --quiet pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1
           python -m playwright install --with-deps chromium
 
       # [جديد — تفعيل DEEP_DIAGNOSTIC] patchright حزمة منفصلة تمامًا عن
@@ -214,6 +233,7 @@ jobs:
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
           DIAGNOSTIC_MODE: ${{ inputs.mode == 'تشخيص' }}
           OCR_EXPERIMENT_MODE: ${{ inputs.mode == 'استخراج_نص' }}
+          RETRANSLATE_ONLY_MODE: ${{ inputs.mode == 'إعادة_ترجمة' }}
           MANGA_TITLE_OVERRIDE: ${{ inputs.manga_title_override }}
           OCR_DETECTION_MODEL: ${{ inputs.ocr_detection_model }}
           TRANSLATE_TO_ARABIC: ${{ inputs.translate_to_arabic }}
@@ -405,6 +425,20 @@ jobs:
           echo ""
           echo "manifest خاص بهذه التشغيلة فقط (فصول تم العمل عليها الآن حصرًا):"
           echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/runs/run-${{ github.run_id }}.json"
+          echo "=================================================="
+
+      # [جديد — وضع إعادة_ترجمة] لا أرشيف zip يُبنى بهذا الوضع (لا خطوات
+      # OCR إطلاقًا) — فقط تحديث مباشر لملفات text_ar.json/.txt الموجودة
+      # مسبقًا + failed_translations.txt، وكلاهما دُفع بالفعل أولًا بأول
+      # داخل run_retranslate_mode نفسها. هذه الخطوة إعلامية فقط.
+      - name: ملخّص إعادة الترجمة
+        if: always() && inputs.mode == 'إعادة_ترجمة'
+        run: |
+          echo "=================================================="
+          echo "قائمة الفصول التي ما زالت بلا ترجمة (إن وُجدت — 404 يعني نجحت كل الفصول المستهدَفة):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/output/output/ocr_experiment/failed_translations.txt"
+          echo ""
+          echo "راجع لوج هذه الخطوة أعلاه (\"تشغيل الضغط\") لتفاصيل كل فصل على حدة"
           echo "=================================================="
 
       - name: رابط تقارير التشخيص
