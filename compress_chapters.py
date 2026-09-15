@@ -262,6 +262,15 @@ DIAGNOSTIC_MODE = os.environ.get("DIAGNOSTIC_MODE", "false").strip().lower() == 
 # العادية إطلاقًا — يكتب حصرًا ضمن output/ocr_experiment/.
 OCR_EXPERIMENT_MODE = os.environ.get("OCR_EXPERIMENT_MODE", "false").strip().lower() == "true"
 
+# [جديد — إعادة ترجمة فقط] وضع رابع مستقل تمامًا: لا تحميل صور ولا OCR
+# إطلاقًا — يقرأ text_en.json المحفوظ مسبقًا بفرع output (كتبه OCR_EXPERIMENT_MODE
+# بتشغيلة سابقة) ويعيد ترجمته فقط عبر Gemini. مخصَّص لحالة فشل الترجمة رغم
+# نجاح OCR (503 مؤقّت من Gemini غالبًا)، دون الحاجة لإعادة إنتاج OCR بالكامل
+# (تحميل صور + PaddleOCR) فقط لأجل الترجمة. CHAPTER_URLS فارغة بهذا الوضع
+# تحديدًا ليست خطأً — تعني اكتشافًا تلقائيًا من failed_translations.txt
+# (راجع الاستثناء الصريح بـmain() أدناه وrun_retranslate_mode بـocr_extraction.py).
+RETRANSLATE_ONLY_MODE = os.environ.get("RETRANSLATE_ONLY_MODE", "false").strip().lower() == "true"
+
 WEBP_HARD_LIMIT = 16000
 
 # [إصلاح منطقي ج] حد أدنى لأبعاد الصورة (طول/عرض) كي تُعتبر صفحة مانهوا
@@ -1773,10 +1782,23 @@ async def main():
     for u in chapter_urls:
         print(f"   - {u}")
     if not chapter_urls:
-        print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
-        sys.exit(1)
+        # [جديد — إعادة ترجمة فقط] الاستثناء الوحيد: حقل فارغ هنا يعني
+        # "اكتشف تلقائيًا من failed_translations.txt"، لا خطأ إدخال —
+        # راجع تبرير كامل عند تعريف RETRANSLATE_ONLY_MODE أعلاه.
+        if RETRANSLATE_ONLY_MODE:
+            print("📋 CHAPTER_URLS فارغة بوضع إعادة الترجمة — سيُكتشَف تلقائيًا من failed_translations.txt")
+        else:
+            print("لا توجد روابط فصول في المدخلات (CHAPTER_URLS فارغة)")
+            sys.exit(1)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    if RETRANSLATE_ONLY_MODE:
+        # [استيراد مؤجَّل] نفس سبب DIAGNOSTIC_MODE/OCR_EXPERIMENT_MODE أدناه
+        # تمامًا — راجع التعليق هناك.
+        from ocr_extraction import run_retranslate_mode
+        await run_retranslate_mode(chapter_urls)
+        return
 
     if DIAGNOSTIC_MODE:
         # [استيراد مؤجَّل عمدًا] diagnostics.py يستورد من هذا الملف (compress_
