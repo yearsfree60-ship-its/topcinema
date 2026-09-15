@@ -1558,6 +1558,17 @@ def _read_remote_manifest_sync(commit_dir: str, branch: str) -> dict | None:
         return None
 
 
+def _page_num_from_path(p: str) -> int:
+    """[تصحيح ترتيب] يستخرج رقم الصفحة الحقيقي من اسم الملف (مثل
+    ".../020.webp" ← 20) لفرز image_paths به قبل كتابة manifest.json — بلا
+    هذا الفرز، أي صورة نجحت بإعادة المحاولة النهائية بـprocess_chapter تبقى
+    مُضافة بنهاية القائمة بدل موضعها الصحيح (راجع saved_paths هناك: الحلقة
+    الأولى ثم حلقة إعادة المحاولة تُلحِقان بنفس القائمة تتابعيًا، لا حسب i).
+    مسارات لا تُطابِق الصيغة (غير متوقَّع) تُدفَع للنهاية بدل رفع استثناء."""
+    m = re.search(r"(\d+)\.\w+$", p)
+    return int(m.group(1)) if m else 10**9
+
+
 def merge_manifest_dict(base: dict, results: list) -> dict:
     manifest = {"manga": {k: {**v, "chapters": list(v.get("chapters", []))}
                            for k, v in (base or {}).get("manga", {}).items()}}
@@ -1565,7 +1576,8 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
         mid = r["manga_id"]
         entry = manifest["manga"].setdefault(mid, {"name": mid.split("__", 1)[-1].replace("-", " "), "chapters": []})
         chNum = float(r["chapter_num"]) if re.match(r"^\d+(\.\d+)?$", r["chapter_num"]) else 0
-        images_cdn = [f"{CDN_BASE}/{p}" for p in r["image_paths"]] if CDN_BASE else r["image_paths"]
+        sorted_paths = sorted(r["image_paths"], key=_page_num_from_path)
+        images_cdn = [f"{CDN_BASE}/{p}" for p in sorted_paths] if CDN_BASE else sorted_paths
         new_chapter = {
             "label": f"الفصل {r['chapter_num']}", "num": r["chapter_num"], "chNum": chNum,
             "sourceUrl": r["source_url"], "images": images_cdn,
