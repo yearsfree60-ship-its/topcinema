@@ -811,6 +811,30 @@ def format_ocr_page_text(page_num: int, sentences: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def _renumber_pages_sequentially(page_json: list[dict]) -> tuple[list[dict], list[str]]:
+    """[جديد — إصلاح تطابق ترقيم الصفحات مع قارئ التطبيق] يُعيد ترقيم
+    page_json تسلسليًا (1..N) حسب ترتيب "page" الأصلي تصاعديًا، متجاهلاً أي
+    فجوات ناتجة عن صفحات فشل تحميلها/معالجتها نهائيًا. هذا مطابق تمامًا
+    لكيفية بناء manifest.json لمصفوفة "images" الفعلية (merge_manifest_dict
+    بـcompress_chapters.py: sorted(image_paths)، ترتيب فقط لا أرقام أصلية،
+    فأي صورة فشلت تختفي من المصفوفة بلا أي فجوة تبقى فيها) — القارئ يعرض
+    الصورة رقم N بالمصفوفة كـ"الصفحة N" بصرف النظر عن رقمها الأصلي بالفصل.
+    قبل هذا الإصلاح: لو فشلت الصورة رقم 2 من أصل 5، page_json كان يحتفظ
+    بالأرقام الأصلية 1,3,4,5 بينما القارئ يعرضها 1,2,3,4 — طلب ترجمة "الصفحة
+    2" بالقارئ (=الصورة الأصلية 3) لا يجد تطابقًا لأن ملف الترجمة يُسمّيها
+    "الصفحة 3". يُستدعى دومًا (لا فقط عند وجود فشل فعلي) كخطوة تطبيع أخيرة
+    قبل إرجاع نتيجة أي فصل، بكل مسارات المعالجة الثلاث (browser/HTTP لوضع
+    استخراج_نص، ومسار الإنتاج الكامل) — بلا فشل أصلًا يبقى الترقيم 1..N كما
+    هو تمامًا (تطبيع بلا أثر فعلي، لا حاجة لفرع شرطي منفصل)."""
+    page_json_sorted = sorted(page_json, key=lambda pj: pj["page"])
+    renumbered = [
+        {"page": new_num, "sentences": pj["sentences"]}
+        for new_num, pj in enumerate(page_json_sorted, start=1)
+    ]
+    page_texts = [format_ocr_page_text(pj["page"], pj["sentences"]) for pj in renumbered]
+    return renumbered, page_texts
+
+
 async def _ocr_handle_page(
     label: str,
     page_num: int,
@@ -994,6 +1018,8 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
     if not page_texts:
         return None
 
+    page_json, page_texts = _renumber_pages_sequentially(page_json)
+
     return {
         "manga_id": manga_id,
         "chapter_num": chapter_num,
@@ -1093,16 +1119,15 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
 
         # [حرج] المحاولات الناجحة أعلاه أُضيفت بنهاية page_texts/page_json
         # (ترتيب اكتمال الاستدعاء، لا ترتيب رقم الصفحة) — بعكس المسار
-        # الطبيعي بالطابور الذي يضمن الترتيب الصحيح ضمنيًا. إعادة ترتيب
-        # page_json حسب "page" ثم إعادة بناء page_texts منه (بدل الاعتماد
-        # على ترتيب append) يضمن النص النهائي (text_en.txt ودمج "text")
-        # بالترتيب الصحيح دومًا. saved_image_paths تُرتَّب أبجديًا — كافٍ
-        # هنا لأن اسم الملف مبطَّن بأصفار لثلاث خانات ({page_num:03d}) بنفس
-        # مجلد الفصل لكل الصفحات، فالترتيب الأبجدي يطابق الرقمي تمامًا —
-        # ترتيبها يُحدِّد فعليًا ترتيب قراءة الصفحات المعروض لاحقًا بـ
-        # manifest.json (راجع merge_manifest_dict)، فليس تجميليًا فقط.
-        page_json.sort(key=lambda pj: pj["page"])
-        page_texts = [format_ocr_page_text(pj["page"], pj["sentences"]) for pj in page_json]
+        # الطبيعي بالطابور الذي يضمن الترتيب الصحيح ضمنيًا. saved_image_paths
+        # تُرتَّب أبجديًا — كافٍ هنا لأن اسم الملف مبطَّن بأصفار لثلاث خانات
+        # ({page_num:03d}) بنفس مجلد الفصل لكل الصفحات، فالترتيب الأبجدي
+        # يطابق الرقمي تمامًا — ترتيبها يُحدِّد فعليًا ترتيب قراءة الصفحات
+        # المعروض لاحقًا بـmanifest.json (راجع merge_manifest_dict)، فليس
+        # تجميليًا فقط. [مُعاد الترتيب أدناه — لم يعد الفرز/إعادة البناء
+        # يحدثان هنا تحديدًا: نُقلا لخطوة _renumber_pages_sequentially
+        # الموحَّدة أسفل الدالة، تُطبَّق دومًا بصرف النظر عن وجود فشل من
+        # عدمه — راجع تبريرها الكامل بترويستها.]
         saved_image_paths.sort()
 
     if context:
@@ -1110,6 +1135,8 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
 
     if not saved_image_paths and not page_texts:
         return None
+
+    page_json, page_texts = _renumber_pages_sequentially(page_json)
 
     return {
         "manga_id": manga_id,
@@ -1272,7 +1299,8 @@ async def _ocr_http_consumer(
             return None
         result = None
         if c["page_texts"]:
-            result = {**c["meta"], "text": "\n\n".join(c["page_texts"]), "pages": c["page_json"]}
+            page_json, page_texts = _renumber_pages_sequentially(c["page_json"])
+            result = {**c["meta"], "text": "\n\n".join(page_texts), "pages": page_json}
         del chapters[idx]
         return result
 
