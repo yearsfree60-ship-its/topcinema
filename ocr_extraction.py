@@ -1012,9 +1012,10 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     (chapter_dir/saved_image_paths) — جلب واحد فقط لكل صورة يُغذّي المسارين
     معًا، بدل نداء get_chapter_images/fetch_image_bytes مرتين منفصلتين لكل
     فصل (مرة بمسار الإنتاج ومرة بمسار OCR) كما كان الحال قبل هذا الوضع.
-    مسار المتصفح فقط بهذا الإصدار الأول — راجع تنويه واضح بـ
-    run_full_production_mode لبروفايلات HTTP (azorafly). صفحات فشل تحميلها
-    بالمرور الأول تُعاد محاولتها مرة أخيرة واحدة بعد اكتمال البقية — راجع
+    مسار المتصفح والـHTTP معًا مدعومان (download() أدناه تفرّع فعليًا بين
+    الاثنين، مطابقةً تمامًا لنفس فرع process_chapter الأصلية) — راجع
+    run_full_production_mode لتفاصيل الإصلاح الذي رفع القيد السابق على
+    بروفايلات HTTP. صفحات فشل تحميلها بالمرور الأول تُعاد محاولتها مرة أخيرة واحدة بعد اكتمال البقية — راجع
     تفصيل الآلية وسبب إعادة ترتيب page_texts/page_json/saved_image_paths
     بعدها داخل الدالة."""
     print(f"[{index}/{total}] 🏭 إنتاج كامل (ضغط+OCR+ترجمة): {chapter_url} — بروفايل: {profile['label']}")
@@ -1627,6 +1628,73 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
         sys.exit(75)
 
 
+async def _run_full_production_chapters(
+    browser, chapter_urls: list[str], total: int, profile: dict, ocr_dir: Path,
+    files_written: list[Path], failed_translations: list[dict],
+) -> tuple[int, list[dict], list[str]]:
+    """[جديد — استُخرِجت من run_full_production_mode لإصلاح دعم بروفايلات
+    HTTP] جسم حلقة معالجة الفصول الفعلي، مطابق تمامًا سواء browser كائن
+    Playwright حقيقي (بروفايلات المتصفح) أو None (بروفايلات HTTP مثل
+    azorafly). هذا آمن تمامًا فعليًا — لا تخمين: get_chapter_images
+    (بـcompress_chapters.py) لا يلمس browser إطلاقًا عندما
+    profile["fetch_mode"]=="http" (يستخدم fetch_via_http_simple_sync عبر
+    thread منفصل فقط)، وprocess_chapter_full_production نفسها لا تستخدم
+    browser بأي موضع آخر سوى تمريره لـget_chapter_images — فكان الحظر
+    الصريح السابق ("❌ وضع الإنتاج الكامل لا يدعم بروفايل HTTP") قيدًا زائدًا
+    لا ضرورة فنية حقيقية خلفه، لا عائقًا بنيويًا فعليًا. استُخرِجت هذه الحلقة
+    لدالة مستقلة تحديدًا كي لا يتكرر جسمها بفرعي "بمتصفح/بلا متصفح" داخل
+    run_full_production_mode."""
+    success_count = 0
+    succeeded_meta: list[dict] = []
+    skipped_urls: list[str] = []
+    for i, url in enumerate(chapter_urls, start=1):
+        try:
+            r = await process_chapter_full_production(browser, url, i, total, profile)
+        except Exception as e:
+            print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء الإنتاج الكامل: {e}")
+            r = None
+        if r:
+            out_dir = ocr_dir / r["chapter_slug"]
+            out_dir.mkdir(parents=True, exist_ok=True)
+            txt_path = out_dir / "text_en.txt"
+            json_path = out_dir / "text_en.json"
+            txt_path.write_text(r["text"], encoding="utf-8")
+            json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
+            files_written += [txt_path, json_path]
+            files_written += await _translate_chapter_if_enabled(r, out_dir, failed_translations)
+            success_count += 1
+            succeeded_meta.append({
+                "index": i,
+                "manga_id": r["manga_id"],
+                "chapter_num": r["chapter_num"],
+                "manga_title": r.get("manga_title", ""),
+            })
+
+            if GIT_COMMIT_DIR:
+                remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+                merged = merge_manifest_dict(remote or {}, [r])
+                (OUTPUT_DIR / "manifest.json").write_text(
+                    json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                allowed = ["manifest.json", f"{r['manga_id']}/ch-{r['chapter_num']}", "ocr_experiment"]
+                ok, msg = await asyncio.to_thread(
+                    _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                    f"إنتاج كامل: {r['manga_id']} - الفصل {r['chapter_num']}", allowed,
+                )
+                print(f"  {'✅' if ok else '⚠️'} دفع فصل (صور+OCR+ترجمة): {msg}")
+
+        rss = _current_rss_mb()
+        if rss is not None and rss >= OCR_MAX_RSS_MB:
+            print(
+                f"🚨 [بند 3] RSS الحالية ({rss:.0f}MB) تجاوزت "
+                f"OCR_MAX_RSS_MB ({OCR_MAX_RSS_MB}MB) بعد الفصل "
+                f"{i}/{total} — إيقاف عن بدء فصول جديدة"
+            )
+            skipped_urls = chapter_urls[i:]
+            break
+    return success_count, succeeded_meta, skipped_urls
+
+
 async def run_full_production_mode(chapter_urls: list[str]) -> None:
     """[جديد — وضع الإنتاج الكامل] لكل فصل، بالتتابع: ضغط+OCR (جلب واحد
     يُغذّي الاثنين معًا، عبر process_chapter_full_production) ← ترجمة عربية
@@ -1637,11 +1705,14 @@ async def run_full_production_mode(chapter_urls: list[str]) -> None:
     توفّر GEMINI_API_KEY فعليًا (خلاف ذلك: نفس تحذير translation_active
     المعتاد، الفصل يُحفَظ بنصه الإنجليزي فقط دون سقوط التشغيلة).
 
-    [حد معروف — بروفايلات HTTP] هذا الإصدار الأول لمسار المتصفح حصرًا
-    (نفس قيد process_chapter/ocr_process_chapter الحاليين لتسلسل الفصول
-    بمسار المتصفح). بروفايل azorafly (HTTP) غير مدعوم بعد بهذا الوضع —
-    توسيع بنية المنتِج/المستهلك متعددة الفصول (_ocr_http_*) لتضمين الضغط
-    أيضًا نطاق أوسع من هذا التسليم، يحتاج تقييمًا منفصلاً.
+    [مُصلَح فعليًا] بروفايلات HTTP (azorafly) مدعومة الآن بهذا الوضع — القيد
+    السابق ("مسار المتصفح حصرًا") كان زائدًا لا ضروريًا فنيًا: get_chapter_images
+    لا تلمس browser إطلاقًا لبروفايل HTTP، وprocess_chapter_full_production
+    لا تستخدمه بأي موضع آخر. الفرق الوحيد الفعلي: بروفايل HTTP لا يُشغِّل
+    Chromium إطلاقًا (راجع الفرع الشرطي بجسم الدالة أدناه)، بلا أي حاجة
+    لتوسيع بنية _ocr_http_* الخاصة بالتحميل المتوازي — هذا الوضع أصلًا
+    تسلسلي بحت (فصل واحد بمرة) بصرف النظر عن نوع البروفايل، فلا تنازل عن
+    أي ميزة تزامن كانت موجودة أصلًا.
 
     [مُصلَح] الصفحات التي فشل تحميلها ضمن نفس الفصل تُعاد محاولتها مرة
     أخيرة واحدة بعد اكتمال كل الصفحات الأخرى (راجع process_chapter_full_production
@@ -1656,74 +1727,33 @@ async def run_full_production_mode(chapter_urls: list[str]) -> None:
     print(f"⚙️ [بند 3] حد RSS الأقصى: {OCR_MAX_RSS_MB}MB — يُفحَص بعد اكتمال كل فصل")
     fetch_mode = profile.get("fetch_mode", "browser")
 
+    # [مُصلَح — كان يرفض بروفايلات HTTP كليًا برسالة "❌ غير مدعوم" ويُنهي
+    # التشغيلة فورًا (sys.exit(1)). بعد فحص فعلي: القيد كان زائدًا لا
+    # ضروريًا — راجع تبرير كامل بترويسة _run_full_production_chapters أعلاه.
+    # الفرق الوحيد الفعلي هنا: بروفايل HTTP لا يحتاج Chromium إطلاقًا، فلا
+    # يُشغَّل async_playwright من الأساس (توفير وقت/موارد حقيقي لا تجميلي).]
     if fetch_mode == "http":
-        print(
-            f"❌ وضع الإنتاج الكامل لا يدعم بروفايل HTTP ({profile['label']}) بهذا "
-            "الإصدار — اختر بروفايلًا يعتمد المتصفح (mangatuk/mangatime/"
-            "olympustaff/procomic)، أو استخدم وضع «إنتاج» ثم «استخراج_نص» "
-            "منفصلين لهذا البروفايل تحديدًا"
-        )
-        sys.exit(1)
+        print(f"🌐 بروفايل HTTP ({profile['label']}) بهذا الوضع — بلا متصفح Chromium إطلاقًا (لا حاجة له لهذا النوع من البروفايلات)")
 
     ocr_dir = OUTPUT_DIR / "ocr_experiment"
     ocr_dir.mkdir(parents=True, exist_ok=True)
 
     total = len(chapter_urls)
     files_written: list[Path] = []
-    skipped_urls: list[str] = []
-    success_count = 0
-    succeeded_meta: list[dict] = []
     failed_translations: list[dict] = []
 
     try:
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-            for i, url in enumerate(chapter_urls, start=1):
-                try:
-                    r = await process_chapter_full_production(browser, url, i, total, profile)
-                except Exception as e:
-                    print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء الإنتاج الكامل: {e}")
-                    r = None
-                if r:
-                    out_dir = ocr_dir / r["chapter_slug"]
-                    out_dir.mkdir(parents=True, exist_ok=True)
-                    txt_path = out_dir / "text_en.txt"
-                    json_path = out_dir / "text_en.json"
-                    txt_path.write_text(r["text"], encoding="utf-8")
-                    json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
-                    files_written += [txt_path, json_path]
-                    files_written += await _translate_chapter_if_enabled(r, out_dir, failed_translations)
-                    success_count += 1
-                    succeeded_meta.append({
-                        "index": i,
-                        "manga_id": r["manga_id"],
-                        "chapter_num": r["chapter_num"],
-                        "manga_title": r.get("manga_title", ""),
-                    })
-
-                    if GIT_COMMIT_DIR:
-                        remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
-                        merged = merge_manifest_dict(remote or {}, [r])
-                        (OUTPUT_DIR / "manifest.json").write_text(
-                            json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
-                        )
-                        allowed = ["manifest.json", f"{r['manga_id']}/ch-{r['chapter_num']}", "ocr_experiment"]
-                        ok, msg = await asyncio.to_thread(
-                            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
-                            f"إنتاج كامل: {r['manga_id']} - الفصل {r['chapter_num']}", allowed,
-                        )
-                        print(f"  {'✅' if ok else '⚠️'} دفع فصل (صور+OCR+ترجمة): {msg}")
-
-                rss = _current_rss_mb()
-                if rss is not None and rss >= OCR_MAX_RSS_MB:
-                    print(
-                        f"🚨 [بند 3] RSS الحالية ({rss:.0f}MB) تجاوزت "
-                        f"OCR_MAX_RSS_MB ({OCR_MAX_RSS_MB}MB) بعد الفصل "
-                        f"{i}/{total} — إيقاف عن بدء فصول جديدة"
-                    )
-                    skipped_urls = chapter_urls[i:]
-                    break
-            await browser.close()
+        if fetch_mode == "http":
+            success_count, succeeded_meta, skipped_urls = await _run_full_production_chapters(
+                None, chapter_urls, total, profile, ocr_dir, files_written, failed_translations
+            )
+        else:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+                success_count, succeeded_meta, skipped_urls = await _run_full_production_chapters(
+                    browser, chapter_urls, total, profile, ocr_dir, files_written, failed_translations
+                )
+                await browser.close()
     finally:
         _shutdown_ocr_thread()
 
