@@ -271,6 +271,14 @@ OCR_EXPERIMENT_MODE = os.environ.get("OCR_EXPERIMENT_MODE", "false").strip().low
 # (راجع الاستثناء الصريح بـmain() أدناه وrun_retranslate_mode بـocr_extraction.py).
 RETRANSLATE_ONLY_MODE = os.environ.get("RETRANSLATE_ONLY_MODE", "false").strip().lower() == "true"
 
+# [جديد — وضع الإنتاج الكامل] وضع خامس: يدمج إنتاج (ضغط+حفظ+دفع) مع
+# استخراج_نص+الترجمة لكل فصل بنفس العملية — جلب واحد فقط لكل صورة يُغذّي
+# الضغط وOCR معًا (بدل جلبين منفصلين بتشغيلتين مستقلتين كما تفرضه بقية
+# الأوضاع). راجع process_chapter_full_production/run_full_production_mode
+# بـocr_extraction.py للتفاصيل الكاملة والقيود المعروفة (مسار المتصفح فقط
+# بهذا الإصدار الأول).
+FULL_PRODUCTION_MODE = os.environ.get("FULL_PRODUCTION_MODE", "false").strip().lower() == "true"
+
 WEBP_HARD_LIMIT = 16000
 
 # [إصلاح منطقي ج] حد أدنى لأبعاد الصورة (طول/عرض) كي تُعتبر صفحة مانهوا
@@ -1828,6 +1836,12 @@ async def main():
         # [استيراد مؤجَّل] نفس سبب diagnostics أعلاه تمامًا — راجع التعليق هناك.
         from ocr_extraction import run_ocr_experiment_mode
         await run_ocr_experiment_mode(chapter_urls)
+        return
+
+    if FULL_PRODUCTION_MODE:
+        # [استيراد مؤجَّل] نفس سبب الأوضاع أعلاه تمامًا.
+        from ocr_extraction import run_full_production_mode
+        await run_full_production_mode(chapter_urls)
         return
 
     profile = get_profile()
