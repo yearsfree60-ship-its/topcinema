@@ -52,15 +52,21 @@ from compress_chapters import (
     GIT_COMMIT_DIR,
     HTTP_CONCURRENCY,
     IMG_FETCH_DELAY_MS,
+    IMG_FORMAT,
+    MAX_WIDTH,
     OUTPUT_DIR,
+    QUALITY,
     RUN_ID,
     SITE_PROFILE,
     _commit_and_push_sync,
+    _read_remote_manifest_sync,
+    compress_image,
     fetch_image_bytes,
     fetch_image_bytes_http,
     get_chapter_images,
     get_profile,
     manga_slug_from_url,
+    merge_manifest_dict,
 )
 
 # [إضافة] تجاوز يدوي اختياري لاسم المانهوا بتسمية أرشيف/أرتيفاكت هذه
@@ -814,6 +820,8 @@ async def _ocr_handle_page(
     page_texts: list,
     page_json: list,
     pages_since_rebuild: int,
+    saved_image_paths: list | None = None,
+    chapter_dir: Path | None = None,
 ) -> int:
     """[جديد — بند (1)] معالجة OCR لصفحة واحدة جاهزة (raw bytes مُنزَّلة
     مسبقًا)، مُستخرَجة كدالة مشتركة يستدعيها كل من مسار HTTP متعدد الفصول
@@ -827,19 +835,63 @@ async def _ocr_handle_page(
     3] مرتبطة بتراكم الذاكرة الأصلية لمحرك OCR نفسه (خيط واحد مشترك بين كل
     الفصول الآن)، لا بحدود فصل بعينه — تغيير مقصود عن السلوك الأصلي (كان
     يُصفَّر كل فصل جديد) أصبح غير متماسك بعد أن صار الاستهلاك متداخلًا بين
-    عدة فصول."""
+    عدة فصول.
+
+    [جديد — وضع الإنتاج الكامل] saved_image_paths/chapter_dir اختياريان
+    (افتراضيًا None): لو مُمرَّرَين، تُضغَط نفس raw (بعد محاولة OCR عليها،
+    نجحت أو فشلت — فشل استخراج النص لا يعني فشل الصورة نفسها ولا العكس؛
+    عزل تام) وتُحفَظ بنفس تسمية process_chapter الفعلية بالضبط
+    ({page_num:03d}.{IMG_FORMAT})، فيُستخدَم جلب واحد للمسارين معًا بدل
+    جلب مستقل لكل من OCR والضغط. المستدعيان الحاليان (_ocr_http_consumer
+    وocr_process_chapter) لا يمرّران هذين الوسيطين إطلاقًا — سلوكهما
+    الحالي بلا أي تغيير حرفيًا."""
     if not raw:
         print(f"  ⚠️ فشل تحميل {label} صفحة {page_num}: {reason}")
         return pages_since_rebuild
 
     rss_before = _current_rss_mb()
-    try:
+    need_compress = chapter_dir is not None and saved_image_paths is not None
+
+    async def _do_ocr():
         items = await _run_on_ocr_thread(ocr_extract_english_sync, raw, page_num)
         sentences = group_ocr_lines_into_sentences(items)
         # [مُعدَّل] استبعاد بنود sfx بعد التجميع (على نص البند المُدمَج
         # كاملًا) — لا قبل التجميع، كي لا تُسقَط كلمة قصيرة حقيقية قبل أن
         # تندمج مع بقية جملتها. راجع _filter_sfx_sentences.
-        sentences, sfx_dropped = _filter_sfx_sentences(sentences)
+        return _filter_sfx_sentences(sentences)
+
+    # [جديد — أداء، وضع الإنتاج الكامل] OCR والضغط تحويلان مستقلّان تمامًا
+    # على نفس raw — لا اعتماد لأحدهما على الآخر. قبل هذا التعديل كانا
+    # يُنفَّذان بالتتابع (OCR ثم الضغط) على حلقة asyncio الحدثية نفسها،
+    # وcompress_image لم تكن حتى مُفرَّغة لخيط منفصل (نداء متزامن مباشر
+    # يُجمِّد الحلقة الحدثية بالكامل أثناء تنفيذه — بعكس OCR المُموضَع بشكل
+    # صحيح أصلًا عبر _run_on_ocr_thread). asyncio.gather هنا يشغّلهما
+    # بالتوازي الفعلي على خيطين مختلفين (OCR على ThreadPoolExecutor مخصَّص
+    # بعامل واحد لسلامة محرك Paddle، الضغط على executor افتراضي عبر
+    # asyncio.to_thread) بدل تسلسلهما — يقتصّ فعليًا من زمن كل صفحة بمسار
+    # إنتاج_كامل تحديدًا (المسار الوحيد الذي يستدعي الاثنين معًا لكل صفحة؛
+    # need_compress=False بباقي المسارات فتعمل تمامًا كما كانت، بلا gather
+    # زائد). return_exceptions=True يحافظ على نفس عزل الأخطاء الأصلي (فشل
+    # أحدهما لا يوقف الآخر ولا يصعد استثناءً للمستدعي).
+    if need_compress:
+        ocr_result, compress_result = await asyncio.gather(
+            _do_ocr(),
+            asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT),
+            return_exceptions=True,
+        )
+    else:
+        try:
+            ocr_result = await _do_ocr()
+        except Exception as e:
+            ocr_result = e
+        compress_result = None
+
+    if isinstance(ocr_result, Exception):
+        rss_after = _current_rss_mb()
+        rss_note = f" | RSS عند الفشل: {rss_after:.0f}MB" if rss_after is not None else ""
+        print(f"  ⚠️ فشل OCR لـ{label} صفحة {page_num}: {ocr_result}{rss_note}")
+    else:
+        sentences, sfx_dropped = ocr_result
         page_texts.append(format_ocr_page_text(page_num, sentences))
         page_json.append({"page": page_num, "sentences": sentences})
         rss_after = _current_rss_mb()
@@ -848,10 +900,19 @@ async def _ocr_handle_page(
             if rss_before is not None and rss_after is not None else ""
         )
         print(f"  ✅ {label} صفحة {page_num}/{total_pages} — {len(sentences)} بند نص ({sfx_dropped} مُستبعَد [sfx]){rss_note}")
-    except Exception as e:
-        rss_after = _current_rss_mb()
-        rss_note = f" | RSS عند الفشل: {rss_after:.0f}MB" if rss_after is not None else ""
-        print(f"  ⚠️ فشل OCR لـ{label} صفحة {page_num}: {e}{rss_note}")
+
+    if need_compress:
+        if isinstance(compress_result, Exception):
+            print(f"  ⚠️ فشل ضغط {label} صفحة {page_num}: {compress_result}")
+        else:
+            try:
+                chapter_dir.mkdir(parents=True, exist_ok=True)
+                filename = f"{page_num:03d}.{IMG_FORMAT}"
+                (chapter_dir / filename).write_bytes(compress_result)
+                saved_image_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                print(f"  🗜️ {label} ضغط صفحة {page_num}/{total_pages} ({len(compress_result)} بايت)")
+            except Exception as e:
+                print(f"  ⚠️ فشل حفظ الصورة المضغوطة لـ{label} صفحة {page_num}: {e}")
 
     # [بند 3] إعادة بناء وقائية دورية — تحرّر أي تراكم ذاكرة أصلية متبقٍ
     # بصرف النظر عن نجاح/فشل الصفحة الحالية، فتُحتسَب الصفحات الفاشلة أيضًا
@@ -941,6 +1002,123 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
         "manga_title": title,
         "text": "\n\n".join(page_texts),
         "pages": page_json,
+    }
+
+
+async def process_chapter_full_production(browser, chapter_url: str, index: int, total: int, profile: dict) -> dict | None:
+    """[جديد — وضع الإنتاج الكامل] مطابقة لـocr_process_chapter تمامًا (نفس
+    get_chapter_images، نفس منتِج/مستهلك متداخل)، مع فرق جوهري واحد: نفس
+    raw المُستخدَمة بـOCR تُمرَّر أيضًا لـ_ocr_handle_page لتُضغَط وتُحفَظ
+    (chapter_dir/saved_image_paths) — جلب واحد فقط لكل صورة يُغذّي المسارين
+    معًا، بدل نداء get_chapter_images/fetch_image_bytes مرتين منفصلتين لكل
+    فصل (مرة بمسار الإنتاج ومرة بمسار OCR) كما كان الحال قبل هذا الوضع.
+    مسار المتصفح فقط بهذا الإصدار الأول — راجع تنويه واضح بـ
+    run_full_production_mode لبروفايلات HTTP (azorafly). صفحات فشل تحميلها
+    بالمرور الأول تُعاد محاولتها مرة أخيرة واحدة بعد اكتمال البقية — راجع
+    تفصيل الآلية وسبب إعادة ترتيب page_texts/page_json/saved_image_paths
+    بعدها داخل الدالة."""
+    print(f"[{index}/{total}] 🏭 إنتاج كامل (ضغط+OCR+ترجمة): {chapter_url} — بروفايل: {profile['label']}")
+
+    context, image_urls, fail_reason, title = await get_chapter_images(browser, chapter_url, profile)
+
+    if not image_urls:
+        print(f"  ❌ {fail_reason or 'لم يُعثر على صور في هذا الفصل'}")
+        return None
+
+    manga_id, chapter_num = manga_slug_from_url(chapter_url)
+    fetch_mode = profile.get("fetch_mode", "browser")
+    chapter_dir = OUTPUT_DIR / manga_id / f"ch-{chapter_num}"
+
+    async def download(img_url: str):
+        if fetch_mode == "http":
+            return await fetch_image_bytes_http(img_url, chapter_url)
+        return await fetch_image_bytes(context, img_url, chapter_url)
+
+    page_texts: list[str] = []
+    page_json: list[dict] = []
+    saved_image_paths: list[str] = []
+    total_pages = len(image_urls)
+    label = f"[{index}/{total}]"
+
+    queue: asyncio.Queue = asyncio.Queue(maxsize=OCR_DOWNLOAD_QUEUE_SIZE)
+    # [جديد — إعادة محاولة الصور الفاشلة] بعكس النسخة السابقة (غياب صامت
+    # نهائي لنص+صورة الصفحة معًا لأي فشل تحميل عابر) — نفس فلسفة
+    # process_chapter الأصلية تمامًا (محاولة أخيرة واحدة بعد اكتمال كل
+    # الصفحات الأخرى، لا تكرار لا نهائي)، مُكيَّفة هنا لإعادة تغذية OCR+
+    # الضغط معًا عبر _ocr_handle_page نفسها بدل تكرار منطق حفظ منفصل.
+    failed_indices: list[int] = []
+
+    async def producer():
+        for i, img_url in enumerate(image_urls, start=1):
+            raw, reason = await download(img_url)
+            await queue.put((i, raw, reason))
+            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+
+    async def consumer() -> int:
+        pages_since_rebuild = 0
+        for _ in range(total_pages):
+            i, raw, reason = await queue.get()
+            if not raw:
+                failed_indices.append(i)
+                print(f"  ⚠️ {label} صفحة {i}/{total_pages}: فشل التحميل ({reason}) — ستُعاد المحاولة لاحقًا")
+                continue
+            pages_since_rebuild = await _ocr_handle_page(
+                label, i, raw, reason, total_pages, page_texts, page_json, pages_since_rebuild,
+                saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
+            )
+        return pages_since_rebuild
+
+    producer_task = asyncio.create_task(producer())
+    pages_since_rebuild = await consumer()
+    await producer_task
+
+    if failed_indices:
+        print(f"  🔁 {label} إعادة محاولة نهائية لـ {len(failed_indices)} صفحة فشل تحميلها...")
+        still_failed: list[int] = []
+        for i in failed_indices:
+            img_url = image_urls[i - 1]
+            raw, reason = await download(img_url)
+            if raw:
+                pages_since_rebuild = await _ocr_handle_page(
+                    f"{label} (إعادة محاولة)", i, raw, reason, total_pages, page_texts, page_json,
+                    pages_since_rebuild, saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
+                )
+            else:
+                print(f"  ❌ {label} صفحة {i}/{total_pages}: تعذّر تحميلها نهائيًا حتى بعد إعادة المحاولة: {reason}")
+                still_failed.append(i)
+            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+        if still_failed:
+            print(f"  ❌ {label} {len(still_failed)} صفحة غابت نهائيًا (نص+صورة معًا): {still_failed}")
+
+        # [حرج] المحاولات الناجحة أعلاه أُضيفت بنهاية page_texts/page_json
+        # (ترتيب اكتمال الاستدعاء، لا ترتيب رقم الصفحة) — بعكس المسار
+        # الطبيعي بالطابور الذي يضمن الترتيب الصحيح ضمنيًا. إعادة ترتيب
+        # page_json حسب "page" ثم إعادة بناء page_texts منه (بدل الاعتماد
+        # على ترتيب append) يضمن النص النهائي (text_en.txt ودمج "text")
+        # بالترتيب الصحيح دومًا. saved_image_paths تُرتَّب أبجديًا — كافٍ
+        # هنا لأن اسم الملف مبطَّن بأصفار لثلاث خانات ({page_num:03d}) بنفس
+        # مجلد الفصل لكل الصفحات، فالترتيب الأبجدي يطابق الرقمي تمامًا —
+        # ترتيبها يُحدِّد فعليًا ترتيب قراءة الصفحات المعروض لاحقًا بـ
+        # manifest.json (راجع merge_manifest_dict)، فليس تجميليًا فقط.
+        page_json.sort(key=lambda pj: pj["page"])
+        page_texts = [format_ocr_page_text(pj["page"], pj["sentences"]) for pj in page_json]
+        saved_image_paths.sort()
+
+    if context:
+        await context.close()
+
+    if not saved_image_paths and not page_texts:
+        return None
+
+    return {
+        "manga_id": manga_id,
+        "chapter_num": chapter_num,
+        "source_url": chapter_url,
+        "chapter_slug": f"{manga_id}__ch-{chapter_num}",
+        "manga_title": title,
+        "text": "\n\n".join(page_texts),
+        "pages": page_json,
+        "image_paths": saved_image_paths,
     }
 
 
@@ -1446,6 +1624,194 @@ async def run_ocr_experiment_mode(chapter_urls: list[str]) -> None:
             "ocr_experiment/remaining_urls.txt"
         )
         print("🔁 يُتوقَّع من خطوة \"تشغيل الضغط\" بملف الـworkflow إعادة تشغيل عملية Python جديدة بهذه القائمة تلقائيًا")
+        sys.exit(75)
+
+
+async def run_full_production_mode(chapter_urls: list[str]) -> None:
+    """[جديد — وضع الإنتاج الكامل] لكل فصل، بالتتابع: ضغط+OCR (جلب واحد
+    يُغذّي الاثنين معًا، عبر process_chapter_full_production) ← ترجمة عربية
+    فورية ← دفع الصور المضغوطة + ملفات OCR/الترجمة معًا بنفس commit واحد —
+    قرار صريح مؤكَّد: تراكمي آمن عند الانقطاع، بدل تجميع كل الفصول أولًا.
+    OCR والترجمة إلزاميان دومًا بهذا الوضع (TRANSLATE_TO_ARABIC تُفرَض true
+    هنا بصرف النظر عن قيمة المدخل بالـworkflow — قرار مؤكَّد أيضًا)، بشرط
+    توفّر GEMINI_API_KEY فعليًا (خلاف ذلك: نفس تحذير translation_active
+    المعتاد، الفصل يُحفَظ بنصه الإنجليزي فقط دون سقوط التشغيلة).
+
+    [حد معروف — بروفايلات HTTP] هذا الإصدار الأول لمسار المتصفح حصرًا
+    (نفس قيد process_chapter/ocr_process_chapter الحاليين لتسلسل الفصول
+    بمسار المتصفح). بروفايل azorafly (HTTP) غير مدعوم بعد بهذا الوضع —
+    توسيع بنية المنتِج/المستهلك متعددة الفصول (_ocr_http_*) لتضمين الضغط
+    أيضًا نطاق أوسع من هذا التسليم، يحتاج تقييمًا منفصلاً.
+
+    [مُصلَح] الصفحات التي فشل تحميلها ضمن نفس الفصل تُعاد محاولتها مرة
+    أخيرة واحدة بعد اكتمال كل الصفحات الأخرى (راجع process_chapter_full_production
+    — نفس فلسفة process_chapter الأصلية بالضبط)، تُغذّي عندها OCR+الضغط
+    معًا لتلك الصفحة. صفحة لا تزال فاشلة حتى بعد هذه المحاولة الأخيرة فقط
+    هي ما تغيب فعليًا (نصًا وصورة معًا) من نتيجة الفصل."""
+    print("🏭 وضع الإنتاج الكامل: ضغط + OCR + ترجمة لكل فصل، جلب واحد فقط لكل صورة، دفع تراكمي لكل فصل")
+    os.environ["TRANSLATE_TO_ARABIC"] = "true"
+
+    profile = get_profile()
+    print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
+    print(f"⚙️ [بند 3] حد RSS الأقصى: {OCR_MAX_RSS_MB}MB — يُفحَص بعد اكتمال كل فصل")
+    fetch_mode = profile.get("fetch_mode", "browser")
+
+    if fetch_mode == "http":
+        print(
+            f"❌ وضع الإنتاج الكامل لا يدعم بروفايل HTTP ({profile['label']}) بهذا "
+            "الإصدار — اختر بروفايلًا يعتمد المتصفح (mangatuk/mangatime/"
+            "olympustaff/procomic)، أو استخدم وضع «إنتاج» ثم «استخراج_نص» "
+            "منفصلين لهذا البروفايل تحديدًا"
+        )
+        sys.exit(1)
+
+    ocr_dir = OUTPUT_DIR / "ocr_experiment"
+    ocr_dir.mkdir(parents=True, exist_ok=True)
+
+    total = len(chapter_urls)
+    files_written: list[Path] = []
+    skipped_urls: list[str] = []
+    success_count = 0
+    succeeded_meta: list[dict] = []
+    failed_translations: list[dict] = []
+
+    try:
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+            for i, url in enumerate(chapter_urls, start=1):
+                try:
+                    r = await process_chapter_full_production(browser, url, i, total, profile)
+                except Exception as e:
+                    print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء الإنتاج الكامل: {e}")
+                    r = None
+                if r:
+                    out_dir = ocr_dir / r["chapter_slug"]
+                    out_dir.mkdir(parents=True, exist_ok=True)
+                    txt_path = out_dir / "text_en.txt"
+                    json_path = out_dir / "text_en.json"
+                    txt_path.write_text(r["text"], encoding="utf-8")
+                    json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
+                    files_written += [txt_path, json_path]
+                    files_written += await _translate_chapter_if_enabled(r, out_dir, failed_translations)
+                    success_count += 1
+                    succeeded_meta.append({
+                        "index": i,
+                        "manga_id": r["manga_id"],
+                        "chapter_num": r["chapter_num"],
+                        "manga_title": r.get("manga_title", ""),
+                    })
+
+                    if GIT_COMMIT_DIR:
+                        remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+                        merged = merge_manifest_dict(remote or {}, [r])
+                        (OUTPUT_DIR / "manifest.json").write_text(
+                            json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
+                        )
+                        allowed = ["manifest.json", f"{r['manga_id']}/ch-{r['chapter_num']}", "ocr_experiment"]
+                        ok, msg = await asyncio.to_thread(
+                            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                            f"إنتاج كامل: {r['manga_id']} - الفصل {r['chapter_num']}", allowed,
+                        )
+                        print(f"  {'✅' if ok else '⚠️'} دفع فصل (صور+OCR+ترجمة): {msg}")
+
+                rss = _current_rss_mb()
+                if rss is not None and rss >= OCR_MAX_RSS_MB:
+                    print(
+                        f"🚨 [بند 3] RSS الحالية ({rss:.0f}MB) تجاوزت "
+                        f"OCR_MAX_RSS_MB ({OCR_MAX_RSS_MB}MB) بعد الفصل "
+                        f"{i}/{total} — إيقاف عن بدء فصول جديدة"
+                    )
+                    skipped_urls = chapter_urls[i:]
+                    break
+            await browser.close()
+    finally:
+        _shutdown_ocr_thread()
+
+    still_failed_translations, retry_files = await _final_retry_translations(failed_translations)
+    files_written.extend(retry_files)
+    if still_failed_translations:
+        fail_lines = [
+            f"{it['chapter_result']['manga_id']} - الفصل {it['chapter_result']['chapter_num']} "
+            f"— {it['chapter_result'].get('source_url', '')}"
+            for it in still_failed_translations
+        ]
+        fail_path = ocr_dir / "failed_translations.txt"
+        fail_path.write_text("\n".join(fail_lines) + "\n", encoding="utf-8")
+        files_written.append(fail_path)
+        print(f"  ❌ [ترجمة] {len(still_failed_translations)} فصل بقي بلا ترجمة عربية — راجع {fail_path.name}")
+
+    if skipped_urls:
+        remaining_path = ocr_dir / "remaining_urls.txt"
+        remaining_path.write_text("\n".join(skipped_urls) + "\n", encoding="utf-8")
+
+    # [نفس منطق التسمية الوصفية المتَّبع بـrun_ocr_experiment_mode حرفيًا —
+    # راجع تعليقه هناك للتبرير الكامل] يُبنى مرة واحدة، يُستخدَم لاسم أرشيف
+    # OCR/الترجمة (بادئة "ocr-"). [قرار — إزالة تكرار] لا أرشيف zip منفصل
+    # للصور المضغوطة هنا: الصور مخدومة أصلًا فرديًا عبر manifest.json+CDN
+    # بنفس آلية وضع «إنتاج» العادي تمامًا؛ أرشيف صور إضافي كان يعني قراءة
+    # كل صورة من القرص مجددًا وإعادة ضغطها بzip (وقت CPU إضافي حقيقي لكل
+    # تشغيلة) ومضاعفة حجم بايتات الصور المخزَّنة بفرع git، بلا فائدة توزيع
+    # حقيقية (بعكس أرشيف OCR/الترجمة الذي لا آلية توزيع أخرى له إطلاقًا).
+    descriptive_zip_stem = None
+    try:
+        if succeeded_meta:
+            zip_title = MANGA_TITLE_OVERRIDE or (
+                min(succeeded_meta, key=lambda m: m["index"]).get("manga_title") or ""
+            )
+            if zip_title:
+                def _chapter_sort_key(n: str):
+                    try:
+                        return (0, float(n))
+                    except (TypeError, ValueError):
+                        return (1, n)
+
+                chapter_nums = sorted({m["chapter_num"] for m in succeeded_meta}, key=_chapter_sort_key)
+                candidate = _sanitize_filename(f"{zip_title} - ch {','.join(chapter_nums)}")
+                if candidate:
+                    descriptive_zip_stem = candidate
+    except Exception as e:
+        print(f"⚠️ تعذّر بناء اسم وصفي لأرشيفات zip — الرجوع للتسمية الافتراضية run-{RUN_ID}: {e}")
+        descriptive_zip_stem = None
+
+    stem_suffix = f"{descriptive_zip_stem}__run-{RUN_ID}" if descriptive_zip_stem else f"run-{RUN_ID}"
+    if descriptive_zip_stem:
+        print(f"🏷️ اسم أرشيف zip الوصفي: {stem_suffix}")
+
+    # [جديد — أرشيف OCR+الترجمة الخاص بهذه التشغيلة حصرًا]
+    ocr_zip_relpath = f"ocr_experiment/runs/ocr-{stem_suffix}.zip"
+    ocr_zip_path = OUTPUT_DIR / ocr_zip_relpath
+    ocr_zip_path.parent.mkdir(parents=True, exist_ok=True)
+    ocr_zip_ok, ocr_zipped_count = True, 0
+    try:
+        with zipfile.ZipFile(ocr_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+            for fp in files_written:
+                if fp.is_file():
+                    zf.write(fp, arcname=fp.relative_to(ocr_dir))
+                    ocr_zipped_count += 1
+    except Exception as e:
+        ocr_zip_ok = False
+        print(f"⚠️ تعذّر إنشاء أرشيف zip لـOCR/الترجمة: {e}")
+    if ocr_zip_ok:
+        print(f"🗜️ أُنشئ أرشيف OCR+الترجمة الخاص بهذه التشغيلة ({ocr_zipped_count} ملف): {ocr_zip_relpath}")
+
+    if GIT_COMMIT_DIR:
+        ok, msg = await asyncio.to_thread(
+            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+            f"إنتاج كامل — دفع احتياطي نهائي ({success_count} فصل)",
+            ["manifest.json", "ocr_experiment"],
+        )
+        print(f"{'✅' if ok else '⚠️'} دفع احتياطي نهائي: {msg}")
+
+    print("\n" + "=" * 50)
+    print(f"✅ اكتمل الإنتاج الكامل لـ {success_count}/{total} فصل بهذه العملية")
+    if skipped_urls:
+        print(f"  ⏸️ لم يُعالَج (متبقٍ لعملية تالية): {len(skipped_urls)} فصل — راجع ocr_experiment/remaining_urls.txt")
+    print("🔗 الصور مخدومة عبر manifest.json (نفس آلية وضع «إنتاج» تمامًا)")
+    if ocr_zip_ok:
+        print(f"🔗 أرشيف OCR+الترجمة: {OUTPUT_DIR}/{ocr_zip_relpath}")
+    print("=" * 50)
+
+    if skipped_urls:
         sys.exit(75)
 
 
