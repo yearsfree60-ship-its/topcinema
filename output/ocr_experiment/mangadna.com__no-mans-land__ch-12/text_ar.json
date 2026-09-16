@@ -1,0 +1,1353 @@
+{
+  "manga_id": "mangadna.com__no-mans-land",
+  "chapter_num": "12",
+  "manga_title": "No Man’s Land Manhwa",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "GOBLINS.",
+          "confidence": 0.994,
+          "text_ar": "غوبلن."
+        },
+        {
+          "text": "hdl",
+          "confidence": 0.432,
+          "text_ar": "همم"
+        },
+        {
+          "text": "THEY'RE SMALL AND EVIL MONSTERS WHO LOVE TO STEAL THINGS.",
+          "confidence": 0.935,
+          "text_ar": "إنهم وحوش صغيرة وشريرة تهوى السرقة."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "BECAUSE OF THEIR SMALL STATURE AND LOWINTELLIGENCE,IT'S NOT DIFFICULT TO DEFEAT THEM.",
+          "confidence": 0.953,
+          "text_ar": "بسبب قصر قامتهم ومحدودية ذكائهم، ليس من الصعب هزيمتهم."
+        },
+        {
+          "text": "SSSS. LV3",
+          "confidence": 0.805,
+          "text_ar": "فحيح. المستوى 3"
+        },
+        {
+          "text": "GUUUH...",
+          "confidence": 0.889,
+          "text_ar": "آغغغ..."
+        },
+        {
+          "text": "BUT...THEREIS ONE THING THAT MAKES GOBLINS VERY SCARY.",
+          "confidence": 0.952,
+          "text_ar": "لكن... هناك شيء واحد يجعل الغوبلن مخيفين للغاية."
+        },
+        {
+          "text": "AND THAT IS THEIR STRENGTH IN NUMBERS.",
+          "confidence": 0.91,
+          "text_ar": "وهو قوتهم في أعدادهم."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "GOBLINS LIVE IN PACKS.",
+          "confidence": 0.948,
+          "text_ar": "يعيش الغوبلن في مجموعات."
+        },
+        {
+          "text": "A SINGLE PACK CAN HAVE UP1O TO SO GOBLINS...",
+          "confidence": 0.911,
+          "text_ar": "المجموعة الواحدة قد تضم ما بين 10 إلى 50 غوبلن..."
+        },
+        {
+          "text": "EVE AN EXPERIENCED ADVENTURER CAN EASILY BE OVERWHELMED BY SUCH NUMBERS.",
+          "confidence": 0.919,
+          "text_ar": "حتى المغامر المتمرس قد يسهل سحقه أمام هذه الأعداد."
+        },
+        {
+          "text": "H-HELP ME...",
+          "confidence": 0.88,
+          "text_ar": "سـ-ساعدوني..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "PLEASE...",
+          "confidence": 0.932,
+          "text_ar": "أرجوكم..."
+        },
+        {
+          "text": "DRIP P",
+          "confidence": 0.339,
+          "text_ar": "تقطير"
+        },
+        {
+          "text": "DRIP 1 E 4",
+          "confidence": 0.103,
+          "text_ar": "تقطير"
+        },
+        {
+          "text": "SOMEONE SAVE ME!!",
+          "confidence": 0.96,
+          "text_ar": "لينقذني أحدكم!!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": []
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "AND THAT.",
+          "confidence": 0.903,
+          "text_ar": "وهذا."
+        },
+        {
+          "text": "nVA",
+          "confidence": 0.4,
+          "text_ar": "آه"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "IS THE FIRST RAID MISSION I'VE BEEN ASSIGNED IN THIS FANTASY WORLD.",
+          "confidence": 0.938,
+          "text_ar": "هي أول مهمة غارة أُسندت إلي في هذا العالم الخيالي."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "Tan's and",
+          "confidence": 0.896,
+          "text_ar": "تان و"
+        },
+        {
+          "text": "Creator Heemin",
+          "confidence": 0.992,
+          "text_ar": "المبتكر هيمين"
+        },
+        {
+          "text": "The Stolen Artifact",
+          "confidence": 0.989,
+          "text_ar": "الأثر المسروق"
+        },
+        {
+          "text": "18 HOURS AGO...",
+          "confidence": 0.915,
+          "text_ar": "قبل 18 ساعة..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "JIGGLE",
+          "confidence": 0.996,
+          "text_ar": "اهتزاز"
+        },
+        {
+          "text": "JIGGLE",
+          "confidence": 0.976,
+          "text_ar": "اهتزاز"
+        },
+        {
+          "text": "ALLOW ME TO INTRODUCE MYSELF.",
+          "confidence": 0.959,
+          "text_ar": "اسمحوا لي أن أقدم نفسي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "I AM CHRISTA. I AM THE NUNIN CHARGEOFTHE TOWN CHURCH.",
+          "confidence": 0.925,
+          "text_ar": "أنا كريستا. أنا الراهبة المسؤولة عن كنيسة البلدة."
+        },
+        {
+          "text": "STEP STEP",
+          "confidence": 0.975,
+          "text_ar": "خطوات"
+        },
+        {
+          "text": "THE REASON I COME TO YOU ADVENTURERS TODAY..",
+          "confidence": 0.934,
+          "text_ar": "سبب قدومي إليكم أيها المغامرون اليوم هو..."
+        },
+        {
+          "text": "FWIP",
+          "confidence": 0.973,
+          "text_ar": "رفرفة"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "FWIP",
+          "confidence": 0.956,
+          "text_ar": "رفرفة"
+        },
+        {
+          "text": "IS SOMETHING WRONG?",
+          "confidence": 0.725,
+          "text_ar": "هل هناك خطب ما؟"
+        },
+        {
+          "text": "SWEAT",
+          "confidence": 0.975,
+          "text_ar": "عرق"
+        },
+        {
+          "text": "SWE'AT",
+          "confidence": 0.918,
+          "text_ar": "عرق"
+        },
+        {
+          "text": "WELL...",
+          "confidence": 0.929,
+          "text_ar": "حسناً..."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "IT'S JUST...",
+          "confidence": 0.87,
+          "text_ar": "الأمر فقط..."
+        },
+        {
+          "text": "IT'S VERY... DIFFICULT TO LOOK AT YOU DIRECTLY...",
+          "confidence": 0.891,
+          "text_ar": "من الصعب جداً... النظر إليك مباشرة..."
+        },
+        {
+          "text": "MAY I SEE YOU?",
+          "confidence": 0.94,
+          "text_ar": "هل يمكنني رؤيتك؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "UH...UH...",
+          "confidence": 0.922,
+          "text_ar": "أوه... أوه..."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": []
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "HUUUUUUUUH??",
+          "confidence": 0.71,
+          "text_ar": "هااااااااه؟؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "THINK ABOUT SOMETHING ELSE THINK ABOUT SOMETHING ELSE!",
+          "confidence": 0.957,
+          "text_ar": "فكر في شيء آخر، فكر في شيء آخر!"
+        },
+        {
+          "text": "SLAP",
+          "confidence": 0.874,
+          "text_ar": "صفعة"
+        },
+        {
+          "text": "YOU'RE IN A SACRED BUILDING RIGHT NOW!",
+          "confidence": 0.93,
+          "text_ar": "أنت في مكان مقدس الآن!"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "HMMM... 5",
+          "confidence": 0.263,
+          "text_ar": "هممم... 5"
+        },
+        {
+          "text": "YOU DON'T LOOK LIKE YOU'RE A DEMON OR A MONSTER...",
+          "confidence": 0.926,
+          "text_ar": "لا تبدو كشيطان أو وحش..."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "WHAT'S THIS?",
+          "confidence": 0.984,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "I GOT A BONeR.",
+          "confidence": 0.851,
+          "text_ar": "لقد انتصب."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "T-T-THIS IS...",
+          "confidence": 0.832,
+          "text_ar": "هـ-هذا..."
+        },
+        {
+          "text": "BULGE",
+          "confidence": 0.912,
+          "text_ar": "بروز"
+        },
+        {
+          "text": "BULGE",
+          "confidence": 0.939,
+          "text_ar": "بروز"
+        },
+        {
+          "text": "THIS IS...",
+          "confidence": 0.952,
+          "text_ar": "هذا..."
+        },
+        {
+          "text": "THIS IS A DICK, IT COMES FROM SEON-WOONG'S SPECIAL ABILITY OF BEING A\"MAN.\"",
+          "confidence": 0.94,
+          "text_ar": "هذا ديك، إنه نتاج قدرة لي سيون-وونغ الخاصة بكونه \"رجلاً\"."
+        },
+        {
+          "text": "D-DICK?",
+          "confidence": 0.993,
+          "text_ar": "د-ديك؟"
+        },
+        {
+          "text": "DM5 E",
+          "confidence": 0.402,
+          "text_ar": "همم"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "YEAH, THAT'S WHAT IT'S CALLED... IT HAS THE POWER TO MAKE WOMEN \"HORNY\"OR SOMETHING LIKE THAT. IT'S A DANGEROUS WEAPON.",
+          "confidence": 0.892,
+          "text_ar": "أجل، هذا ما يُسمى... لديه القدرة على إثارة النساء أو شيء من هذا القبيل. إنه سلاح خطير."
+        },
+        {
+          "text": "W-WEAPON??",
+          "confidence": 0.996,
+          "text_ar": "سـ-سلاح؟؟"
+        },
+        {
+          "text": "YOU HEARD ME!",
+          "confidence": 0.962,
+          "text_ar": "لقد سمعتني!"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "DIDN'T FAZE ME AT ALL THOUGH!",
+          "confidence": 0.976,
+          "text_ar": "لكنه لم يؤثر بي على الإطلاق!"
+        },
+        {
+          "text": "DIDN'T... PHASE HER?",
+          "confidence": 0.954,
+          "text_ar": "لم... يؤثر بها؟"
+        },
+        {
+          "text": "FWOP AHHA",
+          "confidence": 0.873,
+          "text_ar": "رفرفة"
+        },
+        {
+          "text": "FWOR",
+          "confidence": 0.863,
+          "text_ar": "رفرفة"
+        },
+        {
+          "text": "EWOP",
+          "confidence": 0.831,
+          "text_ar": "رفرفة"
+        },
+        {
+          "text": "AH! AH",
+          "confidence": 0.808,
+          "text_ar": "آه! آه"
+        },
+        {
+          "text": "FWOP",
+          "confidence": 0.913,
+          "text_ar": "رفرفة"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "FWOP",
+          "confidence": 0.874,
+          "text_ar": "رفرفة"
+        },
+        {
+          "text": "HUFF",
+          "confidence": 0.964,
+          "text_ar": "زفير"
+        },
+        {
+          "text": "FWOP FWOP,",
+          "confidence": 0.794,
+          "text_ar": "رفرفة رفرفة"
+        },
+        {
+          "text": "HMM... THAT'S...",
+          "confidence": 0.92,
+          "text_ar": "همم... هذا..."
+        },
+        {
+          "text": "THAT'S NOT HOW I REMEMBERIT...",
+          "confidence": 0.933,
+          "text_ar": "هذا ليس كما أتذكره..."
+        },
+        {
+          "text": "wow...",
+          "confidence": 0.829,
+          "text_ar": "واو..."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "AMAZING!",
+          "confidence": 0.983,
+          "text_ar": "مذهل!"
+        },
+        {
+          "text": "SO THE RUMORS THAT AN EXTRAORDINARY ELF AND HER WEIRD HUMANCOMPANION WITH A DANGEROUS ABILITY WERE IN TOWNWERE TRUE!",
+          "confidence": 0.944,
+          "text_ar": "إذن فالشائعات حول وجود قزمة استثنائية ورفيقها البشري الغريب ذي القدرة الخطيرة في البلدة كانت صحيحة!"
+        },
+        {
+          "text": "AND THAT RANK!",
+          "confidence": 0.992,
+          "text_ar": "وهذا التصنيف!"
+        },
+        {
+          "text": "YOU'RE A GOLD RANK BASED JUST ON YOUR JUSTONYOUR STATS ALONE!!!",
+          "confidence": 0.887,
+          "text_ar": "أنتما برتبة ذهبية بناءً على إحصائياتكما فقط!!!"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "THAT'S THE KIND OF ADVENTURERS I WAS LOOKING FOR!",
+          "confidence": 0.911,
+          "text_ar": "هذا هو نوع المغامرين الذين كنت أبحث عنهم!"
+        },
+        {
+          "text": "DID YOU JUST CALL ME A WEIRD HUMAN COMPANION WITH A DANGEROUS ABILITY!?",
+          "confidence": 0.963,
+          "text_ar": "هل وصفتني للتو برفيق بشري غريب ذي قدرة خطيرة!؟"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "AHEM!",
+          "confidence": 0.986,
+          "text_ar": "أحم!"
+        },
+        {
+          "text": "AInICUT",
+          "confidence": 0.737,
+          "text_ar": "أحم"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "ALRIGHT MISS VANILLA AND LEE SEON-WOONG.",
+          "confidence": 0.894,
+          "text_ar": "حسناً آنسة فانيلا ولي سيون-وونغ."
+        },
+        {
+          "text": "OUR CHURCH...",
+          "confidence": 0.949,
+          "text_ar": "كنيستنا..."
+        },
+        {
+          "text": "WOULD LIKE TO REQUEST A GOBLIN RAID.",
+          "confidence": 0.966,
+          "text_ar": "تود طلب غارة على الغوبلن."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "GOBLINS..?",
+          "confidence": 0.952,
+          "text_ar": "غوبلن..؟"
+        },
+        {
+          "text": "WHY IS THE CHURCH ITSELF REQUESTING",
+          "confidence": 0.973,
+          "text_ar": "لماذا تطلب الكنيسة بنفسها"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "A RAID?",
+          "confidence": 0.972,
+          "text_ar": "غارة؟"
+        },
+        {
+          "text": "FORCOMMON MONSTERS LIKE GOBLINS...",
+          "confidence": 0.938,
+          "text_ar": "بالنسبة لوحوش شائعة مثل الغوبلن..."
+        },
+        {
+          "text": "IT WOULD BE MORE EFFICIENT TO GO TO THE GUILD AND USE THEIR",
+          "confidence": 0.946,
+          "text_ar": "سيكون من الأكثر كفاءة الذهاب إلى النقابة واستخدام"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "RESOURCES...",
+          "confidence": 0.979,
+          "text_ar": "مواردها..."
+        },
+        {
+          "text": "IT'S DEFINI.T.ELY",
+          "confidence": 0.915,
+          "text_ar": "بالتأكيد"
+        },
+        {
+          "text": "SO THERE MUST BE A SPECIFIC REASON YOU WANT ONLY THE TWO OF US.",
+          "confidence": 0.928,
+          "text_ar": "لذا لا بد من وجود سبب محدد لرغبتك فينا نحن الاثنين فقط."
+        },
+        {
+          "text": "AHAHAHA... YOU'RE VERY KEEN INDEED.",
+          "confidence": 0.931,
+          "text_ar": "هاهاها... أنت فطن جداً بالفعل."
+        },
+        {
+          "text": "WF △RF HOPING",
+          "confidence": 0.876,
+          "text_ar": "نأمل"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "THIS PROBLEM GETS RESOLVED AS SOON AS POSSIBLE.",
+          "confidence": 0.953,
+          "text_ar": "أن تُحل هذه المشكلة في أسرع وقت ممكن."
+        },
+        {
+          "text": "THERE MAY BE TERRIBLE CONSEQUENCES IF IT'S NOT TAKEN CARE OF IMMEDIATELY...",
+          "confidence": 0.89,
+          "text_ar": "قد تكون هناك عواقب وخيمة إذا لم يتم التعامل مع الأمر فوراً..."
+        },
+        {
+          "text": "WHAT ARE YOU TALKING ABOUT?",
+          "confidence": 0.979,
+          "text_ar": "عن ماذا تتحدثين؟"
+        },
+        {
+          "text": "NOW, I MUST ASK YOU TWO.",
+          "confidence": 0.936,
+          "text_ar": "الآن، يجب أن أسألكما."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": [
+        {
+          "text": "HOW MUCH DO YOU KNOW ABOUT THE BARRIER SURROUNDING THIS TOWN?",
+          "confidence": 0.941,
+          "text_ar": "كم تعرفان عن الحاجز المحيط بهذه البلدة؟"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "sentences": [
+        {
+          "text": "自由租电自电",
+          "confidence": 0.222,
+          "text_ar": "همم"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "sentences": [
+        {
+          "text": "BARRIER?",
+          "confidence": 0.996,
+          "text_ar": "حاجز؟"
+        },
+        {
+          "text": "REMEMBER WHAT MISS SIASAID?",
+          "confidence": 0.958,
+          "text_ar": "أتذكر ما قالته الآنسة سيا؟"
+        },
+        {
+          "text": "THE TOWN DOES NOT REVEAL ITSELF TO THOSE WHO DO NOT QUALIFY TO ENTER.",
+          "confidence": 0.906,
+          "text_ar": "البلدة لا تكشف عن نفسها لمن لا يستحق الدخول."
+        },
+        {
+          "text": "WHISPER",
+          "confidence": 0.991,
+          "text_ar": "همس"
+        },
+        {
+          "text": "IT'S THE BARRIER THAT KEEPS THIS TOWN HIDDEN.",
+          "confidence": 0.961,
+          "text_ar": "إنه الحاجز الذي يبقي هذه البلدة مخفية."
+        },
+        {
+          "text": "OHHH.",
+          "confidence": 0.991,
+          "text_ar": "أوه."
+        },
+        {
+          "text": "TUE ANICICNIT",
+          "confidence": 0.838,
+          "text_ar": "الأثر القديم"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "sentences": [
+        {
+          "text": "THEANCIENT ARTIFACT IS WHAT POWERS THE BARRIER AND KEEPS THE TOWN SAFE.",
+          "confidence": 0.941,
+          "text_ar": "الأثر القديم هو ما يمد الحاجز بالطاقة ويحافظ على أمان البلدة."
+        },
+        {
+          "text": "IT HAS BEEN IN THE CARE OF OURCHURCH FOR A LONG TIME.",
+          "confidence": 0.943,
+          "text_ar": "لقد كان في رعاية كنيستنا لفترة طويلة."
+        },
+        {
+          "text": "AND NOW, THAT ARTIFACT IS...",
+          "confidence": 0.832,
+          "text_ar": "والآن، ذلك الأثر..."
+        },
+        {
+          "text": "IS GONE??",
+          "confidence": 0.965,
+          "text_ar": "قد اختفى؟"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "BECAUSE THE GOBLINS TOOK IT?",
+          "confidence": 0.954,
+          "text_ar": "لأن الغوبلن سرقوه؟"
+        },
+        {
+          "text": "AND YOU'RE AFRAID TO TAKE RESPONSIBILITY FORIT BECAUSE THE BARRIER IS COMPROMISED AND THE ARTIFACT WAS UNDER YOUR WATCH?",
+          "confidence": 0.943,
+          "text_ar": "وأنتِ خائفة من تحمل المسؤولية لأن الحاجز قد تضرر والأثر كان تحت حراستك؟"
+        },
+        {
+          "text": "OSHINO 中 享 享",
+          "confidence": 0.159,
+          "text_ar": "همم"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": [
+        {
+          "text": "AND SO YOUWANTED TO HIRE AN EXPERIENCED ADVENTURER TO TAKE CARE OF THIS ISSUE AS FAST AS POSSIBLE BEFORE ANY RUMORS STARTED SPREADING...",
+          "confidence": 0.939,
+          "text_ar": "وهكذا أردتِ توظيف مغامر متمرس للتعامل مع هذه القضية بأسرع وقت ممكن قبل أن تبدأ الشائعات بالانتشار..."
+        },
+        {
+          "text": "WHICH IS WHY YOU CAME LOOKING FOR MISS VANILLA?",
+          "confidence": 0.933,
+          "text_ar": "وهذا هو سبب بحثك عن الآنسة فانيلا؟"
+        },
+        {
+          "text": "AHAHAHA, ABOUT THAT...",
+          "confidence": 0.902,
+          "text_ar": "هاهاها، بخصوص ذلك..."
+        },
+        {
+          "text": "MUMBLE",
+          "confidence": 0.978,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "HOWDID YOU..?",
+          "confidence": 0.886,
+          "text_ar": "كيف عرفت..؟"
+        },
+        {
+          "text": "DUDOOM 0 一",
+          "confidence": 0.548,
+          "text_ar": "دوم"
+        },
+        {
+          "text": "I KNEW SOMETHING HAD TO BE UP!",
+          "confidence": 0.898,
+          "text_ar": "كنت أعلم أن هناك أمراً مريباً!"
+        },
+        {
+          "text": "THERE'S OBVIOUSLY SUPPOSED TO BE SOMETHING THERE!",
+          "confidence": 0.954,
+          "text_ar": "من الواضح أنه كان من المفترض وجود شيء ما هناك!"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "LET US TAKE OUR DEPARTURE, MISS VANILLA!",
+          "confidence": 0.955,
+          "text_ar": "لِنرحل من هنا يا آنسة فانيلا!"
+        },
+        {
+          "text": "IMAGINE WHAT COULD HAPPEN TO US IF WE ACCEPT THIS QUEST AND THINGS GET OUT OF HAND!",
+          "confidence": 0.953,
+          "text_ar": "تخيلي ما قد يحدث لنا إذا قبلنا هذه المهمة وخرجت الأمور عن السيطرة!"
+        },
+        {
+          "text": "CC C n 2",
+          "confidence": 0.517,
+          "text_ar": "همم"
+        },
+        {
+          "text": "YEAH?",
+          "confidence": 0.996,
+          "text_ar": "أجل؟"
+        },
+        {
+          "text": "PLEASE LISTEN!",
+          "confidence": 0.995,
+          "text_ar": "أرجوكِ استمعي!"
+        },
+        {
+          "text": "THE MONSTER THAT TOOK THE ARTIFACT BECOMES IMMENSELY POWERFUL!",
+          "confidence": 0.979,
+          "text_ar": "الوحش الذي أخذ الأثر يصبح قوياً للغاية!"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": [
+        {
+          "text": "ARE YOU NOT GOING TO DO ANYTHING ABOUT IT? THIS COULD END IN DISASTER!",
+          "confidence": 0.952,
+          "text_ar": "ألن تفعلا شيئاً حيال ذلك؟ قد ينتهي الأمر بكارثة!"
+        },
+        {
+          "text": "A LOT OF PEOPLE ARE GOING TO DIE!",
+          "confidence": 0.895,
+          "text_ar": "سيموت الكثير من الناس!"
+        },
+        {
+          "text": "IF YOU ARE TRULY WARRIORS OF JUSTICE, ARE YOU REALLY GOING TO BE BYSTANDERS IN THIS SITUATION!?",
+          "confidence": 0.933,
+          "text_ar": "إذا كنتما حقاً محاربي عدالة، هل ستقفان مكتوفي الأيدي في هذا الموقف!؟"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "sentences": [
+        {
+          "text": "SEON-WOONG...",
+          "confidence": 0.943,
+          "text_ar": "سيون-وونغ..."
+        },
+        {
+          "text": "LET'S GO, MISS VANILLA.",
+          "confidence": 0.951,
+          "text_ar": "لِنذهب يا آنسة فانيلا."
+        },
+        {
+          "text": "IT'S NOT OUR PROBLEM TO TAKE CARE OF.",
+          "confidence": 0.94,
+          "text_ar": "ليست مشكلتنا لنتعامل معها."
+        },
+        {
+          "text": "GRIT",
+          "confidence": 0.977,
+          "text_ar": "صرير"
+        },
+        {
+          "text": "1000 SHILLINGS. 100O SHIINGS",
+          "confidence": 0.778,
+          "text_ar": "1000 شيلينغ. 1000 شيلينغ"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "sentences": [
+        {
+          "text": "100O SHILLINGS??? DID SHE JUST SAY 100O SHILLINGS?",
+          "confidence": 0.896,
+          "text_ar": "1000 شيلينغ؟؟ هل قالت للتو 1000 شيلينغ؟"
+        },
+        {
+          "text": "FWIP",
+          "confidence": 0.93,
+          "text_ar": "رفرفة"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "sentences": [
+        {
+          "text": "HMPH!",
+          "confidence": 0.992,
+          "text_ar": "همف!"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "sentences": []
+    },
+    {
+      "page": 44,
+      "sentences": []
+    },
+    {
+      "page": 45,
+      "sentences": [
+        {
+          "text": "IF YOU THINK YOUCAN BUY US WITH THAT",
+          "confidence": 0.931,
+          "text_ar": "إذا كنتِ تظنين أن بإمكانكِ شراءنا بهذا"
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "sentences": [
+        {
+          "text": "MEASLY AMOUNT THEN YOUARE SORELY MISTAKEN!",
+          "confidence": 0.973,
+          "text_ar": "المبلغ الزهيد فأنتِ مخطئة تماماً!"
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "sentences": [
+        {
+          "text": "3000 SHILLINGS",
+          "confidence": 0.997,
+          "text_ar": "3000 شيلينغ"
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "sentences": [
+        {
+          "text": "I'M TELLING YOU, THAT AMOUNT OF MONEY WON'T...",
+          "confidence": 0.93,
+          "text_ar": "أقول لكِ، هذا المبلغ من المال لن..."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "sentences": []
+    },
+    {
+      "page": 50,
+      "sentences": [
+        {
+          "text": "CUT TO THE PRESENT.",
+          "confidence": 0.958,
+          "text_ar": "نعود للحاضر."
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "sentences": [
+        {
+          "text": "SHIT...",
+          "confidence": 0.94,
+          "text_ar": "تباً..."
+        },
+        {
+          "text": "ICAN'T BELIEVE WE AGREED TO DO THIS.",
+          "confidence": 0.974,
+          "text_ar": "لا أصدق أننا وافقنا على فعل هذا."
+        },
+        {
+          "text": "IT'S OKAY!",
+          "confidence": 0.965,
+          "text_ar": "لا بأس!"
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "sentences": [
+        {
+          "text": "YOUDID GOOD,YOU KNOW?",
+          "confidence": 0.948,
+          "text_ar": "لقد قمتِ بعمل جيد، أتعلمين؟"
+        },
+        {
+          "text": "5000 SHILLINGS!!",
+          "confidence": 0.994,
+          "text_ar": "5000 شيلينغ!!"
+        },
+        {
+          "text": "3500 SHILLINGS!!",
+          "confidence": 0.99,
+          "text_ar": "3500 شيلينغ!!"
+        },
+        {
+          "text": "YOU \\/CDC ADICT",
+          "confidence": 0.742,
+          "text_ar": "أنتِ مدمنة"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "sentences": [
+        {
+          "text": "NEGOTIATE THE BOUNTY TO AN EVEN HIGHER PRICE.",
+          "confidence": 0.95,
+          "text_ar": "التفاوض على المكافأة بسعر أعلى."
+        },
+        {
+          "text": "IF IT WERE ME, I WOULD HAVE ACCEPTED HER QUEST EVEN BEFORE SHE STARTED PUTTING A PRICE ON IT.",
+          "confidence": 0.943,
+          "text_ar": "لو كنت مكانك، لقبلت مهمتها حتى قبل أن تبدأ بوضع سعر لها."
+        },
+        {
+          "text": "OOF.",
+          "confidence": 0.971,
+          "text_ar": "أوف."
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "sentences": [
+        {
+          "text": "WELL... THAT'S BECAUSE...",
+          "confidence": 0.921,
+          "text_ar": "حسناً... هذا لأن..."
+        },
+        {
+          "text": "THIS IS THE ONLY WAY I GET TO HELP YOU OUT...",
+          "confidence": 0.848,
+          "text_ar": "هذه هي الطريقة الوحيدة التي يمكنني بها مساعدتك..."
+        },
+        {
+          "text": "DON'T SAY THAT, YOU'RE DOING A GREAT JOB.",
+          "confidence": 0.929,
+          "text_ar": "لا تقولي ذلك، أنتِ تقومين بعمل رائع."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "sentences": [
+        {
+          "text": "B-BUT,DO YOU THINK WE CAN DO THIS?",
+          "confidence": 0.959,
+          "text_ar": "لـ-لكن، هل تعتقد أننا نستطيع فعل هذا؟"
+        },
+        {
+          "text": "ICAN'T HELP BUT FEEL LIKE WE'RE SEVERELY UNDER LEVELED FOR THIS QUEST...",
+          "confidence": 0.898,
+          "text_ar": "لا يسعني إلا الشعور بأن مستوانا أقل بكثير لهذه المهمة..."
+        },
+        {
+          "text": "FWIP",
+          "confidence": 0.931,
+          "text_ar": "رفرفة"
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "sentences": [
+        {
+          "text": "I DIDN'T TAKE YOU FOR A COWARD, SEON-WOONG!",
+          "confidence": 0.942,
+          "text_ar": "لم أظنك جباناً يا سيون-وونغ!"
+        },
+        {
+          "text": "SNICKER",
+          "confidence": 0.986,
+          "text_ar": "ضحكة خفيفة"
+        },
+        {
+          "text": "YOU SCARED OF SOME LOW LIFE CREATURES?",
+          "confidence": 0.948,
+          "text_ar": "هل أنت خائف من بعض المخلوقات الوضيعة؟"
+        },
+        {
+          "text": "WELL...",
+          "confidence": 0.972,
+          "text_ar": "حسناً..."
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "sentences": [
+        {
+          "text": "BUT STILL...",
+          "confidence": 0.885,
+          "text_ar": "لكن مع ذلك..."
+        },
+        {
+          "text": "THE ARTIFACT PROBABLY MADE THE GOBLIN STRONG, AND WE MIGHT EVEN TAKE THE FALL FOR THE DISAPPEARANCE OF THE ARTIFACT.",
+          "confidence": 0.942,
+          "text_ar": "الأثر جعل الغوبلن قوياً على الأرجح، وقد نتحمل نحن اللوم على اختفاء الأثر."
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "sentences": [
+        {
+          "text": "WHY ARE YOU WORRYING ABOUT SOMETHING LIKE THAT?",
+          "confidence": 0.948,
+          "text_ar": "لماذا تقلق بشأن شيء كهذا؟"
+        },
+        {
+          "text": "UNNIE'S GOT YOU COVERED, DON'T WORRY!",
+          "confidence": 0.96,
+          "text_ar": "أختك الكبرى هنا للاهتمام بك، لا تقلق!"
+        },
+        {
+          "text": "UNNIE?",
+          "confidence": 0.996,
+          "text_ar": "أخت كبرى؟"
+        },
+        {
+          "text": "HMPH!",
+          "confidence": 0.991,
+          "text_ar": "همف!"
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "sentences": [
+        {
+          "text": "B-BUT...",
+          "confidence": 0.966,
+          "text_ar": "لـ-لكن..."
+        },
+        {
+          "text": "WELL... I GUESS SHE'LL BE ABLE TO TAKE ON WHATEVER WE COME ACROSS.",
+          "confidence": 0.826,
+          "text_ar": "حسناً... أعتقد أنها ستكون قادرة على مواجهة أي شيء نصادفه."
+        },
+        {
+          "text": "HER STATS ALONE GAVE HER A GOLD RANK...",
+          "confidence": 0.919,
+          "text_ar": "إحصائياتها وحدها منحتها رتبة ذهبية..."
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "sentences": [
+        {
+          "text": "IN GAMING TERMS,SHE'D BE ON THE TOP OF THE RANKED LEADERBOARD!",
+          "confidence": 0.946,
+          "text_ar": "بمصطلحات الألعاب، ستكون في قمة لوحة المتصدرين!"
+        },
+        {
+          "text": "A BUFFED-UP GOBLIN IS STILL A GOBLIN... IT WON'T STAND A CHANCE AGAINST MISS VANILLA.",
+          "confidence": 0.911,
+          "text_ar": "الغوبلن المعزز يظل غوبلن... لن يملك فرصة أمام الآنسة فانيلا."
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "sentences": [
+        {
+          "text": "IF WE DO THIS BY THE BOOKS, WE SHOULD BE ABLE TO COMPLETE THE MISSION UNSCATHED!",
+          "confidence": 0.9,
+          "text_ar": "إذا قمنا بهذا وفقاً للأصول، سنتمكن من إكمال المهمة دون خدش!"
+        },
+        {
+          "text": "AHA!",
+          "confidence": 0.977,
+          "text_ar": "آها!"
+        },
+        {
+          "text": "I THOUGHT OF A GAME PLAN.",
+          "confidence": 0.965,
+          "text_ar": "لقد خطرت لي خطة."
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "sentences": [
+        {
+          "text": "WHAT? WHAT IS IT? WHAT'S THE GAME PLAN?",
+          "confidence": 0.959,
+          "text_ar": "ماذا؟ ما هي؟ ما هي الخطة؟"
+        },
+        {
+          "text": "HEHE...",
+          "confidence": 0.98,
+          "text_ar": "ههه..."
+        },
+        {
+          "text": "THERE'S ONLYONE WAY.",
+          "confidence": 0.954,
+          "text_ar": "هناك طريقة واحدة فقط."
+        },
+        {
+          "text": "WE'RE GONNA TAKE EM HEAD ON!",
+          "confidence": 0.933,
+          "text_ar": "سنهجم عليهم مباشرة!"
+        },
+        {
+          "text": "WHAT??? WHAT???",
+          "confidence": 0.991,
+          "text_ar": "ماذا؟؟ ماذا؟؟"
+        },
+        {
+          "text": "WAIT A",
+          "confidence": 0.914,
+          "text_ar": "انتظري"
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "sentences": [
+        {
+          "text": "MINOTE MISS VANILLA...",
+          "confidence": 0.934,
+          "text_ar": "لحظة يا آنسة فانيلا..."
+        },
+        {
+          "text": "EXCUSE ME!?!????",
+          "confidence": 0.968,
+          "text_ar": "عفواً!؟"
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "sentences": [
+        {
+          "text": "GIGA CHAD)WALRS TOROUGHFEEFRONTDOOR.",
+          "confidence": 0.814,
+          "text_ar": "تقتحم المكان من الباب الأمامي."
+        },
+        {
+          "text": "SHE'S...",
+          "confidence": 0.912,
+          "text_ar": "إنها..."
+        },
+        {
+          "text": "SHE'S GONE ALREADY...?",
+          "confidence": 0.942,
+          "text_ar": "هل رحلت بالفعل...؟"
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "sentences": [
+        {
+          "text": "THE PROBLEM WITH THIS ELF...",
+          "confidence": 0.911,
+          "text_ar": "المشكلة مع هذه القزمة..."
+        },
+        {
+          "text": "DOI HAVE TO GO AFTER HER..?",
+          "confidence": 0.907,
+          "text_ar": "هل عليّ اللحاق بها..؟"
+        },
+        {
+          "text": "WHOOOSH",
+          "confidence": 0.983,
+          "text_ar": "هبوب"
+        },
+        {
+          "text": ".IS THAT SHE'S TOO STUPID.",
+          "confidence": 0.861,
+          "text_ar": "هي أنها غبية جداً."
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.988,
+          "text_ar": "يتبع"
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "sentences": []
+    },
+    {
+      "page": 67,
+      "sentences": []
+    },
+    {
+      "page": 68,
+      "sentences": []
+    },
+    {
+      "page": 69,
+      "sentences": [
+        {
+          "text": "喜人卫卫",
+          "confidence": 0.523,
+          "text_ar": "هيمين"
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "sentences": [
+        {
+          "text": "RODOOO",
+          "confidence": 0.491,
+          "text_ar": "رودو"
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "sentences": [
+        {
+          "text": "DICK OY EYENIAL",
+          "confidence": 0.441,
+          "text_ar": "ديك وفانيلا"
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "sentences": []
+    },
+    {
+      "page": 73,
+      "sentences": [
+        {
+          "text": "鬼畜英雄",
+          "confidence": 0.982,
+          "text_ar": "البطل المجنون"
+        },
+        {
+          "text": "よのき",
+          "confidence": 0.969,
+          "text_ar": "يونيكي"
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "sentences": []
+    },
+    {
+      "page": 75,
+      "sentences": [
+        {
+          "text": "- 1 FAS.",
+          "confidence": 0.188,
+          "text_ar": "الفصل 1."
+        }
+      ]
+    }
+  ]
+}
