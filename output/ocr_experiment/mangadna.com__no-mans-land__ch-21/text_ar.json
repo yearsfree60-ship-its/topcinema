@@ -1,0 +1,1256 @@
+{
+  "manga_id": "mangadna.com__no-mans-land",
+  "chapter_num": "21",
+  "manga_title": "No Man’s Land Manhwa",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I'MSORRY I'MSORRY!",
+          "confidence": 0.954,
+          "text_ar": "أنا آسف، أنا آسف!"
+        },
+        {
+          "text": "欢 花滋 业",
+          "confidence": 0.078,
+          "text_ar": "توهج"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "IT'S HARD TO STOP ONCE I START!",
+          "confidence": 0.933,
+          "text_ar": "من الصعب أن أتوقف بمجرد أن أبدأ!"
+        },
+        {
+          "text": "I DIDN'T MEAN TODOIT ONPURPOSE!",
+          "confidence": 0.952,
+          "text_ar": "لم أقصد فعل ذلك عن عمد!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "SWISH SWISH",
+          "confidence": 0.974,
+          "text_ar": "حفيف حفيف"
+        },
+        {
+          "text": "MMM,MMMMM (NO,IT'S ALRIGHT.)",
+          "confidence": 0.939,
+          "text_ar": "ممم، ممممم (لا، لا بأس بذلك.)"
+        },
+        {
+          "text": "MMMPH.",
+          "confidence": 0.979,
+          "text_ar": "ممف."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "MMMMMMMMPH (I'MPARTIALLY TO BLAME.)",
+          "confidence": 0.951,
+          "text_ar": "ممممممف (أنا أتحمل جزءاً من اللوم أيضاً.)"
+        },
+        {
+          "text": "BLEECH NOOOOOOO!!",
+          "confidence": 0.822,
+          "text_ar": "تباً، لااااااا!!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "HELLO THERE. I'M LEE SEON-WOONG, AND I JUST DRANK A STRANGER'S PISS.",
+          "confidence": 0.898,
+          "text_ar": "مرحباً. أنا لي سيون-وونغ، وقد شربت للتو بول شخص غريب."
+        },
+        {
+          "text": "A STRANGER, YOU SAY? THAT'S RIGHT, WE'VE NEVER EVEN TALKED TO EACH OTHER.",
+          "confidence": 0.95,
+          "text_ar": "شخص غريب، قلت؟ هذا صحيح، لم يسبق لنا حتى أن تحدثنا مع بعضنا البعض."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "AAACK!",
+          "confidence": 0.989,
+          "text_ar": "آخ!"
+        },
+        {
+          "text": "GLUG GLUG GLUG",
+          "confidence": 0.875,
+          "text_ar": "جرع جرع جرع"
+        },
+        {
+          "text": "WOULD YOU EVEN BELIEVE ME IF I TOLD YOU IT WAS PURELY A COINCIDENCE?",
+          "confidence": 0.87,
+          "text_ar": "هل ستصدقني حتى لو أخبرتك أن الأمر كان محض صدفة؟"
+        },
+        {
+          "text": "FROM MONSTERS, HUMANS, ALL THE WAY",
+          "confidence": 0.919,
+          "text_ar": "من الوحوش، والبشر، وصولاً إلى..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "TO GENDERS...",
+          "confidence": 0.922,
+          "text_ar": "الجنسين..."
+        },
+        {
+          "text": "GURGLE GURGLE",
+          "confidence": 0.972,
+          "text_ar": "غرغرة غرغرة"
+        },
+        {
+          "text": ".IT SEEMS LIKE THIS WORLDIS OUT TO GET ME.",
+          "confidence": 0.93,
+          "text_ar": "يبدو أن هذا العالم يحاول النيل مني."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "BUT STILL...",
+          "confidence": 0.952,
+          "text_ar": "لكن مع ذلك..."
+        },
+        {
+          "text": "ATLEAST",
+          "confidence": 0.996,
+          "text_ar": "على الأقل"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "IGOT A GOODVIEW OUT OF IT...",
+          "confidence": 0.88,
+          "text_ar": "حصلت على مشهد جيد من ذلك..."
+        },
+        {
+          "text": "DO I.. JUST LET IT SLIDE?",
+          "confidence": 0.894,
+          "text_ar": "هل.. هل أدع الأمر يمر وحسب؟"
+        },
+        {
+          "text": "I'MTHE ONE WHO GETS THE APOLOGY? I'M THE ONE WHO FORGIVES? REALLY?",
+          "confidence": 0.946,
+          "text_ar": "أنا من يحصل على الاعتذار؟ أنا من يسامح؟ حقاً؟"
+        },
+        {
+          "text": "ARE YOU SURE YOU'RE OKAY?",
+          "confidence": 0.946,
+          "text_ar": "هل أنت متأكد أنك بخير؟"
+        },
+        {
+          "text": "SWEAT",
+          "confidence": 0.98,
+          "text_ar": "عرق"
+        },
+        {
+          "text": "SWEAT",
+          "confidence": 0.984,
+          "text_ar": "عرق"
+        },
+        {
+          "text": "I WOULD HAVE BEEN IN BIG TROUBLE BACK IN THE",
+          "confidence": 0.87,
+          "text_ar": "كنت سأقع في مشكلة كبيرة في..."
+        },
+        {
+          "text": "IT'S FINE.",
+          "confidence": 0.945,
+          "text_ar": "لا بأس."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "IT'S FINE.",
+          "confidence": 0.972,
+          "text_ar": "لا بأس."
+        },
+        {
+          "text": "REAL WORLD.",
+          "confidence": 0.969,
+          "text_ar": "العالم الحقيقي."
+        },
+        {
+          "text": "THIS STENCH IS MAKING MY HEAD SPIN...I WANT TO WASH UP.",
+          "confidence": 0.884,
+          "text_ar": "هذه الرائحة الكريهة تجعل رأسي يدور... أريد أن أغتسل."
+        },
+        {
+          "text": "THE CLOSEST STREAM FROM HERE SHOULD BE...",
+          "confidence": 0.924,
+          "text_ar": "أقرب مجرى مائي من هنا يجب أن يكون..."
+        },
+        {
+          "text": "A-ANYWAY!",
+          "confidence": 0.987,
+          "text_ar": "عـ-على أي حال!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "LET ME CLEAN THAT UP FOR YOU...!",
+          "confidence": 0.873,
+          "text_ar": "دعني أنظف ذلك من أجلك...!"
+        },
+        {
+          "text": "NOOOM",
+          "confidence": 0.759,
+          "text_ar": "نوم"
+        },
+        {
+          "text": "SHAAAA",
+          "confidence": 0.962,
+          "text_ar": "شـاااا"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "DUDOOM",
+          "confidence": 0.861,
+          "text_ar": "دوم"
+        },
+        {
+          "text": "HUH??",
+          "confidence": 0.991,
+          "text_ar": "هاه؟؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "AGIRL WITH A STAFF IN FRONT OF ME.",
+          "confidence": 0.932,
+          "text_ar": "فتاة تحمل عصا تقف أمامي."
+        },
+        {
+          "text": "AND THIS SITUATION...",
+          "confidence": 0.948,
+          "text_ar": "وهذا الموقف..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "IT CAN'T BE...",
+          "confidence": 0.905,
+          "text_ar": "لا يمكن أن يكون..."
+        },
+        {
+          "text": "THIS MUST BE...",
+          "confidence": 0.945,
+          "text_ar": "يجب أن يكون هذا..."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "…A TENTACLE?",
+          "confidence": 0.908,
+          "text_ar": "…مجس؟"
+        },
+        {
+          "text": "CRACK",
+          "confidence": 0.99,
+          "text_ar": "طقطقة"
+        },
+        {
+          "text": "GRASPO",
+          "confidence": 0.952,
+          "text_ar": "إمساك"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "..HUH?",
+          "confidence": 0.886,
+          "text_ar": "..هاه؟"
+        },
+        {
+          "text": "HUH!?",
+          "confidence": 0.992,
+          "text_ar": "هاه!؟"
+        },
+        {
+          "text": "CLASPO",
+          "confidence": 0.969,
+          "text_ar": "تشبث"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "GRABO",
+          "confidence": 0.939,
+          "text_ar": "قبض"
+        },
+        {
+          "text": "AU SECOURS!",
+          "confidence": 0.965,
+          "text_ar": "النجدة!"
+        },
+        {
+          "text": "KYAAA!!",
+          "confidence": 0.992,
+          "text_ar": "كيااا!!"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "WHAT THE!? ARE YOU OKAY!?",
+          "confidence": 0.972,
+          "text_ar": "ماذا!؟ هل أنتِ بخير!؟"
+        },
+        {
+          "text": "PREY.",
+          "confidence": 0.989,
+          "text_ar": "فريسة."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "FOOD.",
+          "confidence": 0.989,
+          "text_ar": "طعام."
+        },
+        {
+          "text": "WE ELIMINATED THE DISTRACTION.",
+          "confidence": 0.981,
+          "text_ar": "لقد قضينا على المشتت."
+        },
+        {
+          "text": "NOW WE CAN SLOWLY EAT.",
+          "confidence": 0.966,
+          "text_ar": "الآن يمكننا الأكل ببطء."
+        },
+        {
+          "text": "HOP HOP HOP-HOP",
+          "confidence": 0.898,
+          "text_ar": "قفز قفز قفز"
+        },
+        {
+          "text": "HOP HOP",
+          "confidence": 0.837,
+          "text_ar": "قفز قفز"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "FWIP",
+          "confidence": 0.966,
+          "text_ar": "فويب"
+        },
+        {
+          "text": "SHIT!",
+          "confidence": 0.994,
+          "text_ar": "تباً!"
+        },
+        {
+          "text": "WHEN DID SO MANY SNEAK UP RFUIND USI",
+          "confidence": 0.818,
+          "text_ar": "متى تسلل هذا العدد الكبير خلفنا؟"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "RUN...AWAY...",
+          "confidence": 0.931,
+          "text_ar": "اهرب... بعيداً..."
+        },
+        {
+          "text": "WHAT!?",
+          "confidence": 0.997,
+          "text_ar": "ماذا!؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "I-I'LL BE...",
+          "confidence": 0.905,
+          "text_ar": "سـ-سأكون..."
+        },
+        {
+          "text": "SLIPO",
+          "confidence": 0.964,
+          "text_ar": "انزلاق"
+        },
+        {
+          "text": "GRABO",
+          "confidence": 0.872,
+          "text_ar": "قبض"
+        },
+        {
+          "text": "..OKAY.",
+          "confidence": 0.863,
+          "text_ar": "..حسناً."
+        },
+        {
+          "text": "THIS ISN'T EVEN THAT MANY...",
+          "confidence": 0.944,
+          "text_ar": "هذا العدد ليس كبيراً حتى..."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "I CAN TAKE THEM ON WITH MY BARE FISTS...",
+          "confidence": 0.934,
+          "text_ar": "يمكنني مواجهتهم بقبضتي العاريتين..."
+        },
+        {
+          "text": "NNGH!!",
+          "confidence": 0.99,
+          "text_ar": "أغغ!!"
+        },
+        {
+          "text": "UHH..?",
+          "confidence": 0.794,
+          "text_ar": "إيه..؟"
+        },
+        {
+          "text": "R-RETRACTED NIPPLES!?",
+          "confidence": 0.937,
+          "text_ar": "حـ-حلمتان منكمشتان!؟"
+        },
+        {
+          "text": "BOING",
+          "confidence": 0.985,
+          "text_ar": "بونغ"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "BOING",
+          "confidence": 0.981,
+          "text_ar": "بونغ"
+        },
+        {
+          "text": "KYAA!Z",
+          "confidence": 0.876,
+          "text_ar": "كياا!"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "THAT'S MY...!",
+          "confidence": 0.9,
+          "text_ar": "هذا خاصتي...!"
+        },
+        {
+          "text": "NNGHO",
+          "confidence": 0.988,
+          "text_ar": "أغغ"
+        },
+        {
+          "text": "HNNGH",
+          "confidence": 0.963,
+          "text_ar": "أغغ"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "OPO",
+          "confidence": 0.618,
+          "text_ar": "أوه"
+        },
+        {
+          "text": "NGH!",
+          "confidence": 0.99,
+          "text_ar": "أغ!"
+        },
+        {
+          "text": "V DRIP",
+          "confidence": 0.612,
+          "text_ar": "تقطير"
+        },
+        {
+          "text": "DRIP",
+          "confidence": 0.932,
+          "text_ar": "تقطير"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "HAA",
+          "confidence": 0.991,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "HAA",
+          "confidence": 0.992,
+          "text_ar": "هاه"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "WAIT.",
+          "confidence": 0.992,
+          "text_ar": "انتظر."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "WHAT AM I DOING RIGHT NOW!?",
+          "confidence": 0.964,
+          "text_ar": "ما الذي أفعله الآن!؟"
+        },
+        {
+          "text": "THIS ISN'T THE TIME TO GET DISTRACTED!",
+          "confidence": 0.957,
+          "text_ar": "هذا ليس الوقت المناسب للتشتت!"
+        },
+        {
+          "text": "YOU'RE RIGHT...",
+          "confidence": 0.94,
+          "text_ar": "أنت محق..."
+        },
+        {
+          "text": "RUN AWAY BEFORE IT'S TOO LATE-",
+          "confidence": 0.948,
+          "text_ar": "اهرب قبل فوات الأوان-"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "GOING TO SAVE YOU!",
+          "confidence": 0.965,
+          "text_ar": "سأقوم بإنقاذك!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "WHAT? HOW...",
+          "confidence": 0.925,
+          "text_ar": "ماذا؟ كيف..."
+        },
+        {
+          "text": "IT'S ALMOST IMPOSSIBLE TO TAKE DOWN SLIMES EMPTY HANDED...",
+          "confidence": 0.963,
+          "text_ar": "من المستحيل تقريباً القضاء على الهلاميات بأيدٍ فارغة..."
+        },
+        {
+          "text": "IT'S OKAY.",
+          "confidence": 0.929,
+          "text_ar": "لا بأس."
+        },
+        {
+          "text": "I'MNOT",
+          "confidence": 0.988,
+          "text_ar": "أنا لست"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": [
+        {
+          "text": "EMPTY HANDED.",
+          "confidence": 0.982,
+          "text_ar": "بيدين فارغتين."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.996,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "THANKS TO MY\"PACT..\"",
+          "confidence": 0.89,
+          "text_ar": "بفضل \"ميثاقي\".."
+        },
+        {
+          "text": "OOOM",
+          "confidence": 0.78,
+          "text_ar": "أووم"
+        },
+        {
+          "text": "IAM ONF WITH HFR.",
+          "confidence": 0.883,
+          "text_ar": "أنا واحد معها."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "sentences": [
+        {
+          "text": "I SUMMON YOU! FAIRY OF THE BLADE! AAAA 1",
+          "confidence": 0.466,
+          "text_ar": "أستدعيكِ! جنية النصل! آآآه!"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "sentences": [
+        {
+          "text": "\"PINK!!!\"",
+          "confidence": 0.918,
+          "text_ar": "\"بينك!!!\""
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "sentences": [
+        {
+          "text": "A PACT USER!?",
+          "confidence": 0.976,
+          "text_ar": "مستخدم ميثاق!؟"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "HEHEHE.",
+          "confidence": 0.996,
+          "text_ar": "هيهيهي."
+        },
+        {
+          "text": "FRET NOT, LITTLE GIRL....",
+          "confidence": 0.893,
+          "text_ar": "لا تقلقي، أيتها الفتاة الصغيرة...."
+        },
+        {
+          "text": "I WILL TAKE CARE OF THESE MONST... POW",
+          "confidence": 0.707,
+          "text_ar": "سأعتني بهؤلاء الوحوش... باو"
+        },
+        {
+          "text": "I TOLD YOU",
+          "confidence": 0.946,
+          "text_ar": "لقد أخبرتك"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": [
+        {
+          "text": "NOT TO CALL ME BY THAT NAME,YOU DUMBASS!",
+          "confidence": 0.918,
+          "text_ar": "ألا تناديني بذلك الاسم، أيها الأحمق!"
+        },
+        {
+          "text": "BUT...ACK!",
+          "confidence": 0.953,
+          "text_ar": "لكن... آخ!"
+        },
+        {
+          "text": "YOU SAID THAT YOU WOULDN'T BE ABLE TO HEAR ME",
+          "confidence": 0.892,
+          "text_ar": "قلتَ إنك لن تكون قادراً على سماعي"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "UNLESS I CALLED FORYOU...",
+          "confidence": 0.948,
+          "text_ar": "إلا إذا ناديتُ عليك..."
+        },
+        {
+          "text": "\"BLADE OF THE FAIRY\" WILL DO JUST FINE, YOU HEAR ME!?",
+          "confidence": 0.942,
+          "text_ar": "\"نصل الجنية\" سيكون كافياً، هل تسمعني!؟"
+        },
+        {
+          "text": "I SAID I'D PAY ATTENTION!",
+          "confidence": 0.923,
+          "text_ar": "قلتُ إنني سأنتبه!"
+        },
+        {
+          "text": "BUT YOU SUMMONED ME BECAUSE IT'S AN EMERGENCY,",
+          "confidence": 0.932,
+          "text_ar": "لكنك استدعيتني لأنها حالة طوارئ،"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": [
+        {
+          "text": "RIGHT!?",
+          "confidence": 0.997,
+          "text_ar": "أليس كذلك!؟"
+        },
+        {
+          "text": "WHERE'S THE ENEMY!?",
+          "confidence": 0.968,
+          "text_ar": "أين العدو!؟"
+        },
+        {
+          "text": "SHAKE",
+          "confidence": 0.997,
+          "text_ar": "اهتزاز"
+        },
+        {
+          "text": "2 SHAKE",
+          "confidence": 0.759,
+          "text_ar": "اهتزاز"
+        },
+        {
+          "text": "O-OVER THERE..",
+          "confidence": 0.972,
+          "text_ar": "هـ-هناك.."
+        },
+        {
+          "text": "WHERE!?",
+          "confidence": 0.991,
+          "text_ar": "أين!؟"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "sentences": []
+    },
+    {
+      "page": 41,
+      "sentences": [
+        {
+          "text": "IS IT JUST ME OR DOES IT LOOK LIKE THESE GUYS WERE ALREADYTAKEN CARE OF?",
+          "confidence": 0.861,
+          "text_ar": "هل أنا فقط أم يبدو أن هؤلاء قد تم التعامل معهم بالفعل؟"
+        },
+        {
+          "text": "SIZZLE MY BODY... EWOOSH",
+          "confidence": 0.88,
+          "text_ar": "أزيز جسدي... ووش"
+        },
+        {
+          "text": "MYB...",
+          "confidence": 0.88,
+          "text_ar": "جـ..."
+        },
+        {
+          "text": "MELTING...",
+          "confidence": 0.957,
+          "text_ar": "يذوب..."
+        },
+        {
+          "text": "HUH? WHAT HAPPENED?",
+          "confidence": 0.975,
+          "text_ar": "هاه؟ ماذا حدث؟"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "sentences": [
+        {
+          "text": "E-EXCUSE ME!",
+          "confidence": 0.975,
+          "text_ar": "عـ-عذراً!"
+        },
+        {
+          "text": "THANK YOU FOR BUYING ME SOME TIME!",
+          "confidence": 0.923,
+          "text_ar": "شكراً لك على منحي بعض الوقت!"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "sentences": [
+        {
+          "text": "LET ME FINALLY INTRODUCE MYSELF.",
+          "confidence": 0.964,
+          "text_ar": "دعني أقدم نفسي أخيراً."
+        },
+        {
+          "text": "I'M..I'M...",
+          "confidence": 0.829,
+          "text_ar": "أنا.. أنا..."
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "sentences": [
+        {
+          "text": "I'M MINT!",
+          "confidence": 0.963,
+          "text_ar": "أنا مينت!"
+        },
+        {
+          "text": "IAMA SORCERESS...ON AN ADVENTURE!",
+          "confidence": 0.883,
+          "text_ar": "أنا ساحرة... في مغامرة!"
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "sentences": [
+        {
+          "text": "lan's and ,",
+          "confidence": 0.122,
+          "text_ar": "والمبتكر هيمين"
+        },
+        {
+          "text": "Creator Heemin",
+          "confidence": 0.975,
+          "text_ar": "المبتكر هيمين"
+        },
+        {
+          "text": "A Sorcerer Approaches!",
+          "confidence": 0.967,
+          "text_ar": "ساحرة تقترب!"
+        },
+        {
+          "text": "MAGIC!",
+          "confidence": 0.98,
+          "text_ar": "سحر!"
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "sentences": [
+        {
+          "text": "A SHOWCASE OF MYSTICAL POWERS...",
+          "confidence": 0.875,
+          "text_ar": "استعراض للقوى الغامضة..."
+        },
+        {
+          "text": "NO DOUBT AN ESSENTIAL PART OF THE FANTASY GENRE!",
+          "confidence": 0.926,
+          "text_ar": "بلا شك جزء أساسي من نوع الفانتازيا!"
+        },
+        {
+          "text": "I GUESS MAGICEXISTS IN THIS WORLD AS WELL...",
+          "confidence": 0.894,
+          "text_ar": "أظن أن السحر موجود في هذا العالم أيضاً..."
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "sentences": [
+        {
+          "text": "..I WAS QUITE SURPRISED.",
+          "confidence": 0.833,
+          "text_ar": "..لقد تفاجأت حقاً."
+        },
+        {
+          "text": "I DIDN'T EXPECT TO COME ACROSS SOMEONE WHO MADE A PACT WITH A FAIRY IN FRONTENUS, OF ALL PLACES...",
+          "confidence": 0.929,
+          "text_ar": "لم أتوقع أن أصادف شخصاً عقد ميثاقاً مع جنية في فرونتينوس، من بين كل الأماكن..."
+        },
+        {
+          "text": "IT'S QUITE THE RARE SIGHT INDEED...",
+          "confidence": 0.925,
+          "text_ar": "إنه مشهد نادر حقاً..."
+        },
+        {
+          "text": "REALLY?",
+          "confidence": 0.992,
+          "text_ar": "حقاً؟"
+        },
+        {
+          "text": "O-OF COURSE!",
+          "confidence": 0.981,
+          "text_ar": "بـ-بالطبع!"
+        },
+        {
+          "text": "A PACT TIES TWO SOULS TOGETHER.",
+          "confidence": 0.921,
+          "text_ar": "الميثاق يربط روحين معاً."
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "sentences": [
+        {
+          "text": "ALMOST EVERY FAIRY TURNS DOWNPACTS FOR THAT REASON..",
+          "confidence": 0.941,
+          "text_ar": "تقريباً كل جنية ترفض المواثيق لهذا السبب.."
+        },
+        {
+          "text": "SINCE THEIR SOULS HAVE TO BE FOREVER TIED TO SOMEONE, THEY ALWAYS ASK FORSOMETHINGMAJOR IN RETURN!",
+          "confidence": 0.942,
+          "text_ar": "بما أن أرواحهن يجب أن تظل مرتبطة بشخص ما إلى الأبد، فإنهن دائماً يطلبن شيئاً كبيراً في المقابل!"
+        },
+        {
+          "text": "GIVE ME ONE OF YOUR EYES, GIVE MEONE OF YOUR ARMS...",
+          "confidence": 0.893,
+          "text_ar": "أعطني إحدى عينيك، أعطني إحدى ذراعيك..."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "sentences": [
+        {
+          "text": "MOST TRADE OFFS FOR A PACT ARE CRUEL LIKE THAT.",
+          "confidence": 0.95,
+          "text_ar": "معظم المقايضات للميثاق قاسية كهذه."
+        },
+        {
+          "text": "TO THINK ABOUT JUST WHAT KIND OF TRADE OFF YOU HAD TO MAKE FOR YOUR PACT...",
+          "confidence": 0.945,
+          "text_ar": "بالتفكير في نوع المقايضة التي اضطررت للقيام بها من أجل ميثاقك..."
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "sentences": [
+        {
+          "text": "SEX WHEN?",
+          "confidence": 0.968,
+          "text_ar": "متى الجنس؟"
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "sentences": [
+        {
+          "text": "OKAY....",
+          "confidence": 0.777,
+          "text_ar": "حسناً...."
+        },
+        {
+          "text": "ICAN'T SEEM TO THANK YOU ENOUGH!",
+          "confidence": 0.949,
+          "text_ar": "لا أستطيع شكرك بما فيه الكفاية!"
+        },
+        {
+          "text": "IF YOU WEREN'T THERE... THENI WOULD BE THOSE SLIMES'DINNER RIGHT ABOUT NOW...",
+          "confidence": 0.881,
+          "text_ar": "لو لم تكن هناك... لكنت الآن عشاءً لتلك الهلاميات..."
+        },
+        {
+          "text": "BOW",
+          "confidence": 0.952,
+          "text_ar": "انحناء"
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "sentences": [
+        {
+          "text": "NO NEED TO THANK ME.",
+          "confidence": 0.954,
+          "text_ar": "لا داعي لشكري."
+        },
+        {
+          "text": "YOU ALSO SAVED ME BACK THERE...",
+          "confidence": 0.921,
+          "text_ar": "لقد أنقذتني أيضاً هناك..."
+        },
+        {
+          "text": "ANYWAY...",
+          "confidence": 0.943,
+          "text_ar": "على أي حال..."
+        },
+        {
+          "text": "PLEASE LET ME KNOW WHENEVER I CAN BE OF ASSISTANCE.",
+          "confidence": 0.938,
+          "text_ar": "يرجى إعلامي كلما استطعت تقديم المساعدة."
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "sentences": [
+        {
+          "text": "\"YOU MUST PAY BACK YOUR DEBTS.\"",
+          "confidence": 0.927,
+          "text_ar": "\"يجب أن ترد ديونك.\""
+        },
+        {
+          "text": "IT'SA CORE VALUE OF OUR PEOPLE...",
+          "confidence": 0.916,
+          "text_ar": "إنها قيمة أساسية لشعبنا..."
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "sentences": [
+        {
+          "text": "YOU'RE AN ELF, RIGHT?",
+          "confidence": 0.971,
+          "text_ar": "أنتِ قزمة، أليس كذلك؟"
+        },
+        {
+          "text": "AH, YES...",
+          "confidence": 0.838,
+          "text_ar": "آه، نعم..."
+        },
+        {
+          "text": "WE LIVE BY OUR RULES..",
+          "confidence": 0.945,
+          "text_ar": "نحن نعيش وفقاً لقواعدنا.."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "sentences": [
+        {
+          "text": "SO WE'RE CONSIDERED A VERY CONSERVATIVE RACE...",
+          "confidence": 0.947,
+          "text_ar": "لذا نعتبر عرقاً محافظاً جداً..."
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "sentences": [
+        {
+          "text": "CONSERVATIVE..? 0",
+          "confidence": 0.624,
+          "text_ar": "محافظ..؟"
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "sentences": [
+        {
+          "text": "IS THERE ANYTHING I MAY BE ABLE TO DO FORYOU?",
+          "confidence": 0.936,
+          "text_ar": "هل هناك أي شيء يمكنني القيام به من أجلك؟"
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "sentences": [
+        {
+          "text": "AH, ABOUT THAT..",
+          "confidence": 0.815,
+          "text_ar": "آه، بخصوص ذلك.."
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "sentences": []
+    },
+    {
+      "page": 60,
+      "sentences": [
+        {
+          "text": "AH HA!",
+          "confidence": 0.945,
+          "text_ar": "آه ها!"
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "sentences": [
+        {
+          "text": "THEN IF IT ISN'T TOO MUCH TO ASK...",
+          "confidence": 0.923,
+          "text_ar": "إذاً إن لم يكن طلباً كبيراً..."
+        },
+        {
+          "text": "CAN YOU TEACH ME MAGIC?",
+          "confidence": 0.957,
+          "text_ar": "هل يمكنك تعليمي السحر؟"
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "sentences": [
+        {
+          "text": "TEACH YOU...",
+          "confidence": 0.92,
+          "text_ar": "تعليمك..."
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "sentences": [
+        {
+          "text": ".MAGIC?",
+          "confidence": 0.817,
+          "text_ar": ".السحر؟"
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.989,
+          "text_ar": "يتبع"
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "sentences": []
+    },
+    {
+      "page": 65,
+      "sentences": []
+    },
+    {
+      "page": 66,
+      "sentences": []
+    },
+    {
+      "page": 67,
+      "sentences": [
+        {
+          "text": "喜人卫卫",
+          "confidence": 0.523,
+          "text_ar": "هيمين"
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "sentences": [
+        {
+          "text": "RODOOO",
+          "confidence": 0.491,
+          "text_ar": "رودو"
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "sentences": [
+        {
+          "text": "DICK OY EYENIAL",
+          "confidence": 0.441,
+          "text_ar": "ديك"
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "sentences": []
+    },
+    {
+      "page": 71,
+      "sentences": [
+        {
+          "text": "鬼畜英雄",
+          "confidence": 0.982,
+          "text_ar": "البطل المنحرف"
+        },
+        {
+          "text": "よのき",
+          "confidence": 0.969,
+          "text_ar": "يونيكي"
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "sentences": []
+    },
+    {
+      "page": 73,
+      "sentences": [
+        {
+          "text": "- 1 FAS.",
+          "confidence": 0.188,
+          "text_ar": "- الفصل 1."
+        }
+      ]
+    }
+  ]
+}
