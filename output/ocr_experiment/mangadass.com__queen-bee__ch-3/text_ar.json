@@ -1,0 +1,805 @@
+{
+  "manga_id": "mangadass.com__queen-bee",
+  "chapter_num": "3",
+  "manga_title": "Queen Bee",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "WHAT?",
+          "confidence": 0.997,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "HOW YOU CAN TOUCH ME WHENEVER YOU WANT.",
+          "confidence": 0.917,
+          "text_ar": "كيف يمكنكِ لمسي متى شئتِ؟"
+        },
+        {
+          "text": "QUEEN BEE PGE",
+          "confidence": 0.68,
+          "text_ar": "كوين بي"
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.851,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "GULP",
+          "confidence": 0.939,
+          "text_ar": "(يبلع ريقه)"
+        },
+        {
+          "text": "YEAH.. WHATDO I HAVE TO DO?",
+          "confidence": 0.875,
+          "text_ar": "أجل.. ماذا عليّ أن أفعل؟"
+        },
+        {
+          "text": "IT'S FUCKING EASY.",
+          "confidence": 0.915,
+          "text_ar": "الأمر في غاية السهولة."
+        },
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.942,
+          "text_ar": "ما هو؟"
+        },
+        {
+          "text": "GUESS",
+          "confidence": 0.985,
+          "text_ar": "حاول التخمين."
+        },
+        {
+          "text": "FIGHT TAE ANDBEAT HIM.",
+          "confidence": 0.945,
+          "text_ar": "قاتل تاي واهزمه."
+        },
+        {
+          "text": "TAE... TAE HA?!",
+          "confidence": 0.954,
+          "text_ar": "تاي... تاي ها؟!"
+        },
+        {
+          "text": "M.ManhwaHentai",
+          "confidence": 0.904,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "ILIKE STRONG GUYS LIKE TAE.",
+          "confidence": 0.955,
+          "text_ar": "أنا أحب الرجال الأقوياء مثل تاي."
+        },
+        {
+          "text": "GUYS THAT MAKE ME STRONG..",
+          "confidence": 0.901,
+          "text_ar": "الرجال الذين يجعلونني أشعر بالقوة.."
+        },
+        {
+          "text": "IF YOU'RE THE STRONGEST GUY IN OUR SCHOOL...",
+          "confidence": 0.903,
+          "text_ar": "إذا كنتَ أنت أقوى رجل في مدرستنا..."
+        },
+        {
+          "text": "CLESS",
+          "confidence": 0.922,
+          "text_ar": "(صوت احتكاك)"
+        },
+        {
+          "text": "YOU CAN TOUCH MYBODY.",
+          "confidence": 0.974,
+          "text_ar": "سأسمح لك بلمس جسدي."
+        },
+        {
+          "text": "FLUTTER",
+          "confidence": 0.959,
+          "text_ar": "(خفقان قلب)"
+        },
+        {
+          "text": "AH... FIGHT TAE...",
+          "confidence": 0.867,
+          "text_ar": "آه... قتال تاي..."
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.91,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "BAHAHAHA",
+          "confidence": 0.975,
+          "text_ar": "هاهاهاها"
+        },
+        {
+          "text": "I'MJUST JOKING. FUCK!",
+          "confidence": 0.973,
+          "text_ar": "أنا أمزح فقط. تباً!"
+        },
+        {
+          "text": "HOW CAN MYCUTE JUNIE EVER FIGHT AND BEAT TAE?",
+          "confidence": 0.925,
+          "text_ar": "كيف لجوني اللطيف أن يقاتل تاي ويهزمه؟"
+        },
+        {
+          "text": "ManhwaHentai",
+          "confidence": 0.985,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "I'MJUST KIDDING! DON'T BESCARED. JUNIE,I WAS JUST KIDDING.",
+          "confidence": 0.941,
+          "text_ar": "أنا أمزح فحسب! لا تخف. جوني، كنت أمزح فقط."
+        },
+        {
+          "text": "OH. WHAT'S GOING ON OUT HERE?",
+          "confidence": 0.948,
+          "text_ar": "أوه. ماذا يحدث هنا؟"
+        },
+        {
+          "text": "YOU GUYS ARE TOGETHER LIKE THAT?",
+          "confidence": 0.968,
+          "text_ar": "هل أنتما معاً هكذا؟"
+        },
+        {
+          "text": "ITHOUGHT YOU WERE JUST FRIENDS.",
+          "confidence": 0.975,
+          "text_ar": "ظننتكما مجرد صديقين."
+        },
+        {
+          "text": "aHe",
+          "confidence": 0.575,
+          "text_ar": "(ضحكة ساخرة)"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "SORRY IFIRUINED THE MOOD.",
+          "confidence": 0.977,
+          "text_ar": "عذراً إن أفسدت الأجواء."
+        },
+        {
+          "text": "IHAVE TO GET BACK TO THE COFFEE SHOP..",
+          "confidence": 0.935,
+          "text_ar": "عليّ العودة إلى المقهى.."
+        },
+        {
+          "text": "YOU'RE WORKING SOHARD! ALWAYS EATING AND SUCKING ON OLD MEN...",
+          "confidence": 0.877,
+          "text_ar": "أنتِ تعملين بجد! دائماً ما تأكلين وتتسكعين مع العجائز..."
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.914,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I HAVE SOMUCH RESPECT FOR YOU. REALLY, YOU'RE AMAZING.",
+          "confidence": 0.92,
+          "text_ar": "أنا أحترمكِ كثيراً. حقاً، أنتِ مذهلة."
+        },
+        {
+          "text": "GUESS",
+          "confidence": 0.969,
+          "text_ar": "حاول التخمين."
+        },
+        {
+          "text": "EVEN IF YOU ARE A PROSTITUTE. A60-YEAR-OLDMAN.. ID VOMIT.",
+          "confidence": 0.923,
+          "text_ar": "حتى وإن كنتِ عاهرة. رجل في الستين.. سأتقيأ."
+        },
+        {
+          "text": "WHAT?! A PROSTITUTE? ICAN'T BELIEVE IT!",
+          "confidence": 0.95,
+          "text_ar": "ماذا؟! عاهرة؟ لا أصدق هذا!"
+        },
+        {
+          "text": "WHY? DOES THE COFFEE SHOP WAITRESSNOT LIKE BEING CALLED A PROSTITUTE?",
+          "confidence": 0.946,
+          "text_ar": "لماذا؟ ألا تحب نادلة المقهى أن تُنعت بالعاهرة؟"
+        },
+        {
+          "text": "IF YOU'RE GETTING PAID TO SPREAD YOUR LEGS, YOU'REA PROSTITUTE.",
+          "confidence": 0.942,
+          "text_ar": "إذا كنتِ تتقاضين المال مقابل فتح ساقيكِ، فأنتِ عاهرة."
+        },
+        {
+          "text": "WHAT DIFFERENCE DOESIT MAKE THAT YOU RIDE A SCOOTER YOURIDEASCOOTER AND CARRYA TRAY? ANDCARRYA TRAY?",
+          "confidence": 0.944,
+          "text_ar": "ما الفرق الذي يحدثه ركوبكِ لدراجة وحملكِ لصينية؟"
+        },
+        {
+          "text": "WHY YOU... FUCK!",
+          "confidence": 0.899,
+          "text_ar": "أيتها.. تباً!"
+        },
+        {
+          "text": "THIS DISRESPECTFUL BITCH!",
+          "confidence": 0.994,
+          "text_ar": "هذه العاهرة الوقحة!"
+        },
+        {
+          "text": "GUESS",
+          "confidence": 0.931,
+          "text_ar": "حاول التخمين."
+        },
+        {
+          "text": "M ManhwaHentai",
+          "confidence": 0.839,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "WHOO. WHAT GOOD WOULD ITDO TO FIGHT WITH A HIGH SCHOOLER...",
+          "confidence": 0.88,
+          "text_ar": "واو. ما الفائدة من القتال مع طالب في الثانوية..."
+        },
+        {
+          "text": "YOU SHOULD BE NICE TOME!",
+          "confidence": 0.942,
+          "text_ar": "يجب أن تكوني لطيفة معي!"
+        },
+        {
+          "text": "YOU NEVER KNOW. ICOULDBE YOUR NEW MOMAND GIVE YOUAYOUNGER SIBLING.",
+          "confidence": 0.94,
+          "text_ar": "لا تعلمين أبداً. قد أصبح أمك الجديدة وأنجب لك أخاً صغيراً."
+        },
+        {
+          "text": "WHAT DID IT SAY? THIS PROSTITUTE... FUCK.",
+          "confidence": 0.905,
+          "text_ar": "ماذا قالت؟ هذه العاهرة... تباً."
+        },
+        {
+          "text": "DON'T YOUKNOW WHY YOUR DAD CALLS ME? IT'SBECAUSEILOOK LIKEYOUR DEADMOM.",
+          "confidence": 0.939,
+          "text_ar": "ألا تعرف لماذا يتصل بي والدك؟ لأنني أشبه والدتك الراحلة."
+        },
+        {
+          "text": "UFSS USA",
+          "confidence": 0.871,
+          "text_ar": "(صوت همس)"
+        },
+        {
+          "text": "I THOUGHT THE HOLE BETWEEN YOUR LEGSWASWILD BUT THAT HOLEIN YOUR FACE IS CRAZY TOO!",
+          "confidence": 0.937,
+          "text_ar": "ظننت أن الفتحة بين ساقيكِ جامحة، لكن تلك الفتحة في وجهكِ مجنونة أيضاً!"
+        },
+        {
+          "text": "M ManhwaHentai",
+          "confidence": 0.958,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "MOVE!",
+          "confidence": 0.824,
+          "text_ar": "ابتعدي!"
+        },
+        {
+          "text": "HEY.. JUNIE...",
+          "confidence": 0.858,
+          "text_ar": "مهلاً.. جوني..."
+        },
+        {
+          "text": "HUH... WHAT?",
+          "confidence": 0.944,
+          "text_ar": "هاه... ماذا؟"
+        },
+        {
+          "text": "DID YOU JUST STAND THERE WHILE SHE BULLIED ME?",
+          "confidence": 0.93,
+          "text_ar": "هل وقفتَ هناك مكتوف اليدين بينما كانت تتنمر عليّ؟"
+        },
+        {
+          "text": "THAT LITTLE..",
+          "confidence": 0.861,
+          "text_ar": "تلك الصغيرة.."
+        },
+        {
+          "text": "YOU WERE GETTING BULLIED? THAT'S NOT HOW I SAWIT.. ISAWIT...",
+          "confidence": 0.892,
+          "text_ar": "هل كنتِ تتعرضين للتنمر؟ لم أرَ الأمر هكذا.. رأيته..."
+        },
+        {
+          "text": "UGH! So ANNOYING!",
+          "confidence": 0.567,
+          "text_ar": "أوف! مزعجة جداً!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "WATCH YOUR TEMPER!",
+          "confidence": 0.993,
+          "text_ar": "انتبهي لأعصابك!"
+        },
+        {
+          "text": "YOU'RE GOING TO BREAK THE DOOR, CRAZYBITCH!",
+          "confidence": 0.964,
+          "text_ar": "ستكسرين الباب أيتها المجنونة!"
+        },
+        {
+          "text": "IHH",
+          "confidence": 0.761,
+          "text_ar": "(صوت تنهد)"
+        },
+        {
+          "text": "HEY! PERVERT.",
+          "confidence": 0.986,
+          "text_ar": "مهلاً! أيها المنحرف."
+        },
+        {
+          "text": "LHE HHHE HHHK UUU",
+          "confidence": 0.417,
+          "text_ar": "(ضحكة خافتة)"
+        },
+        {
+          "text": "EXCUSE ME?",
+          "confidence": 0.985,
+          "text_ar": "عفواً؟"
+        },
+        {
+          "text": "I'LL GIVE YOU A PRESENT. GIVEME YOUR HANDS.",
+          "confidence": 0.874,
+          "text_ar": "سأعطيك هدية. أعطني يديك."
+        },
+        {
+          "text": "A PRESENT?",
+          "confidence": 0.981,
+          "text_ar": "هدية؟"
+        },
+        {
+          "text": "HERE!",
+          "confidence": 0.995,
+          "text_ar": "خذ!"
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.91,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "IWORE THOSE ALL DAY.",
+          "confidence": 0.946,
+          "text_ar": "لقد ارتديتهما طوال اليوم."
+        },
+        {
+          "text": "ISN'TIT THE PERFECT GIFT FOR A PERVERT LIKE YOU?",
+          "confidence": 0.933,
+          "text_ar": "أليست هدية مثالية لمنحرف مثلك؟"
+        },
+        {
+          "text": "USEIT WHEN YOU BEAT OFF TONIGHT. HA.",
+          "confidence": 0.954,
+          "text_ar": "استخدمهما عندما تمارس العادة السرية الليلة. ها."
+        },
+        {
+          "text": "FUCK, MYDRESS KEEPS RIDING UP..",
+          "confidence": 0.884,
+          "text_ar": "تباً، فستاني يستمر في الارتفاع.."
+        },
+        {
+          "text": "ISN'T IT THE BESTPRESENT YOU'VEEVER GOTTEN?",
+          "confidence": 0.939,
+          "text_ar": "أليست أفضل هدية حصلت عليها على الإطلاق؟"
+        },
+        {
+          "text": "HANA BAEK, THE COFFEE SHOP WAITRESS, JUST GAVE ME THE SWEAT-DRENCHED STOCKINGS SHE WOREWHILESHEWAS FUCKINGTHELANDLORD.",
+          "confidence": 0.954,
+          "text_ar": "هانا بايك، نادلة المقهى، أعطتني للتو الجوارب المبللة بالعرق التي ارتدتها بينما كانت تضاجع المالك."
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.953,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "BUT DON'T JUST KEEP ITIN YOUR ROOM.",
+          "confidence": 0.936,
+          "text_ar": "لكن لا تحتفظ بها في غرفتك."
+        },
+        {
+          "text": "JACK OFF WITH IT ONCE AND THEN TOSS IT.",
+          "confidence": 0.942,
+          "text_ar": "مارس العادة بها مرة ثم تخلص منها."
+        },
+        {
+          "text": "DONTLET YOUR MOM SEEIT AND KICKYOUOUT OF THE HOUSE!",
+          "confidence": 0.94,
+          "text_ar": "لا تدع أمك تراها فتطردك من المنزل!"
+        },
+        {
+          "text": "HA,HA,HA, HA,HA",
+          "confidence": 0.941,
+          "text_ar": "ها، ها، ها، ها، ها"
+        },
+        {
+          "text": "ARE YOU WORKING HARDON MY PORTRAIT?",
+          "confidence": 0.943,
+          "text_ar": "هل تعمل بجد على صورتي؟"
+        },
+        {
+          "text": "AH,YES!",
+          "confidence": 0.941,
+          "text_ar": "آه، أجل!"
+        },
+        {
+          "text": "YOU THOUGHT SEEING MYPUSSY WOULD BE EASY, DIDN'TYOU?",
+          "confidence": 0.947,
+          "text_ar": "ظننت أن رؤية فرجي سيكون أمراً سهلاً، أليس كذلك؟"
+        },
+        {
+          "text": "I'MONLYGOING TO SHOW YOU IF YOUR DRAWING RESEMBLES ME! YOU BETTER WORK HARD!",
+          "confidence": 0.92,
+          "text_ar": "سأريك إياه فقط إذا كان رسمك يشبهني! من الأفضل أن تعمل بجد!"
+        },
+        {
+          "text": "BYE! HAVE FUN BEATING IT!",
+          "confidence": 0.949,
+          "text_ar": "وداعاً! استمتع بوقتك!"
+        },
+        {
+          "text": "WHATCOULD'VEPOSSIBLY HAPPENED FOR THE COFFEE SHOP WAITRESS TO HAVE THISTYPEOF CONVERSATION WITHME YOUASK?",
+          "confidence": 0.972,
+          "text_ar": "تتساءل ماذا حدث لكي تجري نادلة المقهى هذا النوع من المحادثات معي؟"
+        },
+        {
+          "text": "THERE WAS A BIG INCIDENT BETWEEN THE WAITRESS AND ME..",
+          "confidence": 0.911,
+          "text_ar": "لقد وقع حادث كبير بيني وبين النادلة.."
+        },
+        {
+          "text": "ManhwaHentai M",
+          "confidence": 0.983,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "Wine&Whisky",
+          "confidence": 0.975,
+          "text_ar": "نبيذ وويسكي"
+        },
+        {
+          "text": "HANA BAEK.",
+          "confidence": 0.967,
+          "text_ar": "هانا بايك."
+        },
+        {
+          "text": "IT WAS1988 AND SHE WAS 27. SHE WAS THE COFFEE SHOP WAITRESSINTHE SAMEBUILDING IWAS TAKING AN ARTCLASS IN.",
+          "confidence": 0.917,
+          "text_ar": "كان ذلك عام 1988 وكانت في السابعة والعشرين من عمرها. كانت نادلة المقهى في نفس المبنى الذي كنت أتلقى فيه دروس الفن."
+        },
+        {
+          "text": "ManhwaHentai M",
+          "confidence": 0.977,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "AAHHH",
+          "confidence": 0.988,
+          "text_ar": "آآآه"
+        },
+        {
+          "text": "IVE SEENHANACOME AND GOFROM DARLA'S HOUSE BUT WE'VE NEVER HAD ACONVERSATION.",
+          "confidence": 0.945,
+          "text_ar": "لقد رأيت هانا تأتي وتذهب من منزل دارلا لكننا لم نتحدث قط."
+        },
+        {
+          "text": "THE FIRST TIME WE EVER TALKED WAS THE DAYOF THEINCIDENT! WE WEREON THE ROOF OF MY ARTCLASS'S BUILDING.",
+          "confidence": 0.933,
+          "text_ar": "أول مرة تحدثنا فيها كانت يوم الحادث! كنا على سطح المبنى الذي أدرس فيه الفن."
+        },
+        {
+          "text": "AREYOU TAKING ART CLASSES HERE?",
+          "confidence": 0.95,
+          "text_ar": "هل تأخذ دروس فن هنا؟"
+        },
+        {
+          "text": "HUH? UM,YES...",
+          "confidence": 0.892,
+          "text_ar": "هاه؟ أم، أجل..."
+        },
+        {
+          "text": "I BET YOU'RE REALLY FUCKING GOOD AT DRAWING. YOU SHOULD DRAW ME SOMETIME.",
+          "confidence": 0.923,
+          "text_ar": "أراهن أنك بارع جداً في الرسم. يجب أن ترسمي يوماً ما."
+        },
+        {
+          "text": "HUH? ICAN'TREALLY DRAW.",
+          "confidence": 0.976,
+          "text_ar": "هاه؟ لا أستطيع الرسم حقاً."
+        },
+        {
+          "text": "COME ON! YOU'RE TAKING CLASSES. I BET YOU'REwaHentai BETTER THAN ME,",
+          "confidence": 0.763,
+          "text_ar": "هيا! أنت تأخذ دروساً. أراهن أنك أفضل مني،"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "RIGHT?!",
+          "confidence": 0.984,
+          "text_ar": "أليس كذلك؟!"
+        },
+        {
+          "text": "DRAW ME AND I'LL MAKE YOU A KILLERCUPOF COFFEE.",
+          "confidence": 0.898,
+          "text_ar": "ارسمي وسأصنع لك كوب قهوة لا يُنسى."
+        },
+        {
+          "text": "TRY SOME OF THE COFFEEIMADE. YOU'LL PISS YOURSELF.",
+          "confidence": 0.937,
+          "text_ar": "جرب القهوة التي صنعتها. ستنبهر."
+        },
+        {
+          "text": "OKAY! WHENCANI DRAW YOU?",
+          "confidence": 0.967,
+          "text_ar": "حسناً! متى يمكنني رسمك؟"
+        },
+        {
+          "text": "DON'T YOUHAVE TO POSE FOR A LONG TIME FOR PORTRAITS?",
+          "confidence": 0.947,
+          "text_ar": "ألا يتطلب الأمر اتخاذ وضعية لفترة طويلة للصور الشخصية؟"
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.953,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "COMETO MY HOUSE WHEN YOU HAVE TIME. BYE!",
+          "confidence": 0.935,
+          "text_ar": "تعال إلى منزلي عندما يكون لديك وقت. وداعاً!"
+        },
+        {
+          "text": "OKAY... GOODBYE.",
+          "confidence": 0.958,
+          "text_ar": "حسناً... وداعاً."
+        },
+        {
+          "text": "HER HOUSE?!",
+          "confidence": 0.981,
+          "text_ar": "منزلها؟!"
+        },
+        {
+          "text": "ERECT",
+          "confidence": 0.979,
+          "text_ar": "(انتصاب)"
+        },
+        {
+          "text": "THIS WAS RIGHT BEFORE THE INCIDENT AND RIGHT AFTERTHISISWHEN THE INCIDENT TOOK PLACE, IN A CO-ED BATHROOM OF THE SAME BUILDING.",
+          "confidence": 0.928,
+          "text_ar": "كان هذا قبل الحادث مباشرة، وبعد ذلك مباشرة وقع الحادث في حمام مشترك في نفس المبنى."
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.948,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "OH... MY STOMACH! DIDIEAT TOO MUCH ICE CREAM?",
+          "confidence": 0.931,
+          "text_ar": "أوه... معدتي! هل أكلت الكثير من الآيس كريم؟"
+        },
+        {
+          "text": "AND JUST THEN, I HEARD A GIRL GOING INTOTHENEXTSTALL!",
+          "confidence": 0.938,
+          "text_ar": "وفي تلك اللحظة، سمعت فتاة تدخل إلى المقصورة المجاورة!"
+        },
+        {
+          "text": "OH,CRAP! ISITAGIRL? SHOULDIMAKE NOISE...",
+          "confidence": 0.958,
+          "text_ar": "أوه، تباً! هل هي فتاة؟ هل يجب أن أصدر صوتاً..."
+        },
+        {
+          "text": "I FORGOT ABOUT MYOWN URGENCY AND ACTUALLYSTOPPED BREATHING.",
+          "confidence": 0.949,
+          "text_ar": "نسيت حاجتي الملحة وتوقفت فعلياً عن التنفس."
+        },
+        {
+          "text": "ZIPPPP",
+          "confidence": 0.874,
+          "text_ar": "(صوت سحاب)"
+        },
+        {
+          "text": "ILL JUST STAYQUIETAND USE THE BATHROOM AFTER SHE LEAVES.",
+          "confidence": 0.924,
+          "text_ar": "سأبقى هادئاً وأستخدم الحمام بعد أن تغادر."
+        },
+        {
+          "text": "PISSSSS",
+          "confidence": 0.954,
+          "text_ar": "(صوت تبول)"
+        },
+        {
+          "text": "I'VE NEVER HEARDA GIRL PEE BEFORE!",
+          "confidence": 0.958,
+          "text_ar": "لم أسمع فتاة تتبول من قبل!"
+        },
+        {
+          "text": "M ManhwaHentai",
+          "confidence": 0.946,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "FLUTTER",
+          "confidence": 0.96,
+          "text_ar": "(خفقان)"
+        },
+        {
+          "text": "FLUTTER",
+          "confidence": 0.982,
+          "text_ar": "(خفقان)"
+        },
+        {
+          "text": "GULP",
+          "confidence": 0.9,
+          "text_ar": "(يبلع ريقه)"
+        },
+        {
+          "text": "M ManhwaHentai",
+          "confidence": 0.989,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "PisSSS",
+          "confidence": 0.699,
+          "text_ar": "(صوت تبول)"
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.893,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "WOBBLE JUNIE",
+          "confidence": 0.989,
+          "text_ar": "جوني يترنح"
+        },
+        {
+          "text": "JUNIE AHN CLACK",
+          "confidence": 0.952,
+          "text_ar": "جوني آن (صوت ارتطام)"
+        },
+        {
+          "text": "OH,CRAP!",
+          "confidence": 0.967,
+          "text_ar": "أوه، تباً!"
+        },
+        {
+          "text": "FUCK!",
+          "confidence": 0.992,
+          "text_ar": "تباً!"
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.993,
+          "text_ar": "يتبع"
+        },
+        {
+          "text": "Story/HwalHwaSan Art/Andrew Color by/Swanee",
+          "confidence": 0.969,
+          "text_ar": "القصة: هول هوا سان، الرسم: أندرو، التلوين: سواني"
+        },
+        {
+          "text": "MManhwaHentai",
+          "confidence": 0.957,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "色白好",
+          "confidence": 0.996,
+          "text_ar": ""
+        },
+        {
+          "text": "宿 补ラセラレ",
+          "confidence": 0.05,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": []
+    },
+    {
+      "page": 23,
+      "sentences": []
+    },
+    {
+      "page": 24,
+      "sentences": []
+    }
+  ]
+}
