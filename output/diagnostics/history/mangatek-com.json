@@ -11,5 +11,22 @@
     "referer_only_sufficient": null,
     "rate_limited_detected": true,
     "signed_url_params": []
+  },
+  {
+    "date": "2026-09-21 05:42:35 UTC",
+    "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/10",
+    "protection_category_static": "final_block",
+    "protection_category_browser": "final_block",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": null,
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
   }
 ]

@@ -1,0 +1,290 @@
+{
+  "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/2",
+  "tls_and_server_info": {
+    "server_ip": "104.21.34.33",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "mangatek.com",
+    "tls_not_after": "Nov 13 15:31:42 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "4.155.149.98",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Moses Lake",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a3e6b4d25d0c6de2-SEA",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "final_block",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.05
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "Attention Required! | Cloudflare",
+    "challenge_detected": true,
+    "protection_category": "final_block",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 0,
+    "images_after_wait": 0,
+    "images_after_scroll": 0,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 0,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {},
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatek-com-4096-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 1,
+      "cookie_names_reused": [
+        "cf_clearance"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "images_after_wait": 0,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.16,
+    "navigation_timing": {
+      "ttfb_ms": 14,
+      "dom_content_loaded_ms": 153,
+      "load_event_ms": 154,
+      "transfer_size_bytes": 2761
+    },
+    "wait_for_images_elapsed_sec": 20.13,
+    "scroll_elapsed_sec": 1.53,
+    "total_probe_elapsed_sec": 22.25,
+    "scroll_rounds_completed": 2,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "cf-ray": "a3e6b4d3ca6e7652-SEA",
+      "content-encoding": "zstd",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 21 Sep 2026 05:35:24 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xYUz46BJ%2FCpobCIn0VYKtV6Ru3MGW33sZ8RP8jdw7InL5tzL20ei0FdOUn81ef8GuK67EH5Ypg%2FCR1zOd7bvvbrOFBJ8CONTvxsS55fmEQ2B5sHD1GW5De3Uu7zDZfE%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfEdge;dur=3,cfOrigin;dur=0",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "static.cloudflareinsights.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 0
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "Attention Required! | Cloudflare",
+    "challenge_detected": true,
+    "protection_category": "final_block",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 0,
+    "images_after_wait": 0,
+    "images_after_scroll": 0,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 0,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {},
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatek-com-4096-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 1,
+      "cookie_names_reused": [
+        "cf_clearance"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "images_after_wait": 0,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.11,
+    "navigation_timing": {
+      "ttfb_ms": 13,
+      "dom_content_loaded_ms": 102,
+      "load_event_ms": 102,
+      "transfer_size_bytes": 2762
+    },
+    "wait_for_images_elapsed_sec": 20.12,
+    "scroll_elapsed_sec": 1.58,
+    "total_probe_elapsed_sec": 22.04,
+    "scroll_rounds_completed": 2,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "cf-ray": "a3e6b5e05a5b7627-SEA",
+      "content-encoding": "zstd",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 21 Sep 2026 05:36:07 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9DRjwmau%2BQtFgS9qYiCoId1EGrta9ltcOJO06lcEroPvQ6cGG5H55hpFV%2BsYd%2BEblSO9e53LpZqhSHFMuM1lzoXLeSmtVXVw7pq74I0SquzDvxOYOo9G9ygHOli2dIw%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfEdge;dur=3,cfOrigin;dur=0",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "static.cloudflareinsights.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 0
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/2",
+    "requests_sent": 4,
+    "elapsed_sec": 0.05,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [
+    "تصنيف الحماية (HTTP خام): None ← 'final_block'",
+    "تصنيف الحماية (متصفح): None ← 'final_block'",
+    "تحديد معدل مكتشَف: True ← False",
+    "حظر ثابت مكتشَف (لا علاقة بتحديد المعدل): None ← True"
+  ],
+  "deep_diagnostic": null,
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangatek-com-4096-report.json",
+    "screenshots": [
+      "diagnostics/mangatek-com-4096-screenshot.png",
+      "diagnostics/mangatek-com-4096-run2-screenshot.png"
+    ]
+  }
+}

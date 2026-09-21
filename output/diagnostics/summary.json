@@ -1,17 +1,17 @@
 [
   {
-    "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
+    "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/2",
     "tls_and_server_info": {
-      "server_ip": "172.67.152.235",
+      "server_ip": "104.21.34.33",
       "tls_issuer": "Google Trust Services",
-      "tls_subject": "comix.to",
-      "tls_not_after": "Nov 25 12:49:51 2026 GMT",
+      "tls_subject": "mangatek.com",
+      "tls_not_after": "Nov 13 15:31:42 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "52.188.87.48",
+      "ip": "4.155.149.98",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Dulles Town Center",
+      "city": "Moses Lake",
       "country": "US",
       "error": null
     },
@@ -19,12 +19,11 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3b6adf45ad0fe3b-IAD",
-        "cf-mitigated": "challenge",
+        "cf-ray": "a3e6b4d25d0c6de2-SEA",
         "content-type": "text/html; charset=UTF-8"
       },
       "challenge_detected": true,
-      "protection_category": "solvable_challenge",
+      "protection_category": "final_block",
       "protection_signatures": [
         "Cloudflare"
       ],
@@ -37,18 +36,20 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.03
+      "elapsed_sec": 0.05
     },
     "browser_probe": {
       "navigated": true,
-      "title": "God-level Assassin, I'm the Shadow · Ch.140",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_at_t0": 0,
-      "images_after_wait": 1,
-      "images_after_scroll": 1,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -56,24 +57,16 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 1,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
       "suggested_selectors": [],
-      "domain_distribution": {
-        "comix.to": 1
-      },
+      "domain_distribution": {},
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/comix-to-5552-screenshot.png",
+      "screenshot_path": "diagnostics/mangatek-com-4096-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/17028d16-fcde-40d4-97ac-30d55164de9f",
-          "blob:https://challenges.cloudflare.com/60c4e2a4-96b2-4c00-a7e5-5ec03d37edd4",
-          "blob:https://challenges.cloudflare.com/d993f08c-05f2-4cd9-a58c-f947d04e477e"
-        ]
-      },
+      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -103,8 +96,8 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
+          "challenge_detected": true,
+          "protection_category": "final_block",
           "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
@@ -119,58 +112,54 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": true
+        "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.46,
+      "goto_elapsed_sec": 0.16,
       "navigation_timing": {
-        "ttfb_ms": 214,
-        "dom_content_loaded_ms": 447,
-        "load_event_ms": null,
-        "transfer_size_bytes": 2847
+        "ttfb_ms": 14,
+        "dom_content_loaded_ms": 153,
+        "load_event_ms": 154,
+        "transfer_size_bytes": 2761
       },
-      "wait_for_images_elapsed_sec": 2.43,
-      "scroll_elapsed_sec": 1.83,
-      "total_probe_elapsed_sec": 5.22,
-      "scroll_rounds_completed": 3,
+      "wait_for_images_elapsed_sec": 20.13,
+      "scroll_elapsed_sec": 1.53,
+      "total_probe_elapsed_sec": 22.25,
+      "scroll_rounds_completed": 2,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a3b6adf5cd3ce3c4-IAD",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6b4d3ca6e7652-SEA",
         "content-encoding": "zstd",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Tue, 15 Sep 2026 09:42:07 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:35:24 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Zm2jZ%2FOl9bHuRjhMmZNaUFzAl0ocOHwYYz4aido03%2BQe8tCxBXyJurMhB70K01I1I71AxPaa2tNowtPArJx%2BZM0pb1Kd6enN4jrS0hJ5CvC%2Fqv4Lv5qY%2B9USag%3D%3D\"}]}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xYUz46BJ%2FCpobCIn0VYKtV6Ru3MGW33sZ8RP8jdw7InL5tzL20ei0FdOUn81ef8GuK67EH5Ypg%2FCR1zOd7bvvbrOFBJ8CONTvxsS55fmEQ2B5sHD1GW5De3Uu7zDZfE%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=18,cfOrigin;dur=189",
-        "vary": "accept-encoding",
-        "x-request-id": "aa895ee130f8cd80d51b2c9857b9edf9"
+        "server-timing": "cfEdge;dur=3,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com",
-        "fonts.googleapis.com",
-        "fonts.gstatic.com",
-        "static.cloudflareinsights.com",
-        "whos.amung.us"
+        "static.cloudflareinsights.com"
       ],
       "turnstile_click_attempt": null,
       "extended_challenge_probe": null,
-      "content_images_before_scroll": 1
+      "content_images_before_scroll": 0
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "God-level Assassin, I'm the Shadow · Ch.140",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_at_t0": 0,
-      "images_after_wait": 1,
-      "images_after_scroll": 1,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -178,24 +167,16 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 1,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
       "suggested_selectors": [],
-      "domain_distribution": {
-        "comix.to": 1
-      },
+      "domain_distribution": {},
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/comix-to-5552-run2-screenshot.png",
+      "screenshot_path": "diagnostics/mangatek-com-4096-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/27bdc4ca-e135-4cbd-958f-5b2121b28aae",
-          "blob:https://challenges.cloudflare.com/908ea33f-c1c8-4085-9dbd-a10ca9ca1f24",
-          "blob:https://challenges.cloudflare.com/e76ca11d-94c0-468b-94ab-37300df85044"
-        ]
-      },
+      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -225,8 +206,8 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
+          "challenge_detected": true,
+          "protection_category": "final_block",
           "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
@@ -241,54 +222,48 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": true
+        "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.36,
+      "goto_elapsed_sec": 0.11,
       "navigation_timing": {
-        "ttfb_ms": 204,
-        "dom_content_loaded_ms": 350,
-        "load_event_ms": null,
-        "transfer_size_bytes": 2851
+        "ttfb_ms": 13,
+        "dom_content_loaded_ms": 102,
+        "load_event_ms": 102,
+        "transfer_size_bytes": 2762
       },
-      "wait_for_images_elapsed_sec": 2.43,
-      "scroll_elapsed_sec": 1.9,
-      "total_probe_elapsed_sec": 4.97,
-      "scroll_rounds_completed": 3,
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.58,
+      "total_probe_elapsed_sec": 22.04,
+      "scroll_rounds_completed": 2,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a3b6ae99c803b885-IAD",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6b5e05a5b7627-SEA",
         "content-encoding": "zstd",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Tue, 15 Sep 2026 09:42:33 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:36:07 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gqfe%2FkoWjOlny%2FILmG0hSw8hdHTA4i3GD2NOwsiFKRMzkBLUcC1tTr82XUyL7aQmZci%2B4bywjBX3qWvKQjqQVM1OIJ3%2BQcST1zImL3tJ7uAdNC6BHVZ8LJV05A%3D%3D\"}]}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9DRjwmau%2BQtFgS9qYiCoId1EGrta9ltcOJO06lcEroPvQ6cGG5H55hpFV%2BsYd%2BEblSO9e53LpZqhSHFMuM1lzoXLeSmtVXVw7pq74I0SquzDvxOYOo9G9ygHOli2dIw%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=195",
-        "vary": "accept-encoding",
-        "x-request-id": "aa895ee130f8cd80d51b2c9857b9edf9"
+        "server-timing": "cfEdge;dur=3,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com",
-        "fonts.googleapis.com",
-        "fonts.gstatic.com",
-        "static.cloudflareinsights.com",
-        "whos.amung.us"
+        "static.cloudflareinsights.com"
       ],
       "turnstile_click_attempt": null,
       "extended_challenge_probe": null,
-      "content_images_before_scroll": 1
+      "content_images_before_scroll": 0
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
       "target": "page_url",
-      "sample_url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
+      "sample_url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/2",
       "requests_sent": 4,
-      "elapsed_sec": 0.14,
+      "elapsed_sec": 0.05,
       "status_codes": [
         403,
         403,
@@ -299,29 +274,34 @@
       "static_block_detected": true,
       "retry_after_header": null
     },
-    "history_diffs_since_last_run": [],
+    "history_diffs_since_last_run": [
+      "تصنيف الحماية (HTTP خام): None ← 'final_block'",
+      "تصنيف الحماية (متصفح): None ← 'final_block'",
+      "تحديد معدل مكتشَف: True ← False",
+      "حظر ثابت مكتشَف (لا علاقة بتحديد المعدل): None ← True"
+    ],
     "deep_diagnostic": null,
     "diagnostic_run_files": {
-      "report": "diagnostics/comix-to-5552-report.json",
+      "report": "diagnostics/mangatek-com-4096-report.json",
       "screenshots": [
-        "diagnostics/comix-to-5552-screenshot.png",
-        "diagnostics/comix-to-5552-run2-screenshot.png"
+        "diagnostics/mangatek-com-4096-screenshot.png",
+        "diagnostics/mangatek-com-4096-run2-screenshot.png"
       ]
     }
   },
   {
-    "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-2",
+    "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/3",
     "tls_and_server_info": {
-      "server_ip": "104.21.49.220",
+      "server_ip": "104.21.34.33",
       "tls_issuer": "Google Trust Services",
-      "tls_subject": "comix.to",
-      "tls_not_after": "Nov 25 12:49:51 2026 GMT",
+      "tls_subject": "mangatek.com",
+      "tls_not_after": "Nov 13 15:31:42 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "52.188.87.48",
+      "ip": "4.155.149.98",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Dulles Town Center",
+      "city": "Moses Lake",
       "country": "US",
       "error": null
     },
@@ -329,12 +309,11 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a3b6af3fabb3adf1-IAD",
-        "cf-mitigated": "challenge",
+        "cf-ray": "a3e6b6ef1d826de2-SEA",
         "content-type": "text/html; charset=UTF-8"
       },
       "challenge_detected": true,
-      "protection_category": "solvable_challenge",
+      "protection_category": "final_block",
       "protection_signatures": [
         "Cloudflare"
       ],
@@ -347,18 +326,20 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.03
+      "elapsed_sec": 0.01
     },
     "browser_probe": {
       "navigated": true,
-      "title": "God-level Assassin, I'm the Shadow · Ch.140",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_at_t0": 0,
-      "images_after_wait": 1,
-      "images_after_scroll": 1,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -366,24 +347,16 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 1,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
       "suggested_selectors": [],
-      "domain_distribution": {
-        "comix.to": 1
-      },
+      "domain_distribution": {},
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/comix-to-106-screenshot.png",
+      "screenshot_path": "diagnostics/mangatek-com-6008-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/5cec3e9a-df80-4235-9eab-d602ff18689d",
-          "blob:https://challenges.cloudflare.com/60fba297-010d-4123-a36f-a8024d307bdd",
-          "blob:https://challenges.cloudflare.com/e6663689-4578-4d7c-98d8-c18d8f874a09"
-        ]
-      },
+      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -413,8 +386,8 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
+          "challenge_detected": true,
+          "protection_category": "final_block",
           "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
@@ -429,58 +402,54 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": true
+        "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.63,
+      "goto_elapsed_sec": 0.1,
       "navigation_timing": {
-        "ttfb_ms": 201,
-        "dom_content_loaded_ms": 624,
-        "load_event_ms": null,
-        "transfer_size_bytes": 2916
+        "ttfb_ms": 14,
+        "dom_content_loaded_ms": 96,
+        "load_event_ms": 96,
+        "transfer_size_bytes": 2763
       },
-      "wait_for_images_elapsed_sec": 2.46,
-      "scroll_elapsed_sec": 1.91,
-      "total_probe_elapsed_sec": 5.18,
-      "scroll_rounds_completed": 3,
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.58,
+      "total_probe_elapsed_sec": 22.04,
+      "scroll_rounds_completed": 2,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a3b6af400c62d640-IAD",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6b6ef8c815907-SEA",
         "content-encoding": "zstd",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Tue, 15 Sep 2026 09:43:00 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:36:51 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fuJBfDi%2FlnJkcqh7dgW0dEC2xsFf6jo4nDC1F7TyJlyOPUpUsnxWU82dbd6Bk%2BkRxSvdWw0qzvRe1jImmtgKTfX3fgw7sSFxl4%2BU8Mlk6rxhQU1SezC13cOwCw%3D%3D\"}]}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BcX3gvWpYodB%2B2CxIHIg%2BldBlf4wHIQxvKN9pmmeNZcB76hesODr%2F0TygS1JMA6LfUX7Hb%2BV0wd5eW1XYPy7fXlys2ZsWhpZPYkLRGfJtegVPLNNAs4BGpFBhcO6uJg%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=3,cfOrigin;dur=194",
-        "vary": "accept-encoding",
-        "x-request-id": "969f558748e821f03ce306bc1c8b6670"
+        "server-timing": "cfEdge;dur=4,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com",
-        "fonts.googleapis.com",
-        "fonts.gstatic.com",
-        "static.cloudflareinsights.com",
-        "whos.amung.us"
+        "static.cloudflareinsights.com"
       ],
       "turnstile_click_attempt": null,
       "extended_challenge_probe": null,
-      "content_images_before_scroll": 1
+      "content_images_before_scroll": 0
     },
     "browser_probe_second_run": {
       "navigated": true,
-      "title": "God-level Assassin, I'm the Shadow · Ch.140",
-      "challenge_detected": false,
-      "protection_category": "none",
-      "challenge_resolved_after_reload": null,
-      "protection_signatures": [],
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
       "images_at_t0": 0,
-      "images_after_wait": 1,
-      "images_after_scroll": 1,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
       "selector_match_counts": {
         ".reading-content img": 0,
         ".page-break img": 0,
@@ -488,24 +457,16 @@
         "#readerarea img": 0,
         ".chapter-content img": 0
       },
-      "unmatched_img_count": 1,
+      "unmatched_img_count": 0,
       "widget_excluded_count": 0,
       "widget_excluded_samples": [],
       "suggested_selectors": [],
-      "domain_distribution": {
-        "comix.to": 1
-      },
+      "domain_distribution": {},
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/comix-to-106-run2-screenshot.png",
+      "screenshot_path": "diagnostics/mangatek-com-6008-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
-      "network_vendor_hits": {
-        "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/29e041f4-03ff-45e6-a161-c7ba79675a37",
-          "blob:https://challenges.cloudflare.com/d4b766c4-482d-4d89-86d3-930dce31b8e2",
-          "blob:https://challenges.cloudflare.com/ee11ac0a-475a-470a-9571-cc2f36167235"
-        ]
-      },
+      "network_vendor_hits": {},
       "adblock_wall": {
         "detected": false,
         "became_ready_after_sec": null,
@@ -535,8 +496,8 @@
       "stealth_comparison": {
         "no_stealth": {
           "navigated": true,
-          "challenge_detected": false,
-          "protection_category": "none",
+          "challenge_detected": true,
+          "protection_category": "final_block",
           "images_after_wait": 0,
           "fingerprint": {
             "webdriver": true,
@@ -551,54 +512,48 @@
         },
         "webdriver_flag_hidden_by_stealth": true,
         "challenge_outcome_differs": false,
-        "image_count_differs": true
+        "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.34,
+      "goto_elapsed_sec": 0.11,
       "navigation_timing": {
-        "ttfb_ms": 195,
-        "dom_content_loaded_ms": 335,
-        "load_event_ms": null,
-        "transfer_size_bytes": 2851
+        "ttfb_ms": 13,
+        "dom_content_loaded_ms": 104,
+        "load_event_ms": 104,
+        "transfer_size_bytes": 2762
       },
-      "wait_for_images_elapsed_sec": 2.43,
-      "scroll_elapsed_sec": 1.85,
-      "total_probe_elapsed_sec": 4.92,
-      "scroll_rounds_completed": 3,
+      "wait_for_images_elapsed_sec": 20.11,
+      "scroll_elapsed_sec": 1.55,
+      "total_probe_elapsed_sec": 21.99,
+      "scroll_rounds_completed": 2,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "cache-control": "no-cache, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a3b6afe449b6b885-IAD",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6b7fbbf99ba0c-SEA",
         "content-encoding": "zstd",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Tue, 15 Sep 2026 09:43:26 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:37:34 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iW9DmKBmfKDoAM4bxoC4HQHqIGBHizMmpxiiAjAuDGu%2BRlO7%2F8HhBIXDZKQWSBUbVmRrIPfUmwvd64ZbibdoR6LxfuIJoGF8qeritgEipwFBRPXVeLIt1cc6mQ%3D%3D\"}]}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=geYyd%2FnXC3lWf5cIk7xYeTyKCD2S11jdQK5d4Sh5JXn%2BvYaEQDBOeD7o%2BZu%2FwCoo6bdmcLJiu%2B%2B0uc7Lpo0bbkKFiktTLDmiCZHf7hhphzHaF86xyOQtqJ6nXxwLhU8%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=186",
-        "vary": "accept-encoding",
-        "x-request-id": "969f558748e821f03ce306bc1c8b6670"
+        "server-timing": "cfEdge;dur=2,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
       },
       "all_third_party_domains": [
-        "brunhild.challenges.cloudflare.com",
-        "challenges.cloudflare.com",
-        "fonts.googleapis.com",
-        "fonts.gstatic.com",
-        "static.cloudflareinsights.com",
-        "whos.amung.us"
+        "static.cloudflareinsights.com"
       ],
       "turnstile_click_attempt": null,
       "extended_challenge_probe": null,
-      "content_images_before_scroll": 1
+      "content_images_before_scroll": 0
     },
     "consistency_diffs": [],
     "rate_limit_probe": {
       "target": "page_url",
-      "sample_url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-2",
+      "sample_url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/3",
       "requests_sent": 4,
-      "elapsed_sec": 0.13,
+      "elapsed_sec": 0.05,
       "status_codes": [
         403,
         403,
@@ -609,13 +564,888 @@
       "static_block_detected": true,
       "retry_after_header": null
     },
-    "history_diffs_since_last_run": [],
+    "history_diffs_since_last_run": [
+      "تصنيف الحماية (HTTP خام): None ← 'final_block'",
+      "تصنيف الحماية (متصفح): None ← 'final_block'",
+      "تحديد معدل مكتشَف: True ← False",
+      "حظر ثابت مكتشَف (لا علاقة بتحديد المعدل): None ← True"
+    ],
     "deep_diagnostic": null,
     "diagnostic_run_files": {
-      "report": "diagnostics/comix-to-106-report.json",
+      "report": "diagnostics/mangatek-com-6008-report.json",
       "screenshots": [
-        "diagnostics/comix-to-106-screenshot.png",
-        "diagnostics/comix-to-106-run2-screenshot.png"
+        "diagnostics/mangatek-com-6008-screenshot.png",
+        "diagnostics/mangatek-com-6008-run2-screenshot.png"
+      ]
+    }
+  },
+  {
+    "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/4",
+    "tls_and_server_info": {
+      "server_ip": "104.21.34.33",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "mangatek.com",
+      "tls_not_after": "Nov 13 15:31:42 2026 GMT",
+      "error": null
+    },
+    "runner_network_info": {
+      "ip": "4.155.149.98",
+      "org_asn": "AS8075 Microsoft Corporation",
+      "city": "Moses Lake",
+      "country": "US",
+      "error": null
+    },
+    "static_probe": {
+      "status_code": 403,
+      "headers_of_interest": {
+        "server": "cloudflare",
+        "cf-ray": "a3e6b90a08956de2-SEA",
+        "content-type": "text/html; charset=UTF-8"
+      },
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_via_noscript": 0,
+      "images_via_data_attr": 0,
+      "images_via_plain_src": 0,
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
+      "sample_image_urls": [],
+      "signed_url_params": [],
+      "raw_cookies_received": [],
+      "error": null,
+      "elapsed_sec": 0.01
+    },
+    "browser_probe": {
+      "navigated": true,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-8540-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {},
+      "adblock_wall": {
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "protection_category": "final_block",
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": true,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
+      },
+      "error": null,
+      "goto_elapsed_sec": 0.09,
+      "navigation_timing": {
+        "ttfb_ms": 9,
+        "dom_content_loaded_ms": 87,
+        "load_event_ms": 87,
+        "transfer_size_bytes": 2760
+      },
+      "wait_for_images_elapsed_sec": 20.11,
+      "scroll_elapsed_sec": 1.44,
+      "total_probe_elapsed_sec": 21.88,
+      "scroll_rounds_completed": 2,
+      "scroll_stop_reason": "stable_no_growth_at_bottom",
+      "navigation_response_headers": {
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6b90a8afd5907-SEA",
+        "content-encoding": "zstd",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:38:17 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nliGzgoKw6KM%2B2XZN%2BEaPMZsapegpjR0wiey2fyic6rmJxlppQDWaYmewmXQiwhwPzB%2BZ5w5%2FTCQkequwexSTTSrHz8726sXr4WuXX7SztUydXbu8Jr3trcEgQXQqYU%3D\"}]}",
+        "server": "cloudflare",
+        "server-timing": "cfEdge;dur=1,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "all_third_party_domains": [
+        "static.cloudflareinsights.com"
+      ],
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
+      "content_images_before_scroll": 0
+    },
+    "browser_probe_second_run": {
+      "navigated": true,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-8540-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {},
+      "adblock_wall": {
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "protection_category": "final_block",
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": true,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
+      },
+      "error": null,
+      "goto_elapsed_sec": 0.11,
+      "navigation_timing": {
+        "ttfb_ms": 10,
+        "dom_content_loaded_ms": 104,
+        "load_event_ms": 105,
+        "transfer_size_bytes": 2762
+      },
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.53,
+      "total_probe_elapsed_sec": 22.01,
+      "scroll_rounds_completed": 2,
+      "scroll_stop_reason": "stable_no_growth_at_bottom",
+      "navigation_response_headers": {
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6ba15ce470bdf-SEA",
+        "content-encoding": "zstd",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:39:00 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4nT3aoSBfyZq4yXNMTEPbaud4LMvvRn50P7nu2BrZy9NMDyqj9yjx40eqMNA%2FGxxihGRpxyrWNm3VKaNmABXCHPbQOvLgaDg3X2i%2FCwGiveUKaxVn%2BctQJllqyAy0qw%3D\"}]}",
+        "server": "cloudflare",
+        "server-timing": "cfEdge;dur=1,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "all_third_party_domains": [
+        "static.cloudflareinsights.com"
+      ],
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
+      "content_images_before_scroll": 0
+    },
+    "consistency_diffs": [],
+    "rate_limit_probe": {
+      "target": "page_url",
+      "sample_url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/4",
+      "requests_sent": 4,
+      "elapsed_sec": 0.05,
+      "status_codes": [
+        403,
+        403,
+        403,
+        403
+      ],
+      "rate_limited_detected": false,
+      "static_block_detected": true,
+      "retry_after_header": null
+    },
+    "history_diffs_since_last_run": [
+      "تصنيف الحماية (HTTP خام): None ← 'final_block'",
+      "تصنيف الحماية (متصفح): None ← 'final_block'",
+      "تحديد معدل مكتشَف: True ← False",
+      "حظر ثابت مكتشَف (لا علاقة بتحديد المعدل): None ← True"
+    ],
+    "deep_diagnostic": null,
+    "diagnostic_run_files": {
+      "report": "diagnostics/mangatek-com-8540-report.json",
+      "screenshots": [
+        "diagnostics/mangatek-com-8540-screenshot.png",
+        "diagnostics/mangatek-com-8540-run2-screenshot.png"
+      ]
+    }
+  },
+  {
+    "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/5",
+    "tls_and_server_info": {
+      "server_ip": "172.67.154.23",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "mangatek.com",
+      "tls_not_after": "Nov 13 15:31:42 2026 GMT",
+      "error": null
+    },
+    "runner_network_info": {
+      "ip": "4.155.149.98",
+      "org_asn": "AS8075 Microsoft Corporation",
+      "city": "Moses Lake",
+      "country": "US",
+      "error": null
+    },
+    "static_probe": {
+      "status_code": 403,
+      "headers_of_interest": {
+        "server": "cloudflare",
+        "cf-ray": "a3e6bb244c996de2-SEA",
+        "content-type": "text/html; charset=UTF-8"
+      },
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_via_noscript": 0,
+      "images_via_data_attr": 0,
+      "images_via_plain_src": 0,
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
+      "sample_image_urls": [],
+      "signed_url_params": [],
+      "raw_cookies_received": [],
+      "error": null,
+      "elapsed_sec": 0.01
+    },
+    "browser_probe": {
+      "navigated": true,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-6206-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {},
+      "adblock_wall": {
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "protection_category": "final_block",
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": true,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
+      },
+      "error": null,
+      "goto_elapsed_sec": 0.09,
+      "navigation_timing": {
+        "ttfb_ms": 10,
+        "dom_content_loaded_ms": 83,
+        "load_event_ms": 83,
+        "transfer_size_bytes": 2762
+      },
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.44,
+      "total_probe_elapsed_sec": 21.88,
+      "scroll_rounds_completed": 2,
+      "scroll_stop_reason": "stable_no_growth_at_bottom",
+      "navigation_response_headers": {
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6bb24b9c4be44-SEA",
+        "content-encoding": "zstd",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:39:43 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DeW6EbE5d7WQsmS%2B0doB8iqUfVMpxTZpWn7p1szbFtx%2F6Qd6pzHQ%2Bkuwhg8xEhhq43TjF3CYatyGNasgFZHn6JtxfNwJAjXWuHDnVskyfI2Ipw1bBqGt4kgOrcg8ctw%3D\"}]}",
+        "server": "cloudflare",
+        "server-timing": "cfEdge;dur=2,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "all_third_party_domains": [
+        "static.cloudflareinsights.com"
+      ],
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
+      "content_images_before_scroll": 0
+    },
+    "browser_probe_second_run": {
+      "navigated": true,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-6206-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {},
+      "adblock_wall": {
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "protection_category": "final_block",
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": true,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
+      },
+      "error": null,
+      "goto_elapsed_sec": 0.15,
+      "navigation_timing": {
+        "ttfb_ms": 10,
+        "dom_content_loaded_ms": 149,
+        "load_event_ms": 149,
+        "transfer_size_bytes": 2760
+      },
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.6,
+      "total_probe_elapsed_sec": 22.11,
+      "scroll_rounds_completed": 2,
+      "scroll_stop_reason": "stable_no_growth_at_bottom",
+      "navigation_response_headers": {
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6bc306b770bdf-SEA",
+        "content-encoding": "zstd",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:40:26 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dvSmNnjJC2oXoNfMWLli%2B4KN4mBPJJvluypHu5zkr3%2ByQBWITYBRfdC3FCH3hrldJySQJeMIF6XdKoBaGW3DKs1Y4aO8s3tZsTY3U2JZunWt1cBaeDJJJUuVpzPIUGw%3D\"}]}",
+        "server": "cloudflare",
+        "server-timing": "cfEdge;dur=1,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "all_third_party_domains": [
+        "static.cloudflareinsights.com"
+      ],
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
+      "content_images_before_scroll": 0
+    },
+    "consistency_diffs": [],
+    "rate_limit_probe": {
+      "target": "page_url",
+      "sample_url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/5",
+      "requests_sent": 4,
+      "elapsed_sec": 0.05,
+      "status_codes": [
+        403,
+        403,
+        403,
+        403
+      ],
+      "rate_limited_detected": false,
+      "static_block_detected": true,
+      "retry_after_header": null
+    },
+    "history_diffs_since_last_run": [
+      "تصنيف الحماية (HTTP خام): None ← 'final_block'",
+      "تصنيف الحماية (متصفح): None ← 'final_block'",
+      "تحديد معدل مكتشَف: True ← False",
+      "حظر ثابت مكتشَف (لا علاقة بتحديد المعدل): None ← True"
+    ],
+    "deep_diagnostic": null,
+    "diagnostic_run_files": {
+      "report": "diagnostics/mangatek-com-6206-report.json",
+      "screenshots": [
+        "diagnostics/mangatek-com-6206-screenshot.png",
+        "diagnostics/mangatek-com-6206-run2-screenshot.png"
+      ]
+    }
+  },
+  {
+    "url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/10",
+    "tls_and_server_info": {
+      "server_ip": "104.21.34.33",
+      "tls_issuer": "Google Trust Services",
+      "tls_subject": "mangatek.com",
+      "tls_not_after": "Nov 13 15:31:42 2026 GMT",
+      "error": null
+    },
+    "runner_network_info": {
+      "ip": "4.155.149.98",
+      "org_asn": "AS8075 Microsoft Corporation",
+      "city": "Moses Lake",
+      "country": "US",
+      "error": null
+    },
+    "static_probe": {
+      "status_code": 403,
+      "headers_of_interest": {
+        "server": "cloudflare",
+        "cf-ray": "a3e6bd3f18f26de2-SEA",
+        "content-type": "text/html; charset=UTF-8"
+      },
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_via_noscript": 0,
+      "images_via_data_attr": 0,
+      "images_via_plain_src": 0,
+      "extracted_image_count": 0,
+      "extracted_sample_urls": [],
+      "sample_image_urls": [],
+      "signed_url_params": [],
+      "raw_cookies_received": [],
+      "error": null,
+      "elapsed_sec": 0.02
+    },
+    "browser_probe": {
+      "navigated": true,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-442-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {},
+      "adblock_wall": {
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "protection_category": "final_block",
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": true,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
+      },
+      "error": null,
+      "goto_elapsed_sec": 0.09,
+      "navigation_timing": {
+        "ttfb_ms": 9,
+        "dom_content_loaded_ms": 83,
+        "load_event_ms": 84,
+        "transfer_size_bytes": 2764
+      },
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.61,
+      "total_probe_elapsed_sec": 22.05,
+      "scroll_rounds_completed": 2,
+      "scroll_stop_reason": "stable_no_growth_at_bottom",
+      "navigation_response_headers": {
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6bd3f8b465907-SEA",
+        "content-encoding": "zstd",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:41:09 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YiVM5mEHA4N1kWTN1yjfYpdY8AqskJrm5j46d8k0fjVVTQ6XOJye%2F3i16kzWg4AW%2FNfP3Ndco4qGvEknA%2F9Pm74sikM%2B2arVYZfy7fs1VFtnrL4XAD58OGyVnmDjLko%3D\"}]}",
+        "server": "cloudflare",
+        "server-timing": "cfEdge;dur=1,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "all_third_party_domains": [
+        "static.cloudflareinsights.com"
+      ],
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
+      "content_images_before_scroll": 0
+    },
+    "browser_probe_second_run": {
+      "navigated": true,
+      "title": "Attention Required! | Cloudflare",
+      "challenge_detected": true,
+      "protection_category": "final_block",
+      "challenge_resolved_after_reload": false,
+      "protection_signatures": [
+        "Cloudflare"
+      ],
+      "images_at_t0": 0,
+      "images_after_wait": 0,
+      "images_after_scroll": 0,
+      "selector_match_counts": {
+        ".reading-content img": 0,
+        ".page-break img": 0,
+        ".text-left img": 0,
+        "#readerarea img": 0,
+        ".chapter-content img": 0
+      },
+      "unmatched_img_count": 0,
+      "widget_excluded_count": 0,
+      "widget_excluded_samples": [],
+      "suggested_selectors": [],
+      "domain_distribution": {},
+      "signed_url_params": [],
+      "screenshot_path": "diagnostics/mangatek-com-442-run2-screenshot.png",
+      "hotlink_probe": null,
+      "hotlink_probes": [],
+      "network_vendor_hits": {},
+      "adblock_wall": {
+        "detected": false,
+        "became_ready_after_sec": null,
+        "clicked": false,
+        "button_snippet": null,
+        "timed_out": false
+      },
+      "cookie_reuse_probe": {
+        "tested": true,
+        "success": false,
+        "status_code": 403,
+        "cookie_count_reused": 1,
+        "cookie_names_reused": [
+          "cf_clearance"
+        ]
+      },
+      "fingerprint_with_stealth": {
+        "webdriver": false,
+        "hasWindowChrome": true,
+        "pluginsLength": 3,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      },
+      "stealth_comparison": {
+        "no_stealth": {
+          "navigated": true,
+          "challenge_detected": true,
+          "protection_category": "final_block",
+          "images_after_wait": 0,
+          "fingerprint": {
+            "webdriver": true,
+            "hasWindowChrome": false,
+            "pluginsLength": 0,
+            "languages": [
+              "en-US"
+            ],
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          },
+          "error": null
+        },
+        "webdriver_flag_hidden_by_stealth": true,
+        "challenge_outcome_differs": false,
+        "image_count_differs": false
+      },
+      "error": null,
+      "goto_elapsed_sec": 0.1,
+      "navigation_timing": {
+        "ttfb_ms": 16,
+        "dom_content_loaded_ms": 97,
+        "load_event_ms": 98,
+        "transfer_size_bytes": 2760
+      },
+      "wait_for_images_elapsed_sec": 20.12,
+      "scroll_elapsed_sec": 1.52,
+      "total_probe_elapsed_sec": 21.98,
+      "scroll_rounds_completed": 2,
+      "scroll_stop_reason": "stable_no_growth_at_bottom",
+      "navigation_response_headers": {
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "cf-ray": "a3e6be4bebdb7652-SEA",
+        "content-encoding": "zstd",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 21 Sep 2026 05:41:52 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "same-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bePog5lsikkyXeM8BUjoW0NE%2F1nBkVRvS%2BzOM84699RIA1K%2Bot%2Fv7WzMpbKu1U4cKCtmajaB7YLd6tF7OyVSmFabGAOutGL4aO7puWVZL%2B4CeG3Pe4IJrAYvFZFmxw4%3D\"}]}",
+        "server": "cloudflare",
+        "server-timing": "cfEdge;dur=6,cfOrigin;dur=0",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "all_third_party_domains": [
+        "static.cloudflareinsights.com"
+      ],
+      "turnstile_click_attempt": null,
+      "extended_challenge_probe": null,
+      "content_images_before_scroll": 0
+    },
+    "consistency_diffs": [],
+    "rate_limit_probe": {
+      "target": "page_url",
+      "sample_url": "https://mangatek.com/reader/my-wife-is-from-a-thousand-years-ago/10",
+      "requests_sent": 4,
+      "elapsed_sec": 0.05,
+      "status_codes": [
+        403,
+        403,
+        403,
+        403
+      ],
+      "rate_limited_detected": false,
+      "static_block_detected": true,
+      "retry_after_header": null
+    },
+    "history_diffs_since_last_run": [
+      "تصنيف الحماية (HTTP خام): None ← 'final_block'",
+      "تصنيف الحماية (متصفح): None ← 'final_block'",
+      "تحديد معدل مكتشَف: True ← False",
+      "حظر ثابت مكتشَف (لا علاقة بتحديد المعدل): None ← True"
+    ],
+    "deep_diagnostic": null,
+    "diagnostic_run_files": {
+      "report": "diagnostics/mangatek-com-442-report.json",
+      "screenshots": [
+        "diagnostics/mangatek-com-442-screenshot.png",
+        "diagnostics/mangatek-com-442-run2-screenshot.png"
       ]
     }
   }
