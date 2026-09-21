@@ -1,0 +1,104 @@
+[
+  {
+    "date": "2026-09-21 07:45:03 UTC",
+    "url": "https://like-manga.net/manga/my-wife-is-from-a-thousand-years-ago/6/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-09-21 07:49:21 UTC",
+    "url": "https://like-manga.net/manga/my-wife-is-from-a-thousand-years-ago/10/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-09-21 07:53:38 UTC",
+    "url": "https://like-manga.net/manga/my-wife-is-from-a-thousand-years-ago/21/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-09-21 07:57:57 UTC",
+    "url": "https://like-manga.net/manga/my-wife-is-from-a-thousand-years-ago/56/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-09-21 08:02:15 UTC",
+    "url": "https://like-manga.net/manga/my-wife-is-from-a-thousand-years-ago/88/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-09-21 08:06:33 UTC",
+    "url": "https://like-manga.net/manga/my-wife-is-from-a-thousand-years-ago/132/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  }
+]
