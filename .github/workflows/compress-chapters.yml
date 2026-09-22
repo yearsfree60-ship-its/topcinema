@@ -19,7 +19,7 @@ on:
           - إنتاج_كامل
         default: إنتاج
       site:
-        description: "[إنتاج + استخراج_نص] الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). يُتجاهَل كليًا بوضع التشخيص. like_manga_test: بروفايل تجريبي لـlike-manga.net عبر ScraperAPI (يتطلب سر SCRAPERAPI_KEY، وإلا رفض فوري واضح). like_manga_translate_test: نفس الهدف لكن عبر بروكسي Google Translate المجاني بلا مفتاح إطلاقًا"
+        description: "[إنتاج + استخراج_نص] الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). يُتجاهَل كليًا بوضع التشخيص. like_manga_test: بروفايل تجريبي لـlike-manga.net عبر ScraperAPI (يتطلب سر SCRAPERAPI_KEY، وإلا رفض فوري واضح). like_manga_translate_test: نفس الهدف لكن عبر بروكسي Google Translate المجاني بلا مفتاح إطلاقًا. like_manga_wayback_test: نفس الهدف عبر بروكسي أرشيف الإنترنت (Wayback Machine) المجاني بلا مفتاح — يفحص وجود نسخة مؤرشَفة، وإن لم توجد يطلب أرشفة فورية وينتظرها قصيرًا"
         required: true
         type: choice
         options:
@@ -31,6 +31,7 @@ on:
           - auto
           - like_manga_test
           - like_manga_translate_test
+          - like_manga_wayback_test
         default: auto
 
       # ── 🏭 الحقول التالية فعّالة بوضع "إنتاج" فقط (تُتجاهَل بالوضعين الآخرين) ──
