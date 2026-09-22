@@ -1744,8 +1744,19 @@ def _owned_chapter_paths(results: list) -> list[str]:
     الخاص بهذه التشغيلة + مجلد كل فصل مضغوط ضمن results. يُستخدم كـ
     allowed_paths في كل استدعاء دفع بالمسار العادي (غير التشخيصي)، بدل
     الاعتماد على فحص فرق git التفاعلي بعد كل commit.
+
+    [تصحيح] RUN_MANIFEST_RELPATH يُكتَب فعليًا على القرص فقط داخل
+    handle_result عند نجاح فصل واحد على الأقل (results غير فارغة) — راجع
+    شرط "if result is None: return" هناك. تضمينه هنا بلا شرط كان يُدرجه
+    بـallowed_paths حتى مع results=[] (كل الفصول فشلت)، فـ"git add" على
+    مسار لم يُكتَب على القرص ولا موجود بالفهرس أصلًا (لا حذف، بل غياب تام
+    من البداية) يفشل بخطأ pathspec — رُصد فعليًا بتشغيلة فشلت 1/1 فصل. لا
+    خطر بإضافته فقط لما يوجد فعليًا: manifest.json يُدفَع فقط لو تغيّر أصلًا
+    (git يتجاهل مسارًا غير معدَّل بصمت)، فلا حاجة لنفس الشرط عليه.
     """
-    paths = ["manifest.json", RUN_MANIFEST_RELPATH]
+    paths = ["manifest.json"]
+    if results:
+        paths.append(RUN_MANIFEST_RELPATH)
     for r in results:
         paths.append(f"{r['manga_id']}/ch-{r['chapter_num']}")
     return list(dict.fromkeys(paths))
