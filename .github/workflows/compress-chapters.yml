@@ -19,7 +19,7 @@ on:
           - إنتاج_كامل
         default: إنتاج
       site:
-        description: "[إنتاج + استخراج_نص] الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). يُتجاهَل كليًا بوضع التشخيص. like_manga_test: بروفايل تجريبي لـlike-manga.net عبر ScraperAPI (يتطلب سر SCRAPERAPI_KEY، وإلا رفض فوري واضح). like_manga_translate_test: نفس الهدف لكن عبر بروكسي Google Translate المجاني بلا مفتاح إطلاقًا. like_manga_wayback_test: نفس الهدف عبر أرشيف الإنترنت (Wayback Machine / SPN2 الرسمية) — يتطلب سرّي WAYBACK_ACCESS_KEY و WAYBACK_SECRET_KEY (مجانيان من archive.org/account/s3.php)، وإلا رفض فوري واضح"
+        description: "[إنتاج + استخراج_نص] الموقع المصدر — يفعّل الأسلوب المناسب له تحديدًا بدل التخمين. لا يدعم Actions أزرارًا حقيقية؛ هذه أقرب بديل (قائمة اختيار واحد). يُتجاهَل كليًا بوضع التشخيص. like_manga_wayback_test: بروفايل لـlike-manga.net عبر أرشيف الإنترنت (Wayback Machine / SPN2 الرسمية) — يتطلب سرّي WAYBACK_ACCESS_KEY و WAYBACK_SECRET_KEY (مجانيان من archive.org/account/s3.php)، وإلا رفض فوري واضح"
         required: true
         type: choice
         options:
@@ -29,8 +29,6 @@ on:
           - olympustaff
           - procomic
           - auto
-          - like_manga_test
-          - like_manga_translate_test
           - like_manga_wayback_test
         default: auto
 
@@ -238,7 +236,6 @@ jobs:
         env:
           CHAPTER_URLS: ${{ inputs.chapter_urls }}
           SITE_PROFILE: ${{ inputs.site }}
-          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
           WAYBACK_ACCESS_KEY: ${{ secrets.WAYBACK_ACCESS_KEY }}
           WAYBACK_SECRET_KEY: ${{ secrets.WAYBACK_SECRET_KEY }}
           IMG_QUALITY: ${{ inputs.quality }}
