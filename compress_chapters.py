@@ -478,10 +478,33 @@ SCRAPERAPI_CREDITS_USED = 0  # عداد تراكمي بسيط — يُطبَع �
 
 # [جديد — بروكسي أرشيف الإنترنت (Wayback Machine)، مجاني بالكامل بلا مفتاح]
 # راجع تبرير الفكرة الكاملة بترويسة _wayback_fetch_html وبروفايل
-# 'use_wayback_proxy' بالأسفل. عدد محاولات إعادة فحص التوفر بعد طلب
-# الأرشفة الفورية، والفاصل الزمني بينها بالثوان — قابلان للتعديل عبر
-# متغيرات بيئة بلا تعديل كود لو أثبتت التجربة الفعلية حاجة مهلة أطول/أقصر.
-WAYBACK_POLL_ATTEMPTS = int(os.environ.get("WAYBACK_POLL_ATTEMPTS", "6"))
+# 'use_wayback_proxy' بالأسفل.
+#
+# [تصحيح حرج — الترقية لـSPN2 الرسمية الموثَّقة] النسخة الأولى (GET بلا
+# مصادقة على /save/<url> ثم تخمين أعمى عبر إعادة فحص /wayback/available)
+# فشلت فعليًا (templikey.like-manga.net) بلا أي سبب معروف — لأن تلك
+# الواجهة غير الموثَّقة رسميًا لا تُرجع job_id ولا حالة حقيقية، فحلقة
+# الفحص لا تُفرّق بين "لم تُؤرشَف بعد" و"فشلت نهائيًا ولن تنجح أبدًا".
+# بحث فعلي بتوثيق SPN2 الرسمي (Internet Archive) كشف أن أحد رموز الفشل
+# الموثَّقة تحديدًا هو 'error:blocked' (HTTP 999) = "الموقع الهدف يحجب
+# زاحف أرشيف الإنترنت نفسه" — سيناريو حقيقي شائع لمواقع خلف Cloudflare
+# Bot Fight Mode/Managed Rules، وفي هذه الحالة لا فائدة من أي إعادة
+# محاولة إطلاقًا. الآن نستخدم واجهة SPN2 الرسمية الموثَّقة بمصادقة
+# S3-style key (مجانية بالكامل، حساب archive.org + archive.org/account/
+# s3.php، دقيقتان): POST /save يرجع job_id فوريًا، ثم POST /save/status
+# بنفس job_id يرجع حالة حقيقية (success/pending/error) مع status_ext
+# دقيق يُطبَع بوضوح بالسجل — إما نجاح فعلي، أو سبب فشل قاطع (كـ
+# error:blocked) يُخبرنا فورًا أن هذا المسار مسدود جوهريًا لهذا الموقع
+# تحديدًا، بدل استمرار التخمين الأعمى. بلا المفتاحين (WAYBACK_ACCESS_KEY/
+# WAYBACK_SECRET_KEY) يُرفَض البروفايل فورًا برسالة واضحة — بنفس نمط
+# SCRAPERAPI_KEY تمامًا.
+WAYBACK_ACCESS_KEY = os.environ.get("WAYBACK_ACCESS_KEY", "").strip()
+WAYBACK_SECRET_KEY = os.environ.get("WAYBACK_SECRET_KEY", "").strip()
+# عدد محاولات إعادة فحص حالة job_id، والفاصل الزمني بينها بالثوان —
+# قابلان للتعديل عبر متغيرات بيئة بلا تعديل كود. SPN2 نفسها توثّق حد
+# 45ث لمهلة الالتقاط الواحدة (error:soft-time-limit-exceeded)، فـ12×5=60ث
+# هامش أمان معقول فوقها لتغطية طابور الانتظار قبل بدء الالتقاط الفعلي.
+WAYBACK_POLL_ATTEMPTS = int(os.environ.get("WAYBACK_POLL_ATTEMPTS", "12"))
 WAYBACK_POLL_INTERVAL_SEC = float(os.environ.get("WAYBACK_POLL_INTERVAL_SEC", "5"))
 
 
@@ -552,9 +575,10 @@ def _wayback_raw_snapshot_url(snapshot_url: str) -> str:
 
 
 def _wayback_available_snapshot(url: str) -> str | None:
-    """[جديد — بروكسي أرشيف الإنترنت] فحص فوري بلا مفتاح عبر availability
-    API الرسمي لأرشيف الإنترنت: هل توجد أصلًا نسخة مؤرشَفة لهذا الرابط؟
-    يرجع رابط النسخة (بصيغته الخام غير المُعدَّلة) إن وُجدت، أو None."""
+    """فحص فوري بلا مصادقة عبر availability API الرسمي لأرشيف الإنترنت:
+    هل توجد أصلًا نسخة مؤرشَفة لهذا الرابط (من أي مصدر، لا شرط عبر SPN2)؟
+    يُستخدَم كمسار مختصر يوفّر استدعاء SPN2 بالكامل لو النسخة موجودة
+    سلفًا. يرجع رابط النسخة (بصيغته الخام غير المُعدَّلة) إن وُجدت، أو None."""
     try:
         resp = _HTTP_SESSION.get(
             "https://archive.org/wayback/available",
@@ -570,57 +594,116 @@ def _wayback_available_snapshot(url: str) -> str | None:
     return None
 
 
-def _wayback_request_save(url: str) -> None:
-    """[جديد — بروكسي أرشيف الإنترنت] يطلب من أرشيف الإنترنت أرشفة الرابط
-    الآن عبر واجهة "Save Page Now" البسيطة بلا مفتاح (تعمل لمعظم الحالات؛
-    القيد الوحيد: يعتمد على قدرة زاحف أرشيف الإنترنت نفسه على زيارة
-    الصفحة فعليًا — غير مضمون 100% لكل موقع). لا نثق بمحتوى الاستجابة هنا
-    مباشرة (غالبًا صفحة HTML وسيطة لأرشيف الإنترنت لا JSON) — فقط نُحاول
-    تشغيل الأرشفة، ثم نتحقق لاحقًا فعليًا عبر _wayback_available_snapshot
-    بحلقة إعادة محاولة بـ_wayback_fetch_html. الفشل هنا صامت عمدًا (يُترجَم
-    لاحقًا لرسالة خطأ واضحة واحدة لو لم تظهر أي نسخة أبدًا)."""
+def _spn2_submit_capture(url: str) -> tuple[str | None, str]:
+    """[SPN2 رسمية موثَّقة] يُرسل طلب التقاط عبر واجهة Save Page Now 2
+    الرسمية بمصادقة S3-style key (WAYBACK_ACCESS_KEY/WAYBACK_SECRET_KEY —
+    مجانية بالكامل من archive.org/account/s3.php). خلافًا للواجهة القديمة
+    غير الموثَّقة (/save/<url> البسيطة)، هذه تُرجع job_id فوريًا نُتابعه
+    بدالة حالة حقيقية (_spn2_job_status) بدل تخمين أعمى عبر إعادة فحص
+    التوفر. skip_first_archive=1 يتجاوز فحص "هل أُرشِفت من قبل" الداخلي
+    (نتحقق منه نحن أصلًا بـ_wayback_available_snapshot قبل الوصول هنا،
+    فلا داعي لازدواجية تُبطئ الاستجابة)."""
     try:
-        _HTTP_SESSION.get(
-            f"https://web.archive.org/save/{url}",
-            headers={"User-Agent": UA}, timeout=45,
+        resp = _HTTP_SESSION.post(
+            "https://web.archive.org/save",
+            headers={
+                "Authorization": f"LOW {WAYBACK_ACCESS_KEY}:{WAYBACK_SECRET_KEY}",
+                "Accept": "application/json",
+            },
+            data={"url": url, "skip_first_archive": "1"},
+            timeout=30,
         )
+        data = resp.json()
+    except Exception as e:
+        return None, f"فشل إرسال طلب الالتقاط لـSPN2: {e}"
+    job_id = data.get("job_id")
+    if not job_id:
+        # رفض فوري بلا job_id — الرسالة/status_ext المرفقة هي السبب الحقيقي
+        # (مثل error:too-many-daily-captures أو error:unauthorized لمفتاح خاطئ)
+        return None, f"رفض SPN2 طلب الالتقاط فورًا: {data.get('message') or data}"
+    return job_id, ""
+
+
+def _spn2_job_status(job_id: str) -> dict:
+    """يستعلم عن حالة job_id حقيقية عبر /save/status — يرجع القاموس الخام
+    (status: pending/success/error، status_ext عند الخطأ، original_url،
+    timestamp عند النجاح...). أي استثناء شبكة يُعامَل كـ'pending' مؤقت
+    (لا نُسقِط الحلقة لخطأ عابر واحد)."""
+    try:
+        resp = _HTTP_SESSION.post(
+            "https://web.archive.org/save/status",
+            headers={
+                "Authorization": f"LOW {WAYBACK_ACCESS_KEY}:{WAYBACK_SECRET_KEY}",
+                "Accept": "application/json",
+            },
+            data={"job_id": job_id},
+            timeout=15,
+        )
+        return resp.json()
     except Exception:
-        pass
+        return {"status": "pending"}
 
 
 def _wayback_fetch_html(chapter_url: str) -> tuple[str | None, str]:
-    """[جديد — بروكسي أرشيف الإنترنت (Wayback Machine)، الحل الفعلي البديل
-    عن ScraperAPI/Google Translate proxy لمواقع محجوبة بـCloudflare من
-    GitHub Actions] الفكرة: بدل محاولة جعل طلبنا نحن "يبدو بشريًا" (كل
-    محاولات التنكّر السابقة فشلت)، نطلب من جهة ثالثة تثق بها Cloudflare
-    أصلًا (زاحف أرشيف الإنترنت، معروف وموثوق واسعًا) أن تجلب الصفحة
-    نيابةً عنا وتؤرشفها علنًا، ثم نقرأ نحن النسخة العامة المؤرشَفة لاحقًا
-    — لا علاقة لطلبنا نحن بأي حجب إطلاقًا بهذه المرحلة. صور الفصل نفسها
-    (عادة على CDN فرعي منفصل غير محمي) تبقى تُستخرَج من نفس HTML وتُحمَّل
-    مباشرة كسابقاتها، بلا أي بروكسي إضافي.
+    """[الحل الفعلي البديل عن ScraperAPI/Google Translate proxy لمواقع
+    محجوبة بـCloudflare من GitHub Actions] الفكرة: بدل محاولة جعل طلبنا
+    نحن "يبدو بشريًا"، نطلب من جهة ثالثة تثق بها Cloudflare أصلًا (زاحف
+    أرشيف الإنترنت الرسمي، عبر واجهة SPN2 الموثَّقة بمصادقة) أن تجلب
+    الصفحة نيابةً عنا وتؤرشفها علنًا، ثم نقرأ نحن النسخة العامة المؤرشَفة
+    لاحقًا — لا علاقة لطلبنا نحن بأي حجب إطلاقًا بهذه المرحلة. صور الفصل
+    نفسها (عادة على CDN فرعي منفصل غير محمي) تبقى تُستخرَج من نفس HTML
+    وتُحمَّل مباشرة كسابقاتها، بلا أي بروكسي إضافي.
 
-    الخطوات: (1) فحص فوري هل توجد نسخة مؤرشَفة أصلًا. (2) إن لم توجد: طلب
-    أرشفة فورية، ثم إعادة فحص التوفر بحلقة انتظار قصيرة (الأرشفة الفعلية
-    تأخذ ثوانٍ لا أجزاء ثانية — WAYBACK_POLL_ATTEMPTS × WAYBACK_POLL_
-    INTERVAL_SEC). (3) جلب HTML من رابط النسخة المؤرشَفة الخام فعليًا.
+    الخطوات: (1) فحص فوري هل توجد نسخة مؤرشَفة أصلًا (أي مصدر، لا شرط
+    SPN2 — يوفّر استدعاء التقاط كامل لو موجودة سلفًا). (2) إن لم توجد:
+    تقديم طلب التقاط SPN2 رسمي موثَّق → job_id، ثم متابعة حالته الحقيقية
+    بحلقة (WAYBACK_POLL_ATTEMPTS × WAYBACK_POLL_INTERVAL_SEC) حتى success/
+    error صريحين — لا تخمين. (3) عند النجاح: بناء رابط النسخة الخام من
+    original_url/timestamp المُرجَعين فعليًا بالاستجابة وجلب HTML منه.
 
-    القيد الصادق الوحيد: يعتمد على أن أرشيف الإنترنت يستطيع زيارة الصفحة
-    فعليًا (غير مضمون 100% لكل موقع)، وبعض الصفحات النادرة الزيارة قد لا
-    تُؤرشَف فورًا خلال مهلة الانتظار هنا."""
+    [تصحيح حرج] الفشل الآن ليس رسالة عامة مبهمة — status_ext الحقيقي
+    (الموثَّق رسميًا بـSPN2، كـerror:blocked = 'الموقع يحجب زاحف أرشيف
+    الإنترنت نفسه'، أو error:no-captures = 'غير قابل للوصول من خدمتنا')
+    يُرجَع كما هو بنص رسالة الخطأ — يُميّز بوضوح بين عطل عابر يستحق إعادة
+    محاولة لاحقًا، وحجب جوهري نهائي لا فائدة من أي إعادة محاولة معه
+    إطلاقًا مهما طالت المهلة."""
+    if not WAYBACK_ACCESS_KEY or not WAYBACK_SECRET_KEY:
+        return None, "البروفايل يتطلب WAYBACK_ACCESS_KEY و WAYBACK_SECRET_KEY لكنهما غير مضبوطين بأسرار المستودع"
+
     snapshot_url = _wayback_available_snapshot(chapter_url)
+
     if not snapshot_url:
-        _wayback_request_save(chapter_url)
+        job_id, submit_err = _spn2_submit_capture(chapter_url)
+        if submit_err:
+            return None, f"[SPN2] {submit_err}"
+
+        final_status = None
         for _ in range(WAYBACK_POLL_ATTEMPTS):
             time.sleep(WAYBACK_POLL_INTERVAL_SEC)
-            snapshot_url = _wayback_available_snapshot(chapter_url)
-            if snapshot_url:
+            status_data = _spn2_job_status(job_id)
+            status = status_data.get("status")
+            if status == "success":
+                final_status = status_data
                 break
-    if not snapshot_url:
-        return None, (
-            "تعذّر الحصول على نسخة مؤرشَفة من أرشيف الإنترنت (لا نسخة سابقة "
-            "موجودة، ولا نجحت الأرشفة الفورية خلال مهلة الانتظار — "
-            f"{WAYBACK_POLL_ATTEMPTS}×{WAYBACK_POLL_INTERVAL_SEC}ث)"
-        )
+            if status == "error":
+                status_ext = status_data.get("status_ext", "error:unknown")
+                message = status_data.get("message", "")
+                return None, f"[SPN2] فشلت الأرشفة نهائيًا — {status_ext}: {message}"
+            # status == "pending" أو أي قيمة أخرى → نُتابع الانتظار
+
+        if final_status is None:
+            return None, (
+                f"[SPN2] لم تكتمل الأرشفة خلال مهلة الانتظار "
+                f"({WAYBACK_POLL_ATTEMPTS}×{WAYBACK_POLL_INTERVAL_SEC}ث) — الحالة بقيت pending، "
+                "قد تحتاج مهلة أطول (WAYBACK_POLL_ATTEMPTS) أو الموقع بطيء الاستجابة لزاحف SPN2"
+            )
+
+        timestamp = final_status.get("timestamp")
+        original_url = final_status.get("original_url", chapter_url)
+        if not timestamp:
+            return None, f"[SPN2] نجحت الأرشفة لكن الاستجابة لم تتضمن timestamp: {final_status}"
+        snapshot_url = f"https://web.archive.org/web/{timestamp}id_/{original_url}"
+
     try:
         resp = _HTTP_SESSION.get(snapshot_url, headers={"User-Agent": UA}, timeout=25)
         resp.raise_for_status()
@@ -696,13 +779,14 @@ PROFILES = {
         "fetch_mode": "http",
         "use_translate_proxy": True,
     },
-    # [جديد — بروكسي أرشيف الإنترنت، مجاني بالكامل بلا مفتاح ولا تسجيل]
-    # بديل ثالث لنفس هدف like-manga.net المحجوب بـCloudflare من GitHub
-    # Actions — راجع تبرير الفكرة الكاملة بترويسة _wayback_fetch_html.
-    # use_wayback_proxy يُطبَّق على جلب صفحة القارئ فقط (تحتاج تجاوز
-    # Cloudflare)؛ صور الفصل تُستخرَج من نفس HTML المؤرشَف وتُجلَب مباشرة
-    # بلا بروكسي (نفس افتراض like_manga_translate_test: CDN فرعي منفصل
-    # غير محمي أصلًا).
+    # [جديد — بروكسي أرشيف الإنترنت عبر SPN2 الرسمية الموثَّقة، مجاني
+    # بالكامل لكن يتطلب مفتاحي S3-style (WAYBACK_ACCESS_KEY/
+    # WAYBACK_SECRET_KEY من archive.org/account/s3.php)] بديل ثالث لنفس
+    # هدف like-manga.net المحجوب بـCloudflare من GitHub Actions — راجع
+    # تبرير الفكرة الكاملة بترويسة _wayback_fetch_html. use_wayback_proxy
+    # يُطبَّق على جلب صفحة القارئ فقط (تحتاج تجاوز Cloudflare)؛ صور الفصل
+    # تُستخرَج من نفس HTML المؤرشَف وتُجلَب مباشرة بلا بروكسي (نفس افتراض
+    # like_manga_translate_test: CDN فرعي منفصل غير محمي أصلًا).
     "like_manga_wayback_test": {
         "label": "مانجا لايك (تجربة Wayback Machine proxy)",
         "fetch_mode": "http",
