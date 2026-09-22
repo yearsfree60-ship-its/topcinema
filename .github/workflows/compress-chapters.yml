@@ -210,9 +210,17 @@ jobs:
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
-          git fetch origin --quiet || true
 
+          # [إصلاح — كان هذا سبب الـ5 دقائق] "git fetch origin" بلا اسم فرع
+          # ولا --depth يجلب تاريخ كل الفروع كاملًا (يكبر مع كل تشغيلة
+          # سابقة تراكمت على فرع output — صور + manifests + commits)، رغم
+          # أن كل ما نحتاجه فعليًا هو آخر نقطة من فرع output فقط (السكربت
+          # يدمج البيانات عبر manifest.json لا عبر تاريخ git). ls-remote
+          # بالأسفل استعلام مباشر عن الريموت، لا يحتاج أي fetch محلي مسبق —
+          # فحُذف الفetch الشامل كليًا، واستُبدل بفetch مستهدَف وسطحي
+          # (--depth=1) لفرع output تحديدًا، وفقط لو كان موجودًا أصلًا.
           if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
+            git fetch --depth=1 origin output --quiet
             git worktree add output-worktree origin/output
             git -C output-worktree checkout -B output origin/output
           else
