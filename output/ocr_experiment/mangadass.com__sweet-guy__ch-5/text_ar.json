@@ -1,0 +1,1080 @@
+{
+  "manga_id": "mangadass.com__sweet-guy",
+  "chapter_num": "5",
+  "manga_title": "Sweet Guy",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "苦 YukBong 堉奉",
+          "confidence": 0.461,
+          "text_ar": "يوك-بونغ"
+        },
+        {
+          "text": "TER",
+          "confidence": 0.705,
+          "text_ar": "تير"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "世 glance",
+          "confidence": 0.184,
+          "text_ar": "نظرة"
+        },
+        {
+          "text": "F glance",
+          "confidence": 0.289,
+          "text_ar": "نظرة"
+        },
+        {
+          "text": "YOMANGA.NET",
+          "confidence": 0.976,
+          "text_ar": "YOMANGA.NET"
+        },
+        {
+          "text": "SHE'S NOT HERE",
+          "confidence": 0.95,
+          "text_ar": "إنها ليست هنا"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "YOMANGA.NET TRANSLATOR: JAEWON RAWs:surocks EDITOR: flatiya",
+          "confidence": 0.843,
+          "text_ar": "مترجم YOMANGA.NET: JAEWON، المصادر: surocks، المحرر: flatiya"
+        },
+        {
+          "text": "read first at yomanga.net 24 hour delay for bato.to",
+          "confidence": 0.979,
+          "text_ar": "اقرأ أولاً على yomanga.net، تأخير لمدة 24 ساعة على bato.to"
+        },
+        {
+          "text": "Sweet Guy Chapter 5",
+          "confidence": 0.989,
+          "text_ar": "الفصل الخامس من Sweet Guy"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "SINCE THAT TRAININCIDENT, I WAS UNCONSCIOUSLYLOOKING FORHER.",
+          "confidence": 0.94,
+          "text_ar": "منذ ذلك الحادث في القطار، كنت أبحث عنها دون وعي."
+        },
+        {
+          "text": "专 OPEN人SALE",
+          "confidence": 0.071,
+          "text_ar": "تخفيضات"
+        },
+        {
+          "text": "WVERSAL",
+          "confidence": 0.787,
+          "text_ar": "عالمي"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "IT SQUISHED RIGHT",
+          "confidence": 0.949,
+          "text_ar": "لقد انضغطت تماماً"
+        },
+        {
+          "text": "YOMANGA.NET",
+          "confidence": 0.964,
+          "text_ar": "YOMANGA.NET"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "HAHA DOYOU NEED ME TO SCRATCHYOUR BACK FOR YA?",
+          "confidence": 0.928,
+          "text_ar": "هاها، هل تحتاجين مني أن أحك ظهرك لكِ؟"
+        },
+        {
+          "text": "scratch H",
+          "confidence": 0.669,
+          "text_ar": "حك"
+        },
+        {
+          "text": "Freaked out 喜",
+          "confidence": 0.524,
+          "text_ar": "مذعور"
+        },
+        {
+          "text": "此 seratch",
+          "confidence": 0.191,
+          "text_ar": "حك"
+        },
+        {
+          "text": "THE HELL? WHY DIDMY HAND FEEL SO GOOD JUST NOW.?!",
+          "confidence": 0.902,
+          "text_ar": "ما الذي يحدث؟ لماذا شعرت يدي بهذا الشعور الجيد للتو؟!"
+        },
+        {
+          "text": "I SPENT THE WHOLE DAY THINKING ABOUT GETTINGONTHE TRAIN.",
+          "confidence": 0.955,
+          "text_ar": "قضيت اليوم بأكمله أفكر في ركوب القطار."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "shake 雪",
+          "confidence": 0.071,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.998,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.998,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.998,
+          "text_ar": "ارتجاف"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "WHAT HAPPENED TO HER? DID SHE MOVE OR SOMETHING? SIGH..",
+          "confidence": 0.912,
+          "text_ar": "ماذا حدث لها؟ هل انتقلت أو شيء من هذا القبيل؟ تنهد.."
+        },
+        {
+          "text": "YOMANGA.NET",
+          "confidence": 0.975,
+          "text_ar": "YOMANGA.NET"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "shake",
+          "confidence": 0.999,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.997,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "IT'S WEEKEND RIGHT NOW...ANDEARLY IN THE MORNING...",
+          "confidence": 0.907,
+          "text_ar": "نحن في عطلة نهاية الأسبوع الآن... وفي الصباح الباكر..."
+        },
+        {
+          "text": "a吾o sneak",
+          "confidence": 0.329,
+          "text_ar": "تسلل"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "BUT SHE'S HERE NOW.. WITHNOONE ELSE ON THE TRAIN..",
+          "confidence": 0.93,
+          "text_ar": "لكنها هنا الآن.. ولا يوجد أحد غيرنا في القطار.."
+        },
+        {
+          "text": "shake",
+          "confidence": 0.997,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.998,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "YOMANGA.NET",
+          "confidence": 0.972,
+          "text_ar": "YOMANGA.NET"
+        },
+        {
+          "text": "\\fa}} slide S",
+          "confidence": 0.296,
+          "text_ar": "انزلاق"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "shake",
+          "confidence": 0.996,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.997,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.998,
+          "text_ar": "ارتجاف"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "rub",
+          "confidence": 0.991,
+          "text_ar": "فرك"
+        },
+        {
+          "text": "ryb 早",
+          "confidence": 0.271,
+          "text_ar": "فرك"
+        },
+        {
+          "text": "HER SKIN IS SOF..",
+          "confidence": 0.913,
+          "text_ar": "بشرتها ناعمة جداً.."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "THE DOORIS NOWOPENING.. IREPEAT...",
+          "confidence": 0.899,
+          "text_ar": "الأبواب تفتح الآن.. أكرر..."
+        },
+        {
+          "text": "SO THIS IS THE STATION WHERE SHE USUALLY GETS OFF...",
+          "confidence": 0.911,
+          "text_ar": "إذن هذه هي المحطة التي تنزل فيها عادةً..."
+        },
+        {
+          "text": "THE DOOR IS NOW OPENING. 刘0 slide",
+          "confidence": 0.26,
+          "text_ar": "الأبواب تفتح الآن، انزلاق"
+        },
+        {
+          "text": "GUESS SHE'S LEAVING NOW.",
+          "confidence": 0.931,
+          "text_ar": "أظن أنها ستغادر الآن."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "DOOR IS NOW CLOSING.",
+          "confidence": 0.913,
+          "text_ar": "الأبواب تغلق الآن."
+        },
+        {
+          "text": "HUHP SHE DIDN'T LEAVE?",
+          "confidence": 0.954,
+          "text_ar": "هاه؟ لم تغادر؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "故 slurp of",
+          "confidence": 0.175,
+          "text_ar": "رشف"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "Kiss",
+          "confidence": 0.877,
+          "text_ar": "قبلة"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "slurp",
+          "confidence": 0.979,
+          "text_ar": "رشف"
+        },
+        {
+          "text": "slurp",
+          "confidence": 0.989,
+          "text_ar": "رشف"
+        },
+        {
+          "text": "slurp",
+          "confidence": 0.987,
+          "text_ar": "رشف"
+        },
+        {
+          "text": "slurp",
+          "confidence": 0.977,
+          "text_ar": "رشف"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "THE DOOR WILL NOWOPEN...",
+          "confidence": 0.931,
+          "text_ar": "الأبواب ستفتح الآن..."
+        },
+        {
+          "text": "YOUR EXIT IS ON THE RIGHT",
+          "confidence": 0.888,
+          "text_ar": "مخرجك على اليمين"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "COME WITH ME!",
+          "confidence": 0.912,
+          "text_ar": "تعالي معي!"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.962,
+          "text_ar": "هاه؟"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "JUST COME!",
+          "confidence": 0.968,
+          "text_ar": "فقط تعالي!"
+        },
+        {
+          "text": "Toilet",
+          "confidence": 0.902,
+          "text_ar": "مرحاض"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "Toilet",
+          "confidence": 0.993,
+          "text_ar": "مرحاض"
+        },
+        {
+          "text": "gasp",
+          "confidence": 0.996,
+          "text_ar": "لهث"
+        },
+        {
+          "text": "gasp",
+          "confidence": 0.997,
+          "text_ar": "لهث"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "EX-EXCUSE ME!",
+          "confidence": 0.91,
+          "text_ar": "عـ-عذراً!"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "grab",
+          "confidence": 0.998,
+          "text_ar": "إمساك"
+        },
+        {
+          "text": "smooch",
+          "confidence": 0.996,
+          "text_ar": "تقبيل"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "smooch",
+          "confidence": 0.984,
+          "text_ar": "تقبيل"
+        },
+        {
+          "text": "HERK MARTEL",
+          "confidence": 0.986,
+          "text_ar": "مارتيل"
+        },
+        {
+          "text": "smooch 福",
+          "confidence": 0.598,
+          "text_ar": "تقبيل"
+        },
+        {
+          "text": "M...MM.",
+          "confidence": 0.889,
+          "text_ar": "م...مم."
+        },
+        {
+          "text": "slurp",
+          "confidence": 0.96,
+          "text_ar": "رشف"
+        },
+        {
+          "text": "slurp",
+          "confidence": 0.891,
+          "text_ar": "رشف"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "lurp",
+          "confidence": 0.702,
+          "text_ar": "رشف"
+        },
+        {
+          "text": "slurp",
+          "confidence": 0.934,
+          "text_ar": "رشف"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "ICAN'T RESIST MYSELF...",
+          "confidence": 0.95,
+          "text_ar": "لا أستطيع مقاومة نفسي..."
+        },
+        {
+          "text": "ao Ah",
+          "confidence": 0.124,
+          "text_ar": "آه"
+        },
+        {
+          "text": "Ba-dum E KX Ba-dum KX Ba-dum",
+          "confidence": 0.209,
+          "text_ar": "خفقان، خفقان، خفقان"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "FEELS GOOD...",
+          "confidence": 0.782,
+          "text_ar": "شعور جيد..."
+        },
+        {
+          "text": "lick",
+          "confidence": 0.995,
+          "text_ar": "لعق"
+        },
+        {
+          "text": "蓝贴 lick",
+          "confidence": 0.468,
+          "text_ar": "لعق"
+        },
+        {
+          "text": "TOUCHING YOUR BODY...",
+          "confidence": 0.893,
+          "text_ar": "لمس جسدك..."
+        },
+        {
+          "text": "FEELS SO DAMN GOOD!",
+          "confidence": 0.952,
+          "text_ar": "شعور جيد جداً!"
+        },
+        {
+          "text": "战 ah",
+          "confidence": 0.127,
+          "text_ar": "آه"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "ARIEL 8quish",
+          "confidence": 0.867,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "stiff",
+          "confidence": 0.983,
+          "text_ar": "تصلب"
+        },
+        {
+          "text": "AHH...",
+          "confidence": 0.863,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "Here...",
+          "confidence": 0.927,
+          "text_ar": "هنا..."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "ERK Squish 工",
+          "confidence": 0.492,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "IT FEELS THE BEST HERE!",
+          "confidence": 0.969,
+          "text_ar": "إنه أفضل شعور هنا!"
+        },
+        {
+          "text": "squish",
+          "confidence": 0.997,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "Ba-dum HX",
+          "confidence": 0.332,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "a-dum",
+          "confidence": 0.992,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "H...HEY...",
+          "confidence": 0.746,
+          "text_ar": "مـ...مرحباً..."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "ERK ARTEL 早 イ",
+          "confidence": 0.077,
+          "text_ar": "مارتيل"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "I THINK IT'LL FEEL BETTER IF I DO THIS..!",
+          "confidence": 0.884,
+          "text_ar": "أعتقد أن الشعور سيكون أفضل إذا فعلت هذا..!"
+        },
+        {
+          "text": "战ok Ah",
+          "confidence": 0.328,
+          "text_ar": "آه"
+        },
+        {
+          "text": "MMH",
+          "confidence": 0.988,
+          "text_ar": "ممم"
+        },
+        {
+          "text": "GASP.!",
+          "confidence": 0.835,
+          "text_ar": "شهقة!"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": [
+        {
+          "text": "CAN YOU TAKE IT OFF?",
+          "confidence": 0.946,
+          "text_ar": "هل يمكنكِ خلعه؟"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "sentences": [
+        {
+          "text": "B-BUT...",
+          "confidence": 0.913,
+          "text_ar": "لـ-لكن..."
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "sentences": [
+        {
+          "text": "号 1 slip",
+          "confidence": 0.132,
+          "text_ar": "انزلاق"
+        },
+        {
+          "text": "阜 号 drop",
+          "confidence": 0.281,
+          "text_ar": "سقوط"
+        },
+        {
+          "text": "THANKSFORREADING ATYOMANGA.NET",
+          "confidence": 0.887,
+          "text_ar": "شكراً للقراءة على YOMANGA.NET"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "sentences": [
+        {
+          "text": "WELL I'M TAKING IT OFF",
+          "confidence": 0.93,
+          "text_ar": "حسناً، سأخلعه أنا"
+        },
+        {
+          "text": "老 2 drop",
+          "confidence": 0.271,
+          "text_ar": "سقوط"
+        },
+        {
+          "text": "HERK MARTEL",
+          "confidence": 0.951,
+          "text_ar": "مارتيل"
+        },
+        {
+          "text": "日 M stiff",
+          "confidence": 0.143,
+          "text_ar": "تصلب"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "shaaa",
+          "confidence": 0.994,
+          "text_ar": "شـااا"
+        },
+        {
+          "text": "号 drop",
+          "confidence": 0.061,
+          "text_ar": "سقوط"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": []
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "例所 squish",
+          "confidence": 0.203,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "AHH.!!",
+          "confidence": 0.826,
+          "text_ar": "آه!!"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": [
+        {
+          "text": "AHH..",
+          "confidence": 0.87,
+          "text_ar": "آه.."
+        },
+        {
+          "text": "I JUST PUT IT IN..",
+          "confidence": 0.929,
+          "text_ar": "لقد أدخلته للتو.."
+        },
+        {
+          "text": "INSIDE OF SOMEONEI DONT EVEN KNOW",
+          "confidence": 0.948,
+          "text_ar": "داخل شخص لا أعرفه حتى"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "sentences": [
+        {
+          "text": "IS IT REALLY OKAY TO BE DOING THIS?",
+          "confidence": 0.951,
+          "text_ar": "هل من الصواب حقاً فعل هذا؟"
+        },
+        {
+          "text": "Pause!",
+          "confidence": 0.97,
+          "text_ar": "توقف!"
+        },
+        {
+          "text": "THIS JUST DOESNT FEEL RIGHT!",
+          "confidence": 0.979,
+          "text_ar": "هذا لا يبدو صائباً!"
+        },
+        {
+          "text": "HERK MARTEL",
+          "confidence": 0.99,
+          "text_ar": "مارتيل"
+        },
+        {
+          "text": "HERK MARTEL 心 2号7 Slide",
+          "confidence": 0.199,
+          "text_ar": "مارتيل، انزلاق"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "sentences": [
+        {
+          "text": "HUH.PIT DOESN'T FEEL AS GOOD NOW.",
+          "confidence": 0.885,
+          "text_ar": "هاه، لا يبدو الشعور جيداً الآن."
+        },
+        {
+          "text": "HEY.",
+          "confidence": 0.941,
+          "text_ar": "مهلاً."
+        },
+        {
+          "text": "ZZZT",
+          "confidence": 0.994,
+          "text_ar": "زيززز"
+        },
+        {
+          "text": "Rub",
+          "confidence": 0.983,
+          "text_ar": "فرك"
+        },
+        {
+          "text": "Zzzt",
+          "confidence": 0.934,
+          "text_ar": "زيززت"
+        },
+        {
+          "text": "ahhh!",
+          "confidence": 0.961,
+          "text_ar": "آه!"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "sentences": [
+        {
+          "text": "THAT MOMENT, I STOPPED THINKING COMPLETELY",
+          "confidence": 0.956,
+          "text_ar": "في تلك اللحظة، توقفت عن التفكير تماماً"
+        },
+        {
+          "text": "ANDI LET MY BODY DO WHATITWANTED!",
+          "confidence": 0.916,
+          "text_ar": "وتركت جسدي يفعل ما يريده!"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "sentences": []
+    },
+    {
+      "page": 44,
+      "sentences": []
+    },
+    {
+      "page": 45,
+      "sentences": [
+        {
+          "text": "pang! ob",
+          "confidence": 0.72,
+          "text_ar": "بانغ!"
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "sentences": []
+    },
+    {
+      "page": 47,
+      "sentences": [
+        {
+          "text": "drop",
+          "confidence": 0.991,
+          "text_ar": "سقوط"
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "sentences": [
+        {
+          "text": "IT FEELS aMAZING!",
+          "confidence": 0.787,
+          "text_ar": "إنه شعور مذهل!"
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "sentences": [
+        {
+          "text": "AH...WHY DOES THIS FEEL SO GOOD?",
+          "confidence": 0.883,
+          "text_ar": "آه... لماذا هذا الشعور جيد جداً؟"
+        },
+        {
+          "text": "push",
+          "confidence": 0.97,
+          "text_ar": "دفع"
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "sentences": [
+        {
+          "text": "HAA!",
+          "confidence": 0.978,
+          "text_ar": "هاه!"
+        },
+        {
+          "text": "GASP..!",
+          "confidence": 0.88,
+          "text_ar": "شهقة..!"
+        },
+        {
+          "text": "Grip .",
+          "confidence": 0.117,
+          "text_ar": "قبضة"
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "sentences": [
+        {
+          "text": "ahh",
+          "confidence": 0.974,
+          "text_ar": "آه"
+        },
+        {
+          "text": "ahh",
+          "confidence": 0.951,
+          "text_ar": "آه"
+        },
+        {
+          "text": "hoa",
+          "confidence": 0.874,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "hoa",
+          "confidence": 0.975,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "squish 鸡",
+          "confidence": 0.049,
+          "text_ar": "ضغط"
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "sentences": [
+        {
+          "text": "型形 squish 型形",
+          "confidence": 0.48,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "砂 squish 型形",
+          "confidence": 0.165,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "SO HE CALLED YOU LAST NIGHT?",
+          "confidence": 0.919,
+          "text_ar": "إذن هل اتصل بكِ الليلة الماضية؟"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "sentences": [
+        {
+          "text": "王本 step",
+          "confidence": 0.304,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "YEAH HE WAS LIKE \"UASLEEP YET~?\"",
+          "confidence": 0.915,
+          "text_ar": "أجل، كان يقول \"هل نمتِ بعد~؟\""
+        },
+        {
+          "text": "王少 step",
+          "confidence": 0.562,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "HE'S SO ANNOYING. HE WANTS TOWATCHA MUSICAL WITH ME.",
+          "confidence": 0.912,
+          "text_ar": "إنه مزعج جداً. يريد مشاهدة مسرحية موسيقية معي."
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "sentences": [
+        {
+          "text": "ba-dum",
+          "confidence": 0.995,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "华2 ba-dum",
+          "confidence": 0.304,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "F2 ba-dum",
+          "confidence": 0.338,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "THERE ARE PEOPLEOUTSIDE. 轩 1",
+          "confidence": 0.065,
+          "text_ar": "هناك أشخاص في الخارج."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "sentences": [
+        {
+          "text": "可 smile",
+          "confidence": 0.717,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "tight T o 吃",
+          "confidence": 0.373,
+          "text_ar": "ضيق"
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "sentences": [
+        {
+          "text": "don't tighten it!!",
+          "confidence": 0.986,
+          "text_ar": "لا تضيقيه!!"
+        },
+        {
+          "text": "END",
+          "confidence": 0.995,
+          "text_ar": "النهاية"
+        },
+        {
+          "text": "If you're enjoying this series then please spare a buck or two for the RAWs, it really helps! Thanks in advance!",
+          "confidence": 0.929,
+          "text_ar": "إذا كنت تستمتع بهذه السلسلة، يرجى التبرع ببعض المال للمصادر، فهذا يساعد حقاً! شكراً مقدماً!"
+        },
+        {
+          "text": "Also,if you like a new series that you want translated…email me at sam@yomanga.net and we'll check it out!",
+          "confidence": 0.919,
+          "text_ar": "أيضاً، إذا كنت ترغب في ترجمة سلسلة جديدة... راسلني على sam@yomanga.net وسنلقي نظرة عليها!"
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "sentences": []
+    },
+    {
+      "page": 58,
+      "sentences": []
+    },
+    {
+      "page": 59,
+      "sentences": []
+    },
+    {
+      "page": 60,
+      "sentences": []
+    }
+  ]
+}
