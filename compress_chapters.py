@@ -468,14 +468,6 @@ def classify_protection_signatures(text: str) -> list[str]:
 # ============================== بروفايلات المواقع ==============================
 SITE_PROFILE = os.environ.get("SITE_PROFILE", "auto").strip().lower()
 
-# [جديد — تجربة ScraperAPI] مفتاح اختياري بالكامل — فارغ يعني تعطيل هذا
-# المسار كليًا (كل البروفايلات الأخرى تعمل تمامًا كما كانت، بلا أي تأثير).
-# الهدف: قياس فعلي لعدد الأرصدة (credits) الحقيقي المُستهلَك لكل فصل ضد
-# مواقع محجوبة من GitHub Actions (starzmanga/mangatek/like-manga.net) قبل
-# قرار الاعتماد عليه أو دفع ثمن خطة مدفوعة — راجع نقاش القرار الكامل.
-SCRAPERAPI_KEY = os.environ.get("SCRAPERAPI_KEY", "").strip()
-SCRAPERAPI_CREDITS_USED = 0  # عداد تراكمي بسيط — يُطبَع بملخص التشغيلة النهائي
-
 # [جديد — بروكسي أرشيف الإنترنت (Wayback Machine)، مجاني بالكامل بلا مفتاح]
 # راجع تبرير الفكرة الكاملة بترويسة _wayback_fetch_html وبروفايل
 # 'use_wayback_proxy' بالأسفل.
@@ -493,75 +485,31 @@ SCRAPERAPI_CREDITS_USED = 0  # عداد تراكمي بسيط — يُطبَع �
 # S3-style key (مجانية بالكامل، حساب archive.org + archive.org/account/
 # s3.php، دقيقتان): POST /save يرجع job_id فوريًا، ثم POST /save/status
 # بنفس job_id يرجع حالة حقيقية (success/pending/error) مع status_ext
-# دقيق يُطبَع بوضوح بالسجل — إما نجاح فعلي، أو سبب فشل قاطع (كـ
-# error:blocked) يُخبرنا فورًا أن هذا المسار مسدود جوهريًا لهذا الموقع
-# تحديدًا، بدل استمرار التخمين الأعمى. بلا المفتاحين (WAYBACK_ACCESS_KEY/
-# WAYBACK_SECRET_KEY) يُرفَض البروفايل فورًا برسالة واضحة — بنفس نمط
-# SCRAPERAPI_KEY تمامًا.
+# دقيق يُطبَع بوضوح بالسجل. بلا المفتاحين يُرفَض البروفايل فورًا برسالة
+# واضحة.
+#
+# [تصحيح حرج ثانٍ — مهلة الانتظار كانت قصيرة جدًا واقعيًا] تشغيلة فعلية
+# لاحقة (run 35709584059) أثبتت أن job_id يُستلَم بنجاح (المصادقة تعمل)،
+# لكن الحالة بقيت 'pending' طوال نافذة الفحص الكاملة (12×5=60ث) بلا نجاح
+# ولا خطأ صريح. بحث فعلي بتوثيق ومنتديات Internet Archive كشف أن هذا
+# سلوك حقيقي معروف بخدمة SPN2 المجانية، لا عطل بكودنا: طابور انتظار
+# SPN2 يتذبذب من ثوانٍ إلى عشرات الدقائق تحت الضغط (رسائل تاريخية موثَّقة
+# فعليًا من طاقم Internet Archive نفسه مثل "capture will start in ~X
+# minutes because our service is currently overloaded"، وأمثلة موثَّقة
+# لطابور 600+ دقيقة). والأهم: منشور رسمي من مدير Wayback Machine بتاريخ
+# 2026-09-15 (قبل أسبوع واحد من هذه التشغيلة) يؤكد أن الخدمة "تتعرض حاليًا
+# لموجات حركة آلية عالية الحجم" وأن Internet Archive وضعت إجراءات حماية
+# قد "تحجب أشخاصًا/عملاء حقيقيين بالخطأ أحيانًا" — أي أن تأخر الطابور
+# الحالي (سبتمبر 2026) أعلى من المعتاد تاريخيًا، وهذا خارج سيطرة كودنا
+# بالكامل. رفعنا المهلة الافتراضية لتعكس هذا الواقع الموثَّق (30×10=5
+# دقائق كاملة، مع طباعة كل محاولة فحص بالسجل لمتابعة التقدّم الفعلي بدل
+# انتظار صامت)، مع الإقرار الصريح أن حتى هذه المهلة غير مضمونة تحت الضغط
+# الحالي — لا يوجد رقم "صحيح" مضمون لخدمة عامة مجانية متذبذبة الحِمل،
+# فقط توازن معقول بين احتمال نجاح أعلى وزمن تشغيلة CI معقول.
 WAYBACK_ACCESS_KEY = os.environ.get("WAYBACK_ACCESS_KEY", "").strip()
 WAYBACK_SECRET_KEY = os.environ.get("WAYBACK_SECRET_KEY", "").strip()
-# عدد محاولات إعادة فحص حالة job_id، والفاصل الزمني بينها بالثوان —
-# قابلان للتعديل عبر متغيرات بيئة بلا تعديل كود. SPN2 نفسها توثّق حد
-# 45ث لمهلة الالتقاط الواحدة (error:soft-time-limit-exceeded)، فـ12×5=60ث
-# هامش أمان معقول فوقها لتغطية طابور الانتظار قبل بدء الالتقاط الفعلي.
-WAYBACK_POLL_ATTEMPTS = int(os.environ.get("WAYBACK_POLL_ATTEMPTS", "12"))
-WAYBACK_POLL_INTERVAL_SEC = float(os.environ.get("WAYBACK_POLL_INTERVAL_SEC", "5"))
-
-
-def _scraperapi_get(target_url: str, render: bool = False, ultra_premium: bool = False, timeout: int = 70):
-    """[جديد — تجربة ScraperAPI] يمرّر الطلب عبر ScraperAPI بدل الاتصال
-    المباشر. render=True لازم فقط لحل تحدي Cloudflare التفاعلي (صفحة
-    القارئ الأساسية) — 10 أرصدة إضافية حسب توثيق ScraperAPI الرسمي (+10
-    أخرى محتملة لو اكتشفت الخدمة تلقائيًا حماية Cloudflare وفعّلت تجاوزها
-    الخاص، بصرف النظر عن render). صور الصفحات نفسها (ملفات ثابتة) تُمرَّر
-    افتراضيًا بلا render (أرخص، رصيد واحد على الأرجح) — هذا بالضبط السؤال
-    المفتوح الذي نختبره: هل تحتاج الصور نفسها تصييرًا منفصلًا أيضًا أم لا؟
-    لا نخمّن التكلفة مسبقًا إطلاقًا — نقرأها فعليًا من ترويسة sa-credit-cost
-    بكل استجابة (موثَّقة رسميًا) ونجمعها بـSCRAPERAPI_CREDITS_USED، لأن هذا
-    بالضبط ما طُلب معرفته: الرقم الحقيقي، لا تقديرًا نظريًا.
-
-    [جديد — إصلاح 500 متكرر] render=true وحدها لم تكفِ فعليًا ضد starzmanga
-    وlike-manga.net (كلاهما فشل بـ500 من خادم ScraperAPI نفسه، 0 أرصدة —
-    الفشل لا يُحاسَب). توثيق ScraperAPI الرسمي (إرشاد خطأ 500 تحديدًا)
-    يوصي صراحة بتصعيد ultra_premium=true (آلية تجاوز حظر معزّزة، لا تُجمَع
-    مع premium) لأهداف Cloudflare الصعبة تحديدًا — هذا بالضبط تصنيف كلا
-    الموقعين (Managed Challenge). التكلفة حتى 75 رصيدًا لو نجحت فقط؛ الفشل
-    مجانًا كسابقه، فلا مخاطرة بتفعيلها."""
-    global SCRAPERAPI_CREDITS_USED
-    params = {"api_key": SCRAPERAPI_KEY, "url": target_url}
-    if render:
-        params["render"] = "true"
-    if ultra_premium:
-        params["ultra_premium"] = "true"
-    resp = _HTTP_SESSION.get("https://api.scraperapi.com/", params=params, timeout=timeout)
-    cost_header = resp.headers.get("sa-credit-cost")
-    if cost_header:
-        try:
-            cost = int(cost_header)
-            SCRAPERAPI_CREDITS_USED += cost
-            print(f"    💳 [ScraperAPI] هذا الطلب كلّف {cost} رصيد (تراكمي هذه التشغيلة: {SCRAPERAPI_CREDITS_USED})")
-        except ValueError:
-            pass
-    return resp
-
-
-def _translate_goog_url(url: str) -> str:
-    """[جديد — بروكسي Google Translate، مجاني بالكامل بلا مفتاح/تسجيل]
-    جوجل تجلب الصفحة على خوادمها وتعيدها لنا، فالموقع الهدف يرى IP جوجل لا
-    رانر GitHub Actions.
-
-    [مُصحَّح] الصيغة الأولى (بناء دومين *.translate.goog مباشرة) رجعت 404
-    من جوجل نفسها فعليًا (على مسار عميق ومسار سطحي كليهما — راجع اختبارين
-    حقيقيين)، رغم صحة بنية الرابط. الصيغة المُثبَتة فعليًا بالمصدر الوحيد
-    الموثَّق (Gemini CLI، حالة استخدام حقيقية 2026-03) لم تكن دومين
-    translate.goog مباشرة، بل "الباب الأمامي": طلب translate.google.com
-    نفسه بمعامل u=، الذي يُعيد توجيه (redirect) لدومين translate.goog
-    لاحقًا. الطلب المباشر البارد للدومين الفرعي بلا مرور بهذا التوجيه
-    الرسمي أولًا يبدو مرفوضًا عمدًا كإجراء مضاد لسوء الاستخدام — الحيلة
-    مُوثَّقة ومُستغَلة على نطاق واسع. _HTTP_SESSION جلسة مستمرة (تحتفظ
-    بالكوكيز عبر إعادة التوجيه تلقائيًا)، وrequests يتبع التوجيه افتراضيًا."""
-    query = urlencode({"sl": "en", "tl": "ar", "u": url})
-    return f"https://translate.google.com/translate?{query}"
+WAYBACK_POLL_ATTEMPTS = int(os.environ.get("WAYBACK_POLL_ATTEMPTS", "30"))
+WAYBACK_POLL_INTERVAL_SEC = float(os.environ.get("WAYBACK_POLL_INTERVAL_SEC", "10"))
 
 
 def _wayback_raw_snapshot_url(snapshot_url: str) -> str:
@@ -645,13 +593,13 @@ def _spn2_job_status(job_id: str) -> dict:
 
 
 def _wayback_fetch_html(chapter_url: str) -> tuple[str | None, str]:
-    """[الحل الفعلي البديل عن ScraperAPI/Google Translate proxy لمواقع
-    محجوبة بـCloudflare من GitHub Actions] الفكرة: بدل محاولة جعل طلبنا
-    نحن "يبدو بشريًا"، نطلب من جهة ثالثة تثق بها Cloudflare أصلًا (زاحف
-    أرشيف الإنترنت الرسمي، عبر واجهة SPN2 الموثَّقة بمصادقة) أن تجلب
-    الصفحة نيابةً عنا وتؤرشفها علنًا، ثم نقرأ نحن النسخة العامة المؤرشَفة
-    لاحقًا — لا علاقة لطلبنا نحن بأي حجب إطلاقًا بهذه المرحلة. صور الفصل
-    نفسها (عادة على CDN فرعي منفصل غير محمي) تبقى تُستخرَج من نفس HTML
+    """[الحل الحالي لمواقع محجوبة بـCloudflare من GitHub Actions، like-
+    manga.net تحديدًا] الفكرة: بدل محاولة جعل طلبنا نحن "يبدو بشريًا"،
+    نطلب من جهة ثالثة تثق بها Cloudflare أصلًا (زاحف أرشيف الإنترنت
+    الرسمي، عبر واجهة SPN2 الموثَّقة بمصادقة) أن تجلب الصفحة نيابةً عنا
+    وتؤرشفها علنًا، ثم نقرأ نحن النسخة العامة المؤرشَفة لاحقًا — لا علاقة
+    لطلبنا نحن بأي حجب إطلاقًا بهذه المرحلة. صور الفصل نفسها (عادة على
+    CDN فرعي منفصل غير محمي) تبقى تُستخرَج من نفس HTML
     وتُحمَّل مباشرة كسابقاتها، بلا أي بروكسي إضافي.
 
     الخطوات: (1) فحص فوري هل توجد نسخة مؤرشَفة أصلًا (أي مصدر، لا شرط
@@ -678,10 +626,12 @@ def _wayback_fetch_html(chapter_url: str) -> tuple[str | None, str]:
             return None, f"[SPN2] {submit_err}"
 
         final_status = None
-        for _ in range(WAYBACK_POLL_ATTEMPTS):
+        for attempt in range(1, WAYBACK_POLL_ATTEMPTS + 1):
             time.sleep(WAYBACK_POLL_INTERVAL_SEC)
             status_data = _spn2_job_status(job_id)
             status = status_data.get("status")
+            elapsed = attempt * WAYBACK_POLL_INTERVAL_SEC
+            print(f"    ⏳ [SPN2] فحص {attempt}/{WAYBACK_POLL_ATTEMPTS} (~{elapsed:.0f}ث): status={status}")
             if status == "success":
                 final_status = status_data
                 break
@@ -689,13 +639,17 @@ def _wayback_fetch_html(chapter_url: str) -> tuple[str | None, str]:
                 status_ext = status_data.get("status_ext", "error:unknown")
                 message = status_data.get("message", "")
                 return None, f"[SPN2] فشلت الأرشفة نهائيًا — {status_ext}: {message}"
-            # status == "pending" أو أي قيمة أخرى → نُتابع الانتظار
+            # status == "pending" أو أي قيمة أخرى → نُتابع الانتظار (طابور
+            # SPN2 قد يمتد لدقائق تحت الضغط — راجع التعليق أعلى الثوابت)
 
         if final_status is None:
             return None, (
                 f"[SPN2] لم تكتمل الأرشفة خلال مهلة الانتظار "
-                f"({WAYBACK_POLL_ATTEMPTS}×{WAYBACK_POLL_INTERVAL_SEC}ث) — الحالة بقيت pending، "
-                "قد تحتاج مهلة أطول (WAYBACK_POLL_ATTEMPTS) أو الموقع بطيء الاستجابة لزاحف SPN2"
+                f"({WAYBACK_POLL_ATTEMPTS}×{WAYBACK_POLL_INTERVAL_SEC:.0f}ث ≈ "
+                f"{WAYBACK_POLL_ATTEMPTS * WAYBACK_POLL_INTERVAL_SEC / 60:.1f} دقيقة) — الحالة بقيت pending. "
+                "هذا سلوك معروف لخدمة SPN2 المجانية تحت الضغط (طابور انتظار متذبذب، "
+                "قد يمتد لعشرات الدقائق أحيانًا) وليس عطلًا بالكود — زد WAYBACK_POLL_ATTEMPTS/"
+                "WAYBACK_POLL_INTERVAL_SEC لو تكرر هذا، أو أعد المحاولة لاحقًا"
             )
 
         timestamp = final_status.get("timestamp")
@@ -757,36 +711,13 @@ PROFILES = {
         "http_content_pattern": r"app\.procomic\.net/chapters/.+?/p\d+/",
     },
     "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
-    # [جديد — تجربة ScraperAPI] بروفايل اختبار مخصَّص لفصل واحد فقط من
-    # like-manga.net (محجوب حاليًا من GitHub Actions عبر Cloudflare Managed
-    # Challenge — راجع نقاش القرار). fetch_mode='http' هنا لا يعني اتصالًا
-    # مباشرًا كباقي بروفايلات http (azorafly/procomic) — use_scraperapi=True
-    # يُحوِّل كل الطلبات (الصفحة + كل صورة) عبر _scraperapi_get بدل ذلك؛
-    # غير مفعّل إطلاقًا (يسقط تلقائيًا لخطأ واضح) لو SCRAPERAPI_KEY فارغًا.
-    "like_manga_test": {
-        "label": "مانجا لايك (تجربة ScraperAPI)",
-        "fetch_mode": "http",
-        "use_scraperapi": True,
-    },
-    # [جديد — بروكسي Google Translate، مجاني بالكامل] بديل تجريبي عن
-    # ScraperAPI بلا مفتاح API ولا رصيد ولا حد شهري — راجع تبرير كامل
-    # بترويسة _translate_goog_url. use_translate_proxy يُطبَّق على جلب
-    # صفحة القارئ فقط (تحتاج تجاوز Cloudflare)؛ صور الفصل تُجلَب مباشرة
-    # بلا بروكسي (على الأرجح مجلد/CDN فرعي مختلف غير محمي أصلًا — لاحظنا
-    # هذا فعليًا بجلب سابق ناجح لنفس الموقع).
-    "like_manga_translate_test": {
-        "label": "مانجا لايك (تجربة Google Translate proxy)",
-        "fetch_mode": "http",
-        "use_translate_proxy": True,
-    },
-    # [جديد — بروكسي أرشيف الإنترنت عبر SPN2 الرسمية الموثَّقة، مجاني
-    # بالكامل لكن يتطلب مفتاحي S3-style (WAYBACK_ACCESS_KEY/
-    # WAYBACK_SECRET_KEY من archive.org/account/s3.php)] بديل ثالث لنفس
-    # هدف like-manga.net المحجوب بـCloudflare من GitHub Actions — راجع
-    # تبرير الفكرة الكاملة بترويسة _wayback_fetch_html. use_wayback_proxy
-    # يُطبَّق على جلب صفحة القارئ فقط (تحتاج تجاوز Cloudflare)؛ صور الفصل
-    # تُستخرَج من نفس HTML المؤرشَف وتُجلَب مباشرة بلا بروكسي (نفس افتراض
-    # like_manga_translate_test: CDN فرعي منفصل غير محمي أصلًا).
+    # [بروكسي أرشيف الإنترنت عبر SPN2 الرسمية الموثَّقة، مجاني بالكامل
+    # لكن يتطلب مفتاحي S3-style (WAYBACK_ACCESS_KEY/WAYBACK_SECRET_KEY من
+    # archive.org/account/s3.php)] بروفايل مخصَّص لـlike-manga.net المحجوب
+    # بـCloudflare من GitHub Actions — راجع تبرير الفكرة الكاملة بترويسة
+    # _wayback_fetch_html. use_wayback_proxy يُطبَّق على جلب صفحة القارئ
+    # فقط (تحتاج تجاوز Cloudflare)؛ صور الفصل تُستخرَج من نفس HTML
+    # المؤرشَف وتُجلَب مباشرة بلا بروكسي (CDN فرعي منفصل غير محمي أصلًا).
     "like_manga_wayback_test": {
         "label": "مانجا لايك (تجربة Wayback Machine proxy)",
         "fetch_mode": "http",
@@ -1042,33 +973,20 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 
 
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
-    use_scraperapi = bool(profile and profile.get("use_scraperapi"))
-    use_translate_proxy = bool(profile and profile.get("use_translate_proxy"))
     use_wayback_proxy = bool(profile and profile.get("use_wayback_proxy"))
-    if use_scraperapi and not SCRAPERAPI_KEY:
-        return [], "البروفايل يتطلب SCRAPERAPI_KEY لكنه غير مضبوط بأسرار المستودع", ""
 
     if use_wayback_proxy:
-        # [جديد] لا مفتاح ولا تسجيل — راجع _wayback_fetch_html. مسار مختلف
-        # كليًا عن باقي الفروع (لا "resp" واحد بمعنى الطلب المباشر، بل
-        # تسلسل فحص/أرشفة/جلب كامل)، فيُعالَج بدالة مستقلة تُرجع HTML أو
-        # رسالة خطأ جاهزة مباشرة.
+        # لا مفتاح ولا تسجيل — راجع _wayback_fetch_html. مسار مختلف كليًا
+        # عن باقي الفروع (لا "resp" واحد بمعنى الطلب المباشر، بل تسلسل
+        # فحص/أرشفة/جلب كامل)، فيُعالَج بدالة مستقلة تُرجع HTML أو رسالة
+        # خطأ جاهزة مباشرة.
         html, wayback_err = _wayback_fetch_html(chapter_url)
         if wayback_err:
             return [], wayback_err, ""
     else:
         try:
-            if use_scraperapi:
-                # render=True لازم هنا (صفحة القارئ الأساسية) لحل تحدي
-                # Cloudflare التفاعلي — راجع تبرير كامل بترويسة _scraperapi_get.
-                resp = _scraperapi_get(chapter_url, render=True)
-            elif use_translate_proxy:
-                # [جديد] لا مفتاح ولا تسجيل — راجع _translate_goog_url.
-                headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
-                resp = _HTTP_SESSION.get(_translate_goog_url(chapter_url), headers=headers, timeout=25)
-            else:
-                headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
-                resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
+            headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+            resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
             resp.raise_for_status()
         except Exception as e:
             return [], f"فشل الطلب المباشر: {e}", ""
@@ -1108,20 +1026,12 @@ def _validate_image_bytes(raw_bytes: bytes) -> tuple[bool, str]:
     return True, ""
 
 
-def fetch_image_bytes_http_sync(img_url: str, referer: str, use_scraperapi: bool = False) -> tuple[bytes | None, str | None]:
+def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | None, str | None]:
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
-            if use_scraperapi:
-                # render=False هنا عمدًا — صور الصفحات ملفات ثابتة، الفرضية
-                # أنها لا تحتاج تصييرًا منفصلًا كصفحة القارئ نفسها (أرخص
-                # بكثير: رصيد واحد محتمل بدل 10+). هذا بالضبط ما نتحقق منه
-                # فعليًا عبر sa-credit-cost المطبوعة لكل طلب — لا افتراض نهائي.
-                resp = _scraperapi_get(img_url, render=False)
-                ctype = resp.headers.get("content-type", "")
-            else:
-                resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
-                ctype = resp.headers.get("content-type", "")
+            resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
+            ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
                     valid, why = _validate_image_bytes(resp.content)
@@ -1139,8 +1049,8 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str, use_scraperapi: bool
     return None, last_reason
 
 
-async def fetch_image_bytes_http(img_url: str, referer: str, use_scraperapi: bool = False):
-    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer, use_scraperapi)
+async def fetch_image_bytes_http(img_url: str, referer: str):
+    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer)
 
 
 # ---------------------------- مسار المتصفح (mangatuk / mangatime / olympustaff / auto) ----------------------------
@@ -2054,11 +1964,10 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
     fetch_mode = profile.get("fetch_mode", "browser")
-    use_scraperapi = bool(profile.get("use_scraperapi"))
 
     async def download(img_url: str):
         if fetch_mode == "http":
-            return await fetch_image_bytes_http(img_url, chapter_url, use_scraperapi)
+            return await fetch_image_bytes_http(img_url, chapter_url)
         return await fetch_image_bytes(context, img_url, chapter_url)
 
     saved_paths = []
@@ -2280,8 +2189,6 @@ async def main():
             print(f"     - {u}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
     print(f"🔗 manifest خاص بهذه التشغيلة فقط: {OUTPUT_DIR}/{RUN_MANIFEST_RELPATH}")
-    if SCRAPERAPI_KEY:
-        print(f"💳 [ScraperAPI] إجمالي الأرصدة المُستهلَكة هذه التشغيلة: {SCRAPERAPI_CREDITS_USED}")
     print("=" * 50)
 
     if failed_urls and len(results) == 0 and len(skipped_urls) == 0:
