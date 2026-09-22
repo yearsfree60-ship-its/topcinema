@@ -476,6 +476,14 @@ SITE_PROFILE = os.environ.get("SITE_PROFILE", "auto").strip().lower()
 SCRAPERAPI_KEY = os.environ.get("SCRAPERAPI_KEY", "").strip()
 SCRAPERAPI_CREDITS_USED = 0  # عداد تراكمي بسيط — يُطبَع بملخص التشغيلة النهائي
 
+# [جديد — بروكسي أرشيف الإنترنت (Wayback Machine)، مجاني بالكامل بلا مفتاح]
+# راجع تبرير الفكرة الكاملة بترويسة _wayback_fetch_html وبروفايل
+# 'use_wayback_proxy' بالأسفل. عدد محاولات إعادة فحص التوفر بعد طلب
+# الأرشفة الفورية، والفاصل الزمني بينها بالثوان — قابلان للتعديل عبر
+# متغيرات بيئة بلا تعديل كود لو أثبتت التجربة الفعلية حاجة مهلة أطول/أقصر.
+WAYBACK_POLL_ATTEMPTS = int(os.environ.get("WAYBACK_POLL_ATTEMPTS", "6"))
+WAYBACK_POLL_INTERVAL_SEC = float(os.environ.get("WAYBACK_POLL_INTERVAL_SEC", "5"))
+
 
 def _scraperapi_get(target_url: str, render: bool = False, ultra_premium: bool = False, timeout: int = 70):
     """[جديد — تجربة ScraperAPI] يمرّر الطلب عبر ScraperAPI بدل الاتصال
@@ -533,6 +541,92 @@ def _translate_goog_url(url: str) -> str:
     return f"https://translate.google.com/translate?{query}"
 
 
+def _wayback_raw_snapshot_url(snapshot_url: str) -> str:
+    """يحوّل رابط نسخة أرشيف الإنترنت العادي (يُعيد كتابة الروابط الداخلية
+    ويُضمّن شريط أدوات أرشيف الإنترنت أعلى الصفحة) إلى صيغته "الخام" غير
+    المُعدَّلة (معدِّل 'id_' الموثَّق رسميًا)، بإدراجه مباشرة بعد جزء
+    الطابع الزمني بمسار الرابط (/web/<timestamp>id_/<original_url>). هذا
+    يضمن أن extract_images_from_html يستخرج روابط الصور الأصلية كما هي
+    بدل نسخة مُعاد كتابتها عبر أرشيف الإنترنت نفسه."""
+    return re.sub(r"(/web/\d+)(/)", r"\1id_\2", snapshot_url, count=1)
+
+
+def _wayback_available_snapshot(url: str) -> str | None:
+    """[جديد — بروكسي أرشيف الإنترنت] فحص فوري بلا مفتاح عبر availability
+    API الرسمي لأرشيف الإنترنت: هل توجد أصلًا نسخة مؤرشَفة لهذا الرابط؟
+    يرجع رابط النسخة (بصيغته الخام غير المُعدَّلة) إن وُجدت، أو None."""
+    try:
+        resp = _HTTP_SESSION.get(
+            "https://archive.org/wayback/available",
+            params={"url": url}, timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        snap = data.get("archived_snapshots", {}).get("closest", {})
+        if snap.get("available") and snap.get("url"):
+            return _wayback_raw_snapshot_url(snap["url"])
+    except Exception:
+        pass
+    return None
+
+
+def _wayback_request_save(url: str) -> None:
+    """[جديد — بروكسي أرشيف الإنترنت] يطلب من أرشيف الإنترنت أرشفة الرابط
+    الآن عبر واجهة "Save Page Now" البسيطة بلا مفتاح (تعمل لمعظم الحالات؛
+    القيد الوحيد: يعتمد على قدرة زاحف أرشيف الإنترنت نفسه على زيارة
+    الصفحة فعليًا — غير مضمون 100% لكل موقع). لا نثق بمحتوى الاستجابة هنا
+    مباشرة (غالبًا صفحة HTML وسيطة لأرشيف الإنترنت لا JSON) — فقط نُحاول
+    تشغيل الأرشفة، ثم نتحقق لاحقًا فعليًا عبر _wayback_available_snapshot
+    بحلقة إعادة محاولة بـ_wayback_fetch_html. الفشل هنا صامت عمدًا (يُترجَم
+    لاحقًا لرسالة خطأ واضحة واحدة لو لم تظهر أي نسخة أبدًا)."""
+    try:
+        _HTTP_SESSION.get(
+            f"https://web.archive.org/save/{url}",
+            headers={"User-Agent": UA}, timeout=45,
+        )
+    except Exception:
+        pass
+
+
+def _wayback_fetch_html(chapter_url: str) -> tuple[str | None, str]:
+    """[جديد — بروكسي أرشيف الإنترنت (Wayback Machine)، الحل الفعلي البديل
+    عن ScraperAPI/Google Translate proxy لمواقع محجوبة بـCloudflare من
+    GitHub Actions] الفكرة: بدل محاولة جعل طلبنا نحن "يبدو بشريًا" (كل
+    محاولات التنكّر السابقة فشلت)، نطلب من جهة ثالثة تثق بها Cloudflare
+    أصلًا (زاحف أرشيف الإنترنت، معروف وموثوق واسعًا) أن تجلب الصفحة
+    نيابةً عنا وتؤرشفها علنًا، ثم نقرأ نحن النسخة العامة المؤرشَفة لاحقًا
+    — لا علاقة لطلبنا نحن بأي حجب إطلاقًا بهذه المرحلة. صور الفصل نفسها
+    (عادة على CDN فرعي منفصل غير محمي) تبقى تُستخرَج من نفس HTML وتُحمَّل
+    مباشرة كسابقاتها، بلا أي بروكسي إضافي.
+
+    الخطوات: (1) فحص فوري هل توجد نسخة مؤرشَفة أصلًا. (2) إن لم توجد: طلب
+    أرشفة فورية، ثم إعادة فحص التوفر بحلقة انتظار قصيرة (الأرشفة الفعلية
+    تأخذ ثوانٍ لا أجزاء ثانية — WAYBACK_POLL_ATTEMPTS × WAYBACK_POLL_
+    INTERVAL_SEC). (3) جلب HTML من رابط النسخة المؤرشَفة الخام فعليًا.
+
+    القيد الصادق الوحيد: يعتمد على أن أرشيف الإنترنت يستطيع زيارة الصفحة
+    فعليًا (غير مضمون 100% لكل موقع)، وبعض الصفحات النادرة الزيارة قد لا
+    تُؤرشَف فورًا خلال مهلة الانتظار هنا."""
+    snapshot_url = _wayback_available_snapshot(chapter_url)
+    if not snapshot_url:
+        _wayback_request_save(chapter_url)
+        for _ in range(WAYBACK_POLL_ATTEMPTS):
+            time.sleep(WAYBACK_POLL_INTERVAL_SEC)
+            snapshot_url = _wayback_available_snapshot(chapter_url)
+            if snapshot_url:
+                break
+    if not snapshot_url:
+        return None, (
+            "تعذّر الحصول على نسخة مؤرشَفة من أرشيف الإنترنت (لا نسخة سابقة "
+            "موجودة، ولا نجحت الأرشفة الفورية خلال مهلة الانتظار — "
+            f"{WAYBACK_POLL_ATTEMPTS}×{WAYBACK_POLL_INTERVAL_SEC}ث)"
+        )
+    try:
+        resp = _HTTP_SESSION.get(snapshot_url, headers={"User-Agent": UA}, timeout=25)
+        resp.raise_for_status()
+    except Exception as e:
+        return None, f"فشل جلب النسخة المؤرشَفة نفسها بعد توفّرها: {e}"
+    return resp.text, ""
 
 
 PROFILES = {
@@ -601,6 +695,18 @@ PROFILES = {
         "label": "مانجا لايك (تجربة Google Translate proxy)",
         "fetch_mode": "http",
         "use_translate_proxy": True,
+    },
+    # [جديد — بروكسي أرشيف الإنترنت، مجاني بالكامل بلا مفتاح ولا تسجيل]
+    # بديل ثالث لنفس هدف like-manga.net المحجوب بـCloudflare من GitHub
+    # Actions — راجع تبرير الفكرة الكاملة بترويسة _wayback_fetch_html.
+    # use_wayback_proxy يُطبَّق على جلب صفحة القارئ فقط (تحتاج تجاوز
+    # Cloudflare)؛ صور الفصل تُستخرَج من نفس HTML المؤرشَف وتُجلَب مباشرة
+    # بلا بروكسي (نفس افتراض like_manga_translate_test: CDN فرعي منفصل
+    # غير محمي أصلًا).
+    "like_manga_wayback_test": {
+        "label": "مانجا لايك (تجربة Wayback Machine proxy)",
+        "fetch_mode": "http",
+        "use_wayback_proxy": True,
     },
 }
 
@@ -854,24 +960,36 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
     use_scraperapi = bool(profile and profile.get("use_scraperapi"))
     use_translate_proxy = bool(profile and profile.get("use_translate_proxy"))
+    use_wayback_proxy = bool(profile and profile.get("use_wayback_proxy"))
     if use_scraperapi and not SCRAPERAPI_KEY:
         return [], "البروفايل يتطلب SCRAPERAPI_KEY لكنه غير مضبوط بأسرار المستودع", ""
-    try:
-        if use_scraperapi:
-            # render=True لازم هنا (صفحة القارئ الأساسية) لحل تحدي
-            # Cloudflare التفاعلي — راجع تبرير كامل بترويسة _scraperapi_get.
-            resp = _scraperapi_get(chapter_url, render=True)
-        elif use_translate_proxy:
-            # [جديد] لا مفتاح ولا تسجيل — راجع _translate_goog_url.
-            headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
-            resp = _HTTP_SESSION.get(_translate_goog_url(chapter_url), headers=headers, timeout=25)
-        else:
-            headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
-            resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
-        resp.raise_for_status()
-    except Exception as e:
-        return [], f"فشل الطلب المباشر: {e}", ""
-    html = resp.text
+
+    if use_wayback_proxy:
+        # [جديد] لا مفتاح ولا تسجيل — راجع _wayback_fetch_html. مسار مختلف
+        # كليًا عن باقي الفروع (لا "resp" واحد بمعنى الطلب المباشر، بل
+        # تسلسل فحص/أرشفة/جلب كامل)، فيُعالَج بدالة مستقلة تُرجع HTML أو
+        # رسالة خطأ جاهزة مباشرة.
+        html, wayback_err = _wayback_fetch_html(chapter_url)
+        if wayback_err:
+            return [], wayback_err, ""
+    else:
+        try:
+            if use_scraperapi:
+                # render=True لازم هنا (صفحة القارئ الأساسية) لحل تحدي
+                # Cloudflare التفاعلي — راجع تبرير كامل بترويسة _scraperapi_get.
+                resp = _scraperapi_get(chapter_url, render=True)
+            elif use_translate_proxy:
+                # [جديد] لا مفتاح ولا تسجيل — راجع _translate_goog_url.
+                headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+                resp = _HTTP_SESSION.get(_translate_goog_url(chapter_url), headers=headers, timeout=25)
+            else:
+                headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+                resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
+            resp.raise_for_status()
+        except Exception as e:
+            return [], f"فشل الطلب المباشر: {e}", ""
+        html = resp.text
+
     if _looks_like_challenge_html(html):
         return [], "صفحة تحقق/حماية ظهرت حتى بطلب مباشر — هذا البروفايل غير مناسب لهذا الرابط تحديدًا", ""
     urls = extract_images_from_html(html, chapter_url)
