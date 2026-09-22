@@ -477,7 +477,7 @@ SCRAPERAPI_KEY = os.environ.get("SCRAPERAPI_KEY", "").strip()
 SCRAPERAPI_CREDITS_USED = 0  # عداد تراكمي بسيط — يُطبَع بملخص التشغيلة النهائي
 
 
-def _scraperapi_get(target_url: str, render: bool = False, timeout: int = 70):
+def _scraperapi_get(target_url: str, render: bool = False, ultra_premium: bool = False, timeout: int = 70):
     """[جديد — تجربة ScraperAPI] يمرّر الطلب عبر ScraperAPI بدل الاتصال
     المباشر. render=True لازم فقط لحل تحدي Cloudflare التفاعلي (صفحة
     القارئ الأساسية) — 10 أرصدة إضافية حسب توثيق ScraperAPI الرسمي (+10
@@ -485,6 +485,12 @@ def _scraperapi_get(target_url: str, render: bool = False, timeout: int = 70):
     الخاص، بصرف النظر عن render). صور الصفحات نفسها (ملفات ثابتة) تُمرَّر
     افتراضيًا بلا render (أرخص، رصيد واحد على الأرجح) — هذا بالضبط السؤال
     المفتوح الذي نختبره: هل تحتاج الصور نفسها تصييرًا منفصلًا أيضًا أم لا؟
+    ultra_premium=True [جديد] يفعّل آلية ScraperAPI المعزّزة لتجاوز الحظر —
+    موصى بها رسميًا لأهداف Cloudflare "الصعبة" (تحدي تفاعلي) حين لا يكفي
+    render=True وحده (خطأ 500 مستمر). تُستخدَم فقط مع صفحة الفصل، ليس
+    الصور، حفاظًا على التكلفة (حتى 75 رصيد مع render، مقابل 10 لـrender
+    وحدها) — والفشل لا يُحاسَب أصلًا حسب الملاحظة الفعلية من لوحة الحساب،
+    فتجربتها بلا خسارة.
     لا نخمّن التكلفة مسبقًا إطلاقًا — نقرأها فعليًا من ترويسة sa-credit-cost
     بكل استجابة (موثَّقة رسميًا) ونجمعها بـSCRAPERAPI_CREDITS_USED، لأن هذا
     بالضبط ما طُلب معرفته: الرقم الحقيقي، لا تقديرًا نظريًا."""
@@ -492,6 +498,8 @@ def _scraperapi_get(target_url: str, render: bool = False, timeout: int = 70):
     params = {"api_key": SCRAPERAPI_KEY, "url": target_url}
     if render:
         params["render"] = "true"
+    if ultra_premium:
+        params["ultra_premium"] = "true"
     resp = _HTTP_SESSION.get("https://api.scraperapi.com/", params=params, timeout=timeout)
     cost_header = resp.headers.get("sa-credit-cost")
     if cost_header:
@@ -815,9 +823,13 @@ def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) ->
         return [], "البروفايل يتطلب SCRAPERAPI_KEY لكنه غير مضبوط بأسرار المستودع", ""
     try:
         if use_scraperapi:
-            # render=True لازم هنا (صفحة القارئ الأساسية) لحل تحدي
-            # Cloudflare التفاعلي — راجع تبرير كامل بترويسة _scraperapi_get.
-            resp = _scraperapi_get(chapter_url, render=True)
+            # render=True + ultra_premium=True هنا (صفحة القارئ الأساسية)
+            # لحل تحدي Cloudflare التفاعلي — render وحدها أرجعت خطأ 500
+            # (تحدي "صعب" حسب توثيق ScraperAPI الرسمي)، وإرشادهم الصريح
+            # لهذه الحالة تحديدًا هو تفعيل ultra_premium. راجع تبرير كامل
+            # بترويسة _scraperapi_get. الصور تبقى بلا render/ultra_premium
+            # كما هي — لا تغيير هناك.
+            resp = _scraperapi_get(chapter_url, render=True, ultra_premium=True)
         else:
             headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
             resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
