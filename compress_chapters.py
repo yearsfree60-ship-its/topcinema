@@ -177,7 +177,7 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
-from urllib.parse import urlparse, urljoin, urlsplit, urlunsplit, urlencode
+from urllib.parse import urlparse, urljoin, urlencode
 
 import requests
 import requests.adapters  # استيراد صريح — كان يعمل سابقًا فقط بأثر جانبي غير موثّق
@@ -516,17 +516,22 @@ def _scraperapi_get(target_url: str, render: bool = False, ultra_premium: bool =
 
 def _translate_goog_url(url: str) -> str:
     """[جديد — بروكسي Google Translate، مجاني بالكامل بلا مفتاح/تسجيل]
-    يحوّل رابطًا عاديًا لمكافئه عبر دومين *.translate.goog — جوجل تجلب
-    الصفحة على خوادمها وتعيدها لنا، فالموقع الهدف يرى IP جوجل لا رانر
-    GitHub Actions. أُثبت حديثًا (PR حقيقي 2026-09-20، وحالة Gemini CLI
-    موثَّقة 2026-03) أنه لا يزال يعمل فعليًا، بل إن Turnstile من Cloudflare
-    نفسه لا يتحقق بشكل صحيح على دومين translate.goog (التحقق مربوط
-    بالدومين الأصلي المسجَّل فقط) — احتمال تجاوز بنيوي لا سمعة IP فقط.
-    القاعدة: كل نقطة "." بالمضيف تصبح "-"، ثم يُلحَق ".translate.goog"."""
-    parsed = urlsplit(url)
-    proxied_host = parsed.netloc.replace(".", "-") + ".translate.goog"
-    query = urlencode({"_x_tr_sl": "en", "_x_tr_tl": "ar", "_x_tr_hl": "ar", "_x_tr_pto": "wapp"})
-    return urlunsplit((parsed.scheme, proxied_host, parsed.path, query, ""))
+    جوجل تجلب الصفحة على خوادمها وتعيدها لنا، فالموقع الهدف يرى IP جوجل لا
+    رانر GitHub Actions.
+
+    [مُصحَّح] الصيغة الأولى (بناء دومين *.translate.goog مباشرة) رجعت 404
+    من جوجل نفسها فعليًا (على مسار عميق ومسار سطحي كليهما — راجع اختبارين
+    حقيقيين)، رغم صحة بنية الرابط. الصيغة المُثبَتة فعليًا بالمصدر الوحيد
+    الموثَّق (Gemini CLI، حالة استخدام حقيقية 2026-03) لم تكن دومين
+    translate.goog مباشرة، بل "الباب الأمامي": طلب translate.google.com
+    نفسه بمعامل u=، الذي يُعيد توجيه (redirect) لدومين translate.goog
+    لاحقًا. الطلب المباشر البارد للدومين الفرعي بلا مرور بهذا التوجيه
+    الرسمي أولًا يبدو مرفوضًا عمدًا كإجراء مضاد لسوء الاستخدام — الحيلة
+    مُوثَّقة ومُستغَلة على نطاق واسع. _HTTP_SESSION جلسة مستمرة (تحتفظ
+    بالكوكيز عبر إعادة التوجيه تلقائيًا)، وrequests يتبع التوجيه افتراضيًا."""
+    query = urlencode({"sl": "en", "tl": "ar", "u": url})
+    return f"https://translate.google.com/translate?{query}"
+
 
 
 
