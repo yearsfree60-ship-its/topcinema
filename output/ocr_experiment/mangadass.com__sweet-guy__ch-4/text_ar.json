@@ -1,0 +1,734 @@
+{
+  "manga_id": "mangadass.com__sweet-guy",
+  "chapter_num": "4",
+  "manga_title": "Sweet Guy",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "vroooom 。",
+          "confidence": 0.401,
+          "text_ar": "فرووووم"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "Holo vibrate スo1",
+          "confidence": 0.316,
+          "text_ar": "اهتزاز"
+        },
+        {
+          "text": "Sweet Guy Chapter 4",
+          "confidence": 0.952,
+          "text_ar": "الفصل الرابع"
+        },
+        {
+          "text": "YoManga.net Translator: Jaewon RAWs: surocks Editor: flatiya",
+          "confidence": 0.946,
+          "text_ar": "ترجمة: Jaewon، تبييض: surocks، تحرير: flatiya"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "If you like this series please spare a buck and donate, it really helps with getting the RAWs.",
+          "confidence": 0.94,
+          "text_ar": "إذا أعجبك هذا العمل، يرجى التبرع ولو بمبلغ بسيط، فهذا يساعدنا كثيرًا في الحصول على النسخ الأصلية."
+        },
+        {
+          "text": "shake 期",
+          "confidence": 0.053,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.999,
+          "text_ar": "ارتجاف"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "ba-dum 平社 平",
+          "confidence": 0.364,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "王 ba-dum",
+          "confidence": 0.079,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "平 ba-dum",
+          "confidence": 0.65,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "平 ba-dum",
+          "confidence": 0.904,
+          "text_ar": "خفقان"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "老 gulp",
+          "confidence": 0.199,
+          "text_ar": "بلع ريق"
+        },
+        {
+          "text": "sneak",
+          "confidence": 0.997,
+          "text_ar": "تسلل"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "TRYING TO DO?!",
+          "confidence": 0.952,
+          "text_ar": "ما الذي تحاول فعله؟!"
+        },
+        {
+          "text": "WHAT IS SHE.",
+          "confidence": 0.979,
+          "text_ar": "ما خطبها؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "OeP 享 SE",
+          "confidence": 0.188,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "FIVE MINUTES AGO",
+          "confidence": 0.978,
+          "text_ar": "قبل خمس دقائق"
+        },
+        {
+          "text": "THE DOORIS NOWOPENING. IREPEAT,THE DOOR... H00 slide",
+          "confidence": 0.361,
+          "text_ar": "الباب يفتح الآن. أكرر، الباب... انزلاق"
+        },
+        {
+          "text": "crowd",
+          "confidence": 0.982,
+          "text_ar": "تدافع"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "Doorstes",
+          "confidence": 0.729,
+          "text_ar": "عند الباب"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "shake H 7 W 1234G",
+          "confidence": 0.23,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake T ＃",
+          "confidence": 0.046,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "% step",
+          "confidence": 0.731,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "SHETOTALLY JUST STOODBEHIND MEONPURPOSE! ALSO...",
+          "confidence": 0.949,
+          "text_ar": "لقد وقفت خلفي عمدًا! وأيضًا..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "slide",
+          "confidence": 0.996,
+          "text_ar": "انزلاق"
+        },
+        {
+          "text": "9r crowdy EA",
+          "confidence": 0.286,
+          "text_ar": "تدافع"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "导 push",
+          "confidence": 0.127,
+          "text_ar": "دفع"
+        },
+        {
+          "text": "平号 Push Squish",
+          "confidence": 0.832,
+          "text_ar": "دفع وضغط"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "MARTEL SPIDER",
+          "confidence": 0.983,
+          "text_ar": "مارتيل العنكبوت"
+        },
+        {
+          "text": "ZZz++",
+          "confidence": 0.529,
+          "text_ar": "طنين"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "shaaaa",
+          "confidence": 0.972,
+          "text_ar": "فحيح"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "shake WM / '",
+          "confidence": 0.193,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.997,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "平E ba-dum 平",
+          "confidence": 0.515,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "ba-dum 平",
+          "confidence": 0.514,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "ba-dum",
+          "confidence": 0.99,
+          "text_ar": "خفقان"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "shiv",
+          "confidence": 0.99,
+          "text_ar": "ارتعاش"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "平 RBOY",
+          "confidence": 0.468,
+          "text_ar": "يا فتى"
+        },
+        {
+          "text": "ba-dum 辛",
+          "confidence": 0.468,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "ba-dum",
+          "confidence": 0.99,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "rub",
+          "confidence": 0.996,
+          "text_ar": "فرك"
+        },
+        {
+          "text": "AMI GETTING RAPED RIGHT NOW?!",
+          "confidence": 0.944,
+          "text_ar": "هل أتعرض للاعتداء الآن؟!"
+        },
+        {
+          "text": "Shiver 型",
+          "confidence": 0.524,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "ARTEL",
+          "confidence": 0.986,
+          "text_ar": "مارتيل"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "HoN",
+          "confidence": 0.501,
+          "text_ar": "همهمة"
+        },
+        {
+          "text": "T 喜 W Touch C Touch",
+          "confidence": 0.234,
+          "text_ar": "لمس"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "EVEN THOUGH I WAS LOOKING STRAIGHT FORWARD,",
+          "confidence": 0.944,
+          "text_ar": "على الرغم من أنني كنت أنظر للأمام مباشرة،"
+        },
+        {
+          "text": "ALL OF MY SENSES WERE CONCENTRATED TOWARDS WHAT WAS HAPPENING BEHIND ME!",
+          "confidence": 0.937,
+          "text_ar": "إلا أن كل حواسي كانت مركزة على ما يحدث خلفي!"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "AND MY DOWN THERE WAS JUST... 天 Stand",
+          "confidence": 0.441,
+          "text_ar": "وأسفل هناك كنت فقط... انتصاب"
+        },
+        {
+          "text": "Slide",
+          "confidence": 0.963,
+          "text_ar": "انزلاق"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "shiver 重 T",
+          "confidence": 0.077,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "pause",
+          "confidence": 0.992,
+          "text_ar": "توقف"
+        },
+        {
+          "text": "IT'S NOT LIKE I HAVE A GIRLFRIENDORANYTHING, BUT...ICAN'T....",
+          "confidence": 0.794,
+          "text_ar": "ليس الأمر وكأنني أملك حبيبة أو شيء من هذا القبيل، ولكن... لا أستطيع...."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "I CAN'T ALLOW THIS ANYMORE!",
+          "confidence": 0.956,
+          "text_ar": "لا يمكنني السماح بهذا أكثر!"
+        },
+        {
+          "text": "EXCUSE ME!",
+          "confidence": 0.949,
+          "text_ar": "عذرًا!"
+        },
+        {
+          "text": "BOY",
+          "confidence": 0.982,
+          "text_ar": "يا فتى"
+        },
+        {
+          "text": "Turn",
+          "confidence": 0.989,
+          "text_ar": "التفات"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "shake",
+          "confidence": 0.997,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "MARTEL SPIDER BOY",
+          "confidence": 0.955,
+          "text_ar": "مارتيل فتى العنكبوت"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.996,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "shake",
+          "confidence": 0.998,
+          "text_ar": "ارتجاف"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "slide",
+          "confidence": 0.993,
+          "text_ar": "انزلاق"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "ba-dum 平七",
+          "confidence": 0.401,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "ba-dum",
+          "confidence": 0.992,
+          "text_ar": "خفقان"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "push",
+          "confidence": 0.994,
+          "text_ar": "دفع"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "WHAT?",
+          "confidence": 0.981,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "STOA",
+          "confidence": 0.842,
+          "text_ar": "توقف"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "SO WHY SHOULD I CARE?",
+          "confidence": 0.935,
+          "text_ar": "إذًا لمَ عليّ الاهتمام؟"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "IT'S NONE OF MY BUSINESS THAT HE'S BACK INKOREA NOW!!",
+          "confidence": 0.918,
+          "text_ar": "لا شأن لي بكونه عاد إلى كوريا الآن!!"
+        },
+        {
+          "text": "Scream",
+          "confidence": 0.962,
+          "text_ar": "صرخة"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "平 ba-dum 平",
+          "confidence": 0.689,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "ba-dum 平化",
+          "confidence": 0.491,
+          "text_ar": "خفقان"
+        },
+        {
+          "text": "WHAT WAS WITH THAT WoMAN..?",
+          "confidence": 0.837,
+          "text_ar": "ما خطب تلك المرأة..؟"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "THE DOOR IS NOW OPENING...",
+          "confidence": 0.915,
+          "text_ar": "الباب يفتح الآن..."
+        },
+        {
+          "text": "下 I REPEAT...",
+          "confidence": 0.385,
+          "text_ar": "أكرر..."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": []
+    },
+    {
+      "page": 33,
+      "sentences": [
+        {
+          "text": "SPIDE",
+          "confidence": 0.988,
+          "text_ar": "عنكبوت"
+        },
+        {
+          "text": "JUST WHY.?",
+          "confidence": 0.753,
+          "text_ar": "لماذا فقط؟"
+        },
+        {
+          "text": "王片 王",
+          "confidence": 0.287,
+          "text_ar": "خطوات"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "sentences": [
+        {
+          "text": "王 step",
+          "confidence": 0.32,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "王 step",
+          "confidence": 0.186,
+          "text_ar": "خطوة"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "sentences": []
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "UH...HOW ARE YOU DOING?",
+          "confidence": 0.873,
+          "text_ar": "أوه... كيف حالك؟"
+        },
+        {
+          "text": "Bang",
+          "confidence": 0.984,
+          "text_ar": "طرق"
+        },
+        {
+          "text": "SPIDERB",
+          "confidence": 0.881,
+          "text_ar": "عنكبوت"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": [
+        {
+          "text": "DID SOMETHING HAPPEN TO HER?",
+          "confidence": 0.961,
+          "text_ar": "هل حدث لها شيء؟"
+        },
+        {
+          "text": "TO BE HONEST, I DIDN'T REALLY CARE ABOUT IT AT THAT MOMENT.",
+          "confidence": 0.913,
+          "text_ar": "لأكون صادقًا، لم أهتم حقًا بذلك في تلك اللحظة."
+        },
+        {
+          "text": "BECAUSE THE ONLY THING I COULD THINK ABOUT WAS WHAT HAD HAPPENED INTHE TRAIN!",
+          "confidence": 0.92,
+          "text_ar": "لأن الشيء الوحيد الذي استطعت التفكير فيه هو ما حدث في القطار!"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "SPIDER BARTEL",
+          "confidence": 0.854,
+          "text_ar": "مارتيل العنكبوت"
+        },
+        {
+          "text": "Scratch",
+          "confidence": 0.979,
+          "text_ar": "خدش"
+        },
+        {
+          "text": "Scratch",
+          "confidence": 0.95,
+          "text_ar": "خدش"
+        },
+        {
+          "text": "I CAN'T STOP THINKING ABOUTIT...",
+          "confidence": 0.916,
+          "text_ar": "لا أستطيع التوقف عن التفكير في الأمر..."
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": []
+    },
+    {
+      "page": 40,
+      "sentences": []
+    },
+    {
+      "page": 41,
+      "sentences": [
+        {
+          "text": "老 lie",
+          "confidence": 0.169,
+          "text_ar": "استلقاء"
+        },
+        {
+          "text": "M down",
+          "confidence": 0.324,
+          "text_ar": "للأسفل"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "sentences": [
+        {
+          "text": "slide",
+          "confidence": 0.997,
+          "text_ar": "انزلاق"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "sentences": [
+        {
+          "text": "ZZzt",
+          "confidence": 0.693,
+          "text_ar": "طنين"
+        },
+        {
+          "text": "斗 grip 叶",
+          "confidence": 0.245,
+          "text_ar": "قبضة"
+        },
+        {
+          "text": "THAT FEELING..",
+          "confidence": 0.856,
+          "text_ar": "ذلك الشعور.."
+        },
+        {
+          "text": "squeeze",
+          "confidence": 0.99,
+          "text_ar": "عصر"
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "sentences": [
+        {
+          "text": "I WANT MORE!",
+          "confidence": 0.978,
+          "text_ar": "أريد المزيد!"
+        },
+        {
+          "text": "END",
+          "confidence": 0.988,
+          "text_ar": "النهاية"
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "sentences": []
+    },
+    {
+      "page": 46,
+      "sentences": []
+    },
+    {
+      "page": 47,
+      "sentences": []
+    },
+    {
+      "page": 48,
+      "sentences": []
+    }
+  ]
+}
