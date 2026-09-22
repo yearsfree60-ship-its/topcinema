@@ -468,6 +468,42 @@ def classify_protection_signatures(text: str) -> list[str]:
 # ============================== بروفايلات المواقع ==============================
 SITE_PROFILE = os.environ.get("SITE_PROFILE", "auto").strip().lower()
 
+# [جديد — تجربة ScraperAPI] مفتاح اختياري بالكامل — فارغ يعني تعطيل هذا
+# المسار كليًا (كل البروفايلات الأخرى تعمل تمامًا كما كانت، بلا أي تأثير).
+# الهدف: قياس فعلي لعدد الأرصدة (credits) الحقيقي المُستهلَك لكل فصل ضد
+# مواقع محجوبة من GitHub Actions (starzmanga/mangatek/like-manga.net) قبل
+# قرار الاعتماد عليه أو دفع ثمن خطة مدفوعة — راجع نقاش القرار الكامل.
+SCRAPERAPI_KEY = os.environ.get("SCRAPERAPI_KEY", "").strip()
+SCRAPERAPI_CREDITS_USED = 0  # عداد تراكمي بسيط — يُطبَع بملخص التشغيلة النهائي
+
+
+def _scraperapi_get(target_url: str, render: bool = False, timeout: int = 70):
+    """[جديد — تجربة ScraperAPI] يمرّر الطلب عبر ScraperAPI بدل الاتصال
+    المباشر. render=True لازم فقط لحل تحدي Cloudflare التفاعلي (صفحة
+    القارئ الأساسية) — 10 أرصدة إضافية حسب توثيق ScraperAPI الرسمي (+10
+    أخرى محتملة لو اكتشفت الخدمة تلقائيًا حماية Cloudflare وفعّلت تجاوزها
+    الخاص، بصرف النظر عن render). صور الصفحات نفسها (ملفات ثابتة) تُمرَّر
+    افتراضيًا بلا render (أرخص، رصيد واحد على الأرجح) — هذا بالضبط السؤال
+    المفتوح الذي نختبره: هل تحتاج الصور نفسها تصييرًا منفصلًا أيضًا أم لا؟
+    لا نخمّن التكلفة مسبقًا إطلاقًا — نقرأها فعليًا من ترويسة sa-credit-cost
+    بكل استجابة (موثَّقة رسميًا) ونجمعها بـSCRAPERAPI_CREDITS_USED، لأن هذا
+    بالضبط ما طُلب معرفته: الرقم الحقيقي، لا تقديرًا نظريًا."""
+    global SCRAPERAPI_CREDITS_USED
+    params = {"api_key": SCRAPERAPI_KEY, "url": target_url}
+    if render:
+        params["render"] = "true"
+    resp = _HTTP_SESSION.get("https://api.scraperapi.com/", params=params, timeout=timeout)
+    cost_header = resp.headers.get("sa-credit-cost")
+    if cost_header:
+        try:
+            cost = int(cost_header)
+            SCRAPERAPI_CREDITS_USED += cost
+            print(f"    💳 [ScraperAPI] هذا الطلب كلّف {cost} رصيد (تراكمي هذه التشغيلة: {SCRAPERAPI_CREDITS_USED})")
+        except ValueError:
+            pass
+    return resp
+
+
 PROFILES = {
     "azorafly": {"label": "أزورافلاي", "fetch_mode": "http"},
     # [تصحيح حرج] كان do_scroll=False يفوّت غالبية صفحات كل فصل بصمت —
@@ -513,6 +549,17 @@ PROFILES = {
         "http_content_pattern": r"app\.procomic\.net/chapters/.+?/p\d+/",
     },
     "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
+    # [جديد — تجربة ScraperAPI] بروفايل اختبار مخصَّص لفصل واحد فقط من
+    # like-manga.net (محجوب حاليًا من GitHub Actions عبر Cloudflare Managed
+    # Challenge — راجع نقاش القرار). fetch_mode='http' هنا لا يعني اتصالًا
+    # مباشرًا كباقي بروفايلات http (azorafly/procomic) — use_scraperapi=True
+    # يُحوِّل كل الطلبات (الصفحة + كل صورة) عبر _scraperapi_get بدل ذلك؛
+    # غير مفعّل إطلاقًا (يسقط تلقائيًا لخطأ واضح) لو SCRAPERAPI_KEY فارغًا.
+    "like_manga_test": {
+        "label": "مانجا لايك (تجربة ScraperAPI)",
+        "fetch_mode": "http",
+        "use_scraperapi": True,
+    },
 }
 
 
@@ -763,9 +810,17 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 
 
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
-    headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+    use_scraperapi = bool(profile and profile.get("use_scraperapi"))
+    if use_scraperapi and not SCRAPERAPI_KEY:
+        return [], "البروفايل يتطلب SCRAPERAPI_KEY لكنه غير مضبوط بأسرار المستودع", ""
     try:
-        resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
+        if use_scraperapi:
+            # render=True لازم هنا (صفحة القارئ الأساسية) لحل تحدي
+            # Cloudflare التفاعلي — راجع تبرير كامل بترويسة _scraperapi_get.
+            resp = _scraperapi_get(chapter_url, render=True)
+        else:
+            headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+            resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
         resp.raise_for_status()
     except Exception as e:
         return [], f"فشل الطلب المباشر: {e}", ""
@@ -804,12 +859,20 @@ def _validate_image_bytes(raw_bytes: bytes) -> tuple[bool, str]:
     return True, ""
 
 
-def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | None, str | None]:
+def fetch_image_bytes_http_sync(img_url: str, referer: str, use_scraperapi: bool = False) -> tuple[bytes | None, str | None]:
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
-            resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
-            ctype = resp.headers.get("content-type", "")
+            if use_scraperapi:
+                # render=False هنا عمدًا — صور الصفحات ملفات ثابتة، الفرضية
+                # أنها لا تحتاج تصييرًا منفصلًا كصفحة القارئ نفسها (أرخص
+                # بكثير: رصيد واحد محتمل بدل 10+). هذا بالضبط ما نتحقق منه
+                # فعليًا عبر sa-credit-cost المطبوعة لكل طلب — لا افتراض نهائي.
+                resp = _scraperapi_get(img_url, render=False)
+                ctype = resp.headers.get("content-type", "")
+            else:
+                resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
+                ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
                     valid, why = _validate_image_bytes(resp.content)
@@ -827,8 +890,8 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
     return None, last_reason
 
 
-async def fetch_image_bytes_http(img_url: str, referer: str):
-    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer)
+async def fetch_image_bytes_http(img_url: str, referer: str, use_scraperapi: bool = False):
+    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer, use_scraperapi)
 
 
 # ---------------------------- مسار المتصفح (mangatuk / mangatime / olympustaff / auto) ----------------------------
@@ -1731,10 +1794,11 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
     fetch_mode = profile.get("fetch_mode", "browser")
+    use_scraperapi = bool(profile.get("use_scraperapi"))
 
     async def download(img_url: str):
         if fetch_mode == "http":
-            return await fetch_image_bytes_http(img_url, chapter_url)
+            return await fetch_image_bytes_http(img_url, chapter_url, use_scraperapi)
         return await fetch_image_bytes(context, img_url, chapter_url)
 
     saved_paths = []
@@ -1956,6 +2020,8 @@ async def main():
             print(f"     - {u}")
     print(f"manifest.json جاهز في {OUTPUT_DIR}/manifest.json")
     print(f"🔗 manifest خاص بهذه التشغيلة فقط: {OUTPUT_DIR}/{RUN_MANIFEST_RELPATH}")
+    if SCRAPERAPI_KEY:
+        print(f"💳 [ScraperAPI] إجمالي الأرصدة المُستهلَكة هذه التشغيلة: {SCRAPERAPI_CREDITS_USED}")
     print("=" * 50)
 
     if failed_urls and len(results) == 0 and len(skipped_urls) == 0:
