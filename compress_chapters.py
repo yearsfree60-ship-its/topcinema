@@ -177,7 +177,7 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, urlsplit, urlunsplit, urlencode
 
 import requests
 import requests.adapters  # استيراد صريح — كان يعمل سابقًا فقط بأثر جانبي غير موثّق
@@ -485,15 +485,17 @@ def _scraperapi_get(target_url: str, render: bool = False, ultra_premium: bool =
     الخاص، بصرف النظر عن render). صور الصفحات نفسها (ملفات ثابتة) تُمرَّر
     افتراضيًا بلا render (أرخص، رصيد واحد على الأرجح) — هذا بالضبط السؤال
     المفتوح الذي نختبره: هل تحتاج الصور نفسها تصييرًا منفصلًا أيضًا أم لا؟
-    ultra_premium=True [جديد] يفعّل آلية ScraperAPI المعزّزة لتجاوز الحظر —
-    موصى بها رسميًا لأهداف Cloudflare "الصعبة" (تحدي تفاعلي) حين لا يكفي
-    render=True وحده (خطأ 500 مستمر). تُستخدَم فقط مع صفحة الفصل، ليس
-    الصور، حفاظًا على التكلفة (حتى 75 رصيد مع render، مقابل 10 لـrender
-    وحدها) — والفشل لا يُحاسَب أصلًا حسب الملاحظة الفعلية من لوحة الحساب،
-    فتجربتها بلا خسارة.
     لا نخمّن التكلفة مسبقًا إطلاقًا — نقرأها فعليًا من ترويسة sa-credit-cost
     بكل استجابة (موثَّقة رسميًا) ونجمعها بـSCRAPERAPI_CREDITS_USED، لأن هذا
-    بالضبط ما طُلب معرفته: الرقم الحقيقي، لا تقديرًا نظريًا."""
+    بالضبط ما طُلب معرفته: الرقم الحقيقي، لا تقديرًا نظريًا.
+
+    [جديد — إصلاح 500 متكرر] render=true وحدها لم تكفِ فعليًا ضد starzmanga
+    وlike-manga.net (كلاهما فشل بـ500 من خادم ScraperAPI نفسه، 0 أرصدة —
+    الفشل لا يُحاسَب). توثيق ScraperAPI الرسمي (إرشاد خطأ 500 تحديدًا)
+    يوصي صراحة بتصعيد ultra_premium=true (آلية تجاوز حظر معزّزة، لا تُجمَع
+    مع premium) لأهداف Cloudflare الصعبة تحديدًا — هذا بالضبط تصنيف كلا
+    الموقعين (Managed Challenge). التكلفة حتى 75 رصيدًا لو نجحت فقط؛ الفشل
+    مجانًا كسابقه، فلا مخاطرة بتفعيلها."""
     global SCRAPERAPI_CREDITS_USED
     params = {"api_key": SCRAPERAPI_KEY, "url": target_url}
     if render:
@@ -510,6 +512,22 @@ def _scraperapi_get(target_url: str, render: bool = False, ultra_premium: bool =
         except ValueError:
             pass
     return resp
+
+
+def _translate_goog_url(url: str) -> str:
+    """[جديد — بروكسي Google Translate، مجاني بالكامل بلا مفتاح/تسجيل]
+    يحوّل رابطًا عاديًا لمكافئه عبر دومين *.translate.goog — جوجل تجلب
+    الصفحة على خوادمها وتعيدها لنا، فالموقع الهدف يرى IP جوجل لا رانر
+    GitHub Actions. أُثبت حديثًا (PR حقيقي 2026-09-20، وحالة Gemini CLI
+    موثَّقة 2026-03) أنه لا يزال يعمل فعليًا، بل إن Turnstile من Cloudflare
+    نفسه لا يتحقق بشكل صحيح على دومين translate.goog (التحقق مربوط
+    بالدومين الأصلي المسجَّل فقط) — احتمال تجاوز بنيوي لا سمعة IP فقط.
+    القاعدة: كل نقطة "." بالمضيف تصبح "-"، ثم يُلحَق ".translate.goog"."""
+    parsed = urlsplit(url)
+    proxied_host = parsed.netloc.replace(".", "-") + ".translate.goog"
+    query = urlencode({"_x_tr_sl": "en", "_x_tr_tl": "ar", "_x_tr_hl": "ar", "_x_tr_pto": "wapp"})
+    return urlunsplit((parsed.scheme, proxied_host, parsed.path, query, ""))
+
 
 
 PROFILES = {
@@ -567,6 +585,17 @@ PROFILES = {
         "label": "مانجا لايك (تجربة ScraperAPI)",
         "fetch_mode": "http",
         "use_scraperapi": True,
+    },
+    # [جديد — بروكسي Google Translate، مجاني بالكامل] بديل تجريبي عن
+    # ScraperAPI بلا مفتاح API ولا رصيد ولا حد شهري — راجع تبرير كامل
+    # بترويسة _translate_goog_url. use_translate_proxy يُطبَّق على جلب
+    # صفحة القارئ فقط (تحتاج تجاوز Cloudflare)؛ صور الفصل تُجلَب مباشرة
+    # بلا بروكسي (على الأرجح مجلد/CDN فرعي مختلف غير محمي أصلًا — لاحظنا
+    # هذا فعليًا بجلب سابق ناجح لنفس الموقع).
+    "like_manga_translate_test": {
+        "label": "مانجا لايك (تجربة Google Translate proxy)",
+        "fetch_mode": "http",
+        "use_translate_proxy": True,
     },
 }
 
@@ -819,17 +848,18 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
     use_scraperapi = bool(profile and profile.get("use_scraperapi"))
+    use_translate_proxy = bool(profile and profile.get("use_translate_proxy"))
     if use_scraperapi and not SCRAPERAPI_KEY:
         return [], "البروفايل يتطلب SCRAPERAPI_KEY لكنه غير مضبوط بأسرار المستودع", ""
     try:
         if use_scraperapi:
-            # render=True + ultra_premium=True هنا (صفحة القارئ الأساسية)
-            # لحل تحدي Cloudflare التفاعلي — render وحدها أرجعت خطأ 500
-            # (تحدي "صعب" حسب توثيق ScraperAPI الرسمي)، وإرشادهم الصريح
-            # لهذه الحالة تحديدًا هو تفعيل ultra_premium. راجع تبرير كامل
-            # بترويسة _scraperapi_get. الصور تبقى بلا render/ultra_premium
-            # كما هي — لا تغيير هناك.
-            resp = _scraperapi_get(chapter_url, render=True, ultra_premium=True)
+            # render=True لازم هنا (صفحة القارئ الأساسية) لحل تحدي
+            # Cloudflare التفاعلي — راجع تبرير كامل بترويسة _scraperapi_get.
+            resp = _scraperapi_get(chapter_url, render=True)
+        elif use_translate_proxy:
+            # [جديد] لا مفتاح ولا تسجيل — راجع _translate_goog_url.
+            headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
+            resp = _HTTP_SESSION.get(_translate_goog_url(chapter_url), headers=headers, timeout=25)
         else:
             headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}
             resp = _HTTP_SESSION.get(chapter_url, headers=headers, timeout=20)
