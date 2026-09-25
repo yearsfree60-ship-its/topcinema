@@ -28,6 +28,28 @@ DELETE_PAYLOAD (متغيّر بيئة، JSON):
     (الأولى وأي إعادة محاولة بعد فشل push) على نسخة manifest.json الأحدث من
     origin وقتها تحديدًا — لا على نسخة قديمة مخزَّنة محليًا — كي لا يُدفَع فوق
     إضافات تشغيلة أخرى متزامنة أُضيفت بمانهوات/فصول مختلفة تمامًا.
+
+  scrub-run-manifests <OUTPUT_DIR>
+    [إضافة — يشمل الحذف الآن سجلات التشغيلات (output/runs/run-<id>.json)
+    وأي أثر مشابه لها متعلق بالفصول/المانهوات المحذوفة، لا manifest.json
+    الرئيسي فقط] compress_chapters.py يكتب لكل تشغيلة ضغط ناجحة ملف سجلّ
+    مستقل بنفس بنية manifest.json تمامًا (راجع build_run_manifest/
+    merge_manifest_dict هناك: {"manga": {manga_id: {..., "chapters": [...]}}}
+    — لا فرق بنيويًا عن manifest.json إطلاقًا). فمن الممكن أن يحوي هذا
+    السجلّ (بمعزل عن manifest.json الرئيسي) فصولًا/مانهوات تحديدًا بعد
+    حذفها من manifest.json الرئيسي — أثر متبقٍّ يجب تنظيفه بنفس منطق
+    الحذف. يُطبَّق نفس _apply_delete_to_manifest على كل ملف runs/run-*.json
+    فعليًا على القرص (OUTPUT_DIR الممرَّر — مطابق دائمًا لأحدث نسخة
+    origin وقت الاستدعاء، لأنه يُستدعى من apply_and_stage بعد
+    git reset/fetch طازج بكل محاولة دفع، تمامًا كمعالجة manifest.json
+    الرئيسي، لا مرة واحدة فقط): لو أصبح الملف فارغًا كليًا (لا مانهوات
+    متبقية به) يُحذَف من القرص فعليًا ويُطبَع بسطر "DELETE <مسار نسبي>"؛
+    لو تبقّى به محتوى جزئي (تشغيلة عالجت عدة فصول، بعضها فقط محذوف الآن)
+    يُعاد كتابته بالقرص بمحتواه المُصفَّى ويُطبَع بسطر "KEEP <مسار نسبي>"
+    (يحتاج git add لاحقًا لا git rm). لا شيء يُطبَع لملف غير متأثر إطلاقًا
+    (لا حاجة لمس git به). المسارات المطبوعة نسبية لـOUTPUT_DIR (بادئة
+    "runs/") لتُستخدَم مباشرة بـ"$git_rel_output/$path" بالـworkflow، بنفس
+    نمط targets.txt تمامًا.
 """
 import json
 import os
@@ -48,6 +70,36 @@ def _load_payload() -> dict:
     payload.setdefault("full_manga", [])
     payload.setdefault("chapters", [])
     return payload
+
+
+def _apply_delete_to_manifest(manifest: dict, payload: dict) -> dict:
+    """[استُخرجت من apply-manifest لإعادة استخدامها أيضًا بـscrub-run-
+    manifests — نفس المنطق تمامًا، بنية manifest.json وruns/run-*.json
+    متطابقة] يحذف من manifest (قاموس بصيغة {"manga": {...}}) كل ما يطابق
+    DELETE_PAYLOAD: مانهوات كاملة بالكامل، أو فصولًا محدَّدة (وإسقاط
+    المانهوا كليًا لو أصبحت بلا فصول متبقية). لا يُعدِّل manifest المُمرَّر
+    بمكانه — يُرجع قاموسًا جديدًا."""
+    full_manga_set = set(payload["full_manga"])
+    manga = dict(manifest.get("manga", {}))
+
+    for manga_id in full_manga_set:
+        manga.pop(manga_id, None)
+
+    for item in payload["chapters"]:
+        manga_id, num = item["manga_id"], str(item["num"])
+        if manga_id in full_manga_set:
+            continue
+        entry = manga.get(manga_id)
+        if not entry:
+            continue
+        entry = dict(entry)
+        entry["chapters"] = [c for c in entry.get("chapters", []) if str(c.get("num")) != num]
+        if not entry["chapters"]:
+            manga.pop(manga_id, None)
+        else:
+            manga[manga_id] = entry
+
+    return {**manifest, "manga": manga}
 
 
 def cmd_compute_targets() -> None:
@@ -93,35 +145,51 @@ def cmd_compute_targets() -> None:
 
 def cmd_apply_manifest(in_path: str, out_path: str) -> None:
     payload = _load_payload()
-    full_manga_set = set(payload["full_manga"])
-
     src = Path(in_path)
     manifest = json.loads(src.read_text(encoding="utf-8")) if src.is_file() else {}
-    manga = manifest.get("manga", {})
-
-    for manga_id in full_manga_set:
-        manga.pop(manga_id, None)
-
-    for item in payload["chapters"]:
-        manga_id, num = item["manga_id"], str(item["num"])
-        if manga_id in full_manga_set:
-            continue
-        entry = manga.get(manga_id)
-        if not entry:
-            continue
-        entry["chapters"] = [c for c in entry.get("chapters", []) if str(c.get("num")) != num]
-        if not entry["chapters"]:
-            manga.pop(manga_id, None)
-
-    manifest["manga"] = manga
+    manifest = _apply_delete_to_manifest(manifest, payload)
     Path(out_path).write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
 
+def cmd_scrub_run_manifests(output_dir_arg: str) -> None:
+    payload = _load_payload()
+    output_dir = Path(output_dir_arg)
+    runs_dir = output_dir / "runs"
+    if not runs_dir.is_dir():
+        return
+
+    for run_file in sorted(runs_dir.glob("run-*.json")):
+        try:
+            original = json.loads(run_file.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"⚠️ تعذّر قراءة {run_file.name} كـJSON صالح — تُرِك بلا تغيير: {e}", file=sys.stderr)
+            continue
+
+        filtered = _apply_delete_to_manifest(original, payload)
+        rel_path = f"runs/{run_file.name}"
+
+        if filtered.get("manga") == original.get("manga", {}):
+            continue  # غير متأثر إطلاقًا — لا حاجة لمس القرص أو git به
+
+        if not filtered.get("manga"):
+            run_file.unlink()
+            print(f"DELETE {rel_path}")
+        else:
+            run_file.write_text(
+                json.dumps(filtered, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            print(f"KEEP {rel_path}")
+
+
 def main() -> None:
     if len(sys.argv) < 2:
-        print("الاستخدام: delete_manager.py compute-targets | apply-manifest <in> <out>", file=sys.stderr)
+        print(
+            "الاستخدام: delete_manager.py compute-targets | apply-manifest <in> <out> "
+            "| scrub-run-manifests <output_dir>",
+            file=sys.stderr,
+        )
         sys.exit(1)
     cmd = sys.argv[1]
     if cmd == "compute-targets":
@@ -131,6 +199,11 @@ def main() -> None:
             print("الاستخدام: delete_manager.py apply-manifest <in> <out>", file=sys.stderr)
             sys.exit(1)
         cmd_apply_manifest(sys.argv[2], sys.argv[3])
+    elif cmd == "scrub-run-manifests":
+        if len(sys.argv) != 3:
+            print("الاستخدام: delete_manager.py scrub-run-manifests <output_dir>", file=sys.stderr)
+            sys.exit(1)
+        cmd_scrub_run_manifests(sys.argv[2])
     else:
         print(f"أمر غير معروف: {cmd}", file=sys.stderr)
         sys.exit(1)
