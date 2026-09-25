@@ -99,6 +99,23 @@ jobs:
             done < /tmp/targets.txt
 
             git add -- "$manifest_path"
+
+            # [إضافة] يشمل الحذف الآن سجلات التشغيلات (output/runs/run-<id>.json)
+            # وأي أثر مشابه لها متعلق بالفصول/المانهوات المحذوفة، لا
+            # manifest.json الرئيسي فقط — راجع تبرير كامل بترويسة
+            # scrub-run-manifests بـdelete_manager.py. يُعاد استدعاؤها هنا
+            # داخل apply_and_stage (لا مرة واحدة فقط) كي تعمل دائمًا على
+            # أحدث نسخة origin فعليًا لملفات runs/*.json بعد كل git reset/
+            # fetch بمحاولات إعادة الدفع، بنفس ضمان manifest.json تمامًا.
+            while IFS= read -r line; do
+              action="${line%% *}"
+              rel_path="${line#* }"
+              if [ "$action" = "DELETE" ]; then
+                git rm --ignore-unmatch --quiet -- "$git_rel_output/$rel_path" || true
+              elif [ "$action" = "KEEP" ]; then
+                git add -- "$git_rel_output/$rel_path"
+              fi
+            done < <(python3 "$GITHUB_WORKSPACE/delete_manager.py" scrub-run-manifests "$OUTPUT_DIR")
           }
 
           apply_and_stage
