@@ -218,9 +218,35 @@ jobs:
           # بالأسفل استعلام مباشر عن الريموت، لا يحتاج أي fetch محلي مسبق —
           # فحُذف الفetch الشامل كليًا، واستُبدل بفetch مستهدَف وسطحي
           # (--depth=1) لفرع output تحديدًا، وفقط لو كان موجودًا أصلًا.
+          # [إصلاح — السبب الفعلي للـ5 دقائق] "git fetch --depth=1" أعلاه
+          # سطحي فعلًا (commit واحد، بلا تاريخ)، فالبطء لم يكن من عدد الـ
+          # commits بل من *checkout* هذا الـcommit نفسه: "git worktree add"
+          # يجسّد على القرص كل ملف متتبَّع بآخر commit على فرع output —
+          # أي كل صور كل فصل من كل تشغيلة سابقة تراكمت هناك — رغم أن
+          # compress_chapters.py لا يقرأ أيًا منها فعليًا من القرص:
+          #   • manifest.json يُقرأ عبر "git show origin/output:..."
+          #     مباشرة من كائنات git (_read_remote_manifest_sync)، لا من
+          #     نسخته على القرص.
+          #   • الدفع (git add) يقتصر دائمًا على allowed_paths صريحة
+          #     (manifest.json + run-manifest هذه التشغيلة + مجلدات
+          #     الفصول التي كتبتها هي نفسها فقط — _owned_chapter_paths)،
+          #     أبدًا مجلدات فصول/صور قديمة.
+          # فوجود الأرشيف الكامل على قرص الـworktree كان أثرًا جانبيًا بلا
+          # أي استخدام فعلي. الحل: "--no-checkout" يوقف التجسيد التلقائي،
+          # ثم "sparse-checkout" (وضع non-cone، نمط ملف واحد محدد بدقة —
+          # لا مجلد كامل) يقصر ما يُكتب على القرص فعليًا على manifest.json
+          # فقط. مجلدات الفصول التي ستكتبها هذه التشغيلة لاحقًا مسارات
+          # جديدة غير موجودة بالشجرة القديمة أصلًا، فلا علاقة لها بنطاق
+          # الـsparse-checkout ولا تُستثنى من "git add" لاحقًا (القيد الذي
+          # يمنعه git حديثًا يخص إعادة إضافة مسار *متتبَّع مسبقًا* خارج
+          # النطاق فقط — manifest.json وحده هو هذه الحالة، وهو مُدرَج
+          # بالنمط صراحة). النتيجة: زمن هذه الخطوة يصبح شبه ثابت بصرف
+          # النظر عن حجم الأرشيف المتراكم على فرع output.
           if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
             git fetch --depth=1 origin output --quiet
-            git worktree add output-worktree origin/output
+            git worktree add --no-checkout --detach output-worktree origin/output
+            git -C output-worktree sparse-checkout init --no-cone
+            git -C output-worktree sparse-checkout set '/output/manifest.json'
             git -C output-worktree checkout -B output origin/output
           else
             git worktree add --detach output-worktree
@@ -229,6 +255,9 @@ jobs:
             git -C output-worktree commit --allow-empty -m "تهيئة فرع output"
           fi
 
+          # يبقى ضروريًا: لو manifest.json نفسه غير موجود بعد بالفرع (أول
+          # تشغيلة فعلية بعد تهيئة الفرع الفارغ)، الـsparse-checkout أعلاه
+          # لن ينشئ مجلد output/ من العدم.
           mkdir -p output-worktree/output
           echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
 
