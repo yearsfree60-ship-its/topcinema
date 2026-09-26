@@ -31,25 +31,33 @@ DELETE_PAYLOAD (متغيّر بيئة، JSON):
 
   scrub-run-manifests <OUTPUT_DIR>
     [إضافة — يشمل الحذف الآن سجلات التشغيلات (output/runs/run-<id>.json)
-    وأي أثر مشابه لها متعلق بالفصول/المانهوات المحذوفة، لا manifest.json
+    وأي أثر مشابه لها متعلق بفصول لم يعد لها وجود، لا manifest.json
     الرئيسي فقط] compress_chapters.py يكتب لكل تشغيلة ضغط ناجحة ملف سجلّ
     مستقل بنفس بنية manifest.json تمامًا (راجع build_run_manifest/
     merge_manifest_dict هناك: {"manga": {manga_id: {..., "chapters": [...]}}}
-    — لا فرق بنيويًا عن manifest.json إطلاقًا). فمن الممكن أن يحوي هذا
-    السجلّ (بمعزل عن manifest.json الرئيسي) فصولًا/مانهوات تحديدًا بعد
-    حذفها من manifest.json الرئيسي — أثر متبقٍّ يجب تنظيفه بنفس منطق
-    الحذف. يُطبَّق نفس _apply_delete_to_manifest على كل ملف runs/run-*.json
-    فعليًا على القرص (OUTPUT_DIR الممرَّر — مطابق دائمًا لأحدث نسخة
-    origin وقت الاستدعاء، لأنه يُستدعى من apply_and_stage بعد
-    git reset/fetch طازج بكل محاولة دفع، تمامًا كمعالجة manifest.json
-    الرئيسي، لا مرة واحدة فقط): لو أصبح الملف فارغًا كليًا (لا مانهوات
-    متبقية به) يُحذَف من القرص فعليًا ويُطبَع بسطر "DELETE <مسار نسبي>"؛
-    لو تبقّى به محتوى جزئي (تشغيلة عالجت عدة فصول، بعضها فقط محذوف الآن)
-    يُعاد كتابته بالقرص بمحتواه المُصفَّى ويُطبَع بسطر "KEEP <مسار نسبي>"
-    (يحتاج git add لاحقًا لا git rm). لا شيء يُطبَع لملف غير متأثر إطلاقًا
-    (لا حاجة لمس git به). المسارات المطبوعة نسبية لـOUTPUT_DIR (بادئة
-    "runs/") لتُستخدَم مباشرة بـ"$git_rel_output/$path" بالـworkflow، بنفس
-    نمط targets.txt تمامًا.
+    — لا فرق بنيويًا عن manifest.json إطلاقًا).
+
+    [تصحيح — مقارنة فعلية بالقرص، لا اعتمادًا على DELETE_PAYLOAD هذه
+    التشغيلة تحديدًا] بدل الاعتماد فقط على قائمة الحذف الحالية (التي لا
+    تغطّي إلا ما يُطلَب حذفه الآن)، هذا الأمر يقارن كل فصل مذكور بأي سجلّ
+    runs/run-*.json مع وجوده الفعلي الحالي على القرص
+    (OUTPUT_DIR/<manga_id>/ch-<num>) — أي فصل غير موجود فعليًا (سواء
+    حُذف بهذه التشغيلة بالضبط عبر compute-targets/git rm أعلاه، أو حُذف
+    سابقًا بأي طريقة أخرى وبقي سجلّه يتيمًا من قبل إضافة هذه الميزة
+    نفسها) يُزال من السجلّ. هذا يجعله فحصًا عامًا شاملًا (لا مقيَّدًا
+    بـDELETE_PAYLOAD)، ويُستدعى من apply_and_stage بعد حلقة git rm
+    الخاصة بمجلدات targets.txt مباشرة (فالقرص عندها يعكس فعليًا الفصول
+    المتبقية بعد حذف هذه التشغيلة) — على كل محاولة دفع، لا مرة واحدة
+    فقط، بنفس ضمان manifest.json تمامًا.
+
+    لو أصبح ملف السجلّ فارغًا كليًا (لا مانهوات متبقية به) يُحذَف من
+    القرص فعليًا ويُطبَع بسطر "DELETE <مسار نسبي>"؛ لو تبقّى به محتوى
+    جزئي (تشغيلة عالجت عدة فصول، بعضها فقط لم يعد موجودًا) يُعاد كتابته
+    بالقرص بمحتواه المُصفَّى ويُطبَع بسطر "KEEP <مسار نسبي>" (يحتاج
+    git add لاحقًا لا git rm). لا شيء يُطبَع لملف غير متأثر إطلاقًا (كل
+    فصوله المذكورة لا تزال موجودة فعليًا — لا حاجة لمس القرص أو git به).
+    المسارات المطبوعة نسبية لـOUTPUT_DIR (بادئة "runs/") لتُستخدَم
+    مباشرة بـ"$git_rel_output/$path" بالـworkflow، بنفس نمط targets.txt.
 """
 import json
 import os
@@ -73,12 +81,11 @@ def _load_payload() -> dict:
 
 
 def _apply_delete_to_manifest(manifest: dict, payload: dict) -> dict:
-    """[استُخرجت من apply-manifest لإعادة استخدامها أيضًا بـscrub-run-
-    manifests — نفس المنطق تمامًا، بنية manifest.json وruns/run-*.json
-    متطابقة] يحذف من manifest (قاموس بصيغة {"manga": {...}}) كل ما يطابق
-    DELETE_PAYLOAD: مانهوات كاملة بالكامل، أو فصولًا محدَّدة (وإسقاط
-    المانهوا كليًا لو أصبحت بلا فصول متبقية). لا يُعدِّل manifest المُمرَّر
-    بمكانه — يُرجع قاموسًا جديدًا."""
+    """[يُستخدَم فقط لـmanifest.json الرئيسي عبر apply-manifest] يحذف من
+    manifest (قاموس بصيغة {"manga": {...}}) كل ما يطابق DELETE_PAYLOAD:
+    مانهوات كاملة بالكامل، أو فصولًا محدَّدة (وإسقاط المانهوا كليًا لو
+    أصبحت بلا فصول متبقية). لا يُعدِّل manifest المُمرَّر بمكانه — يُرجع
+    قاموسًا جديدًا."""
     full_manga_set = set(payload["full_manga"])
     manga = dict(manifest.get("manga", {}))
 
@@ -154,11 +161,13 @@ def cmd_apply_manifest(in_path: str, out_path: str) -> None:
 
 
 def cmd_scrub_run_manifests(output_dir_arg: str) -> None:
-    payload = _load_payload()
     output_dir = Path(output_dir_arg)
     runs_dir = output_dir / "runs"
     if not runs_dir.is_dir():
         return
+
+    def chapter_exists_on_disk(manga_id: str, num: str) -> bool:
+        return (output_dir / manga_id / f"ch-{num}").is_dir()
 
     for run_file in sorted(runs_dir.glob("run-*.json")):
         try:
@@ -167,16 +176,25 @@ def cmd_scrub_run_manifests(output_dir_arg: str) -> None:
             print(f"⚠️ تعذّر قراءة {run_file.name} كـJSON صالح — تُرِك بلا تغيير: {e}", file=sys.stderr)
             continue
 
-        filtered = _apply_delete_to_manifest(original, payload)
+        original_manga = original.get("manga", {})
+        filtered_manga = {}
+        for manga_id, entry in original_manga.items():
+            kept_chapters = [
+                c for c in entry.get("chapters", [])
+                if chapter_exists_on_disk(manga_id, str(c.get("num")))
+            ]
+            if kept_chapters:
+                filtered_manga[manga_id] = {**entry, "chapters": kept_chapters}
+
         rel_path = f"runs/{run_file.name}"
+        if filtered_manga == original_manga:
+            continue  # كل الفصول المذكورة لا تزال موجودة فعليًا — لا حاجة لمس شيء
 
-        if filtered.get("manga") == original.get("manga", {}):
-            continue  # غير متأثر إطلاقًا — لا حاجة لمس القرص أو git به
-
-        if not filtered.get("manga"):
+        if not filtered_manga:
             run_file.unlink()
             print(f"DELETE {rel_path}")
         else:
+            filtered = {**original, "manga": filtered_manga}
             run_file.write_text(
                 json.dumps(filtered, ensure_ascii=False, indent=2), encoding="utf-8"
             )
