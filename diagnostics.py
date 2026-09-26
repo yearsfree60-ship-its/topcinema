@@ -38,6 +38,7 @@ CDP/Runtime.enable بعد — هذه ميزة معلَّقة منفصلة تما
 الحالية ولم تُضَف هنا عمدًا.
 """
 import asyncio
+import base64
 import json
 import os
 import re
@@ -46,11 +47,13 @@ import ssl
 import time
 import zipfile
 from collections import Counter
+from io import BytesIO
 from pathlib import Path
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, parse_qsl, urlencode, urlunparse
 
 import requests
 import requests.cookies  # لاستخدام RequestsCookieJar في فحص إعادة استخدام الكوكيز
+from PIL import Image, ImageFile
 from playwright.async_api import async_playwright
 
 from compress_chapters import (
@@ -367,12 +370,82 @@ async def _deep_diagnostic_probes(browser, url: str, main_protection_category: s
 
 # ============================== وضع التشخيص (موسّع) ==============================
 
+def _classify_extraction_tier(noscript_count: int, img_tag_attrs_count: int) -> str:
+    """[إضافة — سد فجوة ١، راجع الطلب السابق] extract_images_from_html
+    الإنتاجي (مُعاد استخدامه حرفيًا هنا وبـ_curl_cffi_probe_one_sync أدناه،
+    لا نسخة موازية من منطق الاستخراج نفسه) يُرجع عددًا إجماليًا واحدًا فقط
+    (extracted_image_count) بلا أي إشارة لأي طبقة من تتاليه الداخلي فعليًا
+    أنتجت هذا العدد. هذه الدالة تصنّف الطبقة فقط، اعتمادًا على نفس شروط
+    الأولوية حرفيًا (noscript إن بلغ MIN_NOSCRIPT_IMAGES ← وإلا data-src/
+    data-lazy-src/data-original أو src عادي داخل وسوم <img> ← وإلا noscript
+    دون الحد الأدنى ← وإلا آخر ملاذ: regex عام على نص/JSON الصفحة كاملة
+    بلا حدود وسم <img> إطلاقًا). الطبقة الأخيرة هي الأعلى خطرًا لالتقاط صور
+    دخيلة (OG/SEO thumbnails، ودجات، نسخ معاينة مكررة) بلا أي allowlist —
+    حالة procomic الفعلية احتاجت http_content_pattern يدوي تحديدًا بسببها.
+    حقل خام بالكامل: تسمية الطبقة فقط، بلا أي قرار allowlist تلقائي."""
+    if noscript_count >= MIN_NOSCRIPT_IMAGES:
+        return "noscript"
+    if img_tag_attrs_count > 0:
+        return "img_tag_attrs"
+    if noscript_count > 0:
+        return "noscript_below_threshold"
+    return "last_resort_regex_whole_page"
+
+
+def _noscript_and_imgtag_img_counts(html: str, url: str) -> tuple[int, int]:
+    """[إضافة] عدّ خفيف (noscript_count، img_tag_attrs_count) لتغذية
+    _classify_extraction_tier فقط — يُستخدَم بمسارات لا تحتاج تفصيل
+    images_via_data_attr/images_via_plain_src المنفصل (كـ_curl_cffi_probe_one_sync
+    أدناه)؛ _static_probe_sync يحتفظ بحلقتيه الأصليتين لأنه يعرض ذاك
+    التفصيل أيضًا بحقول مستقلة."""
+    noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
+    ns_imgs = []
+    for block in noscript_blocks:
+        for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', block):
+            ns_imgs.append(urljoin(url, m.group(1)))
+    ns_imgs = dedupe(ns_imgs)
+
+    tag_imgs = []
+    for tag_match in re.finditer(r"<img\b[^>]*>", html, re.I):
+        tag = tag_match.group(0)
+        u = None
+        for attr in ("data-src", "data-lazy-src", "data-original"):
+            m = re.search(rf'{attr}=["\']([^"\']+)["\']', tag, re.I)
+            if m:
+                u = m.group(1)
+                break
+        if not u:
+            m = re.search(r'\bsrc=["\']([^"\']+)["\']', tag, re.I)
+            if m:
+                u = m.group(1)
+        if u and not u.startswith("data:"):
+            tag_imgs.append(urljoin(url, u))
+    tag_imgs = dedupe(tag_imgs)
+    return len(ns_imgs), len(tag_imgs)
+
+
+def _token_pagewide_frequency(html: str, token: str) -> int:
+    """[إضافة — سد فجوة ٢، راجع الطلب السابق] suggested_selectors (عبر
+    _suggest_selectors_from_unmatched الإنتاجية) يقترح توكنات CSS متكررة
+    ضمن سياق الصور غير المطابقة فقط — بلا أي مؤشر هل هذا التوكن نادر
+    ومميِّز لسياق الصور تحديدًا، أم توكن utility عام (كـTailwind:
+    flex/w-full/relative) يطابق عناصر تنقّل/أزرار بكل الصفحة أيضًا. حالة
+    mangatime الفعلية احتاجت فرزًا يدويًا كاملًا بين النوعين لهذا السبب
+    بالضبط. هذه الدالة تعدّ فقط: كم عنصر HTML (أي وسم، لا الصور فقط) يحمل
+    هذا التوكن بكامل الصفحة — رقم مرتفع (عشرات/مئات) يرجّح توكن عام، رقم
+    منخفض/محصور يرجّح توكنًا دلاليًا مميِّزًا. عدّ خام فقط، بلا حكم
+    "اقبل/ارفض" مُدمَج هنا."""
+    pattern = re.compile(r'class\s*=\s*["\'][^"\']*\b' + re.escape(token) + r'\b[^"\']*["\']', re.I)
+    return len(pattern.findall(html))
+
+
 def _static_probe_sync(url: str) -> dict:
     result = {
         "status_code": None, "headers_of_interest": {}, "challenge_detected": False,
         "protection_category": "none",
         "protection_signatures": [], "images_via_noscript": 0, "images_via_data_attr": 0,
         "images_via_plain_src": 0, "extracted_image_count": 0, "extracted_sample_urls": [],
+        "extraction_tier_used": None,
         "sample_image_urls": [], "signed_url_params": [], "raw_cookies_received": [], "error": None,
         # [إضافة — المرحلة أ] زمن الطلب الخام فعليًا، للمقارنة لاحقًا بزمن
         # مسار المتصفح الكامل (raw HTTP سريع دومًا تقريبًا، لكن التوثيق
@@ -437,6 +510,7 @@ def _static_probe_sync(url: str) -> dict:
     result["extracted_image_count"] = len(extracted)
     result["extracted_sample_urls"] = extracted[:3]
     result["signed_url_params"] = _detect_signed_url_params(extracted)
+    result["extraction_tier_used"] = _classify_extraction_tier(len(ns_imgs), len(data_imgs) + len(plain_imgs))
 
     # [تصحيح حرج ٢] نفس منطق الحد الأدنى هنا أيضًا في عرض عينة الصور
     # التشخيصية، لتفادي تضليل التوصية الآلية ببكسل تتبع وحيد.
@@ -450,6 +524,98 @@ SIGNED_URL_PARAM_PATTERN = re.compile(
     r"x-amz-signature|x-amz-expires|x-amz-security-token|auth|hash|st|e)=",
     re.I,
 )
+
+
+CURL_CFFI_IMPERSONATE_PROFILES = ("chrome", "firefox", "safari")
+
+
+def _curl_cffi_probe_one_sync(url: str, impersonate: str) -> dict:
+    """[إضافة — بصمة TLS/HTTP جديدة، مسبار مقارَن بجانب الموجود لا شجرة
+    تستبعده] static_probe (مكتبة requests العادية) يحمل بصمة TLS/HTTP2
+    بايثونية قياسية يسهل تمييزها عن متصفح حقيقي، وbrowser_probe يشغّل
+    متصفحًا كاملًا (أبطأ بكثير، ويُشغَّل بصرف النظر عن نتيجة static_probe
+    أصلًا لنفس سبب مقارنة هذا المسبار هنا). curl_cffi (عبر curl-impersonate)
+    يحاكي بصمة TLS/JA3 وترتيب/قيم ترويسات HTTP2 لمتصفح حقيقي فعليًا بلا أي
+    تنفيذ JS — يفصل مباشرة نوعًا من الأدلة لا يوفّره أي مسبار آخر هنا: هل
+    الحظر يعتمد على بصمة الشبكة/TLS وحدها (فينجح هذا رغم غياب JS) أم يحتاج
+    تنفيذ JS فعليًا (فيفشل هذا رغم بصمة TLS مطابقة لمتصفح حقيقي)؟ يُجرَّب
+    لكل رابط عبر 3 بصمات متصفح مختلفة (chrome/firefox/safari) — بيانات خام
+    أشمل للـAI الذي سينشئ البروفايل، بتكلفة زمن أطول قليلًا (قرار صريح: خُذ
+    الأشمل رغم البطء الإضافي)."""
+    result = {
+        "impersonate": impersonate, "status_code": None, "headers_of_interest": {},
+        "challenge_detected": None, "protection_category": None, "protection_signatures": [],
+        "extracted_image_count": None, "extracted_sample_urls": [], "extraction_tier_used": None,
+        "elapsed_sec": None, "error": None,
+    }
+    t0 = time.monotonic()
+    try:
+        from curl_cffi import requests as _curl_requests
+    except ImportError as e:
+        result["error"] = f"حزمة curl_cffi غير مثبَّتة بهذه البيئة: {e}"
+        result["elapsed_sec"] = round(time.monotonic() - t0, 2)
+        return result
+    try:
+        resp = _curl_requests.get(
+            url, impersonate=impersonate,
+            headers={"Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}, timeout=20,
+        )
+        result["status_code"] = resp.status_code
+        for h in ("server", "cf-ray", "cf-mitigated", "cf-cache-status", "content-type",
+                   "set-cookie", "retry-after", "x-sucuri-id", "x-datadome", "x-iinfo"):
+            if h in resp.headers:
+                result["headers_of_interest"][h] = str(resp.headers[h])[:150]
+        html = resp.text
+        result["protection_category"] = _classify_challenge_html(html)
+        result["challenge_detected"] = result["protection_category"] != "none"
+        result["protection_signatures"] = classify_protection_signatures(html)
+        extracted = extract_images_from_html(html, url)
+        result["extracted_image_count"] = len(extracted)
+        result["extracted_sample_urls"] = extracted[:3]
+        _ns_count, _tag_count = _noscript_and_imgtag_img_counts(html, url)
+        result["extraction_tier_used"] = _classify_extraction_tier(_ns_count, _tag_count)
+    except Exception as e:
+        result["error"] = f"{e}"
+    result["elapsed_sec"] = round(time.monotonic() - t0, 2)
+    return result
+
+
+async def _curl_cffi_fingerprint_probe(url: str) -> dict:
+    """يُشغِّل _curl_cffi_probe_one_sync لكل بصمة (chrome/firefox/safari)
+    بتوازٍ فعلي — راجع تعليق تلك الدالة للتبرير الكامل. بيانات خام فقط،
+    بلا أي حكم/اختيار "أفضل بصمة" مُدمَج هنا."""
+    results = await asyncio.gather(*[
+        asyncio.to_thread(_curl_cffi_probe_one_sync, url, profile)
+        for profile in CURL_CFFI_IMPERSONATE_PROFILES
+    ])
+    return {"probes": list(results)}
+
+
+def _wayback_availability_probe_sync(url: str) -> dict:
+    """[إضافة — DEEP_DIAGNOSTIC، لأي موقع لا like_manga فقط] فحص خام فقط
+    عبر availability API العام لأرشيف الإنترنت (بلا مصادقة، بلا أي محاولة
+    SPN2 تصوير جديد): هل توجد أصلًا نسخة مؤرشَفة لهذا الرابط تحديدًا؟ بنية
+    الـWayback proxy الكاملة (_wayback_fetch_html بـcompress_chapters.py،
+    تصوير SPN2 + مصادقة S3-style + استطلاع دقائق) كانت مربوطة حصرًا
+    ببروفايل like_manga_wayback_test، فلا معلومة عن جدوى نفس الفكرة لأي
+    موقع آخر يُشخَّص. حقل خام بالكامل: توفّر نسخة/طابعها الزمني/رابطها/
+    حالتها فقط، بلا أي قرار use_wayback_proxy مبني عليه هنا — ذاك قرار
+    بشري لاحق بعد مراجعة التقرير."""
+    result = {"tested": False, "available": None, "snapshot_timestamp": None,
+              "snapshot_url": None, "status": None, "error": None}
+    try:
+        resp = requests.get("https://archive.org/wayback/available", params={"url": url}, timeout=15)
+        result["tested"] = True
+        resp.raise_for_status()
+        data = resp.json()
+        snap = data.get("archived_snapshots", {}).get("closest", {})
+        result["available"] = bool(snap.get("available"))
+        result["snapshot_timestamp"] = snap.get("timestamp")
+        result["snapshot_url"] = snap.get("url")
+        result["status"] = snap.get("status")
+    except Exception as e:
+        result["error"] = f"{e}"
+    return result
 
 
 def _detect_signed_url_params(urls: list[str]) -> list[str]:
@@ -740,6 +906,231 @@ async def _no_stealth_reference_probe(browser, url: str) -> dict:
     return result
 
 
+IMAGE_METADATA_JS = """(selectors) => {
+    const seen = new Set();
+    const out = [];
+    for (const sel of selectors) {
+        let els;
+        try { els = Array.from(document.querySelectorAll(sel)); } catch (e) { continue; }
+        for (const e of els) {
+            if (seen.has(e)) continue;
+            seen.add(e);
+            const rawSrc = e.getAttribute('src') || '';
+            const curSrc = e.currentSrc || '';
+            const picture = e.closest('picture');
+            let pictureSources = [];
+            if (picture) {
+                pictureSources = Array.from(picture.querySelectorAll('source')).map(s => ({
+                    type: s.getAttribute('type') || null,
+                    srcset: s.getAttribute('srcset') || s.getAttribute('data-srcset') || null,
+                }));
+            }
+            const checkUrl = curSrc || rawSrc;
+            let urlKind = 'http';
+            if (checkUrl.startsWith('blob:')) urlKind = 'blob';
+            else if (checkUrl.startsWith('data:')) urlKind = 'data';
+            out.push({
+                src_attr: rawSrc || null,
+                current_src: curSrc || null,
+                src_differs_from_current_src: !!(rawSrc && curSrc && rawSrc !== curSrc),
+                srcset: e.getAttribute('srcset') || e.getAttribute('data-srcset') || null,
+                sizes: e.getAttribute('sizes') || null,
+                loading_attr: e.getAttribute('loading') || null,
+                decoding_attr: e.getAttribute('decoding') || null,
+                natural_width: e.naturalWidth || 0,
+                natural_height: e.naturalHeight || 0,
+                complete: !!e.complete,
+                url_kind: urlKind,
+                inside_picture: !!picture,
+                picture_sources: pictureSources,
+            });
+        }
+    }
+    return out;
+}"""
+
+
+CANVAS_ELEMENTS_JS = """() => Array.from(document.querySelectorAll('canvas')).map(c => ({
+    width: c.width, height: c.height,
+    class_name: (c.className && c.className.toString) ? c.className.toString() : '',
+    id: c.id || null,
+}))"""
+
+
+BLOB_DATA_EXTRACT_JS = """async (targetSrc) => {
+    try {
+        const resp = await fetch(targetSrc);
+        const buf = await resp.arrayBuffer();
+        const bytes = new Uint8Array(buf);
+        let binary = '';
+        const chunk = 8192;
+        for (let i = 0; i < bytes.length; i += chunk) {
+            binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunk));
+        }
+        return { ok: true, base64: btoa(binary), byte_length: bytes.length,
+                 content_type: resp.headers.get('content-type') };
+    } catch (e) {
+        return { ok: false, error: String(e) };
+    }
+}"""
+
+
+CANVAS_EXTRACT_JS = """(idx) => {
+    try {
+        const c = document.querySelectorAll('canvas')[idx];
+        if (!c) return { ok: false, error: 'canvas غير موجود بهذا الفهرس' };
+        const dataUrl = c.toDataURL('image/png');
+        return { ok: true, data_url_prefix: dataUrl.slice(0, 40),
+                 base64_length: dataUrl.length, width: c.width, height: c.height };
+    } catch (e) {
+        // [مهم] canvas "ملوَّث" (tainted) — رُسمت عليه صورة من نطاق مختلف
+        // بلا crossorigin='anonymous' — يرمي SecurityError هنا تحديدًا،
+        // ويمنع toDataURL/toBlob كليًا؛ إشارة خام حاسمة: لو ظهر هذا الخطأ،
+        // القراءة المباشرة من canvas غير ممكنة إطلاقًا لهذا الموقع، ويحتاج
+        // مقاربة مختلفة كليًا (مثل لقطة شاشة مقصوصة بحدود الـcanvas).
+        return { ok: false, error: String(e) };
+    }
+}"""
+
+
+async def _service_worker_registrations(page) -> list | None:
+    """[إضافة] Service Worker مسجَّل قد يعترض طلبات الصور (fetch event) قبل
+    وصولها للشبكة فعليًا — واجهة navigator.serviceWorker.getRegistrations
+    غير متزامنة، فتُستدعى منفصلة بصيغة async. بيانات خام (نطاق كل تسجيل)
+    بلا أي محاولة تفسير محتوى الاعتراض نفسه."""
+    try:
+        return await page.evaluate(
+            "async () => (navigator.serviceWorker ? "
+            "(await navigator.serviceWorker.getRegistrations()).map(r => r.scope) : null)"
+        )
+    except Exception:
+        return None
+
+
+IMAGE_RANGE_PROBE_MAX_SAMPLE = 15
+IMAGE_RANGE_PROBE_BYTES = 32000
+
+
+def _pick_evenly_distributed_urls(urls: list[str], n: int) -> list[str]:
+    """[إضافة — سد الفجوة ب، موازنة صريحة بين الشمولية والزمن] عيّنة موزّعة
+    بالتساوي عبر كامل قائمة صور الفصل (لا أول/وسط/أخير فقط كـ
+    _pick_sample_urls) — حتى n رابطًا مُغطّيًا طول الفصل كله تقريبًا، بسقف
+    ثابت يمنع تشغيلة تشخيص لموقع بـ150+ صفحة من التمدد زمنيًا بلا داعٍ."""
+    urls = dedupe(urls)
+    if len(urls) <= n:
+        return urls
+    if n <= 1:
+        return urls[:1]
+    step = (len(urls) - 1) / (n - 1)
+    idxs = sorted({round(i * step) for i in range(n)})
+    return [urls[i] for i in idxs]
+
+
+def _image_range_probe_one_sync(img_url: str, referer: str) -> dict:
+    """[إضافة — سد الفجوة ب] يقرأ أول ~32 كيلوبايت فقط من كل رابط صورة —
+    عبر قراءة streaming مُقفَلة يدويًا عند هذا الحد (تعمل حتى لو تجاهل
+    الخادم ترويسة Range وأرسل 200 كاملة، إذ نتوقف عن القراءة من المقبس
+    بصرف النظر عمّا ينوي الخادم إرساله)، ثم تُمرَّر البايتات لـ
+    PIL.ImageFile.Parser لاستخراج الأبعاد والصيغة الفعلية من رأس الملف
+    مباشرة — أرخص بعشرات المرات من تحميل كل صفحة كاملة. يكشف دفعة واحدة:
+    توزيع أبعاد كل صفحات الفصل (خروج شاذ = ودجت/إعلان اختلط خطأً بالمحتوى)،
+    والصيغة الفعلية المُقدَّمة فعليًا (قد تخالف امتداد الرابط نفسه)."""
+    result = {
+        "sample_url": img_url, "width": None, "height": None, "format": None,
+        "bytes_read": 0, "status_code": None, "range_request_honored": None,
+        "content_length_header": None, "error": None,
+    }
+    try:
+        resp = _HTTP_SESSION.get(
+            img_url,
+            headers={"User-Agent": UA, "Referer": referer, "Range": f"bytes=0-{IMAGE_RANGE_PROBE_BYTES}"},
+            timeout=15, stream=True,
+        )
+        result["status_code"] = resp.status_code
+        result["range_request_honored"] = resp.status_code == 206
+        result["content_length_header"] = resp.headers.get("content-length")
+        raw = resp.raw.read(IMAGE_RANGE_PROBE_BYTES, decode_content=True)
+        resp.close()
+        result["bytes_read"] = len(raw)
+        parser = ImageFile.Parser()
+        parser.feed(raw)
+        if parser.image:
+            result["width"], result["height"] = parser.image.size
+            result["format"] = parser.image.format
+        else:
+            result["error"] = "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+    except Exception as e:
+        result["error"] = f"{e}"
+    return result
+
+
+async def _image_dimensions_probe(image_urls: list[str], referer: str) -> dict:
+    """يُشغِّل _image_range_probe_one_sync بتوازٍ فعلي على عيّنة موزّعة
+    (راجع _pick_evenly_distributed_urls) — بيانات خام فقط، زائد min/max
+    عرض وتعداد الصيغ الفعلية (تجميع مباشر لا استنتاج، بنفس نمط
+    domain_distribution الموجود مسبقًا)."""
+    sample = _pick_evenly_distributed_urls(image_urls, IMAGE_RANGE_PROBE_MAX_SAMPLE)
+    results = list(await asyncio.gather(*[
+        asyncio.to_thread(_image_range_probe_one_sync, u, referer) for u in sample
+    ]))
+    widths = [r["width"] for r in results if r["width"]]
+    formats = Counter(r["format"] for r in results if r["format"])
+    return {
+        "total_images_available": len(dedupe(image_urls)),
+        "sample_size": len(sample),
+        "probes": results,
+        "distinct_formats_seen": dict(formats),
+        "width_min": min(widths) if widths else None,
+        "width_max": max(widths) if widths else None,
+    }
+
+
+_URL_QUALITY_PARAM_NAMES = {
+    "quality", "q", "type", "w", "width", "h", "height", "size", "resize",
+    "fit", "format", "dpr", "compress", "optimize", "scale",
+}
+
+
+def _url_quality_param_probe_sync(img_url: str, referer: str) -> dict:
+    """[إضافة — البند ج] حالة موثَّقة فعليًا: webtoons.com يُضمّن ?type=q90
+    (ضغط JPEG بجودة 90) بروابط صور القارئ، وحذف هذا المعامل يرجّع الصورة
+    الأصلية الكاملة مجانًا بلا أي مقابل. هذه الدالة تفحص هل رابط الصورة
+    يحمل أي معامل استعلام من قائمة أسماء شائعة عبر عدة CDNs (جودة/حجم/
+    صيغة)، ولو وُجد، تقارن Content-Length الفعلي (عبر HEAD) بين الرابط
+    الأصلي والرابط بعد حذف كل هذه المعاملات معًا. بيانات خام فقط: فرق
+    الحجم إن وُجد، وهل الرابط المُجرَّد لا يزال صالحًا أصلًا (بعض الـCDNs
+    تتطلب المعامل ولا تعمل بدونه) — بلا أي قرار تلقائي لاستخدام الرابط
+    المُجرَّد بالإنتاج."""
+    result = {
+        "original_url": img_url, "suspicious_params_found": [], "stripped_url": None,
+        "original_content_length": None, "stripped_content_length": None,
+        "stripped_url_status_code": None, "tested": False, "error": None,
+    }
+    parsed = urlparse(img_url)
+    query_pairs = parse_qsl(parsed.query, keep_blank_values=True)
+    suspicious = [k for k, _ in query_pairs if k.lower() in _URL_QUALITY_PARAM_NAMES]
+    result["suspicious_params_found"] = suspicious
+    if not suspicious:
+        return result
+    stripped_query = urlencode([(k, v) for k, v in query_pairs if k.lower() not in _URL_QUALITY_PARAM_NAMES])
+    stripped_url = urlunparse(parsed._replace(query=stripped_query))
+    result["stripped_url"] = stripped_url
+    result["tested"] = True
+    headers = {"User-Agent": UA, "Referer": referer}
+    try:
+        r1 = _HTTP_SESSION.head(img_url, headers=headers, timeout=15, allow_redirects=True)
+        result["original_content_length"] = r1.headers.get("content-length")
+    except Exception as e:
+        result["error"] = f"فشل HEAD للرابط الأصلي: {e}"
+    try:
+        r2 = _HTTP_SESSION.head(stripped_url, headers=headers, timeout=15, allow_redirects=True)
+        result["stripped_url_status_code"] = r2.status_code
+        result["stripped_content_length"] = r2.headers.get("content-length")
+    except Exception as e:
+        result["error"] = ((result["error"] + " | ") if result["error"] else "") + f"فشل HEAD للرابط المُجرَّد: {e}"
+    return result
+
+
 async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     result = {
         "navigated": False, "title": None, "challenge_detected": False,
@@ -747,7 +1138,8 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
         "challenge_resolved_after_reload": None, "protection_signatures": [],
         "images_at_t0": None, "images_after_wait": None, "images_after_scroll": None,
         "selector_match_counts": {}, "unmatched_img_count": 0, "widget_excluded_count": 0,
-        "widget_excluded_samples": [], "suggested_selectors": [], "domain_distribution": {},
+        "widget_excluded_samples": [], "suggested_selectors": [], "suggested_selectors_pagewide_frequency": {},
+        "domain_distribution": {},
         "signed_url_params": [], "screenshot_path": None, "hotlink_probe": None,
         "hotlink_probes": [], "network_vendor_hits": {},
         "adblock_wall": None, "cookie_reuse_probe": None,
@@ -778,6 +1170,12 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
         # solvable_challenge إطلاقًا. يستبدل المسار القديم (نقرة واحدة +
         # 5ث + reload) بوضع التشخيص فقط، ولا يمس open_and_collect الإنتاجي.
         "extended_challenge_probe": None,
+        # [إضافة — سد فجوة "بيانات كل الصور"] راجع تعليقات الدوال أعلاه
+        # (IMAGE_METADATA_JS، _image_dimensions_probe، إلخ) للتبرير الكامل.
+        "image_metadata_probe": [], "image_url_kind_counts": {},
+        "canvas_elements": [], "service_worker_scopes": None,
+        "blob_data_extraction_probe": None, "canvas_extraction_probe": None,
+        "image_dimensions_probe": None, "url_quality_param_probe": None,
     }
     _probe_start = time.monotonic()
 
@@ -955,6 +1353,17 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     result["selector_match_counts"] = selector_counts
     result["unmatched_img_count"] = unmatched
     result["suggested_selectors"] = _suggest_selectors_from_unmatched(scrolled_items)
+    if result["suggested_selectors"]:
+        # [إضافة — سد فجوة ٢] لا حاجة لتمرير إضافي على الصفحة — full_page_html
+        # يُحسَب مرة واحدة هنا فقط لو وُجدت توكنات مُقترَحة أصلًا.
+        try:
+            _full_page_html = await page.content()
+        except Exception:
+            _full_page_html = ""
+        result["suggested_selectors_pagewide_frequency"] = {
+            tok: _token_pagewide_frequency(_full_page_html, tok.lstrip("."))
+            for tok in result["suggested_selectors"]
+        } if _full_page_html else {}
 
     filtered = _filter_widget_context(scrolled_items)
     result["widget_excluded_count"] = len(scrolled_items) - len(filtered)
@@ -984,6 +1393,74 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     result["signed_url_params"] = _detect_signed_url_params(
         [it["url"] for it in scrolled_items if it.get("url")]
     )
+
+    # ============== [إضافة — سد فجوة "بيانات كل الصور"] ==============
+    # راجع IMAGE_METADATA_JS/CANVAS_ELEMENTS_JS/_image_dimensions_probe
+    # وما يليها أعلى الملف للتبرير الكامل لكل حقل هنا.
+    try:
+        result["image_metadata_probe"] = await page.evaluate(IMAGE_METADATA_JS, list(CONTENT_SELECTORS))
+    except Exception as e:
+        result["image_metadata_probe"] = []
+        print(f"  ⚠️ تعذّر مسبار بيانات الصور (IMAGE_METADATA_JS): {e}")
+    result["image_url_kind_counts"] = dict(
+        Counter(it.get("url_kind") for it in (result["image_metadata_probe"] or []))
+    )
+
+    try:
+        result["canvas_elements"] = await page.evaluate(CANVAS_ELEMENTS_JS)
+    except Exception:
+        result["canvas_elements"] = []
+    result["service_worker_scopes"] = await _service_worker_registrations(page)
+
+    # [إضافة — طلب صريح: عيّنة استخراج فعلي واحدة عند اكتشاف blob:/data:]
+    blob_or_data_items = [
+        it for it in (result["image_metadata_probe"] or []) if it.get("url_kind") in ("blob", "data")
+    ]
+    if blob_or_data_items:
+        target = blob_or_data_items[0].get("current_src") or blob_or_data_items[0].get("src_attr")
+        proof = {"target": target, "ok": None, "error": None}
+        if target:
+            try:
+                extract_r = await page.evaluate(BLOB_DATA_EXTRACT_JS, target)
+            except Exception as e:
+                extract_r = {"ok": False, "error": str(e)}
+            proof["ok"] = extract_r.get("ok")
+            proof["error"] = extract_r.get("error")
+            proof["byte_length"] = extract_r.get("byte_length")
+            proof["content_type"] = extract_r.get("content_type")
+            if extract_r.get("ok") and extract_r.get("base64"):
+                try:
+                    raw_bytes = base64.b64decode(extract_r["base64"])
+                    valid, why = _validate_image_bytes(raw_bytes)
+                    proof["decoded_and_validated_as_real_image"] = valid
+                    if not valid:
+                        proof["validation_failure_reason"] = why
+                    else:
+                        with Image.open(BytesIO(raw_bytes)) as im:
+                            proof["decoded_dimensions"] = im.size
+                            proof["decoded_format"] = im.format
+                except Exception as e:
+                    proof["decode_error"] = str(e)
+        result["blob_data_extraction_probe"] = proof
+
+    # [إضافة — طلب صريح: عيّنة استخراج فعلي واحدة عند وجود canvas]
+    if result["canvas_elements"]:
+        try:
+            result["canvas_extraction_probe"] = await page.evaluate(CANVAS_EXTRACT_JS, 0)
+        except Exception as e:
+            result["canvas_extraction_probe"] = {"ok": False, "error": str(e)}
+
+    # [إضافة — سد فجوة ب: مسبار Range موزّع عبر كامل صور الفصل]
+    _all_content_urls = dedupe([it["url"] for it in filtered if it.get("url")])
+    if _all_content_urls:
+        result["image_dimensions_probe"] = await _image_dimensions_probe(_all_content_urls, url)
+        # [إضافة — البند ج] فحص معامل جودة/حجم برابط الصورة الأولى فقط —
+        # خاصية على مستوى نمط الرابط نفسه (لا تختلف عادةً بين صور الفصل
+        # الواحد)، فعيّنة واحدة كافية.
+        result["url_quality_param_probe"] = await asyncio.to_thread(
+            _url_quality_param_probe_sync, _all_content_urls[0], url
+        )
+    # ====================================================================
 
     # [إصلاح منطقي ب + معلومة مفقودة "عدة صور عيّنة"] حتى 3 عيّنات موزّعة
     # (أولى/وسط/أخيرة) بدل واحدة فقط — كل واحدة تخضع للعزل الثلاثي الكامل.
@@ -1098,12 +1575,26 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
             print(f"   🛡️ توقيعات حماية مطابَقة: {', '.join(static_r['protection_signatures'])}")
         print(f"   صور عبر noscript: {static_r['images_via_noscript']} | عبر data-src: {static_r['images_via_data_attr']} | عبر src عادي: {static_r['images_via_plain_src']}")
         print(f"   📌 العدد الذي سيُستخرَج فعليًا بمسار HTTP المباشر (نفس منطق الإنتاج): {static_r['extracted_image_count']}")
+        print(f"   🧭 الطبقة الفعلية التي أنتجت هذا العدد: {static_r['extraction_tier_used']!r}"
+              + (" ⚠️ آخر ملاذ (regex عام بلا حدود وسم <img>) — راجع العيّنات يدويًا؛ صور دخيلة (OG/ودجات) ممكنة بلا allowlist"
+                 if static_r['extraction_tier_used'] == "last_resort_regex_whole_page" else ""))
         if static_r["sample_image_urls"]:
             print("   عينة روابط صور من HTML الثابت:")
             for u in static_r["sample_image_urls"]:
                 print(f"     - {u}")
         if static_r["signed_url_params"]:
             print(f"   🔑 روابط تحمل معاملات توقيع/انتهاء صلاحية: {static_r['signed_url_params']}")
+
+    print("①-ب فحص بصمة curl_cffi (TLS/HTTP٢ لمتصفح حقيقي، بلا أي تنفيذ JS — 3 بصمات: chrome/firefox/safari)...")
+    curl_cffi_r = await _curl_cffi_fingerprint_probe(url)
+    for pr in curl_cffi_r["probes"]:
+        if pr["error"]:
+            print(f"   ⚠️ [{pr['impersonate']}] {pr['error']}")
+        else:
+            print(f"   [{pr['impersonate']}] حالة={pr['status_code']} | تحدٍّ مكتشَف={pr['challenge_detected']} "
+                  f"| صور مستخرَجة={pr['extracted_image_count']} (طبقة: {pr['extraction_tier_used']!r}) | زمن={pr['elapsed_sec']}ث")
+            if pr["headers_of_interest"]:
+                print(f"       ترويسات ملفتة: {pr['headers_of_interest']}")
 
     print("② فحص متصفح كامل (تحميل + جدار إعلانات + انتظار + تمرير تراكمي)...")
     browser_r = await _browser_probe(browser, url, diag_dir, slug)
@@ -1167,6 +1658,9 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     print(f"   صور لا تطابق أي محدد معروف: {browser_r['unmatched_img_count']}")
     if browser_r["suggested_selectors"]:
         print(f"   💡 توكنات متكررة بالصور غير المطابقة (بيانات خام، لا اعتماد تلقائي): {browser_r['suggested_selectors']}")
+        _freq = browser_r.get("suggested_selectors_pagewide_frequency") or {}
+        if _freq:
+            print(f"      🔢 تكرار كل توكن عبر الصفحة كاملة (لا الصور فقط) — رقم مرتفع يرجّح توكن CSS عام لا دلاليًا مميِّزًا: {_freq}")
     if browser_r["widget_excluded_count"]:
         print(f"   🧹 فلتر الودجات استبعد {browser_r['widget_excluded_count']} صورة — عينات سياق: {browser_r['widget_excluded_samples']}")
     else:
@@ -1175,6 +1669,51 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
         print(f"   توزيع النطاقات: {browser_r['domain_distribution']}")
     if browser_r["signed_url_params"]:
         print(f"   🔑 روابط تحمل معاملات توقيع/انتهاء صلاحية عبر المتصفح: {browser_r['signed_url_params']}")
+
+    print("②-ب بيانات كل الصور (بادئة الرابط، srcset/picture، canvas، Service Worker)...")
+    print(f"   تصنيف بادئة روابط الصور (http/blob/data): {browser_r.get('image_url_kind_counts')}")
+    _im_meta = browser_r.get("image_metadata_probe") or []
+    if _im_meta:
+        _differs = sum(1 for it in _im_meta if it.get("src_differs_from_current_src"))
+        _in_pic = sum(1 for it in _im_meta if it.get("inside_picture"))
+        _incomplete = sum(1 for it in _im_meta if not it.get("complete") or not it.get("natural_width"))
+        print(f"   من أصل {len(_im_meta)} عنصر <img> مطابق: currentSrc يخالف src بـ{_differs} | "
+              f"داخل <picture> بـ{_in_pic} | لم يكتمل تحميله فعليًا (naturalWidth=0) بـ{_incomplete}")
+    if browser_r.get("canvas_elements"):
+        print(f"   🖼️ عناصر <canvas> موجودة بالصفحة ({len(browser_r['canvas_elements'])}): {browser_r['canvas_elements'][:3]}")
+    if browser_r.get("service_worker_scopes"):
+        print(f"   ⚙️ Service Worker مسجَّل — النطاقات: {browser_r['service_worker_scopes']}")
+    bdp = browser_r.get("blob_data_extraction_probe")
+    if bdp:
+        print(f"   🧪 عيّنة استخراج فعلي (blob:/data:) — الهدف: {bdp.get('target')}")
+        if bdp.get("ok"):
+            print(f"      ✅ نجح الاستخراج داخل سياق الصفحة — {bdp.get('byte_length')} بايت "
+                  f"({bdp.get('content_type')}) — صورة صالحة فعليًا: {bdp.get('decoded_and_validated_as_real_image')}"
+                  + (f" — أبعاد: {bdp.get('decoded_dimensions')} صيغة: {bdp.get('decoded_format')}"
+                     if bdp.get("decoded_and_validated_as_real_image") else ""))
+        else:
+            print(f"      ❌ فشل — {bdp.get('error')}")
+    cep = browser_r.get("canvas_extraction_probe")
+    if cep:
+        if cep.get("ok"):
+            print(f"   🧪 عيّنة استخراج فعلي (canvas) — نجح toDataURL — أبعاد: {cep.get('width')}x{cep.get('height')}")
+        else:
+            print(f"   🧪 عيّنة استخراج فعلي (canvas) — فشل toDataURL — {cep.get('error')} "
+                  "(canvas ملوَّث على الأرجح — راجع تعليق CANVAS_EXTRACT_JS)")
+    idp = browser_r.get("image_dimensions_probe")
+    if idp:
+        print(f"   📐 مسبار أبعاد Range — عيّنة {idp['sample_size']} من أصل {idp['total_images_available']} صورة: "
+              f"عرض من {idp['width_min']} إلى {idp['width_max']}px | صيغ فعلية مُقدَّمة: {idp['distinct_formats_seen']}")
+        _range_ignored = [p for p in idp["probes"] if p.get("status_code") == 200 and not p.get("error")]
+        if _range_ignored:
+            print(f"      ℹ️ {len(_range_ignored)} من العيّنة تجاهل الخادم ترويسة Range لها (رجع 200 لا 206)")
+    uqp = browser_r.get("url_quality_param_probe")
+    if uqp and uqp.get("tested"):
+        print(f"   🔧 معاملات رابط مشتبَهة (جودة/حجم): {uqp['suspicious_params_found']} — "
+              f"الحجم الأصلي: {uqp['original_content_length']} بايت | "
+              f"بعد الحذف: {uqp['stripped_content_length']} بايت (status={uqp['stripped_url_status_code']})")
+        if uqp.get("error"):
+            print(f"      ⚠️ {uqp['error']}")
 
     print("②-تكرار إعادة فحص كامل بجلسة نظيفة ثانية (فحص اتساق)...")
     browser_r2 = await _browser_probe(browser, url, diag_dir, slug + "-run2")
@@ -1188,10 +1727,22 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
 
     deep_diag = None
     if DEEP_DIAGNOSTIC:
+        deep_diag = {}
+        print("🧬 فحص Wayback (DEEP_DIAGNOSTIC، أي موقع) — توفر نسخة مؤرشَفة سابقًا لهذا الرابط تحديدًا...")
+        wayback_r = await asyncio.to_thread(_wayback_availability_probe_sync, url)
+        deep_diag["wayback_availability_probe"] = wayback_r
+        if wayback_r["error"]:
+            print(f"   ⚠️ {wayback_r['error']}")
+        elif wayback_r["tested"]:
+            print(f"   نسخة متوفرة: {wayback_r['available']} | طابع زمني: {wayback_r['snapshot_timestamp']} "
+                  f"| status: {wayback_r['status']}"
+                  + (f" | رابط: {wayback_r['snapshot_url']}" if wayback_r['snapshot_url'] else ""))
+
         if browser_r.get("protection_category") == "solvable_challenge":
-            deep_diag = await _deep_diagnostic_probes(browser, url, browser_r.get("protection_category"))
+            cdp_probes = await _deep_diagnostic_probes(browser, url, browser_r.get("protection_category"))
+            deep_diag.update(cdp_probes)
         else:
-            print(f"🧬 تشخيص عميق (DEEP_DIAGNOSTIC): تخطّي — تصنيف الرابط الحالي "
+            print(f"🧬 تشخيص عميق (تسريب Runtime.enable/sourceURL): تخطّي — تصنيف الرابط الحالي "
                   f"{browser_r.get('protection_category')!r} (يعمل فقط على solvable_challenge)")
 
     hotlink_probes = browser_r.get("hotlink_probes") or []
@@ -1301,7 +1852,8 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     report_relpath = f"diagnostics/{slug}-report.json"
     report = {
         "url": url, "tls_and_server_info": tls_info, "runner_network_info": runner_info,
-        "static_probe": static_r, "browser_probe": browser_r, "browser_probe_second_run": browser_r2,
+        "static_probe": static_r, "curl_cffi_probe": curl_cffi_r,
+        "browser_probe": browser_r, "browser_probe_second_run": browser_r2,
         "consistency_diffs": consistency_diffs, "rate_limit_probe": rl,
         "history_diffs_since_last_run": history_diffs,
         "deep_diagnostic": deep_diag,
@@ -1320,7 +1872,7 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
 
 async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     print("🔬 وضع التشخيص مفعّل (موسّع) — لن يُنزَّل أو يُضغط أي فصل فعليًا، ولن يُستخدم اختيار الموقع المصدر إطلاقًا")
-    print(f"🧬 DEEP_DIAGNOSTIC: {'مفعّل — يضيف مسبارَي Runtime.enable/sourceURL لكل رابط solvable_challenge (~90-180ث إضافية لكل رابط)' if DEEP_DIAGNOSTIC else 'غير مفعّل'}")
+    print(f"🧬 DEEP_DIAGNOSTIC: {'مفعّل — يضيف فحص توفر Wayback لكل رابط (أي تصنيف، طلب واحد خفيف) + مسبارَي Runtime.enable/sourceURL لكل رابط solvable_challenge تحديدًا (~90-180ث إضافية لكل رابط من هذين الأخيرين)' if DEEP_DIAGNOSTIC else 'غير مفعّل'}")
     if len(chapter_urls) > 3:
         print(f"⚠️ تم إدخال {len(chapter_urls)} رابط — يُفضَّل رابط أو رابطين فقط (كل رابط يفتح متصفحًا كاملًا ويشغّل فحصًا مزدوجًا لكل مرحلة). سيُتابَع بكل الروابط رغم ذلك")
 
