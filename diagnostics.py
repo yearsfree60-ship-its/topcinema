@@ -529,6 +529,91 @@ SIGNED_URL_PARAM_PATTERN = re.compile(
 CURL_CFFI_IMPERSONATE_PROFILES = ("chrome", "firefox", "safari")
 
 
+# ============== [إضافة — بحث معمَّق: قدرات تشخيص 2026] ==============
+# بصمة JA4 (خليفة JA3 منذ 2023 عبر FoxIO) صارت الإشارة الأهم لدى معظم
+# مزوّدي الحماية الكبار (Cloudflare Bot Management، Akamai، DataDome،
+# HUMAN/PerimeterX) بحلول 2026 — ومطابقة JA3 وحدها لم تعد كافية: مطابقة
+# JA4 دون JA4H (بصمة طبقة HTTP/2 فوقها) تُصنَّف كـ"Chrome بشكل خاطئ"
+# وتُحظَر رغم بصمة TLS صحيحة ظاهريًا. هذا القسم يقيس البصمة الحقيقية التي
+# يراها أي خادم فعليًا من كل مسار من مسارات الجلب الثلاثة لدينا (طلب
+# Python خام، curl_cffi، متصفح الإنتاج الفعلي) — لا افتراضًا نظريًا بأن
+# curl_cffi/المتصفح "يُفترَض أن يعمل"، بل قياسًا مباشرًا عبر خدمة تحليل
+# عامة معروفة ومُستخدَمة على نطاق واسع لهذا الغرض تحديدًا (tls.peet.ws).
+TLS_FINGERPRINT_ECHO_URL = "https://tls.peet.ws/api/all"
+
+# بصمة JA3 القياسية المعروفة تمامًا لمكتبة Python requests/urllib3 (بلا أي
+# تخصيص) — موثَّقة كإشارة حظر فورية لدى عدة WAFs بصرف النظر عن أي ترويسات
+# User-Agent مصطنعة فوقها (راجع Scrappey: "Chrome/128 but the JA3 hash is
+# cd08e31494f9531f560d64c695473da9 — the well-known Python requests
+# fingerprint"). مرجع ثابت للمقارنة الفورية بلا حاجة تفسير.
+KNOWN_GIVEAWAY_JA3_HASHES = {
+    "cd08e31494f9531f560d64c695473da9": "بصمة Python requests/urllib3 القياسية (تُكشَف فورًا لدى معظم WAFs بصرف النظر عن أي User-Agent مُزيَّف فوقها)",
+}
+
+
+def _extract_tls_fingerprint_fields(data: dict) -> dict:
+    """يستخرج الحقول الأهم من استجابة tls.peet.ws/api/all — يحتفظ
+    بالقاموسين الفرعيين tls/http2 كاملين خامَين أيضًا (لا فقط الحقول
+    المُستخرَجة) لأن أسماء الحقول الدقيقة قد تتغيّر مستقبلًا بتحديثات
+    الخدمة، وأي حقل إضافي مفيد لا يستحق فقدانه بانتقاء صارم مسبقًا."""
+    tls = data.get("tls") or {}
+    http2 = data.get("http2") or {}
+    ja3_hash = tls.get("ja3_hash")
+    return {
+        "ja3_hash": ja3_hash,
+        "ja4": tls.get("ja4"),
+        "peetprint_hash": tls.get("peetprint_hash"),
+        "akamai_http2_fingerprint": http2.get("akamai_fingerprint"),
+        "akamai_http2_fingerprint_hash": http2.get("akamai_fingerprint_hash"),
+        "negotiated_http_version": data.get("http_version") or http2.get("http_version"),
+        "known_giveaway_signature": KNOWN_GIVEAWAY_JA3_HASHES.get(ja3_hash),
+        "raw_tls": tls, "raw_http2": http2,
+    }
+
+
+def _tls_fingerprint_echo_static_sync() -> dict:
+    """[إضافة] بصمة _HTTP_SESSION (Python requests/urllib3 — نفس ما
+    يستخدمه static_probe وfetch_mode=http الإنتاجي) كما تراها خدمة تحليل
+    خارجية فعليًا، لا كافتراض نظري. يُشغَّل مرة واحدة فقط لكل تشغيلة
+    تشخيص كاملة (بصمة عميلنا لا تختلف باختلاف الرابط المُشخَّص) احترامًا
+    لكونها خدمة عامة مجانية لطرف ثالث — فشلها لا يوقف بقية التشخيص."""
+    try:
+        resp = _HTTP_SESSION.get(TLS_FINGERPRINT_ECHO_URL, timeout=15)
+        return _extract_tls_fingerprint_fields(resp.json())
+    except Exception as e:
+        return {"error": f"{e}"}
+
+
+def _tls_fingerprint_echo_curl_cffi_sync(impersonate: str) -> dict:
+    """[إضافة] نفس القياس، لكل بصمة curl_cffi (chrome/firefox/safari) على
+    حدة — إثبات فعلي هل انتحال curl_cffi يُنتج JA4/JA4H مطابقَين فعليًا
+    لمتصفح حقيقي بهذه البيئة تحديدًا (إصدار curl_cffi ومكتبة TLS
+    الأساسية قد يؤثران)، لا افتراض أن الانتحال "يُفترَض أن يعمل"."""
+    try:
+        from curl_cffi import requests as _curl_requests
+    except ImportError as e:
+        return {"error": f"حزمة curl_cffi غير مثبَّتة: {e}"}
+    try:
+        resp = _curl_requests.get(TLS_FINGERPRINT_ECHO_URL, impersonate=impersonate, timeout=15)
+        return _extract_tls_fingerprint_fields(resp.json())
+    except Exception as e:
+        return {"error": f"{e}"}
+
+
+async def _tls_fingerprint_echo_browser(context) -> dict:
+    """[إضافة] عبر context.request — مكدّس شبكة Chromium الفعلي نفسه الذي
+    يستخدمه page.goto بالإنتاج (لا مكتبة بايثون منفصلة بديلة عنه) — هذه
+    هي البصمة الحقيقية التي يراها أي موقع فعليًا من متصفح الإنتاج بإعداداته
+    الحالية (_STEALTH + فلاجات الإطلاق --disable-blink-features)."""
+    try:
+        resp = await context.request.get(TLS_FINGERPRINT_ECHO_URL, timeout=15000)
+        data = await resp.json()
+        return _extract_tls_fingerprint_fields(data)
+    except Exception as e:
+        return {"error": f"{e}"}
+# =====================================================================
+
+
 def _curl_cffi_probe_one_sync(url: str, impersonate: str) -> dict:
     """[إضافة — بصمة TLS/HTTP جديدة، مسبار مقارَن بجانب الموجود لا شجرة
     تستبعده] static_probe (مكتبة requests العادية) يحمل بصمة TLS/HTTP2
@@ -906,6 +991,58 @@ async def _no_stealth_reference_probe(browser, url: str) -> dict:
     return result
 
 
+# [إضافة — تمييز أحجام الصور، راجع الطلب الأخير] أبعاد إعلانات قياسية
+# موثَّقة (IAB Display Ad Unit Portfolio) — تطابق تام لأحد هذه الأزواج
+# إشارة أقوى من "شاذ عن أغلب صور هذا الموقع بالذات" لأنها لا تعتمد على
+# توزيع الموقع المحدَّد، بل على معيار صناعي عام.
+IAB_STANDARD_AD_SIZES = {
+    (300, 250), (336, 280), (728, 90), (300, 600), (320, 50), (320, 100),
+    (160, 600), (970, 250), (970, 90), (250, 250), (200, 200), (180, 150),
+    (120, 600), (300, 1050), (320, 480), (240, 400), (468, 60), (234, 60),
+    (88, 31), (120, 90), (120, 60), (120, 240), (125, 125), (220, 250),
+    (600, 314), (300, 100), (580, 400),
+}
+
+
+def _analyze_image_dimensions(image_metadata_probe: list[dict]) -> dict:
+    """[إضافة — تمييز أحجام الصور لمعرفة ما ليس من المانهوا] يُحسَب بالكامل
+    من image_metadata_probe الموجود أصلًا (naturalWidth/naturalHeight بعد
+    تحميل كل صورة فعليًا بالمتصفح) — بلا أي طلب شبكي إضافي. توزيع
+    (width, height) الفعلي لكل الصور المطابقة، مع العرض الأكثر تكرارًا
+    (الأرجح كونه عرض صفحة المحتوى القياسي لهذا الموقع)، وعلم منفصل لكل
+    صورة تطابق أحد أبعاد IAB القياسية تمامًا.
+    [تنبيه صريح — حدود الفكرة] العرض وحده هو الإشارة الأثبت لمواقع
+    الويبتون (تمرير عمودي، الطول يتفاوت طبيعيًا بين الصفحات بحسب تقطيع
+    الشريط) — الاعتماد على الطول هناك يُخرج صفحات حقيقية كثيرة كشاذة خطأً.
+    لمواقع المانجا المقطَّعة صفحات، نسبة العرض/الطول أدق من العرض وحده.
+    صفحة استثنائية شرعية (ملوّنة إضافية/مزدوجة spread) شذوذ حجمي حقيقي
+    لكنها محتوى صحيح — لذا هذا كله بيانات خام للمراجعة، بلا أي استبعاد
+    تلقائي مُدمَج هنا، بنفس فلسفة كل الحقول المُضافة سابقًا."""
+    dims = [
+        (it.get("natural_width"), it.get("natural_height"))
+        for it in image_metadata_probe
+        if it.get("natural_width") and it.get("natural_height")
+    ]
+    dim_counts = Counter(dims)
+    width_counts = Counter(w for w, _h in dims)
+    most_common_width = width_counts.most_common(1)[0][0] if width_counts else None
+
+    iab_matches = []
+    for it in image_metadata_probe:
+        w, h = it.get("natural_width"), it.get("natural_height")
+        if w and h and (w, h) in IAB_STANDARD_AD_SIZES:
+            iab_matches.append({"width": w, "height": h, "src": it.get("current_src") or it.get("src_attr")})
+
+    return {
+        "dimension_distribution": {f"{w}x{h}": c for (w, h), c in dim_counts.most_common(20)},
+        "most_common_width": most_common_width,
+        "widths_differing_from_most_common": sorted({
+            w for w, _h in dims if most_common_width is not None and w != most_common_width
+        }),
+        "iab_standard_ad_size_matches": iab_matches,
+    }
+
+
 IMAGE_METADATA_JS = """(selectors) => {
     const seen = new Set();
     const out = [];
@@ -1172,7 +1309,7 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
         "extended_challenge_probe": None,
         # [إضافة — سد فجوة "بيانات كل الصور"] راجع تعليقات الدوال أعلاه
         # (IMAGE_METADATA_JS، _image_dimensions_probe، إلخ) للتبرير الكامل.
-        "image_metadata_probe": [], "image_url_kind_counts": {},
+        "image_metadata_probe": [], "image_url_kind_counts": {}, "image_dimension_analysis": {},
         "canvas_elements": [], "service_worker_scopes": None,
         "blob_data_extraction_probe": None, "canvas_extraction_probe": None,
         "image_dimensions_probe": None, "url_quality_param_probe": None,
@@ -1405,6 +1542,7 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     result["image_url_kind_counts"] = dict(
         Counter(it.get("url_kind") for it in (result["image_metadata_probe"] or []))
     )
+    result["image_dimension_analysis"] = _analyze_image_dimensions(result["image_metadata_probe"] or [])
 
     try:
         result["canvas_elements"] = await page.evaluate(CANVAS_ELEMENTS_JS)
@@ -1679,6 +1817,14 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
         _incomplete = sum(1 for it in _im_meta if not it.get("complete") or not it.get("natural_width"))
         print(f"   من أصل {len(_im_meta)} عنصر <img> مطابق: currentSrc يخالف src بـ{_differs} | "
               f"داخل <picture> بـ{_in_pic} | لم يكتمل تحميله فعليًا (naturalWidth=0) بـ{_incomplete}")
+    _dim = browser_r.get("image_dimension_analysis") or {}
+    if _dim.get("dimension_distribution"):
+        print(f"   📏 توزيع أبعاد الصور (عرضxطول): {_dim['dimension_distribution']}")
+        print(f"      العرض الأكثر تكرارًا (الأرجح عرض صفحة المحتوى القياسي): {_dim['most_common_width']}px"
+              + (f" | عروض أخرى ظهرت: {_dim['widths_differing_from_most_common']}"
+                 if _dim.get("widths_differing_from_most_common") else ""))
+        if _dim.get("iab_standard_ad_size_matches"):
+            print(f"      🚩 صور تطابق أبعاد إعلانات قياسية (IAB) تمامًا: {_dim['iab_standard_ad_size_matches']}")
     if browser_r.get("canvas_elements"):
         print(f"   🖼️ عناصر <canvas> موجودة بالصفحة ({len(browser_r['canvas_elements'])}): {browser_r['canvas_elements'][:3]}")
     if browser_r.get("service_worker_scopes"):
@@ -1888,12 +2034,48 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     else:
         print(f"   IP: {runner_info.get('ip')} | ASN/مزوّد: {runner_info.get('org_asn')} | الموقع: {runner_info.get('city')}/{runner_info.get('country')}")
 
+    # [إضافة — بحث معمَّق 2026] بصمة JA4/JA3/HTTP2 الفعلية لكل مسار جلب —
+    # مرة واحدة فقط لكل التشغيلة (راجع تعليقات الدوال أعلى الملف)، عبر
+    # خدمة عامة لطرف ثالث (tls.peet.ws) — فشلها لا يوقف بقية التشخيص.
+    print("🔏 قياس بصمة JA4/JA3/HTTP2 الفعلية لكل مسار جلب (عبر tls.peet.ws/api/all)...")
+    tls_fp_static = await asyncio.to_thread(_tls_fingerprint_echo_static_sync)
+    if tls_fp_static.get("error"):
+        print(f"   ⚠️ Python requests/static: {tls_fp_static['error']}")
+    else:
+        print(f"   Python requests/static: ja3={tls_fp_static.get('ja3_hash')} ja4={tls_fp_static.get('ja4')}"
+              + (f" ⚠️ {tls_fp_static.get('known_giveaway_signature')}" if tls_fp_static.get("known_giveaway_signature") else ""))
+    tls_fp_curl_cffi = {}
+    for _profile in CURL_CFFI_IMPERSONATE_PROFILES:
+        _fp = await asyncio.to_thread(_tls_fingerprint_echo_curl_cffi_sync, _profile)
+        tls_fp_curl_cffi[_profile] = _fp
+        if _fp.get("error"):
+            print(f"   ⚠️ curl_cffi[{_profile}]: {_fp['error']}")
+        else:
+            print(f"   curl_cffi[{_profile}]: ja3={_fp.get('ja3_hash')} ja4={_fp.get('ja4')}")
+
     reports = []
     async with async_playwright() as p:
         browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+
+        _tmp_ctx = await browser.new_context(user_agent=UA)
+        tls_fp_browser = await _tls_fingerprint_echo_browser(_tmp_ctx)
+        await _tmp_ctx.close()
+        if tls_fp_browser.get("error"):
+            print(f"   ⚠️ متصفح الإنتاج الفعلي: {tls_fp_browser['error']}")
+        else:
+            print(f"   متصفح الإنتاج الفعلي: ja3={tls_fp_browser.get('ja3_hash')} ja4={tls_fp_browser.get('ja4')}")
+
+        tls_fingerprint_comparison = {
+            "static_requests": tls_fp_static,
+            "curl_cffi": tls_fp_curl_cffi,
+            "production_browser": tls_fp_browser,
+            "note": "يُقاس مرة واحدة فقط لكل التشغيلة (بصمة عميلنا نفسه لا تختلف باختلاف الرابط المُشخَّص) عبر خدمة عامة لطرف ثالث (tls.peet.ws) — فشل جزء منها لا يوقف بقية التشخيص.",
+        }
+
         for url in chapter_urls:
             try:
                 report = await diagnose_url(browser, url, diag_dir, runner_info)
+                report["client_tls_fingerprint_comparison"] = tls_fingerprint_comparison
                 reports.append(report)
             except Exception as e:
                 print(f"❌ خطأ غير متوقع أثناء تشخيص {url}: {e}")
