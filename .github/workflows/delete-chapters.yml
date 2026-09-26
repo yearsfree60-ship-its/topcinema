@@ -12,6 +12,10 @@ on:
 
 permissions:
   contents: write
+  # [إضافة] لازمة حصرًا لخطوة حذف تشغيلات GitHub Actions المرتبطة أدناه
+  # (DELETE /repos/{owner}/{repo}/actions/runs/{run_id}) — موثَّق رسميًا أن
+  # هذه الصلاحية تحديدًا مطلوبة حتى مع github.token الافتراضي لنفس المستودع.
+  actions: write
 
 jobs:
   delete:
@@ -100,18 +104,36 @@ jobs:
 
             git add -- "$manifest_path"
 
-            # [إضافة] يشمل الحذف الآن سجلات التشغيلات (output/runs/run-<id>.json)
-            # وأي أثر مشابه لها متعلق بالفصول/المانهوات المحذوفة، لا
-            # manifest.json الرئيسي فقط — راجع تبرير كامل بترويسة
-            # scrub-run-manifests بـdelete_manager.py. يُعاد استدعاؤها هنا
-            # داخل apply_and_stage (لا مرة واحدة فقط) كي تعمل دائمًا على
-            # أحدث نسخة origin فعليًا لملفات runs/*.json بعد كل git reset/
-            # fetch بمحاولات إعادة الدفع، بنفس ضمان manifest.json تمامًا.
+            # [تصحيح] يشمل الحذف الآن سجلات التشغيلات (output/runs/run-<id>.json)
+            # وأي أثر مشابه لها — مقارنة فعلية بالقرص لا بـDELETE_PAYLOAD هذه
+            # التشغيلة فقط: أي فصل مذكور بسجلّ لم يعد موجودًا فعليًا كمجلد
+            # على القرص (سواء حُذف بهذه التشغيلة بالضبط أعلاه، أو كان سجلّه
+            # يتيمًا من قبل) يُزال منه — راجع تبرير كامل بترويسة
+            # scrub-run-manifests بـdelete_manager.py. يُستدعى هنا بعد حلقة
+            # git rm لمجلدات targets.txt مباشرة (فالقرص عندها يعكس الفصول
+            # المتبقية فعليًا)، وداخل apply_and_stage (لا مرة واحدة فقط) كي
+            # يعمل دائمًا على أحدث نسخة origin فعليًا بكل محاولة إعادة دفع،
+            # بنفس ضمان manifest.json تمامًا.
             while IFS= read -r line; do
               action="${line%% *}"
               rel_path="${line#* }"
               if [ "$action" = "DELETE" ]; then
                 git rm --ignore-unmatch --quiet -- "$git_rel_output/$rel_path" || true
+                # [إضافة] السجلّ الذي أصبح فارغًا كليًا يعني أن كل فصول
+                # تشغيلة الضغط تلك لم يعد لها وجود — نلتقط run_id الحقيقي
+                # لمنصة GitHub Actions من اسم الملف نفسه (run-<RUN_ID>.json،
+                # وRUN_ID هذا بالضبط هو github.run_id الذي وسم به
+                # compress_chapters.py وقت كتابته — لا حاجة لأي مطابقة أو
+                # تخمين) لحذف تشغيلة الضغط نفسها من سجلّ Actions بخطوة
+                # لاحقة بعد نجاح الدفع. >> لا > عمدًا: قد تُستدعى
+                # apply_and_stage أكثر من مرة (إعادة محاولات الدفع)، ونجمع
+                # عبر كل المحاولات ثم نُفرّد (sort -u) بالخطوة اللاحقة.
+                run_id="${rel_path#runs/run-}"
+                run_id="${run_id%.json}"
+                case "$run_id" in
+                  ''|*[!0-9]*) ;;  # ليس رقمًا صرفًا (اسم ملف غير متوقَّع) — تجاهل بصمت، لا حذف API لاحقًا
+                  *) echo "$run_id" >> /tmp/deleted_run_ids.txt ;;
+                esac
               elif [ "$action" = "KEEP" ]; then
                 git add -- "$git_rel_output/$rel_path"
               fi
@@ -149,6 +171,60 @@ jobs:
             exit 1
           fi
           echo "✅ تم الحذف والدفع بنجاح"
+
+      # [إضافة] حذف تشغيلات GitHub Actions المرتبطة فعليًا (لا الملف فقط):
+      # لكل run-<RUN_ID>.json أصبح فارغًا كليًا (كل فصوله لم يعد لها وجود)،
+      # نحذف تشغيلة "ضغط فصول المانهوا" المطابقة بنفس RUN_ID من سجلّ
+      # Actions نفسه — راجع بحث فعلي بتوثيق GitHub الرسمي: DELETE
+      # /repos/{owner}/{repo}/actions/runs/{run_id} يعمل بـgithub.token
+      # الافتراضي لنفس المستودع طالما صلاحية actions: write مُمنوحة أعلاه
+      # (لا حاجة لـPAT خارجي). الربط بـRUN_ID مضمون 100% بلا أي تخمين —
+      # اسم الملف هو ذات github.run_id الذي وسم به compress_chapters.py
+      # وقت كتابته، فلا احتمال لحذف تشغيلة خاطئة من ورشة عمل أخرى.
+      #
+      # [حذر — لا رجعة فيه] حذف تشغيلة Actions نهائي تمامًا (لا سلة مهملات،
+      # موثَّق صراحة). best-effort عمدًا (curl لا يُسقِط -e، ولا exit 1 عند
+      # فشل فردي): تشغيلة واحدة قد تكون قيد التنفيذ فعليًا وقتها فتُرفَض
+      # الحذف (نادر لتشغيلات قديمة منتهية)، أو مُحذوفة سلفًا (404 — عادي
+      # كليًا لو أُعيد تشغيل هذا الـworkflow على نفس delete_payload)؛ كلاهما
+      # لا يجب أن يُفشل التشغيلة الحالية بعد نجاح حذف الفصول/المانهوات
+      # الفعلي فعليًا بالخطوة السابقة — هذا مجرّد تنظيف إضافي لسجلّ Actions.
+      - name: حذف تشغيلات GitHub Actions المرتبطة
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s /tmp/deleted_run_ids.txt ]; then
+            echo "لا تشغيلات Actions مرتبطة أصبحت يتيمة بالكامل — لا شيء يُحذَف"
+            exit 0
+          fi
+          sort -u -o /tmp/deleted_run_ids.txt /tmp/deleted_run_ids.txt
+          echo "تشغيلات Actions مرشَّحة للحذف: $(wc -l < /tmp/deleted_run_ids.txt)"
+
+          deleted=0
+          skipped=0
+          while IFS= read -r run_id; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" -X DELETE \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/runs/${run_id}")
+            case "$status" in
+              204)
+                echo "  ✅ حُذفت تشغيلة Actions #${run_id}"
+                deleted=$((deleted + 1))
+                ;;
+              404)
+                echo "  ⏭️ تشغيلة Actions #${run_id} غير موجودة أصلًا (محذوفة سلفًا على الأرجح)"
+                skipped=$((skipped + 1))
+                ;;
+              *)
+                echo "  ⚠️ تعذّر حذف تشغيلة Actions #${run_id} (HTTP ${status}) — تُرِكت كما هي"
+                skipped=$((skipped + 1))
+                ;;
+            esac
+          done < /tmp/deleted_run_ids.txt
+          echo "ملخّص: حُذف $deleted، تُخُطّي/فشل $skipped"
 
       # [إضافة] jsDelivr يخزّن نسخة manifest.json مؤقتًا حتى 7 أيام افتراضيًا
       # (توثيق jsDelivr الرسمي: jsdelivr.com/tools/purge) — بدون هذه الخطوة
