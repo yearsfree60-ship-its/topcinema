@@ -216,6 +216,277 @@ def _runner_network_info_sync() -> dict:
         return {"ip": None, "org_asn": None, "city": None, "country": None, "error": f"{e}"}
 
 
+# ============================== كشف خادم الأصل الحقيقي خلف Cloudflare ==============================
+# [إضافة] راجع طلب صريح: عناوين Cloudflare الظاهرة (IP الحافة) ليست
+# الخادم الفعلي أبدًا — كل ما جُمِع لحد الآن (cdn-cgi/trace، cf-ray colo،
+# شهادة TLS عبر _tls_and_server_info_sync) يصف حافة Cloudflare نفسها، لا
+# المصدر خلفها. هذا القسم يحاول استنتاج IP الأصل عبر مصادر خارجية عامة
+# (سجلات شهادات SSL تاريخية + Shodan)، ثم يتحقّق ميدانيًا بمحاولة اتصال
+# مباشرة بأي IP مُرشَّح — بلا أي افتراض أن الاستنتاج صحيح بالضرورة (مواقع
+# كثيرة تُبقي IP الأصل خلف Cloudflare حصرًا بقاعدة جدار ناري صارمة، فمحاولة
+# الاتصال المباشر تفشل حتى لو كان IP المُرشَّح صحيحًا فعليًا تاريخيًا).
+# كل هذا بيانات خام بحتة للمراجعة اليدوية، بنفس فلسفة بقية هذا الملف —
+# لا قرار "استخدم هذا IP بالإنتاج" آليًا هنا إطلاقًا.
+
+_IPV4_LITERAL_PATTERN = re.compile(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
+
+
+def _ssl_history_probe_sync(domain: str) -> dict:
+    """[إضافة] سجلات شهادات SSL التاريخية عبر crt.sh (شفافية الشهادات،
+    عامة بلا مفتاح API) — أي IP ظهر يومًا كـSAN حرفي (نادر لكن يحدث ببعض
+    منصات الاستضافة) أو ضمن سجل CN قديم قبل الانتقال لـCloudflare يُلتقَط
+    هنا. هذا مصدر تكميلي ضعيف نسبيًا (أغلب الشهادات لا تحمل IP حرفيًا أصلًا)
+    — القيمة الحقيقية غالبًا من مطابقة يدوية لاحقة بين subdomains تاريخية
+    ظهرت بنفس الاستعلام (mail.، ftp.، direct.، origin. وأمثالها كثيرًا ما
+    تبقى تشير للخادم الأصلي مباشرة حتى بعد إضافة Cloudflare للنطاق
+    الرئيسي) — لذا تُرجَع كل قيم name_value الخام أيضًا، لا الـIPs فقط."""
+    result = {
+        "domain": domain, "tested": False, "certificates_found": 0,
+        "historical_ips_literal": [], "subdomains_seen": [], "error": None,
+    }
+    try:
+        resp = requests.get(
+            "https://crt.sh/", params={"q": f"%.{domain}", "output": "json"}, timeout=20,
+        )
+        result["tested"] = True
+        if not resp.ok:
+            result["error"] = f"status={resp.status_code}"
+            return result
+        try:
+            certs = resp.json()
+        except Exception as e:
+            # crt.sh يُرجع أحيانًا استجابة فارغة/غير JSON صالحة تحت حمل عالٍ
+            # — خطأ بحد ذاته بيانات تشخيصية، لا كسر للتشخيص كله.
+            result["error"] = f"استجابة غير صالحة كـJSON: {e}"
+            return result
+        result["certificates_found"] = len(certs) if isinstance(certs, list) else 0
+
+        ip_literals: set[str] = set()
+        subdomains: set[str] = set()
+        for cert in certs if isinstance(certs, list) else []:
+            name_value = (cert.get("name_value") or "").strip()
+            for line in name_value.split("\n"):
+                line = line.strip().lower()
+                if not line:
+                    continue
+                if _IPV4_LITERAL_PATTERN.match(line):
+                    ip_literals.add(line)
+                elif line.endswith(domain.lower()):
+                    subdomains.add(line)
+        result["historical_ips_literal"] = sorted(ip_literals)
+        # [حد أقصى صريح] مئات/آلاف subdomains ممكنة لنطاق نشط قديم — لا
+        # فائدة تشخيصية من إغراق التقرير، أول 40 فرز أبجدي كافٍ للمراجعة
+        # اليدوية (subdomain الأصل غالبًا باسم دلالي يُلاحَظ بسهولة: origin،
+        # direct، old، backend، وأمثالها).
+        result["subdomains_seen"] = sorted(subdomains)[:40]
+    except Exception as e:
+        result["error"] = f"{e}"
+    return result
+
+
+def _dns_history_resolve_sync(hostnames: list[str]) -> dict:
+    """[إضافة] محاولة تحليل DNS مباشر (A record) لكل subdomain مُرشَّح من
+    crt.sh — لو subdomain مثل origin.example.com أو direct.example.com ما
+    زال يشير لـIP لا يمر عبر مدى Cloudflare المعروف (نطاقات AS13335)، فهذا
+    مرشَّح قوي جدًا لخادم الأصل الحقيقي، أقوى بكثير من أي IP تاريخي وحده
+    بلا سياق. حقل خام: كل subdomain مع IP-ه الحالي فقط (لا حكم تلقائي هنا
+    على كونه Cloudflare أم لا — ذاك بمرحلة تالية منفصلة عبر مطابقة نطاقات
+    IP المعروفة، أو ببساطة بالمراجعة اليدوية لاحقًا)."""
+    result = {"resolved": {}, "unresolved": [], "error": None}
+    for host in hostnames:
+        try:
+            ip = socket.gethostbyname(host)
+            result["resolved"][host] = ip
+        except Exception:
+            result["unresolved"].append(host)
+    return result
+
+
+def _shodan_ip_probe_sync(ip: str) -> dict:
+    """[إضافة] استعلام Shodan (عبر مفتاح API اختياري بمتغيّر بيئة
+    SHODAN_API_KEY — لا مفتاح مُضمَّن أو افتراضي هنا إطلاقًا) عن IP مُرشَّح:
+    المنظمة/المزوّد المستضيف الفعلي، والمنافذ/الخدمات المكشوفة. مزوّد
+    استضافة عادي (DigitalOcean، OVH، Hetzner...) بدل Cloudflare نفسها
+    إشارة قوية أن هذا IP هو الأصل فعلًا لا حافة إضافية. بلا المفتاح، يُرجَع
+    الحقل فارغًا بخطأ واضح بدل كسر بقية التشخيص — الخدمة اختيارية تمامًا."""
+    result = {
+        "ip": ip, "tested": False, "org": None, "isp": None,
+        "country": None, "ports_open": [], "services_sample": [],
+        "last_update": None, "error": None,
+    }
+    shodan_key = os.environ.get("SHODAN_API_KEY", "").strip()
+    if not shodan_key:
+        result["error"] = "SHODAN_API_KEY غير مضبوط بمتغيرات البيئة — تخطّي (اختياري)"
+        return result
+    try:
+        resp = requests.get(
+            f"https://api.shodan.io/shodan/host/{ip}", params={"key": shodan_key}, timeout=15,
+        )
+        result["tested"] = True
+        if resp.status_code == 401:
+            result["error"] = "مفتاح Shodan مرفوض (401)"
+            return result
+        if resp.status_code == 404:
+            result["error"] = "لا بيانات مفهرَسة بـShodan لهذا الـIP (404)"
+            return result
+        if not resp.ok:
+            result["error"] = f"status={resp.status_code}"
+            return result
+        data = resp.json()
+        result["org"] = data.get("org")
+        result["isp"] = data.get("isp")
+        result["country"] = data.get("country_name")
+        result["last_update"] = data.get("last_update")
+        ports = sorted(set(data.get("ports") or []))
+        result["ports_open"] = ports
+        services = {}
+        for item in data.get("data") or []:
+            p = item.get("port")
+            if p is not None and p not in services:
+                services[p] = item.get("product") or item.get("_shodan", {}).get("module") or "؟"
+        result["services_sample"] = [f"{p}/{services[p]}" for p in sorted(services)][:8]
+    except Exception as e:
+        result["error"] = f"{e}"
+    return result
+
+
+def _direct_ip_tls_probe_sync(ip: str, sni_hostname: str, port: int = 443) -> dict:
+    """[إضافة] التحقق الميداني الحاسم: الاتصال بـIP المُرشَّح مباشرة على
+    المنفذ 443، بإرسال SNI = اسم النطاق الحقيقي (ضروري — أغلب الخوادم
+    الحديثة تستضيف عدة نطاقات بنفس IP وتحتاج SNI لاختيار الشهادة الصحيحة)،
+    ثم مقارنة الشهادة المُستلَمة فعليًا: لو CN/SAN يطابق نطاق الهدف ولم
+    تُصدرها Cloudflare نفسها (Cloudflare تُصدر شهاداتها الخاصة عادة بـ
+    'CN = <نطاق>, O ≠ Cloudflare' لشهادات العميل المُدارة، لكن الفرق الحاسم
+    هو ببساطة: هل IP هذا أصلًا ضمن مدى Cloudflare المعروف أم لا — ذاك يُترَك
+    كمقارنة يدوية لاحقة بقائمة https://www.cloudflare.com/ips/ الرسمية
+    بدل تضمينها هنا كقائمة ثابتة قد تصبح قديمة). محاولة HEAD إضافية بـHost
+    header صريح تكشف هل الخادم يستجيب لمحتوى الموقع فعليًا (200/30x) أم
+    يرفض الاتصال المباشر كليًا (403/عدم استجابة) — كلا الحالتين بيانات
+    خام قيّمة بحد ذاتها."""
+    result = {
+        "target_ip": ip, "port": port, "sni_used": sni_hostname,
+        "tcp_reachable": False, "tls_handshake_ok": False,
+        "tls_cert_cn": None, "tls_cert_san": [], "tls_cert_issuer_org": None,
+        "cert_matches_target_domain": None,
+        "http_head_status": None, "http_head_server_header": None,
+        "elapsed_sec": None, "error": None,
+    }
+    t0 = time.monotonic()
+    try:
+        with socket.create_connection((ip, port), timeout=10) as sock:
+            result["tcp_reachable"] = True
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+            try:
+                with ctx.wrap_socket(sock, server_hostname=sni_hostname) as ssock:
+                    cert_bin = ssock.getpeercert(binary_form=False)
+                    # getpeercert() بلا تحقق (CERT_NONE) قد يُرجع قاموسًا فارغًا
+                    # ببعض إصدارات ssl — نطلب النسخة الثنائية أيضًا كاحتياط
+                    # لكن نكتفي هنا بالنص العام إن توفّر.
+                    if not cert_bin:
+                        result["error"] = "تعذّر قراءة تفاصيل الشهادة (النسخة الثنائية فقط متاحة)"
+                    else:
+                        subject = dict(x[0] for x in cert_bin.get("subject", []))
+                        issuer = dict(x[0] for x in cert_bin.get("issuer", []))
+                        result["tls_cert_cn"] = subject.get("commonName")
+                        result["tls_cert_issuer_org"] = issuer.get("organizationName") or issuer.get("commonName")
+                        san_entries = cert_bin.get("subjectAltName", [])
+                        result["tls_cert_san"] = [v for k, v in san_entries if k == "DNS"]
+                    result["tls_handshake_ok"] = True
+            except Exception as e:
+                result["error"] = f"فشلت مصافحة TLS: {e}"
+    except socket.timeout:
+        result["error"] = "انتهاء المهلة الزمنية (المنفذ لا يستجيب — على الأرجح محجوب بجدار ناري)"
+    except ConnectionRefusedError:
+        result["error"] = "رُفض الاتصال صراحةً (المنفذ مغلق على هذا IP)"
+    except Exception as e:
+        result["error"] = f"{e}"
+
+    if result["tls_handshake_ok"]:
+        all_names = ([result["tls_cert_cn"]] if result["tls_cert_cn"] else []) + result["tls_cert_san"]
+        target_l = sni_hostname.lower()
+        result["cert_matches_target_domain"] = any(
+            n and (n.lower() == target_l or (n.lower().startswith("*.") and target_l.endswith(n.lower()[1:])))
+            for n in all_names
+        )
+        # محاولة HTTP خام فوق نفس القناة — طلب منفصل عبر requests (أبسط من
+        # إعادة استخدام نفس مقبس ssl يدويًا) بـHost header صريح وبلا تحقق
+        # شهادة (verify=False متعمَّد هنا فقط لهذا الفحص التشخيصي تحديدًا).
+        try:
+            r = requests.get(
+                f"https://{ip}/", headers={"Host": sni_hostname, "User-Agent": UA},
+                timeout=15, verify=False, allow_redirects=False,
+            )
+            result["http_head_status"] = r.status_code
+            result["http_head_server_header"] = r.headers.get("server")
+        except Exception as e:
+            result["error"] = ((result["error"] + " | ") if result["error"] else "") + f"فشل طلب HTTP مباشر: {e}"
+
+    result["elapsed_sec"] = round(time.monotonic() - t0, 2)
+    return result
+
+
+async def _origin_server_discovery(url: str) -> dict:
+    """[إضافة] المسار الكامل لكشف خادم الأصل خلف Cloudflare — يُشغَّل مرة
+    واحدة فقط لكل رابط (بصمة الاستضافة خاصية على مستوى النطاق لا الصفحة
+    المفردة، فلا فائدة من تكراره لكل رابط فصل من نفس الموقع). يُجمِّع 3
+    مصادر مستقلة (سجلات SSL/crt.sh، تحليل DNS لـsubdomains مُكتشَفة،
+    Shodan اختياري) لبناء قائمة IPs مُرشَّحة، ثم يتحقق ميدانيًا من أول 3
+    مرشَّحين فقط (سقف زمني صريح — كل مرشَّح يحتاج مصافحة TLS كاملة وقد
+    يتأخر عدة ثوانٍ لو محجوبًا). بيانات خام بالكامل للمراجعة البشرية —
+    لا قرار تلقائي 'هذا هو الأصل' أو 'استخدم هذا IP بالإنتاج' هنا إطلاقًا،
+    فالنتيجة السلبية (فشل كل المحاولات) بيانات مفيدة بحد ذاتها (يرجّح أن
+    الموقع يفرض Cloudflare حصريًا عبر جدار ناري على مستوى الشبكة، لا فقط
+    DNS-only proxying يمكن الالتفاف حوله)."""
+    domain = urlparse(url).hostname or ""
+    result = {
+        "domain": domain, "ssl_certificate_history": None, "dns_history_resolve": None,
+        "shodan_probes": [], "direct_connection_attempts": [], "candidate_ips": [],
+    }
+    if not domain:
+        return result
+
+    ssl_hist = await asyncio.to_thread(_ssl_history_probe_sync, domain)
+    result["ssl_certificate_history"] = ssl_hist
+
+    dns_hist = None
+    if ssl_hist.get("subdomains_seen"):
+        # فقط subdomains لا تطابق النطاق نفسه أو www.، بحد أقصى 15 لتقييد
+        # زمن التحليل الكلي — الأهم دلاليًا (origin/direct/old/backend...)
+        # عادة يظهر بأول النتائج المفروزة أبجديًا على أي حال.
+        candidates_subs = [
+            s for s in ssl_hist["subdomains_seen"]
+            if s not in (domain.lower(), f"www.{domain.lower()}") and not s.startswith("*.")
+        ][:15]
+        if candidates_subs:
+            dns_hist = await asyncio.to_thread(_dns_history_resolve_sync, candidates_subs)
+    result["dns_history_resolve"] = dns_hist
+
+    candidate_ips: list[str] = []
+    candidate_ips.extend(ssl_hist.get("historical_ips_literal") or [])
+    if dns_hist and dns_hist.get("resolved"):
+        candidate_ips.extend(dns_hist["resolved"].values())
+    candidate_ips = dedupe(candidate_ips)
+    result["candidate_ips"] = candidate_ips
+
+    if not candidate_ips:
+        return result
+
+    # Shodan اختياري (بلا مفتاح API يُرجع خطأً واضحًا فورًا بلا طلب شبكي
+    # فعلي — لا حاجة لتقييد العدد هنا لأن الفشل المبكر رخيص).
+    for ip in candidate_ips[:5]:
+        shodan_r = await asyncio.to_thread(_shodan_ip_probe_sync, ip)
+        result["shodan_probes"].append(shodan_r)
+
+    # التحقق الميداني: أول 3 مرشَّحين فقط (سقف زمني — راجع تبرير الدالة).
+    for ip in candidate_ips[:3]:
+        direct_r = await asyncio.to_thread(_direct_ip_tls_probe_sync, ip, domain)
+        result["direct_connection_attempts"].append(direct_r)
+
+    return result
+
+
 # ============================== تشخيص عميق (DEEP_DIAGNOSTIC) ==============================
 # [إضافة] الخيار موجود فعليًا بملف الـworkflow (compress-chapters-11.yml،
 # متغيّر deep_diagnostic) ويُمرَّر كمتغيّر بيئة DEEP_DIAGNOSTIC منذ إضافته،
@@ -439,6 +710,81 @@ def _token_pagewide_frequency(html: str, token: str) -> int:
     return len(pattern.findall(html))
 
 
+def _classify_cf_mitigation(cf_mitigated_value: str | None, status_code: int | None,
+                             is_cloudflare: bool) -> dict:
+    """[جديد] تصنيف قيمة ترويسة cf-mitigated حسب توثيق Cloudflare الرسمي +
+    مصادر تقنية حديثة (2026): القيم "challenge"/"jschallenge"/
+    "managed_challenge"/"rate_limited" تعني تحديًا JS "قابلًا للحل نظريًا"
+    (نفس الجلسة/البصمة قد تنجح بمحاولة لاحقة) — بينما "block" (أو غياب
+    الترويسة كليًا رغم 403 من Cloudflare) يعني الرفض حدث **قبل** مرحلة تسجيل
+    نقاط بوت-مانجمنت أصلًا (على الأرجح قاعدة WAF/IP Access Rule صريحة ضد
+    نطاق IP)، فلا معنى فعليًا لأي محاولة "بصمة أفضل" — القرار سابق لفحص أي
+    بصمة إطلاقًا. هذا الفرق حاسم عمليًا: يحدّد هل تستحق تجربة patchright/
+    curl_cffi أصلًا، أم أن المشكلة IP بحتة بصرف النظر عن أي بصمة.
+
+    راجع: developers.cloudflare.com/waf (توثيق رسمي)، ومصادر مستقلة مؤكِّدة
+    (PR فعلي بمشروع مفتوح المصدر مايو 2026 يميّز نفس القيم بالضبط)."""
+    if not is_cloudflare:
+        return {"cf_mitigated_value": cf_mitigated_value, "mitigation_category": "not_cloudflare"}
+    if cf_mitigated_value:
+        v = cf_mitigated_value.strip().lower()
+        if v in ("challenge", "jschallenge", "managed_challenge", "rate_limited"):
+            category = "recoverable_challenge"
+        elif v == "block":
+            category = "hard_block_bot_management"
+        else:
+            category = f"unknown_value:{v}"
+        return {"cf_mitigated_value": cf_mitigated_value, "mitigation_category": category}
+    if status_code and status_code >= 400:
+        # Cloudflare (عبر ترويسة server) رفض الطلب لكن بلا ترويسة cf-mitigated
+        # إطلاقًا — إشارة قوية على قاعدة WAF/Firewall/IP Access Rule صريحة
+        # (لا تمر عبر محرك بوت-مانجمنت الذي يضع هذه الترويسة أصلًا).
+        return {"cf_mitigated_value": None, "mitigation_category": "waf_or_ip_rule_block_no_header"}
+    return {"cf_mitigated_value": None, "mitigation_category": "no_mitigation_observed"}
+
+
+def _fetch_cdn_cgi_trace_sync(base_url: str) -> dict:
+    """[جديد] يجلب /cdn-cgi/trace من نفس نطاق الهدف تحديدًا (لا
+    cloudflare.com العام — كل نطاق يستخدم Cloudflare يعرض هذا المسار
+    بنفسه، ويعكس بالضبط كيف يرى حافة Cloudflare اتصالنا لنفس المنطقة/
+    التوجيه المستخدَمة فعليًا لطلبات هذا الموقع). يكشف: عنوان IP كما تراه
+    Cloudflare (قد يختلف عمّا نظنه لو خلفنا وكيل/NAT)، رمز مركز البيانات
+    (colo) الذي وجّه إليه طلبنا، نسخة TLS/HTTP المتفاوَض عليها فعليًا —
+    بيانات أرضية موثوقة بدل افتراضها. هذا المسار عادة يستجيب حتى لو كان
+    الموقع نفسه محجوبًا بقاعدة WAF على مستوى المنطقة (مسار داخلي بحافة
+    Cloudflare، لا يمر بمنطق WAF الخاص بالنطاق بالضرورة) — لكن هذا افتراض
+    يُختبَر لا يُعتمَد عليه بلا تحقق، فالنتيجة (نجاح/فشل) بحد ذاتها بيانات
+    تشخيصية بقدر أهمية محتواها."""
+    parsed = urlparse(base_url)
+    trace_url = f"{parsed.scheme}://{parsed.netloc}/cdn-cgi/trace"
+    result = {"trace_url": trace_url, "status_code": None, "fields": {}, "error": None, "elapsed_sec": None}
+    _t0 = time.monotonic()
+    try:
+        resp = _HTTP_SESSION.get(trace_url, headers={"User-Agent": UA}, timeout=15)
+        result["elapsed_sec"] = round(time.monotonic() - _t0, 2)
+        result["status_code"] = resp.status_code
+        if resp.ok:
+            for line in resp.text.splitlines():
+                if "=" in line:
+                    k, _, v = line.partition("=")
+                    result["fields"][k.strip()] = v.strip()
+    except Exception as e:
+        result["elapsed_sec"] = round(time.monotonic() - _t0, 2)
+        result["error"] = f"{e}"
+    return result
+
+
+def _parse_cf_colo(cf_ray_value: str | None) -> str | None:
+    """[جديد] cf-ray بصيغة '<16-hex>-<COLO>' — اللاحقة رمز مركز بيانات
+    Cloudflare الذي عالج الطلب فعليًا (مثلًا IAD = واشنطن العاصمة). مقارنة
+    هذا الرمز بين مسابير مختلفة (ساكن/curl_cffi/متصفح) وبين تشغيلات مختلفة
+    تكشف: هل يُوجَّه رانر GitHub Actions دومًا لنفس مركز البيانات (توجيه
+    Anycast ثابت حسب مصدر الشبكة)، أم يتنقّل — قد يفسّر أي تفاوت بالنتائج."""
+    if not cf_ray_value or "-" not in cf_ray_value:
+        return None
+    return cf_ray_value.rsplit("-", 1)[-1] or None
+
+
 def _static_probe_sync(url: str) -> dict:
     result = {
         "status_code": None, "headers_of_interest": {}, "challenge_detected": False,
@@ -473,6 +819,13 @@ def _static_probe_sync(url: str) -> dict:
     result["protection_category"] = _classify_challenge_html(html)
     result["challenge_detected"] = result["protection_category"] != "none"
     result["protection_signatures"] = classify_protection_signatures(html)
+    # [جديد] تصنيف مباشر لطبقة الرفض — راجع تبرير كامل بترويسة _classify_cf_mitigation.
+    result["cf_mitigation"] = _classify_cf_mitigation(
+        result["headers_of_interest"].get("cf-mitigated"),
+        result["status_code"],
+        "cloudflare" in result["headers_of_interest"].get("server", "").lower(),
+    )
+    result["cf_colo"] = _parse_cf_colo(result["headers_of_interest"].get("cf-ray"))
 
     noscript_blocks = re.findall(r"<noscript>(.*?)</noscript>", html, re.I | re.S)
     ns_imgs = []
@@ -501,11 +854,12 @@ def _static_probe_sync(url: str) -> dict:
     result["images_via_data_attr"] = len(data_imgs)
     result["images_via_plain_src"] = len(plain_imgs)
 
-    # [إصلاح] عدّ منفصل (noscript/data-attr/plain-src) مفيد للتشخيص البصري،
-    # لكنه لا يطابق أولوية الاختيار الفعلية في extract_images_from_html()
-    # (noscript إن بلغ الحد الأدنى ← وإلا data-attr ← ...). أخذ max() الثلاثة
-    # كان يُنتج رقمًا متفائلًا قد لا يتحقق فعليًا في مسار HTTP بالإنتاج. الآن
-    # نستدعي دالة الإنتاج الحقيقية نفسها لعدد ونماذج موثوقة 100%.
+    # [إصلاح] "images_at_t0"/"images_after_wait" عدّ خام لكل <img> بالصفحة
+    # (شامل الودجات/الشريط الجانبي)، وقريب من الصفر دائمًا فور domcontentloaded
+    # — استخدامه لتقرير "هل يحتاج تمريرًا؟" يجعل الشرط صحيحًا شبه دائمًا حتى
+    # لمواقع لا تحتاج تمريرًا إطلاقًا. نأخذ بدلًا منه لقطة صور مطابقة فعليًا
+    # لمحددات المحتوى (CONTENT_SELECTORS) *قبل* أي تمرير — وهي نفس المقارنة
+    # المستخدَمة لاتخاذ قرار do_scroll الحقيقي في الإنتاج.
     extracted = extract_images_from_html(html, url)
     result["extracted_image_count"] = len(extracted)
     result["extracted_sample_urls"] = extracted[:3]
@@ -654,6 +1008,12 @@ def _curl_cffi_probe_one_sync(url: str, impersonate: str) -> dict:
         result["protection_category"] = _classify_challenge_html(html)
         result["challenge_detected"] = result["protection_category"] != "none"
         result["protection_signatures"] = classify_protection_signatures(html)
+        result["cf_mitigation"] = _classify_cf_mitigation(
+            result["headers_of_interest"].get("cf-mitigated"),
+            result["status_code"],
+            "cloudflare" in result["headers_of_interest"].get("server", "").lower(),
+        )
+        result["cf_colo"] = _parse_cf_colo(result["headers_of_interest"].get("cf-ray"))
         extracted = extract_images_from_html(html, url)
         result["extracted_image_count"] = len(extracted)
         result["extracted_sample_urls"] = extracted[:3]
@@ -1450,12 +1810,6 @@ async def _browser_probe(browser, url: str, diag_dir: Path, slug: str) -> dict:
     except Exception as e:
         print(f"  ⚠️ تعذّر أخذ لقطة شاشة: {e}")
 
-    # [إصلاح] "images_at_t0"/"images_after_wait" عدّ خام لكل <img> بالصفحة
-    # (شامل الودجات/الشريط الجانبي)، وقريب من الصفر دائمًا فور domcontentloaded
-    # — استخدامه لتقرير "هل يحتاج تمريرًا؟" يجعل الشرط صحيحًا شبه دائمًا حتى
-    # لمواقع لا تحتاج تمريرًا إطلاقًا. نأخذ بدلًا منه لقطة صور مطابقة فعليًا
-    # لمحددات المحتوى (CONTENT_SELECTORS) *قبل* أي تمرير — وهي نفس المقارنة
-    # المستخدَمة لاتخاذ قرار do_scroll الحقيقي في الإنتاج.
     # [تصحيح — توحيد منهجية العدّ] snapshot_images يُرجع عنصرًا واحدًا لكل
     # وسم <img> بالـDOM بلا إزالة تكرار الرابط، بينما images_after_scroll
     # (أدناه) مُجمَّع عبر عدة جولات ومُزال التكرار بمفتاح الرابط (dict `seen`
@@ -1700,6 +2054,34 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     if runner_info and not runner_info.get("error"):
         print(f"   🌐 IP/موقع الـrunner الحالي: {runner_info.get('ip')} ({runner_info.get('org_asn')}, {runner_info.get('city')}/{runner_info.get('country')})")
 
+    # [إضافة] كشف خادم الأصل الحقيقي خلف Cloudflare — يُشغَّل هنا (مباشرة
+    # بعد المعلومات الشبكية الأساسية ①⓪، وقبل أي مسبار HTTP/متصفح) لأنه
+    # مستقل تمامًا عن حالة الحماية بهذا الرابط تحديدًا (لا ينتظر تصنيف
+    # solvable_challenge/final_block كـ_deep_diagnostic_probes) — بصمة
+    # الاستضافة خاصية على مستوى النطاق نفسه لا الرابط المفرد. راجع تبرير
+    # كامل بتعليقات _origin_server_discovery وما يستدعيه أعلى الملف.
+    print("⓪-ب كشف خادم الأصل الحقيقي خلف Cloudflare (سجلات SSL تاريخية + DNS + Shodan اختياري)...")
+    origin_discovery = await _origin_server_discovery(url)
+    if origin_discovery.get("candidate_ips"):
+        print(f"   🎯 IPs مُرشَّحة ({len(origin_discovery['candidate_ips'])}): {origin_discovery['candidate_ips'][:5]}")
+        for shodan_r in origin_discovery.get("shodan_probes") or []:
+            if shodan_r.get("tested"):
+                print(f"     [Shodan] {shodan_r['ip']}: {shodan_r.get('org', '؟')} "
+                      f"({shodan_r.get('country', '؟')}) — منافذ: {shodan_r.get('ports_open', [])}")
+            elif shodan_r.get("error") and "اختياري" not in shodan_r["error"]:
+                print(f"     [Shodan] {shodan_r['ip']}: ⚠️ {shodan_r['error']}")
+        for direct_r in origin_discovery.get("direct_connection_attempts") or []:
+            if direct_r.get("tls_handshake_ok"):
+                match_flag = "✅ يطابق النطاق" if direct_r.get("cert_matches_target_domain") else "⚠️ لا يطابق النطاق"
+                print(f"     [اتصال مباشر] {direct_r['target_ip']}: مصافحة TLS نجحت — "
+                      f"CN={direct_r.get('tls_cert_cn')!r} ({match_flag}) — "
+                      f"HTTP={direct_r.get('http_head_status')} — الجهة المُصدِرة={direct_r.get('tls_cert_issuer_org')!r}")
+            else:
+                print(f"     [اتصال مباشر] {direct_r['target_ip']}: ❌ {direct_r.get('error')}")
+    else:
+        reason = origin_discovery.get("ssl_certificate_history", {}).get("error") or "لا IPs/subdomains مُرشَّحة عبر crt.sh"
+        print(f"   ℹ️ لا IPs مُرشَّحة للأصل الحقيقي ({reason}) — الموقع قد يخفي الأصل تمامًا أو لا سجلات عامة متاحة")
+
     print("① فحص HTTP خام (بدون Playwright إطلاقًا)...")
     static_r = await asyncio.to_thread(_static_probe_sync, url)
     if static_r["error"]:
@@ -1924,11 +2306,6 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     else:
         print(f"   نجح: {cr.get('success')} (status={cr.get('status_code')}, "
               f"عدد الكوكيز: {cr.get('cookie_count_reused')}, أسماء الكوكيز: {cr.get('cookie_names_reused')})")
-        # [تصحيح] الأثر العملي المباشر لهذه النتيجة على قرار البروفايل لم يكن
-        # صريحًا — كان يُترَك للقارئ استنتاجه من status_code وحده. الآن يُذكَر
-        # صراحة: نجاح=True يعني fetch_mode هجين (حل واحد بالمتصفح ثم HTTP لباقي
-        # الفصول) ممكن نظريًا لهذا الموقع؛ فشل=True يعني fetch_mode: "browser"
-        # وحده هو الخيار الصالح — كل فصل يحتاج تمريرة متصفح كاملة بلا اختصار.
         if cr.get("success"):
             print("   💡 الأثر العملي: كوكيز الجلسة صالحة لطلب HTTP عادٍ — نمط هجين "
                   "(حل واحد بالمتصفح ثم HTTP سريع لباقي الفصول) مطروح كتحسين أداء ممكن.")
@@ -1953,10 +2330,6 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     if browser_r["screenshot_path"]:
         print(f"   🖼️ لقطة شاشة مرجعية محفوظة: {browser_r['screenshot_path']}")
 
-    # [معلومة مفقودة — تتبع تاريخي] مقارنة بآخر فحص محفوظ لنفس الموقع (بحسب
-    # hostname) على فرع الإخراج، وحفظ لقطة جديدة بالتاريخ للفحوصات القادمة.
-    # حقول خام فقط (لا استنتاج تركيبي) — كل حقل هنا كشف نمطي مباشر أو رقم
-    # مقاس، بلا قرار fetch_mode/likely_unfixable مبني على دمجها.
     first_hp = hotlink_probes[0] if hotlink_probes else {}
     current_snapshot = {
         "date": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
@@ -1989,20 +2362,59 @@ async def diagnose_url(browser, url: str, diag_dir: Path, runner_info: dict | No
     await asyncio.to_thread(_save_diagnostic_history_sync, site_slug, history + [current_snapshot])
     print("═" * 60)
 
-    # [جديد — أرشيف تشغيلة قابل للتنزيل] slug مبني جزئيًا على hash() النصي،
-    # وهو عشوائي بذرته لكل عملية بايثون (PYTHONHASHSEED) — أي استدعاء منفصل
-    # لإعادة حساب نفس slug خارج هذه الدالة غير موثوق. بدل ذلك، تُسجَّل هنا
-    # المسارات الفعلية (نسبية لـOUTPUT_DIR، بنفس تنسيق screenshot_path) التي
-    # كتبتها هذه الدالة تحديدًا لهذا الرابط، ليستخدمها run_diagnostic_mode
-    # لاحقًا لبناء zip خاص بهذه التشغيلة فقط دون تخمين أسماء الملفات.
+    print("⑦ فحص /cdn-cgi/trace (بيانات أرضية من حافة Cloudflare مباشرة)...")
+    cdn_trace = await asyncio.to_thread(_fetch_cdn_cgi_trace_sync, url)
+    if cdn_trace["fields"]:
+        f = cdn_trace["fields"]
+        print(f"   ✅ ip={f.get('ip')} colo={f.get('colo')} tls={f.get('tls')} http={f.get('http')} loc={f.get('loc')}")
+    else:
+        print(f"   ⚠️ لا حقول (status={cdn_trace['status_code']}, error={cdn_trace['error']}) — قد يعني هذا المسار نفسه محجوبًا أيضًا، بيانات بحد ذاتها")
+
+    all_mitigations = [
+        static_r.get("cf_mitigation"),
+        *[p.get("cf_mitigation") for p in curl_cffi_r.get("probes", [])],
+        _classify_cf_mitigation(
+            browser_r.get("navigation_response_headers", {}).get("cf-mitigated"),
+            browser_r.get("navigation_response_headers", {}).get("status"),
+            "cloudflare" in str(browser_r.get("navigation_response_headers", {}).get("server", "")).lower(),
+        ),
+    ]
+    categories = {m["mitigation_category"] for m in all_mitigations if m and m.get("mitigation_category")}
+    if categories & {"recoverable_challenge"}:
+        mitigation_layer_diagnosis = "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)"
+    elif categories & {"hard_block_bot_management"}:
+        mitigation_layer_diagnosis = "hard_block_bot_management — بوت-مانجمنت رفض حتى مع بصمة، تحسين البصمة غير مجدٍ على الأغلب"
+    elif categories & {"waf_or_ip_rule_block_no_header"}:
+        mitigation_layer_diagnosis = "waf_or_ip_rule_block_no_header — الأرجح قاعدة صريحة ضد نطاق IP، سابقة لأي فحص بصمة"
+    else:
+        mitigation_layer_diagnosis = "غير حاسم — راجع cf_mitigation بكل مسبار يدويًا"
+    print(f"   🧭 التشخيص المُجمَّع: {mitigation_layer_diagnosis}")
+
+    # [إضافة] لو نجح الاتصال المباشر بأي IP أصل مُرشَّح، نضيف ملاحظة صريحة
+    # هنا (لا فقط بحقل origin_server_discovery الخام) — لأنها أهم نتيجة
+    # عملية ممكنة بكل هذا القسم: تعني إمكانية تجاوز Cloudflare بالكامل
+    # بالاتصال المباشر بـIP الأصل (fetch_mode جديد محتمل: "direct_origin")،
+    # مع مراعاة أن التطابق التاريخي لا يضمن أن IP ما زال صحيحًا اليوم.
+    _origin_reachable = [
+        d for d in (origin_discovery.get("direct_connection_attempts") or [])
+        if d.get("tls_handshake_ok") and d.get("cert_matches_target_domain")
+    ]
+    if _origin_reachable:
+        print(f"   🎯 خادم أصل محتمل يستجيب مباشرة ويحمل شهادة مطابقة للنطاق: "
+              f"{[d['target_ip'] for d in _origin_reachable]} — راجع origin_server_discovery بالتقرير "
+              "(تحقق يدوي إضافي مطلوب قبل الاعتماد عليه بالإنتاج، فالمرشَّح تاريخي وقد لا يخدم الموقع اليوم)")
+
     report_relpath = f"diagnostics/{slug}-report.json"
     report = {
         "url": url, "tls_and_server_info": tls_info, "runner_network_info": runner_info,
+        "origin_server_discovery": origin_discovery,
         "static_probe": static_r, "curl_cffi_probe": curl_cffi_r,
         "browser_probe": browser_r, "browser_probe_second_run": browser_r2,
         "consistency_diffs": consistency_diffs, "rate_limit_probe": rl,
         "history_diffs_since_last_run": history_diffs,
         "deep_diagnostic": deep_diag,
+        "cdn_cgi_trace": cdn_trace,
+        "mitigation_layer_diagnosis": mitigation_layer_diagnosis,
         "diagnostic_run_files": {
             "report": report_relpath,
             "screenshots": [
@@ -2025,8 +2437,6 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     diag_dir = OUTPUT_DIR / "diagnostics"
     diag_dir.mkdir(parents=True, exist_ok=True)
 
-    # [معلومة مفقودة] IP/ASN الخاص بالـrunner — طلب واحد يكفي لكل التشغيلة
-    # (نفس الشبكة لكل الروابط بهذه التشغيلة)، لا لكل رابط على حدة.
     print("🌐 جلب معلومات شبكة الـrunner الحالي (IP/ASN)...")
     runner_info = await asyncio.to_thread(_runner_network_info_sync)
     if runner_info.get("error"):
@@ -2034,9 +2444,6 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
     else:
         print(f"   IP: {runner_info.get('ip')} | ASN/مزوّد: {runner_info.get('org_asn')} | الموقع: {runner_info.get('city')}/{runner_info.get('country')}")
 
-    # [إضافة — بحث معمَّق 2026] بصمة JA4/JA3/HTTP2 الفعلية لكل مسار جلب —
-    # مرة واحدة فقط لكل التشغيلة (راجع تعليقات الدوال أعلى الملف)، عبر
-    # خدمة عامة لطرف ثالث (tls.peet.ws) — فشلها لا يوقف بقية التشخيص.
     print("🔏 قياس بصمة JA4/JA3/HTTP2 الفعلية لكل مسار جلب (عبر tls.peet.ws/api/all)...")
     tls_fp_static = await asyncio.to_thread(_tls_fingerprint_echo_static_sync)
     if tls_fp_static.get("error"):
@@ -2086,18 +2493,6 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
         json.dumps(reports, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
     )
 
-    # [جديد — أرشيف zip خاص بهذه التشغيلة فقط] output/diagnostics/ يتراكم
-    # عبر التشغيلات (worktree يسحب فرع output الحالي بتاريخه كاملًا قبل
-    # التشغيل)، لذا لا الـartifact ولا مجلد diagnostics المدفوع يمثلان "هذه
-    # التشغيلة فقط" فعليًا — فقط summary.json كان كذلك. هنا نجمع تحديدًا:
-    # summary.json + تقرير كل رابط بهذه التشغيلة + لقطتي الشاشة (الفحص
-    # الأول والثاني) إن وُجدتا، بالاعتماد على diagnostic_run_files المُسجَّل
-    # داخل كل report (لا بإعادة تخمين slug). يُحفظ في مسار run-<RUN_ID>
-    # موازٍ لنمط output/runs/run-<RUN_ID>.json المستخدم أصلًا للفصول
-    # (RUN_MANIFEST_RELPATH)، ويقع أصلًا ضمن allowed_paths=["diagnostics"]
-    # أدناه فلا حاجة لأي تعديل بمنطق الدفع. الهدف: رابط raw.githubusercontent
-    # مباشر (بلا تسجيل دخول) يُنزَّل بموثوقية على أندرويد، بعكس رابط أرتيفاكت
-    # GitHub Actions الذي يعتمد على واجهة/جلسة الموقع.
     run_zip_relpath = f"diagnostics/runs/run-{RUN_ID}.zip"
     run_zip_path = OUTPUT_DIR / run_zip_relpath
     run_zip_path.parent.mkdir(parents=True, exist_ok=True)
@@ -2131,11 +2526,6 @@ async def run_diagnostic_mode(chapter_urls: list[str]) -> None:
         print(f"🗜️ أُنشئ أرشيف zip خاص بهذه التشغيلة فقط ({zipped_count} ملف): {run_zip_relpath}")
 
     if GIT_COMMIT_DIR:
-        # [تصحيح حرج ٥] وضع التشخيص يكتب حصرًا ضمن output/diagnostics/ ولا
-        # يلمس manifest.json أو مجلدات الفصول إطلاقًا — تقييد allowed_paths
-        # على مجلد diagnostics فقط يمنع أي احتمال لحذف نتائج فصول تشغيلات
-        # أخرى بنفس الآلية الموصوفة أعلاه، دون الحاجة لتعداد كل ملف تشخيصي
-        # فرعي (تقارير/لقطات شاشة/تتبع تاريخي) بالاسم.
         ok, msg = await asyncio.to_thread(
             _commit_and_push_sync,
             GIT_COMMIT_DIR,
