@@ -1,0 +1,773 @@
+{
+  "manga_id": "manhwabuddy.com__everything-about-best-friend",
+  "chapter_num": "4",
+  "manga_title": "Read Everything about Best Friend",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "ANOTHER DAY ANOTHER TRANSLATION",
+          "confidence": 0.994,
+          "text_ar": "يوم جديد وترجمة جديدة"
+        },
+        {
+          "text": "ADAT, A project by Omar.",
+          "confidence": 0.95,
+          "text_ar": "مشروع ADAT، من إعداد عمر."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "HTO 2H 人 E",
+          "confidence": 0.492,
+          "text_ar": "..."
+        },
+        {
+          "text": "OH MOM..!NO WE WEREN'T DOING ANYTHING FUNNY..",
+          "confidence": 0.952,
+          "text_ar": "أوه أمي..! لا، لم نكن نفعل أي شيء غريب.."
+        },
+        {
+          "text": "WE WENT ON A PICNIC AT THE RIVERSIDE...",
+          "confidence": 0.908,
+          "text_ar": "لقد ذهبنا في نزهة إلى ضفة النهر..."
+        },
+        {
+          "text": "…AND TAEYANG BROUGHT ME HOME...",
+          "confidence": 0.92,
+          "text_ar": "...وأوصلني تايانغ لي إلى المنزل..."
+        },
+        {
+          "text": "hhh55oh5nbbab",
+          "confidence": 0.376,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "HUH...!? PICNIC",
+          "confidence": 0.896,
+          "text_ar": "هاه...؟! نزهة؟"
+        },
+        {
+          "text": "YEPP, MINHO OPPA AND HIS GIRLFRIEND MINA, CAME TOO",
+          "confidence": 0.986,
+          "text_ar": "أجل، مينهو سونغ وحبيبته مينا كانا معنا أيضًا."
+        },
+        {
+          "text": "OH, MINHO TOO..?",
+          "confidence": 0.911,
+          "text_ar": "أوه، مينهو سونغ أيضًا..؟"
+        },
+        {
+          "text": "HAYUL, TAKE THIS,IT'S YOURS... 少%",
+          "confidence": 0.444,
+          "text_ar": "هايول، خذي هذا، إنه لكِ..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "OPPA, THANKS FOR BRINGING ME HOME..",
+          "confidence": 0.955,
+          "text_ar": "أوبا، شكرًا لإيصالي إلى المنزل.."
+        },
+        {
+          "text": "so HOW'S YOUR MOMBEEN...? AND HOW'S MR.LEE ?",
+          "confidence": 0.726,
+          "text_ar": "إذًا، كيف حال والدتكِ..؟ وكيف حال السيد لي؟"
+        },
+        {
+          "text": "THEY'RE ALRIGHT, THEY'RE INTO WALKING THROUGH THE WOODS NOWADAYS....",
+          "confidence": 0.913,
+          "text_ar": "إنهما بخير، لقد أصبحا يهويان المشي في الغابة مؤخرًا...."
+        },
+        {
+          "text": "…I'LL SEE THEM IN A WEEK",
+          "confidence": 0.947,
+          "text_ar": "...سأراهما بعد أسبوع."
+        },
+        {
+          "text": "I'LL CALL THEM, AND BE CAREFUL ON YOUR WAY HOME",
+          "confidence": 0.982,
+          "text_ar": "سأتصل بهما، وانتبه لنفسك في طريق عودتك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "YES MA'AM. ...BYE...",
+          "confidence": 0.787,
+          "text_ar": "حاضر يا سيدتي. ...وداعًا..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "HAYUL, SHE'S BEEN WEIRD FROM THE START OF THE PICNIC...?",
+          "confidence": 0.971,
+          "text_ar": "هايول، هل كانت تتصرف بغرابة منذ بداية النزهة...؟"
+        },
+        {
+          "text": "DID SHE MAKE UP SOMETHING IN HER MIND...? 成此 =5 茶",
+          "confidence": 0.081,
+          "text_ar": "هل كانت تتخيل أشياء في رأسها...؟"
+        },
+        {
+          "text": "NO WONDER, I FELT A BIT TOO MUCH OF SKIN CONTACT TODAY...",
+          "confidence": 0.908,
+          "text_ar": "لا عجب، شعرت أن التلامس الجسدي كان أكثر من اللازم اليوم..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "*SIGH* ARE YOU CRAZY, HA-YUL...?!",
+          "confidence": 0.91,
+          "text_ar": "*تنهد* هل أنتِ مجنونة يا هايول...!؟"
+        },
+        {
+          "text": "..A SURPRISE KISS IN FRONT OF THE HOUSE...? 出牛",
+          "confidence": 0.392,
+          "text_ar": "..قبلة مفاجئة أمام المنزل...؟"
+        },
+        {
+          "text": "NO WAIT WHAT IF YOUR MOTHER SAW US....?",
+          "confidence": 0.795,
+          "text_ar": "لا، انتظري، ماذا لو رأتنا والدتكِ....؟"
+        },
+        {
+          "text": "SHE DIDN'T SEE US RIGHT, SHE DIDN'T I DON'T THINK SO NOO-N000",
+          "confidence": 0.808,
+          "text_ar": "لم ترنا، أليس كذلك؟ لا، لا أعتقد ذلك، لا لا لا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "NOW HOW DO YOU EXPECT ME TO INTERACT WITH YOU THE NEXT TIME WE SEE EACH OTHER..?",
+          "confidence": 0.956,
+          "text_ar": "كيف تتوقعين مني أن أتعامل معكِ في المرة القادمة التي نلتقي فيها..؟"
+        },
+        {
+          "text": "UGHHH YOU LIL...",
+          "confidence": 0.924,
+          "text_ar": "أوه، أيتها المشاكسة..."
+        },
+        {
+          "text": "WHAT'S WRONG WITH YOU, HAYUL..?!",
+          "confidence": 0.912,
+          "text_ar": "ما خطبك يا هايول..!؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "DEtIOE lel:020.xx TEL02.XXX.XXX 0",
+          "confidence": 0.312,
+          "text_ar": "..."
+        },
+        {
+          "text": "Peanut",
+          "confidence": 0.991,
+          "text_ar": "فول سوداني"
+        },
+        {
+          "text": "是 tel:02.xxx.xxx",
+          "confidence": 0.504,
+          "text_ar": "..."
+        },
+        {
+          "text": "NOW LOOK ABOVE..",
+          "confidence": 0.91,
+          "text_ar": "انظري للأعلى الآن.."
+        },
+        {
+          "text": "YE- YEAH JUST LIKE THAT",
+          "confidence": 0.95,
+          "text_ar": "أجـ- أجل، هكذا تمامًا."
+        },
+        {
+          "text": "WOOOF",
+          "confidence": 0.997,
+          "text_ar": "هوه!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "从人以 。",
+          "confidence": 0.331,
+          "text_ar": "..."
+        },
+        {
+          "text": "9 ! aury Dofender",
+          "confidence": 0.492,
+          "text_ar": "..."
+        },
+        {
+          "text": "*AAAARGHH",
+          "confidence": 0.998,
+          "text_ar": "*آآآه"
+        },
+        {
+          "text": "HOT...IT'S HOT",
+          "confidence": 0.933,
+          "text_ar": "حرارة... الجو حار."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "TROPICAL NIGHTS WILL PREVAIL FROM TODAY, IN SEOUL FIRST TIME THIS SUMMER..",
+          "confidence": 0.927,
+          "text_ar": "ستسود الليالي الاستوائية بدءًا من اليوم، وهي المرة الأولى هذا الصيف في سيول.."
+        },
+        {
+          "text": "THE HOT HUMID AIR WILL BE COMING FROM THE SOUTH AT NIGHT..",
+          "confidence": 0.948,
+          "text_ar": "الهواء الحار والرطب سيأتي من الجنوب ليلًا.."
+        },
+        {
+          "text": "*SIGH*, TROPICAL?",
+          "confidence": 0.975,
+          "text_ar": "*تنهد* استوائية؟"
+        },
+        {
+          "text": "Oh's kitchen kitchen THEN,I'LL BE IN MY WAY...",
+          "confidence": 0.898,
+          "text_ar": "إذًا، سأذهب في طريقي..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "HURRY UP AND GO HOME, AUNTY YOU WORKED HARD IN FRONT OF THE FIRE TODAY...",
+          "confidence": 0.937,
+          "text_ar": "أسرعي بالعودة للمنزل يا خالة، لقد عملتِ بجد أمام النار اليوم..."
+        },
+        {
+          "text": "YEAH BOSS, GO HOME.",
+          "confidence": 0.957,
+          "text_ar": "أجل يا رئيس، عودي للمنزل."
+        },
+        {
+          "text": "TROPICAL NIGHTS...",
+          "confidence": 0.93,
+          "text_ar": "ليالٍ استوائية..."
+        },
+        {
+          "text": "BUT THEN SOME THING UNEXPECTED, HAPPENED.",
+          "confidence": 0.963,
+          "text_ar": "ولكن حينها، حدث شيء غير متوقع."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "YEAH, IN THE NEWS SAID..",
+          "confidence": 0.97,
+          "text_ar": "أجل، كما قيل في الأخبار.."
+        },
+        {
+          "text": "LIKE IN MY WAY BACK I DON'T EXPECT A LOT TO HAPPEN BUT...",
+          "confidence": 0.916,
+          "text_ar": "في طريقي للعودة، لم أتوقع حدوث الكثير، لكن..."
+        },
+        {
+          "text": "DO YOU WANNA GO TO A MOTEL TODAY...?",
+          "confidence": 0.933,
+          "text_ar": "هل تودين الذهاب إلى فندق اليوم...؟"
+        },
+        {
+          "text": "…WE CAN TURN ON THE AIR-CONDITIONER, DRINK SOMETHING THEN GO TO BED..?",
+          "confidence": 0.967,
+          "text_ar": "...يمكننا تشغيل مكيف الهواء، وشرب شيء ما، ثم الذهاب للنوم..؟"
+        },
+        {
+          "text": "…I SAID THAT BLUNTLY, WITHOUT ANY EXPECTATIONS..",
+          "confidence": 0.948,
+          "text_ar": "...قلت ذلك بصراحة، دون أي توقعات.."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "ISN'T IT HARD TO DO IN THE STOREROOM ALL THE TIME..?",
+          "confidence": 0.98,
+          "text_ar": "أليس من الصعب فعل ذلك في غرفة التخزين طوال الوقت..؟"
+        },
+        {
+          "text": ".IN A MOTEL ROOM WE CAN DO THINGS WHICH WE CAN'T DO IN THE STOREROOM...",
+          "confidence": 0.861,
+          "text_ar": "..في غرفة الفندق يمكننا فعل أشياء لا نستطيع فعلها في غرفة التخزين..."
+        },
+        {
+          "text": "IT'S LIKE A JOKE YOU SAY, KNOWING THAT IT WON'T WORK, AND YOU'LL BE EMBARASSED ANYWAY.",
+          "confidence": 0.959,
+          "text_ar": "إنه كالمزحة التي تقولها، وأنت تعلم أنها لن تنجح، وستشعر بالإحراج على أي حال."
+        },
+        {
+          "text": "I'M KINDA EXCITED, JUST A BIT THINKING ABOUT ..IT.....",
+          "confidence": 0.68,
+          "text_ar": "أنا متحمس قليلًا، بمجرد التفكير في الأمر....."
+        },
+        {
+          "text": "YEAH, I WOULD LIKE TO..",
+          "confidence": 0.907,
+          "text_ar": "أجل، أود ذلك.."
+        },
+        {
+          "text": "THAT'S GOOD · WAIT WHAT..?",
+          "confidence": 0.42,
+          "text_ar": "هذا جيد.. انتظر، ماذا..؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "BUT SOME TIMES THOSE JOKES DO WORK...",
+          "confidence": 0.85,
+          "text_ar": "لكن في بعض الأحيان، تنجح تلك المزحات..."
+        },
+        {
+          "text": "YEAH, LET'S GO TO A .. MOTEL.",
+          "confidence": 0.942,
+          "text_ar": "أجل، لنذهب إلى.. فندق."
+        },
+        {
+          "text": "CONGRATULATIONS, TAEYANG.YOU'VE SUCCESSFULLY CONVINCED SUBIN.",
+          "confidence": 0.98,
+          "text_ar": "تهانينا يا تايانغ لي. لقد نجحت في إقناع سوبين."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "EVEN I WAS STUNNED THE MOMENT SHE SAID YES, LIKE WHO WOULDN'T.",
+          "confidence": 0.955,
+          "text_ar": "حتى أنا ذُهلت في اللحظة التي قالت فيها نعم، فمن لا يذهل؟"
+        },
+        {
+          "text": "H ro",
+          "confidence": 0.174,
+          "text_ar": "..."
+        },
+        {
+          "text": "THERE WAS A MILD HOT WIND BLOWING DOWN THE STREETS.",
+          "confidence": 0.983,
+          "text_ar": "كانت هناك رياح دافئة خفيفة تهب في الشوارع."
+        },
+        {
+          "text": "Oo #迎刘 吾人 能险 K",
+          "confidence": 0.227,
+          "text_ar": "..."
+        },
+        {
+          "text": "PEOPLE WERE ENJOYING THE SUMMER NIGHTS.",
+          "confidence": 0.98,
+          "text_ar": "كان الناس يستمتعون بليالي الصيف."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "WOULD YOU LIKE A COLD DRINK.?",
+          "confidence": 0.92,
+          "text_ar": "هل تودين مشروبًا باردًا؟"
+        },
+        {
+          "text": "YEAH, IT'LL BE GOOD.",
+          "confidence": 0.957,
+          "text_ar": "أجل، سيكون ذلك جيدًا."
+        },
+        {
+          "text": "IT'S WAS MY FIRST OUTING WITH SUBIN.",
+          "confidence": 0.959,
+          "text_ar": "كانت أول نزهة لي مع سوبين."
+        },
+        {
+          "text": "TAEYANG,IF YOU DRINK THAT, YOU WON'T BE ABLE TO SLEEP..",
+          "confidence": 0.97,
+          "text_ar": "تايانغ لي، إذا شربت ذلك، لن تستطيع النوم.."
+        },
+        {
+          "text": "SOMEHOW THIS OUTING EEELGDIEEERENTEROM FEELS DIFFERENT FROM THE OTHER ONES..",
+          "confidence": 0.854,
+          "text_ar": "بطريقة ما، تبدو هذه النزهة مختلفة عن غيرها.."
+        },
+        {
+          "text": "I'M NOT PLANNING TO SLEEP ANYWAY.",
+          "confidence": 0.941,
+          "text_ar": "أنا لا أنوي النوم على أي حال."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "IT WAS ME, GOING TO A MOTEL ROOM WITH A GIRL A BARELY KNOW ANYTHING ABOUT...",
+          "confidence": 0.938,
+          "text_ar": "كنت أنا، ذاهبًا إلى غرفة فندق مع فتاة لا أعرف عنها الكثير..."
+        },
+        {
+          "text": "…BUT STILL MY HEART STARTED TO POUND LIKE CRAZY, AND I STARTED TO FEEL IMPATIENT...",
+          "confidence": 0.944,
+          "text_ar": "...ومع ذلك، بدأ قلبي ينبض بجنون، وبدأت أشعر بنفاد الصبر..."
+        },
+        {
+          "text": "...IT'S A LITTLE UNCOMFORTABLETO WALKTOGETHER...",
+          "confidence": 0.913,
+          "text_ar": "...من غير المريح قليلًا المشي معًا..."
+        },
+        {
+          "text": "SO I'M REALLY GONNA BE IN MOTEL ROOM WITH HER, YEAHIHAD SEX WITH HER BEFORE BUT IT'S KINDA DIFFERENT TODAY.",
+          "confidence": 0.955,
+          "text_ar": "إذًا سأكون حقًا في غرفة فندق معها، أجل لقد مارست الجنس معها من قبل لكن الأمر مختلف قليلًا اليوم."
+        },
+        {
+          "text": "I'M WALKING DOWN THE STREETS WITH SUBIN NOW, AND IN ABOUT 5 MINUTES I'LL BE ABLE TO SEE WHAT'S UNDER THAT SKIRT..",
+          "confidence": 0.945,
+          "text_ar": "أنا أمشي في الشوارع مع سوبين الآن، وبعد حوالي 5 دقائق سأتمكن من رؤية ما تحت تلك التنورة.."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "ANY MAN WOULD BE CURIOUS..",
+          "confidence": 0.931,
+          "text_ar": "أي رجل سيكون فضوليًا.."
+        },
+        {
+          "text": "UNDER THAT INNOCENT LOOKING GIRL'S SKIRT..",
+          "confidence": 0.992,
+          "text_ar": "تحت تنورة تلك الفتاة ذات المظهر البريء.."
+        },
+        {
+          "text": "..WHAT'S SHE HIDING...",
+          "confidence": 0.962,
+          "text_ar": "..ما الذي تخفيه..."
+        },
+        {
+          "text": "EVEN I'M DYING TO FIND OUT..",
+          "confidence": 0.953,
+          "text_ar": "حتى أنا أموت لمعرفة ذلك.."
+        },
+        {
+          "text": "DO YOU WANT ME TO PULL THAT OUT..?",
+          "confidence": 0.938,
+          "text_ar": "هل تريدين مني أن أخلعها..؟"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "BUT NO ONE WILL SEE IT AND IT'LL ONLY KEEP BURNING INSIDE...",
+          "confidence": 0.964,
+          "text_ar": "لكن لن يرى أحد ذلك وسيبقى الحريق في الداخل فقط..."
+        },
+        {
+          "text": "NO,IT'S ALRIGHT.LET'S GO...",
+          "confidence": 0.936,
+          "text_ar": "لا، لا بأس. لنذهب..."
+        },
+        {
+          "text": "5 MINUTES MORE AND I'LL SEE UNDER HER SKIRT.",
+          "confidence": 0.978,
+          "text_ar": "5 دقائق أخرى وسأرى ما تحت تنورتها."
+        },
+        {
+          "text": "MOTEL Carallanch Motel",
+          "confidence": 0.786,
+          "text_ar": "فندق"
+        },
+        {
+          "text": "Malne l 国园",
+          "confidence": 0.188,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "想 *CLACK",
+          "confidence": 0.1,
+          "text_ar": "*طقطقة"
+        },
+        {
+          "text": "HMM...",
+          "confidence": 0.922,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "*SWOPP",
+          "confidence": 0.996,
+          "text_ar": "*صوت خلع ملابس"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.982,
+          "text_ar": "هاه؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "PERV.",
+          "confidence": 0.996,
+          "text_ar": "منحرف."
+        },
+        {
+          "text": "I WANTED TO SEE IT SOOO MuCH SINCE WE WERE WALKING",
+          "confidence": 0.909,
+          "text_ar": "أردت رؤية ذلك بشدة منذ أن كنا نمشي."
+        },
+        {
+          "text": "STILL YOU'RE A PERVERT.",
+          "confidence": 0.962,
+          "text_ar": "مع ذلك، أنت منحرف."
+        },
+        {
+          "text": "*KYYAAA",
+          "confidence": 0.996,
+          "text_ar": "*آآآه"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "*THUP",
+          "confidence": 0.993,
+          "text_ar": "*طبطبة"
+        },
+        {
+          "text": "*SIGH* WHAT ARE YOU DOING...!?",
+          "confidence": 0.828,
+          "text_ar": "*تنهد* ماذا تفعل...!؟"
+        },
+        {
+          "text": "- SOMETHING THAT WE HAVEN'T DONE BEFORE..",
+          "confidence": 0.971,
+          "text_ar": "- شيئًا لم نفعله من قبل.."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "DO ME A FAVOR....",
+          "confidence": 0.902,
+          "text_ar": "أسدي لي معروفًا...."
+        },
+        {
+          "text": "…..AND STAY LIKE THIS ALRIGHT..",
+          "confidence": 0.91,
+          "text_ar": ".....وابقي هكذا، حسنًا.."
+        },
+        {
+          "text": "AAH-HAAH",
+          "confidence": 0.998,
+          "text_ar": "آه-آه"
+        },
+        {
+          "text": "HONS",
+          "confidence": 0.292,
+          "text_ar": "..."
+        },
+        {
+          "text": "AR-AREN'T YOU GOING TO WASHUP FIRST...?",
+          "confidence": 0.963,
+          "text_ar": "أ-ألا تريد الاغتسال أولًا...؟"
+        },
+        {
+          "text": "NO,LET'S DO THIS FIRST BEFORE WASHING UP OKAY.",
+          "confidence": 0.988,
+          "text_ar": "لا، لنفعل هذا أولًا قبل الاغتسال، حسنًا."
+        },
+        {
+          "text": "*SQUELCH",
+          "confidence": 0.994,
+          "text_ar": "*صوت تبلل"
+        },
+        {
+          "text": "HOENOS",
+          "confidence": 0.391,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "*AAH",
+          "confidence": 0.999,
+          "text_ar": "*آه"
+        },
+        {
+          "text": "STOP YOU BUT I'M SWEAY...",
+          "confidence": 0.911,
+          "text_ar": "توقف، لكنني متعرق..."
+        },
+        {
+          "text": "HAAA",
+          "confidence": 0.286,
+          "text_ar": "هااا"
+        },
+        {
+          "text": "YOU'VE BEEN THIS WET THE WHOLE TIME HAVEN'T YOU..?",
+          "confidence": 0.952,
+          "text_ar": "لقد كنتِ مبتلة هكذا طوال الوقت، أليس كذلك..؟"
+        },
+        {
+          "text": "N-NO,IT'S SUMMER SO.. IT WAS HOT..",
+          "confidence": 0.84,
+          "text_ar": "لـ- لا، إنه الصيف.. لذا كان الجو حارًا.."
+        },
+        {
+          "text": "A-AND I GOT SWEATY AND THEN....WHY",
+          "confidence": 0.905,
+          "text_ar": "و- وأنا تعرقت ثم.... لماذا"
+        },
+        {
+          "text": "*HA-AAH",
+          "confidence": 0.998,
+          "text_ar": "*ها-آه"
+        },
+        {
+          "text": "THAT'S WHY IT'S SO GOOD TODAY...",
+          "confidence": 0.963,
+          "text_ar": "لهذا السبب الأمر رائع جدًا اليوم..."
+        },
+        {
+          "text": "OH MY GOD...",
+          "confidence": 0.949,
+          "text_ar": "يا إلهي..."
+        },
+        {
+          "text": "..WHY YOU'RE IN WHY YOU'RE IN SUCH A HURRY TODAY...?",
+          "confidence": 0.922,
+          "text_ar": "..لماذا أنت في عجلة من أمرك اليوم...؟"
+        },
+        {
+          "text": "cok",
+          "confidence": 0.342,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "Y-YEAH LET'S DO IT IN A HURRY TODAY..!!",
+          "confidence": 0.929,
+          "text_ar": "أ- أجل، لنفعلها بسرعة اليوم..!!"
+        },
+        {
+          "text": "*SQUELCH",
+          "confidence": 0.996,
+          "text_ar": "*صوت تبلل"
+        },
+        {
+          "text": "*AAH",
+          "confidence": 0.999,
+          "text_ar": "*آه"
+        },
+        {
+          "text": "*HNGHH",
+          "confidence": 0.998,
+          "text_ar": "*آه"
+        },
+        {
+          "text": "*AAH-HAAH",
+          "confidence": 1.0,
+          "text_ar": "*آه-آه"
+        },
+        {
+          "text": "日 Deepsea Entertainment EE",
+          "confidence": 0.198,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "So, here we are. I'm Omar, and you'll be seeing me translating this. until? let's just see.",
+          "confidence": 0.954,
+          "text_ar": "حسنًا، وصلنا إلى هنا. أنا عمر، وسترونني أترجم هذا. إلى متى؟ لنرَ فقط."
+        },
+        {
+          "text": "so you can follow me on twitter @OmarYeppThatsMe (just get me 200followers already)",
+          "confidence": 0.983,
+          "text_ar": "يمكنكم متابعتي على تويتر @OmarYeppThatsMe (فقط أوصلوني لـ 200 متابع)"
+        },
+        {
+          "text": "and be nice in the comments.",
+          "confidence": 0.975,
+          "text_ar": "وكونوا لطفاء في التعليقات."
+        },
+        {
+          "text": "*see you guys in 2 days.",
+          "confidence": 0.931,
+          "text_ar": "*أراكم بعد يومين."
+        },
+        {
+          "text": "Welt Foshi 17 hours ago ar, you madlad. Thanks for picking up ther translation Reply Yone.. a day ago Hmmmm nreesome. Zo3Yone the hidden cancer Reply woahSkyz dayago 12 hours ago Heyy! That's gross I gotta quit before the fucke a exams I can't have my mind Reply Sukuna approb a day ago rn GreatOmarofthe BetweenUsagair.and Reply V GREATJOB.Anyway, A dont fuck your best friends gf, at Approb Tim.otaii Johnny Sins 10 hours ago break up or smth 19 hours ago EEOMARletsgo ey Reply",
+          "confidence": 0.374,
+          "text_ar": "..."
+        }
+      ]
+    }
+  ]
+}
