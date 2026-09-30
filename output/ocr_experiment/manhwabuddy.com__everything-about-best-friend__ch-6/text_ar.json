@@ -1,0 +1,531 @@
+{
+  "manga_id": "manhwabuddy.com__everything-about-best-friend",
+  "chapter_num": "6",
+  "manga_title": "Read Everything about Best Friend",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I'M GONNA THINK OF A BETTER NAME LATER",
+          "confidence": 0.946,
+          "text_ar": "سأفكر في اسم أفضل لاحقًا."
+        },
+        {
+          "text": "A project by Omar.",
+          "confidence": 0.979,
+          "text_ar": "مشروع من قِبل عمر."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "Ht0 2L 人 印",
+          "confidence": 0.352,
+          "text_ar": ""
+        },
+        {
+          "text": "MOTEL Casallanca Motel",
+          "confidence": 0.756,
+          "text_ar": "موتيل كازابلانكا"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "古 发王",
+          "confidence": 0.155,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "*PHEW* IT'S DIFFERENT TO DO IT AFTER WASHING UP",
+          "confidence": 0.977,
+          "text_ar": "أوه... الأمر مختلف تمامًا بعد الاستحمام."
+        },
+        {
+          "text": "SUBIN'S SKIN FEELS DIFFERENT THAN BEFORE...",
+          "confidence": 0.955,
+          "text_ar": "بشرة سوبين تبدو مختلفة عن ذي قبل..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "*AH-HAA",
+          "confidence": 0.999,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "*HA-AH",
+          "confidence": 0.998,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "*HAA",
+          "confidence": 0.996,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "AND,..FINALLY FOR THE FIRST TIME YOU'RE LYING DOWN LIKE THIS..",
+          "confidence": 0.954,
+          "text_ar": "وأخيرًا... ولأول مرة، أنتِ مستلقية هكذا..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "WHAT THE...",
+          "confidence": 0.935,
+          "text_ar": "ما الذي..."
+        },
+        {
+          "text": "…. DON'T PUT ANY DIFFERENT MEANING INTO IT..",
+          "confidence": 0.924,
+          "text_ar": "...لا تضفي أي معنى آخر على الأمر."
+        },
+        {
+          "text": "BUT...",
+          "confidence": 0.984,
+          "text_ar": "لكن..."
+        },
+        {
+          "text": "…. WE'VE BEEN DOING IT IN THAT CRAMPED STOREROOM FOR A WHILE",
+          "confidence": 0.917,
+          "text_ar": "...لقد كنا نفعل ذلك في غرفة التخزين الضيقة تلك لفترة طويلة."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I'M SO HAPPY RIGHT NOW..",
+          "confidence": 0.95,
+          "text_ar": "أنا سعيد جدًا الآن..."
+        },
+        {
+          "text": "OH, MY --GOD....",
+          "confidence": 0.917,
+          "text_ar": "يا إلهي..."
+        },
+        {
+          "text": "HA-AH,I CAN TOUCH YOU HOWEVER I WANT HERE...",
+          "confidence": 0.91,
+          "text_ar": "آه، يمكنني لمسكِ كيفما أشاء هنا..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "*HA-AH",
+          "confidence": 0.999,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "*HEUNG",
+          "confidence": 0.994,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "Tok",
+          "confidence": 0.403,
+          "text_ar": "طرق"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "IT'S YOUR FIRST TIME.. 武",
+          "confidence": 0.067,
+          "text_ar": "إنها المرة الأولى لكِ..."
+        },
+        {
+          "text": "…. DOING SOMETHING LIKE THIS, ISN'T IT..?",
+          "confidence": 0.95,
+          "text_ar": "...القيام بشيء كهذا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "IT'S SOMETHING YOU CAN ONLY DO IT IN A BED...",
+          "confidence": 0.931,
+          "text_ar": "هذا شيء لا يمكنكِ فعله إلا على السرير..."
+        },
+        {
+          "text": "$\\frac{}{",
+          "confidence": 0.694,
+          "text_ar": ""
+        },
+        {
+          "text": "YOU'RE R-OUGH",
+          "confidence": 0.98,
+          "text_ar": "أنتِ قاسية."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "I WILL WRAP IT UP NOW...",
+          "confidence": 0.89,
+          "text_ar": "سأنهي الأمر الآن..."
+        },
+        {
+          "text": "0 *I'M-CUMMING",
+          "confidence": 0.34,
+          "text_ar": "أنا... أوشك على القذف."
+        },
+        {
+          "text": "*HAN-NGHH",
+          "confidence": 0.998,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "Yord \\",
+          "confidence": 0.406,
+          "text_ar": ""
+        },
+        {
+          "text": "HAA*",
+          "confidence": 0.999,
+          "text_ar": "آه!"
+        },
+        {
+          "text": "NoW",
+          "confidence": 0.291,
+          "text_ar": "الآن."
+        },
+        {
+          "text": "*SPLURT",
+          "confidence": 0.999,
+          "text_ar": "آه!"
+        },
+        {
+          "text": "HAA-AH",
+          "confidence": 0.999,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": []
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "\\rac{}{.",
+          "confidence": 0.732,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "HEY..!! DON'T LOOK",
+          "confidence": 0.946,
+          "text_ar": "مهلاً!! لا تنظر."
+        },
+        {
+          "text": "NO..!! I DIDN'T SEE ANYTHING REALLY.",
+          "confidence": 0.949,
+          "text_ar": "لا...!! لم أرَ شيئًا حقًا."
+        },
+        {
+          "text": "IT'S OKAY THEN..",
+          "confidence": 0.987,
+          "text_ar": "حسنًا، لا بأس إذًا."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "UH, SUBIN....",
+          "confidence": 0.895,
+          "text_ar": "أوه، سوبين..."
+        },
+        {
+          "text": "...WE AREN'T DATING ARE WE..?",
+          "confidence": 0.852,
+          "text_ar": "...نحن لا نتواعد، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "OFCOURSE NOT, WHAT DO YOU MEAN.!!",
+          "confidence": 0.949,
+          "text_ar": "بالطبع لا، ما الذي تعنيه بذلك؟!"
+        },
+        {
+          "text": "T/N: It's surprise weapon which will author use to make us cry later.",
+          "confidence": 0.978,
+          "text_ar": "ملاحظة المترجم: هذا سلاح مفاجئ سيستخدمه المؤلف لجعلنا نبكي لاحقًا."
+        },
+        {
+          "text": "YEAH,I JUST WANTED TO CHECK",
+          "confidence": 0.992,
+          "text_ar": "أجل، أردت فقط التأكد."
+        },
+        {
+          "text": "WHY WOULD YOU ASK ME SOMETHING LIKE THAT,IT'S UNCOMFORTABLE",
+          "confidence": 0.949,
+          "text_ar": "لماذا تسألني شيئًا كهذا؟ هذا يثير شعورًا بعدم الارتياح."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "I DON'T THINK I CAN DO THIS WITH YOU ANYMORE",
+          "confidence": 0.925,
+          "text_ar": "لا أعتقد أنني أستطيع الاستمرار في فعل هذا معكِ."
+        },
+        {
+          "text": "SORRY,I WON'T ASK YOU ABOUT IT ANYMORE...",
+          "confidence": 0.924,
+          "text_ar": "آسف، لن أسألكِ عن ذلك مجددًا..."
+        },
+        {
+          "text": ".. SO PLEASE CONTINUE HAVING SEX WITH ME ALRIGHT...",
+          "confidence": 0.924,
+          "text_ar": "...لذا أرجوكِ استمري في ممارسة الجنس معي، حسنًا؟"
+        },
+        {
+          "text": "*SIGH* PERV.",
+          "confidence": 0.99,
+          "text_ar": "تنهيدة.. يا منحرف."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": []
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "IT'S FEELS KINDA STRANGE TO SEND A WOMAN HOME JUST AFTER YOU HAD SEX WITH HER.",
+          "confidence": 0.944,
+          "text_ar": "يبدو الأمر غريبًا نوعًا ما أن أرسل امرأة إلى منزلها مباشرة بعد ممارسة الجنس معها."
+        },
+        {
+          "text": "WHEN WE WERE LYING NAKED, WE WERE THE CLOSEST THING TO EACH OTHER IN THE WHOLE WORLD.",
+          "confidence": 0.962,
+          "text_ar": "عندما كنا مستلقيين عاريين، كنا أقرب شخصين لبعضنا البعض في العالم بأسره."
+        },
+        {
+          "text": "iCLR",
+          "confidence": 0.374,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "ZONE B1 合创亚",
+          "confidence": 0.385,
+          "text_ar": "المنطقة ب1"
+        },
+        {
+          "text": "JUST AFTER SHE TURNS HER BACK TO ME, SHE SEEMS DISTANT IN A MOMENT..",
+          "confidence": 0.957,
+          "text_ar": "بمجرد أن تدير ظهرها لي، تبدو بعيدة في لحظة..."
+        },
+        {
+          "text": "I DON'T KNOW WHO SHE EXACTLY IS, WHAT'S SHE THINKING, WHAT'S ON HER MIND..",
+          "confidence": 0.943,
+          "text_ar": "لا أعرف من هي بالضبط، أو ما الذي تفكر فيه، أو ما الذي يدور في ذهنها..."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "WHY DID SUBIN DO THAT..?",
+          "confidence": 0.937,
+          "text_ar": "لماذا فعلت سوبين ذلك..؟"
+        },
+        {
+          "text": "E nnng 田",
+          "confidence": 0.05,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "*CLICK",
+          "confidence": 0.997,
+          "text_ar": "نقرة"
+        },
+        {
+          "text": "GULP",
+          "confidence": 0.978,
+          "text_ar": "تجرع"
+        },
+        {
+          "text": "GULP",
+          "confidence": 0.978,
+          "text_ar": "تجرع"
+        },
+        {
+          "text": "AGAIN, AGAIN.? YOU'RE DRINKING WITH MOUTH WIDE OPEN...?",
+          "confidence": 0.932,
+          "text_ar": "مجددًا؟ هل تشربين وفمكِ مفتوح على مصراعيه...؟"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "OH AUNTY, YOU DIDN'T SLEEP..?",
+          "confidence": 0.923,
+          "text_ar": "أوه خالتي، ألم تنامي بعد..؟"
+        },
+        {
+          "text": "I WAS GETTING SLEEPY AND YOU BROKE IT, AND WHY ARE YOU LATE AGAIN?",
+          "confidence": 0.952,
+          "text_ar": "كنت أغفو وقد أيقظتني، ولماذا أنت متأخر مجددًا؟"
+        },
+        {
+          "text": "IT'SA TROPICAL NIGHT, I WAS JUST WALKING...",
+          "confidence": 0.934,
+          "text_ar": "إنها ليلة استوائية، كنت أتمشى فقط..."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "NODO",
+          "confidence": 0.424,
+          "text_ar": ""
+        },
+        {
+          "text": "WERE YOU WITH SUBIN...?",
+          "confidence": 0.964,
+          "text_ar": "هل كنت مع سوبين...؟"
+        },
+        {
+          "text": "UH..NO W-WHAT DO YOU MEAN .",
+          "confidence": 0.652,
+          "text_ar": "أوه.. لا، م-ما الذي تعنينه؟"
+        },
+        {
+          "text": "YOU SLEPT WITH SUBIN,.. DIDN'T YOU?",
+          "confidence": 0.941,
+          "text_ar": "لقد نمت مع سوبين، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "O N咖奶",
+          "confidence": 0.456,
+          "text_ar": ""
+        },
+        {
+          "text": "OH WHAT..?",
+          "confidence": 0.923,
+          "text_ar": "أوه، ماذا..؟"
+        },
+        {
+          "text": "日 Deepsea Entertainment EE",
+          "confidence": 0.217,
+          "text_ar": "ديب سي إنترتينمنت"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "S...fuckit I'm Omar, and yeah that's all.",
+          "confidence": 0.908,
+          "text_ar": "تبًا، أنا عمر، وهذا كل شيء."
+        },
+        {
+          "text": "so you can follow me on twitter @OmarYeppThatsMe (just do it) (just do it) (do it)",
+          "confidence": 0.938,
+          "text_ar": "يمكنكم متابعتي على تويتر @OmarYeppThatsMe (فقط افعلوا ذلك)."
+        },
+        {
+          "text": "and be nice in the comments.",
+          "confidence": 0.997,
+          "text_ar": "وكونوا لطفاء في التعليقات."
+        },
+        {
+          "text": "*in 3 days.",
+          "confidence": 0.937,
+          "text_ar": "بعد 3 أيام."
+        },
+        {
+          "text": "loh, Aolis 2 Sukuna approb S 2days ago 4days ago Shit got me like ALL HAIL ONE OF TI Hide —uploads.disquscdn.com lapprob reply iter_of_zen 1 ysago View I wanna be in the comment s hall of fame too!! , truly one of the best ob, utI likethisseriessofar 6 U",
+          "confidence": 0.057,
+          "text_ar": "أريد أن أكون في قائمة مشاهير التعليقات أيضًا!! حقًا واحدة من أفضل الأعمال، أحببت هذه السلسلة حتى الآن."
+        },
+        {
+          "text": "AGH?! 3days ago Reply",
+          "confidence": 0.947,
+          "text_ar": "آه؟! قبل 3 أيام رد"
+        },
+        {
+          "text": "couple",
+          "confidence": 0.988,
+          "text_ar": "ثنائي"
+        },
+        {
+          "text": "202118：53 uneedto",
+          "confidence": 0.947,
+          "text_ar": "2021 18:53"
+        }
+      ]
+    }
+  ]
+}
