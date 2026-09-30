@@ -9,9 +9,9 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.3.167.85",
+      "ip": "172.172.87.84",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Moses Lake",
+      "city": "Boydton",
       "country": "US",
       "error": null
     },
@@ -58,19 +58,29 @@
       },
       "dns_history_resolve": {
         "resolved": {
+          "mangalik.net": "172.67.204.232",
+          "www.mangalik.net": "172.67.204.232",
           "mail.mangalik.net": "104.21.69.54",
           "io.mangalik.net": "104.21.69.54",
-          "ssolo.mangalik.net": "172.67.204.232",
+          "ssolo.mangalik.net": "104.21.69.54",
           "s2solo.mangalik.net": "172.67.204.232",
           "s3solo.mangalik.net": "104.21.69.54",
           "s4solo.mangalik.net": "172.67.204.232",
-          "s5solo.mangalik.net": "172.67.204.232",
-          "s6solo.mangalik.net": "172.67.204.232",
+          "s5solo.mangalik.net": "104.21.69.54",
+          "s6solo.mangalik.net": "104.21.69.54",
           "s7solo.mangalik.net": "104.21.69.54",
-          "s8solo.mangalik.net": "172.67.204.232",
-          "leksolo.mangalik.net": "172.67.204.232"
+          "s8solo.mangalik.net": "104.21.69.54",
+          "leksolo.mangalik.net": "104.21.69.54"
         },
         "resolved_all": {
+          "mangalik.net": [
+            "172.67.204.232",
+            "104.21.69.54"
+          ],
+          "www.mangalik.net": [
+            "172.67.204.232",
+            "104.21.69.54"
+          ],
           "mail.mangalik.net": [
             "104.21.69.54",
             "172.67.204.232"
@@ -80,8 +90,8 @@
             "172.67.204.232"
           ],
           "ssolo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+            "104.21.69.54",
+            "172.67.204.232"
           ],
           "s2solo.mangalik.net": [
             "172.67.204.232",
@@ -96,24 +106,24 @@
             "104.21.69.54"
           ],
           "s5solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+            "104.21.69.54",
+            "172.67.204.232"
           ],
           "s6solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+            "104.21.69.54",
+            "172.67.204.232"
           ],
           "s7solo.mangalik.net": [
             "104.21.69.54",
             "172.67.204.232"
           ],
           "s8solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+            "104.21.69.54",
+            "172.67.204.232"
           ],
           "leksolo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+            "104.21.69.54",
+            "172.67.204.232"
           ]
         },
         "unresolved": [
@@ -155,7 +165,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 25.28,
+          "elapsed_sec": 0.65,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -168,7 +178,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.76,
+          "elapsed_sec": 0.34,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -181,7 +191,7 @@
           "ok": false,
           "status": 403,
           "attempts": 1,
-          "elapsed_sec": 0.18,
+          "elapsed_sec": 0.16,
           "error": "status=403",
           "note": null,
           "api_key_used": false,
@@ -192,10 +202,10 @@
           "source": "OTX passive DNS",
           "kind": "history",
           "ok": false,
-          "status": 429,
-          "attempts": 5,
-          "elapsed_sec": 71.98,
-          "error": "mangalik.net: status=429; www.mangalik.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=5.495941144999961)",
+          "status": null,
+          "attempts": 3,
+          "elapsed_sec": 72.01,
+          "error": "mangalik.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=9.949800041000003); www.mangalik.net: انتهت الميزانية الزمنية قبل أي محاولة",
           "note": null,
           "api_key_used": false,
           "hostnames_count": 0,
@@ -207,7 +217,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.51,
+          "elapsed_sec": 0.38,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -220,7 +230,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 2.15,
+          "elapsed_sec": 1.74,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -233,7 +243,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.17,
+          "elapsed_sec": 0.12,
           "error": null,
           "note": "لا ip4 في SPF ولا MX داخلي",
           "api_key_used": false,
@@ -244,7 +254,112 @@
       "discovery_verdict": "only_cloudflare_or_non_public",
       "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
       "budget_sec": 120.0,
-      "elapsed_sec": 72.56
+      "elapsed_sec": 72.53,
+      "cloudflare_excluded_details": [
+        {
+          "ip": "104.21.45.243",
+          "score": 7,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "mangalik.net"
+          ],
+          "first_seen": "2023-09-20T12:09:35",
+          "last_seen": "2023-09-20T12:09:35",
+          "apex_history": true
+        },
+        {
+          "ip": "104.21.69.54",
+          "score": 17,
+          "sources": [
+            "HackerTarget",
+            "dns_live",
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "io.mangalik.net",
+            "leksolo.mangalik.net",
+            "mail.mangalik.net",
+            "mangalik.net",
+            "s2solo.mangalik.net",
+            "s3solo.mangalik.net",
+            "s4solo.mangalik.net",
+            "s5solo.mangalik.net"
+          ],
+          "first_seen": "2026-09-02T00:21:41",
+          "last_seen": "2026-09-02T00:21:41",
+          "apex_history": true
+        },
+        {
+          "ip": "172.67.204.232",
+          "score": 17,
+          "sources": [
+            "HackerTarget",
+            "dns_live",
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "io.mangalik.net",
+            "leksolo.mangalik.net",
+            "mail.mangalik.net",
+            "mangalik.net",
+            "s2solo.mangalik.net",
+            "s3solo.mangalik.net",
+            "s4solo.mangalik.net",
+            "s5solo.mangalik.net"
+          ],
+          "first_seen": "2026-07-14T15:49:47",
+          "last_seen": "2026-07-14T15:49:47",
+          "apex_history": true
+        },
+        {
+          "ip": "188.114.96.3",
+          "score": 8,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "mangalik.net"
+          ],
+          "first_seen": "2026-07-18T04:43:58",
+          "last_seen": "2026-08-29T03:13:08",
+          "apex_history": true
+        },
+        {
+          "ip": "188.114.97.10",
+          "score": 8,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "mangalik.net"
+          ],
+          "first_seen": "2026-08-06T05:31:25",
+          "last_seen": "2026-08-06T05:31:25",
+          "apex_history": true
+        },
+        {
+          "ip": "188.114.97.3",
+          "score": 8,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "mangalik.net"
+          ],
+          "first_seen": "2026-07-05T22:35:36",
+          "last_seen": "2026-09-21T00:59:28",
+          "apex_history": true
+        }
+      ],
+      "verification_summary": {
+        "attempted": false,
+        "tls_reachable_count": 0,
+        "http_responsive_count": 0,
+        "verified_content_ip": null,
+        "note": "لم تُوجد مرشحات غير Cloudflare قابلة للاختبار في هذه التشغيلية."
+      }
     },
     "direct_origin_access": {
       "attempted": false,
@@ -255,7 +370,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a430c14f38f1a362-SEA",
+        "cf-ray": "a43128c73d0bd6bc-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -274,12 +389,12 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.06,
+      "elapsed_sec": 0.04,
       "cf_mitigation": {
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
       },
-      "cf_colo": "SEA"
+      "cf_colo": "IAD"
     },
     "curl_cffi_probe": {
       "probes": [
@@ -288,32 +403,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a430c14f684fc381-SEA",
-            "cf-mitigated": "challenge",
-            "content-type": "text/html; charset=UTF-8"
-          },
-          "challenge_detected": true,
-          "protection_category": "solvable_challenge",
-          "protection_signatures": [
-            "Cloudflare"
-          ],
-          "extracted_image_count": 0,
-          "extracted_sample_urls": [],
-          "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.04,
-          "error": null,
-          "cf_mitigation": {
-            "cf_mitigated_value": "challenge",
-            "mitigation_category": "recoverable_challenge"
-          },
-          "cf_colo": "SEA"
-        },
-        {
-          "impersonate": "firefox",
-          "status_code": 403,
-          "headers_of_interest": {
-            "server": "cloudflare",
-            "cf-ray": "a430c14f6c48db8c-SEA",
+            "cf-ray": "a43128c76f16150b-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -331,14 +421,39 @@
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SEA"
+          "cf_colo": "IAD"
+        },
+        {
+          "impersonate": "firefox",
+          "status_code": 403,
+          "headers_of_interest": {
+            "server": "cloudflare",
+            "cf-ray": "a43128c76b79d6bf-IAD",
+            "cf-mitigated": "challenge",
+            "content-type": "text/html; charset=UTF-8"
+          },
+          "challenge_detected": true,
+          "protection_category": "solvable_challenge",
+          "protection_signatures": [
+            "Cloudflare"
+          ],
+          "extracted_image_count": 0,
+          "extracted_sample_urls": [],
+          "extraction_tier_used": "last_resort_regex_whole_page",
+          "elapsed_sec": 0.03,
+          "error": null,
+          "cf_mitigation": {
+            "cf_mitigated_value": "challenge",
+            "mitigation_category": "recoverable_challenge"
+          },
+          "cf_colo": "IAD"
         },
         {
           "impersonate": "safari",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a430c14f7d1bff09-PDX",
+            "cf-ray": "a43128c76d59c574-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -356,7 +471,7 @@
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "PDX"
+          "cf_colo": "IAD"
         }
       ]
     },
@@ -389,14 +504,14 @@
         "mangalik.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangalik-net-4983-screenshot.png",
+      "screenshot_path": "diagnostics/mangalik-net-8526-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/3cae89a8-6974-417a-a357-d29f1f944013",
-          "blob:https://challenges.cloudflare.com/463d057c-6539-4f99-9c6a-f2700e65d6a4",
-          "blob:https://challenges.cloudflare.com/51f27f0b-f67b-4876-9ae6-abff7cf6a5ce"
+          "blob:https://challenges.cloudflare.com/23d7ad51-8b2c-4c9f-91f8-43518779052a",
+          "blob:https://challenges.cloudflare.com/2422cd97-a200-4840-8776-f4cc60c0e850",
+          "blob:https://challenges.cloudflare.com/4e28acdd-8420-4483-beb8-ec0ef3389471"
         ]
       },
       "adblock_wall": {
@@ -442,38 +557,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.15,
+      "goto_elapsed_sec": 0.14,
       "navigation_timing": {
-        "ttfb_ms": 12,
-        "dom_content_loaded_ms": 140,
+        "ttfb_ms": 17,
+        "dom_content_loaded_ms": 131,
         "load_event_ms": null,
-        "transfer_size_bytes": 4109
+        "transfer_size_bytes": 4108
       },
-      "wait_for_images_elapsed_sec": 1.63,
-      "scroll_elapsed_sec": 1.94,
-      "total_probe_elapsed_sec": 83.72,
+      "wait_for_images_elapsed_sec": 1.61,
+      "scroll_elapsed_sec": 1.91,
+      "total_probe_elapsed_sec": 83.59,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a430c150cea4148b-PDX",
+        "cf-ray": "a43128c8c8bbc9a4-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-uq8W2PwvGDNLnktqEq4Phb' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-vk2UZuwJDRD12dZjFJOu1B' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 05:16:22 GMT",
+        "date": "Wed, 30 Sep 2026 06:27:00 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CjnK4WD7mFoiAbVW55brRMjXIwvHHPjpE3uCYAre%2B7In%2BvFsn1zb4IKgA7JdS2CIUk8lzNOArAVZcLa%2Be%2BpPqAc0xNV9Tkbf%2BNk2XfcpH9jlsF%2FnhOD70iq754Hc2zs%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=h5CZJk%2BOYLsjoWe3UWezM6Hi8mIoA5xaahuxi8ckAFYJTRivbwtJ5FkDkGnWUQ9txpNlYY8yXHtOS9k7cQLG6MG%2BPeCw5OUZft%2BKF3ar9sS004PMhn4l4GkcDizGfP8%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a430c150cea4148b\"",
+        "server-timing": "chlray;desc=\"a43128c8c8bbc9a4\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -571,14 +686,14 @@
         "mangalik.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangalik-net-4983-run2-screenshot.png",
+      "screenshot_path": "diagnostics/mangalik-net-8526-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/13a37004-0e10-4ac9-8553-8838de2443bc",
-          "blob:https://challenges.cloudflare.com/31bde296-c465-4731-87ae-45d132203f5f",
-          "blob:https://challenges.cloudflare.com/932955ae-a171-45a5-a4c8-17797808cffc"
+          "blob:https://challenges.cloudflare.com/3fd5e49e-ac41-4ff2-bef0-4a9562340a14",
+          "blob:https://challenges.cloudflare.com/70b114db-d282-4af4-a619-b529f0ba9b28",
+          "blob:https://challenges.cloudflare.com/7e41afd9-ee77-46d1-9c0d-7693d8f86958"
         ]
       },
       "adblock_wall": {
@@ -624,38 +739,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.11,
+      "goto_elapsed_sec": 0.09,
       "navigation_timing": {
-        "ttfb_ms": 14,
-        "dom_content_loaded_ms": 105,
+        "ttfb_ms": 9,
+        "dom_content_loaded_ms": 85,
         "load_event_ms": null,
-        "transfer_size_bytes": 4111
+        "transfer_size_bytes": 4093
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.89,
-      "total_probe_elapsed_sec": 83.4,
+      "scroll_elapsed_sec": 1.77,
+      "total_probe_elapsed_sec": 83.21,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a430c38a7de2db8c-SEA",
+        "cf-ray": "a4312b013d9ad6bc-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-mImkYIp6fgoQ2oxHtrvtpB' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-aO4WdQAnwLsBGfrGdei9RV' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 05:17:53 GMT",
+        "date": "Wed, 30 Sep 2026 06:28:31 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=P0DXWZEgbrSDFLt10NC%2FIeOQi%2F7X56e5vvhU66jMza1%2FGPKEeNfpdfNdV6wOTCT4byjbzqYBWc%2BP7rmIGE6p4juCxEiMfRDuvmG3dsM1YZ37l4I6V020fZ8d669fmjg%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Hy0O9YaNfmjIsqboJUlI%2BfiElsImesVGVt%2FBEQUzrhb8lU3LrCn07F0ghtjTvVAxraoW7sTltHYadhj8Bz3v3lIHHJxfjniW2b53v7mKO0AawEtG13Ry3aJrFIM5tZ0%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a430c38a7de2db8c\"",
+        "server-timing": "chlray;desc=\"a4312b013d9ad6bc\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -729,7 +844,7 @@
       "target": "page_url",
       "sample_url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "requests_sent": 4,
-      "elapsed_sec": 0.27,
+      "elapsed_sec": 0.28,
       "status_codes": [
         403,
         403,
@@ -756,7 +871,7 @@
         "protection_category": "solvable_challenge",
         "challenge_detected": true,
         "resolved_after_reload": false,
-        "elapsed_sec": 75.52,
+        "elapsed_sec": 76.03,
         "error": null
       },
       "source_url_leak_probe": {
@@ -769,14 +884,14 @@
       "trace_url": "https://mangalik.net/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "988f94",
+        "fl": "626f95",
         "h": "mangalik.net",
-        "ip": "20.3.167.85",
-        "ts": "1790745645.000",
+        "ip": "172.172.87.84",
+        "ts": "1790749884.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "colo": "PDX",
-        "sliver": "none",
+        "colo": "IAD",
+        "sliver": "050-tier1",
         "http": "http/1.1",
         "loc": "US",
         "tls": "TLSv1.3",
@@ -882,10 +997,10 @@
     },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/mangalik-net-4983-report.json",
+      "report": "diagnostics/mangalik-net-8526-report.json",
       "screenshots": [
-        "diagnostics/mangalik-net-4983-screenshot.png",
-        "diagnostics/mangalik-net-4983-run2-screenshot.png"
+        "diagnostics/mangalik-net-8526-screenshot.png",
+        "diagnostics/mangalik-net-8526-run2-screenshot.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
@@ -1005,7 +1120,7 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519 (29)": "d89dd86be48f3a5520be7eb4b8a28a68bde146264449bae29bc7d9607adb0460"
+                  "X25519 (29)": "5d7a68f7ca7e10ebb14cac8bea01a911fef914df03f5f20ff5ea854f739e2f32"
                 }
               ]
             },
@@ -1022,14 +1137,14 @@
           "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
           "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
-          "client_random": "f93e6ee9fc8385ed72f7acdc7da289c8dc7e7d6205316bff67224ae331f93bb1",
-          "session_id": "d0b852d1b23c92e4500b519477478c9bc06851a884ad5639aad3931eb7c52009"
+          "client_random": "c500e078216311f51bab4c09b0b315887bb6c302694d06ec69e5ce02ef7aed3f",
+          "session_id": "585711ed3aba14da156f100a523c3128db635bccb879d8047a632626d3f531c4"
         },
         "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "ja3_hash": "9246a92df5501c06b7c286a5327ba6d9",
+          "ja3_hash": "6b1d727ce78e4e598bdec67e98ddb100",
           "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
           "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
           "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1038,7 +1153,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x4A4A)",
+              "TLS_GREASE (0x8A8A)",
               "TLS_AES_128_GCM_SHA256",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
@@ -1057,32 +1172,43 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xfafa)"
+                "name": "TLS_GREASE (0xeaea)"
               },
               {
-                "name": "session_ticket (35)",
-                "data": ""
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "0000010001ff002076fe2073d965fad1a79df7a21391c4fe4712ff42bf79b92976e5f2c97334fd0800b03a31a078d800949cb5fe4c164004e07f17b3affe4a91c9336e1b866004bb283560dd5fdcef816e5e2cef01cf0ab9c5da963d7594b893668968f66740e179942fa223969ca2fab10093b08eae92cc94f5d0bc185302339e22e1a33a68212838631f45f98dbe0cda2cf2dd99ee7186ea39fc142d336ddd7a4d7a42306690d2fc25e9ce9fd6fbdce276227931e078ae13eee6e07a4f2e847026daec9368dfd5d1dc9c24ea0b32e625aa6ad3211ca6b7dcd6"
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "TLS_GREASE (0x5a5a)": "00"
+                  },
+                  {
+                    "X25519MLKEM768 (4588)": "4f556f86f79a6b6c706339ba72e8c88e9548d69590e895b5200240a081bedc8237882854aa67b8ab1191f9c669f64304f49782eeca6c5277bff5a9a83238c47bb4b057ac3277c736e1a94624958769a5967d1258ca607c93aa5e3d70940df325a96a6b67f64848a3bf892aadaf8caec3b41e3fa2af0397abfad80f04d705b196332d74aa47bbcaec864b1de48a81a1141371752e96654ef3928a43973de813b26207d9fa826067cca6070bf5bc1280ca3ad17b3cd8a70dc9164be784440a0ac502ba126b0c72879951f5366b7a1aa3fddab1275bcf4e22b7fa036206545be1e41d3e7303fe50cd3bd064d493858c6277929b4507948231d2a6f4f4496c58225d296d212166190603a9c30398bb10dde23927895a7d7c1fbb1440a8d20c2713870ed282c360a36ac76155376bd0361bf47836e8da5ccdb200ab2b4f5c1b0d58a478500bb419c1a3a2aac958cc1b373bc79c24757954c6b3c7a87ac0b03bcb33f200b51f2644c765b7db983894fa1a0ed5cd93e2c810964db08765ba3bb0b3b9a01ae35b4d18708a136d41e5721477a866c3ab2484513534055bf4b759b4cb42397e841cb2cd73953fe9b9ee45bb70b87ba999431c6936b7c6c23550b8a1324b1b6b1d11463eb302ceedb624a45b4783e3811498244b58594a82442c9caecee400a1d4781a756fdf4044e54cc77d4b6d62e21bed15221b4a2ebc3ab6d049b185293ddf6abffb58a9a7c66ee08037fc1796a7170fcc15aaa691b157e925b424b5cff8cde7486effe65e4909c49322956be9a7b8540dbd46665deb284d0c2551da9a2032714ef38210934f05b2145804533169308931375cf806c2d09f87766acea82be41622ccbc337440af5c1797a95c0fb9082bffbb177a9a8c465c1a02c87542cccc0f40ae5cb10e19f56d6b8b5ce2946068151e362b335ec0896dec9fed21596a2c8d2a153e329cac27777ebbc69b8b6ba1f1e1c0153b77dceb1bb3048516f91bfbcca5def6c21104a1ce7761877899c2885b702831d4242f5f598d64f9bc3b140b32b6c13a758a7c737ca2c5c77f5c752c062a402c06c0659d1076b33d36a4e3cb81adb361db514f96b8171cc3a7bb3905bbe67891fa0f0260cd18631ad09c7752f36c30b379b6c86b7e9c1a01a3918ab98ff38aa6ee39a978a62eb8192258423dd2e3cf28c4335a0c11f596904328195a9736497532a8484e31971266b1c15b6a6e7452667275603a233befd029acb3648901271a9371bab2495830220fa9077d9641f8d80012873874f3ce2ef1b81307233114c7e071a1108b62f36a4f1f214e563c565f624dae20a39212887be85a1f04436316395a3c060c120f8217b4c634461352498ab3c6dbea039bb38444a1b0e91ab901f1bf168650f130671e8cc9207a64632cab29e4b4a87370cb31cd13137b4ba6c56dac21d7c89bbf44970c3abf4bc009aa5a83507b9696505269522eaa0a3eea460de928706c994f2df4cca1aabdbf85961fba61a840c01dea3820422b6853388b88667f19686dd8628adb3407093debba6709e19bd64819e1ea2a54aa193096c368b01fd4176b06678950f26ee4101ae4eb788c6a40929b894ff4aa6a4bb24c04a852a74c3258c3cabb1ab9ed6d1220aadf35de37f58d16952fbbd5f98499c1eff6a1c78f354be41f536a737f960277a6bcf8a6aca01d1dd3f38a71f0571477dbede0895e97bb7a10eb75"
+                  },
+                  {
+                    "X25519 (29)": "5ced5363d43076aceb4a7fffe88bdde326172e3a99c720836fba6e7a0f35ba5b"
+                  }
+                ]
               },
               {
                 "name": "signed_certificate_timestamp (18)"
               },
               {
-                "name": "supported_versions (43)",
-                "versions": [
-                  "TLS_GREASE (0x2a2a)",
-                  "TLS 1.3",
-                  "TLS 1.2"
-                ]
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
               },
               {
-                "name": "extended_master_secret (23)",
-                "master_secret_data": "",
-                "extended_master_secret_data": ""
+                "name": "application_settings (17613)",
+                "protocols": [
+                  "h2"
+                ]
               },
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x8a8a)",
+                  "TLS_GREASE (0x5a5a)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -1097,9 +1223,28 @@
                 ]
               },
               {
-                "name": "application_settings (17613)",
-                "protocols": [
-                  "h2"
+                "name": "session_ticket (35)",
+                "data": ""
+              },
+              {
+                "name": "compress_certificate (27)",
+                "algorithms": [
+                  "brotli (2)"
+                ]
+              },
+              {
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
                 ]
               },
               {
@@ -1109,34 +1254,6 @@
                   "responder_id_list_length": 0,
                   "request_extensions_length": 0
                 }
-              },
-              {
-                "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "0000010001140020a607ca258410e10eb5aa90a098d85246a0c2308d6c9b064107b31400cc80343700d08011fd6ac7336ebb321bbc5884f58b8c298908cd1ac2ac2150503464663ea4bcf1c0326f39ed14f57b3d09d950368ca9da9bda545a745d564a4911d873695d8b6f6b0ff8c728a5228e2c9b4e57baa7b0ecc06fcc603c711928109c63a94abde2b760d36196d4f578d9520e3ed6c67e5b6b78f1a13f98ddae6b6ad03896f20d8911d76a330d70647898f3a8bd51efd55962f8d95c56b40d331fc80aa26e160c6e817c633ca1a240688211046604085affc82bc8368ecfb6b4362e05d1e0093a5c23f5ece0940b466bac45062c3a765dc3"
-              },
-              {
-                "name": "key_share (51)",
-                "shared_keys": [
-                  {
-                    "TLS_GREASE (0x8a8a)": "00"
-                  },
-                  {
-                    "X25519MLKEM768 (4588)": "61cb8e567ca5df6695b4e34e4473932a9818fb44c59378bf790225e8db887764945f686dc09463372c8040c4968eac53e556964053341216392750afa501a728f21da947b984680c2e643f53a0805990a738f4b2d71c390856a9caacc80e72b741295322537297db98083a30aaa60afc249f9d3717c882a072ea4598e04a3343b72a484a637a2677b48b8138404337688919c986814c03e510e214647d1ca51ea8bd27670f6f4702acb515c3609fc9e30c86762790dc0c4637b6818548d9e948fe2a89fe0486d8f649bf8557cd20185cdab9ce749cbdc1b1f648ab71f8275ac75caeb4b2d9922dd8c0a7dd92240f4896ad367b051ccdfedbcb205973828328050639b54331c115391a0896e9c2be8c0a8ac55a043098c77c389302dc60b4597b6c0618c92102e9a2a68ce73476702064e4a3cd1a2d34aa22de033548416a4cb1923f153cd62b71ac38bcf2f4bfbd777b9a404e134031f6ea3b5d44031f180bd5f308c6b21d3921a24dd8242a2733fa0a6125cbb2107b76c54b7b181b4ce125cbef0242adca324959c4bc17bd25c145bf22bfe84cbf0189098b566140f8b1847a052ec655aab1ccece90d32a93cc6a08e30ea039233a8cd210b779713fbf92c2dd539e1c1a914f595aa4b80145a248a20227533b9f3bb2c424b1c3019a722779662096f54fc30398492c06a32c8c53d07e2390430004ca12bc053994e5382d1b886ef076b6b0977cdccbac2bb5a54cb4920675042417869220d9e63279c87ce5d49381b9748d8f10fe7911f5ec80cf1739f807211da2933b4104bedab1948200883246c3f180e13e07eb2e9b2bbd3bd9c3cc33df0cabbdac1bc512bd5e471f716c04c0b4033878883d124f4601d8145612cf52fe7c7b2f1158d69b232c157a4a6341eeb494e078886a4d98c3b282dd0274e1c1c08609129d560837c6707c7a20c53b56a00c997f59782a47471d7007828d94bd2bb8e999b899db078ad3897ee7587b76ac7bca6cf672649cd8b6ed05946c0cc0d537597699735ef71185aac22556740873a81f06992e5fc9c75e6ad20702a15a1820f17c0df563edf5a6513a17a03d95d1020133b57a348083fd5c974bf8ca0ae4819bc9cc363cb002860647b51148fc85b12978f7a46c03a5612d7fb3a5ac804a714a04eeb4fefb0c3712770a00a33f55170e7872e31c81f545bc98e302587d345255785615824a7e90775da78a6b4cc5d10afc24c1b939670f43c7a87a26e8f723934b3354ffa2f35949fc16b4d3c54cb10545d3abaa4eb73949a6c653446a4fab254d1d227a9112bc926301c51b5b556081ae95cd1dc7b39c91d631cb179a16a4582435e4a50146a6ce6fa5fb827b19f8461df7b9b2253934dc62014d82d24a17e02e95b73229927793562b73c05d999f8da16c8b6c5b1629ee7f306a2136c79f972ebe5947a4052e79660a735a5ade2ab63d59695a4aea817753eaca3fe20027364294489234a5436207b6f9a073e6f20276fd6b0f88171e4929af62c151545691d95510df53286415607823194611a25a0225737606d123f9951c25a70b7a751160105aa817b2deb328730e37530ab9a6e672130d587e1f1907c140661209aa9e39bb51439df8603785422e96822f19296e87ad081d0ca2e838c76272b722d2eaeb847d13c4af7c159aeef173eadce21bcd17a5453d306f19149aed7ec83cce5179d0ea917da16f3b94939"
-                  },
-                  {
-                    "X25519 (29)": "a99f2361ee3758a4f4db1296e1fcbe49171224d0619a5e4b620ecdeff0353d12"
-                  }
-                ]
-              },
-              {
-                "name": "ec_point_formats (11)",
-                "elliptic_curves_point_formats": [
-                  "0x00"
-                ]
-              },
-              {
-                "name": "server_name (0)",
-                "server_name": "tls.peet.ws"
               },
               {
                 "name": "extensionRenegotiationInfo (boringssl) (65281)",
@@ -1159,29 +1276,27 @@
                 ]
               },
               {
-                "name": "psk_key_exchange_modes (45)",
-                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
-              },
-              {
-                "name": "compress_certificate (27)",
-                "algorithms": [
-                  "brotli (2)"
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0x2a2a)",
+                  "TLS 1.3",
+                  "TLS 1.2"
                 ]
               },
               {
-                "name": "TLS_GREASE (0x7a7a)"
+                "name": "TLS_GREASE (0xaaaa)"
               }
             ],
             "tls_version_record": "771",
             "tls_version_negotiated": "772",
-            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,35-18-43-23-10-16-17613-5-65037-51-11-0-65281-13-45-27,4588-29-23-24,0",
-            "ja3_hash": "9246a92df5501c06b7c286a5327ba6d9",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,65037-51-18-45-17613-10-16-35-27-23-0-11-5-65281-13-43,4588-29-23-24,0",
+            "ja3_hash": "6b1d727ce78e4e598bdec67e98ddb100",
             "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
             "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
             "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
-            "client_random": "b1859133781d1634624d346c21f2fa5a929556d4f4f29aa05a03522ad38bc2b2",
-            "session_id": "167d3edd47e58c3c375476f745d2d60804e7ef6f43a2834ab4899a805dd34db1"
+            "client_random": "49bb9f001969afeaa2ca338422126414b7470d0ee75ee44e6a3d00627ea9a409",
+            "session_id": "17f31b667a272091b8401df30e2f4575a8dcca2420a1c80f4572d151c9ffb4e5"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1334,13 +1449,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "X25519MLKEM768 (4588)": "3c62cf0b1331f16900b9270339a28a7668217dd5b65435ce6df88f5e8574ed26870801a0f87a0a059547b5d98061f75e7eca0485763e9c44288e3494222b40d2a087be2a0b3a48207215a1b49565e12b70bd0386aff5c5b7f830e09c8a75068815a32c15c1bbbffcc27340144f6ba8daf567675467154bc99bd74338e1a7d2d02e8e15cf9d938c3ba5346464036f0a9b2748370aa34f36a7589f7cc90dd25b6dd543e636ae26d9c06a0a419a4a1f0871cd2d833400d1cd7fe95478e0c0ad3c1a0e3cb8b8f32f823b25c46931ca502a58f0336b076652c5107db4cdb85b4413da47c2f9c9c12c66a233414290246cf0be39923ace53ce5468a651371a1d18b411073b48e6b7ca01887f98149c434c0f24a0ce9b9f13643b9eb0961e434b7fdc112673b8b13234d33b49722186d02394f6ac6ece42590fb05d188702b9c9a7ed58a0c403a6c896547d912a06381babd92fc4154d05a52ec11851e63ca42e760f26447404d25a84e33244441f20a1ca2c169569ec05423a1eb0fa469be72b96a75d93e54a850c2d8138c4168765641c2971996ab71913043cba93e088c8320a122561cfec21874803d809268978ac3719127f26493cc95b8b31a68116c05955598fdc820c919fc32404464251ffc8aa2e213f794ab5d322b82f09953d582018375bbb651fe11322d33545e3e53d4466000f507d5372a9781c2a65dc0e47755abcb9a3afcac74cfc6651c67a0a513bde43bc56c4712f905d7de73c88bab2c93c71efb440516125bd0a273b921345bc435eb12b9404419a2a8e8c4b7b014a1aef0163c95557153c5d500716b4ea480a54cf55585889404e101034f465a6f2b4b9a2696759f30957e8136e80125a6554f20102d860aa81a223e7bc472c8c2c7a0a185e0293f7d6a2448289f5345fd497236e398970619d89dbab0d4a7b00419c207582d6f8c701b960f6b8aa0db7950f30ab9e73adbf18408a38a62e415530f61b80986dc8dc68e338caa0143eec10736c0809ff784f634c1fbb0c69f8c0148b577457f0c68aa41556929c87e1cb4d09134f039b3e016ec4328af087259ef2562e1bc1ca8789b258a1afe44f9ec28eb3114ed0c143940276729ac7ffdbc0c1b1a6ac901bd61a710e1965757249fd5296b2cb539f1682fb9783460573edda836aa87a3763072e467a2297a7e5f3b75eaa7467c2c81ee96f6aa6cf84f637dfc33b1408a7172213b3328bdec6ab9585b783437d1332a2fdb243a54572ffbbcdc291b7dd75ab21b60eb1e65ed73056a504c5d382cf3bd74fd6768d776128f69652300b66e078893aa7c7c4f2c713971d8a123fd1ca1d9d898b2ec6a0c794232278ccb2301dbb0216fefa7505abcac2e1c98ee8bab0ec97420135aa3627daa38d5401a94f7a5aaef6056f936b646b50fcfb08c9b690de5b89eb03444775218b923e0603177700cc8906c664621e6af709f7d301b8a055b12470f3961390d31bc4f726239a6a4b3c13fa6416092268346541599939302079ea76471c454a19f95971838ebed5708c2221fec26a0c4a7a4eda81043c6d6da85e48c84f43a4cca814524aeb21ba70564a189e3a41624e3009eb152580230834663eebf56c339190fd061ad7e58074af79e477b01f42dad9e66d84020ffd35370e2a49c766684c5eede3d321de6d88469bd79705a73b31fcd01e23c96e6b10bd5e736e39cc667f98871ffcb75531"
+                    "X25519MLKEM768 (4588)": "dad214b39b1a3c2a047497cd3a0073012b6b3bdb56d2302345239bb55b479a213a0ff026fee0a522e84dca56c511105b03a191f1298088f0775a131893c28057757b9afabb985c16f6abb415861e88a05c2d713a81dc8980c78bb8e5a62b48cb730375b6c25a9eaa9576665811e396e038341e3713cc7a274f798223b921481483d2b3058ff2952f23b4d2d5936a710a1e0549a846cf88652c11b45d849b688caa6993f88bca348d1ac379086c3802a986bffbb2c81287c339a081ca81e8e3249ca88af2d288c93c0f89f44a09926891f2880b20147ac27f0f50023ea221fa324051431e1b28b3d366c6bd297a2bab5c21488972d59ad2515bc6c663313799c44448d5d4b05194046e9b7a44f2bafb426d598268294581f164ba97d2cd8d44b554cb82a1d40cd4b1cff643758302917b5498fc57579a61472c961718b6a95d46ba04308b5c0571c00338fdebadbbf12b6abb96233a784a296205589101f86205a4babb302dfb4c540c94031fb9c6f71a5b5e1404d3f82e88a6443fc4bead974b7eeb93c4957a26346c13f87973f5441e45147d004cb4dbc09157694c954b02096c75a0a5dca745d1885e96579074523ca6509b47343433f28b043321c746974ad0116dca7c11928472565434420600c5a06ca4172b63aa0ce462246c46dd71656b8b921ef2ae8fb728330a9414f35941a9b422e30afea5a6a5e25f897250c3774371d21e55a6ae7868bc8a057044eb73c33709cf9161b10a47fbd33f8f6867fd985082a986efb9c315cacd9f2ba0939491dbfbb67f1096b66c40bf0b1dec809f7b5b34b6921944a06d3f001cdb949794707bd10c3f073b4d6fd0afd14b07dd443e0bf33023b45795598a8b7342a08aadc289265a109bd83b10992c152e1ca4fb238e9b00239c928ebba077b07c715c1a9718f7376b798b8681701e436a4ca148588212e46a1f7bd6aee4ea7334c3633d77cf76c4b0752c1856099818034e27425aee8ab85aca290289b069d648740b3ec9b4245c676c2a506576ab7771d79391fc12fae34acbc59cc1c021efa966cf38cc5bc1cb9b18075ec03d2cb03a871526166ab80b00960fdbb164400b03abad3ce3032f90cf1df47c21c35bb5207036e396e5a888f3b10ea949cf8b0822204b691ef47f36a37100326bbd2a992e51a8f059c5b98154867190424c34e5481b69726680d29ceb469e9e2a1ab2f20283d13b35d1822a567660b20b4101a746fc6d76929e9eabaa5d57a2976869e95c08442babb95aa5c665cb84443e47f96072aca9dc3b9f04a97a03ca1e44982ba646465aa805e1a4c4217722640cc7526b35ff60ac7eba3cb3c86e9f04bb864906118ca292a8b4698278634079f5e27470da697f4c1bfe80067ea1c6483526a9cb665dea3bad617ab6bb2487118e27812899c1a44824671b919592854419f8cadc3656b0128e911743ddf999a7734d4b52bd223404bf8118e3e2b0d226c0aff73b61c595b16020e6127585a56f55ecb48603874d0ab749e655fd4204316397d1d3c08ce50b6c4689f6a9ba9852a1dd374e9eb517db0c105a7c9045a13ea89a0abc0954a91b7cdb77025a6278b4290b9042a745e61e71674204823f1b2c954ca34634783fb1d3f3c4aa0784593b21cda660b23426c380ea6b70b63e9a8a52ba1db4bbc8837d9480240a5a8a0d3e6497a9542c49d290dd9355de1952de9a7ed865193a1b1f"
                   },
                   {
-                    "X25519 (29)": "6d0b77965c4ec1eaacf5f1dfce3dbba4b49083f3947fd58ede37747ac777251d"
+                    "X25519 (29)": "0449171e4ce44473b5cbf11466f6caa67727d386d31c73f0dab03973f3031e1d"
                   },
                   {
-                    "P-256 (23)": "04e1bb5cae0f05ecd98e7458a1253ea021485f5ea6f1eadecd9eff64c2f91a3a82a5a4a13c0a3f92e22a47521d169ebca331334573cf500ede2b2c6b26fa8d6a36"
+                    "P-256 (23)": "0448610c7b4df1777fb1cbfb255a1f514c55d273375f2f93e1ad0f497841499454820ce52f0558d20a1c68ba22c7c9b30259e9f450fb14d9a9a723aaf4c9ea2a4f"
                   }
                 ]
               },
@@ -1385,7 +1500,7 @@
               },
               {
                 "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "00000100011f0020cfdca28434e8853d71e9798a003d688e8551595963324d23e1a3a2fafdd4c54700f034b555d65cd39425ade7aa77a5c623e6df0483fad856d934b8e7a174eb3b4cc9228a9a8562594acf7d36b46686342c0b1370fe34eb3d5c07275edbdc9eb2acd967a17d70ab343f93b43988bb59d61f6ff581ef6f8c46c4b7452795aa2d6d115ff4f31d2c148cf54882f5805971c35856c3ff75a30225a95c5e5f8669fdf4ff8fdf12178d5803d5705ada36ea2e36232e66584e8001541bfd3c25f43fdf79a85b68f6d80f0aef57ec487b40f4e5a8e0d1b946190d148a5337a31bc977ae21f342f61751475bf424b04f53d1a34b4104414f83046b0793055ef70ff2ce92151c3ea599275eacc317b0a6758533c63b8998"
+                "data": "000001000175002046e4cfacb4a5fc6999660d83f49ecf83ffe75eadc69cddc5a66fa79e804a1a2200907eb4f9a20e3182e0c046d8c0ce7075d216ad8b718e1cf0d18681e04208be95c641cff8b1aa4f3380e10a2ee87fd8c1d2f5439425dc1f8fcb8fca0ab6e9a53ded4379465a7cabe35db9ac705d92a8f0e4ba0117fd1f7e9f52ed36f6552d585cf4cc0acf07938caed5b1824a4544316f523a0710144db9bc2a35c5cfed27a5a3e8e5b3f4f1eb09b510536b852a3f9c89c7"
               }
             ],
             "tls_version_record": "771",
@@ -1396,8 +1511,8 @@
             "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
             "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
             "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
-            "client_random": "c2607566771baee911fb151552107cafbb08932f85e5140896aefce281283ca8",
-            "session_id": "11690f4bfb39c0e42787c035392ecf50d24fa52e464f2c2aae69fd9f51a2cebe"
+            "client_random": "afb7379f9506767dea4f879c8c7b3e63c98711b5cabff92886d5c3bfa9a0bcdf",
+            "session_id": "84fb1cc7e98f630fc05667b98e371087039eea1912092ded4429d4a7fdf0a415"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
@@ -1463,7 +1578,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x7A7A)",
+              "TLS_GREASE (0x8A8A)",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
               "TLS_AES_128_GCM_SHA256",
@@ -1487,7 +1602,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xdada)"
+                "name": "TLS_GREASE (0x8a8a)"
               },
               {
                 "name": "server_name (0)",
@@ -1505,7 +1620,7 @@
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x1a1a)",
+                  "TLS_GREASE (0xfafa)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -1556,13 +1671,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0x1a1a)": "00"
+                    "TLS_GREASE (0xfafa)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "d9f5183a8529f4893b1826bcf3f4ccfed7cd0f210d531629e1d0ae96217c9a822a1a07780a2cc9806c2cb75036323a3c73b422b2441ca4d88e76b75e14089c3cb4674fa2c88c628a242548da0cc5e3bc18f7283ca945595aa03d95390b60b952e32025d873081b265147d542af37c9fef95bdd156635d7269bfb78c800ca195b139030096555cd41c9ba54b427dd7395fdbc2b556876b9531e8c860cc9752199348b319a53fb3002a3e8214ab464ef0c569b7519358262d86c50a0e05bb19aca8ea39c948879132b8859840347a7c0f5e1a624fb60d2987613aa0e1b56688a9b0d70374823fcaeab641f96b2c8e9b6081078b95866647e620105fc73559b20a4241635e57e63810f6f4cad95067012cc30e0875652e953919a0381f3751fcca464004f2e40ccdd946f8a0a507452058321ca50388e2e422d5f254f2a4a14e10b4608c774f235581d30285e5b655d8535ed40cac0f27be2d8681d11473da7b459601c90b8bdab8933fa81933934be316cbe1395ab0dd22009666027a08dfa821cd4453095f696445480d85c3e15235ab9e5cccfd6b9d6c3cbf35b6e88960c28a419a57997d2393760392c57e2b2cc3c2d88554de7f02c930164f7c1857c9aa770c16bdf968b574b9044969a50676696f075eb71962147978618bf7149928cb155fc7308c17c54eb683783ac0f1a90c949810f48fac2c66069fc94ab8380a75a370abc49b4c608a8bdaca82efb6cfff956ad6280c4209d7bf259cc871010a97965e38dfec5a74b418e8aac6c7a85b4b5a43791c4b8d6684f6f6642ef3a1d057437da1959b0b03001340e53557eaed02cf38211d4f2412557a8acb1b624169670212d2ee23e6769aeace45cacfa5d610939ce4951f6e1a5d7f7ba56949f96ba01aa28bca504072575a2ba82c70abbc4954665838bcd762c529e40a3242bb4296a179de2353445c9c17b3aedb68d4f140b87750f6d63b0f315a65e685c2825a21b648cc40abe7239c5a356816bc6747c3b9e2cf7948d742358da76f56b846e84b4082892c5dc7cf6540b2527759c45222dec60be57b0aa248eaca3b383b9196e371dc1536eb192a9280b2e1d4498ecda46d64a81afcc64523357408ba902f4946aa86a34d21100f40bf3a574780283f7f659afc0431c3a0674505363811e122b0105144913261415b0bfb8b3484cfa0c5406562be4a99c56013c88a1bbaa70017cbe8b72a849ac990eb6aefae956c699caa0c487e03092fb524bdb289fbd232f172959ba9715ca01bfaa015c670b2ba101771434465b76c05f524c76d708c6f1a2ec9203e1b19a70544da82bbfd8cab0ead035fcb5612489abd229815d1687159207de284e3ce078b7f31000ac53a5189a4db786b2298da55803261b63be278fb67caa5a66b723190dfba835c1670100e08f93b80403eb7fefe14dd709391ea43c5de130ef81bc0dc31438010177a49d70c93adf2a5ed7bb846c62424cc4834bd6b671d0a736a063359cb731826c36f5777a51a13059b80314c42911a43c9a69bb318442590c4d4ba841b8c4ab7c2b33c5c55f81c7d9f2bc928935da9907de7c7354dc29d8896f4cb435cff843eef942808063cd770edd6c1aec83207f5c8cae465a8fe3c37a9b0d0c2f4994137843e0eec0e2b6fdf40c2a136d8a74810a6e37424fa1de5b560be31b3477c5027be5ad5ba07e09bf47f1ce48aa8e076bde172c9263"
+                    "X25519MLKEM768 (4588)": "8f226deba542ae2097b4c68699e1a109f69798e31cb134889f78a6a2c57bd3f05045802f2c51c5e1944d14905298003b7826a63cf0bea779a28df12f5f11abae05a9b9d37a019a33ac413f8b59882ce6c5cc62ac1b41ca5819898afc1acdd7ab6c2a2ec5175f2b5094388acf586acb0fa22e1bb7ac026682d4ccb161270f8726419d36aca0e686ddd6a38f71a7180913e69ab20f1548c8b12cf1b33eef2b158df8059241a915570fdcf55406561bc6b3803a4c519cdaa92bd976ff01a0fc827089b565524c77ce341d8eccbe556c74c2143f8d2816d9553c001329a555506f973f9f97a85ab972c37805da8c898dc1bb7b9112dbf016903a884d107f375c8c8f8a69a453aba8244ee067513f5bcaa152cca266c62751105df206b6d51a51e669bbb30b5dbb1b1ea382989c24d3259db8ba61758a9063f5b9b8e94e9dc5632cd81e6788ae3317ab2e49c04e664e39d691cc61768ef87767d610794047e741b751b97b08593a3c425aba567ff576a9d32a15b7bbce4d8a6c60b03ceec3293cc67669fc31106b1ad3074425628a2f9777927775ddc6644bb15901081bebfb84147104c5c3501344322bd9839c518c78a739e1b7212b985e0307b46b79cbe06c53208cc6e5ebae2965966a67879dd72932da5f0276299f56b6a0e917a9da7d99d29cb3eb1753b1c5911179a0d076c1b60057972265eb186ae28bdc2bae35c26ecb480311596a69d1c2eaa992d0873ce3f1952481cd00ac6d268589ee717d6fe2b2b6b1bf48894526655f6c9c62e9413f28713630b31fc5433a53f3757ec12f85923189f1b2c0da8f8198663a8265e8a7374613a6fa9597f93a14130002c515661480c0217082ca134132c79745e94a00c56cce6a19f260c97fa25e0ea46c8d660ce2c5b5621b3c43ec36a5180f2735410855190a3500383bcc7c46c4f14c96747604fe9147d555be246caafa4177c8baafa421296b473ba6d7cf37436c86db667515c16cdb7d094a13c5d16d17a005a6259a8c226b39473137b2300e465de938cd632458d9f717d9c0b3b432ae09da1e07783a1fe56870dc461ea82ca44724dc6473b193796ba29cef368b1524386c56881223861376426f0b2948c21518128e86018bcaf853aa5466f84965841c63a2732d0c49b793290e8a1cadee4bb13c409a8711a3901ab5346c8f2b8a29a151946f6a5b25c92df775c913e24a060c7ed67267d6116294d5011a432526babea82547f0513b89316823fa53f912918c6cbb00c5b181f76f6985b0e8a3a5d8142c27398c488318aea88beb390250a3583d646221961f827ab6c9c7a5a49b10ecec9e92a14b8d7a8f19579fff3b17ccb7912b4b41790c50eacc3017913d71d54f36c19b13d1726d1969f3c997664cc5bf0058c451a8912c52f6d5749841c846a2462c449e3f9aa72403c4f2913eab37b9ee7895fe7b8d682a1f326559e9c364896332f46ccd6fc035e9d46bea0204a8d57e6507226a3c01ece8a87e4626d6380ec4a550faaca011743baaf54b0ce892cd3709c40565bce48828246b10b7b2d5dc8e7e9b5bf7602fac391762411398882122aac093627c7448270a44612c58415701153b6b20fb85a9a6a8915e0c449b38b39a13ba12364a5b574b36240ff54b8836a50f4a8377c9912aa8eb18b5a94a7e93b6756f599d811414f3fb912857e8a5aa3c199cf7b46087d046c079d8bff43cdf01c92e"
                   },
                   {
-                    "X25519 (29)": "9122286a26502f7d930fc4f5359751286c365fa4519309cf86ca2825a06bb378"
+                    "X25519 (29)": "49d2a4b6fdbb405145d643bf8cb2a73533a0cbf99044c29a0dfb0471fb88ed59"
                   }
                 ]
               },
@@ -1573,7 +1688,7 @@
               {
                 "name": "supported_versions (43)",
                 "versions": [
-                  "TLS_GREASE (0xfafa)",
+                  "TLS_GREASE (0x8a8a)",
                   "TLS 1.3",
                   "TLS 1.2"
                 ]
@@ -1585,7 +1700,7 @@
                 ]
               },
               {
-                "name": "TLS_GREASE (0xfafa)"
+                "name": "TLS_GREASE (0x3a3a)"
               }
             ],
             "tls_version_record": "771",
@@ -1596,8 +1711,8 @@
             "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
             "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
-            "client_random": "c0ebda4620dfcb5cf30d129f868054dd3f9a7f8316df4b16e775dc2ee94e0644",
-            "session_id": "52f154c2add74543f7dbbb72f0137bb41c44b50a4c2c248ade8fe8828a25e4ff"
+            "client_random": "430936758943d43ab52d86d833a7fcc609d04d8f4432322c266350e663ceda14",
+            "session_id": "f0dacfba7061a0178abb3ca3569ed8a1a16f1d695dec64223663feaebdb65e3d"
           },
           "raw_http2": {
             "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
@@ -1797,10 +1912,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "c68c1730400d716c160b64757082b02c02c36fdc5dc1c65483bb255fcaa8a8d0a601399a18c34eb6582880d62ba35b7f8a5915a5aa7a2274cc10f02f5a86831f44856a139d89a0bb47ec58cf978a951a120aa548c3e898f2f09d565c970c58ca2fc9145ee97cf49cb00a684c66c519de5a7d11636b092ca115c9a74cf6ccb24957f7d1c932a433de825125a42992fccb665a45f7e790af6ac165b35224715c79691c0d34a9fc21b5a673bb728555c878c809e37a43729267d69190e61bd91a3351501212952d40a57cdefc62b268ab6889ce3c5275953ac75cf711177052f068ccde832b807a1ca5f40058dc9c2ff9cb97d2cc368852ed8845ff321adbdc09986c7a9c52c594e1414d960a3d28b31ea24d531293c4d4482e1b1fc2839f1f0733a56a591608bb15570a9a5104fa8124984453c8eba54bd512ae302e62860382c8a5e0895e73e126df750158156997e309a4c1c5fa604ad110104a11259f0179e89a03c56579520772ce72cf05d41dc84c07cadb4da049195ac5c313fcb31ea6876a607e744293675a4a63cba28e81b35e90c624056a62c7bcbad36deca35e02e166c750a980b1370c4c9d77b9beb48c3e88a48f25a69b17f63b90bb00d2f0228c6c236466b222a47d30381b961a94be4b1d1e23cb60c39884d7c0345a81c6109a521a333b53b28b74a9af5b7d2b6893dcb089f154854fcc09bd227f07a7cb629a68431c5c4d8726da3213fdf54f809b08b6b26187697070f55b4bc97541c794c1038e00165bf8dc3820594eaae62c4f6a6793d0c0107b10a50118ae54a0f8b885971228e1f555e0d969f0b73f992ba114b00babf07eaa3c15452743a4a0c054c350f4588e8be736d08914f0d69a4909a418e2a4b892a5354278c456218cc45fdc40331877858312c71cb8a7f5f01cf68b9018f5bddd6cccd2c64933db29ece403d82418b180530d99baf7516ed2dba18c9273f1ab5ec9f67c67696de8161bd17460d457c8a0f13293831513564317991b00e4af54e1aeb8fa4c321313ee465a0cd50daa7a0562e6b8ee464ee00b47c1092987e074a53008f3463eba8b4dbc5170fe831a8530b84d36c950ca5f282b1a0937cacb373a19cc012bbabaa854bab63655fdb230dcf6b3568876051ac712000a2f47acb3a852aa5a38ddfb0b401536e0a22e139408da2783a733880f52a76b5b600223672950710ae1aefdd6a3cc127e310aae444b1069cc83f87ba461c4c537110f112c8b22454dd23b187db5167e5a02c5f3514508a3cdaccf00cdad16f23c987505d9c72d570339995468b82460dca2876f646775223ad95c5f455103dd8a48a2a4969e12aebe609818706b0ae10544bb90861207baba98130739c2c109ba0530ca621c1840545951bb60992dbe640911424686797ec0858cc45c06776b717beca39cd782a27ab8f8e28dfe173c2e517ae1a6cd71e94d199002193b922747ab5d5b7f722352f0d80a4679b9726008778924c959b27fa65d31039485662dcbd33669542690ec367e3a7679f24a329641d1b450a48674db86644df126e0e74ec7aba3d58889217239f4ea606dc97237d2b590ab1f54966270d137cc2b167e50bddf96589d5c8ac8c979337499a02acdee1fa61f62a70fcf6f5be458392a847ad2e46e96aee0bc5470084ed4d982f6e9c4bfcf38026d9e28b5edc6cd1c67360b96e2495110ea95f8a0fe057348482937"
+                  "X25519MLKEM768 (4588)": "3c55616981407f5a5e2f13a0c1f42524d414d6aa0fa2bcc5cc76c83fa5409bb4b7bc237bd0558a0f418266b3c47b389e175b8ca3ec0fdba01dd0e7c45991a249f530f1fa704c39a95ef43b84a7b689384fec209dc1a4a45d384ca7b903a4fb3817b37f47270218852aaa99c2656085d7b58b99138d2261798bc0b08c4824dd786137e97bba37b852d1cc496546fa94112d08ba0c10510e849341907a06097c5637865b2ac2e2d5a7e43816d8c1080a2a8d1c6102dc0506db3a8d5d9181458764521c89f7802fd8469370338d1fa7a75f3b8053d28a8945822b2b37db438395875ffc01c2121864b6846b0c93acc3940a0ed17920e6bf0cd11447c03826c8697b791494001c487c9bb3e67abbe66e6fca37e35195c1ebb4e0272bc2352e9409cd2f75a14d792e5881363fb91c5ec8a2d2a5acacb8c940d51720db02a0665dbd94002b178167f26d701956ee41a08032b8d32b643c5c1c38051ad0495ea6ab8c12fc5242b0895c8261ff3a1ee9191b90a6564ac44b4e3026b2804c6033773b110f7cda43b51927baf7773ad51428eb6e9d407927856205793094bb856a1c4b3bb425df71a441d10a7f2226d1b353ad5a739f4b0c40acb8e3e39b07f206806b0ffa7002de6cc454a1221fb97b80288ed0da30668a4432935d8425a7c56c4770635a7c4a268321ad06577594e284032c7278e44965a690876926fbe45220f1c8043c557fc299a0fa9720043bcf22c91550192f742ed8a3cbc0b02fc01c0c600320675b72652a0c11a188ab091ef0392200f8a0caca3f51f05c73f05325e153db8b5e185957a4f51c7d787f59513630301aa9953cbb97210f070d3070c6be42b815a838ffeb215b3874feac228c49b260d0205a3abd62334635c657bf7ac26ca696ab9b9bb6a62ddc0a35c7a98a753621336666737920ce8787ec50bd41520e44aa41c6709660366496427b8f2206c6b579b2db67f0e707dba5b21419395b94b94d303119c537fc420029e3af299a3b0720a4e1c57c3700916f5156e432256886aedb2a5ad90baa4fe9679358070047a77adc38e874c4b35c1d9e446d34a0cf20fb53af54000d323427a178ac677094cac55731c5d9e3297a4511e1f776fc675767a2aadd91b6ecb36154302a6c46432b87cc3bdc4dd9c40d8377ac6ac8360fd757757c4408f138ea057c8a12a11e252124a0006b678bba139c1b094995041624823463a995aef7a587809ebc220695d4af072a0ec203c0e364a0f0949b70c86916e54f365992a85a32fa928d575411f36845848c41e2885d8ef47731c23e1f28ac6a68abee2525478b963c89112c84c9589281dd0b8cb53aa3c4087b86964bd46499a1db51c347c1baa18e20005b25a8cd6fb3c9a1f1bec7727239d8872092314a61777eb1c97fc10b13767c69504819e21831b4c445c98300fc3d16f0ae19224e7b4a5202cab94c1a420099c6f3310385d820a7684bc7bac2395334c355b84ddc3bd462cab6fbb880b55d52e0bf4fb777072c66960a2ce2679638800249b35479ba4f4f860b23c810439466dbf512523b3e7da7b8d840af8f08858b62b899b31779bb0bb494722a0bb370994f3dc0ab4ebb9e0bfcb3711a859329a6214a99b1b4bb3f47da78efa4002a3e9446773fd585f4bd0c2bb3e6912a1906efdb5946534eb874953de1bc61721c0ef26e10a6a60e09a415a2cc4b4f4e1569e430fda653823b"
                 },
                 {
-                  "X25519 (29)": "2b99468b2474cf96fa6936b4cb276c24a96af16a804254fbf321d8613e4a690e"
+                  "X25519 (29)": "ec72043883210053976aa6a9195d8d474ddaabb147f8d57897f1b60e0c71654e"
                 }
               ]
             }
@@ -1813,8 +1928,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "17487ea0c0a3202418f0b8a8c181ce3f197fab2b4faed8aecc4e241c06f6efee",
-          "session_id": "45c7b8e12ada8e7c14fd175af51dc4082c3433a00677eb377fee56622959400f"
+          "client_random": "b5f9552df8b9edc82d61869732af0917624747de19925d613c2b6fae4fddd2fd",
+          "session_id": "bf65ab9258c0fbf0968f7af984362b535af0ac50e27c2251f65059f66870f890"
         },
         "raw_http2": {}
       },

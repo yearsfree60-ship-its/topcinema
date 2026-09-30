@@ -1,0 +1,1005 @@
+{
+  "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+  "tls_and_server_info": {
+    "server_ip": "104.21.69.54",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "mangalik.net",
+    "tls_not_after": "Dec  2 00:33:50 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "172.172.87.84",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Boydton",
+    "country": "US",
+    "error": null
+  },
+  "origin_server_discovery": {
+    "domain": "mangalik.net",
+    "ssl_certificate_history": {
+      "domain": "mangalik.net",
+      "tested": true,
+      "certificates_found": 132,
+      "historical_ips_literal": [],
+      "subdomains_seen": [
+        "api.mangalik.net",
+        "dev.mangalik.net",
+        "mail.mangalik.net",
+        "io.mangalik.net",
+        "ww1.mangalik.net",
+        "ww3.mangalik.net",
+        "ww4.mangalik.net",
+        "ww5.mangalik.net",
+        "blog.mangalik.net",
+        "like.mangalik.net",
+        "ssolo.mangalik.net",
+        "store.mangalik.net",
+        "portal.mangalik.net",
+        "s2solo.mangalik.net",
+        "s3solo.mangalik.net",
+        "s4solo.mangalik.net",
+        "s5solo.mangalik.net",
+        "s6solo.mangalik.net",
+        "s7solo.mangalik.net",
+        "s8solo.mangalik.net",
+        "leksolo.mangalik.net",
+        "sitemap.mangalik.net",
+        "support.mangalik.net",
+        "www.www.mangalik.net",
+        "sitemaps.mangalik.net",
+        "tempsolo.mangalik.net",
+        "wildcard.mangalik.net",
+        "dashboard.mangalik.net",
+        "2ed99befc728.mangalik.net",
+        "www.2ed99befc728.mangalik.net"
+      ],
+      "error": null
+    },
+    "dns_history_resolve": {
+      "resolved": {
+        "mangalik.net": "172.67.204.232",
+        "www.mangalik.net": "172.67.204.232",
+        "mail.mangalik.net": "104.21.69.54",
+        "io.mangalik.net": "104.21.69.54",
+        "ssolo.mangalik.net": "104.21.69.54",
+        "s2solo.mangalik.net": "172.67.204.232",
+        "s3solo.mangalik.net": "104.21.69.54",
+        "s4solo.mangalik.net": "172.67.204.232",
+        "s5solo.mangalik.net": "104.21.69.54",
+        "s6solo.mangalik.net": "104.21.69.54",
+        "s7solo.mangalik.net": "104.21.69.54",
+        "s8solo.mangalik.net": "104.21.69.54",
+        "leksolo.mangalik.net": "104.21.69.54"
+      },
+      "resolved_all": {
+        "mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "www.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "mail.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "io.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "ssolo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s2solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s3solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s4solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s5solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s6solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s7solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s8solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "leksolo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ]
+      },
+      "unresolved": [
+        "api.mangalik.net",
+        "dev.mangalik.net",
+        "ww1.mangalik.net",
+        "ww3.mangalik.net",
+        "ww4.mangalik.net",
+        "ww5.mangalik.net",
+        "blog.mangalik.net",
+        "like.mangalik.net",
+        "store.mangalik.net",
+        "portal.mangalik.net",
+        "sitemap.mangalik.net",
+        "support.mangalik.net",
+        "www.www.mangalik.net",
+        "sitemaps.mangalik.net"
+      ],
+      "error": null
+    },
+    "shodan_probes": [],
+    "direct_connection_attempts": [],
+    "candidate_ips": [],
+    "candidate_ips_excluded_as_cloudflare": [
+      "104.21.45.243",
+      "104.21.69.54",
+      "172.67.204.232",
+      "188.114.96.3",
+      "188.114.97.10",
+      "188.114.97.3"
+    ],
+    "candidate_ips_excluded_non_public": [],
+    "candidate_details": [],
+    "candidates_from_cache": false,
+    "source_status": [
+      {
+        "source": "crt.sh",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.65,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 32,
+        "ips_count": 0
+      },
+      {
+        "source": "CertSpotter",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.34,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 14,
+        "ips_count": 0
+      },
+      {
+        "source": "AnubisDB",
+        "kind": "names",
+        "ok": false,
+        "status": 403,
+        "attempts": 1,
+        "elapsed_sec": 0.16,
+        "error": "status=403",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "OTX passive DNS",
+        "kind": "history",
+        "ok": false,
+        "status": null,
+        "attempts": 3,
+        "elapsed_sec": 72.01,
+        "error": "mangalik.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=9.949800041000003); www.mangalik.net: انتهت الميزانية الزمنية قبل أي محاولة",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "HackerTarget",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.38,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 12,
+        "ips_count": 12
+      },
+      {
+        "source": "urlscan.io",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 1.74,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 13
+      },
+      {
+        "source": "SPF + MX (DoH)",
+        "kind": "live",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.12,
+        "error": null,
+        "note": "لا ip4 في SPF ولا MX داخلي",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      }
+    ],
+    "discovery_verdict": "only_cloudflare_or_non_public",
+    "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
+    "budget_sec": 120.0,
+    "elapsed_sec": 72.53,
+    "cloudflare_excluded_details": [
+      {
+        "ip": "104.21.45.243",
+        "score": 7,
+        "sources": [
+          "urlscan.io"
+        ],
+        "hostnames": [
+          "mangalik.net"
+        ],
+        "first_seen": "2023-09-20T12:09:35",
+        "last_seen": "2023-09-20T12:09:35",
+        "apex_history": true
+      },
+      {
+        "ip": "104.21.69.54",
+        "score": 17,
+        "sources": [
+          "HackerTarget",
+          "dns_live",
+          "urlscan.io"
+        ],
+        "hostnames": [
+          "io.mangalik.net",
+          "leksolo.mangalik.net",
+          "mail.mangalik.net",
+          "mangalik.net",
+          "s2solo.mangalik.net",
+          "s3solo.mangalik.net",
+          "s4solo.mangalik.net",
+          "s5solo.mangalik.net"
+        ],
+        "first_seen": "2026-09-02T00:21:41",
+        "last_seen": "2026-09-02T00:21:41",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.204.232",
+        "score": 17,
+        "sources": [
+          "HackerTarget",
+          "dns_live",
+          "urlscan.io"
+        ],
+        "hostnames": [
+          "io.mangalik.net",
+          "leksolo.mangalik.net",
+          "mail.mangalik.net",
+          "mangalik.net",
+          "s2solo.mangalik.net",
+          "s3solo.mangalik.net",
+          "s4solo.mangalik.net",
+          "s5solo.mangalik.net"
+        ],
+        "first_seen": "2026-07-14T15:49:47",
+        "last_seen": "2026-07-14T15:49:47",
+        "apex_history": true
+      },
+      {
+        "ip": "188.114.96.3",
+        "score": 8,
+        "sources": [
+          "urlscan.io"
+        ],
+        "hostnames": [
+          "mangalik.net"
+        ],
+        "first_seen": "2026-07-18T04:43:58",
+        "last_seen": "2026-08-29T03:13:08",
+        "apex_history": true
+      },
+      {
+        "ip": "188.114.97.10",
+        "score": 8,
+        "sources": [
+          "urlscan.io"
+        ],
+        "hostnames": [
+          "mangalik.net"
+        ],
+        "first_seen": "2026-08-06T05:31:25",
+        "last_seen": "2026-08-06T05:31:25",
+        "apex_history": true
+      },
+      {
+        "ip": "188.114.97.3",
+        "score": 8,
+        "sources": [
+          "urlscan.io"
+        ],
+        "hostnames": [
+          "mangalik.net"
+        ],
+        "first_seen": "2026-07-05T22:35:36",
+        "last_seen": "2026-09-21T00:59:28",
+        "apex_history": true
+      }
+    ],
+    "verification_summary": {
+      "attempted": false,
+      "tls_reachable_count": 0,
+      "http_responsive_count": 0,
+      "verified_content_ip": null,
+      "note": "لم تُوجد مرشحات غير Cloudflare قابلة للاختبار في هذه التشغيلية."
+    }
+  },
+  "direct_origin_access": {
+    "attempted": false,
+    "attempts": [],
+    "verified_ip": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a43128c73d0bd6bc-IAD",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "extraction_tier_used": "last_resort_regex_whole_page",
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.04,
+    "cf_mitigation": {
+      "cf_mitigated_value": "challenge",
+      "mitigation_category": "recoverable_challenge"
+    },
+    "cf_colo": "IAD"
+  },
+  "curl_cffi_probe": {
+    "probes": [
+      {
+        "impersonate": "chrome",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a43128c76f16150b-IAD",
+          "cf-mitigated": "challenge",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.03,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": "challenge",
+          "mitigation_category": "recoverable_challenge"
+        },
+        "cf_colo": "IAD"
+      },
+      {
+        "impersonate": "firefox",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a43128c76b79d6bf-IAD",
+          "cf-mitigated": "challenge",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.03,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": "challenge",
+          "mitigation_category": "recoverable_challenge"
+        },
+        "cf_colo": "IAD"
+      },
+      {
+        "impersonate": "safari",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a43128c76d59c574-IAD",
+          "cf-mitigated": "challenge",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.04,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": "challenge",
+          "mitigation_category": "recoverable_challenge"
+        },
+        "cf_colo": "IAD"
+      }
+    ]
+  },
+  "browser_probe": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "suggested_selectors_pagewide_frequency": {},
+    "domain_distribution": {
+      "mangalik.net": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangalik-net-8526-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/23d7ad51-8b2c-4c9f-91f8-43518779052a",
+        "blob:https://challenges.cloudflare.com/2422cd97-a200-4840-8776-f4cc60c0e850",
+        "blob:https://challenges.cloudflare.com/4e28acdd-8420-4483-beb8-ec0ef3389471"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.14,
+    "navigation_timing": {
+      "ttfb_ms": 17,
+      "dom_content_loaded_ms": 131,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4108
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 1.91,
+    "total_probe_elapsed_sec": 83.59,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a43128c8c8bbc9a4-IAD",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-vk2UZuwJDRD12dZjFJOu1B' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Wed, 30 Sep 2026 06:27:00 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=h5CZJk%2BOYLsjoWe3UWezM6Hi8mIoA5xaahuxi8ckAFYJTRivbwtJ5FkDkGnWUQ9txpNlYY8yXHtOS9k7cQLG6MG%2BPeCw5OUZft%2BKF3ar9sS004PMhn4l4GkcDizGfP8%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a43128c8c8bbc9a4\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+      "click_method": "none",
+      "attempt_number": 3
+    },
+    "extended_challenge_probe": {
+      "pure_wait": {
+        "max_wait_sec": 60,
+        "poll_interval_sec": 2,
+        "resolved_during_pure_wait": false,
+        "elapsed_until_resolved_sec": null,
+        "final_category_after_wait": "solvable_challenge"
+      },
+      "click_attempts": [
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 1
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 2
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 3
+        }
+      ],
+      "final_after_reload": {
+        "attempted": true,
+        "category": "solvable_challenge",
+        "resolved": false,
+        "error": null
+      }
+    },
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 1
+  },
+  "browser_probe_second_run": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "suggested_selectors_pagewide_frequency": {},
+    "domain_distribution": {
+      "mangalik.net": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangalik-net-8526-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/3fd5e49e-ac41-4ff2-bef0-4a9562340a14",
+        "blob:https://challenges.cloudflare.com/70b114db-d282-4af4-a619-b529f0ba9b28",
+        "blob:https://challenges.cloudflare.com/7e41afd9-ee77-46d1-9c0d-7693d8f86958"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.09,
+    "navigation_timing": {
+      "ttfb_ms": 9,
+      "dom_content_loaded_ms": 85,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4093
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 1.77,
+    "total_probe_elapsed_sec": 83.21,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a4312b013d9ad6bc-IAD",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-aO4WdQAnwLsBGfrGdei9RV' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Wed, 30 Sep 2026 06:28:31 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Hy0O9YaNfmjIsqboJUlI%2BfiElsImesVGVt%2FBEQUzrhb8lU3LrCn07F0ghtjTvVAxraoW7sTltHYadhj8Bz3v3lIHHJxfjniW2b53v7mKO0AawEtG13Ry3aJrFIM5tZ0%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a4312b013d9ad6bc\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+      "click_method": "none",
+      "attempt_number": 3
+    },
+    "extended_challenge_probe": {
+      "pure_wait": {
+        "max_wait_sec": 60,
+        "poll_interval_sec": 2,
+        "resolved_during_pure_wait": false,
+        "elapsed_until_resolved_sec": null,
+        "final_category_after_wait": "solvable_challenge"
+      },
+      "click_attempts": [
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 1
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 2
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 3
+        }
+      ],
+      "final_after_reload": {
+        "attempted": true,
+        "category": "solvable_challenge",
+        "resolved": false,
+        "error": null
+      }
+    },
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 1
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+    "requests_sent": 4,
+    "elapsed_sec": 0.28,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "deep_diagnostic": {
+    "wayback_availability_probe": {
+      "tested": true,
+      "available": false,
+      "snapshot_timestamp": null,
+      "snapshot_url": null,
+      "status": null,
+      "error": null
+    },
+    "runtime_enable_leak_probe": {
+      "tested": true,
+      "patchright_available": true,
+      "protection_category": "solvable_challenge",
+      "challenge_detected": true,
+      "resolved_after_reload": false,
+      "elapsed_sec": 76.03,
+      "error": null
+    },
+    "source_url_leak_probe": {
+      "tested": true,
+      "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "error": null
+    }
+  },
+  "cdn_cgi_trace": {
+    "trace_url": "https://mangalik.net/cdn-cgi/trace",
+    "status_code": 200,
+    "fields": {
+      "fl": "626f95",
+      "h": "mangalik.net",
+      "ip": "172.172.87.84",
+      "ts": "1790749884.000",
+      "visit_scheme": "https",
+      "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "colo": "IAD",
+      "sliver": "050-tier1",
+      "http": "http/1.1",
+      "loc": "US",
+      "tls": "TLSv1.3",
+      "sni": "plaintext",
+      "warp": "off",
+      "gateway": "off",
+      "rbi": "off",
+      "kex": "X25519"
+    },
+    "error": null,
+    "elapsed_sec": 0.05
+  },
+  "alternate_paths_probe": {
+    "wp_json": {
+      "url": "https://mangalik.net/wp-json/",
+      "status_code": 200,
+      "error": null,
+      "protection_category": "none",
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "no_mitigation_observed"
+      },
+      "looks_promising": true
+    },
+    "amp": {
+      "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/amp/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "rss_feed": {
+      "url": "https://mangalik.net/feed/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_m": {
+      "url": "https://m.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='m.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='m.mangalik.net', port=443): Failed to resolve 'm.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_mobile": {
+      "url": "https://mobile.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='mobile.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.mangalik.net', port=443): Failed to resolve 'mobile.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_api": {
+      "url": "https://api.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='api.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='api.mangalik.net', port=443): Failed to resolve 'api.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_cdn": {
+      "url": "https://cdn.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='cdn.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='cdn.mangalik.net', port=443): Failed to resolve 'cdn.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_img": {
+      "url": "https://img.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='img.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='img.mangalik.net', port=443): Failed to resolve 'img.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_static": {
+      "url": "https://static.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='static.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='static.mangalik.net', port=443): Failed to resolve 'static.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_assets": {
+      "url": "https://assets.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='assets.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='assets.mangalik.net', port=443): Failed to resolve 'assets.mangalik.net' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    }
+  },
+  "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangalik-net-8526-report.json",
+    "screenshots": [
+      "diagnostics/mangalik-net-8526-screenshot.png",
+      "diagnostics/mangalik-net-8526-run2-screenshot.png"
+    ]
+  }
+}
