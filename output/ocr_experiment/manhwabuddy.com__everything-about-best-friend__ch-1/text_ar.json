@@ -1,0 +1,911 @@
+{
+  "manga_id": "manhwabuddy.com__everything-about-best-friend",
+  "chapter_num": "1",
+  "manga_title": "Read Everything about Best Friend",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "Everything about Best Friends",
+          "confidence": 0.916,
+          "text_ar": "كل شيء عن أفضل الأصدقاء"
+        },
+        {
+          "text": "KAIJUSCANS TRANSLATE:ALEX NGE PROOFREAD: ALEXNGE CLEAN: TANER TYPESET:TANER Q/G:ネクフス DSC.GG/MTMJS5QP",
+          "confidence": 0.728,
+          "text_ar": "ترجمة كايجو سكانز: أليكس إنجي، التدقيق اللغوي: أليكس إنجي، التنظيف: تانر، الإعداد الفني: تانر، المراجعة: نيكوفس"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "轟轟 車車車車",
+          "confidence": 0.742,
+          "text_ar": "زئير... محرك السيارة"
+        },
+        {
+          "text": "GOU U 嗡嗡嗡",
+          "confidence": 0.211,
+          "text_ar": "طنين المحرك..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "SON~",
+          "confidence": 0.975,
+          "text_ar": "يا بني~"
+        },
+        {
+          "text": "ZZZ...",
+          "confidence": 0.87,
+          "text_ar": "شخير..."
+        },
+        {
+          "text": "SON~",
+          "confidence": 0.981,
+          "text_ar": "يا بني~"
+        },
+        {
+          "text": "SON,ARE YOu AWAKE?",
+          "confidence": 0.812,
+          "text_ar": "يا بني، هل أنت مستيقظ؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "uhm..Hmm..",
+          "confidence": 0.815,
+          "text_ar": "ممم... همم..."
+        },
+        {
+          "text": "YOU STAYED UP LATE PLAYING GAMES AGAIN, DIDN'T YOU?",
+          "confidence": 0.916,
+          "text_ar": "لقد سهرتَ لوقت متأخر تلعب الألعاب مجددًا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "HURRY UP AND GET UP.",
+          "confidence": 0.909,
+          "text_ar": "أسرع وانهض من فراشك."
+        },
+        {
+          "text": "UHM...WHAT'S THE PROBLEM...",
+          "confidence": 0.905,
+          "text_ar": "ممم... ما المشكلة..."
+        },
+        {
+          "text": "I'MON VACATION..",
+          "confidence": 0.963,
+          "text_ar": "أنا في عطلة..."
+        },
+        {
+          "text": "HEY, MINHOIS WAITING FOR YOU.",
+          "confidence": 0.928,
+          "text_ar": "مهلاً، مينهو ينتظرك."
+        },
+        {
+          "text": "SHOULDN'T YOU GET UP?",
+          "confidence": 0.892,
+          "text_ar": "ألا يجدر بك النهوض؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "I DON'T KNOW,",
+          "confidence": 0.966,
+          "text_ar": "لا أعلم،"
+        },
+        {
+          "text": "I DON'T WANT TO GET UP RIGHT NOW SO, I'LL CALL HIM LATER.",
+          "confidence": 0.939,
+          "text_ar": "لا أريد النهوض الآن، لذا سأتصل به لاحقًا."
+        },
+        {
+          "text": "HAA.. WHAT A...",
+          "confidence": 0.888,
+          "text_ar": "آه... يا له من..."
+        },
+        {
+          "text": "MINHO,I CAN'T GET HIM UP BECAUSE HE'S STUCK TO THE BED, WHAT SHOULD",
+          "confidence": 0.891,
+          "text_ar": "مينهو، لا أستطيع إيقاظه لأنه ملتصق بالفراش، ماذا عليّ أن"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "IDO?",
+          "confidence": 0.963,
+          "text_ar": "أفعل؟"
+        },
+        {
+          "text": "AUNTIE,MAYI COMEIN ANDWAKEHIM UP?",
+          "confidence": 0.93,
+          "text_ar": "خالتي، هل يمكنني الدخول وإيقاظه؟"
+        },
+        {
+          "text": "SURE,COME ONIN. IACTUALLY HAVE TOLEAVE SO THIS IS BETTER.",
+          "confidence": 0.945,
+          "text_ar": "بالطبع، تفضل بالدخول. عليّ المغادرة بالفعل لذا هذا أفضل."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "OH, THANK YOU.",
+          "confidence": 0.921,
+          "text_ar": "أوه، شكرًا لك."
+        },
+        {
+          "text": "探頭 HEY, TAEYANG LEE.LOOK ATTHETIME,WHY ARE YOU STILL SLEEPING? 0。0",
+          "confidence": 0.396,
+          "text_ar": "مهلاً، تايانغ لي. انظر إلى الوقت، لماذا لا تزال نائمًا؟"
+        },
+        {
+          "text": "UH, WHAT THE...",
+          "confidence": 0.775,
+          "text_ar": "أوه، ما الذي..."
+        },
+        {
+          "text": "DIDYOU JUST ENTERINSOMEONE ELSE'S ROOM..?",
+          "confidence": 0.941,
+          "text_ar": "هل دخلت للتو إلى غرفة شخص آخر..؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "YOUSOUND LIKE SOMEONE ELSE'S ROOM.",
+          "confidence": 0.889,
+          "text_ar": "تبدو وكأنك في غرفة شخص آخر."
+        },
+        {
+          "text": "WHO WAS THE ONE THAT SMASHED MY IPAD WHILE SLEEPING IN MYROOM?",
+          "confidence": 0.937,
+          "text_ar": "من الذي حطم جهاز الآيباد الخاص بي أثناء نومه في غرفتي؟"
+        },
+        {
+          "text": "BABY... SINCE WHEN DO YOU HOLD A GRUDGE.",
+          "confidence": 0.9,
+          "text_ar": "عزيزي... منذ متى وأنت تحمل ضغينة؟"
+        },
+        {
+          "text": "HEY, WHERE DO YOU KEEP YOURPORN? YOU ARE STRAIGHT, RIGHT?",
+          "confidence": 0.941,
+          "text_ar": "مهلاً، أين تخبئ أفلامك الإباحية؟ أنت مستقيم، أليس كذلك؟"
+        },
+        {
+          "text": "新拓 00 A",
+          "confidence": 0.076,
+          "text_ar": "ماذا؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "NO,WHY DO YOU ALWAYS GO AFTER MYPORN?",
+          "confidence": 0.907,
+          "text_ar": "لا، لماذا تلاحق أفلامي الإباحية دائمًا؟"
+        },
+        {
+          "text": "UH-HLH..I'MCHECKING TO SEE IF YOU HAVE HEALTHYPORNOR SICK PORN.",
+          "confidence": 0.917,
+          "text_ar": "أمم.. أنا أتفقد ما إذا كانت لديك أفلام إباحية صحية أم مريضة."
+        },
+        {
+          "text": "WHAT AREYOU TALKING ABOUT, IS THERE HEALTHY PORN IN THE WORLD?",
+          "confidence": 0.94,
+          "text_ar": "عن ماذا تتحدث؟ هل توجد أفلام إباحية صحية في هذا العالم؟"
+        },
+        {
+          "text": "WHERE ARE YOU.. WHEREDID YOU HIDE IT?",
+          "confidence": 0.921,
+          "text_ar": "أين أنت.. أين خبأتها؟"
+        },
+        {
+          "text": "DUDE,DON'T BE A DICK AND JUST LEAVE IT.",
+          "confidence": 0.925,
+          "text_ar": "يا صاح، لا تكن وغدًا واترك الأمر وشأنه."
+        },
+        {
+          "text": "BOYS,I'M GOING TO WORK OUT.",
+          "confidence": 0.934,
+          "text_ar": "يا فتيان، أنا ذاهبة لممارسة الرياضة."
+        },
+        {
+          "text": "TAEYANG,DON'TFORGETTO COOKAND EAT. HAVE FUN MINHO.",
+          "confidence": 0.916,
+          "text_ar": "تايانغ، لا تنسَ أن تطهو وتأكل. استمتع بوقتك يا مينهو."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "YES, AUNTIE. BYE.",
+          "confidence": 0.888,
+          "text_ar": "حاضر يا خالتي. وداعًا."
+        },
+        {
+          "text": "OKAY,I'LL GO TO THE STORE IN THEEVENING",
+          "confidence": 0.942,
+          "text_ar": "حسنًا، سأذهب إلى المتجر في المساء."
+        },
+        {
+          "text": "I DONG!!",
+          "confidence": 0.764,
+          "text_ar": "يا إلهي!!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "TL/N:DONT YOU DARE",
+          "confidence": 0.927,
+          "text_ar": "لا تجرؤ على فعل ذلك."
+        },
+        {
+          "text": "ALNTIE...YOU'VE BEENREALLY WORKING OUT.",
+          "confidence": 0.89,
+          "text_ar": "خالتي... لقد أصبحتِ تمارسين الرياضة بجدية حقًا."
+        },
+        {
+          "text": "IKNOW,SHE'S BEEN HOOKEDONPILATES LATELY. SHE'SGRADUALLYTURNING INTOANAMAZONWARRIOR.",
+          "confidence": 0.956,
+          "text_ar": "أعرف، لقد أدمنت على البيلاتس مؤخرًا. إنها تتحول تدريجيًا إلى محاربة أمازونية."
+        },
+        {
+          "text": "UGH!!WHAT THE HELL! DOYOUWANTTO TERRORIZEMEIN THE MORNING?",
+          "confidence": 0.89,
+          "text_ar": "أوه!! ما هذا بحق الجحيم! هل تريد ترويعي في الصباح؟"
+        },
+        {
+          "text": "WHY, ARE YOU JEALOUSBECAUSE I'MBIGGER THAN YOUR JUNIOR?",
+          "confidence": 0.905,
+          "text_ar": "لماذا، هل أنت غيور لأنني أكبر من عضوك الذكري؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "WHAT AREYOU TALKING ABOUT? EVER SINCE MIDDLE SCHOOLI'VE ALWAYS BEENBIGGER THAN YOU.WHATEVER...",
+          "confidence": 0.948,
+          "text_ar": "عن ماذا تتحدث؟ منذ المدرسة الإعدادية وأنا دائمًا أكبر منك. أياً كان..."
+        },
+        {
+          "text": "ISITOKAYFORYOU TOBE SLEEPING NAKED WHILEYOULIVE WITH YOUR AUNT?",
+          "confidence": 0.95,
+          "text_ar": "هل من المقبول أن تنام عاريًا بينما تعيش مع خالتك؟"
+        },
+        {
+          "text": "WHAT'S THE PROBLEM? I FEEL CRAMPED EVEN WITH A THREADON ME SO I WOULDN'T SLEEP.",
+          "confidence": 0.914,
+          "text_ar": "ما المشكلة؟ أشعر بالضيق حتى لو ارتديت خيطًا واحدًا، لذا لا يمكنني النوم."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "HMM.. THEREISN'T MUCH TO EAT..IDONT KNOWIFI SHOULD COOK THE SPAM..",
+          "confidence": 0.872,
+          "text_ar": "همم.. لا يوجد الكثير للأكل.. لا أعرف إن كان عليّ طهي اللحم المعلب.."
+        },
+        {
+          "text": "DOYOUWANT TO GO TO MY PLACE? IT'STIMEFOR LUNCH ANYWAY",
+          "confidence": 0.913,
+          "text_ar": "هل تريد الذهاب إلى منزلي؟ حان وقت الغداء على أي حال."
+        },
+        {
+          "text": "REALLY? NO ONE'S THERE?",
+          "confidence": 0.935,
+          "text_ar": "حقًا؟ لا يوجد أحد هناك؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "YES,MYMOM WENT TO THE GALLERY AND MYDAD WENT TO SCHOOL.",
+          "confidence": 0.936,
+          "text_ar": "نعم، أمي ذهبت إلى المعرض ووالدي ذهب إلى المدرسة."
+        },
+        {
+          "text": "HEHE,SHALL WE GO? THERE MUSTBE DELICIOUSFOOD INYOUR HOUSE,RIGHT?",
+          "confidence": 0.961,
+          "text_ar": "ههه، هل نذهب؟ لا بد أن هناك طعامًا لذيذًا في منزلك، أليس كذلك؟"
+        },
+        {
+          "text": "翁翁 嗡",
+          "confidence": 0.783,
+          "text_ar": "طنين..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "I'M LEE TAEYANG, A24YEAROLD COLLEGE STUDENT.",
+          "confidence": 0.924,
+          "text_ar": "أنا لي تايانغ، طالب جامعي في الرابعة والعشرين من عمري."
+        },
+        {
+          "text": "IDON'THAVEAGIRLFRIENDYET. ALTHOUGHTHAT'SABUMMER, I'MSTILLSATISFIEDWITHMYLIFE AND HOWTHIS IS GOING. 爱多",
+          "confidence": 0.187,
+          "text_ar": "ليس لدي حبيبة بعد. ورغم أن هذا أمر محبط، إلا أنني لا أزال راضيًا عن حياتي وعن سير الأمور."
+        },
+        {
+          "text": "SHOULDISAYI'MLESSBORED BECAUSEHEANDIHAVEBEEN FRIENDS SINCEWEWEREKIDS?",
+          "confidence": 0.972,
+          "text_ar": "هل ينبغي أن أقول إنني أشعر بملل أقل لأننا أصدقاء منذ الطفولة؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "THIS IS MINHO SONG,WEVE BEEN LIVING INTHESAMENEIGHBORHOOD FOR MORETHAN10YEARS.",
+          "confidence": 0.935,
+          "text_ar": "هذا هو مينهو سونغ، لقد عشنا في نفس الحي لأكثر من 10 سنوات."
+        },
+        {
+          "text": "HE'S THE BEST OF MY CLOSESTFRIENDS.",
+          "confidence": 0.953,
+          "text_ar": "إنه أفضل أصدقائي المقربين."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "WRITER/THARCHOG",
+          "confidence": 0.991,
+          "text_ar": "الكاتب: ثارشوغ"
+        },
+        {
+          "text": "ARTIST/HYUNGJAKGA",
+          "confidence": 0.953,
+          "text_ar": "الرسام: هيونغجاكغا"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "MINHOGOESTOAPRESTIGIOUS UNIVERSITYINSEOUL.HE'SSMARTAND HASAGREATPERSONALITY,EVENAT HOME.HE'SLIKETHEPERFECTSON.",
+          "confidence": 0.973,
+          "text_ar": "مينهو يدرس في جامعة مرموقة في سيول. إنه ذكي ويتمتع بشخصية رائعة، حتى في المنزل. إنه كالابن المثالي."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "ALTHOUGHIN MY EYES, HE'SKIND OFDUMBANDNERDY.WELL,HE'S JUSTABITOLDFASHIONED.",
+          "confidence": 0.94,
+          "text_ar": "رغم أنه في نظري، أبله ومهووس بالدراسة. حسنًا، إنه قديم الطراز قليلًا."
+        },
+        {
+          "text": "I'MHOME!",
+          "confidence": 0.98,
+          "text_ar": "لقد عدت!"
+        },
+        {
+          "text": "WELL...NO ONE'S HOME.",
+          "confidence": 0.921,
+          "text_ar": "حسنًا... لا يوجد أحد في المنزل."
+        },
+        {
+          "text": "THE PROFESSOR ISN'T HERE,IS HE? HEHE...",
+          "confidence": 0.933,
+          "text_ar": "الأستاذ ليس هنا، أليس كذلك؟ ههه..."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "ITHASN'T EVEN BEEN TWODAYSSINCE YOULAST CAME TO MY HOUSE.",
+          "confidence": 0.941,
+          "text_ar": "لم يمر حتى يومان منذ آخر مرة أتيت فيها إلى منزلي."
+        },
+        {
+          "text": "AH,IT'S STILL WEIRDBECAUSE HE TEACHES MY CLASSES.",
+          "confidence": 0.938,
+          "text_ar": "آه، لا يزال الأمر غريبًا لأنه يدرس محاضراتي."
+        },
+        {
+          "text": "SO WHY DID YOU GO TO MY FATHER'S SCHOOL?",
+          "confidence": 0.89,
+          "text_ar": "إذًا لماذا ذهبت إلى مدرسة والدي؟"
+        },
+        {
+          "text": "I'MNOT LIKE YOU...I'MIN THAT SCHOOLBECAUSE OF MY GRADES.",
+          "confidence": 0.894,
+          "text_ar": "أنا لست مثلك... أنا في تلك المدرسة بسبب درجاتي."
+        },
+        {
+          "text": "OH,TAEYANG OPPA IS HERE?",
+          "confidence": 0.964,
+          "text_ar": "أوه، تايانغ أوبا هنا؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "OH, HAYUL...",
+          "confidence": 0.844,
+          "text_ar": "أوه، هايول..."
+        },
+        {
+          "text": "WHAT ARE YOU DOING HERE? YOU SAID YOU HAD SCHOOL.",
+          "confidence": 0.918,
+          "text_ar": "ماذا تفعلين هنا؟ قلتِ إن لديكِ مدرسة."
+        },
+        {
+          "text": "YEAH,I'LL GO LATERIN THE EVENING. IT'STOOHOT DURING THE DAY...",
+          "confidence": 0.906,
+          "text_ar": "أجل، سأذهب لاحقًا في المساء. الجو حار جدًا أثناء النهار..."
+        },
+        {
+          "text": "OPPA,DID YOU RIDE A BIKE? UH...THE SMELL.",
+          "confidence": 0.891,
+          "text_ar": "أوبا، هل ركبت دراجة؟ أوه... تلك الرائحة."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "COMEON...YOU'RE YOUNG AND YOU STILL DON'T KNOW. HOWCANYOUIGNORE THE SCENTOF SWEAT OF A HEALTHY YOUNG MAN? 品品",
+          "confidence": 0.304,
+          "text_ar": "هيا... أنتِ صغيرة ولا تزالين لا تعرفين. كيف يمكنك تجاهل رائحة عرق شاب صحي؟"
+        },
+        {
+          "text": "SO, WOULD YOU LIKE TO SWEAT A LITTLE BIT MORE TOMORROW, OPPA? LET'S GO TO HAN RIVER TOMORROW.",
+          "confidence": 0.867,
+          "text_ar": "إذًا، هل تود أن تتعرق أكثر قليلًا غدًا يا أوبا؟ لنذهب إلى نهر هان غدًا."
+        },
+        {
+          "text": "WHAT, HAN RIVER? TOGETHER?",
+          "confidence": 0.955,
+          "text_ar": "ماذا، نهر هان؟ معًا؟"
+        },
+        {
+          "text": "YES, MINA UNNIE SAID SHE'S ALSO COMING TOMORROW...",
+          "confidence": 0.918,
+          "text_ar": "نعم، مينا أوني قالت إنها ستأتي أيضًا غدًا..."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "UH, UH, YEAH. I'MGOING TO HANRIVER WITH MINA TOMORROW.",
+          "confidence": 0.798,
+          "text_ar": "أوه، أجل. سأذهب إلى نهر هان مع مينا غدًا."
+        },
+        {
+          "text": "WOULDN'T ITBE FUN IF WE ALL GO TOGETHER?",
+          "confidence": 0.873,
+          "text_ar": "ألن يكون ممتعًا إذا ذهبنا جميعًا معًا؟"
+        },
+        {
+          "text": "BUT...WHY WOULDI JOINYOU IF I'M ALREADY WITH SOMEONE...",
+          "confidence": 0.933,
+          "text_ar": "لكن... لماذا أنضم إليكم بينما أنا بالفعل مع شخص ما..."
+        },
+        {
+          "text": "TL/N:HE'SNOTDATINGANYONEBUTHEDOESHAVESOMEONE",
+          "confidence": 0.964,
+          "text_ar": "ملاحظة المترجم: هو لا يواعد أحدًا لكن لديه شخص ما في حياته."
+        },
+        {
+          "text": "HAYUL IS COMING TOO. THE MORE THE BETTER. YOU'LL COME WITHUS, RIGHT?",
+          "confidence": 0.926,
+          "text_ar": "هايول قادمة أيضًا. كلما زاد العدد كان أفضل. ستأتي معنا، أليس كذلك؟"
+        },
+        {
+          "text": "ASS... OKAY, I'LL GO THEN...",
+          "confidence": 0.936,
+          "text_ar": "تبًا... حسنًا، سأذهب إذًا..."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "HEHE, LET'S GO IN THE LATE AFTERNOONAND ENJOYTHE SUNSET.",
+          "confidence": 0.926,
+          "text_ar": "ههه، لنذهب في وقت متأخر من بعد الظهر ونستمتع بغروب الشمس."
+        },
+        {
+          "text": "IT SHOULDN'T BE TOO HOTBY THENSOIT'S GOING TOBE GREAT.",
+          "confidence": 0.932,
+          "text_ar": "لن يكون الجو حارًا جدًا بحلول ذلك الوقت، لذا سيكون الأمر رائعًا."
+        },
+        {
+          "text": "HAYUL, YOU SEEM SO FREE DURING THE HOLIDAYS... WHYARE YOUSO EXCITED?",
+          "confidence": 0.914,
+          "text_ar": "هايول، تبدين حرة جدًا خلال العطلات... لماذا أنتِ متحمسة جدًا؟"
+        },
+        {
+          "text": "SONG HAYUL IS MINHO'S SISTER,SHE'SA 21 YEAROLD COLLEGESTUDENT.",
+          "confidence": 0.922,
+          "text_ar": "سونغ هايول هي أخت مينهو، وهي طالبة جامعية تبلغ من العمر 21 عامًا."
+        },
+        {
+          "text": "WELL,I WANTED TO GOON A PICNIC AT HAN RIVER.",
+          "confidence": 0.923,
+          "text_ar": "حسنًا، أردت الذهاب في نزهة إلى نهر هان."
+        },
+        {
+          "text": "I WANTTOPUT SOME PICTURES ON IMSTAR BUT, I CAN'T GO ALONE.",
+          "confidence": 0.908,
+          "text_ar": "أريد وضع بعض الصور على إنستغرام، لكن لا يمكنني الذهاب بمفردي."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "SHE'SCUTE,HASAGOOD PERSONALITYAND IS THE YOUNGER SISTER I WISH I HAD.",
+          "confidence": 0.956,
+          "text_ar": "إنها لطيفة، وتتمتع بشخصية جيدة، وهي الأخت الصغرى التي تمنيت لو امتلكتها."
+        },
+        {
+          "text": "HEY, WHAT HAN RIVER PICNIC.. THAT'SNOTWHAT ASTUDENT RETAKINGANEXAMSHOULDDO.",
+          "confidence": 0.916,
+          "text_ar": "مهلاً، أي نزهة في نهر هان.. هذا ليس ما يجب على طالب يعيد الامتحان فعله."
+        },
+        {
+          "text": "I KNOW,ALONER LIKE YOU WOULDN'T BE ABLE TO GO..",
+          "confidence": 0.935,
+          "text_ar": "أعرف، شخص منعزل مثلك لن يتمكن من الذهاب.."
+        },
+        {
+          "text": "HAYULOBVIOUSLYMATUREDA LOT WHILE I WAS INTHEARMY SHE'S NOT THE SAME PERSON",
+          "confidence": 0.92,
+          "text_ar": "من الواضح أن هايول نضجت كثيرًا بينما كنت في الجيش، إنها ليست نفس الشخص."
+        },
+        {
+          "text": "EVERY TIME I COME HEREITREMINDSMEOF HOWL'SMOVTNGCASTLE.",
+          "confidence": 0.927,
+          "text_ar": "في كل مرة آتي فيها إلى هنا، يذكرني الأمر بفيلم \"قلعة هاول المتحركة\"."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "WHO ARE YOUTO JUDGE THATI'MA LONER?",
+          "confidence": 0.922,
+          "text_ar": "من أنتِ لتحكمي بأنني منعزل؟"
+        },
+        {
+          "text": "YOU DON'T NEED TOEXPLAINIT. IUNDERSTAND.",
+          "confidence": 0.921,
+          "text_ar": "لا تحتاج إلى شرح ذلك. أنا أتفهم."
+        },
+        {
+          "text": "TLIN: HOWL'S MOVING CASTLEIS A JAPANESE MOVIE.THE ALTHOR USES IT HERE TO PRAISE THE WAY THE HOUSE LOOKS.BASICALLY HE'S COMPARING THE HOUSE TO A PALACE.",
+          "confidence": 0.92,
+          "text_ar": "ملاحظة المترجم: قلعة هاول المتحركة فيلم ياباني. يستخدمه المؤلف هنا للإشادة بمظهر المنزل. هو يقارن المنزل بالقصر."
+        },
+        {
+          "text": "WOW,YOU ARE SO ANNOYING...",
+          "confidence": 0.9,
+          "text_ar": "واو، أنتِ مزعجة جدًا..."
+        },
+        {
+          "text": "TAEYANGOPPA,YOUR DEFINITIONOF \"FRIEND\" DOESN'TITSOLELY REFER TO MYBROTHER?",
+          "confidence": 0.957,
+          "text_ar": "تايانغ أوبا، ألا يشير تعريفك لـ \"صديق\" حصريًا إلى أخي؟"
+        },
+        {
+          "text": "THEN MINHO IS ALONER TOO.",
+          "confidence": 0.925,
+          "text_ar": "إذًا مينهو منعزل أيضًا."
+        },
+        {
+          "text": "BUTMY BROTHER HAS A GIRLFRIEND.",
+          "confidence": 0.95,
+          "text_ar": "لكن أخي لديه حبيبة."
+        },
+        {
+          "text": "HMM..",
+          "confidence": 0.911,
+          "text_ar": "همم.."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "Oh's kitchen",
+          "confidence": 0.967,
+          "text_ar": "مطبخ أوه"
+        },
+        {
+          "text": "I'MHERE.",
+          "confidence": 0.987,
+          "text_ar": "أنا هنا."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "YOU'RE HERE? I'M CLEANING UPNOW.",
+          "confidence": 0.957,
+          "text_ar": "أنت هنا؟ أنا أنظف المكان الآن."
+        },
+        {
+          "text": "NO GUESTS?",
+          "confidence": 0.963,
+          "text_ar": "لا يوجد ضيوف؟"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "HOW ARE YOU..?",
+          "confidence": 0.904,
+          "text_ar": "كيف حالك..؟"
+        },
+        {
+          "text": "I'MOKAY.",
+          "confidence": 0.959,
+          "text_ar": "أنا بخير."
+        },
+        {
+          "text": "FA ANGGHHHHHHH",
+          "confidence": 0.478,
+          "text_ar": "صوت تحضير الطعام"
+        },
+        {
+          "text": "THIS COLD LOOKING GIRL IS HANSAEBOM,A22YEAR OLD PART TIMER.",
+          "confidence": 0.943,
+          "text_ar": "هذه الفتاة ذات الملامح الباردة هي هان سيبوم، عاملة بدوام جزئي تبلغ من العمر 22 عامًا."
+        },
+        {
+          "text": "IDON'TREALLYFITINASAPARTTIMER",
+          "confidence": 0.881,
+          "text_ar": "لا أتناسب حقًا مع العمل كعاملة بدوام جزئي"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "ATASMALLPASTARESTAURANT BUT,I'VE BEEN STICKING WITH IT FOR SEVERAL MONTHS.",
+          "confidence": 0.935,
+          "text_ar": "في مطعم باستا صغير، لكنني استمريت في العمل لعدة أشهر."
+        },
+        {
+          "text": "YOU SHOULD GO FIRST.I'LL FINISH UP WITH SAEBOM.",
+          "confidence": 0.921,
+          "text_ar": "يجب أن تذهب أولًا. سأنهي العمل مع سيبوم."
+        },
+        {
+          "text": "WHEW...IAMABIT TIRED TODAY.WOULD ITBE OKAY?",
+          "confidence": 0.886,
+          "text_ar": "تنهد... أنا متعب قليلًا اليوم. هل سيكون ذلك مقبولًا؟"
+        },
+        {
+          "text": "SON,IF YOU HIT ON THE CASHIER, YOU'LLBE DEAD. YOU KNOW THAT RIGHT?",
+          "confidence": 0.911,
+          "text_ar": "يا بني، إذا تحرشت بالعاملة، فستكون ميتًا. أنت تعرف ذلك، أليس كذلك؟"
+        },
+        {
+          "text": "CHILD... REALLY...HURRY UP AND GO.",
+          "confidence": 0.907,
+          "text_ar": "يا طفل... حقًا... أسرع واذهب."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": [
+        {
+          "text": "GOOD JOB TODAYSAEBOM. I'LL LEAVE NOW.",
+          "confidence": 0.931,
+          "text_ar": "عمل جيد اليوم يا سيبوم. سأغادر الآن."
+        },
+        {
+          "text": "YES, BOSS.BYE.",
+          "confidence": 0.948,
+          "text_ar": "حاضر، يا رئيس. وداعًا."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "sentences": []
+    },
+    {
+      "page": 34,
+      "sentences": []
+    },
+    {
+      "page": 35,
+      "sentences": [
+        {
+          "text": "哈啊· o00",
+          "confidence": 0.53,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "Haa.. Stop. Stop it... 爱多",
+          "confidence": 0.108,
+          "text_ar": "آه.. توقف. توقف عن ذلك..."
+        },
+        {
+          "text": "WHY,SHOULDI PUT IT IN NOW?",
+          "confidence": 0.917,
+          "text_ar": "لماذا، هل يجب أن أدخله الآن؟"
+        },
+        {
+          "text": "HAA...THE ICE",
+          "confidence": 0.927,
+          "text_ar": "آه... الثلج"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": [
+        {
+          "text": "PRINCESS...",
+          "confidence": 0.887,
+          "text_ar": "أيتها الأميرة..."
+        },
+        {
+          "text": "THERE IS SOMETHING HOT INSIDE, LIKE A FIRE.",
+          "confidence": 0.902,
+          "text_ar": "هناك شيء ساخن بالداخل، مثل النار."
+        },
+        {
+          "text": "Haa... Stop the childish metaphors and hurry up..",
+          "confidence": 0.772,
+          "text_ar": "آه... توقف عن الاستعارات الطفولية وأسرع.."
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "HA..YOU'RE JUST LIKE A KID..",
+          "confidence": 0.881,
+          "text_ar": "آه.. أنت تمامًا مثل طفل.."
+        },
+        {
+          "text": "WITH THIS GENTLE AND INNOCENT FACE..",
+          "confidence": 0.946,
+          "text_ar": "بهذا الوجه اللطيف والبريء.."
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": [
+        {
+          "text": "LOOK HOW WET YOU ARE.",
+          "confidence": 0.862,
+          "text_ar": "انظر كم أنت مبتل."
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "sentences": [
+        {
+          "text": "ARE YOU READY?",
+          "confidence": 0.935,
+          "text_ar": "هل أنت مستعد؟"
+        },
+        {
+          "text": "yes.",
+          "confidence": 0.902,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "I'LL PUTIT INNOW.",
+          "confidence": 0.944,
+          "text_ar": "سأدخله الآن."
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "sentences": [
+        {
+          "text": "TO BE CONTINUED..",
+          "confidence": 0.893,
+          "text_ar": "يتبع.."
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "sentences": [
+        {
+          "text": "KAIJU SCANS NOTE: THIS MANHWA IS THE PROPERTY OF THEIR RESPECTIVE OWNERS.KAIJU SCAN HOLDS NO RESPONSIBILITY IN THIS WORK'S DISTRIBUTION. IF YOU ENJOYED THIS TRANSLATION,PLEASE CONSIDER SUPPORTING THE ORIGINAL CREATORS THROUGHPURCHASING THE OFFICIAL RELEASES FROM LEGITIMATE SITES:",
+          "confidence": 0.944,
+          "text_ar": "ملاحظة كايجو سكانز: هذه المانهوا ملك لأصحابها المعنيين. كايجو سكان لا تتحمل أي مسؤولية عن توزيع هذا العمل. إذا استمتعت بهذه الترجمة، يرجى التفكير في دعم المبدعين الأصليين من خلال شراء الإصدارات الرسمية من المواقع الشرعية:"
+        },
+        {
+          "text": "TOPTOON KOREA: TOPTOON.COM TOPTOONTAIWAN: TOPTOON.NET TOPTOONPLUS ENGLISH:TOPTOONPLUS.COM",
+          "confidence": 0.955,
+          "text_ar": "توبتون كوريا: TOPTOON.COM، توبتون تايوان: TOPTOON.NET، توبتون بلس الإنجليزية: TOPTOONPLUS.COM"
+        },
+        {
+          "text": "THANK YOU!!",
+          "confidence": 0.945,
+          "text_ar": "شكرًا لكم!!"
+        },
+        {
+          "text": "DON'T FORGET TO CHECK OUT MANGA18.CLUB FOR THE FASTEST UPDATES OF OUR SCANLATIONS. AND JOIN OUR DISCORD FOR FURTHER DISCUSSIONS. DISCORD.GG/MTmjjs5Qp6",
+          "confidence": 0.941,
+          "text_ar": "لا تنسَ زيارة MANGA18.CLUB للحصول على أسرع التحديثات لترجماتنا. وانضم إلى ديسكورد الخاص بنا للمزيد من النقاشات. DISCORD.GG/MTmjjs5Qp6"
+        }
+      ]
+    }
+  ]
+}
