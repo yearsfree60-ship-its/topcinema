@@ -1,36 +1,148 @@
 {
-  "url": "https://starzmanga.com/manga/noble-lady-reformation-guide/12/",
+  "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
   "tls_and_server_info": {
-    "server_ip": "172.67.189.207",
+    "server_ip": "104.21.69.54",
     "tls_issuer": "Google Trust Services",
-    "tls_subject": "starzmanga.com",
-    "tls_not_after": "Nov 22 12:34:08 2026 GMT",
+    "tls_subject": "mangalik.net",
+    "tls_not_after": "Dec  2 00:33:50 2026 GMT",
     "error": null
   },
   "runner_network_info": {
-    "ip": "172.182.209.51",
+    "ip": "20.3.167.85",
     "org_asn": "AS8075 Microsoft Corporation",
-    "city": "Phoenix",
+    "city": "Moses Lake",
     "country": "US",
     "error": null
   },
   "origin_server_discovery": {
-    "domain": "starzmanga.com",
+    "domain": "mangalik.net",
     "ssl_certificate_history": {
-      "domain": "starzmanga.com",
+      "domain": "mangalik.net",
       "tested": true,
-      "certificates_found": 3,
+      "certificates_found": 132,
       "historical_ips_literal": [],
-      "subdomains_seen": [],
+      "subdomains_seen": [
+        "api.mangalik.net",
+        "dev.mangalik.net",
+        "mail.mangalik.net",
+        "io.mangalik.net",
+        "ww1.mangalik.net",
+        "ww3.mangalik.net",
+        "ww4.mangalik.net",
+        "ww5.mangalik.net",
+        "blog.mangalik.net",
+        "like.mangalik.net",
+        "ssolo.mangalik.net",
+        "store.mangalik.net",
+        "portal.mangalik.net",
+        "s2solo.mangalik.net",
+        "s3solo.mangalik.net",
+        "s4solo.mangalik.net",
+        "s5solo.mangalik.net",
+        "s6solo.mangalik.net",
+        "s7solo.mangalik.net",
+        "s8solo.mangalik.net",
+        "leksolo.mangalik.net",
+        "sitemap.mangalik.net",
+        "support.mangalik.net",
+        "www.www.mangalik.net",
+        "sitemaps.mangalik.net",
+        "tempsolo.mangalik.net",
+        "wildcard.mangalik.net",
+        "dashboard.mangalik.net",
+        "2ed99befc728.mangalik.net",
+        "www.2ed99befc728.mangalik.net"
+      ],
       "error": null
     },
-    "dns_history_resolve": null,
+    "dns_history_resolve": {
+      "resolved": {
+        "mail.mangalik.net": "104.21.69.54",
+        "io.mangalik.net": "104.21.69.54",
+        "ssolo.mangalik.net": "172.67.204.232",
+        "s2solo.mangalik.net": "172.67.204.232",
+        "s3solo.mangalik.net": "104.21.69.54",
+        "s4solo.mangalik.net": "172.67.204.232",
+        "s5solo.mangalik.net": "172.67.204.232",
+        "s6solo.mangalik.net": "172.67.204.232",
+        "s7solo.mangalik.net": "104.21.69.54",
+        "s8solo.mangalik.net": "172.67.204.232",
+        "leksolo.mangalik.net": "172.67.204.232"
+      },
+      "resolved_all": {
+        "mail.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "io.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "ssolo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s2solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s3solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s4solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s5solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s6solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "s7solo.mangalik.net": [
+          "104.21.69.54",
+          "172.67.204.232"
+        ],
+        "s8solo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ],
+        "leksolo.mangalik.net": [
+          "172.67.204.232",
+          "104.21.69.54"
+        ]
+      },
+      "unresolved": [
+        "api.mangalik.net",
+        "dev.mangalik.net",
+        "ww1.mangalik.net",
+        "ww3.mangalik.net",
+        "ww4.mangalik.net",
+        "ww5.mangalik.net",
+        "blog.mangalik.net",
+        "like.mangalik.net",
+        "store.mangalik.net",
+        "portal.mangalik.net",
+        "sitemap.mangalik.net",
+        "support.mangalik.net",
+        "www.www.mangalik.net",
+        "sitemaps.mangalik.net"
+      ],
+      "error": null
+    },
     "shodan_probes": [],
     "direct_connection_attempts": [],
     "candidate_ips": [],
     "candidate_ips_excluded_as_cloudflare": [
-      "172.67.189.207",
-      "188.114.96.3"
+      "104.21.45.243",
+      "104.21.69.54",
+      "172.67.204.232",
+      "188.114.96.3",
+      "188.114.97.10",
+      "188.114.97.3"
     ],
     "candidate_ips_excluded_non_public": [],
     "candidate_details": [],
@@ -42,11 +154,11 @@
         "ok": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_sec": 7.89,
+        "elapsed_sec": 25.28,
         "error": null,
         "note": null,
         "api_key_used": false,
-        "hostnames_count": 1,
+        "hostnames_count": 32,
         "ips_count": 0
       },
       {
@@ -55,11 +167,11 @@
         "ok": true,
         "status": 200,
         "attempts": 2,
-        "elapsed_sec": 0.48,
+        "elapsed_sec": 0.76,
         "error": null,
         "note": null,
         "api_key_used": false,
-        "hostnames_count": 1,
+        "hostnames_count": 14,
         "ips_count": 0
       },
       {
@@ -68,7 +180,7 @@
         "ok": false,
         "status": 403,
         "attempts": 1,
-        "elapsed_sec": 0.45,
+        "elapsed_sec": 0.18,
         "error": "status=403",
         "note": null,
         "api_key_used": false,
@@ -81,8 +193,8 @@
         "ok": false,
         "status": 429,
         "attempts": 5,
-        "elapsed_sec": 64.61,
-        "error": "starzmanga.com: status=429; www.starzmanga.com: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=25.0)",
+        "elapsed_sec": 71.98,
+        "error": "mangalik.net: status=429; www.mangalik.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=5.495941144999961)",
         "note": null,
         "api_key_used": false,
         "hostnames_count": 0,
@@ -94,12 +206,12 @@
         "ok": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_sec": 0.47,
+        "elapsed_sec": 0.51,
         "error": null,
         "note": null,
         "api_key_used": false,
-        "hostnames_count": 1,
-        "ips_count": 1
+        "hostnames_count": 12,
+        "ips_count": 12
       },
       {
         "source": "urlscan.io",
@@ -107,12 +219,12 @@
         "ok": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_sec": 0.73,
+        "elapsed_sec": 2.15,
         "error": null,
         "note": null,
         "api_key_used": false,
         "hostnames_count": 1,
-        "ips_count": 4
+        "ips_count": 13
       },
       {
         "source": "SPF + MX (DoH)",
@@ -120,7 +232,7 @@
         "ok": true,
         "status": 200,
         "attempts": 2,
-        "elapsed_sec": 0.14,
+        "elapsed_sec": 0.17,
         "error": null,
         "note": "لا ip4 في SPF ولا MX داخلي",
         "api_key_used": false,
@@ -131,7 +243,7 @@
     "discovery_verdict": "only_cloudflare_or_non_public",
     "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
     "budget_sec": 120.0,
-    "elapsed_sec": 64.71
+    "elapsed_sec": 72.56
   },
   "direct_origin_access": {
     "attempted": false,
@@ -142,7 +254,7 @@
     "status_code": 403,
     "headers_of_interest": {
       "server": "cloudflare",
-      "cf-ray": "a430be0b8edcbe88-MAN",
+      "cf-ray": "a430c14f38f1a362-SEA",
       "cf-mitigated": "challenge",
       "content-type": "text/html; charset=UTF-8"
     },
@@ -161,12 +273,12 @@
     "signed_url_params": [],
     "raw_cookies_received": [],
     "error": null,
-    "elapsed_sec": 0.46,
+    "elapsed_sec": 0.06,
     "cf_mitigation": {
       "cf_mitigated_value": "challenge",
       "mitigation_category": "recoverable_challenge"
     },
-    "cf_colo": "MAN"
+    "cf_colo": "SEA"
   },
   "curl_cffi_probe": {
     "probes": [
@@ -175,7 +287,7 @@
         "status_code": 403,
         "headers_of_interest": {
           "server": "cloudflare",
-          "cf-ray": "a430be0c8e1c69cc-DFW",
+          "cf-ray": "a430c14f684fc381-SEA",
           "cf-mitigated": "challenge",
           "content-type": "text/html; charset=UTF-8"
         },
@@ -187,20 +299,20 @@
         "extracted_image_count": 0,
         "extracted_sample_urls": [],
         "extraction_tier_used": "last_resort_regex_whole_page",
-        "elapsed_sec": 0.12,
+        "elapsed_sec": 0.04,
         "error": null,
         "cf_mitigation": {
           "cf_mitigated_value": "challenge",
           "mitigation_category": "recoverable_challenge"
         },
-        "cf_colo": "DFW"
+        "cf_colo": "SEA"
       },
       {
         "impersonate": "firefox",
         "status_code": 403,
         "headers_of_interest": {
           "server": "cloudflare",
-          "cf-ray": "a430be0e3bd1122c-DUB",
+          "cf-ray": "a430c14f6c48db8c-SEA",
           "cf-mitigated": "challenge",
           "content-type": "text/html; charset=UTF-8"
         },
@@ -212,20 +324,20 @@
         "extracted_image_count": 0,
         "extracted_sample_urls": [],
         "extraction_tier_used": "last_resort_regex_whole_page",
-        "elapsed_sec": 0.43,
+        "elapsed_sec": 0.03,
         "error": null,
         "cf_mitigation": {
           "cf_mitigated_value": "challenge",
           "mitigation_category": "recoverable_challenge"
         },
-        "cf_colo": "DUB"
+        "cf_colo": "SEA"
       },
       {
         "impersonate": "safari",
         "status_code": 403,
         "headers_of_interest": {
           "server": "cloudflare",
-          "cf-ray": "a430be0e9cb25837-MXP",
+          "cf-ray": "a430c14f7d1bff09-PDX",
           "cf-mitigated": "challenge",
           "content-type": "text/html; charset=UTF-8"
         },
@@ -237,13 +349,13 @@
         "extracted_image_count": 0,
         "extracted_sample_urls": [],
         "extraction_tier_used": "last_resort_regex_whole_page",
-        "elapsed_sec": 0.5,
+        "elapsed_sec": 0.04,
         "error": null,
         "cf_mitigation": {
           "cf_mitigated_value": "challenge",
           "mitigation_category": "recoverable_challenge"
         },
-        "cf_colo": "MXP"
+        "cf_colo": "PDX"
       }
     ]
   },
@@ -273,17 +385,17 @@
     "suggested_selectors": [],
     "suggested_selectors_pagewide_frequency": {},
     "domain_distribution": {
-      "starzmanga.com": 1
+      "mangalik.net": 1
     },
     "signed_url_params": [],
-    "screenshot_path": "diagnostics/starzmanga-com-4845-screenshot.png",
+    "screenshot_path": "diagnostics/mangalik-net-4983-screenshot.png",
     "hotlink_probe": null,
     "hotlink_probes": [],
     "network_vendor_hits": {
       "Cloudflare Challenge (تفاعلي)": [
-        "blob:https://challenges.cloudflare.com/0e9c7e30-5ee6-4e83-9661-30b6289eb0fe",
-        "blob:https://challenges.cloudflare.com/2cefd0a2-c437-4aba-98f4-191b4946a659",
-        "blob:https://challenges.cloudflare.com/4e60bdb1-a030-403c-8777-b01d3cf731b6"
+        "blob:https://challenges.cloudflare.com/3cae89a8-6974-417a-a357-d29f1f944013",
+        "blob:https://challenges.cloudflare.com/463d057c-6539-4f99-9c6a-f2700e65d6a4",
+        "blob:https://challenges.cloudflare.com/51f27f0b-f67b-4876-9ae6-abff7cf6a5ce"
       ]
     },
     "adblock_wall": {
@@ -329,38 +441,38 @@
       "image_count_differs": false
     },
     "error": null,
-    "goto_elapsed_sec": 0.65,
+    "goto_elapsed_sec": 0.15,
     "navigation_timing": {
-      "ttfb_ms": 140,
-      "dom_content_loaded_ms": 645,
+      "ttfb_ms": 12,
+      "dom_content_loaded_ms": 140,
       "load_event_ms": null,
-      "transfer_size_bytes": 4131
+      "transfer_size_bytes": 4109
     },
-    "wait_for_images_elapsed_sec": 1.62,
-    "scroll_elapsed_sec": 1.81,
-    "total_probe_elapsed_sec": 84.27,
+    "wait_for_images_elapsed_sec": 1.63,
+    "scroll_elapsed_sec": 1.94,
+    "total_probe_elapsed_sec": 83.72,
     "scroll_rounds_completed": 3,
     "scroll_stop_reason": "stable_no_growth_at_bottom",
     "navigation_response_headers": {
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "alt-svc": "h3=\":443\"; ma=86400",
       "cf-mitigated": "challenge",
-      "cf-ray": "a430be132b378c74-DUB",
+      "cf-ray": "a430c150cea4148b-PDX",
       "content-encoding": "zstd",
-      "content-security-policy": "default-src 'none'; script-src 'nonce-8dKWl7sgm4vbmdnju28Tcu' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-uq8W2PwvGDNLnktqEq4Phb' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "content-type": "text/html; charset=UTF-8",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Wed, 30 Sep 2026 05:14:09 GMT",
+      "date": "Wed, 30 Sep 2026 05:16:22 GMT",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "origin-agent-cluster": "?1",
       "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hQCgEYcXUpvC7%2FDM9awx2n59%2FAdbGhxazcI7kQIr3obfra32pI8KTiqWVuqn%2Fb%2BGivLVuLNQXbeo3lPt86b6PtsuigioRSJsaxMEu3bxRvQAFl68ZsJB2BB1dqC03YYZnA%3D%3D\"}]}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CjnK4WD7mFoiAbVW55brRMjXIwvHHPjpE3uCYAre%2B7In%2BvFsn1zb4IKgA7JdS2CIUk8lzNOArAVZcLa%2Be%2BpPqAc0xNV9Tkbf%2BNk2XfcpH9jlsF%2FnhOD70iq754Hc2zs%3D\"}]}",
       "server": "cloudflare",
-      "server-timing": "chlray;desc=\"a430be132b378c74\"",
+      "server-timing": "chlray;desc=\"a430c150cea4148b\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN"
     },
@@ -455,17 +567,17 @@
     "suggested_selectors": [],
     "suggested_selectors_pagewide_frequency": {},
     "domain_distribution": {
-      "starzmanga.com": 1
+      "mangalik.net": 1
     },
     "signed_url_params": [],
-    "screenshot_path": "diagnostics/starzmanga-com-4845-run2-screenshot.png",
+    "screenshot_path": "diagnostics/mangalik-net-4983-run2-screenshot.png",
     "hotlink_probe": null,
     "hotlink_probes": [],
     "network_vendor_hits": {
       "Cloudflare Challenge (تفاعلي)": [
-        "blob:https://challenges.cloudflare.com/1d9fd5ab-3c01-4eae-84c3-761723715347",
-        "blob:https://challenges.cloudflare.com/2e52f0ce-b256-4bf7-bcec-788ef6e96231",
-        "blob:https://challenges.cloudflare.com/44b98a62-a897-444c-8ee1-1b4dcada5e1b"
+        "blob:https://challenges.cloudflare.com/13a37004-0e10-4ac9-8553-8838de2443bc",
+        "blob:https://challenges.cloudflare.com/31bde296-c465-4731-87ae-45d132203f5f",
+        "blob:https://challenges.cloudflare.com/932955ae-a171-45a5-a4c8-17797808cffc"
       ]
     },
     "adblock_wall": {
@@ -511,38 +623,38 @@
       "image_count_differs": false
     },
     "error": null,
-    "goto_elapsed_sec": 0.62,
+    "goto_elapsed_sec": 0.11,
     "navigation_timing": {
-      "ttfb_ms": 141,
-      "dom_content_loaded_ms": 617,
+      "ttfb_ms": 14,
+      "dom_content_loaded_ms": 105,
       "load_event_ms": null,
-      "transfer_size_bytes": 4141
+      "transfer_size_bytes": 4111
     },
     "wait_for_images_elapsed_sec": 1.61,
-    "scroll_elapsed_sec": 2.01,
-    "total_probe_elapsed_sec": 84.31,
+    "scroll_elapsed_sec": 1.89,
+    "total_probe_elapsed_sec": 83.4,
     "scroll_rounds_completed": 3,
     "scroll_stop_reason": "stable_no_growth_at_bottom",
     "navigation_response_headers": {
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "alt-svc": "h3=\":443\"; ma=86400",
       "cf-mitigated": "challenge",
-      "cf-ray": "a430c053cd318c74-DUB",
+      "cf-ray": "a430c38a7de2db8c-SEA",
       "content-encoding": "zstd",
-      "content-security-policy": "default-src 'none'; script-src 'nonce-JoM5jVPM15Zi4GfWpN1WMR' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-mImkYIp6fgoQ2oxHtrvtpB' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "content-type": "text/html; charset=UTF-8",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Wed, 30 Sep 2026 05:15:42 GMT",
+      "date": "Wed, 30 Sep 2026 05:17:53 GMT",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "origin-agent-cluster": "?1",
       "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bnVErp2Emm%2FyqGXW%2B%2BOneVJ6%2FUc5F%2Frz%2Fu09oiftcZqDq3vb1jGnqb0llyvz0mq3Z4JE5t23%2FhPGNYvbJfcbAKx5wH4v%2FYLLrnrTsNayMvOQoBPb5AfhAoU58Kum8H3CCA%3D%3D\"}]}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=P0DXWZEgbrSDFLt10NC%2FIeOQi%2F7X56e5vvhU66jMza1%2FGPKEeNfpdfNdV6wOTCT4byjbzqYBWc%2BP7rmIGE6p4juCxEiMfRDuvmG3dsM1YZ37l4I6V020fZ8d669fmjg%3D\"}]}",
       "server": "cloudflare",
-      "server-timing": "chlray;desc=\"a430c053cd318c74\"",
+      "server-timing": "chlray;desc=\"a430c38a7de2db8c\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN"
     },
@@ -614,9 +726,9 @@
   "consistency_diffs": [],
   "rate_limit_probe": {
     "target": "page_url",
-    "sample_url": "https://starzmanga.com/manga/noble-lady-reformation-guide/12/",
+    "sample_url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
     "requests_sent": 4,
-    "elapsed_sec": 0.99,
+    "elapsed_sec": 0.27,
     "status_codes": [
       403,
       403,
@@ -643,7 +755,7 @@
       "protection_category": "solvable_challenge",
       "challenge_detected": true,
       "resolved_after_reload": false,
-      "elapsed_sec": 77.93,
+      "elapsed_sec": 75.52,
       "error": null
     },
     "source_url_leak_probe": {
@@ -653,17 +765,17 @@
     }
   },
   "cdn_cgi_trace": {
-    "trace_url": "https://starzmanga.com/cdn-cgi/trace",
+    "trace_url": "https://mangalik.net/cdn-cgi/trace",
     "status_code": 200,
     "fields": {
-      "fl": "4f841",
-      "h": "starzmanga.com",
-      "ip": "172.182.209.51",
-      "ts": "1790745513.000",
+      "fl": "988f94",
+      "h": "mangalik.net",
+      "ip": "20.3.167.85",
+      "ts": "1790745645.000",
       "visit_scheme": "https",
       "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-      "colo": "SJC",
-      "sliver": "050-tier1",
+      "colo": "PDX",
+      "sliver": "none",
       "http": "http/1.1",
       "loc": "US",
       "tls": "TLSv1.3",
@@ -674,22 +786,22 @@
       "kex": "X25519"
     },
     "error": null,
-    "elapsed_sec": 0.08
+    "elapsed_sec": 0.05
   },
   "alternate_paths_probe": {
     "wp_json": {
-      "url": "https://starzmanga.com/wp-json/",
-      "status_code": 403,
+      "url": "https://mangalik.net/wp-json/",
+      "status_code": 200,
       "error": null,
-      "protection_category": null,
+      "protection_category": "none",
       "cf_mitigation": {
-        "cf_mitigated_value": "challenge",
-        "mitigation_category": "recoverable_challenge"
+        "cf_mitigated_value": null,
+        "mitigation_category": "no_mitigation_observed"
       },
-      "looks_promising": false
+      "looks_promising": true
     },
     "amp": {
-      "url": "https://starzmanga.com/manga/noble-lady-reformation-guide/12/amp/",
+      "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/amp/",
       "status_code": 403,
       "error": null,
       "protection_category": null,
@@ -700,7 +812,7 @@
       "looks_promising": false
     },
     "rss_feed": {
-      "url": "https://starzmanga.com/feed/",
+      "url": "https://mangalik.net/feed/",
       "status_code": 403,
       "error": null,
       "protection_category": null,
@@ -711,57 +823,57 @@
       "looks_promising": false
     },
     "subdomain_m": {
-      "url": "https://m.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://m.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='m.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='m.starzmanga.com', port=443): Failed to resolve 'm.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='m.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='m.mangalik.net', port=443): Failed to resolve 'm.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
     },
     "subdomain_mobile": {
-      "url": "https://mobile.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://mobile.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='mobile.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.starzmanga.com', port=443): Failed to resolve 'mobile.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='mobile.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.mangalik.net', port=443): Failed to resolve 'mobile.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
     },
     "subdomain_api": {
-      "url": "https://api.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://api.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='api.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='api.starzmanga.com', port=443): Failed to resolve 'api.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='api.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='api.mangalik.net', port=443): Failed to resolve 'api.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
     },
     "subdomain_cdn": {
-      "url": "https://cdn.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://cdn.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='cdn.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='cdn.starzmanga.com', port=443): Failed to resolve 'cdn.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='cdn.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='cdn.mangalik.net', port=443): Failed to resolve 'cdn.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
     },
     "subdomain_img": {
-      "url": "https://img.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://img.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='img.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='img.starzmanga.com', port=443): Failed to resolve 'img.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='img.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='img.mangalik.net', port=443): Failed to resolve 'img.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
     },
     "subdomain_static": {
-      "url": "https://static.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://static.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='static.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='static.starzmanga.com', port=443): Failed to resolve 'static.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='static.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='static.mangalik.net', port=443): Failed to resolve 'static.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
     },
     "subdomain_assets": {
-      "url": "https://assets.starzmanga.com/manga/noble-lady-reformation-guide/12/",
+      "url": "https://assets.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
       "status_code": null,
-      "error": "HTTPSConnectionPool(host='assets.starzmanga.com', port=443): Max retries exceeded with url: /manga/noble-lady-reformation-guide/12/ (Caused by NameResolutionError(\"HTTPSConnection(host='assets.starzmanga.com', port=443): Failed to resolve 'assets.starzmanga.com' ([Errno -2] Name or service not known)\"))",
+      "error": "HTTPSConnectionPool(host='assets.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='assets.mangalik.net', port=443): Failed to resolve 'assets.mangalik.net' ([Errno -2] Name or service not known)\"))",
       "protection_category": null,
       "cf_mitigation": null,
       "looks_promising": false
@@ -769,10 +881,10 @@
   },
   "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
   "diagnostic_run_files": {
-    "report": "diagnostics/starzmanga-com-4845-report.json",
+    "report": "diagnostics/mangalik-net-4983-report.json",
     "screenshots": [
-      "diagnostics/starzmanga-com-4845-screenshot.png",
-      "diagnostics/starzmanga-com-4845-run2-screenshot.png"
+      "diagnostics/mangalik-net-4983-screenshot.png",
+      "diagnostics/mangalik-net-4983-run2-screenshot.png"
     ]
   }
 }
