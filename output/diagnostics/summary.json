@@ -9,9 +9,9 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "68.220.62.177",
+      "ip": "135.232.200.196",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "San Jose",
+      "city": "Chicago",
       "country": "US",
       "error": null
     },
@@ -22,17 +22,274 @@
         "tested": true,
         "certificates_found": 85,
         "historical_ips_literal": [],
-        "subdomains_seen": [
-          "*.like-manga.net",
-          "like-manga.net"
-        ],
+        "subdomains_seen": [],
         "error": null
       },
-      "dns_history_resolve": null,
-      "shodan_probes": [],
-      "direct_connection_attempts": [],
-      "candidate_ips": [],
-      "candidate_ips_excluded_as_cloudflare": []
+      "dns_history_resolve": {
+        "resolved": {
+          "slikey.like-manga.net": "104.21.35.202",
+          "likehua.like-manga.net": "172.67.179.141",
+          "s2likey.like-manga.net": "104.21.35.202",
+          "s3likey.like-manga.net": "172.67.179.141",
+          "s4likey.like-manga.net": "104.21.35.202",
+          "s5likey.like-manga.net": "104.21.35.202",
+          "s6likey.like-manga.net": "172.67.179.141",
+          "s7likey.like-manga.net": "172.67.179.141",
+          "s8likey.like-manga.net": "104.21.35.202",
+          "leklikey.like-manga.net": "104.21.35.202",
+          "templikey.like-manga.net": "172.67.179.141"
+        },
+        "resolved_all": {
+          "slikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "likehua.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s2likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "s3likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s4likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "s5likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "s6likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s7likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s8likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "leklikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "templikey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ]
+        },
+        "unresolved": [],
+        "error": null
+      },
+      "shodan_probes": [
+        {
+          "ip": "142.250.184.196",
+          "tested": true,
+          "org": null,
+          "isp": null,
+          "country": null,
+          "ports_open": [],
+          "services_sample": [],
+          "hostnames": [],
+          "tags": [],
+          "vulns": [],
+          "last_update": null,
+          "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+        },
+        {
+          "ip": "142.250.186.132",
+          "tested": true,
+          "org": null,
+          "isp": null,
+          "country": null,
+          "ports_open": [],
+          "services_sample": [],
+          "hostnames": [],
+          "tags": [],
+          "vulns": [],
+          "last_update": null,
+          "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+        }
+      ],
+      "direct_connection_attempts": [
+        {
+          "target_ip": "142.250.184.196",
+          "port": 443,
+          "sni_used": "like-manga.net",
+          "tcp_reachable": false,
+          "tls_handshake_ok": false,
+          "tls_cert_cn": null,
+          "tls_cert_san": [],
+          "tls_cert_issuer_org": null,
+          "cert_matches_target_domain": null,
+          "http_head_status": null,
+          "http_head_server_header": null,
+          "elapsed_sec": 10.01,
+          "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — على الأرجح محجوب بجدار ناري)"
+        },
+        {
+          "target_ip": "142.250.186.132",
+          "port": 443,
+          "sni_used": "like-manga.net",
+          "tcp_reachable": false,
+          "tls_handshake_ok": false,
+          "tls_cert_cn": null,
+          "tls_cert_san": [],
+          "tls_cert_issuer_org": null,
+          "cert_matches_target_domain": null,
+          "http_head_status": null,
+          "http_head_server_header": null,
+          "elapsed_sec": 10.01,
+          "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — على الأرجح محجوب بجدار ناري)"
+        }
+      ],
+      "candidate_ips": [
+        "142.250.184.196",
+        "142.250.186.132"
+      ],
+      "candidate_ips_excluded_as_cloudflare": [
+        "104.21.35.202",
+        "104.21.84.166",
+        "172.67.179.141",
+        "172.67.195.78",
+        "172.67.210.176"
+      ],
+      "candidate_ips_excluded_non_public": [],
+      "candidate_details": [
+        {
+          "ip": "142.250.184.196",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "www.google.com"
+          ],
+          "first_seen": "2024-06-22T16:58:25",
+          "last_seen": "2024-06-22T16:58:25",
+          "internetdb_tags": [],
+          "from_cache": false
+        },
+        {
+          "ip": "142.250.186.132",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "www.google.com"
+          ],
+          "first_seen": "2024-08-06T16:40:50",
+          "last_seen": "2024-08-06T16:40:50",
+          "internetdb_tags": [],
+          "from_cache": false
+        }
+      ],
+      "candidates_from_cache": false,
+      "source_status": [
+        {
+          "source": "crt.sh",
+          "kind": "names",
+          "ok": true,
+          "status": 200,
+          "attempts": 4,
+          "elapsed_sec": 23.58,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 1,
+          "ips_count": 0
+        },
+        {
+          "source": "CertSpotter",
+          "kind": "names",
+          "ok": true,
+          "status": 200,
+          "attempts": 2,
+          "elapsed_sec": 0.59,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 8,
+          "ips_count": 0
+        },
+        {
+          "source": "AnubisDB",
+          "kind": "names",
+          "ok": false,
+          "status": 403,
+          "attempts": 1,
+          "elapsed_sec": 0.16,
+          "error": "status=403",
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 0,
+          "ips_count": 0
+        },
+        {
+          "source": "OTX passive DNS",
+          "kind": "history",
+          "ok": true,
+          "status": 200,
+          "attempts": 4,
+          "elapsed_sec": 40.12,
+          "error": null,
+          "note": "جزئي — like-manga.net: status=429",
+          "api_key_used": false,
+          "hostnames_count": 1,
+          "ips_count": 4
+        },
+        {
+          "source": "HackerTarget",
+          "kind": "history",
+          "ok": true,
+          "status": 200,
+          "attempts": 1,
+          "elapsed_sec": 0.35,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 12,
+          "ips_count": 12
+        },
+        {
+          "source": "urlscan.io",
+          "kind": "history",
+          "ok": true,
+          "status": 200,
+          "attempts": 1,
+          "elapsed_sec": 3.29,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 1,
+          "ips_count": 14
+        },
+        {
+          "source": "SPF + MX (DoH)",
+          "kind": "live",
+          "ok": true,
+          "status": 200,
+          "attempts": 2,
+          "elapsed_sec": 0.23,
+          "error": null,
+          "note": "لا ip4 في SPF ولا MX داخلي",
+          "api_key_used": false,
+          "hostnames_count": 0,
+          "ips_count": 0
+        }
+      ],
+      "discovery_verdict": "candidates_found",
+      "verdict_explanation": "وُجد مرشَّحون عامّون غير تابعين لـCloudflare من مصدر حيّ واحد على الأقل",
+      "budget_sec": 120.0,
+      "elapsed_sec": 50.71
     },
     "direct_origin_access": {
       "attempted": false,
@@ -43,7 +300,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a42fd4375f6822de-SJC",
+        "cf-ray": "a430006d6fc10042-ORD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -62,12 +319,12 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.05,
+      "elapsed_sec": 0.04,
       "cf_mitigation": {
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
       },
-      "cf_colo": "SJC"
+      "cf_colo": "ORD"
     },
     "curl_cffi_probe": {
       "probes": [
@@ -76,7 +333,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a42fd43789920dfd-SJC",
+            "cf-ray": "a430006d9ad8b271-ORD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -88,20 +345,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.02,
+          "elapsed_sec": 0.03,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SJC"
+          "cf_colo": "ORD"
         },
         {
           "impersonate": "firefox",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a42fd43789eeebeb-SJC",
+            "cf-ray": "a430006d99f09129-ORD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -113,20 +370,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.02,
+          "elapsed_sec": 0.04,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SJC"
+          "cf_colo": "ORD"
         },
         {
           "impersonate": "safari",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a42fd4378da51584-SJC",
+            "cf-ray": "a430006d9ba5e566-ORD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -138,13 +395,13 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.02,
+          "elapsed_sec": 0.03,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SJC"
+          "cf_colo": "ORD"
         }
       ]
     },
@@ -177,14 +434,14 @@
         "like-manga.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/like-manga-net-7704-screenshot.png",
+      "screenshot_path": "diagnostics/like-manga-net-212-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/16781086-250b-411b-82d4-33dbb1eff688",
-          "blob:https://challenges.cloudflare.com/19a037fb-7c8e-466f-a868-05fbb96285b3",
-          "blob:https://challenges.cloudflare.com/62b1b816-21f6-4a5a-857a-41816da563a5"
+          "blob:https://challenges.cloudflare.com/47fb55dd-6f2d-48ee-bde5-7b38035fb563",
+          "blob:https://challenges.cloudflare.com/642c595b-592c-4082-93ec-a8a63f104814",
+          "blob:https://challenges.cloudflare.com/da6c359a-92d0-4267-ba8c-c2cb92fc0002"
         ]
       },
       "adblock_wall": {
@@ -230,38 +487,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.12,
+      "goto_elapsed_sec": 0.13,
       "navigation_timing": {
-        "ttfb_ms": 4,
-        "dom_content_loaded_ms": 109,
+        "ttfb_ms": 7,
+        "dom_content_loaded_ms": 123,
         "load_event_ms": null,
-        "transfer_size_bytes": 4139
+        "transfer_size_bytes": 4141
       },
-      "wait_for_images_elapsed_sec": 1.61,
+      "wait_for_images_elapsed_sec": 1.62,
       "scroll_elapsed_sec": 1.81,
-      "total_probe_elapsed_sec": 83.38,
+      "total_probe_elapsed_sec": 83.43,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a42fd438af9ecf2e-SJC",
+        "cf-ray": "a430006eea48eaf0-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-Ix1Y2j44Kn5MNwJaEhhEAP' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-nh59agQf7jBUoH4efXERe5' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 02:34:31 GMT",
+        "date": "Wed, 30 Sep 2026 03:04:42 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wYaJE8PJZBAznSwq2U%2BZzAwZrylzY7SQohgUazZpc4Ppyif4Ymc4ylonuF9zDEdhP1g4wxKFMg0G3o1KWvZd5oMe9fMwA3vxye5MIt09GomsmWekG3vfYompgl%2F4oNt4yg%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KiLRZ4PtWXDqfHgsbhzEk5FY0vwtl4XxP4VXmPZMYFa66Ct53jqirbIa8fGf292aCMBK2lWB0fQmJDGefzI9Te1OPO5GBFu6tMjL1HL%2BfqixeE5qnhQ7CTupbdQT0Z229A%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a42fd438af9ecf2e\"",
+        "server-timing": "chlray;desc=\"a430006eea48eaf0\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -359,14 +616,14 @@
         "like-manga.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/like-manga-net-7704-run2-screenshot.png",
+      "screenshot_path": "diagnostics/like-manga-net-212-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0f4b2e61-cfca-45bc-99cc-21b883de3f1d",
-          "blob:https://challenges.cloudflare.com/0fc0736f-eeb5-4060-92d6-9f17b9dfb5ac",
-          "blob:https://challenges.cloudflare.com/2503f9bb-00fd-4f63-aea6-650882624c45"
+          "blob:https://challenges.cloudflare.com/16d380bc-5254-4b84-b017-333c51cc9b99",
+          "blob:https://challenges.cloudflare.com/2293dab8-9c39-4b91-8723-f77f0487d690",
+          "blob:https://challenges.cloudflare.com/48d427bc-13ce-4300-891b-6a7b1c435934"
         ]
       },
       "adblock_wall": {
@@ -412,38 +669,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.09,
+      "goto_elapsed_sec": 0.08,
       "navigation_timing": {
         "ttfb_ms": 6,
-        "dom_content_loaded_ms": 78,
+        "dom_content_loaded_ms": 76,
         "load_event_ms": null,
-        "transfer_size_bytes": 4144
+        "transfer_size_bytes": 4127
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.82,
-      "total_probe_elapsed_sec": 83.45,
+      "wait_for_images_elapsed_sec": 1.62,
+      "scroll_elapsed_sec": 1.87,
+      "total_probe_elapsed_sec": 83.43,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a42fd66ff94222de-SJC",
+        "cf-ray": "a43002a6ab9f0042-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-sEAaMRgUqdl3d7cvp9LSgG' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-BHw4WK265Gy2taI7Q3K5yP' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 02:36:01 GMT",
+        "date": "Wed, 30 Sep 2026 03:06:12 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=E5V%2BwJKW9Y%2BgBC3GTC%2FrLCpi%2FcJtGsB4Dx0iCwPpJ1%2FUeTRv1vVzS7tNfSEM%2FLmvLYq3ZBQmkxazY771ppGFkVLthyBsXWgk7sRiLCUEt3Fza1sJTdru4vOAw%2FiEIdrmpA%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aHtS4yaY9BjGQdSZO%2FWwvXrApActihI6VbdTRjBVWtEn%2BEocnKW2DIXBES7fkRujerUqKYkIIIhwrcuvyHeF8Ercj2QQSafL4F7Z%2FyBbpvvrX%2BSMiDtcVNJKf%2F%2BQJCQYnA%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a42fd66ff94222de\"",
+        "server-timing": "chlray;desc=\"a43002a6ab9f0042\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -517,7 +774,7 @@
       "target": "page_url",
       "sample_url": "https://like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
       "requests_sent": 4,
-      "elapsed_sec": 0.14,
+      "elapsed_sec": 0.2,
       "status_codes": [
         403,
         403,
@@ -532,10 +789,10 @@
     "deep_diagnostic": {
       "wayback_availability_probe": {
         "tested": true,
-        "available": false,
-        "snapshot_timestamp": null,
-        "snapshot_url": null,
-        "status": null,
+        "available": true,
+        "snapshot_timestamp": "20240910100743",
+        "snapshot_url": "http://web.archive.org/web/20240910100743/https://like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
+        "status": "200",
         "error": null
       },
       "runtime_enable_leak_probe": {
@@ -544,7 +801,7 @@
         "protection_category": "solvable_challenge",
         "challenge_detected": true,
         "resolved_after_reload": false,
-        "elapsed_sec": 76.55,
+        "elapsed_sec": 75.57,
         "error": null
       },
       "source_url_leak_probe": {
@@ -557,13 +814,13 @@
       "trace_url": "https://like-manga.net/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "464f222",
+        "fl": "960f33",
         "h": "like-manga.net",
-        "ip": "68.220.62.177",
-        "ts": "1790735935.000",
+        "ip": "135.232.200.196",
+        "ts": "1790737740.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "colo": "SJC",
+        "colo": "ORD",
         "sliver": "none",
         "http": "http/1.1",
         "loc": "US",
@@ -575,7 +832,7 @@
         "kex": "X25519"
       },
       "error": null,
-      "elapsed_sec": 0.03
+      "elapsed_sec": 0.04
     },
     "alternate_paths_probe": {
       "wp_json": {
@@ -670,10 +927,10 @@
     },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/like-manga-net-7704-report.json",
+      "report": "diagnostics/like-manga-net-212-report.json",
       "screenshots": [
-        "diagnostics/like-manga-net-7704-screenshot.png",
-        "diagnostics/like-manga-net-7704-run2-screenshot.png"
+        "diagnostics/like-manga-net-212-screenshot.png",
+        "diagnostics/like-manga-net-212-run2-screenshot.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
@@ -793,7 +1050,7 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519 (29)": "eef90fa8dee5654d84a8f6b998b2ca661cbd65c2119bb398f37d7a8d758b4e78"
+                  "X25519 (29)": "f6c3e4503e0e08c57e9fb0c344300ba24a094cbc5117aa60967c36c72ca73940"
                 }
               ]
             },
@@ -810,14 +1067,14 @@
           "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
           "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
-          "client_random": "91b8daef1ed91cddbd02bee00802d0a5426a3fb355e287663ffb6d1c77fbf8fd",
-          "session_id": "a7f1b5ee7c387c334c5b1c82511c3a03172e039cd82ef78aa3a00cbe54870897"
+          "client_random": "0b153596a8429b681c115560e40d02170e66fed57036f2ef8b6ad4e2d82c2ab8",
+          "session_id": "a0ecdc96a621cfadaed8c76d4cbf7c433ffd1f38a61156554bd50c7520b4e5e5"
         },
         "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "ja3_hash": "2ae0190c4636b2c2210157f6872834ab",
+          "ja3_hash": "1b7338428af442872a87bfcdf3ae1a05",
           "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
           "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
           "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -845,7 +1102,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xdada)"
+                "name": "TLS_GREASE (0x6a6a)"
               },
               {
                 "name": "signature_algorithms (13)",
@@ -864,21 +1121,44 @@
                 ]
               },
               {
-                "name": "application_layer_protocol_negotiation (16)",
-                "protocols": [
-                  "h2",
-                  "http/1.1"
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
+                ]
+              },
+              {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0xcaca)",
+                  "TLS 1.3",
+                  "TLS 1.2"
                 ]
               },
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x8a8a)",
+                  "TLS_GREASE (0xcaca)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
                   "P-384 (24)"
                 ]
+              },
+              {
+                "name": "signed_certificate_timestamp (18)"
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
               },
               {
                 "name": "status_request (5)",
@@ -889,51 +1169,36 @@
                 }
               },
               {
-                "name": "ec_point_formats (11)",
-                "elliptic_curves_point_formats": [
-                  "0x00"
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "0000010001db0020b5252c0e42716fa4781d05d513e077da77240dfc38722a2c1afba6ecc494a60200d00a9eb18e3d4c5096110835f71de28b0a69c3a14add287ca6873d62f88c141d8f01d14df5b26fdfadbb133f1461656facc1b1afb1d7e86b59168c8c264787ff0cb1238dd256551c4f9f39ec592eec5ac385dcd736af67c33b62013c21babc5db26d7cf4241679b0f4b297d371c7723594ee8b72b6c40f3567934a8f9414d35cfdf34ee5ff1890b30aa7d070681c2cbacef19f893e490feb6698744d6e696c7e7e90bd149852bb38b6bc3a6bfd5214d8f7eb54239271dbb17ecad9fd2c4bcdefcfdd14fc451d195a1ae517f6810f756d41"
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "session_ticket (35)",
+                "data": ""
+              },
+              {
+                "name": "application_layer_protocol_negotiation (16)",
+                "protocols": [
+                  "h2",
+                  "http/1.1"
                 ]
-              },
-              {
-                "name": "extended_master_secret (23)",
-                "master_secret_data": "",
-                "extended_master_secret_data": ""
-              },
-              {
-                "name": "psk_key_exchange_modes (45)",
-                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
-              },
-              {
-                "name": "signed_certificate_timestamp (18)"
-              },
-              {
-                "name": "extensionRenegotiationInfo (boringssl) (65281)",
-                "data": "00"
               },
               {
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0x8a8a)": "00"
+                    "TLS_GREASE (0xcaca)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "e872130b82522ac85178743de7557f88284dbee47d1053a8f67559a3426f0afc5f73b22b6b5262adc2962baa6b9d15220381351c22465b44cd4e9385a49a26857ca2d0405f1595366f1b8826637c68e34d51ec3139bb739f0bbe54db4c4611493ac56b5168a2d1d793bfac1463cc8facda3b79d10adbd47e9df476780b0b82b634b07a2c9bdb27e9974c2ae34ead29984dd79f1a6182ab129bc92613d0a085c4959bb9572dd8dc716e9a705fc810d1c1106fb43017a462d3ac7e63d136b039624f083387f0226bbbc244328fe2524d9a8260f03c309f01d0018255be929137046653234ddf13b5981504be9379dc5b9d09d6a3501734d0c23871268ae4d42353bca22a300bd22457e44469d3b8134aa2a2a07885c41409a0e213dea7abf9ecab6c8ab48ada80e6398c0d4267c4194a884720de6c64f625588d388646d377407a44a671456b6a5392a0afffa49bb3251c251c8cb5ab86524a0d0aa31c2ee8b214e0b2fbb20342a8a393aa6048f952717209980c15444bad4f8c8f4308497e31693ac6b99724b20af116c3a08ff6a4aa05f5c2d5100f0fa434da06a889a54b17756ab8b142c5459eb9f0b231fb299b497421f346d6145e4cb2b39ee6c78eba4d665545f355504fc00617d77ce9138077566c2ed46c4f22364dd22949c6895ed14047d7628a096c21c9866d447c8bcb7d5a14856e607fd1c3c36648aaa758c7f3db2b3a5378a40100b40851db70c522583366f30170b1aa03015f6674c64175846b516364649c089b5a0ed2150b8ccc7d579c59abc2aae9ab9dd010829b5cbe18cd6f9115d5b3bdf3d08e70da9f59785b82dc3c0907645fa2011bc35e9fe7b6d8aa4d6172b2b3553ab58414e583ab3ad485de432b06d04f51989bef51c510ba96785b2e83e55023c42884cc87afc1a45cda5ed54c89c0537ec8d4aa56cb978c588bf65733c2548d63512806d17908618dd0028350e8ba8adcbe33098021b41502e36fcb565c91a136b1f0810f29afba0c0d1aab0bbc73ad4c9344d2556b23fb73fe923b5d26aebff134b59a08f088aeb53c032ad0c15d778e97484934db0b0dd8b063332160db97bb4b9903fc3b2a739117f39cffeac05e3785e8064ef2b96074f10916748cfb2226a2d69842a1433ee9bd3f314f6513315f82b7e7851cb2a4299973a065db012af49fd3bb601754bb44d64e3c7557dfc269f4849b920322572c65d9d91eaa345037b31433aa065ed45d4830b209434f045a8f2ba33c58929a1ea01db92980787a32972a2820f8a3af5c482ea34b5c124b9804b36b0cb7a186456cac0c473116aa763f5942a666b9756d7aabcb767ce235a2818885191b3315d7a9037a725eea2a81421c45a8ac046c818539cecd384256209b7d38b0ade6552608975ce9b3ee1bb699d36a4d38467eeb7ccbfb6b62a739a3cc6232138909238ec2c145949c0d3373ab39ca6cbf9cb3def13cde9a4cd6921c529690aaf094642b7955a29dcabacfaa71511937210ce524c2977cd3b258f733207fa7b904cb2fd9a76bc61576a79a82a4b7b6ae6226ef97680e541dac55cae5090cd45c2f3315675832a29b4436519b3f433b5c8f3c96ab4cb406752fc5b339c8f8622882182e67272814f37d65216a96215cec404b724e51192ed726ed674eac9b16cd1fe1741fdc6f2654aa31ee27ec6565923cd781d0384f4f23eda10ef98021fbe45c961ca00b"
+                    "X25519MLKEM768 (4588)": "0658517d2b1edf327c0b2a9dfde60b8ae34c7419ac54e88386d44da223998ec569bd69317106506ea79cf3914957e2ca79368a750a3255b44c97f195b30a72c7403b41591fd56b1a15e427989c0cc1412c339b60671589b78106d304319d2bbd2da8421da196a4c59122eaae0ce00ddb5a37d745a89ca6ca83b6b03101c63088501af8062c0c0eb515c218e4a54f8cb2adc296d7e8c0a6d7a347980d45c6571dd9b726a3c5057bba9d7c8dfc0c937053726c734641326d2c20689f41143435080469a37ffcb48f5870d9e9a19122215bf95ac0e9b45a22ab2a122b8f35006e8184b3213d7f6a4ec13c5e53696ee049be8c2224b22a67509b0a2313971fe434b45492d71399133bc4850c6ca49834f278279bc8517b7b59632262a9242eea54632389bf32e9a677f95766790c1326abfde91aeb6b0d2bb2264e338dee006c8bc92fcc92776223590ad1b0986809dfe07397765ea811875012a0d7e30c623c19e3accd17c8b8088439e8b73eca50390db5b11960cb1cf82b6543ad9b57cf698c2887fb1d97d8187264c21a7708cb823e2eb42c116726acc6a911423b109a2151babc52d4254c86158ecac45631332a8c394e245ba30892bc46bdb5fc567bab3eee4cc14cb909c9d46d2a004c1dc94723f08c963a99009274a927aa7e644dd8ba76d4126cbe221c37a3a8fe7c8a124b044fc55ac2a87633a8350a97cd6f40b9146805a1d01b1b1bae1b63344ec597276b468d5b8fd54a0e4931781c7b850fd136b85177cf91c9e994c869ba2f089378d2511e524a15e7306dd11a9e2e1acac0858d82499c738b6e8064b38c11b34f98084175b9a6a88330961fce64aab7209749ac3e80a4c2d6f98989774052817522d6b43a6757b492a3487ba93926a19c8744926a6cc3463d19cab03cc64bcef005b1a3201fc14aca2895f13a1a8d299f6f27a1641601a580678199ad86a5aa4f35adf361794a9136d72b52cd088b5ac4269ec2c983d8646f726ef4f9a7e3a54e42d52a8c5493ea892cfe769ac157b29ca959f0ca2ab51a42c95ab6bb33822b56bb8b6cca29260072827d5099b16da9935949b0c2a53ec443b326fa1661e692f66559feba3faba95a7612beac710be7ec34b1a1c4f90159ae05b0d97b1939360b6e50be299c874591853e829cfed927074a5e267584e2348086016f95943d478272e69ab76bd11e668c06a8c2b133889aa77c97e6bb10af116d1501a7a20c796221ad7564c81c798e430bb4ca429164051ba341b169b17c70da4d32a0c4cbeccf0f045f5ef011fa63732c79989492b3990c0a0f9a537739108c400b7a46841fbca9a3140e7af03a845cc7f164c504ac3a2c71687f17b988321e20c211f59558934c0bd6271141778b1b3069e5678bb109cb209132ba23ab7fe0568072778c14053c1459442449c590a0c92b2926704f4ec0c60325573616a50e659203300d7825157e0473d3a9ae9fa949a7aa8624665caa34c787c410f42b8559ec5dc2b84e23db43ddb07e855c9eaeb0cb0cd196e5272cd043c698c366f1990440cc641c6b97fa69a6f549225284342c92a280220bd7f63626a548cf127368863eded9c844e3ac766cb0807a447bd91ea5daa716873680e873b1576278fb902e3afa59a0208e1e3ad0bde8a31f8282195b34b3d739e7918f744eaa4c3415cca726ae6c3d43ef4ac04697bba1a7035cb20afc38d9b609bfde04"
                   },
                   {
-                    "X25519 (29)": "f4ca6e2e02647a02a4d9e09a3844d500847321c4a73759e6762751b623d53037"
+                    "X25519 (29)": "45bccca4eeba28aeed024e6f00893d247d84545845d708bf12565914bc95ad07"
                   }
-                ]
-              },
-              {
-                "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "0000010001af0020301826cf430e74f5bcd632eea55366ba4d43d52c5ffeed7433a4e9cad4a6561a00b093a48a2f118a417c8964af8a83bff2d972dd8eba474a5fb9b5d88faedbfc1053f7f073ef654cd89c06341d3968a05c41fbf29b4d18dcc99b6c60591cc22a1ebcc212311db610e6778e4e08d8ca9a8c30e9dead5347693a4fd891dbd60c56366039beedb2c52a3566d55cc0328de60d19df54a9cba273af20178bf4a62203075475dba78842e5304c3f4427dc8ef76943a8f8948abf8a40c278608e36a68cfda91602046da1405e634f360f1b905166d1"
-              },
-              {
-                "name": "supported_versions (43)",
-                "versions": [
-                  "TLS_GREASE (0xdada)",
-                  "TLS 1.3",
-                  "TLS 1.2"
                 ]
               },
               {
@@ -949,27 +1214,19 @@
                 ]
               },
               {
-                "name": "session_ticket (35)",
-                "data": ""
-              },
-              {
-                "name": "server_name (0)",
-                "server_name": "tls.peet.ws"
-              },
-              {
-                "name": "TLS_GREASE (0x3a3a)"
+                "name": "TLS_GREASE (0xcaca)"
               }
             ],
             "tls_version_record": "771",
             "tls_version_negotiated": "772",
-            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,13-16-10-5-11-23-45-18-65281-51-65037-43-17613-27-35-0,4588-29-23-24,0",
-            "ja3_hash": "2ae0190c4636b2c2210157f6872834ab",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,13-11-43-10-18-45-65281-23-5-65037-0-35-16-51-17613-27,4588-29-23-24,0",
+            "ja3_hash": "1b7338428af442872a87bfcdf3ae1a05",
             "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
             "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
             "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
-            "client_random": "7fcb3e2ed52bee764763f79cba90a9b9002e8c574f22aa3c71f4f03d235f1835",
-            "session_id": "bd73ab506669936ee36637817ea9a5a802282f1435c3c696bc477701ff00a002"
+            "client_random": "7b01b882a27a43605f48ad2b32168e049aa2118d4110fdf03bf4aa999b7a5ef9",
+            "session_id": "2b2a42ac36acfa35c92a61a88c95ebcc49c18db307371c5549f6320a708545dc"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1122,13 +1379,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "X25519MLKEM768 (4588)": "7a7b5ef1bcb76e92c766ea8bab6c188a5484a37b454454a2e6196f558306ff4b1e702c13b5f5bcbab9a0e2e92c4641244446b6258b7e3a5c44e12001eb4ba6d3d35433aa44a40173dbea4bd91ba1df776a5cd18f1298184b79cb05c4733e04809f87714e351f1ab154b4312893a21302b42e630496b12a0a05132b53c24d53b52ced5aba35c4b8b7f736db424fc48094ab516519ca0175e680b708adc03a93e85641917549f11abb068b78a2e5a0cd0079bf80b1cf894d3172028b1a34a155839520c836d451842ba3ea3c8c830534766c23ad07511d05729ea5b89ce1c8119183f8d89a588c6bf64938e78ccfb9b095726b22482a51acb43ec285465dab9287d48e2489465b7808ffe65dc0749982c6cb3e130845c90c7e9c0c6a3a3f6be763800853362a3ea5f45486479201d70cc472773b2672d48670889a9bc681464a5a3fd9bc7dfc5b0b2a643cb587b8c2249b52a2984739bde47b557eac1b9293b16e0450f5555abe067cc6351e7d70c5c6375706032d7c733039bb23cb220ba6c55f846717f344b234c0b7d88a74b1900b504019393169ee1687345423406c46387c2521173ca429a5a50526181a65373b54e0f39c61c5a4cb23b5ff85c6d2296ccd495f6a08629c0c885f17044ed2bf692876e4f6a2bd7a87a9d455e7c305cb7cb3df2a10e1799d44a18544730bf54b819f4931a0b94d77fcbc9160c27dbc33395379fe825d945572aef79e8c85195c6039193bbd431c2dde74651a269a4c44414e2c7f6e063f061ac0551019ca2c51f88604b1089612dcb7efe90c83fbbba531ca36f934e9548a30787d5d4893262695d6018474aa4b1e9b18e6cb7b8456a81f0b0b9f14b754aa96faa48396507e39ec204f6c328cb979f0a7a91b0b440e941b69d1740356856e4c5c3c986f58a95f5ccc227c0800fbe19fcdda52c43a54d2902e7031cbb1b025a1a434d1917d0ab700a47696946281bb915ce35596335b219e2a425efba4a8a42cab6675c33c84a49248698b7313c2b03895842da07fdaa2421b9a55331c26cd9c2ac04a057a79bc82806a5f651be6556c474a20df86239793040f603faca9459786a3854997a696a40ec4b6a01aba6f94b13ff33fca707fbce97220f44f031c3ec7e92661500e1297969c727d288114a0eab4607b5e82464b0f47b8bb0bb448f2b6207949a265c06ffcc3a6590a2660828bb168669208e9393f0bb84f4e594c580778b750cf5da8c8e02232b127b760a3334185429ee020224c69ab4bc12f95b32914b7ebfab4ba768e964a3a3a190d4e8196fb4b770f320c0911954a7cbbeac5c34facb4e4380a28a532c91964cbdb9604d45f56db3ce0405357c02055e7801ef8415f43336b91abe66abfc1f7c2a2b6069dd8aeda36732e21afef774ca52094d91ccc66985c8bbc7001774c6e4285cbabc64e4a1fb5569d11e66404971ee5bca16d044ff11cae098ccca1eb5ea1544215f11baa95a7a24b5c157c3c915a7b9127afadd1a57bd9aac5695825cbb0769ab5b5c43b2c1399279aabf6241caf4710248c68d368ad16119df26011336c3824622feeaa716a642bac27a1aa64a2dbc818490101ebac7d724b8d385b33f4e5191fe1bba47c4009900259e8a378f965f79dbb861baf23989ccb579f81d64f57fc0c9918a4438c57dd374227db994ea92e8c136091fde2be972843555f34f91f361c6f8e1a6f4cd4ce4f"
+                    "X25519MLKEM768 (4588)": "74856591e8ab7ce24ca61804f6ba1e3d4467c04aaa08854665710e15956f4b9bb2bbcc00684c11d435bc23789840e20884866238e4a7bdec0179475935d249843795e34ac6ca3aaeaea908e26486ce111373a2ab9d741b5fd0136d2587aa44887dd61c14f78c3f20c100f63f615a4882b866f6604d0f052a8d48a8abcaab83b344cc37ce3a543995ac55ac26592f59b9ffe161ec76b8b5b7775a683bb7391fb9934a984bba31c5a6f420a50141490159a415eacf46c1cbf0cbbc8fb019dfd14ccee83087a7b01e1197424a4c84e10c2f91aa2bf3bf671a77dc46641f88c4dabb2e23e17f06147e0248121065974c8abab9261e2546c55391815bf1a78227a60d64b4c9437a49b300bfa727928c4c3c2b93a99057c6f9853db4b3c8070b41bb221cf8c27600c9ffd16eb70ba69ab013dda240d9592dd3014c21851b4a91077bea5baee34b0a250fc313b5b607c58b066c2f6280b7cb4b82970dbee608f7e5a15caa8e48c300d572cc637157de656dd0c152524c0bf10cb332623c6187101c8a8166cc26929316e564c6025ac3b318652d556fe81b2e71383612e63d713b498726c8a1460f94e1a3e354289ac13f86556eebf74ef02b54438cb6ee801aa1675d1f26b90b303fbbb018d6602c98d8c7235171c300b5bf3715d66a1481477c6db231ec142f16e7023d3575779b6afbfb11225c598862c688a2b59016afe77ba12e1321b32328fab85457e73ba0338de67805ceb583c950745bd00e32d1aef78518759abc79847792627c5a720beba283ee20a45b3909967ac5eab3c8b884b6577540979ba90ecc202cf77df7a62d664b86e2a40d421c3ed87850ebfb3f730cce67c05561257c0f095de7462a4e096b720a8ec5e56100846e843111efe0b67bc34c8cb968ea9b0a839c944c05714d011cf59c5a27bb21e4d05ebf9238d6fc396ab75c88a4c4ad9903b3d89ed05b079df95d90c3c6db39643e27aa30cb47746c0613b95546d858d558511cac92d6fb2a79c0165345871f201e62a1bbfb38385f947cdce2803de0b42a8c2e455b8a4806bae3c42fe7a405cec33c1b36aed33a0b6a103aea1767f9899417314d32eb0579905bf873b91e868034fca948302ee5214c67b8afa22b86ec5b47e1152d45b00a74588c497289184b6282780370900cbd08b07983be3aa12b1a454f3206759453996e9ba15d7200f553cb40634c283a638e97c174501f9933085d38099abc0a4bd9aa9bc16922283cd26a77abc17b2953126f34a470578457345e61242f46554a0986274ada2f4fc698c32974a5108436885a1654b07b37c4d93680414c776f3c945291782e968d0f1220ad4ba2462c0106860b25301afbe723a5512878c49b12c1246d6795af9cbb38eb4cca828a81473f55c3228499c81663371bc70a1a78744747aefdc44395102f96fc3f7246bc201b66cf7b75c66baa97fba57e09700b5774ede01b9ee2699f63bc032208a1b9784ba83218f75ab3247cd6360d63153f3836cd42c20789b47e395336c5e347e9469325c78cd8996de943c8f1285874a722b7361ba3766abc889030ea6598033d0d9a8ca717b7e2235dfec25680fa4a5573514067129fa521ad9943998462b7033659692399dbc8fe1ca474f24f0200bf8f629974d829afb61389e3d7aea0c5078dc7eac9676f4be284ca1c4c555e42c277c14fd8ec9be636412f71a3488a297096c1927d"
                   },
                   {
-                    "X25519 (29)": "5a41120040df34a569021cd3e4e51c30e6126b95e796ec7e08e7862a92caeb51"
+                    "X25519 (29)": "0f37a49281c7a14ea3a40713f7c7292753750c3025fba9edb88ed3728f283576"
                   },
                   {
-                    "P-256 (23)": "048878855803100cbb239d6cb4bb573821e879ea7b990a168be88f0aea03d711eb4c718bb71780b7b91ac16415ee79f56a1c8d031aa87b543f3223e79d81eb6f37"
+                    "P-256 (23)": "048f0e1ba5150ceb54cf070e0d2d031a4757f7c5b7c8425e06fb0dd92bbea3abdc3a6dbc965f7b382513658a29e32b452baf91e0a769d1d3a31984e92a9219e2d6"
                   }
                 ]
               },
@@ -1173,7 +1430,7 @@
               },
               {
                 "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "00000100014b002004111d1301bc53839ec9017995d7cffcfe7d145df0f4064f5ad3793c86f0ab4c00d0018e83513428710d5e2760abdd2a5d16b6995e8f9ca416101816134cb29646f3c08138f8ee029ac43f40dc2fbb5e955270f611a311aa3a93d42e4d224ee68132c8633937ec3c74df778ae2ed465fc82f6e87340d030a9e4f89f2c14ec6cb9e09f592a7434fa9b8e46069f76877c9d22703bfe5bf742c0f361295dfb3e49725537bbf6bd8312ca2d0b38dfb8b80e9ac219db2f01e851e30fea1423ba6be62f03a3787a736e9c0e506df1bbbe8fdbc11f376fbc5441c509eac6be80974f429d74d44c722607e68627c4b8b76718abe77ea"
+                "data": "0000010001b4002058b3a3f5c79755b88b2daf2820f856399e2d9d08e5cfd9830ce4527fc6310a0e00f0e4af4e70c909c93f101bf7350b81e4c0af5c1d295df597540fa7dd9db7d113310d64ad402cdc3ba91691c377fed4623c37a83bab010a512fde31ca6d26364dc657617a58f522ed28f158b84ef785233b235d6c924cdbe03203f13627eac6d1f613e9a7ed116562e6230201aa51c58910466d9b466b8c3f0d5fd6db4a1646e9f9bc06cdecbcf4c3f246cd7f7032c90de21a0d5bf0025e9dd4cd9363328276df1cf31cd01039b44a9715ea79747da5ba59f1ea043c0c890aa78038fa97b39f149c552d4663f705ae1f9a9a1aa785c11911ba894bf55cc8596ce5c0e20b6a88c2a55949aad20b3b2c1f6dbcf60a22df3a14"
               }
             ],
             "tls_version_record": "771",
@@ -1184,8 +1441,8 @@
             "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
             "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
             "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
-            "client_random": "0095abcd06d2032c85ec9ec8c96cbbf18630e235448c9e2dbe1e6c32f8bf291d",
-            "session_id": "ba5c7ea3d4da40102a16e178d44757d663cc73b4a0a825a82a5764fdff2438bb"
+            "client_random": "59ca3c8ffe230d75d0a3ad640dd7e6b9a0217db0d05165aed599e5d1e0499ec8",
+            "session_id": "c2f59f3c2740ec244c00e016f9bbe0b23a3ed69bb9c2b90bd07f41cd37a9792e"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
@@ -1251,7 +1508,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0xAAAA)",
+              "TLS_GREASE (0xBABA)",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
               "TLS_AES_128_GCM_SHA256",
@@ -1275,7 +1532,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0x3a3a)"
+                "name": "TLS_GREASE (0x6a6a)"
               },
               {
                 "name": "server_name (0)",
@@ -1293,7 +1550,7 @@
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0xdada)",
+                  "TLS_GREASE (0x5a5a)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -1344,13 +1601,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0xdada)": "00"
+                    "TLS_GREASE (0x5a5a)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "70b30782e19aead66bc282046e8c827da91a6ae887f3b67826961020f39448603a24461de7052f14e55ab0a28eba06006c23674c72cc8f8320ce5096a9c41da148a4ae267b08406ac44379504879ec671917d11c17d023e0557e595a05b426270fea16330a45a792734a45361525acef0701bef49323e18644a682c4f66c4540a64d234bad841737f66282eb93ef3bced0483faf3979a27a4704c3866381b3716525d020cb82137168d2bc517848d99b05b34b16b231574da63cd175419dab3324b86db777a6d3226d9c9459139bbe9f45b42c1b7e2c3b7882db0ab0007684653f59e45b4f794ca5f8b24ab9251427a7deecb07ae25d2a4b99e7d55e58590bb550363330090019a47393753d7830187c61f2ecab2e04856c1a8bb86a641dc99447ea6806247c04445102d324830cbde3e22aa54c083db7c24e6b32e2a0c653762383a92d78c65cebd217f23b0431fc87824b1c6fd1ae83399ddfd00ca90c11ef81697c1374f5845832e30339a04ca97a8c16c78672e9a5d2258dd22b4ccef2cd59d90a679bc5c6475140eb1b005597e4d704fba27081a1abee3c3b97a15006c105bd5682c0326b0d5ba26e9079a32920f47876158b0843f55d12e6accb1c7386e84e1cf770976655d68273eb13bda5125f4cf3101f52820f4144b9b29bd5f7c429d3c8684942c0777b9a9771152735967081cde085cda06bb01c525045a1f6a50efd080a2ab5456fbb6318358df2fb241e100b91aa921d25002e79040c82a755d0c5c4142c831324bd22076278040720b5383395d6c4127eb9655bb9b285da39090022da593d7ed29931143a853c5ebf002c38ea36db773a959cc1ac0289c8980338a063255364421c2f4fa5990860bbb02ba42ae05e56408b8346b4780aa5319a5ffc03cb06b32be45a1343ec5e774b13f0563718767f098a3f6d2c583c116c44e4465007aa1b9163330987d0262a08abc2e6f83e7de22146029959c88197a831da7393ad7ca4a381b9e1ba4ab8a08f77f7717b59cdf5f802aff2b15ea613c1bb513b905b1855c914314e5b237a834a9f34a96e895693a2811f88d93cc1343714f45f92c3bbf3d0cd2e81aebbe4aa5e76902dc452e7001539ea3586964626e93382e8bc7af622d8b484840ab35e03abac4498899b0c0372b1d1408530799ada82bec2245004da94082788e5c2aabb707b3063a9f25b83a6e8b5ae611a4fa7a026d242ccc67efc248cdc8678c889b0977857eeb5b98b106d807ab65a68689b80328beca020f662fc145cecd82ab0e832b826721ac81770b653ab24a2e933c88f60095ef6a3c888c166802059b5262463ae974a762518783e42cf9a594ee537956fd9746fc13adaf97e97c77f099664c4b05418fc330d5cbb63d52f2e416833e06fb6ca84e4f5192971ad30026ec84b9808505c4b188f750735e666c004aa81e0736cc4e047d934b39d29a5fe481bdb111de2cc2984888f8cd0b2bad91598909394975071c0920c70634e9caa5118b7dcb82982b08169113ded45bf9402ae1cd97126ba4cccf83eab0572fd47cf47ec09a635796eb55b4cd36662c30e437708620577172920c82428ff4846075bc16a274a4cac7246fb317910254c554e7c362f382290f3f1b50ddc538492ed9a3b4052427567fdfb214192633c093e2766c20673ead175f325401d3358f1730697eb2ceb5f577515266706ea52cb20e4f1161a"
+                    "X25519MLKEM768 (4588)": "aa5a1eb382aa58c33324813ffefa48f3457217b307aeda225d5c0ab8109cf8853fd9294913324a07331032f78a59ca8b0995080884bc4d0c9848a355a8c39cbb5271ca586947b1824d287aadf11ec22215884352e15cbe78d437693313f13c49b0dac765bb1bdd1a91c2f2958ab82bd8a1398c476c13ac3f39f69ec760703a7714a3707aa0943ff000b5ea364430ebc5cc135b5aa743f993133b7827877479da08bc829c0522c39c55d284cc559d8e153089452f56c32184e35a42f27326eb9e98960e3a8311d9190115c396a0b05175436841b66d79a43e5ae9a8b17aa7f06ca5b21a752e3188b3b6a5c855ce311b938efc30d3342e1d6926147b864ac62121dcb5d79c24591a48bf663947b6a8b9493086da515f0ccd3fa04141332c084049082cc348e06bff9b96b34ca95850cc3f71c8bf5324d0c814afb46e78a1838fe60fbb128b7d09604379789ff2afabe1be4a33c72d41725d6a5c3da353f5070a5e0423433abd74f4a78ef416ddc24fa19680fd0c779ba9481ac5052f2b6c07c12ba7a83aedbcb3be2c3949023ff0c2823e9473bb9a06521118ef6b41fafaabc9194669c244c28385f08a77a3882077d46eecc59656bb31ac0bb593b57cd267917f7305503a47bb2974680790c995a1eb686b30cb1575e61559530f46a298b087bb202c7c5ffbaa6608c73f28b60ac7bb092c6687969536d6c01b50139c8c868b6c97ee62b0b7b7463da2573e0429ebe332ed7b7f997b956ff447f4e516869ccd72ab335428907f7bc443674d9b5c5affc67724f7759770b4b558594fbb0827968b8695c0b9ca77ddd562bfbc15e4d3256311bece347deb8a736d3048a100bc1b37cf0649591c55b34bd939dad944783c06a7a22a10e19ccb7c823e502d21f68fcecaccde0774da2a4fad61488204b331c68c3c6a9c011a807e956e9d6c71bcccb14ea87b8bdc7e2ad36689e29d7b4698eb8c74105235416b1c8e3567e4b46f4c546050579a3a4a834eb8705791a9ec99bb272b93e565990cd1b433184a6c4368ac74a2d0ac82607b1d29cb8208596e060cc0aa6c62de56858df91ef3097d3204383f38103c29c3372c128b546762519211b336bcf742fc218e65b3a392e8b1c7e0cb79c7bf84c6093c935b6951869aa0243d618b1eb4848720902053b763e48c63745ff452c1f1675bbe911b429cab4d49896dcb3808ec639c2061e28b7a715bbe6a0a84c843622cdcca4575ad7dfbaa1f70b81dc478e384a20a2c89bd238769b291950ca8b50c1981686377f398273c8340d5c00572237008c6cfe765173c9a8f5a46fc929fddc4cac4e74e6f553fa6e9b0965223de7272a8085358ca1663559dbf5548a3532585d883a378650775860e8259c6e40dc232513343986192121e9104d6d6c3a85616f43295cd35cfd1f2b978cc7d44c9ba41a26e798a916a145fe7f2c8713c678a97cf7eaaba5121326bd75fa6a2ad1093c294ab33e568ce053bae566b2338838241595509d5771cd28d96583c88d41869a156b59a5990b037baf7381388c3ea05787613831a4a56ea1c7ee8095d4e499e2fb03c3e5b99d3c381d7473eb7b97dc0b0323df437b094887a949383bb00cb50cb2e162e3412298aebca67f2d0a3fa56ca2817d6229cc969e18758e8b7ec800c92511f9c528757cd8780dc1e8ed8005f2373b701172ad04f949dfeb20bcfdbd43e45a09ddb850463e874"
                   },
                   {
-                    "X25519 (29)": "7e62bb409a2f700a95fc969a1b709315d7b50583e82f12f5ff08a0bec6242f19"
+                    "X25519 (29)": "e4e3728a295165ad857cc65f73044bfe480d07291dfbf85524d4cca9ecc06423"
                   }
                 ]
               },
@@ -1361,7 +1618,7 @@
               {
                 "name": "supported_versions (43)",
                 "versions": [
-                  "TLS_GREASE (0x6a6a)",
+                  "TLS_GREASE (0x0a0a)",
                   "TLS 1.3",
                   "TLS 1.2"
                 ]
@@ -1373,7 +1630,7 @@
                 ]
               },
               {
-                "name": "TLS_GREASE (0x8a8a)"
+                "name": "TLS_GREASE (0xaaaa)"
               }
             ],
             "tls_version_record": "771",
@@ -1384,8 +1641,8 @@
             "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
             "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
-            "client_random": "ab3504599998a66c1cfedaebf0e65fc8e52a17d345fb0ce49b598c38607ca7de",
-            "session_id": "4fa47dcba4862c1b3483ebf84da16a9ae0f8010b4b81c4977fde0ec6958186b2"
+            "client_random": "a4a2f1488c9608df1040c7507db43b6772bc18c4b0b2ba55afa5ac69c9b10feb",
+            "session_id": "1183f82cde45a2d07a92d0693f9f06b30c7fc6c9d79bab7927d647ba2aaa82e9"
           },
           "raw_http2": {
             "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
@@ -1585,10 +1842,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "1779069f055fa55a921cd713903873b1986809983ed029bb37b1a852d19c0173c79251028079cfa108a1ccac3a29d353edb95f9f6b255c2b942bc0084f1660021c1acf91ba0f0607a3455ff9dc4f9dc17664a1c61156292db221eef3a6748b5ed4441856e6871041100b718c764a017da37217c44b445296cb05d0a5bb57e88607c7f41b43185a970a483b17a3d5fc0b75169aa1c30ed6657d84ec73bca1297d97c8e841c9de866c7071ae8efa4287f65d2f56273f4937319c307d82b3cf4636a3d736cb9417b6c5a223c3af0a598074a2bdf9121ece03a8a6678e571110025651f7966fe7d12d97c49ab100413aea0c8b1a59cb362dc7daa30e8a72aa6b325b441648dc9f2ecca8758c37a297788d0224652b2ba2f743d0262f92a18c1fa1808619251819b2e7975a2138240c7a62a9638de1524457a23c79f5b94d829915d98924ba27bfaa4e2862c126aa328fa2582fe05fe3ac85e0f35fc4269c3aa93d2a8ac9843c79f7388f57c157308111450988dbd128fb7226e0053f62d18971261215f67aeaf620b310cff7b85c29594059a7b1efb187eb0298b9c05d7f923e5e59a0d9b5317d50a2000da1df93a68fc730482780c61962fb7231b2a4488de28435e69e008d8299e838a9093ba6028cc5154f36f85d2366b8eee8c660b743859927c8b433d95221afc862a4e041ab0b2d56a0b41720927e295f4a09548527c86e827167b9479af05d41cab957179c0b4ba1d4e31b763a38616506b9d9c462d74a7c8bc78b070da7402144e1ba474986a590a190e37be2c13278543671a46320870fe4685be458be701622425b3366f697117b8770585150510075559d61da353d7a9b84cacb2e0c2acda861a85c6b14051309c77bac1152a9cbc3063a2d7b113a7dc38ddd7c30421a18c49c7b9204aaaf7b3822a8771fb97c561284057b9083a85953625920133929055d46727eb4f54ab48cab9161c18513a0c1a38fbd2a79360059f15a8c3d305bd7081d02a36710964ab5007dabc90bf2aa4a2888b48de953789881b8224ace6b461b49c73c72186ae62fe8f81f52a7b21479649e30810834171b471fe3e4a67e179ca1c60b9f35cd52626ab6a9054001c31c5724d20b421158be1b9141092bbb97b89cbf53c877c321899c38dfb74c2ce6200c276f0c077829820c40794fc20856cdb09002e866a23460c28b9b163a44f2ab53e8f9ba81bb72aab35ac0d3c4d2736adf7b3aaad3ac1e4a2abdc891b2e4c23116a90a5564b0d0ce9d5ab175622cd05ba5a4c5c890c5b43e18842622a4bcab6c36c908a38aa93983980d08be1f7a37021357f3ccc3b0c702d869101d385b0fdca948361730d011acc134dcfa59bd6139a225abe8975072f41910e37d4bface9ae844125649c00b44c04a84ccc738236c74224b7650d5ad5b5bbda41b6565d443d86969154484e75950168a41a9b8473844a145830232c90c0d3549703a07447b7727b3a40c76b002cc343e099beb17bae99b065a9a82ba11b2a779bd72130655b04b6369aad0792e27eb88cae6118d95403540988fbbaa2537939e3098aa6024f252327467ab16e5ac3a539c900687d9e85d6ba5ad506862ca6b8854db5c31e23ff4b94122c6205f7eabd520d044fa54047c736fc5745d977db2a1785d91cf23e29f1d9a2e7dca9dd811a9951b79d6b7aaa24b9361e58fb4357ad7b56f7b2d2fe205c6a87ff067"
+                  "X25519MLKEM768 (4588)": "31e378dfbc838ab6afe89a0913dc98d944666d3825cc89b9d5579a0c0a4f3239abde055f10a13e5c5c01781821203309a1c98bd2b27090725422e9c46f54b0414a985e3aa5a9c21da530cdf9b82fa855518a1504898a3399c443d503533579ce4072bbb7637f693c2a9f260f0b4cadb3006158a8c3a5567942373020ea3161891bfc474b008a647ccb1bcc6b7cd2321334c05a0ecb23a0f7b6de18a0ca795521ba8db6cc432e643ac03950441087a3e45dd3bc46a4c0160c3313a921a6199a040edabfa48a9b7b8203087075e582afc7f1ac1dd466e3ba231ed48d7be24689c2168f8707ea669cb86badbfa1522d26978d84c66199068e6394d55ca51d13a7c2590179ab7f05d4bdbb3416ee44213c55b2e7113a5fea18de70770a620196d689e7d5a81eec446972be842ab4bd1458fdd911a034b8686878fd575bb1cb9b6ce4772b51a69f614fa3ac19ab32c8d3716e3412a0c56441545036edccb8e59114323a3631153a8f48cc2e14c2a6101d1c0bc6865a7b7e321db7f8457ddb215905165bf70a9e497fb6d52e864c3b7903408116ab5efb7f71c6a7503b813c5c190085cac6375b93f031f4f441fba0be4609b853831132826999c0403ec8080a833b4a8388dc8109f21a43c7991adc154751622a657997b6eb5d525b7903a040232385f7a965e3bb689858859419c3b56739396bc36e878f143b9f73d85528aa4324380996662bf1c64e7aa1c7ba2845dce85ce521b6c9601d98d2aa0f9696814c494aa69baa313dab5ca3090a43ddd19286bc47b72ba5ad6b4c81fa58057b7a34933a8fb31ca304561e2800952c9f6ba34e52c4378fe6157ff27d00ac08cfd01f9aaa939db6844aaa433ee7129ea9255067a6820cce98db4d759b31d59b9c9dc3b2b290af4667ccc28bb256ca4758133c301147a3b11a6a963f9da47b1ea8aed28c2085b148498ca5114b415d306d5f1b0cc776635dc06eaeaa6ed0917efc17aa34517d1ba06cac82a0add889c8e363b7649392060c4bd63a8ec79af8ab249e00521a024607155413cb79ff006539e3c28813aa372c98daf4036cbc201ab93c003bbc5b6ccc56ea366dc0a30954a817f4591f7c260442a12640bd03b243f2043d870b6d08a942c09bb1372990f76b4f64612a7e91c62a0089cc64a421d968887c648f854402e935104910a16269b5e702edc149677759b48a5f8598121161cac4a5a7d3789acf5a0c84bc9d3d3a406ce54fceb7022cb91de76873c3252f83736d6521a1ce37c904cc6a00d969c8721d5e19c6ed2a79e7346a142b6429c1478c0248ec2c7884acbf1533229387458aa0c8f4a69978669c3ea651ec8c4ba3a326a0b2646e75b5b0d41478ac974470cd98a207ca9bca5cbb49f4930a0a24a7a7eab3f767c964e0869b50c5a869635a613a057a368f2667d44a4619215f6a22335c84756adb13951a6cfbd6cd3ec4cc06a90fd5da129d78a3c41aa48987878bdc9c701037232a346a09b4a8165b8b8c088c9acc2836460f92374a0544015015727aad702cbc04f870d11b02aec6cd9b17b2b5f1b61a278582f3ac92ab88037576e436609ed65383d4cc47f85cf7b28038a114b78b201ada5d8cb711f49287e6257d269354d8e5d02665b9bcb4dad55d3cfb48915cffba748a4588184255ec8183d739416ebec0850482c521a6cba56844571ad48ece12fbfe72a1549122b5285490f9ca44"
                 },
                 {
-                  "X25519 (29)": "782c6d88e38d8f456760c7b82e421125aa18effb1b3cc4aefbefeda0f58c9350"
+                  "X25519 (29)": "07e73a56a061fafbefb9e06a026f4c2ed28862bfa01d3763d2ef5b3ad88e5517"
                 }
               ]
             }
@@ -1601,8 +1858,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "a6e1f1c3d16a1f19e09779bfc712e53ef5af1ffd53aac45d192b5a270fe34fe8",
-          "session_id": "93433168e8b359d1987041ae52b3d3921516b70d0bc0c15141abf974aeae2ae9"
+          "client_random": "7dcf12fc50a131787b5c3ce92ca2ed8fddd4afec05b79b3baf3cf387a2f5856d",
+          "session_id": "35104b4f8fd40d9fb0794ca05c4c4a26f53bbc0a535d75f7bbd8d219ca1fa458"
         },
         "raw_http2": {}
       },
@@ -1619,9 +1876,9 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "68.220.62.177",
+      "ip": "135.232.200.196",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "San Jose",
+      "city": "Chicago",
       "country": "US",
       "error": null
     },
@@ -1632,17 +1889,273 @@
         "tested": true,
         "certificates_found": 85,
         "historical_ips_literal": [],
-        "subdomains_seen": [
-          "*.like-manga.net",
-          "like-manga.net"
-        ],
+        "subdomains_seen": [],
         "error": null
       },
-      "dns_history_resolve": null,
-      "shodan_probes": [],
-      "direct_connection_attempts": [],
-      "candidate_ips": [],
-      "candidate_ips_excluded_as_cloudflare": []
+      "dns_history_resolve": {
+        "resolved": {
+          "slikey.like-manga.net": "172.67.179.141",
+          "likehua.like-manga.net": "104.21.35.202",
+          "s2likey.like-manga.net": "172.67.179.141",
+          "s3likey.like-manga.net": "104.21.35.202",
+          "s4likey.like-manga.net": "172.67.179.141",
+          "s5likey.like-manga.net": "172.67.179.141",
+          "s6likey.like-manga.net": "172.67.179.141",
+          "s7likey.like-manga.net": "104.21.35.202",
+          "s8likey.like-manga.net": "104.21.35.202",
+          "leklikey.like-manga.net": "104.21.35.202",
+          "templikey.like-manga.net": "104.21.35.202"
+        },
+        "resolved_all": {
+          "slikey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "likehua.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "s2likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s3likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "s4likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s5likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s6likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
+          ],
+          "s7likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "s8likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "leklikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "templikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ]
+        },
+        "unresolved": [],
+        "error": null
+      },
+      "shodan_probes": [
+        {
+          "ip": "142.250.184.196",
+          "tested": true,
+          "org": null,
+          "isp": null,
+          "country": null,
+          "ports_open": [],
+          "services_sample": [],
+          "hostnames": [],
+          "tags": [],
+          "vulns": [],
+          "last_update": null,
+          "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+        },
+        {
+          "ip": "142.250.186.132",
+          "tested": true,
+          "org": null,
+          "isp": null,
+          "country": null,
+          "ports_open": [],
+          "services_sample": [],
+          "hostnames": [],
+          "tags": [],
+          "vulns": [],
+          "last_update": null,
+          "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+        }
+      ],
+      "direct_connection_attempts": [
+        {
+          "target_ip": "142.250.184.196",
+          "port": 443,
+          "sni_used": "like-manga.net",
+          "tcp_reachable": false,
+          "tls_handshake_ok": false,
+          "tls_cert_cn": null,
+          "tls_cert_san": [],
+          "tls_cert_issuer_org": null,
+          "cert_matches_target_domain": null,
+          "http_head_status": null,
+          "http_head_server_header": null,
+          "elapsed_sec": 10.01,
+          "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — على الأرجح محجوب بجدار ناري)"
+        },
+        {
+          "target_ip": "142.250.186.132",
+          "port": 443,
+          "sni_used": "like-manga.net",
+          "tcp_reachable": false,
+          "tls_handshake_ok": false,
+          "tls_cert_cn": null,
+          "tls_cert_san": [],
+          "tls_cert_issuer_org": null,
+          "cert_matches_target_domain": null,
+          "http_head_status": null,
+          "http_head_server_header": null,
+          "elapsed_sec": 10.01,
+          "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — على الأرجح محجوب بجدار ناري)"
+        }
+      ],
+      "candidate_ips": [
+        "142.250.184.196",
+        "142.250.186.132"
+      ],
+      "candidate_ips_excluded_as_cloudflare": [
+        "104.21.35.202",
+        "172.67.179.141",
+        "172.67.195.78",
+        "172.67.210.176"
+      ],
+      "candidate_ips_excluded_non_public": [],
+      "candidate_details": [
+        {
+          "ip": "142.250.184.196",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "www.google.com"
+          ],
+          "first_seen": "2024-06-22T16:58:25",
+          "last_seen": "2024-06-22T16:58:25",
+          "internetdb_tags": [],
+          "from_cache": false
+        },
+        {
+          "ip": "142.250.186.132",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "www.google.com"
+          ],
+          "first_seen": "2024-08-06T16:40:50",
+          "last_seen": "2024-08-06T16:40:50",
+          "internetdb_tags": [],
+          "from_cache": false
+        }
+      ],
+      "candidates_from_cache": false,
+      "source_status": [
+        {
+          "source": "crt.sh",
+          "kind": "names",
+          "ok": true,
+          "status": 200,
+          "attempts": 2,
+          "elapsed_sec": 9.76,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 1,
+          "ips_count": 0
+        },
+        {
+          "source": "CertSpotter",
+          "kind": "names",
+          "ok": true,
+          "status": 200,
+          "attempts": 2,
+          "elapsed_sec": 0.31,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 8,
+          "ips_count": 0
+        },
+        {
+          "source": "AnubisDB",
+          "kind": "names",
+          "ok": false,
+          "status": 403,
+          "attempts": 1,
+          "elapsed_sec": 0.25,
+          "error": "status=403",
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 0,
+          "ips_count": 0
+        },
+        {
+          "source": "OTX passive DNS",
+          "kind": "history",
+          "ok": false,
+          "status": null,
+          "attempts": 3,
+          "elapsed_sec": 72.17,
+          "error": "like-manga.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=9.95874840099998); www.like-manga.net: انتهت الميزانية الزمنية قبل أي محاولة",
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 0,
+          "ips_count": 0
+        },
+        {
+          "source": "HackerTarget",
+          "kind": "history",
+          "ok": true,
+          "status": 200,
+          "attempts": 1,
+          "elapsed_sec": 0.43,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 12,
+          "ips_count": 12
+        },
+        {
+          "source": "urlscan.io",
+          "kind": "history",
+          "ok": true,
+          "status": 200,
+          "attempts": 1,
+          "elapsed_sec": 1.18,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 1,
+          "ips_count": 14
+        },
+        {
+          "source": "SPF + MX (DoH)",
+          "kind": "live",
+          "ok": true,
+          "status": 200,
+          "attempts": 2,
+          "elapsed_sec": 0.18,
+          "error": null,
+          "note": "لا ip4 في SPF ولا MX داخلي",
+          "api_key_used": false,
+          "hostnames_count": 0,
+          "ips_count": 0
+        }
+      ],
+      "discovery_verdict": "candidates_found",
+      "verdict_explanation": "وُجد مرشَّحون عامّون غير تابعين لـCloudflare من مصدر حيّ واحد على الأقل",
+      "budget_sec": 120.0,
+      "elapsed_sec": 82.7
     },
     "direct_origin_access": {
       "attempted": false,
@@ -1653,7 +2166,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a42fdb133f5922de-SJC",
+        "cf-ray": "a43008caec3c0042-ORD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -1677,7 +2190,7 @@
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
       },
-      "cf_colo": "SJC"
+      "cf_colo": "ORD"
     },
     "curl_cffi_probe": {
       "probes": [
@@ -1686,7 +2199,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a42fdb1359d3d001-SJC",
+            "cf-ray": "a43008cb0df09129-ORD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -1704,14 +2217,14 @@
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SJC"
+          "cf_colo": "ORD"
         },
         {
           "impersonate": "firefox",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a42fdb135ae4238f-SJC",
+            "cf-ray": "a43008cb0f89b271-ORD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -1729,14 +2242,14 @@
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SJC"
+          "cf_colo": "ORD"
         },
         {
           "impersonate": "safari",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a42fdb135ccdebeb-SJC",
+            "cf-ray": "a43008cb0a202c32-ORD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -1748,13 +2261,13 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.01,
+          "elapsed_sec": 0.02,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SJC"
+          "cf_colo": "ORD"
         }
       ]
     },
@@ -1787,14 +2300,14 @@
         "like-manga.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/like-manga-net-8201-screenshot.png",
+      "screenshot_path": "diagnostics/like-manga-net-5839-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0b52376b-8a31-4aed-adc0-c2e5d45640ac",
-          "blob:https://challenges.cloudflare.com/2e1e1cf8-22ea-4dcd-bb03-abafc0435acc",
-          "blob:https://challenges.cloudflare.com/96f352dd-2ecb-4a4f-b114-e3598a817437"
+          "blob:https://challenges.cloudflare.com/3fa7ca15-a134-476a-92c8-805efe892fde",
+          "blob:https://challenges.cloudflare.com/4b0eab1d-456c-41a9-83db-80bb66118692",
+          "blob:https://challenges.cloudflare.com/88622e3e-5e6f-403f-b843-355e46300861"
         ]
       },
       "adblock_wall": {
@@ -1840,38 +2353,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.07,
+      "goto_elapsed_sec": 0.1,
       "navigation_timing": {
-        "ttfb_ms": 5,
-        "dom_content_loaded_ms": 65,
+        "ttfb_ms": 9,
+        "dom_content_loaded_ms": 88,
         "load_event_ms": null,
-        "transfer_size_bytes": 4134
+        "transfer_size_bytes": 4138
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.96,
-      "total_probe_elapsed_sec": 83.34,
+      "wait_for_images_elapsed_sec": 1.62,
+      "scroll_elapsed_sec": 1.98,
+      "total_probe_elapsed_sec": 83.53,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a42fdb13cd597b82-SJC",
+        "cf-ray": "a43008cb99fa115c-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-X5KzFWikCdqv3dL9PfkrLK' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-Nz0mQ8w76ndVf9eCVqC1eo' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 02:39:11 GMT",
+        "date": "Wed, 30 Sep 2026 03:10:24 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=45Lj0ykU8DzesHF%2BXXcMGMVYIvMOQHCikdYBw3YB87GSu6TqVlfvi%2Bve5wViulQxqll%2FzZADRxZ4mgAG5k%2BriHqOyGdCzOHFgXfHkUZSD9PKQSoYbG%2B6SdA1MfKUkvmt6w%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HQoZGSTSk5zmL2eldjJsghRk6GmYLiR8mta2R6ayYAYQlVmzicQ9sNtPN55sSRwp%2FhKTK4xW1A8X40jMt5pGfnpjrOIpy0FJQlPlfgEj6hRwHpqbbiUnZr62qCmc%2BrD1Gw%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a42fdb13cd597b82\"",
+        "server-timing": "chlray;desc=\"a43008cb99fa115c\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -1969,14 +2482,14 @@
         "like-manga.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/like-manga-net-8201-run2-screenshot.png",
+      "screenshot_path": "diagnostics/like-manga-net-5839-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/08a44dc7-3751-4be5-ac4a-4deb03bdc68b",
-          "blob:https://challenges.cloudflare.com/09fb12e0-79bb-4ab5-a976-12cc0ee39657",
-          "blob:https://challenges.cloudflare.com/3569d31a-5413-488f-a7a2-398f6ee867da"
+          "blob:https://challenges.cloudflare.com/4a3062e1-3aef-477f-befb-91b6a4c63a22",
+          "blob:https://challenges.cloudflare.com/76ddf6ec-d028-48d6-a046-0234ad6485ce",
+          "blob:https://challenges.cloudflare.com/811cb2e3-dbf2-4f62-a782-6ad87021949a"
         ]
       },
       "adblock_wall": {
@@ -2025,35 +2538,35 @@
       "goto_elapsed_sec": 0.07,
       "navigation_timing": {
         "ttfb_ms": 6,
-        "dom_content_loaded_ms": 64,
+        "dom_content_loaded_ms": 69,
         "load_event_ms": null,
-        "transfer_size_bytes": 4142
+        "transfer_size_bytes": 4138
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 2.03,
-      "total_probe_elapsed_sec": 83.45,
+      "wait_for_images_elapsed_sec": 1.62,
+      "scroll_elapsed_sec": 1.78,
+      "total_probe_elapsed_sec": 83.24,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a42fdd4b3a737b82-SJC",
+        "cf-ray": "a4300b049987e566-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-25j1THZb7kevR0sKVLeeWx' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-zRysiuGWiVDrbf5xFUzK7f' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 02:40:42 GMT",
+        "date": "Wed, 30 Sep 2026 03:11:55 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9Zgm4BUpm0ILiXjLWVSmQxn9lRkvf8flEJHeIg1iFVnGWVwYpgQAc0Q2jwKlTRfq4cJh%2BdRVQmX%2FvOwszWbnCJRxNAQUJO2qZuQ4VDjKbOG9pNjF81iTrCmRZrvjqL9kKg%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JUE2Z3iF%2Fy0zYE3YusMtJP5FAEk56ksIzYevt9%2F8T4JBiH5uGbgELcO9m%2BJFsL28QFK2YeSsdEzKwI81sbuo4kr6q93PImH2xvLCLe6CI5OhWc0qzeQt173c9ML7IMgwKQ%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a42fdd4b3a737b82\"",
+        "server-timing": "chlray;desc=\"a4300b049987e566\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -2127,7 +2640,7 @@
       "target": "page_url",
       "sample_url": "https://like-manga.net/manga/the-villainesss-match-is-too-perfect/2/",
       "requests_sent": 4,
-      "elapsed_sec": 0.15,
+      "elapsed_sec": 0.2,
       "status_codes": [
         403,
         403,
@@ -2154,7 +2667,7 @@
         "protection_category": "solvable_challenge",
         "challenge_detected": true,
         "resolved_after_reload": false,
-        "elapsed_sec": 76.36,
+        "elapsed_sec": 76.9,
         "error": null
       },
       "source_url_leak_probe": {
@@ -2167,13 +2680,13 @@
       "trace_url": "https://like-manga.net/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "465f262",
+        "fl": "1274f32",
         "h": "like-manga.net",
-        "ip": "68.220.62.177",
-        "ts": "1790736211.000",
+        "ip": "135.232.200.196",
+        "ts": "1790738084.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "colo": "SJC",
+        "colo": "ORD",
         "sliver": "none",
         "http": "http/1.1",
         "loc": "US",
@@ -2185,7 +2698,7 @@
         "kex": "X25519"
       },
       "error": null,
-      "elapsed_sec": 0.03
+      "elapsed_sec": 0.04
     },
     "alternate_paths_probe": {
       "wp_json": {
@@ -2280,10 +2793,10 @@
     },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/like-manga-net-8201-report.json",
+      "report": "diagnostics/like-manga-net-5839-report.json",
       "screenshots": [
-        "diagnostics/like-manga-net-8201-screenshot.png",
-        "diagnostics/like-manga-net-8201-run2-screenshot.png"
+        "diagnostics/like-manga-net-5839-screenshot.png",
+        "diagnostics/like-manga-net-5839-run2-screenshot.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
@@ -2403,7 +2916,7 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519 (29)": "eef90fa8dee5654d84a8f6b998b2ca661cbd65c2119bb398f37d7a8d758b4e78"
+                  "X25519 (29)": "f6c3e4503e0e08c57e9fb0c344300ba24a094cbc5117aa60967c36c72ca73940"
                 }
               ]
             },
@@ -2420,14 +2933,14 @@
           "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
           "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
-          "client_random": "91b8daef1ed91cddbd02bee00802d0a5426a3fb355e287663ffb6d1c77fbf8fd",
-          "session_id": "a7f1b5ee7c387c334c5b1c82511c3a03172e039cd82ef78aa3a00cbe54870897"
+          "client_random": "0b153596a8429b681c115560e40d02170e66fed57036f2ef8b6ad4e2d82c2ab8",
+          "session_id": "a0ecdc96a621cfadaed8c76d4cbf7c433ffd1f38a61156554bd50c7520b4e5e5"
         },
         "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "ja3_hash": "2ae0190c4636b2c2210157f6872834ab",
+          "ja3_hash": "1b7338428af442872a87bfcdf3ae1a05",
           "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
           "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
           "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -2455,7 +2968,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xdada)"
+                "name": "TLS_GREASE (0x6a6a)"
               },
               {
                 "name": "signature_algorithms (13)",
@@ -2474,21 +2987,44 @@
                 ]
               },
               {
-                "name": "application_layer_protocol_negotiation (16)",
-                "protocols": [
-                  "h2",
-                  "http/1.1"
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
+                ]
+              },
+              {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0xcaca)",
+                  "TLS 1.3",
+                  "TLS 1.2"
                 ]
               },
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x8a8a)",
+                  "TLS_GREASE (0xcaca)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
                   "P-384 (24)"
                 ]
+              },
+              {
+                "name": "signed_certificate_timestamp (18)"
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
               },
               {
                 "name": "status_request (5)",
@@ -2499,51 +3035,36 @@
                 }
               },
               {
-                "name": "ec_point_formats (11)",
-                "elliptic_curves_point_formats": [
-                  "0x00"
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "0000010001db0020b5252c0e42716fa4781d05d513e077da77240dfc38722a2c1afba6ecc494a60200d00a9eb18e3d4c5096110835f71de28b0a69c3a14add287ca6873d62f88c141d8f01d14df5b26fdfadbb133f1461656facc1b1afb1d7e86b59168c8c264787ff0cb1238dd256551c4f9f39ec592eec5ac385dcd736af67c33b62013c21babc5db26d7cf4241679b0f4b297d371c7723594ee8b72b6c40f3567934a8f9414d35cfdf34ee5ff1890b30aa7d070681c2cbacef19f893e490feb6698744d6e696c7e7e90bd149852bb38b6bc3a6bfd5214d8f7eb54239271dbb17ecad9fd2c4bcdefcfdd14fc451d195a1ae517f6810f756d41"
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "session_ticket (35)",
+                "data": ""
+              },
+              {
+                "name": "application_layer_protocol_negotiation (16)",
+                "protocols": [
+                  "h2",
+                  "http/1.1"
                 ]
-              },
-              {
-                "name": "extended_master_secret (23)",
-                "master_secret_data": "",
-                "extended_master_secret_data": ""
-              },
-              {
-                "name": "psk_key_exchange_modes (45)",
-                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
-              },
-              {
-                "name": "signed_certificate_timestamp (18)"
-              },
-              {
-                "name": "extensionRenegotiationInfo (boringssl) (65281)",
-                "data": "00"
               },
               {
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0x8a8a)": "00"
+                    "TLS_GREASE (0xcaca)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "e872130b82522ac85178743de7557f88284dbee47d1053a8f67559a3426f0afc5f73b22b6b5262adc2962baa6b9d15220381351c22465b44cd4e9385a49a26857ca2d0405f1595366f1b8826637c68e34d51ec3139bb739f0bbe54db4c4611493ac56b5168a2d1d793bfac1463cc8facda3b79d10adbd47e9df476780b0b82b634b07a2c9bdb27e9974c2ae34ead29984dd79f1a6182ab129bc92613d0a085c4959bb9572dd8dc716e9a705fc810d1c1106fb43017a462d3ac7e63d136b039624f083387f0226bbbc244328fe2524d9a8260f03c309f01d0018255be929137046653234ddf13b5981504be9379dc5b9d09d6a3501734d0c23871268ae4d42353bca22a300bd22457e44469d3b8134aa2a2a07885c41409a0e213dea7abf9ecab6c8ab48ada80e6398c0d4267c4194a884720de6c64f625588d388646d377407a44a671456b6a5392a0afffa49bb3251c251c8cb5ab86524a0d0aa31c2ee8b214e0b2fbb20342a8a393aa6048f952717209980c15444bad4f8c8f4308497e31693ac6b99724b20af116c3a08ff6a4aa05f5c2d5100f0fa434da06a889a54b17756ab8b142c5459eb9f0b231fb299b497421f346d6145e4cb2b39ee6c78eba4d665545f355504fc00617d77ce9138077566c2ed46c4f22364dd22949c6895ed14047d7628a096c21c9866d447c8bcb7d5a14856e607fd1c3c36648aaa758c7f3db2b3a5378a40100b40851db70c522583366f30170b1aa03015f6674c64175846b516364649c089b5a0ed2150b8ccc7d579c59abc2aae9ab9dd010829b5cbe18cd6f9115d5b3bdf3d08e70da9f59785b82dc3c0907645fa2011bc35e9fe7b6d8aa4d6172b2b3553ab58414e583ab3ad485de432b06d04f51989bef51c510ba96785b2e83e55023c42884cc87afc1a45cda5ed54c89c0537ec8d4aa56cb978c588bf65733c2548d63512806d17908618dd0028350e8ba8adcbe33098021b41502e36fcb565c91a136b1f0810f29afba0c0d1aab0bbc73ad4c9344d2556b23fb73fe923b5d26aebff134b59a08f088aeb53c032ad0c15d778e97484934db0b0dd8b063332160db97bb4b9903fc3b2a739117f39cffeac05e3785e8064ef2b96074f10916748cfb2226a2d69842a1433ee9bd3f314f6513315f82b7e7851cb2a4299973a065db012af49fd3bb601754bb44d64e3c7557dfc269f4849b920322572c65d9d91eaa345037b31433aa065ed45d4830b209434f045a8f2ba33c58929a1ea01db92980787a32972a2820f8a3af5c482ea34b5c124b9804b36b0cb7a186456cac0c473116aa763f5942a666b9756d7aabcb767ce235a2818885191b3315d7a9037a725eea2a81421c45a8ac046c818539cecd384256209b7d38b0ade6552608975ce9b3ee1bb699d36a4d38467eeb7ccbfb6b62a739a3cc6232138909238ec2c145949c0d3373ab39ca6cbf9cb3def13cde9a4cd6921c529690aaf094642b7955a29dcabacfaa71511937210ce524c2977cd3b258f733207fa7b904cb2fd9a76bc61576a79a82a4b7b6ae6226ef97680e541dac55cae5090cd45c2f3315675832a29b4436519b3f433b5c8f3c96ab4cb406752fc5b339c8f8622882182e67272814f37d65216a96215cec404b724e51192ed726ed674eac9b16cd1fe1741fdc6f2654aa31ee27ec6565923cd781d0384f4f23eda10ef98021fbe45c961ca00b"
+                    "X25519MLKEM768 (4588)": "0658517d2b1edf327c0b2a9dfde60b8ae34c7419ac54e88386d44da223998ec569bd69317106506ea79cf3914957e2ca79368a750a3255b44c97f195b30a72c7403b41591fd56b1a15e427989c0cc1412c339b60671589b78106d304319d2bbd2da8421da196a4c59122eaae0ce00ddb5a37d745a89ca6ca83b6b03101c63088501af8062c0c0eb515c218e4a54f8cb2adc296d7e8c0a6d7a347980d45c6571dd9b726a3c5057bba9d7c8dfc0c937053726c734641326d2c20689f41143435080469a37ffcb48f5870d9e9a19122215bf95ac0e9b45a22ab2a122b8f35006e8184b3213d7f6a4ec13c5e53696ee049be8c2224b22a67509b0a2313971fe434b45492d71399133bc4850c6ca49834f278279bc8517b7b59632262a9242eea54632389bf32e9a677f95766790c1326abfde91aeb6b0d2bb2264e338dee006c8bc92fcc92776223590ad1b0986809dfe07397765ea811875012a0d7e30c623c19e3accd17c8b8088439e8b73eca50390db5b11960cb1cf82b6543ad9b57cf698c2887fb1d97d8187264c21a7708cb823e2eb42c116726acc6a911423b109a2151babc52d4254c86158ecac45631332a8c394e245ba30892bc46bdb5fc567bab3eee4cc14cb909c9d46d2a004c1dc94723f08c963a99009274a927aa7e644dd8ba76d4126cbe221c37a3a8fe7c8a124b044fc55ac2a87633a8350a97cd6f40b9146805a1d01b1b1bae1b63344ec597276b468d5b8fd54a0e4931781c7b850fd136b85177cf91c9e994c869ba2f089378d2511e524a15e7306dd11a9e2e1acac0858d82499c738b6e8064b38c11b34f98084175b9a6a88330961fce64aab7209749ac3e80a4c2d6f98989774052817522d6b43a6757b492a3487ba93926a19c8744926a6cc3463d19cab03cc64bcef005b1a3201fc14aca2895f13a1a8d299f6f27a1641601a580678199ad86a5aa4f35adf361794a9136d72b52cd088b5ac4269ec2c983d8646f726ef4f9a7e3a54e42d52a8c5493ea892cfe769ac157b29ca959f0ca2ab51a42c95ab6bb33822b56bb8b6cca29260072827d5099b16da9935949b0c2a53ec443b326fa1661e692f66559feba3faba95a7612beac710be7ec34b1a1c4f90159ae05b0d97b1939360b6e50be299c874591853e829cfed927074a5e267584e2348086016f95943d478272e69ab76bd11e668c06a8c2b133889aa77c97e6bb10af116d1501a7a20c796221ad7564c81c798e430bb4ca429164051ba341b169b17c70da4d32a0c4cbeccf0f045f5ef011fa63732c79989492b3990c0a0f9a537739108c400b7a46841fbca9a3140e7af03a845cc7f164c504ac3a2c71687f17b988321e20c211f59558934c0bd6271141778b1b3069e5678bb109cb209132ba23ab7fe0568072778c14053c1459442449c590a0c92b2926704f4ec0c60325573616a50e659203300d7825157e0473d3a9ae9fa949a7aa8624665caa34c787c410f42b8559ec5dc2b84e23db43ddb07e855c9eaeb0cb0cd196e5272cd043c698c366f1990440cc641c6b97fa69a6f549225284342c92a280220bd7f63626a548cf127368863eded9c844e3ac766cb0807a447bd91ea5daa716873680e873b1576278fb902e3afa59a0208e1e3ad0bde8a31f8282195b34b3d739e7918f744eaa4c3415cca726ae6c3d43ef4ac04697bba1a7035cb20afc38d9b609bfde04"
                   },
                   {
-                    "X25519 (29)": "f4ca6e2e02647a02a4d9e09a3844d500847321c4a73759e6762751b623d53037"
+                    "X25519 (29)": "45bccca4eeba28aeed024e6f00893d247d84545845d708bf12565914bc95ad07"
                   }
-                ]
-              },
-              {
-                "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "0000010001af0020301826cf430e74f5bcd632eea55366ba4d43d52c5ffeed7433a4e9cad4a6561a00b093a48a2f118a417c8964af8a83bff2d972dd8eba474a5fb9b5d88faedbfc1053f7f073ef654cd89c06341d3968a05c41fbf29b4d18dcc99b6c60591cc22a1ebcc212311db610e6778e4e08d8ca9a8c30e9dead5347693a4fd891dbd60c56366039beedb2c52a3566d55cc0328de60d19df54a9cba273af20178bf4a62203075475dba78842e5304c3f4427dc8ef76943a8f8948abf8a40c278608e36a68cfda91602046da1405e634f360f1b905166d1"
-              },
-              {
-                "name": "supported_versions (43)",
-                "versions": [
-                  "TLS_GREASE (0xdada)",
-                  "TLS 1.3",
-                  "TLS 1.2"
                 ]
               },
               {
@@ -2559,27 +3080,19 @@
                 ]
               },
               {
-                "name": "session_ticket (35)",
-                "data": ""
-              },
-              {
-                "name": "server_name (0)",
-                "server_name": "tls.peet.ws"
-              },
-              {
-                "name": "TLS_GREASE (0x3a3a)"
+                "name": "TLS_GREASE (0xcaca)"
               }
             ],
             "tls_version_record": "771",
             "tls_version_negotiated": "772",
-            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,13-16-10-5-11-23-45-18-65281-51-65037-43-17613-27-35-0,4588-29-23-24,0",
-            "ja3_hash": "2ae0190c4636b2c2210157f6872834ab",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,13-11-43-10-18-45-65281-23-5-65037-0-35-16-51-17613-27,4588-29-23-24,0",
+            "ja3_hash": "1b7338428af442872a87bfcdf3ae1a05",
             "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
             "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
             "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
-            "client_random": "7fcb3e2ed52bee764763f79cba90a9b9002e8c574f22aa3c71f4f03d235f1835",
-            "session_id": "bd73ab506669936ee36637817ea9a5a802282f1435c3c696bc477701ff00a002"
+            "client_random": "7b01b882a27a43605f48ad2b32168e049aa2118d4110fdf03bf4aa999b7a5ef9",
+            "session_id": "2b2a42ac36acfa35c92a61a88c95ebcc49c18db307371c5549f6320a708545dc"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -2732,13 +3245,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "X25519MLKEM768 (4588)": "7a7b5ef1bcb76e92c766ea8bab6c188a5484a37b454454a2e6196f558306ff4b1e702c13b5f5bcbab9a0e2e92c4641244446b6258b7e3a5c44e12001eb4ba6d3d35433aa44a40173dbea4bd91ba1df776a5cd18f1298184b79cb05c4733e04809f87714e351f1ab154b4312893a21302b42e630496b12a0a05132b53c24d53b52ced5aba35c4b8b7f736db424fc48094ab516519ca0175e680b708adc03a93e85641917549f11abb068b78a2e5a0cd0079bf80b1cf894d3172028b1a34a155839520c836d451842ba3ea3c8c830534766c23ad07511d05729ea5b89ce1c8119183f8d89a588c6bf64938e78ccfb9b095726b22482a51acb43ec285465dab9287d48e2489465b7808ffe65dc0749982c6cb3e130845c90c7e9c0c6a3a3f6be763800853362a3ea5f45486479201d70cc472773b2672d48670889a9bc681464a5a3fd9bc7dfc5b0b2a643cb587b8c2249b52a2984739bde47b557eac1b9293b16e0450f5555abe067cc6351e7d70c5c6375706032d7c733039bb23cb220ba6c55f846717f344b234c0b7d88a74b1900b504019393169ee1687345423406c46387c2521173ca429a5a50526181a65373b54e0f39c61c5a4cb23b5ff85c6d2296ccd495f6a08629c0c885f17044ed2bf692876e4f6a2bd7a87a9d455e7c305cb7cb3df2a10e1799d44a18544730bf54b819f4931a0b94d77fcbc9160c27dbc33395379fe825d945572aef79e8c85195c6039193bbd431c2dde74651a269a4c44414e2c7f6e063f061ac0551019ca2c51f88604b1089612dcb7efe90c83fbbba531ca36f934e9548a30787d5d4893262695d6018474aa4b1e9b18e6cb7b8456a81f0b0b9f14b754aa96faa48396507e39ec204f6c328cb979f0a7a91b0b440e941b69d1740356856e4c5c3c986f58a95f5ccc227c0800fbe19fcdda52c43a54d2902e7031cbb1b025a1a434d1917d0ab700a47696946281bb915ce35596335b219e2a425efba4a8a42cab6675c33c84a49248698b7313c2b03895842da07fdaa2421b9a55331c26cd9c2ac04a057a79bc82806a5f651be6556c474a20df86239793040f603faca9459786a3854997a696a40ec4b6a01aba6f94b13ff33fca707fbce97220f44f031c3ec7e92661500e1297969c727d288114a0eab4607b5e82464b0f47b8bb0bb448f2b6207949a265c06ffcc3a6590a2660828bb168669208e9393f0bb84f4e594c580778b750cf5da8c8e02232b127b760a3334185429ee020224c69ab4bc12f95b32914b7ebfab4ba768e964a3a3a190d4e8196fb4b770f320c0911954a7cbbeac5c34facb4e4380a28a532c91964cbdb9604d45f56db3ce0405357c02055e7801ef8415f43336b91abe66abfc1f7c2a2b6069dd8aeda36732e21afef774ca52094d91ccc66985c8bbc7001774c6e4285cbabc64e4a1fb5569d11e66404971ee5bca16d044ff11cae098ccca1eb5ea1544215f11baa95a7a24b5c157c3c915a7b9127afadd1a57bd9aac5695825cbb0769ab5b5c43b2c1399279aabf6241caf4710248c68d368ad16119df26011336c3824622feeaa716a642bac27a1aa64a2dbc818490101ebac7d724b8d385b33f4e5191fe1bba47c4009900259e8a378f965f79dbb861baf23989ccb579f81d64f57fc0c9918a4438c57dd374227db994ea92e8c136091fde2be972843555f34f91f361c6f8e1a6f4cd4ce4f"
+                    "X25519MLKEM768 (4588)": "74856591e8ab7ce24ca61804f6ba1e3d4467c04aaa08854665710e15956f4b9bb2bbcc00684c11d435bc23789840e20884866238e4a7bdec0179475935d249843795e34ac6ca3aaeaea908e26486ce111373a2ab9d741b5fd0136d2587aa44887dd61c14f78c3f20c100f63f615a4882b866f6604d0f052a8d48a8abcaab83b344cc37ce3a543995ac55ac26592f59b9ffe161ec76b8b5b7775a683bb7391fb9934a984bba31c5a6f420a50141490159a415eacf46c1cbf0cbbc8fb019dfd14ccee83087a7b01e1197424a4c84e10c2f91aa2bf3bf671a77dc46641f88c4dabb2e23e17f06147e0248121065974c8abab9261e2546c55391815bf1a78227a60d64b4c9437a49b300bfa727928c4c3c2b93a99057c6f9853db4b3c8070b41bb221cf8c27600c9ffd16eb70ba69ab013dda240d9592dd3014c21851b4a91077bea5baee34b0a250fc313b5b607c58b066c2f6280b7cb4b82970dbee608f7e5a15caa8e48c300d572cc637157de656dd0c152524c0bf10cb332623c6187101c8a8166cc26929316e564c6025ac3b318652d556fe81b2e71383612e63d713b498726c8a1460f94e1a3e354289ac13f86556eebf74ef02b54438cb6ee801aa1675d1f26b90b303fbbb018d6602c98d8c7235171c300b5bf3715d66a1481477c6db231ec142f16e7023d3575779b6afbfb11225c598862c688a2b59016afe77ba12e1321b32328fab85457e73ba0338de67805ceb583c950745bd00e32d1aef78518759abc79847792627c5a720beba283ee20a45b3909967ac5eab3c8b884b6577540979ba90ecc202cf77df7a62d664b86e2a40d421c3ed87850ebfb3f730cce67c05561257c0f095de7462a4e096b720a8ec5e56100846e843111efe0b67bc34c8cb968ea9b0a839c944c05714d011cf59c5a27bb21e4d05ebf9238d6fc396ab75c88a4c4ad9903b3d89ed05b079df95d90c3c6db39643e27aa30cb47746c0613b95546d858d558511cac92d6fb2a79c0165345871f201e62a1bbfb38385f947cdce2803de0b42a8c2e455b8a4806bae3c42fe7a405cec33c1b36aed33a0b6a103aea1767f9899417314d32eb0579905bf873b91e868034fca948302ee5214c67b8afa22b86ec5b47e1152d45b00a74588c497289184b6282780370900cbd08b07983be3aa12b1a454f3206759453996e9ba15d7200f553cb40634c283a638e97c174501f9933085d38099abc0a4bd9aa9bc16922283cd26a77abc17b2953126f34a470578457345e61242f46554a0986274ada2f4fc698c32974a5108436885a1654b07b37c4d93680414c776f3c945291782e968d0f1220ad4ba2462c0106860b25301afbe723a5512878c49b12c1246d6795af9cbb38eb4cca828a81473f55c3228499c81663371bc70a1a78744747aefdc44395102f96fc3f7246bc201b66cf7b75c66baa97fba57e09700b5774ede01b9ee2699f63bc032208a1b9784ba83218f75ab3247cd6360d63153f3836cd42c20789b47e395336c5e347e9469325c78cd8996de943c8f1285874a722b7361ba3766abc889030ea6598033d0d9a8ca717b7e2235dfec25680fa4a5573514067129fa521ad9943998462b7033659692399dbc8fe1ca474f24f0200bf8f629974d829afb61389e3d7aea0c5078dc7eac9676f4be284ca1c4c555e42c277c14fd8ec9be636412f71a3488a297096c1927d"
                   },
                   {
-                    "X25519 (29)": "5a41120040df34a569021cd3e4e51c30e6126b95e796ec7e08e7862a92caeb51"
+                    "X25519 (29)": "0f37a49281c7a14ea3a40713f7c7292753750c3025fba9edb88ed3728f283576"
                   },
                   {
-                    "P-256 (23)": "048878855803100cbb239d6cb4bb573821e879ea7b990a168be88f0aea03d711eb4c718bb71780b7b91ac16415ee79f56a1c8d031aa87b543f3223e79d81eb6f37"
+                    "P-256 (23)": "048f0e1ba5150ceb54cf070e0d2d031a4757f7c5b7c8425e06fb0dd92bbea3abdc3a6dbc965f7b382513658a29e32b452baf91e0a769d1d3a31984e92a9219e2d6"
                   }
                 ]
               },
@@ -2783,7 +3296,7 @@
               },
               {
                 "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "00000100014b002004111d1301bc53839ec9017995d7cffcfe7d145df0f4064f5ad3793c86f0ab4c00d0018e83513428710d5e2760abdd2a5d16b6995e8f9ca416101816134cb29646f3c08138f8ee029ac43f40dc2fbb5e955270f611a311aa3a93d42e4d224ee68132c8633937ec3c74df778ae2ed465fc82f6e87340d030a9e4f89f2c14ec6cb9e09f592a7434fa9b8e46069f76877c9d22703bfe5bf742c0f361295dfb3e49725537bbf6bd8312ca2d0b38dfb8b80e9ac219db2f01e851e30fea1423ba6be62f03a3787a736e9c0e506df1bbbe8fdbc11f376fbc5441c509eac6be80974f429d74d44c722607e68627c4b8b76718abe77ea"
+                "data": "0000010001b4002058b3a3f5c79755b88b2daf2820f856399e2d9d08e5cfd9830ce4527fc6310a0e00f0e4af4e70c909c93f101bf7350b81e4c0af5c1d295df597540fa7dd9db7d113310d64ad402cdc3ba91691c377fed4623c37a83bab010a512fde31ca6d26364dc657617a58f522ed28f158b84ef785233b235d6c924cdbe03203f13627eac6d1f613e9a7ed116562e6230201aa51c58910466d9b466b8c3f0d5fd6db4a1646e9f9bc06cdecbcf4c3f246cd7f7032c90de21a0d5bf0025e9dd4cd9363328276df1cf31cd01039b44a9715ea79747da5ba59f1ea043c0c890aa78038fa97b39f149c552d4663f705ae1f9a9a1aa785c11911ba894bf55cc8596ce5c0e20b6a88c2a55949aad20b3b2c1f6dbcf60a22df3a14"
               }
             ],
             "tls_version_record": "771",
@@ -2794,8 +3307,8 @@
             "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
             "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
             "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
-            "client_random": "0095abcd06d2032c85ec9ec8c96cbbf18630e235448c9e2dbe1e6c32f8bf291d",
-            "session_id": "ba5c7ea3d4da40102a16e178d44757d663cc73b4a0a825a82a5764fdff2438bb"
+            "client_random": "59ca3c8ffe230d75d0a3ad640dd7e6b9a0217db0d05165aed599e5d1e0499ec8",
+            "session_id": "c2f59f3c2740ec244c00e016f9bbe0b23a3ed69bb9c2b90bd07f41cd37a9792e"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
@@ -2861,7 +3374,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0xAAAA)",
+              "TLS_GREASE (0xBABA)",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
               "TLS_AES_128_GCM_SHA256",
@@ -2885,7 +3398,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0x3a3a)"
+                "name": "TLS_GREASE (0x6a6a)"
               },
               {
                 "name": "server_name (0)",
@@ -2903,7 +3416,7 @@
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0xdada)",
+                  "TLS_GREASE (0x5a5a)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -2954,13 +3467,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0xdada)": "00"
+                    "TLS_GREASE (0x5a5a)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "70b30782e19aead66bc282046e8c827da91a6ae887f3b67826961020f39448603a24461de7052f14e55ab0a28eba06006c23674c72cc8f8320ce5096a9c41da148a4ae267b08406ac44379504879ec671917d11c17d023e0557e595a05b426270fea16330a45a792734a45361525acef0701bef49323e18644a682c4f66c4540a64d234bad841737f66282eb93ef3bced0483faf3979a27a4704c3866381b3716525d020cb82137168d2bc517848d99b05b34b16b231574da63cd175419dab3324b86db777a6d3226d9c9459139bbe9f45b42c1b7e2c3b7882db0ab0007684653f59e45b4f794ca5f8b24ab9251427a7deecb07ae25d2a4b99e7d55e58590bb550363330090019a47393753d7830187c61f2ecab2e04856c1a8bb86a641dc99447ea6806247c04445102d324830cbde3e22aa54c083db7c24e6b32e2a0c653762383a92d78c65cebd217f23b0431fc87824b1c6fd1ae83399ddfd00ca90c11ef81697c1374f5845832e30339a04ca97a8c16c78672e9a5d2258dd22b4ccef2cd59d90a679bc5c6475140eb1b005597e4d704fba27081a1abee3c3b97a15006c105bd5682c0326b0d5ba26e9079a32920f47876158b0843f55d12e6accb1c7386e84e1cf770976655d68273eb13bda5125f4cf3101f52820f4144b9b29bd5f7c429d3c8684942c0777b9a9771152735967081cde085cda06bb01c525045a1f6a50efd080a2ab5456fbb6318358df2fb241e100b91aa921d25002e79040c82a755d0c5c4142c831324bd22076278040720b5383395d6c4127eb9655bb9b285da39090022da593d7ed29931143a853c5ebf002c38ea36db773a959cc1ac0289c8980338a063255364421c2f4fa5990860bbb02ba42ae05e56408b8346b4780aa5319a5ffc03cb06b32be45a1343ec5e774b13f0563718767f098a3f6d2c583c116c44e4465007aa1b9163330987d0262a08abc2e6f83e7de22146029959c88197a831da7393ad7ca4a381b9e1ba4ab8a08f77f7717b59cdf5f802aff2b15ea613c1bb513b905b1855c914314e5b237a834a9f34a96e895693a2811f88d93cc1343714f45f92c3bbf3d0cd2e81aebbe4aa5e76902dc452e7001539ea3586964626e93382e8bc7af622d8b484840ab35e03abac4498899b0c0372b1d1408530799ada82bec2245004da94082788e5c2aabb707b3063a9f25b83a6e8b5ae611a4fa7a026d242ccc67efc248cdc8678c889b0977857eeb5b98b106d807ab65a68689b80328beca020f662fc145cecd82ab0e832b826721ac81770b653ab24a2e933c88f60095ef6a3c888c166802059b5262463ae974a762518783e42cf9a594ee537956fd9746fc13adaf97e97c77f099664c4b05418fc330d5cbb63d52f2e416833e06fb6ca84e4f5192971ad30026ec84b9808505c4b188f750735e666c004aa81e0736cc4e047d934b39d29a5fe481bdb111de2cc2984888f8cd0b2bad91598909394975071c0920c70634e9caa5118b7dcb82982b08169113ded45bf9402ae1cd97126ba4cccf83eab0572fd47cf47ec09a635796eb55b4cd36662c30e437708620577172920c82428ff4846075bc16a274a4cac7246fb317910254c554e7c362f382290f3f1b50ddc538492ed9a3b4052427567fdfb214192633c093e2766c20673ead175f325401d3358f1730697eb2ceb5f577515266706ea52cb20e4f1161a"
+                    "X25519MLKEM768 (4588)": "aa5a1eb382aa58c33324813ffefa48f3457217b307aeda225d5c0ab8109cf8853fd9294913324a07331032f78a59ca8b0995080884bc4d0c9848a355a8c39cbb5271ca586947b1824d287aadf11ec22215884352e15cbe78d437693313f13c49b0dac765bb1bdd1a91c2f2958ab82bd8a1398c476c13ac3f39f69ec760703a7714a3707aa0943ff000b5ea364430ebc5cc135b5aa743f993133b7827877479da08bc829c0522c39c55d284cc559d8e153089452f56c32184e35a42f27326eb9e98960e3a8311d9190115c396a0b05175436841b66d79a43e5ae9a8b17aa7f06ca5b21a752e3188b3b6a5c855ce311b938efc30d3342e1d6926147b864ac62121dcb5d79c24591a48bf663947b6a8b9493086da515f0ccd3fa04141332c084049082cc348e06bff9b96b34ca95850cc3f71c8bf5324d0c814afb46e78a1838fe60fbb128b7d09604379789ff2afabe1be4a33c72d41725d6a5c3da353f5070a5e0423433abd74f4a78ef416ddc24fa19680fd0c779ba9481ac5052f2b6c07c12ba7a83aedbcb3be2c3949023ff0c2823e9473bb9a06521118ef6b41fafaabc9194669c244c28385f08a77a3882077d46eecc59656bb31ac0bb593b57cd267917f7305503a47bb2974680790c995a1eb686b30cb1575e61559530f46a298b087bb202c7c5ffbaa6608c73f28b60ac7bb092c6687969536d6c01b50139c8c868b6c97ee62b0b7b7463da2573e0429ebe332ed7b7f997b956ff447f4e516869ccd72ab335428907f7bc443674d9b5c5affc67724f7759770b4b558594fbb0827968b8695c0b9ca77ddd562bfbc15e4d3256311bece347deb8a736d3048a100bc1b37cf0649591c55b34bd939dad944783c06a7a22a10e19ccb7c823e502d21f68fcecaccde0774da2a4fad61488204b331c68c3c6a9c011a807e956e9d6c71bcccb14ea87b8bdc7e2ad36689e29d7b4698eb8c74105235416b1c8e3567e4b46f4c546050579a3a4a834eb8705791a9ec99bb272b93e565990cd1b433184a6c4368ac74a2d0ac82607b1d29cb8208596e060cc0aa6c62de56858df91ef3097d3204383f38103c29c3372c128b546762519211b336bcf742fc218e65b3a392e8b1c7e0cb79c7bf84c6093c935b6951869aa0243d618b1eb4848720902053b763e48c63745ff452c1f1675bbe911b429cab4d49896dcb3808ec639c2061e28b7a715bbe6a0a84c843622cdcca4575ad7dfbaa1f70b81dc478e384a20a2c89bd238769b291950ca8b50c1981686377f398273c8340d5c00572237008c6cfe765173c9a8f5a46fc929fddc4cac4e74e6f553fa6e9b0965223de7272a8085358ca1663559dbf5548a3532585d883a378650775860e8259c6e40dc232513343986192121e9104d6d6c3a85616f43295cd35cfd1f2b978cc7d44c9ba41a26e798a916a145fe7f2c8713c678a97cf7eaaba5121326bd75fa6a2ad1093c294ab33e568ce053bae566b2338838241595509d5771cd28d96583c88d41869a156b59a5990b037baf7381388c3ea05787613831a4a56ea1c7ee8095d4e499e2fb03c3e5b99d3c381d7473eb7b97dc0b0323df437b094887a949383bb00cb50cb2e162e3412298aebca67f2d0a3fa56ca2817d6229cc969e18758e8b7ec800c92511f9c528757cd8780dc1e8ed8005f2373b701172ad04f949dfeb20bcfdbd43e45a09ddb850463e874"
                   },
                   {
-                    "X25519 (29)": "7e62bb409a2f700a95fc969a1b709315d7b50583e82f12f5ff08a0bec6242f19"
+                    "X25519 (29)": "e4e3728a295165ad857cc65f73044bfe480d07291dfbf85524d4cca9ecc06423"
                   }
                 ]
               },
@@ -2971,7 +3484,7 @@
               {
                 "name": "supported_versions (43)",
                 "versions": [
-                  "TLS_GREASE (0x6a6a)",
+                  "TLS_GREASE (0x0a0a)",
                   "TLS 1.3",
                   "TLS 1.2"
                 ]
@@ -2983,7 +3496,7 @@
                 ]
               },
               {
-                "name": "TLS_GREASE (0x8a8a)"
+                "name": "TLS_GREASE (0xaaaa)"
               }
             ],
             "tls_version_record": "771",
@@ -2994,8 +3507,8 @@
             "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
             "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
-            "client_random": "ab3504599998a66c1cfedaebf0e65fc8e52a17d345fb0ce49b598c38607ca7de",
-            "session_id": "4fa47dcba4862c1b3483ebf84da16a9ae0f8010b4b81c4977fde0ec6958186b2"
+            "client_random": "a4a2f1488c9608df1040c7507db43b6772bc18c4b0b2ba55afa5ac69c9b10feb",
+            "session_id": "1183f82cde45a2d07a92d0693f9f06b30c7fc6c9d79bab7927d647ba2aaa82e9"
           },
           "raw_http2": {
             "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
@@ -3195,10 +3708,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "1779069f055fa55a921cd713903873b1986809983ed029bb37b1a852d19c0173c79251028079cfa108a1ccac3a29d353edb95f9f6b255c2b942bc0084f1660021c1acf91ba0f0607a3455ff9dc4f9dc17664a1c61156292db221eef3a6748b5ed4441856e6871041100b718c764a017da37217c44b445296cb05d0a5bb57e88607c7f41b43185a970a483b17a3d5fc0b75169aa1c30ed6657d84ec73bca1297d97c8e841c9de866c7071ae8efa4287f65d2f56273f4937319c307d82b3cf4636a3d736cb9417b6c5a223c3af0a598074a2bdf9121ece03a8a6678e571110025651f7966fe7d12d97c49ab100413aea0c8b1a59cb362dc7daa30e8a72aa6b325b441648dc9f2ecca8758c37a297788d0224652b2ba2f743d0262f92a18c1fa1808619251819b2e7975a2138240c7a62a9638de1524457a23c79f5b94d829915d98924ba27bfaa4e2862c126aa328fa2582fe05fe3ac85e0f35fc4269c3aa93d2a8ac9843c79f7388f57c157308111450988dbd128fb7226e0053f62d18971261215f67aeaf620b310cff7b85c29594059a7b1efb187eb0298b9c05d7f923e5e59a0d9b5317d50a2000da1df93a68fc730482780c61962fb7231b2a4488de28435e69e008d8299e838a9093ba6028cc5154f36f85d2366b8eee8c660b743859927c8b433d95221afc862a4e041ab0b2d56a0b41720927e295f4a09548527c86e827167b9479af05d41cab957179c0b4ba1d4e31b763a38616506b9d9c462d74a7c8bc78b070da7402144e1ba474986a590a190e37be2c13278543671a46320870fe4685be458be701622425b3366f697117b8770585150510075559d61da353d7a9b84cacb2e0c2acda861a85c6b14051309c77bac1152a9cbc3063a2d7b113a7dc38ddd7c30421a18c49c7b9204aaaf7b3822a8771fb97c561284057b9083a85953625920133929055d46727eb4f54ab48cab9161c18513a0c1a38fbd2a79360059f15a8c3d305bd7081d02a36710964ab5007dabc90bf2aa4a2888b48de953789881b8224ace6b461b49c73c72186ae62fe8f81f52a7b21479649e30810834171b471fe3e4a67e179ca1c60b9f35cd52626ab6a9054001c31c5724d20b421158be1b9141092bbb97b89cbf53c877c321899c38dfb74c2ce6200c276f0c077829820c40794fc20856cdb09002e866a23460c28b9b163a44f2ab53e8f9ba81bb72aab35ac0d3c4d2736adf7b3aaad3ac1e4a2abdc891b2e4c23116a90a5564b0d0ce9d5ab175622cd05ba5a4c5c890c5b43e18842622a4bcab6c36c908a38aa93983980d08be1f7a37021357f3ccc3b0c702d869101d385b0fdca948361730d011acc134dcfa59bd6139a225abe8975072f41910e37d4bface9ae844125649c00b44c04a84ccc738236c74224b7650d5ad5b5bbda41b6565d443d86969154484e75950168a41a9b8473844a145830232c90c0d3549703a07447b7727b3a40c76b002cc343e099beb17bae99b065a9a82ba11b2a779bd72130655b04b6369aad0792e27eb88cae6118d95403540988fbbaa2537939e3098aa6024f252327467ab16e5ac3a539c900687d9e85d6ba5ad506862ca6b8854db5c31e23ff4b94122c6205f7eabd520d044fa54047c736fc5745d977db2a1785d91cf23e29f1d9a2e7dca9dd811a9951b79d6b7aaa24b9361e58fb4357ad7b56f7b2d2fe205c6a87ff067"
+                  "X25519MLKEM768 (4588)": "31e378dfbc838ab6afe89a0913dc98d944666d3825cc89b9d5579a0c0a4f3239abde055f10a13e5c5c01781821203309a1c98bd2b27090725422e9c46f54b0414a985e3aa5a9c21da530cdf9b82fa855518a1504898a3399c443d503533579ce4072bbb7637f693c2a9f260f0b4cadb3006158a8c3a5567942373020ea3161891bfc474b008a647ccb1bcc6b7cd2321334c05a0ecb23a0f7b6de18a0ca795521ba8db6cc432e643ac03950441087a3e45dd3bc46a4c0160c3313a921a6199a040edabfa48a9b7b8203087075e582afc7f1ac1dd466e3ba231ed48d7be24689c2168f8707ea669cb86badbfa1522d26978d84c66199068e6394d55ca51d13a7c2590179ab7f05d4bdbb3416ee44213c55b2e7113a5fea18de70770a620196d689e7d5a81eec446972be842ab4bd1458fdd911a034b8686878fd575bb1cb9b6ce4772b51a69f614fa3ac19ab32c8d3716e3412a0c56441545036edccb8e59114323a3631153a8f48cc2e14c2a6101d1c0bc6865a7b7e321db7f8457ddb215905165bf70a9e497fb6d52e864c3b7903408116ab5efb7f71c6a7503b813c5c190085cac6375b93f031f4f441fba0be4609b853831132826999c0403ec8080a833b4a8388dc8109f21a43c7991adc154751622a657997b6eb5d525b7903a040232385f7a965e3bb689858859419c3b56739396bc36e878f143b9f73d85528aa4324380996662bf1c64e7aa1c7ba2845dce85ce521b6c9601d98d2aa0f9696814c494aa69baa313dab5ca3090a43ddd19286bc47b72ba5ad6b4c81fa58057b7a34933a8fb31ca304561e2800952c9f6ba34e52c4378fe6157ff27d00ac08cfd01f9aaa939db6844aaa433ee7129ea9255067a6820cce98db4d759b31d59b9c9dc3b2b290af4667ccc28bb256ca4758133c301147a3b11a6a963f9da47b1ea8aed28c2085b148498ca5114b415d306d5f1b0cc776635dc06eaeaa6ed0917efc17aa34517d1ba06cac82a0add889c8e363b7649392060c4bd63a8ec79af8ab249e00521a024607155413cb79ff006539e3c28813aa372c98daf4036cbc201ab93c003bbc5b6ccc56ea366dc0a30954a817f4591f7c260442a12640bd03b243f2043d870b6d08a942c09bb1372990f76b4f64612a7e91c62a0089cc64a421d968887c648f854402e935104910a16269b5e702edc149677759b48a5f8598121161cac4a5a7d3789acf5a0c84bc9d3d3a406ce54fceb7022cb91de76873c3252f83736d6521a1ce37c904cc6a00d969c8721d5e19c6ed2a79e7346a142b6429c1478c0248ec2c7884acbf1533229387458aa0c8f4a69978669c3ea651ec8c4ba3a326a0b2646e75b5b0d41478ac974470cd98a207ca9bca5cbb49f4930a0a24a7a7eab3f767c964e0869b50c5a869635a613a057a368f2667d44a4619215f6a22335c84756adb13951a6cfbd6cd3ec4cc06a90fd5da129d78a3c41aa48987878bdc9c701037232a346a09b4a8165b8b8c088c9acc2836460f92374a0544015015727aad702cbc04f870d11b02aec6cd9b17b2b5f1b61a278582f3ac92ab88037576e436609ed65383d4cc47f85cf7b28038a114b78b201ada5d8cb711f49287e6257d269354d8e5d02665b9bcb4dad55d3cfb48915cffba748a4588184255ec8183d739416ebec0850482c521a6cba56844571ad48ece12fbfe72a1549122b5285490f9ca44"
                 },
                 {
-                  "X25519 (29)": "782c6d88e38d8f456760c7b82e421125aa18effb1b3cc4aefbefeda0f58c9350"
+                  "X25519 (29)": "07e73a56a061fafbefb9e06a026f4c2ed28862bfa01d3763d2ef5b3ad88e5517"
                 }
               ]
             }
@@ -3211,8 +3724,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "a6e1f1c3d16a1f19e09779bfc712e53ef5af1ffd53aac45d192b5a270fe34fe8",
-          "session_id": "93433168e8b359d1987041ae52b3d3921516b70d0bc0c15141abf974aeae2ae9"
+          "client_random": "7dcf12fc50a131787b5c3ce92ca2ed8fddd4afec05b79b3baf3cf387a2f5856d",
+          "session_id": "35104b4f8fd40d9fb0794ca05c4c4a26f53bbc0a535d75f7bbd8d219ca1fa458"
         },
         "raw_http2": {}
       },

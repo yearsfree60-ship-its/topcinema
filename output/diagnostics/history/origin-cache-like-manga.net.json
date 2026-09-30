@@ -1,0 +1,30 @@
+{
+  "domain": "like-manga.net",
+  "saved_at": "2026-09-30T03:10:14Z",
+  "candidates": [
+    {
+      "ip": "142.250.184.196",
+      "score": 3,
+      "sources": [
+        "urlscan.io"
+      ],
+      "hostnames": [
+        "www.google.com"
+      ],
+      "first_seen": "2024-06-22T16:58:25",
+      "last_seen": "2024-06-22T16:58:25"
+    },
+    {
+      "ip": "142.250.186.132",
+      "score": 3,
+      "sources": [
+        "urlscan.io"
+      ],
+      "hostnames": [
+        "www.google.com"
+      ],
+      "first_seen": "2024-08-06T16:40:50",
+      "last_seen": "2024-08-06T16:40:50"
+    }
+  ]
+}
