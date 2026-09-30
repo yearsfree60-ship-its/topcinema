@@ -1,152 +1,206 @@
 [
   {
-    "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+    "url": "https://like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
     "tls_and_server_info": {
-      "server_ip": "104.21.69.54",
+      "server_ip": "104.21.35.202",
       "tls_issuer": "Google Trust Services",
-      "tls_subject": "mangalik.net",
-      "tls_not_after": "Dec  2 00:33:50 2026 GMT",
+      "tls_subject": "like-manga.net",
+      "tls_not_after": "Nov 17 22:42:05 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.3.167.85",
+      "ip": "20.40.214.241",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Moses Lake",
+      "city": "Des Moines",
       "country": "US",
       "error": null
     },
     "origin_server_discovery": {
-      "domain": "mangalik.net",
+      "domain": "like-manga.net",
       "ssl_certificate_history": {
-        "domain": "mangalik.net",
+        "domain": "like-manga.net",
         "tested": true,
-        "certificates_found": 132,
+        "certificates_found": 85,
         "historical_ips_literal": [],
-        "subdomains_seen": [
-          "api.mangalik.net",
-          "dev.mangalik.net",
-          "mail.mangalik.net",
-          "io.mangalik.net",
-          "ww1.mangalik.net",
-          "ww3.mangalik.net",
-          "ww4.mangalik.net",
-          "ww5.mangalik.net",
-          "blog.mangalik.net",
-          "like.mangalik.net",
-          "ssolo.mangalik.net",
-          "store.mangalik.net",
-          "portal.mangalik.net",
-          "s2solo.mangalik.net",
-          "s3solo.mangalik.net",
-          "s4solo.mangalik.net",
-          "s5solo.mangalik.net",
-          "s6solo.mangalik.net",
-          "s7solo.mangalik.net",
-          "s8solo.mangalik.net",
-          "leksolo.mangalik.net",
-          "sitemap.mangalik.net",
-          "support.mangalik.net",
-          "www.www.mangalik.net",
-          "sitemaps.mangalik.net",
-          "tempsolo.mangalik.net",
-          "wildcard.mangalik.net",
-          "dashboard.mangalik.net",
-          "2ed99befc728.mangalik.net",
-          "www.2ed99befc728.mangalik.net"
-        ],
+        "subdomains_seen": [],
         "error": null
       },
       "dns_history_resolve": {
         "resolved": {
-          "mail.mangalik.net": "104.21.69.54",
-          "io.mangalik.net": "104.21.69.54",
-          "ssolo.mangalik.net": "172.67.204.232",
-          "s2solo.mangalik.net": "172.67.204.232",
-          "s3solo.mangalik.net": "104.21.69.54",
-          "s4solo.mangalik.net": "172.67.204.232",
-          "s5solo.mangalik.net": "172.67.204.232",
-          "s6solo.mangalik.net": "172.67.204.232",
-          "s7solo.mangalik.net": "104.21.69.54",
-          "s8solo.mangalik.net": "172.67.204.232",
-          "leksolo.mangalik.net": "172.67.204.232"
+          "like-manga.net": "172.67.179.141",
+          "www.like-manga.net": "172.67.179.141",
+          "slikey.like-manga.net": "104.21.35.202",
+          "likehua.like-manga.net": "104.21.35.202",
+          "s2likey.like-manga.net": "104.21.35.202",
+          "s3likey.like-manga.net": "104.21.35.202",
+          "s4likey.like-manga.net": "104.21.35.202",
+          "s5likey.like-manga.net": "172.67.179.141",
+          "s6likey.like-manga.net": "172.67.179.141",
+          "s7likey.like-manga.net": "172.67.179.141",
+          "s8likey.like-manga.net": "104.21.35.202",
+          "leklikey.like-manga.net": "104.21.35.202",
+          "templikey.like-manga.net": "104.21.35.202"
         },
         "resolved_all": {
-          "mail.mangalik.net": [
-            "104.21.69.54",
-            "172.67.204.232"
+          "like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
           ],
-          "io.mangalik.net": [
-            "104.21.69.54",
-            "172.67.204.232"
+          "www.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
           ],
-          "ssolo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "slikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
           ],
-          "s2solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "likehua.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
           ],
-          "s3solo.mangalik.net": [
-            "104.21.69.54",
-            "172.67.204.232"
+          "s2likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
           ],
-          "s4solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "s3likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
           ],
-          "s5solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "s4likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
           ],
-          "s6solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "s5likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
           ],
-          "s7solo.mangalik.net": [
-            "104.21.69.54",
-            "172.67.204.232"
+          "s6likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
           ],
-          "s8solo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "s7likey.like-manga.net": [
+            "172.67.179.141",
+            "104.21.35.202"
           ],
-          "leksolo.mangalik.net": [
-            "172.67.204.232",
-            "104.21.69.54"
+          "s8likey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "leklikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
+          ],
+          "templikey.like-manga.net": [
+            "104.21.35.202",
+            "172.67.179.141"
           ]
         },
-        "unresolved": [
-          "api.mangalik.net",
-          "dev.mangalik.net",
-          "ww1.mangalik.net",
-          "ww3.mangalik.net",
-          "ww4.mangalik.net",
-          "ww5.mangalik.net",
-          "blog.mangalik.net",
-          "like.mangalik.net",
-          "store.mangalik.net",
-          "portal.mangalik.net",
-          "sitemap.mangalik.net",
-          "support.mangalik.net",
-          "www.www.mangalik.net",
-          "sitemaps.mangalik.net"
-        ],
+        "unresolved": [],
         "error": null
       },
-      "shodan_probes": [],
-      "direct_connection_attempts": [],
-      "candidate_ips": [],
+      "shodan_probes": [
+        {
+          "ip": "142.250.184.196",
+          "tested": true,
+          "org": null,
+          "isp": null,
+          "country": null,
+          "ports_open": [],
+          "services_sample": [],
+          "hostnames": [],
+          "tags": [],
+          "vulns": [],
+          "last_update": null,
+          "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+        },
+        {
+          "ip": "142.250.186.132",
+          "tested": true,
+          "org": null,
+          "isp": null,
+          "country": null,
+          "ports_open": [],
+          "services_sample": [],
+          "hostnames": [],
+          "tags": [],
+          "vulns": [],
+          "last_update": null,
+          "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+        }
+      ],
+      "direct_connection_attempts": [
+        {
+          "target_ip": "142.250.184.196",
+          "port": 443,
+          "sni_used": "like-manga.net",
+          "tcp_reachable": false,
+          "tls_handshake_ok": false,
+          "tls_cert_cn": null,
+          "tls_cert_san": [],
+          "tls_cert_issuer_org": null,
+          "cert_matches_target_domain": null,
+          "http_head_status": null,
+          "http_head_server_header": null,
+          "elapsed_sec": 10.01,
+          "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+        },
+        {
+          "target_ip": "142.250.186.132",
+          "port": 443,
+          "sni_used": "like-manga.net",
+          "tcp_reachable": false,
+          "tls_handshake_ok": false,
+          "tls_cert_cn": null,
+          "tls_cert_san": [],
+          "tls_cert_issuer_org": null,
+          "cert_matches_target_domain": null,
+          "http_head_status": null,
+          "http_head_server_header": null,
+          "elapsed_sec": 10.01,
+          "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+        }
+      ],
+      "candidate_ips": [
+        "142.250.184.196",
+        "142.250.186.132"
+      ],
       "candidate_ips_excluded_as_cloudflare": [
-        "104.21.45.243",
-        "104.21.69.54",
-        "172.67.204.232",
-        "188.114.96.3",
-        "188.114.97.10",
-        "188.114.97.3"
+        "104.21.35.202",
+        "172.67.179.141",
+        "172.67.195.78",
+        "172.67.210.176"
       ],
       "candidate_ips_excluded_non_public": [],
-      "candidate_details": [],
+      "candidate_details": [
+        {
+          "ip": "142.250.184.196",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "www.google.com"
+          ],
+          "first_seen": "2024-06-22T16:58:25",
+          "last_seen": "2024-06-22T16:58:25",
+          "internetdb_tags": [],
+          "from_cache": false
+        },
+        {
+          "ip": "142.250.186.132",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "www.google.com"
+          ],
+          "first_seen": "2024-08-06T16:40:50",
+          "last_seen": "2024-08-06T16:40:50",
+          "internetdb_tags": [],
+          "from_cache": false
+        }
+      ],
       "candidates_from_cache": false,
       "source_status": [
         {
@@ -154,12 +208,12 @@
           "kind": "names",
           "ok": true,
           "status": 200,
-          "attempts": 1,
-          "elapsed_sec": 25.28,
+          "attempts": 2,
+          "elapsed_sec": 5.2,
           "error": null,
           "note": null,
           "api_key_used": false,
-          "hostnames_count": 32,
+          "hostnames_count": 1,
           "ips_count": 0
         },
         {
@@ -168,11 +222,11 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.76,
+          "elapsed_sec": 0.64,
           "error": null,
           "note": null,
           "api_key_used": false,
-          "hostnames_count": 14,
+          "hostnames_count": 8,
           "ips_count": 0
         },
         {
@@ -181,7 +235,7 @@
           "ok": false,
           "status": 403,
           "attempts": 1,
-          "elapsed_sec": 0.18,
+          "elapsed_sec": 0.37,
           "error": "status=403",
           "note": null,
           "api_key_used": false,
@@ -192,10 +246,36 @@
           "source": "OTX passive DNS",
           "kind": "history",
           "ok": false,
-          "status": 429,
-          "attempts": 5,
-          "elapsed_sec": 71.98,
-          "error": "mangalik.net: status=429; www.mangalik.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=5.495941144999961)",
+          "status": null,
+          "attempts": 1,
+          "elapsed_sec": 8.12,
+          "error": "like-manga.net: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8.0)",
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 0,
+          "ips_count": 0
+        },
+        {
+          "source": "Robtex passive DNS",
+          "kind": "history",
+          "ok": true,
+          "status": 200,
+          "attempts": 1,
+          "elapsed_sec": 0.58,
+          "error": null,
+          "note": null,
+          "api_key_used": false,
+          "hostnames_count": 1,
+          "ips_count": 2
+        },
+        {
+          "source": "Mnemonic passive DNS",
+          "kind": "history",
+          "ok": false,
+          "status": 412,
+          "attempts": 1,
+          "elapsed_sec": 1.1,
+          "error": "status=412",
           "note": null,
           "api_key_used": false,
           "hostnames_count": 0,
@@ -220,12 +300,12 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 2.15,
+          "elapsed_sec": 3.5,
           "error": null,
           "note": null,
           "api_key_used": false,
           "hostnames_count": 1,
-          "ips_count": 13
+          "ips_count": 14
         },
         {
           "source": "SPF + MX (DoH)",
@@ -233,7 +313,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.17,
+          "elapsed_sec": 0.19,
           "error": null,
           "note": "لا ip4 في SPF ولا MX داخلي",
           "api_key_used": false,
@@ -241,10 +321,91 @@
           "ips_count": 0
         }
       ],
-      "discovery_verdict": "only_cloudflare_or_non_public",
-      "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
+      "discovery_verdict": "candidates_found",
+      "verdict_explanation": "وُجد مرشَّحون عامّون غير تابعين لـCloudflare من مصدر حيّ واحد على الأقل",
       "budget_sec": 120.0,
-      "elapsed_sec": 72.56
+      "elapsed_sec": 18.98,
+      "cloudflare_excluded_details": [
+        {
+          "ip": "104.21.35.202",
+          "score": 19,
+          "sources": [
+            "HackerTarget",
+            "Robtex passive DNS",
+            "dns_live",
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "leklikey.like-manga.net",
+            "like-manga.net",
+            "likehua.like-manga.net",
+            "s2likey.like-manga.net",
+            "s3likey.like-manga.net",
+            "s4likey.like-manga.net",
+            "s5likey.like-manga.net",
+            "s6likey.like-manga.net"
+          ],
+          "first_seen": "1772332796",
+          "last_seen": "2026-06-16T12:19:06",
+          "apex_history": true
+        },
+        {
+          "ip": "172.67.179.141",
+          "score": 19,
+          "sources": [
+            "HackerTarget",
+            "Robtex passive DNS",
+            "dns_live",
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "leklikey.like-manga.net",
+            "like-manga.net",
+            "likehua.like-manga.net",
+            "s2likey.like-manga.net",
+            "s3likey.like-manga.net",
+            "s4likey.like-manga.net",
+            "s5likey.like-manga.net",
+            "s6likey.like-manga.net"
+          ],
+          "first_seen": "1772332796",
+          "last_seen": "2026-08-21T05:38:15",
+          "apex_history": true
+        },
+        {
+          "ip": "172.67.195.78",
+          "score": 7,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "like-manga.net"
+          ],
+          "first_seen": "2024-04-13T16:30:18",
+          "last_seen": "2025-01-22T20:57:45",
+          "apex_history": true
+        },
+        {
+          "ip": "172.67.210.176",
+          "score": 3,
+          "sources": [
+            "urlscan.io"
+          ],
+          "hostnames": [
+            "manga-like.net"
+          ],
+          "first_seen": "2024-04-25T08:59:29",
+          "last_seen": "2024-04-25T08:59:29",
+          "apex_history": false
+        }
+      ],
+      "verification_summary": {
+        "attempted": true,
+        "tls_reachable_count": 0,
+        "http_responsive_count": 0,
+        "verified_content_ip": null,
+        "note": "تم العثور على مرشحين واختبارهم ميدانيًا؛ فشل الاتصال لا يثبت أن المرشح غير صحيح."
+      }
     },
     "direct_origin_access": {
       "attempted": false,
@@ -255,7 +416,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a430c14f38f1a362-SEA",
+        "cf-ray": "a431575a68e36173-ORD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -279,7 +440,7 @@
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
       },
-      "cf_colo": "SEA"
+      "cf_colo": "ORD"
     },
     "curl_cffi_probe": {
       "probes": [
@@ -288,7 +449,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a430c14f684fc381-SEA",
+            "cf-ray": "a431575adee8a1e8-MSP",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -300,20 +461,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.04,
+          "elapsed_sec": 0.07,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SEA"
+          "cf_colo": "MSP"
         },
         {
           "impersonate": "firefox",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a430c14f6c48db8c-SEA",
+            "cf-ray": "a431575ad8a0c75d-MSP",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -325,20 +486,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.03,
+          "elapsed_sec": 0.07,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "SEA"
+          "cf_colo": "MSP"
         },
         {
           "impersonate": "safari",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a430c14f7d1bff09-PDX",
+            "cf-ray": "a431575adfa528b3-MSP",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -350,13 +511,13 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.04,
+          "elapsed_sec": 0.07,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "PDX"
+          "cf_colo": "MSP"
         }
       ]
     },
@@ -386,17 +547,17 @@
       "suggested_selectors": [],
       "suggested_selectors_pagewide_frequency": {},
       "domain_distribution": {
-        "mangalik.net": 1
+        "like-manga.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangalik-net-4983-screenshot.png",
+      "screenshot_path": "diagnostics/like-manga-net-9509-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/3cae89a8-6974-417a-a357-d29f1f944013",
-          "blob:https://challenges.cloudflare.com/463d057c-6539-4f99-9c6a-f2700e65d6a4",
-          "blob:https://challenges.cloudflare.com/51f27f0b-f67b-4876-9ae6-abff7cf6a5ce"
+          "blob:https://challenges.cloudflare.com/35bfcfc1-92ef-4072-bc37-0eec43d9d2af",
+          "blob:https://challenges.cloudflare.com/851742f7-c28b-4992-bc6b-e64872d0ae8f",
+          "blob:https://challenges.cloudflare.com/ac47063d-7f83-45c6-aca5-b6b4147d2273"
         ]
       },
       "adblock_wall": {
@@ -442,38 +603,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.15,
+      "goto_elapsed_sec": 0.3,
       "navigation_timing": {
-        "ttfb_ms": 12,
-        "dom_content_loaded_ms": 140,
+        "ttfb_ms": 26,
+        "dom_content_loaded_ms": 296,
         "load_event_ms": null,
-        "transfer_size_bytes": 4109
+        "transfer_size_bytes": 4144
       },
-      "wait_for_images_elapsed_sec": 1.63,
-      "scroll_elapsed_sec": 1.94,
-      "total_probe_elapsed_sec": 83.72,
+      "wait_for_images_elapsed_sec": 1.61,
+      "scroll_elapsed_sec": 1.76,
+      "total_probe_elapsed_sec": 85.13,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a430c150cea4148b-PDX",
+        "cf-ray": "a4315761af6283b0-MSP",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-uq8W2PwvGDNLnktqEq4Phb' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-arCo05wLyY067p6LMLS5JL' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 05:16:22 GMT",
+        "date": "Wed, 30 Sep 2026 06:58:49 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CjnK4WD7mFoiAbVW55brRMjXIwvHHPjpE3uCYAre%2B7In%2BvFsn1zb4IKgA7JdS2CIUk8lzNOArAVZcLa%2Be%2BpPqAc0xNV9Tkbf%2BNk2XfcpH9jlsF%2FnhOD70iq754Hc2zs%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YQO%2B50fUDbUa%2BVBj7tQhOJX1acwTF%2BWxlUY9fSmGPB1tVq3PXIcwtfsRI%2FdnXbqENYbDu4%2Bwt0VFUkNCn%2BNg%2F9%2Fiy%2FOiivVXlBXeKdemzJSSxY%2Ft%2B8ojUdVUGkUicyxS5w%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a430c150cea4148b\"",
+        "server-timing": "chlray;desc=\"a4315761af6283b0\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -568,17 +729,17 @@
       "suggested_selectors": [],
       "suggested_selectors_pagewide_frequency": {},
       "domain_distribution": {
-        "mangalik.net": 1
+        "like-manga.net": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/mangalik-net-4983-run2-screenshot.png",
+      "screenshot_path": "diagnostics/like-manga-net-9509-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/13a37004-0e10-4ac9-8553-8838de2443bc",
-          "blob:https://challenges.cloudflare.com/31bde296-c465-4731-87ae-45d132203f5f",
-          "blob:https://challenges.cloudflare.com/932955ae-a171-45a5-a4c8-17797808cffc"
+          "blob:https://challenges.cloudflare.com/486698ca-cf8d-4465-9716-1bdc239c539a",
+          "blob:https://challenges.cloudflare.com/4c28700d-e425-42ed-bcc6-97fe4a763a7f",
+          "blob:https://challenges.cloudflare.com/d17fa48d-759e-4589-b53b-31e941e23cb6"
         ]
       },
       "adblock_wall": {
@@ -624,38 +785,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.11,
+      "goto_elapsed_sec": 0.08,
       "navigation_timing": {
-        "ttfb_ms": 14,
-        "dom_content_loaded_ms": 105,
+        "ttfb_ms": 12,
+        "dom_content_loaded_ms": 80,
         "load_event_ms": null,
-        "transfer_size_bytes": 4111
+        "transfer_size_bytes": 4140
       },
       "wait_for_images_elapsed_sec": 1.61,
       "scroll_elapsed_sec": 1.89,
-      "total_probe_elapsed_sec": 83.4,
+      "total_probe_elapsed_sec": 83.22,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a430c38a7de2db8c-SEA",
+        "cf-ray": "a431599dbfc14d2c-ORD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-mImkYIp6fgoQ2oxHtrvtpB' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-UT21XoaPZcA9NCpO79nhG1' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Wed, 30 Sep 2026 05:17:53 GMT",
+        "date": "Wed, 30 Sep 2026 07:00:20 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=P0DXWZEgbrSDFLt10NC%2FIeOQi%2F7X56e5vvhU66jMza1%2FGPKEeNfpdfNdV6wOTCT4byjbzqYBWc%2BP7rmIGE6p4juCxEiMfRDuvmG3dsM1YZ37l4I6V020fZ8d669fmjg%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cg%2Bs6ydu%2B8HhJ4q3AJ40EQ%2FPzA0%2Fb41cQfzRn8BGkmij8P%2F6SB7ALpUFrI%2F4Myo6faEmD8a5UqHUCVUs2LjdIOF5z08Qk0tPpRTu7VwjQXkVFiOWhW7ykaw63kH8XqeHFw%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a430c38a7de2db8c\"",
+        "server-timing": "chlray;desc=\"a431599dbfc14d2c\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -727,9 +888,9 @@
     "consistency_diffs": [],
     "rate_limit_probe": {
       "target": "page_url",
-      "sample_url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+      "sample_url": "https://like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
       "requests_sent": 4,
-      "elapsed_sec": 0.27,
+      "elapsed_sec": 0.21,
       "status_codes": [
         403,
         403,
@@ -744,10 +905,10 @@
     "deep_diagnostic": {
       "wayback_availability_probe": {
         "tested": true,
-        "available": false,
-        "snapshot_timestamp": null,
-        "snapshot_url": null,
-        "status": null,
+        "available": true,
+        "snapshot_timestamp": "20240910100743",
+        "snapshot_url": "http://web.archive.org/web/20240910100743/https://like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
+        "status": "200",
         "error": null
       },
       "runtime_enable_leak_probe": {
@@ -756,7 +917,7 @@
         "protection_category": "solvable_challenge",
         "challenge_detected": true,
         "resolved_after_reload": false,
-        "elapsed_sec": 75.52,
+        "elapsed_sec": 76.52,
         "error": null
       },
       "source_url_leak_probe": {
@@ -766,17 +927,17 @@
       }
     },
     "cdn_cgi_trace": {
-      "trace_url": "https://mangalik.net/cdn-cgi/trace",
+      "trace_url": "https://like-manga.net/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "988f94",
-        "h": "mangalik.net",
-        "ip": "20.3.167.85",
-        "ts": "1790745645.000",
+        "fl": "960f14",
+        "h": "like-manga.net",
+        "ip": "20.40.214.241",
+        "ts": "1790751789.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "colo": "PDX",
-        "sliver": "none",
+        "colo": "ORD",
+        "sliver": "050-tier1",
         "http": "http/1.1",
         "loc": "US",
         "tls": "TLSv1.3",
@@ -787,11 +948,11 @@
         "kex": "X25519"
       },
       "error": null,
-      "elapsed_sec": 0.05
+      "elapsed_sec": 0.06
     },
     "alternate_paths_probe": {
       "wp_json": {
-        "url": "https://mangalik.net/wp-json/",
+        "url": "https://like-manga.net/wp-json/",
         "status_code": 200,
         "error": null,
         "protection_category": "none",
@@ -802,7 +963,7 @@
         "looks_promising": true
       },
       "amp": {
-        "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/amp/",
+        "url": "https://like-manga.net/manga/the-villainesss-match-is-too-perfect/1/amp/",
         "status_code": 403,
         "error": null,
         "protection_category": null,
@@ -813,7 +974,7 @@
         "looks_promising": false
       },
       "rss_feed": {
-        "url": "https://mangalik.net/feed/",
+        "url": "https://like-manga.net/feed/",
         "status_code": 403,
         "error": null,
         "protection_category": null,
@@ -824,57 +985,57 @@
         "looks_promising": false
       },
       "subdomain_m": {
-        "url": "https://m.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://m.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='m.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='m.mangalik.net', port=443): Failed to resolve 'm.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='m.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='m.like-manga.net', port=443): Failed to resolve 'm.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
       },
       "subdomain_mobile": {
-        "url": "https://mobile.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://mobile.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='mobile.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.mangalik.net', port=443): Failed to resolve 'mobile.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='mobile.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.like-manga.net', port=443): Failed to resolve 'mobile.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
       },
       "subdomain_api": {
-        "url": "https://api.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://api.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='api.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='api.mangalik.net', port=443): Failed to resolve 'api.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='api.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='api.like-manga.net', port=443): Failed to resolve 'api.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
       },
       "subdomain_cdn": {
-        "url": "https://cdn.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://cdn.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='cdn.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='cdn.mangalik.net', port=443): Failed to resolve 'cdn.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='cdn.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='cdn.like-manga.net', port=443): Failed to resolve 'cdn.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
       },
       "subdomain_img": {
-        "url": "https://img.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://img.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='img.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='img.mangalik.net', port=443): Failed to resolve 'img.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='img.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='img.like-manga.net', port=443): Failed to resolve 'img.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
       },
       "subdomain_static": {
-        "url": "https://static.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://static.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='static.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='static.mangalik.net', port=443): Failed to resolve 'static.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='static.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='static.like-manga.net', port=443): Failed to resolve 'static.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
       },
       "subdomain_assets": {
-        "url": "https://assets.mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+        "url": "https://assets.like-manga.net/manga/the-villainesss-match-is-too-perfect/1/",
         "status_code": null,
-        "error": "HTTPSConnectionPool(host='assets.mangalik.net', port=443): Max retries exceeded with url: /manga/reborn-as-the-heavenly-demon/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='assets.mangalik.net', port=443): Failed to resolve 'assets.mangalik.net' ([Errno -2] Name or service not known)\"))",
+        "error": "HTTPSConnectionPool(host='assets.like-manga.net', port=443): Max retries exceeded with url: /manga/the-villainesss-match-is-too-perfect/1/ (Caused by NameResolutionError(\"HTTPSConnection(host='assets.like-manga.net', port=443): Failed to resolve 'assets.like-manga.net' ([Errno -2] Name or service not known)\"))",
         "protection_category": null,
         "cf_mitigation": null,
         "looks_promising": false
@@ -882,10 +1043,10 @@
     },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/mangalik-net-4983-report.json",
+      "report": "diagnostics/like-manga-net-9509-report.json",
       "screenshots": [
-        "diagnostics/mangalik-net-4983-screenshot.png",
-        "diagnostics/mangalik-net-4983-run2-screenshot.png"
+        "diagnostics/like-manga-net-9509-screenshot.png",
+        "diagnostics/like-manga-net-9509-run2-screenshot.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
@@ -1005,7 +1166,7 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519 (29)": "d89dd86be48f3a5520be7eb4b8a28a68bde146264449bae29bc7d9607adb0460"
+                  "X25519 (29)": "e4d9add6e1977e471e1bc41bbe04ed773ec0b50e1799bf25bba3f56cbb98ed2a"
                 }
               ]
             },
@@ -1022,14 +1183,14 @@
           "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
           "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
-          "client_random": "f93e6ee9fc8385ed72f7acdc7da289c8dc7e7d6205316bff67224ae331f93bb1",
-          "session_id": "d0b852d1b23c92e4500b519477478c9bc06851a884ad5639aad3931eb7c52009"
+          "client_random": "0ad06f6418de7fd1052f67280eed2b4ded038a71172bc16374358b23f08b5a59",
+          "session_id": "75a005e8e8d426e2bbe0bffe5a0491f0daac2bf843829a1a430e632c0d1ce017"
         },
         "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "ja3_hash": "9246a92df5501c06b7c286a5327ba6d9",
+          "ja3_hash": "9e5f2f2df8a00e0acb25e32360745d37",
           "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
           "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
           "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1038,7 +1199,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x4A4A)",
+              "TLS_GREASE (0x6A6A)",
               "TLS_AES_128_GCM_SHA256",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
@@ -1057,37 +1218,11 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xfafa)"
+                "name": "TLS_GREASE (0xcaca)"
               },
               {
                 "name": "session_ticket (35)",
                 "data": ""
-              },
-              {
-                "name": "signed_certificate_timestamp (18)"
-              },
-              {
-                "name": "supported_versions (43)",
-                "versions": [
-                  "TLS_GREASE (0x2a2a)",
-                  "TLS 1.3",
-                  "TLS 1.2"
-                ]
-              },
-              {
-                "name": "extended_master_secret (23)",
-                "master_secret_data": "",
-                "extended_master_secret_data": ""
-              },
-              {
-                "name": "supported_groups (10)",
-                "supported_groups": [
-                  "TLS_GREASE (0x8a8a)",
-                  "X25519MLKEM768 (4588)",
-                  "X25519 (29)",
-                  "P-256 (23)",
-                  "P-384 (24)"
-                ]
               },
               {
                 "name": "application_layer_protocol_negotiation (16)",
@@ -1097,10 +1232,40 @@
                 ]
               },
               {
-                "name": "application_settings (17613)",
-                "protocols": [
-                  "h2"
+                "name": "compress_certificate (27)",
+                "algorithms": [
+                  "brotli (2)"
                 ]
+              },
+              {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0xdada)",
+                  "TLS 1.3",
+                  "TLS 1.2"
+                ]
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "TLS_GREASE (0xdada)": "00"
+                  },
+                  {
+                    "X25519MLKEM768 (4588)": "ca07997f99c04810466f281c9f705ebe27a0d89a5daaa861c637ce92b4092fb44cdca62c2fca963b222815e6c1dff876c056a9c235721a32cad36b65699cc17f1accd3e43491128e39466d09b43fc5d432356b82f4f4b25e6a50332b70855468db014581e71efa59bb7c167c2d907a5b2a829ff0511e677fe64a3e7adb0890d702196135cfc29f1639cb76500863548a8b7b318d08cdd637377537b3739ca1093974a3c9c485e62dc3dc4bd5ab0d4b507196bb9cd4927d0073c76f9b4bd4316b91616b20b4c7ba6c68c6e05022d5102216412f308b18664952a84b48092b9d0708306ba2fd23beb5790f24e59b58506812009c77fac637a69c805a877447cf15737bb41679eb56c29c2cb448f7c5c0ea91afd01190ac0164a56a4603c9edfa1fb3c22006c6564be28800f188bc467babb7c9b775953e4244ca70168b2676c2928392271588642ff5e6b96c60bcf2e94f40cbc829e47c7b096194c3882dc706f7368c00358a074aad009769685623f5e11d2eba7263c918f63766ecf5abe4a36e5b523c28955c36e81594f5a1debcca1902b4543acffc44455b38ce28419d44fa3a6713166cc709a2d20d4b7080aee26ede6c40cdab388fdb427e48c756e354adc849228bb95f835f46914a0f503abf0b7a53cac4aaa34bb0265fc96b01bc6a48440b06b2230097fc315d17427583454a6b4b49f73d23db8c814c1e851847053458de91405ef5ca90e24200c4083fbac1c428766e4050b763c6df535bfc06197cb73917b48b55c83b565c695d065e4650a2c5c11a43f51329106c4d6b8a001da0a90b4661b274a937ca1356237ac64a7aa909cb7093b262a1d44a456046a2234bc99bbc1e4fd7528f4c24633c644cc3a988b035363709e5e0531c80b8670c38eec71f07c6a11815ab3410cc0e482583416b7950006747c51ceb138d8cab93f7a356661cba683b0dc6897944064a35434d4c49e08b4f4265160529a85832090f9a3ee2e352de149da46cb1261823ac52ce51c5122cb06bb578283f69317fc0971e09334fba134ee44d7cbbc6f9125126e07e8d43aa58ac84d83479ec78b5a67444ec6274a94c4a68576a4d3343e2a0621448cac7e441da3ab9ed5952b0a115b567becada9ac0cb10ef1939443560cc513e4b1b5d853b1b921a601adb9004e31e4470cb3d45b4bdc11e91b050e2d945f1f385e1173f2cd23da170a5e76826b5c5cfe1e049fa63900f31b0880052a0f78f4faccc2fd45e956c01e88a0de7853d4136002559621cb784fb6282b23ab7b15203c05c69c1ac51d8c35b46a11191f23520bca8b7b062e6398edfc75ad7578e5ae2ca02d7c5a8a06d0165843210386b75a0bd686e7f4b4104b93840933b39107035764183f61dd5968ba7c574963a8f274b08243a0497cb733c195797ea5adcd710b10c57ab621e705a09982c0be13b5111343ab6501b0ae684bd1802178c8fa1ea22895b6039737633b2a8fb054e09dc779c9974f8d077a73a6a7f39c758e938b99b60f5915bc6fc79538a6511a433990c5ae4fa5aefd322c32a921792be5bd53c21a017cb5aabf50b59804b31b5dc755e8bc1d82180200c1862960b51467fa74ab2c7d72053d947918ac663d11b13ccaba16c561b7bf7335dae8fcfe0e096083402dfa4050b5acdf8c650b881fc86ff1a90d4e747536965ec3e58b744a2e9ee4b988b4c30dfe5bad970da98927802b64d"
+                  },
+                  {
+                    "X25519 (29)": "c509879d14b7086d8219d4ff1ec40f9453937c921ff091bca36fd63b267e4726"
+                  }
+                ]
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
               },
               {
                 "name": "status_request (5)",
@@ -1111,22 +1276,25 @@
                 }
               },
               {
-                "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "0000010001140020a607ca258410e10eb5aa90a098d85246a0c2308d6c9b064107b31400cc80343700d08011fd6ac7336ebb321bbc5884f58b8c298908cd1ac2ac2150503464663ea4bcf1c0326f39ed14f57b3d09d950368ca9da9bda545a745d564a4911d873695d8b6f6b0ff8c728a5228e2c9b4e57baa7b0ecc06fcc603c711928109c63a94abde2b760d36196d4f578d9520e3ed6c67e5b6b78f1a13f98ddae6b6ad03896f20d8911d76a330d70647898f3a8bd51efd55962f8d95c56b40d331fc80aa26e160c6e817c633ca1a240688211046604085affc82bc8368ecfb6b4362e05d1e0093a5c23f5ece0940b466bac45062c3a765dc3"
+                "name": "signed_certificate_timestamp (18)"
               },
               {
-                "name": "key_share (51)",
-                "shared_keys": [
-                  {
-                    "TLS_GREASE (0x8a8a)": "00"
-                  },
-                  {
-                    "X25519MLKEM768 (4588)": "61cb8e567ca5df6695b4e34e4473932a9818fb44c59378bf790225e8db887764945f686dc09463372c8040c4968eac53e556964053341216392750afa501a728f21da947b984680c2e643f53a0805990a738f4b2d71c390856a9caacc80e72b741295322537297db98083a30aaa60afc249f9d3717c882a072ea4598e04a3343b72a484a637a2677b48b8138404337688919c986814c03e510e214647d1ca51ea8bd27670f6f4702acb515c3609fc9e30c86762790dc0c4637b6818548d9e948fe2a89fe0486d8f649bf8557cd20185cdab9ce749cbdc1b1f648ab71f8275ac75caeb4b2d9922dd8c0a7dd92240f4896ad367b051ccdfedbcb205973828328050639b54331c115391a0896e9c2be8c0a8ac55a043098c77c389302dc60b4597b6c0618c92102e9a2a68ce73476702064e4a3cd1a2d34aa22de033548416a4cb1923f153cd62b71ac38bcf2f4bfbd777b9a404e134031f6ea3b5d44031f180bd5f308c6b21d3921a24dd8242a2733fa0a6125cbb2107b76c54b7b181b4ce125cbef0242adca324959c4bc17bd25c145bf22bfe84cbf0189098b566140f8b1847a052ec655aab1ccece90d32a93cc6a08e30ea039233a8cd210b779713fbf92c2dd539e1c1a914f595aa4b80145a248a20227533b9f3bb2c424b1c3019a722779662096f54fc30398492c06a32c8c53d07e2390430004ca12bc053994e5382d1b886ef076b6b0977cdccbac2bb5a54cb4920675042417869220d9e63279c87ce5d49381b9748d8f10fe7911f5ec80cf1739f807211da2933b4104bedab1948200883246c3f180e13e07eb2e9b2bbd3bd9c3cc33df0cabbdac1bc512bd5e471f716c04c0b4033878883d124f4601d8145612cf52fe7c7b2f1158d69b232c157a4a6341eeb494e078886a4d98c3b282dd0274e1c1c08609129d560837c6707c7a20c53b56a00c997f59782a47471d7007828d94bd2bb8e999b899db078ad3897ee7587b76ac7bca6cf672649cd8b6ed05946c0cc0d537597699735ef71185aac22556740873a81f06992e5fc9c75e6ad20702a15a1820f17c0df563edf5a6513a17a03d95d1020133b57a348083fd5c974bf8ca0ae4819bc9cc363cb002860647b51148fc85b12978f7a46c03a5612d7fb3a5ac804a714a04eeb4fefb0c3712770a00a33f55170e7872e31c81f545bc98e302587d345255785615824a7e90775da78a6b4cc5d10afc24c1b939670f43c7a87a26e8f723934b3354ffa2f35949fc16b4d3c54cb10545d3abaa4eb73949a6c653446a4fab254d1d227a9112bc926301c51b5b556081ae95cd1dc7b39c91d631cb179a16a4582435e4a50146a6ce6fa5fb827b19f8461df7b9b2253934dc62014d82d24a17e02e95b73229927793562b73c05d999f8da16c8b6c5b1629ee7f306a2136c79f972ebe5947a4052e79660a735a5ade2ab63d59695a4aea817753eaca3fe20027364294489234a5436207b6f9a073e6f20276fd6b0f88171e4929af62c151545691d95510df53286415607823194611a25a0225737606d123f9951c25a70b7a751160105aa817b2deb328730e37530ab9a6e672130d587e1f1907c140661209aa9e39bb51439df8603785422e96822f19296e87ad081d0ca2e838c76272b722d2eaeb847d13c4af7c159aeef173eadce21bcd17a5453d306f19149aed7ec83cce5179d0ea917da16f3b94939"
-                  },
-                  {
-                    "X25519 (29)": "a99f2361ee3758a4f4db1296e1fcbe49171224d0619a5e4b620ecdeff0353d12"
-                  }
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "00000100014600207faff456fc6915a9dd099d680b47a19c8189ce7ed727ff2780c5225f615fcb620090957d513b982c72003253801cf8f905ccf1297395de624bfa9d158fd6990659330c058aeae035ea37089c6432b6aebf306a70390f229d9e259156c1c5f9a438dfa85fda7509ed408a128192f5831fd8447525cf60551763658dc0f43ebdfd691378698b7d90ce185cc51be4ed912d7ed9f66cd48d9a15092a6f560614ccf441124b4ea3dc1cd203ab1a39904f806eb8d1"
+              },
+              {
+                "name": "supported_groups (10)",
+                "supported_groups": [
+                  "TLS_GREASE (0xdada)",
+                  "X25519MLKEM768 (4588)",
+                  "X25519 (29)",
+                  "P-256 (23)",
+                  "P-384 (24)"
                 ]
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
               },
               {
                 "name": "ec_point_formats (11)",
@@ -1135,12 +1303,9 @@
                 ]
               },
               {
-                "name": "server_name (0)",
-                "server_name": "tls.peet.ws"
-              },
-              {
-                "name": "extensionRenegotiationInfo (boringssl) (65281)",
-                "data": "00"
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
               },
               {
                 "name": "signature_algorithms (13)",
@@ -1159,29 +1324,25 @@
                 ]
               },
               {
-                "name": "psk_key_exchange_modes (45)",
-                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
-              },
-              {
-                "name": "compress_certificate (27)",
-                "algorithms": [
-                  "brotli (2)"
+                "name": "application_settings (17613)",
+                "protocols": [
+                  "h2"
                 ]
               },
               {
-                "name": "TLS_GREASE (0x7a7a)"
+                "name": "TLS_GREASE (0x4a4a)"
               }
             ],
             "tls_version_record": "771",
             "tls_version_negotiated": "772",
-            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,35-18-43-23-10-16-17613-5-65037-51-11-0-65281-13-45-27,4588-29-23-24,0",
-            "ja3_hash": "9246a92df5501c06b7c286a5327ba6d9",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,35-16-27-43-65281-51-45-5-18-65037-10-0-11-23-13-17613,4588-29-23-24,0",
+            "ja3_hash": "9e5f2f2df8a00e0acb25e32360745d37",
             "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
             "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
             "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
-            "client_random": "b1859133781d1634624d346c21f2fa5a929556d4f4f29aa05a03522ad38bc2b2",
-            "session_id": "167d3edd47e58c3c375476f745d2d60804e7ef6f43a2834ab4899a805dd34db1"
+            "client_random": "07b7c7fc1cb140a1b588b945013e040be725a0a6a36b195e5e32e24b14b2d049",
+            "session_id": "1822e19e6e29c14b0eaf4b9c91fec9dd01f0e3a0eda8a2529456f895310288bc"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1334,13 +1495,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "X25519MLKEM768 (4588)": "3c62cf0b1331f16900b9270339a28a7668217dd5b65435ce6df88f5e8574ed26870801a0f87a0a059547b5d98061f75e7eca0485763e9c44288e3494222b40d2a087be2a0b3a48207215a1b49565e12b70bd0386aff5c5b7f830e09c8a75068815a32c15c1bbbffcc27340144f6ba8daf567675467154bc99bd74338e1a7d2d02e8e15cf9d938c3ba5346464036f0a9b2748370aa34f36a7589f7cc90dd25b6dd543e636ae26d9c06a0a419a4a1f0871cd2d833400d1cd7fe95478e0c0ad3c1a0e3cb8b8f32f823b25c46931ca502a58f0336b076652c5107db4cdb85b4413da47c2f9c9c12c66a233414290246cf0be39923ace53ce5468a651371a1d18b411073b48e6b7ca01887f98149c434c0f24a0ce9b9f13643b9eb0961e434b7fdc112673b8b13234d33b49722186d02394f6ac6ece42590fb05d188702b9c9a7ed58a0c403a6c896547d912a06381babd92fc4154d05a52ec11851e63ca42e760f26447404d25a84e33244441f20a1ca2c169569ec05423a1eb0fa469be72b96a75d93e54a850c2d8138c4168765641c2971996ab71913043cba93e088c8320a122561cfec21874803d809268978ac3719127f26493cc95b8b31a68116c05955598fdc820c919fc32404464251ffc8aa2e213f794ab5d322b82f09953d582018375bbb651fe11322d33545e3e53d4466000f507d5372a9781c2a65dc0e47755abcb9a3afcac74cfc6651c67a0a513bde43bc56c4712f905d7de73c88bab2c93c71efb440516125bd0a273b921345bc435eb12b9404419a2a8e8c4b7b014a1aef0163c95557153c5d500716b4ea480a54cf55585889404e101034f465a6f2b4b9a2696759f30957e8136e80125a6554f20102d860aa81a223e7bc472c8c2c7a0a185e0293f7d6a2448289f5345fd497236e398970619d89dbab0d4a7b00419c207582d6f8c701b960f6b8aa0db7950f30ab9e73adbf18408a38a62e415530f61b80986dc8dc68e338caa0143eec10736c0809ff784f634c1fbb0c69f8c0148b577457f0c68aa41556929c87e1cb4d09134f039b3e016ec4328af087259ef2562e1bc1ca8789b258a1afe44f9ec28eb3114ed0c143940276729ac7ffdbc0c1b1a6ac901bd61a710e1965757249fd5296b2cb539f1682fb9783460573edda836aa87a3763072e467a2297a7e5f3b75eaa7467c2c81ee96f6aa6cf84f637dfc33b1408a7172213b3328bdec6ab9585b783437d1332a2fdb243a54572ffbbcdc291b7dd75ab21b60eb1e65ed73056a504c5d382cf3bd74fd6768d776128f69652300b66e078893aa7c7c4f2c713971d8a123fd1ca1d9d898b2ec6a0c794232278ccb2301dbb0216fefa7505abcac2e1c98ee8bab0ec97420135aa3627daa38d5401a94f7a5aaef6056f936b646b50fcfb08c9b690de5b89eb03444775218b923e0603177700cc8906c664621e6af709f7d301b8a055b12470f3961390d31bc4f726239a6a4b3c13fa6416092268346541599939302079ea76471c454a19f95971838ebed5708c2221fec26a0c4a7a4eda81043c6d6da85e48c84f43a4cca814524aeb21ba70564a189e3a41624e3009eb152580230834663eebf56c339190fd061ad7e58074af79e477b01f42dad9e66d84020ffd35370e2a49c766684c5eede3d321de6d88469bd79705a73b31fcd01e23c96e6b10bd5e736e39cc667f98871ffcb75531"
+                    "X25519MLKEM768 (4588)": "c0069231ccc8e864429f01bd434528de3b5eca62c46824ce39b7c0c723b7c78ca66f085cd7a29ee735a66733b120f5531d5437de078a79d49581820252b54ec31b08f98084fad9825cd488a8a0b385724f71d0713f6a3cb388a66d878e1262a18a3b118bea163f9399b51c1c0b0009aef4782a74ac64cc4d04d83913fa00c990a8dbb35aee5b1c8ce74a380a9fa7142b4b0c17f8687fbab2472eda8bd5669689aa868ad36a1a668fc607463593c28a5698e38a598d6c90023b53c003cd3f9cc4cfb2c395b372a2697660cb9835920f12d700fb938ef2c3bc5e9482a2c8328ea0a4c04a098f6b525a5b66232bc10aca34ea77cfc78575cd8218a5b30c9e045fc6533e9cb733188928083b01e66a0d2079cc4cd2a892994474a20f163c5b18517f67c85597d268be342ae97647f7208e8cf4b19dc7092030310b617d9b8cbb2d92c391c4b35b75cc8699b6b0087c8785256348c3355198b0a56c54f42774012789abc90bb3a03c9985bbc503c578a2e3e42adf5c4607d3473de69e0e877dab145177bc8273333235747fc43531a66461eed0720f4b386a482ae81491fdb318dc310ed298b5ded442e5aa31fea6c129c90c9774612c4b98e798c0e49cb814c22a6a6312869b363592b7e2c55487365cf240305c0b3b006a6c05ec2b11804316252d7eacc6f8955d7b29cff9b9a953204fb140661ba2a3e232b0b3155dba56a7a8293832770e5701152d10bbecf0969d0155acbab7d1d0b07058c590a35dcb6a84b956c0579300b194b2206334be050f4ee342725232913b5c460924e2848bd52abeddb8c522494639d82f242bc105864e0e432fc554bc874b1926d940cf8a4cada392aea60c16f05584ea158149826333b902866940b227a41324d559caad94a38f6238e7136fa31ac0cbe8be8833082b3539ad76adb15789b9b4b32ec90b42ec9d76301184ec6a0d5790352c512a719277c606a358b1feb81dff164a5353bd8fd228b1b90b5cc367a13a55f3e25a90b02e234c18621ac223031240e0a24a025ddeb8607492b4225998acc2025e77b24027ab6f831f721b2f5dd4b77107b28904944c95390c04d0d14237b8a87dba4a7dfa597a692c9ff205162ef16b08ab235c57ca23ac59a71c91c4a4c11b104d865675d774afee2a6a562b6744bb5398a66730e68fa157b66d8a3ec8a46c33447ce52963ad807315f91d7800a69b793326907a74862544cc641f95c1c22277ce591e0889702b989e55e47eb8530c769abb18539e2f6239bd56b142fbbd47753f3a6005f47cbdf95bc49faa35475a6738c1abbba10233ba85c45bae89032e7305b8cfe110e8eb455eb5c9f5e2c5a245001eb1bc72c798280ca2327424d19ca5ea4a9bacc0c3a58ab49c85469ce781a0b2cc8933b19374aae1e846a4f93cda894880f3182f80558dc8bb8768a1a83ab2f43a071f792b67939fd33492fde1bf2324b2e58459623766d21c63730c31d0891b11454f74f3bc300482952cb755e72e147a4784d26e7dd6c41f8604a8304542a799b3eb905841045706a8fb049e99e121f0f8973a782fab031569bc753f494c13569b5b2a72c206807bf61404ac5962382cc711b82eeb15735725c7a5b57d199a73bc67078789111954b6380cb2476e24660887ca5d38986e52faae6e69e6d26a2437390e9aca4607f1f7d848883da02b5fd015dabacc86bdb9d0f79863a0b32970484b"
                   },
                   {
-                    "X25519 (29)": "6d0b77965c4ec1eaacf5f1dfce3dbba4b49083f3947fd58ede37747ac777251d"
+                    "X25519 (29)": "bf2c8a50f46592951049da282cfe18c8b66047d3a8925d7c40b90aec8040e748"
                   },
                   {
-                    "P-256 (23)": "04e1bb5cae0f05ecd98e7458a1253ea021485f5ea6f1eadecd9eff64c2f91a3a82a5a4a13c0a3f92e22a47521d169ebca331334573cf500ede2b2c6b26fa8d6a36"
+                    "P-256 (23)": "0465a13fbc5c6a8ba7db59e9f598f10eec1a45fc4d7dc6170843177a3a6c60d27ad62ad7ac3998368803df5e8123b6775c785383e79aa3a6f003573c27c0f383a9"
                   }
                 ]
               },
@@ -1385,7 +1546,7 @@
               },
               {
                 "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "00000100011f0020cfdca28434e8853d71e9798a003d688e8551595963324d23e1a3a2fafdd4c54700f034b555d65cd39425ade7aa77a5c623e6df0483fad856d934b8e7a174eb3b4cc9228a9a8562594acf7d36b46686342c0b1370fe34eb3d5c07275edbdc9eb2acd967a17d70ab343f93b43988bb59d61f6ff581ef6f8c46c4b7452795aa2d6d115ff4f31d2c148cf54882f5805971c35856c3ff75a30225a95c5e5f8669fdf4ff8fdf12178d5803d5705ada36ea2e36232e66584e8001541bfd3c25f43fdf79a85b68f6d80f0aef57ec487b40f4e5a8e0d1b946190d148a5337a31bc977ae21f342f61751475bf424b04f53d1a34b4104414f83046b0793055ef70ff2ce92151c3ea599275eacc317b0a6758533c63b8998"
+                "data": "00000100012f0020efdc3c02bef967b764865a9bdef7d22890239367ced32f5ac4bddf5b3093c95b009099210ba22e615e84be55eac0ef943e95423277db929242f9cc9ec47ee443141d94706632873c75dd18148a29e5de00f80352a6692c8f66ed6e34e1100b190f4f7eaabb429ffe9ce267ff31e778f7bcf2d46a08fb97243fa26cc0e543147b39bcabdd60779e02d2519c4513f896c8a80e334f6ce16ac1a1f643711e5861e5da322d9eeefcac021d1019071fb7d4ef1226"
               }
             ],
             "tls_version_record": "771",
@@ -1396,8 +1557,8 @@
             "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
             "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
             "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
-            "client_random": "c2607566771baee911fb151552107cafbb08932f85e5140896aefce281283ca8",
-            "session_id": "11690f4bfb39c0e42787c035392ecf50d24fa52e464f2c2aae69fd9f51a2cebe"
+            "client_random": "28c6c6cda6eeca4320b94c350e422d8d1b155de0d522c3fafd72760a0b3a756e",
+            "session_id": "61fff5dfc33967dd191c20b244deb05a18e7b1848137cd03beb817cf3cce8e54"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
@@ -1463,7 +1624,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x7A7A)",
+              "TLS_GREASE (0x2A2A)",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
               "TLS_AES_128_GCM_SHA256",
@@ -1487,7 +1648,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xdada)"
+                "name": "TLS_GREASE (0x8a8a)"
               },
               {
                 "name": "server_name (0)",
@@ -1505,7 +1666,7 @@
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x1a1a)",
+                  "TLS_GREASE (0xdada)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -1556,13 +1717,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0x1a1a)": "00"
+                    "TLS_GREASE (0xdada)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "d9f5183a8529f4893b1826bcf3f4ccfed7cd0f210d531629e1d0ae96217c9a822a1a07780a2cc9806c2cb75036323a3c73b422b2441ca4d88e76b75e14089c3cb4674fa2c88c628a242548da0cc5e3bc18f7283ca945595aa03d95390b60b952e32025d873081b265147d542af37c9fef95bdd156635d7269bfb78c800ca195b139030096555cd41c9ba54b427dd7395fdbc2b556876b9531e8c860cc9752199348b319a53fb3002a3e8214ab464ef0c569b7519358262d86c50a0e05bb19aca8ea39c948879132b8859840347a7c0f5e1a624fb60d2987613aa0e1b56688a9b0d70374823fcaeab641f96b2c8e9b6081078b95866647e620105fc73559b20a4241635e57e63810f6f4cad95067012cc30e0875652e953919a0381f3751fcca464004f2e40ccdd946f8a0a507452058321ca50388e2e422d5f254f2a4a14e10b4608c774f235581d30285e5b655d8535ed40cac0f27be2d8681d11473da7b459601c90b8bdab8933fa81933934be316cbe1395ab0dd22009666027a08dfa821cd4453095f696445480d85c3e15235ab9e5cccfd6b9d6c3cbf35b6e88960c28a419a57997d2393760392c57e2b2cc3c2d88554de7f02c930164f7c1857c9aa770c16bdf968b574b9044969a50676696f075eb71962147978618bf7149928cb155fc7308c17c54eb683783ac0f1a90c949810f48fac2c66069fc94ab8380a75a370abc49b4c608a8bdaca82efb6cfff956ad6280c4209d7bf259cc871010a97965e38dfec5a74b418e8aac6c7a85b4b5a43791c4b8d6684f6f6642ef3a1d057437da1959b0b03001340e53557eaed02cf38211d4f2412557a8acb1b624169670212d2ee23e6769aeace45cacfa5d610939ce4951f6e1a5d7f7ba56949f96ba01aa28bca504072575a2ba82c70abbc4954665838bcd762c529e40a3242bb4296a179de2353445c9c17b3aedb68d4f140b87750f6d63b0f315a65e685c2825a21b648cc40abe7239c5a356816bc6747c3b9e2cf7948d742358da76f56b846e84b4082892c5dc7cf6540b2527759c45222dec60be57b0aa248eaca3b383b9196e371dc1536eb192a9280b2e1d4498ecda46d64a81afcc64523357408ba902f4946aa86a34d21100f40bf3a574780283f7f659afc0431c3a0674505363811e122b0105144913261415b0bfb8b3484cfa0c5406562be4a99c56013c88a1bbaa70017cbe8b72a849ac990eb6aefae956c699caa0c487e03092fb524bdb289fbd232f172959ba9715ca01bfaa015c670b2ba101771434465b76c05f524c76d708c6f1a2ec9203e1b19a70544da82bbfd8cab0ead035fcb5612489abd229815d1687159207de284e3ce078b7f31000ac53a5189a4db786b2298da55803261b63be278fb67caa5a66b723190dfba835c1670100e08f93b80403eb7fefe14dd709391ea43c5de130ef81bc0dc31438010177a49d70c93adf2a5ed7bb846c62424cc4834bd6b671d0a736a063359cb731826c36f5777a51a13059b80314c42911a43c9a69bb318442590c4d4ba841b8c4ab7c2b33c5c55f81c7d9f2bc928935da9907de7c7354dc29d8896f4cb435cff843eef942808063cd770edd6c1aec83207f5c8cae465a8fe3c37a9b0d0c2f4994137843e0eec0e2b6fdf40c2a136d8a74810a6e37424fa1de5b560be31b3477c5027be5ad5ba07e09bf47f1ce48aa8e076bde172c9263"
+                    "X25519MLKEM768 (4588)": "168132d65801335446a954c287e94e540b946eb84d9b268291b92ab0059f5747bd89e6833e5c3960b01f331593985535c455a9be9b5780228fd6fc27a636a42084791203c988399828152864305e027796281591ee47006c431d030c524ee30d6203a32a4996ab61265e0b27ca2c37c9b037e35ba36f870201280f4ed0891415c0aaa39e8824ba0b44ad67261c7151ae4928be7ca155ab92133ba856c320509618c70c531d4251882f10cee0bb62e8a06ed7ca75523921a677c4fa043fc3b4b9ac37c9f012c960abb534ec5a47ea64d1b0b02115170c590fe4f5c40cb62a9a168fb2ec9dc9999750c0981536b7bcb48a85f1c8e459636329c95635c111470099c0c6d4d52a516305d8ea850697ca44f6aee9e28e1da12dcb0351d4c27dbe9b221da24ccafb6392066d4a271ccbd6b53ca4b4bf2a7e634cabf4e649d8c22ff1835d8e48626b80803986b13617b90c92301c5492318b81da658d48750b7eb7156e3c1fc222c3dda65491f70a40dcb0f6fb9918429a4c13ac87d117dc044bf390482b8906e3186f5d8ab506cb4d9ca58b4c1a1d62252ffe8999f6cb56412892b4d85e7f2c82ccab847396250ee65c8a340d5438c863db0ff47074ced513f8153633764b1b0897f122b375e0cc3f43b31aa65cf773bd0e98493a07cb6941b53fa45828ab7ed6ac8cada6167a224daff41cf1153bd3a34ac62884bc55be34c22866951e24932f99e62742590cf4f3897f867188e46405f1a7c95214386490df721bcc5ab0b68b235ecc06bf12cfa2a62ff752b4ec0593ae0b1720f7affefc089537afe260032971700a85a777c2bda3da747ce6876afb30a5d25acf559e70f535e70807ae3004c729923191685a2b129e5c1df79367b48ba462034e411021af5b8f9d435d7687115da34a2ea57e4070cca605b2f2441019f47e9c278bd2940ccbf94f2f8a65b5c537f387a4a661547a882a1ce55a555609ec9538fed75cbdec31585655b9e41161b502730b124578345bb42306302755794c53218348b89fc43ba33a611e6ce34518182b35305efb5703a86597c491a041261fc4ab176a54cd4112b900edc524d735e47013b9c858d8d1c1146c2db950abbef681405540ce077d7b5c0988d25b91b63c6dd734738baf909a53f1fbce30858eb34c3aaf8bcd44e2950454c307638fdb9a8635033d53010d90c49a3b56967ee99c788195bd320a13291442f0320de77f40140de446c03dd56c41a0a75b9666f13b11c0b7824ea3801710665fa05f0a4427a93c39d2972262fa1b088780d9f5b0029ac87184824135aee7049bf4063c627bc185c046b0868e0aac397b597e25c643fb49a54d576ae14546edba32248714dc66c09ca278b8b24c5b6a5a0a093d5e908f0d008b927aaf7ec25aa3a66c8ce32bd86851287cca7d911799f860a468aa85a2b8c0958a4ff19bf2a732a8b0bca27b5912e780e704bed3c700adda07df47474e188bdf33746cb416f8e0af87568225f8930d670401803b1abca08de50231c36b4830533bfcb9d6b24382fc68210c8bdb9a012e699395e02f97cb56f021343b399807b22420ac6eee5709cc7ac3999a32dd7092cad54ab6689a159ab7d09024b8e9ae39e039af0c7e0ec9bbbdff651088a5e543fc96c35d0d6e7210934961c573a53c0da8899b46013aa4e0da4ceb7c2dad986efcc89cc013a8cc4165df1b0a88857c2f8369344354"
                   },
                   {
-                    "X25519 (29)": "9122286a26502f7d930fc4f5359751286c365fa4519309cf86ca2825a06bb378"
+                    "X25519 (29)": "8f0b065967722b8f87641c893144a3795b5493df965e5f72b9e2aa0e7e494a7f"
                   }
                 ]
               },
@@ -1573,7 +1734,7 @@
               {
                 "name": "supported_versions (43)",
                 "versions": [
-                  "TLS_GREASE (0xfafa)",
+                  "TLS_GREASE (0x7a7a)",
                   "TLS 1.3",
                   "TLS 1.2"
                 ]
@@ -1585,7 +1746,7 @@
                 ]
               },
               {
-                "name": "TLS_GREASE (0xfafa)"
+                "name": "TLS_GREASE (0x6a6a)"
               }
             ],
             "tls_version_record": "771",
@@ -1596,8 +1757,8 @@
             "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
             "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
-            "client_random": "c0ebda4620dfcb5cf30d129f868054dd3f9a7f8316df4b16e775dc2ee94e0644",
-            "session_id": "52f154c2add74543f7dbbb72f0137bb41c44b50a4c2c248ade8fe8828a25e4ff"
+            "client_random": "a27bd80f33eb24206fa55f78fe4ad830164c01717db7f54bd14c4641df598373",
+            "session_id": "8cf089caf16c96e6e7f3108337f7bb80257726cdcba915449330a5a35316ab17"
           },
           "raw_http2": {
             "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
@@ -1797,10 +1958,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "c68c1730400d716c160b64757082b02c02c36fdc5dc1c65483bb255fcaa8a8d0a601399a18c34eb6582880d62ba35b7f8a5915a5aa7a2274cc10f02f5a86831f44856a139d89a0bb47ec58cf978a951a120aa548c3e898f2f09d565c970c58ca2fc9145ee97cf49cb00a684c66c519de5a7d11636b092ca115c9a74cf6ccb24957f7d1c932a433de825125a42992fccb665a45f7e790af6ac165b35224715c79691c0d34a9fc21b5a673bb728555c878c809e37a43729267d69190e61bd91a3351501212952d40a57cdefc62b268ab6889ce3c5275953ac75cf711177052f068ccde832b807a1ca5f40058dc9c2ff9cb97d2cc368852ed8845ff321adbdc09986c7a9c52c594e1414d960a3d28b31ea24d531293c4d4482e1b1fc2839f1f0733a56a591608bb15570a9a5104fa8124984453c8eba54bd512ae302e62860382c8a5e0895e73e126df750158156997e309a4c1c5fa604ad110104a11259f0179e89a03c56579520772ce72cf05d41dc84c07cadb4da049195ac5c313fcb31ea6876a607e744293675a4a63cba28e81b35e90c624056a62c7bcbad36deca35e02e166c750a980b1370c4c9d77b9beb48c3e88a48f25a69b17f63b90bb00d2f0228c6c236466b222a47d30381b961a94be4b1d1e23cb60c39884d7c0345a81c6109a521a333b53b28b74a9af5b7d2b6893dcb089f154854fcc09bd227f07a7cb629a68431c5c4d8726da3213fdf54f809b08b6b26187697070f55b4bc97541c794c1038e00165bf8dc3820594eaae62c4f6a6793d0c0107b10a50118ae54a0f8b885971228e1f555e0d969f0b73f992ba114b00babf07eaa3c15452743a4a0c054c350f4588e8be736d08914f0d69a4909a418e2a4b892a5354278c456218cc45fdc40331877858312c71cb8a7f5f01cf68b9018f5bddd6cccd2c64933db29ece403d82418b180530d99baf7516ed2dba18c9273f1ab5ec9f67c67696de8161bd17460d457c8a0f13293831513564317991b00e4af54e1aeb8fa4c321313ee465a0cd50daa7a0562e6b8ee464ee00b47c1092987e074a53008f3463eba8b4dbc5170fe831a8530b84d36c950ca5f282b1a0937cacb373a19cc012bbabaa854bab63655fdb230dcf6b3568876051ac712000a2f47acb3a852aa5a38ddfb0b401536e0a22e139408da2783a733880f52a76b5b600223672950710ae1aefdd6a3cc127e310aae444b1069cc83f87ba461c4c537110f112c8b22454dd23b187db5167e5a02c5f3514508a3cdaccf00cdad16f23c987505d9c72d570339995468b82460dca2876f646775223ad95c5f455103dd8a48a2a4969e12aebe609818706b0ae10544bb90861207baba98130739c2c109ba0530ca621c1840545951bb60992dbe640911424686797ec0858cc45c06776b717beca39cd782a27ab8f8e28dfe173c2e517ae1a6cd71e94d199002193b922747ab5d5b7f722352f0d80a4679b9726008778924c959b27fa65d31039485662dcbd33669542690ec367e3a7679f24a329641d1b450a48674db86644df126e0e74ec7aba3d58889217239f4ea606dc97237d2b590ab1f54966270d137cc2b167e50bddf96589d5c8ac8c979337499a02acdee1fa61f62a70fcf6f5be458392a847ad2e46e96aee0bc5470084ed4d982f6e9c4bfcf38026d9e28b5edc6cd1c67360b96e2495110ea95f8a0fe057348482937"
+                  "X25519MLKEM768 (4588)": "367324ddf9541c431af7734f755223475983a84b5324b49f03ba3f5f50b1e2f79021a98907db0920db852fd150b7140950acc585689f86a1bc8cfb3b39b5becb15656ba0160cc5510c35adb1846419b5814fc04c94b843f86279a403b9d1b310f76ca307b259fdecca6b908ac1a83e6db51c36573ca6841672b2675b823ce8aa2409f41162a30af2a20938636551510fd9c4cae7c47b4dd79fc2d7aa9600c58ac10999912417d66366f928bb835936d7066e27b901a736d713648138530bfa3a7504022eebbdd9d6936394c344b7c680e27e0ebb683b7672fbba04cc372f2029af4d5734e28c4a19d338f7104d65f963c79697595896bf9b86935445e46a25b26981b130893b810d50b0523319b5697b112ee96a0722aa6628a39c5138fa717bb2c129790810ca7a0fe3316caa9058a984772fe87a39b6427cb5306ff9b5c6319bd4ac84e7c40f6fb1537bfc196c9c6455b27527043ff7134ae4fa379b1524538b83e217668c54417d7c859229c45933526e022534264fca710de3c78cec51502d8ba38db851730011b1c88e9baa000a0003dafaabf6c9b5890c410d1b86300427a07c96cf31c056478120753fdb494ce2d7967b7a9cc2613d1a9a06c753178416ca9f0ac72ae65fe941aff338c515220347d84b327c73710381a7c5721470cb0cb8436ac04534e6bfb27896e7175415284b1ea46e2a973639219819318cbd704b65cb00c0c146f99b2f10f940d3995f1a75980a2c245dd9b97445b9f4846209ab3d3329219a991433d0361872ad26172fbea48fdb2015c14c053e0c077c380bad304829b30e8fa3825e1035e3796da001b56574b3e732b17ea26c334218d3e40304b81d7ad0905720362cd2962a4a8987c3466e59cd93c194c01267934275170a8096ea5eb351833c96c97ca1526f4494c2096d8a4c68a67326caf106d4c52cbcca370ad0c2e6f8828fe3209f05c69f528d32aac850a2223cec4ff97325c3a957a6c347921c321105ac3c21657bb9353b429c111081eee70972d4092acc0876a369c998acf4f62563074b93773054452460a74b1bf4a49529ae0267bd11930107e551ad1020948ccfa704cdb461489d14a43b1a16c42806afb5b528b12899d70faf87962aa85fc5a884056c0a5ee006f7f676bd55b93ff321de47481b795b3b016b20199b976cbf7a75714d71bf0869c3aeb891da7b879acc57b2e5a9a25180b45895ae241fa8ba078c6c17787cca5cd5ad091102d3a67d7fea2dfe02ba23ac981a43aec1f28ad6554183b12b3e8c24b8472173417742d025309a2a169a37e92b6852e49eeb459aa07962b6b83c3a46bf0224c504f79063b22cc8c47856485bd2c26d143800ae3a86bce9cc5b6c9122e0539c604ea0c240db545bc9ca4cc70a48a5307048dac4d6589b44c076482112742b325a989d01cc4ad7ca1648f598a454020c7856af60aed5516116abb2a9c86b3ce9c810a7cb9690a5be6ac4ec484dd4b237ddc6c27ac6479bc81313495c9c24745fdb1ae0b680795357ce44113aa15afffcb199f0b16ad3284b25a44e573a58f9988bc95c7c69aedfd08727dccd8c843cf60c7fb5c7a16a034d3cbb73c1303ad1d77338ea37123487ea0888cec57c2423b949bd9e3840e3b9795763b350295cf8bdc5aeb638acb3fcd28c63dcb6266c5d922e3b6454ca03d4f38d9c676b08f02e7e8955dc4a9efb12102b976c306c"
                 },
                 {
-                  "X25519 (29)": "2b99468b2474cf96fa6936b4cb276c24a96af16a804254fbf321d8613e4a690e"
+                  "X25519 (29)": "e3120e747de410da1dc8fbd6169d1e0867b3a22ca8caca48a5368b9539914704"
                 }
               ]
             }
@@ -1813,8 +1974,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "17487ea0c0a3202418f0b8a8c181ce3f197fab2b4faed8aecc4e241c06f6efee",
-          "session_id": "45c7b8e12ada8e7c14fd175af51dc4082c3433a00677eb377fee56622959400f"
+          "client_random": "7adf0a0615aae4dcb624d412a58c3c9f73173b1435f105f08da22e48ad072315",
+          "session_id": "63ac79595ece0e673bcaeae460803a8593d8212947eb8556e49ae5ad5be22e48"
         },
         "raw_http2": {}
       },
