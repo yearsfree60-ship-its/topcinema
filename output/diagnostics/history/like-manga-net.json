@@ -151,5 +151,22 @@
     "rate_limited_detected": false,
     "static_block_detected": true,
     "signed_url_params": []
+  },
+  {
+    "date": "2026-09-30 02:43:31 UTC",
+    "url": "https://like-manga.net/manga/the-villainesss-match-is-too-perfect/2/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
   }
 ]
