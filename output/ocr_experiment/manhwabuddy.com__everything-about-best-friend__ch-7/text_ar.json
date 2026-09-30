@@ -1,0 +1,636 @@
+{
+  "manga_id": "manhwabuddy.com__everything-about-best-friend",
+  "chapter_num": "7",
+  "manga_title": "Read Everything about Best Friend",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I'M GONNA THINK OF A BETTER NAME LATER",
+          "confidence": 0.93,
+          "text_ar": "سأفكر في اسم أفضل لاحقًا."
+        },
+        {
+          "text": "A project by Omar.",
+          "confidence": 0.982,
+          "text_ar": "مشروع من قِبل عمر."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "Ho 2H L人 2E2",
+          "confidence": 0.382,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "T/L-OMAR RAWS-YOU'RE ABOUT TO FINDTHEFUCKOUT",
+          "confidence": 0.932,
+          "text_ar": "الترجمة: عمر | المصدر: ستعرف الحقيقة قريبًا جدًا."
+        },
+        {
+          "text": "AUNTYY..! WHAT'S THAT SUPPOSEDTO MEAN..?",
+          "confidence": 0.932,
+          "text_ar": "خالتي..! ما الذي يعنيه ذلك بحق الجحيم..؟"
+        },
+        {
+          "text": "ONLY YOUAND SUBINWERE LEFT.. WHATWEREYOU GUYS DOING?",
+          "confidence": 0.942,
+          "text_ar": "لم يتبقَّ سوى أنتِ وسوبين.. ماذا كنتما تفعلان؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "NOTHING..BUT YOU CAN'T SAY IT LIKE THAT",
+          "confidence": 0.917,
+          "text_ar": "لا شيء.. لكن لا يمكنكِ قول الأمر بتلك الطريقة."
+        },
+        {
+          "text": "IT WOULD BE DISRESPECTFUL FOR SUBIN",
+          "confidence": 0.952,
+          "text_ar": "سيكون ذلك قلة احترام تجاه سوبين."
+        },
+        {
+          "text": "SO DIDYOU SLEEP WITH HER OR NOT?",
+          "confidence": 0.954,
+          "text_ar": "إذًا، هل نمت معها أم لا؟"
+        },
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.965,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "AAAANANAESMME",
+          "confidence": 0.186,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "YOU THINK I DON'T KNOW? YOU TWO LOOK SUSPICIOUS",
+          "confidence": 0.944,
+          "text_ar": "أتعتقد أنني لا أعرف؟ كلاكما تبدوان مريبين."
+        },
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.976,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "DARANAAAERIMNE",
+          "confidence": 0.177,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "COME ON..!!",
+          "confidence": 0.875,
+          "text_ar": "هيا..!!"
+        },
+        {
+          "text": "...YOU'RE TALKING LIKEAGRANNY.!!",
+          "confidence": 0.908,
+          "text_ar": "..أنتِ تتحدثين مثل العجائز تمامًا!!"
+        },
+        {
+          "text": "OH MY..!LOOK AT HIM GETTING ALL MAD.",
+          "confidence": 0.95,
+          "text_ar": "يا إلهي..! انظروا إليه كيف يغضب."
+        },
+        {
+          "text": "ALSOIDON'T WANT MY AUNT TO INTERFERE",
+          "confidence": 0.935,
+          "text_ar": "كما أنني لا أريد لخالتي أن تتدخل"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "WITH MY LIFE TOO MUCH..",
+          "confidence": 0.936,
+          "text_ar": "في حياتي أكثر من اللازم.."
+        },
+        {
+          "text": ".I'M NOT A KID ANYMORE..!!",
+          "confidence": 0.88,
+          "text_ar": "..لم أعد طفلًا بعد الآن..!!"
+        },
+        {
+          "text": "YEAH YOU SAD IT WELL,SHE'S NOT A KID,WHAT'S WHY I'M ASKING YOU..!",
+          "confidence": 0.935,
+          "text_ar": "أجل، لقد قلتها جيدًا، هي ليست طفلة، وهذا هو سبب سؤالي لك..!"
+        },
+        {
+          "text": "STOP PULLING THE HORSE TAIL, AND PUT ON SOME PANTS,PLEASE.",
+          "confidence": 0.921,
+          "text_ar": "توقف عن التهرب، وارتدِ بنطالك من فضلك."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "EEEEK",
+          "confidence": 0.994,
+          "text_ar": "شهقة!"
+        },
+        {
+          "text": "YOU BASTARD, THAT'S BECAUSE YOU WOKE ME UP FROM SLEEP.!!",
+          "confidence": 0.941,
+          "text_ar": "أيها الوغد، ذلك لأنك أيقظتني من نومي!!"
+        },
+        {
+          "text": "*SIGH* THIS BASTARD...",
+          "confidence": 0.946,
+          "text_ar": "*تنهد* هذا الوغد..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "..IRAISED HIM WRONG.",
+          "confidence": 0.929,
+          "text_ar": "..لقد ربيته بشكل خاطئ."
+        },
+        {
+          "text": "CAANAAANSMME",
+          "confidence": 0.173,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "..IDON'T CARE WHAT YOU SAY..",
+          "confidence": 0.903,
+          "text_ar": "..لا يهمني ما تقولينه.."
+        },
+        {
+          "text": "..ICOULDN'T DENY THE FACT TO AUNT THOUGH",
+          "confidence": 0.888,
+          "text_ar": "..لكنني لم أستطع إنكار الأمر أمام خالتي."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": []
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "-THE \"GRANNY\" WENT OUT. -I GOT THE FOOD READY -HEAT IT UP.",
+          "confidence": 0.921,
+          "text_ar": "- \"العجوز\" خرجت. - جهزت الطعام. - سخنه."
+        },
+        {
+          "text": "IT'S HOT TODAY, WHY YOU HAD TO MAKEB$#$€￥￥..?",
+          "confidence": 0.784,
+          "text_ar": "الجو حار اليوم، لماذا اضطررتِ لطهي..؟"
+        },
+        {
+          "text": ".ORRR",
+          "confidence": 0.601,
+          "text_ar": "أوه.."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "NAN",
+          "confidence": 0.876,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "WHAT? SONG-HAYUL..?",
+          "confidence": 0.959,
+          "text_ar": "ماذا؟ سونغ هايول..؟"
+        },
+        {
+          "text": "Hayul. Oppa, can we meet tonight, I need to talk to you about something...",
+          "confidence": 0.929,
+          "text_ar": "هايول: أوبا، هل يمكننا أن نلتقي الليلة؟ أحتاج للتحدث معك بشأن شيء ما..."
+        },
+        {
+          "text": "*SIGH* YOU OF ALL PEOPLE...",
+          "confidence": 0.935,
+          "text_ar": "*تنهد* أنتِ من بين كل الناس..."
+        },
+        {
+          "text": "...WHAT I'M",
+          "confidence": 0.851,
+          "text_ar": "...ما الذي"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "GONNA DO ABOUT YOU NOW..?",
+          "confidence": 0.934,
+          "text_ar": "سأفعله معكِ الآن..؟"
+        },
+        {
+          "text": "AAAANAAAAMAE",
+          "confidence": 0.177,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.974,
+          "text_ar": "WWW.SKYMANGA.CO"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.984,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "HMMM...",
+          "confidence": 0.953,
+          "text_ar": "هممم..."
+        },
+        {
+          "text": "I THINK IT'S BETTER TO TAKE A STEP BACK",
+          "confidence": 0.956,
+          "text_ar": "أعتقد أنه من الأفضل أن أتراجع خطوة للوراء."
+        },
+        {
+          "text": "HA-YUL,YOU.. AFTERTHAT SURPRISE KISS, I CAN GUESS HOWIT'S GOING TO TURN OUT TODAY.",
+          "confidence": 0.938,
+          "text_ar": "هايول، أنتِ.. بعد تلك القبلة المفاجئة، يمكنني تخمين كيف ستسير الأمور اليوم."
+        },
+        {
+          "text": "ORELSE,I MIGHTMAKEAWRONG DECISIONONA MOMENT OF LUST.",
+          "confidence": 0.942,
+          "text_ar": "وإلا، قد أتخذ قرارًا خاطئًا في لحظة رغبة."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "RIGHT. TAKING BACKASTEP IS THE ANSWER.",
+          "confidence": 0.95,
+          "text_ar": "صحيح. التراجع خطوة هو الحل."
+        },
+        {
+          "text": "$fra{}$",
+          "confidence": 0.533,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "ANS.MMM",
+          "confidence": 0.4,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.964,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "OOAANANANSMMM",
+          "confidence": 0.199,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "UH.. ..THIS WAS",
+          "confidence": 0.87,
+          "text_ar": "أوه.. ..كان هذا"
+        },
+        {
+          "text": "LOOKOVER HERE... I'M TALKING A PICTURE OF YOU TWO.",
+          "confidence": 0.934,
+          "text_ar": "انظرا إلى هنا... سألتقط صورة لكما."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "HUH,.. PICTURE?",
+          "confidence": 0.866,
+          "text_ar": "هاه.. صورة؟"
+        },
+        {
+          "text": "30% KPOINT",
+          "confidence": 0.705,
+          "text_ar": "30% من نقاط K"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "IT CAME OUT WELL.I'LL SEND IT OVER SIGNAL CHAT.",
+          "confidence": 0.944,
+          "text_ar": "لقد ظهرت بشكل جيد. سأرسلها عبر محادثة سيجنال."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "SIGH I'MSORRY... .MINHO. AAAANAAASMAE",
+          "confidence": 0.163,
+          "text_ar": "تنهد، أنا آسف... مينهو. آه..."
+        },
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.955,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "…I DIDN'T ME-MEAN THIS TO HAPPEN.",
+          "confidence": 0.885,
+          "text_ar": "…لم أقصد أن يحدث هذا."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.958,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "AAAANAAANSAE",
+          "confidence": 0.173,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "DON'T,..D-DON'T.. TAEYANG OPPA",
+          "confidence": 0.902,
+          "text_ar": "لا.. لا تفعل.. تايانغ أوبا."
+        },
+        {
+          "text": "OYO",
+          "confidence": 0.485,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "HAA",
+          "confidence": 0.992,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "IT'S NOT MY FAULT....",
+          "confidence": 0.91,
+          "text_ar": "هذا ليس خطئي...."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "IT'S ALL BECAUSE OF YOU.YOU'RE JUST TOO SEXY..",
+          "confidence": 0.943,
+          "text_ar": "كل هذا بسببك. أنتِ مثيرة للغاية.."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "AAANHGH",
+          "confidence": 0.996,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "..YOU'RE SOO M-MEAN...TAEYANG OPPA.",
+          "confidence": 0.931,
+          "text_ar": "..أنت قاسي جدًا... تايانغ أوبا."
+        },
+        {
+          "text": "WWW.SKYMANGA.CO",
+          "confidence": 0.969,
+          "text_ar": "WWW.SKYMANGA.CO"
+        },
+        {
+          "text": "COAANANAASMME",
+          "confidence": 0.182,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "YOU'RE THE ONE...",
+          "confidence": 0.879,
+          "text_ar": "أنتِ من..."
+        },
+        {
+          "text": ".WHO'S SO MEAN, MINA...!!",
+          "confidence": 0.857,
+          "text_ar": "..من هي قاسية جدًا، مينا...!!"
+        },
+        {
+          "text": "WHY ARE YOU SO SEXY...?",
+          "confidence": 0.835,
+          "text_ar": "لماذا أنتِ مثيرة جدًا...؟"
+        },
+        {
+          "text": "CX义XX 明",
+          "confidence": 0.518,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": []
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "Oh's kitchen",
+          "confidence": 0.964,
+          "text_ar": "مطبخ أوه"
+        },
+        {
+          "text": "CLACK",
+          "confidence": 0.994,
+          "text_ar": "طرق"
+        },
+        {
+          "text": "i'sk",
+          "confidence": 0.812,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "WELCOME..",
+          "confidence": 0.991,
+          "text_ar": "أهلاً بك.."
+        },
+        {
+          "text": "..HUH..?",
+          "confidence": 0.83,
+          "text_ar": "..هاه..؟"
+        },
+        {
+          "text": "DON'T MIND ME,I JUST DROPPED BY",
+          "confidence": 0.915,
+          "text_ar": "لا تهتم بي، لقد مررت فقط."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "AUNTYYY.. I CAN'T HELP YOU TODAY, I'VE GOT AN APPOINTMENT...",
+          "confidence": 0.936,
+          "text_ar": "خالتي.. لا أستطيع مساعدتك اليوم، لدي موعد..."
+        },
+        {
+          "text": "YOU DON'T HAVE TO ATTEND EVERYDAY YOU'RE NOT PART OF OUR STORE..",
+          "confidence": 0.949,
+          "text_ar": "لا داعي لأن تأتي كل يوم، فأنت لست جزءًا من متجرنا.."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "HUH WHAT... YOU AREN'T STILL MAD ARE YOU.?",
+          "confidence": 0.939,
+          "text_ar": "هاه، ماذا..؟ هل ما زلتِ غاضبة؟"
+        },
+        {
+          "text": "NO,I'M TELLING YOU NOT TO WORRY ABOUT THE STORE, AND DO WHAT YOU WANTED TO DO ANYTIME.",
+          "confidence": 0.918,
+          "text_ar": "لا، أنا أخبرك ألا تقلق بشأن المتجر، وافعل ما تريد القيام به في أي وقت."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "YEPP GOT IT. I'MGOING THEN.",
+          "confidence": 0.905,
+          "text_ar": "أجل، فهمت. سأذهب إذًا."
+        },
+        {
+          "text": "SUBIN. I'LL BE GOING THEN..",
+          "confidence": 0.977,
+          "text_ar": "سوبين، سأذهب إذًا.."
+        },
+        {
+          "text": "ien",
+          "confidence": 0.821,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "CLACK",
+          "confidence": 0.993,
+          "text_ar": "طرق"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "WHAT ARE.... WHATBRINGS YOU HERE ALL OF ASUDDEN...?",
+          "confidence": 0.91,
+          "text_ar": "ما الذي... ما الذي أتى بك إلى هنا فجأة...؟"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "OH WELL...",
+          "confidence": 0.915,
+          "text_ar": "أوه، حسنًا..."
+        },
+        {
+          "text": "日 Deepsea E",
+          "confidence": 0.19,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": [
+        {
+          "text": "S...Fuckit. I'm Omar. And you're supposed to be following me in twitter tho. @OmarYeppThatsMe",
+          "confidence": 0.913,
+          "text_ar": "تبًا. أنا عمر. ومن المفترض أن تتابعني على تويتر. @OmarYeppThatsMe"
+        },
+        {
+          "text": "And I kinda fucked up my schedule this week, nvm next chapter coming in 2 days fr. andlalso leeched the raws from skymanga so there are marks everywhere you know.",
+          "confidence": 0.924,
+          "text_ar": "لقد أفسدت جدولي لهذا الأسبوع، على أي حال، الفصل القادم سيصدر خلال يومين. كما أنني حصلت على الصور الخام من سكاي مانجا لذا توجد علامات في كل مكان كما تعلمون."
+        },
+        {
+          "text": "oke gameinn 6 days ago",
+          "confidence": 0.951,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "Reply yU nely love this series. Everything from the he story to thecharacters.Thisshit is so ter than 99% of other pornwha dman Reply Bro that aunt thoi swear ifi was her ne 6 days ago Just a guy watc. H 田 bang he so fucking hard 5 days ago Things are getting spicy Reply 1 Reply",
+          "confidence": 0.076,
+          "text_ar": "رد: أحب هذه السلسلة. كل شيء من القصة إلى الشخصيات. هذا أفضل من 99% من المانهوا الأخرى."
+        }
+      ]
+    }
+  ]
+}
