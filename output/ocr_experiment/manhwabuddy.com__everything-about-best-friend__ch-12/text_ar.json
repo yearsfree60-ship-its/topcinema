@@ -1,0 +1,803 @@
+{
+  "manga_id": "manhwabuddy.com__everything-about-best-friend",
+  "chapter_num": "12",
+  "manga_title": "Read Everything about Best Friend",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "Everything about Best Fiends",
+          "confidence": 0.935,
+          "text_ar": "كل شيء عن BestFiends"
+        },
+        {
+          "text": "KAIJUSCANS R TRANSLATE:ALEXNGE PROOFREAD:ALEXNGE CLEAN:RU TYPESET:RJ Q/G:ネクロファス DSC.GG/MTMJJS5QP6",
+          "confidence": 0.457,
+          "text_ar": "كايجو سكانز | الترجمة: أليكس | التدقيق: أليكس | التنقية: رو | التبييض: آر جاي | الإشراف: نيكروفاديز | discord.gg/mtmjjs5qp6"
+        },
+        {
+          "text": "好友的 私牛活 土活 文經文旗 刑作家",
+          "confidence": 0.714,
+          "text_ar": "حياة الأصدقاء"
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.995,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "HE LACE",
+          "confidence": 0.95,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "N-OUTLE CENTER CHATTER",
+          "confidence": 0.95,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.992,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "IT'S MYFIRST TIME BUYING HIM A BIRTHDAY PRESENT,I DON'TKNOWWHAT TO GET HIM.",
+          "confidence": 0.934,
+          "text_ar": "إنها المرة الأولى التي أشتري له فيها هدية عيد ميلاد، ولا أعرف ماذا أختار له."
+        },
+        {
+          "text": "SOICALLEDTHE PERSONWHOKNOWS MINHO BEST, TAEYANG OPPA...",
+          "confidence": 0.953,
+          "text_ar": "لذا اتصلت بالشخص الذي يعرف مينهو جيداً، تايانغ أوبا..."
+        },
+        {
+          "text": "I THINKTHIS SHOULD REDUCE THE CHANCES OFFAILURE.",
+          "confidence": 0.953,
+          "text_ar": "أعتقد أن هذا سيقلل من احتمالية الفشل."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "LEAVE IT TO ME, I'M SUREI KNOW MINHO'S TASTES BETTER THANYOUDO.",
+          "confidence": 0.931,
+          "text_ar": "اتركي الأمر لي، أنا متأكد أنني أعرف ذوق مينهو أفضل منكِ."
+        },
+        {
+          "text": "Ehem~",
+          "confidence": 0.905,
+          "text_ar": "إحم~"
+        },
+        {
+          "text": "NRIT",
+          "confidence": 0.981,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "HERE WE GO AGAIN...YOU'RE BOTH EXACTLYTHE SAME.",
+          "confidence": 0.919,
+          "text_ar": "ها قد بدأنا مجدداً... كلاكما متشابهان تماماً."
+        },
+        {
+          "text": "WHENEVERI'MWITH MINAICANFEELIT.",
+          "confidence": 0.986,
+          "text_ar": "كلما كنت مع مينا، أشعر بذلك."
+        },
+        {
+          "text": "TURN",
+          "confidence": 0.967,
+          "text_ar": "التفات"
+        },
+        {
+          "text": "GLANCE",
+          "confidence": 0.988,
+          "text_ar": "نظرة"
+        },
+        {
+          "text": "EVERYONELOOKSAT MINA ANDSHE DOESN'T EVEN NOTICE.",
+          "confidence": 0.954,
+          "text_ar": "الجميع ينظر إلى مينا وهي لا تلاحظ حتى."
+        },
+        {
+          "text": "RITAUM",
+          "confidence": 0.928,
+          "text_ar": "همس"
+        },
+        {
+          "text": "NOTONLYMEN BUTALSOWOMEN LOOKAT HER.",
+          "confidence": 0.957,
+          "text_ar": "ليس الرجال فقط، بل حتى النساء ينظرن إليها."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "IT'SA NATURAL INSTINCTTO BEATTRACTED TO SOPHISTICATED AND GORGEOUS THINGS.",
+          "confidence": 0.949,
+          "text_ar": "إنها غريزة طبيعية أن تنجذب للأشياء الراقية والجميلة."
+        },
+        {
+          "text": "WHEN THIS HAPPENS, IFEELLIKEMINAISTHE CENTEROFEVERYONE'S ATTENTIONFOR A WHILE.",
+          "confidence": 0.958,
+          "text_ar": "عندما يحدث هذا، أشعر وكأن مينا هي مركز اهتمام الجميع لبعض الوقت."
+        },
+        {
+          "text": "NOT ONLYPEOPLE, BUTEVENTHEAIRBECOMES SILENTJUSTTOLOOK ATMINA.",
+          "confidence": 0.967,
+          "text_ar": "ليس الناس فحسب، بل حتى الهواء يصبح ساكناً لمجرد النظر إلى مينا."
+        },
+        {
+          "text": "ANDSTILL,I'M THE MAN STANDINGNEXTTOTHIS BEAUTIFUL WOMAN.",
+          "confidence": 0.936,
+          "text_ar": "ومع ذلك، أنا الرجل الذي يقف بجانب هذه المرأة الجميلة."
+        },
+        {
+          "text": "RAMAHD",
+          "confidence": 0.842,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "EVEN THOUGH IT MEANS NOTHING, I FEEL LIKE IM SOMETHING MORE.",
+          "confidence": 0.905,
+          "text_ar": "رغم أن هذا لا يعني شيئاً، إلا أنني أشعر بأنني شيء أكثر من ذلك."
+        },
+        {
+          "text": "NOD NOD",
+          "confidence": 0.976,
+          "text_ar": "إيماء"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "EVERYONE,LOOK,I'M THE GUY WHO'S DATING THIS BEAUTIFUL GIRL.",
+          "confidence": 0.94,
+          "text_ar": "انظروا جميعاً، أنا الرجل الذي يواعد هذه الفتاة الجميلة."
+        },
+        {
+          "text": "iacu",
+          "confidence": 0.994,
+          "text_ar": "همس"
+        },
+        {
+          "text": "DOES MINHOFEEL THISSENSEOFSUPERIORITY EVERY TIME HE AND MINA GOOUT?",
+          "confidence": 0.935,
+          "text_ar": "هل يشعر مينهو بهذا الشعور بالتفوق في كل مرة يخرج فيها مع مينا؟"
+        },
+        {
+          "text": "OF ADVENTURE 02-XXX-XXXX MINDS FROM WOLRO ESCAFE",
+          "confidence": 0.932,
+          "text_ar": "مغامرة"
+        },
+        {
+          "text": "THANK YOU OPPA.",
+          "confidence": 0.968,
+          "text_ar": "شكراً لك أوبا."
+        },
+        {
+          "text": "THANKS TOYOU, ITHINKIGOTAGIFTTHAT SUITS HIM WELL.",
+          "confidence": 0.881,
+          "text_ar": "بفضلك، أعتقد أنني حصلت على هدية تناسبه جيداً."
+        },
+        {
+          "text": "TOMPOD",
+          "confidence": 0.999,
+          "text_ar": "إيماء"
+        },
+        {
+          "text": "I'M SURE MINHO WILL LIKE IT.",
+          "confidence": 0.915,
+          "text_ar": "أنا متأكدة أن مينهو سيعجبه ذلك."
+        },
+        {
+          "text": "IT'S A BIT STRONG BUTIT HAS A GENTLE AROMA WHICH HE LIKES.",
+          "confidence": 0.938,
+          "text_ar": "إنه قوي قليلاً لكن له رائحة لطيفة يحبها."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "SO,OPPA,WHAT KINDOFPERFUMEDO YOU LIKE?",
+          "confidence": 0.936,
+          "text_ar": "إذاً يا أوبا، ما نوع العطور التي تحبها؟"
+        },
+        {
+          "text": "ME?ILIKE PERFUMES WITH A LIGHT AND SWEET SCENT.",
+          "confidence": 0.957,
+          "text_ar": "أنا؟ أحب العطور ذات الرائحة الخفيفة والحلوة."
+        },
+        {
+          "text": "Hehe~",
+          "confidence": 0.975,
+          "text_ar": "ههه~"
+        },
+        {
+          "text": "REALLY? THAT'S MYFAVORITE SCENT.",
+          "confidence": 0.947,
+          "text_ar": "حقاً؟ هذه رائحتي المفضلة."
+        },
+        {
+          "text": "OPPA,WHEN IS YOUR BIRTHDAY?",
+          "confidence": 0.966,
+          "text_ar": "أوبا، متى عيد ميلادك؟"
+        },
+        {
+          "text": "DO YOU WANT ME TO YOUBUYA PERFUME LIKE THAT NEXTTIME?",
+          "confidence": 0.941,
+          "text_ar": "هل تريد مني أن أشتري لك عطراً كهذا في المرة القادمة؟"
+        },
+        {
+          "text": "SIP",
+          "confidence": 0.836,
+          "text_ar": "رشفة"
+        },
+        {
+          "text": "JUST BE NICE TO MINHO, THAT'S ENOUGH.",
+          "confidence": 0.95,
+          "text_ar": "فقط كوني لطيفة مع مينهو، هذا يكفي."
+        },
+        {
+          "text": "TL/N: What a Nice guy.",
+          "confidence": 0.941,
+          "text_ar": "ملاحظة المترجم: يا له من رجل لطيف."
+        },
+        {
+          "text": "BY THE WAY,I HAD A LOTOFFUNLAST TIME WHEN WE WENTFORTHE HAN RIVERPICNIC.",
+          "confidence": 0.94,
+          "text_ar": "بالمناسبة، استمتعت كثيراً في المرة الماضية عندما ذهبنا لنزهة في نهر الهان."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "WOULDYOULIKE TO GO A LITTLE FURTHER NEXTTIME?",
+          "confidence": 0.933,
+          "text_ar": "هل تودين الذهاب إلى مكان أبعد في المرة القادمة؟"
+        },
+        {
+          "text": "OPPA,YOU HAVE A DRIVER'SLICENSERIGHT? MINHO SAID WE COULD BO- RROWHIS MOM'SCAR.",
+          "confidence": 0.929,
+          "text_ar": "أوبا، لديك رخصة قيادة، أليس كذلك؟ قال مينهو إنه يمكننا استعارة سيارة والدته."
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.991,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.993,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "WE'LLBOOK AN OVERNIGHT STAY. CHATTER",
+          "confidence": 0.954,
+          "text_ar": "سنحجز إقامة لليلة واحدة. ثرثرة"
+        },
+        {
+          "text": "IENVYTHE MEN WHO'VEBEEN WITH YOU.",
+          "confidence": 0.947,
+          "text_ar": "أحسد الرجال الذين كانوا معكِ."
+        },
+        {
+          "text": "NOWTHATSHE'SA WOMANICANNEVER HAVE,I'MEVENMORE DISAPPOINTED.",
+          "confidence": 0.97,
+          "text_ar": "الآن بما أنها امرأة لا يمكنني امتلاكها أبداً، أشعر بخيبة أمل أكبر."
+        },
+        {
+          "text": "TL/N:Remember, his friend asked him to go on a blind date with her and he refused.I think his disappointed with himself.",
+          "confidence": 0.967,
+          "text_ar": "ملاحظة المترجم: تذكر، صديقه طلب منه الذهاب في موعد مدبر معها ورفض. أعتقد أنه يشعر بخيبة أمل من نفسه."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "WHATKINDOFGUYS DIDSHE MEET BEFORE SHE STARTEDGOING OUT WITH MINHO?",
+          "confidence": 0.926,
+          "text_ar": "ما نوع الرجال الذين قابلتهم قبل أن تبدأ بمواعدة مينهو؟"
+        },
+        {
+          "text": "IT'S OBVIOUS THATSINCEHIGH SCHOOL,THEMENAROUNDHER WOULDN'TLEAVEHERALONE FORASINGLEMOMENT.",
+          "confidence": 0.959,
+          "text_ar": "من الواضح أنه منذ المدرسة الثانوية، لم يتركها الرجال من حولها وشأنها للحظة واحدة."
+        },
+        {
+          "text": "DIDSHEONLYHAVE HERFIRSTEXPERIENCE AFTERBECOMING A COLLEGESTUDENT?",
+          "confidence": 0.958,
+          "text_ar": "هل خاضت تجربتها الأولى فقط بعد أن أصبحت طالبة جامعية؟"
+        },
+        {
+          "text": "WHODIDSHE HAVE HERFIRSTTIMEWITH",
+          "confidence": 0.968,
+          "text_ar": "مع من خاضت تجربتها الأولى؟"
+        },
+        {
+          "text": "Smooch",
+          "confidence": 0.942,
+          "text_ar": "تقبيل"
+        },
+        {
+          "text": "Slurp A",
+          "confidence": 0.28,
+          "text_ar": "امتصاص"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "Suck",
+          "confidence": 0.877,
+          "text_ar": "امتصاص"
+        },
+        {
+          "text": "Suck",
+          "confidence": 0.909,
+          "text_ar": "امتصاص"
+        },
+        {
+          "text": "DOES HE KNOW HOWLUCKYHEISTOHAVE TAKENHERFIRSTTIME?",
+          "confidence": 0.922,
+          "text_ar": "هل يعرف كم هو محظوظ لأنه حظي بتجربتها الأولى؟"
+        },
+        {
+          "text": "Haa",
+          "confidence": 0.905,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "Haa",
+          "confidence": 0.975,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "WHATDIDMINALIKE ABOUTHIMANDWHATDID SHE LET HIMDO?",
+          "confidence": 0.963,
+          "text_ar": "ما الذي أعجب مينا به وما الذي سمحت له بفعله؟"
+        },
+        {
+          "text": "HOWMANYMEN HAVE REMOVED HER PANTIESSOFAR?",
+          "confidence": 0.95,
+          "text_ar": "كم رجلاً نزع عنها ملابسها الداخلية حتى الآن؟"
+        },
+        {
+          "text": "Fwop",
+          "confidence": 0.688,
+          "text_ar": "تلاعب"
+        },
+        {
+          "text": "Fwop",
+          "confidence": 0.932,
+          "text_ar": "تلاعب"
+        },
+        {
+          "text": "WHENEVER I SEE MINA, I'M ALWAYSFILLEDWITH QUESTIONSMIXED WITH JEALOUSYANDCURIOSITY.",
+          "confidence": 0.922,
+          "text_ar": "كلما رأيت مينا، أمتلئ دائماً بالأسئلة الممزوجة بالغيرة والفضول."
+        },
+        {
+          "text": "Ugh G",
+          "confidence": 0.346,
+          "text_ar": "آه"
+        },
+        {
+          "text": "5 Fwop",
+          "confidence": 0.25,
+          "text_ar": "تلاعب"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "Fwop",
+          "confidence": 0.864,
+          "text_ar": "تلاعب"
+        },
+        {
+          "text": "Ugh UWM",
+          "confidence": 0.682,
+          "text_ar": "آه"
+        },
+        {
+          "text": "I ENVYTHELUCKY MEN WHOWERE ABLE TO HAVE SEXWITH MINA.",
+          "confidence": 0.947,
+          "text_ar": "أحسد الرجال المحظوظين الذين تمكنوا من ممارسة الجنس مع مينا."
+        },
+        {
+          "text": "HOWMANYMENHAS SHE HAD SEX WITH AND INHOW MANY DIFFE- RENTPLACES?",
+          "confidence": 0.916,
+          "text_ar": "مع كم رجل مارست الجنس وفي كم مكاناً مختلفاً؟"
+        },
+        {
+          "text": "Ukh UWM",
+          "confidence": 0.621,
+          "text_ar": "آه"
+        },
+        {
+          "text": "AW M",
+          "confidence": 0.583,
+          "text_ar": "آه"
+        },
+        {
+          "text": "Fwop",
+          "confidence": 0.936,
+          "text_ar": "تلاعب"
+        },
+        {
+          "text": "Haokh V Anng",
+          "confidence": 0.86,
+          "text_ar": "آه"
+        },
+        {
+          "text": "Fwop",
+          "confidence": 0.911,
+          "text_ar": "تلاعب"
+        },
+        {
+          "text": "Fwop",
+          "confidence": 0.848,
+          "text_ar": "تلاعب"
+        },
+        {
+          "text": "MAYBEICOULD'VE BEENONEOFTHOSE LUCKY GUYS...",
+          "confidence": 0.894,
+          "text_ar": "ربما كان بإمكاني أن أكون واحداً من هؤلاء الرجال المحظوظين..."
+        },
+        {
+          "text": "Haoa",
+          "confidence": 0.838,
+          "text_ar": "آه"
+        },
+        {
+          "text": "Aahhh M",
+          "confidence": 0.396,
+          "text_ar": "آه"
+        },
+        {
+          "text": "NOWTHATSHE'S MY BEST FRIEND'S GIRL,IT HAS BECOME ANIMPOSSIBLESTORY.",
+          "confidence": 0.923,
+          "text_ar": "الآن بما أنها حبيبة صديقي المقرب، أصبحت قصة مستحيلة."
+        },
+        {
+          "text": "DID YOU KNOW?",
+          "confidence": 0.906,
+          "text_ar": "هل كنت تعلمين؟"
+        },
+        {
+          "text": "WOMENUSUALLY PREFER THE SEA TO THE MOUNTAINS.",
+          "confidence": 0.938,
+          "text_ar": "النساء يفضلن عادة البحر على الجبال."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "IDIDN'TEXPECTA GIRL LIKEMINATOGO OUTWITH MINHO...",
+          "confidence": 0.919,
+          "text_ar": "لم أتوقع أن فتاة مثل مينا ستواعد مينهو..."
+        },
+        {
+          "text": "NO MATTERHOW HARDILOOKATIT,ICAN'T IMAGINETHE TWOOF THEM HAVINGSEX.",
+          "confidence": 0.953,
+          "text_ar": "مهما حاولت التفكير في الأمر، لا أستطيع تخيل الاثنين يمارسان الجنس."
+        },
+        {
+          "text": "AHH... NO WAY...",
+          "confidence": 0.912,
+          "text_ar": "آه... مستحيل..."
+        },
+        {
+          "text": "IS IT BECALISE IT HASNT HAPPENED YET THATI CANT EVEN IMAGINE IT?",
+          "confidence": 0.891,
+          "text_ar": "هل لأن ذلك لم يحدث بعد لدرجة أنني لا أستطيع تخيله؟"
+        },
+        {
+          "text": "TL/N: My man about to crack the secret.",
+          "confidence": 0.971,
+          "text_ar": "ملاحظة المترجم: رفيقي على وشك كشف السر."
+        },
+        {
+          "text": "MINA.",
+          "confidence": 0.991,
+          "text_ar": "مينا."
+        },
+        {
+          "text": "TL/N: Ohh boy.…. What you are about to say?",
+          "confidence": 0.941,
+          "text_ar": "ملاحظة المترجم: يا فتى... ماذا ستفعل؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "HUH? WHAT'S UP?",
+          "confidence": 0.945,
+          "text_ar": "هاه؟ ماذا هناك؟"
+        },
+        {
+          "text": "you...",
+          "confidence": 0.855,
+          "text_ar": "أنتِ..."
+        },
+        {
+          "text": "YOU HAVEN'T SLEPT WITH MINHO YET, HAVE YOU?",
+          "confidence": 0.939,
+          "text_ar": "لم تنامي مع مينهو بعد، أليس كذلك؟"
+        },
+        {
+          "text": "TL/N: Omg.…. Dude, what are you doing.…?",
+          "confidence": 0.907,
+          "text_ar": "ملاحظة المترجم: يا إلهي... يا رجل، ماذا تفعل؟"
+        },
+        {
+          "text": "OH SHIT...",
+          "confidence": 0.925,
+          "text_ar": "تباً..."
+        },
+        {
+          "text": "TL/N:Yah, now you realize what you said ×D",
+          "confidence": 0.949,
+          "text_ar": "ملاحظة المترجم: نعم، الآن أدركت ما قلته."
+        },
+        {
+          "text": "HOW DID YOU KNOW?",
+          "confidence": 0.923,
+          "text_ar": "كيف عرفت؟"
+        },
+        {
+          "text": "DID MINHO TELL YOU THAT?",
+          "confidence": 0.963,
+          "text_ar": "هل أخبرك مينهو بذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "AH, NO. I FOUND OUT MYSELF.",
+          "confidence": 0.861,
+          "text_ar": "آه، لا. اكتشفت ذلك بنفسي."
+        },
+        {
+          "text": "臉色 一沉…",
+          "confidence": 0.96,
+          "text_ar": "تغير ملامحها..."
+        },
+        {
+          "text": "Hmmminmm",
+          "confidence": 0.687,
+          "text_ar": "هممم"
+        },
+        {
+          "text": "Cotfe'",
+          "confidence": 0.691,
+          "text_ar": "سعال"
+        },
+        {
+          "text": "YOU ARE RIGHT, I CAN'T LIE TO MY OPPA... MOrFh.",
+          "confidence": 0.536,
+          "text_ar": "أنت محق، لا أستطيع الكذب على أوبا..."
+        },
+        {
+          "text": "MAYBEIT'S BECAUSE YOU HAVE A LOTOF EXPERIENCE...",
+          "confidence": 0.944,
+          "text_ar": "ربما لأن لديك الكثير من الخبرة..."
+        },
+        {
+          "text": "GOOD CATCH...",
+          "confidence": 0.946,
+          "text_ar": "استنتاج جيد..."
+        },
+        {
+          "text": "NO,I JUST FELT IT SIMPLY BE LOOKING AT YOU TWO.",
+          "confidence": 0.909,
+          "text_ar": "لا، لقد شعرت بذلك بمجرد النظر إليكما."
+        },
+        {
+          "text": "Phew..",
+          "confidence": 0.869,
+          "text_ar": "تنهد.."
+        },
+        {
+          "text": "THE INFORMATION I COLLECTEDUNCONSCIOUSLY JUST MADE ME REALIZE IT.",
+          "confidence": 0.957,
+          "text_ar": "المعلومات التي جمعتها لا شعورياً جعلتني أدرك ذلك."
+        },
+        {
+          "text": "YEAH,SO MY OPPA HAS BEEN WITH A LOT OF WOMEN.",
+          "confidence": 0.941,
+          "text_ar": "أجل، لذا أوبا كان مع الكثير من النساء."
+        },
+        {
+          "text": "YOU MUST HAVE A LOTOFEXPERIENCEWITH WOMEN, RIGHT?",
+          "confidence": 0.957,
+          "text_ar": "لا بد أن لديك الكثير من الخبرة مع النساء، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "NO, WHAT ARE YOU TALKING ABOUT..MINA,I'M SURE YOU HAVE A LOTOFEXPERIENCE WITH MEN.",
+          "confidence": 0.928,
+          "text_ar": "لا، عن ماذا تتحدثين.. مينا، أنا متأكد أن لديك الكثير من الخبرة مع الرجال."
+        },
+        {
+          "text": "AH, WELL,",
+          "confidence": 0.907,
+          "text_ar": "آه، حسناً،"
+        },
+        {
+          "text": "WHAT...!?",
+          "confidence": 0.852,
+          "text_ar": "ماذا...!؟"
+        },
+        {
+          "text": "WHY ARE YOU TALKING TO ME LIKE YOU HAVENT HADALOTOFEXPERIENCES WITH MEN...",
+          "confidence": 0.919,
+          "text_ar": "لماذا تتحدث معي وكأنك لم تحظَ بالكثير من التجارب مع الرجال..."
+        },
+        {
+          "text": "I'M LEAVING.",
+          "confidence": 0.896,
+          "text_ar": "سأرحل."
+        },
+        {
+          "text": "AH,WHAT... WHAT'S WRONG...",
+          "confidence": 0.893,
+          "text_ar": "آه، ماذا... ما خطبك..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "MINA,STOP FORA SECOND!",
+          "confidence": 0.954,
+          "text_ar": "مينا، توقفي للحظة!"
+        },
+        {
+          "text": "YOU WERE THE ONE WHO SAID IT FIRST, WHY ARE YOU SO ANGRY?",
+          "confidence": 0.89,
+          "text_ar": "أنتِ من قلتِ ذلك أولاً، لماذا أنتِ غاضبة جداً؟"
+        },
+        {
+          "text": "Pant (Pant)",
+          "confidence": 0.941,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "AH,COME ON... MINA!",
+          "confidence": 0.911,
+          "text_ar": "آه، هيا... مينا!"
+        },
+        {
+          "text": "AH... YOU...YOU...",
+          "confidence": 0.913,
+          "text_ar": "آه... أنتِ... أنتِ..."
+        },
+        {
+          "text": "ADG",
+          "confidence": 0.8,
+          "text_ar": "غضب"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "MINA...",
+          "confidence": 0.874,
+          "text_ar": "مينا..."
+        },
+        {
+          "text": "YOU DON'T HAVE ANY EXPERIENCE WITH MEN DO YOU...?",
+          "confidence": 0.863,
+          "text_ar": "ليس لديك أي خبرة مع الرجال، أليس كذلك...؟"
+        },
+        {
+          "text": "TO BE CONTInuED...",
+          "confidence": 0.828,
+          "text_ar": "يتبع..."
+        },
+        {
+          "text": "KAIJU SCANS",
+          "confidence": 0.977,
+          "text_ar": "كايجو سكانز"
+        },
+        {
+          "text": "NOTE:",
+          "confidence": 0.992,
+          "text_ar": "ملاحظة:"
+        },
+        {
+          "text": "THIS MANHWA IS THE PROPERTY OF THEIR RESPECTIVEOWNERS.KAIJU SCAN HOLDS NO RESPONSIBILITY IN THIS WORK'S DISTRIBUTION. IFYOU ENJOYED THIS TRANSLATION,PLEASE CONSIDERSUPPORTING THEORIGINAL CREATORS THROUGH PURCHASINGTHEOFFICIAL RELEASES FROM LEGITIMATESITES:",
+          "confidence": 0.944,
+          "text_ar": "هذه المانهوا ملك لأصحابها. كايجو سكانز لا تتحمل أي مسؤولية عن توزيع هذا العمل. إذا استمتعت بهذه الترجمة، يرجى التفكير في دعم المبدعين الأصليين من خلال شراء الإصدارات الرسمية من المواقع القانونية:"
+        },
+        {
+          "text": "TOPTOONKOREA:TOPTOON.COM TOPTOON TAIWAN:TOPTOON.NET TOPTOONPLUS ENGLISH:TOPTOONPLUS.COM",
+          "confidence": 0.969,
+          "text_ar": "توبتون كوريا: toptoon.com | توبتون تايوان: toptoon.net | توبتون بلس الإنجليزية: toptoonplus.com"
+        },
+        {
+          "text": "THANKYOU!!",
+          "confidence": 0.989,
+          "text_ar": "شكراً لكم!!"
+        },
+        {
+          "text": "MANGA 18",
+          "confidence": 0.993,
+          "text_ar": "Manga18"
+        },
+        {
+          "text": "KAIJUSCANS",
+          "confidence": 0.905,
+          "text_ar": "كايجو سكانز"
+        },
+        {
+          "text": "OH..TMSOBORED~ CANYAPLEASEJOIN KAISU SCANSDISCORD AND HAVE SOME FUN WITHME? 哈啊",
+          "confidence": 0.826,
+          "text_ar": "أوه.. أشعر بالملل جداً~ هل يمكنك الانضمام إلى ديسكورد كايجو سكانز والاستمتاع معي؟"
+        },
+        {
+          "text": "HELLO,THISIS NECROPHADEZ",
+          "confidence": 0.958,
+          "text_ar": "مرحباً، هذا نيكروفاديز"
+        },
+        {
+          "text": "IFANYONEISINTERESTEDINCOMMISSIONINGTRANSLATIONS,ORWANT TOJOINKAIJUSCANSIAMLOOKINGFORPEOPLETOJOINMYSCANLATIONTEAM, KAIJUSCANSASTRANSLATORTYPESETTERANDREDRAWER)FEELFREETO CONTACT ME VIAANY OF THESE METHODS BELOW:",
+          "confidence": 0.923,
+          "text_ar": "إذا كان أي شخص مهتماً بطلب ترجمات، أو يرغب في الانضمام إلى كايجو سكانز (أبحث عن أشخاص للانضمام إلى فريق الترجمة الخاص بي كمترجمين، مبيضين، ومنقحين)، فلا تتردد في الاتصال بي عبر أي من الطرق أدناه:"
+        },
+        {
+          "text": "ネクロファデス#8888",
+          "confidence": 0.975,
+          "text_ar": "نيكروفاديز#8888"
+        },
+        {
+          "text": "Necrophadez#6157",
+          "confidence": 0.995,
+          "text_ar": "Necrophadez#6157"
+        },
+        {
+          "text": "kaijuscans@gmail.com",
+          "confidence": 0.995,
+          "text_ar": "kaijuscans@gmail.com"
+        },
+        {
+          "text": "ANDDONT FORGET TOCHECKOUT MANGA18.CLUB FOR THEFASTESTUPDATESOFOURSCANLATIONS AND JOIN OUR DISCORD FOR FURTHER DISCUSSIONS. DISCORD.GG/MTmjjs5Qp6",
+          "confidence": 0.938,
+          "text_ar": "ولا تنسَ زيارة Manga18.club للحصول على أسرع تحديثات ترجماتنا والانضمام إلى ديسكورد الخاص بنا للمزيد من النقاشات. discord.gg/mtmjjs5qp6"
+        }
+      ]
+    }
+  ]
+}
