@@ -5,9 +5,9 @@
     "engine": "seleniumbase",
     "egress": "direct",
     "headed_virtual_display": true,
-    "challenge_wait_sec": 26,
-    "verified_at": "2026-10-04T04:55:31Z",
-    "run_id": "37177717834",
+    "challenge_wait_sec": 27,
+    "verified_at": "2026-10-04T05:15:09Z",
+    "run_id": "37178175830",
     "evidence": {
       "cf_clearance": true,
       "images_found": 12,
