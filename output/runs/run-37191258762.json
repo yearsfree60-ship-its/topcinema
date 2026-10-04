@@ -77,6 +77,20 @@
           ],
           "originalBytes": 3687496,
           "compressedBytes": 1021182
+        },
+        {
+          "label": "الفصل 6",
+          "num": "6",
+          "chNum": 6.0,
+          "sourceUrl": "https://starzmanga.com/manga/mysterious-star-battle-with-my-sweet-wife/6/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-6/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-6/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-6/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-6/004.webp"
+          ],
+          "originalBytes": 6531790,
+          "compressedBytes": 1130418
         }
       ]
     }
