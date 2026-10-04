@@ -231,6 +231,8 @@ jobs:
         if: inputs.mode == 'إنتاج' || inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل'
         run: |
           pip install --quiet seleniumbase || echo "⚠️ تعذّر تثبيت seleniumbase"
+          # [إصلاح run #280] curl_cffi: بصمة TLS مطابقة لـChrome عند تنزيل صور النطاقات المحمية بكوكي cf_clearance
+          pip install --quiet curl_cffi || echo "⚠️ تعذّر تثبيت curl_cffi — سيُستخدم requests العادي"
           sudo apt-get install -y -qq xvfb || true
           python -m playwright install --with-deps chromium
 
