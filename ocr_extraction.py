@@ -846,6 +846,7 @@ async def _ocr_handle_page(
     pages_since_rebuild: int,
     saved_image_paths: list | None = None,
     chapter_dir: Path | None = None,
+    size_stats: dict | None = None,
 ) -> int:
     """[جديد — بند (1)] معالجة OCR لصفحة واحدة جاهزة (raw bytes مُنزَّلة
     مسبقًا)، مُستخرَجة كدالة مشتركة يستدعيها كل من مسار HTTP متعدد الفصول
@@ -934,6 +935,9 @@ async def _ocr_handle_page(
                 filename = f"{page_num:03d}.{IMG_FORMAT}"
                 (chapter_dir / filename).write_bytes(compress_result)
                 saved_image_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                if size_stats is not None:
+                    # مفتاح = رقم الصفحة: إعادة المحاولة لنفس الصفحة تستبدل القياس ولا تضاعفه
+                    size_stats[page_num] = (len(raw), len(compress_result))
                 print(f"  🗜️ {label} ضغط صفحة {page_num}/{total_pages} ({len(compress_result)} بايت)")
             except Exception as e:
                 print(f"  ⚠️ فشل حفظ الصورة المضغوطة لـ{label} صفحة {page_num}: {e}")
@@ -1064,6 +1068,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     page_texts: list[str] = []
     page_json: list[dict] = []
     saved_image_paths: list[str] = []
+    size_stats: dict[int, tuple[int, int]] = {}   # صفحة -> (حجم الأصل، حجم المضغوط) بالبايت
     total_pages = len(image_urls)
     label = f"[{index}/{total}]"
 
@@ -1092,6 +1097,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
             pages_since_rebuild = await _ocr_handle_page(
                 label, i, raw, reason, total_pages, page_texts, page_json, pages_since_rebuild,
                 saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
+                size_stats=size_stats,
             )
         return pages_since_rebuild
 
@@ -1109,6 +1115,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
                 pages_since_rebuild = await _ocr_handle_page(
                     f"{label} (إعادة محاولة)", i, raw, reason, total_pages, page_texts, page_json,
                     pages_since_rebuild, saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
+                    size_stats=size_stats,
                 )
             else:
                 print(f"  ❌ {label} صفحة {i}/{total_pages}: تعذّر تحميلها نهائيًا حتى بعد إعادة المحاولة: {reason}")
@@ -1138,6 +1145,12 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
 
     page_json, page_texts = _renumber_pages_sequentially(page_json)
 
+    original_bytes = sum(o for o, _c in size_stats.values())
+    compressed_bytes = sum(c for _o, c in size_stats.values())
+    if original_bytes:
+        print(f"  📦 {label} حجم الفصل: {original_bytes/1048576:.2f}م.ب ← {compressed_bytes/1048576:.2f}م.ب "
+              f"(توفير {100 * (1 - compressed_bytes / original_bytes):.0f}%)")
+
     return {
         "manga_id": manga_id,
         "chapter_num": chapter_num,
@@ -1147,6 +1160,8 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
         "text": "\n\n".join(page_texts),
         "pages": page_json,
         "image_paths": saved_image_paths,
+        "original_bytes": original_bytes,
+        "compressed_bytes": compressed_bytes,
     }
 
 
