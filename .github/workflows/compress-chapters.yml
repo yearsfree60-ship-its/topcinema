@@ -110,6 +110,16 @@ on:
         required: false
         default: false
         type: boolean
+      bypass_lab_warp:
+        description: "[تشخيص فقط] مختبر التجاوز (يعمل تلقائيًا عند ظهور تحدي Cloudflare غير محلول): السماح بتجربة Cloudflare WARP المجانية (يثبّته ويشغّله بوضع proxy محلي للاختبار فقط ثم يفصله). عطّله لو أردت تجارب المتصفح المباشرة فقط (أسرع)"
+        required: false
+        default: true
+        type: boolean
+      bypass_lab_test_all:
+        description: "[تشخيص فقط] مختبر التجاوز: اختبار كل الاستراتيجيات حتى بعد نجاح إحداها (للمقارنة الكاملة). الافتراضي: التوقف عند أول فائز لتوفير الزمن"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -194,6 +204,18 @@ jobs:
         run: |
           pip install --quiet curl_cffi
 
+      # [جديد — مختبر التجاوز] أدوات اختبار تجاوز تحدي Cloudflare بوضع التشخيص فقط:
+      # SeleniumBase (UC+CDP، أول استراتيجية)، Camoufox (Firefox معدَّل)، patchright مع Chrome الحقيقي،
+      # وXvfb (شاشة افتراضية لمتصفح بواجهة). كل أمر منها اختياري الفشل — المختبر نفسه يعيد المحاولة
+      # ذاتيًا ويسجّل سبب أي تعذّر بتقرير التشخيص بدل إيقاف التشغيلة.
+      - name: تثبيت أدوات مختبر التجاوز (تشخيص فقط)
+        if: inputs.mode == 'تشخيص'
+        run: |
+          pip install --quiet seleniumbase camoufox patchright || echo "⚠️ تعذّر تثبيت بعض أدوات المختبر — سيُسجَّل بالتقرير"
+          python -m camoufox fetch || echo "⚠️ تعذّر تنزيل متصفح Camoufox مسبقًا — سيُحاوَل ذاتيًا بالمختبر"
+          patchright install chrome || patchright install chromium || true
+          sudo apt-get install -y -qq xvfb || true
+
       # [جديد — المرحلة ١] كاش نماذج PaddleOCR بين التشغيلات — بدونه كل
       # تشغيلة (worktree/رانر جديد من الصفر) تُعيد تحميل نماذج الكشف+التعرّف
       # من الإنترنت من جديد، وهذا وقت مهدور من مهلة الـ240 دقيقة المشتركة
@@ -260,6 +282,10 @@ jobs:
           TRANSLATE_TO_ARABIC: ${{ inputs.translate_to_arabic }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
+          BYPASS_LAB_WARP: ${{ inputs.bypass_lab_warp }}
+          BYPASS_LAB_TEST_ALL: ${{ inputs.bypass_lab_test_all }}
+          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
+          URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
           RUN_ID: ${{ github.run_id }}
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
           CDN_BASE: https://raw.githubusercontent.com/${{ github.repository }}/output/output
