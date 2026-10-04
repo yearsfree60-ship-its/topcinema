@@ -11,8 +11,9 @@ starzmanga.com (تشغيلة 37178175830: حُلَّ التحدي خلال ~17ث
     sess = build_requests_session(results[url])            # لتحميل الصور بنفس الكوكيز/UA
 """
 import base64
+import os
 import time
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 
 import requests
 
@@ -23,6 +24,9 @@ from compress_chapters import (WIDGET_CONTEXT_PATTERN, _classify_challenge_html,
                                _looks_like_challenge_html, extract_images_from_html)
 
 DEFAULT_WAIT_SEC = 45.0
+# [تسريع] عدد الفصول قبل إعادة تشغيل المتصفح الدائم (تفادي تسرّب الذاكرة)، وتوازي تنزيل صور الفصل داخل الصفحة.
+SB_RECYCLE_EVERY = max(1, int(os.environ.get("SB_RECYCLE_EVERY", "20") or 20))
+SB_IMG_CONCURRENCY = max(1, min(8, int(os.environ.get("SB_IMG_CONCURRENCY", "5") or 5)))
 
 
 def _first_ok(sb, getters, default=None):
@@ -81,7 +85,7 @@ def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list
             bottom, total = json.loads(raw) if isinstance(raw, str) else (0, 1)
         except Exception:
             bottom, total = 0, 1
-        time.sleep(0.7)
+        time.sleep(0.5)
         infos = _dom_infos(sb)
         loaded = sum(1 for i in infos if i["w"] >= 300 and i["h"] >= 300)
         at_end = bottom >= total - 5
@@ -196,6 +200,64 @@ def _in_page_fetch(sb, url: str, timeout: float = 40.0) -> tuple[bytes | None, s
     return None, "انتهت مهلة fetch"
 
 
+_FETCH_MANY_JS = r"""((urls, conc) => {
+  window.__sbm = {}; window.__sbn = 0; window.__sbtot = urls.length;
+  let idx = 0;
+  const one = async (u) => {
+    try {
+      const r = await fetch(u, {credentials: 'include', cache: 'no-store'});
+      if (!r.ok) throw new Error('status=' + r.status);
+      const ct = r.headers.get('content-type') || '';
+      const b = await r.blob();
+      const d = await new Promise((res, rej) => { const fr = new FileReader();
+        fr.onload = () => res(String(fr.result).split(',')[1] || ''); fr.onerror = () => rej(new Error('filereader'));
+        fr.readAsDataURL(b); });
+      window.__sbm[u] = JSON.stringify({ok: 1, ct: ct, d: d});
+    } catch (e) { window.__sbm[u] = JSON.stringify({ok: 0, e: String(e)}); }
+    window.__sbn++;
+  };
+  const worker = async () => { while (idx < urls.length) { const u = urls[idx++]; await one(u); } };
+  for (let i = 0; i < conc; i++) worker();
+  return 'started';
+})"""
+
+
+def _in_page_fetch_many(sb, urls: list[str], conc: int = SB_IMG_CONCURRENCY,
+                        timeout: float = 90.0) -> dict[str, bytes]:
+    """تنزيل متوازٍ (conc صور معًا) من داخل صفحة الفصل. يُعيد ما نجح فقط — الباقي يُعاد بالمسار المتسلسل."""
+    out: dict[str, bytes] = {}
+    if not urls:
+        return out
+    _sb_eval(sb, _FETCH_MANY_JS + "(" + json.dumps(urls) + "," + str(conc) + ")")
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        time.sleep(0.3)
+        raw = _sb_eval(sb, "(() => JSON.stringify([window.__sbn || 0, window.__sbtot || 0]))()")
+        try:
+            n, tot = json.loads(raw) if isinstance(raw, str) else (0, 1)
+        except Exception:
+            continue
+        if tot and n >= tot:
+            break
+    for u in urls:
+        raw = _sb_eval(sb, "(() => (window.__sbm && window.__sbm[" + json.dumps(u) + "]) || '')()")
+        if not raw or not isinstance(raw, str):
+            continue
+        try:
+            data = json.loads(raw)
+            if not data.get("ok"):
+                continue
+            ct = (data.get("ct") or "").lower()
+            if ct and not ct.startswith("image/"):
+                continue
+            b = base64.b64decode(data.get("d") or "")
+        except Exception:
+            continue
+        if len(b) >= 500:
+            out[u] = b
+    return out
+
+
 def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tuple[dict, dict]:
     """يُنزِّل كل الصور من داخل المتصفح. الطبقة 1: fetch من صفحة الفصل (Referer صحيح تلقائيًا).
     الطبقة 2 (إن منع CORS): فتح رابط الصورة كصفحة أعلى مستوى ثم fetch بنفس الأصل.
@@ -204,7 +266,13 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tupl
     errs: dict[str, str] = {}
     page_host = urlparse(page_url).netloc
     cur_host = page_host            # الأصل الذي تقف عليه الصفحة الآن
+    try:
+        got.update(_in_page_fetch_many(sb, list(dict.fromkeys(image_urls))))
+    except Exception:
+        pass                        # أي خلل بالتوازي ← يكمل المسار المتسلسل أدناه كما كان
     for u in image_urls:
+        if u in got:
+            continue
         host = urlparse(u).netloc
         data, err = None, ""
         try:
@@ -233,7 +301,7 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tupl
 
 def _norm_path(u: str) -> str:
     p = urlparse(u or "")
-    return (p.netloc.lower().removeprefix("www.") + p.path.rstrip("/")).lower()
+    return (p.netloc.lower().removeprefix("www.") + unquote(p.path).rstrip("/")).lower()
 
 
 def _landed_on_requested(requested: str, current: str | None) -> bool:
@@ -266,11 +334,13 @@ _READING_PROBE_JS = """(() => {
 })()"""
 
 
-def _wait_reading_images(sb, timeout: float = 25.0) -> tuple[int, dict]:
+def _wait_reading_images(sb, timeout: float = 25.0, absent_grace: float | None = None) -> tuple[int, dict]:
     """ينتظر ظهور صور حاوية القراءة الفعلية في DOM (قد تُحقَن بالجافاسكربت متأخرة بعد حل التحدي).
-    تمرير خفيف كل ثانية لتحفيز lazy-load. يُعيد (العدد، آخر تشخيص)."""
+    absent_grace: لو اكتمل تحميل الصفحة ولا حاوية قراءة إطلاقًا طوال هذه المدة ← خروج مبكر (فشل سريع).
+    يُعيد (العدد، آخر تشخيص)."""
     deadline = time.monotonic() + timeout
     diag: dict = {}
+    absent_since = None
     while True:
         raw = _sb_eval(sb, _READING_PROBE_JS)
         try:
@@ -279,7 +349,14 @@ def _wait_reading_images(sb, timeout: float = 25.0) -> tuple[int, dict]:
             diag = {}
         if diag.get("n", 0) > 0:
             return int(diag["n"]), diag
-        if time.monotonic() >= deadline:
+        now = time.monotonic()
+        if absent_grace and diag.get("ready") == "complete" and not diag.get("rc"):
+            absent_since = absent_since or now
+            if now - absent_since >= absent_grace:
+                return 0, diag
+        else:
+            absent_since = None
+        if now >= deadline:
             return 0, diag
         time.sleep(1.0)
 
@@ -312,109 +389,207 @@ def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
             time.sleep(2)
 
 
-def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_WAIT_SEC,
-                                 proxy: str | None = None, retries: int = 2,
-                                 download_images: bool = False) -> dict:
-    """يفتح متصفحًا واحدًا (Xvfb مدمج) ويجلب كل الروابط تسلسليًا — كوكيز cf_clearance
-    تبقى صالحة لباقي الفصول بنفس النطاق فيُحَل التحدي مرة واحدة غالبًا."""
-    from seleniumbase import SB
-    results: dict = {}
+def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
+               download_images: bool) -> tuple[dict, bool]:
+    """يجلب فصلًا واحدًا عبر متصفح مفتوح أصلًا. يُعيد (النتيجة، هل فُعِّل وضع CDP).
+    res["fatal"]: فشل حتمي (لا حاوية قراءة/تحويل لصفحة أخرى) ← لا فائدة من إعادة المحاولة.
+    res["restart"]: المتصفح نفسه مشتبه به (تحدٍّ لم يُحَل/انهيار) ← يُعاد تشغيله."""
+    res = {"ok": False, "html": "", "images": [], "cookies": [], "user_agent": None,
+           "error": None, "waited_sec": None}
+    page_url = url
+    for attempt in range(1, retries + 2):
+        try:
+            if not activated:
+                sb.activate_cdp_mode(url)
+                activated = True
+            else:
+                try:
+                    sb.cdp.get(url)
+                except Exception:
+                    sb.activate_cdp_mode(url)
+            cur0 = _first_ok(sb, ["cdp.get_current_url", "get_current_url"], None)
+            if cur0 and urlparse(cur0).netloc == urlparse(url).netloc \
+                    and not _landed_on_requested(url, cur0) and "challenge" not in cur0:
+                time.sleep(2)
+                try:
+                    sb.cdp.get(url)
+                except Exception:
+                    pass
+            ok, html, waited = _wait_resolved(sb, wait_sec)
+            res["waited_sec"] = waited
+            if not ok:
+                res["error"] = f"لم يُحَل التحدي خلال {wait_sec:.0f}ث"
+                res["restart"] = True
+                time.sleep(3)
+                continue
+            res["ok"], res["html"] = True, html
+            cur_url = _first_ok(sb, ["cdp.get_current_url", "get_current_url"], None)
+            res["final_url"] = cur_url
+            if not _landed_on_requested(url, cur_url):
+                res["ok"], res["fatal"] = False, True
+                res["error"] = f"أُعيد التوجيه إلى صفحة أخرى: {cur_url}"
+                break
+            n_read, diag = _wait_reading_images(sb, 25.0, absent_grace=8.0)
+            if n_read == 0 and not diag.get("rc"):
+                # رابط الفصل الفعلي قد يحمل لاحقة (/44-عنوان/) — نحلّه من صفحة المانهوا
+                real = _resolve_suffixed_chapter_url(sb, url, wait_sec)
+                if real:
+                    print(f"  🔗 [SB] رابط الفصل الفعلي بلاحقة: {real}")
+                    try:
+                        sb.cdp.get(real)
+                    except Exception:
+                        sb.activate_cdp_mode(real)
+                    ok3, html3, _w3 = _wait_resolved(sb, wait_sec)
+                    if ok3:
+                        html = html3
+                    n_read, diag = _wait_reading_images(sb, 25.0, absent_grace=8.0)
+                    if n_read > 0:
+                        page_url = real
+                        res["final_url"] = real
+            if n_read == 0:
+                print(f"  ⚠️ [SB] حاوية القراءة فارغة — إعادة تحميل الصفحة. تشخيص: {diag}")
+                try:
+                    sb.cdp.get(page_url)
+                except Exception:
+                    sb.activate_cdp_mode(page_url)
+                ok2, html2, _w = _wait_resolved(sb, wait_sec)
+                if ok2:
+                    html = html2
+                n_read, diag = _wait_reading_images(sb, 25.0, absent_grace=8.0)
+            if n_read == 0:
+                res["ok"] = False
+                res["error"] = f"لم تظهر صور الفصل في DOM (حاوية القراءة فارغة/غائبة) — تشخيص: {diag}"
+                if not diag.get("rc"):
+                    res["fatal"] = True
+                    break
+                time.sleep(3)
+                continue
+            dom_urls, infos = collect_dom_images_sb(sb, page_url)
+            if dom_urls:
+                res["images"] = dom_urls
+            else:
+                fb = [u for u in extract_images_from_html(html, page_url) if not _is_thumbnail_url(u)]
+                res["images"] = fb
+            res["dom_image_info"] = infos[:60]
+            try:
+                html = _first_ok(sb, ["cdp.get_page_source", "get_page_source"], html) or html
+                res["html"] = html
+            except Exception:
+                pass
+            res["cookies"] = _cookies_dict(sb)
+            res["user_agent"] = _first_ok(sb, ["cdp.get_user_agent"], None)
+            if not res["user_agent"]:
+                try:
+                    res["user_agent"] = sb.cdp.evaluate("navigator.userAgent")
+                except Exception:
+                    pass
+            if res["images"] and download_images:
+                try:
+                    got, errs = download_images_in_browser(sb, res["images"], page_url)
+                    res["image_bytes"], res["image_errors"] = got, errs
+                    print(f"  🌐 [SB] تنزيل بالمتصفح: {len(got)}/{len(res['images'])} صورة"
+                          + (f" — أول سبب فشل: {next(iter(errs.values()))}" if errs else ""))
+                    more = _cookies_dict(sb)
+                    seen = {(c["name"], c.get("domain")) for c in res["cookies"]}
+                    res["cookies"] += [c for c in more if (c["name"], c.get("domain")) not in seen]
+                except Exception as e:
+                    res["image_errors"] = {"*": f"{type(e).__name__}: {e}"[:200]}
+            if res["images"]:
+                res.pop("error", None)
+                res["error"] = None
+                break
+            res["ok"], res["error"] = False, "صفحة بلا صور بعد حل التحدي"
+        except Exception as e:
+            res["ok"] = False
+            res["error"] = f"{type(e).__name__}: {e}"[:300]
+            res["restart"] = True      # استثناء غير متوقع ← المتصفح مشتبه به
+        time.sleep(3)
+    if res.get("ok") and not res.get("images"):
+        res["ok"] = False
+    if res.get("ok"):
+        res.pop("restart", None)
+    return res, activated
+
+
+def _sb_kwargs(proxy: str | None) -> dict:
     kw = {"uc": True, "test": True, "locale": "en", "xvfb": True}
     if proxy:
         kw["proxy"] = proxy
-    with SB(**kw) as sb:
+    return kw
+
+
+def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_WAIT_SEC,
+                                 proxy: str | None = None, retries: int = 2,
+                                 download_images: bool = False) -> dict:
+    """متصفح واحد لكل الروابط تسلسليًا (cf_clearance تبقى صالحة فيُحَل التحدي مرة واحدة غالبًا)."""
+    from seleniumbase import SB
+    results: dict = {}
+    with SB(**_sb_kwargs(proxy)) as sb:
+        activated = False
         for url in urls:
-            res = {"ok": False, "html": "", "images": [], "cookies": [], "user_agent": None,
-                   "error": None, "waited_sec": None}
-            for attempt in range(1, retries + 2):
-                try:
-                    if attempt == 1 and not results:
-                        sb.activate_cdp_mode(url)
-                    else:
-                        try:
-                            sb.cdp.get(url)
-                        except Exception:
-                            sb.activate_cdp_mode(url)
-                    # تأكيد الوصول للرابط المطلوب قبل انتظار التحدي (تحويل عابر ← إعادة تنقّل واحدة)
-                    cur0 = _first_ok(sb, ["cdp.get_current_url", "get_current_url"], None)
-                    if cur0 and urlparse(cur0).netloc == urlparse(url).netloc \
-                            and not _landed_on_requested(url, cur0) and "challenge" not in cur0:
-                        time.sleep(2)
-                        try:
-                            sb.cdp.get(url)
-                        except Exception:
-                            pass
-                    ok, html, waited = _wait_resolved(sb, wait_sec)
-                    res["waited_sec"] = waited
-                    if ok:
-                        res["ok"], res["html"] = True, html
-                        cur_url = _first_ok(sb, ["cdp.get_current_url", "get_current_url"], None)
-                        res["final_url"] = cur_url
-                        if not _landed_on_requested(url, cur_url):
-                            # إصلاح: حدث تحويل لصفحة المانهوا/الرئيسية (فصل غير موجود أو تحويل عابر)
-                            res["ok"] = False
-                            res["error"] = f"أُعيد التوجيه إلى صفحة أخرى: {cur_url}"
-                            raise RuntimeError(res["error"])
-                        # إصلاح: صور الفصل قد تُحقَن بعد حل التحدي؛ إن التُقط DOM قبل ظهورها كانت
-                        # تُؤخذ ودجات صفحة الفصل (شعار + مصغّرات 75x106). ننتظر الحاوية فعليًا.
-                        n_read, diag = _wait_reading_images(sb, 25.0)
-                        if n_read == 0:
-                            print(f"  ⚠️ [SB] حاوية القراءة فارغة — إعادة تحميل الصفحة. تشخيص: {diag}")
-                            try:
-                                sb.cdp.get(url)
-                            except Exception:
-                                sb.activate_cdp_mode(url)
-                            ok2, html2, _w = _wait_resolved(sb, wait_sec)
-                            if ok2:
-                                html = html2
-                            n_read, diag = _wait_reading_images(sb, 25.0)
-                        if n_read == 0:
-                            res["ok"] = False
-                            res["error"] = f"لم تظهر صور الفصل في DOM (حاوية القراءة فارغة/غائبة) — تشخيص: {diag}"
-                            raise RuntimeError(res["error"])
-                        dom_urls, infos = collect_dom_images_sb(sb, url)
-                        if dom_urls:
-                            res["images"] = dom_urls
-                        else:
-                            # احتياط: تحليل HTML — بعد استبعاد المصغّرات/الشعارات، ولا يُقبل إلا
-                            # بوجود حاوية قراءة الفصل (reading-content) لئلا تُؤخذ ودجات صفحة المانهوا
-                            fb = [u for u in extract_images_from_html(html, url) if not _is_thumbnail_url(u)]
-                            res["images"] = fb
-                        res["dom_image_info"] = infos[:60]
-                        try:
-                            html = _first_ok(sb, ["cdp.get_page_source", "get_page_source"], html) or html
-                            res["html"] = html
-                        except Exception:
-                            pass
-                        res["cookies"] = _cookies_dict(sb)
-                        res["user_agent"] = _first_ok(sb, ["cdp.get_user_agent"], None)
-                        if not res["user_agent"]:
-                            try:
-                                res["user_agent"] = sb.cdp.evaluate("navigator.userAgent")
-                            except Exception:
-                                pass
-                        if res["images"] and download_images:
-                            try:
-                                got, errs = download_images_in_browser(sb, res["images"], url)
-                                res["image_bytes"], res["image_errors"] = got, errs
-                                print(f"  🌐 [SB] تنزيل بالمتصفح: {len(got)}/{len(res['images'])} صورة"
-                                      + (f" — أول سبب فشل: {next(iter(errs.values()))}" if errs else ""))
-                                # كوكيز النطاقات التي زارها المتصفح أثناء التنزيل (احتياط لمسار HTTP)
-                                more = _cookies_dict(sb)
-                                seen = {(c["name"], c.get("domain")) for c in res["cookies"]}
-                                res["cookies"] += [c for c in more if (c["name"], c.get("domain")) not in seen]
-                            except Exception as e:
-                                res["image_errors"] = {"*": f"{type(e).__name__}: {e}"[:200]}
-                        if res["images"]:
-                            break
-                        res["error"] = "صفحة بلا صور بعد حل التحدي"
-                    else:
-                        res["error"] = f"لم يُحَل التحدي خلال {wait_sec:.0f}ث"
-                except Exception as e:
-                    res["error"] = f"{type(e).__name__}: {e}"[:300]
-                time.sleep(3)
+            res, activated = _fetch_one(sb, url, activated=activated, wait_sec=wait_sec,
+                                        retries=retries, download_images=download_images)
             results[url] = res
     return results
+
+
+class SBSession:
+    """متصفح SeleniumBase دائم عبر فصول التشغيلة كلها (يُحَل التحدي مرة واحدة بدل كل فصل).
+    كل العمليات تُنفَّذ على خيط واحد مخصَّص (واجهة CDP المتزامنة لا تُستعمل من خيوط متعددة).
+    يُعاد تشغيل المتصفح تلقائيًا: كل SB_RECYCLE_EVERY فصل، أو بعد فشل يُشتبه فيه المتصفح نفسه."""
+
+    def __init__(self, proxy: str | None = None, recycle_every: int = SB_RECYCLE_EVERY):
+        self._proxy, self._recycle = proxy, recycle_every
+        self._ex = None
+        self._cm = self._sb = None
+        self._activated, self._count = False, 0
+
+    def _run(self, fn, *a, **k):
+        if self._ex is None:
+            from concurrent.futures import ThreadPoolExecutor
+            self._ex = ThreadPoolExecutor(max_workers=1, thread_name_prefix="sb-session")
+        return self._ex.submit(fn, *a, **k).result()
+
+    def _start(self):
+        from seleniumbase import SB
+        self._cm = SB(**_sb_kwargs(self._proxy))
+        self._sb = self._cm.__enter__()
+        self._activated, self._count = False, 0
+
+    def _stop(self):
+        cm, self._cm, self._sb = self._cm, None, None
+        if cm is not None:
+            try:
+                cm.__exit__(None, None, None)
+            except Exception:
+                pass
+
+    def _job(self, url, wait_sec, retries, download_images):
+        if self._sb is not None and self._count >= self._recycle:
+            self._stop()
+        if self._sb is None:
+            self._start()
+        res, self._activated = _fetch_one(self._sb, url, activated=self._activated, wait_sec=wait_sec,
+                                          retries=retries, download_images=download_images)
+        self._count += 1
+        if res.get("restart") and not res.get("ok"):
+            self._stop()
+        return res
+
+    def fetch(self, url: str, *, wait_sec: float = DEFAULT_WAIT_SEC, retries: int = 2,
+              download_images: bool = False) -> dict:
+        return self._run(self._job, url, wait_sec, retries, download_images)
+
+    def close(self):
+        if self._ex is None:
+            return
+        try:
+            self._run(self._stop)
+        except RuntimeError:
+            self._stop()      # عند إغلاق المفسّر (atexit/sys.exit) لا يقبل المجمّع مهامًا — إغلاق مباشر
+        finally:
+            self._ex.shutdown(wait=False)
+            self._ex = None
 
 
 def build_requests_session(page_result: dict) -> requests.Session:
