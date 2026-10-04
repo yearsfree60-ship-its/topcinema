@@ -9,9 +9,9 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "64.236.177.114",
+      "ip": "48.214.53.113",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Chicago",
+      "city": "Boydton",
       "country": "US",
       "error": null
     },
@@ -28,7 +28,7 @@
       "dns_history_resolve": {
         "resolved": {
           "starzmanga.com": "104.21.33.104",
-          "www.starzmanga.com": "172.67.189.207"
+          "www.starzmanga.com": "104.21.33.104"
         },
         "resolved_all": {
           "starzmanga.com": [
@@ -36,8 +36,8 @@
             "172.67.189.207"
           ],
           "www.starzmanga.com": [
-            "172.67.189.207",
-            "104.21.33.104"
+            "104.21.33.104",
+            "172.67.189.207"
           ]
         },
         "unresolved": [],
@@ -59,8 +59,8 @@
           "kind": "names",
           "ok": true,
           "status": 200,
-          "attempts": 5,
-          "elapsed_sec": 39.7,
+          "attempts": 2,
+          "elapsed_sec": 42.07,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -73,7 +73,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.25,
+          "elapsed_sec": 0.31,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -86,7 +86,7 @@
           "ok": false,
           "status": 403,
           "attempts": 1,
-          "elapsed_sec": 0.15,
+          "elapsed_sec": 0.25,
           "error": "status=403",
           "note": null,
           "api_key_used": false,
@@ -96,15 +96,15 @@
         {
           "source": "OTX passive DNS",
           "kind": "history",
-          "ok": false,
-          "status": 429,
-          "attempts": 1,
-          "elapsed_sec": 0.16,
-          "error": "starzmanga.com: status=429",
+          "ok": true,
+          "status": 200,
+          "attempts": 3,
+          "elapsed_sec": 16.04,
+          "error": null,
           "note": null,
-          "api_key_used": false,
-          "hostnames_count": 0,
-          "ips_count": 0
+          "api_key_used": true,
+          "hostnames_count": 1,
+          "ips_count": 2
         },
         {
           "source": "Robtex passive DNS",
@@ -112,7 +112,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.91,
+          "elapsed_sec": 0.33,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -125,7 +125,7 @@
           "ok": false,
           "status": 412,
           "attempts": 1,
-          "elapsed_sec": 1.15,
+          "elapsed_sec": 0.92,
           "error": "status=412",
           "note": null,
           "api_key_used": false,
@@ -138,7 +138,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.46,
+          "elapsed_sec": 0.39,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -148,15 +148,15 @@
         {
           "source": "urlscan.io",
           "kind": "history",
-          "ok": true,
-          "status": 200,
+          "ok": false,
+          "status": 400,
           "attempts": 1,
-          "elapsed_sec": 0.49,
-          "error": null,
+          "elapsed_sec": 0.43,
+          "error": "status=400",
           "note": null,
-          "api_key_used": false,
-          "hostnames_count": 1,
-          "ips_count": 1
+          "api_key_used": true,
+          "hostnames_count": 0,
+          "ips_count": 0
         },
         {
           "source": "Censys historical DNS",
@@ -190,7 +190,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.2,
+          "elapsed_sec": 0.16,
           "error": null,
           "note": "لا ip4 في SPF ولا MX داخلي",
           "api_key_used": false,
@@ -201,13 +201,13 @@
       "discovery_verdict": "only_cloudflare_or_non_public",
       "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
       "budget_sec": 120.0,
-      "elapsed_sec": 39.89,
+      "elapsed_sec": 42.25,
       "cloudflare_excluded_details": [
         {
           "ip": "104.21.33.104",
-          "score": 15,
+          "score": 16,
           "sources": [
-            "HackerTarget",
+            "OTX passive DNS",
             "Robtex passive DNS",
             "dns_live"
           ],
@@ -216,23 +216,24 @@
             "www.starzmanga.com"
           ],
           "first_seen": "1787988078",
-          "last_seen": "1791080004",
+          "last_seen": "2026-09-09T11:05:56",
           "apex_history": true
         },
         {
           "ip": "172.67.189.207",
-          "score": 16,
+          "score": 19,
           "sources": [
+            "HackerTarget",
+            "OTX passive DNS",
             "Robtex passive DNS",
-            "dns_live",
-            "urlscan.io"
+            "dns_live"
           ],
           "hostnames": [
             "starzmanga.com",
             "www.starzmanga.com"
           ],
           "first_seen": "1787988078",
-          "last_seen": "2026-09-22T04:48:03",
+          "last_seen": "2026-09-09T11:05:56",
           "apex_history": true
         }
       ],
@@ -260,7 +261,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a450abc018d48fc2-ORD",
+        "cf-ray": "a4518d50a9e12fdf-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -284,7 +285,7 @@
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
       },
-      "cf_colo": "ORD"
+      "cf_colo": "IAD"
     },
     "curl_cffi_probe": {
       "probes": [
@@ -293,7 +294,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a450abc048be0009-ORD",
+            "cf-ray": "a4518d50dd0ce55f-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -305,20 +306,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.02,
+          "elapsed_sec": 0.03,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "ORD"
+          "cf_colo": "IAD"
         },
         {
           "impersonate": "firefox",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a450abc04900e828-ORD",
+            "cf-ray": "a4518d50d8661f62-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -336,14 +337,14 @@
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "ORD"
+          "cf_colo": "IAD"
         },
         {
           "impersonate": "safari",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a450abc04df51267-ORD",
+            "cf-ray": "a4518d50ddf4a606-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -361,7 +362,7 @@
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "ORD"
+          "cf_colo": "IAD"
         }
       ]
     },
@@ -394,14 +395,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-1055-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-7303-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0c9d553c-dcaf-48f9-9fa6-b662ee4694aa",
-          "blob:https://challenges.cloudflare.com/27760599-445f-4d5d-a9de-4f30f86ac7a5",
-          "blob:https://challenges.cloudflare.com/39d993fe-84d1-4e49-9cb3-f519c12428a5"
+          "blob:https://challenges.cloudflare.com/08975bd5-9114-4485-b872-8d3d6b74415e",
+          "blob:https://challenges.cloudflare.com/20c48b49-3a7b-48c9-a0b6-c4be1646caf6",
+          "blob:https://challenges.cloudflare.com/6fe82a32-bb53-441c-bb9b-ff840baafe86"
         ]
       },
       "adblock_wall": {
@@ -447,38 +448,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.1,
+      "goto_elapsed_sec": 0.13,
       "navigation_timing": {
-        "ttfb_ms": 5,
-        "dom_content_loaded_ms": 96,
+        "ttfb_ms": 8,
+        "dom_content_loaded_ms": 117,
         "load_event_ms": null,
-        "transfer_size_bytes": 4115
+        "transfer_size_bytes": 4110
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.87,
-      "total_probe_elapsed_sec": 83.44,
+      "scroll_elapsed_sec": 2.05,
+      "total_probe_elapsed_sec": 83.7,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a450abc14f572d2a-ORD",
+        "cf-ray": "a4518d520e44b114-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-ozImoEKrEVtk4ySoeXwW0Q' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-6jurMoXghLAPwGUoeCiV3q' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Sun, 04 Oct 2026 02:14:03 GMT",
+        "date": "Sun, 04 Oct 2026 04:48:02 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=LWWXKHmuVmXPsdFN%2BEr6U%2BAMobvHO4MfWStIXBW1ihoH8wojK1oZC1wDkFWIrWDZNBz3Oj9XWT8DSQewo0v6ybHLoH4b7ckC8Wb5ONFxjzRvSbBygsUfUPpSxfhmiThFpQ%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aZX%2F50YOMNNdMd4hMJTpgmW8S3%2BfD%2F1vq%2Bhtd8qYdZpYaJ%2Fl%2B4%2BlqZ6J0V1aZMtBiNSLK%2BVJXrt6Y1Ohfevchp29NWYEyPpuNkvvO4EiPCUNR8GAVUlWlFF2071DoSl4HQ%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a450abc14f572d2a\"",
+        "server-timing": "chlray;desc=\"a4518d520e44b114\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -576,14 +577,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-1055-run2-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-7303-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/1b717cbb-ca83-4e7f-9e0a-b64baba09644",
-          "blob:https://challenges.cloudflare.com/2b81f296-380a-450a-940f-bbd9f9573cbd",
-          "blob:https://challenges.cloudflare.com/468c29ea-0c94-4318-b75e-8888eb2f4d66"
+          "blob:https://challenges.cloudflare.com/56c63b9d-02d2-4073-a855-f5fb059df821",
+          "blob:https://challenges.cloudflare.com/77fad9a1-a4f1-4e39-8824-d3d72e960ea4",
+          "blob:https://challenges.cloudflare.com/95f055fc-daa7-430b-85f6-9307360c5aaf"
         ]
       },
       "adblock_wall": {
@@ -631,36 +632,36 @@
       "error": null,
       "goto_elapsed_sec": 0.08,
       "navigation_timing": {
-        "ttfb_ms": 5,
-        "dom_content_loaded_ms": 76,
+        "ttfb_ms": 8,
+        "dom_content_loaded_ms": 74,
         "load_event_ms": null,
-        "transfer_size_bytes": 4112
+        "transfer_size_bytes": 4119
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.97,
-      "total_probe_elapsed_sec": 83.47,
+      "wait_for_images_elapsed_sec": 1.62,
+      "scroll_elapsed_sec": 1.81,
+      "total_probe_elapsed_sec": 83.3,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a450adf9289e0d5b-ORD",
+        "cf-ray": "a4518f8b6a622fdf-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-1wDbbnyzqUC2vETTXTJVQv' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-045nYkEbZPqk7HAdUmepb3' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Sun, 04 Oct 2026 02:15:34 GMT",
+        "date": "Sun, 04 Oct 2026 04:49:33 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xrmi2QmRBqYhjthQ8wzJqnXJLFAXs5e81LM91SKFycEXTcUq0QoPjQT%2Fky0g5jUSbsw5mPnelFQ7X9Y60dCzRCsQM62jQH8BasBhNsg9pJXD%2F3LeALOSJmfBf4I2%2FlvLKA%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gMvFSGN%2Fkz7vdXLSJrAqG%2FTWUYhyIRd3zYczUWQkYzdpPLy9gIHZfOO%2FFL8BT9Hswe0tRGFzPxq4fh%2FMYTrOUp7y3SqIHGgP1%2F8UaAy%2FGnnhbv%2BKl45gUwpnZncXdPqUAQ%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a450adf9289e0d5b\"",
+        "server-timing": "chlray;desc=\"a4518f8b6a622fdf\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -734,7 +735,7 @@
       "target": "page_url",
       "sample_url": "https://starzmanga.com/manga/otherworldly-evil-monarch/257/",
       "requests_sent": 4,
-      "elapsed_sec": 0.14,
+      "elapsed_sec": 0.18,
       "status_codes": [
         403,
         403,
@@ -746,42 +747,19 @@
       "retry_after_header": null
     },
     "history_diffs_since_last_run": [],
-    "deep_diagnostic": {
-      "wayback_availability_probe": {
-        "tested": true,
-        "available": null,
-        "snapshot_timestamp": null,
-        "snapshot_url": null,
-        "status": null,
-        "error": "429 Client Error: Too Many Requests for url: https://archive.org/wayback/available?url=https%3A%2F%2Fstarzmanga.com%2Fmanga%2Fotherworldly-evil-monarch%2F257%2F"
-      },
-      "runtime_enable_leak_probe": {
-        "tested": true,
-        "patchright_available": true,
-        "protection_category": "solvable_challenge",
-        "challenge_detected": true,
-        "resolved_after_reload": false,
-        "elapsed_sec": 75.84,
-        "error": null
-      },
-      "source_url_leak_probe": {
-        "tested": true,
-        "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
-        "error": null
-      }
-    },
+    "deep_diagnostic": null,
     "cdn_cgi_trace": {
       "trace_url": "https://starzmanga.com/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "735f240",
+        "fl": "350f216",
         "h": "starzmanga.com",
-        "ip": "64.236.177.114",
-        "ts": "1791080302.000",
+        "ip": "48.214.53.113",
+        "ts": "1791089465.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "colo": "ORD",
-        "sliver": "001-tier1",
+        "colo": "IAD",
+        "sliver": "050-tier1",
         "http": "http/1.1",
         "loc": "US",
         "tls": "TLSv1.3",
@@ -885,12 +863,296 @@
         "looks_promising": false
       }
     },
+    "bypass_lab": {
+      "domain": "starzmanga.com",
+      "http_probes": {
+        "wp_rest": {
+          "available": false,
+          "namespaces": [],
+          "route_count": 0,
+          "interesting_routes": [],
+          "types_tested": [],
+          "content_hits": [],
+          "media_hits": [],
+          "promising": false,
+          "requests_used": 1,
+          "error": "status=403"
+        },
+        "host_exposure": {
+          "tested": 1,
+          "hosts": [
+            {
+              "host": "www.starzmanga.com",
+              "status_code": 403,
+              "cf_mitigated": "challenge",
+              "protection_category": "solvable_challenge",
+              "server": "cloudflare",
+              "images_found": 0,
+              "error": null
+            }
+          ],
+          "unchallenged_hosts": [],
+          "error": null
+        },
+        "wayback_images": {
+          "tested": false,
+          "snapshot_timestamp": null,
+          "images_found": 0,
+          "fetch_results": [],
+          "images_reachable_live": null,
+          "error": "لا نسخة مؤرشفة"
+        }
+      },
+      "http_side_channels": [],
+      "strategies": [
+        {
+          "strategy": "seleniumbase_cdp_direct",
+          "engine": "seleniumbase",
+          "egress": "direct",
+          "ok": true,
+          "skipped": null,
+          "resolved": true,
+          "error": null,
+          "screenshot_path": "diagnostics/starzmanga-com-7303-lab-seleniumbase_cdp_direct.png",
+          "navigated": true,
+          "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
+          "final_category": "none",
+          "waited_sec": 11.05,
+          "html_len": 206212,
+          "images_found": 12,
+          "cf_clearance": true,
+          "solve_captcha_calls": 1,
+          "elapsed_sec": 11.53
+        },
+        {
+          "strategy": "patchright_headed_direct",
+          "engine": "patchright",
+          "egress": "direct",
+          "ok": false,
+          "skipped": null,
+          "resolved": false,
+          "error": null,
+          "screenshot_path": "diagnostics/starzmanga-com-7303-lab-patchright_headed_direct.png",
+          "navigated": true,
+          "final_title": "Just a moment...",
+          "final_category": "solvable_challenge",
+          "waited_sec": 50.78,
+          "html_len": 28639,
+          "images_found": 0,
+          "cf_clearance": false,
+          "browser_channel": "chrome",
+          "elapsed_sec": 51.86
+        },
+        {
+          "strategy": "camoufox_direct",
+          "engine": "camoufox",
+          "egress": "direct",
+          "ok": false,
+          "skipped": null,
+          "resolved": false,
+          "error": null,
+          "screenshot_path": "diagnostics/starzmanga-com-7303-lab-camoufox_direct.png",
+          "navigated": true,
+          "final_title": "Just a moment...",
+          "final_category": "solvable_challenge",
+          "waited_sec": 51.51,
+          "html_len": 28298,
+          "images_found": 0,
+          "cf_clearance": false,
+          "elapsed_sec": 56.48
+        },
+        {
+          "strategy": "seleniumbase_cdp_warp",
+          "engine": "seleniumbase",
+          "egress": "warp",
+          "ok": true,
+          "skipped": null,
+          "resolved": true,
+          "error": null,
+          "screenshot_path": "diagnostics/starzmanga-com-7303-lab-seleniumbase_cdp_warp.png",
+          "egress_ip": "2a09:bac1:76c1:5e78::50b:5",
+          "navigated": true,
+          "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
+          "final_category": "none",
+          "waited_sec": 12.5,
+          "html_len": 209130,
+          "images_found": 12,
+          "cf_clearance": true,
+          "solve_captcha_calls": 1,
+          "elapsed_sec": 13.1
+        },
+        {
+          "strategy": "camoufox_warp",
+          "engine": "camoufox",
+          "egress": "warp",
+          "ok": false,
+          "skipped": null,
+          "resolved": false,
+          "error": null,
+          "screenshot_path": "diagnostics/starzmanga-com-7303-lab-camoufox_warp.png",
+          "egress_ip": "2a09:bac1:76c1:5e78::50b:5",
+          "navigated": true,
+          "final_title": "Just a moment...",
+          "final_category": "solvable_challenge",
+          "waited_sec": 50.76,
+          "html_len": 28277,
+          "images_found": 0,
+          "cf_clearance": false,
+          "elapsed_sec": 53.33
+        },
+        {
+          "strategy": "patchright_headed_warp",
+          "engine": "patchright",
+          "egress": "warp",
+          "ok": false,
+          "skipped": null,
+          "resolved": false,
+          "error": null,
+          "screenshot_path": "diagnostics/starzmanga-com-7303-lab-patchright_headed_warp.png",
+          "egress_ip": "2a09:bac1:76c1:5e78::50b:5",
+          "navigated": true,
+          "final_title": "Just a moment...",
+          "final_category": "solvable_challenge",
+          "waited_sec": 50.74,
+          "html_len": 28639,
+          "images_found": 0,
+          "cf_clearance": false,
+          "browser_channel": "chrome",
+          "elapsed_sec": 51.64
+        }
+      ],
+      "winner": {
+        "strategy": "seleniumbase_cdp_direct",
+        "engine": "seleniumbase",
+        "egress": "direct",
+        "ok": true,
+        "skipped": null,
+        "resolved": true,
+        "error": null,
+        "screenshot_path": "diagnostics/starzmanga-com-7303-lab-seleniumbase_cdp_direct.png",
+        "navigated": true,
+        "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
+        "final_category": "none",
+        "waited_sec": 11.05,
+        "html_len": 206212,
+        "images_found": 12,
+        "cf_clearance": true,
+        "solve_captcha_calls": 1,
+        "elapsed_sec": 11.53
+      },
+      "recommended_profile": {
+        "domain": "starzmanga.com",
+        "strategy": "seleniumbase_cdp_direct",
+        "engine": "seleniumbase",
+        "egress": "direct",
+        "headed_virtual_display": true,
+        "challenge_wait_sec": 26,
+        "verified_at": "2026-10-04T04:55:31Z",
+        "run_id": "37177717834",
+        "evidence": {
+          "cf_clearance": true,
+          "images_found": 12,
+          "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم"
+        },
+        "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+      },
+      "virtual_display": {
+        "mode": "xvfb",
+        "display": ":99",
+        "error": null
+      },
+      "warp_setup": {
+        "ok": true,
+        "installed_now": true,
+        "steps": [
+          {
+            "step": "install",
+            "ok": true,
+            "rc": 0,
+            "tail": "sr/lib/systemd/user/warp-taskbar.service.\n\nCreated symlink /etc/systemd/system/multi-user.target.wants/warp-svc.service → /usr/lib/systemd/system/warp-svc.service.\n\nProcessing triggers for libc-bin (2.39-0ubuntu8.9) ...\n",
+            "elapsed_sec": 18.8
+          },
+          {
+            "step": "start_service",
+            "ok": true,
+            "rc": 0,
+            "tail": "",
+            "elapsed_sec": 0.01
+          },
+          {
+            "step": "registration",
+            "ok": true,
+            "rc": 0,
+            "tail": "Success\n",
+            "elapsed_sec": 1.09
+          },
+          {
+            "step": "mode_proxy",
+            "ok": true,
+            "rc": 0,
+            "tail": "Success\n",
+            "elapsed_sec": 0.01
+          },
+          {
+            "step": "proxy_port",
+            "ok": true,
+            "rc": 0,
+            "tail": "Success\n",
+            "elapsed_sec": 0.0
+          },
+          {
+            "step": "connect",
+            "ok": true,
+            "rc": 0,
+            "tail": "Success\n",
+            "elapsed_sec": 0.01
+          },
+          {
+            "step": "verify_trace",
+            "ok": true,
+            "rc": 0,
+            "tail": "fl=1291f5\nh=www.cloudflare.com\nip=2a09:bac1:76c1:5e78::50b:5\nts=1791089613.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=IAD\nsliver=none\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
+            "elapsed_sec": 0.05
+          }
+        ],
+        "warp_state": "on",
+        "egress_ip": "2a09:bac1:76c1:5e78::50b:5",
+        "error": null
+      },
+      "camoufox_setup": {
+        "ok": true,
+        "installed_now": false,
+        "steps": [
+          {
+            "step": "camoufox_fetch",
+            "ok": true,
+            "tail": "Syncing repositories...\n  Official... 18 versions\n  CoryKing... 2 versions\n  JWriter20... 17 versions\n\nSynced 37 versions from 3 repos.\nCamoufox binaries up to date!\nCurrent version: v156.0.1-beta.34\n"
+          }
+        ],
+        "error": null
+      },
+      "seleniumbase_setup": {
+        "ok": true,
+        "installed_now": false,
+        "chrome_found": true,
+        "steps": [],
+        "error": null
+      },
+      "elapsed_sec": 266.33,
+      "reused_from_earlier_url": false
+    },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-1055-report.json",
+      "report": "diagnostics/starzmanga-com-7303-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-1055-screenshot.png",
-        "diagnostics/starzmanga-com-1055-run2-screenshot.png"
+        "diagnostics/starzmanga-com-7303-screenshot.png",
+        "diagnostics/starzmanga-com-7303-run2-screenshot.png",
+        "diagnostics/starzmanga-com-7303-lab-seleniumbase_cdp_direct.png",
+        "diagnostics/starzmanga-com-7303-lab-patchright_headed_direct.png",
+        "diagnostics/starzmanga-com-7303-lab-camoufox_direct.png",
+        "diagnostics/starzmanga-com-7303-lab-seleniumbase_cdp_warp.png",
+        "diagnostics/starzmanga-com-7303-lab-camoufox_warp.png",
+        "diagnostics/starzmanga-com-7303-lab-patchright_headed_warp.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
@@ -1010,7 +1272,7 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519 (29)": "be2e1c521fe5f35e96623c9ab334493f5b47196f2e090fe65542255186f1c95b"
+                  "X25519 (29)": "8ff073c9cee490fd9bd803306a7cc8e711a2b72ecc4f400af565348bcfac297e"
                 }
               ]
             },
@@ -1027,14 +1289,14 @@
           "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
           "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
-          "client_random": "2c41fcdebd72fba92303ab3c604e805bbbdfca9421bb1280ba8a9b424589bbbb",
-          "session_id": "70966732070dcd9510ad92a33d8ec890af45da3dff370af5b98b61b131211110"
+          "client_random": "704bd7f4919d6b473afd5032e2f924c37eec51ef1c52e824c7cbecaae62ee2e1",
+          "session_id": "b85459217d1809bb48fd7ae7a2d85b05daa77becba27c836de5b4910291b712c"
         },
         "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "ja3_hash": "7a3bf2e1bbed58fcc5afc7e29308bdcc",
+          "ja3_hash": "b78a24ee21492a9326caf4ba9cc88f6a",
           "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
           "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
           "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1043,7 +1305,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x8A8A)",
+              "TLS_GREASE (0x2A2A)",
               "TLS_AES_128_GCM_SHA256",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
@@ -1062,7 +1324,51 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0x2a2a)"
+                "name": "TLS_GREASE (0xdada)"
+              },
+              {
+                "name": "supported_groups (10)",
+                "supported_groups": [
+                  "TLS_GREASE (0x6a6a)",
+                  "X25519MLKEM768 (4588)",
+                  "X25519 (29)",
+                  "P-256 (23)",
+                  "P-384 (24)"
+                ]
+              },
+              {
+                "name": "application_settings (17613)",
+                "protocols": [
+                  "h2"
+                ]
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "TLS_GREASE (0x6a6a)": "00"
+                  },
+                  {
+                    "X25519MLKEM768 (4588)": "9c312035c24bf3160b9b5123c6c613b0084c2a22a7e4653c3ca3c95ac43cf72a6964d230dc1961bfc112d247c6ac069513f5a83b0a4589e6c844272a9e3aba7ebc054b349ce3c45f866172d4eab21fd49cc5cc68fcfb469c52901d8a2272c155614070751a371c057f8bcc21ddb92ae6d6c8f702a1f0f3a01c5a4c1d465cbf519e170632b62a5ef27a5caeb65573279fb28b0a09b16711e83951dc97d431374038299f15c4e0197dc6a14b719b89a879480445ad6ea8704d10bd5237cb70c199fb986726394651a58721a58e4d167e0f52630a84506c5a28cb141bac2c357fb6701fe56cd5b424b4312cb410894db14a4e224ec9329f8eb26bc9624c69a2902172b4f2213457080565b175d3b96824fa45392734351cbdbe0aa602882174e41a17899f292322c71616ac89cb6ebc69c66aa09b5c7ad1b2994285033279aa2b572dbe043314936d973b66addb48bd6a3a40607fc63a2fefac8578851b82dc7aae494904e64396f92c26714c40230e850aca315b263bd6c48e3cb3a85290a3d244dcb7514b26010b2c3e0e3435e2b312f8f721e8782ac1d86d59055e6e8a0218e79802d82cb4eca967220c6b3c628fb16e85117d7ac6bf948409484cb349eb0797986bd1a65b4cd7b6ca8375f1f395e32c5b3f420c13223a4a5c343d055013949cb248a0d2b5a73b78554955b055b33685443ddea71599a3cd33b6a00997c84305054e2b2697a729d27002de68cff6a8c3e92555f7a9cb4a85825756aa7da705e4089959668420c807fe026a992824bcc999a4bbac7c366a0c28092d68c95cfa9fcd949cdf5cc2388765532a44fa55a8019c5e3e9073be95a5509cadf1c99e8c412ad791261bb22d5fd33c8a00bfc94a5fd01abd54c30a6b185645c282a01a2bf5206ecfa8a6ce04786beb57bfc3324e727d34069dbac6bf08730ff2c604f807bb363b5892524f9e077d24c8a500299bc9d4bf9400cf101aa0cd905ed084748dacabefc917e103c16a0bc6f8431e4f9804def7ac5ea2bdea8948c866b36a06c7387b2e2d1ca441d42b798706b88b3c31a5121a58a246c9ad3e038d9a669162348266cc7fbf8b6ac0b1193e4061baa9ba061aa43b55a341f75193f9af1650c13ba20d8fb01db648915e97c34f763753cb60aab75ff0461aa6d9b5830936b78837fdb71c7f8a28d74b3105fb6b97a728b1e7221ce0345aa5448f9258b85801eccc3c76a159c4787f5e373ebbdc900567a4018a6240b712c82a6d6ce12f84f5c21d49b0bd658769326e021b61c310839b3575dd573505c091dc37aa46041015bc140bbc8c1d750c2fc10360da6658f51fb940bef233a5cff7a580f63c94001e1826cd17d98e27ca2f78ab49e44226cf4ca234f77359c55131c7a5c49391fd9b60efab3979862d968266690a6beaeb9cc855093b36cfc718abb9964edfaac8b84037338483e3cc782826b088438e89492918e7a16d56c5b68ccf9746b0331b612e5513e4914b838912a6453c1a535105d756b6f11a8fb980a203214d53adf7d08006154681db95a0966a38fca4604c980c8aa3f4b44adc6c1d9b8c0d651348106a6467f22a5d84bc22e78eb9a6818b30542f26cd5e5ba054707ce975582b08beb7dc4c14a820b921273e1f850d16246870976b159947c640518d5e3526090b354cd801aa67637cf57604775314e2afa21da2e298e3a5c7478ecdb02956c6c83175fc74"
+                  },
+                  {
+                    "X25519 (29)": "dd868d1539d17c7dd758a719b525cf95c154d8dc2f9ef0a4b243a7ff4a82cc61"
+                  }
+                ]
+              },
+              {
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
+                ]
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "session_ticket (35)",
+                "data": ""
               },
               {
                 "name": "application_layer_protocol_negotiation (16)",
@@ -1072,31 +1378,18 @@
                 ]
               },
               {
-                "name": "session_ticket (35)",
-                "data": ""
-              },
-              {
-                "name": "status_request (5)",
-                "status_request": {
-                  "certificate_status_type": "OSCP (1)",
-                  "responder_id_list_length": 0,
-                  "request_extensions_length": 0
-                }
+                "name": "compress_certificate (27)",
+                "algorithms": [
+                  "brotli (2)"
+                ]
               },
               {
                 "name": "server_name (0)",
                 "server_name": "tls.peet.ws"
               },
               {
-                "name": "ec_point_formats (11)",
-                "elliptic_curves_point_formats": [
-                  "0x00"
-                ]
-              },
-              {
-                "name": "extended_master_secret (23)",
-                "master_secret_data": "",
-                "extended_master_secret_data": ""
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
               },
               {
                 "name": "signature_algorithms (13)",
@@ -1115,78 +1408,47 @@
                 ]
               },
               {
-                "name": "supported_versions (43)",
-                "versions": [
-                  "TLS_GREASE (0x3a3a)",
-                  "TLS 1.3",
-                  "TLS 1.2"
-                ]
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "0000010001b900207d3f3307da4234b9ee3beea139d5299c0e938037b559aa29c9f4eeb71c95c61300b056ee907232113204a2f095a477789418e8a18726b3ac57c4ce2ad6d5416768a38f90c8f8f860af4405d38e971883dfa31e2bb719e705f501b3c931c234bfbac388277afd2a134c25b8b89650fdea49d2de8e089945843d6882d574effa422f404122d48c9afb433a33e6481b77e74a9801c8b50087293a33b2d5b67372c0cc3d27e990b3c96fcf3397104ffc2c156161b787851662a2ce4aa5b728d755e45573415560fbf8ed8644476f71c38646db53"
               },
               {
-                "name": "supported_groups (10)",
-                "supported_groups": [
-                  "TLS_GREASE (0xeaea)",
-                  "X25519MLKEM768 (4588)",
-                  "X25519 (29)",
-                  "P-256 (23)",
-                  "P-384 (24)"
-                ]
+                "name": "status_request (5)",
+                "status_request": {
+                  "certificate_status_type": "OSCP (1)",
+                  "responder_id_list_length": 0,
+                  "request_extensions_length": 0
+                }
               },
               {
-                "name": "extensionRenegotiationInfo (boringssl) (65281)",
-                "data": "00"
-              },
-              {
-                "name": "compress_certificate (27)",
-                "algorithms": [
-                  "brotli (2)"
-                ]
-              },
-              {
-                "name": "psk_key_exchange_modes (45)",
-                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
-              },
-              {
-                "name": "application_settings (17613)",
-                "protocols": [
-                  "h2"
-                ]
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
               },
               {
                 "name": "signed_certificate_timestamp (18)"
               },
               {
-                "name": "key_share (51)",
-                "shared_keys": [
-                  {
-                    "TLS_GREASE (0xeaea)": "00"
-                  },
-                  {
-                    "X25519MLKEM768 (4588)": "ec8c75ba038ffa24a75154a04a38c677e19d33a8c34b26279c40854ac703daeacb9e55268d1586243c9475224683f28f607c56a3852ca5f44a2c777716274703b830124a2323753216232a5654798e3606c6763fbb12ccb97b8c59d4a110d027356caf0b328d75e14fb19a3bbfe206ffda1ceddbad0a11613367cdfa522397c66765e5171f46a86ffa677c13917cfa5e453700011048209416ef5794d5072218a8229de5c0f4a112b2750179aab97084b95054a26a16cec89557d9c59a0c8c44d22842a038520f2c8715f9463bd58b35a750edc3bd12c0ae05b753f2c2cbb9b0362e1029931c42388878ef9ba1794b8e0574193b99133dbba7ddca96e5281d92037079239a7cbb786b8b034887c8c5e46c1f6c6ac73068d9f91c86c36d36ab39bf6a9627f452ee927edc737b909a0a62d775a14186bd29978510c844d17d9d23a853a53172048401679e51086821143ab3aa7acaf2b81ae07b743a9d09e24d731392e230b2881034ef980fcca89c2c0b07bc96a320807e81642023951aa2467d690c4a954b464e5107939895b22c731d132173ca7a20764e71da45d986c8e1137a520a52a03a3e436c5dd5329735a76e4955978397292bb6ad4bd8c9f5f3a4822c973b571a56c4907ce3ceed1747676a625b7b55f7b8574e10ad346145a40956b65032592ca322b7c7684247cac1947161b648283ec92056dc0c88958b0abe40a1777c057d2799df4288a48978fbc5b7f93252b505a85a39cf2cdc11943300db4564107289ccc22f23d4b7581077fc7a6f42a586d2e548a1d37ebfec6c56cb6bc1c5b519c55a12469d3ca485315c735037b4a2da817a3bbdd65468c9d1b1ecccb841874d45d33d15172d6800825bf17b20caa5e6b81691e968c1e681f4bb9892c7ca26004cd1d13d5d96a888a7a0779abd7b1784b8b17013488f49791e0475754e8b230c0043bd6299e1e36494e503d5488b983a1173c39bb676ad0e258cc672619b8ab5a30977aca1729a80cfe63a3240414a0e496bec73a05045401e8c3a7679b140471ba98a30414805dcc3cab90139259baccd30bb202b7cd5f5bbc645ccb4137799b547fcd83eafbc91381134d4e55b6e06aa8da99698a0b9099791b3c39560721acef967113c1e46600347c24811f14dead69ce3e027ca2c51a3eccb3035238d84a0a9d8bdc77ca290201bd018472f51123f18bb89b2855c280763b64e56da6d41f513a1737def38043c463889d2bf57995f8498cf2010a7683990b3a481bb83ae5db7776d652b03c15e25a66304968704713f13400839e20663960d4aa9aa472069cec19c2b7821e0f093918b348733b52886a853c3b531bc4d28db78744099d39b536a706d92e748bbc5b358aabae3044e7da3c93d69b50ec2b01e0646569cbcbc21558d653ebed8ab706262e1707fc41324705741eb3001ce5cc68b3c4606b6417f3c044638beced3019a988e16aac3f0740491443c5cf54cdad5c7b0b4a829b3b19b21535e616196467c85243d87024d11eab8e6673e7e687132775db62315cdf84df61c40ff46cd9db246b3dc7e6fb0229314cca276092c3509c4457b177875467693c1dc6f6e3b06ae602a4031504f9967d1cc943a5c69bbdb951b6c112e20026cd360d99ec0011a267c6c9c53fe18b47231914355dbef46ffb1f6444a8e4d00d73df83c80a5c0876528441c6b1be3a9413520e2ec151718e81d"
-                  },
-                  {
-                    "X25519 (29)": "f78a3920c5f8a3c39ffe15d20333ec1287a98b6a429ddd03de95a2d52e9c4038"
-                  }
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0xcaca)",
+                  "TLS 1.3",
+                  "TLS 1.2"
                 ]
               },
               {
-                "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "0000010001a000209d4843208722cc688f818e171f80b2877c88a210758b8e49b143a1863d75c07a00d0bc8456d6db769a137c1712572fa0825432e2d1b9e8c242608fb39f6570cca7c1ee997753a66557e272ec5ea6a8c939bd9cddb83e3a373267d6f6cccaddfac2b95c8bb77371997282df74ed7844d3253b323548fa738f48d97a6f073b932e61161778be763339bdd40173f9536fca70f5c5ffe70885f1ac7f0937c3b360f7431db5305b6d55351e523b86f4677180817ff06b58fb65a611ccfd6adfa53fc1a98007317d0b50ad5c20c5c758da8e7e11f5d6e89635dd1141a37e2a512c978127dfd45bfc023204c368d038b59d90ff9701"
-              },
-              {
-                "name": "TLS_GREASE (0xcaca)"
+                "name": "TLS_GREASE (0x1a1a)"
               }
             ],
             "tls_version_record": "771",
             "tls_version_negotiated": "772",
-            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,16-35-5-0-11-23-13-43-10-65281-27-45-17613-18-51-65037,4588-29-23-24,0",
-            "ja3_hash": "7a3bf2e1bbed58fcc5afc7e29308bdcc",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,10-17613-51-11-45-35-16-27-0-65281-13-65037-5-23-18-43,4588-29-23-24,0",
+            "ja3_hash": "b78a24ee21492a9326caf4ba9cc88f6a",
             "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
             "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
             "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
-            "client_random": "abe461d5bff9edf0dfe09fe16aa0d11b14053510ee004153820cd0ce93b8522b",
-            "session_id": "bb41978a58d0c5203b258f13b8ed8f869ea6641afb079a1e8d19051f6ae25aec"
+            "client_random": "3718d01ab5d4a035c7f94f26048a52a2f373769f0eac671f025da90a7d3e6f6c",
+            "session_id": "12a5ad07e91c1c71fda8eb8ca0d36a9cabb001b89684342411cbe9c8ad29d717"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1339,13 +1601,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "X25519MLKEM768 (4588)": "454112007a32bb2914f3878c75cb4e607ccb0b42c9ba4264ecb18df96062ad5ac1cdc414b6e736821982f6527b3d315c3e3c984066680b23046097acd75cb224f972f74247302bad41fc913d59bcf6896cdd107270d978a7287ee9e11741608b5df584ed822bf5c68b5bcb3ed26a1195a9cf5b4c770158937d7531acc995576337f7d2ac4c5b2cc545ca31e33da50620eb166be81a154597c5d4f4447ca816d938b4bc5154fd7a78bf90bc40a84338db04f3f1b8a5f91d631405a04a7b89101b6b6aacf6561f494759bf717a7de932b79a4f48239982b68a28f7241ee4ccc2e503b9f16b0e635e6e255c98e6ab9dd4382b892c6b7024dde209158a3a04734a899c96f3970b849b2c27854fbf19c5f7664c232a3c91b79fee25b49d9a697bab92b80627b15040a66c288c561037e60ad7278d5f961e68cb793a106b5456aef411c1eec012558ac9c8240edd0c1a0f52920d0a7360581d51e45d30b36cc3d8020924753d406fe5142696f68bea595f2e93397502484f453e50f6c23f1844b9ab5be269859dc805ea928c595b6c79bb9a4fa330882a783afa315ba181f287748aca9643b9aefa5067060b41db79bed9901dc33440b742624aea4d9eb682f2f79052b1655125354db7c540c2645fd099bea81b5422860e9aaa5cf06507e61aa59b6453eca6504408986c02bc7852aed88bfeb43cb916a0dc738dc6a02bb377ca22fa6b6b65814a57142c268bb36290a1230b423b981dbc3fc1a665b89957a17a667b97599d694b2b3a27ca00b8474cbab9a8194ff63eae7181c9fca8f0c5c43a349b6a083755c960328b7b7de22899d1374eb6696262563083660e4217c54a83d0845de76cb502407e08828498f9056dfba57743064684adcb6519478a6c74a9b2dfa96b6e69ac334639a20b44d384c50e3cc3b549007660922db74df313b0c5315617648f74a82d111783df162757246b6ed95a5d59b7c6da8b7fa647b5bc39af99a527b9cc58c9aa8558ba83b905e944aac70302002c36f2c5076e9388cb80ad1140a077a2a787439bc470c852d931eff118f624285b148be68352d438b747685a47873325747432f04334f42480a01d9c799315bc1c4664a299428a974980b7371747bc3797429bc0420056921df139a3544bbafb05cd06612ebfbb24d7243755c78c32c636a735066ff49d6252322eba2b9b01cbda09b0d0d640400867295343f4880caf6b698b8021aba07698a07f4c07a906319b23a10a1217956c0b7cef681d8bd3959e3ca33a4a4017039fd60aa78319af18a70a34a87789b6bcd2e10e4d8058e4270c840c3cd20945758c23e856a8dcb7c66f5ab0109c73d5d10539120737a1c7078326132aae843c74d9142817785864407bdd556fa0a0aa1078150a68c0976629634a4f855808f2929ac319c55ffc1fd123a1efe8ce589583aa1397e317626627a710b09936369bd24bac0ea5b8bb4a239c485a832b69a23c0f0f0917dd7b66b221474dd37e6f271854dacbc6aa0b2e243963eb162c556f5c35034637312f853271d5442c313ac16a372bba68b78964e0e4367d6b0118a83600577dc39a7472d65105a556f4c663f4bcb9be47a31d3960c644259056312d00442852a0b0b91a87dacc32cb4af6f9702b6eb65b817a6c7619f3a870abf39771ed94e5b858e4ced7641103cfaa6773a581ec0350c86514c17be193f5643f5c17fb02c622"
+                    "X25519MLKEM768 (4588)": "d4a9abf7139ef249139cc6bf13e7b6a135351616b9a842949d4579f4701a0dbb3df99b01799083a586b5095bc3444a727cf7cb650280234c27cd8c78b9661071430666e969bb100c889696086b9dffba769fa2b0d631514d0a8b54273941188dbfb54f67dbcf267a34421a32a5a0b1015a36a0588f52ac4823b166b9a9105e2070f4556c7b320baa685aa37b384cb2b5b5baad0247b062eab9e099226135c82a434c3240b73b5b9778a02a441a972c4ba873d13744e093405441c1368aba86a2672170052597caa44a6965437026733dea7365f5273a0c9e7a66acd12ab7ff531f7e2b7eb246a0b4c33110abc62b5a4e1397bc239844f89c3416c6cc2c7127055a3c12a08f7dd4ce159c4de292925360569e51903aa723f4a4485991b6bf234d994b32c971961f69551a71a69420373fcc31a852a8f748592a6c88fd5217b0a19e40962b42b25b33b1b6dfe4b45febae7c088f288928d02008f91b6d8e872e12a5c1b7b931d916ba425b3ae130b1d617c66d341f75495501b99017da076dd1b33b035f1731858b2a6646bc534b51cc50555efbf16a8aa60401e05bb82bb0a58b621e1b80f40c2e1b861961d632c0b6323060774f7a5262ac5d5317348de778ab14bc10b073fce90a006a01123a5eb2d106bf037aabd42376d48a18559798fc19081628962ac4e096b326265ed6a5ce75dc8432492116818ec4212077ca5b31611784e47228d609d8fb0c178814956893e4680c8426bb000b3c42911ca9574c2ca072e8439cfc457e737786e112436a901d8e87bb2fc01c21c90c4925c0ac980aabf53be2d72cd4436da6a954b7c3b2ab2a4ef3984e765bb05d954c4a106a0fe94a8515c09911c7da732623c871e4093bb9175e8d79a7ae57b09d102005647eee0b46f72ba70b7b2f79a49d93ab5765ab157817340095b1acc1bba5aa0776310a36c179ed1b6e2c86c912e75b33b002b9c8cdbe46c5e965685a173b13d46eedc93a5c770a45394d67b47b12e829f31654e849babed53d9c02c1ef251b4268204f168cb0557102e2a9554511f441b05e006becca6034d3271f4694df670f522bc0fb921af50109da9b4c078a101ab478091ab2c05b9b58a958662c3692da5b91683e2ea26e6a750e5331b434bb3ad71629ea55bdbf837bdc32b5eebc2919b44415115fc7589fe54bcd1d634d1eaa77610573554676a2560f286659eebaadc6b5786858c5f3c1b953fcc0028558db98c3fa88398f3b2ad6571d4a450f47d525836c4a33b45ad24a2e23d4cdddf40f4eda26072a0cc176184ae841b986351ec64a20870387e47491938b2da199e101067e69b0f3512c5eb20f7859b10d830866bc009fb60a30ba2e7f6c3761d1376e72a8812397e8a04ec670bc91730652455fdc442fa7b8b8fe7175062a92a22001d10253fe900bec982c21943c67e40f2a615649870d18d327e219acb01b1792d94734357368a5c60b33c9571a900af226c6774e1db5679dc4a191f9a5f9296136b65a56e863e228ac5815b1f7719ab8a226d443b5ec684a314bcc44a85081f66dfb88be5bf26120ab69279920afb55d4d78c77bea0649ba09d0f0118c4b771da71195bb8a6b37b6e15891be28bbda0942c55ac4d6fbf7e5bf3dfb15cd041c9f872776bdc9e8e8fe2f8ab8d8903715fdf445de88742cbb742f505c0485dd1b49e42f5360d1e461c578343854bf02adbec80cb562"
                   },
                   {
-                    "X25519 (29)": "3d9b9c4e058d5458451d0e27f083241551cc416a05c2e7daeb936a7ff449ee0a"
+                    "X25519 (29)": "c64151fd0b252fa7300f7a10e9a17ba371bb44f35f04d2079dea5377bee66c50"
                   },
                   {
-                    "P-256 (23)": "041c38f4f4c1c8cea3d6bb337073934c19240ec6bd4e9f64eb9e41dae9a6140b1e81af718b25ae3f5d8511ba8f4e5e8051076e4e17d2dcee8d70aa62a0fe543fb1"
+                    "P-256 (23)": "043bcfe57d2ef6506c69fcdec0bc21e61e50e1542203a8fd2b6bd615a7a2b4b5ca488955351004a0b8914ee96e7710b089bc94e45001cbc0f845f2ce538b10c70f"
                   }
                 ]
               },
@@ -1390,7 +1652,7 @@
               },
               {
                 "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "000001000188002051b0cb5e5bcd7cf9394508772ffdff4be766ea399bada442e1d2a1f76c68422900d0c5e8fb9f4b5f60076739a68d9cebf6fc96f7f226efd0713f987896c0d7afb6911b76b1368bab381dad2df5bcfa25016fd1e57115a1fc3aec36ac57de0d42e6e0ee10fd344013a1d7c82eb5bf9f9fe715a17cfdd3a71ab09ed4b7e277c0713787215fa25db29392b7ad4d5139fba3c5a22a19385ab81c3c5aa23a7291f4110a3b9f9030edef73774e222bb3a74ec3ae9a0f0f95713364162b56746c7ad62b250e0f1d05c68fe2d333575b726360febdd84669c3125b3677f85848d02675b6d64d70ee2ca36728e11110450ddfe9ab6607"
+                "data": "0000010001c50020e02bebef53063aa9841da7ece9c1757410fdfb1ef4d3068e7e8964a28ac4a07400b0d41c915e6c3644b126fb84f5ef11f213b711beb727895bf0726a78e9857f1942f4be08afa53c292336edb1221c27f802572572702c7efcc71f1d9e307b9b99f0dd8a4cc0a940ddcdf7f4e2dcba8ba71d381fae7e1431512a385de8057c638fe0b477c3422a4882fcefe8f15f8a391c299c7aea478d72a183df4970c200cb2d05d806734cf68c1b6b3a4f2dd2b04ddc24131b5f48b3e0e54889c9fabb6227eafb168860562f8be6f29267773233b83cf3"
               }
             ],
             "tls_version_record": "771",
@@ -1401,8 +1663,8 @@
             "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
             "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
             "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
-            "client_random": "fc94979baf482f3c925d84c72accb70a97cbaac2217877ee492ca063a3a1017a",
-            "session_id": "18035bdad4d40d1bbe21cfaa7b9afe8307cb016561e7cb4d1eccfc11055ba571"
+            "client_random": "d00605c275b542b3a427e29d4b0a65c0c9ade118f9c7f36290e99dfc518e4653",
+            "session_id": "003fa6e4432424ccd899a79d8dc6145440b2c47685e2493d17f6d724e5147eb2"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
@@ -1468,7 +1730,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0xBABA)",
+              "TLS_GREASE (0x3A3A)",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
               "TLS_AES_128_GCM_SHA256",
@@ -1492,7 +1754,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0x8a8a)"
+                "name": "TLS_GREASE (0xcaca)"
               },
               {
                 "name": "server_name (0)",
@@ -1510,7 +1772,7 @@
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x2a2a)",
+                  "TLS_GREASE (0x0a0a)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -1561,13 +1823,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0x2a2a)": "00"
+                    "TLS_GREASE (0x0a0a)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "501535cceb3826e8a716ca7be0444d3d516bb7acb689b33d510ab80c927e48558c4b8494e926b1b85a2050ca7774c49d95e2065af8cb86248e58585c5060a08d430eb79824aed35d662936607a843f23250d8b795d35148f568d2749b869372f38bc8a5289373c39178cf9a33ec1616a721969b73be31608e805c4e720bc00e3b14539832a6850c749b6a479885fa64dd1a913c96319244629d73ba2a8d0039960c13b5985fae43975660291a1730337cb0a893a42b15ec9e482de834c68624c26c558e24616c111a8778c44f51467fa004b47f4a45e933f5ef753ec04c920f7312e6bbe206a493d654696269445d5355290887e445862494dfb8c5004fa6ac55a0b4449420caa8a8087314e71c251f841c9b28ee4c6a8c7a01ed91bb1ddc640b7e3a3172ab18f667fca17a7f2bb2746f49c004d468a144281277642e97ad4fb9e3e387d3d9448909839446ba9ec3a1ed777769dc63dcd9b84c27885b2f15130c026d55c36ec832db3abaaa97c89252c851355aa29f0a11c2693b5280fa3b22a4b39408a4a6809427c4190b9c354111936a510e0c933143772f2631f0baeab77bbca059825a8682a7b68ab4a14b5e6adedcb0272402e60cb337122aee0c74acd00b87f004ca4f6ba87ba0976189b3bf322e7c4b9cf48c187795e291480ab01a2bfa4574b87407f19ad7285bb08a2a51293400e216d78932d45573d0f89457e1472e3e2285b18026707ade8a7100d55037be1a3d25a12870525ddd8865b72b41e27c9f2561a5eb6bc9ab5747a34946805a4b894c167b751c9435ba4f5b0d968ba0df647044532dc998157a280dc00271ab6bc37671698fbc5894007150825be6a4e2b1968a2c12b130600cca743ff8814d4b15074a7301a91634e82ba8f740e56402b567888d40b2ab27c51157aafa1ecc4502c55f683c8797899ad8438c1cbcd0c131ff489974b130d09e914d8aa020286c3234685955798543779e0275002522e30b67da56c03044cc7e834859179b6f266976f0cc899e548c381a7e0c0a203e449d183aabfcbcc7afa27b44226a6501d1b425c2e8a431a063d2648b73db51f4a54944b5972632a4691309ee13218c8809648434194ba8dc241c31fc3133dc9ba536ba5ffaaa481c82983b22db7f12abb858c41d96cc8d901da823ca6c6285ea9cad44c00fb3a1d0bf0820dc9cb06ea47ede81a753b5101b2667fd8c8f6d7614a9a1afff753947c73e9b853fe50083fe7a36ad727fce119ed660ce966934f4b433aa37ad287317f01819ba4baa2f95bd8104200c06f7e38ba98c3c49615bfdcd066cff412da8991e2662688802a3efb913d7c3f10e4b0c898b51bb807ccf1bb19cc7e51889c65b048d12ba756955cef0ab776b7573f60a677214f4e6855267468980555c7a96e3669ad6dfcbbc9e011696b2ca7845a1b2a9649ea2e11759c91f66d07b07952c3b983f3c0650b0ef4d892c2d36c49ba8da350bb82d04e40b46c05c9c10d189517ab1303b42ad520be4286151febb4355b22dc21b53e389d0e8463d5d8bb01c202532754050aa624b8c64d2b92ccb3a87133a62597a2c30c0998939cab5b86f01082b9b0cfe9154b6c392d12c33f11b60a17d64a090b3280395c7411e8f33ce6dc65417d38010e0a45cf821ef460292217a745e20086d2075b599d237322de30df44720b6c72bc106b5394b97552d23c8cfa4a3b07300aab7016"
+                    "X25519MLKEM768 (4588)": "3ff8c4dbf25e0f782099147224199c368aa52fda766c10771ee91fdc18a169c58940a07d48e9c65525405e773f1b32236c26c229f4a123173a1429266bf4ab5a0a80dbba16db6c96621a8b924bace5a422560961ba19249107839b34293e73a7c61b12b133a6eb830edf60a3a754052609ccc68c3635b2c9bba041a4ea6092610ce14a68f365589b6a77812ab34a895bece8b693704ba9d4bd2563375e9b953242215bb48a9657027a6cb832f6c5fc5b49c556ac12a3a1f7603749794f3483b4b3295fd9500b1c3a060dc8a6fb41793b0c85213a45bba2b848d58497c33eaa2a88629c11f104adcad11e9c248a81470e55e14f644c8738f871b27873ead89c3ae53be43c83b91b61713853435a31ba9156f468a92ed6352134cff932703cdb53239bb754876b8e806fc3203c9799b539a1625910375687810d3903aef5834b4548458056c29ba6bbe90a51eaac7b8880ff2155f030b51ac6054ac0bb9fc630fbc48253746cd3526e223456838804c88b405713acd31a592fd94cd9bc90449a42fc787d6a21627117c2a9c69c122522a88a137bfa1820c1a882cb6a1181ab9aac6b739591cc1c100819b0201b103fdb65661195cf4b3da822c4c1d7a20b7b3a2578c5c537b97a05068d210d385276255755dd9625208b8a5fb594e9924cbb48878cdba4122b8fbbd0464ce9203180c33be18d9383123aa326dcc7a4b109cccc392badcc7db9712a47d9b4e7db459a8486990abc4b709fedf0a91bd74a591395b32648cc01446f42035c4c6f80d20e764a76963147a3b581976056048539fd984558594b76867dc70591da7437275283b9b63f78b33ee2fa31a8f530a392b3f8640f4e468c3ec135ce6b0803d65d8508890af95328847fe6633ef88c24db1a17f46235e634740e053b2f8b4e6cc11db996cb32cab7d485ba9554b371f3ca9f64ce204a956c1a7aff6a70b3dc4222c20e205104488b357b2613daea4bd7039bed193de0b990c3858a49eb5b3ed611bc998aaab78f630803b23a7b5209183bf742d23113868b8d03e3435c93a340e37275211ff4aaab6159638ca8a960f6128840c7d5354c896933104468c2d84433cc3d8f012d7c353b8b8b4a17693ba3463a5832a307759281980799596f2e2c86d7896f0a40bbec4b49c81896a7761243d193ff673306ecb7b9c7c039443ecb23c9ab80148c773d6067cfb5a12653ac22384a6bd6a997267c38417518e2124e0482735891118676c9d4725d2e6b24cf0b1c34779643a438857c89956942b5749979b03198508f05799dc0cb7457f1059b908f0435246b6c32e7bccdac78aa20588db89546ee6b97f53bc94ce2cfdd157b83d2440692b8eb39138114153a4284ac4c0dfb20506299bb60b20397484be65c731972b2f41ac60c558068f50305f6774292b4da952fe7dcbcf19a9eb235790c9617a98cb42a881c46fc30e82a0a0f1b7f60015f02e59c3e4756d372abf76821a2ab1e7c742049f71014ec6d5306cb87f27e56591246944735fa38b22c1d19facc7ce87b7f9b3fc54373f342a2794a2aa84920bcf2b9d9ac518513383e02079e61cff7b8a37ab43f4a049f9891444877a7dea728adc5b612ccb1c30ac0291323e59a98628b93cc990b66be66e7db4bfeac5f3107fc438b69e6ddf1963e298e1a7d4c56a1390d3119dbdf4c05128ec2d23f4b47b9f35a951fa61bc1f5321f27b602de65"
                   },
                   {
-                    "X25519 (29)": "1013494fd107cc2308741bb5e9e25d032149b21708dfee21a845a683fc839e33"
+                    "X25519 (29)": "eaba846b233c9f0cbce4351021c96a1bf79f37e100f59d8ed7fc497abf7a1764"
                   }
                 ]
               },
@@ -1578,7 +1840,7 @@
               {
                 "name": "supported_versions (43)",
                 "versions": [
-                  "TLS_GREASE (0xcaca)",
+                  "TLS_GREASE (0xaaaa)",
                   "TLS 1.3",
                   "TLS 1.2"
                 ]
@@ -1601,8 +1863,8 @@
             "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
             "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
-            "client_random": "34180914f7a893c9c278e54e9fbbbebe1192bb70889061aae3fddd66aee13b6b",
-            "session_id": "aba7201b2865037b5b6e7459214c8cec1c95c603cbb2ae4a334fae68bd24aecd"
+            "client_random": "e3cceb6578f26e6dd029cd5f68158f1ca644828af0a9b729cfb472f387330dd8",
+            "session_id": "93249698234f7ab8f65643e8b478fac7151370d90cd9267030768aeb6a3e811c"
           },
           "raw_http2": {
             "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
@@ -1802,10 +2064,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "03516b6fa0645ebb4be17a1c676a8574482697c22c9d586409e419a2051ea8cb009605213b07459c57a5ea160e0f6c899207a4d73353e7e0154cd61f40364a7d247a22f0bacefa8dc4e1b705397732ab6a5027b048380f8a0ccefdc2767ac4cdc320bd8f6918c18082adf8c3acec23705a751ffbc1d6db6c125bb43d5967dfa893416b40e5061851b7746066a2755c4a472008348ab410934a9c3929bdc26e36115414ca448021b39ea2bd29403609495c1c041b2887b75008838e39ae09691061a7190121a3b1782c4ad4a9f77503b26002e08a747d0547be023164681a6aa88ed61bad48ea05a2003200fba99276c2a6e4201fe360251298b884c5684918f1707e5ef4603fb255a89a64cc8c47861b3a0fbc4b09f33e36d19eda316e13999e30fc4c5022973fc2a92b4c84b0d089eee543c55ca7a530be4e297757ca1e96c7b579f5b9b00a0b75e4635b2746aa7aab1790193398aedc93ca35b68eb0da96108c1fb5f98af1bc295124ce9b53484d6063555899b87641e66214bc35ad7ab43644952329c55c21322607133eee72ae2063ad2338222571563da36dfa29205ad12259cb47a3100edb635dc1011f0e24184bf6c2aab8322b65b4609b1725d1b20e4997bfd45a89c0791cb7876b0692a528367827232788140efbac02620ef5b49aade8147c4a9653601538ca87e24c8f106a883bf59a4d2a3b012a223825b19fdaab92c491b77882dbc7c8abf251e7f5a88a43a3dd454964630de301041acc8ccb1040b05bc40c8838ac394950435548012164b62d1bca1400aa5149499f5389b5720c22558c122ddc8e35c6a897889be819c8edd20b69521e6bb4118f21ae8d05709f730d6990c66194b1558649f8650f4bf6726c595969b7afb1b47851cc084e5a726c1c49d203684de89b2b0ca5cfd99637f61e49b88cfc81722ff68906e94dbbbbb6bba39d09d0702c9b989e520962bb978d0779652b058c1705235a7af369b5669040c544263869b42fe45fedd7133eec908961439bbaaa73c537b7f0064cab1acbe15695d5a6f49a7e586321f1a6bcfb857de043aa44474b4c456b8de56c7d993b15d11c295a1f6971490961b04fda61cb2383af39413ef952539ab0fb2752b65676d1609ea9d2be0887b88c6c12e57590bfba60dc66510ed4697f122888b2286ba47e66033f5226010b973cc931838e1a1dc925cc3dc729c777b0ce771651f44b943355f36327bef2a9b6dc259d63539d7721e9824d2d6503985ab258b7a782b42e976333fa3550ae938fe3bcae00058caaf237b8e086ce9a97d773377bd8a4c2d624e59187a3a71d28d77004a56a3453abfe17c453559556f81e5ca67ee82bbf525badba1562b4b294f405619854cbdd43244ce9c5c5630666801d09d84f90450bb3325d67b19129031cea39c570c2a0aedb8f886491678b8b6148573cfc7a8b586bb028577e747651236ad7ec8ceff567862132994649c5459ca1094d5ac630d866c9da2a6263cc9471facd59004093e6272576bd99768a66c93e730c3b50f361933b7457090d1c15ce341b2cfdb3c10281a09eb63bed162e1fd33253853d8bcbc859eb907ab58fff6c87237b49b9699478c67147e15c12343076949ebf3c94f47e3d66dd6b48c5dd9ee395bdd32a6edd2175d64c6757aa4bc66bae670b30c444da3891139f374245f708c8f8ddf7f6bb1cb00ea7ab599dc4a17a705c"
+                  "X25519MLKEM768 (4588)": "9fa6a65a3804c6614c53ab46c282962454a358c15666f0462044bc959a1d7be6c2996660b5e74d96c265569255666804cec57cd5f43e199192e5b8947c2228fb0352f1750c7e13c3213115cafc9b5be96bc4048c13668313d512d4959e249aca4ed240d271c0116150163493cc4a886a05020537537289b063b88bb49a7a637a22eee3a15b495d802b9170e200cec1944d512f6e366820b8bf47653e26a0a988b90747376c999138da753ab31a63f75a35a964103cd3373d2979a305a4ad917197e8ab5ac08b898bb2d17a8c8f45c99c6ab7b3c722dec85e17349a8383b3cd63ba6ce38fe9777889aa98341a31e951519376c8a0eac628a206f0e8ae34bc7f7f2552e962c67d1c04f205416714c208b26d8b9840f8723e8dc969d1f417af1521bd610d36231bbf788e016c647c7a98e34a1c6f093bf4b39fc7375d62567a6846688b4b3310b420136c431bb7be2fe50d2124359e27b7153bafb7c027a0763138900aa33bbe4b8b13739883ba26927229367707032e7798fcd0ce0c9c382c18c1eeb01044274d6727be5e838ceda0a5a008713df12f401145b1ca2c0a252426b80dfba315e09bb208d5784de3a29ba3a35258884344196aeaa306d97c89a53a306b84f3a46f727794248301927b8f3b1c9f39f239711b932c456c9e77ac59fbb950a918d6c692f2b81b38653b9a272ab5fb1761a2c76031591cf73f49eb210a284d24fc7b53729b571411833ba508f400822b23eeb07fc26b35b4a1017a3472d434325cb25005c09435292fa4c642aa557e123a24151a0ec8f0254d4475f4d71e09f463c87a5ea6320503a3c7db89c119bc13041343928aac4ea942f6152d63d06cbee65d655b7fb091abd0d3c04dd36d409851f96c6f3351b6f8168677e7bbabf61ef5ca170d2676a8263d82a3b318b79bffe06360c993031cc3fd950171449f293c69c4e430ebc7c18fd19c4fc5b6741b9740d3348af358ce04043c1317761c886b139c948c065c572fc8545fd5176d038b5043b8007c23a8fdb944a788a012266f2e41992145bdbfd4610f696747803f87d07d62c74aabd55040f294be8a642a98771e59a41d2abb6258c6ec17b2ed0a49541c39d2d023e5e748848b03237b5852446adab912e300b85eb33ee9db6e50e7603a37394f0a10c09009072395ba9ac95c1510ba5808640257e7b77b1c71c682015e869b9ce2a45119f7441962c01e421fad017bddb39fca52ab0e7550a1690f72749481349ec1b0727c5b20159ab717e070d8f500e5da9bd8061eac5667124889741801b899a5a158709095b7171a3b6ff13716220345f68ae7f930263c70cb60880753b0c7b32c80c44726e42b2c791f1d414fa6c793d9fc6dc62a3e70a5a572e6c02f89c74c413c0a67cf82e95cc1995e86d31821aa959df08fc147676abcb7c0ec1c9b7a5524e77d6d83703bc5100a559aabf90e702943554abffd48c9cf42879634a9c9925a5a5035cad92c74a7ce25507f99822867015bbc11727af054027086ae861bf12630e178b91ff94ccdf1377aea4ec3f98cdaf34e90eb7a7956886da5009be8884116cedbb44d85e934d639cb75193266f126f9795bb76bcbec12c2c29aa5a34247df4161dffc53cd0460fcdc21d695e2c291547166b02a20190c9403de306d4f400e53af13bf036f6af53c4de0d5ee49da3eb7a68640a78b62d3ed947f45b9d87e793aba9e6514"
                 },
                 {
-                  "X25519 (29)": "9f147dad9619eb55eb1b8a8864c090be0820a040edd3bb55fb87bc9f5a0d3124"
+                  "X25519 (29)": "4f6f4b2ffff351dcea8ca6a150b1fb7beeb169d421a1f76fe8ce97108be2d514"
                 }
               ]
             }
@@ -1818,8 +2080,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "e16d738775c5960da47ac9eae9e3a2b146c856553bc09070117c8a3249e0d8fc",
-          "session_id": "3d3954372504ee316a15a75f2c7ff02befeeea17b34820b130f4b8a34279c67d"
+          "client_random": "4a212c0cfa9e8ce3671905bfb398e6ebd6f71286e41109b8da9e44b59c090aaf",
+          "session_id": "9743056c885c7ce65c58e6bf5c408e182339d14e0288dc5fb3bdc2333bebbb60"
         },
         "raw_http2": {}
       },

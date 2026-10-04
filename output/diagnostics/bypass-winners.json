@@ -1,0 +1,18 @@
+{
+  "starzmanga.com": {
+    "domain": "starzmanga.com",
+    "strategy": "seleniumbase_cdp_direct",
+    "engine": "seleniumbase",
+    "egress": "direct",
+    "headed_virtual_display": true,
+    "challenge_wait_sec": 26,
+    "verified_at": "2026-10-04T04:55:31Z",
+    "run_id": "37177717834",
+    "evidence": {
+      "cf_clearance": true,
+      "images_found": 12,
+      "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم"
+    },
+    "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+  }
+}
