@@ -105718,25 +105718,6 @@
           ],
           "originalBytes": 8593100,
           "compressedBytes": 464482
-        },
-        {
-          "label": "الفصل 93",
-          "num": "93",
-          "chNum": 93.0,
-          "sourceUrl": "https://starzmanga.com/manga/the-book-of-peach-blossoms/93/",
-          "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/005.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/006.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/007.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/008.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-93/009.webp"
-          ],
-          "originalBytes": 9535693,
-          "compressedBytes": 411300
         }
       ]
     },
@@ -113189,6 +113170,23 @@
           ],
           "originalBytes": 17533806,
           "compressedBytes": 1774894
+        },
+        {
+          "label": "الفصل 113",
+          "num": "113",
+          "chNum": 113.0,
+          "sourceUrl": "https://azorafly.com/series/twin-brothers-new-life/chapter-113",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-113/007.webp"
+          ],
+          "originalBytes": 18269835,
+          "compressedBytes": 1796934
         }
       ]
     }
