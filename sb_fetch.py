@@ -15,7 +15,11 @@ from urllib.parse import urlparse
 
 import requests
 
-from compress_chapters import _classify_challenge_html, _looks_like_challenge_html, extract_images_from_html
+import json
+import re
+
+from compress_chapters import (WIDGET_CONTEXT_PATTERN, _classify_challenge_html,
+                               _looks_like_challenge_html, extract_images_from_html)
 
 DEFAULT_WAIT_SEC = 45.0
 
@@ -32,6 +36,90 @@ def _first_ok(sb, getters, default=None):
         except Exception:
             continue
     return default
+
+
+
+_DOM_IMAGES_JS = """(() => {
+  const out = [];
+  document.querySelectorAll('img').forEach(e => {
+    const src = e.currentSrc || e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
+                e.getAttribute('data-original') || e.getAttribute('src') || '';
+    let ctx = '', n = e, d = 0;
+    while (n && d < 5) { ctx += ' ' + (n.className && n.className.toString ? n.className.toString() : '') + ' ' + (n.id || ''); n = n.parentElement; d++; }
+    const r = e.getBoundingClientRect();
+    out.push({src: src, w: e.naturalWidth || 0, h: e.naturalHeight || 0,
+              aw: parseInt(e.getAttribute('width') || '0') || 0, ah: parseInt(e.getAttribute('height') || '0') || 0,
+              rw: Math.round(r.width), rh: Math.round(r.height), ctx: ctx.trim().slice(0, 200)});
+  });
+  return JSON.stringify(out);
+})()"""
+
+_SCROLL_STEP_JS = "(() => { window.scrollBy(0, Math.round(window.innerHeight * 0.85)); return JSON.stringify([window.scrollY + window.innerHeight, document.documentElement.scrollHeight]); })()"
+
+
+def _sb_eval(sb, js: str):
+    for call in (lambda: sb.cdp.evaluate(js), lambda: sb.execute_script("return " + js)):
+        try:
+            v = call()
+            if v is not None:
+                return v
+        except Exception:
+            continue
+    return None
+
+
+def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list[str], list[dict]]:
+    """صور المحتوى الفعلية من DOM المُنفَّذ (بعد تمرير تدريجي لتحفيز lazy-load) بمعيار الحجم:
+    صور الفصل كبيرة (>=300px عرضًا وطولًا)، بخلاف الشعارات والمصغّرات (75x106...) والودجات.
+    يُعيد (روابط مرتّبة بترتيب DOM، كل معلومات <img> للتقرير)."""
+    from urllib.parse import urljoin
+    last_count, stable, last_bottom = -1, 0, -1
+    for _ in range(max_rounds):
+        raw = _sb_eval(sb, _SCROLL_STEP_JS)
+        try:
+            bottom, total = json.loads(raw) if isinstance(raw, str) else (0, 1)
+        except Exception:
+            bottom, total = 0, 1
+        time.sleep(0.7)
+        infos = _dom_infos(sb)
+        loaded = sum(1 for i in infos if i["w"] >= 300 and i["h"] >= 300)
+        at_end = bottom >= total - 5
+        if loaded == last_count and at_end:
+            stable += 1
+            if stable >= 2:
+                break
+        else:
+            stable = 0
+        last_count = loaded
+        if at_end and bottom == last_bottom and stable == 0 and loaded == 0:
+            break
+        last_bottom = bottom
+    infos = _dom_infos(sb)
+    keep, seen = [], set()
+    for tier in ((300, 300), (200, 200)):
+        for i in infos:
+            u = urljoin(base_url, i["src"]) if i["src"] and not i["src"].startswith("data:") else None
+            if not u or u in seen:
+                continue
+            w, h = i["w"] or i["rw"] or i["aw"], i["h"] or i["rh"] or i["ah"]
+            if w < tier[0] or h < tier[1]:
+                continue
+            if WIDGET_CONTEXT_PATTERN.search(i["ctx"] or ""):
+                continue
+            seen.add(u)
+            keep.append(u)
+        if keep:
+            break
+    return keep, infos
+
+
+def _dom_infos(sb) -> list[dict]:
+    raw = _sb_eval(sb, _DOM_IMAGES_JS)
+    try:
+        data = json.loads(raw) if isinstance(raw, str) else (raw or [])
+    except Exception:
+        data = []
+    return [d for d in data if isinstance(d, dict)]
 
 
 def _cookies_dict(sb) -> list:
@@ -104,7 +192,14 @@ def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_W
                     res["waited_sec"] = waited
                     if ok:
                         res["ok"], res["html"] = True, html
-                        res["images"] = extract_images_from_html(html, url)
+                        dom_urls, infos = collect_dom_images_sb(sb, url)
+                        res["images"] = dom_urls or extract_images_from_html(html, url)
+                        res["dom_image_info"] = infos[:60]
+                        try:
+                            html = _first_ok(sb, ["cdp.get_page_source", "get_page_source"], html) or html
+                            res["html"] = html
+                        except Exception:
+                            pass
                         res["cookies"] = _cookies_dict(sb)
                         res["user_agent"] = _first_ok(sb, ["cdp.get_user_agent"], None)
                         if not res["user_agent"]:
