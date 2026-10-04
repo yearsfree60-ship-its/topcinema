@@ -104219,6 +104219,20 @@
           ],
           "originalBytes": 2623840,
           "compressedBytes": 865492
+        },
+        {
+          "label": "الفصل 4",
+          "num": "4",
+          "chNum": 4.0,
+          "sourceUrl": "https://starzmanga.com/manga/mysterious-star-battle-with-my-sweet-wife/4/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-4/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-4/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-4/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-4/004.webp"
+          ],
+          "originalBytes": 3991847,
+          "compressedBytes": 1144160
         }
       ]
     }
