@@ -359,6 +359,42 @@ jobs:
             exit 0
           fi
           cd "$OUTPUT_WORKTREE"
+          # [حماية الفصول الناقصة] فصل أُوقف تحميله في المنتصف قد يترك صورًا جزئية بقرص الرانر.
+          # قبل الدفع نحجب (عبر .gitignore داخل مجلد الفصل) أي مجلد فصل غير مُدرَج بـmanifest.json
+          # (ولا بملفات runs/*.json) — فلا تُدفَع إلا الفصول المكتملة فعليًا. أي خلل بقراءة الفهرس ←
+          # لا حجب إطلاقًا (السلوك القديم) كي لا يُحجَب فصل مكتمل خطأً.
+          python3 - <<'PY' || true
+          import json, pathlib
+          root = pathlib.Path("output")
+          done, ok = set(), False
+          def collect(p):
+              global ok
+              try:
+                  m = json.loads(p.read_text(encoding="utf-8"))
+              except Exception:
+                  return False
+              for mid, e in (m.get("manga") or {}).items():
+                  for ch in e.get("chapters", []):
+                      done.add((mid, str(ch.get("num"))))
+              return True
+          mf = root / "manifest.json"
+          if mf.exists() and collect(mf):
+              ok = True
+              for rf in (root / "runs").glob("*.json"):
+                  collect(rf)
+          if not ok:
+              print("تعذّر قراءة manifest.json — تخطي حجب الفصول الناقصة")
+          else:
+              blocked = 0
+              for mdir in root.iterdir():
+                  if not mdir.is_dir() or "__" not in mdir.name:
+                      continue
+                  for cdir in mdir.iterdir():
+                      if cdir.is_dir() and cdir.name.startswith("ch-") and (mdir.name, cdir.name[3:]) not in done:
+                          (cdir / ".gitignore").write_text("*\n", encoding="utf-8")
+                          blocked += 1
+              print(f"🛡️ حُجب {blocked} مجلد فصل ناقص/غير مُدرَج عن الدفع الاحتياطي")
+          PY
           # [تصحيح حرج ٤/٥] كان يُستخدم هنا "git add output" العادي، الذي
           # يشمل ضمنيًا (منذ git 2.0) رصد أي ملف "محذوف من القرص" مقارنة
           # بالفهرس ودفع حذفه فعليًا. المشكلة: بعد أي "git reset origin/..."
