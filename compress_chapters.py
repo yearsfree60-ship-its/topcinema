@@ -756,12 +756,22 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     parts = [p for p in u.path.split("/") if p]
     chapter_num = None
     chapter_part_index = None
-    for i in range(len(parts) - 1, -1, -1):
-        m = re.search(r"(\d+)$", parts[i])
-        if m:
+    # [جديد — لاحقة بجانب رقم الفصل] آخر مقطع يبدأ برقم تتبعه لاحقة (/44-نهاية-الموسم-الأول/،
+    # /45-end-of-season/) يُقبل ويؤخذ رقمه الأول — يُفحص أولًا لأن (\d+)$ كانت ستلتقط رقمًا
+    # خاطئًا من آخر اللاحقة (…-season-1 ← "1") أو تفشل صامتة ("0"). المقاطع المنتهية برقم فقط
+    # (chapter-12، 12) لا تتأثر إطلاقًا لأنها لا تطابق هذا النمط (يشترط حرف غير رقمي بعد الرقم).
+    if parts:
+        m = re.match(r"^(\d+(?:\.\d+)?)[-_%\u0080-\U0010ffff][^/]*$", parts[-1])
+        if m and not re.fullmatch(r"\d+(?:\.\d+)?", parts[-1]):
             chapter_num = m.group(1)
-            chapter_part_index = i
-            break
+            chapter_part_index = len(parts) - 1
+    if chapter_num is None:
+        for i in range(len(parts) - 1, -1, -1):
+            m = re.search(r"(\d+)$", parts[i])
+            if m:
+                chapter_num = m.group(1)
+                chapter_part_index = i
+                break
 
     # [جديد — إصلاح: رقم فصل يُقرأ "0" خطأً لمواقع الـslug-الواحد] الفحص
     # أعلاه (\d+)$ يطابق فقط رقمًا في *نهاية* جزء المسار — يفشل صامتًا
@@ -1036,22 +1046,49 @@ def _sb_headers_for(url: str) -> dict:
     return headers
 
 
+_SB_SESSION = None
+_NO_RETRY_MARK = "[لا إعادة محاولة]"
+
+
+def _get_sb_session():
+    global _SB_SESSION
+    if _SB_SESSION is None:
+        from sb_fetch import SBSession   # استيراد مؤجَّل (تفادي الدوران)
+        _SB_SESSION = SBSession()
+    return _SB_SESSION
+
+
+def _close_sb_session() -> None:
+    global _SB_SESSION
+    sess, _SB_SESSION = _SB_SESSION, None
+    if sess is not None:
+        try:
+            sess.close()
+        except Exception:
+            pass
+
+
+import atexit as _atexit
+_atexit.register(_close_sb_session)
+
+
 def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
-    """جلب صفحة الفصل عبر SeleniumBase (تسلسليًا — متصفح واحد بالوقت) واستخراج صور المحتوى
-    من DOM المُنفَّذ بعد التمرير (بمعيار الحجم) — HTML الخام/المُحمَّل لا يكفي لأن صفحة
-    القارئ تضم شعارات ومصغّرات وودجات. تُحفظ كوكيز cf_clearance/UA لطلبات الصور."""
+    """جلب صفحة الفصل عبر جلسة SeleniumBase دائمة (متصفح واحد لكل التشغيلة، تسلسليًا) واستخراج صور
+    المحتوى من DOM المُنفَّذ بعد التمرير — HTML الخام لا يكفي لأن صفحة القارئ تضم شعارات ومصغّرات
+    وودجات. تُحفظ كوكيز cf_clearance/UA لطلبات الصور."""
     with _SB_LOCK:
         try:
-            from sb_fetch import fetch_pages_via_seleniumbase   # استيراد مؤجَّل (تفادي الدوران)
+            sess = _get_sb_session()
         except ImportError as e:
             return [], f"sb_fetch/seleniumbase غير متاح: {e}", ""
         try:
-            res = fetch_pages_via_seleniumbase(
-                [chapter_url], download_images=SB_BROWSER_IMAGE_DOWNLOAD).get(chapter_url) or {}
+            res = sess.fetch(chapter_url, download_images=SB_BROWSER_IMAGE_DOWNLOAD) or {}
         except Exception as e:
+            _close_sb_session()   # جلسة مشتبه بها ← تبدأ نظيفة بالمحاولة التالية
             return [], f"فشل تشغيل SeleniumBase: {type(e).__name__}: {e}", ""
     if not res.get("ok"):
-        return [], f"SeleniumBase لم يتجاوز التحدي: {res.get('error')}", ""
+        mark = (_NO_RETRY_MARK + " ") if res.get("fatal") else ""
+        return [], f"{mark}SeleniumBase لم يتجاوز التحدي: {res.get('error')}", ""
     _store_sb_clearance(chapter_url, res.get("cookies") or [], res.get("user_agent"))
     urls = res.get("images") or []
     if not urls:
@@ -2083,6 +2120,8 @@ async def get_chapter_images(browser, chapter_url: str, profile: dict):
             image_urls, fail_reason, title = await asyncio.to_thread(fetch_via_http_simple_sync, chapter_url, profile)
             if image_urls:
                 return None, image_urls, "", title
+            if _NO_RETRY_MARK in (fail_reason or ""):
+                break   # فشل حتمي (لا حاوية قراءة/تحويل) — إعادة المحاولة تهدر الوقت فقط
         return None, [], fail_reason, ""
 
     context, image_urls, fail_reason, title = None, [], "", ""
@@ -2128,7 +2167,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             failed_indices.append(i)
             continue
         try:
-            compressed = compress_image(raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
+            compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
             filename = f"{i:03d}.{IMG_FORMAT}"
             (chapter_dir / filename).write_bytes(compressed)
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
@@ -2136,7 +2175,8 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
             print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
-        await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+        if not profile.get("sb_page_fetch"):
+            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)   # بمسار المتصفح الصور محمّلة مسبقًا — لا داعي للتأخير
 
     if failed_indices:
         print(f"  🔁 إعادة محاولة نهائية لـ {len(failed_indices)} صورة فشلت...")
@@ -2146,7 +2186,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             raw, reason = await download(img_url)
             if raw:
                 try:
-                    compressed = compress_image(raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
+                    compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
                     filename = f"{i:03d}.{IMG_FORMAT}"
                     (chapter_dir / filename).write_bytes(compressed)
                     saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
@@ -2321,6 +2361,8 @@ async def main():
                 r = await run_chapter_safe(browser, url, i, total, profile)
                 await handle_result(url, r)
             await browser.close()
+
+    await asyncio.to_thread(_close_sb_session)
 
     # [إصلاح — استعادة كتلة مفقودة] هذا الدفع النهائي شبكة أمان: يغطي حالة
     # تعطيل الدفع التدريجي (دفعة واحدة بالنهاية) أو أي فصل لم يُدفَع لسبب
