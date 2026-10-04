@@ -167,6 +167,7 @@ raw.githubusercontent.com مباشر — يعمل تنزيله بلا تسجيل
 ================================================================================
 """
 import asyncio
+import threading
 import html as html_lib
 import json
 import os
@@ -710,6 +711,17 @@ PROFILES = {
         # cdn3.procomic.net (بلا مجلد pN بمسارها). راجع _apply_http_content_filter.
         "http_content_pattern": r"app\.procomic\.net/chapters/.+?/p\d+/",
     },
+    # [إضافة — مبنية على تشخيص فعلي run-37178175830] starzmanga.com محمي بتحدٍّ Cloudflare
+    # مُدار (cf-mitigated: challenge): HTTP الخام وcurl_cffi وPlaywright وpatchright وCamoufox
+    # كلها فشلت، والناجح الوحيد SeleniumBase UC+CDP (Chrome حقيقي بواجهة تحت Xvfb، ~17ث).
+    # fetch_mode="http" عمدًا: باقي الأنبوب (تحميل الصور، منع إطلاق Chromium، وضعا OCR/الإنتاج
+    # الكامل) يتعامل مع الصور عبر HTTP؛ فقط جلب صفحة الفصل يمر عبر SeleniumBase (sb_page_fetch)،
+    # ثم تُعاد استخدام كوكي cf_clearance + User-Agent الحقيقيين لباقي الفصول وللصور.
+    "starzmanga": {
+        "label": "ستارز مانجا (SeleniumBase UC+CDP)",
+        "fetch_mode": "http",
+        "sb_page_fetch": True,
+    },
     "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
     # [بروكسي أرشيف الإنترنت عبر SPN2 الرسمية الموثَّقة، مجاني بالكامل
     # لكن يتطلب مفتاحي S3-style (WAYBACK_ACCESS_KEY/WAYBACK_SECRET_KEY من
@@ -972,10 +984,82 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
     return filtered
 
 
+# ---------- جلسة SeleniumBase المُعاد استخدامها (cf_clearance + UA) ----------
+_SB_LOCK = threading.Lock()
+_SB_CLEARANCE: dict[str, dict] = {}   # host -> {"cookie_header": str, "ua": str}
+
+
+def _host_matches_cookie_domain(host: str, domain: str | None) -> bool:
+    d = (domain or "").lstrip(".").lower()
+    host = host.lower()
+    return not d or host == d or host.endswith("." + d)
+
+
+def _store_sb_clearance(page_url: str, cookies: list, ua: str | None) -> None:
+    host = (urlparse(page_url).hostname or "").lower()
+    if not host or not cookies:
+        return
+    _SB_CLEARANCE[host.removeprefix("www.")] = {"cookies": cookies, "ua": ua or UA}
+
+
+def _sb_headers_for(url: str) -> dict:
+    """ترويسات Cookie/User-Agent للطلبات اللاحقة (صفحات/صور) لنفس النطاق الذي حُلَّ تحدّيه."""
+    host = (urlparse(url).hostname or "").lower()
+    entry = _SB_CLEARANCE.get(host.removeprefix("www."))
+    if not entry:
+        return {}
+    pairs = [f"{c['name']}={c['value']}" for c in entry["cookies"]
+             if c.get("name") and _host_matches_cookie_domain(host, c.get("domain"))]
+    headers = {"User-Agent": entry["ua"]}
+    if pairs:
+        headers["Cookie"] = "; ".join(pairs)
+    return headers
+
+
+def _fetch_html_via_sb_sync(chapter_url: str) -> tuple[str | None, str]:
+    """1) محاولة HTTP بكوكيز cf_clearance المحفوظة (سريع). 2) وإلا متصفح SeleniumBase
+    (تسلسليًا عبر قفل — متصفح واحد بالوقت) ثم حفظ الكوكيز الجديدة."""
+    def _try_cached():
+        hdrs = _sb_headers_for(chapter_url)
+        if not hdrs.get("Cookie"):
+            return None
+        try:
+            r = _HTTP_SESSION.get(chapter_url, headers={**hdrs, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}, timeout=20)
+            if r.ok and not _looks_like_challenge_html(r.text):
+                return r.text
+        except Exception:
+            pass
+        return None
+
+    html = _try_cached()
+    if html:
+        return html, ""
+    with _SB_LOCK:
+        html = _try_cached()          # قد يكون خيط آخر حلّ التحدي أثناء الانتظار
+        if html:
+            return html, ""
+        try:
+            from sb_fetch import fetch_pages_via_seleniumbase   # استيراد مؤجَّل (تفادي الدوران)
+        except ImportError as e:
+            return None, f"sb_fetch/seleniumbase غير متاح: {e}"
+        try:
+            res = fetch_pages_via_seleniumbase([chapter_url]).get(chapter_url) or {}
+        except Exception as e:
+            return None, f"فشل تشغيل SeleniumBase: {type(e).__name__}: {e}"
+        if not res.get("ok"):
+            return None, f"SeleniumBase لم يتجاوز التحدي: {res.get('error')}"
+        _store_sb_clearance(chapter_url, res.get("cookies") or [], res.get("user_agent"))
+        return res["html"], ""
+
+
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
     use_wayback_proxy = bool(profile and profile.get("use_wayback_proxy"))
 
-    if use_wayback_proxy:
+    if profile and profile.get("sb_page_fetch"):
+        html, sb_err = _fetch_html_via_sb_sync(chapter_url)
+        if sb_err:
+            return [], sb_err, ""
+    elif use_wayback_proxy:
         # لا مفتاح ولا تسجيل — راجع _wayback_fetch_html. مسار مختلف كليًا
         # عن باقي الفروع (لا "resp" واحد بمعنى الطلب المباشر، بل تسلسل
         # فحص/أرشفة/جلب كامل)، فيُعالَج بدالة مستقلة تُرجع HTML أو رسالة
@@ -1030,7 +1114,7 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
     last_reason = "سبب غير معروف"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
-            resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA}, timeout=20)
+            resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA, **_sb_headers_for(img_url)}, timeout=20)
             ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
