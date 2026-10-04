@@ -9,7 +9,7 @@
       "error": null
     },
     "runner_network_info": {
-      "ip": "172.214.102.2",
+      "ip": "20.163.246.208",
       "org_asn": "AS8075 Microsoft Corporation",
       "city": "Dulles Town Center",
       "country": "US",
@@ -23,12 +23,12 @@
         "certificates_found": 0,
         "historical_ips_literal": [],
         "subdomains_seen": [],
-        "error": "status=502"
+        "error": "ReadTimeout: HTTPSConnectionPool(host='crt.sh', port=443): Read timed out. (read timeout=57.62199105000002)"
       },
       "dns_history_resolve": {
         "resolved": {
           "starzmanga.com": "104.21.33.104",
-          "www.starzmanga.com": "104.21.33.104"
+          "www.starzmanga.com": "172.67.189.207"
         },
         "resolved_all": {
           "starzmanga.com": [
@@ -36,8 +36,8 @@
             "172.67.189.207"
           ],
           "www.starzmanga.com": [
-            "104.21.33.104",
-            "172.67.189.207"
+            "172.67.189.207",
+            "104.21.33.104"
           ]
         },
         "unresolved": [],
@@ -59,9 +59,9 @@
           "kind": "names",
           "ok": false,
           "status": 502,
-          "attempts": 5,
-          "elapsed_sec": 44.75,
-          "error": "status=502",
+          "attempts": 4,
+          "elapsed_sec": 72.24,
+          "error": "ReadTimeout: HTTPSConnectionPool(host='crt.sh', port=443): Read timed out. (read timeout=57.62199105000002)",
           "note": null,
           "api_key_used": false,
           "hostnames_count": 0,
@@ -73,7 +73,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.24,
+          "elapsed_sec": 0.19,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -86,7 +86,7 @@
           "ok": false,
           "status": 403,
           "attempts": 1,
-          "elapsed_sec": 0.1,
+          "elapsed_sec": 0.13,
           "error": "status=403",
           "note": null,
           "api_key_used": false,
@@ -99,7 +99,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 2.51,
+          "elapsed_sec": 0.67,
           "error": null,
           "note": null,
           "api_key_used": true,
@@ -112,7 +112,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.19,
+          "elapsed_sec": 0.78,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -125,7 +125,7 @@
           "ok": false,
           "status": 412,
           "attempts": 1,
-          "elapsed_sec": 0.97,
+          "elapsed_sec": 0.71,
           "error": "status=412",
           "note": null,
           "api_key_used": false,
@@ -138,7 +138,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.31,
+          "elapsed_sec": 0.39,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -151,7 +151,7 @@
           "ok": false,
           "status": 400,
           "attempts": 1,
-          "elapsed_sec": 0.46,
+          "elapsed_sec": 0.36,
           "error": "status=400",
           "note": null,
           "api_key_used": true,
@@ -190,7 +190,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.08,
+          "elapsed_sec": 0.1,
           "error": null,
           "note": "لا ip4 في SPF ولا MX داخلي",
           "api_key_used": false,
@@ -201,13 +201,12 @@
       "discovery_verdict": "only_cloudflare_or_non_public",
       "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
       "budget_sec": 120.0,
-      "elapsed_sec": 44.87,
+      "elapsed_sec": 72.38,
       "cloudflare_excluded_details": [
         {
           "ip": "104.21.33.104",
-          "score": 19,
+          "score": 16,
           "sources": [
-            "HackerTarget",
             "OTX passive DNS",
             "Robtex passive DNS",
             "dns_live"
@@ -222,8 +221,9 @@
         },
         {
           "ip": "172.67.189.207",
-          "score": 16,
+          "score": 19,
           "sources": [
+            "HackerTarget",
             "OTX passive DNS",
             "Robtex passive DNS",
             "dns_live"
@@ -261,7 +261,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a451f895ecde703c-IAD",
+        "cf-ray": "a45225bd0f67820c-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -280,7 +280,7 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.03,
+      "elapsed_sec": 0.04,
       "cf_mitigation": {
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
@@ -294,7 +294,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a451f8960ed8c3cb-IAD",
+            "cf-ray": "a45225bd2f90d65b-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -319,7 +319,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a451f89608baae14-IAD",
+            "cf-ray": "a45225bd2b687a4d-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -344,7 +344,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a451f89609d32426-IAD",
+            "cf-ray": "a45225bd2c7378b1-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -356,7 +356,7 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.03,
+          "elapsed_sec": 0.02,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
@@ -395,14 +395,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-4614-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-8509-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/13c4e72d-6967-4a9a-b69c-b9b0077f7e13",
-          "blob:https://challenges.cloudflare.com/1b04620b-f4f1-4fd5-b59a-c5394e404841",
-          "blob:https://challenges.cloudflare.com/6262c927-6e2c-4400-a5ca-7883baf3fdaa"
+          "blob:https://challenges.cloudflare.com/14dbbdef-728f-4cee-87d3-47502837842c",
+          "blob:https://challenges.cloudflare.com/6b9f9e5d-b730-4bb4-b13e-4e3a91af6161",
+          "blob:https://challenges.cloudflare.com/8fbd00e0-b95d-4a8c-81b2-deaeddf194f0"
         ]
       },
       "adblock_wall": {
@@ -448,38 +448,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.1,
+      "goto_elapsed_sec": 0.11,
       "navigation_timing": {
         "ttfb_ms": 5,
-        "dom_content_loaded_ms": 99,
+        "dom_content_loaded_ms": 105,
         "load_event_ms": null,
-        "transfer_size_bytes": 4113
+        "transfer_size_bytes": 4117
       },
       "wait_for_images_elapsed_sec": 1.61,
       "scroll_elapsed_sec": 1.88,
-      "total_probe_elapsed_sec": 83.33,
+      "total_probe_elapsed_sec": 83.44,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a451f8972b19d699-IAD",
+        "cf-ray": "a45225be4f98b14d-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-cxCyOPsh2ztWg5p68BeRDl' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-CmLLiQR2sYdzTCDy89vYcD' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Sun, 04 Oct 2026 06:01:16 GMT",
+        "date": "Sun, 04 Oct 2026 06:32:06 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=k8VRXy0THau%2BYTOkohHDkhmnDLVebL0lmA7rDV8PvmeoHwcsR4F0ePSSqzee98dZWmesr9Cvs3AoBWP984h2q8WYeeKAg0dVPPs93g7y%2Fc9dSaYqjIazK0dUEZOD4pI8ng%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zCXuXUK8XOKxbdtHjmwMe%2B8YoVa1AV%2FbjjeQLUO%2BPaNbR5o9R33wP7Tzmc6O9RYv1dNKfrb6QobKt%2BfOY3QmUIQmv6aJU3q2ltN4i2lT8yEM%2B2OsoF78TX%2FKIFksbq8xqw%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a451f8972b19d699\"",
+        "server-timing": "chlray;desc=\"a45225be4f98b14d\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -577,14 +577,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-4614-run2-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-8509-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/0b5cce7c-6e25-4810-a5b7-bf7cd01377d3",
-          "blob:https://challenges.cloudflare.com/1218f09d-c6d3-4cf4-8159-ea2108402a8a",
-          "blob:https://challenges.cloudflare.com/84258bb5-7d47-4a36-81da-18c0e1eb12a6"
+          "blob:https://challenges.cloudflare.com/1bfa6be9-439e-4c67-ab1c-f8b4ed7d064d",
+          "blob:https://challenges.cloudflare.com/b050f0be-a40c-41eb-8a64-c21892645690",
+          "blob:https://challenges.cloudflare.com/c4d7ee73-00da-4ec2-a6a3-def82dbf7349"
         ]
       },
       "adblock_wall": {
@@ -630,38 +630,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.06,
+      "goto_elapsed_sec": 0.07,
       "navigation_timing": {
         "ttfb_ms": 4,
-        "dom_content_loaded_ms": 52,
+        "dom_content_loaded_ms": 69,
         "load_event_ms": null,
-        "transfer_size_bytes": 4115
+        "transfer_size_bytes": 4108
       },
-      "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.91,
-      "total_probe_elapsed_sec": 83.15,
+      "wait_for_images_elapsed_sec": 1.62,
+      "scroll_elapsed_sec": 1.99,
+      "total_probe_elapsed_sec": 83.34,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a451faccffc3d699-IAD",
+        "cf-ray": "a45227f5f9997a4d-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-XoFB2G3JZ9mPzSLMnEpRRq' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-o421AOFEblR300m6U3RJc7' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Sun, 04 Oct 2026 06:02:47 GMT",
+        "date": "Sun, 04 Oct 2026 06:33:36 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=U0qwa%2F50nlLTWiGnKoizRZGcj1qW0JKx4y9DqA6%2Fn1ow04z7jjgp9EEq%2FH9Lxhw6qUhjZo3ATQEncMdPWfKY%2BvIdVWM8BpIfolWsS2eSrFZtQI6iyZ%2B9id92KjajQvdbnw%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=e%2FMR1luxIiOJbiLZKiR8Hprardvjy%2Fmr6KDELXDBMx%2BeDCFNZBELa%2FrwYlL8AbvFDe%2Fi8VpzJSVNhgyeD4fQapaY%2FXUck%2BkhX2H38xG%2F5gmF68ZdheWkndn%2Fy2iJS3jHbg%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a451faccffc3d699\"",
+        "server-timing": "chlray;desc=\"a45227f5f9997a4d\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -735,7 +735,7 @@
       "target": "page_url",
       "sample_url": "https://starzmanga.com/manga/otherworldly-evil-monarch/257/",
       "requests_sent": 4,
-      "elapsed_sec": 0.15,
+      "elapsed_sec": 0.14,
       "status_codes": [
         403,
         403,
@@ -764,7 +764,7 @@
         "protection_category": "solvable_challenge",
         "challenge_detected": true,
         "resolved_after_reload": false,
-        "elapsed_sec": 80.43,
+        "elapsed_sec": 81.59,
         "error": null
       },
       "source_url_leak_probe": {
@@ -777,14 +777,14 @@
       "trace_url": "https://starzmanga.com/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "1293f69",
+        "fl": "1290f67",
         "h": "starzmanga.com",
-        "ip": "172.214.102.2",
-        "ts": "1791093940.000",
+        "ip": "20.163.246.208",
+        "ts": "1791095792.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
         "colo": "IAD",
-        "sliver": "none",
+        "sliver": "005-tier1",
         "http": "http/1.1",
         "loc": "US",
         "tls": "TLSv1.3",
@@ -795,7 +795,7 @@
         "kex": "X25519"
       },
       "error": null,
-      "elapsed_sec": 0.03
+      "elapsed_sec": 0.04
     },
     "alternate_paths_probe": {
       "wp_json": {
@@ -938,87 +938,165 @@
           "skipped": null,
           "resolved": true,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_direct.png",
+          "screenshot_path": "diagnostics/starzmanga-com-8509-lab-seleniumbase_cdp_direct.png",
           "navigated": true,
           "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
           "final_category": "none",
-          "waited_sec": 11.62,
-          "html_len": 208727,
-          "images_found": 12,
+          "waited_sec": 11.99,
+          "html_len": 208724,
+          "images_found": 2,
           "cf_clearance": true,
           "solve_captcha_calls": 1,
+          "content_images_from_dom": 2,
+          "dom_images_report": [
+            {
+              "src": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
+              "w": 443,
+              "h": 95,
+              "rw": 232,
+              "rh": 50,
+              "ctx": "img-responsive  logo  wrap_branding  main-navigation_wrap  col-md-12"
+            },
+            {
+              "src": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-1.jpg",
+              "w": 720,
+              "h": 12719,
+              "rw": 720,
+              "rh": 12719,
+              "ctx": "image-0 page-break no-gaps  reading-content  read-container  entry-content_wrap"
+            },
+            {
+              "src": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-2.jpg",
+              "w": 709,
+              "h": 1243,
+              "rw": 709,
+              "rh": 1243,
+              "ctx": "image-1 page-break no-gaps  reading-content  read-container  entry-content_wrap"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/Otherworldly-Evil-Monarch-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/lady-Baby-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/08/cultivation-return-on-campus-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/08/The-Super-Doctor-From-2089-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2024/03/600x900-7-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2023/04/large_146745l-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/Chaotic-Sword-God-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            }
+          ],
           "image_cdn_probe": {
             "tested": true,
             "samples": [
               {
-                "url": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
-                "host": "starz.manga-starz.net",
-                "cookies_sent": 0,
+                "url": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-1.jpg",
+                "host": "s2manhwa.starzmanga.com",
+                "cookies_sent": 5,
                 "no_referer": {
                   "ok": false,
-                  "size": 19606,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "size": 5995,
+                  "why": "status=403 content-type='text/html; charset=UTF-8'"
                 },
                 "referer_only": {
-                  "ok": false,
-                  "size": 19606,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 1695438,
+                  "why": null
                 },
                 "referer_cookies_ua": {
-                  "ok": false,
-                  "size": 19606,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 1695438,
+                  "why": null
                 }
               },
               {
-                "url": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
-                "host": "starz.starzmanga.com",
-                "cookies_sent": 6,
+                "url": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-2.jpg",
+                "host": "s2manhwa.starzmanga.com",
+                "cookies_sent": 5,
                 "no_referer": {
                   "ok": false,
-                  "size": 3884,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "size": 5995,
+                  "why": "status=403 content-type='text/html; charset=UTF-8'"
                 },
                 "referer_only": {
-                  "ok": false,
-                  "size": 3884,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 223771,
+                  "why": null
                 },
                 "referer_cookies_ua": {
-                  "ok": false,
-                  "size": 3884,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-                }
-              },
-              {
-                "url": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
-                "host": "starz.starzmanga.com",
-                "cookies_sent": 6,
-                "no_referer": {
-                  "ok": false,
-                  "size": 3401,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-                },
-                "referer_only": {
-                  "ok": false,
-                  "size": 3401,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-                },
-                "referer_cookies_ua": {
-                  "ok": false,
-                  "size": 3401,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 223771,
+                  "why": null
                 }
               }
             ],
-            "verdict": "blocked_even_with_clearance",
+            "verdict": "open_cdn",
             "cdn_hosts": [
-              "starz.manga-starz.net",
-              "starz.starzmanga.com"
+              "s2manhwa.starzmanga.com"
             ],
             "error": null
           },
-          "elapsed_sec": 13.52
+          "elapsed_sec": 32.03
         },
         {
           "strategy": "patchright_headed_direct",
@@ -1028,16 +1106,16 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-patchright_headed_direct.png",
+          "screenshot_path": "diagnostics/starzmanga-com-8509-lab-patchright_headed_direct.png",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.62,
+          "waited_sec": 50.78,
           "html_len": 28639,
           "images_found": 0,
           "cf_clearance": false,
           "browser_channel": "chrome",
-          "elapsed_sec": 51.38
+          "elapsed_sec": 51.7
         },
         {
           "strategy": "camoufox_direct",
@@ -1047,15 +1125,15 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-camoufox_direct.png",
+          "screenshot_path": "diagnostics/starzmanga-com-8509-lab-camoufox_direct.png",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.68,
-          "html_len": 28234,
+          "waited_sec": 50.94,
+          "html_len": 28277,
           "images_found": 0,
           "cf_clearance": false,
-          "elapsed_sec": 57.33
+          "elapsed_sec": 56.35
         },
         {
           "strategy": "seleniumbase_cdp_warp",
@@ -1065,88 +1143,166 @@
           "skipped": null,
           "resolved": true,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_warp.png",
-          "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
+          "screenshot_path": "diagnostics/starzmanga-com-8509-lab-seleniumbase_cdp_warp.png",
+          "egress_ip": "2a09:bac5:c82b:2832::401:32",
           "navigated": true,
           "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
           "final_category": "none",
-          "waited_sec": 11.48,
-          "html_len": 209837,
-          "images_found": 12,
+          "waited_sec": 11.88,
+          "html_len": 209836,
+          "images_found": 2,
           "cf_clearance": true,
           "solve_captcha_calls": 1,
+          "content_images_from_dom": 2,
+          "dom_images_report": [
+            {
+              "src": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
+              "w": 443,
+              "h": 95,
+              "rw": 232,
+              "rh": 50,
+              "ctx": "img-responsive  logo  wrap_branding  main-navigation_wrap  col-md-12"
+            },
+            {
+              "src": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-1.jpg",
+              "w": 720,
+              "h": 12719,
+              "rw": 720,
+              "rh": 12719,
+              "ctx": "image-0 page-break no-gaps  reading-content  read-container  entry-content_wrap"
+            },
+            {
+              "src": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-2.jpg",
+              "w": 709,
+              "h": 1243,
+              "rw": 709,
+              "rh": 1243,
+              "ctx": "image-1 page-break no-gaps  reading-content  read-container  entry-content_wrap"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/Otherworldly-Evil-Monarch-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/lady-Baby-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/08/cultivation-return-on-campus-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/08/The-Super-Doctor-From-2089-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 65,
+              "rh": 92,
+              "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2024/03/600x900-7-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2023/04/large_146745l-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/Chaotic-Sword-God-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            },
+            {
+              "src": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
+              "w": 75,
+              "h": 106,
+              "rw": 70,
+              "rh": 99,
+              "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+            }
+          ],
           "image_cdn_probe": {
             "tested": true,
             "samples": [
               {
-                "url": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
-                "host": "starz.manga-starz.net",
-                "cookies_sent": 0,
-                "no_referer": {
-                  "ok": false,
-                  "size": 19606,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-                },
-                "referer_only": {
-                  "ok": false,
-                  "size": 19606,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-                },
-                "referer_cookies_ua": {
-                  "ok": false,
-                  "size": 19606,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-                }
-              },
-              {
-                "url": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
-                "host": "starz.starzmanga.com",
+                "url": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-1.jpg",
+                "host": "s2manhwa.starzmanga.com",
                 "cookies_sent": 10,
                 "no_referer": {
                   "ok": false,
-                  "size": 3884,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "size": 5995,
+                  "why": "status=403 content-type='text/html; charset=UTF-8'"
                 },
                 "referer_only": {
-                  "ok": false,
-                  "size": 3884,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 1695438,
+                  "why": null
                 },
                 "referer_cookies_ua": {
-                  "ok": false,
-                  "size": 3884,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 1695438,
+                  "why": null
                 }
               },
               {
-                "url": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
-                "host": "starz.starzmanga.com",
+                "url": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-2.jpg",
+                "host": "s2manhwa.starzmanga.com",
                 "cookies_sent": 10,
                 "no_referer": {
                   "ok": false,
-                  "size": 3401,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "size": 5995,
+                  "why": "status=403 content-type='text/html; charset=UTF-8'"
                 },
                 "referer_only": {
-                  "ok": false,
-                  "size": 3401,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 223771,
+                  "why": null
                 },
                 "referer_cookies_ua": {
-                  "ok": false,
-                  "size": 3401,
-                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                  "ok": true,
+                  "size": 223771,
+                  "why": null
                 }
               }
             ],
-            "verdict": "blocked_even_with_clearance",
+            "verdict": "open_cdn",
             "cdn_hosts": [
-              "starz.manga-starz.net",
-              "starz.starzmanga.com"
+              "s2manhwa.starzmanga.com"
             ],
             "error": null
           },
-          "elapsed_sec": 13.77
+          "elapsed_sec": 32.47
         },
         {
           "strategy": "camoufox_warp",
@@ -1156,16 +1312,16 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-camoufox_warp.png",
-          "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
+          "screenshot_path": "diagnostics/starzmanga-com-8509-lab-camoufox_warp.png",
+          "egress_ip": "2a09:bac5:c82b:2832::401:32",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.77,
+          "waited_sec": 50.86,
           "html_len": 28277,
           "images_found": 0,
           "cf_clearance": false,
-          "elapsed_sec": 52.98
+          "elapsed_sec": 53.4
         },
         {
           "strategy": "patchright_headed_warp",
@@ -1175,17 +1331,17 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-patchright_headed_warp.png",
-          "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
+          "screenshot_path": "diagnostics/starzmanga-com-8509-lab-patchright_headed_warp.png",
+          "egress_ip": "2a09:bac5:c82b:2832::401:32",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.63,
+          "waited_sec": 50.73,
           "html_len": 28639,
           "images_found": 0,
           "cf_clearance": false,
           "browser_channel": "chrome",
-          "elapsed_sec": 51.55
+          "elapsed_sec": 51.69
         }
       ],
       "winner": {
@@ -1196,87 +1352,165 @@
         "skipped": null,
         "resolved": true,
         "error": null,
-        "screenshot_path": "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_direct.png",
+        "screenshot_path": "diagnostics/starzmanga-com-8509-lab-seleniumbase_cdp_direct.png",
         "navigated": true,
         "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
         "final_category": "none",
-        "waited_sec": 11.62,
-        "html_len": 208727,
-        "images_found": 12,
+        "waited_sec": 11.99,
+        "html_len": 208724,
+        "images_found": 2,
         "cf_clearance": true,
         "solve_captcha_calls": 1,
+        "content_images_from_dom": 2,
+        "dom_images_report": [
+          {
+            "src": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
+            "w": 443,
+            "h": 95,
+            "rw": 232,
+            "rh": 50,
+            "ctx": "img-responsive  logo  wrap_branding  main-navigation_wrap  col-md-12"
+          },
+          {
+            "src": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-1.jpg",
+            "w": 720,
+            "h": 12719,
+            "rw": 720,
+            "rh": 12719,
+            "ctx": "image-0 page-break no-gaps  reading-content  read-container  entry-content_wrap"
+          },
+          {
+            "src": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-2.jpg",
+            "w": 709,
+            "h": 1243,
+            "rw": 709,
+            "rh": 1243,
+            "ctx": "image-1 page-break no-gaps  reading-content  read-container  entry-content_wrap"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/Otherworldly-Evil-Monarch-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 65,
+            "rh": 92,
+            "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/lady-Baby-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 65,
+            "rh": 92,
+            "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2020/08/cultivation-return-on-campus-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 65,
+            "rh": 92,
+            "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 65,
+            "rh": 92,
+            "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2020/08/The-Super-Doctor-From-2089-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 65,
+            "rh": 92,
+            "ctx": "img-responsive    popular-img widget-thumbnail c-image-hover  popular-item-wrap  widget-content"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2024/03/600x900-7-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 70,
+            "rh": 99,
+            "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2023/04/large_146745l-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 70,
+            "rh": 99,
+            "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2020/06/Chaotic-Sword-God-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 70,
+            "rh": 99,
+            "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+          },
+          {
+            "src": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
+            "w": 75,
+            "h": 106,
+            "rw": 70,
+            "rh": 99,
+            "ctx": "img-responsive    related-reading-img widget-thumbnail c-image-hover  related-reading-wrap  col-12 col-sm-6 col-md-3"
+          }
+        ],
         "image_cdn_probe": {
           "tested": true,
           "samples": [
             {
-              "url": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
-              "host": "starz.manga-starz.net",
-              "cookies_sent": 0,
+              "url": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-1.jpg",
+              "host": "s2manhwa.starzmanga.com",
+              "cookies_sent": 5,
               "no_referer": {
                 "ok": false,
-                "size": 19606,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                "size": 5995,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
               },
               "referer_only": {
-                "ok": false,
-                "size": 19606,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                "ok": true,
+                "size": 1695438,
+                "why": null
               },
               "referer_cookies_ua": {
-                "ok": false,
-                "size": 19606,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                "ok": true,
+                "size": 1695438,
+                "why": null
               }
             },
             {
-              "url": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
-              "host": "starz.starzmanga.com",
-              "cookies_sent": 6,
+              "url": "https://s2manhwa.starzmanga.com/manga/arb4/data/manga_5ef28f62ab9b0/16488c90b8fc126ba2389942fb1c36b4/image-2.jpg",
+              "host": "s2manhwa.starzmanga.com",
+              "cookies_sent": 5,
               "no_referer": {
                 "ok": false,
-                "size": 3884,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                "size": 5995,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
               },
               "referer_only": {
-                "ok": false,
-                "size": 3884,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                "ok": true,
+                "size": 223771,
+                "why": null
               },
               "referer_cookies_ua": {
-                "ok": false,
-                "size": 3884,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-              }
-            },
-            {
-              "url": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
-              "host": "starz.starzmanga.com",
-              "cookies_sent": 6,
-              "no_referer": {
-                "ok": false,
-                "size": 3401,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-              },
-              "referer_only": {
-                "ok": false,
-                "size": 3401,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
-              },
-              "referer_cookies_ua": {
-                "ok": false,
-                "size": 3401,
-                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                "ok": true,
+                "size": 223771,
+                "why": null
               }
             }
           ],
-          "verdict": "blocked_even_with_clearance",
+          "verdict": "open_cdn",
           "cdn_hosts": [
-            "starz.manga-starz.net",
-            "starz.starzmanga.com"
+            "s2manhwa.starzmanga.com"
           ],
           "error": null
         },
-        "elapsed_sec": 13.52
+        "elapsed_sec": 32.03
       },
       "recommended_profile": {
         "domain": "starzmanga.com",
@@ -1285,13 +1519,13 @@
         "egress": "direct",
         "headed_virtual_display": true,
         "challenge_wait_sec": 27,
-        "verified_at": "2026-10-04T06:10:09Z",
-        "run_id": "37181210066",
+        "verified_at": "2026-10-04T06:41:31Z",
+        "run_id": "37182731059",
         "evidence": {
           "cf_clearance": true,
-          "images_found": 12,
+          "images_found": 2,
           "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
-          "image_cdn_verdict": "blocked_even_with_clearance"
+          "image_cdn_verdict": "open_cdn"
         },
         "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
       },
@@ -1309,7 +1543,7 @@
             "ok": true,
             "rc": 0,
             "tail": "sr/lib/systemd/user/warp-taskbar.service.\n\nCreated symlink /etc/systemd/system/multi-user.target.wants/warp-svc.service → /usr/lib/systemd/system/warp-svc.service.\n\nProcessing triggers for libc-bin (2.39-0ubuntu8.9) ...\n",
-            "elapsed_sec": 20.03
+            "elapsed_sec": 13.19
           },
           {
             "step": "start_service",
@@ -1323,14 +1557,14 @@
             "ok": true,
             "rc": 0,
             "tail": "Success\n",
-            "elapsed_sec": 1.0
+            "elapsed_sec": 0.83
           },
           {
             "step": "mode_proxy",
             "ok": true,
             "rc": 0,
             "tail": "Success\n",
-            "elapsed_sec": 0.03
+            "elapsed_sec": 0.01
           },
           {
             "step": "proxy_port",
@@ -1350,12 +1584,12 @@
             "step": "verify_trace",
             "ok": true,
             "rc": 0,
-            "tail": "fl=572f142\nh=www.cloudflare.com\nip=2a09:bac1:76a1:62b0::23c:8e\nts=1791094091.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=IAD\nsliver=none\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
-            "elapsed_sec": 0.06
+            "tail": "25f50\nh=www.cloudflare.com\nip=2a09:bac5:c82b:2832::401:32\nts=1791095954.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=IAD\nsliver=050-tier1\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
+            "elapsed_sec": 0.05
           }
         ],
         "warp_state": "on",
-        "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
+        "egress_ip": "2a09:bac5:c82b:2832::401:32",
         "error": null
       },
       "camoufox_setup": {
@@ -1377,21 +1611,21 @@
         "steps": [],
         "error": null
       },
-      "elapsed_sec": 269.28,
+      "elapsed_sec": 299.56,
       "reused_from_earlier_url": false
     },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-4614-report.json",
+      "report": "diagnostics/starzmanga-com-8509-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-4614-screenshot.png",
-        "diagnostics/starzmanga-com-4614-run2-screenshot.png",
-        "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_direct.png",
-        "diagnostics/starzmanga-com-4614-lab-patchright_headed_direct.png",
-        "diagnostics/starzmanga-com-4614-lab-camoufox_direct.png",
-        "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_warp.png",
-        "diagnostics/starzmanga-com-4614-lab-camoufox_warp.png",
-        "diagnostics/starzmanga-com-4614-lab-patchright_headed_warp.png"
+        "diagnostics/starzmanga-com-8509-screenshot.png",
+        "diagnostics/starzmanga-com-8509-run2-screenshot.png",
+        "diagnostics/starzmanga-com-8509-lab-seleniumbase_cdp_direct.png",
+        "diagnostics/starzmanga-com-8509-lab-patchright_headed_direct.png",
+        "diagnostics/starzmanga-com-8509-lab-camoufox_direct.png",
+        "diagnostics/starzmanga-com-8509-lab-seleniumbase_cdp_warp.png",
+        "diagnostics/starzmanga-com-8509-lab-camoufox_warp.png",
+        "diagnostics/starzmanga-com-8509-lab-patchright_headed_warp.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
@@ -1511,7 +1745,7 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519 (29)": "8ae3e14f20208adf6c237ef3f476687bec164cb36d4fac008cbdbd73b29eb70d"
+                  "X25519 (29)": "8c3aa86bd8bc644bcabcd32c1d31a9467a842ae39282e215f64144813d4e4c50"
                 }
               ]
             },
@@ -1528,14 +1762,14 @@
           "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
           "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
-          "client_random": "b6996aab8ef50017eb2ebf58d54a840f0be0050d63a9570b71309fa484ea0188",
-          "session_id": "aae62397985bcee44a91d3dc6b8efe84c7bddcc2099305a29a0cb1e611fc2b9e"
+          "client_random": "927d0698ba86393a5b78f3b6b7f80d0dd1e983c488571577d81f46092d3e54f1",
+          "session_id": "7ce725038e7ac82d79ddcad5606ae14832a7729dca23e2216a06af8e94b42d0a"
         },
         "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "ja3_hash": "d28e521f82631e6e9ed2df95bdfef186",
+          "ja3_hash": "7a0b71a3089902cfef8f14d42531ad17",
           "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
           "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
           "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1544,7 +1778,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x8A8A)",
+              "TLS_GREASE (0xEAEA)",
               "TLS_AES_128_GCM_SHA256",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
@@ -1563,51 +1797,16 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0x3a3a)"
-              },
-              {
-                "name": "application_layer_protocol_negotiation (16)",
-                "protocols": [
-                  "h2",
-                  "http/1.1"
-                ]
-              },
-              {
-                "name": "status_request (5)",
-                "status_request": {
-                  "certificate_status_type": "OSCP (1)",
-                  "responder_id_list_length": 0,
-                  "request_extensions_length": 0
-                }
+                "name": "TLS_GREASE (0xdada)"
               },
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0x3a3a)",
+                  "TLS_GREASE (0x2a2a)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
                   "P-384 (24)"
-                ]
-              },
-              {
-                "name": "key_share (51)",
-                "shared_keys": [
-                  {
-                    "TLS_GREASE (0x3a3a)": "00"
-                  },
-                  {
-                    "X25519MLKEM768 (4588)": "42c1a69daa49206b76a5e01892a79699c57b46b74a31692f9fa01adce1187ba9b58664b996cb00583659bb20b660a297cd6688324c273fba6e087522d2490a42513925705c12676924e061512a3c38d12ab1466603273063625d6295ae8e7821f8091a7f001959b1320b20ccbef10ef0eb56aca1808d4b91b59b13ee2548183c7d71cb4d74307ebc768f547a6145520fd4a2458143b113d70d15f9c78cc896a26a61be01714ac048abb23c391c3cc601100bc488a743970cb2cc30b88b45287baffc16ed673938ea1d8859a9d564c92cb60170395c8396356dfb713da7c6640710242182978822c16156237573262676e73225dad078da50ad368231f895ac49894f3497ac7abc00f86b55ca431de59951aeb3bf7f01692642211178576cb6b9b7b73922f58917812563d55ac3208a916b3f897058018c623bc23cf6cb3eca84b1a625741a4b273be3001dd53950b42126912c12e4261126a3c3a5b6fae87368c84bd704171c93b87fdc9288902cb928897a91c7d31796408034f3b919482a52429640b2b0346591c504eb9fc8681dfcc9c23a1837fee23d8bdb212db6bee6bc56fa341df4a783c29c3827e6806fc95138830c1ca53aab016af7458448d34b70f74349b98e0f07320ec2501f34482aa4103d0aa2e7b4230ae2c18146c372db5e05376dd0629201fc11c72b9a8e0357fdf663bbe8bab29c92c2638b1f673ee2ea0869078f8198ada1f0c3ddf86b01f85c61facb1a82a31bb688030a48de4bc9ad94ce9d8c10d1763c46b226165283316171337b31f1fcacc1845889d07decbc3f8f83213360cb8b24231657abdde65ebc3356dd5506613134be01bb19c4bc8ffc0e5c3381b5a7c345bb385081b482c327204861d31c44f75bae1f2aa8f5b504a256a7b68b33b6b47e1a42681c8709a58891f1972e6022a09f307979b3395c571a19d544d169c5e475cafb2aa72768b5367422ea741cde3a946dc54aaa94201379961cc4076c245906c8540fc0c090c78e501c0ab2aa8c853206d5a61e180ab69aa126eaf5b5d1d3c9ffd8a6d8bc2c72da0ca1d901e2f49ad0f07edd754811e16b4ed05c5c6bac37653012a9847ccb2fcab2ba9d867081321ac4daabf8299d00860790c68962391d31bbc7b511a5d7a416ffe914e850cf902b18c0770e442138008b904a4a4c15bc293165a061d32fb610ad76e968337820a70ab5b7a2c6c2813a49c320b45ccb168a5b3a3c5a7eeb6373eb49e36897ba509e64192bac8a254df8037fcb3061c88b15277cb3bccd98ac328ad88d82585b232bc47f2a0ae4c58265a0649f05267b32b7e4762c321b456a86b2a2332b932c67b5c1b181c772e482b23471a8e7f1cfd378a61252a07891c4f2f9b8fe806527e19e7ef1cbcb7c56568a93e8ec5bc3291f78c139ed88bbdd65520dd32f3c41344336a0f90bc7e0222839f31de8b07aa650af5b27c28de756f3682c39f81faed717f322643d9c844a402f27e39fc861bcc4e4cce868961e309187e82f70030e84ac6870771edee6c457d3cdc1e16f88234d27d79858e1b5084278f3fb0cc3451276fc2aabb4909c8a1c1fb91170d95a9b993ab4d479f615629fa464bc90b316e48712003d85654550509a2e44564fdc1c7a172c185ca5025faa68f4c3f320219735414cce0b6ba12fd46c4bcd1cf7ff6956418e489bb3f809a0ab4e2586e9a28073321638fac5e6d58f60"
-                  },
-                  {
-                    "X25519 (29)": "9844cf835f908203a4a4aac28df88d0021d86f23e8f777cf7d147b1eaf9cc412"
-                  }
-                ]
-              },
-              {
-                "name": "application_settings (17613)",
-                "protocols": [
-                  "h2"
                 ]
               },
               {
@@ -1617,18 +1816,68 @@
                 ]
               },
               {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0x3a3a)",
+                  "TLS 1.3",
+                  "TLS 1.2"
+                ]
+              },
+              {
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "0000010001280020d7420c9aec50be64df307468a3911a55f262926b7d4fe5a6011455b2f500ed5e00d0e9d43f88895ac2f3bbb6d8ac9888289bca6c7d9b6b3ff80c21f825686967794943c46a235b8d5a3c75a301d73d0660dbadc1854480e85f61d70fe83b707b9a5c310b1a2ec64e372c7769657ffad98b9c28123e222d564f0e4faa88c95c241946c90d85c084c097ad5fb2d7021d83a509037f97cbfe7b01e6687ac23db4c0bf9af462fd148734150799e6f81b5ead5d932bdc0f28dd6c208defe2b96bc676a00e6a6aedea66a54d86b1146265980c033d0d592e0a9f841d757b19253886cdf4fd4f39daa7af83ed66229ad97d58d27ba9"
+              },
+              {
+                "name": "application_settings (17613)",
+                "protocols": [
+                  "h2"
+                ]
+              },
+              {
                 "name": "compress_certificate (27)",
                 "algorithms": [
                   "brotli (2)"
                 ]
               },
               {
-                "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "000001000173002091e0a44654f3c8ca5b420977b7e719846f139a664cfecb73f42bddd511d8117f00d013c07dce168ef05aeef84e178624f6df55c7bd5e1b5822d2a51192468b9b8b3577597e82381cae5431aa62af55fb763c787a905ef53619842f44b0cec1d22231c99d0291bbaa717026d9b8c485f05b8ecc8ce1946467bb8ea270dd20e77ff320d5c5ec06b1c26214abc71ff3c5a5320c7b49cbda5c3d45ba04efb51227089603ebdfa05d006ecbae842c44c97a4adf2cc64478b06e244822c33b40d7ed934e908ddd667dd5d1fad02208edc408682b6c650a7d2cc7af37030a15ba26392fdc91206adc3298f6a93e965a9c9da35648e9"
+                "name": "signed_certificate_timestamp (18)"
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "TLS_GREASE (0x2a2a)": "00"
+                  },
+                  {
+                    "X25519MLKEM768 (4588)": "2bc4cb9731b406a566f4a1adcb1120f7993dd3f1159903aa7d591b6b1bac2ac81a063bae0cc047d2c639c237b6b9ba88c547ce14a9800e032d80140f91923546b1440b5c23f579b635102146f1bea80872ee1b109270b63787c94d7c7a36eb158a240596e8364bc88381483561b60d38ca685b0b358860c888428f21680fdd1074a8d6563543cdf67a6f1f74c7f5eb709490acfc7719ea073e99f724de400bb49a13ccdbb8183788ebdb8dbd99521f891912471a165612f24b27965544c1d94581c0b218071b9e926d95760e7f710db8c7a83e741c612a0b54002b62112192768bd08863a56c1edd79c47afabd7bdbbc8ba6b8943a04001b283e2762dbc24a1bb06f45ecb07c663ff142cec859c587a70a38e99a7410100c90a174bbc4118bc643e51392651e2adb8ff9abbaf96184ffdbaa37d33ef8ab5c37659a43c04d72d60b39b196f71bc7a2d25bf5c18e0622824d073ff830919b46c87118365017a7285450a81c6226fc1702380e528b4c37365aacb59809477c409503b4122bd52c6d3e7644dd8bca601661e2f14d9ad165b7d9324dd59d99cc6a0943354615cab5e970ea45819d03105179436ec30355a8c642695f1b54a63b246f11b533d2844f99f8c7b993953eb124d1358c2667a08e10afd4d28e22b3a01e426cd8b1311ee9c04c91631170cc7b9ca4363ca43cf27d6ba94dcea3c81ed0ce4b777e38da9418d960978929fd639f546598f71509ef50277cf504bb548c912c32fd0497013c19181bbbcb5b67d51672de2641d2174d3055ca1d5a5547a40599738d9e6bbd49021b86e9369c30b202292297e62d332c5ceba53b9a316aafd393e0bc7035374e6220440c5a0a38809cd6d88aa4547433a3223f0b7a6d633c42903e4142b5fbf14305191b410bb9f99b4cb2ec7457f1424998119a2c2a57807a48c494a906056cd85bc7e324ff501ea118547c3c0790d196b899769bc2b849b9314670c75190aa409a0e29b642e8c50832cb52e7f4775360451118520464a3640880dff34de753ab70296cc671aae1f9a0fd21bc61b544dd90b372b72b50c075a25b0b0edb877126b835a04965c24b7111bff327c430d3173e4574f772cf3b6505dbf735fdc225d525c65662009cd78a9c1741c47bbc9d142c8978b4a781acab77a627b663d7ea99af775f28d5a0c31228378613ed97bfe22a68c7db769ad8488edb9e0c767361415bc2e7b7c9830e7cbc01f89b68cc9885385461b3fa53733bc6479776d6981fe00c4a30cc7b6e4bb2dfb091bb4c024b3cbeb530c5ae08750eb8838ad266b1bb08bbcab7aa5928f329cb6237c0fc8b9b40f3c186942e61f38f53e87cd97969fcf597d8008854ac1a1cf273fc787e6bc3c75e4b8671c68303700c32368595401a7a9942dc09ca7ea890afca78991bb773e6687472cd46b744f4e5335ca4bd834b04a3bc5fa4210626e93897918686216e5cb111fe763bb86b76167856923c9cccba36cc5b1d89a6c55fb6a3992b428ca665c7929000777f8b2675926107bf6646cbb8963b429fcc8b8e7c1967f3377de8f87953b773b52b094fda094443ca2dd0ccda154064f4948d8843f94a28937a098955907ada8295986393888614450ca6833a5422c1c06af05c57d8e80b40e635199015dbdef185f62a3ff698c148d84cc8e49d97c2e86660a614b57f565d639ca2fc20fffbda1df44f77635212f3ac2cf905"
+                  },
+                  {
+                    "X25519 (29)": "38db61337cfc092780282fc5bd6c7e9d10ee5602376912a13fdee40fa5d77e45"
+                  }
+                ]
               },
               {
                 "name": "psk_key_exchange_modes (45)",
                 "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "application_layer_protocol_negotiation (16)",
+                "protocols": [
+                  "h2",
+                  "http/1.1"
+                ]
+              },
+              {
+                "name": "session_ticket (35)",
+                "data": ""
               },
               {
                 "name": "signature_algorithms (13)",
@@ -1652,42 +1901,27 @@
                 "extended_master_secret_data": ""
               },
               {
-                "name": "server_name (0)",
-                "server_name": "tls.peet.ws"
+                "name": "status_request (5)",
+                "status_request": {
+                  "certificate_status_type": "OSCP (1)",
+                  "responder_id_list_length": 0,
+                  "request_extensions_length": 0
+                }
               },
               {
-                "name": "session_ticket (35)",
-                "data": ""
-              },
-              {
-                "name": "supported_versions (43)",
-                "versions": [
-                  "TLS_GREASE (0xaaaa)",
-                  "TLS 1.3",
-                  "TLS 1.2"
-                ]
-              },
-              {
-                "name": "extensionRenegotiationInfo (boringssl) (65281)",
-                "data": "00"
-              },
-              {
-                "name": "signed_certificate_timestamp (18)"
-              },
-              {
-                "name": "TLS_GREASE (0xeaea)"
+                "name": "TLS_GREASE (0x9a9a)"
               }
             ],
             "tls_version_record": "771",
             "tls_version_negotiated": "772",
-            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,16-5-10-51-17613-11-27-65037-45-13-23-0-35-43-65281-18,4588-29-23-24,0",
-            "ja3_hash": "d28e521f82631e6e9ed2df95bdfef186",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,10-11-43-65037-17613-27-18-65281-51-45-0-16-35-13-23-5,4588-29-23-24,0",
+            "ja3_hash": "7a0b71a3089902cfef8f14d42531ad17",
             "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
             "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
             "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
-            "client_random": "af55405bf6c31f583406f9d6b8be24a2c5801862fffb5fd2f48c245619fbbc41",
-            "session_id": "8f3b4c84163d9d2fd74b62680d718256830b4f5b2b3f0b8c94158aa496f9a6c3"
+            "client_random": "d5e565466a8d0eee251e163c5e42cf494d85ff2f119246bcf41bfab7406ee6ce",
+            "session_id": "73210b4c0f3fa7054081f889c22e46dd01bcd46d4d17ad912ceb76470e2917d6"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
@@ -1840,13 +2074,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "X25519MLKEM768 (4588)": "4115c59b220e4574859ee93a5b7aa16df49016fb97f97a9575da182c214bc7da5558084a7dc174f4999be089b9af4c4cc63529660975b821c6a5f1ce6615878a928ce23c69fd3bb68c720d73662daed53cc7f75d3bbb51b6f537478927f61c8ac2f8c6f12131912343b9f1af412b077ee2713f4b08c584a50e9c9a548c84792b0ba7a441a322085df12c77c0092d58339fb46397b242a1f875a559bd0e6c146cd44a06426441814fb0cca352e37d5c22c55418c1f86c74f33bb9f2c0960dc15e25320a1e10901f8a126e183eb3fa080aabaf49900dbbc27239b1b44bea8c1feb7d67a2ba8978ca9c537621d90bfbea08f5b40252fb4a7fba0c1a246311dcbe0ff68732da960c93cf30e4c1f595c15a534e0d813403f7037501baa6a45f1fb9149e05bfd9c584901123e1420f8a6ab48b785ba0a185bb708f70f842ede7c9af022981a945aa3c5fff093f5e5a7ee18c1407eaa074248115d9182825cfcd068363a71619250925776909015bda87a375b3b6a194ba6581c0e16745c82a59372108ca25a855621a6b65bfd4b5aac8c5ada77b6ec9d2b7d8709bbf45c52bc81789d871e48bb12d51b0ee5170aec79a538ba9a7c91904dc9deb42c641d7bab149ccf2e83755f389c6902920a51b8a960b63e95a7dc6518fdab4fbb8866773a64490205f60a1b1971d65d7709eb3adb4787104976f399bc35efcb74d83adbc78b7f9b33ddd1402ff4641d96b6cfb1a3d76a84bd8380d74b2a0270711f7bc5fc1d7793ae693ad781065fc1dbc344513c304e234050e0589306b33c379440a200998f12b2233b3738909d6289da509bad2a72266d0344ea94a60bb7430747e5263ba78c6819bcc0f68e43a661abbf4c46b480ba4ca309b1cb36c8debb62e931387c223cffc59fea04d32f69136709e0f911e9c141a41a819e9626021b2af5b232d8f61575eb49349eb18172aa3ca3a4903e090574401acca480865294d67c652fc52781238c7d168e003adadbba2cff0642a164866f3b657852d0ee51f089cc08e02b06612b7e20060b266804ef9a3a6d53956b15de8748067284055f4420f632a375aa236e12e0115343c1288e7c0172ddcb75696895270bb08f7bc2aebab404333f528c875e5203cfbb338bb5ddb7cc7bab79affba7bc0663b44499e91873b9de1997a5442edaa64ec3788e07592aae845042720030b4ae5f74b91f1096bf038417b1f63e14466a4921964441d1c94f7bab4bef29d773a948b9bcfca87c78f056152c8b052a2a4d44295db7867d24bc0f8f89c87e16c4133a7298b0a232642a14a27ca911f8de866bb2992e46249df132a79a43a54c1773b1b24a5599f61fc0d6080c9c0672ac3c70060279311030f0b84a93a6501475aa8ac77b3f69294b15741802cad0d5b58f557908ac267cc29b86d9b94ed7325bc498bc89901c603cfe39869dfa34f54d7976dc9a673950cc84371f5e20ffec3a42b2369d66c53a2946c51b57c93e5afe6e8be85f6b1ea138f3a843d19e09e0c885874915981e6a895b8ba14d3940e471039e85915b93f4086b5d3b3cbc4ca41fdb565f9e91a81f75614e78f808509c5d5064b19816bb711c7f97d58bb5c34c40c91baa4b6189428913d1be568b9663ec62ff4cd1687d9ed9d509a8524f44f23c2a529216e8d0d0991bd27281f15118f7a53e76625af43cb80af756ec523d4395573321f70857d26af413cb868"
+                    "X25519MLKEM768 (4588)": "cbba7c133bcf3c6590d6e8367914a389473943321a68297074bc8f95d16b95854dcd28cc1e3816e73571956b59ac50b22b888f92303b4e074e9e9ba666f3015b55b8f8ec74122a271a2679ce0119efd37a59323b3b5b4a3ca311bea164a1c06a2c38186b47a57f3b6ae70cc54a60a8620b32f277951308b2e0427e4bb550f625379ad561e6959a3b397ac5a9aaaeb81b7c7c05ff5bc5d4e99ec728473c102ab3286d2e17249b410ddc0798efd1b9a3f63fc7d16de15c87e604878afa75ad495edc9256c4980ff2d47ff3a6059121bbe4fb24c9b2bf0be88fa9c89f00290aa1408e1a506bead4608b34132c471a8bea10f1541a04f7baf3433064b67de10984541c5764532e0392cce643c1a8dba0b297c97f65b9b8cab83cbc425e930a4b1c04c8d872d8ca1f52a2aa47858872048b2d294a1f50bf3ee717f7708c65a474d759b454342636499520b808a66841d441196dbaa654060b624994f7f2596e2c8754e8426e07717fa8b7e5070d8f0878a01093029c7188b12c3f37ca9ff9ce267aced55aab10ba2a9a35b3e190465465975c01c895787964f2b8bbd354537c17dc78639805b4e825a9d623a738824dec3a7c08c3baf741bbd3c98a7673b4eb039b9c38ab6fc9756c173e341a7301ebacb6564f15dca7f85499f77b7ed651a6093b4d5d1123052620a5225727195732f03b1352305c05bf205aa912a7126a47cc2a78865ee430994cc98509aba7b4bb3a420dd5e9386b8b0f388b6c3907791454bcb0669664d8ae769a743bf8cefea743d5f470bc7a8399941a701162cfdc4fd664841b62147cd52b57d073090b1a89d263a18392176723b70088af021344da9b528833b1506520a69cbb5210359c8730a44d3c66560b2136a788b1ff38c16e2061e61ca09c006855d07e25e3442ba56215e3350fd5aa600c8cf4e6be4fe4006d0681dd40458b382fc2954ef44cbfb5b396eab2a40c781ecb27964112092d49ae92855b0f9a058166a99f174d9551954fa69e57f5baa6a793f1009d27ba1eb8f707b1036e15d6c424cb21f22598bf8c259b09ac2cd701754210f165c3993b30d6f31617cc059a1c52bcd3971551bdf5c74d81b11f7d3373faecc5285a988ab168d1c314f883a4a2344ee3ac60e334beb2c36f7929879c0075261cc9d3f56c9ee8544f2a269bbc106f8a31cf6993f44a088dd30fa7f49a4112b70b5b7a37d568cbb24802612886c6ccb83cced0894a41e92f7feb4b0b2765ead3360b6a2a518b3e1a7a9b5e5869f3531c4ac7430c2264ec9cab28d32815dac16c7bc481a66b5e708a6578b3118ab9ccf507b7418850e998071072a05893caf7636db471f742b4b4212268b49bfd7b650bf0b7f4e0a83dc7acdc5c0823885f0f0ccb3c11aa845848366cb35e46c40987b5e1d6bc2a2504777b99bdeb7f966ca8b59a2cad59190c1bc848714765795d55b67357a51ee3f96f0d484c42832021257e47f1c0c427a0434aa39d2267fea24f482084007304a849731ed924726bb09a788f3a35a415e225d6642e3efb3b43c9b07dc38b3b990021eb37e5c5ac3832604f61c92907258c5734c286338d667b906908bf018f16c3c562d63d8d2537a2ca19516406128445bbf0466c993d7eed4407427f06786b3925b2dc840a890dee70a25d134025d1e8799e8b67c7d2c85d8e11a2a266e66496ff4611a85f1196137f80f8ede3fd2215199714"
                   },
                   {
-                    "X25519 (29)": "153a11855b438000a716ac27c37616a59358cbf9f923afa52d31a9f7fa5ccd5f"
+                    "X25519 (29)": "9aea9bb21ea7b5d799a5ec9f7c882ed3910b3cc91dd55d7597a015ce4a9c9212"
                   },
                   {
-                    "P-256 (23)": "04a5394ec143b0403b41d1c010ce1c51d5eab0cd9845c265d686ce2d469dd8448fc176e9dea73419002e4822eb874e5b7da649f428490d1ab611a198e06d36b4f3"
+                    "P-256 (23)": "0439864acc8592e683e673c37deb1c18fddb4773a27d639feb20427e6716e97d7f2b094f2a731bc6cb407edfc92fa105b77d76c53afd82ab2ae9a52ad029d262ec"
                   }
                 ]
               },
@@ -1891,7 +2125,7 @@
               },
               {
                 "name": "extensionEncryptedClientHello (boringssl) (65037)",
-                "data": "0000010001d70020349c1630b15d1e92dbb6378413e57a9055c44531ffa8d22be9087ce013bb0e2d00f0a5751a4a8a4024c4b9e344742f4d5f2c36e49398291b0afc787a654451091f73d59552c48a8d27a9619e713db3d4473dcbc79d101e527b337502f408c20bd88696c61f1ccebbc29fdb1c0d5f3e198031dc6f93fe4642233401528124e02cfa8c5cb9fc0e1ffcd175246bd1b42d53a04e3004e0a95ae0ae2ce3b511001d0f72c40b82031b319b0987f30b442c5793ba3a73a51d0c5307c712fd1645fcc0b90c2632e34b9e5deae33954b82db472dfc2e3b61569ae9a3459f6c46add75052a881f15250bf36cdc2e4bad3571bc1b98665a9b35bdb742561d3f6191b4f43c1299eddb8a7417b8858b7ac58f858ee0df84b4"
+                "data": "00000100012600206bc8fb7c2abaa9bff509394b2f44ae098859f10f05383215ce8fc93b559abf0e00d0892218f1e3163fb61cec071871bf012d095a061671df85241d17f1cfdcf23b081ee0028bd687d99b97cb880189d2da8f03af6a1634f06ccd0da6aa79195015814b69e67363e2acb1a8eaddcf1294fc1d4002ca81da45c77251dd2d58c3622cada0133644e3cdc30e1ea0f7327150b07fd6dc103abd7bd64081282db2f929c2eea61d63560774e8d3f78bf5e1f92cb027258fa641b18a63f5f6730cd3bbdc2ef6241fc1329ed4c2d68c8d2f15182995dec82866a48928df6fa34f6f125a08e6cb7be8a17a0a8d388efac4267f5871c862"
               }
             ],
             "tls_version_record": "771",
@@ -1902,8 +2136,8 @@
             "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
             "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
             "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
-            "client_random": "4c06ab3656c380caa3c93bc822ea1a3e2a8485c47a0425497174c1974289a533",
-            "session_id": "bb5d038a3331f760dd45a5866d2b32193f6c8ad5fb4f3158c563e6378b04d2c0"
+            "client_random": "8bf0ae388fce86a53f209bd45f74f044dcecfd2635df8ec7ce6cc94827bcd079",
+            "session_id": "5fb69eb7842e3ea5e8f6a7e7eee332f3fcb14becc92bd9bddf2330ec62c0ce05"
           },
           "raw_http2": {
             "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
@@ -1969,7 +2203,7 @@
           "known_giveaway_signature": null,
           "raw_tls": {
             "ciphers": [
-              "TLS_GREASE (0x1A1A)",
+              "TLS_GREASE (0x9A9A)",
               "TLS_AES_256_GCM_SHA384",
               "TLS_CHACHA20_POLY1305_SHA256",
               "TLS_AES_128_GCM_SHA256",
@@ -1993,7 +2227,7 @@
             ],
             "extensions": [
               {
-                "name": "TLS_GREASE (0xcaca)"
+                "name": "TLS_GREASE (0xfafa)"
               },
               {
                 "name": "server_name (0)",
@@ -2011,7 +2245,7 @@
               {
                 "name": "supported_groups (10)",
                 "supported_groups": [
-                  "TLS_GREASE (0xbaba)",
+                  "TLS_GREASE (0x3a3a)",
                   "X25519MLKEM768 (4588)",
                   "X25519 (29)",
                   "P-256 (23)",
@@ -2062,13 +2296,13 @@
                 "name": "key_share (51)",
                 "shared_keys": [
                   {
-                    "TLS_GREASE (0xbaba)": "00"
+                    "TLS_GREASE (0x3a3a)": "00"
                   },
                   {
-                    "X25519MLKEM768 (4588)": "3cac17a1589630d33571ebbee73a63f02a117ef2cb1190a4e2507c2eb12d1a7b1cdcda9e75099eceb461589002d388ca660933b850c174e6332d575b9fc28e9e9c87c4499a19f23e127429bbb2c1e34102196b12c7975fe8c6be6c68019b93ab7b7aa9f18b004991058ebb2e67b660141285fb36492c0b5c96d19804871e14641f34e0c9ecc82e7c12b63938c11030a4132991be15ad1ac3cf888ab1d44015a3b41a92d7cb1bf92f002ca680d7482122483a0381f712a9cf906e653b019a8a4415f451ccf1273c384c3debcfe3ec900f77358851c7fbf89fc682c3e30c4c39f147a9a91708233c80742e02418a80e65de62309ab64a525c34c6cec20f7a3199a080a04fa87ab6cb5cd429c48724a36d57b1057b02a489baf1017a0e4727bf988cc54bebacb88b5c8b41ee77c48ab57e8c002533177e25b295df5255ed79b4c02bb34e3840ba129d2c393e62a7bba449d02246bdc8728de2a78fec35052a62287513dba62c384532fe126c452541f6d0601d976c48693af0d43344fa46b745720e5887d097228d27b4abc89b4f05a25610128a2217e42939d03a21482da0363242859a77d4acc2908f8014211359b68b716053571c08f70a89e841c504bb1a79d176b3ebc64ec642d0f1413db358b6628707dea2346a4302805ba8c25c520225cbb0764b95212738662d34745f0db8460409001f25ed12899cabc9925e206f7f573d058bea2994d6ba2c121c04791598c2e79607292b8f6706335fa62f9b452748c0da1e8344e676027711b68241f43b3296fd531dffc77e76ba475720a734cb8047b788f5618c9ccae7dbc03d68816f7690ccd9bad00b77c7b184cf817a1f6faca91ac4fda253c746892aa39c4fdc17164b3bff716b65f53053a03811e0c0d29fb3250eab1b9203c41038d0f4bc6474c016a929032091679f0464a586d393497d29623ee7b62553caf76a677827a1697f42452ec8aa8292005d9bc94f02e15118180b9abaa564661eb06a239743ac923ab85ce7e6a65c223412efbb605c58537378561226fe0a03638301cc4e3938248c0eedbc92cbc9a1317c5eb22b8e702c6315bab7c0083d99378ed5caa63317befa221e937975af8ae2a6a4c596a714ae01dc653aa5a15a6e89084acac4980502885054421cb68c9bc5d29f15435c5aa032ac0f097b87cc00c1f2b883ea8758f49194b5b4943ab27403434cd0a121de888430cced3600f5866ca99db36d274ad8b5c57e6c80ec3b5202e865348fb78cdfb3b19fa1d2c0c1840591142449c8fbc84e9ab8d30618dfd122608a649a09380116a4a977b17a985cc3cf1cbfd10b98ff8c40c8370bb7503ab28a28aa523d66b02b65a22c7a92faf5a697ef55759f3809beb94abdcb3f5982ba1699e93c47816d636edb0a277a340c1072b11164a002754abaa88e5dc9fdd761a711a5dbcec7614c941395645caf3c9875732edccb1908aa5049330d0a53c7796bb64812aa9706f1b694223b36d876c1907366acd61a04a79010ed323cf211266b51072c726886ac72ad86a1e98af53d759e03c2ec53b19c240c535c2a60bbcaae22a519781bf84aa06d9253994a137e42501624c3adbc30d84f950aba425a410670629545da481071543aea57b40ec75dc81b8e344524f2db09376f89ccca4b3fb60b9bb0ceedcc295980350d1bac32b532fba2a89aab4edbf2f539e398c94ae6d685e751ad74d"
+                    "X25519MLKEM768 (4588)": "bcc36f2aa54a7ef855bfb60ca2209e64405eaa83452c883d70ea75cb8c3901aa02febc7bbcc60be5e25b5b2bb67270b972e009cc02afe4c5b21fec2743f7b917a811811b65b83cc39110ab43635da085116cc9a456f4b7c0d48f2ee471dbb103644538ad8a9d95c206ca42a73d009a38c0a43a95ac711a617fda594623ab5490cb728b2ee7d429b22162cc15ab385b712e1516eca81b9831ba084a95526311f382a9a3335147d948c23637cc6024941428a1cc5ffe929f37b34243424285b3799d8bc827f30851d21fd823156ed235357513b7907a9210a2b756710e60c8f323674b2761aee217266456e1909ef26663a7a227bf1b078cfca1786b0cd449ad66e15c7ed262714bc73f020ac23536fa8b2ce4463da1733de4f54ca8585c1e808227027d03953cc683226ebc80d11a99c4c082fbd2016a86393029721c663205629613337f5ca7714aa0cf43c1a02a2668173c4d784a8463953762e93e5e5b749d9a754961617291322cb7add6a10811289144235b3e67c7410c78dd721d9ba0665b6398546188f3f2a959884e8765969570c8b367cfb7259f8127926b68431397b6137585c35b93416858620610bec719b1cc57b8831165e02506213f9f31353e505d7d726d7e524a53042885ac7e46a9c72c6b9a02e2949008c3b8e126b977bf1d7780806c2b08d35752591efb5537bb19a5d3e30c8fbba272c3735a2613a16784ff75b73ab578dbf84fa4a5b474e9bad8b1a3d5c8afb1bbae30bc215b06a36b781df5a78b9b4c5f40e8cc9d9642ade2be66746160f230e9c7137ad0591eb597d6a5ab0bb814286705b2ebcfdc1622a7f680ae6994e4c74ca21a1095a7032df63b2e941f69542b5255c47160b28f0530673184597a0ef81351e2c9b933e9b2bdc7431ac798508c4c028498771333d1a731acf1ba3875314e86b580d831e7f5b314a5b7d9630b8f00d09aa64644a877cd35b70276c45b156606a4347ee876dae8c611d1cca84bcbb1952d6209c1b052161cc742ab447d36f808e32a3b98c809dc242b3b577fc6439120a293dcc24e1c67082337cda43617d075b40b1c45d8b247240c702778bf1334548c7562cb37b8dba79b733849bd805b184b77c0c0c1c4488207eabdafb95f46a82a75c99064ab6a36511e536c1fae54763c28392e2c1c574520f2b4bdd1628eb35a6e0a5c5ea6f2adf8cb008290250cd289274550c5d24f2aa3899f43cba1717742a16a855923cd5b55c55608740a023f9ac018044203881547c026d4324ee31c8e57bb7620ba0cae43c0047389f1624121684184772fbd928524c515a5e5b98bd347c3aa1aeb745fd7028f3b0c8b627aaec736a766facbf4477a5a6426af71541b2b8fa7246cb4d5903b5919361785012355d852ca65a9399bc753e5d36d1c06032af22f7e88c64c4845a086239b0627f565067483906eb34d934129593b62974481f3ab69ac86813ad5af61047e6ad8135eca558bb009eef2931d8ba0731b1553338fe8667ef1d82303e71c2e247d3555c3f5c6ccc9511e680a8ce1fb49ecf7ad2f1513a7156e49cc127f6b13fd8a4261ba3b7b265fd372157a68760105527183bf220099c70684f6c024aa33c0a733ac5cb5ab0cb33dafe8d05c2732f37a9285b7ce1df86d4153014042a09773d0a070d9c6017ddf24ce0812619253f6e404a9d65685e054439298dbdd397e41ad6c57fc114dac3d6f"
                   },
                   {
-                    "X25519 (29)": "0c3f8aefc46286fb56642885d06f6471dd6dda0ad7217ea24651cc8159c48c22"
+                    "X25519 (29)": "d681890c6c49de5c244db9a1ac10990e6ebaebc1c412e53f5a09fe8fbdf2d345"
                   }
                 ]
               },
@@ -2091,7 +2325,7 @@
                 ]
               },
               {
-                "name": "TLS_GREASE (0x7a7a)"
+                "name": "TLS_GREASE (0xbaba)"
               }
             ],
             "tls_version_record": "771",
@@ -2102,8 +2336,8 @@
             "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
             "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
             "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
-            "client_random": "4714a0ca749ec1afd24d51681f6e3678f68e0d8ab36dd8ff96996eb2fc730cd6",
-            "session_id": "1ccc8fc444a396d1ee745441eee1b2656fa4a857d6ea968cdddf0aa1a071dde7"
+            "client_random": "a93efd2328b2d0c2ef185767c7a223df673ea46207ba05ed90e1b9238c46ada0",
+            "session_id": "731dda1c380ab84f2028ffdbeda3f400fd65f34579daba2ce05c72c6f6003e88"
           },
           "raw_http2": {
             "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
@@ -2303,10 +2537,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "523b3061b50ded91a7fa00437ecb35529121faaaab6f274b04fc4cc1519a700110af892c15547044a13142265dace153722bafa8846c7c56770008863b901ebdd135c0dc39f84463c9c7bffadcbbdf5b4752fa4d16458efe7070a9dc86a87c036ea1b001eb58d96899e2674c6ff592fa88cf6523ac59360d7662292a9c989fe90106916d89424ce66a5516d479e43001b21b2c37370a82f94cb9eb90a97a0c8da3b1b723c919c4a2d3979121f00acde13738a259fe4c71c180a45118cbc1f1941c980da0309d263ac7eb4c34be45b3a1123bcc58521f43b919b53a59b57fb2db93d45198f04858fd58739e534ee6ac7cadf40e85598632288118373f08a91a35b3aa37474d40d9cffaf61a959c2341426892f4abbc8743ee82543d90488724395a451e70824827295c9851afba11414a4036d711246cf7af06220c21cba2844a6b08c4bb839bb83782a81041b80b524c38a217484095fa5c59650a1854f227f2664d36f901e9868125aa442bdb7ea872b8fe0605ce4abc46a7cb51a22817269c31852873328068f36fa64a3becb03449f609c9f59e15d060d7a7775be35b42b4055ad92185087cd1004e3ed72687b3a4a7730a29d3a7844b5eb0b634bc4b215f5156dfa649c1ba0676a81e2041c5da1b66c62019727c5b5ea4362041c6c139a750583f12eb0007d14386b5cb1c666c46b162887cb855fbafdaa5bfbac38e8abc1c89556fccaa0e146b0345ab1a5eac3a293bb4029096741b9e33684267720ead920920638f1b390b2a269a263ccece868e088929f0068cfe5615da621e9cc72211b59b1ed18c7774131b7c953114154052b2c4501271519d5d949f36b1082e7a4a34d166a4d4419f5876bc26522da47d520264b1f6a70b576932c5486a2b42cfeb0d4f6037c8fca4fac6816f7ba9897319b48c6024f97337558b8fb10c7e015f0fab475d122dffe6b73bc20c48a2c11ce7abb913b86bf91988eabccc14c24f7989822bc129812033538f21925d5d767a17e58bf04ac4fa00021b836950ea604f620850d80435e9bb29392366db7b74f58d7c47ba76927ddf92a7e85c90c5b336012a0eff0b0614d00ed2b080a71aa3b60364c6f8734f0acdcf52026843466ae9cfb8a36c83275d8a561e8a000d6e205330ec084ae55158fb3c2e40be97216c42b6b583f0b0adac4f280094229451daeb0816ac5e23c9594da54d042c415fd80ff06c2f8a8c2290066bbfc05aa53970177407a7b790b3d6494902aabff4ad45690224d3574cc63dc0a1693ab4924794646b32a92b4408c40ac79e49c1792cb38ed54b5ef430286a62c2701393fc6257f1aa92d01c08857f8c080197f77e09dba246386c6ed1a5ab3652503869c6b7a691fb098ff14dc2ac9102fa9ced1cb69073a29b140b5c88373b94780be41bf393b2d3842cf36333528765a81a3114653cb06c5ef09206be00303b587fa322ae9a48a83c28035ec765f49b86cd76a9bee3b67bf1bfcd9635580ba651fbcc935ccbde00557ac77b434cb612a24816112cf4d4aa0688c73eb75b75a772559c9c5f397fc2ccbac8279b8b8bb580ca782391a62cbc0a491abcc83853e00c3d5c34b118ec2c68629c7260c50ff752a0f0a348c220254ef940cbc478c0575306161e4db45397f1f91058e17d050175ac79e55d36e6bac26159189aa192cdd577abd7098db45b614c4f24138cce20a28ac1836d2622"
+                  "X25519MLKEM768 (4588)": "d13c25cd645378239fceb10dd020acb778172de242f92008ced811a0d805c54b34858726c8c864bae708fb26bc9fb79395b97ac0b19955c5a282e07bf66c4f541494843c712d974a8666a852f527d3db5b1b1199537b42e5b12086b634366c8387e3b5286b17bf44c978484ca4858931d7b907e401b394510558869e0158a82924d4324594a6a3a31c6261d8224af1595b66131dd1880e321ef860401fa97ac6990c78767dd88aa5711ab4bdf678fe04763259cd71b13a83702e41ea4904354381f233fc1b4c3d680afc3610eb660bd543780b06477c953f420b7750bc52ab580733e4646ab044b15787ec7121084612bc9180e3ba3ef7b635bc436afd959f39f95f1b2b0262f96b9cc255c4f69fc16c6a0d28bda950acb7365a360035d138b89b60c75db424792b4196a333becb433276ac4ef4931e9711189b9dc7e13f2fc5911701ac2b7a67cba675762b1535b21712f45e35d06f5d32277769619a485e2551b7dc1b0b4e65778fa45878ccc3ae821b22c93c82024b4ab7ae4ca230df953c5be60c1c45aafc0257f1982fe3c6276a8464f25b478b2793709369df8b5b1c266067c6ba70781e1b099ffbfc9b4670cc972cab6ae1bc66d96e439952b3018a6526028a66cc4882a02d52a9faf2a505ca4bf9d668f6b8248c226d056b2c8edbb8ec7b0dc57446002ca717cb4ae7c536e1e84dd9955d32190761ca41af94cfbecba506a7cb956866b39a7aad8028590ba2f962326bca4abf62591682675fb0a94c754489738ad82a90925341ac7ccbfd72362a3786485c5e8c6182ed959c9e27caf0bac22dcc8bb19b911e3a9f0c396c9841a4f935c27e5b907fa42b701c617faa01552284ddc0521085575e7989e38860893a903e084c8415905ca97107b62e9975a4e29969f79b808cb53767a9a6dd4cb1ab213f9633534a8c3e8130464bf15fa2c945d0f17e00aa5bd0323d04642966d418d8c3366e830450f4030393989a79286e658928115b14569b3f43c733a1c7da30a25f179b7e99915cc0466c5a69cf724dfcf1205075bc2306790c359065081b1ccab8a3d0522d3879c5197a4a0115d70828d4f9670f912ef6f6a8ee55011a2146e92b77ff7c5719e69a58c37a8733217ac46afc498926e6a5de866d05645b3d803fad940dc0d23c50b3753561546001698c674467abba87a54a7820485c58a03d233e01e438da1b87295aa84d0269046c5909ab98ae292395c965857539d193080028af6be1430cd72ae0966b973cc30944777d514a7bc3882afb3dabc91b21dc0b0587436435c34815273efa9edfbb232284682942aaf19039a0b3bef755838a917050742ca3374fede56b5a257ab90a00c0cb94867587063388ef3347103c5fc40460a14464071c92be5315a4d58eb18943fceca14dab567f0c04f4d583582ca16d0ccaee4a987e2a36e7855a7555ca5d255f38675048eb779c807affabc48b575863e1b44715435cbab28332283a704d6e1952d927a6bb729194357acfa385213cb3d9910893a30e6e36cca0931025837ad6c1b2e7fc1cb9227bea612f48721b4e81bd7c28c7b59118c2859fbe133909d482d30551925655f12707c7c1c64b299d44545991f8afcb13bdcceb0ea391c4e3fe8ba6016ba794eab03827f073c6e2e7586060a74e0fd2e0ed817c6fd44da805aae518e2549c785ce22b90834806b96d747bcf444c74e5c7deb4f514"
                 },
                 {
-                  "X25519 (29)": "fe10cb821505d793f8e94e5c0529db71aefb8e898f399218cc4dd4bc8a9d1555"
+                  "X25519 (29)": "2b9d59891242097e5865135ac34dfc7f4328740882f89f49a8d639ae14db534f"
                 }
               ]
             }
@@ -2319,8 +2553,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "d8705a24403e83c3948de2a4691a79cfa88e7b8c1fdd8642ca99f13321f98387",
-          "session_id": "cb07b7f8e1e80b06530083730307ae80a7eb8833e6020486516cd485b8bf4883"
+          "client_random": "97b5dbfa74d1f79747d55cef8f51169a3d99fb5f65fa8600da7f6feed7a0298e",
+          "session_id": "24eb4b2abb1e5cfcf6afc86389b8de207e4ff10b6a8a3b8dca7e11d140364348"
         },
         "raw_http2": {}
       },
