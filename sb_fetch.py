@@ -95,9 +95,17 @@ def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list
             break
         last_bottom = bottom
     infos = _dom_infos(sb)
+    # قوالب Madara/WP-Manga (مثل starzmanga): صور الفصل داخل .reading-content حصرًا — تُفضَّل
+    # بلا اعتماد على الحجم وحده (قد تكون الصورة شريطًا طويلًا جدًا أو كسولة التحميل).
+    reading = [i for i in infos if "reading-content" in (i.get("ctx") or "")
+               and i.get("src") and not i["src"].startswith("data:")]
+    if reading:
+        infos_for_pick = reading
+    else:
+        infos_for_pick = infos
     keep, seen = [], set()
     for tier in ((300, 300), (200, 200)):
-        for i in infos:
+        for i in infos_for_pick:
             u = urljoin(base_url, i["src"]) if i["src"] and not i["src"].startswith("data:") else None
             if not u or u in seen:
                 continue
