@@ -231,6 +231,59 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tupl
     return got, errs
 
 
+def _norm_path(u: str) -> str:
+    p = urlparse(u or "")
+    return (p.netloc.lower().removeprefix("www.") + p.path.rstrip("/")).lower()
+
+
+def _landed_on_requested(requested: str, current: str | None) -> bool:
+    """هل المتصفح استقر فعلًا على صفحة الفصل المطلوبة (لا صفحة المانهوا/الرئيسية/404 بعد تحويل)؟
+    نقارن host+path بعد إزالة الشرطة الأخيرة؛ ونسمح بامتداد المسار (مثل /ch-1/ ← /ch-1/page/2)."""
+    if not current:
+        return True   # تعذّر قراءة الرابط الحالي: لا نحكم بالفشل
+    req, cur = _norm_path(requested), _norm_path(current)
+    return cur == req or cur.startswith(req + "/")
+
+
+def _is_thumbnail_url(u: str) -> bool:
+    """مصغّرات ووردبريس (…-75x106.jpg) وشعارات الموقع: ليست صور فصل أبدًا."""
+    return bool(re.search(r"-\d{2,4}x\d{2,4}\.(?:jpe?g|png|webp|gif)(?:\?|$)", u, re.I)) \
+        or "/wp-content/uploads/starzmanga" in u.lower()
+
+
+_READING_PROBE_JS = """(() => {
+  const sel = '.reading-content img, .read-container img, #readerarea img, .chapter-content img';
+  let n = 0;
+  document.querySelectorAll(sel).forEach(e => {
+    const src = e.currentSrc || e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
+                e.getAttribute('data-original') || e.getAttribute('src') || '';
+    if (src && !src.startsWith('data:') && !/-\\d{2,4}x\\d{2,4}\\.(jpe?g|png|webp|gif)/i.test(src)) n++;
+  });
+  window.scrollBy(0, Math.round(window.innerHeight * 0.6));
+  return JSON.stringify({n: n, imgs: document.images.length, title: document.title.slice(0, 80),
+    url: location.href, rc: !!document.querySelector('.reading-content, .read-container, #readerarea, .chapter-content'),
+    ready: document.readyState});
+})()"""
+
+
+def _wait_reading_images(sb, timeout: float = 25.0) -> tuple[int, dict]:
+    """ينتظر ظهور صور حاوية القراءة الفعلية في DOM (قد تُحقَن بالجافاسكربت متأخرة بعد حل التحدي).
+    تمرير خفيف كل ثانية لتحفيز lazy-load. يُعيد (العدد، آخر تشخيص)."""
+    deadline = time.monotonic() + timeout
+    diag: dict = {}
+    while True:
+        raw = _sb_eval(sb, _READING_PROBE_JS)
+        try:
+            diag = json.loads(raw) if isinstance(raw, str) else {}
+        except Exception:
+            diag = {}
+        if diag.get("n", 0) > 0:
+            return int(diag["n"]), diag
+        if time.monotonic() >= deadline:
+            return 0, diag
+        time.sleep(1.0)
+
+
 def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
     t0 = time.monotonic()
     deadline = t0 + wait_sec
@@ -282,12 +335,51 @@ def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_W
                             sb.cdp.get(url)
                         except Exception:
                             sb.activate_cdp_mode(url)
+                    # تأكيد الوصول للرابط المطلوب قبل انتظار التحدي (تحويل عابر ← إعادة تنقّل واحدة)
+                    cur0 = _first_ok(sb, ["cdp.get_current_url", "get_current_url"], None)
+                    if cur0 and urlparse(cur0).netloc == urlparse(url).netloc \
+                            and not _landed_on_requested(url, cur0) and "challenge" not in cur0:
+                        time.sleep(2)
+                        try:
+                            sb.cdp.get(url)
+                        except Exception:
+                            pass
                     ok, html, waited = _wait_resolved(sb, wait_sec)
                     res["waited_sec"] = waited
                     if ok:
                         res["ok"], res["html"] = True, html
+                        cur_url = _first_ok(sb, ["cdp.get_current_url", "get_current_url"], None)
+                        res["final_url"] = cur_url
+                        if not _landed_on_requested(url, cur_url):
+                            # إصلاح: حدث تحويل لصفحة المانهوا/الرئيسية (فصل غير موجود أو تحويل عابر)
+                            res["ok"] = False
+                            res["error"] = f"أُعيد التوجيه إلى صفحة أخرى: {cur_url}"
+                            raise RuntimeError(res["error"])
+                        # إصلاح: صور الفصل قد تُحقَن بعد حل التحدي؛ إن التُقط DOM قبل ظهورها كانت
+                        # تُؤخذ ودجات صفحة الفصل (شعار + مصغّرات 75x106). ننتظر الحاوية فعليًا.
+                        n_read, diag = _wait_reading_images(sb, 25.0)
+                        if n_read == 0:
+                            print(f"  ⚠️ [SB] حاوية القراءة فارغة — إعادة تحميل الصفحة. تشخيص: {diag}")
+                            try:
+                                sb.cdp.get(url)
+                            except Exception:
+                                sb.activate_cdp_mode(url)
+                            ok2, html2, _w = _wait_resolved(sb, wait_sec)
+                            if ok2:
+                                html = html2
+                            n_read, diag = _wait_reading_images(sb, 25.0)
+                        if n_read == 0:
+                            res["ok"] = False
+                            res["error"] = f"لم تظهر صور الفصل في DOM (حاوية القراءة فارغة/غائبة) — تشخيص: {diag}"
+                            raise RuntimeError(res["error"])
                         dom_urls, infos = collect_dom_images_sb(sb, url)
-                        res["images"] = dom_urls or extract_images_from_html(html, url)
+                        if dom_urls:
+                            res["images"] = dom_urls
+                        else:
+                            # احتياط: تحليل HTML — بعد استبعاد المصغّرات/الشعارات، ولا يُقبل إلا
+                            # بوجود حاوية قراءة الفصل (reading-content) لئلا تُؤخذ ودجات صفحة المانهوا
+                            fb = [u for u in extract_images_from_html(html, url) if not _is_thumbnail_url(u)]
+                            res["images"] = fb
                         res["dom_image_info"] = infos[:60]
                         try:
                             html = _first_ok(sb, ["cdp.get_page_source", "get_page_source"], html) or html
