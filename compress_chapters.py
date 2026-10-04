@@ -1016,50 +1016,34 @@ def _sb_headers_for(url: str) -> dict:
     return headers
 
 
-def _fetch_html_via_sb_sync(chapter_url: str) -> tuple[str | None, str]:
-    """1) محاولة HTTP بكوكيز cf_clearance المحفوظة (سريع). 2) وإلا متصفح SeleniumBase
-    (تسلسليًا عبر قفل — متصفح واحد بالوقت) ثم حفظ الكوكيز الجديدة."""
-    def _try_cached():
-        hdrs = _sb_headers_for(chapter_url)
-        if not hdrs.get("Cookie"):
-            return None
-        try:
-            r = _HTTP_SESSION.get(chapter_url, headers={**hdrs, "Accept-Language": "en-US,en;q=0.9,ar;q=0.8"}, timeout=20)
-            if r.ok and not _looks_like_challenge_html(r.text):
-                return r.text
-        except Exception:
-            pass
-        return None
-
-    html = _try_cached()
-    if html:
-        return html, ""
+def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
+    """جلب صفحة الفصل عبر SeleniumBase (تسلسليًا — متصفح واحد بالوقت) واستخراج صور المحتوى
+    من DOM المُنفَّذ بعد التمرير (بمعيار الحجم) — HTML الخام/المُحمَّل لا يكفي لأن صفحة
+    القارئ تضم شعارات ومصغّرات وودجات. تُحفظ كوكيز cf_clearance/UA لطلبات الصور."""
     with _SB_LOCK:
-        html = _try_cached()          # قد يكون خيط آخر حلّ التحدي أثناء الانتظار
-        if html:
-            return html, ""
         try:
             from sb_fetch import fetch_pages_via_seleniumbase   # استيراد مؤجَّل (تفادي الدوران)
         except ImportError as e:
-            return None, f"sb_fetch/seleniumbase غير متاح: {e}"
+            return [], f"sb_fetch/seleniumbase غير متاح: {e}", ""
         try:
             res = fetch_pages_via_seleniumbase([chapter_url]).get(chapter_url) or {}
         except Exception as e:
-            return None, f"فشل تشغيل SeleniumBase: {type(e).__name__}: {e}"
-        if not res.get("ok"):
-            return None, f"SeleniumBase لم يتجاوز التحدي: {res.get('error')}"
-        _store_sb_clearance(chapter_url, res.get("cookies") or [], res.get("user_agent"))
-        return res["html"], ""
+            return [], f"فشل تشغيل SeleniumBase: {type(e).__name__}: {e}", ""
+    if not res.get("ok"):
+        return [], f"SeleniumBase لم يتجاوز التحدي: {res.get('error')}", ""
+    _store_sb_clearance(chapter_url, res.get("cookies") or [], res.get("user_agent"))
+    urls = res.get("images") or []
+    if not urls:
+        return [], "لم تُستخرَج صور محتوى من DOM بعد حل التحدي", ""
+    return urls, "", extract_manga_title_from_html(res.get("html") or "")
 
 
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
     use_wayback_proxy = bool(profile and profile.get("use_wayback_proxy"))
 
     if profile and profile.get("sb_page_fetch"):
-        html, sb_err = _fetch_html_via_sb_sync(chapter_url)
-        if sb_err:
-            return [], sb_err, ""
-    elif use_wayback_proxy:
+        return _fetch_images_via_sb_sync(chapter_url)
+    if use_wayback_proxy:
         # لا مفتاح ولا تسجيل — راجع _wayback_fetch_html. مسار مختلف كليًا
         # عن باقي الفروع (لا "resp" واحد بمعنى الطلب المباشر، بل تسلسل
         # فحص/أرشفة/جلب كامل)، فيُعالَج بدالة مستقلة تُرجع HTML أو رسالة
