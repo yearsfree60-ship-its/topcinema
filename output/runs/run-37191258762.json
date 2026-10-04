@@ -135,6 +135,21 @@
           ],
           "originalBytes": 5747745,
           "compressedBytes": 1119984
+        },
+        {
+          "label": "الفصل 10",
+          "num": "10",
+          "chNum": 10.0,
+          "sourceUrl": "https://starzmanga.com/manga/mysterious-star-battle-with-my-sweet-wife/10/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-10/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-10/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-10/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-10/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mysterious-star-battle-with-my-sweet-wife/ch-10/005.webp"
+          ],
+          "originalBytes": 5520866,
+          "compressedBytes": 1113450
         }
       ]
     }
