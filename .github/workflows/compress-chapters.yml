@@ -215,6 +215,9 @@ jobs:
           python -m camoufox fetch || echo "⚠️ تعذّر تنزيل متصفح Camoufox مسبقًا — سيُحاوَل ذاتيًا بالمختبر"
           patchright install chrome || patchright install chromium || true
           sudo apt-get install -y -qq xvfb || true
+          # [إصلاح] camoufox/seleniumbase قد ترقّيان playwright بعد تنزيل Chromium
+          # (فيتغير رقم المراجعة المتوقَّع: "Executable doesn't exist") — نعيد مزامنة المتصفح.
+          python -m playwright install --with-deps chromium
 
       # [جديد — المرحلة ١] كاش نماذج PaddleOCR بين التشغيلات — بدونه كل
       # تشغيلة (worktree/رانر جديد من الصفر) تُعيد تحميل نماذج الكشف+التعرّف
