@@ -6,12 +6,13 @@
     "egress": "direct",
     "headed_virtual_display": true,
     "challenge_wait_sec": 27,
-    "verified_at": "2026-10-04T05:15:09Z",
-    "run_id": "37178175830",
+    "verified_at": "2026-10-04T06:10:09Z",
+    "run_id": "37181210066",
     "evidence": {
       "cf_clearance": true,
       "images_found": 12,
-      "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم"
+      "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
+      "image_cdn_verdict": "blocked_even_with_clearance"
     },
     "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
   }

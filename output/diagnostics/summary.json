@@ -2,16 +2,16 @@
   {
     "url": "https://starzmanga.com/manga/otherworldly-evil-monarch/257/",
     "tls_and_server_info": {
-      "server_ip": "104.21.33.104",
+      "server_ip": "172.67.189.207",
       "tls_issuer": "Google Trust Services",
       "tls_subject": "starzmanga.com",
       "tls_not_after": "Nov 22 12:34:08 2026 GMT",
       "error": null
     },
     "runner_network_info": {
-      "ip": "20.29.38.0",
+      "ip": "172.214.102.2",
       "org_asn": "AS8075 Microsoft Corporation",
-      "city": "Des Moines",
+      "city": "Dulles Town Center",
       "country": "US",
       "error": null
     },
@@ -28,7 +28,7 @@
       "dns_history_resolve": {
         "resolved": {
           "starzmanga.com": "104.21.33.104",
-          "www.starzmanga.com": "172.67.189.207"
+          "www.starzmanga.com": "104.21.33.104"
         },
         "resolved_all": {
           "starzmanga.com": [
@@ -36,8 +36,8 @@
             "172.67.189.207"
           ],
           "www.starzmanga.com": [
-            "172.67.189.207",
-            "104.21.33.104"
+            "104.21.33.104",
+            "172.67.189.207"
           ]
         },
         "unresolved": [],
@@ -59,8 +59,8 @@
           "kind": "names",
           "ok": false,
           "status": 502,
-          "attempts": 6,
-          "elapsed_sec": 47.76,
+          "attempts": 5,
+          "elapsed_sec": 44.75,
           "error": "status=502",
           "note": null,
           "api_key_used": false,
@@ -73,7 +73,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.53,
+          "elapsed_sec": 0.24,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -86,7 +86,7 @@
           "ok": false,
           "status": 403,
           "attempts": 1,
-          "elapsed_sec": 0.2,
+          "elapsed_sec": 0.1,
           "error": "status=403",
           "note": null,
           "api_key_used": false,
@@ -98,10 +98,10 @@
           "kind": "history",
           "ok": true,
           "status": 200,
-          "attempts": 3,
-          "elapsed_sec": 25.13,
+          "attempts": 2,
+          "elapsed_sec": 2.51,
           "error": null,
-          "note": "جزئي — www.starzmanga.com: ReadTimeout: HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=11.304980231000059)",
+          "note": null,
           "api_key_used": true,
           "hostnames_count": 1,
           "ips_count": 2
@@ -112,7 +112,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.37,
+          "elapsed_sec": 0.19,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -125,7 +125,7 @@
           "ok": false,
           "status": 412,
           "attempts": 1,
-          "elapsed_sec": 1.17,
+          "elapsed_sec": 0.97,
           "error": "status=412",
           "note": null,
           "api_key_used": false,
@@ -138,7 +138,7 @@
           "ok": true,
           "status": 200,
           "attempts": 1,
-          "elapsed_sec": 0.41,
+          "elapsed_sec": 0.31,
           "error": null,
           "note": null,
           "api_key_used": false,
@@ -151,7 +151,7 @@
           "ok": false,
           "status": 400,
           "attempts": 1,
-          "elapsed_sec": 0.52,
+          "elapsed_sec": 0.46,
           "error": "status=400",
           "note": null,
           "api_key_used": true,
@@ -190,7 +190,7 @@
           "ok": true,
           "status": 200,
           "attempts": 2,
-          "elapsed_sec": 0.22,
+          "elapsed_sec": 0.08,
           "error": null,
           "note": "لا ip4 في SPF ولا MX داخلي",
           "api_key_used": false,
@@ -201,7 +201,7 @@
       "discovery_verdict": "only_cloudflare_or_non_public",
       "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
       "budget_sec": 120.0,
-      "elapsed_sec": 48.09,
+      "elapsed_sec": 44.87,
       "cloudflare_excluded_details": [
         {
           "ip": "104.21.33.104",
@@ -261,7 +261,7 @@
       "status_code": 403,
       "headers_of_interest": {
         "server": "cloudflare",
-        "cf-ray": "a451a822df2fa1f4-MSP",
+        "cf-ray": "a451f895ecde703c-IAD",
         "cf-mitigated": "challenge",
         "content-type": "text/html; charset=UTF-8"
       },
@@ -280,12 +280,12 @@
       "signed_url_params": [],
       "raw_cookies_received": [],
       "error": null,
-      "elapsed_sec": 0.07,
+      "elapsed_sec": 0.03,
       "cf_mitigation": {
         "cf_mitigated_value": "challenge",
         "mitigation_category": "recoverable_challenge"
       },
-      "cf_colo": "MSP"
+      "cf_colo": "IAD"
     },
     "curl_cffi_probe": {
       "probes": [
@@ -294,7 +294,7 @@
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a451a8234a26ae13-ORD",
+            "cf-ray": "a451f8960ed8c3cb-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -306,20 +306,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.05,
+          "elapsed_sec": 0.02,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "ORD"
+          "cf_colo": "IAD"
         },
         {
           "impersonate": "firefox",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a451a8234d752c32-ORD",
+            "cf-ray": "a451f89608baae14-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -331,20 +331,20 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.05,
+          "elapsed_sec": 0.02,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "ORD"
+          "cf_colo": "IAD"
         },
         {
           "impersonate": "safari",
           "status_code": 403,
           "headers_of_interest": {
             "server": "cloudflare",
-            "cf-ray": "a451a82339b85122-MSP",
+            "cf-ray": "a451f89609d32426-IAD",
             "cf-mitigated": "challenge",
             "content-type": "text/html; charset=UTF-8"
           },
@@ -356,13 +356,13 @@
           "extracted_image_count": 0,
           "extracted_sample_urls": [],
           "extraction_tier_used": "last_resort_regex_whole_page",
-          "elapsed_sec": 0.05,
+          "elapsed_sec": 0.03,
           "error": null,
           "cf_mitigation": {
             "cf_mitigated_value": "challenge",
             "mitigation_category": "recoverable_challenge"
           },
-          "cf_colo": "MSP"
+          "cf_colo": "IAD"
         }
       ]
     },
@@ -395,14 +395,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-8090-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-4614-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/02ce79c2-6db0-4297-bce0-6cb254ea9a13",
-          "blob:https://challenges.cloudflare.com/55436078-5d2f-4183-b37a-8f2ee869b1e0",
-          "blob:https://challenges.cloudflare.com/ab26a291-7a88-469f-aab7-a41578c4d3d4"
+          "blob:https://challenges.cloudflare.com/13c4e72d-6967-4a9a-b69c-b9b0077f7e13",
+          "blob:https://challenges.cloudflare.com/1b04620b-f4f1-4fd5-b59a-c5394e404841",
+          "blob:https://challenges.cloudflare.com/6262c927-6e2c-4400-a5ca-7883baf3fdaa"
         ]
       },
       "adblock_wall": {
@@ -448,38 +448,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.16,
+      "goto_elapsed_sec": 0.1,
       "navigation_timing": {
-        "ttfb_ms": 15,
-        "dom_content_loaded_ms": 155,
+        "ttfb_ms": 5,
+        "dom_content_loaded_ms": 99,
         "load_event_ms": null,
-        "transfer_size_bytes": 4134
+        "transfer_size_bytes": 4113
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.96,
-      "total_probe_elapsed_sec": 83.45,
+      "scroll_elapsed_sec": 1.88,
+      "total_probe_elapsed_sec": 83.33,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a451a824b99b6689-ORD",
+        "cf-ray": "a451f8972b19d699-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-WMO1s9ZlROqWKYjXnlqa6f' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-cxCyOPsh2ztWg5p68BeRDl' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Sun, 04 Oct 2026 05:06:21 GMT",
+        "date": "Sun, 04 Oct 2026 06:01:16 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=u72Qo8Ge7gzfbw6fUPM7JITWk3C4P1Oq8rKl%2B24ZdE6ddZQTQC5%2BX7ArHmH%2FXzx674WhmYlSFP52aupDFE598tKkzgLUZig%2B%2B4OlBAUorF9pIcowvfMTnjbavGaAVe7KIw%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=k8VRXy0THau%2BYTOkohHDkhmnDLVebL0lmA7rDV8PvmeoHwcsR4F0ePSSqzee98dZWmesr9Cvs3AoBWP984h2q8WYeeKAg0dVPPs93g7y%2Fc9dSaYqjIazK0dUEZOD4pI8ng%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a451a824b99b6689\"",
+        "server-timing": "chlray;desc=\"a451f8972b19d699\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -577,14 +577,14 @@
         "starzmanga.com": 1
       },
       "signed_url_params": [],
-      "screenshot_path": "diagnostics/starzmanga-com-8090-run2-screenshot.png",
+      "screenshot_path": "diagnostics/starzmanga-com-4614-run2-screenshot.png",
       "hotlink_probe": null,
       "hotlink_probes": [],
       "network_vendor_hits": {
         "Cloudflare Challenge (تفاعلي)": [
-          "blob:https://challenges.cloudflare.com/20466a98-f61f-449b-b585-36e79ac41a1c",
-          "blob:https://challenges.cloudflare.com/377462f3-5a2c-4e4c-a756-2182f040b86d",
-          "blob:https://challenges.cloudflare.com/5ca85aa9-f818-4fcb-953c-05ab8524ceae"
+          "blob:https://challenges.cloudflare.com/0b5cce7c-6e25-4810-a5b7-bf7cd01377d3",
+          "blob:https://challenges.cloudflare.com/1218f09d-c6d3-4cf4-8159-ea2108402a8a",
+          "blob:https://challenges.cloudflare.com/84258bb5-7d47-4a36-81da-18c0e1eb12a6"
         ]
       },
       "adblock_wall": {
@@ -630,38 +630,38 @@
         "image_count_differs": false
       },
       "error": null,
-      "goto_elapsed_sec": 0.11,
+      "goto_elapsed_sec": 0.06,
       "navigation_timing": {
-        "ttfb_ms": 15,
-        "dom_content_loaded_ms": 108,
+        "ttfb_ms": 4,
+        "dom_content_loaded_ms": 52,
         "load_event_ms": null,
-        "transfer_size_bytes": 4105
+        "transfer_size_bytes": 4115
       },
       "wait_for_images_elapsed_sec": 1.61,
-      "scroll_elapsed_sec": 1.82,
-      "total_probe_elapsed_sec": 83.25,
+      "scroll_elapsed_sec": 1.91,
+      "total_probe_elapsed_sec": 83.15,
       "scroll_rounds_completed": 3,
       "scroll_stop_reason": "stable_no_growth_at_bottom",
       "navigation_response_headers": {
         "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "alt-svc": "h3=\":443\"; ma=86400",
         "cf-mitigated": "challenge",
-        "cf-ray": "a451aa5baadeae13-ORD",
+        "cf-ray": "a451faccffc3d699-IAD",
         "content-encoding": "zstd",
-        "content-security-policy": "default-src 'none'; script-src 'nonce-9853mi87rwSK8K05z7OzWU' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+        "content-security-policy": "default-src 'none'; script-src 'nonce-XoFB2G3JZ9mPzSLMnEpRRq' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
         "content-type": "text/html; charset=UTF-8",
         "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
         "cross-origin-embedder-policy": "require-corp",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Sun, 04 Oct 2026 05:07:52 GMT",
+        "date": "Sun, 04 Oct 2026 06:02:47 GMT",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "origin-agent-cluster": "?1",
         "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
         "referrer-policy": "same-origin",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NbD8Pkz8HaODzvVe%2FPkaTwpFbKtGeAIssYvEVMMaEKbyUSRokOFVBAzRoR7txgAdL8hxxYkZG1iX77IllQRROze9eaTtmyt6OetUaeTF%2Fbccg0RHGF8%2BidUBobK5kWlJLw%3D%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=U0qwa%2F50nlLTWiGnKoizRZGcj1qW0JKx4y9DqA6%2Fn1ow04z7jjgp9EEq%2FH9Lxhw6qUhjZo3ATQEncMdPWfKY%2BvIdVWM8BpIfolWsS2eSrFZtQI6iyZ%2B9id92KjajQvdbnw%3D%3D\"}]}",
         "server": "cloudflare",
-        "server-timing": "chlray;desc=\"a451aa5baadeae13\"",
+        "server-timing": "chlray;desc=\"a451faccffc3d699\"",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN"
       },
@@ -735,7 +735,7 @@
       "target": "page_url",
       "sample_url": "https://starzmanga.com/manga/otherworldly-evil-monarch/257/",
       "requests_sent": 4,
-      "elapsed_sec": 0.3,
+      "elapsed_sec": 0.15,
       "status_codes": [
         403,
         403,
@@ -764,7 +764,7 @@
         "protection_category": "solvable_challenge",
         "challenge_detected": true,
         "resolved_after_reload": false,
-        "elapsed_sec": 79.32,
+        "elapsed_sec": 80.43,
         "error": null
       },
       "source_url_leak_probe": {
@@ -777,13 +777,13 @@
       "trace_url": "https://starzmanga.com/cdn-cgi/trace",
       "status_code": 200,
       "fields": {
-        "fl": "72f84",
+        "fl": "1293f69",
         "h": "starzmanga.com",
-        "ip": "20.29.38.0",
-        "ts": "1791090646.000",
+        "ip": "172.214.102.2",
+        "ts": "1791093940.000",
         "visit_scheme": "https",
         "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "colo": "MSP",
+        "colo": "IAD",
         "sliver": "none",
         "http": "http/1.1",
         "loc": "US",
@@ -795,7 +795,7 @@
         "kex": "X25519"
       },
       "error": null,
-      "elapsed_sec": 0.06
+      "elapsed_sec": 0.03
     },
     "alternate_paths_probe": {
       "wp_json": {
@@ -938,16 +938,87 @@
           "skipped": null,
           "resolved": true,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-8090-lab-seleniumbase_cdp_direct.png",
+          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_direct.png",
           "navigated": true,
           "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
           "final_category": "none",
-          "waited_sec": 11.91,
-          "html_len": 204456,
+          "waited_sec": 11.62,
+          "html_len": 208727,
           "images_found": 12,
           "cf_clearance": true,
           "solve_captcha_calls": 1,
-          "elapsed_sec": 12.35
+          "image_cdn_probe": {
+            "tested": true,
+            "samples": [
+              {
+                "url": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
+                "host": "starz.manga-starz.net",
+                "cookies_sent": 0,
+                "no_referer": {
+                  "ok": false,
+                  "size": 19606,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_only": {
+                  "ok": false,
+                  "size": 19606,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_cookies_ua": {
+                  "ok": false,
+                  "size": 19606,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                }
+              },
+              {
+                "url": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
+                "host": "starz.starzmanga.com",
+                "cookies_sent": 6,
+                "no_referer": {
+                  "ok": false,
+                  "size": 3884,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_only": {
+                  "ok": false,
+                  "size": 3884,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_cookies_ua": {
+                  "ok": false,
+                  "size": 3884,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                }
+              },
+              {
+                "url": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
+                "host": "starz.starzmanga.com",
+                "cookies_sent": 6,
+                "no_referer": {
+                  "ok": false,
+                  "size": 3401,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_only": {
+                  "ok": false,
+                  "size": 3401,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_cookies_ua": {
+                  "ok": false,
+                  "size": 3401,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                }
+              }
+            ],
+            "verdict": "blocked_even_with_clearance",
+            "cdn_hosts": [
+              "starz.manga-starz.net",
+              "starz.starzmanga.com"
+            ],
+            "error": null
+          },
+          "elapsed_sec": 13.52
         },
         {
           "strategy": "patchright_headed_direct",
@@ -957,16 +1028,16 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-8090-lab-patchright_headed_direct.png",
+          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-patchright_headed_direct.png",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.67,
+          "waited_sec": 50.62,
           "html_len": 28639,
           "images_found": 0,
           "cf_clearance": false,
           "browser_channel": "chrome",
-          "elapsed_sec": 51.41
+          "elapsed_sec": 51.38
         },
         {
           "strategy": "camoufox_direct",
@@ -976,15 +1047,15 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-8090-lab-camoufox_direct.png",
+          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-camoufox_direct.png",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 51.19,
-          "html_len": 28298,
+          "waited_sec": 50.68,
+          "html_len": 28234,
           "images_found": 0,
           "cf_clearance": false,
-          "elapsed_sec": 56.44
+          "elapsed_sec": 57.33
         },
         {
           "strategy": "seleniumbase_cdp_warp",
@@ -994,17 +1065,88 @@
           "skipped": null,
           "resolved": true,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-8090-lab-seleniumbase_cdp_warp.png",
-          "egress_ip": "2a09:bac5:7497:2d2::48:71",
+          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_warp.png",
+          "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
           "navigated": true,
           "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
           "final_category": "none",
-          "waited_sec": 11.68,
-          "html_len": 209128,
+          "waited_sec": 11.48,
+          "html_len": 209837,
           "images_found": 12,
           "cf_clearance": true,
           "solve_captcha_calls": 1,
-          "elapsed_sec": 12.71
+          "image_cdn_probe": {
+            "tested": true,
+            "samples": [
+              {
+                "url": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
+                "host": "starz.manga-starz.net",
+                "cookies_sent": 0,
+                "no_referer": {
+                  "ok": false,
+                  "size": 19606,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_only": {
+                  "ok": false,
+                  "size": 19606,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_cookies_ua": {
+                  "ok": false,
+                  "size": 19606,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                }
+              },
+              {
+                "url": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
+                "host": "starz.starzmanga.com",
+                "cookies_sent": 10,
+                "no_referer": {
+                  "ok": false,
+                  "size": 3884,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_only": {
+                  "ok": false,
+                  "size": 3884,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_cookies_ua": {
+                  "ok": false,
+                  "size": 3884,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                }
+              },
+              {
+                "url": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
+                "host": "starz.starzmanga.com",
+                "cookies_sent": 10,
+                "no_referer": {
+                  "ok": false,
+                  "size": 3401,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_only": {
+                  "ok": false,
+                  "size": 3401,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                },
+                "referer_cookies_ua": {
+                  "ok": false,
+                  "size": 3401,
+                  "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+                }
+              }
+            ],
+            "verdict": "blocked_even_with_clearance",
+            "cdn_hosts": [
+              "starz.manga-starz.net",
+              "starz.starzmanga.com"
+            ],
+            "error": null
+          },
+          "elapsed_sec": 13.77
         },
         {
           "strategy": "camoufox_warp",
@@ -1014,16 +1156,16 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-8090-lab-camoufox_warp.png",
-          "egress_ip": "2a09:bac5:7497:2d2::48:71",
+          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-camoufox_warp.png",
+          "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.72,
-          "html_len": 28255,
+          "waited_sec": 50.77,
+          "html_len": 28277,
           "images_found": 0,
           "cf_clearance": false,
-          "elapsed_sec": 52.87
+          "elapsed_sec": 52.98
         },
         {
           "strategy": "patchright_headed_warp",
@@ -1033,17 +1175,17 @@
           "skipped": null,
           "resolved": false,
           "error": null,
-          "screenshot_path": "diagnostics/starzmanga-com-8090-lab-patchright_headed_warp.png",
-          "egress_ip": "2a09:bac5:7497:2d2::48:71",
+          "screenshot_path": "diagnostics/starzmanga-com-4614-lab-patchright_headed_warp.png",
+          "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
           "navigated": true,
           "final_title": "Just a moment...",
           "final_category": "solvable_challenge",
-          "waited_sec": 50.67,
+          "waited_sec": 50.63,
           "html_len": 28639,
           "images_found": 0,
           "cf_clearance": false,
           "browser_channel": "chrome",
-          "elapsed_sec": 51.4
+          "elapsed_sec": 51.55
         }
       ],
       "winner": {
@@ -1054,16 +1196,87 @@
         "skipped": null,
         "resolved": true,
         "error": null,
-        "screenshot_path": "diagnostics/starzmanga-com-8090-lab-seleniumbase_cdp_direct.png",
+        "screenshot_path": "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_direct.png",
         "navigated": true,
         "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
         "final_category": "none",
-        "waited_sec": 11.91,
-        "html_len": 204456,
+        "waited_sec": 11.62,
+        "html_len": 208727,
         "images_found": 12,
         "cf_clearance": true,
         "solve_captcha_calls": 1,
-        "elapsed_sec": 12.35
+        "image_cdn_probe": {
+          "tested": true,
+          "samples": [
+            {
+              "url": "https://starz.manga-starz.net/wp-content/uploads/starzmanga.png",
+              "host": "starz.manga-starz.net",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": false,
+                "size": 19606,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 19606,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 19606,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (443x95) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              }
+            },
+            {
+              "url": "https://starz.starzmanga.com/wp-content/uploads/2020/05/I-Have-a-Dragon-in-my-Body-1-75x106.jpg",
+              "host": "starz.starzmanga.com",
+              "cookies_sent": 6,
+              "no_referer": {
+                "ok": false,
+                "size": 3884,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 3884,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 3884,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              }
+            },
+            {
+              "url": "https://starz.starzmanga.com/wp-content/uploads/2023/06/06/No-Turning-Back-Choi-Hayoung-75x106.jpg",
+              "host": "starz.starzmanga.com",
+              "cookies_sent": 6,
+              "no_referer": {
+                "ok": false,
+                "size": 3401,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 3401,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 3401,
+                "why": "أبعاد صغيرة جدًا لصفحة مانهوا حقيقية (75x106) — يُرجَّح صورة بديلة/حظر لا محتوى فعلي"
+              }
+            }
+          ],
+          "verdict": "blocked_even_with_clearance",
+          "cdn_hosts": [
+            "starz.manga-starz.net",
+            "starz.starzmanga.com"
+          ],
+          "error": null
+        },
+        "elapsed_sec": 13.52
       },
       "recommended_profile": {
         "domain": "starzmanga.com",
@@ -1072,12 +1285,13 @@
         "egress": "direct",
         "headed_virtual_display": true,
         "challenge_wait_sec": 27,
-        "verified_at": "2026-10-04T05:15:09Z",
-        "run_id": "37178175830",
+        "verified_at": "2026-10-04T06:10:09Z",
+        "run_id": "37181210066",
         "evidence": {
           "cf_clearance": true,
           "images_found": 12,
-          "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم"
+          "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
+          "image_cdn_verdict": "blocked_even_with_clearance"
         },
         "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
       },
@@ -1095,7 +1309,7 @@
             "ok": true,
             "rc": 0,
             "tail": "sr/lib/systemd/user/warp-taskbar.service.\n\nCreated symlink /etc/systemd/system/multi-user.target.wants/warp-svc.service → /usr/lib/systemd/system/warp-svc.service.\n\nProcessing triggers for libc-bin (2.39-0ubuntu8.9) ...\n",
-            "elapsed_sec": 14.57
+            "elapsed_sec": 20.03
           },
           {
             "step": "start_service",
@@ -1109,14 +1323,14 @@
             "ok": true,
             "rc": 0,
             "tail": "Success\n",
-            "elapsed_sec": 0.9
+            "elapsed_sec": 1.0
           },
           {
             "step": "mode_proxy",
             "ok": true,
             "rc": 0,
             "tail": "Success\n",
-            "elapsed_sec": 0.01
+            "elapsed_sec": 0.03
           },
           {
             "step": "proxy_port",
@@ -1136,12 +1350,12 @@
             "step": "verify_trace",
             "ok": true,
             "rc": 0,
-            "tail": "fl=72f135\nh=www.cloudflare.com\nip=2a09:bac5:7497:2d2::48:71\nts=1791090792.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=MSP\nsliver=none\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
+            "tail": "fl=572f142\nh=www.cloudflare.com\nip=2a09:bac1:76a1:62b0::23c:8e\nts=1791094091.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=IAD\nsliver=none\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
             "elapsed_sec": 0.06
           }
         ],
         "warp_state": "on",
-        "egress_ip": "2a09:bac5:7497:2d2::48:71",
+        "egress_ip": "2a09:bac1:76a1:62b0::23c:8e",
         "error": null
       },
       "camoufox_setup": {
@@ -1163,36 +1377,778 @@
         "steps": [],
         "error": null
       },
-      "elapsed_sec": 261.91,
+      "elapsed_sec": 269.28,
       "reused_from_earlier_url": false
     },
     "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
     "diagnostic_run_files": {
-      "report": "diagnostics/starzmanga-com-8090-report.json",
+      "report": "diagnostics/starzmanga-com-4614-report.json",
       "screenshots": [
-        "diagnostics/starzmanga-com-8090-screenshot.png",
-        "diagnostics/starzmanga-com-8090-run2-screenshot.png",
-        "diagnostics/starzmanga-com-8090-lab-seleniumbase_cdp_direct.png",
-        "diagnostics/starzmanga-com-8090-lab-patchright_headed_direct.png",
-        "diagnostics/starzmanga-com-8090-lab-camoufox_direct.png",
-        "diagnostics/starzmanga-com-8090-lab-seleniumbase_cdp_warp.png",
-        "diagnostics/starzmanga-com-8090-lab-camoufox_warp.png",
-        "diagnostics/starzmanga-com-8090-lab-patchright_headed_warp.png"
+        "diagnostics/starzmanga-com-4614-screenshot.png",
+        "diagnostics/starzmanga-com-4614-run2-screenshot.png",
+        "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_direct.png",
+        "diagnostics/starzmanga-com-4614-lab-patchright_headed_direct.png",
+        "diagnostics/starzmanga-com-4614-lab-camoufox_direct.png",
+        "diagnostics/starzmanga-com-4614-lab-seleniumbase_cdp_warp.png",
+        "diagnostics/starzmanga-com-4614-lab-camoufox_warp.png",
+        "diagnostics/starzmanga-com-4614-lab-patchright_headed_warp.png"
       ]
     },
     "client_tls_fingerprint_comparison": {
       "static_requests": {
-        "error": "HTTPSConnectionPool(host='tls.peet.ws', port=443): Read timed out. (read timeout=15)"
+        "ja3_hash": "a48c0d5f95b1ef98f560f324fd275da1",
+        "ja4": "t13d1812h1_85036bcba153_b26ce05bbdd6",
+        "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
+        "akamai_http2_fingerprint": null,
+        "akamai_http2_fingerprint_hash": null,
+        "negotiated_http_version": "HTTP/1.1",
+        "known_giveaway_signature": null,
+        "raw_tls": {
+          "ciphers": [
+            "TLS_AES_256_GCM_SHA384",
+            "TLS_CHACHA20_POLY1305_SHA256",
+            "TLS_AES_128_GCM_SHA256",
+            "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+            "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+            "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+            "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+            "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+            "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+            "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+            "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+            "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+            "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+            "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+            "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+            "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+            "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+            "TLS_EMPTY_RENEGOTIATION_INFO"
+          ],
+          "extensions": [
+            {
+              "name": "server_name (0)",
+              "server_name": "tls.peet.ws"
+            },
+            {
+              "name": "ec_point_formats (11)",
+              "elliptic_curves_point_formats": [
+                "0x00",
+                "0x01",
+                "0x02"
+              ]
+            },
+            {
+              "name": "supported_groups (10)",
+              "supported_groups": [
+                "X25519 (29)",
+                "P-256 (23)",
+                "X448 (30)",
+                "P-521 (25)",
+                "P-384 (24)",
+                "ffdhe2048 (256)",
+                "ffdhe3072 (257)",
+                "ffdhe4096 (258)",
+                "ffdhe6144 (259)",
+                "ffdhe8192 (260)"
+              ]
+            },
+            {
+              "name": "application_layer_protocol_negotiation (16)",
+              "protocols": [
+                "http/1.1"
+              ]
+            },
+            {
+              "name": "encrypt_then_mac (22)",
+              "data": ""
+            },
+            {
+              "name": "extended_master_secret (23)",
+              "master_secret_data": "",
+              "extended_master_secret_data": ""
+            },
+            {
+              "name": "post_handshake_auth (49)",
+              "data": ""
+            },
+            {
+              "name": "signature_algorithms (13)",
+              "signature_algorithms": [
+                "ecdsa_secp256r1_sha256",
+                "ecdsa_secp384r1_sha384",
+                "ecdsa_secp521r1_sha512",
+                "ed25519",
+                "ed25519",
+                "rsa_pss_pss_sha256",
+                "rsa_pss_pss_sha384",
+                "rsa_pss_pss_sha512",
+                "rsa_pss_rsae_sha256",
+                "rsa_pss_rsae_sha384",
+                "rsa_pss_rsae_sha512",
+                "rsa_pkcs1_sha256",
+                "rsa_pkcs1_sha384",
+                "rsa_pkcs1_sha512",
+                "0x303",
+                "0x301",
+                "0x302",
+                "0x402",
+                "0x502",
+                "0x602"
+              ]
+            },
+            {
+              "name": "supported_versions (43)",
+              "versions": [
+                "TLS 1.3",
+                "TLS 1.2"
+              ]
+            },
+            {
+              "name": "psk_key_exchange_modes (45)",
+              "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+            },
+            {
+              "name": "key_share (51)",
+              "shared_keys": [
+                {
+                  "X25519 (29)": "8ae3e14f20208adf6c237ef3f476687bec164cb36d4fac008cbdbd73b29eb70d"
+                }
+              ]
+            },
+            {
+              "name": "padding (21)",
+              "padding_data_length": 422
+            }
+          ],
+          "tls_version_record": "771",
+          "tls_version_negotiated": "772",
+          "ja3": "771,4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255,0-11-10-16-22-23-49-13-43-45-51-21,29-23-30-25-24-256-257-258-259-260,0-1-2",
+          "ja3_hash": "a48c0d5f95b1ef98f560f324fd275da1",
+          "ja4": "t13d1812h1_85036bcba153_b26ce05bbdd6",
+          "ja4_r": "t13d1812h1_0067,006b,009e,009f,00ff,1301,1302,1303,c023,c024,c027,c028,c02b,c02c,c02f,c030,cca8,cca9_000a,000b,000d,0015,0016,0017,002b,002d,0031,0033_0403,0503,0603,0807,0808,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
+          "peetprint": "772-771|1.1|29-23-30-25-24-256-257-258-259-260|1027-1283-1539-2055-2056-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49196-49200-49195-49199-52393-52392-49188-49192-49187-49191-159-158-107-103-255|0-10-11-13-16-21-22-23-43-45-49-51",
+          "peetprint_hash": "76017c4a71b7a055fb2a9a5f70f05112",
+          "client_random": "b6996aab8ef50017eb2ebf58d54a840f0be0050d63a9570b71309fa484ea0188",
+          "session_id": "aae62397985bcee44a91d3dc6b8efe84c7bddcc2099305a29a0cb1e611fc2b9e"
+        },
+        "raw_http2": {}
       },
       "curl_cffi": {
         "chrome": {
-          "error": "Failed to perform, curl: (28) Connection timed out after 15003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "ja3_hash": "d28e521f82631e6e9ed2df95bdfef186",
+          "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
+          "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
+          "akamai_http2_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
+          "akamai_http2_fingerprint_hash": "52d84b11737d980aef856699f885ca86",
+          "negotiated_http_version": "h2",
+          "known_giveaway_signature": null,
+          "raw_tls": {
+            "ciphers": [
+              "TLS_GREASE (0x8A8A)",
+              "TLS_AES_128_GCM_SHA256",
+              "TLS_AES_256_GCM_SHA384",
+              "TLS_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+              "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+              "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+              "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+              "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+              "TLS_RSA_WITH_AES_128_GCM_SHA256",
+              "TLS_RSA_WITH_AES_256_GCM_SHA384",
+              "TLS_RSA_WITH_AES_128_CBC_SHA",
+              "TLS_RSA_WITH_AES_256_CBC_SHA"
+            ],
+            "extensions": [
+              {
+                "name": "TLS_GREASE (0x3a3a)"
+              },
+              {
+                "name": "application_layer_protocol_negotiation (16)",
+                "protocols": [
+                  "h2",
+                  "http/1.1"
+                ]
+              },
+              {
+                "name": "status_request (5)",
+                "status_request": {
+                  "certificate_status_type": "OSCP (1)",
+                  "responder_id_list_length": 0,
+                  "request_extensions_length": 0
+                }
+              },
+              {
+                "name": "supported_groups (10)",
+                "supported_groups": [
+                  "TLS_GREASE (0x3a3a)",
+                  "X25519MLKEM768 (4588)",
+                  "X25519 (29)",
+                  "P-256 (23)",
+                  "P-384 (24)"
+                ]
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "TLS_GREASE (0x3a3a)": "00"
+                  },
+                  {
+                    "X25519MLKEM768 (4588)": "42c1a69daa49206b76a5e01892a79699c57b46b74a31692f9fa01adce1187ba9b58664b996cb00583659bb20b660a297cd6688324c273fba6e087522d2490a42513925705c12676924e061512a3c38d12ab1466603273063625d6295ae8e7821f8091a7f001959b1320b20ccbef10ef0eb56aca1808d4b91b59b13ee2548183c7d71cb4d74307ebc768f547a6145520fd4a2458143b113d70d15f9c78cc896a26a61be01714ac048abb23c391c3cc601100bc488a743970cb2cc30b88b45287baffc16ed673938ea1d8859a9d564c92cb60170395c8396356dfb713da7c6640710242182978822c16156237573262676e73225dad078da50ad368231f895ac49894f3497ac7abc00f86b55ca431de59951aeb3bf7f01692642211178576cb6b9b7b73922f58917812563d55ac3208a916b3f897058018c623bc23cf6cb3eca84b1a625741a4b273be3001dd53950b42126912c12e4261126a3c3a5b6fae87368c84bd704171c93b87fdc9288902cb928897a91c7d31796408034f3b919482a52429640b2b0346591c504eb9fc8681dfcc9c23a1837fee23d8bdb212db6bee6bc56fa341df4a783c29c3827e6806fc95138830c1ca53aab016af7458448d34b70f74349b98e0f07320ec2501f34482aa4103d0aa2e7b4230ae2c18146c372db5e05376dd0629201fc11c72b9a8e0357fdf663bbe8bab29c92c2638b1f673ee2ea0869078f8198ada1f0c3ddf86b01f85c61facb1a82a31bb688030a48de4bc9ad94ce9d8c10d1763c46b226165283316171337b31f1fcacc1845889d07decbc3f8f83213360cb8b24231657abdde65ebc3356dd5506613134be01bb19c4bc8ffc0e5c3381b5a7c345bb385081b482c327204861d31c44f75bae1f2aa8f5b504a256a7b68b33b6b47e1a42681c8709a58891f1972e6022a09f307979b3395c571a19d544d169c5e475cafb2aa72768b5367422ea741cde3a946dc54aaa94201379961cc4076c245906c8540fc0c090c78e501c0ab2aa8c853206d5a61e180ab69aa126eaf5b5d1d3c9ffd8a6d8bc2c72da0ca1d901e2f49ad0f07edd754811e16b4ed05c5c6bac37653012a9847ccb2fcab2ba9d867081321ac4daabf8299d00860790c68962391d31bbc7b511a5d7a416ffe914e850cf902b18c0770e442138008b904a4a4c15bc293165a061d32fb610ad76e968337820a70ab5b7a2c6c2813a49c320b45ccb168a5b3a3c5a7eeb6373eb49e36897ba509e64192bac8a254df8037fcb3061c88b15277cb3bccd98ac328ad88d82585b232bc47f2a0ae4c58265a0649f05267b32b7e4762c321b456a86b2a2332b932c67b5c1b181c772e482b23471a8e7f1cfd378a61252a07891c4f2f9b8fe806527e19e7ef1cbcb7c56568a93e8ec5bc3291f78c139ed88bbdd65520dd32f3c41344336a0f90bc7e0222839f31de8b07aa650af5b27c28de756f3682c39f81faed717f322643d9c844a402f27e39fc861bcc4e4cce868961e309187e82f70030e84ac6870771edee6c457d3cdc1e16f88234d27d79858e1b5084278f3fb0cc3451276fc2aabb4909c8a1c1fb91170d95a9b993ab4d479f615629fa464bc90b316e48712003d85654550509a2e44564fdc1c7a172c185ca5025faa68f4c3f320219735414cce0b6ba12fd46c4bcd1cf7ff6956418e489bb3f809a0ab4e2586e9a28073321638fac5e6d58f60"
+                  },
+                  {
+                    "X25519 (29)": "9844cf835f908203a4a4aac28df88d0021d86f23e8f777cf7d147b1eaf9cc412"
+                  }
+                ]
+              },
+              {
+                "name": "application_settings (17613)",
+                "protocols": [
+                  "h2"
+                ]
+              },
+              {
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
+                ]
+              },
+              {
+                "name": "compress_certificate (27)",
+                "algorithms": [
+                  "brotli (2)"
+                ]
+              },
+              {
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "000001000173002091e0a44654f3c8ca5b420977b7e719846f139a664cfecb73f42bddd511d8117f00d013c07dce168ef05aeef84e178624f6df55c7bd5e1b5822d2a51192468b9b8b3577597e82381cae5431aa62af55fb763c787a905ef53619842f44b0cec1d22231c99d0291bbaa717026d9b8c485f05b8ecc8ce1946467bb8ea270dd20e77ff320d5c5ec06b1c26214abc71ff3c5a5320c7b49cbda5c3d45ba04efb51227089603ebdfa05d006ecbae842c44c97a4adf2cc64478b06e244822c33b40d7ed934e908ddd667dd5d1fad02208edc408682b6c650a7d2cc7af37030a15ba26392fdc91206adc3298f6a93e965a9c9da35648e9"
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "signature_algorithms (13)",
+                "signature_algorithms": [
+                  "0x904",
+                  "0x905",
+                  "0x906",
+                  "ecdsa_secp256r1_sha256",
+                  "rsa_pss_rsae_sha256",
+                  "rsa_pkcs1_sha256",
+                  "ecdsa_secp384r1_sha384",
+                  "rsa_pss_rsae_sha384",
+                  "rsa_pkcs1_sha384",
+                  "rsa_pss_rsae_sha512",
+                  "rsa_pkcs1_sha512"
+                ]
+              },
+              {
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "session_ticket (35)",
+                "data": ""
+              },
+              {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0xaaaa)",
+                  "TLS 1.3",
+                  "TLS 1.2"
+                ]
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "signed_certificate_timestamp (18)"
+              },
+              {
+                "name": "TLS_GREASE (0xeaea)"
+              }
+            ],
+            "tls_version_record": "771",
+            "tls_version_negotiated": "772",
+            "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,16-5-10-51-17613-11-27-65037-45-13-23-0-35-43-65281-18,4588-29-23-24,0",
+            "ja3_hash": "d28e521f82631e6e9ed2df95bdfef186",
+            "ja4": "t13d1516h2_8daaf6152771_806a8c22fdea",
+            "ja4_r": "t13d1516h2_002f,0035,009c,009d,1301,1302,1303,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,0023,002b,002d,0033,44cd,fe0d,ff01_0904,0905,0906,0403,0804,0401,0503,0805,0501,0806,0601",
+            "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24|2308-2309-2310-1027-2052-1025-1283-2053-1281-2054-1537|1|2|GREASE-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53|0-10-11-13-16-17613-18-23-27-35-43-45-5-51-65037-65281-GREASE-GREASE",
+            "peetprint_hash": "67c3e9111bed9e7f03d2f21d6d88994b",
+            "client_random": "af55405bf6c31f583406f9d6b8be24a2c5801862fffb5fd2f48c245619fbbc41",
+            "session_id": "8f3b4c84163d9d2fd74b62680d718256830b4f5b2b3f0b8c94158aa496f9a6c3"
+          },
+          "raw_http2": {
+            "akamai_fingerprint": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
+            "akamai_fingerprint_hash": "52d84b11737d980aef856699f885ca86",
+            "sent_frames": [
+              {
+                "frame_type": "SETTINGS",
+                "length": 24,
+                "settings": [
+                  "HEADER_TABLE_SIZE = 65536",
+                  "ENABLE_PUSH = 0",
+                  "INITIAL_WINDOW_SIZE = 6291456",
+                  "MAX_HEADER_LIST_SIZE = 262144"
+                ]
+              },
+              {
+                "frame_type": "WINDOW_UPDATE",
+                "length": 4,
+                "increment": 15663105
+              },
+              {
+                "frame_type": "HEADERS",
+                "stream_id": 1,
+                "length": 461,
+                "headers": [
+                  ":method: GET",
+                  ":authority: tls.peet.ws",
+                  ":scheme: https",
+                  ":path: /api/all",
+                  "sec-ch-ua: \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+                  "sec-ch-ua-mobile: ?0",
+                  "sec-ch-ua-platform: \"macOS\"",
+                  "upgrade-insecure-requests: 1",
+                  "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+                  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                  "sec-fetch-site: none",
+                  "sec-fetch-mode: navigate",
+                  "sec-fetch-user: ?1",
+                  "sec-fetch-dest: document",
+                  "accept-encoding: gzip, deflate, br, zstd",
+                  "accept-language: en-US,en;q=0.9",
+                  "priority: u=0, i"
+                ],
+                "flags": [
+                  "EndStream (0x1)",
+                  "EndHeaders (0x4)",
+                  "Priority (0x20)"
+                ],
+                "priority": {
+                  "weight": 256,
+                  "depends_on": 0,
+                  "exclusive": 1
+                }
+              }
+            ]
+          }
         },
         "firefox": {
-          "error": "Failed to perform, curl: (28) Connection timed out after 15003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "ja3_hash": "6f7889b9fb1a62a9577e685c1fcfa919",
+          "ja4": "t13d1717h2_5b57614c22b0_3cbfd9057e0d",
+          "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
+          "akamai_http2_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
+          "akamai_http2_fingerprint_hash": "6ea73faa8fc5aac76bded7bd238f6433",
+          "negotiated_http_version": "h2",
+          "known_giveaway_signature": null,
+          "raw_tls": {
+            "ciphers": [
+              "TLS_AES_128_GCM_SHA256",
+              "TLS_CHACHA20_POLY1305_SHA256",
+              "TLS_AES_256_GCM_SHA384",
+              "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+              "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+              "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+              "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+              "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+              "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+              "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+              "TLS_RSA_WITH_AES_128_GCM_SHA256",
+              "TLS_RSA_WITH_AES_256_GCM_SHA384",
+              "TLS_RSA_WITH_AES_128_CBC_SHA",
+              "TLS_RSA_WITH_AES_256_CBC_SHA"
+            ],
+            "extensions": [
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "supported_groups (10)",
+                "supported_groups": [
+                  "X25519MLKEM768 (4588)",
+                  "X25519 (29)",
+                  "P-256 (23)",
+                  "P-384 (24)",
+                  "P-521 (25)",
+                  "ffdhe2048 (256)",
+                  "ffdhe3072 (257)"
+                ]
+              },
+              {
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
+                ]
+              },
+              {
+                "name": "session_ticket (35)",
+                "data": ""
+              },
+              {
+                "name": "application_layer_protocol_negotiation (16)",
+                "protocols": [
+                  "h2",
+                  "http/1.1"
+                ]
+              },
+              {
+                "name": "status_request (5)",
+                "status_request": {
+                  "certificate_status_type": "OSCP (1)",
+                  "responder_id_list_length": 0,
+                  "request_extensions_length": 0
+                }
+              },
+              {
+                "name": "delegated_credentials (34)",
+                "signature_hash_algorithms": [
+                  "ecdsa_secp256r1_sha256",
+                  "ecdsa_secp384r1_sha384",
+                  "ecdsa_secp521r1_sha512",
+                  "ecdsa_sha1"
+                ]
+              },
+              {
+                "name": "signed_certificate_timestamp (18)"
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "X25519MLKEM768 (4588)": "4115c59b220e4574859ee93a5b7aa16df49016fb97f97a9575da182c214bc7da5558084a7dc174f4999be089b9af4c4cc63529660975b821c6a5f1ce6615878a928ce23c69fd3bb68c720d73662daed53cc7f75d3bbb51b6f537478927f61c8ac2f8c6f12131912343b9f1af412b077ee2713f4b08c584a50e9c9a548c84792b0ba7a441a322085df12c77c0092d58339fb46397b242a1f875a559bd0e6c146cd44a06426441814fb0cca352e37d5c22c55418c1f86c74f33bb9f2c0960dc15e25320a1e10901f8a126e183eb3fa080aabaf49900dbbc27239b1b44bea8c1feb7d67a2ba8978ca9c537621d90bfbea08f5b40252fb4a7fba0c1a246311dcbe0ff68732da960c93cf30e4c1f595c15a534e0d813403f7037501baa6a45f1fb9149e05bfd9c584901123e1420f8a6ab48b785ba0a185bb708f70f842ede7c9af022981a945aa3c5fff093f5e5a7ee18c1407eaa074248115d9182825cfcd068363a71619250925776909015bda87a375b3b6a194ba6581c0e16745c82a59372108ca25a855621a6b65bfd4b5aac8c5ada77b6ec9d2b7d8709bbf45c52bc81789d871e48bb12d51b0ee5170aec79a538ba9a7c91904dc9deb42c641d7bab149ccf2e83755f389c6902920a51b8a960b63e95a7dc6518fdab4fbb8866773a64490205f60a1b1971d65d7709eb3adb4787104976f399bc35efcb74d83adbc78b7f9b33ddd1402ff4641d96b6cfb1a3d76a84bd8380d74b2a0270711f7bc5fc1d7793ae693ad781065fc1dbc344513c304e234050e0589306b33c379440a200998f12b2233b3738909d6289da509bad2a72266d0344ea94a60bb7430747e5263ba78c6819bcc0f68e43a661abbf4c46b480ba4ca309b1cb36c8debb62e931387c223cffc59fea04d32f69136709e0f911e9c141a41a819e9626021b2af5b232d8f61575eb49349eb18172aa3ca3a4903e090574401acca480865294d67c652fc52781238c7d168e003adadbba2cff0642a164866f3b657852d0ee51f089cc08e02b06612b7e20060b266804ef9a3a6d53956b15de8748067284055f4420f632a375aa236e12e0115343c1288e7c0172ddcb75696895270bb08f7bc2aebab404333f528c875e5203cfbb338bb5ddb7cc7bab79affba7bc0663b44499e91873b9de1997a5442edaa64ec3788e07592aae845042720030b4ae5f74b91f1096bf038417b1f63e14466a4921964441d1c94f7bab4bef29d773a948b9bcfca87c78f056152c8b052a2a4d44295db7867d24bc0f8f89c87e16c4133a7298b0a232642a14a27ca911f8de866bb2992e46249df132a79a43a54c1773b1b24a5599f61fc0d6080c9c0672ac3c70060279311030f0b84a93a6501475aa8ac77b3f69294b15741802cad0d5b58f557908ac267cc29b86d9b94ed7325bc498bc89901c603cfe39869dfa34f54d7976dc9a673950cc84371f5e20ffec3a42b2369d66c53a2946c51b57c93e5afe6e8be85f6b1ea138f3a843d19e09e0c885874915981e6a895b8ba14d3940e471039e85915b93f4086b5d3b3cbc4ca41fdb565f9e91a81f75614e78f808509c5d5064b19816bb711c7f97d58bb5c34c40c91baa4b6189428913d1be568b9663ec62ff4cd1687d9ed9d509a8524f44f23c2a529216e8d0d0991bd27281f15118f7a53e76625af43cb80af756ec523d4395573321f70857d26af413cb868"
+                  },
+                  {
+                    "X25519 (29)": "153a11855b438000a716ac27c37616a59358cbf9f923afa52d31a9f7fa5ccd5f"
+                  },
+                  {
+                    "P-256 (23)": "04a5394ec143b0403b41d1c010ce1c51d5eab0cd9845c265d686ce2d469dd8448fc176e9dea73419002e4822eb874e5b7da649f428490d1ab611a198e06d36b4f3"
+                  }
+                ]
+              },
+              {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS 1.3",
+                  "TLS 1.2"
+                ]
+              },
+              {
+                "name": "signature_algorithms (13)",
+                "signature_algorithms": [
+                  "ecdsa_secp256r1_sha256",
+                  "ecdsa_secp384r1_sha384",
+                  "ecdsa_secp521r1_sha512",
+                  "rsa_pss_rsae_sha256",
+                  "rsa_pss_rsae_sha384",
+                  "rsa_pss_rsae_sha512",
+                  "rsa_pkcs1_sha256",
+                  "rsa_pkcs1_sha384",
+                  "rsa_pkcs1_sha512",
+                  "ecdsa_sha1",
+                  "rsa_pkcs1_sha1"
+                ]
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "record_size_limit (28)",
+                "data": "4001"
+              },
+              {
+                "name": "compress_certificate (27)",
+                "algorithms": [
+                  "zlib (1)",
+                  "brotli (2)",
+                  "zstd (3)"
+                ]
+              },
+              {
+                "name": "extensionEncryptedClientHello (boringssl) (65037)",
+                "data": "0000010001d70020349c1630b15d1e92dbb6378413e57a9055c44531ffa8d22be9087ce013bb0e2d00f0a5751a4a8a4024c4b9e344742f4d5f2c36e49398291b0afc787a654451091f73d59552c48a8d27a9619e713db3d4473dcbc79d101e527b337502f408c20bd88696c61f1ccebbc29fdb1c0d5f3e198031dc6f93fe4642233401528124e02cfa8c5cb9fc0e1ffcd175246bd1b42d53a04e3004e0a95ae0ae2ce3b511001d0f72c40b82031b319b0987f30b442c5793ba3a73a51d0c5307c712fd1645fcc0b90c2632e34b9e5deae33954b82db472dfc2e3b61569ae9a3459f6c46add75052a881f15250bf36cdc2e4bad3571bc1b98665a9b35bdb742561d3f6191b4f43c1299eddb8a7417b8858b7ac58f858ee0df84b4"
+              }
+            ],
+            "tls_version_record": "771",
+            "tls_version_negotiated": "772",
+            "ja3": "771,4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-34-18-51-43-13-45-28-27-65037,4588-29-23-24-25-256-257,0",
+            "ja3_hash": "6f7889b9fb1a62a9577e685c1fcfa919",
+            "ja4": "t13d1717h2_5b57614c22b0_3cbfd9057e0d",
+            "ja4_r": "t13d1717h2_002f,0035,009c,009d,1301,1302,1303,c009,c00a,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,001c,0022,0023,002b,002d,0033,fe0d,ff01_0403,0503,0603,0804,0805,0806,0401,0501,0601,0203,0201",
+            "peetprint": "772-771|2-1.1|4588-29-23-24-25-256-257|1027-1283-1539-2052-2053-2054-1025-1281-1537-515-513|1|1-2-3|4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53|0-10-11-13-16-18-23-27-28-34-35-43-45-5-51-65037-65281",
+            "peetprint_hash": "89d89662b21018947a9a46658c4f5ede",
+            "client_random": "4c06ab3656c380caa3c93bc822ea1a3e2a8485c47a0425497174c1974289a533",
+            "session_id": "bb5d038a3331f760dd45a5866d2b32193f6c8ad5fb4f3158c563e6378b04d2c0"
+          },
+          "raw_http2": {
+            "akamai_fingerprint": "1:65536;2:0;4:131072;5:16384|12517377|0|m,p,a,s",
+            "akamai_fingerprint_hash": "6ea73faa8fc5aac76bded7bd238f6433",
+            "sent_frames": [
+              {
+                "frame_type": "SETTINGS",
+                "length": 24,
+                "settings": [
+                  "HEADER_TABLE_SIZE = 65536",
+                  "ENABLE_PUSH = 0",
+                  "INITIAL_WINDOW_SIZE = 131072",
+                  "MAX_FRAME_SIZE = 16384"
+                ]
+              },
+              {
+                "frame_type": "WINDOW_UPDATE",
+                "length": 4,
+                "increment": 12517377
+              },
+              {
+                "frame_type": "HEADERS",
+                "stream_id": 1,
+                "length": 288,
+                "headers": [
+                  ":method: GET",
+                  ":path: /api/all",
+                  ":authority: tls.peet.ws",
+                  ":scheme: https",
+                  "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0",
+                  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                  "accept-language: en-US,en;q=0.9",
+                  "accept-encoding: gzip, deflate, br, zstd",
+                  "upgrade-insecure-requests: 1",
+                  "sec-fetch-dest: document",
+                  "sec-fetch-mode: navigate",
+                  "sec-fetch-site: none",
+                  "sec-fetch-user: ?1",
+                  "priority: u=0, i",
+                  "te: trailers"
+                ],
+                "flags": [
+                  "EndStream (0x1)",
+                  "EndHeaders (0x4)",
+                  "Priority (0x20)"
+                ],
+                "priority": {
+                  "weight": 42,
+                  "depends_on": 0,
+                  "exclusive": 0
+                }
+              }
+            ]
+          }
         },
         "safari": {
-          "error": "Failed to perform, curl: (35) Recv failure: Connection reset by peer. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "ja3_hash": "ecdf4f49dd59effc439639da29186671",
+          "ja4": "t13d2013h2_a09f3c656075_7f0f34a4126d",
+          "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
+          "akamai_http2_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
+          "akamai_http2_fingerprint_hash": "c52879e43202aeb92740be6e8c86ea96",
+          "negotiated_http_version": "h2",
+          "known_giveaway_signature": null,
+          "raw_tls": {
+            "ciphers": [
+              "TLS_GREASE (0x1A1A)",
+              "TLS_AES_256_GCM_SHA384",
+              "TLS_CHACHA20_POLY1305_SHA256",
+              "TLS_AES_128_GCM_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+              "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+              "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+              "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+              "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+              "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+              "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+              "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+              "TLS_RSA_WITH_AES_256_GCM_SHA384",
+              "TLS_RSA_WITH_AES_128_GCM_SHA256",
+              "TLS_RSA_WITH_AES_256_CBC_SHA",
+              "TLS_RSA_WITH_AES_128_CBC_SHA",
+              "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+              "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+              "TLS_RSA_WITH_3DES_EDE_CBC_SHA"
+            ],
+            "extensions": [
+              {
+                "name": "TLS_GREASE (0xcaca)"
+              },
+              {
+                "name": "server_name (0)",
+                "server_name": "tls.peet.ws"
+              },
+              {
+                "name": "extended_master_secret (23)",
+                "master_secret_data": "",
+                "extended_master_secret_data": ""
+              },
+              {
+                "name": "extensionRenegotiationInfo (boringssl) (65281)",
+                "data": "00"
+              },
+              {
+                "name": "supported_groups (10)",
+                "supported_groups": [
+                  "TLS_GREASE (0xbaba)",
+                  "X25519MLKEM768 (4588)",
+                  "X25519 (29)",
+                  "P-256 (23)",
+                  "P-384 (24)",
+                  "P-521 (25)"
+                ]
+              },
+              {
+                "name": "ec_point_formats (11)",
+                "elliptic_curves_point_formats": [
+                  "0x00"
+                ]
+              },
+              {
+                "name": "application_layer_protocol_negotiation (16)",
+                "protocols": [
+                  "h2",
+                  "http/1.1"
+                ]
+              },
+              {
+                "name": "status_request (5)",
+                "status_request": {
+                  "certificate_status_type": "OSCP (1)",
+                  "responder_id_list_length": 0,
+                  "request_extensions_length": 0
+                }
+              },
+              {
+                "name": "signature_algorithms (13)",
+                "signature_algorithms": [
+                  "ecdsa_secp256r1_sha256",
+                  "rsa_pss_rsae_sha256",
+                  "rsa_pkcs1_sha256",
+                  "ecdsa_secp384r1_sha384",
+                  "rsa_pss_rsae_sha384",
+                  "rsa_pss_rsae_sha384",
+                  "rsa_pkcs1_sha384",
+                  "rsa_pss_rsae_sha512",
+                  "rsa_pkcs1_sha512",
+                  "rsa_pkcs1_sha1"
+                ]
+              },
+              {
+                "name": "signed_certificate_timestamp (18)"
+              },
+              {
+                "name": "key_share (51)",
+                "shared_keys": [
+                  {
+                    "TLS_GREASE (0xbaba)": "00"
+                  },
+                  {
+                    "X25519MLKEM768 (4588)": "3cac17a1589630d33571ebbee73a63f02a117ef2cb1190a4e2507c2eb12d1a7b1cdcda9e75099eceb461589002d388ca660933b850c174e6332d575b9fc28e9e9c87c4499a19f23e127429bbb2c1e34102196b12c7975fe8c6be6c68019b93ab7b7aa9f18b004991058ebb2e67b660141285fb36492c0b5c96d19804871e14641f34e0c9ecc82e7c12b63938c11030a4132991be15ad1ac3cf888ab1d44015a3b41a92d7cb1bf92f002ca680d7482122483a0381f712a9cf906e653b019a8a4415f451ccf1273c384c3debcfe3ec900f77358851c7fbf89fc682c3e30c4c39f147a9a91708233c80742e02418a80e65de62309ab64a525c34c6cec20f7a3199a080a04fa87ab6cb5cd429c48724a36d57b1057b02a489baf1017a0e4727bf988cc54bebacb88b5c8b41ee77c48ab57e8c002533177e25b295df5255ed79b4c02bb34e3840ba129d2c393e62a7bba449d02246bdc8728de2a78fec35052a62287513dba62c384532fe126c452541f6d0601d976c48693af0d43344fa46b745720e5887d097228d27b4abc89b4f05a25610128a2217e42939d03a21482da0363242859a77d4acc2908f8014211359b68b716053571c08f70a89e841c504bb1a79d176b3ebc64ec642d0f1413db358b6628707dea2346a4302805ba8c25c520225cbb0764b95212738662d34745f0db8460409001f25ed12899cabc9925e206f7f573d058bea2994d6ba2c121c04791598c2e79607292b8f6706335fa62f9b452748c0da1e8344e676027711b68241f43b3296fd531dffc77e76ba475720a734cb8047b788f5618c9ccae7dbc03d68816f7690ccd9bad00b77c7b184cf817a1f6faca91ac4fda253c746892aa39c4fdc17164b3bff716b65f53053a03811e0c0d29fb3250eab1b9203c41038d0f4bc6474c016a929032091679f0464a586d393497d29623ee7b62553caf76a677827a1697f42452ec8aa8292005d9bc94f02e15118180b9abaa564661eb06a239743ac923ab85ce7e6a65c223412efbb605c58537378561226fe0a03638301cc4e3938248c0eedbc92cbc9a1317c5eb22b8e702c6315bab7c0083d99378ed5caa63317befa221e937975af8ae2a6a4c596a714ae01dc653aa5a15a6e89084acac4980502885054421cb68c9bc5d29f15435c5aa032ac0f097b87cc00c1f2b883ea8758f49194b5b4943ab27403434cd0a121de888430cced3600f5866ca99db36d274ad8b5c57e6c80ec3b5202e865348fb78cdfb3b19fa1d2c0c1840591142449c8fbc84e9ab8d30618dfd122608a649a09380116a4a977b17a985cc3cf1cbfd10b98ff8c40c8370bb7503ab28a28aa523d66b02b65a22c7a92faf5a697ef55759f3809beb94abdcb3f5982ba1699e93c47816d636edb0a277a340c1072b11164a002754abaa88e5dc9fdd761a711a5dbcec7614c941395645caf3c9875732edccb1908aa5049330d0a53c7796bb64812aa9706f1b694223b36d876c1907366acd61a04a79010ed323cf211266b51072c726886ac72ad86a1e98af53d759e03c2ec53b19c240c535c2a60bbcaae22a519781bf84aa06d9253994a137e42501624c3adbc30d84f950aba425a410670629545da481071543aea57b40ec75dc81b8e344524f2db09376f89ccca4b3fb60b9bb0ceedcc295980350d1bac32b532fba2a89aab4edbf2f539e398c94ae6d685e751ad74d"
+                  },
+                  {
+                    "X25519 (29)": "0c3f8aefc46286fb56642885d06f6471dd6dda0ad7217ea24651cc8159c48c22"
+                  }
+                ]
+              },
+              {
+                "name": "psk_key_exchange_modes (45)",
+                "PSK_Key_Exchange_Mode": "PSK with (EC)DHE key establishment (psk_dhe_ke) (1)"
+              },
+              {
+                "name": "supported_versions (43)",
+                "versions": [
+                  "TLS_GREASE (0xeaea)",
+                  "TLS 1.3",
+                  "TLS 1.2"
+                ]
+              },
+              {
+                "name": "compress_certificate (27)",
+                "algorithms": [
+                  "zlib (1)"
+                ]
+              },
+              {
+                "name": "TLS_GREASE (0x7a7a)"
+              }
+            ],
+            "tls_version_record": "771",
+            "tls_version_negotiated": "772",
+            "ja3": "771,4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10,0-23-65281-10-11-16-5-13-18-51-45-43-27,4588-29-23-24-25,0",
+            "ja3_hash": "ecdf4f49dd59effc439639da29186671",
+            "ja4": "t13d2013h2_a09f3c656075_7f0f34a4126d",
+            "ja4_r": "t13d2013h2_000a,002f,0035,009c,009d,1301,1302,1303,c008,c009,c00a,c012,c013,c014,c02b,c02c,c02f,c030,cca8,cca9_0005,000a,000b,000d,0012,0017,001b,002b,002d,0033,ff01_0403,0804,0401,0503,0805,0805,0501,0806,0601,0201",
+            "peetprint": "GREASE-772-771|2-1.1|GREASE-4588-29-23-24-25|1027-2052-1025-1283-2053-2053-1281-2054-1537-513|1|1|GREASE-4866-4867-4865-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10|0-10-11-13-16-18-23-27-43-45-5-51-65281-GREASE-GREASE",
+            "peetprint_hash": "62b834de729e78a9f0ebd1dd099314a7",
+            "client_random": "4714a0ca749ec1afd24d51681f6e3678f68e0d8ab36dd8ff96996eb2fc730cd6",
+            "session_id": "1ccc8fc444a396d1ee745441eee1b2656fa4a857d6ea968cdddf0aa1a071dde7"
+          },
+          "raw_http2": {
+            "akamai_fingerprint": "2:0;3:100;4:2097152;9:1|10420225|0|m,s,a,p",
+            "akamai_fingerprint_hash": "c52879e43202aeb92740be6e8c86ea96",
+            "sent_frames": [
+              {
+                "frame_type": "SETTINGS",
+                "length": 24,
+                "settings": [
+                  "ENABLE_PUSH = 0",
+                  "MAX_CONCURRENT_STREAMS = 100",
+                  "INITIAL_WINDOW_SIZE = 2097152",
+                  "NO_RFC7540_PRIORITIES = 1"
+                ]
+              },
+              {
+                "frame_type": "WINDOW_UPDATE",
+                "length": 4,
+                "increment": 10420225
+              },
+              {
+                "frame_type": "HEADERS",
+                "stream_id": 1,
+                "length": 258,
+                "headers": [
+                  ":method: GET",
+                  ":scheme: https",
+                  ":authority: tls.peet.ws",
+                  ":path: /api/all",
+                  "sec-fetch-dest: document",
+                  "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Safari/605.1.15",
+                  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                  "sec-fetch-site: none",
+                  "sec-fetch-mode: navigate",
+                  "accept-language: en-US,en;q=0.9",
+                  "priority: u=0, i",
+                  "accept-encoding: gzip, deflate, br"
+                ],
+                "flags": [
+                  "EndStream (0x1)",
+                  "EndHeaders (0x4)"
+                ]
+              }
+            ]
+          }
         }
       },
       "production_browser": {
@@ -1347,10 +2303,10 @@
               "name": "key_share (51)",
               "shared_keys": [
                 {
-                  "X25519MLKEM768 (4588)": "0f4b2efa86126e4409a7fa782e58cb0a361584b95cc757382ef4960974a92a277a3a0ba66cdc802f37632fab866052982e7b1122796f1fdcabec6099275634a3884945111cf9a47d43c14b37252f69c43540f8b537474b45c32cab2298138c14b1c11c9fbb9b2e37cbd6d35734c5beaae7b213f552b30b5cfb445df8581a26c554f2fa6ff0b252b73b0efeaa0fc185583a51bd4e1b56709075627832877c498267af7bc318c3e626cab7703e8b711c2aa51ce7349f0834c83501a4c32edbe7923a85cfd1baa3d542483a9b232ccb024abbbd2ec59c7e60cad1ca8419a3bb4766a54a515819f9890a103241e7b47ba84050226f0e9c5bc54c9d9e4b5b6a9c4b636c8debea8108e080ce799cf456091c286d24ac02cc6b0c786ca6511a39870090dcb706281325c9abce4bc44da102403f2c3f49b5ace5449cd1055b914071dfb58eeabac44608056c021ab32961a9abc8d5d353e3f306ee673cc715ac103c201f8b268c96974f1a465a88720a24247f7ccc4b9b6bba8637c21abd07c77fd7cc4b18a8b221444c32c46d0931722bf4bde02b317197371d60b2e0e21121b65327d657b3fc1b8f6a3197848db622b24989910da2c2ad831e70142d324c8a28d02bd733481b3c583f6a8dfdb05c0021283f76b1d5c08693a39dc4d394b928b9f98b22d99325c6289f4c67483dbb54d2fa4aaf18a6b72a3ae48ab77ee0011a059c5a1439aacb540210a30becb750180dcab7703a8c570cda8fffbb33f9b01c2f090e4ef84dbd8707af69aa586771ea08500553cc882c2c198b440a146dfb1c00bb078aa9288e8cfa2d96b04bdc1a875ff306d2f8380aa8cd1fe8a3f16c16ea8b0b0924448dcc9d9d224f07dc9d10d66325e4bcf841ce6238c09ca7aefc483c01e2117c8374b4d83a143abf14b53671a4876e890cdac90f587abd15a7578ba44e6b409052951e195a56d2c410dd2ac8cd7b6bbba60d9ad83c85822fb9a66cdfe76933612a86d919849cc385058cd7814c760c4b466c0f5cc787398965b4d33a85da85f7e064844ba4ec3cb2da01b201e89cbebc8aede81533f0c66a93cc28622d72a5a25d11bffe9099c6fc5334aa1fe46a050a500eb05361d3b054b8c77c29e311ba2b30aac5061a283d82c98941cc78eec1b97790c2cc420a94663d004c7a55aa6185f985e1b9c1c1b1111d8047c39c66f40993be9a5e8c69b92a92148ff24d9a394b6b564e3cd69e87d17687889ab440793b11299bda567f348c4f032d7599bb9ae67dbc3c9f8bda9b7f667b349c61d5b171cf8638b2a01f6e58c1a32039be9a6064bb37e50482cfeb6547c586aac53206d96c24f84e346322660c740d0159f75584f83baffec583b8d4c105052af1517beaa8c0d9f06ea1769d6b8415e4f075746803b0da3edad9b292689e1535961b5743d9b20b23a648aae98223982f077459ce755d12667d7acb51737056def488208c8b6f74befe9551e9dc59e89b06a65043a221754a548b3f6a09ec078ea493cae88648efb38962037540b9381b34967af56f3e784c4274bb0cd37cab91a54f6c7b8050272dc03fcc0946809c64f941ce266c38b71c7fb063b6a9e6b6b0d5a808305ab425920685ce87815b4829700146053858a71c64581ccf3e2337a5f181da433a73a9ccdc24a321283065526c1c6dc9005545030a63213e023fb8dfeb15fbc2276d25a30702c48cd6278b8ec62d2862"
+                  "X25519MLKEM768 (4588)": "523b3061b50ded91a7fa00437ecb35529121faaaab6f274b04fc4cc1519a700110af892c15547044a13142265dace153722bafa8846c7c56770008863b901ebdd135c0dc39f84463c9c7bffadcbbdf5b4752fa4d16458efe7070a9dc86a87c036ea1b001eb58d96899e2674c6ff592fa88cf6523ac59360d7662292a9c989fe90106916d89424ce66a5516d479e43001b21b2c37370a82f94cb9eb90a97a0c8da3b1b723c919c4a2d3979121f00acde13738a259fe4c71c180a45118cbc1f1941c980da0309d263ac7eb4c34be45b3a1123bcc58521f43b919b53a59b57fb2db93d45198f04858fd58739e534ee6ac7cadf40e85598632288118373f08a91a35b3aa37474d40d9cffaf61a959c2341426892f4abbc8743ee82543d90488724395a451e70824827295c9851afba11414a4036d711246cf7af06220c21cba2844a6b08c4bb839bb83782a81041b80b524c38a217484095fa5c59650a1854f227f2664d36f901e9868125aa442bdb7ea872b8fe0605ce4abc46a7cb51a22817269c31852873328068f36fa64a3becb03449f609c9f59e15d060d7a7775be35b42b4055ad92185087cd1004e3ed72687b3a4a7730a29d3a7844b5eb0b634bc4b215f5156dfa649c1ba0676a81e2041c5da1b66c62019727c5b5ea4362041c6c139a750583f12eb0007d14386b5cb1c666c46b162887cb855fbafdaa5bfbac38e8abc1c89556fccaa0e146b0345ab1a5eac3a293bb4029096741b9e33684267720ead920920638f1b390b2a269a263ccece868e088929f0068cfe5615da621e9cc72211b59b1ed18c7774131b7c953114154052b2c4501271519d5d949f36b1082e7a4a34d166a4d4419f5876bc26522da47d520264b1f6a70b576932c5486a2b42cfeb0d4f6037c8fca4fac6816f7ba9897319b48c6024f97337558b8fb10c7e015f0fab475d122dffe6b73bc20c48a2c11ce7abb913b86bf91988eabccc14c24f7989822bc129812033538f21925d5d767a17e58bf04ac4fa00021b836950ea604f620850d80435e9bb29392366db7b74f58d7c47ba76927ddf92a7e85c90c5b336012a0eff0b0614d00ed2b080a71aa3b60364c6f8734f0acdcf52026843466ae9cfb8a36c83275d8a561e8a000d6e205330ec084ae55158fb3c2e40be97216c42b6b583f0b0adac4f280094229451daeb0816ac5e23c9594da54d042c415fd80ff06c2f8a8c2290066bbfc05aa53970177407a7b790b3d6494902aabff4ad45690224d3574cc63dc0a1693ab4924794646b32a92b4408c40ac79e49c1792cb38ed54b5ef430286a62c2701393fc6257f1aa92d01c08857f8c080197f77e09dba246386c6ed1a5ab3652503869c6b7a691fb098ff14dc2ac9102fa9ced1cb69073a29b140b5c88373b94780be41bf393b2d3842cf36333528765a81a3114653cb06c5ef09206be00303b587fa322ae9a48a83c28035ec765f49b86cd76a9bee3b67bf1bfcd9635580ba651fbcc935ccbde00557ac77b434cb612a24816112cf4d4aa0688c73eb75b75a772559c9c5f397fc2ccbac8279b8b8bb580ca782391a62cbc0a491abcc83853e00c3d5c34b118ec2c68629c7260c50ff752a0f0a348c220254ef940cbc478c0575306161e4db45397f1f91058e17d050175ac79e55d36e6bac26159189aa192cdd577abd7098db45b614c4f24138cce20a28ac1836d2622"
                 },
                 {
-                  "X25519 (29)": "7ba0137b633476a94b7721977291566e9422fb00003712ff444a9ca6bd16144a"
+                  "X25519 (29)": "fe10cb821505d793f8e94e5c0529db71aefb8e898f399218cc4dd4bc8a9d1555"
                 }
               ]
             }
@@ -1363,8 +2319,8 @@
           "ja4_r": "t13d5211_002f,0032,0033,0035,0038,0039,003c,003d,0040,0067,006a,006b,009c,009d,009e,009f,00a2,00a3,1301,1302,1303,c009,c00a,c013,c014,c023,c024,c027,c028,c02b,c02c,c02f,c030,c050,c051,c052,c053,c056,c057,c05c,c05d,c060,c061,c09c,c09d,c09e,c09f,c0ac,c0ad,cca8,cca9,ccaa_000a,000b,000d,0016,0017,0023,002b,002d,0033,ff01_0905,0906,0904,0403,0503,0603,0807,0808,081a,081b,081c,0809,080a,080b,0804,0805,0806,0401,0501,0601,0303,0301,0302,0402,0502,0602",
           "peetprint": "772-771||4588-29-23-30-24-25-256-257|2309-2310-2308-1027-1283-1539-2055-2056-2074-2075-2076-2057-2058-2059-2052-2053-2054-1025-1281-1537-771-769-770-1026-1282-1538|1||4866-4867-4865-49199-49195-49200-49196-158-49191-103-49192-107-163-159-52393-52392-52394-49325-49311-49245-49249-49239-49235-162-49324-49310-49244-49248-49238-49234-49188-106-49187-64-49162-49172-57-56-49161-49171-51-50-157-49309-49233-156-49308-49232-61-60-53-47|0-10-11-13-22-23-35-43-45-51-65281",
           "peetprint_hash": "c4c4150d01e2e571d80f6c13ec73dfc6",
-          "client_random": "61bb84553caff1347da5d337ba40e184d75076c4508fc09db0f1192f668d54af",
-          "session_id": "c2754d4909d5ce2bc2c115a9a1d7d640a9e085bce6bc147cfab4befd87599fb5"
+          "client_random": "d8705a24403e83c3948de2a4691a79cfa88e7b8c1fdd8642ca99f13321f98387",
+          "session_id": "cb07b7f8e1e80b06530083730307ae80a7eb8833e6020486516cd485b8bf4883"
         },
         "raw_http2": {}
       },
