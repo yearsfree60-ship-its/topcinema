@@ -28,6 +28,7 @@ on:
           - mangatime
           - olympustaff
           - procomic
+          - starzmanga
           - auto
           - like_manga_wayback_test
         default: auto
@@ -224,6 +225,15 @@ jobs:
       # من الإنترنت من جديد، وهذا وقت مهدور من مهلة الـ240 دقيقة المشتركة
       # مع الجلب والضغط. المسار قد يختلف بين إصدارات المكتبة (~/.paddlex
       # هو المسار الحالي المعروف)، فأُضيف أكثر من مسار محتمل احتياطًا.
+      # [جديد] مسار fetch_mode="seleniumbase" (sb_fetch.py) للمواقع المحمية بتحدٍّ Cloudflare
+      # (الفائز فعليًا بتشخيص starzmanga) — يلزمه seleniumbase + Xvfb بأوضاع الإنتاج أيضًا.
+      - name: تثبيت SeleniumBase وXvfb (أوضاع الجلب بالمتصفح)
+        if: inputs.mode == 'إنتاج' || inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل'
+        run: |
+          pip install --quiet seleniumbase || echo "⚠️ تعذّر تثبيت seleniumbase"
+          sudo apt-get install -y -qq xvfb || true
+          python -m playwright install --with-deps chromium
+
       - name: كاش نماذج PaddleOCR
         if: inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل'
         uses: actions/cache@v4
