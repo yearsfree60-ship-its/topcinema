@@ -986,6 +986,9 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 
 # ---------- جلسة SeleniumBase المُعاد استخدامها (cf_clearance + UA) ----------
 _SB_LOCK = threading.Lock()
+_SB_CLEARANCE_LOCK = threading.Lock()
+_SB_IMAGE_CACHE: dict[str, bytes] = {}   # url -> بايتات نزّلها المتصفح نفسه (تُستهلك مرة واحدة)
+SB_BROWSER_IMAGE_DOWNLOAD = os.environ.get("SB_BROWSER_IMAGE_DOWNLOAD", "true").strip().lower() == "true"
 _SB_CLEARANCE: dict[str, dict] = {}   # host -> {"cookie_header": str, "ua": str}
 
 
@@ -999,13 +1002,30 @@ def _store_sb_clearance(page_url: str, cookies: list, ua: str | None) -> None:
     host = (urlparse(page_url).hostname or "").lower()
     if not host or not cookies:
         return
-    _SB_CLEARANCE[host.removeprefix("www.")] = {"cookies": cookies, "ua": ua or UA}
+    with _SB_CLEARANCE_LOCK:
+        _SB_CLEARANCE[host.removeprefix("www.")] = {"cookies": cookies, "ua": ua or UA}
+
+
+def _find_sb_clearance(host: str) -> dict | None:
+    """[إصلاح جذري — run #280] البحث عن جلسة التحدّي بمطابقة النطاق نفسه ثم كل نطاق أب.
+    الصور تُخدَّم من نطاق فرعي (smanhwa.starzmanga.com) بينما حُفظت الكوكيز باسم صفحة
+    الفصل (starzmanga.com): البحث بالمطابقة التامة كان يُرجع {} فتُطلَب الصور بلا
+    cf_clearance وبـUA مختلف عن المتصفح → 403 لكل الصور."""
+    host = host.lower().removeprefix("www.")
+    parts = host.split(".")
+    with _SB_CLEARANCE_LOCK:
+        for i in range(len(parts) - 1):   # لا نطابق TLD منفردًا
+            entry = _SB_CLEARANCE.get(".".join(parts[i:]))
+            if entry:
+                return entry
+    return None
 
 
 def _sb_headers_for(url: str) -> dict:
-    """ترويسات Cookie/User-Agent للطلبات اللاحقة (صفحات/صور) لنفس النطاق الذي حُلَّ تحدّيه."""
+    """ترويسات Cookie/User-Agent للطلبات اللاحقة (صفحات/صور) لنفس النطاق (أو نطاقه الفرعي)
+    الذي حُلَّ تحدّيه."""
     host = (urlparse(url).hostname or "").lower()
-    entry = _SB_CLEARANCE.get(host.removeprefix("www."))
+    entry = _find_sb_clearance(host)
     if not entry:
         return {}
     pairs = [f"{c['name']}={c['value']}" for c in entry["cookies"]
@@ -1026,7 +1046,8 @@ def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
         except ImportError as e:
             return [], f"sb_fetch/seleniumbase غير متاح: {e}", ""
         try:
-            res = fetch_pages_via_seleniumbase([chapter_url]).get(chapter_url) or {}
+            res = fetch_pages_via_seleniumbase(
+                [chapter_url], download_images=SB_BROWSER_IMAGE_DOWNLOAD).get(chapter_url) or {}
         except Exception as e:
             return [], f"فشل تشغيل SeleniumBase: {type(e).__name__}: {e}", ""
     if not res.get("ok"):
@@ -1035,6 +1056,8 @@ def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
     urls = res.get("images") or []
     if not urls:
         return [], "لم تُستخرَج صور محتوى من DOM بعد حل التحدي", ""
+    for u, b in (res.get("image_bytes") or {}).items():
+        _SB_IMAGE_CACHE[u] = b
     return urls, "", extract_manga_title_from_html(res.get("html") or "")
 
 
@@ -1094,11 +1117,62 @@ def _validate_image_bytes(raw_bytes: bytes) -> tuple[bool, str]:
     return True, ""
 
 
+try:
+    from curl_cffi import requests as _cffi_requests   # اختياري: بصمة TLS مطابقة لـChrome
+except Exception:
+    _cffi_requests = None
+
+
+def _http_get_image(img_url: str, headers: dict):
+    """نداء GET واحد: للنطاقات ذات جلسة تحدٍّ (cf_clearance) نستخدم curl_cffi بانتحال Chrome
+    إن توفّر (cf_clearance قد يُربَط ببصمة TLS لا بالـUA وحده)، وإلا requests العادي."""
+    if headers.get("Cookie") and _cffi_requests is not None:
+        try:
+            return _cffi_requests.get(img_url, headers=headers, timeout=20, impersonate="chrome")
+        except Exception:
+            pass   # رجوع صامت لـrequests العادي
+    return _HTTP_SESSION.get(img_url, headers=headers, timeout=20)
+
+
+def _describe_http_failure(resp, sent_headers: dict) -> str:
+    """سبب فشل مفصَّل: يميّز تحدّي Cloudflare عن منع hotlink عن غياب الكوكي المُرسَل."""
+    ctype = resp.headers.get("content-type", "")
+    extra = []
+    cfm = resp.headers.get("cf-mitigated")
+    if cfm:
+        extra.append(f"cf-mitigated={cfm}")
+    srv = resp.headers.get("server")
+    if srv:
+        extra.append(f"server={srv}")
+    extra.append("cookie=مُرسَل" if sent_headers.get("Cookie") else "cookie=غير مُرسَل")
+    try:
+        m = re.search(r"<title[^>]*>(.*?)</title>", resp.text[:3000], re.I | re.S)
+        if m:
+            extra.append(f"title={m.group(1).strip()[:50]!r}")
+    except Exception:
+        pass
+    return f"status={resp.status_code} content-type={ctype!r} [{', '.join(extra)}]"
+
+
 def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | None, str | None]:
     last_reason = "سبب غير معروف"
+    cached = _SB_IMAGE_CACHE.pop(img_url, None)
+    if cached:
+        valid, why = _validate_image_bytes(cached)
+        if valid:
+            return cached, None
+        last_reason = f"نسخة المتصفح مرفوضة: {why}"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
-            resp = _HTTP_SESSION.get(img_url, headers={"Referer": referer, "User-Agent": UA, **_sb_headers_for(img_url)}, timeout=20)
+            headers = {"Referer": referer, "User-Agent": UA, **_sb_headers_for(img_url)}
+            if headers.get("Cookie"):
+                # ترويسات متصفح حقيقي لطلب صورة (تُضاف فقط لنطاقات التحدّي)
+                headers.setdefault("Accept", "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8")
+                headers.setdefault("Accept-Language", "en-US,en;q=0.9")
+                headers.setdefault("Sec-Fetch-Dest", "image")
+                headers.setdefault("Sec-Fetch-Mode", "no-cors")
+                headers.setdefault("Sec-Fetch-Site", "same-site")
+            resp = _http_get_image(img_url, headers)
             ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
@@ -1109,7 +1183,7 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
                 else:
                     last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(resp.content)} بايت)"
             else:
-                last_reason = f"status={resp.status_code} content-type={ctype!r}"
+                last_reason = _describe_http_failure(resp, headers)
         except Exception as e:
             last_reason = f"استثناء: {e}"
         if attempt < IMG_FETCH_RETRIES:
