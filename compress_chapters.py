@@ -2078,6 +2078,15 @@ async def push_now(message: str, allowed_paths: list[str]) -> None:
         return
     ok, msg = await asyncio.to_thread(_commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH, message, allowed_paths)
     print(f"  {'✅' if ok else '⚠️'} دفع: {msg}")
+    return ok
+
+
+def _atomic_write_text(path: Path, text: str) -> None:
+    """كتابة ذرّية (ملف مؤقت ثم استبدال): إيقاف التشغيلة في منتصف الكتابة لا يترك JSON مقطوعًا."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def _owned_chapter_paths(results: list) -> list[str]:
@@ -2314,27 +2323,46 @@ async def main():
     failed_urls: list[str] = []
     git_lock = asyncio.Lock()
 
+    pushed_upto = 0   # عدد النتائج المشمولة بآخر دفع ناجح (الدفعة الواحدة تغطي كل ما اكتمل قبلها)
+
     async def handle_result(url, result):
+        nonlocal pushed_upto
         if result is None:
             failed_urls.append(url)
             return
         results.append(result)
-        run_manifest_path = OUTPUT_DIR / RUN_MANIFEST_RELPATH
-        run_manifest_path.parent.mkdir(parents=True, exist_ok=True)
-        run_manifest_path.write_text(
-            json.dumps(build_run_manifest(results), ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        _atomic_write_text(OUTPUT_DIR / RUN_MANIFEST_RELPATH,
+                           json.dumps(build_run_manifest(results), ensure_ascii=False, indent=2))
+        # [حماية عند الإيقاف] الفصل المكتمل يُسجَّل فورًا بـmanifest.json المحلي (دمج فوق ما على القرص)
+        # قبل انتظار قفل git — فلو أُوقفت التشغيلة/أُلغيت قبل دوره بالدفع، يلتقطه "الدفع الاحتياطي
+        # النهائي" بالـworkflow كاملًا (صور + فهرس) بدل صور يتيمة بلا إدراج بالفهرس.
+        local_manifest = OUTPUT_DIR / "manifest.json"
+        try:
+            base = json.loads(local_manifest.read_text(encoding="utf-8")) if local_manifest.exists() else {}
+        except Exception:
+            base = {}
+        _atomic_write_text(local_manifest,
+                           json.dumps(merge_manifest_dict(base, [result]), ensure_ascii=False, indent=2))
         if ENABLE_INCREMENTAL_PUSH and GIT_COMMIT_DIR:
             async with git_lock:
+                if len(results) <= pushed_upto:
+                    return   # دفعة سابقة غطّت هذا الفصل أصلًا — لا جلب/دفع مكرر
+                snap = list(results)
                 remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
-                merged = merge_manifest_dict(remote or {}, results)
-                (OUTPUT_DIR / "manifest.json").write_text(
-                    json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
+                merged = merge_manifest_dict(remote or {}, snap)
+                _atomic_write_text(OUTPUT_DIR / "manifest.json",
+                                   json.dumps(merged, ensure_ascii=False, indent=2))
+                ok = await push_now(
+                    f"إضافة {result['manga_id']} - الفصل {result['chapter_num']}"
+                    + (f" (+{len(snap) - pushed_upto - 1} فصل)" if len(snap) - pushed_upto > 1 else ""),
+                    _owned_chapter_paths(snap),
                 )
-                await push_now(
-                    f"إضافة {result['manga_id']} - الفصل {result['chapter_num']}",
-                    _owned_chapter_paths(results),
-                )
+                if ok:
+                    pushed_upto = len(snap)
+                if len(results) > len(snap):
+                    # فصول اكتملت أثناء هذا الدفع: تُعاد إلى manifest المحلي (لم تُدفَع بعد) كي لا تضيع إن أُوقفت التشغيلة
+                    _atomic_write_text(OUTPUT_DIR / "manifest.json", json.dumps(
+                        merge_manifest_dict(merged, results[len(snap):]), ensure_ascii=False, indent=2))
 
     async def run_chapter_safe(browser, url, index, total, profile):
         try:
