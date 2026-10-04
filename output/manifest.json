@@ -103539,6 +103539,20 @@
           ]
         }
       ]
+    },
+    "starzmanga.com__true-education": {
+      "name": "true education",
+      "chapters": [
+        {
+          "label": "الفصل 1",
+          "num": "1",
+          "chNum": 1.0,
+          "sourceUrl": "https://starzmanga.com/manga/true-education/1/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__true-education/ch-1/002.webp"
+          ]
+        }
+      ]
     }
   }
 }
