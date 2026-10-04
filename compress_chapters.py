@@ -1880,6 +1880,11 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
             "label": f"الفصل {r['chapter_num']}", "num": r["chapter_num"], "chNum": chNum,
             "sourceUrl": r["source_url"], "images": images_cdn,
         }
+        # حجم الفصل قبل/بعد الضغط (بايت) — يقرؤه تطبيق العرض عند الاستيراد. يُحذف الحقل لو غير معروف
+        # (فصل قديم/مسار بلا قياس) فلا تُعرَض أرقام صفرية مضلِّلة.
+        if r.get("original_bytes"):
+            new_chapter["originalBytes"] = int(r["original_bytes"])
+            new_chapter["compressedBytes"] = int(r.get("compressed_bytes") or 0)
         replaced = False
         for idx, ch in enumerate(entry["chapters"]):
             existing_num = ch.get("num")
@@ -2040,6 +2045,8 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
 
     saved_paths = []
     failed_indices = []
+    size_original: dict[int, int] = {}    # فهرس الصورة -> حجم الأصل بالبايت (قبل الضغط)
+    size_compressed: dict[int, int] = {}  # فهرس الصورة -> حجم الناتج بالبايت (بعد الضغط)
     for i, img_url in enumerate(image_urls, start=1):
         raw, reason = await download(img_url)
         if not raw:
@@ -2051,6 +2058,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             filename = f"{i:03d}.{IMG_FORMAT}"
             (chapter_dir / filename).write_bytes(compressed)
             saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+            size_original[i], size_compressed[i] = len(raw), len(compressed)
             print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
             print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
@@ -2068,6 +2076,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
                     filename = f"{i:03d}.{IMG_FORMAT}"
                     (chapter_dir / filename).write_bytes(compressed)
                     saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                    size_original[i], size_compressed[i] = len(raw), len(compressed)
                     print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
                 except Exception as e:
                     print(f"  ⚠️ فشلت صورة {i} أثناء الضغط بعد إعادة المحاولة: {e} — الرابط: {img_url}")
@@ -2085,7 +2094,12 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     if not saved_paths:
         return None
 
-    return {"manga_id": manga_id, "chapter_num": chapter_num, "source_url": chapter_url, "image_paths": saved_paths}
+    original_bytes, compressed_bytes = sum(size_original.values()), sum(size_compressed.values())
+    if original_bytes:
+        saving = 100 * (1 - compressed_bytes / original_bytes)
+        print(f"  📦 حجم الفصل: {original_bytes/1048576:.2f}م.ب ← {compressed_bytes/1048576:.2f}م.ب (توفير {saving:.0f}%)")
+    return {"manga_id": manga_id, "chapter_num": chapter_num, "source_url": chapter_url, "image_paths": saved_paths,
+            "original_bytes": original_bytes, "compressed_bytes": compressed_bytes}
 
 
 async def main():
