@@ -10,6 +10,7 @@ starzmanga.com (تشغيلة 37178175830: حُلَّ التحدي خلال ~17ث
     results[url] -> {"ok","html","images","cookies","user_agent","error","waited_sec"}
     sess = build_requests_session(results[url])            # لتحميل الصور بنفس الكوكيز/UA
 """
+import base64
 import time
 from urllib.parse import urlparse
 
@@ -146,6 +147,90 @@ def _cookies_dict(sb) -> list:
     return [c for c in out if c["name"]]
 
 
+# ---------- تنزيل الصور من داخل جلسة المتصفح نفسها (إصلاح 403 لصور CDN الفرعي) ----------
+# صور starzmanga تُخدَّم من نطاق فرعي (smanhwa.starzmanga.com) يرفض طلبات خارج المتصفح (403 HTML)
+# حتى مع إعادة الكوكيز؛ التنزيل من داخل Chrome الذي اجتاز التحدّي يحمل بصمة TLS والكوكيز والـReferer كما هي.
+
+_FETCH_IMG_JS = """(() => {
+  window.__sbr = null;
+  fetch(%s, {credentials: 'include', cache: 'no-store'})
+    .then(r => { if (!r.ok) throw new Error('status=' + r.status);
+                 const ct = r.headers.get('content-type') || '';
+                 return r.blob().then(b => ({b: b, ct: ct})); })
+    .then(x => new Promise((res, rej) => { const fr = new FileReader();
+        fr.onload = () => res({ct: x.ct, d: String(fr.result).split(',')[1] || ''});
+        fr.onerror = () => rej(new Error('filereader')); fr.readAsDataURL(x.b); }))
+    .then(x => { window.__sbr = JSON.stringify({ok: 1, ct: x.ct, d: x.d}); })
+    .catch(e => { window.__sbr = JSON.stringify({ok: 0, e: String(e)}); });
+  return 'started';
+})()"""
+
+_POLL_IMG_JS = "(() => window.__sbr === null || window.__sbr === undefined ? '' : window.__sbr)()"
+
+
+def _in_page_fetch(sb, url: str, timeout: float = 40.0) -> tuple[bytes | None, str]:
+    """fetch() داخل الصفحة الحالية ثم استقصاء النتيجة (لا يعتمد على دعم await بواجهة التقييم)."""
+    _sb_eval(sb, _FETCH_IMG_JS % json.dumps(url))
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        time.sleep(0.25)
+        raw = _sb_eval(sb, _POLL_IMG_JS)
+        if not raw or not isinstance(raw, str):
+            continue
+        try:
+            data = json.loads(raw)
+        except Exception:
+            return None, "نتيجة fetch غير مقروءة"
+        if not data.get("ok"):
+            return None, str(data.get("e") or "فشل fetch")[:120]
+        ct = (data.get("ct") or "").lower()
+        if ct and not ct.startswith("image/"):
+            return None, f"content-type غير صورة: {ct}"
+        try:
+            raw_bytes = base64.b64decode(data.get("d") or "")
+        except Exception:
+            return None, "base64 تالف"
+        if len(raw_bytes) < 500:
+            return None, f"جسم صغير جدًا ({len(raw_bytes)} بايت)"
+        return raw_bytes, ""
+    return None, "انتهت مهلة fetch"
+
+
+def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tuple[dict, dict]:
+    """يُنزِّل كل الصور من داخل المتصفح. الطبقة 1: fetch من صفحة الفصل (Referer صحيح تلقائيًا).
+    الطبقة 2 (إن منع CORS): فتح رابط الصورة كصفحة أعلى مستوى ثم fetch بنفس الأصل.
+    يُعيد (url -> bytes, url -> سبب الفشل)."""
+    got: dict[str, bytes] = {}
+    errs: dict[str, str] = {}
+    page_host = urlparse(page_url).netloc
+    cur_host = page_host            # الأصل الذي تقف عليه الصفحة الآن
+    for u in image_urls:
+        host = urlparse(u).netloc
+        data, err = None, ""
+        try:
+            data, err = _in_page_fetch(sb, u)          # طبقة 1 (قد تُمنع بـCORS إن اختلف الأصل)
+            if data is None and host != cur_host:
+                # الطبقة 2: التنقل إلى نطاق الصورة نفسه ثم fetch بنفس الأصل
+                try:
+                    sb.cdp.get(u)
+                except Exception:
+                    try:
+                        sb.activate_cdp_mode(u)
+                    except Exception:
+                        pass
+                time.sleep(1.0)
+                cur_host = host
+                data, err2 = _in_page_fetch(sb, u)
+                err = err2 or err
+        except Exception as e:
+            err = f"{type(e).__name__}: {e}"[:120]
+        if data:
+            got[u] = data
+        else:
+            errs[u] = err or "سبب غير معروف"
+    return got, errs
+
+
 def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
     t0 = time.monotonic()
     deadline = t0 + wait_sec
@@ -175,7 +260,8 @@ def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
 
 
 def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_WAIT_SEC,
-                                 proxy: str | None = None, retries: int = 2) -> dict:
+                                 proxy: str | None = None, retries: int = 2,
+                                 download_images: bool = False) -> dict:
     """يفتح متصفحًا واحدًا (Xvfb مدمج) ويجلب كل الروابط تسلسليًا — كوكيز cf_clearance
     تبقى صالحة لباقي الفصول بنفس النطاق فيُحَل التحدي مرة واحدة غالبًا."""
     from seleniumbase import SB
@@ -215,6 +301,18 @@ def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_W
                                 res["user_agent"] = sb.cdp.evaluate("navigator.userAgent")
                             except Exception:
                                 pass
+                        if res["images"] and download_images:
+                            try:
+                                got, errs = download_images_in_browser(sb, res["images"], url)
+                                res["image_bytes"], res["image_errors"] = got, errs
+                                print(f"  🌐 [SB] تنزيل بالمتصفح: {len(got)}/{len(res['images'])} صورة"
+                                      + (f" — أول سبب فشل: {next(iter(errs.values()))}" if errs else ""))
+                                # كوكيز النطاقات التي زارها المتصفح أثناء التنزيل (احتياط لمسار HTTP)
+                                more = _cookies_dict(sb)
+                                seen = {(c["name"], c.get("domain")) for c in res["cookies"]}
+                                res["cookies"] += [c for c in more if (c["name"], c.get("domain")) not in seen]
+                            except Exception as e:
+                                res["image_errors"] = {"*": f"{type(e).__name__}: {e}"[:200]}
                         if res["images"]:
                             break
                         res["error"] = "صفحة بلا صور بعد حل التحدي"
