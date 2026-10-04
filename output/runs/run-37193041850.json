@@ -182,6 +182,25 @@
           ],
           "originalBytes": 2103041,
           "compressedBytes": 261988
+        },
+        {
+          "label": "الفصل 20",
+          "num": "20",
+          "chNum": 20.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-book-of-peach-blossoms/20/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-20/009.webp"
+          ],
+          "originalBytes": 2142919,
+          "compressedBytes": 295342
         }
       ]
     }
