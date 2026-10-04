@@ -105338,6 +105338,25 @@
           ],
           "originalBytes": 6533050,
           "compressedBytes": 337260
+        },
+        {
+          "label": "الفصل 72",
+          "num": "72",
+          "chNum": 72.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-book-of-peach-blossoms/72/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-72/009.webp"
+          ],
+          "originalBytes": 7481955,
+          "compressedBytes": 442050
         }
       ]
     },
@@ -109435,36 +109454,6 @@
           ],
           "originalBytes": 9767639,
           "compressedBytes": 1031376
-        },
-        {
-          "label": "الفصل 42",
-          "num": "42",
-          "chNum": 42.0,
-          "sourceUrl": "https://azorafly.com/series/twin-brothers-new-life/chapter-42",
-          "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-42/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-42/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-42/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-42/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-42/005.webp"
-          ],
-          "originalBytes": 8952598,
-          "compressedBytes": 949072
-        },
-        {
-          "label": "الفصل 43",
-          "num": "43",
-          "chNum": 43.0,
-          "sourceUrl": "https://azorafly.com/series/twin-brothers-new-life/chapter-43",
-          "images": [
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-43/001.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-43/002.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-43/003.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-43/004.webp",
-            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__twin-brothers-new-life/ch-43/005.webp"
-          ],
-          "originalBytes": 10251624,
-          "compressedBytes": 1048252
         }
       ]
     }
