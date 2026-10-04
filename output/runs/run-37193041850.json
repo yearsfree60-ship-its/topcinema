@@ -1658,6 +1658,17 @@
           ],
           "originalBytes": 6635316,
           "compressedBytes": 394404
+        },
+        {
+          "label": "الفصل 99",
+          "num": "99",
+          "chNum": 99.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-book-of-peach-blossoms/99/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-book-of-peach-blossoms/ch-99/002.webp"
+          ],
+          "originalBytes": 13425,
+          "compressedBytes": 4088
         }
       ]
     }
