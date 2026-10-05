@@ -1,0 +1,393 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "109",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "PLEASE SUPPORT THEAUTHOR/ARTISTBYBUYINGTHEIRWORK!",
+          "confidence": 0.975,
+          "text_ar": "يرجى دعم المؤلف/الرسام بشراء أعمالهم!"
+        },
+        {
+          "text": "Also, do join the discord! https://discord.gg/kwPTZPxXrp",
+          "confidence": 0.951,
+          "text_ar": "أيضًا، انضموا إلى خادم ديسكورد الخاص بنا! https://discord.gg/kwPTZPxXrp"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "EVEN sooo Is ALOT!",
+          "confidence": 0.74,
+          "text_ar": "حتى هذا كثير جدًا!"
+        },
+        {
+          "text": "YOUNG MAN, DON'T BE TOO HIGH.",
+          "confidence": 0.969,
+          "text_ar": "أيها الشاب، لا تكن متعاليًا أكثر من اللازم."
+        },
+        {
+          "text": "DO YOU KNOW WHAT'S THE NORMAL PAY FOR A HANDYMAN IN TENGCHONG?",
+          "confidence": 0.929,
+          "text_ar": "هل تعرف ما هو الأجر المعتاد للعامل البسيط في تينغتشونغ؟"
+        },
+        {
+          "text": "I JUST GAVE YOU THIS OPPORT -UNITY BECAUSE YOU LOOKED LIKE YOU NEED IT.",
+          "confidence": 0.893,
+          "text_ar": "لقد منحتك هذه الفرصة فقط لأنك بدوت كمن يحتاجها."
+        },
+        {
+          "text": "PISSED",
+          "confidence": 0.966,
+          "text_ar": "مستاء"
+        },
+        {
+          "text": "DON'T YOU JUST WANT TO SHOW OFF INFRONT OF HER?",
+          "confidence": 0.92,
+          "text_ar": "ألا تحاول فقط التباهي أمامها؟"
+        },
+        {
+          "text": "IS IT NECESSARY TO SHOW YOURSELF LIKE THIS?!",
+          "confidence": 0.978,
+          "text_ar": "هل من الضروري أن تظهر بمظهر كهذا؟!"
+        },
+        {
+          "text": "USE MY DOWNFALL TO SHOW YOUR SUCCESS!",
+          "confidence": 0.864,
+          "text_ar": "تستخدم سقوطي لتظهر نجاحك!"
+        },
+        {
+          "text": "SHEESH.",
+          "confidence": 0.993,
+          "text_ar": "تبًا."
+        },
+        {
+          "text": "ISN'TIT EMBARASSING TO COMPARE YOURSELF WITH A CHILD?",
+          "confidence": 0.921,
+          "text_ar": "أليس من المحرج أن تقارن نفسك بطفل؟"
+        },
+        {
+          "text": "USE MY IGNORANCE TO SHOW OFF YOU'RE PROFOUND KNOWLEDGE?!",
+          "confidence": 0.902,
+          "text_ar": "تستخدم جهلي لتتباهى بمعرفتك العميقة؟!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "SHI TIANZE OF THE FENGLIN GROUP IS ABOUT THE SAME AGE AS YOU, WHY DON'T YOU COMPARE YOURSELF TO HIM?!",
+          "confidence": 0.844,
+          "text_ar": "شي تيانزي من مجموعة فينغلين في نفس عمرك تقريبًا، لماذا لا تقارن نفسك به؟!"
+        },
+        {
+          "text": "ALOT OF PEOPLE ARE RICHER THAN you!",
+          "confidence": 0.908,
+          "text_ar": "الكثير من الناس أغنى منك!"
+        },
+        {
+          "text": "NO NO! I DIDN'TMEAN IT!",
+          "confidence": 0.908,
+          "text_ar": "لا، لا! لم أقصد ذلك!"
+        },
+        {
+          "text": "IT'S OVER, MY IMAGE'S COMPLETELY RUINED!",
+          "confidence": 0.879,
+          "text_ar": "لقد انتهى الأمر، صورتي تدمرت تمامًا!"
+        },
+        {
+          "text": "IT'S ALL BECALSE OF THIS BRAT!",
+          "confidence": 0.945,
+          "text_ar": "كل هذا بسبب هذا المشاغب!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "WE ARE ARRIVING AT TENGCHONG STATION. PLEASE TAKE CARE OFYOUR BELONGIINGS AND PREPARE TO GET OFF.",
+          "confidence": 0.898,
+          "text_ar": "نحن نصل الآن إلى محطة تينغتشونغ. يرجى الانتباه لأمتعتكم والاستعداد للنزول."
+        },
+        {
+          "text": "WHERE DO WE GO?",
+          "confidence": 0.925,
+          "text_ar": "إلى أين نذهب؟"
+        },
+        {
+          "text": "ALRIGHT~",
+          "confidence": 0.969,
+          "text_ar": "حسنًا~"
+        },
+        {
+          "text": "GO TO THE HOTEL.",
+          "confidence": 0.972,
+          "text_ar": "اذهبا إلى الفندق."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "WAIT FOR ME HERE.",
+          "confidence": 0.96,
+          "text_ar": "انتظرني هنا."
+        },
+        {
+          "text": "THERE'S SOMETHING I HAVE TO DO. I'LL COME BACK SOON.",
+          "confidence": 0.951,
+          "text_ar": "لدي شيء يجب أن أقوم به. سأعود قريبًا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "IT'S ROOM 304.",
+          "confidence": 0.955,
+          "text_ar": "إنها الغرفة 304."
+        },
+        {
+          "text": "HELLO, I HAVE AFRIENDNAMED LIN FENG AND HIS PHONE IS TURNED OFF.",
+          "confidence": 0.933,
+          "text_ar": "مرحبًا، لدي صديق يدعى لين فينغ وهاتفه مغلق."
+        },
+        {
+          "text": "PLEASE WAIT.",
+          "confidence": 0.988,
+          "text_ar": "يرجى الانتظار."
+        },
+        {
+          "text": "CAN YOU TELL ME WHICH ROOM HE IS LIVING INP",
+          "confidence": 0.829,
+          "text_ar": "هل يمكنك إخباري في أي غرفة يقيم؟"
+        },
+        {
+          "text": "THANK YOu.",
+          "confidence": 0.912,
+          "text_ar": "شكرًا لك."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "WHO WILL IT BE?",
+          "confidence": 0.925,
+          "text_ar": "من سيكون؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "IT'S YOU?!",
+          "confidence": 0.856,
+          "text_ar": "أنت؟!"
+        },
+        {
+          "text": "YOU RUINED THE IMAGE OF THE GUY WITH ME TODAY,",
+          "confidence": 0.936,
+          "text_ar": "لقد أفسدت صورة الشخص الذي كان معي اليوم،"
+        },
+        {
+          "text": "HE'SIN TENGCHONG ANO GATHERING SOME MEN.",
+          "confidence": 0.881,
+          "text_ar": "إنه في تينغتشونغ ويجمع بعض الرجال."
+        },
+        {
+          "text": "HURRY UP AND LEAVE THE ROOM.",
+          "confidence": 0.915,
+          "text_ar": "أسرع وغادر الغرفة."
+        },
+        {
+          "text": "I'M WOR- RIED HE WILL NOT LEAVE YOU UNTIL HE GETS REVENGE.",
+          "confidence": 0.918,
+          "text_ar": "أنا قلقة من أنه لن يتركك حتى ينتقم."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "THIS GIRL WAS KIND ENOUGHTO TELLME",
+          "confidence": 0.913,
+          "text_ar": "هذه الفتاة كانت لطيفة بما يكفي لتخبرني،"
+        },
+        {
+          "text": "WHYNOT HELPHERAS WELL.",
+          "confidence": 0.861,
+          "text_ar": "لماذا لا أساعدها أيضًا؟"
+        },
+        {
+          "text": "I'LL TAKE MY LEAVE NOW, BYE.",
+          "confidence": 0.94,
+          "text_ar": "سأذهب الآن، وداعًا."
+        },
+        {
+          "text": "PLEASE WAIT.",
+          "confidence": 0.989,
+          "text_ar": "يرجى الانتظار."
+        },
+        {
+          "text": "YES?",
+          "confidence": 0.98,
+          "text_ar": "نعم؟"
+        },
+        {
+          "text": "YOU ARE SICK.",
+          "confidence": 0.888,
+          "text_ar": "أنتِ مريضة."
+        },
+        {
+          "text": "NO NO, THAT'S NOT IT!",
+          "confidence": 0.964,
+          "text_ar": "لا لا، ليس الأمر كذلك!"
+        },
+        {
+          "text": "YES?",
+          "confidence": 0.913,
+          "text_ar": "نعم؟"
+        },
+        {
+          "text": "I MEANT,YOU ARE GOING THROUGH A DISEASE.",
+          "confidence": 0.954,
+          "text_ar": "أعني، أنتِ تعانين من مرض ما."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "PRELIMINARY INFERENCE IS KIND OF A NEUROLOGICAL HAIR DISORDER.",
+          "confidence": 0.93,
+          "text_ar": "الاستنتاج الأولي هو نوع من اضطراب الشعر العصبي."
+        },
+        {
+          "text": "HUH? THEN TELL ME, WHAT DISEASE IS IT?",
+          "confidence": 0.954,
+          "text_ar": "هاه؟ إذًا أخبرني، ما هو هذا المرض؟"
+        },
+        {
+          "text": "THE HAIRS WILL KEEP SHEDDING UNTIL NO HAIR IS LEFT.",
+          "confidence": 0.933,
+          "text_ar": "سيتساقط الشعر باستمرار حتى لا يتبقى منه شيء."
+        },
+        {
+          "text": "IT BEG -INS FROM THE LOWER BODY.",
+          "confidence": 0.918,
+          "text_ar": "يبدأ من الجزء السفلي من الجسم."
+        },
+        {
+          "text": "CAN YOU TAKE OFF YOUR PANTS AND SHOW ME THE FOLLOWING SO THAT I CAN MAKE SURE?",
+          "confidence": 0.934,
+          "text_ar": "هل يمكنك خلع بنطالكِ وإرائي المنطقة لأتأكد؟"
+        },
+        {
+          "text": "METAMORPHOSIS*?!",
+          "confidence": 0.974,
+          "text_ar": "متحول جنسيًا*؟!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "SOME CHAPTER NOTES!",
+          "confidence": 0.943,
+          "text_ar": "بعض ملاحظات الفصل!"
+        },
+        {
+          "text": "WELL, THIS TIME THERE AREN'T THAT MANY THINGS BUT",
+          "confidence": 0.96,
+          "text_ar": "حسنًا، هذه المرة لا توجد أشياء كثيرة، لكن"
+        },
+        {
+          "text": "THAT WORD ON THE LAST PAGE \"METAMORPHOSIS\", YES, IT",
+          "confidence": 0.944,
+          "text_ar": "تلك الكلمة في الصفحة الأخيرة \"متحول\"، نعم، لقد"
+        },
+        {
+          "text": "WAS IN THE TRANSLATIONS (变态?!?!). YOU CAN CHECK",
+          "confidence": 0.932,
+          "text_ar": "كانت في الترجمات (变态?!?!). يمكنك التحقق"
+        },
+        {
+          "text": "IT OUT YOURSELF. SO JUST FOR EXPANDING KNOWLEDGE,",
+          "confidence": 0.945,
+          "text_ar": "منها بنفسك. فقط من أجل توسيع المعرفة،"
+        },
+        {
+          "text": "METAMORPHOSIS IS A BIOLOGICAL PROCESS WHERE",
+          "confidence": 0.966,
+          "text_ar": "التحول هو عملية بيولوجية حيث"
+        },
+        {
+          "text": "ANIMAL (INSECTS, MAMMALS ETC.) GO IN AN ABRUPT",
+          "confidence": 0.945,
+          "text_ar": "تمر الحيوانات (الحشرات، الثدييات، إلخ) بتغير"
+        },
+        {
+          "text": "CHANGE IN THEIR BODY STRUCTURE THROUGH CELL",
+          "confidence": 0.974,
+          "text_ar": "مفاجئ في بنية أجسامها من خلال نمو الخلايا"
+        },
+        {
+          "text": "GROWTH AND DIFFERENTIATON. THAT'S THE LITERAL",
+          "confidence": 0.964,
+          "text_ar": "وتمايزها. هذا هو المعنى الحرفي"
+        },
+        {
+          "text": "MEANING BUT I'M NOT SURE WHAT WAS THE USE OF THIS",
+          "confidence": 0.94,
+          "text_ar": "لكنني لست متأكدًا مما كان الهدف من استخدام"
+        },
+        {
+          "text": "WORDHERE(°_O)/.",
+          "confidence": 0.814,
+          "text_ar": "هذه الكلمة هنا(°_O)/."
+        },
+        {
+          "text": "-HUZBI",
+          "confidence": 0.998,
+          "text_ar": "-هوزبي"
+        },
+        {
+          "text": "WELL ANYWAYS, SEE YOU GUYS AT THE NEXT CHAPTER!",
+          "confidence": 0.943,
+          "text_ar": "على أية حال، أراكم في الفصل القادم!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "ＳＣＡＮＬＡＴＩＯＮＳ",
+          "confidence": 0.964,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "HUZBI SCANLATIONS IS IN NEED OF ATRANSLATOR! ANYONE INTERESTED PLEASE CONTACT ME ON MY ACCOUNT ON MANGADEX.ORG.",
+          "confidence": 0.934,
+          "text_ar": "فريق هوزبي للترجمة بحاجة إلى مترجم! أي شخص مهتم يرجى التواصل معي عبر حسابي على موقع MANGADEX.ORG."
+        }
+      ]
+    }
+  ]
+}
