@@ -100,6 +100,24 @@ on:
         options:
           - server
           - mobile
+      page_layout:
+        description: "[استخراج_نص + إنتاج_كامل] تخطيط صفحات المانهوا لترتيب قراءة نص OCR — طولية_ويبتون: عمود طويل يُقرأ من الأعلى للأسفل (الافتراضي). مربعات_يسار_لليمين: صفحات مقصوصة لمربعات (panels) تُقرأ صفًّا صفًّا من اليسار لليمين. مربعات_يمين_لليسار: نفس الشيء بالأسلوب الياباني"
+        required: false
+        default: طولية_ويبتون
+        type: choice
+        options:
+          - طولية_ويبتون
+          - مربعات_يسار_لليمين
+          - مربعات_يمين_لليسار
+      sfx_filter:
+        description: "[استخراج_نص + إنتاج_كامل] استبعاد المؤثرات الصوتية (BOOM, THUD…) من النص المستخرَج والملف المترجَم. معتدل: يحذف كلمات المحاكاة الصوتية الواضحة والنص الكبير خارج الفقاعات والحروف المكرَّرة خارجها (الافتراضي). صارم: يحذف أيضًا أي نص أكبر من المعتاد خارج الفقاعة والتعجبات المنفردة — أنسب لصفحات مليئة بالمؤثرات لكنه قد يحذف حوارًا خارج فقاعة. أساسي_فقط: حذف البنود شديدة القِصر فقط"
+        required: false
+        default: معتدل
+        type: choice
+        options:
+          - معتدل
+          - صارم
+          - أساسي_فقط
       translate_to_arabic:
         description: "[استخراج_نص فقط] ترجمة النص المستخرَج آليًا للعربية (سياقية، نداء واحد لكل فصل عبر Gemini المجاني) بجانب النص الإنجليزي — يتطلب ضبط سر GEMINI_API_KEY بإعدادات المستودع، وإلا تُعطَّل تلقائيًا بتحذير بلا أي تأثير على باقي الميزات (نص إنجليزي فقط)"
         required: false
@@ -296,6 +314,8 @@ jobs:
           FULL_PRODUCTION_MODE: ${{ inputs.mode == 'إنتاج_كامل' }}
           MANGA_TITLE_OVERRIDE: ${{ inputs.manga_title_override }}
           OCR_DETECTION_MODEL: ${{ inputs.ocr_detection_model }}
+          OCR_PAGE_LAYOUT: ${{ inputs.page_layout }}
+          OCR_SFX_FILTER: ${{ inputs.sfx_filter }}
           TRANSLATE_TO_ARABIC: ${{ inputs.translate_to_arabic }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
