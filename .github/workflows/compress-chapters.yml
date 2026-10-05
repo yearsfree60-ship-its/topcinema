@@ -29,6 +29,7 @@ on:
           - olympustaff
           - procomic
           - starzmanga
+          - mangadex
           - auto
           - like_manga_wayback_test
         default: auto
@@ -278,6 +279,7 @@ jobs:
           echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
 
       - name: تشغيل الضغط
+        timeout-minutes: 215   # أقل من timeout الـjob (240) ليبقى وقت للدفع الاحتياطي عند بلوغ الحد
         env:
           CHAPTER_URLS: ${{ inputs.chapter_urls }}
           SITE_PROFILE: ${{ inputs.site }}
@@ -310,6 +312,7 @@ jobs:
           STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
           RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
+          ALLOW_PARTIAL_CHAPTERS: 'false'
         # [جديد — بند 3 من خطة إصلاح تناقض PIR/OOM] حلقة إعادة تشغيل عملية
         # Python كاملة عند خروج compress_chapters.py بكود 75 تحديدًا — هذا
         # الكود مخصَّص حصرًا لوضع ocr_experiment_mode عند تجاوز OCR_MAX_RSS_MB
@@ -359,6 +362,10 @@ jobs:
             exit 0
           fi
           cd "$OUTPUT_WORKTREE"
+          # إلغاء/قتل التشغيلة أثناء git قد يترك index.lock فيفشل git add بصمت ولا يُدفَع شيء.
+          if ! pgrep -x git > /dev/null 2>&1; then
+            find "$(git rev-parse --git-dir)" -maxdepth 1 -name 'index.lock' -delete 2>/dev/null || true
+          fi
           # [حماية الفصول الناقصة] فصل أُوقف تحميله في المنتصف قد يترك صورًا جزئية بقرص الرانر.
           # قبل الدفع نحجب (عبر .gitignore داخل مجلد الفصل) أي مجلد فصل غير مُدرَج بـmanifest.json
           # (ولا بملفات runs/*.json) — فلا تُدفَع إلا الفصول المكتملة فعليًا. أي خلل بقراءة الفهرس ←
