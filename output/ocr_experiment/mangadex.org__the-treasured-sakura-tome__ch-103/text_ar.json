@@ -1,0 +1,298 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "103",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "BROUGHTTOYOUBY: HUZBI SCANLATIONS!",
+          "confidence": 0.974,
+          "text_ar": "مقدم لكم من: هوزبي سكانليشنز!"
+        },
+        {
+          "text": "PLEASE SUPPORTTHE AUTHOR/ARTISTBY BUYINGTHEIR WORKS!",
+          "confidence": 0.973,
+          "text_ar": "يرجى دعم المؤلف/الرسام بشراء أعمالهم!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "INTER- MEDIA -TE WEN STAGE",
+          "confidence": 0.993,
+          "text_ar": "مرحلة وين المتوسطة"
+        },
+        {
+          "text": "INI -TIAL WEN STAGE",
+          "confidence": 0.976,
+          "text_ar": "مرحلة وين الأولية"
+        },
+        {
+          "text": "LATE WEN STAGE",
+          "confidence": 0.989,
+          "text_ar": "مرحلة وين المتأخرة"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "WITH THIS, EVEN IF THE XLAN PEOPLE COME SEEKING FOR REVENGE, IT WON'T BE A PROBLEM.",
+          "confidence": 0.949,
+          "text_ar": "بهذا، حتى لو جاء أفراد عشيرة شوان للانتقام، فلن تكون هناك مشكلة."
+        },
+        {
+          "text": "NOTTO MENTION, A FEWOF THEM ESPECIALLY.",
+          "confidence": 0.962,
+          "text_ar": "ناهيك عن بعضهم على وجه الخصوص."
+        },
+        {
+          "text": "I'M GONNA TRY MY SKILLS ON THEM!",
+          "confidence": 0.961,
+          "text_ar": "سأجرب مهاراتي عليهم!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "SFX:'TAKE THIS!'",
+          "confidence": 0.916,
+          "text_ar": "خذ هذه!"
+        },
+        {
+          "text": "S SFX:HUMPH!",
+          "confidence": 0.116,
+          "text_ar": "همف!"
+        },
+        {
+          "text": "0 W SFX:BANG!",
+          "confidence": 0.033,
+          "text_ar": "بوووم!"
+        },
+        {
+          "text": "SFX: AWESOME PUNCH!",
+          "confidence": 0.96,
+          "text_ar": "لكمة مذهلة!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "NOW!",
+          "confidence": 0.984,
+          "text_ar": "الآن!"
+        },
+        {
+          "text": "SFX:COMINGTOGETHER",
+          "confidence": 0.984,
+          "text_ar": "تجمع الطاقة"
+        },
+        {
+          "text": "SFX:(THREE RED WORDS)ATTACK",
+          "confidence": 0.957,
+          "text_ar": "هجوم"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "SFX:CRASH!",
+          "confidence": 0.982,
+          "text_ar": "تحطم!"
+        },
+        {
+          "text": "SHIT, HIS BODY PROTECTION MAGIC* IS STILL HERE!",
+          "confidence": 0.955,
+          "text_ar": "تباً، سحر حماية الجسد الخاص به لا يزال فعالاً!"
+        },
+        {
+          "text": "HAVE TO SLIP QUICKLY!",
+          "confidence": 0.969,
+          "text_ar": "يجب أن أهرب بسرعة!"
+        },
+        {
+          "text": "SFX:CRASH!",
+          "confidence": 0.984,
+          "text_ar": "تحطم!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "SFX: BANGING HEAD ON FLOOR",
+          "confidence": 0.967,
+          "text_ar": "ارتطام الرأس بالأرض"
+        },
+        {
+          "text": "O HERO FORGIVE ME! O HERO FORGIVE ME!",
+          "confidence": 0.971,
+          "text_ar": "أيها البطل، اغفر لي! أيها البطل، اغفر لي!"
+        },
+        {
+          "text": "PLEASE LET ME LIVE!I WILL GIVE YOu ANY -THING!",
+          "confidence": 0.824,
+          "text_ar": "أرجوك دعني أعيش! سأعطيك أي شيء!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "ANSWER MY THREE QUESTIONS AND 1 WILLLET YOUGO.",
+          "confidence": 0.923,
+          "text_ar": "أجب على أسئلتي الثلاثة وسأدعك تذهب."
+        },
+        {
+          "text": "YES..YES....",
+          "confidence": 0.769,
+          "text_ar": "أجل.. أجل...."
+        },
+        {
+          "text": "SECOND:DID YOU INSTIGATE LIU QINGRU? WHAT'S HER BACKGROUND?",
+          "confidence": 0.966,
+          "text_ar": "ثانياً: هل أنت من حرض ليو تشينغرو؟ وما هي خلفيتها؟"
+        },
+        {
+          "text": "ONE: WHICH STATE IS XUAN LI IN?",
+          "confidence": 0.93,
+          "text_ar": "أولاً: في أي مرحلة وصل شوان لي؟"
+        },
+        {
+          "text": "AFTER COMPLETION OF THE LEVEL,HE HAS REACHED THE PEAK OF THE LAST STAGE, BUT, ITIS STILL UNSTABLE",
+          "confidence": 0.95,
+          "text_ar": "بعد إكمال المستوى، وصل إلى ذروة المرحلة الأخيرة، لكنه لا يزال غير مستقر."
+        },
+        {
+          "text": "ITS..ITS ME BUTIDON'TKNOW WHERE SHE CAME FROM.",
+          "confidence": 0.887,
+          "text_ar": "إنه.. إنه أنا، لكنني لا أعرف من أين أتت."
+        },
+        {
+          "text": "LAST QUESTION~",
+          "confidence": 0.95,
+          "text_ar": "السؤال الأخير~"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "WHY ARE YOU DEALING WITH MEZ",
+          "confidence": 0.845,
+          "text_ar": "لماذا تتعامل معي؟"
+        },
+        {
+          "text": "FINISHEV... WEREFINISHED!",
+          "confidence": 0.917,
+          "text_ar": "انتهينا... لقد انتهينا!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "WORDS FROM ME!",
+          "confidence": 0.948,
+          "text_ar": "كلمة مني!"
+        },
+        {
+          "text": "XUANWEI (THAT THIRD YOUNG BOY WITH BALDY)",
+          "confidence": 0.992,
+          "text_ar": "شوانوي (ذلك الفتى الثالث الأصلع)"
+        },
+        {
+          "text": "LITERALLY SAID 'BODY PROTECTION MAGIC', SO IF",
+          "confidence": 0.969,
+          "text_ar": "ذكر حرفياً 'سحر حماية الجسد'، لذا إذا"
+        },
+        {
+          "text": "SOME OF YOU GET CONFUSED OVER THE NAME OF",
+          "confidence": 0.985,
+          "text_ar": "ارتبك بعضكم بشأن اسم"
+        },
+        {
+          "text": "THE SKILL(THE SKILL CALLED 'IRON CLOTH'), WELL,",
+          "confidence": 0.99,
+          "text_ar": "المهارة (المهارة المسماة 'الرداء الحديدي')، حسناً،"
+        },
+        {
+          "text": "IT'S GONE NOW, RIGHT?",
+          "confidence": 0.955,
+          "text_ar": "لقد زال الأمر الآن، أليس كذلك؟"
+        },
+        {
+          "text": "DAAAMN~ THIS ONE WAS WAAAAY~ TIRING,",
+          "confidence": 0.97,
+          "text_ar": "تباً~ كان هذا الفصل متعباً للغاية~"
+        },
+        {
+          "text": "BECAUSE OF THE EDITS AND SUCH.",
+          "confidence": 0.958,
+          "text_ar": "بسبب التعديلات وما شابه."
+        },
+        {
+          "text": "OH WELL, SEE YOU IN THE NEXT CHAPTER!",
+          "confidence": 0.977,
+          "text_ar": "حسناً، أراكم في الفصل القادم!"
+        },
+        {
+          "text": "ALSO, PLEASE I AM IN NEED OF A TRANSLATOR SO",
+          "confidence": 0.965,
+          "text_ar": "أيضاً، أنا بحاجة إلى مترجم، لذا"
+        },
+        {
+          "text": "IF ANYONE OF YOU WHO KNOWS CHINESE IS",
+          "confidence": 0.977,
+          "text_ar": "إذا كان أي منكم يعرف الصينية و"
+        },
+        {
+          "text": "INTERESTED IN HELPING,",
+          "confidence": 0.965,
+          "text_ar": "مهتماً بالمساعدة،"
+        },
+        {
+          "text": "PLEASE DO CONTACT ME! SEE YA!",
+          "confidence": 0.984,
+          "text_ar": "يرجى التواصل معي! أراكم لاحقاً!"
+        },
+        {
+          "text": "-HUZBI.",
+          "confidence": 0.999,
+          "text_ar": "-هوزبي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "ＳＣＡＮＬＡＴＩＯＮＳ",
+          "confidence": 0.964,
+          "text_ar": "سكانليشنز"
+        },
+        {
+          "text": "HUZBI SCANLATIONS IS IN NEED OF ATRANSLATOR! ANYONE INTERESTED PLEASE CONTACT ME ON MY ACCOUNT ON MANGADEX.ORG.",
+          "confidence": 0.934,
+          "text_ar": "فريق هوزبي سكانليشنز بحاجة إلى مترجم! أي شخص مهتم يرجى التواصل معي عبر حسابي على موقع Mangadex.org."
+        }
+      ]
+    }
+  ]
+}
