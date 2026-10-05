@@ -310,7 +310,19 @@ def _landed_on_requested(requested: str, current: str | None) -> bool:
     if not current:
         return True   # تعذّر قراءة الرابط الحالي: لا نحكم بالفشل
     req, cur = _norm_path(requested), _norm_path(current)
-    return cur == req or cur.startswith(req + "/")
+    return (cur == req or cur.startswith(req + "/")
+            or cur == req + "_1" or cur.startswith(req + "_1/"))
+
+
+def _resolve_suffixed_chapter_url(sb, url: str, wait_sec: float) -> str | None:
+    """بعض المواقع تنشر الفصل بلاحقة _1 (مثل /96/ ← /96_1/). نبني هذا الاحتمال الوحيد فقط
+    (بدون أي زيارة إضافية)؛ والمستدعي يفتحه ويتحقق من وجود صور القراءة."""
+    p = urlparse(url)
+    path = p.path
+    if not path.rstrip("/") or path.rstrip("/").endswith("_1"):
+        return None
+    new_path = path.rstrip("/") + "_1" + ("/" if path.endswith("/") else "")
+    return p._replace(path=new_path).geturl()
 
 
 def _is_thumbnail_url(u: str) -> bool:
@@ -431,7 +443,7 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
                 break
             n_read, diag = _wait_reading_images(sb, 25.0, absent_grace=8.0)
             if n_read == 0 and not diag.get("rc"):
-                # رابط الفصل الفعلي قد يحمل لاحقة (/44-عنوان/) — نحلّه من صفحة المانهوا
+                # رابط الفصل الفعلي قد يحمل اللاحقة _1 (/96/ ← /96_1/) — نجربها مرة واحدة
                 real = _resolve_suffixed_chapter_url(sb, url, wait_sec)
                 if real:
                     print(f"  🔗 [SB] رابط الفصل الفعلي بلاحقة: {real}")
@@ -446,6 +458,11 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
                     if n_read > 0:
                         page_url = real
                         res["final_url"] = real
+                    elif not diag.get("rc"):
+                        res["ok"], res["fatal"] = False, True
+                        res["error"] = "الرابط الأصلي ورابط _1 بلا حاوية قراءة — تخطّي الفصل"
+                        print(f"  ⏭️ [SB] فشل {url} و{real} — الانتقال للفصل التالي")
+                        break
             if n_read == 0:
                 print(f"  ⚠️ [SB] حاوية القراءة فارغة — إعادة تحميل الصفحة. تشخيص: {diag}")
                 try:
