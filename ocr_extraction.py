@@ -98,7 +98,12 @@ async def _translate_chapter_if_enabled(
     لا وجود له أصلًا حينها."""
     try:
         from translate_to_arabic import translate_chapter_to_arabic, translation_active
-        files = await translate_chapter_to_arabic(chapter_result, OUTPUT_DIR, out_dir)
+        # حقول التوثيق (page_layout/order_method) خاصة بملفات الإنجليزية فقط — تُحجَب عن وحدة الترجمة كي لا
+        # يتغير شكل text_ar.json/text_ar.txt أبدًا (عارض المانهوا يعتمد على بنيتهما الحالية).
+        _cr = {k: v for k, v in chapter_result.items() if k != "page_layout"}
+        _cr["pages"] = [{k: v for k, v in pg.items() if k != "order_method"}
+                        for pg in (chapter_result.get("pages") or [])]
+        files = await translate_chapter_to_arabic(_cr, OUTPUT_DIR, out_dir)
         if not files and failed_translations is not None and translation_active():
             pages = chapter_result.get("pages") or []
             if any(p.get("sentences") for p in pages):
@@ -910,6 +915,8 @@ OCR_PANEL_ANALYSIS_WIDTH = int(os.environ.get("OCR_PANEL_ANALYSIS_WIDTH", "500")
 OCR_PANEL_MIN_GUTTER_PX = int(os.environ.get("OCR_PANEL_MIN_GUTTER_PX", "4"))        # أدنى سماكة فاصل (على الصورة المصغّرة)
 OCR_PANEL_GUTTER_UNIFORM = float(os.environ.get("OCR_PANEL_GUTTER_UNIFORM", "0.92"))  # نسبة بكسلات الخلفية لاعتبار صف/عمود فاصلًا
 _PANEL_FALLBACK_WARNED = False
+# طريقة ترتيب آخر صفحة (للتوثيق بملفات الإخراج) — تُقرأ مباشرة بعد الاستدعاء المتزامن بلا await بينهما.
+_LAST_ORDER_METHOD = ""
 
 
 def _reorder_groups_rows_rtl(groups: list[list[dict]]) -> list[list[dict]]:
@@ -1112,8 +1119,9 @@ def group_page_by_panels(items: list[dict], raw: bytes, rtl: bool) -> list[dict]
       3) XY-cut على صناديق النص نفسها بفجوات متكيّفة مع ارتفاع السطر (ليست نسبة ثابتة من الصفحة).
       4) صفحة واحدة: أسطر بالأعلى→الأسفل وداخل الصف يسار→يمين (أو العكس لـrtl).
     كل مجموعة تُجمَّع فقاعاتها على حدة فلا تندمج فقاعات مربعين مختلفين. أي فشل ← الرجوع للترتيب الطولي."""
-    global _PANEL_FALLBACK_WARNED
+    global _PANEL_FALLBACK_WARNED, _LAST_ORDER_METHOD
     if not items:
+        _LAST_ORDER_METHOD = "empty"
         return []
     method = "single"
     try:
@@ -1134,11 +1142,13 @@ def group_page_by_panels(items: list[dict], raw: bytes, rtl: bool) -> list[dict]
             else:
                 sentences = group_ocr_lines_into_sentences(items, rtl=rtl)
         print(f"    🧩 ترتيب المربعات: {method}")
+        _LAST_ORDER_METHOD = method
         return sentences
     except Exception as e:
         if not _PANEL_FALLBACK_WARNED:
             _PANEL_FALLBACK_WARNED = True
             print(f"  ⚠️ تعذّر ترتيب المربعات ({type(e).__name__}: {e}) — الرجوع للترتيب الطولي")
+        _LAST_ORDER_METHOD = "fallback-error"
         return group_ocr_lines_into_sentences(items)
 
 def format_ocr_page_text(page_num: int, sentences: list[dict]) -> str:
@@ -1171,7 +1181,7 @@ def _renumber_pages_sequentially(page_json: list[dict]) -> tuple[list[dict], lis
     هو تمامًا (تطبيع بلا أثر فعلي، لا حاجة لفرع شرطي منفصل)."""
     page_json_sorted = sorted(page_json, key=lambda pj: pj["page"])
     renumbered = [
-        {"page": new_num, "sentences": pj["sentences"]}
+        {"page": new_num, "sentences": pj["sentences"], **({"order_method": pj["order_method"]} if pj.get("order_method") else {})}
         for new_num, pj in enumerate(page_json_sorted, start=1)
     ]
     page_texts = [format_ocr_page_text(pj["page"], pj["sentences"]) for pj in renumbered]
@@ -1219,12 +1229,16 @@ async def _ocr_handle_page(
     rss_before = _current_rss_mb()
     need_compress = chapter_dir is not None and saved_image_paths is not None
 
+    order_info: dict = {"m": ""}
+
     async def _do_ocr():
         items = await _run_on_ocr_thread(ocr_extract_english_sync, raw, page_num)
         if OCR_PAGE_LAYOUT == "webtoon":
             sentences = group_ocr_lines_into_sentences(items)
+            order_info["m"] = "webtoon"
         else:
             sentences = group_page_by_panels(items, raw, rtl=(OCR_PAGE_LAYOUT == "paged_rtl"))
+            order_info["m"] = _LAST_ORDER_METHOD
         # [مُعدَّل] استبعاد بنود sfx بعد التجميع (على نص البند المُدمَج
         # كاملًا) — لا قبل التجميع، كي لا تُسقَط كلمة قصيرة حقيقية قبل أن
         # تندمج مع بقية جملتها. راجع _filter_sfx_sentences.
@@ -1265,7 +1279,7 @@ async def _ocr_handle_page(
     else:
         sentences, sfx_dropped = ocr_result
         page_texts.append(format_ocr_page_text(page_num, sentences))
-        page_json.append({"page": page_num, "sentences": sentences})
+        page_json.append({"page": page_num, "sentences": sentences, "order_method": order_info["m"]})
         rss_after = _current_rss_mb()
         rss_note = (
             f" | RSS: {rss_before:.0f}→{rss_after:.0f}MB (Δ{rss_after - rss_before:+.0f})"
@@ -1374,6 +1388,7 @@ async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int,
         "source_url": chapter_url,
         "chapter_slug": f"{manga_id}__ch-{chapter_num}",
         "manga_title": title,
+        "page_layout": OCR_PAGE_LAYOUT,
         "text": "\n\n".join(page_texts),
         "pages": page_json,
     }
@@ -1492,6 +1507,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
         "source_url": chapter_url,
         "chapter_slug": f"{manga_id}__ch-{chapter_num}",
         "manga_title": title,
+        "page_layout": OCR_PAGE_LAYOUT,
         "text": "\n\n".join(page_texts),
         "pages": page_json,
         "image_paths": saved_image_paths,
@@ -1548,6 +1564,7 @@ async def _ocr_http_chapter_producer(
             "source_url": url,
             "chapter_slug": f"{manga_id}__ch-{chapter_num}",
             "manga_title": title,
+            "page_layout": OCR_PAGE_LAYOUT,
         }))
 
 
