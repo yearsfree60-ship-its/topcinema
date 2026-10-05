@@ -1,0 +1,428 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "108",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "scanlations",
+          "confidence": 0.975,
+          "text_ar": "ترجمة الفريق"
+        },
+        {
+          "text": "PLEASE SUPPORT THE AUTHOR/ARTIST BY BUYINGTHEIR WORK!",
+          "confidence": 0.944,
+          "text_ar": "يرجى دعم المؤلف/الفنان بشراء أعمالهم!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "ARE YOU FEELING WELL? MAYBE I SHOULD CALL HUOXIANG ZHENGQI.",
+          "confidence": 0.95,
+          "text_ar": "هل أنت بخير؟ ربما عليّ إحضار دواء \"هوشيانغ تشنغتشي\" لك."
+        },
+        {
+          "text": "WHAT HAPPENED TO DAD?",
+          "confidence": 0.935,
+          "text_ar": "ما الذي أصاب أبي؟"
+        },
+        {
+          "text": "OH,IT'S NOTHING, JUST THE SICKNESS GETTING A LITTLE WORSE LATELY.",
+          "confidence": 0.966,
+          "text_ar": "أوه، لا شيء، مجرد أن المرض يزداد سوءًا قليلًا في الآونة الأخيرة."
+        },
+        {
+          "text": "IMGOING TO BELEAVING SCHOOL AND ENTERING T LNIVERSITY VERYSOONO IFDAD'S CONDITION'S REMAIN THESAME, HE WILL GET MORE ILLDAYBYDAY",
+          "confidence": 0.294,
+          "text_ar": "سأترك المدرسة وألتحق بالجامعة قريبًا جدًا، وإذا بقيت حالة أبي على ما هي عليه، فسوف يزداد مرضه يومًا بعد يوم."
+        },
+        {
+          "text": "INTHEPEACH BLOSSOMCOLLECTION, THERE'SASKILLWHICH GIVESDETAILEDAND COMPILEDINFORMATION FORINTRACTABLE BLOSSOMPOINTS. A",
+          "confidence": 0.57,
+          "text_ar": "في \"مجموعة زهر الخوخ\"، توجد مهارة توفر معلومات مفصلة ومجمعة حول نقاط الزهر المستعصية."
+        },
+        {
+          "text": "MARCHINGMEAL MANCHU FEAST",
+          "confidence": 0.957,
+          "text_ar": "وليمة المانشو الإمبراطورية"
+        },
+        {
+          "text": "COMPILATIONOFINTRACTABLEDISEASES",
+          "confidence": 0.982,
+          "text_ar": "تجميع الأمراض المستعصية"
+        },
+        {
+          "text": "DIVINATION GEM IDENTIFICATION",
+          "confidence": 0.989,
+          "text_ar": "تحديد الأحجار الكريمة"
+        },
+        {
+          "text": "NOW THEN, LET'S SEB",
+          "confidence": 0.789,
+          "text_ar": "حسنًا، لنرَ الآن."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "OPEN",
+          "confidence": 0.971,
+          "text_ar": "فتح"
+        },
+        {
+          "text": "CYCLIC COLD SWEAT",
+          "confidence": 0.96,
+          "text_ar": "عرق بارد دوري"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "DAD, I KNOW A CHINESE DOCTOR WHO MAY BE ABLE TO CURE YOUR DISEASE.",
+          "confidence": 0.905,
+          "text_ar": "أبي، أنا أعرف طبيبًا صينيًا قد يتمكن من علاج مرضك."
+        },
+        {
+          "text": "DON'TBE KIDDING ME, I HAVE BEEN SICK FOR OVER TEN YEARS NOW.",
+          "confidence": 0.955,
+          "text_ar": "لا تمزح معي، أنا مريض منذ أكثر من عشر سنوات الآن."
+        },
+        {
+          "text": "THE DISEASE FROM WHICH YOU'RE GOING THROUGH IS CALLED CYCLIC COLD SWEAT SYNDROME. I WILL GIVE YOU A PRESCRIPTION, CONTINUE IT FOR A WEEK.",
+          "confidence": 0.913,
+          "text_ar": "المرض الذي تعاني منه يسمى متلازمة العرق البارد الدوري. سأعطيك وصفة طبية، استمر عليها لمدة أسبوع."
+        },
+        {
+          "text": "REALLY?!",
+          "confidence": 0.991,
+          "text_ar": "حقًا؟!"
+        },
+        {
+          "text": "WHAT DOES LI HAIDONG MEAN FOR ME TO ACT IN THIS SITLATION.",
+          "confidence": 0.936,
+          "text_ar": "ما الذي يقصده لي هايدونغ بطلبي للتصرف في هذا الموقف؟"
+        },
+        {
+          "text": "THE PRESC- RIPTIONIS ALREADY MADE,AND MONEY WILL BE PAID...",
+          "confidence": 0.943,
+          "text_ar": "الوصفة جاهزة، وسيتم دفع المال..."
+        },
+        {
+          "text": "CAN'T FIGURE IT OUT. h",
+          "confidence": 0.431,
+          "text_ar": "لا أستطيع فهم الأمر."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "A WEEK LATER",
+          "confidence": 0.965,
+          "text_ar": "بعد أسبوع"
+        },
+        {
+          "text": "IT'S REALLY GONE!",
+          "confidence": 0.948,
+          "text_ar": "لقد اختفى حقًا!"
+        },
+        {
+          "text": "SON, YOU REALLY INTRODUCED ME TO THE INCARNATION OF HUA TUO*!",
+          "confidence": 0.908,
+          "text_ar": "يا بني، لقد عرفتني حقًا على تجسيد لـ \"هوا تو\"!"
+        },
+        {
+          "text": "WE HAVE TO THANK HIM PROPERLY!",
+          "confidence": 0.96,
+          "text_ar": "يجب أن نشكره بشكل لائق!"
+        },
+        {
+          "text": "UHH, OK.",
+          "confidence": 0.933,
+          "text_ar": "آه، حسنًا."
+        },
+        {
+          "text": "HOW ABOUT GIFTING A PENNANT?",
+          "confidence": 0.951,
+          "text_ar": "ما رأيك في إهدائه لوحة شكر؟"
+        },
+        {
+          "text": "IF I TELL HIM THAT I WAS THE ONE WHO CURED HIS DISEASE,",
+          "confidence": 0.959,
+          "text_ar": "لو أخبرته أنني أنا من عالج مرضه،"
+        },
+        {
+          "text": "HIS CHIN MIGHT DROP.",
+          "confidence": 0.969,
+          "text_ar": "فقد يسقط فكه من الذهول."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "THE COLLEGE ENTRANCE EXAMS IS A SYSTEM FOR SELECTING THE ELITES, WHICH IS A NIGHTMARE FOR MOST STUDENTS",
+          "confidence": 0.933,
+          "text_ar": "امتحانات القبول الجامعي هي نظام لاختيار النخبة، وهو كابوس لمعظم الطلاب."
+        },
+        {
+          "text": "BUT FOR OUR LIN FENG, GETTING A FULL SCORE IN THIS EXAM IS AS EASY AS DRINKING WATER.",
+          "confidence": 0.913,
+          "text_ar": "لكن بالنسبة لـ لين فينغ، الحصول على الدرجة الكاملة في هذا الامتحان سهل كشرب الماء."
+        },
+        {
+          "text": "WHICH IS WHY, THIS DOESN'T TAKE TOP PRIORITY IN LIN FENG'S EYES.",
+          "confidence": 0.932,
+          "text_ar": "ولهذا السبب، لا يعتبر هذا الأمر أولوية قصوى في نظر لين فينغ."
+        },
+        {
+          "text": "WHAT'S IMPORTANT IS TO COMPLETE THE TASKS GIVEN BY PEACH BLOSSOM COLLECTION AND FINE THE REMAINING NINE BEAUTIES",
+          "confidence": 0.918,
+          "text_ar": "المهم هو إكمال المهام التي تفرضها \"مجموعة زهر الخوخ\" والعثور على الجميلات التسع المتبقيات."
+        },
+        {
+          "text": "FATHER SAID WE HAVE TO GO BACK TO THE LIN FAMILY IN YUNLING, YUNNAN TO RECOGNIZE OUR ANCESTORS.",
+          "confidence": 0.918,
+          "text_ar": "قال والدي إنه يجب علينا العودة إلى عائلة لين في يونلينغ، يوننان للتعريف بأصولنا."
+        },
+        {
+          "text": "SO,LIN FENG GOES ON A JOURNEY RIGHT AFTER THE COLLEGE EXAMINATIONS.",
+          "confidence": 0.943,
+          "text_ar": "لذا، انطلق لين فينغ في رحلة مباشرة بعد امتحانات الجامعة."
+        },
+        {
+          "text": "IT'S BETTER TO TAKE THIS OPPORTUNITY AND WHO KNOWS, MAYBE I COULD FIND ONE OF THE BEALTIES.",
+          "confidence": 0.952,
+          "text_ar": "من الأفضل استغلال هذه الفرصة، ومن يدري، ربما أجد إحدى الجميلات."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "BUT IT WAS FOR NOTHING",
+          "confidence": 0.948,
+          "text_ar": "لكن كل ذلك كان بلا جدوى."
+        },
+        {
+          "text": "EVEN AFTER HALF MONTH LATER, HE GOT NOTHING",
+          "confidence": 0.95,
+          "text_ar": "حتى بعد مرور نصف شهر، لم يحصل على شيء."
+        },
+        {
+          "text": "IT'S VERY CLOSE TO TENGCHONG.",
+          "confidence": 0.964,
+          "text_ar": "إننا قريبون جدًا من تينغتشونغ."
+        },
+        {
+          "text": "WHY DON'T I GO AND SEE SHI TIANZE, DON'T KNOW HOW HE IS NOW.",
+          "confidence": 0.919,
+          "text_ar": "لماذا لا أذهب لرؤية شي تيانزي؟ لا أعرف كيف حاله الآن."
+        },
+        {
+          "text": "MY LADY,",
+          "confidence": 0.942,
+          "text_ar": "سيدتي،"
+        },
+        {
+          "text": "TO COME TO TENGCHONG I COULD HAVE SENT A CAR, WHY USE A TRAIN INSTEAD?",
+          "confidence": 0.893,
+          "text_ar": "للقدوم إلى تينغتشونغ كان بإمكاني إرسال سيارة، لماذا استخدمتِ القطار بدلًا من ذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "SUCH APITY",
+          "confidence": 0.876,
+          "text_ar": "يا للأسف."
+        },
+        {
+          "text": "I DIDN'T WANT TO BE PICKED UP BY You.",
+          "confidence": 0.821,
+          "text_ar": "لم أرغب في أن يقلني أحد من قبلك."
+        },
+        {
+          "text": "BUSA",
+          "confidence": 0.342,
+          "text_ar": "بوسا"
+        },
+        {
+          "text": "THAT CAN'T DO, I SHOULD FULFILL MY BOSS'S REQUEST.",
+          "confidence": 0.917,
+          "text_ar": "هذا لا يجوز، يجب أن أنفذ طلب رئيسي."
+        },
+        {
+          "text": "SUCH BEALTIFUL HAIR ARE GOING TO FALL OUT.",
+          "confidence": 0.927,
+          "text_ar": "هذا الشعر الجميل سيتساقط."
+        },
+        {
+          "text": "NEUROLOGICAL HAIR DISORDER",
+          "confidence": 0.972,
+          "text_ar": "اضطراب تساقط الشعر العصبي."
+        },
+        {
+          "text": "You DARE TO LOOK,",
+          "confidence": 0.7,
+          "text_ar": "أتجرؤ على النظر؟"
+        },
+        {
+          "text": "YOUNGMAN, YOU'RE HERE TO LOOK FOR WORK AFTER GRADUATION?",
+          "confidence": 0.935,
+          "text_ar": "أيها الشاب، هل أنت هنا للبحث عن عمل بعد التخرج؟"
+        },
+        {
+          "text": "AT MAI TAILI!",
+          "confidence": 0.966,
+          "text_ar": "في ماي تايلى!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "MY COMPANY HAS A HANDYMAN POSITION OPEN, DO YOU WANT TO TRY?",
+          "confidence": 0.929,
+          "text_ar": "شركتي لديها وظيفة شاغرة كعامل صيانة، هل تريد التجربة؟"
+        },
+        {
+          "text": "NOWADAYS,IT'S HARD TO FINO A JOB IN THESE ROUGH SITUATIONS.",
+          "confidence": 0.886,
+          "text_ar": "في هذه الأيام، من الصعب العثور على وظيفة في ظل هذه الظروف الصعبة."
+        },
+        {
+          "text": "500O/MONTH SALARY.",
+          "confidence": 0.919,
+          "text_ar": "راتب 5000 شهريًا."
+        },
+        {
+          "text": "BRAT, DON'T YOU KNOW WHAT'S GOOD OR BAD FOR YOU!",
+          "confidence": 0.899,
+          "text_ar": "أيها الأحمق، ألا تعرف ما هو خيرك من شرك!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "TIME FORCHAPTER NOTES!",
+          "confidence": 0.957,
+          "text_ar": "حان وقت ملاحظات الفصل!"
+        },
+        {
+          "text": "SO IN THE FIRST PAGE, THERE WERE MANY SKILLS, SOME I",
+          "confidence": 0.93,
+          "text_ar": "في الصفحة الأولى، كانت هناك العديد من المهارات، بعضها"
+        },
+        {
+          "text": "COULD TRANSLATE AND OTHERS I COULDN'T, SO WHAT WERE",
+          "confidence": 0.955,
+          "text_ar": "استطعت ترجمته والبعض الآخر لم أستطع، فما هي"
+        },
+        {
+          "text": "THOSE IN THE SKILLS IN TH LIST? WELL, THEY WERE ALL SKILLS",
+          "confidence": 0.958,
+          "text_ar": "تلك المهارات الموجودة في القائمة؟ حسنًا، كانت كلها مهارات"
+        },
+        {
+          "text": "THAT LIN FENG'S ALREADY BOUGHT, SUCH AS THE GEM",
+          "confidence": 0.958,
+          "text_ar": "اشتراها لين فينغ بالفعل، مثل تحديد"
+        },
+        {
+          "text": "IDENTIFICATION AND LAW OF THE JUNGLE. THERE WERE",
+          "confidence": 0.981,
+          "text_ar": "الأحجار الكريمة وقانون الغابة. كانت هناك"
+        },
+        {
+          "text": "DIFFERENT NAMES BUT I'M SURE THEY MAY BE SKILLS YOU",
+          "confidence": 0.954,
+          "text_ar": "أسماء مختلفة لكنني متأكد أنها قد تكون مهارات ربما"
+        },
+        {
+          "text": "MIGHT'VE HEARD BUT IN DIFFERENT NAMES.",
+          "confidence": 0.978,
+          "text_ar": "سمعت عنها ولكن بأسماء مختلفة."
+        },
+        {
+          "text": "THE OTHER THING IS THE\"HUA TUO\", HE WAS AN OLD",
+          "confidence": 0.943,
+          "text_ar": "شيء آخر هو \"هوا تو\"، لقد كان طبيبًا قديمًا"
+        },
+        {
+          "text": "DOCTOR (VERY ANCIENT) WHO USED SIMPLE METHODS SUCH",
+          "confidence": 0.961,
+          "text_ar": "(قديم جدًا) استخدم أساليب بسيطة مثل"
+        },
+        {
+          "text": "AS FEW PRESCRIPTIONS AND ACUPUNTURES FOR PATIENTS",
+          "confidence": 0.975,
+          "text_ar": "وصفات قليلة والوخز بالإبر للمرضى"
+        },
+        {
+          "text": "THAT CAME TO HIM. SEARCH FOR MORE.",
+          "confidence": 0.969,
+          "text_ar": "الذين جاؤوا إليه. ابحثوا للمزيد."
+        },
+        {
+          "text": "ANOTHER THING IS THAT I'VE GOT A NEWS AND IT'S ON THE",
+          "confidence": 0.95,
+          "text_ar": "شيء آخر، لدي خبر وهو موجود في"
+        },
+        {
+          "text": "NEXT PAGE.",
+          "confidence": 0.982,
+          "text_ar": "الصفحة التالية."
+        },
+        {
+          "text": "WELL, SEE YOU ALL AT THE NEXT CHAPTER AND BE SAFE",
+          "confidence": 0.937,
+          "text_ar": "حسنًا، أراكم جميعًا في الفصل القادم وكونوا بخير"
+        },
+        {
+          "text": "EVERYONE!",
+          "confidence": 0.996,
+          "text_ar": "جميعًا!"
+        },
+        {
+          "text": "-HUZBI!",
+          "confidence": 0.994,
+          "text_ar": "-هوزبي!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "SCANLATIONS HUZBI SA DISCORDI NOW HAS",
+          "confidence": 0.877,
+          "text_ar": "ترجمة هوزبي على ديسكورد متاحة الآن"
+        },
+        {
+          "text": "GETNOTIFIED ABOUTNEW CHAPTERS!",
+          "confidence": 0.964,
+          "text_ar": "احصل على إشعارات بالفصول الجديدة!"
+        }
+      ]
+    }
+  ]
+}
