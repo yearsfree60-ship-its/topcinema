@@ -2134,6 +2134,9 @@ def merge_manifest_dict(base: dict, results: list) -> dict:
     return manifest
 
 
+# [تسريع تجهيز فرع الإخراج] الـworktree يُجهَّز الآن بـpartial clone + sparse-checkout (راجع خطوة الـworkflow):
+# معظم ملفات الفرع غير موجودة على القرص عمدًا (علامة skip-worktree). بدون "--sparse" يرفض git add بصمت
+# إضافة أي ملف جديد/معاد كتابته خارج تعريف sparse (فصل جديد لا يُدفَع). العلامة بلا أثر في مستودع عادي.
 def _commit_and_push_sync(
     commit_dir: str, branch: str, message: str, allowed_paths: list[str], max_attempts: int = 5
 ) -> tuple[bool, str]:
@@ -2160,7 +2163,7 @@ def _commit_and_push_sync(
     # ضار فعليًا، لكن الأنظف تفاديه.
     add_paths = list(dict.fromkeys(f"{git_rel_output}/{p}" for p in allowed_paths))
 
-    add = _run_git(["add", "--"] + add_paths, commit_dir)
+    add = _run_git(["add", "--sparse", "--"] + add_paths, commit_dir)
     if add.returncode != 0:
         return False, f"git add فشل: {add.stderr.strip()[:200]}"
     diff = _run_git(["diff", "--cached", "--quiet"], commit_dir)
@@ -2181,7 +2184,7 @@ def _commit_and_push_sync(
         # اعتبارها "محذوفة" ودفع حذفها بالخطأ.
         _run_git(["fetch", "origin", branch], commit_dir)
         _run_git(["reset", f"origin/{branch}"], commit_dir)
-        _run_git(["add", "--"] + add_paths, commit_dir)
+        _run_git(["add", "--sparse", "--"] + add_paths, commit_dir)
         diff2 = _run_git(["diff", "--cached", "--quiet"], commit_dir)
         if diff2.returncode == 0:
             return True, "أصبحت التغييرات مطابقة لأحدث نسخة على البعيد أصلًا"
