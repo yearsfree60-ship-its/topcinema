@@ -253,7 +253,7 @@ jobs:
           # [إصلاح run #280] curl_cffi: بصمة TLS مطابقة لـChrome عند تنزيل صور النطاقات المحمية بكوكي cf_clearance
           pip install --quiet curl_cffi || echo "⚠️ تعذّر تثبيت curl_cffi — سيُستخدم requests العادي"
           sudo apt-get install -y -qq xvfb || true
-          python -m playwright install --with-deps chromium
+          # (Chromium مثبَّت أصلًا بخطوة "متطلبات المتصفح وOCR" أعلاه لهذه الأوضاع — لا إعادة تنزيل)
 
       - name: كاش نماذج PaddleOCR
         if: inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل'
@@ -269,23 +269,39 @@ jobs:
       # على فرع output الحالي بتاريخه الكامل إن وُجد، وإلا تُنشئه فارغًا
       # أول مرة فقط. هذا يضمن عدم حذف أي فصل مضغوط سابقًا مهما حدث.
       - name: تجهيز فرع الإخراج (git worktree)
+        env:
+          RUN_MODE: ${{ inputs.mode }}
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
 
-          # [إصلاح — كان هذا سبب الـ5 دقائق] "git fetch origin" بلا اسم فرع
-          # ولا --depth يجلب تاريخ كل الفروع كاملًا (يكبر مع كل تشغيلة
-          # سابقة تراكمت على فرع output — صور + manifests + commits)، رغم
-          # أن كل ما نحتاجه فعليًا هو آخر نقطة من فرع output فقط (السكربت
-          # يدمج البيانات عبر manifest.json لا عبر تاريخ git). ls-remote
-          # بالأسفل استعلام مباشر عن الريموت، لا يحتاج أي fetch محلي مسبق —
-          # فحُذف الفetch الشامل كليًا، واستُبدل بفetch مستهدَف وسطحي
-          # (--depth=1) لفرع output تحديدًا، وفقط لو كان موجودًا أصلًا.
+          # [تسريع — partial clone + sparse-checkout] "--depth=1" وحده يقلّل التاريخ فقط ولا يقلّل
+          # الملفات: كان يُنزَّل ويُكتَب على القرص كل ما في الفرع (عشرات آلاف الصور + أرشيفات OCR
+          # المتراكمة) في كل تشغيلة — 5+ دقائق ويزداد مع كل فصل. الآن:
+          #  • --filter=blob:none : جلب الأشجار والـcommits فقط، والبايتات عند الطلب فقط.
+          #  • worktree بلا checkout ثم sparse-checkout قبل أول checkout: يُكتَب على القرص فقط ما يقرؤه
+          #    السكربت فعلًا — manifest.json (+ ocr_experiment بلا runs/ بوضع إعادة_ترجمة الذي يقرأ
+          #    text_en.json القديم). التخطي (skip_existing) يقرأ الفهرس من git مباشرة لا من القرص.
+          # الدفع لا يحذف شيئًا: الملفات الغائبة عن القرص بعلامة skip-worktree فلا يعدّها git محذوفة،
+          # والإضافة تستعمل "--sparse" (بدونها يُرفَض إدراج أي فصل جديد بصمت).
           if git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
-            git fetch --depth=1 origin output --quiet
-            git worktree add output-worktree origin/output
-            git -C output-worktree checkout -B output origin/output
+            if git fetch --depth=1 --filter=blob:none origin output --quiet; then
+              git worktree add --no-checkout output-worktree origin/output
+              cd output-worktree
+              if [ "$RUN_MODE" = "إعادة_ترجمة" ]; then
+                git sparse-checkout set --no-cone '/output/manifest.json' '/output/ocr_experiment/' '!/output/ocr_experiment/runs/'
+              else
+                git sparse-checkout set --no-cone '/output/manifest.json'
+              fi
+              git checkout -q -B output origin/output
+              cd ..
+            else
+              echo "⚠️ تعذّر الجلب الجزئي — الرجوع للجلب الكامل القديم (أبطأ)"
+              git fetch --depth=1 origin output --quiet
+              git worktree add output-worktree origin/output
+              git -C output-worktree checkout -B output origin/output
+            fi
           else
             git worktree add --detach output-worktree
             git -C output-worktree checkout --orphan output
@@ -436,7 +452,7 @@ jobs:
           # الخطوة فعليًا، بصرف النظر عن حالة الفهرس بعد أي reset، وبلا
           # الحاجة لتعداد مسارات هذه التشغيلة يدويًا (بعكس compress_chapters.py
           # الذي يملك بيانات كافية لبناء whitelist دقيق فاستُخدم هناك).
-          git add --ignore-removal -- output || true
+          git add --sparse --ignore-removal -- output || true
           if git diff --cached --quiet; then
             echo "لا تغييرات إضافية غير مدفوعة — كل شيء محفوظ أصلًا"
           else
@@ -455,7 +471,7 @@ jobs:
               git reset origin/output
               # نفس --ignore-removal هنا أيضًا — هذا بالضبط الموضع الذي كان
               # الخلل الأصلي يظهر فيه (إضافة كاملة فور reset).
-              git add --ignore-removal -- output || true
+              git add --sparse --ignore-removal -- output || true
               if ! git diff --cached --quiet; then
                 git commit -m "دفع احتياطي نهائي - $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
               fi
