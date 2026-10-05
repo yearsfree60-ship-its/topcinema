@@ -682,25 +682,114 @@ OCR_CLUSTER_X_OVERLAP_TOLERANCE = int(os.environ.get("OCR_CLUSTER_X_OVERLAP_TOLE
 OCR_SFX_MIN_LETTERS = int(os.environ.get("OCR_SFX_MIN_LETTERS", "3"))
 
 
-def _filter_sfx_sentences(sentences: list[dict]) -> tuple[list[dict], int]:
-    """[مُعدَّل] يُستبعد كل بند مُجمَّع (بعد group_ocr_lines_into_sentences)
-    إن كان عدد الأحرف الأبجدية بنص البند الكامل (بعد دمج كل أسطره) أقل من
-    OCR_SFX_MIN_LETTERS — يُعامَل كمؤثر صوتي/رمز، لا نص حقيقي. يعمل هنا
-    (بعد التجميع) لا قبله، كي لا يُسقط كلمة قصيرة حقيقية قبل أن تندمج مع
-    بقية جملتها ضمن نفس البند. يُعيد (البنود المتبقية، عدد المُستبعَد) —
-    العدد يُستخدَم لطباعة إحصاء فقط، لا لأي منطق لاحق."""
+# [جديد] مستوى فلترة المؤثرات الصوتية (SFX) — OCR_SFX_FILTER (من مدخل sfx_filter بالـworkflow):
+#   "off"      أساسي: الحذف القديم فقط (أقل من OCR_SFX_MIN_LETTERS حروف).
+#   "balanced" (افتراضي): + كلمات محاكاة صوت واضحة (BOOM, THUD…)، + نص كبير الحجم خارج الفقاعة،
+#              + كلمة مكرَّرة الحروف (GRRR, AAAH…) خارج الفقاعة أو كبيرة، + كلمات صوتية ملتبسة (CRACK, CLICK…) خارج الفقاعة.
+#   "strict"   + أي نص أكبر من المعتاد بـ1.5× خارج الفقاعة، + كلمة واحدة بعلامة تعجب كبيرة الحروف خارج الفقاعة، + ضحك مكرَّر.
+# "خارج الفقاعة" = البكسلات المحيطة بصندوق النص ليست بيضاء غالبًا (نص فوق الرسم/التَّظليل، بعكس الفقاعة البيضاء).
+_raw_sfx = os.environ.get("OCR_SFX_FILTER", "balanced").strip().lower()
+OCR_SFX_FILTER = ("off" if _raw_sfx in ("off", "أساسي_فقط", "اساسي_فقط") else
+                  "strict" if _raw_sfx in ("strict", "صارم") else "balanced")
+OCR_SFX_BUBBLE_WHITE_FRAC = float(os.environ.get("OCR_SFX_BUBBLE_WHITE_FRAC", "0.70"))
+OCR_SFX_BIG_RATIO = float(os.environ.get("OCR_SFX_BIG_RATIO", "2.0"))
+_SFX_STRONG = {
+    "boom", "kaboom", "bang", "thud", "whoosh", "swoosh", "fwoosh", "swish", "slam", "clang", "clank", "thump",
+    "splash", "splat", "rumble", "vroom", "zap", "zoom", "wham", "pow", "bam", "smack", "thwack", "whack",
+    "crash", "crunch", "sizzle", "fwip", "swoop", "whirr", "whir", "screech", "creak", "squeak", "rustle",
+    "dokidoki", "doki", "thwip", "kachak", "clack", "plop", "drip", "gulp", "slurp", "gurgle", "kaboom",
+}
+_SFX_WEAK = {"crack", "click", "snap", "knock", "buzz", "beep", "ding", "dong", "tick", "tock", "hiss", "pop",
+             "stomp", "rattle", "bonk", "bump", "flash", "rip", "tear", "chop", "slash", "stab", "punch", "kick"}
+_SFX_LAUGH = re.compile(r"^(?:ha|he|hi|ho|hu|ah|eh|oh|kya|fu|ku|mu)+h?$", re.I)
+
+
+def _sfx_token(text: str) -> str:
+    return re.sub(r"[^a-z]", "", text.lower())
+
+
+def _outside_bubble(gray, bbox, line_h: float) -> bool | None:
+    """True إن كانت حلقة البكسلات حول صندوق النص غير بيضاء غالبًا (نص فوق الرسم)، False داخل فقاعة بيضاء،
+    None إن تعذّر القياس."""
+    import numpy as np
+    try:
+        H, W = gray.shape
+        pad = int(max(4, 0.35 * line_h))
+        x0, y0, x1, y1 = [int(v) for v in bbox]
+        ex0, ey0, ex1, ey1 = max(x0 - pad, 0), max(y0 - pad, 0), min(x1 + pad, W), min(y1 + pad, H)
+        if ex1 - ex0 < 4 or ey1 - ey0 < 4:
+            return None
+        ring = np.ones((ey1 - ey0, ex1 - ex0), dtype=bool)
+        ring[max(y0 - ey0, 0):max(y1 - ey0, 0), max(x0 - ex0, 0):max(x1 - ex0, 0)] = False
+        vals = gray[ey0:ey1, ex0:ex1][ring]
+        if vals.size < 20:
+            return None
+        return float((vals >= 215).mean()) < OCR_SFX_BUBBLE_WHITE_FRAC
+    except Exception:
+        return None
+
+
+def _sfx_reason(s: dict, med_h: float, gray) -> str | None:
+    """سبب اعتبار البند مؤثرًا صوتيًا، أو None للنص الحواري."""
+    text = s["text"]
+    letters = sum(c.isalpha() for c in text)
+    if letters < OCR_SFX_MIN_LETTERS:
+        return "قصير"
+    if OCR_SFX_FILTER == "off":
+        return None
+    words = re.findall(r"[A-Za-z']+", text)
+    tok = _sfx_token(text)
+    single = len(words) == 1
+    h = s.get("_line_h") or 0
+    big = med_h > 0 and h >= OCR_SFX_BIG_RATIO * med_h
+    outside = _outside_bubble(gray, s["_bbox"], h) if (gray is not None and "_bbox" in s) else None
+    out = bool(outside)
+    if single and tok in _SFX_STRONG:
+        return "كلمة صوتية"
+    if single and tok in _SFX_WEAK and (out or big):
+        return "كلمة صوتية (خارج فقاعة)"
+    if big and out:
+        return "كبير خارج فقاعة"
+    if single and re.search(r"(.)\1{2,}", tok) and (out or big):
+        return "حروف مكرَّرة"
+    if OCR_SFX_FILTER == "strict":
+        if out and med_h > 0 and h >= 1.5 * med_h:
+            return "أكبر من المعتاد خارج فقاعة"
+        if single and out and text.strip().endswith("!") and text.strip().upper() == text.strip() and len(tok) <= 10:
+            return "تعجب منفرد خارج فقاعة"
+        if single and _SFX_LAUGH.match(tok) and len(tok) >= 4 and (out or big):
+            return "ضحك مكرَّر"
+    return None
+
+
+def _filter_sfx_sentences(sentences: list[dict], raw: bytes | None = None, med_h: float = 0.0) -> tuple[list[dict], int]:
+    """[مُحسَّن] يستبعد المؤثرات الصوتية نهائيًا (نص وJSON معًا) — لا تصل للملف النهائي ولا لخطوة الترجمة.
+    المعايير بحسب OCR_SFX_FILTER (راجع الشرح أعلاه). raw: بايتات الصفحة لقياس بياض محيط النص (فقاعة/رسم)؛
+    med_h: وسيط ارتفاع أسطر الصفحة. يطبع عيّنة من المستبعَد بسببه لسهولة الضبط. يُزيل الحقول الداخلية (_bbox/_line_h)."""
+    gray = None
+    if raw and OCR_SFX_FILTER != "off":
+        try:
+            import numpy as np
+            gray = np.asarray(Image.open(BytesIO(raw)).convert("L"))
+        except Exception:
+            gray = None
     kept: list[dict] = []
+    dropped_samples: list[str] = []
     dropped = 0
     for s in sentences:
-        letters = sum(c.isalpha() for c in s["text"])
-        if letters < OCR_SFX_MIN_LETTERS:
+        why = _sfx_reason(s, med_h, gray)
+        if why:
             dropped += 1
+            if len(dropped_samples) < 6:
+                dropped_samples.append(f"«{s['text'][:24]}» ({why})")
         else:
-            kept.append(s)
+            kept.append({k: v for k, v in s.items() if not k.startswith("_")})
+    if dropped_samples:
+        print("    🔇 مستبعَد: " + " | ".join(dropped_samples))
     return kept, dropped
 
 
-def group_ocr_lines_into_sentences(items: list[dict]) -> list[dict]:
+def group_ocr_lines_into_sentences(items: list[dict], rtl: bool = False) -> list[dict]:
     """[أُعيد تصميمه بالكامل — إصلاح جذري] يُجمِّع كل الصناديق المنتمية
     فعليًا لنفس الفقاعة/العمود كبند واحد، عبر Union-Find (مكوّنات متصلة)
     بدل مقارنة كل صندوق بـ"آخر صندوق أُضيف" فقط. كل زوج صناديق (i, j) —
@@ -789,14 +878,268 @@ def group_ocr_lines_into_sentences(items: list[dict]) -> list[dict]:
     # بين المجموعات: فرز بـ(أعلى top بالمجموعة، ثم left) — فقاعتان
     # متجاورتان بنفس المستوى تظهران متتاليتين من اليسار لليمين، بدل تشابك
     groups.sort(key=lambda g: (_bbox_top(g[0]["bbox"]), _bbox_left(g[0]["bbox"])))
+    if rtl:
+        groups = _reorder_groups_rows_rtl(groups)
 
     sentences = []
     for g in groups:
         text = " ".join(x["text"] for x in g)
         conf = min(x["confidence"] for x in g)
-        sentences.append({"text": text, "confidence": round(conf, 3)})
+        hs = sorted(max(_bbox_bottom(x["bbox"]) - _bbox_top(x["bbox"]), 1.0) for x in g)
+        sentences.append({
+            "text": text, "confidence": round(conf, 3),
+            # حقول داخلية لتصنيف المؤثرات الصوتية فقط — تُزال في _filter_sfx_sentences ولا تصل للناتج
+            "_bbox": [min(_bbox_left(x["bbox"]) for x in g), min(_bbox_top(x["bbox"]) for x in g),
+                      max(_bbox_right(x["bbox"]) for x in g), max(_bbox_bottom(x["bbox"]) for x in g)],
+            "_line_h": hs[len(hs) // 2],
+        })
     return sentences
 
+
+# ───────────────────────── ترتيب القراءة للمانهوا المقسّمة إلى مربعات (panels) ─────────────────────────
+# [جديد] الويبتون الطولي يُقرأ من الأعلى للأسفل (السلوك الافتراضي أعلاه). صفحات المانهوا المقصوصة لمربعات
+# تحتاج ترتيب قراءة بالمربعات: صف المربعات من الأعلى للأسفل، وداخل الصف من اليسار لليمين (أو العكس للمانغا
+# اليابانية)، وداخل المربع فقاعاته من الأعلى للأسفل. OCR_PAGE_LAYOUT (من مدخل page_layout بالـworkflow):
+#   "webtoon" (افتراضي) | "paged_ltr" مربعات يسار←يمين | "paged_rtl" مربعات يمين←يسار.
+_raw_layout = os.environ.get("OCR_PAGE_LAYOUT", "webtoon").strip().lower()
+if "مربعات" in _raw_layout or _raw_layout.startswith("paged"):
+    OCR_PAGE_LAYOUT = "paged_rtl" if ("يمين" in _raw_layout and "لليسار" in _raw_layout) or _raw_layout.endswith("rtl") else "paged_ltr"
+else:
+    OCR_PAGE_LAYOUT = "webtoon"
+OCR_PANEL_ANALYSIS_WIDTH = int(os.environ.get("OCR_PANEL_ANALYSIS_WIDTH", "500"))   # عرض تصغير الصورة لكشف الفواصل
+OCR_PANEL_MIN_GUTTER_PX = int(os.environ.get("OCR_PANEL_MIN_GUTTER_PX", "4"))        # أدنى سماكة فاصل (على الصورة المصغّرة)
+OCR_PANEL_GUTTER_UNIFORM = float(os.environ.get("OCR_PANEL_GUTTER_UNIFORM", "0.92"))  # نسبة بكسلات الخلفية لاعتبار صف/عمود فاصلًا
+_PANEL_FALLBACK_WARNED = False
+
+
+def _reorder_groups_rows_rtl(groups: list[list[dict]]) -> list[list[dict]]:
+    """داخل المربع: فقاعات بنفس الصف تقريبًا تُرتَّب من اليمين لليسار (المانغا)."""
+    rows: list[list[list[dict]]] = []
+    for g in groups:   # groups مرتّبة مسبقًا بالأعلى
+        top = _bbox_top(g[0]["bbox"])
+        h = max(_bbox_bottom(g[0]["bbox"]) - top, 1)
+        if rows and top <= _bbox_top(rows[-1][0][0]["bbox"]) + 0.6 * h:
+            rows[-1].append(g)
+        else:
+            rows.append([g])
+    out: list[list[dict]] = []
+    for r in rows:
+        out.extend(sorted(r, key=lambda g: -_bbox_left(g[0]["bbox"])))
+    return out
+
+
+def _split_runs(flags, min_len: int, thick_len: int):
+    """يُعيد القطع [start,end) بين الفواصل (flags=True = صف/عمود فاصل). الفاصل الرفيع (min_len..thick_len) يُسقَط،
+    أما الفاصل السميك (≥ thick_len) فيُبقى كقطعة مستقلة لأنه غالبًا مربع فاتح اللون لا فاصل حقيقي."""
+    n = len(flags)
+    gutters, i = [], 0
+    while i < n:
+        if flags[i]:
+            j = i
+            while j < n and flags[j]:
+                j += 1
+            if j - i >= min_len:
+                gutters.append((i, j))
+            i = j
+        else:
+            i += 1
+    if not gutters:
+        return None
+    segs, prev = [], 0
+    for a, b in gutters:
+        if a > prev:
+            segs.append((prev, a))
+        if b - a >= thick_len:
+            segs.append((a, b))
+        prev = b
+    if prev < n:
+        segs.append((prev, n))
+    return segs if len(segs) > 1 or (segs and segs[0] != (0, n)) else None
+
+
+def _long_dark_run_flags(dark, axis: int, min_frac: float, max_thick: int):
+    """صفوف (axis=1) أو أعمدة (axis=0) تحوي خطًّا داكنًا متصلًا بطول ≥ min_frac من الامتداد (حدّ مربع مرسوم).
+    الأشرطة الداكنة السميكة (> max_thick) تُهمَل لأنها محتوى داكن (ليل/ظل) لا حدّ."""
+    import numpy as np
+    m = dark if axis == 1 else dark.T
+    n_lines, length = m.shape
+    need = max(8, int(min_frac * length))
+    flags = np.zeros(n_lines, dtype=bool)
+    for r in range(n_lines):
+        row = m[r]
+        if row.sum() < need:
+            continue
+        padded = np.concatenate(([0], row.astype(np.int8), [0]))
+        d = np.diff(padded)
+        starts, ends = np.where(d == 1)[0], np.where(d == -1)[0]
+        # سدّ فجوات صغيرة (≤2px) بين مقاطع الخط الواحد
+        best, cur_s, cur_e = 0, None, None
+        for st, en in zip(starts, ends):
+            if cur_e is not None and st - cur_e <= 2:
+                cur_e = en
+            else:
+                if cur_s is not None:
+                    best = max(best, cur_e - cur_s)
+                cur_s, cur_e = st, en
+        if cur_s is not None:
+            best = max(best, cur_e - cur_s)
+        flags[r] = best >= need
+    # إسقاط الأشرطة السميكة
+    out, i = flags.copy(), 0
+    while i < n_lines:
+        if flags[i]:
+            j = i
+            while j < n_lines and flags[j]:
+                j += 1
+            if j - i > max_thick:
+                out[i:j] = False
+            i = j
+        else:
+            i += 1
+    return out
+
+
+def _detect_panel_regions(raw: bytes, rtl: bool, mode: str = "gutter") -> tuple[list[tuple[int, int, int, int]], float]:
+    """XY-cut على الصورة، بوضعين:
+    - gutter: فواصل فارغة (صفوف/أعمدة بلون خلفية الصفحة) بين المربعات.
+    - line: حدود مرسومة (خطوط داكنة طويلة) حين تتلاصق المربعات أو يملأ الرسم الصفحة بلا فواصل فارغة.
+    القطع أفقي أولًا ثم رأسي؛ يُرجع المربعات بترتيب القراءة بإحداثيات الصورة الأصلية (مع معامل التكبير)."""
+    import numpy as np
+    img = Image.open(BytesIO(raw)).convert("L")
+    w0, h0 = img.size
+    scale = min(1.0, OCR_PANEL_ANALYSIS_WIDTH / float(w0))
+    small = img.resize((max(1, int(w0 * scale)), max(1, int(h0 * scale))), Image.BILINEAR) if scale < 1.0 else img
+    a = np.asarray(small, dtype=np.int16)
+    H, W = a.shape
+    if mode == "gutter":
+        border = np.concatenate([a[:3, :].ravel(), a[-3:, :].ravel(), a[:, :3].ravel(), a[:, -3:].ravel()])
+        bg = int(np.bincount((border // 8).astype(np.int64)).argmax()) * 8 + 4
+        mask = np.abs(a - bg) <= 12
+    else:
+        mask = a <= 70
+    out: list[tuple[int, int, int, int]] = []
+
+    def split(sub, axis, x_len):
+        if mode == "gutter":
+            flags = list(sub.mean(axis=axis) >= OCR_PANEL_GUTTER_UNIFORM)
+            return _split_runs(flags, OCR_PANEL_MIN_GUTTER_PX, max(30, int(0.10 * x_len)))
+        flags = _long_dark_run_flags(sub, 1 if axis == 1 else 0, 0.60, max(10, int(0.015 * x_len)))
+        # الخط نفسه يُسقَط، وما قبله وبعده قطعتان
+        return _split_runs(list(flags), 1, 10 ** 9)
+
+    def cut(x0, y0, x1, y1, depth):
+        sub = mask[y0:y1, x0:x1]
+        if depth < 8 and sub.size:
+            rows = split(sub, 1, y1 - y0)
+            if rows:
+                for (r0, r1) in rows:
+                    if r1 - r0 >= 12:
+                        cut(x0, y0 + r0, x1, y0 + r1, depth + 1)
+                return
+            cols = split(sub, 0, x1 - x0)
+            if cols:
+                segs = [c for c in cols if c[1] - c[0] >= 12]
+                if rtl:
+                    segs.reverse()
+                for (c0, c1) in segs:
+                    cut(x0 + c0, y0, x0 + c1, y1, depth + 1)
+                return
+        out.append((x0, y0, x1, y1))
+
+    cut(0, 0, W, H, 0)
+    return out, (1.0 / scale)
+
+
+def _xy_cut_items(items: list[dict], rtl: bool, min_gap_y: float, min_gap_x: float) -> list[list[dict]]:
+    """XY-cut على صناديق النص نفسها (احتياط حين لا تُكتشَف فواصل بين المربعات بالصورة): يقطع بفجوات فارغة
+    في إسقاط y ثم x، ويعيد مجموعات صناديق بترتيب القراءة."""
+    def split(vals, gap):   # vals: [(lo, hi, idx)] → مجموعات متتالية
+        vals = sorted(vals)
+        groups, cur, cur_hi = [], [vals[0]], vals[0][1]
+        for v in vals[1:]:
+            if v[0] - cur_hi >= gap:
+                groups.append(cur)
+                cur, cur_hi = [v], v[1]
+            else:
+                cur.append(v)
+                cur_hi = max(cur_hi, v[1])
+        groups.append(cur)
+        return groups
+
+    def rec(idxs, depth):
+        if len(idxs) <= 1 or depth > 8:
+            return [idxs]
+        ys = split([(_bbox_top(items[i]["bbox"]), _bbox_bottom(items[i]["bbox"]), i) for i in idxs], min_gap_y)
+        if len(ys) > 1:
+            return [g for grp in ys for g in rec([v[2] for v in grp], depth + 1)]
+        xs = split([(_bbox_left(items[i]["bbox"]), _bbox_right(items[i]["bbox"]), i) for i in idxs], min_gap_x)
+        if len(xs) > 1:
+            if rtl:
+                xs.reverse()
+            return [g for grp in xs for g in rec([v[2] for v in grp], depth + 1)]
+        return [idxs]
+
+    return [[items[i] for i in grp] for grp in rec(list(range(len(items))), 0)]
+
+
+def _assign_and_group(items: list[dict], regions, up: float, rtl: bool) -> list[dict]:
+    buckets: list[list[dict]] = [[] for _ in regions]
+    for it in items:
+        cx = (_bbox_left(it["bbox"]) + _bbox_right(it["bbox"])) / 2 / up
+        cy = (_bbox_top(it["bbox"]) + _bbox_bottom(it["bbox"])) / 2 / up
+        best, best_d = 0, None
+        for k, (x0, y0, x1, y1) in enumerate(regions):
+            dx = max(x0 - cx, 0, cx - x1)
+            dy = max(y0 - cy, 0, cy - y1)
+            d = dx * dx + dy * dy
+            if best_d is None or d < best_d:
+                best, best_d = k, d
+                if d == 0:
+                    break
+        buckets[best].append(it)
+    sentences: list[dict] = []
+    for b in buckets:
+        if b:
+            sentences.extend(group_ocr_lines_into_sentences(b, rtl=rtl))
+    return sentences
+
+
+def group_page_by_panels(items: list[dict], raw: bytes, rtl: bool) -> list[dict]:
+    """بديل group_ocr_lines_into_sentences للمانهوا المقصوصة لمربعات. مراحل بالترتيب، وتتوقف عند أول مرحلة
+    تُنتج ≥ 2 مربعات/مجموعات:
+      1) فواصل فارغة بين المربعات (الحالة الشائعة).
+      2) حدود مرسومة (خطوط داكنة طويلة) — للمربعات المتلاصقة أو الرسم الممتد بلا فواصل فارغة.
+      3) XY-cut على صناديق النص نفسها بفجوات متكيّفة مع ارتفاع السطر (ليست نسبة ثابتة من الصفحة).
+      4) صفحة واحدة: أسطر بالأعلى→الأسفل وداخل الصف يسار→يمين (أو العكس لـrtl).
+    كل مجموعة تُجمَّع فقاعاتها على حدة فلا تندمج فقاعات مربعين مختلفين. أي فشل ← الرجوع للترتيب الطولي."""
+    global _PANEL_FALLBACK_WARNED
+    if not items:
+        return []
+    method = "single"
+    try:
+        sentences = None
+        for mode in ("gutter", "line"):
+            regions, up = _detect_panel_regions(raw, rtl, mode)
+            if len(regions) >= 2:
+                sentences, method = _assign_and_group(items, regions, up, rtl), f"{mode}:{len(regions)}"
+                break
+        if sentences is None:
+            heights = sorted(max(_bbox_bottom(i["bbox"]) - _bbox_top(i["bbox"]), 1.0) for i in items)
+            med_h = heights[len(heights) // 2]
+            groups = _xy_cut_items(items, rtl, min_gap_y=max(12.0, 1.3 * med_h), min_gap_x=max(12.0, 1.5 * med_h))
+            if len(groups) >= 2:
+                sentences, method = [], f"boxes:{len(groups)}"
+                for g in groups:
+                    sentences.extend(group_ocr_lines_into_sentences(g, rtl=rtl))
+            else:
+                sentences = group_ocr_lines_into_sentences(items, rtl=rtl)
+        print(f"    🧩 ترتيب المربعات: {method}")
+        return sentences
+    except Exception as e:
+        if not _PANEL_FALLBACK_WARNED:
+            _PANEL_FALLBACK_WARNED = True
+            print(f"  ⚠️ تعذّر ترتيب المربعات ({type(e).__name__}: {e}) — الرجوع للترتيب الطولي")
+        return group_ocr_lines_into_sentences(items)
 
 def format_ocr_page_text(page_num: int, sentences: list[dict]) -> str:
     """نفس بنية ملف الترجمة النموذجي المرجعي: 'Page NNN' ثم 'NNN-M. <text>'.
@@ -846,7 +1189,6 @@ async def _ocr_handle_page(
     pages_since_rebuild: int,
     saved_image_paths: list | None = None,
     chapter_dir: Path | None = None,
-    size_stats: dict | None = None,
 ) -> int:
     """[جديد — بند (1)] معالجة OCR لصفحة واحدة جاهزة (raw bytes مُنزَّلة
     مسبقًا)، مُستخرَجة كدالة مشتركة يستدعيها كل من مسار HTTP متعدد الفصول
@@ -879,11 +1221,16 @@ async def _ocr_handle_page(
 
     async def _do_ocr():
         items = await _run_on_ocr_thread(ocr_extract_english_sync, raw, page_num)
-        sentences = group_ocr_lines_into_sentences(items)
+        if OCR_PAGE_LAYOUT == "webtoon":
+            sentences = group_ocr_lines_into_sentences(items)
+        else:
+            sentences = group_page_by_panels(items, raw, rtl=(OCR_PAGE_LAYOUT == "paged_rtl"))
         # [مُعدَّل] استبعاد بنود sfx بعد التجميع (على نص البند المُدمَج
         # كاملًا) — لا قبل التجميع، كي لا تُسقَط كلمة قصيرة حقيقية قبل أن
         # تندمج مع بقية جملتها. راجع _filter_sfx_sentences.
-        return _filter_sfx_sentences(sentences)
+        hs = sorted(max(_bbox_bottom(i["bbox"]) - _bbox_top(i["bbox"]), 1.0) for i in items) if items else []
+        med_h = hs[len(hs) // 2] if hs else 0.0
+        return await asyncio.to_thread(_filter_sfx_sentences, sentences, raw, med_h)
 
     # [جديد — أداء، وضع الإنتاج الكامل] OCR والضغط تحويلان مستقلّان تمامًا
     # على نفس raw — لا اعتماد لأحدهما على الآخر. قبل هذا التعديل كانا
@@ -935,9 +1282,6 @@ async def _ocr_handle_page(
                 filename = f"{page_num:03d}.{IMG_FORMAT}"
                 (chapter_dir / filename).write_bytes(compress_result)
                 saved_image_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
-                if size_stats is not None:
-                    # مفتاح = رقم الصفحة: إعادة المحاولة لنفس الصفحة تستبدل القياس ولا تضاعفه
-                    size_stats[page_num] = (len(raw), len(compress_result))
                 print(f"  🗜️ {label} ضغط صفحة {page_num}/{total_pages} ({len(compress_result)} بايت)")
             except Exception as e:
                 print(f"  ⚠️ فشل حفظ الصورة المضغوطة لـ{label} صفحة {page_num}: {e}")
@@ -1068,7 +1412,6 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     page_texts: list[str] = []
     page_json: list[dict] = []
     saved_image_paths: list[str] = []
-    size_stats: dict[int, tuple[int, int]] = {}   # صفحة -> (حجم الأصل، حجم المضغوط) بالبايت
     total_pages = len(image_urls)
     label = f"[{index}/{total}]"
 
@@ -1097,7 +1440,6 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
             pages_since_rebuild = await _ocr_handle_page(
                 label, i, raw, reason, total_pages, page_texts, page_json, pages_since_rebuild,
                 saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
-                size_stats=size_stats,
             )
         return pages_since_rebuild
 
@@ -1115,7 +1457,6 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
                 pages_since_rebuild = await _ocr_handle_page(
                     f"{label} (إعادة محاولة)", i, raw, reason, total_pages, page_texts, page_json,
                     pages_since_rebuild, saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
-                    size_stats=size_stats,
                 )
             else:
                 print(f"  ❌ {label} صفحة {i}/{total_pages}: تعذّر تحميلها نهائيًا حتى بعد إعادة المحاولة: {reason}")
@@ -1145,12 +1486,6 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
 
     page_json, page_texts = _renumber_pages_sequentially(page_json)
 
-    original_bytes = sum(o for o, _c in size_stats.values())
-    compressed_bytes = sum(c for _o, c in size_stats.values())
-    if original_bytes:
-        print(f"  📦 {label} حجم الفصل: {original_bytes/1048576:.2f}م.ب ← {compressed_bytes/1048576:.2f}م.ب "
-              f"(توفير {100 * (1 - compressed_bytes / original_bytes):.0f}%)")
-
     return {
         "manga_id": manga_id,
         "chapter_num": chapter_num,
@@ -1160,8 +1495,6 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
         "text": "\n\n".join(page_texts),
         "pages": page_json,
         "image_paths": saved_image_paths,
-        "original_bytes": original_bytes,
-        "compressed_bytes": compressed_bytes,
     }
 
 
