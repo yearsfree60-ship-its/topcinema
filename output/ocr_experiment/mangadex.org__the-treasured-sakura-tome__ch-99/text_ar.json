@@ -1,0 +1,203 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "99",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "TRANSLATOR: SIKETROLLER EVERYTHINGELSE: ME NOTE:PLEASE SUPPORT THE AUTHORBYBUYING THEIRWORKS.",
+          "confidence": 0.948,
+          "text_ar": "ترجمة: SIKETROLLER، باقي العمل: أنا. ملاحظة: يرجى دعم المؤلف بشراء أعماله."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "YI CHEN, BE MY GIRLFRIEND.",
+          "confidence": 0.987,
+          "text_ar": "يي تشن، كوني حبيبتي."
+        },
+        {
+          "text": "I ONLY SAID THAT I WILL CONSIDER,",
+          "confidence": 0.938,
+          "text_ar": "لقد قلت فقط أنني سأفكر في الأمر،"
+        },
+        {
+          "text": "THAT DOESN'T MEAN THAT I WILL ACCEPT YOU.",
+          "confidence": 0.959,
+          "text_ar": "هذا لا يعني أنني سأقبلك."
+        },
+        {
+          "text": "神漫画",
+          "confidence": 0.999,
+          "text_ar": "شين مانها"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "SO ITS LIKE THIS...",
+          "confidence": 0.892,
+          "text_ar": "إذًا الأمر هكذا..."
+        },
+        {
+          "text": "IN A FEW DAYS WE ARE GOING TO LEAVE NAN CHENG.",
+          "confidence": 0.95,
+          "text_ar": "سنغادر نان تشنغ بعد بضعة أيام."
+        },
+        {
+          "text": "IT'S ALSO POSSIBLE WE MIGHT NOT BE ABLE TO MEET EACH OTHER ANYMORE.",
+          "confidence": 0.975,
+          "text_ar": "ومن المحتمل ألا نتمكن من رؤية بعضنا مجددًا."
+        },
+        {
+          "text": "CAN'T yOU CANCEL IT, JUST FOR ME?",
+          "confidence": 0.85,
+          "text_ar": "ألا يمكنك إلغاء الأمر، من أجلي فقط؟"
+        },
+        {
+          "text": "I JUST HAVE A GOOD IMPRESSION OF YOU, THAT DOESN'T MEAN I LIKE YOU OR ANYTHING.",
+          "confidence": 0.949,
+          "text_ar": "أنا فقط أكنّ لك انطباعًا جيدًا، هذا لا يعني أنني أحبك أو أي شيء من هذا القبيل."
+        },
+        {
+          "text": "CHERISH MENG QIAN, SHE REALLY LIKES YOU.",
+          "confidence": 0.948,
+          "text_ar": "حافظي على منغ تشيان، فهي تحبك حقًا."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "IF GIVEN A CHOICE I WOLILDN'T WANT TO LEAVE, BUIT I NEED TO FUFILL MY RESPONSIBILITY FOR THE FUTURE OF MY FAMILY.",
+          "confidence": 0.921,
+          "text_ar": "لو كان الخيار بيدي لما أردت الرحيل، لكن عليّ تحمل مسؤوليتي تجاه مستقبل عائلتي."
+        },
+        {
+          "text": "BAI FAMILY ONLY HAVE ME WHO IS ABLE TO CLILTIVATE THE DRAGONSCROLL,LETTING MEENTER THEFINAL WEN STAGE,ONLY THEN I WILL BE ABLE TOCOMPAREWITH THE PATRIARCH.AT THAT STAGE, SO THISISNOTHING",
+          "confidence": 0.937,
+          "text_ar": "عائلة باي ليس لديها سواي ممن يستطيعون ممارسة فن لفافة التنين، لا يمكنني الوصول للمرحلة النهائية إلا إذا تمكنت من مقارعة كبير العائلة. في تلك المرحلة، هذا لا شيء."
+        },
+        {
+          "text": "BEING WITH LIN FENG WILL ONLY INVOLVEHIMIMOREIN LINNECESSARY SITUATIONS",
+          "confidence": 0.921,
+          "text_ar": "وجودي مع لين فنغ لن يجرّه إلا إلى مواقف لا داعي لها."
+        },
+        {
+          "text": "IFIFAILTO REACHTHATSTAGEI WILLNEVERBEABLETO LEAVETHATPLACE",
+          "confidence": 0.968,
+          "text_ar": "إذا فشلت في الوصول لتلك المرحلة، فلن أتمكن أبدًا من مغادرة ذلك المكان."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "YI CHEN, CAN YOU TELL ME WHERE YOU ARE GOING?",
+          "confidence": 0.956,
+          "text_ar": "يي تشن، هل يمكنك إخباري إلى أين أنتِ ذاهبة؟"
+        },
+        {
+          "text": "COLLDITBE THATLIN[FENG]WOLLD FOLLOW/MEALONG?",
+          "confidence": 0.916,
+          "text_ar": "هل يُعقل أن يتبعني لين فنغ؟"
+        },
+        {
+          "text": "ISHOLILDN'T TELLHIM,IT WILLONLYCALISEHIMIMORE TROLBLE.",
+          "confidence": 0.903,
+          "text_ar": "لا ينبغي أن أخبره، لن يسبب ذلك إلا المزيد من المتاعب له."
+        },
+        {
+          "text": "QING FENG MOUNTAIN.",
+          "confidence": 0.984,
+          "text_ar": "جبل تشينغ فنغ."
+        },
+        {
+          "text": "神漫画",
+          "confidence": 0.999,
+          "text_ar": "شين مانها"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "TAKE CARE.",
+          "confidence": 0.996,
+          "text_ar": "اعتنِ بنفسك."
+        },
+        {
+          "text": "I WILL FIND YOU THERE.",
+          "confidence": 0.864,
+          "text_ar": "سأجدك هناك."
+        },
+        {
+          "text": "LIU QING RU?",
+          "confidence": 0.985,
+          "text_ar": "ليو تشينغ رو؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "ALEKT",
+          "confidence": 0.91,
+          "text_ar": "تنبيه"
+        },
+        {
+          "text": "STANDS UP",
+          "confidence": 0.968,
+          "text_ar": "تنهض"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "you!",
+          "confidence": 0.865,
+          "text_ar": "أنت!"
+        },
+        {
+          "text": "YOU MISTRESS! WHY ARE YOU BREAKING UP MY FAMILY!",
+          "confidence": 0.96,
+          "text_ar": "أيتها العشيقة! لماذا تحاولين تدمير عائلتي؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "HOW SHAMELESS!",
+          "confidence": 0.989,
+          "text_ar": "يا لقلة الحياء!"
+        },
+        {
+          "text": "HAS SLCH A BEALITIFLL WIFE, YET, GOES OUTSIDE TO FLIRT WITH OTHERS!",
+          "confidence": 0.865,
+          "text_ar": "لديه زوجة جميلة كهذه، ومع ذلك يخرج ليغازل الأخريات!"
+        },
+        {
+          "text": "YOU RECOGNISED THE WRONG PERSON!",
+          "confidence": 0.975,
+          "text_ar": "لقد أخطأتِ في الشخص!"
+        }
+      ]
+    }
+  ]
+}
