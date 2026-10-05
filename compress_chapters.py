@@ -167,6 +167,8 @@ raw.githubusercontent.com مباشر — يعمل تنزيله بلا تسجيل
 ================================================================================
 """
 import asyncio
+import shutil
+import tempfile
 import threading
 import html as html_lib
 import json
@@ -722,6 +724,15 @@ PROFILES = {
         "fetch_mode": "http",
         "sb_page_fetch": True,
     },
+    # [إضافة] MangaDex عبر API الرسمي (api.mangadex.org): لا متصفح ولا تحدّي. الصور من
+    # /at-home/server/{chapterId} بالجودة الأصلية (data) ليستفيد منها OCR، ثم يضغطها الأنبوب كالعادة.
+    # mangadex_quality="data-saver" للنسخة المضغوطة الأخف. اسم المانهوا/رقم الفصل من API لا من الرابط.
+    "mangadex": {
+        "label": "ماندكس (API رسمي)",
+        "fetch_mode": "http",
+        "mangadex_api": True,
+        "mangadex_quality": "data",
+    },
     "auto": {"label": "تلقائي (عام)", "fetch_mode": "browser", "do_scroll": True, "do_widget_filter": True},
     # [بروكسي أرشيف الإنترنت عبر SPN2 الرسمية الموثَّقة، مجاني بالكامل
     # لكن يتطلب مفتاحي S3-style (WAYBACK_ACCESS_KEY/WAYBACK_SECRET_KEY من
@@ -751,7 +762,110 @@ def slugify(text: str) -> str:
     return text or "chapter"
 
 
+_MANGADEX_API = "https://api.mangadex.org"
+_MANGADEX_UA = "manhwa-compressor/1.0 (GitHub Actions)"
+_MANGADEX_CHAPTER_RE = re.compile(r"mangadex\.org/(?:chapter|title/[0-9a-f-]{36}/[^/]+/chapter)/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})", re.I)
+_MANGADEX_META_CACHE: dict[str, dict | None] = {}
+_MANGADEX_LOCK = threading.Lock()
+_MANGADEX_LAST_CALL = [0.0]
+
+
+def _mangadex_chapter_id(url: str) -> str | None:
+    m = _MANGADEX_CHAPTER_RE.search(url or "")
+    return m.group(1).lower() if m else None
+
+
+def _mangadex_get_json(path: str, params: dict | None = None, attempts: int = 4) -> dict:
+    """GET على API ماندكس مع مباعدة بين الطلبات وتعامل مع 429/5xx (Retry-After إن وُجد)."""
+    last_err = "سبب غير معروف"
+    for attempt in range(1, attempts + 1):
+        with _MANGADEX_LOCK:   # مباعدة ≥0.3ث بين طلبات API (تحترم حدود المعدل)
+            wait = 0.3 - (time.monotonic() - _MANGADEX_LAST_CALL[0])
+            if wait > 0:
+                time.sleep(wait)
+            _MANGADEX_LAST_CALL[0] = time.monotonic()
+        try:
+            resp = _HTTP_SESSION.get(f"{_MANGADEX_API}{path}", params=params,
+                                     headers={"User-Agent": _MANGADEX_UA, "Accept": "application/json"}, timeout=20)
+            if resp.status_code == 429 or resp.status_code >= 500:
+                retry_after = resp.headers.get("Retry-After")
+                delay = float(retry_after) if retry_after and retry_after.replace(".", "", 1).isdigit() else 2.0 * attempt
+                last_err = f"status={resp.status_code}"
+                time.sleep(min(delay, 30))
+                continue
+            if resp.status_code == 404:
+                raise RuntimeError("الفصل غير موجود/محذوف (404)")
+            resp.raise_for_status()
+            return resp.json()
+        except RuntimeError:
+            raise
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {e}"
+            time.sleep(1.0 * attempt)
+    raise RuntimeError(f"فشل طلب API ماندكس {path}: {last_err}")
+
+
+def _mangadex_meta(chapter_id: str) -> dict | None:
+    """بيانات الفصل من API (مخزَّنة مؤقتًا): اسم المانهوا، رقم الفصل، رابط خارجي، عدد الصفحات."""
+    with _MANGADEX_LOCK:
+        if chapter_id in _MANGADEX_META_CACHE:
+            return _MANGADEX_META_CACHE[chapter_id]
+    meta = None
+    try:
+        data = _mangadex_get_json(f"/chapter/{chapter_id}", {"includes[]": "manga"})["data"]
+        attrs = data.get("attributes") or {}
+        title = ""
+        manga_uuid = ""
+        for rel in data.get("relationships") or []:
+            if rel.get("type") == "manga":
+                manga_uuid = rel.get("id", "")
+                t = (rel.get("attributes") or {}).get("title") or {}
+                title = t.get("en") or next(iter(t.values()), "") if t else ""
+        meta = {"title": title, "manga_id": manga_uuid, "chapter": attrs.get("chapter"),
+                "volume": attrs.get("volume"), "external": attrs.get("externalUrl"),
+                "pages": attrs.get("pages"), "lang": attrs.get("translatedLanguage")}
+    except Exception as e:
+        print(f"  ⚠️ تعذّر جلب بيانات فصل ماندكس {chapter_id}: {e}")
+    with _MANGADEX_LOCK:
+        _MANGADEX_META_CACHE[chapter_id] = meta
+    return meta
+
+
+def _fetch_mangadex_sync(chapter_url: str, profile: dict) -> tuple[list[str], str, str]:
+    """(روابط الصور، سبب الفشل، اسم المانهوا) عبر /at-home/server — يُستدعى قبل التنزيل مباشرة
+    لأن baseUrl صالح 15 دقيقة فقط (بعدها 403)."""
+    cid = _mangadex_chapter_id(chapter_url)
+    if not cid:
+        return [], f"{_NO_RETRY_MARK} رابط ماندكس غير معروف الصيغة (المتوقع mangadex.org/chapter/<uuid>)", ""
+    meta = _mangadex_meta(cid) or {}
+    title = meta.get("title", "")
+    if meta.get("external"):
+        return [], f"{_NO_RETRY_MARK} فصل خارجي (يُقرأ على موقع الناشر: {meta['external']}) — لا صور على ماندكس", title
+    try:
+        info = _mangadex_get_json(f"/at-home/server/{cid}")
+    except Exception as e:
+        return [], str(e), title
+    base, chap = info.get("baseUrl"), info.get("chapter") or {}
+    quality = profile.get("mangadex_quality", "data")
+    key = "dataSaver" if quality == "data-saver" else "data"
+    files = chap.get(key) or []
+    if not base or not chap.get("hash") or not files:
+        return [], f"{_NO_RETRY_MARK} استجابة at-home بلا صور (hash/{key} فارغة)", title
+    return [f"{base}/{quality}/{chap['hash']}/{fn}" for fn in files], "", title
+
+
 def manga_slug_from_url(url: str) -> tuple[str, str]:
+    # ماندكس: الرابط UUID + رقم صفحة قارئ، فاسم المانهوا ورقم الفصل يأتيان من API لا من المسار.
+    _mdx_id = _mangadex_chapter_id(url)
+    if _mdx_id:
+        _meta = _mangadex_meta(_mdx_id)
+        if _meta:
+            _slug = slugify(_meta.get("title") or "") if _meta.get("title") else ""
+            _slug = _slug if _slug and _slug != "chapter" else (_meta.get("manga_id") or _mdx_id)[:8]
+            _num = str(_meta.get("chapter") or "").strip()
+            if not re.fullmatch(r"\d+(?:\.\d+)?", _num):
+                _num = "0"   # one-shot أو رقم غير قياسي
+            return f"mangadex.org__{_slug}", _num
     u = urlparse(url)
     parts = [p for p in u.path.split("/") if p]
     chapter_num = None
@@ -998,6 +1112,7 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 _SB_LOCK = threading.Lock()
 _SB_CLEARANCE_LOCK = threading.Lock()
 _SB_IMAGE_CACHE: dict[str, bytes] = {}   # url -> بايتات نزّلها المتصفح نفسه (تُستهلك مرة واحدة)
+ALLOW_PARTIAL_CHAPTERS = os.environ.get("ALLOW_PARTIAL_CHAPTERS", "false").strip().lower() == "true"
 SB_BROWSER_IMAGE_DOWNLOAD = os.environ.get("SB_BROWSER_IMAGE_DOWNLOAD", "true").strip().lower() == "true"
 _SB_CLEARANCE: dict[str, dict] = {}   # host -> {"cookie_header": str, "ua": str}
 
@@ -1101,6 +1216,8 @@ def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
     use_wayback_proxy = bool(profile and profile.get("use_wayback_proxy"))
 
+    if profile and profile.get("mangadex_api"):
+        return _fetch_mangadex_sync(chapter_url, profile)
     if profile and profile.get("sb_page_fetch"):
         return _fetch_images_via_sb_sync(chapter_url)
     if use_wayback_proxy:
@@ -2155,7 +2272,12 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
         return None
 
     manga_id, chapter_num = manga_slug_from_url(chapter_url)
-    chapter_dir = OUTPUT_DIR / manga_id / f"ch-{chapter_num}"
+    # [سلامة الدفع] الكتابة في مجلد مرحلي خارج OUTPUT_DIR (فلا يلتقطه أي git add)، ثم نقل للمجلد
+    # النهائي بعد اكتمال كل الصور فقط. أي توقّف/إلغاء منتصف الفصل لا يترك فصلًا ناقصًا يُدفَع.
+    final_dir = OUTPUT_DIR / manga_id / f"ch-{chapter_num}"
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    staging_root = Path(tempfile.mkdtemp(prefix=".staging-", dir=str(OUTPUT_DIR.parent)))
+    chapter_dir = staging_root / f"ch-{chapter_num}"
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
     fetch_mode = profile.get("fetch_mode", "browser")
@@ -2179,7 +2301,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
             filename = f"{i:03d}.{IMG_FORMAT}"
             (chapter_dir / filename).write_bytes(compressed)
-            saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+            saved_paths.append(f"{manga_id}/ch-{chapter_num}/{filename}")
             size_original[i], size_compressed[i] = len(raw), len(compressed)
             print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
         except Exception as e:
@@ -2198,7 +2320,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
                     compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
                     filename = f"{i:03d}.{IMG_FORMAT}"
                     (chapter_dir / filename).write_bytes(compressed)
-                    saved_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                    saved_paths.append(f"{manga_id}/ch-{chapter_num}/{filename}")
                     size_original[i], size_compressed[i] = len(raw), len(compressed)
                     print(f"  ✅ (إعادة محاولة) {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
                 except Exception as e:
@@ -2214,8 +2336,21 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     if context:
         await context.close()
 
-    if not saved_paths:
+    expected_count = len(image_urls)
+    if not saved_paths or (len(saved_paths) != expected_count and not ALLOW_PARTIAL_CHAPTERS):
+        shutil.rmtree(staging_root, ignore_errors=True)
+        if saved_paths:
+            print(f"  🚫 فصل ناقص ({len(saved_paths)}/{expected_count} صورة) — لن يُدفَع ولن يُسجَّل؛ "
+                  f"سيُعاد في التشغيلة القادمة (ALLOW_PARTIAL_CHAPTERS=true لقبول الناقص)")
         return None
+
+    try:
+        final_dir.parent.mkdir(parents=True, exist_ok=True)
+        if final_dir.exists():
+            shutil.rmtree(final_dir)
+        shutil.move(str(chapter_dir), str(final_dir))
+    finally:
+        shutil.rmtree(staging_root, ignore_errors=True)
 
     original_bytes, compressed_bytes = sum(size_original.values()), sum(size_compressed.values())
     if original_bytes:
@@ -2326,6 +2461,13 @@ async def main():
     pushed_upto = 0   # عدد النتائج المشمولة بآخر دفع ناجح (الدفعة الواحدة تغطي كل ما اكتمل قبلها)
 
     async def handle_result(url, result):
+        try:
+            await _handle_result_inner(url, result)
+        except Exception as e:
+            # خطأ كتابة/دفع لا يجوز أن يُسقط بقية الفصول؛ الفصل يبقى في results ويلتقطه الدفع النهائي
+            print(f"  ⚠️ خطأ أثناء تسجيل/دفع نتيجة الفصل (يُتابَع، والدفع النهائي سيعيد المحاولة): {type(e).__name__}: {e}")
+
+    async def _handle_result_inner(url, result):
         nonlocal pushed_upto
         if result is None:
             failed_urls.append(url)
@@ -2398,11 +2540,14 @@ async def main():
     # <مجلد>" شامل إطلاقًا) — راجع _owned_chapter_paths وتصحيح ٥ بترويسة
     # الملف لسبب هذا التقييد تحديدًا.
     if GIT_COMMIT_DIR:
-        ok, msg = await asyncio.to_thread(
-            _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
-            f"دفع نهائي - {len(results)} فصل", _owned_chapter_paths(results),
-        )
-        print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
+        try:
+            ok, msg = await asyncio.to_thread(
+                _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                f"دفع نهائي - {len(results)} فصل", _owned_chapter_paths(results),
+            )
+            print(f"{'✅' if ok else '⚠️'} الدفع النهائي: {msg}")
+        except Exception as e:
+            print(f"⚠️ الدفع النهائي: استثناء {type(e).__name__}: {e} — سيتولاه الدفع الاحتياطي بالـworkflow")
 
     print("\n" + "=" * 50)
     print("📊 ملخص التشغيلة")
