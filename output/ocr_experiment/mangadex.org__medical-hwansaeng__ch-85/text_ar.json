@@ -1,0 +1,912 @@
+{
+  "manga_id": "mangadex.org__medical-hwansaeng",
+  "chapter_num": "85",
+  "manga_title": "Medical Hwansaeng",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "CLEANER & REDRAWER U MAD EDITOR BYCKER89 TRANSLATOR PLACEBOMISHAP PROOFREADER ZAXAS",
+          "confidence": 0.956,
+          "text_ar": "التنقية والتعديل: يو ماد | التحرير: بايكر89 | الترجمة: بلاسيبوميشاب | التدقيق: زاكساس"
+        },
+        {
+          "text": "DISCORD.GG/mc68JND",
+          "confidence": 0.948,
+          "text_ar": "DISCORD.GG/mc68JND"
+        },
+        {
+          "text": "PATREON.COM/SKSCAN",
+          "confidence": 0.999,
+          "text_ar": "PATREON.COM/SKSCAN"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "WHAT?!!",
+          "confidence": 0.983,
+          "text_ar": "ماذا؟!!"
+        },
+        {
+          "text": "CAN YOU SAY THAT AGAIN, PLEASE?",
+          "confidence": 0.955,
+          "text_ar": "هل يمكنك تكرار ما قلته، من فضلك؟"
+        },
+        {
+          "text": "YOU...WANT ME TO LEAD THE SURGERY FOR THE PRIME MINISTER?",
+          "confidence": 0.897,
+          "text_ar": "أنت... تريد مني أن أقود جراحة رئيس الوزراء؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "ME, WHO IS NOT A PROFESSOR OR A FIELD SPECIALIST.",
+          "confidence": 0.953,
+          "text_ar": "أنا، الذي لست بروفيسورًا ولا متخصصًا في هذا المجال."
+        },
+        {
+          "text": "BUT WHY THE PRIME MINISTER'S SURGERY?!",
+          "confidence": 0.983,
+          "text_ar": "ولكن لماذا جراحة رئيس الوزراء تحديدًا؟!"
+        },
+        {
+          "text": "THE PRIME MINISTERREQUESTED HIS SURGERY BE PERFORMED BY YOU, DOCTOR.",
+          "confidence": 0.956,
+          "text_ar": "لقد طلب رئيس الوزراء أن تجري أنت الجراحة له يا دكتور."
+        },
+        {
+          "text": "WOULD THAT BE DIFFICULT?",
+          "confidence": 0.933,
+          "text_ar": "هل سيكون ذلك صعبًا؟"
+        },
+        {
+          "text": "NO, CHOLECYSTITIS SURGERY ITSELFISN'T DIFFICULT, BUT...",
+          "confidence": 0.93,
+          "text_ar": "لا، جراحة التهاب المرارة بحد ذاتها ليست صعبة، ولكن..."
+        },
+        {
+          "text": "WHY... I'M JUST A RESIDENT...",
+          "confidence": 0.95,
+          "text_ar": "لماذا... أنا مجرد طبيب مقيم..."
+        },
+        {
+          "text": "THE PATIENT IS PAST THE POINT OF VIP!!",
+          "confidence": 0.94,
+          "text_ar": "المريض يتجاوز كونه شخصية هامة (VIP)!"
+        },
+        {
+          "text": "I RECALL YOU PERFORMED ONE ALREADYON A PLANE,NO?",
+          "confidence": 0.939,
+          "text_ar": "أذكر أنك أجريت واحدة بالفعل على متن طائرة، أليس كذلك؟"
+        },
+        {
+          "text": "THE PRIME MINISTER WOULD LIKE TO RECEIVE HISSURGERYFROMYOU AND ONLY YOU.",
+          "confidence": 0.963,
+          "text_ar": "رئيس الوزراء يرغب في تلقي الجراحة منك أنت، ومنك فقط."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "WELL, I DIDN'T KNOW WHO HE WAS BACK THEN!!! WHY ARE THEY BOTHERING ME NOW?!",
+          "confidence": 0.921,
+          "text_ar": "حسنًا، لم أكن أعرف من هو في ذلك الوقت!!! لماذا يزعجونني الآن؟!"
+        },
+        {
+          "text": "I UNDERSTAND.IF HE HAS REQUESTED ME, I HAVE NO CHOICE.",
+          "confidence": 0.926,
+          "text_ar": "أفهم ذلك. إذا كان قد طلبني شخصيًا، فليس لدي خيار."
+        },
+        {
+          "text": "HOWEVER, CAN YOU CHECK ONE MORE TIME?",
+          "confidence": 0.973,
+          "text_ar": "ومع ذلك، هل يمكنك التأكد مرة أخرى؟"
+        },
+        {
+          "text": "WHETHEROR NOT HE REALLY WANTS TO RECEIVE THE SURGERY FROM ME, NOT THE FIELD'S SPECIALIST?",
+          "confidence": 0.949,
+          "text_ar": "ما إذا كان يرغب حقًا في تلقي الجراحة مني، وليس من متخصص في هذا المجال؟"
+        },
+        {
+          "text": "I CAN CONFIRM THAT WAS THE REQUEST OF THE PRIME MINISTER HIMSELF.",
+          "confidence": 0.947,
+          "text_ar": "أستطيع أن أؤكد أن هذا كان طلب رئيس الوزراء نفسه."
+        },
+        {
+          "text": "JUST LIKETHAT,THE PRIME MINISTER'S SURGERY WAS SCHEDULED FOR NEXT TUESDAY.",
+          "confidence": 0.943,
+          "text_ar": "وهكذا، تم تحديد موعد جراحة رئيس الوزراء يوم الثلاثاء القادم."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "THE NEWS OF JINHYUN BEING SCHEDULED TO PERFORM SURGERY ON THE PRIME MINISTER FLIPPED DAEIL HOSPITAL UPSIDE DOWN.",
+          "confidence": 0.931,
+          "text_ar": "قلبت أخبار تحديد موعد جراحة رئيس الوزراء على يد جين هيون مستشفى داي إيل رأسًا على عقب."
+        },
+        {
+          "text": "WAIT, KIM JINHYUN IS GOING TO BE LEADING THE SURGERY OF THE PRIME MINISTER KIM CHANGYOUNG?",
+          "confidence": 0.948,
+          "text_ar": "انتظر، هل سيقود كيم جين هيون جراحة رئيس الوزراء كيم تشانغ يونغ؟"
+        },
+        {
+          "text": "IF IT'S THATKIM JINHYUN, HE SHOULD BE COMPLETELY FINE. HE'S A MONSTER.",
+          "confidence": 0.936,
+          "text_ar": "إذا كان هو ذلك كيم جين هيون، فيجب أن يكون الأمر على ما يرام تمامًا. إنه وحش."
+        },
+        {
+          "text": "WELL, RIGHT. ANYWAY, THAT'S PRETTYAMAZING~!",
+          "confidence": 0.969,
+          "text_ar": "حسنًا، صحيح. على أي حال، هذا مذهل حقًا~!"
+        },
+        {
+          "text": "…HE'S STILL A RESIDENT, RIGHT? BUT IF HE LEADS THE SURGERY...",
+          "confidence": 0.954,
+          "text_ar": "…إنه لا يزال طبيبًا مقيمًا، أليس كذلك؟ ولكن إذا قاد الجراحة..."
+        },
+        {
+          "text": "WHO'S GONNA BE THE ASSISTANT?",
+          "confidence": 0.969,
+          "text_ar": "من سيكون المساعد؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "HUH X IF A RESIDENT IS LEADING THEN THE ASSISTANT WILL ALSO BE A RESIDENT...?",
+          "confidence": 0.263,
+          "text_ar": "هاه؟ إذا كان الطبيب المقيم هو القائد، فهل سيكون المساعد طبيبًا مقيمًا أيضًا...؟"
+        },
+        {
+          "text": "THAT'S TOO DANGEROUS!",
+          "confidence": 0.992,
+          "text_ar": "هذا خطير للغاية!"
+        },
+        {
+          "text": "EVEN IF THE FIRST YEAR RESIDENT IS LEADING THE SURGERY THIS IS STILL FOR THE PRIME MINISTER,",
+          "confidence": 0.918,
+          "text_ar": "حتى لو كان طبيب مقيم في السنة الأولى يقود الجراحة، فهذا لا يزال من أجل رئيس الوزراء،"
+        },
+        {
+          "text": "THE SURGERY TEAM HAS TO BE GOOD!!",
+          "confidence": 0.987,
+          "text_ar": "يجب أن يكون فريق الجراحة كفؤًا!!"
+        },
+        {
+          "text": "AFTER MANY DEBATES, THE TEAM WAS MADE OF...",
+          "confidence": 0.935,
+          "text_ar": "بعد العديد من النقاشات، تشكل الفريق من..."
+        },
+        {
+          "text": "LEAD KIM JINHYUN (RESIDENT)",
+          "confidence": 0.924,
+          "text_ar": "القائد: كيم جين هيون (طبيب مقيم)"
+        },
+        {
+          "text": "FIRST ASSISTANT YOO YOUNGSOO (PROFESSOR)",
+          "confidence": 0.93,
+          "text_ar": "المساعد الأول: يو يونغ سو (بروفيسور)"
+        },
+        {
+          "text": "SECOND ASSISTANT KIM HYUNSOO (FIELDSPECIALIST)",
+          "confidence": 0.926,
+          "text_ar": "المساعد الثاني: كيم هيون سو (متخصص في المجال)"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "IT WAS A RIDICULOUS TEAM,BUT,",
+          "confidence": 0.957,
+          "text_ar": "كان فريقًا مثيرًا للسخرية، ولكن،"
+        },
+        {
+          "text": "IT WAS TO SWITCH THE LEAD AS SOON AS POSSIBLE IF KIM JINHYUN MADE A MISTAKE.",
+          "confidence": 0.94,
+          "text_ar": "كان الهدف هو تبديل القائد في أسرع وقت ممكن إذا ارتكب كيم جين هيون أي خطأ."
+        },
+        {
+          "text": "BEFORETHE SURGERY, KIM JINHYUNSPENT HIS DAYS RATHER COMFORTABLY.",
+          "confidence": 0.947,
+          "text_ar": "قبل الجراحة، قضى كيم جين هيون أيامه براحة تامة."
+        },
+        {
+          "text": "JUST LIKE HOW ATHLETES WOULD MAKE SURE THEIR BODY WILL BE IN PEAK CONDITIONBEFORE A COMPETITION,",
+          "confidence": 0.96,
+          "text_ar": "تمامًا كما يحرص الرياضيون على أن تكون أجسامهم في ذروة حالتها قبل المنافسة،"
+        },
+        {
+          "text": "OTHER DOCTORS MADE SURE HE WOULD BE RESTED.",
+          "confidence": 0.965,
+          "text_ar": "حرص الأطباء الآخرون على أن يحصل على قسط من الراحة."
+        },
+        {
+          "text": "YOU KNOW HOW TO DO CHOLEOCYTITIS DOCHOLEOCYTITIS SURGERY, RIGHT?",
+          "confidence": 0.936,
+          "text_ar": "أنت تعرف كيف تجري جراحة التهاب المرارة، أليس كذلك؟"
+        },
+        {
+          "text": "DON'T OPEN THE STOMACH WITH A SCALPEL, DO IT WITH LAPAROSCOPY OKAY?!",
+          "confidence": 0.916,
+          "text_ar": "لا تفتح المعدة بالمشرط، افعلها بالمنظار، حسنًا؟!"
+        },
+        {
+          "text": "Oh. yes.. 文",
+          "confidence": 0.09,
+          "text_ar": "أوه. نعم..."
+        },
+        {
+          "text": "DOCTORKIMJINHYUN! AREYOU PREPARED FORTHESURGERY?",
+          "confidence": 0.966,
+          "text_ar": "دكتور كيم جين هيون! هل أنت مستعد للجراحة؟"
+        },
+        {
+          "text": "SINCEPROFESSOR YOOYOUNGSOOAND I WILL BE IN THERE TOGETHER,",
+          "confidence": 0.919,
+          "text_ar": "بما أن البروفيسور يو يونغ سو وأنا سنكون هناك معًا،"
+        },
+        {
+          "text": "IF YOU NEED ANY HELP, ASK RIGHT AWAY.",
+          "confidence": 0.945,
+          "text_ar": "إذا احتجت إلى أي مساعدة، اطلبها فورًا."
+        },
+        {
+          "text": "YES, OF COURSE. I WILL DO MY BEST.",
+          "confidence": 0.932,
+          "text_ar": "نعم، بالطبع. سأبذل قصارى جهدي."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "YES, THIS IS KIM JINHYUN.",
+          "confidence": 0.94,
+          "text_ar": "نعم، هذا كيم جين هيون."
+        },
+        {
+          "text": "AH,JINHYUN? I HAVE SOMETHING TO ASK,SO THAT'S WHY I CALLED.",
+          "confidence": 0.918,
+          "text_ar": "آه، جين هيون؟ لدي شيء لأطلبه، ولهذا السبب اتصلت."
+        },
+        {
+          "text": "WEHAVETHIS PATIENT INOURDEPARTMENT, BUTTHERE SEEMS TO BE A PROBLEM AFTER HIS SURGERY,SO...",
+          "confidence": 0.916,
+          "text_ar": "لدينا هذا المريض في قسمنا، ولكن يبدو أن هناك مشكلة بعد جراحته، لذا..."
+        },
+        {
+          "text": "HAEMI?",
+          "confidence": 0.952,
+          "text_ar": "هاي مي؟"
+        },
+        {
+          "text": "HUH?AH... ARE YOU BUSY?IF YOU'RE BUSY...",
+          "confidence": 0.948,
+          "text_ar": "هاه؟ آه... هل أنت مشغول؟ إذا كنت مشغولًا..."
+        },
+        {
+          "text": "AH, NO, I'M FINE. THERE'S A PROBLEM WITH A PATIENT? WHERE ARE YOU?",
+          "confidence": 0.923,
+          "text_ar": "آه، لا، أنا بخير. هناك مشكلة مع مريض؟ أين أنتِ؟"
+        },
+        {
+          "text": "I'LL GO.",
+          "confidence": 0.921,
+          "text_ar": "سأحضر."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "H-HELLO, JINHYUN. HAVE YOU BEEN WELL?",
+          "confidence": 0.941,
+          "text_ar": "مـ-مرحبًا، جين هيون. هل كنت بخير؟"
+        },
+        {
+          "text": "YES. WHO'S THE PATIENT?",
+          "confidence": 0.95,
+          "text_ar": "نعم. من هو المريض؟"
+        },
+        {
+          "text": "HAEMI ...HAEMI... STILL BEAUTIFUL AS ALWAYS.",
+          "confidence": 0.813,
+          "text_ar": "هاي مي... هاي مي... لا تزال جميلة كما كانت دائمًا."
+        },
+        {
+          "text": "THIS PATIENT IS UNDERGOING CHEMOTHERAPY, BUT THE SURGERY FROM A WHILE AGO IS CAUSING PROBLEMS IN HIS INTESTINES.",
+          "confidence": 0.943,
+          "text_ar": "هذا المريض يخضع للعلاج الكيميائي، لكن الجراحة التي أجراها منذ فترة تسبب مشاكل في أمعائه."
+        },
+        {
+          "text": "CAN THE SURGERY DEPARTMENT TAKE ALOOK?",
+          "confidence": 0.97,
+          "text_ar": "هل يمكن لقسم الجراحة إلقاء نظرة؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "RIGHT, THIS IS SOMETHING WE SHOULD TAKE CARE OF. WE'LL DO THAT RIGHT AWAY.",
+          "confidence": 0.952,
+          "text_ar": "صحيح، هذا شيء يجب أن نعتني به. سنفعل ذلك فورًا."
+        },
+        {
+          "text": "CHANGE THE PATIENT'S DEPARTMENT OVER TO US.I'LL TAKE A LOOK.",
+          "confidence": 0.95,
+          "text_ar": "انقلي المريض إلى قسمنا. سألقي نظرة عليه."
+        },
+        {
+          "text": "OKAY THANKS.",
+          "confidence": 0.993,
+          "text_ar": "حسنًا، شكرًا."
+        },
+        {
+          "text": "H-HAEMI!",
+          "confidence": 0.984,
+          "text_ar": "هـ-هاي مي!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "HM? YES?",
+          "confidence": 0.906,
+          "text_ar": "همم؟ نعم؟"
+        },
+        {
+          "text": "ARE YOUJUST GONNALEAVE? 诊 KN",
+          "confidence": 0.111,
+          "text_ar": "هل ستغادرين هكذا فقط؟"
+        },
+        {
+          "text": "I-IS THERE SOMETHING WRONG WITH LEAVING?",
+          "confidence": 0.962,
+          "text_ar": "هـ-هل هناك خطأ في المغادرة؟"
+        },
+        {
+          "text": "N...NO, IT'S JUST.. IT FEELS LIKE IT'S BEEN TOO LONG SINCE I LAST SAW YOU, SO I'M GLAD TO SEE YOU!",
+          "confidence": 0.915,
+          "text_ar": "لـ... لا، فقط... أشعر وكأن وقتًا طويلًا قد مر منذ آخر مرة رأيتكِ فيها، لذا أنا سعيد برؤيتكِ!"
+        },
+        {
+          "text": "WHAT'S GOING ON,KIMJINHYUN? WAKE THE HELL UP. ACT USUAL.",
+          "confidence": 0.97,
+          "text_ar": "ما الذي يحدث يا كيم جين هيون؟ استيقظ بحق الجحيم. تصرف كالمعتاد."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "Y-YOU WANT TO GRAB A CUP OF COFFEE? THAT BLACK WATER YOU LIKE.",
+          "confidence": 0.941,
+          "text_ar": "تـ-تريدين تناول كوب من القهوة؟ ذلك الماء الأسود الذي تحبينه."
+        },
+        {
+          "text": "BLACK WATER?",
+          "confidence": 0.984,
+          "text_ar": "الماء الأسود؟"
+        },
+        {
+          "text": "I-ICED AMERICANO.MY TREAT.",
+          "confidence": 0.992,
+          "text_ar": "آيـ-آيس أمريكانو. على حسابي."
+        },
+        {
+          "text": "WKN",
+          "confidence": 0.356,
+          "text_ar": "(صوت ارتباك)"
+        },
+        {
+          "text": "I-I... CAN'T RIGHT NOW.",
+          "confidence": 0.928,
+          "text_ar": "أنا... لا أستطيع الآن."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "REALLYZ",
+          "confidence": 0.927,
+          "text_ar": "حقًا؟"
+        },
+        {
+          "text": "M-MHM.",
+          "confidence": 0.986,
+          "text_ar": "مـ-مم."
+        },
+        {
+          "text": "HOW ABOUT THIS EVENING? DO YOU WANNA GO OUT FOR A CUP OF COFFEE?",
+          "confidence": 0.959,
+          "text_ar": "ما رأيك هذا المساء؟ هل ترغبين في الخروج لتناول كوب من القهوة؟"
+        },
+        {
+          "text": "IT HAS TO BE AFTER WORK, THOUGH. AROUND 8:30.",
+          "confidence": 0.908,
+          "text_ar": "يجب أن يكون ذلك بعد العمل، رغم ذلك. حوالي الساعة 8:30."
+        },
+        {
+          "text": "WILL THAT BE OKAY? YOU HAVE SURGERY TOMORROW.",
+          "confidence": 0.967,
+          "text_ar": "هل سيكون ذلك مناسبًا؟ لديك جراحة غدًا."
+        },
+        {
+          "text": "I'M FINE. IT WILL JUST BE A WHILE.",
+          "confidence": 0.954,
+          "text_ar": "أنا بخير. لن يستغرق الأمر وقتًا طويلًا."
+        },
+        {
+          "text": "HOW ABOUT LOONGO IN NONHYEON- DONG?",
+          "confidence": 0.935,
+          "text_ar": "ما رأيك في \"لونغو\" في نونهيون-دونغ؟"
+        },
+        {
+          "text": "KKX",
+          "confidence": 0.381,
+          "text_ar": "(صوت ضحكة مكتومة)"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "NONHYEON- DONG'S LOONGO IS...!",
+          "confidence": 0.924,
+          "text_ar": "لونغو في نونهيون-دونغ هو...!"
+        },
+        {
+          "text": "AH,IT'S FINE! I'LL SEE YOU THEN.",
+          "confidence": 0.948,
+          "text_ar": "آه، لا بأس! سأراكِ إذن."
+        },
+        {
+          "text": "DIDN'T I TELL JINHYUNBEFORETHAT WAS A PLACE I WANTED TO GO WITH A PERSON I LIKED...?",
+          "confidence": 0.823,
+          "text_ar": "ألم أخبر جين هيون من قبل أنه مكان أردت الذهاب إليه مع شخص أحبه...؟"
+        },
+        {
+          "text": "IS HE...2",
+          "confidence": 0.863,
+          "text_ar": "هل هو...؟"
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.989,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "AMAZING!",
+          "confidence": 0.995,
+          "text_ar": "مذهل!"
+        },
+        {
+          "text": "KIM JINHYUN IS ABOUT TO CONFESS TO YOU!!",
+          "confidence": 0.969,
+          "text_ar": "كيم جين هيون على وشك الاعتراف لكِ!!"
+        },
+        {
+          "text": "N-NO WAY. W-WHAT CONFESSION...",
+          "confidence": 0.958,
+          "text_ar": "مـ-مستحيل. مـ-ماذا اعتراف..."
+        },
+        {
+          "text": "MAYBE HE JUST WANTS TO HANG OUT?",
+          "confidence": 0.924,
+          "text_ar": "ربما يريد فقط قضاء الوقت معًا؟"
+        },
+        {
+          "text": "Hmph",
+          "confidence": 0.921,
+          "text_ar": "همف"
+        },
+        {
+          "text": "NO-NO~!WHENDID KIM JINHYUN EVER ASK YOU TO HANG OUT AT A PLACELIKETHAT?",
+          "confidence": 0.949,
+          "text_ar": "لا-لا~! متى طلب منكِ كيم جين هيون قضاء الوقت في مكان كهذا من قبل؟"
+        },
+        {
+          "text": "THAT... NEVER HAPPENED, RIGHT...",
+          "confidence": 0.92,
+          "text_ar": "هذا... لم يحدث قط، أليس كذلك..."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "WE USUALLY MEET ATA BARBEQUE OR BAR HE LIKES..",
+          "confidence": 0.947,
+          "text_ar": "نحن نلتقي عادةً في مطعم شواء أو حانة يحبها.."
+        },
+        {
+          "text": "THIS CAN'T DO. COME HERE!",
+          "confidence": 0.963,
+          "text_ar": "هذا لن ينفع. تعالي إلى هنا!"
+        },
+        {
+          "text": "huh?",
+          "confidence": 0.992,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "THIS UNNI WILL DOLL YOU UP. HURRY.",
+          "confidence": 0.909,
+          "text_ar": "هذه الأخت ستجعلكِ تبدين رائعة. أسرعي."
+        },
+        {
+          "text": "UH, NO.I HAVE A PATIENT WHO NEEDS A BONE MARROW EXAM.",
+          "confidence": 0.95,
+          "text_ar": "آه، لا. لدي مريض يحتاج إلى فحص نخاع العظم."
+        },
+        {
+          "text": "BONEMARROWEXAM- DIAGNOSTIC METHOD THAT EXTRACTS BONE MARROW BY USING A NEEDLE",
+          "confidence": 0.956,
+          "text_ar": "فحص نخاع العظم: طريقة تشخيصية لاستخراج نخاع العظم باستخدام إبرة."
+        },
+        {
+          "text": "YOU THINK A BONE MARROW BONEMARKOW EXAM IS A PROBLEM? PROBLEM2",
+          "confidence": 0.919,
+          "text_ar": "هل تعتقدين أن فحص نخاع العظم مشكلة؟"
+        },
+        {
+          "text": "7 THIS UNNI WILL DO THAT, SO JUST HURRY ANDCOME HERE!",
+          "confidence": 0.634,
+          "text_ar": "هذه الأخت ستفعل ذلك، لذا أسرعي وتعالي إلى هنا!"
+        },
+        {
+          "text": "m 0 HUH? HUH? WAIT!",
+          "confidence": 0.175,
+          "text_ar": "هاه؟ هاه؟ انتظري!"
+        },
+        {
+          "text": "WHAT ARE YOU GOING TO WEAR?",
+          "confidence": 0.984,
+          "text_ar": "ماذا سترتدين؟"
+        },
+        {
+          "text": "JUST THIS...",
+          "confidence": 0.944,
+          "text_ar": "فقط هذا..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "NO, NOT THAT.",
+          "confidence": 0.913,
+          "text_ar": "لا، ليس ذلك."
+        },
+        {
+          "text": "THEN?",
+          "confidence": 0.988,
+          "text_ar": "إذن؟"
+        },
+        {
+          "text": "*3 0.6 How is this? 子 3 THAT?! SOOHYUN, THAT'S...",
+          "confidence": 0.08,
+          "text_ar": "ما رأيك بهذا؟ ذلك؟! سو هيون، هذا..."
+        },
+        {
+          "text": "JUST WEAR IT ALREADY!! 站",
+          "confidence": 0.178,
+          "text_ar": "ارتديه فحسب!!"
+        },
+        {
+          "text": "HOLY **** AWESOME.",
+          "confidence": 0.957,
+          "text_ar": "يا للهول، رائع."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "FANTASTIC!YOU JUST HAVE TO WEAR THAT TONIGHT!",
+          "confidence": 0.967,
+          "text_ar": "رائع! عليكِ فقط ارتداء ذلك الليلة!"
+        },
+        {
+          "text": "HUH? OKAY...",
+          "confidence": 0.886,
+          "text_ar": "هاه؟ حسنًا..."
+        },
+        {
+          "text": "MOONJIN.",
+          "confidence": 0.993,
+          "text_ar": "مون جين."
+        },
+        {
+          "text": "DO YOU HAVE A TUX?",
+          "confidence": 0.965,
+          "text_ar": "هل لديك بدلة رسمية (توكسيدو)؟"
+        },
+        {
+          "text": "HUH? A TUX? I DO. BUT IT WON'T DO, BUT IT WON'T FIT YOU, I DON'T THINK.",
+          "confidence": 0.941,
+          "text_ar": "هاه؟ بدلة رسمية؟ لدي. لكنها لن تنفع، لا أعتقد أنها ستناسبك."
+        },
+        {
+          "text": "REALLY?",
+          "confidence": 0.959,
+          "text_ar": "حقًا؟"
+        },
+        {
+          "text": "THE HELL HAPPENED TO THE GUY WHO WEARS THE SAME THING ALL FOUR SEASONS A YEAR?",
+          "confidence": 0.939,
+          "text_ar": "ما الذي حدث للرجل الذي يرتدي نفس الشيء طوال فصول السنة الأربعة؟"
+        },
+        {
+          "text": "WHAT'S THE OCCASION?",
+          "confidence": 0.988,
+          "text_ar": "ما المناسبة؟"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "ISN'T THE PRIME MINISTER'SSURGERY TOMORROW?",
+          "confidence": 0.961,
+          "text_ar": "أليست جراحة رئيس الوزراء غدًا؟"
+        },
+        {
+          "text": "IS IT OKAY FOR YOU TO GO OUT?",
+          "confidence": 0.939,
+          "text_ar": "هل من المقبول أن تخرج؟"
+        },
+        {
+          "text": "I'M JUST GOING TO HAVE A CUP OF COFFEE. I WON'T BE DRINKING TONIGHT.",
+          "confidence": 0.953,
+          "text_ar": "سأذهب فقط لتناول كوب من القهوة. لن أشرب الليلة."
+        },
+        {
+          "text": "IT'S RIGHT AROUND HERE... I'LL BE BACK SOON.",
+          "confidence": 0.92,
+          "text_ar": "إنه هنا بالقرب... سأعود قريبًا."
+        },
+        {
+          "text": "BUT, MOONJIN.",
+          "confidence": 0.948,
+          "text_ar": "ولكن، مون جين."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.975,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": ".IF I LIKE SOMEONE, I SHOULD CONFESS, RIGHT?",
+          "confidence": 0.883,
+          "text_ar": "إذا كنت معجبًا بشخص ما، يجب أن أعترف، أليس كذلك؟"
+        },
+        {
+          "text": "SURPRISED WHOZ",
+          "confidence": 0.839,
+          "text_ar": "(صوت مفاجأة)"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "YOU KNOW HER, TOQ. I'LL TELL YOU LATER.",
+          "confidence": 0.924,
+          "text_ar": "أنت تعرفها، توق. سأخبرك لاحقًا."
+        },
+        {
+          "text": "DOES HE THINK I'MDUMB? I CAN JUST ABOUT GUESS WHO IT IS.",
+          "confidence": 0.938,
+          "text_ar": "هل يظن أنني غبي؟ يمكنني تخمين من هي."
+        },
+        {
+          "text": "CONFESS. THAT'S THE WAY.",
+          "confidence": 0.986,
+          "text_ar": "اعترف. هذه هي الطريقة."
+        },
+        {
+          "text": "RIGHT?",
+          "confidence": 0.92,
+          "text_ar": "أليس كذلك؟"
+        },
+        {
+          "text": "I'M NOT SURE IF HAEMI LIKES ME, T0O...",
+          "confidence": 0.799,
+          "text_ar": "لست متأكدًا مما إذا كانت هاي مي معجبة بي أيضًا..."
+        },
+        {
+          "text": "BUT IT DOESN'T SEEM LIKE SHE'S NOT INTERESTED, EITHER.",
+          "confidence": 0.923,
+          "text_ar": "لكن لا يبدو أنها غير مهتمة أيضًا."
+        },
+        {
+          "text": "WHAT'S IMPORTANT IS... I LIKE HAEMI.",
+          "confidence": 0.921,
+          "text_ar": "المهم هو... أنا معجب بـ هاي مي."
+        },
+        {
+          "text": "I NEVER REALIZED UNTIL NOW... WHAT A FOOL I'VE BEEN.I SHOULD AT LEAST TELL HER NOW.",
+          "confidence": 0.936,
+          "text_ar": "لم أدرك ذلك حتى الآن... يا لي من أحمق. يجب أن أخبرها على الأقل الآن."
+        },
+        {
+          "text": "THAT I LIKE HER.",
+          "confidence": 0.937,
+          "text_ar": "بأنني معجب بها."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "办公公公 /",
+          "confidence": 0.255,
+          "text_ar": "(صوت تنبيه)"
+        },
+        {
+          "text": "EMERGENCY CENTER",
+          "confidence": 0.994,
+          "text_ar": "مركز الطوارئ"
+        },
+        {
+          "text": "UGH! NOW OF ALL TIMES!",
+          "confidence": 0.967,
+          "text_ar": "تبًا! في هذا الوقت بالذات!"
+        },
+        {
+          "text": ".BASTARD. DON'T YOU DARE MAKE HAEMICRY.",
+          "confidence": 0.94,
+          "text_ar": "أيها الوغد. لا تجرؤ على جعل هاي مي تبكي."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "BECAUSE SOMETHINGCAME UP IN THE EMERGENCY CENTER, I'M ALREADY AN HOUR LATE...!",
+          "confidence": 0.926,
+          "text_ar": "بسبب حدوث شيء طارئ في مركز الطوارئ، لقد تأخرت بالفعل ساعة...!"
+        },
+        {
+          "text": "CAFE LOONGO IS IN A BUSY ALLEY, SO IF I LEAVE NOW.… I'LL ARRIVE AT 10. WHAT SHOULD IDO?!",
+          "confidence": 0.87,
+          "text_ar": "مقهى \"لونغو\" يقع في زقاق مزدحم، لذا إذا غادرت الآن... سأصل في الساعة 10. ماذا علي أن أفعل؟!"
+        },
+        {
+          "text": "SHE SAID SHE'D BE DONE AT 8:30, SO SHE MUST ALREADY BE THERE.",
+          "confidence": 0.959,
+          "text_ar": "قالت إنها ستنتهي في الساعة 8:30، لذا لا بد أنها هناك بالفعل."
+        },
+        {
+          "text": "DAMN,EVEN MY BATTERY..!",
+          "confidence": 0.94,
+          "text_ar": "اللعنة، حتى بطاريتي..!"
+        },
+        {
+          "text": "NONHYEON STATION, PLEASE.",
+          "confidence": 0.992,
+          "text_ar": "محطة نونهيون، من فضلك."
+        },
+        {
+          "text": "HE SHOULD BE HERE SOON.",
+          "confidence": 0.982,
+          "text_ar": "يجب أن يكون هنا قريبًا."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "THE PERSON JINHYUN LIKES. IS IT REALLY ME?",
+          "confidence": 0.913,
+          "text_ar": "الشخص الذي يعجب به جين هيون. هل هو أنا حقًا؟"
+        },
+        {
+          "text": "WE ARE HERE.",
+          "confidence": 0.987,
+          "text_ar": "لقد وصلنا."
+        },
+        {
+          "text": "THANK YOU!",
+          "confidence": 0.979,
+          "text_ar": "شكرًا لك!"
+        },
+        {
+          "text": "I STILL HAVE TO WALK 10 MORE MINUTES.",
+          "confidence": 0.966,
+          "text_ar": "لا يزال علي المشي 10 دقائق أخرى."
+        },
+        {
+          "text": "HURRY, HURRY!",
+          "confidence": 0.912,
+          "text_ar": "أسرعي، أسرعي!"
+        },
+        {
+          "text": "THERE'S ALWAYS SOME IDIOT WHO SPEEDS IN THIS TINY ALLEYWAY!",
+          "confidence": 0.947,
+          "text_ar": "هناك دائمًا أحمق يسرع في هذا الزقاق الصغير!"
+        },
+        {
+          "text": "IT SHOULD BE FINE.",
+          "confidence": 0.971,
+          "text_ar": "يجب أن يكون الأمر على ما يرام."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "HUH?",
+          "confidence": 0.937,
+          "text_ar": "هاه؟"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": []
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "kidari STUDIO ()",
+          "confidence": 0.522,
+          "text_ar": "كيداري ستوديو"
+        },
+        {
+          "text": "Quu",
+          "confidence": 0.767,
+          "text_ar": "Quu"
+        },
+        {
+          "text": "平人E豆Studiozilpung",
+          "confidence": 0.835,
+          "text_ar": "استوديو زيلبونغ"
+        },
+        {
+          "text": "PDBenny Mysterlee Ralee",
+          "confidence": 0.894,
+          "text_ar": "بي دي بيني، ميسترلي، رالي"
+        }
+      ]
+    }
+  ]
+}
