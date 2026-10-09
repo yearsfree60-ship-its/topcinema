@@ -85,6 +85,11 @@ on:
         required: false
         default: "3"
         type: string
+      allow_partial_chapters:
+        description: "[إنتاج] قبول ودفع الفصل حتى لو تعذّر تحميل بعض صوره (يُسجَّل بالـmanifest بالصور الناجحة فقط). عطّله لرفض أي فصل ناقص وإعادته بتشغيلة لاحقة. تنبيه: مع skip_existing_chapters مفعّلًا لن يُعاد تحميل الفصل الناقص لاحقًا تلقائيًا"
+        required: false
+        default: true
+        type: boolean
 
       # ── 📝 الحقلان التاليان فعّالان بوضع "استخراج_نص" فقط ──
       manga_title_override:
@@ -348,7 +353,7 @@ jobs:
           STRICT_DOMAIN_FILTER: ${{ inputs.strict_domain_filter && '1' || '0' }}
           RETRY_PER_CHAPTER: ${{ inputs.retry_per_chapter }}
           IMG_FETCH_RETRIES: ${{ inputs.img_fetch_retries }}
-          ALLOW_PARTIAL_CHAPTERS: 'false'
+          ALLOW_PARTIAL_CHAPTERS: ${{ inputs.allow_partial_chapters }}
         # [جديد — بند 3 من خطة إصلاح تناقض PIR/OOM] حلقة إعادة تشغيل عملية
         # Python كاملة عند خروج compress_chapters.py بكود 75 تحديدًا — هذا
         # الكود مخصَّص حصرًا لوضع ocr_experiment_mode عند تجاوز OCR_MAX_RSS_MB
