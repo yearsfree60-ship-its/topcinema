@@ -1112,7 +1112,7 @@ def _apply_http_content_filter(urls: list[str], profile: dict) -> list[str]:
 _SB_LOCK = threading.Lock()
 _SB_CLEARANCE_LOCK = threading.Lock()
 _SB_IMAGE_CACHE: dict[str, bytes] = {}   # url -> بايتات نزّلها المتصفح نفسه (تُستهلك مرة واحدة)
-ALLOW_PARTIAL_CHAPTERS = os.environ.get("ALLOW_PARTIAL_CHAPTERS", "false").strip().lower() == "true"
+ALLOW_PARTIAL_CHAPTERS = os.environ.get("ALLOW_PARTIAL_CHAPTERS", "true").strip().lower() == "true"
 SB_BROWSER_IMAGE_DOWNLOAD = os.environ.get("SB_BROWSER_IMAGE_DOWNLOAD", "true").strip().lower() == "true"
 _SB_CLEARANCE: dict[str, dict] = {}   # host -> {"cookie_header": str, "ua": str}
 
