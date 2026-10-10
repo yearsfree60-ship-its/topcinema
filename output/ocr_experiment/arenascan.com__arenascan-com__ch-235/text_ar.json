@@ -1,0 +1,428 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "235",
+  "manga_title": "My Wife Is From a Thousand Years Ago 235",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "THAT 50 YUAN WAS REALLY NOT WORTH IT.",
+          "confidence": 0.924,
+          "text_ar": "تلك الخمسون يوانًا لم تكن تستحق العناء حقًا."
+        },
+        {
+          "text": "育彩票 8 8 8",
+          "confidence": 0.996,
+          "text_ar": "يانصيب التربية 8 8 8"
+        },
+        {
+          "text": "SOME OF THE MONEY IS ACTUALLY DONATED TO CHARITY.",
+          "confidence": 0.966,
+          "text_ar": "جزء من المال يُتَبَرَّع به للجمعيات الخيرية في الواقع."
+        },
+        {
+          "text": "LOOK,IT SAYS RIGHT HERE.",
+          "confidence": 0.966,
+          "text_ar": "انظر، إنه مكتوب هنا تمامًا."
+        },
+        {
+          "text": "FOR EVERY TICKET SOLD, ONE DOLLAR GOES TO THE CHARITY ORGANIZATIONS THAT HELP THE ELDERLY, THE DISABLED,THE ORPHANS, AND THE POOR.",
+          "confidence": 0.953,
+          "text_ar": "مقابل كل تذكرة تُباع، يذهب دولار واحد للمنظمات الخيرية التي تساعد كبار السن، وذوي الإعاقة، والأيتام، والفقراء."
+        },
+        {
+          "text": "扶老 助残 救孤 困 济 影##行管中心行 L人ne",
+          "confidence": 0.342,
+          "text_ar": "دعم المسنين، مساعدة ذوي الإعاقة، إغاثة الأيتام، وتخفيف المعاناة."
+        },
+        {
+          "text": "WE DID A GÓOD DEED?",
+          "confidence": 0.8,
+          "text_ar": "هل قمنا بعمل صالح؟"
+        },
+        {
+          "text": "YEAH, THAT TEN YUAN CANAT LEAST GIVE SEVERAL CHILD- REN IN MOUNTAINOUS AREAS A FULL MEAL.",
+          "confidence": 0.935,
+          "text_ar": "أجل، تلك العشر يوانات يمكنها على الأقل توفير وجبة كاملة لعدة أطفال في المناطق الجبلية."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "WOULDN'T IT HAVE BEEN BETTER TO JUST DONATE IT DIRECTLY? WE STILLLOST3O YUAN OFTHAT5OYUAN.",
+          "confidence": 0.943,
+          "text_ar": "ألم يكن من الأفضل التبرع بها مباشرة؟ لقد خسرنا ثلاثين يوانًا من أصل الخمسين."
+        },
+        {
+          "text": "OVER HERE.",
+          "confidence": 0.996,
+          "text_ar": "من هنا."
+        },
+        {
+          "text": "WELCOME.",
+          "confidence": 0.997,
+          "text_ar": "أهلاً بك."
+        },
+        {
+          "text": "WOW, I WISH I COULD OPEN ASTORE LIKE THIS!",
+          "confidence": 0.933,
+          "text_ar": "واو، أتمنى لو كان بإمكاني فتح متجر كهذا!"
+        },
+        {
+          "text": "WHAT'S THE PRICE OF THIS TEA?",
+          "confidence": 0.964,
+          "text_ar": "ما سعر هذا الشاي؟"
+        },
+        {
+          "text": "T/N:1catty= 1.31b=0.6kg",
+          "confidence": 0.94,
+          "text_ar": "ملاحظة المترجم: 1 كاتّي = 0.5 كيلوغرام تقريبًا."
+        },
+        {
+          "text": "TEA THIS COSTS 998 PER CATTY.",
+          "confidence": 0.964,
+          "text_ar": "هذا الشاي يكلف 998 للكاتّي الواحد."
+        },
+        {
+          "text": "WHAT ABOUT THIS ONE THEN?",
+          "confidence": 0.949,
+          "text_ar": "وماذا عن هذا النوع إذن؟"
+        },
+        {
+          "text": "1600 PER CATTY.",
+          "confidence": 0.977,
+          "text_ar": "1600 للكاتّي الواحد."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "AND THIS?",
+          "confidence": 0.989,
+          "text_ar": "وهذا؟"
+        },
+        {
+          "text": "SORRY,WE'RE GOING TO CHECK ELSEWHERE. THANKS BOSS, WE'LL COME BACK NEXT TIME.",
+          "confidence": 0.909,
+          "text_ar": "عذرًا، سنبحث في مكان آخر. شكرًا لك أيها الرئيس، سنعود في المرة القادمة."
+        },
+        {
+          "text": "TAKE CARE~",
+          "confidence": 0.998,
+          "text_ar": "اعتنِ بنفسك~"
+        },
+        {
+          "text": "DOYOU WANT TO DRINK GOLD?",
+          "confidence": 0.944,
+          "text_ar": "هل ترغب في شرب الذهب؟"
+        },
+        {
+          "text": "I DON'T WANT TO DRINK IT, I WANT TO GIVE iT TO OTHERS TO DRINK.",
+          "confidence": 0.915,
+          "text_ar": "لا أريد شربه، أريد تقديمه للآخرين ليشربوه."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "HOW MUCH DOES IT COST FOR THE TEA LEAVES I USE TO MAKE TEA EGGS AT HOME?",
+          "confidence": 0.929,
+          "text_ar": "كم تكلف أوراق الشاي التي أستخدمها لصنع بيض الشاي في المنزل؟"
+        },
+        {
+          "text": "IF IT'S AS EXPENSIVE AS THOSE OTHER ONES, WOULDN'T IT BE LIKE EATINGGOLDEN EGGS?!",
+          "confidence": 0.954,
+          "text_ar": "إذا كانت باهظة مثل تلك الأنواع، ألن يكون الأمر أشبه بأكل بيض ذهبي؟!"
+        },
+        {
+          "text": "THOSE ARE CHEAP, I'M JUST ANORDINARY PER- SON, SO HOW COULD I DRINK SOMETHING SO EXPENSIVE?",
+          "confidence": 0.89,
+          "text_ar": "تلك رخيصة، أنا مجرد شخص عادي، فكيف لي أن أشرب شيئًا بهذا الغلاء؟"
+        },
+        {
+          "text": "THANK GOODNESS.",
+          "confidence": 0.991,
+          "text_ar": "لحسن الحظ."
+        },
+        {
+          "text": "THENWHO ARE YOU BUYING SUCH EXPENSIVE TEA FOR?",
+          "confidence": 0.926,
+          "text_ar": "إذن لمن تشتري هذا الشاي الباهظ؟"
+        },
+        {
+          "text": "GIVING IT TO SOMEONE WHO CAN HELP YOU WITH YOUR ID.",
+          "confidence": 0.926,
+          "text_ar": "سأقدمه لشخص يمكنه مساعدتنا في استخراج بطاقة الهوية."
+        },
+        {
+          "text": "IS IT TIME?",
+          "confidence": 0.905,
+          "text_ar": "هل حان الوقت؟"
+        },
+        {
+          "text": "ABOUT TIME...",
+          "confidence": 0.965,
+          "text_ar": "لقد حان الوقت تقريبًا..."
+        },
+        {
+          "text": "LET'S TAKE A LOOK AT THE SIT- UATION FIRST. IF IT CAN BE DONE, WE'LL DEFINITELY DO IT. WE CAN'T CONTINLIE TO PREPARE, WE SHOULD EXPLORE THE WAYFIRST.",
+          "confidence": 0.903,
+          "text_ar": "دعنا نلقِ نظرة على الوضع أولاً. إذا كان الأمر ممكنًا، فسنفعله بالتأكيد. لا يمكننا الاستمرار في التحضير فقط، يجب أن نستكشف الطريق أولاً."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "YOU CAN'T WAITANY LONGER?",
+          "confidence": 0.876,
+          "text_ar": "ألا يمكنك الانتظار أكثر؟"
+        },
+        {
+          "text": "I CAN.",
+          "confidence": 0.995,
+          "text_ar": "بإمكاني ذلك."
+        },
+        {
+          "text": "I'VE BEEN LOOKING FORWARD TO IT BEFORE,",
+          "confidence": 0.959,
+          "text_ar": "كنت أتطلع للأمر من قبل،"
+        },
+        {
+          "text": "BUT NOW THAT IT'S HAPPENING SOON, I FEEL A LITTLE BIT CAUGHT OFF GUARD.",
+          "confidence": 0.914,
+          "text_ar": "لكن الآن وقد اقترب حدوثه، أشعر ببعض الارتباك."
+        },
+        {
+          "text": "WHAT DO YOU WANT TO DO AFTER YOU GET YOUR ID?",
+          "confidence": 0.948,
+          "text_ar": "ما الذي تريدين فعله بعد الحصول على بطاقة الهوية؟"
+        },
+        {
+          "text": "* CON FIRMED NOONE ISARO- UND",
+          "confidence": 0.649,
+          "text_ar": "*التأكد من عدم وجود أحد في الجوار*"
+        },
+        {
+          "text": "WHAT I WANT TO DoO...",
+          "confidence": 0.778,
+          "text_ar": "ما أريد فعله هو..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "GET A BANK CARD.",
+          "confidence": 0.981,
+          "text_ar": "استخراج بطاقة بنكية."
+        },
+        {
+          "text": "THEN WHAT?",
+          "confidence": 0.996,
+          "text_ar": "ثم ماذا؟"
+        },
+        {
+          "text": "I DIDN'T EXPECT LITTLE JIANG HE TO SAY THAT.",
+          "confidence": 0.965,
+          "text_ar": "لم أتوقع أن تقول جيانغ هي ذلك."
+        },
+        {
+          "text": "GET A PHONE CARD,",
+          "confidence": 0.904,
+          "text_ar": "استخراج شريحة هاتف،"
+        },
+        {
+          "text": "Stay at a hotel to see what it feels like. go to an internet cafe to have fun.",
+          "confidence": 0.952,
+          "text_ar": "المبيت في فندق لأعرف كيف يبدو الأمر، والذهاب إلى مقهى إنترنت للاستمتاع."
+        },
+        {
+          "text": "Get an account on Taobao and JD.",
+          "confidence": 0.966,
+          "text_ar": "إنشاء حساب على تاوباو وجي دي."
+        },
+        {
+          "text": "Get social insurance,",
+          "confidence": 0.99,
+          "text_ar": "الحصول على تأمين اجتماعي،"
+        },
+        {
+          "text": "Ride an airplane for the first time where we're sit- ting together,",
+          "confidence": 0.929,
+          "text_ar": "ركوب الطائرة لأول مرة حيث نجلس معًا،"
+        },
+        {
+          "text": "Take the train,",
+          "confidence": 0.917,
+          "text_ar": "ركوب القطار،"
+        },
+        {
+          "text": "Go to Suzhou...",
+          "confidence": 0.925,
+          "text_ar": "الذهاب إلى سوتشو..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I THOUGHT THAT THIS LITTLE OLD LADY FROM THE KAIYUAN ERA HAD NO DESIRES, BUT IT TURNS OUT THAT SHE HAS SO MANY THINGS SHE PLANS TO DO AFTER GETTING HERID.",
+          "confidence": 0.945,
+          "text_ar": "ظننت أن هذه السيدة العجوز الصغيرة من عصر كايوان ليس لديها رغبات، لكن تبين أن لديها الكثير من الأشياء التي تخطط لفعلها بعد الحصول على هويتها."
+        },
+        {
+          "text": "ACTUALLY,THERE ARE MANY THINGS YOU CAN DO TOGETHER. FOR EXAMPLE, IF YOU TAKE A TRAIN DIRECTLY TO SU- ZHOU, YOU CAN ACCOM- PLISH TWO THINGS AT ONCE.",
+          "confidence": 0.931,
+          "text_ar": "في الواقع، هناك العديد من الأشياء التي يمكنكما فعلها معًا. على سبيل المثال، إذا ركبتما القطار مباشرة إلى سوتشو، يمكنكما إنجاز أمرين في وقت واحد."
+        },
+        {
+          "text": "WHEN WE GO TO SUZHOU, WE WILL DEFINITELY STAY IN A HOTEL. THAT CHECKS OFF STAYING AT A HOTEL, AND THEN WE'LL GET A DOUBLE BED ROOM..",
+          "confidence": 0.888,
+          "text_ar": "عندما نذهب إلى سوتشو، سنقيم بالتأكيد في فندق. هذا يحقق هدف المبيت في فندق، وسنحجز غرفة بسرير مزدوج.."
+        },
+        {
+          "text": "NOT LIST- ENING ALL",
+          "confidence": 0.554,
+          "text_ar": "لا تستمع لأي شيء"
+        },
+        {
+          "text": "THERE ARE SO MANY THINGS I WANT TO DO. I NEED A NOTEBOOK TO WRITE THEM DOWN SO THAT I DON'T FORGET THEMALL.",
+          "confidence": 0.927,
+          "text_ar": "هناك الكثير من الأشياء التي أريد القيام بها. أحتاج إلى دفتر ملاحظات لأكتبها حتى لا أنساها جميعًا."
+        },
+        {
+          "text": "GETTING A ROOM IS A VERY EXCITING THING, SHALL WE DO IT TOGETHER?",
+          "confidence": 0.927,
+          "text_ar": "حجز غرفة أمر مثير للغاية، هل نفعل ذلك معًا؟"
+        },
+        {
+          "text": "GETTING A ROOM? ISN'T THAT JUST LIVING TOGETHER? WHAT IS EXCITING ABOUT IT?",
+          "confidence": 0.927,
+          "text_ar": "حجز غرفة؟ أليس هذا يعني العيش معًا؟ ما المثير في ذلك؟"
+        },
+        {
+          "text": "WHAT ARE·YOU ON?",
+          "confidence": 0.944,
+          "text_ar": "ما الذي تهذي به؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "THAT PHRASE IS VERY EXCITING! LET'S GET A ROOM! WHEN YOU SAY IT LIKE THAT, IT'S VERY..!!",
+          "confidence": 0.883,
+          "text_ar": "تلك العبارة مثيرة للغاية! لنحجز غرفة! عندما تقولها هكذا، يبدو الأمر..!!"
+        },
+        {
+          "text": "IF HE WANTS TO GET A ROOM.. THEN WE'LL GET ONE.",
+          "confidence": 0.895,
+          "text_ar": "إذا كان يريد حجز غرفة.. فسنحجز واحدة."
+        },
+        {
+          "text": "THIS GUY ISN'T THAT TALENTED ANYWAYS. HE'S BEEN PRACTICING FOR SO LONG, AND HE STILL CAN'T BEAT ME.",
+          "confidence": 0.934,
+          "text_ar": "هذا الرجل ليس موهوبًا على أي حال. لقد كان يتدرب لفترة طويلة، وما زال لا يستطيع هزيمتي."
+        },
+        {
+          "text": "AFTERGETTING A ROOM, WE'LL JUST BE SLEEPING PEACEFULLY, ATMOST.ATMOST.",
+          "confidence": 0.902,
+          "text_ar": "بعد حجز الغرفة، سننام بسلام، على الأكثر. على الأكثر."
+        },
+        {
+          "text": "WHY ARE YOU SQUEEZ- ING ME?",
+          "confidence": 0.872,
+          "text_ar": "لماذا تضايقني؟"
+        },
+        {
+          "text": "YOU INTERR- UPTED ME TRYING TO THINK OF WHAT I WANT TO DO.",
+          "confidence": 0.921,
+          "text_ar": "لقد قاطعتني بينما كنت أحاول التفكير فيما أريد فعله."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "I CAN'T GIVE SOMETHING THAT'S WELL-KNOWN OR HAS BEEN HYPED UP BECAUSE IT'LL BE FLASHY BUT LACKING IN SUBSTANCEAND TASTE BAD..",
+          "confidence": 0.913,
+          "text_ar": "لا يمكنني تقديم شيء معروف أو مبالغ في الترويج له لأنه سيكون مبهرًا ظاهريًا لكنه يفتقر للجوهر وذوقه سيئ.."
+        },
+        {
+          "text": "THENI'LL THENILL GET THIS ONE AS A GIFT! ASA GIFT!",
+          "confidence": 0.797,
+          "text_ar": "إذن سأختار هذا كهدية! كهدية!"
+        },
+        {
+          "text": "WE LOOK FORWARD TO YOUR NEXT VISIT~",
+          "confidence": 0.939,
+          "text_ar": "نتطلع لزيارتكم القادمة~"
+        },
+        {
+          "text": "HEARTACHE",
+          "confidence": 0.993,
+          "text_ar": "حسرة"
+        },
+        {
+          "text": "ACTUALLY,IT DOESN'T MATTER WHAT WE GIVE; OTHERS MIGHT NOT NECE- SSARILY WANT IT, BUT IT'S ESSENTIAL FOR US TO OFFER. THIS REPRE- SENTS SINCERITY.",
+          "confidence": 0.933,
+          "text_ar": "في الواقع، لا يهم ما نقدمه؛ قد لا يرغب الآخرون فيه بالضرورة، لكن من الضروري أن نقدمه. هذا يمثل الإخلاص."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "IF THEY DON'T WANT IT, CAN WE RETURNIT?",
+          "confidence": 0.942,
+          "text_ar": "إذا لم يرغبوا به، هل يمكننا إعادته؟"
+        },
+        {
+          "text": "WHY RETURN IT, YOU CAN USE IT TO MAKE TEA EGGS.",
+          "confidence": 0.881,
+          "text_ar": "لماذا تعيده؟ يمكنك استخدامه لصنع بيض الشاي."
+        },
+        {
+          "text": ".CAN'T AFFORD TO EAT IT.",
+          "confidence": 0.881,
+          "text_ar": ".لا أستطيع تحمل تكلفة أكله."
+        },
+        {
+          "text": "THE KEY TO EXPLORING THE WAY FORTHE ID LIES IN THESE TEA EGGS. PTUI, TEA LEAVES.",
+          "confidence": 0.913,
+          "text_ar": "مفتاح استكشاف الطريق للهوية يكمن في بيض الشاي هذا. تفو، أوراق الشاي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "MANHWACLAN",
+          "confidence": 0.987,
+          "text_ar": "مانهوا كلان"
+        },
+        {
+          "text": "Visit ManhwaClan.Com to read more manhwa",
+          "confidence": 0.962,
+          "text_ar": "تفضل بزيارة ManhwaClan.Com لقراءة المزيد من المانهوا"
+        }
+      ]
+    }
+  ]
+}
