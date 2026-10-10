@@ -26,7 +26,7 @@ from compress_chapters import (WIDGET_CONTEXT_PATTERN, _classify_challenge_html,
 DEFAULT_WAIT_SEC = 45.0
 # [تسريع] عدد الفصول قبل إعادة تشغيل المتصفح الدائم (تفادي تسرّب الذاكرة)، وتوازي تنزيل صور الفصل داخل الصفحة.
 SB_RECYCLE_EVERY = max(1, int(os.environ.get("SB_RECYCLE_EVERY", "20") or 20))
-SB_IMG_CONCURRENCY = max(1, min(8, int(os.environ.get("SB_IMG_CONCURRENCY", "5") or 5)))
+SB_IMG_CONCURRENCY = max(1, min(12, int(os.environ.get("SB_IMG_CONCURRENCY", "8") or 8)))
 
 
 def _first_ok(sb, getters, default=None):
@@ -73,7 +73,55 @@ def _sb_eval(sb, js: str):
     return None
 
 
+_FAST_READING_JS = """(() => {
+  const sel = '.reading-content img, .read-container img, #readerarea img, .chapter-content img';
+  const out = [];
+  document.querySelectorAll(sel).forEach(e => {
+    const src = e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
+                e.getAttribute('data-original') || e.currentSrc || e.getAttribute('src') || '';
+    let ctx = '', n = e, d = 0;
+    while (n && d < 5) { ctx += ' ' + (n.className && n.className.toString ? n.className.toString() : '') + ' ' + (n.id || ''); n = n.parentElement; d++; }
+    out.push({src: src.trim(), ctx: ctx.toLowerCase().slice(0, 200)});
+  });
+  return JSON.stringify(out);
+})()"""
+
+
+def _fast_reading_urls(sb, base_url: str) -> list[str] | None:
+    """[تسريع] روابط صور القراءة مباشرة من سمات data-src/src بلا تمرير ولا انتظار تحميل الصور.
+    None = غير جاهز/غير موثوق (عنصر بلا رابط حقيقي، أو روابط مكررة تدل على placeholder) ← المسار البطيء."""
+    from urllib.parse import urljoin
+    raw = _sb_eval(sb, _FAST_READING_JS)
+    try:
+        data = json.loads(raw) if isinstance(raw, str) else []
+    except Exception:
+        return None
+    urls, seen = [], set()
+    for d in data:
+        if WIDGET_CONTEXT_PATTERN.search(d.get("ctx") or ""):
+            continue
+        src = d.get("src") or ""
+        if not src or src.startswith("data:"):
+            return None
+        u = urljoin(base_url, src)
+        if _is_thumbnail_url(u) or u in seen:
+            return None
+        seen.add(u)
+        urls.append(u)
+    return urls or None
+
+
 def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list[str], list[dict]]:
+    # مسار سريع: كل وسوم الفصل موجودة بروابطها الحقيقية أصلًا (Madara/lazy-load) ← لا حاجة لتمرير بطيء.
+    # يُتحقَّق بقفزة واحدة لآخر الصفحة: لو ثبتت القائمة نفسها نعتمدها، وإلا نرجع للتمرير التدريجي الكامل.
+    fast1 = _fast_reading_urls(sb, base_url)
+    if fast1:
+        _sb_eval(sb, "(() => { window.scrollTo(0, document.documentElement.scrollHeight); return 1; })()")
+        time.sleep(0.5)
+        if _fast_reading_urls(sb, base_url) == fast1:
+            print(f"  ⚡ [SB] مسار سريع: {len(fast1)} صورة بلا تمرير")
+            return fast1, []
+
     """صور المحتوى الفعلية من DOM المُنفَّذ (بعد تمرير تدريجي لتحفيز lazy-load) بمعيار الحجم:
     صور الفصل كبيرة (>=300px عرضًا وطولًا)، بخلاف الشعارات والمصغّرات (75x106...) والودجات.
     يُعيد (روابط مرتّبة بترتيب DOM، كل معلومات <img> للتقرير)."""
@@ -231,7 +279,7 @@ def _in_page_fetch_many(sb, urls: list[str], conc: int = SB_IMG_CONCURRENCY,
     _sb_eval(sb, _FETCH_MANY_JS + "(" + json.dumps(urls) + "," + str(conc) + ")")
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
-        time.sleep(0.3)
+        time.sleep(0.15)
         raw = _sb_eval(sb, "(() => JSON.stringify([window.__sbn || 0, window.__sbtot || 0]))()")
         try:
             n, tot = json.loads(raw) if isinstance(raw, str) else (0, 1)
@@ -370,7 +418,7 @@ def _wait_reading_images(sb, timeout: float = 25.0, absent_grace: float | None =
             absent_since = None
         if now >= deadline:
             return 0, diag
-        time.sleep(1.0)
+        time.sleep(0.3)
 
 
 def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
@@ -396,9 +444,9 @@ def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
                 pass
             next_solve = now + 8.0
         try:
-            sb.sleep(2)
+            sb.sleep(0.7)
         except Exception:
-            time.sleep(2)
+            time.sleep(0.7)
 
 
 def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
@@ -409,6 +457,7 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
     res = {"ok": False, "html": "", "images": [], "cookies": [], "user_agent": None,
            "error": None, "waited_sec": None}
     page_url = url
+    _t0 = time.monotonic()
     for attempt in range(1, retries + 2):
         try:
             if not activated:
@@ -481,7 +530,9 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
                     break
                 time.sleep(3)
                 continue
+            _t1 = time.monotonic()
             dom_urls, infos = collect_dom_images_sb(sb, page_url)
+            _t2 = time.monotonic()
             if dom_urls:
                 res["images"] = dom_urls
             else:
@@ -502,7 +553,9 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
                     pass
             if res["images"] and download_images:
                 try:
+                    _t3 = time.monotonic()
                     got, errs = download_images_in_browser(sb, res["images"], page_url)
+                    print(f"  ⏱️ [SB] فتح+حل+انتظار {_t1-_t0:.1f}ث | جمع الروابط {_t2-_t1:.1f}ث | تنزيل {time.monotonic()-_t3:.1f}ث")
                     res["image_bytes"], res["image_errors"] = got, errs
                     print(f"  🌐 [SB] تنزيل بالمتصفح: {len(got)}/{len(res['images'])} صورة"
                           + (f" — أول سبب فشل: {next(iter(errs.values()))}" if errs else ""))
