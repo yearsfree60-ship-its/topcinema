@@ -288,6 +288,8 @@ WEBP_HARD_LIMIT = 16000
 WEBP_METHOD = _clamp_int(os.environ.get("IMG_WEBP_METHOD", "4"), 4, 0, 6, "IMG_WEBP_METHOD")
 # [تسريع] ضغط صور الفصل بالتوازي (ترميز Pillow يحرّر GIL) بدل صورة تلو الأخرى.
 # [تسريع] عدد صور الفصل المُنزَّلة معًا (مسار HTTP/curl_cffi فقط؛ يوازن السرعة وتفادي حظر CDN)
+# [تسريع] عدد فصول مسار المتصفح (olympustaff/mangatuk/mangatime/auto) المعالَجة معًا؛ 1 = تسلسلي كما كان
+BROWSER_CHAPTER_CONCURRENCY = _clamp_int(os.environ.get("BROWSER_CHAPTER_CONCURRENCY", "2"), 2, 1, 4, "BROWSER_CHAPTER_CONCURRENCY")
 IMG_DL_CONCURRENCY = _clamp_int(os.environ.get("IMG_DL_CONCURRENCY", "6"), 6, 1, 12, "IMG_DL_CONCURRENCY")
 COMPRESS_WORKERS = _clamp_int(os.environ.get("COMPRESS_WORKERS", str(os.cpu_count() or 2)), os.cpu_count() or 2, 1, 8, "COMPRESS_WORKERS")
 
@@ -2329,7 +2331,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
                 print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
 
     # [تسريع] تنزيل متوازٍ لمسار HTTP (الصور خارج المتصفح) + ضغط فور وصول كل صورة؛ بقية المسارات تبقى تسلسلية.
-    dl_conc = IMG_DL_CONCURRENCY if fetch_mode == "http" else 1
+    dl_conc = IMG_DL_CONCURRENCY   # كل المسارات (HTTP والمتصفح)؛ =1 للرجوع للتنزيل التسلسلي
     dl_sem = asyncio.Semaphore(dl_conc)
 
     async def _one(i: int, img_url: str) -> None:
@@ -2564,9 +2566,15 @@ async def main():
     else:
         async with async_playwright() as p:
             browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-            for i, url in to_process:
-                r = await run_chapter_safe(browser, url, i, total, profile)
-                await handle_result(url, r)
+            # [تسريع] فصلان معًا افتراضيًا (سياقان مستقلان): يُفتح الفصل التالي بينما يُنزَّل/يُضغط السابق.
+            bsem = asyncio.Semaphore(BROWSER_CHAPTER_CONCURRENCY)
+
+            async def bounded_browser(i, url):
+                async with bsem:
+                    r = await run_chapter_safe(browser, url, i, total, profile)
+                    await handle_result(url, r)
+
+            await asyncio.gather(*[bounded_browser(i, url) for i, url in to_process])
             await browser.close()
 
     await asyncio.to_thread(_close_sb_session)
