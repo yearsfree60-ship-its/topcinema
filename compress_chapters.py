@@ -287,6 +287,8 @@ WEBP_HARD_LIMIT = 16000
 # [تسريع] method=6 أبطأ مستوى ترميز WebP بفارق حجم ضئيل (~1-3%) عن 4 بنفس الجودة البصرية؛ 4 أسرع بعدة أضعاف.
 WEBP_METHOD = _clamp_int(os.environ.get("IMG_WEBP_METHOD", "4"), 4, 0, 6, "IMG_WEBP_METHOD")
 # [تسريع] ضغط صور الفصل بالتوازي (ترميز Pillow يحرّر GIL) بدل صورة تلو الأخرى.
+# [تسريع] عدد صور الفصل المُنزَّلة معًا (مسار HTTP/curl_cffi فقط؛ يوازن السرعة وتفادي حظر CDN)
+IMG_DL_CONCURRENCY = _clamp_int(os.environ.get("IMG_DL_CONCURRENCY", "6"), 6, 1, 12, "IMG_DL_CONCURRENCY")
 COMPRESS_WORKERS = _clamp_int(os.environ.get("COMPRESS_WORKERS", str(os.cpu_count() or 2)), os.cpu_count() or 2, 1, 8, "COMPRESS_WORKERS")
 
 # [إصلاح منطقي ج] حد أدنى لأبعاد الصورة (طول/عرض) كي تُعتبر صفحة مانهوا
@@ -1347,6 +1349,19 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
             last_reason = f"استثناء: {e}"
         if attempt < IMG_FETCH_RETRIES:
             time.sleep(0.6 * attempt)
+    # [احتياطي] جلسة SeleniumBase حيّة ← محاولة أخيرة من داخل المتصفح (يحمل بصمته وكوكيزه كاملة)
+    if _SB_SESSION is not None:
+        try:
+            with _SB_LOCK:
+                got = _SB_SESSION.fetch_bytes([img_url]) or {}
+            b = got.get(img_url)
+            if b:
+                valid, why = _validate_image_bytes(b)
+                if valid:
+                    return b, None
+                last_reason = f"{last_reason} | المتصفح: {why}"
+        except Exception as e:
+            last_reason = f"{last_reason} | فشل احتياطي المتصفح: {e}"
     return None, last_reason
 
 
@@ -2313,22 +2328,23 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             except Exception as e:
                 print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
 
-    compress_tasks: list[asyncio.Task] = []
-    for i, img_url in enumerate(image_urls, start=1):
-        raw, reason = await download(img_url)
+    # [تسريع] تنزيل متوازٍ لمسار HTTP (الصور خارج المتصفح) + ضغط فور وصول كل صورة؛ بقية المسارات تبقى تسلسلية.
+    dl_conc = IMG_DL_CONCURRENCY if fetch_mode == "http" else 1
+    dl_sem = asyncio.Semaphore(dl_conc)
+
+    async def _one(i: int, img_url: str) -> None:
+        async with dl_sem:
+            raw, reason = await download(img_url)
+            if dl_conc == 1 and not profile.get("sb_page_fetch"):
+                await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
         if not raw:
             print(f"  ⚠️ فشلت صورة {i}: {reason} — الرابط: {img_url}")
             failed_indices.append(i)
-            continue
-        compress_tasks.append(asyncio.create_task(_compress_save(i, raw, img_url)))
-        # ضغط عكسي: لا نُراكم أكثر من ~2×العمال صورة خام بالذاكرة أثناء التنزيل
-        active = [t for t in compress_tasks if not t.done()]
-        if len(active) >= COMPRESS_WORKERS * 2:
-            await asyncio.wait(active, return_when=asyncio.FIRST_COMPLETED)
-        if not profile.get("sb_page_fetch"):
-            await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)   # بمسار المتصفح الصور محمّلة مسبقًا — لا داعي للتأخير
-    if compress_tasks:
-        await asyncio.gather(*compress_tasks)
+            return
+        await _compress_save(i, raw, img_url)
+
+    await asyncio.gather(*[_one(i, u) for i, u in enumerate(image_urls, start=1)])
+    saved_paths.sort()
 
     if failed_indices:
         print(f"  🔁 إعادة محاولة نهائية لـ {len(failed_indices)} صورة فشلت...")
