@@ -1,0 +1,443 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "220",
+  "manga_title": "My Wife Is From a Thousand Years Ago 220",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "junitius junitius TS PR",
+          "confidence": 0.957,
+          "text_ar": "جونيشيوس، جونيشيوس، تي إس، بي آر"
+        },
+        {
+          "text": "junitius junitius CL/RD TL Paragon Scans",
+          "confidence": 0.993,
+          "text_ar": "جونيشيوس، جونيشيوس، سي إل/آر دي، تي إل، Paragon Scans"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.998,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "HMM...",
+          "confidence": 0.935,
+          "text_ar": "هممم..."
+        },
+        {
+          "text": "DIDN'T YOU SAY YOU WANTED TO SEE WHAT YOUR MOM BOUGHT?",
+          "confidence": 0.738,
+          "text_ar": "ألم تقولي إنكِ أردتِ رؤية ما اشترته أمكِ؟"
+        },
+        {
+          "text": "AUNTIESAID SHE WAS GOING TO BUY GROCERIES, I SHOULD'VE WENT WITH HER..",
+          "confidence": 0.902,
+          "text_ar": "قالت الخالة إنها ستذهب لشراء البقالة، كان يجدر بي الذهاب معها..."
+        },
+        {
+          "text": "AHEM!",
+          "confidence": 0.992,
+          "text_ar": "أحم!"
+        },
+        {
+          "text": "MY MOM LKES TO BUY A.LOT OF VEGETABLES BLT SHE CANT HOLD IT ALL, SO LETS GO TAKE A LOOK.",
+          "confidence": 0.841,
+          "text_ar": "أمي تحب شراء الكثير من الخضروات لكنها لا تستطيع حملها كلها، لذا لنذهب ونلقِ نظرة."
+        },
+        {
+          "text": "SIT DOWN!",
+          "confidence": 0.973,
+          "text_ar": "اجلس!"
+        },
+        {
+          "text": "WELL-BEHAVED.JPG",
+          "confidence": 0.993,
+          "text_ar": "مؤدب.jpg"
+        },
+        {
+          "text": "THE OLD MAN STILL DOESN'TBELIEVE MEAND WANTS TO PERSONALLYASK JIANG HE, AND HE DOESN'T WANT ME TO INTER- RUPT HIM.",
+          "confidence": 0.938,
+          "text_ar": "العجوز لا يزال لا يصدقني ويريد أن يسأل جيانغ هي شخصياً، ولا يريد مني مقاطعته."
+        },
+        {
+          "text": "WANT ONE?",
+          "confidence": 0.986,
+          "text_ar": "أتريد واحدة؟"
+        },
+        {
+          "text": "LET'S NOT TALK ABOUT IF THE WARRIORESS WILL MISSPEAK OR NOT, JUST LOOKING AT THE OLD MAN'S FACE.",
+          "confidence": 0.938,
+          "text_ar": "دعنا لا نتحدث عما إذا كانت المحاربة ستخطئ في الكلام أم لا، فقط انظر إلى وجه العجوز."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "FORGET IT...ALTHOUGH I'M ALITTLE WORRIED...",
+          "confidence": 0.921,
+          "text_ar": "انسَ الأمر... على الرغم من أنني قلق قليلاً..."
+        },
+        {
+          "text": "IF I DON'T LET HIM ASK, HE PROBABLY WON'T GIVE IT UP.",
+          "confidence": 0.892,
+          "text_ar": "إذا لم أدعه يسأل، فمن المحتمل أنه لن يتخلى عن الأمر."
+        },
+        {
+          "text": "I'M_GOING TO THE BALCONY TO HAVE A LOOK.",
+          "confidence": 0.91,
+          "text_ar": "سأذهب إلى الشرفة لألقي نظرة."
+        },
+        {
+          "text": "U-UNCLE!",
+          "confidence": 0.976,
+          "text_ar": "عـ-عمي!"
+        },
+        {
+          "text": "DON'TBE NERVOUS.",
+          "confidence": 0.958,
+          "text_ar": "لا تكن متوتراً."
+        },
+        {
+          "text": "紧张ing",
+          "confidence": 0.969,
+          "text_ar": "متوتر"
+        },
+        {
+          "text": "JUST BY BEING ABLE TO COMMUNICATE FACE-TO-FACE WITH ATANG DYNASTYPERSON, THE OLD MAN HAS SURPASSED EVERYONE IN HIS UNIT, WHICH IS ENOUGHTO BRAG FOR A LIFETIME,",
+          "confidence": 0.942,
+          "text_ar": "مجرد قدرته على التواصل وجهاً لوجه مع شخص من عهد أسرة تانغ، جعلت العجوز يتفوق على الجميع في وحدته، وهذا يكفي ليتفاخر به مدى الحياة."
+        },
+        {
+          "text": "THAT'S ONLY IF HE KNEW THE TRUTH.",
+          "confidence": 0.975,
+          "text_ar": "هذا فقط لو كان يعرف الحقيقة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "HAOZI!",
+          "confidence": 0.902,
+          "text_ar": "هاوزي!"
+        },
+        {
+          "text": "WHO?!",
+          "confidence": 0.99,
+          "text_ar": "من هذا؟!"
+        },
+        {
+          "text": "NO ONE TO BE SEEN",
+          "confidence": 0.907,
+          "text_ar": "لا أحد هنا"
+        },
+        {
+          "text": "UP HERE!!",
+          "confidence": 0.976,
+          "text_ar": "هنا في الأعلى!!"
+        },
+        {
+          "text": "HAOZI!",
+          "confidence": 0.913,
+          "text_ar": "هاوزي!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "HAVE AN APPLE!",
+          "confidence": 0.97,
+          "text_ar": "خذ تفاحة!"
+        },
+        {
+          "text": "FUCK OFF! YOU'RE MENT- ALLYILL! YOU'RE GIING MEAN APPLE THAT'S BIT?",
+          "confidence": 0.884,
+          "text_ar": "تباً لك! أنت مريض عقلياً! هل تعطيني تفاحة مقضومة؟"
+        },
+        {
+          "text": "WOULDN'T YOU GET IT,THIS APPLE.",
+          "confidence": 0.734,
+          "text_ar": "ألن تأخذها؟ هذه التفاحة..."
+        },
+        {
+          "text": "DOYOU HAVE NOTHING BETTER TODO?",
+          "confidence": 0.935,
+          "text_ar": "أليس لديك شيء أفضل لتفعله؟"
+        },
+        {
+          "text": "I AM PRETTY IDLE.",
+          "confidence": 0.774,
+          "text_ar": "أنا متفرغ تماماً."
+        },
+        {
+          "text": "THEN WAIT A MOMENT!",
+          "confidence": 0.984,
+          "text_ar": "إذن انتظر لحظة!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "COME! QINGZI!",
+          "confidence": 0.974,
+          "text_ar": "تعال! تشينغزي!"
+        },
+        {
+          "text": "LET'S FIGHT TO THE DEATH!!",
+          "confidence": 0.979,
+          "text_ar": "لنتقاتل حتى الموت!!"
+        },
+        {
+          "text": "..YOU..!",
+          "confidence": 0.814,
+          "text_ar": "..أنت..!"
+        },
+        {
+          "text": "YOU'RE THE MENTALLYILL ONE!",
+          "confidence": 0.947,
+          "text_ar": "أنت المريض عقلياً!"
+        },
+        {
+          "text": "ENOUGH NON- SENSE, WHERE'S YOURS?",
+          "confidence": 0.948,
+          "text_ar": "كفى هراءً، أين خاصتك؟"
+        },
+        {
+          "text": "I'M NOT ORESSING UP AND PLAYING AROUND WITH YOU!",
+          "confidence": 0.943,
+          "text_ar": "لن أتنكر وألعب معك!"
+        },
+        {
+          "text": "HELP ME TAKE A PICTURE...",
+          "confidence": 0.938,
+          "text_ar": "ساعدني في التقاط صورة..."
+        },
+        {
+          "text": "HAOZIIS REALLY ACTING LIKE AN IDIOT!",
+          "confidence": 0.951,
+          "text_ar": "هاوزي يتصرف كالأحمق حقاً!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "SHIT! NOT RIGHT NOW! I'M NOT ORESSED RIGHT!",
+          "confidence": 0.922,
+          "text_ar": "تباً! ليس الآن! ملابسي ليست مرتبة!"
+        },
+        {
+          "text": "ALRIGHT,I'LL TAKE IT AGAIN. WHAT'S UNCLE HOLDING IN HIS HANDS?",
+          "confidence": 0.941,
+          "text_ar": "حسناً، سألتقطها مجدداً. ماذا يحمل العم في يديه؟"
+        },
+        {
+          "text": "A BELT.MY DAD SAID THAT IF YOU TIE SOMETHING THERE, IT WON'T PUT ALL THE PRESSURE ON THE SHOULDERS,ANDITLL LOOK BETTERTOO.",
+          "confidence": 0.901,
+          "text_ar": "حزام. قال والدي إنه إذا ربطت شيئاً هناك، فلن يقع كل الثقل على الكتفين، وسيبدو الأمر أفضل أيضاً."
+        },
+        {
+          "text": "QIN'S PRODUCT",
+          "confidence": 0.965,
+          "text_ar": "منتج تشين"
+        },
+        {
+          "text": "QING'S PRODUCT",
+          "confidence": 0.983,
+          "text_ar": "منتج تشينغ"
+        },
+        {
+          "text": "QINGZI'SPIECE IS TOO SMALL, MINE IS WHAT REAL MEN WEAR! BOTH THE MATERIAL AND SIZE AREONE LEVEL HIGHER THAN XU QING'S PIECE!",
+          "confidence": 0.937,
+          "text_ar": "قطعة تشينغزي صغيرة جداً، خاصتي هي ما يرتديه الرجال الحقيقيون! كلاً من المادة والحجم بمستوى أعلى من قطعة شو تشينغ!"
+        },
+        {
+          "text": "GIRDLE YOUR WAISTSO THATYOU CAN BEAR THE WEIGHT, OTHERWISE IT WILL BECOME LOOSE AND YOUR SHOULDERS WILL TIRE OUT.",
+          "confidence": 0.951,
+          "text_ar": "شد خصرك حتى تتمكن من تحمل الوزن، وإلا فسيرتخي ويصاب كتفاك بالتعب."
+        },
+        {
+          "text": "AS EXPECTED OF YOU! THERE'S ACTLALLY SUCH A THING.",
+          "confidence": 0.946,
+          "text_ar": "كما هو متوقع منك! هناك حقاً شيء كهذا."
+        },
+        {
+          "text": "++ WHAT ARE THEY DOING?",
+          "confidence": 0.838,
+          "text_ar": "++ ماذا يفعلان؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "HAOZI WANTED ME TO TAKE A FULL BODY PICTURE OF HIM.",
+          "confidence": 0.906,
+          "text_ar": "طلب مني هاوزي التقاط صورة كاملة له."
+        },
+        {
+          "text": "YOU TWO FINISHED TALKING?",
+          "confidence": 0.93,
+          "text_ar": "هل انتهيتما من الحديث؟"
+        },
+        {
+          "text": "WANT ONE?",
+          "confidence": 0.989,
+          "text_ar": "أتريد واحدة؟"
+        },
+        {
+          "text": "YEAH, WE'RE DONE.",
+          "confidence": 0.903,
+          "text_ar": "أجل، انتهينا."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "IT'S SO AWESOME!",
+          "confidence": 0.938,
+          "text_ar": "إنه مذهل حقاً!"
+        },
+        {
+          "text": "MY ASS!",
+          "confidence": 0.975,
+          "text_ar": "مذهل في عينك!"
+        },
+        {
+          "text": "YOU ONLY KNOW HOW TO PLAY EVERY DAY!",
+          "confidence": 0.94,
+          "text_ar": "أنت لا تجيد سوى اللعب طوال اليوم!"
+        },
+        {
+          "text": "咔嚓咔嚓咔嚓",
+          "confidence": 0.781,
+          "text_ar": "كليك كليك كليك"
+        },
+        {
+          "text": "DOES UNCLE QIN'S HAND NOT HURT DOING THAT?",
+          "confidence": 0.934,
+          "text_ar": "ألا تؤلم يد العم تشين وهو يفعل ذلك؟"
+        },
+        {
+          "text": "IT LOOKS LIKE HAOZI IS FEELING IT, UNCLE QIN MUST BE USING A LOT OF FORCE.",
+          "confidence": 0.951,
+          "text_ar": "يبدو أن هاوزي يشعر بالألم، لابد أن العم تشين يستخدم الكثير من القوة."
+        },
+        {
+          "text": "WHAT DID HE ASK You?",
+          "confidence": 0.811,
+          "text_ar": "ما الذي سألك عنه؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "HE ASKED ME IF I REMEMBER WHICH PART OF ZHECHENG I WAS FROM AND WHERE MY HOME WAS.",
+          "confidence": 0.965,
+          "text_ar": "سألني إن كنت أتذكر أي جزء من تشيتشنغ أنتمي إليه وأين كان منزلي."
+        },
+        {
+          "text": "IS UNCLE TRYING TO...",
+          "confidence": 0.858,
+          "text_ar": "هل يحاول العم أن..."
+        },
+        {
+          "text": "THAT'S RIGHT, HE'S GOING TO HELP US.",
+          "confidence": 0.936,
+          "text_ar": "هذا صحيح، إنه سيساعدنا."
+        },
+        {
+          "text": "DON'T KEEP ON CALLING HIM UNCLE,",
+          "confidence": 0.947,
+          "text_ar": "لا تستمر في مناداته بالعم،"
+        },
+        {
+          "text": "NEXT TIME,",
+          "confidence": 0.961,
+          "text_ar": "في المرة القادمة،"
+        },
+        {
+          "text": "KEEP CALLING HIM DAD.",
+          "confidence": 0.952,
+          "text_ar": "استمر في مناداته بأبي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "YOU'RE TEASING ME AGAIN!",
+          "confidence": 0.902,
+          "text_ar": "أنت تضايقني مجدداً!"
+        },
+        {
+          "text": "AUNTIE SHOULD BE BACK AFTER SHOPPING FOR GROCERIES IN ABIT.IFTHERES A LOT TO CARRY, I'LL GO DOWNSTAIRS TO HELP PICKTHEM UP.",
+          "confidence": 0.892,
+          "text_ar": "يجب أن تعود الخالة بعد شراء البقالة قريباً. إذا كان هناك الكثير لتحمله، سأنزل للأسفل للمساعدة في حملها."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "LOOK AT HIM, AND THEN LOOK AT YOU!",
+          "confidence": 0.898,
+          "text_ar": "انظر إليه، ثم انظر إلى نفسك!"
+        },
+        {
+          "text": "DAD,I'M RIGHT HERE.",
+          "confidence": 0.926,
+          "text_ar": "أبي، أنا هنا."
+        },
+        {
+          "text": "WAS I TALKING TO YOU?",
+          "confidence": 0.805,
+          "text_ar": "هل كنت أتحدث إليك؟"
+        },
+        {
+          "text": "TSK!",
+          "confidence": 0.995,
+          "text_ar": "تش!"
+        },
+        {
+          "text": "E 吓下 察",
+          "confidence": 0.584,
+          "text_ar": "شهقة"
+        },
+        {
+          "text": "Full Image",
+          "confidence": 0.981,
+          "text_ar": "صورة كاملة"
+        },
+        {
+          "text": "HOWVULGAR!I LOOKVERY HAND- SOME INCHAINMAIL ALRIGHT!",
+          "confidence": 0.93,
+          "text_ar": "يا للابتذال! أنا أبدو وسيماً جداً بالدرع المتسلسل، حسناً!"
+        }
+      ]
+    }
+  ]
+}
