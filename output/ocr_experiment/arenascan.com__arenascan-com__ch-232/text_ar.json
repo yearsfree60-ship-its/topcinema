@@ -1,0 +1,288 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "232",
+  "manga_title": "My Wife Is From a Thousand Years Ago 232",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "junitius junitius TS PR",
+          "confidence": 0.978,
+          "text_ar": "جونيشيوس - جونيشيوس - تي إس - مراجعة"
+        },
+        {
+          "text": "junitius junitius CL/RD TL Paragon Scans",
+          "confidence": 0.924,
+          "text_ar": "جونيشيوس - جونيشيوس - سي إل/آر دي - تي إل - Paragon Scans"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.999,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "ONE DAY TEN YEARS AGO",
+          "confidence": 0.981,
+          "text_ar": "قبل عشر سنوات، في يوم ما"
+        },
+        {
+          "text": "PROUD AND LAUGHING IN THE FACE OF A THOUSAND WAVES, PASSIONATE AND VICTORIOUS LIKE THE RED SUNLIGHT. WITH COURAGE AS UNYIELDING AS IRON, AND BONES AS STRONG AS FINE STEEL, A BROAD MIND REACHING A HUNDREDS OF MILES, AVISION THAT SPANS TEN THOUSAND MILES. SWEARING TO STRNE FOR SELF- IMRPOVEMENT, BECOMING A TRUE HERO.",
+          "confidence": 0.926,
+          "text_ar": "فخورٌ أضحك في وجه ألف موجة، شغوفٌ ومنتصرٌ كضوء الشمس الأحمر. بشجاعة لا تلين كأنها الحديد، وعظامٍ صلبة كالفولاذ النقي، وعقلٍ واسع يمتد لمئات الأميال، ورؤيةٍ تغطي عشرة آلاف ميل. أقسمُ أن أسعى لتطوير ذاتي، لأصبح بطلاً حقيقياً."
+        },
+        {
+          "text": "BE AGOOD MAN, STRNE FOR SELF- IMPROVEMENT EVERY DAN. A PASSIONATE MAN, MORE FERVENT THAN THE RED SUNLIGHT.",
+          "confidence": 0.911,
+          "text_ar": "كن رجلاً صالحاً، واسعَ لتطوير نفسك كل يوم. كن رجلاً شغوفاً، أكثر حماسة من ضوء الشمس الأحمر."
+        },
+        {
+          "text": "WHAT'S WITH THE GHOST CRYING AND WOLF HOWLING WHILE SHOWERING!?",
+          "confidence": 0.962,
+          "text_ar": "ما هذا النحيب والعويل الذي يشبه صراخ الأشباح والذئاب أثناء الاستحمام!؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "I CAN'T! I'M TOO SCARED TO SHOWER!",
+          "confidence": 0.958,
+          "text_ar": "لا أستطيع! أنا خائف جداً من الاستحمام!"
+        },
+        {
+          "text": "PUT ON SOME CLOTHES!",
+          "confidence": 0.978,
+          "text_ar": "ارتدِ بعض الملابس!"
+        },
+        {
+          "text": "H-HORROR MOVIE?",
+          "confidence": 0.988,
+          "text_ar": "هـ... فيلم رعب؟"
+        },
+        {
+          "text": "IT'S NOT SCARY, IT'S JUST A NORMAL. HORROR MOVIE.",
+          "confidence": 0.919,
+          "text_ar": "إنه ليس مخيفاً، إنه مجرد فيلم رعب عادي."
+        },
+        {
+          "text": "GHOSTS ARE NORMAL!",
+          "confidence": 0.987,
+          "text_ar": "الأشباح شيء عادي!"
+        },
+        {
+          "text": "GHOSTS DON'T EXIST, SO WHY SHOULD YOU BEAFRAID? BE AFRAID?",
+          "confidence": 0.914,
+          "text_ar": "الأشباح لا وجود لها، فلماذا تخاف؟ لماذا تخاف؟"
+        },
+        {
+          "text": "LET ME GO!",
+          "confidence": 0.95,
+          "text_ar": "دعني أذهب!"
+        },
+        {
+          "text": "THEN WE'RE NOT WATCHING?",
+          "confidence": 0.938,
+          "text_ar": "إذن لن نشاهده؟"
+        },
+        {
+          "text": "IF WE DON'T WATCH THEN I'LL HAVE TO STUDY. THIS MOVE DOESN'T SEEM AS SCARY AS THE ONE BEFORE.IT'S JUST A CHILD, HECAN BECUTDOWNWITH ONE SWORD STRIKE!",
+          "confidence": 0.934,
+          "text_ar": "إذا لم نشاهده، فسيتوجب عليّ الدراسة. هذا الفيلم لا يبدو مخيفاً كسابقه. إنه مجرد طفل، يمكن القضاء عليه بضربة سيف واحدة!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "UGH...",
+          "confidence": 0.962,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "I'M NOT WATCHING ANYMORE!",
+          "confidence": 0.929,
+          "text_ar": "لن أشاهد المزيد!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "NOT WATCHING ANYMORE? REALLY?",
+          "confidence": 0.992,
+          "text_ar": "لن تشاهدي المزيد؟ حقاً؟"
+        },
+        {
+          "text": "I'M GOING TO READ, I HAVEN'T READ ALL DAY.",
+          "confidence": 0.93,
+          "text_ar": "سأقرأ، لم أقرأ طوال اليوم."
+        },
+        {
+          "text": "Three-Body",
+          "confidence": 0.99,
+          "text_ar": "مشكلة الأجسام الثلاثة"
+        },
+        {
+          "text": "IF YOU WANT TO GO TO SCHOOL, YOU MUST STUDY,BUT'IF YOU DON'T WANT TO GO, YOU DON'T HAVE TO.",
+          "confidence": 0.885,
+          "text_ar": "إذا أردتِ الذهاب إلى المدرسة، يجب عليكِ الدراسة، لكن إذا كنتِ لا ترغبين في ذلك، فلا داعي."
+        },
+        {
+          "text": "I WANT. TO GO!",
+          "confidence": 0.91,
+          "text_ar": "أريد الذهاب!"
+        },
+        {
+          "text": "IF I WANT TO LIVE WELL IN THE MODERN TIMES, I HAVE TO STUDY!",
+          "confidence": 0.948,
+          "text_ar": "إذا أردت العيش بشكل جيد في العصر الحديث، يجب أن أدرس!"
+        },
+        {
+          "text": "READING IS THE SIMPLEST AND FASTEST WAY, IT IS ALSO THE FOUND- ATION. IT'S IMPOSSIBLE TO BUILD A TALL BUILDING FROM THE GROUN..",
+          "confidence": 0.907,
+          "text_ar": "القراءة هي الطريقة الأبسط والأسرع، وهي الأساس أيضاً. من المستحيل بناء مبنى شاهق من الأرض..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "NGHH~",
+          "confidence": 0.997,
+          "text_ar": "آه~"
+        },
+        {
+          "text": "GOING I'M TO TAKE A SHOWER FIRST.",
+          "confidence": 0.971,
+          "text_ar": "سأذهب للاستحمام أولاً."
+        },
+        {
+          "text": "OKAY.",
+          "confidence": 0.998,
+          "text_ar": "حسناً."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "DO YOU WANT ME TO ACCOMPANY YOU?",
+          "confidence": 0.804,
+          "text_ar": "هل تريدين مني مرافقتك؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "WHY IS HE TAKING SO LONG TO SHOWER!?",
+          "confidence": 0.945,
+          "text_ar": "لماذا يستغرق كل هذا الوقت في الاستحمام!؟"
+        },
+        {
+          "text": "I'M DONE SHOWERING~",
+          "confidence": 0.934,
+          "text_ar": "لقد انتهيت من الاستحمام~"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "...DOYOU WANTTODO SOMETHING ELSE?",
+          "confidence": 0.706,
+          "text_ar": "...هل تريدين القيام بشيء آخر؟"
+        },
+        {
+          "text": "YOu IF ME UP, WAKE I'LL BEAT you.",
+          "confidence": 0.597,
+          "text_ar": "إذا أيقظتني، فسأضربك."
+        },
+        {
+          "text": "YOU'RE NOT ASLEEP YET.",
+          "confidence": 0.953,
+          "text_ar": "أنتِ لم تنامي بعد."
+        },
+        {
+          "text": "IF I CAN'T FALL ASLEEP WITHIN FIVE MINUTESILL BEAT yOú TOO.",
+          "confidence": 0.726,
+          "text_ar": "إذا لم أستطع النوم خلال خمس دقائق، فسأضربك أنت أيضاً."
+        },
+        {
+          "text": "IT'S UNFAIR, BUT MY SKILLS ARE INFERIOR!",
+          "confidence": 0.978,
+          "text_ar": "هذا غير عادل، لكن مهاراتي أدنى!"
+        },
+        {
+          "text": "IT'S BETTER TO BE MORE RESTRAINED...",
+          "confidence": 0.931,
+          "text_ar": "من الأفضل أن أكون أكثر تحفظاً..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "I'M QUITE SATISFIED NOW!",
+          "confidence": 0.977,
+          "text_ar": "أنا راضٍ تماماً الآن!"
+        },
+        {
+          "text": "IF YOU KEEP PLAYING, I'LL BEAT Y0U.",
+          "confidence": 0.906,
+          "text_ar": "إذا استمريتِ في العبث، فسأضربك."
+        },
+        {
+          "text": "LET'S JUST BECOME SWORN SIBLINGS!",
+          "confidence": 0.958,
+          "text_ar": "لنصبح أخوة بالقسم!"
+        },
+        {
+          "text": "A COUPLE THAT'S NOT EVEN TOUCHING EACH OTHER, MIGHT AS WELL BECOME SWORN SIBLINGS, WE DON'T ASK TO BE BORN ON THE SAME YEAR, THE SAME MONTH, AND THE SAME DAY ..",
+          "confidence": 0.894,
+          "text_ar": "زوجان لا يلمسان بعضهما البعض، قد نصبح أخوة بالقسم، لا نشترط أن نولد في نفس السنة، ونفس الشهر، ونفس اليوم..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "IS THAT ENOLGH?",
+          "confidence": 0.928,
+          "text_ar": "هل هذا يكفي؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "SLEEP!",
+          "confidence": 0.996,
+          "text_ar": "نامي!"
+        },
+        {
+          "text": "HOWDID IT BECOME LIKE THIS..",
+          "confidence": 0.901,
+          "text_ar": "كيف وصل الأمر إلى هذا الحد..."
+        }
+      ]
+    }
+  ]
+}
