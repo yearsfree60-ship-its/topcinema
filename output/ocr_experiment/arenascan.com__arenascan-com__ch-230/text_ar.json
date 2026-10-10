@@ -1,0 +1,453 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "230",
+  "manga_title": "My Wife Is From a Thousand Years Ago 230",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "GONG PING MIGHT BE ENVIOUS THAT THERE'S SOME- ONE THINKING ABOUT YOUR FUTURE.",
+          "confidence": 0.941,
+          "text_ar": "قد يشعر غونغ بينغ بالحسد لأن هناك من يهتم بمستقبلك."
+        },
+        {
+          "text": "AS LONG AS WE DON'T BREAK UP, IT'S ALL AN INVESTMENT TOWARDS YOU BE- COMING A FAMILY MEMBER.",
+          "confidence": 0.911,
+          "text_ar": "طالما أننا لن ننفصل، فكل شيء نقوم به هو استثمار في كوننا عائلة واحدة."
+        },
+        {
+          "text": "YOU'RE THAT GOOD TO ME?",
+          "confidence": 0.951,
+          "text_ar": "هل أنت طيب معي إلى هذا الحد؟"
+        },
+        {
+          "text": "IT'SNOT THAT IM THAT GOOD TO YOU, WE'VE BECOME'A WHOLE NOW,",
+          "confidence": 0.832,
+          "text_ar": "الأمر ليس أنني طيب معك فحسب، بل لقد أصبحنا كيانًا واحدًا الآن."
+        },
+        {
+          "text": "I CAN'T JUST THINK ABOUT HOW I CAN IMPROVE MYSELF AND THENTAKEYOU WITH ME AFTER.I SHOULD TAKE YOUWITH ME AND CONSIDER HOW THE TWOOF US CAN LIVE A BETTER LIFE.",
+          "confidence": 0.924,
+          "text_ar": "لا يمكنني التفكير فقط في كيفية تطوير نفسي ثم اصطحابك معي لاحقًا، يجب أن آخذك معي ونفكر سويًا في كيفية عيش حياة أفضل."
+        },
+        {
+          "text": "THAT IS TO SAY,",
+          "confidence": 0.929,
+          "text_ar": "بمعنى آخر،"
+        },
+        {
+          "text": "IF I'M GOOD TO YOU, THEN I'M BEING GOOD TO MYSELF.IFYOULIVE WELL, THENIT'S GOODFOR BOTH OF US.",
+          "confidence": 0.928,
+          "text_ar": "إذا كنت طيبًا معك، فأنا طيب مع نفسي. إذا عشتِ حياة جيدة، فهذا جيد لكلينا."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "THEN WHY AREN'T YOU STUDYING?",
+          "confidence": 0.923,
+          "text_ar": "إذًا، لماذا لا تدرسين؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "I'M GOING TO MAKE LUNCH.",
+          "confidence": 0.906,
+          "text_ar": "سأذهب لتحضير الغداء."
+        },
+        {
+          "text": "AHEM...SO IF SHE'S INTERESTED IN ME, YOU DON'T HAVE TO BE JEALOUS.",
+          "confidence": 0.879,
+          "text_ar": "أحم... لذا إذا كانت مهتمة بي، فلا داعي لأن تشعري بالغيرة."
+        },
+        {
+          "text": "SHE'S JUST TRYING TO MAKE FRIENDS, WHAT'S THERE'TO BE JEALOUS ABOUT?",
+          "confidence": 0.911,
+          "text_ar": "إنها تحاول فقط تكوين صداقات، ما الذي يدعو للغيرة؟"
+        },
+        {
+          "text": "心恭香 动",
+          "confidence": 0.356,
+          "text_ar": "خفقان قلب"
+        },
+        {
+          "text": "UNLESS...",
+          "confidence": 0.953,
+          "text_ar": "إلا إذا..."
+        },
+        {
+          "text": "YOU REALLY DO LIKE HER HIGH HEELS?",
+          "confidence": 0.958,
+          "text_ar": "هل يعجبك حذاؤها ذو الكعب العالي حقًا؟"
+        },
+        {
+          "text": "IDON'T!",
+          "confidence": 0.929,
+          "text_ar": "لا يعجبني!"
+        },
+        {
+          "text": "Elec",
+          "confidence": 0.943,
+          "text_ar": "كهرباء"
+        },
+        {
+          "text": "THEN EVERY- THING IS FINE,",
+          "confidence": 0.954,
+          "text_ar": "إذًا كل شيء على ما يرام."
+        },
+        {
+          "text": "I'LL BEAT YOU UP IF YOU DARE TO LIKE IT.",
+          "confidence": 0.914,
+          "text_ar": "سأبرحك ضربًا إن تجرأت على الإعجاب به."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "FORLITTLE JIANG HE, THIS IS NOT NORMAL,",
+          "confidence": 0.949,
+          "text_ar": "بالنسبة لشياو جيانغ هي، هذا ليس طبيعيًا."
+        },
+        {
+          "text": "FORMORDERN PEOPLE, INTRODUCING YOUR BOYFRIENDTO YOUR BESTFRIEND JIS COMPLETELY NORMAL.",
+          "confidence": 0.898,
+          "text_ar": "بالنسبة للناس في العصر الحديث، تقديم حبيبك لصديقتك المقربة أمر طبيعي تمامًا."
+        },
+        {
+          "text": "A NORMALPROCEDURE WOULD BE INVITING MY GIRLFRIEND'S BEST FRIEND TO A NICE RESTAURANT FOR DINNER,",
+          "confidence": 0.932,
+          "text_ar": "الإجراء الطبيعي سيكون دعوة صديقة حبيبتي المقربة إلى مطعم لطيف لتناول العشاء."
+        },
+        {
+          "text": "JUDGE- MENT BEGINS",
+          "confidence": 0.961,
+          "text_ar": "بدء التقييم"
+        },
+        {
+          "text": "THEN I WOULD SHOWCONCERN SO THAT HER BEST FRIEND CAN GETA GOOD FIRST IMPRESSION.",
+          "confidence": 0.938,
+          "text_ar": "ثم سأظهر اهتمامي حتى تتمكن صديقتها المقربة من تكوين انطباع أول جيد."
+        },
+        {
+          "text": "INTHE END...",
+          "confidence": 0.91,
+          "text_ar": "في النهاية..."
+        },
+        {
+          "text": "I WAS HOLDING A THERMOSCUP AND BRAGGING INTHESUN WITH THE SECURITY GUARDATTHE GATE?",
+          "confidence": 0.947,
+          "text_ar": "كنت أحمل كوبًا حراريًا وأتباهى تحت الشمس مع حارس الأمن عند البوابة؟"
+        },
+        {
+          "text": "NO NO NO, IT DOESN'TMATTERANY- MORE.WHATISHOULD 1 A LAMENT ABOUT IS THE ACCELERATEDGROWTH OFLITTLE JIANG HE.",
+          "confidence": 0.187,
+          "text_ar": "لا، لا، لا، لم يعد ذلك مهمًا. ما يجب أن أتحسر عليه هو النمو المتسارع لشياو جيانغ هي."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "THE MORE THINGS SHE'S EXPOSED TO, THE FASTER SHE INTEGRATES.",
+          "confidence": 0.96,
+          "text_ar": "كلما زادت الأشياء التي تتعرض لها، زادت سرعة اندماجها."
+        },
+        {
+          "text": "THE GIRL WHO WAS DRENCHED IN RAIN WHILE HOLDING A SWORD IN THE HALLWAY,",
+          "confidence": 0.924,
+          "text_ar": "الفتاة التي كانت غارقة في المطر وهي تحمل سيفًا في الردهة،"
+        },
+        {
+          "text": "CANALREADY JOKE AROUND WITH ME.",
+          "confidence": 0.936,
+          "text_ar": "أصبحت قادرة الآن على المزاح معي."
+        },
+        {
+          "text": "I'LL BRING UNCLE ZHAO SOME TEA.FRIENDS SHOULD TREATEACHOTHER THE WAYTHEY WOULD LIKETO BE TREATED THEMSELVES.",
+          "confidence": 0.929,
+          "text_ar": "سأحضر للعم تشاو بعض الشاي. يجب أن يعامل الأصدقاء بعضهم البعض بالطريقة التي يحبون أن يُعاملوا بها."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "WHY ARE YOU TAKING OUT TEA LEAVES?",
+          "confidence": 0.963,
+          "text_ar": "لماذا تخرجين أوراق الشاي؟"
+        },
+        {
+          "text": "GIVING SOME TO UNCLE ZHAO.",
+          "confidence": 0.95,
+          "text_ar": "سأعطي بعضًا منها للعم تشاو."
+        },
+        {
+          "text": "YOU'RE GOING OUT FOR TEA THIS AFTERNOON?",
+          "confidence": 0.96,
+          "text_ar": "هل ستخرجين لتناول الشاي بعد الظهر؟"
+        },
+        {
+          "text": "MM, WANT TOGO WITH?",
+          "confidence": 0.88,
+          "text_ar": "مم، هل تودين الذهاب معي؟"
+        },
+        {
+          "text": "I PREFER SITTING WITH GIRLS.",
+          "confidence": 0.959,
+          "text_ar": "أفضل الجلوس مع الفتيات."
+        },
+        {
+          "text": "SHE'S MAKING IT SOUND LIKE I ALWAYS LIKETOSIT WITHOLD MEN..",
+          "confidence": 0.933,
+          "text_ar": "إنها تجعل الأمر يبدو وكأنني أحب دائمًا الجلوس مع كبار السن..."
+        },
+        {
+          "text": "WHY ARE YOU BEING SO POLITE? YOU'RE ACTING LIKE WE'RE STRANGERS!",
+          "confidence": 0.948,
+          "text_ar": "لماذا أنت مهذب للغاية؟ تتصرف وكأننا غرباء!"
+        },
+        {
+          "text": "IT'S THE LEAST I SHOULD DO.",
+          "confidence": 0.903,
+          "text_ar": "هذا أقل ما يمكنني فعله."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "AI, THIS KID! WHY DO YOU ACT LIKE ANOLD MANAT SUCH A YOUNG AGE? WHERE ARE YOUR FRIENDS?",
+          "confidence": 0.886,
+          "text_ar": "آي، هذا الطفل! لماذا تتصرف مثل رجل عجوز في مثل هذه السن الصغيرة؟ أين أصدقاؤك؟"
+        },
+        {
+          "text": "THEY'RE BUSY, HOW CAN THEY BE AS FREE AS ME?",
+          "confidence": 0.934,
+          "text_ar": "إنهم مشغولون، كيف يمكنهم أن يكونوا متفرغين مثلي؟"
+        },
+        {
+          "text": "MOREOVER, I USUALLY DRINK ALCOHOL WITH THEM WHILEI DRINK TEAWITH YOU.I CAN'T DRINK ALCOHOL LIKE I USED TO ANYMORE, SINCEIT'S TIGHTLY CON- TROLLED.AREN'T ALL WOMEN LIKE THAT?",
+          "confidence": 0.944,
+          "text_ar": "علاوة على ذلك، عادة ما أشرب الكحول معهم بينما أشرب الشاي معك. لم أعد أستطيع شرب الكحول كما كنت أفعل سابقًا، لأنه مراقب بشدة. أليست كل النساء هكذا؟"
+        },
+        {
+          "text": "WHENWE FIRST GOT TOGETHER, SHE WAS QUITE OBEDIENT, BUT AFTER A WHILE, SHE JUST TURNED INTO A TIGER..",
+          "confidence": 0.888,
+          "text_ar": "عندما التقينا لأول مرة، كانت مطيعة جدًا، لكن بعد فترة، تحولت إلى نمرة..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "HAHA! LOOK AT HOW SCARED YOU ARE! ￥",
+          "confidence": 0.51,
+          "text_ar": "هاها! انظر كم أنت خائف!"
+        },
+        {
+          "text": "WHEN ARE YOU TWO GETTING MARRIED?",
+          "confidence": 0.876,
+          "text_ar": "متى ستتزوجان؟"
+        },
+        {
+          "text": "SOON,SOON, SHE ALREADY MET MY PARENTS,SO WITHIN TWO YEARS.",
+          "confidence": 0.866,
+          "text_ar": "قريبًا، قريبًا، لقد التقت بوالدي بالفعل، لذا خلال عامين."
+        },
+        {
+          "text": "LET ME TELL YOU, WOMEN ARE LIKE THAT. SHE'S LIKE A KITTEN AT THE BEGINNING,BUT AS TIME GOES BY,SHE'LL BECOME ANNOYED WHEN THERE'S TOO MANY TRIVIAL THINGS. IF SHE BECOMES ANNOYED TOO MUCH,SHE'LL HAVE A BAD TEMPER. x++",
+          "confidence": 0.865,
+          "text_ar": "دعني أخبرك، النساء هكذا. تكون كقطة صغيرة في البداية، لكن مع مرور الوقت، ستنزعج من كثرة الأمور التافهة. وإذا انزعجت كثيرًا، فسيصبح مزاجها سيئًا."
+        },
+        {
+          "text": "THEN SOMETIMES YOU'LL FEEL LIKE LIKE, EH, WHY IS THIS DIFFERENT FROM BEFORE? HOW COME THEY BECAME A DIFFER- ENT PERSON?",
+          "confidence": 0.947,
+          "text_ar": "ثم ستشعر أحيانًا، إيه، لماذا هذا مختلف عما كان عليه من قبل؟ كيف أصبحوا شخصًا مختلفًا؟"
+        },
+        {
+          "text": "IS ALNTY LIKE THAT?",
+          "confidence": 0.902,
+          "text_ar": "هل خالتك هكذا؟"
+        },
+        {
+          "text": "I CAN'T...DO ANYTHING ABOUT THE SMOKING, BUT I CONCEDE TO HER ONEVERYTHING ELSE.",
+          "confidence": 0.847,
+          "text_ar": "لا أستطيع... فعل أي شيء حيال التدخين، لكنني أستسلم لها في كل شيء آخر."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "I PRETENDNOT TO HEAR HER AND LET HER QUARREL, SINCE I'LL FEEL BETTER THAT WAY. OTHERWISE, WE WOULD QUARREL FOR A WHILE.",
+          "confidence": 0.918,
+          "text_ar": "أتظاهر بعدم سماعها وأدعها تتشاجر، لأنني سأشعر بتحسن بهذه الطريقة. وإلا، فسنتشاجر لفترة طويلة."
+        },
+        {
+          "text": "SO HOW LONG HAVE YOU TWO BEEN TOGETHER?",
+          "confidence": 0.942,
+          "text_ar": "إذًا منذ متى وأنتما معًا؟"
+        },
+        {
+          "text": "THREE YEARS.",
+          "confidence": 0.992,
+          "text_ar": "ثلاث سنوات."
+        },
+        {
+          "text": "IT SHOULD BE THREE YEARS..DON'T LET HER HEAR THAT, OTHERWISE SHE'LL GET ON ME AGAIN.",
+          "confidence": 0.911,
+          "text_ar": "يجب أن تكون ثلاث سنوات... لا تدعها تسمع ذلك، وإلا ستوبخني مجددًا."
+        },
+        {
+          "text": "YOU DON'T REMEMBER?",
+          "confidence": 0.957,
+          "text_ar": "ألا تتذكر؟"
+        },
+        {
+          "text": "IT WAS VERY VAGUE AT THE START,EVEN HOLDING HANDS WAS HARD!",
+          "confidence": 0.958,
+          "text_ar": "كان الأمر غامضًا جدًا في البداية، حتى إمساك الأيدي كان صعبًا!"
+        },
+        {
+          "text": "AIYAH!I DIDN'T KNOW IF WE WERE TOGETHER ORNOT, BUT IT'S JUSTTHEN WESTARTED LIVING TOGETHER LATER.",
+          "confidence": 0.899,
+          "text_ar": "آياه! لم أكن أعرف ما إذا كنا معًا أم لا، لكننا بدأنا العيش معًا لاحقًا."
+        },
+        {
+          "text": "WHEN WE HELD HANDS AT THAT TIME, WE WERE ALREADY TO- GETHER.WE HAD TO GET MARRIED TO LIVE TOGETHER. LOOK AT YOU TWO,GOT TOGETHER AFTERLIVING TOGETHER.",
+          "confidence": 0.924,
+          "text_ar": "عندما أمسكنا أيدينا في ذلك الوقت، كنا بالفعل معًا. كان علينا الزواج لنعيش معًا. انظر إليكما، ارتبطتما بعد العيش معًا."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "WHATIF YOU TWO BREAK UP?",
+          "confidence": 0.875,
+          "text_ar": "ماذا لو انفصلتما؟"
+        },
+        {
+          "text": "I'LLBE BEATEN TO DEATH BY HER.",
+          "confidence": 0.945,
+          "text_ar": "سأُضرب حتى الموت على يدها."
+        },
+        {
+          "text": "AH. 小",
+          "confidence": 0.416,
+          "text_ar": "آه."
+        },
+        {
+          "text": "UNCLE ZHAO, YOU'RE THINK- ING OF...",
+          "confidence": 0.865,
+          "text_ar": "العم تشاو، أنت تفكر في..."
+        },
+        {
+          "text": "WE'RE HEADING OUT~",
+          "confidence": 0.944,
+          "text_ar": "نحن خارجون~"
+        },
+        {
+          "text": "TAKE CARE OF YOUR- SELVES NOW.",
+          "confidence": 0.927,
+          "text_ar": "اعتنيا بنفسكما الآن."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "SHE'S NOT STUDYING TODAY EITHER.",
+          "confidence": 0.967,
+          "text_ar": "إنها لا تدرس اليوم أيضًا."
+        },
+        {
+          "text": "YOU'RE BACK.",
+          "confidence": 0.968,
+          "text_ar": "لقد عدت."
+        },
+        {
+          "text": "WHERE'D YOU GO TO HAVE FUN?",
+          "confidence": 0.916,
+          "text_ar": "أين ذهبتِ للاستمتاع؟"
+        },
+        {
+          "text": "PINGPING AND I WENT SHOPPING, WATCHED A MOVIE, AND DRANK MILKTEA...",
+          "confidence": 0.938,
+          "text_ar": "ذهبت أنا وبينغ بينغ للتسوق، وشاهدنا فيلمًا، وشربنا شاي الحليب..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "THERE WERE CLAW MACHINES, BUT I DIDN'T GET ANYTHING.",
+          "confidence": 0.922,
+          "text_ar": "كانت هناك آلات التقاط الجوائز، لكنني لم أحصل على شيء."
+        },
+        {
+          "text": "IT'S OKAY~ YOU CAN TRY AGAIN NEXT TIME!",
+          "confidence": 0.937,
+          "text_ar": "لا بأس~ يمكنك المحاولة مرة أخرى في المرة القادمة!"
+        },
+        {
+          "text": "点击优先展示",
+          "confidence": 0.819,
+          "text_ar": "انقر للعرض المفضل"
+        },
+        {
+          "text": "唐人资探案 上海22",
+          "confidence": 0.541,
+          "text_ar": "تحريات المحقق تانغ - شنغهاي 22"
+        },
+        {
+          "text": "OH YEAH! I SAW YOUR POLICE FRIEND.",
+          "confidence": 0.923,
+          "text_ar": "أوه أجل! لقد رأيت صديقك الشرطي."
+        },
+        {
+          "text": "0西游记女儿 上M2",
+          "confidence": 0.348,
+          "text_ar": "رحلة إلى الغرب: مملكة النساء"
+        },
+        {
+          "text": "04红海行动 上日791.305 05颜出没·变形记 上海WB1.122",
+          "confidence": 0.536,
+          "text_ar": "عملية البحر الأحمر - تحول الشخصيات"
+        },
+        {
+          "text": "2018.02.16 今日实时108087.9万 北京时间15:07:50",
+          "confidence": 0.857,
+          "text_ar": "2018.02.16 الإجمالي اليومي 108087.9 مليون - توقيت بكين 15:07:50"
+        },
+        {
+          "text": "HE WAS WATCHING A MOVIE WITH A GIRL.",
+          "confidence": 0.94,
+          "text_ar": "كان يشاهد فيلمًا مع فتاة."
+        },
+        {
+          "text": "HAOZI?",
+          "confidence": 0.983,
+          "text_ar": "هاوزي؟"
+        }
+      ]
+    }
+  ]
+}
