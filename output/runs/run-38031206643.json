@@ -502,6 +502,18 @@
           ],
           "originalBytes": 8273752,
           "compressedBytes": 1368992
+        },
+        {
+          "label": "الفصل 50",
+          "num": "50",
+          "chNum": 50.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/50/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-50/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-50/002.webp"
+          ],
+          "originalBytes": 4942766,
+          "compressedBytes": 589086
         }
       ]
     }
