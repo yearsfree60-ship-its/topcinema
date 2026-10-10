@@ -1,0 +1,482 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "152",
+  "manga_title": "My Wife Is From a Thousand Years Ago 152",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "junitius junitius junitius junitius CL/RD RP TL TS",
+          "confidence": 0.93,
+          "text_ar": "فريق العمل"
+        },
+        {
+          "text": "Paragon Scans",
+          "confidence": 0.993,
+          "text_ar": "Paragon Scans"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.991,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "WHY DID YOU PLLL DOWN THE SHADES?",
+          "confidence": 0.89,
+          "text_ar": "لماذا أنزلتِ الستائر؟"
+        },
+        {
+          "text": "I-IT WAS TOo Sunny, SO I PULLED THEM DOWN TO BLOCK THE SUNLIGHT.",
+          "confidence": 0.724,
+          "text_ar": "كـ..كان الجو مشمسًا للغاية، لذا أنزلتها لحجب ضوء الشمس."
+        },
+        {
+          "text": "YOU DON'T NEED TO WEAR THOSE AT HOME.",
+          "confidence": 0.879,
+          "text_ar": "لا داعي لارتداء ذلك وأنتِ في المنزل."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "IF YOU'RE HOT, YOUCAN TURN ON THE AIR CONDITIONER, I'LL TEACH YOU HOW.",
+          "confidence": 0.882,
+          "text_ar": "إذا كنتِ تشعرين بالحر، يمكنكِ تشغيل المكيف، سأعلمكِ كيف."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "iclou",
+          "confidence": 0.846,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "THIS BUTTON IS THE POWER BUTTON,",
+          "confidence": 0.98,
+          "text_ar": "هذا الزر هو زر التشغيل."
+        },
+        {
+          "text": "THIS IS TO ADJUST THE TEMPERATURE, THIS IS TO CH ANGE THE WIND DIRECTION.",
+          "confidence": 0.943,
+          "text_ar": "وهذا لضبط درجة الحرارة، وهذا لتغيير اتجاه تدفق الهواء."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "IT REALLY IS COOL..",
+          "confidence": 0.775,
+          "text_ar": "إنه منعش حقًا.."
+        },
+        {
+          "text": "YOUR ROOM DOESN'T SEEM TO HAVE THIS.",
+          "confidence": 0.93,
+          "text_ar": "غرفتكِ لا يبدو أنها تحتوي على واحد."
+        },
+        {
+          "text": "LET'S SWITCH ROOMS, BACK THE I'M NOT AFRAID HEAT. THE OF",
+          "confidence": 0.888,
+          "text_ar": "دعينا نتبادل الغرف، فأنا لست خائفة من الحر."
+        },
+        {
+          "text": "腾讯动件",
+          "confidence": 0.682,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "YOU CAN STAY HERE, HOW CAN WEKEEP ON SWITCHING ROOMS?",
+          "confidence": 0.929,
+          "text_ar": "يمكنكِ البقاء هنا، كيف لنا أن نستمر في تبادل الغرف؟"
+        },
+        {
+          "text": "腾汛动",
+          "confidence": 0.858,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "IT DOES IF GET TOOHOT TO HANDLE...",
+          "confidence": 0.932,
+          "text_ar": "الأمر سيصبح لا يطاق إذا اشتدت الحرارة..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "I CAN COME SLEEP ON YOUR FLOOR!",
+          "confidence": 0.889,
+          "text_ar": "يمكنني المجيء والنوم على أرضية غرفتك!"
+        },
+        {
+          "text": "集 ACloue merge.com",
+          "confidence": 0.872,
+          "text_ar": "آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "HAHA,IT'S ACTUALLY NOT THAT HOT.",
+          "confidence": 0.913,
+          "text_ar": "هاها، في الواقع الجو ليس حارًا لتلك الدرجة."
+        },
+        {
+          "text": "集二数理 lerge.com ouan",
+          "confidence": 0.774,
+          "text_ar": "آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "WAIT, ISN'T THAT...",
+          "confidence": 0.925,
+          "text_ar": "انتظري، أليس ذلك..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "...WHAT DID YoU JUST SAY?",
+          "confidence": 0.708,
+          "text_ar": "...ما الذي قلتِه للتو؟"
+        },
+        {
+          "text": "THAT THING WAS BOUGHT FOR WEARING, WHAT IS THERE TO HIDE?",
+          "confidence": 0.93,
+          "text_ar": "هذا الشيء اشتُري ليرتدى، ما الذي يدعو لإخفائه؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": []
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "据 妥站 NG AciouaMer CO",
+          "confidence": 0.169,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "..DIDN'T YOU SECRETLY WEARIT.",
+          "confidence": 0.754,
+          "text_ar": "..ألم ترتديه سرًا؟"
+        },
+        {
+          "text": "HOW CAN YOU SMEAR A PERSON'S INNOCENCE OUT OF NOWHERE?! INEVERWORETHEM!",
+          "confidence": 0.942,
+          "text_ar": "كيف تتهمين شخصًا بريئًا من العدم؟! لم أرتدِها أبدًا!"
+        },
+        {
+          "text": "I SAW IT THAT TIME! YOU WERE WASHING SOCKS EARLY IN THE MORNING.",
+          "confidence": 0.926,
+          "text_ar": "رأيت ذلك في تلك المرة! كنتِ تغسلين الجوارب في وقت مبكر من الصباح."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "I WAS...",
+          "confidence": 0.952,
+          "text_ar": "كنتُ..."
+        },
+        {
+          "text": "集云数据 AcloudMerge.com",
+          "confidence": 0.921,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "机动漫",
+          "confidence": 0.86,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "ANYWAY, I WASN'T BEING SNEAKY! YOU CAN WEAR WHATEVER YOU WANT, IT'S UP TO YoU! uP TO YoU!",
+          "confidence": 0.678,
+          "text_ar": "على أية حال، لم أكن أتصرف بخفية! يمكنكِ ارتداء ما تشائين، الأمر يعود إليكِ! يعود إليكِ!"
+        },
+        {
+          "text": "SHE WILL WEAR THEM ONE DAY!",
+          "confidence": 0.954,
+          "text_ar": "سترتديها يومًا ما!"
+        },
+        {
+          "text": "RUR a",
+          "confidence": 0.22,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "电Qaa",
+          "confidence": 0.303,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "BUT WHY IS SHE STILL SORESISTANT, IT'S CLEAR THAT SHE ISN'T AGAINST KISSING AND HUGGING NOW.",
+          "confidence": 0.948,
+          "text_ar": "لكن لماذا لا تزال تقاوم؟ من الواضح أنها لم تعد تمانع التقبيل والعناق الآن."
+        },
+        {
+          "text": "WHAT IS SHE STRUGGLING WITH? IS SHE STILL AFRAID THAT I WILL DO SOMETHING..",
+          "confidence": 0.954,
+          "text_ar": "ما الذي تعاني منه؟ هل لا تزال تخشى أن أفعل شيئًا ما.."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "TO BE FAIR,I CAN'T BEAT YOU,SO THERE IS NOTHING TO WORRY ABOUT.EVEN YOUR BARE LEGS ARE OFTEN TOUCHED BY ME, YET YOU'RE AFRAID TO WEAR SOCKS?",
+          "confidence": 0.908,
+          "text_ar": "لأكون منصفًا، لا يمكنني التغلب عليكِ، لذا لا يوجد ما يدعو للقلق. حتى ساقاكِ العاريتان تلمسهما يداي كثيرًا، ومع ذلك تخافين من ارتداء الجوارب؟"
+        },
+        {
+          "text": "WHAT IF YOU LICK ME? I CAN'T SEWYOUR MOUTH SHUT.",
+          "confidence": 0.918,
+          "text_ar": "ماذا لو قمت بلعقي؟ لا يمكنني خياطة فمكِ!"
+        },
+        {
+          "text": "HOWCOULO 1 D0 SOMETHING LIKE THAT?",
+          "confidence": 0.881,
+          "text_ar": "كيف لي أن أفعل شيئًا كهذا؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "HOW COULD YOU NOT? YOU KISSED MY FOOT LAST TIME.",
+          "confidence": 0.745,
+          "text_ar": "كيف لا يمكنكِ؟ لقد قبلتِ قدمي في المرة الماضية."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "Learning Ma",
+          "confidence": 0.962,
+          "text_ar": "مادة تعليمية 1"
+        },
+        {
+          "text": "Learning Material 2",
+          "confidence": 0.962,
+          "text_ar": "مادة تعليمية 2"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "I'VE SEEN THROUGH IT A LONG TIME AGO, WEARING THOSE WEIRD CLOTHES IS TO GET READY TO DO NASTY THINGS.",
+          "confidence": 0.849,
+          "text_ar": "لقد كشفتُ أمركِ منذ زمن طويل، ارتداء تلك الملابس الغريبة هو استعداد للقيام بأشياء منحرفة."
+        },
+        {
+          "text": "AclouaMerge.com",
+          "confidence": 0.918,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "...YOU CAN'T \"FOOLME.",
+          "confidence": 0.771,
+          "text_ar": "...لا يمكنكِ خداعي."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "ALRIGHT, LET'S NOT THINK ABOUT THAT! HURRY UP AND STUDY, THERE ARE SO MANY WORKBOOKS LEFT TO BE DONE!",
+          "confidence": 0.916,
+          "text_ar": "حسنًا، دعينا لا نفكر في ذلك! أسرعي وادرسِ، لا يزال هناك الكثير من كتب التمارين التي يجب إنجازها!"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "屈巴巴",
+          "confidence": 0.884,
+          "text_ar": "(تتظاهر بالبراءة)"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "I DON'T WANT TO,I DON'T WANT TOSOLVE PROBLEMS.",
+          "confidence": 0.952,
+          "text_ar": "لا أريد ذلك، لا أريد حل المسائل."
+        },
+        {
+          "text": "YOU VIOLENT WARRIORESS,CAN YOU NOT ACT LIKE YOU'VE BEEN WRONGED?",
+          "confidence": 0.92,
+          "text_ar": "أيتها المحاربة العنيفة، ألا يمكنكِ التوقف عن التصرف وكأنكِ مظلومة؟"
+        },
+        {
+          "text": "oudMerg",
+          "confidence": 0.944,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "IT FEELS INCREDIBLY FAKE.",
+          "confidence": 0.988,
+          "text_ar": "يبدو الأمر مصطنعًا للغاية."
+        },
+        {
+          "text": "ANYWAY, I WON'T",
+          "confidence": 0.937,
+          "text_ar": "على أية حال، لن أفعل ذلك."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "DO IT! IF YOU ASK ME TO DO MATH PROBLEMS AGAIN, I'LL BEAT YOU!",
+          "confidence": 0.929,
+          "text_ar": "افعل ذلك! إذا طلبت مني حل مسائل الرياضيات مجددًا، سأضربك!"
+        },
+        {
+          "text": "THERE WE GO, THAT IS MORE LIKE IT!",
+          "confidence": 0.905,
+          "text_ar": "هذا هو المطلوب، هكذا بدأتِ تشبهين نفسكِ!"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "XU QING IS GOING ON A BUSINESS TRIP FOR A WEEK IN ORDER TOPUSH MYSELF TO WORK HARDER IN MATH, I STARTED WRITING THIS DIARY.",
+          "confidence": 0.947,
+          "text_ar": "سيسافر شو تشينغ في رحلة عمل لمدة أسبوع، ولأدفع نفسي للعمل بجدية أكبر في الرياضيات، بدأت في كتابة هذه المذكرات."
+        },
+        {
+          "text": "云数据 AcloudMerge.com 享",
+          "confidence": 0.074,
+          "text_ar": "آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "JUNE 9TH: THE PLAN IS TO FINISH ALL OF THE \"ONE LESSON, ONE EXERCISE\" FOR THE FOURTH GRADE LEVEL AND WAIT FOR XU QING TO CHECK, AND THEN PREPARE TO LEARN THE GEOMETRYFORMULAS AND SIMPLE EQUATIONSFOR THE FIFTH GRADE LEVEL.",
+          "confidence": 0.94,
+          "text_ar": "9 يونيو: الخطة هي إنهاء جميع تمارين \"درس واحد، تمرين واحد\" للمستوى الرابع وانتظار شو تشينغ ليراجعها، ثم الاستعداد لتعلم قوانين الهندسة والمعادلات البسيطة للمستوى الخامس."
+        },
+        {
+          "text": "腾讯动漫",
+          "confidence": 0.987,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "JUNE 10TH: WATCHED FILMS, ATE POPSICLES, AND PLAYED GAMES",
+          "confidence": 0.959,
+          "text_ar": "10 يونيو: شاهدت أفلامًا، وتناولت المثلجات، ولعبت الألعاب."
+        },
+        {
+          "text": "JUNE 1ITH: WATCHED FILMS AND PLAYED GAMES. 集云数 AcloudMerge.c",
+          "confidence": 0.916,
+          "text_ar": "11 يونيو: شاهدت أفلامًا ولعبت الألعاب. آي كلاود ميرج"
+        },
+        {
+          "text": "动动漫",
+          "confidence": 0.743,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "重业专业 -jiu",
+          "confidence": 0.189,
+          "text_ar": "آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "JUNE 12TH: I WENT TO THE PUBLIC ACTIVITYAREA TOPLAYWITH THE FITNESS FACILMES AND THEN CONTINUED TO WATCH FILMS WHEN I WENT BACK.",
+          "confidence": 0.95,
+          "text_ar": "12 يونيو: ذهبت إلى منطقة الأنشطة العامة للعب بالمرافق الرياضية، ثم واصلت مشاهدة الأفلام عند عودتي."
+        },
+        {
+          "text": "腾讯动漫",
+          "confidence": 0.956,
+          "text_ar": "تينسنت للأنمي"
+        },
+        {
+          "text": "JUNE 13TH.",
+          "confidence": 0.994,
+          "text_ar": "13 يونيو."
+        },
+        {
+          "text": "JIANG HE, OH JIANGHE! HOW CAN YOU BE SO DEPRAVED!? HAVE YOU FORGOTTEN YOUR PREVIOUS STUDYPLAN? YOU APT RCIAiGUCN AT RU YI",
+          "confidence": 0.601,
+          "text_ar": "جيانغ هي، أوه جيانغ هي! كيف يمكنكِ أن تكوني بهذا الانحطاط؟! هل نسيتِ خطتكِ الدراسية السابقة؟"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "CHNTDE CHUOMCDHTDTAU QING AGAIN FOR BEING A STUPID ILLITERATE! YOU CAN'TKEEPGOING ON LIKE THIS!",
+          "confidence": 0.716,
+          "text_ar": "سأوبخ شو تشينغ مجددًا لكونه جاهلًا غبيًا! لا يمكنكِ الاستمرار على هذا المنوال!"
+        },
+        {
+          "text": "因 ~~ 中心 集云数据 udMerge.com",
+          "confidence": 0.671,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "JUNE 14TH: WATCHED FILMS AND PLAYED GAMES.",
+          "confidence": 0.949,
+          "text_ar": "14 يونيو: شاهدت أفلامًا ولعبت الألعاب."
+        },
+        {
+          "text": "JUNE 15TH: WATCHED WHTCHED FILMS.",
+          "confidence": 0.888,
+          "text_ar": "15 يونيو: شاهدت أفلامًا."
+        }
+      ]
+    }
+  ]
+}
