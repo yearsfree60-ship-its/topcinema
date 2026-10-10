@@ -136162,6 +136162,29 @@
           "compressedBytes": 634162
         }
       ]
+    },
+    "azorafly.com__actually-i-was-the-real-one-1": {
+      "name": "actually i was the real one 1",
+      "chapters": [
+        {
+          "label": "الفصل 2",
+          "num": "2",
+          "chNum": 2.0,
+          "sourceUrl": "https://azorafly.com/series/actually-i-was-the-real-one-1/chapter-2",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-2/008.webp"
+          ],
+          "originalBytes": 18234383,
+          "compressedBytes": 2078142
+        }
+      ]
     }
   }
 }
