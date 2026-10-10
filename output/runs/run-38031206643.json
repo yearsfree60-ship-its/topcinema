@@ -2240,6 +2240,20 @@
           ],
           "originalBytes": 9402149,
           "compressedBytes": 1859036
+        },
+        {
+          "label": "الفصل 137",
+          "num": "137",
+          "chNum": 137.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/137/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-137/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-137/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-137/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-137/004.webp"
+          ],
+          "originalBytes": 8682698,
+          "compressedBytes": 1747948
         }
       ]
     }
