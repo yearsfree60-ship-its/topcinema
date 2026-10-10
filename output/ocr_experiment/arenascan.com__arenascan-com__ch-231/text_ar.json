@@ -1,0 +1,423 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "231",
+  "manga_title": "My Wife Is From a Thousand Years Ago 231",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "HAOZI BROUGHT A GIRL TO THE MOVIES?",
+          "confidence": 0.925,
+          "text_ar": "هاوزي اصطحب فتاةً إلى السينما؟"
+        },
+        {
+          "text": "INTERESTING.",
+          "confidence": 0.987,
+          "text_ar": "مثير للاهتمام."
+        },
+        {
+          "text": "GOING OUT FOR A TODAY MADE ME FEEL LIKE IT'S BETTER TO STAY AT HOME.",
+          "confidence": 0.952,
+          "text_ar": "الخروج اليوم جعلني أشعر أن البقاء في المنزل أفضل."
+        },
+        {
+          "text": "BESIDES, IT'S EXPENSIVE AND TIRING, AND YOU CAN JUST WATCH MOVIES AT HOME.",
+          "confidence": 0.957,
+          "text_ar": "علاوة على ذلك، الأمر مكلف ومرهق، ويمكنك ببساطة مشاهدة الأفلام في المنزل."
+        },
+        {
+          "text": "THAT'S BECAUSE YOU'RE NOT WITH ME.",
+          "confidence": 0.943,
+          "text_ar": "هذا لأنك لست معي."
+        },
+        {
+          "text": "TCH! WHEN I'M WITH YOU,I'LL BE TIED TO A CHAIR AND SPUN AROUND TO BE TORTURED!",
+          "confidence": 0.912,
+          "text_ar": "تشه! عندما أكون معك، سأكون مقيدة على كرسي وأُدار كالمجنونة لأتعرض للتعذيب!"
+        },
+        {
+          "text": "YOU HAVE TO EXPERIENCE IT AT LEAST ONCE WHEN YOU GO TO AN AMUSEMENT FOR THE FIRST TIME.",
+          "confidence": 0.905,
+          "text_ar": "عليكِ تجربة ذلك مرة واحدة على الأقل عند الذهاب إلى مدينة ترفيهية لأول مرة."
+        },
+        {
+          "text": "BUT IF I DON'T GO OUT TO HAVE FUN, I WON'T HAVE FRIENDS. IT'S BETTER TO GO OUT A LITTLE.",
+          "confidence": 0.924,
+          "text_ar": "لكن إن لم أخرج للاستمتاع، فلن يكون لدي أصدقاء. من الأفضل الخروج قليلًا."
+        },
+        {
+          "text": "TS/N: Jiang He is telling you all to touch grass.",
+          "confidence": 0.965,
+          "text_ar": "ملاحظة المترجم: جيانغ هي ينصحكم جميعًا بالخروج واستنشاق بعض الهواء الطلق."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "I LEARNED A LOT FROM PINGPING!",
+          "confidence": 0.964,
+          "text_ar": "لقد تعلمت الكثير من بينغ بينغ!"
+        },
+        {
+          "text": "WHAT DID YOU LEARN?",
+          "confidence": 0.954,
+          "text_ar": "ما الذي تعلمتِه؟"
+        },
+        {
+          "text": "A LOT OF STLIFF, JUST LIKE WHEN I'M WITH YOU,I LEARN A LOT OF THINGS BY LIST- ENING TO HER TALK,BLT MOST OF IT IS FOR GIRLS, LIKE MAKING A PHOTO LOOK BETTER WITH A FEWCLICKS!",
+          "confidence": 0.904,
+          "text_ar": "أشياء كثيرة، تمامًا كما هو الحال عندما أكون معك، أتعلم الكثير من الأشياء من خلال الاستماع إلى حديثها، لكن معظمها أمور تخص الفتيات، مثل تحسين مظهر الصورة ببضع نقرات!"
+        },
+        {
+          "text": "THAT'S CALLED BEAUTYCAM. BEAUTYCAI.",
+          "confidence": 0.961,
+          "text_ar": "هذا يُسمى \"بيوتيكام\". كاميرا التجميل."
+        },
+        {
+          "text": "HOW MAGICAL! ANDWITHAFEW MORE CLICKS,IT'LL LOOK LIKE A MON- STER WITH A POINTY MOUTH AND MON- KEY CHEEKS!",
+          "confidence": 0.936,
+          "text_ar": "يا للسحر! وببضع نقرات إضافية، سأبدو مثل وحش بفم مدبب وخدود قرد!"
+        },
+        {
+          "text": "LOOK AT THIS!",
+          "confidence": 0.948,
+          "text_ar": "انظر إلى هذا!"
+        },
+        {
+          "text": "O006OO",
+          "confidence": 0.233,
+          "text_ar": "أوهه!"
+        },
+        {
+          "text": "DOES IT LOOK LIKE ME?",
+          "confidence": 0.955,
+          "text_ar": "هل أبدو مثلي؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "POINTY MOUTH ANDMONKEY CHEEKS...",
+          "confidence": 0.917,
+          "text_ar": "فم مدبب وخدود قرد..."
+        },
+        {
+          "text": "YOISHO!",
+          "confidence": 0.995,
+          "text_ar": "يويشو!"
+        },
+        {
+          "text": "THIS IS THE FIRST TIME I'VE DISCOVERED TIMEI'VEDISCOVERED THAT LITTLE JIANG HE COULD USE WORDS SOACCURATELY.",
+          "confidence": 0.942,
+          "text_ar": "هذه أول مرة أكتشف فيها أن جيانغ هي الصغير يمكنه استخدام الكلمات بدقة هكذا."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "IT'S SO GOOD HERE.",
+          "confidence": 0.926,
+          "text_ar": "الأجواء هنا رائعة."
+        },
+        {
+          "text": "XU QING,",
+          "confidence": 0.892,
+          "text_ar": "شو تشينغ،"
+        },
+        {
+          "text": "YOU'RE GOOD TOO.",
+          "confidence": 0.976,
+          "text_ar": "أنتِ رائعة أيضًا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "I FEEL LIKEYOU'RE ACTING WEIRD TODAY.",
+          "confidence": 0.95,
+          "text_ar": "أشعر أن تصرفاتك غريبة اليوم."
+        },
+        {
+          "text": "BECALSE I'M DIFFERENT FROM BEFORE.",
+          "confidence": 0.946,
+          "text_ar": "لأنني أصبحت مختلفًا عما كنت عليه من قبل."
+        },
+        {
+          "text": "I SUDDENLY DISCOVERED IT WHEN I WAS OUT TODAY.",
+          "confidence": 0.952,
+          "text_ar": "اكتشفت ذلك فجأة عندما خرجت اليوم."
+        },
+        {
+          "text": "WHAT EXACTLY IS DIFFERENT?",
+          "confidence": 0.985,
+          "text_ar": "ما الذي تغير بالضبط؟"
+        },
+        {
+          "text": "HMM...",
+          "confidence": 0.97,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "HAIRSTYLE? NEW CLOTHES?",
+          "confidence": 0.963,
+          "text_ar": "تسريحة الشعر؟ ملابس جديدة؟"
+        },
+        {
+          "text": "I'M JUST DIFFERENT FROM BE- FORE.",
+          "confidence": 0.956,
+          "text_ar": "أنا فقط مختلف عما كنت عليه من قبل."
+        },
+        {
+          "text": "XU QING,",
+          "confidence": 0.908,
+          "text_ar": "شو تشينغ،"
+        },
+        {
+          "text": "I'MA MODERN PERSON NOW.",
+          "confidence": 0.97,
+          "text_ar": "أنا شخص عصري الآن."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "YES,STILL A NAIVÉ MODERN PERSON.",
+          "confidence": 0.95,
+          "text_ar": "أجل، ولا تزال شخصًا عصريًا ساذجًا."
+        },
+        {
+          "text": "YOU'RE THE NAIVE ONE!",
+          "confidence": 0.975,
+          "text_ar": "أنتِ الساذجة هنا!"
+        },
+        {
+          "text": ".IT'S BROAD DAYLIGHT,TOO EARLY FOR THAT,NO?",
+          "confidence": 0.931,
+          "text_ar": "إنه وضح النهار، أليس الوقت مبكرًا جدًا على هذا؟"
+        },
+        {
+          "text": "I WANT TO TELL YOU,",
+          "confidence": 0.959,
+          "text_ar": "أريد أن أخبرك،"
+        },
+        {
+          "text": "IF YOU THINK OF ME AS A DAUGH- TER AGAIN,",
+          "confidence": 0.927,
+          "text_ar": "إذا اعتبرتني ابنتك مجددًا،"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I'LL BITE YOUTO DEATH!",
+          "confidence": 0.759,
+          "text_ar": "سأعضك حتى الموت!"
+        },
+        {
+          "text": "I'm very sorry, but for some reason, the next scene has been automatically skipped for you.",
+          "confidence": 0.957,
+          "text_ar": "أعتذر بشدة، ولكن لسبب ما، تم تخطي المشهد التالي تلقائيًا."
+        },
+        {
+          "text": "HER CALF WAS PRESSING DOWN ON IT SO HARD.. DAMN IT!",
+          "confidence": 0.883,
+          "text_ar": "كانت تضغط بساقها بقوة شديدة.. تباً!"
+        },
+        {
+          "text": "I NEED...",
+          "confidence": 0.862,
+          "text_ar": "أحتاج إلى..."
+        },
+        {
+          "text": "TO BECOME STRONGER!",
+          "confidence": 0.99,
+          "text_ar": "أن أصبح أقوى!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "WHEN ITCOMES TO LEARNING MARTIAL ARTS, THE WARRIORESS NEVER REFUSES TO TEACH ME.I DON'T KNOW IF SHE'S REALLY NOT AFRAID OF ME CATCHING TO HER AND BEATING HER, OR IF SHE REALLY WANTS ME TO BE MORE POWERFUL.",
+          "confidence": 0.939,
+          "text_ar": "عندما يتعلق الأمر بتعلم الفنون القتالية، لا ترفض المحاربة تعليمي أبدًا. لا أعرف إن كانت حقًا لا تخشى أن ألحق بها وأهزمها، أم أنها تريدني حقًا أن أصبح أكثر قوة."
+        },
+        {
+          "text": "WHY ARE YOU STILL PRACTICING MARTIAL ARTS SO SERIOUSLY WHEN YOU'RE ABOUT TO EAT?",
+          "confidence": 0.951,
+          "text_ar": "لماذا لا تزال تتدرب على الفنون القتالية بجدية بينما نحن على وشك تناول الطعام؟"
+        },
+        {
+          "text": "WHEN I SUCCEED IN MARTIAL ARTS, I'LL GET MY REVENGE FOR THE PAST.",
+          "confidence": 0.964,
+          "text_ar": "عندما أنجح في الفنون القتالية، سأنتقم لما مضى."
+        },
+        {
+          "text": "...YOU'RE TALKING NONSENSE AGAIN!",
+          "confidence": 0.855,
+          "text_ar": "...أنت تهذي مجددًا!"
+        },
+        {
+          "text": "BY THE TIME HE MASTER IT AND WANTS TO FORCE ME TODO SOMETHING, WE MIGHT ALREADY BE MARRIED.",
+          "confidence": 0.947,
+          "text_ar": "بحلول الوقت الذي يتقن فيه الأمر ويريد إجباري على فعل شيء ما، ربما سنكون قد تزوجنا بالفعل."
+        },
+        {
+          "text": "...ALRIGHT,",
+          "confidence": 0.957,
+          "text_ar": "...حسنًا،"
+        },
+        {
+          "text": "I'M ALSO PRACTICING SO THAT I HAVE AN- OTHER SKILL AFTER YOU GET YOUR ID.",
+          "confidence": 0.861,
+          "text_ar": "أنا أتدرب أيضًا ليكون لدي مهارة أخرى بعد حصولك على هويتك."
+        },
+        {
+          "text": "I CAN SHOOT LIKE A SHORT VIDEO FOR IT, WHICH WILL AT LEAST ENSURE FOOD ON THE TABLE.",
+          "confidence": 0.933,
+          "text_ar": "يمكنني تصوير مقاطع فيديو قصيرة لذلك، وهو ما سيضمن على الأقل توفير الطعام على المائدة."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "AREN'T YOU ABLE TO MAKE MONEY FROM DOING MOVIE REVIEWS? WHY ARE YOU TRYING TO ALSO MAKE SHORT VIDEOS?",
+          "confidence": 0.951,
+          "text_ar": "ألا يمكنك كسب المال من مراجعات الأفلام؟ لماذا تحاول أيضًا صنع مقاطع فيديو قصيرة؟"
+        },
+        {
+          "text": "THAT'S WHY IT'S JUST ANOTHER SKILL. 收",
+          "confidence": 0.856,
+          "text_ar": "لهذا السبب هي مجرد مهارة إضافية."
+        },
+        {
+          "text": "TOO MANY SKILLS WON'T OVERWHELM THE BODY. THE BACKUP PLAN MIGHT NOT BE USED,BUT IT CAN BE AN OPTION WHEN NEEDED.",
+          "confidence": 0.947,
+          "text_ar": "تعدد المهارات لا يضر. قد لا أحتاج للخطة البديلة، لكنها قد تكون خيارًا عند الحاجة."
+        },
+        {
+          "text": "MAKES SENSE...",
+          "confidence": 0.923,
+          "text_ar": "هذا منطقي..."
+        },
+        {
+          "text": "HOW MANY BACKUP PLANS HAVEYOU PREPARED?",
+          "confidence": 0.967,
+          "text_ar": "كم خطة بديلة أعددت؟"
+        },
+        {
+          "text": "GUESS?",
+          "confidence": 0.989,
+          "text_ar": "خمن؟"
+        },
+        {
+          "text": "NOT GUESSING!",
+          "confidence": 0.963,
+          "text_ar": "لن أخمن!"
+        },
+        {
+          "text": "THERE ARE SO MANYBENEFITS TO PRACTICING MARTIAL ARTS. THE LITTLE IMPULSE I FELT WHEN I WAS PRESSED DOWN BY THE WARRIORESS JUST NOWDISSIPATED WITH SWEAT.",
+          "confidence": 0.938,
+          "text_ar": "هناك الكثير من الفوائد لممارسة الفنون القتالية. تلك النزوة الصغيرة التي شعرت بها عندما ضغطت عليّ المحاربة للتو تلاشت مع العرق."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "SWORD?",
+          "confidence": 0.997,
+          "text_ar": "سيف؟"
+        },
+        {
+          "text": "I WONDER IF XU QING KNOWS HOW TO USE A SWORD?",
+          "confidence": 0.967,
+          "text_ar": "أتساءل إن كان شو تشينغ يعرف كيف يستخدم السيف؟"
+        },
+        {
+          "text": "I DON'T KNOW IF HE KNOWS HOW, BUT I DO KNOW HE MUST BE VERY DESPICABLE.",
+          "confidence": 0.948,
+          "text_ar": "لا أعرف إن كان يعرف كيف، لكنني أعرف أنه لا بد أن يكون حقيرًا جدًا."
+        },
+        {
+          "text": "I FAILED TO REACH 1700, PLAYING AT A HIGH LEVEL FOR ONE HOUR IS ATEST FORBOTH THE SPIRIT AND THE BODY...",
+          "confidence": 0.906,
+          "text_ar": "فشلت في الوصول إلى 1700، اللعب بمستوى عالٍ لمدة ساعة هو اختبار للروح والجسد..."
+        },
+        {
+          "text": "ANYONE WHO DOES THE SAME THING MECHANIC— ALLY FOR A LONG TIME WILL FEEL TIRED, SO IT WAS NICE TO NOT STREAM FOR A DAY. IDIDN'T DO IT ONPURPOSE",
+          "confidence": 0.915,
+          "text_ar": "أي شخص يقوم بنفس الشيء آليًا لفترة طويلة سيشعر بالتعب، لذا كان من الجيد عدم البث ليوم واحد. لم أفعل ذلك عمدًا."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "AHEM!",
+          "confidence": 0.99,
+          "text_ar": "أحم!"
+        },
+        {
+          "text": "THE LITTLE JIANG HE WHO WORKED HARD!",
+          "confidence": 0.963,
+          "text_ar": "جيانغ هي الصغير الذي عمل بجد!"
+        },
+        {
+          "text": "WOULD YOU LIKE TO READ A BOOK?OR WATCH A MOVIE WITH ME?",
+          "confidence": 0.915,
+          "text_ar": "هل تود قراءة كتاب؟ أم مشاهدة فيلم معي؟"
+        },
+        {
+          "text": "CHOOSE ONE OF THE TWO!",
+          "confidence": 0.973,
+          "text_ar": "اختر واحدًا من الاثنين!"
+        },
+        {
+          "text": "WATCH A MOVIE! QUICK ANSWER!",
+          "confidence": 0.957,
+          "text_ar": "مشاهدة فيلم! إجابة سريعة!"
+        },
+        {
+          "text": "n 城 哦 哦 峨 喊",
+          "confidence": 0.122,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "WHAT KIND OF MOVIE iS THIS?",
+          "confidence": 0.851,
+          "text_ar": "أي نوع من الأفلام هذا؟"
+        },
+        {
+          "text": "A WOMAN TAKES REVENGE WITH HER CHILDREN.",
+          "confidence": 0.948,
+          "text_ar": "امرأة تنتقم برفقة أطفالها."
+        }
+      ]
+    }
+  ]
+}
