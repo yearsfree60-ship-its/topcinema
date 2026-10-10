@@ -1,0 +1,373 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "189",
+  "manga_title": "My Wife Is From a Thousand Years Ago 189",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "junitiusjutiujutitis RP CL/RD TS TL Paragon Scans",
+          "confidence": 0.813,
+          "text_ar": "جونيشيوس، آر بي، سي إل/آر دي، تي إس، تي إل، Paragon Scans"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.992,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "JULY 16TH",
+          "confidence": 0.995,
+          "text_ar": "١٦ يوليو"
+        },
+        {
+          "text": "THE WARRIORESS REALLYLIKES TOWATCH THE RAIN.WHEN ITRAINED LAST TIME, SHE WAS ALSO BY THE WINDOWANDWATCHED FOR A LONG TIME.",
+          "confidence": 0.915,
+          "text_ar": "المحاربة تحب مشاهدة المطر حقًا. في المرة الأخيرة التي أمطرت فيها، كانت تقف بجانب النافذة وتراقب المطر لفترة طويلة."
+        },
+        {
+          "text": "T/N: \"History of Ming\" by Sitong Wan.",
+          "confidence": 0.95,
+          "text_ar": "ملاحظة المترجم: \"تاريخ مينغ\" بقلم سيتونغ وان."
+        },
+        {
+          "text": "I'M NOT SURE IF IT'S BECAUSE SHE THINKS OF THAT RAINY DAY WHENSHE ARRIVED, OR SHE JUST LIKES THE RAIN.",
+          "confidence": 0.94,
+          "text_ar": "لست متأكدًا إن كان ذلك لأنها تتذكر ذلك اليوم الممطر الذي وصلت فيه، أم أنها تحب المطر ببساطة."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "IT RAINED ALL NIGHT AND THE TEMPERATURE SEVERELY DROPPED. DOYOU WANT TO WEAR A COAT TOO?",
+          "confidence": 0.937,
+          "text_ar": "لقد أمطرت طوال الليل وانخفضت درجة الحرارة بشكل حاد. هل ترغبين في ارتداء معطف أيضًا؟"
+        },
+        {
+          "text": "YEAH,IT'SA LITTLE COLD TODAY.",
+          "confidence": 0.967,
+          "text_ar": "أجل، الجو بارد قليلًا اليوم."
+        },
+        {
+          "text": "A COAT WITH MY SCENT ON IT.",
+          "confidence": 0.917,
+          "text_ar": "معطف يحمل رائحتي."
+        },
+        {
+          "text": "History of Ming",
+          "confidence": 0.983,
+          "text_ar": "تاريخ مينغ"
+        },
+        {
+          "text": "DUMMY!",
+          "confidence": 0.961,
+          "text_ar": "يا غبية!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "..HMPH.",
+          "confidence": 0.896,
+          "text_ar": "..همف."
+        },
+        {
+          "text": "中华史",
+          "confidence": 0.998,
+          "text_ar": "التاريخ الصيني"
+        },
+        {
+          "text": "History of Ming",
+          "confidence": 0.983,
+          "text_ar": "تاريخ مينغ"
+        },
+        {
+          "text": "YOU'VE BEEN READING THE WHOLE DAY.",
+          "confidence": 0.983,
+          "text_ar": "لقد كنتِ تقرئين طوال اليوم."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "IT'S RAINING SO HARD,WHAT ELSE CAN YOU DO BESIDES READING? IF YOU GO OUT,YOU'L BECOME SOAKING WET.",
+          "confidence": 0.872,
+          "text_ar": "المطر يهطل بغزارة، ماذا يمكنكِ أن تفعلي غير القراءة؟ إذا خرجتِ، فستبتلين تمامًا."
+        },
+        {
+          "text": "YOU'RE NOT ON THE COMPUTER EITHER.",
+          "confidence": 0.975,
+          "text_ar": "أنت أيضًا لست على الحاسوب."
+        },
+        {
+          "text": "IT'S RARE FOR IT TO BE RAINING, I'M GIVING MYSELF A LITTLE VACATION.",
+          "confidence": 0.934,
+          "text_ar": "من النادر أن تمطر، لذا أمنح نفسي إجازة قصيرة."
+        },
+        {
+          "text": "GENERALLY SPEAKING, YOU'RE SUPPOSE TO BE STUDYING DURING THE NORMAL PERIODAND PLAYING ON THE COMPUTER DURING VACATIONS, RIGHT?",
+          "confidence": 0.946,
+          "text_ar": "بشكل عام، من المفترض أن تدرسي خلال الأيام العادية وتلعبي على الحاسوب أثناء الإجازات، أليس كذلك؟"
+        },
+        {
+          "text": "YOu KNOW THAT? THENWHY DO YOU ALWAYS PLAY GAMES WHEN YOU'RE ASKED TO STUDY?",
+          "confidence": 0.854,
+          "text_ar": "أتعرف ذلك؟ إذًا لماذا تلعب الألعاب دائمًا عندما يُطلب منك الدراسة؟"
+        },
+        {
+          "text": "THAT'S NOT THE SAME!",
+          "confidence": 0.939,
+          "text_ar": "هذا ليس نفس الشيء!"
+        },
+        {
+          "text": "SURE ENOUGH, I STILL NEED TO READ MORE BOOKSSOI DON'T GET TRICKED.",
+          "confidence": 0.951,
+          "text_ar": "بالتأكيد، لا أزال بحاجة لقراءة المزيد من الكتب حتى لا يتم خداعي."
+        },
+        {
+          "text": "T/N: The book is a novel called \"The Devotion of Suspect X\" by Keigo Higashino. It has won him many awards.",
+          "confidence": 0.949,
+          "text_ar": "ملاحظة المترجم: الكتاب هو رواية بعنوان \"تفاني المشتبه به إكس\" للكاتب كيغو هيغاشينو، وقد فاز عنها بالعديد من الجوائز."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "INSTEADOFTRYING TO GET NEXT TO MEAND PUTTING HER LEGS ON ME, SHE'S ACTUALLY OVER THERE READING A BOOK ALONE.",
+          "confidence": 0.926,
+          "text_ar": "بدلًا من محاولة الاقتراب مني ووضع ساقيها عليّ، ها هي تجلس هناك وتقرأ كتابًا بمفردها."
+        },
+        {
+          "text": "SURE ENOUGH, MY GUESS A FEW DAYS AGO WAS RIGHT, THE WARRIORESS'S IGNORANT CONSCIOUSNESS FINALLY AWAKENED.",
+          "confidence": 0.942,
+          "text_ar": "بالتأكيد، كان تخميني قبل بضعة أيام صحيحًا، لقد استيقظ وعي المحاربة الجاهل أخيرًا."
+        },
+        {
+          "text": "SHE HAS ALREADY THROWNOUT THE DAILY INTIMACY BEFORE SHE EVEN FIGURED OUT HOW TO DEFILE ME!",
+          "confidence": 0.938,
+          "text_ar": "لقد تخلصت بالفعل من الحميمية اليومية قبل أن تكتشف حتى كيفية إفسادي!"
+        },
+        {
+          "text": "RIGHT, LET'S TEST HER.",
+          "confidence": 0.968,
+          "text_ar": "حسنًا، لنختبرها."
+        },
+        {
+          "text": "I SUSPECT THAT SHE TOOK THE OPPORT- UNITYTODOSOMETHING TO ME QUIETLY WHILE I WAS ASLEEP LAST NIGHT, BUT I HAVE NO PROOF.",
+          "confidence": 0.925,
+          "text_ar": "أشك في أنها انتهزت الفرصة لفعل شيء ما بي بهدوء بينما كنت نائمًا الليلة الماضية، لكن ليس لدي دليل."
+        },
+        {
+          "text": "IHADA DREAM YESTERDAY,",
+          "confidence": 0.969,
+          "text_ar": "لقد حلمت حلمًا بالأمس،"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "THERE WAS A BIG OCTOPUS RUBBING ME WITH ITS TENTACLES.",
+          "confidence": 0.924,
+          "text_ar": "كان هناك أخطبوط كبير يفركني بمجساته."
+        },
+        {
+          "text": "OCTOPUS?",
+          "confidence": 0.976,
+          "text_ar": "أخطبوط؟"
+        },
+        {
+          "text": "YES,A SUPER BIG OCTOPUS.",
+          "confidence": 0.954,
+          "text_ar": "أجل، أخطبوط ضخم جدًا."
+        },
+        {
+          "text": "I BOOKMARKED A SITE FOR ZHOU GONG'S DREAM INTER- PRETATIONS, I'LL SEND IT TO YOU SO YOU CAN SEE WHAT SEEING AN OCTOPUS MEANS.",
+          "confidence": 0.852,
+          "text_ar": "لقد حفظت موقعًا لتفسير الأحلام لـ \"تشو غونغ\"، سأرسله لكِ لتعرفي ماذا يعني رؤية أخطبوط."
+        },
+        {
+          "text": "T/N: Zhou Gong is known as the\"God of Dreams\".",
+          "confidence": 0.935,
+          "text_ar": "ملاحظة المترجم: تشو غونغ معروف بـ \"إله الأحلام\"."
+        },
+        {
+          "text": "THERE'S NO NEED!",
+          "confidence": 0.96,
+          "text_ar": "لا داعي لذلك!"
+        },
+        {
+          "text": "I PIPN'T GET I DIDN'T GET ANYTHING OUT OF HER IN THE END.",
+          "confidence": 0.922,
+          "text_ar": "لم أحصل على أي شيء منها في النهاية."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "READING AT THE COMPUTER DESK ISN'T COMFORTABLE, WHY NOT LIE ONTHE SOFA AND READ,IT'S VERY COMFORTABLE~",
+          "confidence": 0.931,
+          "text_ar": "القراءة على مكتب الحاسوب ليست مريحة، لماذا لا تستلقين على الأريكة وتقرئين؟ إنها مريحة جدًا~"
+        },
+        {
+          "text": "LYING DOWN AND READING HURTS THE EYES.",
+          "confidence": 0.967,
+          "text_ar": "الاستلقاء أثناء القراءة يؤذي العينين."
+        },
+        {
+          "text": "OKAY~",
+          "confidence": 0.908,
+          "text_ar": "حسنًا~"
+        },
+        {
+          "text": "THE BOOK TALKS ABOUTAKINDOFLIKE WHERE AS LONG AS YOU THINKOF THAT PERSON. NO MATTER WHAT YOU'RE DOING AND WHETHER IF IT MATTERS OR NOT, YOU'LL FEEL HAPPY.",
+          "confidence": 0.929,
+          "text_ar": "يتحدث الكتاب عن نوع من الحب حيث طالما تفكر في ذلك الشخص، بغض النظر عما تفعله وما إذا كان الأمر مهمًا أم لا، ستشعر بالسعادة."
+        },
+        {
+          "text": "IS IT LIKE THAT?",
+          "confidence": 0.978,
+          "text_ar": "هل الأمر هكذا؟"
+        },
+        {
+          "text": "HOW DO I KNOW,AREYOU HAPPY WHENYOU THINK OF ME?",
+          "confidence": 0.921,
+          "text_ar": "كيف لي أن أعرف، هل أنتِ سعيدة عندما تفكرين بي؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "I JUST GET ANGRY.",
+          "confidence": 0.906,
+          "text_ar": "أنا فقط أغضب."
+        },
+        {
+          "text": "I'M TERRIBLY SORRY ABOUT THAT THEN.",
+          "confidence": 0.961,
+          "text_ar": "أنا آسف جدًا لذلك إذًا."
+        },
+        {
+          "text": "IT'S JUST A PITY THAT HE WAS LET DOWN BY THAT STUPID WOMAN IN THE END.",
+          "confidence": 0.92,
+          "text_ar": "من المؤسف أنها خذلت ذلك الرجل في النهاية."
+        },
+        {
+          "text": "I REMEMBER SHE WAS RECENTLY READING \"THE DEVOTION OF SUSPECT X\"",
+          "confidence": 0.91,
+          "text_ar": "أتذكر أنها كانت تقرأ مؤخرًا \"تفاني المشتبه به إكس\"."
+        },
+        {
+          "text": "SHE IS REALLY STUPID,WHAT WOULD YOU DO IF IT WAS YOU?",
+          "confidence": 0.882,
+          "text_ar": "إنها غبية حقًا، ماذا كنتِ ستفعلين لو كنتِ مكانها؟"
+        },
+        {
+          "text": "I'LL KILL THOSE PEOPLE AND THEN BREAK HIMOUT OF PRISON.",
+          "confidence": 0.9,
+          "text_ar": "سأقتل هؤلاء الأشخاص ثم أخرجه من السجن."
+        },
+        {
+          "text": "..ASEXPECTED OF YOU.",
+          "confidence": 0.872,
+          "text_ar": "..هذا متوقع منكِ."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "IN FACT,AS LONG AS YOU'KILL THAT PERSON AT THE BEGIN- NING, YOU WOULDNT HAVE ANYTHING TO WORRY ABOUT.",
+          "confidence": 0.941,
+          "text_ar": "في الواقع، طالما قتلتِ ذلك الشخص في البداية، فلن يكون لديكِ ما يدعو للقلق."
+        },
+        {
+          "text": "AS LONG AS YOU CARRY HIM TO THE RIVER AND KICK HIM IN,HE'LL DIE BY HIMSELF,AND IT'LL HAVE NOTHING TO DO WITH ME.",
+          "confidence": 0.901,
+          "text_ar": "طالما حملتِه إلى النهر وركلتِه للداخل، فسيموت بمفرده، ولن يكون لي أي علاقة بالأمر."
+        },
+        {
+          "text": "YOU'LL DEFINITELY BE CAUGHT BY SURVEIL- LANCE CAMERAS IF YOU RUN AROUND WITH HIM.",
+          "confidence": 0.94,
+          "text_ar": "بالتأكيد ستلتقطك كاميرات المراقبة إذا تجولتِ معه."
+        },
+        {
+          "text": "BUT THEY DIDN'T HAVE THAT IN THE HAVE THAT INTHE BOOK, THOSE PEOPLE HAD'TODRIVE AND HAD'TO DRIVE AND FOLLOW SOMEONE TO SEE WHAT THEY HAVE DONE.",
+          "confidence": 0.936,
+          "text_ar": "لكن لم يكن لديهم ذلك في الكتاب، كان على هؤلاء الأشخاص القيادة ومتابعة شخص ما ليروا ما فعله."
+        },
+        {
+          "text": "I WOULD FOLLOW FROM BEHIND AND SHOOT HIMWITHA DART USING GLOVES AT THE FRONT OF HIS HOUSE.",
+          "confidence": 0.925,
+          "text_ar": "سأتبعه من الخلف وأطلق عليه سهمًا باستخدام قفازات أمام منزله."
+        },
+        {
+          "text": "NO, IF IT WAS YOU, NO ONE WOULD DARE TO DISTURB YOU LIKE THAT IN THE FIRST PLACE AND WOULD STAY AS FAR AS POSSIBLE. SUPPOSE YOU BROKE INTO PRISON..",
+          "confidence": 0.9,
+          "text_ar": "لا، لو كنتِ أنتِ، فلن يجرؤ أحد على إزعاجك هكذا في المقام الأول وسيبقون بعيدًا قدر الإمكان. لنفترض أنكِ اقتحمتِ السجن.."
+        },
+        {
+          "text": ".WHYARE WE TALKING ABOUT MURDER ONA RAINY NIGHT?",
+          "confidence": 0.937,
+          "text_ar": "..لماذا نتحدث عن القتل في ليلة ممطرة؟"
+        },
+        {
+          "text": "THEN WHAT DO YOU WANT TO TALK ABOUT?",
+          "confidence": 0.938,
+          "text_ar": "إذًا عما تريدين التحدث؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "HOW ABOUT WE TALK ABOUT PUTTING AWAY THE STLIFFED BEAR AT NIGHT WHEN YOU GO TO SLEEP?",
+          "confidence": 0.954,
+          "text_ar": "ما رأيك أن نتحدث عن وضع الدب المحشو جانبًا في الليل عندما تذهبين للنوم؟"
+        },
+        {
+          "text": "IF YOU'RE AFRAID OF THUINDER AT NIGHT, YOU CAN JUST HIDE IN MY ARMS, HOW NICE IS THAT~",
+          "confidence": 0.913,
+          "text_ar": "إذا كنتِ تخافين من الرعد ليلًا، يمكنكِ الاختباء في أحضاني، كم سيكون ذلك رائعًا~"
+        },
+        {
+          "text": "THEN I THINK IT'S MORE INTEREST- ING TO STUDY HOW TO KILL PEOPLE.",
+          "confidence": 0.959,
+          "text_ar": "إذًا أعتقد أن دراسة كيفية القتل أكثر إثارة للاهتمام."
+        },
+        {
+          "text": "I'M ONLY WEARING PAJAMAS AT NIGHT AND NOTHING ELSE, IF I'M SQUEEZED INTO HIS ARMS..",
+          "confidence": 0.936,
+          "text_ar": "أنا أرتدي ملابس النوم فقط ليلًا ولا شيء غيرها، إذا انضممت إلى أحضانه.."
+        },
+        {
+          "text": "ABSOLUTELY NOT..!.!",
+          "confidence": 0.741,
+          "text_ar": "مستحيل..!.!"
+        }
+      ]
+    }
+  ]
+}
