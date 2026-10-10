@@ -136167,6 +136167,24 @@
       "name": "actually i was the real one 1",
       "chapters": [
         {
+          "label": "الفصل 1",
+          "num": "1",
+          "chNum": 1.0,
+          "sourceUrl": "https://azorafly.com/series/actually-i-was-the-real-one-1/chapter-1",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-1/008.webp"
+          ],
+          "originalBytes": 24179598,
+          "compressedBytes": 2482114
+        },
+        {
           "label": "الفصل 2",
           "num": "2",
           "chNum": 2.0,
@@ -136183,6 +136201,24 @@
           ],
           "originalBytes": 18234383,
           "compressedBytes": 2078142
+        },
+        {
+          "label": "الفصل 3",
+          "num": "3",
+          "chNum": 3.0,
+          "sourceUrl": "https://azorafly.com/series/actually-i-was-the-real-one-1/chapter-3",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__actually-i-was-the-real-one-1/ch-3/008.webp"
+          ],
+          "originalBytes": 18933045,
+          "compressedBytes": 2062356
         }
       ]
     }
