@@ -958,6 +958,19 @@
           ],
           "originalBytes": 7959611,
           "compressedBytes": 1079836
+        },
+        {
+          "label": "الفصل 101",
+          "num": "101",
+          "chNum": 101.0,
+          "sourceUrl": "https://starzmanga.com/manga/my-wife-is-from-a-thousand-years-ago/101/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__my-wife-is-from-a-thousand-years-ago/ch-101/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__my-wife-is-from-a-thousand-years-ago/ch-101/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__my-wife-is-from-a-thousand-years-ago/ch-101/003.webp"
+          ],
+          "originalBytes": 8276174,
+          "compressedBytes": 1176038
         }
       ]
     }
