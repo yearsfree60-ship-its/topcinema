@@ -386,6 +386,18 @@
           ],
           "originalBytes": 8296177,
           "compressedBytes": 1371864
+        },
+        {
+          "label": "الفصل 45",
+          "num": "45",
+          "chNum": 45.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/45/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-45/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-45/002.webp"
+          ],
+          "originalBytes": 5437071,
+          "compressedBytes": 572320
         }
       ]
     }
