@@ -1932,6 +1932,26 @@
           ],
           "originalBytes": 7007485,
           "compressedBytes": 1730132
+        },
+        {
+          "label": "الفصل 123",
+          "num": "123",
+          "chNum": 123.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/123/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-123/010.webp"
+          ],
+          "originalBytes": 7287652,
+          "compressedBytes": 1773436
         }
       ]
     }
