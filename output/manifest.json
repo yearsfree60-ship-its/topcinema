@@ -135253,6 +135253,24 @@
           ],
           "originalBytes": 9123548,
           "compressedBytes": 1590360
+        },
+        {
+          "label": "الفصل 200",
+          "num": "200",
+          "chNum": 200.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/200/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-200/008.webp"
+          ],
+          "originalBytes": 5383634,
+          "compressedBytes": 1448646
         }
       ]
     }
