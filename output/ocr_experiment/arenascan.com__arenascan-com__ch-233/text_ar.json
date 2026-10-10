@@ -1,0 +1,358 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "233",
+  "manga_title": "My Wife Is From a Thousand Years Ago 233",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "THROUGHOUT THE AGES, BRIDES HAVE ALWAYS BEEN SO BEAUTIFUL.",
+          "confidence": 0.967,
+          "text_ar": "عبر العصور، كانت العرائس دائمًا في غاية الجمال."
+        },
+        {
+          "text": "QINGZI! WHAT ARE YOU DOING STANDING THERE?",
+          "confidence": 0.951,
+          "text_ar": "تشينغزي! ماذا تفعلين واقفةً هناك؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "HAOZI!",
+          "confidence": 0.996,
+          "text_ar": "هاوزي!"
+        },
+        {
+          "text": "WHY DO YOU LOOK SO LETHARGIC?",
+          "confidence": 0.803,
+          "text_ar": "لماذا تبدو خاملًا هكذا؟"
+        },
+        {
+          "text": "TO MAKE IT HERE TODAY,I HAD TO SWITCH SHIFTS WITH A COLLEAGUE, AND I RUSHED OVER HERE AFTER FINISHING THE SHIFT.",
+          "confidence": 0.91,
+          "text_ar": "لأتمكن من الحضور اليوم، اضطررت لتبديل نوبتي مع زميل، وأتيت مسرعًا فور انتهائي منها."
+        },
+        {
+          "text": "HEY,",
+          "confidence": 0.965,
+          "text_ar": "مهلًا،"
+        },
+        {
+          "text": "WHERE IS YOUR PARTNER?",
+          "confidence": 0.885,
+          "text_ar": "أين شريكتك؟"
+        },
+        {
+          "text": "I DON'T HAVE A PARTNER!",
+          "confidence": 0.95,
+          "text_ar": "ليس لدي شريكة!"
+        },
+        {
+          "text": "KEEP ACTING!",
+          "confidence": 0.993,
+          "text_ar": "استمر في التمثيل!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "T/N: Around 113 USD with the current exchange rate.",
+          "confidence": 0.951,
+          "text_ar": "ملاحظة المترجم: حوالي 113 دولارًا أمريكيًا بسعر الصرف الحالي."
+        },
+        {
+          "text": "I PUT EIGHT HUNDRED,IS THAT RIGHT?",
+          "confidence": 0.949,
+          "text_ar": "وضعت ثمانمائة، هل هذا مناسب؟"
+        },
+        {
+          "text": "THAT'S RIGHT, DON'T PUT TOO MUICH,IT'LL MAKE MELOOKLIKE A RICH GUY..",
+          "confidence": 0.891,
+          "text_ar": "هذا مناسب، لا تضع الكثير، سيجعلني أبدو كشخص ثري.."
+        },
+        {
+          "text": "YOU'RE HERE.",
+          "confidence": 0.977,
+          "text_ar": "لقد وصلت."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "CONGRAT- ULATIONS!",
+          "confidence": 0.98,
+          "text_ar": "مبارك!"
+        },
+        {
+          "text": "I HOPE YOU TWO LIVE IN HAPPINESS AND HARMONY FOR A LIFETIME!",
+          "confidence": 0.942,
+          "text_ar": "أتمنى لكما حياة سعيدة وهانئة مدى العمر!"
+        },
+        {
+          "text": "WHO AM IGIVING THIS TO?",
+          "confidence": 0.945,
+          "text_ar": "لمن أعطي هذا؟"
+        },
+        {
+          "text": "LOOK AT WHAT YOURE SAYING..",
+          "confidence": 0.91,
+          "text_ar": "انظر لما تقوله.."
+        },
+        {
+          "text": "TO HER!",
+          "confidence": 0.995,
+          "text_ar": "لها!"
+        },
+        {
+          "text": "THANK yOU.",
+          "confidence": 0.662,
+          "text_ar": "شكرًا لك."
+        },
+        {
+          "text": "TO BE ABLE TO GET A GUY LIKE WANG ZIJUN TO PUT ON HIS WEDDING CLOTHES SOEARLY.IS QUITE IMPRESSIVE.",
+          "confidence": 0.922,
+          "text_ar": "أن تتمكن من جعل شخص مثل وانغزي يرتدي ملابس زفافه بهذه السرعة.. أمر مثير للإعجاب حقًا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "WOW...",
+          "confidence": 0.893,
+          "text_ar": "واو..."
+        },
+        {
+          "text": "THIS PROBABLY COST A LOT OF MONEY, RIGHT.",
+          "confidence": 0.952,
+          "text_ar": "من المحتمل أن هذا كلف الكثير من المال، أليس كذلك؟"
+        },
+        {
+          "text": "HE'SA RICH GUY, SO HE DEFINITELY SPENT A LOT OF MO- NEY.WHEN IT'S OUR TURN,IT WON'T BE AS LUXURIOUS AS THIS.",
+          "confidence": 0.889,
+          "text_ar": "إنه ثري، لذا بالتأكيد أنفق الكثير من المال. عندما يحين دورنا، لن يكون الأمر بهذا البذخ."
+        },
+        {
+          "text": "THAT'S GOOD THEN!",
+          "confidence": 0.963,
+          "text_ar": "هذا جيد إذًا!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "WHYDO YOU SEEM SO RELIEVED?",
+          "confidence": 0.886,
+          "text_ar": "لماذا تبدو مرتاحًا هكذا؟"
+        },
+        {
+          "text": "I'M NOT!",
+          "confidence": 0.944,
+          "text_ar": "لست كذلك!"
+        },
+        {
+          "text": "SOMETHING'S WRONG WITH ME, WHY AM I TALKING ABOUT MY WEDDING?",
+          "confidence": 0.95,
+          "text_ar": "هناك خطب ما بي، لماذا أتحدث عن زفافي؟"
+        },
+        {
+          "text": "I DON'T KNOW WHEN IT STARTED, IT STAKTED,",
+          "confidence": 0.877,
+          "text_ar": "لا أعلم متى بدأ الأمر، لقد بدأ وحسب،"
+        },
+        {
+          "text": "I ALREADY SEE XU QING AS MY FIANCE...",
+          "confidence": 0.894,
+          "text_ar": "لقد بدأت أرى شو تشينغ كخطيبة لي بالفعل..."
+        },
+        {
+          "text": "SO THIS IS WHAT A MODERN MAR- RIAGE IS LIKE.",
+          "confidence": 0.937,
+          "text_ar": "إذًا هكذا يبدو الزواج الحديث."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "THEN THE TWO OF THEM WILL STARTLIVING TOGETHER..",
+          "confidence": 0.934,
+          "text_ar": "ثم سيبدأ الاثنان بالعيش معًا.."
+        },
+        {
+          "text": "THIS IS HOW THE GOOD-FOR-NOTHING DURING COLLEGE BEGINS THE NEXT PHASE OF HIS LIFE.",
+          "confidence": 0.932,
+          "text_ar": "هكذا يبدأ الخامل مرحلة حياته التالية بعد الجامعة."
+        },
+        {
+          "text": "THE BRIDE TUEBRIDE SEEMS PRETTY IMPRESSIVE.",
+          "confidence": 0.765,
+          "text_ar": "العروس.. العروس تبدو مثيرة للإعجاب حقًا."
+        },
+        {
+          "text": "SHE'S MORE THAN JUST IMPRESSIVE.",
+          "confidence": 0.964,
+          "text_ar": "إنها أكثر من مجرد مثيرة للإعجاب."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "I'VE SEEN MANYOF WANG ZIJUN'S GIRLFRIENDS; THEY ALL SEEM SOPHISTICATED AND SOCIAL. THEYCANSEAMLESSLYNAVIGATE THROUGH FIVE OR SIX SOCIAL SCENES IN ADAY.I DON'TEVEN BOTHER REMEMBERING THEIR NAMES.",
+          "confidence": 0.942,
+          "text_ar": "لقد رأيت العديد من حبيبات وانغزي؛ جميعهن يبدون متصنعات واجتماعيات. يمكنهن التنقل بسلاسة بين خمس أو ست مناسبات اجتماعية في اليوم الواحد. لم أهتم حتى بحفظ أسمائهن."
+        },
+        {
+          "text": "THE CURRENT BRIDE SEEMS TO BE AN ARTIST. I SAW HER ON THE SUBWAY THAT ONE TIME. ALTHOUGH HER ATTIRE WASN'T VERY ELA- BORATE, SHE LOOKED NEAT AND TIDY.",
+          "confidence": 0.931,
+          "text_ar": "العروس الحالية تبدو فنانة. رأيتها في مترو الأنفاق ذات مرة. ورغم أن ملابسها لم تكن متكلفة، إلا أنها بدت أنيقة ومرتبة."
+        },
+        {
+          "text": "THEN, IN A LOW-KEY MANNER,SHE BROUGHT WANG ZIJUN TO A HOTEL. PERHAPS IT'S PRECISELY THISTYPEOFWOMAN WHO CAN REIN HIM IN.",
+          "confidence": 0.958,
+          "text_ar": "ثم، وبطريقة هادئة، اصطحبت وانغزي إلى فندق. ربما هذا النوع من النساء هو الوحيد القادر على كبح جماحه."
+        },
+        {
+          "text": "THAT'S WHY UITTLE JIANG HE IS BETTER. WHEN SHE WANTS TO BEAT SOMEONE UP,SHETELLSYOUDIRECTLY AND DOESN'T DECEIVE ORTRICK YOU. SHE JUST CLENCHES HER FIST AND ISSUES A THREAT.",
+          "confidence": 0.928,
+          "text_ar": "لهذا السبب شياو يان أفضل. عندما ترغب بضرب أحدهم، تخبرك مباشرة ولا تخدعك أو تتلاعب بك. هي فقط تقبض يدها وتوجه تهديدًا."
+        },
+        {
+          "text": "YOU'LL BE CARRIED INA SEDAN CHAIR IN THE FUTLRE, ALRIGHT?",
+          "confidence": 0.941,
+          "text_ar": "سأحملك في هودج في المستقبل، حسنًا؟"
+        },
+        {
+          "text": "REALLY?!",
+          "confidence": 0.992,
+          "text_ar": "حقًا؟!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "AN EIGHT LIFT SEDAN CHAIR?",
+          "confidence": 0.96,
+          "text_ar": "هودج محمول بثمانية رجال؟"
+        },
+        {
+          "text": "宝家家家家家家家家家家",
+          "confidence": 0.723,
+          "text_ar": "..."
+        },
+        {
+          "text": "AN EIGHT LIFT SEDAN CHAIR, LIFT SEDANCHAIR, WITH TRUMPETS BLOW- ING WHILE CROSSING OVER FIRE BRAZIERS. SOUNDS MAJESTIC, DOESN'T IT?",
+          "confidence": 0.946,
+          "text_ar": "هودج محمول بثمانية رجال، مع عزف الأبواق أثناء عبور مجامر النار. يبدو الأمر مهيبًا، أليس كذلك؟"
+        },
+        {
+          "text": "A bright red wedding dress..",
+          "confidence": 0.973,
+          "text_ar": "فستان زفاف أحمر زاهٍ.."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "The fengguan xiapei.",
+          "confidence": 0.99,
+          "text_ar": "تاج العروس ورداء الزفاف التقليدي."
+        },
+        {
+          "text": "T/N: A type of traditional Chinese wedding set of attire categorized under Hanfu, which was worn by Han Chinese women in Ming and Qing dynasties.",
+          "confidence": 0.95,
+          "text_ar": "ملاحظة المترجم: نوع من أزياء الزفاف الصينية التقليدية يندرج تحت \"الهانفو\"، كانت ترتديه النساء الصينيات في عهدي أسرتي مينغ وتشينغ."
+        },
+        {
+          "text": "Then you have to keep your word.",
+          "confidence": 0.968,
+          "text_ar": "إذًا عليكِ الالتزام بكلمتك."
+        },
+        {
+          "text": "Of course.",
+          "confidence": 0.948,
+          "text_ar": "بالطبع."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "COMPARED TO THAT, EXCHANGING RINGS WITH MICROPHONES IN HAND SEEMS RATHER INSIGNIFICANT...",
+          "confidence": 0.942,
+          "text_ar": "مقارنة بذلك، يبدو تبادل الخواتم مع حمل الميكروفونات أمرًا تافهًا للغاية..."
+        },
+        {
+          "text": "WHENWILL YOU TWO DO THAT,",
+          "confidence": 0.914,
+          "text_ar": "متى ستفعلان ذلك أنتما الاثنان،"
+        },
+        {
+          "text": "GET MARRIED? --",
+          "confidence": 0.634,
+          "text_ar": "تتزوجان؟"
+        },
+        {
+          "text": "NEXT YEAR.",
+          "confidence": 0.971,
+          "text_ar": "العام القادم."
+        },
+        {
+          "text": "SO FAST?!",
+          "confidence": 0.966,
+          "text_ar": "بهذه السرعة؟!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "HOW CAN I NOT HURRY IT UP, THERE'SA GUY WHO'S ABOUT TO BECOME A DAD SOON.",
+          "confidence": 0.92,
+          "text_ar": "كيف لا أتعجل؟ هناك شخص على وشك أن يصبح أبًا قريبًا."
+        },
+        {
+          "text": "WHAT DOES HIM BECOMING A DAD HAVE TO DO WITH YOU...MM!",
+          "confidence": 0.928,
+          "text_ar": "وما علاقة كونه سيصبح أبًا بك أنت... مم!"
+        },
+        {
+          "text": "WUUU..",
+          "confidence": 0.687,
+          "text_ar": "وووو.."
+        },
+        {
+          "text": "Doesn't have a girlfriend yet. URGENT!",
+          "confidence": 0.875,
+          "text_ar": "لا يملك حبيبة بعد. أمر عاجل!"
+        },
+        {
+          "text": "T/N: I'm sure our readers can relate!",
+          "confidence": 0.956,
+          "text_ar": "ملاحظة المترجم: أنا متأكد أن قراءنا يمكنهم تفهم ذلك!"
+        }
+      ]
+    }
+  ]
+}
