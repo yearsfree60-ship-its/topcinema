@@ -1025,6 +1025,19 @@
           ],
           "originalBytes": 6866943,
           "compressedBytes": 1100252
+        },
+        {
+          "label": "الفصل 73",
+          "num": "73",
+          "chNum": 73.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/73/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-73/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-73/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-73/003.webp"
+          ],
+          "originalBytes": 6643608,
+          "compressedBytes": 1041542
         }
       ]
     }
