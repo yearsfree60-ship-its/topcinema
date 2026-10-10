@@ -306,6 +306,38 @@ def _in_page_fetch_many(sb, urls: list[str], conc: int = SB_IMG_CONCURRENCY,
     return out
 
 
+SB_HTTP_DOWNLOAD = os.environ.get("SB_HTTP_DOWNLOAD", "true").strip().lower() == "true"
+
+
+def _probe_http_download(urls: list[str], cookies: list, ua: str | None, referer: str) -> bool:
+    """[تسريع جذري] هل يمكن تنزيل الصور خارج المتصفح (curl_cffi بانتحال Chrome + كوكيز التحدّي)؟
+    يُفحَص أول/وسط/آخر صورة؛ نجاحها كلها ← يتحرر المتصفح فورًا للفصل التالي وتُنزَّل الصور بالتوازي
+    من بايثون. أي إخفاق ← الرجوع للتنزيل بالمتصفح (السلوك المضمون السابق)."""
+    try:
+        from curl_cffi import requests as cr
+    except Exception:
+        return False
+    sample = list(dict.fromkeys([urls[0], urls[len(urls) // 2], urls[-1]]))
+    for u in sample:
+        try:
+            host = (urlparse(u).hostname or "").lower()
+            pairs = []
+            for c in cookies or []:
+                d = (c.get("domain") or "").lstrip(".").lower()
+                if c.get("name") and (not d or host == d or host.endswith("." + d)):
+                    pairs.append(f"{c['name']}={c['value']}")
+            if not pairs:
+                return False
+            r = cr.get(u, headers={"User-Agent": ua or "", "Referer": referer, "Cookie": "; ".join(pairs),
+                                   "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"},
+                       timeout=20, impersonate="chrome")
+            if not r.ok or not (r.headers.get("content-type", "").startswith("image/")) or len(r.content) < 500:
+                return False
+        except Exception:
+            return False
+    return True
+
+
 def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tuple[dict, dict]:
     """يُنزِّل كل الصور من داخل المتصفح. الطبقة 1: fetch من صفحة الفصل (Referer صحيح تلقائيًا).
     الطبقة 2 (إن منع CORS): فتح رابط الصورة كصفحة أعلى مستوى ثم fetch بنفس الأصل.
@@ -551,7 +583,11 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
                     res["user_agent"] = sb.cdp.evaluate("navigator.userAgent")
                 except Exception:
                     pass
-            if res["images"] and download_images:
+            if res["images"] and download_images and SB_HTTP_DOWNLOAD \
+                    and _probe_http_download(res["images"], res["cookies"], res["user_agent"], page_url):
+                print(f"  🚀 [SB] التنزيل خارج المتصفح (curl_cffi) — المتصفح حرّ للفصل التالي ({len(res['images'])} صورة)")
+                res["image_bytes"], res["image_errors"] = {}, {}
+            elif res["images"] and download_images:
                 try:
                     _t3 = time.monotonic()
                     got, errs = download_images_in_browser(sb, res["images"], page_url)
@@ -649,6 +685,12 @@ class SBSession:
     def fetch(self, url: str, *, wait_sec: float = DEFAULT_WAIT_SEC, retries: int = 2,
               download_images: bool = False) -> dict:
         return self._run(self._job, url, wait_sec, retries, download_images)
+
+    def fetch_bytes(self, urls: list[str]) -> dict:
+        """احتياطي: تنزيل صور بعينها من داخل المتصفح الحالي (لما فشل تنزيلها خارجه)."""
+        if self._sb is None:
+            return {}
+        return self._run(lambda: _in_page_fetch_many(self._sb, list(urls), conc=4, timeout=60.0))
 
     def close(self):
         if self._ex is None:
