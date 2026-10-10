@@ -142330,6 +142330,19 @@
           ],
           "originalBytes": 11955940,
           "compressedBytes": 2580120
+        },
+        {
+          "label": "الفصل 99",
+          "num": "99",
+          "chNum": 99.0,
+          "sourceUrl": "https://starzmanga.com/manga/my-wife-is-from-a-thousand-years-ago/99/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__my-wife-is-from-a-thousand-years-ago/ch-99/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__my-wife-is-from-a-thousand-years-ago/ch-99/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__my-wife-is-from-a-thousand-years-ago/ch-99/003.webp"
+          ],
+          "originalBytes": 6681684,
+          "compressedBytes": 1019792
         }
       ]
     }
