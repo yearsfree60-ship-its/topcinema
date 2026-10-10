@@ -2959,6 +2959,21 @@
           ],
           "originalBytes": 3120123,
           "compressedBytes": 840712
+        },
+        {
+          "label": "الفصل 173",
+          "num": "173",
+          "chNum": 173.0,
+          "sourceUrl": "https://starzmanga.com/manga/monster-pet-evolution/173/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-173/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-173/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-173/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-173/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__monster-pet-evolution/ch-173/005.webp"
+          ],
+          "originalBytes": 11801141,
+          "compressedBytes": 1506328
         }
       ]
     }
