@@ -1,0 +1,513 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "196",
+  "manga_title": "My Wife Is From a Thousand Years Ago 196",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": []
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "WHY IS THERE SUCHANINTENSE SMELLOF GINGER?",
+          "confidence": 0.934,
+          "text_ar": "لماذا تفوح رائحة الزنجبيل القوية هذه؟"
+        },
+        {
+          "text": "WHAT ARE YOU MAKING?",
+          "confidence": 0.867,
+          "text_ar": "ما الذي تعدّه؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "I'MMAKING GINGER WATER.",
+          "confidence": 0.977,
+          "text_ar": "أعدّ شراب الزنجبيل."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "IDON'TWANTTO DRINKIT,ITASTES HORRIBLE. 退 后",
+          "confidence": 0.707,
+          "text_ar": "لا أريد شربه، طعمه فظيع! تراجع للخلف!"
+        },
+        {
+          "text": "NO, YOU DO WANT TO DRKIT.",
+          "confidence": 0.89,
+          "text_ar": "كلا، أنت ترغب بشربه حقًا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": []
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "I'MFINE WITH CORIANDERBUT RAW GINGER IS OFF-LIMITS!",
+          "confidence": 0.961,
+          "text_ar": "لا أمانع الكزبرة، لكن الزنجبيل الطازج خط أحمر!"
+        },
+        {
+          "text": "I SUDDENLY REMEMBERED THAT IDIDNTFOLD MY BLANKET..",
+          "confidence": 0.854,
+          "text_ar": "تذكرت فجأة أنني لم أرتب غطائي.."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "TIME FOR YOUR MEDS.PNG",
+          "confidence": 0.966,
+          "text_ar": "حان وقت الدواء."
+        },
+        {
+          "text": "BLARGH- mYMOUTHISFULL OF GINGER RESIDUE",
+          "confidence": 0.894,
+          "text_ar": "تبًا.. فمي مليء ببقايا الزنجبيل."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "YOU'RE EXAGGER- ATING.",
+          "confidence": 0.971,
+          "text_ar": "أنت تبالغ."
+        },
+        {
+          "text": "咕嘟咕嘟 ILLDRINKONE AS A PREVENTIVE MEASURETOO~",
+          "confidence": 0.901,
+          "text_ar": "سأشرب واحدًا كإجراء وقائي أيضًا~"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "DO YOU WANT TOPRACTICE MARTIAL ARTS TO SWEAT IT OUT?",
+          "confidence": 0.901,
+          "text_ar": "هل تود ممارسة الفنون القتالية لتتعرق وتتخلص من المرض؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "Z 么 NOPE, I JUST WANT TO QUIETLY REST HERE.",
+          "confidence": 0.394,
+          "text_ar": "كلا، أريد فقط أن أرتاح بهدوء هنا."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "I'MTOTALLY SPENT, ITLOOKS LIKE THE COLD GOTMORE SERIOUS.",
+          "confidence": 0.949,
+          "text_ar": "أنا منهك تمامًا، يبدو أن نزلة البرد قد تفاقمت."
+        },
+        {
+          "text": "DON'T SNEAK INTO MY BED WITH ME JUST BECALISE YOU MISS MEAT NIGHT,OKAY?",
+          "confidence": 0.929,
+          "text_ar": "لا تتسلل إلى سريري معي لمجرد أنك تفتقدني في الليل، حسنًا؟"
+        },
+        {
+          "text": "IMIGHTREALLY.INFECT YOUWITHMY COLD~",
+          "confidence": 0.932,
+          "text_ar": "قد أعديك بنزلة البرد التي أعاني منها حقًا~"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "IT WAS CLEARLY YOU WHO DRAGGED AND HUGGED ME TO SLEEP!? WHOWANTSTO SQUEEZE TOGETHER WITH.YOUINBED?",
+          "confidence": 0.929,
+          "text_ar": "أنت من سحبني وعانقني لأنام بوضوح! من الذي يريد أن يتكدس معك في السرير؟"
+        },
+        {
+          "text": "I WOULDN'T HAVE BEEN ABLE TO PULL YOUIN IF YOU REALLY DIDN'T WANT TO, NO?",
+          "confidence": 0.931,
+          "text_ar": "لم أكن لأتمكن من سحبك لو لم تكن ترغب بذلك حقًا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "SHUT UP!",
+          "confidence": 0.909,
+          "text_ar": "اصمت!"
+        },
+        {
+          "text": "ILL DEFINITELY GIVE HIM A GOOD BEATING WHEN HE GETSBETTER!",
+          "confidence": 0.934,
+          "text_ar": "سألقنه درسًا قاسيًا بالتأكيد عندما يتحسن!"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "I THINK IT'S BEST IF YOU STAY OVER THERE PERM- ANENTLY FROM NOWON. DING",
+          "confidence": 0.936,
+          "text_ar": "أعتقد أنه من الأفضل أن تبقى هناك بشكل دائم من الآن فصاعدًا."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "Pingping 11:47",
+          "confidence": 0.992,
+          "text_ar": "بينغ بينغ 11:47"
+        },
+        {
+          "text": "You there?",
+          "confidence": 0.995,
+          "text_ar": "هل أنت هناك؟"
+        },
+        {
+          "text": "Wanna go fishing together today?",
+          "confidence": 0.993,
+          "text_ar": "هل تود الذهاب للصيد معًا اليوم؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "IF IWERE TO HEAD OUT AND LEAVE HIM ALONE, WILL HE BE OKAY AT HOME?",
+          "confidence": 0.921,
+          "text_ar": "لو خرجت وتركته وحيدًا، هل سيكون بخير في المنزل؟"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "I'll pass for today, Xu Qing is sick...",
+          "confidence": 0.909,
+          "text_ar": "سأعتذر عن اليوم، شو تشينغ مريض..."
+        },
+        {
+          "text": "Then stay at home and take care of him!",
+          "confidence": 0.978,
+          "text_ar": "إذًا ابقَ في المنزل واعتنِ به!"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": []
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "AFTERPRACTICING A LITTLE, MY STUFFY NOSE SEEMS TO HAVE GOTTEN BETTER..",
+          "confidence": 0.917,
+          "text_ar": "بعد التدرب قليلًا، يبدو أن انسداد أنفي قد تحسن.."
+        },
+        {
+          "text": "LET'S TAKE ALOOKATTHE STOCK MARKET,",
+          "confidence": 0.923,
+          "text_ar": "لنلقِ نظرة على سوق الأسهم."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "YOU CAN EARN MONEY FROM JUST LOOKING AT THIS?",
+          "confidence": 0.924,
+          "text_ar": "هل يمكنك كسب المال بمجرد النظر إلى هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "YEP, BUT IT'S HARD TO GET THE GRASP OFIT,AND IT DOESN'T EARN MUCH.",
+          "confidence": 0.933,
+          "text_ar": "أجل، لكن من الصعب استيعاب الأمر، كما أنه لا يدر الكثير."
+        },
+        {
+          "text": "YOU LOOK LIKE YOU'RE HAVING ANEASY TIME THOUGH.",
+          "confidence": 0.922,
+          "text_ar": "لكنك تبدو وكأن الأمر سهل بالنسبة لك."
+        },
+        {
+          "text": "IF I'MEARNING, IT JUST MEANS THAT SOMEONE IS LOSING, BUT THAT DOESN'T MEAN THAT IT'S",
+          "confidence": 0.933,
+          "text_ar": "إذا كنت أكسب المال، فهذا يعني أن شخصًا ما يخسر، لكن هذا لا يعني أنه"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "EASY TO EARN.",
+          "confidence": 0.941,
+          "text_ar": "أمر سهل."
+        },
+        {
+          "text": "YOU'RE SAYING THAT EVERYTHING IS DIFFICULT ALL DAY LONG,AND THATTHERE IS ALWAYSSOMEONE SMARTER THANYOU!",
+          "confidence": 0.938,
+          "text_ar": "أنت تقول أن كل شيء صعب طوال الوقت، وأن هناك دائمًا شخصًا أذكى منك!"
+        },
+        {
+          "text": "I'VE ALSO BEEN STUDYING ALL THIS TIME!",
+          "confidence": 0.927,
+          "text_ar": "لقد كنت أدرس طوال هذا الوقت أيضًا!"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "WHENI'M TALKING ABOUT SMARTS,IT DOESN'T REFER'TO IQ AS YOU UNDER- STANDIT.",
+          "confidence": 0.904,
+          "text_ar": "عندما أتحدث عن الذكاء، فأنا لا أقصد معدل الذكاء كما تفهمه أنت."
+        },
+        {
+          "text": "YOU'RE STUDYING",
+          "confidence": 0.875,
+          "text_ar": "أنت تدرس"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "BECALISEI'MFORCING YOU TO. THE REAL SMART REALIZE PEOPLE ARE ABLE TO THAT THEY HAVE TO STUDY AND WOULD DO IT ON THEIR OWN.",
+          "confidence": 0.916,
+          "text_ar": "لأنني أجبرك على ذلك. الأذكياء حقًا يدركون أن عليهم الدراسة وسيفعلون ذلك من تلقاء أنفسهم."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "STUDYSTUDY STUDY...ALLTHIS GUYKNOWSISTO MAKE ME STUDY.",
+          "confidence": 0.87,
+          "text_ar": "دراسة.. دراسة.. دراسة.. كل ما يعرفه هذا الرجل هو إجباري على الدراسة."
+        },
+        {
+          "text": "IN THE PAST, YOU USED TO TRICK ME INTO HOLDING HANDS AND HUGGING,NOW YOU'RE JUST TRICKING MEINTO STUDYING EVERY DAY.",
+          "confidence": 0.93,
+          "text_ar": "في الماضي، كنت تخدعني لأمسك يدك وأعانقك، والآن تخدعني لأدرس كل يوم."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "WHATA CONMAN!",
+          "confidence": 0.992,
+          "text_ar": "يا له من محتال!"
+        },
+        {
+          "text": "WELL,EVENIF YOU'RE A DUMB LITTLE SPROUT, I'LL STILL TAKE CARE OF YOU.",
+          "confidence": 0.921,
+          "text_ar": "حسنًا، حتى لو كنتِ برعمًا صغيرًا غبيًا، سأظل أعتني بكِ."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "ISN'T IT SAID THAT IT'S EASIER TO TAKE CARE OF DUMB PEOPLE?",
+          "confidence": 0.936,
+          "text_ar": "ألم يُقل أن الاعتناء بالأغبياء أسهل؟"
+        },
+        {
+          "text": "WHAT KIND OF WEIRD STLIFF HAVEYOU BEEN SEARCHING AGAIN? SAME AS THINKING THAT ILL DIE FROMACOLD~",
+          "confidence": 0.915,
+          "text_ar": "ما نوع الأشياء الغريبة التي كنت تبحثين عنها مجددًا؟ نفس تفكيرك بأنني سأموت بسبب نزلة برد~"
+        },
+        {
+          "text": "I HAVEN'T!",
+          "confidence": 0.933,
+          "text_ar": "لم أفعل!"
+        },
+        {
+          "text": "I'M JUST CONCERNED ABOLT YOU.",
+          "confidence": 0.881,
+          "text_ar": "أنا فقط قلقة عليك."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "YOU CAN TOUCH ME HERE INSTEAD,IT'S MORE ACCLIRATE.",
+          "confidence": 0.945,
+          "text_ar": "يمكنك لمسي هنا بدلًا من ذلك، فهي أكثر دقة."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "IFYOU'RE WILLING TO STUDY ON YOUR OWNEVERY DAY,I WILL LOVE YOU EVEN MORE.",
+          "confidence": 0.923,
+          "text_ar": "إذا كنتِ مستعدة للدراسة بمفردك كل يوم، سأحبك أكثر."
+        },
+        {
+          "text": "ILLLOVE YOU A HUNDRED TIMES MORETHANICURRENTLYDO~",
+          "confidence": 0.899,
+          "text_ar": "سأحبك مئة مرة أكثر مما أفعل الآن~"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "TEMPTED?",
+          "confidence": 0.998,
+          "text_ar": "هل أغراكِ العرض؟"
+        },
+        {
+          "text": "HMPH,I DON'T CARE.",
+          "confidence": 0.963,
+          "text_ar": "همف، لا أهتم."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": []
+    },
+    {
+      "page": 33,
+      "sentences": [
+        {
+          "text": ".HOW MUCH IS A HUNDRED TIMES MORE?",
+          "confidence": 0.856,
+          "text_ar": "..كم تعادل مئة مرة أكثر؟"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "sentences": [
+        {
+          "text": "IT'S THE LEVEL WHERE I'LL EVEN LOVE YOUR,FEET WATER!",
+          "confidence": 0.937,
+          "text_ar": "إنها الدرجة التي سأحب فيها حتى ماء غسل قدميكِ!"
+        },
+        {
+          "text": "SN N SU",
+          "confidence": 0.51,
+          "text_ar": "شهيق.. زفير"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "sentences": [
+        {
+          "text": "..PERVERT!",
+          "confidence": 0.93,
+          "text_ar": "..أيها المنحرف!"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "ACHOO!",
+          "confidence": 0.99,
+          "text_ar": "أتشوو!"
+        },
+        {
+          "text": "I'LL MAKE ANOTHER BOWL OF GINGER SOUP FORYOU TONIGHT.",
+          "confidence": 0.954,
+          "text_ar": "سأعد لكِ وعاءً آخر من حساء الزنجبيل الليلة."
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": [
+        {
+          "text": "THINKING ABOUT IT, DOES YOUR BATH WATER QUALIFY AS GINGER SOUP TOO?",
+          "confidence": 0.916,
+          "text_ar": "بالتفكير في الأمر، هل يُعتبر ماء استحمامك حساء زنجبيل أيضًا؟"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "T/N: The Chinese character for \"Jiangin Jiang He is the same as that of ginger[姜]",
+          "confidence": 0.944,
+          "text_ar": "ملاحظة المترجم: الحرف الصيني لاسم \"جيانغ\" في جيانغ هي هو نفس حرف الزنجبيل [姜]."
+        },
+        {
+          "text": "DENG TUZI!",
+          "confidence": 0.797,
+          "text_ar": "أيها المنحرف!"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": [
+        {
+          "text": "HE'S STILL SPEWING SUCH VULGAR STUFF WHEN HECAN BARELYTALK!",
+          "confidence": 0.95,
+          "text_ar": "لا يزال يتفوه بمثل هذا الكلام البذيء بينما بالكاد يستطيع الكلام!"
+        },
+        {
+          "text": "WHEN HE GROWS OLD AND HIS HAIR TURNSWHITE, I BET THATHE'LLSTILL BE ASPERVY!",
+          "confidence": 0.901,
+          "text_ar": "أراهن أنه عندما يتقدم في السن ويشيب شعره، سيظل منحرفًا!"
+        }
+      ]
+    }
+  ]
+}
