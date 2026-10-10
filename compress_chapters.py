@@ -284,6 +284,11 @@ FULL_PRODUCTION_MODE = os.environ.get("FULL_PRODUCTION_MODE", "false").strip().l
 
 WEBP_HARD_LIMIT = 16000
 
+# [تسريع] method=6 أبطأ مستوى ترميز WebP بفارق حجم ضئيل (~1-3%) عن 4 بنفس الجودة البصرية؛ 4 أسرع بعدة أضعاف.
+WEBP_METHOD = _clamp_int(os.environ.get("IMG_WEBP_METHOD", "4"), 4, 0, 6, "IMG_WEBP_METHOD")
+# [تسريع] ضغط صور الفصل بالتوازي (ترميز Pillow يحرّر GIL) بدل صورة تلو الأخرى.
+COMPRESS_WORKERS = _clamp_int(os.environ.get("COMPRESS_WORKERS", str(os.cpu_count() or 2)), os.cpu_count() or 2, 1, 8, "COMPRESS_WORKERS")
+
 # [إصلاح منطقي ج] حد أدنى لأبعاد الصورة (طول/عرض) كي تُعتبر صفحة مانهوا
 # حقيقية لا صورة بديلة/حظر صغيرة — راجع _validate_image_bytes.
 MIN_IMAGE_DIMENSION = _clamp_int(
@@ -2030,7 +2035,7 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int, img_format: s
         # مشفّر libavif.
         img.save(out, format="AVIF", quality=quality)
     else:
-        img.save(out, format="WEBP", quality=quality, method=6)
+        img.save(out, format="WEBP", quality=quality, method=WEBP_METHOD)
     return out.getvalue()
 
 
@@ -2294,23 +2299,36 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     failed_indices = []
     size_original: dict[int, int] = {}    # فهرس الصورة -> حجم الأصل بالبايت (قبل الضغط)
     size_compressed: dict[int, int] = {}  # فهرس الصورة -> حجم الناتج بالبايت (بعد الضغط)
+    compress_sem = asyncio.Semaphore(COMPRESS_WORKERS)
+
+    async def _compress_save(i: int, raw: bytes, img_url: str) -> None:
+        async with compress_sem:
+            try:
+                compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
+                filename = f"{i:03d}.{IMG_FORMAT}"
+                (chapter_dir / filename).write_bytes(compressed)
+                saved_paths.append(f"{manga_id}/ch-{chapter_num}/{filename}")
+                size_original[i], size_compressed[i] = len(raw), len(compressed)
+                print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
+            except Exception as e:
+                print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
+
+    compress_tasks: list[asyncio.Task] = []
     for i, img_url in enumerate(image_urls, start=1):
         raw, reason = await download(img_url)
         if not raw:
             print(f"  ⚠️ فشلت صورة {i}: {reason} — الرابط: {img_url}")
             failed_indices.append(i)
             continue
-        try:
-            compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
-            filename = f"{i:03d}.{IMG_FORMAT}"
-            (chapter_dir / filename).write_bytes(compressed)
-            saved_paths.append(f"{manga_id}/ch-{chapter_num}/{filename}")
-            size_original[i], size_compressed[i] = len(raw), len(compressed)
-            print(f"  ✅ {i}/{len(image_urls)} — {len(raw)//1024}ك.ب ← {len(compressed)//1024}ك.ب")
-        except Exception as e:
-            print(f"  ⚠️ فشلت صورة {i} أثناء الضغط: {e} — الرابط: {img_url}")
+        compress_tasks.append(asyncio.create_task(_compress_save(i, raw, img_url)))
+        # ضغط عكسي: لا نُراكم أكثر من ~2×العمال صورة خام بالذاكرة أثناء التنزيل
+        active = [t for t in compress_tasks if not t.done()]
+        if len(active) >= COMPRESS_WORKERS * 2:
+            await asyncio.wait(active, return_when=asyncio.FIRST_COMPLETED)
         if not profile.get("sb_page_fetch"):
             await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)   # بمسار المتصفح الصور محمّلة مسبقًا — لا داعي للتأخير
+    if compress_tasks:
+        await asyncio.gather(*compress_tasks)
 
     if failed_indices:
         print(f"  🔁 إعادة محاولة نهائية لـ {len(failed_indices)} صورة فشلت...")
