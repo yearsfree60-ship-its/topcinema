@@ -1,0 +1,107 @@
+name: فحص مجلدات الفصول اليتيمة (قراءة فقط)
+
+# [قراءة فقط] لا يحذف ولا يدفع شيئًا. يقارن مجلدات الفصول output/<manga>/ch-<n>
+# الموجودة فعليًا بفرع output مع الفصول المذكورة في output/manifest.json،
+# ويطبع المجلدات اليتيمة (موجودة بالمستودع وغير مذكورة بالـmanifest) بملخّص التشغيلة.
+# الجلب خفيف عمدًا: عمق 1 + بلا blobs (المستودع كبير جدًا) — فلا يُنزَّل أي صورة،
+# لذلك يُعرَض عدد الملفات بكل مجلد لا حجمه بالبايت.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: جلب خفيف لفرع output (شجرة الملفات + manifest.json فقط)
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: output/manifest.json
+          sparse-checkout-cone-mode: false
+
+      - name: مقارنة مجلدات الفصول بـ manifest.json
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, sys
+          from collections import defaultdict
+          from urllib.parse import unquote
+
+          raw = subprocess.run(
+              ["git", "ls-tree", "-r", "-z", "--name-only", "HEAD", "--", "output/"],
+              capture_output=True, check=True).stdout
+          paths = [p for p in raw.decode("utf-8", "surrogateescape").split("\0") if p]
+
+          # مجلدات الفصول الفعلية: output/<manga>/ch-<n>/<ملف> → "<manga>/ch-<n>" وعدد ملفاتها
+          disk = defaultdict(int)
+          for p in paths:
+              parts = p.split("/")
+              if len(parts) >= 4 and parts[2].startswith("ch-"):
+                  disk[parts[1] + "/" + parts[2]] += 1
+
+          with open("output/manifest.json", encoding="utf-8") as f:
+              manifest = json.load(f)
+
+          from_images = set()   # مجلدات مشتقّة من روابط الصور (المرجع الأدق)
+          guessed = set()       # تخمين احتياطي <manga>/ch-<num> — يقلّل الإيجابيات الكاذبة فقط
+          no_images = 0
+          for mid, mv in (manifest.get("manga") or {}).items():
+              for ch in (mv.get("chapters") or []):
+                  imgs = ch.get("images") or []
+                  if not imgs:
+                      no_images += 1
+                  for u in imgs:
+                      m = re.search(r"(?:/output/output/|@output/output/)(.+)$", u)
+                      rel = unquote(m.group(1) if m else u)
+                      if "/" in rel:
+                          from_images.add(rel.rsplit("/", 1)[0])
+                  if ch.get("num") is not None:
+                      guessed.add(f"{mid}/ch-{ch['num']}")
+
+          listed = from_images | guessed
+          orphans = sorted(k for k in disk if k not in listed)
+          dangling = sorted(k for k in from_images if k not in disk)
+
+          by_manga = defaultdict(list)
+          for k in orphans:
+              mid, chdir = k.split("/", 1)
+              by_manga[mid].append((chdir, disk[k]))
+
+          lines = []
+          lines.append("## نتيجة فحص المجلدات اليتيمة")
+          lines.append("")
+          lines.append(f"- مجلدات فصول على القرص: **{len(disk)}**")
+          lines.append(f"- فصول مذكورة بالـmanifest (بمجلد مشتقّ من الصور): **{len(from_images)}**")
+          lines.append(f"- **مجلدات يتيمة (على القرص وغير مذكورة بالـmanifest): {len(orphans)}**")
+          lines.append(f"- فصول بالـmanifest بلا مجلد على القرص: {len(dangling)}")
+          if no_images:
+              lines.append(f"- ملاحظة: {no_images} فصل بالـmanifest بلا روابط صور (طُبِّق عليها تخمين الاسم فقط)")
+          lines.append("")
+          if orphans:
+              lines.append("### اليتيمة (حسب المانهوا)")
+              for mid in sorted(by_manga):
+                  items = by_manga[mid]
+                  total = sum(c for _, c in items)
+                  lines.append(f"- `{mid}` — {len(items)} مجلد، {total} ملف")
+                  for chdir, c in items:
+                      lines.append(f"    - {chdir} ({c} ملف)")
+          else:
+              lines.append("✅ لا مجلدات يتيمة.")
+          if dangling:
+              lines.append("")
+              lines.append("### فصول بالـmanifest بلا مجلد على القرص")
+              for k in dangling:
+                  lines.append(f"- {k}")
+
+          text = "\n".join(lines)
+          print(text)
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as sf:
+                  sf.write(text + "\n")
+          PY
