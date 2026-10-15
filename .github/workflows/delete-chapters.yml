@@ -28,19 +28,28 @@ jobs:
       - name: تحميل المستودع
         uses: actions/checkout@v4
 
-      - name: تجهيز فرع output (git worktree)
+      # [تسريع — partial clone + sparse-checkout، نفس نمط compress-chapters.yml] كان
+      # "git fetch origin" يجلب كل الفروع بتاريخها، و"git worktree add" يكتب كل صور الفرع
+      # على القرص (17GB+). الآن: جلب عمق 1 لفرع output بلا blobs، ويُكتَب على القرص فقط
+      # manifest.json وruns/ (سجلات التشغيلات التي يُصفّيها scrub-run-manifests). أسئلة
+      # "هل المجلد موجود؟" يجيب عنها delete_manager.py من فهرس git (INDEX_FILE_LIST) لا من القرص،
+      # وgit rm/add تستعمل --sparse لأن بقية الملفات خارج تعريف sparse (علامة skip-worktree).
+      - name: تجهيز فرع output (partial clone + sparse-checkout)
         run: |
           set -e
           git config user.name "manhwa-bot"
           git config user.email "bot@users.noreply.github.com"
-          git fetch origin --quiet
 
           if ! git ls-remote --exit-code --heads origin output > /dev/null 2>&1; then
             echo "❌ فرع output غير موجود أصلًا — لا شيء لحذفه"
             exit 1
           fi
-          git worktree add output-worktree origin/output
-          git -C output-worktree checkout -B output origin/output
+          git fetch --depth=1 --filter=blob:none origin "+refs/heads/output:refs/remotes/origin/output" --quiet
+          git worktree add --no-checkout output-worktree origin/output
+          cd output-worktree
+          git sparse-checkout set --no-cone '/output/manifest.json' '/output/runs/'
+          git checkout -q -B output origin/output
+          cd ..
           echo "OUTPUT_WORKTREE=$(pwd)/output-worktree" >> "$GITHUB_ENV"
 
       - name: التحقق من صحة delete_payload
@@ -65,7 +74,9 @@ jobs:
       - name: حساب المسارات المستهدَفة
         env:
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
+          INDEX_FILE_LIST: /tmp/index_files.lst
         run: |
+          git -C "$OUTPUT_WORKTREE" ls-files -z -- output/ > "$INDEX_FILE_LIST"
           python3 delete_manager.py compute-targets > /tmp/targets.txt
           echo "المسارات المستهدَفة:"
           cat /tmp/targets.txt
@@ -76,6 +87,7 @@ jobs:
       - name: حذف الملفات + تحديث manifest.json + الدفع
         env:
           OUTPUT_DIR: ${{ env.OUTPUT_WORKTREE }}/output
+          INDEX_FILE_LIST: /tmp/index_files.lst
         run: |
           set -e
           cd "$OUTPUT_WORKTREE"
@@ -99,10 +111,10 @@ jobs:
             python3 "$GITHUB_WORKSPACE/delete_manager.py" apply-manifest /tmp/remote_manifest.json "${OUTPUT_DIR}/manifest.json"
 
             while IFS= read -r t; do
-              git rm -r --ignore-unmatch --quiet -- "$git_rel_output/$t" || true
+              git rm -r --sparse --ignore-unmatch --quiet -- "$git_rel_output/$t" || true
             done < /tmp/targets.txt
 
-            git add -- "$manifest_path"
+            git add --sparse -- "$manifest_path"
 
             # [تصحيح] يشمل الحذف الآن سجلات التشغيلات (output/runs/run-<id>.json)
             # وأي أثر مشابه لها — مقارنة فعلية بالقرص لا بـDELETE_PAYLOAD هذه
@@ -114,11 +126,13 @@ jobs:
             # المتبقية فعليًا)، وداخل apply_and_stage (لا مرة واحدة فقط) كي
             # يعمل دائمًا على أحدث نسخة origin فعليًا بكل محاولة إعادة دفع،
             # بنفس ضمان manifest.json تمامًا.
+            # [فهرس بعد الحذف] القائمة تُولَّد هنا (بعد git rm أعلاه مباشرة) فتعكس الفصول المتبقية فعليًا
+            git ls-files -z -- "$git_rel_output/" > "$INDEX_FILE_LIST"
             while IFS= read -r line; do
               action="${line%% *}"
               rel_path="${line#* }"
               if [ "$action" = "DELETE" ]; then
-                git rm --ignore-unmatch --quiet -- "$git_rel_output/$rel_path" || true
+                git rm --sparse --ignore-unmatch --quiet -- "$git_rel_output/$rel_path" || true
                 # [إضافة] السجلّ الذي أصبح فارغًا كليًا يعني أن كل فصول
                 # تشغيلة الضغط تلك لم يعد لها وجود — نلتقط run_id الحقيقي
                 # لمنصة GitHub Actions من اسم الملف نفسه (run-<RUN_ID>.json،
@@ -135,7 +149,7 @@ jobs:
                   *) echo "$run_id" >> /tmp/deleted_run_ids.txt ;;
                 esac
               elif [ "$action" = "KEEP" ]; then
-                git add -- "$git_rel_output/$rel_path"
+                git add --sparse -- "$git_rel_output/$rel_path"
               fi
             done < <(python3 "$GITHUB_WORKSPACE/delete_manager.py" scrub-run-manifests "$OUTPUT_DIR")
           }
@@ -154,8 +168,8 @@ jobs:
               break
             fi
             echo "فشلت محاولة الدفع #$i — إعادة المحاولة بعد إعادة المزامنة مع origin..."
-            git fetch origin "$GIT_BRANCH"
-            git reset "origin/${GIT_BRANCH}"
+            git fetch --depth=1 --filter=blob:none origin "+refs/heads/${GIT_BRANCH}:refs/remotes/origin/${GIT_BRANCH}"
+            git reset --hard "origin/${GIT_BRANCH}"
             apply_and_stage
             if git diff --cached --quiet; then
               echo "أصبح الحذف مطابقًا لأحدث نسخة على origin أصلًا"
