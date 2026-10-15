@@ -1,0 +1,484 @@
+{
+  "url": "https://mangadex.org/chapter/26baf62f-ef4f-419f-9618-f965293cd4c0",
+  "tls_and_server_info": {
+    "server_ip": "45.129.229.1",
+    "tls_issuer": "Let's Encrypt",
+    "tls_subject": "mangadex.org",
+    "tls_not_after": "Oct 26 08:54:43 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "20.102.46.153",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Dulles Town Center",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "MangaDex",
+      "content-type": "text/html; charset=utf-8"
+    },
+    "challenge_detected": false,
+    "protection_category": "none",
+    "protection_signatures": [],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "extraction_tier_used": "last_resort_regex_whole_page",
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.47
+  },
+  "curl_cffi_probe": {
+    "probes": [
+      {
+        "impersonate": "chrome",
+        "status_code": 200,
+        "headers_of_interest": {
+          "server": "MangaDex",
+          "content-type": "text/html; charset=utf-8"
+        },
+        "challenge_detected": false,
+        "protection_category": "none",
+        "protection_signatures": [],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.32,
+        "error": null
+      },
+      {
+        "impersonate": "firefox",
+        "status_code": 200,
+        "headers_of_interest": {
+          "server": "MangaDex",
+          "content-type": "text/html; charset=utf-8"
+        },
+        "challenge_detected": false,
+        "protection_category": "none",
+        "protection_signatures": [],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.32,
+        "error": null
+      },
+      {
+        "impersonate": "safari",
+        "status_code": 200,
+        "headers_of_interest": {
+          "server": "MangaDex",
+          "content-type": "text/html; charset=utf-8"
+        },
+        "challenge_detected": false,
+        "protection_category": "none",
+        "protection_signatures": [],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.07,
+        "error": null
+      }
+    ]
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "MangaDex",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 9,
+    "images_after_wait": 9,
+    "images_after_scroll": 5,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 5,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [
+      ".flex",
+      ".items-center",
+      ".flex-col",
+      ".justify-center",
+      ".gap-2",
+      ".w-12",
+      ".mx-auto",
+      ".pt-2"
+    ],
+    "suggested_selectors_pagewide_frequency": {
+      ".flex": 50,
+      ".items-center": 24,
+      ".flex-col": 15,
+      ".justify-center": 14,
+      ".gap-2": 5,
+      ".w-12": 1,
+      ".mx-auto": 1,
+      ".pt-2": 10
+    },
+    "domain_distribution": {
+      "mangadex.org": 5
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangadex-org-2211-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Google reCAPTCHA": [
+        "https://www.google.com/recaptcha/api.js?render=6LflOrIaAAAAACcpRSiKQlt_X6bq-QcVjHTG1diJ&trustedtypes=true",
+        "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LflOrIaAAAAACcpRSiKQlt_X6bq-QcVjHTG1diJ&co=aHR0cHM6Ly9tYW5nYWRleC5vcmc6NDQz&hl=en&v=kemdRjWFxNjgsGdhRslyEPw",
+        "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=kemdRjWFxNjgsGdhRslyEPwU"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 4,
+      "cookie_names_reused": [
+        "_ga",
+        "_ga_N0GP6FDRPH",
+        "_gat_UA-114714674-1",
+        "_gid"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 9,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.38,
+    "navigation_timing": {
+      "ttfb_ms": 25,
+      "dom_content_loaded_ms": 370,
+      "load_event_ms": null,
+      "transfer_size_bytes": 3102
+    },
+    "wait_for_images_elapsed_sec": 1.71,
+    "scroll_elapsed_sec": 2.01,
+    "total_probe_elapsed_sec": 4.84,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "public, max-age=60, s-max-age=30, stale-while-revalidate",
+      "content-encoding": "gzip",
+      "content-length": "2802",
+      "content-security-policy": "script-src 'strict-dynamic' 'nonce-CSPNONCE'; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';",
+      "content-type": "text/html; charset=utf-8",
+      "cross-origin-embedder-policy": "unsafe-none",
+      "cross-origin-opener-policy": "same-origin-allow-popups",
+      "cross-origin-resource-policy": "cross-origin",
+      "date": "Tue, 29 Sep 2026 03:42:45 GMT",
+      "etag": "W/\"6aac17cc-bbc\"",
+      "expect-ct": "enforce, max-age: 604800",
+      "last-modified": "Thu, 17 Sep 2026 16:39:40 GMT",
+      "md-frontend-flavour": "stable",
+      "md-progressive-rollout-bucket": "816941706",
+      "permissions-policy": "fullscreen=(self)",
+      "referrer-policy": "strict-origin",
+      "server": "MangaDex",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "via": "HTTP/2.0 NA-EAST-N1x2",
+      "x-cache": "HIT (fresh)",
+      "x-cache-age": "0.534, 0",
+      "x-cache-hits": "2",
+      "x-cache-rid": "01a0eb41-faed-7dd9-b5a4-62bc2d73bbd7",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-request-id": "01a0eb41-fe7e-7dac-b0f6-87d626ebee6d",
+      "x-xss-protection": "1; mode=block"
+    },
+    "all_third_party_domains": [
+      "analytics.google.com",
+      "cmdxd98sb0x3yprd.mangadex.network",
+      "fonts.gstatic.com",
+      "stats.g.doubleclick.net",
+      "www.google-analytics.com",
+      "www.google.com",
+      "www.googletagmanager.com",
+      "www.gstatic.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [
+      "https://mangadex.org/"
+    ],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 5
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "MangaDex",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 9,
+    "images_after_wait": 9,
+    "images_after_scroll": 5,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 5,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [
+      ".flex",
+      ".items-center",
+      ".flex-col",
+      ".justify-center",
+      ".gap-2",
+      ".w-12",
+      ".mx-auto",
+      ".pt-2"
+    ],
+    "suggested_selectors_pagewide_frequency": {
+      ".flex": 50,
+      ".items-center": 24,
+      ".flex-col": 15,
+      ".justify-center": 14,
+      ".gap-2": 5,
+      ".w-12": 1,
+      ".mx-auto": 1,
+      ".pt-2": 10
+    },
+    "domain_distribution": {
+      "mangadex.org": 5
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangadex-org-2211-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Google reCAPTCHA": [
+        "https://www.google.com/recaptcha/api.js?render=6LflOrIaAAAAACcpRSiKQlt_X6bq-QcVjHTG1diJ&trustedtypes=true",
+        "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LflOrIaAAAAACcpRSiKQlt_X6bq-QcVjHTG1diJ&co=aHR0cHM6Ly9tYW5nYWRleC5vcmc6NDQz&hl=en&v=kemdRjWFxNjgsGdhRslyEPw",
+        "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=kemdRjWFxNjgsGdhRslyEPwU"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 4,
+      "cookie_names_reused": [
+        "_ga",
+        "_ga_N0GP6FDRPH",
+        "_gat_UA-114714674-1",
+        "_gid"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 9,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.31,
+    "navigation_timing": {
+      "ttfb_ms": 25,
+      "dom_content_loaded_ms": 306,
+      "load_event_ms": null,
+      "transfer_size_bytes": 3102
+    },
+    "wait_for_images_elapsed_sec": 1.86,
+    "scroll_elapsed_sec": 1.69,
+    "total_probe_elapsed_sec": 4.36,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "public, max-age=60, s-max-age=30, stale-while-revalidate",
+      "content-encoding": "gzip",
+      "content-length": "2802",
+      "content-security-policy": "script-src 'strict-dynamic' 'nonce-CSPNONCE'; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';",
+      "content-type": "text/html; charset=utf-8",
+      "cross-origin-embedder-policy": "unsafe-none",
+      "cross-origin-opener-policy": "same-origin-allow-popups",
+      "cross-origin-resource-policy": "cross-origin",
+      "date": "Tue, 29 Sep 2026 03:42:45 GMT",
+      "etag": "W/\"6aac17cc-bbc\"",
+      "expect-ct": "enforce, max-age: 604800",
+      "last-modified": "Thu, 17 Sep 2026 16:39:40 GMT",
+      "md-frontend-flavour": "stable",
+      "md-progressive-rollout-bucket": "816941706",
+      "permissions-policy": "fullscreen=(self)",
+      "referrer-policy": "strict-origin",
+      "server": "MangaDex",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "via": "HTTP/2.0 NA-EAST-N1x1",
+      "x-cache": "HIT (fresh)",
+      "x-cache-age": "8.050, 0",
+      "x-cache-hits": "4",
+      "x-cache-rid": "01a0eb41-faed-7dd9-b5a4-62bc2d73bbd7",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-request-id": "01a0eb42-1bda-783c-9517-1f1b09e2d87a",
+      "x-xss-protection": "1; mode=block"
+    },
+    "all_third_party_domains": [
+      "analytics.google.com",
+      "cmdxd98sb0x3yprd.mangadex.network",
+      "fonts.gstatic.com",
+      "stats.g.doubleclick.net",
+      "www.google-analytics.com",
+      "www.google.com",
+      "www.googletagmanager.com",
+      "www.gstatic.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [
+      "https://mangadex.org/"
+    ],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 5
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://mangadex.org/chapter/26baf62f-ef4f-419f-9618-f965293cd4c0",
+    "requests_sent": 4,
+    "elapsed_sec": 0.17,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "deep_diagnostic": {
+    "wayback_availability_probe": {
+      "tested": true,
+      "available": false,
+      "snapshot_timestamp": null,
+      "snapshot_url": null,
+      "status": null,
+      "error": null
+    }
+  },
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangadex-org-2211-report.json",
+    "screenshots": [
+      "diagnostics/mangadex-org-2211-screenshot.png",
+      "diagnostics/mangadex-org-2211-run2-screenshot.png"
+    ]
+  }
+}

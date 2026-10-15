@@ -1,0 +1,323 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "198",
+  "manga_title": "My Wife Is From a Thousand Years Ago 198",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I WENT ROLLER- SKATING WITH PING- PING TODAY.IT FELT LIKE I WAS FLYING AS I WHOOSHED AROUND.",
+          "confidence": 0.937,
+          "text_ar": "ذهبتُ للتزلج على العجلات مع بينغ بينغ اليوم. شعرتُ وكأنني أطير بينما كنتُ أنطلق بسرعة من حولي."
+        },
+        {
+          "text": "ISN'T THAT GREAT...",
+          "confidence": 0.906,
+          "text_ar": "أليس هذا رائعاً..."
+        },
+        {
+          "text": "WAIT,YOUCAN ROLLERSKATE?",
+          "confidence": 0.973,
+          "text_ar": "انتظري، هل يمكنكِ التزلج على العجلات؟"
+        },
+        {
+          "text": "IT'S EASY, I LEARNT IT'IN NO TIME.",
+          "confidence": 0.932,
+          "text_ar": "الأمر سهل، تعلمته في وقت قصير."
+        },
+        {
+          "text": "EASY...",
+          "confidence": 0.906,
+          "text_ar": "سهل..."
+        },
+        {
+          "text": "I SAID THAT IT WAS MY FIRST TIME, I AND PINGPING SAID WAS LYING SINCE I WAS FASTER THAN HER.",
+          "confidence": 0.626,
+          "text_ar": "قلتُ إنها كانت مرتي الأولى، لكن بينغ بينغ اتهمتني بالكذب لأنني كنتُ أسرع منها."
+        },
+        {
+          "text": "AS EXPECTED OF THE WARRIORESS!",
+          "confidence": 0.985,
+          "text_ar": "هذا متوقع من المحاربة!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "DIDN'T YOU SAY THAT YOU WANT TO DO RESEARCH? YOU CAN HAVE THIS.",
+          "confidence": 0.934,
+          "text_ar": "ألم تقولي إنكِ ترغبين في إجراء بحث؟ يمكنكِ أخذ هذا."
+        },
+        {
+          "text": "YOU REALLY BELIEVE ME?",
+          "confidence": 0.954,
+          "text_ar": "هل تصدقني حقاً؟"
+        },
+        {
+          "text": "THAT'S RIGHT, HOWCANIBE A PERVERT?",
+          "confidence": 0.967,
+          "text_ar": "بالطبع، كيف لي أن أكون منحرفاً؟"
+        },
+        {
+          "text": "THE NEEDLEWORK IS IMMACULATE, AND IT IS VERY NEAT. THE ENDS ARE ALSO NEATLYCUT-",
+          "confidence": 0.948,
+          "text_ar": "الحياكة متقنة للغاية ومرتبة جداً. حتى الأطراف مقصوصة بعناية-"
+        },
+        {
+          "text": "I THINK IT'S CUT AT LEAST, IT'S HARDTO BITE THROUGH THESE ROUGH THREADS WITH YOUR TEETH.",
+          "confidence": 0.919,
+          "text_ar": "أعتقد أنها مقصوصة على الأقل، فمن الصعب تمزيق هذه الخيوط الخشنة بأسنانك."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "THIS IS...",
+          "confidence": 0.959,
+          "text_ar": "هذا..."
+        },
+        {
+          "text": "A CLOTH TO WRAP AROUND YOUR BREASTS FROM THE KAI YUAN ERA...",
+          "confidence": 0.93,
+          "text_ar": "قطعة قماش لربط الصدر من عصر كا يوان..."
+        },
+        {
+          "text": "WITH 1200 YEARS OF HISTORY, WHAT A GREAT ANTIQUE... 湊近",
+          "confidence": 0.83,
+          "text_ar": "مع تاريخ يمتد لـ 1200 عام، يا لها من تحفة أثرية رائعة... *يقترب*"
+        },
+        {
+          "text": "TS/N: My man has no chill!",
+          "confidence": 0.949,
+          "text_ar": "ملاحظة المترجم: هذا الرجل لا يهدأ أبداً!"
+        },
+        {
+          "text": "WHAT ARE YOU DOING?!",
+          "confidence": 0.959,
+          "text_ar": "ما الذي تفعله؟!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "I..ACCIDENTALLY DROPPED THIS, ANDTLOOKED A LITTLE DIRTY.",
+          "confidence": 0.786,
+          "text_ar": "لقد.. أسقطتها بالخطأ، وبدت متسخة قليلاً."
+        },
+        {
+          "text": "I WAS JUST BLOWING THE DUST OFF IT!",
+          "confidence": 0.898,
+          "text_ar": "كنتُ أنفخ الغبار عنها فقط!"
+        },
+        {
+          "text": "AHEM,WHY DIDYOU COME BACK OUT?",
+          "confidence": 0.938,
+          "text_ar": "أحم، لماذا عدتِ للخارج؟"
+        },
+        {
+          "text": ".ICAME TO GET AN EGG.",
+          "confidence": 0.898,
+          "text_ar": "جئتُ لأخذ بيضة."
+        },
+        {
+          "text": "PHEW...",
+          "confidence": 0.98,
+          "text_ar": "أوف..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "WHYCANT I KEEP THESE HANDS TO MYSELF.. WHY DOI FINDMYSELF IN SUCH SITUATIONSWHEN I ALREADY HAVE A GIRLFRIEND?",
+          "confidence": 0.916,
+          "text_ar": "لماذا لا أستطيع كبح جماح يدي.. ولماذا أجد نفسي في مثل هذه المواقف بينما لدي حبيبة بالفعل؟"
+        },
+        {
+          "text": "OR COULD IT BE THAT.IREALLY AM A DEGENERATE PERVERT DENG TUZI?",
+          "confidence": 0.905,
+          "text_ar": "أم هل يعقل أنني حقاً منحرف دنيء؟"
+        },
+        {
+          "text": "I DON'T HAVE A FETISH FORUSEDCLOTHES, EVEN WHEN IT COMES TO STOCKINGS I'M ONLY INTERESTED WHEN THE WARRIORESS IS WEARING THEM,",
+          "confidence": 0.924,
+          "text_ar": "ليس لدي هوس بالملابس المستعملة، فحتى الجوارب لا تهمني إلا إذا كانت المحاربة ترتديها،"
+        },
+        {
+          "text": "ANDIDON'THAVE ANY INTEREST IN HER SOCKS AFTER SHE TAKES THEMOFF...",
+          "confidence": 0.91,
+          "text_ar": "ولا أهتم بجواربها بعد أن تخلعها..."
+        },
+        {
+          "text": "WHY THEN DO I HAVE SUCH AN INTEREST IN AN ANTIQUE?",
+          "confidence": 0.951,
+          "text_ar": "لماذا إذن أشعر بهذا الانجذاب تجاه قطعة أثرية؟"
+        },
+        {
+          "text": "I KNOW! MAYBE IT'S IN THE GENES?!",
+          "confidence": 0.952,
+          "text_ar": "عرفت! ربما الأمر في جيناتي!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "WHAT I'M INTERESTED IN ISN'T THE PIECE OF CLOTH ITSELF, BUT THE FACT THAT IT'S ANANTIQUETHAT MUST BE IT!",
+          "confidence": 0.897,
+          "text_ar": "ما يهمني ليس قطعة القماش بحد ذاتها، بل حقيقة أنها أثرية، لا بد أن هذا هو السبب!"
+        },
+        {
+          "text": "YES, I'M ONLY INTERESTED IN THE SMELL OF ANTIQUES. AND THE STRONG SMELL OF ANTIQUITY ON THIS CLOTHING...",
+          "confidence": 0.91,
+          "text_ar": "نعم، أنا مهتم فقط برائحة الآثار. ورائحة القدم الأثرية القوية على هذه الملابس..."
+        },
+        {
+          "text": "AMI IMAGINING THINGS? ITFELTLIKE SHE WAS JUST WATCHING ME~",
+          "confidence": 0.907,
+          "text_ar": "هل أتوهم؟ شعرتُ وكأنها كانت تراقبني للتو~"
+        },
+        {
+          "text": "IF SHE WAS REALLY PEEKING, SH WOULD MOST DEFINITELY LET OUT A SCREAM AND NOTLET ME CONTINUE..",
+          "confidence": 0.922,
+          "text_ar": "لو كانت تراقبني حقاً، لصرخت بالتأكيد ولم تتركني أكمل.."
+        },
+        {
+          "text": "AHEM..I SHALL SHIFT MY ATTENTION BACK TO THIS PIECE OF CLOTHING.",
+          "confidence": 0.918,
+          "text_ar": "أحم.. سأعيد تركيز انتباهي على قطعة الملابس هذه."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "IT LOOKS KIND OF SMALL, I'M NOT SURE IF IT'S BECAUSE IT HAS SHRUNKORNOT.",
+          "confidence": 0.938,
+          "text_ar": "تبدو صغيرة نوعاً ما، لست متأكداً إن كانت قد انكمشت أم لا."
+        },
+        {
+          "text": "SINCE I'VE ALREADY SMELLEDONEOF THE ANTIQUES, I SHOULDGIVE THE SAME TREATMENT TO OTHER ANTIQUE ASWELL..",
+          "confidence": 0.939,
+          "text_ar": "بما أنني شممتُ إحدى القطع الأثرية بالفعل، يجب أن أعامل القطع الأخرى بنفس الطريقة.."
+        },
+        {
+          "text": "I AM NOT A PERVERT, IT'S JUST IN MYGENES TO LOVE ALL ANTIQUES.",
+          "confidence": 0.946,
+          "text_ar": "أنا لست منحرفاً، إنه مجرد شغف بالآثار يسري في جيناتي."
+        },
+        {
+          "text": "THESE ARE ALL ANTIQUES, AND I SHOULD NOT REJECT ANYOFTHESE PIECES.",
+          "confidence": 0.928,
+          "text_ar": "هذه كلها قطع أثرية، ولا ينبغي لي أن أرفض أياً منها."
+        },
+        {
+          "text": "JUST LIKE HOW WANGZIDOESN'T MIND OTHERS SAYING THAT HE'S POOR, I, XUQING, SHALL NO LONGERCARE IF JIANG HE CALLS ME A PERVERT.",
+          "confidence": 0.89,
+          "text_ar": "تماماً كما لا يبالي وانغزي بما يقوله الآخرون عن فقره، أنا، شو تشينغ، لن أهتم بعد الآن إذا نعتتني جيانغ هي بالمنحرف."
+        },
+        {
+          "text": "BECAUSE I'M NOT! THAT'S WHAT I TRULY BELIEVE!",
+          "confidence": 0.96,
+          "text_ar": "لأنني لست كذلك! هذا ما أؤمن به حقاً!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "THE SMELL OF THIS ANTIQUE...",
+          "confidence": 0.928,
+          "text_ar": "رائحة هذه القطعة الأثرية..."
+        },
+        {
+          "text": "YOU SAVED ALL THE MONEY THAT I'VE EARNED, RIGHT?",
+          "confidence": 0.904,
+          "text_ar": "لقد ادخرتَ كل المال الذي كسبتُه، أليس كذلك؟"
+        },
+        {
+          "text": "YEAH, DO YOU WANT TO USE IT? IF YOU DO,I CAN TRANSFER IT TO YOU.",
+          "confidence": 0.848,
+          "text_ar": "أجل، هل تريدين استخدامه؟ إذا أردتِ، يمكنني تحويله إليكِ."
+        },
+        {
+          "text": "IVE BEEN HELPING THE WARRIORESS SAVE HERMONEY, BESIDES THE 4000 FORTHETVAT THE START, I HAVEN'T TOUCHED THE REST.",
+          "confidence": 0.936,
+          "text_ar": "كنتُ أساعد المحاربة في ادخار مالها، وبخلاف الأربعة آلاف التي استُخدمت في البداية، لم ألمس البقية."
+        },
+        {
+          "text": "I WAS ORIGINALLYWAITING FORTHEWARRIORESS TO GET HERID SETTLED AND FOR HERTO BE ABLE TO MANAGE HEROWNFINANCES BEFORE TRANSFERRING IT ALL TO HER. AFTERALLBYTHEN,WE'LLBETWO INDEPENDENT PEOPLE, UNLIKE NOW WHERESHE HAS TO RELYON ME.",
+          "confidence": 0.93,
+          "text_ar": "كنتُ أنتظر في الأصل أن ترتب المحاربة هويتها وتتمكن من إدارة شؤونها المالية بنفسها قبل تحويل المبلغ بالكامل إليها. ففي النهاية، سنكون حينها شخصين مستقلين، على عكس الآن حيث تضطر للاعتماد علي."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "I WAS JUST CURIOUS,",
+          "confidence": 0.925,
+          "text_ar": "كنتُ أشعر بالفضول فقط."
+        },
+        {
+          "text": "I FEEL LIKE YOU CANUSE MY MONEY TO EARN MORE MONEY. YOU'LL EARN MORE IF YOU HAVE A LARGER CAPITAL,NO?",
+          "confidence": 0.944,
+          "text_ar": "أشعر أنه يمكنك استخدام مالي لكسب المزيد. ستكسب أكثر إذا كان لديك رأس مال أكبر، أليس كذلك؟"
+        },
+        {
+          "text": "ARE YOU SAYING THAT I SHOULD INVEST YOURMONEY IN THE STOCK MARKET?",
+          "confidence": 0.945,
+          "text_ar": "هل تقترحين أن أستثمر مالك في سوق الأسهم؟"
+        },
+        {
+          "text": "THE STOCK MARKET ISN'T AN ATM MACHINE, I JUST INVESTEDINIT ALITTLE FOR FUN.I DON'T INVEST ANY MORE THAN THAT.",
+          "confidence": 0.938,
+          "text_ar": "سوق الأسهم ليس ماكينة صراف آلي، لقد استثمرتُ فيه قليلاً للمتعة فقط. لا أستثمر أكثر من ذلك."
+        },
+        {
+          "text": "ALSO,IF I WERE TO INVEST YOUR MONEY, I WOULD FEEL EVEN MORE PRESSURED.THE BIGGER THE CAPITAL, THE LARGER THE RISKS AS WELL.",
+          "confidence": 0.92,
+          "text_ar": "أيضاً، لو استثمرتُ مالك، سأشعر بضغط أكبر. فكلما زاد رأس المال، زادت المخاطر أيضاً."
+        },
+        {
+          "text": "WHAT'S THE DIFFERENCE? ARE YOU SAYING THAT IT IS EASIER TO LOSE MY MONEY?",
+          "confidence": 0.93,
+          "text_ar": "ما الفرق؟ هل تقول إن خسارة مالي أسهل؟"
+        },
+        {
+          "text": "WELL,LET'S USE AN EXAMPLE. HAVE YOU SEEN THE WHITE LINES ON THE ROAD? IT'S EASY TO JUST FOLLOW THE THIN WHITE LINE AND WALK STRAIGHT,ISN'TIT?",
+          "confidence": 0.933,
+          "text_ar": "حسناً، لنأخذ مثالاً. هل رأيتِ الخطوط البيضاء على الطريق؟ من السهل السير بخط مستقيم باتباع خط أبيض رفيع، أليس كذلك؟"
+        },
+        {
+          "text": "BUT IF WE WERE TO PUT A PATH OF THE SAME WIDTH ON THE MOUNTAINSIDE AND HAVE YOU WALK IT, ISN'T IT WAY HARDER AND NO LONGER AS EASY?",
+          "confidence": 0.901,
+          "text_ar": "لكن لو وضعنا مساراً بنفس العرض على حافة جبل وطلبنا منكِ السير عليه، ألن يكون الأمر أصعب بكثير ولم يعد سهلاً كما كان؟"
+        },
+        {
+          "text": "IT'S NOT HARD THOUGH.",
+          "confidence": 0.92,
+          "text_ar": "لكنه ليس صعباً في الواقع."
+        },
+        {
+          "text": "Xu Qing has left the chat",
+          "confidence": 0.974,
+          "text_ar": "شو تشينغ غادر المحادثة"
+        }
+      ]
+    }
+  ]
+}

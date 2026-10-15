@@ -1,0 +1,333 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "227",
+  "manga_title": "My Wife Is From a Thousand Years Ago 227",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I'M HEADING OUT.",
+          "confidence": 0.863,
+          "text_ar": "سأخرج الآن."
+        },
+        {
+          "text": "OKAY.",
+          "confidence": 0.991,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "LITTLE HE DIDN'T PRACTICE SWORD- PLAYTODAY,BUT I'M PRACTICING MY MARTIAL ARTS!",
+          "confidence": 0.942,
+          "text_ar": "لم تتدرب شياو هي على المبارزة اليوم، لكنني سأتدرب على فنوني القتالية!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "AS THIS CONTINUES, THE GAP BETWEEN US WILL NARROW LITTLE BY LITTLE. ALTHOUGH IT'S ONLY ALITTLE BIT, VICTORYLIES IN PERSEVERANCE!",
+          "confidence": 0.929,
+          "text_ar": "إذا استمر الأمر على هذا المنوال، فستتقلص الفجوة بيننا شيئاً فشيئاً. ورغم أنها خطوة صغيرة، إلا أن النصر يكمن في المثابرة!"
+        },
+        {
+          "text": "YOU CAN'T BECOME A MASTERAFTERPRACTICING MARTIAL ARTS FOR A DAY, NOR CAN YOU BECOME SMART AFTER STUDYING FOR A DAY, PERSEVERANCE IS KEY! JIANG HE IS LIKE A MAX-LEVEL BOSS, WHILE I'M JUST A NOOB WITH AWOODENSWORDCOMINGOUT OF THE BEGINNER VILLAGE...",
+          "confidence": 0.909,
+          "text_ar": "لا يمكنك أن تصبح خبيراً بعد يوم واحد من التدريب، ولا يمكنك أن تصبح ذكياً بعد يوم واحد من الدراسة، فالمثابرة هي المفتاح! جيانغ هي أشبه بزعيم في أقصى مستوى، بينما أنا مجرد مبتدئ يحمل سيفاً خشبياً خرج للتو من قرية البداية..."
+        },
+        {
+          "text": "BUT AS LONG AS THERE IS ENOUGH TIME AND MY SKILL PROFICENCY SLOWLY INCREASES, SOONER ORLATER IWILL DEFEAT HER ANDCARRY HER TO BED!",
+          "confidence": 0.948,
+          "text_ar": "لكن طالما أن هناك متسعاً من الوقت وتزداد مهاراتي ببطء، سأهزمها عاجلاً أم آجلاً وأحملها إلى الفراش!"
+        },
+        {
+          "text": "ACHOO",
+          "confidence": 0.987,
+          "text_ar": "آتشوو!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "PINGPING!",
+          "confidence": 0.996,
+          "text_ar": "بينغ بينغ!"
+        },
+        {
+          "text": "JIANG HE!",
+          "confidence": 0.974,
+          "text_ar": "جيانغ هي!"
+        },
+        {
+          "text": "COME HERE!",
+          "confidence": 0.979,
+          "text_ar": "تعالي إلى هنا!"
+        },
+        {
+          "text": "LOOK!",
+          "confidence": 0.986,
+          "text_ar": "انظري!"
+        },
+        {
+          "text": "IT'S THE GUZHENG I BOUGHT!",
+          "confidence": 0.976,
+          "text_ar": "إنها آلة الغوزينغ التي اشتريتها!"
+        },
+        {
+          "text": "WOW! THIS GUZHENG IS NOT SMALL ATALL!",
+          "confidence": 0.947,
+          "text_ar": "واو! هذه الغوزينغ ليست صغيرة على الإطلاق!"
+        },
+        {
+          "text": "IT'S AS BIG AS THE BIG SWORD!",
+          "confidence": 0.937,
+          "text_ar": "إنها بحجم السيف الكبير!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "PLEASE HELP ME MOVE IT UPSTAIRS!",
+          "confidence": 0.929,
+          "text_ar": "أرجوكِ ساعديني في نقلها إلى الطابق العلوي!"
+        },
+        {
+          "text": "WANT TO LEARN?",
+          "confidence": 0.978,
+          "text_ar": "هل تودين التعلم؟"
+        },
+        {
+          "text": "I-1 WON'T BE ABLE TO LEARN IT, BUT XU QING SHOULO BE ABLE TO, HE SINGS VERY WELL!",
+          "confidence": 0.914,
+          "text_ar": "أنا... لن أتمكن من تعلمها، لكن شو تشينغ قد يستطيع، فهو يغني بشكل جيد جداً!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "AIYAH, WHAT'S THE POINT OF HIM LEARNING IT? I THINK YOULL BE ABLE TO LEARN A BIT.",
+          "confidence": 0.923,
+          "text_ar": "آييه، ما الفائدة من تعلمه هو؟ أعتقد أنكِ ستتمكنين من تعلم القليل."
+        },
+        {
+          "text": "DOESN'T XU QING KNOW MARTIAL ARTS? YOU PLAY THE GUZHENG WHILE HE DISPLAYS HIS MOVES,IT WOULD BE EVEN BETTER IF HE KNEW THE SWORD.",
+          "confidence": 0.945,
+          "text_ar": "ألا يتقن شو تشينغ الفنون القتالية؟ يمكنكِ العزف على الغوزينغ بينما يستعرض هو حركاته، وسيكون الأمر أفضل لو كان يتقن السيف."
+        },
+        {
+          "text": "TSK, YOU WANT HM TODANCEWITH A SWORD? HE HAS NO STRENGTH AT ALL, AND HIS HANDS STARTS TO FEEL SORE NOTLONG AFTERPRACTICING",
+          "confidence": 0.954,
+          "text_ar": "تباً، أتريدينه أن يرقص بالسيف؟ إنه لا يملك أي قوة، وتبدأ يداه بالشعور بالألم بعد فترة قصيرة من التدريب."
+        },
+        {
+          "text": "I REALLY DON'T HAVE TIME TO LEARN.",
+          "confidence": 0.971,
+          "text_ar": "ليس لدي وقت حقاً للتعلم."
+        },
+        {
+          "text": "THEN LET ME PERFORM A SONG FOR YOU. YOU",
+          "confidence": 0.786,
+          "text_ar": "إذن دعينا أعزف لكِ مقطوعة."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "C T/N: Pingping",
+          "confidence": 0.088,
+          "text_ar": "ملاحظة المترجم: بينغ بينغ"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "DOYOU WANT TO LEARN NOW?",
+          "confidence": 0.911,
+          "text_ar": "هل تودين التعلم الآن؟"
+        },
+        {
+          "text": ".I WOn'T BE ABLE TO LEARN IT.",
+          "confidence": 0.722,
+          "text_ar": "...لن أتمكن من تعلمها."
+        },
+        {
+          "text": "MYHANDS ARE USED TO WIELDING A SWORD, AND YET I STILL WANT TO DO THAT..",
+          "confidence": 0.872,
+          "text_ar": "يداي معتادتان على حمل السيف، ومع ذلك ما زلت أرغب في فعل ذلك..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "JUST THINKING ABOUT IT FEELS WRONG.",
+          "confidence": 0.963,
+          "text_ar": "مجرد التفكير في الأمر يبدو غريباً."
+        },
+        {
+          "text": "I'LL BE TEACHING YOU! YOU TEACH ME HOW TO COOK, AND I'LL TEACH YOU HOW TO PLAY TUNES.",
+          "confidence": 0.905,
+          "text_ar": "سأعلمكِ أنا! علميني كيف أطبخ، وسأعلمكِ كيف تعزفين الألحان."
+        },
+        {
+          "text": "IT'S FINE, I STILL IT'S FINE,I STILL HAVE TO STUDY AND READ...STUDYING TOO READ..STUDYINGTOO MUCH CALSES MY BRAIN TO OVERLOAD.",
+          "confidence": 0.932,
+          "text_ar": "لا بأس، لا يزال عليّ الدراسة والقراءة... كثرة الدراسة تسبب لي ضغطاً ذهنياً."
+        },
+        {
+          "text": "好好学习 天天向上！ YOU'RE STILL IN SCHOOL? I THOUGHT YOU...!",
+          "confidence": 0.897,
+          "text_ar": "ادرس بجد، وتطور يوماً بعد يوم! هل ما زلتِ في المدرسة؟ ظننت أنكِ...!"
+        },
+        {
+          "text": "MATH",
+          "confidence": 0.992,
+          "text_ar": "رياضيات"
+        },
+        {
+          "text": "THIS IS DIFFERENT FROM WHAT I THOUGHT! LIVESTREAMING WITH XU QING EVERY DAY, GOING FISHING WITH ME, TEACHING ME HOW TO COOK.ANDYET SHE'S STILL A STUDENT!?",
+          "confidence": 0.941,
+          "text_ar": "هذا مختلف عما كنت أعتقده! البث المباشر مع شو تشينغ كل يوم، الذهاب للصيد معي، تعليمي الطبخ... ومع ذلك هي لا تزال طالبة!؟"
+        },
+        {
+          "text": "NO NO, Xu QInG WANTS TO ME STUDY ON MY OWN IN PREP- ARATION TO ENROLL INTO ADULT UNI- VERSITY.",
+          "confidence": 0.795,
+          "text_ar": "لا، لا، شو تشينغ يريد مني أن أدرس بنفسي استعداداً للالتحاق بجامعة الكبار."
+        },
+        {
+          "text": "I SEE.",
+          "confidence": 0.99,
+          "text_ar": "فهمت."
+        },
+        {
+          "text": "HE WANTS YOU TO BRUSH UP ON YOUR KNOWLEDGE? THEN WHAT'S YOUR HIGHEST EDUCATION LEVEL? HIGH SCHOOL? 坐",
+          "confidence": 0.93,
+          "text_ar": "يريد منكِ صقل معرفتكِ؟ إذن ما هو أعلى مستوى تعليمي وصلتِ إليه؟ الثانوية؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "EIGHTH... GRADE.",
+          "confidence": 0.968,
+          "text_ar": "الصف... الثامن."
+        },
+        {
+          "text": "NO MATTER HOW YOU LOOK AT IT, YOUCAN'T TELL THAT JIANG HE DIDN'T EVEN FINISH MIDDLE SCHOOL! SUCH A QUIET GIRL WHO LOVES READING ACT- UALLY ONLY HAD A MIDDLE SCHOOL EDUCATION?",
+          "confidence": 0.926,
+          "text_ar": "مهما نظرتِ للأمر، لا يمكنكِ معرفة أن جيانغ هي لم تكمل حتى المرحلة الإعدادية! فتاة هادئة تحب القراءة لم تحصل سوى على تعليم إعدادي؟"
+        },
+        {
+          "text": "I REMEMBER YOU SAID THAT XU QING GRADUATED FROM COLLEGE, RIGHT? I'M NOW REALLY CURIOUS HOWYOU TWO MET.",
+          "confidence": 0.927,
+          "text_ar": "أتذكر أنكِ قلتِ إن شو تشينغ تخرج من الجامعة، أليس كذلك؟ أنا الآن فضولية حقاً بشأن كيفية لقائكما."
+        },
+        {
+          "text": "WHOKNEWACHEERFUL-LOOKING PERSONLIKEXUQINGWOULD DO SUCH A THANKLESSTASKASASKING HISGIRLFRIENDWHOISALREADY ABLETOMAKEMONEYTHROUGH LIVESTREAMINGTOSTUDY INORDER TOGETABETTEREDUCATION",
+          "confidence": 0.943,
+          "text_ar": "من كان يظن أن شخصاً مبتهجاً مثل شو تشينغ سيقوم بمهمة شاقة كهذه، بأن يطلب من حبيبته التي تجني المال بالفعل من البث المباشر أن تدرس للحصول على تعليم أفضل."
+        },
+        {
+          "text": "SPEAKING OF WHICH, I HAVE ONLY SEEN HIM THROUGH THE LIVESTREAMAND NOT UP-CLOSE.",
+          "confidence": 0.934,
+          "text_ar": "بالحديث عن ذلك، لم أره إلا عبر البث المباشر وليس عن كثب."
+        },
+        {
+          "text": "AH? DO YOU WANT TO GET TO KNOW HIM?",
+          "confidence": 0.94,
+          "text_ar": "آه؟ هل تودين التعرف عليه؟"
+        },
+        {
+          "text": "IT WOULD BE WEIRD IF I SAID YES. THAT'S YOUR BOYFRIEND, WHAT DO I NEED TO GET TO KNOW HIM FOR? I WAS JUST CURIOUS. SINCE YOU TWO LIVE TOGETHER, ARE YOUONE STEP AWAY FROM GETTING MARRIED?",
+          "confidence": 0.923,
+          "text_ar": "سيكون الأمر غريباً إن قلت نعم. إنه حبيبكِ، لماذا أحتاج للتعرف عليه؟ كنت فضولية فقط. بما أنكما تعيشان معاً، هل أنتما على بعد خطوة من الزواج؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "T-THAT'S STILL FAR AWAY!",
+          "confidence": 0.993,
+          "text_ar": "هـ-هذا لا يزال بعيداً!"
+        },
+        {
+          "text": "YOU SEEMED TO COMPLAIN THAT HE KEPT FORCING YOU TO READ BOOKS IN THE PAST, ANDNOWHE WANTS YOU TO GET A BETTER ED- UCATION..HE'S REALLY HELPING YOU PLAN IT OUT!",
+          "confidence": 0.937,
+          "text_ar": "بدا أنكِ كنتِ تتذمرين من إجباره لكِ على قراءة الكتب في الماضي، والآن يريدكِ أن تحصلي على تعليم أفضل... إنه يساعدكِ حقاً في التخطيط لمستقبلكِ!"
+        },
+        {
+          "text": "YEAH, HE WANTS METO BECOME A MORE KNOWLEDGE- ABLE PERSON.",
+          "confidence": 0.937,
+          "text_ar": "أجل، إنه يريدني أن أصبح شخصاً أكثر معرفة."
+        },
+        {
+          "text": "THIS YOUNG COUPLE...WHY AM IA LITTLE JEALOUS?",
+          "confidence": 0.947,
+          "text_ar": "هذا الزوجان الشابان... لماذا أشعر ببعض الغيرة؟"
+        },
+        {
+          "text": "THIS MAN IS PLANNING FOR THE FUTURE, AND IT'S NOT THE NEXT THREE TO FIVE YEARS, BUT THE SECOND HALF OF THEIR LIVES.",
+          "confidence": 0.946,
+          "text_ar": "هذا الرجل يخطط للمستقبل، وليس للسنوات الثلاث أو الخمس القادمة فحسب، بل للنصف الثاني من حياتهما."
+        },
+        {
+          "text": "IN HIS PLAN, THE TWO OF THEM WILL ALWAYS BE TOGETHER.",
+          "confidence": 0.925,
+          "text_ar": "في خطته، سيكون الاثنان معاً دائماً."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "WHY JEALOUS? ISN'T THIS NORMAL FOR SOMEONE YOU LIKE?",
+          "confidence": 0.922,
+          "text_ar": "لماذا الغيرة؟ أليس هذا طبيعياً تجاه شخص تحبينه؟"
+        },
+        {
+          "text": "...THE REASONS BEHIND IT ARE HEARTWARMING.",
+          "confidence": 0.867,
+          "text_ar": "...الأسباب الكامنة وراء ذلك تثلج الصدر."
+        },
+        {
+          "text": "WHY NOT...",
+          "confidence": 0.881,
+          "text_ar": "لماذا لا..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "CALL HIM OUT AND LET'S GO WALK AROUND?",
+          "confidence": 0.92,
+          "text_ar": "نتصل به ونتجول قليلاً؟"
+        },
+        {
+          "text": "W-WHAT ARE YOU TRYING TO DO..?! HE'S BUSY AND HAS-NOTIME!",
+          "confidence": 0.918,
+          "text_ar": "مـ-ما الذي تحاولين فعله..؟! إنه مشغول وليس لديه وقت!"
+        }
+      ]
+    }
+  ]
+}

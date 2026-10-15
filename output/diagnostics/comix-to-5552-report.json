@@ -1,0 +1,310 @@
+{
+  "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
+  "tls_and_server_info": {
+    "server_ip": "172.67.152.235",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "comix.to",
+    "tls_not_after": "Nov 25 12:49:51 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "52.188.87.48",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Dulles Town Center",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a3b6adf45ad0fe3b-IAD",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.03
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "God-level Assassin, I'm the Shadow · Ch.140",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 0,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "comix.to": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/comix-to-5552-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/17028d16-fcde-40d4-97ac-30d55164de9f",
+        "blob:https://challenges.cloudflare.com/60c4e2a4-96b2-4c00-a7e5-5ec03d37edd4",
+        "blob:https://challenges.cloudflare.com/d993f08c-05f2-4cd9-a58c-f947d04e477e"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 1,
+      "cookie_names_reused": [
+        "cf_clearance"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 0,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": true
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.46,
+    "navigation_timing": {
+      "ttfb_ms": 214,
+      "dom_content_loaded_ms": 447,
+      "load_event_ms": null,
+      "transfer_size_bytes": 2847
+    },
+    "wait_for_images_elapsed_sec": 2.43,
+    "scroll_elapsed_sec": 1.83,
+    "total_probe_elapsed_sec": 5.22,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, must-revalidate",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a3b6adf5cd3ce3c4-IAD",
+      "content-encoding": "zstd",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 15 Sep 2026 09:42:07 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Zm2jZ%2FOl9bHuRjhMmZNaUFzAl0ocOHwYYz4aido03%2BQe8tCxBXyJurMhB70K01I1I71AxPaa2tNowtPArJx%2BZM0pb1Kd6enN4jrS0hJ5CvC%2Fqv4Lv5qY%2B9USag%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=18,cfOrigin;dur=189",
+      "vary": "accept-encoding",
+      "x-request-id": "aa895ee130f8cd80d51b2c9857b9edf9"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "static.cloudflareinsights.com",
+      "whos.amung.us"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 1
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "God-level Assassin, I'm the Shadow · Ch.140",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 0,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "comix.to": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/comix-to-5552-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/27bdc4ca-e135-4cbd-958f-5b2121b28aae",
+        "blob:https://challenges.cloudflare.com/908ea33f-c1c8-4085-9dbd-a10ca9ca1f24",
+        "blob:https://challenges.cloudflare.com/e76ca11d-94c0-468b-94ab-37300df85044"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 1,
+      "cookie_names_reused": [
+        "cf_clearance"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 0,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": true
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.36,
+    "navigation_timing": {
+      "ttfb_ms": 204,
+      "dom_content_loaded_ms": 350,
+      "load_event_ms": null,
+      "transfer_size_bytes": 2851
+    },
+    "wait_for_images_elapsed_sec": 2.43,
+    "scroll_elapsed_sec": 1.9,
+    "total_probe_elapsed_sec": 4.97,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, must-revalidate",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a3b6ae99c803b885-IAD",
+      "content-encoding": "zstd",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 15 Sep 2026 09:42:33 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gqfe%2FkoWjOlny%2FILmG0hSw8hdHTA4i3GD2NOwsiFKRMzkBLUcC1tTr82XUyL7aQmZci%2B4bywjBX3qWvKQjqQVM1OIJ3%2BQcST1zImL3tJ7uAdNC6BHVZ8LJV05A%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=195",
+      "vary": "accept-encoding",
+      "x-request-id": "aa895ee130f8cd80d51b2c9857b9edf9"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "static.cloudflareinsights.com",
+      "whos.amung.us"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "content_images_before_scroll": 1
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
+    "requests_sent": 4,
+    "elapsed_sec": 0.14,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "deep_diagnostic": null,
+  "diagnostic_run_files": {
+    "report": "diagnostics/comix-to-5552-report.json",
+    "screenshots": [
+      "diagnostics/comix-to-5552-screenshot.png",
+      "diagnostics/comix-to-5552-run2-screenshot.png"
+    ]
+  }
+}

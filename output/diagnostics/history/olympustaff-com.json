@@ -1,0 +1,342 @@
+[
+  {
+    "date": "2026-08-25 07:21:03 UTC",
+    "url": "https://olympustaff.com/series/SMF/2",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:21:35 UTC",
+    "url": "https://olympustaff.com/series/SMF/3",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:22:08 UTC",
+    "url": "https://olympustaff.com/series/SMF/4",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:22:42 UTC",
+    "url": "https://olympustaff.com/series/SMF/5",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:23:16 UTC",
+    "url": "https://olympustaff.com/series/SMF/6",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:23:50 UTC",
+    "url": "https://olympustaff.com/series/SMF/7",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:24:24 UTC",
+    "url": "https://olympustaff.com/series/SMF/8",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:24:56 UTC",
+    "url": "https://olympustaff.com/series/SMF/9",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:25:30 UTC",
+    "url": "https://olympustaff.com/series/SMF/10",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:26:02 UTC",
+    "url": "https://olympustaff.com/series/SMF/11",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:26:35 UTC",
+    "url": "https://olympustaff.com/series/SMF/12",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:27:08 UTC",
+    "url": "https://olympustaff.com/series/SMF/13",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:27:41 UTC",
+    "url": "https://olympustaff.com/series/SMF/14",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:28:14 UTC",
+    "url": "https://olympustaff.com/series/SMF/15",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:28:48 UTC",
+    "url": "https://olympustaff.com/series/SMF/16",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:29:24 UTC",
+    "url": "https://olympustaff.com/series/SMF/17",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:30:01 UTC",
+    "url": "https://olympustaff.com/series/SMF/18",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:30:34 UTC",
+    "url": "https://olympustaff.com/series/SMF/19",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:31:08 UTC",
+    "url": "https://olympustaff.com/series/SMF/20",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 07:31:40 UTC",
+    "url": "https://olympustaff.com/series/SMF/21",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "signed_url_params": []
+  }
+]

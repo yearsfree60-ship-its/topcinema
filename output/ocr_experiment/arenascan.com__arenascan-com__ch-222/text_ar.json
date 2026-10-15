@@ -1,0 +1,448 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "222",
+  "manga_title": "My Wife Is From a Thousand Years Ago 222",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "MYSKILLS ARE LACKING,I EVENFAILED ASNEAKATTACKON HER STOMACH.",
+          "confidence": 0.95,
+          "text_ar": "مهاراتي تفتقر للكثير، حتى أنني فشلت في تنفيذ هجوم مباغت على معدتها."
+        },
+        {
+          "text": "DAMNIT!",
+          "confidence": 0.971,
+          "text_ar": "تباً!"
+        },
+        {
+          "text": "OH YEAH, DOES THESAYING\"ROWING A BOAT UPSTREAM,IFYOU STOP MOVING FORWARD YOU FALL BACK\"APPLY TO MARTIAL ARTS?",
+          "confidence": 0.944,
+          "text_ar": "أوه صحيح، هل تنطبق مقولة \"التجديف عكس التيار، إن توقفت عن التقدم تراجعت للخلف\" على الفنون القتالية؟"
+        },
+        {
+          "text": "IT DOES.",
+          "confidence": 0.979,
+          "text_ar": "بالتأكيد."
+        },
+        {
+          "text": "WHY? YOU WANT MY MARTIAL ARTS TO RE- GRESS?",
+          "confidence": 0.915,
+          "text_ar": "لماذا؟ هل تريدين لمستواي في الفنون القتالية أن يتراجع؟"
+        },
+        {
+          "text": "NO NO,I'M JUST ASKING. HOWLONG WILL IT TAKE?",
+          "confidence": 0.943,
+          "text_ar": "لا لا، أنا أسأل فقط. كم سيستغرق الأمر؟"
+        },
+        {
+          "text": "HMM~FORME TO REGRESSTO YOUR LEVEL,ITLL PROBABLY TAKE A FEW DECADES~",
+          "confidence": 0.937,
+          "text_ar": "همم~ لكي أتراجع لمستواك، سيستغرق الأمر بضعة عقود على الأرجح~"
+        },
+        {
+          "text": "AH!? WON'T YOU BE ANOLD LADY BY THEN?",
+          "confidence": 0.946,
+          "text_ar": "آه!؟ ألن تصبحي عجوزاً بحلول ذلك الوقت؟"
+        },
+        {
+          "text": "HMPH~ THAT'S ONLY IF I DON'T PRACTICE MARTIAL ARTS AT ALL,",
+          "confidence": 0.915,
+          "text_ar": "همف~ هذا إن توقفت عن ممارسة الفنون القتالية تماماً."
+        },
+        {
+          "text": "DON'TFORGET THAT I'MSTILL PRACTICING WITH MY SWORD EVERY DAY.",
+          "confidence": 0.938,
+          "text_ar": "لا تنسَ أنني لا أزال أتدرب بسيفي كل يوم."
+        },
+        {
+          "text": "NO!IHAVETO WORKHARD!INEED TO PUSHDOWN THE WARRIORESS AS SOON AS POSSIBLE!",
+          "confidence": 0.926,
+          "text_ar": "لا! يجب أن أعمل بجد! أحتاج إلى هزيمة المحاربة في أقرب وقت ممكن!"
+        },
+        {
+          "text": "HMM?",
+          "confidence": 0.991,
+          "text_ar": "همم؟"
+        },
+        {
+          "text": "WHAT'S THE WARRIORESS LOOKING AT?",
+          "confidence": 0.938,
+          "text_ar": "ما الذي تنظر إليه المحاربة؟"
+        },
+        {
+          "text": "AH,IT'S THE RING TOSS GAME.",
+          "confidence": 0.932,
+          "text_ar": "آه، إنها لعبة رمي الحلقات."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "SHE PROBABLY FEELSLIKESHE'LLBE BULLYING THEM IF SHE PLAYS, JUSTLIKE WHAT HAPPENEDATTHE AMUSEMENTPARK LASTTIME.",
+          "confidence": 0.95,
+          "text_ar": "ربما تشعر أنها ستتنمر عليهم إن لعبت، تماماً كما حدث في مدينة الملاهي في المرة السابقة."
+        },
+        {
+          "text": "WANT TO PLAY?",
+          "confidence": 0.966,
+          "text_ar": "هل تود اللعب؟"
+        },
+        {
+          "text": "LOOKAT THAT VASE, IT'S QUITE NICE.",
+          "confidence": 0.944,
+          "text_ar": "انظر إلى تلك المزهرية، إنها جميلة جداً."
+        },
+        {
+          "text": "WE CANBRING IT BACKFOR THE GINGERPLANTOR PUTINSOME FLOWERS...",
+          "confidence": 0.956,
+          "text_ar": "يمكننا أخذها لنبات الزنجبيل أو وضع بعض الزهور فيها..."
+        },
+        {
+          "text": "IT'S ONLY EIGHT YUAN IF YOU BUY IT!",
+          "confidence": 0.903,
+          "text_ar": "إنها بثمانية يوان فقط إذا اشتريتها!"
+        },
+        {
+          "text": "每200元20 ￥7.8起热销款￥9.9 特价粗陶罐子多肉盆花卉绿植盆多肉老庄盆 透气紫砂陶罐法师植物盆 代3万+",
+          "confidence": 0.842,
+          "text_ar": "أواني فخارية خشنة للنباتات العصارية والزهور، تبدأ من 7.8 يوان، الأكثر مبيعاً 9.9 يوان."
+        },
+        {
+          "text": "Fun Fact: This hand signal means 大 6in Chinese.",
+          "confidence": 0.36,
+          "text_ar": "حقيقة طريفة: إشارة اليد هذه تعني الرقم 6 بالصينية."
+        },
+        {
+          "text": "IFYOUSCORE ALI 10 RINGS,YOU WILL EARN A PROFIT OF 60 YUAN!",
+          "confidence": 0.855,
+          "text_ar": "إذا أصبت 10 حلقات، فستربح 60 يوان!"
+        },
+        {
+          "text": "YOU'RE GOING TO CARRY ALL 10 VASES?",
+          "confidence": 0.938,
+          "text_ar": "هل ستحمل كل المزهريات العشر؟"
+        },
+        {
+          "text": "ICAN'T DO THAT.",
+          "confidence": 0.958,
+          "text_ar": "لا أستطيع فعل ذلك."
+        },
+        {
+          "text": "IT'LLBE HARD FOR ME TO CARRY THAT MANY TOO.AND WHYDO YOU WANT TO BRING SO MANY BACK?",
+          "confidence": 0.929,
+          "text_ar": "سيكون من الصعب عليّ حمل هذا العدد أيضاً. ولماذا تريد إحضار الكثير منها؟"
+        },
+        {
+          "text": "WE'LL USE THEM SOMEWHERE.",
+          "confidence": 0.975,
+          "text_ar": "سنستخدمها في مكان ما."
+        },
+        {
+          "text": "I'VE HEARDMANY DISCUSSIONSABOUT WHICHONETHEYWANT, BUTIVENEVERHEARD OFTHISKINDOFDIS- CUSSION BEFORE.",
+          "confidence": 0.938,
+          "text_ar": "لقد سمعت الكثير من النقاشات حول ما يريده الناس، لكنني لم أسمع بهذا النوع من النقاش من قبل."
+        },
+        {
+          "text": "NO MATTER WHAT, ICANTLETTHS BUSINESSOPPORT- UNITYESCAPE.",
+          "confidence": 0.963,
+          "text_ar": "مهما حدث، لا يمكنني تفويت فرصة العمل هذه."
+        },
+        {
+          "text": "AHEM,HOW ABOUT'IGIFT YOU A RING TO OU RINL T PLAY WITH?",
+          "confidence": 0.513,
+          "text_ar": "أحم، ماذا لو أهديتك حلقة لتلعب بها؟"
+        },
+        {
+          "text": "THAT.. WOULDN'TBE GOOD, RIGHT? THE OTHER CUST- OMERS ALLRAD~",
+          "confidence": 0.803,
+          "text_ar": "هذا.. لن يكون جيداً، أليس كذلك؟ الزبائن الآخرون جميعهم..."
+        },
+        {
+          "text": "IT'S OKAY~",
+          "confidence": 0.939,
+          "text_ar": "لا بأس~"
+        },
+        {
+          "text": "I DON'T BELIEVE SOMEONEWON'T PLAY AGAINAFTER MISSING THEFIRST ONE.",
+          "confidence": 0.92,
+          "text_ar": "لا أصدق أن أحداً لن يلعب مجدداً بعد إخفاقه في الرمية الأولى."
+        },
+        {
+          "text": "HMM...",
+          "confidence": 0.925,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "HMM~~",
+          "confidence": 0.976,
+          "text_ar": "هممم~~"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "灵光一现！！ HOW ABOUT THIS!",
+          "confidence": 0.854,
+          "text_ar": "ومضة إلهام!! ما رأيك بهذا!"
+        },
+        {
+          "text": "WE'LLBUY A RING FOR TWO YUAN!HOW ABOUT THAT?",
+          "confidence": 0.936,
+          "text_ar": "سنشتري حلقة بيوانين! ما رأيك؟"
+        },
+        {
+          "text": "HAA?",
+          "confidence": 0.991,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "AFTER SAYING ALL OFTHAT,ITTURNSOUT HEWASRELUCTANTTO SPENDMONEY?!",
+          "confidence": 0.942,
+          "text_ar": "بعد كل هذا الكلام، تبين أنه متردد في إنفاق المال؟!"
+        },
+        {
+          "text": "THIS YOUNG MAN LOOKSLIKEAPRETTY NORMALGUYHANGINGOUT WITHHISWELL-MATCHEDGIRL- FRIEND,BUT HETURNSOUTTO BE STINGYAND JUSTWANTS TO SPEND TWO YUAN TO HAVE A GOODTIME?",
+          "confidence": 0.924,
+          "text_ar": "هذا الشاب يبدو كشخص عادي يتسكع مع صديقته المناسبة له، لكنه تبين أنه بخيل ويريد فقط إنفاق يوانين لقضاء وقت ممتع؟"
+        },
+        {
+          "text": "TSK.NO WONDERTHEY'RE EMPTY-HANDED",
+          "confidence": 0.921,
+          "text_ar": "تش. لا عجب أنهما يداهما فارغتان."
+        },
+        {
+          "text": "THAT'S ALSO FINE...HERE.",
+          "confidence": 0.963,
+          "text_ar": "هذا جيد أيضاً... تفضل."
+        },
+        {
+          "text": "DING!",
+          "confidence": 0.99,
+          "text_ar": "دينغ!"
+        },
+        {
+          "text": "IT'S NOT A LOSS FOR MEANYWAY,",
+          "confidence": 0.913,
+          "text_ar": "إنها ليست خسارة لي على أي حال."
+        },
+        {
+          "text": "WECHAT RECEIVED TWO YUAN.",
+          "confidence": 0.961,
+          "text_ar": "تم استلام يوانين عبر ويشات."
+        },
+        {
+          "text": "EVEN IFTHEYDON'T CONTINUE TOKEEP PLAYING AFTER MISSING AND LEAVE, I'LL STILL BE ABLE TO MAKE TWO YUAN..",
+          "confidence": 0.91,
+          "text_ar": "حتى لو لم يستمرا في اللعب بعد الإخفاق ورحلا، سأظل قادراً على ربح يوانين.."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.99,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "THANK YOU, UNCLE!",
+          "confidence": 0.973,
+          "text_ar": "شكراً لك أيها العم!"
+        },
+        {
+          "text": "USING THESKILLS OFSLAYINGDRAGONS TAATAAAI",
+          "confidence": 0.56,
+          "text_ar": "باستخدام مهارات ذبح التنانين..."
+        },
+        {
+          "text": "T/N: Basically talking about ha.T.iha b",
+          "confidence": 0.533,
+          "text_ar": "ملاحظة المترجم: يشير إلى أسلوب قتالي أسطوري."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "JOCAICHLOACHESTS PRETTYGOODTOO~",
+          "confidence": 0.918,
+          "text_ar": "هذا جيد جداً أيضاً~"
+        },
+        {
+          "text": "nowSiangHedsinghersknis is overkill for ring toss.",
+          "confidence": 0.793,
+          "text_ar": "مهارات جيانغ هي مبالغ فيها جداً للعبة رمي الحلقات."
+        },
+        {
+          "text": "BUT....",
+          "confidence": 0.845,
+          "text_ar": "لكن...."
+        },
+        {
+          "text": "WHYARE THERE SO MANY FLOWERS?",
+          "confidence": 0.931,
+          "text_ar": "لماذا هناك الكثير من الزهور؟"
+        },
+        {
+          "text": "AH~~NO WONDER,",
+          "confidence": 0.975,
+          "text_ar": "آه~~ لا عجب."
+        },
+        {
+          "text": "T/N:Qixi is Chinese Val- entine's Day on Aug 10.",
+          "confidence": 0.961,
+          "text_ar": "ملاحظة المترجم: عيد تشيشي هو عيد الحب الصيني ويوافق 10 أغسطس."
+        },
+        {
+          "text": "TODAY ISQIXI.",
+          "confidence": 0.811,
+          "text_ar": "اليوم هو عيد تشيشي."
+        },
+        {
+          "text": "SO IT'S VALENTINE'S DAY,I WAS WONDERING WHY THE NIGHT MARKET IS SO BUSY TODAY.",
+          "confidence": 0.902,
+          "text_ar": "إذن إنه عيد الحب، كنت أتساءل لماذا السوق الليلي مزدحم جداً اليوم."
+        },
+        {
+          "text": "T/N:The character for holiday/ festival is part of Valentines day, so this is why she's saying this.",
+          "confidence": 0.945,
+          "text_ar": "ملاحظة المترجم: رمز العيد جزء من اسم عيد الحب، لذا فهي تقول هذا."
+        },
+        {
+          "text": "HOLIDAY?",
+          "confidence": 0.996,
+          "text_ar": "عيد؟"
+        },
+        {
+          "text": "ARE WE EATING AREWEEATING DUMPLINGS?",
+          "confidence": 0.948,
+          "text_ar": "هل سنأكل الزلابية؟"
+        },
+        {
+          "text": "NO NO NO~,IT'SA DAY FOR LOVERS.",
+          "confidence": 0.917,
+          "text_ar": "لا لا لا~، إنه يوم للعشاق."
+        },
+        {
+          "text": "I'MNOT EATING DUMP- LINGS,BUT I CAN EAT FEET...",
+          "confidence": 0.875,
+          "text_ar": "أنا لا آكل الزلابية، لكن يمكنني أكل الأقدام..."
+        },
+        {
+          "text": "Fun Fact: Chinese 不吃饺子， people online use 可以吃jiojio…… \"jiojio\" as slang for feet.",
+          "confidence": 0.907,
+          "text_ar": "حقيقة طريفة: يستخدم الناس عبر الإنترنت مصطلح \"jiojio\" كعامية للأقدام."
+        },
+        {
+          "text": "I'M NOT HUNGRY YET...HAHA...",
+          "confidence": 0.783,
+          "text_ar": "لست جائعاً بعد... هاها..."
+        },
+        {
+          "text": "WAIT A MINUTE,YOU SAID PINGPING WANTED TO TAKE YOUTO SEE A MOVIE TODAY? ISN'T THAT TRYING TO SOW DISCORD BETWEEN US? ASKING YOU NOT TO ACCOMPANYMEONQIXI AND ACCOMPANY HERINSTEAD?",
+          "confidence": 0.907,
+          "text_ar": "انتظري دقيقة، قلتِ أن بينغ بينغ أرادت اصطحابك لمشاهدة فيلم اليوم؟ أليس هذا محاولة للإيقاع بيننا؟ بطلبها منكِ عدم مرافقتي في عيد تشيشي ومرافقتها هي بدلاً مني؟"
+        },
+        {
+          "text": "IT'S NOT LIKE YOU WERE GOING TO TAKE ME.",
+          "confidence": 0.948,
+          "text_ar": "لم تكن لتأخذني معك على أي حال."
+        },
+        {
+          "text": "IT'SREALLY DIFFERENTFROM USUAL, THERE'SMANY COUPLES HOLDING FLOWERS INTHER HANDS.",
+          "confidence": 0.926,
+          "text_ar": "الأمر مختلف حقاً عن المعتاد، هناك الكثير من الأزواج يحملون الزهور في أيديهم."
+        },
+        {
+          "text": "THEN WE'LL GO SEE A MOVIE NOW!",
+          "confidence": 0.91,
+          "text_ar": "إذن سنذهب لمشاهدة فيلم الآن!"
+        },
+        {
+          "text": "IT'LLBE VERY LATE WHENWE'RE DONE.",
+          "confidence": 0.963,
+          "text_ar": "سيكون الوقت متأخراً جداً عندما ننتهي."
+        },
+        {
+          "text": "HMMM-",
+          "confidence": 0.984,
+          "text_ar": "هممم-"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "Then I'll buy you a gift.",
+          "confidence": 0.919,
+          "text_ar": "إذن سأشتري لكِ هدية."
+        },
+        {
+          "text": "A gift..",
+          "confidence": 0.881,
+          "text_ar": "هدية.."
+        },
+        {
+          "text": "WHY DID WE GO TO SUCH A BRIGHTAND SHINYSHOP?",
+          "confidence": 0.926,
+          "text_ar": "لماذا ذهبنا إلى مثل هذا المتجر البراق؟"
+        },
+        {
+          "text": "FORTUNATELY WEWENTFOR A WALK AFTERDINNER,AND THE SHOPS AREN'T CLOSED YET.",
+          "confidence": 0.932,
+          "text_ar": "لحسن الحظ خرجنا في نزهة بعد العشاء، والمتاجر لم تغلق بعد."
+        },
+        {
+          "text": "JUSTINTIMETO PICKOUTAQIXI GIFTFORTHE WARRIORESS! IT'LL BE MEANNGLESS WHENQIXI ISOVER~",
+          "confidence": 0.923,
+          "text_ar": "الوقت مناسب تماماً لاختيار هدية عيد تشيشي للمحاربة! ستفقد معناها بمجرد انتهاء العيد~"
+        },
+        {
+          "text": "RED...",
+          "confidence": 0.947,
+          "text_ar": "أحمر..."
+        },
+        {
+          "text": "IS RED GOOD?",
+          "confidence": 0.922,
+          "text_ar": "هل اللون الأحمر جيد؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "YOU LIKE RED, ALRIGHT! WELL BUY THAT ONE!",
+          "confidence": 0.928,
+          "text_ar": "أنتِ تحبين الأحمر، حسناً! سنشتري ذلك الوشاح!"
+        },
+        {
+          "text": "HOW MUCH IS THAT?",
+          "confidence": 0.916,
+          "text_ar": "بكم هذا؟"
+        },
+        {
+          "text": "IT'S SO PRETTY!",
+          "confidence": 0.903,
+          "text_ar": "إنه جميل جداً!"
+        },
+        {
+          "text": "SIR, THIS SUZHOU EM- BROIDERY SILK SCARF COST...",
+          "confidence": 0.877,
+          "text_ar": "سيدي، هذا الوشاح الحريري المطرز بأسلوب سوتشو يكلف..."
+        },
+        {
+          "text": "FOUR HUNDRED AND EIGHTY- EIGHT YUAN.",
+          "confidence": 0.967,
+          "text_ar": "أربعمائة وثمانية وثمانين يوان."
+        }
+      ]
+    }
+  ]
+}

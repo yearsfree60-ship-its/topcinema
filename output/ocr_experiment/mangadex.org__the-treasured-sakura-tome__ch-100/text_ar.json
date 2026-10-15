@@ -1,0 +1,197 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "100",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "TRANSLATOR: SIKETROLLER EVERYTHINGELSE: ME NOTE:PLEASE SUPPORT THE AUTHORBYBUYING THEIRWORKS.",
+          "confidence": 0.948,
+          "text_ar": "المترجم: SIKETROLLER، باقي العمل: ME، ملاحظة: يرجى دعم المؤلف بشراء أعماله."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "YOUVE RECOGNIZED THE WRONG PERSON!",
+          "confidence": 0.855,
+          "text_ar": "لقد أخطأت في الشخص!"
+        },
+        {
+          "text": "BOTH OF YOU LOOK TOO SIMILAR.",
+          "confidence": 0.967,
+          "text_ar": "كلاكما تبدوان متشابهتين للغاية."
+        },
+        {
+          "text": "I'M REALLY SORRY.",
+          "confidence": 0.942,
+          "text_ar": "أنا آسف حقاً."
+        },
+        {
+          "text": "BOY, THIS SHOULD BE ENOUGH TO AMMEND FOR STEALING ONE SKILL TONG ZI GONG FROM YOU.",
+          "confidence": 0.956,
+          "text_ar": "يا فتى، هذا يكفي لتعويض سرقتي لـ مهارة الصبي منك."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "EH? THIS IS NOT THE RIGHT DIRECTION",
+          "confidence": 0.963,
+          "text_ar": "هاه؟ هذا ليس الاتجاه الصحيح."
+        },
+        {
+          "text": "WERE'NT YOU GONNA SEND ME HOME FIRST?",
+          "confidence": 0.916,
+          "text_ar": "ألم تكن ستوصلني إلى المنزل أولاً؟"
+        },
+        {
+          "text": "SFX:CHANGING GEARS",
+          "confidence": 0.968,
+          "text_ar": "صوت تبديل ناقل الحركة"
+        },
+        {
+          "text": "YI CHEN I STILL HAVE SOME THINGS TO DO, YOU HEAD HOME FIRST.",
+          "confidence": 0.928,
+          "text_ar": "ييتشن، لا يزال لدي بعض الأمور لأنجزها، اذهب أنت إلى المنزل أولاً."
+        },
+        {
+          "text": "园庄景御",
+          "confidence": 0.84,
+          "text_ar": "يوان شان جينغيو"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "SFX:SOU;CAR TURNS",
+          "confidence": 0.907,
+          "text_ar": "صوت انحراف السيارة"
+        },
+        {
+          "text": "SEX:ZISOUND OE ENGINE",
+          "confidence": 0.875,
+          "text_ar": "صوت هدير المحرك"
+        },
+        {
+          "text": "WHAT HAPPENED TO SISTER?",
+          "confidence": 0.99,
+          "text_ar": "ما الذي حدث للأخت؟"
+        },
+        {
+          "text": "sou sou",
+          "confidence": 0.897,
+          "text_ar": "صوت انطلاق سريع"
+        },
+        {
+          "text": "WHERE ARE YOU GOING 神漫 NOW?",
+          "confidence": 0.962,
+          "text_ar": "إلى أين تذهب الآن؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "DON'TTALK TO ME RIGHT NOW.",
+          "confidence": 0.954,
+          "text_ar": "لا تتحدث معي الآن."
+        },
+        {
+          "text": "SHE LEFT NOT LONG AFTER YOU GUYS LEFT.",
+          "confidence": 0.939,
+          "text_ar": "لقد غادرت بعد وقت قصير من رحيلكم."
+        },
+        {
+          "text": "WHERE IS THE GIRL THAT SPLASHED WATER ON ME EARLIER?",
+          "confidence": 0.938,
+          "text_ar": "أين الفتاة التي سكبت الماء عليّ قبل قليل؟"
+        },
+        {
+          "text": "ROSSO Ber",
+          "confidence": 0.808,
+          "text_ar": "روسو بير"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "ARE YOU OKAY?",
+          "confidence": 0.952,
+          "text_ar": "هل أنتِ بخير؟"
+        },
+        {
+          "text": "HEY!",
+          "confidence": 0.992,
+          "text_ar": "مهلاً!"
+        },
+        {
+          "text": "YOU'RE POISONED?! LET ME SEND YOU TO THE HOSPITAL QUICKLY!",
+          "confidence": 0.854,
+          "text_ar": "أأنتِ مسمومة؟! سآخذكِ إلى المستشفى بسرعة!"
+        },
+        {
+          "text": "IVE BEEN POISONED.",
+          "confidence": 0.934,
+          "text_ar": "لقد تعرضت للتسميم."
+        },
+        {
+          "text": "JUST TAKE ME SOMEWHERE ELSE",
+          "confidence": 0.914,
+          "text_ar": "فقط خذني إلى مكان آخر."
+        },
+        {
+          "text": "DON'T..DON'T_",
+          "confidence": 0.842,
+          "text_ar": "لا.. لا تفعل.."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": []
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "神漫画",
+          "confidence": 1.0,
+          "text_ar": "شين مانغا"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "DONTLEAVE IM BEGGING YOU.",
+          "confidence": 0.961,
+          "text_ar": "لا ترحل، أرجوك."
+        },
+        {
+          "text": "OR ELSEI WILL DIE.",
+          "confidence": 0.793,
+          "text_ar": "وإلا سأموت."
+        },
+        {
+          "text": "神漫画",
+          "confidence": 0.997,
+          "text_ar": "شين مانغا"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "104",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "BROUGHTTOYOUBY: HUZBI SCANLATIONS!",
+          "confidence": 0.974,
+          "text_ar": "مقدمة لكم من: فريق هوزبي للترجمة!"
+        },
+        {
+          "text": "PLEASE SUPPORTTHE AUTHOR/ARTISTBY BUYINGTHEIR WORKS!",
+          "confidence": 0.973,
+          "text_ar": "يرجى دعم المؤلف/الرسام بشراء أعمالهم الأصلية!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "LIN FENG'S COLOR CHANGED AFTER LISTENING.",
+          "confidence": 0.961,
+          "text_ar": "تغيرت ملامح لين فينغ بعد أن استمع إليه."
+        },
+        {
+          "text": "XUAN ZHANPENG DID NOT DARE TO CONCEAL IT, AND EXPLAINED HIS REASON FOR DEALING WITH LINFENG",
+          "confidence": 0.959,
+          "text_ar": "لم يجرؤ شوان تشانبينغ على إخفاء أي شيء، وأوضح أسبابه في التعامل مع لين فينغ."
+        },
+        {
+          "text": "FORTLNATELY, I RECENTLY COMPLETED THE S-LEVEL MISSION.",
+          "confidence": 0.977,
+          "text_ar": "لحسن الحظ، لقد أكملت مؤخرًا المهمة من المستوى S."
+        },
+        {
+          "text": "OTHERWISE, I'D BE THE ONE EXPLAINING.",
+          "confidence": 0.988,
+          "text_ar": "وإلا، لكنت أنا من يقف هنا لتقديم التبريرات."
+        },
+        {
+          "text": "I TOLD YOU I WOULD SPARE YOUR LIFE.",
+          "confidence": 0.945,
+          "text_ar": "لقد أخبرتك أنني سأعفو عن حياتك."
+        },
+        {
+          "text": "THANK...",
+          "confidence": 0.936,
+          "text_ar": "شكرًا..."
+        },
+        {
+          "text": "BUT!",
+          "confidence": 0.909,
+          "text_ar": "لكن!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "SORRY.",
+          "confidence": 0.987,
+          "text_ar": "أعتذر."
+        },
+        {
+          "text": "you KNOW TOO MLCH.",
+          "confidence": 0.893,
+          "text_ar": "أنت تعرف أكثر مما ينبغي."
+        },
+        {
+          "text": "WAIT... WAITA MINUTE!",
+          "confidence": 0.848,
+          "text_ar": "انتظر... انتظر لحظة!"
+        },
+        {
+          "text": "神 漫画",
+          "confidence": 0.903,
+          "text_ar": "شين مانغا"
+        },
+        {
+          "text": "*THAT'S NOT THE LITEAL TRANS.IT'S MY OWN ASI COULDNT FIND ANY OTHER WORD FORIT!XD",
+          "confidence": 0.907,
+          "text_ar": "هذه ليست ترجمة حرفية، بل اجتهاد شخصي لعدم وجود مصطلح أدق!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "THE PATRIACH OFXLAN WANTS TO SEE MASTER!",
+          "confidence": 0.947,
+          "text_ar": "بطريرك عائلة شوان يطلب مقابلة المعلم!"
+        },
+        {
+          "text": "YUJING MANSION",
+          "confidence": 0.995,
+          "text_ar": "قصر يوجينغ"
+        },
+        {
+          "text": "INVITE HIM IN!",
+          "confidence": 0.984,
+          "text_ar": "ادعه للدخول!"
+        },
+        {
+          "text": "ISIT ALREADY THAT TIME?",
+          "confidence": 0.968,
+          "text_ar": "هل حان الوقت بالفعل؟"
+        },
+        {
+          "text": "DIDN'TEXPECT IT WOULDBE SO FAST.",
+          "confidence": 0.904,
+          "text_ar": "لم أتوقع أن يحدث هذا بهذه السرعة."
+        },
+        {
+          "text": "神漫画",
+          "confidence": 0.999,
+          "text_ar": "شين مانغا"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "BROTHER LI! LONG TIME NO SEE!",
+          "confidence": 0.973,
+          "text_ar": "الأخ لي! لم نلتقِ منذ زمن طويل!"
+        },
+        {
+          "text": "I'VE COME TO ASK ABOUT THE LAST TIME'S MATCH.",
+          "confidence": 0.932,
+          "text_ar": "لقد جئت لأسأل بشأن النزال الذي جرى في المرة الماضية."
+        },
+        {
+          "text": "HUMPH! SAVE THE FORMALITIES!",
+          "confidence": 0.979,
+          "text_ar": "همف! وفر هذه الرسميات!"
+        },
+        {
+          "text": "PLEASE HAVE A SEAT.",
+          "confidence": 0.99,
+          "text_ar": "تفضل بالجلوس."
+        },
+        {
+          "text": "IN THE MATCH LAST TIME, BAI XUE WU WAS SUPPOSED TO FIGHT,",
+          "confidence": 0.959,
+          "text_ar": "في نزال المرة الماضية، كان من المفترض أن تقاتل باي شيويه وو،"
+        },
+        {
+          "text": "HOWEVER,SOMEONE ELSE FOUGHT IN HER STEAD AND CAUSED MY SON TO DIE A BRUTAL DEATH!",
+          "confidence": 0.957,
+          "text_ar": "ومع ذلك، قاتل شخص آخر نيابة عنها وتسبب في مقتل ابني ميتة وحشية!"
+        },
+        {
+          "text": "YOU WILL HAVE TO HAND OVER BAI XUE WU TO CALM OUR ANGER!",
+          "confidence": 0.962,
+          "text_ar": "سيتعين عليك تسليم باي شيويه وو لتهدئة غضبنا!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "OUR BAI FAMILY REGRETS ABOUT XUAN WEI,",
+          "confidence": 0.962,
+          "text_ar": "عائلة باي تأسف لما حدث لشوانوي،"
+        },
+        {
+          "text": "HOWEVER,IF IT WEREN'T FOR XUAN ZHANGPENG'S AGRRESSI -VENESS, THINGS WOULDN'T HAVE GONE THAT FAR.",
+          "confidence": 0.951,
+          "text_ar": "ومع ذلك، لو لم يكن شوان تشانبينغ عدوانيًا، لما وصلت الأمور إلى هذا الحد."
+        },
+        {
+          "text": "AS FOR HANDING OVER MY LITTLE GIRL BAI XLE WU.",
+          "confidence": 0.865,
+          "text_ar": "أما بخصوص تسليم ابنتي الصغيرة باي شيويه وو."
+        },
+        {
+          "text": "BROTHER LI, YOU AS WELL KNOW HOW MY TWO DALGHTERS ARE DEEPLY ATTACHED TOGETHER,",
+          "confidence": 0.935,
+          "text_ar": "الأخ لي، أنت تعلم جيدًا مدى تعلقهما ببعضهما البعض،"
+        },
+        {
+          "text": "SO THIS TIME, YI CHEN IS BRINGING XUE WU ALONG TO QING FENG MOUNTAIN.",
+          "confidence": 0.942,
+          "text_ar": "لذا في هذه المرة، اصطحب ييتشن شيويه وو معه إلى جبل تشينغفينغ."
+        },
+        {
+          "text": "THEN AM I JUST HERE FOR NOTHING?",
+          "confidence": 0.97,
+          "text_ar": "إذًا، هل جئت إلى هنا بلا طائل؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "ALTHOLIGH ONLY XLIAN LI CAME IN PERSON, HE HAS NOW REACHED THE PEAK OF WEN STAGE.",
+          "confidence": 0.927,
+          "text_ar": "على الرغم من أن شوان لي جاء بمفرده، إلا أنه قد وصل الآن إلى ذروة مرحلة وين."
+        },
+        {
+          "text": "BLT IT'S IMPOSSIBLE FOR ME TO ANBANDON MY DALIGHTER!",
+          "confidence": 0.899,
+          "text_ar": "لكن من المستحيل بالنسبة لي أن أتخلى عن ابنتي!"
+        },
+        {
+          "text": "NO ONE IN BAI FAMILY IS ON PAR WITH HIM, IF HE TAKES TROUBLE, THE BAI FAMILY MAY BE DESTROYED TODAY.",
+          "confidence": 0.96,
+          "text_ar": "لا أحد في عائلة باي يضاهيه، إذا أثار المتاعب، فقد تُباد عائلة باي اليوم."
+        },
+        {
+          "text": "WHAT TO DO NOW...",
+          "confidence": 0.964,
+          "text_ar": "ما العمل الآن..."
+        },
+        {
+          "text": "NOTH -ING MORE.",
+          "confidence": 0.964,
+          "text_ar": "لا شيء أكثر من ذلك."
+        },
+        {
+          "text": "WHEN WILL INJUSTICE BE REPORTED,I WONDER?",
+          "confidence": 0.971,
+          "text_ar": "أتساءل، متى سيتحقق العدل؟"
+        },
+        {
+          "text": "LET ME TALK WITH BAI XUE WU ALONE,",
+          "confidence": 0.947,
+          "text_ar": "دعني أتحدث مع باي شيويه وو على انفراد،"
+        },
+        {
+          "text": "IF SHE REALLY REPENTS, THEN THIS MATTER WILL BE STOPPED HERE. 神漫画",
+          "confidence": 0.946,
+          "text_ar": "إذا كانت نادمة حقًا، فسننهي هذا الأمر هنا. شين مانغا"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "DAD SAID THAT XALIN LI IS A PERSON WHO HOLDS A GRUDGE FOR VERY LONG TIME.",
+          "confidence": 0.932,
+          "text_ar": "قال أبي إن شوان لي شخص يحمل الضغينة لفترة طويلة جدًا."
+        },
+        {
+          "text": "THE PAIN OF LOSING ACHILD, IT WON'T BE SURPRISING IF HE SLALIGHTERS THE WHOLE BAI FAMILY.",
+          "confidence": 0.957,
+          "text_ar": "ألم فقدان الابن، لن يكون مفاجئًا إن ذبح عائلة باي بأكملها."
+        },
+        {
+          "text": "BUT THIS TIME HE'S QUITE GENEROUS,",
+          "confidence": 0.958,
+          "text_ar": "لكنه هذه المرة سخي للغاية،"
+        },
+        {
+          "text": "SOMETHING'S FISHY.",
+          "confidence": 0.993,
+          "text_ar": "هناك شيء مريب."
+        },
+        {
+          "text": "JUNIOR BAI XUE WU MEETS SENIOR.",
+          "confidence": 0.926,
+          "text_ar": "الناشئة باي شيويه وو تحيي الكبير."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "YUAN SHAN IS SO BLESSED.",
+          "confidence": 0.973,
+          "text_ar": "يوان شان محظوظ للغاية."
+        },
+        {
+          "text": "GAVE BIRTH TO SUCH A GOOD DALGHTER.",
+          "confidence": 0.952,
+          "text_ar": "لقد أنجب ابنة رائعة كهذه."
+        },
+        {
+          "text": "I WON'T BEAT AROUND THE BUSH.",
+          "confidence": 0.936,
+          "text_ar": "لن أطيل الحديث."
+        },
+        {
+          "text": "IF YOU WANT TO SAVE THE LIFE OF YOUR BAI FAMILY,",
+          "confidence": 0.977,
+          "text_ar": "إذا كنتِ ترغبين في إنقاذ حياة عائلة باي،"
+        },
+        {
+          "text": "JUST HAND OVER THE YI JIN JING THAT'S WITH YOU.",
+          "confidence": 0.953,
+          "text_ar": "فقط سلميني مخطوطة يي جين جينغ التي بحوزتك."
+        },
+        {
+          "text": "I'M GIVING YOU ONE DAY TO MAKE A COPY OF THE SCRIPTURES AND GIVING IT TO ME!",
+          "confidence": 0.949,
+          "text_ar": "أمهلك يومًا واحدًا لنسخ المخطوطة وتسليمها لي!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "ＳＣＡＮＬＡＴＩＯＮＳ",
+          "confidence": 0.964,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "HUZBI SCANLATIONS IS IN NEED OF ATRANSLATOR! ANYONE INTERESTED PLEASE CONTACT ME ON MY ACCOUNT ON MANGADEX.ORG.",
+          "confidence": 0.934,
+          "text_ar": "فريق هوزبي للترجمة بحاجة إلى مترجم! أي شخص مهتم يرجى التواصل معي عبر حسابي على موقع MANGADEX.ORG."
+        }
+      ]
+    }
+  ]
+}

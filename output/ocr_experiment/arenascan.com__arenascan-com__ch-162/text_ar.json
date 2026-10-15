@@ -1,0 +1,553 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "162",
+  "manga_title": "My Wife Is From a Thousand Years Ago 162",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "HERE VEGETARIAN BUNS AND PORRIDGE.",
+          "confidence": 0.945,
+          "text_ar": "إليك كعك نباتي وحساء."
+        },
+        {
+          "text": "PATIENTS SHOULD EAT LIGHTER FOODS.",
+          "confidence": 0.949,
+          "text_ar": "يجب على المرضى تناول أطعمة خفيفة."
+        },
+        {
+          "text": "..WHY IS IT_ TIME TO EAT T/VIL OLA AGAIN?",
+          "confidence": 0.489,
+          "text_ar": "..لماذا حان وقت تناول الطعام مجددًا؟"
+        },
+        {
+          "text": "AGAIN? ARE YOU JUST PLANNING TO HAVE ONE MEAL?",
+          "confidence": 0.84,
+          "text_ar": "مجددًا؟ هل تخطط لتناول وجبة واحدة فقط؟"
+        },
+        {
+          "text": "COLAMANHUA.COM xcloudmerge.com",
+          "confidence": 0.865,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "IT'S NOT THAT,",
+          "confidence": 0.917,
+          "text_ar": "ليس الأمر كذلك،"
+        },
+        {
+          "text": "EARLIER TODAY, WANGZI WOKE UP LATE, AND IT WAS ALMOST 1OAM WHEN HE BROUGHT FOOD OVER.",
+          "confidence": 0.909,
+          "text_ar": "في وقت سابق اليوم، استيقظ وانغزي متأخرًا، وكانت الساعة تقترب من العاشرة صباحًا عندما أحضر الطعام."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "YOU CAN EAT IT LATER THEN.",
+          "confidence": 0.805,
+          "text_ar": "يمكنك تناوله لاحقًا إذًا."
+        },
+        {
+          "text": "WOAH, THE BLOOD'IS NO SEEPING LONGER IT LOOKS THROUGH, LIKE IT'S RECOV- ERING NICELY.",
+          "confidence": 0.927,
+          "text_ar": "واو، لم يعد الدم يتسرب، يبدو أن الجرح يلتئم بشكل جيد."
+        },
+        {
+          "text": "SAY, WILL WE BE'ON THE NEWS FOR THIS?",
+          "confidence": 0.918,
+          "text_ar": "قل لي، هل سنظهر في الأخبار بسبب هذا؟"
+        },
+        {
+          "text": "BUMPING INTO A ROBBER WHILE OFF DUTY AND BRAVELY STEPPING UP TO STOP HIM, THEN ALMOST LOSING HIS LIFE, IF NOT FOR THE HELP OF A COURAGEOUS BYSTANDER. IT'S SUCH GOOD MATERIAL FOR THE PRESS, AND IT CAN GIVE OFF POSITIVE VIBES.",
+          "confidence": 0.926,
+          "text_ar": "الاصطدام بلص أثناء وقت الراحة، والتدخل بشجاعة لإيقافه، ثم كاد يفقد حياته لولا مساعدة أحد المارة الشجعان. إنها مادة دسمة للصحافة، ويمكن أن تعطي انطباعات إيجابية."
+        },
+        {
+          "text": "I DON'T KNOW ALLMY COLLEAGUES DID WHEN THEY VISITED ME EARLIER WAS TO TELL ME TO REST UP.",
+          "confidence": 0.921,
+          "text_ar": "لا أعلم، كل ما فعله زملائي عندما زاروني سابقًا هو إخباري بأن أرتاح."
+        },
+        {
+          "text": "IT HAS ALWAYS BEEN MY DREAM TO RANDOMLY ENCOUNTER SUCH AN EVENT AND STEP UP TO STOP THEM. WITH THIS, I CAN STRIKE IT OFF THE BUCKET LIST.",
+          "confidence": 0.919,
+          "text_ar": "لطالما كان حلمي أن أواجه حدثًا كهذا صدفة وأتدخل لإيقافه. بهذا، يمكنني شطب هذا الأمر من قائمة أمنياتي."
+        },
+        {
+          "text": "COLAMANHUA.COm ACloudMerge.com",
+          "confidence": 0.918,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "MEDIATING DISPUTES AND LOOKING FOR LOST PETS...EVEN1OOF THOSE PETS..EVENTOOPTHOSE CASES COULDN'T GIVE ME THE SENSE OF ACCOMPLISH- MENT FROM THIS ONE CASE ALONE.",
+          "confidence": 0.92,
+          "text_ar": "فض النزاعات والبحث عن الحيوانات الأليفة المفقودة... حتى تلك القضايا لم تمنحني شعور الإنجاز الذي منحته لي هذه القضية وحدها."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "MANHUA.COm Caud Merge.com",
+          "confidence": 0.825,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "THIS WOUND IS NOTHINGCONSIDERING THAT THE VICTIM IS SAFE AND SOUND.",
+          "confidence": 0.944,
+          "text_ar": "هذا الجرح لا شيء مقارنة بسلامة الضحية."
+        },
+        {
+          "text": "THIS ORANGE IS REALLY SWEET, TRYIT. THATGIRL GAVE ME THEM YESTERDAY~",
+          "confidence": 0.936,
+          "text_ar": "هذه البرتقالة حلوة جدًا، جربها. تلك الفتاة أعطتني إياها بالأمس~"
+        },
+        {
+          "text": "CAN YOU EVEN EAT ORANGES WITH THAT WOUND oF YOuRS?",
+          "confidence": 0.711,
+          "text_ar": "هل يمكنك حتى أكل البرتقال بجرحك ذاك؟"
+        },
+        {
+          "text": "IT'S FINE I JUST HADA LITTLE TASTE!",
+          "confidence": 0.933,
+          "text_ar": "لا بأس، لقد تذوقت القليل فقط!"
+        },
+        {
+          "text": "WHY DOES IT FEEL LIKE YOUR FACE IS GLOWING? YOU'RE LOOKING SILLY AND GOT A GOOFY SMILE.",
+          "confidence": 0.915,
+          "text_ar": "لماذا يبدو وجهك مشرقًا؟ تبدو سخيفًا بابتسامتك الغبية تلك."
+        },
+        {
+          "text": "NHJA.com Aclondn com",
+          "confidence": 0.671,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "SPILL THE BEANS, HOW DID BEANS.HOW DID IT GO WITH THAT GIRLFROM YESTERDAY?",
+          "confidence": 0.918,
+          "text_ar": "اعترف بكل شيء، كيف سارت الأمور مع تلك الفتاة من الأمس؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "OLAMANHUA nCloudMerge",
+          "confidence": 0.873,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "SHE'S JUST AN EMPLOYEE AT THE CONVENIENCE STORE NEAR THE INTERNET CAFE AND GOTTARGETED WHILE ONHER WAY HOME FROM WORK,",
+          "confidence": 0.939,
+          "text_ar": "إنها مجرد موظفة في متجر صغير بالقرب من مقهى الإنترنت، وقد استُهدفت أثناء عودتها للمنزل من العمل،"
+        },
+        {
+          "text": "LUCKILY, THIS HERO, I, WAS AROLND-",
+          "confidence": 0.847,
+          "text_ar": "لحسن الحظ، هذا البطل، أنا، كنت في الجوار-"
+        },
+        {
+          "text": "LAMANHUA.COm cloudMerge.com",
+          "confidence": 0.862,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "IF WE'RE TALKING ABOUT HERORESCUING THE DAMSEL IN DISTRESS, WOULDN'T IT BE ME, THE HERO, SAVING YOU'AND HER, THE DAMSELS?",
+          "confidence": 0.907,
+          "text_ar": "إذا كنا نتحدث عن بطل ينقذ فتاة في محنة، ألا ينبغي أن أكون أنا البطل الذي ينقذك أنت وهي؟"
+        },
+        {
+          "text": "COLAMANHUA.CON AcloudMerge.com",
+          "confidence": 0.914,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "WHAT'S HEY WITH THAT EXPRESSION OF YOURS.",
+          "confidence": 0.897,
+          "text_ar": "ما خطب تعبير وجهك هذا؟"
+        },
+        {
+          "text": "DIDN'T YOU SAY THAT YOU WERE PRACTICING THE SWORD?",
+          "confidence": 0.937,
+          "text_ar": "ألم تقل أنك كنت تتدرب على السيف؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "COLAMANHUA.COM AcloudMerge.com",
+          "confidence": 0.926,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "YUP, JUST LIKE IN THO'SE TV SHOWS ONCE MY AURA HAS RECOVERED, I'LL BE UINSTOPPABLE WITH A SWORD.",
+          "confidence": 0.921,
+          "text_ar": "أجل، تمامًا كما في تلك البرامج التلفزيونية، بمجرد أن تتعافى هالتي، سأكون لا أقهر بالسيف."
+        },
+        {
+          "text": "YEAH YEAH, KEEP'ON BRAGGING.",
+          "confidence": 0.916,
+          "text_ar": "أجل أجل، استمر في التباهي."
+        },
+        {
+          "text": "QINGZI, YOU'RE HERE TO VISIT QIN HAO AGAIN. SORRY FOR THE TROUBLE~",
+          "confidence": 0.879,
+          "text_ar": "تشينغزي، لقد جئتِ لزيارة تشين هاو مجددًا. عذرًا على الإزعاج~"
+        },
+        {
+          "text": "UNCLE QIN, LET'S PLAY FIGHT THE LANDLORD TO- GETHER, IT'S BORING TO PLAY WITH JUST THE TWO OF US.",
+          "confidence": 0.927,
+          "text_ar": "العم تشين، لنلعب \"قتال المالك\" معًا، اللعب بمفردنا ممل."
+        },
+        {
+          "text": "KNOCK KNOCK",
+          "confidence": 0.991,
+          "text_ar": "طرق طرق"
+        },
+        {
+          "text": "COMING.",
+          "confidence": 0.995,
+          "text_ar": "قادم."
+        },
+        {
+          "text": "COLANLANHUA.ROm ACloudMerge.com",
+          "confidence": 0.84,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "IT'S PROBABLY WANGZI.",
+          "confidence": 0.962,
+          "text_ar": "على الأرجح هو وانغزي."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "COLAMANHWA.COm AcloudMerge.com",
+          "confidence": 0.912,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "做快看",
+          "confidence": 0.949,
+          "text_ar": "انظر بسرعة"
+        },
+        {
+          "text": "THAT GUY.? IT ACTUALLY ISN'T!",
+          "confidence": 0.881,
+          "text_ar": "ذلك الرجل..؟ في الواقع ليس هو!"
+        },
+        {
+          "text": "ERM...I'M HERE TO SEE OFFICER...QIN...",
+          "confidence": 0.904,
+          "text_ar": "إم... أنا هنا لرؤية الضابط... تشين..."
+        },
+        {
+          "text": "NN COME",
+          "confidence": 0.559,
+          "text_ar": "تفضل بالدخول"
+        },
+        {
+          "text": "THIS LADY IS ACTING WEIRD, SHE JUST HAS TO THANK ME ONCE, WHY IS SHE HERE AGAIN..",
+          "confidence": 0.937,
+          "text_ar": "هذه السيدة تتصرف بغرابة، كان عليها فقط شكري مرة واحدة، لماذا هي هنا مجددًا.."
+        },
+        {
+          "text": "AH...Y'KNOW.. I SUDDENLY RE- MEMBER THAT I HAVE SOME- THING TO DO!",
+          "confidence": 0.9,
+          "text_ar": "آه... أتعلم.. تذكرت فجأة أن لدي شيئًا لأفعله!"
+        },
+        {
+          "text": "THINKING ABOUT IT, I HAVE TO TAKE'TYRANT OUT FOR A WALK TOO.",
+          "confidence": 0.922,
+          "text_ar": "بالتفكير في الأمر، يجب أن آخذ تايرانت في نزهة أيضًا."
+        },
+        {
+          "text": "WE'RE LEAVING FIRST!",
+          "confidence": 0.944,
+          "text_ar": "سنغادر أولًا!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "COLAMANHUA.COm AcloudMerge.com",
+          "confidence": 0.901,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "UNCLE QIN, IT'S FINE IF YOUHAVE TO BRING TYRANT FOR A WALK, BUT CAN YOU NOT DRAG ME OUT LIKE THIS? IT MAKES ME LOOK LIKE I'M TYRANT.",
+          "confidence": 0.914,
+          "text_ar": "العم تشين، لا بأس إذا كنت تريد أخذ تايرانت في نزهة، لكن هل يمكنك ألا تجرني معك هكذا؟ تجعلني أبدو كأنني تايرانت."
+        },
+        {
+          "text": "I'M INDEED BRINGING YOU OUT FOR A WALK, I'M JUST FINDING A REASONTO EXCLSE MYSELF.",
+          "confidence": 0.904,
+          "text_ar": "أنا بالفعل آخذك في نزهة، أنا فقط أبحث عن عذر لأنسحب."
+        },
+        {
+          "text": "WHY DO YOU HAVE TO EXCLSE YOURSELF,SHE'S JUST THERE TO THANK HIM, ARE YOU OVER- THINKING IT?",
+          "confidence": 0.905,
+          "text_ar": "لماذا عليك الانسحاب؟ هي فقط هناك لتشكره، هل تبالغ في التفكير؟"
+        },
+        {
+          "text": "MANTUA.com eloudmerge.com",
+          "confidence": 0.84,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "I'M NOT OVER- THINKING IT, IT'S JUST...ALITTLE AWKWARD.",
+          "confidence": 0.881,
+          "text_ar": "أنا لا أبالغ في التفكير، الأمر فقط... محرج قليلًا."
+        },
+        {
+          "text": "THAT EXPLAINS IT, I GUESS I KNOW WHO HAOZI TAKES AFTER.",
+          "confidence": 0.963,
+          "text_ar": "هذا يفسر الأمر، أعتقد أنني أعرف من يشبه هاوزي."
+        },
+        {
+          "text": "COLAMANHUA.COm",
+          "confidence": 0.908,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "ACTO",
+          "confidence": 0.767,
+          "text_ar": "آكتو"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "NHUA.COm LMAN AGion erge. corn",
+          "confidence": 0.463,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "SIGH...",
+          "confidence": 0.934,
+          "text_ar": "تنهد..."
+        },
+        {
+          "text": "HE GAVE ME SUCH A SCARE THAT DAY,ONE MOMENT HE WASFINE, AND THE NEXT MOMENT HE WAS ADMITTED TO THE HOSPITAL,",
+          "confidence": 0.938,
+          "text_ar": "لقد أخافني كثيرًا في ذلك اليوم، في لحظة كان بخير، وفي اللحظة التالية أُدخل إلى المستشفى."
+        },
+        {
+          "text": "MANHUA.COM Raoudmerge.com",
+          "confidence": 0.82,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "HE'S JUST A SMALL-TIME COP, HOW DID HE END LIP GETTING THIS INJURED?",
+          "confidence": 0.919,
+          "text_ar": "إنه مجرد شرطي صغير، كيف انتهى به الأمر مصابًا هكذا؟"
+        },
+        {
+          "text": "HE'S JUST BEING A HOT-BLOODED AND RESPONSIBLECOP. IT'S A GOOD THING!",
+          "confidence": 0.936,
+          "text_ar": "إنه فقط شرطي مفعم بالحيوية ومسؤول. إنه أمر جيد!"
+        },
+        {
+          "text": "GoOD, MY ASS!",
+          "confidence": 0.777,
+          "text_ar": "جيد في عينك!"
+        },
+        {
+          "text": "CO.LAMANHUA.cOm",
+          "confidence": 0.89,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "iouaMer",
+          "confidence": 0.794,
+          "text_ar": "آي كلاود ميرج"
+        },
+        {
+          "text": "OKAY OKAY GOOD YOUR ASS INDEED.",
+          "confidence": 0.93,
+          "text_ar": "حسنًا حسنًا، جيد في عيني بالفعل."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "COLAMANHUA.COM ACloudMe LOOKS LIKE THE OLD GEEZERS IN EVERYFAMILY ARE THE SAME..",
+          "confidence": 0.907,
+          "text_ar": "يبدو أن العجائز في كل عائلة متشابهون.."
+        },
+        {
+          "text": "HE TELLS ME THAT IT'S SAFE EVERYDAY,AND THAT HE ONLY GOES AROUND LOOKiNG FOR LOST PETS AND SETTLING MINOR DISPUTES.",
+          "confidence": 0.916,
+          "text_ar": "يخبرني كل يوم أنه بخير، وأنه يتجول فقط للبحث عن حيوانات أليفة مفقودة وحل النزاعات البسيطة."
+        },
+        {
+          "text": "IN THE TURN OF AN EYE.HE'S LYING ON THE HOSPITAL BED. HOWCOMMITTED ISHE BEING A POLICE TO OFFICER...",
+          "confidence": 0.929,
+          "text_ar": "وفي لمح البصر، يجد نفسه مستلقيًا على سرير المستشفى. إلى أي مدى هو متفانٍ في كونه ضابط شرطة..."
+        },
+        {
+          "text": "EVERYONE HAS THEIR OWN ASPIRATIONS.I'M SURE THAT YOU'RE AWARE OF HIS AS- PIRATIONS TO BE PART OF THE POLICE SINCE YOUNG,",
+          "confidence": 0.947,
+          "text_ar": "كل شخص لديه طموحاته الخاصة. أنا متأكد من أنك تدرك طموحه في أن يصبح جزءًا من الشرطة منذ صغره،"
+        },
+        {
+          "text": "WHENEVER WERE PLAYING COPS AND ROBBERS,EVERYONE WOLLD FIGHT TO BE A ROBBER,BLT NOT HIM. HE'S THE ONLY ONE WHO WOULD FIGHT TO BE A COP.",
+          "confidence": 0.901,
+          "text_ar": "كلما كنا نلعب لعبة الشرطة واللصوص، كان الجميع يتشاجر ليكون اللص، لكن ليس هو. هو الوحيد الذي كان يتشاجر ليكون الشرطي."
+        },
+        {
+          "text": "HIS DREAMS ARE BECOMING REALITY NOW, THERE'S NO WAY YOU'LL BEABLETO GET HIM TO CHANGE AT THIS TIME.",
+          "confidence": 0.937,
+          "text_ar": "أحلامه أصبحت حقيقة الآن، لا توجد طريقة تجعله يغير رأيه في هذا الوقت."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "快做！快看",
+          "confidence": 0.771,
+          "text_ar": "افعلها! انظر بسرعة"
+        },
+        {
+          "text": "UNCLE,IT'S GOOD TO HAVE A SENSE OF JUSTICE, AND HIS IS MUCH STRONGER THAN MINE.",
+          "confidence": 0.934,
+          "text_ar": "يا عم، من الجيد أن يكون لديه حس بالعدالة، وحسه أقوى بكثير من حسي."
+        },
+        {
+          "text": ".ALSO, THIS IS JUST A RARE, ONE- OFF INCIDENT.IF HE ENCOUNTERS SLICHA THING ON A DAILY BASIS, WOULDN'T JIANG CHENG BE IN A STATE OF UPHEAVAL? NO?",
+          "confidence": 0.905,
+          "text_ar": ".أيضًا، هذا مجرد حادث نادر وفريد. لو واجه شيئًا كهذا بشكل يومي، ألم تكن جيانغ تشنغ ستصبح في حالة من الفوضى؟ أليس كذلك؟"
+        },
+        {
+          "text": "COLAMANHU com AcloudMergs.com",
+          "confidence": 0.924,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "..EVEN THOUGH IT'SA RARE INCIDENT, HE WAS UNLUCKY ENOUGH TO GET INVOLVED...",
+          "confidence": 0.915,
+          "text_ar": "..على الرغم من أنه حادث نادر، إلا أنه كان سيئ الحظ بما يكفي ليتورط فيه..."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "RIGHT, I'VE BEEN WATCHING'YOUPRACTICE YOUR MARTIAL ARTS ON THE VIDEO WEBSITE. YOU SHOULD TEACH IT TO HAOZI WHEN YOU'RE FREE SO THAT HE CAN GET STRONGER TOO.",
+          "confidence": 0.928,
+          "text_ar": "صحيح، كنت أشاهدك تمارس فنونك القتالية على موقع الفيديو. يجب أن تعلمها لهاوزي عندما تكون متفرغًا حتى يتمكن من أن يصبح أقوى أيضًا."
+        },
+        {
+          "text": "HE DOESN'T WANT TO, THEYRE TEACHING HIM THEIR OWN STYLE OVER THERE. THEY DON'T LEARN THE ONE I'M PRACTICING.",
+          "confidence": 0.924,
+          "text_ar": "هو لا يريد ذلك، فهم يعلمونه أسلوبهم الخاص هناك. لا يتعلمون الأسلوب الذي أمارسه."
+        },
+        {
+          "text": "VIBRATE",
+          "confidence": 0.996,
+          "text_ar": "اهتزاز"
+        },
+        {
+          "text": "COLAMANHUA.COm ACloudMergea",
+          "confidence": 0.857,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "Fammy Loving",
+          "confidence": 0.88,
+          "text_ar": "حب العائلة"
+        },
+        {
+          "text": "Son, it's almost your birthday isn't it? -",
+          "confidence": 0.209,
+          "text_ar": "بني، عيد ميلادك يقترب، أليس كذلك؟ -"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "AH, IF IT WASN'T FOR THIS REMINDER FROM MOM, I WOULD HAVE FORGOTTEN ABOUT MY BIRTHDAY..",
+          "confidence": 0.902,
+          "text_ar": "آه، لولا هذا التذكير من أمي، لكنت نسيت أمر عيد ميلادي.."
+        },
+        {
+          "text": "快！快看",
+          "confidence": 0.915,
+          "text_ar": "سريع! انظر بسرعة"
+        },
+        {
+          "text": "IN PREVIOUS YEARS, DURING MYBIRTHDAY, I WOULD HEAD OUT TO HAVE NOODLES WITH TWO EGGS, TELL MOM THAT I HAD A SCRUMPTIOUS MEAL, AND HEAD HOME TO SLEEP;",
+          "confidence": 0.931,
+          "text_ar": "في السنوات السابقة، خلال عيد ميلادي، كنت أخرج لتناول النودلز مع بيضتين، وأخبر أمي أنني تناولت وجبة لذيذة، ثم أعود للمنزل لأنام؛"
+        },
+        {
+          "text": "OR I WOULD GET MY GOOD FRIENDS FOR FOOD, DRINKS AND KARAOKE, ENDING THE DAY INTOXICATED AND CONSIDERING MY BIRTHDAY SPENT.",
+          "confidence": 0.935,
+          "text_ar": "أو كنت أجمع أصدقائي المقربين للطعام والشراب والكاريوكي، وأنهي اليوم في حالة سكر معتبرًا أنني قضيت عيد ميلادي."
+        },
+        {
+          "text": "COLAMANHUA.COM ACloudMerge.com",
+          "confidence": 0.938,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        },
+        {
+          "text": "停住 0 一",
+          "confidence": 0.089,
+          "text_ar": "توقف 0 واحد"
+        },
+        {
+          "text": "HOW WILL MY BIRTHDAY BE LIKE THIS YEAR...",
+          "confidence": 0.914,
+          "text_ar": "كيف سيكون عيد ميلادي هذا العام..."
+        },
+        {
+          "text": "COLAMANHUA.COm ACloudMerge.com",
+          "confidence": 0.935,
+          "text_ar": "كولا مانهوا.آي كلاود ميرج"
+        }
+      ]
+    }
+  ]
+}

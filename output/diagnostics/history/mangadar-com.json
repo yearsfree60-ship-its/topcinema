@@ -1,0 +1,36 @@
+[
+  {
+    "date": "2026-08-25 19:40:14 UTC",
+    "url": "https://mangadar.com/manga/tomb-raid-king/1/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-08-25 19:43:17 UTC",
+    "url": "https://mangadar.com/manga/tomb-raid-king/100/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  }
+]

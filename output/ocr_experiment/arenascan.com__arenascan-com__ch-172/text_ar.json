@@ -1,0 +1,373 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "172",
+  "manga_title": "My Wife Is From a Thousand Years Ago 172",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "LEGEND HAS IT THAT AN EXPERIENCED FISHERMAN WOULD DO ANYTHING TO ENSURE THAT THEY WOULDNT RETURN EMPTY- HANDED-",
+          "confidence": 0.935,
+          "text_ar": "تقول الأسطورة إن الصياد الخبير سيفعل أي شيء لضمان عدم عودته خالي الوفاض-"
+        },
+        {
+          "text": "WHERE DID THAT COME FROM...",
+          "confidence": 0.953,
+          "text_ar": "من أين أتيت بهذا..."
+        },
+        {
+          "text": "I BOUGHT IT.",
+          "confidence": 0.926,
+          "text_ar": "اشتريته."
+        },
+        {
+          "text": "I'LLBE HOME EARLIER NEXT TIME TO MAKE DINNER.",
+          "confidence": 0.954,
+          "text_ar": "سأعود للمنزل مبكرًا في المرة القادمة لأعد العشاء."
+        },
+        {
+          "text": "WHAT IS THAT SMELL?",
+          "confidence": 0.972,
+          "text_ar": "ما هذه الرائحة؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "I FORGOT TO TELL YOU ABOUT IT,I LEFT SOMETHING DELICIOUS FOR YOU-",
+          "confidence": 0.902,
+          "text_ar": "نسيت إخبارك بالأمر، لقد تركت لك شيئًا لذيذًا-"
+        },
+        {
+          "text": "THIS IS DURIAN, IT'S JUST LIKE STINKY TOFU. IT SMELLS TERRIBLE BUT TASTES GREAT~",
+          "confidence": 0.91,
+          "text_ar": "هذه فاكهة الدوريان، تشبه التوفو المخمر تمامًا. رائحتها كريهة لكن طعمها رائع~"
+        },
+        {
+          "text": "IDON'T WANT TO EAT THAT!!",
+          "confidence": 0.953,
+          "text_ar": "لا أريد أكل ذلك!!"
+        },
+        {
+          "text": "DAD,ABOUT THE HOUSE...",
+          "confidence": 0.958,
+          "text_ar": "أبي، بخصوص المنزل..."
+        },
+        {
+          "text": "OUT OF THE QUESTION.",
+          "confidence": 0.949,
+          "text_ar": "هذا غير وارد."
+        },
+        {
+          "text": "ALTHOUGHIDIDN'T MANAGE TOSECURE THIS HOUSEONTHE TRIP HOME, I DID GETMYHANDSONSOMEOFTHE DURIANTHATMYOLD MAN HAD. WHAT A PITY, I WANTED TO LET THE WARRIORESS TRY IT...",
+          "confidence": 0.919,
+          "text_ar": "على الرغم من أنني لم أنجح في الحصول على هذا المنزل في طريق عودتي، إلا أنني تمكنت من الحصول على بعض الدوريان الذي كان لدى والدي. يا للأسف، كنت أريد أن أجعل المحاربة تتذوقه..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "WHERE DID YOU BUY THIS GOOSE FROM? ARE YOU SURE YOU DIDN'T SECRETLY CATCH IT FROM SOMEWHERE?",
+          "confidence": 0.93,
+          "text_ar": "من أين اشتريت هذه الإوزة؟ هل أنت متأكد أنك لم تصطدها سرًا من مكان ما؟"
+        },
+        {
+          "text": "AN OLD LADY WAS SELLING IT AT THE MARKET,AND I FELT A LITTLE PITY THAT NO ONE WAS BUYING IT OFF HER, SO I BROUGHT IT HOME.",
+          "confidence": 0.93,
+          "text_ar": "كانت هناك عجوز تبيعها في السوق، وشعرت ببعض الشفقة لأنه لم يشترِ أحد منها شيئًا، فأحضرتها للمنزل."
+        },
+        {
+          "text": "WHAT ABOUT THE FISH THAT YOU CALGHT?",
+          "confidence": 0.88,
+          "text_ar": "وماذا عن السمك الذي اصطدته؟"
+        },
+        {
+          "text": "I WAS FISHING TOGETHERWITH PINGPING BUT SHE DIDN'T SNAG ANY FISH, SOI GAVE ALL OF HER. MINE TO",
+          "confidence": 0.923,
+          "text_ar": "كنت أصطاد مع غونغ بينغ لكنها لم تلتقط أي سمكة، لذا أعطيتها كل ما اصطدته."
+        },
+        {
+          "text": "PING- PING..?",
+          "confidence": 0.923,
+          "text_ar": "غونغ بينغ..؟"
+        },
+        {
+          "text": "SO GEN- EROUS?",
+          "confidence": 0.962,
+          "text_ar": "هل أنت سخي لهذه الدرجة؟"
+        },
+        {
+          "text": "IT WASN'T ENOUGH FOR THE TWO uS OF ANYWAY, so I AS MIGHT WELL.",
+          "confidence": 0.552,
+          "text_ar": "لم يكن كافيًا لنا نحن الاثنين على أي حال، لذا كان من الأفضل أن أعطيه لها."
+        },
+        {
+          "text": "ACTUALLY, IF THE WARRIORESS DID INDEED CATCH THISGOOSEFROM SOME- WHERE, SHEWOULDVEEXCITEDLY SHOWN ITOFF TO ME THE MOMENT SHE ENTEREDTHE HOUSEAND SAID THAT IT WAS HER\"TROPHY\" FROM HUNTING IN THE WILD.",
+          "confidence": 0.93,
+          "text_ar": "في الواقع، لو كانت المحاربة هي من اصطادت هذه الإوزة من مكان ما، لكانت استعرضتها أمامي بحماس لحظة دخولها المنزل وقالت إنها \"غنيمتها\" من الصيد في البرية."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "YOU'RE AMAZING, IT'S YOUR FIRST TIME COOKING THIS, AND IT ALREADY SMELLS SO GOOD.",
+          "confidence": 0.903,
+          "text_ar": "أنت مذهل، إنها المرة الأولى التي تطهو فيها هذا، ورائحته شهية بالفعل."
+        },
+        {
+          "text": "THE BASICS OF COOKING ANY- THING ARE ALL THE SAME, YOU JUST HAVE TO CONTROL THE FIRE AND LSE THE APPROPRIATE SEASONING.",
+          "confidence": 0.926,
+          "text_ar": "أساسيات الطبخ واحدة دائمًا، عليك فقط التحكم في النار واستخدام التوابل المناسبة."
+        },
+        {
+          "text": "HOW'S THE TASTE?",
+          "confidence": 0.961,
+          "text_ar": "كيف هو الطعم؟"
+        },
+        {
+          "text": "AWESOME!",
+          "confidence": 0.997,
+          "text_ar": "رائع!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "EVEN IF I WERE TO ONE DAY TURN INTO A FATTYFROM BEING FED BY THE WARRIORESS, BEING ABLE TO EATDELICIOUS FOODLIKE THIS WOULD STILL BE WORTH IT!",
+          "confidence": 0.922,
+          "text_ar": "حتى لو انتهى بي الأمر يومًا ما لأصبح سمينًا بسبب إطعام المحاربة لي، فإن القدرة على تناول طعام لذيذ كهذا لا تزال تستحق العناء!"
+        },
+        {
+          "text": "YOU LIKE FEET, DON'T YOU? YOU CAN HAVE THIS.",
+          "confidence": 0.932,
+          "text_ar": "أنت تحب أقدام الدجاج، أليس كذلك؟ يمكنك أخذ هذه."
+        },
+        {
+          "text": "I'LL LETWINTER MELON TRY A PIECE TOO~",
+          "confidence": 0.895,
+          "text_ar": "سأجعل وينتر ميلون تجرب قطعة أيضًا~"
+        },
+        {
+          "text": "*OCCASIONALLY FEEDING HIM STUFF LIKE THAT IS OKAY",
+          "confidence": 0.965,
+          "text_ar": "*إطعامه أشياء كهذه بين الحين والآخر أمر لا بأس به"
+        },
+        {
+          "text": "AH,A MESS- AGE FROM PINGPING.",
+          "confidence": 0.959,
+          "text_ar": "آه، رسالة من غونغ بينغ."
+        },
+        {
+          "text": "SHE WAS CALLING HER GONGPING BEFORE, BUT NOW SHE'S CALLING HER PINGPING.",
+          "confidence": 0.946,
+          "text_ar": "كانت تناديها غونغ بينغ من قبل، لكنها الآن تناديها بينغ بينغ."
+        },
+        {
+          "text": "WHAT DID SHE SEND?",
+          "confidence": 0.949,
+          "text_ar": "ماذا أرسلت؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "IT LOOKS LIKE SHE BATTERED IT IN FLOUR AND FRIED IT, JUST LIKE HOW WE ATE IT BEFORE.",
+          "confidence": 0.924,
+          "text_ar": "يبدو أنها غطتها بالدقيق وقليتها، تمامًا كما كنا نأكلها من قبل."
+        },
+        {
+          "text": "WAIT!",
+          "confidence": 0.977,
+          "text_ar": "انتظر!"
+        },
+        {
+          "text": "WHAT'S THE DEAL WITH QINGQING?!",
+          "confidence": 0.984,
+          "text_ar": "ما قصة تشينغ تشينغ هذه؟!"
+        },
+        {
+          "text": "Pingping",
+          "confidence": 0.99,
+          "text_ar": "بينغ بينغ"
+        },
+        {
+          "text": "Qingqing",
+          "confidence": 0.994,
+          "text_ar": "تشينغ تشينغ"
+        },
+        {
+          "text": "I BET THAT WITCHTAUGHT HER THIS!",
+          "confidence": 0.968,
+          "text_ar": "أراهن أن تلك الساحرة هي من علمتها هذا!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "THAT'S you.",
+          "confidence": 0.859,
+          "text_ar": "هذا أنت."
+        },
+        {
+          "text": "OF COURSE I KNOW IT'S ME, DON'T YOU THINK IT'S LIKE A GIRL?!",
+          "confidence": 0.923,
+          "text_ar": "بالطبع أعرف أنه أنا، ألا تعتقد أنه اسم فتاة؟!"
+        },
+        {
+          "text": "漫畫 包子 h.com naozim",
+          "confidence": 0.829,
+          "text_ar": "مانجا باوزي"
+        },
+        {
+          "text": "YOU'RE LIKE A GIRL?!",
+          "confidence": 0.941,
+          "text_ar": "أنت تشبه الفتاة؟!"
+        },
+        {
+          "text": "I'MTALKING ABOUT THE NAME. PASS ME YOUR PHONE.",
+          "confidence": 0.932,
+          "text_ar": "أنا أتحدث عن الاسم. أعطني هاتفك."
+        },
+        {
+          "text": "Set Remark and Tags",
+          "confidence": 0.974,
+          "text_ar": "تعيين ملاحظة وعلامات"
+        },
+        {
+          "text": "Remark",
+          "confidence": 1.0,
+          "text_ar": "ملاحظة"
+        },
+        {
+          "text": "ABC",
+          "confidence": 0.997,
+          "text_ar": "أ ب ج"
+        },
+        {
+          "text": "5 JKL",
+          "confidence": 0.998,
+          "text_ar": "5 ج ك ل"
+        },
+        {
+          "text": "MNO",
+          "confidence": 0.992,
+          "text_ar": "م ن و"
+        },
+        {
+          "text": "DONE, LET'S6O WITH THIS.",
+          "confidence": 0.872,
+          "text_ar": "تم، لنعتمد هذا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "Husband",
+          "confidence": 1.0,
+          "text_ar": "الزوج"
+        },
+        {
+          "text": "HE'S....",
+          "confidence": 0.785,
+          "text_ar": "إنه..."
+        },
+        {
+          "text": "HE'S MY HUSBAND JUST LIKE THAT?",
+          "confidence": 0.963,
+          "text_ar": "هل أصبح زوجي هكذا ببساطة؟"
+        },
+        {
+          "text": "FORGET IT, IT FEELS WEIRD TO GET A HUISBAND JUST LIKE THAT VIA WECHAT,",
+          "confidence": 0.942,
+          "text_ar": "انسَ الأمر، يبدو من الغريب الحصول على زوج هكذا عبر وي شات."
+        },
+        {
+          "text": "包子漫画 baozimh.com 2",
+          "confidence": 0.106,
+          "text_ar": "مانجا باوزي"
+        },
+        {
+          "text": "GIVE ME YOUR PHONE, I'LL CHANGE IT AGAIN.",
+          "confidence": 0.919,
+          "text_ar": "أعطني هاتفك، سأقوم بتغييره مرة أخرى."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "..THE BATTERY IS DEAD, THERE'S NO WAY TO CHANGE IT ANYMORE.",
+          "confidence": 0.949,
+          "text_ar": "..البطارية فارغة، لا توجد طريقة لتغييره بعد الآن."
+        },
+        {
+          "text": "..AS LONG AS YOU'RE HAPPY WITH IT.",
+          "confidence": 0.835,
+          "text_ar": "..طالما أنك سعيدة بذلك."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "A GIRL WAS BEING ROBBED.WHILE HE WAS COMMITTING THE CRIME... LUCKILY...A BRAVE CROWD...",
+          "confidence": 0.891,
+          "text_ar": "كانت هناك فتاة تتعرض للسرقة. وبينما كان يرتكب الجريمة... لحسن الحظ... حشد شجاع..."
+        },
+        {
+          "text": "MY ANCESTOR FROM MANY GENERATIONS BEYOND MY GRANDFATHER WAS XU ZHU!",
+          "confidence": 0.946,
+          "text_ar": "سلفي من أجيال عديدة بعد جدي كان شو تشو!"
+        },
+        {
+          "text": "TO PRACTICE MARTIAL ARTS, YOU HAVE TO FIRST STRENGTHENYOURCORE, SUMMON THE STRENGTH FROM YOUR LEGS, AND SPREAD IT THROUGHOUT YOUR SHOULDERS, ARMS, AND WRIST!",
+          "confidence": 0.902,
+          "text_ar": "لممارسة الفنون القتالية، عليك أولًا تقوية مركز توازنك، واستجماع القوة من ساقيك، وتوزيعها عبر كتفيك وذراعيك ومعصميك!"
+        },
+        {
+          "text": "REGARDLESS OF THE MARTIAL ART YOU'RE PRACTICING, THE ROOT OF IT ALL IS THE SAME.",
+          "confidence": 0.957,
+          "text_ar": "بغض النظر عن الفن القتالي الذي تمارسه، فإن أصل كل شيء واحد."
+        },
+        {
+          "text": "WHAT ARE YOU WATCHING?",
+          "confidence": 0.922,
+          "text_ar": "ما الذي تشاهده؟"
+        },
+        {
+          "text": "天下武单西金",
+          "confidence": 0.594,
+          "text_ar": "فنون قتالية عالمية"
+        },
+        {
+          "text": "YOU'RE ON THE FRONT PAGE.",
+          "confidence": 0.87,
+          "text_ar": "أنت على الصفحة الرئيسية."
+        },
+        {
+          "text": "是45 万安不离其",
+          "confidence": 0.369,
+          "text_ar": "450 ألف مشاهدة"
+        }
+      ]
+    }
+  ]
+}

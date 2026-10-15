@@ -1,0 +1,786 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "206",
+  "manga_title": "My Wife Is From a Thousand Years Ago 206",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "WOW~",
+          "confidence": 0.833,
+          "text_ar": "واو~"
+        },
+        {
+          "text": "LakeMANGAIJO",
+          "confidence": 0.758,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "IS THIS THE MODERN CORNFIELD?",
+          "confidence": 0.981,
+          "text_ar": "هل هذا هو حقل الذرة الحديث؟"
+        },
+        {
+          "text": "LoKeMANGA.JO",
+          "confidence": 0.819,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "THAT'S RIGHT.",
+          "confidence": 0.991,
+          "text_ar": "هذا صحيح."
+        },
+        {
+          "text": "GREAT.IF THE WARRIORESS IS HAPPY,THENI'M HAPPYTOO.",
+          "confidence": 0.92,
+          "text_ar": "رائع. إذا كانت المحاربة سعيدة، فأنا سعيد أيضًا."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.872,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "IN ANOTHER HALFAMONTH,IT SHOULD BE THE REPRODUCTION STAGE...",
+          "confidence": 0.853,
+          "text_ar": "بعد نصف شهر آخر، يجب أن تكون مرحلة التكاثر..."
+        },
+        {
+          "text": "T/N: He's making a sex Joke? that's lost in translation. In the novel, he references a Chinese film calledRed Sorghum where the main characters have sex in the sorghum field.",
+          "confidence": 0.914,
+          "text_ar": "ملاحظة المترجم: إنه يلقي نكتة جنسية، وقد ضاع معناها في الترجمة. في الرواية، هو يشير إلى فيلم صيني بعنوان \"الذرة الحمراء\" حيث يمارس الأبطال الجنس في حقل الذرة."
+        },
+        {
+          "text": "IN JANGCHENG, WE CALLITPULLING OUT THE TASSENANGA.JO",
+          "confidence": 0.873,
+          "text_ar": "في جيانغ تشنغ، نسمي هذا سحب الشرابات."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "ALTHOUGH WONDERFUL STORIES OFTEN HAPPEN IN CORNFIELDS,",
+          "confidence": 0.957,
+          "text_ar": "على الرغم من أن القصص الرائعة تحدث غالبًا في حقول الذرة،"
+        },
+        {
+          "text": "THEY WERE ALL ROUGH MEN. AS A SCHOLAR,I'LL GET CUT BY THE LEAVES, AND IT'LL PAINFUL ANDITCHY.",
+          "confidence": 0.927,
+          "text_ar": "إلا أنهم كانوا جميعًا رجالًا خشنين. وبصفتي باحثًا، ستجرحني الأوراق، وسيكون الأمر مؤلمًا ومثيرًا للحكة."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.87,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "IT'S ALSO POSSIBLE THATBEFOREI'MEVENCUT BY THE LEAVES,I'LLBE BEATEN INTOADOGBY THE WARRIORESS.",
+          "confidence": 0.91,
+          "text_ar": "من الممكن أيضًا أنه قبل أن تجرحني الأوراق حتى، سأتعرض للضرب المبرح على يد المحاربة."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.805,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "LaKeMANGA.JO",
+          "confidence": 0.8,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "XU QING LOOK...",
+          "confidence": 0.913,
+          "text_ar": "شو تشينغ، انظر..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "ADENG TUZITHATIS STILLDAYDREAMING",
+          "confidence": 0.927,
+          "text_ar": "أيها المنحرف الذي لا يزال يحلم يقظة."
+        },
+        {
+          "text": "WHAT ARE YOU SMILING FOR?",
+          "confidence": 0.927,
+          "text_ar": "لماذا تبتسم؟"
+        },
+        {
+          "text": "WWY",
+          "confidence": 0.572,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "AREN'T THESE JUST NORMAL CORN LEAVES? WHAT'SWRONG?",
+          "confidence": 0.949,
+          "text_ar": "أليست هذه مجرد أوراق ذرة عادية؟ ما الخطب؟"
+        },
+        {
+          "text": "LJKeMANGA.JG",
+          "confidence": 0.778,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "I DIDN'T EXPECT CORNSTALKS TO GROW SO TALLIN THE MODERN DAY.",
+          "confidence": 0.921,
+          "text_ar": "لم أتوقع أن تنمو سيقان الذرة بهذا الطول في العصر الحديث."
+        },
+        {
+          "text": "LoKeMANGA.JO",
+          "confidence": 0.797,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "LOKeMANGA.JO",
+          "confidence": 0.797,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "I WANTED TO RELAX AND BREATHE SOME FRESH AIR,",
+          "confidence": 0.924,
+          "text_ar": "أردت الاسترخاء واستنشاق بعض الهواء النقي،"
+        },
+        {
+          "text": "WHILE LOOKING AT THE ENDLESS FIELDSOF WHEAT ANDCORN.",
+          "confidence": 0.959,
+          "text_ar": "بينما أنظر إلى حقول القمح والذرة التي لا نهاية لها."
+        },
+        {
+          "text": "LKeMANGA.JO",
+          "confidence": 0.834,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "WHO KNEW THE CORNSTALKS ARE AS TALLAS HUMANS.",
+          "confidence": 0.944,
+          "text_ar": "من كان يعلم أن سيقان الذرة بطول البشر."
+        },
+        {
+          "text": "IT'S GREAT.",
+          "confidence": 0.938,
+          "text_ar": "إنه أمر رائع."
+        },
+        {
+          "text": "LJKeMA",
+          "confidence": 0.776,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "THISFEELING OF OPEN-MINDEDNESS.. ISSO GOOD!",
+          "confidence": 0.942,
+          "text_ar": "هذا الشعور بالانفتاح... رائع حقًا!"
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.851,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": []
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "BY THE WAY! THE FIELDS HERE WILLBEHARVESTED BY MACHINES, RIGHT? IDONTKNOWWHATIT LOOKSLIKEIWANTTOSEE!",
+          "confidence": 0.891,
+          "text_ar": "بالمناسبة! سيتم حصاد الحقول هنا بواسطة الآلات، أليس كذلك؟ لا أعرف كيف يبدو الأمر، أريد أن أرى!"
+        },
+        {
+          "text": "PROBABLY,TECHNOLOGY ISDEVELOPING FAST.IN THE PAST,A FAMILY WOLLD HAVE TODIG INTO THE GROUND MAN- UALLY.IHEARD THAT THERE ISA MACHINE TOHARVEST IT NOW,BUT I HAVEN'T PAIDMUCHATTENT- ION TO IT.",
+          "confidence": 0.92,
+          "text_ar": "على الأرجح، التكنولوجيا تتطور بسرعة. في الماضي، كان على العائلة أن تحفر في الأرض يدويًا. سمعت أن هناك آلة لحصادها الآن، لكنني لم أعر الأمر اهتمامًا كبيرًا."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "sentences": [
+        {
+          "text": "HAHA, THERE WILL BEPLENTY OF OPPORTUNITIES TO SEE ONE IN THE FUTURE.",
+          "confidence": 0.945,
+          "text_ar": "هاها، ستكون هناك الكثير من الفرص لرؤية واحدة في المستقبل."
+        },
+        {
+          "text": "LOKeNANGA.JO",
+          "confidence": 0.696,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "sentences": [
+        {
+          "text": "MY DAD MOVED TO THECITYDURING HIS GENERATION.BEFORETHAT, MYFAMILYWEREFARMERSFOR EIGHTEENGENERATIONS.I DON'TKNOWIF THISCOUNTS ASFORGETTINGMY ROOTSORNOT..",
+          "confidence": 0.904,
+          "text_ar": "انتقل والدي إلى المدينة خلال جيله. قبل ذلك، كانت عائلتي مزارعين لثمانية عشر جيلًا. لا أعرف إن كان هذا يُعد نسيانًا لجذوري أم لا..."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "sentences": [
+        {
+          "text": "MACHINES ARE REALLYGREAT INVENTIONS.",
+          "confidence": 0.99,
+          "text_ar": "الآلات اختراعات رائعة حقًا."
+        },
+        {
+          "text": "YEAH.",
+          "confidence": 0.993,
+          "text_ar": "أجل."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "sentences": [
+        {
+          "text": "IT'SSO COMFORTABLE SITTING INTHE COUNTRYSIDEAND ENJOYING THE BREEZE!",
+          "confidence": 0.96,
+          "text_ar": "إنه أمر مريح جدًا أن تجلس في الريف وتستمتع بالنسيم!"
+        },
+        {
+          "text": "KeMANGA.JO",
+          "confidence": 0.848,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "sentences": [
+        {
+          "text": "BY THE WAY, NORMAL GIRLS WOULDFINDTHE GROUND DIRTY, BUT YOU SEEM FINE WITHIT.",
+          "confidence": 0.926,
+          "text_ar": "بالمناسبة، الفتيات العاديات قد يجدن الأرض متسخة، لكنك تبدين بخير معها."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.843,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "sentences": [
+        {
+          "text": "HM? CAN'T I JUST WASH IT IF IT GETS DIRTY?",
+          "confidence": 0.899,
+          "text_ar": "همم؟ ألا يمكنني غسلها إذا اتسخت؟"
+        },
+        {
+          "text": "THE WARRIORESS IS REALLY NOT PICKY.",
+          "confidence": 0.935,
+          "text_ar": "المحاربة ليست صعبة الإرضاء حقًا."
+        },
+        {
+          "text": "MANGA.JO",
+          "confidence": 0.955,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "sentences": [
+        {
+          "text": "SHEDOESN'TRANDOMLY SPENDMONEYANDDOESN'T WANTANYTHINGPLAYINGGAMES ANDGOINGOUTSIDEARE HERONLYHOBBIES.",
+          "confidence": 0.973,
+          "text_ar": "إنها لا تنفق المال عشوائيًا ولا تريد أي شيء، ممارسة الألعاب والخروج هما هوايتاها الوحيدتان."
+        },
+        {
+          "text": "ALTHOUGH I'M TIRED, I STILLWANT TO SPEND SOME MORE TIME HERE WITH HER.",
+          "confidence": 0.912,
+          "text_ar": "على الرغم من أنني متعب، إلا أنني ما زلت أرغب في قضاء المزيد من الوقت هنا معها."
+        },
+        {
+          "text": "A.JO",
+          "confidence": 0.888,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "sentences": [
+        {
+          "text": "I'VE THOUGHT ABOUTFARMING TOGETHER AND YOU HELPING ME HARVEST WHEAT WITH A SICKLE. ARE YOU WILLING?",
+          "confidence": 0.886,
+          "text_ar": "لقد فكرت في الزراعة معًا وأن تساعديني في حصاد القمح بالمنجل. هل أنتِ مستعدة؟"
+        },
+        {
+          "text": "HAHA, YOU DON'T EVEN'FORGET TO BRING ME WITHYOU TOFARMING,THANK YOUWARRIORESS.",
+          "confidence": 0.917,
+          "text_ar": "هاها، أنتِ حتى لا تنسين اصطحابي معكِ للزراعة، شكرًا لكِ أيتها المحاربة."
+        },
+        {
+          "text": "NGA.JO",
+          "confidence": 0.96,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "sentences": [
+        {
+          "text": "BUT TECHNOLOGYIS ALREADYSOADVANCED. WHO WOULD BE STUPID ENOUGH TO USE A SICKLE? JUST HIRE SOMEONE TO DRIVE THE MACHINE AND IT'LLBE DONEIN JUST A MOMENT.",
+          "confidence": 0.926,
+          "text_ar": "لكن التكنولوجيا متطورة بالفعل. من سيكون غبيًا بما يكفي لاستخدام منجل؟ فقط استأجر شخصًا لقيادة الآلة وسينتهي الأمر في لحظة."
+        },
+        {
+          "text": "IWANT TO TAKE YOUTO SIT INAN AIR- CONDITIONED ROOMTO EATWATERMELON,DRINK COKE,LISTEN TO MUSIC, ANDREADBOOKS,ARE YOU WILLING?",
+          "confidence": 0.925,
+          "text_ar": "أريد أن آخذكِ للجلوس في غرفة مكيفة لتناول البطيخ، وشرب الكولا، والاستماع إلى الموسيقى، وقراءة الكتب، هل أنتِ مستعدة؟"
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.826,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "sentences": [
+        {
+          "text": "I'MVERY WILLING.",
+          "confidence": 0.988,
+          "text_ar": "أنا مستعدة جدًا."
+        },
+        {
+          "text": "THEN ARE WE FARMINGOR ENJOYING THE AC?",
+          "confidence": 0.962,
+          "text_ar": "إذًا هل سنزرع أم نستمتع بالمكيف؟"
+        },
+        {
+          "text": "ENJOYING THE AC OF COURSE, I'M NOT STUPID.THERE ARE NECESSARYHARDSHIPS YOU MUST FACE,BUT WHO WOULD BE STUPID ENOUGH TO FACE UNNECESSARY HARDSHIPS? RESOLUTE AND DECISIVE",
+          "confidence": 0.91,
+          "text_ar": "الاستمتاع بالمكيف بالطبع، لست غبية. هناك مصاعب ضرورية يجب أن تواجهيها، لكن من سيكون غبيًا بما يكفي لمواجهة مصاعب غير ضرورية؟ حازمة وحاسمة."
+        },
+        {
+          "text": "ALREADY LEARNED HOW TO SPEAK LIKE ME?",
+          "confidence": 0.931,
+          "text_ar": "هل تعلمتِ بالفعل كيف تتحدثين مثلي؟"
+        },
+        {
+          "text": "DIDN'T YOU JUST SAY YOUWANTED TO FARMTOGETHER AND WANTED ME TOHELP YOU HARVEST WHEAT.",
+          "confidence": 0.929,
+          "text_ar": "ألم تقولي للتو إنكِ أردتِ الزراعة معًا وأردتِ مني مساعدتكِ في حصاد القمح."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.797,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "sentences": [
+        {
+          "text": "I SAID IHAD THOUGHT ABOUT IT BEFORE,BUT I DIDN'T SAYISTILL WANTED TODO IT NOW.",
+          "confidence": 0.91,
+          "text_ar": "قلت إنني فكرت في الأمر من قبل، لكنني لم أقل إنني ما زلت أريد القيام بذلك الآن."
+        },
+        {
+          "text": "LIFE HAS BECOME EASIER, MACHINES SAVE TIMEAND EFFORT,WATERING ANDOTHERTHINGS ARE MORE CONVENIENT,ANDCROPSHAVE BECOME MORE PRODUCTIVE. THIS ERA IS GREAT,SO SOMETIMES IT FEELS UNREAL.",
+          "confidence": 0.956,
+          "text_ar": "أصبحت الحياة أسهل، والآلات توفر الوقت والجهد، والري وأشياء أخرى أصبحت أكثر ملاءمة، وأصبحت المحاصيل أكثر إنتاجية. هذا العصر رائع، لذا يبدو الأمر أحيانًا غير حقيقي."
+        },
+        {
+          "text": "TKeMANgA.JO",
+          "confidence": 0.728,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "sentences": [
+        {
+          "text": "THAT'S NORMAL, SOMETIMESI ALSO FEEL LIKEIT'S UNREAL. DONT THINK TOO MUCH, THE MORE PEOPLE THINK,THEMORE TIRED THEY BECOME.",
+          "confidence": 0.912,
+          "text_ar": "هذا طبيعي، أحيانًا أشعر أيضًا أنه غير حقيقي. لا تفكري كثيرًا، فكلما فكر الناس أكثر، أصبحوا أكثر تعبًا."
+        },
+        {
+          "text": "IF YOU HAVE ANY QUESTIONS, YOU CAN ASK ME DIRECTLY.TEACHER XU WILL ALWAYS ANSWERYOUR QUESTIONS.",
+          "confidence": 0.885,
+          "text_ar": "إذا كان لديكِ أي أسئلة، يمكنكِ سؤالي مباشرة. المعلم شو سيجيب دائمًا على أسئلتكِ."
+        },
+        {
+          "text": "LoKeMANGA.JO",
+          "confidence": 0.789,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "sentences": [
+        {
+          "text": "AHEM.DO YOU WANT TO DO ANY- THING ELSE? YOU CANDO SOME EX- CITING THINGSIN THECORNFIELDS.",
+          "confidence": 0.93,
+          "text_ar": "أحم. هل تريدين القيام بأي شيء آخر؟ يمكنكِ القيام ببعض الأشياء المثيرة في حقول الذرة."
+        },
+        {
+          "text": "ANGA.JO",
+          "confidence": 0.966,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "sentences": [
+        {
+          "text": "IF YOU LIKE, I CAN SHOW YOU WHAT EXCITING MEANS.",
+          "confidence": 0.937,
+          "text_ar": "إذا أردتِ، يمكنني أن أريكِ ماذا يعني مثيرة."
+        },
+        {
+          "text": "LaKeMANGAJO",
+          "confidence": 0.781,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "sentences": [
+        {
+          "text": "YOU MISUNDER- STOOD,SINCE THERE'S 'NO ONE HERE AND THERE'S NO CAMERAS,",
+          "confidence": 0.895,
+          "text_ar": "لقد أسأتِ الفهم، بما أنه لا يوجد أحد هنا ولا توجد كاميرات،"
+        },
+        {
+          "text": "LoKeMANGA.JO",
+          "confidence": 0.831,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "sentences": [
+        {
+          "text": "YOU CAN SHOW OFF YOUR QING- GONG TO ME.CAN YOU RUN AS FAST AS A MOTOR- CYCLE?",
+          "confidence": 0.9,
+          "text_ar": "يمكنكِ استعراض تشينغ غونغ الخاصة بكِ أمامي. هل يمكنكِ الركض بسرعة دراجة نارية؟"
+        },
+        {
+          "text": "FORGET IT,",
+          "confidence": 0.968,
+          "text_ar": "انسَ الأمر،"
+        },
+        {
+          "text": "LoKeMANGA.JO",
+          "confidence": 0.794,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "sentences": [
+        {
+          "text": "IT'S GOOD TO BE A NORMAL PERSON.",
+          "confidence": 0.905,
+          "text_ar": "من الجيد أن تكون شخصًا عاديًا."
+        },
+        {
+          "text": "YOU SAID THAT.",
+          "confidence": 0.932,
+          "text_ar": "لقد قلتِ ذلك."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.762,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "sentences": [
+        {
+          "text": "YEAH.",
+          "confidence": 0.988,
+          "text_ar": "أجل."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.809,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "sentences": [
+        {
+          "text": "LET'S GO HOME.",
+          "confidence": 0.928,
+          "text_ar": "لنعد إلى المنزل."
+        },
+        {
+          "text": "DON'T YOU THINKIT'S SILLY TO HOLD AN UM- BRELLA IN THE SUMMER?",
+          "confidence": 0.909,
+          "text_ar": "ألا تعتقدين أنه من السخف حمل مظلة في الصيف؟"
+        },
+        {
+          "text": "THEN WHY ARE YOU UNDER IT?",
+          "confidence": 0.919,
+          "text_ar": "إذًا لماذا أنتِ تحتها؟"
+        },
+        {
+          "text": "HMPH,IT'S NOT LIKE I'M THE ONE HOLDING IT.",
+          "confidence": 0.929,
+          "text_ar": "همف، لست أنا من يحملها."
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.876,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "sentences": [
+        {
+          "text": "LoKeMANGA.J0",
+          "confidence": 0.776,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "sentences": [
+        {
+          "text": "COME HERE, LET'S ENJOY'IT TOGETHER.",
+          "confidence": 0.903,
+          "text_ar": "تعالي إلى هنا، لنستمتع بها معًا."
+        },
+        {
+          "text": "I'MGOING TO TAKE A SHOWER.",
+          "confidence": 0.968,
+          "text_ar": "سأذهب للاستحمام."
+        },
+        {
+          "text": "NGA.JO",
+          "confidence": 0.984,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "sentences": [
+        {
+          "text": "HEHE, NO WONDER THE WARRIORESS LIKE TOGOOUT ANDPLAY.",
+          "confidence": 0.942,
+          "text_ar": "ههه، لا عجب أن المحاربة تحب الخروج واللعب."
+        },
+        {
+          "text": "冲啦啦",
+          "confidence": 0.526,
+          "text_ar": "اندفاع!"
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.788,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "sentences": [
+        {
+          "text": "SHOWER TIME~",
+          "confidence": 0.975,
+          "text_ar": "وقت الاستحمام~"
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.84,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "sentences": [
+        {
+          "text": "HELP ME THROW THESE IN THE WASHING MACHINE, WARRIORESS.",
+          "confidence": 0.947,
+          "text_ar": "ساعديني في رمي هذه في الغسالة، أيتها المحاربة."
+        },
+        {
+          "text": "ANGA.JO",
+          "confidence": 0.964,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "sentences": [
+        {
+          "text": "T/N: He's singing a song called Conquer by Na Ying. Link:youtube.com/watch? v=SrLil3-x_9Y",
+          "confidence": 0.784,
+          "text_ar": "ملاحظة المترجم: إنه يغني أغنية بعنوان \"قهر\" لـ نا يينغ."
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "sentences": [
+        {
+          "text": "切断了# APITU There's no turning back~(for me)",
+          "confidence": 0.344,
+          "text_ar": "لقد انقطع كل شيء... لا عودة للوراء~(بالنسبة لي)"
+        },
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.778,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "sentences": [
+        {
+          "text": "LKeMANGA.JO",
+          "confidence": 0.778,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "sentences": [
+        {
+          "text": "LJKeMANGA.JO",
+          "confidence": 0.808,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "sentences": []
+    },
+    {
+      "page": 47,
+      "sentences": [
+        {
+          "text": "HOWDIDIBECOME ASPERVERTEDAS XUQING?",
+          "confidence": 0.992,
+          "text_ar": "كيف أصبحت منحرفة مثل شو تشينغ؟"
+        },
+        {
+          "text": "TS/N:Our warrioress has been tainted by the Deng Tuzi!!",
+          "confidence": 0.94,
+          "text_ar": "ملاحظة المترجم: لقد تلوثت محاربتنا بسبب هذا المنحرف!!"
+        },
+        {
+          "text": "LaKeMANGA.JO",
+          "confidence": 0.803,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "sentences": [
+        {
+          "text": "JUST... ANOTHER SNIFF.",
+          "confidence": 0.936,
+          "text_ar": "فقط... استنشاق آخر."
+        },
+        {
+          "text": "LoKeMANGA.JO",
+          "confidence": 0.838,
+          "text_ar": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "domain": "asurascans.com",
+  "saved_at": "2026-10-12T09:29:24Z",
+  "candidates": [
+    {
+      "ip": "15.197.225.128",
+      "score": 11,
+      "sources": [
+        "OTX passive DNS",
+        "Robtex passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "1783050282",
+      "last_seen": "2026-01-10T18:34:55"
+    },
+    {
+      "ip": "3.33.251.168",
+      "score": 11,
+      "sources": [
+        "OTX passive DNS",
+        "Robtex passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "1783050282",
+      "last_seen": "2026-01-10T18:34:55"
+    },
+    {
+      "ip": "104.28.8.198",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "2020-11-03T16:01:14",
+      "last_seen": "2020-11-20T18:32:40"
+    },
+    {
+      "ip": "104.28.9.198",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "2020-11-03T16:01:14",
+      "last_seen": "2020-11-20T18:32:40"
+    },
+    {
+      "ip": "128.199.88.72",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "2020-06-25T13:34:42",
+      "last_seen": "2020-06-25T13:34:58"
+    },
+    {
+      "ip": "172.104.33.25",
+      "score": 7,
+      "sources": [
+        "Robtex passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "1597753032",
+      "last_seen": "1791797330"
+    },
+    {
+      "ip": "207.180.241.84",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com",
+        "cpcalendars.asurascans.com",
+        "cpcontacts.asurascans.com"
+      ],
+      "first_seen": "2020-11-21T23:27:32",
+      "last_seen": "2020-11-22T03:54:24"
+    },
+    {
+      "ip": "74.50.88.7",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "2023-09-11T07:42:56",
+      "last_seen": "2023-09-11T07:44:27"
+    },
+    {
+      "ip": "81.19.215.15",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "asurascans.com"
+      ],
+      "first_seen": "2020-06-18T17:40:43",
+      "last_seen": "2020-06-21T06:59:26"
+    }
+  ]
+}

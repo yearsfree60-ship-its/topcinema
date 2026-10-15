@@ -1,0 +1,413 @@
+{
+  "manga_id": "mangadex.org__the-treasured-sakura-tome",
+  "chapter_num": "105",
+  "manga_title": "The Treasured Sakura Tome",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "BROUGHTTOYOUBY: HUZBI SCANLATIONS!",
+          "confidence": 0.974,
+          "text_ar": "مقدمة لكم من: هوزبي سكانليشنز!"
+        },
+        {
+          "text": "PLEASE SUPPORTTHE AUTHOR/ARTISTBY BUYINGTHEIR WORKS!",
+          "confidence": 0.973,
+          "text_ar": "يرجى دعم المؤلف/الرسام بشراء أعمالهم الأصلية!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "WHAT? YI JIN JING?",
+          "confidence": 0.955,
+          "text_ar": "ماذا؟ يي جين جينغ؟"
+        },
+        {
+          "text": "DO YOU REMEMBER THIS PIECE OF PAPER?",
+          "confidence": 0.9,
+          "text_ar": "هل تتذكر هذه الورقة؟"
+        },
+        {
+          "text": "HUMPH! DON'T REMEMBER?",
+          "confidence": 0.968,
+          "text_ar": "همف! ألا تتذكر؟"
+        },
+        {
+          "text": "IT FELL OUT OF YOUR CAR THAT DAY.",
+          "confidence": 0.974,
+          "text_ar": "لقد سقطت من سيارتك في ذلك اليوم."
+        },
+        {
+          "text": "THIS IS ONE OF THE TORN PAGES OF THE TECHNIQUE YI JIN JING!",
+          "confidence": 0.979,
+          "text_ar": "هذه إحدى الصفحات الممزقة من تقنية يي جين جينغ!"
+        },
+        {
+          "text": "THESE ARE THE DRAWINGSDRAWNBY LIN FENG IN THAT NOTEBOOK!",
+          "confidence": 0.949,
+          "text_ar": "هذه هي الرسومات التي رسمها لين فينغ في ذلك الدفتر!"
+        },
+        {
+          "text": "THIS IS...! 神漫画",
+          "confidence": 0.979,
+          "text_ar": "هذا...!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "YI JIN JING CAN EASILY CHANGE A MARTIAL ARTIST'S QUALIFICATIONS,",
+          "confidence": 0.943,
+          "text_ar": "يمكن لتقنية يي جين جينغ أن تغير مؤهلات فناني القتال بسهولة،"
+        },
+        {
+          "text": "IT'SA SECRET TREASURE THAT CAN MAKE FATHER AND SON TURN AGAINST EACH OTHER AND MAKE BROTHERS EAT EACH OTHER!",
+          "confidence": 0.949,
+          "text_ar": "إنها كنز سري يمكنه جعل الأب وابنه ينقلبان على بعضهما، ويجعل الإخوة يلتهمون بعضهم البعض!"
+        },
+        {
+          "text": "ANYONE WHO GET'S THIS CHEAT ALWAYS TRY TO KEEP IT A SECRET AND HAVE IT ALL FOR HIMSELF.",
+          "confidence": 0.953,
+          "text_ar": "أي شخص يحصل على هذه الغنيمة يحاول دائمًا إبقاء الأمر سرًا والاستحواذ عليها لنفسه."
+        },
+        {
+          "text": "LIN FENG ACTLALLY GAVE THAT TO ME?!",
+          "confidence": 0.953,
+          "text_ar": "هل أعطاها لي لين فينغ بالفعل؟!"
+        },
+        {
+          "text": "LOOK AT HER EXPRESSION, CHEATS ARE DEFINITELY WITH HER!",
+          "confidence": 0.984,
+          "text_ar": "انظر إلى تعابير وجهها، الغنائم بالتأكيد معها!"
+        },
+        {
+          "text": "I WILL COME TONIGHT TO GET IT,",
+          "confidence": 0.942,
+          "text_ar": "سآتي الليلة لأخذها،"
+        },
+        {
+          "text": "IT WILL BE GOOD FOR ALL OF uS.",
+          "confidence": 0.813,
+          "text_ar": "سيكون هذا جيدًا لنا جميعًا."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "EMPEROR DRAGON VILLA",
+          "confidence": 0.983,
+          "text_ar": "فيلا التنين الإمبراطوري"
+        },
+        {
+          "text": "WHAT'S THE MATTER, WHY ARE YOU PEOPLE OUTSIDE EXPRESSION -LESS?",
+          "confidence": 0.95,
+          "text_ar": "ما الأمر؟ لماذا تبدون جميعًا في الخارج بلا تعابير؟"
+        },
+        {
+          "text": "WHERE IS ZHANPENG?",
+          "confidence": 0.989,
+          "text_ar": "أين تشانبينغ؟"
+        },
+        {
+          "text": "LORD PATRIARCH, HE...",
+          "confidence": 0.902,
+          "text_ar": "سيدي البطريرك، هو..."
+        },
+        {
+          "text": "I HAVE A BAD FEELING...",
+          "confidence": 0.9,
+          "text_ar": "لدي شعور سيء..."
+        },
+        {
+          "text": "神漫画",
+          "confidence": 0.997,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "THIS IS?!",
+          "confidence": 0.949,
+          "text_ar": "ما هذا؟!"
+        },
+        {
+          "text": "THE HOUSE -KEEPER AND SECOND MASTER WENT TO AVENGE THE MASTER.",
+          "confidence": 0.968,
+          "text_ar": "ذهب مدبر المنزل والابن الثاني للانتقام من أجل السيد."
+        },
+        {
+          "text": "THEY WERE ALL KILLED...BY LIN FENG!",
+          "confidence": 0.929,
+          "text_ar": "لقد قُتلوا جميعًا... على يد لين فينغ!"
+        },
+        {
+          "text": "LORD PATRIARCH!",
+          "confidence": 0.99,
+          "text_ar": "سيدي البطريرك!"
+        },
+        {
+          "text": "uuu",
+          "confidence": 0.775,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "神漫画",
+          "confidence": 0.997,
+          "text_ar": "..."
+        },
+        {
+          "text": "LIN FENG!! I'M GOING TO SMASH YOU INTO PIECES!",
+          "confidence": 0.916,
+          "text_ar": "لين فينغ!! سأحطمك إلى أشلاء!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "SIR!DON'TBE IMPULSIVE! LIN FENG'S STRENGTH IS UNCOMPARABLE!",
+          "confidence": 0.975,
+          "text_ar": "سيدي! لا تتسرع! قوة لين فينغ لا تُضاهى!"
+        },
+        {
+          "text": "FIND ME WHERE HIS HOME IS!",
+          "confidence": 0.99,
+          "text_ar": "اعثروا لي على مكان منزله!"
+        },
+        {
+          "text": "IMME -DIATELY!",
+          "confidence": 0.996,
+          "text_ar": "فورًا!"
+        },
+        {
+          "text": "LINCOMPA -RABLE MY FOOT!",
+          "confidence": 0.987,
+          "text_ar": "لا تُضاهى؟ هراء!"
+        },
+        {
+          "text": "WHAT'S LINCOMPARABLE! ISN'T HE JUST AT THE PEAK OF LATE WEN STAGE!",
+          "confidence": 0.937,
+          "text_ar": "ما الذي لا يُضاهى؟ أليس هو مجرد في ذروة المرحلة المتأخرة من مرحلة وين؟"
+        },
+        {
+          "text": "THE SECOND SON WERE ALREADY AT THE LATE STAGE. AND ME AND THE HOUSEKEEPER WERE BOTH AT THE MIDDLE STAGE.",
+          "confidence": 0.979,
+          "text_ar": "كان الابن الثاني بالفعل في المرحلة المتأخرة، وأنا ومدبر المنزل كنا في المرحلة المتوسطة."
+        },
+        {
+          "text": "WE ALSO INVITED A MASTER OF THE LATE STAGE TO HELP US OUT AS WELL.",
+          "confidence": 0.968,
+          "text_ar": "لقد دعونا أيضًا خبيرًا من المرحلة المتأخرة لمساعدتنا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "It'S JUSt..",
+          "confidence": 0.845,
+          "text_ar": "الأمر فقط..."
+        },
+        {
+          "text": "YOU'RE",
+          "confidence": 0.965,
+          "text_ar": "أأنت..."
+        },
+        {
+          "text": "THINKING THAT / WILL LOSE?",
+          "confidence": 0.873,
+          "text_ar": "تظن أنني سأخسر؟"
+        },
+        {
+          "text": "NO NO NO! NEVER WOULD THIS SUBORDINATE THINK UKE THAT!",
+          "confidence": 0.953,
+          "text_ar": "لا لا لا! لم يكن ليخطر ببال هذا التابع شيء كهذا أبدًا!"
+        },
+        {
+          "text": "WHEN LIN FENG KILLED THE THREE OF THEM...",
+          "confidence": 0.883,
+          "text_ar": "عندما قتل لين فينغ الثلاثة منهم..."
+        },
+        {
+          "text": "HE USED ONLY ONE SKILL.",
+          "confidence": 0.948,
+          "text_ar": "استخدم مهارة واحدة فقط."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "ONE SKILL?! I CAN'T EVEN DO THAT MUCH MYSELF!",
+          "confidence": 0.951,
+          "text_ar": "مهارة واحدة؟! أنا نفسي لا أستطيع فعل ذلك!"
+        },
+        {
+          "text": "LIN FEN6, THIS KID HAS ALREADY REACHED THE PINNACLE OF WEN STA6E!",
+          "confidence": 0.932,
+          "text_ar": "لين فينغ، هذا الفتى وصل بالفعل إلى قمة مرحلة وين!"
+        },
+        {
+          "text": "THIS...THIS IS IMPOSSIBLE!",
+          "confidence": 0.983,
+          "text_ar": "هذا... هذا مستحيل!"
+        },
+        {
+          "text": "AND HE'S EVEN MORE RUTHLESS THAN ME!",
+          "confidence": 0.96,
+          "text_ar": "وهو أكثر قسوة مني حتى!"
+        },
+        {
+          "text": "THE REALTION -SHIP OF LIN FENG WITH BAI FAMILY IS STRONG,",
+          "confidence": 0.953,
+          "text_ar": "علاقة لين فينغ بعائلة باي قوية،"
+        },
+        {
+          "text": "IF HE KNOWS THAT ITHREATENED BAI FAMILY...",
+          "confidence": 0.962,
+          "text_ar": "إذا علم أنني هددت عائلة باي..."
+        },
+        {
+          "text": "..HE'LLKILL ME.",
+          "confidence": 0.934,
+          "text_ar": "...سيقتلني."
+        },
+        {
+          "text": "STARTING TODAY, YOU ARE NOW THE MASTER OF XUAN FAMILY!",
+          "confidence": 0.965,
+          "text_ar": "ابتداءً من اليوم، أنت الآن سيد عائلة شوان!"
+        },
+        {
+          "text": "XUANLONG IS GOING TO TRAVEL AS AN EXPERT.",
+          "confidence": 0.98,
+          "text_ar": "شوان لونغ سيذهب في رحلة كخبير."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "HEYGUYS. HUZBI HERE.",
+          "confidence": 0.935,
+          "text_ar": "مرحبًا يا رفاق. هوزبي هنا."
+        },
+        {
+          "text": "SO. I WANTED TO APOLOGIZE TO ALL. SoRRY. In THE",
+          "confidence": 0.812,
+          "text_ar": "أردت الاعتذار للجميع. آسف. في الفصل 10ب، استخدمت كلمة \"ذروة\" بدلًا من \"قمة\"."
+        },
+        {
+          "text": "CHAPTER 1OB.I USED THE WORD PEAK INSTEAD OF",
+          "confidence": 0.855,
+          "text_ar": "لأنني لم أكن أعرف الفرق الفعلي بينهما،"
+        },
+        {
+          "text": "PINNACLE BECAUSE I DIDN'T KNOW THE ACTUAL",
+          "confidence": 0.903,
+          "text_ar": "لكن الآن بعد قراءة هذا الفصل، قد تعرفون مدى قوة لين فينغ،"
+        },
+        {
+          "text": "DIFFERENCE BETWEEN THEM, BUT NOW AFTER",
+          "confidence": 0.954,
+          "text_ar": "لذا ربما لم تكن مشكلة كبيرة. لكن مع ذلك، أنا آسف."
+        },
+        {
+          "text": "READING THIS CHAPTER YOU MAY NOW KNOW HOW",
+          "confidence": 0.911,
+          "text_ar": "أيضًا، في الصفحة الأخيرة، كُتب اسم شوان لونغ في النص."
+        },
+        {
+          "text": "STRONG LIN FENG IS SO MAYBE IT MAY NOT BE ∧ BIG",
+          "confidence": 0.885,
+          "text_ar": "لذا، لست متأكدًا عمن يتحدث (ربما شخص آخر؟)."
+        },
+        {
+          "text": "PROBLEM. BUT STILL, SORRY >\"<",
+          "confidence": 0.894,
+          "text_ar": "يا رجل، أنا أرتبك حقًا في هذه الفصول!"
+        },
+        {
+          "text": "ALSO, IN THE LAST PAGE, XUANLONG WAS ALREADY",
+          "confidence": 0.822,
+          "text_ar": "ربما سأحصل على مترجم الآن."
+        },
+        {
+          "text": "WRITTEN IN THE TEXT- 宣龙.SO, I'M NOTSURE WHO'S",
+          "confidence": 0.899,
+          "text_ar": "أتمنى أن تكونوا قد أحببتم ترجمة هذه المرة ولم تغضبوا."
+        },
+        {
+          "text": "HE TALKING ABOUT (MAYBE ANOTHER GUYISUPPOSE?).",
+          "confidence": 0.949,
+          "text_ar": "أراكم في الفصل القادم!"
+        },
+        {
+          "text": "MAN~I REALLY GET CONFUSED IN THESE CHAPTERS!",
+          "confidence": 0.908,
+          "text_ar": "- هوزبي"
+        },
+        {
+          "text": "MAYBE. I'LL GET ∧ TRANSLATOR NOW, AFTER HAVING",
+          "confidence": 0.878,
+          "text_ar": ""
+        },
+        {
+          "text": "PITYONME",
+          "confidence": 0.99,
+          "text_ar": ""
+        },
+        {
+          "text": "HOPE YOU LIKED THIS TIME'S TRANSLATIONS AND DIDN'T GOT ANGRY.",
+          "confidence": 0.954,
+          "text_ar": ""
+        },
+        {
+          "text": "SEE YOU AT THE NEXT CHAPTER!",
+          "confidence": 0.957,
+          "text_ar": ""
+        },
+        {
+          "text": "-HUZBI",
+          "confidence": 0.986,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "ＳＣＡＮＬＡＴＩＯＮＳ",
+          "confidence": 0.964,
+          "text_ar": "سكانليشنز"
+        },
+        {
+          "text": "HUZBI SCANLATIONS IS IN NEED OF ATRANSLATOR! ANYONE INTERESTED PLEASE CONTACT ME ON MY ACCOUNT ON MANGADEX.ORG.",
+          "confidence": 0.934,
+          "text_ar": "فريق هوزبي سكانليشنز بحاجة إلى مترجم! أي شخص مهتم يرجى التواصل معي عبر حسابي على موقع Mangadex.org."
+        }
+      ]
+    }
+  ]
+}

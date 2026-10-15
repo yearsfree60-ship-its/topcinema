@@ -1,0 +1,388 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "167",
+  "manga_title": "My Wife Is From a Thousand Years Ago 167",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "HAS THE WARRIORESS LEARNED A THNG OR TWO ABOUT ACTING COQUETTISHLY?",
+          "confidence": 0.953,
+          "text_ar": "هل تعلمت المحاربة شيئاً أو اثنين عن التودد والدلال؟"
+        },
+        {
+          "text": "IS THIS HER NATURAL TALENT? INCREDIBLE.",
+          "confidence": 0.946,
+          "text_ar": "هل هذه موهبتها الفطرية؟ لا يصدق."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "SHE'S ALREADY SUCH A GOOD FIGHTER, AND IF SHE LEARNS HOW TO ACT COQUETTISHLY...",
+          "confidence": 0.92,
+          "text_ar": "إنها مقاتلة بارعة بالفعل، وإذا تعلمت كيف تتودد وتتدلل..."
+        },
+        {
+          "text": "SHE SEEMS TO BE GETTING MORE SKILLED AT THIS...",
+          "confidence": 0.885,
+          "text_ar": "يبدو أنها تزداد مهارة في هذا الأمر..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "THIS GAME ONLY REQUIRES ME TO SIT AND WAIT FORTHEOPPONENT TO PLAY THEIR HAND. I JUST HAVETO USETHE MOUSE TO PLAY MYCARDS TOO, IT'S NOTHING DIFFICULT.",
+          "confidence": 0.933,
+          "text_ar": "هذه اللعبة تتطلب مني فقط الجلوس وانتظار الخصم ليلعب دوره. عليّ فقط استخدام الفأرة لألعب أوراقي، الأمر ليس صعباً."
+        },
+        {
+          "text": "ARE YOU FREE RIGHT NOW?",
+          "confidence": 0.671,
+          "text_ar": "هل أنت متفرغة الآن؟"
+        },
+        {
+          "text": "yOu DO WANT TO CUD- DLE WHILE IPLAY?",
+          "confidence": 0.624,
+          "text_ar": "ألا ترغبين في العناق بينما ألعب؟"
+        },
+        {
+          "text": "BYEAE",
+          "confidence": 0.351,
+          "text_ar": "وداعاً."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "ANY OTHER_NORMAL GIRL WOULDN'T HAVE GIVEN SUCH A SUGGESTION, YOU SHOULD REQUEST FOR CLDDLES IN A CUTE VOICE.",
+          "confidence": 0.917,
+          "text_ar": "أي فتاة طبيعية أخرى لم تكن لتقدم مثل هذا الاقتراح، يجب عليك طلب العناق بصوت لطيف."
+        },
+        {
+          "text": "IN A CUTE VOICE?",
+          "confidence": 0.894,
+          "text_ar": "بصوت لطيف؟"
+        },
+        {
+          "text": "YES,BEING A WARRIORESS AND A CUTIE AT THE SAME TIME.",
+          "confidence": 0.909,
+          "text_ar": "أجل، أن تكوني محاربة وفتاة لطيفة في الوقت ذاته."
+        },
+        {
+          "text": "HE'S SAYING STUFF THAT I DONTUNDERSTANDAGAIN~",
+          "confidence": 0.898,
+          "text_ar": "إنه يقول أشياء لا أفهمها مجدداً~"
+        },
+        {
+          "text": "EVEN IF I'M FREE,I'LLBE ABLE TOFIND SOMETHING TODO.MAYBE I'LL WATCHA MOVIE.",
+          "confidence": 0.935,
+          "text_ar": "حتى لو كنت متفرغة، سأجد شيئاً لأفعله. ربما سأشاهد فيلماً."
+        },
+        {
+          "text": "Administrator",
+          "confidence": 0.997,
+          "text_ar": "المسؤول"
+        },
+        {
+          "text": "I'LL HAVETOADMT THOUGH, THE TIME SPENT WITH MYLAPTOPSEEMSTO BE LONGERTHANTHE TIME IVE SPENT CUDDLING WITH HER.",
+          "confidence": 0.934,
+          "text_ar": "يجب أن أعترف، يبدو أن الوقت الذي أقضيه مع حاسوبي المحمول أكثر من الوقت الذي أقضيه في معانقتها."
+        },
+        {
+          "text": "I'M ABLE TO USE THE LAPTOP IN ANY POSITION THOUGH.",
+          "confidence": 0.956,
+          "text_ar": "لكنني أستطيع استخدام الحاسوب في أي وضعية."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "COMPUTERS WON'T KEEP ASKINGQUESTIONS, AND THEY WONT CRACK THEIR KNUCKLES, THE COMPUTER IS ALWAYS THERE FOR YOU!",
+          "confidence": 0.946,
+          "text_ar": "الحواسيب لا تطرح أسئلة، ولا تفرقع أصابعها، الحاسوب موجود دائماً من أجلك!"
+        },
+        {
+          "text": "THE PREVIOUS FANMADEMVWASONTHE FRONTPAGEFORADAYAND GOT QUITE POPULAR.I DON'T HAVEANY INSPIRATION FOR THE NEXT ONE THOUGH...",
+          "confidence": 0.918,
+          "text_ar": "الفيديو السابق الذي صنعه المعجبون كان على الصفحة الرئيسية ليوم كامل وحظي بشعبية كبيرة. لكن ليس لدي أي إلهام للفيديو التالي..."
+        },
+        {
+          "text": "THE PREVIOUS MV RELIED ON HAVING THE RELEDONHAVING THE THEME OF THE VIDEO DIFFER FROMTHE MEANINGOFTHE LYRICS, ANDYETTHEY SYNCED PERFECTLY, WHICHCAUSED IT TO GET POPULAR..",
+          "confidence": 0.903,
+          "text_ar": "الفيديو السابق اعتمد على جعل موضوع الفيديو مختلفاً عن معنى الكلمات، ومع ذلك كان متناغماً تماماً، مما جعله يحظى بشعبية.."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "川M（小",
+          "confidence": 0.406,
+          "text_ar": "مياو"
+        },
+        {
+          "text": "山小小小",
+          "confidence": 0.732,
+          "text_ar": "مياو مياو مياو"
+        },
+        {
+          "text": "THERE'S AN AREA BEHIND THE CAT'S NECK, WHERE IF YOU GRAB IT, THEY WON'T BE ABLE TO MOVE.JUST LIKE THE HIGH-LEVEL BOSSES IN MARTIAL ART FILMS, THERE IS ALWAYS A POINTOFFATAL WEAKNESSSOMEWHERE.",
+          "confidence": 0.927,
+          "text_ar": "توجد منطقة خلف رقبة القطة، إذا أمسكتها منها، فلن تتمكن من الحركة. تماماً مثل الزعماء في أفلام الفنون القتالية، هناك دائماً نقطة ضعف قاتلة في مكان ما."
+        },
+        {
+          "text": "BOSS...",
+          "confidence": 0.976,
+          "text_ar": "رئيسي..."
+        },
+        {
+          "text": "JIANG HE..",
+          "confidence": 0.97,
+          "text_ar": "جيانغ هي.."
+        },
+        {
+          "text": "AH? CAA YOUCALLED?",
+          "confidence": 0.276,
+          "text_ar": "آه؟ هل ناديتني؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "IT'S NOTHING MUCH, I JUST SUDDENLY FELT THAT YOU AND WINTER MELON ARE REALLY SIMILAR.",
+          "confidence": 0.837,
+          "text_ar": "لا شيء، شعرت فجأة أنكِ و وينتر ميلون متشابهان جداً."
+        },
+        {
+          "text": "WHEN WINTER MELON FIRST CAME HERE, HIS HAIR STOOD ON DAYS AT END,AND HE HID HIMSELF IN THE CORNER OR UNDER THE BED,",
+          "confidence": 0.923,
+          "text_ar": "عندما جاء وينتر ميلون إلى هنا لأول مرة، كان شعره يقف لأيام، وكان يختبئ في الزاوية أو تحت السرير."
+        },
+        {
+          "text": "I WAS ONLY ABLE TO LURE HIM OUT WITHFOOD BUT ONCE THAT WAS FINISHED,HE WOULD CONTINUE TO HIDE.",
+          "confidence": 0.919,
+          "text_ar": "لم أستطع استدراجه للخروج إلا بالطعام، ولكن بمجرد انتهائه، كان يعود للاختباء."
+        },
+        {
+          "text": "LATER ON,AS HE FELT SAFER,HIS TRUE COLORS STARTED TO SHINE THROUGH AND HE BECAME FAT.HE BECAME MOREAND MORE CLINGY,AND JUST HUNG AROUND ALL DAY AT HOME.",
+          "confidence": 0.921,
+          "text_ar": "لاحقاً، عندما شعر بالأمان، بدأت شخصيته الحقيقية بالظهور وأصبح سميناً. أصبح أكثر تعلقاً بي، وبقي يتسكع في المنزل طوال اليوم."
+        },
+        {
+          "text": "wimm",
+          "confidence": 0.477,
+          "text_ar": "مياو"
+        },
+        {
+          "text": "抱起 Hulmotmno",
+          "confidence": 0.366,
+          "text_ar": "تحمل وينتر ميلون"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "TWO CATS",
+          "confidence": 0.982,
+          "text_ar": "قطتان"
+        },
+        {
+          "text": "I CAN'T BEAT HER, ANDNOWSHEHASLEARNED HOW TO ACTCOQUETTISH AND DUMB.ITWILL BE ALLOVER IFSHE CONTINUES THE TREND AND GETS FAT.",
+          "confidence": 0.934,
+          "text_ar": "لا يمكنني هزيمتها، والآن تعلمت كيف تتودد وتتصرف ببلاهة. ستكون الكارثة إذا استمرت بهذا النهج وأصبحت سمينة."
+        },
+        {
+          "text": "ARGH-",
+          "confidence": 0.997,
+          "text_ar": "آرغ-"
+        },
+        {
+          "text": "WHAT ARE YOU UPTO AGAIN? AND WHY DOIFEEL ANGRY ALLOFA SUDDEN~",
+          "confidence": 0.834,
+          "text_ar": "ما الذي تخططين له مجدداً؟ ولماذا أشعر بالغضب فجأة~"
+        },
+        {
+          "text": "IT'S NOTHING,",
+          "confidence": 0.968,
+          "text_ar": "لا شيء."
+        },
+        {
+          "text": "IT'S JUST THAT ALTHOUGH I HAVE MY GIRLFRIEND BY MY SIDE ALL DAY,I DON'TGET THE CHANCE TO ENJOY THE AC TOGETHER WITH HER...",
+          "confidence": 0.918,
+          "text_ar": "الأمر فقط أنني رغم وجود حبيبتي بجانبي طوال اليوم، لا أحظى بفرصة للاستمتاع بالمكيف معها..."
+        },
+        {
+          "text": "NOW THAT YOU KNOW CHILDREN AREN'T BORN FROM JUST PURELY SLEEP- ING TOGETHER, WHY WON'T YOU TAKE PITY ONME?",
+          "confidence": 0.921,
+          "text_ar": "الآن بعد أن عرفتِ أن الأطفال لا يأتون بمجرد النوم معاً، ألا تشفقين عليّ؟"
+        },
+        {
+          "text": "DON'T YOU KNOWHOWWARM IT IS IN THE SLMMER? THE ELECTRICFAN ONLY BLOWS WARM AIR AT NIGHT...",
+          "confidence": 0.906,
+          "text_ar": "ألا تعلمين كم الجو حار في الصيف؟ المروحة الكهربائية لا تضخ سوى هواء ساخن في الليل..."
+        },
+        {
+          "text": "WE CAN SWITCH BACK THEN.",
+          "confidence": 0.916,
+          "text_ar": "يمكننا التبديل حينها."
+        },
+        {
+          "text": "NEVERMIND, JUST TAKE IT AS IFI DIDN'T SAY A THING.",
+          "confidence": 0.922,
+          "text_ar": "لا يهم، اعتبري أنني لم أقل شيئاً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "YOU'RE JUST TRYING TO MOVE IN TOGETHER AND SLEEP WITH ME!",
+          "confidence": 0.959,
+          "text_ar": "أنت تحاول فقط الانتقال للعيش معي والنوم بجانبي!"
+        },
+        {
+          "text": "I'M NOT, ITREALLY is WARM.",
+          "confidence": 0.722,
+          "text_ar": "لست كذلك، الجو حار حقاً."
+        },
+        {
+          "text": "DON'TTRY USING THAT TRICK ON ME!",
+          "confidence": 0.966,
+          "text_ar": "لا تحاول استخدام تلك الحيلة معي!"
+        },
+        {
+          "text": "COULD HOW I USE SUCH A DUMB METHOD THAT TORTURES MYSELF?! YOU'RE LOOKING DOWN.ON'ME~",
+          "confidence": 0.904,
+          "text_ar": "كيف لي أن أستخدم طريقة غبية تعذبني أنا؟! أنتِ تستهينين بي~"
+        },
+        {
+          "text": "IN THAT CASE IN THAT CASE. I'LL MOVE TO YOUR ROOM, AND THE TWO OF US CAN LSE THE FAN TOGETHER.",
+          "confidence": 0.9,
+          "text_ar": "في هذه الحالة، سأنتقل إلى غرفتك، ويمكننا استخدام المروحة معاً."
+        },
+        {
+          "text": "OKAY!",
+          "confidence": 0.992,
+          "text_ar": "حسناً!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "I'M JUST JOKING, GIRLS. ARE ALL USUALLY AFRAID OF THE HEAT, SO HOWCOULDI LET YOU MOVE IN WITH ME.",
+          "confidence": 0.914,
+          "text_ar": "أنا أمزح فقط، الفتيات عادة ما يخشين الحر، فكيف لي أن أسمح لكِ بالانتقال للعيش معي."
+        },
+        {
+          "text": "HOW DO YOU KNOW THAT GIRLS ARE ALL USLALLY AFRAID OF THE HEAT?",
+          "confidence": 0.925,
+          "text_ar": "كيف عرفت أن الفتيات يخشين الحر عادةً؟"
+        },
+        {
+          "text": "I HAVE NO IDEA HOW TO EXPLAIN THIS TO YOU.",
+          "confidence": 0.912,
+          "text_ar": "ليس لدي أدنى فكرة كيف أشرح لكِ هذا."
+        },
+        {
+          "text": "BECAUSEIAMJUSTADOG",
+          "confidence": 0.975,
+          "text_ar": "لأنني مجرد كلب."
+        },
+        {
+          "text": "PFFT! IT'S THE CURSE OF KNOWLEDGE!",
+          "confidence": 0.932,
+          "text_ar": "بفف! إنها لعنة المعرفة!"
+        },
+        {
+          "text": "YOU'RE ALWAYS MAKING FUNOF ME! PREVIOUSLYWHENYOU TOLD ME ABOUT THANOS, I WENT TO LOOK IT LP, AND FOUND OUTTHAT THANOS FOUGHT WITH IRON MAN,AND IRON MAN EVENTUALLY DIED...",
+          "confidence": 0.906,
+          "text_ar": "أنت دائماً تسخر مني! سابقاً عندما أخبرتني عن ثانوس، ذهبت للبحث عن الأمر، واكتشفت أن ثانوس حارب الرجل الحديدي، وأن الرجل الحديدي مات في النهاية..."
+        },
+        {
+          "text": "IT WASN'T LIKE WHAT YOU SAID!",
+          "confidence": 0.776,
+          "text_ar": "لم يكن الأمر كما قلت!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "COULD IT BE THAT YOU'VE ALWAYS BEEN LOOKING UP EVERYTHING THAT I'VE TOLD YOU...?",
+          "confidence": 0.879,
+          "text_ar": "هل يعقل أنكِ كنتِ تبحثين عن كل ما أخبركِ به...؟"
+        },
+        {
+          "text": "OF COURSE, I SEARCH FOR WHAT I DON'T KNOW.",
+          "confidence": 0.91,
+          "text_ar": "بالطبع، أنا أبحث عما لا أعرفه."
+        },
+        {
+          "text": "I ALSO KNOW THAT YOU'VE BEEN HIDINGLOADS OF OTHER INFORMAT- ION FROMME.",
+          "confidence": 0.922,
+          "text_ar": "أعلم أيضاً أنك كنت تخفي الكثير من المعلومات الأخرى عني."
+        },
+        {
+          "text": "JIANG HE IS THE SAME AS BEFORE, SHE OBVIOUSLYKNOWS ABOUT EVERYTHING,AND YET SHE KEEPS IT A SECRET AND WATCHES ME MAKE A FOOL OF MYSELF.",
+          "confidence": 0.935,
+          "text_ar": "جيانغ هي هي كما كانت من قبل، هي تعلم بكل شيء بوضوح، ومع ذلك تبقي الأمر سراً وتراقبني وأنا أجعل من نفسي أضحوكة."
+        },
+        {
+          "text": "WHAT A DEVILISH GIRL YOU ARE.",
+          "confidence": 0.969,
+          "text_ar": "يا لكِ من فتاة شيطانية."
+        },
+        {
+          "text": "BUT THE CURSE OF KNOWLEDGE CERT- AINLY EXISTS.SIMPLY PUT,PEOPLE CANONLY CONSTRLICT THOUGHTS BASED ON WHAT THEY KNOW,",
+          "confidence": 0.907,
+          "text_ar": "لكن لعنة المعرفة موجودة بالتأكيد. ببساطة، لا يمكن للناس بناء أفكار إلا بناءً على ما يعرفونه."
+        },
+        {
+          "text": "WHEN ONE ENCOUNTERS SOME- THING OUT OF THEIR SCOPE OFKNOWLEDGE. THEY WILL EITHER JUST UNDERSTAND IT,OR THEY NEVER WILL.",
+          "confidence": 0.943,
+          "text_ar": "عندما يواجه المرء شيئاً خارج نطاق معرفته، فإما أن يفهمه، أو لن يفهمه أبداً."
+        },
+        {
+          "text": "THEREFORE, I DIDN'T TRICK YOU.",
+          "confidence": 0.849,
+          "text_ar": "لذلك، لم أخدعك."
+        },
+        {
+          "text": "YOU WOULDN'T BE ABLE TO EVEN IF YOU TRIED.I'M JUST LETTING YOU FEEL LIKE YOU'VE SLICC- EEDED IN TRICK- ING ME.",
+          "confidence": 0.915,
+          "text_ar": "لم تكن لتستطيع حتى لو حاولت. أنا فقط أجعلك تشعر وكأنك نجحت في خداعي."
+        },
+        {
+          "text": "YOU'VE EVEN LEARNED SUCH MYSTICAL TRICKS?!",
+          "confidence": 0.96,
+          "text_ar": "لقد تعلمتِ حتى مثل هذه الحيل الغامضة؟!"
+        },
+        {
+          "text": "HMPH!",
+          "confidence": 0.993,
+          "text_ar": "همف!"
+        }
+      ]
+    }
+  ]
+}

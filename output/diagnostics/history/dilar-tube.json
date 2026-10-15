@@ -1,0 +1,15 @@
+[
+  {
+    "date": "2026-08-17 03:42:51 UTC",
+    "url": "https://dilar.tube/reader/4194/destined-to-love-you/2/Coco",
+    "fetch_mode_recommended": "browser",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": true,
+    "signed_url_params": []
+  }
+]

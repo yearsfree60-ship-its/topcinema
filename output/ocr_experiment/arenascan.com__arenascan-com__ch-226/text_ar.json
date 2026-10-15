@@ -1,0 +1,328 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "226",
+  "manga_title": "My Wife Is From a Thousand Years Ago 226",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "junitius junitius TS PR",
+          "confidence": 0.957,
+          "text_ar": "جونيشيوس: الإعداد والتحرير"
+        },
+        {
+          "text": "junitius junitius CL/RD TL Paragon Scans",
+          "confidence": 0.993,
+          "text_ar": "جونيشيوس: التنقية والترجمة - Paragon Scans"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.998,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "MMHM...",
+          "confidence": 0.698,
+          "text_ar": "ممم..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "I've never seen her sleeping position when she first arrived, I wonder if it was like this.",
+          "confidence": 0.96,
+          "text_ar": "لم أرَ وضعية نومها حين وصلت لأول مرة، أتساءل إن كانت هكذا."
+        },
+        {
+          "text": "Or was she always in an alerted state where she would wake up with a slightest noise?",
+          "confidence": 0.967,
+          "text_ar": "أم أنها كانت دائماً في حالة تأهب، تستيقظ مع أدنى ضجيج؟"
+        },
+        {
+          "text": "Love is never so simple and direct.",
+          "confidence": 0.962,
+          "text_ar": "الحب ليس بسيطاً ومباشراً أبداً."
+        },
+        {
+          "text": "When the feelings become strong to a certain extent, people will naturally become more intimate.",
+          "confidence": 0.937,
+          "text_ar": "عندما تصبح المشاعر قوية إلى حد معين، يصبح الناس بطبيعتهم أكثر قرباً."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "The love at that moment could only be released through the most intimate contact.",
+          "confidence": 0.963,
+          "text_ar": "الحب في تلك اللحظة لا يمكن التعبير عنه إلا من خلال أكثر أشكال التقارب حميمية."
+        },
+        {
+          "text": "No matter what,",
+          "confidence": 0.939,
+          "text_ar": "مهما يكن،"
+        },
+        {
+          "text": "the past is all in the past.",
+          "confidence": 0.957,
+          "text_ar": "الماضي قد ولى."
+        },
+        {
+          "text": "Xu Qing believes that,",
+          "confidence": 0.929,
+          "text_ar": "يؤمن شو تشينغ بأن،"
+        },
+        {
+          "text": "Jiang He will only get better day by day.",
+          "confidence": 0.932,
+          "text_ar": "جيانغ هي ستتحسن يوماً بعد يوم."
+        },
+        {
+          "text": "until she fully adapts to the world a thousand years into the future.",
+          "confidence": 0.963,
+          "text_ar": "حتى تتأقلم تماماً مع عالم بعد ألف عام من زمنها."
+        },
+        {
+          "text": "The good and bad,",
+          "confidence": 0.957,
+          "text_ar": "الخير والشر،"
+        },
+        {
+          "text": "the happy and troubling times,",
+          "confidence": 0.974,
+          "text_ar": "الأوقات السعيدة والمزعجة،"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "will all be experienced slowly.",
+          "confidence": 0.978,
+          "text_ar": "كلها ستختبرها ببطء."
+        },
+        {
+          "text": "Good night, Little He.",
+          "confidence": 0.985,
+          "text_ar": "طابت ليلتكِ، شياو هي."
+        },
+        {
+          "text": "WAR..RIORESS?",
+          "confidence": 0.934,
+          "text_ar": "المحاربة؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "SHE'S..",
+          "confidence": 0.935,
+          "text_ar": "إنها..."
+        },
+        {
+          "text": ".STRAIGHT- ENING OUT HER CLOTHES?",
+          "confidence": 0.907,
+          "text_ar": "تُعدل ملابسها؟"
+        },
+        {
+          "text": "Z 2 Z Z",
+          "confidence": 0.369,
+          "text_ar": "شخخخ..."
+        },
+        {
+          "text": "W Ww",
+          "confidence": 0.468,
+          "text_ar": "هممم..."
+        },
+        {
+          "text": "WHY DID IT FEEL LIKE SOMEONE WAS LOOKING AT ME?",
+          "confidence": 0.929,
+          "text_ar": "لماذا شعرت وكأن أحداً يراقبني؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "IT MUST'VE BEEN MY IM- AGINATION.",
+          "confidence": 0.945,
+          "text_ar": "لا بد أنه مجرد خيال."
+        },
+        {
+          "text": "NOT REALLY!",
+          "confidence": 0.994,
+          "text_ar": "ليس تماماً!"
+        },
+        {
+          "text": "AHHH!WHAT DID IDO LAST NIGHT?!!",
+          "confidence": 0.933,
+          "text_ar": "آه! ماذا فعلت البارحة؟!!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "FORTUNATELY XU QING HASN'T WOKEN UP YET, I GOTTA HURRY UP AND WASH IT..",
+          "confidence": 0.899,
+          "text_ar": "لحسن الحظ شو تشينغ لم يستيقظ بعد، يجب أن أسرع لغسلها..."
+        },
+        {
+          "text": "JUST LEAVE IT THERE, I'LL HELP YOU WASH IT LATER.",
+          "confidence": 0.945,
+          "text_ar": "دعيها هناك، سأساعدكِ في غسلها لاحقاً."
+        },
+        {
+          "text": "THIS IS NORMAL,IT'S OKAY~",
+          "confidence": 0.965,
+          "text_ar": "هذا أمر طبيعي، لا بأس~"
+        },
+        {
+          "text": "I ALSO DREAMED ABOUT CERTAIN THINGS BEFORE,",
+          "confidence": 0.911,
+          "text_ar": "لقد حلمتُ بأشياء معينة من قبل أيضاً،"
+        },
+        {
+          "text": "THEN I SECRETLY GOT UP TO WASH MY CLOTHES IN THE EARLY MORNING, AND EVEN LIED TO YOU THAT I WAS WASHING MY SOCKS.",
+          "confidence": 0.907,
+          "text_ar": "ثم نهضت سراً لأغسل ملابسي في الصباح الباكر، حتى أنني كذبت عليكِ وقلت إنني أغسل جواربي."
+        },
+        {
+          "text": "ISN'T THAT FUNNY? WHO WOULD WASH SOCKS EARLY IN THE MORNING? HAHAHA~",
+          "confidence": 0.942,
+          "text_ar": "أليس هذا مضحكاً؟ من يغسل جواربه في الصباح الباكر؟ هاهاها~"
+        },
+        {
+          "text": "JUST LEAVE IT THERE...",
+          "confidence": 0.93,
+          "text_ar": "دعيها هناك فقط..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "I'LL BEAT YOU TO DEATH!",
+          "confidence": 0.944,
+          "text_ar": "سأضربك حتى الموت!"
+        },
+        {
+          "text": "DON'T! YOU'LL BECOME A WIDOW IF YOU BEAT ME TO DEATH!!",
+          "confidence": 0.953,
+          "text_ar": "لا تفعلي! ستصبحين أرملة إن ضربتني حتى الموت!!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "YOU STILL ASK MEEVERY DAYIFI WANT TOGRAB YOUR LEGS, AND NOW IT'S YOUR TURN?",
+          "confidence": 0.948,
+          "text_ar": "ما زلتِ تسألينني كل يوم إن كنت أريد تدليك ساقيكِ، والآن جاء دوركِ؟"
+        },
+        {
+          "text": "I ALREADY TOLD YOU, THERE'S NO NEED!",
+          "confidence": 0.951,
+          "text_ar": "لقد أخبرتكِ بالفعل، لا داعي لذلك!"
+        },
+        {
+          "text": "THIS GUY IS SO LUSTFUL, ANY OFFER TO HELP FROM HIM IS JUST AN EXCUSE.HOWCOULD I POSSIBLY LIKE THAT STUFF..",
+          "confidence": 0.855,
+          "text_ar": "هذا الرجل شهواني جداً، أي عرض للمساعدة منه ليس إلا ذريعة. كيف يمكنني أن أحب تلك الأشياء..."
+        },
+        {
+          "text": "SHAMELESS! OBSCENE!",
+          "confidence": 0.991,
+          "text_ar": "وقح! منحرف!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "WHY ARE YOU STILL HOLDING IT? I ALREADY TOLD YOU THAT I'LL WASH IT FOR YOU.",
+          "confidence": 0.803,
+          "text_ar": "لماذا لا تزالين تمسكين بها؟ أخبرتكِ بالفعل أنني سأغسلها لكِ."
+        },
+        {
+          "text": "WE'REA COUPLE, THERE'S NO NEED TO ACT LIKE STRANGERS.",
+          "confidence": 0.968,
+          "text_ar": "نحن زوجان، لا داعي للتصرف كالغرباء."
+        },
+        {
+          "text": "HERE!",
+          "confidence": 0.99,
+          "text_ar": "ها هي!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "HUH?NO? YOU? ME?",
+          "confidence": 0.913,
+          "text_ar": "هاه؟ لا؟ أنت؟ أنا؟"
+        },
+        {
+          "text": "IS IT A GOOD SIGN OR A BAD SIGN THAT THIS THING FELL ON MY HEAD?",
+          "confidence": 0.917,
+          "text_ar": "هل سقوط هذا الشيء على رأسي فأل خير أم شر؟"
+        },
+        {
+          "text": "A LTTLE HARD TO SWALLOW...",
+          "confidence": 0.915,
+          "text_ar": "من الصعب استيعاب الأمر قليلاً..."
+        },
+        {
+          "text": "SHOULD I BUY A SOY MILK MACHINE?",
+          "confidence": 0.952,
+          "text_ar": "هل يجب أن أشتري آلة لصنع حليب الصويا؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "ILL ASK XU...",
+          "confidence": 0.863,
+          "text_ar": "سأسأل شو..."
+        },
+        {
+          "text": "ISUDDENLY DON'TFEEL LIKE ASKING ANYMORE.",
+          "confidence": 0.943,
+          "text_ar": "فجأة لم أعد أرغب في السؤال."
+        },
+        {
+          "text": "HMPH! IT'S NOT LIKE I CAN'T FIND ONE MYSELF.",
+          "confidence": 0.954,
+          "text_ar": "همف! ليس الأمر وكأنني لا أستطيع إيجاد واحدة بنفسي."
+        },
+        {
+          "text": "AS A MODERN PERSON, BUYING A SOY MILK MACHINE IS SOMETHING YOU CAN DO BY YOURSELF!",
+          "confidence": 0.959,
+          "text_ar": "بصفتي شخصاً عصرياً، شراء آلة لصنع حليب الصويا هو شيء يمكنني القيام به بنفسي!"
+        }
+      ]
+    }
+  ]
+}

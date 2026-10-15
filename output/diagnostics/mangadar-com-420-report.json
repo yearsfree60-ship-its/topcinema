@@ -1,0 +1,476 @@
+{
+  "url": "https://mangadar.com/manga/tomb-raid-king/100/",
+  "tls_and_server_info": {
+    "server_ip": "104.21.7.7",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "mangadar.com",
+    "tls_not_after": "Oct 20 02:44:58 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "172.215.210.48",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Cheyenne",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a30d11421c0f46cb-DFW",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.09
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "mangadar.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangadar-com-420-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/0bd0321b-4aeb-4656-ab11-982b3411118e",
+        "blob:https://challenges.cloudflare.com/1554b4dc-7fa0-4b03-9eac-9c57c3a3194e",
+        "blob:https://challenges.cloudflare.com/dc6a57bd-26c4-453c-9825-e996136ea50d"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null,
+        "deep_diagnostic": {
+          "cdp_runtime_enable_leak": false,
+          "sourceurl_leak": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          }
+        }
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false,
+      "deep_diagnostic_comparison": {
+        "cdp_runtime_enable_leak_with_stealth": false,
+        "cdp_runtime_enable_leak_without_stealth": false,
+        "leak_present_regardless_of_stealth": false,
+        "sourceurl_leak_with_stealth": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        },
+        "sourceurl_leak_without_stealth": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        }
+      }
+    },
+    "error": null,
+    "deep_diagnostic": {
+      "cdp_runtime_enable_leak": false,
+      "sourceurl_leak": {
+        "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "suspect_patterns_found": []
+      }
+    },
+    "goto_elapsed_sec": 0.14,
+    "navigation_timing": {
+      "ttfb_ms": 23,
+      "dom_content_loaded_ms": 135,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4118
+    },
+    "wait_for_images_elapsed_sec": 1.63,
+    "scroll_elapsed_sec": 2.02,
+    "total_probe_elapsed_sec": 83.63,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a30d114309dcb81a-DFW",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-cxIR7zyKHuRlSpgOhbWUKk' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Tue, 25 Aug 2026 19:40:15 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0KyqmRk9bMo2OR4WgnFlCqus1%2BTEXo7eXbH6sigy2wecubkETs%2FOS14Fo6o291ZonpMYNJCwaE7fo4N%2Fs8jaQYe1rOiOqGEuYJbIwY%2F%2B5EyJrOv7ogeMmU72t224SjY%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a30d114309dcb81a\"",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+      "click_method": "none",
+      "attempt_number": 3
+    },
+    "extended_challenge_probe": {
+      "pure_wait": {
+        "max_wait_sec": 60,
+        "poll_interval_sec": 2,
+        "resolved_during_pure_wait": false,
+        "elapsed_until_resolved_sec": null,
+        "final_category_after_wait": "solvable_challenge"
+      },
+      "click_attempts": [
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 1
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 2
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 3
+        }
+      ],
+      "final_after_reload": {
+        "attempted": true,
+        "category": "solvable_challenge",
+        "resolved": false,
+        "error": null
+      }
+    },
+    "content_images_before_scroll": 1
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "domain_distribution": {
+      "mangadar.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangadar-com-420-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/0b99373e-cb31-4497-ba98-2510b4764cd7",
+        "blob:https://challenges.cloudflare.com/1da4222c-e9a8-475a-9428-5ecba87828ce",
+        "blob:https://challenges.cloudflare.com/9b2c6b0e-bd99-440e-8348-69c552ed8637"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null,
+        "deep_diagnostic": {
+          "cdp_runtime_enable_leak": false,
+          "sourceurl_leak": {
+            "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "suspect_patterns_found": []
+          }
+        }
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false,
+      "deep_diagnostic_comparison": {
+        "cdp_runtime_enable_leak_with_stealth": false,
+        "cdp_runtime_enable_leak_without_stealth": false,
+        "leak_present_regardless_of_stealth": false,
+        "sourceurl_leak_with_stealth": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        },
+        "sourceurl_leak_without_stealth": {
+          "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+          "suspect_patterns_found": []
+        }
+      }
+    },
+    "error": null,
+    "deep_diagnostic": {
+      "cdp_runtime_enable_leak": false,
+      "sourceurl_leak": {
+        "stack": "Error: __probe__\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "suspect_patterns_found": []
+      }
+    },
+    "goto_elapsed_sec": 0.14,
+    "navigation_timing": {
+      "ttfb_ms": 22,
+      "dom_content_loaded_ms": 135,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4106
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 1.82,
+    "total_probe_elapsed_sec": 83.43,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a30d137d8e036806-DFW",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-R2maXbwXAJ2ZXHApE1m7QA' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Tue, 25 Aug 2026 19:41:46 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7lxjhJGI144ZxQYERyHn2EmuJ9sydJ9ui8OP1KfEqRAEVPz2RwVxSQyforBozy7KEffAO5C93vKkWw%2BYWpUUzkC3DSVL2yjZJxwTGN0DJsVxODieLMYruoNLCAVtk1k%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a30d137d8e036806\"",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+      "click_method": "none",
+      "attempt_number": 3
+    },
+    "extended_challenge_probe": {
+      "pure_wait": {
+        "max_wait_sec": 60,
+        "poll_interval_sec": 2,
+        "resolved_during_pure_wait": false,
+        "elapsed_until_resolved_sec": null,
+        "final_category_after_wait": "solvable_challenge"
+      },
+      "click_attempts": [
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 1
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 2
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 3
+        }
+      ],
+      "final_after_reload": {
+        "attempted": true,
+        "category": "solvable_challenge",
+        "resolved": false,
+        "error": null
+      }
+    },
+    "content_images_before_scroll": 1
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://mangadar.com/manga/tomb-raid-king/100/",
+    "requests_sent": 4,
+    "elapsed_sec": 0.47,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "detection_surface_map": {
+    "js_fingerprint_layer": {
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs_with_stealth": false,
+      "image_count_differs_with_stealth": false
+    },
+    "cdp_protocol_layer": {
+      "tested": true,
+      "runtime_enable_leak_with_stealth": false,
+      "runtime_enable_leak_without_stealth": false,
+      "leak_present_regardless_of_stealth": false,
+      "sourceurl_suspect_patterns_with_stealth": [],
+      "sourceurl_suspect_patterns_without_stealth": []
+    },
+    "hotlink_layer": {
+      "referer_only_sufficient": null,
+      "direct_http_success": null
+    },
+    "rate_limit_layer": {
+      "rate_limited_detected": false,
+      "static_block_detected": true
+    }
+  },
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangadar-com-420-report.json",
+    "screenshots": [
+      "diagnostics/mangadar-com-420-screenshot.png",
+      "diagnostics/mangadar-com-420-run2-screenshot.png"
+    ]
+  }
+}

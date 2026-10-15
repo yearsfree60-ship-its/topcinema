@@ -1,0 +1,428 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "237",
+  "manga_title": "My Wife Is From a Thousand Years Ago 237",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "I'M BACK! BOUGHT A PINEAPPLE!",
+          "confidence": 0.934,
+          "text_ar": "عُدت! اشتريتُ أناناسًا!"
+        },
+        {
+          "text": "HOW DID IT GO? DO YoU THINK IT CAN BE DONE?",
+          "confidence": 0.82,
+          "text_ar": "كيف سارت الأمور؟ هل تظنين أن الأمر ممكن؟"
+        },
+        {
+          "text": "NOT BAD, THERE'SA BIG CHANCE!",
+          "confidence": 0.95,
+          "text_ar": "ليس سيئًا، هناك فرصة كبيرة!"
+        },
+        {
+          "text": "DON'T WORRY YET, THIS WON'T BE SOLVED IN A DAY.",
+          "confidence": 0.914,
+          "text_ar": "لا تقلقي بعد، فهذا لن يُحل في يوم وليلة."
+        },
+        {
+          "text": "ANYWAY, IT'S JUST ANYWAY,IT'S JUST A MATTER OF TIME.I HAVE TO THINK CAREFLILLY ABOUT WHAT ELSE I'VE MISSED IN THE PAST FEW DAYS,CHECKFORGAPS AND FILL THEMIN.",
+          "confidence": 0.921,
+          "text_ar": "على أية حال، إنها مجرد مسألة وقت. عليّ التفكير مليًا فيما فاتني خلال الأيام القليلة الماضية، لأتحقق من الثغرات وأسدها."
+        },
+        {
+          "text": "TEA LEAVES IS JUST THE BEG- INNING, ANY ACCID- ENTS MAY HAPPEN IN THE MEANTIME.",
+          "confidence": 0.899,
+          "text_ar": "أوراق الشاي هي البداية فقط، وقد تحدث أي مفاجآت في هذه الأثناء."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "THE KEY IS THE PREPARATION OF BOTH OF US.",
+          "confidence": 0.96,
+          "text_ar": "المفتاح هو استعدادنا نحن الاثنين."
+        },
+        {
+          "text": "WE MUST ABIDE BY THE RULES. VIOLATING THE RULES WILL MAKE IT BACKFIRE. WE WILL NOT DO ANYTHING ILLEGAL OR INDISCIPLINED.",
+          "confidence": 0.939,
+          "text_ar": "يجب أن نلتزم بالقوانين. مخالفتها ستؤدي إلى نتائج عكسية. لن نفعل أي شيء غير قانوني أو متهور."
+        },
+        {
+          "text": "撒盐 SPRINKLE SALT",
+          "confidence": 0.964,
+          "text_ar": "رش الملح"
+        },
+        {
+          "text": "THERE MAY BE QUESTIONSAND OTHER QUESTIONS AFTER THAT, AND DNA INFORMATIONMAY BE TESTED AND THE LIKE. DON'T RESIST.",
+          "confidence": 0.959,
+          "text_ar": "قد تكون هناك أسئلة أخرى لاحقًا، وربما يتم فحص معلومات الحمض النووي وما شابه. لا تقاومي."
+        },
+        {
+          "text": "THESE PROCESSES ARE NECESSARY.AS LONG AS THEY ARE ALL DONE, THERE WILL BASICALLY BE NO PROBLEMS.",
+          "confidence": 0.952,
+          "text_ar": "هذه الإجراءات ضرورية. طالما تم تنفيذها جميعًا، فلن تكون هناك أي مشاكل أساسًا."
+        },
+        {
+          "text": "ATANG DYNASTYPERSON INTEGRATEDINTO MODERN TIMES..",
+          "confidence": 0.928,
+          "text_ar": "شخص من سلالة تانغ يندمج في العصر الحديث.."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "AHH!!",
+          "confidence": 0.994,
+          "text_ar": "آه!!"
+        },
+        {
+          "text": "XU QING!!",
+          "confidence": 0.922,
+          "text_ar": "شو تشينغ!!"
+        },
+        {
+          "text": "HEY! WHAT DID I JUST SAY?!",
+          "confidence": 0.887,
+          "text_ar": "مهلًا! ماذا قلت للتو؟!"
+        },
+        {
+          "text": "FOLLOW THE RULES! DOMESTIC VIOLENCE IS ILLEGAL!",
+          "confidence": 0.929,
+          "text_ar": "التزمي بالقوانين! العنف الأسري غير قانوني!"
+        },
+        {
+          "text": "AFTER YOU GET YOUR ID. YOU HAVE TO LISTEN TO ME AND DON'T RAISE YOUR FIST SAYING YOU'LL HIT ME EVERY DAY.OTHERWISE I WILL REPORT YOU OF COMING FROM THE TANG DYNASTY.",
+          "confidence": 0.909,
+          "text_ar": "بعد حصولك على هويتك، يجب أن تستمعي إليّ وألا ترفعي قبضتك مهددة بضربي كل يوم. وإلا سأبلغ عنكِ بأنكِ قادمة من سلالة تانغ."
+        },
+        {
+          "text": "DO YOU THINK ANYONE WILL BELIEVE YOU?",
+          "confidence": 0.953,
+          "text_ar": "هل تظن أن أحدًا سيصدقك؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.998,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "WHO WOULD BELIEVE THAT SOMEONE CAME FROM THE AN- CIENT TIMES?",
+          "confidence": 0.96,
+          "text_ar": "من سيصدق أن شخصًا ما جاء من العصور القديمة؟"
+        },
+        {
+          "text": "BUT I BE- LIEVED IT.",
+          "confidence": 0.952,
+          "text_ar": "لكنني صدقتُ ذلك."
+        },
+        {
+          "text": "THAT'S TRUE, BUT NO MATTER HOW YOU THINK ABOUT IT, IT SHOULDN'T HAVE COME OUT OF LITTLE JIANG HE'S MOUTH.",
+          "confidence": 0.927,
+          "text_ar": "هذا صحيح، لكن مهما فكرت في الأمر، لم يكن ينبغي أن يصدر هذا الكلام من فم جيانغ هي الصغيرة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "BECALSE YOU'RE STUPID,",
+          "confidence": 0.949,
+          "text_ar": "لأنك غبي."
+        },
+        {
+          "text": "IN FACT,I'VE BEEN A WAN- DERER SINCE YOUNG.",
+          "confidence": 0.937,
+          "text_ar": "في الواقع، كنتُ متجولة منذ صغري."
+        },
+        {
+          "text": "I CAME TO THIS CITY AFTER LEARNING A SET OF THREE EMPEROR CANNON PALM FROM AN OLD SCAVENGER LADY.",
+          "confidence": 0.962,
+          "text_ar": "جئتُ إلى هذه المدينة بعد أن تعلمت مجموعة من \"قبضة الأباطرة الثلاثة\" من عجوز كانت تجمع الخردة."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "PFT~",
+          "confidence": 0.997,
+          "text_ar": "بفف~"
+        },
+        {
+          "text": "Go wash your hands and get ready to eat!",
+          "confidence": 0.949,
+          "text_ar": "اذهبي واغسلي يديكِ واستعدي للأكل!"
+        },
+        {
+          "text": "Unknowingly litle Jiang He took the initiative. Suddenly l understood what she meant when she said she's a modern person a few days ago.",
+          "confidence": 0.925,
+          "text_ar": "بشكل غير متوقع، أخذت جيانغ هي الصغيرة زمام المبادرة. وفجأة فهمتُ ما كانت تقصده عندما قالت إنها شخصية معاصرة قبل بضعة أيام."
+        },
+        {
+          "text": "The evidence she's from ancient times now...",
+          "confidence": 0.894,
+          "text_ar": "الأدلة على أنها من العصور القديمة الآن..."
+        },
+        {
+          "text": "COLAMN t.com ACloud",
+          "confidence": 0.844,
+          "text_ar": "كولا مانهوا - آي كلاود ميرج"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "No. there isn't any more evidence.",
+          "confidence": 0.969,
+          "text_ar": "لا، لم يعد هناك المزيد من الأدلة."
+        },
+        {
+          "text": "When she first came here, she seemed naive, and I thought she just hadn't adapted to modern times.",
+          "confidence": 0.933,
+          "text_ar": "عندما جاءت إلى هنا لأول مرة، بدت ساذجة، وظننتُ أنها لم تتأقلم مع العصر الحديث فحسب."
+        },
+        {
+          "text": "Looking at it now. she may have been pretending on purposeto be able to survive the life of a warrioress, strength alone is not enough.",
+          "confidence": 0.942,
+          "text_ar": "بالنظر إلى الأمر الآن، ربما كانت تتظاهر بذلك عمدًا لتتمكن من النجاة بحياة المحاربة، فالقوة وحدها لا تكفي."
+        },
+        {
+          "text": "YOU'RE SO SMART.",
+          "confidence": 0.943,
+          "text_ar": "أنت ذكي جدًا."
+        },
+        {
+          "text": "HAVEYOU FINALLY ACCEPTED THE FACT THAT YOU'RE THE STUPID ONE?",
+          "confidence": 0.961,
+          "text_ar": "هل تقبلتِ أخيرًا حقيقة أنكِ أنتِ الغبية؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "I JUST SAID YOU'RE SMART AND NOT THAT I'M STUPID.",
+          "confidence": 0.925,
+          "text_ar": "قلتُ للتو إنك ذكي، ولم أقل إنني غبية."
+        },
+        {
+          "text": "STRICTLY SPEAKING,",
+          "confidence": 0.966,
+          "text_ar": "بالمعنى الدقيق للكلمة،"
+        },
+        {
+          "text": "YOU'RE ONLY THIS SMART,",
+          "confidence": 0.972,
+          "text_ar": "أنت ذكي بهذا القدر فقط،"
+        },
+        {
+          "text": "AND I'M THIS SMART.",
+          "confidence": 0.942,
+          "text_ar": "وأنا ذكية بهذا القدر."
+        },
+        {
+          "text": "YEAH, IT'S JUST FOOD.",
+          "confidence": 0.901,
+          "text_ar": "أجل، إنه مجرد طعام."
+        },
+        {
+          "text": "IT'S JUST STUDYING THAT I CAN'T BEAT YOU IN, BUT YOU'VE BEEN STUDYING FOR MORE THANTEN YEARS, AND I HAVE JUST STARTED READING.",
+          "confidence": 0.91,
+          "text_ar": "الدراسة هي الشيء الوحيد الذي لا يمكنني التفوق عليك فيه، لكنك تدرس منذ أكثر من عشر سنوات، بينما بدأتُ أنا القراءة للتو."
+        },
+        {
+          "text": "JUST YOU WAIT! IT WON'T TAKE LONG FOR ME TO SURPASS YOU! I WILL NEVER BE TRICKED BY YOUAGAIN!",
+          "confidence": 0.921,
+          "text_ar": "انتظر فقط! لن يستغرق الأمر وقتًا طويلًا حتى أتجاوزك! ولن أتعرض للخداع من قبلك مرة أخرى!"
+        },
+        {
+          "text": "HAVE I REALLY TRICKED yOu?",
+          "confidence": 0.698,
+          "text_ar": "هل خدعتكِ حقًا؟"
+        },
+        {
+          "text": "You HAVE!",
+          "confidence": 0.584,
+          "text_ar": "لقد فعلت!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "OTHERWISE, HOW COULDI DELIBERATELYLET YOU GET INTO MY ROOM?",
+          "confidence": 0.909,
+          "text_ar": "وإلا، كيف يمكنني أن أسمح لكِ عمدًا بالدخول إلى غرفتي؟"
+        },
+        {
+          "text": "YOU'VE ENTERED MY ROOMSEVERAL TIMES IN THE MIDDLE OF THE NIGHT, HAVEN'T YOU?",
+          "confidence": 0.955,
+          "text_ar": "لقد دخلتِ غرفتي عدة مرات في منتصف الليل، أليس كذلك؟"
+        },
+        {
+          "text": "SHUT UP, EAT YOUR FOOD!",
+          "confidence": 0.918,
+          "text_ar": "اصمت، وتناول طعامك!"
+        },
+        {
+          "text": "IT'S ALMOST 7O'CLOCK,I'M GOING TO PUSH FOR 1700!",
+          "confidence": 0.875,
+          "text_ar": "الساعة تقترب من السابعة، سأضغط لأصل إلى 1700!"
+        },
+        {
+          "text": "THE HABIT OF READING WILL AFFECTOTHERS,SO ME SETTING AN EXAMPLE WILL AFFECT UITTLE JIANG HE.",
+          "confidence": 0.929,
+          "text_ar": "عادة القراءة ستؤثر على الآخرين، لذا فإن كوني قدوة سيؤثر على جيانغ هي الصغيرة."
+        },
+        {
+          "text": "I'LL PRACTICE THE STANCE AT 7:30, I CAN'T FALL BEHIND IN MY MARTIAL ARTS EITHER.",
+          "confidence": 0.956,
+          "text_ar": "سأتدرب على الوقفة في السابعة والنصف، لا يمكنني التأخر في فنون الدفاع عن النفس أيضًا."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "T/N: 23333333 = Hahahaha",
+          "confidence": 0.976,
+          "text_ar": "ملاحظة المترجم: 23333333 = هاهاهاها"
+        },
+        {
+          "text": "IWILL ENDURE.",
+          "confidence": 0.977,
+          "text_ar": "سأتحمل."
+        },
+        {
+          "text": "PFT.",
+          "confidence": 0.995,
+          "text_ar": "بفف."
+        },
+        {
+          "text": "THE TWO OF THEM ALWAYS LOOK VERY NATURAL AND LIVELY WHEN SITTING IN FRONT OF THE CAMERA.",
+          "confidence": 0.943,
+          "text_ar": "يبدو الاثنان دائمًا طبيعيين وحيويين للغاية عند الجلوس أمام الكاميرا."
+        },
+        {
+          "text": "IT'S HALF PAST SEVEN NOW.",
+          "confidence": 0.961,
+          "text_ar": "الساعة الآن السابعة والنصف."
+        },
+        {
+          "text": "NICE STREAM!",
+          "confidence": 0.943,
+          "text_ar": "بث رائع!"
+        },
+        {
+          "text": "PUTTINGDOWNTHEBOOKTOSTARTPRACTICINGMARTI ARTS; I THOUGHT I WAS WATCHING A'MOVIE",
+          "confidence": 0.932,
+          "text_ar": "ترك الكتاب للبدء بممارسة فنون الدفاع عن النفس؛ ظننت أنني أشاهد فيلمًا."
+        },
+        {
+          "text": "S HERE!",
+          "confidence": 0.954,
+          "text_ar": "إنه هنا!"
+        },
+        {
+          "text": "HMPH!A BUNCH OF MORTALS THAT DON'T UNDERSTAND THE STRONG WILLPOWER AND HARDWORKTHAT'SNEEDED TO DEFEAT THE BOSS.",
+          "confidence": 0.954,
+          "text_ar": "همف! مجموعة من البشر العاديين الذين لا يفهمون قوة الإرادة والعمل الجاد المطلوب لهزيمة الزعيم."
+        },
+        {
+          "text": "T/N:666666 =praise",
+          "confidence": 0.998,
+          "text_ar": "ملاحظة المترجم: 666666 = ثناء"
+        },
+        {
+          "text": "THE REASON WHY MORTALS ARE MORTALS IS THAT THEY HAVEN'T YET ENCOUNTEREDANEVIL DRAGONTHATMAKES THEM WARRIORS, BUTI HAVE.",
+          "confidence": 0.94,
+          "text_ar": "السبب في كون البشر بشرًا هو أنهم لم يواجهوا بعد تنينًا شريرًا يجعلهم محاربين، لكنني واجهتُ ذلك."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "IT'S JUST THAT THE EVIL DRAGON HAS TAKENOVER MYCOMPUTER, TAKING THE MOUSE THAT USED TO BE MINE!",
+          "confidence": 0.956,
+          "text_ar": "كل ما في الأمر أن التنين الشرير قد استولى على حاسوبي، وأخذ الفأرة التي كانت ملكي!"
+        },
+        {
+          "text": "END OF STREAM",
+          "confidence": 0.994,
+          "text_ar": "نهاية البث"
+        },
+        {
+          "text": "I'VE FINALLY CLIMBED TO 1700!",
+          "confidence": 0.95,
+          "text_ar": "لقد وصلتُ أخيرًا إلى 1700!"
+        },
+        {
+          "text": "YOU CAN ALREADY BE- COME INDE- PENDENT.",
+          "confidence": 0.895,
+          "text_ar": "يمكنكِ بالفعل الاعتماد على نفسك."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.999,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "LITERAL MEANING.",
+          "confidence": 0.998,
+          "text_ar": "المعنى الحرفي."
+        },
+        {
+          "text": "YOU HAVE GAINED A BASIC UNDERSTANDING OF THE MODERN WORLD, ACQUIRED KNOWLEDGE OF THE MONETARY SYSTEM, DEVELOPED LIFE SKILLS, AND ACCUMULATED SOMÉ SAVINGS TOENSURE A LIVELIHOOD.",
+          "confidence": 0.921,
+          "text_ar": "لقد اكتسبتِ فهمًا أساسيًا للعالم الحديث، وتعلمتِ النظام النقدي، وطورتِ مهارات حياتية، وادخرتِ بعض المال لضمان سبل العيش."
+        },
+        {
+          "text": "YOU'RE ONLY MISSING AN ID, IN OTHER ASPECTS.. COMPARED TO THOSE WHO RUN AWAY FROM HOME,IT'S ALREADY MLCH BETTER.",
+          "confidence": 0.936,
+          "text_ar": "ينقصكِ فقط هوية، وفي الجوانب الأخرى.. مقارنة بمن يهربون من المنزل، الوضع أفضل بكثير."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "THAT MEANS I DON'T NEED YOU ANYMORE!",
+          "confidence": 0.97,
+          "text_ar": "هذا يعني أنني لم أعد بحاجة إليك!"
+        },
+        {
+          "text": "HMM...",
+          "confidence": 0.897,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "EVEN THOUGH THAT SOUNDS WEIRD, IT'S A FACT. HOWEVER, ONLYPARTOFIT IS TRUE.",
+          "confidence": 0.851,
+          "text_ar": "على الرغم من أن هذا يبدو غريبًا، إلا أنها حقيقة. ومع ذلك، جزء منها فقط هو الصحيح."
+        },
+        {
+          "text": "You'll still You'lstill need me.",
+          "confidence": 0.943,
+          "text_ar": "ستظلين بحاجة إليّ."
+        }
+      ]
+    }
+  ]
+}

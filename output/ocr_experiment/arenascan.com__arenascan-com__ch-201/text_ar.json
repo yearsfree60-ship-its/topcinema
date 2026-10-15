@@ -1,0 +1,323 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "201",
+  "manga_title": "My Wife Is From a Thousand Years Ago 201",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "IT'S A PITY THAT I CAN'T WIN AGAINST HER..",
+          "confidence": 0.94,
+          "text_ar": "من المؤسف أنني لا أستطيع الفوز عليها..."
+        },
+        {
+          "text": "WERE YOU ALREADY AWAKE?",
+          "confidence": 0.97,
+          "text_ar": "هل كنتِ مستيقظة بالفعل؟"
+        },
+        {
+          "text": "NOPE, I JUST WOKE UP.",
+          "confidence": 0.876,
+          "text_ar": "لا، لقد استيقظت للتو."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "I DON'T BELIEVE You.",
+          "confidence": 0.707,
+          "text_ar": "لا أصدقك."
+        },
+        {
+          "text": "I SUSPECT THAT SHE'S TRYING TO ENTRAP ME AGAIN...",
+          "confidence": 0.922,
+          "text_ar": "أظن أنها تحاول استدراجي مجددًا..."
+        },
+        {
+          "text": "WHETHER YOU BELIEVE IT OR NOT, IT'S UP TO YOU.",
+          "confidence": 0.942,
+          "text_ar": "سواء صدقت أم لا، فالأمر يعود إليك."
+        },
+        {
+          "text": "YOU CAN JUST CHANGE HERE YOU KNOW, I WON'T PEEK.",
+          "confidence": 0.896,
+          "text_ar": "يمكنك تبديل ملابسك هنا، فأنا لن أنظر."
+        },
+        {
+          "text": "WHATARE YOU DoING THEN?",
+          "confidence": 0.746,
+          "text_ar": "ما الذي تفعله إذًا؟"
+        },
+        {
+          "text": "I'M CLOSING MY EYES NOW!",
+          "confidence": 0.964,
+          "text_ar": "سأغمض عيني الآن!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "WHY AREN'T YOU CHANGING YET?",
+          "confidence": 0.968,
+          "text_ar": "لماذا لم تبدلي ملابسك بعد؟"
+        },
+        {
+          "text": "IF WE DON'T TRUST EACH OTHER IN TIMES LIKE THESE, THIS RELATIONSHIP WILL BE HARD TO LAST--",
+          "confidence": 0.908,
+          "text_ar": "إذا لم نثق ببعضنا في أوقات كهذه، فستكون علاقتنا صعبة الاستمرار..."
+        },
+        {
+          "text": "I'LL HIT YOU IF YOU DARE TO PEEK!",
+          "confidence": 0.907,
+          "text_ar": "سأضربك إن تجرأت على النظر!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "SHE WOULD USUALLY HEAD TO THE STORAGE ROOMJUSTTOCHANGE HER CLOTHES. ID SAY THAT THIS IS A BIG IMPROVEMENT,",
+          "confidence": 0.932,
+          "text_ar": "كانت تذهب عادةً إلى غرفة التخزين لتبديل ملابسها. أقول إن هذا تحسن كبير."
+        },
+        {
+          "text": "SINCE WE HAVEN'T BEEN SLEEPING TOGETHER THANKS TO MYCOLD, I GUESS ABSENCEREALLYMAKES THE HEART GROW FONDER.",
+          "confidence": 0.93,
+          "text_ar": "بما أننا لم نكن ننام معًا بسبب إصابتي بالزكام، أعتقد أن الغياب يغذي العاطفة حقًا."
+        },
+        {
+          "text": "ARE WHAT WE ARE NOW CONSIDERED ABNORMAL?",
+          "confidence": 0.979,
+          "text_ar": "هل ما نحن عليه الآن يعتبر غير طبيعي؟"
+        },
+        {
+          "text": "IN WHICH ASPECT ARE YOU REFER- RING TO? THOUGHITHINKWEWERENEVER NORMAL TOBEGINWITH 扭捏",
+          "confidence": 0.94,
+          "text_ar": "بأي جانب تقصد؟ مع أنني أعتقد أننا لم نكن طبيعيين منذ البداية."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": ".US SLEEPING TOGETHER.",
+          "confidence": 0.911,
+          "text_ar": "نومنا معًا."
+        },
+        {
+          "text": "IT'S NORMAL TO SLEEP TOGETHER, WHAT'S ABNORMAL'IS THATYOU'RE STILL WARY OF ME AFTER ALREADY SLEEPING TOGETHER.",
+          "confidence": 0.925,
+          "text_ar": "من الطبيعي أن ننام معًا، غير الطبيعي هو أنكِ لا تزالين حذرة مني رغم أننا نمنا معًا بالفعل."
+        },
+        {
+          "text": "HOW WOULD MODERN PEOPLE BE LIKE THEN?",
+          "confidence": 0.952,
+          "text_ar": "كيف يكون الناس في العصر الحديث إذًا؟"
+        },
+        {
+          "text": "HMM...MODERN PEOPLE...PROBABLY WOULDN'T HAVE ANY RESERVATIONS ABOUT ANYTHING ANYMORE,",
+          "confidence": 0.917,
+          "text_ar": "همم... الناس في العصر الحديث... ربما لن يكون لديهم أي تحفظات بشأن أي شيء بعد الآن."
+        },
+        {
+          "text": "GURGLE... BE RUNNING AROUND THE HOUSE BUTT NAKED...",
+          "confidence": 0.941,
+          "text_ar": "قرقرة... ربما يركضون في أرجاء المنزل عراة تمامًا..."
+        },
+        {
+          "text": "THERE'S NOTHING WRONG WITH STICKING TO THE OLD BELIEFS FROM THE KAIYUAN ERA,AND IT'S HARD TO FIND SOMEONE WHO IS LIKE THAT THESE DAYS.",
+          "confidence": 0.926,
+          "text_ar": "لا عيب في التمسك بالمعتقدات القديمة من حقبة كايوان، ومن الصعب العثور على شخص كهذا هذه الأيام."
+        },
+        {
+          "text": "I'M JUST TEASING HERFROMTIMETO TIME, BUT IT HAS BACKFIRED.. MAYGODFORGIVEME",
+          "confidence": 0.907,
+          "text_ar": "أنا فقط أضايقها من حين لآخر، لكن الأمر انقلب ضدي... ليغفر لي الرب."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "NO, IT'S STILL BETTERTO GET HER USED TO IT EARLY!",
+          "confidence": 0.952,
+          "text_ar": "لا، لا يزال من الأفضل أن أجعلها تعتاد على ذلك مبكرًا!"
+        },
+        {
+          "text": "I PROMISED PINGPING TO GO FISHING WITH HER,",
+          "confidence": 0.97,
+          "text_ar": "لقد وعدت بينغ بينغ بالذهاب للصيد معها."
+        },
+        {
+          "text": "IS THERE ANYTHING YOU WANT ME TO GET ON THE WAY?",
+          "confidence": 0.951,
+          "text_ar": "هل هناك أي شيء تريدين مني إحضاره في الطريق؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "NOPE, I'LL BE HEADING OUT IN A BIT TOO.",
+          "confidence": 0.936,
+          "text_ar": "لا، سأخرج بعد قليل أيضًا."
+        },
+        {
+          "text": "THAT'S RIGHT, DO YOU WANT TO COME FIND ME AT MY PARENTS'HOUSE AT NOON? I MIGHT BE HAVING MY LUNCH THERE.",
+          "confidence": 0.918,
+          "text_ar": "هذا صحيح، هل تودين مقابلتي في منزل والديّ عند الظهيرة؟ قد أتناول الغداء هناك."
+        },
+        {
+          "text": "IN THAT CASE, I'LL GO FISHING WITHPINGPINGIN THE AFTERNOON INSTEAD OF IN THE MORNING.",
+          "confidence": 0.906,
+          "text_ar": "في هذه الحالة، سأذهب للصيد مع بينغ بينغ بعد الظهر بدلًا من الصباح."
+        },
+        {
+          "text": "IT'S OKAY, YOU CAN GO, THEY YOU CAN GO,THEY MIGHTNOT EVEN WANTME AROUND FOR LUNCH.",
+          "confidence": 0.905,
+          "text_ar": "لا بأس، يمكنك الذهاب، فقد لا يرغبون حتى بوجودي هناك لتناول الغداء."
+        },
+        {
+          "text": "OH, I JUST SAW JIANG HE AND HER FRIEND HEADING OUT WITH THEIR FISHING RODS,WHY DIDN'T YOU JOIN THEM?",
+          "confidence": 0.91,
+          "text_ar": "أوه، لقد رأيت جيانغ هي وصديقتها تخرجان بصنارات الصيد، لماذا لم تنضم إليهما؟"
+        },
+        {
+          "text": "IT'S BECALISE I'M TOO GOOD AT FISHING,AND THEY FEEL ASHAMED WHEN I'MAROLND.",
+          "confidence": 0.929,
+          "text_ar": "لأنني بارع جدًا في الصيد، ويشعرون بالحرج عندما أكون موجودًا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "KEEP BRAGGING, I SEE THEM WITH BUCKETS FULL OF FISH ALL THE TIME.",
+          "confidence": 0.94,
+          "text_ar": "استمر في التباهي، فأنا أراهم دائمًا بدلاء مليئة بالسمك."
+        },
+        {
+          "text": "DAD_ WHERE'S MOM?",
+          "confidence": 0.916,
+          "text_ar": "أبي، أين أمي؟"
+        },
+        {
+          "text": "SHE WENT TO PLAY MAHJONG.",
+          "confidence": 0.932,
+          "text_ar": "ذهبت للعب الماهجونغ."
+        },
+        {
+          "text": "THIS EARLY IN THE MORNING, DOESN'T SHE USL- ALLY PLAY IN THE AFTERNOONS?",
+          "confidence": 0.894,
+          "text_ar": "في هذا الوقت المبكر من الصباح؟ ألا تلعب عادةً في فترة بعد الظهر؟"
+        },
+        {
+          "text": "THIS POMELO IS GOOD!DIDYOUR WORKPLACE GIVE YOU THIS?",
+          "confidence": 0.944,
+          "text_ar": "هذه البوملي لذيذة! هل أعطاك إياها مكان عملك؟"
+        },
+        {
+          "text": "THERE ARE A FEW MORE IN THEKITCHEN, IF YOU LIKE IT, YOU CAN TAKE A COUPLE HOME FOR JIANG HE AND YOU TO EAT.",
+          "confidence": 0.896,
+          "text_ar": "هناك المزيد في المطبخ، إذا أعجبتك، يمكنك أخذ اثنتين للمنزل لتأكلاها أنت وجيانغ هي."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "THIS RASCAL IS PROBABLY HERE FOR SOMETHING WELL, COIN- CIDENTALLY, I HAVE SOMETHING FOR HIM TOO.",
+          "confidence": 0.942,
+          "text_ar": "هذا المشاكس هنا لسبب ما، وبالمصادفة، لدي شيء له أيضًا."
+        },
+        {
+          "text": "JUST SAY IT, WHAT DO YOUWANT THIS TIME?",
+          "confidence": 0.936,
+          "text_ar": "قلها مباشرة، ماذا تريد هذه المرة؟"
+        },
+        {
+          "text": "DON'T WORRY, I'M NOT HERE TO ASK FOR THE HOUSE.",
+          "confidence": 0.921,
+          "text_ar": "لا تقلق، لست هنا لأطلب المنزل."
+        },
+        {
+          "text": "I WOULDN'T HANDIT TO YOU EVEN IF YOU WANTED IT, GIVE IT UP.",
+          "confidence": 0.895,
+          "text_ar": "حتى لو أردته فلن أسلمه لك، تخلَّ عن الفكرة."
+        },
+        {
+          "text": "WHAT, COULD IT BE THAT YOU'RE FINALLY ENLIGHTENED AND ARE HERE TOASKME TO FIND A PROPER JOB FOR YOU?",
+          "confidence": 0.95,
+          "text_ar": "ماذا؟ هل يعقل أنك استنرت أخيرًا وجئت لتطلب مني إيجاد وظيفة مناسبة لك؟"
+        },
+        {
+          "text": "CAN'T I JUST PURELY COME HERE TO HANG OUT?",
+          "confidence": 0.927,
+          "text_ar": "ألا يمكنني المجيء إلى هنا لمجرد قضاء الوقت؟"
+        },
+        {
+          "text": "WHY DON'T WE TALK ABOUT THAT TIME WHEN I BRAVELY SAVED...",
+          "confidence": 0.92,
+          "text_ar": "لماذا لا نتحدث عن ذلك الوقت الذي أنقذت فيه بشجاعة..."
+        },
+        {
+          "text": "I'M LEAVING.",
+          "confidence": 0.975,
+          "text_ar": "أنا مغادر."
+        },
+        {
+          "text": "I JUST WANTED TO ASK, DID YOU APPROACHAUNTIE CHENG TO ASK ABOUT JIANG HE?",
+          "confidence": 0.941,
+          "text_ar": "أردت فقط أن أسأل، هل تواصلت مع الخالة تشنغ لتسأل عن جيانغ هي؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "WHO APPROACHED HER?",
+          "confidence": 0.992,
+          "text_ar": "من تواصل معها؟"
+        },
+        {
+          "text": "ARE YOU SAYING THAT AUNTIE CHENG IS LYING?",
+          "confidence": 0.93,
+          "text_ar": "هل تقول إن الخالة تشنغ تكذب؟"
+        },
+        {
+          "text": "…I WAS JUST PARKING MY CAR PAKKINC 77 CAK OVER THERE AND WE WERE JUST CHIT-CHAT- TING, AND THE CON- VERSATION DRIFTED TOWARDS THAT.",
+          "confidence": 0.757,
+          "text_ar": "...كنت أركن سيارتي هناك وكنا نتبادل أطراف الحديث، وانحرف الحوار نحو ذلك الموضوع."
+        },
+        {
+          "text": "YEAH YEAH, JUST PASSING BY AND CHIT- CHATTING.",
+          "confidence": 0.945,
+          "text_ar": "أجل أجل، مجرد مرور عابر ودردشة."
+        },
+        {
+          "text": "SO,ARE YOU ABLE TO HELP RESOLVE IT?",
+          "confidence": 0.944,
+          "text_ar": "إذًا، هل يمكنك المساعدة في حل الأمر؟"
+        },
+        {
+          "text": "WHAT DOES IT HAVE TO DO WITH ME?",
+          "confidence": 0.959,
+          "text_ar": "وما علاقة ذلك بي؟"
+        }
+      ]
+    }
+  ]
+}

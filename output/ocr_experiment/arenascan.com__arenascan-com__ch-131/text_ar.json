@@ -1,0 +1,483 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "131",
+  "manga_title": "My Wife Is From a Thousand Years Ago 131",
+  "translation_model": "gemini-3.1-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "junitius  Nyanism njunitius junitius RP CL/RD TS TL",
+          "confidence": 0.813,
+          "text_ar": "فريق العمل: جونيشيوس، نيانيزم، آر بي، سي إل/آر دي، تي إس، تي إل"
+        },
+        {
+          "text": "Paragon Scans",
+          "confidence": 0.993,
+          "text_ar": "باراغون سكانز"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.978,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "GOOD MORNING AUNTIE.",
+          "confidence": 0.973,
+          "text_ar": "صباح الخير يا خالة."
+        },
+        {
+          "text": "DECIDED TO STILL CALL HER AUNTIE IN THE END",
+          "confidence": 0.94,
+          "text_ar": "قررت في النهاية أن أستمر بمناداتها بـ \"خالة\"."
+        },
+        {
+          "text": "YOU'RE HERE, TAKE A SEAT.",
+          "confidence": 0.929,
+          "text_ar": "لقد وصلتِ، تفضلي بالجلوس."
+        },
+        {
+          "text": "MOM, WHERE'S DAD?",
+          "confidence": 0.921,
+          "text_ar": "أمي، أين أبي؟"
+        },
+        {
+          "text": "YET ANOTHER BURIAL SITE REQUIRES HIS HELP IN RESEARCHAND EMERGENCY PRESERVATION, SO HE'S OUT TRAVELING FOR WORK.HE WON'T BE HOME FOR THE NEXT COUPLE OF DAYS.",
+          "confidence": 0.937,
+          "text_ar": "هناك موقع أثري آخر يحتاج لمساعدته في البحث والحفظ الطارئ، لذا فهو مسافر من أجل العمل. لن يعود للمنزل خلال اليومين القادمين."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "SIGH, HE'S NOT HERE...",
+          "confidence": 0.917,
+          "text_ar": "تباً، إنه ليس هنا..."
+        },
+        {
+          "text": "I WANTED JIANG HE TO CALL HIM DAD TO OBSERVE HIS REACTION, THOUGH IN THE END JIANG HE WASN'T ABLE TO DO IT, AND HE ISN'T AT HOME.",
+          "confidence": 0.943,
+          "text_ar": "أردت من جيانغ هي أن تناديه بـ \"أبي\" لأراقب ردة فعله، لكنها لم تستطع فعل ذلك في النهاية، وهو ليس موجوداً في المنزل أصلاً."
+        },
+        {
+          "text": "MY PHONE IS OUT OF BATTERY AGAIN...",
+          "confidence": 0.914,
+          "text_ar": "هاتفي نفدت بطاريته مجدداً..."
+        },
+        {
+          "text": "WHY AREN'T PHONES DESIGNED WITH A REMOVABLE BATTERY?",
+          "confidence": 0.963,
+          "text_ar": "لماذا لا تُصمَّم الهواتف ببطاريات قابلة للإزالة؟"
+        },
+        {
+          "text": "JUST LIKE A FLASHLIGHT, WHERE YOU CAN USE IT AFTER THE STUFFING BATTERY IN.",
+          "confidence": 0.928,
+          "text_ar": "تماما مثل المصباح اليدوي، حيث يمكنك استخدامه فور وضع البطاريات فيه."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "sentences": [
+        {
+          "text": "于火中，不认发品##电机，免 置手过过、性 生产日期：2012年11月 SN8AK121117302 (TAOOU Us3rV 200p 健子充电电池 型号：T2W9721 电权电42V 行标准G8/T8287-2000 北京天中通货设备股份机限公司 北京市州区中天村局园 电一体党产业地嘉创二路1号",
+          "confidence": 0.432,
+          "text_ar": "بطارية ليثيوم قابلة للشحن، الطراز: T2W9721، شركة بكين تيان تشونغ المحدودة للمعدات."
+        },
+        {
+          "text": "ACTLALLY, PHONES USED TO COME WITH RE- MOVABLEBATTERIES BEFORE IT WAS CHAN- GED TO THEIR CLR- RENT STATE.",
+          "confidence": 0.886,
+          "text_ar": "في الواقع، كانت الهواتف تأتي ببطاريات قابلة للإزالة قبل أن يتغير الوضع إلى ما هو عليه الآن."
+        },
+        {
+          "text": "YOU CAN USE YOUR PHONE TO SEARCH FOR THE REASON IF YOU WANT TOKNOW WANT TO KNOW WHY.",
+          "confidence": 0.8,
+          "text_ar": "يمكنك استخدام هاتفك للبحث عن السبب إن أردتِ معرفة لماذا."
+        },
+        {
+          "text": "SHE'LL LEARN HOW TO DISCOVER AND SOLVE PROBLEMS BY HERSELF EVENTUALLY, ANDSHECAN'T MAKEITAHABITTOASKME ABOUT IT ALLTHE TIME.",
+          "confidence": 0.93,
+          "text_ar": "ستتعلم في النهاية كيف تكتشف الحلول للمشكلات بنفسها، ولا يمكنها أن تعتاد على سؤالي عن كل شيء طوال الوقت."
+        },
+        {
+          "text": "'DON'T YOU KNOW HOW TO GOOGLE?\" WORDS LIKE THOSE ARE ESPECIALLY HURTFUL, BUT IF SHE GETS USED TO RECEIVING HANDOUTS, IT WOULD DO NO GOOD FOR HER PERSONAL DEVELOPMENT.",
+          "confidence": 0.921,
+          "text_ar": "\"ألا تعرفين كيف تبحثين في غوغل؟\" كلمات كهذه جارحة جداً، لكن إن اعتادت على الحصول على الإجابات جاهزة، فلن يكون ذلك مفيداً لتطورها الشخصي."
+        },
+        {
+          "text": "快快看",
+          "confidence": 0.989,
+          "text_ar": "انظري بسرعة"
+        },
+        {
+          "text": "I'LL LEND YOU MY PHONE.",
+          "confidence": 0.62,
+          "text_ar": "سأعيرك هاتفي."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "sentences": [
+        {
+          "text": "YOU CAN SEARCH FOR IT FIRST, I'LL BE IN THE STUDY LOOK- ING AT SOME BOOKS.",
+          "confidence": 0.844,
+          "text_ar": "يمكنك البحث عن الأمر أولاً، سأذهب إلى غرفة الدراسة لأطالع بعض الكتب."
+        },
+        {
+          "text": "AND THE THING I SHOULD DO NOW IS TO LET HER GO.",
+          "confidence": 0.949,
+          "text_ar": "وما يجب علي فعله الآن هو أن أتركها تعتمد على نفسها."
+        },
+        {
+          "text": "WHAT SHOULD I READ TO PASS THE TIME...",
+          "confidence": 0.908,
+          "text_ar": "ما الذي يجب أن أقرأه لتمضية الوقت..."
+        },
+        {
+          "text": "WAIT,",
+          "confidence": 0.969,
+          "text_ar": "انتظري،"
+        },
+        {
+          "text": "The History of Empress Wu Zetian",
+          "confidence": 0.99,
+          "text_ar": "تاريخ الإمبراطورة وو زتيان"
+        },
+        {
+          "text": "ISN'T THIS!?",
+          "confidence": 0.944,
+          "text_ar": "أليس هذا...؟"
+        },
+        {
+          "text": "T/N: Wu Zetian was the only female empress of China and is widely considered as one of the greater rulers in Chinese history.",
+          "confidence": 0.959,
+          "text_ar": "ملاحظة المترجم: وو زتيان كانت الإمبراطورة الوحيدة في تاريخ الصين، وتُعتبر على نطاق واسع واحدة من أعظم الحكام في التاريخ الصيني."
+        },
+        {
+          "text": "IT'S TIME TO EAT!",
+          "confidence": 0.948,
+          "text_ar": "حان وقت الطعام!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "sentences": [
+        {
+          "text": "COMING~!",
+          "confidence": 0.992,
+          "text_ar": "قادم~!"
+        },
+        {
+          "text": "HERE'S YOUR PHONE BACK.",
+          "confidence": 0.911,
+          "text_ar": "ها هو هاتفك، استعدته."
+        },
+        {
+          "text": "WOAH, SHE EVEN CHANGED MY WALLPAPER, THAT WAS QUICK!",
+          "confidence": 0.964,
+          "text_ar": "يا للهول، لقد غيرت خلفية الشاشة أيضاً، كانت سريعة جداً!"
+        },
+        {
+          "text": "WHAT SHENANIGANS WERE YOU UP TO IN THE STUDY JUST NOW?",
+          "confidence": 0.803,
+          "text_ar": "ما الذي كنتِ تفعلينه في غرفة الدراسة قبل قليل؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "sentences": [
+        {
+          "text": "WHAT DO YOU MEAN BY SHENANIGANS? I WAS DOING RESEARCH ON HISTORY AND TRYING TO UNDERSTAND THE HERITAGE OFOUR PEOPLE.",
+          "confidence": 0.919,
+          "text_ar": "ماذا تقصد بـ \"ما الذي كنتِ تفعلينه\"؟ كنت أبحث في التاريخ وأحاول فهم تراث شعبنا."
+        },
+        {
+          "text": "快！快看",
+          "confidence": 0.928,
+          "text_ar": "بسرعة! انظري"
+        },
+        {
+          "text": "YOu, OFALL PEOPLE?",
+          "confidence": 0.641,
+          "text_ar": "أنتِ، من بين كل الناس؟"
+        },
+        {
+          "text": "WHAT DO YOU MEAN BY THAT, LOVING ANTIQUES RUNS IN THE BLOOD OF THE MIGHTY XU FAMILY!",
+          "confidence": 0.9,
+          "text_ar": "ماذا تقصد بذلك؟ حب التحف يجري في دماء عائلة شو العريقة!"
+        },
+        {
+          "text": "LOOK AT XU XIAN, WHOLIKED A THOUSAND YEAR OLD SPIRIT; MY DAD, WHO LIKES THOUSAND YEAR OLD BURIAL SITES; AND ME...HEHE.",
+          "confidence": 0.932,
+          "text_ar": "انظر إلى شو شيان، الذي أحب روحاً عمرها ألف عام؛ وأبي، الذي يحب المواقع الأثرية التي تعود لألف عام؛ وأنا... هيهي."
+        },
+        {
+          "text": "T/N: Xu Xian is a main character in the Legend of the White Snake, where he falls in love with a white snake spirit.",
+          "confidence": 0.97,
+          "text_ar": "ملاحظة المترجم: شو شيان شخصية رئيسية في أسطورة الأفعى البيضاء، حيث يقع في حب روح أفعى بيضاء."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "sentences": [
+        {
+          "text": "THIS GUY IS DOING IT AGAIN!",
+          "confidence": 0.972,
+          "text_ar": "هذا الرجل يفعلها مجدداً!"
+        },
+        {
+          "text": "*pinch*",
+          "confidence": 0.991,
+          "text_ar": "*قرصة*"
+        },
+        {
+          "text": "STOP SPOUTING NONSENSE ALL DAY LONG OR YOU'LL LEAD JIANG HE ASTRAY.",
+          "confidence": 0.913,
+          "text_ar": "توقف عن قول الهراء طوال اليوم وإلا ستضلل جيانغ هي."
+        },
+        {
+          "text": "JIANG HE, THE WEATHER HAS BEEN WARM RECENTLY, YOU SHOULD EAT MOREBITTER GOURD FOR ITS COOLINGPROPERTIES.YOU SHOLLD EAT IT MORE OFTEN ATHOME ASWELLAND CUT DOWN ON THE OILY FOODS.",
+          "confidence": 0.921,
+          "text_ar": "جيانغ هي، الجو دافئ مؤخراً، يجب أن تأكلي المزيد من القرع المر لخصائصه المبردة. يجب أن تأكلي المزيد منه في المنزل أيضاً وأن تقللي من الأطعمة المقلية."
+        },
+        {
+          "text": "快租快看",
+          "confidence": 0.887,
+          "text_ar": "انظري بسرعة"
+        },
+        {
+          "text": "YOU SHOULD SOAK THEM IN SALTED WATER BEFORE STIR FRYING THEM, AND IT WILL BE LESS BITTER...",
+          "confidence": 0.906,
+          "text_ar": "يجب أن تنقعيه في ماء مملح قبل قليه، سيصبح أقل مرارة..."
+        },
+        {
+          "text": "AREN'T YOU SUPPOSED TO EAT BITTER GOURDS FOR ITS BIT- TERNESS?",
+          "confidence": 0.935,
+          "text_ar": "أليس من المفترض أن يؤكل القرع المر لمراراته؟"
+        },
+        {
+          "text": "AIYA...",
+          "confidence": 0.935,
+          "text_ar": "آي يا..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "sentences": [
+        {
+          "text": "SHE'S RIGHT, IF YOU DON'T WANT THE BITTERNESS, YOU SHOULD JUST BLY AND COOK CUCLMBERS INSTEAD.",
+          "confidence": 0.886,
+          "text_ar": "معها حق، إن كنت لا تحب المرارة، فمن الأفضل أن تشتري وتطبخ الخيار بدلاً منه."
+        },
+        {
+          "text": "MOM,SHE KNOWS HOW TO COOK MORE DISHES THANYOU DO NOW. SHE CONSTANTLY RESEARCHES ONHOWTO COOK TASTY DISHES FOR ME AND EVEN LEARNS THEM REALLY FAST.",
+          "confidence": 0.908,
+          "text_ar": "أمي، هي تعرف كيف تطبخ أطباقاً أكثر مما تعرفين الآن. إنها تبحث باستمرار عن كيفية طهي أطباق لذيذة لي وتتعلمها بسرعة كبيرة."
+        },
+        {
+          "text": "WHAT CAN YOU EVEN DO? EAT YOUR FOOD!",
+          "confidence": 0.881,
+          "text_ar": "وما الذي تجيد فعله أنت؟ تناول طعامك فحسب!"
+        },
+        {
+          "text": "I UNDERSTAND IT NOW, THIS RASCAL ONLY BRINGS HIS GIRLFRIENDHOMETOSHOW HER OFF EVERYTIME, AND I'MTHE ONE HE'S SHOWING OFF TO WHEN HIS DAD IS NOT AROUND.",
+          "confidence": 0.938,
+          "text_ar": "فهمت الأمر الآن، هذا المشاغب لا يحضر حبيبته للمنزل إلا ليستعرض بها، وأنا الشخص الذي يستعرض أمامها عندما لا يكون والده موجوداً."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "sentences": [
+        {
+          "text": "DON'T MESS UP YOUR DAD'S STUDY, OR HE WILL FLIP OUT AT YOU WHEN HE'S BACK.",
+          "confidence": 0.907,
+          "text_ar": "لا تعبثي في غرفة دراسة والدك، وإلا سيثور غضباً عليكِ عندما يعود."
+        },
+        {
+          "text": "I WON'T I WON'T, I'LL PUIT THE BOOKS BACKWHEN I'M DONE WITH THEM. I DON'T HAVE THE HABIT OF LEAVING THEM AROLND.",
+          "confidence": 0.909,
+          "text_ar": "لن أفعل، لن أفعل، سأعيد الكتب لمكانها عندما أنتهي منها. ليس لدي عادة ترك الأشياء مبعثرة."
+        },
+        {
+          "text": "I DIDN'T EXPECT DAD TO HAVE DONE RESEARCH ON THIS, CONSIDERING HOW REFINED HE IS.",
+          "confidence": 0.953,
+          "text_ar": "لم أتوقع أن والدي قد بحث في هذا الأمر، بالنظر إلى مدى رقيه."
+        },
+        {
+          "text": "T/N: Wu Zetian was a prom- iscuous figure, with acts such as marrying her stepson.",
+          "confidence": 0.978,
+          "text_ar": "ملاحظة المترجم: كانت وو زتيان شخصية مثيرة للجدل، حيث قامت بأفعال مثل الزواج من ابن زوجها."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "sentences": [
+        {
+          "text": "ALL ARE THESE BOOKS OVER HERE ON HISTORY?",
+          "confidence": 0.958,
+          "text_ar": "هل كل هذه الكتب هنا عن التاريخ؟"
+        },
+        {
+          "text": "快卧！ 快",
+          "confidence": 0.681,
+          "text_ar": "انظري بسرعة!"
+        },
+        {
+          "text": "YUP, FEEL FREE TO READ ANY OF THEM IF yOU WANT.",
+          "confidence": 0.744,
+          "text_ar": "أجل، لا تترددي في قراءة أي منها إن أردتِ."
+        },
+        {
+          "text": "Book of Tang",
+          "confidence": 0.995,
+          "text_ar": "كتاب تانغ"
+        },
+        {
+          "text": "YOU MUST REMEMBER TO PUT IT BACK AFTER YOU'RE DONE WITH iT THOUGH, OR MY DAD WON'T BE ABLE TO FIND IT WHEN HE WANTS TO READ IT.",
+          "confidence": 0.907,
+          "text_ar": "يجب أن تتذكري إعادته لمكانه بعد الانتهاء منه، وإلا فلن يتمكن والدي من العثور عليه عندما يرغب في قراءته."
+        },
+        {
+          "text": "THIS FEELS WEIRD,",
+          "confidence": 0.987,
+          "text_ar": "هذا شعور غريب،"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "sentences": [
+        {
+          "text": "武则天野史",
+          "confidence": 0.974,
+          "text_ar": "تاريخ وو زتيان غير الرسمي"
+        },
+        {
+          "text": "Apho Mitheruc",
+          "confidence": 0.564,
+          "text_ar": "أسرار القصر"
+        },
+        {
+          "text": "I'M LEARNING ALL THERE IS ABOUT THE MODERNWORLD, WHILE HE'S DOINGTHE SAME ABOUTANCIENT HISTORY.",
+          "confidence": 0.951,
+          "text_ar": "أنا أتعلم كل ما يمكن تعلمه عن العالم الحديث، بينما هو يفعل الشيء نفسه عن التاريخ القديم."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "sentences": [
+        {
+          "text": "OH MY,THOSE TWO ARE STICKING SO CLOSE TO EACHOTHER!",
+          "confidence": 0.914,
+          "text_ar": "يا إلهي، هذان الاثنان يلتصقان ببعضهما بشدة!"
+        },
+        {
+          "text": "I SHOULD STOP LOOKING, IT'S TOO SPICY FOR MY EYES.",
+          "confidence": 0.914,
+          "text_ar": "يجب أن أتوقف عن النظر، هذا المشهد لا يُحتمل."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "sentences": [
+        {
+          "text": "W 武则天 快看 快租！",
+          "confidence": 0.175,
+          "text_ar": "وو زتيان، انظري بسرعة!"
+        },
+        {
+          "text": "W-WHYARE YOU READING STUFF LIKE THIS?",
+          "confidence": 0.919,
+          "text_ar": "لـ-لماذا تقرأين أشياء كهذه؟"
+        },
+        {
+          "text": "THIS IS SERIOUS HISTORICAL RESEARCH, PLEASE DO NOT LOOK AT IT WITH PREJUDICE.",
+          "confidence": 0.921,
+          "text_ar": "هذا بحث تاريخي جاد، أرجوكِ لا تنظري إليه بتحيز."
+        },
+        {
+          "text": "DO YOU THINK THAT I'LL BELIEVE YOUR NONSENSE?",
+          "confidence": 0.936,
+          "text_ar": "هل تظن أنني سأصدق هراءك؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "sentences": [
+        {
+          "text": "I WAS HAPPY BECAUSE I THOUGHT THAT HE WAS SERIOUSLY LEARNING ABOUT HISTORY, BUT IT TURNS OUT HE WAS READING ABOUT STUFF LIKE THIS!",
+          "confidence": 0.94,
+          "text_ar": "كنت سعيدة لأنني ظننت أنه يدرس التاريخ بجدية، لكن تبين أنه كان يقرأ عن أشياء كهذه!"
+        },
+        {
+          "text": "HOW IS IT NONSENSE?",
+          "confidence": 0.915,
+          "text_ar": "كيف يكون هذا هراءً؟"
+        },
+        {
+          "text": "DO YOU KNOW WHAT A BOY TOY IS?",
+          "confidence": 0.89,
+          "text_ar": "هل تعرفين ما هو \"لعبة الصبي\"؟"
+        },
+        {
+          "text": "IT'S.IT'S.",
+          "confidence": 0.703,
+          "text_ar": "إنه.. إنه.."
+        },
+        {
+          "text": "ICEBOUND",
+          "confidence": 0.973,
+          "text_ar": "متجمد"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "sentences": [
+        {
+          "text": "HOW CAN I TALK ABOUT SUCH INDECENT THINGS?!",
+          "confidence": 0.962,
+          "text_ar": "كيف يمكنني التحدث عن مثل هذه الأمور غير اللائقة؟!"
+        },
+        {
+          "text": "DENG TUZI!",
+          "confidence": 0.983,
+          "text_ar": "يا وقح!"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "sentences": [
+        {
+          "text": "I hope you enjoyed today's chapter. Thank you for reading and see you next time.",
+          "confidence": 0.963,
+          "text_ar": "آمل أن تكونوا قد استمتعتم بفصل اليوم. شكراً للقراءة ونراكم في المرة القادمة."
+        },
+        {
+          "text": "To catch the next chapter at the earliest time possible, join our discord at discord.gg/pErHvcxdrx to be alerted when it's scanlated.",
+          "confidence": 0.947,
+          "text_ar": "للحصول على الفصل القادم في أقرب وقت ممكن، انضموا إلى ديسكورد الخاص بنا عبر الرابط discord.gg/pErHvcxdrx ليتم تنبيهكم عند صدور الترجمة."
+        }
+      ]
+    }
+  ]
+}
