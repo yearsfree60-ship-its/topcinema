@@ -15,7 +15,8 @@ DELETE_PAYLOAD (متغيّر بيئة، JSON):
 
 أوامر فرعية:
   compute-targets
-    يفحص القرص فعليًا (OUTPUT_DIR) ويطبع، سطرًا سطرًا، كل مسار نسبي لـ
+    يفحص القرص فعليًا (OUTPUT_DIR) — أو قائمة ملفات الفهرس INDEX_FILE_LIST إن وُجدت
+    (راجع أدناه) — ويطبع، سطرًا سطرًا، كل مسار نسبي لـ
     OUTPUT_DIR يجب حذفه فعليًا (مجلدات فصول + مجلدات ocr_experiment + ملفات
     glossary). يُستدعى مرة واحدة فقط في بداية التشغيلة — النتيجة ثابتة لبقية
     محاولات الدفع (حتى لو أُعيدت المحاولة بعد فشل push).
@@ -62,7 +63,49 @@ DELETE_PAYLOAD (متغيّر بيئة، JSON):
 import json
 import os
 import sys
+from collections import defaultdict
 from pathlib import Path
+
+# [تسريع الحذف — partial clone + sparse-checkout] workflow الحذف لم يعد يُنزِّل كل صور الفرع
+# على القرص (17GB+): تُكتَب فقط manifest.json وruns/. لذلك سؤال "هل هذا المجلد/الملف
+# موجود؟" لم يعد ممكنًا بفحص القرص. لو عُيِّن INDEX_FILE_LIST (ملف مفصول بـNUL بمخرجات
+# "git ls-files -z -- output/" من worktree الفرع — الفهرس يحوي كل الملفات حتى غير المكتوبة
+# على القرص، ويعكس فورًا أي git rm سابق) تُجاب كل أسئلة الوجود منه؛ ولو لم يُعيَّن يُرجَع
+# لفحص القرص كما كان سابقًا (سلوك متوافق خلفيًا). INDEX_PATH_PREFIX بادئة مسارات الفهرس
+# قبل OUTPUT_DIR (الافتراضي "output/").
+class _TreeView:
+    def __init__(self, output_dir: Path):
+        self.output_dir = output_dir
+        lst = os.environ.get("INDEX_FILE_LIST", "").strip()
+        self.use_index = bool(lst)
+        self.files: set = set()
+        self.dirs: set = set()
+        self.children = defaultdict(set)
+        if not self.use_index:
+            return
+        prefix = os.environ.get("INDEX_PATH_PREFIX", "output/")
+        raw = Path(lst).read_bytes().decode("utf-8", "surrogateescape")
+        for p in raw.split("\0"):
+            if not p or not p.startswith(prefix):
+                continue
+            rel = p[len(prefix):]
+            self.files.add(rel)
+            parts = rel.split("/")
+            for i in range(1, len(parts)):
+                self.dirs.add("/".join(parts[:i]))
+                self.children["/".join(parts[:i - 1])].add(parts[i - 1])
+
+    def is_dir(self, rel: str) -> bool:
+        return (rel in self.dirs) if self.use_index else (self.output_dir / rel).is_dir()
+
+    def is_file(self, rel: str) -> bool:
+        return (rel in self.files) if self.use_index else (self.output_dir / rel).is_file()
+
+    def child_dirs(self, rel: str) -> list:
+        if self.use_index:
+            return sorted(n for n in self.children.get(rel, ()) if (rel + "/" + n) in self.dirs)
+        d = self.output_dir / rel
+        return sorted(c.name for c in d.iterdir() if c.is_dir()) if d.is_dir() else []
 
 
 def _load_payload() -> dict:
@@ -113,24 +156,21 @@ def cmd_compute_targets() -> None:
     output_dir = Path(os.environ["OUTPUT_DIR"])
     payload = _load_payload()
     targets: list[str] = []
+    view = _TreeView(output_dir)
 
     for manga_id in payload["full_manga"]:
         # المانهوا كاملة: مجلد صورها + كل مجلدات ocr_experiment المطابقة لها
         # (تُكتشَف بمسح القرص فعليًا، لا بالاعتماد على manifest.json — يضمن
         # هذا تنظيف أي مجلد OCR يتيم لأي سبب لم يعد بmanifest.json) + glossary.
-        manga_dir = output_dir / manga_id
-        if manga_dir.is_dir():
+        if view.is_dir(manga_id):
             targets.append(manga_id)
 
-        ocr_dir = output_dir / "ocr_experiment"
         prefix = f"{manga_id}__ch-"
-        if ocr_dir.is_dir():
-            for child in sorted(ocr_dir.iterdir()):
-                if child.is_dir() and child.name.startswith(prefix):
-                    targets.append(f"ocr_experiment/{child.name}")
+        for name in view.child_dirs("ocr_experiment"):
+            if name.startswith(prefix):
+                targets.append(f"ocr_experiment/{name}")
 
-        glossary_path = output_dir / "ocr_experiment" / "glossary" / f"{manga_id}.json"
-        if glossary_path.is_file():
+        if view.is_file(f"ocr_experiment/glossary/{manga_id}.json"):
             targets.append(f"ocr_experiment/glossary/{manga_id}.json")
 
     full_manga_set = set(payload["full_manga"])
@@ -166,8 +206,10 @@ def cmd_scrub_run_manifests(output_dir_arg: str) -> None:
     if not runs_dir.is_dir():
         return
 
+    view = _TreeView(output_dir)
+
     def chapter_exists_on_disk(manga_id: str, num: str) -> bool:
-        return (output_dir / manga_id / f"ch-{num}").is_dir()
+        return view.is_dir(f"{manga_id}/ch-{num}")
 
     for run_file in sorted(runs_dir.glob("run-*.json")):
         try:
