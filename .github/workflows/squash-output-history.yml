@@ -1,0 +1,109 @@
+name: ⚠️ حذف نهائي — ضغط تاريخ فرع output إلى commit واحد (لا رجعة فيه)
+
+# [تحذير — غير قابل للاسترداد] يستبدل تاريخ فرع output كله بـ commit واحد جذري يحمل نفس
+# محتوى آخر نسخة بالضبط (نفس الـtree فلا يتغير أي ملف ولا رابط raw ولا manifest.json).
+# كل الـcommits القديمة (ومعها كل ما حُذف سابقًا من فصول وصور) تصبح غير مرتبطة بأي فرع،
+# ولا نسخة احتياطية عمدًا (النسخة الاحتياطية تُبقي الحجم نفسه).
+#
+# لا يُنزِّل أي ملف: الـtree موجود أصلًا على الخادم، فيُنشأ commit جديد يشير إليه محليًا
+# (git commit-tree) ويُدفَع وحده بـ force-with-lease مرتبطًا بآخر tip قرأه هذا التشغيل
+# (لو تغيّر الفرع أثناء ذلك يفشل الدفع بدل أن يطمس عمل تشغيلة أخرى).
+#
+# المساحة لا تُحرَّر فور الدفع: GitHub لا تحذف الكائنات غير المرتبطة إلا بالتنظيف الدوري
+# (GC). وSHA القديم قد يبقى مفتوحًا بالمتصفح (cached views) وبأي pull request يشير إليه
+# حتى يطلب صاحب المستودع من GitHub Support إزالتها.
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "للتنفيذ الفعلي اكتب بالضبط: امسح التاريخ نهائيا"
+        required: false
+        type: string
+      dry_run:
+        description: "تجربة بلا دفع (true) أو تنفيذ فعلي لا رجعة فيه (false)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: manifest-write-output
+  cancel-in-progress: false
+
+jobs:
+  squash:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      DRY_RUN: ${{ inputs.dry_run }}
+      CONFIRM: ${{ inputs.confirm }}
+      RUN_ID: ${{ github.run_id }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: التحقق من التأكيد ومن عدم وجود تشغيلات أخرى نشطة
+        run: |
+          set -e
+          if [ "$DRY_RUN" != "true" ] && [ "$CONFIRM" != "امسح التاريخ نهائيا" ]; then
+            echo "❌ التنفيذ الفعلي يتطلب كتابة: امسح التاريخ نهائيا (بالضبط) في حقل confirm"
+            exit 1
+          fi
+          # أي ضغط/حذف/استعادة أثناء إعادة كتابة التاريخ قد يفشل دفعه أو يضيع عمله
+          active=$(gh run list --repo "$GITHUB_REPOSITORY" --limit 100 --json databaseId,status \
+            --jq "[.[] | select((.status==\"in_progress\" or .status==\"queued\" or .status==\"waiting\" or .status==\"pending\") and .databaseId != $RUN_ID)] | length")
+          if [ "$active" != "0" ]; then
+            echo "❌ يوجد $active تشغيل(ات) أخرى نشطة بالمستودع — انتظر انتهاءها ثم أعد المحاولة"
+            exit 1
+          fi
+          echo "✅ لا تشغيلات أخرى نشطة"
+
+      - name: ضغط التاريخ
+        run: |
+          set -e
+          git config user.name "manhwa-bot"
+          git config user.email "bot@users.noreply.github.com"
+
+          git fetch --depth=1 --filter=blob:none origin "+refs/heads/output:refs/remotes/origin/output" --quiet
+          old_tip=$(git rev-parse origin/output)
+          tree=$(git rev-parse "origin/output^{tree}")
+          size_before=$(gh api "repos/$GITHUB_REPOSITORY" --jq .size)
+          new=$(git commit-tree "$tree" -m "لقطة واحدة من حالة الفرع الحالية — تاريخ مضغوط نهائيًا (run $RUN_ID)")
+
+          {
+            if [ "$DRY_RUN" = "true" ]; then echo "## تجربة — لم يُدفَع شيء"; else echo "## نتيجة ضغط تاريخ output"; fi
+            echo ""
+            echo "- tip القديم: \`$old_tip\`"
+            echo "- tree (يبقى كما هو): \`$tree\`"
+            echo "- commit الجديد الوحيد: \`$new\`"
+            echo "- حجم المستودع وفق GitHub قبل التنفيذ: **${size_before} KB**"
+            echo ""
+            echo "### مراجع المستودع الحالية (أي مرجع غير main/output قد يُبقي التاريخ القديم حيًّا)"
+            git ls-remote origin | awk '{print "- `" $2 "` → `" substr($1,1,10) "`"}'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "تجربة فقط — لا دفع"
+            exit 0
+          fi
+
+          git push --force-with-lease="refs/heads/output:${old_tip}" origin "${new}:refs/heads/output"
+
+          remote_tip=$(git ls-remote origin refs/heads/output | cut -f1)
+          if [ "$remote_tip" != "$new" ]; then
+            echo "❌ tip البعيد لا يطابق commit الجديد"
+            exit 1
+          fi
+          git fetch --depth=1 --filter=blob:none origin "+refs/heads/output:refs/remotes/origin/output" --quiet
+          if [ "$(git rev-parse 'origin/output^{tree}')" != "$tree" ]; then
+            echo "❌ محتوى الفرع تغيّر بعد الدفع — تحقّق فورًا"
+            exit 1
+          fi
+          {
+            echo ""
+            echo "✅ تم: فرع output أصبح commit واحدًا بنفس المحتوى تمامًا."
+            echo ""
+            echo "**لتحرير المساحة فعليًا:** GitHub تحذف التاريخ القديم لاحقًا بتنظيفها الدوري، وحجم المستودع قد لا ينقص فورًا. لإزالة SHA القديمة من cached views وpull requests فورًا تواصل مع GitHub Support واطلب تنظيف المستودع (garbage collection) بعد force-push."
+          } | tee -a "$GITHUB_STEP_SUMMARY"
