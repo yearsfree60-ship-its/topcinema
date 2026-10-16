@@ -632,7 +632,8 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
             if res["images"] and download_images and SB_HTTP_DOWNLOAD \
                     and _probe_http_download(res["images"], res["cookies"], res["user_agent"], page_url,
                                           no_referer=no_referer):
-                print(f"  🚀 [SB] التنزيل خارج المتصفح (curl_cffi) — المتصفح حرّ للفصل التالي ({len(res['images'])} صورة)")
+                print(f"  🚀 [SB] التنزيل خارج المتصفح (curl_cffi) — المتصفح حرّ للفصل التالي ({len(res['images'])} صورة)"
+                      f" | فتح+حل+انتظار {_t1-_t0:.1f}ث | جمع الروابط {_t2-_t1:.1f}ث")
                 res["image_bytes"], res["image_errors"] = {}, {}
             elif res["images"] and download_images:
                 try:
