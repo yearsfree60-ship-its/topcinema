@@ -125,7 +125,7 @@ def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list
     fast1 = _fast_reading_urls(sb, base_url)
     if fast1:
         _sb_eval(sb, "(() => { window.scrollTo(0, document.documentElement.scrollHeight); return 1; })()")
-        time.sleep(0.5)
+        time.sleep(0.2)
         if _fast_reading_urls(sb, base_url) == fast1:
             print(f"  ⚡ [SB] مسار سريع: {len(fast1)} صورة بلا تمرير")
             return fast1, []
@@ -348,13 +348,18 @@ def _probe_http_download(urls: list[str], cookies: list, ua: str | None, referer
                 d = (c.get("domain") or "").lstrip(".").lower()
                 if c.get("name") and (not d or host == d or host.endswith("." + d)):
                     pairs.append(f"{c['name']}={c['value']}")
-            if not pairs:
+            # [تسريع — comix.to] CDN الصور نطاق مختلف عن نطاق الصفحة فلا كوكيز تطابقه أصلًا، وهو يقبل
+            # الطلب بلا Referer وبلا كوكيز (تقرير image_cdn_probe) ← كان الفحص يفشل هنا دومًا فيُنزَّل
+            # بالمتصفح (~9ث). الآن بوضع no_referer يُسمح بلا كوكيز؛ فشل الفحص الفعلي يرجع للمتصفح كالسابق.
+            if not pairs and not no_referer:
                 return False
-            hdrs = {"User-Agent": ua or "", "Cookie": "; ".join(pairs),
+            hdrs = {"User-Agent": ua or "",
                     "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"}
+            if pairs:
+                hdrs["Cookie"] = "; ".join(pairs)
             if not no_referer:      # comix.to: أي Referer ← 403 (تُحذَف الترويسة كليًا)
                 hdrs["Referer"] = referer
-            r = cr.get(u, headers=hdrs, timeout=20, impersonate="chrome")
+            r = cr.get(u, headers=hdrs, timeout=12, impersonate="chrome")
             if not r.ok or not (r.headers.get("content-type", "").startswith("image/")) or len(r.content) < 500:
                 return False
         except Exception:
@@ -371,10 +376,26 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str,
     errs: dict[str, str] = {}
     page_host = urlparse(page_url).netloc
     cur_host = page_host            # الأصل الذي تقف عليه الصفحة الآن
+    uniq = list(dict.fromkeys(image_urls))
     try:
-        got.update(_in_page_fetch_many(sb, list(dict.fromkeys(image_urls)), no_referer=no_referer))
+        got.update(_in_page_fetch_many(sb, uniq, no_referer=no_referer))
     except Exception:
         pass                        # أي خلل بالتوازي ← يكمل المسار المتسلسل أدناه كما كان
+    # [تسريع] فشل التوازي كليًا لصور من نطاق مختلف (CORS) ← ننتقل مرة واحدة لنطاق الصور ونعيد التوازي
+    # بنفس الأصل، بدل مسار متسلسل ينتقل ويستنزف ثانية انتظار لكل صورة.
+    missing = [u for u in uniq if u not in got]
+    if missing and urlparse(missing[0]).netloc != cur_host:
+        try:
+            try:
+                sb.cdp.get(missing[0])
+            except Exception:
+                sb.activate_cdp_mode(missing[0])
+            cur_host = urlparse(missing[0]).netloc
+            time.sleep(0.3)
+            same = [u for u in missing if urlparse(u).netloc == cur_host]
+            got.update(_in_page_fetch_many(sb, same, no_referer=no_referer))
+        except Exception:
+            pass
     for u in image_urls:
         if u in got:
             continue
@@ -391,7 +412,7 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str,
                         sb.activate_cdp_mode(u)
                     except Exception:
                         pass
-                time.sleep(1.0)
+                time.sleep(0.4)
                 cur_host = host
                 data, err2 = _in_page_fetch(sb, u, no_referer=no_referer)
                 err = err2 or err
@@ -475,7 +496,7 @@ def _wait_reading_images(sb, timeout: float = 25.0, absent_grace: float | None =
             absent_since = None
         if now >= deadline:
             return 0, diag
-        time.sleep(0.3)
+        time.sleep(0.15)
 
 
 def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
@@ -501,9 +522,9 @@ def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
                 pass
             next_solve = now + 8.0
         try:
-            sb.sleep(0.7)
+            sb.sleep(0.25)
         except Exception:
-            time.sleep(0.7)
+            time.sleep(0.25)
 
 
 def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
