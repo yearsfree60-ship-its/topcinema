@@ -1312,10 +1312,10 @@ except Exception:
     _cffi_requests = None
 
 
-def _http_get_image(img_url: str, headers: dict):
-    """نداء GET واحد: للنطاقات ذات جلسة تحدٍّ (cf_clearance) نستخدم curl_cffi بانتحال Chrome
-    إن توفّر (cf_clearance قد يُربَط ببصمة TLS لا بالـUA وحده)، وإلا requests العادي."""
-    if headers.get("Cookie") and _cffi_requests is not None:
+def _http_get_image(img_url: str, headers: dict, force_cffi: bool = False):
+    """نداء GET واحد: للنطاقات ذات جلسة تحدٍّ (cf_clearance) أو بروفايل no_referer نستخدم curl_cffi
+    بانتحال Chrome إن توفّر (بصمة TLS لا الـUA وحده)، وإلا requests العادي."""
+    if (headers.get("Cookie") or force_cffi) and _cffi_requests is not None:
         try:
             return _cffi_requests.get(img_url, headers=headers, timeout=20, impersonate="chrome")
         except Exception:
@@ -1357,14 +1357,14 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str,
             headers = {"User-Agent": UA, **_sb_headers_for(img_url)}
             if not no_referer:
                 headers["Referer"] = referer
-            if headers.get("Cookie"):
-                # ترويسات متصفح حقيقي لطلب صورة (تُضاف فقط لنطاقات التحدّي)
+            if headers.get("Cookie") or no_referer:
+                # ترويسات متصفح حقيقي لطلب صورة (تُضاف لنطاقات التحدّي وبروفايلات no_referer)
                 headers.setdefault("Accept", "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8")
                 headers.setdefault("Accept-Language", "en-US,en;q=0.9")
                 headers.setdefault("Sec-Fetch-Dest", "image")
                 headers.setdefault("Sec-Fetch-Mode", "no-cors")
                 headers.setdefault("Sec-Fetch-Site", "cross-site" if no_referer else "same-site")
-            resp = _http_get_image(img_url, headers)
+            resp = _http_get_image(img_url, headers, force_cffi=no_referer)
             ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
                 if resp.content and len(resp.content) >= 500:
