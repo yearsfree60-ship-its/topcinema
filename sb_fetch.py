@@ -61,6 +61,14 @@ _DOM_IMAGES_JS = """(() => {
 
 _SCROLL_STEP_JS = "(() => { window.scrollBy(0, Math.round(window.innerHeight * 0.85)); return JSON.stringify([window.scrollY + window.innerHeight, document.documentElement.scrollHeight]); })()"
 
+# [إضافة — comix.to] حاويات القراءة الفعلية عبر القوالب المختلفة: Madara/WP-Manga القديمة
+# (.reading-content/.read-container/#readerarea/.chapter-content) وcomix.to (Tailwind: class
+# "rpage-main" على الحاوية و"rpage-page__img" على كل <img> — راجع تقرير comix-to-9398، dom_images_report).
+# نقطة توسعة واحدة بدل تكرار القائمة بأربعة مواضع — موقع جديد مستقبلًا = سطر واحد هنا.
+READING_CONTAINER_MARKERS = ("reading-content", "read-container", "readerarea", "chapter-content", "rpage-main")
+_READING_IMG_SEL = ", ".join(f"#{m} img" if m == "readerarea" else f".{m} img" for m in READING_CONTAINER_MARKERS)
+_READING_RC_SEL = ", ".join(f"#{m}" if m == "readerarea" else f".{m}" for m in READING_CONTAINER_MARKERS)
+
 
 def _sb_eval(sb, js: str):
     for call in (lambda: sb.cdp.evaluate(js), lambda: sb.execute_script("return " + js)):
@@ -73,8 +81,8 @@ def _sb_eval(sb, js: str):
     return None
 
 
-_FAST_READING_JS = """(() => {
-  const sel = '.reading-content img, .read-container img, #readerarea img, .chapter-content img';
+_FAST_READING_JS = ("""(() => {
+  const sel = '""" + _READING_IMG_SEL + """';
   const out = [];
   document.querySelectorAll(sel).forEach(e => {
     const src = e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
@@ -84,7 +92,7 @@ _FAST_READING_JS = """(() => {
     out.push({src: src.trim(), ctx: ctx.toLowerCase().slice(0, 200)});
   });
   return JSON.stringify(out);
-})()"""
+})()""")
 
 
 def _fast_reading_urls(sb, base_url: str) -> list[str] | None:
@@ -150,7 +158,7 @@ def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list
     infos = _dom_infos(sb)
     # قوالب Madara/WP-Manga (مثل starzmanga): صور الفصل داخل .reading-content حصرًا — تُفضَّل
     # بلا اعتماد على الحجم وحده (قد تكون الصورة شريطًا طويلًا جدًا أو كسولة التحميل).
-    reading = [i for i in infos if "reading-content" in (i.get("ctx") or "")
+    reading = [i for i in infos if any(m in (i.get("ctx") or "") for m in READING_CONTAINER_MARKERS)
                and i.get("src") and not i["src"].startswith("data:")]
     if reading:
         infos_for_pick = reading
@@ -203,9 +211,17 @@ def _cookies_dict(sb) -> list:
 # صور starzmanga تُخدَّم من نطاق فرعي (smanhwa.starzmanga.com) يرفض طلبات خارج المتصفح (403 HTML)
 # حتى مع إعادة الكوكيز؛ التنزيل من داخل Chrome الذي اجتاز التحدّي يحمل بصمة TLS والكوكيز والـReferer كما هي.
 
-_FETCH_IMG_JS = """(() => {
+# [إضافة — comix.to] خادم صور comix.to (lov.*.site) يرفض 403 أي طلب يحمل Referer (راجع تقرير comix-to-9398 →
+# bypass_lab.image_cdn_probe: no_referer نجاح، referer_only/referer_cookies_ua فشل 403). fetch() داخل المتصفح
+# يرسل Referer تلقائيًا؛ no_referer=True يضيف referrerPolicy:'no-referrer'. الافتراضي False = سلوك starzmanga كما هو.
+def _fetch_opts(no_referer: bool) -> str:
+    return "credentials: 'include', cache: 'no-store'" + (", referrerPolicy: 'no-referrer'" if no_referer else "")
+
+
+def _fetch_img_js(url: str, no_referer: bool = False) -> str:
+    return """(() => {
   window.__sbr = null;
-  fetch(%s, {credentials: 'include', cache: 'no-store'})
+  fetch(%s, {%s})
     .then(r => { if (!r.ok) throw new Error('status=' + r.status);
                  const ct = r.headers.get('content-type') || '';
                  return r.blob().then(b => ({b: b, ct: ct})); })
@@ -215,14 +231,15 @@ _FETCH_IMG_JS = """(() => {
     .then(x => { window.__sbr = JSON.stringify({ok: 1, ct: x.ct, d: x.d}); })
     .catch(e => { window.__sbr = JSON.stringify({ok: 0, e: String(e)}); });
   return 'started';
-})()"""
+})()""" % (json.dumps(url), _fetch_opts(no_referer))
+
 
 _POLL_IMG_JS = "(() => window.__sbr === null || window.__sbr === undefined ? '' : window.__sbr)()"
 
 
-def _in_page_fetch(sb, url: str, timeout: float = 40.0) -> tuple[bytes | None, str]:
+def _in_page_fetch(sb, url: str, timeout: float = 40.0, no_referer: bool = False) -> tuple[bytes | None, str]:
     """fetch() داخل الصفحة الحالية ثم استقصاء النتيجة (لا يعتمد على دعم await بواجهة التقييم)."""
-    _sb_eval(sb, _FETCH_IMG_JS % json.dumps(url))
+    _sb_eval(sb, _fetch_img_js(url, no_referer))
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
         time.sleep(0.25)
@@ -248,12 +265,12 @@ def _in_page_fetch(sb, url: str, timeout: float = 40.0) -> tuple[bytes | None, s
     return None, "انتهت مهلة fetch"
 
 
-_FETCH_MANY_JS = r"""((urls, conc) => {
+_FETCH_MANY_JS_TPL = r"""((urls, conc) => {
   window.__sbm = {}; window.__sbn = 0; window.__sbtot = urls.length;
   let idx = 0;
   const one = async (u) => {
     try {
-      const r = await fetch(u, {credentials: 'include', cache: 'no-store'});
+      const r = await fetch(u, {__OPTS__});
       if (!r.ok) throw new Error('status=' + r.status);
       const ct = r.headers.get('content-type') || '';
       const b = await r.blob();
@@ -270,13 +287,17 @@ _FETCH_MANY_JS = r"""((urls, conc) => {
 })"""
 
 
+def _fetch_many_js(no_referer: bool = False) -> str:
+    return _FETCH_MANY_JS_TPL.replace("__OPTS__", _fetch_opts(no_referer))
+
+
 def _in_page_fetch_many(sb, urls: list[str], conc: int = SB_IMG_CONCURRENCY,
-                        timeout: float = 90.0) -> dict[str, bytes]:
+                        timeout: float = 90.0, no_referer: bool = False) -> dict[str, bytes]:
     """تنزيل متوازٍ (conc صور معًا) من داخل صفحة الفصل. يُعيد ما نجح فقط — الباقي يُعاد بالمسار المتسلسل."""
     out: dict[str, bytes] = {}
     if not urls:
         return out
-    _sb_eval(sb, _FETCH_MANY_JS + "(" + json.dumps(urls) + "," + str(conc) + ")")
+    _sb_eval(sb, _fetch_many_js(no_referer) + "(" + json.dumps(urls) + "," + str(conc) + ")")
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
         time.sleep(0.15)
@@ -309,7 +330,8 @@ def _in_page_fetch_many(sb, urls: list[str], conc: int = SB_IMG_CONCURRENCY,
 SB_HTTP_DOWNLOAD = os.environ.get("SB_HTTP_DOWNLOAD", "true").strip().lower() == "true"
 
 
-def _probe_http_download(urls: list[str], cookies: list, ua: str | None, referer: str) -> bool:
+def _probe_http_download(urls: list[str], cookies: list, ua: str | None, referer: str,
+                         no_referer: bool = False) -> bool:
     """[تسريع جذري] هل يمكن تنزيل الصور خارج المتصفح (curl_cffi بانتحال Chrome + كوكيز التحدّي)؟
     يُفحَص أول/وسط/آخر صورة؛ نجاحها كلها ← يتحرر المتصفح فورًا للفصل التالي وتُنزَّل الصور بالتوازي
     من بايثون. أي إخفاق ← الرجوع للتنزيل بالمتصفح (السلوك المضمون السابق)."""
@@ -328,9 +350,11 @@ def _probe_http_download(urls: list[str], cookies: list, ua: str | None, referer
                     pairs.append(f"{c['name']}={c['value']}")
             if not pairs:
                 return False
-            r = cr.get(u, headers={"User-Agent": ua or "", "Referer": referer, "Cookie": "; ".join(pairs),
-                                   "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"},
-                       timeout=20, impersonate="chrome")
+            hdrs = {"User-Agent": ua or "", "Cookie": "; ".join(pairs),
+                    "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"}
+            if not no_referer:      # comix.to: أي Referer ← 403 (تُحذَف الترويسة كليًا)
+                hdrs["Referer"] = referer
+            r = cr.get(u, headers=hdrs, timeout=20, impersonate="chrome")
             if not r.ok or not (r.headers.get("content-type", "").startswith("image/")) or len(r.content) < 500:
                 return False
         except Exception:
@@ -338,7 +362,8 @@ def _probe_http_download(urls: list[str], cookies: list, ua: str | None, referer
     return True
 
 
-def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tuple[dict, dict]:
+def download_images_in_browser(sb, image_urls: list[str], page_url: str,
+                               no_referer: bool = False) -> tuple[dict, dict]:
     """يُنزِّل كل الصور من داخل المتصفح. الطبقة 1: fetch من صفحة الفصل (Referer صحيح تلقائيًا).
     الطبقة 2 (إن منع CORS): فتح رابط الصورة كصفحة أعلى مستوى ثم fetch بنفس الأصل.
     يُعيد (url -> bytes, url -> سبب الفشل)."""
@@ -347,7 +372,7 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tupl
     page_host = urlparse(page_url).netloc
     cur_host = page_host            # الأصل الذي تقف عليه الصفحة الآن
     try:
-        got.update(_in_page_fetch_many(sb, list(dict.fromkeys(image_urls))))
+        got.update(_in_page_fetch_many(sb, list(dict.fromkeys(image_urls)), no_referer=no_referer))
     except Exception:
         pass                        # أي خلل بالتوازي ← يكمل المسار المتسلسل أدناه كما كان
     for u in image_urls:
@@ -356,7 +381,7 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tupl
         host = urlparse(u).netloc
         data, err = None, ""
         try:
-            data, err = _in_page_fetch(sb, u)          # طبقة 1 (قد تُمنع بـCORS إن اختلف الأصل)
+            data, err = _in_page_fetch(sb, u, no_referer=no_referer)   # طبقة 1 (قد تُمنع بـCORS إن اختلف الأصل)
             if data is None and host != cur_host:
                 # الطبقة 2: التنقل إلى نطاق الصورة نفسه ثم fetch بنفس الأصل
                 try:
@@ -368,7 +393,7 @@ def download_images_in_browser(sb, image_urls: list[str], page_url: str) -> tupl
                         pass
                 time.sleep(1.0)
                 cur_host = host
-                data, err2 = _in_page_fetch(sb, u)
+                data, err2 = _in_page_fetch(sb, u, no_referer=no_referer)
                 err = err2 or err
         except Exception as e:
             err = f"{type(e).__name__}: {e}"[:120]
@@ -411,8 +436,8 @@ def _is_thumbnail_url(u: str) -> bool:
         or "/wp-content/uploads/starzmanga" in u.lower()
 
 
-_READING_PROBE_JS = """(() => {
-  const sel = '.reading-content img, .read-container img, #readerarea img, .chapter-content img';
+_READING_PROBE_JS = ("""(() => {
+  const sel = '""" + _READING_IMG_SEL + """';
   let n = 0;
   document.querySelectorAll(sel).forEach(e => {
     const src = e.currentSrc || e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
@@ -421,9 +446,9 @@ _READING_PROBE_JS = """(() => {
   });
   window.scrollBy(0, Math.round(window.innerHeight * 0.6));
   return JSON.stringify({n: n, imgs: document.images.length, title: document.title.slice(0, 80),
-    url: location.href, rc: !!document.querySelector('.reading-content, .read-container, #readerarea, .chapter-content'),
+    url: location.href, rc: !!document.querySelector('""" + _READING_RC_SEL + """'),
     ready: document.readyState});
-})()"""
+})()""")
 
 
 def _wait_reading_images(sb, timeout: float = 25.0, absent_grace: float | None = None) -> tuple[int, dict]:
@@ -482,7 +507,7 @@ def _wait_resolved(sb, wait_sec: float) -> tuple[bool, str, float]:
 
 
 def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
-               download_images: bool) -> tuple[dict, bool]:
+               download_images: bool, no_referer: bool = False) -> tuple[dict, bool]:
     """يجلب فصلًا واحدًا عبر متصفح مفتوح أصلًا. يُعيد (النتيجة، هل فُعِّل وضع CDP).
     res["fatal"]: فشل حتمي (لا حاوية قراءة/تحويل لصفحة أخرى) ← لا فائدة من إعادة المحاولة.
     res["restart"]: المتصفح نفسه مشتبه به (تحدٍّ لم يُحَل/انهيار) ← يُعاد تشغيله."""
@@ -584,13 +609,14 @@ def _fetch_one(sb, url: str, *, activated: bool, wait_sec: float, retries: int,
                 except Exception:
                     pass
             if res["images"] and download_images and SB_HTTP_DOWNLOAD \
-                    and _probe_http_download(res["images"], res["cookies"], res["user_agent"], page_url):
+                    and _probe_http_download(res["images"], res["cookies"], res["user_agent"], page_url,
+                                          no_referer=no_referer):
                 print(f"  🚀 [SB] التنزيل خارج المتصفح (curl_cffi) — المتصفح حرّ للفصل التالي ({len(res['images'])} صورة)")
                 res["image_bytes"], res["image_errors"] = {}, {}
             elif res["images"] and download_images:
                 try:
                     _t3 = time.monotonic()
-                    got, errs = download_images_in_browser(sb, res["images"], page_url)
+                    got, errs = download_images_in_browser(sb, res["images"], page_url, no_referer=no_referer)
                     print(f"  ⏱️ [SB] فتح+حل+انتظار {_t1-_t0:.1f}ث | جمع الروابط {_t2-_t1:.1f}ث | تنزيل {time.monotonic()-_t3:.1f}ث")
                     res["image_bytes"], res["image_errors"] = got, errs
                     print(f"  🌐 [SB] تنزيل بالمتصفح: {len(got)}/{len(res['images'])} صورة"
@@ -626,7 +652,7 @@ def _sb_kwargs(proxy: str | None) -> dict:
 
 def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_WAIT_SEC,
                                  proxy: str | None = None, retries: int = 2,
-                                 download_images: bool = False) -> dict:
+                                 download_images: bool = False, no_referer: bool = False) -> dict:
     """متصفح واحد لكل الروابط تسلسليًا (cf_clearance تبقى صالحة فيُحَل التحدي مرة واحدة غالبًا)."""
     from seleniumbase import SB
     results: dict = {}
@@ -634,7 +660,8 @@ def fetch_pages_via_seleniumbase(urls: list[str], *, wait_sec: float = DEFAULT_W
         activated = False
         for url in urls:
             res, activated = _fetch_one(sb, url, activated=activated, wait_sec=wait_sec,
-                                        retries=retries, download_images=download_images)
+                                        retries=retries, download_images=download_images,
+                                        no_referer=no_referer)
             results[url] = res
     return results
 
@@ -670,27 +697,29 @@ class SBSession:
             except Exception:
                 pass
 
-    def _job(self, url, wait_sec, retries, download_images):
+    def _job(self, url, wait_sec, retries, download_images, no_referer=False):
         if self._sb is not None and self._count >= self._recycle:
             self._stop()
         if self._sb is None:
             self._start()
         res, self._activated = _fetch_one(self._sb, url, activated=self._activated, wait_sec=wait_sec,
-                                          retries=retries, download_images=download_images)
+                                          retries=retries, download_images=download_images,
+                                          no_referer=no_referer)
         self._count += 1
         if res.get("restart") and not res.get("ok"):
             self._stop()
         return res
 
     def fetch(self, url: str, *, wait_sec: float = DEFAULT_WAIT_SEC, retries: int = 2,
-              download_images: bool = False) -> dict:
-        return self._run(self._job, url, wait_sec, retries, download_images)
+              download_images: bool = False, no_referer: bool = False) -> dict:
+        return self._run(self._job, url, wait_sec, retries, download_images, no_referer)
 
-    def fetch_bytes(self, urls: list[str]) -> dict:
+    def fetch_bytes(self, urls: list[str], no_referer: bool = False) -> dict:
         """احتياطي: تنزيل صور بعينها من داخل المتصفح الحالي (لما فشل تنزيلها خارجه)."""
         if self._sb is None:
             return {}
-        return self._run(lambda: _in_page_fetch_many(self._sb, list(urls), conc=4, timeout=60.0))
+        return self._run(lambda: _in_page_fetch_many(self._sb, list(urls), conc=4, timeout=60.0,
+                                                           no_referer=no_referer))
 
     def close(self):
         if self._ex is None:
