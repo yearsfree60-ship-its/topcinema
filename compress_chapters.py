@@ -733,6 +733,18 @@ PROFILES = {
         "fetch_mode": "http",
         "sb_page_fetch": True,
     },
+    # [إضافة — مبنية على تشخيص فعلي bypass-winners.json run_id=38689044342،
+    # 2026-10-15] comix.to محمي بتحدٍّ Cloudflare مُدار مثل starzmanga: الناجح
+    # الوحيد SeleniumBase UC+CDP. بخلاف starzmanga، image_cdn_verdict هنا
+    # "blocked_even_with_clearance" (cf_clearance من صفحة القارئ لا يكفي
+    # لتنزيل CDN الصور مباشرة بـ_HTTP_SESSION العادية) — لذا SB_BROWSER_IMAGE_DOWNLOAD
+    # (التنزيل عبر نفس جلسة SeleniumBase، لا عبر الكوكي المعاد استخدامه)
+    # ضروري هنا تحديدًا، لا اختياريًا كما قد يكفي بمواقع أخرى بهذا البروفايل.
+    "comix_to": {
+        "label": "كوميكس تو (SeleniumBase UC+CDP)",
+        "fetch_mode": "http",
+        "sb_page_fetch": True,
+    },
     # [إضافة] MangaDex عبر API الرسمي (api.mangadex.org): لا متصفح ولا تحدّي. الصور من
     # /at-home/server/{chapterId} بالجودة الأصلية (data) ليستفيد منها OCR، ثم يضغطها الأنبوب كالعادة.
     # mangadex_quality="data-saver" للنسخة المضغوطة الأخف. اسم المانهوا/رقم الفصل من API لا من الرابط.
@@ -883,7 +895,17 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     # /45-end-of-season/) يُقبل ويؤخذ رقمه الأول — يُفحص أولًا لأن (\d+)$ كانت ستلتقط رقمًا
     # خاطئًا من آخر اللاحقة (…-season-1 ← "1") أو تفشل صامتة ("0"). المقاطع المنتهية برقم فقط
     # (chapter-12، 12) لا تتأثر إطلاقًا لأنها لا تطابق هذا النمط (يشترط حرف غير رقمي بعد الرقم).
+    # [إصلاح — comix.to] آخر مقطع بصيغة "<معرّف رقمي>-chapter-<N>" (11477110-chapter-73):
+    # الفحص التالي (رقم في بداية المقطع تتبعه لاحقة) كان يلتقط المعرّف الرقمي 11477110
+    # رقمًا للفصل بدل 73 (رُصد على روابط comix.to بتقارير التشخيص). هذا الفحص يسبقه
+    # ويطابق فقط "أرقام + [-_] + chapter(s) + [-_] + رقم" — صيغة يعطي فيها الفحص التالي
+    # رقمًا خاطئًا (المعرّف) أصلًا، فلا تأثير على أي موقع يعمل صحيحًا الآن.
     if parts:
+        m = re.match(r"^\d+[-_]chapters?[-_](\d+(?:\.\d+)?)(?:[-_][^/]*)?$", parts[-1], re.I)
+        if m:
+            chapter_num = m.group(1)
+            chapter_part_index = len(parts) - 1
+    if parts and chapter_num is None:
         m = re.match(r"^(\d+(?:\.\d+)?)[-_%\u0080-\U0010ffff][^/]*$", parts[-1])
         if m and not re.fullmatch(r"\d+(?:\.\d+)?", parts[-1]):
             chapter_num = m.group(1)
