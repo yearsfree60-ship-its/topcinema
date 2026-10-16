@@ -744,6 +744,9 @@ PROFILES = {
         "label": "كوميكس تو (SeleniumBase UC+CDP)",
         "fetch_mode": "http",
         "sb_page_fetch": True,
+        # [إصلاح] CDN الصور (lov.*.site) يرفض 403 أي طلب بترويسة Referer ويقبله بدونها
+        # (bypass_lab.image_cdn_probe بتقرير comix-to-9398) ← تُحذَف الترويسة بكل مسارات التنزيل.
+        "no_referer": True,
     },
     # [إضافة] MangaDex عبر API الرسمي (api.mangadex.org): لا متصفح ولا تحدّي. الصور من
     # /at-home/server/{chapterId} بالجودة الأصلية (data) ليستفيد منها OCR، ثم يضغطها الأنبوب كالعادة.
@@ -1218,7 +1221,7 @@ import atexit as _atexit
 _atexit.register(_close_sb_session)
 
 
-def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
+def _fetch_images_via_sb_sync(chapter_url: str, no_referer: bool = False) -> tuple[list[str], str, str]:
     """جلب صفحة الفصل عبر جلسة SeleniumBase دائمة (متصفح واحد لكل التشغيلة، تسلسليًا) واستخراج صور
     المحتوى من DOM المُنفَّذ بعد التمرير — HTML الخام لا يكفي لأن صفحة القارئ تضم شعارات ومصغّرات
     وودجات. تُحفظ كوكيز cf_clearance/UA لطلبات الصور."""
@@ -1228,7 +1231,8 @@ def _fetch_images_via_sb_sync(chapter_url: str) -> tuple[list[str], str, str]:
         except ImportError as e:
             return [], f"sb_fetch/seleniumbase غير متاح: {e}", ""
         try:
-            res = sess.fetch(chapter_url, download_images=SB_BROWSER_IMAGE_DOWNLOAD) or {}
+            res = sess.fetch(chapter_url, download_images=SB_BROWSER_IMAGE_DOWNLOAD,
+                             no_referer=no_referer) or {}
         except Exception as e:
             _close_sb_session()   # جلسة مشتبه بها ← تبدأ نظيفة بالمحاولة التالية
             return [], f"فشل تشغيل SeleniumBase: {type(e).__name__}: {e}", ""
@@ -1250,7 +1254,7 @@ def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) ->
     if profile and profile.get("mangadex_api"):
         return _fetch_mangadex_sync(chapter_url, profile)
     if profile and profile.get("sb_page_fetch"):
-        return _fetch_images_via_sb_sync(chapter_url)
+        return _fetch_images_via_sb_sync(chapter_url, no_referer=bool(profile.get("no_referer")))
     if use_wayback_proxy:
         # لا مفتاح ولا تسجيل — راجع _wayback_fetch_html. مسار مختلف كليًا
         # عن باقي الفروع (لا "resp" واحد بمعنى الطلب المباشر، بل تسلسل
@@ -1339,7 +1343,8 @@ def _describe_http_failure(resp, sent_headers: dict) -> str:
     return f"status={resp.status_code} content-type={ctype!r} [{', '.join(extra)}]"
 
 
-def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | None, str | None]:
+def fetch_image_bytes_http_sync(img_url: str, referer: str,
+                                no_referer: bool = False) -> tuple[bytes | None, str | None]:
     last_reason = "سبب غير معروف"
     cached = _SB_IMAGE_CACHE.pop(img_url, None)
     if cached:
@@ -1349,14 +1354,16 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
         last_reason = f"نسخة المتصفح مرفوضة: {why}"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
-            headers = {"Referer": referer, "User-Agent": UA, **_sb_headers_for(img_url)}
+            headers = {"User-Agent": UA, **_sb_headers_for(img_url)}
+            if not no_referer:
+                headers["Referer"] = referer
             if headers.get("Cookie"):
                 # ترويسات متصفح حقيقي لطلب صورة (تُضاف فقط لنطاقات التحدّي)
                 headers.setdefault("Accept", "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8")
                 headers.setdefault("Accept-Language", "en-US,en;q=0.9")
                 headers.setdefault("Sec-Fetch-Dest", "image")
                 headers.setdefault("Sec-Fetch-Mode", "no-cors")
-                headers.setdefault("Sec-Fetch-Site", "same-site")
+                headers.setdefault("Sec-Fetch-Site", "cross-site" if no_referer else "same-site")
             resp = _http_get_image(img_url, headers)
             ctype = resp.headers.get("content-type", "")
             if resp.ok and (ctype.startswith("image/") or ctype == ""):
@@ -1377,7 +1384,7 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
     if _SB_SESSION is not None:
         try:
             with _SB_LOCK:
-                got = _SB_SESSION.fetch_bytes([img_url]) or {}
+                got = _SB_SESSION.fetch_bytes([img_url], no_referer=no_referer) or {}
             b = got.get(img_url)
             if b:
                 valid, why = _validate_image_bytes(b)
@@ -1389,8 +1396,8 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str) -> tuple[bytes | Non
     return None, last_reason
 
 
-async def fetch_image_bytes_http(img_url: str, referer: str):
-    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer)
+async def fetch_image_bytes_http(img_url: str, referer: str, no_referer: bool = False):
+    return await asyncio.to_thread(fetch_image_bytes_http_sync, img_url, referer, no_referer)
 
 
 # ---------------------------- مسار المتصفح (mangatuk / mangatime / olympustaff / auto) ----------------------------
@@ -2331,7 +2338,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
 
     async def download(img_url: str):
         if fetch_mode == "http":
-            return await fetch_image_bytes_http(img_url, chapter_url)
+            return await fetch_image_bytes_http(img_url, chapter_url, bool(profile.get("no_referer")))
         return await fetch_image_bytes(context, img_url, chapter_url)
 
     saved_paths = []
