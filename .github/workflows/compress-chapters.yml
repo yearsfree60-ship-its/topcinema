@@ -203,11 +203,24 @@ jobs:
       # run_retranslate_mode بـocr_extraction.py: يقرأ text_en.json من القرص
       # مباشرة فقط). pillow-avif-plugin (يُستخدَم فقط لو output_format=avif
       # بوضع الإنتاج) مُدرَجة هنا أيضًا بنفس المنطق — غير لازمة لإعادة الترجمة.
-      - name: تثبيت متطلبات المتصفح وOCR (كل الأوضاع ما عدا إعادة_ترجمة)
+      # [تسريع] تثبيت Chromium/Playwright (~50ث) لازم فقط حين يُطلَق متصفح Playwright فعلًا:
+      # التشخيص، وأوضاع OCR، وإنتاج بروفايلات fetch_mode=browser (mangatuk/mangatime/olympustaff/auto).
+      # بروفايلات HTTP/SeleniumBase (comix_to, starzmanga, azorafly, procomic, mangadex…) لا تحتاجه إطلاقًا.
+      - name: تثبيت Chromium (فقط حين يلزم)
+        if: inputs.mode == 'تشخيص' || inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل' || (inputs.mode == 'إنتاج' && (inputs.site == 'mangatuk' || inputs.site == 'mangatime' || inputs.site == 'olympustaff' || inputs.site == 'auto'))
+        run: |
+          python -m playwright install --with-deps chromium
+
+      # paddleocr/paddlepaddle (ثقيلتان) لأوضاع OCR فقط؛ pillow-avif-plugin خفيفة وتبقى دومًا.
+      - name: تثبيت pillow-avif (أوضاع غير إعادة_ترجمة)
         if: inputs.mode != 'إعادة_ترجمة'
         run: |
-          pip install --quiet pillow-avif-plugin paddleocr==3.2.0 paddlepaddle==3.1.1
-          python -m playwright install --with-deps chromium
+          pip install --quiet pillow-avif-plugin
+
+      - name: تثبيت PaddleOCR (أوضاع OCR فقط)
+        if: inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل'
+        run: |
+          pip install --quiet paddleocr==3.2.0 paddlepaddle==3.1.1
 
       # [جديد — تفعيل DEEP_DIAGNOSTIC] patchright حزمة منفصلة تمامًا عن
       # playwright (مساحة استيراد مختلفة: patchright.async_api لا
