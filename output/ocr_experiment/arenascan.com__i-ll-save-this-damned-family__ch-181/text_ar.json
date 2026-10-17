@@ -1,0 +1,556 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "181",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "NO WAY. JOSH GAVE ME THIS?",
+          "confidence": 0.98,
+          "text_ar": " مستحيل! هل أعطاني جوش هذا؟"
+        },
+        {
+          "text": "WHAT IS HE IMPLYING? DID HE NOT KNOW WHAT KIND OFFUNCTIONIT HAS? OR DID HE DO IT ON PLRPOSE?",
+          "confidence": 0.94,
+          "text_ar": "ما الذي يلمح إليه بحق الجحيم؟ ألم يكن يعلم نوع التأثير الذي يملكه؟ أم أنه فعلها متعمداً؟"
+        },
+        {
+          "text": "AND OF ALL DAYS, IT HAS TO BE TODAY.THE VERY DAY KYLE ASKED TO MEET IN MY ROOM?!",
+          "confidence": 0.962,
+          "text_ar": "وفي كل الأيام، لابد أن يكون اليوم بالذات! اليوم الذي طلب فيه كايل الاجتماع بي في غرفتي؟!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "UGH...SOMEONE AS BY-THE-BOOK AS JOSH WOULDNT DO SOMETHING LIKE THIS.",
+          "confidence": 0.959,
+          "text_ar": "تباً... شخص ملتزم بالقواعد بحذافيرها مثل جوش لن يفعل شيئاً كهذا."
+        },
+        {
+          "text": "MY LADY. WHAT'S WRONG? DO YOU RECOGNIZE THE SMELL?",
+          "confidence": 0.948,
+          "text_ar": "سيدتي. ما الأمر؟ هل تعرفين هذه الرائحة؟"
+        },
+        {
+          "text": "N-NO.IT JUST LOOKS N-NO.ITJUSTLOOKS LIKE IT MIGHT TASTE GOOD...",
+          "confidence": 0.948,
+          "text_ar": "ل-لا. يبدو فقط أنه... يبدو وكأنه قد يكون لذيذ التذوق..."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.933,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "THEN SHALL WE WRAP UP MY BATH QUICKLY?",
+          "confidence": 0.946,
+          "text_ar": "إذن، هل ننهي وقت استحمامي بسرعة؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "OH MY, MY LAOY! YOU'LL GET HURT!",
+          "confidence": 0.782,
+          "text_ar": "يا إلهي، سيدتي! ستأذين نفسك!"
+        },
+        {
+          "text": "H READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.417,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "I STAYED IN THE BATH TOO LONG,",
+          "confidence": 0.933,
+          "text_ar": "لقد مكثت في حوض الاستحمام لفترة أطول من اللازم،"
+        },
+        {
+          "text": "AND NOW THE FATIGUE IS REALLY HITTING ME.",
+          "confidence": 0.948,
+          "text_ar": "والآن بدأ الإرهاق يفتك بي حقاً."
+        },
+        {
+          "text": "I'M GOING TO SLEEP EARLY.",
+          "confidence": 0.917,
+          "text_ar": "سأخلد إلى النوم مبكراً."
+        },
+        {
+          "text": "PARDON? WHAT ABOUT DINNER?",
+          "confidence": 0.979,
+          "text_ar": "عذراً؟ ماذا عن العشاء؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I'M NOT HUNGRY.SLEEP COMES FIRST.",
+          "confidence": 0.89,
+          "text_ar": "لست جائعة. النوم أولاً."
+        },
+        {
+          "text": "I'M GOING TO BE IN A VERY DEEP SLEEP, SO DON'T LET ANYONE INTO MY ROOM FROM NOW ON. THAT INCLUDES YOU, BETH.",
+          "confidence": 0.94,
+          "text_ar": "سأدخل في نوم عميق جداً، لذا لا تدعي أحداً يدخل غرفتي من الآن فصاعداً. ويشملك ذلك أيضاً، بيث."
+        },
+        {
+          "text": "NO.EVEN SO,ISNT THIS TOO EARLY TO...",
+          "confidence": 0.948,
+          "text_ar": "لا. ومع ذلك، أليس هذا مبكراً جداً لـ..."
+        },
+        {
+          "text": "AH!DID YOU STAY UP ALL NIGHT READING BOOKS AGAIN YESTERDAY?",
+          "confidence": 0.932,
+          "text_ar": "آه! هل سهرتِ طوال الليل تقرئين الكتب مرة أخرى أمس؟"
+        },
+        {
+          "text": "Y-YEAH!UGH, YEAH.I STAYED UP ALL NIGHT READING BOOKS. HAHA. SO PLEASE, GO ON OUT, BETH. 翠",
+          "confidence": 0.116,
+          "text_ar": "ن-نعم! تبّاً، نعم. لقد سهرت طوال الليل أقرأ الكتب. هاها. لذا من فضلكِ، اطلعي يا بيث."
+        },
+        {
+          "text": "梦 YES, MY LADY. THEN, HAVE A GOOD NIGHT.",
+          "confidence": 0.434,
+          "text_ar": "حاضر، سيدتي. إذن، تصبحين على خير."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "o READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.173,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "WAITING FORA BOYFRIEND IS TOUGH.",
+          "confidence": 0.937,
+          "text_ar": "انتظار الحبيب أمر شاق."
+        },
+        {
+          "text": "HE DEFINITELY SAID HE'D SEE ME IN MY ROOM TODAY, SO HE'LL COME AFTER HE FINISHES WORK,RIGHT?",
+          "confidence": 0.891,
+          "text_ar": "لقد قال بالتحديد إنه سيلتقي بي في غرفتي اليوم، لذا سيأتي بعد أن ينتهي من عمله، أليس كذلك؟"
+        },
+        {
+          "text": "HMM.HE GETS OFF AT 6:OO, SO LET'S BE GENEROUS AND SAY AN HOUR LATER?",
+          "confidence": 0.923,
+          "text_ar": "همم. إنه ينصرف في السادسة، فلنكن سخيين ونقول بعد ساعة من ذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "OH. EVEN USING BLIND MARKETING.",
+          "confidence": 0.96,
+          "text_ar": "أوه. حتى أنهم يستخدمون التسويق الخفي."
+        },
+        {
+          "text": "LOUIS FOR THE HEART!",
+          "confidence": 0.833,
+          "text_ar": "لويس من أجل القلب!"
+        },
+        {
+          "text": "IF THESE ADS RUN FOR A FEW DAYS IN A ROW, WON'T YOU BE DYING OF CURIOSITY ABOUT WHAT THISIS?",
+          "confidence": 0.894,
+          "text_ar": "إذا استمرت هذه الإعلانات لبضع أيام متتالية، ألن تموتوا من فضولكم لمعرفة ما هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THAT'S CHLOE FOR YOU. THAT'S THE ANSWER.",
+          "confidence": 0.941,
+          "text_ar": "تلك هي كلوي بحق. تلك هي الإجابة."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.934,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "THE ELIAS PR TEAM IS DOING A GREAT JOB. STARTING THE ADS THESAME DAY FATHER'S DIVORCE WASFINALIZED.",
+          "confidence": 0.929,
+          "text_ar": "فريق العلاقات العامة لعائلة إلياس يقوم بعمل رائع حقاً. بدء الإعلانات في نفس اليوم الذي تم فيه إتمام طلاق الأب."
+        },
+        {
+          "text": "STILL, THE SOCIAL SCENE IS BUZZING WITH...!",
+          "confidence": 0.953,
+          "text_ar": "مع ذلك، فإن المجتمع يعج بـ...!"
+        },
+        {
+          "text": "COULD THIS BE THE SCANDAL THAT SWEPT THE SOCIAL SCENE?",
+          "confidence": 0.928,
+          "text_ar": "أيمكن أن تكون هذه هي الفضيحة التي اجتاحت المجتمع الراقي؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.942,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "业 AH! WHAT IF THE RUMORS SPREAD THATIWAS KIDNAPPED ONMY BIRTHDAY AND THATI ACTUALLY ELOPED BECAUSE OF THATFAKE LETTER...!",
+          "confidence": 0.697,
+          "text_ar": "آه! ماذا لو انتشرت الشائعات بأنني اختُطفت في يوم ميلادي وأني هربت فعلاً بسبب تلك الرسالة المزيفة...!"
+        },
+        {
+          "text": "0OOYOO",
+          "confidence": 0.533,
+          "text_ar": "(صوت تنهيدة أو تمتمة)"
+        },
+        {
+          "text": "IFI HADN'T STOPPED IT, IT WOULD HAVE BEEN ENOUGH TO REMAIN A SOCIAL SCANDAL. MORE THAN ENOUGH.",
+          "confidence": 0.942,
+          "text_ar": "لو لم أوقف الأمر، لكان كافياً ليظل فضيحة اجتماعية. وأكثر من كافٍ بكثير."
+        },
+        {
+          "text": "ALL THE EVENTS THAT WERE SUPPOSED TOHAPPENAREHAPPENING THE SCALE OF THE EVENTS JUST CHANGES.",
+          "confidence": 0.942,
+          "text_ar": "جميع الأحداث التي كان مفترضاً أن تحدث، تحدث بالفعل. نطاق الأحداث هو ما يتغير فقط."
+        },
+        {
+          "text": "BUT WHAT IS THIS\"BLACK MAP\" IN CHAPTER4-3?",
+          "confidence": 0.938,
+          "text_ar": "ولكن ما هي \"الخريطة السوداء\" هذه في الفصل الرابع والثلاثين؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "KYLE MIGHT KNOW ABOUT IT.",
+          "confidence": 0.974,
+          "text_ar": "قد يكون كايل على علم بها."
+        },
+        {
+          "text": "STILL,ICAN'T JUST ASK HIM POINT-BLANK IF IT'S THE \"BLACK MAP\"...",
+          "confidence": 0.927,
+          "text_ar": "مع ذلك، لا يمكنني سؤاله هكذا مباشرة عما إذا كانت هي \"الخريطة السوداء\"..."
+        },
+        {
+          "text": "WHAT KIND OF EXCUSE CANIUSE TO ASK HIM?",
+          "confidence": 0.927,
+          "text_ar": "ما نوع العذر الذي يمكنني استخدامه لأطرح عليه السؤال؟"
+        },
+        {
+          "text": "AS EXPECTED, HIS SPEECHES ARE DIFFERENT.",
+          "confidence": 0.964,
+          "text_ar": "كما هو متوقع، خطاباته مختلفة تماماً."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "WELL,TO LEAD THE EMPIRE,YOL HAVE TO BE ABLE TO GIVE A SPEECH LIKE THAT.",
+          "confidence": 0.955,
+          "text_ar": "حسناً، لكي تقود الإمبراطورية، عليك أن تكون قادراً على إلقاء خطاب كهذا."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.946,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "TERA SAID SHE'S GOING TO LOOK INTO JOINING SOCIAL CIRCLES FROM NOW ON.",
+          "confidence": 0.937,
+          "text_ar": "قالت تارا إنها سترتاد الانضمام إلى الدوائر الاجتماعية من الآن فصاعداً."
+        },
+        {
+          "text": "SINCE SHE HAS TO MAKE HER SOCIAL DEBUT SOON,SHE NEEDS TO MAKE FRIENDS.",
+          "confidence": 0.933,
+          "text_ar": "بما أنه يجب عليها الظهور في المجتمع قريباً، فهي بحاجة لتكوين صداقات."
+        },
+        {
+          "text": "REALLY?",
+          "confidence": 0.988,
+          "text_ar": "حقاً؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "SO,I WANT TO INTRODUCE HER TO MY GATHERINGS, AND YOURS TOO, BROTHER.",
+          "confidence": 0.917,
+          "text_ar": "لذا، أود أن أقدمها إلى تجمعاتي، وتجمعاتك أيضاً، أخي."
+        },
+        {
+          "text": "WHY?",
+          "confidence": 0.987,
+          "text_ar": "لماذا؟"
+        },
+        {
+          "text": "BECAUSE WE'RE FAMILY.",
+          "confidence": 0.949,
+          "text_ar": "لاننا عائلة."
+        },
+        {
+          "text": "WE'RE NOT EXACTLY A COMPLETE FAMILY.",
+          "confidence": 0.902,
+          "text_ar": "نحن لسنا عائلة كاملة تماماً بالمعنى الحرفي."
+        },
+        {
+          "text": "WHAT KIND OF TALK IS THAT? ARE YOU GOING TO KEEP ACTING WEIRD?",
+          "confidence": 0.924,
+          "text_ar": "أي نوع من الحديث هذا؟ أستستمر في التصرف بغرابة؟"
+        },
+        {
+          "text": "ALRIGHT, ALRIGHT.",
+          "confidence": 0.936,
+          "text_ar": "حسناً، حسناً."
+        },
+        {
+          "text": "SINCE IT'S YOUR REQUEST, I'LL CONSIDER INVITING HER TO MY GATHERINGS.",
+          "confidence": 0.911,
+          "text_ar": "بما أنه طلبكِ، سأفكر في دعوتها إلى تجمعاتي."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.925,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "/ COLILD JLIST PASS THE MESSAGE THROUGH ARIA. THERE'S NO NEED TO ACTUALLY SPEAK TO HER.",
+          "confidence": 0.919,
+          "text_ar": "كان بإمكاني تمرير الرسالة عبر آريا فحسب. لا داعي للتحدث معها فعلياً."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "NA木+TF<E> DEIF>1<I1×(*-K",
+          "confidence": 0.661,
+          "text_ar": "(حوار غير مفهوم/مشوش)"
+        },
+        {
+          "text": "YEAH. WAITING IS BORING,AFTER ALL.",
+          "confidence": 0.936,
+          "text_ar": "أجل. الانتظار ممل في النهاية."
+        },
+        {
+          "text": "JOSH SAID IT WAS GOOD FOR THE EYES,AND...",
+          "confidence": 0.917,
+          "text_ar": "قال جوش إنه مفيد للنظر، و..."
+        },
+        {
+          "text": "LET'S JUST TRY ONE GLASS, WHAT COULD IT HURT?",
+          "confidence": 0.949,
+          "text_ar": "لنُجرب كؤوساً واحدة فقط، ما الضرر في ذلك؟"
+        },
+        {
+          "text": "IT'S NOT LIKE I'M DRINKING IT BECAUSE IT'S A\"DRINK THAT LINLOCKS THE NIGHT'S BOLTS\" OR ANYTHING!",
+          "confidence": 0.912,
+          "text_ar": "ليس الأمر كأنني أشربه لأنه \"مشروب يفتح أقفال الليل\" أو ما شابه!"
+        },
+        {
+          "text": "UGH...AS EXPECTED. IT'S STRONG!MY BODY SUDDENLY FEELS LIKE IT'S BUZZING WITH ENERGY?",
+          "confidence": 0.939,
+          "text_ar": "تباً... كما توقعت. إنه قوي! هل يشعر جسدي فجأة بأنه يغلي طاقةً؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "HEH,I WANT TO DRINK MORE,BLT THAT'S ENOUGH FOR TODAY.",
+          "confidence": 0.918,
+          "text_ar": "تبّاً، أود شرب المزيد، لكن هذا يكفي لليوم."
+        },
+        {
+          "text": "所 READ THIS SERIES ONLY AT: VIOLETSCANS.OTg",
+          "confidence": 0.09,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "3NA水干 ^+01",
+          "confidence": 0.38,
+          "text_ar": "(نص غير مفهوم)"
+        },
+        {
+          "text": "NEXT TIME, I'LL HAVE PROPER APPETIZERS AND...",
+          "confidence": 0.976,
+          "text_ar": "في المرة القادمة، سأتناول مقبلات مناسبة و..."
+        },
+        {
+          "text": "HUH? DID I TIE IT TOO HIGH?",
+          "confidence": 0.923,
+          "text_ar": "هاه؟ هل ربطته أعلى من اللازم؟"
+        },
+        {
+          "text": "TCT",
+          "confidence": 0.586,
+          "text_ar": "(صوت تذمر)"
+        },
+        {
+          "text": "YEAH,I SHOULD TIE IT A BIT LOOSER AND LET SOME STRAY HAIRS FALL OUT.",
+          "confidence": 0.926,
+          "text_ar": "أجل، يجب أن أربطه بشكل أرخى قليلاً وأدع بعض خصلات الشعر تتناثر."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "THERE. NOW THIS LOOKS NATURAL...!",
+          "confidence": 0.967,
+          "text_ar": "هكذا. الآن يبدو هذا طبيعياً...!"
+        },
+        {
+          "text": "WHAT AM I DOING RIGHT NOW?",
+          "confidence": 0.974,
+          "text_ar": "ما الذي أفعله بحق الجحيم الآن؟"
+        },
+        {
+          "text": "TODAY'S MEETING IS NOTA DATE!",
+          "confidence": 0.931,
+          "text_ar": "اجتماع اليوم ليس موعداً غرامياً!"
+        },
+        {
+          "text": "TODAY IS THE DAYIFIND OUT WHY HE SUDDENLY REASSIGNED ME TO THE PERMANENT AIDE OFFICE!",
+          "confidence": 0.958,
+          "text_ar": "اليوم هو اليوم الذي سأكتشف فيه سبب نقله المفاجئ لي إلى مكتب المساعدين الدائمين!"
+        },
+        {
+          "text": "THAT IS THE REASON FOR THIS MEETING!",
+          "confidence": 0.944,
+          "text_ar": "هذا هو سبب هذا الاجتماع بالتحديد!"
+        },
+        {
+          "text": "AAALNGQQAQAAOQQOQQQNLQAAOHAAAOA",
+          "confidence": 0.473,
+          "text_ar": "(صرخة توتر وارتباك غير مفهومة)"
+        },
+        {
+          "text": "TERA! NO.JI YEONWOO! ARE YOU NOT KEEPING YOUR HEAD ON STRAIGHT?",
+          "confidence": 0.954,
+          "text_ar": "تارا! كلا، جي يون وو! ألا يمكنك جمع تشتت عقلكِ؟"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "JI...YEONWOO?",
+          "confidence": 0.968,
+          "text_ar": "جي... يون وو؟"
+        },
+        {
+          "text": "WHO IS THAT?",
+          "confidence": 0.958,
+          "text_ar": "من تكون تلك؟"
+        },
+        {
+          "text": "READ THIS SERIES ONY AT VIOLETSCANS.Org",
+          "confidence": 0.939,
+          "text_ar": "قراءة هذا الفصل حصرياً على VIOLETSCANS.Org"
+        },
+        {
+          "text": "SINCE WHEN WERE YOU STANDING THERE? YOU STARTLED ME.",
+          "confidence": 0.936,
+          "text_ar": "منذ متى وأنت واقف هنا؟ لقد فاجأتني."
+        },
+        {
+          "text": "SORRY.HAVE YOU BEEN WAITING LONG?",
+          "confidence": 0.964,
+          "text_ar": "آسف. هل انتظرت طويلاً؟"
+        },
+        {
+          "text": "IT'S ALRIGHT. I EXPECTED THIS MUCH.",
+          "confidence": 0.899,
+          "text_ar": "لا بأس. لقد توقعت هذا القدر."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "More importantly...",
+          "confidence": 0.917,
+          "text_ar": "الأهم من ذلك..."
+        },
+        {
+          "text": "COME ON IN. THERE'S SO MUCH I WANT TO ASK YOU.",
+          "confidence": 0.923,
+          "text_ar": "تفضل بالدخول. هناك الكثير مما أود سؤالك عنه."
+        },
+        {
+          "text": "DAMN IT.",
+          "confidence": 0.902,
+          "text_ar": "تباً."
+        },
+        {
+          "text": "SHE LOOKS SO BEAUTIFLIL TODAY.",
+          "confidence": 0.88,
+          "text_ar": "تبدو جميلة جداً اليوم."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "THIS IS GETTING DANGEROLS.",
+          "confidence": 0.969,
+          "text_ar": "هذا يزداد خطورة."
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.951,
+          "text_ar": "المالك لحقوق الويب تون KENAZ"
+        }
+      ]
+    }
+  ]
+}
