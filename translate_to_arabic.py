@@ -52,12 +52,22 @@ TRANSLATE_ENABLED = os.environ.get("TRANSLATE_TO_ARABIC", "true").strip().lower(
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 # [بند — بحث فعلي بتاريخه أعلاه] GA مستقر بلا تاريخ إيقاف معلَن، خلافًا
 # لعائلة 2.5 (إيقاف 16 أكتوبر 2026) أو 2.0 (مُتوقَّفة فعليًا أصلًا).
-GEMINI_MODEL_NAME = os.environ.get("GEMINI_TRANSLATION_MODEL", "gemini-3.1-flash-lite").strip()
+# [الافتراضي] gemini-3.5-flash-lite: مستقر وموصى به رسميًا للمشاريع الجديدة، أسرع وأفضل جودة من 3.1-flash-lite.
+# يُختار من حقل translation_model بالـworkflow (الفارغ/غير المضبوط ← الافتراضي).
+GEMINI_MODEL_NAME = (os.environ.get("GEMINI_TRANSLATION_MODEL") or "gemini-3.5-flash-lite").strip()
 # [تحفّظي عمدًا] الباقة المجانية الموثَّقة لنماذج Flash-Lite تصل حتى 15
 # RPM فعليًا بمصادر بحثية متعددة، لكن القيمة الافتراضية هنا أقل تحفّظًا
 # لهامش أمان (تغيّرات محتملة بالحدود بين المزوّد ونماذجه، ولا حاجة فعلية
 # لأقصى سرعة هنا أصلًا — نداء واحد فقط لكل فصل، لا لكل صفحة).
-GEMINI_RPM_LIMIT = max(1, int(os.environ.get("GEMINI_RPM_LIMIT", "10")))
+GEMINI_RPM_LIMIT = max(1, int(os.environ.get("GEMINI_RPM_LIMIT", "15")))
+# [تسريع] مستوى "التفكير" الداخلي للنموذج: low يكفي لترجمة حوار سياقية ويقصّ زمن التوليد كثيرًا؛
+# "default" = إعداد النموذج الأصلي. يُتجاهَل تلقائيًا (مرة واحدة) لو رفضه الـAPI/الإصدار.
+GEMINI_THINKING_LEVEL = os.environ.get("GEMINI_THINKING_LEVEL", "low").strip().lower()
+# [تسريع] فصل طويل يُقسَّم لدفعات تُترجَم بالتوازي (كل دفعة تأخذ سياق آخر جمل الدفعة السابقة
+# للاتساق)؛ الفصول العادية (<= الحد) تبقى بنداء واحد كاملًا كما كانت.
+GEMINI_CHUNK_SIZE = max(40, int(os.environ.get("GEMINI_CHUNK_SIZE", "140")))
+_use_thinking = True
+_rate_lock = None
 GEMINI_MAX_RETRIES = int(os.environ.get("GEMINI_MAX_RETRIES", "3"))
 
 _warned_no_key = False
@@ -202,14 +212,18 @@ def _flatten_chapter_sentences(pages: list[dict]) -> list[dict]:
     return items
 
 
-def _build_prompt(items: list[dict], glossary: dict) -> str:
+def _build_prompt(items: list[dict], glossary: dict, context_before: list[dict] | None = None) -> str:
     glossary_block = (
         "\n".join(f"- {en} → {ar}" for en, ar in sorted(glossary.items()))
         if glossary else "(لا يوجد glossary سابق لهذا العمل بعد — هذا أول فصل يُترجَم له)"
     )
-    items_json = json.dumps(items, ensure_ascii=False, indent=2)
+    items_json = json.dumps(items, ensure_ascii=False, separators=(",", ":"))
+    ctx = ""
+    if context_before:
+        ctx = ("سياق سابق من نفس الفصل (للفهم والاتساق فقط — لا تترجمه ولا تُدرجه بالمخرجات):\n"
+               + json.dumps(context_before, ensure_ascii=False, separators=(",", ":")) + "\n\n")
     return (
-        f"قائمة المصطلحات المعتمدة (glossary) لهذا العمل:\n{glossary_block}\n\n"
+        f"قائمة المصطلحات المعتمدة (glossary) لهذا العمل:\n{glossary_block}\n\n{ctx}"
         f"ترجم كل عنصر بالمصفوفة التالية (كل عنصر جملة واحدة من نفس الفصل، "
         f"بترتيب الصفحات والقراءة الصحيح):\n{items_json}"
     )
@@ -218,38 +232,53 @@ def _build_prompt(items: list[dict], glossary: dict) -> str:
 # ============================== التباعد الزمني (RPM) وإعادة المحاولة ==============================
 
 async def _respect_rate_limit() -> None:
-    global _last_call_ts
+    """يحجز موعد النداء بقفل (آمن للنداءات المتوازية): أول نداء بلا انتظار، والتالي بعد 60/RPM ثانية."""
+    global _last_call_ts, _rate_lock
+    if _rate_lock is None:
+        _rate_lock = asyncio.Lock()
     min_interval = 60.0 / GEMINI_RPM_LIMIT
-    now = time.monotonic()
-    wait = (_last_call_ts + min_interval) - now
+    async with _rate_lock:
+        now = time.monotonic()
+        wait = (_last_call_ts + min_interval) - now
+        _last_call_ts = max(now, _last_call_ts + min_interval)
     if wait > 0:
         await asyncio.sleep(wait)
-    _last_call_ts = time.monotonic()
 
 
 async def _call_gemini_with_retry(prompt: str) -> dict | None:
     from google.genai import types
 
+    global _use_thinking
     client = _get_client()
     last_err: Exception | None = None
-    for attempt in range(1, GEMINI_MAX_RETRIES + 1):
+    attempt = 0
+    while attempt < GEMINI_MAX_RETRIES:
+        attempt += 1
         await _respect_rate_limit()
         try:
+            kw = dict(
+                system_instruction=_SYSTEM_INSTRUCTION,
+                response_mime_type="application/json",
+                response_schema=_RESPONSE_SCHEMA,
+                temperature=0.3,
+            )
+            if _use_thinking and GEMINI_THINKING_LEVEL not in ("", "default"):
+                kw["thinking_config"] = types.ThinkingConfig(thinking_level=GEMINI_THINKING_LEVEL)
             response = await asyncio.to_thread(
                 client.models.generate_content,
                 model=GEMINI_MODEL_NAME,
                 contents=prompt,
-                config=types.GenerateContentConfig(
-                    system_instruction=_SYSTEM_INSTRUCTION,
-                    response_mime_type="application/json",
-                    response_schema=_RESPONSE_SCHEMA,
-                    temperature=0.4,
-                ),
+                config=types.GenerateContentConfig(**kw),
             )
             return json.loads(response.text)
         except Exception as e:
             last_err = e
             msg = str(e)
+            if _use_thinking and "thinking" in msg.lower():
+                _use_thinking = False   # الإصدار/النموذج لا يدعم الإعداد ← تعطيله وإعادة المحاولة فورًا
+                print("  ⚠️ [ترجمة] thinking_level غير مدعوم هنا — إعادة المحاولة بالإعداد الافتراضي")
+                attempt -= 1
+                continue
             # [بحث فعلي] 429 / RESOURCE_EXHAUSTED هو خطأ تجاوز الحدود
             # الموثَّق بتوثيق Gemini الرسمي — يستحق انتظارًا أطول من أي
             # خطأ عابر آخر (شبكة، انقطاع لحظي) قبل إعادة المحاولة.
@@ -301,12 +330,19 @@ async def translate_chapter_to_arabic(chapter_result: dict, output_dir: Path, ou
     manga_title = chapter_result.get("manga_title") or manga_id
 
     glossary = _load_glossary(output_dir, manga_id)
-    prompt = _build_prompt(items, glossary)
 
-    print(f"  🌐 [ترجمة] إرسال {len(items)} جملة لـGemini ({GEMINI_MODEL_NAME}) — الفصل {chapter_num}")
-    result = await _call_gemini_with_retry(prompt)
-    if result is None:
-        return []
+    n_chunks = -(-len(items) // GEMINI_CHUNK_SIZE)
+    size = -(-len(items) // n_chunks)
+    chunks = [items[i:i + size] for i in range(0, len(items), size)]
+    print(f"  🌐 [ترجمة] إرسال {len(items)} جملة لـGemini ({GEMINI_MODEL_NAME}) — الفصل {chapter_num}"
+          + (f" ({len(chunks)} دفعات متوازية)" if len(chunks) > 1 else ""))
+    prompts = [_build_prompt(c, glossary, context_before=(chunks[k - 1][-4:] if k else None))
+               for k, c in enumerate(chunks)]
+    results = await asyncio.gather(*[_call_gemini_with_retry(pr) for pr in prompts])
+    if any(r is None for r in results):
+        return []   # أي دفعة فاشلة ← الفصل كله لطابور إعادة المحاولة (لا ترجمة ناقصة صامتة)
+    result = {"translations": [t for r in results for t in (r.get("translations") or [])],
+              "glossary_additions": [a for r in results for a in (r.get("glossary_additions") or [])]}
 
     translations = result.get("translations") or []
     by_key = {(t["page"], t["index"]): t.get("text_ar", "") for t in translations if "page" in t and "index" in t}
