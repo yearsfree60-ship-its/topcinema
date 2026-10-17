@@ -86,7 +86,7 @@ _FAST_READING_JS = ("""(() => {
   const rc = document.querySelector('""" + _READING_RC_SEL + """');
   let node = rc, dd = 0;
   while (node && node.children.length === 1 && dd < 3) { node = node.children[0]; dd++; }
-  const exp = node ? node.children.length : 0;
+  const exp = (node && rc.matches('.rpage-main')) ? node.children.length : 0;
   const out = [];
   document.querySelectorAll(sel).forEach(e => {
     const src = e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
@@ -145,7 +145,7 @@ _COLLECT_READING_JS = ("""(() => {""" + _SCROLLER_JS + """
     if (a && node) ci = kids.indexOf(a);
     out.push({src: src.trim(), ci: ci, nw: e.naturalWidth || 0, ctx: ctx.toLowerCase().slice(0, 200)});
   });
-  return JSON.stringify({imgs: out, exp: kids.length,
+  return JSON.stringify({imgs: out, exp: (rc && rc.matches('.rpage-main')) ? kids.length : 0,
     y: __win ? window.scrollY + window.innerHeight : __sc.scrollTop + __sc.clientHeight,
     h: __win ? document.documentElement.scrollHeight : __sc.scrollHeight});
 })()""")
@@ -298,7 +298,7 @@ def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list
             print(f"  ⚡ [SB] مسار سريع: {len(fast1)} صورة بلا تمرير")
             return fast1, []
 
-    has_rc = _sb_eval(sb, "(() => !!document.querySelector('" + _READING_RC_SEL.replace("'", "\\'") + "'))()")
+    has_rc = _sb_eval(sb, "(() => !!document.querySelector('.rpage-main'))()")   # التراكمي لـcomix.to فقط
     if has_rc is True or has_rc == "true":
         got = _collect_reading_by_scroll(sb, base_url)
         if got:
