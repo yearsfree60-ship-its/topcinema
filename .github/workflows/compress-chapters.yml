@@ -130,6 +130,17 @@ on:
         default: true
         type: boolean
 
+      translation_model:
+        description: "[استخراج_نص + إنتاج_كامل + إعادة_ترجمة] نموذج Gemini للترجمة العربية. gemini-3.5-flash-lite: أسرع وأرخص وأفضل من الإصدار السابق (الافتراضي). gemini-3.8-flash: أعلى جودة سياقية مع بقائه سريعًا. gemini-3.6-flash: وسط بين الاثنين. gemini-3.1-flash-lite: الأقدم والأضعف جودة (احتياطي). حدود الباقة المجانية تختلف بين النماذج — راجع AI Studio"
+        required: false
+        default: gemini-3.5-flash-lite
+        type: choice
+        options:
+          - gemini-3.5-flash-lite
+          - gemini-3.8-flash
+          - gemini-3.6-flash
+          - gemini-3.1-flash-lite
+
       # ── 🔍 الحقل التالي فعّال بوضع "تشخيص" فقط ──
       deep_diagnostic:
         description: "[تشخيص فقط] يضيف مسبارين لا يقيسهما التشخيص العادي إطلاقًا: تسريب Runtime.enable (بروتوكول CDP نفسه، لا JS fingerprint) وتسريب sourceURL لسكربتات page.evaluate، مع تجميعهما وباقي طبقات الفحص القائمة بخريطة detection_surface_map موحّدة لكل رابط. يُضاعِف زمن التشخيص تقريبًا لكل رابط (~90-180ث إضافية)"
@@ -207,7 +218,7 @@ jobs:
       # التشخيص، وأوضاع OCR، وإنتاج بروفايلات fetch_mode=browser (mangatuk/mangatime/olympustaff/auto).
       # بروفايلات HTTP/SeleniumBase (comix_to, starzmanga, azorafly, procomic, mangadex…) لا تحتاجه إطلاقًا.
       - name: تثبيت Chromium (فقط حين يلزم)
-        if: inputs.mode == 'تشخيص' || inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل' || (inputs.mode == 'إنتاج' && (inputs.site == 'mangatuk' || inputs.site == 'mangatime' || inputs.site == 'olympustaff' || inputs.site == 'auto'))
+        if: inputs.mode == 'تشخيص' || ((inputs.mode == 'إنتاج' || inputs.mode == 'استخراج_نص' || inputs.mode == 'إنتاج_كامل') && (inputs.site == 'mangatuk' || inputs.site == 'mangatime' || inputs.site == 'olympustaff' || inputs.site == 'auto'))
         run: |
           python -m playwright install --with-deps chromium
 
@@ -353,6 +364,7 @@ jobs:
           OCR_SFX_FILTER: ${{ inputs.sfx_filter }}
           TRANSLATE_TO_ARABIC: ${{ inputs.translate_to_arabic }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_TRANSLATION_MODEL: ${{ inputs.translation_model }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           BYPASS_LAB_WARP: ${{ inputs.bypass_lab_warp }}
           BYPASS_LAB_TEST_ALL: ${{ inputs.bypass_lab_test_all }}
