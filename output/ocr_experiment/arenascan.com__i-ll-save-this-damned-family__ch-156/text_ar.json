@@ -1,0 +1,1483 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "156",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "ILLSAVE THISDAMNED FAMILY! STORY Munirang ILLUSTRATIONOlbeera",
+          "confidence": 0.887,
+          "text_ar": "سأنقذ هذه العائلة اللعينة! القصة: مونيرانج، الرسوم: أولبيرا"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "EPISODE155",
+          "confidence": 0.996,
+          "text_ar": "الفصل 155"
+        },
+        {
+          "text": "9 MONTHS",
+          "confidence": 0.986,
+          "text_ar": "9 أشهر"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "m OFFEE MANGA",
+          "confidence": 0.236,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "DROP",
+          "confidence": 0.931,
+          "text_ar": "سقوط"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "PHEW. THAT'S IT. I CANFINALLY TAKE A BREAK.",
+          "confidence": 0.933,
+          "text_ar": "فوّه. هذا هو. يمكنني أخيرًا أخذ قسط من الراحة."
+        },
+        {
+          "text": "COEFEEMANGA",
+          "confidence": 0.573,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "LGH,I'M SO SICK OF PAPERWORK!I SHOLLD HAVE JUST GONE WITH HIS HIGHNESS...",
+          "confidence": 0.925,
+          "text_ar": "آه، لقد مللت حقًا من الأعمال الورقية! كان يجب أن أذهب مع سموه..."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.875,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "KNOCK KNOCK CAPTAIN, THERE'S A REPORT FROMTHE PUBLIC SECURITY DEPARTMENT'S SOCIAL ORDERMAINTENANCE TEAM.",
+          "confidence": 0.937,
+          "text_ar": "طرق طرق. أيها القائد، هناك تقرير من فريق الحفاظ على النظام الاجتماعي التابع لشرطة الأمن العام."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "广 COFFEE MANGA",
+          "confidence": 0.155,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "COME IN!",
+          "confidence": 0.964,
+          "text_ar": "تفضل بالدخول!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HERE YOU GO.",
+          "confidence": 0.951,
+          "text_ar": "تفضل."
+        },
+        {
+          "text": "LEVEL 5?",
+          "confidence": 0.944,
+          "text_ar": "المستوى 5؟"
+        },
+        {
+          "text": "THE HIGHEST LEVEL TO POSE A RISK TO PUBLIC SECURITY?",
+          "confidence": 0.916,
+          "text_ar": "أعلى مستوى يمثل خطرًا على الأمن العام؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "YES. THEY ASKED ME TO HAVE YOU TAKE A LOOKAND DELIVERIT TO HIS HIGHNESS.",
+          "confidence": 0.941,
+          "text_ar": "نعم. طلبوا مني أن أجعل حضرتك تلقي نظرة عليه وتوصله إلى سموه."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "ALL RIGHT.",
+          "confidence": 0.973,
+          "text_ar": "حسناً."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "FLINCH",
+          "confidence": 0.981,
+          "text_ar": "ارتجافة"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "WHAT ARE THESE GARBAGE LYRICS?",
+          "confidence": 0.962,
+          "text_ar": "ما هذه الكلمات القذرة؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "SPRING HOW DARE THEY MAKE LISE OF HIS HIGHNESS'S WRATH!",
+          "confidence": 0.946,
+          "text_ar": "كيف يتجرؤون على الاستخفاف بغضب سموه!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "OFTEANGA",
+          "confidence": 0.561,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "ARE YOU ALL RIGHT?",
+          "confidence": 0.916,
+          "text_ar": "هل أنت بخير؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "I'M FINE. THIS NEEDS TO GET TO HIS HIGHNESS AT ONCE, SO SEND FOR A PALACE MESSENGER... NO.",
+          "confidence": 0.949,
+          "text_ar": "أنا بخير. يجب أن يصل هذا إلى سموه فورًا، لذا أرسل في طلب رسول للقصر... لا."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.86,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "CALL FOR A MESSENGER FROM THE PHOENIX KNIGHTS.",
+          "confidence": 0.947,
+          "text_ar": "استدعِ رسولًا من فرسان الفينيق."
+        },
+        {
+          "text": "iOFFMANGA",
+          "confidence": 0.539,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "THEY WILL BE FASTER.",
+          "confidence": 0.953,
+          "text_ar": "سيكونون أسرع."
+        },
+        {
+          "text": "YES, CAPTAIN!",
+          "confidence": 0.976,
+          "text_ar": "حاضر أيها القائد!"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "OFFEE MANGA",
+          "confidence": 0.894,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "THIS NIGHT DRESS IS TOO LONG...",
+          "confidence": 0.956,
+          "text_ar": "ثوب النوم هذا طويل جداً..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "OH WELL. AT LEAST I HAVE SOMETHING TO CHANGE INTO.",
+          "confidence": 0.966,
+          "text_ar": "حسناً لا بأس. على الأقل لدي ما أرتديه غيره."
+        },
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.621,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "GLANCE",
+          "confidence": 0.978,
+          "text_ar": "التفاتة"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "V COBEE MANGA",
+          "confidence": 0.734,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "I'M THIRSTY, BUT THERE'S NO WATER...",
+          "confidence": 0.925,
+          "text_ar": "أنا عطشى، ولكن ليس هناك ماء..."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.849,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "THERE MLST BE SOME IN THE DRAWING ROOM.",
+          "confidence": 0.945,
+          "text_ar": "لا بد أن يكون هناك بعضه في غرفة الاستقبال."
+        },
+        {
+          "text": "CRr",
+          "confidence": 0.883,
+          "text_ar": "صريص"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "COFFEE NGA",
+          "confidence": 0.704,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "LGH, I'M SORE ALL OVER.",
+          "confidence": 0.926,
+          "text_ar": "آه، جسدي كله يؤلمني."
+        },
+        {
+          "text": "TRUDGE",
+          "confidence": 0.989,
+          "text_ar": "خطوات ثقيلة"
+        },
+        {
+          "text": "TRUDGE",
+          "confidence": 0.988,
+          "text_ar": "خطوات ثقيلة"
+        },
+        {
+          "text": "DRAG",
+          "confidence": 0.932,
+          "text_ar": "جر"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": []
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "HLH?",
+          "confidence": 0.944,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.924,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "STUMBLE",
+          "confidence": 0.894,
+          "text_ar": "تعثر"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "NOOO! IALMOST MADE IT!",
+          "confidence": 0.956,
+          "text_ar": "لاا! لقد كدت أنجح!"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "GRAB",
+          "confidence": 0.985,
+          "text_ar": "إمساك"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "YES!",
+          "confidence": 0.984,
+          "text_ar": "رائع!"
+        },
+        {
+          "text": "面 OFFEE MANGA",
+          "confidence": 0.086,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "NOOO!",
+          "confidence": 0.936,
+          "text_ar": "لاا!"
+        },
+        {
+          "text": "m OFFEE MANGA",
+          "confidence": 0.34,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "m COFFEE MANGA",
+          "confidence": 0.21,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "DU DUN 、 /",
+          "confidence": 0.24,
+          "text_ar": "دقات قلب"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "广 COFFEEMANGA",
+          "confidence": 0.295,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "THIS IS SO HLMILIATING...",
+          "confidence": 0.944,
+          "text_ar": "هذا مخجل حقاً..."
+        },
+        {
+          "text": "AS IF FALLING",
+          "confidence": 0.968,
+          "text_ar": "كما لو أن السقوط"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "OVER ISN'T BAD ENOLGH ALREADY.",
+          "confidence": 0.956,
+          "text_ar": "لم يكن سيئاً بما يكفي بالفعل."
+        },
+        {
+          "text": "COFFEE RINGA",
+          "confidence": 0.663,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "WHAT IS WRONG WITH ME?",
+          "confidence": 0.937,
+          "text_ar": "ما خطبي؟"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "AT LEAST NO ONE SAW CLACK THAT!",
+          "confidence": 0.955,
+          "text_ar": "على الأقل لم يرني أحد هكذا!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "m OFFEE MANGA FLINCH",
+          "confidence": 0.246,
+          "text_ar": "كوفي مانغا - ارتجافة"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "TARA!",
+          "confidence": 0.992,
+          "text_ar": "تارا!"
+        },
+        {
+          "text": "WHAT... OH NO!",
+          "confidence": 0.92,
+          "text_ar": "ماذا... أوقفت! لا!"
+        },
+        {
+          "text": "V COFFEE MANGA",
+          "confidence": 0.475,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": []
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "ARE YOU ALL RIGHT?",
+          "confidence": 0.967,
+          "text_ar": "هل أنت بخير؟"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "IWANTED TO GET SOME WATER, BUT THEN I TRIPPED AND...",
+          "confidence": 0.932,
+          "text_ar": "أردت فقط الحصول على بعض الماء، لكني تعثرت و..."
+        },
+        {
+          "text": "N-NEVER MIND.",
+          "confidence": 0.977,
+          "text_ar": "ل-لا تهتم."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.916,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "LGH, I WANT TO DISAPPEAR.",
+          "confidence": 0.919,
+          "text_ar": "آه، أود الاختفاء."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.914,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "SO YOU FELL OVER?",
+          "confidence": 0.869,
+          "text_ar": "إذن لقد وقعتِ؟"
+        },
+        {
+          "text": "PLEASE JUST PRETEND YOU DIDN'T SEE ANYTHING.",
+          "confidence": 0.955,
+          "text_ar": "أرجوك تظاهر فقط أنك لم تر شيئاً."
+        },
+        {
+          "text": "MY NIGHT DRESS WAS TOO LONG FOR ME AND I TRIPPED OVER IT.",
+          "confidence": 0.915,
+          "text_ar": "كان ثوب نومي طويلاً جداً عليّ فتثعرت به."
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "THAT'S NOT GOOD. ARE YOU HURT?",
+          "confidence": 0.898,
+          "text_ar": "هذا سيء. هل أنت مصابة؟"
+        },
+        {
+          "text": "RAISE",
+          "confidence": 0.964,
+          "text_ar": "نهوض"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "NO, IMFINE.",
+          "confidence": 0.964,
+          "text_ar": "لا، أنا بخير."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.907,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "SHIFT",
+          "confidence": 0.988,
+          "text_ar": "تحرك"
+        },
+        {
+          "text": "THROB",
+          "confidence": 0.966,
+          "text_ar": "خفقان"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "URK!",
+          "confidence": 0.943,
+          "text_ar": "آخ!"
+        },
+        {
+          "text": "Vi COFFEE MANGA",
+          "confidence": 0.452,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.982,
+          "text_ar": "ما الأمر؟"
+        },
+        {
+          "text": "特公行",
+          "confidence": 0.293,
+          "text_ar": "ألم"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "SIGH",
+          "confidence": 0.982,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "MY SIDE IS JLST VERY SORE.",
+          "confidence": 0.903,
+          "text_ar": "جانبي يؤلمني فقط بشدة."
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "RUSTLE HLH?",
+          "confidence": 0.863,
+          "text_ar": "حفيف - هاه؟"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.92,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "Ci CoFEEMAN",
+          "confidence": 0.606,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "LIFT",
+          "confidence": 0.989,
+          "text_ar": "رفع"
+        },
+        {
+          "text": "NOW HE'S JLIST PICKING ME UP WHENEVER HE PLEASES!",
+          "confidence": 0.925,
+          "text_ar": "ها هو يحملني مجددًا وقتما شاء!"
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "COTANGA",
+          "confidence": 0.508,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "2 COFFEE MANGA 1",
+          "confidence": 0.14,
+          "text_ar": ""
+        },
+        {
+          "text": "PLEASE WARN ME BEFORE YOU DO THIS AGAIN, YOUR HIGHNESS.",
+          "confidence": 0.965,
+          "text_ar": "أرجو أن تحذرني قبل أن تفعل هذا مجدداً، سمو الأمير."
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": []
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "IF YOU WANT ME TO.",
+          "confidence": 0.925,
+          "text_ar": "إن كنتِ ترغبين في ذلك."
+        },
+        {
+          "text": "M OFFEE MANGA",
+          "confidence": 0.119,
+          "text_ar": ""
+        },
+        {
+          "text": "NOW,MAY I CARRY YOU OVER TO THE BED LIKE THIS?",
+          "confidence": 0.94,
+          "text_ar": "الآن، هل يمكنني حملك إلى السرير هكذا؟"
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "YES, PLEASE DO, YOUR HIGHNESS.",
+          "confidence": 0.947,
+          "text_ar": "نجل، تفعل ذلك أرجوك، سمو الأمير."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "0 COFEANGA",
+          "confidence": 0.132,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "KYLE.",
+          "confidence": 0.97,
+          "text_ar": "كايل."
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "YCOFENGA",
+          "confidence": 0.528,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "OH, RIGHT... KYLE.",
+          "confidence": 0.963,
+          "text_ar": "أه، صحيح... كايل."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.847,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "eoFFEEMNGA",
+          "confidence": 0.606,
+          "text_ar": ""
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.997,
+          "text_ar": "خطوة"
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.917,
+          "text_ar": ""
+        },
+        {
+          "text": "HE GOT HERE SO QUICKLY... MLST BE BECALISE HE HAS SLCH LONG LEGS.",
+          "confidence": 0.904,
+          "text_ar": "لقد وصل بسرعة حقاً... لا بد أن ذلك لأن ساقيه طويلتان للغاية."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": []
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "TURN",
+          "confidence": 0.986,
+          "text_ar": "التفات"
+        },
+        {
+          "text": "HE'S ALREADY LEAVING?",
+          "confidence": 0.976,
+          "text_ar": "أسيغادر بالفعل؟"
+        },
+        {
+          "text": "HAHA, THAT'S SO DISAPPOINTING..",
+          "confidence": 0.942,
+          "text_ar": "هاها، هذا مخيب للآمال حقاً..."
+        },
+        {
+          "text": "WHAT",
+          "confidence": 0.507,
+          "text_ar": "ماذا؟"
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "COFEE MANGA",
+          "confidence": 0.818,
+          "text_ar": ""
+        },
+        {
+          "text": "DISAPPOINTING?",
+          "confidence": 0.999,
+          "text_ar": "مخيب للآمال؟"
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": [
+        {
+          "text": "COTEN",
+          "confidence": 0.419,
+          "text_ar": ""
+        },
+        {
+          "text": "I DIDN'T KNOW I LIKED HIM THAT MLCH ALREADY.",
+          "confidence": 0.915,
+          "text_ar": "لم أكن أعلم أنني معجبة به إلى هذا الحد بالفعل."
+        },
+        {
+          "text": "OH! HE WASN'T LEAVING.",
+          "confidence": 0.971,
+          "text_ar": "أه! لم يكن مغادراً."
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "BLINK",
+          "confidence": 0.96,
+          "text_ar": "رمش"
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.928,
+          "text_ar": "خطوة"
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "WHAT, ARE YOU SURPRISED I'M SO THOLGHTFLL?",
+          "confidence": 0.933,
+          "text_ar": "ماذا، أمتفاجئة لأنني شديد الاهتمام هكذا؟"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.885,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.891,
+          "text_ar": ""
+        },
+        {
+          "text": "URK...",
+          "confidence": 0.925,
+          "text_ar": "أرخ..."
+        },
+        {
+          "text": "GLUG",
+          "confidence": 0.967,
+          "text_ar": "جرع"
+        },
+        {
+          "text": "GLUG",
+          "confidence": 0.974,
+          "text_ar": "جرع"
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "国 OFFEE MANGA",
+          "confidence": 0.049,
+          "text_ar": ""
+        },
+        {
+          "text": "TAP",
+          "confidence": 0.967,
+          "text_ar": "نقر"
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "HOW DO YOL FEEL?",
+          "confidence": 0.896,
+          "text_ar": "كيف تشعرين الآن؟"
+        },
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.613,
+          "text_ar": ""
+        },
+        {
+          "text": "THE MEDICINE SEEMS TO BE WORKING. I'MMLCH BETTER.",
+          "confidence": 0.948,
+          "text_ar": "يبدو أن الدواء يأتي بنتيجة. أنا أفضل بكثير."
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "ANDHOW DO YOU FEEL OTHERWISE?",
+          "confidence": 0.927,
+          "text_ar": "وكيف تشعرين من نواحي أخرى؟"
+        },
+        {
+          "text": "BETTER TH△NIBEFODE",
+          "confidence": 0.769,
+          "text_ar": "أفضل من ذي قبل."
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "WHILE YOU WERE ASLEEP, I TOLD MY COUSIN ABOLT US.",
+          "confidence": 0.857,
+          "text_ar": "بينما كنتِ نائمة، أخبرتُ ابن عمي بشأننا."
+        },
+        {
+          "text": "ADALACT7CCOn",
+          "confidence": 0.408,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "IAPOLOGILEPOR FAILING TO KEEP MYPROMISE.",
+          "confidence": 0.936,
+          "text_ar": "أنا أعتذر عن إخفاقي في الحفاظ على وعدي."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": ""
+        },
+        {
+          "text": "NO, IT'S FINE.",
+          "confidence": 0.868,
+          "text_ar": "لا، لا بأس."
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "IF I HAD KNOWN THINGSWOLLD GET SO MESSY,I WOULDN'T HAVE ASKED YOU TO KEEP IT A SECRET.",
+          "confidence": 0.921,
+          "text_ar": "لو كنتُ أعلم أن الأمور ستصبح فوضوية هكذا، لما طلبت منك الحفاظ على سرية الأمر."
+        },
+        {
+          "text": "OFFEE MANGA",
+          "confidence": 0.854,
+          "text_ar": ""
+        },
+        {
+          "text": "I SHOLLDN'T HAVE COME TO THIS PLACE.",
+          "confidence": 0.925,
+          "text_ar": "ما كان لي أن أتي إلى هذا المكان."
+        },
+        {
+          "text": "AND I SHOLLDN'T",
+          "confidence": 0.918,
+          "text_ar": "وما كان لي..."
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "HAVEPRESSURED YOU INTO ATTENDING THE BANQLET.",
+          "confidence": 0.896,
+          "text_ar": "أن أضغط عليك لحضور المأدبة."
+        },
+        {
+          "text": "I KNOWYOU WERE JUST TELLING ME TO BECALISE I TOLD YOU TO ESCORT",
+          "confidence": 0.879,
+          "text_ar": "أعلم أنكِ كنتِ تفعلين ذلك فقط بناءً على طلبي لمرافقة..."
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "LADY ANGELA.",
+          "confidence": 0.976,
+          "text_ar": "الليدي أنجيلا."
+        },
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.638,
+          "text_ar": ""
+        },
+        {
+          "text": "THAT'S WHY I FEEL WORSE.",
+          "confidence": 0.95,
+          "text_ar": "لهذا السبب أشعر بسوء أكبر."
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "PLEASE STOP BLAMING YOURSELF.",
+          "confidence": 0.965,
+          "text_ar": "أرجوك توقفي عن لوم نفسك."
+        },
+        {
+          "text": "IT'SALL OVER. I'LL BE MORE CAREFLL FROMNOWON.",
+          "confidence": 0.963,
+          "text_ar": "لقد انتهى كل شيء. سأكون أكثر حذراً من الآن فصاعداً."
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "IF ANYTHING LIKE THAT HAPPENS AGAIN WHEN I'M NOT WITH YOU,",
+          "confidence": 0.948,
+          "text_ar": "إذا حدث أي شيء مماثل مجدداً عندما لا أكون معكِ،"
+        },
+        {
+          "text": "GO STRAIGHT FOR THE THROAT AND JUST KILL THEM!",
+          "confidence": 0.963,
+          "text_ar": "فاقصدي نحورهم مباشرة واقتليهم!"
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": [
+        {
+          "text": "I WILL,OF COURSE,MAKE SURE TTIGCJAnnCT",
+          "confidence": 0.525,
+          "text_ar": "بالطبع، سأحرص على..."
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "ITNEVERHAPPENSIO YOU AGAIN.I WILL PROTECT YOL.",
+          "confidence": 0.909,
+          "text_ar": "ألا يتكرر هذا معكِ أبداً. سأحميكِ."
+        },
+        {
+          "text": "COFE HANGAG",
+          "confidence": 0.615,
+          "text_ar": ""
+        },
+        {
+          "text": "ALL RIGHT. BUT I'LL PROTECT MYSELF AS WELL.",
+          "confidence": 0.938,
+          "text_ar": "حسناً. لكنني سأحمي نفسي أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "AND I'LL DO MY BEST TOPROTECT YOU TOO.",
+          "confidence": 0.915,
+          "text_ar": "وسأبذل قصارى جهدي لحمايتك أنت أيضاً."
+        },
+        {
+          "text": "OFFE MANGA",
+          "confidence": 0.695,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "i COFFEE ANGA",
+          "confidence": 0.749,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.978,
+          "text_ar": "ما الأمر؟"
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": [
+        {
+          "text": "I BELIEVE YOU WERE RIGHT.",
+          "confidence": 0.938,
+          "text_ar": "أعتقد أنكِ كنتِ محقة."
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "T OFFEE MANGA",
+          "confidence": 0.078,
+          "text_ar": ""
+        },
+        {
+          "text": "ABOUT WHAT?",
+          "confidence": 0.939,
+          "text_ar": "بخصوص ماذا؟"
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.892,
+          "text_ar": ""
+        },
+        {
+          "text": "ABOLIT HOW I MLST HAVE DONE SOMETHING GREAT INMYPAST LIFE TO HAVE MET YOU IN THIS ONE.",
+          "confidence": 0.887,
+          "text_ar": "بخصوص أنني لا بد أنني فعلت شيئاً عظيماً في حياتي السابقة لألتقي بكِ في هذه الحياة."
+        },
+        {
+          "text": "I ADMIT THAT YOU WERE CORRECT.",
+          "confidence": 0.931,
+          "text_ar": "أقر أنكِ كنتِ على حق."
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "NOD",
+          "confidence": 0.971,
+          "text_ar": "إيماء"
+        },
+        {
+          "text": "COFFELANGA",
+          "confidence": 0.559,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "0 I'M GLAD YOU FINALLY ADMIT IT. IT TOOK YOU A WHILE.",
+          "confidence": 0.366,
+          "text_ar": "أنا سعيدة لأنك اعترفت بذلك أخيراً. لقد استغرق الأمر منك وقتاً طويلاً."
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "SMILE",
+          "confidence": 0.996,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.819,
+          "text_ar": ""
+        },
+        {
+          "text": "GOOD NIGHT, THEN.",
+          "confidence": 0.985,
+          "text_ar": "طابت ليلتك إذن."
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "OH... ALL RIGHT.",
+          "confidence": 0.895,
+          "text_ar": "أه... حسناً."
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": ""
+        },
+        {
+          "text": "DON'T GO. MUTTER",
+          "confidence": 0.925,
+          "text_ar": "لا تذهب. تمتمة"
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.924,
+          "text_ar": ""
+        },
+        {
+          "text": "WHIP WHAT?",
+          "confidence": 0.93,
+          "text_ar": "هاه؟ ماذا؟"
+        }
+      ]
+    },
+    {
+      "page": 86,
+      "image_id": 86,
+      "sentences": []
+    },
+    {
+      "page": 87,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "WHY DID I SAY THAT?!",
+          "confidence": 0.936,
+          "text_ar": "لماذا قلتُ ذلك؟!و"
+        },
+        {
+          "text": "WHATHAVE I DONE?!",
+          "confidence": 0.966,
+          "text_ar": "ما الذي فعلته بحق الجحيم؟!و"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 88,
+      "sentences": [
+        {
+          "text": "BLOS",
+          "confidence": 0.825,
+          "text_ar": "صدمة"
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 89,
+      "sentences": [
+        {
+          "text": "WHAT DID YOU JUST SAY?",
+          "confidence": 0.926,
+          "text_ar": "ماذا قلت للتو؟"
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA TOBECONTINUED...",
+          "confidence": 0.911,
+          "text_ar": "يتبع..."
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.988,
+          "text_ar": ""
+        },
+        {
+          "text": "WRITING MUNIRANG CHOHO STORYBOARD OLBEERA ILLUSTRATION COLORING ASSISTANT PALPAL, ADAENG EDITOR JEOMRYE KENAZLTD. PRODUCTION WOODY HEAD EDITOR PRODUCER Y",
+          "confidence": 0.966,
+          "text_ar": ""
+        },
+        {
+          "text": "THISWORKISPUBLISHEDUNDERCONTRACTBETWEENKENAZLTD.AND THECOPYRIGHTHOLDER,ANDISPROTECTEDUNDERCOPYRIGHTLAW.ANY UNAUTHORIZEDUSE,DUPLICATION,ORSHARINGWILLBEMETWITHLEGALACTION.",
+          "confidence": 0.984,
+          "text_ar": ""
+        }
+      ]
+    }
+  ]
+}
