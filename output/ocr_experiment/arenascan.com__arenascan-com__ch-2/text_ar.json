@@ -1,0 +1,671 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "2",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "REPOST ANYWHERE ONSOCIAL MEDIA...YOUDIE WE DROP THIS.",
+          "confidence": 0.945,
+          "text_ar": "يُمنع إعادة نشر هذا الفصل في أي مكان على وسائل التواصل الاجتماعي... إن فعلتم فسوف تُعاقَبون. نحن من قمنا بترجمته."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THE HOUSE OF ELLIOS, FROM GENERATION TO GENERATION, HASBEENTHE CLOSEST ALLY OF THEIMPERIAL FAMILY,LAYINGTHE FOUNDATIONFORTHEEMPIRE, AND GREATLY CONTRIBUTING TO THE SOLIDIFICATION OF THE EMPIRE.",
+          "confidence": 0.943,
+          "text_ar": "عائلة إليوس، جنباً إلى جنب عبر الأجيال، كانت الحليف الأقرب للعائلة الإمبراطورية، حيث وضعت الأساس للإمبراطورية وساهمت بشكل كبير في ترسيخ أركانها."
+        },
+        {
+          "text": "BUT NOW, THE GLORY OF THE ELLIOS FAMILYHAS FADED...",
+          "confidence": 0.867,
+          "text_ar": "لكن الآن، لقد أفل مجد عائلة إليوس..."
+        },
+        {
+          "text": "...IFONLY HE HADN'T DIED...",
+          "confidence": 0.857,
+          "text_ar": "...لو أنه لم يمت فقط..."
+        },
+        {
+          "text": "THAT BOY? WHO..?",
+          "confidence": 0.916,
+          "text_ar": "ذلك الفتى؟ ومن يكون..؟"
+        },
+        {
+          "text": "IF NOT FORTHAT, ONE OF THE NEXT EMPERORSCOULD HAVE BEEN FROM OUR FAMILY.",
+          "confidence": 0.927,
+          "text_ar": "لولا ذلك، لكان أحد الأباطرة القادمين من عائلتنا."
+        },
+        {
+          "text": "THIS COULDBE OUR CHANCE!",
+          "confidence": 0.945,
+          "text_ar": "قد تكون هذه فرصتنا!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "THE MCQUEEN'S ELDEST SON HAS ALREADY TAKEN THE POSITIONOF THE PALACE'SSECOND SECRETARY.",
+          "confidence": 0.952,
+          "text_ar": "الابن الأكبر لعائلة ماكوين تولى بالفعل منصب السكرتير الثاني في القصر."
+        },
+        {
+          "text": "AND THE VERATO'S SECOND DAUGHTERIS THE THIRD HEIR OF THE THRONE, PRINCESSMARGARET'S, LADY-IN-WAITING.",
+          "confidence": 0.938,
+          "text_ar": "والابنة الثانية لعائلة فيراتو هي الوصيفة الثالثة لولي العهد، الأميرة مارغريت."
+        },
+        {
+          "text": "SO THEN WHY HAS NONE OF MY FAMILYTAKENUP A ROLE AT THE PALACE?",
+          "confidence": 0.593,
+          "text_ar": "إذن لماذا لم يتولَ أي فرد من عائلتي أي دور في القصر؟"
+        },
+        {
+          "text": "PEOPLE ARE TALKING BEHIND MY BACK, SAYING THAT I ONLYLOVE MONEY.",
+          "confidence": 0.94,
+          "text_ar": "الناس يتحدثون من وراء ظهري، قائلين إنني لا أهتم سوى بالمال."
+        },
+        {
+          "text": "IAM EXTREMELY DISCONTENTED WITH THIS...",
+          "confidence": 0.954,
+          "text_ar": "أنا مستاء للغاية من هذا الأمر..."
+        },
+        {
+          "text": "IF ANYONE WHO BEARS THE LAST NAME OF ELLIOS PASSES THE ADMINISTRATIVE EXAM WITH TOPMARKS AND BECOMES FIRST SECRETARY...",
+          "confidence": 0.914,
+          "text_ar": "إذا نجح أي شخص يحمل لقب عائلة إليوس في امتحان الإدارة بأعلى الدرجات وأصبح السكرتير الأول..."
+        },
+        {
+          "text": "IWILL PRESENTTHEM WITH A THIRD OF MY SHARES.",
+          "confidence": 0.913,
+          "text_ar": "فسأمنحه ثلث أسهمي."
+        },
+        {
+          "text": "AS WELL AS THE ELLIOS FRONTIER CALLED THE\"PANTHEON\" LOCATEDIN THE WESTSIDEOF THE EMPIRE.",
+          "confidence": 0.95,
+          "text_ar": "إضافة إلى أراضينا الحدودية المسماة \"البانثيون\" الواقعة في الجانب الغربي من الإمبراطورية."
+        },
+        {
+          "text": "WOW!",
+          "confidence": 0.909,
+          "text_ar": "يا له من أمر مذهل!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "WE WILL BE MEETING AGAIN AFTERLUNCHINTHE DINING ROOM.",
+          "confidence": 0.965,
+          "text_ar": "سنلتقي مرة أخرى بعد الغداء في غرفة الطعام."
+        },
+        {
+          "text": "whisper",
+          "confidence": 0.995,
+          "text_ar": "همس"
+        },
+        {
+          "text": "whisper",
+          "confidence": 0.995,
+          "text_ar": "همس"
+        },
+        {
+          "text": "whisper",
+          "confidence": 0.99,
+          "text_ar": "همس"
+        },
+        {
+          "text": "whisper",
+          "confidence": 0.99,
+          "text_ar": "همس"
+        },
+        {
+          "text": "whisper",
+          "confidence": 0.997,
+          "text_ar": "همس"
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.989,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.992,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.976,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "S.TEP",
+          "confidence": 0.79,
+          "text_ar": "خطوة"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "...ATHIRD OF THE ELLIOS'S SHARES WHICHARE THE TOPFIVE IN THE COUNTRY...",
+          "confidence": 0.883,
+          "text_ar": "...ثلث أسهم عائلة إليوس التي تعد من بين الخمس الأوائل في البلاد..."
+        },
+        {
+          "text": "AND THE \"PANTHEON\"WHICH IS RIGHT NEXT TO GAHAN. THAT MEANS I COULD EXCLUSIVELY DISTRIBUTE LUXURY GOODS FROM GAHAN...",
+          "confidence": 0.92,
+          "text_ar": "و\"البانثيون\" التي تقع بجوار غاهان مباشرة. هذا يعني أنه يمكنني توزيع السلع الفاخرة حصرياً من غاهان..."
+        },
+        {
+          "text": "DAMN, THISISGIVING ME INSPIRATIONTORUN A CHAUFFEUR SERVICE!",
+          "confidence": 0.963,
+          "text_ar": "تباً، هذا يلهمني لافتتاح خدمة توصيل خاصة!"
+        },
+        {
+          "text": "BUT... JUST ABOUT CREAK ANYONE CAN...",
+          "confidence": 0.979,
+          "text_ar": "ولكن... يمكن لأي شخص تقريباً..."
+        },
+        {
+          "text": "BITE",
+          "confidence": 0.994,
+          "text_ar": "قضمة"
+        },
+        {
+          "text": "DIDYOU CALL ME, MISS?",
+          "confidence": 0.945,
+          "text_ar": "هل ناديتني، آنستي؟"
+        },
+        {
+          "text": "WHY DON'T YOUHAVE LUNCH?",
+          "confidence": 0.969,
+          "text_ar": "لمَ لا تتناولين طعام الغداء؟"
+        },
+        {
+          "text": "HUH?I DIDN'THAVE AN APPETITE EARLIER, SO I BROUGHT IT WITH ME.",
+          "confidence": 0.94,
+          "text_ar": "هاه؟ لم أكن أشعر بالشهية من قبل، لذا أحضرته معي."
+        },
+        {
+          "text": "AH...YOU BROUGHT IT... WITHYOU...",
+          "confidence": 0.909,
+          "text_ar": "آه... لقد أحضرته... معك..."
+        },
+        {
+          "text": "WHYDID YOU CALL FOR ME? IS THERE ANYTHING YOU NEED?",
+          "confidence": 0.907,
+          "text_ar": "لماذا طلبتني؟ هل تحتاجين إلى شيء؟"
+        },
+        {
+          "text": "YES. NOTIFY ME AS SOON AS LUNCHIS OVER IN THE DINING ROOM.",
+          "confidence": 0.915,
+          "text_ar": "نعم. أبلغيني بمجرد انتهاء الغداء في غرفة الطعام."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.956,
+          "text_ar": "حاضر."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HAVING THE ELLIOS BLOOD IS KEY.",
+          "confidence": 0.921,
+          "text_ar": "امتلاك دماء إليوس هو المفتاح."
+        },
+        {
+          "text": "SOMEHOW, I'LL HAVE TO PREVENTTHEM FROMENTERING THE PALACE.",
+          "confidence": 0.899,
+          "text_ar": "بطريقة ما، سأضطر لمنعهم من دخول القصر."
+        },
+        {
+          "text": "chomp",
+          "confidence": 0.996,
+          "text_ar": "قضم"
+        },
+        {
+          "text": "FROM THE LOOK IN THEIR EYES, THEY'RE SHOWING NO SIGNS OF BACKING OFF.",
+          "confidence": 0.931,
+          "text_ar": "من نظرة أعيُنهم، لا يظهر عليهم أي دلالة على التراجع."
+        },
+        {
+          "text": "WHAT AM I GOING TODO?",
+          "confidence": 0.926,
+          "text_ar": "ما الذي أنا فاعلة؟"
+        },
+        {
+          "text": "FATHER, WHATIFIDON'T GET THE TOP SCORE?",
+          "confidence": 0.963,
+          "text_ar": "أبي، ماذا لو لم أحصل على أعلى درجة؟"
+        },
+        {
+          "text": "IFYOUGETTHE TOP SCORE, YOU'LL BE ABLE TOPASS THE ADMINISTRATOR'S EXAM AT THE SAME TIME, JASON.",
+          "confidence": 0.927,
+          "text_ar": "إذا حصلت على أعلى درجة، ستتمكن من اجتياز اختبار الإدارة في الوقت ذاته، يا جايسون."
+        },
+        {
+          "text": "Jason... Idon't think so...",
+          "confidence": 0.94,
+          "text_ar": "جايسون... لا أعتقد ذلك..."
+        },
+        {
+          "text": "WHAT ANIDIOT...OF COURSE YOU NEED TO GET THE TOPSCOREAND JOBATTHESAME THAT. THATWAY,THERE WILL BE NODISPUTE ON WHOISHEIR.",
+          "confidence": 0.926,
+          "text_ar": "يا له من أحمق... بالطبع يجب أن تحصل على أعلى درجة وتحصل على الوظيفة في نفس الوقت. بهذه الطريقة، لن يكون هناك أي نزاع حول من هو الوريث."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "WAVE",
+          "confidence": 0.984,
+          "text_ar": "تلويح"
+        },
+        {
+          "text": "FATHER, MAYI APPLYFOR EARLY GRADUATION?",
+          "confidence": 0.941,
+          "text_ar": "أبي، هل يمكنني التقدم للتخرج المبكر؟"
+        },
+        {
+          "text": "Logan...",
+          "confidence": 0.884,
+          "text_ar": "لوغان..."
+        },
+        {
+          "text": "Idon't understand what you're thinking...",
+          "confidence": 0.901,
+          "text_ar": "أنا لا أفهم ما يدور في ذهنك..."
+        },
+        {
+          "text": "ALRIGHT, I'LL LET THE DEAN KNOWSO YOU CAN GRADUATE LATERON THIS MONTH.",
+          "confidence": 0.92,
+          "text_ar": "حسناً، سأبلغ العميد لكي تتمكن من التخرج في وقت لاحق من هذا الشهر."
+        },
+        {
+          "text": "HOW LONGISIT TILL THEY NOMINATE A SECRETARY?",
+          "confidence": 0.934,
+          "text_ar": "كم من الوقت حتى يعينوا سكرتيراً؟"
+        },
+        {
+          "text": "raise",
+          "confidence": 0.944,
+          "text_ar": "رفع"
+        },
+        {
+          "text": "AROUND2 OR 3 YEARS.",
+          "confidence": 0.926,
+          "text_ar": "حوالي سنتين أو ثلاث سنوات."
+        },
+        {
+          "text": "EVERYONE IS SURE THATA NEW EMPERORWILL TAKE THE THRONE AROUND THAT TIME.",
+          "confidence": 0.945,
+          "text_ar": "الجميع واثقون من أن إمبراطوراً جديداً سيتولى العرش في غضون ذلك الوقت."
+        },
+        {
+          "text": "WIDEN THAT'S IT! 3YEARS!",
+          "confidence": 0.947,
+          "text_ar": "اتساع هذا كل ما في الأمر! 3 سنوات!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "IN [THECHRONICLES OFOSIRIAJ, THE EMPEROR ASCENDED THE THRONEDURING THE CALM BEFORE THE STORM. THE STORMARRIVED SOON AFTER THAT.",
+          "confidence": 0.935,
+          "text_ar": "في [سجلات أوسيريا]، اعتلى الإمبراطور العرش خلال الهدوء الذي يسبق العاصفة. وقد وصلت العاصفة بعد فترة وجيزة من ذلك."
+        },
+        {
+          "text": "THERE'S STILL 3 MORE YEARS TOGO! I JUST NEED TOSTEERUS AWAYFROMTHEPATH OFRUIN!",
+          "confidence": 0.938,
+          "text_ar": "لا يزال أمامنا 3 سنوات أخرى! كل ما أحتاجه هو إبعادنا عن طريق الدمار!"
+        },
+        {
+          "text": "MISS, YOUR MEAL IS READY.WE'RE COMING IN!",
+          "confidence": 0.912,
+          "text_ar": "آنستي، طعامك جاهز. نحن قادمون للداخل!"
+        },
+        {
+          "text": ".YES! IT'S COMING.",
+          "confidence": 0.893,
+          "text_ar": "نعم! أنا قادمة."
+        },
+        {
+          "text": "MISS.",
+          "confidence": 0.901,
+          "text_ar": "آنستي."
+        },
+        {
+          "text": "LADY ARIA IS CALLING ME, SO I'LL GO DOWN FIRST.",
+          "confidence": 0.915,
+          "text_ar": "الليدي آريا تناديني، لذا سأذهب إلى الأسفل أولاً."
+        },
+        {
+          "text": "STEP STEP STEP",
+          "confidence": 0.901,
+          "text_ar": "خطوة خطوة خطوة"
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.941,
+          "text_ar": "خطوة"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "UGH,IT'SSO NARROW HERE! MOVE!",
+          "confidence": 0.953,
+          "text_ar": "تباً، المكان ضيق جداً هنا! تحركي!"
+        },
+        {
+          "text": "Hah...",
+          "confidence": 0.937,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "Hah...",
+          "confidence": 0.882,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "That bi-",
+          "confidence": 0.971,
+          "text_ar": "تلك اللعينة..."
+        },
+        {
+          "text": "WAIT! SHE ALMOST PUSHED ME O.!",
+          "confidence": 0.558,
+          "text_ar": "انتظري! كادت تدفعني للخارج!"
+        },
+        {
+          "text": "YOU-",
+          "confidence": 0.707,
+          "text_ar": "أيتها الـ..."
+        },
+        {
+          "text": "YOU DID THAT ON PURPOSE, DIDN'T YOU..?",
+          "confidence": 0.869,
+          "text_ar": "لقد فعلتِ ذلك عن قصد، أليس كذلك..؟"
+        },
+        {
+          "text": "DID WHAT?",
+          "confidence": 0.937,
+          "text_ar": "فعلت ماذا؟"
+        },
+        {
+          "text": "IWAS WONDERING WHO WAS TALKING! WASTALRING!",
+          "confidence": 0.959,
+          "text_ar": "كنت أتساؤل من كان يتحدث! كنت تتحدثين!"
+        },
+        {
+          "text": "Kyaaa IDIDN'T KNOW YOU WERE THERE~",
+          "confidence": 0.921,
+          "text_ar": "آه لم أكن أعرف أنك هنا~"
+        },
+        {
+          "text": "Aria Ellios",
+          "confidence": 0.85,
+          "text_ar": "آريا إليوس"
+        },
+        {
+          "text": "SORRY ?",
+          "confidence": 0.201,
+          "text_ar": "عذراً؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "You..you... that's too harsh...",
+          "confidence": 0.755,
+          "text_ar": "أنتِ.. أنتِ... هذا قاسي جداً..."
+        },
+        {
+          "text": "I'M THE ONLY ONE IN THIS FAMILY WHO HAS A BODY LIKE THIS. YET, YOU'RE SAYING THAT YOU DIDN'TKNOW WHO IT WAS!",
+          "confidence": 0.934,
+          "text_ar": "أنا الوحيدة في هذه العائلة التي تمتلك جسداً كهذا. ومع ذلك، تقولين إنك لم تكوني تعلمي من تكونين!"
+        },
+        {
+          "text": "I'M GOING TOTAKEREVENGE AND KILL HER...",
+          "confidence": 0.888,
+          "text_ar": "سأنتقم وأقتلها..."
+        },
+        {
+          "text": "WHATA BITCH...",
+          "confidence": 0.975,
+          "text_ar": "يا لها من عاهرة..."
+        },
+        {
+          "text": "ANY OTHER QUESTIONS?",
+          "confidence": 0.974,
+          "text_ar": "هل هناك أي أسئلة أخرى؟"
+        },
+        {
+          "text": "FATHER, I'MSTILL TOO YOUNG, RIGHT?",
+          "confidence": 0.97,
+          "text_ar": "أبي، أنا ما زلت أصغر من أن أترشح، أليس كذلك؟"
+        },
+        {
+          "text": "OF COURSE NOT, THERE'S NO RULEPROHIBITING YOUFROMAPPLYING. BUT YOU CAN ALSO APPLY AS A CANDIDATE FOR CROWNPRINCESS..",
+          "confidence": 0.906,
+          "text_ar": "بالطبع لا، لا توجد قاعدة تمنعك من التقديم. ولكن يمكنك أيضاً التقديم كمرشحة لولي العهد.."
+        },
+        {
+          "text": "YOU MUST PARTICIPATE.",
+          "confidence": 0.926,
+          "text_ar": "يجب عليك المشاركة."
+        },
+        {
+          "text": "OH MY! REALLY?",
+          "confidence": 0.939,
+          "text_ar": "يا إلهي! حقاً؟"
+        },
+        {
+          "text": "ALRIGHT, FATHER.I'LL WORK HARD!",
+          "confidence": 0.959,
+          "text_ar": "حسناً، يا أبي. سأعمل بجد!"
+        },
+        {
+          "text": "83 Ioso",
+          "confidence": 0.752,
+          "text_ar": "إيوس"
+        },
+        {
+          "text": "SET",
+          "confidence": 0.995,
+          "text_ar": "استعد"
+        },
+        {
+          "text": "..SNAP OUT OF IT.NOW IS NOT THE TIME TO SNAP...",
+          "confidence": 0.784,
+          "text_ar": "..تماسك. الآن ليس وقت التشتت..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THIS IS THE ONLY WAY!",
+          "confidence": 0.93,
+          "text_ar": "هذه هي الطريقة الوحيدة!"
+        },
+        {
+          "text": "FA...FATHER.",
+          "confidence": 0.932,
+          "text_ar": "أبي.. أبا.ه."
+        },
+        {
+          "text": "MAYI TRY OUT AS WELL?",
+          "confidence": 0.958,
+          "text_ar": "هل يمكنني خوض التجربة أيضاً؟"
+        },
+        {
+          "text": "YOU?",
+          "confidence": 0.906,
+          "text_ar": "أنتِ؟"
+        },
+        {
+          "text": "You said anyone with Ellios blood...So.",
+          "confidence": 0.866,
+          "text_ar": "قلت إن أي شخص يحمل دماء إليوس... لذا."
+        },
+        {
+          "text": "WHY ARE YOU STUTTERING? STOP IT.",
+          "confidence": 0.936,
+          "text_ar": "لماذا تتلعثمين؟ توقفي عن ذلك."
+        },
+        {
+          "text": "IDID， BUT YOU...",
+          "confidence": 0.792,
+          "text_ar": "لقد فعلت، ولكنكِ..."
+        },
+        {
+          "text": "TO ME....",
+          "confidence": 0.76,
+          "text_ar": "بالنسبة لي...."
+        },
+        {
+          "text": "PLEASE GIVE AN OPPORTUNITY TO ME AS WELL.",
+          "confidence": 0.96,
+          "text_ar": "ارجوكم امنحوني فرصة أنا أيضاً."
+        },
+        {
+          "text": "I...I'M AN ELLIOS TOO.",
+          "confidence": 0.939,
+          "text_ar": "أنـ.. أنا من عائلة إليوس أيضاً."
+        },
+        {
+          "text": "WHYARE YOU LIKE THIS?",
+          "confidence": 0.954,
+          "text_ar": "لماذا أنتِ هكذا؟"
+        },
+        {
+          "text": "DID YOU REALLY COME HERE THINKING THAT YOU BADUM COULD?",
+          "confidence": 0.918,
+          "text_ar": "هل جئتِ إلى هنا حقاً وأنتِ تظنين دقات قلب سريعة أن بإمكانك ذلك؟"
+        },
+        {
+          "text": "GOSH, LOOKAT HER.",
+          "confidence": 0.976,
+          "text_ar": "يا الهي، انظروا إليها."
+        },
+        {
+          "text": "JUST CRAZY!",
+          "confidence": 0.984,
+          "text_ar": "مجنونة حقاً!"
+        },
+        {
+          "text": "YOU'VE REALLY CHANGED.",
+          "confidence": 0.955,
+          "text_ar": "لقد تغيرتِ حقاً."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "SHUT IT!",
+          "confidence": 0.972,
+          "text_ar": "اخرسن!"
+        },
+        {
+          "text": "LENCE·",
+          "confidence": 0.809,
+          "text_ar": "هدوء."
+        },
+        {
+          "text": "WELL,",
+          "confidence": 0.955,
+          "text_ar": "حسناً،"
+        },
+        {
+          "text": "WHAT POSITION WOULD YOU TRY OUT FOR?",
+          "confidence": 0.947,
+          "text_ar": "ما هو المنصب الذي ستتقدمين له؟"
+        },
+        {
+          "text": "IFI WERE YOU...",
+          "confidence": 0.902,
+          "text_ar": "لو كنت مكانك..."
+        },
+        {
+          "text": "I'D HAVE NO CHOICE BUT TO ALLOWIT.",
+          "confidence": 0.878,
+          "text_ar": "لن يكون لدي خيار سوى السماح بذلك."
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.963,
+          "text_ar": "كينيز مالك حقوق الويبتون"
+        },
+        {
+          "text": "N NM（",
+          "confidence": 0.475,
+          "text_ar": "ترجمة"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "BROUGHT TO YOU BY MANHWA KINGDOM SCANS",
+          "confidence": 0.821,
+          "text_ar": "مقدم لكم من فرق مانهوا كينغدوم"
+        },
+        {
+          "text": "INCOLLABORATIONWITH AT LONELy SCANS",
+          "confidence": 0.538,
+          "text_ar": "بالتعاون مع لوني سكانز"
+        },
+        {
+          "text": "REDITS:",
+          "confidence": 0.967,
+          "text_ar": "فريق العمل:"
+        },
+        {
+          "text": "TS: RAN (LONELY AF) PR: LOLLI (LONELY AF) TL: ARES (MANHWA KINGDOM) CL: HYRA(MANHWA KINGDOM) RAWS:MANHWAKINGDOM RD: RAN (LONELY AF)",
+          "confidence": 0.904,
+          "text_ar": "التنقية: ران | التدقيق: لولي | الترجمة: أريس | التبييض: هيرا | الراوس: مانهوا كينغدوم | الإدارة: ران"
+        }
+      ]
+    }
+  ]
+}
