@@ -83,6 +83,10 @@ def _sb_eval(sb, js: str):
 
 _FAST_READING_JS = ("""(() => {
   const sel = '""" + _READING_IMG_SEL + """';
+  const rc = document.querySelector('""" + _READING_RC_SEL + """');
+  let node = rc, dd = 0;
+  while (node && node.children.length === 1 && dd < 3) { node = node.children[0]; dd++; }
+  const exp = node ? node.children.length : 0;
   const out = [];
   document.querySelectorAll(sel).forEach(e => {
     const src = e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
@@ -91,8 +95,35 @@ _FAST_READING_JS = ("""(() => {
     while (n && d < 5) { ctx += ' ' + (n.className && n.className.toString ? n.className.toString() : '') + ' ' + (n.id || ''); n = n.parentElement; d++; }
     out.push({src: src.trim(), ctx: ctx.toLowerCase().slice(0, 200)});
   });
-  return JSON.stringify(out);
+  return JSON.stringify({exp: exp, imgs: out});
 })()""")
+
+# [إصلاح — فصول طويلة (130 صورة)] قارئ comix.to يُركِّب وسوم <img> للصفحات القريبة من الشاشة فقط ويترك
+# الباقي عناصر فارغة؛ المسار السريع كان يرى 3 وسوم مستقرة فيعتمدها. الآن يُقارَن عددها بعدد عناصر الحاوية
+# (exp) ولا يُعتمَد المسار السريع إلا إن تساوَيا؛ وإلا يُستخدم التمرير التراكمي الكامل أدناه.
+_COLLECT_READING_JS = ("""(() => {
+  const sel = '""" + _READING_IMG_SEL + """';
+  const rc = document.querySelector('""" + _READING_RC_SEL + """');
+  let node = rc, dd = 0;
+  while (node && node.children.length === 1 && dd < 3) { node = node.children[0]; dd++; }
+  const kids = node ? Array.from(node.children) : [];
+  const out = [];
+  document.querySelectorAll(sel).forEach(e => {
+    const src = e.getAttribute('data-src') || e.getAttribute('data-lazy-src') ||
+                e.getAttribute('data-original') || e.currentSrc || e.getAttribute('src') || '';
+    let ctx = '', n = e, d = 0;
+    while (n && d < 5) { ctx += ' ' + (n.className && n.className.toString ? n.className.toString() : '') + ' ' + (n.id || ''); n = n.parentElement; d++; }
+    let ci = -1, a = e;
+    while (a && a.parentElement !== node) a = a.parentElement;
+    if (a && node) ci = kids.indexOf(a);
+    out.push({src: src.trim(), ci: ci, ctx: ctx.toLowerCase().slice(0, 200)});
+  });
+  return JSON.stringify({imgs: out, exp: kids.length,
+    y: window.scrollY + window.innerHeight, h: document.documentElement.scrollHeight});
+})()""")
+
+SB_SCROLL_STEP_SLEEP = float(os.environ.get("SB_SCROLL_STEP_SLEEP", "0.12") or 0.12)
+SB_SCROLL_MAX_SEC = float(os.environ.get("SB_SCROLL_MAX_SEC", "180") or 180)
 
 
 def _fast_reading_urls(sb, base_url: str) -> list[str] | None:
@@ -101,7 +132,8 @@ def _fast_reading_urls(sb, base_url: str) -> list[str] | None:
     from urllib.parse import urljoin
     raw = _sb_eval(sb, _FAST_READING_JS)
     try:
-        data = json.loads(raw) if isinstance(raw, str) else []
+        parsed = json.loads(raw) if isinstance(raw, str) else {}
+        data, exp = parsed.get("imgs") or [], int(parsed.get("exp") or 0)
     except Exception:
         return None
     urls, seen = [], set()
@@ -116,7 +148,55 @@ def _fast_reading_urls(sb, base_url: str) -> list[str] | None:
             return None
         seen.add(u)
         urls.append(u)
+    if urls and exp > len(urls):
+        return None     # عناصر صفحات أكثر من الوسوم المُركَّبة ← تحميل كسول/تقطيع: مسار التمرير التراكمي
     return urls or None
+
+
+def _collect_reading_by_scroll(sb, base_url: str, max_sec: float | None = None) -> list[str]:
+    """[إصلاح] تمرير تدريجي يجمع روابط صور القراءة تراكميًا (قد تُفكَّك وسوم الصفحات البعيدة عن الشاشة)،
+    مرتَّبة بموضع عنصر الصفحة داخل الحاوية (ci) إن توفّر وإلا بترتيب الظهور. يتوقف حين يبلغ النهاية
+    ولا جديد (أو بلوغ عدد عناصر الحاوية المتوقَّع) أو عند المهلة القصوى."""
+    from urllib.parse import urljoin
+    max_sec = max_sec or SB_SCROLL_MAX_SEC
+    found: dict[str, tuple[int, int]] = {}
+    seq = stable = exp = 0
+    t0 = time.monotonic()
+    _sb_eval(sb, "(() => { window.scrollTo(0, 0); return 1; })()")
+    time.sleep(0.2)
+    while time.monotonic() - t0 < max_sec:
+        raw = _sb_eval(sb, _COLLECT_READING_JS)
+        try:
+            data = json.loads(raw) if isinstance(raw, str) else {}
+        except Exception:
+            data = {}
+        grew = False
+        for d in data.get("imgs") or []:
+            if WIDGET_CONTEXT_PATTERN.search(d.get("ctx") or ""):
+                continue
+            src = d.get("src") or ""
+            if not src or src.startswith("data:"):
+                continue
+            u = urljoin(base_url, src)
+            if _is_thumbnail_url(u) or u in found:
+                continue
+            found[u] = (int(d.get("ci", -1)), seq)
+            seq += 1
+            grew = True
+        exp = max(exp, int(data.get("exp") or 0))
+        at_end = float(data.get("y") or 0) >= float(data.get("h") or 1) - 5
+        stable = 0 if (grew or not at_end) else stable + 1
+        need = 2 if (exp and len(found) >= exp) else (8 if exp else 3)
+        if at_end and stable >= need:
+            break
+        _sb_eval(sb, "(() => { window.scrollBy(0, Math.round(window.innerHeight * 1.2)); return 1; })()")
+        time.sleep(SB_SCROLL_STEP_SLEEP)
+    if exp and len(found) < exp * 0.9:
+        print(f"  ⚠️ [SB] جُمعت {len(found)} صورة من ~{exp} عنصر صفحة بالحاوية — قد يكون الفصل ناقصًا (أو الحاوية تضم عناصر غير صور)")
+    items = list(found.items())
+    if items and all(v[0] >= 0 for _, v in items):
+        items.sort(key=lambda kv: (kv[1][0], kv[1][1]))
+    return [u for u, _ in items]
 
 
 def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list[str], list[dict]]:
@@ -130,6 +210,12 @@ def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list
             print(f"  ⚡ [SB] مسار سريع: {len(fast1)} صورة بلا تمرير")
             return fast1, []
 
+    has_rc = _sb_eval(sb, "(() => !!document.querySelector('" + _READING_RC_SEL.replace("'", "\\'") + "'))()")
+    if has_rc is True or has_rc == "true":
+        got = _collect_reading_by_scroll(sb, base_url)
+        if got:
+            print(f"  📜 [SB] تمرير تراكمي: {len(got)} صورة")
+            return got, []
     """صور المحتوى الفعلية من DOM المُنفَّذ (بعد تمرير تدريجي لتحفيز lazy-load) بمعيار الحجم:
     صور الفصل كبيرة (>=300px عرضًا وطولًا)، بخلاف الشعارات والمصغّرات (75x106...) والودجات.
     يُعيد (روابط مرتّبة بترتيب DOM، كل معلومات <img> للتقرير)."""
