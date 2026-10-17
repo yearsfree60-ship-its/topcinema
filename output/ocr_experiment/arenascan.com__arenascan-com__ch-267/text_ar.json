@@ -1,0 +1,383 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "267",
+  "manga_title": "My Wife Is From a Thousand Years Ago 267",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "junitius junitius TS PR",
+          "confidence": 0.978,
+          "text_ar": "فريق الترجمة والتحرير"
+        },
+        {
+          "text": "junitius junitius CL/RD TL Paragon Scans",
+          "confidence": 0.924,
+          "text_ar": "ترجمة وتبييض باراغون سكانز"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.999,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "DAD, MOM.",
+          "confidence": 0.94,
+          "text_ar": "أبي، أمي."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "YOU GUYS ARE BACK?",
+          "confidence": 0.938,
+          "text_ar": "هل عدتما؟"
+        },
+        {
+          "text": "IT'S ALMOST NEW YEAR, SO WE CAME BACK TO TAKE A LOOK FIRST.",
+          "confidence": 0.899,
+          "text_ar": "العام الجديد على وشك الحلول، لذا عُدنا لنلقي نظرة أولًا."
+        },
+        {
+          "text": "QUICKLY COME IN.",
+          "confidence": 0.945,
+          "text_ar": "ادخلا بسرعة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "SAID YOU YOU WANT MY CAR?",
+          "confidence": 0.751,
+          "text_ar": "أقلت إنك تريد سيارتي؟"
+        },
+        {
+          "text": "HOW ABOUT yoU GUYS BUY A HOLSE, AND I'LL CONTRIB- UTEA BIT?",
+          "confidence": 0.757,
+          "text_ar": "ما رأيك أن تشتريا منزلًا، وأنا سأساهم بمبلغ بسيط؟"
+        },
+        {
+          "text": "YOU DON'T NEED TO WORRY ABOUT THE HOUSE. SHE PREFERS IF WE BUY iT OURSELVES.",
+          "confidence": 0.919,
+          "text_ar": "لا داعي للقلق بشأن المنزل. هي تفضل أن نشتري بأنفسنا."
+        },
+        {
+          "text": "REALLY? SHE SAID YOU GUYS SHOULD BUY A HOUSE YOUR - SELVES?",
+          "confidence": 0.571,
+          "text_ar": "حقًا؟ أوقالت إن عليكما شراء منزل بأنفسكما؟"
+        },
+        {
+          "text": "YEAH, THAT WOLLD BE MORE COM- FORTABLE.",
+          "confidence": 0.901,
+          "text_ar": "أجل، سيكون ذلك أكثر أريحيّة."
+        },
+        {
+          "text": "SHE'S AN OLD LADY FROM THE TANG DYNASTY, WITH HER OWN IDEAS,",
+          "confidence": 0.945,
+          "text_ar": "إنها امرأة عجوز من عهد سلالة تانغ، ولديها أفكارها الخاصة،"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "SHE ALWAYS FEELS SHE HAS RECEIVED TOO MUCH HELP, INSISTING ON WORKING HARDTO BUY A HOUSEON HEROWN TO FEEL COMFORTABLE.",
+          "confidence": 0.935,
+          "text_ar": "تشعر دائمًا أنها تلقت مساعدة أكثر من اللازم، وتصر على العمل بجد لشراء منزل بنفسها لتشعر بالراحة."
+        },
+        {
+          "text": "DAD,ACTUALLY I WANT TO TELL yoU A SECrET.",
+          "confidence": 0.727,
+          "text_ar": "أبي، في الواقع أود إخبّارك بسر."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.993,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "JIANG HE 1S,",
+          "confidence": 0.788,
+          "text_ar": "جيانغ هي..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "ACTUALLY A PERSON FROM ANCIENT TIMES.",
+          "confidence": 0.941,
+          "text_ar": "في الواقع، هي شخص من العصور القديمة."
+        },
+        {
+          "text": "SCRAM!",
+          "confidence": 0.989,
+          "text_ar": "اغرب عن وجهي!"
+        },
+        {
+          "text": "TOLD SEE!I TRUTH YOU THE AND YOU DON'T BELIEVE IT.",
+          "confidence": 0.888,
+          "text_ar": "أقول لك الحقيقة وأنت لا تصدقني!"
+        },
+        {
+          "text": "SHE ATE THE ELIXIR OF IMMORTALITY FROM QIN SHI HUANG AND LIVED TILL TODAY? EVEN IF THERE ARE THOSE OLD MONSTERS ON TVWHOHAVELIVEDFOR THOUSANDS OF YEARS, DO YOU THINK THEY'D BE INTERESTED IN YOU? INTERESTEDIN YOU?",
+          "confidence": 0.898,
+          "text_ar": "أكلت إكسير الخلود من تشين شي هوانغ وعاشت حتى اليوم؟ حتى لو كان هناك أولئك الوحوش القدامى على التلفاز الذين عاشوا لآلاف السنين، أَتظن أنهم سيكونون مهتمين بك؟ مهتمين بك أنت؟"
+        },
+        {
+          "text": "WHAT IF SOMEONE JUST TIME TRAVELED AND SLIDDENLY APPEARED? THEIR AGE WOULD STILL BE THE SAME.",
+          "confidence": 0.925,
+          "text_ar": "ماذا لو سافر شخص ما عبر الزمن وظهر فجأة؟ ستظل أعمارهم كما هي."
+        },
+        {
+          "text": "IN THIS VAST WORLD,ANYTHING CAN HAPPEN.",
+          "confidence": 0.945,
+          "text_ar": "في هذا العالم الواسع، كل شيء جائز."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "AND THEN, MASTERING EVERYTHING FROM PLAYING GAMES TO COOKING? LET ME TEST YOU: TANG, SONG, YUAN, MING, QING- 轻车熟路 ￥+ ￥++",
+          "confidence": 0.315,
+          "text_ar": "ومن ثم، تتقن كل شيء من ممارسة الألعاب إلى الطبخ؟ دعني أمتحنك: تانغ، سونغ، يوان، مينغ، تشينغ-"
+        },
+        {
+          "text": "WHICH DYNASTY'S PEOPLE WOULO USE A REMOTE CONTROL TO WATCH TV?!",
+          "confidence": 0.932,
+          "text_ar": "أيّ سلالة كان أهلها يستخدمون جهاز التحكم عن بعد لمشاهدة التلفاز?!"
+        },
+        {
+          "text": "SHE LEARNED AFTER COMING HERE!",
+          "confidence": 0.973,
+          "text_ar": "لقد تعلمت ذلك بعد مجيئها إلى هنا!"
+        },
+        {
+          "text": "YOU'VE SAID ENOUGH. ACTLIALLY, I'M QIN SHI HUANG. WE HAVE A THRONE IN OUR FAMILY!",
+          "confidence": 0.822,
+          "text_ar": "لقد أكثرت من الكلام. في الواقع، أنا تشين شي هوانغ. ولدينا عرش في عائلتنا!"
+        },
+        {
+          "text": "BUT ISN'T OUR SuRNAME XU?",
+          "confidence": 0.817,
+          "text_ar": "ولكن أليس لقبنا شو؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I HAVE LIU BEI'S STRAW SANDALS IN MY HANDS!",
+          "confidence": 0.961,
+          "text_ar": "أنا أحمل صنادل ليو بي المصنوعة من القش في يدي!"
+        },
+        {
+          "text": "LIU BEI'S STRAW SANDALS!!",
+          "confidence": 0.984,
+          "text_ar": "صنادل ليو بي المصنوعة من القش!!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "ISN'T THIS UNREASONABLE OF YOU! I'M ALREADY A MARRIED MAN, STOP HITTING\"ME!",
+          "confidence": 0.865,
+          "text_ar": "أليس هذا غير معقول منك! أنا رجل متزوج بالفعل، توقف عن ضربي!"
+        },
+        {
+          "text": "LET'S TALK ABOUT THE MARRIAGE.",
+          "confidence": 0.938,
+          "text_ar": "لنَتحدث عن الزواج إذن."
+        },
+        {
+          "text": "THEN LET'S TALK ABOUT WHY YOU ARE IN SLCHA HURRY. SHE JUST GOT HER IDENTITY AND YOU IMMEDIATELYGOT THE CERTIFICATE.",
+          "confidence": 0.903,
+          "text_ar": "إذن لنَتحدث عن سبب هذه العجلة. لقد حصلت للتو على هويتها وحصلتما على وثيقة الزواج فورًا."
+        },
+        {
+          "text": "I JUST GOT IT DONE WHEN iT WAS TIME.",
+          "confidence": 0.851,
+          "text_ar": "لقد أنجزت الأمر عندما حان وقته فحسب."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THIS KID IS REALLY STRANGE THIS TIME. AFTER HELPING JIANG HE DEAL WITH ID ISSUES, HE COULD'VE ALSO BOUGHT A HOUSE BEFORE MARRIAGE,",
+          "confidence": 0.943,
+          "text_ar": "هذا الفتى غريب حقًا هذه المرة. بعد مساعدة جيانغ هي في حل مشاكل هويتها، كان بإمكانه أيضًا شراء منزل قبل الزواج،"
+        },
+        {
+          "text": "WITH THIS KID'S CLEVERNESS, THE HOUSE WILL BE HIS AT THAT POINT, COMPLETELY TAKING THE INITIATIVE, BUT HE GOT THE CERTIFICATE FIRST...",
+          "confidence": 0.902,
+          "text_ar": "بذكاء هذا الفتى، سيكون المنزل ملكًا له في هذه الحالة، ليأخذ زمام المبادرة تمامًا، لكنه استخرج وثيقة الزواج أولًا..."
+        },
+        {
+          "text": "IS SHE IN A HURRY OR ARE YOU IN A HURRY?",
+          "confidence": 0.809,
+          "text_ar": "أهي في عجلة من أمرها أم أنك أنت من في عجلة؟"
+        },
+        {
+          "text": "WE BOTH ARE. WHEN SHE WAS APPLYINGFOR HER ID, SHE SPECIFICALLY CHOSE EARLYJANUARYAS HER BIRTHDAY, MAKING HER JUST PAST TWENTY, ISNT IT JUST TO GET THE CERTIFICATE?",
+          "confidence": 0.895,
+          "text_ar": "كلانا. عندما كانت تستخرج هويتها، اختارت أوائل يناير خصيصًا لتكون عيد ميلادها، مما جعل عمرها يتجاوز العشرين للتو، أليس ذلك فقط للحصول على وثيقة الزواج؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "CAN SHE JUST CHANGE IT LIKE THAT?",
+          "confidence": 0.97,
+          "text_ar": "أيمكنها تغييره هكذا ببساطة؟"
+        },
+        {
+          "text": "SHE DIDN'T KNOW HER BIRTHDAY ANYWAY, SINCE SHE'S AN ORPHAN. SHE CELEBRATES WHEN- EVER SHE WANTS CAKE.",
+          "confidence": 0.958,
+          "text_ar": "لم تكن تعرف تاريخ ميلادها على أي حال، بما أنها يتيمة. إنها تحتفل متى أرادت تناول الكعكة."
+        },
+        {
+          "text": "HER BIRTHDAY HAS BEEN MESSED UP BY HER! SHECELEBRATED THREE TIMES THIS YEAR, EATING THREE CAKES.",
+          "confidence": 0.933,
+          "text_ar": "لقد عبثت بتاريخ ميلادها! لقد احتفلت ثلاث مرات هذا العام، وأكلت ثلاث كعكات."
+        },
+        {
+          "text": ".BEING MARRIED ...BEING MARRIED AND DATING ARE STILL DIFFERENT.",
+          "confidence": 0.905,
+          "text_ar": "الزواج... الزواج والمواعدة لا يزالان مختلفين."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "YOu DON'T NEED TO TELL THAT, ME",
+          "confidence": 0.786,
+          "text_ar": "لا داعي لإخباري بذلك،"
+        },
+        {
+          "text": "I KNOW.",
+          "confidence": 0.966,
+          "text_ar": "أنا أعرف."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "IT'S NOT GOOD TO DRIVE AN OLD CAR, I'LL GET YOUA NEW ONE ANOTHER DAY.",
+          "confidence": 0.885,
+          "text_ar": "ليس جيدًا قيادة سيارة قديمة، سأحضر لك واحدة جديدة في يوم آخر."
+        },
+        {
+          "text": "NO NEED! I THINK YOUR CAR IS ALREADY GOOD ENOLGH.",
+          "confidence": 0.901,
+          "text_ar": "لا داعي! أظن سيارتك جيدة بما يكفي بالفعل."
+        },
+        {
+          "text": "DON'T TALK NONSENSE.",
+          "confidence": 0.977,
+          "text_ar": "لا تتفوه بالهراء."
+        },
+        {
+          "text": "ANYWAY, NOW THAT I'M MARRIED,WERE HAVING A GOOD TIME, EATING WELL EVERY DAY, IT'S QUITE NICE LIKE THIS.",
+          "confidence": 0.906,
+          "text_ar": "على أي حال، الآن بعد أن تزوجت، ونحن نقضي وقتًا ممتعًا، ونأكل جيدًا كل يوم، فالأمر لطيف هكذا تمامًا."
+        },
+        {
+          "text": "EATING WELL? WITH THAT TiNY FISH SHE CAUGHT?",
+          "confidence": 0.897,
+          "text_ar": "تأكلان جيدًا؟ بتلك السمكة الضئيلة التي اصطادتها؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "IT'S TWO FINGERS WIDE NOT AS EXAGG- ERATED AS yoU SAiD.",
+          "confidence": 0.693,
+          "text_ar": "إنها بعرض إصبعين وليست مبالغ فيها كما قلت."
+        },
+        {
+          "text": "WHATEVER, JUST DON'T REGRET IT LATER.",
+          "confidence": 0.919,
+          "text_ar": "مهما يكن، فقط لا تندم لاحقًا."
+        },
+        {
+          "text": "WHOA!IS THAT HAOZI?",
+          "confidence": 0.95,
+          "text_ar": "واو! أهذا هاو زي؟"
+        },
+        {
+          "text": "CAN AN ELECTRIC SCOOTER CARRY PASSENGERS?",
+          "confidence": 0.958,
+          "text_ar": "أيمكن لسكوتر كهربائي أن يحمل ركابًا؟"
+        },
+        {
+          "text": "THIS KID KNEW THE LAW AND BROKE IT?",
+          "confidence": 0.916,
+          "text_ar": "أهذا الفتى خرق القانون جهارًا؟"
+        },
+        {
+          "text": "ARE YOU THAT FREE? WHY DO YOU CARE SO MUCH ABOUT OTHERS?",
+          "confidence": 0.946,
+          "text_ar": "أمتفرغ إلى هذه الدرجة؟ لماذا تهتم بأمر الآخرين هكذا؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "I hope you enjoyed today's chapter. Thank you for reading and see you next time.",
+          "confidence": 0.959,
+          "text_ar": "آمل أن تكونوا قد استمتعتم بفصل اليوم. شكرًا على القراءة ونراكم في المرة القادمة."
+        },
+        {
+          "text": "To catch the next chapter at the earliest time possible, join our discord at discord.gg/pErHvcxdrx to be alerted when it's scanlated.",
+          "confidence": 0.958,
+          "text_ar": "للحاق بالفصل القادم في أسرع وقت ممكن، انضموا إلى سيرفر الديسكورد الخاص بنا على discord.gg/pErHvcxdrx لتتلقوا تنبيهات فور ترجمته."
+        }
+      ]
+    }
+  ]
+}
