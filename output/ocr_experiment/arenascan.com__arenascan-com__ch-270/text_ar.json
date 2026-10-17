@@ -1,0 +1,843 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "270",
+  "manga_title": "My Wife Is From a Thousand Years Ago 270",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.993,
+          "text_ar": ""
+        },
+        {
+          "text": "junitius  junitius PR TS",
+          "confidence": 0.941,
+          "text_ar": ""
+        },
+        {
+          "text": "Nyanism junitius CL/RD TL Paragon Scans",
+          "confidence": 0.984,
+          "text_ar": ""
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.986,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.967,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.992,
+          "text_ar": ""
+        },
+        {
+          "text": "I'LL SEND YOU BACK.",
+          "confidence": 0.949,
+          "text_ar": "سأعيدك معك."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "IKEMANGA.IO",
+          "confidence": 0.969,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "LET'S GETA TAXI.",
+          "confidence": 0.954,
+          "text_ar": "لنأخذ سيارة أجرة."
+        },
+        {
+          "text": "ACTUALLY,I CAN GO BACK BY MYSELF.",
+          "confidence": 0.914,
+          "text_ar": "في الواقع، يمكنني العودة بمفردي."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.991,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S OKAY, I'LL SEND YOU BACK.I'MOFF DUTY TODAY ANYWAY.",
+          "confidence": 0.917,
+          "text_ar": "لا بأس، سأعيدك. أنا في إجازة اليوم على أي حال."
+        },
+        {
+          "text": "OH...IT'S_ALMOST THE END OF THE YEAR.NOW THAT YOU ARE OFF DO YOU HAVE TO'BE ON DUTY FOR THE SPRING FESTIVAL?",
+          "confidence": 0.851,
+          "text_ar": "أوه... لقد اقترب العام على الانتهاء. بما أنك في إجازة، هل يتعين عليك العمل خلال عطلة عيد الربيع؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IKEMANGA.IO",
+          "confidence": 0.989,
+          "text_ar": ""
+        },
+        {
+          "text": "YOU GLESSED IT. JUST ME THAT'S...",
+          "confidence": 0.709,
+          "text_ar": "أصبت كبد الحقيقة. أنا وحدي من..."
+        },
+        {
+          "text": "I ALMOST SAID I'M THE ONLY ONE THAT'SSINGLE...",
+          "confidence": 0.925,
+          "text_ar": "كادت أقول إنني الوحيد الذي لم يتزوج..."
+        },
+        {
+          "text": "I'MNOT ALONEANYMORE, I'M IN A CONFIRMED RELATIONSHIP NOW!",
+          "confidence": 0.931,
+          "text_ar": "لست وحدي بعد الآن، أنا في علاقة رسمية الآن!"
+        },
+        {
+          "text": "JUST YOU? ARE THEY BULLY ING YOU?",
+          "confidence": 0.936,
+          "text_ar": "وحدك؟ هل يضايقونك؟"
+        },
+        {
+          "text": "IT'S NOT LIKE THAT,THERE AREA FEW OTHERS WHO ARE ON DUTY TOO.IT'S NOT POSSIBLE FOR SOME- ONE TO BE ON DUTY ALONE.",
+          "confidence": 0.928,
+          "text_ar": "ليس الأمر هكذا، هناك آخرون في المناوبة أيضاً. من المستحيل أن يكون شخص ما في المناوبة بمفرده."
+        },
+        {
+          "text": "OH...IT MUST BE TOUGH.",
+          "confidence": 0.911,
+          "text_ar": "أوه... لا بد أن هذا شاق."
+        },
+        {
+          "text": "WELL,SOME- ONE HAS TO WORK HARD.",
+          "confidence": 0.95,
+          "text_ar": "حسنًا، لا بد لشخص ما أن يعمل بجد."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.973,
+          "text_ar": ""
+        },
+        {
+          "text": "JUST NOW ON THE BALCONY. WAS THAT GUY.. WAS HE...",
+          "confidence": 0.755,
+          "text_ar": "قبل قليل على الشرفة. أكان هذا الرجل... أكان..."
+        },
+        {
+          "text": "YEAH, HE'S THE ONE,THE ONE WHO'S PRACTICING WHATEVER NONSENSE FIST.IT DOES LOOK SOMEWHAT USEFLL THOUGH, IF IT WASN'T FOR HIMTHAT DAY,I MIGHT NOT BE STANDING HERE RIGHT NOW.",
+          "confidence": 0.931,
+          "text_ar": "نجل، إنه هو، الشخص الذي يتدرب على تلك القبضة السخيفة. تبدو مفيدة نوعاً ما رغم ذلك، لولا وجوده في ذلك اليوم، لما كنت أقف هنا الآن."
+        },
+        {
+          "text": "SOMEONE WHO IS EXPERIENCED IN MARTIALARTSSTOOD BACK WHILE YOU WENT FORWARD...",
+          "confidence": 0.879,
+          "text_ar": "شخص لديه خبرة في فنون القتال تراجع بينما تقدمت أنت..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.986,
+          "text_ar": ""
+        },
+        {
+          "text": "HE JUST REACTED SLOWLY.",
+          "confidence": 0.944,
+          "text_ar": "لقد تفاعل ببطء فحسب."
+        },
+        {
+          "text": "IF IT WERENT FORME THAT DAY, HE PROBABLYWOULD HAVE QUIETLYPICKED UP A BRICK OR SOMETHING. HE WOULDN'THAVE PRE- TENDED TO NOT SEE IT.WE HAVE BEENPLAYING TO- GETHER SINCE WE WERE KIDS,SO I KNOW HIM WELL.",
+          "confidence": 0.901,
+          "text_ar": "لولا أنا في ذلك اليوم، لكان على الأرجح التقط طوبة أو شيئاً هادئاً. لم يكن ليتظاهر بأنه لم يرى ذلك. لقد كنّا نلعب معاً منذ أن كنّا صغاراً، لذا أنا أعرفه جيداً."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.991,
+          "text_ar": ""
+        },
+        {
+          "text": "FACING HER, I REALLY WANT TO TELL HER ABOUT EVERYTHING...",
+          "confidence": 0.938,
+          "text_ar": "أمامها، أود حقاً أن أخبرها بكل شيء..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO 快看漫画",
+          "confidence": 0.952,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.984,
+          "text_ar": ""
+        },
+        {
+          "text": "YOu .SHOULD",
+          "confidence": 0.636,
+          "text_ar": "يجب عليك..."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "HURRYAND HEAD..",
+          "confidence": 0.852,
+          "text_ar": "أسرع وتوجه..."
+        },
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.966,
+          "text_ar": ""
+        },
+        {
+          "text": "DO YOU WANT TO GOUP AND SIT FOR A BIT?",
+          "confidence": 0.925,
+          "text_ar": "هل تريد الصعود والجلوس قليلاً؟"
+        },
+        {
+          "text": "NO, NO, IT'S GETTING LATE...",
+          "confidence": 0.912,
+          "text_ar": "لا، لا، لقد أصبح الوقت متأخراً..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.985,
+          "text_ar": ""
+        },
+        {
+          "text": "I didn't save you a portion. Go eat outside",
+          "confidence": 0.964,
+          "text_ar": "لم أحتفظ لك بنصيب. اذهب لتناول الطعام في الخارج."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.984,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT SHOULD I DO IN THIS SITUATION..",
+          "confidence": 0.891,
+          "text_ar": "ماذا علي أن أعل في هذا الموقف..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.98,
+          "text_ar": ""
+        },
+        {
+          "text": "WHATWOULD QINGZIDO..",
+          "confidence": 0.952,
+          "text_ar": "ماذا كان سيصنع تشينغزي..."
+        },
+        {
+          "text": "IF IT WAS QINGZI..",
+          "confidence": 0.939,
+          "text_ar": "لو كان تشينغزي..."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.963,
+          "text_ar": ""
+        },
+        {
+          "text": "SINCE YOU HAVEN'T EATEN YET,WHY DONT YOU DROP HIM OFF FIRST, AND THEN WE CAN...",
+          "confidence": 0.807,
+          "text_ar": "بما أنك لم تأكل بعد، لما لا توصيله أولاً، ومن ثم يمكننا..."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.991,
+          "text_ar": ""
+        },
+        {
+          "text": "GO EAT.",
+          "confidence": 0.865,
+          "text_ar": "تناول الطعام."
+        },
+        {
+          "text": "OKAY,",
+          "confidence": 0.961,
+          "text_ar": "حسناً،"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.993,
+          "text_ar": ""
+        },
+        {
+          "text": "快看！快看",
+          "confidence": 0.901,
+          "text_ar": ""
+        },
+        {
+          "text": "THEN I WILL TAKE HIM UP AND GET HIM SETTLED FIRST.",
+          "confidence": 0.925,
+          "text_ar": "إذن سأصطحبه للأعلى وأقوم بتسويته أولاً."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.987,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.",
+          "confidence": 0.947,
+          "text_ar": ""
+        },
+        {
+          "text": "ALTHOUGHLIVING CONDITIONSARE IMPROVING EVERYYEAR,THEFESTIVE ATMOSPHERESEEMSTO BE DECLINING YEAR BY YEAR. THERE'S NO SNOWTHIS YEAR EITHER..",
+          "confidence": 0.908,
+          "text_ar": "على الرغم من أن ظروف المعيشة تتحسن كل عام، إلا أن الأجواء الاحتفالية تبدو وكأنها تتراجع عاماً بعد عام. لا يوجد ثلج هذا العام أيضاً..."
+        },
+        {
+          "text": "WITHFIRE- WORKSBANNED, THE NEW YEAR'S ATMOSPHERE iS MISSING.",
+          "confidence": 0.93,
+          "text_ar": "مع حظر الألعاب النارية، غابت أجواء رأس السنة الجديدة."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.992,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'SBETTER THAT THEYRE BANNED. THEY GO'BANG,BANG, BANG'EVERY NIGHT UNTIL MIDNIGHT,IT'S ANNOYING AS HELL.",
+          "confidence": 0.94,
+          "text_ar": "من الأفضل أن يتم حظرها. إنها تطلق أصوات \"بانغ، بانغ، بانغ\" كل ليلة حتى منتصف الليل، إنه لأمر مزعج للغاية."
+        },
+        {
+          "text": "*PLEASE BEMINDFULOF THE SLEEP HEALTH OF SENIORS",
+          "confidence": 0.949,
+          "text_ar": "*يرجى مراعاة صحة النوم لكبار السن"
+        },
+        {
+          "text": "SIGH, I'VE JUST AGED AN- OTHER YEAR,IT DOESN'TFEEL ANY DIFFERENT...",
+          "confidence": 0.912,
+          "text_ar": "تنهد، لقد تقدمت في السن عاماً آخر، ولا يبدو الأمر مختلفاً حقاً..."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.985,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT FEELING WEREYOU EXPECTING?",
+          "confidence": 0.96,
+          "text_ar": "ما هو الشعور الذي كنت تتوقعه؟"
+        },
+        {
+          "text": "I JUST THINK IT ISAPITY.THINKING BACK TO THE PAST",
+          "confidence": 0.88,
+          "text_ar": "أعتقد فقط أنه لأمر مؤسف. بالتفكير في الماضي..."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "NEW YEAR CELEBR- ATIONS, THEY WERE ALWAYS LIVELY.",
+          "confidence": 0.936,
+          "text_ar": "احتفالات رأس السنة، كانت دائماً حية."
+        },
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.99,
+          "text_ar": ""
+        },
+        {
+          "text": "WHENWE BOUGHT MEAT, WE BROUGHT BA'CK A WHOLE PIG'S HIND LEG. NOW IT'S NOT MLICH DIFFERENT EDOM IICIIAI",
+          "confidence": 0.633,
+          "text_ar": "عندما اشترينا اللحم، أحضرنا فخذ خنزير كاملة. والآن لا يختلف الأمر كثيراً."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "TKOMUSU LIKEMANGA.IO",
+          "confidence": 0.519,
+          "text_ar": ""
+        },
+        {
+          "text": "BUT THE FOOD STILL TASTES JUST AS DELICIOUS!",
+          "confidence": 0.945,
+          "text_ar": "لكن الطعام لا يزال لذيذًا بنفس القدر!"
+        },
+        {
+          "text": "GET OUT,GET OLT,TRYING TO SNEAK ABITE AGAIN!",
+          "confidence": 0.897,
+          "text_ar": "اخرج، اخرج، تحاول سرقة قضمة مرة أخرى!"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.99,
+          "text_ar": ""
+        },
+        {
+          "text": "I'M JUST HERE TO TAKE. IN THE SMELL!",
+          "confidence": 0.933,
+          "text_ar": "أنا هنا فقط لأستنشق الرائحة!"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.991,
+          "text_ar": ""
+        },
+        {
+          "text": "Let's eat!",
+          "confidence": 0.952,
+          "text_ar": "لنأكل!"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.975,
+          "text_ar": ""
+        },
+        {
+          "text": "OH RIGHT, LET'S ADD EACH OTHER ONALIPAY.",
+          "confidence": 0.922,
+          "text_ar": "أصح صحيح، دعنا نضيف بعضنا البعض على أليباي."
+        },
+        {
+          "text": "SURE.",
+          "confidence": 0.978,
+          "text_ar": "بالتأكيد."
+        },
+        {
+          "text": "MOMMUST BE THINKING ABOUT STEALING ENERGY.!",
+          "confidence": 0.898,
+          "text_ar": "تكون أمي تفكر في سرقة الطاقة!"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.988,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "IKEMANGA.IO",
+          "confidence": 0.989,
+          "text_ar": ""
+        },
+        {
+          "text": "LET'S DRINK ABIT?",
+          "confidence": 0.962,
+          "text_ar": "لنشرب قليلاً؟"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.986,
+          "text_ar": ""
+        },
+        {
+          "text": "MM!LET US HAVE A LITTLE.",
+          "confidence": 0.9,
+          "text_ar": "مم! دعنا نشرب القليل."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.993,
+          "text_ar": ""
+        },
+        {
+          "text": "快看！快看漫画",
+          "confidence": 0.855,
+          "text_ar": ""
+        },
+        {
+          "text": "THE WARRIORESS ISSTARINGATTHEBOTTLE SO EAGERLY, MAKING IT SEEM LIKE I WON'T LET HER DRINK, ASIFI'MVERYSTRICT.",
+          "confidence": 0.931,
+          "text_ar": "المحاربة تحدق في الزجاجة بشغف شديد، مما يجعل الأمر يبدو وكأنني لن أتركها تشرب، كما لو كنت صارماً للغاية."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.99,
+          "text_ar": ""
+        },
+        {
+          "text": "DON'T DRINK TOOMUCH!",
+          "confidence": 0.957,
+          "text_ar": "لا تشرب كثيراً!"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.989,
+          "text_ar": ""
+        },
+        {
+          "text": "I WON'T DRINK MUCH, JUST A COUPLE SIPS.",
+          "confidence": 0.862,
+          "text_ar": "لن أشرك كثيراً، بضعة رشفات فقط."
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "RIGHT, JUST LIKEMANGA.IO A LITTLE.IT'S A WASTE NOT TO DRINK WITH THESE DISHES'ON THE TABLE.",
+          "confidence": 0.91,
+          "text_ar": "صحيح، مجرد القليل. إنه لإهدار عدم الشرب مع هذه الأطباق على الطاولة."
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.976,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.987,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.986,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.993,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.976,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "LIKEMAN GA.IO",
+          "confidence": 0.959,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S BEEN HALF A MONTHSINCETHEYGOT",
+          "confidence": 0.927,
+          "text_ar": "لقد مر نصف شهر منذ أن حصلا"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "THEIRMARRIAGECERTIFICATCKEMANGA.IO ANDISTILLHAVEN'TGOT- TENUSEDTOMYNEW IDENTITY YET..",
+          "confidence": 0.895,
+          "text_ar": "على شهادة زواجهما وما زلت لم أعتد على هويتي الجديدة بعد..."
+        },
+        {
+          "text": "THERE'S THIS VERY SUBTLE AND INDESCRIBABLE FEELING.",
+          "confidence": 0.945,
+          "text_ar": "هناك شعور خفي للغاية لا يمكن وصفه."
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "RAISING A SON FOROVERTWENTY YEARS, AND SUDDENLY, HE'S MARRIED...",
+          "confidence": 0.915,
+          "text_ar": "تربية ابن لأكثر من عشرين عاماً، وفجأة، يتزوج..."
+        },
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT ARE YOU LOOKING AT MEFOR?",
+          "confidence": 0.957,
+          "text_ar": "لماذا تنظر إلي هكذا؟"
+        },
+        {
+          "text": "WHAT ELSE SHOULDIBE LOOKING AT?",
+          "confidence": 0.959,
+          "text_ar": "إلى ماذا يجب أن أنظر أيضاً؟"
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "TKEMANGA.IO",
+          "confidence": 0.959,
+          "text_ar": ""
+        },
+        {
+          "text": "LOOK AT THE FOOD!",
+          "confidence": 0.927,
+          "text_ar": "انظر إلى الطعام!"
+        },
+        {
+          "text": "ACTUALLY,I DOFEEL GENUINELY HAPPY. LIFE IS INDEED UNPREDICTABLE..",
+          "confidence": 0.937,
+          "text_ar": "في الواقع، أشعر بسعادة حقيقية. الحياة لا غبار عليها حقاً..."
+        },
+        {
+          "text": "THIS RASCAL HAS ALWAYS BEEN UNSERIOUS,ANDJIANG HE'S BACKGROUND IS ALSO COMPLICATED,THEYARE BOTH TROUBLEMAKERS.",
+          "confidence": 0.945,
+          "text_ar": "هذا اللقيط كان دائماً غير جاد، وخلفية جيانغ هي معقدة أيضاً، كلاهما صانعا مشاكل."
+        },
+        {
+          "text": "BUT SOMEHOW, WHENTHEYCOME TOGETHER, ITJUST FITSPERFECTLY,TWO NEGATIVES MAKE A POSITIVE?",
+          "confidence": 0.957,
+          "text_ar": "لك بطريقة ما، عندما يجتمعان، يتوافقان تماماً، سالبان يعطيان موجباً؟"
+        },
+        {
+          "text": "FATE,IT'S A MAGICAL THING.",
+          "confidence": 0.976,
+          "text_ar": "القدر، إنه لشيء سحري."
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.IO",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "I hope you enjoyed today's chapter. Thank you for reading and see you next time.",
+          "confidence": 0.962,
+          "text_ar": "أتمنى أن تكونوا قد استمتعتم بفصل اليوم. شكرا للقراءة ونراكم في المرة القادمة."
+        },
+        {
+          "text": "To catch the next chapter at the earliest time possible, join our discord at discord.gg/pErHvcxdrx to be alerted when it's scanlated.",
+          "confidence": 0.935,
+          "text_ar": "لمتابعة الفصل التالي في أسرع وقت ممكن، انضم إلى الديسكورد الخاص بنا على discord.gg/pErHvcxdrx ليتم تنبيهك عند ترجمته."
+        }
+      ]
+    }
+  ]
+}
