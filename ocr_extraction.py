@@ -1174,6 +1174,9 @@ def _renumber_pages_sequentially(page_json: list[dict]) -> tuple[list[dict], lis
     بـcompress_chapters.py: sorted(image_paths)، ترتيب فقط لا أرقام أصلية،
     فأي صورة فشلت تختفي من المصفوفة بلا أي فجوة تبقى فيها) — القارئ يعرض
     الصورة رقم N بالمصفوفة كـ"الصفحة N" بصرف النظر عن رقمها الأصلي بالفصل.
+    [معرّف الصورة الثابت] يُحفَظ الرقم التسلسلي الأصلي بحقل "image_id" (= رقم اسم ملف
+    الصورة المضغوطة، مثل 020.webp) فيبقى ثابتًا رغم إعادة الترقيم، ويستعمله القارئ لربط
+    الترجمة بصورتها مباشرةً لا بالترتيب. "page" يبقى الترقيم التسلسلي للعرض كما كان.
     قبل هذا الإصلاح: لو فشلت الصورة رقم 2 من أصل 5، page_json كان يحتفظ
     بالأرقام الأصلية 1,3,4,5 بينما القارئ يعرضها 1,2,3,4 — طلب ترجمة "الصفحة
     2" بالقارئ (=الصورة الأصلية 3) لا يجد تطابقًا لأن ملف الترجمة يُسمّيها
@@ -1183,7 +1186,8 @@ def _renumber_pages_sequentially(page_json: list[dict]) -> tuple[list[dict], lis
     هو تمامًا (تطبيع بلا أثر فعلي، لا حاجة لفرع شرطي منفصل)."""
     page_json_sorted = sorted(page_json, key=lambda pj: pj["page"])
     renumbered = [
-        {"page": new_num, "sentences": pj["sentences"], **({"order_method": pj["order_method"]} if pj.get("order_method") else {})}
+        {"page": new_num, "image_id": pj.get("image_id", pj["page"]), "sentences": pj["sentences"],
+         **({"order_method": pj["order_method"]} if pj.get("order_method") else {})}
         for new_num, pj in enumerate(page_json_sorted, start=1)
     ]
     page_texts = [format_ocr_page_text(pj["page"], pj["sentences"]) for pj in renumbered]
@@ -1281,7 +1285,7 @@ async def _ocr_handle_page(
     else:
         sentences, sfx_dropped = ocr_result
         page_texts.append(format_ocr_page_text(page_num, sentences))
-        page_json.append({"page": page_num, "sentences": sentences, "order_method": order_info["m"]})
+        page_json.append({"page": page_num, "image_id": page_num, "sentences": sentences, "order_method": order_info["m"]})
         rss_after = _current_rss_mb()
         rss_note = (
             f" | RSS: {rss_before:.0f}→{rss_after:.0f}MB (Δ{rss_after - rss_before:+.0f})"
