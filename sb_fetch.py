@@ -101,7 +101,34 @@ _FAST_READING_JS = ("""(() => {
 # [إصلاح — فصول طويلة (130 صورة)] قارئ comix.to يُركِّب وسوم <img> للصفحات القريبة من الشاشة فقط ويترك
 # الباقي عناصر فارغة؛ المسار السريع كان يرى 3 وسوم مستقرة فيعتمدها. الآن يُقارَن عددها بعدد عناصر الحاوية
 # (exp) ولا يُعتمَد المسار السريع إلا إن تساوَيا؛ وإلا يُستخدم التمرير التراكمي الكامل أدناه.
-_COLLECT_READING_JS = ("""(() => {
+# [إصلاح — سبب الفشل الفعلي] قارئ comix.to (long-strip) يمرّر حاوية داخلية لا النافذة؛ window.scrollBy لا
+# يحرّك شيئًا فيبدو "نهاية الصفحة" فورًا (جمع الروابط 1.3ث) ولا تُحمَّل صور الصفحات 4..130. نبحث عن أقرب
+# عنصر قابل للتمرير (overflow-y auto/scroll وارتفاع محتواه أكبر) من الحاوية صعودًا ثم نزولًا، وإلا النافذة.
+_SCROLLER_JS = """
+  const __rc = document.querySelector('""" + _READING_RC_SEL + """');
+  const __isScr = (e) => { const s = getComputedStyle(e);
+    return /(auto|scroll|overlay)/.test(s.overflowY) && e.scrollHeight > e.clientHeight + 20; };
+  let __sc = null, __el = __rc;
+  while (__el && __el !== document.body && __el !== document.documentElement) {
+    if (__isScr(__el)) { __sc = __el; break; } __el = __el.parentElement; }
+  if (!__sc && __rc) { for (const c of __rc.querySelectorAll('*')) { if (__isScr(c)) { __sc = c; break; } } }
+  const __win = !__sc;
+  if (__win) __sc = document.scrollingElement || document.documentElement;
+"""
+
+_SCROLL_STEP_READING_JS = ("""(() => {""" + _SCROLLER_JS + """
+  const dy = Math.round((__win ? window.innerHeight : __sc.clientHeight) * 1.2);
+  if (__win) window.scrollBy(0, dy); else __sc.scrollTop = __sc.scrollTop + dy;
+  return 1;
+})()""")
+
+_SCROLL_TOP_READING_JS = ("""(() => {""" + _SCROLLER_JS + """
+  if (__win) window.scrollTo(0, 0); else __sc.scrollTop = 0;
+  return JSON.stringify({win: __win, tag: __sc.tagName, cls: String(__sc.className || '').slice(0, 80),
+    ch: __sc.clientHeight, sh: __sc.scrollHeight});
+})()""")
+
+_COLLECT_READING_JS = ("""(() => {""" + _SCROLLER_JS + """
   const sel = '""" + _READING_IMG_SEL + """';
   const rc = document.querySelector('""" + _READING_RC_SEL + """');
   let node = rc, dd = 0;
@@ -119,7 +146,8 @@ _COLLECT_READING_JS = ("""(() => {
     out.push({src: src.trim(), ci: ci, ctx: ctx.toLowerCase().slice(0, 200)});
   });
   return JSON.stringify({imgs: out, exp: kids.length,
-    y: window.scrollY + window.innerHeight, h: document.documentElement.scrollHeight});
+    y: __win ? window.scrollY + window.innerHeight : __sc.scrollTop + __sc.clientHeight,
+    h: __win ? document.documentElement.scrollHeight : __sc.scrollHeight});
 })()""")
 
 SB_SCROLL_STEP_SLEEP = float(os.environ.get("SB_SCROLL_STEP_SLEEP", "0.12") or 0.12)
@@ -162,7 +190,8 @@ def _collect_reading_by_scroll(sb, base_url: str, max_sec: float | None = None) 
     found: dict[str, tuple[int, int]] = {}
     seq = stable = exp = 0
     t0 = time.monotonic()
-    _sb_eval(sb, "(() => { window.scrollTo(0, 0); return 1; })()")
+    info = _sb_eval(sb, _SCROLL_TOP_READING_JS)
+    print(f"  📜 [SB] حاوية التمرير: {info}")
     time.sleep(0.2)
     while time.monotonic() - t0 < max_sec:
         raw = _sb_eval(sb, _COLLECT_READING_JS)
@@ -189,7 +218,7 @@ def _collect_reading_by_scroll(sb, base_url: str, max_sec: float | None = None) 
         need = 2 if (exp and len(found) >= exp) else (8 if exp else 3)
         if at_end and stable >= need:
             break
-        _sb_eval(sb, "(() => { window.scrollBy(0, Math.round(window.innerHeight * 1.2)); return 1; })()")
+        _sb_eval(sb, _SCROLL_STEP_READING_JS)
         time.sleep(SB_SCROLL_STEP_SLEEP)
     if exp and len(found) < exp * 0.9:
         print(f"  ⚠️ [SB] جُمعت {len(found)} صورة من ~{exp} عنصر صفحة بالحاوية — قد يكون الفصل ناقصًا (أو الحاوية تضم عناصر غير صور)")
