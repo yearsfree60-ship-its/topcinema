@@ -904,21 +904,39 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     # ويطابق فقط "أرقام + [-_] + chapter(s) + [-_] + رقم" — صيغة يعطي فيها الفحص التالي
     # رقمًا خاطئًا (المعرّف) أصلًا، فلا تأثير على أي موقع يعمل صحيحًا الآن.
     if parts:
-        m = re.match(r"^\d+[-_]chapters?[-_](\d+(?:\.\d+)?)(?:[-_][^/]*)?$", parts[-1], re.I)
+        m = re.match(r"^\d+[-_]chapters?[-_](\d+(?:\.\d+)?)(?:[-_](\d{1,2})(?![\d]))?(?:[-_][^/]*)?$", parts[-1], re.I)
         if m:
-            chapter_num = m.group(1)
+            chapter_num = m.group(1) if (m.group(2) is None or "." in m.group(1)) else f"{m.group(1)}.{m.group(2)}"
+            chapter_part_index = len(parts) - 1
+    # [فصول عشرية] مقطع "12-5" أو "12_5" وحده = الفصل 12.5 (جزء عشري من رقمين كحد أقصى)
+    if parts and chapter_num is None:
+        m = re.fullmatch(r"(\d+)[-_](\d{1,2})", parts[-1])
+        if m:
+            chapter_num = f"{m.group(1)}.{m.group(2)}"
             chapter_part_index = len(parts) - 1
     if parts and chapter_num is None:
         m = re.match(r"^(\d+(?:\.\d+)?)[-_%\u0080-\U0010ffff][^/]*$", parts[-1])
         if m and not re.fullmatch(r"\d+(?:\.\d+)?", parts[-1]):
             chapter_num = m.group(1)
             chapter_part_index = len(parts) - 1
+    # [إصلاح — اسم المانهوا داخل مقطع الفصل] مواقع تضع الرابط كمقطع واحد "<اسم-المانهوا>-chapter-<N>"
+    # (arenascan.com/i-ll-save-this-damned-family-chapter-1/): الفحص التالي يلتقط الرقم ويستبعد المقطع كاملًا
+    # فكان الاسم يسقط إلى اسم النطاق ("arenascan com"). نحفظ هنا ما قبل علامة الفصل كاسم احتياطي، يُستعمل
+    # فقط لو لم يوجد أي مقطع آخر يصلح اسمًا — فلا يتغيّر سلوك أي موقع يعمل بشكل صحيح الآن.
+    name_in_chapter_part = None
     if chapter_num is None:
         for i in range(len(parts) - 1, -1, -1):
             m = re.search(r"(\d+)$", parts[i])
             if m:
                 chapter_num = m.group(1)
                 chapter_part_index = i
+                # [فصول عشرية] "...chapter-12-5" / "...ch12.5" / "...-12_5" ← 12.5 (علامة فصل + رقم + جزء من رقمين كحد أقصى)
+                md = re.search(r"(?:chapters?|ch|episode|ep)[-_]?(\d+)[-_.](\d{1,2})$", parts[i], re.I)
+                if md:
+                    chapter_num = f"{md.group(1)}.{md.group(2)}"
+                mm = re.match(r"^(.+?)[-_](?:chapters?|ch|episode|ep)[-_]?\d+(?:[-_.]\d+)?$", parts[i], re.I)
+                if mm and re.search(r"[^\W\d_]", mm.group(1)):
+                    name_in_chapter_part = mm.group(1).strip("-_")
                 break
 
     # [جديد — إصلاح: رقم فصل يُقرأ "0" خطأً لمواقع الـslug-الواحد] الفحص
@@ -940,9 +958,9 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
     fallback_span = None
     if chapter_num is None:
         for i, p in enumerate(parts):
-            m = re.search(r"[-_]?chapters?[-_]?(\d+(?:\.\d+)?)(?=[-_]|$)", p, re.I)
+            m = re.search(r"[-_]?chapters?[-_]?(\d+(?:\.\d+)?)(?:[-_](\d{1,2}))?(?=[-_]|$)", p, re.I)
             if m:
-                chapter_num = m.group(1)
+                chapter_num = m.group(1) if (m.group(2) is None or "." in m.group(1)) else f"{m.group(1)}.{m.group(2)}"
                 fallback_part_index = i
                 fallback_span = m.span()
                 break
@@ -963,7 +981,7 @@ def manga_slug_from_url(url: str) -> tuple[str, str]:
         if p.lower() in STRUCTURE_WORDS:
             continue
         manga_parts.append(p)
-    manga_name = manga_parts[-1] if manga_parts else u.hostname
+    manga_name = manga_parts[-1] if manga_parts else (name_in_chapter_part or u.hostname)
     return f"{u.hostname}__{slugify(manga_name)}", (chapter_num or "0")
 
 
