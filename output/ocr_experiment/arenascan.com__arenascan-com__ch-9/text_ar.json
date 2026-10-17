@@ -1,0 +1,717 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "9",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "WHY... WAS HE TH- THERE?",
+          "confidence": 0.891,
+          "text_ar": "لماذا... كان هُ- هنا؟"
+        },
+        {
+          "text": "HE SAID THIS WAS A GIFT FOR THE YOUNG MISS...",
+          "confidence": 0.85,
+          "text_ar": "لقد قال إن هذه هدية للآنسة الشابة..."
+        },
+        {
+          "text": "WHICH ONE?",
+          "confidence": 0.994,
+          "text_ar": "أيهما؟"
+        },
+        {
+          "text": "S2 SS S",
+          "confidence": 0.368,
+          "text_ar": "تصادم"
+        },
+        {
+          "text": "F SSF",
+          "confidence": 0.402,
+          "text_ar": "حفيف"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT'S FOR LADY TARA...",
+          "confidence": 0.904,
+          "text_ar": "إنه للسيدة تارا..."
+        },
+        {
+          "text": "IN ORDER TO OVERCOME HIS TRAUMA, HE MUST COME TO TERMS WITH IT.",
+          "confidence": 0.932,
+          "text_ar": "لكي يتغلب على صدمته، يجب أن يتقبلها."
+        },
+        {
+          "text": "DOYOU THINKI'LLGOEASY ON YOU JUST BECAUSE I'VEALLOWEDYOU TODOAS YOUPLEASE SOFAR?!",
+          "confidence": 0.879,
+          "text_ar": "أَتظن أنني سأتساهل معك فقط لأنني سمحت لك بفعل ما تريده حتى الآن؟!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I FIND MYSELF LAMENTING OVER IT EVERY DAY.",
+          "confidence": 0.931,
+          "text_ar": "أجد نفسي أتأسف على ذلك كل يوم."
+        },
+        {
+          "text": "WHY...WHY DID I HAVE TO ASK FOR THAT DOCUMENT? I SHOULDN'T HAVE BOTHERED.",
+          "confidence": 0.928,
+          "text_ar": "لماذا... لماذا كان عليّ طلب تلك الوثيقة؟ ما كان لي أن أُعذب نفسي."
+        },
+        {
+          "text": "IDON'T WANT TO HEAR YOUR EXCUSES!",
+          "confidence": 0.95,
+          "text_ar": "لا أريد سماع أعذارك!"
+        },
+        {
+          "text": "PL-PLEASE JUST HEAR ME OUT, FATHER.",
+          "confidence": 0.918,
+          "text_ar": "أَرْ-أرجوك استمع إلي فقط، يا أبي."
+        },
+        {
+          "text": "LIFT",
+          "confidence": 0.987,
+          "text_ar": "رفعت"
+        },
+        {
+          "text": "WE CAN'T CONTINUE MOURNING FOR SOMEONE WHO WON'T COME BACK.",
+          "confidence": 0.922,
+          "text_ar": "لا يمكننا الاستمرار في الحداد على شخص لن يعود."
+        },
+        {
+          "text": "BUT WHAT IF IMADE HIS DREAMS AREALITY INSTEAD?",
+          "confidence": 0.929,
+          "text_ar": "ولكن ماذا لو جعلت أحلامه حقيقةً بدلاً من ذلك؟"
+        },
+        {
+          "text": ".WHAT DO YOU MEAN?",
+          "confidence": 0.9,
+          "text_ar": "ماذا تعني؟"
+        },
+        {
+          "text": "TENSE",
+          "confidence": 0.993,
+          "text_ar": "توتر"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "IFI BECAME THE EMPEROR'S SECRETARY..",
+          "confidence": 0.912,
+          "text_ar": "لو أصبحت سكرتير الإمبراطور..."
+        },
+        {
+          "text": "IFIBECAME ACONSUL FOR THE EMPIRE...",
+          "confidence": 0.949,
+          "text_ar": "لو أصبحت قنصلاً للإمبراطورية..."
+        },
+        {
+          "text": "I'VE BEEN THINKING ABOUT BRANDON'S WORDS FORALONG TIME,AND I'VECOME TO A REALIZATION.",
+          "confidence": 0.917,
+          "text_ar": "لقد كنتُ أفكّر في كلمات براندون لفترة طويلة، ولقد أدركتُ شيئاً."
+        },
+        {
+          "text": "I WISH TO CARRY OUT BRANDON'S ASPIRATIONS...",
+          "confidence": 0.913,
+          "text_ar": "أريد تحقيق تطلعات براندون..."
+        },
+        {
+          "text": "IN HIS STEAD!",
+          "confidence": 0.981,
+          "text_ar": "نيابةً عنه!"
+        },
+        {
+          "text": "SHE...",
+          "confidence": 0.889,
+          "text_ar": "إنها..."
+        },
+        {
+          "text": "HAS THE SAME LOOK IN HER EYES AS BRANDON DID.",
+          "confidence": 0.942,
+          "text_ar": "تحمل نفس النظرة في عينيها التي كانت لدى براندون."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "KNOCK KNOCK",
+          "confidence": 0.972,
+          "text_ar": "طرق طوق"
+        },
+        {
+          "text": "YOU MUST BE HUNGRY. HAVE SOME MORE TO EAT BEFORE YOU ANSWER MY LAST QUESTION.",
+          "confidence": 0.953,
+          "text_ar": "لا بد أنك جائعة. كلي المزيد قبل أن تجيبي على سؤالي الأخير."
+        },
+        {
+          "text": "THANK YOU, MY LORD...",
+          "confidence": 0.872,
+          "text_ar": "شكراً لك، سيدي..."
+        },
+        {
+          "text": "CALLME FATHER.",
+          "confidence": 0.943,
+          "text_ar": "ناديني يا أبي."
+        },
+        {
+          "text": "ALRIGHT... F-FATHER.",
+          "confidence": 0.956,
+          "text_ar": "حسناً... أ-أبي."
+        },
+        {
+          "text": "WHATA RELIEF.HE'S LOWERED HIS GUARD AGAIN.",
+          "confidence": 0.943,
+          "text_ar": "يا لها من راحة. لقد خفّض حذره مجدداً."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "WHAT ARE YOUR THOUGHTS ON THE DISCUSSION WE HAD EARLIER?",
+          "confidence": 0.935,
+          "text_ar": "ما رأيك في النقاش الذي خضناه سابقاً؟"
+        },
+        {
+          "text": "grabs",
+          "confidence": 0.998,
+          "text_ar": "يمسك"
+        },
+        {
+          "text": "IT MIGHT BE TOO EARLY TO ASK THE LADY THIS KIND OF QUESTION.",
+          "confidence": 0.957,
+          "text_ar": "قد يكون مبكراً جداً لسؤال الآنسة عن هذا النوع من الأسئلة."
+        },
+        {
+          "text": "EVENIF THE RUMOUR TURNS OUT TO BE TRUE,I BELIEVE IT IS STILL TOO EARLY.",
+          "confidence": 0.957,
+          "text_ar": "حتى لو تبين أن الشاعة صحيحة، أعتقد أنه لا يزال مبكراً جداً."
+        },
+        {
+          "text": "RISES",
+          "confidence": 0.973,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "IFIT WAS ME...",
+          "confidence": 0.885,
+          "text_ar": "لو كنت مكانك..."
+        },
+        {
+          "text": "IF IT WAS YOU..?",
+          "confidence": 0.892,
+          "text_ar": "لو كنت مكانكِ..؟"
+        },
+        {
+          "text": "THE PROHIBITION ACT MUST HAVE BEEN SOMETHING THAT THE EMPEROR HAD PUTALOTOF THOUGHT INTO.",
+          "confidence": 0.956,
+          "text_ar": "لابد أن قانون الحظر كان أمراً فكر فيه الإمبراطور ملياً."
+        },
+        {
+          "text": "EVEN IF IT ENDS UP BEING REPEALED, WHO'S TO SAY THAT THE DECISIONWAS100% THE EMPEROR'S?",
+          "confidence": 0.929,
+          "text_ar": "حتى لو انتهى الأمر بإلغائه، فمن يضمن أن القرار كان قرار الإمبراطور بنسبة مئة بالمئة؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "MY GUESS IS THAT IT WOULD BE CLOSER TO 50%.",
+          "confidence": 0.92,
+          "text_ar": "تخميني أنه سيكون أقرب إلى خمسين بالمئة."
+        },
+        {
+          "text": "AND?",
+          "confidence": 0.99,
+          "text_ar": "و؟"
+        },
+        {
+          "text": "I WOULD SUGGEST AFTER IT'S BEEN OFFICIALLY ANNOUNCED...",
+          "confidence": 0.933,
+          "text_ar": "أقترح بعد الإعلان رسمياً عن الأمر..."
+        },
+        {
+          "text": "TO ATTAIN A YEARLY PERMIT FOR THELIQUOR THAT THEPALACE EXCLUSIVELY IMPOSES LEVIES UPON.",
+          "confidence": 0.951,
+          "text_ar": "الحصول على تصريح سنوي للخمور التي تفرض القصر رسوماً عليها حصرياً."
+        },
+        {
+          "text": "BETH, PLEASE GET ME SOMEDIGESTIVE PILLS FROM SIR OLIVER.",
+          "confidence": 0.958,
+          "text_ar": "بيث، من فضلك احضري لي بعض حبوب الهضم من السير أوليفر."
+        },
+        {
+          "text": "Pati",
+          "confidence": 0.798,
+          "text_ar": "خطوات"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "WE STILL HAVESOME HERE. YOU USED TO TAKE IT OFTEN.",
+          "confidence": 0.922,
+          "text_ar": "لا يزال لدينا بعض هنا. كنتِ تتناولينها كثيراً."
+        },
+        {
+          "text": "UM... MY LADY,IS IT TRUE?",
+          "confidence": 0.864,
+          "text_ar": "امم... سيدتي، أهذا صحيح؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.994,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "WILL THE PROHIBITION ACT REALLY BE REPEALED?",
+          "confidence": 0.97,
+          "text_ar": "هل سيعلغى قانون الحظر حقاً؟"
+        },
+        {
+          "text": "I HEARD THAT IT WAS BROUGHT UP DURING THE MEETING.IS IT TRUE?",
+          "confidence": 0.956,
+          "text_ar": "سمعت أنه تم طرحه خلال الاجتماع. أهذا صحيح؟"
+        },
+        {
+          "text": "BETH, WHERE DID YOU HEAR THAT FROM? EROM?",
+          "confidence": 0.884,
+          "text_ar": "بيث، من أين سمعتِ ذلك؟ أمن إيروم؟"
+        },
+        {
+          "text": "ARE YOU INTERESTED IN THIS KIND OF STUFF?",
+          "confidence": 0.949,
+          "text_ar": "أمهتمة أنتِ بهذا النوع من الأمور؟"
+        },
+        {
+          "text": "Ugh.",
+          "confidence": 0.895,
+          "text_ar": "تبا."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IT SEEMED THAT THE NEIGHBOURHOOD KIDS WERE BEATING HIMUP.",
+          "confidence": 0.906,
+          "text_ar": "بدا أن أطفال الحي كانوا يبرحونه ضرباً."
+        },
+        {
+          "text": "IDIDN'T PARTICULARLY CARE THAT HE WAS TRAINING BY THE FIELD.",
+          "confidence": 0.921,
+          "text_ar": "لم أكن مهتمة بشكل خاص بكونه يتدرب بجانب الحقل."
+        },
+        {
+          "text": "I THOUGHT THAT HE WOULD QUIT AFTER A FEW DAYS.",
+          "confidence": 0.95,
+          "text_ar": "ظننت أنه سيقلع عن ذلك بعد أيام قليلة."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "MY LADY, DO YOU HAVE ANY MONEY?",
+          "confidence": 0.912,
+          "text_ar": "سيدتي، أتملكين أي أموال؟"
+        },
+        {
+          "text": "LEAN",
+          "confidence": 0.995,
+          "text_ar": "انحناء"
+        },
+        {
+          "text": "Huh? MONEY?",
+          "confidence": 0.988,
+          "text_ar": "هاه؟ أموال؟"
+        },
+        {
+          "text": "Huh.",
+          "confidence": 0.961,
+          "text_ar": "هاه."
+        },
+        {
+          "text": "YES, MONEY. I INVESTED THREE MONTHS WORTHOF MY SALARY.",
+          "confidence": 0.941,
+          "text_ar": "نعم، أموال. لقد استثمرت راتب ثلاثة أشهر."
+        },
+        {
+          "text": "SIX GOLD?",
+          "confidence": 0.966,
+          "text_ar": "ست قطع ذهبية؟"
+        },
+        {
+          "text": "YEP!THEY SAID THERE'D BE A MINIMUM OF 20 TIMES THE RETURN. 20 TIMES!",
+          "confidence": 0.933,
+          "text_ar": "أجل! قالوا إن العائد سيكون عشرين ضعفاً على الأقل. عشرون ضعفاً!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "SHOCK",
+          "confidence": 0.978,
+          "text_ar": "صدمة"
+        },
+        {
+          "text": "DIDYOU INVEST IN... SORBON WINE?",
+          "confidence": 0.924,
+          "text_ar": "هل استثمرتِ في... نبيذ سوربون؟"
+        },
+        {
+          "text": "JUST AS I'D EXPECT FROMYOU, MY LADY.",
+          "confidence": 0.943,
+          "text_ar": "كما هو متوقع منكِ، سيدتي."
+        },
+        {
+          "text": "I WAS BARELY ABLE TO INVEST.",
+          "confidence": 0.915,
+          "text_ar": "لقد تمكنت بصعوبة من الاستثمار."
+        },
+        {
+          "text": "WHERE DID YOU GET THIS INFOR- MATION?",
+          "confidence": 0.943,
+          "text_ar": "من أين حصلتِ على هذه المعلومة؟"
+        },
+        {
+          "text": "CINDY'S BROTHER WAS INFORMEDABOUTIT BY A NOBLE IN THE DRAWING ROOM.",
+          "confidence": 0.925,
+          "text_ar": "أخبر شقيق سيندي بذلك نبيل في غرفة الاستقبال."
+        },
+        {
+          "text": "NORMALLY, NOBLES WOULDN'T HELP COMMONERS WITH SUCH A THING,BUT THIS INFORMATION WAS GIVENINAPPRECIATIONFOR HIS GOOD SERVICE. THE NOBLEMANEVENSET UPA BANK ACCOUNT FORHIM.",
+          "confidence": 0.94,
+          "text_ar": "عادة، لا يساعد النبلاء العامة في مثل هذه الأمور، لكن هذه المعلومة قُدمت تقديراً لخدماته الجيدة. حتى إن النبيل أنشأ حساباً مصرفياً له."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "BETH, WHEN DID YOU INVEST THAT MONEY?",
+          "confidence": 0.936,
+          "text_ar": "بيث، متى استثمرتِ تلك الأموال؟"
+        },
+        {
+          "text": "ABOUT TWO DAYS AGO.",
+          "confidence": 0.972,
+          "text_ar": "قبل يومين تقريباً."
+        },
+        {
+          "text": "GO GET YOUR MONEY BACK!",
+          "confidence": 0.947,
+          "text_ar": "اذهبي واستعيدي أموالك!"
+        },
+        {
+          "text": "MUTTER",
+          "confidence": 0.984,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "NO.YOU SHOULD GO FIND CINDY FIRST..",
+          "confidence": 0.951,
+          "text_ar": "لا. يجب أن تجدي سيندي أولاً.."
+        },
+        {
+          "text": "IS THE ACCOUNT WITH THE PALACE CENTRAL BANK? WAIT-WAS THERE EVENAN ACCOUNT TO BEGIN WITH?",
+          "confidence": 0.96,
+          "text_ar": "أالحساب في بنك القصر المركزي؟ انتظري - هل كان هناك حساب من الأساس؟"
+        },
+        {
+          "text": "MUTTER",
+          "confidence": 0.994,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "Wh-what's wrong, my lady?",
+          "confidence": 0.96,
+          "text_ar": "ما-ما الأمر يا سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "IF THEY ARE TELLING COMMONERS LIKE YOU ABOUT IT, THEN IT MUST BE A SCAM!",
+          "confidence": 0.908,
+          "text_ar": "إن كانوا يخبرون العامة أمثالك عن هذا، فلا بد أنها عملية نصب!"
+        },
+        {
+          "text": "MWM",
+          "confidence": 0.405,
+          "text_ar": "همهمة"
+        },
+        {
+          "text": "GO FIND CINDY... QUICKLY!",
+          "confidence": 0.899,
+          "text_ar": "اذهبي لتجدي سيندي... بسرعة!"
+        },
+        {
+          "text": "NOW!!!!! 1",
+          "confidence": 0.077,
+          "text_ar": "الآن!!!!! 1"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "REALIZE",
+          "confidence": 0.977,
+          "text_ar": "إدراك"
+        },
+        {
+          "text": "NO WAY... DID MOM ALSO-?",
+          "confidence": 0.902,
+          "text_ar": "مستحيل... أكات أمي قد فعلت ذلك أيضاً-؟"
+        },
+        {
+          "text": "生 引 S 烈合 门",
+          "confidence": 0.102,
+          "text_ar": "ومض"
+        },
+        {
+          "text": "DAMN IT. I ATE TOO MUCH YESTERDAY OUT OFFRUSTRATION. LOOM O",
+          "confidence": 0.645,
+          "text_ar": "تبا لبي. أكلت كثيراً بالأمس من شدة الإحباط."
+        },
+        {
+          "text": "sigh",
+          "confidence": 0.992,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "NOW I'M BACK AT 90 KG...",
+          "confidence": 0.827,
+          "text_ar": "الآن عدت إلى وزن 90 كغ..."
+        },
+        {
+          "text": "I only invested lioth of the amount the countess did. Itd be werd f I was the only one HIWas who dldn't do it.. who dln't do it. I invested the 子 least. Should I have done more? X",
+          "confidence": 0.16,
+          "text_ar": "لقد استثمرت عُشر المبلغ الذي استثمرته الكونتيسة فقط. سيكون غريباً إن كنت الوحيدة التي لم تفعل ذلك... استثمرت الحد الأدنى. أكان يجب أن أفعل المزيد؟"
+        },
+        {
+          "text": "Sigh",
+          "confidence": 0.964,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "WHYDID MOMDO THAT...",
+          "confidence": 0.931,
+          "text_ar": "لماذا فعلت أمي ذلك..."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "BETH, IS THERE SOMETHING HAPPENING TODAY?",
+          "confidence": 0.965,
+          "text_ar": "بيث، أهناك شيء يحدث اليوم؟"
+        },
+        {
+          "text": "I'M NOT SURE. BUT THERE'S QUITE A FEWINFLUENTIALOFFICIALS WHISPERINGAMONGST THEMSELVES OVER THERE...",
+          "confidence": 0.916,
+          "text_ar": "لست متأكدة. ولكن هناك عدد غير قليل من المسؤولين النافذين يهمسون فيما بينهم هناك..."
+        },
+        {
+          "text": "WELL,T HAS NOTHING TODO WITH ME.",
+          "confidence": 0.962,
+          "text_ar": "حسناً، لا علاقة لي بالأمر."
+        },
+        {
+          "text": ".GEEZ,I'M BEING TOO CAREFREE RIGHT NOW.",
+          "confidence": 0.827,
+          "text_ar": ".يا إلهي، إنني مستهترة للغاية الآن."
+        },
+        {
+          "text": "Ah=! MY LADY! WHAT'S WRONG?",
+          "confidence": 0.765,
+          "text_ar": "آه=! سيدتي! ما الأمر؟"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "IS THERE ACOPYOF TODAY'SPAPER IN MYROOM?",
+          "confidence": 0.959,
+          "text_ar": "أهناك نسخة من صحيفة اليوم في غرفتي؟"
+        },
+        {
+          "text": "Yes. Did you not read it?",
+          "confidence": 0.929,
+          "text_ar": "نعم. ألم تقرئيها؟"
+        },
+        {
+          "text": "I MUSTHAVE BEEN OUT OF MY MIND TOCOME DOWN HERE BEFORE READING THE PAPER.",
+          "confidence": 0.92,
+          "text_ar": "لابد أنني جننت لأحضر إلى هنا قبل قراءة الصحيفة."
+        },
+        {
+          "text": "LET'S RETURN. IHAVETO READIT.",
+          "confidence": 0.932,
+          "text_ar": "لنعد. يجب أن أقرأها."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "Group involved with smuggling Sorbon wine has been exposed. However, only the lesser gang members have been arrested. Rumours of the Prohibition repeal turned out to be false. who is this mysterious saviour of the Royal family?",
+          "confidence": 0.952,
+          "text_ar": "الكشف عن عصابة متورطة في تهريب نبيذ سوربون. ومع ذلك، تم القبض على صغار أعضاء العصابة فقط. شائعات إلغاء قانون الحظر تبين أنها خاطئة. فمن يكون منقذ العائلة المالكة الغامض هذا؟"
+        },
+        {
+          "text": "– Palace Daily News",
+          "confidence": 0.923,
+          "text_ar": "- أخبار قصر اليوم"
+        },
+        {
+          "text": "A list of noblewoman involved in the smuggling business has been handed over to the palace. Influential noblewoman included as akey contributor. -Osiria Weekly News",
+          "confidence": 0.944,
+          "text_ar": "تسليم قائمة بالنبيلات المتورطات في أعمال التهريب إلى القصر. نبيلات نافذات مدرجات كمساهمات رئيسيات. - أخبار أوسيريا الأسبوعية"
+        },
+        {
+          "text": "The esteemed Anton family takeninto custody for scam. who exactly were the noblewomen that fell victim to their words? -Empire Citizen Daily",
+          "confidence": 0.969,
+          "text_ar": "القبض على عائلة أنتون العريقة بتهمة النصب. من هنّ تحديداً النبيلات اللاتي وقعن ضحايا لكلماتهن؟ - صحيفة مواطن الإمبراطورية"
+        },
+        {
+          "text": "will the involvement of these nobles affect their children who will be taking the palace administrator exam in three weeks time? /ゞ x^",
+          "confidence": 0.498,
+          "text_ar": "هل ستؤثر تورط هؤلاء النبلاء على أطفالهم المقبلين على امتحان إدارة القصر خلال ثلاثة أسابيع؟"
+        },
+        {
+          "text": "-Osiria Daily",
+          "confidence": 0.982,
+          "text_ar": "- أوسيريا ديلي"
+        },
+        {
+          "text": "WHAT A MESS...",
+          "confidence": 0.903,
+          "text_ar": "يا له من فوضى..."
+        },
+        {
+          "text": "IS THAT THE COMMANDER OF THE KNIGHTS? THEY'VE ALREADY DISPATCHED INVESTIGATORS?",
+          "confidence": 0.968,
+          "text_ar": "أهذا قائد الفرسان؟ لقد أرسلوا المحققين بالفعل؟"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "HM,THAT HANDSOME MAN LOOKS.. FAMILIAR...",
+          "confidence": 0.913,
+          "text_ar": "مم، هذا الرجل الوسيم يبدو... مألوفاً..."
+        },
+        {
+          "text": "WAIT- THAT GAZE... COVE NO WAY...",
+          "confidence": 0.673,
+          "text_ar": "انتظري- تلك النظرة... مستحيل..."
+        },
+        {
+          "text": "IT'S HIM?!",
+          "confidence": 0.955,
+          "text_ar": "أهو هو؟!સર"
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.948,
+          "text_ar": "مالك حقوق مانهوا كيناز"
+        },
+        {
+          "text": "NU （） woodyNana，Mih",
+          "confidence": 0.542,
+          "text_ar": "وودي نانا، ميه"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "Sep3.2020759PM ch8QCis done and has been uploaded roadblocking on ch 9 AHAHAHAHA Sep2020",
+          "confidence": 0.854,
+          "text_ar": "ترجمة الفصل الثامن انتهت وتم رفعها"
+        },
+        {
+          "text": "S420201109AM HAHAHAHAHAjkjk just take your timeee",
+          "confidence": 0.893,
+          "text_ar": "ههههه خذوا وقتكم فحسب"
+        },
+        {
+          "text": "Sp/4.20204:08AM Good work im waitingg888 p4202010-56AM Stop waitingggg Photo proof that I'm actually the one being whipped by Belle#112.. Jokes aside, please pray for our l, Belle#333,who's got school like the rest of the scan community.",
+          "confidence": 0.831,
+          "text_ar": "عمل جيد أنا في الانتظار"
+        },
+        {
+          "text": "SE4202011AM Toolateim arcrgshall workthrmtears Sep 4.202011:21 AM",
+          "confidence": 0.756,
+          "text_ar": "متأخر جداً لكنني سأعمل عبر الدموع"
+        },
+        {
+          "text": "-Belle#10 SORRY BELL'S SCANS present Ill Save This Damn Family!-Chapter9 Raw Provider:Manhwa KingdomxPEACHY Translafor: Belle#333 Proofreader:Belle#10 Cleaner/Redrawer:Belle#12 Typesetfer: Belle#12 Quality Checker:Belle#10",
+          "confidence": 0.879,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "Like & Follow us on Mangadex!",
+          "confidence": 0.964,
+          "text_ar": "تابعونا على مانجا ديكس!"
+        }
+      ]
+    }
+  ]
+}
