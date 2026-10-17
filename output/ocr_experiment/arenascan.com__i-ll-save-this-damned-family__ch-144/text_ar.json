@@ -1,0 +1,1381 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "144",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "I'LL SAVE THISDAMNED FAMILY! WRITING Munirang ILLUSTRATIONOlbera",
+          "confidence": 0.883,
+          "text_ar": "سأقوم بتعديل هذا الفصل! تأليف: مونيرانج، الرسوم: أولبيرا"
+        },
+        {
+          "text": "EPISODE144",
+          "confidence": 0.994,
+          "text_ar": "الحلقة 144"
+        },
+        {
+          "text": "9 MONTHS",
+          "confidence": 0.947,
+          "text_ar": "9 أشهر"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "CHATTER 1",
+          "confidence": 0.232,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "BUSTLE",
+          "confidence": 0.971,
+          "text_ar": "صخب"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "ARIA'SCLLIB HAS GAINED A FEW MORE MEMBERS..",
+          "confidence": 0.946,
+          "text_ar": "نادي آريا كسب بضعة أعضاء إضافيين..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "STAKEOUT TEAM, BLACK SOCIETY VECTOR",
+          "confidence": 0.922,
+          "text_ar": "فريق المراقبة، مجتمع فيكتور الأسود"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOU'RE RIGHT.",
+          "confidence": 0.956,
+          "text_ar": "أنت محق."
+        },
+        {
+          "text": "THERE ARE TWO MORE THAN THERE WERE LAST WEEK.",
+          "confidence": 0.97,
+          "text_ar": "هناك اثنان أكثر من الأسبوع الماضي."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "JOL",
+          "confidence": 0.971,
+          "text_ar": "قفزة"
+        },
+        {
+          "text": "GAH!!!",
+          "confidence": 0.994,
+          "text_ar": "آه!!!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HEYNOW, THERE'S NONEED TO BE SO JLMPY.",
+          "confidence": 0.96,
+          "text_ar": "مهلاً، لا داعي لأن تكون مفزوعاً هكذا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "STAKEOUTTEAM, 2NDPRINCE'SPALACE TOBY",
+          "confidence": 0.991,
+          "text_ar": "فريق المراقبة، قصر الأمير الثاني، توبي"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "ITHOUGHT YOU WERE ONLY IN CHARGE OF LADY TARA.",
+          "confidence": 0.934,
+          "text_ar": "كنت أظن أنك مسؤول عن الليدي تارا وحدها."
+        },
+        {
+          "text": "ANDWHY DO YOU KEEP HANGING AROUND THIS PLACE WHEN YOU'RE OFF DLTY?",
+          "confidence": 0.925,
+          "text_ar": "ولماذا تظل تحوم حول هذا المكان وأنت خارج أوقات العمل؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "BECALISE IT'S SO ENTERTAINING!",
+          "confidence": 0.966,
+          "text_ar": "لأنه ممتع للغاية!"
+        },
+        {
+          "text": "ALSO, THE OTHER SIBLINGS' CLLIBS HAVE BEEN GAINING A LOT MORE MEMBERS THAN ARIA'S.",
+          "confidence": 0.935,
+          "text_ar": "أيضاً، نوادي الإخوة الآخرين كسبت أعضاء أكثر بكثير من نادي آريا."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": []
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "LOGAN'S AWOKEN LORDS' CLLB HAS DOUBLED IN SIZE NOW.",
+          "confidence": 0.959,
+          "text_ar": "نادي اللوردات المستيقظين التابع لوغان تضاعف حجمه الآن."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "STEP",
+          "confidence": 0.978,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "FIVE STARS?",
+          "confidence": 0.996,
+          "text_ar": "خمس نجوم؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "SCRIBBLE SCRIBBLE D",
+          "confidence": 0.465,
+          "text_ar": "خربشة خربشة"
+        },
+        {
+          "text": "WHERE IS THIS PLACE MADAMVICTORIAWENTTO? IT'S MARKED WITHFIVE STARS... IT MLST BE REALLYIMPORTANT.",
+          "confidence": 0.913,
+          "text_ar": "أين هذا المكان الذي ذهبت إليه المدام فيكتوريا؟ إنه محدد بخمس نجوم... لا بد أنه مهم حقاً."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "TAP ☆☆☆☆☆ Report Madam Victoria's destination to the apprentice.",
+          "confidence": 0.876,
+          "text_ar": "نقر ☆☆☆☆☆ أبلغ المتدرب بوجهتك مدام فيكتوريا."
+        },
+        {
+          "text": "Confirm members of Logan's club.",
+          "confidence": 0.918,
+          "text_ar": "تأكيد أعضاء نادي لوغان."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "DON'T BE LIKE THAT. WE'RE FRIENDS, AREN'T WE? ANDI JLST GAVE YOU INFORMATION ONLOGAN.",
+          "confidence": 0.93,
+          "text_ar": "لا تكن هكذا. ألسنا أصدقاء؟ وقد أعطيتك للتو معلومات عن لوغان."
+        },
+        {
+          "text": "PAT PAT",
+          "confidence": 0.989,
+          "text_ar": "تربيت تربيت"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "IT'S YOUR TURN TO SHARE NOW. AS LONG AS WE DON'T SUFFER LOSSES, IT'S FINE, RIGHT?",
+          "confidence": 0.931,
+          "text_ar": "دورك الآن لتشاركنا. طالما أننا لا نتكبد خسائر، فلا بأس أليس كذلك؟"
+        },
+        {
+          "text": "PLEASE? PRETTYPLEASE? SPARKLE",
+          "confidence": 0.957,
+          "text_ar": "أرجوك؟ أرجوك أرجوك؟ لمعان"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "STARE",
+          "confidence": 0.97,
+          "text_ar": "حديق"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "SPARKLE",
+          "confidence": 0.977,
+          "text_ar": "تألق"
+        },
+        {
+          "text": "GROAN",
+          "confidence": 0.975,
+          "text_ar": "أنين"
+        },
+        {
+          "text": "GLIMMER",
+          "confidence": 0.975,
+          "text_ar": "بريق"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": []
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "WELL... VICTORIAELIAS ATTENDED A GAMBLING VENLIE CALLED \"FIXER DONNIE'S GAMBLING HOUSE, WHOSE HANDS ARE FASTER THAN HIS EYES.\"",
+          "confidence": 0.933,
+          "text_ar": "حسناً... حضرت فيكتوريا إلياس صالة قمار تُدعى \"صالة قمار دوني المُصلح، صاحب اليد الأسرع من العين\"."
+        },
+        {
+          "text": "SHE WENT TO SLICHA DANGEROUS PLACE?",
+          "confidence": 0.898,
+          "text_ar": "ذهبت إلى مكان خطير هكذا؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "2O MINLITES LATER",
+          "confidence": 0.918,
+          "text_ar": "بعد 20 دقيقة"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "STEP",
+          "confidence": 0.999,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "DO I REPORT THIS TO HIS HIGHNESS?",
+          "confidence": 0.97,
+          "text_ar": "هل أبلغ سموه بهذا؟"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "WELL,HE ONLY ASKED ME TO REPORT THINGS ABOLT LADY TARA, SO I SUPPOSE NOT.",
+          "confidence": 0.928,
+          "text_ar": "حسناً، لقد طلب مني فقط الإبلاغ عن الأمور المتعلقة بالليدي تارا، لذا أظن أن لا."
+        },
+        {
+          "text": "HALT",
+          "confidence": 0.991,
+          "text_ar": "توقف"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "SECTIONS OF UNDERCOVER RLLES—IT IS LP TO THE DECISION-MAKER TO DECIDE WHATINFORMATIONIS VALLIABLE.",
+          "confidence": 0.882,
+          "text_ar": "أقسام القواعد السرية - يرجع القرار لصاحب القرار ليقرر أي معلومات ذات قيمة."
+        },
+        {
+          "text": "THE LINDERCOVER AGENTMLIST JLIDGE THE RELEVANCE AND IMPORTANCEOF THE INFORMATIONAND REPORT IT ALL.",
+          "confidence": 0.923,
+          "text_ar": "يجب على العميل السري الحكم على مدى صلة وأهمية المعلومات والإبلاغ عنها كلها."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "I'MNOT SURE HOW THIS IS RELEVANT, BLIT THE FACT THAT A NOBLEWOMAN IS GOING TO A SHADY PLACE LIKE THAT SEEMS PRETTY IMPORTANT.",
+          "confidence": 0.94,
+          "text_ar": "لست متأكداً كيف تكون هذه ذات صلة، لكن حقيقة أن امرأة نبيلة تذهب إلى مكان مشبوه مثل هذا تبدو مهمة للغاية."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "THEN I'LL HAVE TO REPORT IT.",
+          "confidence": 0.964,
+          "text_ar": "إذن سأضطر للإبلاغ عنها."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": []
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "YOU'RE HERE ALREADY.",
+          "confidence": 0.944,
+          "text_ar": "أنت هنا بالفعل."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "ISABELLE ELIAS",
+          "confidence": 0.969,
+          "text_ar": "إيزابيل إلياس"
+        },
+        {
+          "text": "BETH",
+          "confidence": 0.999,
+          "text_ar": "بيث"
+        },
+        {
+          "text": "OH!YES, MY LADY.THANKYOU FOR OFFERING TO TAKE ME WITH YOU!",
+          "confidence": 0.928,
+          "text_ar": "أه! نعم، سيدتي. شكراً لك على عرض اصطحابي معك!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "DON'T THANK ME. YOU ARE ONE OF TARA'S PEOPLE, WHICH MEANS I AMONYOUR SIDE AS WELL.",
+          "confidence": 0.948,
+          "text_ar": "لا تشكريني. أنت واحدة من أتباع تارا، مما يعني أنني في صفك أيضاً."
+        },
+        {
+          "text": "TOTHINK THAT YOUMAKE TIME TO STLIDY FASHION DESIGN WHILE WORKING AS A MAID... YOUARE VERYIMPRESSIVE, BETH.",
+          "confidence": 0.895,
+          "text_ar": "التفكير في أنك توفرين وقتاً لدراسة تصميم الأزياء بينما تعملين خادمة... أنت مذهلة حقاً، بيث."
+        },
+        {
+          "text": "IT'S ALL THANKS TO LADY TARA.",
+          "confidence": 0.987,
+          "text_ar": "هذا بفضل الليدي تارا وحدها."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "SHE NOT ONLY SHOWED ONE OF MY DRESSES TO THE DESIGNER AT THE JAVANCIE BOLTIQLE, BLT ALSO SECURED ME AN APPRENTICESHIP THERE.",
+          "confidence": 0.92,
+          "text_ar": "لم تكتفِ بعرض أحد فساتيني على المصمم في بوتيك جافانسي، بل أمنت لي فترة تدريب هناك أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "WHEN I ASKED HER HOW I COLLD POSSIBLY BE A DESIGNER WHEN I WAS JLST A MAID,",
+          "confidence": 0.914,
+          "text_ar": "عندما سألتها كيف يمكنني أن أكون مصممة بينما أنا مجرد خادمة،"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "SHE TOLD ME NOTTO GIVE UP ON MY DREAMS JUST BECALISE OF MY CIRCUMSTANCES, AND THAT THERE WAS NOTHING STRONGER THAN A PERSON'S WILL.",
+          "confidence": 0.909,
+          "text_ar": "أخبرتني ألا أتخلى عن أحلامي مجرد بسبب ظروفي، وأنه لا يوجد شيء أقوى من إرادة المرء."
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "I AMSOPROLD OF BOTH MY SWEET TARAAND YOU BETH!",
+          "confidence": 0.914,
+          "text_ar": "أنا فخورة جداً بكل من تارا الحلوة وأنت يا بيث!"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "TEARY",
+          "confidence": 0.992,
+          "text_ar": "دامعة"
+        },
+        {
+          "text": "THANK YOU, MY LADY!",
+          "confidence": 0.923,
+          "text_ar": "شكراً لك، سيدتي!"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "SHALL WE GET GOING? I HAVE TO STOP BY TEFFANIE'S AS WELL, SO LET'S HURRY.",
+          "confidence": 0.905,
+          "text_ar": "ألن نتحرك؟ عليّ المرور على متجر تيفاني أيضاً، فلنسرع."
+        },
+        {
+          "text": "TEFFANIE'S? THAT'S PERFECT!",
+          "confidence": 0.977,
+          "text_ar": "متجر تيفاني؟ هذا ممتاز!"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "WHAT'S WRONG? ARE YOU WORRIED YOLI'LL BE LATE TO THE BOLTIQLE IF WE STOP BY TEFFANIE'S?",
+          "confidence": 0.889,
+          "text_ar": "ما الأمر؟ هل تشعرين بالقلق من أنك ستتأخرين عن البوتيك إذا مررنا بمتجر تيفاني؟"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "NO,I'VE ACTLALLY BEEN WANTING TO GO THERE MYSELF. MAY I GO IN WITH YOU, MYLADY?",
+          "confidence": 0.926,
+          "text_ar": "لا، في الواقع كنت أرغب في الذهاب إلى هناك بنفسي. هل يمكنني الدخول معك، سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "OH MY! OF COLRSE.",
+          "confidence": 0.898,
+          "text_ar": "يا إلهي! بالطبع."
+        },
+        {
+          "text": "I'LL BE ABLE TO GET THAT EARRING LADYTARAASKED ME TO GET TODAY. THIS IS GREAT!",
+          "confidence": 0.954,
+          "text_ar": "سأكون قادرة على إحضار ذلك القرط الذي طلبت مني الليدي تارا إحضاره اليوم. هذا رائع!"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": []
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "STEP",
+          "confidence": 0.94,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "BUIT...",
+          "confidence": 0.812,
+          "text_ar": "لكن..."
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "I WONDER WHERE SHE LOST THAT EARRING IN THE FIRST PLACE.",
+          "confidence": 0.952,
+          "text_ar": "أتساءل أين فقدت ذلك القرط في المقام الأول."
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": []
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": []
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": []
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "BARONCHARLES BERG ASKED FORSOME MORE TIME TO THINK.AND HE ASKED FOR A PRIVATE ALIDIENCE WITH YOL.",
+          "confidence": 0.922,
+          "text_ar": "طلب البارون تشارلز بيرغ بعض الوقت الإضافي للتفكير. وطلب مقابلة خاصة معك."
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "HE SEEMS TO BE VERY CAREFLIL. FINE, I'LL MEET WITH HIMTOMORROW EVENING.",
+          "confidence": 0.938,
+          "text_ar": "يبدو حذراً للغاية. حسناً، سأقابله مساء الغد."
+        },
+        {
+          "text": "ALL RTGHT.",
+          "confidence": 0.865,
+          "text_ar": "حسناً."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "THEN I'LL SEND A MESSAGE TO HIS MANORONCE WE HAVE FINISHEDINSPECTING THE WELL.",
+          "confidence": 0.933,
+          "text_ar": "إذن سأرسل رسالة إلى قصرة بمجرد أن ننتهي من تفقد البئر."
+        },
+        {
+          "text": "WHERE'S THE 2ND ADMINISTRATOR?",
+          "confidence": 0.976,
+          "text_ar": "أين الإدارية الثانية؟"
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "SHE JLIST MET LIP WITH THE ENGINEER AND WORKFORCEMANAGER TOASK THEM SOME QLESTIONS AND IS HEADING TO THE BARON'S MANORNOW.",
+          "confidence": 0.935,
+          "text_ar": "لقد التقت للتو بالمهندس ومدير القوى العاملة لتطرح عليهما بعض الأسئلة وهي متوجهة إلى قصر البارون الآن."
+        },
+        {
+          "text": "YOUR HIGHNESS. I MEAN,CAPTAIN? DO YOU REALLY THINK THE 2ND ADMINISTRATOR WILL REALIZE THE TRUTH BASED ON",
+          "confidence": 0.937,
+          "text_ar": "سمو الأمير. أعني، أيها القائد؟ هل تعتقد حقاً أن الإدارية الثانية ستدرك الحقيقة بناءً على"
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "THATPAPERWORK?",
+          "confidence": 0.996,
+          "text_ar": "تلك الأوراق؟"
+        },
+        {
+          "text": "CAPTAINOF THE 2ND KNIGHTS'ORDER WALTER",
+          "confidence": 0.961,
+          "text_ar": "قائد فرقة الفرسان الثانية والتر"
+        },
+        {
+          "text": "2ND PRINCE OF OCERIA KYLEAMURE",
+          "confidence": 0.941,
+          "text_ar": "أمير أوسيريا الثاني كايل أمور"
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "SMIRK",
+          "confidence": 0.935,
+          "text_ar": "ابتسامة خبيثة"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "WE'LL SEE.",
+          "confidence": 0.955,
+          "text_ar": "سنرى ذلك."
+        },
+        {
+          "text": "SO YOU DO THINK SHE CAN!",
+          "confidence": 0.894,
+          "text_ar": "إذن أنتِ تعتقدين حقًا أنه بإمكانها فعلها!"
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "I DO.IF SHE IS MEETING LP WITH THE BARON, SHE'LL NOTICE IT RIGHT AWAY. SHE'LL COME TO ME BY EVENING OR EVEN SOONER.",
+          "confidence": 0.933,
+          "text_ar": "أجل. إن كانت تلتقي بالبارون، فستلاحظ الأمر فورًا. ستأتي إليّ بحلول المساء أو حتى قبل ذلك."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": [
+        {
+          "text": "THAT QLICKLY?",
+          "confidence": 0.963,
+          "text_ar": "بهذه السرعة؟"
+        },
+        {
+          "text": "JOLT",
+          "confidence": 0.988,
+          "text_ar": "ارتجافة"
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "SHE ALWAYS CAME TO SEE ME SOONER THAN I EXPECTED. HER GOING TO SEE THE BARON WILL ALSO HELP HIM COME TOADECISION.",
+          "confidence": 0.945,
+          "text_ar": "لقد كانت تأتي لرؤيتي دائمًا أسرع مما توقعت. ذهابها لرؤية الببارون سيساعده أيضًا في الوصول إلى قرار."
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "西网 NUN",
+          "confidence": 0.213,
+          "text_ar": "راهبة"
+        },
+        {
+          "text": "IS 2ND ADMINISTRATOR TARA ELIAS THAT IMPRESSIVE?",
+          "confidence": 0.96,
+          "text_ar": "ألهذه الدرجة تارا إلياس الإدارية الثانية مبهرة؟"
+        },
+        {
+          "text": "THEN AGAIN, I GLESS THAT'S WHY HE AGREED TO A SECRETARY WHEN HE NEVER HAD ONE BEFORE.",
+          "confidence": 0.93,
+          "text_ar": "ولكن مجددًا، أعتقد أن هذا هو سبب موافقته على تعيين سكرتيرة رغم أنه لم يكن يملك واحدة من قبل."
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": []
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "EACH REPORT WAS WRITTEN BY A DIFFERENT PERSON,BLIT THE HANDWRITING LOOKED THE SAME. THAT MEANS THERE WAS SOME TAMPERING.AND THE PLANNED BLDGET IS CORRECT, BLIT...",
+          "confidence": 0.941,
+          "text_ar": "كل تقرير كتبه شخص مختلف، لكن خط اليد بدا متشابهًا. هذا يعني أنه كان هناك عبث بالمستندات. والميزانية المخططة صحيحة، ولكن..."
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "THE ACTLIAL BLDGET EXECUTION WAS DIFFERENT FROM WHAT THE RECORDS SAY.",
+          "confidence": 0.923,
+          "text_ar": "تنفيذ الميزانية الفعلي كان مختلفًا عما تسجله السجلات."
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "STEP",
+          "confidence": 0.998,
+          "text_ar": "خطوات"
+        },
+        {
+          "text": "EVEN IF THE BARON IS IN CHARGE, HE WOULDN'T HAVE BEEN ABLE TO EXECLITE THIS BLDGET WITHOUT PERMISSION FROM THE MINISTRY OF FINANCE...",
+          "confidence": 0.91,
+          "text_ar": "حتى لو كان البارون هو المسؤول، لما كان قادرًا على تنفيذ هذه الميزانية دون إذن من وزارة المالية..."
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "AFOURTH-YEAR KNIGHT PAUL",
+          "confidence": 0.995,
+          "text_ar": "فارس السنة الرابعة بول"
+        },
+        {
+          "text": "LADYOFHOUSEELIAS& 2ND ADMINISTRATOROF THE2NDPRINCE'SPALACE TARA ELIAS",
+          "confidence": 0.953,
+          "text_ar": "سيدة آل إلياس والإدارية الثانية لقصر الأمير الثاني تارا إلياس"
+        },
+        {
+          "text": "NOTONLY COLLD HE LOSE HIS JOB, BUT HE MIGHT ALSO BE PLNISHED SEVERELY FOR THIS.",
+          "confidence": 0.932,
+          "text_ar": "لن يفقد وظيفته فحسب، بل قد يُعاقب بشدة على هذا الفعل."
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "YOU COLLD TAKE IT AS THE BARON USING THE FLNDS FOR HISPRIVATE INTEREST, WHICHWOLLD MAKE HIMACORRUPT OFFICIAL.",
+          "confidence": 0.889,
+          "text_ar": "يمكنك اعتبار أن البارون استخدم الأموال لمصالحه الشخصية، مما يجعله مسؤولاً مرتشياً."
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.998,
+          "text_ar": "خطوات"
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "BLT THEN AGAIN, EVERYTHING SEEMS TO BE GOING SMOOTHLY AT THE CONSTRLCTION SITE...",
+          "confidence": 0.941,
+          "text_ar": "لكن مع ذلك، يبدو أن كل شيء يسير بسلاسة في موقع البناء..."
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "HE COLLD HAVE JLST ASKED FORPERMISSIONFOR THE EXTRA BLDGET!",
+          "confidence": 0.912,
+          "text_ar": "كان بإمكانه ببساطة طلب الإذن للميزانية الإضافية!"
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "WHAT WAS THAT, 2ND SEC... I MEAN, 2ND ADMINISTRATOR?",
+          "confidence": 0.898,
+          "text_ar": "ماذا كنتِ تقولين، أيتها السكرت... أعني، الإدارية الثانية؟"
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "IT'S NOTHING. WAIT, SO THE BARON REALLY LIVES IN THAT SMALL HOUSE?",
+          "confidence": 0.939,
+          "text_ar": "لا شيء. انتظري، إذن البارون يعيش حقًا في ذلك المنزل الصغير؟"
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "YES. I CONFIRMED IT SEVERAL TIMES. THIS IS THE PLACE. HE LIVES WITH ONE SERVANT.",
+          "confidence": 0.953,
+          "text_ar": "نعم. لقد تأكدت من ذلك عدة مرات. هذا هو المكان. يعيش مع خادم واحد."
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "BUT WHY, WHEN HE HAS THAT MANOR?",
+          "confidence": 0.874,
+          "text_ar": "ولكن لماذا، ولديه ذلك القصر الكبير؟"
+        },
+        {
+          "text": "HMM... I'M SURE HE HAS HIS REASONS. I HAVE SOMANY QUESTIONS FORHIM.",
+          "confidence": 0.919,
+          "text_ar": "ممم... أنا متأكدة أن لديه أسبابه. لدي الكثير من الأسئلة لأطرحها عليه."
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "YES, MA'AM.",
+          "confidence": 0.955,
+          "text_ar": "حاضر، سيدتي."
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "IS ANYONE",
+          "confidence": 0.986,
+          "text_ar": "هل من أحد"
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": [
+        {
+          "text": "HOME?",
+          "confidence": 0.993,
+          "text_ar": "في المنزل؟"
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": []
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "a 川 FLINCH",
+          "confidence": 0.103,
+          "text_ar": "فزع"
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": []
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "HE LOOKS OLDER THAN I THOLGHT.. OR DOES HE?",
+          "confidence": 0.903,
+          "text_ar": "يبدو أكبر سناً مما ظنتُ.. أم أنه كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": []
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "ARE YOUFROM THE INSPECTION TEAM?",
+          "confidence": 0.95,
+          "text_ar": "أأنتما من فريق التفتيش؟"
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "HOW DARE YOU SPEAK WITHOUT GREETING US FIRST, YOU MERE SERVANT!MIND YOUR MANNERS!",
+          "confidence": 0.946,
+          "text_ar": "كيف تجرؤ على الكلام دون تحيتنا أولاً أيها الخادم الحقير! التزم أدبك!"
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "HAHAHA.",
+          "confidence": 0.993,
+          "text_ar": "هاهاها."
+        },
+        {
+          "text": "HOLD ON, SIR PALIL.",
+          "confidence": 0.916,
+          "text_ar": "مهلاً يا سير بول."
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "I'VE LIVED IN THE COLINTRYSIDE ALL MY LIFE, SO I NEVER LEARNED COURT ETIQLETTE. HOW UNFORTLINATE.",
+          "confidence": 0.936,
+          "text_ar": "لقد عشت في الريف طوال حياتي، لذا لم أتعلم قط إداب القصر. يا للأسف."
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "HIS ATTITLDE AND ACCENT DON'T MAKE HIMSOLND LIKE A SERVANT.",
+          "confidence": 0.945,
+          "text_ar": "أسلوبه ولهجته لا تجعلاه يبدو كخادم."
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "GLARE HOW DARE YOU...!",
+          "confidence": 0.884,
+          "text_ar": "حدق كيف تجرؤ...!"
+        },
+        {
+          "text": "ONE MOMENT, SIR PALIL!",
+          "confidence": 0.946,
+          "text_ar": "لحظة واحدة يا سير بول!"
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "HELLO,I AM 2ND ADMINISTRATOR TARA ELIAS OF THE INSPECTION TEAM.ARE YOU BARON CHARLES BERG?",
+          "confidence": 0.934,
+          "text_ar": "مرحباً، أنا الإدارية الثانية تارا إلياس من فريق التفتيش. أأنت البارون تشارلز بيرغ؟"
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "WHAT?!",
+          "confidence": 0.972,
+          "text_ar": "ماذا?!"
+        },
+        {
+          "text": "HAHA AH, YOU ARE VERY SHARP I THOUGHT I WAS HIDING MY IDENTITY QLITE WELL.",
+          "confidence": 0.873,
+          "text_ar": "هاها آه، أنتم حادّو الذكاء حقاً. ظننتُ أنني أخفي هويتي جيداً."
+        }
+      ]
+    },
+    {
+      "page": 86,
+      "image_id": 86,
+      "sentences": [
+        {
+          "text": "YOUR ACCENT DOESN'T SOLND LIKE THAT OF AN OLD SERVANT, MY LORD. AND YOURFINGERNAILS ARE VERY WELL MANICURED.",
+          "confidence": 0.93,
+          "text_ar": "لهجتك لا تبدو كاللهجة الخاصة بخادم عجوز، سيدي. وأظفارك مقلمة بعناية فائقة."
+        }
+      ]
+    },
+    {
+      "page": 87,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "THOSE ARE THE HANDS OF A SCHOLAR RATHER THAN A SERVANT.",
+          "confidence": 0.946,
+          "text_ar": "هذه أيدي عالم لا أيدي خادم."
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 88,
+      "sentences": [
+        {
+          "text": "ISUPPOSE I OUGHT TO HIDE MY HANDS FIRST NEXT TIME!",
+          "confidence": 0.883,
+          "text_ar": "أظن أن عليّ إخفاء يدي أولاً في المرة القادمة!"
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 89,
+      "sentences": [
+        {
+          "text": "SO, WHAT BRINGS YOU HERE?",
+          "confidence": 0.924,
+          "text_ar": "إذن، ما الذي أتى بكم إلى هنا؟"
+        },
+        {
+          "text": "I HAVE SOME QLESTIONS FOR YOU,",
+          "confidence": 0.897,
+          "text_ar": "لدي بعض الأسئلة لك،"
+        },
+        {
+          "text": "BARON CHARLES... BERG.",
+          "confidence": 0.954,
+          "text_ar": "أيها البارون تشارلز... بيرغ."
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "IF YOU ARE HERE FROM THE PALACE, I MLST MAKE TIME FOR YOU, OF COURSE. COME IN.",
+          "confidence": 0.914,
+          "text_ar": "إذا كنتم هنا من القصر، فيجب عليّ بالتأكيد تخصيص وقت لكم. تفضلوا بالدخول."
+        }
+      ]
+    },
+    {
+      "page": 91,
+      "image_id": 91,
+      "sentences": [
+        {
+          "text": "THE ONLY SERVANT I HAVE IS IN TOWN GETTING ME MORE WINE, SO I ONLY HAVE WATER TO SERVE YOL.",
+          "confidence": 0.915,
+          "text_ar": "الخادم الوحيد الذي أملكه ذهب إلى المدينة ليجلب لي المزيد من النبيذ، لذا ليس لدي سوى الماء لأقدمه لكما."
+        }
+      ]
+    },
+    {
+      "page": 92,
+      "image_id": 92,
+      "sentences": [
+        {
+          "text": "THANK YOU.",
+          "confidence": 0.914,
+          "text_ar": "شكراً لك."
+        },
+        {
+          "text": "SO, WHY DID",
+          "confidence": 0.956,
+          "text_ar": "إذن، لماذا"
+        }
+      ]
+    },
+    {
+      "page": 93,
+      "image_id": 93,
+      "sentences": [
+        {
+          "text": "YOL COME TO SEE ME?",
+          "confidence": 0.922,
+          "text_ar": "أتيتم لرؤيتي؟"
+        },
+        {
+          "text": "SIP",
+          "confidence": 0.97,
+          "text_ar": "رشفة"
+        },
+        {
+          "text": "THERE WAS ANERRORIN THE CASTLE EXTENSION PROJECT DOCLIMENTS, SO WE CAME TO CONFIRMIT.",
+          "confidence": 0.935,
+          "text_ar": "كان هناك خطأ في وثائق مشروع توسعة القلعة، لذا جئنا لنؤكد ذلك."
+        }
+      ]
+    },
+    {
+      "page": 94,
+      "image_id": 94,
+      "sentences": [
+        {
+          "text": "HMM? HE'S NOT SURPRISED OR CONFLSED AT ALL.IT'S AS THOUGH HE WAS WAITING FOR ME...",
+          "confidence": 0.932,
+          "text_ar": "مم؟ إنه ليس متفاجئاً ولا مرتبكاً على الإطلاق. كأنه كان ينتظرني..."
+        }
+      ]
+    },
+    {
+      "page": 95,
+      "image_id": 95,
+      "sentences": [
+        {
+          "text": ")mmhnm",
+          "confidence": 0.391,
+          "text_ar": "مممم"
+        },
+        {
+          "text": "HMM,WHAT DOCLMENTSDOYOU MEAN EXACTLY?",
+          "confidence": 0.959,
+          "text_ar": "مم، عن أي وثائق تقصدين بالتحديد؟"
+        }
+      ]
+    },
+    {
+      "page": 96,
+      "image_id": 96,
+      "sentences": [
+        {
+          "text": "TAMPERING WITH DOCLMENTS THAT HAVE BEEN APPROVED BY BOTH THE MINISTRY OF DEFENSE AND THE MINISTRY OF FINANCE IS A SERIOUS MATTER,MYLORD.",
+          "confidence": 0.945,
+          "text_ar": "العبث بمستندات تمت الموافقة عليها من قبل كل من وزارة الدفاع ووزارة المالية هو أمر خطير يا سيدي."
+        },
+        {
+          "text": "YOU MLIST BE AWARE OF THE PROPERPROCEEDINGS, SO WHY WOLLD YOU-",
+          "confidence": 0.865,
+          "text_ar": "لا بد أنك على دراية بالإجراءات الصحيحة، فلماذا قد-"
+        }
+      ]
+    },
+    {
+      "page": 97,
+      "image_id": 97,
+      "sentences": [
+        {
+          "text": "JOLT",
+          "confidence": 0.971,
+          "text_ar": "ارتجافة"
+        },
+        {
+          "text": "WAIT!",
+          "confidence": 0.99,
+          "text_ar": "انتظري!"
+        }
+      ]
+    },
+    {
+      "page": 98,
+      "image_id": 98,
+      "sentences": [
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.985,
+          "text_ar": "ما الأمر؟"
+        }
+      ]
+    },
+    {
+      "page": 99,
+      "image_id": 99,
+      "sentences": [
+        {
+          "text": "SOMETHING'S OFF ABOLT ALL THIS... PLEASE GIVE ME AMOMENT TO THINK.",
+          "confidence": 0.952,
+          "text_ar": "هناك شيء غير مريح في كل هذا... ارجوكِ اعطني لحظة لأفكر."
+        },
+        {
+          "text": "HMM, ALL RIGHT.",
+          "confidence": 0.97,
+          "text_ar": "مم، حسناً."
+        }
+      ]
+    },
+    {
+      "page": 100,
+      "image_id": 100,
+      "sentences": []
+    },
+    {
+      "page": 101,
+      "image_id": 101,
+      "sentences": [
+        {
+          "text": "TICK",
+          "confidence": 0.962,
+          "text_ar": "تك"
+        },
+        {
+          "text": "0 TOCk",
+          "confidence": 0.144,
+          "text_ar": "تك"
+        }
+      ]
+    },
+    {
+      "page": 102,
+      "image_id": 102,
+      "sentences": [
+        {
+          "text": "THAT'S IT! I GET IT NOW.",
+          "confidence": 0.953,
+          "text_ar": "هذا هو! لقد فهمت الآن."
+        }
+      ]
+    },
+    {
+      "page": 103,
+      "image_id": 103,
+      "sentences": []
+    },
+    {
+      "page": 104,
+      "image_id": 104,
+      "sentences": [
+        {
+          "text": "I LINDERSTAND WHY THE BARON DIDN'T HAVE TO FOLLOW THE PROPER PROCEDURES!",
+          "confidence": 0.928,
+          "text_ar": "أنا أفهم لماذا لم يكن على البارون اتباع الإجراءات الصحيحة!"
+        }
+      ]
+    },
+    {
+      "page": 105,
+      "image_id": 105,
+      "sentences": []
+    },
+    {
+      "page": 106,
+      "image_id": 106,
+      "sentences": [
+        {
+          "text": "TO BE CONTINUE...",
+          "confidence": 0.909,
+          "text_ar": "يتبع..."
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.985,
+          "text_ar": "KENAZ مالك حقوق الويب توون"
+        },
+        {
+          "text": "WRITING MUNIRANG STORYBOARD NAWON ILLUSTRATION OLBEERA COLORING ASSISTANT NAKHYUN,PALPAL,PATA EDITOR JEOMRYE PRODUCTION KENAZLTD. WOODY HEAD DIRECTION 1 PRODUCER",
+          "confidence": 0.31,
+          "text_ar": "القصة مونيرانج لوحة القصص المصورة ناوون الرسم أولبيرا تلوين مساعد ناكهيون، بالبال، باتا التحرير جيوْمري الإنتاج شركة كيناز المحدودة. وودي إدارة الرأس 1 المنتج"
+        },
+        {
+          "text": "THIS WORKISPUBLISHED UNDERCONTRACT BETWEENKENAZ LTD.AND THECOPYRIGHT HOLDER,AND ISPROTECTEDUNDERCOPYRIGHTLAW.ANY UNAUTHORIZEDUSE,DUPLICATION,ORSHARINGWILLBEMETWITHLEGALACTION.",
+          "confidence": 0.963,
+          "text_ar": "هذا العمل منشور بموجب عقد بين شركة كيناز المحدودة ومالك حقوق النشر، وهو محمي بموجب قانون حقوق النشر. أي استخدام أو نسخ أو مشاركة غير مصرح بها ستواجه إجراءات قانونية."
+        }
+      ]
+    },
+    {
+      "page": 107,
+      "image_id": 107,
+      "sentences": [
+        {
+          "text": "Localization PA Day QA Monty,Canberra,Hane, Eunsong Jung PMGyuyoung Jo,Hailey",
+          "confidence": 0.851,
+          "text_ar": "الترجمة المحلية يوم مونتي، كانبيرا، هان، إونسونغ جونغ مدير المشروع جيو يونغ جو، هايلي"
+        }
+      ]
+    }
+  ]
+}
