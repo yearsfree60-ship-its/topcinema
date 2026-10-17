@@ -1,0 +1,554 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "264",
+  "manga_title": "My Wife Is From a Thousand Years Ago 264",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Nyanism junitius CL/RD TL Paragon discord.gg/pErHvcxdrx Scans",
+          "confidence": 0.983,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "junitius  junitius PR TS",
+          "confidence": 0.983,
+          "text_ar": "قسم التحرير والتدقيق"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": []
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "END OF JANUARY",
+          "confidence": 0.948,
+          "text_ar": "نهاية شهر يناير"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "Are you gettina",
+          "confidence": 0.924,
+          "text_ar": "هل ستتناولين"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "uff soon?",
+          "confidence": 0.906,
+          "text_ar": "بعضاً منه قريباً؟"
+        },
+        {
+          "text": "O O C",
+          "confidence": 0.405,
+          "text_ar": "أه"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": []
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HERE.",
+          "confidence": 0.996,
+          "text_ar": "ها هو ذا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "YOU CAN EN- JOY IT, YOURSELF. I DON'T LIKE SOUR THINGS ANYWAY..",
+          "confidence": 0.874,
+          "text_ar": "يمكنك الاستمتاع به وحدك. أنا لا أحب الأشياء الحامضة على أي حال.."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I'LL EAT IT MYSELF IF YOU WON'T.",
+          "confidence": 0.774,
+          "text_ar": "سأكله بنفسي إذن إن لم تقم بذلك."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "DO YOU WANT AN OMLETTE WRAP?",
+          "confidence": 0.887,
+          "text_ar": "هل تريد لفة عجة البيض؟"
+        },
+        {
+          "text": "I DON'T.",
+          "confidence": 0.983,
+          "text_ar": "لا أريد."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THEN I'LL GO BLY ONE, WAIT HERE FOR A MOMENT.",
+          "confidence": 0.903,
+          "text_ar": "إذاً سأذهب لأشتري واحداً، انتظر هنا قليلاً."
+        },
+        {
+          "text": "I REALLYCAN'T UNDERSTAND WHY THIS RICH SECOND GENERATION",
+          "confidence": 0.944,
+          "text_ar": "لا أستطيع حقاً أن أفهم لماذا هذا الابن الثاني لعائلة غنية"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "WITHAFAMILYTHATHASSO MANYINDUSTIRIESWOULD LOVETOEATROADSIDE OMLETTE WRAP SO MUCH.",
+          "confidence": 0.926,
+          "text_ar": "تمتلك الكثير من الصناعات يحب أكل لفائف عجة الشارع هكذا."
+        },
+        {
+          "text": "YOU REALLY DON'TWANT",
+          "confidence": 0.927,
+          "text_ar": "ألا تريد حقاً"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "ONE?",
+          "confidence": 0.981,
+          "text_ar": "واحداً؟"
+        },
+        {
+          "text": "煎饼果子",
+          "confidence": 0.994,
+          "text_ar": "فطيرة البيض الصينية"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "烤地瓜",
+          "confidence": 0.998,
+          "text_ar": "بطاطا حلوة مشوية"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "WANTA ROASTED SWEET POTATO? 不打一处来",
+          "confidence": 0.876,
+          "text_ar": "أتريد بطاطا حلوة مشوية؟ شعور بالاستياء الشديد"
+        },
+        {
+          "text": "I AM PREGNANT, I DON'T EAT RAN-",
+          "confidence": 0.935,
+          "text_ar": "أنا حامل، ولا أتناول أشياء"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "DOM THINGS!",
+          "confidence": 0.985,
+          "text_ar": "عشوائية!"
+        },
+        {
+          "text": "烤地瓜",
+          "confidence": 0.997,
+          "text_ar": "بطاطا حلوة مشوية"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": []
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": []
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "THE WARMTH FROM WITHIN THE HOUSE IS THE BEST! A DAY LIKE THIS IS SUITED FOR LAZING AROUND!",
+          "confidence": 0.953,
+          "text_ar": "الدفء داخل البيت هو الأفضل! يوم كهذا يناسب الكسل تماماً!"
+        },
+        {
+          "text": "IFWINTER MELON WAS WANDERING THE STREETS IN THIS WEATHER BACK THEN, HE'D PROBABLY BE SHIVERING IN SOME UNKNOWNCORNER.",
+          "confidence": 0.959,
+          "text_ar": "لو كان الشتاء يهيم في الشوارع في مثل هذا الطقس آنذاك، لكان غالباً يرتجف في زاوية ما مجهولة."
+        },
+        {
+          "text": "IT'S SO NICE TO HAVE A HOME.",
+          "confidence": 0.935,
+          "text_ar": "من الرائع حقاً أن يكون للمرء منزل."
+        },
+        {
+          "text": "THE WARRIORESS WENT OUT FOR A STROLL WITH GONG PING AGAIN. IT SEEMS THATSHE HASN'TCHANGED MUCH AFTER GETTING MARRIED--",
+          "confidence": 0.937,
+          "text_ar": "خرجت المقاتلة في نزهة مع غونغ بينغ مجدداً. يبدو أنها لم تتغير كثيراً بعد الزواج--"
+        },
+        {
+          "text": "PERHAPS GETTING AMARRIAGECERTIFICATE DOESN'TREALLYCOUNT AS A REAL MARRIAGE IN HER MIND.",
+          "confidence": 0.963,
+          "text_ar": "ربما الحصول على وثيقة زواج لا يُحتسب حقاً كزواج حقيقي في ذهنها."
+        },
+        {
+          "text": "Certificate",
+          "confidence": 0.998,
+          "text_ar": "شهادة"
+        },
+        {
+          "text": "Marriage",
+          "confidence": 0.991,
+          "text_ar": "زواج"
+        },
+        {
+          "text": "Romance",
+          "confidence": 0.995,
+          "text_ar": "رومانسية"
+        },
+        {
+          "text": "ASA MARRIED MAN WHO LEFT HIS UNMARRIED STATUS BEHIND, ILL HAVE TO DO MORE...",
+          "confidence": 0.886,
+          "text_ar": "كإنسان متزوج ترك وراءه حياة العزوبية، سيتعين علي فعل المزيد..."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "SUCH AS TAKING CAREOFTHE FLOWERS AND PLANTS~",
+          "confidence": 0.966,
+          "text_ar": "مثل الاعتناء بالزهور والنباتات~"
+        },
+        {
+          "text": "Quick, look, look! It's sprouting!",
+          "confidence": 0.958,
+          "text_ar": "سرعان، انظري، انظري! لقد بدأت تنبت!"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "WOW!",
+          "confidence": 0.682,
+          "text_ar": "واو!"
+        },
+        {
+          "text": "FROM YOUR HUSBAND?",
+          "confidence": 0.9,
+          "text_ar": "من زوجك؟"
+        },
+        {
+          "text": "WHAT HUSBAND, HE'S JUST MY BOYFR...",
+          "confidence": 0.962,
+          "text_ar": "أي زوج، إنه مجرد صِد..."
+        },
+        {
+          "text": "OH, RIGHT! WE'VE ALREADYGOTTEN OUR MARRIAGE CERTIFICATE.",
+          "confidence": 0.932,
+          "text_ar": "أه، صحيح! لقد حصلنا على شهادة زواجنا بالفعل."
+        },
+        {
+          "text": "377YTA4478",
+          "confidence": 0.351,
+          "text_ar": "رمز تعريفي"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": []
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "WEJUSIGOI THE CERTIFICATE BECALISE THE WEATHER WAS NICE,WE'RE NOT MARRIEDYET.",
+          "confidence": 0.849,
+          "text_ar": "لقد حصلنا على الشهادة فقط لأن الطقس كان لطيفاً، لست متزوجين بعد."
+        },
+        {
+          "text": "WHATEVER~",
+          "confidence": 0.996,
+          "text_ar": "كيفما كان~"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "THEN WHEN ARE YOU PLAN- NING TO HAVE THE WEDDING?",
+          "confidence": 0.879,
+          "text_ar": "إذن متى تخططان لإقامة حفل الزفاف؟"
+        },
+        {
+          "text": "IT'S STILL TOO EARLYWE NEED TO BUY A PLACE FIRST.",
+          "confidence": 0.884,
+          "text_ar": "لا يزال الوقت مبكراً، علينا شراء مكان أولاً."
+        },
+        {
+          "text": "BUYING ANOTHER ONE..I'MSO ENVIOUS.",
+          "confidence": 0.871,
+          "text_ar": "شراء منزل آخر.. أنا معجبة حقاً."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "NOT REALLY. THE PLACE WE'RE CURRENTLY LIVINGIN BELONGS TO HIS PARENTS, NOT US. WE STILL HAVE TO WAIT A LONG TIME IF WE RELY ON OURSELVES. YOU'RE THE IM- PRESSIVE ONE.",
+          "confidence": 0.924,
+          "text_ar": "ليس حقاً. المكان الذي نعيش فيه حالياً يخص والديه، وليس ملكنا. لا يزال يتعين علينا الانتظار طويلاً إن اعتمدنا على أنفسنا. أنتِ هي المذهلة حقاً."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "SOONER OR LATER,YOU WILL BE ABLE TO AFFORD YOUR OWN HOUSE. 哈",
+          "confidence": 0.111,
+          "text_ar": "عاجلاً أم آجلاً، ستكونين قادرة على تحمل تكلفة منزلك الخاص. هاه"
+        },
+        {
+          "text": "HELLO,",
+          "confidence": 0.985,
+          "text_ar": "مرحباً،"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "WalkOn The Right",
+          "confidence": 0.952,
+          "text_ar": "امشِ على الجانب الأيمن"
+        },
+        {
+          "text": "扫一扫上面的二维",
+          "confidence": 0.995,
+          "text_ar": "امسح رمز الاستجابة السريعة أعلاه"
+        },
+        {
+          "text": "MAYI ADD YOU ON WECHAT?",
+          "confidence": 0.905,
+          "text_ar": "هل يمكنني إضافتك على تطبيق وتساب؟"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": []
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "ARE YOU TALKING TO ME?",
+          "confidence": 0.916,
+          "text_ar": "أهلًا بك"
+        },
+        {
+          "text": "UM...YES.",
+          "confidence": 0.94,
+          "text_ar": "أم... نعم."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "Walk On The Right",
+          "confidence": 0.936,
+          "text_ar": "امشِ على الجانب الأيمن"
+        },
+        {
+          "text": "SHE'S A MARRIED WOMAN!",
+          "confidence": 0.982,
+          "text_ar": "إنها امرأة متزوجة!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "HER HUSBAND IS A RUTHLESS GUY WHO PRACTICESMARTIALARTS ANDSWORDPLAYEVERY DAY. HE ONCE KNOCKED A MANOUTWITH JUST A SLAP...",
+          "confidence": 0.924,
+          "text_ar": "زوجها شخص قاسي يمارس فنون الدفاع عن النفس وفنون السيف كل يوم. لقد سبق وأن أطاح برجل بصفعة واحدة فقط..."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "HE CAN EVEN MAKE A DENT IN THE VENDING MACHINE!",
+          "confidence": 0.948,
+          "text_ar": "يمكنه حتى إحداث انحناءة في آلة البيع!"
+        },
+        {
+          "text": "EVEN IF SHE WASN'T MARRIED, BASEDONMY UNDERSTANDINGOF HER PERSONALITY SHE WOULDN'T BOTHERENTERTAININGAN ADVANCE LIKE THIS...",
+          "confidence": 0.897,
+          "text_ar": "حتى لو لم تكن متزوجة، بناءً على فهمي لشخصيتها فهي لن تكلف نفسها عناء الالتفات لمثل هذه المحاولة..."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "OKAY.",
+          "confidence": 0.993,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "PFTT!",
+          "confidence": 0.991,
+          "text_ar": "تفوه!"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "HEY...",
+          "confidence": 0.955,
+          "text_ar": "مهلاً..."
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "WHAT'S WRONG?",
+          "confidence": 0.976,
+          "text_ar": "ما الأمر؟"
+        },
+        {
+          "text": "N-NOTHING.",
+          "confidence": 0.996,
+          "text_ar": "ل-لا شيء."
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "Pingping",
+          "confidence": 0.995,
+          "text_ar": "بينغبيغ"
+        },
+        {
+          "text": "扫一扫 换个样式 保存图片",
+          "confidence": 0.772,
+          "text_ar": "امسح الرمز لتغيير النمط وحفظ الصورة"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": []
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "扫一扫 换个样式 保存图片",
+          "confidence": 0.902,
+          "text_ar": "امسح الرمز لتغيير النمط وحفظ الصورة"
+        },
+        {
+          "text": "DO YAOU WANT YOUWANT",
+          "confidence": 0.831,
+          "text_ar": "ماذا تريد أن تفعل"
+        }
+      ]
+    }
+  ]
+}
