@@ -1,0 +1,613 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "266",
+  "manga_title": "My Wife Is From a Thousand Years Ago 266",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Fantazya junitius CL/RD TL Paragon Scans",
+          "confidence": 0.988,
+          "text_ar": "فانتازيا للترجمة والتصحيح"
+        },
+        {
+          "text": "junitius TS",
+          "confidence": 0.983,
+          "text_ar": "التحرير: جونيوشوس"
+        },
+        {
+          "text": "junitius PR",
+          "confidence": 0.994,
+          "text_ar": "تدقيق: جونيوشوس"
+        },
+        {
+          "text": "discord.gg/pErHvcxdrx",
+          "confidence": 0.998,
+          "text_ar": "discord.gg/pErHvcxdrx"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "WHY HAVE yoU noT BEEn FISHING THESE DAYS?",
+          "confidence": 0.757,
+          "text_ar": "لماذا لم تذهب للصيد هذه الأيام؟"
+        },
+        {
+          "text": "TOO COLD. IT'S SITTING BY THE RIVER ON A SNOWY DAY IS  JUST ASKING 'FOR TROLBLE.",
+          "confidence": 0.889,
+          "text_ar": "الجو بارد جداً. الجلوس بجانب النهر في يوم مثلج هو دعوة للمتاعب."
+        },
+        {
+          "text": "ALTHOUGH I REALLY WANT TO FISH,THERE'S NO CHOICE.I CAN ONLY WAIT FOR THE WEATHER TO GET BETTER BEFORE I START FISHING AGAIN.",
+          "confidence": 0.904,
+          "text_ar": "رغم أنني أرحق الصيد حقاً، ليس بيد حيلة. لا يسعني سوى انتظار تحسن الطقس لأستأنف الصيد."
+        },
+        {
+          "text": "RISHNG BY T SNOWING... I REALLY WANT TO FISH...",
+          "confidence": 0.669,
+          "text_ar": "الصيد وسط الثلوج... أريد حقاً أن أذهب للصيد..."
+        },
+        {
+          "text": "HOW DOES IT GO AGAIN..",
+          "confidence": 0.929,
+          "text_ar": "كيف كانت الأبيات مجدداً..."
+        },
+        {
+          "text": "I THINK IT'S '\"FISHING ALONE, IN THE WINTER SNOW\".?",
+          "confidence": 0.823,
+          "text_ar": "أعتقد أنها 'أصطاد وحيداً في ثلوج الشتاء'؟"
+        },
+        {
+          "text": "PR/N: A line from Liu Zongyuan's poem calledWinter Snow\".",
+          "confidence": 0.909,
+          "text_ar": "ملاحظة المترجم: بيت شعر من قصيدة ليو زونغيوان بعنوان ثلوج الشتاء."
+        },
+        {
+          "text": "ONE PERSON, ONE STRAW RAINCOAT, FACING THE SNOW WITH A FISHING ROD, IT FEELS A LOT LIKE THE STYLE OFTHE JIANGHU WARRIORS THAT XU QING LIKES.",
+          "confidence": 0.941,
+          "text_ar": "شخص واحد، معطف قش واحد، يواجه الثلج بصنارة صيد، يبدو الأمر أشبه بأسلوب محاربي جيانغهو الذي يعجبه شو تشينغ."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I'M GOING UP NOW.",
+          "confidence": 0.811,
+          "text_ar": "سأصعد للأعلى الآن."
+        },
+        {
+          "text": "MM,BYE BYE.",
+          "confidence": 0.958,
+          "text_ar": "حسناً، مع السلامة."
+        },
+        {
+          "text": "LITTLE YAN?",
+          "confidence": 0.996,
+          "text_ar": "يان الصغرى؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "JIANG..",
+          "confidence": 0.907,
+          "text_ar": "جيانغ..."
+        },
+        {
+          "text": "JIANG.SISTER JIANG HE....",
+          "confidence": 0.83,
+          "text_ar": "جيانغ.. الأخت جيانغ هي...."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "WHAT'S WRONG?",
+          "confidence": 0.984,
+          "text_ar": "ما الأمر؟"
+        },
+        {
+          "text": "GRR... WOOF!!",
+          "confidence": 0.951,
+          "text_ar": "جرر... ههو!و!!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "RUN! IT'S BACK AGAIN!",
+          "confidence": 0.913,
+          "text_ar": "اهرعوا! لقد عاد مجدداً!"
+        },
+        {
+          "text": "WAHH-!",
+          "confidence": 0.983,
+          "text_ar": "آه-!"
+        },
+        {
+          "text": "QUICK...",
+          "confidence": 0.899,
+          "text_ar": "سريعا..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": []
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "WOOF!",
+          "confidence": 0.985,
+          "text_ar": "هو!و!"
+        },
+        {
+          "text": "MOON SEIZING FLAME!",
+          "confidence": 0.979,
+          "text_ar": "لهب قهر القمر!"
+        },
+        {
+          "text": "PR/N: Moon Seizing Flame is the Chinese name of an active skill of the Fighter class in Dungeon Fighter Online called Explosive Hook.",
+          "confidence": 0.965,
+          "text_ar": "ملاحظة المترجم: لهب قهر القمر هو الاسم الصيني لمهارة نشطة لفئة المقاتل في لعبة دونجون فايتر أونلاين وتسمى الخطاف المتفجر."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "DID YOU SEE THAT?",
+          "confidence": 0.894,
+          "text_ar": "هل رأيت ذلك؟"
+        },
+        {
+          "text": "IT'S THE MOON SEIZING FLAME!",
+          "confidence": 0.976,
+          "text_ar": "إنه لهب قهر القمر!"
+        },
+        {
+          "text": "LOOK!",
+          "confidence": 0.992,
+          "text_ar": "انظر!"
+        },
+        {
+          "text": "THAT'S THE MOON SEIZING FLAME!",
+          "confidence": 0.985,
+          "text_ar": "هذا هو لهب قهر القمر!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "SO COOL!",
+          "confidence": 0.882,
+          "text_ar": "رائع حقاً!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "SISTER JIANG HE!",
+          "confidence": 0.979,
+          "text_ar": "الأخت جيانغ هي!"
+        },
+        {
+          "text": "DON'T WORRY, IT'S OKAY nOW. I'LL SEND YOU BACK.",
+          "confidence": 0.833,
+          "text_ar": "لا تقلقي، الأمر بخير الآن. سأعيدك إلى منزلك."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "YOU GUYS SHOULD QUICKLY RETURN HOME. IT MIGHT COME BACK AGAIN IN A BIT.",
+          "confidence": 0.904,
+          "text_ar": "عليكم العودة للمنزل سريعاً. قد يعود مجدداً بعد قليل."
+        },
+        {
+          "text": "LITTLE YAN, LET'SGO.'",
+          "confidence": 0.915,
+          "text_ar": "يان الصغرى، لنذهب."
+        },
+        {
+          "text": "OKAY!",
+          "confidence": 0.991,
+          "text_ar": "حسناً!"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "DON'T GO!",
+          "confidence": 0.961,
+          "text_ar": "لا تذهبي!"
+        },
+        {
+          "text": "EXPERT!!",
+          "confidence": 0.991,
+          "text_ar": "أيتها الخبيرة!!"
+        },
+        {
+          "text": "PLEASE ACCEPT ME AS YOUR DISCIPLE!",
+          "confidence": 0.985,
+          "text_ar": "أرجوكِ اقبليني تلميذاً لكِ!"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "I WANT TO LEARN MOON SEIZING FLAME!",
+          "confidence": 0.958,
+          "text_ar": "أريد تعلم لهب قهر القمر!"
+        },
+        {
+          "text": "SISTER JIANG HE...",
+          "confidence": 0.934,
+          "text_ar": "الأخت جيانغ هي..."
+        },
+        {
+          "text": "-- HE'S SO WEIRD...LET'S HURRY BACK...",
+          "confidence": 0.613,
+          "text_ar": "-- إنه غريب الأطوار حقاً... لنعُد سريعاً..."
+        },
+        {
+          "text": "DON'T GO! EXPERT!",
+          "confidence": 0.959,
+          "text_ar": "لا تذهبي! أيتها الخبيرة!"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "EXPERT!",
+          "confidence": 0.994,
+          "text_ar": "أيتها الخبيرة!"
+        },
+        {
+          "text": "EXPERT!!",
+          "confidence": 0.994,
+          "text_ar": "أيتها الخبيرة!!"
+        },
+        {
+          "text": "I'M BACK...",
+          "confidence": 0.942,
+          "text_ar": "لقد عُدت..."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "YOU'RE BACK.",
+          "confidence": 0.967,
+          "text_ar": "لقد عُدتِ."
+        },
+        {
+          "text": "I BOUGHT YOUAHAT!",
+          "confidence": 0.929,
+          "text_ar": "اشتريت لكِ قبعة!"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "HOW COME YOU WERE OUT FOR MOST OF THE DAY AND ONLY BOUGHT A HAT?",
+          "confidence": 0.889,
+          "text_ar": "كيف غبت طوال اليوم ولم تشتري سوى قبعة؟"
+        },
+        {
+          "text": "THERE WASN'T ANYTHING ELSE I LIKED. WHENISAW THIS HAT, I THOUGHT IT WOULDGO WELL WITH THE CLOTHES YOU USLALLY WEAR.",
+          "confidence": 0.868,
+          "text_ar": "لم يعجبني أي شيء آخر. عندما رأيت هذه القبعة، شعرت أنها ستلائم الملابس التي ترتدينها عادة."
+        },
+        {
+          "text": "AH, OKAY.",
+          "confidence": 0.949,
+          "text_ar": "آه، حسناً."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": []
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "DOES IT LOOK GOOD?",
+          "confidence": 0.951,
+          "text_ar": "هل تبدو جيدة؟"
+        },
+        {
+          "text": "IT FITS you!",
+          "confidence": 0.772,
+          "text_ar": "تليق بكِ!"
+        },
+        {
+          "text": "NGIVE THEN ME A KISS!",
+          "confidence": 0.91,
+          "text_ar": "امنحيني قُبلة إذن!"
+        },
+        {
+          "text": "I'LL 60 − WASH MY HANDS FIRST.",
+          "confidence": 0.346,
+          "text_ar": "سأذهب لأغسل يدي أولاً."
+        },
+        {
+          "text": "WAIT!",
+          "confidence": 0.985,
+          "text_ar": "انتظري!"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "WHAT'S THIS ON YOUR SLEEVE?",
+          "confidence": 0.832,
+          "text_ar": "ما هذا الذي على كمكِ؟"
+        },
+        {
+          "text": "IT'S NOTHING, I JUST TRIPPED AND FELL.",
+          "confidence": 0.926,
+          "text_ar": "لا شيء، تعثرت وسقطت فحسب."
+        },
+        {
+          "text": "TRIPPED AND FELL?",
+          "confidence": 0.967,
+          "text_ar": "تعثرت وسقطت؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "DO YOU THINK I'M STUPID?",
+          "confidence": 0.877,
+          "text_ar": "هل ترينني غبياً؟"
+        },
+        {
+          "text": "STUDENT JIANG HE! I HOPE YOU ARE HONEST!",
+          "confidence": 0.924,
+          "text_ar": "أيتها الطالبة جيانغ هي! أتمنى أن تكوني صادقة!"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "SISTER JIANG HE, CAN YOU PLEASE NOT TELL ANYONE ABOUT WHAT JUST HAPPENED..",
+          "confidence": 0.95,
+          "text_ar": "الأخت جيانغ هي، هل يمكنك ألا تخبري أحداً بما حدث للتو.."
+        },
+        {
+          "text": "THE FACT THATLI-CRIED...",
+          "confidence": 0.866,
+          "text_ar": "حقيقة أنني... بكيت..."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "I RAN INTO LITTLE YAN ON THE WAY.",
+          "confidence": 0.913,
+          "text_ar": "لقد صادفت يان الصغرى في الطريق."
+        },
+        {
+          "text": "CHASED WAS SHE BY A DOG ALONG WITH SEVERAL KIDS. THAT DOG WAS BIG,ALMOST THE SAME HEIGHT AS LITTLE YAN.",
+          "confidence": 0.932,
+          "text_ar": "كان كلب يطاردها برفقة عدة أطفال. كان ذلك الكلب ضخماً، وبنفس طول يان الصغرى تقريبا."
+        },
+        {
+          "text": "I JUST GRABBED ITAND THREWIT, THEN I SENT LITTLE YAN BACK HOME.",
+          "confidence": 0.935,
+          "text_ar": "أمسكت به وقذفت به فحسب، ثم أعدت يان الصغرى إلى منزلها."
+        },
+        {
+          "text": "NOT MENTIONING THATLITTLEYAN CRIED STILL COUNTS AS KEEP- ING IT A SECRET.",
+          "confidence": 0.948,
+          "text_ar": "عدم ذكر أن يان الصغرى بكت لا يزال يُعتبر حفظاً للسر."
+        },
+        {
+          "text": "DIDYOU USE YOUR HANDS? DID YOU THROW IT AGAINST THE WALL OR PRESS IT TO THE GROUND UNTIL IT DIED?",
+          "confidence": 0.911,
+          "text_ar": "هل استخدمت يديك؟ هل رميته على الحائط أم ضغطت عليه حتى الموت على الأرض؟"
+        },
+        {
+          "text": "JUST NO 人 SIMPLY THREW IT.IF I KICK AND SOMETHING, BREAK I'LL HAVE TO PAY FOR IT.",
+          "confidence": 0.695,
+          "text_ar": "بالتأكيد لا، لقد قذفته فقط. لو ركلت شيئاً وكسرته فسأضطر لدفع ثمنه."
+        },
+        {
+          "text": "OTHERWISE, I WOULD HAVE iT... KICKED",
+          "confidence": 0.715,
+          "text_ar": "وإلا لكنت... ركلته"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "I WASN'T FIGHTING WITH THE DOG, OKAY? I WAS RESCUING LITTLE YAN.",
+          "confidence": 0.935,
+          "text_ar": "لم أكن أتشاجر مع الكلب، حسناً؟ كنت أنقذ يان الصغرى."
+        },
+        {
+          "text": "FIGHTING WITH A DOG..",
+          "confidence": 0.921,
+          "text_ar": "تشاجر مع كلب..."
+        },
+        {
+          "text": "A GENERATION OF WARRIORESSES HAS FALLEN TO THIS..",
+          "confidence": 0.892,
+          "text_ar": "جيل من المحاربات آل به الأمر إلى هذا..."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "AMONG THE",
+          "confidence": 0.993,
+          "text_ar": "بين أطفال"
+        },
+        {
+          "text": "CHILDREN IN THIS",
+          "confidence": 0.988,
+          "text_ar": "هذا الحي"
+        },
+        {
+          "text": "NEIGHBORHOOD",
+          "confidence": 1.0,
+          "text_ar": "خلال عطلة"
+        },
+        {
+          "text": "DURING THIS WINTER",
+          "confidence": 0.986,
+          "text_ar": "الشتاء هذه، انتشرت"
+        },
+        {
+          "text": "BREAK, A LEGEND",
+          "confidence": 0.987,
+          "text_ar": "أسطورة"
+        },
+        {
+          "text": "OF A STREET",
+          "confidence": 0.981,
+          "text_ar": "لمقاتلة شوارع.."
+        },
+        {
+          "text": "FIGHTER HAS",
+          "confidence": 0.997,
+          "text_ar": ""
+        },
+        {
+          "text": "SPREAD..",
+          "confidence": 0.901,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "SHE'S A FEMALE STREET FIGHTER WHO USES THE MOVE 'MOON SEIZING FLAME'.",
+          "confidence": 0.905,
+          "text_ar": "إنها مقاتلة شوارع أنثى تستخدم حركة 'لهب قهر القمر'."
+        },
+        {
+          "text": "SHE'LL KILL",
+          "confidence": 0.954,
+          "text_ar": "ستقضي"
+        },
+        {
+          "text": "THE BUDDHAS",
+          "confidence": 0.993,
+          "text_ar": "على البوذيين"
+        },
+        {
+          "text": "AND GODS HNDOODS",
+          "confidence": 0.891,
+          "text_ar": "والآلهة وكل من"
+        },
+        {
+          "text": "BLOCKING HER WAY!",
+          "confidence": 0.961,
+          "text_ar": "يقف في طريقها!"
+        },
+        {
+          "text": "PR/N: She solos all the cultivation MCs.",
+          "confidence": 0.965,
+          "text_ar": "ملاحظة المترجم: إنها تتغلب على جميع أبطال روايات الزراعة وحدها."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "I hope you enjoyed today's chapter. Thank you for reading and see you next time.",
+          "confidence": 0.959,
+          "text_ar": "أتمنى أن تكونوا قد استمتعتم بفصل اليوم. شكراً للقراءة ونراكم في المرة القادمة."
+        },
+        {
+          "text": "To catch the next chapter at the earliest time possible, join our discord at discord.gg/pErHvcxdrx to be alerted when it's scanlated.",
+          "confidence": 0.958,
+          "text_ar": "لمتابعة الفصل القادم في أقرب وقت ممكن، انضموا إلى ديسكورد الخاص بنا على discord.gg/pErHvcxdrx لتتلقوا تنبيهات فور ترجمته."
+        }
+      ]
+    }
+  ]
+}
