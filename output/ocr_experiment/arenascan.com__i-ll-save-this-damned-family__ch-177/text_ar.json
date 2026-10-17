@@ -1,0 +1,1619 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "177",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "COK",
+          "confidence": 0.371,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "COFEEEMANGA",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "MURMUR ISN'T THAT THE EMPEROR'S EMBLEM?",
+          "confidence": 0.919,
+          "text_ar": "همس: أليست تلك شارة الإمبراطور؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "COFFE MANGA",
+          "confidence": 0.739,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S SMALL, BLIT YES... THAT'S MOSTCERTAINLY HIS MAJESTY'S EMBLEM.",
+          "confidence": 0.898,
+          "text_ar": "إنها صغري، ولكن... تلك بالتأكيد شارة جلالة الإمبراطور."
+        },
+        {
+          "text": "TO THINK THAT HIS MAJESTYALLOWEDIT TO BE USED... ISN'T THIS THE FIRST TIME?",
+          "confidence": 0.907,
+          "text_ar": "التفكير في أن جلالته سمح باستخدامها... أليست هذه المرة الأولى؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "MUTTER 0 OFFEMANGAD",
+          "confidence": 0.113,
+          "text_ar": ""
+        },
+        {
+          "text": "I THOLGHT IT WAS TABOO...",
+          "confidence": 0.861,
+          "text_ar": "ظننت أن الأمر محظور..."
+        },
+        {
+          "text": "WHATDID HOLSE ELIAS PLILL THIS TIME TO MAKE THAT HAPPEN?",
+          "confidence": 0.945,
+          "text_ar": "ما الذي فعله آل إلياس هذه المرة ليحدث هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "COFFENG",
+          "confidence": 0.554,
+          "text_ar": ""
+        },
+        {
+          "text": "SO, THIS HEART TONIC IS GOING TO HELP OUR PEOPLE?",
+          "confidence": 0.949,
+          "text_ar": "إذن، مقوي القلب هذا سيساعد شعبنا؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "YES, YOUR MAJESTY!",
+          "confidence": 0.936,
+          "text_ar": "نعم، يا جلالة الإمبراطور!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "V COFFEEMANGA",
+          "confidence": 0.447,
+          "text_ar": ""
+        },
+        {
+          "text": "THIS IS...",
+          "confidence": 0.964,
+          "text_ar": "هذا..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "广 COFFEEMANGA",
+          "confidence": 0.15,
+          "text_ar": ""
+        },
+        {
+          "text": "IT FEELS RATHER STRANGE. HAHAHAHA!",
+          "confidence": 0.969,
+          "text_ar": "يبدو غريباً بعض الشيء. هاهاهاها!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HAHo PLEASE TAKE A LOOKAND LET ME KNOWIF YOUWOLILD LIKE ANY CHANGES TO BE MADE, YOUR MAJESTY.",
+          "confidence": 0.791,
+          "text_ar": "هاه، تفضل بالنظر وإعلامي إذا كنت تريد أي تغييرات، يا جلالة الإمبراطور."
+        },
+        {
+          "text": "CHUCKLE YES, OF COLRSE. I WILL INSPECT IT WELL, SINCE IT'S SLCH ANIMPORTANT TONIC THAT WILL SAVE A",
+          "confidence": 0.599,
+          "text_ar": "ضحكة خافتة: نعم، بالطبع. سأتفحصه جيداً، نظراً لأنه مقوي مهم للغاية سينقذ أرواحاً لا تعد ولا تحصى."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "MANY LIVES.",
+          "confidence": 0.976,
+          "text_ar": "أرواحاً لا تعد ولا تحصى."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.978,
+          "text_ar": ""
+        },
+        {
+          "text": "MANYLIVES INDEED...",
+          "confidence": 0.948,
+          "text_ar": "إنه سعيد فقط لأنه سيجني أموالاً لخزانته الخاصة بقية حياته..."
+        },
+        {
+          "text": "HE'S ONLY SO HAPPY BECALISE HE'LL BE EARNING CASH FOR HIS PRIVATE PURSE FOR THE REST OF HIS LIFE...",
+          "confidence": 0.912,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "COFFEMANGA",
+          "confidence": 0.811,
+          "text_ar": ""
+        },
+        {
+          "text": "HAHA",
+          "confidence": 0.989,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "I CAN'T BELIEVE HE'LL BE TAKING 30% OF THE PROFIT FROM EACH BOTTLE SOLD! AND FOR -THE-NEXT 50 YEARS AT THAT...",
+          "confidence": 0.885,
+          "text_ar": "لا أستطيع أن أصدق أنه سيأخذ 30% من أرباح كل زجاجة تُباع! وللخمسين سنة القادمة أيضاً..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "SHRUG THEN AGAIN, I SLPPOSE IT WILL SELL WELL THANKS TO HIS MAJESTY'S EMBLEM.",
+          "confidence": 0.906,
+          "text_ar": "هز كتفين: على أي حال، أظن أنه سيُباع بشكل جيد بفضل شارة جلالته."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "THE WRITING IS A BIT TOO SMALL FOR MY EYES.",
+          "confidence": 0.945,
+          "text_ar": "الكتابة صغيرة بعض الشيء على بصري."
+        },
+        {
+          "text": "GO AHEAD AND READ IT OUT LOLD FOR LIS.",
+          "confidence": 0.853,
+          "text_ar": "امضِ قدماً واقرأها بصوت عالٍ لأجلنا."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "KNOWN TO HAVE SHARP EYES",
+          "confidence": 0.967,
+          "text_ar": "معروف بحدّة بصره"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.933,
+          "text_ar": ""
+        },
+        {
+          "text": "PUSH",
+          "confidence": 0.985,
+          "text_ar": "دفع"
+        },
+        {
+          "text": "YES, YOUR MAJESTY.",
+          "confidence": 0.892,
+          "text_ar": "حاضر، يا جلالة الإمبراطور."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.969,
+          "text_ar": ""
+        },
+        {
+          "text": "SALVATION TO THE HEARTS OF THE EMPIRE.",
+          "confidence": 0.959,
+          "text_ar": "الخلاص لقلوب الإمبراطورية."
+        },
+        {
+          "text": "YOUR HEART WILL BEAT AGAIN. \"LOLIS FOR THE HEART\"!",
+          "confidence": 0.956,
+          "text_ar": "سيبدأ قلبك بالنبض مجدداً. \"لوليس للقلب\"!"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "HIS MAJESTY'S NAME IS INIT 0 Vi COFFEEMANGA AS WELL?!",
+          "confidence": 0.118,
+          "text_ar": "اسم جلالته موجود هنا أيضاً؟!"
+        },
+        {
+          "text": "ARE YOU SUFFERING FROM SHORTNESS OF BREATH?",
+          "confidence": 0.95,
+          "text_ar": "هل تعاني من ضيق في التنفس؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "ARE YOU AFRAID OF THE PAIN THAT SEIZES YOUR HEART?",
+          "confidence": 0.95,
+          "text_ar": "هل تخاف من الألم الذي يعتصر قلبك؟"
+        },
+        {
+          "text": "YOUR WORRIES ARE OVER!LOLIS, THE HEART TONIC, IS HERE TO SAVE THE DAY.",
+          "confidence": 0.934,
+          "text_ar": "لقد انتهت مخاوفكم! لوليس، مقوي القلب، هنا لإنقاذ الموقف."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "A SINGLE DOSE WILL TRANSFORM YOUR HEART AND YOUR LIFE.",
+          "confidence": 0.966,
+          "text_ar": "جرعة واحدة ستغير قلبك وحياتك."
+        },
+        {
+          "text": "INVESTIN YOUR SLIFFERING HEART!",
+          "confidence": 0.956,
+          "text_ar": "استثمر في قلبك المتألم!"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "\"LOLIS FOR THE HEART, BY ELIAS PHARMACELITICALS.\" CONSULT YOUR NEAREST PHYSICIAN.",
+          "confidence": 0.94,
+          "text_ar": "\"لوليس للقلب، بواسطة للصناعات الدوائية إلياس\". استشر أقرب طبيب لك."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.985,
+          "text_ar": ""
+        },
+        {
+          "text": "AH, HOW MEMORABLE! I LIKE HOW THAT SOLNDS.",
+          "confidence": 0.955,
+          "text_ar": "آه، كم هو لا يُنسى! يعجبني كيف تبدو هذه النغمة."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.967,
+          "text_ar": ""
+        },
+        {
+          "text": "WHATDO YOU THINK?",
+          "confidence": 0.962,
+          "text_ar": "ما رأيك؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.967,
+          "text_ar": ""
+        },
+        {
+          "text": "ERR, IT'S GOOD, BLIT I WORRYABOLT ONE THING...",
+          "confidence": 0.902,
+          "text_ar": "آه، إنه جيد، لكني قلق بشأن أمر واحد..."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "ONE THING? WHAT IS IT? GO AHEAD AND TELL ME!",
+          "confidence": 0.943,
+          "text_ar": "أمر واحد؟ ما هو؟ امضِ قدماً وأخبرني!"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.933,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "I AMCONCERNED THAT OUR PEOPLE MAY BE TOO QLICK TOINVOKE YOUR MAJESTY'S NAME,",
+          "confidence": 0.917,
+          "text_ar": "أنا قلق من أن يكون شعبنا أسرع من اللازم في ذكر اسم جلالتكم،"
+        },
+        {
+          "text": "ANDTHATIT MAYTARNISH YOUR ALITHORITY, YOUR MAJESTY.",
+          "confidence": 0.959,
+          "text_ar": "وأن قد يلطخ ذلك هيبتكم، يا جلالة الإمبراطور."
+        },
+        {
+          "text": "COEFEEMI",
+          "confidence": 0.7,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "WHO ELSE AGREES?",
+          "confidence": 0.979,
+          "text_ar": "من يوافقني الرأي؟"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "GLANCE",
+          "confidence": 0.92,
+          "text_ar": "نظرة خاطفة"
+        },
+        {
+          "text": "T COFFEEMANGA",
+          "confidence": 0.436,
+          "text_ar": ""
+        },
+        {
+          "text": "SIGH",
+          "confidence": 0.992,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "THAT SEEMS TO BE THE CONSENSLIS,",
+          "confidence": 0.937,
+          "text_ar": "يبدو أن هذا هو الإجماع."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "THEN. THE OFFICIALS SEEM TO BELIEVE MY NAME IS BEING LISED IN VAIN.",
+          "confidence": 0.925,
+          "text_ar": "إذن، يبدو أن المسؤولين يعتقدون أن اسمي يُستخدَم عبثاً."
+        },
+        {
+          "text": "WHAT DO YOU THINK, COLINT ELIAS?",
+          "confidence": 0.934,
+          "text_ar": "ما رأيك، أيها الكونت إلياس؟"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.962,
+          "text_ar": ""
+        },
+        {
+          "text": "OH! THIS IS EXACTLY WHAT TARAPREPARED ME FOR.",
+          "confidence": 0.941,
+          "text_ar": "أوه! هذا بالضبط ما حضرتني له تارا."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "YES! I KNOW WHAT TO SAY.",
+          "confidence": 0.947,
+          "text_ar": "نعم! أنا أعرف ما يجب أن أقوله."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "I BELIEVE THAT IF YOLR MAJESTY'S NAME BECOMES SYNONYMOLS WITH ALLEVIATING THE SLFFERING OF OUR PEOPLE,",
+          "confidence": 0.928,
+          "text_ar": "أعتقد أنه إذا أصبح اسم جلالتكم مرادفاً لتخفيف معاناة شعبنا،"
+        },
+        {
+          "text": "COFFE MANGA",
+          "confidence": 0.811,
+          "text_ar": ""
+        },
+        {
+          "text": "THEIR REVERENCE FORYOUWILL ONLY GROWSTRONGER AND-",
+          "confidence": 0.965,
+          "text_ar": "فإن إجلالهم لكم لن يزداد إلا قوة و-"
+        },
+        {
+          "text": "WAIT, BUT WHAT IF EMPTY BOTTLES OF THIS MEDICINE END LP ON THE STREETS, GETTING TRAMPLEDONAND KICKED AROLND?",
+          "confidence": 0.941,
+          "text_ar": "انتظر، ولكن ماذا لو انتهى المطاف بالزجاجات الفارغة لهذا الدواء ملقاة في الشوارع، ليتم دوسها وركلها؟"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.973,
+          "text_ar": ""
+        },
+        {
+          "text": "THE MERE THOUGHT OF IT MAKES ME SHLIDDER, YOURMAJESTY!",
+          "confidence": 0.907,
+          "text_ar": "مجرد التفكير في الأمر يجعلني أرتجف، يا جلالة الإمبراطور!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "HMM...YES, I SLPPOSE THAT MAY HAPPEN.",
+          "confidence": 0.938,
+          "text_ar": "حمم... نعم، أظن أن ذلك قد يحدث."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "T COFFEE AN",
+          "confidence": 0.08,
+          "text_ar": ""
+        },
+        {
+          "text": "AHEM WE WILL IMPLEMENT A CONTAINER DEPOSIT THAT WILL BE REFLINDED WHEN THE BOTTLE IS RETURNED.",
+          "confidence": 0.951,
+          "text_ar": "حمّحمم: سنفرض تأميناً على الحاويات يُسترد عند إعادة الزجاجة."
+        },
+        {
+          "text": "BUT IF THAT ISNOT ENOLGH,WE CAN ALWAYS ACCEPT A LOSS IN SALES-",
+          "confidence": 0.918,
+          "text_ar": "ولكن إن لم يكن ذلك كافياً، يمكننا دائماً قبول خسارة في المبيعات-"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.978,
+          "text_ar": ""
+        },
+        {
+          "text": "A LOSS IN SALES?",
+          "confidence": 0.901,
+          "text_ar": "خسارة في المبيعات؟"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "YES, YOUR MAJESTY!WE WILL GLADLY ACCEPT A LOSS IN SALES IN ORDER TO CHANGE THE NAME OF THE TONIC IF NECESSARY.",
+          "confidence": 0.934,
+          "text_ar": "نعم، يا جلالة الإمبراطور! سنقبل بكل سرور خسارة في المبيعات من أجل تغيير اسم المقوي إذا لزم الأمر."
+        },
+        {
+          "text": "ERR...",
+          "confidence": 0.958,
+          "text_ar": "آه..."
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "THIS IS NOT A BUSINESS RLIN BY THE IMPERIAL PALACE. IT WILL BE FILLING MY OWN TREASURY, RAISE SO I WILL NOT LISTEN TO YOUR OPINIONS ANYLONGER!",
+          "confidence": 0.895,
+          "text_ar": "هذه ليست تجارة يديرها القصر الإمبراطورية. بل ستملأ خزانتي الخاصة، لذا فلن استمع لآرائكم بعد الآن!"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.99,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.98,
+          "text_ar": ""
+        },
+        {
+          "text": "HMM,AND WHAT DO YOU THINK,2ND PRINCE?",
+          "confidence": 0.915,
+          "text_ar": "مم، وما رأيك أنت، أيها الأمير الثاني؟"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "m COFFEEMANGA",
+          "confidence": 0.219,
+          "text_ar": ""
+        },
+        {
+          "text": "THE COLNT SEEMS TO BE QUTTE",
+          "confidence": 0.919,
+          "text_ar": "يبدو الكونت غاضباً جداً..."
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "ANGRY WITH ME...",
+          "confidence": 0.897,
+          "text_ar": ""
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.925,
+          "text_ar": ""
+        },
+        {
+          "text": "HE'S GOING TO USE THAT SERPENT TONGLE OF HIS TO HARMOURFAMILY AGAIN!",
+          "confidence": 0.963,
+          "text_ar": "سيستخدم لسان أفعاه لإيذاء عائلتنا مجدداً!"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "文 COFFEE MANGA",
+          "confidence": 0.041,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "YOUR MAJESTY,SOFAR, NO OTHER HEART DRUG HAS SLCCEEDED INA PHASE 3 CLINICAL TRIAL ASIDE FROM THIS TONIC FROM ELIAS PHARMACELITICALS.",
+          "confidence": 0.938,
+          "text_ar": "يا جلالة الإمبراطور، حتى الآن، لم ينجح أي دواء قلبي آخر في التجربة السريرية للمرحلة الثالثة باستثناء هذا المقوي من للصناعات الدوائية إلياس."
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "THAT IS TRLE NOTONLYINOUR EMPIRE, BLIT AMONG THE MANYNATIONS WE INTERACT WITH AS WELL.",
+          "confidence": 0.937,
+          "text_ar": "هذا صحيح ليس فقط في إمبراطوريتنا، بل بين العديد من الدول التي نتفاعل معها أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "INOTHER WORDS, THIS IS A FIRST.",
+          "confidence": 0.948,
+          "text_ar": "بعبارة أخرى، هذه هي الأولى من نوعها."
+        },
+        {
+          "text": "THAT IS TRLE.",
+          "confidence": 0.978,
+          "text_ar": "هذا صحيح."
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.989,
+          "text_ar": ""
+        },
+        {
+          "text": "THAT MEANS THIS TONIC WILL SELL WELL BASED ONITS EFFECTS ALONE.",
+          "confidence": 0.974,
+          "text_ar": "هذا يعني أن هذا المقوي سيُباع بشكل جيد بناءً على آثاره وحدها."
+        },
+        {
+          "text": "心林子",
+          "confidence": 0.41,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "I KNEW IT! I KNEW HE WOLLD GET IN OUR WAY!",
+          "confidence": 0.899,
+          "text_ar": "كنت أعلم! كنت أعلم أنه سيقف في طريقنا!"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.982,
+          "text_ar": ""
+        },
+        {
+          "text": "HMM ARE YOU ALSO SLIGGESTING WE KEEP MYNAME OLT OF IT, THEN?",
+          "confidence": 0.925,
+          "text_ar": "مم، هل تقترح أيضاً أن نبقي اسمي بعيداً عن الأمر، إذن؟"
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "NO, YOUR MAJESTY.",
+          "confidence": 0.931,
+          "text_ar": "لا، يا جلالة الإمبراطور."
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.958,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT? IS HE ACTLALLY TAKING OUR SIDE?",
+          "confidence": 0.938,
+          "text_ar": "ماذا؟ هل يقف في صفنا حقاً؟"
+        },
+        {
+          "text": "ICAN'T TELL WHETHER HE'S BEING SINCERE.",
+          "confidence": 0.965,
+          "text_ar": "لا يمكنني معرفة ما إذا كان صادقاً."
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "IWISHI COLLD SEE HIS FACE INSTEAD OF JUST THE BACK OF HIS HANDSOME HEAD!",
+          "confidence": 0.947,
+          "text_ar": "أتمنى لو استطعت رؤية وجهه بدلاً من مؤخرة رأسه الوسيم فقط!"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.957,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "ELABORATE.",
+          "confidence": 0.99,
+          "text_ar": "فصّل في ذلك."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "OF COURSE, YOUR MAJESTY.",
+          "confidence": 0.924,
+          "text_ar": "بالطبع، يا جلالة الإمبراطور."
+        },
+        {
+          "text": "IT IS OBVIOUS THAT ADDING YOUR NAME TO THIS MEDICINE WILL ONLY MAKE IT SELL COFFEEMANGA EVEN BETTER THANIT WOLLDANYWAY.",
+          "confidence": 0.916,
+          "text_ar": "من الواضح أن إضافة اسمك إلى هذا الدواء سيجعله يُباع بشكل أفضل بكثير مما كان سيحقق على أي حال."
+        },
+        {
+          "text": "IF WE ALSO CONTINUE TO DEVELOP THIS MEDICINE AND DISCOVER NEW CLIRES,",
+          "confidence": 0.939,
+          "text_ar": "وإذا واصلنا أيضاً تطوير هذا الدواء واكتشاف علاجات جديدة،"
+        },
+        {
+          "text": "YOUR MAJESTY'S NAME",
+          "confidence": 0.97,
+          "text_ar": "فإن اسم جلالتك"
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "WILL BECOME A SYMBOL OF LIFE AND WILL BE WIDELY KNOWN THROUGHOLIT THE WORLD.",
+          "confidence": 0.942,
+          "text_ar": "سيصبح رمزاً للحياة وسيُعرف على نطاق واسع في جميع أنحاء العالم."
+        },
+        {
+          "text": "COFFEEMANGA X",
+          "confidence": 0.293,
+          "text_ar": ""
+        },
+        {
+          "text": "NOTONLY WILL THTS BE TDIE DUDTNG",
+          "confidence": 0.867,
+          "text_ar": "لن يقتصر هذا على فترة"
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "YOUR REIGN, BLIT ALSO FOR GENERATIONS TO COME.",
+          "confidence": 0.938,
+          "text_ar": "حكمك فحسب، بل للأجيال القادمة أيضاً."
+        },
+        {
+          "text": "COFFEENANGA",
+          "confidence": 0.943,
+          "text_ar": ""
+        },
+        {
+          "text": "YOUR NAME WILL BE REVERED AS ONE THAT SAVED COUNTLESS LIVES FOR MANY MORE YEARS.",
+          "confidence": 0.928,
+          "text_ar": "سيظل اسمك محفوراً كرمز أنقذ عدد لا يحصى من الأرواح لسنوات طويلة قادمة."
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "HA... C ##",
+          "confidence": 0.114,
+          "text_ar": "ها... ها..."
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "A SYMBOL THAT WILL SPREAD ACROSS THE WORLD..SOMY NAME WILL BE REMEMBERED THROLGHOUT TIME!",
+          "confidence": 0.926,
+          "text_ar": "رمز سينتشر في جميع أنحاء العالم.. إذن سيتم تخليد اسمي عبر الزمن!"
+        },
+        {
+          "text": "IT SEEMS THAT COLNT ELIAS HAD ALL OF THIS INMIND",
+          "confidence": 0.956,
+          "text_ar": "يبدو أن الكونت إلياس كان يضع كل هذا في اعتباره"
+        },
+        {
+          "text": "WHENHE SLIGGESTEDUSING YOURNAME FOR THE TONIC, YOUR MAJESTY.",
+          "confidence": 0.924,
+          "text_ar": "عندما اقترح استخدام اسمك للمقوي يا جلالة الملك."
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "GLANCE",
+          "confidence": 0.952,
+          "text_ar": "(نظرة خاطفة)"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "I DID.?",
+          "confidence": 0.863,
+          "text_ar": "أنا؟!"
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": [
+        {
+          "text": "ISEE. COLINT ELIAS!",
+          "confidence": 0.979,
+          "text_ar": "أرى ذلك. أيها الكونت إلياس!"
+        },
+        {
+          "text": "IS THIS TRLE? A TIMELESS SYMBOL.. DID YOU REALLY THINK THAT FAR AHEAD?",
+          "confidence": 0.949,
+          "text_ar": "أهذا صحيح؟ رمز أزلي.. هل فكرت حقاً بهذه العمق للمستقبل؟"
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "HA.HA. HA! YES, YOUR MAJESTY...IDID THINK OFIT",
+          "confidence": 0.95,
+          "text_ar": "ها، ها، ها! نعم يا جلالة الملك.. لقد فكرت في الأمر حقاً"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.988,
+          "text_ar": ""
+        },
+        {
+          "text": "WHENI ASKED YOU FOR PERMISSION TO USE YOUR NAME.",
+          "confidence": 0.944,
+          "text_ar": "عندما طلبت منك الإذن لاستخدام اسمك."
+        },
+        {
+          "text": "HE ACTLIALLY THOLGHT ABOUT ALL THAT?",
+          "confidence": 0.922,
+          "text_ar": "هل فكر حقاً في كل ذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "MURMUR IS HE JUST LLICKY OR IS THE ELIAS MERCHANT GROUP THAT COMPETENT?",
+          "confidence": 0.914,
+          "text_ar": "(تمتمة) أهو محظوظ فقط أم أن مجموعة إلياس التجارية بهذه الكفاءة حقاً؟"
+        },
+        {
+          "text": "Vii COFFEE MANGA",
+          "confidence": 0.645,
+          "text_ar": ""
+        },
+        {
+          "text": "MUTTER",
+          "confidence": 0.992,
+          "text_ar": "(همس)"
+        },
+        {
+          "text": "DOES THIS MEAN WE SHOLLD BE SIDING WITH HOUSE ELIAS FROMNOWON?",
+          "confidence": 0.942,
+          "text_ar": "أيعني هذا أن علينا الوقوف إلى صف آل إلياس من الآن فصاعداً؟"
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": [
+        {
+          "text": "MURMUR",
+          "confidence": 0.988,
+          "text_ar": "(تمتمة)"
+        },
+        {
+          "text": "MUTTER COFFEMANGA GLANCE",
+          "confidence": 0.804,
+          "text_ar": "(همس ونظرات)"
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "WHAT'S GOTTEN INTO THIS BASTARD... I MEAN,THE 2ND PRINCE?",
+          "confidence": 0.93,
+          "text_ar": "ما الذي أصاب هذا اللقيط... أعني، الامير الثاني؟"
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.977,
+          "text_ar": ""
+        },
+        {
+          "text": "ALL RIGHT! FROMNOW ON...NO.",
+          "confidence": 0.883,
+          "text_ar": "حسن اً! من الآن فصاعداً... لا."
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "? Vi COFFEEMANGA",
+          "confidence": 0.118,
+          "text_ar": "؟"
+        },
+        {
+          "text": "THE NAME OF THIS HEART MEDICINE WILL BE \"LOUIS\" FOREVERMORE!",
+          "confidence": 0.885,
+          "text_ar": "سيكون اسم دواء القلب هذا \"لويس\" إلى الأبد!"
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "iCOFFEEANGA",
+          "confidence": 0.718,
+          "text_ar": ""
+        },
+        {
+          "text": "AND SO, THE HEART TONIC FROM ELIAS PHARMACELITICALS THAT BORE THE EMBLEM OF THE EMPEROR WAS A HLGE SLICCESS AS SOON AS IT HIT THE SHELVES,",
+          "confidence": 0.91,
+          "text_ar": "وهكذا، حقق مقوي القلب من صيدليات إلياس الذي يحمل شعار الإمبراطور نجاحاً هائلاً بمجرد طرحه في الأسواق،"
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.938,
+          "text_ar": ""
+        },
+        {
+          "text": "AND MONEY POURED INTO THE EMPEROR'S TREASURY.",
+          "confidence": 0.947,
+          "text_ar": "وتدفقت الأموال بغزارة إلى خزينة الإمبراطور."
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "COFFEEMANG",
+          "confidence": 0.983,
+          "text_ar": ""
+        },
+        {
+          "text": "ILLSAVE THISDAMNED FAMILY! STORY Munirang ILLUSTRATION Olbera",
+          "confidence": 0.91,
+          "text_ar": "سأنقذ هذه العائلة اللعينة! القصة: مونيرانج، الرسوم: أولبيرا"
+        },
+        {
+          "text": "EPISODE177",
+          "confidence": 0.98,
+          "text_ar": "الحلقة 177"
+        },
+        {
+          "text": "9 MONTHS",
+          "confidence": 0.95,
+          "text_ar": "9 أشهر"
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.941,
+          "text_ar": ""
+        },
+        {
+          "text": "一 S 福",
+          "confidence": 0.078,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.933,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.898,
+          "text_ar": ""
+        },
+        {
+          "text": "BERNARD! I THINKICAN TRAINFOR ANOTHER HOUR!",
+          "confidence": 0.935,
+          "text_ar": "برنارد! أعتقد أنه يمكنني التدرب لساعة أخرى!"
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "HAS BEEN TRAINING FOR2 HOURS ALREADY.",
+          "confidence": 0.972,
+          "text_ar": "لقد كانت تتدرب لساعتين بالفعل."
+        },
+        {
+          "text": "VMM ALRA REALLY IS AMAZING!",
+          "confidence": 0.885,
+          "text_ar": "يا إلهي، آريا مذهلة بحق!"
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "FOCUSED GOOD NEWS Impartant Things BigCi",
+          "confidence": 0.675,
+          "text_ar": "(تركيز)"
+        },
+        {
+          "text": "..?YOU'RE BEING SO STRANGE TODAY.",
+          "confidence": 0.841,
+          "text_ar": "..؟ تبدو غريباً جداً اليوم."
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "BERNARD! ARE YOU FEELING LNWELL?YOU'RE NOT YOURSELF TODAY.",
+          "confidence": 0.918,
+          "text_ar": "برنارد! هل تشعر بالتعب؟ لستَ على طبيعتك اليوم."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.977,
+          "text_ar": ""
+        },
+        {
+          "text": "JOLT I'MNOT?",
+          "confidence": 0.98,
+          "text_ar": "(ارتجاف) ألسْتُ كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "STEP YEAH! YOU HAVEN'T EVEN COMPLIMENTEDME FORTRAINING SO HARD.",
+          "confidence": 0.943,
+          "text_ar": "(خطوات) أجل! لم تقم حتى بمدحي على تدريبي الشاق."
+        },
+        {
+          "text": "COFF ANGA",
+          "confidence": 0.534,
+          "text_ar": ""
+        },
+        {
+          "text": "ARE YOU READING ABOLT SOMETHING SERIOUS IN THE NEWSPAPER?",
+          "confidence": 0.949,
+          "text_ar": "هل تقرأ شيئاً خطيراً في الصحيفة؟"
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": [
+        {
+          "text": "N-NO.I'LL PLT IT AWAY.",
+          "confidence": 0.913,
+          "text_ar": "ل-لا. سأقوم بإبعادها."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "The Oio Deruspape! AL NEWS TUNA",
+          "confidence": 0.744,
+          "text_ar": "(الصحيفة اليومية)"
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": [
+        {
+          "text": "HMM...YOU BASICALLYADMITTED THAT YOU WERE LOOKING AT SOMETHING YOU DONT WANT ME TO SEE.",
+          "confidence": 0.883,
+          "text_ar": "ممم... لقد اعترفت ضمنياً بأنك كنت تنظر إلى شيء لا تريد مني رؤيته."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.912,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "COULON'T STOP HER.",
+          "confidence": 0.952,
+          "text_ar": "لم أستطيع منعها."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.95,
+          "text_ar": ""
+        },
+        {
+          "text": "HMM",
+          "confidence": 0.981,
+          "text_ar": "ممم"
+        },
+        {
+          "text": "ogngeaed@3n E JAMOTIG",
+          "confidence": 0.464,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "ERR... ARE YOU ALL RIGHT?",
+          "confidence": 0.884,
+          "text_ar": "حمماً.. هل أنت بخير؟"
+        },
+        {
+          "text": "WHATKIND OF RIDICLLOUS SURVEY IS THIS?",
+          "confidence": 0.912,
+          "text_ar": "ما هذا الاستطلاع السخيف؟"
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "DOESN'T THIS COLNT AS INSULTING A MEMBER OF THE IMPERIAL FAMILY?",
+          "confidence": 0.932,
+          "text_ar": "ألا يُعد هذا إهانة لأحد أفراد العائلة الإمبراطورية؟"
+        },
+        {
+          "text": "COFFEEMANG",
+          "confidence": 0.93,
+          "text_ar": ""
+        },
+        {
+          "text": "WHO IS THE NLIMBER ONE MAN IN THE EMPIRE WHO IS A BEAST BOTH ON THE STREETS AND IN THE SHEETS?",
+          "confidence": 0.925,
+          "text_ar": "من هو الرجل الأول في الإمبراطورية الذي يُعتبر وحشاً في الشوارع وفي السرير؟"
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": [
+        {
+          "text": "2ND PRINCE, KYLE AMURE.",
+          "confidence": 0.942,
+          "text_ar": "الأمير الثاني، كايل أمور."
+        },
+        {
+          "text": "NOT ONLY THAT, BUT HE WAS ALSO VOTED NUMBER1FOR\"MOST LIKELY TO KEEP GOING ALL NIGHT LONG.\"",
+          "confidence": 0.936,
+          "text_ar": "ليس هذا فحسب، بل تم التصويت له أيضاً كـ \"الأكثر احتمالاً للاستمرار طوال الليل دون توقف\"."
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.912,
+          "text_ar": ""
+        },
+        {
+          "text": "HAH,A BEAST OAI THE STDFFTS AAID",
+          "confidence": 0.736,
+          "text_ar": "هاه، وحش في الشوارع"
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "IN THE SHEETS",
+          "confidence": 0.968,
+          "text_ar": "وفي السرير"
+        },
+        {
+          "text": "WHO KEEPS GOING ALL NIGHT, HLH? WHAT KIND OF SLRVEY IS THIS? VU COFFEEMANGA",
+          "confidence": 0.308,
+          "text_ar": "من الذي يستمر طوال الليل، هاه؟ ما هذا الاستطلاع؟"
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "HEM",
+          "confidence": 0.983,
+          "text_ar": "همم"
+        },
+        {
+          "text": "V COFFEEMANGA",
+          "confidence": 0.424,
+          "text_ar": ""
+        },
+        {
+          "text": "WHY ARE YOU MAKING SLICH A STRANGE FACE? WHAT WEREYOUTHINKING ABOLT?",
+          "confidence": 0.941,
+          "text_ar": "لماذا تبدي هذا التعبير الغريب؟ فيما كنت تفكر؟"
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "STAMMER I-IWASN'T THINKINGABOUT A-ANYTHING!",
+          "confidence": 0.869,
+          "text_ar": "(تلعثم) أ-أنا لم أكن أفكر في ش-شيء!"
+        },
+        {
+          "text": "m COFFEEMANGA",
+          "confidence": 0.047,
+          "text_ar": ""
+        },
+        {
+          "text": "GEEZ...IGLESS BEING A TERRIBLE ACTOR IS A FAMILY TATT",
+          "confidence": 0.821,
+          "text_ar": "ياله من أمر... يبدو أن كون المرء ممثلاً سيئاً صفة عائلية"
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "TRAIT.",
+          "confidence": 0.846,
+          "text_ar": "وراثية."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.971,
+          "text_ar": ""
+        },
+        {
+          "text": "YOU'RE REALLY BAD AT LYING..",
+          "confidence": 0.957,
+          "text_ar": "أنت سيء حقاً في الكذب.."
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "川 COFFEEMANGA",
+          "confidence": 0.122,
+          "text_ar": ""
+        },
+        {
+          "text": "WAIT!ONE",
+          "confidence": 0.994,
+          "text_ar": "انتظري! لحظة"
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "MOMENT.",
+          "confidence": 0.969,
+          "text_ar": "واحدة."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.985,
+          "text_ar": ""
+        },
+        {
+          "text": "HMM?",
+          "confidence": 0.989,
+          "text_ar": "ممم؟"
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "AHEM...WHAT I'M ABOLT TO TELL YOU...",
+          "confidence": 0.882,
+          "text_ar": "أحم... ما أنا بصدد إخبارك به..."
+        },
+        {
+          "text": "WELL...I'MNOT COFFEEMANGA SAYING THIS AS YOUR SUBORDINATE, BLIT...",
+          "confidence": 0.868,
+          "text_ar": "حسناً... أنا لا أقول هذا كمرؤوس لك، ولكن..."
+        },
+        {
+          "text": "LET'S JLIST SAY... AS A MEMBER OF THE OPPOSITE SEX...",
+          "confidence": 0.89,
+          "text_ar": "دعنا نقول فقط... كشخص من الجنس الآخر..."
+        }
+      ]
+    },
+    {
+      "page": 86,
+      "image_id": 86,
+      "sentences": [
+        {
+          "text": "EXCLISE ME? EXASPERATED -",
+          "confidence": 0.165,
+          "text_ar": "عفواً؟ (استياء)"
+        }
+      ]
+    },
+    {
+      "page": 87,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "SO, ERR... THE WORLD IS HALF MEN AND HALF WOMEN, BUIT...AHEM...",
+          "confidence": 0.851,
+          "text_ar": "إذن، همم... العالم ينقسم إلى رجال ونساء، ولكن... أحم..."
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 88,
+      "sentences": [
+        {
+          "text": "SINCE I'M A MAN... I'D LIKE TO TELL YOU ABOUT WHAT MEN ARE LIKE.",
+          "confidence": 0.922,
+          "text_ar": "بما أنني رجل... أود أن أخبرك بماهية الرجال."
+        },
+        {
+          "text": "COFFEEMANGA 1",
+          "confidence": 0.267,
+          "text_ar": ""
+        },
+        {
+          "text": "A DEFINING FACTOR OF THE MALE SPECIES IS... HOW DO I PUT THIS? I MEAN,SINCE YOU'RE STILL A YOLNG WOMAN...",
+          "confidence": 0.917,
+          "text_ar": "من سمات الجنس البشري الذكري... كيف أقول هذا؟ أعني، بما أنك ما زلت شابة..."
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 89,
+      "sentences": [
+        {
+          "text": "OH MY GOD!",
+          "confidence": 0.9,
+          "text_ar": "يا إلهي!"
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "IS HE ABOUT TO GIVE ME THE BIRDS AND THE BEES SPEECH?!",
+          "confidence": 0.937,
+          "text_ar": "هل هو على وشك إعطائي محاضرة عن الأمور الجنسية والأحياء الانجابية؟!"
+        },
+        {
+          "text": "心 1 COFFEE MANGA",
+          "confidence": 0.09,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 91,
+      "image_id": 91,
+      "sentences": [
+        {
+          "text": "TOBECONTINUE..",
+          "confidence": 0.975,
+          "text_ar": "يتبع.."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.977,
+          "text_ar": "كينيز - مالك حقوق الويب توون"
+        },
+        {
+          "text": "WRITING MUNIRANG STORYBOARD CHOHO ILLUSTRATION OLBEERA COLORINGASSISTANT MANDUFAIRY EDITOR JEOMRYE PRODUCTION KENAZLTD. HEAD DIRECTION WOODY Y,KKINGKKANG PRODUCER",
+          "confidence": 0.963,
+          "text_ar": "الكتابة: مونيرانج، لوحة القصة: تشوهو، الرسوم: أولبيرا، مساعدة التلوين: ماندو فاري، التحرير: جيومري، الإنتاج: شركة كينيز المحدودة، الإدارة العامة: وودي يي، كينغ ككانغ، المنتح"
+        },
+        {
+          "text": "THISWORKISPUBLISHEDUNDERCONTRACTBETWEENKENAZLTD.AND THECOPYRIGHTHOLDER,ANDISPROTECTEDUNDERCOPYRIGHTLAW.ANY UNAUTHORIZEDUSE,DUPLICATION,ORSHARINGWILLBEMETWITHLEGALACTION.",
+          "confidence": 0.986,
+          "text_ar": "تم نشر هذا العمل بموجب عقد بين شركة كينيز المحدودة ومالك حقوق النشر، وهو محمي بموجب قانون حقوق النشر. أي استخدام أو نسخ أو مشاركة غير مصرح بها ستواجه إجراءات قانونية."
+        }
+      ]
+    }
+  ]
+}
