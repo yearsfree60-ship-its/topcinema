@@ -1,0 +1,1173 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "187",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THISSERIES HAVE BEENTRANSLATED BYMAGUSMANGA TEAMVISITOURSITE: MAGUSTOON.ORG TO SUPPORT USCONTINUEING THE SERIES FOR YOU!",
+          "confidence": 0.922,
+          "text_ar": "تم ترجمة هذه السلسلة بواسطة فريق ماغوس مانغا. زوروا موقعنا magustoon.org لدعمنا لنستمر في تقديم السلسلة لكم!"
+        },
+        {
+          "text": "ENJOYREADING!",
+          "confidence": 0.974,
+          "text_ar": "قراءة ممتعة!"
+        },
+        {
+          "text": "HELLO,MAKESURETO READAT:MAGUSTOON.ORG TOSUPPORTMERELEASING THE CHPATERSFAST FOR YOUTO READ. ENOJY!",
+          "confidence": 0.933,
+          "text_ar": "مرحباً، تأكدوا من القراءة على موقع magustoon.org لدعمي في إطلاق الفصول بأسرع وقت لتستمتعوا بقراءتها. استمتعوا!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "从音 中 /",
+          "confidence": 0.104,
+          "text_ar": "..."
+        },
+        {
+          "text": "6 MONTHS",
+          "confidence": 0.965,
+          "text_ar": "ستة أشهر"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": []
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THEY SAY A STRONG DENIAL IS A STRONG AFFIRMATION...",
+          "confidence": 0.926,
+          "text_ar": "يقولون إن الإنكار الشديد إقرار شديد..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I SAID IDIDN'TGET DUMPED!",
+          "confidence": 0.912,
+          "text_ar": "قلتُ إنني لم أتعرض للرفض!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "WHOA,WHOA.MY DEAR DISCIPLE.YOU'VE GOTTEN WORKEDUPALLOFA SUDDEN!",
+          "confidence": 0.964,
+          "text_ar": "مهلاً، مهلاً. يا تلميذتي العزيزة، لقد انفعلتِ فجأة!"
+        },
+        {
+          "text": "CALM DOWN, CALMDOWN!",
+          "confidence": 0.955,
+          "text_ar": "هديء من روعكِ، هديء من روعكِ!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "ANYWAY,WHYDID YOU CALL ME HERE?",
+          "confidence": 0.898,
+          "text_ar": "على أي حال، لماذا طلبتِ مني الحضور إلى هنا؟"
+        },
+        {
+          "text": "AH! TAKE THIS.",
+          "confidence": 0.973,
+          "text_ar": "آه! خذي هذا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "WHAT IS THIS?",
+          "confidence": 0.974,
+          "text_ar": "ما هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "UISE THIS TO CONTACT ME.I WON'T BE IN THE CAPITAL FOR A WHILE.",
+          "confidence": 0.91,
+          "text_ar": "استخدمي هذا للتواصل معي. فلن أكون في العاصمة لفترة من الوقت."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THATKEYIS THE KEY TO THE PRINTING ROOM OF THE IMPERIAL DAILY.",
+          "confidence": 0.935,
+          "text_ar": "هذا المفتاح هو مفتاح غرفة الطباعة التابعة للصحيفة الإمبراطورية."
+        },
+        {
+          "text": "I OWN80%OF THAT PLACE.",
+          "confidence": 0.945,
+          "text_ar": "أنا أمتلك 80% من ذلك المكان."
+        },
+        {
+          "text": "WOW! YOU'RE THE PRESIDENT OF THE IMPERIAL DAILY?",
+          "confidence": 0.72,
+          "text_ar": "واو! أنت رئيس تحرير الصحيفة الإمبراطورية؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HEHE. WELL, THIS IS NOTHING.IF ANYTHING HAPPENS,GO TO THIS PRINTING OFFICE BY FIVE IN THE MORNING.",
+          "confidence": 0.931,
+          "text_ar": "ههه. حسناً، هذا لا شيء. إذا حدث أي شيء، اذهبي إلى مطبعة الصحيفة بحلول الخامسة صباحاً."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "THEY WILL GIVE YOU ALOCKERIFYOU SHOW THIS KEY.",
+          "confidence": 0.95,
+          "text_ar": "سيعطونكِ خزانة إذا أريتِهم هذا المفتاح."
+        },
+        {
+          "text": "IFYOUWRITE DOWN THE DETAILS AND LEAVE THEM THERE, IT WILL BE PUBLISHED IN THAT DAY'S NEWSPAPER.",
+          "confidence": 0.922,
+          "text_ar": "إذا كتبتِ التفاصيل وتركتِها هناك، فسوف تُنشر في صحيفة ذلك اليوم."
+        },
+        {
+          "text": "THEN I'LL FIND A WAY",
+          "confidence": 0.926,
+          "text_ar": "حينها سأجد طريقة..."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "TO HELP YOU OUT, NO MATTER WHAT.",
+          "confidence": 0.954,
+          "text_ar": "...لمساعدتكِ، مهما تكلف الأمر."
+        },
+        {
+          "text": "MASTER!",
+          "confidence": 0.994,
+          "text_ar": "معلمي!"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "2ah 8o nil 8i B 600 S 家",
+          "confidence": 0.134,
+          "text_ar": "..."
+        },
+        {
+          "text": "WHY ARE YOU BEING SO NICE TO ME, MASTER?",
+          "confidence": 0.949,
+          "text_ar": "لماذا أنت لطيف جداً معي، يا معلمي؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "WELL,OBVIOUSLYITMEANS MY DISCIPLE HAS BEEN COMPLETELY RECOGNIZEDBY HER MASTER.",
+          "confidence": 0.949,
+          "text_ar": "حسناً، من الواضح أن هذا يعني أن تلميذتي قد نالت الاعتراف الكامل من معلمها."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "MUHAHAHA. YOU'RE HAPPY, RIGHT? oooooo",
+          "confidence": 0.591,
+          "text_ar": "موهاهاها. أنتِ سعيدة، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "I'M SURE NOTHING BAD WILL HAPPEN, BUT THANK YOU, MASTER.",
+          "confidence": 0.925,
+          "text_ar": "أنا متأكدة من أنه لن يحدث شيء سيء، لكن شكراً لك يا معلمي."
+        },
+        {
+          "text": "A MAAGTED WUO",
+          "confidence": 0.698,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "中 WORRIESABOUT THEIRDISCIPLEEVEN WHEN GOINGFAR AWAY...",
+          "confidence": 0.381,
+          "text_ar": "...يقلق المعلم على تلميذه حتى عندما يذهب بعيداً..."
+        },
+        {
+          "text": "ITHINKIREALLY MADETHERIGHT CHOICEPICKINGYOU AS MYMASTER!",
+          "confidence": 0.956,
+          "text_ar": "أعتقد أنني قمت الخيار الصحيح حقاً عندما اخترتكَ معلماً لي!"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "OF COURSE, OF COURSE.",
+          "confidence": 0.936,
+          "text_ar": "بالطبع، بالطبع."
+        },
+        {
+          "text": "BY THE WAY, JUST HOW RICH ARE YOU?",
+          "confidence": 0.908,
+          "text_ar": "بالمناسبة، كم أنت ثري حقاً؟"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "SEE THAT OVER THERE?",
+          "confidence": 0.975,
+          "text_ar": "أترين تلك المنطقة هناك؟"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "YES?",
+          "confidence": 0.964,
+          "text_ar": "نعم؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "FROMOVER THERE TO THE OPPOSITE SIDE,SEE THAT BUILDING? ALL THE WAYTO THE IMPERIAL BANKBUILDINGONTHE 1ST FLOOR OF THE FRONT INTERSECTION.",
+          "confidence": 0.899,
+          "text_ar": "من هناك إلى الجانب المقابل، هل ترين ذلك المبنى؟ طوال الطريق حتى مبنى البنك الإمبراطورية في الطابق الأول عند التقاطع الأمامي."
+        },
+        {
+          "text": "OVERTHERE ACROSS THE STREET?",
+          "confidence": 0.944,
+          "text_ar": "هناك عبر الشارع؟"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "YEAH.THATENTIRE STREET BELONGS TO ME.",
+          "confidence": 0.971,
+          "text_ar": "نعم. ذلك الشارع بأكمله يخصني."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "Ohhh...",
+          "confidence": 0.921,
+          "text_ar": "أوه..."
+        },
+        {
+          "text": "TO THINK ID ACTUALLYHEARA LINE LIKE THIS IN REAL LIFE!",
+          "confidence": 0.91,
+          "text_ar": "التفكير في أنني أسمع حقاً جملة كهذه في الواقع!"
+        },
+        {
+          "text": "n a Yio",
+          "confidence": 0.474,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "OUT OF ALL THE MASTERS I'VE EVER SEEN,TODAYYOUARE THE COOLEST,MASTER!",
+          "confidence": 0.898,
+          "text_ar": "من بين كل المعلمين الذين رأيتهم، أنت الأروع اليوم يا معلمي!"
+        },
+        {
+          "text": "TSK.MAYBEI SHOLLD HAVEBRAGGED ABOUT IT SOONER?",
+          "confidence": 0.926,
+          "text_ar": "تباً. رب كان يتوجب علي التباهي بالأمر عاجلاً؟"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "AFTER THIS DAY,",
+          "confidence": 0.942,
+          "text_ar": "بعد ذلك اليوم،"
+        },
+        {
+          "text": "TARADID NOT SEE HER MASTER ANDREFOR QUITEALONGTIME.",
+          "confidence": 0.946,
+          "text_ar": "لم ترمِ تارا معلمها أندري لفترة طويلة جداً."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "TWO MONTHS LATER.",
+          "confidence": 0.935,
+          "text_ar": "بعد شهرين."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": []
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "A DISPATCHORDER CAME IN TODAY.",
+          "confidence": 0.947,
+          "text_ar": "جاء أمر إيفاد اليوم."
+        },
+        {
+          "text": "HUH? I THOUGHT THERE WERE NO DISPATCHES SCHEDULED FOR TODAY?",
+          "confidence": 0.942,
+          "text_ar": "هاه؟ ألم تكن هناك عمليات إيفاد مجدولة ليوم؟"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "OUR DEPARTMENT IS ALWAYS LIKE THIS ANYWAY",
+          "confidence": 0.961,
+          "text_ar": "قسمنا هكذا دائماً على أي حال."
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "AN URGENT REQUEST CAME IN THIS MORNING.",
+          "confidence": 0.964,
+          "text_ar": "جاء طلب عاجل هذا الصباح."
+        },
+        {
+          "text": "YES! UNDERSTOOD. WHICH DEPARTMENT'S DISPATCH IS IT?",
+          "confidence": 0.941,
+          "text_ar": "نعم! مفهوم. إيفاد أي قسم هو هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "AS EXPECTED, I LOVE THAT YOU NEVER COMPLAIN.",
+          "confidence": 0.935,
+          "text_ar": "كما هو متوقع، يعجبني أنكِ لا تتذمرين أبداً."
+        },
+        {
+          "text": "TODAY IT'S A REQUEST FROM THE VICE COMMANDER OF THE CENTRAL ROYAL GUARD, SO IT'S A DISPATCH TO THE CENTRAL PALACE!",
+          "confidence": 0.937,
+          "text_ar": "اليوم إنه طلب من نائب قائد الحرس الملكي المركزي، لذا فهو إيفاد إلى القصر المركزي!"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "IT'S MINUTES-TAKING DUTY FOR A JOINT TRAINING MEETING BETWEEN THE PALACE ROYAL GUARD AND THEMILITARY CAPITAL DEFENSE COMMAND.",
+          "confidence": 0.946,
+          "text_ar": "إنها مهمة تدوين محاضر لاجتماع تدريبي مشترك بين الحرس الملكي للقصر وقيادة الدفاع العسكري للعاصمة."
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "THAT'S RIGHT. HAVEASAFE TRIP!",
+          "confidence": 0.959,
+          "text_ar": "هذا صحيح. رحلة موفقة!"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.983,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "AH! WILL IT BE ALRIGHT IF I LOOK UP SOME RECORDS IN THE CENTRAL PALACE STORAGE WHEN I'M ONE?",
+          "confidence": 0.933,
+          "text_ar": "آه! هل سيكون الأمر على ما يرام إذا بحثتُ في بعض السجلات في مستودع القصر المركزي عندما أنتهي؟"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "HAHA.WHAT ARE YOU GOING TO DO WITH PAST RECORDS?",
+          "confidence": 0.964,
+          "text_ar": "هاها. ماذا ستفعلين بالسجلات القديمة؟"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "LOOKING AT PAST RECORDS MAKES THE WORK GO MUCH SMOOTHER!",
+          "confidence": 0.921,
+          "text_ar": "الاطلاع على السجلات القديمة يجعل العمل يسير بسلاسة أكبر!"
+        },
+        {
+          "text": "IT HELPS WITH PROMOTIONS TOO!",
+          "confidence": 0.961,
+          "text_ar": "إنه يساعد في الترقيات أيضاً!"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "JEEZ, IT'S MY FIRST TIME SEEING A JUNIORWHO PUTS THEIR LIFE ON THE LINE FOR APROMOTION LIKE THIS!",
+          "confidence": 0.919,
+          "text_ar": "يا للهول، هذه أول مرة أرى فيها مبتدئة تضع حياتها على المحك من أجل ترقية كhذه!"
+        },
+        {
+          "text": "BUT I GUESS IF YOU BECOME THE 1ST AIDE, YOU WILL BE THE NEXT HEAD OF THE HOUSE?",
+          "confidence": 0.897,
+          "text_ar": "لكن أعتقد أنه إذا أصبحتِ المساعدة الأولى، ستكونين رئيسة البيت القادمة؟"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "XXXOXXXXXX电XXXXXYO",
+          "confidence": 0.623,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "YES. SO PLEASE HELP ME OUT A BIT, SENIOR!",
+          "confidence": 0.922,
+          "text_ar": "نعم. لذا يرجى مساعدتي قليلاً، أيتها الكبرى!"
+        },
+        {
+          "text": "RIGHT, RIGHT. JUST MAKESURE TO SEND THE OFFICIAL REQUEST IN ADVANCE.",
+          "confidence": 0.96,
+          "text_ar": "صحيح، صحيح. فقط تأكدي من إرسال الطلب الرسمي مسبقاً."
+        },
+        {
+          "text": "SINCE YOU SAY YOU'LL WORK HARD,THERE'S NO REASON FOR ANYONE TO STOP YOU.",
+          "confidence": 0.951,
+          "text_ar": "بما أنكِ تقولين إنكِ ستعملين بجد، فلا توجد سبباً لأي شخص لإيقافكِ."
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": []
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "YES, THANK YOU SO MUCH, SENOR!",
+          "confidence": 0.888,
+          "text_ar": "نعم، شكراً جزيلاً لكِ أيتها الكبرى!"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "MAKESURE YOU'RE THATREADING THECHAPTERAT: MAGUSTOON.ORG",
+          "confidence": 0.969,
+          "text_ar": "تأكدي من قراءة الفصل على: magustoon.org"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "EO花",
+          "confidence": 0.153,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "THISIS GREAT.I HAVEN'T HAD TIME TOSEARCH THROUGH THE STORAGE UNITSPROPERLY LATELYBECAUSEI'VEBEENSO BUSY.",
+          "confidence": 0.944,
+          "text_ar": "هذا رائع. لم يكن لدي الوقت للبحث في وحدات التخزين بشكل صحيح مؤخراً لأنني كنت مشغولة جداً."
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "BUT ISIT REALLY THERE? FORGETABLACKMAP, THERE MIGHT NOTEVEN BE A REGULAR MAP...",
+          "confidence": 0.86,
+          "text_ar": "ولكن هل هو حقاً هناك؟ ناهيك عن خريطة سوداء، قد لا تكون هناك حتى خريطة عادية..."
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": [
+        {
+          "text": "BOA 1",
+          "confidence": 0.169,
+          "text_ar": "..."
+        },
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.933,
+          "text_ar": "ما هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": []
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "AuI",
+          "confidence": 0.436,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": []
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": []
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "KYLE!",
+          "confidence": 0.981,
+          "text_ar": "كايل!"
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "IT'S BEEN TWO MONTHSSINCE THAT NIGHT.",
+          "confidence": 0.928,
+          "text_ar": "لقد مر شهران منذ تلك الليلة."
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": []
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": []
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": []
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": []
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "I KNOW WE AGREED TO PRETEND NOT TO KNOW EACH OTHER..",
+          "confidence": 0.934,
+          "text_ar": "أعلم أننا اتفقنا على التظاهر بعدم معرفة بعضنا البعض..."
+        },
+        {
+          "text": "AND ICOMPLETELY UNDERSTAND THIS SITUATION...",
+          "confidence": 0.96,
+          "text_ar": "وأنا أفهُم هذا الوضع تماماً..."
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": []
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "GOSH.I'M REALLY ACTING RIDICULOUS!",
+          "confidence": 0.966,
+          "text_ar": "يا له من أمر سخيف. أنا أتصرف بغباء حقاً!"
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "NEXT TIMEISEE HIM,I'LL ALSO GIVE HIMACOMPLETELY EXPRESSIONLESS LOOK...",
+          "confidence": 0.939,
+          "text_ar": "في المرة القادمة التي أراه فيها، سأمنحه أيضاً نظرة خالية من أي تعبير تماماً..."
+        },
+        {
+          "text": "NO,NO!",
+          "confidence": 0.956,
+          "text_ar": "لا، لا!"
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": []
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "GET A GRIP! THERE'S NO REASON TOFEEL HURT!",
+          "confidence": 0.94,
+          "text_ar": "تمالكي نفسكِ! ليس هناك سبب للشعور بالأذى!"
+        },
+        {
+          "text": "MAGUSTOON.ORG",
+          "confidence": 0.994,
+          "text_ar": "magustoon.org"
+        },
+        {
+          "text": "THIS IS ALL AN ACT, AND KYLE IS JUST DOING AN EXCEPTIONALLY GOOD JOB AT IT!",
+          "confidence": 0.901,
+          "text_ar": "هذا كله تمثيل، وكايل يؤدي عملاً جيداً بشكل استثنائي في ذلك!"
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "SO,LET'S JUST DO WHAT I NEED TO DO.",
+          "confidence": 0.909,
+          "text_ar": "لذا، دعونا نفعل ما أحتاج إلى فعله فحسب."
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": []
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "IF THINGS GO ACCORDING TO THE BOOK,",
+          "confidence": 0.936,
+          "text_ar": "إذا سارت الأمور وفقاً للكتاب،"
+        },
+        {
+          "text": "THERE ARE ONLY ATD 6 MONTHSLEFT BEFORE MY FAMILY GOESBANKRUPT!",
+          "confidence": 0.254,
+          "text_ar": "فلم يتبق سوى بضعة أشهر قبل أن تعلن عائلتي إفلاسها!"
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "KEEPIT UP, COME ON!",
+          "confidence": 0.952,
+          "text_ar": "استمري هكذا، هيا!"
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": []
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": []
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": []
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "TSAR",
+          "confidence": 0.123,
+          "text_ar": "تارا"
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "ANDREI FOUND TWO MORE BLACK CROWN TOWNS INVOLVED WITH VICTIMS?",
+          "confidence": 0.935,
+          "text_ar": "أوجد أندري بلدتين إضافيتين للتاج الأسود متورطتين مع الضحايا؟"
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": [
+        {
+          "text": "YES, YOUR HIGHNESS.",
+          "confidence": 0.918,
+          "text_ar": "نعم، سموّك."
+        },
+        {
+          "text": "SO THERE ARE A TOTAL OF FIVE BLACK CROWN TOWNS WITHIN THE EMPIRE.",
+          "confidence": 0.93,
+          "text_ar": "إذن هناك ما مجموعه خمس بلدات للتاج الأسود داخل الإمبراطورية."
+        },
+        {
+          "text": "WHAT KIND OF PEOPLE ARE TRAPPED IN THOSE UNDERGROLIND PRISONS?",
+          "confidence": 0.927,
+          "text_ar": "ما نوع الأشخاص المحبوسين في تلك السجون تحت الأرض؟"
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": []
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "IN THOSE UNDERGROLND PRISONS, THE FAMILY MEMBERSOF THE GARDENER FROM THE DRAGON INCIDENT,",
+          "confidence": 0.95,
+          "text_ar": "في تلك السجون تحت الأرض، أفراد عائلة البستاني من حادثة التنين،"
+        },
+        {
+          "text": "AND THE OWNER OF THE WEAPONS WORKSHOP",
+          "confidence": 0.944,
+          "text_ar": "وصاحب ورشة الأسلحة"
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "NEARTHEWINTERFOREST HUNTING GROUNDS WERE DISCOVERED.",
+          "confidence": 0.957,
+          "text_ar": "بالقرب من أراضي صيد غابة الشتاء تم اكتشافهم."
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "NOT ONLY THAT, BUT THERE WERE ALSO MANYOTHER VICTIMSINVOLVED IN THE INCIDENTS UPUNTILNOW.",
+          "confidence": 0.944,
+          "text_ar": "ليس ذلك فحسب، بل كان هناك أيضاً العديد من الضحايا الآخرين المتورطين في الحوادث حتى الآن."
+        },
+        {
+          "text": "IT SEEMS THEY WERE ALL TAKEN HOSTAGE.",
+          "confidence": 0.944,
+          "text_ar": "يبدو أنهم جميعاً أُخذوا كرهائن."
+        },
+        {
+          "text": "THAT MEANS THE ONE WHO CREATED THE BLACK CROWN TOWNS IS THE MASTERMIND",
+          "confidence": 0.937,
+          "text_ar": "هذا يعني أن الشخص الذي أنشأ بلدات التتاج الأسود هو العقل المدبر"
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": [
+        {
+          "text": "BEHIND THE SERIES OF INCIDENTS THAT HAVE OCCURRED SOFAR.",
+          "confidence": 0.953,
+          "text_ar": "وراء سلسلة الحوادث التي وقعت حتى الآن."
+        },
+        {
+          "text": "WE MUST WIPE THEM ALL OUT, YOUR HIGHNESS!",
+          "confidence": 0.944,
+          "text_ar": "يجب أن نقضي عليهم جميعاً، سموّك!"
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "DON'T WORRY. THE MOMENT WEFIND THE MASTERMIND, THEY WILL YEARN FOR DEATH.",
+          "confidence": 0.944,
+          "text_ar": "لا تقلق. اللحظة التي سنجد فيها العقل المدبر، سيتمنون الموت."
+        },
+        {
+          "text": "UNTIL THEN, THEY MUST NOT KNOW THATWE ARE INVESTIGATING THEM.DO YOU UNDERSTAND!",
+          "confidence": 0.91,
+          "text_ar": "حتى ذلك الحين، يجب ألا يعلموا أننا نحقق معهم. أتفهم ذلك!"
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "YES, YOUR HIGHNESS!",
+          "confidence": 0.914,
+          "text_ar": "نعم، سموّك!"
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "ANY SUSPICIOUS MOVEMENTSFROM ELIAS?",
+          "confidence": 0.903,
+          "text_ar": "أي تحركات مشبوهة من قِبل آل إلياس؟"
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "NOTHING IS SHOWING UP YET.",
+          "confidence": 0.958,
+          "text_ar": "لا شيء يظهر حتى الآن."
+        },
+        {
+          "text": "SECERTARY TARA IS ALSO GETTING ALONG EXCEPTIONALLY WELL IN THE AUDIT DEPARTMENT USING HER UNIQUE SOCIABILITY.",
+          "confidence": 0.914,
+          "text_ar": "السكرتيرة تارا تتعايش بشكل جيد استثنائي أيضاً في قسم التدقيق مستخدمة قدرتها الاجتماعية الفريدة."
+        },
+        {
+          "text": "IS THAT SO?",
+          "confidence": 0.935,
+          "text_ar": "أحقاً ذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "DIDN'T YOU SEE HER IN THE CENTRAL HALL EARLIER AS WELL?",
+          "confidence": 0.928,
+          "text_ar": "ألم ترَها في القاعة المركزية في وقت سابق أيضاً؟"
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 86,
+      "sentences": [
+        {
+          "text": "SHE DEFINITELY LOOKED MUCHMORE COMFORTABLETHAN WHENSHEWAS UNDER o YOUR HIGHNESS. AS EXPECTED,SINCE SHE ESCAPED A PLACE OVERFLOWING WITH WORK, HER FACE HAS COMPLETELY BRIGHTENED UP...!",
+          "confidence": 0.295,
+          "text_ar": "بدت بالتأكيد أكثر ارتياحة بكثير مقارنة بما كانت عليه عندما كانت تحت إمرتك يا سموّك. كما هو متوقع، بما أنها هربت من مكان يغلي بالعمل، فقد أشرق وجهها تماماً...!"
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "RECOLLECTION",
+          "confidence": 0.995,
+          "text_ar": "استرجاع الذكريات"
+        },
+        {
+          "text": "MAGUSTOON.ORG AGiUS",
+          "confidence": 0.789,
+          "text_ar": "magustoon.org"
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 88,
+      "sentences": []
+    },
+    {
+      "page": 86,
+      "image_id": 89,
+      "sentences": []
+    },
+    {
+      "page": 87,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "WHAT? KEEP TALKING.",
+          "confidence": 0.972,
+          "text_ar": "ماذا؟ تابع حديثك."
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 91,
+      "sentences": [
+        {
+          "text": "HA.HA.HA. NEVERMIND.",
+          "confidence": 0.988,
+          "text_ar": "ها.ها.ها. لا تهتم."
+        },
+        {
+          "text": "I WILL KEEP A CLOSER EYE ON HOUSE ELIAS. WELL THEN!",
+          "confidence": 0.941,
+          "text_ar": "سأراقب آل إلياس عن كثب. حسناً إذن!"
+        },
+        {
+          "text": "Hahaha...",
+          "confidence": 0.923,
+          "text_ar": "هاهاها..."
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 92,
+      "sentences": []
+    },
+    {
+      "page": 90,
+      "image_id": 93,
+      "sentences": [
+        {
+          "text": "WELL, IT'S A RELIEF THAT SHE'S DOING WELL,BUT...",
+          "confidence": 0.89,
+          "text_ar": "حسناً، إنه لأمر مريح أنها تبلي بلاءً حسناً، لكن..."
+        }
+      ]
+    },
+    {
+      "page": 91,
+      "image_id": 94,
+      "sentences": [
+        {
+          "text": "I GUESS SHE WAS A BIT FLUSTERED TO RUNINTO MESO SUDDENLY EARLIER.",
+          "confidence": 0.933,
+          "text_ar": "أعتقد أنها ارتبكت قليلاً عندما اصطدمت بي فجأة في وقت سابق."
+        }
+      ]
+    },
+    {
+      "page": 92,
+      "image_id": 95,
+      "sentences": []
+    },
+    {
+      "page": 93,
+      "image_id": 96,
+      "sentences": [
+        {
+          "text": "THEN AGAIN,I DIDN'T EXPECT TO SEE HER THERE EITHER.",
+          "confidence": 0.942,
+          "text_ar": "وعلى العموم، أنا لم أكن أتوقع رؤيتها هناك أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 94,
+      "image_id": 97,
+      "sentences": [
+        {
+          "text": "HOWEVER,SEEINGHER TODAYSHOULDGIVEME ENOUGH STRENGTHTO HOLD OUTFORA FEW MORE DAYS.",
+          "confidence": 0.912,
+          "text_ar": "ومع ذلك، فإن رؤيتها اليوم يجب أن تمنحني القوة الكافية للاحتمال لبضعة أيام أخرى."
+        }
+      ]
+    },
+    {
+      "page": 95,
+      "image_id": 98,
+      "sentences": []
+    },
+    {
+      "page": 96,
+      "image_id": 99,
+      "sentences": [
+        {
+          "text": "THANK YOU FOR READING!MAKESURE TOVISITOUR WEBSITE MAGUSTOON.ORGFOR MOREEXCITING SERIES!",
+          "confidence": 0.931,
+          "text_ar": "شكراً للقراءة! تأكدوا من زيارة موقعنا magustoon.org للمزيد من السلسلات المشوقة!"
+        }
+      ]
+    },
+    {
+      "page": 97,
+      "image_id": 100,
+      "sentences": [
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.943,
+          "text_ar": "كينيز مالك حقوق الويبستون"
+        }
+      ]
+    }
+  ]
+}
