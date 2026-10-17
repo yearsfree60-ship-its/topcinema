@@ -1,0 +1,679 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "183",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "IMPORTANT NOTICE 三 TO OUR READERS",
+          "confidence": 0.307,
+          "text_ar": "تنبيه مهم إلى قرائنا"
+        },
+        {
+          "text": "Please read only on our OFFICIAL WEBSITES to support us!",
+          "confidence": 0.944,
+          "text_ar": "يرجى القراءة حصرياً على مواقعنا الرسمية لدعمنا!"
+        },
+        {
+          "text": "The only official websites of our team are coffeemanga.ink coffeemanga.io Allother websites are FAKE and UNAUTHORIZED.",
+          "confidence": 0.928,
+          "text_ar": "المواقع الرسمية الوحيدة لفريقنا هي coffeemanga.ink و coffeemanga.io، وكل المواقع الأخرى مزيفة وغير مصرح بها."
+        },
+        {
+          "text": "Fako wobites may stoal your porsonal Informitlon,display harmfol ads, or scam you nut of your maney. Protect yourself and yourdata!",
+          "confidence": 0.827,
+          "text_ar": "قد تسرق المواقع المزيفة معلوماتك الشخصية، أو تعرض إعلانات ضارة، أو تسرق أموالك. احمِ نفسك وبياناتك!"
+        },
+        {
+          "text": "WARNING",
+          "confidence": 0.997,
+          "text_ar": "تحذير"
+        },
+        {
+          "text": "INFORMATION THERT",
+          "confidence": 0.861,
+          "text_ar": "سرقة المعلومات"
+        },
+        {
+          "text": "MALICIOUS ADS",
+          "confidence": 0.915,
+          "text_ar": "إعلانات خبيثة"
+        },
+        {
+          "text": "PAYMENT SCAMS",
+          "confidence": 0.936,
+          "text_ar": "عمليات احتيال في الدفع"
+        },
+        {
+          "text": "Your supportkeops us going and hops us bring you better chapters every day!",
+          "confidence": 0.858,
+          "text_ar": "دعمكم يدفعنا للاستمرار ويساعدنا في تقديم فصول أفضل كل يوم!"
+        },
+        {
+          "text": "Stay safe and happy reading!",
+          "confidence": 0.963,
+          "text_ar": "ابقوا آمنين وقراءة ممتعة!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "MYDAUGHTERIS ALSOPARTICIPATING IN THE SELECTION THIS TIME.",
+          "confidence": 0.967,
+          "text_ar": "ابنتي تشارك في الاختيار هذه المرة أيضاً."
+        },
+        {
+          "text": "IWAS WONDERING, YOURMAJESTY,IFYOU ALREADYHAVESOMEONE IN MIND FOR THE SECOND PRINCE'S MATCH?",
+          "confidence": 0.936,
+          "text_ar": "كنت أتساءل يا جلالة الملك، ألديك شخص معين في ذهنك لخطبة الأمير الثاني؟"
+        },
+        {
+          "text": "SOMEONE ALREADY CHOSEN? THE SELECTION MUST BE FAIRER THAN ANYTHING ELSE.",
+          "confidence": 0.959,
+          "text_ar": "أتم اختيار شخص مسبقاً؟ يجب أن يكون الاختيار عادلاً فوق كل اعتبار."
+        },
+        {
+          "text": "EVEN SO, ONE CAN'T HELP BUT WORRY ABOUT A BIAS TOWARD A PERSONAL FAVORITE.",
+          "confidence": 0.927,
+          "text_ar": "مع ذلك، لا يمكن للمرء إلا أن يقلق بشأن الانحياز نحو مفضل شخصي."
+        },
+        {
+          "text": "YOUR WORDS ARE ENTIRELY CORRECT, YOUR MAJESTY",
+          "confidence": 0.911,
+          "text_ar": "كلامك صحيح تماماً يا جلالة الملك."
+        },
+        {
+          "text": "LOOK AT HER.SHE'S BASICALLYSAYINGIF / WANT HER FAVOR,",
+          "confidence": 0.939,
+          "text_ar": "انظر إليها. إنها تقريباً تقول إن كنت أُريد حظوتها،"
+        },
+        {
+          "text": "/NEED TO WORK HARDERTOMAKETHINGS AND SERVE HER! WHAT AN OLD FOX!",
+          "confidence": 0.915,
+          "text_ar": "فيلزم أن أعمل بجهد أكبر لأصنع الأشياء وأخدمها! يا لها من ثعلبة عجوز!"
+        },
+        {
+          "text": "BY THE WAY, ABOUTYOUR DAUGHTER..",
+          "confidence": 0.936,
+          "text_ar": "بالمناسبة، بخصوص ابنتك..."
+        },
+        {
+          "text": "DIDN'T HER FIANCE CALL OFF THE WEDDING RIGHT BEFORE THE CEREMONY LAST YEAR?",
+          "confidence": 0.947,
+          "text_ar": "ألم يفسخ خطيبها الزواج قبيل المراسم مباشرة العام الماضي؟"
+        },
+        {
+          "text": "REARTHI",
+          "confidence": 0.849,
+          "text_ar": "هكذا إذن!"
+        },
+        {
+          "text": "A FLAW LIKE THAT IS HARDLY A STAIN.",
+          "confidence": 0.937,
+          "text_ar": "عيب كهذا بالكاد يُعد وصمة."
+        },
+        {
+          "text": "A PRINCE WHOIS A BASTARD CHILD DARES TO GO THROUGH THE CROWN PRINCEVERIFICATION PROCESS...",
+          "confidence": 0.944,
+          "text_ar": "أَميرٌ لقيطٌ يتجرأ على خوض عملية التحقق من أهلية ولي العهد..."
+        },
+        {
+          "text": "山 HUP!",
+          "confidence": 0.43,
+          "text_ar": "هاه!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "MGREAD.I0",
+          "confidence": 0.906,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "E I HAVESOMETHING TO TELL YOU BRIEFLY YOURMAJESTY",
+          "confidence": 0.175,
+          "text_ar": "لدي أمر لأخبرك به بإيجاز يا جلالة الملك."
+        },
+        {
+          "text": "GO AHEAD.",
+          "confidence": 0.98,
+          "text_ar": "تفضل بالحديث."
+        },
+        {
+          "text": "站 2 I AM TOLD THAT THEPOSITIONOFVICE MINISTER OFFINANCE, WHICHUSED TO BE PRINCE FRANZ'S SEAT,",
+          "confidence": 0.155,
+          "text_ar": "يُقال لي إن منصب نائب وزير المالية، الذي كان مقعد الأمير فرانز سابقاً،"
+        },
+        {
+          "text": "HAS BEEN SLATED FOR SOMEONE ON THE SECOND PRINCE'S SIDE,YOUR 站 MAJESTY.",
+          "confidence": 0.843,
+          "text_ar": "قد تم تخصيصه لشخص يتبع معسكر الأمير الثاني، يا جلالة الملك."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.992,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "A BASTARD DARES TO TAKE MY OWNCHILD'S PLACE?",
+          "confidence": 0.953,
+          "text_ar": "كيف يتجرأ لقيط على أخذ مكان طفلي؟"
+        },
+        {
+          "text": "THEY SAY IT WAS QUIETLY ANNOUNCED AS CLASSIFIEDINFORMATIONAT THE BEGINNING OF THE MONTH.",
+          "confidence": 0.887,
+          "text_ar": "يقولون إنه تم الإعلان عن ذلك بهدوء كمعلومات سرية في بداية الشهر."
+        },
+        {
+          "text": "THE BEGINNING OFTHE MONTH MEANS TWO WEEKS AGO,ANDNO ONE TOLD MEABOUT THIS UNTIL NOW?",
+          "confidence": 0.927,
+          "text_ar": "بداية الشهر تعني قبل أسبوعين، ولم يخبرني أحد بهذا حتى الآن؟"
+        },
+        {
+          "text": "A SHORT WHILE LATER.",
+          "confidence": 0.917,
+          "text_ar": "بعد فترة قصيرة."
+        },
+        {
+          "text": "MYBROTHER HASPLANTED MORE THANAFEWMENIN THE PALACE,SO HOWDOES THIS MAKE ANY SENSE?",
+          "confidence": 0.952,
+          "text_ar": "لقد زرع أخي عدداً غير قليل من الرجال في القصر، فكيف يُعقل هذا؟"
+        },
+        {
+          "text": "IT SEEMS IT'S BECAUSE IT HAS BEEN ALONG TIMESINCE THE DUKE OFTOULOUSE WAS LAST ABLE TO ENTER THE PALACE.",
+          "confidence": 0.95,
+          "text_ar": "يبدو أن السبب هو مضي وقت طويل منذ آخر مرة استطاع فيها دوق تولوز دخول القصر."
+        },
+        {
+          "text": "WHAT ABOUT THE THIRDPRINCE?",
+          "confidence": 0.934,
+          "text_ar": "ماذا عن الأمير الثالث؟"
+        },
+        {
+          "text": "WHY HASN'T THERE BEEN ANYWORD FROMJOSEF?",
+          "confidence": 0.945,
+          "text_ar": "لماذا لا توجد أي أخبار من جوزيف؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "MeREAD.I0",
+          "confidence": 0.872,
+          "text_ar": "MeREAD.IO"
+        },
+        {
+          "text": "IT SEEMS HE HAS BEENOVERWHELMED WITHWORKLATELY.",
+          "confidence": 0.966,
+          "text_ar": "يبدو أنه غارق في العمل مؤخراً."
+        },
+        {
+          "text": "AFTER ALL,THE THIRD PRINCE HAS BEEN HANDLING THECOMPLAINTS FROM THE ARISTOCRATICFACTION THAT PRINCE FRANZ USED TO TAKE CARE OF.",
+          "confidence": 0.928,
+          "text_ar": "ففي النهاية، كان الأمير الثالث يتعامل مع شكاوى الفصيل الارستقراطي التي اعتاد الأمير فرانز الاهتمام بها."
+        },
+        {
+          "text": "TRUE, JOSEF'S CAPACITY ISRATHER SMALL.",
+          "confidence": 0.952,
+          "text_ar": "صحيح، قدرة جوزيف محدودة بعض الشيء."
+        },
+        {
+          "text": "TELL THE DUKE OF TOULOUSEIMMEDIATELY THAT WE SHOULD MEET AT HISPRIVATE RESIDENCE. HIS PRIVATE RESIDENCE. JOSEF, TOO.",
+          "confidence": 0.928,
+          "text_ar": "أبلغ دوق تولوز فوراً أنه ينبغي أن نلتقي في مقره الخاص. مقره الخاص. وجوزيف أيضاً."
+        },
+        {
+          "text": "YES,YOUR MAJESTY.",
+          "confidence": 0.937,
+          "text_ar": "أمرك يا جلالة الملك."
+        },
+        {
+          "text": "OH! THAT WINE.",
+          "confidence": 0.974,
+          "text_ar": "أوه! تلك النمذذة من النبيذ."
+        },
+        {
+          "text": "WHY,IS THERE A PROBLEM?",
+          "confidence": 0.949,
+          "text_ar": "لماذا، أهناك مشكلة؟"
+        },
+        {
+          "text": "IT'S A WINE WITH A STRONG MEDICINAL EFFECT THAT UNLOCKS THE NIGHT'S BOLTS...HMM. WHAT SHOULD I DO?",
+          "confidence": 0.926,
+          "text_ar": "إنه نبيذ ذو تأثير طبي قوي يفك أقفال الليل... اممم. ماذا علي أن أفعَل؟"
+        },
+        {
+          "text": "DOES IT TASTE BAD?",
+          "confidence": 0.924,
+          "text_ar": "أطعمته سيئة؟"
+        },
+        {
+          "text": "Well....",
+          "confidence": 0.868,
+          "text_ar": "حسناً..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "MGREAD.I0",
+          "confidence": 0.906,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "BUT WHAT OF IT? IT'S JUST A MEDICINAL EFFECT!",
+          "confidence": 0.929,
+          "text_ar": "ولكن ماذا في ذلك؟ إنه مجرد تأثير طبي!"
+        },
+        {
+          "text": "IT'S ONLY ONE GLASS,SOIT WOULD BE STRANGENOTTODRINKIT JUST BECAUSE OF THAT.",
+          "confidence": 0.914,
+          "text_ar": "إنه كأس واحد فقط، لذا سيكون غريباً ألا نشربه لمجرد ذلك."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.938,
+          "text_ar": "اقرأ هذه السلسلة حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "IT SEEMS THERE REALLY IS A PROBLEM WITH THAT WINE.",
+          "confidence": 0.932,
+          "text_ar": "يبدو أن هناك مشكلة حقاً في ذلك النبيذ."
+        },
+        {
+          "text": "IT'S NOT A PROBLEM, IT'S JUST A MEDICINAL WINE FOR THE EYES THAT JOSH MADE FOR ME.",
+          "confidence": 0.937,
+          "text_ar": "ليست مشكلة، إنه ببساطة نبيذ طبي للعين صنعه لي جوش."
+        },
+        {
+          "text": "WILL YOUBE OKAY WITH IT?",
+          "confidence": 0.955,
+          "text_ar": "هل ستكون على ما يرام معه؟"
+        },
+        {
+          "text": "IFYOU CAN DRINK IT, THEN THERE'S NO REASONICAN'T.",
+          "confidence": 0.924,
+          "text_ar": "إن كنت تستطيع شربه، فلا يوجد سبب يمنعني."
+        },
+        {
+          "text": "THOUGH IF IT'S YOUR MEDICINAL WINE, PERHAPS IT'S BETTER IF IDON'T DRINK IT.",
+          "confidence": 0.907,
+          "text_ar": "مع أنني إن كان نبيذك الطبي، ربما كان أفضل ألا أشرَبَه."
+        },
+        {
+          "text": "NO, IT'S FINE. ONE GLASS IS PERFECTLY OKAY.IT TASTES GOOD,TOO.",
+          "confidence": 0.931,
+          "text_ar": "لا، لا بأس. كأس واحد لا بأس به تماماً. طعمه جيد أيضاً."
+        },
+        {
+          "text": "LET'S HAVE A DRINK.",
+          "confidence": 0.95,
+          "text_ar": "لنأخذ رشفة."
+        },
+        {
+          "text": "HERE, LIKE THIS.",
+          "confidence": 0.966,
+          "text_ar": "هنا، هكذا."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.979,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "WHEN YOU OFFER COMFORT,YOUHAVE TO CLINK GLASSES!",
+          "confidence": 0.929,
+          "text_ar": "عندما تقدم المواساة، يجب أن تقرع الكؤوس ببعضها!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "MGREAD.IO",
+          "confidence": 0.939,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "OLETSCANS.COM",
+          "confidence": 0.946,
+          "text_ar": "OLETSCANS.COM"
+        },
+        {
+          "text": "LET'SDO THAT, THEN.",
+          "confidence": 0.965,
+          "text_ar": "لننفعل ذلك إذن."
+        },
+        {
+          "text": "WELL.DO YOU FEEL ANYTHING STRANGE?",
+          "confidence": 0.926,
+          "text_ar": "حسناً. هل تشعر بأي شيء غريب؟"
+        },
+        {
+          "text": "ARE YOU ASKING IF MYVISIONCLEAREDUP IMMEDIATELY THANKS TO THE MEDICINAL EFFECT?",
+          "confidence": 0.961,
+          "text_ar": "أَتسأل إن كان بصري قد صفى فوراً بفضل التأثير الطبي؟"
+        },
+        {
+          "text": "AH.HAHA.",
+          "confidence": 0.996,
+          "text_ar": "آه. هاها."
+        },
+        {
+          "text": "I GUESSIT SOUNDS THAT WAY. NEVER MIND.",
+          "confidence": 0.914,
+          "text_ar": "أظن أن الأمر يبدو هكذا. لا بأس."
+        },
+        {
+          "text": "OH DEAR.",
+          "confidence": 0.947,
+          "text_ar": "يا إلهي."
+        },
+        {
+          "text": "HAS A SINGLE GLASS OF WINE ALWAYS FELT THIS HOT INSIDE?",
+          "confidence": 0.925,
+          "text_ar": "أكان كأس نبيذ واحد حاراً هكذا بالداخل دائماً؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "MGREAD.I0",
+          "confidence": 0.864,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "READ THIS SERES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.909,
+          "text_ar": "اقرأ هذه السلسلة حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "DAMNIT./ SHOULDNT HAVE HAD THAT.",
+          "confidence": 0.93,
+          "text_ar": "تباً. ما كان لي أن أتناوله."
+        },
+        {
+          "text": "WHAT'S WRONG?",
+          "confidence": 0.981,
+          "text_ar": "ما الخطب؟"
+        },
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.926,
+          "text_ar": "ما الأمر؟"
+        },
+        {
+          "text": "YOULOOK UNCOMFORTABLE.",
+          "confidence": 0.863,
+          "text_ar": "تبدو غير مرتاح."
+        },
+        {
+          "text": "NOT AT ALL. IT'S LATE.",
+          "confidence": 0.965,
+          "text_ar": "على الإطلاق. لقد تاخ الوقت."
+        },
+        {
+          "text": "OH, ALREADY?",
+          "confidence": 0.955,
+          "text_ar": "أهذا كل شيء؟"
+        },
+        {
+          "text": "WE WON'T EVEN BE ABLE TO SEE EACH OTHER PROPERLY AFTER TODAY, YOU KNOW.",
+          "confidence": 0.923,
+          "text_ar": "لن نتمكن حتى من رؤية بعضنا بشكل صحيح بعد اليوم، أتعلم."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "MeREAD.IO",
+          "confidence": 0.849,
+          "text_ar": "MeREAD.IO"
+        },
+        {
+          "text": "IF WE DON'T CATCH THE MAIN CULPRIT, DO WE HAVE TO KEEP LIVING LIKE THIS?",
+          "confidence": 0.954,
+          "text_ar": "إن لم نقبض على الجاني الرئيسي، أينبغي علينا الاستمرار في العيش هكذا؟"
+        },
+        {
+          "text": "I WILL USE EVERY RESOURCEIHAVE.SO,THE CULPRIT WILL DEFINITELY BE CAUGHT.",
+          "confidence": 0.975,
+          "text_ar": "سأستعين بكل وسيلة أملكها. لذا، سيُقبض على الجاني حتماً."
+        },
+        {
+          "text": "WELL.IF YOUR HIGHNESS SAYS YOU'LL DO IT,I FEEL LIKE YOU ACTUALLY WILL....",
+          "confidence": 0.906,
+          "text_ar": "حسناً. إذا صرح سموك بأنك ستفعل ذلك، فأنا أشعر أنك ستفعل حقاً..."
+        },
+        {
+          "text": "ARE YOU REALLY JUST GOING?",
+          "confidence": 0.945,
+          "text_ar": "أسترحل هكذا حقاً؟"
+        },
+        {
+          "text": "BECAUSE IT'S... LATE. IT'S...LATE.",
+          "confidence": 0.875,
+          "text_ar": "لأنه... متأخر. إنه... متأخر."
+        },
+        {
+          "text": "I'LL TAKE MY LEAVE NOW.",
+          "confidence": 0.958,
+          "text_ar": "سأستأذن بالانصراف الآن."
+        },
+        {
+          "text": "GOOD GRIEF. /CAN FEEL EVERY SINGLE NERVE IN MY BODY. DAMN IT.",
+          "confidence": 0.906,
+          "text_ar": "يا له من أمر مزعج. يمكنني الشعور بكل عصب في جسدي. تباً."
+        },
+        {
+          "text": "IFILET MY GUARD DOWN EVEN A LITTLE, I FEEL LIKE I'LL LOSE CONTROL. CURSE IT.",
+          "confidence": 0.916,
+          "text_ar": "إن خففت حذري ولو قليلاً، أشعر أنني سأفقد السيطرة. اللعنة."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "MGREAD.I0",
+          "confidence": 0.872,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "LET'S GO. QUICKLY. I NEED TO GET OUT OF HERE!",
+          "confidence": 0.927,
+          "text_ar": "لنذهب. بسرعة. يجب أن أخرج من هنا!"
+        },
+        {
+          "text": "Really. You've just going to leave like this?",
+          "confidence": 0.92,
+          "text_ar": "حقاً. أسترحل هكذا تماماً؟"
+        },
+        {
+          "text": "YOu SHOULD ATLEAST SAY GOODBYEPROPERLY BEFORE YOU GO.",
+          "confidence": 0.888,
+          "text_ar": "يجب أن تودعني بشكل لائق قبل أن تذهب."
+        },
+        {
+          "text": "READ THIS VIOLETSCANS.COM",
+          "confidence": 0.958,
+          "text_ar": "اقرأ حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "OH DEAR.",
+          "confidence": 0.967,
+          "text_ar": "يا له من أمر."
+        },
+        {
+          "text": "RIGHT. / SHOULD SAY GOODBYE.",
+          "confidence": 0.972,
+          "text_ar": "صحيح. ينبغي علي أن أودعك."
+        },
+        {
+          "text": "YOU'RE ACTING VERY STRANGE TODAY...",
+          "confidence": 0.933,
+          "text_ar": "تصرفاتك غريبة جداً اليوم..."
+        },
+        {
+          "text": "HUH? DOES THE WINE NOT AGREE WITH YOU BY ANY CHANCE?",
+          "confidence": 0.927,
+          "text_ar": "هاه؟ ألا يوافقك النبيذ صدفة؟"
+        },
+        {
+          "text": "NOT AT ALL.",
+          "confidence": 0.986,
+          "text_ar": "على الإطلاق."
+        },
+        {
+          "text": "THEN WHAT IS IT?",
+          "confidence": 0.985,
+          "text_ar": "إذن ما الأمر؟"
+        },
+        {
+          "text": "WHERE DID ALL YOUR USUAL EASYGOING CHARM GO? WHY ARE YOU SO RIGID?",
+          "confidence": 0.938,
+          "text_ar": "أين ذهبت كل جاذبيتك المعتادة؟ لما أنت متصلب هكذا؟"
+        },
+        {
+          "text": "ME? RIGID. NOT A CHANCE.",
+          "confidence": 0.928,
+          "text_ar": "أنا؟ متصلب. مستحيل."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "MeREAD.I0",
+          "confidence": 0.828,
+          "text_ar": "MeREAD.IO"
+        },
+        {
+          "text": "COULD IT BE THAT HE DISLIKES BEING WITH ME NOW?",
+          "confidence": 0.921,
+          "text_ar": "أيمكن أنه بات يكره التواجد معي الآن؟"
+        },
+        {
+          "text": "HAVE HIS FEELINGS FOR ME ALREADY FADED?",
+          "confidence": 0.951,
+          "text_ar": "أفتيرت مشاعره تجاهي بالفعل؟"
+        },
+        {
+          "text": "SHALL WE SAY GOODBYE, THEN?",
+          "confidence": 0.958,
+          "text_ar": "ألنودع بعضنا إذن؟"
+        },
+        {
+          "text": "IWILL MISS YOU, TERA.",
+          "confidence": 0.915,
+          "text_ar": "سأشتاق إليك يا تارا."
+        },
+        {
+          "text": "I WILL ASSIGN A GUARD TO YOU.IN AN EMERGENCY, CONTACT ME THROUGH THAT GUARD.",
+          "confidence": 0.933,
+          "text_ar": "سأخصص حارساً لك. في حالات الطوارئ، تواصل معي عبر ذلك الحارس."
+        },
+        {
+          "text": "ICAN'T REVEAL THE GUARD'S IDENTITY JUST YET.",
+          "confidence": 0.945,
+          "text_ar": "لا يمكنني الكشف عن هوية الحارس الآن."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.899,
+          "text_ar": "اقرأ هذه السلسلة حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "TERA?",
+          "confidence": 0.993,
+          "text_ar": "تارا؟"
+        },
+        {
+          "text": "WHY... ARE YOU ACTING LIKE THIS?",
+          "confidence": 0.933,
+          "text_ar": "لماذا... تتصرف هكذا؟"
+        },
+        {
+          "text": "I HAVE ALOT TO SAY, BUTI WON'T SAY IT.",
+          "confidence": 0.901,
+          "text_ar": "لدي الكثير لأقوله، لكنني لن أقوله."
+        },
+        {
+          "text": "YOU'RE ANGRY BECAUSE OF MY ATTITUDE.",
+          "confidence": 0.944,
+          "text_ar": "أنت غاضب بسبب سلوكي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "MGREAD.IO",
+          "confidence": 0.853,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "WHAT'S WRONG WITH YOU, SERIOUSLY?",
+          "confidence": 0.85,
+          "text_ar": "ما خطبك بجدية؟"
+        },
+        {
+          "text": "IT'S NOTHING.",
+          "confidence": 0.914,
+          "text_ar": "ليس الأمر شيئاً."
+        },
+        {
+          "text": "IT DOESN'T SEEM LIKE NOTHING TO ME.",
+          "confidence": 0.92,
+          "text_ar": "لا يبدو لي كشيء."
+        },
+        {
+          "text": "WHAT IS IT, EXACTLY?",
+          "confidence": 0.956,
+          "text_ar": "ما هو بالتحديد؟"
+        },
+        {
+          "text": "The cause is.Me.",
+          "confidence": 0.792,
+          "text_ar": "السبب هو أنا."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.882,
+          "text_ar": "اقرأ هذه السلسلة حصرياً على VIOLETSCANS.COM"
+        }
+      ]
+    }
+  ]
+}
