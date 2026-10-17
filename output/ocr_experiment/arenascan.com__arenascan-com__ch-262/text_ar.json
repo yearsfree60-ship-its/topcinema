@@ -1,0 +1,390 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "262",
+  "manga_title": "My Wife Is From a Thousand Years Ago 262",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "ARE YOU NO AREYOUNO LONGER AFRAID THAT I WOULD RUN AWAY?",
+          "confidence": 0.793,
+          "text_ar": "ألستِ خائفةً بعد الآن من أن أهرب؟"
+        },
+        {
+          "text": "HM? I WAS NEVER WORRIED ABOUT THAT.",
+          "confidence": 0.905,
+          "text_ar": "هاه؟ لم أكن قلقةً بشأن ذلك أبداً."
+        },
+        {
+          "text": "YOU WERE IN A HURRY TO GET OUR MARRIAGE CERTIFICATE THOUGH.",
+          "confidence": 0.913,
+          "text_ar": "مع ذلك، كنتِ في عجلةٍ من أمركِ للحصول على عقد زواجنا."
+        },
+        {
+          "text": "WELL,THE WEATHER WAS GOOD,SO WHY N'OT?",
+          "confidence": 0.924,
+          "text_ar": "حسناً، الطقس كان جميلاً، فلمَ لا؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THE WEATHER IS GREAT INDEED.",
+          "confidence": 0.964,
+          "text_ar": "الطقس رائعٌ حقاً."
+        },
+        {
+          "text": "Xu QING.",
+          "confidence": 0.918,
+          "text_ar": "شو تشينغ."
+        },
+        {
+          "text": "I REALLY LIKE YOU.",
+          "confidence": 0.891,
+          "text_ar": "أنا معجبٌ بكِ حقاً."
+        },
+        {
+          "text": "TOO. ME",
+          "confidence": 0.959,
+          "text_ar": "وأنا أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WHAT A MAGICAL CERTIFICATE, A MAR- RIAGE CERTIFICATE ISSUED BY THE GOVERNMENT,",
+          "confidence": 0.957,
+          "text_ar": "يا له من شهادة سحرية، عقد زواجٍ صادرٌ عن الحكومة!"
+        },
+        {
+          "text": "Jiang He Certificate holder 贴 登记日期 全 Jiang He Name 国籍 身份证件号",
+          "confidence": 0.522,
+          "text_ar": "حامل الشهادة: جيانغ هي"
+        },
+        {
+          "text": "性别 出生日",
+          "confidence": 0.995,
+          "text_ar": "الجنس وتاريخ الميلاد"
+        },
+        {
+          "text": "Xu Qing Name 国籍",
+          "confidence": 0.984,
+          "text_ar": "شو تشينغ، الجنسية"
+        },
+        {
+          "text": "UTTLE JIANG HE FROMKAI YUAN",
+          "confidence": 0.927,
+          "text_ar": "جيانغ هي الصغير القادم من كاي يوان"
+        },
+        {
+          "text": "00 Little Jiang He from Kai Yuan 啵",
+          "confidence": 0.471,
+          "text_ar": "جيانغ هي الصغير من كاي يوان (قبيل)"
+        },
+        {
+          "text": "记日期",
+          "confidence": 0.997,
+          "text_ar": "تاريخ التسجيل"
+        },
+        {
+          "text": "婚证字号",
+          "confidence": 0.995,
+          "text_ar": "رقم شهادة الزواج"
+        },
+        {
+          "text": "YOU'VE PICKED UP BAD HABITS THAT'S UNIQUE TO MODERN PEOPLE.",
+          "confidence": 0.937,
+          "text_ar": "لقد اكتسبتِ عاداتٍ سيئةً خاصةً بالناس المعاصرين."
+        },
+        {
+          "text": "I'M WILLING!",
+          "confidence": 0.977,
+          "text_ar": "أنا موافق!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "HOW CAN I DEMAND ANYTHINGFROMTHE LITTLE OLD LADY FROM THE TANG DYNASTY?",
+          "confidence": 0.941,
+          "text_ar": "كيف لي أن أطلب أي شيءٍ من السيدة العجوز الصغرى القادمة من عهد أسرة تانغ؟"
+        },
+        {
+          "text": "日報 0# 宝1#84292#",
+          "confidence": 0.159,
+          "text_ar": "جريدة"
+        },
+        {
+          "text": "UNCLE ZHAO!",
+          "confidence": 0.985,
+          "text_ar": "العم تشاو!"
+        },
+        {
+          "text": "YOu HERE, SHOULD SMOKE THESE INSTEAD.",
+          "confidence": 0.602,
+          "text_ar": "بما أنك هنا، عليك تدخين هذين بدلاً من ذلك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "HEHE QINGZI, YOU'RE THOUGHTFUL.",
+          "confidence": 0.862,
+          "text_ar": "هيه، تشينغزي، أنتِ مدروسة."
+        },
+        {
+          "text": "WHY DID YOU GIVE HIM TWO PACKS?",
+          "confidence": 0.91,
+          "text_ar": "لماذا أعطيته علبتين؟"
+        },
+        {
+          "text": "HE HAS HELPED US A LOT.PREVIOUSLY,WHEN I WAS TRYING TO GET YOU AN CASUALLY MENT- ACCESS CARD,I IONED TO AUNTIE CHENG THAT YOU DIDN'T HAVE YOUR ID MADE YET, AND THAT I HAD TO GET IT DONE BEFORE WE COULD GET MARRIED.AUNTIE CHENG MUST HAVE MENTIONED iT TO UNCLE ZHAO...",
+          "confidence": 0.834,
+          "text_ar": "لقد ساعدنا كثيراً. سابقاً، عندما كنت أحاول الحصول على بطاقة دخول لكِ عرضاً، ذكرتُ للعمة تشينغ أنكِ لم تستخرجي بطاقة هويتكِ بعد، وأنه يجب علي إنهاء ذلك قبل أن نتزوج. لا بد أن العمة تشينغ ذكرت ذلك للعم تشاو..."
+        },
+        {
+          "text": "ALTHOUGH THEY MAY NOT FULLY UNDERSTAND WHAT'S GOING ON,WHEN THE POLICE CAME BY, THEY POLICE CAME BY,THEY MUST'VE HAD A'CLEAR MUST'VE HAD A CLEAR CONSCIENCE AND INTENTIONALLY HELPED OUT.",
+          "confidence": 0.896,
+          "text_ar": "على الرغم من أنهما قد لا يفهمان تماماً ما يجري، إلا أنه عندما حضرت الشرطة، لا بد أنهما كانا مرتاحي الضمير وساعدا عن قصد."
+        },
+        {
+          "text": "SHOULD WE GET SOMETHING FOR AUNTIE CHENG TOO?",
+          "confidence": 0.933,
+          "text_ar": "أينبغي أن نحضر شيئاً للعمة تشينغ أيضاً؟"
+        },
+        {
+          "text": "THERE'S NO NEED TO, YOUJUST HAVE TOTUTOR LITTLE YAN FOR HER ASSIGNMENTS WHEN WINTER BREAK ROLLS AROUND.",
+          "confidence": 0.891,
+          "text_ar": "لا داعي لذلك، عليك فقط أن تساعدي يان الصغرى في واجباتها المدرسية عندما تحل عطلة الشتاء."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "Junior-High School Level",
+          "confidence": 0.93,
+          "text_ar": "مستوى المدرسة الإعدادية"
+        },
+        {
+          "text": "Elementary School Level",
+          "confidence": 0.93,
+          "text_ar": "مستوى المدرسة الابتدائية"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "GETTING THE MARRIAGE CERTIFICATE GIVES A FEELING OF RESOLVING A BIG ISSUE. I ALWAYS FEEL SOMETHING STIR- RING IN MY HEART, WANTING TO BE CLOSER TO HIM.",
+          "confidence": 0.918,
+          "text_ar": "الحصول على عقد الزواج يمنح شعوراً بحل مشكلةٍ كبيرة. أشعر دائماً بشيء يضطرب في قلبي، ويهدف لأن يكون أقرب إليه."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "YOU'RE ACTING WEIRD.",
+          "confidence": 0.949,
+          "text_ar": "أنتِ تصرفين بغرابة."
+        },
+        {
+          "text": "I'M ACTING NORMAL.",
+          "confidence": 0.954,
+          "text_ar": "أنا أتصرّف بشكل طبيعي."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IT DOES FEEL LIKE SOMETHING IS OFF....",
+          "confidence": 0.875,
+          "text_ar": "يبدو حقاً وكأن شيئاً ما غير صحيح..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "IT'S ALMOST 3,IT'S TIME TO CHECK MY IN- VESTMENTS.",
+          "confidence": 0.885,
+          "text_ar": "لقد قاربت الساعة الثالثة، حان الوقت للتحقق من استثماراتي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "EVER SINCE UNCLE ZHAO MENTIONED FUNDS, I FELT IT WAS DOOMED, SO I'VE BEEN SLOWLY LIQUIDATING MY SHARES. I'M ALMOST DONE PULLING OUT OF THIS FUND NOW.",
+          "confidence": 0.929,
+          "text_ar": "منذ أن ذكر العم تشاو صناديق الاستثمار، شعرت أنها محكوم عليها بالفشل، لذا كنت أصفي أسهمي ببطء. أنا على وشك الانتهاء من الخروج من هذا الصندوق الآن."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "INCOMING TRANSFER, 50,000 YUAN.",
+          "confidence": 0.94,
+          "text_ar": "تحويل وارد، 50,000 يوان."
+        },
+        {
+          "text": "WHYDID YOU TRANSFER ME SO MUCH MONEY?!",
+          "confidence": 0.889,
+          "text_ar": "لماذا حولت إلي هذا القدر الهائل من المال?!"
+        },
+        {
+          "text": "SINCE YOU'RE PLAYING ONLY THIS FORMOF STOCKS,AND THE LOSSES AREN'TA LOT, YOU CAN USE THIS FUNDTO EARN SOME EXTRA BUDGET FOR GROCERIES.",
+          "confidence": 0.918,
+          "text_ar": "بما أنك تلعب بهذا النوع من الأسهم فقط، والخسائر ليست كبيرة، يمكنك استخدام هذا المبلغ لكسب ميزانية إضافية للبقالة."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "I'VE ALREADY PULLED OUT OF THE STOCK MARKET. STAYING LONGER WOULD ONLY RE- SULT IN LOSSES.",
+          "confidence": 0.919,
+          "text_ar": "لقد خرجت بالفعل من سوق الأسهم. البقاء لفترة أطول لن يؤدي إلا إلى المزيد من الخسائر."
+        },
+        {
+          "text": "I'M LEFT WITH THE REAL ESTATE STOCKS, GUESS ILL JUST HOLD ONTO THEM FOR A WHILE.",
+          "confidence": 0.967,
+          "text_ar": "لقد تبقت لي أسهم العقارات، أظن أنني سأحتفظ بها لفترة من الوقت."
+        },
+        {
+          "text": "HOW DO yOU KNOW? ARE YOU REALLY ABLE TO PREDICT THE FUTURE?",
+          "confidence": 0.754,
+          "text_ar": "كيف عرفت؟ هل أنت قادر حقاً على التنبؤ بالمستقبل؟"
+        },
+        {
+          "text": "SMART PEOPLE ALL KNOW THIS, LITTLE ONE. YOU SHOULD READ 0 ISN'T MORE BOOKS. THIS ABOUTPREDICTING THE FUTURE, IT'S ABOUT UNDERSTANDING THE TRENDS.",
+          "confidence": 0.364,
+          "text_ar": "الأذكياء يعلمون هذا كله، أيها الصغير. يجب عليك قراءة المزيد من الكتب. الأمر لا يتعلق بالتنبؤ بالمستقبل، بل بفهم الاتجاهات."
+        },
+        {
+          "text": "IALSO WISH TO LEARN IT.",
+          "confidence": 0.948,
+          "text_ar": "أتمنى أن أتعلم ذلك أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "HAVEN'T YOU BEEN LEARNING IT THIS WHOLE TIME? UNDERSTANDING THE WORLD, THAT IS.",
+          "confidence": 0.938,
+          "text_ar": "ألم تكن تتعلم ذلك طوال الوقت؟ فهم العالم أعني."
+        },
+        {
+          "text": "BULLSHIT!",
+          "confidence": 0.989,
+          "text_ar": "هراء!"
+        },
+        {
+          "text": "I TAUGHT HIM MARTIAL ARTS, YET HE DOESN'T TEACH ME HOW TO EARN MONEY!",
+          "confidence": 0.943,
+          "text_ar": "لقد علّمته فنون الدفاع عن النفس، ومع ذلك فهو لا يعلمني كيفية جني الأموال!"
+        },
+        {
+          "text": "THE TIMES ARE ALWAYS EVER-CHAN- GING. FOR INSTANCE, CELEBRITIES IN THE PAST WERE ALL THE RAGE AND MADE MONEY EFFORTLESSLY.",
+          "confidence": 0.951,
+          "text_ar": "الأوقات تتغير دائماً. على سبيل المثال، المشاهير في الماضي كانوا يلقون رواجاً كبيراً ويجنون الأموال بلا مجهود."
+        },
+        {
+          "text": "HOWEVER,THE BEGINNINGOF THE DECLINE STARTED WHEN A CERTAIN MOVIE FLOPPED. ALTHOUGH THEY REMAINED POPULAR, THEY WERE ON THEIR DECLINE. MEANWHILE, EMERGING NEWTRENDS TOOK ADVANTAGE OF THIS OPPORTUNITY AND ROSE TO PROMINENCE; AND THAT'S JUST THE WAY OF THE WORLD.",
+          "confidence": 0.937,
+          "text_ar": "مع ذلك، بدأت بداية التراجع عندما فشل فيلم معين. ورغم احتفاظهم بشعبيّتهم، إلا أنهم كانوا في طريقهم للانهيار. وفي الوقت نفسه، استغلت الاتجاهات الجديدة الناشئة هذه الفرصة وبرزت؛ وتلك هي سنة الحياة."
+        },
+        {
+          "text": "THE GENERAL TREND OFTHE WORLD ISVAST AND MIGHTY. THOSE WHO FOLLOW IT PROSPER, WHILE THOSE WHO OPPOSE iT PERISH. THAT'S HOW IT GOES.",
+          "confidence": 0.904,
+          "text_ar": "اتجاه العالم العام واسعٌ وقوي. من يتبعه يزدهر، ومن يعارضه يهلك. هكذا تسير الأمور."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "SINCE YOU'RE SO SMART, HAVE A FRY.",
+          "confidence": 0.918,
+          "text_ar": "بما أنك ذكي جداً، تفضل بتناول رقاقة."
+        },
+        {
+          "text": "薯 地瓜条",
+          "confidence": 0.732,
+          "text_ar": "بطاطا مقلية"
+        },
+        {
+          "text": "薯 地瓜条",
+          "confidence": 0.959,
+          "text_ar": "بطاطا مقلية"
+        },
+        {
+          "text": "I STILL HAVEN'T LEARNED WHAT XU QING MENTIONED, BUT NOW THAT I'M MARRIED, I SHOULD CONSIDER THAT THING...",
+          "confidence": 0.904,
+          "text_ar": "ما زلت لم أتعلم ما ذكرته شو تشينغ، ولكن الآن بعد أن تزوجت، يجب أن أضع في اعتبارى ذلك الأمر..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "WE'LL BE HAVING KIDS AFTER THE WEDDING CEREMONY IS DONESECOND MISS SAID.. ACTUALLY SHE NEVER MENTIONED ABOUT HAVING KIDS.",
+          "confidence": 0.95,
+          "text_ar": "سننجب أطفالاً بعد انتهاء مراسم الزفاف، كما قالت الآنسة الثانية.. في الواقع هي لم تذكر شيئاً قط عن إنجاب الأطفال."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "I'M SCREWED!",
+          "confidence": 0.972,
+          "text_ar": "لقد انتهيت!"
+        }
+      ]
+    }
+  ]
+}
