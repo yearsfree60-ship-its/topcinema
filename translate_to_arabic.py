@@ -357,7 +357,9 @@ async def translate_chapter_to_arabic(chapter_result: dict, output_dir: Path, ou
             if not text_ar:
                 missing += 1
             new_sentences.append({**sentence, "text_ar": text_ar})
-        translated_pages.append({"page": page_num, "sentences": new_sentences})
+        translated_pages.append({"page": page_num,
+                                 **({"image_id": page_entry["image_id"]} if page_entry.get("image_id") is not None else {}),
+                                 "sentences": new_sentences})
     if missing:
         print(f"  ⚠️ [ترجمة] {missing}/{len(items)} جملة لم تعد بترجمة من Gemini (بقيت فارغة بالمخرجات)")
 
