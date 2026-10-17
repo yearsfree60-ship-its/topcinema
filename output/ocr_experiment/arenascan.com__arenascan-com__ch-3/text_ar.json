@@ -1,0 +1,712 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "3",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YEAH? WHAT WAS THAT?",
+          "confidence": 0.946,
+          "text_ar": "حقا؟ ما هذا؟"
+        },
+        {
+          "text": "Y-YOU SAIDI HAVE THE SAME OPPORTUNITY",
+          "confidence": 0.934,
+          "text_ar": "أ-أنت قلت إنني أمتلك نفس الفرصة!"
+        },
+        {
+          "text": "IDID.",
+          "confidence": 0.947,
+          "text_ar": "لقد فعلتُ."
+        },
+        {
+          "text": "BUT YOU NEVER DID ANY- THING FOR THE FAMILY",
+          "confidence": 0.929,
+          "text_ar": "لكنك لم تفعل شيئاً قط من أجل العائلة"
+        },
+        {
+          "text": "SO YOU DON'T HAVE THE SAME OPPORTUNITY AS MY OTHER CHILDREN.",
+          "confidence": 0.891,
+          "text_ar": "لذا أنت لا تمتلك نفس الفرصة التي يمتلكها بقية أبنائي."
+        },
+        {
+          "text": "THAT'S...YOU SAID ANYONE WITH ELIAS BLOOD CAN PARTICIPATE...",
+          "confidence": 0.908,
+          "text_ar": "هذا... لقد قلت إن بإمكان أي شخص يحمل دماء إليوس المشاركة..."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.989,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "A-ALSO!",
+          "confidence": 0.99,
+          "text_ar": "و-وأيضاً!"
+        },
+        {
+          "text": "THE REASON WHY ELIAS WAS ABLE TOGROWTHAT MUCH IS BECAUSE OF TRUST...! STAND",
+          "confidence": 0.888,
+          "text_ar": "السبب في أن إليوس تمكنت من النمو بهذا القدر هو الثقة...! قف"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "WAS SHE THAT GOOD AT SPEAKING?",
+          "confidence": 0.928,
+          "text_ar": "هل كانت بارعة في الكلام إلى هذا الحد؟"
+        },
+        {
+          "text": "I KNOW.THAT VOICEIS...",
+          "confidence": 0.946,
+          "text_ar": "أعلم. ذلك الصوت..."
+        },
+        {
+          "text": "QUIET!",
+          "confidence": 0.986,
+          "text_ar": "اصمت!"
+        },
+        {
+          "text": "PINCH",
+          "confidence": 0.991,
+          "text_ar": "قرصة"
+        },
+        {
+          "text": "DID YOU JUST SAY TRUST?",
+          "confidence": 0.933,
+          "text_ar": "أقلت للتو ثقة؟"
+        },
+        {
+          "text": "THERE'S NO DOUBT IN WHAT ELIAS SAYS.",
+          "confidence": 0.95,
+          "text_ar": "لا شك في ما تقوله عائلة إليوس."
+        },
+        {
+          "text": "I THINK THE SAME GOES FOR THIS ISSUE.",
+          "confidence": 0.941,
+          "text_ar": "أعتقد أن الأمر ينطبق على هذه القضية أيضاً."
+        },
+        {
+          "text": "PHEW",
+          "confidence": 0.994,
+          "text_ar": "ففف"
+        },
+        {
+          "text": "YOU WON'TBE DISAPPOINT- ED.",
+          "confidence": 0.572,
+          "text_ar": "لن تشعر خيبة الأمل."
+        },
+        {
+          "text": "I'LL PROVE IT.",
+          "confidence": 0.934,
+          "text_ar": "سأثبت ذلك."
+        },
+        {
+          "text": "TICKTOCK",
+          "confidence": 0.992,
+          "text_ar": "دقات الساعة"
+        },
+        {
+          "text": "TICKTOCK",
+          "confidence": 0.99,
+          "text_ar": "دقات الساعة"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "TICKTOCK",
+          "confidence": 0.989,
+          "text_ar": "دقات الساعة"
+        },
+        {
+          "text": ".WAS THAT WASTHAT THREE YEARS AGO?",
+          "confidence": 0.886,
+          "text_ar": "هل كان ذلك قبل ثلاث سنوات؟"
+        },
+        {
+          "text": "YES.I WOKEUP AROUND THAT TIME.",
+          "confidence": 0.956,
+          "text_ar": "نعم. لقد استيقظت في ذلك الوقت تقريباً."
+        },
+        {
+          "text": ".THERE'S NOTHING WRONG WITHWHATYOU SAY,BUT...",
+          "confidence": 0.923,
+          "text_ar": "ليس هناك خطأ في ما تقوله، ولكن..."
+        },
+        {
+          "text": "WHEN YOUHAVE DISCUSSED THE TRUTH, YOU SHOULD BEAR THE WEIGHT THAT FOLLOWS IT!",
+          "confidence": 0.846,
+          "text_ar": "حين تناقش الحقيقة، عليك أن تتحمل الوزن الذي يتبعها!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "BUTLER!",
+          "confidence": 0.995,
+          "text_ar": "أيها الخادم!"
+        },
+        {
+          "text": "YES, SIR!",
+          "confidence": 0.947,
+          "text_ar": "أمرك يا سيد!"
+        },
+        {
+          "text": "ALL OF YOU, FOLLOW THE BUTLER AND CHOOSE YOUR TEACHER!",
+          "confidence": 0.936,
+          "text_ar": "لكل الأفراد، اتبعوا الخادم واخترتم معلمكم!"
+        },
+        {
+          "text": "BUTLER, ASK WHAT TAERA WANTSANDASSIGN A TEACHER FOR HER AS WELL.",
+          "confidence": 0.939,
+          "text_ar": "أيها الخادم، اسأل تارا عما تريده وعين معلماً لها أيضاً."
+        },
+        {
+          "text": "YES, SIR.",
+          "confidence": 0.909,
+          "text_ar": "حاضر يا سيد."
+        },
+        {
+          "text": "引 合 N",
+          "confidence": 0.074,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "I'M REALLY EXCITED...I WASN'T SURE IT COULD GO THROUGH.",
+          "confidence": 0.935,
+          "text_ar": "أنا متحمسة حقاً... لم أكن متأكدة من أن الأمور ستنجح."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I THINKI TALKED TOO MUCH.I SHOULD HAVE DONE BETTER...",
+          "confidence": 0.905,
+          "text_ar": "أعتقد أنني تحدثت كثيراً. كان يجب أن أبلي بلاءً أحسن..."
+        },
+        {
+          "text": "Oh~I don't know~I will just do according to what has happened.",
+          "confidence": 0.905,
+          "text_ar": "آه~ لا أعرف~ سأكتفي بالتصرف وفقاً لما حدث."
+        },
+        {
+          "text": "OH, NO,",
+          "confidence": 0.972,
+          "text_ar": "أه، لا،"
+        },
+        {
+          "text": "NOT LIKE THAT, MY LADY!",
+          "confidence": 0.937,
+          "text_ar": "ليس هكذا يا سيدتي!"
+        },
+        {
+          "text": "PEEK",
+          "confidence": 0.984,
+          "text_ar": "نظرة خاطفة"
+        },
+        {
+          "text": "HOW MANY TIMES HAVE I TOLD YOU,IF YOU HOLD IT SO CLOSE, YOUR SHOULDER WILL BE TOO TIGHT FOR WHENYOU SWING IT.",
+          "confidence": 0.881,
+          "text_ar": "كم مرة قلت لكِ، إذا أمسكتِ به بقرب شديد هكذا، ستتصلب كتفيكِ عند التلويح به."
+        },
+        {
+          "text": "LIKE THIS!KEEP IT THIS FAR, OKAY?",
+          "confidence": 0.909,
+          "text_ar": "هكذا! أبقيه على هذه المسافة، حسناً؟"
+        },
+        {
+          "text": "HOLDIT A LITTLE LOWER!",
+          "confidence": 0.937,
+          "text_ar": "أمسكيه بشكل منخفض قليلاً!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "AH,I KNOW!I KNOW!",
+          "confidence": 0.833,
+          "text_ar": "آه، أعلم! أعلم!"
+        },
+        {
+          "text": "tremble",
+          "confidence": 0.995,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "tremble",
+          "confidence": 0.996,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "I-IT'S TOO HEAVY WHAT SHOULD IDO?",
+          "confidence": 0.901,
+          "text_ar": "أ-إنه ثقيل للغاية ماذا أفعل؟"
+        },
+        {
+          "text": "UH..UH! YOU'LLGET HURTIFTHAT KEEPS GOING ON!",
+          "confidence": 0.903,
+          "text_ar": "أه.. أه! ستصابين بأذى إن استمر الأمر على هذا النحو!"
+        },
+        {
+          "text": "JO, BE QUIET! I'LL HAVE A HEADACHE.",
+          "confidence": 0.733,
+          "text_ar": "جو، اصمت! سيصيبني صداع."
+        },
+        {
+          "text": "UGH.",
+          "confidence": 0.982,
+          "text_ar": "أوخ."
+        },
+        {
+          "text": "HUH?!",
+          "confidence": 0.946,
+          "text_ar": "هاه?!"
+        },
+        {
+          "text": "TURN",
+          "confidence": 0.984,
+          "text_ar": "التفات"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HA... REALLY... WHAT'SWRONG WITHYOU,YOU SON OF A BITCH? THERE'S NOTHING ICAN DO...",
+          "confidence": 0.886,
+          "text_ar": "هاه... حقاً... ما خطبك أيها اللعين؟ لا حيلة لي..."
+        },
+        {
+          "text": "STOPCOMPLAINING AND WALK FIVE LAPS! WITH QUICK STEPS!",
+          "confidence": 0.921,
+          "text_ar": "توقف عن التذمر وامشِ خمس دورات! بخطوات سريعة!"
+        },
+        {
+          "text": "PANT PANT",
+          "confidence": 0.922,
+          "text_ar": "لهاث لهاث"
+        },
+        {
+          "text": "HOO",
+          "confidence": 0.957,
+          "text_ar": "هو"
+        },
+        {
+          "text": "HOO",
+          "confidence": 0.95,
+          "text_ar": "هو"
+        },
+        {
+          "text": "I'VE TOLD YOU TO HELP ME, TEACHER, SO I CANPASS THIS...",
+          "confidence": 0.893,
+          "text_ar": "لقد طلبت منك مساعدتي أيها المعلم لكي أتمكن من اجتياز هذا..."
+        },
+        {
+          "text": "YOU... YOU CAN LIVE.FO- CUS!",
+          "confidence": 0.902,
+          "text_ar": "أنت... يمكنك البقاء على قيد الحياة. ركز!"
+        },
+        {
+          "text": "HAH",
+          "confidence": 0.993,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "ALTHOUGH I HEARD THAT I WILL BE BEHE- ADED IN THREE YEARS, THERE'S A WAY!",
+          "confidence": 0.908,
+          "text_ar": "مع أنني سمعت أنني سأُقطع رأسي في غضون ثلاث سنوات، إلا أن هناك طريقة!"
+        },
+        {
+          "text": "TURN",
+          "confidence": 0.993,
+          "text_ar": "التفات"
+        },
+        {
+          "text": "MORE THAN ANY- THING, I HAVE BERNARD.",
+          "confidence": 0.952,
+          "text_ar": "أكثر من أي شيء، لدي برنارد."
+        },
+        {
+          "text": "YEAH!IT'S GOING AS PLANNED!",
+          "confidence": 0.953,
+          "text_ar": "رائع! الأمور تسير وفق الخطط!"
+        },
+        {
+          "text": "GRINI.",
+          "confidence": 0.591,
+          "text_ar": "ابتسامة خبيثة"
+        },
+        {
+          "text": "HUH.",
+          "confidence": 0.962,
+          "text_ar": "هاه."
+        },
+        {
+          "text": "That lady finally went mad..",
+          "confidence": 0.906,
+          "text_ar": "لقد جُنت تلك السيدة حقاً.."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "[Two Months Ago]",
+          "confidence": 0.933,
+          "text_ar": "[قبل شهرين]"
+        },
+        {
+          "text": "WHATARE YOU TALKING ABOUT,MY LADY?",
+          "confidence": 0.961,
+          "text_ar": "عما تتحدثين يا سيدتي؟"
+        },
+        {
+          "text": "OH, COME ON...",
+          "confidence": 0.949,
+          "text_ar": "أه، هيا..."
+        },
+        {
+          "text": "BE MY PERSONAL TRAINER!IWANT TO LEARN MAR- TIAL ARTS!",
+          "confidence": 0.922,
+          "text_ar": "كن مدربي الشخصي! أريد تعلم فنون القتال!"
+        },
+        {
+          "text": "HUH.",
+          "confidence": 0.986,
+          "text_ar": "هاه."
+        },
+        {
+          "text": "WHY ME?",
+          "confidence": 0.902,
+          "text_ar": "لماذا أنا بالتحديد؟"
+        },
+        {
+          "text": "YOU'RE NOT THAT BUSY,",
+          "confidence": 0.909,
+          "text_ar": "أنت لست مشغولاً إلى هذا الحد،"
+        },
+        {
+          "text": "SO YOU CAN TRAINME EVERYDAY!",
+          "confidence": 0.873,
+          "text_ar": "لذا يمكنك تدريبي كل يوم!"
+        },
+        {
+          "text": "WHY? THAT'S BECAUSE YOU'RE GOING TO BE A GENERAL SOON! ONLYA FOOL WILL MISS THIS.",
+          "confidence": 0.909,
+          "text_ar": "لماذا؟ لأنك ستصبح جنرالاً قريباً! وحد الأحمق من يفوت هذه الفرصة."
+        },
+        {
+          "text": "I'DLOVE TO HAVE THE SUPPORT OFA GREAT GENERAL, ANYWAY!",
+          "confidence": 0.957,
+          "text_ar": "يسعدني حقاً الحصول على دعم جنرال عظيم، على أي حال!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "MYLADYI CAN'T UNDERSTAND WHATYOU'RE SAYING.",
+          "confidence": 0.957,
+          "text_ar": "يا سيدتي لا يمكنني فهم ما تقولينه."
+        },
+        {
+          "text": "ARE YOU SAYING YOU WANT TO GET THE TRAINING THAT MERE SOLDIERS GET?",
+          "confidence": 0.92,
+          "text_ar": "أتقولين إنك تريدين تلقي التدريبات التي يتلقاها الجنود العاديون؟"
+        },
+        {
+          "text": "THAT'S... YES! THAT TRAINING!OF COURSE,I'LL ALSO PAY YOU.",
+          "confidence": 0.902,
+          "text_ar": "هذا... نعم! ذلك التدريب! بالطبع، سأدفع لك أيضاً."
+        },
+        {
+          "text": "THIS IS NOTA DETRIMENTAL BUSINESS, ISN'TIT?",
+          "confidence": 0.932,
+          "text_ar": "هذه صفقة مربحة وليست خاسرة، أليس كذلك؟"
+        },
+        {
+          "text": "TURN",
+          "confidence": 0.994,
+          "text_ar": "التفات"
+        },
+        {
+          "text": "NO,I DON'T WANT TO.I WAS BORN TO GO TO WAR... NOT THIS.",
+          "confidence": 0.922,
+          "text_ar": "لا، لا أريج ذلك. لقد وُلِدت لخوض الحروب... ليس لهذا."
+        },
+        {
+          "text": "REALLY? YOU WON'T REGRET IT...?",
+          "confidence": 0.917,
+          "text_ar": "حقا؟ ألن تندم على ذلك...؟"
+        },
+        {
+          "text": "I WON'T REGRETIT. GOODBYE!",
+          "confidence": 0.937,
+          "text_ar": "لن أندم. وداعاً!"
+        },
+        {
+          "text": "EVEN AFTER SEEING THIS?",
+          "confidence": 0.991,
+          "text_ar": "حتى بعد رؤية هذا؟"
+        },
+        {
+          "text": "TURN SLOWLY.",
+          "confidence": 0.969,
+          "text_ar": "استدر ببطء."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "LAND",
+          "confidence": 0.991,
+          "text_ar": "هبوط"
+        },
+        {
+          "text": "WHATIS THIS?",
+          "confidence": 0.987,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "WHYDID YOU RESIGN FROMTHE TAX COLLECTIONTEAM TWO MONTHS AGO?",
+          "confidence": 0.951,
+          "text_ar": "لماذا استقلت من فريق جمع الضرائب قبل شهرين؟"
+        },
+        {
+          "text": "DO YOU WANT ME TO TELLYOU ABOUT IT?HEADACHEAND BACKACHE!AND ALSOABDOMINAL BLOATING.",
+          "confidence": 0.94,
+          "text_ar": "أتريد أن أحدثك عنه؟ صداع وآلام في الظهر! وأيضاً انتفاخ في البطن."
+        },
+        {
+          "text": "CONSTIPATION AND DIARRHEA,YOUR EXCRETIONISNOTWELL AND IT ALWAYS HURTS, RIGHT? THEEVIL GENERAL.",
+          "confidence": 0.939,
+          "text_ar": "إمساك وإسهال، إخراجك ليس طبيعياً وتشعر بالألم دائماً، أليس كذلك؟ أيها الجنرال الشرير."
+        },
+        {
+          "text": "WHATTHE HELL IS THAT? WHY WOULD YOU GET SO SENSITIVE WHEN THERE'S ABIG DEAL IN FRONT OF YOU?",
+          "confidence": 0.921,
+          "text_ar": "ما بحق الجحيم هذا؟ لماذا تصبح حساساً هكذا عندما تكون هناك مسألة كبرى أمامك؟"
+        },
+        {
+          "text": "I HEARD YOURNICKNAME IS 10 TIMES A DAY',RIGHT?",
+          "confidence": 0.871,
+          "text_ar": "سمعت أن لقبك هو 'عشر مرات في اليوم'، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "ARE YOUDONE? ISN'T THAT TOO MUCH,MY LADY?",
+          "confidence": 0.936,
+          "text_ar": "أنهيت كلامك؟ أليس هذا مبالغاً فيه يا سيدتي؟"
+        },
+        {
+          "text": "IF YOU WANT TO GET THIS BY YOUR- SELF, YOUR SALA- RY WON'T BE ENOUGH.",
+          "confidence": 0.903,
+          "text_ar": "إذا أردت الحصول على هذا بنفسك، فراتبك لن يكفي."
+        },
+        {
+          "text": "SIR OLIVER SAID THAT YOU WILL COMPLETELY HEALIF YOUCON- SUME ITFOR A YEAR.",
+          "confidence": 0.937,
+          "text_ar": "قال السير أوليفر إنك ستشفى تماماً إذا استهلكتها لمدة عام."
+        },
+        {
+          "text": "BUT THIS IS... WELL...",
+          "confidence": 0.935,
+          "text_ar": "لكن هذا..."
+        },
+        {
+          "text": "DO YOU THINK...",
+          "confidence": 0.931,
+          "text_ar": "أتعتقد..."
+        },
+        {
+          "text": "TURN",
+          "confidence": 0.996,
+          "text_ar": "التفات"
+        },
+        {
+          "text": "IF YOU DON'T LIKE IT, GO AWAYDO YOU THINK YOURETHE ONLYKNIGHTIN THIS WORLD?",
+          "confidence": 0.919,
+          "text_ar": "إذا لم يعجبك الأمر، فاذهب بعيداً أتعتقد أنك الفارس الوحيد في هذا العالم؟"
+        },
+        {
+          "text": "RESTLESS ANXIOUS",
+          "confidence": 0.983,
+          "text_ar": "قلق توتر"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "A-ALL RIGHT! I'LLDOIT!",
+          "confidence": 0.957,
+          "text_ar": "ح-حسناً! سأفعلها!"
+        },
+        {
+          "text": "ALRIGHT!",
+          "confidence": 0.994,
+          "text_ar": "رائع!"
+        },
+        {
+          "text": "I WILL GIVE YOUA REGULAR SUPPLY OF THE MEDICINE DURING TRAINING. OF COURSE,I'LL ALSO PAY YOU!",
+          "confidence": 0.857,
+          "text_ar": "سأزودك بإمدادات منتظمة من الدواء أثناء التدريب. بالطبع، سأدفع لك أيضاً!"
+        },
+        {
+          "text": "AHAHAHAHA!I KNOW ALL ABOUT THE BOOK!",
+          "confidence": 0.944,
+          "text_ar": "هاهاهاها! أنا أعلم كل شيء عن هذا الكتاب!"
+        },
+        {
+          "text": "IT'SA LITTLE HAZY,",
+          "confidence": 0.937,
+          "text_ar": "الأمر غامض بعض الشيء،"
+        },
+        {
+          "text": "BUTIT'SA NOVEL THAT WAS DISCONTINUED AFTER 60 EPI- SODES!",
+          "confidence": 0.934,
+          "text_ar": "لكنها رواية توقف نشرها بعد 60 حلقة!"
+        },
+        {
+          "text": "A HA HA S ©",
+          "confidence": 0.313,
+          "text_ar": "ها ها ها"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "WHAT DO YOU THINK?",
+          "confidence": 0.955,
+          "text_ar": "ما رأيك؟"
+        },
+        {
+          "text": "I'MNOT SURE, BUT I HEARD SHE WAS ADDICTED TOIT.",
+          "confidence": 0.913,
+          "text_ar": "لست متأكداً، لكني سمعت أنها كانت مدمنة عليها."
+        },
+        {
+          "text": "IT WAS BETTER THAN THREE MONTHS AGO.",
+          "confidence": 0.957,
+          "text_ar": "كان ذلك أفضل من وضعها قبل ثلاثة أشهر."
+        },
+        {
+          "text": "I THOUGHT SHE WAS BETTER, BUTI DIDN'TTHINK SHE'D BE THAT SMART.",
+          "confidence": 0.911,
+          "text_ar": "ظننت أنها تحسنت، لكنني لم أتوقع أن تكون بهذا الذكاء."
+        },
+        {
+          "text": "DOCTOR OLIVER SAID...",
+          "confidence": 0.932,
+          "text_ar": "قال الدكتور أوليفر..."
+        },
+        {
+          "text": "THERE ARE NO AFTER- EFFECTS,AND HER STUTTERING HASIMPROVED.IT'S JUST THAT HERPHY- SICAL ABILITIES AREN'T...",
+          "confidence": 0.919,
+          "text_ar": "لا توجد آثار جانبية، وقد تحسنت تلعثمها. إنه فقط أن قدراتها الجسدية ليست..."
+        },
+        {
+          "text": "WELL, THAT'S THE PROBLEM.",
+          "confidence": 0.935,
+          "text_ar": "حسنًا، تلك هي المشكلة."
+        },
+        {
+          "text": "WHO INTRODUCED THAT PER- SON?",
+          "confidence": 0.954,
+          "text_ar": "من الذي اقترح ذلك الشخص؟"
+        },
+        {
+          "text": "SHE SUGGESTED HIM HERSELF. BERNARD SMITH, 23. HIS MAINWEAPON IS THE AX.",
+          "confidence": 0.923,
+          "text_ar": "لقد اقترحت برنارد سميث بنفسها. 23 عاماً. سلاحه الأساسي هو الفأس."
+        },
+        {
+          "text": "IT'S BEEN A YEAR SINCE HE'S BEEN APPOINTED AS A KNIGHT,ANDHE HAS JUST BEEN IN SOD RUNNER'S POSITION.",
+          "confidence": 0.911,
+          "text_ar": "مر عام منذ تعيينه فارساً، وقد شغل للتو منصب عداء."
+        },
+        {
+          "text": "A KNIGHT?",
+          "confidence": 0.987,
+          "text_ar": "فارس؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "HE'S TRAINING ANOBLEWOMAN, NOT A SOLDIER,BUT WITHTHE EGO OF A KNIGHT.",
+          "confidence": 0.934,
+          "text_ar": "إنه يدرب نبيلة، لا جندياً، ولكن بكبرياء فارس."
+        },
+        {
+          "text": "THAT'S WHY...",
+          "confidence": 0.915,
+          "text_ar": "لهذا السبب..."
+        },
+        {
+          "text": "KEEPAN EYE ON HIM. IDON'TKNOW WHATHE'G UR WHATHE'SUP TO...",
+          "confidence": 0.885,
+          "text_ar": "راقبوه. لا أعرف ما الذي يخطط له أو ما يدور في ذهن..."
+        },
+        {
+          "text": "YES, SIR.",
+          "confidence": 0.886,
+          "text_ar": "حاضر يا سيد."
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.956,
+          "text_ar": "مالك حقوق النشر لويبتون كيناز"
+        },
+        {
+          "text": "N oNna，Mn（）",
+          "confidence": 0.397,
+          "text_ar": "نص غير مفهوم"
+        }
+      ]
+    }
+  ]
+}
