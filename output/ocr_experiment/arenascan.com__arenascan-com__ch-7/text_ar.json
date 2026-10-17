@@ -1,0 +1,860 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "7",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THE ELIAS FAMILYIS THE FIFTHSTRONGEST FAMILYIN THE EMPIRE. WHAT COULD THEY BE LACKING?",
+          "confidence": 0.938,
+          "text_ar": "عائلة إليوس هي خامس أقوى عائلة في الإمبراطورية. فما الذي قد ينقصهم؟"
+        },
+        {
+          "text": "DID YOU WANT THEM TO BE FIRST INSTEAD?",
+          "confidence": 0.935,
+          "text_ar": "هل أردتِ أن تكون الأولى عوضًا عن ذلك؟"
+        },
+        {
+          "text": "YOU'VE MISUNDERSTOOD. I DON'TWANT TO BE THE STRONGEST.",
+          "confidence": 0.952,
+          "text_ar": "لقد فهمتِ الأمر خطأ. أنا لا أردُّد أن أكون الأقوى."
+        },
+        {
+          "text": "I JUST DON'T WANT MYFAMILY FALLING INTO RUIN.",
+          "confidence": 0.931,
+          "text_ar": "أنا فقط لا أريد لعائلتي أن تتهاوى نحو الخراب."
+        },
+        {
+          "text": "TIME'S UP.",
+          "confidence": 0.962,
+          "text_ar": "انتهى الوقت."
+        },
+        {
+          "text": "..WHAT DO YOU MEAN?",
+          "confidence": 0.855,
+          "text_ar": "..ماذا تعني؟"
+        },
+        {
+          "text": "Yikes ORRRR RIGHT ON TIME!",
+          "confidence": 0.797,
+          "text_ar": "يا للهول، أم بالأحرى جئتِ في الوقت المناسب تمامًا!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "I'MFINE! JUST GIVE ME TEN MORE MINUTES.",
+          "confidence": 0.96,
+          "text_ar": "أنا بخير! اعطني عشر دقائق أخرى فقط."
+        },
+        {
+          "text": "THISIS THE LAST TEN MINUTES YOU'LL GET!!",
+          "confidence": 0.949,
+          "text_ar": "هذه هي الدقائق العشر الأخيرة التي ستحصلين عليها!!"
+        },
+        {
+          "text": "PHEW",
+          "confidence": 0.976,
+          "text_ar": "فوف..."
+        },
+        {
+          "text": "tur",
+          "confidence": 0.957,
+          "text_ar": "التفاف"
+        },
+        {
+          "text": "sO THAT'S WHAT THIS WAS FOR.",
+          "confidence": 0.546,
+          "text_ar": "إذن هكذا كان الأمر."
+        },
+        {
+          "text": "WELL WHY DO YOUTHINK YOUR FAMILY WILL FALLINTO RUIN?",
+          "confidence": 0.947,
+          "text_ar": "حسنًا، لماذا تعتقدين أن عائلتك ستتهدم نحو الخراب؟"
+        },
+        {
+          "text": "AMONG THE THREE PRINCES, THERE CANONLY BE ONE KING.",
+          "confidence": 0.962,
+          "text_ar": "بين الأمراء الثلاثة، لا يمكن أن يكون هناك سوى ملك واحد."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "ONCEAPRINCE IS CROWNED, THE FAMILIES WHO SUPPORTED THE OTHER TWO WOULD BE LUCKY TO EVEN SURVIVE HIS REIGN.",
+          "confidence": 0.937,
+          "text_ar": "بمجرد بتتويج أحد الأمراء، ستكون العائلات التي دعمت الاثنين الآخرين محظوظة لمجرد النجاة خلال عهده."
+        },
+        {
+          "text": "WHILE IT'S NICETOHAVE SUCH AN ABSURD IMAGINATION,",
+          "confidence": 0.942,
+          "text_ar": "رغم أنه من الجميل امتلاك مثل هذا الخيال السخيف،"
+        },
+        {
+          "text": "WHYDO YOU WANT TO BE MY STUDENT?",
+          "confidence": 0.936,
+          "text_ar": "لماذا تريدين أن تكوني طالبة عندي؟"
+        },
+        {
+          "text": "INEED THE BLACK SOCIETY",
+          "confidence": 0.987,
+          "text_ar": "أنا بحاجة إلى المجتمع الأسود."
+        },
+        {
+          "text": "I NEED A TEACHER WHOKNOWS OF EVERYTHING THAT GOES ON IN THIS EMPIRE TO KEEP ME INFORMED.",
+          "confidence": 0.915,
+          "text_ar": "أنا بحاجة إلى معلم يعلم بكل ما يدور في هذه الإمبراطورية لإبقائي على اطلاع."
+        },
+        {
+          "text": "HA!DOI LOOKLIKE THE TYPE OF PERSONWHO'D ACCEPTASTUDENT WITH ABLANK CHEQUE?",
+          "confidence": 0.96,
+          "text_ar": "ها! هل أبدو من نوع الأشخاص الذين يقبلون طالبًا بشيك على بياض؟"
+        },
+        {
+          "text": "AND ARE YOU CONFIDENT THAT YOUCANPAY WHATEVER AMOUNT I PUT DOWN?",
+          "confidence": 0.953,
+          "text_ar": "وهل أنتِ واثقة من قدرتك على دفع أي مبلغ أحدده؟"
+        },
+        {
+          "text": "IT WON'T BE RIGHT AWAY, BUT IN THREE YEARS I CAN!",
+          "confidence": 0.924,
+          "text_ar": "لن يكون ذلك على الفور، ولكن في غضون ثلاث سنوات أستطيع ذلك!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "WELL DAMN... IF I HAVE TO WAIT THREE YEARS, NOW I FEEL EVEN LESS INCLINED.",
+          "confidence": 0.885,
+          "text_ar": "يا للتبجح... إن كان علي الانتظار ثلاث سنوات، أشعر برغبة أقل الآن."
+        },
+        {
+          "text": "RISE",
+          "confidence": 0.936,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "WHAT IF THIS CHEQUE ENDS UP BOUNCING?",
+          "confidence": 0.936,
+          "text_ar": "ماذا لو ارتد هذا الشيك ولم يُصرف؟"
+        },
+        {
+          "text": "ARE YOU NOT CONFIDENT IN YOUR ABILITY TO TEACH ME?",
+          "confidence": 0.932,
+          "text_ar": "ألسْتَ واثقًا من قدرتك على تعليمي؟"
+        },
+        {
+          "text": "SO NOW YOU'RE TRYING TO ATTACK MY PRIDE?",
+          "confidence": 0.84,
+          "text_ar": "أتحاولين الآن المساس بكبريائي؟"
+        },
+        {
+          "text": "IF YOU CAN HELP ME PASS THE EXAM,IT'LL TAKE ME ABOUT THREE YEARS TO BE PROMOTED FROM AN ADMINISTRATOR TO A CONSUL.",
+          "confidence": 0.919,
+          "text_ar": "إذا ساعدتني في اجتياز الاختبار، سيستغرق الأمر نحو ثلاث سنوات لأترقى من إداري إلى قنصل."
+        },
+        {
+          "text": "AND FROM THERE,I'LL BECOME THE ELIAS FAMILY'S SUCCESSOR.",
+          "confidence": 0.936,
+          "text_ar": "ومن هناك، سأصبح خليفة عائلة إليوس."
+        },
+        {
+          "text": "WHICH MEANS YOU'DBECOME THE TEACHER OF THE FUTURE COUNTESS ELIAS.",
+          "confidence": 0.962,
+          "text_ar": "مما يعني أنك ستصبح معلم كونتيسة إليوس المستقبلية."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "However, since I know of my family's impending doom, I know that the positionitself is worthless.",
+          "confidence": 0.93,
+          "text_ar": "مع ذلك، بما أنني أعلم بهلاك عائلتي الوشيك، أعلم أن المنصب بحد ذاته عديم الفائدة."
+        },
+        {
+          "text": "while others will still seeit aslegitimate.",
+          "confidence": 0.957,
+          "text_ar": "بينما سيظل الآخرون يرونه شرعيًا."
+        },
+        {
+          "text": "Isn't that ironic? Thebattle for succession will become the Elias family's undoing.",
+          "confidence": 0.968,
+          "text_ar": "أليس هذا مثيرًا للسخرية؟ صراع الخلافة سيصبح سبب دمار عائلة إليوس."
+        },
+        {
+          "text": "SMILE",
+          "confidence": 0.992,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "THE ADMINISTRATOR'S TEST IS IN ONE MONTH'S TIME.",
+          "confidence": 0.931,
+          "text_ar": "اختبار الإداريين سيكون بعد شهر من الآن."
+        },
+        {
+          "text": "IF YOU PASS, THEN ILL DECIDE WHETHER I'LL ACCEPT YOU AS MY STUDENT.",
+          "confidence": 0.946,
+          "text_ar": "إذا نجحتِ، فحينها سأقرر إن كنت سأقبلك طالبةً عندي."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "SO HOW'D ITGO?",
+          "confidence": 0.938,
+          "text_ar": "إذن كيف سارت الأمور؟"
+        },
+        {
+          "text": "HM, IT WENT WELL...I THINK?",
+          "confidence": 0.852,
+          "text_ar": "همم، لقد سارت بشكل جيد... أظن؟"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.99,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "NO- IT WENT WELL...",
+          "confidence": 0.928,
+          "text_ar": "لا بل سارت بشكل جيد..."
+        },
+        {
+          "text": "HE SAID HE WILL BEVISITING THE MANSION STARTING NEXT WEEK WHICH IS FINE, BUT...",
+          "confidence": 0.882,
+          "text_ar": "قال إنه سيزور القصر ابتداءً من الأسبوع القادم وهو أمر جيد، ولكن..."
+        },
+        {
+          "text": "Tsk",
+          "confidence": 0.976,
+          "text_ar": "تشه"
+        },
+        {
+          "text": "HIS MENTORING IS CONDITIONAL... ARGH! WHY DOES THIS HAVE TO BE SO DIFFICULT?!",
+          "confidence": 0.92,
+          "text_ar": "إشرافه مشروط... أرغ! لماذا يجب أن يكون الأمر صعبًا هكذا؟!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "AVERY PLUMP STUDENT HAS FALLEN INTO MYLAP!",
+          "confidence": 0.944,
+          "text_ar": "لقد وقعت في حضني طالبة دسمة للغاية!"
+        },
+        {
+          "text": "AND SHE'S SMART!",
+          "confidence": 0.938,
+          "text_ar": "وهي ذكية أيضًا!"
+        },
+        {
+          "text": "NOW, WHAT WILL SHE NEEDINORDER TO IMPROVE HERSELF...",
+          "confidence": 0.959,
+          "text_ar": "الآن، ما الذي ستحتاجه لتطور نفسها..."
+        },
+        {
+          "text": "A FAMILY FALLING INTO RUIN? AND SHE WANTS TO BE THE SUCCESSOR? THIS IS GOING TO BE FUN! SO VERY FUN!",
+          "confidence": 0.905,
+          "text_ar": "عائلة تتهاوى نحو الخراب وتريد أن تصبح الخليفة؟ سيكون هذا ممتعًا! ممتعًا للغاية!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "AT YOUR SERVICE, MASTER.",
+          "confidence": 0.955,
+          "text_ar": "تحت أمرك يا سيدي."
+        },
+        {
+          "text": "LET'SSEE WHAT THE SPROUTS OFTHE ELIAS FAMILY LOOK LIKE.GO TO THE BASEMENT ANDFIND INFORMATION ON THEM.",
+          "confidence": 0.924,
+          "text_ar": "لنرَ كيف تبدو براعم عائلة إليوس. اذهب إلى القبو وأحضر معلومات عنها."
+        },
+        {
+          "text": "AND ASSIGN SOMEONE TO KEEP TABS ON MY CUTE, NEW STUDENT.",
+          "confidence": 0.93,
+          "text_ar": "وعيّن شخصًا لمراقبة طالبتي الجديدة اللطيفة."
+        },
+        {
+          "text": "TURNS",
+          "confidence": 0.995,
+          "text_ar": "التفاف"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "GIVE THIS TO THE LAWYER AND HAVE IT NOTARIZED.",
+          "confidence": 0.925,
+          "text_ar": "أعطِ هذا للمحامي واجعله يوثقه رسميًا."
+        },
+        {
+          "text": "LET'S SEE HOW SHE HANDLES THIS.",
+          "confidence": 0.924,
+          "text_ar": "لنرَ كيف ستتعامل مع هذا الأمر."
+        },
+        {
+          "text": "2 1 分享 享 S",
+          "confidence": 0.095,
+          "text_ar": "مشاركة"
+        },
+        {
+          "text": "UNDER- STOOD!",
+          "confidence": 0.989,
+          "text_ar": "حاضر!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "WHAT? LEKTON STREET?",
+          "confidence": 0.994,
+          "text_ar": "ماذا؟ شارع ليكتون؟"
+        },
+        {
+          "text": "AND THE DRUNKEN DRAGON? WHY THERE?",
+          "confidence": 0.958,
+          "text_ar": "والتنين السكير؟ لماذا هناك بالذات؟"
+        },
+        {
+          "text": "I WASN'T SUREUNTIL WE RECEIVED THE REPORT.",
+          "confidence": 0.935,
+          "text_ar": "لم أكن متأكدًا حتى تلقينا التقرير."
+        },
+        {
+          "text": "BUT IT SEEMS SHE WENT THERETOLOOK FORA TEACHER.WE HAVE THEIR NAME.",
+          "confidence": 0.941,
+          "text_ar": "ولكن يبدو أنها ذهبت إلى هناك للبحث عن معلم. لدينا اسمهم."
+        },
+        {
+          "text": "WAS IT... THE BLACK SOCIETY?",
+          "confidence": 0.783,
+          "text_ar": "أكان... المجتمع الأسود؟"
+        },
+        {
+          "text": "YES. THEY'RE DIVIDED INTO GROUPS FOR COLLECTING INFORMATIONAND ESPIONAGE.",
+          "confidence": 0.934,
+          "text_ar": "نعم. هم مقسمون إلى مجموعات لجمع المعلومات والتجسس."
+        },
+        {
+          "text": "WEDON'T KNOWHOW THE GROUPS ARE FURTHER ORGANIZED,",
+          "confidence": 0.948,
+          "text_ar": "نحن لا نعلم كيف تتنظيم تلك المجموعات أكثر من ذلك،"
+        },
+        {
+          "text": "BUT WE KNOWTHAT HER TEACHER IS PETE.",
+          "confidence": 0.922,
+          "text_ar": "ولكننا نعلم أن معلمها هو بيت."
+        },
+        {
+          "text": "HOW DID SHE..?",
+          "confidence": 0.914,
+          "text_ar": "كيف لها أن..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THAT PERSON'S STUDENTSARE ALL EXTRAORDINARY, SO WHY TARA.?",
+          "confidence": 0.891,
+          "text_ar": "طلاب ذلك الشخص كلهم استثنائيون، فلماذا تارا إذًا؟"
+        },
+        {
+          "text": "TRIPS",
+          "confidence": 0.882,
+          "text_ar": "تعثر"
+        },
+        {
+          "text": "THERE'S NO WAY...",
+          "confidence": 0.89,
+          "text_ar": "لا توجد طريقة..."
+        },
+        {
+          "text": "I's only been 30 minutes!",
+          "confidence": 0.884,
+          "text_ar": "لقد مرّت 30 دقيقة فقط!"
+        },
+        {
+          "text": "WELLIT MUST'VE BEEN BY SHEER LUCK. GIVE HIM MY APPROVAL.",
+          "confidence": 0.938,
+          "text_ar": "حسنًا لا بد أنه كان محض صدفة. امنحه موافقتي."
+        },
+        {
+          "text": "WE'VE ALSO RECEIVED AN URGENT MESSAGE FROM THE LAWYER'S OFFICE.",
+          "confidence": 0.927,
+          "text_ar": "لقد تلقينا أيضًا رسالة عاجلة من مكتب المحامي."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "IWILL DEAL WITH THAT LATER.",
+          "confidence": 0.954,
+          "text_ar": "سأتعامل مع ذلك لاحقًا."
+        },
+        {
+          "text": "PLACES",
+          "confidence": 0.99,
+          "text_ar": "خطوات"
+        },
+        {
+          "text": "IT HAS SOMETHING TO DO WITH LADY TARA.",
+          "confidence": 0.931,
+          "text_ar": "الأمر يتعلق بالآنسة تارا."
+        },
+        {
+          "text": "HAH... FINE.",
+          "confidence": 0.962,
+          "text_ar": "هاه... حسناً."
+        },
+        {
+          "text": "WHAT IS THIS..?!",
+          "confidence": 0.92,
+          "text_ar": "ما هذا..؟!"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "DYLAN,",
+          "confidence": 0.98,
+          "text_ar": "ديلان،"
+        },
+        {
+          "text": "CALL THE LAWYER!",
+          "confidence": 0.931,
+          "text_ar": "اتصل بالمحامي!"
+        },
+        {
+          "text": "烈合中",
+          "confidence": 0.494,
+          "text_ar": "تشويق"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "BETH'S RUNNING LATE.",
+          "confidence": 0.969,
+          "text_ar": "بيث متأخرة."
+        },
+        {
+          "text": "huff",
+          "confidence": 0.994,
+          "text_ar": "لهاث"
+        },
+        {
+          "text": "PHEW. MY LADY, YOU WERE CORRECT.",
+          "confidence": 0.896,
+          "text_ar": "فاه. سيدتي، كنتِ على حق."
+        },
+        {
+          "text": "A LAWYER CAME BY THIS MORNING.",
+          "confidence": 0.939,
+          "text_ar": "جاء محامٍ هذا الصباح."
+        },
+        {
+          "text": "CINDY HEARD THEM TALKING IN THE OFFICE WHILE SHE WAS WORKING INTHEHALLONTHE FIRST FLOOR.",
+          "confidence": 0.945,
+          "text_ar": "سمعتْه سيندي وهما يتحدثان في المكتب بينما كانت تعمل في الرواق بالطابق الأول."
+        },
+        {
+          "text": "JUST AS I'D EXPECTOF MY SLY TEACHER...IS MY FATHER LOOKING FATHERLOOKING FOR ME? FORME?",
+          "confidence": 0.867,
+          "text_ar": "كما عهدتُ بمعلمتي الداهية... هل يبحث عني أبي؟"
+        },
+        {
+          "text": "WOAH",
+          "confidence": 0.952,
+          "text_ar": "واو"
+        },
+        {
+          "text": "SIR DYLAN'S ATTENDANT TOLD ME TO ESCORT YOUTO YOUR FATHER JUST NOW.",
+          "confidence": 0.933,
+          "text_ar": "أخبرني مرافق السير ديلان أن أرافقكِ إلى والدكِ الآن."
+        },
+        {
+          "text": "HOWDID YOU KNOW, M'LADY?",
+          "confidence": 0.929,
+          "text_ar": "كيف عرفتِ، سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "WELL... YOU DID SHOW UP LATE...",
+          "confidence": 0.917,
+          "text_ar": "حسناً... لقد حضرتِ متأخرة على أي حال..."
+        },
+        {
+          "text": "SO I'M MEETING HIMINHIS OFFICE?",
+          "confidence": 0.856,
+          "text_ar": "إذن سأقابله في مكتبه؟"
+        },
+        {
+          "text": "RISE",
+          "confidence": 0.994,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "NOPE, IT'LL BE HELD IN THE MAIN BUILDING'S CONFERENCE ROOM.",
+          "confidence": 0.931,
+          "text_ar": "كلا، سيعقد اللقاء في غرفة الاجتماعات بالمبنى الرئيسي."
+        },
+        {
+          "text": "AGAIN?",
+          "confidence": 0.993,
+          "text_ar": "مجدداً؟"
+        },
+        {
+          "text": "ISHE PLANNING ON INTRODUCING ME TO THE OTHER NOBLES?",
+          "confidence": 0.956,
+          "text_ar": "أيمتّع بنية تقديمي للنبلاء الآخرين؟"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "..ITHINK IT WOULD BE BENEFICIALFORUS TO OPENUP A MANUFACTURING PLANTANDSTARTIMPORTING FROMTHE NEIGHBOURING LANDS.",
+          "confidence": 0.893,
+          "text_ar": "..أعتقد أنه سيكون من المفيد لنا افتتاح مصنع إنتاج والبدء بالاستيراد من الأراضي المجاورة."
+        },
+        {
+          "text": "INORDER TO DIMINISH THE SUFFERING OFTHECIVILIANS AFTER THE WAR, DROUGHTS,AND FAMINE,",
+          "confidence": 0.938,
+          "text_ar": "من أجل التخفيف من معاناة المدنيين بعد الحرب، وموجات الجفاف، والمجاعة،"
+        },
+        {
+          "text": "THE PURPOSE OF THE PROHIBITION IS TOREDUCE ANY UNNECESSARYEXPENSES ON FOOD. IT CAN'T BE CARELESSLY WITHDRAWN.",
+          "confidence": 0.922,
+          "text_ar": "الهدف من قانون الحظر هو تقليل النفقات غير الضرورية على الطعام. لا يمكن إلغاؤه باستخفاف."
+        },
+        {
+          "text": "BLUSH",
+          "confidence": 0.991,
+          "text_ar": "احمرار"
+        },
+        {
+          "text": "MANUFACTURING PLANT? IMPORTING? PROHIBITION?",
+          "confidence": 0.974,
+          "text_ar": "مصنع إنتاج؟ استيراد؟ حظر؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "FLOP",
+          "confidence": 0.908,
+          "text_ar": "سقوط"
+        },
+        {
+          "text": "THERE'SA RUMOR THAT'S BEEN GOING AROUND.",
+          "confidence": 0.951,
+          "text_ar": "توجد شرارة شائعة تتردد في الأرجاء."
+        },
+        {
+          "text": "AND OF COURSE THIS KIND OF RUMOR WAS HARD TO OBTAIN WITHOUTASIGNIFICANT AMOUNT OF POWER,",
+          "confidence": 0.917,
+          "text_ar": "وبالطبع كان من الصعب الحصول على شائعة كهذه دون قدر كبير من النفوذ،"
+        },
+        {
+          "text": "BUT I HEARD THAT THE EMPEROR HAS ALREADY SECRETLY ISSUEDAREPEAL OF THE PROHIBITION.",
+          "confidence": 0.935,
+          "text_ar": "لكنني سمعتُ أن الإمبراطور قد أصدر سراً أمراً بإلغاء قانون الحظر بالفعل."
+        },
+        {
+          "text": "WE SHOULD QUICKLY FIND A PLACE TO IMPORT FROM...",
+          "confidence": 0.926,
+          "text_ar": "علينا إيجاد مكان لنستورد منه سريعاً..."
+        },
+        {
+          "text": "AND HAVE AN ALCOHOL STORAGE ADDED TO OUR TRADE SHIP BEFORE IT'S NEXT DEPARTURE.",
+          "confidence": 0.941,
+          "text_ar": "وإضافة مخزن للمشروبات الروحية إلى سفينتنا التجارية قبل رحلتها القادمة."
+        },
+        {
+          "text": "BUT WHERE DID THIS RUMOR COME FROM?IF IT TURNS OUT TO BE FALSE,WE'LL BEPALSE,WELL LOSE MONEY. LOSEMONEY.",
+          "confidence": 0.896,
+          "text_ar": "ولكن من أين جاءت هذه الشائعة؟ إن تبين أنها خاطئة، سنخسر المال."
+        },
+        {
+          "text": "NOD NOD",
+          "confidence": 0.977,
+          "text_ar": "إيماء إيماء"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "WAIT!THE PROHIBITION ENDEDIN THE 3OTH CHAPTER.",
+          "confidence": 0.941,
+          "text_ar": "انتظري! انتهى قانون الحظر في الفصل الثلاثين."
+        },
+        {
+          "text": "IT WAS ABOLISHED ONCE WE WON THAT PROLONGED WAR.",
+          "confidence": 0.915,
+          "text_ar": "لقد أُلغي بمجرد أن ربحنا تلك الحرب الطويلة."
+        },
+        {
+          "text": "BUT THE WAR HASNT EVEN STARTED YET.",
+          "confidence": 0.94,
+          "text_ar": "لكن الحرب لم تبدأ بعد حتى."
+        },
+        {
+          "text": "CHLOE ELIAS, WHOWASTHE SOURCE OFTHIS RUMOR?",
+          "confidence": 0.95,
+          "text_ar": "كلوي إلياس، من كان مصدر هذه الشائعة؟"
+        },
+        {
+          "text": "WASIT THE PALACE'S FINANCIAL SECTOR?",
+          "confidence": 0.981,
+          "text_ar": "أكان القطاع المالي بالقصر؟"
+        },
+        {
+          "text": "OR THE MILITARY SECTOR?",
+          "confidence": 0.968,
+          "text_ar": "أم القطاع العسكري؟"
+        },
+        {
+          "text": "MOTHER WAS RECENTLY IN CONTACT WITH DUKE ANTON.",
+          "confidence": 0.928,
+          "text_ar": "كانت والدتي على اتصال بالدوق أنتون مؤخراً."
+        },
+        {
+          "text": "HE KNOWS OF EVERYTHING THAT HAPPENS IN THE JUDICIAL SECTOR.",
+          "confidence": 0.947,
+          "text_ar": "إنه على علم بكل ما يحدث في القطاع القضائي."
+        },
+        {
+          "text": "SO YOU RECEIVED HELP FROMYOUR MOTHER'S SIDE?",
+          "confidence": 0.915,
+          "text_ar": "إذن تلقيتِ المساعدة من جهة والدتكِ؟"
+        },
+        {
+          "text": "YES. GRANDFATHER HELPED ME.",
+          "confidence": 0.907,
+          "text_ar": "نجل. لقد ساعدني جدي."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "FATHER!PUT MEINCHARGEOF HANDLINGTHE LIQUOR.",
+          "confidence": 0.986,
+          "text_ar": "أبي! ضعني في مسؤولية إدارة الخمور."
+        },
+        {
+          "text": "I'MALREADY TAKING CARE OF THE DISTRIBUTION CENTER,SOI'MPERFECT FORTHEJOB!",
+          "confidence": 0.969,
+          "text_ar": "أنا أتولى بالفعل إدارة مركز التوزيع، لذا فأنا مثالية لهذه المهمة!"
+        },
+        {
+          "text": "TAN",
+          "confidence": 0.987,
+          "text_ar": "دوي"
+        },
+        {
+          "text": "..REALLY?",
+          "confidence": 0.877,
+          "text_ar": "..حقاً؟"
+        },
+        {
+          "text": "YES!JUST GIVE ME THE JOB, FATHER! FATHED",
+          "confidence": 0.917,
+          "text_ar": "نعم! فقط امنحني الوظيفة يا أبي!"
+        },
+        {
+          "text": "ANTON... I'VE HEARD THAT NAME BEFORE...",
+          "confidence": 0.96,
+          "text_ar": "أنتون... لقد سمعتُ بهذا الاسم من قبل..."
+        },
+        {
+          "text": "OH!IT WAS THAT DAY!",
+          "confidence": 0.939,
+          "text_ar": "أه! لقد كان في ذلك اليوم!"
+        },
+        {
+          "text": "PEOPLE KNOW THAT THE PROHIBITION WILL KOHBIIONWILL BE COMING BECOMING TO AN END SOON.",
+          "confidence": 0.626,
+          "text_ar": "الناس يعلمون أن قانون الحظر سينتهي قريباً."
+        },
+        {
+          "text": "INVEST INSORBON WINE..",
+          "confidence": 0.936,
+          "text_ar": "استثمروا في نبيذ سوربون.."
+        },
+        {
+          "text": "SORBON WINE? PROHIBITION?",
+          "confidence": 0.957,
+          "text_ar": "نبيذ سوربون؟ الحظر؟"
+        },
+        {
+          "text": "INFORMATION THIS VITAL IS ESPECIALLY..",
+          "confidence": 0.9,
+          "text_ar": "معلومات بهذه الأهمية خصوصاً.."
+        },
+        {
+          "text": "..THE RETURN WILL BE MORE THAN ZO TIMES..",
+          "confidence": 0.847,
+          "text_ar": "..ستكون العوائد أكثر من عشرين ضعفا.."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "EVEN IF THE INFORMATION SUPPOSEDLY CAME FROM THE JUDICIARY SECTOR, WHATIF THEY WERE WRONG?",
+          "confidence": 0.92,
+          "text_ar": "حتى وإن كانت المعلومات مفترضة من القطاع القضائي، ماذا لو كانوا على خطأ؟"
+        },
+        {
+          "text": "ALRIGHT. BUT WHATIF THE RUMORIS ACTUALLY FALSE?",
+          "confidence": 0.854,
+          "text_ar": "حسناً. ولكن ماذا لو كانت الشائعة خاطئة حقاً؟"
+        },
+        {
+          "text": "HOWWILL YOU MAKE UP FOR THE LOSSES TO THE ELIAS FAMILY?",
+          "confidence": 0.958,
+          "text_ar": "كيف ستعوضين خسائر عائلة إلياس؟"
+        },
+        {
+          "text": "AS EXPECTED OF FATHER!",
+          "confidence": 0.943,
+          "text_ar": "كما هو متوقع من أبي!"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "WAIT,I SHOULDN'T BE IMPRESSED RIGHT NOW.",
+          "confidence": 0.96,
+          "text_ar": "مهلاً، يجب ألا أكون منبهراً الآن."
+        },
+        {
+          "text": "NO MATTER HOWILOOKAT IT,THE PACE OF THE STORY IS GOING TOO FAST.",
+          "confidence": 0.924,
+          "text_ar": "مهما نظرتُ للأمر، فإن إيقاع القصة يسير بسرعة كبيرة."
+        },
+        {
+          "text": "IF THE PROHIBITION EVENT ISALREADY UNDERWAY,",
+          "confidence": 0.947,
+          "text_ar": "إذا كان حدث الحظر جارياً بالفعل،"
+        },
+        {
+          "text": "THEN OUR DOWNFALLMAY BE SOONER THAN THREE YEARS...!",
+          "confidence": 0.909,
+          "text_ar": "فقد يكون سقوطنا أسرع من ثلاث سنوات...!"
+        },
+        {
+          "text": "KENAZ webtoonIPholder",
+          "confidence": 0.991,
+          "text_ar": "كينيز لحقوق الويبتون"
+        },
+        {
+          "text": "NU （） woodyNana，Minhe",
+          "confidence": 0.512,
+          "text_ar": "وودي نانا، مينه"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "Hello, al!",
+          "confidence": 0.875,
+          "text_ar": "مرحباً بالجميع!"
+        },
+        {
+          "text": "ItisIBelle0!Supersorryforthelongwaitforthischapter.ItseemsthatBelle#has gone missing forahotminuteIfanyone findsher,pleasehaul her bootybringher back tome.Asofrightnow,chapterproofreadingisdoneandIshallwhipseeifIcouldget Belle#12 to typeset it.",
+          "confidence": 0.836,
+          "text_ar": "هذه إيزابيل! نعتذر بشدة على التأخير الطويل في هذا الفصل. يبدو أن بيل قد اختفت لفترة وجيزة. إن وجدها أحد، رجاءً أعيدوها إليّ. حالياً، تمت مراجعة الفصل وسأرى إن كان بإمكاني جعل بيل رقم 12 تضع له التنسيق."
+        },
+        {
+          "text": "Please beabitmorepatientuntil Belle#comesbackandrestorespeace.Untilthen,I shall make theseripoffcreditpagesasIwasbutamere worker belle upuntil our leader disappeared.",
+          "confidence": 0.875,
+          "text_ar": "رجاءً كونوا أكثر صبراً حتى تعود بيل وتستعيد السلام. حتى ذلك الحين، سأصنع صفحات الاعتمادات المسروقة هذه كنت مجرد عاملة بسيطة حتى اختفاء قائدتنا."
+        },
+        {
+          "text": "To Belle#2, Please return soon. I dont know what I am doing.",
+          "confidence": 0.947,
+          "text_ar": "إلى بيل رقم 2، رجاءً عودي قريباً. لا أعرف ما أفعله."
+        },
+        {
+          "text": "BELL'S SCANS present Ill Save This Damn Family!- Chapter7 Raw Provider:Manhwd Kingdom×PEACHY Translator:Belle#333 Proofreader:Belle#10 Cleaner/Redrawer:Belle#12 Typesetter:Belle#12 Quality Checker:Belle#10",
+          "confidence": 0.91,
+          "text_ar": "تقديم أعمال بيل: سأُنقذ هذه العائلة اللعينَة! - الفصل السابع. مزود النسخة الأصلية: مملكة المانهوا × بيتشي. الترجمة: بيل رقم 333. المراجعة: بيل رقم 10. التنظيف/الإعادة الرسم: بيل رقم 12. التنسيق: بيل رقم 12. تدقيق الجودة: بيل رقم 10."
+        },
+        {
+          "text": "like& Follow us on",
+          "confidence": 0.976,
+          "text_ar": "أعجب بنا وتابعنا على"
+        }
+      ]
+    }
+  ]
+}
