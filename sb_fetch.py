@@ -143,13 +143,30 @@ _COLLECT_READING_JS = ("""(() => {""" + _SCROLLER_JS + """
     let ci = -1, a = e;
     while (a && a.parentElement !== node) a = a.parentElement;
     if (a && node) ci = kids.indexOf(a);
-    out.push({src: src.trim(), ci: ci, ctx: ctx.toLowerCase().slice(0, 200)});
+    out.push({src: src.trim(), ci: ci, nw: e.naturalWidth || 0, ctx: ctx.toLowerCase().slice(0, 200)});
   });
   return JSON.stringify({imgs: out, exp: kids.length,
     y: __win ? window.scrollY + window.innerHeight : __sc.scrollTop + __sc.clientHeight,
     h: __win ? document.documentElement.scrollHeight : __sc.scrollHeight});
 })()""")
 
+_COLLECT_AND_SCROLL_JS = _COLLECT_READING_JS[:-len("})()")] .replace("return JSON.stringify({imgs: out", "const __res = JSON.stringify({imgs: out") + """;
+  const __dy = Math.round((__win ? window.innerHeight : __sc.clientHeight) * 1.2);
+  if (__win) window.scrollBy(0, __dy); else __sc.scrollTop = __sc.scrollTop + __dy;
+  return __res;
+})()"""
+
+def _scroll_to_child_js(ci: int) -> str:
+    return ("(() => {" + _SCROLLER_JS + """
+  let node = __rc, dd = 0;
+  while (node && node.children.length === 1 && dd < 3) { node = node.children[0]; dd++; }
+  const k = node && node.children[""" + str(int(ci)) + """];
+  if (k) k.scrollIntoView({block: 'center'});
+  return 1;
+})()""")
+
+
+SB_REPAIR_MAX_SEC = float(os.environ.get("SB_REPAIR_MAX_SEC", "60") or 60)
 SB_SCROLL_STEP_SLEEP = float(os.environ.get("SB_SCROLL_STEP_SLEEP", "0.12") or 0.12)
 SB_SCROLL_MAX_SEC = float(os.environ.get("SB_SCROLL_MAX_SEC", "180") or 180)
 
@@ -181,24 +198,31 @@ def _fast_reading_urls(sb, base_url: str) -> list[str] | None:
     return urls or None
 
 
+def _parse_collect(raw):
+    try:
+        return json.loads(raw) if isinstance(raw, str) else {}
+    except Exception:
+        return {}
+
+
 def _collect_reading_by_scroll(sb, base_url: str, max_sec: float | None = None) -> list[str]:
-    """[إصلاح] تمرير تدريجي يجمع روابط صور القراءة تراكميًا (قد تُفكَّك وسوم الصفحات البعيدة عن الشاشة)،
-    مرتَّبة بموضع عنصر الصفحة داخل الحاوية (ci) إن توفّر وإلا بترتيب الظهور. يتوقف حين يبلغ النهاية
-    ولا جديد (أو بلوغ عدد عناصر الحاوية المتوقَّع) أو عند المهلة القصوى."""
+    """[إصلاح] تمرير تدريجي يجمع روابط صور القراءة تراكميًا، مرتَّبة بموضع عنصر الصفحة داخل الحاوية (ci).
+    - يُحدَّث رابط الصفحة إن تغيّر لاحقًا (القارئ يضع أولًا رابطًا مصغَّرًا/بديلًا ثم الأصلي): الأفضل = الأكبر
+      عرضًا طبيعيًا (nw)، فلا يبقى مصغَّر 128px بدل الصفحة الحقيقية (سبب فشل 14 صفحة بتشغيلة 148 صفحة).
+    - بعد التمرير: مسار إصلاح يعيد كل صفحة ضعيفة (nw<300) إلى الشاشة وينتظر استبدال رابطها.
+    - نداء تقييم واحد لكل خطوة (جمع+تمرير معًا) لتقليل زمن الاتصال."""
     from urllib.parse import urljoin
     max_sec = max_sec or SB_SCROLL_MAX_SEC
-    found: dict[str, tuple[int, int]] = {}
+    best: dict[int, tuple[str, int]] = {}        # ci -> (url, nw)
+    loose: dict[str, int] = {}                    # روابط بلا ci معروف: url -> seq
     seq = stable = exp = 0
     t0 = time.monotonic()
     info = _sb_eval(sb, _SCROLL_TOP_READING_JS)
     print(f"  📜 [SB] حاوية التمرير: {info}")
     time.sleep(0.2)
-    while time.monotonic() - t0 < max_sec:
-        raw = _sb_eval(sb, _COLLECT_READING_JS)
-        try:
-            data = json.loads(raw) if isinstance(raw, str) else {}
-        except Exception:
-            data = {}
+
+    def absorb(data: dict) -> bool:
+        nonlocal seq
         grew = False
         for d in data.get("imgs") or []:
             if WIDGET_CONTEXT_PATTERN.search(d.get("ctx") or ""):
@@ -207,25 +231,60 @@ def _collect_reading_by_scroll(sb, base_url: str, max_sec: float | None = None) 
             if not src or src.startswith("data:"):
                 continue
             u = urljoin(base_url, src)
-            if _is_thumbnail_url(u) or u in found:
+            if _is_thumbnail_url(u):
                 continue
-            found[u] = (int(d.get("ci", -1)), seq)
-            seq += 1
-            grew = True
+            ci, nw = int(d.get("ci", -1)), int(d.get("nw") or 0)
+            if ci >= 0:
+                old = best.get(ci)
+                if old is None or (u != old[0] and nw >= old[1]):
+                    grew = grew or old is None or u != old[0]
+                    best[ci] = (u, nw)
+            elif u not in loose:
+                loose[u] = seq
+                seq += 1
+                grew = True
+        return grew
+
+    while time.monotonic() - t0 < max_sec:
+        data = _parse_collect(_sb_eval(sb, _COLLECT_AND_SCROLL_JS))
+        grew = absorb(data)
         exp = max(exp, int(data.get("exp") or 0))
         at_end = float(data.get("y") or 0) >= float(data.get("h") or 1) - 5
+        found_n = len(best) + len(loose)
         stable = 0 if (grew or not at_end) else stable + 1
-        need = 2 if (exp and len(found) >= exp) else (8 if exp else 3)
+        need = 2 if (exp and found_n >= exp) else (8 if exp else 3)
         if at_end and stable >= need:
             break
-        _sb_eval(sb, _SCROLL_STEP_READING_JS)
         time.sleep(SB_SCROLL_STEP_SLEEP)
-    if exp and len(found) < exp * 0.9:
-        print(f"  ⚠️ [SB] جُمعت {len(found)} صورة من ~{exp} عنصر صفحة بالحاوية — قد يكون الفصل ناقصًا (أو الحاوية تضم عناصر غير صور)")
-    items = list(found.items())
-    if items and all(v[0] >= 0 for _, v in items):
-        items.sort(key=lambda kv: (kv[1][0], kv[1][1]))
-    return [u for u, _ in items]
+
+    # مسار الإصلاح: صفحات ما زالت بلا صورة حقيقية (nw<300) أو مفقودة تمامًا ← إعادتها للشاشة وانتظار الاستبدال
+    weak = [c for c in range(exp) if c not in best or best[c][1] < 300] if exp else []
+    if weak:
+        fixed = 0
+        t_rep = time.monotonic()
+        for c in weak:
+            if time.monotonic() - t_rep > SB_REPAIR_MAX_SEC:
+                print(f"  ⚠️ [SB] انتهت مهلة الإصلاح ({SB_REPAIR_MAX_SEC:.0f}ث) — تبقّى صفحات ضعيفة")
+                break
+            _sb_eval(sb, _scroll_to_child_js(c))
+            for _ in range(5):
+                time.sleep(0.2)
+                before = best.get(c)
+                absorb(_parse_collect(_sb_eval(sb, _COLLECT_READING_JS)))
+                cur = best.get(c)
+                if cur and cur[1] >= 300:
+                    fixed += 1
+                    break
+        print(f"  🔧 [SB] إصلاح الصفحات الضعيفة: {len(weak)} صفحة، تحسّنت {fixed}")
+
+    n_total = len(best) + len(loose)
+    if exp and n_total < exp * 0.9:
+        print(f"  ⚠️ [SB] جُمعت {n_total} صورة من ~{exp} عنصر صفحة بالحاوية — قد يكون الفصل ناقصًا (أو الحاوية تضم عناصر غير صور)")
+    if loose and best:
+        # خليط معروف/مجهول الموضع: نُبقي ترتيب الظهور للمجهول بعد المعروف (حالة نادرة)
+        pass
+    urls = [best[c][0] for c in sorted(best)] + [u for u, _ in sorted(loose.items(), key=lambda kv: kv[1])]
+    return urls
 
 
 def collect_dom_images_sb(sb, base_url: str, max_rounds: int = 60) -> tuple[list[str], list[dict]]:
