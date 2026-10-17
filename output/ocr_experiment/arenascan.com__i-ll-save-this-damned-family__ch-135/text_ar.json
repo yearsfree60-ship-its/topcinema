@@ -1,0 +1,1423 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "135",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.596,
+          "text_ar": ""
+        },
+        {
+          "text": "I THINK IT IS BEST TOINVITE THE NOBLES SINCE ALL THREE SIBLINGS IN OUR FAMILY HAVE BEEN PROMOTED.",
+          "confidence": 0.902,
+          "text_ar": "أعتقد أنه من الأفضل دعوة النبلاء بما أن الأشقاء الثلاثة في عائلتنا قد تمت ترقيتهم."
+        },
+        {
+          "text": "IT'LL HELP FURTHER SECLRE OUR FAMILY'S POSITION.",
+          "confidence": 0.949,
+          "text_ar": "سيساعد ذلك في تعزيز مكانة عائلتنا بشكل أكبر."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "8 COFFEE MANGA",
+          "confidence": 0.109,
+          "text_ar": ""
+        },
+        {
+          "text": "RIGHT. LOGAN WILL SOON BE PROMOTED TO THE 2ND CLASS SPECIAL ADMINISTRATION TEAM.",
+          "confidence": 0.958,
+          "text_ar": "صحيح. سيتلقى لوغان ترقية قريباً إلى فريق الإدارة الخاصة من الفئة الثانية."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IT'S TRLE THAT SHE HAS TO MAKE HER DEBUT INHIGH SOCIETY.ITWOLLD BE A GREAT OPPORTLNITY TO MAKE MORE CONNECTIONS.",
+          "confidence": 0.925,
+          "text_ar": "صحيح أنه يتعين عليها الظهور لأول مرة في المجتمع الراقي. ستكون فرصة عظيمة لبناء المزيد من العلاقات."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "CHLOE IS ABOLT TO BE PROMOTED NEXT MONTH, TOO.IT'S NOT JLIST ME WHO'S GETTING A 2ND CLASS PROMOTION.",
+          "confidence": 0.922,
+          "text_ar": "كلوي على وشك الترقي في الشهر القادم أيضاً. لست وحدي من يحصل على ترقية الفئة الثانية."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "SHRUG",
+          "confidence": 0.979,
+          "text_ar": "(يهز كتفيه)"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HMM,I AGREE. TARA IS A LADY OF HOLSE ELIAS AFTER ALL.",
+          "confidence": 0.928,
+          "text_ar": "مم، أوافق الرأي. تارا هي سيدة من آل إلياس بعد كل شيء."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.92,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT? ARIA TOO? THEY CARE FOR ME THIS MLICH?",
+          "confidence": 0.924,
+          "text_ar": "ماذا؟ آريا أيضاً؟ هل يهتمون لأمري إلى هذا الحد؟"
+        },
+        {
+          "text": "TOUCHED",
+          "confidence": 0.992,
+          "text_ar": "(متأثرة)"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "OFEMINGA",
+          "confidence": 0.538,
+          "text_ar": ""
+        },
+        {
+          "text": "SINCE YOU ALL SEEM TO BE OF ONE OPINION,I WILL FOLLOW. ASA MEMBER OF HOLSE ELIAS,",
+          "confidence": 0.918,
+          "text_ar": "بما أنكم جميعاً تبدون على رأي واحد، فسوف أمتثل. كفرد من آل إلياس،"
+        },
+        {
+          "text": "I WILL SPEND MY BIRTHDAYIN AWAY BEFITTING MY STATLIS.",
+          "confidence": 0.925,
+          "text_ar": "سأقضي عيد ميلادي بطريقة تليق بمقامي."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I'LL PROVIDE A LIST OF FAMILY ACQLAINTANCES TO BE INVITED. BE SURE TO PREPARE FOR THIS COMING SLINDAY, ISABELLE.",
+          "confidence": 0.917,
+          "text_ar": "سأقدم قائمة بمعارف العائلة المطلوب دعوتهم. احرصي على الاستعداد ليوم الأحد القادم، إيزابيل."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.974,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "YES, MADAM.",
+          "confidence": 0.963,
+          "text_ar": "حاضر، سيدتي."
+        },
+        {
+          "text": "川 COFFEE MANGA",
+          "confidence": 0.114,
+          "text_ar": ""
+        },
+        {
+          "text": "OH NO, THIS IS SERIOUS. MY ADnGIτTCCAA",
+          "confidence": 0.481,
+          "text_ar": "أوقات سيئة، هذا خطير..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "APPRENTICESHOLLDHAVE BEEN AWARE OF THIS BEFORE SHE WENT ONTHE TRIP...",
+          "confidence": 0.913,
+          "text_ar": "كان يجب أن تكون المتدربة على دراية بهذا قبل أن تذهب في رحلتها..."
+        },
+        {
+          "text": "OEMANA",
+          "confidence": 0.575,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "ULL",
+          "confidence": 0.982,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.896,
+          "text_ar": ""
+        },
+        {
+          "text": "YOU CALLED FOR ME?",
+          "confidence": 0.928,
+          "text_ar": "هل طلبتني؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "ASK THE AGENT AT THE 2ND PRINCE'S PALACE WHERE HIS HIGHNESS IS HEADED ON HIS TRIP.",
+          "confidence": 0.94,
+          "text_ar": "اسأل العميل في قصر الأمير الثاني عن الوجهة التي يقصدها سموه في رحلته."
+        },
+        {
+          "text": "i COFFEANGA",
+          "confidence": 0.676,
+          "text_ar": ""
+        },
+        {
+          "text": "YES, MASTER.",
+          "confidence": 0.972,
+          "text_ar": "أمرك، سيدي."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "USH",
+          "confidence": 0.987,
+          "text_ar": "(فيفش)"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.922,
+          "text_ar": ""
+        },
+        {
+          "text": "2 HOURS LATER.",
+          "confidence": 0.957,
+          "text_ar": "بعد ساعتين."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "Impossible toeckthdesio. The party is execed to be small, but the exact number is unknown. Ddn't seem astabletaw. The 2nd Prince's private coach is stilltesables 11. tn enter the palace.",
+          "confidence": 0.751,
+          "text_ar": "من المستحيل التحقق من ذلك. يُتوقع أن تكون الحفل صغيرة، لكن العدد الدقيق مجهول."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "Impossible T Think my cover is blown. Afer spillg Scorpionteaos A sinceI wasabletoinfiltrate the 2nd Prince's palace. Sick of gettingid oforsedug COFFEE MANGA",
+          "confidence": 0.296,
+          "text_ar": "أعتقد أن أمري قد انكشف. لقد سئمت من محاولة التخفي واختراق قصر الأمير الثاني."
+        },
+        {
+          "text": "Master, since I'm sure my cover is blown,pleasehave someone else take my oition.Please? I can't swallow any food because 11. dung all over!",
+          "confidence": 0.875,
+          "text_ar": "سيدي، بما أنني متأكد من أن أمري قد انكشف، فالرجاء تكليف شخص آخر بوضعي. أرجوك؟ لا أستطيع ابتلاع أي طعام من شدة التوتر!"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "ASTER",
+          "confidence": 0.95,
+          "text_ar": ""
+        },
+        {
+          "text": "MAA",
+          "confidence": 0.989,
+          "text_ar": ""
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.927,
+          "text_ar": ""
+        },
+        {
+          "text": "YOU DUMMY. IFIASSIGN SOMEONE ELSE, THEIR COVER WILL BE BLOWNAND THEY'LL GET FIRED. YOU'RE THE BEST CHOICE SINCE YOU WEREN'TFIRED EVEN AFTER BEING FOLND OLT.",
+          "confidence": 0.896,
+          "text_ar": "أيها الأحمق. إذا كلفت شخصاً آخر، فسوف ينكشف أمره ويُطرد. أنت الخيار الأفضل بما أنك لم تُطرد حتى بعد انفضاح أمرك."
+        },
+        {
+          "text": "SHAKE",
+          "confidence": 0.988,
+          "text_ar": "(رتعش)"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "GRIN AND BEAR IT, YOLING MAN.",
+          "confidence": 0.93,
+          "text_ar": "تحمل الأمر، أيها الشاب."
+        },
+        {
+          "text": "T OFFEE MANGA",
+          "confidence": 0.115,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "V COFFEE MANGA",
+          "confidence": 0.566,
+          "text_ar": ""
+        },
+        {
+          "text": "They haven't kicked you out even",
+          "confidence": 0.928,
+          "text_ar": "لم يطردوك حتى بعد"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "thoughthey'voedyourdentity because it's you. There must be a reason why the2nd prince is lettingyou stay even thoughhe knowsyour. So please wait a lttle onger In situations like today, although it may not be ofgreat help, I can still get information from you. I'm truly grateful forthat. So have a little more sense of duty anl I will send you my perfume. One who cherishes you and your extraordnarkills,",
+          "confidence": 0.577,
+          "text_ar": "أن علموا بهويتك لأنه أنت. لا بد أن هناك سبباً يجعل الأمير الثاني يبقيك بالرغم من علمه بحقيقتك. لذا يرجى الانتظار لفترة أطول قليلاً. في مواقف مثل اليوم، ورغم أنه قد لا يكون عوناً كبيراً، إلا أنني ما زلت قادراً على الحصول على معلومات منك. أنا ممتن حقاً لذلك. لذا تحلى بقدر أكبر من حس الواجب وسأرسل لك عطري. شخص يعتز بك وبمهاراتك الاستثنائية،"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.742,
+          "text_ar": ""
+        },
+        {
+          "text": "Master Andrei",
+          "confidence": 0.962,
+          "text_ar": "المعلم أندري"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "STEP STEP",
+          "confidence": 0.996,
+          "text_ar": "(خطوات)"
+        },
+        {
+          "text": "i COFE MANGE",
+          "confidence": 0.499,
+          "text_ar": ""
+        },
+        {
+          "text": "THE 2ND PRINCE WOLLDALREADYKNOW ANYINFORMATIONTHE BLACK SOCIETY HAS, SO FORGET ABOLT THAT.",
+          "confidence": 0.934,
+          "text_ar": "سيعرف الأمير الثاني مسبقاً أي معلومات تمتلكها الجمعية السوداء، لذا انسا أمر ذلك."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "川 COFFEE MANGI",
+          "confidence": 0.349,
+          "text_ar": ""
+        },
+        {
+          "text": "I MLST EMPHASIZE TO COLNT ELIAS HOW I, ANDREI, AM PAVING THE WAY FOR THE FLTLRE OF HOLISE ELIAS, HAHAHA.",
+          "confidence": 0.94,
+          "text_ar": "يجب أن أؤكد للكونت إلياس كيف أنني، أنا أندري، أمهد الطريق لمستقبل آل إلياس، ههاها."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": []
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.807,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.888,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "UGH, WE'VE BEEN RIDING FOR 2 HOURS STRAIGHT!",
+          "confidence": 0.923,
+          "text_ar": "آه، لقد كنا نركب الخيل لساعتين متواصلتين!"
+        },
+        {
+          "text": "OFFEE",
+          "confidence": 0.834,
+          "text_ar": ""
+        },
+        {
+          "text": "ICAN'T FEEL MY BUTT!",
+          "confidence": 0.941,
+          "text_ar": "لا أستطيع الإحساس بمؤخرتي!"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "DAMN PROMOTIONS!",
+          "confidence": 0.994,
+          "text_ar": "تباً للترقيات!"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": []
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.596,
+          "text_ar": ""
+        },
+        {
+          "text": "1 HOUR LATER.",
+          "confidence": 0.923,
+          "text_ar": "بعد ساعة واحدة."
+        },
+        {
+          "text": "WE'LL TAKE A REST HERE FOR A MOMENT.",
+          "confidence": 0.907,
+          "text_ar": "سنأخذ استراحة هنا لبعض الوقت."
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": []
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "HUFF ZHICOFFEEMANGA THAT JERK IS PUSHING US TO RIDE NONSTOP! I LNDERSTAND WHY, BUT STILL...",
+          "confidence": 0.673,
+          "text_ar": "(لهاث) ذلك اللعين يدفعنا للركوب دون توقف! أنا أفهم السبب، ولكن مع ذلك..."
+        },
+        {
+          "text": "HUFF",
+          "confidence": 0.994,
+          "text_ar": "(لهاث)"
+        },
+        {
+          "text": "OWW, MY THIGHS...",
+          "confidence": 0.704,
+          "text_ar": "آه، فخذي..."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "STEP",
+          "confidence": 0.984,
+          "text_ar": "(خطوة)"
+        },
+        {
+          "text": "△DE VOI ∆II DTGHT",
+          "confidence": 0.704,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "2ND SECRETARY?",
+          "confidence": 0.991,
+          "text_ar": "السكرتير الثاني؟"
+        },
+        {
+          "text": "MARK A SECOND-YEAR KNIGHT",
+          "confidence": 0.984,
+          "text_ar": "مارك، فارس في سنته الثانية"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "十 COFFEE MANGA",
+          "confidence": 0.08,
+          "text_ar": ""
+        },
+        {
+          "text": "HAHA... YES, I'M FINE.",
+          "confidence": 0.967,
+          "text_ar": "هاها... نعم، أنا بخير."
+        },
+        {
+          "text": "I-I'M HIS HIGHNESS'S S-SECRETARY, SO THIS IS APIECE OF-I MEAN, I CAN HANDLE THIS, HAHA...HA...",
+          "confidence": 0.875,
+          "text_ar": "أنـ-أنا سكرتير سموه، لذا فهذه قطعة مـ-أعني، يمكنني التعامل مع هذا، هاها...ها..."
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "eOFE MINGA",
+          "confidence": 0.52,
+          "text_ar": ""
+        },
+        {
+          "text": "LGH, I CAN'T FEEL MY MOLTH BECALISE I'VE HAD COLD WIND INMY FACE FOR 3 HOURS.IT'S FROZEN STIFF!",
+          "confidence": 0.884,
+          "text_ar": "آه، لا يمكنني الإحساس بفمي لأن الهواء البارد ضرب وجهي لثلاث ساعات. لقد تجمد تماماً!"
+        },
+        {
+          "text": "I KNEW IT!",
+          "confidence": 0.964,
+          "text_ar": "كنت أعلم ذلك!"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "AS HIS HIGHNESS'S FIRST-EVER SECRETARY, YOU ARE INDEED EXTRAORDINARY! POP Vii COFFEEMANGA",
+          "confidence": 0.646,
+          "text_ar": "بصفتك أول سكرتير لسموه على الإطلاق، فأنت استثنائي حقاً!"
+        },
+        {
+          "text": "PRESS",
+          "confidence": 0.993,
+          "text_ar": "(ضغط)"
+        },
+        {
+          "text": "EDMLIND AFOURTH-YEAR KNIGHT",
+          "confidence": 0.901,
+          "text_ar": "إدموند، فارس في سنته الرابعة"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "FLAT-OUT TELLING THEM TO LEAVE ME ALONE BECALISE I'M ACHING ALL OVER MIGHT NOT SIT WELL, ESPECIALLY WITH 3 MORE DAYS LEFT TOGETHER, RIGHT?",
+          "confidence": 0.937,
+          "text_ar": "إخبارهم صراحة بأن يتركوش وشأنهم لأنني أتألم في كل أنحاء جسدي قد لا يكون أمراً مستحساً، خاصة مع تبقي 3 أيام أخرى معاً، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "HAHA, THAT'S RIGHT. HIS HIGHNESS HAS AN EYE FORPEOPLE COFEMANGA HAHAHA...",
+          "confidence": 0.86,
+          "text_ar": "هاها، هذا صحيح. لدى سموه نظرة ثاقبة في الناس هاهاها..."
+        },
+        {
+          "text": "MY,MY.I HOPE THE WEATHER CLEARS LP. AT THIS RATE, IT MIGHT POUR BEFORE WE EVEN ARRIVE.",
+          "confidence": 0.935,
+          "text_ar": "يا له من أمر. أتمنى أن يتحسن الطقس. بهذا المعدل، قد تهطل الأمطار قبل أن نصل حتى."
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "PALIL A FOURTH-YEAR KNIGHT",
+          "confidence": 0.897,
+          "text_ar": "بول، فارس في سنته الرابعة"
+        },
+        {
+          "text": "YEAH, IT IS A BIT COLD.",
+          "confidence": 0.952,
+          "text_ar": "نعم، الجو بارد بعض الشيء."
+        },
+        {
+          "text": "SHY",
+          "confidence": 0.865,
+          "text_ar": "(خجل)"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.92,
+          "text_ar": ""
+        },
+        {
+          "text": "AND MY MLISCLES ARE SORE, TOO.I SHOLLD DRINK THE TEA JOSH PREPARED FOR ME.",
+          "confidence": 0.937,
+          "text_ar": "وعضلاتي متعبة أيضاً. يجب أن أشرب الشاي الذي أعده جوش لي."
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.684,
+          "text_ar": ""
+        },
+        {
+          "text": "WHICHONE WAS THE FLOWER PETAL MEDICINAL TEA?",
+          "confidence": 0.984,
+          "text_ar": "أيها كان شاي بتلات الزهور الطبي?"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "FLINCH",
+          "confidence": 0.993,
+          "text_ar": "(ارتجاف)"
+        },
+        {
+          "text": "HUH..?",
+          "confidence": 0.861,
+          "text_ar": "هاه..؟"
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "V COFFEEMANGA",
+          "confidence": 0.509,
+          "text_ar": ""
+        },
+        {
+          "text": "WHAT IS THAT?",
+          "confidence": 0.982,
+          "text_ar": "ما هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "i COFEEMANGA",
+          "confidence": 0.697,
+          "text_ar": ""
+        },
+        {
+          "text": "OH,THIS ISFLOWER PETAL TEA MADE WITH WEEPING WILLOWAND SWEETBRIER,",
+          "confidence": 0.963,
+          "text_ar": "أه، هذا شاي بتلات الزهور المصنوع من الصفصاف الباكي وزهور العبهر،"
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": [
+        {
+          "text": "WHICH ARE GOOD FOR MLSCLE PAINAND PARALYSIS.",
+          "confidence": 0.953,
+          "text_ar": "والتي تفيد في علاج آلام العضلات والشلل."
+        },
+        {
+          "text": "i CoFEEE MANG",
+          "confidence": 0.643,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "I DIDN'T KNOW THERE WAS SLICH A TEA.",
+          "confidence": 0.901,
+          "text_ar": "لم أكن أعرف أن هناك شايًا كهذا."
+        },
+        {
+          "text": "川 COFFEE MANGA",
+          "confidence": 0.182,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "Vovoo",
+          "confidence": 0.305,
+          "text_ar": "رعشة"
+        },
+        {
+          "text": "THEN, ARE ALL THOSE ROLND BOTTLES BESIDE IT ALSO MEDICINES?",
+          "confidence": 0.958,
+          "text_ar": "إذن، هل كل تلك الزجاجات المستديرة بجانبه أدوية أيضًا؟"
+        },
+        {
+          "text": "COFFEE MANGA V",
+          "confidence": 0.413,
+          "text_ar": ""
+        },
+        {
+          "text": "YES. THIS IS STOMACH SYRLP, MADE WITH ARROWROOT JLICE, WHICH IS GOOD FORNALISEA AND SICKNESS.",
+          "confidence": 0.917,
+          "text_ar": "نعم. هذا شراب المعدة، المصنوع من عصارة الأراروت، وهو جيد للغثيان والمرض."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "THIS ONE IS CALLED GOODBYECONSTIPATION. IT'S MADE WITH CASSIA SEEDS AND HELPS WITH CONSTIPATION.",
+          "confidence": 0.953,
+          "text_ar": "هذا يُسمى وداعًا للإمساك. إنه مصنوع من بذور كاسيا ويساعد في علاج الإمساك."
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "m COFFEE MANGA",
+          "confidence": 0.104,
+          "text_ar": ""
+        },
+        {
+          "text": "AND THIS IS MADE WITH ELM BARK EXTRACT, WHICHIS GOOD FOR DIARRHEA. WE CALL IT NO MORE DIARRHEA.",
+          "confidence": 0.929,
+          "text_ar": "وهذا مصنوع من مستخلص لحاء الدردار، وهو جيد للإسهال. نسميه وداعًا للإسهال."
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "TA-DA THIS IS PLIT ME ON WOLNDS, ANOINTMENT FORCOMMON WOLNDS MADE WITH EAST ASIAN YELLOW WATER-LILY POWDER.",
+          "confidence": 0.945,
+          "text_ar": "تاداا! هذا مرهم ضعه على الجروح، مرهم للجروح الشائعة مصنوع من مسحوق زنابق الماء الصفراء شرق آسيوية."
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "THE NAMES ARE REALLY STRAIGHTFORWARD, RIGHT? HEHE.",
+          "confidence": 0.965,
+          "text_ar": "الأسماء مباشرة حقًا، أليس كذلك؟ هيه."
+        },
+        {
+          "text": "WOW..!",
+          "confidence": 0.756,
+          "text_ar": "واو..!"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "WHOA!",
+          "confidence": 0.985,
+          "text_ar": "واو!"
+        },
+        {
+          "text": "YOU'RE AMAZING!",
+          "confidence": 0.936,
+          "text_ar": "أنتِ مذهلة!"
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.936,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S MY RESPONSIBILITY AS A SECRETARY TO HAVE MEDICINE ONHAND!",
+          "confidence": 0.873,
+          "text_ar": "من مسؤوليتي كَسَكرتيرة أن أمتلك الأدوية في متناول يدي!"
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": [
+        {
+          "text": "PLEASE TELL ME IF YOU FEEL LINWELL.",
+          "confidence": 0.954,
+          "text_ar": "من فضلك أخبرني إذا شعرت بتوعك."
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.927,
+          "text_ar": ""
+        },
+        {
+          "text": "FLINCH WHAT? CAN WE LSE THEM TOO?",
+          "confidence": 0.894,
+          "text_ar": "فزع. ماذا؟ هل يمكننا استخدامها نحن أيضًا؟"
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "YES, OF COLRSE.",
+          "confidence": 0.934,
+          "text_ar": "نعم، بالطبع."
+        },
+        {
+          "text": "BLT WHY? WHY WOULDYOU GIVE US SOMETHING SO PRECIOUS AND EXPENSIVE?",
+          "confidence": 0.924,
+          "text_ar": "ولكن لماذا؟ لماذا تعطينا شيئًا ثمينًا ومكلفًا إلى هذا الحد؟"
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.927,
+          "text_ar": ""
+        },
+        {
+          "text": "CONFUSED",
+          "confidence": 0.981,
+          "text_ar": "ارتباك"
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": [
+        {
+          "text": "IT'S NOT SURPRISING THEY'RE REACTING LIKE THAT. EFFECTIVE MEDICINE IN THIS WORLD COSTS AS MLICH AS A KNIGHT'S MONTHLY WAGE, AND THERE'S NO SLICH THING AS INSURANCE.",
+          "confidence": 0.933,
+          "text_ar": "ليس مدهشًا أن يتفاعلوا بهذه الطريقة. الدواء الفعال في هذا العالم يكلف بقدر أجرة الفارس الشهرية، وليس هناك شيء يُسمى تأمينًا."
+        },
+        {
+          "text": "COEE MANGA",
+          "confidence": 0.854,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "IT'S IN THE SECRETARIAL GLIDE.",
+          "confidence": 0.92,
+          "text_ar": "إنه مكتوب في دليل السكرتارية."
+        },
+        {
+          "text": "COFFEMANGA",
+          "confidence": 0.682,
+          "text_ar": ""
+        },
+        {
+          "text": "PARDON?",
+          "confidence": 0.998,
+          "text_ar": "عفوًا؟"
+        },
+        {
+          "text": "IT SAYS, \"ASECRETARY MLST ASSISTONE'S SLPERIORAND ENSURE THAT THE COMPANY ACCOMPANYING THE SUPERIOR A1 A T A",
+          "confidence": 0.18,
+          "text_ar": "يقول: \"يجب على السكرتير مساعدة رئيسه وضمان أن الحاشية المرافقة للرئيس...\""
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "ASSISTANCE TO THE SAID SLIPERIOR.\"",
+          "confidence": 0.923,
+          "text_ar": "تقديم المساعدة للرئيس المذكور.\""
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "IS THERE REALLY SLICH A RLLE?",
+          "confidence": 0.939,
+          "text_ar": "هل هناك حقًا قاعدة كهذه؟"
+        },
+        {
+          "text": "0 COFFEE MANGA",
+          "confidence": 0.046,
+          "text_ar": ""
+        },
+        {
+          "text": "YES! NOT TO MENTION,MY FAMILY OWNS A PHARMACELTICAL BUSINESS. AS BOTH A SECRETARY AND THE DALIGHTER OF HOLSE ELIAS, NOD",
+          "confidence": 0.943,
+          "text_ar": "نعم! ناهيك عن أن عائلتي تمتلك شركة أدوية. وباعتباري سكرتيرة وابنة آل فيليب، إيما.. أقصصد.."
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "I CAN USE THAT TO MY ADVANTAGETO BE MORE PREPARED.",
+          "confidence": 0.919,
+          "text_ar": "يمكنني استغلال ذلك لصالحي لأكون أكثر استعدادًا."
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "CLAP",
+          "confidence": 0.99,
+          "text_ar": "تصفيق"
+        },
+        {
+          "text": "WOw!",
+          "confidence": 0.763,
+          "text_ar": "واو!"
+        },
+        {
+          "text": "CLAP COFFEEMANGA",
+          "confidence": 0.913,
+          "text_ar": "تصفيق"
+        },
+        {
+          "text": "CLAP",
+          "confidence": 0.987,
+          "text_ar": "تصفيق"
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.927,
+          "text_ar": ""
+        },
+        {
+          "text": "OH, YOU DON'T HAVE TO CLAP LIKE THAT.",
+          "confidence": 0.96,
+          "text_ar": "أه، لا يتعين عليك التصفيق هكذا."
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "门 COFFEE MANGA",
+          "confidence": 0.038,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": []
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "HE LOOKS SERIOUS. IS THERE SOMETHING WRONG?",
+          "confidence": 0.952,
+          "text_ar": "يبدو جادًا. هل هناك خطب ما؟"
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "m COFFEE MANGI",
+          "confidence": 0.155,
+          "text_ar": ""
+        },
+        {
+          "text": "SINCE YOU SAID YOU WERE HAVING SOME TEA, I'LL BOIL THE WATER. I'M ALMOST AS GOOD AT MAKING AFIRE AS COMMANDER WALTER!",
+          "confidence": 0.949,
+          "text_ar": "بما أنكِ قلتِ إنكِ تتناولين بعض الشاي، فسأغلي الماء. أنا جيد في إشعال النار تقريبًا مثل القائد والتر!"
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "THEN I WILL PREPARE THE LITENSILS!",
+          "confidence": 0.969,
+          "text_ar": "إذن سأجهز الأواني!"
+        },
+        {
+          "text": "分 川 COFFEE MANGA",
+          "confidence": 0.134,
+          "text_ar": ""
+        },
+        {
+          "text": "OH,I WOLLD REALLYAPPRECIATE THE HELP!",
+          "confidence": 0.934,
+          "text_ar": "أه، سأكون ممتنة حقًا للمساعدة!"
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "Vi COFFEE MANGA",
+          "confidence": 0.363,
+          "text_ar": ""
+        },
+        {
+          "text": "A FEW MOMENTS LATER.",
+          "confidence": 0.959,
+          "text_ar": "بعد لحظات قليلة."
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "I WAS SWINGING MY SWORD, AND SLDDENLY HIS HIGHNESS APPEARED OLT OF NOWHERE, AND...",
+          "confidence": 0.914,
+          "text_ar": "كنت ألوح بسيفي، وفجأة ظهر سموه من العدم، و..."
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": [
+        {
+          "text": "HE FELL DOWN, AND HE CAME TO JOIN THE PHOENIX...",
+          "confidence": 0.936,
+          "text_ar": "سقط، وجاء للانضمام إلى فينيكس..."
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": [
+        {
+          "text": "OIE HANGA",
+          "confidence": 0.694,
+          "text_ar": ""
+        },
+        {
+          "text": "HE LOOKED SERIOLS THE WHOLE TIME WE WERE RIDING...",
+          "confidence": 0.928,
+          "text_ar": "بدا جادًا طوال الوقت الذي كنا فيه على متن..."
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "。 COFFEE MANGA",
+          "confidence": 0.167,
+          "text_ar": ""
+        },
+        {
+          "text": "BUT HE DEFINITELY DOES SLIT THE OUTDOORS MORE THAN THE PALACE.",
+          "confidence": 0.887,
+          "text_ar": "لكنه بالتأكيد يناسب الأماكن المفتوحة أكثر من القصر."
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "* COFFEEMANGA 米",
+          "confidence": 0.166,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "HIS HEIGHT, HIS BLILD, HIS LOOKS... DID I MAKE A MISTAKE REJECTING HIM?",
+          "confidence": 0.942,
+          "text_ar": "طوله، بنيته، مظهره... هل ارتكبت خطأ برفضه؟"
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": [
+        {
+          "text": "OFFEEMANGA",
+          "confidence": 0.933,
+          "text_ar": ""
+        },
+        {
+          "text": "WHOA...LOOKAT HIS THIGHS. IS HE SHOWING THEM OFF ON PURPOSE?",
+          "confidence": 0.917,
+          "text_ar": "واو... انظري إلى فخذيه. هل يعرضهما عمداً؟"
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "I'M NOT SURE ABOUT YOUR THIGH SIZE PREFERENCE, BLT I MLIST SAY MY THIGHS AREN'T TOO BAD.",
+          "confidence": 0.91,
+          "text_ar": "لست متأكدة من تفضيلك لحجم الفخذ، لكن يجب أن أقول إن فخذي ليست سيئة للغاية."
+        },
+        {
+          "text": "Ci COFFEEMNGA",
+          "confidence": 0.615,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "COLILD IT BE?",
+          "confidence": 0.851,
+          "text_ar": "أيمكن أن يكون؟"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.927,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.929,
+          "text_ar": ""
+        },
+        {
+          "text": "JLIDGING BY HIS EXPRESSION, HE'S PROBABLY WONDERINGWHY I'M STARING AT HIM.",
+          "confidence": 0.92,
+          "text_ar": "الحكم من خلال تعبيرات وجهه، فهو على الأرجح يتساءل لماذا أحملق فيه."
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "OEEE",
+          "confidence": 0.483,
+          "text_ar": ""
+        },
+        {
+          "text": "UGH, DAMMIT.",
+          "confidence": 0.914,
+          "text_ar": "تباً، اللعنة."
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "Vi COFFEE MANGA",
+          "confidence": 0.453,
+          "text_ar": ""
+        },
+        {
+          "text": "AAAH!",
+          "confidence": 0.982,
+          "text_ar": "آآه!"
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "TRYING TO PRETENU LIKB SHE WASN'T GAWKING-ATKYLE!",
+          "confidence": 0.9,
+          "text_ar": "تحاول التظاهر بأنها لم تكن تحملق في كايل!"
+        },
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.921,
+          "text_ar": ""
+        },
+        {
+          "text": "FLINCH",
+          "confidence": 0.988,
+          "text_ar": "فزع"
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "EVERYONE, SILENCE!",
+          "confidence": 0.993,
+          "text_ar": "أيها الجميع، اصمتوا!"
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 85,
+      "sentences": []
+    },
+    {
+      "page": 86,
+      "image_id": 86,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.807,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 87,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "SOMEONE IS APPROACHING.",
+          "confidence": 0.992,
+          "text_ar": "أحدهم يقترب."
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 88,
+      "sentences": [
+        {
+          "text": "COFFEEMANGA",
+          "confidence": 0.966,
+          "text_ar": ""
+        },
+        {
+          "text": "EVERYONE, TO YOUR GLARD POSITIONS!",
+          "confidence": 0.928,
+          "text_ar": "الجميع، إلى مواضع حراستكم!"
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 89,
+      "sentences": [
+        {
+          "text": "HUH? WHATIS IT?! I DIDN'T HEAR ANYTHING!",
+          "confidence": 0.86,
+          "text_ar": "هاه؟ ما الأمر؟! لم أسمع شيئًا!"
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "TOBECONTINUED. 川 COFFEE MANGA",
+          "confidence": 0.159,
+          "text_ar": "يتبع."
+        },
+        {
+          "text": "WRITING MUNIRANG STORYBOARD NAWON ILLUSTRATION NU COLORINGASSISTANT NAKHYUN ILLUSTRATIONASSISTANT JUYUNKIM PRODUCTION KENAZLTD. WOODY EDITOR ZBARKY,Y PRODUCER",
+          "confidence": 0.978,
+          "text_ar": "تأليف مونيرانغ، القصة المصورة نأوون، الرسم نو، مساعدة التلوين ناكهيون، مساعدة الرسم جويون كيم، الإنتاج كيناز المحدودة ووودي، المححرر زباركي واي، المنتِج."
+        },
+        {
+          "text": "THISWORKISPUBLISHEDUNDERCONTRACTBETWEENKENAZLTD.AND THECOPYRIGHTHOLDER,ANDISPROTECTEDUNDERCOPYRIGHTLAW.ANY UNAUTHORIZEDUSE,DUPLICATION,ORSHARINGWILLBEMETWITHLEGALACTION.",
+          "confidence": 0.984,
+          "text_ar": "هذا العمل منشور بموجب عقد بين شركة كيناز المحدودة وصاحب حقوق الطبع والنشر، وهو محمي بموجب قوانين حقوق الطبع والنشر. أي استخدام أو نسخ أو مشاركة غير مصرح بها ستواجه إجراءات قانونية."
+        }
+      ]
+    }
+  ]
+}
