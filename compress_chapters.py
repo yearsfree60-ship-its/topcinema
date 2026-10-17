@@ -1198,6 +1198,8 @@ def _sb_headers_for(url: str) -> dict:
 _NO_REFERER_HOSTS: set[str] = set()   # نطاقات صور ترفض Referer (تُملأ وقت الجلب)
 _SB_SESSION = None
 _NO_RETRY_MARK = "[لا إعادة محاولة]"
+# صورة صغيرة (أيقونة/شعار جانبي 128x128…) ليست صفحة فصل: تُتخطّى بصمت بلا إعادة محاولة ولا تُحسب فشلًا.
+_ICON_MARK = "[أيقونة صغيرة]"
 
 
 def _get_sb_session():
@@ -1246,6 +1248,8 @@ def _fetch_images_via_sb_sync(chapter_url: str, no_referer: bool = False) -> tup
         return [], "لم تُستخرَج صور محتوى من DOM بعد حل التحدي", ""
     for u, b in (res.get("image_bytes") or {}).items():
         _SB_IMAGE_CACHE[u] = b
+    if no_referer and SB_PREFETCH_IMAGES and urls:
+        _prefetch_images_sync(urls, chapter_url, no_referer=True)
     if no_referer:
         # [إصلاح الإنتاج_الكامل] مسارات أخرى (ocr_extraction) تستدعي التنزيل بلا تمرير no_referer فكانت تُرسل
         # Referer فيرفض CDN بـ403. نسجّل نطاقات الصور هنا ليُطبَّق no_referer عليها تلقائيًا بأي مستدعٍ.
@@ -1254,6 +1258,34 @@ def _fetch_images_via_sb_sync(chapter_url: str, no_referer: bool = False) -> tup
             if h:
                 _NO_REFERER_HOSTS.add(h)
     return urls, "", extract_manga_title_from_html(res.get("html") or "")
+
+
+SB_PREFETCH_IMAGES = os.environ.get("SB_PREFETCH_IMAGES", "true").strip().lower() == "true"
+SB_PREFETCH_CONCURRENCY = max(1, min(12, int(os.environ.get("SB_PREFETCH_CONCURRENCY", "6") or 6)))
+
+
+def _prefetch_images_sync(urls: list[str], referer: str, no_referer: bool = False) -> int:
+    """[إصلاح — فصول طويلة] تنزيل كل بايتات الصور فور جمع الروابط وتخزينها بـ_SB_IMAGE_CACHE: وضع الإنتاج
+    الكامل يعالج الصفحات تسلسليًا (OCR) فكانت الصور المتأخرة تُجلَب بعد دقائق من جمع الروابط (فصل 148
+    صفحة: 14 صفحة رجعت 128x128 = بديل/انتهاء صلاحية/تقييد من CDN). التنزيل المبكر يُنهي هذه الفجوة.
+    ما فشل (أو رجع صورة بديلة) لا يُخزَّن فيعاد بمساره العادي بإعادة المحاولات."""
+    from concurrent.futures import ThreadPoolExecutor
+    todo = [u for u in dict.fromkeys(urls) if u not in _SB_IMAGE_CACHE]
+    if not todo:
+        return 0
+
+    def one(u: str) -> bool:
+        b, _why = fetch_image_bytes_http_sync(u, referer, no_referer)
+        if b:
+            _SB_IMAGE_CACHE[u] = b
+            return True
+        return False
+
+    t0 = time.monotonic()
+    with ThreadPoolExecutor(max_workers=SB_PREFETCH_CONCURRENCY) as ex:
+        ok = sum(1 for r in ex.map(one, todo) if r)
+    print(f"  ⬇️ [تنزيل مبكر] {ok}/{len(todo)} صورة خلال {time.monotonic() - t0:.1f}ث")
+    return ok
 
 
 def fetch_via_http_simple_sync(chapter_url: str, profile: dict | None = None) -> tuple[list[str], str, str]:
@@ -1361,6 +1393,8 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str,
         valid, why = _validate_image_bytes(cached)
         if valid:
             return cached, None
+        if "أبعاد صغيرة" in why:
+            return None, f"{_ICON_MARK} {why}"
         last_reason = f"نسخة المتصفح مرفوضة: {why}"
     for attempt in range(1, IMG_FETCH_RETRIES + 1):
         try:
@@ -1381,6 +1415,8 @@ def fetch_image_bytes_http_sync(img_url: str, referer: str,
                     valid, why = _validate_image_bytes(resp.content)
                     if valid:
                         return resp.content, None
+                    if "أبعاد صغيرة" in why:
+                        return None, f"{_ICON_MARK} {why}"   # أيقونة جانبية: لا إعادة محاولة ولا احتياطي متصفح
                     last_reason = why
                 else:
                     last_reason = f"جسم الاستجابة فارغ/صغير جدًا ({len(resp.content)} بايت)"
@@ -2355,6 +2391,7 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     failed_indices = []
     size_original: dict[int, int] = {}    # فهرس الصورة -> حجم الأصل بالبايت (قبل الضغط)
     size_compressed: dict[int, int] = {}  # فهرس الصورة -> حجم الناتج بالبايت (بعد الضغط)
+    icon_skipped: list[int] = []          # أيقونات/صور صغيرة تُتخطّى (ليست صفحات فصل)
     compress_sem = asyncio.Semaphore(COMPRESS_WORKERS)
 
     async def _compress_save(i: int, raw: bytes, img_url: str) -> None:
@@ -2378,6 +2415,9 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             raw, reason = await download(img_url)
             if dl_conc == 1 and not profile.get("sb_page_fetch"):
                 await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+        if not raw and reason and _ICON_MARK in reason:
+            icon_skipped.append(i)
+            return
         if not raw:
             print(f"  ⚠️ فشلت صورة {i}: {reason} — الرابط: {img_url}")
             failed_indices.append(i)
@@ -2414,7 +2454,9 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     if context:
         await context.close()
 
-    expected_count = len(image_urls)
+    if icon_skipped:
+        print(f"  🧹 تُخطّيت {len(icon_skipped)} صورة صغيرة (أيقونات/شعارات جانبية، ليست صفحات): {sorted(icon_skipped)}")
+    expected_count = len(image_urls) - len(icon_skipped)
     if not saved_paths or (len(saved_paths) != expected_count and not ALLOW_PARTIAL_CHAPTERS):
         shutil.rmtree(staging_root, ignore_errors=True)
         if saved_paths:
