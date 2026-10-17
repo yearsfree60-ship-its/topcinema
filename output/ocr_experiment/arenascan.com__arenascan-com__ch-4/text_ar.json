@@ -1,0 +1,768 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "4",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "AH, I'M HUNGRY...",
+          "confidence": 0.906,
+          "text_ar": "آه، أنا جائعة..."
+        },
+        {
+          "text": "STILL, IT'S WORTH WORKING OUT FROMDAWNUNTIL DINNER TIMEBEING STARVEDLIKE THIS...",
+          "confidence": 0.932,
+          "text_ar": "مع ذلك، فإن التدرب من الفجر حتى وقت العشاء وأنا محطمة هكذا يستحق العناء..."
+        },
+        {
+          "text": "I LOST 2KG!",
+          "confidence": 0.699,
+          "text_ar": "لقد خسرت كيلوجرامين!"
+        },
+        {
+          "text": "ARGH!!! 1",
+          "confidence": 0.214,
+          "text_ar": "آرغ! صخب"
+        },
+        {
+          "text": "WHAT IS THIS! WHEN DID THIS HAPPEN",
+          "confidence": 0.931,
+          "text_ar": "ما هذا! ومتى حدث هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "BETH---!",
+          "confidence": 0.954,
+          "text_ar": "بيث--!"
+        },
+        {
+          "text": "早烈合",
+          "confidence": 0.467,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "WHAT IS IT, MY LADY?",
+          "confidence": 0.871,
+          "text_ar": "ما الأمر، سيدتي؟"
+        },
+        {
+          "text": "OPENS",
+          "confidence": 0.957,
+          "text_ar": "فتح"
+        },
+        {
+          "text": "tremble",
+          "confidence": 0.995,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "WHAT... WHATIS THIS?",
+          "confidence": 0.944,
+          "text_ar": "ما... ما هذا؟"
+        },
+        {
+          "text": "I NEVER ASKED YOU FOR THIS.",
+          "confidence": 0.938,
+          "text_ar": "لم أطلب منكِ هذا قط."
+        },
+        {
+          "text": "THIS IS JUST THE SNACK THAT I BRING DAILYFOR THE YOUNG MAS- TERS AND LADIES...",
+          "confidence": 0.917,
+          "text_ar": "هذه مجرد وجبة خفيفة أحضرها يومياً للسادة والسيدات الصغار..."
+        },
+        {
+          "text": "SWEAT",
+          "confidence": 0.986,
+          "text_ar": "عرق"
+        },
+        {
+          "text": "WHY DIDIDO MY TRAINING ONAN EMPTY STOMACH THIS MORNING..",
+          "confidence": 0.91,
+          "text_ar": "لماذا تدربت على معدة فارغة هذا الصباح.."
+        },
+        {
+          "text": "NOW, IT'S FORBIDDEN TOBRING THOSE CHOCOLATECHIP COOKIESINTO MYROOM.",
+          "confidence": 0.921,
+          "text_ar": "الآن، يُمنع إحضار رقائق الشوكولاتة هذه إلى غرفتي."
+        },
+        {
+          "text": "TURNS",
+          "confidence": 0.987,
+          "text_ar": "التفاف"
+        },
+        {
+          "text": "WATER! THAT'SRIGHT! ONLYBRING IN WATER.TWO LITTERSEVE- RY TIME!",
+          "confidence": 0.958,
+          "text_ar": "ماء! هذا صحيح! أحضري الماء فقط. لتران في كل مرة!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "YES, MYLADY...",
+          "confidence": 0.888,
+          "text_ar": "حاضر، سيدتي..."
+        },
+        {
+          "text": "Oops",
+          "confidence": 0.836,
+          "text_ar": "عفواً"
+        },
+        {
+          "text": "..SORRY. I'MQUITE SENSITIVE LA- TELY...I WAS HARSH...",
+          "confidence": 0.802,
+          "text_ar": "..عذراً. أنا حساسة بعض الشيء مؤخراً... لقد كنت قاسية..."
+        },
+        {
+          "text": "PARDON?",
+          "confidence": 0.996,
+          "text_ar": "عذراً؟"
+        },
+        {
+          "text": "TURNS",
+          "confidence": 0.958,
+          "text_ar": "التفاف"
+        },
+        {
+          "text": "YOU'RE MY ONLY PER- SONAL MAID BUT I KEEPCALLING YOU FOR THIS ANDTHAT.",
+          "confidence": 0.915,
+          "text_ar": "أنتِ خادمتي الشخصية الوحيدة لكني لا أزال استدعيكِ لكل صغيرة وكبيرة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "AS NOBILITY.. WHAT DO YOU MEANBY SORRY!",
+          "confidence": 0.936,
+          "text_ar": "بصفتي من النبلاء... ما قاصدكِ بقول عذراً!"
+        },
+        {
+          "text": "ALSO, I'MNOT MY LADY'S PERSONAL MAID...",
+          "confidence": 0.855,
+          "text_ar": "كما أنني لسُت الخادمة الشخصية لسيدتي..."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.996,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "THAT IS... BECAUSE MY LADY HAS BEEN LYING DOWN FORALONG TIME, MY LADY DID NOT NEED A PERSONAL MAID...",
+          "confidence": 0.867,
+          "text_ar": "هذا... لأن سيدتي كانت طريحة الفراش لفترة طويلة، لذا لم تكن بحاجة لخادمة شخصية..."
+        },
+        {
+          "text": "I'M JUST FOLLOWING THE MISTRESSORDER AND ENTERING THE ROOMWHENIT'S MY TURN.",
+          "confidence": 0.921,
+          "text_ar": "أنا أتبع أوامر السيدة وأدخل الغرفة فقط عندما يحين دوري."
+        },
+        {
+          "text": "AH... BECAUSE YOU CAME OFTEN, I THOUGHT...",
+          "confidence": 0.889,
+          "text_ar": "آه... لأنكِ كنتِ تأتين كثيراً، ظننتُ..."
+        },
+        {
+          "text": "you were my personal mad for sure",
+          "confidence": 0.981,
+          "text_ar": "أنتِ خادمتي الشخصية بالتأكيد."
+        },
+        {
+          "text": "That's because.. MYLADY WASOFTEN CALLING FOR ME...",
+          "confidence": 0.895,
+          "text_ar": "هذا لأن... سيدتي كانت تستدعيني مراراً وتكراراً..."
+        },
+        {
+          "text": "Is that all she had to say?",
+          "confidence": 0.971,
+          "text_ar": "أهذا كل ما تمتلكه لتقوله؟"
+        },
+        {
+          "text": ".IFI WAS TO SAY I WANTEDYOU AS MY EXCLUSIVE MAID, WOULD YOU ACCEPT IT?",
+          "confidence": 0.878,
+          "text_ar": ".لو طلبتُ أن تكوني خادمتي الخاصة، فهل ستوافقين؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "PARDON?! WHAT ARE YOU TALKING ABOUT?",
+          "confidence": 0.948,
+          "text_ar": "عفواً؟! عما تتحدثين؟"
+        },
+        {
+          "text": "THAT... THAT'S MY JOB TO ACT ACCORDING TO ORDERS,SO HOWCOULD I...",
+          "confidence": 0.781,
+          "text_ar": "هذا... من واجبي التصرف وفقاً للأوامر، فكيف لي أن..."
+        },
+        {
+          "text": "EVEN SO, ICAN'TGIVE YOU AN ORDER IF IT'S AGAINST YOUR WILL.",
+          "confidence": 0.926,
+          "text_ar": "مع ذلك، لا يمكنني إعطاؤكِ أمراً ضد رغبتكِ."
+        },
+        {
+          "text": "THAT...",
+          "confidence": 0.84,
+          "text_ar": "هذا..."
+        },
+        {
+          "text": "I'VE NEVER HEARD SUCH AREQUEST BEFORE...",
+          "confidence": 0.932,
+          "text_ar": "لم أسمع بمثل هذا الطلب من قبل..."
+        },
+        {
+          "text": "YOU JUST NEED TO SAY IF YOU WOULD LIKE IT OR NOT. Where did my. cloak go again.",
+          "confidence": 0.899,
+          "text_ar": "عليكِ فقط أن تقولي ما إذا كنتِ ترغبين في ذلك أم لا. أين وضعت عباءتي يا ترى."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "I... I WOULD LIKE IT, MY LADY...",
+          "confidence": 0.779,
+          "text_ar": "أنا... أنا أرغب في ذلك، سيدتي..."
+        },
+        {
+          "text": "ALSO, I LEFT THE CLOAK IN THE LAUNDRYROOMTO REPAIRITBECAUSE ITHADALOOSE BUTTON!",
+          "confidence": 0.926,
+          "text_ar": "كما أنني تركت العباءة في غرفة الغسيل لإصلاحها لأن أحد أزرارها كان مفككاً!"
+        },
+        {
+          "text": "I,I'LL BRING IT BACK IMMEDIATELY!",
+          "confidence": 0.899,
+          "text_ar": "سأحضرها فوراً!"
+        },
+        {
+          "text": "DASH",
+          "confidence": 0.959,
+          "text_ar": "ركض"
+        },
+        {
+          "text": "REALLY, IT'S NOTHING MUCH...",
+          "confidence": 0.929,
+          "text_ar": " حقاً، إنه أمر بسيط..."
+        },
+        {
+          "text": "WHAT DID YOU JUST SAY?",
+          "confidence": 0.92,
+          "text_ar": "ماذا قلت للتو؟"
+        },
+        {
+          "text": "A FAVOR? FROM ME?",
+          "confidence": 0.923,
+          "text_ar": "معروف؟ مني؟"
+        },
+        {
+          "text": "Victoria Elias, 48 years old. The great madam of House Elias",
+          "confidence": 0.963,
+          "text_ar": "فيكتوريا إليوس، 48 عاماً. السيدة الكبرى لآل إليوس."
+        },
+        {
+          "text": "The mother of Jason,the second child, and chloe, the third child.",
+          "confidence": 0.961,
+          "text_ar": "والدة جايسون الابن الثاني، وكلوي الابنة الثالثة."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THERE ARE TOO MANY VISITOR TO TALK ABOUT THE PROBLEM INSIDE THE MANSION...",
+          "confidence": 0.947,
+          "text_ar": "هناك عدد كبير جداً من الزوار للحديث عن المشكلة داخل القصر..."
+        },
+        {
+          "text": "GROAN",
+          "confidence": 0.985,
+          "text_ar": "أنين"
+        },
+        {
+          "text": "WHAT DO YOU THINKYOU'RE DOING,COMING TOFINDME ASYOU LIKE?!",
+          "confidence": 0.909,
+          "text_ar": "ما الذي تظنين أنك فاعلة، بمجيئك للبحث عني كما تشائين؟!"
+        },
+        {
+          "text": "STARTLED",
+          "confidence": 0.97,
+          "text_ar": "فزع"
+        },
+        {
+          "text": "PAR... PARDON?",
+          "confidence": 0.881,
+          "text_ar": "مع... معذرة؟"
+        },
+        {
+          "text": "YOU THINK MYPRECIOUS TIME IS THE SAME AS YOURS?",
+          "confidence": 0.931,
+          "text_ar": "أترين أن وقتي الثمين رخيص كوقْتِكِ؟"
+        },
+        {
+          "text": "THAT IS WHY COMMONERS ARE-!",
+          "confidence": 0.941,
+          "text_ar": "لهذا السبب فإن العامة...!"
+        },
+        {
+          "text": "STANDS UP",
+          "confidence": 0.962,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "I'm sorry madam.",
+          "confidence": 0.971,
+          "text_ar": "أعتذر سيدتي."
+        },
+        {
+          "text": "I don't think my child has fully mastered the family etiguette Since She woke up not too long ago.",
+          "confidence": 0.908,
+          "text_ar": "لا أعتقد أن طفلتي قد أتقنت تماماً آداب العائلة نظراً لأنها استيقظت منذ وقت ليس بعيد."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "Isabelle Elias, 36 years old, the only one on my side in the family.",
+          "confidence": 0.954,
+          "text_ar": "إيزابيل إليوس، 36 عاماً، الشخص الوحيد في صفي داخل العائلة."
+        },
+        {
+          "text": "Father Llyod Elia's third wife.",
+          "confidence": 0.958,
+          "text_ar": "الزوجة الثالثة للأب لويد إليوس."
+        },
+        {
+          "text": "DEAR, NEXT TIME... WHEN THE MADAM WILL HAVE TIME PRIVATELY...",
+          "confidence": 0.944,
+          "text_ar": "عزيزتي، في المرة القادمة... عندما تتاح للسيدة وقتاً خاصاً..."
+        },
+        {
+          "text": "SHE DOESN'T HIDE THE FACT THAT SHE'S MORE OF AN ARIS- TOCRAT.IDIDFEEL THEY WERE TREATING US WITH CONTEMPT BUT THERE IS ALIMIT TOIT.",
+          "confidence": 0.896,
+          "text_ar": "فهي لا تخفي حقيقة أنها أرستقراطية أكثر من اللازم. لقد شعرت حقاً أنهن يعاملننا بازدراء ولكن هناك حد لكل شيء."
+        },
+        {
+          "text": "IHAVE NO CHOICE BUT TO ENDURE /T.",
+          "confidence": 0.707,
+          "text_ar": "ليس لدي خيار سوى التحمل."
+        },
+        {
+          "text": "I WAS RUDE. NEXT TIME,I WILL ASK MADAM IN ADVANCE AND COME SEE YOU.",
+          "confidence": 0.879,
+          "text_ar": "لقد كنت فظة. في المرة القادمة، سأستأذن السيدة مسبقاً وأتي لرؤيتك."
+        },
+        {
+          "text": "BOWS",
+          "confidence": 0.961,
+          "text_ar": "انحناء"
+        },
+        {
+          "text": "THOSE PEOPLE WITHOUT ANY FOUNDATION, THEYDON'TKNOW ANYTHINGABOUT MANNERS.",
+          "confidence": 0.969,
+          "text_ar": "أولئك الأشخاص بلا أصول، لا يعرفون شيئاً عن الآداب."
+        },
+        {
+          "text": "HOW DARESHE ASK ME A FAVOR.",
+          "confidence": 0.762,
+          "text_ar": "كيف تجرأت على طلب معروف مني."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "MUMBLE ITRIED TOHOLDIT IN BECAUSE IT WOULD DO MORE HARM THAN GOOD BUT...",
+          "confidence": 0.894,
+          "text_ar": "تمتم: حاولت كبح نفسي لأن ضرر ذلك سيكون أكبر من نفعها ولكن..."
+        },
+        {
+          "text": "BROTHER JASONHAS FOUR,",
+          "confidence": 0.968,
+          "text_ar": "الأخ جايسون لديه أربع،"
+        },
+        {
+          "text": "BROTHER LOGAN HAS TWO. TURNS",
+          "confidence": 0.887,
+          "text_ar": "الأخ لوغان لديه اثنتان. التفاف"
+        },
+        {
+          "text": "CHLOE AND ARIA HAVE THREE.",
+          "confidence": 0.967,
+          "text_ar": "كلوي وآريا لديهما ثلاث."
+        },
+        {
+          "text": "WHY ARE YOU TALKING ABOUT WEIRD NUMBERS?",
+          "confidence": 0.958,
+          "text_ar": "لماذا تتحدثين عن أرقام غريبة؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I HAVE NONE.",
+          "confidence": 0.868,
+          "text_ar": "أنا ليس لدي أي واحدة."
+        },
+        {
+          "text": "OF WHAT!",
+          "confidence": 0.969,
+          "text_ar": "من ماذا!"
+        },
+        {
+          "text": "-TURNS",
+          "confidence": 0.921,
+          "text_ar": "-التفاف"
+        },
+        {
+          "text": "What is it that you don't have, lady?",
+          "confidence": 0.946,
+          "text_ar": "ما الذي لا تمتلكينه يا سيدتي؟"
+        },
+        {
+          "text": "IT'S THE NUMBEROF PERSONAL MAIDS.",
+          "confidence": 0.905,
+          "text_ar": "إنه عدد الخادمات الشخصيات."
+        },
+        {
+          "text": "OH MY GOOD- NESS..",
+          "confidence": 0.925,
+          "text_ar": "يا إلهي.."
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.996,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.997,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "A NOBLE CHILD IN THE FIFTH-HIGHEST FAMILY IN THE EMPIRE HAS NO PERSONAL MAID... STARTLED",
+          "confidence": 0.927,
+          "text_ar": "طفلة نبيلة في خامس أعرق عائلة في الإمبراطورية ليس لديها خادمة شخصية... فزع"
+        },
+        {
+          "text": "THAT'S WAYTOO HARSH...",
+          "confidence": 0.949,
+          "text_ar": "هذا قاسٍ للغاية..."
+        },
+        {
+          "text": "THAT... THAT'S NONESENSE...",
+          "confidence": 0.878,
+          "text_ar": "هذا... هذا هراء..."
+        },
+        {
+          "text": "FLUSH",
+          "confidence": 0.965,
+          "text_ar": "احمرار"
+        },
+        {
+          "text": "IKNOW YOU COULDN'T PAY ATTENTIONTO IT BECAUSE THERE WAS AN ERROR WITH THE FOODSUPPLIES LAST MONTH.",
+          "confidence": 0.938,
+          "text_ar": "أعلم أنك لم تدركي ذلك لأنه حدث خطأ في الإمدادات الغذائية الشهر الماضي."
+        },
+        {
+          "text": "IALSO KNOW YOU'VE ALREADY AS- SIGNED ONE.",
+          "confidence": 0.93,
+          "text_ar": "وأعلم أيضاً أنك قد عينت واحدة بالفعل."
+        },
+        {
+          "text": "RISE",
+          "confidence": 0.974,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "RI- RIGHTI WASQUITE BUSY...",
+          "confidence": 0.791,
+          "text_ar": "ص-صحيح لقد كنت مشغولة للغاية..."
+        },
+        {
+          "text": "SO THAT'S WHYMYPAPER- WORKS WERE LATE.. BECAUSEOF THAT BOY'S FOOD SUPPLIES... AND...AND...",
+          "confidence": 0.853,
+          "text_ar": "ولهذا تأخرت أعمالي الورقية.. بسبب الإمدادات الغذائية لهذا الفتى... و... و..."
+        },
+        {
+          "text": "YES. ANDYOU WEREBUSY BRINGINGINNEW MAIDSAFTERFIRING A FEWMAIDS WHO WERESTEALING.",
+          "confidence": 0.927,
+          "text_ar": "نعم. وكنت مشغولة بإحضار خادمات جديدات بعد طرد عدد ممن كن يسرقن."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "SMILE",
+          "confidence": 0.974,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "I HAVE A NAMEINMIND ANDI CAME HERE TODAYTOREQUEST TO HAVE HER AS- SIGNED TO ME.",
+          "confidence": 0.901,
+          "text_ar": "لدي اسم في ذهنـي وقد أتيت اليوم لأطلب تعيينها لي."
+        },
+        {
+          "text": "I HOPE YOU LISTEN TO MY REQUEST WITHA GENEROUS HEART, MADAM.",
+          "confidence": 0.929,
+          "text_ar": "آمل أن تستمعي لطلبي بقلب رحب، سيدتي."
+        },
+        {
+          "text": "THAT'S RIGTH. SINCEI TOLD THEM TO CHOOSE CAREFULLY BECAUSE YOU'RE SICK, THEHEAD MAID MUST BE TAKING HER TIME.",
+          "confidence": 0.946,
+          "text_ar": "هذا صحيح. بما أنني أخبرتهم أن يختاروا بعناية لأنك مريضة، فلا بد أن الكبيرة الخادمات تأخذ وقتها."
+        },
+        {
+          "text": "TREMBLE",
+          "confidence": 0.985,
+          "text_ar": "ارتجاف"
+        },
+        {
+          "text": "T-TELL THE HEAD MAIDIGAVE YOU PER- MISSION.",
+          "confidence": 0.924,
+          "text_ar": "أخـ-أخبري رئيسة الخادمات أنني من أذنت لك."
+        },
+        {
+          "text": "HOWDID YOU KNOW? THE FACT THAT SHE CHANGED THE FOOD SUPPLIES LAST MONTH.",
+          "confidence": 0.937,
+          "text_ar": "كيف عرفت؟ حقيقة أنها غيرت الإمدادات الغذائية الشهر الماضي."
+        },
+        {
+          "text": "I WENTTO THE BUSSINESS OFFICE AND ASKED.",
+          "confidence": 0.966,
+          "text_ar": "ذهبت إلى مكتب الأعمال وسألت."
+        },
+        {
+          "text": "THE INFORMATION CANBE ACCESSED BY THE IMMEDIATE FAMILY.",
+          "confidence": 0.945,
+          "text_ar": "يمكن للعائلة المباشرة الاطلاع على هذه المعلومات."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "THEN.. YOU THOUGHT ABOUT ALL OF THIS IN AD- VANCE...",
+          "confidence": 0.911,
+          "text_ar": "إذن.. لقد فكرت في كل هذا مسبقاً..."
+        },
+        {
+          "text": "AH, RIGHT! I HEARDABIT BEFORE ENTERING, MOTHERISINVEST- ING THERE TOO?",
+          "confidence": 0.947,
+          "text_ar": "آه، صحيح! سمعت قليلاً قبل الدخول، هل والدة تستثمر هناك أيضاً؟"
+        },
+        {
+          "text": ".IT'S TRUE THAT THE PROHIBITION ORDER WILL BE LIFTED...",
+          "confidence": 0.837,
+          "text_ar": ".صحيح أن أمر الحظر سيُرفع..."
+        },
+        {
+          "text": ".THE INVESMENT IN THE SOR- BONNE WINE...",
+          "confidence": 0.852,
+          "text_ar": ".الاستثمار في نبيذ سوربون..."
+        },
+        {
+          "text": "SORBONNE WINE? PROHIBI- TION ORDER?",
+          "confidence": 0.952,
+          "text_ar": "نبيذ سوربون؟ أمر الحظر؟"
+        },
+        {
+          "text": ".THIS KIND OF HIGH CLASS INFORMATIONIS ESPECIALLY.",
+          "confidence": 0.892,
+          "text_ar": ".هذا النوع من المعلومات الراقية بشكل خاص."
+        },
+        {
+          "text": "...THE DEVIDEN RATE IS MORE THAN TWENTY TIMES...",
+          "confidence": 0.789,
+          "text_ar": "...معدل الأرباح يزيد عن عشرين ضعفا..."
+        },
+        {
+          "text": "Hmm... RIGHT... THERE WILL BE ALOTOF PROFIT...",
+          "confidence": 0.867,
+          "text_ar": "همم... صحيح... سيكون هناك الكثير من الربح..."
+        },
+        {
+          "text": "THE MADAM AND ALL THE WIVES GATHERED THERE DECIDED TO INVEST TOO.",
+          "confidence": 0.926,
+          "text_ar": "قررت السيدة وجميع الزوجات المجتمعَات هناك الاستثمار أيضاً."
+        },
+        {
+          "text": "IKNOW THE ARISTOCRAT THEARISTOCRAT WIVES AREFREE WIVESAREFREE TO INVEST,",
+          "confidence": 0.864,
+          "text_ar": "أعلم أن الزوجات الأرستقراطيات حرات في الاستثمار،"
+        },
+        {
+          "text": "BUT INEED TO LOOK INTOIT.",
+          "confidence": 0.93,
+          "text_ar": "لكني بحاجة للتحقق من الأمر."
+        },
+        {
+          "text": "INAFEW DAYS BE SURE TO CONSULT WITHME AND...",
+          "confidence": 0.896,
+          "text_ar": "في غضون أيام قليلة تأكدي من استشارتي و..."
+        },
+        {
+          "text": ".DECIDE...",
+          "confidence": 0.843,
+          "text_ar": ".القرر..."
+        },
+        {
+          "text": "I'M SURE IT'S YOU BUT...",
+          "confidence": 0.921,
+          "text_ar": "أنا متأكدة من أنك أنتِ ولكن..."
+        },
+        {
+          "text": "YOU'RE DIFFERENT FROMHOWYOU WERE SEVEN YEARS AGO...",
+          "confidence": 0.919,
+          "text_ar": "أنتِ مختلفة عما كنتِ عليه قبل سبع سنوات..."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "IT SEEMS YOU GREW UP SO MUCH...",
+          "confidence": 0.869,
+          "text_ar": "يبدو أنك كبرت كثيراً..."
+        },
+        {
+          "text": "RI-RIGHT?! DIDN'TIGROW UP SO MUCH? AHA,AHAHA!",
+          "confidence": 0.922,
+          "text_ar": "أ-أصحيح؟! ألم أكمُد في النمو كثيراً؟ آها، آهاها!"
+        },
+        {
+          "text": "ANYWAY,BE SURETOCONSULT WITH ME ABOUT THE INVESTMENT.I'LL BE GOING NOW, MOTHER!",
+          "confidence": 0.947,
+          "text_ar": "على أي حال، تأكدي من استشارتي بشأن الاستثمار. سأذهب الآن يا أمي!"
+        },
+        {
+          "text": "ALRIGHT.. BUT WHERE ARE YOU GOING LIKE THIS?",
+          "confidence": 0.933,
+          "text_ar": "حسناً.. لكن إلى أين أنت ذاهبة هكذا؟"
+        },
+        {
+          "text": "I'M GOING TO TEST MY LUCK!",
+          "confidence": 0.92,
+          "text_ar": "أنا ذاهبة لأختبر حظي!"
+        },
+        {
+          "text": "T/N: THEY ACTUALLY USE THE PROVERB \"THIRD TIME'S A CHARM\"",
+          "confidence": 0.912,
+          "text_ar": "مترجم: هنالك مثل أجنبي يقال للمرة الثالثة ثابتة"
+        },
+        {
+          "text": "WHAT, WHAT LUCK...",
+          "confidence": 0.915,
+          "text_ar": "ماذا، أي حظ..."
+        },
+        {
+          "text": "SWEETIE..?",
+          "confidence": 0.85,
+          "text_ar": "عزيزتي..؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "WHEREON EARTH IS THE EXACT DES- TINATION?",
+          "confidence": 0.947,
+          "text_ar": "أين الجانب المقصود بحق الجحيم؟"
+        },
+        {
+          "text": "香百食子",
+          "confidence": 0.453,
+          "text_ar": "مؤثرات صوتية"
+        },
+        {
+          "text": "WHAT? ARE YOU CRAZY?",
+          "confidence": 0.917,
+          "text_ar": "ماذا؟ أجننتِ؟"
+        },
+        {
+          "text": "NO,I'M PERFECTLY SANE.",
+          "confidence": 0.936,
+          "text_ar": "لا، أنا بكامل قواي العقلية."
+        },
+        {
+          "text": "THEN, SHOULD WE GO AND DO SOME COAXING?",
+          "confidence": 0.935,
+          "text_ar": "إذن، ألن نذهب لنقوم ببعض الاسترضاء؟"
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.946,
+          "text_ar": "KENAZ webtoon IP holder"
+        },
+        {
+          "text": "N NU wNM（） odyNaaM（）",
+          "confidence": 0.471,
+          "text_ar": "حقوق النشر"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "Notes: We're officially dropping this series! Good luck for Bell's Scans who will continuing this series~",
+          "confidence": 0.902,
+          "text_ar": "ملاحظات: نحن نتخلى رسمياً عن هذه السلسلة! حظاً سعيداً لفريق Bell's Scans لمتابعة هذه السلسلة~"
+        },
+        {
+          "text": "Brought to you by PEACHY https://discord.com/invite/qFwT",
+          "confidence": 0.8,
+          "text_ar": "قدمت لكم بواسطة PEACHY"
+        },
+        {
+          "text": "Roro Roro Nikolean Roro/lrene Fira Ran/Noura",
+          "confidence": 0.971,
+          "text_ar": "طاقم العمل"
+        },
+        {
+          "text": "Raw Provider Translator Proofreader Cleaner/Redrawer Typesetter Quality checker",
+          "confidence": 0.978,
+          "text_ar": "مزود الخام | المترجم | المدقق | المنقي/المعدل | مصفف النصوص | فاحص الجودة"
+        }
+      ]
+    }
+  ]
+}
