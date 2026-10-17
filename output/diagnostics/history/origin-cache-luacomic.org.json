@@ -1,0 +1,66 @@
+{
+  "domain": "luacomic.org",
+  "saved_at": "2026-10-17T06:10:00Z",
+  "candidates": [
+    {
+      "ip": "154.41.250.146",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "luacomic.org"
+      ],
+      "first_seen": "2024-08-24T15:48:14",
+      "last_seen": "2024-08-24T15:48:14"
+    },
+    {
+      "ip": "154.41.250.176",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "luacomic.org"
+      ],
+      "first_seen": "2024-08-29T09:05:33",
+      "last_seen": "2024-08-29T09:05:33"
+    },
+    {
+      "ip": "191.96.144.1",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "luacomic.org"
+      ],
+      "first_seen": "2024-08-16T07:16:30",
+      "last_seen": "2024-08-16T07:16:30"
+    },
+    {
+      "ip": "191.96.144.187",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "luacomic.org"
+      ],
+      "first_seen": "2024-10-15T13:42:54",
+      "last_seen": "2024-10-15T13:42:54"
+    },
+    {
+      "ip": "77.37.76.94",
+      "score": 7,
+      "sources": [
+        "OTX passive DNS"
+      ],
+      "hostnames": [
+        "luacomic.org"
+      ],
+      "first_seen": "2024-10-18T09:21:13",
+      "last_seen": "2024-10-18T09:21:13"
+    }
+  ]
+}

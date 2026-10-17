@@ -32,5 +32,22 @@
       "image_cdn_verdict": "blocked_even_with_clearance"
     },
     "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+  },
+  "luacomic.org": {
+    "domain": "luacomic.org",
+    "strategy": "seleniumbase_cdp_warp",
+    "engine": "seleniumbase",
+    "egress": "warp",
+    "headed_virtual_display": true,
+    "challenge_wait_sec": 14,
+    "verified_at": "2026-10-17T06:15:32Z",
+    "run_id": "39008736348",
+    "evidence": {
+      "cf_clearance": true,
+      "images_found": 6,
+      "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+      "image_cdn_verdict": "blocked_even_with_clearance"
+    },
+    "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
   }
 }
