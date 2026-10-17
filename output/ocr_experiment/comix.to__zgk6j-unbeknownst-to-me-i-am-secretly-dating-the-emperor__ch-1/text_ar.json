@@ -1,0 +1,48 @@
+{
+  "manga_id": "comix.to__zgk6j-unbeknownst-to-me-i-am-secretly-dating-the-emperor",
+  "chapter_num": "1",
+  "manga_title": "Unbeknownst to Me, I Am Secretly Dating the Emperor ·",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "sentences": [
+        {
+          "text": "Violet WelcometotheworldofVioletScans Wherebeautymeetsstorytelling WhyViolet Scans? Curatedwebtoonswithheartandsoul High-qualitytranslationswithafemininetouch Aaeceormmaicnylvers",
+          "confidence": 0.577,
+          "text_ar": "مرحباً بك في عالم فيوليت سكانز، حيث الجمال يلتقي بسرد القصص."
+        },
+        {
+          "text": "JoinourComunityNow! Real-time updates onnew releases Awelcomingspaceforromance&fantasy lovers Shreoravoitie StartyouroueatViolecaw",
+          "confidence": 0.617,
+          "text_ar": "انضم إلى مجتمعنا الآن واحصل على تحديثات فورية للإصدارات الجديدة!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "sentences": [
+        {
+          "text": "JUST BECAUSE YOU REINCARNATED INTO A NOVELDOESNOT MEAN EVERYONEBECOMESTHE PROTAGONIST.",
+          "confidence": 0.884,
+          "text_ar": "مجرد تقمصك لشخصية في رواية لا يعني أنك ستصبح البطل."
+        },
+        {
+          "text": "THERE ARE SAINTESSES WHO SEIZE LOVE AFTER ENDURING COUNTLESS HARDSHIPS,",
+          "confidence": 0.951,
+          "text_ar": "هناك قديسات يظفرن بالحب بعد تحمل مصاعب لا تُحصى."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "sentences": [
+        {
+          "text": "中 - 。 享 享",
+          "confidence": 0.059,
+          "text_ar": "..."
+        }
+      ]
+    }
+  ]
+}
