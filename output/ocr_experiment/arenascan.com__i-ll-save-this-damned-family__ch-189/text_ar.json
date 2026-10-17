@@ -1,0 +1,665 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "189",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Violet WelcometotheworldofVioletScans Where beautymeetsstorytelling WhyVioletScans? Curatedwebtoonswithheartandsoul Highualittrnslationswithafminnetouch Aafecorremrroicn Join our Comunity Now! Real-timeupdatesonnewreleases Awelcomingspaceforromance&fantasylovers hae Startyole.",
+          "confidence": 0.544,
+          "text_ar": "مرحباً بكم في عالم فريست فايبر!"
+        },
+        {
+          "text": "6 Months",
+          "confidence": 0.985,
+          "text_ar": "٦ أشهر"
+        },
+        {
+          "text": "IT'S RIGHT TO PRETENDNOTTO KNOW.",
+          "confidence": 0.901,
+          "text_ar": "من الأفضل التظاهر بعدم معرفة أي شيء."
+        },
+        {
+          "text": "BUT IT'S STILLNICETOSEE HIM LIKE THIS.",
+          "confidence": 0.901,
+          "text_ar": "لكنه لا يزال يبدو رائعاً هكذا."
+        },
+        {
+          "text": "HISOUTFIT LOOKSNICE TODAY TOO.",
+          "confidence": 0.97,
+          "text_ar": "ملابسه تبدو جميلة اليوم أيضاً."
+        },
+        {
+          "text": "ALRIGHT, THEN LET'S SCHEDULE THEFIRST QUARTERREGULAR MILITARY TRAININGTOSTARTWITH THE SOUTHERN UNITS,",
+          "confidence": 0.95,
+          "text_ar": "حسناً، إذن لنُحدِّد موعداً لبدء التدريب العسكري المنتظم للربع الأول مع الوحدات الجنوبية،"
+        },
+        {
+          "text": "NEXT WE WILL MOVEONTO THE BUDGET FORTHE MILITARY WEAPONS ADMINISTRATION.",
+          "confidence": 0.93,
+          "text_ar": "بعد ذلك سننتقل إلى ميزانية إدارة الأسلحة العسكرية."
+        },
+        {
+          "text": "AH! THAT'S ENOUGH.FOCUS!",
+          "confidence": 0.951,
+          "text_ar": "آه! يكفي هذا، ركّزي!"
+        },
+        {
+          "text": "话 不兵",
+          "confidence": 0.195,
+          "text_ar": ""
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.962,
+          "text_ar": ""
+        },
+        {
+          "text": "/HAVEN'T SEEN HER IN TWO WEEKS.",
+          "confidence": 0.905,
+          "text_ar": "لم أرها منذ أسبوعين."
+        },
+        {
+          "text": "SHE'S STILL WORKING HARD.",
+          "confidence": 0.964,
+          "text_ar": "ما زالت تعمل بجد."
+        },
+        {
+          "text": "SHE'S PRETTY...",
+          "confidence": 0.895,
+          "text_ar": "إنها جميلة..."
+        },
+        {
+          "text": "AND LOVELY.",
+          "confidence": 0.937,
+          "text_ar": "وساحرة."
+        },
+        {
+          "text": "W brok.",
+          "confidence": 0.456,
+          "text_ar": ""
+        },
+        {
+          "text": "THIS IS DRIVING ME CRAZY.",
+          "confidence": 0.932,
+          "text_ar": "هذا يجنّني."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "Sp 3 210d 0ly 0",
+          "confidence": 0.193,
+          "text_ar": ""
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.918,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S ALMOST OVER. NEXTUPIS...",
+          "confidence": 0.909,
+          "text_ar": "قاربنا على الانتهاء. التالي هو..."
+        },
+        {
+          "text": "AH.THAT PERSONTALKS FAST!",
+          "confidence": 0.991,
+          "text_ar": "آه، هذا الشخص يتحدث بسرعة!"
+        },
+        {
+          "text": "MILITARY PERSONNEL DEPARTMENT NON-COMMISSIONED OFFICER",
+          "confidence": 0.978,
+          "text_ar": "قسم شؤون الأفراد العسكريين - ضابط صف"
+        },
+        {
+          "text": "斗 A THERRACTICA THE PRACTICAL EXAMFOR GYAMFOR F INTERMEDIATECOMMANDERSOF THE SPECIAL WEAPONS DIVISION WILL BE HELD STARTING IN TWO DAYS.THEEXAMWILL TAKEPLACE SIMULTANEOUSLYNATIONWIDE,",
+          "confidence": 0.077,
+          "text_ar": "ستُعقد الاختبارات العملية لقادة الأفرع الوسطى في فرقة الأسلحة الخاصة بدءاً من بعد غدٍ، وستُجرى الاختبارات في جميع أنحاء البلاد بالتزامن،"
+        },
+        {
+          "text": "THE TOTAL NUMBER OF SELECTEES IS 2,895, AND THE TOTAL NUMBER OF APPLICANTS IS 32,813. E 2",
+          "confidence": 0.245,
+          "text_ar": "إجمالي عدد المقبولين هو ٢,٨٩٥، وإجمالي عدد المتقدمين هو ٣٢,٨١٣."
+        },
+        {
+          "text": "UGH. HE SPEAKS TOOFAST.",
+          "confidence": 0.964,
+          "text_ar": "تباً، إنه يتحدث بسرعة كبيرة."
+        },
+        {
+          "text": "THECOMPETITION RATIOIS11.3TO1.THE NUMBEROFAPPLICANTS FOR THE BOWIS 1,O23.",
+          "confidence": 0.915,
+          "text_ar": "نسبة المنافسة هي ١١.٣ إلى ١. وعدد المتقدمين للرماية بالقوس هو ١,٠٢٣."
+        },
+        {
+          "text": "THECOMPETITION RATIO1S11.3TO1AND BOWAPPLICANTS ARE...",
+          "confidence": 0.938,
+          "text_ar": "نسبة المنافسة هي ١١.٣ إلى ١ والمتقدمون للرماية بالقوس هم..."
+        },
+        {
+          "text": "AXE APPLICANTS ARE 677, AND SPEAR APPLICANTS ARE!",
+          "confidence": 0.976,
+          "text_ar": "المتقدمون لاستخدام الفأس هم ٦٧٧، والمتقدمون للرماح هم!"
+        },
+        {
+          "text": "WAIT!",
+          "confidence": 0.986,
+          "text_ar": "انتظر!"
+        },
+        {
+          "text": "YES?",
+          "confidence": 0.976,
+          "text_ar": "نعم؟"
+        },
+        {
+          "text": "YOU SPEAK TOO FAST. SLOWDOWN A BIT.",
+          "confidence": 0.929,
+          "text_ar": "أنت تتحدث بسرعة كبيرة. أبطئ قليلاً."
+        },
+        {
+          "text": "AH.YES, SIR!IWILL CORRECT MYSELF!",
+          "confidence": 0.97,
+          "text_ar": "آه، نعم سيدي! سأصحح نفسي!"
+        },
+        {
+          "text": "So... SPEARAPPLICANTS TOTAL 221. WITH THIS, ALL APPLICANTS HAVE BEEN REGISTERED...",
+          "confidence": 0.836,
+          "text_ar": "إذن... إجمالي المتقدمين للرماح هو ٢٢١. وبهذا، تم تسجيل جميع المتقدمين..."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.944,
+          "text_ar": ""
+        },
+        {
+          "text": "COULDIT BE BECAUSE OF ME?",
+          "confidence": 0.927,
+          "text_ar": "أتُراه بسببي؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WHAT'S THAT? THEY SAY PRETTYPEOPLEONLYDO PRETTYTHINGS!",
+          "confidence": 0.957,
+          "text_ar": "ما هذا؟ يقولون إن الأشخاص الجميلين يفعلون أشياء جميلة فقط!"
+        },
+        {
+          "text": "人*人***人*人*人**人* 八人人*人*人人*人*八*人人*八*人*八",
+          "confidence": 0.514,
+          "text_ar": ""
+        },
+        {
+          "text": "THAT'S ALL.",
+          "confidence": 0.978,
+          "text_ar": "هذا كل شيء."
+        },
+        {
+          "text": "THIS CONCLUDES THE THISCONCLUDES THE INTERMEDIATEEXECUTIVES INTERMEDIATE EXECUTIVES MEETING.WEWILLGATHER MEETING.WE WILL GATHER AGAIN DURING THE FINAL REVIEW IN TWOWEEKS.",
+          "confidence": 0.944,
+          "text_ar": "بهذا ينتهي اجتماع المسؤولين التنفيذيين المتوسطين. سنلتقي مجدداً خلال المراجعة النهائية بعد أسبوعين."
+        },
+        {
+          "text": "SHE'S WORKING EXCESSIVELYHARD.",
+          "confidence": 0.962,
+          "text_ar": "إنها تعمل بجهد مفرط."
+        },
+        {
+          "text": "HH THANK YOU FOR COMING TO THE INTERMEDIATEEXECUTIVES MEETING,YOUR HIGHNESS!",
+          "confidence": 0.475,
+          "text_ar": "أه، شكراً لحضورك اجتماع المسؤولين التنفيذيين المتوسطين، سموك!"
+        },
+        {
+          "text": "YES.I WILL ATTEND FROMTIME TO TIME.",
+          "confidence": 0.896,
+          "text_ar": "نعم، سأحضر من حين لآخر."
+        },
+        {
+          "text": "WHATIFSHE RUINS HER HEALTH LIKE THAT.",
+          "confidence": 0.942,
+          "text_ar": "ماذا لو دمرت صحتها هكذا؟"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.954,
+          "text_ar": ""
+        },
+        {
+          "text": "MILITARY ADMINISTRATION UNDERGROUND WAREHOUSE",
+          "confidence": 0.993,
+          "text_ar": "المستودع السفلي للإدارة العسكرية"
+        },
+        {
+          "text": "PHEW. 30 MINUTES LEFT.",
+          "confidence": 0.97,
+          "text_ar": "فاه، تبقّى ٣٠ دقيقة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "ALRIGHT.LET'S START SEARCHING FOR THE BLACKMAP NOW.",
+          "confidence": 0.943,
+          "text_ar": "حسناً، لنبدأ البحث عن الخريطة السوداء الآن."
+        },
+        {
+          "text": "PLEASE. LET IT BE HERE!",
+          "confidence": 0.966,
+          "text_ar": "أرجوك، لتكن هنا!"
+        },
+        {
+          "text": "30 MINUTES LATER.",
+          "confidence": 0.913,
+          "text_ar": "بعد ٣٠ دقيقة."
+        },
+        {
+          "text": "NOTHING. IT'S NOT HERE EITHER.",
+          "confidence": 0.947,
+          "text_ar": "لا شيء. ليست هنا أيضاً."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.908,
+          "text_ar": ""
+        },
+        {
+          "text": "ror DOES IT EVEN REALLY EXIST? REALLYEXIST?",
+          "confidence": 0.534,
+          "text_ar": "أَتراها موجودة حقاً؟"
+        },
+        {
+          "text": "IT DEFINITELY SAID IT WAS INSIDE THE WAREHOUSE IN THE BLACK MAP CHAPTER...",
+          "confidence": 0.924,
+          "text_ar": "كان مكتوباً بالتأكيد أنها داخل المستودع في فصل الخريطة السوداء..."
+        },
+        {
+          "text": "DID THE EVENT CHANGE PERHAPS?",
+          "confidence": 0.956,
+          "text_ar": "هل تغير الحدث ربما؟"
+        },
+        {
+          "text": "NO.NO!",
+          "confidence": 0.989,
+          "text_ar": "لا، مستحيل!"
+        },
+        {
+          "text": "THE DETAILSMIGHT CHANGE, BUT THE MAJOR EVENTS STAYTHE SAME.",
+          "confidence": 0.955,
+          "text_ar": "قد تتغير التفاصيل، لكن الأحداث الرئيسية تبقى كما هي."
+        },
+        {
+          "text": "WHICHMEANS. THE BLACKMAPINCIDENT WILL HAPPEN...",
+          "confidence": 0.96,
+          "text_ar": "مما يعني أن حادثة الخريطة السوداء ستحدث..."
+        },
+        {
+          "text": "RIGHT. THERE ARESTILL MANY WAREHOUSESIHAVEN'T LOOKED THROUGH.",
+          "confidence": 0.955,
+          "text_ar": " صحيح، لا يزال هناك العديد من المستودعات التي لم أتحقق منها بعد."
+        },
+        {
+          "text": "111 I'llcearch move and definitely cecuve evidence against that evidenceagainstthat bastard! 11\\",
+          "confidence": 0.521,
+          "text_ar": "سأبحث أكثر وأحصل بالتأكيد على أدلة ضد ذلك اللعين!"
+        },
+        {
+          "text": "THEY DISGUISED THEMSELVES AS SPECIAL WEAPON MANAGERS AND ARE CURRENTLY AARHHRCKR ONSTANDBYAT THE TRAINING ONSTANDBYATTHETRAINING GROUNDS OVER THERE. GROUNDSOVER THERE.",
+          "confidence": 0.403,
+          "text_ar": "لقد تنكروا بزي مديري الأسلحة الخاصة وهم في حالة تأهب حالياً في ساحة التدريب هناك."
+        },
+        {
+          "text": "ANDRE'S SUBORDINATES ARE DEFINITELYGOODAT DISGUISING THEMSELVES.",
+          "confidence": 0.962,
+          "text_ar": "مرؤوسو أندري بارعون حقاً في التنكر."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.964,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S SAID THAT SPIES HAVE INFILTRATED HIS IMPERIAL MAJESTY'S PRIVATE DOMAIN.",
+          "confidence": 0.969,
+          "text_ar": "يقال إن الجواسيس قد تسللوا إلى النطاق الخاص لجلالة الإمبراطور."
+        },
+        {
+          "text": "IKNOW.WE ARE INVESTIGATING IT, SO I'M WAITING.WHAT ABOUT TRACING THE ACCOUNTS?",
+          "confidence": 0.92,
+          "text_ar": "أعلم ذلك، نحن نحقق في الأمر لذا أنا أُنتظر. ماذا عن تتبع الحسابات؟"
+        },
+        {
+          "text": "AS YOUR HIGHNESS GUESSED, THE FUNDS TO BUILD THATVILLAGE CAME FROM THE BORROWED-NAME ACCOUNTS OF MULTIPLE ARISTOCRATIC FACTIONMEMBERS.",
+          "confidence": 0.939,
+          "text_ar": "كما خمنت يا سموك، الأموال لبناء تلك القرية جاءت من حسابات بأسماء وهمية لعدة أعضاء من الفصيل الارستقراطي."
+        },
+        {
+          "text": "ANDALL THE UPPER MANAGERS OF THAT VILLAGE ARE MEMBERS OFTHE ASSEMBLYOF AWAKENED YOUNG MASTERS\"?",
+          "confidence": 0.938,
+          "text_ar": "وجميع المديرين الكبار لتلك القرية هم أعضاء في جمعية \"الشباب السادة الموقظين\"؟"
+        },
+        {
+          "text": "YES,YOUR HIGHNESS. ANDTHERE WERE NOOTHER VILLAGES LIKE THAT WITHIN THE EMPIRE BESIDES THOSE FIVE.",
+          "confidence": 0.95,
+          "text_ar": "نعم يا سموك، ولم تكن هناك قرى أخرى مثل تلك داخل الإامبراطورية سوى تلك الخمس."
+        },
+        {
+          "text": "WITHIN THE EMPIRE?",
+          "confidence": 0.976,
+          "text_ar": "داخل الإمبراطورية؟"
+        },
+        {
+          "text": "WELL. WE DISCOVERED ONE MORE IN THE PRINCIPALITY OF GAAN,YOUR HIGHNESS.",
+          "confidence": 0.947,
+          "text_ar": "حسنًا، اكتشفنا واحدة أخرى في إمارة غان يا سموك."
+        },
+        {
+          "text": "DAMN,THE SCOPE OF THE OPERATION WILL WIDEN.",
+          "confidence": 0.949,
+          "text_ar": "تباً، نطاق العملية سيتسع."
+        },
+        {
+          "text": "SHOULD WE STRIKETHEVILLAGEINTHE PRINCIPALITYTOGETHER WITH THE OTHERS, YOUR HIGHNESS?",
+          "confidence": 0.967,
+          "text_ar": "هل نُهاجم القرية التي في الإمارة مع البقية يا سموك؟"
+        },
+        {
+          "text": "WE MUST. IF WE ONLY STRIKE ONE PLACE,THEY WILL MASSACRE THE REST OF THE VILLAGES.",
+          "confidence": 0.941,
+          "text_ar": "يجب أن نفعل. إذا هاجمنا مكاناً واحداً فقط، سيقومون بمذبحة في باقي القرى."
+        },
+        {
+          "text": "IF THATHAPPENS.WE CAN'T GUARANTEE THE HOSTAGES'LIVES.",
+          "confidence": 0.966,
+          "text_ar": "إذا حدث ذلك، فلن نتمكن من ضمان حياة الرهائن."
+        },
+        {
+          "text": "VIOLETSCANS.COM",
+          "confidence": 0.989,
+          "text_ar": ""
+        },
+        {
+          "text": "SO,INFORM ANDREASWELL.WEARE CHANGING THE OPERATION. WESTRIKETOGETHER.",
+          "confidence": 0.958,
+          "text_ar": "لذا، أبلغ أندري أيضاً. سنغير خطة العملية. سنهاجم معاً."
+        },
+        {
+          "text": "YES, YOUR HIGHNESS!",
+          "confidence": 0.81,
+          "text_ar": "أمرك يا سموك!"
+        },
+        {
+          "text": "ICAN'T BE WITH HIMANYMORE.",
+          "confidence": 0.933,
+          "text_ar": "لا يمكنني البقاء معه بعد الآن."
+        },
+        {
+          "text": "AT THIS RATE, IT WOULDN'T BE STRANGE IFIENDED UP DEAD ONE DAY.",
+          "confidence": 0.923,
+          "text_ar": "بهذا المعدل، لن يكون غريباً أن ينتهي بي المطاف ميتة ذات يوم."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "LADYLAURAPHILIPORT DAUGHTEROF BARON PHILIPORT",
+          "confidence": 0.969,
+          "text_ar": "الليدي لورا فيليبورت - ابنة البارون فيليبورت"
+        },
+        {
+          "text": "YOU MUST HAVE AREASONFOR RUNNING AWAYFROM MYBROTHER FRANZ TO ME, RIGHT?",
+          "confidence": 0.878,
+          "text_ar": "لا بد أن لديك سبباً للهروب من أخي فرانز إليَّ، أليس كذلك؟"
+        },
+        {
+          "text": "IT'S A RECORD ON FRANZ.",
+          "confidence": 0.901,
+          "text_ar": "إنه سجل عن فرانز."
+        },
+        {
+          "text": "HISCORRUPTION. IRECORDED EVERYTHING.",
+          "confidence": 0.974,
+          "text_ar": "فساده. لقد سجلت كل شيء."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.971,
+          "text_ar": ""
+        },
+        {
+          "text": "DO YOUKNOW WHATTHIS MEANS RIGHTNOW?",
+          "confidence": 0.921,
+          "text_ar": "أتدري ماذا يعني هذا الآن؟"
+        },
+        {
+          "text": "YES.PLEASE ASCEND TO THE NEXT THRONE.",
+          "confidence": 0.937,
+          "text_ar": "نعم. أرجوك اصعد إلى العرش التالي."
+        },
+        {
+          "text": "PRINCE FRANZ WOULD BRING UP MYFATHER'S BETRAYALWHENEVER HE DRANK.",
+          "confidence": 0.953,
+          "text_ar": "كان الأمير فرانز يثير موضوع خيانة والدي كلما شرب."
+        },
+        {
+          "text": "ITWASACOMMON OCCURRENCEFOR HIMTO USE VIOLENCE AGAINST ME TOVENT HIS ANGER.EVEN SO, I ENDURED IT, BUT...",
+          "confidence": 0.863,
+          "text_ar": "وكان من المعتاد أن يستخدم العنف ضدي ليفرغ غضبي. ورغم ذلك، تحملت، لكن..."
+        },
+        {
+          "text": "BUT?",
+          "confidence": 0.979,
+          "text_ar": "لكن؟"
+        },
+        {
+          "text": "EVEN THE DUKE OF TOULOUSE, WHO ITHOUGHT WAS A SOLID BACKER.",
+          "confidence": 0.914,
+          "text_ar": "حتى دوق تولوز، الذي ظننته سنداً قوياً."
+        },
+        {
+          "text": "ANDHERMAJESTY THE EMPRESS HAVE ABANDONED FRANZ.",
+          "confidence": 0.967,
+          "text_ar": "وجلالة الإمبراطور قد تخلّيا عن فرانز."
+        },
+        {
+          "text": "IFYOULOOKAT THE NOTEBOOK, YOU'LL SEE WHO PLOTTED THE HORSE RANCHINCIDENT AWHILE AGO..!",
+          "confidence": 0.921,
+          "text_ar": "إذا نظرت إلى دفتر الملاحظات، ستراهن على من دبر حادثة مزرعة الخيول قبل فترة...!"
+        },
+        {
+          "text": "ENOUGH. THE CONTENTSOF YOUR NOTEBOOK ARE THINGS I'VE ALREADY RECEIVED.",
+          "confidence": 0.952,
+          "text_ar": "كفى. محتويات دفتر ملاحظاتك هي أمور تلقيتها بالفعل."
+        },
+        {
+          "text": "THEN.I... IHAVENOTHING LEFT NOW...",
+          "confidence": 0.878,
+          "text_ar": "إذن، أنا... لم يتبقَ لي شيء الآن..."
+        },
+        {
+          "text": "IHAVEN'T FORGOTTENBARON PHILIPORT'S HELP.",
+          "confidence": 0.98,
+          "text_ar": "لم أنسَ مساعدة البارون فيليبورت."
+        },
+        {
+          "text": "IF YOU WISH, I WILL GUIDE YOU TO A SAFE PLACE.",
+          "confidence": 0.9,
+          "text_ar": "إذا رغبتِ، سأرشدك إلى مكان آمن."
+        },
+        {
+          "text": "$\\frac{} { }$ TH-THANK YOU, YOUR HIGHNESS.THANK YoU SO MUCH.",
+          "confidence": 0.779,
+          "text_ar": "ش-شكراً لك يا سموك. شكراً جزيلاً لك."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.955,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "GUIDE HERTO A CIVILIAN SAFE HOUSE TONIGHT. AND BURN THIS.",
+          "confidence": 0.935,
+          "text_ar": "أرشدها إلى منزل آمن للمدنيين الليلة. واحرقي هذا."
+        },
+        {
+          "text": "YES,YOUR HIGHNESS. D",
+          "confidence": 0.127,
+          "text_ar": "أمرك يا سموك."
+        },
+        {
+          "text": "BUT, YOUR HIGHNESS.",
+          "confidence": 0.929,
+          "text_ar": "ولكن، سموك."
+        },
+        {
+          "text": "IFEEL ABIT BITTER ABOUT THIS.",
+          "confidence": 0.949,
+          "text_ar": "أشعر ببعض المرارة حيال هذا."
+        },
+        {
+          "text": "ABOUT WHATPART?",
+          "confidence": 0.996,
+          "text_ar": "بأي جزء؟"
+        },
+        {
+          "text": "NO.IMEAN, ISN'T IT TRUE?",
+          "confidence": 0.904,
+          "text_ar": "لا، أعني، أليس هذا صحيحاً؟"
+        },
+        {
+          "text": "TOTHINKTHE PERSONHE LOVED HAD BEEN MAKING A CORRUPTION NOTEBOOK LIKE THIS BEHIND HIS BACK THE WHOLE TIME!",
+          "confidence": 0.937,
+          "text_ar": "أن تفكر أن الشخص الذي أحبه كان يصنع دفتر ملاحظات للفساد خلف ظهره طوال الوقت!"
+        },
+        {
+          "text": "THE 1ST PRINCE IS 1OO% IN THE WRONG RIGHT NOW, BUT I'M SURE HE CHERISHED HER BEFORE HE LEFT THE PALACE.",
+          "confidence": 0.948,
+          "text_ar": "الأمير الأول مخطئ بنسبة ١٠٠٪ الآن، لكني متأكد أنه كان يعزها قبل أن يغادر القصر."
+        },
+        {
+          "text": "TO THINK SHE WAS WRITING THIS NOTEBOOK SINCE THEN. THERE REALLY IS NO ONE TO TRUST, YOUR HIGHNESS.",
+          "confidence": 0.928,
+          "text_ar": "التفكير في أنها كانت تكتب دفتر الملاحظات هذا منذ ذلك الحين. حقاً لا يوجد شخص يمكن الوثوق به، يا سموك."
+        },
+        {
+          "text": "NICK.",
+          "confidence": 0.989,
+          "text_ar": "نيك."
+        },
+        {
+          "text": "YES, YOUR HIGHNESS!",
+          "confidence": 0.903,
+          "text_ar": "نعم، يا سموك!"
+        },
+        {
+          "text": "THIS IS THE PALACE,WHERE A SMALL SLIP OF THE TONGUE CANCOST yOU yOUR LIFE.",
+          "confidence": 0.862,
+          "text_ar": "هذا هو القصر، حيث زلة لسان بسيطة قد تكلفك حياتك."
+        },
+        {
+          "text": "THEMOMENT YOU COMMIT AN ACT OF BETRAYAL IN SUCHA PLACE,THAT RELATIONSHIP..",
+          "confidence": 0.925,
+          "text_ar": "في اللحظة التي ترتكب فيها عملاً خيانياً في مكان كهذا، تلك العلاقة..."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.95,
+          "text_ar": ""
+        },
+        {
+          "text": "CAN NEVER GOBACK TOHOW IT WAS BEFORE.",
+          "confidence": 0.95,
+          "text_ar": "لا يمكن أبداً أن تعود لما كانت عليه من قبل."
+        },
+        {
+          "text": "VIOLET SCANS",
+          "confidence": 0.976,
+          "text_ar": ""
+        },
+        {
+          "text": "wwww.violetscans.org 回 x 曲 We are Hiring!",
+          "confidence": 0.318,
+          "text_ar": ""
+        },
+        {
+          "text": "EDITORS",
+          "confidence": 0.994,
+          "text_ar": ""
+        },
+        {
+          "text": "KR TRANSLATORS",
+          "confidence": 0.941,
+          "text_ar": ""
+        },
+        {
+          "text": "JB TRANSLATORS",
+          "confidence": 0.899,
+          "text_ar": ""
+        },
+        {
+          "text": "NAVER PROVIDERS",
+          "confidence": 0.975,
+          "text_ar": ""
+        },
+        {
+          "text": "How to apply? ALLYOUHAVETODOISJOININGOURDISCORDSERVER THENGOTORECRUITMENTROOMANDTHEREYOUCAN TAKETHETEST:DISCORD.GG/jRFkVWY4mG",
+          "confidence": 0.977,
+          "text_ar": ""
+        },
+        {
+          "text": "Wanna gel fvee coins? 福",
+          "confidence": 0.105,
+          "text_ar": ""
+        },
+        {
+          "text": "JOIN US!",
+          "confidence": 0.935,
+          "text_ar": ""
+        },
+        {
+          "text": "WE'RE GIVINIG AWAY UP TO 3,OO0 COINS EVERY2WEEKS! THAT'S YOUR CHANCE TO GRAB TONS OF COINS AND TREAT YOURSELF TO MORE STORIES.",
+          "confidence": 0.825,
+          "text_ar": ""
+        },
+        {
+          "text": "DISCORD.GG/jRFkVWY4mG DISCORDGG/iREKVWYAMG",
+          "confidence": 0.924,
+          "text_ar": ""
+        },
+        {
+          "text": "DONTFORGETTOREADATVIOLETSCANS.ORGTOKEEPUSGOING! 福",
+          "confidence": 0.273,
+          "text_ar": ""
+        }
+      ]
+    }
+  ]
+}
