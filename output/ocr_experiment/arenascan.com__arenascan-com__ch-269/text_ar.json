@@ -1,0 +1,765 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "269",
+  "manga_title": "My Wife Is From a Thousand Years Ago 269",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Fantazya junitius CL/RD TL Paragon discord.gg/pErHvcxdrx Scans",
+          "confidence": 0.983,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "junitius TS",
+          "confidence": 0.958,
+          "text_ar": "الترجمة النصية"
+        },
+        {
+          "text": "junitius PR",
+          "confidence": 0.997,
+          "text_ar": "المراجعة"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IDON'T UNDERSTAND WHY,",
+          "confidence": 0.863,
+          "text_ar": "لا أفهم السبب،"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "BUT I'M CON- STANTLYTHINKING ABOUT BEING BY HIS SIDE.",
+          "confidence": 0.873,
+          "text_ar": "لكنني أفكر باستمرار في أن أكون بجانبه."
+        },
+        {
+          "text": "山日報 EHO #建#0#者",
+          "confidence": 0.375,
+          "text_ar": "صحيفة شانغهاي"
+        },
+        {
+          "text": "N0 WM4",
+          "confidence": 0.23,
+          "text_ar": "إعلان"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "BUT TO BE HONEST..",
+          "confidence": 0.919,
+          "text_ar": "لكن الصراحة..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": []
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "I REALLYLIKE THIS PERSON...",
+          "confidence": 0.931,
+          "text_ar": "أنا حقاً أُعجب بهذا الشخص..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "河日报",
+          "confidence": 0.284,
+          "text_ar": "صحيفة نهرية"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "YOU LADIES ARE NOT NORMAL.",
+          "confidence": 0.933,
+          "text_ar": "أنتن السيدات لستن طبيعيات."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.995,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "YOUR RELATION- SUID AS MOTUFR-IN-",
+          "confidence": 0.853,
+          "text_ar": "علاقتكِ كحماة وزوجة ابنة..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "LAW AND DAUGHTER- IN-LAWISABIT ABNORMAL.",
+          "confidence": 0.949,
+          "text_ar": "كحماة وزوجة ابنة تبدو غير طبيعية بعض الشيء."
+        },
+        {
+          "text": "IN TV DRAMAS, IT'S ALL ABOUT SCHEMES AND DECEPTION,",
+          "confidence": 0.906,
+          "text_ar": "في المسلسلات التلفزيونية، الأمر كله يدور حول المؤامرات والخداع،"
+        },
+        {
+          "text": "IT'LL BE AN EVIL DAUGHTER BULLYING HER MOTHER-IN-LAW OR VICE VERSA.",
+          "confidence": 0.914,
+          "text_ar": "تكون هناك زوجة ابنة شريرة تظلم حماتها أو العكس."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "YOU JUST SAID IT YOURSELF,IT IS ON TV,IT'S ALL ACT- ING,HOW COULD IT BE REAL?",
+          "confidence": 0.906,
+          "text_ar": "لقد قلتِها بنفسكِ، إنه على التلفزيون، وكل ذلك تمثيل، فكيف يكون حقيقياً؟"
+        },
+        {
+          "text": "IN REALITY, IT'S NOT THAT EXTREME TUAT'S",
+          "confidence": 0.866,
+          "text_ar": "في الواقع، الأمر ليس متطرفاً هكذا."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "ALL.WHAT ABOLT YOUGUYSBACK THEN?",
+          "confidence": 0.94,
+          "text_ar": "ماذا عنكن في ذلك الوقت؟"
+        },
+        {
+          "text": "李思平著",
+          "confidence": 0.944,
+          "text_ar": "بقلم لي سي بينغ"
+        },
+        {
+          "text": "WHATDO YOU MEAN BY THAT?",
+          "confidence": 0.949,
+          "text_ar": "ماذا تقصدين بذلك؟"
+        },
+        {
+          "text": "BACKINYOUR TIME,DID MOTHERS-IN- LAWAND DALIGHTERS-IN- LAWWORKTOGETHER UNDER THE SUN?",
+          "confidence": 0.944,
+          "text_ar": "في زمنكن، هل كانت الحموات وزوجات الأبناء يعملن معاً تحت الشمس؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "I DON'T KNOW WHY BUTWHENEVER I THINK ABOUTTHEANCIENTTIMES AND THERELATIONSHIP BE- TWEENMOTHERS-IN-LAW AND DAUGHTERS-IN-LAW, THIS COMES TO MIND.",
+          "confidence": 0.912,
+          "text_ar": "لا أعرف لماذا ولكن كلما فكرت في العصور القديمة وعلاقة الحموات بزوجات الأبناء، يخطر ببالي هذا."
+        },
+        {
+          "text": "SHUT UP, YOu.",
+          "confidence": 0.819,
+          "text_ar": "اخرسي، أيتها الفتاة."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "IF THEY HAPPEN TOHEAR, THEY MIGHT REALLY BELIEVE I'MFROM ANCIENT TIMES.",
+          "confidence": 0.938,
+          "text_ar": "إذا صادف وتحدثن وسَمِعن، فقد يصدقن حقاً أنني من العصور القديمة."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "THAT'S INDEEDTRUE, IFIWENTTOMYPARENTS AND TALKEDABOUTJIANGHE ASIFSHEWASSOMEONEFROM ANCIENTTIMESTHEYMIGHT THINKID GONE MAD.",
+          "confidence": 0.936,
+          "text_ar": "هذا صحيح حقاً، لو ذهبت إلى والدي وتحدثت عن جيانغ هي وكأنها شخصية من العصور القديمة فقد يعتقدان أنني جننت."
+        },
+        {
+          "text": "BUT IF THEY DISCOVEREDITON THEIROWN,THE NATURE OF IT WOULD INDEED BE DIFFERENT.",
+          "confidence": 0.949,
+          "text_ar": "ولكن لو اكتشفا ذلك بأنفسهما، لكانت طبيعة الأمر مختلفة حقاً."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "IFONEDAYI ACCIDENTALLYOVER- HEARTHEOLDCOUPLE TALKINGABOUTHOW MOMISN'TAMODERN PERSON EITHER..",
+          "confidence": 0.926,
+          "text_ar": "إذا سمعت العجوزين صدفة ذات يوم يتحدثان عن كيف أن أمي ليست شخصاً حديثاً أيضاً..."
+        },
+        {
+          "text": "I'LL PROBABLY STARTOVER- THINKING, AND THEN..",
+          "confidence": 0.948,
+          "text_ar": "سأبدأ على الأرجح في التفكير ماليًا، وبعدها..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "NOTGONNA THINK ABOUTIT ANYMORE,",
+          "confidence": 0.96,
+          "text_ar": "لن أفكّر في الأمر بعد الآن،"
+        },
+        {
+          "text": "IT'S ALITTLE SCARY...",
+          "confidence": 0.938,
+          "text_ar": "الأمر مخيف بعض الشيء..."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "BEFORE YOU KNOW IT, IT'S ALREADY PAST4PM.",
+          "confidence": 0.938,
+          "text_ar": "قبل أن تدري، لقد تجاوزت الساعة الرابعة عصراً بالفعل."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "I'M PRETTY MUCH DONEWITHTHENEWS- PAPER,LET'SGOBACKTO THELIVINGROOMWITH THE WARRIORESS.",
+          "confidence": 0.926,
+          "text_ar": "لقد انتهيت تقريباً من قراءة الصحيفة، فلنعد إلى غرفة المعيشة مع المحاربة."
+        },
+        {
+          "text": "IT'SABOUT TIMEFORDINNER.",
+          "confidence": 0.915,
+          "text_ar": "لقد حان وقت العشاء تقريبا."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "LATER GENERATIONS ARE FORTUNATE TO LNE IN AN ERA OF PEACE, ENJOYING THE PLEASURES OF TRANQUILITY.",
+          "confidence": 0.916,
+          "text_ar": "الأجيال اللاحقة محظوظة لأنها تعيش في عصر سلام، وتستمتع بملذات الهدوء."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": []
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "THOSE WHO DO NOT CULTNATETHEMSELVES AND ONLY INDULGE RECK- LESSLY SHOULD BE ALARMED WHEN READING THIS..",
+          "confidence": 0.933,
+          "text_ar": "أولئك الذين لا يهذبون أنفسهم وينغمسون بتهور يجب أن يفزعوا عند قراءة هذا..."
+        },
+        {
+          "text": "IN FACT, COMPARED'TO THIS, YOUR TIME WAS ALREADY CONSIDEREDAN ERA OF PEACE.",
+          "confidence": 0.915,
+          "text_ar": "في الواقع، مقارنة بهذا، كان عصرك يعتبر بالفعل عصراً يسوده السلام."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "BACK THEN, IT WAS INDEED A FLOURISH- ING ERA. 啪 −",
+          "confidence": 0.815,
+          "text_ar": "في ذلك الوقت، كان عصراً مزدهراً حقاً. *صفعة!*"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": []
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": []
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "STAY HERE FOR A WHILE LONGER BEFORE GOING OUT AGAIN.",
+          "confidence": 0.932,
+          "text_ar": "ابقي هنا لفترة أطول قليلاً قبل الخروج مرة أخرى."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "WE ARE MARRIED.WE ARE ALREADY HUSBAND AND WIFE.",
+          "confidence": 0.942,
+          "text_ar": "نحن متزوجان. نحن زوج وزوجة بالفعل."
+        },
+        {
+          "text": "HOW ARE WE MARRIED?WE JUST GOT THE MARRIAGECERT- IFICATE, THAT IS ALL.",
+          "confidence": 0.912,
+          "text_ar": "كيف نحن متزوجان؟ لقد حصلنا للتو على شهادة الزواج، هذا كل شيء."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "ANYWAY, JUST SIT HERE FOR A BIT,DON'T LEAVE YET.",
+          "confidence": 0.909,
+          "text_ar": "على أي حال، اجلسي هنا قليلاً، لا ترحلي الآن."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "THIS LITTLE",
+          "confidence": 0.997,
+          "text_ar": "هذه العجوز..."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "OLD LADY...",
+          "confidence": 0.911,
+          "text_ar": "إنها تهتم أكثر من اللازم."
+        },
+        {
+          "text": "SHEJUSTCARESTOOMUCH",
+          "confidence": 0.994,
+          "text_ar": "ملاحظة المترجم: الكتاب هو سجل معاصر يصف مذبحة يانغتشو..."
+        },
+        {
+          "text": "PF/N:The book is a contemporary account that describes the Yangzhou Massacre, whih occurred in May 1645 in Yangzhou, during the Qing dynastyin China.It details the mass illing of people in Yangzhou by both Manchu forces and defected Han Chinese Ming soldiers.",
+          "confidence": 0.868,
+          "text_ar": "\"أيام يانغتشو العشرة\"..."
+        },
+        {
+          "text": "\"THETEN DAYSOFYANG- ZHOU\"..",
+          "confidence": 0.881,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "IT WASN'T LIMITED TO JUST THISTIME..",
+          "confidence": 0.932,
+          "text_ar": "لم يقتصر الأمر على ذلك الوقت فحسب..."
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "WHEN THERE'S A CHANCELATER,I MUST TAKE THEWARRIORESS TO SEETHEMILITARY PARADE.",
+          "confidence": 0.927,
+          "text_ar": "عندما تتاح لي الفرصة لاحقاً، يجب أن أخذ المحاربة لرؤية العرض العسكري."
+        },
+        {
+          "text": "LIVING IN THIS ERA, ONENATURALLYNEEDSTO UNDERSTANDEVERYTHING ABOUT THIS ERA,",
+          "confidence": 0.901,
+          "text_ar": "العيش في هذا العصر يتطلب بطبيعة الحال فهم كل ما يتعلق به،"
+        },
+        {
+          "text": "ONLY THEN CANONETRULY BECONSIDEREDA MODERNPERSON.",
+          "confidence": 0.945,
+          "text_ar": "حينها فقط يمكن للمرء أن يُعتبر شخصاً عصرية حقاً."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "WHEN DID HE GAINSUCHA STRONG INTER- EST TOWARDS HISTORY?",
+          "confidence": 0.93,
+          "text_ar": "متى اكتسب هذا الاهتمام القوي بالتاريخ؟"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "PROBABLY... SINCE LAST YEAR?",
+          "confidence": 0.919,
+          "text_ar": "على الأرجح... منذ العام الماضي؟"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "ACTUALLY NO, IT'S PROBABLY THE YEAR BEFORE LAST YEAR.",
+          "confidence": 0.943,
+          "text_ar": "في الواقع لا، ربما قبل عامين."
+        },
+        {
+          "text": "DID THAT HAPPEN AFTER HE MET YOU?",
+          "confidence": 0.962,
+          "text_ar": "هل حدث ذلك بعد أن التقى بك؟"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "THAT'S RIGHTI",
+          "confidence": 0.964,
+          "text_ar": "هذا صحيح!"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "COULD THAT STRAW SANDAL FROMBEFORE REALLYBE..",
+          "confidence": 0.903,
+          "text_ar": "هل يمكن أن يكون ذلك النعل القشي من قبل حقاً..."
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "SILKYANDNEAT HAIRSTYLE",
+          "confidence": 0.996,
+          "text_ar": "تسريحة شعر أنيقة وناعمة"
+        },
+        {
+          "text": "DRESSED IN MODERN CLOTHES",
+          "confidence": 0.964,
+          "text_ar": "ترتدي ملابس حديثة"
+        },
+        {
+          "text": "FUZZY WARM SLIPPERS",
+          "confidence": 0.946,
+          "text_ar": "خفان دافئان وناعمان"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "ASSESSMENTRESULT:A YOUTHFUL AND BEAUTIFULMODERN GIRL.",
+          "confidence": 0.951,
+          "text_ar": "نتيجة التقييم: فتاة عصرية يافعة وجميلة."
+        },
+        {
+          "text": "THAT GUY IS ALWAYS RAMBLINGONABOUT NONSENSEANDALMOST GOT ME TO BELIEVE HIS NONSENSE.",
+          "confidence": 0.931,
+          "text_ar": "ذلكالفتىيهذيبالهراءدائماًوكادأنيدفعنيأوأصدقه."
+        },
+        {
+          "text": "SHALL WE GO GROCERY SHOPPING?",
+          "confidence": 0.924,
+          "text_ar": "هل نذهب لشراء البقالة؟"
+        },
+        {
+          "text": "OKAY",
+          "confidence": 0.996,
+          "text_ar": "حسناً"
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "COULDANANCIENT PERSON HOLD DRIED SWEETPOTATOES AND CLICK-CLACKONTHE KEYBOARD TO PLAY GAMES?",
+          "confidence": 0.958,
+          "text_ar": "هل يمكن لشخص من العصور القديمة أن يحمل البطاطا الحلوة المجففة وينقر على لوحة المفاتيح لتلعب الألعاب؟"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "DAD,WHY IS IT JUST YOU?",
+          "confidence": 0.854,
+          "text_ar": "أبي، لماذا أنت وحدك؟"
+        },
+        {
+          "text": "THEY WENT GROCERY SHOPPING.",
+          "confidence": 0.966,
+          "text_ar": "لقد ذهبا لشراء البقالة."
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "MY WIFE AND YOUR WIFE WENT TO BLY GROCERIES TOGETHER.DAD,DO YOU FEEL HAPPY?",
+          "confidence": 0.923,
+          "text_ar": "زوجتي وزوجتك ذهبتا لشراء البقالة معاً. يا أبي، هل تشعر بالسعادة؟"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": []
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "IT'S GREAT.",
+          "confidence": 0.982,
+          "text_ar": "إنه لأمر رائع."
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "AN ERA OF PEACE....",
+          "confidence": 0.839,
+          "text_ar": "عصر سلام...."
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "IFEEL.. VERY HAPPY.",
+          "confidence": 0.899,
+          "text_ar": "أشعر... بالسعادة الغامرة."
+        },
+        {
+          "text": "TURNSOUTIT'SNOT JUST MEINFLUENCING THE WARRIORESS, SHE'S BEEN INFLUENCING ME ALL ALONG TOO.",
+          "confidence": 0.943,
+          "text_ar": "يتضح أن الأمر لا يقتصر على تأثيلي للمحاربة وحدها، بل إنها تؤثر علي طوال الوقت أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": []
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "Xu Qing taught Jiang He how to live.",
+          "confidence": 0.96,
+          "text_ar": "شو تشينغ علّم جيانغ هي كيف تعيش."
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "Jiang He taught Xu Qing how to cherish.",
+          "confidence": 0.961,
+          "text_ar": "جيانغ هي علّمت شو تشينغ كيف يعتز للأشياء."
+        },
+        {
+          "text": "WHAT'S CTTCN IAI",
+          "confidence": 0.64,
+          "text_ar": "ما الذي تفكه؟"
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "GOIEN TO YOU?",
+          "confidence": 0.739,
+          "text_ar": "أليس لديك ما تفعل؟"
+        },
+        {
+          "text": "IF YOU'RE REALLY FREE, GO DOWNSTAIRS'AND SEE IF THEY'RE BACK YET, HELP BRING UP THE GROCERIES.",
+          "confidence": 0.921,
+          "text_ar": "إذا كنت متفرغاً حقاً، فانزل إلى الطابق السفلي وترى إن كان قد عادا، وساعد في إحضار البقالة."
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "THEN I'LL GO DOWNSTAIRS AND WAIT FOR THEM!",
+          "confidence": 0.942,
+          "text_ar": "إذن سأنزل إلى الأسفل لأنتظرهما!"
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "BANG!! DA 3 DA",
+          "confidence": 0.229,
+          "text_ar": "بانغ!! ضارب"
+        },
+        {
+          "text": "Dig0000 TV",
+          "confidence": 0.482,
+          "text_ar": "تلفزيون"
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": []
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "IT'S BETTER WHEN THERE'S FOUROFUS.",
+          "confidence": 0.965,
+          "text_ar": "الأمر يكون أفضل عندما نكون أربعة."
+        },
+        {
+          "text": "SHOO, GO HEL'P JIANG HE.",
+          "confidence": 0.892,
+          "text_ar": "ابعد، اذهب لمساعدة جيانغ هي."
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "DON'T YOU SEE HOW MANY GROCERIES SHE ISHOLDING?",
+          "confidence": 0.928,
+          "text_ar": "ألا ترى كمية البقالة التي تحملها؟"
+        },
+        {
+          "text": "WOULDYOU BELIEVE MEIF I SAY SHE'S STRONGER THAN ME?",
+          "confidence": 0.939,
+          "text_ar": "أستصعق أن تصدقني إن قلت لك إنها أقوى مني؟"
+        },
+        {
+          "text": "NONSENSE!",
+          "confidence": 0.996,
+          "text_ar": "هراء!"
+        },
+        {
+          "text": "YOU'RE PRACTICING TIGERFIST.",
+          "confidence": 0.945,
+          "text_ar": "أنت تتمرن على قبضة النمر."
+        },
+        {
+          "text": "IT'S CALLED TIGER LUNATIC FIST. WHY CAN'T YOU RE- MEMBER THENAME CORRECTLY,JUST LIKE DAD?",
+          "confidence": 0.909,
+          "text_ar": "اسمها قبضة النمر المجنون. لماذا لا تستطيع تذكر الاسم بشكل صحيح، تماماً مثل أبي؟"
+        },
+        {
+          "text": "LET'S HURRY IT UP,IT'S TIME TO GOHOME FOR DINNER.",
+          "confidence": 0.911,
+          "text_ar": "لنُسرع، فقد حان وقت العودة للبيت لتناول العشاء."
+        }
+      ]
+    }
+  ]
+}
