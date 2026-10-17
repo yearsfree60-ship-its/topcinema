@@ -1,0 +1,423 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "261",
+  "manga_title": "My Wife Is From a Thousand Years Ago 261",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": []
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": []
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "持证人 登记日期 结婚证字号 备注",
+          "confidence": 0.998,
+          "text_ar": "المستفيد، تاريخ التسجيل، رقم شهادة الزواج، ملاحظات"
+        },
+        {
+          "text": "性别 出生日期",
+          "confidence": 0.998,
+          "text_ar": "الجنس، تاريخ الميلاد"
+        },
+        {
+          "text": "身份证件号 姓名 国籍 身份证件号",
+          "confidence": 0.999,
+          "text_ar": "رقم هويّة الأحوال المدنية، الاسم، الجنسية، رقم هويّة الأحوال المدنية"
+        },
+        {
+          "text": "性别 出生日期",
+          "confidence": 0.999,
+          "text_ar": "الجنس، تاريخ الميلاد"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "YOU'RE M...MARRIED?",
+          "confidence": 0.916,
+          "text_ar": "هل أنتما... متزوجان؟!"
+        },
+        {
+          "text": "WE JUST GOT THE MARRIAGE CERTIFICATE SETTLED FIRSTWITH HOW NICE THE WEATHER IS.WELL HAVE THEWEDDING CEREMONY LATER.",
+          "confidence": 0.909,
+          "text_ar": "لقد أنهينا إجراءات شهادة الزواج أولًا نظراً لجمال الطقس، أما حفل الزفاف فسنقيمه لاحقاً."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "THAT'S... ALSO TRLE.",
+          "confidence": 0.893,
+          "text_ar": "هذا... صحيح أيضاً."
+        },
+        {
+          "text": "THE WEATHER ISNICE..",
+          "confidence": 0.902,
+          "text_ar": "الطقس جميل..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HOW RIDICULOUS! I'VE NEVER HEARD OF SUCH A REASON BEFORE!",
+          "confidence": 0.947,
+          "text_ar": "يا لها من حماقة! لم أسمع بمثل هذا السبب قط من قبل!"
+        },
+        {
+          "text": "ISN'T IT. A LITTLE RLSHED?",
+          "confidence": 0.927,
+          "text_ar": "أليس الأمر متسرعاً بعض الشيء؟"
+        },
+        {
+          "text": "IS IT?YOU WERE THE ONE URGING US TO DOIT LAST TIME.",
+          "confidence": 0.927,
+          "text_ar": "أحقاً؟ ألم تكن أنت من تحثنا على فعل ذلك في المرة السابقة؟"
+        },
+        {
+          "text": "URGING YOU IS ONE THING,BUT... SHOULDN'T YOU GUYS PREPARE A BIT MORE FIRST?",
+          "confidence": 0.869,
+          "text_ar": "أن أحثكم شيء، ولكن... ألا يتوجب عليكما التحضير أكثر بقليل أولاً؟"
+        },
+        {
+          "text": "WHAT'S THERE TO PREPARE?",
+          "confidence": 0.957,
+          "text_ar": "وما الذي يستدعي التحضير؟"
+        },
+        {
+          "text": "PREPARING..UM.. THAT...DOWRY?",
+          "confidence": 0.878,
+          "text_ar": "التحضير... أمم... ذلك... المهر؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "DOWRY...DO YOU WANT IT?",
+          "confidence": 0.876,
+          "text_ar": "المهر... هل ترغبين به؟"
+        },
+        {
+          "text": "I...DON'T.. THINK SO?",
+          "confidence": 0.888,
+          "text_ar": "أنا... لا أظن ذلك؟"
+        },
+        {
+          "text": "ARE YOU SURE?",
+          "confidence": 0.958,
+          "text_ar": "أمتأكدة أنتِ؟"
+        },
+        {
+          "text": "THEN...YES? HOW_MUCH IS_THAT ONE CAR?",
+          "confidence": 0.916,
+          "text_ar": "إذن... نعم؟ كم يبلغ سعر تلك السيارة الواحدة؟"
+        },
+        {
+          "text": "HMM...ABOUT 350 THOUSAND RMB,YOU WANT TOBUY ONE?",
+          "confidence": 0.864,
+          "text_ar": "ممم... حوالي 350 ألف يوان، هل ترغبين في شراء واحدة؟"
+        },
+        {
+          "text": "350... THOUSAND?",
+          "confidence": 0.89,
+          "text_ar": "350... ألفاً؟"
+        },
+        {
+          "text": "SHOULDN'T YOU GUYS...HAVE A SERIOUS DISCU- SSION FIRST?",
+          "confidence": 0.826,
+          "text_ar": "ألا يتوجب عليكما... إجراء نقاش جاد أولاً؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "AREN'T WE DOING THAT RIGHT NOW?",
+          "confidence": 0.941,
+          "text_ar": "ألسنا نفعل ذلك الآن؟"
+        },
+        {
+          "text": "THE SCRIPT SEEMSOFF. WE WERE CLEARLY DISCU- SSING MARRIAGE,HOWDID IT TURN INTOTHESE TWO PLOTTING TO GET OUR ASSETS?",
+          "confidence": 0.935,
+          "text_ar": "يبدو أن الحوار انحرف عن مساره، كنا نناقش أمر الزواج بوضوح، فكيف تحول الأمر إلى تخطيط هذين الاثنين للاستيلاء على أموالنا؟"
+        },
+        {
+          "text": "MOM,SHE WANTS 350 THOUSAND RMB.",
+          "confidence": 0.929,
+          "text_ar": "أمي، إنها تريد 350 ألف يوان."
+        },
+        {
+          "text": "..ISN'T THAT WHAT YOU WANT?",
+          "confidence": 0.883,
+          "text_ar": "..أليس هذا ما تريده أنت؟"
+        },
+        {
+          "text": "NO,IT'S FOR NO IT'S EOR HER DOWRY.",
+          "confidence": 0.785,
+          "text_ar": "لا، بل إنه لأجل... لا، إنه مهرها."
+        },
+        {
+          "text": ".NO,I NEED TO GET THE OLD MAN BACK TO HANDLE HIM!",
+          "confidence": 0.735,
+          "text_ar": "..لا، يجب أن أعيد العجوز إلى هنا ليتعامل معه!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": []
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": []
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "THERE SHOULDN'T BE ANYPROBLEMS THAT AREN'T RE- SOLVED YET...",
+          "confidence": 0.907,
+          "text_ar": "لا ينبغي أن تكون هناك أي مشكلات لم تُحَل بعد..."
+        },
+        {
+          "text": "IT'S JUST.WHY DOIFEEL ABIT RELUCTANTFOR NO APPARENT REASON?",
+          "confidence": 0.884,
+          "text_ar": "لكن... لماذا أشعر بشيء من التردد دون سبب واضح؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "ITFEELSLIKE THIS CAR IS ABOUT TO LEAVE ME...",
+          "confidence": 0.899,
+          "text_ar": "أشعر وكأن هذه السيارة على وشك مفارقتي..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "WEREN'T WE SUPPOSED TO ELOPE?",
+          "confidence": 0.94,
+          "text_ar": "ألم من المفترض أن نهرب معاً؟"
+        },
+        {
+          "text": "WE DID ELOPE,BUT WE WERE JUST DISCOVERED.",
+          "confidence": 0.919,
+          "text_ar": "لقد هربنا بالفعل، لكن تم اكتشاف أمرنا فحسب."
+        },
+        {
+          "text": "YOU DID IT ON PURPOSE.",
+          "confidence": 0.876,
+          "text_ar": "لقد فعلت ذلك متعمداً."
+        },
+        {
+          "text": "DOES IT MATTER? YOU'RE MY WIFE NOW,WEHAVE NOTHING TO HIDE.",
+          "confidence": 0.919,
+          "text_ar": "أيمثل ذلك فرقاً؟ أنتِ زوجتي الآن، وليس لدينا ما نخفيه."
+        },
+        {
+          "text": "WE'RE LEGALLY MARRIEDNOW.",
+          "confidence": 0.948,
+          "text_ar": "نحن متزوجان قانونياً الآن."
+        },
+        {
+          "text": "BUT WE HAVEN'T HELD THE CERE- MONY YET. AONY",
+          "confidence": 0.841,
+          "text_ar": "لكننا لم نقُم بالحفل بعد."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "I KEEPFEELING LIKE THIS IS A CONSPIRACY, THIS GUY JUST WANTS TOHAVESEXWITH ME,",
+          "confidence": 0.939,
+          "text_ar": "لا أفكّر إلا بأن هذه مؤامرة، وهذا اللعين يريد مضاجعتي فقط..."
+        },
+        {
+          "text": "EVENWITHOUT HOLDING THE CEREMONY,WE ARE LEGALLY MARRIED.WITHTHIS MARRIAGECERTIFICATE,WE ARE HLSBAND AND WIFE,'WITH ALLTHE OBLIGATIONS AND RESPONSIBILITIES THAT COMEWITHIT..",
+          "confidence": 0.878,
+          "text_ar": "حتى دون إقامة الحفل، فنحن متزوجان قانونياً. وبهذه الشهادة، نحن زوجان، وما يتبع ذلك من كامل الالتزامات والمسؤوليات..."
+        },
+        {
+          "text": "STOP THINKING ABOUT NONSENSE. ALWAYS THINKING ABOUT TRIVIAL MATTERS WITH THAT SMALIBRAIN OF'YOURS ISNOT HEALTHY AT ALL.",
+          "confidence": 0.899,
+          "text_ar": "كفي عن التفكير بالهراء. إن التفكير الدائم بأمور تافهة بعقلك الصغير هذا ليس سليماً بتاتاً."
+        },
+        {
+          "text": "WHAT I MEANT WAS MUTUALSUPPORT SHARED PROPERTY, JOINT MANAGEMENTUMDEF- INITELY NOT WHAT YOURE THINKING.",
+          "confidence": 0.925,
+          "text_ar": "ما قصدته هو الدعم المتبادل، الممتلكات المشتركة، والإدارة المشتركة... بكل تأكيد ليس ما يدور في ذهنك."
+        },
+        {
+          "text": "IF YOU'RE NOT THINKING OF\"THAT\",THEN HOW DO YOU KNOW WHAT I'M THINKING ABOUT?",
+          "confidence": 0.945,
+          "text_ar": "إن لم تكوني تفكرين في \"ذلك\"، فكيف عرفتِ ما أفكر به؟"
+        },
+        {
+          "text": "WOW, ARE THEY MARTIAL ARTS ACTORS?",
+          "confidence": 0.922,
+          "text_ar": "يا له من أمر عجيب، أأنتما ممثلا فنون قتالية؟"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "I SUSPECT YOU TAUGHT ME MARTIAL THAT WHEN ARTS SO YOU HIT ME, CANDEFEND I MYSELFABIT AND YOL WON'T FEEL TOO BORED.",
+          "confidence": 0.892,
+          "text_ar": "أظن أنك علمتني الفنون القتالية لكي أتمكن من للدفاع عن نفسي قليلاً عندما تضربني ولا تشعر بالملل الشديد."
+        },
+        {
+          "text": "I'MJUST TEACHING YOU SOME MARTIAL ARTS.",
+          "confidence": 0.938,
+          "text_ar": "أنا أُعلّمكِ بعض فنون الدفاع عن النفس فحسب."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "NOT AFRAID OF BEING EXPOSED NOW?",
+          "confidence": 0.939,
+          "text_ar": "ألا تخشى أن يُفتضح أمرك الآن؟"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "WHO WOULD BELIEVEIT IF YOU TALKED ABOUT? AS LONG AS'IDON'T FLY UP AND TAKE DOWN THAT CCTVPEOPLEWILL JUST THINK YOU HAVE PARANOIA.",
+          "confidence": 0.889,
+          "text_ar": "من سيصدق أمراً كهذا إن تحدثت عنه؟ ما دمتُ لا أطير في الهواء لأسقط كاميرا المراقبة تلك، فسيظن الناس أنك مصاب بجنون العظمة فحسب."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "TO BE HONEST, I'M STARTING TO THINK I DO HAVE PARA- NOIA. WHAT IF YOU WERE- NT EVENFROM THE TANG DYNASTY AND JUST MADE UPA LIE TO DECEIVE ME?",
+          "confidence": 0.856,
+          "text_ar": "لأكون صادقاً، بدأت أظن أنني مصاب بجنون العظمة بالفعل. ماذا لو لم تكن من سلالة أسرة تانغ واختلقت كذبة لتخدعني؟"
+        },
+        {
+          "text": "ALRIGHT,I'LLBE HONEST.IGREWUP WITH A HOMELESS OLD LADY WHO PRACTICED THE",
+          "confidence": 0.921,
+          "text_ar": "حسناً، سأكون صادقاً. لقد نشأت مع عجوز بلا مأوى كانت تتدرب على"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "THREE EMPEROR CANNON PUNCH, AND I HAPPEN TO BE AN EXTRAORDINARY MARTIALARTS PRODIGY...",
+          "confidence": 0.915,
+          "text_ar": "لكمات الأباطرة الثلاثة، وصادف أنني عبقري استثنائي في فنون القتال..."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "AFTER APPLYING HAND CREAMDAILY,THE BACK OF MY HANDS HAVE BECOME MUCH SMOOTHER AND MORE DELICATE THANBEFORE.",
+          "confidence": 0.922,
+          "text_ar": "بعد استخدام كريم اليدين يومياً، أصبح ظهر يدي أكثر نعومة ورقة بكثير مقارنة بالسابق."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "CUC UAC AI DCATU",
+          "confidence": 0.61,
+          "text_ar": "سحقا!"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "TAKENOFF THE HAT OF THE ANCIENT PEOPLE,",
+          "confidence": 0.96,
+          "text_ar": "خلع قبعة الرجل القديم،"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "NEXT,IT'S TIME TO LVE WELL IN THE MODERNWORLD.",
+          "confidence": 0.936,
+          "text_ar": "والآن، حان وقت العيش بشكل جيد في العالم الحديث."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "证字号",
+          "confidence": 0.997,
+          "text_ar": "رقم الشهادة"
+        }
+      ]
+    }
+  ]
+}
