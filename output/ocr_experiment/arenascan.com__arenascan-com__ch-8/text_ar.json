@@ -1,0 +1,718 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "8",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "WE WOULD NEED TO BUILD A MANUFACTURING PLANTTO MAKE PROHIBITEDLIQUOR, NEGOTIATE WITHOTHER LANDS TO IMPORT INGREDIENTS, AND SECURE A DISTRIBUTION NETWORK.",
+          "confidence": 0.899,
+          "text_ar": "س نحتاج إلى بناء مصنع لتصنيع المشروبات الكحولية الممنوعة، والتفاوض مع الأراضي الأخرى لاستيراد المكونات، وتأمين شبكة توزيع."
+        },
+        {
+          "text": "STAND",
+          "confidence": 0.89,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "THE TIME, EFFORT, AND MONEYNEEDED FOR SUCH A THING...",
+          "confidence": 0.954,
+          "text_ar": "الوقت والجهد والمال اللازمة لمثل هذا الأمر..."
+        },
+        {
+          "text": "ALL BECAUSE OF A RUMOUR FROMTHE ANTON FAMILY?AREYOU UNDERESTIMATING THE POTENTIAL REPERCUSSIONS?",
+          "confidence": 0.931,
+          "text_ar": "كل هذا بسبب مجرد شاعة من عائلة أنتون؟ ألا تستخفين بالتداعيات المحتملة؟"
+        },
+        {
+          "text": "B-BUT THE SOURCE OF THIS INFORMATIONIS TRUSTWORTHY. FATHER-",
+          "confidence": 0.931,
+          "text_ar": "ل-لكن مصدر هذه المعلومات جدير بالثقة. يا أبي-"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "YOU WILL ADDRESS ME AS COUNT!",
+          "confidence": 0.921,
+          "text_ar": "ستخاطبينني بصفتي الكونت!"
+        },
+        {
+          "text": "THISIS AN OFFICIALS' CONFERENCE!",
+          "confidence": 0.943,
+          "text_ar": "هذا مؤتمر رسمي!"
+        },
+        {
+          "text": "C-Count.",
+          "confidence": 0.956,
+          "text_ar": "ح-حضرة الكونت."
+        },
+        {
+          "text": "THE LIQUOR INDUSTRYISINDEED PROFITABLE.HOWEVER, IF THAT RUMOUR TURNS OUT TO BE FALSE,",
+          "confidence": 0.951,
+          "text_ar": "صناعة الكحول مربحة بالفعل. ومع ذلك، إذا تبين أن تلك الشاعة كاذبة،"
+        },
+        {
+          "text": "THE ELIAS FAMILYWILL BE RUINED.WE'LL BE SEEN AS THE ONES WHO REBELLED AGAINST THE EMPIRE.",
+          "confidence": 0.946,
+          "text_ar": "ستتعرض عائلة إلياس للخراب. وسنُعتبر أولئك الذين تمردوا ضد الإمبراطورية."
+        },
+        {
+          "text": "NOW, ARE YOU STILL INSISTENT ON STARTING A LIQUOR BUSINESS?",
+          "confidence": 0.921,
+          "text_ar": "والآن، هل ما زلتِ مصرة على بدء تجارة الكحول؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "FIND OUT IF THE RUMOUR FROM THE ANTON FAMILYIS TRUE.",
+          "confidence": 0.949,
+          "text_ar": "تأكدي مما إذا كانت شاعة عائلة أنتون صحيحة."
+        },
+        {
+          "text": "ASK THE JUDICIAL SECTOR AND THE WIFE'S SIDE, THE PHILIPS, FOR ANY DETAILS.",
+          "confidence": 0.937,
+          "text_ar": "اسألي القطاع القضائي وعائلة الزوجة، فيليبس، عن أي تفاصيل."
+        },
+        {
+          "text": "WE SHALL CONTINUE THIS DISCUSSIONONCE IT HAS BEEN VERIFIED.",
+          "confidence": 0.923,
+          "text_ar": "سنتابع هذا النقاش بمجرد التحقق من الأمر."
+        },
+        {
+          "text": "YES, MY LORD.",
+          "confidence": 0.913,
+          "text_ar": "حاضر، يا مولاي."
+        },
+        {
+          "text": "SHE COULDN'T EVEN SAY A SINGLE WORD...",
+          "confidence": 0.956,
+          "text_ar": "لم تستطع حتى أن تنطق بكلمة واحدة..."
+        },
+        {
+          "text": "I CAN'T BELIVE SHE CAME TO SUCH ANIMPORTANT MEETING.",
+          "confidence": 0.905,
+          "text_ar": "لا أصدق أنها حضرت مثل هذا الاجتماع المهم."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "WHAT'S WITH YOU?WERE YOU PRETENDING TO BE AN IDIOT THIS WHOLE TIME?",
+          "confidence": 0.932,
+          "text_ar": "ما بكِ؟ أكنتِ تتظاهرين بالغباء طوال هذا الوقت؟"
+        },
+        {
+          "text": "N-NO.I JUST THOUGHT THAT I SHOULD START LIVING A PROPER LIFE.",
+          "confidence": 0.958,
+          "text_ar": "ل-لا. لقد شعرت فقط أنه يجب عليّ أن أبدأ عيش حياة لائقة."
+        },
+        {
+          "text": "I WAS ALWAYS HOLED UP IN MY ROOM WITH NOTHING TO DO...",
+          "confidence": 0.907,
+          "text_ar": "كنتُ دائماً حبيسة غرفتي بلا أي عمل أفعله..."
+        },
+        {
+          "text": ".IDON'T CARE HOWYOUACTWITHIN OUR HOUSEHOLD, BUT I WON'T STANDFOR IT IF YOU END UP DISGRACING THE ELIAS NAME OUT IN PUBLIC.",
+          "confidence": 0.881,
+          "text_ar": "لا يهمني كيف تتصرفين داخل منزلنا، لكني لن أتسامح مع إحضارك العار لاسم إلياس علناً أمام الناس."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "A-ALRIGHT, SISTER.I'LL BE CAREFUL.",
+          "confidence": 0.951,
+          "text_ar": "ح-حسناً، أختي. سأكون حذرة."
+        },
+        {
+          "text": "SISTER?",
+          "confidence": 0.987,
+          "text_ar": "أختي؟"
+        },
+        {
+          "text": "frowns",
+          "confidence": 0.996,
+          "text_ar": "تُقطب جبينها"
+        },
+        {
+          "text": "YES. YOU'RE MY SISTER.",
+          "confidence": 0.936,
+          "text_ar": "نعم. أنتِ أختي."
+        },
+        {
+          "text": "SHOULD I NOT CALL YOU THAT?",
+          "confidence": 0.94,
+          "text_ar": "ألا ينبغي لي أن أناديكِ هكذا؟"
+        },
+        {
+          "text": "..IT'S FINE. YOU CAN CALL ME SISTER.I'LL BE WATCHING YOU FROM NOW ON.",
+          "confidence": 0.87,
+          "text_ar": "..لا بأس. يمكنكِ مناداتي بالأخت. سأراقبكِ من الآن فصاعداً."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "MY LADY, PLEASE COME WITH ME.THE COUNT HAS CALLED FOR YOU.",
+          "confidence": 0.931,
+          "text_ar": "سيدتي، رجاءً تعالي معي. الكونت يطلب حضوركِ."
+        },
+        {
+          "text": "AH, OKAY.",
+          "confidence": 0.948,
+          "text_ar": "آه، حسناً."
+        },
+        {
+          "text": "THIS IS PROBABLY ABOUT HOW I MANAGED TO CONVINCE ANDRE PETE.",
+          "confidence": 0.945,
+          "text_ar": "رجح أن الأمر يتعلق بكيفية تمكني من إقناع أندريه بيت."
+        },
+        {
+          "text": "NOT TO MENTION, THE BLANK CHEQUE...",
+          "confidence": 0.955,
+          "text_ar": "ناهيكِ عن الشيك على بياض..."
+        },
+        {
+          "text": "ALRIGHT. YOU CAN DO THIS. YOU NEED FATHER'S FULL SUPPORT.",
+          "confidence": 0.912,
+          "text_ar": "حسناً. يمكنكِ فعل هذا. أنتِ بحاجة لدعم أبي الكامل."
+        },
+        {
+          "text": "品 早烈合中",
+          "confidence": 0.441,
+          "text_ar": "نص أصلي غير مترجم"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "Ugh.",
+          "confidence": 0.894,
+          "text_ar": "تبّاً."
+        },
+        {
+          "text": "I'MSO NERVOUS...",
+          "confidence": 0.847,
+          "text_ar": "أنا متوترة للغاية..."
+        },
+        {
+          "text": "THIS IS MYFIRST PRIVATE MEETING AFTER ALL.",
+          "confidence": 0.949,
+          "text_ar": "هذا هو اجتماعي الخاص الأول بعد كل شيء."
+        },
+        {
+          "text": "I HAVE THREE QUESTIONS FOR YOU.",
+          "confidence": 0.937,
+          "text_ar": "لدَي ثلاثة أسئلة لكِ."
+        },
+        {
+          "text": "HUH? THREE?",
+          "confidence": 0.993,
+          "text_ar": "هاه؟ ثلاثة؟"
+        },
+        {
+          "text": "G-GO AHEAD.",
+          "confidence": 0.978,
+          "text_ar": "ت-تفضل."
+        },
+        {
+          "text": "A MESSAGE CAME IN FROM ANDRE PETE.HOW DID YOU MANAGE TO CONVINCE HIM?",
+          "confidence": 0.926,
+          "text_ar": "جاءت رسالة من أندريه بيت. كيف تمكنتِ من إقناعه؟"
+        },
+        {
+          "text": "THIS STORY MAY BE THE ANSWER TO TWO OF HIS QUESTIONS.",
+          "confidence": 0.946,
+          "text_ar": "قد تكون هذه القصة هي الإجابة عن اثنين من أسئلته."
+        },
+        {
+          "text": "A-A WHILE BACK, THERE WAS THIS 8-YEAR-OLD BOY NAMED PETER,",
+          "confidence": 0.949,
+          "text_ar": "ق-قبل فترة، كان هناك فتى يبلغ من العمر 8 سنوات يدعى بيتر،"
+        },
+        {
+          "text": "WHO STARTED VISITING THE TRAINING GROUNDS TO PRACTICE ALONE WITH HIS WOODEN SWORD.HE'S A SWORD.HE'SA STABLEMAN'S SON.",
+          "confidence": 0.802,
+          "text_ar": "بدأ يزور ساحات التدريب ليتدرب بمفرده بسيفه الخشبي. إنه سياف. إنه ابن سائس اسطبلات."
+        },
+        {
+          "text": "WHO?",
+          "confidence": 0.993,
+          "text_ar": "من؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "WILL YOU LISTEN TO THE WHOLE STORY?",
+          "confidence": 0.958,
+          "text_ar": "ألا تستمعين إلى القصة بأكملها؟"
+        },
+        {
+          "text": "I WILL.",
+          "confidence": 0.948,
+          "text_ar": "سأفعل."
+        },
+        {
+          "text": "EVERYDAY, PETER WOULD COME TO THE FIELD INJURED.",
+          "confidence": 0.944,
+          "text_ar": "كل يوم، كان بيتر يأتي إلى الميدان مصاباً."
+        },
+        {
+          "text": "HE COPIED THE TRAINING THAT I WAS RECEIVING.",
+          "confidence": 0.94,
+          "text_ar": "كان يقلد التدريب الذي كنت أتلقاه."
+        },
+        {
+          "text": "IDON'T KNOWIFHE WAS STARVED OR NATURALLY THIN, BUT HE WAS QUITE SKINNY.",
+          "confidence": 0.938,
+          "text_ar": "لا أعرف ما إذا كان يعاني من الجوع أم نحيل بطبيعته، لكنه كان نحيلاً للغاية."
+        },
+        {
+          "text": "AND?",
+          "confidence": 0.989,
+          "text_ar": "وبعد؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IT SEEMED THAT THE NEIGHBOURHOOD KIDS WERE BEATING HIMUP.",
+          "confidence": 0.947,
+          "text_ar": "بدا أن أطفال الحي كانوا يبرحونه ضرباً."
+        },
+        {
+          "text": "IDIDN'T PARTICULARLY CARE THAT HE WAS TRAINING BY THE FIELD.",
+          "confidence": 0.908,
+          "text_ar": "لم أكن مهتماً بشكل خاص بحقيقة أنه كان يتدرب بجوار الميدان."
+        },
+        {
+          "text": "I THOUGHT THAT HE WOULD QUIT AFTER A FEW DAYS.",
+          "confidence": 0.935,
+          "text_ar": "ظننت أنه سيستسلم بعد أيام قليلة."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "-2 dayslater-",
+          "confidence": 0.991,
+          "text_ar": "-بعد يومين-"
+        },
+        {
+          "text": "BUT AFTER TWO DAYS, BERNARD STARTED PERSONALLY TRAINING HIM.",
+          "confidence": 0.938,
+          "text_ar": "ولكن بعد يومين، بدأ برنارد تدريبه بنفسه."
+        },
+        {
+          "text": "OH? WHY?",
+          "confidence": 0.935,
+          "text_ar": "أه؟ لماذا؟"
+        },
+        {
+          "text": "YOU HAD SO MANY EXCUSES FOR NOT TRAINING ME,AND YET YOU ACCEPTEDHIM HCCIDD SO READILY?",
+          "confidence": 0.476,
+          "text_ar": "كان لديك الكثير من الأعذار لعدم تدريبي، ومع ذلك قبلته بهذه السهولة؟"
+        },
+        {
+          "text": "AND THEN?",
+          "confidence": 0.982,
+          "text_ar": "ثم؟"
+        },
+        {
+          "text": "I'LL GIVE YOU ANYTHING YOU WANT AFTER BECOMING THE EMPIRE'SSTRONGEST MASTER SWORDSMAN!",
+          "confidence": 0.937,
+          "text_ar": "سأمنحك أي شيء تريده بعد أن تصبح أعظم سياف في الإمبراطورية!"
+        },
+        {
+          "text": "THAT'S WHATHE TOLD ME.",
+          "confidence": 0.946,
+          "text_ar": "هذا ما قاله لي."
+        },
+        {
+          "text": "DO YOU THINK JUST ANYONE CAN BECOME A MASTER SWORDSMAN? THINGS ARE GOING TO GET PRETTY INTERESTING SINCE HE'S A FAST-LEARNER.",
+          "confidence": 0.947,
+          "text_ar": "أتعتقد أن أي شخص يمكن أن يصبح سيافاً بارعاً؟ ستصبح الأمور مثيرة لللاهتمام للغاية نظراً لأنه سريع التعلم."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "I WILL TRAIN HIM.",
+          "confidence": 0.946,
+          "text_ar": "سأقوم بتدريبه."
+        },
+        {
+          "text": "IF HE DOES WELL, I'LL KEEP TRAINING HIM.IF NOT, I'LL STOP.",
+          "confidence": 0.941,
+          "text_ar": "إذا أدى بشكل جيد، سأستمر في تدريبه. وإلا فسأتوقف."
+        },
+        {
+          "text": "SO THAT MEANS ITWAS THE SAME FOR PETE!",
+          "confidence": 0.939,
+          "text_ar": "إذن فهذا يعني أن الأمر كان نفس الشيء بالنسبة لبيت!"
+        },
+        {
+          "text": "HAHA,HOW INTERESTING!",
+          "confidence": 0.981,
+          "text_ar": "هاها، يا له من أمر ممتع!"
+        },
+        {
+          "text": "ALRIGHT. YOU'VE GIVEN MEANSWERSTO TWO OF MY QUESTIONS.",
+          "confidence": 0.952,
+          "text_ar": "حسناً. لقد أعطيتني إجابات لاثنين من أسئلتي."
+        },
+        {
+          "text": "smirk",
+          "confidence": 0.968,
+          "text_ar": "تبتسم بخبث"
+        },
+        {
+          "text": "HERE'S THE LAST ONE.",
+          "confidence": 0.955,
+          "text_ar": "إليك السؤال الأخير."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "MY LORD, WE STILL NEED AN ANSWER REGARDING THE ISSUE WITH THE LAWYER.",
+          "confidence": 0.938,
+          "text_ar": "يا مولاي، ما زلنا بحاجة إلى إجابة بخصوص قضية المحامي."
+        },
+        {
+          "text": "WE'VE ALREADY HEARD IT.",
+          "confidence": 0.964,
+          "text_ar": "لقد سمعناها بالفعل."
+        },
+        {
+          "text": "I WILL TELL YOU THE REASON.",
+          "confidence": 0.929,
+          "text_ar": "سأخبركم بالسبب."
+        },
+        {
+          "text": "YOU PROBABLY HEARD THAT HE GOT A LAWYER TO NOTARIZE A BLANK CHEQUE.",
+          "confidence": 0.691,
+          "text_ar": "ربما سمعتم أنه جعل محامياً يوثق شيكاً على بياض."
+        },
+        {
+          "text": "YES, THAT'S CORRECT!",
+          "confidence": 0.93,
+          "text_ar": "نعم، هذا صحيح!"
+        },
+        {
+          "text": "THE REASON HE TOOK ME IN AS HIS STUDENT...",
+          "confidence": 0.94,
+          "text_ar": "السبب وراء اتخاذه لي تلميذة لديه..."
+        },
+        {
+          "text": "trial",
+          "confidence": 0.856,
+          "text_ar": "محاكمة"
+        },
+        {
+          "text": "IS BECAUSE IN ANDRE PETE'S EYES, I'M LIKE PETER, AN INTERESTING KID. DOING ALL THIS IS MERELYFUN FOR HIM.",
+          "confidence": 0.931,
+          "text_ar": "هو أنه في عيني أندريه بيت، أنا مثل بيتر، طفلة مثيرة للاهتمام. فعل كل هذا ليس إلا متعة بالنسبة له."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "THE REASON BEHINDNOTARIZING THE BLANK CHEQUE WAS TO TEST ME.",
+          "confidence": 0.951,
+          "text_ar": "السبب وراء توثيق الشيك على بياض كان لاختباري."
+        },
+        {
+          "text": "HE DOESN'T ACTUALLY BELIEVE I'LLEVERBECOME THE PALACE'S SECRETARY.",
+          "confidence": 0.942,
+          "text_ar": "فهو لا يعتقد حقاً أنني سأصبح سكرتيرة القصر يوماً ما."
+        },
+        {
+          "text": "SO THAT'S WHY HE WANTED IT NOTARIZED...",
+          "confidence": 0.912,
+          "text_ar": "إذن لهذا السبب أراد توثيقه..."
+        },
+        {
+          "text": "HE WANTED TO SEE HOW YOU WOULDREACTIF THE COUNT DIDN'T APPROVE.",
+          "confidence": 0.932,
+          "text_ar": "أراد أن يرى كيف ستكون ردة فعلكم إذا لم يوافق الكونت."
+        },
+        {
+          "text": "YES.IT WAS ALLA WAS ALL A TEST TO SEE HOW TARA WOULD REACT.",
+          "confidence": 0.913,
+          "text_ar": "نعم. لقد كان الأمر برمته اختباراً لمعرفة ردة فعل تارا."
+        },
+        {
+          "text": "LEANS",
+          "confidence": 0.978,
+          "text_ar": "تتمائل إلى الأمام"
+        },
+        {
+          "text": "HE WAS ALSO CURIOUS AS TO HOW WE WOULD REACT.",
+          "confidence": 0.901,
+          "text_ar": "كان فضولياً أيضاً بشأن كيف ستكون ردة فعلنا."
+        },
+        {
+          "text": "ANDDID YOU APPROVE OF IT..?",
+          "confidence": 0.888,
+          "text_ar": "وهل وافقت على ذلك..؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "THE CHILD WHO WALKED THROUGHLEKTON ROAD TO MEET ANDRE PETE IS SCAREDOF GETTING A SIMPLE BLANK CHEQUE NOTARIZED?",
+          "confidence": 0.936,
+          "text_ar": "الطفلة التي مشت عبر طريق ليكتون لقاء أندريه بيت تخاف من توثيق شيك بسيط على بياض؟"
+        },
+        {
+          "text": "I WASN'T SURE WHETHER YOU'D AGREE SINCE I HAVE YET TO PROVE TO YOU MY WORTH.",
+          "confidence": 0.92,
+          "text_ar": "لم أكن متأكدة مما إذا كنت ستوافق بما أنني لم أثبت جدارتي لك بعد."
+        },
+        {
+          "text": "HAHAHA!",
+          "confidence": 0.986,
+          "text_ar": "هاهاها!"
+        },
+        {
+          "text": "THAT'S THE SPIRIT!",
+          "confidence": 0.969,
+          "text_ar": "هذا هو الإصرار المطلوب!"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "WOULD YOU LIKE MACARONS OR COOKIES?",
+          "confidence": 0.958,
+          "text_ar": "أترغبين في تناول المعكرون أم الكعك المحلى؟"
+        },
+        {
+          "text": "WHAT? B-BOTH ARE GOOD.",
+          "confidence": 0.961,
+          "text_ar": "ماذا؟ ك-كلاهما جيد."
+        },
+        {
+          "text": "AH HA HA",
+          "confidence": 0.983,
+          "text_ar": "آه ها ها"
+        },
+        {
+          "text": "HAVE I BEEN ACKNOWLEDGED? THIS IS THE FIRST TIME HE'S SHOWN ME ANYFORM OF KINDNESS.",
+          "confidence": 0.926,
+          "text_ar": "هل تم الاعتراف بي؟ هذه هي المرة الأولى التي يظهر لي فيها أي شكل من أشكال اللطف."
+        },
+        {
+          "text": "-5 minuteslater-",
+          "confidence": 0.988,
+          "text_ar": "-بعد 5 دقائق-"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "I THINK.. I'M GONNA BE SICK.",
+          "confidence": 0.919,
+          "text_ar": "أعتقد.. أنني سأتقيأ."
+        },
+        {
+          "text": "BUT WHY DOES MY HEART FEEL SO LIGHT? IS IT BECAUSE OF MY FATHER?",
+          "confidence": 0.928,
+          "text_ar": "ولكن لماذا يشعر قلبي بهذه الخفة؟ أهو بسبب والدي؟"
+        },
+        {
+          "text": "SNAP OUT OF IT, TARA ELIAS. YOU STILL HAVE A WAYS TO GO.",
+          "confidence": 0.934,
+          "text_ar": "تماسكي يا تارا إلياس. لا يزال أمامك طريق طويل."
+        },
+        {
+          "text": "NOWI'M CURIOUS...",
+          "confidence": 0.946,
+          "text_ar": "والآن أنا فضولية..."
+        },
+        {
+          "text": "AS TO WHY YOU WANT TO TAKE THE EXAM.",
+          "confidence": 0.925,
+          "text_ar": "حول سبب رغبتك في خوض الاختبار."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "I'VE HAD THIS ANSWER EVER SINCE I DECIDED TO TAKE THE TEST.",
+          "confidence": 0.907,
+          "text_ar": "لقد كانت لدي هذه الإجابة منذ اللحظة التي قررت فيها خوض الاختبار."
+        },
+        {
+          "text": "BUTI SHOULDN'T SPEAK OF IT RECKLESSLY",
+          "confidence": 0.92,
+          "text_ar": "لكن لا ينبغي لي أن أتحدث عن الأمر بتهور"
+        },
+        {
+          "text": "ITISNT SOMETHING TO BE TAKEN LIGHTLY...",
+          "confidence": 0.91,
+          "text_ar": "إنه ليس بالأمر الذي يمكن الاستخفاف به..."
+        },
+        {
+          "text": "AND MAY EVEN BE HEAVILY FROWNED UPON.",
+          "confidence": 0.958,
+          "text_ar": "وقد يُقابل باستهجان شديد."
+        },
+        {
+          "text": "IMAY BE GIVEN STRICT ORDERS AFTER THIS...",
+          "confidence": 0.902,
+          "text_ar": "قد تُصدر بحقي أوامر صارمة بعد هذا..."
+        },
+        {
+          "text": "FOR THE PAST SEVEN YEARS, THE ONE THING THAT HAD KEPT ME GOING...",
+          "confidence": 0.925,
+          "text_ar": "طوال السنوات السبع الماضية، الشيء الوحيد الذي جعلني أستمر..."
+        },
+        {
+          "text": "WAS MY BROTHER, BRANDON.",
+          "confidence": 0.919,
+          "text_ar": "كان أخي، براندون."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "WHAT...",
+          "confidence": 0.934,
+          "text_ar": "ماذا..."
+        },
+        {
+          "text": "Who?",
+          "confidence": 0.944,
+          "text_ar": "من؟"
+        },
+        {
+          "text": "STAND",
+          "confidence": 0.984,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "DARE MENTION BRANDON?!",
+          "confidence": 0.988,
+          "text_ar": "كيف تجرؤين على ذكر براندون?!"
+        },
+        {
+          "text": "RISES",
+          "confidence": 0.957,
+          "text_ar": "يقف"
+        },
+        {
+          "text": "MYLORD, PLEASECA-CALM DOWN!",
+          "confidence": 0.956,
+          "text_ar": "يا مولاي، ارجوك اهدأ!"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "RIGHT NOW,I NEED TO PROVOKE FATHER..",
+          "confidence": 0.907,
+          "text_ar": "الآن، يحتم عليّ استفزاز أبي.."
+        },
+        {
+          "text": "BY BRINGING UP THE TRAUMATIC ACCIDENT FROM SEVEN YEARS AGO.",
+          "confidence": 0.972,
+          "text_ar": "من خلال إثارة حادثة الصدمة التي وقعت قبل سبع سنوات."
+        },
+        {
+          "text": "KENAZ webtoon IP holder",
+          "confidence": 0.955,
+          "text_ar": "حقوق نشر ويبتون كيناز"
+        },
+        {
+          "text": "N让让 （）区 woodyNana，Minhe",
+          "confidence": 0.487,
+          "text_ar": "فريق الترجمة"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "Hey, all! I'm back!ImeanBelle#1.Sadly,IfoundoutthatpoorBelle#isswamped with work,soIshallcontinuetotrudgeonwithoutherbeautifulsupport.Worrynot. Wearen'tdropping this series (as farasI know,butsince Imaslowbelle,I'm still working on PR for ch 9 AHA.",
+          "confidence": 0.834,
+          "text_ar": "مرحباً بالجميع! لقد عُدت! أعني بيل#1. للأسف، اكتشفت أن بيل المسكينة غارقة في العمل، لذا سأواصل المسير بدون دعمها الجميل. لا تقلقوا. لن نتخلى عن هذه السلسلة (على حد علمي، ولكن نظراً لأنني بيل بطيئة، ما زلت أعمل على التنقيح للفصل 9."
+        },
+        {
+          "text": "Thank you toBelle#12forletting me whipdoing theTSforthis chapter! BELL'S SCANS present Ill Save This Damn Family!-Chapter8 Raw Provider:Manhwa KingdomxPEACHY Translator:Belle#333 Proofreader:Belle#10 Cleaner/Redrawer:Belle#12 3 Typesetter:Belle#12 Qualitg Checker: Belle#10",
+          "confidence": 0.128,
+          "text_ar": "شكراً لـ بيل#12 لسماحي بالقيام بترجمة وتنسيق هذا الفصل! تقديم أعمال بيل: سأقوم بتنقذ هذه العائلة اللعينة! - الفصل 8"
+        },
+        {
+          "text": "like& Follow us on",
+          "confidence": 0.936,
+          "text_ar": "اعجب بنا وتابعنا على"
+        }
+      ]
+    }
+  ]
+}
