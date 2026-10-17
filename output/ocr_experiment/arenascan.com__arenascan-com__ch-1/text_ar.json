@@ -1,0 +1,787 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "1",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "AMOURCASTLEOF THEOSILIA EMPIRE",
+          "confidence": 0.911,
+          "text_ar": "قصر أمور في إمبراطورية أوسيليا"
+        },
+        {
+          "text": "VERYNEARIN THE FUTURE",
+          "confidence": 0.951,
+          "text_ar": "في المستقبل القريب جداً"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "*TANG",
+          "confidence": 0.987,
+          "text_ar": "طرق"
+        },
+        {
+          "text": "*TANG",
+          "confidence": 0.988,
+          "text_ar": "طرق"
+        },
+        {
+          "text": "*TANG",
+          "confidence": 0.964,
+          "text_ar": "طرق"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IS THIS PLACE",
+          "confidence": 0.961,
+          "text_ar": "أهذا المكان..."
+        },
+        {
+          "text": "THE SECOND HEIR OF THE OSILIA EMPIRE",
+          "confidence": 0.929,
+          "text_ar": "الوريث الثاني لإمبراطورية أوسيليا"
+        },
+        {
+          "text": "PRINCE KYLE AMOUR.",
+          "confidence": 0.867,
+          "text_ar": "الأمير كايل أمور."
+        },
+        {
+          "text": "AT THIS BANQUET HOSTEDBY THE AMOUR PALACE...",
+          "confidence": 0.825,
+          "text_ar": "في هذا الحفل الذي يقيمه قصر أمور..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THE PRINCE.",
+          "confidence": 0.977,
+          "text_ar": "الأمير."
+        },
+        {
+          "text": "THE PRINCE.",
+          "confidence": 0.986,
+          "text_ar": "الأمير."
+        },
+        {
+          "text": "IN FRONTOF COUNTLESS NOBLES",
+          "confidence": 0.941,
+          "text_ar": "أمام عدد لا يحصى من النبلاء"
+        },
+        {
+          "text": "SFX :PASTPSST",
+          "confidence": 0.949,
+          "text_ar": "همس واضطراب"
+        },
+        {
+          "text": "WHATIS THIS?",
+          "confidence": 0.983,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "WHYARE YOU HERE?",
+          "confidence": 0.943,
+          "text_ar": "لماذا أنت هنا؟"
+        },
+        {
+          "text": "THIS",
+          "confidence": 0.997,
+          "text_ar": "هذه"
+        },
+        {
+          "text": "HISTORIC MOMENT.",
+          "confidence": 0.984,
+          "text_ar": "اللحظة التاريخية."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "*HESITANT",
+          "confidence": 0.993,
+          "text_ar": "تردد"
+        },
+        {
+          "text": "hiak",
+          "confidence": 0.988,
+          "text_ar": "شهقة"
+        },
+        {
+          "text": "IDIDN'T RE△LLY KNOW.",
+          "confidence": 0.908,
+          "text_ar": "لم أكن أعلم حقاً."
+        },
+        {
+          "text": "ALL THE THINGS I WILL DO.",
+          "confidence": 0.943,
+          "text_ar": "كل الأمور التي سأقوم بها."
+        },
+        {
+          "text": "WITH THIS MAN.",
+          "confidence": 0.953,
+          "text_ar": "مع هذا الرجل."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THIS KIND OF THING! NEVER PLANNED THIS!",
+          "confidence": 0.921,
+          "text_ar": "مثل هذا الشيء! لم أخطط له أبداً!"
+        },
+        {
+          "text": "DON'T TELL ME... IS THAT REALLY TARA ELLIOS.",
+          "confidence": 0.887,
+          "text_ar": "لا تقل لي... أهذه هي تارا إليوس حقاً؟"
+        },
+        {
+          "text": "NONSENSE",
+          "confidence": 0.998,
+          "text_ar": "هراء"
+        },
+        {
+          "text": "HOWCAN HERBODY...",
+          "confidence": 0.968,
+          "text_ar": "كيف يمكن لجسدها..."
+        },
+        {
+          "text": "OH MY, PERSON IS MISSING.",
+          "confidence": 0.862,
+          "text_ar": "يا له من أمر، لقد غابت عن الوعي."
+        },
+        {
+          "text": "HOWEVER, △TPRINCE KYLE'S SIDE...",
+          "confidence": 0.909,
+          "text_ar": "مع ذلك، بجانب الأمير كايل..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "clymsy",
+          "confidence": 0.879,
+          "text_ar": "تعثر"
+        },
+        {
+          "text": "THESE PEOPLE... REALLY CAN'T SPEAK LESS. 出ky",
+          "confidence": 0.509,
+          "text_ar": "هؤلاء الناس... لا يكفون عن الثرثرة أبداً."
+        },
+        {
+          "text": "SFX:MAD",
+          "confidence": 0.974,
+          "text_ar": "انزعاج"
+        },
+        {
+          "text": "YOU'RE GOING TO GET AN AXE?",
+          "confidence": 0.91,
+          "text_ar": "أتتوقع الحصول على فأس؟"
+        },
+        {
+          "text": "SMILE△ LITTLE.2 AIDES?",
+          "confidence": 0.901,
+          "text_ar": "ابتسم قليلاً أيها المساعدان؟"
+        },
+        {
+          "text": "DONE RIGHT?",
+          "confidence": 0.986,
+          "text_ar": "أتممت الأمر جيداً؟"
+        },
+        {
+          "text": "PLEASE KEEP THE CONTRACT. UNDERSTAND!",
+          "confidence": 0.963,
+          "text_ar": "الرجاء الالتزام بالعقد. افهم هذا!"
+        },
+        {
+          "text": "\"huh hun 一百 0",
+          "confidence": 0.433,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "REALLY THIS GUY...",
+          "confidence": 0.951,
+          "text_ar": "حقاً هذا الرجل..."
+        },
+        {
+          "text": "IT WASN'T.",
+          "confidence": 0.954,
+          "text_ar": "لم يكن كذلك."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "EPISODE 1",
+          "confidence": 0.968,
+          "text_ar": "الفصل 1"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "ENG...",
+          "confidence": 0.961,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "ALCH...",
+          "confidence": 0.913,
+          "text_ar": "تبّاً..."
+        },
+        {
+          "text": "*TWITCH",
+          "confidence": 0.99,
+          "text_ar": "ارتعاش"
+        },
+        {
+          "text": "*TWITCH 5",
+          "confidence": 0.129,
+          "text_ar": "ارتعاش"
+        },
+        {
+          "text": "REALLY.",
+          "confidence": 0.941,
+          "text_ar": "حقاً."
+        },
+        {
+          "text": "HA... LWANG... SO FRUSTRATING...",
+          "confidence": 0.753,
+          "text_ar": "هاه... يوانغ... يا له من أمر محبط..."
+        },
+        {
+          "text": "I SHOULD HAVE STOPPEDYOU WRITING THIS KIND OF NOVEL.. WHAT THE HELL IS [OSILIACHRONICLES]",
+          "confidence": 0.927,
+          "text_ar": "كان يجب أن أمنعك من كتابة هذا النوع من الروايات.. ما اللعنة التي اسمها [سجلات أوسيليا]؟"
+        },
+        {
+          "text": "*WADDLE m}$",
+          "confidence": 0.492,
+          "text_ar": "ترنح"
+        },
+        {
+          "text": "MEN'S POWER ARE THE BEST, THEY ARE MOST GOODAT WASTING A BEAUTIFUL PRINCESS, AQUEEN,ANDA WICKEDWOMAN.",
+          "confidence": 0.781,
+          "text_ar": "شخصيات الرجال هي الأفضل، فهم بارعون في إهدار أميرة جميلة، وملكة، وامرأة شريرة."
+        },
+        {
+          "text": "WHY ME!",
+          "confidence": 0.941,
+          "text_ar": "لماذا أنا بالذات!"
+        },
+        {
+          "text": "SFX :TAK!",
+          "confidence": 0.893,
+          "text_ar": "طرق"
+        },
+        {
+          "text": "WHY ME!!",
+          "confidence": 0.948,
+          "text_ar": "لماذا أنا بالذات!!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "YOU'RE JUST A YOUNG OBESE LONER!",
+          "confidence": 0.821,
+          "text_ar": "أنت مجرد شاب بدين ومنعزل!"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HAA... BESIDES,HE'SA DAMNFAMILYWILL SOON BE GONE..",
+          "confidence": 0.84,
+          "text_ar": "هاه... وعلاوة على ذلك، عائلة لعين ستزول قريبًا.."
+        },
+        {
+          "text": "ICAN'T BELIEVE,IWAS HUMILIATED.",
+          "confidence": 0.946,
+          "text_ar": "لا أستطيع التصديق، لقد تعرضت للإهانة."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "UWA△△AK I'M GOING TO CRAZY..",
+          "confidence": 0.586,
+          "text_ar": "آآآه سأُجنّ..."
+        },
+        {
+          "text": "SFX:KYAAAA",
+          "confidence": 0.804,
+          "text_ar": "صرخة"
+        },
+        {
+          "text": "MY LADY?",
+          "confidence": 0.912,
+          "text_ar": "سيدتي؟"
+        },
+        {
+          "text": "STILL... SLEEPING?",
+          "confidence": 0.98,
+          "text_ar": "ما زلتِ... نائمة؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "*SYUT",
+          "confidence": 0.947,
+          "text_ar": "وثب"
+        },
+        {
+          "text": "MYLADY RIGHT NOW...!",
+          "confidence": 0.918,
+          "text_ar": "سيدتي الآن...!و"
+        },
+        {
+          "text": "MY LADY,WE DON'T HAVE TIME TO PLAY. LET'S GO.",
+          "confidence": 0.856,
+          "text_ar": "سيدتي، ليس لدينا وقت للعب. لنذهب."
+        },
+        {
+          "text": "*HLFT",
+          "confidence": 0.958,
+          "text_ar": "رفع"
+        },
+        {
+          "text": "SFX:STARE~",
+          "confidence": 0.98,
+          "text_ar": "حديق مطول"
+        },
+        {
+          "text": "WHY?I'LL DO IT LATER. IT'S TOO HARD.",
+          "confidence": 0.921,
+          "text_ar": "لماذا؟ سأفعل ذلك لاحقاً. الأمر صعب للغاية."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "*SYAK",
+          "confidence": 0.988,
+          "text_ar": "قطع"
+        },
+        {
+          "text": "THE EARL WANT ALL OF US IN THE CONFERENCE.",
+          "confidence": 0.907,
+          "text_ar": "الإيرل يريدنا جميعاً في اجتماع."
+        },
+        {
+          "text": "WHYDOES IT MATTERTOME. HE WOULD'T CALLED ME ANYWAY.",
+          "confidence": 0.927,
+          "text_ar": "وما شأني أنا. لن يطلب مني شيئاً على أي حال."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "THE EARL ALSO WANTSYOUNG LADYTOCOME DOWN TO THE MEETING.",
+          "confidence": 0.935,
+          "text_ar": "الإيرل يريد من الآنسة الشابة النزول إلى الاجتماع أيضاً."
+        },
+        {
+          "text": "MME...",
+          "confidence": 0.936,
+          "text_ar": "أنا...؟"
+        },
+        {
+          "text": "ME TOO?",
+          "confidence": 0.933,
+          "text_ar": "حتى أنا؟"
+        },
+        {
+          "text": "SFX : SURPRISED",
+          "confidence": 0.916,
+          "text_ar": "متفاجئ"
+        },
+        {
+          "text": "I'M IN THE BODY OF 18 YEARS OLD TARA ELLIOS.WHEN SHE WAS NERVOUS, SHE STUTTERED LIKE THIS.",
+          "confidence": 0.912,
+          "text_ar": "أنا في جسد تارا إليوس ذات الـ18 ربيعاً. عندما كانت متوترة، كانت تلعثم هكذا."
+        },
+        {
+          "text": "HER STUTTER,HER BODY,HER STATUS AS A NOBLEMAN, EVERYTHING IS STILL UNFAMILIAR",
+          "confidence": 0.88,
+          "text_ar": "تلعثمها، جسدها، مكانتها كنبيلة، كل شيء ما زال غريباً عليّ."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "BEFORE I LIVE IN THE BODY,ILIVEDA 33-YEARSOLD WRITER IN SEOUL.",
+          "confidence": 0.924,
+          "text_ar": "قبل أن أتقمص هذا الجسد، كنت كاتبة في الثالثة والثلاثين من عمري في سيول."
+        },
+        {
+          "text": "ON MY WAY TO EAT SUNDAE △FTERWORK, I WAS MURDEREDAND FINDMYSELFWALKING UPIN THISBODY",
+          "confidence": 0.885,
+          "text_ar": "في طريقه لتناول وجبة السونداي بعد العمل، تعرضت للقتل وأجد نفسي أستيقظ في هذا الجسد."
+        },
+        {
+          "text": "IT HAS BEEN3 MONTHS SINCE IWANINTHISBODY I MADE THIS BODY LOSES WEIGHT FROM 108 KG TO 92 KG.",
+          "confidence": 0.92,
+          "text_ar": "لقد مرت 3 أشهر منذ أن تقمصت هذا الجسد وجعلته يخسر وزناً من 108 كغ إلى 92 كغ."
+        },
+        {
+          "text": "BUT, IT'S STILL TOO MUCH FOR ME.",
+          "confidence": 0.891,
+          "text_ar": "لكنه ما زال ثقيلاً جداً عليّ."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "TARA ELLIOS HAS RARELY COME OUT OF THE ROOMBEFORE.",
+          "confidence": 0.954,
+          "text_ar": "نادراً ما كانت تارا إليوس تخرج من غرفتها من قبل."
+        },
+        {
+          "text": "IS POSSESSING SOMEONE'SBODY SUPPOSED TO BE LIKE THIS?",
+          "confidence": 0.931,
+          "text_ar": "أهكذا يفترض أن يكون تَمَلُّك جسد شخص آخر؟"
+        },
+        {
+          "text": "MY MEMORY AND THE MEMORYOF THIS PERSON ARE THE SAME ASIF WE ARE THE SAME PERSON, THEY COME TO ME NATURALLY.",
+          "confidence": 0.908,
+          "text_ar": "ذكرياتي وذكريات هذه الفتاة أصبحت واحدة وكأننا شخص واحد، فهي تأتيني بشكل طبيعي."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "EVEN BEFORE I POSSESS THIS BODY,",
+          "confidence": 0.95,
+          "text_ar": "حتى قبل أن أتقمص هذا الجسد،"
+        },
+        {
+          "text": "OREVEN AFTER I POSSESS THIS BODY,",
+          "confidence": 0.938,
+          "text_ar": "أو حتى بعد أن تقمصته،"
+        },
+        {
+          "text": "NEVER ONCE IN MYLIFE.",
+          "confidence": 0.958,
+          "text_ar": "ولا مرة في حياتي."
+        },
+        {
+          "text": "IN THIS OFFICE POSITION.",
+          "confidence": 0.966,
+          "text_ar": "في هذا المنصب المكتبي."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "HAVE THEY EVER CALLED ME.",
+          "confidence": 0.943,
+          "text_ar": "هل دعوني من قبل؟"
+        },
+        {
+          "text": "WHAT THE HELL ARE YOU DOING HERE?",
+          "confidence": 0.927,
+          "text_ar": "ما اللعنة التي تفعلينها هنا؟"
+        },
+        {
+          "text": "DOYOU WANT ME TO GIVE YOU ELLIOS'MAP?",
+          "confidence": 0.932,
+          "text_ar": "أتريدين مني أن أعطيك خريطة إليوس؟"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "ARIA ELLIOS,17 YEARS OLD, THE YOUNGEST DAUGHTER OF ELLIOS FAMILY,WHO EVERYONELOVESMORE THAT ANYTHING.",
+          "confidence": 0.916,
+          "text_ar": "آريا إليوس، 17 عاماً، الابنة الصغرى لعائلة إليوس، والتي يحبها الجميع أكثر من أي شيء."
+        },
+        {
+          "text": "*GRIN fa",
+          "confidence": 0.659,
+          "text_ar": "ابتسامة خبيثة"
+        },
+        {
+          "text": "*DRAG",
+          "confidence": 0.955,
+          "text_ar": "جر"
+        },
+        {
+          "text": "AND,",
+          "confidence": 0.934,
+          "text_ar": "و،"
+        },
+        {
+          "text": "JASON ELLIOS, 27 YEARS OLD, THE SECOND SON OF ELLIOSFAMILY AFTER THEDEATHOF THE ELESTSON'S DEATH 7 YEARS AGO,HE IS THE NEXTLINE AS THE SUCCESSORS OF THE FAMILY.",
+          "confidence": 0.915,
+          "text_ar": "جايسون إليوس، 27 عاماً، الابن الثاني لعائلة إليوس بعد وفاة الابن الأكبر قبل 7 سنوات، وهو التالي في خط خلافة العائلة."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "BUTTO ME.",
+          "confidence": 0.975,
+          "text_ar": "لكن بالنسبة لي."
+        },
+        {
+          "text": "CHLOE ELLIOS, 24 YEARS OLD. THE THIRD DAUGHTER OF ELLIOS FAMILY. THE SMARTEST ANDTHEMOST BUSINESS SAVVYOF ALL ELLIOS.",
+          "confidence": 0.906,
+          "text_ar": "كلوي إليوس، 24 عاماً. الابنة الثالثة لعائلة إليوس. الأذكى والأبرع في إدارة الأعمال بين جميع أفراد عائلة إليوس."
+        },
+        {
+          "text": "2 *DRAG",
+          "confidence": 0.074,
+          "text_ar": "جر"
+        },
+        {
+          "text": "*GLANCE",
+          "confidence": 0.992,
+          "text_ar": "نظرة خاطفة"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "*MUTTER 世",
+          "confidence": 0.229,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "LOGAN ELLIOS, 23 YEARSOLD, THE FOURTH SON OF ELLIOS FAMILYINHIS FOURTHYEAR AT THE ROYAL MILITARY SCHOOL, NO INFORMATIONYET.",
+          "confidence": 0.903,
+          "text_ar": "لوغان إليوس، 23 عاماً، الابن الرابع لعائلة إليوس في سنته الرابعة بالمدرسة العسكرية الملكية، لا معلومات متوفرة بعد."
+        },
+        {
+          "text": "AH..IS THIS YOUR SECOND TIME TOBE INVITED TO THE MEETING? -",
+          "confidence": 0.437,
+          "text_ar": "آه.. أهذه هي المرة الثانية التي تُدعى فيها إلى الاجتماع؟"
+        },
+        {
+          "text": "AWKWARD",
+          "confidence": 0.996,
+          "text_ar": "حرج"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "BY THE WAY, WHEN IS HE COMING?.",
+          "confidence": 0.911,
+          "text_ar": "بالمناسبة، متى سيأتي؟"
+        },
+        {
+          "text": "SFX : STAND UP",
+          "confidence": 0.899,
+          "text_ar": "نهوض"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "*STAND UP",
+          "confidence": 0.956,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "LLOYD ELLIOS, EARL ELLIOS, 57 YEARS OLD.",
+          "confidence": 0.911,
+          "text_ar": "لويد إليوس، الإيرل إليوس، 57 عاماً."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "THE CURRENT HEAD OF ELLIOS FAMILY, WHICHIS THE FIFTH STRONGESTNOBLE FAMILY IN THE EMPIRE.",
+          "confidence": 0.922,
+          "text_ar": "الرئيس الحالي لعائلة إليوس، وهي خامس أقوى عائلة نبيلة في الإمبراطورية."
+        },
+        {
+          "text": "*SHARP",
+          "confidence": 0.993,
+          "text_ar": "نظرة حادة"
+        },
+        {
+          "text": "ANDMY DAD.",
+          "confidence": 0.981,
+          "text_ar": "ووالدي."
+        },
+        {
+          "text": "DOYOUKNOW THAT DOYOU KNOW THAT THE OFFICE DOCUMENTS WERESENT TO EACH FAMILYFROMTHE IMPERIAL CITY?",
+          "confidence": 0.909,
+          "text_ar": "أتعلمون، أتعلمون أن الوثائق الرسمية قد أُرسلت إلى كل عائلة من المدينة الإمبراطورية؟"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "*SURPRISE",
+          "confidence": 0.989,
+          "text_ar": "مفاجأة"
+        },
+        {
+          "text": "YES, SIR!",
+          "confidence": 0.934,
+          "text_ar": "أجل، يا سيدي!"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "THEY SAID THEY'RE RECRUITINGNEW ADMINISTRATIVE OFFICIALS,BUT ACTUALLY...",
+          "confidence": 0.888,
+          "text_ar": "قالوا إنهم يوظفون مسؤولين إداريين جُدد، لكن في الواقع..."
+        },
+        {
+          "text": "I KNOW THAT THEY ARE ACTUALLY CHOOSING FAMILY THAT WILL HELP EMPOWER THE CROWN PRINCE WHO IS IN THE NEXTLINE OF SUCCEEDING THE THRONE.",
+          "confidence": 0.935,
+          "text_ar": "أعلم أنهم يختارون في الواقع العائلات التي ستساعد في تمكين ولي العهد الذي هو التالي في خط خلافة العرش."
+        },
+        {
+          "text": "SFX :FIDDLING",
+          "confidence": 0.954,
+          "text_ar": "عبث بالأصابع"
+        },
+        {
+          "text": "IT'S",
+          "confidence": 0.93,
+          "text_ar": "لقد"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "STARTED",
+          "confidence": 0.989,
+          "text_ar": "بدأ الأمر"
+        },
+        {
+          "text": "FINALLY, THE ELLIOS FAMILYHASSTARTED TOTAKEA STEPINTO THEPATHOFEXTINCTION.",
+          "confidence": 0.928,
+          "text_ar": "أخيراً، بدأت عائلة إليوس تخطو خطوة نحو طريق الانقراض."
+        },
+        {
+          "text": "TO BE CONTINUED",
+          "confidence": 0.942,
+          "text_ar": "يتبع"
+        },
+        {
+          "text": "KENAZ webtoonIPholder",
+          "confidence": 0.988,
+          "text_ar": "كينيز مالك حقوق الويب تون"
+        },
+        {
+          "text": "NU wNa，M（",
+          "confidence": 0.431,
+          "text_ar": "ترجمة"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "Manhwa Typesetter: Phile Translator: Luna & Iris Cleaner: Phile Raw Provider: Ares Visit our blog: http://manhwakingdom.home.blog/",
+          "confidence": 0.934,
+          "text_ar": "فريق العمل: منسق المانهوا، المترجمون، المنظف، مزود الراو"
+        },
+        {
+          "text": "ingdom",
+          "confidence": 0.972,
+          "text_ar": "كينغدوم"
+        }
+      ]
+    }
+  ]
+}
