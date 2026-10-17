@@ -1,0 +1,654 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "268",
+  "manga_title": "My Wife Is From a Thousand Years Ago 268",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Nyanism junitius TL CL/RD Paragon discord.gg/pErHvcxdrx Scans",
+          "confidence": 0.989,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "junitius junitius TS PR",
+          "confidence": 0.967,
+          "text_ar": "فريق التدقيق والتبييض"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "I KNOW THAT GIRL.",
+          "confidence": 0.932,
+          "text_ar": "أنا أعرف تلك الفتاة."
+        },
+        {
+          "text": "HOWDID YOU GET TO KNOW HER?",
+          "confidence": 0.936,
+          "text_ar": "كيف تعرفتِ عليها؟"
+        },
+        {
+          "text": "SHE WAS THE PERSON INVOLVED IN THE INCIDENT THAT GOT US ON THE NEWSPAPER.",
+          "confidence": 0.925,
+          "text_ar": "كانت الشخص المعنيّ في الحادثة التي جعلتنا نُشر في الصحيفة."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IF I REMEMBER CORRECTLY,HER NAME WAS SOME- THING LI?",
+          "confidence": 0.93,
+          "text_ar": "إذا كنت أتذكر جيدًا، كان اسمها يبدو وكأنه لي؟"
+        },
+        {
+          "text": "SHE OWES HAOZI A DEBT OF GRATITLDE AND IS LOOKING TO MARRY HIM TOREPAY HER DEBT OR SOMETHING..",
+          "confidence": 0.909,
+          "text_ar": "إنها مدينة لهاو زي بدين من الامتنان وتريد الزواج منه لرد دينها أو ما شابه.."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "AIYA!",
+          "confidence": 0.969,
+          "text_ar": "آيَا!"
+        },
+        {
+          "text": "Toua",
+          "confidence": 0.771,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "ALLIDIDWASTO MENTIONABOUTHER MARRYING HIMTO REPAY HER DEBT,",
+          "confidence": 0.958,
+          "text_ar": "كل ما قمت به هو ذكر أمر زواجها منه لرد دينها،"
+        },
+        {
+          "text": "I WONDER WHO WAS THE ONE WHO SAIDTHAT SHE WOULDNT DO ANYTHING OFTHATSORT,BUTSTILL GOT MARRIED IN THEEND?",
+          "confidence": 0.936,
+          "text_ar": "أتساءل من هو الشخص الذي قال إنها لن تفعل شيئًا كهذا، لكنه تزوج في النهاية على أي حال؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "WE MIGHTEVEN HAVEKIDS BY NOW IF WE WERE MORE FORTHCOMING BACK THEN.",
+          "confidence": 0.932,
+          "text_ar": "ربما كان لدينا أطفال بحلول الآن لو كنا أكثر جرأة في ذلك الوقت."
+        },
+        {
+          "text": "WHAT HAPPENED AFTER THAT?",
+          "confidence": 0.975,
+          "text_ar": "ماذا حدث بعد ذلك؟"
+        },
+        {
+          "text": "OH RIGHT!MOM! YOU SAW THAT NEWS- PAPERI BROUGHT BACK THAT ONE TIME, DIDN'TYOU?",
+          "confidence": 0.955,
+          "text_ar": "أه صحيح! أمي! لقد رأيتِ تلك الصحيفة التي أحضرتها معي في إحدى المرات، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "YEAH,I SAWT.",
+          "confidence": 0.879,
+          "text_ar": "نعم، لقد رأيتها."
+        },
+        {
+          "text": "ALRIGHT,ENOUGH BRAGGING,WE ALL KNOW THAT YOU'VE BEENON THENEWS.",
+          "confidence": 0.932,
+          "text_ar": "حسنًا، يكفي تفاخرًا، نعلم جميعًا أنك ظهرت في الأخبار."
+        },
+        {
+          "text": "TSK!LET HIM SPEAK!I'VE NEVER HEARD THE FULL STORY.",
+          "confidence": 0.916,
+          "text_ar": "تبًا! دعوه يكمل! لم أسمع القصة كاملة قط."
+        },
+        {
+          "text": "HEHE,DAD, YOU SHOULD SIT DOWN AND LISTEN.",
+          "confidence": 0.879,
+          "text_ar": "ههه، يا أبي، يجب أن تجلس وتستمع."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IT WAS A DARK AND WINDY NIGHT,",
+          "confidence": 0.942,
+          "text_ar": "كانت ليلة مظلمة وعاصفة،"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THE THREE OF US WEREWALKINGDOWN THE UNLIT ALLEY,WITH THE MOONLIGHT AS THE ONLY GUIDING SOURCE OF LIGHT.ME AND WANGZI...",
+          "confidence": 0.915,
+          "text_ar": "كنا نحن الثلاثة نسير في الأزقة المظلمة، ولم يكن هناك سوى ضوء القمر يهدئ خطانار... أنا ووانغ زي..."
+        },
+        {
+          "text": "THAT RICH DUDE, YOU'VE MET HIM BEFORE,",
+          "confidence": 0.957,
+          "text_ar": "ذلك الفتى الغني، لقد تقابلتما من قبل،"
+        },
+        {
+          "text": "THE TWO OF US WERE CHAT- TING AWAY,",
+          "confidence": 0.911,
+          "text_ar": "كنا نتبادل أطراف الحديث،"
+        },
+        {
+          "text": "WHEN SUDDENLY, HAOZI LET OUT A SHOUT!",
+          "confidence": 0.94,
+          "text_ar": "وفجأة، أطلق هاو زي صرخة مدوية!"
+        },
+        {
+          "text": "WHAT ARE YOU DOING?!",
+          "confidence": 0.97,
+          "text_ar": "ما الذي تفعلونه؟!ين"
+        },
+        {
+          "text": "THE NEXT SECOND, HAOZI TOOK THREE QUICK STEPS AND DASHEDFORWARD WITHAPOWER- FUL LEAP!",
+          "confidence": 0.932,
+          "text_ar": "وفي اللحظة التالية، خطى هاو زي ثلاث خطوات سريعة واندفع للأمام بقفزة قوية!"
+        },
+        {
+          "text": "I DIDN'T EVEN HAVE TIME TO REACT!GUESS WHAT HAPPENED NEXT?",
+          "confidence": 0.924,
+          "text_ar": "لم أتمكن حتى من رد الفعل! حزروا ماذا حدث بعد ذلك؟"
+        },
+        {
+          "text": "WHAT HAPPENED?",
+          "confidence": 0.997,
+          "text_ar": "ماذا حدث؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HAOZI WAS CLUTCHING HIS STOMACH AND COULDN'T HOLD ON!",
+          "confidence": 0.929,
+          "text_ar": "كان هاو زي يمسك بطنه ولم يستطع التحمل أكثر!"
+        },
+        {
+          "text": "MASTEROF EMBELLISHMENT",
+          "confidence": 0.983,
+          "text_ar": "ملك المبالغة"
+        },
+        {
+          "text": "WHY COULDN'T HE HOLD ON?!",
+          "confidence": 0.933,
+          "text_ar": "لماذا لم يستطع التحمل؟!ين"
+        },
+        {
+          "text": "THAT MAN WAS HOLDING A KNIFE AND STABBED HAOZISTRAIGHT IN THE GUT.THE BLOOD WAS GUSHING AND SQUIRTING EVERY- WHERE.IT WAS TEDDIEVINIGI",
+          "confidence": 0.887,
+          "text_ar": "كان ذلك الرجل يمسك سكينًا وطعن هاو زي مباشرة في أحشائه. وكان الدم يتدفق ويرش في كل مكان. لقد كانت مرعبة!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "TLKKITINO!",
+          "confidence": 0.835,
+          "text_ar": "هاااه!"
+        },
+        {
+          "text": "MY GOD!",
+          "confidence": 0.87,
+          "text_ar": "يا إلهي!"
+        },
+        {
+          "text": "I WAS STUNNED FORA MOMENT,SEEING HIM GET STABBED LIKE THAT.I KNEW I HAD TO HURRY,SO WITH ONE PAL'M STRIKE...",
+          "confidence": 0.903,
+          "text_ar": "ذهلت للحظة وانا أراه يُطعن بهذه الطريقة. علمت أن عليّ الإسراع، وبضربة راحة يد واحدة..."
+        },
+        {
+          "text": "HIYAH! ￥",
+          "confidence": 0.146,
+          "text_ar": "هياه! ￥"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THIS RASCAL IS TAKING THE OPPORTUNITY TO BOAST ASMUCHAS HE CANJUST BECAUSE HE ACHIEVED SOMETHING!HIS MOMIS GETTING HOODWNKED!",
+          "confidence": 0.932,
+          "text_ar": "هذا اللعين يستغل الفرصة ليتباهى قدر الإمكان فقط لأنه أنجز شيئًا ما! ووالدته تخدع أيضًا!"
+        },
+        {
+          "text": "HISEGO HAS INFLATED THIS MUCH JUST FROM CATCHING A THIEF,AND HE CAN'T STOPTALKINGABOUT IT WHENEVER IT GETS BROUGHT UP.",
+          "confidence": 0.911,
+          "text_ar": "لقد تضخم غروره بهذا القدر لمجرد القبض على لص، ولا يمكنه التوقف عن الحديث عن الأمر كلما تم ذكره."
+        },
+        {
+          "text": "THE LADY WHO GOT SAVED DIDN'T EVEN LOOKHIS WAYAFTER.",
+          "confidence": 0.911,
+          "text_ar": "الفتاة التي تم إنقاذها لم تنظر حتى في اتجاهه بعد ذلك."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "YOU DON'T KNOW HOW FEAR- SOME THIS TIGER FIST I'VE BEEN PRACTICING IS!",
+          "confidence": 0.902,
+          "text_ar": "أنت لا تعرف كم هي مرعبة قبضة النمر التي كنت أتدرب عليها!"
+        },
+        {
+          "text": "THAT MOVE WAS-",
+          "confidence": 0.96,
+          "text_ar": "تلك الحركة كانت -"
+        },
+        {
+          "text": "BUT WHAT IF HE MANAGED TO STAB YOU AT THAT TIME TOO?",
+          "confidence": 0.92,
+          "text_ar": "ولكن ماذا لو تمكن من طعنك أنت أيضًا في ذلك الوقت؟"
+        },
+        {
+          "text": "IMPOSSIBLE!",
+          "confidence": 0.991,
+          "text_ar": "مستحيل!"
+        },
+        {
+          "text": "WITH MY SKILLS IN MARTIAL ARTS,",
+          "confidence": 0.946,
+          "text_ar": "بمهاراتي في فنون الدفاع عن النفس،"
+        },
+        {
+          "text": "I CANRETREAT FAR AWAY WITH JUST ONE JUMP!",
+          "confidence": 0.93,
+          "text_ar": "يمكنني التراجع بعيدًا بقفزة واحدة فقط!"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "SHOW US THIS JUMP OF YOURS THEN.",
+          "confidence": 0.915,
+          "text_ar": "أرنا هذه القفزة إذًا."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "I'M NOT SOME CIRCUS MONKEY, WHO CAN JUST JUMPON COMMAND.",
+          "confidence": 0.922,
+          "text_ar": "أنا لست قرد سيرك، يمكنني القفز بأمر من أحد."
+        },
+        {
+          "text": "I KNEW YOU WERE BRAGGING.",
+          "confidence": 0.924,
+          "text_ar": "كنت أعلم أنك تتباها."
+        },
+        {
+          "text": "JIANG HE! TELL THEM!",
+          "confidence": 0.943,
+          "text_ar": "جيانغ هي! أخبريهم!"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "YOU TELL THEM, AMI CAPABLE OF JUMPING LONG DISTANCES?",
+          "confidence": 0.933,
+          "text_ar": "أخبريهم أنتِ، هل أنا قادر على القفز لمسافات طويلة؟"
+        },
+        {
+          "text": "I CAN'T SAY WHETHER HE CAN JUMP FAROR NOT,BUT SPEAKING OF CIRCUS MONKEYS,HE MENTIONED SOMETHING ABOUT THEM WHEN HE WENT ONA TRIP BEFORE...",
+          "confidence": 0.913,
+          "text_ar": "لا يمكنني الجزم بما إذا كان يستطيع القفز لمسافات طويلة أم لا، ولكن بالحديث عن قرود السيرك، فقد ذكر شيئًا عنها عندما ذهب في رحلة من قبل..."
+        },
+        {
+          "text": "IT'S NOTHING!",
+          "confidence": 0.774,
+          "text_ar": "لا شيء!ين"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "HEYHEY.WHY ARE YOU TRYING TO KEEP HER MOUTH SHUT? WHAT ABOUT TRAVELLING? WHAT ABOUTMONKEYS?",
+          "confidence": 0.902,
+          "text_ar": "مهلا مهلا. لماذا تحاول إغلاق فمها؟ ماذا عن السفر؟ وماذا عن القردة؟"
+        },
+        {
+          "text": "STAYOVER THERE!JIANGHE, CONTINLIE SPEAKING, DON'T MIND HIM.",
+          "confidence": 0.952,
+          "text_ar": "ابقَ هناك! يا جيانغ هي، تابعي الحديث، ولا تهتمي به."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": []
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "TSK! THEYONLY KNOW HOWTOGOS- SIP THE WHOLE DAY! HOWBORING!",
+          "confidence": 0.953,
+          "text_ar": "تبًا! إنهم لا يعرفون سوى الثرثرة طوال اليوم! يا له من أمر ممل!"
+        },
+        {
+          "text": "HOWEVER,HAOZI MANAGEDTOBRING HER HOME SO QUICKLY, HE'S INDEED KIND OF AWESOME.",
+          "confidence": 0.915,
+          "text_ar": "ومع ذلك، تمكن هاو زي من إحضارها إلى المنزل بسرعة كبيرة، إنه رائع حقًا نوعًا ما."
+        },
+        {
+          "text": "I'LL TAKE THIS OPPORTUNITY TO CHATWITHHIM",
+          "confidence": 0.966,
+          "text_ar": "سأغتنم هذه الفرصة للدردشة معه"
+        },
+        {
+          "text": "Haozi",
+          "confidence": 0.999,
+          "text_ar": "هاو زي"
+        },
+        {
+          "text": "Did I see you bringing a girl home just now?",
+          "confidence": 0.964,
+          "text_ar": "هل رأيتك تجلب فتاة إلى المنزل للتو؟"
+        },
+        {
+          "text": "How did you even see that?!",
+          "confidence": 0.971,
+          "text_ar": "كيف رأيت ذلك أصلاً؟!"
+        },
+        {
+          "text": "I was coincidentally at the balcony, is she meeting your parents?",
+          "confidence": 0.962,
+          "text_ar": "كنت في الشرفة بالمصادفة، هل تقابل والديك؟"
+        },
+        {
+          "text": "Nothing of that sort, Xiongba gave birth to a bunch of puppies, so I brought her over to pick one.",
+          "confidence": 0.96,
+          "text_ar": "لا يوجد شيء من هذا القبيل، أنجبت شيونغبا مجموعة من الجراء، لذلك أحضرتها لاختيار واحد."
+        },
+        {
+          "text": "You're amazing,I wouldn't even be ableto think of a reason like that,so I suppose that you will be buying a glow-in-the-dark watch next?",
+          "confidence": 0.927,
+          "text_ar": "أنت مذهل حقًا، لن أتمكن حتى من التفكير في عذر مثله، لذا أترضى أن تشتري ساعة مضيئة في الظلام بعد ذلك؟"
+        },
+        {
+          "text": "PF/N: Apparently \"Do you want to see my glow-in-the-dark watch?\" means \"Do you want to come into my bed? in Chinese internet slang. That's what the glow-in- the-dark watch is referring to I'm pretty sure.",
+          "confidence": 0.938,
+          "text_ar": "ملاحظة: تبدو العبارة ذات دلالة رومانسية في عامية الإنترنت الصينية."
+        },
+        {
+          "text": "Nasty,scram!",
+          "confidence": 0.989,
+          "text_ar": "يا مقزز، اغرب عن وجهي!"
+        },
+        {
+          "text": "雄生了 没有的事 带她过来 次最不票买个夜光 次最不 明",
+          "confidence": 0.077,
+          "text_ar": "يا إلهي، لا يوجد شيء من هذا القبيل."
+        },
+        {
+          "text": "HEHE-",
+          "confidence": 0.995,
+          "text_ar": "ههه-"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "HEY!!",
+          "confidence": 0.966,
+          "text_ar": "مهلا!!"
+        },
+        {
+          "text": "HELLO, FRIENDS FROM THE OTHER SIDE!",
+          "confidence": 0.926,
+          "text_ar": "مرحبًا أيها الأصدقاء من الجانب الآخر!"
+        },
+        {
+          "text": "THIS GUY! msGur!",
+          "confidence": 0.54,
+          "text_ar": "هذا الرجل! مجنون!"
+        },
+        {
+          "text": "COME ON, LET'S GO INSIDE. THAT GUY'S SICK IN THE",
+          "confidence": 0.907,
+          "text_ar": "تعال، دعنا ندخل. ذلك الرجل ليس طبيعيًا في"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "HEAD,LET'S JUST IGNORE HIM.",
+          "confidence": 0.921,
+          "text_ar": "عقله، دعنا نتجاهله وحسب."
+        },
+        {
+          "text": "HUH??",
+          "confidence": 0.98,
+          "text_ar": "هاه؟؟"
+        },
+        {
+          "text": "GOODOPPORTUNITY TO PROVOKEHAOZI. ALTHOUGH OUR ENGAGE- MENT FELLTHROUGH,",
+          "confidence": 0.945,
+          "text_ar": "يا له من وقت مناسب لاستفزاز هاو زي. على الرغم من أن خطبتنا لم تتم،"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "PF/N: If you remember from one of the previous chapters, their dads arranged for them to marry if they were a boy and a girl.",
+          "confidence": 0.929,
+          "text_ar": "ملاحظة: كما تذكر من الفصول السابقة، فقد خطط آباؤهما لتزوجهما."
+        },
+        {
+          "text": "THERE'S STILL THE NEXT GENERATION.",
+          "confidence": 0.96,
+          "text_ar": "لا يزال هناك الجيل القادم."
+        },
+        {
+          "text": "嘿嘿嘿 mcom dMerge.com",
+          "confidence": 0.66,
+          "text_ar": "ههههه"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "WE'LL HAVE A SON ANDTHEYCAN HAVE A DAUGHTER.WE'LL NEED TODISCUSSANDMAKE SURE THAT THEIRAGE GAP ISN'T TOOBIG.",
+          "confidence": 0.885,
+          "text_ar": "سيكون لدينا ابن ويكون لديهم ابنة. سنحتاج إلى مناقشة الأمر والتأكد من أن فارق السن بينهما ليس كبيرًا جدًا."
+        },
+        {
+          "text": "DAMN, THEY'RE STILL GOING ATIT, +",
+          "confidence": 0.26,
+          "text_ar": "تبًا، ما زالا مستمرين في الأمر،"
+        },
+        {
+          "text": "IF THIS GOES ON, THE WARRIORESS WILL PROBABLYKNOWTHE BRAND OF MILKPOWDER I USED AS ABABY.",
+          "confidence": 0.866,
+          "text_ar": "إذا استمر هذا الأمر، فربما تعرف المحاربة ماركة مسحوق الحليب الذي استخدمته عندما كنت رضيعًا."
+        },
+        {
+          "text": "INEED TO GET THEM TOSHIFT THEIRFOCUS.",
+          "confidence": 0.932,
+          "text_ar": "أحتاج إلى جعلهما يغيران تركيزهما."
+        },
+        {
+          "text": "Y'KNOW,",
+          "confidence": 0.953,
+          "text_ar": "كما تعلمون،"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "WHY DON'T WE GOSSIP ABOUT OTHERS INSTEAD? LIKE, HAOZI'S NEW GIRLFRIEND,",
+          "confidence": 0.937,
+          "text_ar": "لماذا لا ننم على الآخرين بدلاً من ذلك؟ مثل, صديقة هاو زي الجديدة،"
+        },
+        {
+          "text": "WHAT DO YOU THINK OF HER? I THINK THE TWO OF THEM SUIT EACH OTHER.",
+          "confidence": 0.944,
+          "text_ar": "ما رأيك فيها؟ أعتقد أنهما يناسبان بعضهما البعض."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "I HAVEN'T EVEN MET HER YET,WHAT IS THERE TO SAY ABOUT HER?",
+          "confidence": 0.933,
+          "text_ar": "لم أقابلها حتى الآن، فما الذي يمكنني قوله عنها؟"
+        },
+        {
+          "text": "SHALL WE GO GET SOME SKEWERS!?",
+          "confidence": 0.96,
+          "text_ar": "هل نذهب لتناول بعض المشاوي؟!"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "ARE YOU NUTS?",
+          "confidence": 0.951,
+          "text_ar": "هل جننت؟"
+        },
+        {
+          "text": "LET'S CONTINUE AND JUST IGNORE HIM.",
+          "confidence": 0.959,
+          "text_ar": "دعنا نكمل ونتجاهله وحسب."
+        },
+        {
+          "text": "HE WAS SUCH A SCAREDY CAT BACK THEN ANDINSISTEDON DRAGGINGHAOZI ALONG TO WATCH A HORROR FILM.",
+          "confidence": 0.953,
+          "text_ar": "لقد كان جبانًا للغاية في ذلك الوقت وأصر على جر هاو زي لمشاهدة فيلم مرعب."
+        },
+        {
+          "text": "LATER THAT NIGHT, HE WAS SO AFRAIDTO SHOWER, THAT HE STARTED SINGINGOUT LOUD WHEN HE ENTERED THE BATH.",
+          "confidence": 0.94,
+          "text_ar": "في وقت متأخر من تلك الليلة، كان خائفًا جدًا لدرجة الاستحمام، لدرجة أنه بدأ الغناء بصوت عالٍ عندما دخل الحمام."
+        },
+        {
+          "text": "HMPH!BORING HUMANS,",
+          "confidence": 0.905,
+          "text_ar": "تبًا! بشر مملون،"
+        },
+        {
+          "text": "IDRATHER STUDY DAD'SSTACKOFOLD NEWSPAPERSTHANTO GOSSIP WITH THEM.",
+          "confidence": 0.94,
+          "text_ar": "أفضل دراسة كومة الصحف القديمة لوالدي على الثرثرة معهم."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "OH..ANEWSPAPER FROMTHE90S.",
+          "confidence": 0.919,
+          "text_ar": "أه.. صحيفة تعود لتسعينيات القرن الماضي."
+        },
+        {
+          "text": "阿谷车国有城 #在0 0",
+          "confidence": 0.123,
+          "text_ar": "هذا أمر رائع."
+        },
+        {
+          "text": "THIS GIVES ME ASENSEOF NOSTALGIA.",
+          "confidence": 0.952,
+          "text_ar": "هذا يمنحني شعورًا بالحنين إلى الماضي."
+        },
+        {
+          "text": "I'LLTAKE ALOOK.",
+          "confidence": 0.929,
+          "text_ar": "سألقي نظرة."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "华 V 洋",
+          "confidence": 0.099,
+          "text_ar": "واو."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": []
+    }
+  ]
+}
