@@ -2040,6 +2040,37 @@ async def _run_full_production_chapters(
     success_count = 0
     succeeded_meta: list[dict] = []
     skipped_urls: list[str] = []
+    push_lock = asyncio.Lock()
+    fin_tasks: list = []
+
+    async def _finalize(r: dict) -> None:
+        """[تسريع] كتابة ملفات النص + الترجمة + الدفع تعمل بالخلفية بينما يبدأ OCR الفصل التالي
+        (الترجمة نداء شبكة لا تستهلك CPU). الدفع متسلسل بقفل واحد."""
+        try:
+            out_dir = ocr_dir / r["chapter_slug"]
+            out_dir.mkdir(parents=True, exist_ok=True)
+            txt_path = out_dir / "text_en.txt"
+            json_path = out_dir / "text_en.json"
+            txt_path.write_text(r["text"], encoding="utf-8")
+            json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
+            files_written.extend([txt_path, json_path])
+            files_written.extend(await _translate_chapter_if_enabled(r, out_dir, failed_translations))
+            if GIT_COMMIT_DIR:
+                async with push_lock:
+                    remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
+                    merged = merge_manifest_dict(remote or {}, [r])
+                    (OUTPUT_DIR / "manifest.json").write_text(
+                        json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
+                    )
+                    allowed = ["manifest.json", f"{r['manga_id']}/ch-{r['chapter_num']}", "ocr_experiment"]
+                    ok, msg = await asyncio.to_thread(
+                        _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
+                        f"إنتاج كامل: {r['manga_id']} - الفصل {r['chapter_num']}", allowed,
+                    )
+                    print(f"  {'✅' if ok else '⚠️'} دفع فصل (صور+OCR+ترجمة): {msg}")
+        except Exception as e:
+            print(f"  ⚠️ خطأ أثناء ترجمة/دفع الفصل {r.get('chapter_num')} (يُتابَع، والدفع الاحتياطي سيلتقط ما كُتب): {e}")
+
     for i, url in enumerate(chapter_urls, start=1):
         try:
             r = await process_chapter_full_production(browser, url, i, total, profile)
@@ -2047,14 +2078,7 @@ async def _run_full_production_chapters(
             print(f"[{i}/{total}] ❌ خطأ غير متوقع أثناء الإنتاج الكامل: {e}")
             r = None
         if r:
-            out_dir = ocr_dir / r["chapter_slug"]
-            out_dir.mkdir(parents=True, exist_ok=True)
-            txt_path = out_dir / "text_en.txt"
-            json_path = out_dir / "text_en.json"
-            txt_path.write_text(r["text"], encoding="utf-8")
-            json_path.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
-            files_written += [txt_path, json_path]
-            files_written += await _translate_chapter_if_enabled(r, out_dir, failed_translations)
+            fin_tasks.append(asyncio.create_task(_finalize(r)))
             success_count += 1
             succeeded_meta.append({
                 "index": i,
@@ -2062,19 +2086,6 @@ async def _run_full_production_chapters(
                 "chapter_num": r["chapter_num"],
                 "manga_title": r.get("manga_title", ""),
             })
-
-            if GIT_COMMIT_DIR:
-                remote = await asyncio.to_thread(_read_remote_manifest_sync, GIT_COMMIT_DIR, GIT_BRANCH)
-                merged = merge_manifest_dict(remote or {}, [r])
-                (OUTPUT_DIR / "manifest.json").write_text(
-                    json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
-                )
-                allowed = ["manifest.json", f"{r['manga_id']}/ch-{r['chapter_num']}", "ocr_experiment"]
-                ok, msg = await asyncio.to_thread(
-                    _commit_and_push_sync, GIT_COMMIT_DIR, GIT_BRANCH,
-                    f"إنتاج كامل: {r['manga_id']} - الفصل {r['chapter_num']}", allowed,
-                )
-                print(f"  {'✅' if ok else '⚠️'} دفع فصل (صور+OCR+ترجمة): {msg}")
 
         rss = _current_rss_mb()
         if rss is not None and rss >= OCR_MAX_RSS_MB:
@@ -2085,6 +2096,8 @@ async def _run_full_production_chapters(
             )
             skipped_urls = chapter_urls[i:]
             break
+    if fin_tasks:
+        await asyncio.gather(*fin_tasks)
     return success_count, succeeded_meta, skipped_urls
 
 
