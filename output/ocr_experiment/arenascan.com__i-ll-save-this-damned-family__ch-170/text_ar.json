@@ -1,0 +1,1338 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "170",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "ILLSAVE THISDAMNED FAMILY! STORY Munirang ILLUSTRATIONOlbeera",
+          "confidence": 0.95,
+          "text_ar": "سأقوم بتنقذ هذه العائلة اللعينة! القصة: مونيرانج، الرسوم: أولبيرا"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "EPISODE170",
+          "confidence": 0.994,
+          "text_ar": "الحلقة 170"
+        },
+        {
+          "text": "9 MONTHS",
+          "confidence": 0.978,
+          "text_ar": "9 أشهر"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": []
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "小鱼 COFEANGA",
+          "confidence": 0.399,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "OrN",
+          "confidence": 0.418,
+          "text_ar": "أرن"
+        },
+        {
+          "text": "WHAT DID YOU JLST SAY? WHO? BRANDON?",
+          "confidence": 0.947,
+          "text_ar": "ماذا قلت للتو؟ من؟ براندون؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "WHY WOLLD YOU BRING HIM UP?!",
+          "confidence": 0.834,
+          "text_ar": "لم قد تفاتحيننا بأمره؟!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "RAB 2 G TELL ME! TELL ME WHAT YOU DID!",
+          "confidence": 0.138,
+          "text_ar": "أخبريني! أخبريني بما فعلتِه!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "NO.NO... I DIDN'T DO IT... I SWEAR!",
+          "confidence": 0.855,
+          "text_ar": "لا، لا... لم أعل ذلك... أقسم لك!"
+        },
+        {
+          "text": "TCESTN",
+          "confidence": 0.324,
+          "text_ar": "رتستن"
+        },
+        {
+          "text": "IDIDN'T WANT ALL THAT. I JLST...",
+          "confidence": 0.85,
+          "text_ar": "لم أرغب بكل ذلك. أنا فقط..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THAT'S RIGHT.",
+          "confidence": 0.982,
+          "text_ar": "هذا صحيح."
+        },
+        {
+          "text": "THEY WENT TOO FAR!",
+          "confidence": 0.945,
+          "text_ar": "لقد تمادوا كثيراً!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "六 COFFE MANGA",
+          "confidence": 0.129,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "IT'S ALL THEIR FALILT!",
+          "confidence": 0.925,
+          "text_ar": "إنه خطؤهم جميعا!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "COFHEANGA",
+          "confidence": 0.78,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "I SWEAR, I DIDN'T DO IT! BELIEVE ME, DEAR! PLEASE! FWUMP",
+          "confidence": 0.921,
+          "text_ar": "أقسم أنني لم أعل ذلك! تصدقيمني يا عزيزي! أرجوك! (صوت ارتطام)"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "OH MY WORD...",
+          "confidence": 0.917,
+          "text_ar": "يا الهي..."
+        },
+        {
+          "text": "m COFFEE MANGA",
+          "confidence": 0.084,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "THIS IS LINBELIEVABLE...",
+          "confidence": 0.923,
+          "text_ar": "هذا لا يصدق..."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "而 COFFEE MANGA",
+          "confidence": 0.275,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "MY BROTHER WENT TO THAT DANGEROUS PLACE JUST TO GET ME A BIRTHDAY GIFT.",
+          "confidence": 0.933,
+          "text_ar": "ذهب أخي إلى ذلك المكان الخطير فقط ليجلب لي هدية عيد ميلاد."
+        },
+        {
+          "text": "SO IT WAS MY FALILT HE DIED, BLIT...WHY WOULD SHE MENTIONBRANDON'S NAME? WHY?",
+          "confidence": 0.834,
+          "text_ar": "إذن كان موته خطئي أنا، لكن... لماذا ذكرت اسم براندون؟ لماذا؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "COEE MANG",
+          "confidence": 0.776,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "MUMBLE WHY? WHYIN THE WORLD... MUMDIT",
+          "confidence": 0.875,
+          "text_ar": "(تمتمة) لماذا؟ لماذا بحق الجحيم...؟ (تمتمة)"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "OIBe",
+          "confidence": 0.432,
+          "text_ar": "أولبيرا"
+        },
+        {
+          "text": "WHYIN THE WORLD...",
+          "confidence": 0.924,
+          "text_ar": "لماذا بحق الجحيم..."
+        },
+        {
+          "text": "T JUST",
+          "confidence": 0.875,
+          "text_ar": "أنا فقط..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "WANTED HIM TO GET SICK AND SLFFER A BIT!",
+          "confidence": 0.928,
+          "text_ar": "أردت فقط أن يمرض ويعاني قليلاً!"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "THAT'S RIGHT!",
+          "confidence": 0.961,
+          "text_ar": "هذا صحيح!"
+        },
+        {
+          "text": "I JUSTTOLD THEM TO MAKE HIM CATCH ANILLNESS AND-",
+          "confidence": 0.927,
+          "text_ar": "لقد طلبت منهم فقط أن يصاب بمرض و-"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "o 园 OWG",
+          "confidence": 0.217,
+          "text_ar": "أو دبليو جي"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "AGH!",
+          "confidence": 0.993,
+          "text_ar": "آه!"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": []
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "HAVE YOU LOST YOUR-",
+          "confidence": 0.942,
+          "text_ar": "أهل فقدت صواب-"
+        },
+        {
+          "text": "HEANGA",
+          "confidence": 0.786,
+          "text_ar": "هيانغا"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "GAH! WHAT ARE YOU DOING?!",
+          "confidence": 0.937,
+          "text_ar": "غاه! ماذا تفعلين؟!"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "THESE PAST 7 YEARS. ALL THIS TIME, I BLAMED MYSELF FOR HIS DEATH! I BEGGED FOR FORGIVENESS!",
+          "confidence": 0.955,
+          "text_ar": "طوال السنوات السبع الماضية، طوال هذا الوقت، لمت نفسي على موته! كنت أتوسل الغفران!"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": []
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "I FELT TERRIBLE FOR MY BROTHER WHO NEVER GOT A CHANCE TO FLILFILL HIS DREAMS... BUT I WAS WRONG.",
+          "confidence": 0.933,
+          "text_ar": "شعرت بالأسف الشديد على أخي الذي لم يحظ بفرصة تحقيق أحلامه... لكنني كنت مخطئة."
+        },
+        {
+          "text": "HE DIED IN VAIN BECALISE OF THIS VICIOUS WOMAN!",
+          "confidence": 0.933,
+          "text_ar": "لقد مات عبثاً بسبب هذه المرأة الخبيثة!"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "COFFEE MANGAA",
+          "confidence": 0.805,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "G-GET AWAY FROMME!",
+          "confidence": 0.977,
+          "text_ar": "اب-ابتعدي عني!"
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.945,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "KERGH!",
+          "confidence": 0.996,
+          "text_ar": "أرغ!"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": []
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "AND YET, ALL THIS TIME, SHE HAS BEEN SHAMELESSLY LIVING HER LIFE WITHOUT SO MLICHASAHINT OF REGRET!",
+          "confidence": 0.912,
+          "text_ar": "ومع ذلك، طوال هذا الوقت، كانت تعيش حياتها بلا خجل ودون أدنى شعور بالندم!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "RUSH MY LADY! DEAR, PLEASE..",
+          "confidence": 0.92,
+          "text_ar": "(اندفاع) سيدتي! عزيزي، أرجوك..."
+        },
+        {
+          "text": "0 COFFEE MANGA",
+          "confidence": 0.131,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.911,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "SHE RELISHED THE LUXURIES AND POWER OF BEING A COLINTESS. I'MGOING TO KILL HER.",
+          "confidence": 0.943,
+          "text_ar": "لقد استمتعت برفاهية وسلطة كونها كونتيسة. سأقتلها."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "DER",
+          "confidence": 0.977,
+          "text_ar": "دير"
+        },
+        {
+          "text": "AAARGH!D-DON'T-",
+          "confidence": 0.979,
+          "text_ar": "آآآرخ! ل-لا-"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "THAT'S ENOUGH.YOU SHOLLD NOT SLILLY YOUR HANDS.",
+          "confidence": 0.924,
+          "text_ar": "هذا يكفي. يجب ألا تلوثي يديك."
+        },
+        {
+          "text": "NO. IF I LEAVE HER BE,I WILL IOSEMODEIOVED",
+          "confidence": 0.834,
+          "text_ar": "لا. إذا تركتها وشأنها، فسأفقد أحبائي..."
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "ONES...",
+          "confidence": 0.975,
+          "text_ar": "أحبائي..."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.942,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "TARA, PLEASE.. PLEASE STOP.",
+          "confidence": 0.94,
+          "text_ar": "تارا، أرجوك.. أرجوك توقفي."
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "I HAVE TO KILL- NITHUA",
+          "confidence": 0.639,
+          "text_ar": "يجب أن أقتل- نيثوا"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "TARA,PLEASE! STOP...",
+          "confidence": 0.965,
+          "text_ar": "تارا، أرجوك! توقفي..."
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": []
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "COUGH RELEASE COUGH",
+          "confidence": 0.943,
+          "text_ar": "(سعال) إفراج (سعال)"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "WOBBLE MY LADY!",
+          "confidence": 0.943,
+          "text_ar": "(تعثر) سيدتي!"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "而 COFFE MANGA",
+          "confidence": 0.045,
+          "text_ar": "كوفي مانغا"
+        },
+        {
+          "text": "DEAR!",
+          "confidence": 0.995,
+          "text_ar": "عزيزي!"
+        },
+        {
+          "text": "COUGH COUGH",
+          "confidence": 0.973,
+          "text_ar": "سعال سعال"
+        },
+        {
+          "text": "TARA!",
+          "confidence": 0.982,
+          "text_ar": "تارا!"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "DYLAN! GET THE PHYSICIAN! NOW! Resr 1",
+          "confidence": 0.253,
+          "text_ar": "ديلان! احضر الطبيب! حالاً!"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "心 OFFEMANGA",
+          "confidence": 0.22,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": []
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.903,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": [
+        {
+          "text": "DAMN IT.",
+          "confidence": 0.948,
+          "text_ar": "تباً."
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "VMM",
+          "confidence": 0.889,
+          "text_ar": "همم"
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "IT'S SLOW, BLIT HER BREATHING IS REGLLAR. SHE'S FINE.",
+          "confidence": 0.93,
+          "text_ar": "إنها بطيئة، لكن تنفسها منتظم. إنها بخير."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "ZON",
+          "confidence": 0.388,
+          "text_ar": "زون"
+        },
+        {
+          "text": "THIS IS WHY I DIDN'T TELL HER ABOUT BRANDON.",
+          "confidence": 0.958,
+          "text_ar": "لهذا السبب لم أخبرها بشأن براندون."
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "TO THINK THAT THE PERPETRATOR HERSELF WOULD BRING IT UP...",
+          "confidence": 0.924,
+          "text_ar": "التفكير في أن الجانية نفسها هي من فتحت الموضوع..."
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "PLEASE EXCLISE ME.",
+          "confidence": 0.949,
+          "text_ar": "أرجو أن تعذروني."
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "ASSISTANTPHYSICIAN OF HOUSE ELIAS DOCTORGRANTON",
+          "confidence": 0.939,
+          "text_ar": "مساعد طبيب آل إلياس، الدكتور غرانتون"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "而 COFFEE MANGA",
+          "confidence": 0.045,
+          "text_ar": "كوفي مانغا"
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "IT SEEMS THAT SHE WAS LINABLE TO HANDLE THE SHOCK.",
+          "confidence": 0.955,
+          "text_ar": "يبدو أنها لم تستطع تحمل الصدمة."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "IT MAKES SENSE. HER BREATHINGAND PLLSE ARE REGLLAR BUT WEAK. I WILL COME",
+          "confidence": 0.942,
+          "text_ar": "هذا منطقي. تنفسها ونبضها منتظمان لكنهما ضعيفان. سأعود لاحقًا، لذا راقبيها جيدًا."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": [
+        {
+          "text": "BACR LATER, SO REEP AN EYE ON HER.",
+          "confidence": 0.932,
+          "text_ar": "سأعود لاحقًا، لذا راقبيها جيدًا."
+        },
+        {
+          "text": "YOUNEED NOT ASK ME TO DO THAT. SHE IS MYMASTER.",
+          "confidence": 0.932,
+          "text_ar": "لا تحتاجين لطلبي ذلك. فهي سيدتي."
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "ATLE",
+          "confidence": 0.917,
+          "text_ar": "على الأقل..."
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "RIGHT...",
+          "confidence": 0.898,
+          "text_ar": "صحيح..."
+        },
+        {
+          "text": "TURN",
+          "confidence": 0.986,
+          "text_ar": "التفاف"
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": [
+        {
+          "text": "i CorFE MANGA",
+          "confidence": 0.58,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "OH MY! YOUR HIGHNESS?",
+          "confidence": 0.872,
+          "text_ar": "يا إلهي! سموك؟"
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "DAMN.",
+          "confidence": 0.996,
+          "text_ar": "تبًّا."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.899,
+          "text_ar": ""
+        },
+        {
+          "text": "TO THINK THAT I WOLILD ENCOLNTER THE 2ND PRINCE HERE!",
+          "confidence": 0.923,
+          "text_ar": "التفكير في أنني سأصادف الأمير الثاني هنا!"
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.909,
+          "text_ar": ""
+        },
+        {
+          "text": "GLARE",
+          "confidence": 0.982,
+          "text_ar": "حدق حاد"
+        },
+        {
+          "text": "YOU WILL DIE THE MOMENT YOL MAKE LISE OF THIS ENCOLNTER AS INFORMATION.",
+          "confidence": 0.946,
+          "text_ar": "ستموت في اللحظة التي تستخدم فيها هذا اللقاء كمعلومة."
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "COREMANGA",
+          "confidence": 0.615,
+          "text_ar": ""
+        },
+        {
+          "text": "OH MY, I WOLLD NEVER DO SLICH A THING.",
+          "confidence": 0.899,
+          "text_ar": "يا إلهي، لن أكون هكذا أبدًا."
+        },
+        {
+          "text": "WHY WOLLD ILSE MY OWNPUPIL LIKE THAT?",
+          "confidence": 0.894,
+          "text_ar": "لماذا قد أستغل تلميذتي هكذا؟"
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "Vi COFFEE MANGA",
+          "confidence": 0.472,
+          "text_ar": ""
+        },
+        {
+          "text": "TARA TRLISTS YOU, SO I SLPPOSE I WILL AS WELL.",
+          "confidence": 0.898,
+          "text_ar": "تارا تثق بك، لذا أظن أنني سأفعل أيضًا."
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "而 UOFFEEMANGA",
+          "confidence": 0.043,
+          "text_ar": ""
+        },
+        {
+          "text": "HAHA THANK YOU. LET ME GIVE YOU THIS GIFT AS A SIGN OF MY GRATITLIDE.",
+          "confidence": 0.935,
+          "text_ar": "هاها، شكرًا لك. دعني أقدم لك هذه الهدية كعلامة على امتنانِي."
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "IT SHOLLD BE HELPFUL TO MY PLIPIL AS WELL-",
+          "confidence": 0.926,
+          "text_ar": "يجب أن تكون مفيدة لتلميذتي أيضًا..."
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "LAP",
+          "confidence": 0.958,
+          "text_ar": "ربت"
+        },
+        {
+          "text": "EMPTY 山",
+          "confidence": 0.848,
+          "text_ar": "فارغ"
+        },
+        {
+          "text": "WHOA!",
+          "confidence": 0.988,
+          "text_ar": "واو!"
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "COT NA",
+          "confidence": 0.314,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.931,
+          "text_ar": ""
+        },
+        {
+          "text": "HMM... IT SEEMS THAT MY HYPOTHESIS WAS CORRECT. AS MLICH AS I AM GLAD TO CONFIRMIT,",
+          "confidence": 0.907,
+          "text_ar": "همم... يبدو أن فرضيتي كانت صحيحة. بقدر ما أنا مسرور لتأكيد ذلك،"
+        },
+        {
+          "text": "TDCAIIV",
+          "confidence": 0.81,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "IREALLY DON'TKNOW HOWI AM GOING TO CHEER LIP MY DEARPLPIL AFTER WHAT THAT SNAKE DID...",
+          "confidence": 0.802,
+          "text_ar": "أنا حقًّا لا أعرف كيف سأبهج تلميذتي العزيزة بعد ما فعله ذلك الثعبان..."
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "1 WEEK LATER",
+          "confidence": 0.96,
+          "text_ar": "بعد أسبوع"
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": []
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": [
+        {
+          "text": "THE BIRTHDAY PARTYINCIDENT OF LADY TARA ELIAS",
+          "confidence": 0.976,
+          "text_ar": "حادثة حفلة عيد ميلاد الليدي تارا إلياس"
+        },
+        {
+          "text": "WAS COMPLETELY OVERSHADOWED BY THE NEWS OF A COUNTRYSIDE NOBLE'S COURT SENTENCE.",
+          "confidence": 0.953,
+          "text_ar": "طغى عليها تمامًا خبر صدور حكم قضائي بحق نبيل ريفي."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.877,
+          "text_ar": ""
+        },
+        {
+          "text": "THTS WAS SO",
+          "confidence": 0.8,
+          "text_ar": "كان هذا لدرجة..."
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": [
+        {
+          "text": "UNPRECEDENTED THAT THE MALE ARISTOCRACY OF THE OCERIAN EMPIRE WAS TURNED UPSIDE DOWN.",
+          "confidence": 0.935,
+          "text_ar": "غير مسبوقة لدرجة أن الأرستقراطية الذكورية في إمبراطورية أوثيريان انقلبت رأسًا على عقب."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.906,
+          "text_ar": ""
+        },
+        {
+          "text": "TSK...TO THINK THAT SLICHA LOWLIFE WAS A FELLOW NOBLEMAN.",
+          "confidence": 0.941,
+          "text_ar": "تشه... التفكير في أن شخصًا سافلًا كهذا كان زميلا نبيلًا."
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "MINISTRY OF SECURITY CRIMINAL CASE TRIAL RECORD",
+          "confidence": 0.963,
+          "text_ar": "سجل محاكمة القضايا الجنائية لوزارة الأمن"
+        },
+        {
+          "text": "i COFFEE MANGA",
+          "confidence": 0.841,
+          "text_ar": ""
+        },
+        {
+          "text": "THE SUSPECT, JOHN HUTT, THE ELDEST SON OF THE HUTT BARONY WAS REVEALED TO BE A SERIAL RAPIST...",
+          "confidence": 0.869,
+          "text_ar": "المشتبه به، جون هوت، الابن الأكبر لبارونية هوت، تبين أنه مغتصب متسلسل..."
+        },
+        {
+          "text": "\"EQUAL PUNISHMENT FOR SEXUAL CRIMES: A WARNING.\" MINISTRY OF SECURITY CRIMINALCASE TRIALRECORD THIS INCIDENT, THE COUNTY OF THE EMPIRE, /HICHOCCURREDIN SEIN THECENTRALREGION WASINVESTIGATED AT THEREQUEST OF COUNT REESE. THE CENTRAL MINISTRY OF SECURITY IMMEDIATELYDISPATCHED A POLICE FORCE TO REESE CASTLE UPON RECEIVING THE REQUEST. IN JUST 3 DAYS, THEY THOROUGHLY INVESTIGATED THE CIRCUMSTANCES OF THE INCIDENT. AS MORE AND MORE DETAILS EMERGED ABOUT THE CRIME,THE MINISTRY OF SECURITY HAD NOCHOICE BUT TO INCREASE ITS INVESTIGATT THE INCIDENT IS ASR",
+          "confidence": 0.82,
+          "text_ar": "عقاب متساوٍ للجرائم الجنسية: تحذير."
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "THE SUSPECT, JOHN HURT, THE ELDEST SON OF HURT BARONY, WAS REVEALED TO BEA SERIAL RAPIST WHO HAD SEXUALLY ASSAULTED NUMEROUS WOMEN. HE WAS AVICE-CAPTAIN OF THE REESE KNIGHT ORDER, AND HAD USED HIS POSITION AND NOBLE TITLE TO SEDUCE AND SEXUALLY ASSAULT WOMEN. 5 VICTIMS CAME FORWARD DURING THE\"FESTIVAL OF EARTH\" HOSTED AT REESE CASTLE ALONE, AND FURTHER CRIMES WERE UNCOVERED THROUGH THE MINISTRY OF SECURITY'S ACTIVE INVESTIGATION. A STAGGERING 32 VICTIMSOVER THE PAST 5YEARS HAVE BEEN IDENTIFIED, INCLUDING 3 MISSING PERSONS. THE MINISTRY OF SECURITY IMMEDIATELY FORMED A TEAM TO SEARCHFOR THE MISSING PERSONS AND SECURED ABOUT 1O WITNESSES.AFTER THE FIRST TRIAL, m COFFEEMANGA THE MINISTRYOF SECURITY'S PROSECUTOR,WHO INDICTED THE SUSPECT,REQUESTED CASTRATION AND LIFE IMPRISONMENT WITHOUTPAROLE FORJOHN HUTT.THECOURT AGREED TO THE FORMER AND ANNOUNCED THAT IT WOULD REVIEW ADDITIONALCHARGES AND THENCONSIDER A LIFE SENTENCE WITHOUT PAROLE. THIS MARKED THE FIRST TIME IN12O YEARS THAT AN IMPERIAL NOBLEMAN WAS SENTENCED TO CASTRATION. THIS HAS BROUGHT GREAT INFAMY TO HOUSE HUTT. FEBRUARY 5, 1816. EMPIRE CENTRAL DAILY",
+          "confidence": 0.34,
+          "text_ar": "المشتبه به، جون هوت، الابن الأكبر لبارونية هوت، تبين أنه مغتصب متسلسل اعتدى جنسيا على العديد من النساء. كان نائب قائد فرسان ريس، واستخدم منصبه ولقبه النبيل لإغواء النساء والاعتداء عليهن جنسياً. تقدمت 5 ضحايا للشهادة خلال مهرجان الأرض الذي استضافته قلعة ريس وحدها، وتم كشف المزيد من الجرائم من خلال التحقيق النشط لوزارة الأمن. تم تحديد ما يذهل بـ 32 ضحية على مدى السنوات الخمس الماضية، بما في ذلك 3 أشخاص في عداد المفقودين. شكلت وزارة الأمن فوراً فريقاً للبحث عن المفقودين وأمنت حوالي 10 شهود. بعد المحاكمة الأولى، طالب مدعي وزارة الأمن، الذي وجه الاتهام للمشتبه به، بالإخصاء والسجن المؤبد دون إطلاق سراح مشروط لجون هوت. وافقت المحكمة على الطلب الأول وأعلنت أنها ستراجع التهم الإضافية ثم تنظر في عقوبة السجن المؤبد دون إطلاق سراح مشروط. هذه هي المرة الأولى منذ 120 عاماً التي يُحكم فيها على نبيل إمبراطوري بالإخصاء. وقد جلب هذا عاراً كبيراً لآل هوت. 5 فبراير 1816. صحيفة إمباير سنترال اليومية"
+        },
+        {
+          "text": "THIS MARKED THE FIRST TIME IN 12O YEARS THAT AN IMPERIAL NOBLEMAN WAS SENTENCED TO CASTRATION.",
+          "confidence": 0.941,
+          "text_ar": "هذه هي المرة الأولى منذ 120 عاماً التي يُحكم فيها على نبيل إمبراطوري بالإخصاء."
+        },
+        {
+          "text": "THIS HAS BROLGHT GREAT INFAMY TO HOUSE HUTT.",
+          "confidence": 0.929,
+          "text_ar": "لقد جلب هذا عاراً كبيراً لآل هوت."
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": []
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": [
+        {
+          "text": "而 COFFEE MANGA",
+          "confidence": 0.172,
+          "text_ar": ""
+        },
+        {
+          "text": "ISN'TIT STLIFFY IN HERE, MY LADY?",
+          "confidence": 0.936,
+          "text_ar": "أليس الجو خانقًا هنا، سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "PULL",
+          "confidence": 0.958,
+          "text_ar": "سحب"
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "HERE'S THE NEWSDADER.",
+          "confidence": 0.972,
+          "text_ar": "ها هي الجريدة."
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "THERE'S ANINTERESTING ARTICLE IN THERE.",
+          "confidence": 0.979,
+          "text_ar": "هناك مقال ممتع فيها."
+        },
+        {
+          "text": "THE WHOLE CAPITAL IS ALL ABLIZZ WITH THE NEWS ABOUT THAT BASTARD.",
+          "confidence": 0.94,
+          "text_ar": "العاصمة بأكملها تضج بالأخبار المتعلقة بهذا اللقيط."
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "iOFFE INGGA",
+          "confidence": 0.597,
+          "text_ar": ""
+        },
+        {
+          "text": "SHE HASN'T SHOWN INTEREST IN ANYTHING SINCE THAT DAY...",
+          "confidence": 0.949,
+          "text_ar": "لم تظهر أي اهتمام بأي شيء منذ ذلك اليوم..."
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "iCOFFEMANGA",
+          "confidence": 0.701,
+          "text_ar": ""
+        },
+        {
+          "text": "IT'S SO NICE OLTSIDE TODAY, MY LADY. HOW ABOUT YOU TAKE A WALK?",
+          "confidence": 0.908,
+          "text_ar": "الجو لطيف جدا في الخارج اليوم، سيدتي. ما رأيك في الذهاب في نزهة؟"
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "LATER.",
+          "confidence": 0.988,
+          "text_ar": "لاحقًا."
+        },
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.886,
+          "text_ar": ""
+        },
+        {
+          "text": "SHE'S BEEN GIVING ME THE SAME ANSWER FOR THE PAST WEEK. SHE REFLISES TO LEAVE HER ROOM...",
+          "confidence": 0.946,
+          "text_ar": "كانت تعطيني نفس الإجابة طوال الأسبوع الماضي. وهي ترفض مغادرة غرفتها..."
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "SHE HASN'T EVEN ASKED WHAT IS HAPPENING IN HOUSE ELIAS.",
+          "confidence": 0.95,
+          "text_ar": "لم تسأل حتى عما يحدث في آل إلياس."
+        },
+        {
+          "text": "IT'SAS IF SHE TRLLY DOESN'T CARE.",
+          "confidence": 0.921,
+          "text_ar": "وكأنها لا تهتم حقًّا."
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "STEP 而 OFFEE MANGA",
+          "confidence": 0.24,
+          "text_ar": "خطوات"
+        }
+      ]
+    },
+    {
+      "page": 86,
+      "image_id": 86,
+      "sentences": [
+        {
+          "text": "BETH...YOU DON'T HAVE TO TIDYLP.",
+          "confidence": 0.906,
+          "text_ar": "بيث... لا داعي للترتيب."
+        },
+        {
+          "text": "COFFENGA",
+          "confidence": 0.569,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 87,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "BUT...",
+          "confidence": 0.911,
+          "text_ar": "لكن..."
+        },
+        {
+          "text": "I LIKE SLEEPING.",
+          "confidence": 0.966,
+          "text_ar": "أنا أحب النوم."
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 88,
+      "sentences": [
+        {
+          "text": "RIGHT... THE PHYSICIAN",
+          "confidence": 0.965,
+          "text_ar": "صحيح... الطبيب"
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 89,
+      "sentences": [
+        {
+          "text": "DID SAY THAT IT IS BEST FOR YOU TO GET A LOT OF SLEEP.",
+          "confidence": 0.933,
+          "text_ar": "قال إن من الأفضل لكِ الحصول على قسط وفير من النوم."
+        },
+        {
+          "text": "而 COFFEEMANGA",
+          "confidence": 0.43,
+          "text_ar": ""
+        },
+        {
+          "text": "BLIT MY LADY... AREN'TYOU CURIOLS AS TO WHAT HAPPENED TO THAT WOMAN?",
+          "confidence": 0.924,
+          "text_ar": "لكن سيدتي... ألا تشعرين بالفضول حيال ما حدث لتلك المرأة؟"
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "image_id": 90,
+      "sentences": []
+    },
+    {
+      "page": 91,
+      "image_id": 91,
+      "sentences": [
+        {
+          "text": "COFFEE MANGA",
+          "confidence": 0.924,
+          "text_ar": ""
+        },
+        {
+          "text": "I'MGOING BACK TO SLEEP. DON'T DISTURB ME.",
+          "confidence": 0.957,
+          "text_ar": "سأعود للنوم. لا تزعجيني."
+        }
+      ]
+    },
+    {
+      "page": 92,
+      "image_id": 92,
+      "sentences": [
+        {
+          "text": "ALL RIGHT..",
+          "confidence": 0.978,
+          "text_ar": "حسناً.."
+        }
+      ]
+    },
+    {
+      "page": 93,
+      "image_id": 93,
+      "sentences": []
+    },
+    {
+      "page": 94,
+      "image_id": 94,
+      "sentences": [
+        {
+          "text": "TARA ONCE AGAIN LOCKED HERSELF UP IN HER ROOM.",
+          "confidence": 0.935,
+          "text_ar": "حبست تارا نفسها في غرفتها مرة أخرى."
+        }
+      ]
+    },
+    {
+      "page": 95,
+      "image_id": 95,
+      "sentences": [
+        {
+          "text": "TOBECONTINUED COFFEEMANGA",
+          "confidence": 0.948,
+          "text_ar": "يتبع"
+        },
+        {
+          "text": "WRITING MUNIRANG STORYBOARD CHOHO ILLUSTRATION OLBEERA COLORING ASSISTANT TOKKIKIM,MANDUFAIRY JEOMRYE EDITOR KENAZLTD. PRODUCTION WOODY HEADEDITOR PRODUCER",
+          "confidence": 0.955,
+          "text_ar": "تأليف مونيرانج - القصة المصورة تشوهو - الرسم أولبيرا - مساعد التلوين توكيكيم، ماندوفيري، جيومري - التحرير كيناز المحدودة - الإنتاج وودي - رئيس التحرير والمنتج"
+        },
+        {
+          "text": "THISWORKISPUBLISHEDUNDERCONTRACTBETWEENKENAZLTD.AND THECOPYRIGHTHOLDER,ANDISPROTECTEDUNDERCOPYRIGHTLAW.ANY UNAUTHORIZEDUSE,DUPLICATION,ORSHARINGWILLBEMETWITHLEGALACTION.",
+          "confidence": 0.979,
+          "text_ar": "هذا العمل منشور بموجب عقد بين كيناز المحدودة وصاحب حقوق النشر، وهو محمي بموجب قانون حقوق النشر. أي استخدام أو نسخ أو مشاركة غير مصرح بها ستواجه إجراءات قانونية."
+        }
+      ]
+    }
+  ]
+}
