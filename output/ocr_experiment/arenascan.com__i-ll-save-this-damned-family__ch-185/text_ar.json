@@ -1,0 +1,671 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "185",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "IMPORTANT NOTICE 三 TO OUR READERS",
+          "confidence": 0.307,
+          "text_ar": "إخطار هام إلى قرائنا"
+        },
+        {
+          "text": "Please read only on our OFFICIAL WEBSITES to support us!",
+          "confidence": 0.944,
+          "text_ar": "يرجى القراءة فقط على مواقعنا الرسمية لدعمنا!"
+        },
+        {
+          "text": "The only official websites of our team are coffeemanga.ink coffeemanga.io Allother websites are FAKE and UNAUTHORIZED.",
+          "confidence": 0.928,
+          "text_ar": "المواقع الرسمية الوحيدة لفريقنا هي coffeemanga.ink و coffeemanga.io جميع المواقع الأخرى مزيفة وغير مرخصة."
+        },
+        {
+          "text": "Fako wobites may stoal your porsonal Informitlon,display harmfol ads, or scam you nut of your maney. Protect yourself and yourdata!",
+          "confidence": 0.827,
+          "text_ar": "قد تسرق المواقع المزيفة معلوماتك الشخصية، أو تعرض إعلانات ضارة، أو تسرق أموالك. احمِ نفسك وبياناتك!"
+        },
+        {
+          "text": "WARNING",
+          "confidence": 0.997,
+          "text_ar": "تحذير"
+        },
+        {
+          "text": "INFORMATION THERT",
+          "confidence": 0.861,
+          "text_ar": "سرقة المعلومات"
+        },
+        {
+          "text": "MALICIOUS ADS",
+          "confidence": 0.915,
+          "text_ar": "إعلانات خبيثة"
+        },
+        {
+          "text": "PAYMENT SCAMS",
+          "confidence": 0.936,
+          "text_ar": "عمليات احتيال الدفع"
+        },
+        {
+          "text": "Your supportkeops us going and hops us bring you better chapters every day!",
+          "confidence": 0.858,
+          "text_ar": "دعمكم يبقينا مستمرين ويساعدنا في تقديم فصول أفضل كل يوم!"
+        },
+        {
+          "text": "Stay safe and happy reading!",
+          "confidence": 0.963,
+          "text_ar": "ابقوا آمنين وقراءة ممتعة!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "MeREAD.I0",
+          "confidence": 0.885,
+          "text_ar": "MeREAD.I0"
+        },
+        {
+          "text": "外是 合中",
+          "confidence": 0.299,
+          "text_ar": "تأثير صوتي"
+        },
+        {
+          "text": "I NEED TO START THINKING ABOUT THE TIME WHEN TERAWILLBECOMPLETELY BY MY SIDE.",
+          "confidence": 0.939,
+          "text_ar": "يجب أن أبدأ التفكير في الوقت الذي ستكون فيه تيرا بجانبي تمامًا."
+        },
+        {
+          "text": "HMM...KYLE?",
+          "confidence": 0.977,
+          "text_ar": "مم... كايل؟"
+        },
+        {
+          "text": "ARE YOU AWAKE?",
+          "confidence": 0.959,
+          "text_ar": "هل أنت مستيقظ؟"
+        },
+        {
+          "text": "AREYOU LEAVING?",
+          "confidence": 0.926,
+          "text_ar": "هل أنت مغادر؟"
+        },
+        {
+          "text": "I HAVE TO.",
+          "confidence": 0.954,
+          "text_ar": "يجب علي ذلك."
+        },
+        {
+          "text": "BUT I CAN'T LEAVE WHEN YOU'RE SMILING LIKE THAT.",
+          "confidence": 0.872,
+          "text_ar": "لكن لا يمكنني المغادرة عندما تبتسم بهذه الطريقة."
+        },
+        {
+          "text": "SHOULD I NOT SMILE?",
+          "confidence": 0.964,
+          "text_ar": "ألا أبتسم؟"
+        },
+        {
+          "text": "NO.IS YOUR BODY OKAY?",
+          "confidence": 0.934,
+          "text_ar": "لا. هل جسدك بخير؟"
+        },
+        {
+          "text": "DON'T ASK THINGS LIKE THAT.",
+          "confidence": 0.937,
+          "text_ar": "لا تسأل مثل هذه الأشياء."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.974,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "IF WE WERE IN THE IMPERIAL PALACE, I WOULD HAVE HAD A MASSEUR ASSIGNED TO YOU.",
+          "confidence": 0.926,
+          "text_ar": "لو كنا في القصر الإمبراطوري، لكنت خصصت لك مدلكًا."
+        },
+        {
+          "text": "A MASSEUR? HOW EMBARRASSING.BUT...",
+          "confidence": 0.952,
+          "text_ar": "مدلك؟ يا للحرص الشديد. لكن..."
+        },
+        {
+          "text": "DIDN'T YOU SLEEP AT ALL?",
+          "confidence": 0.852,
+          "text_ar": "ألم تنم على الإطلاق؟"
+        },
+        {
+          "text": "YOUR VOICE SOUNDS SO... CRISP....",
+          "confidence": 0.822,
+          "text_ar": "صوتك يبدو هكذا... منتعشاً..."
+        },
+        {
+          "text": "Tk BECAUSE I DIDN'T WANT TO WASTE A SINGLE MOMENT.",
+          "confidence": 0.615,
+          "text_ar": "لأنني لم أكن أرغب في إضاعة ولا لحظة واحدة."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "MeREAD.I0",
+          "confidence": 0.867,
+          "text_ar": "MeREAD.I0"
+        },
+        {
+          "text": "WHERE ONEARTHDO YOU LEARN TO SAY THINGS LIKE THAT?",
+          "confidence": 0.936,
+          "text_ar": "من أين تعلمت قول أشياء كهذه بحق الجحيم؟"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.971,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "IS THERE EVEN A SCHOOL FOR THAT SORT OF THING?",
+          "confidence": 0.98,
+          "text_ar": "هل توجد مدرسة لمثل هذه الأمور أصلاً؟"
+        },
+        {
+          "text": "TERA.I HAVE A QUESTION.",
+          "confidence": 0.979,
+          "text_ar": "تيرا، عندي سؤال."
+        },
+        {
+          "text": "WHAT...IS IT?",
+          "confidence": 0.941,
+          "text_ar": "ماذا... هو؟"
+        },
+        {
+          "text": "THAT GUY, THEO...",
+          "confidence": 0.948,
+          "text_ar": "ذلك اللعين، ثيو..."
+        },
+        {
+          "text": "NO,NEVER MIND.I CAN'T WASTE THIS PRECIOUS TIME BECAUSE OF HIM.",
+          "confidence": 0.926,
+          "text_ar": "لا، لا بأس. لا يمكنني إضاعة هذا الوقت الثمين بسببه."
+        },
+        {
+          "text": "...HUH? WHO?",
+          "confidence": 0.938,
+          "text_ar": "...هاه؟ من؟"
+        },
+        {
+          "text": "IT'S NOTHING.FORGET HIM.ANYWAY,IS MY THIGH GOOD ENOUGH TO PASS THE TEST?",
+          "confidence": 0.933,
+          "text_ar": "لا شيء. انسَه. على أي حال، هل فخذي جيد بما يكفي لتجاوز الاختبار؟"
+        },
+        {
+          "text": "...WHAT?",
+          "confidence": 0.909,
+          "text_ar": "...ماذا؟"
+        },
+        {
+          "text": "I DIDN'T HEAR YOU WRONG,DID I?",
+          "confidence": 0.95,
+          "text_ar": "لم أسمعك خطأ، أليس كذلك؟"
+        },
+        {
+          "text": "YOU HEARD ME EXACTLY RIGHT.",
+          "confidence": 0.924,
+          "text_ar": "لقد سمعتني تمامًا."
+        },
+        {
+          "text": "SO, HOW WOULD YOU RATE MY THIGH?",
+          "confidence": 0.901,
+          "text_ar": "إذن، كيف تقيم فخذي؟"
+        },
+        {
+          "text": "GOOD HEAVENS. ARE YOU STILL THINKING ABOUT THAT?",
+          "confidence": 0.959,
+          "text_ar": "يا الهي. هل ما زلت تفكر في ذلك؟"
+        },
+        {
+          "text": "IT'S AN IMPORTANT ISSUE.",
+          "confidence": 0.945,
+          "text_ar": "إنها قضية مهمة."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.978,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "IF IT'S YOUR HIGHNESS...",
+          "confidence": 0.868,
+          "text_ar": "إذا كان سموك..."
+        },
+        {
+          "text": "IF IT'S ME?",
+          "confidence": 0.898,
+          "text_ar": "إذا كان أنا؟"
+        },
+        {
+          "text": "I'LL GIVE YOU A PASSING GRADE.",
+          "confidence": 0.963,
+          "text_ar": "سأمنحك درجة النجاح."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "MGREAD.IO +",
+          "confidence": 0.512,
+          "text_ar": "MGREAD.IO +"
+        },
+        {
+          "text": "PASS",
+          "confidence": 0.975,
+          "text_ar": "ناجح"
+        },
+        {
+          "text": "THAT'S A RELIEF.",
+          "confidence": 0.926,
+          "text_ar": "هذا مريح."
+        },
+        {
+          "text": "BUT...I DON'T HAVE MUCH CONFIDENCE.",
+          "confidence": 0.963,
+          "text_ar": "لكن... ليس لدي الكثير من الثقة."
+        },
+        {
+          "text": "HUH? IN YOUR... THIGH?",
+          "confidence": 0.968,
+          "text_ar": "هاه؟ في... فخذك؟"
+        },
+        {
+          "text": "NOT AT ALL.I DON'T HAVE THE CONFIDENCE TO PRETEND I DON'T KNOW YOU AT THE IMPERIAL PALACE FROM NOW ON.",
+          "confidence": 0.931,
+          "text_ar": "إطلاقاً. ليس لدي الثقة لأتظاهر بأنني لا أعرفك في القصر الإمبراطوري من الآن فصاعداً."
+        },
+        {
+          "text": "BUT SINCE THERE'S NO OTHER WAY...",
+          "confidence": 0.962,
+          "text_ar": "ولكن بما أنه لا توجد طريقة أخرى..."
+        },
+        {
+          "text": "LET'S...HANGIN THERE, TOGETHER...",
+          "confidence": 0.947,
+          "text_ar": "دعنا... نصمد معاً..."
+        },
+        {
+          "text": "WHAT IS THAT SUPPOSED TO MEAN...TERA?",
+          "confidence": 0.946,
+          "text_ar": "ما الذي يعنيه هذا... تيرا؟"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.977,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "I NEVER KNEW ITWOULD BE THIS HARD TO PULL MYSELF AWAY.",
+          "confidence": 0.939,
+          "text_ar": "لمבי إطلاقاً أنه سيكون من الصعب جداً أن أبتعد."
+        },
+        {
+          "text": "DAMN THIS HAIR.",
+          "confidence": 0.985,
+          "text_ar": "تباً لهذا الشعر."
+        },
+        {
+          "text": "I THINK...",
+          "confidence": 0.968,
+          "text_ar": "أعتقد..."
+        },
+        {
+          "text": "I'M IN LOVE WITH YOU.",
+          "confidence": 0.929,
+          "text_ar": "أنني وقعت في حبك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "MGREAD.IO",
+          "confidence": 0.923,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.97,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "ONE WEEK LATER.",
+          "confidence": 0.935,
+          "text_ar": "بعد أسبوع."
+        },
+        {
+          "text": "COUNT KNOCK'S FIEFDOM.",
+          "confidence": 0.939,
+          "text_ar": "مقاطعة الكونت نوك."
+        },
+        {
+          "text": "BLACK SOCIETY BRANCH WITHIN COUNT KNOCK'S FIEFDOM.",
+          "confidence": 0.954,
+          "text_ar": "فرع المجتمع الأسود داخل مقاطعة الكونت نوك."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.97,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "F0K CTI 心",
+          "confidence": 0.243,
+          "text_ar": "تأثير صوتي"
+        },
+        {
+          "text": "READ THIS AND SIGN IT.",
+          "confidence": 0.932,
+          "text_ar": "اقرأ هذا ووقعه."
+        },
+        {
+          "text": "YES,YOUR HIGHNESS.",
+          "confidence": 0.936,
+          "text_ar": "حاضر، سمو الأمير."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.956,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "\\ $\\frac}$ SO YOUR HIGHNESS WILL INVESTIGATE THE NOBLESINVOLVEDINTHE FLOW OFFUNDSAND THE MASTERMINDS BEHINDTHEM..",
+          "confidence": 0.196,
+          "text_ar": "إذن سيحقق سموك في النبلاء المتورطين في تدفق الأموال والعقول المدبرة وراءهم..."
+        },
+        {
+          "text": "AND WE,THE BLACK SOCIETY, ARE TO TRACK DOWN THE \"BLACK CROWN\"VILLAGES WITHIN THE EMPIRE,IS THAT CORRECT?",
+          "confidence": 0.927,
+          "text_ar": "وعلى المجتمع الأسود تعقب قرى \"التاج الأسود\" داخل الإمبراطورية، أليس كذلك؟"
+        },
+        {
+          "text": "THAT'S CORRECT.",
+          "confidence": 0.941,
+          "text_ar": "هذا صحيح."
+        },
+        {
+          "text": "I WOULD LIKE THE COMPENSATIONPLANFOR THE INCIDENT TO INCLUDE THE MEMBERS OF OUR BLACK SOCIETYAS WELL,YOUR HIGHNESS.",
+          "confidence": 0.947,
+          "text_ar": "أود أن تتضمن خطة التعويض عن الحادث أعضاء مجتمعنا الأسود أيضاً، سمو الأمير."
+        },
+        {
+          "text": "I ACCEPT.",
+          "confidence": 0.954,
+          "text_ar": "أنا أوافق."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "MGREAD.IO ooooooooooooooo C",
+          "confidence": 0.2,
+          "text_ar": "MGREAD.IO"
+        },
+        {
+          "text": "3 5 15824m Ei1 2 387124A8 Andre",
+          "confidence": 0.326,
+          "text_ar": "أندري"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.97,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "IINTENDTO SECRETLY WEEDOUT THE SPIES FROM VARIOUS ORGANIZATIONS INFILTRATED IN THE IMPERIAL PALACE.",
+          "confidence": 0.942,
+          "text_ar": "أعتزم تطهير الجواسيس التابعين لمختلف المنظمات المتسللين إلى القصر الإمبراطوري سرا."
+        },
+        {
+          "text": "TO AVOID CONFUSION,I NEED A LIST OF THE BLACK SOCIETY MEMBERS CURRENTLYINSIDE THE PALACE.",
+          "confidence": 0.925,
+          "text_ar": "لتجنب الارتباك، أحتاج إلى قائمة بأعضاء المجتمع الأسود الموجودين حالياً داخل القصر."
+        },
+        {
+          "text": "I SHALL PROVIDEIT.",
+          "confidence": 0.956,
+          "text_ar": "سأقدمها."
+        },
+        {
+          "text": "THE MOMENT I HAND OVER THAT LIST, THEIR IDENTITIES WILL BE EXPOSED...",
+          "confidence": 0.953,
+          "text_ar": "في اللحظة التي أسلّم فيها تلك القائمة، ستنکشف هوياتهم..."
+        },
+        {
+          "text": "AND THE MONEY IT COSTS TO INFILTRATE NEW AGENTS ONCE THIS IS ALL OVER..!!",
+          "confidence": 0.96,
+          "text_ar": "والأموال التي تكلفها تسلل عملاء جدد بمجرد انتهاء كل هذا..!!"
+        },
+        {
+          "text": "IF THE CASE IS RESOLVED THROUGH OUR COOPERATION, I WILL GRANT WHATYOU DESIRE.",
+          "confidence": 0.948,
+          "text_ar": "إذا تم حل القضية من خلال تعاوننا، فسأمنحك ما تبتغيه."
+        },
+        {
+          "text": "OF COURSE, WITHIN REASONABLE LIMITS.",
+          "confidence": 0.962,
+          "text_ar": "طبعاً، ضمن الحدود المعقولة."
+        },
+        {
+          "text": "I'M MERELY DEVOTED TO SERVING THE SUFFERING PEOPLE OF THE EMPIRE.",
+          "confidence": 0.968,
+          "text_ar": "أنا مجرد مكرس لخدمة شعب الإمبراطورية المعذب."
+        },
+        {
+          "text": "EVEN SO.",
+          "confidence": 0.991,
+          "text_ar": "مع ذلك."
+        },
+        {
+          "text": "IF IT PUTS YOUR MIND AT EASE TO DO SO, YOUR HIGHNESS,",
+          "confidence": 0.92,
+          "text_ar": "إذا كان ذلك يريح بالك، سمو الأمير،"
+        },
+        {
+          "text": "AS YOUR HUMBLE SERVANT,I SHALL NOT REFUSE. YOUR HIIGHNESS!",
+          "confidence": 0.888,
+          "text_ar": "كخادمك المتواضع، لن أرفض. سمو الأمير!"
+        },
+        {
+          "text": "GOOD GRIEF. I WONDER WHO STARTED THATANNOYING\"YOUR HGHNESS\"BIT FIRST.",
+          "confidence": 0.929,
+          "text_ar": "يا إلهي. أتساءل من بدأ لقب \"سمو الأمير\" المزعج هذا أولاً."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.975,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "MGREAD.I0",
+          "confidence": 0.925,
+          "text_ar": "MGREAD.I0"
+        },
+        {
+          "text": "PARDON?",
+          "confidence": 0.998,
+          "text_ar": "عذراً؟"
+        },
+        {
+          "text": "THIS OPERATION MUST BE KEPT STRICTLY CONFIDENTIAL FROMTHE ELIAS FAMILY AND MY AIDE, TERA.",
+          "confidence": 0.94,
+          "text_ar": "يجب إبقاء هذه العملية سرية للغاية عن عائلة إلياس ومساعدتي، تيرا."
+        },
+        {
+          "text": "HAHA.THERE IS NO ONE WHO DISTINGUISHES BETWEEN PUBLIC AND PRIVATE MATTERS AS THOROUGHLY AS I DO...UH?",
+          "confidence": 0.928,
+          "text_ar": "هاها. لا يوجد أحد يميز بين الأمور العامة والخاصة بمثل هذه الدقة مثلي... أمه؟"
+        },
+        {
+          "text": "BUT SINCE MY DISCIPLE IS YOUR HIGHNESS'S IS YOURHIGHNESS'S CLOSEST AIDE...",
+          "confidence": 0.929,
+          "text_ar": "ولكن بما أن تلميذتي هي مساعدة سمو الأمير المقربة..."
+        },
+        {
+          "text": "ARE YOU EXCLUDING HER FROM THIS OPERATION?",
+          "confidence": 0.946,
+          "text_ar": "هل تستبعدها من هذه العملية؟"
+        },
+        {
+          "text": "IT SEEMS YOU DON'T KNOW YET.",
+          "confidence": 0.973,
+          "text_ar": "يبدو أنك لا تعلم بعد."
+        },
+        {
+          "text": "PARDON? WHAT IS IT THAT I DON'T KNOW?",
+          "confidence": 0.929,
+          "text_ar": "عذراً؟ ما الذي لا أعلمه؟"
+        },
+        {
+          "text": "YOU DON'T MEAN...! ARE YOU ALREADY DOING THAT?",
+          "confidence": 0.93,
+          "text_ar": "أنت لا تعني...! هل تفعلان ذلك بالفعل؟"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.978,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "WHAT EXACTLY DOYOU MEAN BY \"DoInG THAT\"?",
+          "confidence": 0.756,
+          "text_ar": "ما الذي تقصده بالضبط بـ \"فعل ذلك\"؟"
+        },
+        {
+          "text": "NO.I MEAN,SHE'S NO.IMEANSHES STILL BY YOUR SIDE, BUT...",
+          "confidence": 0.94,
+          "text_ar": "لا أقصد، إنها لا... أقصد أنها ما زالت بجانبك، لكن..."
+        },
+        {
+          "text": "YOU KNOW, TH- THAT THING?",
+          "confidence": 0.799,
+          "text_ar": "أتعلم، ذل- ذلك الشيء؟"
+        },
+        {
+          "text": "I DON'T KNOW WHAT YOU'RE EXPECTING, BUT THE SECOND AIDE HAS BEEN REASSIGNED TO THE PERMANENT AIDE OFFICE.",
+          "confidence": 0.924,
+          "text_ar": "لا أعرف ما تتوقعه، لكن المساعدة الثانية قد تم إعفاؤها ونقلها إلى مكتب المساعدين الدائمين."
+        },
+        {
+          "text": "WHICH MEANS SHE IS NO LONGER MYAIDE.",
+          "confidence": 0.92,
+          "text_ar": "مما يعني أنها لم تعد مساعدتي."
+        },
+        {
+          "text": "lok",
+          "confidence": 0.547,
+          "text_ar": "تأثير صوتي"
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.974,
+          "text_ar": "ماذا?!"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.969,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "MGREAD.I0",
+          "confidence": 0.881,
+          "text_ar": "MGREAD.I0"
+        },
+        {
+          "text": "CHIEF. ARE YOU OKAY WITH THIS?",
+          "confidence": 0.928,
+          "text_ar": "الرئيس. هل أنت بخير مع هذا؟"
+        },
+        {
+          "text": "WHAT IS THIS? WEREN'T THOSE TWO JUST STARTING TO DATE?",
+          "confidence": 0.954,
+          "text_ar": "ما هذا؟ ألم يبدأ هذان الاثنان في المواعدة للتو؟"
+        },
+        {
+          "text": "DOES THIS MEAN I WON'T BE THE FUTURE EMPRESS'S TUTOR?",
+          "confidence": 0.945,
+          "text_ar": "هل هذا يعني أنني لن أكون معلمة الإمبراطورة المستقبلية؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.993,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "THEN WHY DID I TRAVEL ALL OVER THE EMPIRE?!",
+          "confidence": 0.98,
+          "text_ar": "إذن لماذا سافرت في جميع أنحاء الإمبراطورية؟! "
+        },
+        {
+          "text": "AND WHY DIDN'T TERA TELL ME ANYTHING!",
+          "confidence": 0.952,
+          "text_ar": "ولماذا لم تخبرني تيرا بأي شيء!"
+        },
+        {
+          "text": "WHY ARE YOU COOPERATING WITH THE SECOND PRINCE AND WASTING MY MONEY ON THIS, DAMN IT!",
+          "confidence": 0.925,
+          "text_ar": "لماذا تتعاون مع الأمير الثاني وتضيع أموالي على هذا، اللعنة!"
+        },
+        {
+          "text": "IS SOMEONE BAD-MOUTHING ME?",
+          "confidence": 0.946,
+          "text_ar": "هل يغتابني أحد؟"
+        },
+        {
+          "text": "00000ooo",
+          "confidence": 0.465,
+          "text_ar": "تأثير صوتي"
+        },
+        {
+          "text": "BUIT REALLY...I HAVEN'T SEEN HIMONCESINCE I WAS KICKED OUT OF THE SECONDPRINCE'S PALACE.",
+          "confidence": 0.914,
+          "text_ar": "لكن حقاً... لم أره ولا مرة منذ أن طُرِدتُ من قصر الأمير الثاني."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.COM",
+          "confidence": 0.968,
+          "text_ar": "اقرأ هذا العمل فقط على: VIOLETSCANS.COM"
+        },
+        {
+          "text": "TCH.I MISS HIM.",
+          "confidence": 0.963,
+          "text_ar": "تباً. أنا أفتقده."
+        }
+      ]
+    }
+  ]
+}
