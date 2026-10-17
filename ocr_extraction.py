@@ -63,6 +63,7 @@ from compress_chapters import (
     compress_image,
     fetch_image_bytes,
     fetch_image_bytes_http,
+    _ICON_MARK,
     get_chapter_images,
     get_profile,
     manga_slug_from_url,
@@ -226,7 +227,8 @@ OCR_MKLDNN_CACHE_CAPACITY = int(os.environ.get("OCR_MKLDNN_CACHE_CAPACITY", "2")
 # std::exception أدناه، وهي رد فعل بعد وقوع الخلل). كل N صفحة ضمن الفصل
 # الواحد يُعاد بناء المحرك من الصفر فيتحرر أي تراكم متبقٍ، بكلفة زمنية
 # صغيرة (إعادة تحميل نموذج مرة كل N صفحة، لا كل صفحة).
-OCR_ENGINE_REBUILD_EVERY_N_PAGES = int(os.environ.get("OCR_ENGINE_REBUILD_EVERY_N_PAGES", "15"))
+# [تسريع] كل إعادة بناء تكلّف ثوانٍ؛ سجلّ فصل 148 صفحة أظهر RSS ثابتًا ~1.4-1.5GB (الحد 4000) فرُفعت من 15 إلى 40.
+OCR_ENGINE_REBUILD_EVERY_N_PAGES = int(os.environ.get("OCR_ENGINE_REBUILD_EVERY_N_PAGES", "40"))
 
 # [جديد — بند (3) من خطة إصلاح تناقض PIR/OOM: حد RSS أقصى صريح] لا اعتماد
 # بعد الآن على "إعادة البناء الدورية" (أعلاه) كحل تراكم ذاكرة أصلية —
@@ -1437,6 +1439,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     # الصفحات الأخرى، لا تكرار لا نهائي)، مُكيَّفة هنا لإعادة تغذية OCR+
     # الضغط معًا عبر _ocr_handle_page نفسها بدل تكرار منطق حفظ منفصل.
     failed_indices: list[int] = []
+    icon_skipped: list[int] = []
 
     async def producer():
         for i, img_url in enumerate(image_urls, start=1):
@@ -1448,6 +1451,9 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
         pages_since_rebuild = 0
         for _ in range(total_pages):
             i, raw, reason = await queue.get()
+            if not raw and reason and _ICON_MARK in reason:
+                icon_skipped.append(i)   # أيقونة/شعار جانبي صغير — ليست صفحة، تُتخطّى بلا فشل ولا إعادة محاولة
+                continue
             if not raw:
                 failed_indices.append(i)
                 print(f"  ⚠️ {label} صفحة {i}/{total_pages}: فشل التحميل ({reason}) — ستُعاد المحاولة لاحقًا")
@@ -1461,6 +1467,8 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     producer_task = asyncio.create_task(producer())
     pages_since_rebuild = await consumer()
     await producer_task
+    if icon_skipped:
+        print(f"  🧹 {label} تُخطّيت {len(icon_skipped)} صورة صغيرة (أيقونات/شعارات جانبية، ليست صفحات): {sorted(icon_skipped)}")
 
     if failed_indices:
         print(f"  🔁 {label} إعادة محاولة نهائية لـ {len(failed_indices)} صفحة فشل تحميلها...")
