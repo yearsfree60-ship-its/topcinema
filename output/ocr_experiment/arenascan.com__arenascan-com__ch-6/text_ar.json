@@ -1,0 +1,863 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "6",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THIS BASTARD! HOWDAREYOU. AFTER WE JUST SAVED YOU!",
+          "confidence": 0.916,
+          "text_ar": "أيها اللقيط! كيف تجرؤ. بعد أن أنقذ للتوّ!"
+        },
+        {
+          "text": "L-let's go, Bernard..",
+          "confidence": 0.893,
+          "text_ar": "د-دعنا نذهب، برنارد.."
+        },
+        {
+          "text": "GRABS",
+          "confidence": 0.875,
+          "text_ar": "إمساك"
+        },
+        {
+          "text": "THANKS TO YOU, WE'RE.",
+          "confidence": 0.923,
+          "text_ar": "بفضلك، نحن..."
+        },
+        {
+          "text": "TURNS",
+          "confidence": 0.987,
+          "text_ar": "التفات"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "LET'S!JUST! HURRYUP!AND GO!",
+          "confidence": 0.935,
+          "text_ar": "لـنذهب! فحسب! أسرع! وانطلق!"
+        },
+        {
+          "text": "STRIDE",
+          "confidence": 0.983,
+          "text_ar": "خطوات واسعة"
+        },
+        {
+          "text": "TCH",
+          "confidence": 0.992,
+          "text_ar": "تشه"
+        },
+        {
+          "text": "STRIDE",
+          "confidence": 0.984,
+          "text_ar": "خطوات واسعة"
+        },
+        {
+          "text": "YOU'RE INTERESTING, ONE GOLD.",
+          "confidence": 0.961,
+          "text_ar": "أنت مثير للاهتمام، يا قطعة ذهبية واحدة."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "烈合中",
+          "confidence": 0.454,
+          "text_ar": "هالة قوية"
+        },
+        {
+          "text": "WHY? NOTONLY YOU DO HATE LOSING, BUT YOU'RE ALSO EASY TO ANGER. WHY'D YOU RESTRAIN YOURSELF?",
+          "confidence": 0.917,
+          "text_ar": "لماذا؟ لست وحدك من تكره الخسارة، بل يسهل إغضابك أيضًا. لماذا تمالكت نفسك؟"
+        },
+        {
+          "text": "SEEMS LIKE YOU'RE SCARED...",
+          "confidence": 0.897,
+          "text_ar": "يبدو أنك خائف..."
+        },
+        {
+          "text": "NOT SCARED, BUT IT'S SIMILAR. I'D SAY IT'S MORE INSTINCTIVE.",
+          "confidence": 0.93,
+          "text_ar": "لست خائفًا، لكن الأمر مشابه. أود القول إنه شعور غريزي أكثر."
+        },
+        {
+          "text": "WHAT KIND OF INSTINCT?",
+          "confidence": 0.968,
+          "text_ar": "أي نوع من الغرائز؟"
+        },
+        {
+          "text": "HE DIDN'T SMELL.",
+          "confidence": 0.94,
+          "text_ar": "لم تكن له رائحة."
+        },
+        {
+          "text": "FIX",
+          "confidence": 0.953,
+          "text_ar": "تثبيت"
+        },
+        {
+          "text": "YOU KNOW THE SMELL THAT CLINGS ONTO HOMELESS PEOPLE?",
+          "confidence": 0.94,
+          "text_ar": "أتعرف الرائحة التي تلتصق بالمشردين؟"
+        },
+        {
+          "text": "THAT MAN DIDN'T SMELL LIKE IT.",
+          "confidence": 0.955,
+          "text_ar": "ذلك الرجل لم تكن تفوح منه تلك الرائحة."
+        },
+        {
+          "text": "you SMELLED HIM?",
+          "confidence": 0.616,
+          "text_ar": "شممته؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THAT'S NOTTHE POINT!",
+          "confidence": 0.962,
+          "text_ar": "ليس هذه هي النقطة!"
+        },
+        {
+          "text": "ASIDEFROM THE SMELL, HIS TONE WAS DEFINITELY DIFFERENTTOO.HESPOKE LIKE A WEALTHY PERSON. ANGR",
+          "confidence": 0.961,
+          "text_ar": "بغض النظر عن الرائحة، كانت نبرته مختلفة تمامًا أيضًا. لقد تحدث كشخص ثري. غضب"
+        },
+        {
+          "text": "I JUST DON'T GET IT. HE'S A BIG GUY WHOQUITELYACCEPTED BEING BEATENUP, THEN RUDELYASKEDFORA 100 GOLD WHEN WE OFFEREDHIM ONE.",
+          "confidence": 0.88,
+          "text_ar": "أنا لا أفهم فحسب. إنه رجل ضخم تقبل التعرض للضرب بهدوء، ثم طلب بوقاحة مئة قطعة ذهبية عندما عرضنا عليه واحدة."
+        },
+        {
+          "text": "Tsk-+sk",
+          "confidence": 0.96,
+          "text_ar": "تشه..."
+        },
+        {
+          "text": "AND IT'S NOT JUST MONEY,",
+          "confidence": 0.934,
+          "text_ar": "وليس الأمر مجرد مال،"
+        },
+        {
+          "text": "BUTI ALSO FELT STRENGTH AND POWER FROM HIM.",
+          "confidence": 0.95,
+          "text_ar": "بل شعرت أيضًا بالقوة والطاقة تنبعثان منه."
+        },
+        {
+          "text": "PICKS",
+          "confidence": 0.907,
+          "text_ar": "التقاط"
+        },
+        {
+          "text": "Sigh...",
+          "confidence": 0.847,
+          "text_ar": "تنهد..."
+        },
+        {
+          "text": "WHATEVER. I LEFT BECAUSE IT WAS TOO BOTHERSOME. LET'S JUST HEAD INSIDE.",
+          "confidence": 0.956,
+          "text_ar": "مهما يكن. لقد غادرت لأن الأمر كان مزعجًا للغاية. لننتقل إلى الداخل."
+        },
+        {
+          "text": "WE REALLY HAVE TO FOCUS ON THE TASK AT HAND.",
+          "confidence": 0.945,
+          "text_ar": "علينا حقًا التركيز على المهمة التي بين أيدينا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I was oncein charge of a liberal art show called Reserved for the Famous.",
+          "confidence": 0.954,
+          "text_ar": "كنت مسؤولًا مرة عن برنامج للفنون الحرة يُدعى \"محجوز للمشاهير\"."
+        },
+        {
+          "text": "I had to go around once every two weeks and beg different scholars to appear on the show.",
+          "confidence": 0.943,
+          "text_ar": "كان عليّ التنقل مرة كل أسبوعين لأتوسل للعديد من الباحثين للظهور في البرنامج."
+        },
+        {
+          "text": "Many of them were experts in their field.",
+          "confidence": 0.953,
+          "text_ar": "العديد منهم كانوا خبراء في مجالاتهم."
+        },
+        {
+          "text": "RING",
+          "confidence": 0.974,
+          "text_ar": "رنين"
+        },
+        {
+          "text": "Some of them had auras which kept people away I felt that same aura from that man.",
+          "confidence": 0.945,
+          "text_ar": "بعضهم كانت لديهم هالات تبقي الناس على مسافة، لقد شعرت بنفس تلك الهالة من ذلك الرجل."
+        },
+        {
+          "text": "Itmay have been even stronger than the scholars'..",
+          "confidence": 0.924,
+          "text_ar": "ربما كانت أقوى حتى من هالات الباحثين.."
+        },
+        {
+          "text": "whoishe? was hein the book?",
+          "confidence": 0.919,
+          "text_ar": "من يكون؟ هل كان في الكتاب؟"
+        },
+        {
+          "text": "Sigh",
+          "confidence": 0.934,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "IT'S BETTER TO AVOID ANY UNKNOWN VARIABLES. I'LL STEER CLEAR OF HIM. 1 4 --",
+          "confidence": 0.272,
+          "text_ar": "من الأفضل تجنب أي متغيرات مجهولة. سأبتعد عنه."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "TAP",
+          "confidence": 0.959,
+          "text_ar": "نقرة"
+        },
+        {
+          "text": "Ah. WHAT?",
+          "confidence": 0.884,
+          "text_ar": "آه. ماذا؟"
+        },
+        {
+          "text": "OH MY! WHAT A CUTE, CHUBBY MISSY! WHAT CAN I GET FOR YA?",
+          "confidence": 0.911,
+          "text_ar": "يا إلهي! يا لها من آنسة لطيفة وممتلئة! ماذا يمكنني أن أقدم لكِ؟"
+        },
+        {
+          "text": "Hoho",
+          "confidence": 0.99,
+          "text_ar": "هو هو"
+        },
+        {
+          "text": "WHATAN INTERESTING... PAIR?",
+          "confidence": 0.96,
+          "text_ar": "يا له من... ثنائي مثير للاهتمام؟"
+        },
+        {
+          "text": "WHAT CAN I GET FOR OUR MUSCLED KNIGHT?",
+          "confidence": 0.954,
+          "text_ar": "ماذا يمكنني أن أقدم لباريسنا العضلي؟"
+        },
+        {
+          "text": "SHE'S NOTAS CURVY AS ME.",
+          "confidence": 0.914,
+          "text_ar": "هي ليست بمثل انحناءاتي."
+        },
+        {
+          "text": "I-I'LL HAVE A BEER.",
+          "confidence": 0.9,
+          "text_ar": "أ-أنا أود بيرة."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "G-GIVE ME YOUR BIGGEST GLASS OF WARM BLACK HERBON.",
+          "confidence": 0.942,
+          "text_ar": "أ-أعطني أكبر كوب لديك من شراب الأعشاب السوداء الدافئ."
+        },
+        {
+          "text": "COUGH COUGH",
+          "confidence": 0.964,
+          "text_ar": "سعال سعال"
+        },
+        {
+          "text": "OUR BIGGEST GLASS OF BLACK HERBON.",
+          "confidence": 0.958,
+          "text_ar": "أكبر كوب لدينا من الأعشاب السوداء."
+        },
+        {
+          "text": "YOU SURE ABOUT THAT?",
+          "confidence": 0.59,
+          "text_ar": "أمتأكدة من ذلك؟"
+        },
+        {
+          "text": "YES. EXACTLY THAT.",
+          "confidence": 0.935,
+          "text_ar": "نعم. بالتحديد ذلك."
+        },
+        {
+          "text": "NOD",
+          "confidence": 0.985,
+          "text_ar": "إيماء"
+        },
+        {
+          "text": "HOW LONG DOI HAVE TO WAIT?",
+          "confidence": 0.951,
+          "text_ar": "كم من الوقت عليّ الانتظار؟"
+        },
+        {
+          "text": "HMM... INTERESTING.",
+          "confidence": 0.961,
+          "text_ar": "ممم... مثير للاهتمام."
+        },
+        {
+          "text": "GIVE ME 30 MINUTES. WE MIGHTNOT HAVE ANYIN STOCK.",
+          "confidence": 0.953,
+          "text_ar": "امنحني 30 دقيقة. قد لا يتوفر لدينا أي منها في المخزون."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I'LLBE RIGHT BACK WITHHER DRINK. WAITFOR ME, MR. KNIGHT.",
+          "confidence": 0.946,
+          "text_ar": "سأعود فورًا بمشروبها. انتظرني، أيها الفارس."
+        },
+        {
+          "text": "CHUGS",
+          "confidence": 0.971,
+          "text_ar": "تجريع"
+        },
+        {
+          "text": "HMMMM~?",
+          "confidence": 0.953,
+          "text_ar": "مممم~؟"
+        },
+        {
+          "text": "WH- WHAT?",
+          "confidence": 0.962,
+          "text_ar": "ما- ماذا؟"
+        },
+        {
+          "text": "so YOURTYPE ISTHE",
+          "confidence": 0.587,
+          "text_ar": "إذن نوعك المفضل هو"
+        },
+        {
+          "text": "CURVY KIND,HM??",
+          "confidence": 0.948,
+          "text_ar": "النوع الممتلئ، أليس كذلك؟؟"
+        },
+        {
+          "text": "YOU PREFER BODIES THAT POPOUT, RIGHT?",
+          "confidence": 0.846,
+          "text_ar": "تفضل الأجساد الممتلئة، أليس كذلك؟"
+        },
+        {
+          "text": "shic",
+          "confidence": 0.758,
+          "text_ar": "شيك"
+        },
+        {
+          "text": "A NOBLE'S DAUGHTER SHOULD NOT BE USING SUCH WORDS..!",
+          "confidence": 0.903,
+          "text_ar": "لا ينبغي لابنة نبيل أن تستخدم مثل هذه الكلمات..!"
+        },
+        {
+          "text": "you SHOULD ALREADY KNOW THAT I'MNOT A NORMAL NOBLE'S DAUGHTER.",
+          "confidence": 0.654,
+          "text_ar": "يجب أن تعلم بالفعل أنني لست ابنة نبيل عادية."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "WHEN DID YOU HAVE THE TIME TO TRY SUCH A STRONG DRINK AT YOUR AGE?",
+          "confidence": 0.943,
+          "text_ar": "متى أتيح لك الوقت لتجربة مشروب قوي إلى هذا الحد في سنك؟"
+        },
+        {
+          "text": "ANDISIT COMMONTO DRINK BLACK HERBON WARM?",
+          "confidence": 0.88,
+          "text_ar": "وهل من المعتاد شرب شراب الأعشاب السوداء دافئًا؟"
+        },
+        {
+          "text": "NOPE. I'VE NEVER HAD IT BEFORE.",
+          "confidence": 0.953,
+          "text_ar": "إطلاقًا. لم أتناوله من قبل قط."
+        },
+        {
+          "text": "AND THERE'S NO SUCH THING AS WARM BLACK HERBON.",
+          "confidence": 0.948,
+          "text_ar": "وليس هناك شيء اسمه أعشاب سوداء دافئة."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.986,
+          "text_ar": "هاه؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "YOUR HIGHNESS, PLEASE LEAVE THIS TO US.",
+          "confidence": 0.959,
+          "text_ar": "سموّك، ارجوكِ اتركِ هذا لنا."
+        },
+        {
+          "text": "YOU DON'T NEEDTO DO SUCH A THING.",
+          "confidence": 0.914,
+          "text_ar": "لستِ بحاجة للقيام بمثل هذا الأمر."
+        },
+        {
+          "text": "IT'S NICK BRIGHT.",
+          "confidence": 0.914,
+          "text_ar": "إنه نيك برايت."
+        },
+        {
+          "text": "DIDI HEAR\"YOUR HIGHNESS\"?",
+          "confidence": 0.949,
+          "text_ar": "أأنت تسمعني أقول \"سموك\"؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "IT WASA SLIPOFTHE TONGUE!",
+          "confidence": 0.926,
+          "text_ar": "لقد زلة لساني!"
+        },
+        {
+          "text": "THERE'S A REASON WHYI'MOUT HERE.",
+          "confidence": 0.949,
+          "text_ar": "هناك سبب لوجودي هنا."
+        },
+        {
+          "text": "AND FOR SAYING \"YOUR HIGHNESS\"WHILE WE'RE IN DISGUISE, RUN 50O LAPS AROUND THE TRAINING AREA.",
+          "confidence": 0.873,
+          "text_ar": "ولقولك \"سموك\" بينما نحن متنكرون، اركض خمسين دورة حول منطقة التدريب."
+        },
+        {
+          "text": "UNDERSTOOD!",
+          "confidence": 0.991,
+          "text_ar": "حاضر!"
+        },
+        {
+          "text": "JUMPS",
+          "confidence": 0.978,
+          "text_ar": "يقفز"
+        },
+        {
+          "text": "TONIGHT, WE'LL BE STOWING ONTO THE TRADE SHIP THAT THOSE MEN SAIL.",
+          "confidence": 0.948,
+          "text_ar": "اللغيلة، سنستقل سفينة التجارة التي يبحر عليها هؤلاء الرجال سرا."
+        },
+        {
+          "text": "WE'LL LIKELY BE MOVING CARGO. FIND OUT WHERE THE WINE WILLBE TRANSPORTED.",
+          "confidence": 0.937,
+          "text_ar": "سنقوم على الأرجح بنقل البضائع. اعلم أين سيتم نقل النبيذ."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "YES.WE'LL BE PREPARED.",
+          "confidence": 0.966,
+          "text_ar": "حسنا. سنكون مستعدين."
+        },
+        {
+          "text": "THE LEKTON GANG STAYED QUIET UP UNTIL TONIGHT.",
+          "confidence": 0.939,
+          "text_ar": "بقيت عصابة ليكتون هادئة حتى هذه الليلة."
+        },
+        {
+          "text": "IF ONLY ONE GOLD HADN'TINTERFERED, I COULD'VE FOUND OUT MORE...",
+          "confidence": 0.901,
+          "text_ar": "لو لم تتدخل تلك الفتاة الذهبية وحدها، لكنت تمكنت من معرفة المزيد..."
+        },
+        {
+          "text": "HOW UNFORTUNATE. WHAT ABOUT THE BAR?",
+          "confidence": 0.954,
+          "text_ar": "يا للأؤسف. ماذا عن الحانة؟"
+        },
+        {
+          "text": "THEY HAVENO CONNECTION WITH THE LEKTON GANG.",
+          "confidence": 0.967,
+          "text_ar": "ليس لها أي علاقة بعصابة ليكتون."
+        },
+        {
+          "text": "THE GANG MERELY FREQUENTS IT. STRANGELY ENOUGH THEY DON'T SEEM TO BOTHER THE WORKERS THERE.",
+          "confidence": 0.935,
+          "text_ar": "العصابة ترتادها فحسب. ومن الغريب أنهم لا يبدون مهتمين بالعمال هناك."
+        },
+        {
+          "text": "WHAT A SNAKE..",
+          "confidence": 0.912,
+          "text_ar": "يا لها من مخادعة.."
+        },
+        {
+          "text": "JUST WATCHING FROM THE SIDELINES EVEN THOUGH SHE KNOWS WHO I AM.IS SHE HONESTLY CHOOSING TO REMAIN NEUTRAL?",
+          "confidence": 0.941,
+          "text_ar": "تكتفي بالمراقبة من بعيد رغم أنها تعرف من أكون. أهي مصممة حقا على البقاء على الحياد؟"
+        },
+        {
+          "text": "DID YOU WANT US TO IDENTIFY THE PEOPLE WHO INTERFERED?",
+          "confidence": 0.925,
+          "text_ar": "أأردت منا تحديد هوية الأشخاص الذين تدخلوا؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "WALTER, WHAT WOULD YOU HAVE DONE?",
+          "confidence": 0.929,
+          "text_ar": "والتر، ماذا كنت ستفعل لو كنت مكانها؟"
+        },
+        {
+          "text": "HUH? WHAT DO YOU MEAN?",
+          "confidence": 0.932,
+          "text_ar": "هاه؟ ماذا تعني؟"
+        },
+        {
+          "text": "WHAT WOULD YOU DO IF YOU DIDNT KNOWANY MARTIAL ARTS,",
+          "confidence": 0.939,
+          "text_ar": "ماذا ستفعل لو كنت لا تجيد أي فنون قتالية،"
+        },
+        {
+          "text": "AND THE OBVIOUS OUTCOME WOULD BE THAT YOU'D LOSE TO YOUR OPPONENT?",
+          "confidence": 0.931,
+          "text_ar": "وكانت النتيجة الحتمية هي خسارتك أمام خصمك؟"
+        },
+        {
+          "text": "I WOULD RUN.",
+          "confidence": 0.951,
+          "text_ar": "كنت سأهرب."
+        },
+        {
+          "text": "WHATIF YOU HAD A PARTNER WHO'D COME INLATER TO HELP?",
+          "confidence": 0.954,
+          "text_ar": "ماذا لو كان لديك شريك سيأتي لاحقا للمساعدة؟"
+        },
+        {
+          "text": "HMPH.IF I DIDN'T KNOW WHEN THEY'D SHOW UP, WHY WOULD I WAITFOR THEM?",
+          "confidence": 0.928,
+          "text_ar": "تبا. إن لم أكن أعلم متى سيظهران، فلماذا كنت سأنتظرهما؟"
+        },
+        {
+          "text": "WAS I BORN WITH AN EXTRA LIFE?",
+          "confidence": 0.904,
+          "text_ar": "هل ولدت بحياة إضافية؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "RIGHT?",
+          "confidence": 0.996,
+          "text_ar": "أليس كذلك؟"
+        },
+        {
+          "text": "BUT THAT ONE GOLD SAID SHE CALCULATED EVERYTHING.",
+          "confidence": 0.941,
+          "text_ar": "لكن تلك الفتاة الذهبية قالت إنها حسبت كل شيء بدقة."
+        },
+        {
+          "text": "WHAT? WHATDOES THAT MEAN?",
+          "confidence": 0.983,
+          "text_ar": "ماذا؟ ماذا تعني بذلك؟"
+        },
+        {
+          "text": "CHATTER",
+          "confidence": 0.995,
+          "text_ar": "ثرثرة"
+        },
+        {
+          "text": "STOPS",
+          "confidence": 0.922,
+          "text_ar": "يتوقفون"
+        },
+        {
+          "text": "NOTHING. IT ALL ENDS TONIGHT.",
+          "confidence": 0.961,
+          "text_ar": "لا شيء. ينتهي كل هذا الليلة."
+        },
+        {
+          "text": "WRITE UPALIST OF THE PARTIES INVOLVEDSINCE WE KNOW THEIR DISTRIBUTION NETWORK FOR THE WINE.",
+          "confidence": 0.919,
+          "text_ar": "اكتب قائمة بالجهات المعنية بما أننا نعرف شبكة توزيع النبيذ الخاصة بهم."
+        },
+        {
+          "text": "YES,YOUR HIGHNESS.",
+          "confidence": 0.946,
+          "text_ar": "حاضر، سمو الأمير."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "SUCHPITIFUL DEMEANOR..",
+          "confidence": 0.926,
+          "text_ar": "يا له من سلوك مثير للشفقة.."
+        },
+        {
+          "text": "EXCELLENT. DON'T MIND ME.",
+          "confidence": 0.964,
+          "text_ar": "ممتاز. لا تهتم بي."
+        },
+        {
+          "text": "BECAUSE THAT'S EXACTLY HOW I'LL BE ABLE TO SLIP INTO YOUR RANKS.",
+          "confidence": 0.934,
+          "text_ar": "لأن هذه هي الطريقة الوحيدة التي تمكنني من التسلل بين صفوفكم."
+        },
+        {
+          "text": "-5 minutes later-",
+          "confidence": 0.974,
+          "text_ar": "-بعد 5 دقائق-"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "COME AND GET YOUR DRINK YOURSELF, MISS.",
+          "confidence": 0.943,
+          "text_ar": "تعال وخذ شرابك بنفسك، آنستي."
+        },
+        {
+          "text": "Oh my, where are you.going?",
+          "confidence": 0.932,
+          "text_ar": "أهلاً، إلى أين تذهبين؟"
+        },
+        {
+          "text": "MR.KNIGHT STAYS HERE AND PLAYS WITH ME.",
+          "confidence": 0.958,
+          "text_ar": "يُرجى من السيد الفارس البقاء هنا واللهو معي."
+        },
+        {
+          "text": "YOU CAN'T GO ALONEAND HAVEAPRIVATE CONVERSATION!YOU SHOULDHAVETOLD ME EARLIER!",
+          "confidence": 0.912,
+          "text_ar": "لا يمكنك الذهاب بمفردك وإجراء محادثة خاصة! كان يجب أن تخبرني من قبل!"
+        },
+        {
+          "text": "IT'S IMPORTANT, BERNARD.",
+          "confidence": 0.922,
+          "text_ar": "الأمر مهم يا برنارد."
+        },
+        {
+          "text": "I KNOW YOU'RE JUST DOING YOUR DUTY, BUT CAN'T YOU TRUST ME?",
+          "confidence": 0.919,
+          "text_ar": "أعلم أنك تؤدي واجبك فحسب، لكن ألا يمكنك الوثوق بي؟"
+        },
+        {
+          "text": "BUT MY LADYISN'T A NOBLEMAN WITH A TITLE.",
+          "confidence": 0.94,
+          "text_ar": "لكن سيدتي ليست نبيلة ذات لقب رفيع."
+        },
+        {
+          "text": "THAT'S RIGHT, I'M NOT.",
+          "confidence": 0.904,
+          "text_ar": "هذا صحيح، أنا لست كذلك."
+        },
+        {
+          "text": "OKAY, FINE.IF I THINK SOMETHING'S WRONG,I'LL SCREAM.",
+          "confidence": 0.934,
+          "text_ar": "حسنا، لا بأس. إن شعرت أن شيئا خاطئا يحدث، فسأصرخ."
+        },
+        {
+          "text": "BUT THIS IS REALLY IMPORTANTTO ME, AND MYFUTURE ME,AND MYFUTURE DEPENDS ON IT.",
+          "confidence": 0.91,
+          "text_ar": "لكن هذا مهم حقا بالنسبة لي، ولمستقبلي، ومستقبلي يعتمد عليه."
+        },
+        {
+          "text": "FINE.",
+          "confidence": 0.989,
+          "text_ar": "حسناً."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "BUT INSTEAD...",
+          "confidence": 0.962,
+          "text_ar": "ولكن في المقابل..."
+        },
+        {
+          "text": "YOU'RE TARA FROMTHE ELIAS FROM THE ELIAS DUKEDOM.",
+          "confidence": 0.944,
+          "text_ar": "أنتِ تارا من دوقية إليوس."
+        },
+        {
+          "text": "WHY HAVE YOU COME LOOKING FOR ME?",
+          "confidence": 0.957,
+          "text_ar": "لماذا أتيتِ للبحث عني؟"
+        },
+        {
+          "text": "Y-YOU ALREADY KNOWWHY.",
+          "confidence": 0.938,
+          "text_ar": "أ-أنت تعلم السبب بالفعل."
+        },
+        {
+          "text": "HO~ IS THAT REALLY THE REASON WHY?",
+          "confidence": 0.944,
+          "text_ar": "هوو~ أهذا هو السبب حقاً؟"
+        },
+        {
+          "text": "THEN YOU SHOULD KNOW THAT I DON'T TAKE JUST ANYONE IN AS MY STUDENT.",
+          "confidence": 0.891,
+          "text_ar": "إذن يجب أن تعلمي أنني لا أقبل أي شخص كتلميذ لي."
+        },
+        {
+          "text": "Andre Pete(35 years old). The head of Osiran Empire's most infamous underground information syndicate in the black society.",
+          "confidence": 0.919,
+          "text_ar": "أندريه بيت (35 عاماً). زعيم أسوأ شبكة معلومات سرية سيئة السمعة في إمبراطورية أوسيران."
+        },
+        {
+          "text": "The password to request a meeting with himis Black Herbon.",
+          "confidence": 0.926,
+          "text_ar": "كلمة المرور لطلب لقائه هي الهيربون الأسود."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "LEANS",
+          "confidence": 0.995,
+          "text_ar": "يميل"
+        },
+        {
+          "text": "AH,I KNOW... BUT I'M NOT JUST ANYONE.\"",
+          "confidence": 0.875,
+          "text_ar": "آه، أعلم... لكني لست أي شخص."
+        },
+        {
+          "text": "BEFORE I START, IS IT OKAY TO TURN THAT HOURGLASS?",
+          "confidence": 0.923,
+          "text_ar": "قبل أن أبدأ، هل لا بأس بقلب تلك الساعة الرملية؟"
+        },
+        {
+          "text": "HMM.. HMM...",
+          "confidence": 0.916,
+          "text_ar": "ممم.. ممم..."
+        },
+        {
+          "text": "EVERYONE LIKES TO CLAIM THAT THEY AREN'T \"JUST ANYONE.\"",
+          "confidence": 0.928,
+          "text_ar": "الجميع يحب الادعاء بأنهم \"ليسوا أي شخص\"."
+        },
+        {
+          "text": "WHYISA NOBLE'S DAUGHTER ASKING TO BECOME MY STUDENT?",
+          "confidence": 0.957,
+          "text_ar": "لماذا تطلب ابنة نبيل أن تصبح تلميذتي؟"
+        },
+        {
+          "text": "IT'SBECAUSE YOU ARE SOMEONE WHO CAN HELP ME WITH MY GOAL.",
+          "confidence": 0.917,
+          "text_ar": "لأنك شخص يمكنه مساعدتي في تحقيق غايتي."
+        },
+        {
+          "text": "TAR",
+          "confidence": 0.878,
+          "text_ar": "تار"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "I AM?",
+          "confidence": 0.962,
+          "text_ar": "أأنا كذلك؟"
+        },
+        {
+          "text": "-Hmm",
+          "confidence": 0.864,
+          "text_ar": "-همم"
+        },
+        {
+          "text": "ICAN'T HELP ASKING SINCE YOU PUT IT LIKE THAT.",
+          "confidence": 0.928,
+          "text_ar": "لا يسعني إلا السؤال بعد أن طرحت الأمر هكذا."
+        },
+        {
+          "text": "BUT WHAT EXACTLY IS YOUR GOAL?",
+          "confidence": 0.904,
+          "text_ar": "ولكن ما هي غايتك تحديداً؟"
+        },
+        {
+          "text": "IT'STO SAVEADAMNED FAMILY!",
+          "confidence": 0.957,
+          "text_ar": "إنها إنقاذ عائلة ملعونة!"
+        },
+        {
+          "text": "KENAZ webtoon IP holder webtoonIPholder",
+          "confidence": 0.938,
+          "text_ar": "حقوق نشر ويبتون كيناز"
+        },
+        {
+          "text": "NU wodNa，Mnh（）",
+          "confidence": 0.477,
+          "text_ar": "ترجمة وتعديل"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "BELL'S SCANS present Ill Save This Damn Family!-Chapter6 Raw Provider:Manhwa Kingdomx PEACHY Translator：Belle#333 Proofreader：Belle#10 Cleaner/Redrawer：Belle#12 Typesetter：Belle#12 Quality Checker：Belle#10",
+          "confidence": 0.873,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "like & Follow us on Mangadex!",
+          "confidence": 0.965,
+          "text_ar": "تابعونا على مانجا ديكس!"
+        }
+      ]
+    }
+  ]
+}
