@@ -1195,6 +1195,7 @@ def _sb_headers_for(url: str) -> dict:
     return headers
 
 
+_NO_REFERER_HOSTS: set[str] = set()   # نطاقات صور ترفض Referer (تُملأ وقت الجلب)
 _SB_SESSION = None
 _NO_RETRY_MARK = "[لا إعادة محاولة]"
 
@@ -1245,6 +1246,13 @@ def _fetch_images_via_sb_sync(chapter_url: str, no_referer: bool = False) -> tup
         return [], "لم تُستخرَج صور محتوى من DOM بعد حل التحدي", ""
     for u, b in (res.get("image_bytes") or {}).items():
         _SB_IMAGE_CACHE[u] = b
+    if no_referer:
+        # [إصلاح الإنتاج_الكامل] مسارات أخرى (ocr_extraction) تستدعي التنزيل بلا تمرير no_referer فكانت تُرسل
+        # Referer فيرفض CDN بـ403. نسجّل نطاقات الصور هنا ليُطبَّق no_referer عليها تلقائيًا بأي مستدعٍ.
+        for u in urls:
+            h = (urlparse(u).hostname or "").lower()
+            if h:
+                _NO_REFERER_HOSTS.add(h)
     return urls, "", extract_manga_title_from_html(res.get("html") or "")
 
 
@@ -1346,6 +1354,8 @@ def _describe_http_failure(resp, sent_headers: dict) -> str:
 def fetch_image_bytes_http_sync(img_url: str, referer: str,
                                 no_referer: bool = False) -> tuple[bytes | None, str | None]:
     last_reason = "سبب غير معروف"
+    if (urlparse(img_url).hostname or "").lower() in _NO_REFERER_HOSTS:
+        no_referer = True
     cached = _SB_IMAGE_CACHE.pop(img_url, None)
     if cached:
         valid, why = _validate_image_bytes(cached)
