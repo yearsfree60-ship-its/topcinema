@@ -1,0 +1,791 @@
+{
+  "manga_id": "arenascan.com__arenascan-com",
+  "chapter_num": "5",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "PATHETIC, JUST PATHETIC.",
+          "confidence": 0.986,
+          "text_ar": "مثير للشفقة، مثير للشفقة حقاً."
+        },
+        {
+          "text": "WHILE OTHERS ARE SERVING THE EMPIRE BY FIGHTING ON THE BATTLEFIELD, I'M HERE CHASING SOMEONE'S REAR.",
+          "confidence": 0.939,
+          "text_ar": "بينما يخدم الآخرون الإمبراطورية بالقتال في ساحة المعركة، أنا هنا ألاحق مؤخرة شخص ما."
+        },
+        {
+          "text": "mumble MAYBE ISHOULD ABANDONEVERYTHING AND JUST BECOME A ROYALPALACE GATEKEEPER.",
+          "confidence": 0.965,
+          "text_ar": "ربما يجب أن أتخلى عن كل شيء وأكتفي بأن أكون حارس بوابة في القصر الملكي."
+        },
+        {
+          "text": "-mumble",
+          "confidence": 0.977,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "THE SALARY IS LOW, BUT IT'S RESPECTABLE AT LEAST... mumble",
+          "confidence": 0.874,
+          "text_ar": "الراتب قليل، لكنه محترم على الأقل..."
+        },
+        {
+          "text": "BERNARD, HOW FAR IS IT TO THE ENTRANCE?",
+          "confidence": 0.911,
+          "text_ar": "برنارد، كم تبعد المدخلية؟"
+        },
+        {
+          "text": "phew 25 MINUTES. WELL THE NEXT TESTISIN3 MONTHS..",
+          "confidence": 0.954,
+          "text_ar": "خمس وعشرون دقيقة. حسناً، الاختبار القادم بعد 3 أشهر..."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "HA... HONESTLY, BERNARD!",
+          "confidence": 0.941,
+          "text_ar": "هاه... بصراحة، يا برنارد!"
+        },
+        {
+          "text": "JUST WHAT IS YOUR PROBLEM?",
+          "confidence": 0.916,
+          "text_ar": "ما مشكلتك بحق الجحيم؟"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.992,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "WHY'D YOU STOP?",
+          "confidence": 0.881,
+          "text_ar": "لماذا توقفت؟"
+        },
+        {
+          "text": "DO YOU REALLY NOTKNOW?YOU'RE WIDEENOUGH TOKILL A COW, BUT YOURMIND IS NARROWER THAN A COW'S ASSHOLE.",
+          "confidence": 0.915,
+          "text_ar": "ألا تعرف حقاً؟ جسدك عريض بما يكفي لقتل بقرة، لكن عقلك أضيق من مؤخرة بقرة."
+        },
+        {
+          "text": "JUST WHY DOYOUKEEP COMPLAINING?!",
+          "confidence": 0.936,
+          "text_ar": "لماذا لا تزال تتذمر بحق الجحيم؟!"
+        },
+        {
+          "text": "ANGRY TOBE HONEST, THIS AIN'TRIGHT!",
+          "confidence": 0.961,
+          "text_ar": "لكي أكون صادقاً، هذا ليس عدلاً!"
+        },
+        {
+          "text": "I'M TELLINGYOU THIS BECAUSE YOU ASKED,BUT THISAIN'T RIGHT!",
+          "confidence": 0.91,
+          "text_ar": "أقول لك هذا لأنك سألت، ولكن هذا ليس عدلاً!"
+        },
+        {
+          "text": "I'M SUPPOSED TO BE TRAINING YOU.INEVER AGREEDTO BE YOUR ESCORT!",
+          "confidence": 0.954,
+          "text_ar": "من المفترض أن أقوم بتدريبك، لم أوافق أبداً على أن أكون مرافقك الشخصي!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WELL, YOU'RE RIGHT ABOUTTRAINING ME.",
+          "confidence": 0.966,
+          "text_ar": "حسناً، أنت محق بشأن تدريبي."
+        },
+        {
+          "text": "EVEN THOUGH I DON'T EXPECTYOUTO PLEDGE YOUR LOYALTY,",
+          "confidence": 0.931,
+          "text_ar": "مع أنني لا أتووقع منك أن تقسم بالولاء،"
+        },
+        {
+          "text": "WHEN IASKED YOU TO TRAIN ME,I WAS UNDER THE IMPRESSION THAT BEING MY ESCORT WAS INCLUDED.",
+          "confidence": 0.942,
+          "text_ar": "عندما طلبت منك تدريبي، كنت تحت انطباع أن مرافقتي مشمولة."
+        },
+        {
+          "text": "PLEDGE MY LOYALTY? ARE YOU TALKING ABOUT THE PLEDGE THAT I'D MAKE ONLY ONCE IN MY LIFE- TIME?!",
+          "confidence": 0.934,
+          "text_ar": "أقسم بالولاء؟ هل تتحدث عن القسم الذي لا أؤديه إلا مرة واحدة في حياتي؟!"
+        },
+        {
+          "text": "NOTA PLEDGE...",
+          "confidence": 0.948,
+          "text_ar": "ليست قسماً..."
+        },
+        {
+          "text": "FINE! HOW ABOUT OBSERVING ME FORA MONTH.IF YOU FIGURE BEING MY KNIGHT IS BENEFICIAL TO YOU,",
+          "confidence": 0.904,
+          "text_ar": "حسناً! ما رأيك أن تراقبني لمدة شهر، وإذا وجدت أن كونك فارسًا لي مفيد لك،"
+        },
+        {
+          "text": "sigh",
+          "confidence": 0.984,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "YOUCAN PLEDGE YOUR LOYALTY TO ME. I'LL LET YOUGO IF YOU DECIDE OTHERWISE. OF COURSE,I'LL STILL PROVIDE MEDICINE AS COMPENSATION. HOW'S THAT?",
+          "confidence": 0.904,
+          "text_ar": "يمكنك قسم الولاء لي. سأدعك تذهب إذا قررت خلاف ذلك. بالطبع، سأستمر في توفير الدواء كتعويض. ما رأيك في هذا؟"
+        },
+        {
+          "text": "SMIRK",
+          "confidence": 0.968,
+          "text_ar": "ابتسامة خبيثة"
+        },
+        {
+          "text": "NO TAKEBACKS, LADY!",
+          "confidence": 0.976,
+          "text_ar": "لا تراجع عما قلتيه، سيدتي!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "NOW, LET'S GO! THIS BODY SHALL GUARD YOU.",
+          "confidence": 0.912,
+          "text_ar": "الآن، لنذهب! هذا الجسد سيحميك."
+        },
+        {
+          "text": "早烈合",
+          "confidence": 0.485,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "REARY",
+          "confidence": 0.975,
+          "text_ar": "خطوات"
+        },
+        {
+          "text": "AFTER SOME THOUGHT, THIS...",
+          "confidence": 0.978,
+          "text_ar": "بعد بعض التفكير، هذا..."
+        },
+        {
+          "text": "ANY NOBLEWOMAN WOULD NOT BE IN THEIRRIGHT MINDTOENTER SUCHA SCARY PLACE...",
+          "confidence": 0.945,
+          "text_ar": "أي نبيلة لن تكون في كامل وعيها لتدخل مكاناً مخيفاً كهذا..."
+        },
+        {
+          "text": "EVEN IFIT'S TEMPORARY, YOU'RESTILL MY KNIGHT!AREYOU GONNAKEEP ACTINGLIKE THIS?",
+          "confidence": 0.966,
+          "text_ar": "حتى لو كان مؤقتاً، ما زلت فارسي! أستستمر في التصرف هكذا؟"
+        },
+        {
+          "text": "DO YOU KNOW WHAT MAKESLEKTON ROADSO IN- FAMOUS?",
+          "confidence": 0.937,
+          "text_ar": "أتعرفين ما الذي يجعل طريق ليكتون سيئ السمعة هكذا؟"
+        },
+        {
+          "text": "THE EMPIRE DOESN'T INVOLVE THEMSELVES IN ANY- THING HERE,EVENIF SOMEONE DIES OR IS ABDUCTED.",
+          "confidence": 0.915,
+          "text_ar": "الإمبراطورية لا تتدخل في أي شيء هنا، حتى لو مات شخص ما أو تم اختطافه."
+        },
+        {
+          "text": "I KNOW!",
+          "confidence": 0.964,
+          "text_ar": "أنا أعرف!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOUDO?",
+          "confidence": 0.962,
+          "text_ar": "أتعرفين؟"
+        },
+        {
+          "text": "THEN AREYOU ALSO AWARE THAT THE LEKTON GANG IS RESPONSIBLE FOR SUCHDEPLORABLE ACTS, AND THAT THEIR HIDEOUTISRIGHT OVER THERE?!",
+          "confidence": 0.926,
+          "text_ar": "إذن هل تدركين أيضاً أن عصابة ليكتون مسؤولة عن مثل هذه الأعمال البشعة، وأن مخبأهم هناك مباشرة؟!"
+        },
+        {
+          "text": "My EARS HURT! WHY'REYOU YELLING?!",
+          "confidence": 0.754,
+          "text_ar": "أذناي تؤلماني! لماذا تصرخ؟!"
+        },
+        {
+          "text": "GRABS Ugh! LET GO!",
+          "confidence": 0.802,
+          "text_ar": "آه! اتركني!"
+        },
+        {
+          "text": "NO. ARE YOU THAT NAIVE? AREN'TYOU SCARED?",
+          "confidence": 0.909,
+          "text_ar": "كلا. هل أنتِ ساذجة إلى هذا الحد؟ ألا تشعرين بالخوف؟"
+        },
+        {
+          "text": "YEAH, I'M SCARED. OBVIOUSLY.",
+          "confidence": 0.936,
+          "text_ar": "بلى، أنا خائفة. بالطبع."
+        },
+        {
+          "text": "BUTI HAVE YOU, MY KNIGHT, BERNARD SMITH!",
+          "confidence": 0.953,
+          "text_ar": "لكن لدي أنت، فارسي، برنارد سميث!"
+        },
+        {
+          "text": "THISPLACE COULD COMPLETELY CHANGE MY LIFE, BERNARD.",
+          "confidence": 0.96,
+          "text_ar": "هذا المكان يمكن أن يغير حياتي تماماً، يا برنارد."
+        },
+        {
+          "text": "HESITATE",
+          "confidence": 0.995,
+          "text_ar": "تردد"
+        },
+        {
+          "text": "CAN WE GO, PLEASE?",
+          "confidence": 0.856,
+          "text_ar": "هل يمكننا الذهاب، من فضلك؟"
+        },
+        {
+          "text": ".ALRIGHT. KEEP YOUR VOICELOWAND STAY CLOSE BEHIND ME.",
+          "confidence": 0.912,
+          "text_ar": "حسناً. خفضي صوتك وابقي بالقرب خلفي مباشرة."
+        },
+        {
+          "text": "SHAKES",
+          "confidence": 0.993,
+          "text_ar": "ارتجاف"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "SWINGS",
+          "confidence": 0.929,
+          "text_ar": "تلويح"
+        },
+        {
+          "text": "WE NEED TO PASS THROUGH THISPLACE VERY QUIETLY.",
+          "confidence": 0.93,
+          "text_ar": "علينا المرور عبر هذا المكان بهدوء شديد."
+        },
+        {
+          "text": "STOPS",
+          "confidence": 0.934,
+          "text_ar": "توقف"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.995,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": ".IT'S COMING!",
+          "confidence": 0.815,
+          "text_ar": "إنه قادم!"
+        },
+        {
+          "text": "WHAT? WHAT IS?",
+          "confidence": 0.935,
+          "text_ar": "ماذا؟ ما الذي قادم؟"
+        },
+        {
+          "text": "ISIT DANGEROUS?",
+          "confidence": 0.966,
+          "text_ar": "هل هو خطير؟"
+        },
+        {
+          "text": "G-GO WAIT BY THAT WALL O-OVER THERE, AND DON'T MOVE.",
+          "confidence": 0.937,
+          "text_ar": "ا-اذهبي وانتظري بجانب ذلك الجدار ه-هناك، ولا تتحركي."
+        },
+        {
+          "text": "I TOOK THE MEDICINE LATE SINCE WE WERE IN A HURRY TO LEAVE..",
+          "confidence": 0.886,
+          "text_ar": "أخذت الدواء متأخراً لأننا كنا في عجلة من أمرنا للمغادرة..."
+        },
+        {
+          "text": "HUH? DASH ￥",
+          "confidence": 0.778,
+          "text_ar": "هاه؟ انطلاق"
+        },
+        {
+          "text": "BERNARD... DON'T TELL MEIT'S THAT.",
+          "confidence": 0.928,
+          "text_ar": "برنارد... لا تقل لي إنه ذلك."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "Haa IAM DEFINITELY GONNAMAKE FUNOFHIM FOR THIS.",
+          "confidence": 0.935,
+          "text_ar": "هاه... سأقوم بالتأكيد بالسخرية منه بسبب هذا."
+        },
+        {
+          "text": "FALL murmur HI murmur",
+          "confidence": 0.423,
+          "text_ar": "سقوط تمتمة"
+        },
+        {
+          "text": "WHAT'S THAT SOUND?",
+          "confidence": 0.968,
+          "text_ar": "ما هذا الصوت؟"
+        },
+        {
+          "text": "IT SOUNDS LIKE FIGHTING.",
+          "confidence": 0.969,
+          "text_ar": "يبدو وكأنه شجار."
+        },
+        {
+          "text": "PEEK",
+          "confidence": 0.967,
+          "text_ar": "إلقاء نظرة"
+        },
+        {
+          "text": "SHOULD I TAKEA LOOK?",
+          "confidence": 0.957,
+          "text_ar": "هل يجب أن ألقي نظرة؟"
+        },
+        {
+          "text": "GRUNT",
+          "confidence": 0.994,
+          "text_ar": "أنين"
+        },
+        {
+          "text": "HOW'D HE GET CAUGHT BY THEM? POOR GUY..",
+          "confidence": 0.857,
+          "text_ar": "كيف تم القبض عليه من قبلهم؟ مسكين..."
+        },
+        {
+          "text": "KICK HE SEEMS PRETTYBIG THOUGH.WHY IS HE JUST TAKING IT?",
+          "confidence": 0.92,
+          "text_ar": "ركل، يبدو ضخماً جداً مع ذلك. لماذا يتلقى الضرب هكذا؟"
+        },
+        {
+          "text": "ALTHOUGH ISUPPOSE HE ISUPPOSEHE COULDBE BIG BUTWEAK- WILLED...",
+          "confidence": 0.959,
+          "text_ar": "مع أنني أترض أن يكون ضخماً لكن ضعيف الإرادة..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "UHH... UH!",
+          "confidence": 0.92,
+          "text_ar": "أوه... أه!"
+        },
+        {
+          "text": "CRUMBLE- UH! BREAK UH.. UGH!",
+          "confidence": 0.772,
+          "text_ar": "تحطم- أه! انكسار... أوقه!"
+        },
+        {
+          "text": "DAMN... THAT HURT LIKE HELL!",
+          "confidence": 0.931,
+          "text_ar": "لعنة... لقد كان مؤلماً للغاية!"
+        },
+        {
+          "text": "MEETS",
+          "confidence": 0.986,
+          "text_ar": "تقاطع نظرات"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "OH, CRAP...I'M SCREWED.",
+          "confidence": 0.866,
+          "text_ar": "أوه، اللعنة... لقد انتهيت."
+        },
+        {
+          "text": "WHAT'S THAT?A PIG?",
+          "confidence": 0.976,
+          "text_ar": "ما هذا؟ خنزير؟"
+        },
+        {
+          "text": "AHAHA, A PIG CAME THROUGH THE WALL?",
+          "confidence": 0.957,
+          "text_ar": "هاهاها، هل اخترق خنزير الجدار؟"
+        },
+        {
+          "text": "O, Ol! THE PIG'S LEAVING.",
+          "confidence": 0.771,
+          "text_ar": "مهلاً، مهلاً! الخنزير يغادر."
+        },
+        {
+          "text": "FREEZE",
+          "confidence": 0.995,
+          "text_ar": "تجمد"
+        },
+        {
+          "text": "HEY! YOU!",
+          "confidence": 0.887,
+          "text_ar": "مهلاً! أنت!"
+        },
+        {
+          "text": "Hmph HOW DARE THEY CALL ME A PIG. THIS THING WAS JUSTPOORLY CONSTRUCTED.",
+          "confidence": 0.94,
+          "text_ar": "همف، كيف يجرؤون على وصفی بالخنزير. هذا البناء كان رديئاً فحسب."
+        },
+        {
+          "text": "WECAN HEAR YOU! HEY, PIG!",
+          "confidence": 0.922,
+          "text_ar": "يمكننا سماعك! مهلاً، أيها الخنزير!"
+        },
+        {
+          "text": "THOSE DAMN KIDS. I'LL RESTRAIN MYSELFSINCE THEY ALL HAVE SHITFOR BRAINS.",
+          "confidence": 0.927,
+          "text_ar": "هؤلاء الأطفال اللعينون. لكني سأضبط نفسي لأن عقولهم مليئة بالروث."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "DON'T THINK THAT I'LL GO EASY ON YOU JUST'CAUSE YOU'RE A GIRL-",
+          "confidence": 0.922,
+          "text_ar": "لا تظن أنني سأتساهل معك لمجرد أنك فتاة-"
+        },
+        {
+          "text": "NO,A PIG!",
+          "confidence": 0.937,
+          "text_ar": "لا، بل خنزير!"
+        },
+        {
+          "text": "snicker HE CALLED HERA PIG!",
+          "confidence": 0.906,
+          "text_ar": "ضحكة خافتة، لقد نعتها بالخنزير!"
+        },
+        {
+          "text": "IT'S ALREADY BEENTEN MINUTES...",
+          "confidence": 0.773,
+          "text_ar": "لقد مرّت عشر دقائق بالفعل..."
+        },
+        {
+          "text": "HAH!OH WELL.",
+          "confidence": 0.98,
+          "text_ar": "هاه! حسناً لا بأس."
+        },
+        {
+          "text": "IINTER- RUPTED YOU BY MISTAKE.",
+          "confidence": 0.97,
+          "text_ar": "لقد قاطعتكم عن طريق الخطأ."
+        },
+        {
+          "text": "MY APOLOGIES. CONTINUEWHAT YOU WERE DOING. SINCE I'MINA HURRY,I'LLBE ON MYWAY",
+          "confidence": 0.947,
+          "text_ar": "معذرة. تابعوا ما كنتم تفعلونه. بما أنني في عجلة من أمري، فسأمضي في طريقي"
+        },
+        {
+          "text": "WHAT'D YOU SAY?",
+          "confidence": 0.948,
+          "text_ar": "ماذا قلتِ؟"
+        },
+        {
+          "text": "SHE TOLD US TO CONTINUE DOING WHAT WE WERE DOING. THIS CRAZY PIG.",
+          "confidence": 0.948,
+          "text_ar": "لقد طلبت منا متابعة ما كنا نفعله. هذه الخنزيرة المجنونة."
+        },
+        {
+          "text": "snicker",
+          "confidence": 0.985,
+          "text_ar": "ضحكة خافتة"
+        },
+        {
+          "text": "NOW,NOW. YOU NEED TO PAY UP FOR DISTURBING US.",
+          "confidence": 0.872,
+          "text_ar": "مهلاً، مهلاً. عليكِ أن تدفعي ثمن إزعاجنا."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "OKAY, FINE.HERE, ONE GOLD. OFFERS",
+          "confidence": 0.932,
+          "text_ar": "حسناً، لا بأس. خذ، قطعة ذهبية واحدة. مد يد"
+        },
+        {
+          "text": "HO~SO SHE'SA GOLDEN PIG!",
+          "confidence": 0.906,
+          "text_ar": "أوه~ إذن فهي خنزيرة ذهبية!"
+        },
+        {
+          "text": "yOU THINK WE'RE IDIOTS? GIVE US THE WHOLE POUCH, AND WE'LL LET YOU GO.",
+          "confidence": 0.52,
+          "text_ar": "أتظنين أننا حمقى؟ أعطنا كيس النقود بأكمله، وسندعك تذهبين."
+        },
+        {
+          "text": "WHY SHOULD I?I CAN ONLY GIVE YOU ONE GOLD. IT'S ENOUGH TO REPAY YOUFOR INTERRUPTING.",
+          "confidence": 0.919,
+          "text_ar": "لماذا أفعلم؟ يمكنني إعطاؤكم قطعة ذهبية واحدة فقط. هذا يكفي لتعويضكم عن المقاطعة."
+        },
+        {
+          "text": "HA!I WENT EASY ON YOU SINCE YOU'RE INTERESTING.YOU SEEM CONFIDENT THAT ITWON'T GET STOLEN.",
+          "confidence": 0.927,
+          "text_ar": "ها! لقد تساهلت معك لأنك مثيرة للاهتمام. تبدين واثقة من أنه لن تتم سرقتها."
+        },
+        {
+          "text": "ANGRY",
+          "confidence": 0.973,
+          "text_ar": "غضب"
+        },
+        {
+          "text": "smirk CONFIDENT? SHE'S FAKING IT!",
+          "confidence": 0.864,
+          "text_ar": "ابتسامة خبيثة، واثقة؟ إنها تُمثّل فقط!"
+        },
+        {
+          "text": "YES,I'M CONFIDENT.",
+          "confidence": 0.967,
+          "text_ar": "نعم، أنا واثقة."
+        },
+        {
+          "text": "HA!WHY'S THAT?",
+          "confidence": 0.927,
+          "text_ar": "ها! ولماذا ذلك؟"
+        },
+        {
+          "text": "'CAUSE THIS!",
+          "confidence": 0.906,
+          "text_ar": "بسبب هذا!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "NOW! BERNARD!!",
+          "confidence": 0.956,
+          "text_ar": "الآن! يا برنارد!!"
+        },
+        {
+          "text": "SPUNCH 。 . CLANG!",
+          "confidence": 0.151,
+          "text_ar": "لكمات. . اصطدام!"
+        },
+        {
+          "text": "H7 PUNCH",
+          "confidence": 0.53,
+          "text_ar": "لكمة"
+        },
+        {
+          "text": "HIT E",
+          "confidence": 0.15,
+          "text_ar": "ضربة"
+        },
+        {
+          "text": "Ooooh...",
+          "confidence": 0.928,
+          "text_ar": "أوووه..."
+        },
+        {
+          "text": "SUCH POWER...",
+          "confidence": 0.926,
+          "text_ar": "يا له من قوة..."
+        },
+        {
+          "text": "-5 minutes later-",
+          "confidence": 0.963,
+          "text_ar": "-بعد 5 دقائق-"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "WO~W,JUST AS I'D EXPECT FROMMY KNIGHT.",
+          "confidence": 0.923,
+          "text_ar": "وا~او، تماماً كما توقعت من فارسي."
+        },
+        {
+          "text": "clap clap",
+          "confidence": 0.949,
+          "text_ar": "تصفيق تصفيق"
+        },
+        {
+          "text": "Well get you nex+ time-!!",
+          "confidence": 0.866,
+          "text_ar": "سنلقنكم درساً في المرة القادمة-!!"
+        },
+        {
+          "text": "DIDN'TI TELL YOU TO STAYSTILL? SHOUi",
+          "confidence": 0.747,
+          "text_ar": "ألم أخبرك بالبقاء في مكانك؟ صراخ"
+        },
+        {
+          "text": "WHAT WOULD YOU HAVE DONE IF I HAD SHOWN UP ANY LATER?",
+          "confidence": 0.921,
+          "text_ar": "ماذا كنت ستفعل لو ظهرت متأخراً أكثر من ذلك؟"
+        },
+        {
+          "text": "WELL... I WAS JUST LOOKING...IDIDN'T KNOWIT'DBREAK THAT EASILY.",
+          "confidence": 0.878,
+          "text_ar": "حسناً... كنت أنظر فقط... لم أكن أعلم أنه سينكسر بهذه السهولة."
+        },
+        {
+          "text": "AND YOU CAME RIGHT ON TIME, SO LET'S JUST GO, OKAY?",
+          "confidence": 0.928,
+          "text_ar": "وقد حضرت في الوقت المناسب تماماً، فلنذهب إذن، أليس كذلك؟"
+        },
+        {
+          "text": "WOAH WOAH",
+          "confidence": 0.977,
+          "text_ar": "مهلاً مهلاً"
+        },
+        {
+          "text": "HAA... HONESTLY,I CAN'T TELLIF YOU'RE FEARLESS OR JUST RECKLESS.IF YOU WERE ABDUCTED BEFORE I CAME BACK...",
+          "confidence": 0.804,
+          "text_ar": "هاه... بصراحة، لا يمكنني معرفة ما إذا كنت شجاعة أم طائشة حقاً. لو تم اختطافك قبل أن أعود..."
+        },
+        {
+          "text": "..WELL, IT'S JUST AN APPROXIMATION, BUT WHENYOUR IRRITABLEBOWEL SYNDROME FLARES UP, BLAH IT'LL USUALLY BLAH LEAD TO DIARRHEA THAT LASTS AROUND 15 MINUTES. BLAH KEEPING BLAH THAT IN MIND,I KNEW ROUGHLY WHENYOU'D SHOWUP.",
+          "confidence": 0.893,
+          "text_ar": "...حسنًا، إنه مجرد تقريب، ولكن عندما تشتد متلازمة القولون العصبي لديك، عادةً ما يؤدي ذلك إلى إسهال يستمر حوالي 15 دقيقة. مع وضع ذلك في الاعتبار، كنت أعرف تقريبًا متى ستظهرين."
+        },
+        {
+          "text": "Ha...Let'ss+op discussing this..",
+          "confidence": 0.796,
+          "text_ar": "هاه... لنتوقف عن مناقشة هذا.."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "UM...I WASINA HURRY BEFORE. NOT TO MENTION MY BODYIS A HANDFUL,SO AHAHA...",
+          "confidence": 0.805,
+          "text_ar": "أم... كنت في عجلة من أمري قبل قليل. ناهيك عن أن جسدي متعب، لذا هاهاها..."
+        },
+        {
+          "text": "..HAHA...IT SEEMS THAT YOU'RE INJURED, AND WITHTHE WAYI ACTED BEFORE...HOW ABOUTI PAY FOR YOUR TREATMENT?",
+          "confidence": 0.801,
+          "text_ar": "..هاها... يبدو أنك مصاب، ومع الطريقة التي تصرفت بها قبل قليل... ما رأيك أن أدفع تكاليف علاجك؟"
+        },
+        {
+          "text": "umm",
+          "confidence": 0.782,
+          "text_ar": "أم"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "BERNARD, GIVE THIS TO HIM.",
+          "confidence": 0.959,
+          "text_ar": "يا برنارد، أعطه هذا."
+        },
+        {
+          "text": "PFT!",
+          "confidence": 0.98,
+          "text_ar": "بفف!"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "RI S",
+          "confidence": 0.492,
+          "text_ar": "نهوض"
+        },
+        {
+          "text": "WH-WHAT?! YOU'RE PERFECTLY FINE!",
+          "confidence": 0.965,
+          "text_ar": "م-ماذا؟! أنت بخير تماماً!"
+        },
+        {
+          "text": ".WHATIFI TOLD YOU THAT EVEN1OOGOLD WOULDNTBE ENOUGH?",
+          "confidence": 0.947,
+          "text_ar": ".ماذا لو قلت لك إن حتى 100 قطعة ذهبية لن تكفي؟"
+        },
+        {
+          "text": "KENAZ webtoon IPholder",
+          "confidence": 0.969,
+          "text_ar": "مالك حقوق مانهوا كيناز"
+        },
+        {
+          "text": "NU 0yNMe（）",
+          "confidence": 0.469,
+          "text_ar": "حقوق النشر"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "Hello, it's Belle#2 (again)!",
+          "confidence": 0.89,
+          "text_ar": "مرحباً، هذه بيل رقم 2 (مجدداً)!"
+        },
+        {
+          "text": "Last month was quite a busy month for me so our releases area lilbitslow,pleaseforgiveme;w;butnow Iwill trying to be more active,so uh..We're BACK!",
+          "confidence": 0.91,
+          "text_ar": "الشهر الماضي كان مزدحماً جداً بالنسبة لي لذا كانت إصداراتنا بطيئة بعض الشيء، يرجى مسامحتي؛و؛ ولكن الآن سأحاول أن أكون أكثر نشاطاً، لذا أم.. لقد عُدنا!"
+        },
+        {
+          "text": "And also, I'm happily introducing our new family who will mainly helping us to do this series~ Please welcome Belle#10, Belle#12 and Bell#33!",
+          "confidence": 0.902,
+          "text_ar": "وأيضاً، يسرني أن أقدم عائلتنا الجديدة التي ستساعدنا بشكل أساسي في هذا العمل~ يرجى الترحيب بـ بيل رقم 10، وبيل رقم 12، وبيل رقم 33!"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "BELL'SSCANS present I'll Save This Damn Family!-chapter5 Raw Provider:ManhwaKingdom×PEACHY Translator：Bell#333 Proofreader：Belle#10 Cleaner/Redrawer：Belle#12 Typesetter：Belle#2 Qualfity Checker：Belle#10",
+          "confidence": 0.868,
+          "text_ar": "فريق بيل سكانز يقدم: سأنقذ هذه العائلة اللعينة! - الفصل 5، مصدر الخام: مانهوا كينغدوم × بيتشي، المترجم: بيل رقم 33، المدقق اللغوي: بيل رقم 10، المنظف/المعدل: بيل رقم 12، مصفف النصوص: بيل رقم 2، فاحص الجودة: بيل رقم 10"
+        },
+        {
+          "text": "like& Follow us on Mangadex!",
+          "confidence": 0.929,
+          "text_ar": "أعجب بنا وتابعنا على مانغا ديكس!"
+        }
+      ]
+    }
+  ]
+}
