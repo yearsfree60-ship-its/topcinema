@@ -187357,6 +187357,23 @@
           ],
           "originalBytes": 26990564,
           "compressedBytes": 2636180
+        },
+        {
+          "label": "الفصل 200",
+          "num": "200",
+          "chNum": 200.0,
+          "sourceUrl": "https://starzmanga.com/manga/mookhyang-dark-lady/200/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-200/007.webp"
+          ],
+          "originalBytes": 12652464,
+          "compressedBytes": 3018988
         }
       ]
     }
