@@ -188111,6 +188111,23 @@
           ],
           "originalBytes": 10063778,
           "compressedBytes": 2222986
+        },
+        {
+          "label": "الفصل 234",
+          "num": "234",
+          "chNum": 234.0,
+          "sourceUrl": "https://starzmanga.com/manga/mookhyang-dark-lady/234/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-234/007.webp"
+          ],
+          "originalBytes": 10383884,
+          "compressedBytes": 2370466
         }
       ]
     }
