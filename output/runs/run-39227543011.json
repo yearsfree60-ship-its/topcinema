@@ -3783,6 +3783,25 @@
           ],
           "originalBytes": 28245566,
           "compressedBytes": 3314384
+        },
+        {
+          "label": "الفصل 108",
+          "num": "108",
+          "chNum": 108.0,
+          "sourceUrl": "https://starzmanga.com/manga/mookhyang-dark-lady/108/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-108/009.webp"
+          ],
+          "originalBytes": 28457665,
+          "compressedBytes": 3622806
         }
       ]
     }
