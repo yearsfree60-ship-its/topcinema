@@ -198603,6 +198603,29 @@
           ]
         }
       ]
+    },
+    "azorafly.com__the-villain-discovered-my-identity": {
+      "name": "the villain discovered my identity",
+      "chapters": [
+        {
+          "label": "الفصل 15",
+          "num": "15",
+          "chNum": 15.0,
+          "sourceUrl": "https://azorafly.com/series/the-villain-discovered-my-identity/chapter-15",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/azorafly.com__the-villain-discovered-my-identity/ch-15/008.webp"
+          ],
+          "originalBytes": 9433985,
+          "compressedBytes": 1254240
+        }
+      ]
     }
   }
 }
