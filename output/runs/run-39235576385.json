@@ -233,6 +233,21 @@
           ],
           "originalBytes": 12861867,
           "compressedBytes": 1525558
+        },
+        {
+          "label": "الفصل 17",
+          "num": "17",
+          "chNum": 17.0,
+          "sourceUrl": "https://starzmanga.com/manga/high-society/17/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-17/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-17/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-17/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-17/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-17/005.webp"
+          ],
+          "originalBytes": 11060793,
+          "compressedBytes": 1239168
         }
       ]
     }
