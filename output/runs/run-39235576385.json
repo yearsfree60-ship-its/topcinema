@@ -218,6 +218,21 @@
           ],
           "originalBytes": 12189689,
           "compressedBytes": 1402844
+        },
+        {
+          "label": "الفصل 15",
+          "num": "15",
+          "chNum": 15.0,
+          "sourceUrl": "https://starzmanga.com/manga/high-society/15/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-15/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-15/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-15/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-15/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__high-society/ch-15/005.webp"
+          ],
+          "originalBytes": 12861867,
+          "compressedBytes": 1525558
         }
       ]
     }
