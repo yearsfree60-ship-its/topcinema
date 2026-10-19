@@ -3254,6 +3254,25 @@
           ],
           "originalBytes": 24672346,
           "compressedBytes": 3083366
+        },
+        {
+          "label": "الفصل 81",
+          "num": "81",
+          "chNum": 81.0,
+          "sourceUrl": "https://starzmanga.com/manga/mookhyang-dark-lady/81/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__mookhyang-dark-lady/ch-81/009.webp"
+          ],
+          "originalBytes": 6245217,
+          "compressedBytes": 3158880
         }
       ]
     }
