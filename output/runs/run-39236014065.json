@@ -324,6 +324,59 @@
           ],
           "originalBytes": 11089917,
           "compressedBytes": 1364768
+        },
+        {
+          "label": "الفصل 24",
+          "num": "24",
+          "chNum": 24.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-villain-discovered-my-identity/24/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-24/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-24/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-24/003.webp"
+          ],
+          "originalBytes": 5189628,
+          "compressedBytes": 623376
+        },
+        {
+          "label": "الفصل 25",
+          "num": "25",
+          "chNum": 25.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-villain-discovered-my-identity/25/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-25/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-25/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-25/003.webp"
+          ],
+          "originalBytes": 7440906,
+          "compressedBytes": 741732
+        },
+        {
+          "label": "الفصل 26",
+          "num": "26",
+          "chNum": 26.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-villain-discovered-my-identity/26/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-26/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-26/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-26/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-26/004.webp"
+          ],
+          "originalBytes": 1542676,
+          "compressedBytes": 674810
+        },
+        {
+          "label": "الفصل 27",
+          "num": "27",
+          "chNum": 27.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-villain-discovered-my-identity/27/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-27/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-27/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-27/003.webp"
+          ],
+          "originalBytes": 7256004,
+          "compressedBytes": 780212
         }
       ]
     }
