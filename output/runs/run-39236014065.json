@@ -432,6 +432,21 @@
           ],
           "originalBytes": 14999101,
           "compressedBytes": 593086
+        },
+        {
+          "label": "الفصل 32",
+          "num": "32",
+          "chNum": 32.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-villain-discovered-my-identity/32/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-32/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-32/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-32/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-32/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-villain-discovered-my-identity/ch-32/005.webp"
+          ],
+          "originalBytes": 4872128,
+          "compressedBytes": 336702
         }
       ]
     }
