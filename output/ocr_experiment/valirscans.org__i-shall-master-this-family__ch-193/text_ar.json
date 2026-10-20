@@ -1,0 +1,269 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "193",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YOUR MAJESTY!",
+          "confidence": 0.955,
+          "text_ar": "جلالة الملك!"
+        },
+        {
+          "text": "TH-THAT WASN'T DISCUSSED AT ALL...",
+          "confidence": 0.774,
+          "text_ar": "ل-لم يُناقش هذا الأمر على الإطلاق..."
+        },
+        {
+          "text": "CCOD",
+          "confidence": 0.784,
+          "text_ar": "سعال"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT WOULD BE OUR GREAT HONOR TO HAVE YOU PARTICIPATE,YOUR MAJESTY.",
+          "confidence": 0.768,
+          "text_ar": "سيكون شرفاً عظيماً لنا مشاركتكم يا جلالة الملك."
+        },
+        {
+          "text": "HOWEVER, CONSIDERING THE POTENTIAL DANGER,",
+          "confidence": 0.979,
+          "text_ar": "مع ذلك، نظراً للخطر المحتمل،"
+        },
+        {
+          "text": "MAY I SUGGEST PARTICIPATING ON THE FINAL DAY AFTER THE HUNT HAS PROGRESSED, YOUR MAJESTY?",
+          "confidence": 0.871,
+          "text_ar": "هل لي أن أقترح المشاركة في اليوم الأخير بعد أن يتقدم الصيد يا جلالة الملك؟"
+        },
+        {
+          "text": "I SHALL PREPARE AN ARmOR FOR you AS WELL.",
+          "confidence": 0.785,
+          "text_ar": "سأجهز درعاً لك أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "HAHAHA",
+          "confidence": 0.992,
+          "text_ar": "هاهاها"
+        },
+        {
+          "text": "YES, YOU'RE THE ONLY ONE WHO TRULY CARES FOR ME, LADY FIRENTIA!",
+          "confidence": 0.881,
+          "text_ar": "نعم، أنتِ الوحيدة التي تهتم حقاً لأمري، الآنسة فيرينتيا!"
+        },
+        {
+          "text": "I'LL Do AS yoU SAY.",
+          "confidence": 0.74,
+          "text_ar": "سأفعل ما تقولين."
+        },
+        {
+          "text": "YoUR MAJESTY..!",
+          "confidence": 0.795,
+          "text_ar": "جلالة الملك..!"
+        },
+        {
+          "text": "WE'VE ALSO PREPARED PLENTY OF ENTERTAINMENT FOR THOSE WHO ARE NOT TAkING PART IN THE HUNT.",
+          "confidence": 0.822,
+          "text_ar": "لقد أعددنا أيضاً الكثير من وسائل الترفيه لأولئك الذين لن يشاركوا في الصيد."
+        },
+        {
+          "text": "I TRULY HOPE YOU ENJOY yOuR TIME aT THE LOMBARDI ESTATE.",
+          "confidence": 0.777,
+          "text_ar": "أتمنى حقاً أن تستمتعوا بوقتكم في إقطاعية لومباردي."
+        },
+        {
+          "text": "SHF",
+          "confidence": 0.833,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "WELL THEN, SHALL WE HEAD INSIDE?",
+          "confidence": 0.867,
+          "text_ar": "حسناً إذن، هل نتجه إلى الداخل؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THE TIME HAS FINALLY COME.",
+          "confidence": 0.94,
+          "text_ar": "لقد حان الوقت أخيراً."
+        },
+        {
+          "text": "ENJOY IT WHILE YOU CAN.",
+          "confidence": 0.974,
+          "text_ar": "استمتع بها بينما يمكنك ذلك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER GTHIs FAMILY",
+          "confidence": 0.789,
+          "text_ar": "سأُهيمن على هذه العائلة."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HAHAHA!",
+          "confidence": 0.857,
+          "text_ar": "هاهاها!"
+        },
+        {
+          "text": "FWIK FWIK 小",
+          "confidence": 0.253,
+          "text_ar": "صوت سكب"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "NICE, KEEP GOING..",
+          "confidence": 0.906,
+          "text_ar": "رائع، استمر..."
+        },
+        {
+          "text": "YOU'RE DOWNING IT WELL, ASTANA.",
+          "confidence": 0.946,
+          "text_ar": "أنت تحتسيه جيداً يا أستانا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THAT ASIDE...",
+          "confidence": 0.918,
+          "text_ar": "بغض النظر عن ذلك..."
+        },
+        {
+          "text": "IT'S JUST AS I THOUGHT.",
+          "confidence": 0.944,
+          "text_ar": "الأمر كما ظننت تماماً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "AS THEY FOLLOW ASTANA, THE IMPERIAL KNIGHTS ARE KEEPING Δ CLOSE EYe ON THE LOMBARDI KNIGHTS.",
+          "confidence": 0.793,
+          "text_ar": "بينما يتبعون أستانا، يراقب فرسان الإمبراطورية فرسان لومباردي عن كثب."
+        },
+        {
+          "text": "THE IMPERIAL KNIGHTS AND THE LOMBARDI KNIGHTS HAVE A KIND OF RIVALRY BETWEEN THEM.",
+          "confidence": 0.952,
+          "text_ar": "توجد نوع من المنافسة بين فرسان الإمبراطورية وفرسان لومباردي."
+        },
+        {
+          "text": "CLUNK CLUNK",
+          "confidence": 0.859,
+          "text_ar": "صوت قرع"
+        },
+        {
+          "text": "NO ORDINARY NOBLE HOUSE",
+          "confidence": 0.959,
+          "text_ar": "ما من منزل نبيل عادي"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "COULD MATCH THE IMPERIAL KNIGHTS IN SCALE,",
+          "confidence": 0.939,
+          "text_ar": "يستطيع مجاراة فرسان الإمبراطورية من حيث الحجم،"
+        },
+        {
+          "text": "AND YET THEIR STRENGTH HAD BEEN STEADILY DECLINING.",
+          "confidence": 0.891,
+          "text_ar": "ومع ذلك كانت قوتهم في تراجع مستمر."
+        },
+        {
+          "text": "SOME WHISPERED THAT THE IMPERIAL DECLINE KNIGHTS' BEGAN",
+          "confidence": 0.877,
+          "text_ar": "همس البعض أن تراجع فرسان الإمبراطورية بدأ"
+        },
+        {
+          "text": "THE MOMENT HOUSE BROWN WAS CAST OUT.",
+          "confidence": 0.896,
+          "text_ar": "من اللحظة التي طُرد فيها آل براون."
+        },
+        {
+          "text": "I'M SURE THERE WERE OTHER REASONS TOO...",
+          "confidence": 0.914,
+          "text_ar": "أنا متأكدة من وجود أسباب أخرى أيضاً..."
+        },
+        {
+          "text": "..BUT NO ONE DISAGREED THAT THE IMPERIAL KNIGHTS ARE FaCiNG An UNPRECEDENTED CRISIS.",
+          "confidence": 0.737,
+          "text_ar": "..لكن أحداً لم يُخالف حقيقة أن فرسان الإمبراطورية يواجهون أزمة غير مسبوقة."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THAT'S WHY EVERYONE'S ON EDGE.",
+          "confidence": 0.974,
+          "text_ar": "لهذا السبب الجميع على أعصابهم."
+        },
+        {
+          "text": "IT'S ONLY NATURAL THAT ANYONE WHO WIELDS A SWORD DESIRES TO BE STRONGER.",
+          "confidence": 0.934,
+          "text_ar": "من الطبيعي تماماً أن يرغب أي شخص يلوح بالسيف في أن يصبح أقوى."
+        },
+        {
+          "text": "TIA.",
+          "confidence": 0.978,
+          "text_ar": "تيا."
+        },
+        {
+          "text": "YOU'RE HERE!",
+          "confidence": 0.958,
+          "text_ar": "أنتِ هنا!"
+        },
+        {
+          "text": "# THAT OUTFIT ReALLy SuIts YOu, PEREZ.",
+          "confidence": 0.505,
+          "text_ar": "هذا الزي يليق بك حقاً يا بيريز."
+        }
+      ]
+    }
+  ]
+}

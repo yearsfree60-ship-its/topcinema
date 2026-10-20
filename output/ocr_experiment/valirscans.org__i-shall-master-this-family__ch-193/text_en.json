@@ -1,0 +1,257 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "193",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/193",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-193",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. YOUR MAJESTY!\n001-2. TH-THAT WASN'T DISCUSSED AT ALL...\n001-3. CCOD\n\nPage 002\n002-1. IT WOULD BE OUR GREAT HONOR TO HAVE YOU PARTICIPATE,YOUR MAJESTY.\n002-2. HOWEVER, CONSIDERING THE POTENTIAL DANGER,\n002-3. MAY I SUGGEST PARTICIPATING ON THE FINAL DAY AFTER THE HUNT HAS PROGRESSED, YOUR MAJESTY?\n002-4. I SHALL PREPARE AN ARmOR FOR you AS WELL.\n\nPage 003\n003-1. HAHAHA\n003-2. YES, YOU'RE THE ONLY ONE WHO TRULY CARES FOR ME, LADY FIRENTIA!\n003-3. I'LL Do AS yoU SAY.\n003-4. YoUR MAJESTY..!\n003-5. WE'VE ALSO PREPARED PLENTY OF ENTERTAINMENT FOR THOSE WHO ARE NOT TAkING PART IN THE HUNT.\n003-6. I TRULY HOPE YOU ENJOY yOuR TIME aT THE LOMBARDI ESTATE.\n003-7. SHF\n003-8. WELL THEN, SHALL WE HEAD INSIDE?\n\nPage 004\n004-1. THE TIME HAS FINALLY COME.\n004-2. ENJOY IT WHILE YOU CAN.\n\nPage 005\n005-1. I SHkLL MASTER GTHIs FAMILY\n\nPage 006\n006-1. HAHAHA!\n006-2. FWIK FWIK 小\n\nPage 007\n007-1. NICE, KEEP GOING..\n007-2. YOU'RE DOWNING IT WELL, ASTANA.\n\nPage 008\n008-1. THAT ASIDE...\n008-2. IT'S JUST AS I THOUGHT.\n\nPage 009\n009-1. AS THEY FOLLOW ASTANA, THE IMPERIAL KNIGHTS ARE KEEPING Δ CLOSE EYe ON THE LOMBARDI KNIGHTS.\n009-2. THE IMPERIAL KNIGHTS AND THE LOMBARDI KNIGHTS HAVE A KIND OF RIVALRY BETWEEN THEM.\n009-3. CLUNK CLUNK\n009-4. NO ORDINARY NOBLE HOUSE\n\nPage 010\n010-1. COULD MATCH THE IMPERIAL KNIGHTS IN SCALE,\n010-2. AND YET THEIR STRENGTH HAD BEEN STEADILY DECLINING.\n010-3. SOME WHISPERED THAT THE IMPERIAL DECLINE KNIGHTS' BEGAN\n010-4. THE MOMENT HOUSE BROWN WAS CAST OUT.\n010-5. I'M SURE THERE WERE OTHER REASONS TOO...\n010-6. ..BUT NO ONE DISAGREED THAT THE IMPERIAL KNIGHTS ARE FaCiNG An UNPRECEDENTED CRISIS.\n\nPage 011\n011-1. THAT'S WHY EVERYONE'S ON EDGE.\n011-2. IT'S ONLY NATURAL THAT ANYONE WHO WIELDS A SWORD DESIRES TO BE STRONGER.\n011-3. TIA.\n011-4. YOU'RE HERE!\n011-5. # THAT OUTFIT ReALLy SuIts YOu, PEREZ.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YOUR MAJESTY!",
+          "confidence": 0.955
+        },
+        {
+          "text": "TH-THAT WASN'T DISCUSSED AT ALL...",
+          "confidence": 0.774
+        },
+        {
+          "text": "CCOD",
+          "confidence": 0.784
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT WOULD BE OUR GREAT HONOR TO HAVE YOU PARTICIPATE,YOUR MAJESTY.",
+          "confidence": 0.768
+        },
+        {
+          "text": "HOWEVER, CONSIDERING THE POTENTIAL DANGER,",
+          "confidence": 0.979
+        },
+        {
+          "text": "MAY I SUGGEST PARTICIPATING ON THE FINAL DAY AFTER THE HUNT HAS PROGRESSED, YOUR MAJESTY?",
+          "confidence": 0.871
+        },
+        {
+          "text": "I SHALL PREPARE AN ARmOR FOR you AS WELL.",
+          "confidence": 0.785
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "HAHAHA",
+          "confidence": 0.992
+        },
+        {
+          "text": "YES, YOU'RE THE ONLY ONE WHO TRULY CARES FOR ME, LADY FIRENTIA!",
+          "confidence": 0.881
+        },
+        {
+          "text": "I'LL Do AS yoU SAY.",
+          "confidence": 0.74
+        },
+        {
+          "text": "YoUR MAJESTY..!",
+          "confidence": 0.795
+        },
+        {
+          "text": "WE'VE ALSO PREPARED PLENTY OF ENTERTAINMENT FOR THOSE WHO ARE NOT TAkING PART IN THE HUNT.",
+          "confidence": 0.822
+        },
+        {
+          "text": "I TRULY HOPE YOU ENJOY yOuR TIME aT THE LOMBARDI ESTATE.",
+          "confidence": 0.777
+        },
+        {
+          "text": "SHF",
+          "confidence": 0.833
+        },
+        {
+          "text": "WELL THEN, SHALL WE HEAD INSIDE?",
+          "confidence": 0.867
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THE TIME HAS FINALLY COME.",
+          "confidence": 0.94
+        },
+        {
+          "text": "ENJOY IT WHILE YOU CAN.",
+          "confidence": 0.974
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER GTHIs FAMILY",
+          "confidence": 0.789
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HAHAHA!",
+          "confidence": 0.857
+        },
+        {
+          "text": "FWIK FWIK 小",
+          "confidence": 0.253
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "NICE, KEEP GOING..",
+          "confidence": 0.906
+        },
+        {
+          "text": "YOU'RE DOWNING IT WELL, ASTANA.",
+          "confidence": 0.946
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THAT ASIDE...",
+          "confidence": 0.918
+        },
+        {
+          "text": "IT'S JUST AS I THOUGHT.",
+          "confidence": 0.944
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "AS THEY FOLLOW ASTANA, THE IMPERIAL KNIGHTS ARE KEEPING Δ CLOSE EYe ON THE LOMBARDI KNIGHTS.",
+          "confidence": 0.793
+        },
+        {
+          "text": "THE IMPERIAL KNIGHTS AND THE LOMBARDI KNIGHTS HAVE A KIND OF RIVALRY BETWEEN THEM.",
+          "confidence": 0.952
+        },
+        {
+          "text": "CLUNK CLUNK",
+          "confidence": 0.859
+        },
+        {
+          "text": "NO ORDINARY NOBLE HOUSE",
+          "confidence": 0.959
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "COULD MATCH THE IMPERIAL KNIGHTS IN SCALE,",
+          "confidence": 0.939
+        },
+        {
+          "text": "AND YET THEIR STRENGTH HAD BEEN STEADILY DECLINING.",
+          "confidence": 0.891
+        },
+        {
+          "text": "SOME WHISPERED THAT THE IMPERIAL DECLINE KNIGHTS' BEGAN",
+          "confidence": 0.877
+        },
+        {
+          "text": "THE MOMENT HOUSE BROWN WAS CAST OUT.",
+          "confidence": 0.896
+        },
+        {
+          "text": "I'M SURE THERE WERE OTHER REASONS TOO...",
+          "confidence": 0.914
+        },
+        {
+          "text": "..BUT NO ONE DISAGREED THAT THE IMPERIAL KNIGHTS ARE FaCiNG An UNPRECEDENTED CRISIS.",
+          "confidence": 0.737
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THAT'S WHY EVERYONE'S ON EDGE.",
+          "confidence": 0.974
+        },
+        {
+          "text": "IT'S ONLY NATURAL THAT ANYONE WHO WIELDS A SWORD DESIRES TO BE STRONGER.",
+          "confidence": 0.934
+        },
+        {
+          "text": "TIA.",
+          "confidence": 0.978
+        },
+        {
+          "text": "YOU'RE HERE!",
+          "confidence": 0.958
+        },
+        {
+          "text": "# THAT OUTFIT ReALLy SuIts YOu, PEREZ.",
+          "confidence": 0.505
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-193/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-193/011.webp"
+  ]
+}
