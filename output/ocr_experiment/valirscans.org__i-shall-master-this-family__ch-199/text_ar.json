@@ -1,0 +1,264 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "199",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THE THIRD AND FINaL DAy OF THE HUNTING TOURNAMENT",
+          "confidence": 0.682,
+          "text_ar": "اليوم الثالث والأخير من بطولة الصيد"
+        },
+        {
+          "text": "DIE!",
+          "confidence": 0.981,
+          "text_ar": "مت!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "DIE!",
+          "confidence": 0.988,
+          "text_ar": "مت!"
+        },
+        {
+          "text": "HAHA HAHA HAHA!",
+          "confidence": 0.784,
+          "text_ar": "هاهاها هاهاها هاهاها!"
+        },
+        {
+          "text": "DIE!",
+          "confidence": 0.987,
+          "text_ar": "مت!"
+        },
+        {
+          "text": "SHLK FIDGET FIDGET",
+          "confidence": 0.809,
+          "text_ar": "صوت حفيف وتملّص"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "YOUR HIGHNESS...",
+          "confidence": 0.975,
+          "text_ar": "سموك..."
+        },
+        {
+          "text": "HEY, SHOULDN'T WE TRy TO STOP HIS HIGHNESS...?",
+          "confidence": 0.864,
+          "text_ar": "أيها الأحمق، ألا ينبغي لنا محاولة إيقاف سموه...؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "IS EVERYONE GONE...?",
+          "confidence": 0.777,
+          "text_ar": "أهل ذهب الجميع...؟"
+        },
+        {
+          "text": "THE GREATER THE DANGER, THE GREATER YOUR OPPORTUNITY. DO YOU UNDERSTAND, BELLEZAC?",
+          "confidence": 0.929,
+          "text_ar": "كلما زاد الخطر، زادت فرصتك. أتفهم ذلك يا بيليزاك؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YES, THIS MIGHT BE Δ GOOD THING.",
+          "confidence": 0.917,
+          "text_ar": "نعم، قد يكون هذا أمراً جيداً."
+        },
+        {
+          "text": "EVERYONE ELSE RaN aWaY, BUT I'M STILL HERE, PROTECTING THE PRINCE BY HIS SIDE,",
+          "confidence": 0.692,
+          "text_ar": "هذا وفد فر هارباً، لكني ما زلت هنا، أحمي الأمير بجانبه،"
+        },
+        {
+          "text": "IF THIS ISN'T TRUE LOYALTY, THEN WHAT IS?",
+          "confidence": 0.923,
+          "text_ar": "إن لم تكن هذه هي الولاء الحقيقي، فما هو إذن؟"
+        },
+        {
+          "text": "\"REMEMBER, BELLEZAC.. IT'S YOUR FINAL CHANCE TO RECLAIm YOUR POSITION AS ONE OF HIS CLOSEST AIDES.\"",
+          "confidence": 0.797,
+          "text_ar": "تذكر يا بيليزاك.. إنها فرصتك الأخيرة لاستعادة مكانتك كأحد أقرب مساعديه."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "You FOOL! WHAT ARE YOU STANDING ARouND FoR?",
+          "confidence": 0.676,
+          "text_ar": "أيها الأحمق! ماذا تفعل واقفاً هكذا؟"
+        },
+        {
+          "text": "BRING ME THAT CANTEEN NOW!",
+          "confidence": 0.978,
+          "text_ar": "أضرمني بوعاء الماء ذاك الآن!"
+        },
+        {
+          "text": "YES, YOUR HIGHNESS!",
+          "confidence": 0.858,
+          "text_ar": "حاضراً، سمو الأمير!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HERE IT IS!",
+          "confidence": 0.934,
+          "text_ar": "ها هو ذا!"
+        },
+        {
+          "text": "I SHkLL MASTER THIS FAMILY",
+          "confidence": 0.803,
+          "text_ar": "سأُخضع هذه العائلة"
+        },
+        {
+          "text": "CCSD",
+          "confidence": 0.404,
+          "text_ar": "صوت تحطيم"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HMM",
+          "confidence": 0.987,
+          "text_ar": "همم"
+        },
+        {
+          "text": "YES, THIS IS QuITE NICE. IT FEELS TAILOR- MADE FOR mE.",
+          "confidence": 0.805,
+          "text_ar": "نعم، هذا رائع للغاية. أشعر وكأنه صُنِع خصيصاً لي."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IT SUITS YOu BEAuTIFULLY, YOUR MAJESTY!",
+          "confidence": 0.762,
+          "text_ar": "يليق بك تماماً، جلالة الإمبراطور!"
+        },
+        {
+          "text": "FOR YOUR SAFETY, WE PURPOSELY CHOSE A BRIGHT AND CONSPICUOUS ARMOR.",
+          "confidence": 0.876,
+          "text_ar": "حرصاً على سلامتك، اخترنا عمداً درعاً لامعاً وبارزاً."
+        },
+        {
+          "text": "YES, INDEED! I BET I COULD BE SPOTTED IN THE MIDDLE OF THE FOREST WITH THIS ON!",
+          "confidence": 0.91,
+          "text_ar": "نعم، حقاً! أراهن أنه يمكن رؤيتي في وسط الغابة بهذا الدرع!"
+        },
+        {
+          "text": "YOUR SAFETY IS OUR PRIORITY, YOUR MAJESTY.",
+          "confidence": 0.914,
+          "text_ar": "سلامتك هي أولويتنا القصوى، جلالتك."
+        },
+        {
+          "text": "HAHAHA! WHAT A CHARMING WAY YOU HAVE 11T1",
+          "confidence": 0.321,
+          "text_ar": "هاهاها! كم أنت ساحر في كلامك!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "WITHWORDS!",
+          "confidence": 0.936,
+          "text_ar": "بالكلمات!"
+        },
+        {
+          "text": "ARE ALL THE KNIGHTS READY?",
+          "confidence": 0.95,
+          "text_ar": "هل الفرسان كلهم مستعدون؟"
+        },
+        {
+          "text": "YES, YOUR MAJESTY. INCLUDING MYSELF AS THE CommaNDeR, Δ TOTaL Of Ten KNIGHTS WILL ACCOMPANY you.",
+          "confidence": 0.662,
+          "text_ar": "نعم، جلالتك. بما في ذلك نفسي بصفتي القائد، سيرافقك ما مجموعه عشرة فرسان."
+        },
+        {
+          "text": "SHF IF IT'S NOT TOO MuCH TROUBLE, MAY I JoIN You, YouR JOIN YOU,YOUR MAJESTY?",
+          "confidence": 0.764,
+          "text_ar": "إن لم يكن في ذلك إزعاج كبير، هل يمكنني مرافقَتُك، جلالتك؟"
+        },
+        {
+          "text": "HM? You, FIRENTIA?",
+          "confidence": 0.749,
+          "text_ar": "هم؟ أنتِ، فيرينتيا؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "YES. IT'S THE FINAL DAY OF THE TOURNAMENT,",
+          "confidence": 0.912,
+          "text_ar": "نعم. إنه اليوم الأخير من البطولة،"
+        },
+        {
+          "text": "AND I'VE NEVER HAD THE CHANCE To GO INTO THE FOREST YET.",
+          "confidence": 0.81,
+          "text_ar": "ولم تتاح لي الفرصة لدخول الغابة بعد."
+        },
+        {
+          "text": "DON'T YOU THINK IT'S TOO DANGEROUS FOR A YOuNG LADY TO Go IN?",
+          "confidence": 0.726,
+          "text_ar": "ألا ترين أن الأمر خطير للغاية على فتاة صغرى لدخولها؟"
+        },
+        {
+          "text": "HOW COULD IT BE DaNGeRoUS, YOUR MAJESTY?",
+          "confidence": 0.789,
+          "text_ar": "كيف يكون خطيراً، جلالتك؟"
+        },
+        {
+          "text": "WITH OUR MIGHTY EMPEROR AND THE NOBLE KNIGHTS OF THE IMPERIAL PaLaCe AT My SIDE,",
+          "confidence": 0.771,
+          "text_ar": "مع إمبراطورنا العظيم وفرسان القصر الإمبراطور النبلاء بجانبي،"
+        },
+        {
+          "text": "WHERE IN THE EMPIRE COULD BE SAFER?",
+          "confidence": 0.974,
+          "text_ar": "أين في الإامبراطورية يمكن أن يوجد مكان أكثر أماناً؟"
+        }
+      ]
+    }
+  ]
+}
