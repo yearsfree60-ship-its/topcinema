@@ -1,0 +1,273 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "203",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/203",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-203",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. GRANDPA!\n\nPage 002\n002-1. GRANDPA!!!\n002-2. HOW DID HOWDID THIS HAPPEN, ESTIRA?\n002-3. PLEASE\n\nPage 003\n003-1. DON'T WORRY TOO MUCH, MY LADY.\n003-2. HIS GRACE WILL REGAIN CONSCIOUSNESS SOON ENOUGH. HE'LL BE FINE.\n003-3. HAS GRANDPA'S CONDITION GOTTEN THAT BAD?\n003-4. WHY DIDN'T YOu SAY ANYTHI-?\n003-5. TIA...\n\nPage 004\n004-1. GRANDPA!\n004-2. WHSH NO, DON'T GET UP YET. YOU NEED TO STAY IN BED.\n004-3. DON'T BE TOO HARD ON ESTIRA. I TOLD HER NOT To TELL ANYONE.\n004-4. IT'S ALL BECAUSE OF AGE, ISN'T IT?\n004-5. EVEN THE FINEST MEDICINE CAN'T FOOL THE PASSAGE OF TIME.\n\nPage 005\n005-1. SMILE\n005-2. GRANDPA..!\n005-3. HE'S RIGHT.\n005-4. IN THE PREVIOUS LIFE, GRANDPA STARTED TO BE ILL AROUND THIS TIME TOO.\n005-5. I'M SORRy, ESTIRa. I MISSPOKE.\n005-6. NOT AT ALL, MY\n\nPage 006\n006-1. LADY. I'M SURE YOu WERE TAKEN ABACK TOO.\n006-2. I THINK I WAS JUST ESPECIALLY TODAY. DO I TIRED NEED TO TAKE MY MEDICATION MORE OFTEN?\n006-3. IT'D BE BEST FOR YOu TO REST FOR A FEW DAYS AND SEE HOW YOU FARE, YOUR GRACE.\n006-4. HMM... VERY WELL.\n006-5. THIS IS QUITE THE PREDICAMENT.\n006-6. THERE'S NOTHING TO WORRY ABOuT, GRANDPA. YoU MUST REST UP NO\n\nPage 007\n007-1. MATTER WHAT!\n007-2. BUT SOMEONE STILL NEEDS TO ATTEND THE ARISTOCRaTIC COUNCIL AND SEE TO IT THAT HOUSE BROWN IS RESTORED.\n007-3. WHY SHOULD YOU WORRY ABOUT THAT?\n007-4. PEREZ WILL TAKE CARE OF IT.\n007-5. HMM ALL RIGHT.\n007-6. you SHOULD GO.\n\nPage 008\n008-1. TIA.\n008-2. WHAT...? WHAT..?\n008-3. you SHOULD ATTEND THE ARISTOCRATIC CoUNCIL IN MY PLACE.\n\nPage 009\n009-1. BUT GRANDPA, THAT'S...\n009-2. YES,IT'S SOMETHING ONLY THE ACTING HEAD OF THE HOUSE CAN DO.\n009-3. ATTEND THE ARISTOCRATIC CouNCIl aS THE aCTiNG HEAD OF HOUSE LOMBARDI...\n009-4. ..FIRENTIA LOMBARDI.\n\nPage 010\n010-1. I SHRLL MASTER THIS G FRMILY\n010-2. WE MUST ABSOLUTELY PREVENT HOUSE BROWN'S REINSTATEMENT AT THE UPCOMING ARISTOCRATIC COUNCIL!\n\nPage 011\n011-1. WHAT SHOULD WE DO, SISTER?\n011-2. SISTER...!",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "GRANDPA!",
+          "confidence": 0.988
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "GRANDPA!!!",
+          "confidence": 0.952
+        },
+        {
+          "text": "HOW DID HOWDID THIS HAPPEN, ESTIRA?",
+          "confidence": 0.942
+        },
+        {
+          "text": "PLEASE",
+          "confidence": 0.996
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "DON'T WORRY TOO MUCH, MY LADY.",
+          "confidence": 0.862
+        },
+        {
+          "text": "HIS GRACE WILL REGAIN CONSCIOUSNESS SOON ENOUGH. HE'LL BE FINE.",
+          "confidence": 0.945
+        },
+        {
+          "text": "HAS GRANDPA'S CONDITION GOTTEN THAT BAD?",
+          "confidence": 0.872
+        },
+        {
+          "text": "WHY DIDN'T YOu SAY ANYTHI-?",
+          "confidence": 0.751
+        },
+        {
+          "text": "TIA...",
+          "confidence": 0.957
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "GRANDPA!",
+          "confidence": 0.991
+        },
+        {
+          "text": "WHSH NO, DON'T GET UP YET. YOU NEED TO STAY IN BED.",
+          "confidence": 0.777
+        },
+        {
+          "text": "DON'T BE TOO HARD ON ESTIRA. I TOLD HER NOT To TELL ANYONE.",
+          "confidence": 0.794
+        },
+        {
+          "text": "IT'S ALL BECAUSE OF AGE, ISN'T IT?",
+          "confidence": 0.911
+        },
+        {
+          "text": "EVEN THE FINEST MEDICINE CAN'T FOOL THE PASSAGE OF TIME.",
+          "confidence": 0.933
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "SMILE",
+          "confidence": 0.932
+        },
+        {
+          "text": "GRANDPA..!",
+          "confidence": 0.946
+        },
+        {
+          "text": "HE'S RIGHT.",
+          "confidence": 0.975
+        },
+        {
+          "text": "IN THE PREVIOUS LIFE, GRANDPA STARTED TO BE ILL AROUND THIS TIME TOO.",
+          "confidence": 0.911
+        },
+        {
+          "text": "I'M SORRy, ESTIRa. I MISSPOKE.",
+          "confidence": 0.815
+        },
+        {
+          "text": "NOT AT ALL, MY",
+          "confidence": 0.761
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "LADY. I'M SURE YOu WERE TAKEN ABACK TOO.",
+          "confidence": 0.846
+        },
+        {
+          "text": "I THINK I WAS JUST ESPECIALLY TODAY. DO I TIRED NEED TO TAKE MY MEDICATION MORE OFTEN?",
+          "confidence": 0.851
+        },
+        {
+          "text": "IT'D BE BEST FOR YOu TO REST FOR A FEW DAYS AND SEE HOW YOU FARE, YOUR GRACE.",
+          "confidence": 0.793
+        },
+        {
+          "text": "HMM... VERY WELL.",
+          "confidence": 0.927
+        },
+        {
+          "text": "THIS IS QUITE THE PREDICAMENT.",
+          "confidence": 0.985
+        },
+        {
+          "text": "THERE'S NOTHING TO WORRY ABOuT, GRANDPA. YoU MUST REST UP NO",
+          "confidence": 0.791
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "MATTER WHAT!",
+          "confidence": 0.942
+        },
+        {
+          "text": "BUT SOMEONE STILL NEEDS TO ATTEND THE ARISTOCRaTIC COUNCIL AND SEE TO IT THAT HOUSE BROWN IS RESTORED.",
+          "confidence": 0.837
+        },
+        {
+          "text": "WHY SHOULD YOU WORRY ABOUT THAT?",
+          "confidence": 0.9
+        },
+        {
+          "text": "PEREZ WILL TAKE CARE OF IT.",
+          "confidence": 0.972
+        },
+        {
+          "text": "HMM ALL RIGHT.",
+          "confidence": 0.936
+        },
+        {
+          "text": "you SHOULD GO.",
+          "confidence": 0.85
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "TIA.",
+          "confidence": 0.985
+        },
+        {
+          "text": "WHAT...? WHAT..?",
+          "confidence": 0.947
+        },
+        {
+          "text": "you SHOULD ATTEND THE ARISTOCRATIC CoUNCIL IN MY PLACE.",
+          "confidence": 0.795
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "BUT GRANDPA, THAT'S...",
+          "confidence": 0.971
+        },
+        {
+          "text": "YES,IT'S SOMETHING ONLY THE ACTING HEAD OF THE HOUSE CAN DO.",
+          "confidence": 0.882
+        },
+        {
+          "text": "ATTEND THE ARISTOCRATIC CouNCIl aS THE aCTiNG HEAD OF HOUSE LOMBARDI...",
+          "confidence": 0.698
+        },
+        {
+          "text": "..FIRENTIA LOMBARDI.",
+          "confidence": 0.815
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I SHRLL MASTER THIS G FRMILY",
+          "confidence": 0.402
+        },
+        {
+          "text": "WE MUST ABSOLUTELY PREVENT HOUSE BROWN'S REINSTATEMENT AT THE UPCOMING ARISTOCRATIC COUNCIL!",
+          "confidence": 0.921
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WHAT SHOULD WE DO, SISTER?",
+          "confidence": 0.907
+        },
+        {
+          "text": "SISTER...!",
+          "confidence": 0.892
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-203/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-203/011.webp"
+  ]
+}
