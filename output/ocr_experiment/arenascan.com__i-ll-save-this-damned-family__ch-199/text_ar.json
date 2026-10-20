@@ -1,0 +1,1329 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "199",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Violet WelcometotheworldofVioletScans -Where beautymeetsstoryelling Why VioletScans? Curatedwebtoonswit heartndoul High-ualitytranslationswithafemininetouch Asafespacefordreamers,romanticsandstorylovers",
+          "confidence": 0.783,
+          "text_ar": "مرحباً بكم في عالم فايولت للتصاميم - حيث يلتقي الجمال بس سرد القصص"
+        },
+        {
+          "text": "Join our Comunity Now! Real-time updatesonnewreleases Awelcoming space forromance&fantasylovers Shareyuurfavrteseriespanels,and art StartyurouaViletscag",
+          "confidence": 0.651,
+          "text_ar": "انضموا إلى مجتمعنا الآن!"
+        },
+        {
+          "text": "会 引 烈合 .",
+          "confidence": 0.106,
+          "text_ar": "..."
+        },
+        {
+          "text": "5 MONTHS",
+          "confidence": 0.92,
+          "text_ar": "5 أشهر"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IT WAS AT THIS MOMENT.",
+          "confidence": 0.96,
+          "text_ar": "كان ذلك في اللحظة..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.Org",
+          "confidence": 0.919,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "WHEN I FELT THAT HIS HEART HAD COMPLETELY TURNED AWAY.",
+          "confidence": 0.933,
+          "text_ar": "عندما شعرتُ أن قلبه قد ابتعد تماماً."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOU'VE BEEN CAUGHT IN AN INCREDIBLY TIGHT NET. AND ONE THAT / WOVE MYSELF, AT THAT.",
+          "confidence": 0.949,
+          "text_ar": "لقد وقعتَ في شبكة محكمة للغاية... شبكة حِكتُها بنفسي، علاوة على ذلك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "EVEN IF I CAN'T CLEAR LiP THE MISUNDERSTANDING ABOUT THE MAP RIGHT NOW, I HAVE TO CLEAR LIP THE MISUNDERSTANDING ABOLIT COLINTESS DIANE!",
+          "confidence": 0.95,
+          "text_ar": "حتى إن لم أتمكن من توضيح سوء التفاهم بشأن الخريطة الآن، يجب أن أُزيل سوء التفاهم بشأن الكونتيسة ديان!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "JUST LET ME SAY THIS..!",
+          "confidence": 0.899,
+          "text_ar": "دعني أقول هذا فقط...!"
+        },
+        {
+          "text": "EXCUSEME, THERE IS ALSO A PROBLEMWITH THE ELIASFAMILY.",
+          "confidence": 0.92,
+          "text_ar": "عذراً، هناك مشكلة أيضاً مع عائلة إلياس."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "IKE",
+          "confidence": 0.944,
+          "text_ar": "إيك"
+        },
+        {
+          "text": "READ THIS SERIES ONY AT VIOLETSCANS.Org",
+          "confidence": 0.893,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "...EXPLAIN.",
+          "confidence": 0.848,
+          "text_ar": "...اشرح ذلك."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "ONE OF THE EXECUTIVES OF THE AWAKENED YOUNG NOBLES CLUB'S CAPITAL BRANCH IS LOGAN ELIAS.",
+          "confidence": 0.954,
+          "text_ar": "أحد مسؤولي فرع العاصمة لنادي النبلاء الشباب اليقظين هو لوغان إلياس."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THERE WAS A LARGE-SCALE SPEECH THERE NOT LONG AGO,",
+          "confidence": 0.995,
+          "text_ar": "كان هناك خطاب واسع النطاق هناك قبلมิذ وقت قصير،"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "AND THE FINAL SPEAKER WAS THAT MAN, HANS BURTON.",
+          "confidence": 0.956,
+          "text_ar": "وكان المتحدث الأخير هو ذلك الرجل، هانس برنارد."
+        },
+        {
+          "text": "THERE IS ALSO A RECORD THAT AIDE TERAVISITED WITH HIM ON THAT DAY.",
+          "confidence": 0.936,
+          "text_ar": "هناك أيضاً سجل بأن المساعدة تيرا زارت معه في ذلك اليوم."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "GOOD HEAVENS!",
+          "confidence": 0.978,
+          "text_ar": "يا الهي!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 13,
+      "sentences": []
+    },
+    {
+      "page": 13,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.93,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "YOU MIGHT NOT BELIEVE ME,BUT NEITHER THE CASTLE LISSE INCIDENT NOR THAT CLUBHASANYTHING TODOWITH ME.PLEASE DON'T JUMP TO CONCLUSIONS...PLEASE.",
+          "confidence": 0.935,
+          "text_ar": "قد لا تصدقني، لكن لا حادثة قلعة ليز ولا ذلك النادي لهما أي صلة بي. أرجو ألا تتسرع في الاستنتاجات... أرجوك."
+        },
+        {
+          "text": "PLEASE.. BELIEVE ME.",
+          "confidence": 0.989,
+          "text_ar": "أرجوك.. صدقني."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.INK",
+          "confidence": 0.951,
+          "text_ar": "ليكا مانغا"
+        },
+        {
+          "text": "UNFORTUNATELY, THE LIES YOU TOLD EARLIER ARE FAR TOO GREAT FOR ME TO",
+          "confidence": 0.962,
+          "text_ar": "للأسف، الأكاذيب التي قلتيها سابقاً أكبر بكثير من أن تجعلني"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "BELIEVE YOU NOW.",
+          "confidence": 0.984,
+          "text_ar": "أصدقك الآن."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "INFORM THE ELIAS FAMILY OF THE CURRENT SITUATION.THISWOMAN REQUIRES FURTHER INVESTIGATION,",
+          "confidence": 0.946,
+          "text_ar": "أبلغوا عائلة إلياس بالوضع الحالي. هذه المرأة تحتاج إلى مزيد من التحقيق،"
+        },
+        {
+          "text": "SOCONFINE HER TOTHEINTERNAL AFFAIRS DETENTION CENTER.",
+          "confidence": 0.965,
+          "text_ar": "لذا احتجزوها في مركز احتجاز الشؤون الداخلية."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "SHEISNOT ALLOWEDTO SEE ANYONEOTHERTHANHER LAWYER WITHOUT MY PERMISSION.",
+          "confidence": 0.929,
+          "text_ar": "لا يُسمح لها بمقابلة أي شخص سوى محاميها دون إذن مني."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.907,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "YOU'LL REGRET THIS.",
+          "confidence": 0.9,
+          "text_ar": "ستندم على هذا."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.923,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.992,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "YOU MIGHT NOT BELIEVE ME NOW, BUT MY TRUTH WILL ALL BE",
+          "confidence": 0.924,
+          "text_ar": "قد لا تصدقني الآن، لكن حقيقتي ستظهر"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "REVEALED ONCE THE MAIN CULPRIT IS CAUGHT.",
+          "confidence": 0.956,
+          "text_ar": "بمجرد القبض على الجاني الحقيقي."
+        },
+        {
+          "text": "iKEMANGA.INK",
+          "confidence": 0.89,
+          "text_ar": "ليكا مانغا"
+        },
+        {
+          "text": "THEN YOU WILL REGRET THIS VERY MOMENT.",
+          "confidence": 0.972,
+          "text_ar": "حينها ستندم على هذه اللحظة بالذات."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "SHE DARES TO SAY SUCH SHAMELESS THINGS AFTER BETRAYING ME SO THOROUGHLY!",
+          "confidence": 0.938,
+          "text_ar": "إذن هي تجرؤ على قول مثل هذه الأمور الوقحة بعد خيانتها لي بهذه الطريقة الكاملة!"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "/THOUGHT COULDN'T POSSIBLY GET ANY ANGRIER.",
+          "confidence": 0.948,
+          "text_ar": "ظننت أنه لا يمكنني أن أكون غاضباً أكثر من ذلك."
+        },
+        {
+          "text": "TERA ELIAS IS DEFINITELY... SOMETHING ELSE.",
+          "confidence": 0.935,
+          "text_ar": "تيرا إلياس هي حقاً... شيء آخر."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "WHAT WILLI REGRET? THIS VERY MOMENT?",
+          "confidence": 0.956,
+          "text_ar": "مما سأندم؟ هذه اللحظة بالذات؟"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.ORg",
+          "confidence": 0.922,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "OR THE FOOLISH ME WHO WANTED TO SHARE MYFUTUREWITHAWOMANLIKE YOU,WITHOUT KNOWING WHO YOU TRULY WERE?",
+          "confidence": 0.902,
+          "text_ar": "أم على نفسي الغبية التي أرادت مشاركة مستقبلي مع امرأة مثلك، دون أن أعرف من أنت حقاً؟"
+        },
+        {
+          "text": "OR THE IDIOTIC ME WHO, EVEN IN THIS SITUATION,KEEPS TELLING MYSELF",
+          "confidence": 0.91,
+          "text_ar": "أم على نفسي الحمقاء التي، حتى في هذا الموقف، تظل تقول لنفسها"
+        },
+        {
+          "text": "I NEVER SHOULD HAVE SET THAT TRAP, NEVERSHOULD HAVE MADETHAT MAP?",
+          "confidence": 0.927,
+          "text_ar": "ألم يكن يجدر بي وضع هذا الفخ، ولم يكن يجدر بي صنع تلك الخريطة؟"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "I AM TRULY SORRYFORNOT TELLING YOUABOUT MY CIRCUMSTANCESEARLIER. I DIDN'T DECEIVE YOU ON PURPOSE.",
+          "confidence": 0.909,
+          "text_ar": "أنا آسف حقاً لعدم إخبارك بظروفي مبكراً. لم أخدعك عمداً."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "BUT IT'S ENTIRELYMYFAULT THAT YOUR HEART WAS HURT BECAUSE OF IT.",
+          "confidence": 0.909,
+          "text_ar": "لكنه خطئي بالكامل أن قلبك قد جُرح بسبب ذلك."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.Org",
+          "confidence": 0.957,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "IF YOU JUST GIVE ME A LITTLE TIME,",
+          "confidence": 0.798,
+          "text_ar": "إذا أعطيتني بعض الوقت فقط،"
+        },
+        {
+          "text": "THEN...",
+          "confidence": 0.968,
+          "text_ar": "حينها..."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "orok!",
+          "confidence": 0.754,
+          "text_ar": "أرغ!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "DAMN IT!",
+          "confidence": 0.935,
+          "text_ar": "تباً!"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "MY LADY! WHAT ON EARTH IS GOING ON?!",
+          "confidence": 0.815,
+          "text_ar": "سيدتي! ما الذي يحدث بحق الجحيم؟!"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.952,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "TAKE ONE MORE STEP INSIDE AND I'LLKILL YOU!",
+          "confidence": 0.795,
+          "text_ar": "خطوة أخرى للداخل وسأقتلك!"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "/ WON'T BE FOOLED BY THOSE EYES ANYMORE!",
+          "confidence": 0.91,
+          "text_ar": "لن أُخدع بتلك العيون بعد الآن!"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "LKEMANGA UNK",
+          "confidence": 0.864,
+          "text_ar": "ليكا مانغا"
+        },
+        {
+          "text": "YoOl 享",
+          "confidence": 0.268,
+          "text_ar": "اهه"
+        },
+        {
+          "text": "IT'S OKAY, BERNARD.I'M OKAY....",
+          "confidence": 0.806,
+          "text_ar": "لا بأس، برنارد. أنا بخير...."
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 37,
+      "sentences": [
+        {
+          "text": "WORRYING ABOUT YOUR KNIGHT IN THE MIDDLE OF ALL THIS.",
+          "confidence": 0.962,
+          "text_ar": "تقلقين على فارسكم في وسط كل هذا."
+        },
+        {
+          "text": "WHY? DON'T YOU STILL WANT TO BE BRANDED A TRAITOR BY YOUR KNIGHT?",
+          "confidence": 0.916,
+          "text_ar": "لماذا؟ ألا زلتِ ترغبين في أن يُوصمك فارسُكِ بالخيانة؟"
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 38,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.924,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "image_id": 39,
+      "sentences": [
+        {
+          "text": "ARE YOU SAYING YOU RESENT ME?",
+          "confidence": 0.979,
+          "text_ar": "أتقولين إنكِ ساخطة مني؟"
+        },
+        {
+          "text": "IWON'T FALL FOR THAT LOOK ANYMORE EITHER.",
+          "confidence": 0.975,
+          "text_ar": "لن أقع في تلك النظرة بعد الآن أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "ONCE ALL THIS PASSES, PLEASE TAKE YOUR TIME AND INVESTIGATE.",
+          "confidence": 0.958,
+          "text_ar": "بمجرد أن يمر كل هذا، يرجى أن تأخذ وقتك وتتحقق."
+        },
+        {
+          "text": "THEN YOU WILL SEE THE TRUTH.",
+          "confidence": 0.949,
+          "text_ar": "حينها سترى الحقيقة."
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "YOU'RE BETTER OFF JUST CONFESSING! THAT WOULO BE MORE LIKE YOU, TERA.",
+          "confidence": 0.94,
+          "text_ar": "من الأفضل لك الاعتراف فحسب! سيكون ذلك أشبه بك يا تيرا."
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.Org",
+          "confidence": 0.967,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": ".THIS MUST BE AN",
+          "confidence": 0.882,
+          "text_ar": "..لا بد أن هذا وضع لا يصدق، لكنه لم يكن أنا حقاً."
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "UNBELIEVABLE SITUATION, BUT IT REALLYWASN'T ME.",
+          "confidence": 0.946,
+          "text_ar": "ليكا مانغا"
+        },
+        {
+          "text": "LIKEMANGA.INK",
+          "confidence": 0.902,
+          "text_ar": "التفكير في أنني سأستخدم هذا هنا مرة أخرى."
+        },
+        {
+          "text": "oor TO THINK I'D USE THIS HERE AGAIN.",
+          "confidence": 0.447,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "THAT PERSONAL FAVOR.I'LL USE IT HERE.",
+          "confidence": 0.956,
+          "text_ar": "تلك الخدمة الشخصية. سأستخدمها هنا."
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 45,
+      "sentences": []
+    },
+    {
+      "page": 45,
+      "image_id": 46,
+      "sentences": [
+        {
+          "text": "WHENEVERIGET INVOLVED WITH YOU, LIFE ALWAYS PUSHES ME INTO UNEXPECTED PLACES.SO LET'S END THIS NOW.",
+          "confidence": 0.94,
+          "text_ar": "كلما تورطت معك، تدفعني الحياة دائماً إلى أماكن غير متوقعة. لذا دعنا ننهي هذا الآن."
+        },
+        {
+          "text": "NEVER APPEAR BEFORE MY EYES AGAIN.",
+          "confidence": 0.946,
+          "text_ar": "لا تظهر أمام عيني مرة أخرى."
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.901,
+          "text_ar": "اقرأ هذا العمل حصرياً على VioletsCans"
+        },
+        {
+          "text": "THAT'S MY PERSONAL FAVOR. THAT'S ALLIWANT.",
+          "confidence": 0.925,
+          "text_ar": "تلك هي خدمتي الشخصية. هذا كل ما أريده."
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "KYLE..!",
+          "confidence": 0.824,
+          "text_ar": "كايل..!"
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": ".DON'TDO THIS.I'LL TELL YOU EVERYTHING.",
+          "confidence": 0.923,
+          "text_ar": "لا تفعل هذا. سأخبرك بكل شيء."
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "LIKE MANGA.INK",
+          "confidence": 0.926,
+          "text_ar": ""
+        },
+        {
+          "text": "WALTER!",
+          "confidence": 0.993,
+          "text_ar": "والتر!"
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.933,
+          "text_ar": ""
+        },
+        {
+          "text": "YES, YOUR HIGHNESS!",
+          "confidence": 0.836,
+          "text_ar": "أمرك، سمو الأمير!"
+        },
+        {
+          "text": "DRAG THIS WOMAN TO THE DETENTION CENTER!",
+          "confidence": 0.948,
+          "text_ar": "خذوا هذه المرأة إلى مركز التوقيف!"
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 52,
+      "sentences": []
+    },
+    {
+      "page": 52,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "YES,yOUR HIGHNESS!",
+          "confidence": 0.789,
+          "text_ar": "أمرك، سمو الأمير!"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "TO THINK YOU WOULD THIS... DO",
+          "confidence": 0.839,
+          "text_ar": "لم أكن أظن أنك ستفعل هذا... تفعل"
+        },
+        {
+          "text": "ANDIDIDN'T EVENKNOW,BUYING YOU A BIRTHDAY PRESENT. THIS IS RIDICULOUS. REALLY.",
+          "confidence": 0.931,
+          "text_ar": "ولم أكن أعلم حتى، فقد اشتريت لك هدية عيد ميلاد. هذا سخيف حقًا."
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 55,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.935,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "RIGHT... NOW / TRULY UNDERSTAND.",
+          "confidence": 0.913,
+          "text_ar": "الآن... أنا أفهم حقًا."
+        },
+        {
+          "text": "MYLAD4. PLEASE ENDURE JUST A LITTLELONGER.I WILL IMMEDIATELYINFORM THE COUNT..!",
+          "confidence": 0.836,
+          "text_ar": "سيدتي. أرجو أن تتحملي قليلاً. سأبلغ الكونت فورًا..!"
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "image_id": 57,
+      "sentences": []
+    },
+    {
+      "page": 57,
+      "image_id": 58,
+      "sentences": [
+        {
+          "text": "BERNARD. DON'T DO THAT. I'MFINE.",
+          "confidence": 0.934,
+          "text_ar": "برنارد. لا تفعل ذلك. أنا بخير."
+        },
+        {
+          "text": "THIS WRETCHED EMPIRE. A LTEE WATTU TCUV",
+          "confidence": 0.666,
+          "text_ar": "هذه الإمبراطورية اللعينة."
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "CURSEDLIFEWIIHABSOLOTEL NOTRANSMIGRATION BUFFS.",
+          "confidence": 0.921,
+          "text_ar": "حياة ملعونة ولن تحصل أبداً على قدرات الانتقال لعالم آخر."
+        },
+        {
+          "text": "DIDIRUNSOHARD ALLTHIS TIMEJUSTTO",
+          "confidence": 0.956,
+          "text_ar": "هل ركضت طوال هذا الوقت بجهد كبير لكي"
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "END UP SEEING THIS?",
+          "confidence": 0.951,
+          "text_ar": "أصل إلى رؤية هذا؟"
+        },
+        {
+          "text": "THE MAN WHOSE LOVE I WAS FINALLYCERTAIN OF HAS COMPLETELY TURNED HIS BACK ON ME.",
+          "confidence": 0.925,
+          "text_ar": "الرجل الذي كنت متأكدة من حبه لي أدار ظهره لي تماماً."
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "IT'S NOT THAT I DON'T UNDERSTAND THE SENSE OF BETRAYAL HE MUST FEEL.",
+          "confidence": 0.891,
+          "text_ar": "ليس الأمر أنني لا أستطيع تفهم شعور الخيانة الذي يشعر به."
+        },
+        {
+          "text": "BUT I'M NOT A SPY, AM I?",
+          "confidence": 0.89,
+          "text_ar": "لكنني لست جاسوسة، ألسْتُ كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 62,
+      "sentences": []
+    },
+    {
+      "page": 62,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.933,
+          "text_ar": ""
+        },
+        {
+          "text": "IF IHAVE A SIN,IT IS THE SIN OF HIDING AN UNSPEAKABLE SECRET.",
+          "confidence": 0.88,
+          "text_ar": "إذا كان لدي ذنب، فهو ذنب إخفاء سر لا يُطاق."
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.INO",
+          "confidence": 0.858,
+          "text_ar": ""
+        },
+        {
+          "text": "I WON'T TRY TO PERSUADE HIM ANYMORE.",
+          "confidence": 0.929,
+          "text_ar": "لن أُحاول إقناعه بعد الآن."
+        },
+        {
+          "text": "ONCE HIS ANGERSUBSIDESAND HE LOOKS ATTHIS INCIDENT CLEARLY,",
+          "confidence": 0.869,
+          "text_ar": "بمجرد أن يهدأ غضبه وينظر إلى هذا الحادث بوضوح،"
+        },
+        {
+          "text": "HE WILL SURELY REALIZE THAT IAM NOTA SPY.",
+          "confidence": 0.927,
+          "text_ar": "سيدرك بالتأكيد أنني لست جاسوسة."
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.948,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "I WILL CHOOSE HOUSE ARREST.",
+          "confidence": 0.944,
+          "text_ar": "سأختار الإقامة الجبرية."
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "..you WANT TO BUY TIME?",
+          "confidence": 0.854,
+          "text_ar": "..تريدين كسب الوقت؟"
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "AS you WISH.",
+          "confidence": 0.683,
+          "text_ar": "كما تشاء."
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "TAKE HER AWAY!",
+          "confidence": 0.979,
+          "text_ar": "خذوها بعيداً!"
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.Org",
+          "confidence": 0.943,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.INK",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "ICAN WALK ON MY OWN.",
+          "confidence": 0.947,
+          "text_ar": "يمكنني المشي بمفردي."
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 72,
+      "sentences": []
+    },
+    {
+      "page": 72,
+      "image_id": 73,
+      "sentences": []
+    },
+    {
+      "page": 73,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "THE FSTAIE WAS",
+          "confidence": 0.896,
+          "text_ar": "لقد انقلبت"
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "TURNED UPSIDE DOWN.",
+          "confidence": 0.98,
+          "text_ar": "الأرض رأساً على عقب."
+        },
+        {
+          "text": "READ THIS GERIEG ONLYAT VIOLETSCANS.Org",
+          "confidence": 0.9,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "AT THE ENTRANCE OF THE ESTATE AND IN FRONT OF MY ROOM,",
+          "confidence": 0.957,
+          "text_ar": "عند مدخل العقار وأمام غرفتي،"
+        },
+        {
+          "text": "MEMBERS OF THE SECURITY DEPARTMENT TOOK TURNS STANDING GUARD.",
+          "confidence": 0.913,
+          "text_ar": "كان أعضاء قسم الأمن يتناوبون على حراسة المكان."
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 77,
+      "sentences": []
+    },
+    {
+      "page": 77,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.INK",
+          "confidence": 0.951,
+          "text_ar": ""
+        },
+        {
+          "text": "****八人*人**人**人***人*人*** 人八人*人*人八*八人*人*人*人人*人*人八*八*八",
+          "confidence": 0.575,
+          "text_ar": ""
+        },
+        {
+          "text": "THE CHARGES AGAINSTYOU.ARE THEY CREDIBLE CHARGES?",
+          "confidence": 0.964,
+          "text_ar": "التهم الموجهة إليك.. هل هي تهم موثوقة؟"
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.Org",
+          "confidence": 0.933,
+          "text_ar": ""
+        },
+        {
+          "text": "NO.IHAVE NEVER DONE SUCH A THING.",
+          "confidence": 0.939,
+          "text_ar": "لا. لم أرتكب شيئاً كهذا قط."
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "RIGHT.THEY MUST BE GRAVELY MISUNDERSTANDING SOMETHING.",
+          "confidence": 0.963,
+          "text_ar": "صحيح. لابد أنهم أساءوا فهم شيء ما بشكل خطير."
+        },
+        {
+          "text": "I NEED TO SEND A MESSENGERTOLOGAN RIGHT AWAY TELLING HIM TO COME HOME.",
+          "confidence": 0.91,
+          "text_ar": "أحتاج إلى إرسال رسول إلى لوغان فوراً ليطلب منه العودة إلى المنزل."
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "I'LL LOOK INTO IT THROUGHMY CONNECTIONSIN THE PALACE.DON'T WKHy WORRY, TERA.",
+          "confidence": 0.309,
+          "text_ar": "سأتحقق من الأمر من خلال علاقاتي في القصر. لا تقلقي يا تيرا."
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "THANK YOU, SISTER.",
+          "confidence": 0.969,
+          "text_ar": "شكراً لكِ، أختي."
+        },
+        {
+          "text": "A SUSPECT INVOLVEDIN OVERTHROWING THE EMPIRE? THAT'S niicmucI",
+          "confidence": 0.334,
+          "text_ar": "مشتبه بها في محاولة الإطاحة بالإمبراطورية؟ هذا مبالغ فيه حقاً!"
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "kiDiCuLous:",
+          "confidence": 0.71,
+          "text_ar": "أمر سخيف!"
+        },
+        {
+          "text": "I'LL GET LOCKED UPINYOUR BEDROOM WITH YOU, SISTER!",
+          "confidence": 0.925,
+          "text_ar": "سأحبس نفسي في غرفتك معكِ يا أختي!"
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.Org",
+          "confidence": 0.946,
+          "text_ar": ""
+        },
+        {
+          "text": "ONLY MY LAWYER AND FATHER ARE ALLOWED IN MY BEDROOM.",
+          "confidence": 0.944,
+          "text_ar": "مسموح لمحاميّ ووالدي فقط بالدخول إلى غرفتي."
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 84,
+      "sentences": [
+        {
+          "text": "BUT THANKS FOR SAYING THAT, ARIA.",
+          "confidence": 0.97,
+          "text_ar": "لكن شكراً لكِ على قول ذلك يا آريا."
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "LIKEMANGA.INK",
+          "confidence": 0.965,
+          "text_ar": ""
+        },
+        {
+          "text": "INEEDTO GO SEE HIS HIGHNESS THE 2NDPRINCE FIRST THING TOMORROW MORNING!",
+          "confidence": 0.957,
+          "text_ar": "علي الذهاب لرؤية سمو الأمير الثاني أول شيء صباح الغد!"
+        }
+      ]
+    },
+    {
+      "page": 85,
+      "image_id": 86,
+      "sentences": [
+        {
+          "text": "HE ISN'T THE KIND OF PERSON TO DO THIS.THE INFORMATIONMUSTHAVE GOTTEN TWISTED SOMEWHERE.",
+          "confidence": 0.913,
+          "text_ar": "فهو ليس من نوعية الأشخاص الذين يفعلون هذا. لابد أن المعلومات قد تحرفت في مكان ما."
+        }
+      ]
+    },
+    {
+      "page": 86,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "I'LL TRY GATHERING INFORMATION TOO!",
+          "confidence": 0.927,
+          "text_ar": "سأحاول جمع المعلومات أيضاً!"
+        }
+      ]
+    },
+    {
+      "page": 87,
+      "image_id": 88,
+      "sentences": [
+        {
+          "text": "THE NEXT DAY",
+          "confidence": 0.973,
+          "text_ar": "في اليوم التالي"
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 89,
+      "sentences": [
+        {
+          "text": "从ol 7",
+          "confidence": 0.334,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 89,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "READTHIS SERIES ONLYAT: VIOLETSCANS.Org",
+          "confidence": 0.937,
+          "text_ar": ""
+        },
+        {
+          "text": "THAT BASTARD... LEFT ME STANDING IN FRONTOF THE IRON GATES FOR H HOURS.",
+          "confidence": 0.901,
+          "text_ar": "ذلك اللعين... تركني واقفاً أمام البوابات الحديدية لساعات طوال."
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "image_id": 91,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT: VIOLETSCANS.ORg",
+          "confidence": 0.945,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 91,
+      "image_id": 92,
+      "sentences": [
+        {
+          "text": "KEMANGA.INI",
+          "confidence": 0.916,
+          "text_ar": ""
+        },
+        {
+          "text": "DEPLOYMENTREQUETDOCUNTTERMNATING CANCELLATIONOF KNIGHTORDER COOPRANHYC OFTRUST WILL BE SENT SHORTLY. -2ND PRINCE OFTHE OSIRIAEMPIRE.",
+          "confidence": 0.706,
+          "text_ar": "سيتم إرسال طلب نشر وثيقة إنهاء إلغاء تعاون فرسان الثقة قريباً. - الأمير الثاني لإمبراطورية أوسيريا."
+        }
+      ]
+    },
+    {
+      "page": 92,
+      "image_id": 93,
+      "sentences": [
+        {
+          "text": "AND THEN HE KICKED ME OUT, HANDING ME JUST THIS SINGLE MISSIVE.",
+          "confidence": 0.939,
+          "text_ar": "ومن ثم طردني، مسلماً إياي هذه الرسالة الوحيدة فقط."
+        },
+        {
+          "text": "I WILL NEVER PLAY INTO THAT BASTARO'S SILVER TONGUE AGAIN.",
+          "confidence": 0.934,
+          "text_ar": "لن أقع أبداً في فخ حديث ذلك اللعين المعسول مرة أخرى."
+        }
+      ]
+    },
+    {
+      "page": 93,
+      "image_id": 94,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.OTg",
+          "confidence": 0.934,
+          "text_ar": ""
+        },
+        {
+          "text": "CHLOE!IDONT CARE HOW MUCH IT COSTS, GET THE BEST LAWYER FOR TERA IMMEDIATELY!",
+          "confidence": 0.925,
+          "text_ar": "كلويه! لا يهمني كم يكلف الأمر، احصلي على أفضل محامٍ لتيرا فوراً!"
+        }
+      ]
+    },
+    {
+      "page": 94,
+      "image_id": 95,
+      "sentences": []
+    },
+    {
+      "page": 95,
+      "image_id": 96,
+      "sentences": [
+        {
+          "text": "VIOLET SCANS",
+          "confidence": 0.973,
+          "text_ar": ""
+        },
+        {
+          "text": "wwww.violetscans.org 回 We are Hiring! EDITORS",
+          "confidence": 0.761,
+          "text_ar": ""
+        },
+        {
+          "text": "KR TRANSLATORS",
+          "confidence": 0.943,
+          "text_ar": ""
+        },
+        {
+          "text": "JB TRANSLATORS",
+          "confidence": 0.958,
+          "text_ar": ""
+        },
+        {
+          "text": "NAVERPROVIDERS",
+          "confidence": 0.993,
+          "text_ar": ""
+        },
+        {
+          "text": "How to apply? ALLYOUHAVETODOISJOININGOURDISCORDSERVER THENGOTORECRUITMENTROOMANDTHEREYOUCAN TAKETHETEST:DISCORD.GG/jRFkVWY4mG",
+          "confidence": 0.961,
+          "text_ar": ""
+        }
+      ]
+    }
+  ]
+}
