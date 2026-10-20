@@ -1,0 +1,208 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "208",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/208",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-208",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. YOUR HIGHNESS...\n001-2. WHY DO YOU WISH TO LEARN THE SWORD?\n001-3. I'M SICK AND TIRED OF BEING WEAK,\n001-4. AND I alsO MADE Δ PROMISE...\n\nPage 002\n002-1. A PROMISE?\n002-2. YES.\n002-3. I PROMISED I'D STUDY HARD AND PRACTIce MY SWORDSMANSHIP EVERY DAY.\n\nPage 003\n003-1. SHRLL MASTER GTHIS FRMILY\n\nPage 004\n004-1. LORD SERSHAW...\n004-2. GREETINGS, YOUR HIGHNESS.\n004-3. YOU'VE DONE WELL. I'LL SEE YOU AGAIN LATER.\n\nPage 005\n005-1. YES, YOUR HIGHNESS.\n005-2. CLOp\n005-3. CLp\n005-4. CLOp\n\nPage 006\n006-1. ARE you SuRe You DON'T NEED TO FOLLOW?\n006-2. TIA HAS SOMETHING SHE NEEDS TO DO RIGHT NOW, AS DO I.\n006-3. WE'LL MEET LATER.\n006-4. THEN ALLOW ME TO ASkK YOu oNE THING.\n\nPage 007\n007-1. HAVE YOU BEEN SHARING EVERYTHING..,WITH LADY FIRENTIa?\n\nPage 008\n008-1. THEN HOW DID SHE KNOW EVERYTHING?\n008-2. LORD SERSHAW.\n008-3. IF IT WEREN'T FOR TIA,\n008-4. WE WOULDN'T BE HAVING THIS CONVERSATION AT ALL. YDD\n\nPage 009\n009-1. I'LL SEE yOu AT THE GRAND COUNCIL NEXT.\n\nPage 010\n\nPage 011\n011-1. TO FOILAK PALACE.\n011-2. Y-YES, YOUR HIGHNESS.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YOUR HIGHNESS...",
+          "confidence": 0.932
+        },
+        {
+          "text": "WHY DO YOU WISH TO LEARN THE SWORD?",
+          "confidence": 0.896
+        },
+        {
+          "text": "I'M SICK AND TIRED OF BEING WEAK,",
+          "confidence": 0.788
+        },
+        {
+          "text": "AND I alsO MADE Δ PROMISE...",
+          "confidence": 0.652
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "A PROMISE?",
+          "confidence": 0.89
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.979
+        },
+        {
+          "text": "I PROMISED I'D STUDY HARD AND PRACTIce MY SWORDSMANSHIP EVERY DAY.",
+          "confidence": 0.762
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "SHRLL MASTER GTHIS FRMILY",
+          "confidence": 0.837
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "LORD SERSHAW...",
+          "confidence": 0.943
+        },
+        {
+          "text": "GREETINGS, YOUR HIGHNESS.",
+          "confidence": 0.925
+        },
+        {
+          "text": "YOU'VE DONE WELL. I'LL SEE YOU AGAIN LATER.",
+          "confidence": 0.889
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YES, YOUR HIGHNESS.",
+          "confidence": 0.854
+        },
+        {
+          "text": "CLOp",
+          "confidence": 0.697
+        },
+        {
+          "text": "CLp",
+          "confidence": 0.526
+        },
+        {
+          "text": "CLOp",
+          "confidence": 0.753
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "ARE you SuRe You DON'T NEED TO FOLLOW?",
+          "confidence": 0.76
+        },
+        {
+          "text": "TIA HAS SOMETHING SHE NEEDS TO DO RIGHT NOW, AS DO I.",
+          "confidence": 0.837
+        },
+        {
+          "text": "WE'LL MEET LATER.",
+          "confidence": 0.971
+        },
+        {
+          "text": "THEN ALLOW ME TO ASkK YOu oNE THING.",
+          "confidence": 0.674
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HAVE YOU BEEN SHARING EVERYTHING..,WITH LADY FIRENTIa?",
+          "confidence": 0.797
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THEN HOW DID SHE KNOW EVERYTHING?",
+          "confidence": 0.89
+        },
+        {
+          "text": "LORD SERSHAW.",
+          "confidence": 0.992
+        },
+        {
+          "text": "IF IT WEREN'T FOR TIA,",
+          "confidence": 0.875
+        },
+        {
+          "text": "WE WOULDN'T BE HAVING THIS CONVERSATION AT ALL. YDD",
+          "confidence": 0.428
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I'LL SEE yOu AT THE GRAND COUNCIL NEXT.",
+          "confidence": 0.766
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "TO FOILAK PALACE.",
+          "confidence": 0.96
+        },
+        {
+          "text": "Y-YES, YOUR HIGHNESS.",
+          "confidence": 0.93
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-208/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-208/011.webp"
+  ]
+}

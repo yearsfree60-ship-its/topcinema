@@ -1,0 +1,208 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "208",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YOUR HIGHNESS...",
+          "confidence": 0.932,
+          "text_ar": "سموّ الأمير..."
+        },
+        {
+          "text": "WHY DO YOU WISH TO LEARN THE SWORD?",
+          "confidence": 0.896,
+          "text_ar": "لماذا ترغب في تعلم المبارزة؟"
+        },
+        {
+          "text": "I'M SICK AND TIRED OF BEING WEAK,",
+          "confidence": 0.788,
+          "text_ar": "لقد مللت من كونِي ضعيفًا،"
+        },
+        {
+          "text": "AND I alsO MADE Δ PROMISE...",
+          "confidence": 0.652,
+          "text_ar": "وقد قطعتُ وعدًا أيضًا..."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "A PROMISE?",
+          "confidence": 0.89,
+          "text_ar": "وعدًا؟"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.979,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "I PROMISED I'D STUDY HARD AND PRACTIce MY SWORDSMANSHIP EVERY DAY.",
+          "confidence": 0.762,
+          "text_ar": "وعدتُ بأن أدرس بجد وأمارس فنون السيف كل يوم."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "SHRLL MASTER GTHIS FRMILY",
+          "confidence": 0.837,
+          "text_ar": "سأتقن هذه الحركة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "LORD SERSHAW...",
+          "confidence": 0.943,
+          "text_ar": "اللورد سيرشاو..."
+        },
+        {
+          "text": "GREETINGS, YOUR HIGHNESS.",
+          "confidence": 0.925,
+          "text_ar": "تحياتي، سموّ الأمير."
+        },
+        {
+          "text": "YOU'VE DONE WELL. I'LL SEE YOU AGAIN LATER.",
+          "confidence": 0.889,
+          "text_ar": "لقد أديتَ ما عليك. سأراك لاحقًا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YES, YOUR HIGHNESS.",
+          "confidence": 0.854,
+          "text_ar": "حاضر، سموّ الأمير."
+        },
+        {
+          "text": "CLOp",
+          "confidence": 0.697,
+          "text_ar": "طقطقة"
+        },
+        {
+          "text": "CLp",
+          "confidence": 0.526,
+          "text_ar": "طتق"
+        },
+        {
+          "text": "CLOp",
+          "confidence": 0.753,
+          "text_ar": "طقطقة"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "ARE you SuRe You DON'T NEED TO FOLLOW?",
+          "confidence": 0.76,
+          "text_ar": "أمتأكدٌ أنك لا تحتاج لمرافقته؟"
+        },
+        {
+          "text": "TIA HAS SOMETHING SHE NEEDS TO DO RIGHT NOW, AS DO I.",
+          "confidence": 0.837,
+          "text_ar": "لديّا ما يجب عليّ فعله الآن، وكذا هي."
+        },
+        {
+          "text": "WE'LL MEET LATER.",
+          "confidence": 0.971,
+          "text_ar": "سنلتقي لاحقًا."
+        },
+        {
+          "text": "THEN ALLOW ME TO ASkK YOu oNE THING.",
+          "confidence": 0.674,
+          "text_ar": "إذن اسمح لي أن أسالك شيئًا واحدًا."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HAVE YOU BEEN SHARING EVERYTHING..,WITH LADY FIRENTIa?",
+          "confidence": 0.797,
+          "text_ar": "أكنت تشارك كل شيء... مع الآنسة فيرينتيا؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THEN HOW DID SHE KNOW EVERYTHING?",
+          "confidence": 0.89,
+          "text_ar": "إذن كيف كانت تعرف كل شيء؟"
+        },
+        {
+          "text": "LORD SERSHAW.",
+          "confidence": 0.992,
+          "text_ar": "لورد سيرشاو."
+        },
+        {
+          "text": "IF IT WEREN'T FOR TIA,",
+          "confidence": 0.875,
+          "text_ar": "لو لم تكن تيا موجودة،"
+        },
+        {
+          "text": "WE WOULDN'T BE HAVING THIS CONVERSATION AT ALL. YDD",
+          "confidence": 0.428,
+          "text_ar": "لما كنا لنخوض هذا الحديث من الأساس."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I'LL SEE yOu AT THE GRAND COUNCIL NEXT.",
+          "confidence": 0.766,
+          "text_ar": "سأراك في المجلس الأعلى القادم."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": []
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "TO FOILAK PALACE.",
+          "confidence": 0.96,
+          "text_ar": "إلى قصر يولاك."
+        },
+        {
+          "text": "Y-YES, YOUR HIGHNESS.",
+          "confidence": 0.93,
+          "text_ar": "أ-أجل، سموّ الأمير."
+        }
+      ]
+    }
+  ]
+}
