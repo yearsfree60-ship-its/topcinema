@@ -1,0 +1,244 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "214",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER THIS FAMILY 214",
+          "confidence": 0.882,
+          "text_ar": "سأصبح رب هذه العائلة 214"
+        },
+        {
+          "text": "CLp CLOp",
+          "confidence": 0.561,
+          "text_ar": "صوت حوافر"
+        },
+        {
+          "text": "CWPCLOP",
+          "confidence": 0.603,
+          "text_ar": "صوت حوافر"
+        },
+        {
+          "text": "Gp CLOp",
+          "confidence": 0.47,
+          "text_ar": "صوت حوافر"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THE EDGE OF LOMBARDI TERRITORY",
+          "confidence": 0.942,
+          "text_ar": "أطراف أراضي لومباردي"
+        },
+        {
+          "text": "△ SMALL VILLA OWNED BY HOUSE LOMBARDI",
+          "confidence": 0.85,
+          "text_ar": "فيلا صغيرة تملكها عائلة لومباردي"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "MOTHER!",
+          "confidence": 0.986,
+          "text_ar": "أمي!"
+        },
+        {
+          "text": "TaK 0",
+          "confidence": 0.276,
+          "text_ar": "خطوات سريعة"
+        },
+        {
+          "text": "Han",
+          "confidence": 0.619,
+          "text_ar": "لهث"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "WAIT A MINUTE.. WHY DID HE JUST GET OFF FROM THE CARGO CART, PEREZ?",
+          "confidence": 0.856,
+          "text_ar": "انتظري دقيقة.. لماذا ترجل للتو من عربة البضائع يا بيريز؟"
+        },
+        {
+          "text": "WHO KNOWS?",
+          "confidence": 0.991,
+          "text_ar": "من يدري؟"
+        },
+        {
+          "text": "MY GOODNESS, WHAT ARE THESE SCAOS SCARS...? C",
+          "confidence": 0.157,
+          "text_ar": "يا إلهي، ما هذه الندوب...؟"
+        },
+        {
+          "text": "M-MOTHER...",
+          "confidence": 0.94,
+          "text_ar": "أ-أمي..."
+        },
+        {
+          "text": "S-SIR OLKA BARAPORT CAME INTO my ROOM and TRied TO STRANGLE MF",
+          "confidence": 0.778,
+          "text_ar": "ل-لقد دخل السير ولكا بارابورت إلى غرفتي وحاول خنقي!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "OLKA?",
+          "confidence": 0.971,
+          "text_ar": "ولكا؟"
+        },
+        {
+          "text": "THAT OLKA BARAPORT?!",
+          "confidence": 0.961,
+          "text_ar": "ذاك ولكا بارابورت؟! "
+        },
+        {
+          "text": "HOW COULD THIS mm Pme BEP!",
+          "confidence": 0.463,
+          "text_ar": "كيف يتسنى له فعل هذا؟!"
+        },
+        {
+          "text": "SK DON'T TELL ME YOU'Re SHOCKED. Do You TRuLy noT KNOW WHAT THE EMPRESS IS CAPABLE OF?",
+          "confidence": 0.715,
+          "text_ar": "لا تقولي إنكِ متفاجئة. ألا تعلمين حقًا ما تقوى الإمبراطورة على فعله؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "..I DO.",
+          "confidence": 0.814,
+          "text_ar": "..أنا أعلم."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I KNEW WhAT KIND OF PERSON MY COUSIN IS, BUT...",
+          "confidence": 0.795,
+          "text_ar": "كنت أدرك أي نوع من البشر هي ابنة عمي، لكن..."
+        },
+        {
+          "text": "I WAS SCARED.",
+          "confidence": 0.777,
+          "text_ar": "كنت خائفة."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I WAS JUST... SO SCARED!",
+          "confidence": 0.797,
+          "text_ar": "كنت... خائفة فحسب!"
+        },
+        {
+          "text": "Sil ARA S",
+          "confidence": 0.341,
+          "text_ar": "تنهيدة"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "THANK YOu FOR SAvING BELLEZAC,ACTING HEAD OF HOUSE LOMBARDI.",
+          "confidence": 0.8,
+          "text_ar": "شكرًا لكِ على إنقاذ بيليزاك، يا رئيسة عائلة لومباردي بالوكالة."
+        },
+        {
+          "text": "THERE'S NO NEED TO THANK ME.",
+          "confidence": 0.899,
+          "text_ar": "لا حاجة لشكري."
+        },
+        {
+          "text": "I ONLY LENT A HAND BECAUSE IT'S MORE BENEFICIaL TO KEEP BELLEZAC ALIVE THAN TO LET HIM DIE aT HER MAJESTY'S HANDS.",
+          "confidence": 0.824,
+          "text_ar": "لقد مدَدتُ يد العون فقط لأن إبقاء بيليزاك حياً أجدى نفعاً من تركه يموت على يد جلالتها."
+        },
+        {
+          "text": "I SEE...",
+          "confidence": 0.936,
+          "text_ar": "أرى ذلك..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THIS IS FoR YOu, DePutY HEAD. MEAD",
+          "confidence": 0.722,
+          "text_ar": "هذا لكِ، نائبة الرئيس."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THIS SHOULD HELP ME A GREAT DEAL.",
+          "confidence": 0.857,
+          "text_ar": "سيسعِفني هذا كثيراً."
+        },
+        {
+          "text": "HERE, PEREZ.",
+          "confidence": 0.991,
+          "text_ar": "خذ هذا، بيريز."
+        },
+        {
+          "text": "THIS WEAPON SHOULD SHINE EVEN BRIGHTER IN YOUR HANDS.",
+          "confidence": 0.923,
+          "text_ar": "يُفترض بهذا السلاح أن يتألق أكثر فأكثر بين يديك."
+        },
+        {
+          "text": "OKAY.",
+          "confidence": 0.986,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "BELLEZAC,",
+          "confidence": 0.995,
+          "text_ar": "بيليزاك،"
+        },
+        {
+          "text": "FROM NOW ON, YOu AND YOUR MOTHER WILL LIVE HERE AS IF yOu'RE DEaD.",
+          "confidence": 0.76,
+          "text_ar": "من الآن فصاعداً، ستعيشان أنتَ ووالدتك هنا كأنكما في عداد الأموات."
+        }
+      ]
+    }
+  ]
+}
