@@ -1,0 +1,269 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "197",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "SHTP",
+          "confidence": 0.844,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "SHTA",
+          "confidence": 0.858,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "SHTP SHTe HA",
+          "confidence": 0.387,
+          "text_ar": "صوت حفيف الأوراق"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "DAMN IT, WHAT KIND OF Δ FOREST IS THIS?!",
+          "confidence": 0.785,
+          "text_ar": "تباً، اي نوع من الغابات اللعينة هذه؟!"
+        },
+        {
+          "text": "WHY DOES EVERY TRAIL LEAD TO A DEAD END?!",
+          "confidence": 0.726,
+          "text_ar": "لماذا يؤدي كل طريق إلى طريق مسدود؟!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "S-SERIOUSLY... WHY IS THERE NO PATH?",
+          "confidence": 0.947,
+          "text_ar": "حقاً... لماذا لا توجد مسارات واضحة؟"
+        },
+        {
+          "text": "THAT TREE LOOKS FAMILIAR... DID WE JUST ComE FROM THAT WAY?",
+          "confidence": 0.782,
+          "text_ar": "تلك الشجرة تبدو مألوفة... ألم نمر من هذا الاتجاه للتو؟"
+        },
+        {
+          "text": "NO, I THOUGHT IT WAS THERE...",
+          "confidence": 0.891,
+          "text_ar": "لا، اعتقدت أنها كانت هناك..."
+        },
+        {
+          "text": "W-WHAT SHOULD WE Do, YouR hIgh- - NESS?",
+          "confidence": 0.63,
+          "text_ar": "م-ماذا عسانا أن نعل، سمو الأمير؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "VGH!",
+          "confidence": 0.943,
+          "text_ar": "تباً!"
+        },
+        {
+          "text": "SNAP YOU'RE SUPPOSED TO FIND THE RIGHT PATH AND GUIDE ME!",
+          "confidence": 0.917,
+          "text_ar": "توقف! مفترض بك أن تجد الطريق الصحيح وتقودني!"
+        },
+        {
+          "text": "Y-YES, BUT...",
+          "confidence": 0.928,
+          "text_ar": "أ-أجل، لكن..."
+        },
+        {
+          "text": "WE SHOULD LOOK FOR MONSTERS FIRST.",
+          "confidence": 0.965,
+          "text_ar": "علينا البحث عن الوحوش أولاً."
+        },
+        {
+          "text": "I'LL GO AHEAD OF you, YouR HIGHNESS.",
+          "confidence": 0.703,
+          "text_ar": "سأتقدمك يا سمو الأمير."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "OH! G-GOOD! I KNEW I COULD TRuST YOU, BELLEZAC!",
+          "confidence": 0.791,
+          "text_ar": "أه! ج-جيد! كنت أعلم أنني أستطيع الاعتماد عليك، بيليزاك!"
+        },
+        {
+          "text": "I HEARD HE EVEN PREPARED Δ NEW DAGGER FOR THIS TOURNAMENT,",
+          "confidence": 0.918,
+          "text_ar": "لقد سمعت أنه جهز خنجراً جديداً خصيصاً لهذه البطولة،"
+        },
+        {
+          "text": "HE MUST REALLY BE DETERMINED TO BE MY RIGHT-HAND MAN THIS TIME!",
+          "confidence": 0.915,
+          "text_ar": "لا بد أنه مصمم حقاً على أن يكون ساعدي الأيمن هذه المرة!"
+        },
+        {
+          "text": "TH-THEN... I'LL TAKE UP THE REAR.",
+          "confidence": 0.898,
+          "text_ar": "إ-إذاً... سأحرس المؤخرة."
+        },
+        {
+          "text": "IT'S CALLED THE FOREST OF MADNESS, BuT NOTHING SHOULD HAPPEN TO US 1",
+          "confidence": 0.328,
+          "text_ar": "تُدعى غابة الجنون، لكن لا المفترض أن يصيبنا مكروه هنا!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THIS CLOSE TO THE ENTRANCE.",
+          "confidence": 0.913,
+          "text_ar": "بهذا القرب من المدخل."
+        },
+        {
+          "text": "HE'S RIGHT! WE HAVE ENOUGH MEN WITH US,",
+          "confidence": 0.927,
+          "text_ar": "إنه محق! لدينا ما يكفي من الرجال معنا،"
+        },
+        {
+          "text": "SO WE SHOULD HAVE NO PROBLEM FIGHTING OFF THE MONSTERS!",
+          "confidence": 0.904,
+          "text_ar": "لذا لن تواجهنا أي مشكلة في صد الوحوش!"
+        },
+        {
+          "text": "THEN I'LL START MOVING FORWARD.",
+          "confidence": 0.964,
+          "text_ar": "إذن سأبدأ بالتقدم للأمام."
+        },
+        {
+          "text": "FIRST, WE STAY NEAR THE ENTRANCE AND GET FAMILIAR WITH THE TERRAIN.",
+          "confidence": 0.923,
+          "text_ar": "أولاً، سنبقى قرب المدخل ونعتاد على التضاريس."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IT'S ONLY OUR FIRST DAY. IT WON'T BE TOO LATE FOR US TO VENTURE IN LATER.",
+          "confidence": 0.793,
+          "text_ar": "إنه يومنا الأول فقط. لن فوات الأوان لنتوغل لاحقاً."
+        },
+        {
+          "text": "THAT'S A GREAT IDEA!",
+          "confidence": 0.876,
+          "text_ar": "فكرة رائعة حقاً!"
+        },
+        {
+          "text": "I HAVE FAItH In you, youR HIGHNESS!",
+          "confidence": 0.797,
+          "text_ar": "أنا واثق بك يا سمو الأمير!"
+        },
+        {
+          "text": "HMPH/ MPHI IF WE'RE STUCK LIKE THIS, THE OTHERS ARE PROBaBLY In A SImILAR SITUATION TOO.",
+          "confidence": 0.758,
+          "text_ar": "همف! إن علقنا هكذا، فالبقية في موقف مشابه غالباً أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THAT IDIOT...",
+          "confidence": 0.939,
+          "text_ar": "ذلك الأحمق..."
+        },
+        {
+          "text": "WHAT COULD JUST THE FOUR OF THEM POSSIBLY DO?",
+          "confidence": 0.958,
+          "text_ar": "ما عساهما فعله أولئك الأربعة وحدهم بحق الجحيم؟"
+        },
+        {
+          "text": "WE HAVE MORe THAn TEN MEN ON OUR SIDE,",
+          "confidence": 0.83,
+          "text_ar": "لدينا أكثر من عشرة رجال في صفنا،"
+        },
+        {
+          "text": "THAT BASTARD'S GOT NO CHANCE OF WINNI--",
+          "confidence": 0.913,
+          "text_ar": "وليس لدى ذلك اللعين أي فرصة للفوز--"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "ARGH!",
+          "confidence": 0.994,
+          "text_ar": "آرغ!"
+        },
+        {
+          "text": "O SOMEONE MUST'VE FIRED △ FLARE!",
+          "confidence": 0.473,
+          "text_ar": "أوه، لا بد أن أحدهم أطلق إشارة ضوئية!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I-I KNOW THAT!",
+          "confidence": 0.929,
+          "text_ar": "أ-أنا أعلم ذلك!"
+        },
+        {
+          "text": "BUT... ISN'T THAT THE DIRECTION WE WERE HEADED?",
+          "confidence": 0.94,
+          "text_ar": "ولكن... أليست تلك هي الوجهة التي كنا نقصدها؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "DAMN IT..!",
+          "confidence": 0.911,
+          "text_ar": "تباً..!"
+        },
+        {
+          "text": "L-LET'S HEAD SOMEWHERE ELSE!",
+          "confidence": 0.97,
+          "text_ar": "ل-لنذهب إلى مكان آخر!"
+        },
+        {
+          "text": "I SHRLL MASTER GTHIs FAMILY",
+          "confidence": 0.802,
+          "text_ar": "سأحكم هذه العائلة"
+        }
+      ]
+    }
+  ]
+}
