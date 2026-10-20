@@ -1,0 +1,30 @@
+{
+  "manga": {
+    "valirscans.org__i-shall-master-this-family": {
+      "name": "i shall master this family",
+      "chapters": [
+        {
+          "label": "الفصل 202",
+          "num": "202",
+          "chNum": 202.0,
+          "sourceUrl": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/202",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/010.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/valirscans.org__i-shall-master-this-family/ch-202/011.webp"
+          ],
+          "originalBytes": 3310408,
+          "compressedBytes": 987462
+        }
+      ]
+    }
+  }
+}
