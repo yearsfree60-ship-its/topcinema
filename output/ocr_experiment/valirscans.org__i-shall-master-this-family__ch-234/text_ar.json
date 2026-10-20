@@ -1,0 +1,229 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "234",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Scans",
+          "confidence": 0.978,
+          "text_ar": "فريق الترجمة"
+        },
+        {
+          "text": "CHAPTER 235 I1S NOW AVAILABLE AND YOU CAN READ IT ON OUR WEBSITE",
+          "confidence": 0.862,
+          "text_ar": "الفصل 235 متوفر الآن ويمكنك قراءته على موقعنا"
+        },
+        {
+          "text": "o 酒 U",
+          "confidence": 0.045,
+          "text_ar": ""
+        },
+        {
+          "text": "Discord.gg/vsfJ9fgs99 ValirScan.com B 11444444",
+          "confidence": 0.855,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THIS CHAPTER WAS BROUGHT TO YOU WITH LOVE BY VALIRSCANS MAKE SURE YOU'RE READING ON OUR WEBSITE Links: Valirscans.com 我 discord.gg/vsfj9fgs99",
+          "confidence": 0.322,
+          "text_ar": "تم تقديم هذا الفصل إليكم بكل حب من فريق فاليرسكانز، تأكدوا من القراءة على موقعنا"
+        },
+        {
+          "text": "cans",
+          "confidence": 0.933,
+          "text_ar": ""
+        },
+        {
+          "text": "VALIRSCANS.COM e",
+          "confidence": 0.371,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WHICH BASTARD IS IT?",
+          "confidence": 0.969,
+          "text_ar": "أيّها اللعين، من يكون؟!"
+        },
+        {
+          "text": "...PARDON?",
+          "confidence": 0.9,
+          "text_ar": "...عذراً؟"
+        },
+        {
+          "text": "I AM ASKING WHICH SCOUNDRELS DARED TO POACH YOU, CLERIVAN!",
+          "confidence": 0.926,
+          "text_ar": "أنا أسأل أيّ حقير تجرأ على خطفك، يا كليريفان!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "WHATEVER CONDITIONS THEY OFFERED, I WILL TREAT YOU BETTER.",
+          "confidence": 0.969,
+          "text_ar": "مهما كانت الشروط التي عرضوها، سأعطيك أفضل منها."
+        },
+        {
+          "text": "PLEASE DON'T LEAVE.",
+          "confidence": 0.965,
+          "text_ar": "أرجوك، لا ترحل."
+        },
+        {
+          "text": "LADY FIRENTIA...",
+          "confidence": 0.952,
+          "text_ar": "ليدي فيرينتيا..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "THAT IS, ACTUALLY...",
+          "confidence": 0.959,
+          "text_ar": "في الواقع..."
+        },
+        {
+          "text": "peCo",
+          "confidence": 0.435,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "B VALIRSCANS.COM",
+          "confidence": 0.919,
+          "text_ar": ""
+        },
+        {
+          "text": "IWOULDLIKE YOU TO TAKE CHARGE OF THE LOMBARDITRADING COMPANY.",
+          "confidence": 0.93,
+          "text_ar": "أود منك أن تتولى إدارة شركة لومباردي التجارية."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IWANT THE HEAD OFTHEPELLETCORPORATION TO SUCCEED ME AS THE HEAD OF THE LOMBARDI TRADING COMPANY.",
+          "confidence": 0.929,
+          "text_ar": "أريد من رئيس شركة بيليه أن يخلفني في رئاسة شركة لومباردي التجارية."
+        },
+        {
+          "text": "WHAT ON EARTH...",
+          "confidence": 0.94,
+          "text_ar": "ما هذا بحق الجحيم..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "..IT WAS ME.",
+          "confidence": 0.844,
+          "text_ar": "...كنت أنا."
+        },
+        {
+          "text": "MON",
+          "confidence": 0.464,
+          "text_ar": ""
+        },
+        {
+          "text": "I WAS THE ONE WHO PROPOSED IT FIRST.",
+          "confidence": 0.944,
+          "text_ar": "أنا من اقترح ذلك أولاً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "...WHY WOULD YOU THINK OF SLCH A THING?",
+          "confidence": 0.907,
+          "text_ar": "...لماذا قد تفكرين في أمر كهذا؟"
+        },
+        {
+          "text": "WERE YOU NOT PERFORMING PERFECTLY WELL AS THE ACTING HEAD OF THE TRADING COMPANY? 此",
+          "confidence": 0.152,
+          "text_ar": "ألم تكوني تؤدين عملك بشكل ممتاز كـرئيسة بالوكالة للشركة التجارية؟"
+        },
+        {
+          "text": "IT MIGHT NOT HAVE BEEN OBVIOUS TO OTHERS.",
+          "confidence": 0.938,
+          "text_ar": "قد لا يكون ذلك واضحاً للآخرين."
+        },
+        {
+          "text": "HOWEVER...",
+          "confidence": 0.94,
+          "text_ar": "ولكن..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "EVEN THOUGH I HAVE TRIED TO INHERIT MY FATHER'S POSITION OVER THE PAST FEW YEARS...",
+          "confidence": 0.917,
+          "text_ar": "على الرغم من أنني حاولت تولي منصب والدي على مدى السنوات القليلة الماضية..."
+        },
+        {
+          "text": "I HAVE COME TO THE CONCLUSION THAT THIS IS BEYOND MY CAPABILITIES.",
+          "confidence": 0.922,
+          "text_ar": "لقد توصلت إلى استنتاج مفاده أن هذا يفوق قدراتي."
+        },
+        {
+          "text": "VALIRSCANS.COM 6",
+          "confidence": 0.403,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "IKNOW THE SUCCESSION PROCESS IS NOT EASY. BUT...",
+          "confidence": 0.886,
+          "text_ar": "أعلم أن عملية الخلافة ليست سهلة. ولكن..."
+        },
+        {
+          "text": "I KNOWMY OWN CAPABILITIES BEST.",
+          "confidence": 0.967,
+          "text_ar": "أنا اعرف قدراتي بنفسي جيداً."
+        }
+      ]
+    }
+  ]
+}
