@@ -1,0 +1,32 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "237",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/237",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-237",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n\nPage 002\n002-1. Shall laster 享 sFamil This ? 0 2 3",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "Shall laster 享 sFamil This ? 0 2 3",
+          "confidence": 0.143
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-237/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-237/002.webp"
+  ]
+}

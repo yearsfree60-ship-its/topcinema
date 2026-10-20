@@ -1,0 +1,163 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "236",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Scans",
+          "confidence": 0.975,
+          "text_ar": "فريق الفحص"
+        },
+        {
+          "text": "CHAPTER 237 1S NOW AVAILABLE AND YOU CAN READ IT ON OUR WEBSITE",
+          "confidence": 0.912,
+          "text_ar": "الفصل 237 متاح الآن ويمكنكم قراءته على موقعنا"
+        },
+        {
+          "text": "Discord.gg/vsfJ9fgs99 ValirScan.com B 五业全人人如人产心",
+          "confidence": 0.125,
+          "text_ar": "Discord.gg/vsfJ9fgs99 ValirScan.com"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THIS CHAPTER WAS BROUGHT TO YOU WITH LOVE BY VALIRSCANS MAKE SURE YOU'RE READING ON OUR WEBSITE Links: Valirscans.com discord.gg/vsfJ9fgs99",
+          "confidence": 0.955,
+          "text_ar": "قُدِّم لكم هذا الفصل بكل حب من فريـق ValirScans، احرصوا على القراءة في موقعنا"
+        },
+        {
+          "text": "cans",
+          "confidence": 0.967,
+          "text_ar": "فريق الفحص"
+        },
+        {
+          "text": "VALIRSCANS.COM 6",
+          "confidence": 0.402,
+          "text_ar": "VALIRSCANS.COM"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "尔 KNINO",
+          "confidence": 0.068,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "IAMSO EMBARRASSE..!!!",
+          "confidence": 0.922,
+          "text_ar": "أنا محرِجة للغاية حقًا...!!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "PEREZ,GET OFF BEFORE WE LEAVE THE IMPERIAL PALACE.",
+          "confidence": 0.97,
+          "text_ar": "بيريز، ابتعد قبل أن نغادر القصر الإمبراطوري."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "YOU SEEMED BUSY WITH YOUR PRIOR ENGAGEMENT. WHY DID YOU FOLLOW ME HERE?",
+          "confidence": 0.955,
+          "text_ar": "بدوْتَ مشغولًا بارتباطاتك السابقة، لماذا لحقت بي إلى هنا؟"
+        },
+        {
+          "text": "S VALIRSCANS.COM",
+          "confidence": 0.292,
+          "text_ar": "VALIRSCANS.COM"
+        },
+        {
+          "text": "..TIA,WAIT A MOMENT.",
+          "confidence": 0.878,
+          "text_ar": "..تيا، انتظري لبرهة."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "VOn",
+          "confidence": 0.44,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "WHY...WERE YOu CRYING?",
+          "confidence": 0.792,
+          "text_ar": "لماذا... كنت تبكي؟"
+        },
+        {
+          "text": "..NO, I WASN'T CRYING.",
+          "confidence": 0.839,
+          "text_ar": "..لا، لم أكن أبكي."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": []
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "5 VALIRSCANS.COM",
+          "confidence": 0.192,
+          "text_ar": "VALIRSCANS.COM"
+        },
+        {
+          "text": "TIA, PLEASE... TELL ME.",
+          "confidence": 0.938,
+          "text_ar": "تيا، أرجوكِ... أخبريني."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "..HUH?",
+          "confidence": 0.817,
+          "text_ar": "..هاه؟"
+        }
+      ]
+    }
+  ]
+}
