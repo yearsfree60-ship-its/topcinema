@@ -1,0 +1,1352 @@
+{
+  "manga_id": "arenascan.com__i-ll-save-this-damned-family",
+  "chapter_num": "193",
+  "manga_title": "I’ll Save This Damned Family!",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Violet WelcometotheworldofVioletan -Where beauty meets storytelling Why Violet Scans? Curated webtoons with heart and soul High-qualitytranslationswithafemininetouch Aeprds",
+          "confidence": 0.618,
+          "text_ar": "مرحبًا بكم في عالم فايولت - حيث يلتقي الجمال بس سرد القصص. لماذا فايولت سكانز؟ ونبتونز منسقة من القلب والروح، ترجمات عالية الجودة لمسة أنثوية."
+        },
+        {
+          "text": "Join our Comunity Now! Real-timeupdatesonnewreleases Awelcomingspaceforromance&fantasylovers eri StartyourjourneyatVioletscans.comnow!",
+          "confidence": 0.535,
+          "text_ar": "انضموا إلى مجتمعنا الآن! تحديثات فورية للإصدارات الجديدة، مساحة مرحبة لعشاق الرومانسية والفانطازيا. ابدأ رحلتك في موقع Violetscans.com الآن!"
+        },
+        {
+          "text": "0 引 烈合中",
+          "confidence": 0.24,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SUNDAY MORNING.",
+          "confidence": 0.981,
+          "text_ar": "صباح الأحد."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IT'S BEEN OVER FIFTEEN DAYS SINCE THE EMPRESS FELL BEDRIDDEN.",
+          "confidence": 0.953,
+          "text_ar": "لقد مر أكثر من خمسة عشر يومًا منذ أن أصبحت الإمبراطورة طريحة الفراش."
+        },
+        {
+          "text": "THE EMPRESS'S PALACE HAS ENTERED AN EMERGENCYDUTY SYSTEM,",
+          "confidence": 0.935,
+          "text_ar": "لقد دخل قصر الإمبراطورة في نظام مناوبة طارئة،"
+        },
+        {
+          "text": "AND AS A MEMBEROF THE PERMANENT AIDE OFFICE,I WAS CALLeD IN HERE EVEN THOUGH",
+          "confidence": 0.797,
+          "text_ar": "وبصفتي عضواً في مكتب المساعدين الدائمين، تم استدعائي إلى هنا على الرغم من..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "ITS MY DAY OFF.",
+          "confidence": 0.812,
+          "text_ar": "أنه يوم عطلتي."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "INMYSITUATION, THIS ISACTUALLY A GOOD THING.",
+          "confidence": 0.937,
+          "text_ar": "في وضعي هذا، يعد هذا أمراً جيداً في الواقع."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.93,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THIS IS A COMMON OCCURRENCEINTHE INNER PALACE.",
+          "confidence": 0.987,
+          "text_ar": "هذا أمر شائع في القصر الداخلي."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "PARDON?",
+          "confidence": 0.998,
+          "text_ar": "عذراً؟"
+        },
+        {
+          "text": "SHE HASN'T BEEN RECEIVING AUDIENCES FOR FIFTEEN DAYS.",
+          "confidence": 0.981,
+          "text_ar": "لم تكن تقابل أحداً طوال خمسة عشر يوماً."
+        },
+        {
+          "text": "THEY'RE JUST EXCHANGING WHATEVER INFORMATION THEY KNOW TO GET A READ ON THE CURRENT SITUATION.",
+          "confidence": 0.975,
+          "text_ar": "إنهن يتبادلن أي معلومات يعرفنها لتكوين فكرة عن الوضع الحالي."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "AH.ISEE.",
+          "confidence": 0.985,
+          "text_ar": "آه، أدرك ذلك."
+        },
+        {
+          "text": "THEN LET ME KNOW AS SOON AS YOU'RE",
+          "confidence": 0.925,
+          "text_ar": "إذن أعلميني بمجرد أن تنتهي من..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "DONE SORTING THINGS OUT.",
+          "confidence": 0.962,
+          "text_ar": "فرز الأمور."
+        },
+        {
+          "text": "YES, HEAD MAID.",
+          "confidence": 0.95,
+          "text_ar": "حاضر، رئيسة الخادمات."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "9 ..IT'S TOO QUIET.",
+          "confidence": 0.577,
+          "text_ar": "...الأمر هادئ للغاية."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONY AT VIOLETSCANS.COM",
+          "confidence": 0.898,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "IKNOW, RIGHT? IT'S LIKE A TOMB... NO!IT'S LIKE A LIBRARY.",
+          "confidence": 0.935,
+          "text_ar": "أأكد لك ذلك! الأمر أشبه بقبر... لا! إنه أشبه بمكتبة."
+        },
+        {
+          "text": "RIGHT.IT'S LIKE A LIBRARY.",
+          "confidence": 0.984,
+          "text_ar": "صحيح، إنه أشبه بمكتبة."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "BY THE WAY, DID YOU HEAR? THE RuMoRS ABoUT HiS HIGHNESS THE 3RD PRINCE LATELY.",
+          "confidence": 0.778,
+          "text_ar": "بالمناسبة، هل سمعتن؟ الشائعات حول سمو الأمير الثالث مؤخراً."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "JOSEF?",
+          "confidence": 0.993,
+          "text_ar": "جوزيف؟"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "AH.IHEARD THEM TOO.",
+          "confidence": 0.961,
+          "text_ar": "آه، لقد سمعت بها أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "YOU MEAN THE TALK ABOUT HOW ALL THE MATTERSMANAGEDBY HIS HIGHNESS THE 1ST PRINCE",
+          "confidence": 0.93,
+          "text_ar": "هل تقصدين الحديث عن كيف أن جميع الأمور التي كان يديرها سمو الأمير الأول"
+        },
+        {
+          "text": "AND THE TOULOUSE GUILD HAVE BEEN HANDED OVER TO HIS HIGHNESS THE 3RD PRINCE?",
+          "confidence": 0.922,
+          "text_ar": "ونقابة تولوز قد تم تسليمها إلى سمو الأمير الثالث؟"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "YES.SO THERE ARE RUMORS EVERYWHERE THAT THEREALPOWERFORTHE NEXT IMPERIAL SUCCESSION HAS SHIFTED.",
+          "confidence": 0.957,
+          "text_ar": "نجل. لذا توجد شائعات في كل مكان بأن السلطة الحقيقية لخلافة الإمبراطورية قد تحولت."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.966,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "THEN WHY HASN'T LIS HIGUNFSG TUE",
+          "confidence": 0.806,
+          "text_ar": "إذن لماذا لم يظهر سمو..."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "TSTIONLSSTD 3RD PRINCE SHOWN HIS FACE AROUND HERE AT ALL?",
+          "confidence": 0.5,
+          "text_ar": "الأمير الثالث بوجهه هنا على الإطلاق؟"
+        },
+        {
+          "text": "HE USED TO COME RUNNING AT THE DROP OF A HAT EVEN IF HER MAJESTY THE EMPRESS JUST SHOWED SIGNS OF A COLD...",
+          "confidence": 0.879,
+          "text_ar": "اعتاد أن يأتي مهرولاً فور ظهور أي علامات تدل على إصابة جلالة الإمبراطورة بالزكام حتى..."
+        },
+        {
+          "text": "COULDIT BE THAT THEEMPRESS IS NO LONGER IMPORTANT TO HIM..?",
+          "confidence": 0.938,
+          "text_ar": "أيعقل أن الإمبراطورة لم تعد مهمة بالنسبة له..؟"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": []
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "Mloh",
+          "confidence": 0.585,
+          "text_ar": "ممم."
+        },
+        {
+          "text": "BECAUSE THEIR RELATIONSHIP HAS SOURED.",
+          "confidence": 0.97,
+          "text_ar": "لأن علاقتهما قد ساءت."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "ASHIFTINPOWER! NOWISTHEONLYTIME TOJUMPSHIPFROM THE 1STPRINCETOTHE3RD PRINCE!",
+          "confidence": 0.966,
+          "text_ar": "تحول في السلطة! الآن هو الوقت المناسب للانتقال من صف الأمير الأول إلى صف الأمير الثالث!"
+        },
+        {
+          "text": "THE EARLYBIRDCATCHES THE WORM, RIGHT?SO MAKE YOURMOVE!",
+          "confidence": 0.935,
+          "text_ar": "الطير المبكر يلتقط الدودة، أليس كذلك؟ لذا قومي بحركتك!"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "I JUST REMEMBERED SOMETHINGIHAVE TO DO. I'LL BE GOING NOW. $\\fra}}",
+          "confidence": 0.701,
+          "text_ar": "لقد تذكرت شيئاً يجب علي فعله. سأذهب الآن."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "LET'S GO TOGETHER.I ALSO HAVE AN URGENT MATTER.",
+          "confidence": 0.958,
+          "text_ar": "لنذهب معاً. لدي أمر عاجل أيضاً."
+        },
+        {
+          "text": "ME TOO.I HAVE SOME BUSINESS AT HOME TODAY AS WELL.",
+          "confidence": 0.952,
+          "text_ar": "وأنا أيضاً. لدي بعض الأعمال في المنزل اليوم."
+        },
+        {
+          "text": "HOHOHO. LET'S GO TOGETHER!",
+          "confidence": 0.957,
+          "text_ar": "هوهوهو. لنذهب معاً!"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "REAR THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.923,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "A SHORT WHILE LATER.",
+          "confidence": 0.951,
+          "text_ar": "بعد مرور وقت قصير."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "THANK YOU FOR BRINGING THIS OVER.",
+          "confidence": 0.924,
+          "text_ar": "شكراً لإحضار هذا."
+        },
+        {
+          "text": "IMPERIAL SPECIALTY GOODS DELIVERY LIST REQUEST",
+          "confidence": 0.969,
+          "text_ar": "طلب قائمة تسليم السلع الإمبراطورية الخاصة"
+        },
+        {
+          "text": "YES. IT'S ON MY",
+          "confidence": 0.913,
+          "text_ar": "نعم. إنه في طريقي..."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "WAY, SO I'LL MAKE SURE IT'S DELIVERED, HEAD MAID.",
+          "confidence": 0.975,
+          "text_ar": "لذا سأحرص على تسليمه، رئيسة الخادمات."
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "THE ESTIMATED TIMEUNTILTHE FAMILY'S RUINIS ABOUT 5 MONTHS FROMNOW! R",
+          "confidence": 0.117,
+          "text_ar": "الوقت المقدر حتى دمار العائلة هو حوالي 5 أشهر من الآن!"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "FORTUNATELY, LOGAN ISN'T IN THE CAPITAL,",
+          "confidence": 0.918,
+          "text_ar": "لحسن الحظ، لوغان ليس في العاصمة،"
+        },
+        {
+          "text": "/JUSTNEEDTOHEAD EASTUNDERTHEPRETEXTOF HELPINGLOGAN'SBUSINESSAND STICKRIGHTBY HISSIDEFOR THE REMAINING 5 MONTHS.",
+          "confidence": 0.967,
+          "text_ar": "كل ما يحتاجه الأمر هو التوجه شرقاً تحت ذريعة مساعدة عمل تجاري لـ لوغان والبقاء بجانبه طوال الأشهر الخمسة المتبقية."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "ASOFNOW, LOGAN,WHOISSTICKING CLOSE TO THAT BURTON GUY, HAS THE HIGHEST PROBABILITYOF BEING THE TRIGGER!",
+          "confidence": 0.924,
+          "text_ar": "اعتباراً من الآن، لوغان، الذي يلصق نفسه بذلك المدعو بيرتون، لديه أعلى احتمال ليكون هو المسبب!"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.955,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "I-CANJUST SUBMITALEAVE OFABSENCEORA RESIGNATION LETTER TO THEPALACE.",
+          "confidence": 0.875,
+          "text_ar": "يمكنني ببساطة تقديم طلب إجازة أو استقالة إلى القصر."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "MYORIGINAL GOALFORENTERING THEPALACEWASTO PREVENT THEFAMILY'S A mere RUIN ANYWAY. resignation letter is",
+          "confidence": 0.937,
+          "text_ar": "كان هدفي الأساسي من دخول القصر هو منع دمار العائلة على أي حال. رسالة استقالة بسيطة ستكون..."
+        },
+        {
+          "text": "/TWOULD BE THEICINGONTHE CAKEIFICOULDFIND THE MAP TOO, BUT/ DON'T HAVE MUCH HOPE ANYMORE.",
+          "confidence": 0.911,
+          "text_ar": "سيكون بمثابة الكريمة على الكعكة لو تمكنت من العثور على الخريطة أيضاً، لكن لم يعد لدي الكثير من الأمل."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "IFONLY /HADN'TSEEN THAT DAMN WORDTRAP!",
+          "confidence": 0.93,
+          "text_ar": "لو أنني لم أرى فخ الكلمات اللعين ذاك!"
+        },
+        {
+          "text": "/WOULDHAVE GIVENUPONFINDING THE MAP.",
+          "confidence": 0.962,
+          "text_ar": "لكنت قد استسلمت عن إيجاد الخريطة."
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "ONCEI LOOKAROUND HERE, THE PUBLIC SECURITY",
+          "confidence": 0.943,
+          "text_ar": "بمجرد أن أنتهي من تفقد هنا، إدارة الأمن العام..."
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "image_id": 35,
+      "sentences": [
+        {
+          "text": "DEPARTMENT IS THE LAST ONE.",
+          "confidence": 0.98,
+          "text_ar": "هي الأخيرة."
+        },
+        {
+          "text": "MINISTRY OF FINANCE WAREHOUSE",
+          "confidence": 0.937,
+          "text_ar": "مستودع وزارة المالية"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "image_id": 36,
+      "sentences": [
+        {
+          "text": "REAR THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.907,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "HAA, SERIOUSLY... THIS IS LIKEFINDING A NEEDLE IN A HAYSTACK.",
+          "confidence": 0.875,
+          "text_ar": "تباً، بجدية... هذا أشبه بالبحث عن إبرة في كومة قش."
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "image_id": 37,
+      "sentences": []
+    },
+    {
+      "page": 38,
+      "image_id": 38,
+      "sentences": []
+    },
+    {
+      "page": 39,
+      "image_id": 39,
+      "sentences": []
+    },
+    {
+      "page": 40,
+      "image_id": 40,
+      "sentences": [
+        {
+          "text": "COUNT! HIS HIGHNESS THE 2ND PRINCE HAS COME TO VISIT.",
+          "confidence": 0.944,
+          "text_ar": "ايها الكونت! لقد جاء سمو الأمير الثاني للزيارة."
+        },
+        {
+          "text": "NN HEONLY BROUGHT FOUR GUARDS WITH HIM!",
+          "confidence": 0.687,
+          "text_ar": "ولقد أحضر معه أربعة حراس فقط!"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "image_id": 41,
+      "sentences": [
+        {
+          "text": "WHAT?WHO? THATGUY... NO, HIS HIGHNESS THE 2ND PRINCE IS AT MY NK MANSION?",
+          "confidence": 0.416,
+          "text_ar": "ماذا؟ من؟ ذلك الرفيق... لا، سمو الأمير الثاني في قصرِي؟"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "image_id": 42,
+      "sentences": [
+        {
+          "text": "YES. HIS HIGHNESS ENTERED THE MANSION ALONE, COUNT.",
+          "confidence": 0.907,
+          "text_ar": "نعم. لقد دخل سموه القصر بمفرده، أيها الكونت."
+        },
+        {
+          "text": "So you're saying...",
+          "confidence": 0.924,
+          "text_ar": "إذن أنت تقصد..."
+        },
+        {
+          "text": "HE LEFT ALL HIS GUARDSATTHEMAIN GATEANDCAMEINTOTHE MANSION ALONE?",
+          "confidence": 0.907,
+          "text_ar": "أنه ترك كل حراسه عند البوابة الرئيسية ودخل القصر بمفرده؟"
+        }
+      ]
+    },
+    {
+      "page": 43,
+      "image_id": 43,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM oooooooooo ooo",
+          "confidence": 0.422,
+          "text_ar": "اقرأ هذا العمل حصرياً على VIOLETSCANS.COM"
+        },
+        {
+          "text": "YES. THAT'S EXACTLY RIGHT.",
+          "confidence": 0.961,
+          "text_ar": "نعم. هذا صحيح تماماً."
+        }
+      ]
+    },
+    {
+      "page": 44,
+      "image_id": 44,
+      "sentences": [
+        {
+          "text": "NANAN. 00 - 0 OQ",
+          "confidence": 0.106,
+          "text_ar": "ممم."
+        },
+        {
+          "text": "LEAVINGHISGUARDS BEHINDMEANSHE BELIEVES THERE ARE NOENEMIESHERE.",
+          "confidence": 0.934,
+          "text_ar": "ترك حراسه خلفه يعني أنه يؤمن بأنه لا يوجد أعداء هنا."
+        },
+        {
+          "text": "THAT'S AN ATTITUDE SHOWNONLYTOONE'S CLOSESTVASSALS OR FRIENDS.WHICH MEANS?",
+          "confidence": 0.952,
+          "text_ar": "تلك هي الموقف الذي لا يظهر إلا لأتباع المرء المقربين أو أصدقائه. مما يعني؟"
+        }
+      ]
+    },
+    {
+      "page": 45,
+      "image_id": 45,
+      "sentences": [
+        {
+          "text": "HURRY, LET'S GO. I'LL KNOW ONCE I SEE HIM.",
+          "confidence": 0.926,
+          "text_ar": "بسرعة، لنذهب. سأعرف بمجرد أن أراه."
+        }
+      ]
+    },
+    {
+      "page": 46,
+      "image_id": 46,
+      "sentences": [
+        {
+          "text": "YES!",
+          "confidence": 0.991,
+          "text_ar": "حاضر!"
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "image_id": 47,
+      "sentences": [
+        {
+          "text": "I DON'T FEEL ANY AURA.WHERE DID SHE GO?",
+          "confidence": 0.93,
+          "text_ar": "لا أشعر بأي هالة. إلى أين ذهبت؟"
+        },
+        {
+          "text": "平进 n",
+          "confidence": 0.421,
+          "text_ar": "هالة."
+        }
+      ]
+    },
+    {
+      "page": 48,
+      "image_id": 48,
+      "sentences": [
+        {
+          "text": "人* 人*人人人",
+          "confidence": 0.648,
+          "text_ar": "خطوات."
+        },
+        {
+          "text": "HOOK",
+          "confidence": 0.58,
+          "text_ar": "إمساك!"
+        }
+      ]
+    },
+    {
+      "page": 49,
+      "image_id": 49,
+      "sentences": [
+        {
+          "text": "I-I GREET HIS HIGHNESS THE 2ND PRINCE KYLE, THE FUTURE OF THE EMPIRE!",
+          "confidence": 0.922,
+          "text_ar": "أ-أُرحب بصاحب السمو الأمير الثاني كايل، مستقبل الإمبراطورية!"
+        },
+        {
+          "text": "IT'S BEEN A WHILE.",
+          "confidence": 0.968,
+          "text_ar": "لقد مضى وقت طويل."
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "image_id": 50,
+      "sentences": [
+        {
+          "text": "THEY SAID YOU STARTED MOVING FROM THE ADMINISTRATIVE BUILDING ASSOON AS YOU HEARD THE NEWS FROM THE GUARDS.",
+          "confidence": 0.919,
+          "text_ar": "قالوا إنك تحركت من مبنى الإدارة فور سماعك للخبر من الحراس."
+        },
+        {
+          "text": "I'LL ESCORT YOU TO THE RECEPTION ROOM.",
+          "confidence": 0.876,
+          "text_ar": "سأرافقك إلى غرفة الاستقبال."
+        }
+      ]
+    },
+    {
+      "page": 51,
+      "image_id": 51,
+      "sentences": [
+        {
+          "text": "THANK YOU.",
+          "confidence": 0.88,
+          "text_ar": "شكراً لك."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.952,
+          "text_ar": "نعم."
+        }
+      ]
+    },
+    {
+      "page": 52,
+      "image_id": 52,
+      "sentences": [
+        {
+          "text": "PAKVON?",
+          "confidence": 0.986,
+          "text_ar": "باكيفون؟"
+        },
+        {
+          "text": "VIOLETSCANS.COM",
+          "confidence": 0.993,
+          "text_ar": "فايولت سكانز"
+        },
+        {
+          "text": "TO THINK ID HEAR A \"THANK YOU\" FROM THE MOUTH OFTHESAME PERSON",
+          "confidence": 0.916,
+          "text_ar": "التفكير في أنني أسمع كلمة \"شكراً\" من فم نفس الشخص"
+        },
+        {
+          "text": "WHOWAS RUTHLESSLYBARKING ORDERS JUST LAST YEAR!",
+          "confidence": 0.959,
+          "text_ar": "الذي كان يطلق الأوامر بقسوة قبل عام واحد فقط!"
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "image_id": 53,
+      "sentences": [
+        {
+          "text": "WHAT? IS SOMETHING WRONG?",
+          "confidence": 0.948,
+          "text_ar": "ماذا؟ هل هناك خطب ما؟"
+        }
+      ]
+    },
+    {
+      "page": 54,
+      "image_id": 54,
+      "sentences": [
+        {
+          "text": "AH.IT'S NOTHING. WHAT KIND OF TEA SHOULDI BRING YOU, YOURHIGHNESS?",
+          "confidence": 0.914,
+          "text_ar": "آه. لا شيء. أي نوع من الشاي يجب أن أحضره لك يا سمو الأمير؟"
+        },
+        {
+          "text": "I'LL HAVE THE SAME AS THE COUNT.",
+          "confidence": 0.95,
+          "text_ar": "سأكتفي بما سيحظى به الكونت."
+        }
+      ]
+    },
+    {
+      "page": 55,
+      "image_id": 55,
+      "sentences": [
+        {
+          "text": "YES, yOUR HIGHNESS.THEN I'LL GUIDE YOu.",
+          "confidence": 0.752,
+          "text_ar": "حاضر يا سمو الأمير. إذن سأرشدك."
+        },
+        {
+          "text": "PLEASE DO.",
+          "confidence": 0.958,
+          "text_ar": "افعل ذلك من فضلك."
+        }
+      ]
+    },
+    {
+      "page": 56,
+      "image_id": 56,
+      "sentences": [
+        {
+          "text": "喜 WHERE DID SHE GO? 、",
+          "confidence": 0.546,
+          "text_ar": "أين ذهبت؟"
+        }
+      ]
+    },
+    {
+      "page": 57,
+      "image_id": 57,
+      "sentences": [
+        {
+          "text": "WHAT A SHAME.I WANTED TO SEE HER.",
+          "confidence": 0.942,
+          "text_ar": "يا للعار. كنت أرغب في رؤيتها."
+        }
+      ]
+    },
+    {
+      "page": 58,
+      "image_id": 58,
+      "sentences": [
+        {
+          "text": "VOLETSCANS.COM",
+          "confidence": 0.803,
+          "text_ar": "فايولت سكانز"
+        }
+      ]
+    },
+    {
+      "page": 59,
+      "image_id": 59,
+      "sentences": [
+        {
+          "text": "N-NO. Y-YOUR HIGHNESS!",
+          "confidence": 0.968,
+          "text_ar": "ل-لا. ص-صاحب السمو!"
+        },
+        {
+          "text": "OURCOUNT MUST HAVEBEEN STARTLED.",
+          "confidence": 0.96,
+          "text_ar": "لا بد أن كونتونا قد فزع."
+        }
+      ]
+    },
+    {
+      "page": 60,
+      "image_id": 60,
+      "sentences": [
+        {
+          "text": "A SHORT WHILE LATER.",
+          "confidence": 0.953,
+          "text_ar": "بعد فترة قصيرة."
+        }
+      ]
+    },
+    {
+      "page": 61,
+      "image_id": 61,
+      "sentences": [
+        {
+          "text": "YOU'RE WORKING EVEN THOUGH IT'S SUNDAY, I SEE.",
+          "confidence": 0.891,
+          "text_ar": "أراك تعمل حتى في يوم الأحد."
+        }
+      ]
+    },
+    {
+      "page": 62,
+      "image_id": 62,
+      "sentences": [
+        {
+          "text": "WORK HAS BEEN PILING UP, SO I'VE BEEN QUITE BUSY LATELY, YOUR HIGHNESS.",
+          "confidence": 0.935,
+          "text_ar": "لقد تراكمت أعمال كثيرة، لذا كنت مشغولاً للغاية مؤخراً يا سمو الأمير."
+        },
+        {
+          "text": "DON'T YOU HAVE YOUR CHILDREN?",
+          "confidence": 0.869,
+          "text_ar": "أليس لديك أطفال؟"
+        }
+      ]
+    },
+    {
+      "page": 63,
+      "image_id": 63,
+      "sentences": [
+        {
+          "text": "VIOLETSCANS.COM",
+          "confidence": 0.993,
+          "text_ar": "فايولت سكانز"
+        },
+        {
+          "text": "HAHA.THEY ARE ALL BUSY.",
+          "confidence": 0.98,
+          "text_ar": "هاها. إنهم مشغولون جميعاً."
+        },
+        {
+          "text": "CHLOE WENT TO THE CAPITAL BRANCH,",
+          "confidence": 0.969,
+          "text_ar": "ذهبت كلويه إلى فرع العاصمة،"
+        },
+        {
+          "text": "AND LOGAN HAS GONE TO THE EAST, AS YOUR HIGHNESS ALREADYKNOWS.",
+          "confidence": 0.971,
+          "text_ar": "وذهب لوغان إلى الشرق، كما يعلم سموك بالفعل."
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "image_id": 64,
+      "sentences": [
+        {
+          "text": "Wo上 00",
+          "confidence": 0.422,
+          "text_ar": "وهو كذلك"
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "image_id": 65,
+      "sentences": [
+        {
+          "text": "...IS THERE SOMETHING ON MY FACE?",
+          "confidence": 0.964,
+          "text_ar": "...هل هناك شيء على وجهي؟"
+        },
+        {
+          "text": "YOU MENTIONED 二",
+          "confidence": 0.634,
+          "text_ar": "لقد ذكرت"
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "image_id": 66,
+      "sentences": [
+        {
+          "text": "UPIOYOUNG MASTER LOGAN.",
+          "confidence": 0.584,
+          "text_ar": "السيد الشاب لوغان."
+        },
+        {
+          "text": "TERA HAD SPECIAL HOLIDAY DUTY AT",
+          "confidence": 0.982,
+          "text_ar": "كان لدى تيرا مناوبة عطلة خاصة في"
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "image_id": 67,
+      "sentences": [
+        {
+          "text": "THE PALACE TODAY, SO SHE WENT TO WORK.",
+          "confidence": 0.955,
+          "text_ar": "القصر اليوم، لذا ذهبت إلى العمل."
+        },
+        {
+          "text": "I GUESS THERE ARENO DECENTTALENTS IN THE PALACE, SEEING AS THEY KEEP CALLING MY PRECIOUS DAUGHTER IN AT THE DROP OF A HAT...",
+          "confidence": 0.927,
+          "text_ar": "أظن أنه ليس هناك مواهب لائقة في القصر، بالنظر إلى أنهم يستمرون في استدعاء ابنتي العزيزة هكذا..."
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "image_id": 68,
+      "sentences": [
+        {
+          "text": "Ok>F! HAHAHA.I'M NOT CRITICIZING THE PALACE, YOUR HIGHNESS.",
+          "confidence": 0.574,
+          "text_ar": "هاهاها. أنا لا أُنتقد القصر يا سمو الأمير."
+        },
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.963,
+          "text_ar": "اقرأ هذا العمل حصرياً على فايولت سكانز"
+        },
+        {
+          "text": "TALENTS LIKE SECOND AIDE TERA ARE QUITE RARE.",
+          "confidence": 0.953,
+          "text_ar": "مواهب مثل المساعدة الثانية تيرا نادرة للغاية."
+        }
+      ]
+    },
+    {
+      "page": 69,
+      "image_id": 69,
+      "sentences": [
+        {
+          "text": "AS EXPECTED, YOUR HIGHNESS ALSO VALUES TERA HIGHLY. HAHA.",
+          "confidence": 0.967,
+          "text_ar": "كما هو متوقع، سموك يقدر تيرا عالياً أيضاً. هاها."
+        },
+        {
+          "text": "BUT THEN WHY DID YOU KICK TERA OUT FOR NEGLECTING HER DUTIES BACK THEN..?",
+          "confidence": 0.883,
+          "text_ar": "ولكن إذن لماذا طردت تيرا لإهمالها واجباتها في ذلك الحين..؟"
+        }
+      ]
+    },
+    {
+      "page": 70,
+      "image_id": 70,
+      "sentences": [
+        {
+          "text": "I SUPPOSEIWASTOO NARROW-MINDED.",
+          "confidence": 0.952,
+          "text_ar": "أظن أنني كنت ضيق الأفق حينها."
+        },
+        {
+          "text": "WHAT KINDOF NONSENSE IS THAT?!",
+          "confidence": 0.963,
+          "text_ar": "أي هراء هذا؟!"
+        }
+      ]
+    },
+    {
+      "page": 71,
+      "image_id": 71,
+      "sentences": [
+        {
+          "text": "BUT WHY ISHESMILING SOWARMLY LIKE THAT?",
+          "confidence": 0.947,
+          "text_ar": "ولكن لماذا يبتسم بمثل هذه الدفء؟"
+        },
+        {
+          "text": "HUH?HE'SNOT THETYPEOFGUY TO SMILE LIKE THIS,IS HE?",
+          "confidence": 0.949,
+          "text_ar": "هاه؟ إنه ليس من نوع الرجال الذين يبتسمون هكذا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "image_id": 72,
+      "sentences": []
+    },
+    {
+      "page": 73,
+      "image_id": 73,
+      "sentences": [
+        {
+          "text": "COUNT.ICAME URGENTLY BECAUSE I HAVE A REQUEST.",
+          "confidence": 0.963,
+          "text_ar": "أيها الكونت. لقد أتيت على عجلة لأني أملك طلباً."
+        },
+        {
+          "text": "PLEASE SPEAK, YOUR HIGHNESS.",
+          "confidence": 0.919,
+          "text_ar": "تفضل بالتحدث يا سمو الأمير."
+        }
+      ]
+    },
+    {
+      "page": 74,
+      "image_id": 74,
+      "sentences": [
+        {
+          "text": "COULDYOU PLEASE CALL YOUR SERVANT,ED?",
+          "confidence": 0.896,
+          "text_ar": "هل يمكنك من فضلك استدعاء خادمك، إيد؟"
+        }
+      ]
+    },
+    {
+      "page": 75,
+      "image_id": 75,
+      "sentences": [
+        {
+          "text": "MYSERVANT?WAIT, HOWDIDYOUKNOW ED IS MY SERVANT?",
+          "confidence": 0.955,
+          "text_ar": "خادمي؟ انتظر، كيف عرفت أن إيد هو خادمي؟"
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "image_id": 76,
+      "sentences": [
+        {
+          "text": "I WILL EXPLAIN ONCe YOU CALL HIM.",
+          "confidence": 0.886,
+          "text_ar": "سأشرح بمجرد أن تستدعيه."
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "image_id": 77,
+      "sentences": [
+        {
+          "text": "HE HAS THE DAY OFF TODAY, SOITHOUGHT HE'D BE IN HIS QUARTERS RIGHT NOW, BUT HE'S NOT THERE.",
+          "confidence": 0.929,
+          "text_ar": "لديه إجازة اليوم، لذا اعتقدت أنه سيكون في غرفته الآن، لكنه ليس هناك."
+        },
+        {
+          "text": "IF YOU GIVE ME MORE TIME, I'L FINDHIM.",
+          "confidence": 0.902,
+          "text_ar": "إذا منحتني وقتاً أطول، فسأجده."
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "image_id": 78,
+      "sentences": [
+        {
+          "text": "HMM. NEVER MIND.",
+          "confidence": 0.986,
+          "text_ar": "مم. لا تهتم."
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "image_id": 79,
+      "sentences": [
+        {
+          "text": "WHY ARE YOU SUDDENLY ACTI.d",
+          "confidence": 0.737,
+          "text_ar": "لماذا تتصرف فجأة..."
+        },
+        {
+          "text": "SHH.",
+          "confidence": 0.982,
+          "text_ar": "صه."
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "image_id": 80,
+      "sentences": [
+        {
+          "text": "ony",
+          "confidence": 0.349,
+          "text_ar": "أوني"
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "image_id": 81,
+      "sentences": [
+        {
+          "text": "ARE THOSE TWO DOORS THE ONLY ONES CONNECTED TO THIS RECEPTION ROOM?",
+          "confidence": 0.847,
+          "text_ar": "هل هاتان البابان هما الوحيدتان المتصلتان بغرفة الاستقبال هذه؟"
+        },
+        {
+          "text": "VIOLETSCANS.COM",
+          "confidence": 0.99,
+          "text_ar": "فايولت سكانز"
+        }
+      ]
+    },
+    {
+      "page": 82,
+      "image_id": 82,
+      "sentences": [
+        {
+          "text": "YES.THAT'S CORRECT, YOUR HIGHNESS. BUT...WHY? 纪",
+          "confidence": 0.129,
+          "text_ar": "نعم. هذا صحيح يا سمو الأمير. ولكن... لماذا؟"
+        }
+      ]
+    },
+    {
+      "page": 83,
+      "image_id": 83,
+      "sentences": [
+        {
+          "text": "PLEASE WAIT A MOMENT,COUNT.",
+          "confidence": 0.899,
+          "text_ar": "انتظر لحظة من فضلك أيها الكونت."
+        }
+      ]
+    },
+    {
+      "page": 84,
+      "image_id": 84,
+      "sentences": []
+    },
+    {
+      "page": 85,
+      "image_id": 85,
+      "sentences": [
+        {
+          "text": "享 分享",
+          "confidence": 0.316,
+          "text_ar": "مشاركة"
+        }
+      ]
+    },
+    {
+      "page": 86,
+      "image_id": 86,
+      "sentences": []
+    },
+    {
+      "page": 87,
+      "image_id": 87,
+      "sentences": [
+        {
+          "text": "READ THIS SERIES ONLY AT VIOLETSCANS.COM",
+          "confidence": 0.976,
+          "text_ar": "اقرأ هذا العمل حصرياً على فايولت سكانز"
+        },
+        {
+          "text": "WHAT'S WRONG? IS HECRAZY?",
+          "confidence": 0.939,
+          "text_ar": "ما الخطب؟ أجنّ هذا الرجل؟"
+        }
+      ]
+    },
+    {
+      "page": 88,
+      "image_id": 88,
+      "sentences": []
+    },
+    {
+      "page": 89,
+      "image_id": 89,
+      "sentences": []
+    },
+    {
+      "page": 90,
+      "image_id": 90,
+      "sentences": [
+        {
+          "text": "Mloh",
+          "confidence": 0.426,
+          "text_ar": "إمك"
+        },
+        {
+          "text": "IFOUND HIM",
+          "confidence": 0.579,
+          "text_ar": "لقد وجدته"
+        }
+      ]
+    },
+    {
+      "page": 91,
+      "image_id": 91,
+      "sentences": []
+    },
+    {
+      "page": 92,
+      "image_id": 92,
+      "sentences": [
+        {
+          "text": "VIOLETSCANS.COM 0",
+          "confidence": 0.091,
+          "text_ar": "فايولت سكانز"
+        }
+      ]
+    },
+    {
+      "page": 93,
+      "image_id": 93,
+      "sentences": []
+    },
+    {
+      "page": 94,
+      "image_id": 94,
+      "sentences": []
+    },
+    {
+      "page": 95,
+      "image_id": 95,
+      "sentences": [
+        {
+          "text": "VIOLET SCANS",
+          "confidence": 0.971,
+          "text_ar": "فايولت سكانز"
+        },
+        {
+          "text": "wwww.violetscans.org 回 X - We are Hirinal",
+          "confidence": 0.336,
+          "text_ar": "موقعنا الإلكتروني"
+        }
+      ]
+    },
+    {
+      "page": 96,
+      "image_id": 96,
+      "sentences": [
+        {
+          "text": "EDITORS",
+          "confidence": 0.995,
+          "text_ar": "المترجمون"
+        },
+        {
+          "text": "KR TRANSLATORS",
+          "confidence": 0.944,
+          "text_ar": "مترجمو الكورية"
+        },
+        {
+          "text": "JB TRANSLATORS",
+          "confidence": 0.972,
+          "text_ar": "مترجمو اليابانية"
+        },
+        {
+          "text": "NAVER PROVIDERS",
+          "confidence": 0.98,
+          "text_ar": "موفرو نافير"
+        },
+        {
+          "text": "How to apply? ALLYOU HAVE TODO ISJOININGOURDISCORD SERVER THENGOTORECRUITMENTROOMAND THEREYOUCAN TAKE THE TEST: DISCORD.GG/jRFkVWY4mG",
+          "confidence": 0.956,
+          "text_ar": "كيف تنضم؟ كل ما عليك فعله هو الانضمام إلى خادم الديسكورد الخاص بنا ثم التوجه إلى غرفة التوظيف وهناك يمكنك خوض الاختبار."
+        },
+        {
+          "text": "Wanna gel free coins?",
+          "confidence": 0.949,
+          "text_ar": "تريد الحصول على عملات مجانية؟"
+        },
+        {
+          "text": "JOIN US!",
+          "confidence": 0.931,
+          "text_ar": "انضم إلينا!"
+        },
+        {
+          "text": "WE'RE GIVINIG AWAY 3,000COINS UPTO EVERY2WEEKS! THAT'S YOUR CHANCE TO GRAB TONS OF COINS AND TREAT YOURSELF TO MORE STORIES.",
+          "confidence": 0.87,
+          "text_ar": "نحن نوزع 3000 عملة كل أسبوعين تقريباً! هذه هي فرصتك للحصول على الكثير من العملات والتمتع بالمزيد من القصص."
+        },
+        {
+          "text": "DISCORD.GG/jRFkVWY4mG",
+          "confidence": 0.959,
+          "text_ar": "رابط الديسكورد"
+        },
+        {
+          "text": "DON'TFORGET TO READ AT VIOLETSCANS.ORG TOKEEP US GOING! 福",
+          "confidence": 0.202,
+          "text_ar": "لا تنس القراءة على فايولت سكانز لدعمنا على الاستمرار!"
+        }
+      ]
+    }
+  ]
+}
