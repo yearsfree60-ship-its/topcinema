@@ -1,0 +1,238 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "206",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THE AGENDA FOR TODAY'S MEETING IS THE RESTORATION OF HOUSE BROWN'S NOBLE AUTHORITY.",
+          "confidence": 0.937,
+          "text_ar": "جدول أعمال اجتماع اليوم هو استعادة السلطة النبيلة لآل براون."
+        },
+        {
+          "text": "THIS MATTER WAS REFERREDTO THE ARISTOCRATIC COUNCIL BY HIS MAJESTY HIMSELF",
+          "confidence": 0.926,
+          "text_ar": "وقد أحيلت هذه المسألة إلى مجلس الأرقراطيين من قبل جلالة الملك نفسه،"
+        },
+        {
+          "text": "WHO HAS DECLARED THAT THE DECISION WILL BE LEFT ENTIRELY TO THE COUNCIL'S JUDGMENT.",
+          "confidence": 0.948,
+          "text_ar": "الذي أعلن أن القرار سيترك بالكامل لتقدير المجلس."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SINCE THIS MATTER CONCERNS HOUSE BROWN, WE'LL LET THE HEAD OF THE HOUSE SPEAK.",
+          "confidence": 0.876,
+          "text_ar": "بما أن هذه المسألة تخص آل براون، فسندع رئيس العائلة يتحدث."
+        },
+        {
+          "text": "GILLARD BROWN, PLEASE COME FORWARD.",
+          "confidence": 0.926,
+          "text_ar": "جيلارد براون، تفضل بالتقدم."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER GTHis FAMILY 206",
+          "confidence": 0.809,
+          "text_ar": "سأتقن قيادة هذه العائلة."
+        },
+        {
+          "text": "IMY vIr",
+          "confidence": 0.601,
+          "text_ar": "هذا واجبي."
+        },
+        {
+          "text": "MWe 型",
+          "confidence": 0.038,
+          "text_ar": "نحن..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": []
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I AM GILLARD BROWN, THE HEAD OF HOUSE BROWN.",
+          "confidence": 0.947,
+          "text_ar": "أنا جيلارد براون، رئيس عائلة براون."
+        },
+        {
+          "text": "FIRST, I'D LIKE TO EXPRESS MY GRATITUDE TO CHAIRMAN CILLIAN FOR GRANTING ME THE OPPORTUNITY TO SPEAK.",
+          "confidence": 0.884,
+          "text_ar": "أولاً، أود أن أعرب عن امتنان للمجلس سيليان لمنحي هذه الفرصة للتحدث."
+        },
+        {
+          "text": "HOUSE BROWN IS ONE OF THE OLDEST AND MOST DISTINGUISHED FAMILIES IN THE EMPIRE.",
+          "confidence": 0.942,
+          "text_ar": "تعد عائلة براون واحدة من أقدم العائلات وأكثرها تميزاً في الإمبراطورية."
+        },
+        {
+          "text": "WE'VE LIVED AS THE SWORD THAT GUARDED THE IMPERIAL FAMILY FOR GENERATIONS.",
+          "confidence": 0.945,
+          "text_ar": "لقد عشنا كالسيف الذي يحمي العائلة الإمبراطورية لأجيال عديدة."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THAT IS UNTIL FORTY YEARS AGO, WHEN WE WERE TRAMPLED BY A BAND OF THUGS.",
+          "confidence": 0.88,
+          "text_ar": "هذا إلى أن تم سحقنا قبل أربعين عاماً من قبل مجموعة من اللصوص."
+        },
+        {
+          "text": "THOUGH OUR RIGHTS AS NOBLES WERE TAKEN FROM Us FOR A TiME...",
+          "confidence": 0.74,
+          "text_ar": "على الرغم من أن حقوقنا كنبلاء قد سُلبَت منا لفترة من الزمن..."
+        },
+        {
+          "text": "WE HAVE CONTINUED TO LIVE ON...",
+          "confidence": 0.911,
+          "text_ar": "إلا أننا استمررنا في العيش..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "...WHILE PRESERVING THE PRIDE AND DIGNITY OF OUR HOUSE.",
+          "confidence": 0.857,
+          "text_ar": "...بينما نحافظ على فخر كرامة عائلتنا."
+        },
+        {
+          "text": "HERE TODAY, I, GILLARD BROWN, HUMBLY APPEAL TO MY FELLOW NOBLES.",
+          "confidence": 0.889,
+          "text_ar": "اليوم هنا، أناشد زملائي النبلاء بتواضع."
+        },
+        {
+          "text": "PLEASE ALLOW HOUSE BROWN TO STAND AS A NOBLE FAMILYONCE AGAIN",
+          "confidence": 0.873,
+          "text_ar": "أرجوكم السماح لآل براون بالوقوف كعائلة نبيلة مرة أخرى"
+        },
+        {
+          "text": "SO THAT WE MAY SERVE AS THE IMPERIAL FAMILY'S SWORD AND CONTRIBUTE TO THE GREATNESS OF THE LEHMBRUCK EMPIRE.",
+          "confidence": 0.862,
+          "text_ar": "لكي نتمكن من العمل كالسيف للعائلة الإمبراطورية والمساهمة في عظمة إمبراطورية ليہمبروك."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "NOW THEN, DOES ANY HOUSE WISH TO SECOND THIS PROPOSAL?",
+          "confidence": 0.899,
+          "text_ar": "والآن، هل ترغب أي عائلة في تأييد هذا الاقتراح؟"
+        },
+        {
+          "text": "AYE.",
+          "confidence": 0.987,
+          "text_ar": "موافق."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HOUSE LOMBARDI SECONDS THE MOTION.",
+          "confidence": 0.961,
+          "text_ar": "عائلة لومباردي تؤيد الاقتراح."
+        },
+        {
+          "text": "I SECOND THE MOTION.",
+          "confidence": 0.957,
+          "text_ar": "أنا أؤيد الاقتراح."
+        },
+        {
+          "text": "HOUSE BOLEYN ALSO SECONDS IT.",
+          "confidence": 0.937,
+          "text_ar": "عائلة بولين تؤيده أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I SECOND THE MOTION.",
+          "confidence": 0.977,
+          "text_ar": "أنا أؤيد الاقتراح."
+        },
+        {
+          "text": "I AS WELL...",
+          "confidence": 0.908,
+          "text_ar": "وأنا كذلك..."
+        },
+        {
+          "text": "AHEM.. AS MORE THAN FIVE HOUSES HAVE SECONDED THE MOTION, THE RESTORATION OF HOUSE BROWN IS HEREBY ACCEPTED AS A FORMAL MOTION.",
+          "confidence": 0.841,
+          "text_ar": "احم... بما أن أكثر من خمس عائلات قد أيدت الاقتراح، فإن استعادة عائلة براون مقبولة بموجب هذا كاقتراب رسمي."
+        },
+        {
+          "text": "THE FLOOR IS NOW OPEN FOR DISCUSSION.",
+          "confidence": 0.901,
+          "text_ar": "المجال مفتوح الآن للنقاش."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HOUSE ANGENAS BELIEVES THIS MOTION ITSELF IS UNREASONABLE.",
+          "confidence": 0.952,
+          "text_ar": "تعتقد عائلة أنجيناس أن هذا الاقتراح بحد ذاته غير معقول."
+        },
+        {
+          "text": "ACCORDING TO THE IMPERIAL LAW OF NOBILITY,",
+          "confidence": 0.84,
+          "text_ar": "وفقاً لقانون النبلاء الإمبراطوري،"
+        },
+        {
+          "text": "A NOBLE FAMILY MUST POSSESS LAND IN ORDER TO MAINTAIN ITS NOBLE RIGHTS...",
+          "confidence": 0.879,
+          "text_ar": "يجب على العائلة النبيلة أن تمتلك أرضاً من أجل الحفاظ على حقوقها النبيلة..."
+        },
+        {
+          "text": "...EVEN IF IT IS NO MORE THAN A SMALL ESTATE THE SIZE OF ONE'S PALM.",
+          "confidence": 0.812,
+          "text_ar": "...حتى لو لم تكن سوى عقار صغير بحجم راحة اليد."
+        },
+        {
+          "text": "IT IS THE DUTY OF NOBLES TO nOOTET TUE ∩EOIn",
+          "confidence": 0.482,
+          "text_ar": "من واجب النبلاء حماية الناس."
+        }
+      ]
+    }
+  ]
+}

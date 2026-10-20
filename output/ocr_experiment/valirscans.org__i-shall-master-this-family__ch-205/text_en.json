@@ -1,0 +1,224 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "205",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/205",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-205",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. YES, CHAIRmAN.\n001-2. GRIN\n001-3. I'M FIRENTIA LOMBARDI, THE ACTING HEAD OF HOUSE LOMBARDI.\n001-4. 房家 N\n\nPage 002\n002-1. SIINLY MASTER THIS FAMILY G\n002-2. ACTING THE HEAD OF HOUSE LOMBARDI...?\n002-3. DID SOMETHING HAPPEN TO HIS GRACE BY ANY CHANCE?\n\nPage 003\n003-1. You SEEM TO HAVE MANY QUESTIONS, CHAIRMAN CILLIAN.\n003-2. DO YOu nORmaLLy ASK THIS MANY QuESTIONS TO MY GRANDFATHER?\n003-3. FIDGET\n003-4. IT'S NOT THAT, MY LADY IT'S JUST... WE WEREN'T NOTIFIED AT ALL-\n003-5. ARE yOu SAYING MY GRANDFATHER NEEDS YOUR APPROVAL...\n003-6. ...TO APPOINT A PROXY TO ATTEND IN HIS STEAD?\n\nPage 004\n004-1. TH-THAT'S NOT WHAT I MEAN...\n004-2. THERE'S NO PROBLEM THEN, IS THERE?\n004-3. ..NO, MY LADY.\n004-4. VERY WELL.\n\nPage 005\n005-1. CUCK\n005-2. G CLROS 發\n005-3. YOUR MAJESTyY...?\n\nPage 006\n\nPage 007\n007-1. THERE SHE IS. OrE iS.\n\nPage 008\n008-1. I CAN'T BELIEVE THE EMPRESS, WHO HAS NO SAy IN THIS COUNCIL, SHOWED HER FACE HERE...\n008-2. IT ONLY GOES TO SHOW HOWIMPORTANT TODAY'S MEETING IS TO HOUSE ANGENAS.\n008-3. THERE SEEMS TO BE MANY OBSERvERS FROM THE IMPERIAL PALACE TODAY.\n008-4. HAHA,I WAS THINKING THE SAME. THE SAME\n\nPage 009\n009-1. HIS HIGHNESS PRINCE PEREZ HAS ALSO ARRIVED.\n009-2. WELCOME, EVERYONE.\n009-3. GREETINGS, PRINCE PEREZ.\n009-4. I INTENTIONALLY DIDN'T INFORM PEREZ IN ADVANCE.\n\nPage 010\n010-1. I WANTED TO SEE HIM Δ LITTLE SURPRISED.\n\nPage 011\n011-1. NoD",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YES, CHAIRmAN.",
+          "confidence": 0.832
+        },
+        {
+          "text": "GRIN",
+          "confidence": 0.977
+        },
+        {
+          "text": "I'M FIRENTIA LOMBARDI, THE ACTING HEAD OF HOUSE LOMBARDI.",
+          "confidence": 0.929
+        },
+        {
+          "text": "房家 N",
+          "confidence": 0.087
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SIINLY MASTER THIS FAMILY G",
+          "confidence": 0.273
+        },
+        {
+          "text": "ACTING THE HEAD OF HOUSE LOMBARDI...?",
+          "confidence": 0.941
+        },
+        {
+          "text": "DID SOMETHING HAPPEN TO HIS GRACE BY ANY CHANCE?",
+          "confidence": 0.877
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "You SEEM TO HAVE MANY QUESTIONS, CHAIRMAN CILLIAN.",
+          "confidence": 0.715
+        },
+        {
+          "text": "DO YOu nORmaLLy ASK THIS MANY QuESTIONS TO MY GRANDFATHER?",
+          "confidence": 0.751
+        },
+        {
+          "text": "FIDGET",
+          "confidence": 0.905
+        },
+        {
+          "text": "IT'S NOT THAT, MY LADY IT'S JUST... WE WEREN'T NOTIFIED AT ALL-",
+          "confidence": 0.802
+        },
+        {
+          "text": "ARE yOu SAYING MY GRANDFATHER NEEDS YOUR APPROVAL...",
+          "confidence": 0.763
+        },
+        {
+          "text": "...TO APPOINT A PROXY TO ATTEND IN HIS STEAD?",
+          "confidence": 0.862
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "TH-THAT'S NOT WHAT I MEAN...",
+          "confidence": 0.874
+        },
+        {
+          "text": "THERE'S NO PROBLEM THEN, IS THERE?",
+          "confidence": 0.938
+        },
+        {
+          "text": "..NO, MY LADY.",
+          "confidence": 0.855
+        },
+        {
+          "text": "VERY WELL.",
+          "confidence": 0.992
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "CUCK",
+          "confidence": 0.659
+        },
+        {
+          "text": "G CLROS 發",
+          "confidence": 0.078
+        },
+        {
+          "text": "YOUR MAJESTyY...?",
+          "confidence": 0.877
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THERE SHE IS. OrE iS.",
+          "confidence": 0.422
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I CAN'T BELIEVE THE EMPRESS, WHO HAS NO SAy IN THIS COUNCIL, SHOWED HER FACE HERE...",
+          "confidence": 0.826
+        },
+        {
+          "text": "IT ONLY GOES TO SHOW HOWIMPORTANT TODAY'S MEETING IS TO HOUSE ANGENAS.",
+          "confidence": 0.921
+        },
+        {
+          "text": "THERE SEEMS TO BE MANY OBSERvERS FROM THE IMPERIAL PALACE TODAY.",
+          "confidence": 0.86
+        },
+        {
+          "text": "HAHA,I WAS THINKING THE SAME. THE SAME",
+          "confidence": 0.913
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HIS HIGHNESS PRINCE PEREZ HAS ALSO ARRIVED.",
+          "confidence": 0.903
+        },
+        {
+          "text": "WELCOME, EVERYONE.",
+          "confidence": 0.985
+        },
+        {
+          "text": "GREETINGS, PRINCE PEREZ.",
+          "confidence": 0.987
+        },
+        {
+          "text": "I INTENTIONALLY DIDN'T INFORM PEREZ IN ADVANCE.",
+          "confidence": 0.977
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I WANTED TO SEE HIM Δ LITTLE SURPRISED.",
+          "confidence": 0.926
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "NoD",
+          "confidence": 0.633
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-205/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-205/011.webp"
+  ]
+}
