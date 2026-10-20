@@ -184,6 +184,18 @@
           ],
           "originalBytes": 4086346,
           "compressedBytes": 1991766
+        },
+        {
+          "label": "الفصل 9",
+          "num": "9",
+          "chNum": 9.0,
+          "sourceUrl": "https://starzmanga.com/manga/empress-of-another-world/9/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__empress-of-another-world/ch-9/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__empress-of-another-world/ch-9/002.webp"
+          ],
+          "originalBytes": 3779405,
+          "compressedBytes": 929150
         }
       ]
     }
