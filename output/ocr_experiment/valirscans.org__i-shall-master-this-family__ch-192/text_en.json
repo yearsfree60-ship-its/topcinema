@@ -1,0 +1,261 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "192",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/192",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-192",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. MOOSH\n001-2. MY LADY!\n001-3. THE AREA NEAR THE FOREST OF MADNESS GETS PRETTY COLD. YOU SHOULD DRESS WARMLY.\n001-4. SRRK 20 A\n001-5. OH! THANK YOU, LAURYL.\n\nPage 002\n002-1. THAT ASIDE...\n002-2. .I MUST SAY IT FEELS A BIT HERE. EERIE\n\nPage 003\n003-1. THE LOMBARDI ESTATE ∆T THE ENTRANCE TO THE FOREST OF MADNESS\n003-2. THEY SAY THE FOREST OF MADNESS, SHROUDED IN MIST ALL YEAR ROUND,\n003-3. DRIVES ANYONE WHO ENTERS IT TO MADNESS.\n003-4. I'M ALL SET, LAURYL. YOU SHOULD GO SEE MARILYN AND SIR FLYNT NOW.\n003-5. ALL RIGHT, MY LADY. PLEASE LET ME KNOW IF YOU NEED ANYTHING ELSE!\n\nPage 004\n004-1. GREETINGS, LADY FIRENTIA.\n004-2. TAK\n004-3. COME IN, EVERYONE.\n004-4. ARE WE DONE WITH ALL THE PREPARATIONS?\n\nPage 005\n005-1. YES, WE'VE MADE SuRE THERE WOULDN'T BE ANY PROBLEMS EVEN IF THE HUNTING TOURNAMENT STARTED RIGHT NOW.\n005-2. WHAT ABOUT THE EVE CELEBRATION?\n005-3. THAT'S ALL BEEN CARE OF TAKEN WELL. AS\n005-4. WITH SO MUCH SPACE TO MANAGE INSIDE AND OUTSIDE THE BANQUET HaLL, It mustn'T HAve BEEN EASY.\n\nPage 006\n006-1. NOT AT ALL. WITH MR. BATE'S HELP, WE FINISHED WITHOUT ANY ISSUE.\n006-2. MY LANDLORD HAS A VERY UNIQUE TASTE.\n006-3. THIS TOURNAMENT HELD UNDER THE LOMBARDI NAME,\n006-4. IT'S NOT ONLY TO SEE WHO CAN KILL THE MOST MONSTERS...\n006-5. ...BUT\n\nPage 007\n007-1. PARTICIPANTS ARE TO COLLECT Δ PART Of THEIR HUNTED GAME aS PROOF TOO.\n007-2. I'M SURE MOST OF THOSE NOBLES ARE REGRETTING THEIR PARTICIPATION BITTERLY BY NOW.\n007-3. SMILE\n007-4. I BET MANY OF THEM WILL FORFEIT WHEN THE GAMES START.\n007-5. THAT'D BE DISAPPOINTING.\n007-6. AFTER ALL, I PUT UP QUITE Δ HEFTY PRIZE FOR FIRST PLACE.\n\nPage 008\n008-1. HAVE ALL THE GUESTS ARRIVED, VIOLET?\n008-2. YES, THE INVITED NOBLES AS WELL AS HOUSE LOMBARDI'S VASSAL FAMILIES\n008-3. HAVE ALL BEEN ASSIGNED ROOMS, MY LADY.\n008-4. LADY FIRENTIA...?\n008-5. ARE YOU READY, MY LADY?\n\nPage 009\n009-1. CHK 福\n\nPage 010\n010-1. I'VE BEEN READY SINCE a long tIme AGO.\n010-2. I SHRLL MASTER GTHIS FRMILY\n\nPage 011\n011-1. CPCLOP",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MOOSH",
+          "confidence": 0.615
+        },
+        {
+          "text": "MY LADY!",
+          "confidence": 0.921
+        },
+        {
+          "text": "THE AREA NEAR THE FOREST OF MADNESS GETS PRETTY COLD. YOU SHOULD DRESS WARMLY.",
+          "confidence": 0.898
+        },
+        {
+          "text": "SRRK 20 A",
+          "confidence": 0.091
+        },
+        {
+          "text": "OH! THANK YOU, LAURYL.",
+          "confidence": 0.922
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THAT ASIDE...",
+          "confidence": 0.93
+        },
+        {
+          "text": ".I MUST SAY IT FEELS A BIT HERE. EERIE",
+          "confidence": 0.812
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "THE LOMBARDI ESTATE ∆T THE ENTRANCE TO THE FOREST OF MADNESS",
+          "confidence": 0.914
+        },
+        {
+          "text": "THEY SAY THE FOREST OF MADNESS, SHROUDED IN MIST ALL YEAR ROUND,",
+          "confidence": 0.858
+        },
+        {
+          "text": "DRIVES ANYONE WHO ENTERS IT TO MADNESS.",
+          "confidence": 0.929
+        },
+        {
+          "text": "I'M ALL SET, LAURYL. YOU SHOULD GO SEE MARILYN AND SIR FLYNT NOW.",
+          "confidence": 0.905
+        },
+        {
+          "text": "ALL RIGHT, MY LADY. PLEASE LET ME KNOW IF YOU NEED ANYTHING ELSE!",
+          "confidence": 0.889
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "GREETINGS, LADY FIRENTIA.",
+          "confidence": 0.923
+        },
+        {
+          "text": "TAK",
+          "confidence": 0.961
+        },
+        {
+          "text": "COME IN, EVERYONE.",
+          "confidence": 0.922
+        },
+        {
+          "text": "ARE WE DONE WITH ALL THE PREPARATIONS?",
+          "confidence": 0.934
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YES, WE'VE MADE SuRE THERE WOULDN'T BE ANY PROBLEMS EVEN IF THE HUNTING TOURNAMENT STARTED RIGHT NOW.",
+          "confidence": 0.861
+        },
+        {
+          "text": "WHAT ABOUT THE EVE CELEBRATION?",
+          "confidence": 0.898
+        },
+        {
+          "text": "THAT'S ALL BEEN CARE OF TAKEN WELL. AS",
+          "confidence": 0.958
+        },
+        {
+          "text": "WITH SO MUCH SPACE TO MANAGE INSIDE AND OUTSIDE THE BANQUET HaLL, It mustn'T HAve BEEN EASY.",
+          "confidence": 0.719
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "NOT AT ALL. WITH MR. BATE'S HELP, WE FINISHED WITHOUT ANY ISSUE.",
+          "confidence": 0.779
+        },
+        {
+          "text": "MY LANDLORD HAS A VERY UNIQUE TASTE.",
+          "confidence": 0.745
+        },
+        {
+          "text": "THIS TOURNAMENT HELD UNDER THE LOMBARDI NAME,",
+          "confidence": 0.941
+        },
+        {
+          "text": "IT'S NOT ONLY TO SEE WHO CAN KILL THE MOST MONSTERS...",
+          "confidence": 0.903
+        },
+        {
+          "text": "...BUT",
+          "confidence": 0.783
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "PARTICIPANTS ARE TO COLLECT Δ PART Of THEIR HUNTED GAME aS PROOF TOO.",
+          "confidence": 0.811
+        },
+        {
+          "text": "I'M SURE MOST OF THOSE NOBLES ARE REGRETTING THEIR PARTICIPATION BITTERLY BY NOW.",
+          "confidence": 0.812
+        },
+        {
+          "text": "SMILE",
+          "confidence": 0.986
+        },
+        {
+          "text": "I BET MANY OF THEM WILL FORFEIT WHEN THE GAMES START.",
+          "confidence": 0.934
+        },
+        {
+          "text": "THAT'D BE DISAPPOINTING.",
+          "confidence": 0.98
+        },
+        {
+          "text": "AFTER ALL, I PUT UP QUITE Δ HEFTY PRIZE FOR FIRST PLACE.",
+          "confidence": 0.846
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HAVE ALL THE GUESTS ARRIVED, VIOLET?",
+          "confidence": 0.955
+        },
+        {
+          "text": "YES, THE INVITED NOBLES AS WELL AS HOUSE LOMBARDI'S VASSAL FAMILIES",
+          "confidence": 0.829
+        },
+        {
+          "text": "HAVE ALL BEEN ASSIGNED ROOMS, MY LADY.",
+          "confidence": 0.92
+        },
+        {
+          "text": "LADY FIRENTIA...?",
+          "confidence": 0.956
+        },
+        {
+          "text": "ARE YOU READY, MY LADY?",
+          "confidence": 0.83
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "CHK 福",
+          "confidence": 0.269
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I'VE BEEN READY SINCE a long tIme AGO.",
+          "confidence": 0.763
+        },
+        {
+          "text": "I SHRLL MASTER GTHIS FRMILY",
+          "confidence": 0.711
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "CPCLOP",
+          "confidence": 0.758
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-192/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-192/011.webp"
+  ]
+}

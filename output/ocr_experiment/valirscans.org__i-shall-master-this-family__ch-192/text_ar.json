@@ -1,0 +1,274 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "192",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MOOSH",
+          "confidence": 0.615,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "MY LADY!",
+          "confidence": 0.921,
+          "text_ar": "سيدتي!"
+        },
+        {
+          "text": "THE AREA NEAR THE FOREST OF MADNESS GETS PRETTY COLD. YOU SHOULD DRESS WARMLY.",
+          "confidence": 0.898,
+          "text_ar": "المنطقة القريبة من غابة الجنون تصبح باردة جداً. عليكِ ارتداء ملابس دافئة."
+        },
+        {
+          "text": "SRRK 20 A",
+          "confidence": 0.091,
+          "text_ar": "فيففف"
+        },
+        {
+          "text": "OH! THANK YOU, LAURYL.",
+          "confidence": 0.922,
+          "text_ar": "أوه! شكراً لكِ، لوريل."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THAT ASIDE...",
+          "confidence": 0.93,
+          "text_ar": "هذا جانباً..."
+        },
+        {
+          "text": ".I MUST SAY IT FEELS A BIT HERE. EERIE",
+          "confidence": 0.812,
+          "text_ar": "يجب أن أقول إن الأجواء هنا تبدو غريبة بعض الشيء وموحشة."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "THE LOMBARDI ESTATE ∆T THE ENTRANCE TO THE FOREST OF MADNESS",
+          "confidence": 0.914,
+          "text_ar": "قصر لومباردي عند مدخل غابة الجنون"
+        },
+        {
+          "text": "THEY SAY THE FOREST OF MADNESS, SHROUDED IN MIST ALL YEAR ROUND,",
+          "confidence": 0.858,
+          "text_ar": "يقولون إن غابة الجنون، التي يلفها الضباب طوال العام،"
+        },
+        {
+          "text": "DRIVES ANYONE WHO ENTERS IT TO MADNESS.",
+          "confidence": 0.929,
+          "text_ar": "تدفع كل من يدخلها إلى الجنون."
+        },
+        {
+          "text": "I'M ALL SET, LAURYL. YOU SHOULD GO SEE MARILYN AND SIR FLYNT NOW.",
+          "confidence": 0.905,
+          "text_ar": "أنا جاهزة تماماً، لوريل. يجب أن تذهبي لرؤية ماريلين والسير فلينت الآن."
+        },
+        {
+          "text": "ALL RIGHT, MY LADY. PLEASE LET ME KNOW IF YOU NEED ANYTHING ELSE!",
+          "confidence": 0.889,
+          "text_ar": "حسناً، سيدتي. رجاءً أخبريني إذا احتجتِ لأي شيء آخر!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "GREETINGS, LADY FIRENTIA.",
+          "confidence": 0.923,
+          "text_ar": "تحياتي، الليدي فيرينتيا."
+        },
+        {
+          "text": "TAK",
+          "confidence": 0.961,
+          "text_ar": "طاق"
+        },
+        {
+          "text": "COME IN, EVERYONE.",
+          "confidence": 0.922,
+          "text_ar": "تفضلوا بالدخول جميعاً."
+        },
+        {
+          "text": "ARE WE DONE WITH ALL THE PREPARATIONS?",
+          "confidence": 0.934,
+          "text_ar": "هل انتهينا من جميع الاستعدادات؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YES, WE'VE MADE SuRE THERE WOULDN'T BE ANY PROBLEMS EVEN IF THE HUNTING TOURNAMENT STARTED RIGHT NOW.",
+          "confidence": 0.861,
+          "text_ar": "نعم، لقد تأكدنا من عدم وجود أي مشاكل حتى لو بدأت بطولة الصيد الآن."
+        },
+        {
+          "text": "WHAT ABOUT THE EVE CELEBRATION?",
+          "confidence": 0.898,
+          "text_ar": "وماذا عن احتفال عشية البطولة؟"
+        },
+        {
+          "text": "THAT'S ALL BEEN CARE OF TAKEN WELL. AS",
+          "confidence": 0.958,
+          "text_ar": "لقد تم الاعتناء بكل ذلك على أكمل وجه."
+        },
+        {
+          "text": "WITH SO MUCH SPACE TO MANAGE INSIDE AND OUTSIDE THE BANQUET HaLL, It mustn'T HAve BEEN EASY.",
+          "confidence": 0.719,
+          "text_ar": "مع وجود مساحة كبيرة لإدارتها داخل وخارج قاعة الحفلات، لم يكن الأمر سهلاً بالتأكيد."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "NOT AT ALL. WITH MR. BATE'S HELP, WE FINISHED WITHOUT ANY ISSUE.",
+          "confidence": 0.779,
+          "text_ar": "إطلاقاً. بمساعدة السيد بيت، انتهينا بدون أي مشكلة."
+        },
+        {
+          "text": "MY LANDLORD HAS A VERY UNIQUE TASTE.",
+          "confidence": 0.745,
+          "text_ar": "لدى مالك القصر ذوق فريد للغاية."
+        },
+        {
+          "text": "THIS TOURNAMENT HELD UNDER THE LOMBARDI NAME,",
+          "confidence": 0.941,
+          "text_ar": "هذه البطولة التي تقام تحت اسم لومباردي،"
+        },
+        {
+          "text": "IT'S NOT ONLY TO SEE WHO CAN KILL THE MOST MONSTERS...",
+          "confidence": 0.903,
+          "text_ar": "ليست فقط لمعرفة من يمكنه قتل أكبر عدد من الوحوش..."
+        },
+        {
+          "text": "...BUT",
+          "confidence": 0.783,
+          "text_ar": "...بل"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "PARTICIPANTS ARE TO COLLECT Δ PART Of THEIR HUNTED GAME aS PROOF TOO.",
+          "confidence": 0.811,
+          "text_ar": "يجب على المشاركين جمع جزء من صيدهم كدليل أيضاً."
+        },
+        {
+          "text": "I'M SURE MOST OF THOSE NOBLES ARE REGRETTING THEIR PARTICIPATION BITTERLY BY NOW.",
+          "confidence": 0.812,
+          "text_ar": "أنا متأكدة من أن معظم هؤلاء النبلاء يندمون بشدة على مشاركتهم الآن."
+        },
+        {
+          "text": "SMILE",
+          "confidence": 0.986,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "I BET MANY OF THEM WILL FORFEIT WHEN THE GAMES START.",
+          "confidence": 0.934,
+          "text_ar": "أراهن أن الكثير منهم سينسحبون عندما تبدأ الألعاب."
+        },
+        {
+          "text": "THAT'D BE DISAPPOINTING.",
+          "confidence": 0.98,
+          "text_ar": "سيكون ذلك مخيباً للآمال."
+        },
+        {
+          "text": "AFTER ALL, I PUT UP QUITE Δ HEFTY PRIZE FOR FIRST PLACE.",
+          "confidence": 0.846,
+          "text_ar": "فبعد كل شيء، لقد رصدت جائزة ضخمة جداً للمركز الأول."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HAVE ALL THE GUESTS ARRIVED, VIOLET?",
+          "confidence": 0.955,
+          "text_ar": "هل وصل جميع الضيوف، فايوليت؟"
+        },
+        {
+          "text": "YES, THE INVITED NOBLES AS WELL AS HOUSE LOMBARDI'S VASSAL FAMILIES",
+          "confidence": 0.829,
+          "text_ar": "نعم، النبلاء المدعوون بالإضافة إلى عائلات أتباع آل لومباردي"
+        },
+        {
+          "text": "HAVE ALL BEEN ASSIGNED ROOMS, MY LADY.",
+          "confidence": 0.92,
+          "text_ar": "تم تخصيص الغرف لهم جميعاً، سيدتي."
+        },
+        {
+          "text": "LADY FIRENTIA...?",
+          "confidence": 0.956,
+          "text_ar": "الليدي فيرينتيا...؟"
+        },
+        {
+          "text": "ARE YOU READY, MY LADY?",
+          "confidence": 0.83,
+          "text_ar": "هل أنتِ مستعدة، سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "CHK 福",
+          "confidence": 0.269,
+          "text_ar": "تق طق"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I'VE BEEN READY SINCE a long tIme AGO.",
+          "confidence": 0.763,
+          "text_ar": "لقد كنتُ مستعدة منذ فترة طويلة."
+        },
+        {
+          "text": "I SHRLL MASTER GTHIS FRMILY",
+          "confidence": 0.711,
+          "text_ar": "سأسود هذه العائلة"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "CPCLOP",
+          "confidence": 0.758,
+          "text_ar": "ومضة"
+        }
+      ]
+    }
+  ]
+}
