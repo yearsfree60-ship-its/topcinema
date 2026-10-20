@@ -1,0 +1,289 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "204",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "I SHRLL MASTER G THIS FAMILY",
+          "confidence": 0.346,
+          "text_ar": "سأتولى قيادة هذه العائلة!"
+        },
+        {
+          "text": "204 S +CCD",
+          "confidence": 0.21,
+          "text_ar": ""
+        },
+        {
+          "text": "CLICK",
+          "confidence": 0.859,
+          "text_ar": "نقرة"
+        },
+        {
+          "text": "Ooe",
+          "confidence": 0.283,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "YOU'RE THE ONLY ONE I Can tRust, LoRd SERSHAW.",
+          "confidence": 0.754,
+          "text_ar": "أنت الشخص الوحيد الذي يمكنني الوثوق به، اللورد شانتون سيرشاو."
+        },
+        {
+          "text": "Ce 2 ® 兴",
+          "confidence": 0.123,
+          "text_ar": ""
+        },
+        {
+          "text": "HOUSES SERSHAW AND ANGENAS ARE IN THE SaME BOaT, AREN'T WE?",
+          "confidence": 0.758,
+          "text_ar": "آل سيرشاو وآل أنجيناس في نفس القارب، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I'LL HANDLE ASTANA'S MATTERS MYSELF.",
+          "confidence": 0.955,
+          "text_ar": "سأتولى أمر أستانا بنفسي."
+        },
+        {
+          "text": "PLEASE TAKE CARE OF THE ARISTOCRATIC COUNCIL, LORD SERSHAW.",
+          "confidence": 0.895,
+          "text_ar": "أرجو أن تتولى أمر المجلس الأرقراطي، اللورد سيرشاو."
+        },
+        {
+          "text": "ARE YOU REFERRING TO HOUSE BROWn, youR MAJESTY?",
+          "confidence": 0.753,
+          "text_ar": "هل تقصد آل براون، جلالة الملك؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THAT'S CORRECT. IT'S A VERY IMPORTANT MATTER.",
+          "confidence": 0.854,
+          "text_ar": "هذا صحيح. إنها مسألة في غاية الأهمية."
+        },
+        {
+          "text": "WE MUST STOP THEM FROM BEING REINSTATED.",
+          "confidence": 0.946,
+          "text_ar": "يجب أن نمنع إعادة تنصيبهم."
+        },
+        {
+          "text": "THEN... TIEN...",
+          "confidence": 0.674,
+          "text_ar": "إذن... إذن..."
+        },
+        {
+          "text": "YOU'LL NEED TO HAND OVER THE ANGEnaS TERRITORY, YOUR MAJESTY.",
+          "confidence": 0.794,
+          "text_ar": "سيتعين عليك التنازل عن أراضي أنجيناس، جلالة الملك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "WHAT DO you mean..?",
+          "confidence": 0.806,
+          "text_ar": "ماذا تعني...؟"
+        },
+        {
+          "text": "IT'S JUST AS I SAID.",
+          "confidence": 0.848,
+          "text_ar": "الأمر كما قلت تماماً."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THE DEADLINE FOR THe LoAn REPAYMENT HAS PASSED.",
+          "confidence": 0.757,
+          "text_ar": "لقد انقضى موعد سداد القرض."
+        },
+        {
+          "text": "IF REPAYMENT ISN'T POSSIBLE RIGHT AWAY, I'M AFRAID Δ COLLATERAL WILL BE REQUIRED.",
+          "confidence": 0.754,
+          "text_ar": "إذا لم يكن السداد ممكناً في الحال، أخشى أن الأمر سيستدعي تقديم ضمانات."
+        },
+        {
+          "text": "LOOK HERE, LORD SERSHAW!",
+          "confidence": 0.968,
+          "text_ar": "انظر إلى هنا، اللورد سيرشاو!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "YOU'RE DEMANDING IMMEDIATE REPAYMENT? you knoW ThaT's UNREASONABLE!",
+          "confidence": 0.728,
+          "text_ar": "أطالب بالسداد الفوري؟ أنت تعلم أن هذا غير معقول!"
+        },
+        {
+          "text": "DID I SAY SOMETHING WRONG, YOUR MAJESTY?",
+          "confidence": 0.961,
+          "text_ar": "هل قلت شيئاً خاطئاً، جلالة الملك؟"
+        },
+        {
+          "text": "ARE YOU CHOOSING TO BE MY ENEMY?",
+          "confidence": 0.888,
+          "text_ar": "أَتختار أن تكون عدواً لي؟"
+        },
+        {
+          "text": "THAT'S NOT MY INTENTION AT ALL.",
+          "confidence": 0.896,
+          "text_ar": "ليس هذا قصدي على الإطلاق."
+        },
+        {
+          "text": "WHAT IS IT THEN?",
+          "confidence": 0.964,
+          "text_ar": "إذن ما هو قصدك؟"
+        },
+        {
+          "text": "HOW DO YOU EXPECT US TO REPAY SUCH A HUGE SuM ALL aT ONCe aT Δ TiME",
+          "confidence": 0.71,
+          "text_ar": "كيف تتوقع أن نسدّد مثل هذا المبلغ الضخم دفعة واحدة في هذا الوقت؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "LIKE THIS?!",
+          "confidence": 0.984,
+          "text_ar": "مثل هكذا؟!"
+        },
+        {
+          "text": "THAT'S EXACTLY WHAT I MEAN.",
+          "confidence": 0.885,
+          "text_ar": "هذا ما أقصده تماماً."
+        },
+        {
+          "text": "IT'S RATHER STRANGE THAT YOU BORROWED SUCH A LARGE SuM YET HAVE BEEN SO AT EASE UNTIL NOW.",
+          "confidence": 0.795,
+          "text_ar": "من الغريب حقاً أنك اقترضت مبلغاً بهذا الحجم وبقيت مسترخياً هكذا حتى الآن."
+        },
+        {
+          "text": "ALL I'M ASkING IS THAT YoU PAY BACK THE MONEY YOU BORROWED, YOUR MAJESTY.",
+          "confidence": 0.785,
+          "text_ar": "كل ما أطلبه هو أن تعيد المال الذي اقترضته، جلالة الملك."
+        },
+        {
+          "text": "FROWN",
+          "confidence": 0.953,
+          "text_ar": "عبوس"
+        },
+        {
+          "text": "老先 义 CENCH",
+          "confidence": 0.107,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "YOu'VE AlREADy TakeN THE SOUTH. I CAN'T BELIEVE YOU'RE EYEING THE WEST TOO...",
+          "confidence": 0.698,
+          "text_ar": "لقد سيطرت على الجنوب بالفعل. لا أصدق أنك تتطلع إلى الغرب أيضاً..."
+        },
+        {
+          "text": "HOWEVER, IT'S IMPOSSIBLE FOR YOU TO REPRESENT TWO REGIONS.",
+          "confidence": 0.886,
+          "text_ar": "مع ذلك، من المستحيل أن تمثل منطقتين."
+        },
+        {
+          "text": "THE WEST WILL REMAIN UNDER HOUSE ANGENAS' CONTROL,",
+          "confidence": 0.914,
+          "text_ar": "سيظل الغرب تحت سيطرة آل أنجيناس،"
+        },
+        {
+          "text": "IMPERIALCAPITAL",
+          "confidence": 0.936,
+          "text_ar": "العاصمة الإمبراطورية"
+        },
+        {
+          "text": "SHERSHA",
+          "confidence": 0.99,
+          "text_ar": "شيرشا"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "AND YET yOu STILL WANT MORE LAND? DON'T yOu THINk YOuR AMBITION HAS GONE TOO FAR?",
+          "confidence": 0.771,
+          "text_ar": " ومع ذلك ما زلت تريد المزيد من الأراضي؟ ألا تظن أن طموحك قد تجاوز اللزوم؟"
+        },
+        {
+          "text": "YES, IT'S TRUE THAT I'M AMBITIOUS, BUT...",
+          "confidence": 0.904,
+          "text_ar": "نعم، صحيح أنني طموح، ولكن..."
+        },
+        {
+          "text": "My AMBITIOn IS NOTHING COMPARED TO HOuSe aNGeNaS WHO STOLE SOMEONE ELSE'S LAND.",
+          "confidence": 0.706,
+          "text_ar": "طموحي لا يمثل شيئاً مقارنة بآل أنجيناس الذين سرقوا أرض شخص آخر."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "LORD SERSHAW...!",
+          "confidence": 0.946,
+          "text_ar": "لورد سيرشاو...!"
+        },
+        {
+          "text": "YOU'LL REGRET IT IF YOu CHOOSE TO GO AGAINST ME.",
+          "confidence": 0.839,
+          "text_ar": "ستندم إذا اخترت الوقوف ضدي."
+        },
+        {
+          "text": "AS I'VE JUST SAID..",
+          "confidence": 0.909,
+          "text_ar": "كما قلت للتو.."
+        },
+        {
+          "text": "HOUSE SERSHAW HAS NO INTENTIOn OF BECOMING YOUR ENEMY, YOUR MAJESTY.",
+          "confidence": 0.84,
+          "text_ar": "لا نية لدى آل سيرشاو ليصبحوا أعداءً لك، جلالة الملك."
+        }
+      ]
+    }
+  ]
+}
