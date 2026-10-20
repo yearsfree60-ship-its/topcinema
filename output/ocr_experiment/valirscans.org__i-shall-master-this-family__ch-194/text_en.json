@@ -1,0 +1,233 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "194",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/194",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-194",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. GREETINGS, YOUR MaJESTY.\n001-2. ＩΔＭ GILLARD BROWN, THE HEAd oF House BROWN.\n\nPage 002\n002-1. I SHRLL MASTER THIS FAMILY 享\n\nPage 003\n003-1. HMM...\n003-2. YES, I VAGUELY REMEMBER YouR FACE.\n\nPage 004\n004-1. CLENCH\n004-2. I KNEW IT... HAVE I FAILED?\n004-3. FROMNOW ON,YOUALWAYS HAVE TOHOLD YOUR HEAD HIGH. BROADEN YOUR SHOULDERS TOO.\n004-4. FROMNOW ON, YOUWILL BE THE HEAD OF THE FAMILYWHODESERVES THE NAME OF HOUSE OOOWNI\n\nPage 005\n005-1. BROWN,\n005-2. ole\n\nPage 006\n006-1. WHAT IN THE WORLD...?\n006-2. WHEN WE LAST TRACKED GILLARD BROWN TEN YEARS agO, he Was WEAkeNED By Δ PERSISTENT ILLNESS.\n006-3. HE HAD NO SONS EITHER- - JUST ONe DAUGHTER,\n\nPage 007\n007-1. I FIGURED HE WOULDN'T POSe MuCH OF A THREAT, WHICH IS WHY I STOPPED PURSUING HIM.\n007-2. HAS HE BEEN HIDING SOMEWHERE IN LOMBARDI THIS WHOLE TIME?\n007-3. YOUR MAJESTY,\n007-4. ARE YOU ABSOLUTELY CERTAIN HE'S LORD BROWN?\n\nPage 008\n008-1. HMM... IT HAS BEEN SO LONG.\n008-2. GRIN\n008-3. JUST RESEMBLING HIM IN APPEARANCE PROVES NOTHING.\n008-4. LORD BROWN, PLEASE SHOW HIS MAJESTY WHAT YOU BROUGHT.\n008-5. NOD\n008-6. YES, く>二\n\nPage 009\n009-1. YOUR GRACE.\n009-2. SHF\n009-3. ASTLE PLEASE HAVE A LOOK at THIS, youR MAJESTY.\n\nPage 010\n010-1. HERE...\n010-2. THIS IS THE RING MY FATHER RECEIVED FROM THE LATE EMPEROR HIMSELF.\n010-3. TOLD I WAS - IT WaS Δ GIFT BESTOWED BY THE LATE EMPEROR\n010-4. ON THE DAY MY FATHER HAD SERvED TEN YEARS AS COMMANDER OF THE IMPERIAL KNIGHTS.\n\nPage 011\n011-1. HAS YOuR DOUBT EASED NOW, YOUR MAJESTY?\n011-2. YOUR MAJESTY...",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "GREETINGS, YOUR MaJESTY.",
+          "confidence": 0.809
+        },
+        {
+          "text": "ＩΔＭ GILLARD BROWN, THE HEAd oF House BROWN.",
+          "confidence": 0.55
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "I SHRLL MASTER THIS FAMILY 享",
+          "confidence": 0.354
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "HMM...",
+          "confidence": 0.911
+        },
+        {
+          "text": "YES, I VAGUELY REMEMBER YouR FACE.",
+          "confidence": 0.768
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "CLENCH",
+          "confidence": 0.977
+        },
+        {
+          "text": "I KNEW IT... HAVE I FAILED?",
+          "confidence": 0.97
+        },
+        {
+          "text": "FROMNOW ON,YOUALWAYS HAVE TOHOLD YOUR HEAD HIGH. BROADEN YOUR SHOULDERS TOO.",
+          "confidence": 0.896
+        },
+        {
+          "text": "FROMNOW ON, YOUWILL BE THE HEAD OF THE FAMILYWHODESERVES THE NAME OF HOUSE OOOWNI",
+          "confidence": 0.69
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "BROWN,",
+          "confidence": 0.907
+        },
+        {
+          "text": "ole",
+          "confidence": 0.468
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "WHAT IN THE WORLD...?",
+          "confidence": 0.91
+        },
+        {
+          "text": "WHEN WE LAST TRACKED GILLARD BROWN TEN YEARS agO, he Was WEAkeNED By Δ PERSISTENT ILLNESS.",
+          "confidence": 0.717
+        },
+        {
+          "text": "HE HAD NO SONS EITHER- - JUST ONe DAUGHTER,",
+          "confidence": 0.188
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I FIGURED HE WOULDN'T POSe MuCH OF A THREAT, WHICH IS WHY I STOPPED PURSUING HIM.",
+          "confidence": 0.81
+        },
+        {
+          "text": "HAS HE BEEN HIDING SOMEWHERE IN LOMBARDI THIS WHOLE TIME?",
+          "confidence": 0.933
+        },
+        {
+          "text": "YOUR MAJESTY,",
+          "confidence": 0.972
+        },
+        {
+          "text": "ARE YOU ABSOLUTELY CERTAIN HE'S LORD BROWN?",
+          "confidence": 0.887
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HMM... IT HAS BEEN SO LONG.",
+          "confidence": 0.828
+        },
+        {
+          "text": "GRIN",
+          "confidence": 0.934
+        },
+        {
+          "text": "JUST RESEMBLING HIM IN APPEARANCE PROVES NOTHING.",
+          "confidence": 0.948
+        },
+        {
+          "text": "LORD BROWN, PLEASE SHOW HIS MAJESTY WHAT YOU BROUGHT.",
+          "confidence": 0.887
+        },
+        {
+          "text": "NOD",
+          "confidence": 0.823
+        },
+        {
+          "text": "YES, く>二",
+          "confidence": 0.483
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "YOUR GRACE.",
+          "confidence": 0.738
+        },
+        {
+          "text": "SHF",
+          "confidence": 0.964
+        },
+        {
+          "text": "ASTLE PLEASE HAVE A LOOK at THIS, youR MAJESTY.",
+          "confidence": 0.767
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "HERE...",
+          "confidence": 0.99
+        },
+        {
+          "text": "THIS IS THE RING MY FATHER RECEIVED FROM THE LATE EMPEROR HIMSELF.",
+          "confidence": 0.929
+        },
+        {
+          "text": "TOLD I WAS - IT WaS Δ GIFT BESTOWED BY THE LATE EMPEROR",
+          "confidence": 0.111
+        },
+        {
+          "text": "ON THE DAY MY FATHER HAD SERvED TEN YEARS AS COMMANDER OF THE IMPERIAL KNIGHTS.",
+          "confidence": 0.856
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HAS YOuR DOUBT EASED NOW, YOUR MAJESTY?",
+          "confidence": 0.796
+        },
+        {
+          "text": "YOUR MAJESTY...",
+          "confidence": 0.923
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-194/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-194/011.webp"
+  ]
+}
