@@ -1,0 +1,254 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "213",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HMPH! HOW DO I EVEN KNOW WHERE YOU'LL TAKE ME?",
+          "confidence": 0.829,
+          "text_ar": "تبّاً! كيف لي أن أعرف إلى أين ستأخذني؟"
+        },
+        {
+          "text": "WITH THE IMPERIAL KNIGHTS WATCHING OVER ME, I SHOULD BE MLCH SAFER HERE!",
+          "confidence": 0.902,
+          "text_ar": "مع وجود فرسان الإمبراطورية يحرسونني، يجب أن أكون آمنًا هنا أكثر بكثير!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "WEREN'T YOu JUST PACKING YOUR THINGS?",
+          "confidence": 0.802,
+          "text_ar": "ألم تكن توضب أمتعتك للتو؟"
+        },
+        {
+          "text": "I GUESS HE HAD A CHANGE OF HEART.",
+          "confidence": 0.846,
+          "text_ar": "أظن أنه قد غيّر رأيه."
+        },
+        {
+          "text": "I'M ALREADY ANNOYED AS IT IS, AND NOW MY FIRST MISSION AS ACTING HEAD IS TO GET THIS GUY OUT OF HERE...",
+          "confidence": 0.826,
+          "text_ar": "أنا منزعج بما فيه الكفاية بالفعل، والآن مهمتي الأولى بصفتي الرئيس بالوكالة هي إخراج هذا الأحمق من هنا..."
+        },
+        {
+          "text": "BELLEZAC LOMBARDI, YOU BETTER THINK HARD ABOUT THIS.",
+          "confidence": 0.937,
+          "text_ar": "بيليزاك لومباردي، من الأفضل لك أن تفكر ملياً في هذا الأمر."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IS HE LOOKING ∆T THE KNIGHT?",
+          "confidence": 0.916,
+          "text_ar": "هل ينظر إلى الفارس؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "SIR, WHAT IS YOUR NAME?",
+          "confidence": 0.829,
+          "text_ar": "أيها الفارس، ما هو اسمك؟"
+        },
+        {
+          "text": "PAUSE",
+          "confidence": 0.758,
+          "text_ar": "توقف"
+        },
+        {
+          "text": "I'MOLKA BARAPORT OF THE FIRST KNIGHT ORDER,MY LADY.",
+          "confidence": 0.949,
+          "text_ar": "أنا أولكا بارابورت من فرقة الفرسان الأولى، سيدتي."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOUR HIGHNESS...",
+          "confidence": 0.93,
+          "text_ar": "سموّك..."
+        },
+        {
+          "text": "COULD YOU HAVE THE KNIGHTS STEP OUT FORA OGIFURA MOMENT?",
+          "confidence": 0.581,
+          "text_ar": "هل يمكنك أن تطلب من الفرسان الخروج لفترة قصيرة؟"
+        },
+        {
+          "text": "I SHRLL",
+          "confidence": 0.773,
+          "text_ar": "سأفعل"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "MASTER GTHIS FRMILY 213",
+          "confidence": 0.778,
+          "text_ar": "سيدي، هذه العائلة..."
+        },
+        {
+          "text": "HEY, BELLEZAC.",
+          "confidence": 0.984,
+          "text_ar": "مهلاً، بيليزاك."
+        },
+        {
+          "text": "IS YOUR HEAD FILLED WITH POOP?",
+          "confidence": 0.76,
+          "text_ar": "أهذا رأسك ممتلئ بالقاذورات؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "F-FILLED WITH WHAT...?!",
+          "confidence": 0.925,
+          "text_ar": "م-ممتلئ بماذا...⸮!"
+        },
+        {
+          "text": "IT MUST BE TRUE SINCE YOU CAN'T EVEN GRAB THE LIFELINE I'M SWINGING IN FRONT OF YOu!",
+          "confidence": 0.76,
+          "text_ar": "لا بد أن الأمر كذلك بما أنك لا تستطيع حتى الإمساك بطوق النجاة الذي ألوّح به أمام وجهك!"
+        },
+        {
+          "text": "THAT KNIGHT FROM HOUSE BARAPORT TOLD YOU SOMETHING WHEN PEREZ WASN'T HERE, DIDN'T HE?",
+          "confidence": 0.883,
+          "text_ar": "ذلك الفارس من عائلة بارابورت قال لك شيئاً عندما لم يكن بيريز هنا، أليس كذلك؟"
+        },
+        {
+          "text": "HAA It'S SO OBVIOUS THAT I DON'T EVEN NEED TO HEAR IT.",
+          "confidence": 0.8,
+          "text_ar": "هاه، الأمر واضح جداً لدرجة أنني لا أستطيع حتى تحمل عناء سماعه."
+        },
+        {
+          "text": "DID HE TELL YOu THAT PEREZ AND I, NOT THE EMPRESS, ARE MAKING YOU THE SCAPEGOAT?",
+          "confidence": 0.791,
+          "text_ar": "هل أخبرك أنني أنا وبيريز، لا الإمبراطورة، من نجعل منك كشاة فداء؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "FlncH",
+          "confidence": 0.551,
+          "text_ar": "ارتجف"
+        },
+        {
+          "text": "AND YOU BELIEVED HIM?!",
+          "confidence": 0.938,
+          "text_ar": "وقد صدقته؟!"
+        },
+        {
+          "text": "TMp LISTEN UP, BELLEZAC.",
+          "confidence": 0.654,
+          "text_ar": "اسمعني جيداً، بيليزاك."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I DON'T CARE ENOUGH abouT you To dRaG YOu ALONG WHEN you DoN'T WANt TO GO,",
+          "confidence": 0.711,
+          "text_ar": "أنا لا أهتم لأمرك لدرجة تجعلني أجرّك معي عندما لا تريد الذهاب،"
+        },
+        {
+          "text": "SO THIS IS YOUR ONLY CHANCE FROM ME.",
+          "confidence": 0.673,
+          "text_ar": "لذا فهذه هي فرصتك الوحيدة مني."
+        },
+        {
+          "text": "PICK UP YOUR PACKED BAG AND GET ON THE LOMBARDI CARRIAGE.",
+          "confidence": 0.914,
+          "text_ar": "التقط حقيبتك الموضبة واصعد على عربة لومباردي."
+        },
+        {
+          "text": "SWENT I-I...",
+          "confidence": 0.733,
+          "text_ar": "ولكن أنا..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I WON'T GO.",
+          "confidence": 0.886,
+          "text_ar": "لن أذهب."
+        },
+        {
+          "text": "I ALREADY TOLD HIM I WON'T GO..",
+          "confidence": 0.875,
+          "text_ar": "لقد أخبرته بالفعل أنني لن أذهب..."
+        },
+        {
+          "text": "I GUESS YOU'VE ALREADY DECIDED TO TRUST THEM.",
+          "confidence": 0.884,
+          "text_ar": "يبدو أنك قد قررت الوثوق بهم بالفعل."
+        },
+        {
+          "text": "MUMBLE MOTHER CLEARLy TOLD ME TO TRuST THE BARAPORTS...",
+          "confidence": 0.834,
+          "text_ar": "تمتم: لقد أخبرتني والدتي بوضوح أن أثق بآل بارابورت..."
+        },
+        {
+          "text": "\"MOTHER\"?",
+          "confidence": 0.841,
+          "text_ar": "\"والدتك\"؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "JUST LEAVE HIM HERE, LADY FIReNTIA.",
+          "confidence": 0.789,
+          "text_ar": "فقط اتركه هنا، الآنسة فيرينتيا."
+        },
+        {
+          "text": "HE JUST SAID HE BELIEVES HE FEELS SAFER HERE.",
+          "confidence": 0.882,
+          "text_ar": "لقد قال للتو إنه يؤمن بأنه يشعر بالأمان هنا."
+        },
+        {
+          "text": "AS LONG AS HE INsISTS on not Going, I Can't FORCE A WITNESS FOREEAWINESS TO LEAVE AGAINST TO LEAVe AGaInST THEIR WILL.",
+          "confidence": 0.685,
+          "text_ar": "طالما أنه يصر على عدم الذهاب، فلا يمكنني إجبار شاهد على المغادرة رغماً عن إرادته."
+        }
+      ]
+    }
+  ]
+}

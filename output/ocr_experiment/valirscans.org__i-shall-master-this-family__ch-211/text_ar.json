@@ -1,0 +1,284 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "211",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "IALREAD KNOW EVERYTHING. PLEASE TELL Me THE TRUTH.",
+          "confidence": 0.803,
+          "text_ar": "أنا أعرف كل شيء بالفعل. أرجوكِ أخبريني بالحقيقة."
+        },
+        {
+          "text": "HOW BAD HAS YOUR HEALTH GOTTEN?",
+          "confidence": 0.851,
+          "text_ar": "إلى أي مدى تدهورت صحتكِ؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "..HOW DID you KNOW?",
+          "confidence": 0.684,
+          "text_ar": "..كيف عرفتِ؟"
+        },
+        {
+          "text": "THE HEIR ANNOUNCEMENT CAME TOO SOON.",
+          "confidence": 0.902,
+          "text_ar": "لقد جاء إعلان الوريث مبكرًا جدًا."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "AS aCTING HEaD, IM SUPPOSED TO ASSIST YOU WHILE I GRADUALLY AND NATURALLY LEARN THE WORK INVOLVED,",
+          "confidence": 0.763,
+          "text_ar": "بصفتي رئيسة بالوكالة، كان من المفترض أن أساعدكِ بينما أتعلم العمل تدريجيًا وبشكل طبيعي،"
+        },
+        {
+          "text": "BUT YOU RUSHED THROUGH ALL OF IT IN BARELY A MONTH.",
+          "confidence": 0.889,
+          "text_ar": "لكنكِ أسرعتِ في إنجاز كل ذلك في بالكاد شهر واحد."
+        },
+        {
+          "text": "GVINK",
+          "confidence": 0.771,
+          "text_ar": "(إمساك)"
+        },
+        {
+          "text": "COULDN'T IT BE POSSIBLE THAT I MIGHT REALLY LIKE you, TIA?",
+          "confidence": 0.775,
+          "text_ar": "ألا يُحتمل أنني معجب بكِ حقًا، تيا؟"
+        },
+        {
+          "text": "I REALIZED IT WHEN YOU SUMMONED ME YESTERDAY WITH ALL THE VASSAL FAMILY HEADS PRESENT.",
+          "confidence": 0.917,
+          "text_ar": "أدركتُ ذلك عندما استدعيتني بالأمس بحضور جميع رؤساء العائلات التابعة."
+        },
+        {
+          "text": "THAT MEETING WASN'T JUST TO NOTIFY THEM",
+          "confidence": 0.835,
+          "text_ar": "لم يكن ذلك الاجتماع لمجرد إخطارهم"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "OF YOUR DECISION TO NAME ME THE HEIR, WAS IT?",
+          "confidence": 0.868,
+          "text_ar": "بقراركِ تعييني وريثًا، أليس كذلك؟"
+        },
+        {
+          "text": "THEN WHAT do yOu ThINk ITs PuRPOSE WaS?",
+          "confidence": 0.737,
+          "text_ar": "إذن، ما الذي تعتقدين أن الغرض منه كان؟"
+        },
+        {
+          "text": "IT WAS A QuESTION-",
+          "confidence": 0.754,
+          "text_ar": "لقد كانت جلسة-"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "AND-ANSWER SESSION.",
+          "confidence": 0.974,
+          "text_ar": "أسئلة وأجوبة."
+        },
+        {
+          "text": "IT WAS DESIGNED TO CLEAR THEIR DOUBTS ABOUT ME",
+          "confidence": 0.861,
+          "text_ar": "لقد صُممت لتبديد شكوكهم بشأني"
+        },
+        {
+          "text": "AND FOR ME TO CONVINCE THEM.",
+          "confidence": 0.881,
+          "text_ar": "ولكي أقوم بإقناعهم."
+        },
+        {
+          "text": "GIVEN THE LOMBARDI FAMILY'S EXCEPTIONALLY STRONG LOYALTY TO ITS HEAD,",
+          "confidence": 0.93,
+          "text_ar": "نظرًا لولاية عائلة لومباردي القوية بشكل استثنائي لرئيسها،"
+        },
+        {
+          "text": "THE VASSAL FAMILIES'DEEP ATTACHMENT TO THE FORMER HEAD CAN SOMETIMES BECOME AN ISSUE,",
+          "confidence": 0.876,
+          "text_ar": "فإن تعلق العائلات التابعة العميق بالرئيس السابق يمكن أن يصبح مشكلة أحيانًا،"
+        },
+        {
+          "text": "田国围",
+          "confidence": 0.175,
+          "text_ar": "(صوت حفيف)"
+        },
+        {
+          "text": "CHOOSING THE NEXT HEAD IS ENTIRELY THE CURRENT HEAD'S AUTHORITY..",
+          "confidence": 0.933,
+          "text_ar": "إن اختيار الرئيس القادم هو من صلاحيات الرئيس الحالي وحدها.."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "BUT THE VASSAL FAMILIES MUST ALSO FLLLY ACCEPT THAT DECISION,",
+          "confidence": 0.924,
+          "text_ar": "ولكن يجب على العائلات التابعة قبول هذا القرار بالكامل أيضًا،"
+        },
+        {
+          "text": "UNLESS IT'S ABSOLUtELY NECESSARY TO WIN ThEm OvER IN a VERY SHORT TIME,",
+          "confidence": 0.78,
+          "text_ar": "وما لم يكن ذلك ضروريًا للغاية لكسبهم في وقت قصير جدًا،"
+        },
+        {
+          "text": "YOu'D NEvER ARRANGE SUCH A MEETING.",
+          "confidence": 0.775,
+          "text_ar": "لما كنتِ لترتبي مثل هذا الاجتماع أبداً."
+        },
+        {
+          "text": "I CAN'T SEEM TO FOOL You.",
+          "confidence": 0.795,
+          "text_ar": "يبدو أنني لا أستطيع خداعك."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HOW LONG HAVE YOU BEEN LIKE THIS?!",
+          "confidence": 0.903,
+          "text_ar": "منذ متى وأنت هكذا؟!"
+        },
+        {
+          "text": "IT'S BEEN LIKE THIS SINCE I WOKE UP THIS MORNING.",
+          "confidence": 0.872,
+          "text_ar": "الأمر هكذا منذ أن استيقظت هذا الصباح."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "GRANDPA..!",
+          "confidence": 0.912,
+          "text_ar": "جدي..!"
+        },
+        {
+          "text": "DR. ESTIRA HAS ALREADY SEEN ME.",
+          "confidence": 0.97,
+          "text_ar": "لقد فحصتني الدكتورة استيرا بالفعل."
+        },
+        {
+          "text": "SHE SAID THERE'S PHYSICALLY NOTHING WRONG AND THAT THIS IS A TEMPORARY SYMPTOM.",
+          "confidence": 0.899,
+          "text_ar": "قالت إنه ليس هناك خطب جسدي وأن هذا عارض مؤقت."
+        },
+        {
+          "text": "SMIVE",
+          "confidence": 0.785,
+          "text_ar": "(ابتسامة خفيفة)"
+        },
+        {
+          "text": "THIS IS BECAUSE THE TENSION HAS FINALLY EASED, AND I'M FEELING RELIEVED.",
+          "confidence": 0.924,
+          "text_ar": "هذا يحدث لأن التوتر قد زال أخيرًا، وأنا أستشعر الراحة."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I HAVE NO REGRETS ABOUT THE LIFE I LIVED FOR LOMBARDI,",
+          "confidence": 0.916,
+          "text_ar": "ليس لدي أي ندم على الحياة التي عشتها من أجل لومباردي،"
+        },
+        {
+          "text": "BUT IN RETROSPECT, MY LIFE WAS NOTHING BUT FOR THE HOUSE.",
+          "confidence": 0.931,
+          "text_ar": "ولكن بالنظر إلى الوراء، لم تكن حياتي إلا من أجل العائلة."
+        },
+        {
+          "text": "I THOUGHT I GAVE MY ALL, BUT I CAN'T HELP FEELING I COULD'Ve DONE MORE.",
+          "confidence": 0.801,
+          "text_ar": "ظننت أنني بذلت قصارى جهدي، لكني لا أستطيع إلا أن أشعر أنني كان بإمكاني فعل المزيد."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "SNAR LET GO OF ME!",
+          "confidence": 0.895,
+          "text_ar": "(شهقة) اتركوني وشأني!"
+        },
+        {
+          "text": "I WANT TO SEE MY OWN FATHER. I SAID LET GO!",
+          "confidence": 0.937,
+          "text_ar": "أريد أن أرى والدي بنفسي. قلتُ اتركوني!"
+        },
+        {
+          "text": "...I'M SORRY, TIA.",
+          "confidence": 0.84,
+          "text_ar": "...أنا آسف، تيا."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WHY DO YOu SAY THAT?",
+          "confidence": 0.79,
+          "text_ar": "لماذا تقول ذلك؟"
+        },
+        {
+          "text": "YOU'RE SO YOuNG, AND I'm MAKING You CARRY NOT ONLY THIS FAMILY, BuT SO MANY OTHER BURDENS TOO.",
+          "confidence": 0.743,
+          "text_ar": "أنت صغيرة جدًا، وأنا أجعلك تحملين ليس هذه العائلة فحسب، بل العديد من الأعباء الأخرى أيضًا."
+        },
+        {
+          "text": "IT SEEMS LIKE I'LL HAVE TO PASS THE POSITIOn OF FAmILy HEAD TO YOU SOONER THAN EXPECTED.",
+          "confidence": 0.759,
+          "text_ar": "يبدو أنني سأضطر لتسليمك منصب رئيس العائلة عاجلًا غير آجل."
+        },
+        {
+          "text": "YES,I UNDERSTAND.",
+          "confidence": 0.973,
+          "text_ar": "حاضر، أنا أفهَم."
+        },
+        {
+          "text": "THEN YOU SHOULD LEAVE ALL THE HARD WORK TO Me AND GET SOME PROPER REST.",
+          "confidence": 0.82,
+          "text_ar": "إذن يجب أن تترك كل العمل الشاق لي وتحصل على قسط مناسب من الراحة."
+        }
+      ]
+    }
+  ]
+}
