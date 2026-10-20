@@ -1,0 +1,254 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "195",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "I HEREBY CHALLENGE you To A DUEL.",
+          "confidence": 0.735,
+          "text_ar": "أنا أتحدّاكِ رسمياً في مبارزة."
+        },
+        {
+          "text": "MY PERSONAL KNIGHT AGAINST YOUR IMPERIAL KNIGHT WOULD BE THE PERFECT CHOICE, DON'T yoU THINK?",
+          "confidence": 0.793,
+          "text_ar": "فارسِي الشخصي في مواجهة فارسِك الإمبراطوري سيكون الخيار الأمثل، ألا ترين ذلك؟"
+        },
+        {
+          "text": "△ D-DUEL, MY LADY?",
+          "confidence": 0.877,
+          "text_ar": "م-مبارزة، سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "GUANCE",
+          "confidence": 0.795,
+          "text_ar": "غوانس"
+        },
+        {
+          "text": "PLEASE, MY LADY! I BEG you to Take back YOUR WORDS...!",
+          "confidence": 0.789,
+          "text_ar": "أرجوكِ، سيدتي! أتوسل إليكِ أن تسحبي كلامكِ...!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "NO, I THINK THAT'S A GREAT IDEA!",
+          "confidence": 0.903,
+          "text_ar": "لا، أظن أنها فكرة رائعة!"
+        },
+        {
+          "text": "SIR SLOAN! YOu CAN be My PROXY AND FIGHT THIS DUEL.",
+          "confidence": 0.736,
+          "text_ar": "سير سلوان! يمكنكَ أن تكون وكيلًا عني وتخوض هذه المبارزة."
+        },
+        {
+          "text": "B-BUT YOUR HIGHNESS...",
+          "confidence": 0.879,
+          "text_ar": "ل-لكن سموك..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I BELIEVE THAT A DUEL FOUGHT FOR HONOR MUST BE BETWEEN PROXIES OF EQUAL SKILL.",
+          "confidence": 0.802,
+          "text_ar": "أعتقد أن المبارزة المُعقَدة من أجل الشرف يجب أن تكون بين وكلاء متساويين في المهارة."
+        },
+        {
+          "text": "EDDIAN SLOAN, VICE-CAPTAIN OF THE IMPERIAL KNIGHT'S THIRD DIVISION.",
+          "confidence": 0.931,
+          "text_ar": "إيديان سلوان، نائب قائد الفرقة الثالثة للفرسان الإمبراطوريين."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "THEY SAY IMPERIAL KNIGHTS TRAIN IN THE IMPERIAL SWORDSMANSHIP WITH LNMATCHED DEPTH.",
+          "confidence": 0.907,
+          "text_ar": "يقولون إن الفرسان الإمبراطوريين يتدربون على فنون السيف الإمبراطورية بعمق لا يُطاوَل."
+        },
+        {
+          "text": "EDDIAN SLOAN JOINED ∆T TWENTY, SO ABOUT FIFTEEN YEARS AGO,",
+          "confidence": 0.871,
+          "text_ar": "انضم إيديان سلوان في العشرين من عمره، أي قبل خمسة عشر عامًا تقريبًا،"
+        },
+        {
+          "text": "WHICH MEANS...",
+          "confidence": 0.957,
+          "text_ar": "مما يعني..."
+        },
+        {
+          "text": "THIS IS THE PERFECT CHANCE TO SHOW THAT INCOMPLETE, HALF-BAKED IMPERIAL SWORDSMANSHIP WHAT THE REAL DEAL ISLIKE,",
+          "confidence": 0.911,
+          "text_ar": "هذه هي الفرصة المثالية لنُريَ فنون السيف الإمبراطورية الناقصة وغير المكتملة شكلها الحقيقي،"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "WHAT DO YOu THINK ABOUT WHAT HE JUST SAID?",
+          "confidence": 0.752,
+          "text_ar": "ما رأيك فيما قاله للتو؟"
+        },
+        {
+          "text": "BOW",
+          "confidence": 0.825,
+          "text_ar": "انحناء"
+        },
+        {
+          "text": "I'M ALWAYS PREPARED TO FIGHT, My LADY.",
+          "confidence": 0.933,
+          "text_ar": "أنا مستعد دائماً للقتال، سيدتي."
+        },
+        {
+          "text": "HA ALL RIGHT, DON'T HOLD Back! CRUSH HER, SIR SLOAN!",
+          "confidence": 0.757,
+          "text_ar": "ها حسناً، لا تكبح طاقتك! سحقها، سير سلوان!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "SMiLE",
+          "confidence": 0.871,
+          "text_ar": "ابتسامة"
+        },
+        {
+          "text": "THE MUST DEFEATED APoLOGIZE TO THE OTHER PARTY.",
+          "confidence": 0.727,
+          "text_ar": "يجب على المهزوم أن يقدم اعتذاراً للطرف الآخر."
+        },
+        {
+          "text": "SINCERELY, WITH NOTHING HELD BACK.",
+          "confidence": 0.957,
+          "text_ar": "بإخلاص، ودون أي تحفظ."
+        },
+        {
+          "text": "SURE, THAT SOUNDS GOOD!",
+          "confidence": 0.978,
+          "text_ar": "بالتأكيد، يبدو هذا رائعاً!"
+        },
+        {
+          "text": "HAA...",
+          "confidence": 0.922,
+          "text_ar": "هاه..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "TMP",
+          "confidence": 0.98,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "golo 0 .",
+          "confidence": 0.268,
+          "text_ar": "هذا صحيح."
+        },
+        {
+          "text": "WHAT IS YOUR NAME?",
+          "confidence": 0.852,
+          "text_ar": "ما هو اسمك؟"
+        },
+        {
+          "text": "I FIGURE I SHOULD AT LEAST KNOW THAT MUCH.",
+          "confidence": 0.864,
+          "text_ar": "أظن أنه يجب أن أعرف هذا القدر على الأقل."
+        },
+        {
+          "text": "My NAME IS RAMONA BROWN.",
+          "confidence": 0.749,
+          "text_ar": "اسمي رامونا براون."
+        },
+        {
+          "text": "you Can caLl me",
+          "confidence": 0.714,
+          "text_ar": "يمكنك مناداتي"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "\"dame brown.\"",
+          "confidence": 0.911,
+          "text_ar": "بالفارسية براون."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I SHRLL MASTER S GTHIs FRMILY",
+          "confidence": 0.414,
+          "text_ar": "سأتقن فنون السيف في هذه العائلة"
+        },
+        {
+          "text": "MURMUR",
+          "confidence": 0.754,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "MARMUR",
+          "confidence": 0.862,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "WHAT IS aLL THIS? Δ DuEL, ALl OF A SuDDeN...?",
+          "confidence": 0.689,
+          "text_ar": "ما هذا كله؟ مبارزة، هكذا فجأة...؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "DID YOU HEAR WHAT PRINCE AstaNA DId TO LADY FIRENTIA...? SHWAAA",
+          "confidence": 0.727,
+          "text_ar": "أسمعتَ ما فعله الأمير أستانا بالليدي فيرينتيا...؟ حفيف"
+        },
+        {
+          "text": "WHISPER TAAI'T",
+          "confidence": 0.672,
+          "text_ar": "همس"
+        }
+      ]
+    }
+  ]
+}
