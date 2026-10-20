@@ -1,0 +1,204 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "198",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/198",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-198",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. DIDN'T I WARN YOU?\n001-2. I TOLD You nOT TO RuN INTO Me HERE.\n\nPage 002\n002-1. TMP MP\n002-2. W-WAIT!\n\nPage 003\n\nPage 004\n004-1. ALL AL RIGHT, YOUR HIGHNESS!\n004-2. CALM DOWN!\n\nPage 005\n005-1. YOU'LL REGRET IT LATER IF YOu KILL HIm SO EASILY HERE.\n005-2. TREMBLE TREMBLE\n005-3. LET GO.\n\nPage 006\n006-1. O-OH...!\n006-2. YOUR HIGHNESS!\n\nPage 007\n007-1. HERE. DRINK THIS AND PULL YOURSELF TOGETHER. SHK\n007-2. HAA IT'S ALL BECAUSE OF THE DEMONIC ENERGY!\n007-3. THAT'S WHAT'S MESSING WITH YOUR HEAD!\n\nPage 008\n008-1. ARE YOU ALL RIGHT YOUR HIGHNESS...?\n008-2. SEE? I TOLD YOu IT'S SAFER TO KEEP DRINKING THIS POTION A LITTLE BIT AT Δ TimE! GULP GULP\n008-3. PSST I GUESS THE DEMONIC ENERGY CAN REALLY DRIVE PEOPLE MAD...\n008-4. PSST NO WONDER IT'S CaLLED THE FOREST OF MADNESS!\n\nPage 009\n009-1. W-WE APOLOGIZE, YOUR HIGHNESS, BuT THIS FOREST IS JUST TOO DANGEROUS!\n\nPage 010\n010-1. HE'S RIGHT! MAY I SUGGEST YOUR HIGHNESS GO SOMEWHERE SAFE WITH US..?\n010-2. TH-THEY'RE RIGHT...\n010-3. I DON'T WANT TO STICK ARouND IN THIS MaD FOREST △ MOMENT LONGER!\n010-4. BIRDS OF A FEATHER FLOCK TOGETHER, HUH?\n\nPage 011\n011-1. HAD YOU ALL FOUGHT TOGETHER, YOU COULD'VE TakeN CARE OF Δ MONSTER THAT SIZE NO PROBLEM.\n011-2. SNAR WHAT?\n011-3. WHAT COULD WE POSSIBLY DO AGaINST THAT GIANT MONSTER?!",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "DIDN'T I WARN YOU?",
+          "confidence": 0.742
+        },
+        {
+          "text": "I TOLD You nOT TO RuN INTO Me HERE.",
+          "confidence": 0.773
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "TMP MP",
+          "confidence": 0.383
+        },
+        {
+          "text": "W-WAIT!",
+          "confidence": 0.982
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "ALL AL RIGHT, YOUR HIGHNESS!",
+          "confidence": 0.543
+        },
+        {
+          "text": "CALM DOWN!",
+          "confidence": 0.988
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOU'LL REGRET IT LATER IF YOu KILL HIm SO EASILY HERE.",
+          "confidence": 0.732
+        },
+        {
+          "text": "TREMBLE TREMBLE",
+          "confidence": 0.917
+        },
+        {
+          "text": "LET GO.",
+          "confidence": 0.986
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "O-OH...!",
+          "confidence": 0.954
+        },
+        {
+          "text": "YOUR HIGHNESS!",
+          "confidence": 0.963
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HERE. DRINK THIS AND PULL YOURSELF TOGETHER. SHK",
+          "confidence": 0.829
+        },
+        {
+          "text": "HAA IT'S ALL BECAUSE OF THE DEMONIC ENERGY!",
+          "confidence": 0.819
+        },
+        {
+          "text": "THAT'S WHAT'S MESSING WITH YOUR HEAD!",
+          "confidence": 0.964
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "ARE YOU ALL RIGHT YOUR HIGHNESS...?",
+          "confidence": 0.916
+        },
+        {
+          "text": "SEE? I TOLD YOu IT'S SAFER TO KEEP DRINKING THIS POTION A LITTLE BIT AT Δ TimE! GULP GULP",
+          "confidence": 0.706
+        },
+        {
+          "text": "PSST I GUESS THE DEMONIC ENERGY CAN REALLY DRIVE PEOPLE MAD...",
+          "confidence": 0.8
+        },
+        {
+          "text": "PSST NO WONDER IT'S CaLLED THE FOREST OF MADNESS!",
+          "confidence": 0.788
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "W-WE APOLOGIZE, YOUR HIGHNESS, BuT THIS FOREST IS JUST TOO DANGEROUS!",
+          "confidence": 0.836
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "HE'S RIGHT! MAY I SUGGEST YOUR HIGHNESS GO SOMEWHERE SAFE WITH US..?",
+          "confidence": 0.925
+        },
+        {
+          "text": "TH-THEY'RE RIGHT...",
+          "confidence": 0.988
+        },
+        {
+          "text": "I DON'T WANT TO STICK ARouND IN THIS MaD FOREST △ MOMENT LONGER!",
+          "confidence": 0.763
+        },
+        {
+          "text": "BIRDS OF A FEATHER FLOCK TOGETHER, HUH?",
+          "confidence": 0.936
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HAD YOU ALL FOUGHT TOGETHER, YOU COULD'VE TakeN CARE OF Δ MONSTER THAT SIZE NO PROBLEM.",
+          "confidence": 0.763
+        },
+        {
+          "text": "SNAR WHAT?",
+          "confidence": 0.925
+        },
+        {
+          "text": "WHAT COULD WE POSSIBLY DO AGaINST THAT GIANT MONSTER?!",
+          "confidence": 0.792
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-198/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-198/011.webp"
+  ]
+}

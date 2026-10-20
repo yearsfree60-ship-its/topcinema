@@ -1,0 +1,203 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "198",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "DIDN'T I WARN YOU?",
+          "confidence": 0.742,
+          "text_ar": "ألم أحذرك؟"
+        },
+        {
+          "text": "I TOLD You nOT TO RuN INTO Me HERE.",
+          "confidence": 0.773,
+          "text_ar": "أخبرتك ألا تصطدم بي هنا."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "TMP MP",
+          "confidence": 0.383,
+          "text_ar": "دوس"
+        },
+        {
+          "text": "W-WAIT!",
+          "confidence": 0.982,
+          "text_ar": "أ-انتظر!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": []
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "ALL AL RIGHT, YOUR HIGHNESS!",
+          "confidence": 0.543,
+          "text_ar": "ح-حسناً، سموك!"
+        },
+        {
+          "text": "CALM DOWN!",
+          "confidence": 0.988,
+          "text_ar": "اهدأ!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOU'LL REGRET IT LATER IF YOu KILL HIm SO EASILY HERE.",
+          "confidence": 0.732,
+          "text_ar": "ستندم لاحقاً إن قَتلته بمثل هذه السهولة هنا."
+        },
+        {
+          "text": "TREMBLE TREMBLE",
+          "confidence": 0.917,
+          "text_ar": "ارتجاف ارتجاف"
+        },
+        {
+          "text": "LET GO.",
+          "confidence": 0.986,
+          "text_ar": "اتركني."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "O-OH...!",
+          "confidence": 0.954,
+          "text_ar": "أ-أوه...!"
+        },
+        {
+          "text": "YOUR HIGHNESS!",
+          "confidence": 0.963,
+          "text_ar": "سموك!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HERE. DRINK THIS AND PULL YOURSELF TOGETHER. SHK",
+          "confidence": 0.829,
+          "text_ar": "خذ. اشرب هذا وتمالك نفسك."
+        },
+        {
+          "text": "HAA IT'S ALL BECAUSE OF THE DEMONIC ENERGY!",
+          "confidence": 0.819,
+          "text_ar": "هاه، كل هذا بسبب الطاقة الشيطانية!"
+        },
+        {
+          "text": "THAT'S WHAT'S MESSING WITH YOUR HEAD!",
+          "confidence": 0.964,
+          "text_ar": "هذا ما يعبث بعقلك!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "ARE YOU ALL RIGHT YOUR HIGHNESS...?",
+          "confidence": 0.916,
+          "text_ar": "هل أنت بخير يا سمو الأمير...؟"
+        },
+        {
+          "text": "SEE? I TOLD YOu IT'S SAFER TO KEEP DRINKING THIS POTION A LITTLE BIT AT Δ TimE! GULP GULP",
+          "confidence": 0.706,
+          "text_ar": "أرأيت؟ أخبرتك أنه من الأفضل الاستمرار في شرب هذا الجرعة شيئاً فشيئاً!"
+        },
+        {
+          "text": "PSST I GUESS THE DEMONIC ENERGY CAN REALLY DRIVE PEOPLE MAD...",
+          "confidence": 0.8,
+          "text_ar": "صه، أظن أن الطاقة الشيطانية تستطيع حقاً أن تجن جنون الناس..."
+        },
+        {
+          "text": "PSST NO WONDER IT'S CaLLED THE FOREST OF MADNESS!",
+          "confidence": 0.788,
+          "text_ar": "صه، لا عجب إذن أن تُسمى غابة الجنون!"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "W-WE APOLOGIZE, YOUR HIGHNESS, BuT THIS FOREST IS JUST TOO DANGEROUS!",
+          "confidence": 0.836,
+          "text_ar": "ن-نحن نعتذر، سموك، لكن هذه الغابة خطيرة للغاية حقاً!"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "HE'S RIGHT! MAY I SUGGEST YOUR HIGHNESS GO SOMEWHERE SAFE WITH US..?",
+          "confidence": 0.925,
+          "text_ar": "إنه محق! هل تقترح يا سموك أن تذهب معنا إلى مكان آمن..؟"
+        },
+        {
+          "text": "TH-THEY'RE RIGHT...",
+          "confidence": 0.988,
+          "text_ar": "إ-إنهم على حق..."
+        },
+        {
+          "text": "I DON'T WANT TO STICK ARouND IN THIS MaD FOREST △ MOMENT LONGER!",
+          "confidence": 0.763,
+          "text_ar": "لا أريد البقاء في هذه الغابة الملعونة لحظة أخرى!"
+        },
+        {
+          "text": "BIRDS OF A FEATHER FLOCK TOGETHER, HUH?",
+          "confidence": 0.936,
+          "text_ar": "الطيور على أشكالها تقع، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HAD YOU ALL FOUGHT TOGETHER, YOU COULD'VE TakeN CARE OF Δ MONSTER THAT SIZE NO PROBLEM.",
+          "confidence": 0.763,
+          "text_ar": "لو قاتلتم جميعاً معاً، لكنتم قد قضيتم على وحش بهذا الحجم دون أي مشكلة."
+        },
+        {
+          "text": "SNAR WHAT?",
+          "confidence": 0.925,
+          "text_ar": "هِرير! ماذا؟"
+        },
+        {
+          "text": "WHAT COULD WE POSSIBLY DO AGaINST THAT GIANT MONSTER?!",
+          "confidence": 0.792,
+          "text_ar": "ماذا عسانا أن نفعل ضد ذلك الوحش العملاق؟!ان"
+        }
+      ]
+    }
+  ]
+}
