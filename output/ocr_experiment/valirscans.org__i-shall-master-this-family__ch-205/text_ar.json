@@ -1,0 +1,228 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "205",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YES, CHAIRmAN.",
+          "confidence": 0.832,
+          "text_ar": "حاضر، أيها الرئيس."
+        },
+        {
+          "text": "GRIN",
+          "confidence": 0.977,
+          "text_ar": "ابتسامة عريضة"
+        },
+        {
+          "text": "I'M FIRENTIA LOMBARDI, THE ACTING HEAD OF HOUSE LOMBARDI.",
+          "confidence": 0.929,
+          "text_ar": "أنا فيرينتيا لومباردي، الرئيسة بالنيابة لعائلة لومباردي."
+        },
+        {
+          "text": "房家 N",
+          "confidence": 0.087,
+          "text_ar": "نظرة حادة"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SIINLY MASTER THIS FAMILY G",
+          "confidence": 0.273,
+          "text_ar": "إنه حقاً سيد هذه العائلة..."
+        },
+        {
+          "text": "ACTING THE HEAD OF HOUSE LOMBARDI...?",
+          "confidence": 0.941,
+          "text_ar": "رئيسة لومباردي بالنيابة...؟"
+        },
+        {
+          "text": "DID SOMETHING HAPPEN TO HIS GRACE BY ANY CHANCE?",
+          "confidence": 0.877,
+          "text_ar": "هل حدث مكروه لسعادته صدفةً؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "You SEEM TO HAVE MANY QUESTIONS, CHAIRMAN CILLIAN.",
+          "confidence": 0.715,
+          "text_ar": "تبدو لديك أسئلة كثيرة، أيها الرئيس سيليان."
+        },
+        {
+          "text": "DO YOu nORmaLLy ASK THIS MANY QuESTIONS TO MY GRANDFATHER?",
+          "confidence": 0.751,
+          "text_ar": "هل تطرح هذا العدد من الأسئلة على جدي عادةً؟"
+        },
+        {
+          "text": "FIDGET",
+          "confidence": 0.905,
+          "text_ar": "تململ"
+        },
+        {
+          "text": "IT'S NOT THAT, MY LADY IT'S JUST... WE WEREN'T NOTIFIED AT ALL-",
+          "confidence": 0.802,
+          "text_ar": "الأمر ليس هكذا، سيدتي، بل... لم يتم إبلاغنا على الإطلاق-"
+        },
+        {
+          "text": "ARE yOu SAYING MY GRANDFATHER NEEDS YOUR APPROVAL...",
+          "confidence": 0.763,
+          "text_ar": "أتقول إن جدي بحاجة إلى موافقتكم..."
+        },
+        {
+          "text": "...TO APPOINT A PROXY TO ATTEND IN HIS STEAD?",
+          "confidence": 0.862,
+          "text_ar": "...ليتعين ممثلاً يحضر نيابة عنه؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "TH-THAT'S NOT WHAT I MEAN...",
+          "confidence": 0.874,
+          "text_ar": "ل-ليس هذا ما أقصده..."
+        },
+        {
+          "text": "THERE'S NO PROBLEM THEN, IS THERE?",
+          "confidence": 0.938,
+          "text_ar": "إذن لا توجد مشكلة، أليس كذلك؟"
+        },
+        {
+          "text": "..NO, MY LADY.",
+          "confidence": 0.855,
+          "text_ar": "...بالتأكيد لا، سيدتي."
+        },
+        {
+          "text": "VERY WELL.",
+          "confidence": 0.992,
+          "text_ar": "حسنًا جداً."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "CUCK",
+          "confidence": 0.659,
+          "text_ar": "نقر"
+        },
+        {
+          "text": "G CLROS 發",
+          "confidence": 0.078,
+          "text_ar": "همسات"
+        },
+        {
+          "text": "YOUR MAJESTyY...?",
+          "confidence": 0.877,
+          "text_ar": "جلالتك...؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": []
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THERE SHE IS. OrE iS.",
+          "confidence": 0.422,
+          "text_ar": "ها هي ذا. إنها هنا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I CAN'T BELIEVE THE EMPRESS, WHO HAS NO SAy IN THIS COUNCIL, SHOWED HER FACE HERE...",
+          "confidence": 0.826,
+          "text_ar": "لا أصدق أن الإمبراطورة، التي لا ناقة لها ولا جمل في هذا المجلس، قد أظهرت وجهها هنا..."
+        },
+        {
+          "text": "IT ONLY GOES TO SHOW HOWIMPORTANT TODAY'S MEETING IS TO HOUSE ANGENAS.",
+          "confidence": 0.921,
+          "text_ar": "هذا يوضح فقط مدى أهمية اجتماع اليوم لعائلة أنجيناس."
+        },
+        {
+          "text": "THERE SEEMS TO BE MANY OBSERvERS FROM THE IMPERIAL PALACE TODAY.",
+          "confidence": 0.86,
+          "text_ar": "يبدو أن هناك العديد من المراقبين من القصر الإمبراطوري اليوم."
+        },
+        {
+          "text": "HAHA,I WAS THINKING THE SAME. THE SAME",
+          "confidence": 0.913,
+          "text_ar": "هاها، كنت أفكر في نفس الشيء. نفس الشيء تماماً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HIS HIGHNESS PRINCE PEREZ HAS ALSO ARRIVED.",
+          "confidence": 0.903,
+          "text_ar": "لقد وصل سمو الأمير بيريز أيضاً."
+        },
+        {
+          "text": "WELCOME, EVERYONE.",
+          "confidence": 0.985,
+          "text_ar": "أهلاً بالجميع."
+        },
+        {
+          "text": "GREETINGS, PRINCE PEREZ.",
+          "confidence": 0.987,
+          "text_ar": "تحياتي، سمو الأمير بيريز."
+        },
+        {
+          "text": "I INTENTIONALLY DIDN'T INFORM PEREZ IN ADVANCE.",
+          "confidence": 0.977,
+          "text_ar": "تعمدت ألا أبلغ بيريز مسبقاً."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I WANTED TO SEE HIM Δ LITTLE SURPRISED.",
+          "confidence": 0.926,
+          "text_ar": "أردت أن أراه متفاجئاً قليلاً."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "NoD",
+          "confidence": 0.633,
+          "text_ar": "إيماء"
+        }
+      ]
+    }
+  ]
+}
