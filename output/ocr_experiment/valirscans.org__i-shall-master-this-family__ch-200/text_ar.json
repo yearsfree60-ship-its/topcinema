@@ -1,0 +1,194 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "200",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "LAW",
+          "confidence": 0.736,
+          "text_ar": "زئير"
+        },
+        {
+          "text": "CLNK",
+          "confidence": 0.758,
+          "text_ar": "صريراً"
+        },
+        {
+          "text": "CWNK",
+          "confidence": 0.849,
+          "text_ar": "اصطكاك"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THIS IS SUPPOSED TO BE SAFE IN THE FOREST OF MADNESS?",
+          "confidence": 0.92,
+          "text_ar": "أهذا المفترض أنه آمن في غابة الجنون؟"
+        },
+        {
+          "text": "PEREZ...",
+          "confidence": 0.974,
+          "text_ar": "بيريز..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WHAT IN THE WORLD ARE YOU THINKING?",
+          "confidence": 0.942,
+          "text_ar": "ما الذي تفكر فيه بحق الجحيم؟"
+        },
+        {
+          "text": "I SHRLL MNSTER s FRMILY THIS",
+          "confidence": 0.777,
+          "text_ar": "سأقضي على هذا الوحش."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "STOP IT!",
+          "confidence": 0.958,
+          "text_ar": "توقف!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "PROTECT HIS MAJESTY!",
+          "confidence": 0.916,
+          "text_ar": "احموا الجلالة!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "TH-THANK You, YOUR HIGHNESS.",
+          "confidence": 0.711,
+          "text_ar": "ش-شكراً لك، سمو الأمير."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "KUGH...!",
+          "confidence": 0.936,
+          "text_ar": "كُوغ...!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "GET DOWN, YOUR MAJESTY!",
+          "confidence": 0.779,
+          "text_ar": "انخفض، جلالة الملك!"
+        },
+        {
+          "text": "WHS YOUR MAJESTY!",
+          "confidence": 0.818,
+          "text_ar": "يا جلالة الملك!"
+        },
+        {
+          "text": "ARE YOU ALL RIGHT?!",
+          "confidence": 0.815,
+          "text_ar": "هل أنت بخير؟!"
+        },
+        {
+          "text": "Y-YES, I'M FINE!",
+          "confidence": 0.944,
+          "text_ar": "ن-نعم، أنا بخير!"
+        },
+        {
+          "text": "IITV",
+          "confidence": 0.66,
+          "text_ar": "سعال"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "PONLY SCRATCHED My ARMOR.",
+          "confidence": 0.794,
+          "text_ar": "لقد خدش درعي فحسب."
+        },
+        {
+          "text": "DON'T MAKE A FUSS ABOUT IT!",
+          "confidence": 0.873,
+          "text_ar": "لا تقيموا ضجة حول الأمر!"
+        },
+        {
+          "text": "YOUR MAJESTY...",
+          "confidence": 0.929,
+          "text_ar": "جلالتك..."
+        },
+        {
+          "text": "you SHOULD PUT THIS ON INSTEAD.",
+          "confidence": 0.718,
+          "text_ar": "يجب أن ترتدي هذا بدلاً منه."
+        },
+        {
+          "text": "ARED CLOAK SHOULD BE MORE NOTICEABLE IN A DANGeROUS SITUATION LIKE THIS.",
+          "confidence": 0.748,
+          "text_ar": "الرداء الأحمر سيكون أكثر وضوحاً في موقف خطير كهذا."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "..SURE, LET'S DO THAT.",
+          "confidence": 0.872,
+          "text_ar": "..بالتأكيد، لنفعل ذلك."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "心业少 Vb",
+          "confidence": 0.212,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "WHISPER BE CAREFUL, TIA.",
+          "confidence": 0.977,
+          "text_ar": "كوني حذرة، تيا."
+        }
+      ]
+    }
+  ]
+}
