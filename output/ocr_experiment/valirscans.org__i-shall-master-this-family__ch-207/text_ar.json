@@ -1,0 +1,249 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "207",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "RALPH SERSHAW... RETURN TO SERSHAW TODAY.",
+          "confidence": 0.929,
+          "text_ar": "رالف سيرشاو... عد إلى سيرشاو اليوم."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "M-MASTER, I CAN'T DO THAT...",
+          "confidence": 0.882,
+          "text_ar": "سـ... سيدتي، لا يمكنني فعل ذلك..."
+        },
+        {
+          "text": "I'LL STAY HERE AND FIGHT WITH HOUSE BROWN. I'MA BROWN KNIGHT TOO!",
+          "confidence": 0.91,
+          "text_ar": "سأبقى هنا وأقاتل مع عائلة براون. أنا فارس من براون أيضًا!"
+        },
+        {
+          "text": "NO, YOU ARE A SERSHAW AND JUST ONE OF THE MANY STUDENTS WHO CAME To LEARN THE SWORD AT HOUSE BROWN.",
+          "confidence": 0.74,
+          "text_ar": "لا، أنت تنتمي إلى عائلة سيرشاو، ولست سوى واحد من العديد من الطلاب الذين جاءوا لتعلم فن السيف في منزل براون."
+        },
+        {
+          "text": "BUT...!",
+          "confidence": 0.879,
+          "text_ar": "ولكن...!"
+        },
+        {
+          "text": "SNAP DO YOU \\A/AAITVOUSNON",
+          "confidence": 0.545,
+          "text_ar": "إمساك"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "TO DIE TOo?!",
+          "confidence": 0.778,
+          "text_ar": "أتريد الموت أنت أيضًا؟!"
+        },
+        {
+          "text": "UGH...!",
+          "confidence": 0.948,
+          "text_ar": "آه...!"
+        },
+        {
+          "text": "YOU SAID you wanted To bE A KnIGHT, RIghT, CHANTON?",
+          "confidence": 0.712,
+          "text_ar": "قلت إنك تريد أن تصبح فارسًا، أليس كذلك، شانتون؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "Wilch",
+          "confidence": 0.454,
+          "text_ar": "شهيق"
+        },
+        {
+          "text": "YES, SIR!",
+          "confidence": 0.943,
+          "text_ar": "نعم، يا سيدي!"
+        },
+        {
+          "text": "THEN THERE ARE SOME THINGS YOU MUST KEEP IN MIND.",
+          "confidence": 0.798,
+          "text_ar": "إذن هناك أمور يجب عليك وضعها نصب عينيك."
+        },
+        {
+          "text": "CAN YOu PROMISE YOUR MASTER THAT yOu'LL REMEMBER THEM?",
+          "confidence": 0.732,
+          "text_ar": "أيمكنك أن تعد سيدك بأن تتذكرها؟"
+        },
+        {
+          "text": "YES, MASTER!",
+          "confidence": 0.98,
+          "text_ar": "نعم، يا سيدي!"
+        },
+        {
+          "text": "Pfe",
+          "confidence": 0.479,
+          "text_ar": "تنهد"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "ALWAYS RAISE YOUR SWORD FOR THE WEAK.",
+          "confidence": 0.909,
+          "text_ar": "ارفع سيفك دائمًا دفاعًا عن الضعفاء."
+        },
+        {
+          "text": "KEEP THE PROMISES YOU MAKE, NO MATTER WHAT.",
+          "confidence": 0.806,
+          "text_ar": "أوفِ بوعودك، مهما كانت الظروف."
+        },
+        {
+          "text": "DO NOT LIE, AND NEVER FORGET YOUR CONVICTIONS. LIVE WITH PRIDE.",
+          "confidence": 0.901,
+          "text_ar": "لا تكذب أبدًا، ولا تنسَ مبادئك أبدًا. عِش بكرامة."
+        },
+        {
+          "text": "AND LASTLY...",
+          "confidence": 0.99,
+          "text_ar": "وأخيرًا..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "IF YOUR SWORD PROVES STRONGER AND SHARPER THAN ANY OTHER, BECOME Δ KNIGHT OF THE IMPERIAL PALACE.",
+          "confidence": 0.71,
+          "text_ar": "إن كان سيفك أقوى وأحدّ من أي سيف آخر، فكن فارسًا للقصر الإمبراطوري."
+        },
+        {
+          "text": "AND... WILL YOU PROTECT THIS EMPIRE AND THE DURELLI IMPERIAL FAMILY IN MY STEAD?",
+          "confidence": 0.873,
+          "text_ar": "وهل... ستُحمِى هذه الإمبراطورية والعائلة الإمبراطورية لدوريلي عوضًا عني؟"
+        },
+        {
+          "text": "YES, MASTER! I WILL!",
+          "confidence": 0.937,
+          "text_ar": "نعم، يا سيدي! سأفعل!"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I'LL MakE SURe TO BE AN IMPeRiaL KNIGHT!",
+          "confidence": 0.713,
+          "text_ar": "سأحرص على أن أكون فارسًا إمبراطوريًا!"
+        },
+        {
+          "text": "GOOD.",
+          "confidence": 0.989,
+          "text_ar": "رائع."
+        },
+        {
+          "text": "I KNOW I CAN CouNT ON YoU!",
+          "confidence": 0.74,
+          "text_ar": "أعلم أنني أستطيع الاعتماد عليك!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THAT AFTERNOON,",
+          "confidence": 0.98,
+          "text_ar": "في تلك الظهيرة،"
+        },
+        {
+          "text": "I RETURNED TO HOUSE SERSHAW WITH MY FATHER..,",
+          "confidence": 0.925,
+          "text_ar": "عدت إلى عائلة سيرشاو برفقة والدي..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "...AND HOUSE ANGENAS LALNCHEDAN ATTACK ON HOUSE BROWN.",
+          "confidence": 0.762,
+          "text_ar": "...وشنت عائلة أنجيناس هجومًا على عائلة براون."
+        },
+        {
+          "text": "I BECAME AN IMPERIAL KNIGHT TO KEEP MY PROMISE TO MY MASTER,",
+          "confidence": 0.762,
+          "text_ar": "لقد أصبحت فارسًا إمبراطوريًا لأفي بوعدي لسيدي،"
+        },
+        {
+          "text": "BUT I HELD NO LOYALTY TO THE IMPERIAL FAMILY",
+          "confidence": 0.932,
+          "text_ar": "لكنني لم أكن أكنّ أي ولاء للعائلة الإمبراطورية."
+        },
+        {
+          "text": "THERE WAS NOTHING ABOUT THE DURELLI IMPERIAL HOUSE THAT DESERVED IT.",
+          "confidence": 0.922,
+          "text_ar": "لم يكن في بيت دوريلي الإمبراطوري ما يستحق ذلك."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "MAY I HAVE THIS BOOK?",
+          "confidence": 0.954,
+          "text_ar": "أيمكنني أن أخذ هذا الكتاب؟"
+        },
+        {
+          "text": "IT'S Δ VERY PRECIOUS BOOK TO ME.",
+          "confidence": 0.791,
+          "text_ar": "إنه كتاب ثمين للغاية بالنسبة لي."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "...PARDON?",
+          "confidence": 0.863,
+          "text_ar": "...عفوًا؟"
+        },
+        {
+          "text": "HE CHERISHES IT..?",
+          "confidence": 0.885,
+          "text_ar": "إنه يعتز به إلى هذا الحد...؟"
+        }
+      ]
+    }
+  ]
+}
