@@ -1,0 +1,209 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "210",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/210",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-210",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. HAA...\n001-2. I NEED A BREAK.\n\nPage 002\n002-1. IT WAS ADAYNO DIFFERENT FROM ANY OTHER.\n002-2. I WAS ACKNOWLEDGED AS THE HEIR INFRONT OF THE HEIR IN FRONT OF MYGRANDFATHER AND VASSAL FAMILY HEADS...\n\nPage 003\n003-1. NOW, I JUST NEED TO FINISH THE REMAINING TASKS.\n003-2. YES, SO...\n003-3. I CAN REST △ LITTLE...\n\nPage 004\n004-1. I SHkLL MASTER THIs FAMILY 6 210\n004-2. Sl フ\n\nPage 005\n005-1. BLINK\n005-2. PEREZ..?\n\nPage 006\n006-1. TWINKE\n006-2. MUMBLE\n006-3. SO PRETTY...\n\nPage 007\n007-1. IS THIS A DREam?\n\nPage 008\n008-1. THINKING BACK...\n008-2. WHENEVER SOMETHING IMPORTANT HAPPENED...\n008-3. WE'D LIE DOWN FACING EACH OTHER.\n\nPage 009\n009-1. PEREZ...\n009-2. I'M OFFICIALLY THE HEIR OF THE FAMILY NOW.\n009-3. IT'LL BE ANNOUNCED TOMORROW.\n\nPage 010\n010-1. ...CONGRATS, TIA.\n010-2. YOU'VE FULFILLEDYOUR DREAM.\n\nPage 011\n011-1. PEREZ...\n011-2. I CHOSE LOMBARDI.\n011-3. ONCE THE ANNOUNCEMENT IS MADE,\n011-4. OUR FAKE ENGAGEMENT WILL BE OVER TOO.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HAA...",
+          "confidence": 0.981
+        },
+        {
+          "text": "I NEED A BREAK.",
+          "confidence": 0.86
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT WAS ADAYNO DIFFERENT FROM ANY OTHER.",
+          "confidence": 0.831
+        },
+        {
+          "text": "I WAS ACKNOWLEDGED AS THE HEIR INFRONT OF THE HEIR IN FRONT OF MYGRANDFATHER AND VASSAL FAMILY HEADS...",
+          "confidence": 0.922
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "NOW, I JUST NEED TO FINISH THE REMAINING TASKS.",
+          "confidence": 0.944
+        },
+        {
+          "text": "YES, SO...",
+          "confidence": 0.944
+        },
+        {
+          "text": "I CAN REST △ LITTLE...",
+          "confidence": 0.891
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER THIs FAMILY 6 210",
+          "confidence": 0.505
+        },
+        {
+          "text": "Sl フ",
+          "confidence": 0.216
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "BLINK",
+          "confidence": 0.784
+        },
+        {
+          "text": "PEREZ..?",
+          "confidence": 0.942
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "TWINKE",
+          "confidence": 0.747
+        },
+        {
+          "text": "MUMBLE",
+          "confidence": 0.974
+        },
+        {
+          "text": "SO PRETTY...",
+          "confidence": 0.844
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IS THIS A DREam?",
+          "confidence": 0.705
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THINKING BACK...",
+          "confidence": 0.897
+        },
+        {
+          "text": "WHENEVER SOMETHING IMPORTANT HAPPENED...",
+          "confidence": 0.958
+        },
+        {
+          "text": "WE'D LIE DOWN FACING EACH OTHER.",
+          "confidence": 0.939
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "PEREZ...",
+          "confidence": 0.98
+        },
+        {
+          "text": "I'M OFFICIALLY THE HEIR OF THE FAMILY NOW.",
+          "confidence": 0.847
+        },
+        {
+          "text": "IT'LL BE ANNOUNCED TOMORROW.",
+          "confidence": 0.949
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "...CONGRATS, TIA.",
+          "confidence": 0.825
+        },
+        {
+          "text": "YOU'VE FULFILLEDYOUR DREAM.",
+          "confidence": 0.819
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "PEREZ...",
+          "confidence": 0.973
+        },
+        {
+          "text": "I CHOSE LOMBARDI.",
+          "confidence": 0.966
+        },
+        {
+          "text": "ONCE THE ANNOUNCEMENT IS MADE,",
+          "confidence": 0.929
+        },
+        {
+          "text": "OUR FAKE ENGAGEMENT WILL BE OVER TOO.",
+          "confidence": 0.954
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-210/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-210/011.webp"
+  ]
+}

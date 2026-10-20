@@ -1,0 +1,264 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "209",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HOUSE BROWN HAS BEEN SUCCESSFULLY RESTORED.",
+          "confidence": 0.98,
+          "text_ar": "لقد تم إعادة إحياء عائلة براون بنجاح."
+        },
+        {
+          "text": "ALL THAT REMAINS IS FOR THE GRAND COUNCIL TO DECIDE WHICH HOUSE SHOULD REPRESENT THE WEST.",
+          "confidence": 0.881,
+          "text_ar": "كل ما تبقى هو أن يقرر المجلس الأعلى العائلة التي ستُمثل الغرب."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "HAHA! GREAT JOB! YOU DID GREAT!",
+          "confidence": 0.837,
+          "text_ar": "هاها! عمل رائع! لقد أبليت بلاءً حسنًا!"
+        },
+        {
+          "text": "WERE THEY SHOCKED WHEN YOU STEPPED INTO THE ROOM?",
+          "confidence": 0.932,
+          "text_ar": "هل تفاجأوا عندما دخلت الغرفة؟"
+        },
+        {
+          "text": "THEY THOUGHT I WAS THERE TO SEE YOU, GRANDPA!",
+          "confidence": 0.902,
+          "text_ar": "لقد ظنوا أنني كنت هناك لأجل رؤيتك، جدي!"
+        },
+        {
+          "text": "IS THAT so? WhAT DID you SAy TO THEM?",
+          "confidence": 0.722,
+          "text_ar": "أحقاً؟ وماذا قلتِ لهم؟"
+        },
+        {
+          "text": "I TOLD THEM I WAS THE ACTING HEAD OF HOUSE LOMBARDI.",
+          "confidence": 0.898,
+          "text_ar": "أخبرتهم أنني الرئيسة المؤقتة لعائلة لومباردي."
+        },
+        {
+          "text": "HMM 一）",
+          "confidence": 0.677,
+          "text_ar": "همم..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "SOHOWWAS HOW WAS YOUR IT? DAY AS THE actInG HEAD OF HOUSE LOMBARDI?",
+          "confidence": 0.72,
+          "text_ar": "كيف كان يومك بصفتك الرئيسة المؤقتة لعائلة لومباردي؟"
+        },
+        {
+          "text": "I BELIEVE I WAS BORN FOR IT.",
+          "confidence": 0.875,
+          "text_ar": "أعتقد أنني وُلدت لهذا المنصب."
+        },
+        {
+          "text": "I'DLIKE TO BE THE HEAD OF THE FAMILY, GRANDPA.",
+          "confidence": 0.936,
+          "text_ar": "أود أن أكون رئيسة العائلة، جدي."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "GLANE IF THAT'S WHAT MY TIA WANTS...",
+          "confidence": 0.622,
+          "text_ar": "غلان، إذا كان هذا ما تريده تيا..."
+        },
+        {
+          "text": "WHAT DOES EVERYONE THINK?",
+          "confidence": 0.926,
+          "text_ar": "ماذا يرى الجميع؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER GTHIS FAMILY 209",
+          "confidence": 0.811,
+          "text_ar": "سأصبح سيد هذه العائلة."
+        },
+        {
+          "text": "IOT 1",
+          "confidence": 0.331,
+          "text_ar": "هذا صحيح."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "AHEM...",
+          "confidence": 0.975,
+          "text_ar": "احم..."
+        },
+        {
+          "text": "IT LOOKS LIKE YOU HAVE MuCH ON YOUR MINDS.",
+          "confidence": 0.834,
+          "text_ar": "يبدو أن لدى الجميع الكثير ليقولوه."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I WOULDN'T HAVE SUMMONED YOU ALL LIKE THIS IF I ONLY MEANT FOR HER TO BE THE ACTING HEAD OF THE FAMILY.",
+          "confidence": 0.861,
+          "text_ar": "لما كنت قد استدعيتكم جميعاً هكذا لو أنني أردتها أن تكون رئيسة مؤقتة للعائلة فقط."
+        },
+        {
+          "text": "Do YOu BY CHANCE MEAN... SELECTING YOUR HEIR?",
+          "confidence": 0.794,
+          "text_ar": "هل تقصد صدفةً... اختيار الوريث؟"
+        },
+        {
+          "text": "THAT'S CORRECT.",
+          "confidence": 0.985,
+          "text_ar": "هذا صحيح."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THEDAY HAS FINALLY COME.",
+          "confidence": 0.964,
+          "text_ar": "لقد أتى اليوم أخيراً."
+        },
+        {
+          "text": "NOT MERELY Δ PROXY, BuT THE HEIR WHO'LL BE THE NEXT MASTER OF HOUSE LOMBARDI.",
+          "confidence": 0.832,
+          "text_ar": "ليس مجرد وكيل، بل الوريث الذي سيصبح السيد القادم لعائلة لومباردي."
+        },
+        {
+          "text": "THAT'S ME!!!",
+          "confidence": 0.926,
+          "text_ar": "هذا أنا!!!"
+        },
+        {
+          "text": "I SUPPOSE YOU'RE ALL FEELING RATHER UNSETTLED.",
+          "confidence": 0.924,
+          "text_ar": "أظن أنكم تشعرون جميعاً بالقلق بعض الشيء."
+        },
+        {
+          "text": "SMLE THAT'S COMPLETELY INNEOSTANAOI",
+          "confidence": 0.494,
+          "text_ar": "هذا أمر طبيعي تماماً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I KNOW HOW MUCH EVERYONE CARES ABOUT THIS HOUSE.",
+          "confidence": 0.856,
+          "text_ar": "أنا أعلم كم يهتم الجميع بهذه العائلة."
+        },
+        {
+          "text": "THEN ALLOW ME TO ASK TIA △ FEW QUESTIONS.",
+          "confidence": 0.891,
+          "text_ar": "إذن اسمحوا لي أن أطرح على تيا بضع أسئلة."
+        },
+        {
+          "text": "IT WON'T BE △ BAD IDEA TO RECONSIDER AFTER YOU HEAR HER ANSWERS.",
+          "confidence": 0.898,
+          "text_ar": "لن تكون فكرة سيئة إعادة التفكير في الأمر بعد سماع إجاباتها."
+        },
+        {
+          "text": "LOMBARDI IS CURRENTLY FACING A NEW TURNING POINT.",
+          "confidence": 0.927,
+          "text_ar": "تواجه لومباردي حالياً نقطة تحول جديدة."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "TELL US, FIRENTIA LOMBARDI. GIVEN THE CIRCUMSTANCES, WHAT SHOULD OUR NEXT COURSE OF ACTION BE?",
+          "confidence": 0.873,
+          "text_ar": "أخبرينا، فيرينتيا لومباردي. في ظل هذه الظروف، ما هي خطوتنا القادمة؟"
+        },
+        {
+          "text": "FOR LOMBARDI...",
+          "confidence": 0.936,
+          "text_ar": "بالنسبة للومباردي..."
+        },
+        {
+          "text": "SINCE PRINCE PEREZ WILL BECOME CROWN PRINCE,",
+          "confidence": 0.972,
+          "text_ar": "بما أن الأمير بيريز سيصبح ولي العهد،"
+        },
+        {
+          "text": "WE SHOULD MAINTAIN FRIENDLY RELATIONS WITH HIM AND SECURE WHATEVER ADVANTAGES WE CAN.",
+          "confidence": 0.939,
+          "text_ar": "فيجب علينا الحفاظ على علاقات ودية معه وضمان أي مكاسب ممكنة."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WHILE THE SITUATION MAY BE UNFOLDING IN FAVOR OF THE SECOND PRINCE,",
+          "confidence": 0.858,
+          "text_ar": "بينما قد تسير الأمور لصالح الأمير الثاني،"
+        },
+        {
+          "text": "IN THE END, IT IS HIS MAJESTY WHO MAKES FINAL DECISIONS ON MATTERS.",
+          "confidence": 0.92,
+          "text_ar": "في النهاية، جلالة الملك هو من يتخذ القرار النهائي بشأن الأمور."
+        },
+        {
+          "text": "THEIR TERRITORY MAY TEOOITOOY AAY HAVE SHRuNK AND THEIR INFLUENCE WEAKENED,",
+          "confidence": 0.832,
+          "text_ar": "قد تكون أراضيهم قد تقلصت وتراجع نفوذهم،"
+        },
+        {
+          "text": "BUT ISN'T HOUSE ANGENAS STILL THE LEADING HOUSE OF THE WEST?",
+          "confidence": 0.874,
+          "text_ar": "ولكن أليست عائلة أنجيناس لا تزال العائلة الرائدة في الغرب؟"
+        },
+        {
+          "text": ".MY THOUGHTS EXACTLY, MY LADY.",
+          "confidence": 0.873,
+          "text_ar": "نفس ما كنت أفكّر فيه، سيدتي."
+        }
+      ]
+    }
+  ]
+}
