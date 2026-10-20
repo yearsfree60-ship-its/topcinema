@@ -1,0 +1,24 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "237",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": []
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "Shall laster 享 sFamil This ? 0 2 3",
+          "confidence": 0.143,
+          "text_ar": "هل ستستمر هذه العائلة هكذا؟"
+        }
+      ]
+    }
+  ]
+}
