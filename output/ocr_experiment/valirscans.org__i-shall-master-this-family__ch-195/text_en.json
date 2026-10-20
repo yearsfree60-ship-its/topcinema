@@ -1,0 +1,245 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "195",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/195",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-195",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. I HEREBY CHALLENGE you To A DUEL.\n001-2. MY PERSONAL KNIGHT AGAINST YOUR IMPERIAL KNIGHT WOULD BE THE PERFECT CHOICE, DON'T yoU THINK?\n001-3. △ D-DUEL, MY LADY?\n\nPage 002\n002-1. GUANCE\n002-2. PLEASE, MY LADY! I BEG you to Take back YOUR WORDS...!\n\nPage 003\n003-1. NO, I THINK THAT'S A GREAT IDEA!\n003-2. SIR SLOAN! YOu CAN be My PROXY AND FIGHT THIS DUEL.\n003-3. B-BUT YOUR HIGHNESS...\n\nPage 004\n004-1. I BELIEVE THAT A DUEL FOUGHT FOR HONOR MUST BE BETWEEN PROXIES OF EQUAL SKILL.\n004-2. EDDIAN SLOAN, VICE-CAPTAIN OF THE IMPERIAL KNIGHT'S THIRD DIVISION.\n\nPage 005\n005-1. THEY SAY IMPERIAL KNIGHTS TRAIN IN THE IMPERIAL SWORDSMANSHIP WITH LNMATCHED DEPTH.\n005-2. EDDIAN SLOAN JOINED ∆T TWENTY, SO ABOUT FIFTEEN YEARS AGO,\n005-3. WHICH MEANS...\n005-4. THIS IS THE PERFECT CHANCE TO SHOW THAT INCOMPLETE, HALF-BAKED IMPERIAL SWORDSMANSHIP WHAT THE REAL DEAL ISLIKE,\n\nPage 006\n006-1. WHAT DO YOu THINK ABOUT WHAT HE JUST SAID?\n006-2. BOW\n006-3. I'M ALWAYS PREPARED TO FIGHT, My LADY.\n006-4. HA ALL RIGHT, DON'T HOLD Back! CRUSH HER, SIR SLOAN!\n\nPage 007\n007-1. SMiLE\n007-2. THE MUST DEFEATED APoLOGIZE TO THE OTHER PARTY.\n007-3. SINCERELY, WITH NOTHING HELD BACK.\n007-4. SURE, THAT SOUNDS GOOD!\n007-5. HAA...\n\nPage 008\n008-1. TMP\n008-2. golo 0 .\n008-3. WHAT IS YOUR NAME?\n008-4. I FIGURE I SHOULD AT LEAST KNOW THAT MUCH.\n008-5. My NAME IS RAMONA BROWN.\n008-6. you Can caLl me\n\nPage 009\n009-1. \"dame brown.\"\n\nPage 010\n010-1. I SHRLL MASTER S GTHIs FRMILY\n010-2. MURMUR\n010-3. MARMUR\n010-4. WHAT IS aLL THIS? Δ DuEL, ALl OF A SuDDeN...?\n\nPage 011\n011-1. DID YOU HEAR WHAT PRINCE AstaNA DId TO LADY FIRENTIA...? SHWAAA\n011-2. WHISPER TAAI'T",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "I HEREBY CHALLENGE you To A DUEL.",
+          "confidence": 0.735
+        },
+        {
+          "text": "MY PERSONAL KNIGHT AGAINST YOUR IMPERIAL KNIGHT WOULD BE THE PERFECT CHOICE, DON'T yoU THINK?",
+          "confidence": 0.793
+        },
+        {
+          "text": "△ D-DUEL, MY LADY?",
+          "confidence": 0.877
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "GUANCE",
+          "confidence": 0.795
+        },
+        {
+          "text": "PLEASE, MY LADY! I BEG you to Take back YOUR WORDS...!",
+          "confidence": 0.789
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "NO, I THINK THAT'S A GREAT IDEA!",
+          "confidence": 0.903
+        },
+        {
+          "text": "SIR SLOAN! YOu CAN be My PROXY AND FIGHT THIS DUEL.",
+          "confidence": 0.736
+        },
+        {
+          "text": "B-BUT YOUR HIGHNESS...",
+          "confidence": 0.879
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I BELIEVE THAT A DUEL FOUGHT FOR HONOR MUST BE BETWEEN PROXIES OF EQUAL SKILL.",
+          "confidence": 0.802
+        },
+        {
+          "text": "EDDIAN SLOAN, VICE-CAPTAIN OF THE IMPERIAL KNIGHT'S THIRD DIVISION.",
+          "confidence": 0.931
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "THEY SAY IMPERIAL KNIGHTS TRAIN IN THE IMPERIAL SWORDSMANSHIP WITH LNMATCHED DEPTH.",
+          "confidence": 0.907
+        },
+        {
+          "text": "EDDIAN SLOAN JOINED ∆T TWENTY, SO ABOUT FIFTEEN YEARS AGO,",
+          "confidence": 0.871
+        },
+        {
+          "text": "WHICH MEANS...",
+          "confidence": 0.957
+        },
+        {
+          "text": "THIS IS THE PERFECT CHANCE TO SHOW THAT INCOMPLETE, HALF-BAKED IMPERIAL SWORDSMANSHIP WHAT THE REAL DEAL ISLIKE,",
+          "confidence": 0.911
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "WHAT DO YOu THINK ABOUT WHAT HE JUST SAID?",
+          "confidence": 0.752
+        },
+        {
+          "text": "BOW",
+          "confidence": 0.825
+        },
+        {
+          "text": "I'M ALWAYS PREPARED TO FIGHT, My LADY.",
+          "confidence": 0.933
+        },
+        {
+          "text": "HA ALL RIGHT, DON'T HOLD Back! CRUSH HER, SIR SLOAN!",
+          "confidence": 0.757
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "SMiLE",
+          "confidence": 0.871
+        },
+        {
+          "text": "THE MUST DEFEATED APoLOGIZE TO THE OTHER PARTY.",
+          "confidence": 0.727
+        },
+        {
+          "text": "SINCERELY, WITH NOTHING HELD BACK.",
+          "confidence": 0.957
+        },
+        {
+          "text": "SURE, THAT SOUNDS GOOD!",
+          "confidence": 0.978
+        },
+        {
+          "text": "HAA...",
+          "confidence": 0.922
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "TMP",
+          "confidence": 0.98
+        },
+        {
+          "text": "golo 0 .",
+          "confidence": 0.268
+        },
+        {
+          "text": "WHAT IS YOUR NAME?",
+          "confidence": 0.852
+        },
+        {
+          "text": "I FIGURE I SHOULD AT LEAST KNOW THAT MUCH.",
+          "confidence": 0.864
+        },
+        {
+          "text": "My NAME IS RAMONA BROWN.",
+          "confidence": 0.749
+        },
+        {
+          "text": "you Can caLl me",
+          "confidence": 0.714
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "\"dame brown.\"",
+          "confidence": 0.911
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I SHRLL MASTER S GTHIs FRMILY",
+          "confidence": 0.414
+        },
+        {
+          "text": "MURMUR",
+          "confidence": 0.754
+        },
+        {
+          "text": "MARMUR",
+          "confidence": 0.862
+        },
+        {
+          "text": "WHAT IS aLL THIS? Δ DuEL, ALl OF A SuDDeN...?",
+          "confidence": 0.689
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "DID YOU HEAR WHAT PRINCE AstaNA DId TO LADY FIRENTIA...? SHWAAA",
+          "confidence": 0.727
+        },
+        {
+          "text": "WHISPER TAAI'T",
+          "confidence": 0.672
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-195/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-195/011.webp"
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "196",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "GAC 电货量",
+          "confidence": 0.258,
+          "text_ar": "صوت محرك"
+        },
+        {
+          "text": "TAK M 7",
+          "confidence": 0.204,
+          "text_ar": "خطوات"
+        },
+        {
+          "text": "WURMUR",
+          "confidence": 0.76,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "MURMUR",
+          "confidence": 0.866,
+          "text_ar": "تمتمة"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "WIRMUR",
+          "confidence": 0.657,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "9 GRIT",
+          "confidence": 0.926,
+          "text_ar": "صرير"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "THEY'RE LIKE VILE LITTLE INSECTS THAT REFUSE TO DIE.",
+          "confidence": 0.988,
+          "text_ar": "إنهن كالحشرات الحقيرة الصغيرة التي ترفض الموت."
+        },
+        {
+          "text": "I SHOULD'VE GOTTEN RID OF THEM ALL RIGHT THEN AND THERE YESTERDAY!",
+          "confidence": 0.943,
+          "text_ar": "كان يجب أن أتخلص منهن كلهن في تلك اللحظة بالذات بالأمس!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "IT'S CLEAR HER MAJESTY KNOWS LITTLE OF WHAT TRULY HAPPENED IN THE PAST,",
+          "confidence": 0.923,
+          "text_ar": "من الواضح أن جلالتها لا تعرف إلا القليل عما حدث حقًا في الماضي،"
+        },
+        {
+          "text": "OF WHAT BROUGHT HOUSE BROWN TO RUIN IN THE FIRST PLACE!",
+          "confidence": 0.955,
+          "text_ar": "وعما أدى إلى سقوط آل براون في المقام الأول!"
+        },
+        {
+          "text": "I WON'T LOSE THE WEST LANDS TO THAT FEEBLe HOUSE BROWN",
+          "confidence": 0.882,
+          "text_ar": "لن أسرق أراضي الغرب لصالح آل براون الضعناء أولئك"
+        },
+        {
+          "text": "WHO COULDN'T EVEN DEFEND THEIR OWN TERRITORY.",
+          "confidence": 0.96,
+          "text_ar": "الذين لم يستطيعوا حتى الدفاع عن أراضيهم."
+        },
+        {
+          "text": "WHAT IN THE WORLD HAPPENED FORTY YEARS AGO?",
+          "confidence": 0.97,
+          "text_ar": "ما الذي حدث بحق الجحيم قبل أربعين عامًا؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "DEWEY.",
+          "confidence": 0.988,
+          "text_ar": "ديوي."
+        },
+        {
+          "text": "YES, SISTER?",
+          "confidence": 0.984,
+          "text_ar": "نعم، أُختاه؟"
+        },
+        {
+          "text": "DO YOu KNOW ANYTHING ABOUT WHAT HAPPENED TO HOUSE BROWN?",
+          "confidence": 0.787,
+          "text_ar": "أَتُعرف شيئًا عما حدث لآل براون؟"
+        },
+        {
+          "text": "SWEAT",
+          "confidence": 0.985,
+          "text_ar": "عرق"
+        },
+        {
+          "text": "WELL, IF IT'S aBouT THEIR TERRITORY...",
+          "confidence": 0.792,
+          "text_ar": "حسنًا، إن كان الأمر يتعلق بأراضيهم..."
+        },
+        {
+          "text": "you KNOW HOW",
+          "confidence": 0.848,
+          "text_ar": "أنت تعلم كيف كان"
+        },
+        {
+          "text": "FATHER WAS ALWAYS ESPECIALLY QuIET ABOUT THAT MATTER WHILE HE WAS ALIVE.",
+          "confidence": 0.861,
+          "text_ar": "والدنا هادئًا بشكل خاص بشأن هذا الأمر طوال فترة حياته."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "YES, THAT'S TRUE.",
+          "confidence": 0.956,
+          "text_ar": "نعم، هذا صحيح."
+        },
+        {
+          "text": "STILL, I ASKED IN CASE HE MIGHT'VE MENTIONED SOMETHING to HIS Son at LEAST.",
+          "confidence": 0.777,
+          "text_ar": "مع ذلك، سألتُ لعلّه ذكر شيئًا لابنه على الأقل."
+        },
+        {
+          "text": "EVEN IN DEATH, FATHER IS JUST AHLROOUO AS USELESS. AS uSELESS.",
+          "confidence": 0.563,
+          "text_ar": "حتى في مماته، يظل والدي عديم الفائدة تمامًا. عديم الفائدة حقًا."
+        },
+        {
+          "text": "FWSH I SHOULD HURRY BaCk AND MEET WITH THE ELDERS OF THE FAMILY. I CAN'T JUST SIT ARoUND LIKE THIS.",
+          "confidence": 0.763,
+          "text_ar": "يجب أن أسرع بالعودة للقاء شيوخ العائلة. لا يمكنني الجلوس هكذا مكتوف الأيدي."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "CLICK",
+          "confidence": 0.761,
+          "text_ar": "طقطقة"
+        },
+        {
+          "text": "CLACK CLICK",
+          "confidence": 0.72,
+          "text_ar": "طقطقة طقطقة"
+        },
+        {
+          "text": "MOTHER, ARE YOU... GoING SoME- WHERE?",
+          "confidence": 0.811,
+          "text_ar": "أماه، هل أنتِ... ذاهبة إلى مكان ما؟"
+        },
+        {
+          "text": "FWIK",
+          "confidence": 0.811,
+          "text_ar": "حركة سريعة"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "OH, ASTANA!",
+          "confidence": 0.934,
+          "text_ar": "أهلاً، أستانا!"
+        },
+        {
+          "text": "YOUR MOTHER IS RETuRNING TO THE PALACE DUE TO AN URGENt MATTER.",
+          "confidence": 0.783,
+          "text_ar": "والدتك عائدة إلى القصر بسبب أمر طارئ."
+        },
+        {
+          "text": "YOu SHOULD ENJOY THE HUNTING TOURNAMENT BEFORE COMING BACK CONMNC HOME.",
+          "confidence": 0.545,
+          "text_ar": "عليك الاستمتاع بمسابقة الصيد قبل العودة إلى المنزل."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "..ARE YOU NOT ANGRY WITH ME?",
+          "confidence": 0.756,
+          "text_ar": "...ألسْتِ غاضبة مني؟"
+        },
+        {
+          "text": "AWA",
+          "confidence": 0.407,
+          "text_ar": "تنهيدة"
+        },
+        {
+          "text": "ABOUT WHAT HAPPENED YESTERDAY, THAT IS...",
+          "confidence": 0.789,
+          "text_ar": "بخصوص ما حدث بالأمس، أعني..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "CNCK YES, I HEARD THERE WAS QUITE A COMMOTION YESTERDAY.",
+          "confidence": 0.647,
+          "text_ar": "نعم، سمعت أنه كان هناك الكثير من الضجة بالأمس."
+        },
+        {
+          "text": "MOTHER, I CAN EXPLA—",
+          "confidence": 0.919,
+          "text_ar": "أماه، يمكنني الشرح—"
+        },
+        {
+          "text": "ABOUT YESTERDAY...",
+          "confidence": 0.951,
+          "text_ar": "بخصوص الأمس..."
+        },
+        {
+          "text": "LET'S JUST SAY ZUSTSAY WE WERE BOTH PLAYED BY HOUSE LOMBARDI.",
+          "confidence": 0.858,
+          "text_ar": "فلنقل ببساطة إننا كلينا قد خُدعنا من قِبل آل لومباردي."
+        },
+        {
+          "text": "Tup",
+          "confidence": 0.869,
+          "text_ar": "خطوة"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "FRC 新 福",
+          "confidence": 0.241,
+          "text_ar": "صوت حركة"
+        },
+        {
+          "text": "WHAT...?",
+          "confidence": 0.95,
+          "text_ar": "ماذا...؟"
+        },
+        {
+          "text": "SMILE",
+          "confidence": 0.985,
+          "text_ar": "ابتسامة"
+        }
+      ]
+    }
+  ]
+}
