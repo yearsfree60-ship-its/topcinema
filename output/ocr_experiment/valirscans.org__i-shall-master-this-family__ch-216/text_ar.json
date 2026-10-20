@@ -1,0 +1,259 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "216",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THIS CHAPTER WAS BROUGHT TO YOU WITH LOVE BY VALIRSCANS MAKE SURE YOU'RE READING ON OUR WEBSITE Links: Valirscans.com 我 discord.gg/vsfJ9fgs99 ~ ↑",
+          "confidence": 0.113,
+          "text_ar": "هذا الفصل قُدِّم لكم بحب من فريق Valirscans. تأكدوا من القراءة على موقعنا."
+        },
+        {
+          "text": "Scans",
+          "confidence": 0.987,
+          "text_ar": "فريق الترجمة"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "CLERIVAN!",
+          "confidence": 0.985,
+          "text_ar": "كليريفان!"
+        },
+        {
+          "text": "LADY FIRENTIA...",
+          "confidence": 0.994,
+          "text_ar": "آنسة فيرينتيا..."
+        },
+        {
+          "text": "ΔLOT HAS HAPPENED. YOu MUST'VE BEEN SO SCARED.",
+          "confidence": 0.743,
+          "text_ar": "لقد حدث الكثير. لا بد أنكِ كنتِ خائفة حقاً."
+        },
+        {
+          "text": "VALIRSCANS.COM 6",
+          "confidence": 0.224,
+          "text_ar": "Valirscans.com"
+        },
+        {
+          "text": "IT'D BE Δ LIE TO Say I WASN'T.",
+          "confidence": 0.733,
+          "text_ar": "س يكون كذباً إن قلتُ إنني لم أكن كذلك."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "CLERIVAN...",
+          "confidence": 0.919,
+          "text_ar": "كليريفان..."
+        },
+        {
+          "text": "SKk",
+          "confidence": 0.656,
+          "text_ar": "شهيق"
+        },
+        {
+          "text": "BROTHER...",
+          "confidence": 0.94,
+          "text_ar": "أخي..."
+        },
+        {
+          "text": "SnF I'MSO, SO RELIEVED...",
+          "confidence": 0.516,
+          "text_ar": "أنا مرتاحة... مرتاحة للغاية..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THAT you'Re SaFe..",
+          "confidence": 0.718,
+          "text_ar": "لأنكِ بأمان..."
+        },
+        {
+          "text": "SIFLE",
+          "confidence": 0.765,
+          "text_ar": "نحيب"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "PAT",
+          "confidence": 0.819,
+          "text_ar": "ربت"
+        },
+        {
+          "text": "I'M SORRY. yOu MusT'vE BEEn STARTLED.",
+          "confidence": 0.718,
+          "text_ar": "أنا آسف. لا بد أنكِ فُزِعتِ."
+        },
+        {
+          "text": "HC S",
+          "confidence": 0.068,
+          "text_ar": "تنهيدة"
+        },
+        {
+          "text": "BROTHER..!",
+          "confidence": 0.972,
+          "text_ar": "أخي..!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "VALIRSCANS.COM 6",
+          "confidence": 0.446,
+          "text_ar": "Valirscans.com"
+        },
+        {
+          "text": "I SHRLL MASTER GTHIS FAMILY 216",
+          "confidence": 0.779,
+          "text_ar": "سأصبح سيد هذه العائلة"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I'M AFRAID THE IMPERIAL KNIGHTS TOOK VIOLET AWAY.",
+          "confidence": 0.776,
+          "text_ar": "أخشى أن فرسان الإمبراطورية قد أخذوا فايوليت."
+        },
+        {
+          "text": "VIOLET..?!",
+          "confidence": 0.978,
+          "text_ar": "فايوليت..؟!"
+        },
+        {
+          "text": "HAA...",
+          "confidence": 0.935,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "WHAT DO WE DO, MY LADY?",
+          "confidence": 0.904,
+          "text_ar": "ما العمل الآن، سيدتي؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THE CHARGE THEY TOOK HER AWAY ON WAS...",
+          "confidence": 0.849,
+          "text_ar": "التهمة التي أُخذت بسببها هي..."
+        },
+        {
+          "text": ".AIDING THE ATTEMPTED ASSASSINATION OF THE EMPEROR,",
+          "confidence": 0.889,
+          "text_ar": "مساعدة محاولة اغتيال الإمبراطور."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "WOULDN'T IT BE BETTER TO EXPLAIN THAT MY BROTHER HAD NOTHING TO DO WITH ANY OF THIS?",
+          "confidence": 0.872,
+          "text_ar": "ألن يكون أفضل أن نوضح أن أخي لم يكن له أي صلة بكل هذا؟"
+        },
+        {
+          "text": "NO, THE EMPRESS WOULD SIMPLY COME UP WITH ANOTHER ACCUSATION.",
+          "confidence": 0.907,
+          "text_ar": "لا، ستختلق الإمبراطورة اتهاماً آخر بكل بساطة."
+        },
+        {
+          "text": "THEN HOW DO WE...?",
+          "confidence": 0.892,
+          "text_ar": "إذن كيف لنا أن...؟"
+        },
+        {
+          "text": "C VALIRSCANS.COM",
+          "confidence": 0.106,
+          "text_ar": "Valirscans.com"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "WE MUST TARGET THE EMPRESS",
+          "confidence": 0.883,
+          "text_ar": "يجب أن نستهدف الإمبراطورة"
+        },
+        {
+          "text": "SO SHE'LL NEVER PULL SOMETHING LIKE THIS AGAIN.",
+          "confidence": 0.785,
+          "text_ar": "لكي لا تقم بمثل هذا الفعل مجدداً أبداً."
+        },
+        {
+          "text": "THE FACT THAT THE IMPERIAL KNIGHTS WERE EMPLOYED TO Do Such Δ DRASTIC ACTION",
+          "confidence": 0.706,
+          "text_ar": "حقيقة أن فرسان الإمبراطورية قد استُخدموا للقيام بمثل هذا الإجراء المتطرف"
+        },
+        {
+          "text": "PROVES THAT SHE'S FEELING CORNERED.",
+          "confidence": 0.962,
+          "text_ar": "تثبت أنها تشعر بأنها محاصرة."
+        },
+        {
+          "text": "IT MEANS WE DON'T NEED TO FEAR HER.",
+          "confidence": 0.827,
+          "text_ar": "وهذا يعني أننا لا نحتاج لخوفها."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "AFTER ALL, WE HOLD THE UPPER HAND.",
+          "confidence": 0.917,
+          "text_ar": "ففي النهاية، نحن نمتلك اليد العليا."
+        },
+        {
+          "text": "WE JUST NEED TO HOLD OUT UNTIL THE GRAND COUNCIL IN A FEW DAYS.",
+          "confidence": 0.861,
+          "text_ar": "كل ما نحتاجه هو الصمود حتى المجلس الكبرى خلال أيام قليلة."
+        },
+        {
+          "text": "PEREZ, I HAVE A FAVOR TO ASK...",
+          "confidence": 0.881,
+          "text_ar": "بيريز، لدي طلب أرجوك أن تلبيه..."
+        }
+      ]
+    }
+  ]
+}
