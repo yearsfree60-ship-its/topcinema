@@ -1,0 +1,237 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "202",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/202",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-202",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. MEDICINE! BRING ME MEDICINE!\n001-2. W-WHAT DO WE DO?\n\nPage 002\n002-1. WE GAVE HIM ALL THE MEDICINE WE HAVE...\n002-2. SH-SHOULD WE CONTACT THE PALACE PHYSICIAN?\n002-3. THERE'S NO NEED.\n\nPage 003\n003-1. PRINCE PEREZ!\n003-2. YOu TWO CAn JusT ComE BACK TOMORROW MORNING. LEAVE NOW.\n003-3. PLEASE GO AHEAD.\n\nPage 004\n004-1. KEAK\n004-2. DO YOU THINK YOU'LL STILL HAVE YOUR HEAD AFTER TYING ME UP LIKE THIS?!\n004-3. RELEASE ME NOW!\n004-4. I'LL KILL YOu FOR PUTTING ME THROUGH SHA一\n004-5. ASTANA NEREMPE DURELLI,\n\nPage 005\n005-1. 。.。 。 。··。·。。 Qb o\n005-2. I WILL NOW BEGIN YOUR INTERROGATION FOR TREASON AND THE ATTEMPTED ASSASSINATION OF THE EMPEROR.\n\nPage 006\n006-1. I SHkLL MASTER THIs FRMILY\n006-2. W-WHAT aRe You TaLkInG ABOUT? \"asSaSSINaTION AttEmpt\"? \"treason\"?!\n\nPage 007\n007-1. ARE YOU CLAIMING THAT YOU DON'T RECALL?\n007-2. DON'T BE RIDICULOUS!\n007-3. WHY WOULD I EVER..?\n007-4. WAIT... IS THAT THE REASON I'M TIED UP HERE?\n\nPage 008\n008-1. I ATTEMPTED TO ASSASSINaTE HIS MAJESTY?!\n008-2. THAT'S RIGHT.\n008-3. IMPOSSIBLE!\n008-4. IT WAS YOu WHO I WAS TRyING TO kILl, NoT HIS MAJESTY!\n008-5. SO RELEASE\n\nPage 009\n009-1. ME AT ONCE!\n009-2. UNFORTUNATELY, IT WAS HIS MAJESTY YOURUSHEDTOWARD TO KILL.\n009-3. you uSED THIS DAGGER BELLEZAC LOMBARDI HAD IN HIS POSSESSION.\n\nPage 010\n010-1. IDO REMEMBER HOLDING THAT DAGGER IN MY HAND...\n010-2. BUT...\n\nPage 011\n011-1. DON'T BE ABSURD.\n011-2. CHK IT WAS DEFINITELY YOU I ChARged at, yoU LOWLY BaStARD.\n011-3. I ONLY FAILED BECAUSE OF THE IMPERIAL KNIGHTS STANDING NEXT TO YOU...",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MEDICINE! BRING ME MEDICINE!",
+          "confidence": 0.916
+        },
+        {
+          "text": "W-WHAT DO WE DO?",
+          "confidence": 0.865
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "WE GAVE HIM ALL THE MEDICINE WE HAVE...",
+          "confidence": 0.908
+        },
+        {
+          "text": "SH-SHOULD WE CONTACT THE PALACE PHYSICIAN?",
+          "confidence": 0.921
+        },
+        {
+          "text": "THERE'S NO NEED.",
+          "confidence": 0.93
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "PRINCE PEREZ!",
+          "confidence": 0.996
+        },
+        {
+          "text": "YOu TWO CAn JusT ComE BACK TOMORROW MORNING. LEAVE NOW.",
+          "confidence": 0.744
+        },
+        {
+          "text": "PLEASE GO AHEAD.",
+          "confidence": 0.894
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "KEAK",
+          "confidence": 0.809
+        },
+        {
+          "text": "DO YOU THINK YOU'LL STILL HAVE YOUR HEAD AFTER TYING ME UP LIKE THIS?!",
+          "confidence": 0.744
+        },
+        {
+          "text": "RELEASE ME NOW!",
+          "confidence": 0.888
+        },
+        {
+          "text": "I'LL KILL YOu FOR PUTTING ME THROUGH SHA一",
+          "confidence": 0.873
+        },
+        {
+          "text": "ASTANA NEREMPE DURELLI,",
+          "confidence": 0.936
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "。.。 。 。··。·。。 Qb o",
+          "confidence": 0.29
+        },
+        {
+          "text": "I WILL NOW BEGIN YOUR INTERROGATION FOR TREASON AND THE ATTEMPTED ASSASSINATION OF THE EMPEROR.",
+          "confidence": 0.955
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER THIs FRMILY",
+          "confidence": 0.817
+        },
+        {
+          "text": "W-WHAT aRe You TaLkInG ABOUT? \"asSaSSINaTION AttEmpt\"? \"treason\"?!",
+          "confidence": 0.695
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "ARE YOU CLAIMING THAT YOU DON'T RECALL?",
+          "confidence": 0.808
+        },
+        {
+          "text": "DON'T BE RIDICULOUS!",
+          "confidence": 0.976
+        },
+        {
+          "text": "WHY WOULD I EVER..?",
+          "confidence": 0.974
+        },
+        {
+          "text": "WAIT... IS THAT THE REASON I'M TIED UP HERE?",
+          "confidence": 0.937
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "I ATTEMPTED TO ASSASSINaTE HIS MAJESTY?!",
+          "confidence": 0.886
+        },
+        {
+          "text": "THAT'S RIGHT.",
+          "confidence": 0.992
+        },
+        {
+          "text": "IMPOSSIBLE!",
+          "confidence": 0.992
+        },
+        {
+          "text": "IT WAS YOu WHO I WAS TRyING TO kILl, NoT HIS MAJESTY!",
+          "confidence": 0.75
+        },
+        {
+          "text": "SO RELEASE",
+          "confidence": 0.939
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "ME AT ONCE!",
+          "confidence": 0.783
+        },
+        {
+          "text": "UNFORTUNATELY, IT WAS HIS MAJESTY YOURUSHEDTOWARD TO KILL.",
+          "confidence": 0.878
+        },
+        {
+          "text": "you uSED THIS DAGGER BELLEZAC LOMBARDI HAD IN HIS POSSESSION.",
+          "confidence": 0.754
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "IDO REMEMBER HOLDING THAT DAGGER IN MY HAND...",
+          "confidence": 0.939
+        },
+        {
+          "text": "BUT...",
+          "confidence": 0.923
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "DON'T BE ABSURD.",
+          "confidence": 0.949
+        },
+        {
+          "text": "CHK IT WAS DEFINITELY YOU I ChARged at, yoU LOWLY BaStARD.",
+          "confidence": 0.702
+        },
+        {
+          "text": "I ONLY FAILED BECAUSE OF THE IMPERIAL KNIGHTS STANDING NEXT TO YOU...",
+          "confidence": 0.861
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-202/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-202/011.webp"
+  ]
+}
