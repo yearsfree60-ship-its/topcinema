@@ -1,0 +1,379 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "228",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "Scans",
+          "confidence": 0.979,
+          "text_ar": "فريق الفحص"
+        },
+        {
+          "text": "CHAPTER 229 I1S NOW AVAILABLE AND YOU CAN READ IT ON OUR WEBSITE",
+          "confidence": 0.836,
+          "text_ar": "الفصل 229 متاح الآن ويمكنكم قراءته على موقعنا"
+        },
+        {
+          "text": "e 渔 E",
+          "confidence": 0.027,
+          "text_ar": ""
+        },
+        {
+          "text": "Discord.gg/vsfJ9fgs99 ValirScan.com B 11444444",
+          "confidence": 0.897,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THIS CHAPTER WAS BROUGHT TO YOU WITH LOVE BY VALIRSCANS MAKE SUREYOU'RE READING ON OUR WEBSITE Links: Valirscans.com 我 discord.gg/vsfJ9fgs99 +",
+          "confidence": 0.07,
+          "text_ar": "قُدم لكم هذا الفصل بكل حب من فريق فالير، تأكدوا من القراءة على موقعنا"
+        },
+        {
+          "text": "Scans",
+          "confidence": 0.891,
+          "text_ar": "فريق الفحص"
+        },
+        {
+          "text": "IT IS TIME FORYOU TOCHANGE YOUR MIND, YOUR MAJESTY.",
+          "confidence": 0.911,
+          "text_ar": "لقد حان الوقت لتغير رأيك، جلالة الملك."
+        },
+        {
+          "text": "VALIRSCANS.COM",
+          "confidence": 0.979,
+          "text_ar": ""
+        },
+        {
+          "text": "A CROWN PRINCE?",
+          "confidence": 0.973,
+          "text_ar": "ولي عهد؟"
+        },
+        {
+          "text": "WHAT WOULD HAVE HAPPENED IF YOUR MAJESTY HAD PASSED AWAY IN THIS STATE?",
+          "confidence": 0.945,
+          "text_ar": "ما الذي كان سيحدث لو أن جلالتكم توفي في هذه الحالة؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "A SUCCESSOR IS NOT AN EXISTENCE THAT TAKES AWAY THEIR PREDECESSOR'S POWER.",
+          "confidence": 0.961,
+          "text_ar": "الخليفة ليس الشخص الذي يسلب سلطة سلفه."
+        },
+        {
+          "text": "THEY ARE THE ONE WHO INHERITS IT.",
+          "confidence": 0.98,
+          "text_ar": "بل هو الشخص الذي يرثها."
+        },
+        {
+          "text": "I AM NOT TELLING YOU TO ABDICATE RIGHT NOW.",
+          "confidence": 0.872,
+          "text_ar": "أنا لا أطلب منك التنازل عن العرش الآن."
+        },
+        {
+          "text": "RATHER, APPOINT THE SECOND PRINCE AS THE CROWNPRINCE ANDMAKEHIM YOUR PROXY.",
+          "confidence": 0.965,
+          "text_ar": "بل عين الأمير الثاني ولياً للعهد واجعله نائباً لك."
+        },
+        {
+          "text": "A PROXY, YOU SAY...",
+          "confidence": 0.867,
+          "text_ar": "نائب، تقول..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "YOU ARE HAVING HIM DO THE THINGS YOUR MAJESTY HAS SET YOUR MIND ON IN YOUR STEAD.",
+          "confidence": 0.93,
+          "text_ar": "أن تجعله يقوم بالأمور التي عزمت عليها جلالتك نيابةً عنك."
+        },
+        {
+          "text": "LET THE SECOND PRINCE THOROUGHLY TEAR ANGENAS TO PIECES,",
+          "confidence": 0.965,
+          "text_ar": "دع الأمير الثاني يمزق أنجيناس إرباً،"
+        },
+        {
+          "text": "HOLD THE EMPRESS ACCOUNTABLE FOR HER OTHER CRIMES, AND SHOW IT TO EVERYONE.",
+          "confidence": 0.968,
+          "text_ar": "وحاسب الإمبراطورة على جرائمها الأخرى، واعرض ذلك على الجميع."
+        },
+        {
+          "text": "SHOWTHEM WHAT KIND OF ENDAWAITS AFAMILYTHATMAKES LIGHT OF THEIMPERIAL AUTHORITY.",
+          "confidence": 0.94,
+          "text_ar": "أرهم أي نهاية تنتظر عائلة تستهين بالسلطة الإمبراطورية."
+        },
+        {
+          "text": "...I LIKE THAT.",
+          "confidence": 0.918,
+          "text_ar": "...يعجبني هذا."
+        },
+        {
+          "text": "IWILL DO JUST THAT.",
+          "confidence": 0.927,
+          "text_ar": "سأفعل ذلك تماماً."
+        },
+        {
+          "text": "VALIRSCANS.COM",
+          "confidence": 0.987,
+          "text_ar": ""
+        },
+        {
+          "text": "THE FIRST EMPEROR MUST HAVE BEEN QLITE BRILLIANT.",
+          "confidence": 0.965,
+          "text_ar": "لا بد أن الإمبراطور الأول كان بارعاً للغاية."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "HE KNEW HIS DESCENDANTS WOULD ALL BE LACKING,",
+          "confidence": 0.97,
+          "text_ar": "لقد كان يعلم أن نسله سيكونون قاصرين جميعاً،"
+        },
+        {
+          "text": "SO DID HE NOT PROVIDE A SUPPORT PILLAR CALLED LOMBARDI?",
+          "confidence": 0.961,
+          "text_ar": "أفلم يوفر دعامة تُدعى لومباردي؟"
+        },
+        {
+          "text": "TO HAVE MADE ARRANGEMENTS SO THAT POWER WOULD PASS FROM A FOOLISH",
+          "confidence": 0.983,
+          "text_ar": "لكي يرتب الأمور بحيث تنتقل السلطة من إمبراطور أحمق"
+        },
+        {
+          "text": "AND STUPID EMPEROR TO SOMEONE AT LEAST SOMEWHAT CAPABLE...",
+          "confidence": 0.964,
+          "text_ar": "وغبي إلى شخص كفء إلى حد ما على الأقل..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "AS THE LOMBARDI FAMILY HEAD, HE MUST HAVE DONE ONE GOOD THING FOR THE PEOPLE OF THE EMPIRE IN THE END...",
+          "confidence": 0.923,
+          "text_ar": "بصفته رئيس عائلة لومباردي، لا بد أنه فعل شيئاً جيداً لشعب الإمبراطورية في النهاية..."
+        },
+        {
+          "text": "プテッル 合 ，",
+          "confidence": 0.2,
+          "text_ar": ""
+        },
+        {
+          "text": "228 福 CC",
+          "confidence": 0.11,
+          "text_ar": ""
+        },
+        {
+          "text": "THEREFORE,",
+          "confidence": 0.993,
+          "text_ar": "لذلك،"
+        },
+        {
+          "text": "I SHALL APPOINTYOUAS THE CROWN PRINCE.",
+          "confidence": 0.924,
+          "text_ar": "سأعينك ولياً للعهد."
+        },
+        {
+          "text": "C VALIRSCANS.COM",
+          "confidence": 0.367,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HE LOOKS QUITE SURPRISED.",
+          "confidence": 0.979,
+          "text_ar": "يبدو مندهشاً حقاً."
+        },
+        {
+          "text": "ALTHOUGH IT IS SOMETHING I HAD BEEN EXPECTING.",
+          "confidence": 0.983,
+          "text_ar": "رغم أنه أمر كنت أتوقعه."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "IT IS ACTLALLY A BIT LATER THAN IN MY PREVIOUS LIFE.",
+          "confidence": 0.958,
+          "text_ar": "إنه في الواقع متأخر قليلاً مقارنة بحياتي السابقة."
+        },
+        {
+          "text": "BACK THEN, BECAUSE THE EMPEROR COLLAPSED A FEW DAYS AFTER PEREZ WAS APOINTED CROWN PRINCE,",
+          "confidence": 0.944,
+          "text_ar": "في ذلك الوقت، وبسبب انهيار الإمبراطور بعد أيام قليلة من تعيين بيريز ولياً للعهد،"
+        },
+        {
+          "text": "HE WAS ABLE TO WIELD POWER AS HE PLEASED WITHOUT WALKINGONEGGSHELLS AROUND ANYONE.",
+          "confidence": 0.896,
+          "text_ar": "استطاع ممارسة السلطة كما يحلو له دون الحاجة للحذر من أحد."
+        },
+        {
+          "text": "AND HIS FIRST TARGET WAS THE LOMBARDI FAMILY, INCLUDING VIESE.",
+          "confidence": 0.924,
+          "text_ar": "وكان هدفه الأول عائلة لومباردي، بما في ذلك فييس."
+        },
+        {
+          "text": "ISUDDENLY BECAME CURIOUS.",
+          "confidence": 0.98,
+          "text_ar": "أصبحت فضولية فجأة."
+        },
+        {
+          "text": "ALTHOUGH THE EMPRESS USED POISON IN THIS LIFE,",
+          "confidence": 0.95,
+          "text_ar": "على الرغم من أن الإمبراطورة استخدمت السم في هذه الحياة،"
+        },
+        {
+          "text": "WHAT WAS THE REASON THE EMPEROR COLLAPSED IN MY PREVIOUS LIFE...",
+          "confidence": 0.929,
+          "text_ar": "فما هو السبب وراء انهيار الإمبراطور في حياتي السابقة..."
+        },
+        {
+          "text": "WHY AREN'T YOU ANSWERING?",
+          "confidence": 0.953,
+          "text_ar": "لماذا لا تجيب؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "VALIRSCANS.COM 6",
+          "confidence": 0.626,
+          "text_ar": ""
+        },
+        {
+          "text": "I WILL OBEY THE IMPERIAL ORDER.",
+          "confidence": 0.976,
+          "text_ar": "سأطيع الأمر الإمبراطوري."
+        },
+        {
+          "text": "YES, YOU SHOULD. HOLD THE EMPRESS AND ANGENAS ACCOUNTABLE FOR THEIR OTHER CRIMES AND PUNISH THEM THOROUGHLY.",
+          "confidence": 0.965,
+          "text_ar": "نعم، يجب عليك ذلك. حاسب الإمبراطورة وأنجيناص على جرائمهما الأخرى وعاقبهما بقسوة."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "AND TAKE THIS.",
+          "confidence": 0.923,
+          "text_ar": "وخذ هذا."
+        },
+        {
+          "text": "E 4A481EX3588-2m",
+          "confidence": 0.186,
+          "text_ar": ""
+        },
+        {
+          "text": "IT IS A LETTER DIRECTED TO THE FAMILY HEADS OF THE EAST, WEST, SOUTH, NORTH, AND CENTER.",
+          "confidence": 0.951,
+          "text_ar": "إنها رسالة موجهة إلى رؤساء عائلات الشرق والغرب والجنوب والشمال والمركز."
+        },
+        {
+          "text": "GO AND GET THE CONSENT OF THE FAMILY HEADS.",
+          "confidence": 0.952,
+          "text_ar": "اذهب واحصل على موافقة رؤساء العائلات."
+        },
+        {
+          "text": "YES, YOUR MAJESTY.",
+          "confidence": 0.943,
+          "text_ar": "حاضر، جلالة الملك."
+        },
+        {
+          "text": "VALIRSCANS.COM 6",
+          "confidence": 0.618,
+          "text_ar": ""
+        },
+        {
+          "text": "THEN LET US GET GOING NOW, TIA.",
+          "confidence": 0.963,
+          "text_ar": "إذن لنذهب الآن، تيا."
+        },
+        {
+          "text": "WAIT. LOMBARDI ACTING FAMILY HEAD.",
+          "confidence": 0.97,
+          "text_ar": "انتظري. يا رئيسة عائلة لومباردي بالنيابة."
+        },
+        {
+          "text": "WHAT IS IT, WHY IS HE CALLING ME?",
+          "confidence": 0.913,
+          "text_ar": "ما الأمر، لماذا يناديني؟"
+        },
+        {
+          "text": "AND EVEN ATTACHING THE TITLE OF \"ACTING FAMILY HEAD\"?",
+          "confidence": 0.95,
+          "text_ar": "وحتى أنه أرفق لقب \"رئيسة العائلة بالنيابة\"؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "I SHALL... GIVE YOU A TASK AS WELL.",
+          "confidence": 0.924,
+          "text_ar": "سأعطيك... مهمة أيضاً."
+        },
+        {
+          "text": "I HAVE A RATHER BAD FEELING ABOUT THIS.",
+          "confidence": 0.86,
+          "text_ar": "لدَي شعور سيئ حيال هذا."
+        },
+        {
+          "text": "WHAT KIND OF TASK ARE YOU TALKING ABOUT?",
+          "confidence": 0.939,
+          "text_ar": "عن أي نوع من المهام تتحدث؟"
+        },
+        {
+          "text": "AS THE REPRESENTATIVE OF THE EMPIRE'S NOBLES, THE ACTING FAMILYHEAD MUST",
+          "confidence": 0.962,
+          "text_ar": "بصفتك ممثلة لنبلاء الإمبراطورية، يجب على رئيسة العائلة بالنيابة"
+        },
+        {
+          "text": "BE A WITNESS WHO GUARANTEES THAT THE SECOND PRINCE'S ACTIONS ARE JUSTIFIED.",
+          "confidence": 0.977,
+          "text_ar": "أن تكون شاهدة تضمن أن تصرفات الأمير الثاني مبررة."
+        }
+      ]
+    }
+  ]
+}
