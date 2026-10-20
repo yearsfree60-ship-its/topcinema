@@ -1,0 +1,217 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "201",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/201",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-201",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. MAKE SURE THAT ARM'S KEPT SAFE AND SECURE.\n001-2. IT'S EVIDENCE OF THE ATTEMPTED ASSASSINaTION OF HIS MAJESTY.\n\nPage 002\n002-1. I SHRLL 1SHRLL MASTER MANCmO GOTHS FAMILY\n\nPage 003\n003-1. SHF\n003-2. COKIOMor OON\n\nPage 004\n004-1. DID YOU ENJOY THE HUNTING TOuRNaMENT, YoUR MAJESTY?\n004-2. SMILE WHERE IS ASTAN-?\n004-3. LET GO OF ME!\n\nPage 005\n005-1. MOTHER!\n005-2. MOTHER, PLEASE HELP!\n005-3. S E 享\n\nPage 006\n006-1. roo°\n006-2. WHAT IS THE MEANING OF THIS, YOuR MAJESTY?!\n006-3. TAKE HIM AWAY.\n006-4. TMP\n\nPage 007\n007-1. THIS CAN'T BE!\n007-2. WHAT TERRIBLE CRIME COULD HE HAVE COMMITTED TO DESERVE THIS?\n007-3. HE'S INJUREDI\n\nPage 008\n008-1. THE CHARGE IS ATTEMPTED ASSASSINATION OF THE EMPEROR AND TREASON.\n008-2. HAL入 WHAT DID YOU JUST...?\n008-3. HAA\n\nPage 009\n009-1. TAKE HIM AWAY.\n009-2. L-LET Go OF Me!!!\n009-3. MOTHER!\n009-4. PLEASE,\n\nPage 010\n010-1. MOTHER!\n010-2. I-IMPOSSIBLE...\n\nPage 011\n011-1. y-You...!\n011-2. TAKE THE CRiMINaL AnD LOCK HIM AWAY.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MAKE SURE THAT ARM'S KEPT SAFE AND SECURE.",
+          "confidence": 0.931
+        },
+        {
+          "text": "IT'S EVIDENCE OF THE ATTEMPTED ASSASSINaTION OF HIS MAJESTY.",
+          "confidence": 0.767
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "I SHRLL 1SHRLL MASTER MANCmO GOTHS FAMILY",
+          "confidence": 0.437
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "SHF",
+          "confidence": 0.971
+        },
+        {
+          "text": "COKIOMor OON",
+          "confidence": 0.22
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "DID YOU ENJOY THE HUNTING TOuRNaMENT, YoUR MAJESTY?",
+          "confidence": 0.769
+        },
+        {
+          "text": "SMILE WHERE IS ASTAN-?",
+          "confidence": 0.907
+        },
+        {
+          "text": "LET GO OF ME!",
+          "confidence": 0.967
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "MOTHER!",
+          "confidence": 0.974
+        },
+        {
+          "text": "MOTHER, PLEASE HELP!",
+          "confidence": 0.891
+        },
+        {
+          "text": "S E 享",
+          "confidence": 0.065
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "roo°",
+          "confidence": 0.642
+        },
+        {
+          "text": "WHAT IS THE MEANING OF THIS, YOuR MAJESTY?!",
+          "confidence": 0.813
+        },
+        {
+          "text": "TAKE HIM AWAY.",
+          "confidence": 0.873
+        },
+        {
+          "text": "TMP",
+          "confidence": 0.968
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THIS CAN'T BE!",
+          "confidence": 0.941
+        },
+        {
+          "text": "WHAT TERRIBLE CRIME COULD HE HAVE COMMITTED TO DESERVE THIS?",
+          "confidence": 0.833
+        },
+        {
+          "text": "HE'S INJUREDI",
+          "confidence": 0.93
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THE CHARGE IS ATTEMPTED ASSASSINATION OF THE EMPEROR AND TREASON.",
+          "confidence": 0.882
+        },
+        {
+          "text": "HAL入 WHAT DID YOU JUST...?",
+          "confidence": 0.677
+        },
+        {
+          "text": "HAA",
+          "confidence": 0.858
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "TAKE HIM AWAY.",
+          "confidence": 0.722
+        },
+        {
+          "text": "L-LET Go OF Me!!!",
+          "confidence": 0.824
+        },
+        {
+          "text": "MOTHER!",
+          "confidence": 0.982
+        },
+        {
+          "text": "PLEASE,",
+          "confidence": 0.988
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "MOTHER!",
+          "confidence": 0.985
+        },
+        {
+          "text": "I-IMPOSSIBLE...",
+          "confidence": 0.946
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "y-You...!",
+          "confidence": 0.752
+        },
+        {
+          "text": "TAKE THE CRiMINaL AnD LOCK HIM AWAY.",
+          "confidence": 0.689
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-201/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-201/011.webp"
+  ]
+}

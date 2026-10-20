@@ -1,0 +1,219 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "201",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MAKE SURE THAT ARM'S KEPT SAFE AND SECURE.",
+          "confidence": 0.931,
+          "text_ar": "احرصوا على تأمين وضمان سلامة ذلك الذراع."
+        },
+        {
+          "text": "IT'S EVIDENCE OF THE ATTEMPTED ASSASSINaTION OF HIS MAJESTY.",
+          "confidence": 0.767,
+          "text_ar": "إنه دليل على محاولة اغتيال جلالة الملك."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "I SHRLL 1SHRLL MASTER MANCmO GOTHS FAMILY",
+          "confidence": 0.437,
+          "text_ar": "سأفعل... سأفعل، أيها السيد... عائلة مانشيو..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "SHF",
+          "confidence": 0.971,
+          "text_ar": "شهقات..."
+        },
+        {
+          "text": "COKIOMor OON",
+          "confidence": 0.22,
+          "text_ar": "أنفاس لهاث..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "DID YOU ENJOY THE HUNTING TOuRNaMENT, YoUR MAJESTY?",
+          "confidence": 0.769,
+          "text_ar": "هل استمتعت ببطولة الصيد، جلالة الإمبراطور؟"
+        },
+        {
+          "text": "SMILE WHERE IS ASTAN-?",
+          "confidence": 0.907,
+          "text_ar": "ابتسامة... أين أستانا؟"
+        },
+        {
+          "text": "LET GO OF ME!",
+          "confidence": 0.967,
+          "text_ar": "دعوني!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "MOTHER!",
+          "confidence": 0.974,
+          "text_ar": "أمي!"
+        },
+        {
+          "text": "MOTHER, PLEASE HELP!",
+          "confidence": 0.891,
+          "text_ar": "أمي، أرجوكي ساعديني!"
+        },
+        {
+          "text": "S E 享",
+          "confidence": 0.065,
+          "text_ar": "صرخة!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "roo°",
+          "confidence": 0.642,
+          "text_ar": "خطوات ثقيلة..."
+        },
+        {
+          "text": "WHAT IS THE MEANING OF THIS, YOuR MAJESTY?!",
+          "confidence": 0.813,
+          "text_ar": "ما معني هذا، جلالة الإمبراطور؟!"
+        },
+        {
+          "text": "TAKE HIM AWAY.",
+          "confidence": 0.873,
+          "text_ar": "خذوه من هنا."
+        },
+        {
+          "text": "TMP",
+          "confidence": 0.968,
+          "text_ar": "دبّة قدم..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THIS CAN'T BE!",
+          "confidence": 0.941,
+          "text_ar": "لا يمكن أن يكون هذا صحيحاً!"
+        },
+        {
+          "text": "WHAT TERRIBLE CRIME COULD HE HAVE COMMITTED TO DESERVE THIS?",
+          "confidence": 0.833,
+          "text_ar": "أي جريمة شنيعة ارتكبها ليستحق هذا؟"
+        },
+        {
+          "text": "HE'S INJUREDI",
+          "confidence": 0.93,
+          "text_ar": "إنه مصاب!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THE CHARGE IS ATTEMPTED ASSASSINATION OF THE EMPEROR AND TREASON.",
+          "confidence": 0.882,
+          "text_ar": "التهمة هي محاولة اغتيال الإمبراطور والخيانة العظمى."
+        },
+        {
+          "text": "HAL入 WHAT DID YOU JUST...?",
+          "confidence": 0.677,
+          "text_ar": "ماذا... ماذا قلت للتو؟"
+        },
+        {
+          "text": "HAA",
+          "confidence": 0.858,
+          "text_ar": "هاه..."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "TAKE HIM AWAY.",
+          "confidence": 0.722,
+          "text_ar": "خذوه من هنا."
+        },
+        {
+          "text": "L-LET Go OF Me!!!",
+          "confidence": 0.824,
+          "text_ar": "أ-أتركوني!!!"
+        },
+        {
+          "text": "MOTHER!",
+          "confidence": 0.982,
+          "text_ar": "أمي!"
+        },
+        {
+          "text": "PLEASE,",
+          "confidence": 0.988,
+          "text_ar": "أرجوكِ..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "MOTHER!",
+          "confidence": 0.985,
+          "text_ar": "أمي!"
+        },
+        {
+          "text": "I-IMPOSSIBLE...",
+          "confidence": 0.946,
+          "text_ar": "ه-هذا مستحيل..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "y-You...!",
+          "confidence": 0.752,
+          "text_ar": "أ-أنت...!"
+        },
+        {
+          "text": "TAKE THE CRiMINaL AnD LOCK HIM AWAY.",
+          "confidence": 0.689,
+          "text_ar": "خذوا المجرم واحبسوه."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "200",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/200",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-200",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. LAW\n001-2. CLNK\n001-3. CWNK\n\nPage 002\n002-1. THIS IS SUPPOSED TO BE SAFE IN THE FOREST OF MADNESS?\n002-2. PEREZ...\n\nPage 003\n003-1. WHAT IN THE WORLD ARE YOU THINKING?\n003-2. I SHRLL MNSTER s FRMILY THIS\n\nPage 004\n004-1. STOP IT!\n\nPage 005\n005-1. PROTECT HIS MAJESTY!\n\nPage 006\n006-1. TH-THANK You, YOUR HIGHNESS.\n\nPage 007\n007-1. KUGH...!\n\nPage 008\n008-1. GET DOWN, YOUR MAJESTY!\n008-2. WHS YOUR MAJESTY!\n008-3. ARE YOU ALL RIGHT?!\n008-4. Y-YES, I'M FINE!\n008-5. IITV\n\nPage 009\n009-1. PONLY SCRATCHED My ARMOR.\n009-2. DON'T MAKE A FUSS ABOUT IT!\n009-3. YOUR MAJESTY...\n009-4. you SHOULD PUT THIS ON INSTEAD.\n009-5. ARED CLOAK SHOULD BE MORE NOTICEABLE IN A DANGeROUS SITUATION LIKE THIS.\n\nPage 010\n010-1. ..SURE, LET'S DO THAT.\n\nPage 011\n011-1. 心业少 Vb\n011-2. WHISPER BE CAREFUL, TIA.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "LAW",
+          "confidence": 0.736
+        },
+        {
+          "text": "CLNK",
+          "confidence": 0.758
+        },
+        {
+          "text": "CWNK",
+          "confidence": 0.849
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THIS IS SUPPOSED TO BE SAFE IN THE FOREST OF MADNESS?",
+          "confidence": 0.92
+        },
+        {
+          "text": "PEREZ...",
+          "confidence": 0.974
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WHAT IN THE WORLD ARE YOU THINKING?",
+          "confidence": 0.942
+        },
+        {
+          "text": "I SHRLL MNSTER s FRMILY THIS",
+          "confidence": 0.777
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "STOP IT!",
+          "confidence": 0.958
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "PROTECT HIS MAJESTY!",
+          "confidence": 0.916
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "TH-THANK You, YOUR HIGHNESS.",
+          "confidence": 0.711
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "KUGH...!",
+          "confidence": 0.936
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "GET DOWN, YOUR MAJESTY!",
+          "confidence": 0.779
+        },
+        {
+          "text": "WHS YOUR MAJESTY!",
+          "confidence": 0.818
+        },
+        {
+          "text": "ARE YOU ALL RIGHT?!",
+          "confidence": 0.815
+        },
+        {
+          "text": "Y-YES, I'M FINE!",
+          "confidence": 0.944
+        },
+        {
+          "text": "IITV",
+          "confidence": 0.66
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "PONLY SCRATCHED My ARMOR.",
+          "confidence": 0.794
+        },
+        {
+          "text": "DON'T MAKE A FUSS ABOUT IT!",
+          "confidence": 0.873
+        },
+        {
+          "text": "YOUR MAJESTY...",
+          "confidence": 0.929
+        },
+        {
+          "text": "you SHOULD PUT THIS ON INSTEAD.",
+          "confidence": 0.718
+        },
+        {
+          "text": "ARED CLOAK SHOULD BE MORE NOTICEABLE IN A DANGeROUS SITUATION LIKE THIS.",
+          "confidence": 0.748
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "..SURE, LET'S DO THAT.",
+          "confidence": 0.872
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "心业少 Vb",
+          "confidence": 0.212
+        },
+        {
+          "text": "WHISPER BE CAREFUL, TIA.",
+          "confidence": 0.977
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-200/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-200/011.webp"
+  ]
+}
