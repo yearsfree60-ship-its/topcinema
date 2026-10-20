@@ -1,0 +1,254 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "215",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THE IMPERIAL KNIGHTS...",
+          "confidence": 0.939,
+          "text_ar": "فرسان الإمبراطورية..."
+        },
+        {
+          "text": "THEY AMBUSHED PELLET CORPORATION AND MY BROTHER'S RESIDENCE!",
+          "confidence": 0.965,
+          "text_ar": "لقد نصبوا كميناً لشركة بيليه ومقر إقامة أخي!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SHRLL MASTER GTHIS FAMILY 215",
+          "confidence": 0.81,
+          "text_ar": "هزات ارتدادئية"
+        },
+        {
+          "text": "IS THIS WHAT THE EMPRESS HAS BEEN AFTER...?",
+          "confidence": 0.884,
+          "text_ar": "أهذا ما كانت تسعى إليه الإمبراطورية...؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "BELLEZAC WAS BAIT fRoM THE VERY BEGINNING.",
+          "confidence": 0.736,
+          "text_ar": "كان بيليزاك طعماً منذ البداية."
+        },
+        {
+          "text": "HER HEO TRUE TARGET WAS CLERIVAN ALL ALONG!",
+          "confidence": 0.669,
+          "text_ar": "هدفها الحقيقي كان كليريفان طوال الوقت!"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "SMIFFLE M-MY LADY...",
+          "confidence": 0.8,
+          "text_ar": "سيدتي..."
+        },
+        {
+          "text": "WHY IS THE IMPERIaL KNIGHT ORDER TARGETING MY BROTHER...?",
+          "confidence": 0.835,
+          "text_ar": "لماذا يستهدف فرسان الإمبراطورية أخي...؟"
+        },
+        {
+          "text": "THEY'RE PROBABLY AFTER THE CONTRACT,",
+          "confidence": 0.951,
+          "text_ar": "ربما يبحثون عن العقد،"
+        },
+        {
+          "text": "THE ONE USED TO BORROW MoNEY WITH ANGENAS TERRITORY AS COLLATERAL.",
+          "confidence": 0.891,
+          "text_ar": "العقد المستخدم للاقتراض بضمان أراضي أجيناس."
+        },
+        {
+          "text": "ASOR2PLA",
+          "confidence": 0.558,
+          "text_ar": "حفيف"
+        },
+        {
+          "text": "XMANPS",
+          "confidence": 0.431,
+          "text_ar": "خطوات"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "BUT FOR THE IMPERIAL KNIGHTS TO TAKE ACTION OVER THIS...",
+          "confidence": 0.931,
+          "text_ar": "ولكن أن يتحرك فرسان الإمبراطورية لأجل هذا..."
+        },
+        {
+          "text": "THEY MUST'VE ALREADY DISCUSSED IT WITH THE EMPEROR.",
+          "confidence": 0.905,
+          "text_ar": "لا بد أنهم ناقشوا الأمر مع الإامبراطور مسبقاً."
+        },
+        {
+          "text": "AND THERE JUST SO HAPPENS TO BE ONE PERFECT EXCUSE FOR THEM TO MAKE THEIR MOVE, ISN'T THERE?",
+          "confidence": 0.81,
+          "text_ar": "ويصادف وجود عذر مثالي لهم للتحرك، أليس كذلك؟"
+        },
+        {
+          "text": "Y-YOU DON'T Mean..!",
+          "confidence": 0.751,
+          "text_ar": "أ-أنتِ لا تعنين...!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THAT'S RIGHT. THE ATTEMPTED ASSASSINATION OF THE EMPEROR.",
+          "confidence": 0.868,
+          "text_ar": "هذا صحيح. محاولة اغتيال الإمبراطور."
+        },
+        {
+          "text": "THEY'LL TRY TO TIe CLeRIvan INTO IT SOMEHOW.",
+          "confidence": 0.765,
+          "text_ar": "سيحاولون توريط كليريفان بطريقة ما."
+        },
+        {
+          "text": "I'm NOT SURE IF THEY FABRICATED Δ CONVINCING PIECE OF EVIDENCE LIKE BELLEZAC'S WILL",
+          "confidence": 0.817,
+          "text_ar": "لست متأكدة ما إذا كانوا قد لفّقوا دليلاً مقنعاً مثل وصية بيليزاك"
+        },
+        {
+          "text": "OR IF THEY'RE SIMPLY USING ANY EXCUSE THEY CAN FIND, BUT I KNOW ONE THING FOR SURE...",
+          "confidence": 0.801,
+          "text_ar": "أم أنهم يكتفون بأي عذر يجدونه، لكني أثق بأمر واحد..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "EMPEROR YOVANES WILL TURN THE OTHER AWAY REGARDING THE EMPRESS'S ACTIONS.",
+          "confidence": 0.938,
+          "text_ar": "الإمبراطور يوفانيس سيغض الطرف عن أفعال الإمبراطورة."
+        },
+        {
+          "text": "LAURYL,",
+          "confidence": 0.976,
+          "text_ar": "لوريل،"
+        },
+        {
+          "text": "HAVE THEY TAKEN CLERIVAN ALREADY?",
+          "confidence": 0.975,
+          "text_ar": "هل قبضوا على كليريفان بالفعل؟"
+        },
+        {
+          "text": "N-NO, I ONLY HEARD THAT THEY'RE TEARING THROUGH THE MANOR AND THE MERCHANT COMPANY, SEARCHING EVERY INCH...",
+          "confidence": 0.887,
+          "text_ar": "ك-لا، لقد سمعت فقط أنهم يعيثون فساداً في القصر والشركة التجارية، ويبحثون في كل شبر..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "GOOD. WE STILL HAVE A CHANCE.",
+          "confidence": 0.889,
+          "text_ar": "جيد. ما زال لدينا فرصة."
+        },
+        {
+          "text": "FiK",
+          "confidence": 0.699,
+          "text_ar": "انهيار"
+        },
+        {
+          "text": "WE MUST FIND CLERIVAN BEFORE aNYONE ELSE.",
+          "confidence": 0.831,
+          "text_ar": "يجب أن نجد كليريفان قبل أي شخص آخر."
+        },
+        {
+          "text": "PEREZ, SEND YOUR PEOPLE THROUGHOUT LOMBARDI TERRITORY AND THE CAPITAL.",
+          "confidence": 0.962,
+          "text_ar": "بيريز، ابعث برجالك في جميع أنحاء أراضي لومباردي والعاصمة."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "THE CAPITAL?",
+          "confidence": 0.995,
+          "text_ar": "العاصمة؟"
+        },
+        {
+          "text": "CLERIVAN SAID HE HAD A MEETING WITH FaTHER Today aT ThE MAIN BRANCH OF GALLAHAN'S CLOTHING STORE.",
+          "confidence": 0.734,
+          "text_ar": "قال كليريفان إن لديه اجتماعاً مع والدي اليوم في الفرع الرئيسي لمتجر غالاخان."
+        },
+        {
+          "text": "I DON'T KNOW THE EXAct Time, buT he may have ALREADY CROSSED INTO THE CAPITAL.",
+          "confidence": 0.801,
+          "text_ar": "لا أعرف الوقت بالتحديد، لكن ربما يكون قد عبر إلى العاصمة بالفعل."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I UNDERSTAND. I'LL LOOK FOR HIM.",
+          "confidence": 0.965,
+          "text_ar": "أفهم. سأبحث عنه."
+        },
+        {
+          "text": "WE SHOULD GO TO THE LOMBARDI KNIGHT ORDER, LAURYL.",
+          "confidence": 0.893,
+          "text_ar": "يجب أن نذهب إلى فرسان لومباردي، لوريل."
+        },
+        {
+          "text": "THE LOMBARDI KNIGHTS?",
+          "confidence": 0.994,
+          "text_ar": "فرسان لومباردي؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "YES, I HAVE  FAVOR TO THEM. ASK",
+          "confidence": 0.865,
+          "text_ar": "نعم، لدي طلب لأقدمه لهم."
+        },
+        {
+          "text": "EMPRESS LAVINI...",
+          "confidence": 0.932,
+          "text_ar": "الإمبراطورة لافينيا..."
+        }
+      ]
+    }
+  ]
+}
