@@ -1,0 +1,209 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "210",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HAA...",
+          "confidence": 0.981,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "I NEED A BREAK.",
+          "confidence": 0.86,
+          "text_ar": "أحتاج إلى استراحة."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT WAS ADAYNO DIFFERENT FROM ANY OTHER.",
+          "confidence": 0.831,
+          "text_ar": "لقد كان يوماً لا يختلف عن أي يوم آخر."
+        },
+        {
+          "text": "I WAS ACKNOWLEDGED AS THE HEIR INFRONT OF THE HEIR IN FRONT OF MYGRANDFATHER AND VASSAL FAMILY HEADS...",
+          "confidence": 0.922,
+          "text_ar": "لقد تم الاعتراف بي كورية للعهد أمام جدي وقادة العائلات التابعة..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "NOW, I JUST NEED TO FINISH THE REMAINING TASKS.",
+          "confidence": 0.944,
+          "text_ar": "الآن، يحق لي فقط إنهاء المهام المتبقية."
+        },
+        {
+          "text": "YES, SO...",
+          "confidence": 0.944,
+          "text_ar": "نعم، إذن..."
+        },
+        {
+          "text": "I CAN REST △ LITTLE...",
+          "confidence": 0.891,
+          "text_ar": "يمكنني الاستراحة قليلاً..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I SHkLL MASTER THIs FAMILY 6 210",
+          "confidence": 0.505,
+          "text_ar": "سأسيطر على هذه العائلة."
+        },
+        {
+          "text": "Sl フ",
+          "confidence": 0.216,
+          "text_ar": "تنهد"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "BLINK",
+          "confidence": 0.784,
+          "text_ar": "رمش"
+        },
+        {
+          "text": "PEREZ..?",
+          "confidence": 0.942,
+          "text_ar": "بيريز..؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "TWINKE",
+          "confidence": 0.747,
+          "text_ar": "بريق"
+        },
+        {
+          "text": "MUMBLE",
+          "confidence": 0.974,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "SO PRETTY...",
+          "confidence": 0.844,
+          "text_ar": "كم هو جميل..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IS THIS A DREam?",
+          "confidence": 0.705,
+          "text_ar": "هل هذا حلم؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THINKING BACK...",
+          "confidence": 0.897,
+          "text_ar": "بالتفكير في الأمر..."
+        },
+        {
+          "text": "WHENEVER SOMETHING IMPORTANT HAPPENED...",
+          "confidence": 0.958,
+          "text_ar": "كلما حدث شيء مهم..."
+        },
+        {
+          "text": "WE'D LIE DOWN FACING EACH OTHER.",
+          "confidence": 0.939,
+          "text_ar": "كنا نستلقي مواجهين بعضنا البعض."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "PEREZ...",
+          "confidence": 0.98,
+          "text_ar": "بيريز..."
+        },
+        {
+          "text": "I'M OFFICIALLY THE HEIR OF THE FAMILY NOW.",
+          "confidence": 0.847,
+          "text_ar": "أنا الآن الوريثة الرسمية للعائلة."
+        },
+        {
+          "text": "IT'LL BE ANNOUNCED TOMORROW.",
+          "confidence": 0.949,
+          "text_ar": "سيتم الإعلان عن ذلك غداً."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "...CONGRATS, TIA.",
+          "confidence": 0.825,
+          "text_ar": "...تهانينا، تيا."
+        },
+        {
+          "text": "YOU'VE FULFILLEDYOUR DREAM.",
+          "confidence": 0.819,
+          "text_ar": "لقد حققتِ حلمكِ."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "PEREZ...",
+          "confidence": 0.973,
+          "text_ar": "بيريز..."
+        },
+        {
+          "text": "I CHOSE LOMBARDI.",
+          "confidence": 0.966,
+          "text_ar": "لقد اخترتُ لومباردي."
+        },
+        {
+          "text": "ONCE THE ANNOUNCEMENT IS MADE,",
+          "confidence": 0.929,
+          "text_ar": "بمجرد إعلان الخبر،"
+        },
+        {
+          "text": "OUR FAKE ENGAGEMENT WILL BE OVER TOO.",
+          "confidence": 0.954,
+          "text_ar": "ستنتهي خطوبتنا المزيفة أيضاً."
+        }
+      ]
+    }
+  ]
+}
