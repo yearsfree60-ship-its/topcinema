@@ -1,0 +1,269 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "211",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/211",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-211",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n001-1. IALREAD KNOW EVERYTHING. PLEASE TELL Me THE TRUTH.\n001-2. HOW BAD HAS YOUR HEALTH GOTTEN?\n\nPage 002\n002-1. ..HOW DID you KNOW?\n002-2. THE HEIR ANNOUNCEMENT CAME TOO SOON.\n\nPage 003\n003-1. AS aCTING HEaD, IM SUPPOSED TO ASSIST YOU WHILE I GRADUALLY AND NATURALLY LEARN THE WORK INVOLVED,\n003-2. BUT YOU RUSHED THROUGH ALL OF IT IN BARELY A MONTH.\n003-3. GVINK\n003-4. COULDN'T IT BE POSSIBLE THAT I MIGHT REALLY LIKE you, TIA?\n003-5. I REALIZED IT WHEN YOU SUMMONED ME YESTERDAY WITH ALL THE VASSAL FAMILY HEADS PRESENT.\n003-6. THAT MEETING WASN'T JUST TO NOTIFY THEM\n\nPage 004\n004-1. OF YOUR DECISION TO NAME ME THE HEIR, WAS IT?\n004-2. THEN WHAT do yOu ThINk ITs PuRPOSE WaS?\n004-3. IT WAS A QuESTION-\n\nPage 005\n005-1. AND-ANSWER SESSION.\n005-2. IT WAS DESIGNED TO CLEAR THEIR DOUBTS ABOUT ME\n005-3. AND FOR ME TO CONVINCE THEM.\n005-4. GIVEN THE LOMBARDI FAMILY'S EXCEPTIONALLY STRONG LOYALTY TO ITS HEAD,\n005-5. THE VASSAL FAMILIES'DEEP ATTACHMENT TO THE FORMER HEAD CAN SOMETIMES BECOME AN ISSUE,\n005-6. 田国围\n005-7. CHOOSING THE NEXT HEAD IS ENTIRELY THE CURRENT HEAD'S AUTHORITY..\n\nPage 006\n006-1. BUT THE VASSAL FAMILIES MUST ALSO FLLLY ACCEPT THAT DECISION,\n006-2. UNLESS IT'S ABSOLUtELY NECESSARY TO WIN ThEm OvER IN a VERY SHORT TIME,\n006-3. YOu'D NEvER ARRANGE SUCH A MEETING.\n006-4. I CAN'T SEEM TO FOOL You.\n\nPage 007\n007-1. HOW LONG HAVE YOU BEEN LIKE THIS?!\n007-2. IT'S BEEN LIKE THIS SINCE I WOKE UP THIS MORNING.\n\nPage 008\n008-1. GRANDPA..!\n008-2. DR. ESTIRA HAS ALREADY SEEN ME.\n008-3. SHE SAID THERE'S PHYSICALLY NOTHING WRONG AND THAT THIS IS A TEMPORARY SYMPTOM.\n008-4. SMIVE\n008-5. THIS IS BECAUSE THE TENSION HAS FINALLY EASED, AND I'M FEELING RELIEVED.\n\nPage 009\n009-1. I HAVE NO REGRETS ABOUT THE LIFE I LIVED FOR LOMBARDI,\n009-2. BUT IN RETROSPECT, MY LIFE WAS NOTHING BUT FOR THE HOUSE.\n009-3. I THOUGHT I GAVE MY ALL, BUT I CAN'T HELP FEELING I COULD'Ve DONE MORE.\n\nPage 010\n010-1. SNAR LET GO OF ME!\n010-2. I WANT TO SEE MY OWN FATHER. I SAID LET GO!\n010-3. ...I'M SORRY, TIA.\n\nPage 011\n011-1. WHY DO YOu SAY THAT?\n011-2. YOU'RE SO YOuNG, AND I'm MAKING You CARRY NOT ONLY THIS FAMILY, BuT SO MANY OTHER BURDENS TOO.\n011-3. IT SEEMS LIKE I'LL HAVE TO PASS THE POSITIOn OF FAmILy HEAD TO YOU SOONER THAN EXPECTED.\n011-4. YES,I UNDERSTAND.\n011-5. THEN YOU SHOULD LEAVE ALL THE HARD WORK TO Me AND GET SOME PROPER REST.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "IALREAD KNOW EVERYTHING. PLEASE TELL Me THE TRUTH.",
+          "confidence": 0.803
+        },
+        {
+          "text": "HOW BAD HAS YOUR HEALTH GOTTEN?",
+          "confidence": 0.851
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "..HOW DID you KNOW?",
+          "confidence": 0.684
+        },
+        {
+          "text": "THE HEIR ANNOUNCEMENT CAME TOO SOON.",
+          "confidence": 0.902
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "AS aCTING HEaD, IM SUPPOSED TO ASSIST YOU WHILE I GRADUALLY AND NATURALLY LEARN THE WORK INVOLVED,",
+          "confidence": 0.763
+        },
+        {
+          "text": "BUT YOU RUSHED THROUGH ALL OF IT IN BARELY A MONTH.",
+          "confidence": 0.889
+        },
+        {
+          "text": "GVINK",
+          "confidence": 0.771
+        },
+        {
+          "text": "COULDN'T IT BE POSSIBLE THAT I MIGHT REALLY LIKE you, TIA?",
+          "confidence": 0.775
+        },
+        {
+          "text": "I REALIZED IT WHEN YOU SUMMONED ME YESTERDAY WITH ALL THE VASSAL FAMILY HEADS PRESENT.",
+          "confidence": 0.917
+        },
+        {
+          "text": "THAT MEETING WASN'T JUST TO NOTIFY THEM",
+          "confidence": 0.835
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "OF YOUR DECISION TO NAME ME THE HEIR, WAS IT?",
+          "confidence": 0.868
+        },
+        {
+          "text": "THEN WHAT do yOu ThINk ITs PuRPOSE WaS?",
+          "confidence": 0.737
+        },
+        {
+          "text": "IT WAS A QuESTION-",
+          "confidence": 0.754
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "AND-ANSWER SESSION.",
+          "confidence": 0.974
+        },
+        {
+          "text": "IT WAS DESIGNED TO CLEAR THEIR DOUBTS ABOUT ME",
+          "confidence": 0.861
+        },
+        {
+          "text": "AND FOR ME TO CONVINCE THEM.",
+          "confidence": 0.881
+        },
+        {
+          "text": "GIVEN THE LOMBARDI FAMILY'S EXCEPTIONALLY STRONG LOYALTY TO ITS HEAD,",
+          "confidence": 0.93
+        },
+        {
+          "text": "THE VASSAL FAMILIES'DEEP ATTACHMENT TO THE FORMER HEAD CAN SOMETIMES BECOME AN ISSUE,",
+          "confidence": 0.876
+        },
+        {
+          "text": "田国围",
+          "confidence": 0.175
+        },
+        {
+          "text": "CHOOSING THE NEXT HEAD IS ENTIRELY THE CURRENT HEAD'S AUTHORITY..",
+          "confidence": 0.933
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "BUT THE VASSAL FAMILIES MUST ALSO FLLLY ACCEPT THAT DECISION,",
+          "confidence": 0.924
+        },
+        {
+          "text": "UNLESS IT'S ABSOLUtELY NECESSARY TO WIN ThEm OvER IN a VERY SHORT TIME,",
+          "confidence": 0.78
+        },
+        {
+          "text": "YOu'D NEvER ARRANGE SUCH A MEETING.",
+          "confidence": 0.775
+        },
+        {
+          "text": "I CAN'T SEEM TO FOOL You.",
+          "confidence": 0.795
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HOW LONG HAVE YOU BEEN LIKE THIS?!",
+          "confidence": 0.903
+        },
+        {
+          "text": "IT'S BEEN LIKE THIS SINCE I WOKE UP THIS MORNING.",
+          "confidence": 0.872
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "GRANDPA..!",
+          "confidence": 0.912
+        },
+        {
+          "text": "DR. ESTIRA HAS ALREADY SEEN ME.",
+          "confidence": 0.97
+        },
+        {
+          "text": "SHE SAID THERE'S PHYSICALLY NOTHING WRONG AND THAT THIS IS A TEMPORARY SYMPTOM.",
+          "confidence": 0.899
+        },
+        {
+          "text": "SMIVE",
+          "confidence": 0.785
+        },
+        {
+          "text": "THIS IS BECAUSE THE TENSION HAS FINALLY EASED, AND I'M FEELING RELIEVED.",
+          "confidence": 0.924
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I HAVE NO REGRETS ABOUT THE LIFE I LIVED FOR LOMBARDI,",
+          "confidence": 0.916
+        },
+        {
+          "text": "BUT IN RETROSPECT, MY LIFE WAS NOTHING BUT FOR THE HOUSE.",
+          "confidence": 0.931
+        },
+        {
+          "text": "I THOUGHT I GAVE MY ALL, BUT I CAN'T HELP FEELING I COULD'Ve DONE MORE.",
+          "confidence": 0.801
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "SNAR LET GO OF ME!",
+          "confidence": 0.895
+        },
+        {
+          "text": "I WANT TO SEE MY OWN FATHER. I SAID LET GO!",
+          "confidence": 0.937
+        },
+        {
+          "text": "...I'M SORRY, TIA.",
+          "confidence": 0.84
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WHY DO YOu SAY THAT?",
+          "confidence": 0.79
+        },
+        {
+          "text": "YOU'RE SO YOuNG, AND I'm MAKING You CARRY NOT ONLY THIS FAMILY, BuT SO MANY OTHER BURDENS TOO.",
+          "confidence": 0.743
+        },
+        {
+          "text": "IT SEEMS LIKE I'LL HAVE TO PASS THE POSITIOn OF FAmILy HEAD TO YOU SOONER THAN EXPECTED.",
+          "confidence": 0.759
+        },
+        {
+          "text": "YES,I UNDERSTAND.",
+          "confidence": 0.973
+        },
+        {
+          "text": "THEN YOU SHOULD LEAVE ALL THE HARD WORK TO Me AND GET SOME PROPER REST.",
+          "confidence": 0.82
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-211/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-211/011.webp"
+  ]
+}

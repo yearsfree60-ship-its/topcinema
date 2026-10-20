@@ -1,0 +1,232 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "212",
+  "source_url": "https://valirscans.org/series/comic/i-shall-master-this-family/chapter/212",
+  "chapter_slug": "valirscans.org__i-shall-master-this-family__ch-212",
+  "manga_title": "I Shall Master This Family",
+  "page_layout": "webtoon",
+  "text": "Page 001\n\nPage 002\n002-1. YOU'RE LOOKING RATHER PALE, YOUR MAJESTY.\n002-2. ..WHY HAVE YOU COME?\n\nPage 003\n003-1. I HAVEN'T BEEN AT EASE LATELY EITHER, YOUR MAJESTY.\n003-2. AS YOU KNOW, ASTANA WAS SEVERELY WOUNDED,\n003-3. BUT PEREZ WON'T EVEN LET HIS OWN MOTHER SEE HIM!\n003-4. IT IS CLEAR THAT ASTANA HAS BEEN WRONGLY ACCUSED,youR MAJESTY MAUEOT%\n\nPage 004\n004-1. ...IT IS STILL ONLY AN UNCONFIRMED SUSPICION.\n004-2. BUT WHAT IF IT'S TRUE?\n004-3. IT'S BEEN DAYS SINCE ASTANA HAS BEEN CONFINED!\n004-4. HE EVEN LOST HIS RIGHT HAND!\n004-5. IT IS TRUE HE COMMITTED A GRAVE OFFENSE\n\nPage 005\n005-1. AGAINST THE EMPEROR,\n005-2. BUT HAS HE NOT ALREADY PAID DEARLY FOR HIS SINS?\n005-3. DOESN'T THAT HINGE ON THERE BEING SOMEONE ELSE aS THE TRuE CULPRIT?\n005-4. △S△ FATHER, IT PAINS ME TO SEE aStana SuFFER TOO,\n005-5. BUT THAT DOES NOT CHANGE THE NEED TO FIND WHO'S TRULY BEHIND ALL THIS. THIS ALL\n\nPage 006\n006-1. SHOULD THE TRUE CULPRIT BE IDENTIFIED, WILL ASTANA BE FREED FROM HIS CONFINEMENT?\n006-2. THERE'S NO REASON NOT TO.\n006-3. IN THAT CASE, MAy I CONDuCT MY OWN INVESTIGATION aS WeLL?\n006-4. AS HIS MOTHER, I WISH TO UNCOVER THE TRUe CuLPRIT WHO FRAMED MY SON NO MATTER WHAT.\n006-5. BUT\n\nPage 007\n007-1. THAT'S...\n007-2. I'M SURE YOU'VE ALREADY HEARD, YOUR MAJESTY.\n007-3. THIS MORNING, LULAC LOMBARDI APPOINTED FIRENTIA,\n007-4. WHO IS ENGAGED TOPEREZ, AS THE OFFICIAL HEIR TO THE HOUSE.\n007-5. AHH...YOU MUST BE GREATLY MESIBEOREAILY DISTRESSED, YOUR MAJESTY.\n\nPage 008\n008-1. HOUSE LOMBARDI AND PRINCE PEREZ CONSPIRED TO DECEIVE YOU.\n\nPage 009\n009-1. THAT'S ENOuGH. YOu CAN LEAVE NOW, EMPRESS.\n009-2. I MUST GET SOME REST.\n\nPage 010\n010-1. THANK YOU FOR GRANTING ME PERMISSION,YOUR MAJESTY.\n010-2. THEN I SHALL SEE YOU AT BREAKFAST.\n\nPage 011\n011-1. FIRENTIA LOMBARDIBECAME THE HEIR OF HOUSE LOMBARDI...\n011-2. HOUSE LOMBARDI AND PRInCe PeRez CONSPIRED TO DECEIVE you.",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "YOU'RE LOOKING RATHER PALE, YOUR MAJESTY.",
+          "confidence": 0.923
+        },
+        {
+          "text": "..WHY HAVE YOU COME?",
+          "confidence": 0.843
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I HAVEN'T BEEN AT EASE LATELY EITHER, YOUR MAJESTY.",
+          "confidence": 0.832
+        },
+        {
+          "text": "AS YOU KNOW, ASTANA WAS SEVERELY WOUNDED,",
+          "confidence": 0.681
+        },
+        {
+          "text": "BUT PEREZ WON'T EVEN LET HIS OWN MOTHER SEE HIM!",
+          "confidence": 0.96
+        },
+        {
+          "text": "IT IS CLEAR THAT ASTANA HAS BEEN WRONGLY ACCUSED,youR MAJESTY MAUEOT%",
+          "confidence": 0.475
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "...IT IS STILL ONLY AN UNCONFIRMED SUSPICION.",
+          "confidence": 0.79
+        },
+        {
+          "text": "BUT WHAT IF IT'S TRUE?",
+          "confidence": 0.961
+        },
+        {
+          "text": "IT'S BEEN DAYS SINCE ASTANA HAS BEEN CONFINED!",
+          "confidence": 0.909
+        },
+        {
+          "text": "HE EVEN LOST HIS RIGHT HAND!",
+          "confidence": 0.961
+        },
+        {
+          "text": "IT IS TRUE HE COMMITTED A GRAVE OFFENSE",
+          "confidence": 0.903
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "AGAINST THE EMPEROR,",
+          "confidence": 0.954
+        },
+        {
+          "text": "BUT HAS HE NOT ALREADY PAID DEARLY FOR HIS SINS?",
+          "confidence": 0.939
+        },
+        {
+          "text": "DOESN'T THAT HINGE ON THERE BEING SOMEONE ELSE aS THE TRuE CULPRIT?",
+          "confidence": 0.79
+        },
+        {
+          "text": "△S△ FATHER, IT PAINS ME TO SEE aStana SuFFER TOO,",
+          "confidence": 0.597
+        },
+        {
+          "text": "BUT THAT DOES NOT CHANGE THE NEED TO FIND WHO'S TRULY BEHIND ALL THIS. THIS ALL",
+          "confidence": 0.822
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "SHOULD THE TRUE CULPRIT BE IDENTIFIED, WILL ASTANA BE FREED FROM HIS CONFINEMENT?",
+          "confidence": 0.9
+        },
+        {
+          "text": "THERE'S NO REASON NOT TO.",
+          "confidence": 0.909
+        },
+        {
+          "text": "IN THAT CASE, MAy I CONDuCT MY OWN INVESTIGATION aS WeLL?",
+          "confidence": 0.74
+        },
+        {
+          "text": "AS HIS MOTHER, I WISH TO UNCOVER THE TRUe CuLPRIT WHO FRAMED MY SON NO MATTER WHAT.",
+          "confidence": 0.765
+        },
+        {
+          "text": "BUT",
+          "confidence": 0.974
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THAT'S...",
+          "confidence": 0.98
+        },
+        {
+          "text": "I'M SURE YOU'VE ALREADY HEARD, YOUR MAJESTY.",
+          "confidence": 0.926
+        },
+        {
+          "text": "THIS MORNING, LULAC LOMBARDI APPOINTED FIRENTIA,",
+          "confidence": 0.932
+        },
+        {
+          "text": "WHO IS ENGAGED TOPEREZ, AS THE OFFICIAL HEIR TO THE HOUSE.",
+          "confidence": 0.852
+        },
+        {
+          "text": "AHH...YOU MUST BE GREATLY MESIBEOREAILY DISTRESSED, YOUR MAJESTY.",
+          "confidence": 0.7
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HOUSE LOMBARDI AND PRINCE PEREZ CONSPIRED TO DECEIVE YOU.",
+          "confidence": 0.729
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "THAT'S ENOuGH. YOu CAN LEAVE NOW, EMPRESS.",
+          "confidence": 0.816
+        },
+        {
+          "text": "I MUST GET SOME REST.",
+          "confidence": 0.939
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THANK YOU FOR GRANTING ME PERMISSION,YOUR MAJESTY.",
+          "confidence": 0.929
+        },
+        {
+          "text": "THEN I SHALL SEE YOU AT BREAKFAST.",
+          "confidence": 0.888
+        }
+      ],
+      "order_method": "webtoon"
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "FIRENTIA LOMBARDIBECAME THE HEIR OF HOUSE LOMBARDI...",
+          "confidence": 0.952
+        },
+        {
+          "text": "HOUSE LOMBARDI AND PRInCe PeRez CONSPIRED TO DECEIVE you.",
+          "confidence": 0.737
+        }
+      ],
+      "order_method": "webtoon"
+    }
+  ],
+  "image_paths": [
+    "valirscans.org__i-shall-master-this-family/ch-212/001.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/002.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/003.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/004.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/005.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/006.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/007.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/008.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/009.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/010.webp",
+    "valirscans.org__i-shall-master-this-family/ch-212/011.webp"
+  ]
+}

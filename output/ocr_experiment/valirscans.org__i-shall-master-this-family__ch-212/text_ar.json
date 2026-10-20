@@ -1,0 +1,238 @@
+{
+  "manga_id": "valirscans.org__i-shall-master-this-family",
+  "chapter_num": "212",
+  "manga_title": "I Shall Master This Family",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": []
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "YOU'RE LOOKING RATHER PALE, YOUR MAJESTY.",
+          "confidence": 0.923,
+          "text_ar": "تبدو شاحباً بعض الشيء، جلالة الملك."
+        },
+        {
+          "text": "..WHY HAVE YOU COME?",
+          "confidence": 0.843,
+          "text_ar": "..لماذا أَتَيْتَ؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I HAVEN'T BEEN AT EASE LATELY EITHER, YOUR MAJESTY.",
+          "confidence": 0.832,
+          "text_ar": "لستُ مرتاح البال مؤخراً أنا أيضاً، جلالة الملك."
+        },
+        {
+          "text": "AS YOU KNOW, ASTANA WAS SEVERELY WOUNDED,",
+          "confidence": 0.681,
+          "text_ar": "كما تعلم، أستانا أصيب بجروح بالغة،"
+        },
+        {
+          "text": "BUT PEREZ WON'T EVEN LET HIS OWN MOTHER SEE HIM!",
+          "confidence": 0.96,
+          "text_ar": "لكن بيريز لا يسمح حتى لوالدته برؤيته!"
+        },
+        {
+          "text": "IT IS CLEAR THAT ASTANA HAS BEEN WRONGLY ACCUSED,youR MAJESTY MAUEOT%",
+          "confidence": 0.475,
+          "text_ar": "من الواضح أن أستانا قد اتُّهِم ظُلماً، جلالة الملك."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "...IT IS STILL ONLY AN UNCONFIRMED SUSPICION.",
+          "confidence": 0.79,
+          "text_ar": "...لا يزال الأمر مجرد اشتباه غير مؤكد."
+        },
+        {
+          "text": "BUT WHAT IF IT'S TRUE?",
+          "confidence": 0.961,
+          "text_ar": "ولكن ماذا لو كان صحيحاً؟"
+        },
+        {
+          "text": "IT'S BEEN DAYS SINCE ASTANA HAS BEEN CONFINED!",
+          "confidence": 0.909,
+          "text_ar": "لقد مرت أيام منذ أن سُجِن أستانا!"
+        },
+        {
+          "text": "HE EVEN LOST HIS RIGHT HAND!",
+          "confidence": 0.961,
+          "text_ar": "لقد فقد يده اليمنى حتى!"
+        },
+        {
+          "text": "IT IS TRUE HE COMMITTED A GRAVE OFFENSE",
+          "confidence": 0.903,
+          "text_ar": "صحيح أنه ارتكب خطيئة جسيمة"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "AGAINST THE EMPEROR,",
+          "confidence": 0.954,
+          "text_ar": "ضد الإمبراطور،"
+        },
+        {
+          "text": "BUT HAS HE NOT ALREADY PAID DEARLY FOR HIS SINS?",
+          "confidence": 0.939,
+          "text_ar": "ولكن ألم يدفع ثمن خطاياه باهظاً بالفعل؟"
+        },
+        {
+          "text": "DOESN'T THAT HINGE ON THERE BEING SOMEONE ELSE aS THE TRuE CULPRIT?",
+          "confidence": 0.79,
+          "text_ar": "ألا يتوقف ذلك على وجود شخص آخر باعتباره الجاني الحقيقي؟"
+        },
+        {
+          "text": "△S△ FATHER, IT PAINS ME TO SEE aStana SuFFER TOO,",
+          "confidence": 0.597,
+          "text_ar": "كأب، يؤلمني أن أرى أستانا يعاني أيضاً،"
+        },
+        {
+          "text": "BUT THAT DOES NOT CHANGE THE NEED TO FIND WHO'S TRULY BEHIND ALL THIS. THIS ALL",
+          "confidence": 0.822,
+          "text_ar": "ولكن هذا لا يغير من الحاجة للعثور على من يقف حقاً وراء كل هذا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "SHOULD THE TRUE CULPRIT BE IDENTIFIED, WILL ASTANA BE FREED FROM HIS CONFINEMENT?",
+          "confidence": 0.9,
+          "text_ar": "إذا تم تحديد الجاني الحقيقي، فهل يُفرج عن أستانا من محبسه؟"
+        },
+        {
+          "text": "THERE'S NO REASON NOT TO.",
+          "confidence": 0.909,
+          "text_ar": "لا توجد حجة لعدم فعل ذلك."
+        },
+        {
+          "text": "IN THAT CASE, MAy I CONDuCT MY OWN INVESTIGATION aS WeLL?",
+          "confidence": 0.74,
+          "text_ar": "في هذه الحالة، هل يُسمح لي بإجراء تحقيقي الخاص أيضاً؟"
+        },
+        {
+          "text": "AS HIS MOTHER, I WISH TO UNCOVER THE TRUe CuLPRIT WHO FRAMED MY SON NO MATTER WHAT.",
+          "confidence": 0.765,
+          "text_ar": "بصفتي والدته، أود كشف الجاني الحقيقي الذي أوقع بابني مهما كان الثمن."
+        },
+        {
+          "text": "BUT",
+          "confidence": 0.974,
+          "text_ar": "ولكن"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THAT'S...",
+          "confidence": 0.98,
+          "text_ar": "هذا..."
+        },
+        {
+          "text": "I'M SURE YOU'VE ALREADY HEARD, YOUR MAJESTY.",
+          "confidence": 0.926,
+          "text_ar": "أنا متأكدة من أنك قد سمعت بالفعل، جلالة الملك."
+        },
+        {
+          "text": "THIS MORNING, LULAC LOMBARDI APPOINTED FIRENTIA,",
+          "confidence": 0.932,
+          "text_ar": "هذا الصباح، عيّن يولاك لومباردي فيرينتيا،"
+        },
+        {
+          "text": "WHO IS ENGAGED TOPEREZ, AS THE OFFICIAL HEIR TO THE HOUSE.",
+          "confidence": 0.852,
+          "text_ar": "التي خطبت لبيريز، كوارث رسمي للأسرة."
+        },
+        {
+          "text": "AHH...YOU MUST BE GREATLY MESIBEOREAILY DISTRESSED, YOUR MAJESTY.",
+          "confidence": 0.7,
+          "text_ar": "آه... لابد أنك تشعر باهتزاز شديد واضطراب، جلالة الملك."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HOUSE LOMBARDI AND PRINCE PEREZ CONSPIRED TO DECEIVE YOU.",
+          "confidence": 0.729,
+          "text_ar": "لقد تآمرت عائلة لومباردي والأمير بيريز خداعك."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "THAT'S ENOuGH. YOu CAN LEAVE NOW, EMPRESS.",
+          "confidence": 0.816,
+          "text_ar": "هذا يكفي. يمكنك المغادرة الآن، أيها الإمبراطورة."
+        },
+        {
+          "text": "I MUST GET SOME REST.",
+          "confidence": 0.939,
+          "text_ar": "يجب أن أنال بعض الراحة."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THANK YOU FOR GRANTING ME PERMISSION,YOUR MAJESTY.",
+          "confidence": 0.929,
+          "text_ar": "شكراً لك على منحني الإذن، جلالة الملك."
+        },
+        {
+          "text": "THEN I SHALL SEE YOU AT BREAKFAST.",
+          "confidence": 0.888,
+          "text_ar": "إذن سأراك على الإفطار."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "FIRENTIA LOMBARDIBECAME THE HEIR OF HOUSE LOMBARDI...",
+          "confidence": 0.952,
+          "text_ar": "أصبحت فيرينتيا لومباردي وريثة عائلة لومباردي..."
+        },
+        {
+          "text": "HOUSE LOMBARDI AND PRInCe PeRez CONSPIRED TO DECEIVE you.",
+          "confidence": 0.737,
+          "text_ar": "تآمرت عائلة لومباردي والأمير بيريز لخداعك."
+        }
+      ]
+    }
+  ]
+}
