@@ -230045,6 +230045,23 @@
           ],
           "originalBytes": 22858884,
           "compressedBytes": 1612500
+        },
+        {
+          "label": "الفصل 256",
+          "num": "256",
+          "chNum": 256.0,
+          "sourceUrl": "https://starzmanga.com/manga/no-home/256/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-256/007.webp"
+          ],
+          "originalBytes": 17329889,
+          "compressedBytes": 928038
         }
       ]
     },
