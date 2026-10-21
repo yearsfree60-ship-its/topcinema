@@ -211420,6 +211420,21 @@
           ],
           "originalBytes": 21104020,
           "compressedBytes": 1561576
+        },
+        {
+          "label": "الفصل 20",
+          "num": "20",
+          "chNum": 20.0,
+          "sourceUrl": "https://starzmanga.com/manga/sovereign-and-heartburn/20/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-20/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-20/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-20/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-20/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-20/005.webp"
+          ],
+          "originalBytes": 19753387,
+          "compressedBytes": 1596224
         }
       ]
     }
