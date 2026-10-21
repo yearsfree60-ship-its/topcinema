@@ -21,6 +21,39 @@
           ],
           "originalBytes": 34219580,
           "compressedBytes": 2617306
+        },
+        {
+          "label": "الفصل 2",
+          "num": "2",
+          "chNum": 2.0,
+          "sourceUrl": "https://starzmanga.com/manga/sovereign-and-heartburn/2/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-2/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-2/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-2/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-2/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-2/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-2/006.webp"
+          ],
+          "originalBytes": 23406279,
+          "compressedBytes": 1888774
+        },
+        {
+          "label": "الفصل 3",
+          "num": "3",
+          "chNum": 3.0,
+          "sourceUrl": "https://starzmanga.com/manga/sovereign-and-heartburn/3/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-3/007.webp"
+          ],
+          "originalBytes": 27684861,
+          "compressedBytes": 2145310
         }
       ]
     }
