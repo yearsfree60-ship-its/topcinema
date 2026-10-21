@@ -510,6 +510,21 @@
           ],
           "originalBytes": 3384145,
           "compressedBytes": 1345614
+        },
+        {
+          "label": "الفصل 27",
+          "num": "27",
+          "chNum": 27.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/27/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-27/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-27/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-27/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-27/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-27/005.webp"
+          ],
+          "originalBytes": 12681668,
+          "compressedBytes": 1386492
         }
       ]
     }
