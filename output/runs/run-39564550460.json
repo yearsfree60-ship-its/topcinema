@@ -228,6 +228,36 @@
           ],
           "originalBytes": 9519076,
           "compressedBytes": 1456418
+        },
+        {
+          "label": "الفصل 10",
+          "num": "10",
+          "chNum": 10.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/10/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-10/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-10/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-10/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-10/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-10/005.webp"
+          ],
+          "originalBytes": 14255729,
+          "compressedBytes": 1437098
+        },
+        {
+          "label": "الفصل 11",
+          "num": "11",
+          "chNum": 11.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/11/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-11/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-11/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-11/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-11/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-11/005.webp"
+          ],
+          "originalBytes": 14785736,
+          "compressedBytes": 1330224
         }
       ]
     }
