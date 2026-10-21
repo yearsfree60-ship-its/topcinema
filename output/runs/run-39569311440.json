@@ -402,6 +402,21 @@
           ],
           "originalBytes": 15266005,
           "compressedBytes": 1914166
+        },
+        {
+          "label": "الفصل 17",
+          "num": "17",
+          "chNum": 17.0,
+          "sourceUrl": "https://olympustaff.com/series/SIR/17",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-17/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-17/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-17/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-17/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-17/005.webp"
+          ],
+          "originalBytes": 12088381,
+          "compressedBytes": 1280660
         }
       ]
     }
