@@ -215,6 +215,21 @@
           ],
           "originalBytes": 25593608,
           "compressedBytes": 2085190
+        },
+        {
+          "label": "الفصل 14",
+          "num": "14",
+          "chNum": 14.0,
+          "sourceUrl": "https://starzmanga.com/manga/sovereign-and-heartburn/14/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-14/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-14/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-14/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-14/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-14/005.webp"
+          ],
+          "originalBytes": 23051133,
+          "compressedBytes": 2039630
         }
       ]
     }
