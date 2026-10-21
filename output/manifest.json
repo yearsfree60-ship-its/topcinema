@@ -218236,6 +218236,21 @@
           ],
           "originalBytes": 14210195,
           "compressedBytes": 1634524
+        },
+        {
+          "label": "الفصل 22",
+          "num": "22",
+          "chNum": 22.0,
+          "sourceUrl": "https://olympustaff.com/series/SIR/22",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-22/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-22/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-22/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-22/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/olympustaff.com__sir/ch-22/005.webp"
+          ],
+          "originalBytes": 10711061,
+          "compressedBytes": 1293246
         }
       ]
     }
