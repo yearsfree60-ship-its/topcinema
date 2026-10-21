@@ -640,6 +640,21 @@
           ],
           "originalBytes": 25168422,
           "compressedBytes": 2187832
+        },
+        {
+          "label": "الفصل 41",
+          "num": "41",
+          "chNum": 41.0,
+          "sourceUrl": "https://starzmanga.com/manga/sovereign-and-heartburn/41/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-41/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-41/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-41/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-41/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-41/005.webp"
+          ],
+          "originalBytes": 22704495,
+          "compressedBytes": 1915340
         }
       ]
     }
