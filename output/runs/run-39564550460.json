@@ -482,6 +482,20 @@
           ],
           "originalBytes": 3435143,
           "compressedBytes": 1381902
+        },
+        {
+          "label": "الفصل 25",
+          "num": "25",
+          "chNum": 25.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/25/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-25/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-25/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-25/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-25/004.webp"
+          ],
+          "originalBytes": 3442489,
+          "compressedBytes": 1328260
         }
       ]
     }
