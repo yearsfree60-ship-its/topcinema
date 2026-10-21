@@ -315,6 +315,31 @@
           ],
           "originalBytes": 18189729,
           "compressedBytes": 1322136
+        },
+        {
+          "label": "الفصل 16",
+          "num": "16",
+          "chNum": 16.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/16/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-16/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-16/002.webp"
+          ],
+          "originalBytes": 15046862,
+          "compressedBytes": 620958
+        },
+        {
+          "label": "الفصل 17",
+          "num": "17",
+          "chNum": 17.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/17/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-17/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-17/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-17/003.webp"
+          ],
+          "originalBytes": 15761417,
+          "compressedBytes": 953830
         }
       ]
     }
