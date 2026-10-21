@@ -212822,6 +212822,20 @@
           ],
           "originalBytes": 9195538,
           "compressedBytes": 1294364
+        },
+        {
+          "label": "الفصل 15",
+          "num": "15",
+          "chNum": 15.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/15/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-15/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-15/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-15/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-15/004.webp"
+          ],
+          "originalBytes": 18189729,
+          "compressedBytes": 1322136
         }
       ]
     }
