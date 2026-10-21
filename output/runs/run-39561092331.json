@@ -151,6 +151,23 @@
           ],
           "originalBytes": 20318554,
           "compressedBytes": 1503050
+        },
+        {
+          "label": "الفصل 10",
+          "num": "10",
+          "chNum": 10.0,
+          "sourceUrl": "https://starzmanga.com/manga/sovereign-and-heartburn/10/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__sovereign-and-heartburn/ch-10/007.webp"
+          ],
+          "originalBytes": 29061288,
+          "compressedBytes": 2271190
         }
       ]
     }
