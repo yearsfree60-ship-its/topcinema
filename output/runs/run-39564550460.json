@@ -3883,6 +3883,27 @@
           ],
           "originalBytes": 11780148,
           "compressedBytes": 2822858
+        },
+        {
+          "label": "الفصل 100",
+          "num": "100",
+          "chNum": 100.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/100/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/010.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-100/011.webp"
+          ],
+          "originalBytes": 11035242,
+          "compressedBytes": 2618526
         }
       ]
     }
