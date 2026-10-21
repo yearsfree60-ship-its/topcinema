@@ -7903,6 +7903,27 @@
           ],
           "originalBytes": 29281475,
           "compressedBytes": 1415656
+        },
+        {
+          "label": "الفصل 255",
+          "num": "255",
+          "chNum": 255.0,
+          "sourceUrl": "https://starzmanga.com/manga/no-home/255/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/010.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__no-home/ch-255/011.webp"
+          ],
+          "originalBytes": 22858884,
+          "compressedBytes": 1612500
         }
       ]
     }
