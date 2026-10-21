@@ -94,6 +94,22 @@
           ],
           "originalBytes": 9072549,
           "compressedBytes": 2014432
+        },
+        {
+          "label": "الفصل 5",
+          "num": "5",
+          "chNum": 5.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/5/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-5/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-5/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-5/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-5/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-5/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-5/006.webp"
+          ],
+          "originalBytes": 9996844,
+          "compressedBytes": 2320572
         }
       ]
     }
