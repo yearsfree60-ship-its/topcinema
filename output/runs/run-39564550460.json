@@ -496,6 +496,20 @@
           ],
           "originalBytes": 3442489,
           "compressedBytes": 1328260
+        },
+        {
+          "label": "الفصل 26",
+          "num": "26",
+          "chNum": 26.0,
+          "sourceUrl": "https://starzmanga.com/manga/return-survival/26/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-26/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-26/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-26/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__return-survival/ch-26/004.webp"
+          ],
+          "originalBytes": 3384145,
+          "compressedBytes": 1345614
         }
       ]
     }
