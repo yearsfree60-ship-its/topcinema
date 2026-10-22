@@ -1,0 +1,739 @@
+{
+  "manga_id": "manhwasusu.com__a-theme-for-every-building",
+  "chapter_num": "65",
+  "manga_title": "A Theme For Every Building",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": []
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": []
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "MONDAY.",
+          "confidence": 0.997,
+          "text_ar": "الإثنين."
+        },
+        {
+          "text": "CHIRP.",
+          "confidence": 0.953,
+          "text_ar": "زقزقة."
+        },
+        {
+          "text": "STEP",
+          "confidence": 0.973,
+          "text_ar": "خطوة"
+        },
+        {
+          "text": "nel",
+          "confidence": 0.755,
+          "text_ar": "نيّل"
+        },
+        {
+          "text": "GOOD, MY OUTFIT'S ALL SET FOR TODAY,TOO! STEP HM",
+          "confidence": 0.599,
+          "text_ar": "جيد، ملابسي جاهزة تماماً لهذا اليوم أيضاً! خطوة ممم"
+        },
+        {
+          "text": "HEY, THAT PERSONON THE INSTAGRAM FEED...THAT'S HIM,RIGHT?",
+          "confidence": 0.956,
+          "text_ar": "مهلاً، أليس ذلك الشخص الموجود على إنستغرام... هو نفسه؟"
+        },
+        {
+          "text": "YEAH,YEAH! THAT'S INTERN KANG!",
+          "confidence": 0.962,
+          "text_ar": "بلى، بلى! هذا هو المتدرب كانغ!"
+        },
+        {
+          "text": "WASGTOO",
+          "confidence": 0.77,
+          "text_ar": "واصغتو"
+        },
+        {
+          "text": "NO WAY...",
+          "confidence": 0.905,
+          "text_ar": "لا معقول..."
+        },
+        {
+          "text": ".WHAT'S GOING ON? MURMUR",
+          "confidence": 0.891,
+          "text_ar": "ما الذي يحدث؟ تمتمة"
+        },
+        {
+          "text": "HOW'S IT FEEL TO SUDDENLYBE FAMOUS?",
+          "confidence": 0.909,
+          "text_ar": "كيف شعور أن تصبح مشهوراً فجأة؟"
+        },
+        {
+          "text": "IT'SNOT BECAUSE OF ME. PROBABLY...",
+          "confidence": 0.933,
+          "text_ar": "الأمر ليس بسببي. غالباً..."
+        },
+        {
+          "text": "JEEZ...",
+          "confidence": 0.905,
+          "text_ar": "ياله من أمر..."
+        },
+        {
+          "text": "IT'S GOTTA BE BECAUSE OF CHAERIN YESTERDAY.",
+          "confidence": 0.945,
+          "text_ar": "لا بد أن هذا بسبب تشارين بالأمس."
+        },
+        {
+          "text": "JEEZ...",
+          "confidence": 0.958,
+          "text_ar": "ياله من أمر..."
+        },
+        {
+          "text": "HEY, UM... IF YOU GO OUT WEARING A HANBOK...",
+          "confidence": 0.85,
+          "text_ar": "مهلاً، امم... إن خرجت وأنت ترتدي الهانبوك..."
+        },
+        {
+          "text": "THEN I'LL GO OUT WEARINGA HANBOK. WHAT ELSE WOULD I WEAR?",
+          "confidence": 0.911,
+          "text_ar": "إذن سأخرج مرتدياً الهانبوك أيضاً. ماذا كنت سأرتدي غيره؟"
+        },
+        {
+          "text": "LOOK ATTHATOUTFIT ON HER. IS SHE AN ATTENTION SEEKER OR WHAT..? HEHEHE",
+          "confidence": 0.922,
+          "text_ar": "انظر إلى ملابسها تلك. أتبحث عن لفت الانتباه أم ماذا..؟ هيهيهي"
+        },
+        {
+          "text": "MY LADY!YOU CAN'T GO OUT LIKE THAT!",
+          "confidence": 0.905,
+          "text_ar": "سيدتي! لا يمكنك الخروج هكذا!"
+        },
+        {
+          "text": "AH,FORGETIT!",
+          "confidence": 0.957,
+          "text_ar": "آه، امسح الأمر!"
+        },
+        {
+          "text": "IDON'T WANNA PUTON A JANGOT!",
+          "confidence": 0.926,
+          "text_ar": "لا أريد ارتداء غطاء جانغوت!"
+        },
+        {
+          "text": "DAMN... HER BODY'S INSANE!",
+          "confidence": 0.969,
+          "text_ar": "تباً... جسدها مذهل!"
+        },
+        {
+          "text": "ANDIN THE END,I'M THE ONE WHO HAD TO WEAR THE JANGOT!",
+          "confidence": 0.943,
+          "text_ar": "وفي النهاية، أنا من اضطررت لارتداء الجانغوت!"
+        },
+        {
+          "text": "THIS MODERNIZED HANBOKISSEXYAS HELL, HUH?",
+          "confidence": 0.924,
+          "text_ar": "هذا الهانبوك العصري جذاب للغاية، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "IS THAT HER BOYFRIEND?I'M JEALOUS.",
+          "confidence": 0.934,
+          "text_ar": "أذلك حبيبها؟ أنا غيورة."
+        },
+        {
+          "text": "I DON'T REALLY CAREIFPEOPLESEE IT ORNOT...IT'S JUST KIND OF A HASSLE.",
+          "confidence": 0.912,
+          "text_ar": "لا يهمني حقاً إن كان الناس يران أم لا... الأمر مزعج فقط بعض الشيء."
+        },
+        {
+          "text": "ATFIRST, I THOUGHT I DIDN'T CARE,BUT SOONI REALIZED THAT WAS JUST WISHFUL THINKING...",
+          "confidence": 0.933,
+          "text_ar": "في البداية ظننت أنه لا يهموني، لكنني أدركت قريباً أن ذلك كان مجرد تمني..."
+        },
+        {
+          "text": "LOOKAT THIS!OUR PICTURE'S UP! PICTURE'SUP!",
+          "confidence": 0.954,
+          "text_ar": "انظر إلى هذا! لقد نُشرت صورتنا! صورتنا نُشرت!"
+        },
+        {
+          "text": "Grbnn ASP",
+          "confidence": 0.981,
+          "text_ar": "غريبن أسب"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.994,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "@j_ooo.u Seoul, Yeonseo-dong",
+          "confidence": 0.91,
+          "text_ar": "@j_ooo.u سيول، يونسيئو-دونغ"
+        },
+        {
+          "text": "D 2 142.8K LIKES",
+          "confidence": 0.721,
+          "text_ar": "منذ يومين 142.8 ألف إعجاب"
+        },
+        {
+          "text": "@J_OOO.UCAUGHT THELEGENDARYCOUPLEOFYEONSEOSTREET TODAY.. THESUNLIGHT,THEWAYTHEIRHANBOKSFIT-EVERYTHING ABOUTTHEMOMENTWASPERFECT.THISHANBOKCOUPLEWALKED BYJUSTASTHEAFTERNOONSUNWASSHINING,ANDICOULDN'TNOT TAKEAPICTURE..DOESANYONEKNOWTHESETWO,ORISONEOF THEMYOU? TAG THEMIN THECOMMENTS,PLEASE!I'LL SENDYOU BOTHTHEORIGINALANDEDITEDVERSIONS!#YEONSEODONG #YEONSEOSTREET #HANBOKDATE #STREETSNAPSHOT #LEGENDARY #SUCHAGOODVIBE#LOVESTAGRAM",
+          "confidence": 0.949,
+          "text_ar": "@J_OOO.U التقطت الثنائي الأسطوري لشارع يونسيئو اليوم.. ضوء الشمس، وطريقة تناسب ملابس الهانبوك خاصتهما- كل شيء في هذه اللحظة كان مثالياً. مر هذا الثنائي مرتدياً الهانبوك بينما كانت شمس الظهيرة ساطعة، ولم أستطع إلا التقاط صورة.. هل يعرف أحد هذين الشخصين، أم أن أحدكما هو هما؟ الرجاء الإشارة إليهما في التعليقات! سأرسل لكما النسختين الأصلية والمعدلة! #يونسيئودونغ #شارع_يونسيئو #موعد_هانبوك #تصوير_شوارع #أسطوري #أجواء_رائعة #لوفستاجرام"
+        },
+        {
+          "text": "1.4KCOMMENTSVIEWALL",
+          "confidence": 0.99,
+          "text_ar": "عرض كل التعليقات الـ 1.4 ألف"
+        },
+        {
+          "text": "BUT THEY POSTED IT SAYING WE'RE A COUPLE.",
+          "confidence": 0.906,
+          "text_ar": "لكنهما نشراها على أننا حبيبين."
+        },
+        {
+          "text": "ASKTHEM TO CORRECT IT TO SIBLINGS.",
+          "confidence": 0.936,
+          "text_ar": "اطلب منهما تصحيحها لتصبح أخ وأخت."
+        },
+        {
+          "text": "Fried Egg",
+          "confidence": 0.899,
+          "text_ar": "بيضة مقلية"
+        },
+        {
+          "text": "TOO LATE NOW,ANYWAY~",
+          "confidence": 0.936,
+          "text_ar": "فوات الأوان على أي حال~"
+        },
+        {
+          "text": "LEE HYUN, YOU'RE TOTALLY FAMOUS NOW, HUH? NOW,HUH?",
+          "confidence": 0.925,
+          "text_ar": "لي هيون، لقد صرت مشهوراً تماماً الآن، أليس كذلك؟ الآن، أليس كذلك؟"
+        },
+        {
+          "text": "OH,I SAW IT... DID YOU SEE IT?",
+          "confidence": 0.853,
+          "text_ar": "أوه، لقد رأيت ذلك... هل رأيته؟"
+        },
+        {
+          "text": "FASTUPDATEAT nel",
+          "confidence": 0.814,
+          "text_ar": "تحديث سريع في نيّل"
+        },
+        {
+          "text": "WHAT WAS THE HANBOK DATEWITH CHAERIN ABOUT? YOU DIDN'T EVEN TELL ME...",
+          "confidence": 0.906,
+          "text_ar": "ما قصة موعد الهانبوك مع تشارين؟ لم تخبرني حتى..."
+        },
+        {
+          "text": "VPYPS",
+          "confidence": 0.805,
+          "text_ar": "فبيبي إس"
+        },
+        {
+          "text": "SHE KEPT BEGGING ME TO GO EAT, SO I WENT ALONG WITH IT.IT WASN'TA DATE OR ANYTHING...",
+          "confidence": 0.919,
+          "text_ar": "ظللت تتوسل إلي لأذهب لتناول الطعام، لذا سايرتها. لم يكن موعداً أو ما شابه..."
+        },
+        {
+          "text": "MR. LEE HYUN! THE DEPARTMENT HEAD'SCALLING FOR YOU BY THE BREAKROOM.",
+          "confidence": 0.909,
+          "text_ar": "السيد لي هيون! رئيس القسم يطلبك بجانب غرفة الاستراحة."
+        },
+        {
+          "text": "YES,I'M COMING RIGHT AWAY.",
+          "confidence": 0.891,
+          "text_ar": "حسناً، أنا قادم حالاً."
+        },
+        {
+          "text": "WHY WOULD THEYBE CALLING ME?",
+          "confidence": 0.962,
+          "text_ar": "لماذا قد يطلبونني؟"
+        },
+        {
+          "text": "PEOPLE KEEP SAYINGI HAVE NO SOCIAL AWARENESSLATELY. THEY AREN'T GONNA FIRE ME,ARE THEY?",
+          "confidence": 0.941,
+          "text_ar": "الناس لا يزالون يقولون إنني افتقر للوعي الاجتماعي مؤخراً. لن يفصلوني من العمل، أليس كذلك؟"
+        },
+        {
+          "text": "MYINTERNSHIP ISN'T OVER YET. NAH, NO WAY...",
+          "confidence": 0.875,
+          "text_ar": "فترة تدريبي لم تنته بعد. كلا، مستحيل..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "YOU'VEBEN MAKING QUITE A SPLASH ON SOCIAL MEDIA,HUH?",
+          "confidence": 0.936,
+          "text_ar": "لقد أحدثت ضجة كبيرة على وسائل التواصل الاجتماعي، أليس كذلك؟"
+        },
+        {
+          "text": "THIS SOME IS OFVIOLATION KIND OF THE CoMPANY'S STANDARDSOF CONDUCT... OR WHAT?",
+          "confidence": 0.86,
+          "text_ar": "هل هذا انتهاك لمعايير السلوك في الشركة... أم ماذا؟"
+        },
+        {
+          "text": "D-DEPARTMENT HEAD...IMEAN, YOU SHOULDBEMORE CAREFULABOUT MANAGINGYOUR PRIVATE LIFE...",
+          "confidence": 0.859,
+          "text_ar": "ر-رئيس القسم... أعني، يجب أن تكون أكثر حرصاً في إدارة حياتك الخاصة..."
+        },
+        {
+          "text": "NOD",
+          "confidence": 0.978,
+          "text_ar": "إيماء"
+        },
+        {
+          "text": "JUST I'D GOTTENUSED CUSHY TO THIS JOB, AND NOW MY INTERNSHIP MIGHT BE OVER?!",
+          "confidence": 0.887,
+          "text_ar": "فقط عندما اعتدت على هذه الوظيفة المريحة، قد تنتهي فترة تدريبي الآن?!"
+        },
+        {
+          "text": "HA HA! CAREFUL ABOUT WHAT? YOU'RE ALL OVER THE PLACE!",
+          "confidence": 0.915,
+          "text_ar": "ها ها! حرص بشأن ماذا؟ أنت منتشر في كل مكان!"
+        },
+        {
+          "text": "HA HA HA...",
+          "confidence": 0.945,
+          "text_ar": "ها ها ها..."
+        },
+        {
+          "text": "WHEW, GUESS THAT'S IT... NOT 4 →",
+          "confidence": 0.086,
+          "text_ar": "فوه، أعتقد أن هذا كل شيء... ليس 4 ←"
+        },
+        {
+          "text": "IS THE PERSON IN THE PHOTO WITH YOU YOUR GIRLFRIEND?",
+          "confidence": 0.924,
+          "text_ar": "هل الشخص الموجود في الصورة معك هي حبيبتك؟"
+        },
+        {
+          "text": "NO.SHE'S MY YOUNGER SISTER.",
+          "confidence": 0.941,
+          "text_ar": "كلا. إنها أختي الصغرى."
+        },
+        {
+          "text": "IHAVE NO IDEA WHAT HE'S ABOUT TO SAY..!",
+          "confidence": 0.863,
+          "text_ar": "ليس لدي أدنى فكرة عما سيقوله الآن..!"
+        },
+        {
+          "text": "AS IT HAPPENS, THE COMPANY'S PLANNING A HANBOKADFOR PROMOTIONAL PURPOSES.",
+          "confidence": 0.895,
+          "text_ar": "تصادف أن الشركة تخطط لإعلان هانبوك لأغراض ترويجية."
+        },
+        {
+          "text": "WE WERE JUST ABOUT TO HIRE A CIVILIAN MODEL... HOW ABOUT YOU TAKE SOME PHOTOS WITH YOUR SISTER?",
+          "confidence": 0.874,
+          "text_ar": "كنا على وشك توظيف عارض مدني... ما رأيك أن تلتقط بعض الصور مع أختك؟"
+        },
+        {
+          "text": "AN AD?",
+          "confidence": 0.937,
+          "text_ar": "إعلان؟"
+        },
+        {
+          "text": "THAT'S RIGHT, AN AD.",
+          "confidence": 0.942,
+          "text_ar": "هذا صحيح، إعلان."
+        },
+        {
+          "text": "I THINK THEY'RE ALSO BOOKING A CELEBRITY AT THAT STUDIO FOR ANOTHER ONE OF OUR PRODUCTS.",
+          "confidence": 0.862,
+          "text_ar": "أعتقد أنهم يحجزون أيضاً مشهوراً في ذلك الاستوديو لمنتج آخر من منتجاتنا."
+        },
+        {
+          "text": "IT'SA GREAT OPPORTUNITY, SO GIVE ITA TRY.",
+          "confidence": 0.92,
+          "text_ar": "إنها فرصة عظيمة، لذا جربها."
+        },
+        {
+          "text": "AH...  SURE. I'LL ASK MY SISTER WHAT SHE THINKS FIRST.",
+          "confidence": 0.843,
+          "text_ar": "آه... بالتأكيد. سأسأل أختي عن رأيها أولاً."
+        },
+        {
+          "text": "FASTUPDATEAT MANHWA net",
+          "confidence": 0.964,
+          "text_ar": "تحديث سريع في مانهوا نت"
+        },
+        {
+          "text": "WHAT THEHELL IS IT..?",
+          "confidence": 0.9,
+          "text_ar": "ما اللعنة التي يجري..؟"
+        },
+        {
+          "text": "THIS IS PERFECT!IF THE AD GOES WELL, YOU'RE DEFINITELY GETTING A FULL-TIME POSITION!",
+          "confidence": 0.938,
+          "text_ar": "هذا مثالي! إذا سار الإعلان بشكل جيد، ستتحول حتماً إلى موظف دائم!"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "NGH...WHAT IF IT FLOPS?",
+          "confidence": 0.938,
+          "text_ar": "نغ... ماذا لو فشل؟"
+        },
+        {
+          "text": "WELL, I GUESS THEN...",
+          "confidence": 0.904,
+          "text_ar": "حسناً، أظن حينها..."
+        },
+        {
+          "text": "SLOSH",
+          "confidence": 0.984,
+          "text_ar": "تخبط"
+        },
+        {
+          "text": "IT CAN'T BE HELPED, RIGHT?",
+          "confidence": 0.953,
+          "text_ar": "لا مفر من ذلك، أليس كذلك؟"
+        },
+        {
+          "text": "I CAN'T EXACTLYTURN THEM DOWN. STILL, THIS FEELSSKETCHY.",
+          "confidence": 0.929,
+          "text_ar": "لا يمكنني رفضهم هكذا ببساطة. مع ذلك، يبدو هذا الأمر مريبا."
+        },
+        {
+          "text": "COUGH! IT'S HIGH RISK, LOW REWARD, ISN'T IT?",
+          "confidence": 0.931,
+          "text_ar": "كعك! إنه عالي المخاطر ومنخفض العائد، أليس كذلك؟"
+        },
+        {
+          "text": "EVEN IF THE AD DOES WELL, THERE ISN'T MUCH IN IT FOR ME. BUT IF IT FLOPS, THERE'S AGOODCHANCEI WON'T GET HIRED FULL-TIME...",
+          "confidence": 0.884,
+          "text_ar": "حتى لو أدى الإعلان بشكل جيد، فلن أجني الكثير منه. لكن إن فشل، فهناك احتمال كبير ألا أُعين بشكل دائم..."
+        },
+        {
+          "text": "ASK CHAERIN FIRST.",
+          "confidence": 0.958,
+          "text_ar": "اسأل تشارين أولاً."
+        },
+        {
+          "text": "EVEN IF YOU'RE WILLING TO DOIT, YOU SHOULD ASK WHAT CHAERIN THINKS.",
+          "confidence": 0.932,
+          "text_ar": "حتى لو كنت مستعداً للقيام بذلك، يجب أن تسأل تشارين عن رأيها."
+        },
+        {
+          "text": "UH, YEAH.",
+          "confidence": 0.953,
+          "text_ar": "أه، أجل."
+        },
+        {
+          "text": "STROKE THOUGH EVEN NO, I'D SHE SAYS IF ENDUP PROBABLY UNTIL BEGGING HER TO AGREES SHE SHOOT IT.",
+          "confidence": 0.835,
+          "text_ar": "حتى وإن رفضت، سينتهي بي الأمر غالباً بتتوسلها لتوافق على التصوير."
+        },
+        {
+          "text": "STILL, I ASK SHOULD FIRST. HER",
+          "confidence": 0.817,
+          "text_ar": "مع ذلك، يجب أن أسألها أولاً."
+        },
+        {
+          "text": "4:23 Chaerin -",
+          "confidence": 0.315,
+          "text_ar": "4:23 تشارين -"
+        },
+        {
+          "text": "MONDAY, OCTOBER19,2026",
+          "confidence": 0.943,
+          "text_ar": "الإثنين، 19 أكتوبر 2026"
+        },
+        {
+          "text": "THEY'RE SHOOTING A HANBOKADATMY WANNADO IT? COMPANY.WANNADOIT? COMPANY.",
+          "confidence": 0.929,
+          "text_ar": "إنهم يصورون إعلان هانبوك في شركتي. هل تريدين المشاركة؟"
+        },
+        {
+          "text": "Chaerin AN AD? FOR TV?",
+          "confidence": 0.959,
+          "text_ar": "تشارين إعلان؟ للتلفزيون؟"
+        },
+        {
+          "text": "JUST DO THINKIT'D BE ON TV? YOU THAT'LL SOME AD UP ONINSTAOR GO CIA WHATEVER, ON so IAL MEDIA.",
+          "confidence": 0.667,
+          "text_ar": "هل تظنين أنه سيكون على التلفزيون؟ مجرد إعلان على إنستغرام أو وسائل التواصل الاجتماعي."
+        },
+        {
+          "text": "Chaerin AREYOU SHOOTING OPPA? IT TOO,",
+          "confidence": 0.958,
+          "text_ar": "تشارين هل ستصور أنت أيضاً يا أوبا؟"
+        },
+        {
+          "text": "Yup",
+          "confidence": 0.975,
+          "text_ar": "يوب"
+        },
+        {
+          "text": "Chaerir I'LL DO IT.",
+          "confidence": 0.873,
+          "text_ar": "تشارين سأفعلها."
+        },
+        {
+          "text": "WELL, CHAERIN SHE'DDOIT SAID TOO, SO THAT'S SETTLED.",
+          "confidence": 0.851,
+          "text_ar": "حسناً، تشارين قالت إنها ستفعلها أيضاً، إذن تم الأمر."
+        },
+        {
+          "text": "THAT'S GREAT~",
+          "confidence": 0.992,
+          "text_ar": "هذا رائع~"
+        },
+        {
+          "text": "HONESTLY,I'M HALF EXCITED AND HALF WORRIED.",
+          "confidence": 0.932,
+          "text_ar": "بصراحة، أنا ممزق بين الحماس والقلق."
+        },
+        {
+          "text": "STILL,IF WE'RE GETTING A CELEBRITY... I'D RATHER IT BE ANIDOL!",
+          "confidence": 0.931,
+          "text_ar": "مع ذلك، إذا كنا سنحصل على مشهور... فأفضل أن يكون آيدول!"
+        },
+        {
+          "text": "EVERYONE'S GOING NUTS SAYING THE IDOLS THESE DAYS ARE THE PRETTIEST EVER...!",
+          "confidence": 0.885,
+          "text_ar": "الجميع يجنون قائلين إن آيدولات هذه الأيام هن الأجمل على الإطلاق...!"
+        },
+        {
+          "text": "FASTUPDATEAT .net",
+          "confidence": 0.835,
+          "text_ar": "تحديث سريع في .نت"
+        },
+        {
+          "text": "4:23 CHAERIN",
+          "confidence": 0.941,
+          "text_ar": "4:23 تشارين"
+        },
+        {
+          "text": "老#三O 老三 Q I",
+          "confidence": 0.309,
+          "text_ar": "لا شيء"
+        },
+        {
+          "text": "IA RN5O78670 BNNCE703EP19208 THEY'RESHOOTING A 418 P.M. HANBOKADATMY 烤包 COMPANY.WANNADOIT? AN AD? FOR TV? TAP 4:20PM TAP- Oppa too? NINSTAOR MEDIA. 7 F",
+          "confidence": 0.103,
+          "text_ar": "إنهم يصورون إعلان هانبوك في شركتي. هل تريدين المشاركة؟ إعلان؟ للتلفزيون؟ أوبا أيضاً؟ يوب"
+        },
+        {
+          "text": "Nah.",
+          "confidence": 0.769,
+          "text_ar": "كلا."
+        },
+        {
+          "text": "Yup",
+          "confidence": 0.933,
+          "text_ar": "يوب"
+        },
+        {
+          "text": "哈牛牛",
+          "confidence": 0.502,
+          "text_ar": "حسناً"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "A COMMERCIAL, HUH...",
+          "confidence": 0.926,
+          "text_ar": "إعلان تجاري، هاه..."
+        },
+        {
+          "text": "HAAH.",
+          "confidence": 0.898,
+          "text_ar": "هآه."
+        },
+        {
+          "text": "NO SMOK ING",
+          "confidence": 0.978,
+          "text_ar": "ممنوع التدخين"
+        },
+        {
+          "text": "FINES UP TO100,000 KRW FOR SMOKNG",
+          "confidence": 0.907,
+          "text_ar": "غرامات تصل إلى 100,000 وون لتخالف التدخين"
+        },
+        {
+          "text": "SEONGBUKDISTRICT PUBLIC HEALTHCENTER",
+          "confidence": 0.944,
+          "text_ar": "مركز الصحة العامة لمنطقة سيونغبوك"
+        },
+        {
+          "text": "HMPH... WHYDIDHE EVENBOTHER CORRECTING PEOPLE THAT WE'RE - SIBLINGS?",
+          "confidence": 0.05,
+          "text_ar": "همم... لماذا عانى حتى من تصحيح الناس بأننا - إخوة؟"
+        },
+        {
+          "text": "LOOKING AT IT LIKE THIS,WE LOOK GREAT TOGETHER ANYWAY.",
+          "confidence": 0.923,
+          "text_ar": "بالنظر إلى الأمر هكذا، نحن نبدو رائعين معاً على أي حال."
+        },
+        {
+          "text": "CHAERIN... WHAT ARE YOU DOING...?",
+          "confidence": 0.939,
+          "text_ar": "تشارين... ماذا تفعلين...؟"
+        },
+        {
+          "text": "YOOJIN!",
+          "confidence": 0.986,
+          "text_ar": "يوحين!"
+        },
+        {
+          "text": "LONG TIME NO SEE~",
+          "confidence": 0.922,
+          "text_ar": "يا له من وقت طويل لم نتقابل فيه~"
+        },
+        {
+          "text": "OH MY GOD, WHAT'S UP~? ISN'T IT WAYTOO LONG SINCE WE LAST SAW EACHOTHER?",
+          "confidence": 0.925,
+          "text_ar": "يا إلهي، ما الأخبار~؟ أليس وقتاً طويلاً حقاً منذ أن رأينا بعضنا آخر مرة؟"
+        },
+        {
+          "text": "I LITERALLY THOUGHT YOU TOOKALEAVE OF ABSENCE!",
+          "confidence": 0.96,
+          "text_ar": "ظننت حرفياً أنكِ أخذتِ إجازة دراسية!"
+        },
+        {
+          "text": "GRAB YEAH, I'VE BEEN BUSY WORKING A PART-TIMEJOB LATELY...",
+          "confidence": 0.953,
+          "text_ar": "أجل، كنت مشغولة بالعمل في وظيفة جزئية مؤخراً..."
+        },
+        {
+          "text": "WHERE ON EARTH ARE YOU WORKING THAT YOU HAVEN'T BEEN COMING TO SCHOOL?",
+          "confidence": 0.928,
+          "text_ar": "أين تعملين بحق الجحيم لدرجة أنك لم تكوني تأتين إلى المدرسة؟"
+        },
+        {
+          "text": "IT'S NOTHING SKETCHY, FLINCH RIGHT?",
+          "confidence": 0.979,
+          "text_ar": "ليس شيئاً مريباً، أليس كذلك؟"
+        },
+        {
+          "text": "FASTUPDATEAT PDATEAT .net",
+          "confidence": 0.835,
+          "text_ar": "تحديث سريع في .نت"
+        },
+        {
+          "text": "NO... DEFINITELY NOTHING LIKE THAT.",
+          "confidence": 0.92,
+          "text_ar": "كلا... بالتأكيد ليس شيئاً من هذا القبيل."
+        },
+        {
+          "text": "I USED TO WORK AT AN ANIMAL CAFE,BUT LATELY I'VE BEEN DOING SOMETHING ELSE.",
+          "confidence": 0.921,
+          "text_ar": "كنت أعمل في مقهى حيوانات، لكنني كنت أفعل شيئاً آخر مؤخراً."
+        },
+        {
+          "text": "U-UM... CHAERIN...",
+          "confidence": 0.901,
+          "text_ar": "أ-أم... تشارين..."
+        },
+        {
+          "text": "WHOIS THIS GUY... IN THIS PHOTO...?",
+          "confidence": 0.889,
+          "text_ar": "من هذا الفتى... في هذه الصورة...؟"
+        },
+        {
+          "text": "AH,HIM? HE'S MY O...",
+          "confidence": 0.859,
+          "text_ar": "آه، هذا؟ إنه أ..."
+        },
+        {
+          "text": "HE'S MY OPPA!",
+          "confidence": 0.943,
+          "text_ar": "إنه أوبا الخاص بي!"
+        },
+        {
+          "text": "OMG,HE LOOKS HOT! INTRODUCE ME TO HIM!",
+          "confidence": 0.934,
+          "text_ar": "يا إلهي، إنه يبدو جذاباً! عرفيني عليه!"
+        },
+        {
+          "text": "YOUR OPPA...?",
+          "confidence": 0.908,
+          "text_ar": "أوبا الخاص بكِ...؟"
+        },
+        {
+          "text": "FASTUPDATEAT MANHWA18Mt 1",
+          "confidence": 0.403,
+          "text_ar": "تحديث سريع في مانهوا18"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "FASTUPDATEAT MANHWAI 0 net",
+          "confidence": 0.468,
+          "text_ar": "تحديث سريع في مانهوا نت"
+        },
+        {
+          "text": "AHAHA! HE'S MY BOYFRIEND.",
+          "confidence": 0.951,
+          "text_ar": "هاها! إنه حبيبي."
+        },
+        {
+          "text": "HMM...",
+          "confidence": 0.898,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "THAT GUY...",
+          "confidence": 0.966,
+          "text_ar": "ذلك الفتى..."
+        },
+        {
+          "text": "SLIDE-",
+          "confidence": 0.977,
+          "text_ar": "انزلاق-"
+        },
+        {
+          "text": "CHAERIN'S BOYFRIEND?",
+          "confidence": 0.994,
+          "text_ar": "حبيب تشارين؟"
+        },
+        {
+          "text": "READ FIRST AT MANHWA18.COM OR MANHWA18.NET",
+          "confidence": 0.937,
+          "text_ar": "اقرأ أولاً على MANHWA18.COM أو MANHWA18.NET"
+        },
+        {
+          "text": "MANHWA18 SCANLATiON",
+          "confidence": 0.936,
+          "text_ar": "ترجمة مانهوا18"
+        },
+        {
+          "text": "Read first At Manhwa18.net",
+          "confidence": 0.96,
+          "text_ar": "اقرأ أولاً على Manhwa18.net"
+        },
+        {
+          "text": "萧 en",
+          "confidence": 0.235,
+          "text_ar": "إين"
+        }
+      ]
+    }
+  ]
+}
