@@ -227,6 +227,12 @@ def _clamp_int(raw_value: str, default: int, lo: int, hi: int, name: str) -> int
 
 QUALITY = _clamp_int(os.environ.get("IMG_QUALITY", "25"), 25, 1, 100, "IMG_QUALITY")
 MAX_WIDTH = _clamp_int(os.environ.get("IMG_MAX_WIDTH", "700"), 700, 50, 10000, "IMG_MAX_WIDTH")
+# [توحيد مقياس صفحات الفصل] صفحات الفصل الواحد قد تأتي بعروض أصلية مختلفة؛ التطبيق يعرض كل صورة بعرض
+# الحاوية الكامل، فتتمدّد الأضيق وتبدو لوحة/إطار واحد ممتد بين صورتين متتاليتين بمقياس مختلف (إحداهما "مائلة").
+# عند التفعيل (الافتراضي) تُحشى الصور الأضيق بهوامش بلون خلفيتها لتصل لعرض مرجعي مشترك قبل الضغط،
+# فيبقى المقياس الأصلي كما عُرض في الموقع. IMG_NORMALIZE_WIDTH=0 للرجوع للسلوك السابق.
+NORMALIZE_WIDTH = os.environ.get("IMG_NORMALIZE_WIDTH", "1").strip().lower() not in ("0", "false", "no", "off")
+OUTLIER_WIDTH_RATIO = 1.5  # صورة أعرض من 1.5× الوسيط (شعار/بانر) تُصغَّر للعرض المرجعي بدل أن تُصغِّر بقية الصفحات
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
 CDN_BASE = os.environ.get("CDN_BASE", "")
@@ -2113,7 +2119,48 @@ async def open_and_collect(browser, chapter_url: str, attempt: int, profile: dic
 
 # ---------------------------- منطق مشترك (يعمل مهما كان المسار) ----------------------------
 
-def compress_image(raw_bytes: bytes, max_width: int, quality: int, img_format: str = "webp") -> bytes:
+def _image_width_only(raw_bytes: bytes) -> int:
+    """عرض الصورة من الترويسة فقط (بلا فك ترميز كامل)؛ 0 عند الفشل."""
+    try:
+        with Image.open(BytesIO(raw_bytes)) as im:
+            return int(im.width)
+    except Exception:
+        return 0
+
+
+def _reference_width(widths: list[int]) -> int:
+    """العرض المرجعي المشترك للفصل: أكبر عرض غير شاذ (≤ 1.5× الوسيط)؛ 0 إن لم يُعرف."""
+    ws = sorted(w for w in widths if w > 0)
+    if not ws:
+        return 0
+    median = ws[len(ws) // 2]
+    normal = [w for w in ws if w <= median * OUTLIER_WIDTH_RATIO]
+    return max(normal) if normal else median
+
+
+def _edge_background_color(img: Image.Image):
+    """لون خلفية الصفحة من حوافها (الأكثر تكرارًا بين عينات الحواف) لحشو الهوامش بلون مطابق (أبيض غالبًا)."""
+    w, h = img.size
+    pts = [(0, 0), (w - 1, 0), (0, h // 2), (w - 1, h // 2), (0, h - 1), (w - 1, h - 1)]
+    cols = [img.getpixel(pt) for pt in pts]
+    return Counter(cols).most_common(1)[0][0]
+
+
+def _normalize_to_width(img: Image.Image, ref_w: int) -> Image.Image:
+    if ref_w <= 0 or img.width == ref_w:
+        return img
+    if img.width > ref_w:  # شاذة العرض: تُصغَّر لتطابق العرض المرجعي
+        new_h = max(1, round(img.height * ref_w / img.width))
+        return img.resize((ref_w, new_h), Image.LANCZOS)
+    if img.mode not in ("RGB", "RGBA"):
+        img = img.convert("RGB")
+    canvas = Image.new(img.mode, (ref_w, img.height), _edge_background_color(img))
+    canvas.paste(img, ((ref_w - img.width) // 2, 0))  # توسيط كما يعرضها الموقع الأصلي
+    return canvas
+
+
+def compress_image(raw_bytes: bytes, max_width: int, quality: int, img_format: str = "webp",
+                   ref_width: int = 0) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
 
     if img.mode == "P":
@@ -2122,6 +2169,9 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int, img_format: s
         img = img.convert("RGB")
     elif img.mode == "LA":
         img = img.convert("RGBA")
+
+    if ref_width:
+        img = _normalize_to_width(img, ref_width)
 
     scale = 1.0
     if img.width > max_width:
@@ -2412,10 +2462,23 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
     icon_skipped: list[int] = []          # أيقونات/صور صغيرة تُتخطّى (ليست صفحات فصل)
     compress_sem = asyncio.Semaphore(COMPRESS_WORKERS)
 
+    raw_store: dict[int, tuple[Path, str]] = {}  # عند NORMALIZE_WIDTH: تُحفظ الأصول على القرص المرحلي (لا الذاكرة) لحين معرفة عروض كل الفصل
+    ref_width_holder = {"w": 0}
+    raw_spill_dir = staging_root / "raw"
+
+    def _spill_raw(i: int, raw: bytes, img_url: str) -> None:
+        raw_spill_dir.mkdir(parents=True, exist_ok=True)
+        pth = raw_spill_dir / f"{i:03d}.bin"
+        pth.write_bytes(raw)
+        raw_store[i] = (pth, img_url)
+
     async def _compress_save(i: int, raw: bytes, img_url: str) -> None:
+        if NORMALIZE_WIDTH and not ref_width_holder.get("done"):
+            _spill_raw(i, raw, img_url)  # يُضغط لاحقًا بعد اكتمال التنزيل وحساب العرض المرجعي
+            return
         async with compress_sem:
             try:
-                compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
+                compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT, ref_width_holder["w"])
                 filename = f"{i:03d}.{IMG_FORMAT}"
                 (chapter_dir / filename).write_bytes(compressed)
                 saved_paths.append(f"{manga_id}/ch-{chapter_num}/{filename}")
@@ -2451,6 +2514,10 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
         for i in failed_indices:
             img_url = image_urls[i - 1]
             raw, reason = await download(img_url)
+            if raw and NORMALIZE_WIDTH:
+                _spill_raw(i, raw, img_url)  # يُضغط لاحقًا ضمن مرحلة التوحيد
+                await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
+                continue
             if raw:
                 try:
                     compressed = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT)
@@ -2468,6 +2535,27 @@ async def process_chapter(browser, chapter_url: str, index: int, total: int, pro
             await asyncio.sleep(IMG_FETCH_DELAY_MS / 1000)
         if still_failed:
             print(f"  ❌ تعذّر تحميل {len(still_failed)} صورة نهائيًا: {still_failed}")
+
+    if NORMALIZE_WIDTH and raw_store:
+        widths = {i: _image_width_only(pth.read_bytes()) for i, (pth, _u) in raw_store.items()}
+        ref_w = _reference_width(list(widths.values()))
+        ref_width_holder["w"] = ref_w
+        ref_width_holder["done"] = True
+        distinct = sorted(set(w for w in widths.values() if w > 0))
+        if len(distinct) > 1:
+            print(f"  📐 عروض أصلية مختلفة بين الصفحات {distinct[:8]} — توحيد المقياس على عرض مرجعي {ref_w}px بحشو الهوامش")
+        else:
+            print(f"  📐 عروض الصفحات متطابقة ({ref_w}px) — لا حاجة للتوحيد")
+        pending = dict(raw_store)
+        raw_store.clear()
+        async def _compress_spilled(i: int, pth: Path, u: str) -> None:
+            await _compress_save(i, pth.read_bytes(), u)  # القراءة عند الدور فقط — فلا تُحمَّل كل الأصول معًا
+            try:
+                pth.unlink()
+            except OSError:
+                pass
+        await asyncio.gather(*[_compress_spilled(i, pth, u) for i, (pth, u) in pending.items()])
+        saved_paths.sort()
 
     if context:
         await context.close()
@@ -2605,6 +2693,7 @@ async def main():
             # خطأ كتابة/دفع لا يجوز أن يُسقط بقية الفصول؛ الفصل يبقى في results ويلتقطه الدفع النهائي
             print(f"  ⚠️ خطأ أثناء تسجيل/دفع نتيجة الفصل (يُتابَع، والدفع النهائي سيعيد المحاولة): {type(e).__name__}: {e}")
 
+    
     async def _handle_result_inner(url, result):
         nonlocal pushed_upto
         if result is None:
