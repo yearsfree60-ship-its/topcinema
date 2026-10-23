@@ -1,0 +1,786 @@
+{
+  "manga_id": "comicland.org__drama-queens-official",
+  "chapter_num": "12",
+  "manga_title": "Drama Queens (Official)",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MALL",
+          "confidence": 0.995,
+          "text_ar": "متجر"
+        },
+        {
+          "text": "WOOSH 小 5",
+          "confidence": 0.341,
+          "text_ar": "ووووش"
+        },
+        {
+          "text": "O MANGADISTRICT.COM",
+          "confidence": 0.248,
+          "text_ar": "موقع مانجا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "AHHHHHH!",
+          "confidence": 0.946,
+          "text_ar": "آآآه!"
+        },
+        {
+          "text": "EEEEEEKK!",
+          "confidence": 0.945,
+          "text_ar": "يييييك!"
+        },
+        {
+          "text": "HUH? WHO ARE YOU?",
+          "confidence": 0.977,
+          "text_ar": "هاه؟ من أنتِ؟"
+        },
+        {
+          "text": "HI, JAE-WOO~",
+          "confidence": 0.926,
+          "text_ar": "أهلاً، جاي-وو~"
+        },
+        {
+          "text": "HELLO, EUN-HEE.",
+          "confidence": 0.988,
+          "text_ar": "مرحباً، إيون-هي."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "QUEENS DRAMA",
+          "confidence": 0.98,
+          "text_ar": "دراما كوينز"
+        },
+        {
+          "text": "Story : Shrinell Art：QRQ",
+          "confidence": 0.921,
+          "text_ar": "القصة: شري نيل | الرسم: QRQ"
+        },
+        {
+          "text": "WHY ARE YOU HERE ALREADY?",
+          "confidence": 0.946,
+          "text_ar": "لماذا أنتِ هنا مبكراً هكذا؟"
+        },
+        {
+          "text": "I ALWAYS ARRIVE 10 MINUTES EARLY.",
+          "confidence": 0.948,
+          "text_ar": "أصل دائماً قبل الموعد بعشر دقائق."
+        },
+        {
+          "text": "NOT THE ANSWER OKSO I WAS LOOKING FOR.. TWASLOOKINGFOR.. 1",
+          "confidence": 0.135,
+          "text_ar": "ليست هذه الإجابة التي كنت أبحث عنها..."
+        },
+        {
+          "text": "HOWABOUT...",
+          "confidence": 0.943,
+          "text_ar": "ماذا عن..."
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.993,
+          "text_ar": "موقع مانجا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I WAS JUST SO EXCITED TO SEE YOU~!",
+          "confidence": 0.952,
+          "text_ar": "كنت متحمسة جداً لرؤيتك~!"
+        },
+        {
+          "text": "YES~ THAT'S IT!",
+          "confidence": 0.948,
+          "text_ar": "نعم~ هذا هو!"
+        },
+        {
+          "text": "Oh, she is so cute",
+          "confidence": 0.927,
+          "text_ar": "أوه، إنها لطيفة للغاية"
+        },
+        {
+          "text": "WHAT SHOULD WE DO? YOU HAVE ANY PLANS?",
+          "confidence": 0.934,
+          "text_ar": "ماذا سنفعل؟ هل لديك أي خطط؟"
+        },
+        {
+          "text": "NO, NOT REALLY.",
+          "confidence": 0.88,
+          "text_ar": "لا، ليس حقاً."
+        },
+        {
+          "text": "HUH? WHY NOT?",
+          "confidence": 0.966,
+          "text_ar": "هاه؟ لما لا؟"
+        },
+        {
+          "text": "ASLONG AS I'M WITH YOU, ANYTHING IS FINE.",
+          "confidence": 0.954,
+          "text_ar": "طالما أنني معك، فكل شيء على ما يرام."
+        },
+        {
+          "text": "LET'S GO EAT FIRST~",
+          "confidence": 0.967,
+          "text_ar": "لنأكل أولاً~"
+        },
+        {
+          "text": "YAY-",
+          "confidence": 0.984,
+          "text_ar": "ييه~"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "OO2A0",
+          "confidence": 0.382,
+          "text_ar": "ممم"
+        },
+        {
+          "text": "SHALL WEORDER THIS SET?",
+          "confidence": 0.953,
+          "text_ar": "هل نطلب هذه الوجبة؟"
+        },
+        {
+          "text": "YEAH SURE~ HEHE~",
+          "confidence": 0.986,
+          "text_ar": "بالتأكيد~ هيهي~"
+        },
+        {
+          "text": "OH,I'M SO FULL-",
+          "confidence": 0.937,
+          "text_ar": "أوه، لقد شبعت تماماً~"
+        },
+        {
+          "text": "THAT WAS MUCH MORE THAN IEXPECTED.",
+          "confidence": 0.972,
+          "text_ar": "كان ذلك أكثر بكثير مما توقعت."
+        },
+        {
+          "text": "IF YOU ARE DONE.. LET'S RUN FOR IT ON 3... LO·",
+          "confidence": 0.205,
+          "text_ar": "إذا انتهيت... فلنهرب عند العد لثلاثة... واحد..."
+        },
+        {
+          "text": "This is expensive place. an ☆ 心 E",
+          "confidence": 0.116,
+          "text_ar": "هذا مكان باهظ الثمن."
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.991,
+          "text_ar": "ماذا؟!ન"
+        },
+        {
+          "text": "I'MJOKING~ I'LL PAYFOR IT.",
+          "confidence": 0.952,
+          "text_ar": "أنا أمزح~ سأدفع الحساب."
+        },
+        {
+          "text": "I'LL BUYCOFFEE AND ANYTHING ELSE YOU WANT...",
+          "confidence": 0.902,
+          "text_ar": "سأشتري لك القهوة وكل ما تريده..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "OKAY! I WILL GET SOMETHING REALLYEXPENSIVE!",
+          "confidence": 0.965,
+          "text_ar": "حسناً! سأطلب شيئاً باهظ الثمن حقاً!"
+        },
+        {
+          "text": "…SHOULD WE GO NOW?",
+          "confidence": 0.915,
+          "text_ar": "...هل نذهب الآن؟"
+        },
+        {
+          "text": "THANK YOU-",
+          "confidence": 0.963,
+          "text_ar": "شكراً لك-"
+        },
+        {
+          "text": "VrOCO",
+          "confidence": 0.421,
+          "text_ar": "صوت"
+        },
+        {
+          "text": "I FORGOT MY DISCOUNT COUPON (",
+          "confidence": 0.882,
+          "text_ar": "لقد نسيت قسيمة الخصم الخاصة بي :("
+        },
+        {
+          "text": "WE CAN USE IT NEXT TIME~",
+          "confidence": 0.949,
+          "text_ar": "يمكننا استخدامها في المرة القادمة~"
+        },
+        {
+          "text": "SOB",
+          "confidence": 0.974,
+          "text_ar": "شهقة"
+        },
+        {
+          "text": "YOU ARE ASKING ME OUT AGAIN?",
+          "confidence": 0.937,
+          "text_ar": "أتدعوني للخروج مرة أخرى؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HMM,HMM-",
+          "confidence": 0.964,
+          "text_ar": "همم، همم-"
+        },
+        {
+          "text": "P TAP",
+          "confidence": 0.612,
+          "text_ar": "ربت"
+        },
+        {
+          "text": "MY HANDSFEEL SOCOLD- GRAB-",
+          "confidence": 0.905,
+          "text_ar": "يداي باردتان جداً- إمساك-"
+        },
+        {
+          "text": "Hehe",
+          "confidence": 0.902,
+          "text_ar": "هيهي"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.956,
+          "text_ar": "موقع مانجا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "BUT YOURSARE SO WARM~",
+          "confidence": 0.95,
+          "text_ar": "لكن يداك دافئتان جداً~"
+        },
+        {
+          "text": "AH~ YOUR HANDS VOURHANDS ARE COLD.",
+          "confidence": 0.914,
+          "text_ar": "آه~ يداك، يداك باردتان."
+        },
+        {
+          "text": "How can she be so cute?!",
+          "confidence": 0.972,
+          "text_ar": "كيف يمكن أن تكون لطيفة هكذا؟!"
+        },
+        {
+          "text": "SO WHY DID YOU ASK ME OUT ONA DATE?",
+          "confidence": 0.936,
+          "text_ar": "إذاً لماذا دعوتني في موعد؟"
+        },
+        {
+          "text": "IREALLY MISSED YOU.",
+          "confidence": 0.969,
+          "text_ar": "لقد اشتقت إليك حقاً."
+        },
+        {
+          "text": "MMPH!!",
+          "confidence": 0.995,
+          "text_ar": "ممف!!"
+        },
+        {
+          "text": "I LIKE TO SPIT OUT THE FIRST SIP TOO, HAHA.",
+          "confidence": 0.945,
+          "text_ar": "أنا أحب بصق الرشفة الأولى أيضاً، هاها."
+        },
+        {
+          "text": "公 FFT 88'",
+          "confidence": 0.187,
+          "text_ar": "صوت"
+        },
+        {
+          "text": "INCA DVFAE",
+          "confidence": 0.593,
+          "text_ar": "مقهى"
+        },
+        {
+          "text": "WHY ARE YOU SO SMOOTH TODAY?",
+          "confidence": 0.942,
+          "text_ar": "لماذا تبدو بارعاً في الكلام اليوم؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IS THIS BECAUSE NA-RI DUMPED YOU?",
+          "confidence": 0.982,
+          "text_ar": "هل هذا لأن ناري قد رمتك؟"
+        },
+        {
+          "text": "WELL, SHE DID BREAK MY NOSE WITH HER HEAD-",
+          "confidence": 0.887,
+          "text_ar": "حسنًا، لقد كسرت أنفي برأسها-"
+        },
+        {
+          "text": "EMIYA COPFEE",
+          "confidence": 0.888,
+          "text_ar": "قهوة إيميا"
+        },
+        {
+          "text": "SO YOU WERE WITH HER LAST FRIDA...",
+          "confidence": 0.902,
+          "text_ar": "إذن كنت معها الجمعة الماضي..."
+        },
+        {
+          "text": "BUT DIDN'TCALL ME UNTIL THE NEXTMORNING~? 333",
+          "confidence": 0.869,
+          "text_ar": "لكنك لم تتصل بي حتى صباح اليوم التالي~؟"
+        },
+        {
+          "text": "VAI",
+          "confidence": 0.535,
+          "text_ar": "حسناً... هذا... أمم..."
+        },
+        {
+          "text": "WELL... THAT...UM...",
+          "confidence": 0.92,
+          "text_ar": "همم~ هذا غريب~"
+        },
+        {
+          "text": "HMM~ THAT'S ODD~",
+          "confidence": 0.98,
+          "text_ar": "هاها."
+        },
+        {
+          "text": "Haha.",
+          "confidence": 0.96,
+          "text_ar": "...حسناً، هذا..."
+        },
+        {
+          "text": "...WELL, THAT'S...",
+          "confidence": 0.822,
+          "text_ar": "موقع مانجا ديستريكت"
+        },
+        {
+          "text": "OKANSASUAI",
+          "confidence": 0.735,
+          "text_ar": "موقع مانجا ديستريكت"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.991,
+          "text_ar": "موقع مانجا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I WAS SORRY FOR LEAVING YOU LIKE THAT.",
+          "confidence": 0.937,
+          "text_ar": "كنت آسفاً لتركتك هكذا."
+        },
+        {
+          "text": "ANDIWANTED TO SEE YOU. I'M SORRY IF I MADE YOU UPSET.",
+          "confidence": 0.912,
+          "text_ar": "وأردت رؤيتك. أنا آسف إذا كنت قد أزعجتك."
+        },
+        {
+          "text": "HUH!",
+          "confidence": 0.993,
+          "text_ar": "هاه!"
+        },
+        {
+          "text": "HMM??",
+          "confidence": 0.995,
+          "text_ar": "همم؟؟"
+        },
+        {
+          "text": "Yes... That was good.",
+          "confidence": 0.944,
+          "text_ar": "نعم... كان ذلك جيداً."
+        },
+        {
+          "text": "PFFFT",
+          "confidence": 0.999,
+          "text_ar": "بفففت"
+        },
+        {
+          "text": "OKAY- ISEE!",
+          "confidence": 0.992,
+          "text_ar": "حسناً- أرى ذلك!"
+        },
+        {
+          "text": "LET'S GO FOR A WALK. IT'S SO NICE OUT.",
+          "confidence": 0.907,
+          "text_ar": "لنذهب في نزهة. الجو لطيف حقاً في الخارج."
+        },
+        {
+          "text": "OKAY.",
+          "confidence": 0.985,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "小 Y 酒",
+          "confidence": 0.075,
+          "text_ar": "حديقة"
+        },
+        {
+          "text": "M 流 园",
+          "confidence": 0.08,
+          "text_ar": "حديقة"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "There's a fish?",
+          "confidence": 0.968,
+          "text_ar": "هل توجد سمكة؟"
+        },
+        {
+          "text": "SQUISH",
+          "confidence": 0.966,
+          "text_ar": "ضغط"
+        },
+        {
+          "text": "It would be a nice punching bag- PI",
+          "confidence": 0.581,
+          "text_ar": "ستكون كيس ملاكمة رائعاً-"
+        },
+        {
+          "text": "MULTIROOM!",
+          "confidence": 0.99,
+          "text_ar": "غرفة متعددة الاستخدامات!"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.997,
+          "text_ar": "هاه؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "CAN WE GO THERE? WE CAN DO A LOT OF THINGS.",
+          "confidence": 0.954,
+          "text_ar": "هل يمكننا الذهاب إلى هناك؟ يمكننا فعل الكثير من الأشياء."
+        },
+        {
+          "text": "I HAVEN'T BEEN THERE, DON'T PEOPLE GO THERE TO DO... LEWD THINGS?",
+          "confidence": 0.917,
+          "text_ar": "لم أذهب إلى هناك من قبل، ألا يذهب الناس إلى هناك لفعل... أشياء بذيئة؟"
+        },
+        {
+          "text": "YOU MIGHT GET SUED FOR SAYING THAT.",
+          "confidence": 0.954,
+          "text_ar": "قد يتم مقاضاتك على قول هذا."
+        },
+        {
+          "text": "OH, SORRY.",
+          "confidence": 0.99,
+          "text_ar": "أوه، آسف."
+        },
+        {
+          "text": "Hehe IWILL DO LEWD THINGS THOUGH~",
+          "confidence": 0.927,
+          "text_ar": "هيهي سأفعل أشياء بذيئة مع ذلك~"
+        },
+        {
+          "text": "ICE C",
+          "confidence": 0.883,
+          "text_ar": "آيس كريم"
+        },
+        {
+          "text": "She will?!",
+          "confidence": 0.939,
+          "text_ar": "ستفعلها؟!s"
+        },
+        {
+          "text": "Yes!",
+          "confidence": 0.98,
+          "text_ar": "نعم!"
+        },
+        {
+          "text": "LET'S GO~ IT WILL BE FUN~",
+          "confidence": 0.95,
+          "text_ar": "لنذهب~ سيكون الأمر ممتعاً~"
+        },
+        {
+          "text": "WELCOME~ HOW MANYOF YOU?",
+          "confidence": 0.947,
+          "text_ar": "أهلاً بك~ كم عدد أفرادكم؟"
+        },
+        {
+          "text": "WI-Fi A",
+          "confidence": 0.682,
+          "text_ar": "واي فاي"
+        },
+        {
+          "text": "JUST THE 2 OF US.",
+          "confidence": 0.92,
+          "text_ar": "نحن اثنان فقط."
+        },
+        {
+          "text": "AF V",
+          "confidence": 0.136,
+          "text_ar": "منطقة"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "IT'S BIGGER THANITHOUGHT-",
+          "confidence": 0.983,
+          "text_ar": "إنها أكبر مما ظننت-"
+        },
+        {
+          "text": "IT'S SO CLEAN TOO.",
+          "confidence": 0.967,
+          "text_ar": "وهي نظيفة جداً أيضاً."
+        },
+        {
+          "text": "WHAT SHOULD WEDO? WATCH A MOVIE?",
+          "confidence": 0.946,
+          "text_ar": "ماذا سنفعل؟ أنشاهد فيلماً؟"
+        },
+        {
+          "text": "LET'S SING FIRST!",
+          "confidence": 0.984,
+          "text_ar": "لنغنِ أولاً!"
+        },
+        {
+          "text": "I'm not really good at it..",
+          "confidence": 0.923,
+          "text_ar": "أنا لست بارعة حقاً في الغناء.."
+        },
+        {
+          "text": "What song should choose... wW",
+          "confidence": 0.539,
+          "text_ar": "أي أغنية يجب أن أختار..."
+        },
+        {
+          "text": "A SONG?",
+          "confidence": 0.921,
+          "text_ar": "أغنية؟"
+        },
+        {
+          "text": "CAN YOU SING? YOU LOOK LIKE A SINGER~",
+          "confidence": 0.891,
+          "text_ar": "أيمكنك الغناء؟ تبدين وكأنك مغنية~"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.998,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.996,
+          "text_ar": "موقع مانجا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "OHYES~ I AM THE BEST~",
+          "confidence": 0.94,
+          "text_ar": "أوه نعم~ أنا الأفضل~"
+        },
+        {
+          "text": "REALLY~? HAHAHA~",
+          "confidence": 0.984,
+          "text_ar": "حقاً~؟ هاهاها~"
+        },
+        {
+          "text": "FINE! I WILL GO FIRST~",
+          "confidence": 0.89,
+          "text_ar": "حسناً! سأبدأ أولاً~"
+        },
+        {
+          "text": "WHAT?! IS SHE REALLY SINGING THIS?",
+          "confidence": 0.973,
+          "text_ar": "ماذا؟! أهي حقاً تغني هذه الأغنية؟"
+        },
+        {
+          "text": "∞∞∞∞∞∞ x∞∞∞∞∞x ∞∞∞∞∞∞x ∞∞∞∞∞∞∞∞∞∞",
+          "confidence": 0.558,
+          "text_ar": "موسيقى"
+        },
+        {
+          "text": "N Mwah",
+          "confidence": 0.518,
+          "text_ar": "قبلة"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "HEY...ISHOULD FOCUS ON SINGING. IT'S AN IMPORTANT PART.",
+          "confidence": 0.909,
+          "text_ar": "مهلاً... يجب أن أركز على الغناء. إنه جزء مهم."
+        },
+        {
+          "text": "YOU DON'T WANT TO DO IT?",
+          "confidence": 0.909,
+          "text_ar": "ألا تريد فعل ذلك؟"
+        },
+        {
+          "text": "HUH? WHAT..?",
+          "confidence": 0.927,
+          "text_ar": "هاه؟ ماذا..؟"
+        },
+        {
+          "text": "Mwah MMM",
+          "confidence": 0.97,
+          "text_ar": "قُبلة"
+        },
+        {
+          "text": "AHHH-",
+          "confidence": 0.995,
+          "text_ar": "آآه-"
+        },
+        {
+          "text": "HAA...",
+          "confidence": 0.852,
+          "text_ar": "هاه..."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "WHAT IF WE GET CAUGHT? WE'LL BE IN A LOT OF TROUBLE..",
+          "confidence": 0.914,
+          "text_ar": "ماذا لو تم القبض علينا؟ سنواجه مشكلة كبيرة.."
+        },
+        {
+          "text": "LET'S NOT GET CAUGHT THEN~ SQUEEZE",
+          "confidence": 0.964,
+          "text_ar": "إذن دعنا لا نُقبض علينا~ ضغط"
+        },
+        {
+          "text": "I AM NOT HERE TO SING...",
+          "confidence": 0.89,
+          "text_ar": "أنا لست هنا لأغني..."
+        },
+        {
+          "text": "I WANT TO DO A LOT OF THINGS WITH YOU.",
+          "confidence": 0.927,
+          "text_ar": "أريد أن أفعل الكثير من الأشياء معك."
+        },
+        {
+          "text": "ISN'T THIS WHAT YOU WANTED?",
+          "confidence": 0.963,
+          "text_ar": "أليس هذا ما أردته؟"
+        },
+        {
+          "text": "HAHA...",
+          "confidence": 0.951,
+          "text_ar": "هاها..."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "Wow~ JAE-WOO~",
+          "confidence": 0.719,
+          "text_ar": "واو~ جاي-وو~"
+        },
+        {
+          "text": "LOOKS LIKE YOU WERE BACKED UP~",
+          "confidence": 0.954,
+          "text_ar": "يبدو أنك كنت متحمساً جداً~"
+        },
+        {
+          "text": "OR IS IT BECAUSE OF NA-RI?",
+          "confidence": 0.913,
+          "text_ar": "أم أن هذا بسبب ناري؟"
+        },
+        {
+          "text": "I WANT TO KNOW WHAT NA-RI DID TO YOU LAST FRIDAY...",
+          "confidence": 0.867,
+          "text_ar": "أريد أن أعرف ماذا فعلت بك ناري الجمعة الماضي..."
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.994,
+          "text_ar": "موقع مانجا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "IAM SO CURIOUS~",
+          "confidence": 0.871,
+          "text_ar": "أنا فضولية حقاً~"
+        },
+        {
+          "text": "CAN YOU TELL ME?",
+          "confidence": 0.941,
+          "text_ar": "أيمكنك إخباري؟"
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.989,
+          "text_ar": "يتبع"
+        }
+      ]
+    }
+  ]
+}
