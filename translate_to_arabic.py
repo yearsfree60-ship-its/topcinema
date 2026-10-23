@@ -66,6 +66,12 @@ GEMINI_THINKING_LEVEL = os.environ.get("GEMINI_THINKING_LEVEL", "low").strip().l
 # [تسريع] فصل طويل يُقسَّم لدفعات تُترجَم بالتوازي (كل دفعة تأخذ سياق آخر جمل الدفعة السابقة
 # للاتساق)؛ الفصول العادية (<= الحد) تبقى بنداء واحد كاملًا كما كانت.
 GEMINI_CHUNK_SIZE = max(40, int(os.environ.get("GEMINI_CHUNK_SIZE", "140")))
+# [إزالة العلامة المائية/اسم الموقع] اسم الموقع يظهر عادةً بكل صفحة تقريبًا ويلتقطه OCR كجملة فيُترجَم ويتكرر بملف
+# الترجمة. تُحذَف هذه الجمل قبل الترجمة ومن الملفات الناتجة: (أ) تلقائيًا — جملة قصيرة (≤4 كلمات) تتكرر (بتطابق
+# يتسامح مع التباسات OCR الشائعة) بـ≥55% من صفحات الفصل وبـ≥5 صفحات، أو نص يشبه نطاق موقع (www/.com/…) يتكرر بصفحتين فأكثر؛ (ب) يدويًا
+# عبر WATERMARK_TEXTS (نصوص مفصولة بفاصلة، تُحذَف أي جملة تحتويها بعد التطبيع). WATERMARK_FILTER=0 للتعطيل.
+WATERMARK_FILTER = os.environ.get("WATERMARK_FILTER", "1").strip().lower() not in ("0", "false", "no", "off")
+WATERMARK_TEXTS = [t.strip() for t in re.split(r"[,،;\n]+", os.environ.get("WATERMARK_TEXTS", "")) if t.strip()]
 _use_thinking = True
 _rate_lock = None
 GEMINI_MAX_RETRIES = int(os.environ.get("GEMINI_MAX_RETRIES", "3"))
@@ -199,6 +205,72 @@ _SYSTEM_INSTRUCTION = (
 )
 
 
+_WM_NORM_RE = re.compile(r"[\W_]+", re.UNICODE)
+_WM_DOMAIN_RE = re.compile(r"(www\.|https?:|\.(com|net|org|to|io|me|co|cc|xyz|site|top|app|info)\b)", re.IGNORECASE)
+
+
+_WM_OCR_CONFUSIONS = str.maketrans({"0": "o", "1": "l", "i": "l", "|": "l", "5": "s", "8": "b"})
+
+
+def _wm_norm(text: str) -> str:
+    """تطبيع للمقارنة: حروف/أرقام صغيرة بلا رموز، مع توحيد التباسات OCR الشائعة (0↔O، 1/I↔L، 5↔S، 8↔B) فتتطابق
+    "AZ0RAFLY" و"AZORAFLY" تمامًا — بلا تطابق تقريبي عام، كي لا تُدمَج جمل حوار مختلفة بحرف واحد (Line 1/Line 2)."""
+    return _WM_NORM_RE.sub("", (text or "").lower()).replace("rn", "m").replace("vv", "w").translate(_WM_OCR_CONFUSIONS)
+
+
+def _strip_watermarks(pages: list[dict]) -> tuple[list[dict], int]:
+    """يحذف جمل العلامة المائية/اسم الموقع (راجع تعليق WATERMARK_FILTER). يُعيد (pages جديدة، عدد المحذوف)؛
+    بنية الصفحات محفوظة (صفحة تفرغ جملها تبقى بقائمة جمل فارغة)."""
+    if not WATERMARK_FILTER:
+        return pages, 0
+    manual = [_wm_norm(t) for t in WATERMARK_TEXTS if len(_wm_norm(t)) >= 3]
+    # تجميع الجمل المتشابهة (تسامح مع أخطاء OCR) وعدّ الصفحات المختلفة لكل مجموعة
+    clusters: list[dict] = []   # {"rep": norm, "pages": set, "domain": bool}
+    by_rep: dict[str, dict] = {}
+    page_count = sum(1 for p in pages if p.get("sentences"))
+    for pe in pages:
+        for sent in pe.get("sentences", []):
+            raw = sent.get("text", "")
+            n = _wm_norm(raw)
+            if len(n) < 3 or len(raw.split()) > 4:
+                continue
+            c = by_rep.get(n)
+            if c is None:
+                c = by_rep[n] = {"rep": n, "pages": set(), "domain": False}
+                clusters.append(c)
+            c["pages"].add(pe["page"])
+            c["domain"] = c["domain"] or bool(_WM_DOMAIN_RE.search(raw))
+    min_pages = max(5, int(0.55 * page_count + 0.999))
+    wm_reps = {c["rep"] for c in clusters
+               if len(c["pages"]) >= min_pages or (c["domain"] and len(c["pages"]) >= 2)}
+
+    def is_wm(text: str) -> bool:
+        n = _wm_norm(text)
+        if len(n) < 3:
+            return False
+        if any(m in n for m in manual):
+            return True
+        if len(text.split()) > 4:
+            return False
+        return n in wm_reps
+
+    removed = 0
+    out: list[dict] = []
+    for pe in pages:
+        kept = []
+        for sent in pe.get("sentences", []):
+            if is_wm(sent.get("text", "")):
+                removed += 1
+            else:
+                kept.append(sent)
+        out.append({**pe, "sentences": kept})
+    if removed and wm_reps:
+        print(f"  🧽 [ترجمة] حُذفت {removed} جملة علامة مائية/اسم موقع متكرر: {sorted(set(wm_reps))[:5]}")
+    elif removed:
+        print(f"  🧽 [ترجمة] حُذفت {removed} جملة علامة مائية (حسب WATERMARK_TEXTS)")
+    return out, removed
+
+
 def _flatten_chapter_sentences(pages: list[dict]) -> list[dict]:
     """يُحوِّل بنية pages (page_json الحالية: [{page, sentences:[{text,...}]}])
     إلى قائمة مسطَّحة [{page, index, text}] — index هنا 1-based ضمن صفحته
@@ -320,7 +392,7 @@ async def translate_chapter_to_arabic(chapter_result: dict, output_dir: Path, ou
     if not translation_active():
         return []
 
-    pages = chapter_result.get("pages") or []
+    pages, _wm_removed = _strip_watermarks(chapter_result.get("pages") or [])
     items = _flatten_chapter_sentences(pages)
     if not items:
         return []
