@@ -1,0 +1,785 @@
+{
+  "manga_id": "comicland.org__drama-queens-official",
+  "chapter_num": "22",
+  "manga_title": "Drama Queens (Official)",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "IAM NOT TAMNOT FOLLOWINGTHEM FOLLOWING THEM..",
+          "confidence": 0.891,
+          "text_ar": "أنا لا أتبعهما..!"
+        },
+        {
+          "text": "I HAVE AN APPOINTMENT THERE TOO-",
+          "confidence": 0.954,
+          "text_ar": "لدي موعد هناك أيضاً-"
+        },
+        {
+          "text": "COTV",
+          "confidence": 0.747,
+          "text_ar": "صوت ضوضاء"
+        },
+        {
+          "text": "1111 CON",
+          "confidence": 0.415,
+          "text_ar": "صوت حركة"
+        },
+        {
+          "text": "Oh ISHOULD WAIT A BIT SO THAT THEY WOULDN'T SEE ME.",
+          "confidence": 0.694,
+          "text_ar": "أه، يجب أن أنتظر قليلاً حتى لا يراني أحد."
+        },
+        {
+          "text": "I am GA-EUL.",
+          "confidence": 0.975,
+          "text_ar": "أنا غا-ؤول."
+        },
+        {
+          "text": "I was on my way to a blind date.",
+          "confidence": 0.962,
+          "text_ar": "كنت في طريقي إلى موعد مدبر."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "CCT",
+          "confidence": 0.937,
+          "text_ar": "صوت تشتيت"
+        },
+        {
+          "text": "And I ran into them having a secret meeting.",
+          "confidence": 0.946,
+          "text_ar": "وإذا بي أصادفهم في اجتماع سري."
+        },
+        {
+          "text": "And they are in the room right next to mine.",
+          "confidence": 0.917,
+          "text_ar": "وهما في الغرفة المجاورة لغرفتي مباشرة."
+        },
+        {
+          "text": "What kind of relationship are they in?",
+          "confidence": 0.93,
+          "text_ar": "يا ترى ما طبيعة علاقتهما؟"
+        },
+        {
+          "text": "BITCH SIT DOWN!",
+          "confidence": 0.965,
+          "text_ar": "أيتها اللعينة اجلسي!"
+        },
+        {
+          "text": "SORRY SHE IS BITCRAZY.",
+          "confidence": 0.987,
+          "text_ar": "عذراً إنها مجنونة بعض الشيء."
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.987,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "I shall fi  nd the answer.",
+          "confidence": 0.934,
+          "text_ar": "سأجد الإجابة بنفسي."
+        },
+        {
+          "text": "QUEENS DRAMA *",
+          "confidence": 0.474,
+          "text_ar": "دراما كوينز *"
+        },
+        {
+          "text": "Story : Shrinell Art :QRQ",
+          "confidence": 0.91,
+          "text_ar": "القصة: شري نيل | الرسم: QRQ"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WHY ARE YOU SITTING SO FAR AWAY?!",
+          "confidence": 0.949,
+          "text_ar": "لماذا تجلس بعيداً هكذا؟!"
+        },
+        {
+          "text": "OKAY SORRY. I LIED ABOUT EATING WITH THE OTHERS.",
+          "confidence": 0.951,
+          "text_ar": "حسناً آسف. لقد كذبت بشأن تناول الطعام مع البقية."
+        },
+        {
+          "text": "I'MBY MYSELF.",
+          "confidence": 0.97,
+          "text_ar": "أنا وحدي."
+        },
+        {
+          "text": "Y X业 7 7",
+          "confidence": 0.154,
+          "text_ar": "صوت همهمة"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "WHAT IS WRONG WITH ME WANTING TO SEE YOU?",
+          "confidence": 0.965,
+          "text_ar": "ما العيب في رغبتي برؤيتك؟"
+        },
+        {
+          "text": "YOU DIDN'T HAVE TO LIE ABOUT OTHERS..",
+          "confidence": 0.952,
+          "text_ar": "لم تكن بحاجة للكذب بشأن الآخرين.."
+        },
+        {
+          "text": "I THOUGHT...",
+          "confidence": 0.965,
+          "text_ar": "ظننت أنك..."
+        },
+        {
+          "text": "YOU WOULD SAYNO...",
+          "confidence": 0.926,
+          "text_ar": "سترفض..."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.996,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "YOU WOULD SAY NO IFIASK YOU TO MEET ME!",
+          "confidence": 0.958,
+          "text_ar": "سترفض لو طلبت منك مقابلتي!"
+        },
+        {
+          "text": "wOw YOU ARE SO FRANK. I LIKE THAT.",
+          "confidence": 0.546,
+          "text_ar": "واو، أنت صريح جداً. يعجبني هذا."
+        },
+        {
+          "text": "HOWDIDYOU KNOW I WOULD SAY NO?",
+          "confidence": 0.923,
+          "text_ar": "كيف عرفت أنني سأرفض؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "CAN'T YOU JUST DRINK WITHME AS YOU ARE HERE NOW?",
+          "confidence": 0.933,
+          "text_ar": "ألا يمكنك الشرب معي بما أنك هنا الآن؟"
+        },
+        {
+          "text": "YOU JUST KEEP COMPLAINING.",
+          "confidence": 0.959,
+          "text_ar": "أنت لا تكف عن التذمر."
+        },
+        {
+          "text": "ARE YOU ANGRY?",
+          "confidence": 0.969,
+          "text_ar": "هل غضبت؟"
+        },
+        {
+          "text": "YOU ARE. VOU ADE",
+          "confidence": 0.849,
+          "text_ar": "أنت غاضب حقاً."
+        },
+        {
+          "text": "GOD DAMN IT!! UGH!!",
+          "confidence": 0.94,
+          "text_ar": "تباً لك!! أوقف هذا!!"
+        },
+        {
+          "text": "You are so rude.",
+          "confidence": 0.978,
+          "text_ar": "أنت فظ حقاً."
+        },
+        {
+          "text": "OKAY IAM SORRY!",
+          "confidence": 0.948,
+          "text_ar": "حسناً أنا آسف!"
+        },
+        {
+          "text": "COME SIT NEXT TO ME.",
+          "confidence": 0.962,
+          "text_ar": "تعال واجلس بجانبي."
+        },
+        {
+          "text": "PUO",
+          "confidence": 0.741,
+          "text_ar": "صوت تنهيدة"
+        },
+        {
+          "text": "OKAY...",
+          "confidence": 0.919,
+          "text_ar": "حسناً..."
+        },
+        {
+          "text": "OH WHY DID YOU EVEN SAY NO?",
+          "confidence": 0.969,
+          "text_ar": "آه، لماذا رفضت من الأساس؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HEY.",
+          "confidence": 0.983,
+          "text_ar": "مهلاً."
+        },
+        {
+          "text": "CAN YOU GUESS WHYIWANTED TO SEE YOU?",
+          "confidence": 0.948,
+          "text_ar": "أتخمّن لماذا أردت رؤيتك؟"
+        },
+        {
+          "text": "HMM?",
+          "confidence": 0.989,
+          "text_ar": "ممم؟"
+        },
+        {
+          "text": "WELL...",
+          "confidence": 0.92,
+          "text_ar": "حسناً..."
+        },
+        {
+          "text": "WELL...",
+          "confidence": 0.918,
+          "text_ar": "حسناً..."
+        },
+        {
+          "text": "WHY ARE YOU SO CALM IN FRONTOF SOMEONE YOUFUCKED SO MUCH LAST NIGHT?",
+          "confidence": 0.935,
+          "text_ar": "لماذا تبدو هادئاً هكذا أمام شخص مارست معه كثيراً الليلة الماضية؟"
+        },
+        {
+          "text": "DIDN'T YOU THINK OF ME AFTER FUCKING ME?",
+          "confidence": 0.942,
+          "text_ar": "ألم تفكر فيّ بعد ما حدث بيننا؟"
+        },
+        {
+          "text": "COUGH",
+          "confidence": 0.998,
+          "text_ar": "كحة"
+        },
+        {
+          "text": "YOU EVEN MARKED ME-",
+          "confidence": 0.967,
+          "text_ar": "لقد علّمت عليّ حتى-"
+        },
+        {
+          "text": "YOU ARE GOOD AT MAKING ME ANTICIPATED.",
+          "confidence": 0.948,
+          "text_ar": "أنت تثير حماستي حقاً."
+        },
+        {
+          "text": "MARK YOU? YOU ARE NOT SOME KIND OF BOOK...",
+          "confidence": 0.93,
+          "text_ar": "أعلمك؟ أنت لست كتاباً..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "LOOK, YOU SUCKED ME AND MARKED ME.",
+          "confidence": 0.948,
+          "text_ar": "انظر، لقد امتصصتني وعلّقت علامة عليّ."
+        },
+        {
+          "text": "WHAT THE! DIDIDOTHAT?",
+          "confidence": 0.948,
+          "text_ar": "ما هذا! هل فعلت ذلك حقاً؟"
+        },
+        {
+          "text": "WOow... LOOK AT THAT...",
+          "confidence": 0.626,
+          "text_ar": "واو... انظر إلى هذا..."
+        },
+        {
+          "text": "IMEANIAM SORRY. THAT'S REALLY STRONG.",
+          "confidence": 0.942,
+          "text_ar": "أقصد أنا آسف. هذا واضح حقاً."
+        },
+        {
+          "text": "YEAH?",
+          "confidence": 0.996,
+          "text_ar": "حقاً؟"
+        },
+        {
+          "text": "CANIDO THAT TO YOU?",
+          "confidence": 0.958,
+          "text_ar": "أيمكنني فعل ذلك بك؟"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.996,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "EEEK!!",
+          "confidence": 0.998,
+          "text_ar": "إييه!!"
+        },
+        {
+          "text": "WHAT THE.!!!! WHAT THE...",
+          "confidence": 0.804,
+          "text_ar": "ما هذا..!! ما هذا..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "Is this because we are in a closed space?!",
+          "confidence": 0.978,
+          "text_ar": "أهذا لأننا في مكان مغلق؟!"
+        },
+        {
+          "text": "STOP! YOU ARE TICKLING ME!",
+          "confidence": 0.981,
+          "text_ar": "توقف! أنت تدغدغني!"
+        },
+        {
+          "text": "There we go!",
+          "confidence": 0.96,
+          "text_ar": "ها قد بدأنا!"
+        },
+        {
+          "text": "Iheard them!",
+          "confidence": 0.991,
+          "text_ar": "لقد سمعتهم!"
+        },
+        {
+          "text": "OH YEAH I KNOW THAT PROFESSOR!",
+          "confidence": 0.977,
+          "text_ar": "أه أجل أنا أعرف ذلك الأستاذ!"
+        },
+        {
+          "text": "HEY, STOP IT.",
+          "confidence": 0.973,
+          "text_ar": "مهلاً، توقف."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HAA...",
+          "confidence": 0.911,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "QUO",
+          "confidence": 0.521,
+          "text_ar": "صوت لهث"
+        },
+        {
+          "text": "WHOOO-",
+          "confidence": 0.969,
+          "text_ar": "هووو-"
+        },
+        {
+          "text": "IT'S HARDER THANITHOUGH.T..",
+          "confidence": 0.904,
+          "text_ar": "الأمر أصعب مما ظننت.."
+        },
+        {
+          "text": "DOES IT TAKE TIME?",
+          "confidence": 0.983,
+          "text_ar": "هل يستغرق وقتاً طويلاً؟"
+        },
+        {
+          "text": "Haa...",
+          "confidence": 0.942,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "This is turning me on...",
+          "confidence": 0.9,
+          "text_ar": "هذا يثير رغبتي..."
+        },
+        {
+          "text": "WHAT IS WRONG WITH YOU?!",
+          "confidence": 0.959,
+          "text_ar": "ما دهاك?!"
+        },
+        {
+          "text": "LET'S JUST DRINK..",
+          "confidence": 0.912,
+          "text_ar": "دعنا نشرب فقط.."
+        },
+        {
+          "text": "LET'S HAVE SEX.",
+          "confidence": 0.99,
+          "text_ar": "فلنمارس الجنس."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THIS IS A PUBLIC PLACE...",
+          "confidence": 0.917,
+          "text_ar": "هذا مكان عام..."
+        },
+        {
+          "text": "IMEAN, WE ARE IN A ROOM BUT STILL...",
+          "confidence": 0.869,
+          "text_ar": "أقصد، نحن في غرفة لكن رغم ذلك..."
+        },
+        {
+          "text": "WAKE UP!",
+          "confidence": 0.974,
+          "text_ar": "استيقظ!"
+        },
+        {
+          "text": "IT'S MORE THRILLING!",
+          "confidence": 0.987,
+          "text_ar": "الأمر أكثر إثارة هكذا!"
+        },
+        {
+          "text": "DON'T GUYS LIKE THIS?",
+          "confidence": 0.938,
+          "text_ar": "ألا يحب الرجال هذا النوع من المغامرة؟"
+        },
+        {
+          "text": "ICAN'T RISK MYLIFE FOR A CHEAP THRILL!",
+          "confidence": 0.943,
+          "text_ar": "لا يمكنني المخاطرة بحياتي من أجل إثارة رخيصة!"
+        },
+        {
+          "text": "COMEON, NOBODYCOMES HERE UNLESS WE CALL THEM..",
+          "confidence": 0.927,
+          "text_ar": "هيا، لا أحد يأتي إلى هنا ما لم نطلبه.."
+        },
+        {
+          "text": "YOU WERE REALLY NOISY LAST TIME. WE WILL SURELY GETCAUGHT.",
+          "confidence": 0.925,
+          "text_ar": "لقد كنت صاخباً جداً في المرة السابقة. سنُضبط بالتأكيد."
+        },
+        {
+          "text": "IT WAS GREAT LAST TIME...",
+          "confidence": 0.91,
+          "text_ar": "لقد كان الأمر رائعاً في المرة السابقة..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "DOESN'TMATTER HOW IT WAS THE LAST TIME WE ARE NOT DOING IT HERE.",
+          "confidence": 0.883,
+          "text_ar": "لا يهم كيف كان في السابق، لن نفعلها هنا."
+        },
+        {
+          "text": "WE'LLGET A ROOM IF YOU REALLY WANT TO..",
+          "confidence": 0.877,
+          "text_ar": "سنجد غرفة إن كنت ترغب حقاً..."
+        },
+        {
+          "text": "GETA ROOM SO THAT WE CAN DO IT ALL NIGHT?",
+          "confidence": 0.941,
+          "text_ar": "نستأجر غرفة لنفعلها طوال الليل؟"
+        },
+        {
+          "text": "PERVERT, I WILL BE LOOKING FORWARD TO THAT.",
+          "confidence": 0.963,
+          "text_ar": "أيها المنحرف، سأتطلع إلى ذلك حقاً."
+        },
+        {
+          "text": "THAT'S NOT WHATIMEANT...",
+          "confidence": 0.941,
+          "text_ar": "لم أكن أعني ذلك..."
+        },
+        {
+          "text": "I MEAN WE SHOULDN'T DO THAT HERE...",
+          "confidence": 0.924,
+          "text_ar": "أعني أنه لا ينبغي لنا فعل ذلك هنا..."
+        },
+        {
+          "text": "OKAY.",
+          "confidence": 0.995,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "MMPH!?",
+          "confidence": 0.993,
+          "text_ar": "ممف!؟"
+        },
+        {
+          "text": "Haa",
+          "confidence": 0.984,
+          "text_ar": "هاه"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "laa",
+          "confidence": 0.903,
+          "text_ar": "آه"
+        },
+        {
+          "text": "PLEASE,CALMDOWN!",
+          "confidence": 0.942,
+          "text_ar": "أرجوك، اهدأ!"
+        },
+        {
+          "text": "I DON'T KNOW HOW WE GOT INTO THIS RELATIONSHIP... BUT WE CAN'T KEEP DOING THIS.",
+          "confidence": 0.933,
+          "text_ar": "لا أعرف كيف وصلنا إلى هذه العلاقة... لكن لا يمكننا الاستمرار هكذا."
+        },
+        {
+          "text": "I JUST DON'T KNOW WHAT WE ARE..",
+          "confidence": 0.881,
+          "text_ar": "أنا حقاً لا أدري ما نحن عليه.."
+        },
+        {
+          "text": "DAMN IT. HE KEEPS PUSHING ME AWAY...",
+          "confidence": 0.894,
+          "text_ar": "تباً. إنه لا يكف عن إبعادي..."
+        },
+        {
+          "text": "IFEEL KIND OF OFFENDED...",
+          "confidence": 0.86,
+          "text_ar": "أشعر بالإهانة نوعاً ما..."
+        },
+        {
+          "text": "ARE YOU ANGRY?",
+          "confidence": 0.98,
+          "text_ar": "هل أنت غاضب؟"
+        },
+        {
+          "text": "YOU ARE. CAN YOU THINK MORE CLEARLY NOW?",
+          "confidence": 0.961,
+          "text_ar": "أنت كذلك. أيمكنك التفكير بوضوح أكثر الآن؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "LICK V",
+          "confidence": 0.605,
+          "text_ar": "لعق"
+        },
+        {
+          "text": "LICK",
+          "confidence": 0.972,
+          "text_ar": "لعق"
+        },
+        {
+          "text": "I JUST WANT TO DO IT WITH YOU~ DAMN IT!COME ON!",
+          "confidence": 0.943,
+          "text_ar": "أريد فقط أن أفعلها معك~ تباً! هيا!"
+        },
+        {
+          "text": "PFFT!",
+          "confidence": 0.997,
+          "text_ar": "پفت!"
+        },
+        {
+          "text": "YOU DON'T KNOW WHAT WE ARE? WE ARE SEX PARTNERS!",
+          "confidence": 0.969,
+          "text_ar": "ألا تعرف ما نحن عليه؟ نحن شريكان جنسيان!"
+        },
+        {
+          "text": "Ah.I love it.. Should I just do it?",
+          "confidence": 0.856,
+          "text_ar": "آه. أعجبني ذلك.. أأستمر وفقط؟"
+        },
+        {
+          "text": "She did say we are sex partners.",
+          "confidence": 0.939,
+          "text_ar": "لقد قالت حقاً أننا شريكان جنسيان."
+        },
+        {
+          "text": "Haa Trieo",
+          "confidence": 0.396,
+          "text_ar": "هاه..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "No one will know if we keep quiet.…",
+          "confidence": 0.948,
+          "text_ar": "لن يعلم أحد إن بقينا هادئين..."
+        },
+        {
+          "text": "Good Good LICKV",
+          "confidence": 0.739,
+          "text_ar": "جيد جيد لعق"
+        },
+        {
+          "text": "Ah... This is amazing..",
+          "confidence": 0.882,
+          "text_ar": "آه... هذا مذهل.."
+        },
+        {
+          "text": "TAKE YOURPANTS OFF. I WANT IT RIGHT NOW.",
+          "confidence": 0.944,
+          "text_ar": "اخلع سروالك. أريدها الآن."
+        },
+        {
+          "text": "ARE YOU DRUNK?",
+          "confidence": 0.99,
+          "text_ar": "أتمسكين?"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "TAKE IT OFF!",
+          "confidence": 0.954,
+          "text_ar": "اخلعها!"
+        },
+        {
+          "text": "QUO",
+          "confidence": 0.685,
+          "text_ar": "صوت ضجة"
+        },
+        {
+          "text": "I heard them!",
+          "confidence": 0.957,
+          "text_ar": "لقد سمعتهم!"
+        },
+        {
+          "text": "I definitely heard something!",
+          "confidence": 0.974,
+          "text_ar": "لقد سمعت شيئاً حقاً!"
+        },
+        {
+          "text": "HERE~ EVERYONE GETONE-",
+          "confidence": 0.984,
+          "text_ar": "هيا~ ليأخذ كل واحد واحداً-"
+        },
+        {
+          "text": "WOW,DID YOU SEE THAT?",
+          "confidence": 0.857,
+          "text_ar": "واو، هل رأيت ذلك؟"
+        },
+        {
+          "text": "AHHH... NNGH...! Mmm",
+          "confidence": 0.872,
+          "text_ar": "آآه... نغح...! ممم"
+        },
+        {
+          "text": "AHH...",
+          "confidence": 0.89,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "CO MANGADISTRICT.COM",
+          "confidence": 0.256,
+          "text_ar": "MANGADISTRICT.COM"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "If someone sees us. we are doomed..",
+          "confidence": 0.963,
+          "text_ar": "إن رآنا أحد، فقد انتهينا.."
+        },
+        {
+          "text": "Ahh...",
+          "confidence": 0.892,
+          "text_ar": "آه..."
+        },
+        {
+          "text": "lt must be because I'm nervous. I feel so sensitive..",
+          "confidence": 0.949,
+          "text_ar": "لا بد أن ذلك لأنني متوترة. أشعر بحساسية مفرطة.."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "HAA...",
+          "confidence": 0.908,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "PWAH",
+          "confidence": 0.995,
+          "text_ar": "پواه"
+        },
+        {
+          "text": "HEY.",
+          "confidence": 0.982,
+          "text_ar": "مهلاً."
+        },
+        {
+          "text": "RIP IT. RIP AND FUCK ME.",
+          "confidence": 0.916,
+          "text_ar": "مزقها. مزقها ومارس الجنس معي."
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.986,
+          "text_ar": "ماذا?!"
+        },
+        {
+          "text": "WOW!",
+          "confidence": 0.932,
+          "text_ar": "واو!"
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.982,
+          "text_ar": "يتبع"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.983,
+          "text_ar": "MANGADISTRICT.COM"
+        }
+      ]
+    }
+  ]
+}
