@@ -694,9 +694,9 @@ OCR_SFX_MIN_LETTERS = int(os.environ.get("OCR_SFX_MIN_LETTERS", "3"))
 
 # [جديد] مستوى فلترة المؤثرات الصوتية (SFX) — OCR_SFX_FILTER (من مدخل sfx_filter بالـworkflow):
 #   "off"      أساسي: الحذف القديم فقط (أقل من OCR_SFX_MIN_LETTERS حروف).
-#   "balanced" (افتراضي): + كلمات محاكاة صوت واضحة (BOOM, THUD…)، + نص كبير الحجم خارج الفقاعة،
+#   "balanced" (افتراضي): + كلمات محاكاة صوت واضحة (BOOM, THUD…)، + كلمة منفردة كبيرة الحجم خارج الفقاعة (الجمل متعددة الكلمات لا تُستبعَد بالحجم/الموضع)،
 #              + كلمة مكرَّرة الحروف (GRRR, AAAH…) خارج الفقاعة أو كبيرة، + كلمات صوتية ملتبسة (CRACK, CLICK…) خارج الفقاعة.
-#   "strict"   + أي نص أكبر من المعتاد بـ1.5× خارج الفقاعة، + كلمة واحدة بعلامة تعجب كبيرة الحروف خارج الفقاعة، + ضحك مكرَّر.
+#   "strict"   + أي كلمة منفردة أكبر من المعتاد بـ1.5× خارج الفقاعة، + كلمة واحدة بعلامة تعجب كبيرة الحروف خارج الفقاعة، + ضحك مكرَّر.
 # "خارج الفقاعة" = البكسلات المحيطة بصندوق النص ليست بيضاء غالبًا (نص فوق الرسم/التَّظليل، بعكس الفقاعة البيضاء).
 _raw_sfx = os.environ.get("OCR_SFX_FILTER", "balanced").strip().lower()
 OCR_SFX_FILTER = ("off" if _raw_sfx in ("off", "أساسي_فقط", "اساسي_فقط") else
@@ -712,6 +712,8 @@ _SFX_STRONG = {
 _SFX_WEAK = {"crack", "click", "snap", "knock", "buzz", "beep", "ding", "dong", "tick", "tock", "hiss", "pop",
              "stomp", "rattle", "bonk", "bump", "flash", "rip", "tear", "chop", "slash", "stab", "punch", "kick"}
 _SFX_LAUGH = re.compile(r"^(?:ha|he|hi|ho|hu|ah|eh|oh|kya|fu|ku|mu)+h?$", re.I)
+# كلمات ضحك صريحة فقط (بلا ah/oh/eh الحوارية الشائعة) — لبنود متعددة الكلمات المؤلَّفة كلها من مؤثرات ("Ha ha ha")
+_SFX_LAUGH_STRICT = re.compile(r"^(?:ha|he|hi|ho|hu)+h?$", re.I)
 
 
 def _sfx_token(text: str) -> str:
@@ -750,6 +752,13 @@ def _sfx_reason(s: dict, med_h: float, gray) -> str | None:
     words = re.findall(r"[A-Za-z']+", text)
     tok = _sfx_token(text)
     single = len(words) == 1
+    # [بطلب صريح] جملة من عدة كلمات لا تُستبعَد لمجرد أنها كبيرة/خارج فقاعة — الاستبعاد بحجم/موضع النص حصرًا للكلمة
+    # المنفردة (مؤثر صوتي/تعجب/ضحك). متعدد الكلمات يُستبعَد فقط لو كل كلماته مؤثرات صريحة ("Ha ha ha"، "Boom boom").
+    all_sfx_words = (not single and 2 <= len(words) <= 4 and all(
+        (_sfx_token(w) in _SFX_STRONG) or (len(_sfx_token(w)) >= 2 and _SFX_LAUGH_STRICT.match(_sfx_token(w)))
+        for w in words))
+    if all_sfx_words:
+        return "مؤثرات متكررة"
     h = s.get("_line_h") or 0
     big = med_h > 0 and h >= OCR_SFX_BIG_RATIO * med_h
     outside = _outside_bubble(gray, s["_bbox"], h) if (gray is not None and "_bbox" in s) else None
@@ -758,12 +767,12 @@ def _sfx_reason(s: dict, med_h: float, gray) -> str | None:
         return "كلمة صوتية"
     if single and tok in _SFX_WEAK and (out or big):
         return "كلمة صوتية (خارج فقاعة)"
-    if big and out:
+    if single and big and out:
         return "كبير خارج فقاعة"
     if single and re.search(r"(.)\1{2,}", tok) and (out or big):
         return "حروف مكرَّرة"
     if OCR_SFX_FILTER == "strict":
-        if out and med_h > 0 and h >= 1.5 * med_h:
+        if single and out and med_h > 0 and h >= 1.5 * med_h:
             return "أكبر من المعتاد خارج فقاعة"
         if single and out and text.strip().endswith("!") and text.strip().upper() == text.strip() and len(tok) <= 10:
             return "تعجب منفرد خارج فقاعة"
