@@ -54,6 +54,7 @@ from compress_chapters import (
     IMG_FETCH_DELAY_MS,
     IMG_FORMAT,
     MAX_WIDTH,
+    NORMALIZE_WIDTH,
     OUTPUT_DIR,
     QUALITY,
     RUN_ID,
@@ -61,6 +62,8 @@ from compress_chapters import (
     _commit_and_push_sync,
     _read_remote_manifest_sync,
     compress_image,
+    _image_width_only,
+    _reference_width,
     fetch_image_bytes,
     fetch_image_bytes_http,
     _ICON_MARK,
@@ -1205,6 +1208,8 @@ async def _ocr_handle_page(
     pages_since_rebuild: int,
     saved_image_paths: list | None = None,
     chapter_dir: Path | None = None,
+    size_stats: dict | None = None,
+    defer_store: dict | None = None,
 ) -> int:
     """[جديد — بند (1)] معالجة OCR لصفحة واحدة جاهزة (raw bytes مُنزَّلة
     مسبقًا)، مُستخرَجة كدالة مشتركة يستدعيها كل من مسار HTTP متعدد الفصول
@@ -1265,7 +1270,24 @@ async def _ocr_handle_page(
     # need_compress=False بباقي المسارات فتعمل تمامًا كما كانت، بلا gather
     # زائد). return_exceptions=True يحافظ على نفس عزل الأخطاء الأصلي (فشل
     # أحدهما لا يوقف الآخر ولا يصعد استثناءً للمستدعي).
-    if need_compress:
+    # [توحيد مقياس العرض] defer_store مُمرَّر ⇒ يُؤجَّل الضغط (تُحفظ raw على القرص المرحلي) حتى تُعرف عروض كل صفحات
+    # الفصل فتُحشى الأضيق لعرض مرجعي مشترك — راجع _compress_deferred_pages. OCR لا يتأثر (يعمل على raw الأصلية).
+    defer_compress = need_compress and defer_store is not None
+    if defer_compress:
+        try:
+            ocr_result = await _do_ocr()
+        except Exception as e:
+            ocr_result = e
+        compress_result = None
+        try:
+            spill_dir = defer_store["dir"]
+            spill_dir.mkdir(parents=True, exist_ok=True)
+            spill_path = spill_dir / f"{page_num:03d}.bin"
+            spill_path.write_bytes(raw)
+            defer_store["pages"][page_num] = spill_path
+        except Exception as e:
+            print(f"  ⚠️ فشل تأجيل ضغط {label} صفحة {page_num}: {e}")
+    elif need_compress:
         ocr_result, compress_result = await asyncio.gather(
             _do_ocr(),
             asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT),
@@ -1293,7 +1315,7 @@ async def _ocr_handle_page(
         )
         print(f"  ✅ {label} صفحة {page_num}/{total_pages} — {len(sentences)} بند نص ({sfx_dropped} مُستبعَد [sfx]){rss_note}")
 
-    if need_compress:
+    if need_compress and not defer_compress:
         if isinstance(compress_result, Exception):
             print(f"  ⚠️ فشل ضغط {label} صفحة {page_num}: {compress_result}")
         else:
@@ -1302,6 +1324,8 @@ async def _ocr_handle_page(
                 filename = f"{page_num:03d}.{IMG_FORMAT}"
                 (chapter_dir / filename).write_bytes(compress_result)
                 saved_image_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                if size_stats is not None:
+                    size_stats[page_num] = (len(raw), len(compress_result))
                 print(f"  🗜️ {label} ضغط صفحة {page_num}/{total_pages} ({len(compress_result)} بايت)")
             except Exception as e:
                 print(f"  ⚠️ فشل حفظ الصورة المضغوطة لـ{label} صفحة {page_num}: {e}")
@@ -1320,6 +1344,45 @@ async def _ocr_handle_page(
         )
         pages_since_rebuild = 0
     return pages_since_rebuild
+
+
+async def _compress_deferred_pages(label: str, defer_store: dict, chapter_dir: Path,
+                                   saved_image_paths: list, size_stats: dict, total_pages) -> None:
+    """[توحيد مقياس العرض — وضع الإنتاج الكامل] بعد اكتمال تنزيل+OCR كل صفحات الفصل: تُقرأ عروض الأصول المؤجَّلة،
+    يُحدَّد عرض مرجعي مشترك، ثم تُضغط كل صفحة مع حشو الأضيق بلون خلفيتها (نفس منطق وضع «إنتاج»). الأصول مخزَّنة على
+    القرص لا الذاكرة، وتُقرأ عند دور ضغطها فقط. تُسجَّل أحجام قبل/بعد في size_stats."""
+    pages = dict(defer_store["pages"])
+    if not pages:
+        return
+    widths = {n: _image_width_only(pth.read_bytes()) for n, pth in pages.items()}
+    ref_w = _reference_width(list(widths.values()))
+    distinct = sorted(set(w for w in widths.values() if w > 0))
+    if len(distinct) > 1:
+        print(f"  📐 {label} عروض أصلية مختلفة بين الصفحات {distinct[:8]} — توحيد المقياس على عرض مرجعي {ref_w}px بحشو الهوامش")
+    else:
+        print(f"  📐 {label} عروض الصفحات متطابقة ({ref_w}px) — لا حاجة للتوحيد")
+    sem = asyncio.Semaphore(max(1, min(8, os.cpu_count() or 2)))
+
+    async def _one(n: int, pth: Path) -> None:
+        async with sem:
+            try:
+                raw = pth.read_bytes()
+                out = await asyncio.to_thread(compress_image, raw, MAX_WIDTH, QUALITY, IMG_FORMAT, ref_w)
+                chapter_dir.mkdir(parents=True, exist_ok=True)
+                filename = f"{n:03d}.{IMG_FORMAT}"
+                (chapter_dir / filename).write_bytes(out)
+                saved_image_paths.append(str((chapter_dir / filename).relative_to(OUTPUT_DIR)))
+                size_stats[n] = (len(raw), len(out))
+                print(f"  🗜️ {label} ضغط صفحة {n}/{total_pages} ({len(out)} بايت)")
+            except Exception as e:
+                print(f"  ⚠️ فشل ضغط {label} صفحة {n}: {e}")
+            finally:
+                try:
+                    pth.unlink()
+                except OSError:
+                    pass
+
+    await asyncio.gather(*[_one(n, pth) for n, pth in sorted(pages.items())])
 
 
 async def ocr_process_chapter(browser, chapter_url: str, index: int, total: int, profile: dict) -> dict | None:
@@ -1433,6 +1496,10 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     page_texts: list[str] = []
     page_json: list[dict] = []
     saved_image_paths: list[str] = []
+    size_stats: dict[int, tuple[int, int]] = {}   # رقم الصفحة -> (حجم الأصل، حجم الناتج) بالبايت — لملخّص حجم الفصل
+    defer_store: dict | None = (
+        {"dir": Path(tempfile.mkdtemp(prefix=".fp-raw-")), "pages": {}} if NORMALIZE_WIDTH else None
+    )
     total_pages = len(image_urls)
     label = f"[{index}/{total}]"
 
@@ -1465,6 +1532,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
             pages_since_rebuild = await _ocr_handle_page(
                 label, i, raw, reason, total_pages, page_texts, page_json, pages_since_rebuild,
                 saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
+                size_stats=size_stats, defer_store=defer_store,
             )
         return pages_since_rebuild
 
@@ -1484,6 +1552,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
                 pages_since_rebuild = await _ocr_handle_page(
                     f"{label} (إعادة محاولة)", i, raw, reason, total_pages, page_texts, page_json,
                     pages_since_rebuild, saved_image_paths=saved_image_paths, chapter_dir=chapter_dir,
+                    size_stats=size_stats, defer_store=defer_store,
                 )
             else:
                 print(f"  ❌ {label} صفحة {i}/{total_pages}: تعذّر تحميلها نهائيًا حتى بعد إعادة المحاولة: {reason}")
@@ -1508,12 +1577,33 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
     if context:
         await context.close()
 
+    if defer_store is not None:
+        try:
+            await _compress_deferred_pages(label, defer_store, chapter_dir, saved_image_paths, size_stats, total_pages)
+            saved_image_paths.sort()
+        finally:
+            try:
+                for leftover in defer_store["dir"].glob("*"):
+                    leftover.unlink()
+                defer_store["dir"].rmdir()
+            except OSError:
+                pass
+
     if not saved_image_paths and not page_texts:
         return None
 
     page_json, page_texts = _renumber_pages_sequentially(page_json)
 
+    # حجم الفصل قبل/بعد الضغط — يقرؤه merge_manifest_dict (originalBytes/compressedBytes) ويعرضه التطبيق، كوضع «إنتاج»
+    original_bytes = sum(o for o, _c in size_stats.values())
+    compressed_bytes = sum(c for _o, c in size_stats.values())
+    if original_bytes:
+        saving = 100 * (1 - compressed_bytes / original_bytes)
+        print(f"  📦 {label} حجم الفصل: {original_bytes/1048576:.2f}م.ب ← {compressed_bytes/1048576:.2f}م.ب (توفير {saving:.0f}%)")
+
     return {
+        "original_bytes": original_bytes,
+        "compressed_bytes": compressed_bytes,
         "manga_id": manga_id,
         "chapter_num": chapter_num,
         "source_url": chapter_url,
