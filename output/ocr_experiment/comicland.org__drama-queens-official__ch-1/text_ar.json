@@ -1,0 +1,1209 @@
+{
+  "manga_id": "comicland.org__drama-queens-official",
+  "chapter_num": "1",
+  "manga_title": "Drama Queens (Official)",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "My parents told me, that once I go to college..",
+          "confidence": 0.849,
+          "text_ar": "أخبرني والداي أنه بمجرد أن أذهب إلى الجامعة.."
+        },
+        {
+          "text": "you can do whatever you want.",
+          "confidence": 0.98,
+          "text_ar": "يمكنك فعل ما تريده تماماً."
+        },
+        {
+          "text": "You can have fun as much as you want.",
+          "confidence": 0.935,
+          "text_ar": "يمكنك الاستمتاع قدر ما تشاء."
+        },
+        {
+          "text": "You can date day and night.",
+          "confidence": 0.923,
+          "text_ar": "يمكنك المواعدة ليلاً ونهاراً."
+        },
+        {
+          "text": "I believed what they said and devoted myself to studying during high school.",
+          "confidence": 0.921,
+          "text_ar": "لقد صدقت ما قالاه وتفرغت للدراسة طوال المرحلة الثانوية."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "So, I got perfect grades and was admitted to the college of my choice.",
+          "confidence": 0.943,
+          "text_ar": "لذا، حصلت على درجات كاملة وقُبلت في الكلية التي أردتها."
+        },
+        {
+          "text": "MOMII IOoT ACCEPTEDI",
+          "confidence": 0.635,
+          "text_ar": "أمي، أبي! قُبلتُ!"
+        },
+        {
+          "text": "But...",
+          "confidence": 0.888,
+          "text_ar": "لكن..."
+        },
+        {
+          "text": "The reality was quite diff erent.",
+          "confidence": 0.867,
+          "text_ar": "كان الواقع مختلفاً تماماً."
+        },
+        {
+          "text": "CHAT-TER",
+          "confidence": 0.921,
+          "text_ar": "تمتمة"
+        },
+        {
+          "text": "Why did I not know that-",
+          "confidence": 0.95,
+          "text_ar": "لماذا لم أعرف أن..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "the College of Engineering... especially Computer Science is freaking full of guys..",
+          "confidence": 0.882,
+          "text_ar": "كلية الهندسة... وخاصة علوم الحاسوب، مليئة بالشباب لدرجة جنونية..."
+        },
+        {
+          "text": "THERE ARE MANY PRETTYGIRLS ON CAMPUS...",
+          "confidence": 0.885,
+          "text_ar": "هناك الكثير من الفتيات الجميلات في الحرم الجامعي..."
+        },
+        {
+          "text": "JUST NOT AROUND ME...",
+          "confidence": 0.876,
+          "text_ar": "لكنهن لست حول البيئة المحيطة بي..."
+        },
+        {
+          "text": "Ugh.",
+          "confidence": 0.947,
+          "text_ar": "تباً."
+        },
+        {
+          "text": "Maybe I'm not meant to have a girl...",
+          "confidence": 0.912,
+          "text_ar": "ربما لم يُكتب لي أن أحظى بفتاة..."
+        },
+        {
+          "text": "IAM SO DEPRESSED AND LONELY... sigh.",
+          "confidence": 0.807,
+          "text_ar": "أنا مكتئب ووحيد للغاية... تنهد."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.987,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "HAVE YOU TRIED WHAT I GAVE YOU?",
+          "confidence": 0.963,
+          "text_ar": "هل جربت ما أعطيتك إياه؟"
+        },
+        {
+          "text": "C心心心",
+          "confidence": 0.474,
+          "text_ar": "قرع"
+        },
+        {
+          "text": "AH, THAT ONE? YES,I HAVE. BUT IT SMELLS WEIRD-",
+          "confidence": 0.886,
+          "text_ar": "آه، ذلك الشيء؟ نلق لقد فعلت. لكن رائحته غريبة-"
+        },
+        {
+          "text": "IDO NOT THINK SO~ YOU SMELL MUCH BETTER NOW~",
+          "confidence": 0.948,
+          "text_ar": "لا أعتقد ذلك~ رائحتك أفضل بكثير الآن~"
+        },
+        {
+          "text": "NO~ I USED TO SMELL LIKE GRAPE FRUIT~",
+          "confidence": 0.958,
+          "text_ar": "لا~ اعتدت أن تكون رائحتي مثل الجريب فروت~"
+        },
+        {
+          "text": "HAHA, GRAPE FRUIT?",
+          "confidence": 0.98,
+          "text_ar": "هاها، الجريب فروت؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "BECAUSEOF MYBODY WASH.",
+          "confidence": 0.993,
+          "text_ar": "بسبب غسول الجسم الخاص بي."
+        },
+        {
+          "text": "AH,YOU SMELL SO GOOD~ I WANT TO EAT YOU UP~!",
+          "confidence": 0.936,
+          "text_ar": "آه، رائحتك زكية جداً~ أريد أن ألتهمك~!"
+        },
+        {
+          "text": "Damn it...",
+          "confidence": 0.907,
+          "text_ar": "لعنة..."
+        },
+        {
+          "text": "It is already May.… The college festival is coming up soon.",
+          "confidence": 0.885,
+          "text_ar": "لقد حل شهر مايو بالفعل.. المهرجان الجامعي على وشك البدء."
+        },
+        {
+          "text": "Others have their other half to enjoy the festival with.",
+          "confidence": 0.976,
+          "text_ar": "الآخرون لديهم النصف الآخر للاستمتاع بالمهرجان معه."
+        },
+        {
+          "text": "Sigh",
+          "confidence": 0.987,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "Why am I alone.?",
+          "confidence": 0.915,
+          "text_ar": "لماذا أنا وحدي؟"
+        },
+        {
+          "text": "I asked my father, the other day, why I did not have anyone yet..",
+          "confidence": 0.93,
+          "text_ar": "سألت والدي في اليوم الآخر، لماذا ليس لدي أي شخص حتى الآن.."
+        },
+        {
+          "text": "HEY,KID... IT WILL NATURALLY FOLLOWWHEN YOU DO YOUR JOB AND RESPONSIBILITY. JUST FOCUS ON STUDYING.",
+          "confidence": 0.903,
+          "text_ar": "يا بني... سيأتي الأمر بشكل طبيعي عندما تؤدي عملك ومسؤوليتك. ركز على الدراسة فقط."
+        },
+        {
+          "text": "To be honest, I do not trust him anymore.",
+          "confidence": 0.958,
+          "text_ar": "صادقاً، لم أعد أثق به."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "IT IS A WASTE OF TIME. I WILL JUST TAKE AN ONLINE CLASS..",
+          "confidence": 0.88,
+          "text_ar": "إنه إضاعة للوقت. سأكتفي بحضور محاضرة عبر الإنترنت.."
+        },
+        {
+          "text": "I pretend to believe whatever they say so I would not look more miserable.",
+          "confidence": 0.906,
+          "text_ar": "أتظاهر بتصديق كل ما يقولونه كي لا أبدو أكثر بؤساً."
+        },
+        {
+          "text": "Single A Y SingloA Q0",
+          "confidence": 0.152,
+          "text_ar": "أعزب"
+        },
+        {
+          "text": "gam",
+          "confidence": 0.367,
+          "text_ar": "لعبة"
+        },
+        {
+          "text": "THE FULL-FLEDGED THEATRICAL DIRECTING HAS A SHORT HISTORY WHILE THE HISTORY OF THEATRE IS LONG.",
+          "confidence": 0.97,
+          "text_ar": "التوجيه المسرحي الكامل له تاريخ قصير بينما تاريخ المسرح طويل."
+        },
+        {
+          "text": "ITONLY STARTED INGERMANY IN THE 19TH CENTURY",
+          "confidence": 0.941,
+          "text_ar": "لقد بدأ فقط في ألمانيا في القرن التاسع عشر"
+        },
+        {
+          "text": "WHEN THE MEININGENCOMPANY WAS FORMED.",
+          "confidence": 0.968,
+          "text_ar": "عندما تشكلت فرقة ماينينغن."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "AND BEFORE THAT...",
+          "confidence": 0.951,
+          "text_ar": "وقبل ذلك..."
+        },
+        {
+          "text": "LOOK AT HER BODY...",
+          "confidence": 0.929,
+          "text_ar": "انظر إلى جسدها..."
+        },
+        {
+          "text": "ANDCOULD HER SHIRT BE ANY TIGHTER?",
+          "confidence": 0.968,
+          "text_ar": "وهل يمكن أن يكون قميصها أضيق من ذلك؟"
+        },
+        {
+          "text": "WHATWOULD IT FEEL LIKE HAVING SEX WITH THAT KIND OFGIRL.?",
+          "confidence": 0.928,
+          "text_ar": "كيف سيكون شعور ممارسة الجنس مع فتاة كهذه..؟"
+        },
+        {
+          "text": "JAE-WOO, YOU HAVING TROUBLE CONCENTRATING ON MY LECTURE?",
+          "confidence": 0.949,
+          "text_ar": "جاي-وو، هل تجد صعوبة في التركيز على محاضرتي؟"
+        },
+        {
+          "text": "IS IT BECAUSE YOU WANT TO SEE THIS?",
+          "confidence": 0.949,
+          "text_ar": "أهل ذلك لأنك تريد أن ترى هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "WHATDO YOU THINK? DO YOU WANT MORE?",
+          "confidence": 0.948,
+          "text_ar": "ما رأيك؟ هل تريد المزيد؟"
+        },
+        {
+          "text": "YES!!!",
+          "confidence": 0.989,
+          "text_ar": "نعم!!!"
+        },
+        {
+          "text": "HMM~ YOUR WISH IS MYCOMMAND...",
+          "confidence": 0.903,
+          "text_ar": "همم~ طلباتكم أوامر..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HOWABOUT THIS?",
+          "confidence": 0.996,
+          "text_ar": "ما رأيك في هذا؟"
+        },
+        {
+          "text": "DO YOU LIKE IT?",
+          "confidence": 0.896,
+          "text_ar": "هل يعجبك؟"
+        },
+        {
+          "text": "HEHE. YOU SEEM SATISFIED. DO YOU WANT TO TOUCH THEM?",
+          "confidence": 0.941,
+          "text_ar": "هيهيه. تبدو راضياً. هل تريد لمسهم؟"
+        },
+        {
+          "text": "IDO!!",
+          "confidence": 0.994,
+          "text_ar": "بلى أريد!!"
+        },
+        {
+          "text": "THERE YOU GO.. BUT BE GENTLE~!",
+          "confidence": 0.896,
+          "text_ar": "تفضل إذن.. لكن كن لطيفاً~!"
+        },
+        {
+          "text": "FLINCH",
+          "confidence": 0.953,
+          "text_ar": "انكماش"
+        },
+        {
+          "text": "Haa..",
+          "confidence": 0.884,
+          "text_ar": "هاا.."
+        },
+        {
+          "text": "2 GRAB",
+          "confidence": 0.191,
+          "text_ar": "قبض"
+        },
+        {
+          "text": "HNN~ YOU ARE DOING IT TOO ROUGH~",
+          "confidence": 0.96,
+          "text_ar": "هِنّ~ أنت تفعل ذلك بخشونة شديدة~"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "HUHU... DO YOU WANT SOMETHING BETTER?",
+          "confidence": 0.933,
+          "text_ar": "هو هو... هل تريد شيئاً أفضل؟"
+        },
+        {
+          "text": "SOMETHING BETTER..?",
+          "confidence": 0.965,
+          "text_ar": "شيئاً أفضل..؟"
+        },
+        {
+          "text": "YES. SOMETHING MUCHBETTER. LIKE THIS~",
+          "confidence": 0.988,
+          "text_ar": "نعم. شيئاً أفضل بكثير. هكذا~"
+        },
+        {
+          "text": "OR THIS?",
+          "confidence": 0.963,
+          "text_ar": "أو هكذا؟"
+        },
+        {
+          "text": "HunV",
+          "confidence": 0.781,
+          "text_ar": "هونغ"
+        },
+        {
+          "text": "YES... I LOVE IT..!",
+          "confidence": 0.907,
+          "text_ar": "نعم... أحب ذلك..!"
+        },
+        {
+          "text": "Hwah.o Haa.",
+          "confidence": 0.84,
+          "text_ar": "هواه.. هاا."
+        },
+        {
+          "text": "OHMY, IT GOT SO HARD!",
+          "confidence": 0.909,
+          "text_ar": "يا إلهي، لقد أصبح صلباً جداً!"
+        },
+        {
+          "text": "DOES IT FEEL GOOD? DO YOU WANT TO PUT IT IN?",
+          "confidence": 0.934,
+          "text_ar": "هل شعورها جيد؟ أتريد إدخاله؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "BABE!!!",
+          "confidence": 0.962,
+          "text_ar": "يا حبيبتي!!!"
+        },
+        {
+          "text": "HNN~ DO NOT RUSH~",
+          "confidence": 0.92,
+          "text_ar": "هِنّ~ لا تتعجل~"
+        },
+        {
+          "text": "Hungh~",
+          "confidence": 0.96,
+          "text_ar": "هونغ~"
+        },
+        {
+          "text": "Ahh",
+          "confidence": 0.612,
+          "text_ar": "آه"
+        },
+        {
+          "text": "CANIPUT IT IN? WAIT, IT'S ALREADY IN!",
+          "confidence": 0.942,
+          "text_ar": "هل يمكنني إدخاله؟ مهلاً، لقد دخل بالفعل!"
+        },
+        {
+          "text": "AhV",
+          "confidence": 0.707,
+          "text_ar": "آه"
+        },
+        {
+          "text": "Hahhogo",
+          "confidence": 0.714,
+          "text_ar": "هاهوجو"
+        },
+        {
+          "text": "Ahh",
+          "confidence": 0.849,
+          "text_ar": "آه"
+        },
+        {
+          "text": "Hahhy",
+          "confidence": 0.815,
+          "text_ar": "هاهي"
+        },
+        {
+          "text": "SQUELCH",
+          "confidence": 0.979,
+          "text_ar": "صوت احتكاك رطب"
+        },
+        {
+          "text": "YEAH...BABE!!",
+          "confidence": 0.943,
+          "text_ar": "أجل... يا حبيبتي!!"
+        },
+        {
+          "text": "SQUELCH",
+          "confidence": 0.981,
+          "text_ar": "صوت احتكاك رطب"
+        },
+        {
+          "text": "SQUELCH",
+          "confidence": 0.976,
+          "text_ar": "صوت احتكاك رطب"
+        },
+        {
+          "text": "HNN~ DO YOU REALLY LIKE ME?",
+          "confidence": 0.938,
+          "text_ar": "هِنّ~ هل تحبني حقاً؟"
+        },
+        {
+          "text": "YES!! IREALLY LIKE YOU!!",
+          "confidence": 0.97,
+          "text_ar": "نعم!! أنا أحبك حقاً!!"
+        },
+        {
+          "text": "Hungy",
+          "confidence": 0.804,
+          "text_ar": "هونغي"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "BABE..! I AM CUMMING.!",
+          "confidence": 0.852,
+          "text_ar": "حبيبتي..! أنا قادم..!"
+        },
+        {
+          "text": "Hahh.",
+          "confidence": 0.886,
+          "text_ar": "هاه."
+        },
+        {
+          "text": "Nagh",
+          "confidence": 0.801,
+          "text_ar": "ناغ"
+        },
+        {
+          "text": "Hnn",
+          "confidence": 0.775,
+          "text_ar": "هِنّ"
+        },
+        {
+          "text": "AnY",
+          "confidence": 0.453,
+          "text_ar": "أني"
+        },
+        {
+          "text": "HHNNH!! DO IT! CUM INSIDE!!",
+          "confidence": 0.901,
+          "text_ar": "هِنّنه!! افعلها! أنزلها بداخلي!!"
+        },
+        {
+          "text": "IINZH!",
+          "confidence": 0.534,
+          "text_ar": "إينزه!"
+        },
+        {
+          "text": "INNGH",
+          "confidence": 0.809,
+          "text_ar": "إينغ"
+        },
+        {
+          "text": "HAH...",
+          "confidence": 0.967,
+          "text_ar": "هاه..."
+        },
+        {
+          "text": "Hehe...",
+          "confidence": 0.909,
+          "text_ar": "هيهي..."
+        },
+        {
+          "text": "BULGE 10 0",
+          "confidence": 0.946,
+          "text_ar": "انتفاخ"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "WHAT IS WRONG WITH ME.? GOTHARDWATCHING AN ONLINE LECTURE..?",
+          "confidence": 0.944,
+          "text_ar": "ما خطبي..؟ أصبحت صلباً أثناء مشاهدة محاضرة عبر الإنترنت..؟"
+        },
+        {
+          "text": "QUEENS DRAMA X",
+          "confidence": 0.518,
+          "text_ar": "دراما كوينز X"
+        },
+        {
+          "text": "Story : Shrinell Art:QRQ",
+          "confidence": 0.937,
+          "text_ar": "القصة: شري نيل | الرسم: كيو آر كيو"
+        },
+        {
+          "text": "Next day",
+          "confidence": 0.978,
+          "text_ar": "اليوم التالي"
+        },
+        {
+          "text": "EnglishMajorP If you donate a book, you will get complimentary food. CHATTER",
+          "confidence": 0.89,
+          "text_ar": "تخصص اللغة الإنجليزية: إذا تبرعت بكتاب، ستحصل على طعام مجاني. تمتمة"
+        },
+        {
+          "text": "COME BY~!!",
+          "confidence": 0.979,
+          "text_ar": "تفضلوا بالزيارة~!!"
+        },
+        {
+          "text": "CHAT-T.ER CHATEI.EK",
+          "confidence": 0.791,
+          "text_ar": "تمتمة تمتمة"
+        },
+        {
+          "text": "SNACK BARBY DAY~ SNACKBARBYDAY~ ATNIGHT~ PUB PUBATNIGHT~",
+          "confidence": 0.885,
+          "text_ar": "مقاليع الوجبات الخفيفة نهاراً~ مقصف الوجبات الخفيفة نهاراً~ وفي الليل~ حانة في الليل~"
+        },
+        {
+          "text": "WE HAVE ICED HONEY TEA!",
+          "confidence": 0.96,
+          "text_ar": "لدينا شاي العسل المثلج!"
+        },
+        {
+          "text": "WHYDON'T YOU TRY A FRUITJUICE AND SAUSAGE?",
+          "confidence": 0.933,
+          "text_ar": "لماذا لا تجرّب عصير الفواكه والنقانق؟"
+        },
+        {
+          "text": "School of visual Design Pub Fruit Juice! Tasty sausage",
+          "confidence": 0.939,
+          "text_ar": "معهد التصميم المرئي، عصير الفواكه! نقانق لذيذة"
+        },
+        {
+          "text": "ICED HONEY TEA!",
+          "confidence": 0.969,
+          "text_ar": "شاي العسل المثلج!"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "Maybe I will just look around and visit the pub with DONG-HO later.",
+          "confidence": 0.94,
+          "text_ar": "ربما سألقي نظرة فقط وأزور الحانة مع دونغ-هو لاحقًا."
+        },
+        {
+          "text": "EXCUSE ME~",
+          "confidence": 0.987,
+          "text_ar": "عذراً~"
+        },
+        {
+          "text": "HELLO~ WE ARE FROM THE DRAMACLUB, P&M.",
+          "confidence": 0.958,
+          "text_ar": "مرحباً~ نحن من نادي المسرح، بي آند إم."
+        },
+        {
+          "text": "IF YOU ARE AVAILABLE, WHYDON'T YOUCOME AND WATCH THE PLAY LATER AT 3PM AT THE BASEMENTHALL OF THE MILLENNIUMBUILDING?",
+          "confidence": 0.928,
+          "text_ar": "إذا كنتم متفرغين، لما لا تأتون لمشاهدة المسرحية لاحقاً في تمام الساعة الثالثة عصراً في القاعة السفلية لمبنى الألفية؟"
+        },
+        {
+          "text": "41 VID NNIVA AOL eee",
+          "confidence": 0.206,
+          "text_ar": "مسرحية؟"
+        },
+        {
+          "text": "PLAY?",
+          "confidence": 0.983,
+          "text_ar": "مسرحية؟"
+        },
+        {
+          "text": "Huh?",
+          "confidence": 0.999,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "YES! THERE IS NO ENTRANCE FEE, SO PLEASE COME.",
+          "confidence": 0.969,
+          "text_ar": "نعم! الدخول مجاني، لذا تفضلوا بالحضور."
+        },
+        {
+          "text": "Hehe",
+          "confidence": 0.989,
+          "text_ar": "هيه"
+        },
+        {
+          "text": "Presented by PnM Produced by DONG-IL KIM Directed by DA-YOUNG PAR' EUN-YOUNGSI",
+          "confidence": 0.902,
+          "text_ar": "تقديم بي آند إم، إنتاج دونغ-إل كيم، إخراج دا-يونغ بارك وإيون-يونغ سي"
+        },
+        {
+          "text": "Cast",
+          "confidence": 0.993,
+          "text_ar": "طاقم التمثيل"
+        },
+        {
+          "text": "THE FATAL LOVE?",
+          "confidence": 0.984,
+          "text_ar": "الحب القاتل؟"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "The main actress is pretty. Uh? We are from the same class.",
+          "confidence": 0.946,
+          "text_ar": "الممثلة الرئيسية جميلة. أه؟ إنها معنا في نفس الصف."
+        },
+        {
+          "text": "SEO-YOUNG LEE JOO-YEON KANG,Creative Writing)",
+          "confidence": 0.811,
+          "text_ar": "سيو-يونغ لي، جو-يون كانغ (الكتابة الإبداعية)"
+        },
+        {
+          "text": "The marketing girls are also pretty...",
+          "confidence": 0.895,
+          "text_ar": "فتيات التسويق جميلات أيضاً..."
+        },
+        {
+          "text": "Is it because they are from the Drama Club?",
+          "confidence": 0.965,
+          "text_ar": "ألأنهن من نادي المسرح؟"
+        },
+        {
+          "text": "PEEK",
+          "confidence": 0.97,
+          "text_ar": "خلسة"
+        },
+        {
+          "text": "And...",
+          "confidence": 0.832,
+          "text_ar": "و..."
+        },
+        {
+          "text": "Wow... Their boobs are great...",
+          "confidence": 0.901,
+          "text_ar": "واو... صدورهن رائعة..."
+        },
+        {
+          "text": "AH, ALRIGHT! I WILL COME BY.",
+          "confidence": 0.916,
+          "text_ar": "آه، حسناً! سأمر بالحضور."
+        },
+        {
+          "text": "Hala",
+          "confidence": 0.875,
+          "text_ar": "هالا"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "THANK YOU! HOPE TO SEE YOU THERE~",
+          "confidence": 0.95,
+          "text_ar": "شكراً لكم! نراكم هناك~"
+        },
+        {
+          "text": "OUR PLAY IS FAMOUS FOR ITS FUN STORYLINE.",
+          "confidence": 0.937,
+          "text_ar": "مسرحيتنا مشهورة بقصتها الممتعة."
+        },
+        {
+          "text": "BE SURE TO COME.",
+          "confidence": 0.968,
+          "text_ar": "تأكدوا من الحضور."
+        },
+        {
+          "text": "PLEASE.",
+          "confidence": 0.994,
+          "text_ar": "أرجوكم."
+        },
+        {
+          "text": "AH,I WILL...",
+          "confidence": 0.882,
+          "text_ar": "آه، سأفعل..."
+        },
+        {
+          "text": "She is so cute...",
+          "confidence": 0.924,
+          "text_ar": "إنها لطيفة جداً..."
+        },
+        {
+          "text": "THE CLASS IS OVER~ IT IS TIME TO GO FORTHE PLAY FORTIEPLAY.",
+          "confidence": 0.895,
+          "text_ar": "انتهت المحاضرة~ حان وقت الذهاب للمسرحية."
+        },
+        {
+          "text": "IS THAT THE MILLENNIUMBUILDING? IT IS HUGE.",
+          "confidence": 0.919,
+          "text_ar": "أهذا هو مبنى الألفية؟ إنه ضخم."
+        },
+        {
+          "text": "ITISMYFIRST TIME TO BE HERE INMYENTIRE COLLEGE LIFE.",
+          "confidence": 0.958,
+          "text_ar": "هذه هي المرة الأولى لي هنا طوال حياتي الجامعية."
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.995,
+          "text_ar": "مانغا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "IS THAT THE ENTRANCE?",
+          "confidence": 0.946,
+          "text_ar": "أهذا هو المدخل؟"
+        },
+        {
+          "text": "IT MUST BE~",
+          "confidence": 0.953,
+          "text_ar": "لا بد أنه هو~"
+        },
+        {
+          "text": "THE DOOR ON THE RIGHT SIDE, PLEASE~",
+          "confidence": 0.945,
+          "text_ar": "الباب على الجانب الأيمن من فضلك~"
+        },
+        {
+          "text": "WE HAVE POPCORN AND DRINKS~",
+          "confidence": 0.953,
+          "text_ar": "لدينا فشار ومشروبات~"
+        },
+        {
+          "text": "LET ME GET ONE OFEACH~",
+          "confidence": 0.955,
+          "text_ar": "دعني أخذ واحداً من كل نوع~"
+        },
+        {
+          "text": "THANK YOU. ENJOY, SIR~",
+          "confidence": 0.957,
+          "text_ar": "شكراً لك. استمتع، سيدي~"
+        },
+        {
+          "text": "THANK YOU SO MUCH!!",
+          "confidence": 0.944,
+          "text_ar": "شكراً جزيلاً!!"
+        },
+        {
+          "text": "YUP, I AM AT THE ENTRANCE.",
+          "confidence": 0.95,
+          "text_ar": "نعم، أنا عند المدخل."
+        },
+        {
+          "text": "EXCUSE ME~",
+          "confidence": 0.956,
+          "text_ar": "عذراً~"
+        },
+        {
+          "text": "Phew...",
+          "confidence": 0.923,
+          "text_ar": "فوف..."
+        },
+        {
+          "text": "THE SEATS ARE ALMOST FULL. THEIR PLAY MUST BE QUITE POPULAR..",
+          "confidence": 0.935,
+          "text_ar": "المقاعد ممتلئة تقريبا. لا بد أن مسرحيتهم شائعة جداً.."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "SEVENDOLLARS FOR A POPCORN AND A DRINK SOUNDS ALITTLE HIGH...",
+          "confidence": 0.888,
+          "text_ar": "سبعة دولارات مقابل فشار ومشروب تبدو كثيرة بعض الشيء..."
+        },
+        {
+          "text": "WELL, AT LEAST THE PLAY IS FOR FREE.",
+          "confidence": 0.941,
+          "text_ar": "حسناً، على الأقل المسرحية مجانية."
+        },
+        {
+          "text": "It is coke zero. Dam",
+          "confidence": 0.982,
+          "text_ar": "إنه كولا زيرو. اللعنة"
+        },
+        {
+          "text": "THE USHERS ARE ALLPRETTY... IDID NOTKNOWTHATALL THE BEAUTIESONCAMPUS WERE HERE..",
+          "confidence": 0.919,
+          "text_ar": "المنظمات جميلات كلهن... لم أكن أعلم أن كل حسناوات الحرم الجامعي كن هنا.."
+        },
+        {
+          "text": "BECAUSEIONLY STAY AT HOME OR ON CAMPUS FOR MYCLASSES..",
+          "confidence": 0.944,
+          "text_ar": "لأنني أقيم دائماً في المنزل أو في الحرم الجامعي من أجل محاضراتي.."
+        },
+        {
+          "text": "IT IS ALMOST 3PM, AND MORE PEOPLE ARE COMING.",
+          "confidence": 0.955,
+          "text_ar": "قارب الوقت على الثالثة عصراً، والمزيد من الناس قادمون."
+        },
+        {
+          "text": "MUMBLE OH, IT IS ABOUT TO START.",
+          "confidence": 0.916,
+          "text_ar": "تمتمة.. أوه، وشيكة على البدء."
+        },
+        {
+          "text": "60 MANGADISTRICT.COM",
+          "confidence": 0.408,
+          "text_ar": "مانغا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "Sigh.",
+          "confidence": 0.972,
+          "text_ar": "تنهد."
+        },
+        {
+          "text": "SHE IS THE PRESIDENT OF THIS CLUB! Wow",
+          "confidence": 0.871,
+          "text_ar": "إنها رئيسة هذا النادي! واو"
+        },
+        {
+          "text": "CLAP CLAP GOSH... SHE IS FREAKING GORGEOUS.",
+          "confidence": 0.826,
+          "text_ar": "تصفيق تصفيق.. يا إلهي، إنها فاتنة جداً."
+        },
+        {
+          "text": "wow... SHE IS STUNNING.. MORE THAN ANYOTHER MEMBERS HERE.",
+          "confidence": 0.677,
+          "text_ar": "واو.. إنها مذهلة.. أكثر من أي عضوة أخرى هنا."
+        },
+        {
+          "text": "HELLO,IAM THE PRESIDENT OF THE DRAMA CLUB,P&M, NA-RI HAN!",
+          "confidence": 0.91,
+          "text_ar": "مرحباً، أنا رئيسة نادي المسرح (بي آند إم)، ناري هان!"
+        },
+        {
+          "text": "THANK YOU SO MUCH FOR COMING TO SEE OUR PLAY <THE FATAL LOVE> TODAY.",
+          "confidence": 0.931,
+          "text_ar": "شكراً جزيلاً لحضوركم لمشاهدة مسرحيتنا <الحب القاتل> اليوم."
+        },
+        {
+          "text": "SHE IS THE PRETTIEST ONE HERE.",
+          "confidence": 0.932,
+          "text_ar": "إنها الأجمل هنا."
+        },
+        {
+          "text": "YEAH... HER BODY IS SICK.",
+          "confidence": 0.937,
+          "text_ar": "نعم.. جسدها صارخ."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "ARE THEY ALL IDOL TRAINEES OR SOMETHING? THEY ARE ALL PRETTY!",
+          "confidence": 0.943,
+          "text_ar": "أهن متدربات آيادول أم ماذا؟ جميلات جميعهن!"
+        },
+        {
+          "text": "Whoa...",
+          "confidence": 0.909,
+          "text_ar": "واو..."
+        },
+        {
+          "text": "PLEASE ENJOY OUR PLAY~ THANK YOU!",
+          "confidence": 0.944,
+          "text_ar": "استمتعوا بمسرحيتنا~ شكراً لكم!"
+        },
+        {
+          "text": "Bye~",
+          "confidence": 0.925,
+          "text_ar": "وداعاً~"
+        },
+        {
+          "text": "CLAP-",
+          "confidence": 0.719,
+          "text_ar": "تصفيق-"
+        },
+        {
+          "text": "WOAH~",
+          "confidence": 0.985,
+          "text_ar": "واو~"
+        },
+        {
+          "text": "YOU ARE SO PRETTY!!!",
+          "confidence": 0.965,
+          "text_ar": "انت جميلة جداً!!!"
+        },
+        {
+          "text": "Woah- YEAH, IAGREE.",
+          "confidence": 0.94,
+          "text_ar": "واو- نعم، أوافقك الرأي."
+        },
+        {
+          "text": "ISN'T SHE SO DAMN SEXY?",
+          "confidence": 0.914,
+          "text_ar": "أليست مثيرة للغاية؟"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "OH. ACT ONE IS STARTING.",
+          "confidence": 0.965,
+          "text_ar": "أوه. الفصل الأول على وشك البدء."
+        },
+        {
+          "text": "MWN",
+          "confidence": 0.55,
+          "text_ar": "ممم"
+        },
+        {
+          "text": "IT IS HIM AGAIN. I HOPE WE WOULD JUST REMAIN AS FRIENDS..",
+          "confidence": 0.909,
+          "text_ar": "إنه هو مجدداً. أتمنى أن نبقى أصدقاء فقط.."
+        },
+        {
+          "text": "Phew.",
+          "confidence": 0.884,
+          "text_ar": "فوف."
+        },
+        {
+          "text": "THE MAIN ACTRESS IS PRETTY AND GOOD AT ACTING. ATAOTNO.",
+          "confidence": 0.627,
+          "text_ar": "الممثلة الرئيسية جميلة وتجيد التمثيل."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "BUT... IT IS A TYPICAL ROMANCESTORY WHERE AGUY IS INTO A GIRL WHILE SHE DOES NOT HAVE FEELINGSFOR HIM. SO CLICHÉ.",
+          "confidence": 0.851,
+          "text_ar": "لكن... إنها قصة رومانسية نمطية حيث يعجب فتاة بينما هي لا تبادلها المشاعر. مستهلكة جداً."
+        },
+        {
+          "text": "AND THE TITLE IS THE FATAL LOVE. IT SOUNDS TOO HARSH...",
+          "confidence": 0.934,
+          "text_ar": "والعنوان هو الحب القاتل. يبدو قاسياً بعض الشيء..."
+        },
+        {
+          "text": "WILL THEREBE APLOTTWIST?",
+          "confidence": 0.956,
+          "text_ar": "هل سيكون هناك تحول مفاجئ في الأحداث؟"
+        },
+        {
+          "text": "ICANDOIT.",
+          "confidence": 0.927,
+          "text_ar": "يمكنني فعلها."
+        },
+        {
+          "text": "INEED TO WRAP ITUP WEL. IT'S MY TIME!!",
+          "confidence": 0.909,
+          "text_ar": "يجب أن أنهي الأمر بشكل جيد. إنه وقتي!!"
+        },
+        {
+          "text": "SEO-YOUNG LEE, PLEASEBEREADY! IN TEN SECONDS!",
+          "confidence": 0.93,
+          "text_ar": "سيو-يونغ لي، استعدي من فضلك! خلال عشر ثوانٍ!"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.98,
+          "text_ar": "مانغا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "HELLO~ MAYICOME IN?",
+          "confidence": 0.962,
+          "text_ar": "مرحباً~ هل يمكنني الدخول؟"
+        },
+        {
+          "text": "I AM HERE...",
+          "confidence": 0.879,
+          "text_ar": "أنا هنا..."
+        },
+        {
+          "text": "HOW ARE YOU FEELING?",
+          "confidence": 0.919,
+          "text_ar": "كيف تشعرين؟"
+        },
+        {
+          "text": "SEO-YOUNG, YOU ARE HERE.",
+          "confidence": 0.978,
+          "text_ar": "سيو-يونغ، لقد أتيتِ."
+        },
+        {
+          "text": "PLEASEDO NOT TRY GETTING UP.",
+          "confidence": 0.958,
+          "text_ar": "أرجوكِ لا تحاولي النهوض."
+        },
+        {
+          "text": "I BROUGHT SOME PORRIDGEAND DRINKS. CAN YOU EAT?",
+          "confidence": 0.939,
+          "text_ar": "أحضبتُ بعض العصيدة والمشروبات. هل يمكنك الأكل؟"
+        },
+        {
+          "text": "AH... THANK YOU.",
+          "confidence": 0.919,
+          "text_ar": "آه... شكراً لك."
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "IS THERE ANYWAY ICAN HELP?",
+          "confidence": 0.934,
+          "text_ar": "هل هناك أي طريقة يمكنني المساعدة بها؟"
+        },
+        {
+          "text": "JUST FEEL FREE TO ASK.",
+          "confidence": 0.959,
+          "text_ar": "فقط لا تترددي في الطلب."
+        },
+        {
+          "text": "THERE ISONE THING THAT ONLY YOU CAN DO...",
+          "confidence": 0.826,
+          "text_ar": "هناك شيء واحد لا يمكن لأحد سواكِ فعله..."
+        },
+        {
+          "text": "WHAT ARE YOU DOING..?",
+          "confidence": 0.907,
+          "text_ar": "ماذا تفعل..؟"
+        },
+        {
+          "text": "lt is not in the script..",
+          "confidence": 0.92,
+          "text_ar": "هذا ليس موجوداً في النص.."
+        },
+        {
+          "text": "What is it?",
+          "confidence": 0.96,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.994,
+          "text_ar": "مانغا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "KYAAH!!",
+          "confidence": 0.995,
+          "text_ar": "آآه!!"
+        },
+        {
+          "text": "IT IS ALL BECAUSE OF YOU.",
+          "confidence": 0.95,
+          "text_ar": "كل هذا بسببك."
+        },
+        {
+          "text": "YOU SHOULD HAVE ACCEPTED MYLOVE..!!",
+          "confidence": 0.886,
+          "text_ar": "كان يجب أن تقبلي حبي..!!"
+        },
+        {
+          "text": "PLEASE STOPIT.! WHAT HAS GOTTEN INTO YOU?!",
+          "confidence": 0.94,
+          "text_ar": "توقف أرجوكِ..! ما الذي دهاكِ؟!"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "STOP!! WHAT ARE YOU DOING?! STOPIT!!",
+          "confidence": 0.901,
+          "text_ar": "توقف!! ماذا تفعل؟! توقف!!"
+        },
+        {
+          "text": "WAIT... WHAT ARE YOU DOING?!",
+          "confidence": 0.897,
+          "text_ar": "انتظر... ماذا تفعلين؟!"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.993,
+          "text_ar": "مانغا ديستريكت"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "loaga!!",
+          "confidence": 0.849,
+          "text_ar": "آهغ!!"
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.98,
+          "text_ar": "يتبع"
+        }
+      ]
+    }
+  ]
+}
