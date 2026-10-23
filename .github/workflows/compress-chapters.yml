@@ -54,6 +54,11 @@ on:
         required: false
         default: "800"
         type: string
+      normalize_width:
+        description: "[إنتاج فقط] توحيد مقياس عرض صفحات الفصل — تُحشى الصور الأضيق بهوامش بلون خلفيتها لعرض مرجعي مشترك قبل الضغط، فلا يختلف حجم الإطار/الرسم بين صورتين متتاليتين (يعالج ظهور إحداهما مائلة/أوسع). عطّله للسلوك السابق"
+        required: false
+        default: true
+        type: boolean
       skip_existing_chapters:
         description: "[إنتاج فقط] تخطي أي فصل محفوظ مسبقًا على فرع output (بنفس المانهوا ورقم الفصل) بدل إعادة تحميله وضغطه"
         required: false
@@ -351,6 +356,7 @@ jobs:
           WAYBACK_SECRET_KEY: ${{ secrets.WAYBACK_SECRET_KEY }}
           IMG_QUALITY: ${{ inputs.quality }}
           IMG_MAX_WIDTH: ${{ inputs.max_width }}
+          IMG_NORMALIZE_WIDTH: ${{ inputs.normalize_width && '1' || '0' }}
           IMG_FORMAT: ${{ inputs.output_format }}
           HTTP_CONCURRENCY: ${{ inputs.http_concurrency }}
           SKIP_EXISTING_CHAPTERS: ${{ inputs.skip_existing_chapters }}
