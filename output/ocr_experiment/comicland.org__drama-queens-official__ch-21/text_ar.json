@@ -1,0 +1,870 @@
+{
+  "manga_id": "comicland.org__drama-queens-official",
+  "chapter_num": "21",
+  "manga_title": "Drama Queens (Official)",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "AH... SERIOUSLY...",
+          "confidence": 0.913,
+          "text_ar": "آه... حقاً..."
+        },
+        {
+          "text": "I KEEP THINKING OF HIM.",
+          "confidence": 0.897,
+          "text_ar": "لا أزال أُفكر فيه."
+        },
+        {
+          "text": "SHOULDIASK HIMTO MEET?",
+          "confidence": 0.936,
+          "text_ar": "هل أطلب منه أن نلتقي؟"
+        },
+        {
+          "text": "REALLY?",
+          "confidence": 0.995,
+          "text_ar": "حقا؟"
+        },
+        {
+          "text": "Q U MANGADISTRICT.COM",
+          "confidence": 0.144,
+          "text_ar": "موقع مانجا"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SOGLAD THAT WE BECAME A TEAM.",
+          "confidence": 0.948,
+          "text_ar": "أنا سعيد جداً لأننا أصبحنا فريقاً."
+        },
+        {
+          "text": "YEAH GREAT.",
+          "confidence": 0.953,
+          "text_ar": "أجل، رائع."
+        },
+        {
+          "text": "WHAT ABOUT HER THEN? Haha",
+          "confidence": 0.963,
+          "text_ar": "ماذا عنها إذن؟ هاها"
+        },
+        {
+          "text": "AHAHAHA!",
+          "confidence": 0.996,
+          "text_ar": "هاهاها!"
+        },
+        {
+          "text": "ARE YOU OKAY?",
+          "confidence": 0.966,
+          "text_ar": "هل أنت بخير؟"
+        },
+        {
+          "text": "AHAHAHA!",
+          "confidence": 0.996,
+          "text_ar": "هاهاها!"
+        },
+        {
+          "text": "HMM?YEAH IAM OKAY.",
+          "confidence": 0.952,
+          "text_ar": "مم؟ أجل أنا بخير."
+        },
+        {
+          "text": "AHAHAHA!",
+          "confidence": 0.996,
+          "text_ar": "هاهاها!"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "CAN YOU HELP ME FINDINGAMATCHING NUMBER.?",
+          "confidence": 0.925,
+          "text_ar": "هل يمكنك مساعدتي في إيجاد رقم متطابق؟"
+        },
+        {
+          "text": "SO WHAT'S YOUR NUMBER?",
+          "confidence": 0.953,
+          "text_ar": "إذن ما هو رقمك؟"
+        },
+        {
+          "text": "2 NUMBER18..!",
+          "confidence": 0.557,
+          "text_ar": "رقم 2، 18..!"
+        },
+        {
+          "text": "OH...18... COME HERE.",
+          "confidence": 0.935,
+          "text_ar": "أه... 18... تعالي إلى هنا."
+        },
+        {
+          "text": "HEY.",
+          "confidence": 0.984,
+          "text_ar": "مهلاً."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "CANIHAVE YOUR NUMBER?",
+          "confidence": 0.972,
+          "text_ar": "هل يمكنني الحصول على رقمك؟"
+        },
+        {
+          "text": "HUH...?",
+          "confidence": 0.898,
+          "text_ar": "هاه...؟"
+        },
+        {
+          "text": "OH YEAH SURE...",
+          "confidence": 0.936,
+          "text_ar": "أه أجل بالطبع..."
+        },
+        {
+          "text": "WE NEED NUMBER TO CONTACT-",
+          "confidence": 0.967,
+          "text_ar": "نحتاج إلى الرقم لنتواصل-"
+        },
+        {
+          "text": "YEAH...",
+          "confidence": 0.92,
+          "text_ar": "أجل..."
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.998,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "SOO-YEON HAVEYOU HEARD OF THAT PLAY? I NEvER HEARD OF IT.",
+          "confidence": 0.865,
+          "text_ar": "سو-يون، هل سمعتِ بتلك المسرحية؟ لم أسمع بها قط."
+        },
+        {
+          "text": "WELL... IHEARD OF IT'S NAME-",
+          "confidence": 0.9,
+          "text_ar": "حسنأً... لقد سمعت باسمها-"
+        },
+        {
+          "text": "THE WRITER IS FAMOUS...",
+          "confidence": 0.943,
+          "text_ar": "الكاتب مشهور..."
+        },
+        {
+          "text": "ISHOULD DO SOME RESEARCH.",
+          "confidence": 0.965,
+          "text_ar": "عليّ إجراء بعض البحث."
+        },
+        {
+          "text": "Here-",
+          "confidence": 0.962,
+          "text_ar": "هنا-"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "SO WE SHOULD WATCH THAT ANYWAYS.",
+          "confidence": 0.963,
+          "text_ar": "إذن يجب أن نشاهدها على أي حال."
+        },
+        {
+          "text": "YEAH WHEN ARE YOU FREE?",
+          "confidence": 0.98,
+          "text_ar": "أجل، متى تكونين متفرغة؟"
+        },
+        {
+          "text": "ANYTIME-",
+          "confidence": 0.988,
+          "text_ar": "في أي وقت-"
+        },
+        {
+          "text": "HOW ABOUT THIS SATURDAY?",
+          "confidence": 0.946,
+          "text_ar": "ما رأيك بهذا السبت؟"
+        },
+        {
+          "text": "YEAH GREAT.",
+          "confidence": 0.993,
+          "text_ar": "أجل، رائع."
+        },
+        {
+          "text": "SO WE CAN MEET BEFORE THE PLAY STARTS.",
+          "confidence": 0.907,
+          "text_ar": "إذن يمكننا أن نلتقي قبل أن تبدأ المسرحية."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "EXCHANGE YOUR NUMBERS AND SEND ME A MESSAGE-",
+          "confidence": 0.955,
+          "text_ar": "تبادلا أرقامكما وأرسلا لي رسالة-"
+        },
+        {
+          "text": "Ginseng candy",
+          "confidence": 0.991,
+          "text_ar": "حلوى الجينسنغ"
+        },
+        {
+          "text": "Ginseng candy",
+          "confidence": 0.97,
+          "text_ar": "حلوى الجينسنغ"
+        },
+        {
+          "text": "GIO",
+          "confidence": 0.543,
+          "text_ar": "جي يو"
+        },
+        {
+          "text": "I WILL SEND YOU TICKETS AFTER CHECKING~",
+          "confidence": 0.954,
+          "text_ar": "سأرسل لكما التذاكر بعد التحقق~"
+        },
+        {
+          "text": "GOODBYE~ HAVEA LOVELY DAY~",
+          "confidence": 0.923,
+          "text_ar": "وداعاً~ أتمنى لكما يوماً رائعاً~"
+        },
+        {
+          "text": "How adorable~",
+          "confidence": 0.969,
+          "text_ar": "كم هي رائعة~"
+        },
+        {
+          "text": "IWILL TEXT HER-",
+          "confidence": 0.978,
+          "text_ar": "سأراسلها-"
+        },
+        {
+          "text": "OH THANK YOU-",
+          "confidence": 0.967,
+          "text_ar": "أه شكراً لك-"
+        },
+        {
+          "text": "HUFF!",
+          "confidence": 0.993,
+          "text_ar": "لثه!"
+        },
+        {
+          "text": "ARGH-",
+          "confidence": 0.989,
+          "text_ar": "آرخ-"
+        },
+        {
+          "text": "TAP",
+          "confidence": 0.969,
+          "text_ar": "تربيت"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I WANTED TO BE IN SAME GROUP WITH SOO-YEON.",
+          "confidence": 0.952,
+          "text_ar": "تمنيت لو كنت في نفس المجموعة مع سو-يون."
+        },
+        {
+          "text": "HAHA...",
+          "confidence": 0.957,
+          "text_ar": "هاها..."
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.995,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.992,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "DO YOU HAVE AN APPOINTMENT?",
+          "confidence": 0.933,
+          "text_ar": "هل لديك موعد؟"
+        },
+        {
+          "text": "THEN COME IT WITH MEIWILL TREAT YOU.",
+          "confidence": 0.931,
+          "text_ar": "إذن تعال معي وسأتكفل بضيافتك."
+        },
+        {
+          "text": "YOU HAVE LUNCH APPOINTMENT?",
+          "confidence": 0.98,
+          "text_ar": "هل لديك موعد لتناول الغداء؟"
+        },
+        {
+          "text": "IF YOU DON'T COME WITH ME I WILL TREAT YOU.",
+          "confidence": 0.953,
+          "text_ar": "إن لم تأتِ معي فسأتكفل بضيافتك."
+        },
+        {
+          "text": "SORRYIHAVE APPOINTMENT WITH MY FRIEND.",
+          "confidence": 0.954,
+          "text_ar": "عذراً لدي موعد مع صديقي."
+        },
+        {
+          "text": "CANITAKE A RAIN CHECK?",
+          "confidence": 0.934,
+          "text_ar": "هل يمكننا تأجيله لوقت لاحق؟"
+        },
+        {
+          "text": "NOPE.",
+          "confidence": 0.995,
+          "text_ar": "كلا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THEN WALK ME TO ENGINEER MAJOR BUILDING.",
+          "confidence": 0.945,
+          "text_ar": "إذن رافقني إلى مبنى تخصص الهندسة."
+        },
+        {
+          "text": "IAM SO LONELY.",
+          "confidence": 0.893,
+          "text_ar": "أنا وحيد للغاية."
+        },
+        {
+          "text": "so TROUBLESOME.",
+          "confidence": 0.84,
+          "text_ar": "كم أنت مزعج."
+        },
+        {
+          "text": "AH YOU ARE ENGINEERING MAJOR.",
+          "confidence": 0.922,
+          "text_ar": "آه، أنت متخصص في الهندسة."
+        },
+        {
+          "text": "WHAT SHALL WE HAVE?",
+          "confidence": 0.951,
+          "text_ar": "ماذا سنأكل؟"
+        },
+        {
+          "text": "I AM FINE WITH EVERYTHING.",
+          "confidence": 0.946,
+          "text_ar": "أنا لا مانع لدي في أي شيء."
+        },
+        {
+          "text": "11:510 P&M NA-RI",
+          "confidence": 0.918,
+          "text_ar": "11:51 مساءً ناري"
+        },
+        {
+          "text": "P&MNA-RI We are gonna have group dinner, wanna join?",
+          "confidence": 0.949,
+          "text_ar": "ناري: سنقيم عشاءً جماعياً، هل ترغبين بالانضمام؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I feel awkward...",
+          "confidence": 0.97,
+          "text_ar": "أشعر بالحرج..."
+        },
+        {
+          "text": "After doing it with her so much.…. lt is awkward to see her... see ner...",
+          "confidence": 0.861,
+          "text_ar": "بعد فعل ذلك معها كثيراً... من المرجح أن أراها... أن أراها..."
+        },
+        {
+          "text": "P&MNA-RI EUN-HEE is coming too.",
+          "confidence": 0.971,
+          "text_ar": "ناري: إيون-هي قادمة أيضاً."
+        },
+        {
+          "text": "On my way.",
+          "confidence": 0.946,
+          "text_ar": "في طريقه."
+        },
+        {
+          "text": "I can't say no to EUN-HEE.",
+          "confidence": 0.957,
+          "text_ar": "لا يمكنني رفض طلب إيون-هي."
+        },
+        {
+          "text": "HEY!EUN-HEE! YOU CRAZY?!",
+          "confidence": 0.961,
+          "text_ar": "مهلاً! إيون-هي! هل جننتِ؟!"
+        },
+        {
+          "text": "WHAT ARE YOU DOING HERE?",
+          "confidence": 0.962,
+          "text_ar": "ما الذي تفعلينه هنا؟"
+        },
+        {
+          "text": "HEY SOO-YEON!",
+          "confidence": 0.976,
+          "text_ar": "مهلاً سو-يون!"
+        },
+        {
+          "text": "HELLO~",
+          "confidence": 0.974,
+          "text_ar": "مرحباً~"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "ONLINE CLASS HAS A GROUP ASSIGNMENT!",
+          "confidence": 0.947,
+          "text_ar": "الفصل الدراسي عبر الإنترنت يحتوي على واجب جماعي!"
+        },
+        {
+          "text": "PAT",
+          "confidence": 0.985,
+          "text_ar": "تربيت"
+        },
+        {
+          "text": "PAT 3 =",
+          "confidence": 0.185,
+          "text_ar": "تربيت..."
+        },
+        {
+          "text": "CALM DOWN, DA-YOUNG.",
+          "confidence": 0.939,
+          "text_ar": "اهدأي يا دا-يونغ بارك."
+        },
+        {
+          "text": "WELL WHAT CAN WE DO?",
+          "confidence": 0.953,
+          "text_ar": "حسناً، ماذا يمكننا أن نفعله؟"
+        },
+        {
+          "text": "IT'S ALL YOUR FAULT!",
+          "confidence": 0.971,
+          "text_ar": "الأمر كله خطأك!"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.997,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "Buy me tasty 的",
+          "confidence": 0.269,
+          "text_ar": "اشتري لي شيئاً شهياً."
+        },
+        {
+          "text": "OH, ISN'T THAT JAE-WOO? WANNA GO HAVE LUNCH WITH ME?",
+          "confidence": 0.942,
+          "text_ar": "أوه، أليس هذا جاي-وو؟ أتريدين الذهاب لتناول الغداء معي؟"
+        },
+        {
+          "text": "OH MY JAE-WOO~ BLAH BLAH.",
+          "confidence": 0.933,
+          "text_ar": "أوه يا جاي-وو~ بلا بلا."
+        },
+        {
+          "text": "AH. Hmph",
+          "confidence": 0.991,
+          "text_ar": "آه. تبّاً"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HE HAS APPOINTMENT WITH FRIEND.",
+          "confidence": 0.983,
+          "text_ar": "لديه موعد مع صديق."
+        },
+        {
+          "text": "WHY?",
+          "confidence": 0.996,
+          "text_ar": "لماذا؟"
+        },
+        {
+          "text": "COME WITH US. He is so annoying",
+          "confidence": 0.958,
+          "text_ar": "تعالي معنا. إنه مزعج حقاً"
+        },
+        {
+          "text": "COME WITH US.",
+          "confidence": 0.973,
+          "text_ar": "تعالي معنا."
+        },
+        {
+          "text": "Hmmooo",
+          "confidence": 0.736,
+          "text_ar": "همممم"
+        },
+        {
+          "text": "WE MIGHT HAVE TO LINE UP IF WE DON'T HURRY. LET'S GO-",
+          "confidence": 0.91,
+          "text_ar": "قد نحتاج للانتظار في الطابور إن لم نسرع. هيا بنا-"
+        },
+        {
+          "text": "ANDIWANTYOU TO TREAT ME TOO.",
+          "confidence": 0.96,
+          "text_ar": "وأريدك أن تعزمني أيضاً."
+        },
+        {
+          "text": "WHY?",
+          "confidence": 0.995,
+          "text_ar": "لماذا؟"
+        },
+        {
+          "text": "YES~ THAT'S MORE LIKE IT!",
+          "confidence": 0.951,
+          "text_ar": "نعم~ هكذا يعجبني الأمر!"
+        },
+        {
+          "text": "I JUST GOT MY SALARY~ I WILL PAY FOR SOO-YEON.",
+          "confidence": 0.947,
+          "text_ar": "لقد استلمت راتبي للتو~ سأدفع عن سو-يون."
+        },
+        {
+          "text": "TREAT ME TOO!",
+          "confidence": 0.97,
+          "text_ar": "اعزمني أنت أيضاً!"
+        },
+        {
+          "text": "OKAY LET'S GO~",
+          "confidence": 0.979,
+          "text_ar": "حسناً هيا بنا~"
+        },
+        {
+          "text": "She will be joining for dinner, shall I ask her to come?",
+          "confidence": 0.959,
+          "text_ar": "ستنضم إلينا على العشاء، هل أطلب منها الحضور؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "SHHH.",
+          "confidence": 0.989,
+          "text_ar": "ششش."
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.997,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.996,
+          "text_ar": "هاها"
+        },
+        {
+          "text": "DO YOU HAVE DINNER APPOINTMENT WITH FRIENDS?",
+          "confidence": 0.943,
+          "text_ar": "هل لديك موعد عشاء مع أصدقائك؟"
+        },
+        {
+          "text": "SQUIRM",
+          "confidence": 0.977,
+          "text_ar": "تململ"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "NOIHAVEPART TIME JOB IN THE EVENING.",
+          "confidence": 0.938,
+          "text_ar": "لا، لدي عمل جزئي في المساء."
+        },
+        {
+          "text": "OHREALLY?",
+          "confidence": 0.989,
+          "text_ar": "أحقاً؟"
+        },
+        {
+          "text": "Huh.?",
+          "confidence": 0.957,
+          "text_ar": "هاه..؟"
+        },
+        {
+          "text": "WHY? WHAT'S THE MATTER?",
+          "confidence": 0.979,
+          "text_ar": "لماذا؟ ما الأمر؟"
+        },
+        {
+          "text": "Hehe",
+          "confidence": 0.99,
+          "text_ar": "هيهيهي"
+        },
+        {
+          "text": "NOTHING. I WAS JUST-",
+          "confidence": 0.971,
+          "text_ar": "لا شيء. كنت فقط-"
+        },
+        {
+          "text": "EUN-HEE, HOW ABOUT PIZZA?",
+          "confidence": 0.923,
+          "text_ar": "إيون-هي، ما رأيك بالبيتزا؟"
+        },
+        {
+          "text": "THERE'S NICE PLACE OVER THERE.",
+          "confidence": 0.976,
+          "text_ar": "يوجد مكان رائع هناك."
+        },
+        {
+          "text": "Pizza...",
+          "confidence": 0.957,
+          "text_ar": "بيتزا..."
+        },
+        {
+          "text": "OH! SOUNDS GOOD~",
+          "confidence": 0.919,
+          "text_ar": "أوه! يبدو رائحاً~"
+        },
+        {
+          "text": "THEIR PEPPERONI PIZZA IS GREAT.",
+          "confidence": 0.99,
+          "text_ar": "بيتزا الببروني لديهم رائعة."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "NA-RI lied to me!",
+          "confidence": 0.986,
+          "text_ar": "ناري هان كذبت علي!"
+        },
+        {
+          "text": "Pfft",
+          "confidence": 0.969,
+          "text_ar": "بفف"
+        },
+        {
+          "text": "NA-RI..",
+          "confidence": 0.889,
+          "text_ar": "ناري..."
+        },
+        {
+          "text": "WHAT ARE YOU DOING THERE?",
+          "confidence": 0.941,
+          "text_ar": "ماذا تفعلين هناك؟"
+        },
+        {
+          "text": "COMING!",
+          "confidence": 0.995,
+          "text_ar": "أنا قادمة!"
+        },
+        {
+          "text": "QUEENS DRAMA *",
+          "confidence": 0.155,
+          "text_ar": "دراما الملكات *"
+        },
+        {
+          "text": "Story : Shrinell Art : QRQ",
+          "confidence": 0.858,
+          "text_ar": "القصة: شري نيل الرسم: QRQ"
+        },
+        {
+          "text": "UNI OLO",
+          "confidence": 0.898,
+          "text_ar": "يونيكولو"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "OHIAM ALMOST THERE~ (NOT REALLY)",
+          "confidence": 0.971,
+          "text_ar": "أوه أنا على وشك الوصول~ (ليس حقاً)"
+        },
+        {
+          "text": "OH YEAH I KNOW THAT PLACE~ (NOPE)",
+          "confidence": 0.96,
+          "text_ar": "أوه أجل أعرف ذلك المكان~ (كلا)"
+        },
+        {
+          "text": "ACROSS THAT BUILDING?",
+          "confidence": 0.974,
+          "text_ar": "أعبر ذلك المبنى؟"
+        },
+        {
+          "text": "OH YEAH I SEE YOU- (NOPE)",
+          "confidence": 0.969,
+          "text_ar": "أوه أجل أراكِ- (كلا)"
+        },
+        {
+          "text": "OH THAT ONE?",
+          "confidence": 0.96,
+          "text_ar": "أوه ذلك؟"
+        },
+        {
+          "text": "Hairc",
+          "confidence": 0.979,
+          "text_ar": "صالون شعر"
+        },
+        {
+          "text": "HOL HUL Pet",
+          "confidence": 0.404,
+          "text_ar": "متجر حيوانات أليفة"
+        },
+        {
+          "text": "ADT",
+          "confidence": 0.784,
+          "text_ar": "نظام حماية"
+        },
+        {
+          "text": "THAT'S NA-RI. SHOULDIGO SAYHI?",
+          "confidence": 0.987,
+          "text_ar": "تلك ناري. هل أذهب وألقي التحية؟"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "IS SHE WAITING FOR SOMEONE?",
+          "confidence": 0.973,
+          "text_ar": "أهل تنتظر أحداً؟"
+        },
+        {
+          "text": "ACI",
+          "confidence": 0.705,
+          "text_ar": "تكييف"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.992,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "THAT'S JAE-WOO.",
+          "confidence": 0.996,
+          "text_ar": "هذا جاي-وو."
+        },
+        {
+          "text": "CCT",
+          "confidence": 0.932,
+          "text_ar": "كاميرا مراقبة"
+        },
+        {
+          "text": "HE IS MEETING HER ALONE?",
+          "confidence": 0.961,
+          "text_ar": "هل يقابلها بمفرده؟"
+        },
+        {
+          "text": "AVA",
+          "confidence": 0.861,
+          "text_ar": "مصعد"
+        },
+        {
+          "text": "IZAKAYA",
+          "confidence": 0.958,
+          "text_ar": "إيزاكايا"
+        },
+        {
+          "text": "WAITIHAVE TO GO IN THERE- How-awkward...",
+          "confidence": 0.859,
+          "text_ar": "مهل يجب أن أذهب إلى هناك- يا لها من حرج..."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.992,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "THEY ARE GOING IN THERE!? THAT'S A BAR!",
+          "confidence": 0.953,
+          "text_ar": "أهذاهبان إلى هناك؟! إنه حانة!"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "IAM NOT FOLLOWING THEM..",
+          "confidence": 0.911,
+          "text_ar": "أنا لا أتبعهما.."
+        },
+        {
+          "text": "IHAVE AN APPOINTMENT THERE TOO-",
+          "confidence": 0.93,
+          "text_ar": "لدي موعد هناك أيضاً-"
+        },
+        {
+          "text": "HOL Pet oo",
+          "confidence": 0.573,
+          "text_ar": "متجر حيوانات"
+        },
+        {
+          "text": "11-3 ADI",
+          "confidence": 0.863,
+          "text_ar": "عقار"
+        },
+        {
+          "text": "corv",
+          "confidence": 0.941,
+          "text_ar": "قهوة"
+        },
+        {
+          "text": "ons1 OM",
+          "confidence": 0.281,
+          "text_ar": "سوبرماركت"
+        },
+        {
+          "text": "Oh ISHOULD WAIT A BITSO THAT THEY ABITSOTHATTHEY WOULDN'T SEE ME. WOLDN'TSEEME",
+          "confidence": 0.706,
+          "text_ar": "أوه يجب أن أستنتظر قليلاً حتى لا يرانني."
+        },
+        {
+          "text": "To be continued",
+          "confidence": 0.941,
+          "text_ar": "يتبع"
+        },
+        {
+          "text": "MANGADISTRICT.COM",
+          "confidence": 0.994,
+          "text_ar": "MANGADISTRICT.COM"
+        }
+      ]
+    }
+  ]
+}
