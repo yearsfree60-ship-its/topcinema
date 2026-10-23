@@ -232,6 +232,11 @@ MAX_WIDTH = _clamp_int(os.environ.get("IMG_MAX_WIDTH", "700"), 700, 50, 10000, "
 # عند التفعيل (الافتراضي) تُحشى الصور الأضيق بهوامش بلون خلفيتها لتصل لعرض مرجعي مشترك قبل الضغط،
 # فيبقى المقياس الأصلي كما عُرض في الموقع. IMG_NORMALIZE_WIDTH=0 للرجوع للسلوك السابق.
 NORMALIZE_WIDTH = os.environ.get("IMG_NORMALIZE_WIDTH", "1").strip().lower() not in ("0", "false", "no", "off")
+# [جودة تكيّفية حسب نوع الصفحة] صفحات شبه فارغة/ألوان مسطحة بلا تدرجات ولا خطوط كثيفة تتحمّل جودة أقل بلا فرق
+# مرئي، فتُخفَّض جودتها قليلًا؛ أما الصفحات الكثيفة (نص/خطوط دقيقة) أو ذات التدرجات (خطر banding) فتبقى على
+# الجودة المحدَّدة بلا أي رفع — فلا يكبر حجم أي صفحة عن السلوك السابق أبدًا. IMG_ADAPTIVE_QUALITY=0 للتعطيل.
+ADAPTIVE_QUALITY = os.environ.get("IMG_ADAPTIVE_QUALITY", "1").strip().lower() not in ("0", "false", "no", "off")
+ADAPTIVE_FLAT_DROP = _clamp_int(os.environ.get("IMG_ADAPTIVE_FLAT_DROP", "8"), 8, 0, 30, "IMG_ADAPTIVE_FLAT_DROP")
 OUTLIER_WIDTH_RATIO = 1.5  # صورة أعرض من 1.5× الوسيط (شعار/بانر) تُصغَّر للعرض المرجعي بدل أن تُصغِّر بقية الصفحات
 CHAPTER_URLS_RAW = os.environ.get("CHAPTER_URLS", "")
 OUTPUT_DIR = Path(os.environ.get("OUTPUT_DIR", "output"))
@@ -2159,6 +2164,38 @@ def _normalize_to_width(img: Image.Image, ref_w: int) -> Image.Image:
     return canvas
 
 
+def _page_profile(img: Image.Image) -> tuple[float, int]:
+    """(كثافة الحواف، عدد المستويات الرمادية الشائعة) من نسخة رمادية مصغّرة 256px عرضًا — قياس رخيص (أجزاء من الثانية).
+    كثرة المستويات الشائعة مع غياب الحواف = تدرجات لونية ناعمة (خطر banding)، وقلتها = ألوان مسطحة."""
+    from PIL import ImageChops
+    g = img.convert("L")
+    tw = 256
+    th = max(2, round(g.height * tw / max(1, g.width)))
+    g = g.resize((tw, th), Image.BILINEAR)
+    w, h = g.size
+    dx = ImageChops.difference(g.crop((0, 0, w - 1, h - 1)), g.crop((1, 0, w, h - 1)))
+    dy = ImageChops.difference(g.crop((0, 0, w - 1, h - 1)), g.crop((0, 1, w - 1, h)))
+    hist = ImageChops.lighter(dx, dy).histogram()
+    total = max(1, sum(hist))
+    gh = g.histogram()
+    gtotal = max(1, sum(gh))
+    levels = sum(1 for c in gh if c >= 0.002 * gtotal)
+    return sum(hist[24:]) / total, levels
+
+
+def _adaptive_quality(img: Image.Image, quality: int) -> int:
+    """يخفّض الجودة قليلًا للصفحات المسطحة/شبه الفارغة فقط؛ لا يرفعها لأي صفحة أبدًا (لا زيادة حجم)."""
+    if not ADAPTIVE_QUALITY or ADAPTIVE_FLAT_DROP <= 0:
+        return quality
+    try:
+        edge, levels = _page_profile(img)
+    except Exception:
+        return quality
+    if edge < 0.03 and levels <= 14:  # شبه فارغة/مسطحة: لا خطوط كثيفة ولا تدرجات
+        return max(10, quality - ADAPTIVE_FLAT_DROP)
+    return quality
+
+
 def compress_image(raw_bytes: bytes, max_width: int, quality: int, img_format: str = "webp",
                    ref_width: int = 0) -> bytes:
     img = Image.open(BytesIO(raw_bytes))
@@ -2185,6 +2222,8 @@ def compress_image(raw_bytes: bytes, max_width: int, quality: int, img_format: s
         new_w = max(1, int(img.width * scale))
         new_h = max(1, int(img.height * scale))
         img = img.resize((new_w, new_h), Image.LANCZOS)
+
+    quality = _adaptive_quality(img, quality)
 
     out = BytesIO()
     if img_format == "avif":
@@ -2693,7 +2732,6 @@ async def main():
             # خطأ كتابة/دفع لا يجوز أن يُسقط بقية الفصول؛ الفصل يبقى في results ويلتقطه الدفع النهائي
             print(f"  ⚠️ خطأ أثناء تسجيل/دفع نتيجة الفصل (يُتابَع، والدفع النهائي سيعيد المحاولة): {type(e).__name__}: {e}")
 
-    
     async def _handle_result_inner(url, result):
         nonlocal pushed_upto
         if result is None:
