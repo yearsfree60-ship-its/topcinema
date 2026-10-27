@@ -140,6 +140,12 @@ on:
         default: true
         type: boolean
 
+      source_korean:
+        description: "[إنتاج_كامل فقط] المصدر كوري (غير مفعّل افتراضيًا): تُستخرَج النصوص بنموذج OCR الكوري (korean_PP-OCRv5_mobile_rec — يقرأ الهنغول والإنجليزية والأرقام)، وتُترجَم من الكورية مباشرةً إلى العربية، وتُطبَّق بفلترة المؤثرات الصوتية قاعدة الحد الأدنى للحروف فقط (قوائم SFX الإنجليزية لا تنطبق). ملفات الإخراج تبقى text_en.* للتوافق مع القارئ. يُتجاهَل بالأوضاع الأخرى. أول تشغيلة به تنزّل النموذج الكوري (~14MB) ثم يُخزَّن بالكاش"
+        required: false
+        default: false
+        type: boolean
+
       watermark_texts:
         description: "[استخراج_نص + إنتاج_كامل + إعادة_ترجمة] اختياري: نصوص علامة مائية/اسم موقع تُحذَف يدويًا من ملف الترجمة (مفصولة بفاصلة، مثل: azorafly, www.site.com). الحذف التلقائي للجمل القصيرة المتكررة بمعظم الصفحات يعمل دومًا بلا حاجة لتعبئتها"
         required: false
@@ -167,11 +173,6 @@ on:
         description: "[تشخيص فقط] مختبر التجاوز (يعمل تلقائيًا عند ظهور تحدي Cloudflare غير محلول): السماح بتجربة Cloudflare WARP المجانية (يثبّته ويشغّله بوضع proxy محلي للاختبار فقط ثم يفصله). عطّله لو أردت تجارب المتصفح المباشرة فقط (أسرع)"
         required: false
         default: true
-        type: boolean
-      bypass_lab_test_all:
-        description: "[تشخيص فقط] مختبر التجاوز: اختبار كل الاستراتيجيات حتى بعد نجاح إحداها (للمقارنة الكاملة). الافتراضي: التوقف عند أول فائز لتوفير الزمن"
-        required: false
-        default: false
         type: boolean
 
 permissions:
@@ -309,7 +310,7 @@ jobs:
             ~/.paddlex
             ~/.paddleocr
             ~/.paddlehub
-          key: paddleocr-models-en-v1
+          key: paddleocr-models-${{ (inputs.source_korean && inputs.mode == 'إنتاج_كامل') && 'ko' || 'en' }}-v1
 
       # [تعديل] لم يعد هناك أي خيار لتصفير الأرشيف. التشغيلة تستأنف دومًا
       # على فرع output الحالي بتاريخه الكامل إن وُجد، وإلا تُنشئه فارغًا
@@ -381,12 +382,14 @@ jobs:
           OCR_PAGE_LAYOUT: ${{ inputs.page_layout }}
           OCR_SFX_FILTER: ${{ inputs.sfx_filter }}
           TRANSLATE_TO_ARABIC: ${{ inputs.translate_to_arabic }}
+          SOURCE_LANG: ${{ (inputs.source_korean && inputs.mode == 'إنتاج_كامل') && 'ko' || 'en' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_TRANSLATION_MODEL: ${{ inputs.translation_model }}
           WATERMARK_TEXTS: ${{ inputs.watermark_texts }}
           DEEP_DIAGNOSTIC: ${{ inputs.deep_diagnostic }}
           BYPASS_LAB_WARP: ${{ inputs.bypass_lab_warp }}
-          BYPASS_LAB_TEST_ALL: ${{ inputs.bypass_lab_test_all }}
+          # [مُزال كمدخل] حدّ GitHub الأقصى 25 مدخلًا لـworkflow_dispatch؛ أُفرِغ مكانه لمدخل source_korean. القيمة الافتراضية السابقة (false = التوقف عند أول فائز) ثابتة هنا.
+          BYPASS_LAB_TEST_ALL: 'false'
           OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
           URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
           RUN_ID: ${{ github.run_id }}
