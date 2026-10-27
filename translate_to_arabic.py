@@ -189,7 +189,7 @@ _RESPONSE_SCHEMA = {
     "required": ["translations", "glossary_additions"],
 }
 
-_SYSTEM_INSTRUCTION = (
+_SYSTEM_INSTRUCTION_EN = (
     "أنت مترجم أدبي محترف متخصّص بترجمة حوار المانهوا/المانجا من الإنجليزية "
     "(نص مُستخرَج عبر OCR من فصل، الأصل كوري/صيني مترجَم للإنجليزية أصلًا قبل "
     "استخراجه) إلى العربية الفصحى المعاصرة السلسة المناسبة لحوار القصص "
@@ -203,6 +203,30 @@ _SYSTEM_INSTRUCTION = (
     "كما وردتا — بلا حذف أي عنصر أو دمج عناصر أو إضافة عناصر غير موجودة "
     "بالإدخال."
 )
+
+# [مصدر كوري] نفس القواعد البنيوية حرفيًا (page/index، glossary) مع تكييف اللغة المصدر. حقل name_en بالمخطط
+# يبقى اسمه للتوافق مع ملفات glossary الحالية، لكنه هنا يحمل الاسم الكوري بكتابته الأصلية (هنغول).
+_SYSTEM_INSTRUCTION_KO = (
+    "أنت مترجم أدبي محترف متخصّص بترجمة حوار المانهوا الكورية من الكورية مباشرةً "
+    "(نص هنغول مُستخرَج عبر OCR من فصل كوري أصلي، وقد يحوي أخطاء OCR كحرف/مقطع "
+    "خاطئ أو سطر مقطوع — صحّحها بالسياق قدر المستطاع دون اختلاق معانٍ غير موجودة) "
+    "إلى العربية الفصحى المعاصرة السلسة المناسبة لحوار القصص المصوَّرة. ليست ترجمة "
+    "حرفية جافة — راعِ مستويات الخطاب والألقاب الكورية (الاحترام/العامية، 님/씨/형/"
+    "오빠/선배…) بما يناسب العربية ويحفظ العلاقة بين المتحدثين ونبرة كل شخصية "
+    "ومشاعرها وسياق المشهد، وفسِّر المحاكيات الصوتية الكورية بما يناسب السياق "
+    "العربي (لا نقلها حرفيًا صوتيًا). التزم حرفيًا بأي اسم ضمن قائمة المصطلحات "
+    "المعتمدة (glossary) المرفقة أدناه إن وُجدت — لا تُغيِّر ترجمته أبدًا؛ المفتاح "
+    "فيها هو الاسم بالهنغول والقيمة ترجمته العربية. أي اسم علم/شخصية جديد لم يظهر "
+    "بالقائمة، اقترح له كتابة عربية ثابتة واحدة والتزم بها طوال هذا الفصل، وأضِفه "
+    "لقائمة glossary_additions بحيث يحمل الحقل name_en الاسم الكوري بالهنغول كما "
+    "ورد بالنص. أعد بالضبط عنصر ترجمة واحد لكل عنصر إدخال، محتفظًا تمامًا بنفس "
+    "قيمتي page وindex كما وردتا — بلا حذف أي عنصر أو دمج عناصر أو إضافة عناصر "
+    "غير موجودة بالإدخال."
+)
+
+
+def _system_instruction(source_lang: str) -> str:
+    return _SYSTEM_INSTRUCTION_KO if source_lang == "ko" else _SYSTEM_INSTRUCTION_EN
 
 
 _WM_NORM_RE = re.compile(r"[\W_]+", re.UNICODE)
@@ -317,7 +341,7 @@ async def _respect_rate_limit() -> None:
         await asyncio.sleep(wait)
 
 
-async def _call_gemini_with_retry(prompt: str) -> dict | None:
+async def _call_gemini_with_retry(prompt: str, system_instruction: str | None = None) -> dict | None:
     from google.genai import types
 
     global _use_thinking
@@ -329,7 +353,7 @@ async def _call_gemini_with_retry(prompt: str) -> dict | None:
         await _respect_rate_limit()
         try:
             kw = dict(
-                system_instruction=_SYSTEM_INSTRUCTION,
+                system_instruction=system_instruction or _SYSTEM_INSTRUCTION_EN,
                 response_mime_type="application/json",
                 response_schema=_RESPONSE_SCHEMA,
                 temperature=0.3,
@@ -400,17 +424,21 @@ async def translate_chapter_to_arabic(chapter_result: dict, output_dir: Path, ou
     manga_id = chapter_result["manga_id"]
     chapter_num = chapter_result["chapter_num"]
     manga_title = chapter_result.get("manga_title") or manga_id
+    # [مصدر كوري] تُحدَّد من الفصل نفسه (حقل source_lang يكتبه ocr_extraction للفصول الكورية فقط)، فيعمل
+    # وضع إعادة_ترجمة لاحقًا بصحة حتى لو تشغيلته بلا خيار الكورية. غيابه = إنجليزي كما كان.
+    source_lang = "ko" if chapter_result.get("source_lang") == "ko" else "en"
+    system_instruction = _system_instruction(source_lang)
 
     glossary = _load_glossary(output_dir, manga_id)
 
     n_chunks = -(-len(items) // GEMINI_CHUNK_SIZE)
     size = -(-len(items) // n_chunks)
     chunks = [items[i:i + size] for i in range(0, len(items), size)]
-    print(f"  🌐 [ترجمة] إرسال {len(items)} جملة لـGemini ({GEMINI_MODEL_NAME}) — الفصل {chapter_num}"
+    print(f"  🌐 [ترجمة{' كوري→عربي' if source_lang == 'ko' else ''}] إرسال {len(items)} جملة لـGemini ({GEMINI_MODEL_NAME}) — الفصل {chapter_num}"
           + (f" ({len(chunks)} دفعات متوازية)" if len(chunks) > 1 else ""))
     prompts = [_build_prompt(c, glossary, context_before=(chunks[k - 1][-4:] if k else None))
                for k, c in enumerate(chunks)]
-    results = await asyncio.gather(*[_call_gemini_with_retry(pr) for pr in prompts])
+    results = await asyncio.gather(*[_call_gemini_with_retry(pr, system_instruction) for pr in prompts])
     if any(r is None for r in results):
         return []   # أي دفعة فاشلة ← الفصل كله لطابور إعادة المحاولة (لا ترجمة ناقصة صامتة)
     result = {"translations": [t for r in results for t in (r.get("translations") or [])],
