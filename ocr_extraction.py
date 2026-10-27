@@ -322,6 +322,21 @@ OCR_DETECTION_MODEL_NAME = (
 )
 
 
+# [جديد — خيار «المصدر كوري» بوضع الإنتاج_الكامل، افتراضيًا معطَّل] يضبطه ملف
+# الـworkflow (SOURCE_LANG=ko) فقط حين يُفعَّل المدخل source_korean مع mode=إنتاج_كامل؛
+# أي قيمة أخرى = السلوك الإنجليزي السابق حرفيًا بلا أي فرق. عند "ko":
+#  - محرك التعرّف: korean_PP-OCRv5_mobile_rec (موثَّق رسميًا: يدعم الكورية والإنجليزية والأرقام،
+#    مُضاف بـPaddleOCR 3.1.0 فهو متاح بالإصدار المثبَّت 3.2.0 دون أي رفع إصدار). يُمرَّر صراحةً
+#    بالاسم بدل lang="korean" لتفادي أي التباس باختيار نموذج الكشف (يبقى المختار بـocr_detection_model).
+#  - فلترة المؤثرات الصوتية: قوائم الكلمات الإنجليزية لا تنطبق، فتُطبَّق قاعدة الحد الأدنى للحروف
+#    فقط (OCR_SFX_MIN_LETTERS_KO، افتراضيًا 1 لأن المقطع الهنغولي الواحد كلمة حوار صالحة مثل «네»).
+#  - يُوسَم الفصل بـ"source_lang":"ko" بملف text_en.json (للفصول الكورية فقط) كي تعرف الترجمة
+#    (حتى بوضع إعادة_ترجمة لاحقًا) أن المصدر كوري. أسماء الملفات تبقى text_en.* للتوافق مع القارئ.
+OCR_SOURCE_LANG = "ko" if os.environ.get("SOURCE_LANG", "en").strip().lower() == "ko" else "en"
+OCR_KOREAN_REC_MODEL = "korean_PP-OCRv5_mobile_rec"
+OCR_SFX_MIN_LETTERS_KO = int(os.environ.get("OCR_SFX_MIN_LETTERS_KO", "1"))
+
+
 def _build_paddleocr_engine(enable_mkldnn: bool):
     from paddleocr import PaddleOCR
     # [تصحيح — PaddleOCR 3.x] show_log أُزيلت كليًا (كانت تُسبِّب
@@ -344,8 +359,12 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
     # قياس rss_before، لا بعده.
     gc.collect()
     rss_before = _current_rss_mb()
+    lang_kwargs = (
+        {"text_recognition_model_name": OCR_KOREAN_REC_MODEL}
+        if OCR_SOURCE_LANG == "ko" else {"lang": "en"}
+    )
     engine = PaddleOCR(
-        lang="en",
+        **lang_kwargs,
         text_detection_model_name=OCR_DETECTION_MODEL_NAME,
         use_doc_orientation_classify=False,
         use_doc_unwarping=False,
@@ -367,7 +386,8 @@ def _build_paddleocr_engine(enable_mkldnn: bool):
         print(
             f"  📏 [قياس RSS — بناء محرك OCR] {rss_before:.0f}MB → {rss_after:.0f}MB "
             f"(Δ{rss_after - rss_before:+.0f}MB) | mkldnn={enable_mkldnn} "
-            f"cpu_threads={OCR_CPU_THREADS} det_model={OCR_DETECTION_MODEL_NAME}"
+            f"cpu_threads={OCR_CPU_THREADS} det_model={OCR_DETECTION_MODEL_NAME} "
+            f"source_lang={OCR_SOURCE_LANG}"
         )
     return engine
 
@@ -745,6 +765,9 @@ def _sfx_reason(s: dict, med_h: float, gray) -> str | None:
     """سبب اعتبار البند مؤثرًا صوتيًا، أو None للنص الحواري."""
     text = s["text"]
     letters = sum(c.isalpha() for c in text)
+    if OCR_SOURCE_LANG == "ko":
+        # مصدر كوري: قاعدة الحد الأدنى للحروف فقط (str.isalpha تشمل الهنغول) — بلا قوائم/قواعد إنجليزية
+        return "قصير" if letters < OCR_SFX_MIN_LETTERS_KO else None
     if letters < OCR_SFX_MIN_LETTERS:
         return "قصير"
     if OCR_SFX_FILTER == "off":
@@ -786,7 +809,7 @@ def _filter_sfx_sentences(sentences: list[dict], raw: bytes | None = None, med_h
     المعايير بحسب OCR_SFX_FILTER (راجع الشرح أعلاه). raw: بايتات الصفحة لقياس بياض محيط النص (فقاعة/رسم)؛
     med_h: وسيط ارتفاع أسطر الصفحة. يطبع عيّنة من المستبعَد بسببه لسهولة الضبط. يُزيل الحقول الداخلية (_bbox/_line_h)."""
     gray = None
-    if raw and OCR_SFX_FILTER != "off":
+    if raw and OCR_SFX_FILTER != "off" and OCR_SOURCE_LANG != "ko":
         try:
             import numpy as np
             gray = np.asarray(Image.open(BytesIO(raw)).convert("L"))
@@ -1619,6 +1642,7 @@ async def process_chapter_full_production(browser, chapter_url: str, index: int,
         "chapter_slug": f"{manga_id}__ch-{chapter_num}",
         "manga_title": title,
         "page_layout": OCR_PAGE_LAYOUT,
+        **({"source_lang": "ko"} if OCR_SOURCE_LANG == "ko" else {}),
         "text": "\n\n".join(page_texts),
         "pages": page_json,
         "image_paths": saved_image_paths,
@@ -2242,6 +2266,8 @@ async def run_full_production_mode(chapter_urls: list[str]) -> None:
     profile = get_profile()
     print(f"⚙️ بروفايل الموقع: {profile['label']} ({SITE_PROFILE})")
     print(f"⚙️ [بند 3] حد RSS الأقصى: {OCR_MAX_RSS_MB}MB — يُفحَص بعد اكتمال كل فصل")
+    if OCR_SOURCE_LANG == "ko":
+        print(f"🇰🇷 المصدر كوري: OCR بنموذج {OCR_KOREAN_REC_MODEL}، فلترة SFX بالحد الأدنى للحروف ({OCR_SFX_MIN_LETTERS_KO}) فقط، والترجمة كوري→عربي")
     fetch_mode = profile.get("fetch_mode", "browser")
 
     # [مُصلَح — كان يرفض بروفايلات HTTP كليًا برسالة "❌ غير مدعوم" ويُنهي
