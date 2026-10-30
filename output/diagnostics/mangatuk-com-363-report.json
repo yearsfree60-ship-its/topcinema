@@ -1,0 +1,403 @@
+{
+  "url": "https://mangatuk.com/series/the-infinite-mage/100",
+  "tls_and_server_info": {
+    "server_ip": "172.67.128.142",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "mangatuk.com",
+    "tls_not_after": "Nov  4 19:39:09 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "128.24.163.67",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Cheyenne",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a30888f77d97486b-DFW",
+      "cf-cache-status": "DYNAMIC",
+      "content-type": "text/html; charset=utf-8"
+    },
+    "challenge_detected": false,
+    "protection_signatures": [],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 1,
+    "extracted_image_count": 1,
+    "extracted_sample_urls": [
+      "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp"
+    ],
+    "sample_image_urls": [
+      "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp"
+    ],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.64
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "The Infinite Mage الفصل 100",
+    "challenge_detected": false,
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 2,
+    "images_after_wait": 2,
+    "images_after_scroll": 11,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 1,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 10,
+    "widget_excluded_count": 1,
+    "widget_excluded_samples": [
+      "transition-opacity duration-300 opacity-100 size-full rounded-[inherit] object-c"
+    ],
+    "suggested_selectors": [
+      ".w-full",
+      ".relative",
+      ".overflow-hidden",
+      ".block",
+      ".h-auto",
+      ".select-none",
+      ".h-full",
+      ".bg-zinc-900"
+    ],
+    "domain_distribution": {
+      "content.mangatuk.com": 11
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatuk-com-363-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp",
+      "no_referer_success": true,
+      "no_referer_size": 175494,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 175494,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 175494,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp",
+        "no_referer_success": true,
+        "no_referer_size": 175494,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 175494,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 175494,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/032.webp",
+        "no_referer_success": true,
+        "no_referer_size": 206928,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 206928,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 206928,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/037.webp",
+        "no_referer_success": true,
+        "no_referer_size": 199552,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 199552,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 199552,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      }
+    ],
+    "network_vendor_hits": {
+      "Cloudflare Challenge": [
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.7777021071445491:1787637623:DWOdiWdl66fGlMJTQsoPHkw332Z9f0neoM6RqcvCv9o/a30888fc2",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/e694063b5082/main.js?",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "images_after_wait": 2,
+        "fingerprint": {
+          "webdriver": false,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": false,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.98,
+    "navigation_timing": {
+      "ttfb_ms": 439,
+      "dom_content_loaded_ms": 969,
+      "load_event_ms": 970,
+      "transfer_size_bytes": 69615
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 7.75,
+    "total_probe_elapsed_sec": 12.09,
+    "content_images_before_scroll": 2
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "The Infinite Mage الفصل 100",
+    "challenge_detected": false,
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 2,
+    "images_after_wait": 2,
+    "images_after_scroll": 8,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 1,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 7,
+    "widget_excluded_count": 1,
+    "widget_excluded_samples": [
+      "transition-opacity duration-300 opacity-100 size-full rounded-[inherit] object-c"
+    ],
+    "suggested_selectors": [
+      ".w-full",
+      ".relative",
+      ".overflow-hidden",
+      ".block",
+      ".h-auto",
+      ".select-none",
+      ".h-full",
+      ".bg-zinc-900"
+    ],
+    "domain_distribution": {
+      "content.mangatuk.com": 8
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/mangatuk-com-363-run2-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp",
+      "no_referer_success": true,
+      "no_referer_size": 175494,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 175494,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 175494,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp",
+        "no_referer_success": true,
+        "no_referer_size": 175494,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 175494,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 175494,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/033.webp",
+        "no_referer_success": true,
+        "no_referer_size": 216024,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 216024,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 216024,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      },
+      {
+        "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/032.webp",
+        "no_referer_success": true,
+        "no_referer_size": 206928,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 206928,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 206928,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false
+      }
+    ],
+    "network_vendor_hits": {
+      "Cloudflare Challenge": [
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.7777021071445491:1787637623:DWOdiWdl66fGlMJTQsoPHkw332Z9f0neoM6RqcvCv9o/a3088958e",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/e694063b5082/main.js?",
+        "https://mangatuk.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": true,
+      "status_code": 200,
+      "cookie_count_reused": 2
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "images_after_wait": 2,
+        "fingerprint": {
+          "webdriver": false,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": false,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 1.2,
+    "navigation_timing": {
+      "ttfb_ms": 24,
+      "dom_content_loaded_ms": 1200,
+      "load_event_ms": 1201,
+      "transfer_size_bytes": 69532
+    },
+    "wait_for_images_elapsed_sec": 1.62,
+    "scroll_elapsed_sec": 7.81,
+    "total_probe_elapsed_sec": 12.15,
+    "content_images_before_scroll": 2
+  },
+  "consistency_diffs": [
+    "عدد الصور بعد التمرير: الأول=11 الثاني=8",
+    "صور غير مطابقة: الأول=10 الثاني=7"
+  ],
+  "rate_limit_probe": {
+    "target": "image_cdn",
+    "sample_url": "https://content.mangatuk.com/WP-manga/infinite-mage/6e72661dfd630be14f6d213564ff8d7e/001.webp",
+    "requests_sent": 4,
+    "elapsed_sec": 0.03,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "retry_after_header": null
+  },
+  "recommendation": {
+    "fetch_mode": "browser",
+    "do_scroll": true,
+    "do_widget_filter": true,
+    "suggested_http_concurrency": 3,
+    "reasons": [
+      "مسار HTTP المباشر الفعلي سيستخرج 1 صورة فقط — غير كافٍ (الصور على الأغلب تُحقَن بجافاسكربت بعد التحميل)",
+      "🎲 فحص مزدوج (جلستان نظيفتان منفصلتان) أظهر تذبذبًا: عدد الصور بعد التمرير: الأول=11 الثاني=8 | صور غير مطابقة: الأول=10 الثاني=7 — الحماية غالبًا احتمالية لا ثابتة؛ التوصية أعلاه مبنية على التكرار الأول فقط، يُفضَّل تشغيل التشخيص أكثر من مرة قبل الاعتماد النهائي",
+      "⭐ اكتشاف مهم: إعادة استخدام كوكيز جلسة المتصفح نجحت بطلب HTTP عادي لاحقًا — استراتيجية هجينة (حل التحدي مرة واحدة بمتصفح، ثم HTTP سريع لبقية الفصول) ممكنة نظريًا هنا، رغم أن fetch_mode='browser' هو الخيار الآمن المتاح حاليًا بالكود",
+      "⚠️ فحص فعلي: navigator.webdriver بقي ظاهرًا حتى بعد تطبيق playwright-stealth — الترقيع لم ينجح لهذا الموقع تحديدًا (سبب تقني بالموقع نفسه أو تعارض إصدار)، يستحق فحصًا يدويًا للقطة الشاشة",
+      "ℹ️ مقارنة فعلية: لا فرق ملحوظ بين بلا stealth وبstealth (نفس نتيجة التحقق وعدد الصور تقريبًا) — الحماية هنا على الأرجح تعتمد على شيء غير بصمة المتصفح (IP/معدل الطلبات مثلًا)، راجع فحص تحديد المعدل أدناه",
+      "لا تحديد معدل ظاهر في فحص موازٍ سريع (4 طلبات على CDN الصور) — HTTP_CONCURRENCY=3 الافتراضي معقول كبداية",
+      "⏱️ الصور استقرت فعليًا (مقاس، لا تخمين) خلال 1.61ث — وقت انتظار مقترَح لهذا الموقع 5000ms بدل 20000ms الثابت لكل المواقع"
+    ],
+    "suggested_content_wait_ms": 5000,
+    "do_stealth": false,
+    "suggested_selectors": [
+      ".w-full",
+      ".relative",
+      ".overflow-hidden",
+      ".block",
+      ".h-auto",
+      ".select-none",
+      ".h-full",
+      ".bg-zinc-900"
+    ]
+  },
+  "history_diffs_since_last_run": [
+    "كفاية Referer وحده: None ← False"
+  ],
+  "diagnostic_run_files": {
+    "report": "diagnostics/mangatuk-com-363-report.json",
+    "screenshots": [
+      "diagnostics/mangatuk-com-363-screenshot.png",
+      "diagnostics/mangatuk-com-363-run2-screenshot.png"
+    ]
+  }
+}

@@ -1,0 +1,1982 @@
+{
+  "url": "https://asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+  "tls_and_server_info": {
+    "server_ip": "104.21.7.129",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "asurascans.com",
+    "tls_not_after": "Dec 15 21:30:45 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "172.182.193.97",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Phoenix",
+    "country": "US",
+    "error": null
+  },
+  "origin_server_discovery": {
+    "domain": "asurascans.com",
+    "ssl_certificate_history": {
+      "domain": "asurascans.com",
+      "tested": true,
+      "certificates_found": 0,
+      "historical_ips_literal": [],
+      "subdomains_seen": [],
+      "error": "status=429"
+    },
+    "dns_history_resolve": {
+      "resolved": {
+        "asurascans.com": "172.67.155.122",
+        "www.asurascans.com": "104.21.7.129",
+        "api.asurascans.com": "172.67.155.122",
+        "cdn.asurascans.com": "104.21.7.129",
+        "beta.asurascans.com": "172.67.155.122"
+      },
+      "resolved_all": {
+        "asurascans.com": [
+          "172.67.155.122",
+          "104.21.7.129"
+        ],
+        "www.asurascans.com": [
+          "104.21.7.129",
+          "172.67.155.122"
+        ],
+        "api.asurascans.com": [
+          "172.67.155.122",
+          "104.21.7.129"
+        ],
+        "cdn.asurascans.com": [
+          "104.21.7.129",
+          "172.67.155.122"
+        ],
+        "beta.asurascans.com": [
+          "172.67.155.122",
+          "104.21.7.129"
+        ]
+      },
+      "unresolved": [
+        "tr.asurascans.com",
+        "beta-cdn.asurascans.com",
+        "cpcontacts.asurascans.com",
+        "cpcalendars.asurascans.com"
+      ],
+      "error": null
+    },
+    "shodan_probes": [
+      {
+        "ip": "15.197.225.128",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          80,
+          443
+        ],
+        "services_sample": [
+          "cpe:/a:amazon:elastic_load_balancing"
+        ],
+        "hostnames": [
+          "wardberry.com",
+          "aec037177372cc6cd.awsglobalaccelerator.com"
+        ],
+        "tags": [
+          "cloud"
+        ],
+        "vulns": [],
+        "last_update": null,
+        "error": null
+      },
+      {
+        "ip": "3.33.251.168",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          80,
+          443
+        ],
+        "services_sample": [
+          "cpe:/a:amazon:elastic_load_balancing"
+        ],
+        "hostnames": [
+          "aec037177372cc6cd.awsglobalaccelerator.com",
+          "media.festive.co.uk",
+          "risanmedia.com"
+        ],
+        "tags": [
+          "cloud"
+        ],
+        "vulns": [],
+        "last_update": null,
+        "error": null
+      },
+      {
+        "ip": "104.28.8.198",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [],
+        "services_sample": [],
+        "hostnames": [],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+      },
+      {
+        "ip": "104.28.9.198",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [],
+        "services_sample": [],
+        "hostnames": [],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+      },
+      {
+        "ip": "128.199.88.72",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [],
+        "services_sample": [],
+        "hostnames": [],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+      },
+      {
+        "ip": "172.104.33.25",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [],
+        "services_sample": [],
+        "hostnames": [],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+      },
+      {
+        "ip": "207.180.241.84",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          80,
+          110,
+          143,
+          443,
+          465,
+          995,
+          2222,
+          4190
+        ],
+        "services_sample": [
+          "cpe:/a:openbsd:openssh:9.6p1",
+          "cpe:/o:canonical:ubuntu_linux",
+          "cpe:/a:f5:nginx"
+        ],
+        "hostnames": [
+          "autoconfig.honeygrapa.co.ke",
+          "autoconfig.wesonlaw.com",
+          "autodiscover.wesonlaw.com",
+          "autodiscover.cubix.co.ke",
+          "mail.cubix.co.ke",
+          "autoconfig.garlicseeds.co.ke",
+          "mail.naivacom.co.ke",
+          "autodiscover.kentucky.co.ke",
+          "autoconfig.galaxytriangle.co.ke",
+          "autoconfig.saumuexpert.com",
+          "autodiscover.galaxytriangle.co.ke",
+          "autoconfig.leconcierged.com",
+          "autoconfig.louisair.com",
+          "autodiscover.louisair.com",
+          "autoconfig.zealroam.com",
+          "autodiscover.garlicseeds.co.ke",
+          "autoconfig.cubix.co.ke",
+          "mail.galaxytriangle.co.ke",
+          "autodiscover.injili.site",
+          "autodiscover.maina.tech",
+          "autodiscover.honeygrapa.co.ke",
+          "autoconfig.naivacom.com",
+          "autoconfig.injili.site",
+          "autodiscover.leconcierged.com",
+          "autodiscover.zealroam.com",
+          "autoconfig.garlicfarming.co.ke",
+          "autodiscover.naivacom.com",
+          "autoconfig.tripleb.co.ke",
+          "autodiscover.saumuexpert.com",
+          "autoconfig.kentucky.co.ke",
+          "autodiscover.garlicfarming.co.ke",
+          "autodiscover.tripleb.co.ke",
+          "autoconfig.maina.tech"
+        ],
+        "tags": [
+          "starttls"
+        ],
+        "vulns": [],
+        "last_update": null,
+        "error": null
+      },
+      {
+        "ip": "74.50.88.7",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          22,
+          25,
+          53,
+          80,
+          110,
+          143,
+          443,
+          465,
+          587,
+          993,
+          2003,
+          3306,
+          7080
+        ],
+        "services_sample": [
+          "cpe:/a:openbsd:openssh:8.0",
+          "cpe:/a:f5:nginx",
+          "cpe:/a:litespeedtech:litespeed_web_server",
+          "cpe:/a:exim:exim:4.96.2",
+          "cpe:/a:mariadb:mariadb"
+        ],
+        "hostnames": [],
+        "tags": [
+          "database",
+          "starttls",
+          "self-signed"
+        ],
+        "vulns": [
+          "CVE-2025-32728",
+          "CVE-2026-59999",
+          "CVE-2026-60002",
+          "CVE-2007-2768",
+          "CVE-2026-40686",
+          "CVE-2023-51385",
+          "CVE-2026-35385",
+          "CVE-2026-59997",
+          "CVE-2026-35388",
+          "CVE-2022-3559",
+          "CVE-2026-59998",
+          "CVE-2026-94055",
+          "CVE-2016-20012",
+          "CVE-2026-66140",
+          "CVE-2026-66141",
+          "CVE-2026-40684",
+          "CVE-2026-40687",
+          "CVE-2023-51766",
+          "CVE-2008-3844",
+          "CVE-2026-40685",
+          "CVE-2026-60000",
+          "CVE-2026-94056",
+          "CVE-2026-73281",
+          "CVE-2019-16905",
+          "CVE-2021-36368",
+          "CVE-2025-26465",
+          "CVE-2021-41617",
+          "CVE-2026-35414",
+          "CVE-2026-94054",
+          "CVE-2024-39929",
+          "CVE-2020-15778",
+          "CVE-2026-35387",
+          "CVE-2026-48840",
+          "CVE-2026-59995",
+          "CVE-2026-94057",
+          "CVE-2022-3620",
+          "CVE-2025-30232",
+          "CVE-2026-59996",
+          "CVE-2023-51767",
+          "CVE-2020-14145",
+          "CVE-2023-38408",
+          "CVE-2025-67896",
+          "CVE-2026-73283",
+          "CVE-2026-73282",
+          "CVE-2026-60001",
+          "CVE-2023-48795"
+        ],
+        "last_update": null,
+        "error": null
+      }
+    ],
+    "direct_connection_attempts": [
+      {
+        "target_ip": "15.197.225.128",
+        "port": 443,
+        "sni_used": "asurascans.com",
+        "tcp_reachable": true,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 0.13,
+        "error": "فشلت مصافحة TLS: SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)"
+      },
+      {
+        "target_ip": "3.33.251.168",
+        "port": 443,
+        "sni_used": "asurascans.com",
+        "tcp_reachable": true,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 0.1,
+        "error": "فشلت مصافحة TLS: SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)"
+      },
+      {
+        "target_ip": "104.28.8.198",
+        "port": 443,
+        "sni_used": "asurascans.com",
+        "tcp_reachable": false,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 10.01,
+        "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+      },
+      {
+        "target_ip": "104.28.9.198",
+        "port": 443,
+        "sni_used": "asurascans.com",
+        "tcp_reachable": false,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 10.01,
+        "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+      },
+      {
+        "target_ip": "128.199.88.72",
+        "port": 443,
+        "sni_used": "asurascans.com",
+        "tcp_reachable": false,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 10.01,
+        "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+      }
+    ],
+    "candidate_ips": [
+      "15.197.225.128",
+      "3.33.251.168",
+      "104.28.8.198",
+      "104.28.9.198",
+      "128.199.88.72",
+      "172.104.33.25",
+      "207.180.241.84",
+      "74.50.88.7",
+      "81.19.215.15"
+    ],
+    "candidate_ips_excluded_as_cloudflare": [
+      "104.21.7.129",
+      "104.26.6.219",
+      "104.26.7.219",
+      "104.27.140.200",
+      "104.27.141.200",
+      "172.67.155.122",
+      "172.67.172.150",
+      "172.67.173.63",
+      "172.67.72.146",
+      "188.114.96.0",
+      "188.114.97.0"
+    ],
+    "candidate_ips_excluded_non_public": [],
+    "candidate_details": [
+      {
+        "ip": "15.197.225.128",
+        "score": 11,
+        "sources": [
+          "OTX passive DNS",
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "1783050282",
+        "last_seen": "2026-01-10T18:34:55",
+        "internetdb_tags": [
+          "cloud"
+        ],
+        "from_cache": false
+      },
+      {
+        "ip": "3.33.251.168",
+        "score": 11,
+        "sources": [
+          "OTX passive DNS",
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "1783050282",
+        "last_seen": "2026-01-10T18:34:55",
+        "internetdb_tags": [
+          "cloud"
+        ],
+        "from_cache": false
+      },
+      {
+        "ip": "104.28.8.198",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-11-03T16:01:14",
+        "last_seen": "2020-11-20T18:32:40",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "104.28.9.198",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-11-03T16:01:14",
+        "last_seen": "2020-11-20T18:32:40",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "128.199.88.72",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-06-25T13:34:42",
+        "last_seen": "2020-06-25T13:34:58",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "172.104.33.25",
+        "score": 7,
+        "sources": [
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "1597753032",
+        "last_seen": "1791797330",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "207.180.241.84",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com",
+          "cpcalendars.asurascans.com",
+          "cpcontacts.asurascans.com"
+        ],
+        "first_seen": "2020-11-21T23:27:32",
+        "last_seen": "2020-11-22T03:54:24",
+        "internetdb_tags": [
+          "starttls"
+        ],
+        "from_cache": false
+      },
+      {
+        "ip": "74.50.88.7",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2023-09-11T07:42:56",
+        "last_seen": "2023-09-11T07:44:27",
+        "internetdb_tags": [
+          "database",
+          "starttls",
+          "self-signed"
+        ],
+        "from_cache": false
+      },
+      {
+        "ip": "81.19.215.15",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-06-18T17:40:43",
+        "last_seen": "2020-06-21T06:59:26",
+        "internetdb_tags": null,
+        "from_cache": false
+      }
+    ],
+    "candidates_from_cache": false,
+    "source_status": [
+      {
+        "source": "crt.sh",
+        "kind": "names",
+        "ok": false,
+        "status": 429,
+        "attempts": 5,
+        "elapsed_sec": 33.46,
+        "error": "status=429",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "CertSpotter",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.68,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 2,
+        "ips_count": 0
+      },
+      {
+        "source": "AnubisDB",
+        "kind": "names",
+        "ok": false,
+        "status": 403,
+        "attempts": 1,
+        "elapsed_sec": 0.36,
+        "error": "status=403",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "OTX passive DNS",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 3.44,
+        "error": null,
+        "note": null,
+        "api_key_used": true,
+        "hostnames_count": 9,
+        "ips_count": 46
+      },
+      {
+        "source": "Robtex passive DNS",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.8,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 10
+      },
+      {
+        "source": "Mnemonic passive DNS",
+        "kind": "history",
+        "ok": false,
+        "status": 412,
+        "attempts": 1,
+        "elapsed_sec": 0.89,
+        "error": "status=412",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "HackerTarget",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.48,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 3,
+        "ips_count": 3
+      },
+      {
+        "source": "urlscan.io",
+        "kind": "history",
+        "ok": false,
+        "status": 400,
+        "attempts": 1,
+        "elapsed_sec": 0.46,
+        "error": "status=400",
+        "note": null,
+        "api_key_used": true,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "Censys historical DNS",
+        "kind": "history",
+        "ok": true,
+        "status": null,
+        "attempts": 0,
+        "elapsed_sec": 0.0,
+        "error": null,
+        "note": "تخطي اختياري: CENSYS_API_TOKEN و/أو CENSYS_ORGANIZATION_ID غير مضبوط",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "SecurityTrails historical DNS",
+        "kind": "history",
+        "ok": true,
+        "status": null,
+        "attempts": 0,
+        "elapsed_sec": 0.0,
+        "error": null,
+        "note": "تخطي اختياري: SECURITYTRAILS_API_KEY غير مضبوط",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "SPF + MX (DoH)",
+        "kind": "live",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.09,
+        "error": null,
+        "note": "لا ip4 في SPF ولا MX داخلي",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      }
+    ],
+    "discovery_verdict": "strong_candidates_unverified",
+    "verdict_explanation": "مرشح قوي استنادًا إلى أدلة متعددة أو تحقق TLS/HTTP؛ لا يُسمّى Origin نهائيًا إلا بعد مطابقة المحتوى/البصمة، لأن الحجب أو الجدار الناري قد يمنع الاتصال المباشر",
+    "budget_sec": 120.0,
+    "elapsed_sec": 44.02,
+    "cloudflare_excluded_details": [
+      {
+        "ip": "104.21.7.129",
+        "score": 20,
+        "sources": [
+          "HackerTarget",
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "api.asurascans.com",
+          "asurascans.com",
+          "beta-cdn.asurascans.com",
+          "beta.asurascans.com",
+          "cdn.asurascans.com",
+          "www.asurascans.com"
+        ],
+        "first_seen": "1632097774",
+        "last_seen": "2026-10-10T20:15:17",
+        "apex_history": true
+      },
+      {
+        "ip": "104.26.6.219",
+        "score": 10,
+        "sources": [
+          "OTX passive DNS",
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com",
+          "cpcalendars.asurascans.com",
+          "cpcontacts.asurascans.com",
+          "tr.asurascans.com",
+          "www.asurascans.com"
+        ],
+        "first_seen": "1597753032",
+        "last_seen": "2023-06-30T20:46:28",
+        "apex_history": true
+      },
+      {
+        "ip": "104.26.7.219",
+        "score": 10,
+        "sources": [
+          "OTX passive DNS",
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com",
+          "cpcalendars.asurascans.com",
+          "cpcontacts.asurascans.com",
+          "tr.asurascans.com",
+          "www.asurascans.com"
+        ],
+        "first_seen": "1597753032",
+        "last_seen": "2023-06-30T20:46:28",
+        "apex_history": true
+      },
+      {
+        "ip": "104.27.140.200",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-06-22T19:43:36",
+        "last_seen": "2020-06-22T23:27:07",
+        "apex_history": true
+      },
+      {
+        "ip": "104.27.141.200",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-06-22T19:43:36",
+        "last_seen": "2020-06-22T23:27:07",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.155.122",
+        "score": 20,
+        "sources": [
+          "HackerTarget",
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "api.asurascans.com",
+          "asurascans.com",
+          "beta-cdn.asurascans.com",
+          "beta.asurascans.com",
+          "cdn.asurascans.com",
+          "www.asurascans.com"
+        ],
+        "first_seen": "1632097774",
+        "last_seen": "2026-10-10T20:15:17",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.172.150",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-06-22T19:43:36",
+        "last_seen": "2020-06-22T23:27:07",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.173.63",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "2020-11-03T16:01:14",
+        "last_seen": "2020-11-20T18:32:40",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.72.146",
+        "score": 10,
+        "sources": [
+          "OTX passive DNS",
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com",
+          "cpcalendars.asurascans.com",
+          "cpcontacts.asurascans.com",
+          "tr.asurascans.com",
+          "www.asurascans.com"
+        ],
+        "first_seen": "1597753032",
+        "last_seen": "2023-06-30T20:46:28",
+        "apex_history": true
+      },
+      {
+        "ip": "188.114.96.0",
+        "score": 7,
+        "sources": [
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "1784912006",
+        "last_seen": "1791797330",
+        "apex_history": true
+      },
+      {
+        "ip": "188.114.97.0",
+        "score": 7,
+        "sources": [
+          "Robtex passive DNS"
+        ],
+        "hostnames": [
+          "asurascans.com"
+        ],
+        "first_seen": "1784912006",
+        "last_seen": "1791797330",
+        "apex_history": true
+      }
+    ],
+    "source_summary": {
+      "total": 11,
+      "required": 9,
+      "ok": 5,
+      "optional_unconfigured": 2,
+      "capability_limited": 0
+    },
+    "verification_summary": {
+      "attempted": true,
+      "tls_reachable_count": 0,
+      "http_responsive_count": 0,
+      "verified_content_ip": null,
+      "note": "تم العثور على مرشحين واختبارهم ميدانيًا؛ فشل الاتصال لا يثبت أن المرشح غير صحيح."
+    }
+  },
+  "direct_origin_access": {
+    "attempted": false,
+    "attempts": [],
+    "verified_ip": null
+  },
+  "static_probe": {
+    "status_code": 200,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a49514b6abdc9cd0-SJC",
+      "cf-cache-status": "EXPIRED",
+      "content-type": "text/html"
+    },
+    "challenge_detected": false,
+    "protection_category": "none",
+    "protection_signatures": [],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 11,
+    "extracted_image_count": 11,
+    "extracted_sample_urls": [
+      "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+      "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/001.webp?v=1770499638",
+      "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638"
+    ],
+    "extraction_tier_used": "img_tag_attrs",
+    "sample_image_urls": [
+      "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+      "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/001.webp?v=1770499638",
+      "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638"
+    ],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 1.09,
+    "cf_mitigation": {
+      "cf_mitigated_value": null,
+      "mitigation_category": "no_mitigation_observed"
+    },
+    "cf_colo": "SJC"
+  },
+  "curl_cffi_probe": {
+    "probes": [
+      {
+        "impersonate": "chrome",
+        "status_code": 200,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a49514bdbb415eec-PDX",
+          "cf-cache-status": "HIT",
+          "content-type": "text/html"
+        },
+        "challenge_detected": false,
+        "protection_category": "none",
+        "protection_signatures": [],
+        "extracted_image_count": 11,
+        "extracted_sample_urls": [
+          "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+          "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/001.webp?v=1770499638",
+          "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638"
+        ],
+        "extraction_tier_used": "img_tag_attrs",
+        "elapsed_sec": 0.33,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": null,
+          "mitigation_category": "no_mitigation_observed"
+        },
+        "cf_colo": "PDX"
+      },
+      {
+        "impersonate": "firefox",
+        "status_code": 200,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a49514bdad401561-PDX",
+          "cf-cache-status": "HIT",
+          "content-type": "text/html"
+        },
+        "challenge_detected": false,
+        "protection_category": "none",
+        "protection_signatures": [],
+        "extracted_image_count": 11,
+        "extracted_sample_urls": [
+          "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+          "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/001.webp?v=1770499638",
+          "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638"
+        ],
+        "extraction_tier_used": "img_tag_attrs",
+        "elapsed_sec": 0.33,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": null,
+          "mitigation_category": "no_mitigation_observed"
+        },
+        "cf_colo": "PDX"
+      },
+      {
+        "impersonate": "safari",
+        "status_code": 200,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a49514bdbc274598-PDX",
+          "cf-cache-status": "HIT",
+          "content-type": "text/html"
+        },
+        "challenge_detected": false,
+        "protection_category": "none",
+        "protection_signatures": [],
+        "extracted_image_count": 11,
+        "extracted_sample_urls": [
+          "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+          "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/001.webp?v=1770499638",
+          "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638"
+        ],
+        "extraction_tier_used": "img_tag_attrs",
+        "elapsed_sec": 0.33,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": null,
+          "mitigation_category": "no_mitigation_observed"
+        },
+        "cf_colo": "PDX"
+      }
+    ]
+  },
+  "browser_probe": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "I Am the Fated Villain Chapter 1 - Read Online | Asura Scans",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 11,
+    "images_after_wait": 50,
+    "images_after_scroll": 34,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 34,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [
+      ".w-full",
+      ".flex",
+      ".block",
+      ".overflow-hidden",
+      ".relative",
+      ".group",
+      ".flex-shrink-0",
+      ".object-cover"
+    ],
+    "suggested_selectors_pagewide_frequency": {
+      ".w-full": 61,
+      ".flex": 400,
+      ".block": 49,
+      ".overflow-hidden": 37,
+      ".relative": 115,
+      ".group": 53,
+      ".flex-shrink-0": 115,
+      ".object-cover": 35
+    },
+    "domain_distribution": {
+      "cdn.asurascans.com": 33,
+      "asurascans.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/asurascans-com-3012-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+      "no_referer_success": true,
+      "no_referer_size": 43206,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 43206,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 43206,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false,
+      "image_cache_headers": {
+        "etag": "\"5058be78b67f17c3fd34d8132dc09ce0\"",
+        "age": "4785498"
+      }
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+        "no_referer_success": true,
+        "no_referer_size": 43206,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 43206,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 43206,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "etag": "\"5058be78b67f17c3fd34d8132dc09ce0\"",
+          "age": "4785498"
+        }
+      },
+      {
+        "sample_url": "https://cdn.asurascans.com/asura-images/profiles/749805.429e66.webp",
+        "no_referer_success": true,
+        "no_referer_size": 6932,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 6932,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 6932,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "etag": "\"9152c2ad78e8719a3d45725f411ff979\"",
+          "age": "4783470"
+        }
+      },
+      {
+        "sample_url": "https://cdn.asurascans.com/asura-images/profiles/2183326.5a0412.webp",
+        "no_referer_success": true,
+        "no_referer_size": 7236,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 7236,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 7236,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "etag": "\"70ef486a3789367fe86d69f8ec2998be\"",
+          "age": "1720691"
+        }
+      }
+    ],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 50,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.28,
+    "navigation_timing": {
+      "ttfb_ms": 31,
+      "dom_content_loaded_ms": 261,
+      "load_event_ms": null,
+      "transfer_size_bytes": 19663
+    },
+    "wait_for_images_elapsed_sec": 2.41,
+    "scroll_elapsed_sec": 94.35,
+    "total_probe_elapsed_sec": 103.97,
+    "scroll_rounds_completed": 106,
+    "scroll_stop_reason": "time_limit",
+    "navigation_response_headers": {
+      "age": "0",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "public, s-maxage=3600",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a49514bff9c6720c-SJC",
+      "content-encoding": "zstd",
+      "content-type": "text/html",
+      "date": "Mon, 12 Oct 2026 09:29:36 GMT",
+      "last-modified": "Mon, 12 Oct 2026 09:29:35 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZQmKwUwy%2FfiJaJvkqksP6dmMwDxox6LLW6K4uGM8NVJbQCFx23iWKl%2BWFQUcNiJrksVNIX8ytY%2BiOVZGZJulr6hjb5hIMqo7WJW8k1aUqRgtBAcVuFqR9P4ENGrG7ItDgQ%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"HIT\", cfEdge;dur=10,cfOrigin;dur=0",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff"
+    },
+    "all_third_party_domains": [
+      "static.cloudflareinsights.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": {
+      "total_images_available": 34,
+      "sample_size": 15,
+      "probes": [
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/005.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/007.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/009.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://asurascans.com/images/default-pp.webp",
+          "width": 229,
+          "height": 220,
+          "format": "WEBP",
+          "bytes_read": 9882,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "9882",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/716979.ce03eb.webp",
+          "width": 384,
+          "height": 236,
+          "format": "WEBP",
+          "bytes_read": 27148,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "27148",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/768241.f03ad4.webp",
+          "width": 375,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 13804,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "13804",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/217900.815310.webp",
+          "width": 315,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 16474,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "16474",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/452108.a7f1b0.webp",
+          "width": 182,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 18140,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "18140",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/120936.8818cf.webp",
+          "width": 384,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 23302,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "23302",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/937453.31b799.webp",
+          "width": 215,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 21472,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "21472",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/322189.d999c7.webp",
+          "width": 256,
+          "height": 256,
+          "format": "WEBP",
+          "bytes_read": 9484,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "9484",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/gifs/742bf6.webp",
+          "width": 56,
+          "height": 94,
+          "format": "WEBP",
+          "bytes_read": 1258,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "1258",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/2183326.5a0412.webp",
+          "width": 384,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 7236,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "7236",
+          "error": null
+        }
+      ],
+      "distinct_formats_seen": {
+        "WEBP": 10
+      },
+      "width_min": 56,
+      "width_max": 384
+    },
+    "url_quality_param_probe": {
+      "original_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+      "suspicious_params_found": [],
+      "stripped_url": null,
+      "original_content_length": null,
+      "stripped_content_length": null,
+      "stripped_url_status_code": null,
+      "tested": false,
+      "error": null
+    },
+    "content_images_before_scroll": 34
+  },
+  "browser_probe_second_run": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "I Am the Fated Villain Chapter 1 - Read Online | Asura Scans",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 11,
+    "images_after_wait": 50,
+    "images_after_scroll": 34,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 34,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [
+      ".w-full",
+      ".flex",
+      ".block",
+      ".overflow-hidden",
+      ".relative",
+      ".group",
+      ".flex-shrink-0",
+      ".object-cover"
+    ],
+    "suggested_selectors_pagewide_frequency": {
+      ".w-full": 61,
+      ".flex": 400,
+      ".block": 49,
+      ".overflow-hidden": 37,
+      ".relative": 115,
+      ".group": 53,
+      ".flex-shrink-0": 115,
+      ".object-cover": 35
+    },
+    "domain_distribution": {
+      "cdn.asurascans.com": 33,
+      "asurascans.com": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/asurascans-com-3012-run2-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+      "no_referer_success": true,
+      "no_referer_size": 43206,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 43206,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 43206,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false,
+      "image_cache_headers": {
+        "etag": "\"5058be78b67f17c3fd34d8132dc09ce0\"",
+        "age": "4785603"
+      }
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+        "no_referer_success": true,
+        "no_referer_size": 43206,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 43206,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 43206,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "etag": "\"5058be78b67f17c3fd34d8132dc09ce0\"",
+          "age": "4785603"
+        }
+      },
+      {
+        "sample_url": "https://cdn.asurascans.com/asura-images/profiles/749805.429e66.webp",
+        "no_referer_success": true,
+        "no_referer_size": 6932,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 6932,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 6932,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "etag": "\"9152c2ad78e8719a3d45725f411ff979\"",
+          "age": "4783574"
+        }
+      },
+      {
+        "sample_url": "https://cdn.asurascans.com/asura-images/profiles/2183326.5a0412.webp",
+        "no_referer_success": true,
+        "no_referer_size": 7236,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 7236,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 7236,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=31536000, immutable",
+          "etag": "\"70ef486a3789367fe86d69f8ec2998be\"",
+          "age": "1720794"
+        }
+      }
+    ],
+    "network_vendor_hits": {},
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 50,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.4,
+    "navigation_timing": {
+      "ttfb_ms": 47,
+      "dom_content_loaded_ms": 401,
+      "load_event_ms": null,
+      "transfer_size_bytes": 19663
+    },
+    "wait_for_images_elapsed_sec": 2.41,
+    "scroll_elapsed_sec": 94.59,
+    "total_probe_elapsed_sec": 98.77,
+    "scroll_rounds_completed": 106,
+    "scroll_stop_reason": "time_limit",
+    "navigation_response_headers": {
+      "age": "108",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "public, s-maxage=3600",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a495175f4ffc4598-PDX",
+      "content-encoding": "zstd",
+      "content-type": "text/html",
+      "date": "Mon, 12 Oct 2026 09:31:23 GMT",
+      "last-modified": "Mon, 12 Oct 2026 09:29:35 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OyMOLqiYkiZ5lFx%2FOJEhdNP%2FlG9tcK8Kr1UsHP%2FwF8cj46g%2F1J%2FZqRGFIZzMSk3dJFfTDNU8j3uRktVFQBZsZAPkR4ov2NT6sCfchjGysSxyRFcnmcbKcPXT%2B2Qk6Y7l1Q%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"HIT\", cfEdge;dur=6,cfOrigin;dur=0",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff"
+    },
+    "all_third_party_domains": [
+      "static.cloudflareinsights.com"
+    ],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": {
+      "total_images_available": 34,
+      "sample_size": 15,
+      "probes": [
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/002.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/005.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/007.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/chapters/i-am-the-fated-villain/1/009.webp?v=1770499638",
+          "width": null,
+          "height": null,
+          "format": null,
+          "bytes_read": 32000,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "32001",
+          "error": "تعذّر استخراج الأبعاد من أول البايتات المقروءة (قد تحتاج حجمًا أكبر لهذه الصيغة)"
+        },
+        {
+          "sample_url": "https://asurascans.com/images/default-pp.webp",
+          "width": 229,
+          "height": 220,
+          "format": "WEBP",
+          "bytes_read": 9882,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "9882",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/716979.ce03eb.webp",
+          "width": 384,
+          "height": 236,
+          "format": "WEBP",
+          "bytes_read": 27148,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "27148",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/768241.f03ad4.webp",
+          "width": 375,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 13804,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "13804",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/217900.815310.webp",
+          "width": 315,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 16474,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "16474",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/452108.a7f1b0.webp",
+          "width": 182,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 18140,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "18140",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/120936.8818cf.webp",
+          "width": 384,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 23302,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "23302",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/937453.31b799.webp",
+          "width": 215,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 21472,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "21472",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/322189.d999c7.webp",
+          "width": 256,
+          "height": 256,
+          "format": "WEBP",
+          "bytes_read": 9484,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "9484",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/gifs/742bf6.webp",
+          "width": 56,
+          "height": 94,
+          "format": "WEBP",
+          "bytes_read": 1258,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "1258",
+          "error": null
+        },
+        {
+          "sample_url": "https://cdn.asurascans.com/asura-images/profiles/2183326.5a0412.webp",
+          "width": 384,
+          "height": 384,
+          "format": "WEBP",
+          "bytes_read": 7236,
+          "status_code": 206,
+          "range_request_honored": true,
+          "content_length_header": "7236",
+          "error": null
+        }
+      ],
+      "distinct_formats_seen": {
+        "WEBP": 10
+      },
+      "width_min": 56,
+      "width_max": 384
+    },
+    "url_quality_param_probe": {
+      "original_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+      "suspicious_params_found": [],
+      "stripped_url": null,
+      "original_content_length": null,
+      "stripped_content_length": null,
+      "stripped_url_status_code": null,
+      "tested": false,
+      "error": null
+    },
+    "content_images_before_scroll": 34
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "image_cdn",
+    "sample_url": "https://cdn.asurascans.com/asura-images/covers/i-am-the-fated-villain.e8d6b3-400.webp",
+    "requests_sent": 4,
+    "elapsed_sec": 1.65,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "deep_diagnostic": {
+    "wayback_availability_probe": {
+      "tested": true,
+      "available": false,
+      "snapshot_timestamp": null,
+      "snapshot_url": null,
+      "status": null,
+      "error": null
+    }
+  },
+  "cdn_cgi_trace": {
+    "trace_url": "https://asurascans.com/cdn-cgi/trace",
+    "status_code": 200,
+    "fields": {
+      "fl": "467f209",
+      "h": "asurascans.com",
+      "ip": "172.182.193.97",
+      "ts": "1791797591.000",
+      "visit_scheme": "https",
+      "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "colo": "SJC",
+      "sliver": "050-tier1",
+      "http": "http/1.1",
+      "loc": "US",
+      "tls": "TLSv1.3",
+      "sni": "plaintext",
+      "warp": "off",
+      "gateway": "off",
+      "rbi": "off",
+      "kex": "X25519"
+    },
+    "error": null,
+    "elapsed_sec": 0.02
+  },
+  "alternate_paths_probe": {
+    "wp_json": {
+      "url": "https://asurascans.com/wp-json/",
+      "status_code": 404,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "amp": {
+      "url": "https://asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1/amp/",
+      "status_code": 404,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "rss_feed": {
+      "url": "https://asurascans.com/feed/",
+      "status_code": 404,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "subdomain_m": {
+      "url": "https://m.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='m.asurascans.com', port=443): Max retries exceeded with url: /comics/i-am-the-fated-villain-1bb35e56/chapter/1 (Caused by NameResolutionError(\"HTTPSConnection(host='m.asurascans.com', port=443): Failed to resolve 'm.asurascans.com' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_mobile": {
+      "url": "https://mobile.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='mobile.asurascans.com', port=443): Max retries exceeded with url: /comics/i-am-the-fated-villain-1bb35e56/chapter/1 (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.asurascans.com', port=443): Failed to resolve 'mobile.asurascans.com' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_api": {
+      "url": "https://api.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": 404,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "subdomain_cdn": {
+      "url": "https://cdn.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": 404,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "subdomain_img": {
+      "url": "https://img.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='img.asurascans.com', port=443): Max retries exceeded with url: /comics/i-am-the-fated-villain-1bb35e56/chapter/1 (Caused by NameResolutionError(\"HTTPSConnection(host='img.asurascans.com', port=443): Failed to resolve 'img.asurascans.com' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_static": {
+      "url": "https://static.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='static.asurascans.com', port=443): Max retries exceeded with url: /comics/i-am-the-fated-villain-1bb35e56/chapter/1 (Caused by NameResolutionError(\"HTTPSConnection(host='static.asurascans.com', port=443): Failed to resolve 'static.asurascans.com' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_assets": {
+      "url": "https://assets.asurascans.com/comics/i-am-the-fated-villain-1bb35e56/chapter/1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='assets.asurascans.com', port=443): Max retries exceeded with url: /comics/i-am-the-fated-villain-1bb35e56/chapter/1 (Caused by NameResolutionError(\"HTTPSConnection(host='assets.asurascans.com', port=443): Failed to resolve 'assets.asurascans.com' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    }
+  },
+  "bypass_lab": null,
+  "mitigation_layer_diagnosis": "غير حاسم — راجع cf_mitigation بكل مسبار يدويًا",
+  "diagnostic_run_files": {
+    "report": "diagnostics/asurascans-com-3012-report.json",
+    "screenshots": [
+      "diagnostics/asurascans-com-3012-screenshot.png",
+      "diagnostics/asurascans-com-3012-run2-screenshot.png"
+    ]
+  }
+}

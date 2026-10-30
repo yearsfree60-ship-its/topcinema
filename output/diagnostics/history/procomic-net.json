@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-08-17 04:01:45 UTC",
+    "url": "https://procomic.net/en/chapter/ill-be-taking-a-break-for-personal-reasons-111-35765",
+    "fetch_mode_recommended": "http",
+    "challenge_detected_static": false,
+    "challenge_detected_browser": false,
+    "protection_signatures": [],
+    "referer_only_sufficient": false,
+    "rate_limited_detected": false,
+    "signed_url_params": [
+      "expires",
+      "token"
+    ]
+  }
+]

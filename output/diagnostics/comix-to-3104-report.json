@@ -1,0 +1,1522 @@
+{
+  "url": "https://comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+  "tls_and_server_info": {
+    "server_ip": "104.21.49.220",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "comix.to",
+    "tls_not_after": "Nov 25 12:49:51 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "172.174.191.7",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Dulles Town Center",
+    "country": "US",
+    "error": null
+  },
+  "origin_server_discovery": {
+    "domain": "comix.to",
+    "ssl_certificate_history": {
+      "domain": "comix.to",
+      "tested": true,
+      "certificates_found": 23,
+      "historical_ips_literal": [],
+      "subdomains_seen": [],
+      "error": null
+    },
+    "dns_history_resolve": {
+      "resolved": {
+        "comix.to": "104.21.49.220",
+        "www.comix.to": "104.21.49.220",
+        "static.comix.to": "104.21.49.220"
+      },
+      "resolved_all": {
+        "comix.to": [
+          "104.21.49.220",
+          "172.67.152.235"
+        ],
+        "www.comix.to": [
+          "104.21.49.220",
+          "172.67.152.235"
+        ],
+        "static.comix.to": [
+          "104.21.49.220",
+          "172.67.152.235"
+        ]
+      },
+      "unresolved": [],
+      "error": null
+    },
+    "shodan_probes": [],
+    "direct_connection_attempts": [],
+    "candidate_ips": [],
+    "candidate_ips_excluded_as_cloudflare": [
+      "104.21.49.220",
+      "172.67.152.235"
+    ],
+    "candidate_ips_excluded_non_public": [],
+    "candidate_details": [],
+    "candidates_from_cache": false,
+    "source_status": [
+      {
+        "source": "crt.sh",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 26.82,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 0
+      },
+      {
+        "source": "CertSpotter",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.15,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 0
+      },
+      {
+        "source": "AnubisDB",
+        "kind": "names",
+        "ok": false,
+        "status": 403,
+        "attempts": 1,
+        "elapsed_sec": 0.23,
+        "error": "status=403",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "OTX passive DNS",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.07,
+        "error": null,
+        "note": null,
+        "api_key_used": true,
+        "hostnames_count": 3,
+        "ips_count": 8
+      },
+      {
+        "source": "Robtex passive DNS",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 1.15,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 2
+      },
+      {
+        "source": "Mnemonic passive DNS",
+        "kind": "history",
+        "ok": false,
+        "status": 412,
+        "attempts": 1,
+        "elapsed_sec": 1.04,
+        "error": "status=412",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "HackerTarget",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.36,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 2,
+        "ips_count": 2
+      },
+      {
+        "source": "urlscan.io",
+        "kind": "history",
+        "ok": false,
+        "status": 400,
+        "attempts": 1,
+        "elapsed_sec": 1.52,
+        "error": "status=400",
+        "note": null,
+        "api_key_used": true,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "Censys historical DNS",
+        "kind": "history",
+        "ok": true,
+        "status": null,
+        "attempts": 0,
+        "elapsed_sec": 0.0,
+        "error": null,
+        "note": "تخطي اختياري: CENSYS_API_TOKEN و/أو CENSYS_ORGANIZATION_ID غير مضبوط",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "SecurityTrails historical DNS",
+        "kind": "history",
+        "ok": true,
+        "status": null,
+        "attempts": 0,
+        "elapsed_sec": 0.0,
+        "error": null,
+        "note": "تخطي اختياري: SECURITYTRAILS_API_KEY غير مضبوط",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "SPF + MX (DoH)",
+        "kind": "live",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.09,
+        "error": null,
+        "note": "لا ip4 في SPF ولا MX داخلي",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      }
+    ],
+    "discovery_verdict": "only_cloudflare_or_non_public",
+    "verdict_explanation": "المصادر ردّت لكن كل العناوين إمّا Cloudflare نفسها أو خاصة/غير عامة — الأصل غالبًا مخفي بالكامل",
+    "budget_sec": 120.0,
+    "elapsed_sec": 26.87,
+    "cloudflare_excluded_details": [
+      {
+        "ip": "104.21.49.220",
+        "score": 19,
+        "sources": [
+          "HackerTarget",
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "comix.to",
+          "static.comix.to",
+          "www.comix.to"
+        ],
+        "first_seen": "1773211346",
+        "last_seen": "2026-10-14T17:56:37",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.152.235",
+        "score": 19,
+        "sources": [
+          "HackerTarget",
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "comix.to",
+          "static.comix.to",
+          "www.comix.to"
+        ],
+        "first_seen": "1773211346",
+        "last_seen": "2026-10-14T17:56:37",
+        "apex_history": true
+      }
+    ],
+    "source_summary": {
+      "total": 11,
+      "required": 9,
+      "ok": 6,
+      "optional_unconfigured": 2,
+      "capability_limited": 0
+    },
+    "verification_summary": {
+      "attempted": false,
+      "tls_reachable_count": 0,
+      "http_responsive_count": 0,
+      "verified_content_ip": null,
+      "note": "لم تُوجد مرشحات غير Cloudflare قابلة للاختبار في هذه التشغيلية."
+    }
+  },
+  "direct_origin_access": {
+    "attempted": false,
+    "attempts": [],
+    "verified_ip": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a4ac9efe2e5c3c85-IAD",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "extraction_tier_used": "last_resort_regex_whole_page",
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.03,
+    "cf_mitigation": {
+      "cf_mitigated_value": "challenge",
+      "mitigation_category": "recoverable_challenge"
+    },
+    "cf_colo": "IAD"
+  },
+  "curl_cffi_probe": {
+    "probes": [
+      {
+        "impersonate": "chrome",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a4ac9efe480568ea-IAD",
+          "cf-mitigated": "challenge",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.02,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": "challenge",
+          "mitigation_category": "recoverable_challenge"
+        },
+        "cf_colo": "IAD"
+      },
+      {
+        "impersonate": "firefox",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a4ac9efe4986f39d-IAD",
+          "cf-mitigated": "challenge",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.02,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": "challenge",
+          "mitigation_category": "recoverable_challenge"
+        },
+        "cf_colo": "IAD"
+      },
+      {
+        "impersonate": "safari",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a4ac9efe4d950618-IAD",
+          "cf-mitigated": "challenge",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.02,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": "challenge",
+          "mitigation_category": "recoverable_challenge"
+        },
+        "cf_colo": "IAD"
+      }
+    ]
+  },
+  "browser_probe": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "suggested_selectors_pagewide_frequency": {},
+    "domain_distribution": {
+      "comix.to": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/comix-to-3104-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/72370ec0-8c66-4c77-91d7-966dc22311f6",
+        "blob:https://challenges.cloudflare.com/74112f0f-ac8c-4efb-858c-b8918d33acf9",
+        "blob:https://challenges.cloudflare.com/863026c7-5815-4980-9a53-3509d2703d8f"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.06,
+    "navigation_timing": {
+      "ttfb_ms": 5,
+      "dom_content_loaded_ms": 55,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4141
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 1.86,
+    "total_probe_elapsed_sec": 83.11,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a4ac9efea862c8a1-IAD",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-sifEEClVLTBSCZ2w1NLxhF' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Thu, 15 Oct 2026 06:03:30 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kZ7bhnZeB5ypk4KpLOl1VM%2FL4%2FQWdsZKPojsiiUFyfug%2FOTpvamqY4C21s%2B%2BDKuW%2BQSucTzb29zvlN%2F2mhw%2BzcYAyW8%2B%2Fl6ZRyoOYeanFic4BY%2B%2B0%2FOrk%2B8GMQ%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a4ac9efea862c8a1\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+      "click_method": "none",
+      "attempt_number": 3
+    },
+    "extended_challenge_probe": {
+      "pure_wait": {
+        "max_wait_sec": 60,
+        "poll_interval_sec": 2,
+        "resolved_during_pure_wait": false,
+        "elapsed_until_resolved_sec": null,
+        "final_category_after_wait": "solvable_challenge"
+      },
+      "click_attempts": [
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 1
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 2
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 3
+        }
+      ],
+      "final_after_reload": {
+        "attempted": true,
+        "category": "solvable_challenge",
+        "resolved": false,
+        "error": null
+      }
+    },
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 1
+  },
+  "browser_probe_second_run": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "Just a moment...",
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 1,
+    "images_after_wait": 1,
+    "images_after_scroll": 1,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 1,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "suggested_selectors_pagewide_frequency": {},
+    "domain_distribution": {
+      "comix.to": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/comix-to-3104-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare Challenge (تفاعلي)": [
+        "blob:https://challenges.cloudflare.com/0405e380-2675-4ac6-8515-532febb31e95",
+        "blob:https://challenges.cloudflare.com/69421893-5546-42f0-86c1-f0eb1fd05f9d",
+        "blob:https://challenges.cloudflare.com/763ccc7a-72fe-4dfc-9ead-6b65eb4c12d4"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": false,
+      "reason": "لا كوكيز بالجلسة لاختبارها"
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "solvable_challenge",
+        "images_after_wait": 1,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.07,
+    "navigation_timing": {
+      "ttfb_ms": 8,
+      "dom_content_loaded_ms": 65,
+      "load_event_ms": null,
+      "transfer_size_bytes": 4128
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 1.86,
+    "total_probe_elapsed_sec": 83.11,
+    "scroll_rounds_completed": 3,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-mitigated": "challenge",
+      "cf-ray": "a4aca1346e14884f-IAD",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-moQDRmrIt3BwzmFBgMULRL' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Thu, 15 Oct 2026 06:05:01 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=icYvcZB1lpku9IWcf2hTgYim7lu%2FRhQvJWPtCTfwKZT8YLudnpgz%2BhuXXI0vUlKhE7gkKovdEgUUM80W10HrgA0j7K5f5Kxx%2FJYqkVRpTx24cWiRzcx8z2O93Q%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "chlray;desc=\"a4aca1346e14884f\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [
+      "brunhild.challenges.cloudflare.com",
+      "challenges.cloudflare.com"
+    ],
+    "turnstile_click_attempt": {
+      "iframe_found": false,
+      "clicked": false,
+      "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+      "click_method": "none",
+      "attempt_number": 3
+    },
+    "extended_challenge_probe": {
+      "pure_wait": {
+        "max_wait_sec": 60,
+        "poll_interval_sec": 2,
+        "resolved_during_pure_wait": false,
+        "elapsed_until_resolved_sec": null,
+        "final_category_after_wait": "solvable_challenge"
+      },
+      "click_attempts": [
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 1
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 2
+        },
+        {
+          "iframe_found": false,
+          "clicked": false,
+          "error": "لم يُعثر على إطار Turnstile خلال 3000ms: Page.wait_for_selector: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"iframe[src*=\\\"challenges.cloudflare.com\\\"], iframe[src*=\\\"/turnstile/\\\"]\")\n — لا حاوٍ احتياطي مرئي أيضًا",
+          "click_method": "none",
+          "attempt_number": 3
+        }
+      ],
+      "final_after_reload": {
+        "attempted": true,
+        "category": "solvable_challenge",
+        "resolved": false,
+        "error": null
+      }
+    },
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 1
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+    "requests_sent": 4,
+    "elapsed_sec": 0.12,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [
+    "تصنيف الحماية (متصفح): 'none' ← 'solvable_challenge'",
+    "صفحة تحقق (متصفح): False ← True",
+    "ترويسة cf-mitigated (متصفح): None ← 'challenge'"
+  ],
+  "deep_diagnostic": {
+    "wayback_availability_probe": {
+      "tested": true,
+      "available": false,
+      "snapshot_timestamp": null,
+      "snapshot_url": null,
+      "status": null,
+      "error": null
+    },
+    "runtime_enable_leak_probe": {
+      "tested": true,
+      "patchright_available": true,
+      "browser_channel": "chrome",
+      "context_overrides": "none (no_viewport، بلا UA ولا ترويسات مخصَّصة)",
+      "protection_category": "solvable_challenge",
+      "challenge_detected": true,
+      "resolved_after_reload": false,
+      "elapsed_sec": 76.73,
+      "error": null
+    },
+    "source_url_leak_probe": {
+      "tested": true,
+      "stack_sample": "Error: diagnostic-source-url-probe\n    at eval (eval at evaluate (:311:30), <anonymous>:2:17)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "error": null
+    }
+  },
+  "cdn_cgi_trace": {
+    "trace_url": "https://comix.to/cdn-cgi/trace",
+    "status_code": 200,
+    "fields": {
+      "fl": "573f156",
+      "h": "comix.to",
+      "ip": "172.174.191.7",
+      "ts": "1792044474.000",
+      "visit_scheme": "https",
+      "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "colo": "IAD",
+      "sliver": "none",
+      "http": "http/1.1",
+      "loc": "US",
+      "tls": "TLSv1.3",
+      "sni": "plaintext",
+      "warp": "off",
+      "gateway": "off",
+      "rbi": "off",
+      "kex": "X25519"
+    },
+    "error": null,
+    "elapsed_sec": 0.04
+  },
+  "alternate_paths_probe": {
+    "wp_json": {
+      "url": "https://comix.to/wp-json/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "amp": {
+      "url": "https://comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74/amp/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "rss_feed": {
+      "url": "https://comix.to/feed/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_m": {
+      "url": "https://m.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_mobile": {
+      "url": "https://mobile.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_api": {
+      "url": "https://api.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_cdn": {
+      "url": "https://cdn.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_img": {
+      "url": "https://img.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_static": {
+      "url": "https://static.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    },
+    "subdomain_assets": {
+      "url": "https://assets.comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": "challenge",
+        "mitigation_category": "recoverable_challenge"
+      },
+      "looks_promising": false
+    }
+  },
+  "bypass_lab": {
+    "domain": "comix.to",
+    "http_probes": {
+      "wp_rest": {
+        "available": false,
+        "namespaces": [],
+        "route_count": 0,
+        "interesting_routes": [],
+        "types_tested": [],
+        "content_hits": [],
+        "media_hits": [],
+        "promising": false,
+        "requests_used": 1,
+        "error": "status=403"
+      },
+      "host_exposure": {
+        "tested": 2,
+        "hosts": [
+          {
+            "host": "www.comix.to",
+            "status_code": 403,
+            "cf_mitigated": "challenge",
+            "protection_category": "solvable_challenge",
+            "server": "cloudflare",
+            "images_found": 0,
+            "error": null
+          },
+          {
+            "host": "static.comix.to",
+            "status_code": 403,
+            "cf_mitigated": "challenge",
+            "protection_category": "solvable_challenge",
+            "server": "cloudflare",
+            "images_found": 0,
+            "error": null
+          }
+        ],
+        "unchallenged_hosts": [],
+        "error": null
+      },
+      "wayback_images": {
+        "tested": false,
+        "snapshot_timestamp": null,
+        "images_found": 0,
+        "fetch_results": [],
+        "images_reachable_live": null,
+        "error": "لا نسخة مؤرشفة"
+      }
+    },
+    "http_side_channels": [],
+    "strategies": [
+      {
+        "strategy": "seleniumbase_cdp_direct",
+        "engine": "seleniumbase",
+        "egress": "direct",
+        "ok": true,
+        "skipped": null,
+        "resolved": true,
+        "error": null,
+        "screenshot_path": "diagnostics/comix-to-9398-lab-seleniumbase_cdp_direct.png",
+        "navigated": true,
+        "final_title": "The Hunter's Gonna Lay Low · Ch.73",
+        "final_category": "none",
+        "waited_sec": 11.62,
+        "html_len": 69174,
+        "images_found": 3,
+        "cf_clearance": true,
+        "solve_captcha_calls": 1,
+        "content_images_from_dom": 3,
+        "dom_images_report": [
+          {
+            "src": "https://lov.lindseyblog.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVMhaGDNl",
+            "w": 800,
+            "h": 1513,
+            "rw": 640,
+            "rh": 1210,
+            "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+          },
+          {
+            "src": "https://lov.cozycornerstories.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiV8haGDNl",
+            "w": 800,
+            "h": 1513,
+            "rw": 640,
+            "rh": 1210,
+            "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+          },
+          {
+            "src": "https://lov.notesbykevin.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVshaGDNl",
+            "w": 800,
+            "h": 1513,
+            "rw": 640,
+            "rh": 1210,
+            "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+          }
+        ],
+        "image_cdn_probe": {
+          "tested": true,
+          "samples": [
+            {
+              "url": "https://lov.lindseyblog.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVMhaGDNl",
+              "host": "lov.lindseyblog.site",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": true,
+                "size": 292722,
+                "why": null
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4551,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4551,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4551"
+              }
+            },
+            {
+              "url": "https://lov.cozycornerstories.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiV8haGDNl",
+              "host": "lov.cozycornerstories.site",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": true,
+                "size": 122192,
+                "why": null
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4557,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4557,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4557"
+              }
+            },
+            {
+              "url": "https://lov.notesbykevin.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVshaGDNl",
+              "host": "lov.notesbykevin.site",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": true,
+                "size": 226148,
+                "why": null
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4552,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4552,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4552"
+              }
+            }
+          ],
+          "verdict": "blocked_even_with_clearance",
+          "cdn_hosts": [
+            "lov.cozycornerstories.site",
+            "lov.lindseyblog.site",
+            "lov.notesbykevin.site"
+          ],
+          "error": null
+        },
+        "elapsed_sec": 13.92
+      },
+      {
+        "strategy": "patchright_headed_direct",
+        "engine": "patchright",
+        "egress": "direct",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/comix-to-9398-lab-patchright_headed_direct.png",
+        "navigated": true,
+        "final_title": "Just a moment...",
+        "final_category": "solvable_challenge",
+        "waited_sec": 50.67,
+        "html_len": 28990,
+        "images_found": 0,
+        "cf_clearance": false,
+        "browser_channel": "chrome",
+        "elapsed_sec": 51.45
+      },
+      {
+        "strategy": "camoufox_direct",
+        "engine": "camoufox",
+        "egress": "direct",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/comix-to-9398-lab-camoufox_direct.png",
+        "navigated": true,
+        "final_title": "Just a moment...",
+        "final_category": "solvable_challenge",
+        "waited_sec": 50.97,
+        "html_len": 28586,
+        "images_found": 0,
+        "cf_clearance": false,
+        "elapsed_sec": 54.62
+      },
+      {
+        "strategy": "seleniumbase_cdp_warp",
+        "engine": "seleniumbase",
+        "egress": "warp",
+        "ok": true,
+        "skipped": null,
+        "resolved": true,
+        "error": null,
+        "screenshot_path": "diagnostics/comix-to-9398-lab-seleniumbase_cdp_warp.png",
+        "egress_ip": "2a09:bac5:c829:2832::401:22",
+        "navigated": true,
+        "final_title": "The Hunter's Gonna Lay Low · Ch.73",
+        "final_category": "none",
+        "waited_sec": 11.44,
+        "html_len": 69174,
+        "images_found": 3,
+        "cf_clearance": true,
+        "solve_captcha_calls": 1,
+        "content_images_from_dom": 3,
+        "dom_images_report": [
+          {
+            "src": "https://lov.lindseyblog.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVMhaGDNl",
+            "w": 800,
+            "h": 1513,
+            "rw": 640,
+            "rh": 1210,
+            "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+          },
+          {
+            "src": "https://lov.cozycornerstories.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiV8haGDNl",
+            "w": 800,
+            "h": 1513,
+            "rw": 640,
+            "rh": 1210,
+            "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+          },
+          {
+            "src": "https://lov.notesbykevin.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVshaGDNl",
+            "w": 800,
+            "h": 1513,
+            "rw": 640,
+            "rh": 1210,
+            "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+          }
+        ],
+        "image_cdn_probe": {
+          "tested": true,
+          "samples": [
+            {
+              "url": "https://lov.lindseyblog.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVMhaGDNl",
+              "host": "lov.lindseyblog.site",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": true,
+                "size": 292722,
+                "why": null
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4551,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4551,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4551"
+              }
+            },
+            {
+              "url": "https://lov.cozycornerstories.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiV8haGDNl",
+              "host": "lov.cozycornerstories.site",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": true,
+                "size": 122192,
+                "why": null
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4557,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4557,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4557"
+              }
+            },
+            {
+              "url": "https://lov.notesbykevin.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVshaGDNl",
+              "host": "lov.notesbykevin.site",
+              "cookies_sent": 0,
+              "no_referer": {
+                "ok": true,
+                "size": 226148,
+                "why": null
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4552,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4552,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4552"
+              }
+            }
+          ],
+          "verdict": "blocked_even_with_clearance",
+          "cdn_hosts": [
+            "lov.cozycornerstories.site",
+            "lov.lindseyblog.site",
+            "lov.notesbykevin.site"
+          ],
+          "error": null
+        },
+        "elapsed_sec": 14.2
+      },
+      {
+        "strategy": "camoufox_warp",
+        "engine": "camoufox",
+        "egress": "warp",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/comix-to-9398-lab-camoufox_warp.png",
+        "egress_ip": "2a09:bac5:c829:2832::401:22",
+        "navigated": true,
+        "final_title": "Just a moment...",
+        "final_category": "solvable_challenge",
+        "waited_sec": 50.76,
+        "html_len": 28628,
+        "images_found": 0,
+        "cf_clearance": false,
+        "elapsed_sec": 52.89
+      },
+      {
+        "strategy": "patchright_headed_warp",
+        "engine": "patchright",
+        "egress": "warp",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/comix-to-9398-lab-patchright_headed_warp.png",
+        "egress_ip": "2a09:bac5:c829:2832::401:22",
+        "navigated": true,
+        "final_title": "Just a moment...",
+        "final_category": "solvable_challenge",
+        "waited_sec": 50.63,
+        "html_len": 28990,
+        "images_found": 0,
+        "cf_clearance": false,
+        "browser_channel": "chrome",
+        "elapsed_sec": 51.38
+      }
+    ],
+    "winner": {
+      "strategy": "seleniumbase_cdp_direct",
+      "engine": "seleniumbase",
+      "egress": "direct",
+      "ok": true,
+      "skipped": null,
+      "resolved": true,
+      "error": null,
+      "screenshot_path": "diagnostics/comix-to-9398-lab-seleniumbase_cdp_direct.png",
+      "navigated": true,
+      "final_title": "The Hunter's Gonna Lay Low · Ch.73",
+      "final_category": "none",
+      "waited_sec": 11.62,
+      "html_len": 69174,
+      "images_found": 3,
+      "cf_clearance": true,
+      "solve_captcha_calls": 1,
+      "content_images_from_dom": 3,
+      "dom_images_report": [
+        {
+          "src": "https://lov.lindseyblog.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVMhaGDNl",
+          "w": 800,
+          "h": 1513,
+          "rw": 640,
+          "rh": 1210,
+          "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+        },
+        {
+          "src": "https://lov.cozycornerstories.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiV8haGDNl",
+          "w": 800,
+          "h": 1513,
+          "rw": 640,
+          "rh": 1210,
+          "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+        },
+        {
+          "src": "https://lov.notesbykevin.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVshaGDNl",
+          "w": 800,
+          "h": 1513,
+          "rw": 640,
+          "rh": 1210,
+          "ctx": "rpage-page__img  rpage-page  rpage-main__inner  rpage-main rpage-main--long-strip  rpage rpage--long-strip rpage--ttb rpage--pb-left"
+        }
+      ],
+      "image_cdn_probe": {
+        "tested": true,
+        "samples": [
+          {
+            "url": "https://lov.lindseyblog.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVMhaGDNl",
+            "host": "lov.lindseyblog.site",
+            "cookies_sent": 0,
+            "no_referer": {
+              "ok": true,
+              "size": 292722,
+              "why": null
+            },
+            "referer_only": {
+              "ok": false,
+              "size": 4551,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_cookies_ua": {
+              "ok": false,
+              "size": 4551,
+              "why": "status=403 content-type='text/html; charset=UTF-8' size=4551"
+            }
+          },
+          {
+            "url": "https://lov.cozycornerstories.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiV8haGDNl",
+            "host": "lov.cozycornerstories.site",
+            "cookies_sent": 0,
+            "no_referer": {
+              "ok": true,
+              "size": 122192,
+              "why": null
+            },
+            "referer_only": {
+              "ok": false,
+              "size": 4557,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_cookies_ua": {
+              "ok": false,
+              "size": 4557,
+              "why": "status=403 content-type='text/html; charset=UTF-8' size=4557"
+            }
+          },
+          {
+            "url": "https://lov.notesbykevin.site/hi/bEqPbYfoKT0GmxXlJ0afoD5UzqUdbsKi3R0VvpbI6y4AiVshaGDNl",
+            "host": "lov.notesbykevin.site",
+            "cookies_sent": 0,
+            "no_referer": {
+              "ok": true,
+              "size": 226148,
+              "why": null
+            },
+            "referer_only": {
+              "ok": false,
+              "size": 4552,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_cookies_ua": {
+              "ok": false,
+              "size": 4552,
+              "why": "status=403 content-type='text/html; charset=UTF-8' size=4552"
+            }
+          }
+        ],
+        "verdict": "blocked_even_with_clearance",
+        "cdn_hosts": [
+          "lov.cozycornerstories.site",
+          "lov.lindseyblog.site",
+          "lov.notesbykevin.site"
+        ],
+        "error": null
+      },
+      "elapsed_sec": 13.92
+    },
+    "recommended_profile": {
+      "domain": "comix.to",
+      "strategy": "seleniumbase_cdp_direct",
+      "engine": "seleniumbase",
+      "egress": "direct",
+      "headed_virtual_display": true,
+      "challenge_wait_sec": 27,
+      "verified_at": "2026-10-15T06:03:03Z",
+      "run_id": "38689044342",
+      "evidence": {
+        "cf_clearance": true,
+        "images_found": 3,
+        "final_title": "The Hunter's Gonna Lay Low · Ch.73",
+        "image_cdn_verdict": "blocked_even_with_clearance"
+      },
+      "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+    },
+    "virtual_display": {
+      "mode": "xvfb",
+      "display": ":99",
+      "error": null
+    },
+    "warp_setup": {
+      "ok": true,
+      "installed_now": true,
+      "steps": [
+        {
+          "step": "install",
+          "ok": true,
+          "rc": 0,
+          "tail": "sr/lib/systemd/user/warp-taskbar.service.\n\nCreated symlink /etc/systemd/system/multi-user.target.wants/warp-svc.service → /usr/lib/systemd/system/warp-svc.service.\n\nProcessing triggers for libc-bin (2.39-0ubuntu8.9) ...\n",
+          "elapsed_sec": 23.87
+        },
+        {
+          "step": "start_service",
+          "ok": true,
+          "rc": 0,
+          "tail": "",
+          "elapsed_sec": 0.01
+        },
+        {
+          "step": "registration",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.97
+        },
+        {
+          "step": "mode_proxy",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.0
+        },
+        {
+          "step": "proxy_port",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.0
+        },
+        {
+          "step": "connect",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.0
+        },
+        {
+          "step": "verify_trace",
+          "ok": true,
+          "rc": 0,
+          "tail": "25f75\nh=www.cloudflare.com\nip=2a09:bac5:c829:2832::401:22\nts=1792044065.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=IAD\nsliver=005-tier1\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
+          "elapsed_sec": 0.04
+        }
+      ],
+      "warp_state": "on",
+      "egress_ip": "2a09:bac5:c829:2832::401:22",
+      "error": null
+    },
+    "camoufox_setup": {
+      "ok": true,
+      "installed_now": false,
+      "steps": [
+        {
+          "step": "camoufox_fetch",
+          "ok": true,
+          "tail": "Syncing repositories...\n  Official... 23 versions\n  CoryKing... 2 versions\n  JWriter20... 18 versions\n\nSynced 43 versions from 3 repos.\nCamoufox binaries up to date!\nCurrent version: v156.0.1-beta.36\n"
+        }
+      ],
+      "error": null
+    },
+    "seleniumbase_setup": {
+      "ok": true,
+      "installed_now": false,
+      "chrome_found": true,
+      "steps": [],
+      "error": null
+    },
+    "elapsed_sec": 273.04,
+    "reused_from_earlier_url": true
+  },
+  "mitigation_layer_diagnosis": "recoverable_challenge — يستحق محاولة بصمات/أدوات أفضل (curl_cffi/patchright)",
+  "diagnostic_run_files": {
+    "report": "diagnostics/comix-to-3104-report.json",
+    "screenshots": [
+      "diagnostics/comix-to-3104-screenshot.png",
+      "diagnostics/comix-to-3104-run2-screenshot.png",
+      "diagnostics/comix-to-9398-lab-seleniumbase_cdp_direct.png",
+      "diagnostics/comix-to-9398-lab-patchright_headed_direct.png",
+      "diagnostics/comix-to-9398-lab-camoufox_direct.png",
+      "diagnostics/comix-to-9398-lab-seleniumbase_cdp_warp.png",
+      "diagnostics/comix-to-9398-lab-camoufox_warp.png",
+      "diagnostics/comix-to-9398-lab-patchright_headed_warp.png"
+    ]
+  }
+}

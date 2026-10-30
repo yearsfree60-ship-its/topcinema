@@ -1,0 +1,53 @@
+{
+  "starzmanga.com": {
+    "domain": "starzmanga.com",
+    "strategy": "seleniumbase_cdp_direct",
+    "engine": "seleniumbase",
+    "egress": "direct",
+    "headed_virtual_display": true,
+    "challenge_wait_sec": 27,
+    "verified_at": "2026-10-04T06:41:31Z",
+    "run_id": "37182731059",
+    "evidence": {
+      "cf_clearance": true,
+      "images_found": 2,
+      "final_title": "Otherworldly Evil Monarch الفصل 257 مترجم",
+      "image_cdn_verdict": "open_cdn"
+    },
+    "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+  },
+  "comix.to": {
+    "domain": "comix.to",
+    "strategy": "seleniumbase_cdp_direct",
+    "engine": "seleniumbase",
+    "egress": "direct",
+    "headed_virtual_display": true,
+    "challenge_wait_sec": 27,
+    "verified_at": "2026-10-15T06:03:03Z",
+    "run_id": "38689044342",
+    "evidence": {
+      "cf_clearance": true,
+      "images_found": 3,
+      "final_title": "The Hunter's Gonna Lay Low · Ch.73",
+      "image_cdn_verdict": "blocked_even_with_clearance"
+    },
+    "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+  },
+  "luacomic.org": {
+    "domain": "luacomic.org",
+    "strategy": "seleniumbase_cdp_warp",
+    "engine": "seleniumbase",
+    "egress": "warp",
+    "headed_virtual_display": true,
+    "challenge_wait_sec": 14,
+    "verified_at": "2026-10-17T06:15:32Z",
+    "run_id": "39008736348",
+    "evidence": {
+      "cf_clearance": true,
+      "images_found": 6,
+      "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+      "image_cdn_verdict": "blocked_even_with_clearance"
+    },
+    "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+  }
+}

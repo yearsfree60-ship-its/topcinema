@@ -1,0 +1,53 @@
+[
+  {
+    "date": "2026-09-15 09:42:59 UTC",
+    "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-1",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-09-15 09:43:52 UTC",
+    "url": "https://comix.to/title/z0l20-god-level-assassin-im-the-shadow/11329970-chapter-2",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "none",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": false,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": null,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  },
+  {
+    "date": "2026-10-15 06:07:54 UTC",
+    "url": "https://comix.to/title/dnvg-the-hunters-gonna-lay-low/11494666-chapter-74",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  }
+]

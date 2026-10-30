@@ -1,0 +1,19 @@
+[
+  {
+    "date": "2026-09-30 05:20:45 UTC",
+    "url": "https://mangalik.net/manga/reborn-as-the-heavenly-demon/1/",
+    "protection_category_static": "solvable_challenge",
+    "protection_category_browser": "solvable_challenge",
+    "challenge_detected_static": true,
+    "challenge_detected_browser": true,
+    "cf_mitigated_static": "challenge",
+    "cf_mitigated_browser": "challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "referer_only_sufficient": null,
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "signed_url_params": []
+  }
+]

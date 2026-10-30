@@ -1,0 +1,1839 @@
+{
+  "url": "https://luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+  "tls_and_server_info": {
+    "server_ip": "172.67.68.244",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "luacomic.org",
+    "tls_not_after": "Dec 21 20:03:47 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "4.154.182.82",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "Moses Lake",
+    "country": "US",
+    "error": null
+  },
+  "origin_server_discovery": {
+    "domain": "luacomic.org",
+    "ssl_certificate_history": {
+      "domain": "luacomic.org",
+      "tested": true,
+      "certificates_found": 66,
+      "historical_ips_literal": [],
+      "subdomains_seen": [],
+      "error": null
+    },
+    "dns_history_resolve": {
+      "resolved": {
+        "luacomic.org": "104.26.14.94",
+        "api.luacomic.org": "172.67.68.244",
+        "media.luacomic.org": "104.26.15.94"
+      },
+      "resolved_all": {
+        "luacomic.org": [
+          "104.26.14.94",
+          "104.26.15.94",
+          "172.67.68.244"
+        ],
+        "api.luacomic.org": [
+          "172.67.68.244",
+          "104.26.14.94",
+          "104.26.15.94"
+        ],
+        "media.luacomic.org": [
+          "104.26.15.94",
+          "104.26.14.94",
+          "172.67.68.244"
+        ]
+      },
+      "unresolved": [
+        "www.luacomic.org"
+      ],
+      "error": null
+    },
+    "shodan_probes": [
+      {
+        "ip": "154.41.250.146",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [],
+        "services_sample": [],
+        "hostnames": [],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+      },
+      {
+        "ip": "154.41.250.176",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [],
+        "services_sample": [],
+        "hostnames": [],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": "لا بيانات مفهرَسة بـInternetDB لهذا الـIP (404) — طبيعي لخوادم كثيرة"
+      },
+      {
+        "ip": "191.96.144.1",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          443
+        ],
+        "services_sample": [],
+        "hostnames": [
+          "uat-idealeague.ismailindustries.com.pk",
+          "www.uat-idealeague.ismailindustries.com.pk"
+        ],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": null
+      },
+      {
+        "ip": "191.96.144.187",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          80,
+          443
+        ],
+        "services_sample": [
+          "cpe:/a:hostinger:hostinger"
+        ],
+        "hostnames": [
+          "staging.atoro.io"
+        ],
+        "tags": [],
+        "vulns": [],
+        "last_update": null,
+        "error": null
+      },
+      {
+        "ip": "77.37.76.94",
+        "tested": true,
+        "org": null,
+        "isp": null,
+        "country": null,
+        "ports_open": [
+          80,
+          443
+        ],
+        "services_sample": [
+          "cpe:/a:php:php:8.1.34",
+          "cpe:/a:litespeedtech:litespeed_web_server",
+          "cpe:/a:hostinger:hostinger"
+        ],
+        "hostnames": [
+          "adventa.com.mx",
+          "www.adventa.com.mx",
+          "a8staging.jpmcbrunei.com"
+        ],
+        "tags": [
+          "eol-product"
+        ],
+        "vulns": [
+          "CVE-2013-2220",
+          "CVE-2007-3205"
+        ],
+        "last_update": null,
+        "error": null
+      }
+    ],
+    "direct_connection_attempts": [
+      {
+        "target_ip": "154.41.250.146",
+        "port": 443,
+        "sni_used": "luacomic.org",
+        "tcp_reachable": false,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 10.0,
+        "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+      },
+      {
+        "target_ip": "154.41.250.176",
+        "port": 443,
+        "sni_used": "luacomic.org",
+        "tcp_reachable": false,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 10.01,
+        "error": "انتهاء المهلة الزمنية (المنفذ لا يستجيب — قد يكون محجوبًا بجدار ناري)"
+      },
+      {
+        "target_ip": "191.96.144.1",
+        "port": 443,
+        "sni_used": "luacomic.org",
+        "tcp_reachable": true,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 0.15,
+        "error": "فشلت مصافحة TLS: SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)"
+      },
+      {
+        "target_ip": "191.96.144.187",
+        "port": 443,
+        "sni_used": "luacomic.org",
+        "tcp_reachable": true,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 0.15,
+        "error": "فشلت مصافحة TLS: SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)"
+      },
+      {
+        "target_ip": "77.37.76.94",
+        "port": 443,
+        "sni_used": "luacomic.org",
+        "tcp_reachable": true,
+        "tls_handshake_ok": false,
+        "tls_cert_cn": null,
+        "tls_cert_san": [],
+        "tls_cert_issuer_org": null,
+        "cert_matches_target_domain": null,
+        "http_head_status": null,
+        "http_head_server_header": null,
+        "elapsed_sec": 0.09,
+        "error": "فشلت مصافحة TLS: SSLError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)"
+      }
+    ],
+    "candidate_ips": [
+      "154.41.250.146",
+      "154.41.250.176",
+      "191.96.144.1",
+      "191.96.144.187",
+      "77.37.76.94"
+    ],
+    "candidate_ips_excluded_as_cloudflare": [
+      "104.26.14.94",
+      "104.26.15.94",
+      "172.67.68.244"
+    ],
+    "candidate_ips_excluded_non_public": [],
+    "candidate_details": [
+      {
+        "ip": "154.41.250.146",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "luacomic.org"
+        ],
+        "first_seen": "2024-08-24T15:48:14",
+        "last_seen": "2024-08-24T15:48:14",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "154.41.250.176",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "luacomic.org"
+        ],
+        "first_seen": "2024-08-29T09:05:33",
+        "last_seen": "2024-08-29T09:05:33",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "191.96.144.1",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "luacomic.org"
+        ],
+        "first_seen": "2024-08-16T07:16:30",
+        "last_seen": "2024-08-16T07:16:30",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "191.96.144.187",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "luacomic.org"
+        ],
+        "first_seen": "2024-10-15T13:42:54",
+        "last_seen": "2024-10-15T13:42:54",
+        "internetdb_tags": [],
+        "from_cache": false
+      },
+      {
+        "ip": "77.37.76.94",
+        "score": 7,
+        "sources": [
+          "OTX passive DNS"
+        ],
+        "hostnames": [
+          "luacomic.org"
+        ],
+        "first_seen": "2024-10-18T09:21:13",
+        "last_seen": "2024-10-18T09:21:13",
+        "internetdb_tags": [
+          "eol-product"
+        ],
+        "from_cache": false
+      }
+    ],
+    "candidates_from_cache": false,
+    "source_status": [
+      {
+        "source": "crt.sh",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 30.98,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 2,
+        "ips_count": 0
+      },
+      {
+        "source": "CertSpotter",
+        "kind": "names",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.69,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 0
+      },
+      {
+        "source": "AnubisDB",
+        "kind": "names",
+        "ok": false,
+        "status": 403,
+        "attempts": 1,
+        "elapsed_sec": 0.38,
+        "error": "status=403",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "OTX passive DNS",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 11.37,
+        "error": null,
+        "note": null,
+        "api_key_used": true,
+        "hostnames_count": 2,
+        "ips_count": 11
+      },
+      {
+        "source": "Robtex passive DNS",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.54,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 1,
+        "ips_count": 3
+      },
+      {
+        "source": "Mnemonic passive DNS",
+        "kind": "history",
+        "ok": false,
+        "status": 412,
+        "attempts": 1,
+        "elapsed_sec": 1.61,
+        "error": "status=412",
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "HackerTarget",
+        "kind": "history",
+        "ok": true,
+        "status": 200,
+        "attempts": 1,
+        "elapsed_sec": 0.8,
+        "error": null,
+        "note": null,
+        "api_key_used": false,
+        "hostnames_count": 2,
+        "ips_count": 2
+      },
+      {
+        "source": "urlscan.io",
+        "kind": "history",
+        "ok": false,
+        "status": 400,
+        "attempts": 1,
+        "elapsed_sec": 0.54,
+        "error": "status=400",
+        "note": null,
+        "api_key_used": true,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "Censys historical DNS",
+        "kind": "history",
+        "ok": true,
+        "status": null,
+        "attempts": 0,
+        "elapsed_sec": 0.0,
+        "error": null,
+        "note": "تخطي اختياري: CENSYS_API_TOKEN و/أو CENSYS_ORGANIZATION_ID غير مضبوط",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "SecurityTrails historical DNS",
+        "kind": "history",
+        "ok": true,
+        "status": null,
+        "attempts": 0,
+        "elapsed_sec": 0.0,
+        "error": null,
+        "note": "تخطي اختياري: SECURITYTRAILS_API_KEY غير مضبوط",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      },
+      {
+        "source": "SPF + MX (DoH)",
+        "kind": "live",
+        "ok": true,
+        "status": 200,
+        "attempts": 2,
+        "elapsed_sec": 0.16,
+        "error": null,
+        "note": "لا ip4 في SPF ولا MX داخلي",
+        "api_key_used": false,
+        "hostnames_count": 0,
+        "ips_count": 0
+      }
+    ],
+    "discovery_verdict": "strong_candidates_unverified",
+    "verdict_explanation": "مرشح قوي استنادًا إلى أدلة متعددة أو تحقق TLS/HTTP؛ لا يُسمّى Origin نهائيًا إلا بعد مطابقة المحتوى/البصمة، لأن الحجب أو الجدار الناري قد يمنع الاتصال المباشر",
+    "budget_sec": 120.0,
+    "elapsed_sec": 41.34,
+    "cloudflare_excluded_details": [
+      {
+        "ip": "104.26.14.94",
+        "score": 20,
+        "sources": [
+          "HackerTarget",
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "api.luacomic.org",
+          "luacomic.org",
+          "media.luacomic.org"
+        ],
+        "first_seen": "1771704378",
+        "last_seen": "2026-10-11T03:24:00",
+        "apex_history": true
+      },
+      {
+        "ip": "104.26.15.94",
+        "score": 20,
+        "sources": [
+          "HackerTarget",
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "api.luacomic.org",
+          "luacomic.org",
+          "media.luacomic.org"
+        ],
+        "first_seen": "1771704378",
+        "last_seen": "2026-10-11T03:24:00",
+        "apex_history": true
+      },
+      {
+        "ip": "172.67.68.244",
+        "score": 17,
+        "sources": [
+          "OTX passive DNS",
+          "Robtex passive DNS",
+          "dns_live"
+        ],
+        "hostnames": [
+          "api.luacomic.org",
+          "luacomic.org",
+          "media.luacomic.org"
+        ],
+        "first_seen": "1771704378",
+        "last_seen": "2026-10-11T03:24:00",
+        "apex_history": true
+      }
+    ],
+    "source_summary": {
+      "total": 11,
+      "required": 9,
+      "ok": 6,
+      "optional_unconfigured": 2,
+      "capability_limited": 0
+    },
+    "verification_summary": {
+      "attempted": true,
+      "tls_reachable_count": 0,
+      "http_responsive_count": 0,
+      "verified_content_ip": null,
+      "note": "تم العثور على مرشحين واختبارهم ميدانيًا؛ فشل الاتصال لا يثبت أن المرشح غير صحيح."
+    }
+  },
+  "direct_origin_access": {
+    "attempted": false,
+    "attempts": [],
+    "verified_ip": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a4bd2380eea27630-SEA",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "final_block",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "extraction_tier_used": "last_resort_regex_whole_page",
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.05,
+    "cf_mitigation": {
+      "cf_mitigated_value": null,
+      "mitigation_category": "waf_or_ip_rule_block_no_header"
+    },
+    "cf_colo": "SEA"
+  },
+  "curl_cffi_probe": {
+    "probes": [
+      {
+        "impersonate": "chrome",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a4bd23811ff12506-SEA",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.03,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": null,
+          "mitigation_category": "waf_or_ip_rule_block_no_header"
+        },
+        "cf_colo": "SEA"
+      },
+      {
+        "impersonate": "firefox",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a4bd23811db67592-SEA",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.05,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": null,
+          "mitigation_category": "waf_or_ip_rule_block_no_header"
+        },
+        "cf_colo": "SEA"
+      },
+      {
+        "impersonate": "safari",
+        "status_code": 403,
+        "headers_of_interest": {
+          "server": "cloudflare",
+          "cf-ray": "a4bd23811b44ded0-SEA",
+          "content-type": "text/html; charset=UTF-8"
+        },
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "protection_signatures": [
+          "Cloudflare"
+        ],
+        "extracted_image_count": 0,
+        "extracted_sample_urls": [],
+        "extraction_tier_used": "last_resort_regex_whole_page",
+        "elapsed_sec": 0.04,
+        "error": null,
+        "cf_mitigation": {
+          "cf_mitigated_value": null,
+          "mitigation_category": "waf_or_ip_rule_block_no_header"
+        },
+        "cf_colo": "SEA"
+      }
+    ]
+  },
+  "browser_probe": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "Attention Required! | Cloudflare",
+    "challenge_detected": true,
+    "protection_category": "final_block",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 0,
+    "images_after_wait": 0,
+    "images_after_scroll": 0,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 0,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "suggested_selectors_pagewide_frequency": {},
+    "domain_distribution": {},
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/luacomic-org-2260-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare JSD (تليمتري عادي، غير دال على حظر)": [
+        "https://luacomic.org/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.3694009753545795:1792213225:OgV3I8U0k3gqAC1Fy4CxmsSrkDWwK8CE4SpNXTzVJYg/a4bd2381d"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 1,
+      "cookie_names_reused": [
+        "cf_clearance"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "images_after_wait": 0,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.11,
+    "navigation_timing": {
+      "ttfb_ms": 27,
+      "dom_content_loaded_ms": 104,
+      "load_event_ms": 116,
+      "transfer_size_bytes": 2184
+    },
+    "wait_for_images_elapsed_sec": 20.13,
+    "scroll_elapsed_sec": 1.48,
+    "total_probe_elapsed_sec": 22.0,
+    "scroll_rounds_completed": 2,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "cf-ray": "a4bd2381dcae45f7-SEA",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 17 Oct 2026 06:10:10 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1mJht0fTBXGc%2F0lu06jAGsidzUgJYFiM%2FhdmTU8TgrHpuaR11AZjObZj0gYUuLApMzBzkkT571aMmp%2BC5DV2g0Y%2F7iEaJv%2BpAo3xHOnuJmcdZv62huQ7bZjegINMfQ%3D%3D\"}]}",
+      "server": "cloudflare",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 0
+  },
+  "browser_probe_second_run": {
+    "click_attempts_skipped_reason": null,
+    "navigated": true,
+    "title": "Attention Required! | Cloudflare",
+    "challenge_detected": true,
+    "protection_category": "final_block",
+    "challenge_resolved_after_reload": false,
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_at_t0": 0,
+    "images_after_wait": 0,
+    "images_after_scroll": 0,
+    "selector_match_counts": {
+      ".reading-content img": 0,
+      ".page-break img": 0,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 0,
+    "widget_excluded_count": 0,
+    "widget_excluded_samples": [],
+    "suggested_selectors": [],
+    "suggested_selectors_pagewide_frequency": {},
+    "domain_distribution": {},
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/luacomic-org-2260-run2-screenshot.png",
+    "hotlink_probe": null,
+    "hotlink_probes": [],
+    "network_vendor_hits": {
+      "Cloudflare JSD (تليمتري عادي، غير دال على حظر)": [
+        "https://luacomic.org/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.3694009753545795:1792213225:OgV3I8U0k3gqAC1Fy4CxmsSrkDWwK8CE4SpNXTzVJYg/a4bd248d5"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 1,
+      "cookie_names_reused": [
+        "cf_clearance"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": true,
+        "protection_category": "final_block",
+        "images_after_wait": 0,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 0.1,
+    "navigation_timing": {
+      "ttfb_ms": 23,
+      "dom_content_loaded_ms": 96,
+      "load_event_ms": null,
+      "transfer_size_bytes": 2185
+    },
+    "wait_for_images_elapsed_sec": 20.12,
+    "scroll_elapsed_sec": 1.47,
+    "total_probe_elapsed_sec": 21.95,
+    "scroll_rounds_completed": 2,
+    "scroll_stop_reason": "stable_no_growth_at_bottom",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "cf-ray": "a4bd248d588b57bc-SEA",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 17 Oct 2026 06:10:53 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "same-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=arSzfkMw2Z3Cqlj8NQHM91mxyriAW1h5aD6j5TRvk6rqTR754AgIk1jan89hrnaihrXzbce47vAkgjigVVHLElY3S%2BFDBtXwpBAE01cmSaeRvSuBkRD6p6sOkFonXQ%3D%3D\"}]}",
+      "server": "cloudflare",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "all_third_party_domains": [],
+    "turnstile_click_attempt": null,
+    "extended_challenge_probe": null,
+    "image_metadata_probe": [],
+    "image_url_kind_counts": {},
+    "image_dimension_analysis": {
+      "dimension_distribution": {},
+      "most_common_width": null,
+      "widths_differing_from_most_common": [],
+      "iab_standard_ad_size_matches": []
+    },
+    "canvas_elements": [],
+    "service_worker_scopes": [],
+    "blob_data_extraction_probe": null,
+    "canvas_extraction_probe": null,
+    "image_dimensions_probe": null,
+    "url_quality_param_probe": null,
+    "content_images_before_scroll": 0
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "page_url",
+    "sample_url": "https://luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+    "requests_sent": 4,
+    "elapsed_sec": 0.07,
+    "status_codes": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": true,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "deep_diagnostic": {
+    "wayback_availability_probe": {
+      "tested": true,
+      "available": false,
+      "snapshot_timestamp": null,
+      "snapshot_url": null,
+      "status": null,
+      "error": null
+    }
+  },
+  "cdn_cgi_trace": {
+    "trace_url": "https://luacomic.org/cdn-cgi/trace",
+    "status_code": 200,
+    "fields": {
+      "fl": "731f181",
+      "h": "luacomic.org",
+      "ip": "4.154.182.82",
+      "ts": "1792217498.000",
+      "visit_scheme": "https",
+      "uag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "colo": "SEA",
+      "sliver": "050-tier1",
+      "http": "http/1.1",
+      "loc": "US",
+      "tls": "TLSv1.3",
+      "sni": "plaintext",
+      "warp": "off",
+      "gateway": "off",
+      "rbi": "off",
+      "kex": "X25519"
+    },
+    "error": null,
+    "elapsed_sec": 0.01
+  },
+  "alternate_paths_probe": {
+    "wp_json": {
+      "url": "https://luacomic.org/wp-json/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "amp": {
+      "url": "https://luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1/amp/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "rss_feed": {
+      "url": "https://luacomic.org/feed/",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "subdomain_m": {
+      "url": "https://m.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='m.luacomic.org', port=443): Max retries exceeded with url: /series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1 (Caused by NameResolutionError(\"HTTPSConnection(host='m.luacomic.org', port=443): Failed to resolve 'm.luacomic.org' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_mobile": {
+      "url": "https://mobile.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='mobile.luacomic.org', port=443): Max retries exceeded with url: /series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1 (Caused by NameResolutionError(\"HTTPSConnection(host='mobile.luacomic.org', port=443): Failed to resolve 'mobile.luacomic.org' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_api": {
+      "url": "https://api.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": 403,
+      "error": null,
+      "protection_category": null,
+      "cf_mitigation": {
+        "cf_mitigated_value": null,
+        "mitigation_category": "waf_or_ip_rule_block_no_header"
+      },
+      "looks_promising": false
+    },
+    "subdomain_cdn": {
+      "url": "https://cdn.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='cdn.luacomic.org', port=443): Max retries exceeded with url: /series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1 (Caused by NameResolutionError(\"HTTPSConnection(host='cdn.luacomic.org', port=443): Failed to resolve 'cdn.luacomic.org' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_img": {
+      "url": "https://img.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='img.luacomic.org', port=443): Max retries exceeded with url: /series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1 (Caused by NameResolutionError(\"HTTPSConnection(host='img.luacomic.org', port=443): Failed to resolve 'img.luacomic.org' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_static": {
+      "url": "https://static.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='static.luacomic.org', port=443): Max retries exceeded with url: /series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1 (Caused by NameResolutionError(\"HTTPSConnection(host='static.luacomic.org', port=443): Failed to resolve 'static.luacomic.org' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    },
+    "subdomain_assets": {
+      "url": "https://assets.luacomic.org/series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1",
+      "status_code": null,
+      "error": "HTTPSConnectionPool(host='assets.luacomic.org', port=443): Max retries exceeded with url: /series/unbeknownst-to-me-im-secretly-dating-the-emperor/chapter-1 (Caused by NameResolutionError(\"HTTPSConnection(host='assets.luacomic.org', port=443): Failed to resolve 'assets.luacomic.org' ([Errno -2] Name or service not known)\"))",
+      "protection_category": null,
+      "cf_mitigation": null,
+      "looks_promising": false
+    }
+  },
+  "bypass_lab": {
+    "domain": "luacomic.org",
+    "http_probes": {
+      "wp_rest": {
+        "available": false,
+        "namespaces": [],
+        "route_count": 0,
+        "interesting_routes": [],
+        "types_tested": [],
+        "content_hits": [],
+        "media_hits": [],
+        "promising": false,
+        "requests_used": 1,
+        "error": "status=403"
+      },
+      "host_exposure": {
+        "tested": 2,
+        "hosts": [
+          {
+            "host": "api.luacomic.org",
+            "status_code": 403,
+            "cf_mitigated": null,
+            "protection_category": "final_block",
+            "server": "cloudflare",
+            "images_found": 0,
+            "error": null
+          },
+          {
+            "host": "media.luacomic.org",
+            "status_code": 403,
+            "cf_mitigated": null,
+            "protection_category": "final_block",
+            "server": "cloudflare",
+            "images_found": 0,
+            "error": null
+          }
+        ],
+        "unchallenged_hosts": [],
+        "error": null
+      },
+      "wayback_images": {
+        "tested": false,
+        "snapshot_timestamp": null,
+        "images_found": 0,
+        "fetch_results": [],
+        "images_reachable_live": null,
+        "error": "لا نسخة مؤرشفة"
+      }
+    },
+    "http_side_channels": [],
+    "strategies": [
+      {
+        "strategy": "seleniumbase_cdp_direct",
+        "engine": "seleniumbase",
+        "egress": "direct",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/luacomic-org-2260-lab-seleniumbase_cdp_direct.png",
+        "navigated": true,
+        "final_title": "Attention Required! | Cloudflare",
+        "final_category": "final_block",
+        "waited_sec": 51.68,
+        "html_len": 5386,
+        "images_found": 0,
+        "cf_clearance": true,
+        "solve_captcha_calls": 4,
+        "content_images_from_dom": 0,
+        "dom_images_report": [],
+        "elapsed_sec": 53.67
+      },
+      {
+        "strategy": "patchright_headed_direct",
+        "engine": "patchright",
+        "egress": "direct",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/luacomic-org-2260-lab-patchright_headed_direct.png",
+        "navigated": true,
+        "final_title": "Attention Required! | Cloudflare",
+        "final_category": "final_block",
+        "waited_sec": 50.66,
+        "html_len": 5401,
+        "images_found": 0,
+        "cf_clearance": true,
+        "browser_channel": "chrome",
+        "elapsed_sec": 51.57
+      },
+      {
+        "strategy": "camoufox_direct",
+        "engine": "camoufox",
+        "egress": "direct",
+        "ok": false,
+        "skipped": null,
+        "resolved": false,
+        "error": null,
+        "screenshot_path": "diagnostics/luacomic-org-2260-lab-camoufox_direct.png",
+        "navigated": true,
+        "final_title": "Attention Required! | Cloudflare",
+        "final_category": "final_block",
+        "waited_sec": 50.97,
+        "html_len": 5327,
+        "images_found": 0,
+        "cf_clearance": true,
+        "elapsed_sec": 55.17
+      },
+      {
+        "strategy": "seleniumbase_cdp_warp",
+        "engine": "seleniumbase",
+        "egress": "warp",
+        "ok": true,
+        "skipped": null,
+        "resolved": true,
+        "error": null,
+        "screenshot_path": "diagnostics/luacomic-org-2260-lab-seleniumbase_cdp_warp.png",
+        "egress_ip": "2a09:bac5:cbbc:1541::21e:a1",
+        "navigated": true,
+        "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+        "final_category": "none",
+        "waited_sec": 2.95,
+        "html_len": 112573,
+        "images_found": 6,
+        "cf_clearance": true,
+        "solve_captcha_calls": 0,
+        "content_images_from_dom": 6,
+        "dom_images_report": [
+          {
+            "src": "https://luacomic.org/wetried_only.png",
+            "w": 2133,
+            "h": 2133,
+            "rw": 24,
+            "rh": 24,
+            "ctx": "h-6 shrink-0 mr-3 hidden lg:block lg:group-data-[open=false]:duration-500  opacity-100 lg:group-data-[open=false]:animate-out lg:group-data-[open=false]:slide-out-to-left-full  shrink-0 flex flex-row "
+          },
+          {
+            "src": "https://luacomic.org/wetried_only.png",
+            "w": 2133,
+            "h": 2133,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "h-6 shrink-0 mr-3 lg:group-data-[open=false]:duration-500  opacity-100 lg:group-data-[open=false]:animate-out lg:group-data-[open=false]:slide-out-to-left-full  shrink-0 mt-2  flex flex-col items-cent"
+          },
+          {
+            "src": "https://luacomic.org/_next/image?url=https%3A%2F%2Fmedia.luacomic.org%2Ffile%2FV4IKlhs%2Fopm0f32udwwgj914d2c9h7cv.webp&w=48&q=75",
+            "w": 48,
+            "h": 68,
+            "rw": 35,
+            "rh": 48,
+            "ctx": "rounded h-full w-[35px]  max-h-12  flex flex-row gap-x-3 justify-center grow-0 px-4 py-3 rounded self-start  flex flex-row container justify-between items-center   flex shadow flex-row lg:mb-4 justify"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/001.webp.jpg",
+            "w": 800,
+            "h": 13310,
+            "rw": 800,
+            "rh": 13310,
+            "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/002.webp.jpg",
+            "w": 800,
+            "h": 12000,
+            "rw": 800,
+            "rh": 12000,
+            "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/003.webp.jpg",
+            "w": 800,
+            "h": 11757,
+            "rw": 800,
+            "rh": 11757,
+            "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/004.webp.jpg",
+            "w": 800,
+            "h": 11755,
+            "rw": 800,
+            "rh": 11755,
+            "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/005.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/006.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/007.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/008.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/009.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/010.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/011.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/012.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/013.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/014.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/015.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/016.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/017.webp.jpg",
+            "w": 0,
+            "h": 0,
+            "rw": 0,
+            "rh": 0,
+            "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+          },
+          {
+            "src": "https://luacomic.org/icon.png",
+            "w": 2133,
+            "h": 2133,
+            "rw": 32,
+            "rh": 32,
+            "ctx": "h-8 mr-3  flex items-center flex-col justify-center px-5 py-4 gap-4  bg-background    w-full transition-all duration-300 ease-in"
+          }
+        ],
+        "image_cdn_probe": {
+          "tested": true,
+          "samples": [
+            {
+              "url": "https://luacomic.org/wetried_only.png",
+              "host": "luacomic.org",
+              "cookies_sent": 5,
+              "no_referer": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4546"
+              }
+            },
+            {
+              "url": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/002.webp.jpg",
+              "host": "media.luacomic.org",
+              "cookies_sent": 5,
+              "no_referer": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4546"
+              }
+            },
+            {
+              "url": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/004.webp.jpg",
+              "host": "media.luacomic.org",
+              "cookies_sent": 5,
+              "no_referer": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_only": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8'"
+              },
+              "referer_cookies_ua": {
+                "ok": false,
+                "size": 4546,
+                "why": "status=403 content-type='text/html; charset=UTF-8' size=4546"
+              }
+            }
+          ],
+          "verdict": "blocked_even_with_clearance",
+          "cdn_hosts": [
+            "luacomic.org",
+            "media.luacomic.org"
+          ],
+          "error": null
+        },
+        "elapsed_sec": 34.97
+      },
+      {
+        "strategy": "camoufox_warp",
+        "engine": "camoufox",
+        "egress": "warp",
+        "ok": true,
+        "skipped": null,
+        "resolved": true,
+        "error": null,
+        "screenshot_path": "diagnostics/luacomic-org-2260-lab-camoufox_warp.png",
+        "egress_ip": "2a09:bac5:cbbc:1541::21e:a1",
+        "navigated": true,
+        "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+        "final_category": "none",
+        "waited_sec": 1.16,
+        "html_len": 110583,
+        "images_found": 19,
+        "cf_clearance": false,
+        "elapsed_sec": 4.08
+      },
+      {
+        "strategy": "patchright_headed_warp",
+        "engine": "patchright",
+        "egress": "warp",
+        "ok": true,
+        "skipped": null,
+        "resolved": true,
+        "error": null,
+        "screenshot_path": "diagnostics/luacomic-org-2260-lab-patchright_headed_warp.png",
+        "egress_ip": "2a09:bac5:cbbc:1541::21e:a1",
+        "navigated": true,
+        "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+        "final_category": "none",
+        "waited_sec": 1.03,
+        "html_len": 112693,
+        "images_found": 19,
+        "cf_clearance": true,
+        "browser_channel": "chrome",
+        "elapsed_sec": 2.04
+      }
+    ],
+    "winner": {
+      "strategy": "seleniumbase_cdp_warp",
+      "engine": "seleniumbase",
+      "egress": "warp",
+      "ok": true,
+      "skipped": null,
+      "resolved": true,
+      "error": null,
+      "screenshot_path": "diagnostics/luacomic-org-2260-lab-seleniumbase_cdp_warp.png",
+      "egress_ip": "2a09:bac5:cbbc:1541::21e:a1",
+      "navigated": true,
+      "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+      "final_category": "none",
+      "waited_sec": 2.95,
+      "html_len": 112573,
+      "images_found": 6,
+      "cf_clearance": true,
+      "solve_captcha_calls": 0,
+      "content_images_from_dom": 6,
+      "dom_images_report": [
+        {
+          "src": "https://luacomic.org/wetried_only.png",
+          "w": 2133,
+          "h": 2133,
+          "rw": 24,
+          "rh": 24,
+          "ctx": "h-6 shrink-0 mr-3 hidden lg:block lg:group-data-[open=false]:duration-500  opacity-100 lg:group-data-[open=false]:animate-out lg:group-data-[open=false]:slide-out-to-left-full  shrink-0 flex flex-row "
+        },
+        {
+          "src": "https://luacomic.org/wetried_only.png",
+          "w": 2133,
+          "h": 2133,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "h-6 shrink-0 mr-3 lg:group-data-[open=false]:duration-500  opacity-100 lg:group-data-[open=false]:animate-out lg:group-data-[open=false]:slide-out-to-left-full  shrink-0 mt-2  flex flex-col items-cent"
+        },
+        {
+          "src": "https://luacomic.org/_next/image?url=https%3A%2F%2Fmedia.luacomic.org%2Ffile%2FV4IKlhs%2Fopm0f32udwwgj914d2c9h7cv.webp&w=48&q=75",
+          "w": 48,
+          "h": 68,
+          "rw": 35,
+          "rh": 48,
+          "ctx": "rounded h-full w-[35px]  max-h-12  flex flex-row gap-x-3 justify-center grow-0 px-4 py-3 rounded self-start  flex flex-row container justify-between items-center   flex shadow flex-row lg:mb-4 justify"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/001.webp.jpg",
+          "w": 800,
+          "h": 13310,
+          "rw": 800,
+          "rh": 13310,
+          "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/002.webp.jpg",
+          "w": 800,
+          "h": 12000,
+          "rw": 800,
+          "rh": 12000,
+          "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/003.webp.jpg",
+          "w": 800,
+          "h": 11757,
+          "rw": 800,
+          "rh": 11757,
+          "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/004.webp.jpg",
+          "w": 800,
+          "h": 11755,
+          "rw": 800,
+          "rh": 11755,
+          "ctx": "flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/005.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/006.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/007.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/008.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/009.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/010.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/011.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/012.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/013.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/014.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/015.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/016.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/017.webp.jpg",
+          "w": 0,
+          "h": 0,
+          "rw": 0,
+          "rh": 0,
+          "ctx": "lazy  flex flex-col justify-center items-center  container    w-full transition-all duration-300 ease-in"
+        },
+        {
+          "src": "https://luacomic.org/icon.png",
+          "w": 2133,
+          "h": 2133,
+          "rw": 32,
+          "rh": 32,
+          "ctx": "h-8 mr-3  flex items-center flex-col justify-center px-5 py-4 gap-4  bg-background    w-full transition-all duration-300 ease-in"
+        }
+      ],
+      "image_cdn_probe": {
+        "tested": true,
+        "samples": [
+          {
+            "url": "https://luacomic.org/wetried_only.png",
+            "host": "luacomic.org",
+            "cookies_sent": 5,
+            "no_referer": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_only": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_cookies_ua": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8' size=4546"
+            }
+          },
+          {
+            "url": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/002.webp.jpg",
+            "host": "media.luacomic.org",
+            "cookies_sent": 5,
+            "no_referer": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_only": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_cookies_ua": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8' size=4546"
+            }
+          },
+          {
+            "url": "https://media.luacomic.org/file/V4IKlhs/uploads/series/unbeknownst-to-me-im-secretly-dating-the-emperor/c243052f-d316-4464-94fe-08888b9a89f6/004.webp.jpg",
+            "host": "media.luacomic.org",
+            "cookies_sent": 5,
+            "no_referer": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_only": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8'"
+            },
+            "referer_cookies_ua": {
+              "ok": false,
+              "size": 4546,
+              "why": "status=403 content-type='text/html; charset=UTF-8' size=4546"
+            }
+          }
+        ],
+        "verdict": "blocked_even_with_clearance",
+        "cdn_hosts": [
+          "luacomic.org",
+          "media.luacomic.org"
+        ],
+        "error": null
+      },
+      "elapsed_sec": 34.97
+    },
+    "recommended_profile": {
+      "domain": "luacomic.org",
+      "strategy": "seleniumbase_cdp_warp",
+      "engine": "seleniumbase",
+      "egress": "warp",
+      "headed_virtual_display": true,
+      "challenge_wait_sec": 14,
+      "verified_at": "2026-10-17T06:15:32Z",
+      "run_id": "39008736348",
+      "evidence": {
+        "cf_clearance": true,
+        "images_found": 6,
+        "final_title": "Unbeknownst to Me, I’m Secretly Dating the Emperor - Chapter 1 - Lua Comic",
+        "image_cdn_verdict": "blocked_even_with_clearance"
+      },
+      "production_integration": "يتطلب دعم هذه الاستراتيجية كـfetch_mode جديد بـcompress_chapters.py — لم يُدمَج بعد"
+    },
+    "virtual_display": {
+      "mode": "xvfb",
+      "display": ":99",
+      "error": null
+    },
+    "warp_setup": {
+      "ok": true,
+      "installed_now": true,
+      "steps": [
+        {
+          "step": "install",
+          "ok": true,
+          "rc": 0,
+          "tail": "sr/lib/systemd/user/warp-taskbar.service.\n\nCreated symlink /etc/systemd/system/multi-user.target.wants/warp-svc.service → /usr/lib/systemd/system/warp-svc.service.\n\nProcessing triggers for libc-bin (2.39-0ubuntu8.9) ...\n",
+          "elapsed_sec": 21.11
+        },
+        {
+          "step": "start_service",
+          "ok": true,
+          "rc": 0,
+          "tail": "",
+          "elapsed_sec": 0.01
+        },
+        {
+          "step": "registration",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.86
+        },
+        {
+          "step": "mode_proxy",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.0
+        },
+        {
+          "step": "proxy_port",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.0
+        },
+        {
+          "step": "connect",
+          "ok": true,
+          "rc": 0,
+          "tail": "Success\n",
+          "elapsed_sec": 0.01
+        },
+        {
+          "step": "verify_trace",
+          "ok": true,
+          "rc": 0,
+          "tail": "fl=542f377\nh=www.cloudflare.com\nip=2a09:bac5:cbbc:1541::21e:a1\nts=1792217691.000\nvisit_scheme=https\nuag=curl/8.5.0\ncolo=SEA\nsliver=none\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=on\ngateway=off\nrbi=off\nkex=X25519\n",
+          "elapsed_sec": 0.06
+        }
+      ],
+      "warp_state": "on",
+      "egress_ip": "2a09:bac5:cbbc:1541::21e:a1",
+      "error": null
+    },
+    "camoufox_setup": {
+      "ok": true,
+      "installed_now": false,
+      "steps": [
+        {
+          "step": "camoufox_fetch",
+          "ok": true,
+          "tail": "Syncing repositories...\n  Official... 23 versions\n  CoryKing... 2 versions\n  JWriter20... 18 versions\n\nSynced 43 versions from 3 repos.\nCamoufox binaries up to date!\nCurrent version: v156.0.1-beta.36\n"
+        }
+      ],
+      "error": null
+    },
+    "seleniumbase_setup": {
+      "ok": true,
+      "installed_now": false,
+      "chrome_found": true,
+      "steps": [],
+      "error": null
+    },
+    "elapsed_sec": 233.73,
+    "reused_from_earlier_url": false
+  },
+  "mitigation_layer_diagnosis": "waf_or_ip_rule_block_no_header — الأرجح قاعدة صريحة ضد نطاق IP، سابقة لأي فحص بصمة",
+  "diagnostic_run_files": {
+    "report": "diagnostics/luacomic-org-2260-report.json",
+    "screenshots": [
+      "diagnostics/luacomic-org-2260-screenshot.png",
+      "diagnostics/luacomic-org-2260-run2-screenshot.png",
+      "diagnostics/luacomic-org-2260-lab-seleniumbase_cdp_direct.png",
+      "diagnostics/luacomic-org-2260-lab-patchright_headed_direct.png",
+      "diagnostics/luacomic-org-2260-lab-camoufox_direct.png",
+      "diagnostics/luacomic-org-2260-lab-seleniumbase_cdp_warp.png",
+      "diagnostics/luacomic-org-2260-lab-camoufox_warp.png",
+      "diagnostics/luacomic-org-2260-lab-patchright_headed_warp.png"
+    ]
+  }
+}

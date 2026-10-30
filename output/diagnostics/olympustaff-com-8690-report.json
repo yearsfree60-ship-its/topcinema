@@ -1,0 +1,531 @@
+{
+  "url": "https://olympustaff.com/series/SMF/20",
+  "tls_and_server_info": {
+    "server_ip": "172.67.222.220",
+    "tls_issuer": "Google Trust Services",
+    "tls_subject": "olympustaff.com",
+    "tls_not_after": "Oct 15 10:30:37 2026 GMT",
+    "error": null
+  },
+  "runner_network_info": {
+    "ip": "52.159.229.6",
+    "org_asn": "AS8075 Microsoft Corporation",
+    "city": "San Jose",
+    "country": "US",
+    "error": null
+  },
+  "static_probe": {
+    "status_code": 403,
+    "headers_of_interest": {
+      "server": "cloudflare",
+      "cf-ray": "a308e46b0ef90995-SJC",
+      "cf-mitigated": "challenge",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "challenge_detected": true,
+    "protection_category": "solvable_challenge",
+    "protection_signatures": [
+      "Cloudflare"
+    ],
+    "images_via_noscript": 0,
+    "images_via_data_attr": 0,
+    "images_via_plain_src": 0,
+    "extracted_image_count": 0,
+    "extracted_sample_urls": [],
+    "sample_image_urls": [],
+    "signed_url_params": [],
+    "raw_cookies_received": [],
+    "error": null,
+    "elapsed_sec": 0.01
+  },
+  "browser_probe": {
+    "navigated": true,
+    "title": "الفصل رقم 20 | Team-X",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 31,
+    "images_after_wait": 31,
+    "images_after_scroll": 30,
+    "selector_match_counts": {
+      ".reading-content img": 23,
+      ".page-break img": 22,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 7,
+    "widget_excluded_count": 5,
+    "widget_excluded_samples": [
+      "...den   shrink-0  flex items-start gap-3  comment-item group rounded-xl bg-[#18181b] p-4...",
+      "...ounded-full overflow-hidden   shrink-0  comment-item nested-comment group flex gap-3 p-...",
+      "...den   shrink-0  flex items-start gap-3  comment-item group rounded-xl bg-[#18181b] p-4..."
+    ],
+    "suggested_selectors": [
+      ".flex",
+      ".items-center"
+    ],
+    "domain_distribution": {
+      "olympustaff.com": 28,
+      "1.bp.blogspot.com": 1,
+      "i.ibb.co": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/olympustaff-com-8690-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://olympustaff.com/images/TeamX.png",
+      "no_referer_success": true,
+      "no_referer_size": 84182,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 84182,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 84182,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false,
+      "image_cache_headers": {
+        "cache-control": "public, max-age=2592000",
+        "expires": "Sun, 30 Aug 2026 18:03:51 GMT",
+        "etag": "\"64f065bb-148d6\"",
+        "age": "2122015"
+      }
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://olympustaff.com/images/TeamX.png",
+        "no_referer_success": true,
+        "no_referer_size": 84182,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 84182,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 84182,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=2592000",
+          "expires": "Sun, 30 Aug 2026 18:03:51 GMT",
+          "etag": "\"64f065bb-148d6\"",
+          "age": "2122015"
+        }
+      },
+      {
+        "sample_url": "https://olympustaff.com/uploads/manga_66f04/20/11.webp",
+        "no_referer_success": true,
+        "no_referer_size": 575898,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 575898,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 575898,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=2592000",
+          "expires": "Thu, 24 Sep 2026 07:30:36 GMT",
+          "etag": "\"626b4fab-8c99a\"",
+          "age": "10"
+        }
+      },
+      {
+        "sample_url": "https://i.ibb.co/XxgjtmZX/AF713393-9-B16-464-F-A596-77-A5-D0834-D54.png",
+        "no_referer_success": true,
+        "no_referer_size": 394577,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 394577,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 394577,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "max-age=315360000, public",
+          "expires": "Thu, 31 Dec 2037 23:55:55 GMT"
+        }
+      }
+    ],
+    "network_vendor_hits": {
+      "Google reCAPTCHA": [
+        "https://www.google.com/recaptcha/api.js?render=6LdeD60rAAAAACMqMuYJUP8bSvIS0789JdVzZZIs"
+      ],
+      "Cloudflare JSD (تليمتري عادي، غير دال على حظر)": [
+        "https://olympustaff.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.8213899879624563:1787641216:mKocv2tH3iENuuET7QOPXnmuW1hpPx-7B-NMWklr_dY/a308e4"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 11,
+      "cookie_names_reused": [
+        "GL_GI10",
+        "GL_UI4",
+        "ID",
+        "OAID",
+        "XSRF-TOKEN",
+        "_ga",
+        "_ga_S18C1WZXWD",
+        "_gat_gtag_UA_169004427_4",
+        "_gid",
+        "cf_clearance",
+        "team_x_session"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 31,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 1.8,
+    "navigation_timing": {
+      "ttfb_ms": 411,
+      "dom_content_loaded_ms": 1791,
+      "load_event_ms": 1946,
+      "transfer_size_bytes": 30300
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 7.73,
+    "total_probe_elapsed_sec": 12.11,
+    "scroll_rounds_completed": 5,
+    "scroll_stop_reason": "content_stable_early_stop",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, private",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a308e46b6a8bcf2a-SJC",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; media-src 'self' https: blob:; frame-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; report-uri /csp-report",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 25 Aug 2026 07:30:35 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "permissions-policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OT5ncv13dpOIonwQ9sIsxwcmBXsdF1Qw9MkKYNJ2ZShYPbKabm1X87vPQ7jFLTtJM4BEg3nKgarCaK7vUMxlwTab9celD8AimjcQZbDYdVNllhZTDpojlie9XC7by9DfN60%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=5,cfOrigin;dur=397",
+      "set-cookie": "XSRF-TOKEN=eyJpdiI6Imd0ekRENlJ4RVZnOEpTQTJ3QjBCV2c9PSIsInZhbHVlIjoicGVrL01vdC9KekpaVG9mUzZrVWhIRXNJaHU4MHJKODI1ZFZCWnY5UkNjS29HNUNxRDhRTjRUTVBSR0tTdmFwRWlWRTN2TVFUcE5zZnNVeFY0T2QwK3RNWU5sQ1dON3llNk5jN29zTWUxd2Nxc1JNczJGcHAwSDZMQS9WVnk2dzAiLCJtYWMiOiI0YmI0ZGRkNGY4MWRmZTlhNmY5NTdmMTg4ZDBhYzZiNmYwMTRmYThjOGI5NWMyOGIzODY0MjA1Zjg3NWQ1YWM5IiwidGFnIjoiIn0%3D; expires=Tue, 25 Aug 2026 09:30:35 GMT; Max-Age=7200; path=/; secure; samesite=lax\nteam_x_session=eyJpdiI6IlVjYjd0dk5nL3NVcERLNlJ3dm9hNUE9PSIsInZhbHVlIjoiSFhGVGVVeFRXWFFUbFpJQm53SmVWQW9sS1dFRU5oYVlHQXMyZHNCWjZTZ0xDSW41S01NcmRqRVpFNXZJRmVHaVhYZ2lOcDk0N09RR0oxOVRubFkvbUp5bFdJbENwZXcvbUxOYVZkNGwzZEJFcFhZUlNSaU9nS0NIT3BWalZBY3AiLCJtYWMiOiI0ODgyMjU2MzU3N2QxYjFjYzU1NWFjMjAyZDVmMjJhZmE3MWM4NDM0ZjBlZTk4NThkNzA0ZGI2ZTM3MDA4OTJkIiwidGFnIjoiIn0%3D; expires=Tue, 25 Aug 2026 09:30:35 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block"
+    },
+    "all_third_party_domains": [
+      "1.bp.blogspot.com",
+      "acscdn.com",
+      "adexchangerapid.com",
+      "au.teethesmitsvah.com",
+      "cdn.jsdelivr.net",
+      "code.jquery.com",
+      "dd133.com",
+      "fedoq.com",
+      "i.ibb.co",
+      "llvpn.com",
+      "luugy.com",
+      "my.rtmark.net",
+      "static.cloudflareinsights.com",
+      "usrpubtrk.com",
+      "www.google-analytics.com",
+      "www.google.com",
+      "www.googletagmanager.com"
+    ],
+    "content_images_before_scroll": 31
+  },
+  "browser_probe_second_run": {
+    "navigated": true,
+    "title": "الفصل رقم 20 | Team-X",
+    "challenge_detected": false,
+    "protection_category": "none",
+    "challenge_resolved_after_reload": null,
+    "protection_signatures": [],
+    "images_at_t0": 31,
+    "images_after_wait": 31,
+    "images_after_scroll": 30,
+    "selector_match_counts": {
+      ".reading-content img": 23,
+      ".page-break img": 22,
+      ".text-left img": 0,
+      "#readerarea img": 0,
+      ".chapter-content img": 0
+    },
+    "unmatched_img_count": 7,
+    "widget_excluded_count": 5,
+    "widget_excluded_samples": [
+      "...den   shrink-0  flex items-start gap-3  comment-item group rounded-xl bg-[#18181b] p-4...",
+      "...ounded-full overflow-hidden   shrink-0  comment-item nested-comment group flex gap-3 p-...",
+      "...den   shrink-0  flex items-start gap-3  comment-item group rounded-xl bg-[#18181b] p-4..."
+    ],
+    "suggested_selectors": [
+      ".flex",
+      ".items-center"
+    ],
+    "domain_distribution": {
+      "olympustaff.com": 28,
+      "1.bp.blogspot.com": 1,
+      "i.ibb.co": 1
+    },
+    "signed_url_params": [],
+    "screenshot_path": "diagnostics/olympustaff-com-8690-run2-screenshot.png",
+    "hotlink_probe": {
+      "sample_url": "https://olympustaff.com/images/TeamX.png",
+      "no_referer_success": true,
+      "no_referer_size": 84182,
+      "no_referer_fail_reason": null,
+      "direct_http_success": true,
+      "direct_http_size": 84182,
+      "direct_http_fail_reason": null,
+      "browser_session_success": true,
+      "browser_session_size": 84182,
+      "browser_session_fail_reason": null,
+      "referer_only_sufficient": false,
+      "image_cache_headers": {
+        "cache-control": "public, max-age=2592000",
+        "expires": "Sun, 30 Aug 2026 18:03:51 GMT",
+        "etag": "\"64f065bb-148d6\"",
+        "age": "2122032"
+      }
+    },
+    "hotlink_probes": [
+      {
+        "sample_url": "https://olympustaff.com/images/TeamX.png",
+        "no_referer_success": true,
+        "no_referer_size": 84182,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 84182,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 84182,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=2592000",
+          "expires": "Sun, 30 Aug 2026 18:03:51 GMT",
+          "etag": "\"64f065bb-148d6\"",
+          "age": "2122032"
+        }
+      },
+      {
+        "sample_url": "https://olympustaff.com/uploads/manga_66f04/20/11.webp",
+        "no_referer_success": true,
+        "no_referer_size": 575898,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 575898,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 575898,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "public, max-age=2592000",
+          "expires": "Thu, 24 Sep 2026 07:30:36 GMT",
+          "etag": "\"626b4fab-8c99a\"",
+          "age": "27"
+        }
+      },
+      {
+        "sample_url": "https://i.ibb.co/XxgjtmZX/AF713393-9-B16-464-F-A596-77-A5-D0834-D54.png",
+        "no_referer_success": true,
+        "no_referer_size": 394577,
+        "no_referer_fail_reason": null,
+        "direct_http_success": true,
+        "direct_http_size": 394577,
+        "direct_http_fail_reason": null,
+        "browser_session_success": true,
+        "browser_session_size": 394577,
+        "browser_session_fail_reason": null,
+        "referer_only_sufficient": false,
+        "image_cache_headers": {
+          "cache-control": "max-age=315360000, public",
+          "expires": "Thu, 31 Dec 2037 23:55:55 GMT"
+        }
+      }
+    ],
+    "network_vendor_hits": {
+      "Google reCAPTCHA": [
+        "https://www.google.com/recaptcha/api.js?render=6LdeD60rAAAAACMqMuYJUP8bSvIS0789JdVzZZIs"
+      ],
+      "Cloudflare JSD (تليمتري عادي، غير دال على حظر)": [
+        "https://olympustaff.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/e694063b5082/0.8213899879624563:1787641216:mKocv2tH3iENuuET7QOPXnmuW1hpPx-7B-NMWklr_dY/a308e4"
+      ]
+    },
+    "adblock_wall": {
+      "detected": false,
+      "became_ready_after_sec": null,
+      "clicked": false,
+      "button_snippet": null,
+      "timed_out": false
+    },
+    "cookie_reuse_probe": {
+      "tested": true,
+      "success": false,
+      "status_code": 403,
+      "cookie_count_reused": 11,
+      "cookie_names_reused": [
+        "GL_GI10",
+        "GL_UI4",
+        "ID",
+        "OAID",
+        "XSRF-TOKEN",
+        "_ga",
+        "_ga_S18C1WZXWD",
+        "_gat_gtag_UA_169004427_4",
+        "_gid",
+        "cf_clearance",
+        "team_x_session"
+      ]
+    },
+    "fingerprint_with_stealth": {
+      "webdriver": false,
+      "hasWindowChrome": true,
+      "pluginsLength": 3,
+      "languages": [
+        "en-US",
+        "en"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    },
+    "stealth_comparison": {
+      "no_stealth": {
+        "navigated": true,
+        "challenge_detected": false,
+        "protection_category": "none",
+        "images_after_wait": 31,
+        "fingerprint": {
+          "webdriver": true,
+          "hasWindowChrome": false,
+          "pluginsLength": 0,
+          "languages": [
+            "en-US"
+          ],
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        },
+        "error": null
+      },
+      "webdriver_flag_hidden_by_stealth": true,
+      "challenge_outcome_differs": false,
+      "image_count_differs": false
+    },
+    "error": null,
+    "goto_elapsed_sec": 1.83,
+    "navigation_timing": {
+      "ttfb_ms": 412,
+      "dom_content_loaded_ms": 1827,
+      "load_event_ms": 1982,
+      "transfer_size_bytes": 30344
+    },
+    "wait_for_images_elapsed_sec": 1.61,
+    "scroll_elapsed_sec": 8.0,
+    "total_probe_elapsed_sec": 12.79,
+    "scroll_rounds_completed": 5,
+    "scroll_stop_reason": "content_stable_early_stop",
+    "navigation_response_headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, private",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a308e4d22ace942c-SJC",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; media-src 'self' https: blob:; frame-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; report-uri /csp-report",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 25 Aug 2026 07:30:52 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "permissions-policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RtqhqJFWF2OYdNQJXOhEsNvUG7N1ZMYgxqDIqAzP6J2T%2Bg3qCGnkG0FT8xK78hSXYK4LR81LYB46fZBsL4RwnoVGsSw0h%2F%2BYyQ8o0ZhAtDEwrDK0lOc%2FUsKXkg5xzDn0smo%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=399",
+      "set-cookie": "XSRF-TOKEN=eyJpdiI6ImszdWNqTTVvR1k3UVRhU2lwVS9FdXc9PSIsInZhbHVlIjoiUk93b0Vva3Q3YUZQODhmS3pZVWNuek82UXY2OU1pZzlFVmg1V2VQSkc2aXJUbFdhTzRwV2ZUdVBIY0ZiTk42ZjRKYTJSR1ZZK09Qc0RVSnVOUUc2OE92ZWNDeTRyL2dxY1B4R1h5RXVjOFFidHZVc2E3ekJEYzJQNVl5bVdvV1ciLCJtYWMiOiIyMzFlYzNmZWMwODRhMmQ0ZDJjYTJlMDljZDU1ZDE4MWE5M2I5YjliZGU0YzIzZDJlOGU1MWVhMDFkYTljNjQxIiwidGFnIjoiIn0%3D; expires=Tue, 25 Aug 2026 09:30:52 GMT; Max-Age=7200; path=/; secure; samesite=lax\nteam_x_session=eyJpdiI6InlGcEFvbUFYRDF0bUliZ29iY2xQMUE9PSIsInZhbHVlIjoiL1NoaE5rOGpRbXYyZ0F1SDRnRkNjcFRHQ2EyN1VXTGlaT3k4a2RUVXlrQjVRNDkzWGpjTmRWRmxUZTFWS1k4S2VmcUNieTlrV0FpeUZsdzdXOUJ4anVmTzdzeU1hQ3dPMUpBejEvTE54Zi9MWWNrM1AyaURHb01MenkvRHZtQUkiLCJtYWMiOiI5MjRmODAyZGE0MTk5Mzg0ZjM3YzEyNmQzOTgwNGUzMmRhN2EzYjFmOWRkOGRjOTg1MDIyYmY5MGFlNmM2OTIwIiwidGFnIjoiIn0%3D; expires=Tue, 25 Aug 2026 09:30:52 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block"
+    },
+    "all_third_party_domains": [
+      "1.bp.blogspot.com",
+      "acscdn.com",
+      "adexchangerapid.com",
+      "au.teethesmitsvah.com",
+      "cdn.jsdelivr.net",
+      "code.jquery.com",
+      "dd133.com",
+      "fedoq.com",
+      "i.ibb.co",
+      "llvpn.com",
+      "luugy.com",
+      "my.rtmark.net",
+      "static.cloudflareinsights.com",
+      "usrpubtrk.com",
+      "www.google-analytics.com",
+      "www.google.com",
+      "www.googletagmanager.com"
+    ],
+    "content_images_before_scroll": 31
+  },
+  "consistency_diffs": [],
+  "rate_limit_probe": {
+    "target": "image_cdn",
+    "sample_url": "https://olympustaff.com/images/TeamX.png",
+    "requests_sent": 4,
+    "elapsed_sec": 0.04,
+    "status_codes": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "rate_limited_detected": false,
+    "static_block_detected": false,
+    "retry_after_header": null
+  },
+  "history_diffs_since_last_run": [],
+  "diagnostic_run_files": {
+    "report": "diagnostics/olympustaff-com-8690-report.json",
+    "screenshots": [
+      "diagnostics/olympustaff-com-8690-screenshot.png",
+      "diagnostics/olympustaff-com-8690-run2-screenshot.png"
+    ]
+  }
+}
