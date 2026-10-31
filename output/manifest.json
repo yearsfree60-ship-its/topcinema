@@ -2153,6 +2153,34 @@
           "compressedBytes": 3079200
         }
       ]
+    },
+    "starzmanga.com__the-investor-who-sees-the-future": {
+      "name": "the investor who sees the future",
+      "chapters": [
+        {
+          "label": "الفصل 1",
+          "num": "1",
+          "chNum": 1.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-investor-who-sees-the-future/1/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/010.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/011.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/012.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-1/013.webp"
+          ],
+          "originalBytes": 18010694,
+          "compressedBytes": 3096154
+        }
+      ]
     }
   }
 }
