@@ -1064,6 +1064,20 @@
           ],
           "originalBytes": 16358341,
           "compressedBytes": 2496480
+        },
+        {
+          "label": "الفصل 48",
+          "num": "48",
+          "chNum": 48.0,
+          "sourceUrl": "https://starzmanga.com/manga/the-investor-who-sees-the-future/48/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-48/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-48/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-48/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__the-investor-who-sees-the-future/ch-48/004.webp"
+          ],
+          "originalBytes": 14167509,
+          "compressedBytes": 772124
         }
       ]
     }
