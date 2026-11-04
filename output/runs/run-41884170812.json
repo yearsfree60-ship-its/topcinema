@@ -1858,6 +1858,21 @@
           ],
           "originalBytes": 9886558,
           "compressedBytes": 1075512
+        },
+        {
+          "label": "الفصل 78",
+          "num": "78",
+          "chNum": 78.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/78/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-78/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-78/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-78/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-78/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-78/005.webp"
+          ],
+          "originalBytes": 7829274,
+          "compressedBytes": 1144046
         }
       ]
     }
