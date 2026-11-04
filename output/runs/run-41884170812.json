@@ -264,6 +264,60 @@
           ],
           "originalBytes": 3600475,
           "compressedBytes": 1044938
+        },
+        {
+          "label": "الفصل 10",
+          "num": "10",
+          "chNum": 10.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/10/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-10/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-10/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-10/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-10/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-10/005.webp"
+          ],
+          "originalBytes": 3923357,
+          "compressedBytes": 1069990
+        },
+        {
+          "label": "الفصل 11",
+          "num": "11",
+          "chNum": 11.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/11/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-11/010.webp"
+          ],
+          "originalBytes": 5009504,
+          "compressedBytes": 1466532
+        },
+        {
+          "label": "الفصل 12",
+          "num": "12",
+          "chNum": 12.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/12/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-12/009.webp"
+          ],
+          "originalBytes": 7911689,
+          "compressedBytes": 1230046
         }
       ]
     }
