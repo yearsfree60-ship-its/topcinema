@@ -1786,6 +1786,21 @@
           ],
           "originalBytes": 8528075,
           "compressedBytes": 988920
+        },
+        {
+          "label": "الفصل 73",
+          "num": "73",
+          "chNum": 73.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/73/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-73/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-73/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-73/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-73/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-73/005.webp"
+          ],
+          "originalBytes": 7677279,
+          "compressedBytes": 948786
         }
       ]
     }
