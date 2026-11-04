@@ -11082,6 +11082,21 @@
           ],
           "originalBytes": 4259732,
           "compressedBytes": 1346222
+        },
+        {
+          "label": "الفصل 9",
+          "num": "9",
+          "chNum": 9.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/9/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-9/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-9/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-9/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-9/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-9/005.webp"
+          ],
+          "originalBytes": 3600475,
+          "compressedBytes": 1044938
         }
       ]
     }
