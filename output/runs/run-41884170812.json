@@ -811,6 +811,20 @@
           ],
           "originalBytes": 11490664,
           "compressedBytes": 1287270
+        },
+        {
+          "label": "الفصل 33",
+          "num": "33",
+          "chNum": 33.0,
+          "sourceUrl": "https://starzmanga.com/manga/this-is-the-law/33/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-33/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-33/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-33/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__this-is-the-law/ch-33/004.webp"
+          ],
+          "originalBytes": 13107055,
+          "compressedBytes": 819212
         }
       ]
     }
