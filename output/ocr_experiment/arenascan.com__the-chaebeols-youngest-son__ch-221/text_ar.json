@@ -1,0 +1,744 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "221",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HANDMADE FATHER'S DINER BURGER",
+          "confidence": 0.936,
+          "text_ar": "برجر مطعم الأب المصنوع يدوياً"
+        },
+        {
+          "text": "I AM ELIZABETH PORTER.",
+          "confidence": 0.987,
+          "text_ar": "أنا إليزابيث پورتر."
+        },
+        {
+          "text": "MY FRIENDS CALL ME BETTE.",
+          "confidence": 0.958,
+          "text_ar": "أصدقائي ينادونني بيتي."
+        },
+        {
+          "text": "IT IS NICE TO MEET YOU, MR. JIN.",
+          "confidence": 0.894,
+          "text_ar": "يسرني لقاؤك يا سيد جين."
+        },
+        {
+          "text": "PLEASE,CALL ME HOWARD.",
+          "confidence": 0.957,
+          "text_ar": "أرجوك، نادني هوارد."
+        },
+        {
+          "text": "SHALL I?",
+          "confidence": 0.981,
+          "text_ar": "أأبدأ؟"
+        },
+        {
+          "text": "HOWARD.BETTE IS A BRILLIANT SCHOLARWHO MAJOREDINHISTORYAT YE-X AND ART AT NEW-X UNIVERSITY.",
+          "confidence": 0.919,
+          "text_ar": "هوارد. بيتي باحثة لامعة تخصصت في التاريخ في جامعة يي-إكس والفنون في جامعة نيويورك-إكس."
+        },
+        {
+          "text": "SHE IS CURRENTLY THE DIRECTOROFTHE WENTWORTH ART GALLERY.",
+          "confidence": 0.96,
+          "text_ar": "هي حالياً مديرة معرض وينتورث للفنون."
+        },
+        {
+          "text": "I AM THE DIRECTOR, BUT I HAVEN'T BEEN ABLETO DOMY JOB.WE ARE ON THE VERGE OF CLOSING.",
+          "confidence": 0.925,
+          "text_ar": "أنا المديرة، لكنني لم أتمكن من أداء عملي. نحن على وشك الإغلاق."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "HOW MUCH DEBT DO YOU HAVE?",
+          "confidence": 0.96,
+          "text_ar": "كم يبلغ حجم ديونك؟"
+        },
+        {
+          "text": "AEHTAI nIa",
+          "confidence": 0.247,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "I AM ASKING HOW MUCH YOU NEED TO KEEP FROMCLOSING.",
+          "confidence": 0.892,
+          "text_ar": "أنا أسأل عن المبلغ الذي تحتاجينه لمنع الإغلاق."
+        },
+        {
+          "text": "'AEHTAR AEE",
+          "confidence": 0.161,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "DIMANGA.COM",
+          "confidence": 0.968,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "2'AHTA RMO",
+          "confidence": 0.315,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "AROUND 1.2 MILLION DOLLARS WOULD GIVE US SOME BREATHING ROOM.",
+          "confidence": 0.964,
+          "text_ar": "حوالي 1.2 مليون دولار ستمنحنا بعض المتنفس."
+        },
+        {
+          "text": "WHAT ABOUT YOUR ANNUALBUDGET?",
+          "confidence": 0.965,
+          "text_ar": "وماذا عن ميزانيتك السنوية؟"
+        },
+        {
+          "text": "IT IS 2.5 MILLION DOLLARS.",
+          "confidence": 0.975,
+          "text_ar": "إنها 2.5 مليون دولار."
+        },
+        {
+          "text": "BUT THE INCOME FROM OUR EXHIBITION PROGRAMS...",
+          "confidence": 0.954,
+          "text_ar": "لكن الدخل من برامج معارضنا..."
+        },
+        {
+          "text": "I WILL PROVIDE 3 MILLION DOLLARS EVERY YEAR, SO MAKE IT A GREAT GALLERY.",
+          "confidence": 0.931,
+          "text_ar": "سأقدم 3 ملايين دولار كل سنة، لذا اجعليه معظماً رائعاً."
+        },
+        {
+          "text": "DOES THAT WORK?",
+          "confidence": 0.986,
+          "text_ar": "أيليق هذا بك؟"
+        },
+        {
+          "text": "AHTA 13M0-",
+          "confidence": 0.608,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "WHAT DID I TELL YOU?",
+          "confidence": 0.871,
+          "text_ar": "ماذا قلت لك؟"
+        },
+        {
+          "text": "Haha.",
+          "confidence": 0.961,
+          "text_ar": "هاها."
+        },
+        {
+          "text": "$\\fra{}{",
+          "confidence": 0.576,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "I TOLD YOU TODAY WAS THE DAY WE HIT THE JACKPOT, DIDN'T I?",
+          "confidence": 0.919,
+          "text_ar": "ألم أخبرك أن اليوم هو اليوم الذي سنربح فيه الجائزة الكبرى؟"
+        },
+        {
+          "text": "W-WAITA MINUTE.WHAT IS THIS..?",
+          "confidence": 0.891,
+          "text_ar": "انتـ-انتظري دقيقة. ما هذا..؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "IT IS THE CURRENT STATUS OF OUR GALLERY.",
+          "confidence": 0.92,
+          "text_ar": "إنه الوضع الحالي لمعرضنا."
+        },
+        {
+          "text": "SHOULDN'T YOU REVIEW THIS FIRST?",
+          "confidence": 0.96,
+          "text_ar": "ألا يجب عليك مراجعة هذا أولاً؟"
+        },
+        {
+          "text": "DO I REALLY HAVE TO LOOK?",
+          "confidence": 0.882,
+          "text_ar": "هل يجب عليّ حقاً أن أنظر إليه؟"
+        },
+        {
+          "text": "BOW",
+          "confidence": 0.748,
+          "text_ar": "انحناء"
+        },
+        {
+          "text": "DO YOU HAPPEN TO KnOW A LOT ABOUT OUR GALLERY OR ME..?",
+          "confidence": 0.87,
+          "text_ar": "هل تصادف أنك معرفة بالكثير عن معرضنا أو عني..؟"
+        },
+        {
+          "text": "NO, I DON'T KNOW ANYTHING AT ALL.",
+          "confidence": 0.928,
+          "text_ar": "لا، أنا لا أعرف شيئاً البتة."
+        },
+        {
+          "text": "IN FACT, I AM PRACTICALLY AN AMATEUR WHEN IT COMES TO ART.",
+          "confidence": 0.86,
+          "text_ar": "في الواقع، أنا مجرد هاوٍ تماماً عندما يتعلق الأمر بالفن."
+        },
+        {
+          "text": "BUT YOU ARE OFFERING TO SUPPORT USWITH 3 MILLION DOLLARS A YEAR WITHOUT EVEN REVIEWING THE GALLERY.",
+          "confidence": 0.939,
+          "text_ar": "لكنك تعرض دعمنا بـ 3 ملايين دولار سنوياً دون حتى مراجعة المعرض."
+        },
+        {
+          "text": "AMI STRANGE FOR NOT FINDING THAT STRANGE?",
+          "confidence": 0.983,
+          "text_ar": "أأنا غريب لعدم إيجادي الأمر غريباً؟"
+        },
+        {
+          "text": "DOES THAT MEAN YOU ARE REFUSING A FAVOR WITH NO STRINGS ATTACHED?",
+          "confidence": 0.953,
+          "text_ar": "أيعني هذا أنك ترفض معروفاً بلا شروط؟"
+        },
+        {
+          "text": "THERE IS NO SUCH THING AS A FREE LUNCH.",
+          "confidence": 0.978,
+          "text_ar": "ليس هناك شيء اسمه غداء مجاني."
+        },
+        {
+          "text": "E&CUP CA",
+          "confidence": 0.965,
+          "text_ar": "مؤثر صوتي"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "SHE IS NOT SOME UNREALISTIC WOMAN LOST IN THE WORLD OF ART.",
+          "confidence": 0.948,
+          "text_ar": "هي ليست امرأة غير واقعية تائهة في عالم الفن."
+        },
+        {
+          "text": "HTAI II0",
+          "confidence": 0.4,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "SHE KNOWS THE BASICS OF BUSINESS.",
+          "confidence": 0.916,
+          "text_ar": "هي تعرف أساسيات الأعمال التجارية."
+        },
+        {
+          "text": "WHO SAID IT WAS FREE?",
+          "confidence": 0.972,
+          "text_ar": "من قال إنه مجاني؟"
+        },
+        {
+          "text": "MY PROMISE IS ONLY VALID IF YOU BRING ME WHAT I WANT.",
+          "confidence": 0.921,
+          "text_ar": "وعدي ساري المفعول فقط إذا أحضرت لي ما أريد."
+        },
+        {
+          "text": "HAVE A LOOK AT THIS FIRST.",
+          "confidence": 0.924,
+          "text_ar": "ألق نظرة على هذا أولاً."
+        },
+        {
+          "text": "CAKE",
+          "confidence": 0.993,
+          "text_ar": "كعكة"
+        },
+        {
+          "text": "3HT AEE",
+          "confidence": 0.178,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "29HTA 一RMI0",
+          "confidence": 0.404,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "HOLY SHIT! WOW!",
+          "confidence": 0.838,
+          "text_ar": "تباً! يا لها من روعة!"
+        },
+        {
+          "text": "IS IT REALLY THAT AMAZING?",
+          "confidence": 0.982,
+          "text_ar": "أهلحق درجة مذهلة حقاً؟"
+        },
+        {
+          "text": "EHTA7 MIa",
+          "confidence": 0.252,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "WAIT, YOU DON'T KNOW THESE?",
+          "confidence": 0.963,
+          "text_ar": "انتظر، ألا تعرف هذه؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "MARK ZOHR, PAUL, JAN VAN LAKE, ZIARA...",
+          "confidence": 0.969,
+          "text_ar": "مارك زور، بول، جان فان ليك، زيارا..."
+        },
+        {
+          "text": "AND EVEN DAMIEN HIRST.",
+          "confidence": 0.97,
+          "text_ar": "وحتى داميان هيرست."
+        },
+        {
+          "text": "THESE ARE ALL CULTURAL HERITAGE OF HUMANITY!",
+          "confidence": 0.975,
+          "text_ar": "هذه كلها تراث ثقافي للبشرية!"
+        },
+        {
+          "text": "DO YOU KNOW WHAT THESE ARTWORKS HAVE IN COMMON?",
+          "confidence": 0.758,
+          "text_ar": "أتعرف ما المشترك بين هذه الأعمال الفنية؟"
+        },
+        {
+          "text": "I JUST TOLD YOU. THEY ARE INCREDIBLE MASTERPIECES.",
+          "confidence": 0.953,
+          "text_ar": "لقد أخبِرت للتو. إنها تحف فنية مذهلة."
+        },
+        {
+          "text": "BUY THEM ALL.",
+          "confidence": 0.934,
+          "text_ar": "اشترِها كلها."
+        },
+        {
+          "text": "OF COURSE THEY WON'T SELL EVERYTHING, BUT GET AS MANY AS YOU CAN.",
+          "confidence": 0.873,
+          "text_ar": "بالطبع لن يبيعوا كل شيء، لكن احصل على قدر ما تستطيع."
+        },
+        {
+          "text": "THAT IS MY CONDITION.",
+          "confidence": 0.986,
+          "text_ar": "هذا هو شرطي."
+        },
+        {
+          "text": "IT WILL EASILY COST 3O0 TO 4OO MILLIONDOLLARS TO BUY ALL OF THESE..",
+          "confidence": 0.911,
+          "text_ar": "سيكلف شراء كل هذه بسهولة ما بين 300 إلى 400 مليون دولار..."
+        },
+        {
+          "text": "AH,I WILL COVER THE FULL COST OF PURCHASING COST OE PURCHASING THE ARTWORKS, SO YOU DON'T HAVE TO WORRY ABOUT THE MoNEY.",
+          "confidence": 0.826,
+          "text_ar": "آه، سأغطي التكلفة الكاملة لشراء الأعمال الفنية، لذا لا داعي للقلق بشأن المال."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gallery Sunyang Gall",
+          "confidence": 0.957,
+          "text_ar": "معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ معرض سونيانغ"
+        },
+        {
+          "text": "SUNYANG GALLERY! ALL OF THESE ARTWORKS ARE AT SUNYANG GALLERY.",
+          "confidence": 0.942,
+          "text_ar": "معرض سونيانغ! كل هذه الأعمال الفنية موجودة في معرض سونيانغ."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.973,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "GIVE UP. IT IS FAMOUS FOR THE FACT THAT ARTWORKS ENTERING THAT GALLERY NEVER SEE THE LIGHT OF DAY AGAIN.",
+          "confidence": 0.937,
+          "text_ar": "استسلمي. فهو مشهور بحقيقة أن الأعمال الفنية التي تدخل ذلك المعرض لا ترى النور أبداً."
+        },
+        {
+          "text": "HITA",
+          "confidence": 0.9,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "THEY SLEEP IN THE STORAGE VAULT FOREVER.",
+          "confidence": 0.986,
+          "text_ar": "إنها تنام في قبو التخزين إلى الأبد."
+        },
+        {
+          "text": "IT IS AN INFAMOUS GALLERY THAT NEVER EXHIBITS ITS MASTERPIECES.",
+          "confidence": 0.91,
+          "text_ar": "إنه معرض سيء السمعة لا يعرض تحفه الفنية أبداً."
+        },
+        {
+          "text": "EVEN IF THEY AREN'T ON PERMANENT DISPLAY, THEY SHOULD BE EXHIBITED AT LEAST ONCE A YEAR.",
+          "confidence": 0.955,
+          "text_ar": "حتى وإن لم تكن معروضة بشكل دائم، يجب أن تُعرض مرة واحدة على الأقل في السنة."
+        },
+        {
+          "text": "HIDING ARTWORKS AND ONLY STORING THEM",
+          "confidence": 0.959,
+          "text_ar": "إخفاء الأعمال الفنية وتخزينها فقط"
+        },
+        {
+          "text": "IS ABANDONING THE DUTIES OF A GALLERY.",
+          "confidence": 0.975,
+          "text_ar": "هو تخلي عن واجبات المعرض."
+        },
+        {
+          "text": "EVEN IF THEY DON'T EXHIBIT THEM, THEY WILL SELL THEM.",
+          "confidence": 0.901,
+          "text_ar": "حتى وإن لم يعرضوها، فسوف يبيعونها."
+        },
+        {
+          "text": "THOUGH THEY WON'T SELL ALL OF THEM,OF COURSE.",
+          "confidence": 0.906,
+          "text_ar": "رغم أنهم لن يبيعوها كلها بالطبع."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "WHAT DO YOU MEAN BY THAT?",
+          "confidence": 0.902,
+          "text_ar": "ماذا تقصد بذلك؟"
+        },
+        {
+          "text": "SUNYANG GALLERY IS NOT A DEALER.",
+          "confidence": 0.956,
+          "text_ar": "معرض سونيانغ ليس تاجر أعمال فنية."
+        },
+        {
+          "text": "TRUST ME AND GO AHEAD WITH IT.",
+          "confidence": 0.963,
+          "text_ar": "ثق بي وامضِ قدماً في الأمر."
+        },
+        {
+          "text": "YOU HAVE NOTHING TO LOSE, RIGHT?",
+          "confidence": 0.94,
+          "text_ar": "ليس لديك ما تخسره، أليس كذلك؟"
+        },
+        {
+          "text": "AH,SO YOU DON'T GIVE THE IMPRESSION THAT YOU ARE ONLY BUYING THEIR ARTWORKS WHEN YOU CONTACT SUNYANG GALLERY,",
+          "confidence": 0.887,
+          "text_ar": "آه، لكي لا تعطي انطباعاً بأنك تشتري أعمالهم الفنية فقط عندما تتواصل مع معرض سونيانغ،"
+        },
+        {
+          "text": "YOU CAN BUY A FEW ARTWORKS FROM OTHER PLACES AS WELL.",
+          "confidence": 0.908,
+          "text_ar": "يمكنك شراء بعض الأعمال الفنية من أماكن أخرى أيضاً."
+        },
+        {
+          "text": "MOSOLOHU",
+          "confidence": 0.854,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "OF COURSE, YOU DON'T HAVE TO WORRY ABOUT THE COST FOR THOSE EITHER.",
+          "confidence": 0.887,
+          "text_ar": "بالطبع، لا داعي للقلق بشأن تكلفة تلك أيضاً."
+        },
+        {
+          "text": "RE 一A",
+          "confidence": 0.374,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "COULD YOU EXCUSE ME FOR A MOMENT?",
+          "confidence": 0.891,
+          "text_ar": "أتذذن لي بالانصراف لحظة؟"
+        },
+        {
+          "text": "CAKE",
+          "confidence": 0.995,
+          "text_ar": "كعكة"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.983,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "HTAI IIa",
+          "confidence": 0.403,
+          "text_ar": "مؤثر صوتي"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "10 MINUTES LATER,",
+          "confidence": 0.897,
+          "text_ar": "بعد 10 دقائق،"
+        },
+        {
+          "text": "I AM SORRY, HOWARD.",
+          "confidence": 0.932,
+          "text_ar": "أنا آسفة، هوارد."
+        },
+        {
+          "text": "I WAS A BIT RUDE.",
+          "confidence": 0.944,
+          "text_ar": "كنت فظة بعض الشيء."
+        },
+        {
+          "text": "NO, IT'S FINE.",
+          "confidence": 0.956,
+          "text_ar": "لا، لا بأس."
+        },
+        {
+          "text": "BELUO",
+          "confidence": 0.56,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "I SAID SOMETHING THAT WOULD NATURALLY FLUSTER ANYONE.",
+          "confidence": 0.968,
+          "text_ar": "لقد قلت شيئاً سيربك أي شخص بطبيعة الحال."
+        },
+        {
+          "text": "I WILL ASK YOU ONE THING.",
+          "confidence": 0.934,
+          "text_ar": "سأسألك شيئاً واحداً."
+        },
+        {
+          "text": "IFI FAIL TO PURCHASE THE ARTWORKS FROMSUNYANG GALLERY, WILL THE SUPPORT FOR WENTWORTHARTGALLERY BE CANCELED?",
+          "confidence": 0.948,
+          "text_ar": "إن فشلت في شراء الأعمال الفنية من معرض سونيانغ، هل سيتم إلغاء الدعم المقدم لمعرض وينتورث للفنون؟"
+        },
+        {
+          "text": "I BELIEVE I ALREADY TOLD yOU?",
+          "confidence": 0.804,
+          "text_ar": "أعتقد أنني أخبرتك بذلك مسبقاً؟"
+        },
+        {
+          "text": "I AM AN AMATEUR WHEN IT COMES TO ART. IT WILL BE AS IF THIS NEVER HAPPENED.",
+          "confidence": 0.906,
+          "text_ar": "أنا هاوٍ فيما يتعلق بالفن. سيكون الأمر كما لو أن هذا لم يحدث قط."
+        },
+        {
+          "text": "LASTLY... THIS WILL BE A PERSONAL QUESTION, IS THAT OKAY?",
+          "confidence": 0.959,
+          "text_ar": "وأخيراً... سيكون هذا سؤالاً شخصياً، هل هذا مسموح؟"
+        },
+        {
+          "text": "EHTAE",
+          "confidence": 0.346,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "GO AHEAD.IF IT IS A DIFFICULT QUESTION TO ANSWER, I WILL SAY NO COMMENT.",
+          "confidence": 0.888,
+          "text_ar": "تفضل. وإن كان سؤالاً يصعب الإجابة عليه، فسأقول لا تعليق."
+        },
+        {
+          "text": "I HEARD YOU ARE PART OF THE SUNYANG GROUP'S FOUNDING FAMILY, HOWARD. SUNYANG GALLERY IS ALSO AFOUNDATIONOPERATED BY THAT GROUP.",
+          "confidence": 0.933,
+          "text_ar": "سمعت أنك تنتمي للعائلة المؤسسة لمجموعة سونيانغ يا هوارد. معرض سونيانغ هو أيضاً مؤسسة تديرها تلك المجموعة."
+        },
+        {
+          "text": "SO WHY ARE YOU DOING THINGS IN SUCH A COMPLICATED WAY?",
+          "confidence": 0.941,
+          "text_ar": "فلماذا تفعل الأمور بطريقة معقدة هكذا؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "AEHTAR AE",
+          "confidence": 0.278,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "IT IS A COMPLICATED FAMILY MATTER, SO NO COMMENT.",
+          "confidence": 0.857,
+          "text_ar": "إنها مسألة عائلية معقدة، لذا لا تعليق."
+        },
+        {
+          "text": "OKAY. I WILL GIVE IT A TRY.",
+          "confidence": 0.957,
+          "text_ar": "حسناً. سأحاول القيام بذلك."
+        },
+        {
+          "text": "2AZHE",
+          "confidence": 0.444,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "THAT WON'T BE ENOUGH.",
+          "confidence": 0.987,
+          "text_ar": "لن يكون ذلك كافياً."
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.996,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "GIVE ITA TRY? IF YOU APPROACH SUNYANG GALLERY WITH THAT MINDSET,",
+          "confidence": 0.932,
+          "text_ar": "ستحاولين؟ إن تقربتِ من معرض سونيانغ بهذا العقلية،"
+        },
+        {
+          "text": "YOU WON'T EVEN GET A PROPER RESPONSE.",
+          "confidence": 0.887,
+          "text_ar": "فلن تحصلي حتى على رد مناسب."
+        },
+        {
+          "text": "YOU HAVE TO APPROACH THEM WITH A FLAWLESS PLANWITHOUT A SINGLE LOOPHOLE",
+          "confidence": 0.869,
+          "text_ar": "يجب أن تقتربي منهم بخطة خالية من العيوب دون ثغرة واحدة"
+        },
+        {
+          "text": "FOR SUNYANG GALLERY'S GATES TO OPEN.",
+          "confidence": 0.97,
+          "text_ar": "لكي تفتح أبواب معرض سونيانغ."
+        },
+        {
+          "text": "BECAUSE THE ONES SITTING BEHIND THE NAME SUNYANG",
+          "confidence": 0.975,
+          "text_ar": "لأن أولئك الجالسين خلف اسم سونيانغ"
+        },
+        {
+          "text": "ARE ALL MONSTERS.",
+          "confidence": 0.963,
+          "text_ar": "هم جميعاً وحوش."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "LOOK AT ME.",
+          "confidence": 0.954,
+          "text_ar": "انظر إلي."
+        },
+        {
+          "text": "MOSIOLO",
+          "confidence": 0.81,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "DO I LOOK LIKE A REASONABLE GUY?",
+          "confidence": 0.932,
+          "text_ar": "أأبدو وكأنني رجل معقول؟"
+        },
+        {
+          "text": "FATHERS",
+          "confidence": 0.98,
+          "text_ar": "الآباء"
+        },
+        {
+          "text": "WHAT DID YOU TWO TALK ABOUT OUTSIDE?",
+          "confidence": 0.935,
+          "text_ar": "عَمَّ تحدثتما أنت وشركك بالخارج؟"
+        },
+        {
+          "text": "SHE ASKED WHAT YOUR TRUE IDENTITY WAS.",
+          "confidence": 0.914,
+          "text_ar": "سألت عن هويتك الحقيقية."
+        },
+        {
+          "text": "SO WHAT DID YOU SAY?",
+          "confidence": 0.968,
+          "text_ar": "إذن ماذا قلت؟"
+        },
+        {
+          "text": "I TOLD HER NOT TO HAVE ANY DOUBTS AND JUST PLAY ALONG WITH WHAT YOU WANT.",
+          "confidence": 0.939,
+          "text_ar": "أخبرتها ألا تراودها أي شكوك وأن تساير ما تريده."
+        },
+        {
+          "text": "I HINTED THAT HER LIFE WOULD CHANGE IF SHE DID.",
+          "confidence": 0.983,
+          "text_ar": "لمحت لها أن حياتها ستتغير إن فعلت."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "BETTE PORTER HAS SKILLS IN THAT FIELD, AND HER AMBITION IS EXTRAORDINARY.",
+          "confidence": 0.97,
+          "text_ar": "بيتي پورتر تمتلك مهارات في هذا المجال، وطموحها استثنائي."
+        },
+        {
+          "text": "SHE JUST HASN'T HAD ANY LUCK YET.",
+          "confidence": 0.95,
+          "text_ar": "إنها فقط لم تحظَ بأي حظ بعد."
+        },
+        {
+          "text": "THE ART FIELD TENDS TO BE A BIT CONSERVATIVE, BUT SHE HAS A RATHER RADICAL DISPOSITION.",
+          "confidence": 0.939,
+          "text_ar": "مجال الفنون يميل إلى أن يكون محافظاً بعض الشيء، لكنها تمتلك نزعة راديكالية إلى حد ما."
+        },
+        {
+          "text": "IT SEEMS I AM COVERING UP THAT ECCENTRIC DISPOSITION WITH MONEY.",
+          "confidence": 0.947,
+          "text_ar": "يبدو أنني أغطي تلك النزعة الغريبة بالمال."
+        },
+        {
+          "text": "YOU DON'T DONT REALLY CARE THAT MUCH ANYWAY, DO YOU?",
+          "confidence": 0.814,
+          "text_ar": "أنت لا تهتم حقاً بهذا القدر على أي حال، أليس كذلك؟"
+        },
+        {
+          "text": "NO MATTER HOWSUCCESSFUL THE GALLERY BECOMES, IT WILL ONLY LEAVE YOU WITHPOCKET CHANGE FOR PROFIT.",
+          "confidence": 0.951,
+          "text_ar": "مهما بلغت نجاحات المعرض، فلن يترك لك سوى فتاة معدنية كأرباح."
+        },
+        {
+          "text": "MYPOCKET CHANGE ISN'T THAT MUCH.",
+          "confidence": 0.981,
+          "text_ar": "فتاة معدني ليست بهذا القدر."
+        },
+        {
+          "text": "UAJ",
+          "confidence": 0.388,
+          "text_ar": "مؤثر صوتي"
+        },
+        {
+          "text": "I DON'T HAVE TIME TO SPEND MONEY.",
+          "confidence": 0.928,
+          "text_ar": "ليس لدي وقت لإنفاق المال."
+        },
+        {
+          "text": "TOP",
+          "confidence": 0.976,
+          "text_ar": "أعلى"
+        },
+        {
+          "text": "： :ra}}$ ： JHS",
+          "confidence": 0.537,
+          "text_ar": "مؤثر صوتي"
+        }
+      ]
+    }
+  ]
+}
