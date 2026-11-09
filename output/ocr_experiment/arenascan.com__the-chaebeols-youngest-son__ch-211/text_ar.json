@@ -1,0 +1,773 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "211",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "WHAT BRINGS YOU HERE..?",
+          "confidence": 0.912,
+          "text_ar": "ما الذي أتى بك إلى هنا؟"
+        },
+        {
+          "text": "THE CHAIRMAN'S OFFICE IS EMPTY.",
+          "confidence": 0.929,
+          "text_ar": "مكتب الرئيس التنفيذي فارغ."
+        },
+        {
+          "text": "BUT SEEING YOU TWO SATISFIED WITH THIS PLACE BREAKS MY HEART.",
+          "confidence": 0.955,
+          "text_ar": "لكن رؤيتكما راضيين بهذا الوضع يفطر قلبي."
+        },
+        {
+          "text": "MOTHER, DON'T WORRY.",
+          "confidence": 0.934,
+          "text_ar": "أمي، لا تقلقي."
+        },
+        {
+          "text": "ONE OF US WILL BE THE CHAIRMAN.",
+          "confidence": 0.939,
+          "text_ar": "أحدنا سيصبح الرئيس التنفيذي."
+        },
+        {
+          "text": "SHUT UP!!",
+          "confidence": 0.983,
+          "text_ar": "اخرسا!!"
+        },
+        {
+          "text": "I TOLD YOU AT YOUR FATHER'S FUNERAL! GET RID OF DOJUN FIRST!!",
+          "confidence": 0.948,
+          "text_ar": "لقد قلتها لكما في جنازة والدكما! تخلصا من دوجون أولاً!!"
+        },
+        {
+          "text": "READ AT HIVETOONCOM TO FASTER UPDATE!",
+          "confidence": 0.956,
+          "text_ar": ""
+        },
+        {
+          "text": "GET THE FINANCIAL AFFILIATES BACK FROM HIM QUICKLY!",
+          "confidence": 0.938,
+          "text_ar": "استعيدا الشركات المالية التابعة منه بسرعة!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "STOP IT, MOTHER.",
+          "confidence": 0.966,
+          "text_ar": "كفي عن هذا يا أمي."
+        },
+        {
+          "text": "WE'LL HANDLE IT...",
+          "confidence": 0.948,
+          "text_ar": "سنعتني بالأمر..."
+        },
+        {
+          "text": "LEE HAKJAE JOINED THEM.",
+          "confidence": 0.991,
+          "text_ar": "لقد انضم لي هاكجاي إليهما."
+        },
+        {
+          "text": "DON'T YOU UNDERSTAND?",
+          "confidence": 0.918,
+          "text_ar": "ألا تفهمان؟"
+        },
+        {
+          "text": "OH SEHYUN OHSEHYUN OWNS THE GROUP THAT LEE HAKJAE JOINED.",
+          "confidence": 0.761,
+          "text_ar": "أوه سيهيون يمتلك المجموعة التي انضم إليها لي هاكجاي."
+        },
+        {
+          "text": "StNNi",
+          "confidence": 0.554,
+          "text_ar": ""
+        },
+        {
+          "text": "OH SEHYUN IS YOONGI'S FRIEND.",
+          "confidence": 0.934,
+          "text_ar": "أوه سيهيون صديق يونجي."
+        },
+        {
+          "text": "WHAT IF LEE HAKJAE AND OH SEHYUN PROVOKE DOJUN?",
+          "confidence": 0.938,
+          "text_ar": "ماذا لو استهدف لي هاكجاي وأوه سيهيون دوجون؟"
+        },
+        {
+          "text": "THEY WILL TARGET SUNYANG'S FINANCIAL AFFILIATES FIRST.",
+          "confidence": 0.942,
+          "text_ar": "سيستهدفان شركات سونيانغ المالية التابعة أولاً."
+        },
+        {
+          "text": "WHAT IF THEY WHAT IE THEY START DETACHING THE AFFILIATES FROMOUR GROUP?",
+          "confidence": 0.898,
+          "text_ar": "ماذا لو شرعا في فصل الشركات التابعة عن مجموعتنا؟"
+        },
+        {
+          "text": "IDISMISSED MOTHER'S DISLIKE OF DOJUN AS AN OLD WOMAN'S PETTY GRUDGE..",
+          "confidence": 0.912,
+          "text_ar": "لقد اعتبرت كراهية أمي لدوجون مجرد ضغينة عجوز تافهة..."
+        },
+        {
+          "text": "BUT IF OUR ENEMY LEE HAKJAE JOINS DOJUN?",
+          "confidence": 0.959,
+          "text_ar": "ولكن ماذا لو انضم عدونا لي هاكجاي إلى دوجون؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I TOLD YOU DOJUN'S JUST LIKE YOUR FATHER.",
+          "confidence": 0.945,
+          "text_ar": "أخبرتكم أن دوجون يشبه والدكم تماماً."
+        },
+        {
+          "text": "GREEDY, YES, BUT WITH A DEMONIC OBSESSION WITH MONEY.",
+          "confidence": 0.959,
+          "text_ar": "طماع، نعم، ولكنه هوس شيطاني بالمال."
+        },
+        {
+          "text": "HE WOULDN'T PRECARIOUSLY WAIT ON A SMALL STAKE.",
+          "confidence": 0.975,
+          "text_ar": "لن ينتظر ببساطة على حصة صغيرة."
+        },
+        {
+          "text": "HE'LL WANT TO QUICKLY MAKE IT ALL HiS OWN.",
+          "confidence": 0.84,
+          "text_ar": "سيرغب في الاستحواذ عليها بالكامل وسريعة."
+        },
+        {
+          "text": "WHAT IF LEE HAKJAE FANS THE FLAMES BY HELPING HIM?",
+          "confidence": 0.948,
+          "text_ar": "ماذا لو ساعده لي هاكجاي وأجج النار؟"
+        },
+        {
+          "text": "THE FINANCIAL GROUP WOULD SEPARATE BEFORE YOUR HOLDING COMPANY IS SET UP.",
+          "confidence": 0.895,
+          "text_ar": "ستنفصل المجموعة المالية قبل أن تُؤسس شركتكم القابضة."
+        },
+        {
+          "text": "MOTHER HAD THIS KIND OF INSIGHT?",
+          "confidence": 0.958,
+          "text_ar": "أكانت لدى أمي هذه البصيرة؟"
+        },
+        {
+          "text": "DONGGI.",
+          "confidence": 0.996,
+          "text_ar": "دونغجي."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER UPOATE!",
+          "confidence": 0.936,
+          "text_ar": ""
+        },
+        {
+          "text": "YES, MOTHER.",
+          "confidence": 0.951,
+          "text_ar": "نعم يا أمي."
+        },
+        {
+          "text": "YOU DON'T HAVE TO MAKE YOUNGGI THE CHAIRMAN RIGHT NOW.",
+          "confidence": 0.926,
+          "text_ar": "ليس عليك جعل يونغجي رئيساً تنفيذياً في الوقت الحالي."
+        },
+        {
+          "text": "JUST WORK TOGETHER AND RECLAIM SUNYANG'S FINANCIAL AFFILIATES FIRST.",
+          "confidence": 0.943,
+          "text_ar": "تعاونا فقط واستعيدا شركات سونيانغ المالية التابعة أولاً."
+        },
+        {
+          "text": "...ALRIGHT.",
+          "confidence": 0.905,
+          "text_ar": "...حسناً."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "AND YOUNGGI.",
+          "confidence": 0.991,
+          "text_ar": "وأنت يا يونغجي."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.975,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "DON'TBE GREEDYFOR IT ALL EVEN IF YOU GET THE AFFILIATES BACK.",
+          "confidence": 0.927,
+          "text_ar": "لا تطمع في كل شيء حتى لو استعدت الشركات التابعة."
+        },
+        {
+          "text": "I WANT SANGGI THERE, EVEN IF IT'S JUST AS A FIGUREHEAD.",
+          "confidence": 0.929,
+          "text_ar": "أريد سانغي هناك، حتى لو كان مجرد واجهة."
+        },
+        {
+          "text": "LOOKS FAR BETTER THAN YOU TWO FIGHTING FOR IT, nO?",
+          "confidence": 0.821,
+          "text_ar": "أليس هذا أفضل بكثير من أن تتصارعا عليها أنت وذاك؟"
+        },
+        {
+          "text": "一 LOEANATHIVETOON COM",
+          "confidence": 0.097,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "TIIVLIUUN.LOM TO FASTER UPDATE!",
+          "confidence": 0.803,
+          "text_ar": ""
+        },
+        {
+          "text": "WE'RE THINKING OF REORGANIZING SUNYANG FINANCIAL GROUP.",
+          "confidence": 0.968,
+          "text_ar": "نحن نفكر في إعادة تنظيم مجموعة سونيانغ المالية."
+        },
+        {
+          "text": "WHAT DO YOU THINK, MR. PRESIDENT?",
+          "confidence": 0.907,
+          "text_ar": "ما رأيك يا سيادة الرئيس؟"
+        },
+        {
+          "text": "REORGANIZE?",
+          "confidence": 0.998,
+          "text_ar": "إعادة تنظيم؟"
+        },
+        {
+          "text": "DO YOU MEAN A MERGeR?",
+          "confidence": 0.855,
+          "text_ar": "هل تقصد اندماجاً؟"
+        },
+        {
+          "text": "til wop Nf.w stumimmt 术",
+          "confidence": 0.462,
+          "text_ar": ""
+        },
+        {
+          "text": "FORMER SUNYANG LIFE PRESIDENT YANG WOOCHAN",
+          "confidence": 0.988,
+          "text_ar": "رئيس شركة سونيانغ للحياة سابقاً: يانغ بوتشان"
+        },
+        {
+          "text": "NOTHING CONCRETE YET, BUT IT'S JUST HARD TO IGNORE.",
+          "confidence": 0.943,
+          "text_ar": "لا شيء مؤكد بعد، ولكن يصعب تجاهل الأمر."
+        },
+        {
+          "text": "DOJUN'S YOUNG. HIS CRISIS- MANAGEMENT ABILITY IS DOUBTFUL...",
+          "confidence": 0.899,
+          "text_ar": "دوجون صغير السن، وقدرته على إدارة الأزمات محل شك..."
+        },
+        {
+          "text": "HE DOESN'T INTERFERE MUCH AFTER HE SET UP THE NEW MANAGEMENT TEAM.",
+          "confidence": 0.921,
+          "text_ar": "إنه لا يتدخل كثيراً بعد أن أسس فريق الإدارة الجديد."
+        },
+        {
+          "text": "EXECUTIVES WOULD BE THE PROBLEM IN ANY CASE, NOT HIM...",
+          "confidence": 0.95,
+          "text_ar": "المديرون التنفيذيون هم المشكلة في كل الأحوال، وليس هو..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THAT'S THE PROBLEM.",
+          "confidence": 0.969,
+          "text_ar": "تلك هي المشكلة."
+        },
+        {
+          "text": "READAT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.955,
+          "text_ar": ""
+        },
+        {
+          "text": "THE ENTIRE FINANCIAL GROUP SHOULD BE IN UNISON RIGHT NOW, BUT EACH PART IS ACTING ON ITS OWN...",
+          "confidence": 0.926,
+          "text_ar": "يجب أن تكون المجموعة المالية بأكملها على قلب رجل واحد الآن، لكن كل جزء يعمل بمفرده..."
+        },
+        {
+          "text": "SEPARATE OWNERSHIP AND MANAGEMENT DOESN'T EVEN WORK IN KOREA! HE'S JUST COPYING FOREIGN COMPANIES.",
+          "confidence": 0.891,
+          "text_ar": "فصل الملكية عن الإدارة لا ينجح حتى في كوريا! إنه يقلد الشركات الأجنبية فحسب."
+        },
+        {
+          "text": "OF COURSE, AT HIS AGE, HE'D THINK THAT'S \"COOL\".",
+          "confidence": 0.877,
+          "text_ar": "بالطبع، في سنّه، سيعتقد أن ذلك \"رائع\"."
+        },
+        {
+          "text": "WHY ELSE WOULD SOMEONE LIKE YONGGI BE PUSHED ASIDE?",
+          "confidence": 0.906,
+          "text_ar": "وإلا فلماذا يتم تهميش شخص مثل يونغجي؟"
+        },
+        {
+          "text": "WHAT DOES THAT KID KNOW?",
+          "confidence": 0.969,
+          "text_ar": "ما الذي يعرفه ذلك الطفل؟"
+        },
+        {
+          "text": "THIS \"REORGANIZATION\" IS JUST AN EXCUSE",
+          "confidence": 0.948,
+          "text_ar": "هذه \"الإعادة تنظيم\" ليست سوى ذريعة."
+        },
+        {
+          "text": "THEY'RE CLEARLY TRYING TO DRIVE JIN DOJUN OUT.",
+          "confidence": 0.939,
+          "text_ar": "إنهم يحاولون بوضوح طرد جين دوجون."
+        },
+        {
+          "text": "THAT'S A FAIR POINT.",
+          "confidence": 0.927,
+          "text_ar": "هذا صحيح تماماً."
+        },
+        {
+          "text": "BUT AS AN OLD MAN WHO HAS STEPPED BACK,",
+          "confidence": 0.974,
+          "text_ar": "ولكن كعجوز تقاعد وتوارى عن الأنظار،"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "WOULD I EVEN BE OF HELP WITH THIS REORGANIZATION...?",
+          "confidence": 0.941,
+          "text_ar": "هل سيكون لي أي فائدة في إعادة التنظيم هذه...؟"
+        },
+        {
+          "text": "OLD MAN? WHY ARE YOU SO MODEST?",
+          "confidence": 0.915,
+          "text_ar": "عجوز؟ لمَ أنت متواضع هكذا؟"
+        },
+        {
+          "text": "YOU'RE STILL IN YOUR PRIME...",
+          "confidence": 0.874,
+          "text_ar": "ما زلت في ذروة عطائك..."
+        },
+        {
+          "text": "THEY WANT TO PUT ME FORWARD TO GET RID OF JIN DOJUN!",
+          "confidence": 0.97,
+          "text_ar": "إنهم يريدون تقديمك في الواجهة للتخلص من جين دوجون!"
+        },
+        {
+          "text": "THAT'S WHY WE NEED YOUR HELP, PRESIDENT YANG.",
+          "confidence": 0.934,
+          "text_ar": "لهذا نحتاج إلى مساعدتك، حضرة الرئيس يانغ."
+        },
+        {
+          "text": "SAY THE WORD.",
+          "confidence": 0.892,
+          "text_ar": "مرمر بما شئت."
+        },
+        {
+          "text": "IF IT'S ANYTHING I CAN DO, I'LL DO IT.",
+          "confidence": 0.904,
+          "text_ar": "إن كان هناك ما يمكنني فعله، فسأفعله."
+        },
+        {
+          "text": "Nod",
+          "confidence": 0.991,
+          "text_ar": ""
+        },
+        {
+          "text": "MAKE A LIST OF CEOS, EXECUTIVES, AND DEPARTMENT HEADS IN KEY POSITIONS.",
+          "confidence": 0.939,
+          "text_ar": "أعد قائمة بأسماء المديرين التنفيذيين والمسؤولين ورؤساء الأقسام في المناصب الرئيسية."
+        },
+        {
+          "text": "JIN DOJUN'S OPPOSERS AND FOLLOWERS.",
+          "confidence": 0.969,
+          "text_ar": "معارضو جين دوجون وأتباعه."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "AH, LIKE A BLACKLIST.",
+          "confidence": 0.947,
+          "text_ar": "آه، تشبه القائمة السوداء إذن."
+        },
+        {
+          "text": "EXACTLY. BUT REMEMBER ONE THING.",
+          "confidence": 0.983,
+          "text_ar": "بالضبط. ولكن تذكر شيئاً واحداً."
+        },
+        {
+          "text": "DON'T LET YOUR PERSONAL FEELINGS GET INVOLVED.",
+          "confidence": 0.967,
+          "text_ar": "لا تدخّل مشاعرك الشخصية."
+        },
+        {
+          "text": "MAKE THE LIST WITH COLD JUDGMENT.",
+          "confidence": 0.966,
+          "text_ar": "اكتب القائمة بحكم بارد."
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.997,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "LEAVE THE CEO SEAT OF SUNYANG LIFE VACANT.",
+          "confidence": 0.974,
+          "text_ar": "اترك مقعد الرئيس التنفيذي لشركة سونيانغ للحياة شاغراً."
+        },
+        {
+          "text": "THAT'S YOURS AFTER ALL.",
+          "confidence": 0.969,
+          "text_ar": "فهو ملكك في نهاية المطاف."
+        },
+        {
+          "text": "..MR. CHAIRMAN.",
+          "confidence": 0.901,
+          "text_ar": "..سعادة الرئيس."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "THANK YOU. MR. VICE CHAIRMAN JIN YOUNGGI, VICE CHAIRMAN JIN DONGGI.",
+          "confidence": 0.925,
+          "text_ar": "شكراً لك. نائب الرئيس جين يونغجي، ونائب الرئيس جين دونغجي."
+        },
+        {
+          "text": "THIS 16 SUCH A HUGE CHANCE AGAIN..",
+          "confidence": 0.864,
+          "text_ar": "هذه فرصة عظيمة أخرى حقاً..."
+        },
+        {
+          "text": "HOWCAN I THANK YOU... I WON'T FORGET YOUR FAVOR.",
+          "confidence": 0.918,
+          "text_ar": "كيف أشكركم... لن أنسى معروفكم."
+        },
+        {
+          "text": "LET'S WORK TOGETHER ONCE MORE, LIKE WHEN FATHER WAS ALIVE.",
+          "confidence": 0.915,
+          "text_ar": "لنعمل معاً مرة أخرى، تماماً كما كان والدنا على قيد الحياة."
+        },
+        {
+          "text": "ILOOK FORWARD TO IT. HAHAH.",
+          "confidence": 0.905,
+          "text_ar": "أتطلع إلى ذلك. هاهاها."
+        },
+        {
+          "text": "Haha",
+          "confidence": 0.991,
+          "text_ar": ""
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.96,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "AN OLD MAN OUGHT TO REST AND LOOK AFTER HIS GRANDCHILDREN...",
+          "confidence": 0.881,
+          "text_ar": "كان يجدر بعجوز مثله أن يستريح ويرعى أحفاده..."
+        },
+        {
+          "text": "BUT HE CAN'T EVEN LET GO OF GREED AT HIS AGE.",
+          "confidence": 0.943,
+          "text_ar": "لكنه لا يستطيع التخلي عن الطمع حتى في مثل سنه."
+        },
+        {
+          "text": "HE WAS REDUCED TO AN OLD MAN IN THE BACKROOMS. NO WONDER HE'S CLINGING TO HIS GLORY DAYS.",
+          "confidence": 0.911,
+          "text_ar": "لقد انتهى به المطاف عجوزاً في الغرف الخلفية. لا عجب أنه يتمسك بأمجاد الماضي."
+        },
+        {
+          "text": "HE LONGS FOR IT AGAIN.",
+          "confidence": 0.985,
+          "text_ar": "إنه يتوق إليها مجدداً."
+        },
+        {
+          "text": "HE'LL BE DISAPPOINTED TO FIND OUT THE LIST IS THE LAST WORK HE'S GETTING...",
+          "confidence": 0.915,
+          "text_ar": "س يصاب بخيبة أمل عندما يكتشف أن هذه القائمة هي آخر عمل سيكلف به..."
+        },
+        {
+          "text": "WHAT? YOU PITY HIM?",
+          "confidence": 0.967,
+          "text_ar": "ماذا؟ أتشفق عليه؟"
+        },
+        {
+          "text": "BULLSHIT.",
+          "confidence": 0.997,
+          "text_ar": "هراء."
+        },
+        {
+          "text": "I'LL JUST BUY HIM A MEAL AND SLIP HIM SOME POCKET MONEY.",
+          "confidence": 0.907,
+          "text_ar": "سأكتفي بدعوته على وجبة وأعطيه بعض مصروف الجيب."
+        },
+        {
+          "text": "KEKE.",
+          "confidence": 0.997,
+          "text_ar": "كيكه."
+        },
+        {
+          "text": "KEKEKE...",
+          "confidence": 0.985,
+          "text_ar": "كيكيكه..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "OH MY, WELCOME.",
+          "confidence": 0.957,
+          "text_ar": "يا الهي، أهلاً بك."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.929,
+          "text_ar": ""
+        },
+        {
+          "text": "THE NEW CEO OF SUNYANG LIFE!",
+          "confidence": 0.978,
+          "text_ar": "الرئيس التنفيذي الجديد لشركة سونيانغ للحياة!"
+        },
+        {
+          "text": "ISY",
+          "confidence": 0.745,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "PRESIDENT YANG?",
+          "confidence": 0.997,
+          "text_ar": "الرئيس يانغ؟"
+        },
+        {
+          "text": "YES, RUMOR IS HE OFTEN VISITs VICE CHAIRMAN JIN YOUNGGI'S OFFICE.",
+          "confidence": 0.87,
+          "text_ar": "نعم، تقول الشائعات إنه يزور مكتب نائب الرئيس جين يونغجي كثيراً."
+        },
+        {
+          "text": "AND FOUNDATION CHAIRMAN JIN CHAIRMANJIN SANGGIAS WELL. HE'S OFTEN SEEN AT THE HQ, SMILING BROADLY.",
+          "confidence": 0.907,
+          "text_ar": "ورئيس المؤسسة جين سانغي أيضاً. وغالباً ما يُرى في المقر الرئيسي مبتسماً بملء فيه."
+        },
+        {
+          "text": "HE EVEN OPENLY GOES AROUND SAYING",
+          "confidence": 0.979,
+          "text_ar": "حتى إنه يتجول علانيةً قائلاً"
+        },
+        {
+          "text": "THAT HE'S SUNYANG FINANCIAL GROUP'S NEW HEAD.",
+          "confidence": 0.972,
+          "text_ar": "إنه الرئيس الجديد لمجموعة سونيانغ المالية."
+        },
+        {
+          "text": "FROM THE MOMENT I HEARD PRESIDENT YANG WOOCHAN,",
+          "confidence": 0.943,
+          "text_ar": "من اللحظة التي سمعت فيها باسم الرئيس يانغ بوتشان،"
+        },
+        {
+          "text": "ISUSPECTED MY TWO UNCLES WERE PLOTTING SOMETHING.",
+          "confidence": 0.961,
+          "text_ar": "شككت في أن عميي كانا يحاكان مؤامرة ما."
+        },
+        {
+          "text": "BUT JIN SANGGI?",
+          "confidence": 0.934,
+          "text_ar": "ولكن جين سانغي؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "WHATEVER THEY'RE SCHEMING, THEY WILL VERY LIKELY FAIL.",
+          "confidence": 0.931,
+          "text_ar": "مهما كانت خطتهما، فهما على الأرجح سيفشلان."
+        },
+        {
+          "text": "READAT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.954,
+          "text_ar": ""
+        },
+        {
+          "text": "DO YOU KNOW WHAT'S MOST NEEDED FOR PEOPLE TO ACT AS ONE?",
+          "confidence": 0.909,
+          "text_ar": "أتدري ما أكثر ما يحتاجه الناس ليتصرفوا كيد واحدة؟"
+        },
+        {
+          "text": "A COMMON INTEREST, NO?",
+          "confidence": 0.911,
+          "text_ar": "مصلحة مشتركة، أليس كذلك؟"
+        },
+        {
+          "text": "THEY'LL EVEN JOIN FORCES WITH SWORN ENEMIES FOR PROFIT.",
+          "confidence": 0.94,
+          "text_ar": "إنهم يتحالفون حتى مع ألد أعدائهم من أجل الربح."
+        },
+        {
+          "text": "YOU NEED ANOTHER FACTOR BEFORE THAT.",
+          "confidence": 0.914,
+          "text_ar": "تحتاج إلى عامل آخر قبل ذلك."
+        },
+        {
+          "text": "A WILLINGNESS TO ACCEPT A LITTLE LOSS, OR TO TAKE LESS PROFIT.",
+          "confidence": 0.865,
+          "text_ar": "الاستعداد لتكبد خسارة طفيفة، أو قبول ربح أقل."
+        },
+        {
+          "text": "YOU MUST BE ABLE TO LET GO OF PART OF YOUR GREED.",
+          "confidence": 0.92,
+          "text_ar": "يجب أن تكون قادراً على التخلي عن جزء من طمعك."
+        },
+        {
+          "text": "THAT'S THE HARDEST PART FOR OUR FAMILY.",
+          "confidence": 0.941,
+          "text_ar": "تلك هي النقطة الأصعب بالنسبة لعائلتنا."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "DIRECTOR, BEING TOO CERTAIN IS DANGEROUS.",
+          "confidence": 0.967,
+          "text_ar": "حضرة المدير، اليقين المطلق أمر خطير."
+        },
+        {
+          "text": "DON'T THE TWO VICE CHAIRMEN HAVE 51% STAKE TOGETHER?",
+          "confidence": 0.965,
+          "text_ar": "ألا يمتلك نائبا الرئيس حصة 51% مجتمعين؟"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.967,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "THIS TIME IT'S NOT ABOUT GREED OR PROFIT.",
+          "confidence": 0.961,
+          "text_ar": "الأمر هذه المرة لا يتعلق بالطمع أو الربح."
+        },
+        {
+          "text": "IT'S ABOUT ELIMINATING A COMMON ENEMY.",
+          "confidence": 0.956,
+          "text_ar": "بل يتعلق بالقضاء على عدو مشترك."
+        },
+        {
+          "text": "THEY COULD SET ASIDE THEIR GREED FOR A WHILE FOR THAT, NO?",
+          "confidence": 0.945,
+          "text_ar": "يمكنهما تنحي طمعهما جانباً لفترة من أجل ذلك، أليس كذلك؟"
+        },
+        {
+          "text": "COMMON ENEMY, HUH...",
+          "confidence": 0.967,
+          "text_ar": "عدو مشترك، هاه..."
+        },
+        {
+          "text": "THAT'S TRUE. IF THEy JOIn HAndS, THEY COULD DRIVE ME OUT. MoOT",
+          "confidence": 0.401,
+          "text_ar": "هذا صحيح. إذا تكاتفا، فقد يطردونني."
+        },
+        {
+          "text": "BUT THEIR GREED WILL POP BACK UP WHEN THEY HAVE TO DIVIDE THE SPOILS.",
+          "confidence": 0.928,
+          "text_ar": "لكن طمعهم سيعود للظهور حتماً عندما يحين وقت تقاسم الغنائم."
+        },
+        {
+          "text": "IT'S ONE HURDLE AFTER ANOTHER FOR THEM.",
+          "confidence": 0.866,
+          "text_ar": "إنها عقبة تلو الأخرى بالنسبة لهما."
+        },
+        {
+          "text": "MR. DIRECTOR.",
+          "confidence": 0.962,
+          "text_ar": "حضرة المدير."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "ALRIGHT. I'M NOT TAKING THEM LIGHTLY.",
+          "confidence": 0.928,
+          "text_ar": "حسناً. أنا لا أستهين بهما."
+        },
+        {
+          "text": "WE'LL HAVE TO LOOK INTO IT.",
+          "confidence": 0.967,
+          "text_ar": "سيتعين علينا التحقق من الأمر."
+        },
+        {
+          "text": "YES,I'LL ALSO MEET WITH THE EXECUTIVES.",
+          "confidence": 0.889,
+          "text_ar": "نعم، سأجتمع بالمديرين التنفيذيين أيضاً."
+        },
+        {
+          "text": "IF ANYTHING NEW COMES UP, I WILL REPORT IMMEDIATELY.",
+          "confidence": 0.96,
+          "text_ar": "إذا استجد أي جديد، سأبلغكم فوراً."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER UPDATE!",
+          "confidence": 0.935,
+          "text_ar": ""
+        },
+        {
+          "text": "： JHS",
+          "confidence": 0.891,
+          "text_ar": ""
+        }
+      ]
+    }
+  ]
+}
