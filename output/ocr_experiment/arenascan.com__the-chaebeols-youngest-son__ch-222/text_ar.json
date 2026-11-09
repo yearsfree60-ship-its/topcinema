@@ -1,0 +1,715 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "222",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "ARE YOU SURE? THAT THEY WANT TO BUY OUR PAINTINGS? DOTHEY EVEN HAVE THE MEANS?",
+          "confidence": 0.932,
+          "text_ar": "أمتأكدة أنتِ؟ أنهم يريدون شراء لوحاتنا؟ هل يمتلكون الموارد حتى؟"
+        },
+        {
+          "text": "IT APPEARS SO.",
+          "confidence": 0.978,
+          "text_ar": "يبدو ذلك."
+        },
+        {
+          "text": "SECRETARY SONG",
+          "confidence": 0.971,
+          "text_ar": "أيها السكرتير سونغ."
+        },
+        {
+          "text": "ACCORDING TO OUR NEW YORK BRANCH,WENTWORTHART GALLERY HAS FOUND A MASSIVE SPONSOR,",
+          "confidence": 0.906,
+          "text_ar": "وفقًا لفرعنا في نيويورك، وجدت جاليري ونتوورث ممولًا ضخمًا،"
+        },
+        {
+          "text": "AND GALLERIES AROUND THE WORLD ARE RECEIVING EMAILS FROM WENTWORTH",
+          "confidence": 0.922,
+          "text_ar": "وتتلقى المعارض حول العالم رسائل بريد إلكتروني من ونتوورث"
+        },
+        {
+          "text": "CONTAINING A LIST OF ARTWORKS FROMTHEIR COLLECTIONS THAT THEY WISH TO PURCHASE.",
+          "confidence": 0.957,
+          "text_ar": "تحتوي على قائمة بالأعمال الفنية من مجموعاتهم التي يرغبون في شرائها."
+        },
+        {
+          "text": "THEN ISN'T THAT FINE?",
+          "confidence": 0.943,
+          "text_ar": "أليس هذا جيدًا إذن؟"
+        },
+        {
+          "text": "BUT SOME OF THE ITEMS ON THIS LIST HAVE ALREADY BEEN SECRETLY SOLD...",
+          "confidence": 0.92,
+          "text_ar": "لكن بعض العناصر الموجودة في هذه القائمة قد بيعت سرًا بالفعل..."
+        },
+        {
+          "text": "aVS",
+          "confidence": 0.344,
+          "text_ar": "أفهم."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "I KNOW. SO MAKE A NEW LIST WITH WHAT WE ACTUALLY HAVE. PICK OUT THE VALUABLE ONES.",
+          "confidence": 0.937,
+          "text_ar": "أعلم. لذا اصنع قائمة جديدة بما نملكه حقًا. وانتقِ القطع القيمة منها."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.975,
+          "text_ar": "حاضر."
+        },
+        {
+          "text": "AND GO MEET THAT PORTER OR WHATEVER WHO SENT THE EMAIL IN PERSON.",
+          "confidence": 0.889,
+          "text_ar": "واذهب للقاء تلك المدعوة پورتر أو أياً كانت التي أرسلت البريد الإلكتروني شخصياً."
+        },
+        {
+          "text": "SEE IF THEY'LL ACCEPT OUR CONDITIONS OR NOT. ORNOT",
+          "confidence": 0.759,
+          "text_ar": "وانظر إن كانت ستوافق على شروطنا أم لا."
+        },
+        {
+          "text": "YES, MADAM CHAIRWOMAN.",
+          "confidence": 0.962,
+          "text_ar": "حاضر، سيدتي رئيسة مجلس الإدارة."
+        },
+        {
+          "text": "A PERFECT CASH COW APPEARED JUST WHEN WE NEEDED MONEY ANYWAY.",
+          "confidence": 0.861,
+          "text_ar": "لقد ظهرت بقرة حلوب مثالية تمامًا عندما كنا بحاجة إلى المال على أي حال."
+        },
+        {
+          "text": "WENTWORTH ART GALLERY",
+          "confidence": 0.918,
+          "text_ar": "جاليري ونتوورث للفنون"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I HAVE BEEN EXPECTING YOU, MR. SONG.",
+          "confidence": 0.957,
+          "text_ar": "كنت في انتظارك، سيد سونغ."
+        },
+        {
+          "text": "HOW WAS YOUR FLIGHT?",
+          "confidence": 0.947,
+          "text_ar": "كيف كانت رحلتك؟"
+        },
+        {
+          "text": "IT WAS GOOD. THANK YOU FOR SUCH A WARM WELCOME.",
+          "confidence": 0.957,
+          "text_ar": "كانت جيدة. شكراً لك على هذا الاستقبال الحار."
+        },
+        {
+          "text": "I DIDN'T EXPECT SUNYANG GALLERY TO RESPOND SO QUICKLY...",
+          "confidence": 0.903,
+          "text_ar": "لم أكن أتوقع أن يستجيب جاليري سونيانغ بهذه السرعة..."
+        },
+        {
+          "text": "QIMANCA.COM",
+          "confidence": 0.957,
+          "text_ar": "QIMANCA.COM"
+        },
+        {
+          "text": "IS IT BECAUSE OF THE COMPLICATED SITUATION HE MENTIONED?",
+          "confidence": 0.965,
+          "text_ar": "أهذا بسبب الوضع المعقد الذي ذكره؟"
+        },
+        {
+          "text": "YOU ARE QUITE AGGRESSIVE WITH YOUR ARTWORK PURCHASES.",
+          "confidence": 0.967,
+          "text_ar": "أنت هجومي للغاية في مشترياتك الفنية."
+        },
+        {
+          "text": "IS THAT THE GALLERY'S POLICY?",
+          "confidence": 0.943,
+          "text_ar": "أهذه سياسة الجاليري؟"
+        },
+        {
+          "text": "RATHER THAN A POLICY, IT WOULD BE MORE ACCURATE TO SAY WE ARE BEING REBORN.",
+          "confidence": 0.907,
+          "text_ar": "بدلاً من كونها سياسة، سيكون أدق القول إننا نولد من جديد."
+        },
+        {
+          "text": "A FULL-FLEDGED SPONSOR HAS APPEARED.",
+          "confidence": 0.983,
+          "text_ar": "لقد ظهر ممول كامل الأهلية."
+        },
+        {
+          "text": "COULD YOU PERHAPS TELL ME WHO THIS SPONSOR IS?",
+          "confidence": 0.938,
+          "text_ar": "أتعرف صدفةً من يكون هذا الممول؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "UNFORTUNATELY, I CANNOT DISCLOSE THAT.",
+          "confidence": 0.99,
+          "text_ar": "للأسف، لا يمكنني الإفصاح عن ذلك."
+        },
+        {
+          "text": "HOW STRANGE. THE ONE PURCHASING THE PAINTINGS IS OUR GALLERY, NOT THE SPONSOR.",
+          "confidence": 0.936,
+          "text_ar": "يا للغرابة. من يقوم بشراء اللوحات هو جاليرينا، وليس الممول."
+        },
+        {
+          "text": "AH, MY APOLOGIES.",
+          "confidence": 0.93,
+          "text_ar": "آه، أعتذر."
+        },
+        {
+          "text": "IT IS ACTUALLY BECAUSE SUNYANG GALLERY HAS ONLY EVER SOLD ARTWORKS TO INDIVIDUALS.",
+          "confidence": 0.947,
+          "text_ar": "يرجع السبب في الواقع إلى أن جاليري سونيانغ لم يبع أعمالاً فنية قط سوى للأفراد."
+        },
+        {
+          "text": "ISN'T IT A WELL-KNOWNFACT THAT THE GALLERY'S MAIN CLIENTS ARE INDIVIDUALS?",
+          "confidence": 0.912,
+          "text_ar": "أليس معروفاً جيداً أن عملاء الجاليري الرئيسيين هم من الأفراد؟"
+        },
+        {
+          "text": "ARE YOU PERHAPS THINKING OF TRADING WITH THE SPONSOR THROUGH US?",
+          "confidence": 0.961,
+          "text_ar": "أفتكر في التجارة مع الممول من خلالنا ربما؟"
+        },
+        {
+          "text": "FORGIVE ME FOR BEING FORWARD, BUT YES.",
+          "confidence": 0.966,
+          "text_ar": "اغفر لي جرأتي، ولكن نعم."
+        },
+        {
+          "text": "WOULD THAT BE POSSIBLE?",
+          "confidence": 0.981,
+          "text_ar": "أيكون ذلك ممكناً؟"
+        },
+        {
+          "text": "BY ANY CHANCE.. DOES THIS MEAN THE PAINTINGS CANNOT BE SHOWN TO THE PUBLIC,",
+          "confidence": 0.933,
+          "text_ar": "هل يعني هذا مصادفةً أن اللوحات لا يمكن عرضها على الملأ،"
+        },
+        {
+          "text": "AND THE TRANSACTION ITSELF MUST BE KEPT A SECRET?",
+          "confidence": 0.963,
+          "text_ar": "وأنه يجب إبقاء المعاملة نفسها سرًا؟"
+        },
+        {
+          "text": "EXACTLY.",
+          "confidence": 0.995,
+          "text_ar": "بالضبط."
+        },
+        {
+          "text": "THAT IS THE KIND OF TRANSACTION WE WANT.",
+          "confidence": 0.908,
+          "text_ar": "هذا هو نوع المعاملة التي نريدها."
+        },
+        {
+          "text": "IT IS ALSO A COMMON CONDITION IN PRIVATE TRANSACTIONS.",
+          "confidence": 0.929,
+          "text_ar": "وهو أيضاً شرط شائِع في المعاملات الخاصة."
+        },
+        {
+          "text": "COUNTLESS ARTWORKS DISAPPEAR LIKE THIS.",
+          "confidence": 0.955,
+          "text_ar": "لا توصى ولا تحصى من الأعمال الفنية تختفي بهذه الطريقة."
+        },
+        {
+          "text": "THEN EVEN IF OUR GALLERY PURCHASES THEM,",
+          "confidence": 0.923,
+          "text_ar": "إذن حتى لو اشتراها جاليرينا،"
+        },
+        {
+          "text": "AS LONG AS WE KEEP THOSE CONDITIONS, IT WON'T BE AN ISSUE, RIGHT?",
+          "confidence": 0.943,
+          "text_ar": "طالما حافظنا على تلك الشروط، فلن تكون هناك مشكلة، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "THAT IS TRUE, BUT",
+          "confidence": 0.953,
+          "text_ar": "هذا صحيح، ولكن"
+        },
+        {
+          "text": "WOULD A GALLERY BE ABLE TO KEEP THEM FROM THE PUBLIC?",
+          "confidence": 0.973,
+          "text_ar": "أسيستطيع الجاليري إبقاؤها بعيدة عن أنظار الجمهور؟"
+        },
+        {
+          "text": "WE WOULD HAVE TO DISCUSS IT WITH THE BOARD, BUT IT ISN'T IMPOSSIBLE.",
+          "confidence": 0.931,
+          "text_ar": "سيتعين علينا مناقشة الأمر مع مجلس الإدارة، لكنه ليس أمراً مستحيلاً."
+        },
+        {
+          "text": "THE ARTWORKS SUNYANG GALLERY HOLDS ARE MASTERPIECES.",
+          "confidence": 0.964,
+          "text_ar": "الأعمال الفنية التي يحتفظ بها جاليري سونيانغ هي تحف فنية."
+        },
+        {
+          "text": "IF WE CONSIDER THEIR PRESERVATION, IT MIGHT BE POSSIBLE..",
+          "confidence": 0.95,
+          "text_ar": "إذا نظرنا إلى الحفاظ عليها، فقد يكون ذلك ممكناً..."
+        },
+        {
+          "text": "WOULD YOU TAKE A LOOK AT THIS?",
+          "confidence": 0.964,
+          "text_ar": "أترغب في إلقاء نظرة على هذا؟"
+        },
+        {
+          "text": "SOME OF THE ARTWORKS YOU REQUESTED ARE PIECES WE CANNOT SELL,",
+          "confidence": 0.945,
+          "text_ar": "بعض الأعمال الفنية التي طلبتها هي قطع لا يمكننا بيعها،"
+        },
+        {
+          "text": "SO I BROUGHT A LIST OF THE ONES AVAILABLE FOR PURCHASE.",
+          "confidence": 0.901,
+          "text_ar": "لذا جلبت قائمة بالقطع المتاحة للبيع."
+        },
+        {
+          "text": "PLEASE REVIEW IT.",
+          "confidence": 0.987,
+          "text_ar": "الرجاء مراجعتها."
+        },
+        {
+          "text": "THEN PLEASE CONTACT ME ONCE YOU REACH A DECISION. HOW LONG WILL IT TAKE?",
+          "confidence": 0.91,
+          "text_ar": "إذن يرجى الاتصال بي بمجرد اتخاذ قراركم. كم من الوقت سيستغرق ذلك؟"
+        },
+        {
+          "text": "I WILL LET YOU KNOW BY THE DAY AFTER TOMORROW AT THE LATEST.WOULD THAT BE ALRIGHT?",
+          "confidence": 0.935,
+          "text_ar": "سأعلمك بعد غد على أبعد تقدير. أيكون ذلك مناسباً؟"
+        },
+        {
+          "text": "OF COURSE.",
+          "confidence": 0.968,
+          "text_ar": "بالطبع."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "SO THOSE WERE THE CONDITIONS AFTER ALL.",
+          "confidence": 0.888,
+          "text_ar": "تلك كانت الشروط إذن بعد كل شيء."
+        },
+        {
+          "text": "JUST HOW MANY ARTWORKS ARE STORED IN SUNYANG GALLERY'S VAULT?",
+          "confidence": 0.916,
+          "text_ar": "كم عدد الأعمال الفنية المخزنة في قبو جاليري سونيانغ حقًا؟"
+        },
+        {
+          "text": "ICAN GUARANTEE THAT THE TCANGUARANTEETHATTHE FEW PIECES WORTH HUNDREDS OF MILLIONSSHOWNBRIEFLYDURING SPECIAL EXHIBITIONS",
+          "confidence": 0.921,
+          "text_ar": "أستطيع أن أضمن أن تلك القطع القليلة التي تساوي مئات الملايين والتي تُعرض لفترة وجيزة خلال المعارض الخاصة"
+        },
+        {
+          "text": "ARE ALL THEY REALLY HAVE LEFT...",
+          "confidence": 0.901,
+          "text_ar": "هي كل ما تبقى لديهم حقًا..."
+        },
+        {
+          "text": "THEN HOW MUCH ARE THE ITEMS ON THIS LIST WORTH?",
+          "confidence": 0.906,
+          "text_ar": "إذن ما قيمة العناصر الموجودة في هذه القائمة؟"
+        },
+        {
+          "text": "I HEARD THESE ARE THE ARTWORKS SUNYANG GALLERY CANNOT SELL, BUT...",
+          "confidence": 0.896,
+          "text_ar": "سمعت أن هذه هي الأعمال الفنية التي لا يستطيع جاليري سونيانغ بيعها، ولكن..."
+        },
+        {
+          "text": "OBVIOUSLY. OUT OF THE LIST OF SUNYANGGALLERY'S ARTWORKS THATDIRECTORWOOBYUNGJOON INVESTIGATED,",
+          "confidence": 0.942,
+          "text_ar": "من الواضح. من بين قائمة أعمال جاليري سونيانغ الفنية التي حقق فيها المدير وو بيونغ جون،"
+        },
+        {
+          "text": "THESE ARE THE ONES LEFT AFTER EXCLUDING THE LIST GIVEN TO ELIZABETH PORTER AS TRADABLE.",
+          "confidence": 0.951,
+          "text_ar": "هذه هي القطع المتبقية بعد استبعاد القائمة التي أُعطيت لإليزابيث پورتر باعتبارها قابلة للتداول."
+        },
+        {
+          "text": "STILL, I WOULD LIKE TO KNOW.",
+          "confidence": 0.917,
+          "text_ar": "مع ذلك، أود أن أعرف."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "IF THEY WERE PUT UP FOR AUCTION AT CHRISTIE'S RIGHT NOW,",
+          "confidence": 0.932,
+          "text_ar": "لو تم طرحها للبيع المزاد في كريستيز الآن،"
+        },
+        {
+          "text": "NO ONE WOULD BE ABLE TO PREDICT THEIR WINNING BIDS.",
+          "confidence": 0.956,
+          "text_ar": "لما استطاع أحد التنبؤ بمزايدات الفوز بها."
+        },
+        {
+          "text": "IF THEY WERE ALL AUCTIONED OFF AT THE SAME TIME ON THE SAME DAY,",
+          "confidence": 0.941,
+          "text_ar": "لو تم بيعها جميعًا في المزاد في نفس الوقت وفي نفس اليوم،"
+        },
+        {
+          "text": "THE COMPETITIVE SPIRIT OF THE WORLD'S BILLIONAIRES WOULD IGNITE, AND THE PRICES WOULD SKYROCKET.",
+          "confidence": 0.933,
+          "text_ar": "لاشتهرت روح التنافس لدى مليارديرات العالم، ولارتفعت الأسعار بجنون."
+        },
+        {
+          "text": "I DIDN'T ASK FOR AN EXACT PRICE.",
+          "confidence": 0.975,
+          "text_ar": "لم أطلب سعراً دقيقاً."
+        },
+        {
+          "text": "JUST GIVE ME A ROUGH ESTIMATE.",
+          "confidence": 0.981,
+          "text_ar": "أعطني فقط تقديراً تقريبياً."
+        },
+        {
+          "text": "..AT LEAST",
+          "confidence": 0.925,
+          "text_ar": "..على الأقل"
+        },
+        {
+          "text": "Z BILLION DOLLARS.",
+          "confidence": 0.993,
+          "text_ar": "اثنان مليار دولار."
+        },
+        {
+          "text": "SINCE THEY HAVE PROBABLY ALREADY SOLD OFF A LOT OF THEM A LONG TIME AGO,",
+          "confidence": 0.921,
+          "text_ar": "بما أنها ربما باعت الكثير منها منذ وقت طويل بالفعل،"
+        },
+        {
+          "text": "EVEN IF WE ONLY COUNT HALF, GRANDMOTHER HAS BURIED OVER 1 TRILLION WON IN STOCKS.",
+          "confidence": 0.863,
+          "text_ar": "حتى لو حسبنا النصف فقط، فقد دفنت الجدة أكثر من تريليون وون في الأسهم."
+        },
+        {
+          "text": "THEN HOW MUCH WOULD IT COST TO BUY ALL THE ARTWORKS SUNYANG GALLERY SAID WERE TRADABLE?",
+          "confidence": 0.953,
+          "text_ar": "إذن كم ستكلف شراء جميع الأعمال الفنية التي قال جاليري سونيانغ إنها قابلة للتداول؟"
+        },
+        {
+          "text": "ALL OF THEM?",
+          "confidence": 0.946,
+          "text_ar": "جميعها؟"
+        },
+        {
+          "text": "YES. THEY WILL OFFER A PRICE,OFCOURSE, BUT WE CAN'T JUST ACCEPT IT UNCONDITIONALLY, RIGHT?",
+          "confidence": 0.944,
+          "text_ar": "نجل. سيطرحون سعراً بالطبع، لكن لا يمكننا قبوله هكذا دون شروط، أليس كذلك؟"
+        },
+        {
+          "text": "SO WE NEED TO THINK OF THE MOST OPTIMAL AMOUNT THAT WON'T BREAK THE DEAL.",
+          "confidence": 0.936,
+          "text_ar": "لذا علينا التفكير في المبلغ الأمثل الذي لن يفسد الصفقة."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "60O MILLION DOLLARS.",
+          "confidence": 0.908,
+          "text_ar": "600 مليون دولار."
+        },
+        {
+          "text": "LET'S BUY THEM ALL.",
+          "confidence": 0.925,
+          "text_ar": "لنشترها كلها."
+        },
+        {
+          "text": "WAIT A MINUTE, BETTE. THIS ISN'T A DONATION.",
+          "confidence": 0.966,
+          "text_ar": "انتظري دقيقة، بيتي. هذه ليست تبرعًا."
+        },
+        {
+          "text": "THE BUYER OF THE PAINTINGS WILL BE FANTASY OR ME.",
+          "confidence": 0.949,
+          "text_ar": "مشتري اللوحات سيكون فانتاسي أو أنا."
+        },
+        {
+          "text": "IT WILL MERELY BE IN THE FORM OF A FREE LEASE TO THE WENTWORTH TO THE WENTWOKTH ART GALLERY.",
+          "confidence": 0.915,
+          "text_ar": "سيكون الأمر مجرد عقد إيجار مجاني لجاليري ونتوورث."
+        },
+        {
+          "text": "WE NEED TO BE CLEAR ABOUT THIS.",
+          "confidence": 0.968,
+          "text_ar": "يجب أن نكون واضحين بشأن هذا."
+        },
+        {
+          "text": "OH MAN... EVEN IF OUR GALLERY RECEIVES THOSE ARTWORKS, WE CAN'T EXHIBIT THEM,SO",
+          "confidence": 0.907,
+          "text_ar": "يا له من أمر... حتى لو تلقى جاليرينا تلك الأعمال الفنية، فلا يمكننا عرضها، إذن"
+        },
+        {
+          "text": "WHAT IS THE POINT OF ALL THIS?",
+          "confidence": 0.963,
+          "text_ar": "ما جدوى كل هذا؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IT WILL BE 1 YEAR AT MOST.",
+          "confidence": 0.953,
+          "text_ar": "ستكون سنة واحدة على الأكثر."
+        },
+        {
+          "text": "AFTER 1 YEAR, I WILL MAKE IT SO THOSE ARTWORKS CAN BE REVEALED TO THE WORLD.",
+          "confidence": 0.943,
+          "text_ar": "بعد سنة واحدة، سأجعل تلك الأعمال الفنية تُكشف للعالم."
+        },
+        {
+          "text": "REALLY?",
+          "confidence": 0.99,
+          "text_ar": "حقا؟"
+        },
+        {
+          "text": "OF COURSE. BUT SHOULDN'T WE CLOSE THE DEAL BEFORE THAT?",
+          "confidence": 0.951,
+          "text_ar": "بالطبع. ألا ينبغي لنا إتمام الصفقة قبل ذلك؟"
+        },
+        {
+          "text": "IF WE ACCEPT THEIR CONDITIONS, THE DEAL IS AS GOOD AS DONE.",
+          "confidence": 0.962,
+          "text_ar": "إذا قبلنا شروطهم، فالصفقة شبه منتهية."
+        },
+        {
+          "text": "NO. WE HEARD THEIR CONDITIONS,",
+          "confidence": 0.967,
+          "text_ar": "لا. لقد سمعنا شروطهم،"
+        },
+        {
+          "text": "SO NOW WE HAVE TO PRESENT OURS.",
+          "confidence": 0.921,
+          "text_ar": "لذا علينا الآن أن نطرح شروطنا."
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.994,
+          "text_ar": "هاه؟"
+        },
+        {
+          "text": "BETTE, HOW ARE SECRET TRANSACTIONS USUALLY HANDLED ONTHE BLACK MARKET?",
+          "confidence": 0.937,
+          "text_ar": "بيتي، كيف تُدار المعاملات السرية عادةً في السوق السوداء؟"
+        },
+        {
+          "text": "ONCE THE ARTWORKIS APPRAISED AND CONFIRMED TO BE GENUINE, PAYMENT IS MADE INTHE MANNER THE SELLER WANTS.",
+          "confidence": 0.943,
+          "text_ar": "بمجرد تقييم العمل الفني والتأكد من أصالته، يتم الدفع بالطريقة التي يريدها البائع."
+        },
+        {
+          "text": "WIRE TRANSFER FOR LARGE AMOUNTS, CASH IF NOT.",
+          "confidence": 0.959,
+          "text_ar": "التحويل البنكي للمبالغ الكبيرة، والنقود إن لم تكن كذلك."
+        },
+        {
+          "text": "WHATABOUT A CONTRACT?",
+          "confidence": 0.979,
+          "text_ar": "وماذا عن العقد؟"
+        },
+        {
+          "text": "PfH.",
+          "confidence": 0.789,
+          "text_ar": "بفف."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "IT IS LITERALLY A BLACK MARKET.",
+          "confidence": 0.949,
+          "text_ar": "إنه سوق سوداء بمعناه الحرفي."
+        },
+        {
+          "text": "THERE IS NO WAY SOMETHING LIKE A CONTRACT EXISTS.",
+          "confidence": 0.959,
+          "text_ar": "لا توجد طريقة لوجود شيء مثل العقد."
+        },
+        {
+          "text": "DO YOU THINK SUNYANG GALLERY WILL TRADE LIKE IT'S A BLACK MARKET?",
+          "confidence": 0.948,
+          "text_ar": "أتظن أن جاليري سونيانغ سيتداول وكأنه سوق سوداء؟"
+        },
+        {
+          "text": "YES, SO THEY WILL AGREE TO ALMOST ANY CONDITION WE SET.",
+          "confidence": 0.916,
+          "text_ar": "نعم، لذا سيوافقون على أي شرط نضعه تقريبًا."
+        },
+        {
+          "text": "NO WAY! WHY WOULD A PLACE LIKE SUNYANG GALLERY DO SUCH A THING.?",
+          "confidence": 0.941,
+          "text_ar": "مستحيل! لماذا قد يفعل مكان مثل جاليري سونيانغ شيئاً كhذا؟"
+        },
+        {
+          "text": "I CAN UNDERSTAND NOT ALLOWING PUBLIC DISCLOSURE AND KEEPING THE CONTRACT DETAILS SECRET,",
+          "confidence": 0.965,
+          "text_ar": "أستطيع تفهم عدم السماح بالإفصاح العلني وإبقاء تفاصيل العقد سرية،"
+        },
+        {
+          "text": "BUT THERE SHOULD BE NOREASONTO MAKE THE TRANSACTIONITSELF ILLEGAL, RIGHT?",
+          "confidence": 0.957,
+          "text_ar": "ولكن لا ينبغي أن يكون هناك سبب لجعل المعاملة نفسها غير قانونية، أليس كذلك؟"
+        },
+        {
+          "text": "HOWCOULDAWOMAN WHOHASLIVED HERWHOLE LIFE THINKINGONLYABOUTART",
+          "confidence": 0.959,
+          "text_ar": "كيف لامرأة عاشت طوال حياتها لا تفكر إلا في الفن"
+        },
+        {
+          "text": "UNDERSTANDOUR FAMILY, A DEN OF MONSTERS UNLIKE ANY OTHER?",
+          "confidence": 0.944,
+          "text_ar": "أن تفهم عائلتنا، وكر الوحوش الذي لا مثيل له؟"
+        },
+        {
+          "text": "BETTE, EVEN IF YOU ARE CURIOUS, DON'T WASTE YOUR CURIOSITY ON UNNECESSARY THINGS.",
+          "confidence": 0.897,
+          "text_ar": "بيتي، حتى لو كنتِ فضولية، فلا تضيّعي فضولك في أمور لا داعي لها."
+        },
+        {
+          "text": "YOU ONLY NEED TO THINK ABOUT WHAT YOU GAIN FROM THIS DEAL.",
+          "confidence": 0.846,
+          "text_ar": "كل ما عليكِ التفكير فيه هو ما تربحينه من هذه الصفقة."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "3 MILLION DOLLARS IN SPONSORSHIP EVERY YEAR.",
+          "confidence": 0.93,
+          "text_ar": "ثلاثة ملايين دولار كتمويل كل عام."
+        },
+        {
+          "text": "AND MASTERPIECES THAT YOU MIGHT BE ABLE TO EXHIBIT FOREVER.",
+          "confidence": 0.957,
+          "text_ar": "وتحف فنية قد تتمكني من عرضها إلى الأبد."
+        },
+        {
+          "text": "YOU SHOULDN'T LOSE THIS BECAUSE OF CURIOSITY, RIGHT?",
+          "confidence": 0.934,
+          "text_ar": "لا ينبغي أن تخسري هذا بسبب الفضول، أليس كذلك؟"
+        },
+        {
+          "text": "NOW, HERE IS THE CONDITION WE WILL PRESENT.",
+          "confidence": 0.91,
+          "text_ar": "الآن، إليك الشرط الذي سنعرضه."
+        },
+        {
+          "text": "WE WILL MAKE APPROPRIATE CONCESSIONS SO THEY CAN WORK COMFORTABLY.",
+          "confidence": 0.915,
+          "text_ar": "سنقدم التنازلات المناسبة حتى يتمكنوا من العمل براحة."
+        },
+        {
+          "text": "WE CAN EVEN CONCEDE ON THE PRICE,",
+          "confidence": 0.928,
+          "text_ar": "يمكننا حتى التنازل بشأن السعر،"
+        },
+        {
+          "text": "BUT THE ONE THING WE CAN NEVER BACK DOWN ON IS THE CONTRACT.",
+          "confidence": 0.932,
+          "text_ar": "لكن الشيء الوحيد الذي لا يمكننا التراجع عنه أبدًا هو العقد."
+        },
+        {
+          "text": "BUT...",
+          "confidence": 0.937,
+          "text_ar": "ولكن..."
+        },
+        {
+          "text": "BASED ON MY CURRENT EXPECTATIONS, I DON'T THINK THAT WILL BE POSSIBLE?",
+          "confidence": 0.958,
+          "text_ar": "بناءً على توقعاتي الحالية، لا أعتقد أن ذلك سيكون ممكنًا؟"
+        },
+        {
+          "text": "WITHOUT A CONTRACT, THERE IS NO DEAL.",
+          "confidence": 0.971,
+          "text_ar": "بدون عقد، لا توجد صفقة."
+        },
+        {
+          "text": "ALSO, THAT CONTRACT MUST ABSOLUTELY HAVE THE SIGNATURE OF SUNYANG GALLERY'S TOP EXECUTIVE,",
+          "confidence": 0.942,
+          "text_ar": "كما يجب أن يحمل هذا العقد توقيع أكبر مسؤول تنفيذي في جاليري سونيانغ،"
+        },
+        {
+          "text": "NOT THE NOMINAL GALLERY DIRECTOR,",
+          "confidence": 0.966,
+          "text_ar": "وليس مدير الجاليري الاسمي،"
+        },
+        {
+          "text": "BUT THE HANDWRITTEN SIGNATURE OF THE ACTUAL OWNER.",
+          "confidence": 0.975,
+          "text_ar": "بل التوقيع بخط اليد للمالك الحقيقي."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "THE ACTUAL OWNER?",
+          "confidence": 0.989,
+          "text_ar": "المالك الحقيقي؟"
+        },
+        {
+          "text": "WHO IS THAT?",
+          "confidence": 0.987,
+          "text_ar": "من يكون؟"
+        },
+        {
+          "text": "THE CHAIRWOMAN OF THE CONGLOMERATE ARTS FOUNDATION.",
+          "confidence": 0.973,
+          "text_ar": "رئيسة مؤسسة فنون التكتل."
+        },
+        {
+          "text": "： :JP 工： ： JHS",
+          "confidence": 0.659,
+          "text_ar": "..."
+        }
+      ]
+    }
+  ]
+}
