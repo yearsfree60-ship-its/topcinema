@@ -117,6 +117,21 @@
           ],
           "originalBytes": 14570477,
           "compressedBytes": 1636852
+        },
+        {
+          "label": "الفصل 8",
+          "num": "8",
+          "chNum": 8.0,
+          "sourceUrl": "https://starzmanga.com/manga/how-to-live-as-a-villain/8/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__how-to-live-as-a-villain/ch-8/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__how-to-live-as-a-villain/ch-8/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__how-to-live-as-a-villain/ch-8/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__how-to-live-as-a-villain/ch-8/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__how-to-live-as-a-villain/ch-8/005.webp"
+          ],
+          "originalBytes": 5600829,
+          "compressedBytes": 1429552
         }
       ]
     }
