@@ -1,0 +1,689 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "216",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "DOJUN? HOW...?",
+          "confidence": 0.979,
+          "text_ar": "دوجون؟ كيف...؟"
+        },
+        {
+          "text": "IT'S ALONG STORY.",
+          "confidence": 0.922,
+          "text_ar": "قَصَّة طويلة."
+        },
+        {
+          "text": "ANYWAY, HE HAS SECURED EVIDENCE OF MY FLUSH FUND, ALONG WITHWITNESSES AND HE'S BLACKMAILING ME WITH THEM.",
+          "confidence": 0.855,
+          "text_ar": "على أي حال، لقد ضمن أدلة على أموالي السرية، ومعها شهود، وهو يبتزني بها."
+        },
+        {
+          "text": "ON TOP OF THAT, HE EVEN SOMEHOW MANAGED TOGET THE PROSECUTOR GENERAL AND MINISTEROF JUSTICE TO KINDA QUIETDOWN.",
+          "confidence": 0.874,
+          "text_ar": "وفوق ذلك، تمكن بطريقة ما من جعل النائب العام ووزير العدل يهدآن نوعًا ما."
+        },
+        {
+          "text": "THOSE GUYS?",
+          "confidence": 0.989,
+          "text_ar": "هؤلاء الأوغاد؟"
+        },
+        {
+          "text": "THEY WANTED TIME TO FIGURE OUT WHAT'S GOING ON.",
+          "confidence": 0.897,
+          "text_ar": "أرادوا بعض الوقت لمعرفة ما يجري."
+        },
+        {
+          "text": "THEY SAID IT'S NOT EASY TO BURY THE CASE WITHOUT THE INTERNAL BACKLASH FOR NOW.",
+          "confidence": 0.944,
+          "text_ar": "قالوا إنه ليس من السهل طمس القضية دون ردود فعل عكسية داخلية في الوقت الحالي."
+        },
+        {
+          "text": "WHO HAS THE TIME FOR THAT? JUST LET IT BE.",
+          "confidence": 0.877,
+          "text_ar": "من لديه وقت لكل هذا؟ دع الأمور تسري."
+        },
+        {
+          "text": "IT'LL ALL CALM DOWN ON ITS OWN. WHAT CAN THEY EVEN DO?",
+          "confidence": 0.873,
+          "text_ar": "ستهدأ الأمور من تلقاء نفسها. ماذا بوسعهم أن يفعلوا أصلاً؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "DOJUN'S NOT A REGULAR PERSON WITHOUTPOWER.",
+          "confidence": 0.942,
+          "text_ar": "دوجون ليس شخصًا عاديًّا بلا نفوذ."
+        },
+        {
+          "text": "HE CAN USE CONNECTIONS LIKE US.",
+          "confidence": 0.982,
+          "text_ar": "بإمكانه استخدام علاقات مثلنا."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.956,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "YOU'VE GOT MONEY, CONNECTIONS,AND POWER TOO!!",
+          "confidence": 0.952,
+          "text_ar": "أنت تمتلك المال والعلاقات والنفوذ أيضًا!!"
+        },
+        {
+          "text": "FIGURE IT OUT!",
+          "confidence": 0.981,
+          "text_ar": "تدبر أمرك!"
+        },
+        {
+          "text": "AND LET ME MAKE THIS PERFECTLY CLEAR.",
+          "confidence": 0.936,
+          "text_ar": "ودعني أكون واضحًا تمامًا."
+        },
+        {
+          "text": "I WILL NOT ACCEPT NEXT WEEK'S BOARD MEETING BE RUINED.",
+          "confidence": 0.96,
+          "text_ar": "لن أسمح بإفساد اجتماع مجلس الإدارة الأسبوع القادم."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "EF READ AT HIVETOON.COM TOFASTER UPDATE!",
+          "confidence": 0.7,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "SO DOJUN...",
+          "confidence": 0.897,
+          "text_ar": "إذن دوجون..."
+        },
+        {
+          "text": "...HAS A STRONG WEAPON, HUH?",
+          "confidence": 0.949,
+          "text_ar": "...لديه سلاح قوي، أليس كذلك؟"
+        },
+        {
+          "text": "JIN YOUNGGI",
+          "confidence": 0.934,
+          "text_ar": "جين يونغجي"
+        },
+        {
+          "text": "VICE CHAIRMAN",
+          "confidence": 0.969,
+          "text_ar": "نائب الرئيس"
+        },
+        {
+          "text": "WHAT DO YOU THINK?",
+          "confidence": 0.895,
+          "text_ar": "ما رأيك؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I THINK THE BOARD MEETING WILL BE CALLED OFF.",
+          "confidence": 0.956,
+          "text_ar": "أعتقد أن اجتماع مجلس الإدارة سيتم إلغاؤه."
+        },
+        {
+          "text": "A 100 BILLION IN AN OVERSEAS ACCOUNT ISN'T HUGE, BUT IT'S BAD TIMING WITH THE IMF CRISIS.",
+          "confidence": 0.897,
+          "text_ar": "مبلغ مئة مليار في حساب خارجي ليس ضخمًا، لكن التوقيت سيء بسبب أزمة صندوق النقد الدولي."
+        },
+        {
+          "text": "THAT'S NOT WHAT I MEANT.",
+          "confidence": 0.978,
+          "text_ar": "لم أكن أعني ذلك."
+        },
+        {
+          "text": "WHAT IF WE USE THIS CHANCE TO HAVE DONGGI STEP DOWN FOR A WHILE?",
+          "confidence": 0.955,
+          "text_ar": "ماذا لو استغللنا هذه الفرصة لنجعل دونغجي يتنحى لفترة؟"
+        },
+        {
+          "text": "IF HE TEMPORARILY GIVES UP THE CHAIRMAN POSITION, WHO ELSE COULD TAKE CHARGE OF THE HEAVY INDUSTRIES AFFILIATE GROUP?",
+          "confidence": 0.961,
+          "text_ar": "إذا تخلى مؤقتًا عن منصبه كرات رئيس، فمن غيره يمكنه إدارة مجموعة الشركات الثقيلة؟"
+        },
+        {
+          "text": "YOU'RE THE ONLY ONE.",
+          "confidence": 0.927,
+          "text_ar": "أنت وحدك القادر على ذلك."
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.995,
+          "text_ar": "ماذا؟!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "SO YOU'RE EASYING YOU WOULD NEED THE EVIDENCE JIN DOJUN HAS...",
+          "confidence": 0.892,
+          "text_ar": "إذن أنت تقصد أنك ستحتاج إلى الأدلة التي يمتلكها جين دوجون..."
+        },
+        {
+          "text": "BUT DO YOU REALLY THINK HE'LL HAND IT OVER WITH- OUT A FIGHT?",
+          "confidence": 0.91,
+          "text_ar": "ولكن هل تعتقد حقًّا أنه سيسلمها دون قتال؟"
+        },
+        {
+          "text": "HE'S LITERALLY BLACKMAILING HIS UNCLE TO KEEP THE FINANCIAL GROUP.",
+          "confidence": 0.956,
+          "text_ar": "إنه يبتز عمه حرفيًّا ليحافظ على المجموعة المالية."
+        },
+        {
+          "text": "WON'T HE DO WHAT I WANT IF I GIVE HIM A LITTLE BIT OF WHAT HE WANTS?",
+          "confidence": 0.939,
+          "text_ar": "ألن يفعل ما أُريد إذا أعطيته جزءًا مما يريد؟"
+        },
+        {
+          "text": "I'LL TRY MEETING HIM.",
+          "confidence": 0.96,
+          "text_ar": "سأحاول مقابلته."
+        },
+        {
+          "text": "WE SHOULD FIRST FIND OUT WHAT HE HAS AND WHAT HE WANTS EXACTLY.",
+          "confidence": 0.902,
+          "text_ar": "علينا أولاً معرفة ما يمتلكه وما يريده بالتحديد."
+        },
+        {
+          "text": "BE QUICK.",
+          "confidence": 0.995,
+          "text_ar": "كن سريعًا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "Cabe au lait",
+          "confidence": 0.849,
+          "text_ar": "*رشفة قهوة بالحليب*"
+        },
+        {
+          "text": "WHY IS VICE CHAIRMAN JIN YOUNGGI SUDDENLY APPROACHING ME?",
+          "confidence": 0.927,
+          "text_ar": "لماذا يقترب مني نائب الرئيس جين يونغجي فجأة؟"
+        },
+        {
+          "text": "HOMM",
+          "confidence": 0.991,
+          "text_ar": "*تنهيدة*"
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.927,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "ERS FIN",
+          "confidence": 0.989,
+          "text_ar": "*تمتمة*"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "CHIEF SECRETARY BAEK JUNHYUK.",
+          "confidence": 0.99,
+          "text_ar": "كبير السكرتيرين بايك جونغيوك."
+        },
+        {
+          "text": "VICE CHAIRMAN JIN YOUNGGI'S RIGHT-HAND MAN",
+          "confidence": 0.962,
+          "text_ar": "الساعد الأيمن لنائب الرئيس جين يونغجي"
+        },
+        {
+          "text": "I DIDN'T EXPECT YOU TO CALL ME. WHAT IS IT?",
+          "confidence": 0.921,
+          "text_ar": "لم أتوقع أن تتصل بي. ما الأمر؟"
+        },
+        {
+          "text": "HOW ABOUT A TEA FIRST? TO CATCH YOUR TOCATC7OOA BREAATH.",
+          "confidence": 0.513,
+          "text_ar": "ما رأيك بكوب من الشاي أولاً؟ لتلتقط أنفاسك."
+        },
+        {
+          "text": "MAILMAN UNCLE. JUST DELIVER THE LETTER, YEAH?",
+          "confidence": 0.964,
+          "text_ar": "أيها العم ساعي البريد، قم بتسليم الرسالة وفقط، أليس كذلك؟"
+        },
+        {
+          "text": "STOP COSPLAYING LIKE THE OWNER WHO SENT IT.",
+          "confidence": 0.965,
+          "text_ar": "توقف عن تقمص دور المالك الحقيقي."
+        },
+        {
+          "text": "THAT'S HARSH.",
+          "confidence": 0.969,
+          "text_ar": "هذا قاسٍ."
+        },
+        {
+          "text": "JEEZ, WHAT A LOAD OF BULL...",
+          "confidence": 0.902,
+          "text_ar": "يا للهول، يا له من هراء..."
+        },
+        {
+          "text": "co0o",
+          "confidence": 0.394,
+          "text_ar": "*تنهيدة*"
+        },
+        {
+          "text": "YOU THINK YOU'RE ALL THAT...",
+          "confidence": 0.942,
+          "text_ar": "تظن نفسك شيئًا مهمًّا..."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "TL 如 Z",
+          "confidence": 0.159,
+          "text_ar": "*تمتمة*"
+        },
+        {
+          "text": "… JUST BECAUSE I CAME OVER BECAUSE OF ONE TEXT?",
+          "confidence": 0.844,
+          "text_ar": "...فقط لأنني أتيت بسبب رسالة نصية واحدة؟"
+        },
+        {
+          "text": "I CAME HERE BECAUSE I CONSIDERED YOU UNCLE'S PROXY.",
+          "confidence": 0.927,
+          "text_ar": "أتيت إلى هنا لأنني أعتبرك ممثل عمي."
+        },
+        {
+          "text": "YOU INVITED ME TO A PLACE AWAY FROM THE COMPANY. SO IT'S A SENSITIVE TOPIC, NO?",
+          "confidence": 0.936,
+          "text_ar": "لقد دعيتني إلى مكان بعيد عن الشركة. إذن فهو موضوع حساس، أليس كذلك؟"
+        },
+        {
+          "text": "I CAME FOR THAT. I DON'T WANNA DRINK TEA AND SPEND TIME WITH YOU. GOT IT?",
+          "confidence": 0.874,
+          "text_ar": "أتيت من أجل ذلك. لا أريد شرب الشاي أو إضاعة الوقت معك. أفهِمت؟"
+        },
+        {
+          "text": "ERS",
+          "confidence": 0.982,
+          "text_ar": "*قلق*"
+        },
+        {
+          "text": "PLEASE CALM DOWN AND HAVE A SEAT.",
+          "confidence": 0.96,
+          "text_ar": "أرجو أن تهدأ وتجلس."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER UPDATE!",
+          "confidence": 0.927,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "I'LL CONVEY THE VICE CHAIRMAN'S MESSAGE RIGHT AWAY.",
+          "confidence": 0.963,
+          "text_ar": "سأبلغك برسالة نائب الرئيس فورًا."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "Hmph",
+          "confidence": 0.998,
+          "text_ar": "همم"
+        },
+        {
+          "text": "NOW HE WOULDN'T DARE TO TRY AND TEST ME FOR OTHER ANSWERS.",
+          "confidence": 0.933,
+          "text_ar": "الآن لن يجرؤ على اختبار صبري للحصول على إجابات أخرى."
+        },
+        {
+          "text": "DO YOU HAPPEN TO HAVE PROOF...",
+          "confidence": 0.936,
+          "text_ar": "هل تمتلك بالصدفة أدلة..."
+        },
+        {
+          "text": "..REGARDING VICE CHAIRMAN JIN DONGGI'S SLUSH FUND?",
+          "confidence": 0.858,
+          "text_ar": "...تخص الأموال السرية لنائب الرئيس جين دونغجي؟"
+        },
+        {
+          "text": "JUST DELIVER HIS MESSAGE.",
+          "confidence": 0.972,
+          "text_ar": "قم بتسليم رسالته فحسب."
+        },
+        {
+          "text": "I ASK THE QUESTIONS HERE.",
+          "confidence": 0.968,
+          "text_ar": "أنا من يطرح الأسئلة هنا."
+        },
+        {
+          "text": "HE WANTS THE PROOF FOR THAT SLUSH FUND.",
+          "confidence": 0.854,
+          "text_ar": "إنه يريد الدليل الخاص بتلك الأموال السرية."
+        },
+        {
+          "text": "DO YOU EVEN KNOW EXACTLY WHAT IT IS?",
+          "confidence": 0.894,
+          "text_ar": "هل تعلم حتى ما هي بالتحديد؟"
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE! 二",
+          "confidence": 0.169,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "HE KNOWS THEY PROVE HE SIPHONED THAT MONEY.",
+          "confidence": 0.927,
+          "text_ar": "هو يعلم أنها تثبت اختلاسه لتلك الأموال."
+        },
+        {
+          "text": "WHERE WILL AEREM HE USE IT?",
+          "confidence": 0.466,
+          "text_ar": "أين بحق الجحيم سيستخدمها؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I DON'T KNOW THAT.",
+          "confidence": 0.967,
+          "text_ar": "أنا لا أعلم ذلك."
+        },
+        {
+          "text": "NO WAY HE DOESN'T KNOW IT.",
+          "confidence": 0.926,
+          "text_ar": "مستحيل ألا يكون على دراية بها."
+        },
+        {
+          "text": "BUTIDOUBT HE'LL ADMIT IT.",
+          "confidence": 0.932,
+          "text_ar": "لكنني أشك في أنه سيققر الاعتراف بذلك."
+        },
+        {
+          "text": "SURELY YOU'RE NOT ASKING ME TO JUST HAND IT OVER?",
+          "confidence": 0.877,
+          "text_ar": "أنت لا تطلب مني بالتأكيد أن أسلمها هكذا هبةً؟"
+        },
+        {
+          "text": "IT'S A POWERFUL BOMBSHELL THAT COULD GET RID OF THE YOUNGER BROTHER WHO'S BEEN A THORN IN HIS SIDE IN ONE FELL SWOOP.",
+          "confidence": 0.908,
+          "text_ar": "إنها قنبلة موقوتة قوية قادرة على التخلص من الشوك الذي في حلقه (أخيه الأصغر) بضربة واحدة."
+        },
+        {
+          "text": "THIS IS IT. RATHER THAN GETTING RID OF ME,",
+          "confidence": 0.915,
+          "text_ar": "الأمر هكذا. بدلاً من التخلص مني،"
+        },
+        {
+          "text": "VICE CHAIRMAN JIN YOUNGGI CLEARLY WANTS TO TAKE OUT HIS RIVAL BROTHER.",
+          "confidence": 0.939,
+          "text_ar": "يبدو جليًّا أن نائب الرئيس جين يونغجي يريد الإطاحة بأخيه ومنافسه."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WITH JIN DONGGIGONE,",
+          "confidence": 0.94,
+          "text_ar": "مع زوال جين دونغجي،"
+        },
+        {
+          "text": "HE'LL AUTOMATICALLY BE THE NEXT CHAIRMAN.",
+          "confidence": 0.983,
+          "text_ar": "سيكون هو الرئيس القادم تلقائيًّا."
+        },
+        {
+          "text": "HE ASKED WHAT YOU WANT",
+          "confidence": 0.966,
+          "text_ar": "لقد سأل عما تريده."
+        },
+        {
+          "text": "YOU MADE THE OFFER. YOU SHOULD SAY WHAT YOU'RE WILLING TO PAY FIRST.",
+          "confidence": 0.86,
+          "text_ar": "أنت من قدم العرض. عليك أن تذكر ما أنت مستعد لدفعه أولاً."
+        },
+        {
+          "text": "I'VE NEVER HEARD OF THE BUYER SAYING THE PRICE FIRST...",
+          "confidence": 0.959,
+          "text_ar": "لم أسمع قط بالمشتري وهو يحدد السعر أولاً..."
+        },
+        {
+          "text": "IS THIS YOUR FIRST DAY DOING BUSINESS?",
+          "confidence": 0.914,
+          "text_ar": "أهذا يومك الأول في عالم الأعمال؟"
+        },
+        {
+          "text": "DON'T YOU KNOW YOU PUT CASH ON THE TABLE FIRST WHEN BUYING SOMETHING THAT'S NOT FOR SALE?",
+          "confidence": 0.889,
+          "text_ar": "ألا تعلم أنك تضع النقود على الطاولة أولاً عندما تشتري شيئًا ليس للبيع؟"
+        },
+        {
+          "text": "YOU HAVE TO GO AND ASK YOUR MASTER FIRST, DON'T YOU?",
+          "confidence": 0.862,
+          "text_ar": "عليك الذهاب وسؤال سيدك أولاً، أليس كذلك؟"
+        },
+        {
+          "text": "coo",
+          "confidence": 0.41,
+          "text_ar": "*تنهد*"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "NOW THATIKNOW WHAT UNCLE YOUNGGI WANTS, I DON'T NEED TO TALK TO THIS GUY ANYMORE.",
+          "confidence": 0.941,
+          "text_ar": "الآن بعد أن عرفت ماذا يريد العم يونغجي، لم أعد بحاجة للحديث مع هذا الرجل."
+        },
+        {
+          "text": "LET ME TELL YOU, JUST IN CASE.",
+          "confidence": 0.973,
+          "text_ar": "دعني أخبرك تحسبًا فقط."
+        },
+        {
+          "text": "DON'T VALUE MY PROOF AS A TOOL TO PUT VICE CHAIRMAN JIN DONGGI IN A PINCH.",
+          "confidence": 0.899,
+          "text_ar": "لا تقيّم دليلي كأداة لتورط نائب الرئيس جين دونغجي في مأزق فحسب."
+        },
+        {
+          "text": "THINK OF THE VALUE OF THE OPPORTUNITY YOU WILL GET AFTER THAT.",
+          "confidence": 0.925,
+          "text_ar": "فكر في قيمة الفرصة التي ستحصل عليها بعد ذلك."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER UPOATE!",
+          "confidence": 0.932,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "THEN OFFER THE PRICE.",
+          "confidence": 0.983,
+          "text_ar": "إذن اطرح السعر."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "...MR. JIN DOJUN.",
+          "confidence": 0.874,
+          "text_ar": "...السيد جين دوجون."
+        },
+        {
+          "text": "EVEN IF I'M THE ONE WHO NEEDS THIS DEAL, I GOTTA SAY THIS.",
+          "confidence": 0.928,
+          "text_ar": "حتى وإن كنت أنا من يحتاج هذه الصفقة، يجب أن أقول هذا."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.95,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "AT LEAST SHOW SOME BASIC COURTESY.",
+          "confidence": 0.982,
+          "text_ar": "أظهر بعض اللياقة الأساسية على الأقل."
+        },
+        {
+          "text": "NO ONE CAN TALK TO ME WITHOUT RESPECT ASIDE FROM THE TWO VICE CHAIRMAN IN THE GROUP.",
+          "confidence": 0.933,
+          "text_ar": "لا أحد يجرؤ على محادثتي بلا احترام سوى نائبي الرئيس في المجموعة."
+        },
+        {
+          "text": "EVEN MD JIN SANGJU, VICE CHAIRMAN'S ELDEST SON ALWAYS ADDRESSES ME RESPECTFULLY.",
+          "confidence": 0.961,
+          "text_ar": "حتى الابن الأكبر لنائب الرئيس، السيد جين سانغجو، يكلمني دائماً باحترام."
+        },
+        {
+          "text": "I FEEL PITY FOR UNCLE FOR KEPING THIS GUY AS HIS ADVISOR.",
+          "confidence": 0.889,
+          "text_ar": "أشعر بالأسف لأجل عمي لأنه يبقي هذا الرجل مستشاراً له."
+        },
+        {
+          "text": "HE CAN'T EVEN DO THE BASICS LIKE HIDING YOUR EMOTIONS TILL YOU GET WHAT YOU WANT..",
+          "confidence": 0.924,
+          "text_ar": "إنه لا يتقن حتى أبسط الأمور كإخفاء مشاعره حتى يحصل على ما يريد.."
+        },
+        {
+          "text": "AH, I SEE. LET ME RESPECTFULLY SAY IT AGAIN.",
+          "confidence": 0.948,
+          "text_ar": "آه، فهمت. دعني أقولها باحترام مجددًا."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "TELL UNCLE YOUNGGI.",
+          "confidence": 0.981,
+          "text_ar": "أبلغ العم يونغجي."
+        },
+        {
+          "text": "IF HE WANTS THE PROOF I HAVE...",
+          "confidence": 0.943,
+          "text_ar": "إذا كان يريد الدليل الذي أمتلكه..."
+        },
+        {
+          "text": "CHIEF SECRETARY BAEK JUNHYUK...",
+          "confidence": 0.871,
+          "text_ar": "فكبير السكرتيرين بايك جونغيوك..."
+        },
+        {
+          "text": ".IS GONNA HAVE TO RESIGN.",
+          "confidence": 0.899,
+          "text_ar": "...سيتعين عليه الاستقالة."
+        },
+        {
+          "text": "YOU KNOW, DON'T YOU?'MY FAMILY WOULD ABANDON A MERE SALARYMAN INSTANTLY...",
+          "confidence": 0.887,
+          "text_ar": "أنت تعلم، أليس كذلك؟ عائلتي ستتخلى عن مجرد موظف في اللحظة الأخيرة..."
+        },
+        {
+          "text": "...TOGET WHAT THEY WANT.",
+          "confidence": 0.823,
+          "text_ar": "...لتحصل على ما تريد."
+        },
+        {
+          "text": "THAT'S WHY THE SALARYMEN..",
+          "confidence": 0.933,
+          "text_ar": "لهذا السبب الموظفون..."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "BOW THEIR HEADS TOUS WHEN THEY SEE MY FAMILY.",
+          "confidence": 0.92,
+          "text_ar": "يحنون رؤوسهم لنا حين يرون عائلتي."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "HOMMY",
+          "confidence": 0.993,
+          "text_ar": "*تمتمة*"
+        },
+        {
+          "text": "FINGERS T 贝",
+          "confidence": 0.301,
+          "text_ar": "*توتر*"
+        },
+        {
+          "text": "Caeaulat",
+          "confidence": 0.799,
+          "text_ar": "*رشفة قهوة بالحليب*"
+        },
+        {
+          "text": "IFI PLAY THIS RIGHT, I MIGHT BE ABLE TO BRING UNCLE DONGGI DOWN...",
+          "confidence": 0.901,
+          "text_ar": "إذا لعبت أوراقي بشكل صحيح، قد أتمكن من الإطاحة بالعم دونغجي..."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER URDATE!",
+          "confidence": 0.943,
+          "text_ar": "تتم الترجمة بواسطة هيفيتون"
+        },
+        {
+          "text": "..WITHOUT GETTING A SINGLE DROP OF BLOOD ON MY HANDS.",
+          "confidence": 0.947,
+          "text_ar": "...دون أن تلوث يداي بقطرة دم واحدة."
+        },
+        {
+          "text": "： :JP ： JHS",
+          "confidence": 0.639,
+          "text_ar": "ملاحظة: ترجمة خاصة"
+        }
+      ]
+    }
+  ]
+}
