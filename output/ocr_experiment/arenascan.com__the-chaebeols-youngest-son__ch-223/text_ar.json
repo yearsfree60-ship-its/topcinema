@@ -1,0 +1,796 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "223",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "630 MILLION DOLLARS.",
+          "confidence": 0.977,
+          "text_ar": "ستمائة وثلاثون مليون دولار."
+        },
+        {
+          "text": "600 MILLION.",
+          "confidence": 0.911,
+          "text_ar": "ستمائة مليون."
+        },
+        {
+          "text": "IF YOU WANT ANY MORE THAN THIS, YOU WILL HAVE TO LEAVE IT TOANAUCTION HOUSE.",
+          "confidence": 0.934,
+          "text_ar": "إذا كنتم تريدون أكثر من هذا، فسيتعين عليكم ترك الأمر لدار مزادات."
+        },
+        {
+          "text": "BUT CONSIDERING THE MASSIVE COMMISSION AN AUCTIONHOUSE WOULD TAKE,",
+          "confidence": 0.955,
+          "text_ar": "ولكن بالنظر إلى العمولة الضخمة التي ستأخذها دار المزادات،"
+        },
+        {
+          "text": "WOULDN'T6OO MILLIONDOLLARS BE MORE SUBSTANTIAL?",
+          "confidence": 0.942,
+          "text_ar": "ألن يكون مبلغ ستمائة مليون دولار أكثر فائدة وواقعية؟"
+        },
+        {
+          "text": "EXCUSE ME FOR A MOMENT.",
+          "confidence": 0.941,
+          "text_ar": "عذراً لحتياجي لحظة."
+        },
+        {
+          "text": "IT SEEMS THIS IS SOMETHING I CANNOT DECIDEONMYOWNAND REQUIRES APPROVAL.",
+          "confidence": 0.941,
+          "text_ar": "يبدو أن هذا أمر لا يمكنني اتخاذ قراره بمفردي ويحتاج إلى موافقة."
+        },
+        {
+          "text": "TAKE YOUR TIME.",
+          "confidence": 0.975,
+          "text_ar": "خذ وقتك."
+        },
+        {
+          "text": "ITIS JUST ASDOJUNSAID.",
+          "confidence": 0.97,
+          "text_ar": "الأمر كما قال دوجون بالضبط."
+        },
+        {
+          "text": "THAT MAN HAS NO DECISION-MAKINGPOWER.",
+          "confidence": 0.945,
+          "text_ar": "ذلك الرجل لا يمتلك أي سلطة لاتخاذ القرار."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "ALRIGHT.LET'S GO WITH 6OO MILLION DOLLARS.",
+          "confidence": 0.953,
+          "text_ar": "حسناً. لنتمم الصفقة بمبلغ ستمائة مليون دولار."
+        },
+        {
+          "text": "THANK YOU FOR MAKING A DIFFICULT DECISION.",
+          "confidence": 0.932,
+          "text_ar": "شكراً لك على اتخاذ قرار صعب."
+        },
+        {
+          "text": "HAVEWE PASSED THE FIRST HURDLE NOW?",
+          "confidence": 0.956,
+          "text_ar": "هل اجتزنا العقبة الأولى الآن؟"
+        },
+        {
+          "text": "PARDON? WHATDO YOU MEAN BY THAT.?",
+          "confidence": 0.876,
+          "text_ar": "عفواً؟ ماذا تقصد بذلك؟"
+        },
+        {
+          "text": "WELL, I FEEL LIKE WE WILL HAVE TO OVERCOME MANY HAVETOOVERCOME MAnY DIFFICULT HURDLES",
+          "confidence": 0.798,
+          "text_ar": "حسنًا، أعتقد أنه سيتعين علينا تخطي العديد من العقبات الصعبة"
+        },
+        {
+          "text": "TO CLOSE THIS DEAL.",
+          "confidence": 0.977,
+          "text_ar": "من أجل إتمام هذه الصفقة."
+        },
+        {
+          "text": "GUESSING FROM WHAT MR. SONG SAID LAST TIME,",
+          "confidence": 0.968,
+          "text_ar": "استناداً إلى ما قاله السيد سونغ في المرة الأخيرة،"
+        },
+        {
+          "text": "IT DOESN'T SEEM LIKE A NORMAL TRANSACTION, SO I WILL STATE MY CONDITIONS FIRST.",
+          "confidence": 0.961,
+          "text_ar": "لا يبدو وكأنه معاملة عادية، لذا سأطرح شروطي أولاً."
+        },
+        {
+          "text": "BECAUSE IT SEEMS MY CAREER IN THIS FIELD",
+          "confidence": 0.953,
+          "text_ar": "لأن مسيرتي المهنية في هذا المجال يبدو"
+        },
+        {
+          "text": "IS MUCH LONGER THAN YOURS, AT LEAST.",
+          "confidence": 0.934,
+          "text_ar": "أنها أطول بكثير من مسيرتك، على الأقل."
+        },
+        {
+          "text": "WE WILL WIRE THE PAYMENT FOR THE ARTWORKS TO THE ACCOUNT YOUWANT.",
+          "confidence": 0.914,
+          "text_ar": "سنقوم بتحويل دفعة الأعمال الفنية إلى الحساب الذي تحددونه."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "WE WOULD LIKE TO SEND A 1O% DOWN PAYMENT FIRST AND RECEIVE THE ARTWORKS HERE INTHE GALLERY'S VAULT.",
+          "confidence": 0.89,
+          "text_ar": "نود إرسال دفعة مقدمة بنسبة 10% أولاً واستلام الأعمال الفنية هنا في خزنة المعرض."
+        },
+        {
+          "text": "OF COURSE, THEY MUST GO THROUGH AN APPRAISAL BY OUR EXPERTS, RIGHT?",
+          "confidence": 0.935,
+          "text_ar": "بالطبع، يجب أن تخضع للتقييم من قبل خبرائنا، أليس كذلك؟"
+        },
+        {
+          "text": "ONCE THE APPRAISAL IS DONE AND THEY ARE CONFIRMED TO BE GENUINE, WE WILL IMMEDIATELY SEND THE REMAINING BALANCE.",
+          "confidence": 0.94,
+          "text_ar": "بمجرد الانتهاء من التقييم والتأكد من أصالتها، سنقوم فوراً بإرسال المبلغ المتبقي."
+        },
+        {
+          "text": "IT WILL BE A SECRET TRANSACTION, OF COURSE. HOW DOES THAT SOUND?",
+          "confidence": 0.943,
+          "text_ar": "ستكون معاملة سرية بالطبع. ما رأيك في ذلك؟"
+        },
+        {
+          "text": "YOU CATCH ON QUICK.",
+          "confidence": 0.983,
+          "text_ar": "أنت تلتقط الأمور بسرعة."
+        },
+        {
+          "text": "THAT IS EXACTLY THE METHODWE WANT.",
+          "confidence": 0.958,
+          "text_ar": "تلك هي الطريقة التي نريدها تماماً."
+        },
+        {
+          "text": "SINCE I HAVE ACCOMMODATED YOUR REQUESTS, I TRUST YOU WILL ACCEPT MY VERY MINOR CONDITION AS WELL.",
+          "confidence": 0.94,
+          "text_ar": "بما أنني استجبت لطلباتكم، أثق أنكم ستتقبلون شرطي البسيط للغاية أيضاً."
+        },
+        {
+          "text": "GO AHEAD.",
+          "confidence": 0.99,
+          "text_ar": "تفضل."
+        },
+        {
+          "text": "WE SHOULD DRAW UP A CONTRACT EXACTLY AS I JUST OUTLINED, RIGHT?",
+          "confidence": 0.938,
+          "text_ar": "يجب أن نُعد عقداً بالتمام كما أوضحت للتو، أليس كذلك؟"
+        },
+        {
+          "text": "THE PAYMENT METHOD, THE DELIVERY TIME OF THE ARTWORKS...",
+          "confidence": 0.957,
+          "text_ar": "طريقة الدفع، موعد تسليم الأعمال الفنية..."
+        },
+        {
+          "text": "A-A CONTRACT.?",
+          "confidence": 0.916,
+          "text_ar": "ع... عقداً؟"
+        },
+        {
+          "text": "I HAVEN'T FINISHED SPEAKING YET.",
+          "confidence": 0.967,
+          "text_ar": "لم أُنهِ كلامي بعد."
+        },
+        {
+          "text": "LASTLY, PLEASE PROVIDE A HANDWRITTEN SIGNATURE ON THE CONTRACT.",
+          "confidence": 0.947,
+          "text_ar": "أخيراً، يرجى توفير توقيع بخط اليد على العقد."
+        },
+        {
+          "text": "SINCE ANUNCERTAIN SECRET TRANSACTION LIKE THIS REQUIRES CONFIRMATION FROM THE ARTWORKS' OWNER.",
+          "confidence": 0.918,
+          "text_ar": "بما أن معاملة سرية غير مؤكدة كهذه تتطلب تأكيداً من مالك الأعمال الفنية."
+        },
+        {
+          "text": "THE OWNER OF THE ARTWORKS IS SUNYANG GALLERY'S..",
+          "confidence": 0.884,
+          "text_ar": "مالك الأعمال الفنية هو معرض سونيانغ..."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "NO.I AM TALKING ABOUT THE TRUE OWNER.",
+          "confidence": 0.955,
+          "text_ar": "لا. أنا أتحدث عن المالك الحقيقي."
+        },
+        {
+          "text": "THE VERY PERSON YOU WERE JUST ON THE PHONE WITH, MR. SONG.",
+          "confidence": 0.935,
+          "text_ar": "الشخص الذي كنت تتحدث معه على الهاتف للتو، السيد سونغ."
+        },
+        {
+          "text": "THE CHAIRWOMAN OF THE CONGLOMERATE ARTS FOUNDATION,MADAM LEE.",
+          "confidence": 0.872,
+          "text_ar": "رئيسة مؤسسة سونيانغ للفنون، المديرة لي."
+        },
+        {
+          "text": "OF COURSE, I WILL GET THE SIGNATURE MYSELF.",
+          "confidence": 0.968,
+          "text_ar": "بالطبع، سأحصل على التوقيع بنفسي."
+        },
+        {
+          "text": "IF IT IS TOO MUCH TROUBLE FOR MUCNIKOUBLEYOR MADAM LEE TO COME TO NEW YORK, OUR PEOPLE WILL GO TO KOREA.",
+          "confidence": 0.734,
+          "text_ar": "إذا كان مجيء المديرة لي إلى نيويورك يشكل عناءً كبيراً، سيذهب رجالنا إلى كوريا."
+        },
+        {
+          "text": "THAT SEEMS DIFFICULT,",
+          "confidence": 0.993,
+          "text_ar": "يبدو ذلك صعباً،"
+        },
+        {
+          "text": "NO, IMPOSSIBLE.",
+          "confidence": 0.984,
+          "text_ar": "بل مستحيلاً."
+        },
+        {
+          "text": "WE ARE WIRING 6OO MILLION DOLLARS TO AN UNTRACEABLE ACCOUNT.",
+          "confidence": 0.973,
+          "text_ar": "نحن نحول ستمائة مليون دولار إلى حساب يصعب تتبعه."
+        },
+        {
+          "text": "I DON'T THINK I AM MAKING AN UNREASONABLE DEMAND.",
+          "confidence": 0.95,
+          "text_ar": "لا أعتقد أنني أتقدم بطلب غير معقول."
+        },
+        {
+          "text": "BESIDES, I ACCEPTED ALL OF YOUR DIFFICULT DEMANDS.",
+          "confidence": 0.965,
+          "text_ar": "إلى جانب ذلك، لقد قبلت جميع طلباتكم الصعبة."
+        },
+        {
+          "text": "IF YOU CAN'T EVEN SIGN A BASIC CONTRACT LIKE THIS, WHAT AM I SUPPOSED TO TRUST TO MAKE THIS DEAL?",
+          "confidence": 0.922,
+          "text_ar": "إذا لم تكونوا قادرين حتى على توقيع عقد أساسي كهذا، فبماذا يُفترض بي أن أثق لإتمام هذه الصفقة؟"
+        },
+        {
+          "text": "AH, NO... I DIDN'T MEAN...",
+          "confidence": 0.927,
+          "text_ar": "آه، لا... لم أكن أعني..."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "FORGIVE ME, BUT YOU DON'T HAVE THE AUTHORITY TO DECIDE, Do YOU, MR. SonG?",
+          "confidence": 0.772,
+          "text_ar": "سامحني، لكنك لا تمتلك صلاحية اتخاذ القرار، أليس كذلك، سيد سونغ؟"
+        },
+        {
+          "text": "WHY DON'T YOU CALL AND GET APPROVAL AGAIN RIGHT NOW?",
+          "confidence": 0.916,
+          "text_ar": "لمَ لا تتصل وتحصل على الموافقة مرة أخرى الآن؟"
+        },
+        {
+          "text": "OH, PLEASE MAKE SURE TO PASS THIS ON.",
+          "confidence": 0.958,
+          "text_ar": "أوه، يرجى التأكد من إيصال هذا."
+        },
+        {
+          "text": "IF SHE DOESN'T ACCEPT MY CONDITIONS, WE WILL CONSIDER THIS DEAL VOID.",
+          "confidence": 0.952,
+          "text_ar": "إذا لم تقبل شروطي، سنعتبر هذه الصفقة لاغية."
+        },
+        {
+          "text": "REALLY? ARE KEALLY?ARE yOU CRAZY? YOU CRAZY?",
+          "confidence": 0.836,
+          "text_ar": "حقاً؟ أأنت مجنون؟"
+        },
+        {
+          "text": "YOU ARE DETERMINED TO CATCH GRANDMOTHER!",
+          "confidence": 0.956,
+          "text_ar": "أنت مصمم على الإيقاع بالجدة!"
+        },
+        {
+          "text": "WHY ARE YOU EXAGGERATING AGAIN?",
+          "confidence": 0.907,
+          "text_ar": "لماذا تبالغ مجدداً؟"
+        },
+        {
+          "text": "THE MOMENT SHE SIGNS THE CONTRACT, IT IS SMUGGLING, A IT IS SMUGGLING,A BORROWED-NAME ACCOUNT... NO,",
+          "confidence": 0.895,
+          "text_ar": "في اللحظة التي توقّع فيها على العقد، ستصبح تهريباً، وحساباً بأسماء مستعارة... لا،"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "SINCE SHE IS RECEIVING6OOMILLION DOLLARS, IT IS DEFINITELY ANOVERSEAS ACCOUNT, SO IT IS AVIOLATIONOF THEFOREIGN EXCHANGE TRANSACTIONS ACT.",
+          "confidence": 0.921,
+          "text_ar": "بما أنها تتلقى ستمائة مليون دولار، فهو بالتأكيد حساب خارجي، لذا فهو انتهاك لقانون معاملات النقد الأجنبي."
+        },
+        {
+          "text": "LASTLY, SHE SIPHONED OFF THE FOUNDATION'S ASSETS, SO IT'S EMBEZZLEMENT.",
+          "confidence": 0.959,
+          "text_ar": "وأخيراً، لقد اختلست أصول المؤسسة، لذا فهي جريمة اختلاس."
+        },
+        {
+          "text": "WITH THIS AMOUNT OF MONEY,PROBATIONWILL BE IMPOSSIBLE.",
+          "confidence": 0.962,
+          "text_ar": "بهذا المبلغ من المال، سيكون وقف التنفيذ مستحيلاً."
+        },
+        {
+          "text": "EVEN WITH THE BEST LAWYER, SHE WILL GET 5 YEARS.",
+          "confidence": 0.915,
+          "text_ar": "حتى مع أفضل محامٍ، ستحصل على 5 سنوات."
+        },
+        {
+          "text": "SHOULDN'T IT TAKE THAT MUCHTO TAKE THAT MUCH TO FORCE HER INTO RETIREMENT?",
+          "confidence": 0.873,
+          "text_ar": "ألا يتطلب الأمر هذا القدر لإجبارها على التقاعد؟"
+        },
+        {
+          "text": "FORCED RETIREMENT...",
+          "confidence": 0.945,
+          "text_ar": "إجبار على التقاعد..."
+        },
+        {
+          "text": "BUT DOJUN.",
+          "confidence": 0.951,
+          "text_ar": "ولكن يا دوجون."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.975,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "IF SHE HOLDS STOCKS UNDER BORROWED NAMES, IT WILL BE HARD TO TRACK THEM DOWN, WON'T IT?",
+          "confidence": 0.891,
+          "text_ar": "إذا كانت تحتفظ بالأسهم تحت أسماء مستعارة، فسيكون من الصعب تعقبها، أليس كذلك؟"
+        },
+        {
+          "text": "WHAT IF YOUR GRANDMOTHER GRITS HER TEETH AND SERVES HER TIME?",
+          "confidence": 0.947,
+          "text_ar": "ماذا لو أطبقت جدتك على أسنانها وتحملت فترة عقوبتها؟"
+        },
+        {
+          "text": "SHE CAN MOVE THOSE BORROWED-NAME STOCKS EVEN FROMPRISON.",
+          "confidence": 0.935,
+          "text_ar": "بإمكانها نقل تلك الأسهم ذات الأسماء المستعارة حتى من داخل السجن."
+        },
+        {
+          "text": "OH SE-HYUN STILL DOESN'T KNOW OUR FAMILY VERY WELL.",
+          "confidence": 0.919,
+          "text_ar": "أوه سيهيون لا يزال لا يعرف عائلتنا جيداً."
+        },
+        {
+          "text": "UNCLE.",
+          "confidence": 0.997,
+          "text_ar": "خالي."
+        },
+        {
+          "text": "YEAH.",
+          "confidence": 0.997,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "MY GRANDMOTHER",
+          "confidence": 0.979,
+          "text_ar": "جدتي"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "WOULDN'T BE ABLE TO STAND ANINTERROGATION ROOM AT THE PROSECUTOR'S OFFICE, LET ALONE A PRISON CELL.",
+          "confidence": 0.961,
+          "text_ar": "لن تكون قادرة على تحمل غرفة التحقيق في مكتب المدعي العام، ناهيك عن زنزانة السجن."
+        },
+        {
+          "text": "SHE IS SOMEONE WHO HASN'T LIFTED A FINGER FOR OVER THIRTY YEARS.",
+          "confidence": 0.928,
+          "text_ar": "إنها شخص لم ترفع إصبعاً لخدمة نفسها لأكثر من ثلاثين عاماً."
+        },
+        {
+          "text": "SHE IS SOMEONE WHO CAN'TSITDOWNUNLESS IT IS ON A BARCELONA CHAIR WORTH MILLIONS OF WON.DO YOU THINK SHE WOULD SIT ON A CHAIRIN AN INTERROGATIONROOM?",
+          "confidence": 0.927,
+          "text_ar": "إنها شخص لا تستطيع الجلوس إلا على كرسي 'برشلونة' الذي تبلغ قيمته ملايين الوون. أتراكها تعترض وتجلس على كرسي في غرفة تحقيق؟"
+        },
+        {
+          "text": "BUT...WILL SHE REALLY SIGN THE CONTRACT?",
+          "confidence": 0.951,
+          "text_ar": "لكن... هل ستوقع العقد حقاً؟"
+        },
+        {
+          "text": "TO AVOID TAKING RESPONSIBILITY, YOUR FAMILYDOESNTSIGNANYTHING EXCEPT FOR PERSONNEL MATTERS.",
+          "confidence": 0.962,
+          "text_ar": "لتجنب تحمل المسؤولية، لا توقع عائلتكم على أي شيء باستثناء المسائل المتعلقة بشؤون الموظفين."
+        },
+        {
+          "text": "IT IS A WHOPPING 6O0 MILLION DOLLARS.",
+          "confidence": 0.922,
+          "text_ar": "إنه مبلغ هائل يبلغ 600 مليون دولار."
+        },
+        {
+          "text": "THAT AMOUNT IS AN INCREDIBLE TEMPTATION FORSOMEONEWHO NEEDS MONEY.",
+          "confidence": 0.959,
+          "text_ar": "هذا المبلغ يعتبر إغراءً لا يُصدق لشخص بحاجة ماسة إلى المال."
+        },
+        {
+          "text": "SHE IS SELLING OFF 30 OF THOSE EXPENSIVE PAINTINGS ALL AT ONCE.",
+          "confidence": 0.948,
+          "text_ar": "إنها تبيع 30 لوحة من تلك اللوحات باهظة الثمن دفعة واحدة."
+        },
+        {
+          "text": "IT WOULD TAKE YEARS TO SELL THEM SAFELY ONE By ONE, SO SHE WILL NEVER BE ABLE TO REFUSE.",
+          "confidence": 0.823,
+          "text_ar": "سيستغرق بيعها واحدة تلو الأخرى بأمان سنوات عديدة، لذا فلن تتمكن أبداً من الرفض."
+        },
+        {
+          "text": "SHE DOES HER JOB PROPERLY.",
+          "confidence": 0.964,
+          "text_ar": "إنها تقوم بعملها على أكمل وجه."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "RUMOR HAS IT SHE IS A COMPETENTWOMAN IN THAT FIELD.",
+          "confidence": 0.954,
+          "text_ar": "تقول الشائعات إنها امرأة كفؤة للغاية في هذا المجال."
+        },
+        {
+          "text": "THEY TRIED TO SCOUT HER AS THE DIRECTOR AT THE NEW YORK ART CENTER,",
+          "confidence": 0.948,
+          "text_ar": "حاولوا استقطابها لتصبح مديرة في مركز نيويورك للفنون،"
+        },
+        {
+          "text": "BUT SHE HATED BEING TIED DOWN BY TRADITION AND CUSTOMS, SO SHE TOOK CHARGE OF A SMALL GALLERY SHE COULD RUN AS SHE PLEASED.",
+          "confidence": 0.942,
+          "text_ar": "لكنها كرهت أن تقيدها التقاليد والأعراف، لذا تولت إدارة صالة عرض صغيرة يمكنها إدارتها بالطريقة التي تحلو لها."
+        },
+        {
+          "text": "WHYDO I HAVE TO LISTEN TO YOU BRAG ABOUT THAT WOMAN?",
+          "confidence": 0.918,
+          "text_ar": "لماذا يتعين علي الاستماع إلى تباهيك بتلك المرأة؟"
+        },
+        {
+          "text": "I-I'M SORRY.",
+          "confidence": 0.939,
+          "text_ar": "أ-أنا آسف."
+        },
+        {
+          "text": "NO MATTER HOW MUCH SHE SHOWS OFF, SHE IS JUST A B*TCH WHO SELLS PAINTINGS.",
+          "confidence": 0.914,
+          "text_ar": "مهما أبدت من استعراض، فهي مجرد امرأة حقيرة تبيع اللوحات."
+        },
+        {
+          "text": "THAT GALLERY IS NOTHING MORE THAN A BROKER.",
+          "confidence": 0.959,
+          "text_ar": "تلك الصالة ليست سوى مجرد وسيط."
+        },
+        {
+          "text": "INDIVIDUALS ARE THE ONES BUYING OUR PAINTINGS.",
+          "confidence": 0.944,
+          "text_ar": "الأفراد هم من يشترون لوحاتنا."
+        },
+        {
+          "text": "WHY WOULD A GALLERY,WHOSE PURPOSE IS EXHIBITION, POUR 6OO MILLION DOLLARS INTO ARTWORKS THEY CAN'T EVEN HANG?",
+          "confidence": 0.858,
+          "text_ar": "لماذا قد تقوم صالة عرض غرضها الأساسي هو العرض، بضخ 600 مليون دولار في أعمال فنية لا يمكنهم حتى تعليقها؟"
+        },
+        {
+          "text": "IF SHE LOSES TRUST WITH HER RICH SPONSOR, HER MONEYMAKING IS OVER.",
+          "confidence": 0.938,
+          "text_ar": "إذا فقدت الثقة مع ممولها الثري، فقد انتهى أمر جنيها للأموال."
+        },
+        {
+          "text": "SHE KICKED AWAY THE DIRECTOR POSITION AT THE NEW YORK ART CENTER BECAUSE SHE WOULDN'T BE ABLE TO MAKE MONEY LIKE THIS.",
+          "confidence": 0.936,
+          "text_ar": "لقد ركلت منصب المدير في مركز نيويورك للفنون بعيداً لأنها لم تكن قادرة على جني الأموال بهذه الطريقة."
+        },
+        {
+          "text": "..WHAT SHOULD WE DO?",
+          "confidence": 0.909,
+          "text_ar": "..ما الذي ينبغي علينا فعله؟"
+        },
+        {
+          "text": "SHOULD WE CALL THE MAGICIAN ININSADONG AND GIVE HIM THE ORDER?",
+          "confidence": 0.95,
+          "text_ar": "هل نُهاتِف الساحر في إنسادونغ ونعطيه الأمر؟"
+        },
+        {
+          "text": "FORGET IT.WHEN IS HE GOING TO WORK ON 30 PIECES?",
+          "confidence": 0.917,
+          "text_ar": "انسا الأمر. متى سيتمكن من العمل على 30 قطعة؟"
+        },
+        {
+          "text": "HE WOULDN'T EVEN BE ABLE TO FINISH THEM THIS YEAR.",
+          "confidence": 0.953,
+          "text_ar": "لن يكون قادراً حتى على الانتهاء منها هذا العام."
+        },
+        {
+          "text": "CONTACT YOUNGGI AND TELL HIM TOPREPARE THE PRIVATE JET.",
+          "confidence": 0.963,
+          "text_ar": "اتصل بيونغجي وأخبره أن تجهز الطائرة الخاصة."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I THINK I WILL GET SOME FRESH AIRIN NEWYORK FORTHEFIRST TIME IN A WHILE.",
+          "confidence": 0.945,
+          "text_ar": "أعتقد أنني سأستنشق بعض الهواء النقي في نيويورك لأول مرة منذ فترة طويلة."
+        },
+        {
+          "text": "YES, MADAM CHAIRWOMAN.",
+          "confidence": 0.96,
+          "text_ar": "حاضر، سيدتي الرئيسة."
+        },
+        {
+          "text": "QIMANGA.C",
+          "confidence": 0.969,
+          "text_ar": ".."
+        },
+        {
+          "text": "SHOULD WE HANDLE THIS ONE THE SAME WAY AS WELL..?",
+          "confidence": 0.881,
+          "text_ar": "هل نتعامل مع هذا الأمر بالطريقة نفسها أيضاً..؟"
+        },
+        {
+          "text": "YES.OH, TELL SECRETARY SONG TO PREPARE A MEAL WITH THE CONSULATE GENERAL IN NEW YORK.",
+          "confidence": 0.943,
+          "text_ar": "نعم. أوه، أخبر السكرتير سونغ أن يُعد وجبة مع القنصل العام في نيويورك."
+        },
+        {
+          "text": "WE NEED THEIR HELP, SO I WILL HAVE TO SWALLOW MY PRIDE AND ASK A FAVOR.",
+          "confidence": 0.928,
+          "text_ar": "نحن بحاجة إلى مساعدتهم، لذا سأضطر إلى ابتلاع كبريائي وطلب معروف."
+        },
+        {
+          "text": "智O酒",
+          "confidence": 0.269,
+          "text_ar": ".."
+        },
+        {
+          "text": "I BELIEVE THERE WILL BE NO ISSUES WITH THE CONTENTS OF THE CONTRACT.",
+          "confidence": 0.937,
+          "text_ar": "أعتقد أنه لن تكون هناك أي مشكلات تتعلق بمحتويات العقد."
+        },
+        {
+          "text": "HOWEVER, WE HAVE ADDED A STRONGER CLAUSE, SO PLEASE VERIFY IT.",
+          "confidence": 0.952,
+          "text_ar": "مع ذلك، لقد أضفنا بنداً أكثر صرامة، لذا يُرجى التحقق منه."
+        },
+        {
+          "text": "DISCLOSURE OR NON-FULFILLMENT OF THE TRANSACTION DETATI△",
+          "confidence": 0.821,
+          "text_ar": "الإفصاح أو عدم الوفاء بتفاصيل الصفقة..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "DETHILS,",
+          "confidence": 0.913,
+          "text_ar": "التفاصيل،"
+        },
+        {
+          "text": "AND IF IT IS CONFIRMED THAT WENTWORTH ART GALLERY IS THE CAUSE, YOU MUST PAY TRIPLE THE PENALTY.",
+          "confidence": 0.942,
+          "text_ar": "وإذا تم تأكيد أن صالة ونتوورث للفنون هي السبب، فيجب عليكم دفع ضعف الغرامة ثلاث مرات."
+        },
+        {
+          "text": "TRIPLE THE PENALTY...",
+          "confidence": 0.957,
+          "text_ar": "ضعف الغرامة ثلاث مرات..."
+        },
+        {
+          "text": "BUT HE SAID I COULD CONCEDE EVERYTHING IF I COULD GET THE HANDWRITTEN SIGNATURE ON THE CONTRACT...",
+          "confidence": 0.939,
+          "text_ar": "لكنه قال إنه يمكنني التنازل عن كل شيء إن تمكنت من الحصول على التوقيع بخط اليد على العقد..."
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.999,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "BUT SHOULDN'T THIS CLAUSE APPLY TO BOTH PARTIES EQUALLY?",
+          "confidence": 0.936,
+          "text_ar": "ولكن ألا ينبغي أن ينطبق هذا البند على كلا الطرفين بالتساوي؟"
+        },
+        {
+          "text": "AH, RIGHT. BY THE WAY, IS THE ONE WHO WANTS THESE ARTWORKS ANINDIVIDUAL AND NOT THE GALLERY?",
+          "confidence": 0.936,
+          "text_ar": "آه، صحيح. بالمناسبة، هل الشخص الذي يريد هذه الأعمال الفنية هو فرد وليس صالة العرض؟"
+        },
+        {
+          "text": "IS WENTWORTH ART GALLERY JUST A PROXY..?",
+          "confidence": 0.878,
+          "text_ar": "هل صالة ونتوورث للفنون مجرد وكيل..؟"
+        },
+        {
+          "text": "THAT ISNT IN THE CONTRACT, SO I DON'T HAVE TO ANSWER, RIGHT?",
+          "confidence": 0.93,
+          "text_ar": "هذا ليس موجوداً في العقد، لذا لا يتعين علي الإجابة، أليس كذلك؟"
+        },
+        {
+          "text": "AH, MY APOLOGIES.",
+          "confidence": 0.926,
+          "text_ar": "آه، أعتذر."
+        },
+        {
+          "text": "THIS IS AN INSURANCE CERTIFICATE.",
+          "confidence": 0.947,
+          "text_ar": "هذه شهادة تأمين."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "IF THE DETAILS OF THE CONTRACT ARE DISCLOSED DUE TO AN ISSUE ON OUR END,",
+          "confidence": 0.939,
+          "text_ar": "إذا تم الإفصاح عن تفاصيل العقد بسبب مشكلة من جانبنا،"
+        },
+        {
+          "text": "OR IF WE VIOLATE EVENONE OF THE CONTRACT'S TERMS, WE WILL IMMEDIATELY PAY 3 TIMES THE TRANSACTION AMOUNT,",
+          "confidence": 0.923,
+          "text_ar": "أو إذا انتهكنا حتى بنداً واحداً من شروط العقد، فسندفع فوراً 3 أضعاف مبلغ الصفقة،"
+        },
+        {
+          "text": "WHICH IS 1.8 BILLION DOLLARS. THAT IS WHAT THIS CERTIFICATE IS FOR.",
+          "confidence": 0.963,
+          "text_ar": "وهو ما يبلغ 1.8 مليار دولار. هذا ما تهدف إليه هذه الشهادة."
+        },
+        {
+          "text": "WE WANT TO AVOID THE HASSLE OF GOING TO COURT OVER A BREACH OF CONTRACT.",
+          "confidence": 0.96,
+          "text_ar": "نحن نريد تجنب عناء الذهاب إلى المحكمة بسبب خرق العقد."
+        },
+        {
+          "text": "TO THINK THEY WOULD PREPARE TO THIS EXTENT...",
+          "confidence": 0.914,
+          "text_ar": "التفكير في أنهم سيستعدون إلى هذا الحد..."
+        },
+        {
+          "text": "CONSIDERING THE FINANCIAL STATE OF A SMALL GALLERY IN NEW YORK,",
+          "confidence": 0.946,
+          "text_ar": "بالنظر إلى الوضع المالي لصالة عرض صغيرة في نيويورك،"
+        },
+        {
+          "text": "WOULDN'T THIS LEVEL OF A SAFETY NET BE A GIVEN?",
+          "confidence": 0.949,
+          "text_ar": "ألا يُعد هذا المستوى من شبكة الأمان أمراً مفروغاً منه؟"
+        },
+        {
+          "text": "WE DON'T THINK YOU OR WENTWORTH GALLERYWOULD BE ABLE TO PAY A MASSIVE SUM OF 1.8 BILLION DOLLARS.",
+          "confidence": 0.91,
+          "text_ar": "نحن لا نعتقد أنك أو صالة ونتوورث ستكونان قادرتين على دفع مبلغ ضخم قدره 1.8 مليار دولار."
+        },
+        {
+          "text": "SO WE NEED A SOLID SAFETY NET. YOU UNDERSTAND, RIGHT?",
+          "confidence": 0.927,
+          "text_ar": "لذا نحن بحاجة إلى شبكة أمان متينة. أنتِ تفهمين ذلك، أليس كذلك؟"
+        },
+        {
+          "text": "AH, YES.",
+          "confidence": 0.942,
+          "text_ar": "آه، نعم."
+        },
+        {
+          "text": "OUR FOUNDATION'S CREDIT RATING IS WORLD-CLASS, SO IT DIDN'T COST MUCH TO GET THE INSURANCE.",
+          "confidence": 0.919,
+          "text_ar": "التصنيف الائتماني لمؤسستنا عالمي المستوى، لذا لم تكلفنا التغطية التأمينية الكثير."
+        },
+        {
+          "text": "IT WAS 5.4 MILLION DOLLARS, SO.. WE GOT IT CHEAP.",
+          "confidence": 0.881,
+          "text_ar": "لقد كانت 5.4 مليون دولار، لذا.. حصلنا عليها بثمن رخيص."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "IFIT IS 5.4 MILLIN DOLLARS EVEN WITH THE BACKGROUND OF SUNYANG GROUP, ONE OF KOREA'S LEADING CONGLOMERATES,",
+          "confidence": 0.917,
+          "text_ar": "إذا كانت 5.4 مليون دولار حتى مع خلفية مجموعة سونيانغ، إحدى الشركات الكبرى الرائدة في كوريا،"
+        },
+        {
+          "text": "OUR INSURANCE PREMIUM WILL EASILYEXCEED10MILLIONDOLLARS...",
+          "confidence": 0.929,
+          "text_ar": "فإن قسط التأمين الخاص بنا سيتجاوز بسهولة 10 ملايين دولار..."
+        },
+        {
+          "text": "COULD YOU EXCUSE ME FOR A MOMENT? I NEED TO MAKEAPHONE CALL...",
+          "confidence": 0.9,
+          "text_ar": "هل يمكنك المعذرة للحظة؟ أحتاج إلى إجراء مكالمة هاتفية..."
+        },
+        {
+          "text": "TAKE YOUR TIME.",
+          "confidence": 0.91,
+          "text_ar": "خذي وقتك."
+        },
+        {
+          "text": "I DON'T KNOW WHO THAT GIRL IS CALLING RIGHT NOW, BUT THE PERSONONTHE OTHER END IS THE SPONSOR.",
+          "confidence": 0.926,
+          "text_ar": "لا أعرف من تتصل به تلك الفتاة الآن، لكن الشخص الموجود على الطرف الآخر هو الممول."
+        },
+        {
+          "text": "I SEE. SHE SEEMS TO HAVE CAUGHT A GREAT SPONSOR.",
+          "confidence": 0.95,
+          "text_ar": "أرى ذلك. يبدو أنها ظفرت بممول رائع."
+        },
+        {
+          "text": "IN THE END, INIHEEND, A B*TCH WITHA PRETTY AB*TCH WITHA PRETTY FACE USES HER BODY AS UEEEHERBODYAC EACE A WEAPON RATHER THAN HER HEAD.",
+          "confidence": 0.494,
+          "text_ar": "في النهاية، المرأة الحقيرة ذات الوجه الجميل تستخدم جسدها سلاحاً بدلاً من عقلها."
+        },
+        {
+          "text": "HOW VULGAR.",
+          "confidence": 0.97,
+          "text_ar": "يا لها من حقارة."
+        },
+        {
+          "text": "EXCUSE ME.",
+          "confidence": 0.958,
+          "text_ar": "عذراً."
+        },
+        {
+          "text": "WE WILL GET THE INSURANCE RIGHT AWAY.",
+          "confidence": 0.97,
+          "text_ar": "سنحصل على التأمين فوراً."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "WE WILL DELIVER IT TO YOU BY TOMORROW AT THE LATEST.",
+          "confidence": 0.922,
+          "text_ar": "سنقوم بتسليمه إليكم غداً على أقصى تقدير."
+        },
+        {
+          "text": ":JP ： ： JHS",
+          "confidence": 0.614,
+          "text_ar": ".."
+        }
+      ]
+    }
+  ]
+}
