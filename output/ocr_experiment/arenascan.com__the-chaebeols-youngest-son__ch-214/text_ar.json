@@ -1,0 +1,762 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "214",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HE'LL BE OUR SNIPER.",
+          "confidence": 0.923,
+          "text_ar": "سيكون قناصنا."
+        },
+        {
+          "text": "A PROSECUTOR IN SEOUL CENTRAL'S CRIMINAL DIVISION.",
+          "confidence": 0.947,
+          "text_ar": "مدعٍ عام في القسم الجنائي بمكتب استئناف سيول."
+        },
+        {
+          "text": "EX-SPECIAL DIVISION, BUT GOT RUTGOT DAEION DEMOTED FOR RECKLESS ACTION.",
+          "confidence": 0.658,
+          "text_ar": "عضو سابق في الوحدة الخاصة، لكنه نُقل بسبب تصرفاته المتهورة."
+        },
+        {
+          "text": "HE'S DUE FOR RURAL TRANSFER IN THE NEXT RESHUFFLE,",
+          "confidence": 0.89,
+          "text_ar": "موعد نقله إلى الريف اقترب في التشكيل القادم،"
+        },
+        {
+          "text": "SO HE'S ALREADY CONSIDERING RESIGNING.",
+          "confidence": 0.636,
+          "text_ar": "لذا فهو يفكر بالفعل في الاستقالة."
+        },
+        {
+          "text": "REPORTERS ARE WAITING AND THE NEWSROOM PROMISED TO COOPERATE.",
+          "confidence": 0.922,
+          "text_ar": "الصحفيون ينتظرون وغرفة الأخبار وعدت بالتعاون."
+        },
+        {
+          "text": "叫可川",
+          "confidence": 0.469,
+          "text_ar": "دقيقة واحدة."
+        },
+        {
+          "text": "AT LEAST Z MINUTES OF AIRTIME, MAYBE COVER PAGE.",
+          "confidence": 0.89,
+          "text_ar": "ما لا يقل عن دقيقتين من وقت البث، وربما على صفحة الغلاف."
+        },
+        {
+          "text": "MEETING WITH THE PROSECUTOR GENERAL WON'T BE AN ISSUE?",
+          "confidence": 0.912,
+          "text_ar": "ألن يكون اللقاء مع المدعي العام مشكلة؟"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.958,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "HE HESITATED AT FIRST SINCE HE WANTED TO KNOW THE REASON FOR THE MEETING,",
+          "confidence": 0.919,
+          "text_ar": "تردد في البداية لأنه أراد معرفة سبب الاجتماع،"
+        },
+        {
+          "text": "BUT AGREED ONCE I SAID IT WAS FOR THE CHAIRMAN'S WILL.",
+          "confidence": 0.916,
+          "text_ar": "لكنه وافق بمجرد أن أخبرته أنه لأجل وصية الرئيس."
+        },
+        {
+          "text": "GOOD WORK.",
+          "confidence": 0.994,
+          "text_ar": "عمل جيد."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.945,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "WHAT'S THIS?",
+          "confidence": 0.989,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": "YOU WANTED TO DERAIL THE BOARD MEETING, SO I GOT THE LIST EARLY.",
+          "confidence": 0.944,
+          "text_ar": "أردت عرقلة اجتماع مجلس الإدارة، لذا حصلت على القائمة مبكرًا."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THESE ARE THE VICE CHAIRMEN'S AIDES TO BE APPOINTED.",
+          "confidence": 0.929,
+          "text_ar": "هؤلاء هم مساعدو نواب الرئيس المزمع تعيينهم."
+        },
+        {
+          "text": "YES, SOME OF THEM ARE QUITE IRRITATING.",
+          "confidence": 0.929,
+          "text_ar": "نعم، بعضهم مزعجون للغاية."
+        },
+        {
+          "text": "THIS INCIDENT HAS ITS UPSIDE.",
+          "confidence": 0.967,
+          "text_ar": "هذه الحادثة لها جانب إيجابي."
+        },
+        {
+          "text": "WE CAN SEE CLEARLY WHO'S WHO. LET'S CLEAN THE HOUSE.",
+          "confidence": 0.949,
+          "text_ar": "يمكننا أن نرى بوضوح من هو من. دعنا ننظف المكان."
+        },
+        {
+          "text": "RIGHT. WE'LL DISMISS THEM ALL...",
+          "confidence": 0.957,
+          "text_ar": "صحيح. سنقوم بفصلهم جميعًا..."
+        },
+        {
+          "text": "WE CAN'T JUST END IT WITH DISMISSAL.",
+          "confidence": 0.971,
+          "text_ar": "لا يمكننا إنهاء الأمر بمجرد الفصل."
+        },
+        {
+          "text": "WE NEED TO DISGRACE THEM SO BADLY...",
+          "confidence": 0.932,
+          "text_ar": "علينا أن نجلب لهم العار لدرجة..."
+        },
+        {
+          "text": "THAT ANYONE WOULD GRIMACE AT THEIR PLIGHT.",
+          "confidence": 0.985,
+          "text_ar": "أن يتجهم أي شخص عند رؤية مصيرهم."
+        },
+        {
+          "text": "TRANSFER THEM TO RURAL BRANCHES OR CUSTOMER CENTERS.",
+          "confidence": 0.864,
+          "text_ar": "انقلهم إلى الفروع الإقليمية أو مراكز العملاء."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.937,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "HAVE THE AUDIT TEAM DIG UP EVEN THEIR SMALLEST FAULTS.",
+          "confidence": 0.934,
+          "text_ar": "اجعل فريق التدقيق ينقب حتى عن أبسط أخطائهم."
+        },
+        {
+          "text": "EVEN IF RESIGN, THEY",
+          "confidence": 0.975,
+          "text_ar": "حتى لو استقالت،"
+        },
+        {
+          "text": "DON'T LET LEAVE WITH ANY DIGNITY.",
+          "confidence": 0.961,
+          "text_ar": "فلا تدعهم يرحلون بأي كرامة."
+        },
+        {
+          "text": "UNDERSTOOD.",
+          "confidence": 0.998,
+          "text_ar": "مفهوم."
+        },
+        {
+          "text": "1.BasicPersonalInformationoftheSubject AfliaoarooO Division3(formerly Special Division) Rank:SeniorProecutor(borderlinbtweenjuniorprosecuad depuysectionchie)currentlyasedovrorromotion JudicialTraiinInttu:Compless Dispotrc rankedasthemostavoidedcolieagueinteoraization 2.MajorCareer History and Reasonfor Demotion Formerlrooreciurroorse CeutralnvestigtionDepartentandtheSeoulCentralDistric ProsecutorsOiceSpeclal Division Ginedroooc conglomerate slush funds Background ofDemotion（Key Points）: nde seniorcutioleadrianiankfueiol businessheopenlydefieduppermanagementsdirectiveto \"tnicic abuse of authority. ActofacUllreoucs operationsandfledarrestwarntrequests. Proneroriuoi removedfromtScialDiviioanreedffciee totheCrminalDivionwherhenowhandlemostlte and minor complaint cases. Attached Documents: ocr r Reputation assessments of associates.",
+          "confidence": 0.465,
+          "text_ar": "السيرة الذاتية ومعلومات المدعي العام."
+        },
+        {
+          "text": "Resume",
+          "confidence": 0.999,
+          "text_ar": "السيرة الذاتية"
+        },
+        {
+          "text": "0 P(eE)",
+          "confidence": 0.229,
+          "text_ar": "معلومات."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "PROS",
+          "confidence": 0.985,
+          "text_ar": "الايجابيات"
+        },
+        {
+          "text": "WE FOUND A HUGE SLUSH FUND, VALUED AT OVERA WHOPPING 100 BILLION WON,",
+          "confidence": 0.908,
+          "text_ar": "لقد وجدنا صندوقًا ضخمًا للأموال السوداء، بقيمة تتجاوز 100 مليار وون،"
+        },
+        {
+          "text": "HIDDEN IN A BANK IN LABUAN, MALAYSIA, A WELL-KNOWN HAVEN FOR SECRET FUNDS.",
+          "confidence": 0.948,
+          "text_ar": "مخفيًا في بنك في لابوان بماليزيا، وهي ملاذ معروف للأموال السرية."
+        },
+        {
+          "text": "HERE ARE OUR FINDINGS SO FAR.",
+          "confidence": 0.974,
+          "text_ar": "إليك ما توصلنا إليه حتى الآن."
+        },
+        {
+          "text": "THE OWNER OF THE SLUSH FUND IS THE HEAD OF A MAJOR DOMESTIC CONGLOMERATE.",
+          "confidence": 0.923,
+          "text_ar": "صاحب صندوق الأموال السوداء هو رئيس تكتل محلي كبيراً."
+        },
+        {
+          "text": "NOT THE CORPORATION, BUT THE INDIVIDUAL.",
+          "confidence": 0.95,
+          "text_ar": "ليس الشركة، بل الشخص نفسه."
+        },
+        {
+          "text": "FUNDS WERE ALSO RAISED DIFFERENTLY FROM STANDARD EMBEZZLEMENT.",
+          "confidence": 0.967,
+          "text_ar": "كما جُمعت الأموال بشكل مختلف عن الاختلاس العادي."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "MONEYWAS SIPHONED OFF UNDER FAKE OVERSEAS COMPANYPURCHASES.",
+          "confidence": 0.957,
+          "text_ar": "تم تحويل الأموال تحت ستار عمليات شراء وهمية لشركات خارجية."
+        },
+        {
+          "text": "PROSECUTION IS ALREADY TRACKING SUPPORTING DOCUMENTS.",
+          "confidence": 0.953,
+          "text_ar": "الادعاء يتتبع بالفعل المستندات الداعمة."
+        },
+        {
+          "text": "THIS FUND WAS LIKELY CREATED DURING THE IMF CRISIS...",
+          "confidence": 0.886,
+          "text_ar": "من المحتمل أن يكون هذا الصندوق قد أُنشئ خلال أزمة صندوق النقد الدولي..."
+        },
+        {
+          "text": "WE'LL SUMMON THE ACCOUNT HOLDER SOON.",
+          "confidence": 0.961,
+          "text_ar": "سنستدعي صاحب الحساب قريبًا."
+        },
+        {
+          "text": "THERE'S A HIGH CHANCE THEY'LL BE TAKEN IN AS THE SUSPECT.",
+          "confidence": 0.959,
+          "text_ar": "هناك احتمال كبير بأن يتم اعتباره المشتبه به الرئيسي."
+        },
+        {
+          "text": "NEWS",
+          "confidence": 0.969,
+          "text_ar": "أخبار"
+        },
+        {
+          "text": "GRANDFATHER TOLD ME TO MAINTAIN HIS TIES WITH YOU, MR.PROSECUTOR GENERAL.",
+          "confidence": 0.935,
+          "text_ar": "طلب مني الجد الحفاظ على علاقاته معك، حضرة المدعي العام."
+        },
+        {
+          "text": "HE SAID TO CONTINUE THE RELATIONSHIP THAT STARTED WHEN YOU WERE A CHIEF PROSECUTOR.",
+          "confidence": 0.931,
+          "text_ar": "قال إن عليك مواصلة العلاقة التي بدأت عندما كنت رئيسًا للادعاء."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER UPDATE!",
+          "confidence": 0.945,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "HAHA..I DION'T KNOW HE WAS SO CONSIDERATE EVEN IN THE END.",
+          "confidence": 0.934,
+          "text_ar": "هاها.. لمร أكن أعلم أنه كان مدروساً إلى هذا الحد حتى النهاية."
+        },
+        {
+          "text": "IT'S KINDA EMBARRASSInG, BUT PLEASE TAKE GOOD CARE OF ME.",
+          "confidence": 0.86,
+          "text_ar": "إنه لأمر محرج نوعاً ما، لكن ارعني برعايتك من فضلك."
+        },
+        {
+          "text": "OH, PLEASE. DON'T SAY THAT.",
+          "confidence": 0.874,
+          "text_ar": "أرجوك، لا تقل ذلك."
+        },
+        {
+          "text": "YOU'VE GOT A BRIGHT FUTURE. ANY HELP I CAN GIVE IS AN HONOR.",
+          "confidence": 0.843,
+          "text_ar": "أمامك مستقبل مشرق. أي مساعدة يمكنني تقديمها هي شرف لي."
+        },
+        {
+          "text": "WHAT FUTURE HAVE I GOT?",
+          "confidence": 0.942,
+          "text_ar": "أي مستقبل لي؟"
+        },
+        {
+          "text": "# SERVICE",
+          "confidence": 0.236,
+          "text_ar": "خدمة"
+        },
+        {
+          "text": "PROSECUTOR GENERAL",
+          "confidence": 0.996,
+          "text_ar": "المدعي العام"
+        },
+        {
+          "text": "I'M AT THE TOP POST A PROSECUTOR CAN REACH. IT'S TIME TO RESIGN.",
+          "confidence": 0.924,
+          "text_ar": "أنا في أعلى منصبي يمكن للمدعي العام الوصول إليه. لقد حان وقت الاستقالة."
+        },
+        {
+          "text": "NOT AT ALL. THE JUSTICE MINISTER SAID A CABINET RESHUFFLE IS NEAR.",
+          "confidence": 0.96,
+          "text_ar": "إطلاقاً. قال وزير العدل إن تعديلاً وزارياً قريب."
+        },
+        {
+          "text": "THE MINISTER WILL BE INCLUDED TOO,",
+          "confidence": 0.949,
+          "text_ar": "سيتم تضمين الوزير أيضاً،"
+        },
+        {
+          "text": "AND IF YOU WISH, JOINING THE CABINET ISN'T IMPOSSIBLE.",
+          "confidence": 0.957,
+          "text_ar": "وإن رغبت، فالانضمام إلى الحكومة ليس مستحيلاً."
+        },
+        {
+          "text": "OH MY, BECOMING A MINISTER IS BEYOND ME...",
+          "confidence": 0.875,
+          "text_ar": "يا له من أمر، أن أصبح وزيراً يفوق طاقتي..."
+        },
+        {
+          "text": "YOU'VE ALREADY PASSED THE NATIONAL ASSEMBLY CONFIRMATION HEARINGS.",
+          "confidence": 0.977,
+          "text_ar": "لقد اجتزت بالفعل جلسات تثبيت الجمعية الوطنية."
+        },
+        {
+          "text": "THE BLUE HOUSE WOULD SEE YOU AS THEIR FIRST CHOICE.",
+          "confidence": 0.973,
+          "text_ar": "سيراك البيت الأزرق خيارهم الأول."
+        },
+        {
+          "text": "HAHA,HOW REASSURING.",
+          "confidence": 0.986,
+          "text_ar": "هاها، كم هذا مبعث للاطمئنان."
+        },
+        {
+          "text": "BUT,MR. PROSECUTOR GENERAL.",
+          "confidence": 0.977,
+          "text_ar": "ولكن، حضرة المدعي العام."
+        },
+        {
+          "text": "L CAN YOU LET THE 10O-BILLION-WON SLUSH FUND CASE",
+          "confidence": 0.065,
+          "text_ar": "هل يمكنك السماح بعرض قضية الأموال السوداء بقيمة 100 مليار وون"
+        },
+        {
+          "text": "AIRED ON TV SLIDE FOR NOW?",
+          "confidence": 0.949,
+          "text_ar": "على شاشات التلفاز في الوقت الحالي؟"
+        },
+        {
+          "text": "NEWS",
+          "confidence": 0.981,
+          "text_ar": "أخبار"
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.93,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "I KNEW IT! So IT WAS SUNyAnG- RELATED!",
+          "confidence": 0.759,
+          "text_ar": "كنت أعلم! إذن كان الأمر متعلقاً بسونيانغ!"
+        },
+        {
+          "text": "I DON'T KNOW. WE CAN'T SAY FOR SURE YET.",
+          "confidence": 0.95,
+          "text_ar": "لا أعلم. لا يمكننا الجزم بعد."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "THE FIRST PERSON TO ASK YOU TO BURY THIS CASE",
+          "confidence": 0.791,
+          "text_ar": "الشخص الأول الذي سيطلب منك طمس هذه القضية"
+        },
+        {
+          "text": "WILL PROBABLY BE THE OWNER OF THAT FUND.",
+          "confidence": 0.934,
+          "text_ar": "سيكون على الأرجح مالك ذلك الصندوق."
+        },
+        {
+          "text": "I'M REQUESTING YOU NOT TO BURY IT.",
+          "confidence": 0.969,
+          "text_ar": "أنا أطلب منك ألا تطمسها."
+        },
+        {
+          "text": "SOJUST LOOK THE OTHER WAY?",
+          "confidence": 0.877,
+          "text_ar": "إذن أتغاضى عن الأمر فقط؟"
+        },
+        {
+          "text": "YES. \"I CAN'T STOP THE PROSECUTOR-IN- CHARGE'S INVESTIGATION\". THAT'S ENOUGH.",
+          "confidence": 0.898,
+          "text_ar": "نعم. \"لا يمكنني إيقاف تحقيق المدعي المسؤول\". هذا يكفي."
+        },
+        {
+          "text": "ANDWHEN SHOULD I START BURYING IT?",
+          "confidence": 0.945,
+          "text_ar": "ومتى يجب أن أبدأ بطمسها؟"
+        },
+        {
+          "text": "I'LL CONTACT YOU ABOUT IT LATER.",
+          "confidence": 0.949,
+          "text_ar": "سأتواصل معك بخصوص ذلك لاحقاً."
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.992,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "PHEW..",
+          "confidence": 0.99,
+          "text_ar": "ففف.."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.951,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "YOU!",
+          "confidence": 0.76,
+          "text_ar": "أنت!"
+        },
+        {
+          "text": "AH, UNCLE.",
+          "confidence": 0.833,
+          "text_ar": "آه، عمه."
+        },
+        {
+          "text": "WHAT BRINGS YOU ALL THE WAY HERE?",
+          "confidence": 0.954,
+          "text_ar": "ما الذي أتى بك إلى هنا طوال هذه المسافة؟"
+        },
+        {
+          "text": "WHY WON'T YOU ANSWER MY CALLS?!",
+          "confidence": 0.912,
+          "text_ar": "لماذا لا ترد على مكالماتي؟!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "MOTOROLY 三 MISSEO CALLS(12) 日",
+          "confidence": 0.239,
+          "text_ar": "مكالمات فائتة"
+        },
+        {
+          "text": "Dlgltal 3de 6 mn$",
+          "confidence": 0.643,
+          "text_ar": "رقمي"
+        },
+        {
+          "text": "MENU 4hi pqrs",
+          "confidence": 0.722,
+          "text_ar": "قائمة"
+        },
+        {
+          "text": "2 abc 5 R -",
+          "confidence": 0.407,
+          "text_ar": "اتصال"
+        },
+        {
+          "text": "YOU CALLED? DID I SET IT ON VIBRATE? I DIDN'T HEAR IT. I WAS PACKING MY STUFF.",
+          "confidence": 0.857,
+          "text_ar": "اتصلت بي؟ هل جعلته على وضع الصامت؟ لم أسمعه. كنت أجمع أمتعتي."
+        },
+        {
+          "text": "WHAT? PACKING?",
+          "confidence": 0.998,
+          "text_ar": "ماذا؟ تجمع أمتعتك؟"
+        },
+        {
+          "text": "YES. I'M GONNA BE KICKED OUT NEXT WEEK, NO? WEER,NO?",
+          "confidence": 0.937,
+          "text_ar": "نعم. ألن يُطرد من هنا الأسبوع القادم؟"
+        },
+        {
+          "text": "SO,I'M PACKiNG UP.",
+          "confidence": 0.915,
+          "text_ar": "لذا، أنا أحزم أمتعتي."
+        },
+        {
+          "text": "ARE YOU MESSING WITH ME?",
+          "confidence": 0.936,
+          "text_ar": "أتمزح معي؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I DON'T SEE ANY PACKED STUFF!",
+          "confidence": 0.905,
+          "text_ar": "لا أرى أي أمتعة معبأة!"
+        },
+        {
+          "text": "I DON'T USE THIS OFFICE OFTEN, SO THAT'S ALL I FOUND.",
+          "confidence": 0.889,
+          "text_ar": "أنا لا أستخدم هذا المكتب كثيراً، لذا هذا كل ما وجدته."
+        },
+        {
+          "text": "bcba",
+          "confidence": 0.837,
+          "text_ar": "حسناً."
+        },
+        {
+          "text": "READAT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.965,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "AH, SORRY. LET'S TAKE A SEAT.",
+          "confidence": 0.943,
+          "text_ar": "آه، عذراً. لنقعد."
+        },
+        {
+          "text": "YOU SEEM TO HAVE A LOT TO SAY...",
+          "confidence": 0.93,
+          "text_ar": "تبدو وكأن لديك الكثير لتقوله..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "I SAW THE NEWS YOU BROADCASTED FOR ME.",
+          "confidence": 0.93,
+          "text_ar": "لقد رأيت الأخبار التي بثرتها من أجلي."
+        },
+        {
+          "text": "I SEE.",
+          "confidence": 0.951,
+          "text_ar": "أرى ذلك."
+        },
+        {
+          "text": "IT'D BE TROUBLE IF YOU MIsSeD It, no?",
+          "confidence": 0.799,
+          "text_ar": "ستكون مشكلة لو فاتتك، أليس كذلك؟"
+        },
+        {
+          "text": "YOU ARE DUMB?",
+          "confidence": 0.777,
+          "text_ar": "أأنت غبي؟"
+        },
+        {
+          "text": "DOILOOK DUMB?",
+          "confidence": 0.98,
+          "text_ar": "أأبدو أغبى بنظرك؟"
+        },
+        {
+          "text": "YOU WANNA BET IT ALL ON THIS? ARE YOU GONNA GIVE THEM THE LABUAN DOCUMENTS AND DIE WITH ME?",
+          "confidence": 0.913,
+          "text_ar": "أتريد المراهنة بكل شيء على هذا؟ هل ستعطيهم وثائق لابوان وتموت معي؟"
+        },
+        {
+          "text": "THAT'S HOW YOU'RE BLACKMAILING ME?",
+          "confidence": 0.952,
+          "text_ar": "هكذا تبتزني؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "DO YOU REALLY THINK I'M DUMB?",
+          "confidence": 0.885,
+          "text_ar": "أحقاً تعتقد أنني غبي؟"
+        },
+        {
+          "text": "THE PROSECUTOR ALREADY KNOWS HOW YOU MADE IT.",
+          "confidence": 0.922,
+          "text_ar": "المدعي العام يعلم بالفعل كيف صنعتها."
+        },
+        {
+          "text": "DID THEY REALLY FIND IT THROUGH THEIR INVESTIGATION?",
+          "confidence": 0.848,
+          "text_ar": "أوجدوها حقاً من خلال تحقيقهم؟"
+        },
+        {
+          "text": "YOU PROBABLY HELPED THEM.DO YOU STILL HAVE THE PROOF?",
+          "confidence": 0.891,
+          "text_ar": "ربما ساعدتهم. ألا يزال لديك الدليل؟"
+        },
+        {
+          "text": "OR...YOU COULD JUST BE BLUFFING.",
+          "confidence": 0.954,
+          "text_ar": "أو... ربما تكون تخدعنا فقط."
+        },
+        {
+          "text": "YOU KNOW YOU'RE JUST TRYING TO REASSURE YOURSELF. COME ON.",
+          "confidence": 0.831,
+          "text_ar": "أنت تعلم أنك تحاول فقط طمأنة نفسك. هيا."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER UPOATE!",
+          "confidence": 0.939,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "YOU SHOULD FACE THE REALITY.",
+          "confidence": 0.838,
+          "text_ar": "عليك مواجهة الواقع."
+        },
+        {
+          "text": "REALITY?",
+          "confidence": 0.993,
+          "text_ar": "الواقع؟"
+        },
+        {
+          "text": "YOU'RE THE ONE MISTAKEN HERE.",
+          "confidence": 0.91,
+          "text_ar": "أنت المخطئ هنا."
+        },
+        {
+          "text": "I CAN JUST PLAY DUMB EVEN IF THEY HAVE PROOF. YOU HAVE THE FUNDS...",
+          "confidence": 0.908,
+          "text_ar": "يمكنني التظاهر بالغباء حتى لو كان لديهم دليل. أنت من تملك الأموال..."
+        },
+        {
+          "text": "THEYLL INVESTIGATE YOU FIRST.",
+          "confidence": 0.944,
+          "text_ar": "سيحققون معك أولاً."
+        },
+        {
+          "text": "YOU'RE NAIVE IF YOU THINK THEYLL GET TO ME THROUGH YOU.",
+          "confidence": 0.935,
+          "text_ar": "أنت ساذج إن كنت تعتقد أنهم سيصلون إليّ من خلالك."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "THE INVESTIGATION WILL START AND END WITH YOU.",
+          "confidence": 0.954,
+          "text_ar": "التحقيق سيبدأ وينتهي معك."
+        },
+        {
+          "text": "YOU JUST DUG YOUR OWN GRAVE.",
+          "confidence": 0.945,
+          "text_ar": "لقد حفرت قبرك بنفسك."
+        },
+        {
+          "text": "COME ON, UNCLE. YOU KNOW",
+          "confidence": 0.942,
+          "text_ar": "هيا يا عمي. أنت تعلم"
+        },
+        {
+          "text": "I'MNOT THAT STUPID.",
+          "confidence": 0.936,
+          "text_ar": "أني لست بهذه الغباوة."
+        },
+        {
+          "text": "WHAT MAKES YOU THINK THEY'LL INVESTIGATE ME FIRST?",
+          "confidence": 0.883,
+          "text_ar": "ما الذي يجعلك تعتقد أنهم سيحققون معي أولاً؟"
+        },
+        {
+          "text": "I NEVER SAW THAT SLUSH FUND.",
+          "confidence": 0.959,
+          "text_ar": "لم أره قط ذلك الصندوق الأسود."
+        },
+        {
+          "text": "AH, LET ME CORRECT MYSELF. I DID SEE IT.",
+          "confidence": 0.923,
+          "text_ar": "آه، دعني أصحح كلامي. لقد رأيته بالفعل."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "BUT THAT MONEY IS QUIETLY SITTING UNTOUCHED IN THE BANK.",
+          "confidence": 0.955,
+          "text_ar": "لكن تلك الأموال راسخة بهدوء ودون مساس في البنك."
+        },
+        {
+          "text": "I NEVER WENT FOR IT, OR TRANSFERRED IT.",
+          "confidence": 0.878,
+          "text_ar": "لم أقترب منها أبداً، أو أنقلها."
+        },
+        {
+          "text": "THERE'S NO TRACE OF ME...",
+          "confidence": 0.912,
+          "text_ar": "ليس هناك أي أثر لي..."
+        },
+        {
+          "text": "ANYWHERE AT ALL.",
+          "confidence": 0.966,
+          "text_ar": "في أي مكان على الإطلاق."
+        },
+        {
+          "text": "READAT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.964,
+          "text_ar": "تابع القراءة على موقعنا لتحديثات أسرع!"
+        },
+        {
+          "text": "$\\fra{}{}$ 程 000",
+          "confidence": 0.132,
+          "text_ar": "صندوق"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "： :r}}$ ： ： JHS 0",
+          "confidence": 0.501,
+          "text_ar": "نهاية الفصل"
+        }
+      ]
+    }
+  ]
+}
