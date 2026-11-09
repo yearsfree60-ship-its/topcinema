@@ -1,0 +1,710 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "220",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THISISAWORKOFFICTION. ANYRESEMBLANCETOACTUALPERSONS ORGANIZATIONS,RELIGIONSPLACES,OR EVENTSISPURELYCOINCIDENTAL.",
+          "confidence": 0.953,
+          "text_ar": "هذا العمل من خيال المؤلف. أي تشابه بينه وبين أشخاص حقيقيين، أو منظمات، أو ديانات، أو أماكن، أو أحداث، هو محض صدفة."
+        },
+        {
+          "text": "TELL ME. WHY ARE YOU HERE?",
+          "confidence": 0.89,
+          "text_ar": "أخبرني. لماذا أنت هنا؟"
+        },
+        {
+          "text": "DO I NEED A REASON? I JUST CAME TO SAY HELLO AND SEE HOW YOU'RE DOING.",
+          "confidence": 0.912,
+          "text_ar": "هل أتاج سبباً؟ جئت فقط لألقي التحية وأطمئن على أحوالك."
+        },
+        {
+          "text": "YOU AREN'T THE TYPE TO CASUALLY DROP BY JUST TO SAY HELLO,UNLESS THE MAJOR SHAREHOLDERISHERETOCHECKUP ON THE SALARIED CHAIRMAN.",
+          "confidence": 0.94,
+          "text_ar": "لست من النوع الذي يأتي عرضاً لمجرد إلقاء التحية، إلا إذا كان المساهم الرئيسي هنا للاطمئنان على رئيس مجلس الإدارة المعين."
+        },
+        {
+          "text": "SOSPIT IT OUT.",
+          "confidence": 0.947,
+          "text_ar": "إذن، انطق بما لديك."
+        },
+        {
+          "text": "YOU KNOW ISUCCESSFULLYFENDEDOFF THE SUNYANG FINANCIAL GROUP'S BOARD OF DIRECTORS, RIGHT?",
+          "confidence": 0.939,
+          "text_ar": "أتعلم أنني نجحت في تصدي لمجلس إدارة مجموعة سونيانغ، أليس كذلك؟"
+        },
+        {
+          "text": "GOOD JOB. HAPPY? NOWTELL ME. WHAT IS IT?",
+          "confidence": 0.919,
+          "text_ar": "عمل رائع. أسعيد أنت؟ والآن أخبرني، ما الأمر؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT'S ABOUT MY GRANDMOTHER.",
+          "confidence": 0.929,
+          "text_ar": "الأمر يخص جدتي."
+        },
+        {
+          "text": "MADAM?",
+          "confidence": 0.994,
+          "text_ar": "السيدة الكبرى؟"
+        },
+        {
+          "text": "YES. SHE'S TRYING TO KICK ME OUT OF SUNYANG GROUP.",
+          "confidence": 0.944,
+          "text_ar": "نجل. إنها تحاول طردي من مجموعة سونيانغ."
+        },
+        {
+          "text": "SO SHE'S DEMANDING MY UNCLES TO DO IT",
+          "confidence": 0.906,
+          "text_ar": "لذا فهي تطالب عمتي وعمي بفعل ذلك."
+        },
+        {
+          "text": "THE TWO VICECHAIRMEN AREN'TEXACTLYGOODLITTLE BOYS WHO LISTEN TO THEIR MOTHER.",
+          "confidence": 0.937,
+          "text_ar": "نائبا الرئيس ليس من أولئك الفتيان الصغار المطيعين الذين يستمعون لكلام والدتهم."
+        },
+        {
+          "text": "DO YOU REALLY THINK THEY'D DOTHATJUST BECAUSE SHE THROWS A FIT?",
+          "confidence": 0.927,
+          "text_ar": "أتعتقد حقاً أنهما سيفعلان ذلك لمجرد أنها غضبت؟"
+        },
+        {
+          "text": "FROM WHAT IVE LOOKED INTO, MY GRANDMOTHER HAS A WEAPONSHE CAN USE TO CONTROL THEM.",
+          "confidence": 0.936,
+          "text_ar": "حسب ما تحريت، تمتلك جدتي سلاحاً يمكنها استخدامه للسيطرة عليهما."
+        },
+        {
+          "text": "I JUST DON'T KNOW IF SHE'S ALREADY WIELDED IT, OR IF SHE'S KEEPING ITHIDDENFORNOW.",
+          "confidence": 0.931,
+          "text_ar": "فقط لا أعرف إن كانت قد استخدمته بالفعل، أو أنها تخفيه للآن."
+        },
+        {
+          "text": "A WEAPON? WHAT KIND OF WEAPON?",
+          "confidence": 0.956,
+          "text_ar": "سلاح؟ أي نوع من الأسلحة؟"
+        },
+        {
+          "text": "MONEY.",
+          "confidence": 0.966,
+          "text_ar": "المال."
+        },
+        {
+          "text": "SHE'S THE MATRIARCH OF CONGLOMERATE. OF COURSE SHE HAS A LOT OF MONEY.",
+          "confidence": 0.944,
+          "text_ar": "إنها كبيرة عائلة تكتلية. وبالطبع لديها الكثير من المال."
+        },
+        {
+          "text": "BUT IT'S NOT ENOUGH TO BE USED AS A WEAPON.",
+          "confidence": 0.942,
+          "text_ar": "لكنه ليس كافياً ليستخدم كسلاح."
+        },
+        {
+          "text": "THOSE TWO SONS CONTROL MASSIVE AFFILIATES.",
+          "confidence": 0.908,
+          "text_ar": "ذانك الابنان يسيطران على شركات ضخمة تابعة."
+        },
+        {
+          "text": "THEY WONT BE SWAYED BY THEIR MOTHER'S PERSONAL FORTUNE.",
+          "confidence": 0.922,
+          "text_ar": "لن يتأثرا بثروة والدتهما الشخصية."
+        },
+        {
+          "text": "IT'S PROBABLY MORE THAN YOU CAN IMAGINE.",
+          "confidence": 0.938,
+          "text_ar": "الأمر ربما يفوق ما تتخيله."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "ENOUGH FOR YOU TO SAY IT'S MORE THAN YOU CAN IMAGINE?",
+          "confidence": 0.928,
+          "text_ar": "أبدرجة تجعلك تقول إنه يفوق ما أتخيله؟"
+        },
+        {
+          "text": "HOW LONG HAS IT BEEN SINCE MY GRANDMOTHER TOOK CHARGEOFTHECONGLOMERATE ARTS FOUNDATION?",
+          "confidence": 0.931,
+          "text_ar": "منذ متى تولت جدتي إدارة مؤسسة الفنون التكتلية؟"
+        },
+        {
+          "text": "SHE STARTED IT WHEN THE NEWMILITARY REGIME FORCED THEIR CULTURAL POLICIES ONUS..SOIT'SBEEN OVER TWENTY YEARS.",
+          "confidence": 0.927,
+          "text_ar": "بدأت ذلك عندما فرض النظام العسكري الجديد سياساته الثقافية علينا.. لذا فقد مضى أكثر من عشرين عاماً."
+        },
+        {
+          "text": "WHYBRING THAT UP ALL OF A SUDDEN?",
+          "confidence": 0.965,
+          "text_ar": "لماذا أثرت هذا الأمر فجأة؟"
+        },
+        {
+          "text": "WHAT ABOUT THE MONEYTHAT'SFLOWED INTO THE FOUNDATIONOVER THOSE TWO DECADES?",
+          "confidence": 0.954,
+          "text_ar": "ماذا عن الأموال التي تدفقت إلى المؤسسة طوال عقدين من الزمن؟"
+        },
+        {
+          "text": "IS THAT IT?ARE YOU ASKING BECAUSE YOU DON'T KNOW?",
+          "confidence": 0.927,
+          "text_ar": "أهذا كل شيء؟ أتسأل لأنك لا تعرف؟"
+        },
+        {
+          "text": "OF COURSE A MASSIVE AMOUNTOF MONEY WENT IN. WE POURED DONATIONS INTO IT FOR TAX EVASION.",
+          "confidence": 0.911,
+          "text_ar": "بالطبع دخلت أموال طائلة. لقد ضخمنا تبرعات فيها للتهرب الضريبي."
+        },
+        {
+          "text": "BUT AN ARTS FOUNDATIONCAN'TENGAGE IN FOR-PROFITACTIVITIES.",
+          "confidence": 0.946,
+          "text_ar": "لكن مؤسسة فنية لا يمكنها الانخراط في أنشطة هادفة للربح."
+        },
+        {
+          "text": "Shake",
+          "confidence": 0.996,
+          "text_ar": "*هز رأس*"
+        },
+        {
+          "text": "WELL, SHE MIGHT HAVE PULLED SOME STRINGSWITH LOOPHOLES, BUT THE RETURNS WOULD BE NEGLIGIBLE.",
+          "confidence": 0.934,
+          "text_ar": "حسناً، ربما تلاعبت ببعض الثغرات القانونية، لكن العوائد ستكون ضئيلة."
+        },
+        {
+          "text": "MONEY DOESN'T GROW UNLESS YOU INVEST IT.",
+          "confidence": 0.948,
+          "text_ar": "المال لا ينمو ما لم تستثمره."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "YOU'RE WRONG. SHE ACTUALLY MADE PHENOMENAL INVESTMENTS.",
+          "confidence": 0.944,
+          "text_ar": "أنت مخطئ. لقد قامت باستثمارات مذهلة في الواقع."
+        },
+        {
+          "text": "SHE SWEPT UP DOMESTIC ART AND ANTIQUES, NOT TO MENTION WORLD-CLASS MASTERPIECES.",
+          "confidence": 0.918,
+          "text_ar": "لقد جمعت الفنون والتحف المحلية، ناهيك عن التحف الفنية ذات الشهرة العالمية."
+        },
+        {
+          "text": "WHY ELSE WOULD SHE BE TREATED AS A VIP AT SOTHEBY'S IN LONDON AND CHRISXIE'S IN NEW YORK?",
+          "confidence": 0.87,
+          "text_ar": "وإلا لماذا تعامل كشخصية مهمة في دار سوذبيز بلندن وكريستيز بنيويورك؟"
+        },
+        {
+          "text": "ART HAS NO OBJECTIVEVALUE ON ITS OWN. ITONLY BECOMES A WEAPON WHEN YOU SELL IT AND TURN IT INTO CASH.",
+          "confidence": 0.909,
+          "text_ar": "الفن ليس له قيمة موضوعية بحد ذاته. إنه لا يصبح سلاحاً إلا عندما تبيعه وتحوله إلى نقد."
+        },
+        {
+          "text": "EXACTLY.",
+          "confidence": 0.985,
+          "text_ar": "بالضبط."
+        },
+        {
+          "text": "WHAT DO YOU MEAN..",
+          "confidence": 0.898,
+          "text_ar": "ما تقصده هو..."
+        },
+        {
+          "text": "THE PAINTINGS AT SUNYANGGALLERYAND THE ANTIQUES AT SUNYANG ARTS CENTER ARE ROTATEDOUTFOR EXHIBITIONTHREE OR FOUR TIMES A YEAR.",
+          "confidence": 0.952,
+          "text_ar": "اللوحات في معرض سونيانغ والتحف في مركز سونيانغ للفنون يتم استبدالها في المعارض ثلاث أو أربع مرات في السنة."
+        },
+        {
+          "text": "OF COURSE, THE OF COURSE,THE PIECES WITH ASTRONOMICAL PIECESWITHASTRONOMICAL VALUE ARE NEVERSHOWN TO THE GENERAL PUBLIC.",
+          "confidence": 0.87,
+          "text_ar": "بالطبع، القطع ذات القيمة الفلكية لا تُعرض أبداً على عامة الناس."
+        },
+        {
+          "text": "AND THE VAST MAJORITY OF THE ART IS KEPT IN THE FOUNDATION'S STORAGE VAULTS.",
+          "confidence": 0.945,
+          "text_ar": "والغالبية العظمى من الأعمال الفنية محفوظة في خزائن التخزين الخاصة بالمؤسسة."
+        },
+        {
+          "text": "THE ART SHE'S AMASSED OVER THE LAST 2O YEARS HAS EASILY MULTIPLIED INVALUE BYDOZENS OF TIMES. MANY PIECES HAVE SKYROCKETED BY HUNDREDS OR EVEN THOUSANDS OF TIMES.",
+          "confidence": 0.945,
+          "text_ar": "الفن الذي جمعته على مدار العشرين عاماً الماضية تضاعفت قيمته بسهولة عشرات المرات. والعديد من القطع قفزت مئات أو حتى آلاف المرات."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "BUT...",
+          "confidence": 0.897,
+          "text_ar": "لكن..."
+        },
+        {
+          "text": "NO ONE HAS SEEN THE ACTUAL PIECES.",
+          "confidence": 0.906,
+          "text_ar": "لم يكد أحد يرى القطع الفعلية."
+        },
+        {
+          "text": "ARE YOU IMPLYING.. ARE YOU IMPLyING.. THAT MADAM ACTUALLY SOLD OFF The ARt?",
+          "confidence": 0.757,
+          "text_ar": "أتقصد... أتقصد أن السيدة الكبرى باعت الفن حقاً؟"
+        },
+        {
+          "text": "MOST LIKELY.",
+          "confidence": 0.929,
+          "text_ar": "على الأرجح."
+        },
+        {
+          "text": "WHAT?!",
+          "confidence": 0.995,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "IT'S RARE TO SEE CHAIRMAN LEE HAK-JAE THIS GENUINELY SHOCKED.",
+          "confidence": 0.934,
+          "text_ar": "من النادر رؤية رئيس مجلس الإدارة لي هاكجاي مصدوماً هكذا حقاً."
+        },
+        {
+          "text": "THERE'S A HIGH PROBABILITY THAT MOST OF ThE WORkS CURRENTLY IN THE VAULT ARE FORGERIES.",
+          "confidence": 0.878,
+          "text_ar": "هناك احتمال كبير بأن معظم الأعمال الموجودة في الخزنة حالياً هي مقلدة."
+        },
+        {
+          "text": "SINCE THE MASTERPIECES AREN'T EXHIBITED ANYWAY, THEY MIGHT JUST BE ENTIRELY MISSING.",
+          "confidence": 0.938,
+          "text_ar": "بما أن التحف لا تُعرض على أي حال، فقد تكون مفقودة تماماً."
+        },
+        {
+          "text": "OUT OF THE INVENTORY, FRANCIS MEYER'S PORTRAIT OF FREUD TRIPTYCH SHOULD BE AMONG THE MOST EXPENSIVE.",
+          "confidence": 0.89,
+          "text_ar": "من بين المخزون، يجب أن تكون لوحة فرانسيس ماير ثلاثية بورتريه فرويد من بين الأغلى ثمناً."
+        },
+        {
+          "text": "SHE BOUGHT IT FOR A WHOPPING 90 BILLION WON.",
+          "confidence": 0.932,
+          "text_ar": "لقد اشترتها بمبلغ ضخم قدره 90 مليار وون."
+        },
+        {
+          "text": "HAVE YOU EVER SEEN IT?",
+          "confidence": 0.965,
+          "text_ar": "هل رأيتها من قبل؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": ".I DON'T KNOW THE FIRST THING ABOUT ART.",
+          "confidence": 0.801,
+          "text_ar": "..لا أعرف شيئاً عن الفن."
+        },
+        {
+          "text": "Sigh",
+          "confidence": 0.996,
+          "text_ar": "*تنهد*"
+        },
+        {
+          "text": "AK-JAE",
+          "confidence": 0.988,
+          "text_ar": "هاكجاي"
+        },
+        {
+          "text": "NEITHER DO I.",
+          "confidence": 0.958,
+          "text_ar": "ولا أنا."
+        },
+        {
+          "text": "BUT RIGHT NOW, THAT PIECE IS VALUED AT 150 BILLION WON.",
+          "confidence": 0.936,
+          "text_ar": "لكن في الوقت الحالي، تقدر قيمة تلك القطعة بـ 150 مليار وون."
+        },
+        {
+          "text": "SO YOU'RE SAYING... IT'S EITHER GONE OR SHE SWAPPED IT WITH A FAKE?",
+          "confidence": 0.939,
+          "text_ar": "إذن أنت تقول... إما أنها اختفت أو استبدلتها بأخرى مزيفة؟"
+        },
+        {
+          "text": "AND SHE SOLD OFF ALL THE ORIGINALS?",
+          "confidence": 0.92,
+          "text_ar": "وهل باعت جميع القطع الأصلية؟"
+        },
+        {
+          "text": "I'M ALMOST CERTAIN OF IT.",
+          "confidence": 0.965,
+          "text_ar": "أنا متأكد تقريباً من ذلك."
+        },
+        {
+          "text": "I HEARD IT STRAIGHT FROM THE SMUGGLERWHOHELPED SNEAK THE ORIGINALS OVERSEAS,",
+          "confidence": 0.941,
+          "text_ar": "لقد سمعت ذلك مباشرة من المهرب الذي ساعد في تهريب الأعمال الأصلية إلى الخارج،"
+        },
+        {
+          "text": "AND AFORGERYEXPERT KNOWN AS THE MAGICIAN OF INSA-DONG.\"",
+          "confidence": 0.942,
+          "text_ar": "وخبير التزوير المعروف بـ 'ساحر إنسادونغ'."
+        },
+        {
+          "text": "HE PERSONALLY CREATED THE FAKES, ONLY TO SEE ARTICLES POP UP LATER CLAIMING THE CONGLOMERATE ARTSFOUNDATIONPURCHASED THE ORIGINALS.",
+          "confidence": 0.951,
+          "text_ar": "لقد صنع المزور القطع المزيفة بنفسه، ليجد لاحقاً مقالات تنشر تدعي أن مؤسسة الفنون التكتلية اشترت الأعمال الأصلية."
+        },
+        {
+          "text": "IN EXTREME CASES, THEY'D BUY THE ORIGINAL ABROAD AND JUST BRING A FAKE BACK INTO THE COUNTRY.",
+          "confidence": 0.956,
+          "text_ar": "في حالات قصوى، كانوا يشترون الأعمال الأصلية في الخارج ويعيدون فقط نسخة مزيفة إلى البلاد."
+        },
+        {
+          "text": "THEN THEY'D IMMEDIATELY LIQUIDATE THE ORIGINAL OVERSEAS.",
+          "confidence": 0.963,
+          "text_ar": "ثم يقومون فوراً بتسييل الأصلية في الخارج."
+        },
+        {
+          "text": "IS THAT WHY MADAM SPENT SO MUCH TIME IN SWITZERLAND..?",
+          "confidence": 0.892,
+          "text_ar": "ألهذا السبب قضت السيدة الكثير من الوقت في سويسرا..؟"
+        },
+        {
+          "text": "YES,SHE MUST HAVE BEENTAKING CARE OF VARIOUS BUSINESS THERE.",
+          "confidence": 0.95,
+          "text_ar": "نعم، لا بد أنها كانت ترعى أعمالاً متنوعة هناك."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I'M CURRENTLY FIGURING OUT WHAT SHE DID WITH ALL THOSE FUNDS.",
+          "confidence": 0.951,
+          "text_ar": "أنا أعرف حالياً ما فعلته بكل تلك الأموال."
+        },
+        {
+          "text": "BUT IF SHE STASHEDIT IN BORROWED-NAME ACCOUNTS OR THE MYEONG-DONG UNDER- GROUND MARKET, IT'LL BE HARDTO TRACK DOWN.",
+          "confidence": 0.898,
+          "text_ar": "ولكن إذا خبأتها في حسابات بأسماء وهمية أو سوق ميونغ دونغ غير الرسمية، فسيكون من الصعب تتبعها."
+        },
+        {
+          "text": ".OR BORROWED-NAME STOCKS FOR CREATING A SLUSH FUND.",
+          "confidence": 0.928,
+          "text_ar": "..أو أسهم بأسماء وهمية لإنشاء أموال سرية."
+        },
+        {
+          "text": "STOCKS?",
+          "confidence": 0.994,
+          "text_ar": "أسهم؟"
+        },
+        {
+          "text": "YES.MADAM DEFINITELY HOARDED STOCKS.",
+          "confidence": 0.987,
+          "text_ar": "نعم. لقد خزنت السيدة الأسهم بالتأكيد."
+        },
+        {
+          "text": "NO MATTER HOW MUCH MONEY SHE BLOWS, THE AFFILIATES ALWAYS COVER HER EXPENSES. SHE'S NOT SOMEONE WHO NEEDS CASH.",
+          "confidence": 0.944,
+          "text_ar": "مهما بلغت الأموال التي تبذرها، فالشركات التابعة تغطي نفقاتها دائماً. إنها ليست شخصاً يحتاج إلى النقود."
+        },
+        {
+          "text": "THEN I REALLY CAN'T JUST SIT BACK AND WATCH.",
+          "confidence": 0.97,
+          "text_ar": "إذن لا يمكنني حقاً الجلوس ومشاهدة هذا."
+        },
+        {
+          "text": "WHAT ARE YOU GOING TO DO?",
+          "confidence": 0.953,
+          "text_ar": "ما الذي تنوي فعله؟"
+        },
+        {
+          "text": "I ALREADY TOLD MY GRANDFATHER.",
+          "confidence": 0.953,
+          "text_ar": "لقد أخبرت جدي بالفعل."
+        },
+        {
+          "text": "I TOLD HIM I'D MAKE SURE GRANDMOTHER SPENDS HER TWILIGHT YEARS IN SWITZERLAND.",
+          "confidence": 0.924,
+          "text_ar": "أخبرته أنني سأحرص على أن تقضي جدتي أيام شيخوختها في سويسرا."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "OF COURSE, I'LL HAVE TO STRIP HER OF EVERY PENNY FIRST.",
+          "confidence": 0.91,
+          "text_ar": "بالطبع، سيتعين علي تجريدها من كل قرش أولاً."
+        },
+        {
+          "text": "SO SHE DOESN'T BECOME A PROBLEM FOR US LATER.",
+          "confidence": 0.945,
+          "text_ar": "لكلا لا تصبح مشكلة بالنسبة لنا لاحقاً."
+        },
+        {
+          "text": "MADAM IS YOUR BIOLOGICAL GRANDMOTHER.",
+          "confidence": 0.963,
+          "text_ar": "السيدة هي جدتك البيولوجية."
+        },
+        {
+          "text": "DON'T BETRAY YOUR OWN FLESH AND BLOOD.",
+          "confidence": 0.925,
+          "text_ar": "لا تخن لحمك ودمك."
+        },
+        {
+          "text": "YOU'LL BE DAMNED.",
+          "confidence": 0.961,
+          "text_ar": "ستلعن."
+        },
+        {
+          "text": "RIGHT. IT'SONLY FITTING THAT A VILLAINEVENTUALLYSUFFERS DIVINE PUNISHMENTANDDIES.",
+          "confidence": 0.945,
+          "text_ar": "صحيح. من المناسب تماماً أن يعاني الشرير في النهاية من العقاب الإلهي ويموت."
+        },
+        {
+          "text": "BUT I...",
+          "confidence": 0.945,
+          "text_ar": "لكنني..."
+        },
+        {
+          "text": "I'VE ALREADY BEEN DAMNED.",
+          "confidence": 0.913,
+          "text_ar": "لقد لُعِنت بالفعل."
+        },
+        {
+          "text": "I TOLD YOU, I'M GOING TO LET HER SPEND HER REMAINING YEARS PEACEFULLYINA SCENIC SWISS VILLA.",
+          "confidence": 0.936,
+          "text_ar": "أخبرتك، سأدعها تقضي ما تبقى من سنوات عمرها بسلام في فيلا سويسرا ذات المناظر الخلابة."
+        },
+        {
+          "text": "THAT MAKES ME A BETTER GRANDSON THAN HER ACTUAL CHILDREN.",
+          "confidence": 0.952,
+          "text_ar": "هذا يجعلني حفيداً أفضل من أطفالها الحقيقيين."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "AMERICAN FANTASY.",
+          "confidence": 0.997,
+          "text_ar": "خيال أمريكي."
+        },
+        {
+          "text": "ARE YOU REALLY SURE ABOUT THIS?",
+          "confidence": 0.891,
+          "text_ar": "أمتأكد حقاً من هذا؟"
+        },
+        {
+          "text": "ONE WRONG STEP AND THIS COULD BE FATAL.",
+          "confidence": 0.969,
+          "text_ar": "خطوة واحدة خاطئة قد تكون مميتة."
+        },
+        {
+          "text": "YOU'RE EXPOSING THE FLAWS OF THE FAMILY'S SENIOR...",
+          "confidence": 0.918,
+          "text_ar": "أنت تفضح عيوب الكبار في العائلة..."
+        },
+        {
+          "text": "IF YOUR GRANDMOTHER'S NAME LEAKS OUT, IT WON'T JUST DISGRACE THE FAMILY,",
+          "confidence": 0.939,
+          "text_ar": "إذا تسرب اسم جدتك، فلن يقتصر الأمر على جلب العار للعائلة فحسب،"
+        },
+        {
+          "text": "IT WILL TARNISH CONGLOMERATE'S NAME AS WELL. NAMEAEUEI",
+          "confidence": 0.698,
+          "text_ar": "بل سيلوث اسم التكتل أيضاً."
+        },
+        {
+          "text": "THE NAME CONGLOMERATE IS ALREADY SO FILTHY THAT EVERYONE POINTS FINGERS AT IT.",
+          "confidence": 0.912,
+          "text_ar": "اسم التكتل قذر بالفعل لدرجة أن الجميع يشيرون إليه بأصابع الاتهام."
+        },
+        {
+          "text": "I'M NOT AFRAID OF GETTING A LITTLE MORE DUST ON A SIGNBOARD THAT'S ALREADY FALLEN INTO THE MUD.",
+          "confidence": 0.927,
+          "text_ar": "لست خائفاً من إضافة القليل من الغبار إلى لافتة سقطت بالفعل في الوحل."
+        },
+        {
+          "text": "RIGHT. I UNDERSTAND.",
+          "confidence": 0.992,
+          "text_ar": "حسناً. أدرك ذلك."
+        },
+        {
+          "text": "BUT WHY IS THAT DAMN FAMILY OF YOURS SO OBSESSED WITH STOCKS?",
+          "confidence": 0.916,
+          "text_ar": "لكن لماذا عائلتك الملعونة مهوسة جداً بالأسهم؟"
+        },
+        {
+          "text": "Sigh",
+          "confidence": 0.996,
+          "text_ar": "*تنهد*"
+        },
+        {
+          "text": "TELL ME ABOUT IT.",
+          "confidence": 0.973,
+          "text_ar": "لا تسألني."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "WE DESERVE ALL THE CRITICISM WE GET.",
+          "confidence": 0.938,
+          "text_ar": "نحن نستحق كل الانتقادات التي نتلقاها."
+        },
+        {
+          "text": "BECAUSE I'M ONE OF THEM, TOO.",
+          "confidence": 0.905,
+          "text_ar": "لأنني واحد منهم أيضاً."
+        },
+        {
+          "text": "Jeez... you're ruthless, kid.",
+          "confidence": 0.86,
+          "text_ar": "يا له من... أنت قاسي القلب، أيها الفتى."
+        },
+        {
+          "text": "SORRY TO KEEP YOU WAITING.",
+          "confidence": 0.939,
+          "text_ar": "آسف لإنتظارك."
+        },
+        {
+          "text": "BUT WHAT BRINGS YOU HERE SO SUDDENLY?",
+          "confidence": 0.975,
+          "text_ar": "لكن ما الذي أتى بك إلى هنا فجأة؟"
+        },
+        {
+          "text": "RACHEL",
+          "confidence": 0.997,
+          "text_ar": "راشيل"
+        },
+        {
+          "text": "OUR FANTASY BOY SAYS HE WANTS TO GET INTO THE ART SCENE THIS TIME, SO YOU'LL HAVE TO HELP HIM OUT, RACHEL.",
+          "confidence": 0.914,
+          "text_ar": "فتى الخيال لدينا يقول إنه يريد دخول عالم الفن هذه المرة، لذا عليك مساعدته يا راشيل."
+        },
+        {
+          "text": "WHAT? ART?",
+          "confidence": 0.987,
+          "text_ar": "ماذا؟ فن؟"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.959,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "WHY MAKE THINGS SO COMPLICATED? JUST BUY THEM.",
+          "confidence": 0.946,
+          "text_ar": "لماذا تجعل الأمور معقدة للغاية؟ اشترها فقط."
+        },
+        {
+          "text": "SOMEONE OF YOUR CALIBER, HOWARD, IS MORE THANQUALIFIED TO BE A SUPER COLLECTOR.",
+          "confidence": 0.945,
+          "text_ar": "شخص بمستواك يا هوارد، مؤهل تماماً ليكون جامعاً ممتازاً."
+        },
+        {
+          "text": "JUST BUY A MANSION IN NEW YORK AND FILL IT WITH PAINTINGS.",
+          "confidence": 0.954,
+          "text_ar": "فقط اشتر قصراً في نيويورك واملأه باللوحات."
+        },
+        {
+          "text": "WHY GO THROUGH THE WHYGOTHROUGHTHE HASSLE OF ACQUIRING A HASSLEOEACQUIRINGA GALLERY?",
+          "confidence": 0.94,
+          "text_ar": "لماذا عناء الاستحواذ على صالة عرض؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "BECAUSE THE PEOPLE WHOOWN THE PAINTINGS I WANT WOULD NEVER SELL THEM TO ME.",
+          "confidence": 0.961,
+          "text_ar": "لأن الأشخاص الذين يمتلكون اللوحات التي أردها لن يبيعوها لي أبداً."
+        },
+        {
+          "text": "SO I NEED TO USE A PROXY... PLEASE FIND A SUITABLE ONE FOR ME.",
+          "confidence": 0.866,
+          "text_ar": "لذا أحتاج إلى استخدام وكيل... من فضلك جد لي واحداً مناسباً."
+        },
+        {
+          "text": "YOU KNOW A LOT OF RICH PEOPLE, RACHEL. AND THOSE RICH PEOPLE NATURALLY COLLECT ART.",
+          "confidence": 0.964,
+          "text_ar": "أنت تعرفين الكثير من الأثرياء يا راشيل. وهؤلاء الأثرياء يجمعون الفنون بشكل طبيعي."
+        },
+        {
+          "text": "IT SHOULDN'T BE HARD TO GET AN INTRODUCTION TO A DECENT, INTRODUCTION TOA DECENT. MID-SIZED GALLERY THROUGH YOUR CONNECTIONS.",
+          "confidence": 0.938,
+          "text_ar": "لن يكون صعباً الحصول على مقدمة لصالة عرض لائقة ومتوسطة الحجم من خلال معارفك."
+        },
+        {
+          "text": "I MEAN, THAT'S TRUE, BUT...",
+          "confidence": 0.925,
+          "text_ar": "أعني، هذا صحيح، ولكن..."
+        },
+        {
+          "text": "Hmm...",
+          "confidence": 0.931,
+          "text_ar": "همم..."
+        },
+        {
+          "text": "COME ON NOW, DON'T BE TOO NOSY AND JUST HELP HIM OUT.",
+          "confidence": 0.927,
+          "text_ar": "أيا يكن، لا تكوني فضولية للغاية وساعديه فقط."
+        },
+        {
+          "text": "WHO KNOWS? MAYBE THE PAINTINGS HOWARD BUYS WILL SKYROCKET IN VALUE.",
+          "confidence": 0.921,
+          "text_ar": "من يدري؟ ربما ترتفع قيمة اللوحات التي يشتريها هوارد بشكل جنوني."
+        },
+        {
+          "text": "TURNING EVERYTHING HE TOUCHES INTO GOLD IS HOWARD'S SPECIALTY, RIGHT? EH? HAHA.",
+          "confidence": 0.948,
+          "text_ar": "تحويل كل ما يلمسه إلى ذهب هو تخصص هوارد، أليس كذلك؟ هه، هاها."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "ALRIGHT. THIS SEEMS LIKE A PERSONAL MATTER FOR YOU, HOWARD, SO I WON'T PRY ANYFURTHER.",
+          "confidence": 0.907,
+          "text_ar": "حسناً. يبدو أن هذا أمر شخصي بالنسبة لك يا هوارد، لذا لن أتدخل أكثر."
+        },
+        {
+          "text": "I'LL FIND YOU THE PERFECT GALLERY.",
+          "confidence": 0.877,
+          "text_ar": "سأجد لك المعرض المثالي."
+        },
+        {
+          "text": "： :JP ： JHS",
+          "confidence": 0.606,
+          "text_ar": "..."
+        }
+      ]
+    }
+  ]
+}
