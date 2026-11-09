@@ -1,0 +1,604 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "224",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "MADAM LEE PHIL-OK HERSELF?",
+          "confidence": 0.983,
+          "text_ar": "السيدة لي فيل-وك بنفسها؟"
+        },
+        {
+          "text": "YES, WHAT THE DIRECTOR INVESTIGATED AND SUSPECTED HAS BECOME REALITY.",
+          "confidence": 0.947,
+          "text_ar": "نجل، لقد أصبح ما حققه المدير واشتبه به حقيقة واقعة."
+        },
+        {
+          "text": "THE SCALEFAREXCEEDS WHAT WE EXPECTED,SO THE AMOUNT ISPROBABLY UNIMAGINABLE.",
+          "confidence": 0.943,
+          "text_ar": "حجم النطاق يتجاوز ما توقعناه، لذا فالبلغ لا يُصدق على الأرجح."
+        },
+        {
+          "text": "SO IS IT A 6OO BILLIONWON SMUGGLING OPERATION THIS TIME?",
+          "confidence": 0.916,
+          "text_ar": "إذن، أهي عملية تهريب بقيمة 600 مليار وون هذه المرة؟"
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.972,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "CHIEF,NOMATTER HOWMUCH THIS IS ABOUT FINDINGMADAM LEE'S WEAKNESS,",
+          "confidence": 0.954,
+          "text_ar": "أيها المدير، بغض النظر عن مدى أهمية إيجاد نقطة ضعف السيدة لي،"
+        },
+        {
+          "text": "600 BILLIONWON IS TOO MUCH.",
+          "confidence": 0.921,
+          "text_ar": "مبلغ 600 مليار وون كثير حقًا."
+        },
+        {
+          "text": "NO MATTERHOW VAST THE SLUSH FUND THE CHAIRMANLEFT FOR YOU IS,",
+          "confidence": 0.944,
+          "text_ar": "مهما كان الصندوق السري الذي تركه لك الرئيس ضخمًا،"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THE HEMORRHAGE IS TOO GREAT.",
+          "confidence": 0.95,
+          "text_ar": "فهذا النزيف كبير للغاية."
+        },
+        {
+          "text": "ITHOUGHT HE FELT UNEASY BECAUSE WE WERE ATTACKING GRANDMOTHER,",
+          "confidence": 0.923,
+          "text_ar": "ظننت أنه يشعر بالقلق لأننا نتهاجم الجدة،"
+        },
+        {
+          "text": "BUT WAS HE ACTUALLY JUST WORRIED ABOUT MYMONEY?",
+          "confidence": 0.936,
+          "text_ar": "ولكن أكان قلقًا بشأن أموالي حقًا؟"
+        },
+        {
+          "text": "DIRECTOR.",
+          "confidence": 0.995,
+          "text_ar": "أيها المدير."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.978,
+          "text_ar": "نعم."
+        },
+        {
+          "text": "DO YOU CALL A FEW DROPS OF BLOOD FROM A NEEDLE PRICK A HEMORRHAGE?",
+          "confidence": 0.946,
+          "text_ar": "أَتُسمي قطرات دم من وخزة إبرة نزيفًا؟"
+        },
+        {
+          "text": "PARDON? WHAT DO YOU..?",
+          "confidence": 0.87,
+          "text_ar": "عفوًا؟ ماذا تقصد...؟"
+        },
+        {
+          "text": "600 BILLION WON IS ONLY THAT MUCH TO ME.",
+          "confidence": 0.883,
+          "text_ar": "600 مليار وون ليست سوى هذا القدر البسيط بالنسبة لي."
+        },
+        {
+          "text": "I HAVE A LOT OF MONEY.IF THIS HAD TURNED INTO A MONEYFIGHT, THE CHAIRMAN'S SEAT OF SUNYANG GROUP WOULD HAVE ALREADY BEEN MINE.",
+          "confidence": 0.917,
+          "text_ar": "أمتلك الكثير من المال. ولو تحول هذا إلى صراع أموال، لكان مقعد رئيس مجموعة سونيانغ قد صار ملكي منذ زمن."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "I AM GOING THROUGH ALL THIS TROUBLE BECAUSE THERE ARE MANY STOCKS THAT CANNOT BE BOUGHT WITH MONEY.",
+          "confidence": 0.94,
+          "text_ar": "أنا أتعرض لهذا العناء كله لأن هناك العديد من الأسهم التي لا يمكن شراؤها بالمال."
+        },
+        {
+          "text": "AND THIS ISN'T MONEY GRANDFATHER LEFT ME TO USE ON THINGS LIKE THIS.",
+          "confidence": 0.906,
+          "text_ar": "وهذا ليس المال الذي تركه لي جدي لأستخدمه في أمور كهذه."
+        },
+        {
+          "text": "THAT MONEYWILL BE USED STRICTLY TO SOLIDIFY MY POSITION SOLIDIFY My POS11ION IN KOREA.",
+          "confidence": 0.865,
+          "text_ar": "ذلك المال سيُستخدم حصريًا لترسيخ مكانتي وترسيخ موقعي في كوريا."
+        },
+        {
+          "text": "A FEW DAYS LATER.",
+          "confidence": 0.951,
+          "text_ar": "بعد بضعة أيام."
+        },
+        {
+          "text": "THEY MUST BE DOING THE APPRAISALS RIGHT NOW..",
+          "confidence": 0.915,
+          "text_ar": "لا بد أنهم يقومون بعمليات التقييم الآن..."
+        },
+        {
+          "text": "EVEN THOUGH IWANT TO RUN TO THEGALLERYANDCHECK THE PAINTINGS MYSELF,",
+          "confidence": 0.924,
+          "text_ar": "مع أنني أود الراكض إلى الصالة وفحص اللوحات بنفسي،"
+        },
+        {
+          "text": "I HAVE NO CHOICE BUT TO WAIT IN THIS HOTEL.",
+          "confidence": 0.922,
+          "text_ar": "إلا أنه ليس لدي خيار سوى الانتظار في هذا الفندق."
+        },
+        {
+          "text": "ACALL CAME IN. 自",
+          "confidence": 0.684,
+          "text_ar": "جاءتني مكالمة."
+        },
+        {
+          "text": "HOW DID IT GO?!",
+          "confidence": 0.955,
+          "text_ar": "كيف سارت الأمور؟!"
+        },
+        {
+          "text": "HOWARD,IDON'TKNOW HOW TO EXPRESS MYGRATITUDE FOR GIVING ME THE CHANCE TO SEE SUCH MASTERPIECES IN PERSON.",
+          "confidence": 0.894,
+          "text_ar": "هوارد، لا أعرف كيف أعبر عن امتنانك لمنحي فرصة رؤية هذه التحف الفنية بنفسي."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "ARE THEY GENUINE?",
+          "confidence": 0.967,
+          "text_ar": "أهي أصلية؟"
+        },
+        {
+          "text": "YES, THAT IS THE UNANIMOUS OPINION OF ALL THE EXPERTS PRESENT.",
+          "confidence": 0.916,
+          "text_ar": "نعم، هذا هو رأي جميع الخبراء الحاضرين بالإجماع."
+        },
+        {
+          "text": "WE STILL HAVE TO GO THROUGH A FEWMORE SCIENTIFIC PROCEDURES, BUT THEY ARE DEFINITELY GENUINE.",
+          "confidence": 0.914,
+          "text_ar": "ما زال يتعين علينا إجراء بعض الإجراءات العلمية الأخرى، لكنها أصلية قطعًا."
+        },
+        {
+          "text": "THANK YOU FOR YOUR HARD WORK.",
+          "confidence": 0.936,
+          "text_ar": "شكراً لجهودكم الشاقة."
+        },
+        {
+          "text": "ASSISTANT MANAGER KIM,PLEASE GET THE OFFICIAL ARTWORK LIST FROM THE CONGLOMERATE ARTS FOUNDATIONRIGHTNOW AND EMAIL IT TOME.",
+          "confidence": 0.929,
+          "text_ar": "مدير الأعمال المساعد كيم، من فضلك احصل على قائمة الأعمال الفنية الرسمية من مؤسسة التكتل الفنية فوراً وأرسلها لي عبر البريد الإلكتروني."
+        },
+        {
+          "text": "I WANTED TO DEPOSIT THE MONEY RIGHT AWAY AND FINISH THE ILLEGAL TRANSACTION,",
+          "confidence": 0.936,
+          "text_ar": "أردت إيداع المال فوراً وإنهاء المعاملة غير القانونية،"
+        },
+        {
+          "text": "BUTICANNOTCRATE A SUSPICIOUS SITUATION SOI HAVE TO WAIT TWO MONTHS.",
+          "confidence": 0.871,
+          "text_ar": "ولكن لا يمكنني افتعال وضع مشبوه لذا يتعين علي الانتظار لشهرين."
+        },
+        {
+          "text": "THE PAINTINGS HAVE BEEN CONFIRMED AS GENUINE.",
+          "confidence": 0.966,
+          "text_ar": "تم تأكيد أن اللوحات أصلية."
+        },
+        {
+          "text": "..CHIEF,",
+          "confidence": 0.903,
+          "text_ar": "..أيها المدير،"
+        },
+        {
+          "text": "IT SEEMS THE SMUGGLING UTILIZED THE MINISTRY OF FOREIGN AFFAIRS.",
+          "confidence": 0.96,
+          "text_ar": "يبدو أن عملية التهريب استغلت وزارة الخارجية."
+        },
+        {
+          "text": "THE MINISTRY OF FOREIGN AFFAIRS?",
+          "confidence": 0.997,
+          "text_ar": "وزارة الخارجية؟"
+        },
+        {
+          "text": "YES. THERE WERE TWO TRANSPORT TEAMS. THE EMPLOYEES OF SUNYANG'S UNHNO NEWYORKBRANCHANDTHE NEWYORK BRANCHANDTHE CONSULATE GENERAL INNEWYORK.",
+          "confidence": 0.799,
+          "text_ar": "نعم. كان هناك فريقا نقل. موظفو فرع نيويورك التابع لسونيانغ والقنصلية العامة في نيويورك."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "IT TOOK A BIT LONGER BECAUSE I WAS CHECKING THEIR RESIDENCES.",
+          "confidence": 0.965,
+          "text_ar": "استغرق الأمر وقتاً أطول قليلاً لأنني كنت أتفقد مساكنهم."
+        },
+        {
+          "text": "THE MINISTRY OF FOREIGN AFFAIRS...",
+          "confidence": 0.92,
+          "text_ar": "وزارة الخارجية..."
+        },
+        {
+          "text": "MY GRANDMOTHER IS TRULY REMARKABLE.",
+          "confidence": 0.923,
+          "text_ar": "جدتي مذهلة حقاً."
+        },
+        {
+          "text": "THIS MEANS THERE IS SOMEONE AMONG GRAND- IS SOMEONE AMONGGRAND- MOTHER'S SUBORDINATES WITH MOTHER'S SUBORDINATESWITH CONNECTTONSTOTHEMTNTSTRY CONNECTIONS TO THE MINISTRY OF FOREIGN AFFAIRS.",
+          "confidence": 0.937,
+          "text_ar": "هذا يعني أن هناك شخصاً بين تابعي الجدة له صلات بوزارة الخارجية."
+        },
+        {
+          "text": "IF WE JUST FIND OUT WHO THAT IS,THIS FIGHT WILL BE OVER.",
+          "confidence": 0.927,
+          "text_ar": "إذا اكتشفنا من هو فحسب، ستنتهي هذه المعركة."
+        },
+        {
+          "text": "PERHAPS.SOMEONE OF THAT LEVEL WOULD BE A CLOSE AIDE...",
+          "confidence": 0.922,
+          "text_ar": "ربما. شخص بهذا المستوى سيكون مساعداً مقرباً..."
+        },
+        {
+          "text": "THEY WOULD KNOW WHERE MADAM'S POCKET MONEY IS HIDDEN.",
+          "confidence": 0.954,
+          "text_ar": "سيعرف أين تختبئ مصروفات السيدة الشخصية."
+        },
+        {
+          "text": "I WILL GO MEET THE CONSULATE EMPLOYEES.",
+          "confidence": 0.919,
+          "text_ar": "سأذهب لقاء موظفي القنصلية."
+        },
+        {
+          "text": "DON'T YOU THINK IT WILL BE EASIER ONCE WE FIGURE OUT HOWMUCHTHOSE BASTARDS KNOW ANDWHAT LEVEL THE PERSON IN CHARGE HERE IS AT?",
+          "confidence": 0.926,
+          "text_ar": "ألا تعتقد أنه سيكون أسهل بمجرد أن نعرف مدى معرفة أولئك الأذناب وما هو مستوى الشخص المسؤول هنا؟"
+        },
+        {
+          "text": "I WILL PREPARE THE CARROT",
+          "confidence": 0.991,
+          "text_ar": "سأجهز الجزرة"
+        },
+        {
+          "text": "SO YOU USE THE STICK, DIRECTOR.",
+          "confidence": 0.886,
+          "text_ar": "لذا استخدم أنت العصا أيها المدير."
+        },
+        {
+          "text": "FOR BASTARDS LIKETHEM,THESTICK IS ENOUGH.",
+          "confidence": 0.948,
+          "text_ar": "بالنسبة لأمثالهم، العصا وحدها تكفي."
+        },
+        {
+          "text": "JUSTKEEPING THEIRNECKS ATTACHEDIS PLENTYOFACARROT.",
+          "confidence": 0.971,
+          "text_ar": "مجرد إبقاء رقابهم متصلة بأجسادهم جزرة كافية."
+        },
+        {
+          "text": "HE IS A TRULY RELIABLE PERSON.",
+          "confidence": 0.944,
+          "text_ar": "إنه شخص يمكن الاعتماد عليه حقاً."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HE DOES HIS JOB WELL AND EVEN KNOWS HOW TO SAVE MONEY.",
+          "confidence": 0.932,
+          "text_ar": "إنه يؤدي عمله جيداً بل ويحسن توفير المال."
+        },
+        {
+          "text": "I WILL HAVE TO MAKE SURE HE GETS A VERY GENEROUS SEVERANCE PACKAGE.",
+          "confidence": 0.881,
+          "text_ar": "سأحرص على حصوله على مكافأة نهاية خدمة سخية جداً."
+        },
+        {
+          "text": "馨智LOE",
+          "confidence": 0.392,
+          "text_ar": "هناك أمر تحتاج للتحقيق فيه بتجنيد جميع معارفك في يوييدو وميونغ-دونغ، بما في ذلك أوراق سونيانغ المالية."
+        },
+        {
+          "text": "THERE IS SOMETHING YOU NEED TO LOOK INTO BY MOBILIZING ALL YOUR CONNECTIONS IN YEOUIDO ANDMYEONG-DONG,INCLUDING SUNYANG SECURITIES.",
+          "confidence": 0.936,
+          "text_ar": "تفضل بالتحدث."
+        },
+        {
+          "text": "PLEASE SPEAK.",
+          "confidence": 0.984,
+          "text_ar": "سيقومون على الأرجح بشراء أسهم مجموعة سونيانغ بشكل مكثف تحت أسماء مستعارة متعددة،"
+        },
+        {
+          "text": "THEY WILL LIKELYINTENSIVELY PURCHASE SUNYANGGROUP STOCKS UNDER MULTIPLE NAMES,",
+          "confidence": 0.957,
+          "text_ar": "خاصة أسهم الإلكترونيات، والصناعات الثقيلة، والبناء، والإنشاءات، والتجارة."
+        },
+        {
+          "text": "ESPECIALLY STOCKS FOR ELECTRONICS, HEAVY INDUSTRIES,CONSTRUCTION, CST, AND TRADING.",
+          "confidence": 0.963,
+          "text_ar": "عفوًا؟ ماذا تقصد! هل يحاول شخص ما القيام بعملية استحواذ عدائية؟"
+        },
+        {
+          "text": "nトススト 几 7",
+          "confidence": 0.51,
+          "text_ar": "لا. الهدف هو تأمين الأسهم فحسب."
+        },
+        {
+          "text": "PARDON? WHAT DO YOU MEAN! IS SOMEONE ATTEMPTING A HOSTILE MSA?",
+          "confidence": 0.922,
+          "text_ar": "بما أن أموالاً تزيد عن 600 مليار وون ستتحرك، فسوف يبرز ذلك بالتأكيد."
+        },
+        {
+          "text": "NO. THE GOAL IS SIMPLY TO SECURE SHARES.",
+          "confidence": 0.956,
+          "text_ar": ""
+        },
+        {
+          "text": "SINCE FUNDS OVER 6OO BILLION WON WILL BE MOVING, IT WILL DEFINITELY STAND OUT.",
+          "confidence": 0.96,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "6OO BILLION WON? WHO IN THE WORLD..?",
+          "confidence": 0.892,
+          "text_ar": "600 مليار وون؟ من في العالم...؟"
+        },
+        {
+          "text": "I AM TELLING YOU TO FIND THAT OUT.",
+          "confidence": 0.957,
+          "text_ar": "أقول لك أن تكتشف ذلك."
+        },
+        {
+          "text": "AH, YES.",
+          "confidence": 0.978,
+          "text_ar": "أه، حاضر."
+        },
+        {
+          "text": "MULTIPLE BORROWED-NAME ACCOUNTS WILL BE MOVING.",
+          "confidence": 0.968,
+          "text_ar": "ستتحرك حسابات متعددة بأسماء مستعارة."
+        },
+        {
+          "text": "WE HAVE TO TRACK THOSE BASTARDS DOWN, WILLTHATBE POSSIBLE?",
+          "confidence": 0.96,
+          "text_ar": "علينا تعقب هؤلاء الأوغاد، فهل سيكون ذلك ممكناً؟"
+        },
+        {
+          "text": "I HAVE TO UNCOVER ILLEGAL TRANSACTIONS USING ILLEGAL METHODS.",
+          "confidence": 0.945,
+          "text_ar": "عليّ كشف المعاملات غير القانونية باستخدام طرق غير قانونية."
+        },
+        {
+          "text": "BECAUSE MOBILIZING CONNECTIONS AT EACHSECURITIES FIRMTOOBTAINTHEPERSONAL INFORMATION OF THE ACCOUNT HOLDERS MASS-PURCHASING SUNYANGGROUP STOCKS ISCLEARLYILLEGAL.",
+          "confidence": 0.947,
+          "text_ar": "لأن حشد المعارف في كل شركة وساطة للحصول على المعلومات الشخصية لأصحاب الحسابات الذين يشترون أسهم مجموعة سونيانغ بكميات ضخمة هو أمر غير قانوني قطعاً."
+        },
+        {
+          "text": "NO PROBLEM.",
+          "confidence": 0.985,
+          "text_ar": "لا مشكلة."
+        },
+        {
+          "text": "IT'S NOT LIKE WE'RE LOOKING FOR SMALL-TIME RETAIL INVESTORS; THIS IS A TRANSACTIONINVOLVING 60O BILLION WON, ISN'T IT?",
+          "confidence": 0.943,
+          "text_ar": "نحن لا نبحث عن صغار المستثمرين الأفراد؛ هذه صفقة تضم 600 مليار وون، أليس كذلك؟"
+        },
+        {
+          "text": "EVEN IF IT'S SPREAD ACROSS A HUNDRED PEOPLE, THAT'S 6 BILLION EACH, AND ALL IN SUNYANG GROUP STOCKS.",
+          "confidence": 0.927,
+          "text_ar": "حتى لو توزعت على مئة شخص، فهذا يبلغ 6 مليارات لكل منهم، وكلها في أسهم مجموعة سونيانغ."
+        },
+        {
+          "text": "AT THIS LEVEL, IT WILL UNCONDITIONALLY STAND OUT. I WILL ACQUIRE THE ENTIRE LIST.",
+          "confidence": 0.955,
+          "text_ar": "بهذا المستوى، ستبرز بلا شك. سأحصل على القائمة كاملة."
+        },
+        {
+          "text": "YOU MUST FIND THEM.",
+          "confidence": 0.914,
+          "text_ar": "يجب عليك إيجادهم."
+        },
+        {
+          "text": "THEN I WILL MAKE ALL THOSE STOCKS MINE.",
+          "confidence": 0.969,
+          "text_ar": "حينها سأجعل كل تلك الأسهم ملكي."
+        },
+        {
+          "text": "JUST LEAVE IT TO ME.",
+          "confidence": 0.905,
+          "text_ar": "اترك الأمر لي وحدي."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "GRANDMOTHER CAN'T",
+          "confidence": 0.943,
+          "text_ar": "الجدة لا تستطيع"
+        },
+        {
+          "text": "AB已蟹 2 48 0n04.15 19 11 8 e 2000.0212",
+          "confidence": 0.192,
+          "text_ar": "إنشاء حسابات جديدة بأسماء مستعارة من أجل مبلغ 600 مليون دولار فقط."
+        },
+        {
+          "text": "wod #Ue2 司 taea W",
+          "confidence": 0.215,
+          "text_ar": "ستستغل بالتأكيد الحسابات الحالية بأسماء مستعارة،"
+        },
+        {
+          "text": "白 2000.08.10电云 2000.09.120 2000.09.25#",
+          "confidence": 0.176,
+          "text_ar": "وهذه الحسابات لن تحوي الـ 600 مليار وون فحسب، بل والأسهم التي جمعتها سراً مسبقاً أيضاً."
+        },
+        {
+          "text": "Meoa wpe M0#8 wuea 9 2000.1011 #分 2000.10、10证",
+          "confidence": 0.15,
+          "text_ar": "جدتي"
+        },
+        {
+          "text": "CREATE NEW BORROWED-NAME ACCOUNTS JUST FOR THE 600 MILLION DOLLARS.",
+          "confidence": 0.952,
+          "text_ar": "كم سيخرج إن نفضت جيوبها؟"
+        },
+        {
+          "text": "SHE WILL DEFINITELYUTILIZEEXISTING BORROWED-NAME ACCOUTS,",
+          "confidence": 0.935,
+          "text_ar": "كان هذا بيتاً أعتاد تردده مراراً وتكراراً..."
+        },
+        {
+          "text": "AND THOSE ACCOUNTS WILL HOLD NOT JUST THE 6OO BILLION WON, BUT ALSO STOCKS SHE HAS ALREADY SECRETLY SWEPT UP.",
+          "confidence": 0.932,
+          "text_ar": "أملت أن يظل سيد هذا البيت جدي إلى الأبد،"
+        },
+        {
+          "text": "MY GRANDMOTHER",
+          "confidence": 0.964,
+          "text_ar": "لكن الواقع أنه تحول إلى منزل السيدة"
+        },
+        {
+          "text": "HOW MUCH WILL COME OUT IF I SHAKE OUT HER POCKETS?",
+          "confidence": 0.946,
+          "text_ar": ""
+        },
+        {
+          "text": "THIS WAS A HOUSE IUSED TO FREQUENT SO OFTEN...",
+          "confidence": 0.901,
+          "text_ar": ""
+        },
+        {
+          "text": "I HOPED THE MASTER OF THIS HOUSE WOULD FOREVER BE MY GRANDFATHER,",
+          "confidence": 0.944,
+          "text_ar": ""
+        },
+        {
+          "text": "BUT THE REALITY IS THAT IT HAS TURNED INTO MADAM",
+          "confidence": 0.967,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "LEE PHIL-OK'S HOUSE.",
+          "confidence": 0.964,
+          "text_ar": "لي فيل-وك."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "YOU LET JUST ANYONE IN WITHOUT MY PERMISSION?",
+          "confidence": 0.975,
+          "text_ar": "أتسمحون لأي شخص بالدخول دون إذن مني؟"
+        },
+        {
+          "text": "ARE YOU OUT OF YOUR MINDS?!",
+          "confidence": 0.975,
+          "text_ar": "أجننتم أم ماذا؟!"
+        },
+        {
+          "text": "WHO DO YOU THINK YOU ARE, BARGING IN HERE LIKE THIS?",
+          "confidence": 0.938,
+          "text_ar": "من تظنون أنفسكم لتقتحموا المكان هكذا؟"
+        },
+        {
+          "text": "GET OUT OF HERE THIS INSTANT?!",
+          "confidence": 0.978,
+          "text_ar": "اخرجا من هنا في هذه اللحظة!"
+        },
+        {
+          "text": "I HAVE SOMETHING TO TELL YOUQUIETLY, SO LET'S MOVE TO THE STUDY.",
+          "confidence": 0.947,
+          "text_ar": "لدي ما أقوله لك بهدوء، فلننتقل إلى دراسة."
+        },
+        {
+          "text": "I HAVE NOTHING TO SAY TO YOU.GET OUT RIGHT NOW?!",
+          "confidence": 0.952,
+          "text_ar": "ليس لدي ما أقوله لك. اخرج الآن!"
+        },
+        {
+          "text": "I AMA CLIENT WHO BOUGHT A WHOPPING 600 MILLIONDOLLARSWORTH OF GOODS FROM YOU,",
+          "confidence": 0.941,
+          "text_ar": "أنا زبون اشترى منك بضائع بقيمة 600 مليون دولار كاملة،"
+        },
+        {
+          "text": "SO SURELY YOU CAN AT LEAST OFFER ME A CUP OF TEA, RIGHT?",
+          "confidence": 0.932,
+          "text_ar": "ألا يمكنك على الأقل تقديم كوب من الشاي لي إذن؟"
+        },
+        {
+          "text": "WHAT ON EARTH...",
+          "confidence": 0.939,
+          "text_ar": "ما هذا بحق..."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "OHDEAR.DIDISTARTLE HERTOO MUCH,ESPECIALLYATHERAGE",
+          "confidence": 0.895,
+          "text_ar": "يا للهول. أأفزعتها أكثر من اللازم، لا سيما في مثل سنها؟"
+        },
+        {
+          "text": "IT WOULD BE A BIG PROBLEM IF SHE COLLAPSED.",
+          "confidence": 0.91,
+          "text_ar": "ستكون مشكلة كبيرة إن انهار صحتُها."
+        },
+        {
+          "text": "I NEED TO FIND THE STOCKS IN THE BORROWED-NAME ACCOUNS",
+          "confidence": 0.858,
+          "text_ar": "أحتاج لإيجاد الأسهم في الحسابات المستعارة"
+        },
+        {
+          "text": "ANDTHE MONEY SHE STASHEDAWAY..",
+          "confidence": 0.929,
+          "text_ar": "والأموال التي أخفتها..."
+        },
+        {
+          "text": "： JHS",
+          "confidence": 0.867,
+          "text_ar": "جي إتش إس"
+        }
+      ]
+    }
+  ]
+}
