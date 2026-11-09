@@ -1,0 +1,788 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "225",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": []
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "EVEN THOUGH I HAD MANY CONVERSATIONS HERE WITH GRANDFATHER,",
+          "confidence": 0.925,
+          "text_ar": "مع أنني أجريت العديد من المحادثات هنا مع جدي،"
+        },
+        {
+          "text": "NOW ITFEELS UNFAMILIAR, WITH THINGSI'VENEVERSEEN EVERYWHERE.",
+          "confidence": 0.94,
+          "text_ar": "يبدو المكان مألوفًا بشكل غريب، مع وجود أشياء لم أكن أراها في كل مكان."
+        },
+        {
+          "text": "NOW THAT GRANDMOTHER HAS TAKEN OVER,",
+          "confidence": 0.957,
+          "text_ar": "الآن بعد أن تولت الجدة زمام الأمور،"
+        },
+        {
+          "text": "IT FEELS AS THOUGH GRANDFATHER'S PRESENCE HAS DISAPPEARED.",
+          "confidence": 0.974,
+          "text_ar": "يبدو وكأن حضور جدي قد اختفى تمامًا."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.959,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "WE'RE ABOUT TO HAVE AN IMPORTANT CONVERSATION, SO, WHY DON'T YOU SIT FACING ME?",
+          "confidence": 0.898,
+          "text_ar": "نحن على وشك إجراء محادثة مهمة، فلماذا لا تجلس وتواجهني؟"
+        },
+        {
+          "text": "I DIDN'T COME HERE TO REPORT TO A SUPERIOR.",
+          "confidence": 0.82,
+          "text_ar": "لم آتِ إلى هنا لأقدم تقريرًا لرئيس في العمل."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "智4OE",
+          "confidence": 0.375,
+          "text_ar": "..."
+        },
+        {
+          "text": ".. WHAT IS IT YOU WANT TO SAY?",
+          "confidence": 0.942,
+          "text_ar": ".. ما الذي تريد قوله؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": []
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HAVEN'T YOU ALREADY GUESSED?",
+          "confidence": 0.991,
+          "text_ar": "ألم تخمن ذلك بنفسك بالفعل؟"
+        },
+        {
+          "text": "YOU BRAT!",
+          "confidence": 0.963,
+          "text_ar": "أيها الأحمق!"
+        },
+        {
+          "text": "HOWDARE YOU ACT SO INSOLENT?!",
+          "confidence": 0.967,
+          "text_ar": "كيف تعتاد على التصرف بهذه الوقاحة؟!"
+        },
+        {
+          "text": "IWONDER HOWLONG THAT STUBBORN PRIDE OF HERS WILL LAST.",
+          "confidence": 0.955,
+          "text_ar": "أتساءل كم من الوقت سيصمد كبرياؤها العنيف ذاك."
+        },
+        {
+          "text": "WHO IN THE WORLD COULD EVEN HAVE EVER IMAGINED IT?",
+          "confidence": 0.946,
+          "text_ar": "من في العالم كان يمكنه حتى أن يتخيل ذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "THAT THE LADY OF THE GREAT SUNYANG GROUPWAS SELLINGOFF ARTWORK ANDFILLED THE GALLERY WITH FORGERIES.",
+          "confidence": 0.953,
+          "text_ar": "أن سيدة مجموعة سونيانغ العظيمة كانت تبيع الأعمال الفنية وتملأ المعرض باللوحات المزيفة."
+        },
+        {
+          "text": "THIS WILL BECOME A TRULY ENORMOUS SCANDAL.",
+          "confidence": 0.963,
+          "text_ar": "سيصبح هذا فضيحة ضخمة حقًا."
+        },
+        {
+          "text": "HMPH! I CAN'T EVEN UNDERSTAND WHAT NONSENSE YOU'RE TALKING ABOUT.",
+          "confidence": 0.89,
+          "text_ar": "تبًّا! لا يمكنني حتى فهم الهراء الذي تتحدث عنه."
+        },
+        {
+          "text": "YOU STILl HAVEN'T CAUGHT ON?",
+          "confidence": 0.868,
+          "text_ar": "ألم تدرك الأمر بعد؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "OR ARE YOU PRETENDING NOT TO KNOW?",
+          "confidence": 0.953,
+          "text_ar": "أم أنك تتظاهر بعدم معرفة شيء؟"
+        },
+        {
+          "text": "THAT THE DEAL WITH THE NEW YORK ART GALLERY WAS A TRAP THAT I SET.",
+          "confidence": 0.942,
+          "text_ar": "أن الصفقة مع معرض نيويورك للفنون كانت فخًّا نصبته أنا."
+        },
+        {
+          "text": "BETTE PORTER WAS JUST A PUPPET DANCING TO MY TUNE.",
+          "confidence": 0.935,
+          "text_ar": "كانت بيتي پورتر مجرد دمية ترقص على أنغامي."
+        },
+        {
+          "text": "AND THE 600 MILLION DOLLARS FOR THE ART CAME OUT OF MY POCKET.",
+          "confidence": 0.888,
+          "text_ar": "وأن مبلغ الستمائة مليون دولار المخصص للفن قد خرج من جيبي الخاص."
+        },
+        {
+          "text": "GRANDMOTHER, IT'S ALREADY OVER. IN MY HANDS, I HAVE THE SECRET CONTRACT YOU SIGNED YOURSELF.",
+          "confidence": 0.89,
+          "text_ar": "يا جدتي، لقد انتهى الأمر بالفعل. أملك في يدي العقد السري الذي وقعتِ عليه بنفسك."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I EVEN REMEMBER YOUR SECRET ACCOUNT NUMBER.",
+          "confidence": 0.949,
+          "text_ar": "حتى إنني أتذكر رقم حسابك السري."
+        },
+        {
+          "text": "AT A TIME LIKE THIS, INSTEAD OF FEIGNING IGNORANCE AND PRETENDING NOT TO KNOW,",
+          "confidence": 0.953,
+          "text_ar": "في وقت كهاذا، بدلًا من التظاهر بالجهل والادعاء بعدم المعرفة،"
+        },
+        {
+          "text": "READAT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.933,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "THE FIRST PRIORITY IS TO FIND OUT WHAT THE OTHER SIDE WANTS.",
+          "confidence": 0.923,
+          "text_ar": "تكون الأولوية الأولى هي معرفة ما يريده الطرف الآخر."
+        },
+        {
+          "text": "S-SHUTUP!",
+          "confidence": 0.987,
+          "text_ar": "أ-أخرس!"
+        },
+        {
+          "text": "WHERE DID YOU HEAR SUCH A RIDICULOUS RUMOR TO COME HERE AND THREATEN ME WITH?",
+          "confidence": 0.946,
+          "text_ar": "من أين سمعت مثل هذه الشائعة السخيفة لتأتي وتهددني بها؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "YOU SOLD OFF FOUNDATION-OWNED ASSETS WORTH HUNDREDS OF BILLIONS OF WON,SO THAT'S EMBEZZLEMENT,",
+          "confidence": 0.919,
+          "text_ar": "لقد بعتِ أصولاً تابعة للمؤسسة بقيمة مئات المليارات من الوون، وهذا يعد اختلاسًا،"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "SMUGGLED WORKS OF ART OUT INTO THE UNITED STATES,",
+          "confidence": 0.936,
+          "text_ar": "وقمتِ تهريب أعمال فنية إلى الولايات المتحدة،"
+        },
+        {
+          "text": "AND SET UP OVERSEAS SHELL COMPANIES AND SIPHONED OFF MONEY, WHICH IS A VIOLATION OF THE FOREIGN EXCHANGE TRANSACTION ACT.",
+          "confidence": 0.943,
+          "text_ar": "وأنشأتِ شركات وهمية خارجية وقمتِ بتحويل الأموال، وهو ما يعد انتهاكًا لقانون معاملات النقد الأجنبي."
+        },
+        {
+          "text": "ICAN GUARANTEE IT- AT THIS POInT, YOU WON'T NEED TO GO SHOPPING ANYMORE, GRANDMOTHER.",
+          "confidence": 0.778,
+          "text_ar": "أؤكد لك ذلك - في هذه المرحلة، لن تحتاجي إلى الذهاب للتسوق بعد الآن، يا جدتي."
+        },
+        {
+          "text": "BECAUSE YOU'LL HAVE TO SPEND THE REST OF YOUR LIFE IN JUST A PRISON UNIFORM.",
+          "confidence": 0.921,
+          "text_ar": "لأنك ستقضين ما تبقى من حياتك مرتدية زي السجن فقط."
+        },
+        {
+          "text": "Y-YOU.!",
+          "confidence": 0.833,
+          "text_ar": "أ-أنتِ...!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "YOU DON'T KNOW THIS GRANDSON OF YOURS VERY WELL, DO YOU?",
+          "confidence": 0.903,
+          "text_ar": "أنتِ لا تعرفين حفيدك هذا جيدًا، أليس كذلك؟"
+        },
+        {
+          "text": "OR,MAYBE YoU DO?",
+          "confidence": 0.716,
+          "text_ar": "أو ربما تفعلين؟"
+        },
+        {
+          "text": "THAT I'M EXACTLY LIKE GRANDFATHER, WHO HAD NEITHER BLOOD NOR TEARS...?",
+          "confidence": 0.908,
+          "text_ar": "بأنني أشبه جدي تمامًا، الذي لم يكن يعرف دموعًا ولا رحمة...؟"
+        },
+        {
+          "text": "I DON'T HAVE THE SLIGHTEST HESITATION ABOUT DRAGGING YOU INTO COURT AND SENDING YOU TO PRISON WITH MY OWN HANDS.",
+          "confidence": 0.889,
+          "text_ar": "ليس لدي أدنى تردد في ججرك إلى المحكمة وإرسالك إلى السجن بيدي هاتين."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "DO YOU KNOW WHY?",
+          "confidence": 0.968,
+          "text_ar": "أتدرين لماذا؟"
+        },
+        {
+          "text": "OTh",
+          "confidence": 0.411,
+          "text_ar": "..."
+        },
+        {
+          "text": "BECAUSE YOU KEEP TRYING TO TAKE AWAY WHAT GRANDFATHER GAVE ME.",
+          "confidence": 0.978,
+          "text_ar": "لأنكِ ما زلتِ تحاولين سلب ما أعطاه لي جدي."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.949,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "NOT BECAUSE YOU TRIED TO KILL ME WITH A TRUCK...",
+          "confidence": 0.943,
+          "text_ar": "وليس لأنكِ حاولتِ قتلي بشاحنة..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "GRANDFATHER KNEW EVERYTHING.",
+          "confidence": 0.968,
+          "text_ar": "كان جدي يعرف كل شيء."
+        },
+        {
+          "text": "BUT HE BURIED IT, SAYING IT WAS HIS OWN FAULT.",
+          "confidence": 0.914,
+          "text_ar": "لكنه طوى الصفحة، محملًا نفسه المسؤولية."
+        },
+        {
+          "text": "SAID THE HE SAME TO ME TOO. THAT I SHOULD FORGIVE YOU.",
+          "confidence": 0.859,
+          "text_ar": "وقال لي الشيء نفسه أيضًا. بأنه يجب عليّ مسامحتكِ."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "sO I ERASED IT FROM MY MEMORY.",
+          "confidence": 0.617,
+          "text_ar": "لذا محوت ذلك من ذاكرتي."
+        },
+        {
+          "text": "BUT BECAUSE YOU TRIED TO PUSH ME OUT OF SUNYANG GROUP, I HAVE NO CHOICE.",
+          "confidence": 0.891,
+          "text_ar": "لكن بما أنك حاولت طردي من مجموعة سونيانغ، فلم يترك لي خيار آخر."
+        },
+        {
+          "text": "I'LL HAVE TO SEE THIS THROUGH TO THE END.",
+          "confidence": 0.924,
+          "text_ar": "سأضطر إلى المضي قدماً في هذا الأمر حتى النهاية."
+        },
+        {
+          "text": "READAT HIVEOON.COM TO FASTER UPDATE! 福",
+          "confidence": 0.11,
+          "text_ar": "قراءة ممتعة."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "DO YOU THINK YOU CAN DO ANYTHING TO ME?",
+          "confidence": 0.972,
+          "text_ar": "أتظن حقًا أن بإمكانك فعل أي شيء بي؟"
+        },
+        {
+          "text": "EVEN IF YOU TRY TO EXPOSE WHAT YOU CALL EVIDENCE TO THE WHOLE WORLD, IT WON'T GO THE WAY YOU WANT.",
+          "confidence": 0.906,
+          "text_ar": "حتى لو حاولت كشف ما تسميه أدلة للعالم بأسره، فلن تسير الأمور كما تشتهي."
+        },
+        {
+          "text": "THE POWER OF SUNYANG GROUP ISN'T IN YOUR HANDS, IT'S IN MY SON'S.",
+          "confidence": 0.942,
+          "text_ar": "قوة مجموعة سونيانغ ليست في يديك، بل في يد ابني."
+        },
+        {
+          "text": "NOTA SINGLE LINE ABOUT IT WILL APPEAR IN THE NEWSPAPERS OR ON THE NEWS.",
+          "confidence": 0.965,
+          "text_ar": "ولن يظهر سطر واحد عن هذا في الصحف أو نشرات الأخبار."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "yoU CERTAINLY HAVE A REMARKABLE SON.",
+          "confidence": 0.554,
+          "text_ar": "بالتأكيد لديك ابن رائع."
+        },
+        {
+          "text": "YOULL BE THE ONE WHO GOES DOWN INSTEAD. MY SECRET ACCOUNT? ILL MAKE THAT ACCOUNT YOURS AND HAVE YOU ARRESTED.",
+          "confidence": 0.926,
+          "text_ar": "أنت من سيهوي بدلاً من ذلك. حسابي السري؟ سأجعل ذلك الحساب خاصتك وأتسبب في القبض عليك."
+        },
+        {
+          "text": "ILL MAKE YOU OUT TO BEA FILTHY BASTARD WHO EMBEZZLED 600 MILLION DOLLARS.",
+          "confidence": 0.938,
+          "text_ar": "سأصورك كحقير وضيع اختلس ستمائة مليون دولار."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "WELL, IT'S NOT IMPOSSIBLE.",
+          "confidence": 0.946,
+          "text_ar": "حسنًا، الأمر ليس مستحيلاً."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.942,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "IF MY UNCLES PULL EVERY STRING THEY HAVE,",
+          "confidence": 0.932,
+          "text_ar": "إذا قام أعمامي بتحريك كل خيط يملكونه،"
+        },
+        {
+          "text": "AND THROW MONEY AT THE MEDIA TO SHUT THEIR MOUTHS, IT MIGHT BE POSSIBLE.",
+          "confidence": 0.908,
+          "text_ar": "وألقوا بالمال على وسائل الإعلام لإسكاتهم، فقد يكون ذلك ممكنًا."
+        },
+        {
+          "text": "WHILE GRANDMOTHER TURNS THIS INTO A FIGHT BETWEEN ME AND MY UNCLEs, MAKING EACH OTHER BLEED,",
+          "confidence": 0.829,
+          "text_ar": "بينما تحول الجدة هذا الأمر إلى معركة بيني وبين أعمامي، لنسفك دماء بعضنا البعض،"
+        },
+        {
+          "text": "ALL SHE HAS TO DO IS SORT OUT THE BORROWED-NAME SHARES AND FLEE OVERSEAS.",
+          "confidence": 0.933,
+          "text_ar": "كل ما عليها فعله هو تسوية الأسهم المستعارة والفرار إلى الخارج."
+        },
+        {
+          "text": "BUT... THERE'S ONE THING EVEN GRANDMOTHER HASN'T THOUGHT OF.",
+          "confidence": 0.876,
+          "text_ar": "لكن... هناك أمر واحد لم تفكر فيه الجدة حتى."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "NOTHING IS SIMPLE.",
+          "confidence": 0.902,
+          "text_ar": "لا شيء بهذه البساطة."
+        },
+        {
+          "text": "MANY THINGS GOT TANGLED TOGETHER TO CREATE THE OUTCOME.",
+          "confidence": 0.955,
+          "text_ar": "تشابكت أمور كثيرة لإنتاج هذه النتيجة."
+        },
+        {
+          "text": "SINCE SHE HAS NO EXPERIENCE IN SOCIETY, THERE'S NO WAY SHE COULD HAVE AN EYE FOR THE BIGGER PICTURE.",
+          "confidence": 0.936,
+          "text_ar": "بما أنها لا تملك أي خبرة في المجتمع، فلا توجد طريقة تمكنها من رؤية الصورة الأكبر."
+        },
+        {
+          "text": "EVEN IF YOU POUR IN ALL OF SUNYANG GROUP'S ASSETS, YOU WON'T BE ABLE TO STOP THE MEDIA.",
+          "confidence": 0.892,
+          "text_ar": "حتى لو ضخكت كل أصول مجموعة سونيانغ، فلن تكوني قادرة على إيقاف وسائل الإعلام."
+        },
+        {
+          "text": "BECAUSE THIS WILL TURN INTO A POLITICAL FIGHT.",
+          "confidence": 0.955,
+          "text_ar": "لأن هذا سيتحول إلى صراع سياسي."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "I'M NOT GOING TO LEAK THIS TO THE MEDIA, BUT TO THE OPPOSITION PARTY INSTEAD.",
+          "confidence": 0.945,
+          "text_ar": "أنا لن أُسرب هذا لوسائل الإعلام، بل لحزب المعارضة عوضاً عن ذلك."
+        },
+        {
+          "text": "SINCE THEY LOST THEGENERAL ELECTION,THE OPPOSITIONPARTYIS CONSTANTLY LOOKINGFORSOMETHINGITCAN USE TOATTACK THERULING PARTYINGOVERNMENT.",
+          "confidence": 0.945,
+          "text_ar": "بما أنهم خسرو الانتخابات العامة، فإن حزب المعارضة يبحث باستمرار عن شيء يمكنه استخدامه لمهاجمة الحزب الحاكم في الحكومة."
+        },
+        {
+          "text": "HOWEVER...",
+          "confidence": 0.966,
+          "text_ar": "ومع ذلك..."
+        },
+        {
+          "text": "YOU USED THE FOREIGN MINISTRY.",
+          "confidence": 0.964,
+          "text_ar": "لقد استخدمتِ وزارة الخارجية."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "A FOREIGN MINISTRY INVOLVED INSMUGGLING. DO YOU THINK THEOPPOSITION PARTYWILLJUST SIT BACK AND WATCH?",
+          "confidence": 0.939,
+          "text_ar": "وزارة خارجية متورطة في التهريب. أتعتقدين أن حزب المعارضة سيجلس مكتوف الأيدي ويراقب؟"
+        },
+        {
+          "text": "THERE WILL BE A SPECIAL PROSECUTOR INVESTIGATION AND CONGRESSIONAL HEARINGS.",
+          "confidence": 0.969,
+          "text_ar": "ستكون هناك تحقيقات من قبل مدعٍ عام خاص وجلسات استماع في الكونغرس."
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "NO MATTER HOW MUCH SUNYANG MONEY THE OPPOSITION PARTY HAS TAKEN, THEY WON'T COVER THIS UP.",
+          "confidence": 0.921,
+          "text_ar": "مهما بلغ حجم أموال سونيانغ التي أخذها حزب المعارضة، فلن يقوموا بالتستر على هذا."
+        },
+        {
+          "text": "BECAUSE THEY HAVE TO SURVIVE TOO.",
+          "confidence": 0.95,
+          "text_ar": "لأن عليهم أن ينجو بأنفسهم أيضًا."
+        },
+        {
+          "text": "IT'L BE FUN, WON/'T IT",
+          "confidence": 0.635,
+          "text_ar": "سيكون الأمر ممتعًا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "WONTT:",
+          "confidence": 0.822,
+          "text_ar": "أليس كذلك؟"
+        },
+        {
+          "text": "BECAUSE THE WHOLE COUNTRY WILL BE IN AN UPROAR BECAUSE OF YOU.",
+          "confidence": 0.939,
+          "text_ar": "لأن البلاد بأسرها ستشتعل صخباً بسببك."
+        },
+        {
+          "text": "TH-THAT'S RIDICULOUS!",
+          "confidence": 0.98,
+          "text_ar": "ه-هذا سخيف!"
+        },
+        {
+          "text": "GRANDMOTHER CAN'T EVEN LOOK ME STRAIGHT IN THE EYE.",
+          "confidence": 0.969,
+          "text_ar": "الجدة لا تستطيع حتى النظر في عيني مباشرة."
+        },
+        {
+          "text": "IT'S NOT BECAUSE SHE BELIEVES WHAT I'M SAYING.",
+          "confidence": 0.946,
+          "text_ar": "ليس لأنها تصدق ما أقوله."
+        },
+        {
+          "text": "IT'S BECAUSE SHE CAN'T",
+          "confidence": 0.948,
+          "text_ar": "بل لأنها لا تستطيع..."
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "EVEN JUDGE WHETHER IT'S RIGHT OR WRONG...",
+          "confidence": 0.932,
+          "text_ar": "حتى الحكم على ما إذا كان صحيحًا أم خطأ..."
+        },
+        {
+          "text": "THE BEST WAY TO BLOW UP AN ISSUE TO ITS FULLEST EXTENT IS TO LEVERAGE POLITICS,",
+          "confidence": 0.937,
+          "text_ar": "أفضل طريقة لتضخيم القضية إلى أقصى حد هي استغلال السياسة،"
+        },
+        {
+          "text": "BUT GRANDMOTHER DOESN'T KNOW HOW POLITICS WORKS.",
+          "confidence": 0.966,
+          "text_ar": "لكن الجدة لا تعرف كيف تعمل السياسة."
+        },
+        {
+          "text": "BUT GRANDMOTHER DOESN'T KNOW HOW POLITICS WORKS.",
+          "confidence": 0.966,
+          "text_ar": "لكن الجدة لا تعرف كيف تعمل السياسة."
+        },
+        {
+          "text": "SHALL I TELL YOU ONE MORE THING? THE ABSOLUTE WORST-CASE SCENARIO...?",
+          "confidence": 0.955,
+          "text_ar": "هل أقول لك شيئًا آخر؟ السيناريو الأسوأ على الإطلاق...؟"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "THE MOMENT THE OPPOSITIONPARTY BLOWS THE WHISTLE IN THE NATIONAL ASSEMBLY THAT THE FOREIGN MINISTRY",
+          "confidence": 0.947,
+          "text_ar": "في اللحظة التي يطلق فيها حزب المعارضة صافرة الإنذار في الجمعية الوطنية بأن وزارة الخارجية"
+        },
+        {
+          "text": "READ AT HIVETOON.COM TOFASTER OPDATE!",
+          "confidence": 0.927,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "WAS INVOLVED IN SUNYANG GALLERY'S ART SMUGGLING...",
+          "confidence": 0.978,
+          "text_ar": "كانت متورطة في تهريب الأعمال الفنية لمعرض سونيانغ..."
+        },
+        {
+          "text": "THIS WILL TURN INTO A DIPLOMATIC ISSUE BETWEEN KOREA AND THE UNITED STATES.",
+          "confidence": 0.867,
+          "text_ar": "سيتحول هذا إلى قضية دبلوماسية بين كوريا والولايات المتحدة."
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "COULD THAT HAVE BEEN GRANDMOTHER'S OWN IDEA?",
+          "confidence": 0.959,
+          "text_ar": "أعتقدتِ أن هذه كانت فكرة الجدة وحدها؟"
+        },
+        {
+          "text": "SOMEONE MUST HAVE TOLD HER.",
+          "confidence": 0.964,
+          "text_ar": "لا بد أن شخصًا ما قد أخبرها بذلك."
+        },
+        {
+          "text": "NOW THE UNITED STATES HAS FOUND SOMETHING TO USE AGAINST OUR COUNTRY.",
+          "confidence": 0.961,
+          "text_ar": "الآن وجدت الولايات المتحدة شيئًا تستخدمه ضد بلدنا."
+        },
+        {
+          "text": "THE UNITED STATES WON'T C.OVER THIS IID",
+          "confidence": 0.85,
+          "text_ar": "لن تتستر الولايات المتحدة على هذا الأمر."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "THEY'LL START BY INVESTIGATING WENTWORTH ART GALLERY FIRST...",
+          "confidence": 0.974,
+          "text_ar": "سيبدأون بالتحقيق مع صالة ونتوورث للفنون أولاً..."
+        },
+        {
+          "text": "AND I'LL SAY THOSE ARTWORKS... ARE ALL FAKES.",
+          "confidence": 0.933,
+          "text_ar": "وسأقول إن تلك الأعمال الفنية... كلها مزيفة."
+        },
+        {
+          "text": "TH-THOSE ARTWORKS ARE REA!",
+          "confidence": 0.926,
+          "text_ar": "ه-هذه الأعمال الفنية أصلية!"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "I KNOW.",
+          "confidence": 0.989,
+          "text_ar": "أنا أعلم ذلك."
+        },
+        {
+          "text": "BUT WHO WOULD BELIEVE A WORD FROM SUNYANG GALLERY, WHO HAS BEENCAUGHT CONSTANTLY SMUGGLING ART?",
+          "confidence": 0.932,
+          "text_ar": "لكن من سيصدق كلمة واحدة من معرض سونيانغ، الذي تم ضبطه متلبسًا بتهريب الفن باستمرار؟"
+        },
+        {
+          "text": "THE SPECIAL PROSECUTOR WOULDSTARTAFULL INSPECTIONOFTHE SUNYANG ART FOUNDATION'S COLLECTION, WON'T THEY?",
+          "confidence": 0.945,
+          "text_ar": "سيبدأ المدعي العام الخاص بعمل تفتيش شامل لمجموعة مؤسسة سونيانغ للفنون، أليس كذلك؟"
+        },
+        {
+          "text": "THEN ALL THE FORGERIES YOURE HOLDING INPLACE OF THE PIECES YOU SECRETLY SOLD OFF WOULD COME POURING OUT,",
+          "confidence": 0.927,
+          "text_ar": "وحينها ستتطاير كل القطع المزيفة التي تحتفظين بها بدلاً من القطع التي بعتِها سرًا،"
+        },
+        {
+          "text": "AND OUR CLAIM BECOMES THE TRUTH.",
+          "confidence": 0.962,
+          "text_ar": "وسيصبح ادعاؤنا هو الحقيقة."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "THINK ABOUT IT.",
+          "confidence": 0.935,
+          "text_ar": "فكر في الأمر."
+        },
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.889,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "SUNYANG GALLERY HOLDING FORGERIES.",
+          "confidence": 0.981,
+          "text_ar": "معرض سونيانغ يحتفظ بأعمال مزيفة."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "THIS WILL BECOME WORLD NEWS, AND THE ART WORLD WILL BE THROWN INTO AN UPROAR.",
+          "confidence": 0.918,
+          "text_ar": "سيصبح هذا خبرًا عالميًا، ويهتز عالم الفن بأسره."
+        },
+        {
+          "text": "THEN THE CUSTOMERS WHO'VE SECRETLYBOUGHTARTWORK FROMSUNYANGGALLERYUP TONOWWON'T STAY QUIET EITHER.",
+          "confidence": 0.958,
+          "text_ar": "حينها فإن العملاء الذين اشتروا الأعمال الفنية سرًا من معرض سونيانغ حتى الآن لن يبقوا صامتين أيضًا."
+        },
+        {
+          "text": "INTERNATIONAL LAWSUITS WILL FOLLOW ONE AFTER ANOTHER.",
+          "confidence": 0.965,
+          "text_ar": "ستتبع ذلك دعاوى قضائية دولية واحدة تلو الأخرى."
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "OH, RIGHT, IT'S IN THE CONTRACT, ISN'T IT?",
+          "confidence": 0.849,
+          "text_ar": "أه صحيح، إنه موجود في العقد، أليس كذلك؟"
+        },
+        {
+          "text": "THE PENALTY IS THREE TIMES THE 600 MILLION DOLLARS TRANSACTION AMOUNT,",
+          "confidence": 0.895,
+          "text_ar": "الجزاء هو ثلاثة أضعاف مبلغ صفقة الستمائة مليون دولار،"
+        },
+        {
+          "text": "BUT WELL... IT'LL BE FINE, RIGHT?",
+          "confidence": 0.944,
+          "text_ar": "لكن حسنًا... سيكون الأمر على ما يرام، أليس كذلك؟"
+        },
+        {
+          "text": "SINCE THE INSURANCE COMPANY WILL TAKE CARE OF IT.",
+          "confidence": 0.942,
+          "text_ar": "بما أن شركة التأمين ستتولى الأمر."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "READ AT HIVETOON.COM TO FASTER UPDATE!",
+          "confidence": 0.945,
+          "text_ar": "قراءة ممتعة."
+        },
+        {
+          "text": "： ：JP ： ： JHS",
+          "confidence": 0.531,
+          "text_ar": "..."
+        }
+      ]
+    }
+  ]
+}
