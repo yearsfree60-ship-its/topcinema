@@ -1,0 +1,661 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "218",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HIS WORK IS A WORK OF FICTION.ANYRESEMBLANCE TO ACTUAL PERSONS,ORGANIZATIONS, RELIGIONS, PLACES, OR EVENTS IS ENTIRELYCOINCIDENTAL.",
+          "confidence": 0.893,
+          "text_ar": "هذا العمل خيالي تماماً. أي تشابه بينه وبين الأشخاص الحقيقيين، أو المنظمات، أو الأديان، أو الأماكن، أو الأحداث هو محض صدفة."
+        },
+        {
+          "text": "PLEASE CONSIDER THE STAKE THAT FANTASY HOLDS AS WELL.",
+          "confidence": 0.967,
+          "text_ar": "الرجاء مراعاة الجانب الخيالي أيضاً."
+        },
+        {
+          "text": "EVEN IF YOU DILUTED THEIR SHARES AND REDUCED THEIR STAKE, IT STILL SITS AT OVER 2O%.",
+          "confidence": 0.862,
+          "text_ar": "حتى لو خففتم من حصصهم وقللتم نسبتها، فإنها لا تزال تزيد عن 20%."
+        },
+        {
+          "text": "AND THAT 2O% COULD SIDE WITH ME AT ANY TIME.",
+          "confidence": 0.923,
+          "text_ar": "وتلك الـ 20% يمكنها الوقوف إلى صفي في أي وقت."
+        },
+        {
+          "text": "THEN IT EASILY SURPASSES A MAJORITYOF THE TOTAL SHARES.",
+          "confidence": 0.959,
+          "text_ar": "حينها ستتجاوز بسهولة أغلبية إجمالي الأسهم."
+        },
+        {
+          "text": "EVEN IF FIRST UNCLE USES EVERY TRICK IN THE BOOK,",
+          "confidence": 0.958,
+          "text_ar": "حتى لو استخدم العم الأكبر كل حيلة في الكتاب،"
+        },
+        {
+          "text": "HE WILL NEVER BE ABLE TO TAKE OVER THE GROUP.",
+          "confidence": 0.951,
+          "text_ar": "فلن يتمكن أبداً من الاستحواذ على المجموعة."
+        },
+        {
+          "text": "THAT'SRIGHT. HE NEEDS TOREALIZETHATHE'STHE WEAKESTONE RIGHTNOW.",
+          "confidence": 0.955,
+          "text_ar": "هذا صحيح. عليه أن يدرك أنه الحلقة الأضعف الآن."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "IT'S SAFE TO ASSUME THE OUTSIDE SHARES WILL JUST BE BYSTANDERS, BUT FANTASY IS DIFFEREN.",
+          "confidence": 0.825,
+          "text_ar": "من الآمن افتراض أن الأسهم الخارجية ستكتفي بدور المتفرج، لكن فانتاسي مختلفة."
+        },
+        {
+          "text": "YOU COULD TIE MY HANDS AND FEET WITH THE JOINT VOTING RIGHTS.",
+          "confidence": 0.912,
+          "text_ar": "يمكنك ربط يدي ورجلي بحقوق التصويت المشتركة."
+        },
+        {
+          "text": "BECAUSE IF YOUGIVE UP YOUR VOTING RIGHTS, I HAVE TO GIVE UP MINE TOO.",
+          "confidence": 0.926,
+          "text_ar": "لأنك إن تنازلت عن حقوق التصويت الخاصة بك، فسيتعين عليّ التنازل عن خاصتي أيضاً."
+        },
+        {
+          "text": "I COULD EASILY BE TIED DOWN JUST THE SAME.",
+          "confidence": 0.979,
+          "text_ar": "يمكن تقييدي بسهولة بالطريقة نفسها."
+        },
+        {
+          "text": "IF IT COMES TO THAT, I'LL JUST TRANSFER MY SHARES TO MY PARENTS.",
+          "confidence": 0.937,
+          "text_ar": "إن وصل الأمر إلى هذا الحد، سأقوم ببساطة بتحويل أسهمي إلى والديّ."
+        },
+        {
+          "text": "THAT WOULD VOID THE JOINT VOTING RIGHTS,AFTERALL.",
+          "confidence": 0.961,
+          "text_ar": "سيبطل ذلك حقوق التصويت المشتركة، بعد كل شيء."
+        },
+        {
+          "text": "YOU SHOULD DO THE SAME. YOU'RE GOING TO HAND THEM DOWN TO YOUR SON ANYWAY, AREN'T YOU?",
+          "confidence": 0.903,
+          "text_ar": "عليك أن تفعل المثل. ستورثها لابنك على أي حال، أليس كذلك؟"
+        },
+        {
+          "text": "HF F",
+          "confidence": 0.546,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "H HFF",
+          "confidence": 0.468,
+          "text_ar": "هـاه..."
+        },
+        {
+          "text": "HH H F HHF □ F H",
+          "confidence": 0.124,
+          "text_ar": "تنهد"
+        },
+        {
+          "text": "THE FACT THAT HE'S EVENCONSIDERING THE WORST-CASE SCENARIO PROVES HE'S MORE THAN HALFWAY CONVINCED.",
+          "confidence": 0.939,
+          "text_ar": "حقيقة أنه يدرس أسوأ السيناريو هات تثبت أنه مقتنع بنسبة تزيد عن النصف."
+        },
+        {
+          "text": "IT'S TIME TO THROW THE FINAL BAIT.",
+          "confidence": 0.949,
+          "text_ar": "لقد حان وقت إلقاء الطعم الأخير."
+        },
+        {
+          "text": "THE 1OO BILLION WON SLUSH FUND IN LABUAN, I'LL WITHDRAW IT.",
+          "confidence": 0.959,
+          "text_ar": "صندوق الأموال السرية بقيمة 100 مليار وون في لابوان، سأقوم بسحبه."
+        },
+        {
+          "text": "THEN THERE'LL BE NO CHANCE OF ME BLACKMAILING YOUWITHTHE SLUSH FUND, SINCE I'D BE IMPLICATED AS WELL.",
+          "confidence": 0.912,
+          "text_ar": "حينها لن تكون هناك أي فرصة لابتزازك بصندوق الأموال السرية، حيث سيتم توريطي معه أيضاً."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "7トスト 1",
+          "confidence": 0.54,
+          "text_ar": "صرير"
+        },
+        {
+          "text": "SO YOU'RE WILLING TO COVER YOURSELF IN MY DIRT?",
+          "confidence": 0.874,
+          "text_ar": "إذن أنت مستعد لتلطيخ نفسك بأوساخي؟"
+        },
+        {
+          "text": "WOULDN'T THAT BE MORE FITTING FOR THE WORD 'JOINT'?",
+          "confidence": 0.897,
+          "text_ar": "أليس هذا أكثر ملاءمة لكلمة 'مُشترَك'؟"
+        },
+        {
+          "text": "IF I REJECT HD YOUR PROPOSAL... YOUR PROPOSAL..",
+          "confidence": 0.247,
+          "text_ar": "إذا رفضتُ اقتراحك.. اقتراحك.."
+        },
+        {
+          "text": "ARE YOUGOING TO HAND OVER THE SLUSH FUND DATATO MYOLDER BROTHER?",
+          "confidence": 0.949,
+          "text_ar": "هل ستسلم بيانات الأموال السرية إلى أخي الأكبر؟"
+        },
+        {
+          "text": "I DON'T PLAY DIRTY LIKE THAT.I ALREADY TOLD YOU.",
+          "confidence": 0.948,
+          "text_ar": "أنا لا ألعب بطرق قذرة هكذا. لقد أخبرتك بالفعل."
+        },
+        {
+          "text": "IF YOU JUST CALL OFF THE BOARD MEETING, I WON'T HAND OVER THE DATA.",
+          "confidence": 0.935,
+          "text_ar": "إذا ألغيت الاجتماع فقط، فلن أسلم البيانات."
+        },
+        {
+          "text": "BUT CONSIDERING I HAVE A POWERFUL WEAPON IN MY HANDS WITH A THREE-YEARSTATUTE OF LIMITATIONS LEFT,",
+          "confidence": 0.906,
+          "text_ar": "لكن نظراً لأن لدي سلاحاً قوياً في يدي مع تبقي ثلاث سنوات على سقوط الجريمة بالتقادم،"
+        },
+        {
+          "text": "I'm SURE YOU'LL FEEL UNEASY.",
+          "confidence": 0.885,
+          "text_ar": "فأنا متأكد من أنك ستشعر بالانزعاج."
+        },
+        {
+          "text": "TELL THE ENTIRE LEGAL TEAM TO COME IN.",
+          "confidence": 0.945,
+          "text_ar": "أخبر الفريق القانوني بأكمله بالدخول."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "I'LL REVIEW IT AND CONTACT YOU BY THE END OF THE DAY.",
+          "confidence": 0.885,
+          "text_ar": "سأقوم بمراجعة الأمر والاتصال بك بحلول نهاية اليوم."
+        },
+        {
+          "text": "AH, AND IT WILL BE A POSITIVE REVIEW. YOU MAY LEAVE.",
+          "confidence": 0.933,
+          "text_ar": "آه، وستكون مراجعة إيجابية. يمكنك الانصراف."
+        },
+        {
+          "text": "THEN I WILL WAIT FOR YOUR CALL.",
+          "confidence": 0.852,
+          "text_ar": "إذاً سأنتظر اتصالك."
+        },
+        {
+          "text": "PLEASE FORGIVE ANY DISRESPECTFUL REMARKS I'VE MADE UNTIL NOW.",
+          "confidence": 0.923,
+          "text_ar": "الرجاء المعذرة عن أي ملاحظات غير محترمة بدرت مني حتى الآن."
+        },
+        {
+          "text": "I'M ONLY DOING THIS TO SURVIVE.",
+          "confidence": 0.897,
+          "text_ar": "أنا أفتعل هذا لأنجو بحياتي فقط."
+        },
+        {
+          "text": "I NO LONGER CONSIDER YOU MY NEPHEW.",
+          "confidence": 0.929,
+          "text_ar": "لم أعد أعتبرك ابن أخي."
+        },
+        {
+          "text": "Hmph!",
+          "confidence": 0.994,
+          "text_ar": "همم!"
+        },
+        {
+          "text": "TO ME, YOU AREN'T MY NEPHEW; YOU'RE JUST SOMEONE WHO HOLDS MANAGEMENT RIGHTS IN SUNYANG.",
+          "confidence": 0.901,
+          "text_ar": "بالنسبة لي، لست ابن أخي؛ أنت مجرد شخص يمسك بحقوق الإدارة في سونيانغ."
+        },
+        {
+          "text": "SO THERE'S NO NEED TO TRY AND PUT ON SUCH A POLITE FRONT.",
+          "confidence": 0.918,
+          "text_ar": "لذا لا داعي لمحاولة إظهار وجه مهذب هكذا."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "IF YOUHADJOINED HANDS WITH MY BROTHER, YOU COULD HAVE DRIVEN ME OUT COMPLETELY.",
+          "confidence": 0.925,
+          "text_ar": "لو أنك تكاتفت مع أخي، لكان بإمكانك طردي تماماً."
+        },
+        {
+          "text": "AND IN RETURN, YOU WOULD'VE EASILY RECEIVED A FEW AFFILIATES.WHY DID YOU REFUSE?",
+          "confidence": 0.882,
+          "text_ar": "ومقابل ذلك، كنت ستستحوذ بسهولة على بضع شركات تابعة. لماذا رفضت؟"
+        },
+        {
+          "text": "MY GOAL IS TO PROTECT WHAT GRANDFATHER GAVE ME.",
+          "confidence": 0.908,
+          "text_ar": "هدفي هو حماية ما تركه لي الجد."
+        },
+        {
+          "text": "I HAVE NO GREED FOR A FEW EXTRA AFFILIATES.",
+          "confidence": 0.929,
+          "text_ar": "ليس لدي أي طمع في بعض الشركات التابعة الإضافية."
+        },
+        {
+          "text": "BESIDES, I'VE NEVER REALLY LIKED",
+          "confidence": 0.967,
+          "text_ar": "إضافة إلى ذلك، لم أكن أحب حقاً"
+        },
+        {
+          "text": "FIRST UNCLE.",
+          "confidence": 0.945,
+          "text_ar": "العم الأكبر."
+        },
+        {
+          "text": "SINCE YOU PLAN TO SWALLOW IT WHOLE,",
+          "confidence": 0.932,
+          "text_ar": "بما أنك تخطط لابتلاعها بالكامل،"
+        },
+        {
+          "text": "I SUPPOSE SOME CRUMBS WOULDN'T SATISFY YOU.",
+          "confidence": 0.908,
+          "text_ar": "فأظن أن بعض الفتات لن يرضيك."
+        },
+        {
+          "text": "WE'RE DONE HERE.",
+          "confidence": 0.934,
+          "text_ar": "انتهينا هنا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HM? WHAT IS IT? WE'LL BE SEEING EACHOTHER AT THE BOARD MEETING SOON ANYWAY.",
+          "confidence": 0.947,
+          "text_ar": "همم؟ ما الأمر؟ سنلتقي في اجتماع مجلس الإدارة قريباً على أي حال."
+        },
+        {
+          "text": "THE AGENDA FOR THE BOARD MEETING IS GOING TO CHANGE,",
+          "confidence": 0.959,
+          "text_ar": "جدول أعمال اجتماع مجلس الإدارة سيطاله التغيير،"
+        },
+        {
+          "text": "so NEITHeR OF US NEEDS TO GO.",
+          "confidence": 0.743,
+          "text_ar": "لذا لا يحتاج أي منا للذهاب."
+        },
+        {
+          "text": "WHAT ARE YOU TALKING ABOUT ALL OF A SUDDEN?",
+          "confidence": 0.919,
+          "text_ar": "عما تتحدث فجأة؟"
+        },
+        {
+          "text": "THE AGENDA IS STILL THE PERSONNEL MATTERS OF THE DIRECTORS,",
+          "confidence": 0.956,
+          "text_ar": "جدول الأعمال ما زال يتعلق بشؤون موظفي المديرين،"
+        },
+        {
+          "text": "BUT DOJUNWILL BE THE ONE MAKING THE DECISIONS.",
+          "confidence": 0.932,
+          "text_ar": "لكن دوجون سيكون من يتخذ القرارات."
+        },
+        {
+          "text": "EXACTLY THE WAY FATHER WANTED.",
+          "confidence": 0.963,
+          "text_ar": "بالضبط بالطريقة التي أرادها أبي."
+        },
+        {
+          "text": "HEY!",
+          "confidence": 0.965,
+          "text_ar": "مهلاً!"
+        },
+        {
+          "text": "VICE CHAIRMAN",
+          "confidence": 0.959,
+          "text_ar": "نائب الرئيس"
+        },
+        {
+          "text": "THAT'S HOW IT IS. IF YOU HADN'T ONLY THOUGHT ABOUTSTABBING ME IN THE BACK,",
+          "confidence": 0.88,
+          "text_ar": "الأمر هكذا. لو أنك لم تفكر فقط في طعني من الخلف،"
+        },
+        {
+          "text": "Shrug",
+          "confidence": 0.994,
+          "text_ar": "هز كتفين"
+        },
+        {
+          "text": "WE WOULD HAVE REPLACED THE EXECUTIVES JUST AS WE AGREED.",
+          "confidence": 0.935,
+          "text_ar": "لكنا استبدلنا التنفيذيين تماماً كما اتفقنا."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "BUT I REALIZED I JUST COULDN'T SIDE WITH SOMEONE WHO'S ALWAYS TRYING TO CUT ME OUT.",
+          "confidence": 0.921,
+          "text_ar": "لكنني أدركت أنني لا أستطيع الوقوف إلى جانب شخص يحاول دائماً إقصائي."
+        },
+        {
+          "text": "DID DOJUN TELL YOU THAT? THATI WAS STABBING YOU IN THE BACK?",
+          "confidence": 0.852,
+          "text_ar": "هل أخبرك دوجون بذلك؟ أنني كنت أطعنك في الظهر؟"
+        },
+        {
+          "text": "DON'T PLAY DUMB.",
+          "confidence": 0.972,
+          "text_ar": "لا تتباكى."
+        },
+        {
+          "text": "AH,IT'S NOT LIKE I RESENT YOU OR AM ANGRY.",
+          "confidence": 0.916,
+          "text_ar": "آه، ليس الأمر كأنني أحمل ضغينة أو غضباً تجاهك."
+        },
+        {
+          "text": "BECAUSE EVEN IF IT WERE ME, IT WOULD BE A SHAME TO MISSSUCHA GOLDEN OPPORTUNITY.",
+          "confidence": 0.914,
+          "text_ar": "لأنه حتى لو كنت مكاملك، لكان تفويت فرصة ذهبية كهذه مؤسفاً حقاً."
+        },
+        {
+          "text": "IT'S ONLY NATURAL.I WAS THE STUPID ONE FOR EXPOSING MY WEAKNESS.",
+          "confidence": 0.928,
+          "text_ar": "إنه أمر طبيعي. كنت الأحمق الذي كشف عن نقطة ضعفه."
+        },
+        {
+          "text": "VICE CHAIRMAN",
+          "confidence": 0.956,
+          "text_ar": "نائب الرئيس"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "YOU PUNK! SO YOU'RE THROWING AWAY OUR CHANCE TO GET RID OF DOJUN?! ARE YOU OUT OF YOUR MIND?!",
+          "confidence": 0.902,
+          "text_ar": "أيها الاحمق! إذن أنت تفرط في فرصتنا للتخلص من دوجون؟! هل جننتَ؟!"
+        },
+        {
+          "text": "HOW ARE YOU GOING TO FACE MOTHER?!",
+          "confidence": 0.958,
+          "text_ar": "كيف ستواجه والدتنا؟!"
+        },
+        {
+          "text": "IT'S NOT LIKE WE'RE DEVOTED SONS WHO CARE DEEPLY FOR MOTHERANYWAY,",
+          "confidence": 0.933,
+          "text_ar": "لسنا بالابنين البارين اللذين يهتمان لأمر والدتنا كثيراً على أي حال،"
+        },
+        {
+          "text": "SO WHY ACT LIKE IT NOW...",
+          "confidence": 0.889,
+          "text_ar": "فلماذا تتظاهر بذلك الآن..."
+        },
+        {
+          "text": "ANYWAY, DON'T TOUCH THE FINANCIAL GROUP.",
+          "confidence": 0.941,
+          "text_ar": "على أي حال، لا تلمس المجموعة المالية."
+        },
+        {
+          "text": "YOU IDIOT! IT'S NOT TOO LATE!",
+          "confidence": 0.981,
+          "text_ar": "أيها الغبي! لم فوات الأوان بعد!"
+        },
+        {
+          "text": "CHANGE YOUR MIND RIGHT NOW.",
+          "confidence": 0.982,
+          "text_ar": "غيّر رأيك الآن."
+        },
+        {
+          "text": "I COULD EVEN GIVE YOU SUNYANG LIFE INSURANCE!",
+          "confidence": 0.943,
+          "text_ar": "يمكنني حتى منحك شركة سونيانغ للتأمين على الحياة!"
+        },
+        {
+          "text": "STOP IT.IF DOJUN'S STAKE, MY STAKE, ANDFANTASY'S STAKE ARE ALL COMBINED,",
+          "confidence": 0.941,
+          "text_ar": "توقف عن هذا. إذا جُمعت حصة دوجون، وحصتي، وحصة فانتاسي معاً،"
+        },
+        {
+          "text": "IT AMOUNTS TOOVER HALF THE GROUP'SCONTROLLING SHARES.",
+          "confidence": 0.935,
+          "text_ar": "فإنها تبلغ أكثر من نصف أسهم السيطرة على المجموعة."
+        },
+        {
+          "text": "IF PUSH COMES TO SHOVE, KICKING YOU OUT AND TAKING THE CHAIRMAN'S SEAT ISN'T JUST A PIPE DREAM FOR ME.",
+          "confidence": 0.921,
+          "text_ar": "إذا بلغ السيل الزبا، فإن طردك والجلوس على مقعد رئيس مجلس الإدارة ليس حلماً بعيد المنال بالنسبة لي."
+        },
+        {
+          "text": "SO DON'T PROVOKE DOJUN ANYMORE.",
+          "confidence": 0.941,
+          "text_ar": "لذا لا تستفز دوجون بعد الآن."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "VICE CHAIRMAN JIN",
+          "confidence": 0.934,
+          "text_ar": "نائب الرئيس جين"
+        },
+        {
+          "text": "VICE CHAIRMAN, IT'S ALMOST TIME FOR THE BOARD MEETING.",
+          "confidence": 0.874,
+          "text_ar": "نائب الرئيس، لقد اقترب موعد اجتماع مجلس الإدارة."
+        },
+        {
+          "text": "PLEASE LET ME KNOW IF THERE'S ANYTHING SPECIFIC YOU NEED PREPARED.",
+          "confidence": 0.938,
+          "text_ar": "الرجاء إعلامي إن كان هناك أي شيء محدد تحتاج إلى تجهيزه."
+        },
+        {
+          "text": "VICE CHAIRMAN. ARE YOU ALR",
+          "confidence": 0.946,
+          "text_ar": "نائب الرئيس. هل أنت بخـ"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "YOU F*CKING IDIOT!",
+          "confidence": 0.985,
+          "text_ar": "أيها اللعين الغبي!"
+        },
+        {
+          "text": "WHAT THE HELL ARE YOU EVEN DOING!",
+          "confidence": 0.993,
+          "text_ar": "ما الذي تفعله بحق الجحيم!"
+        },
+        {
+          "text": "PANT!",
+          "confidence": 0.998,
+          "text_ar": "لهاث!"
+        },
+        {
+          "text": "PANT!",
+          "confidence": 0.998,
+          "text_ar": "لهاث!"
+        },
+        {
+          "text": "GRAND CONFERENCE ROOM",
+          "confidence": 0.992,
+          "text_ar": "قاعة المؤتمرات الكبرى"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": []
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "CEO YANG WOO-CHAN, IT'S BEEN A WHILE.",
+          "confidence": 0.895,
+          "text_ar": "الرئيس التنفيذي يانغ بوتشان، لقد مضى وقت طويل."
+        },
+        {
+          "text": "SEEING ME WALK IN INSTEAD OF MY TWO UNCLES,",
+          "confidence": 0.9,
+          "text_ar": "برؤيتي أدخل أنا بدلاً من عميّ،"
+        },
+        {
+          "text": "THEY MUST HAVE ALREADY FIGURED OUT THE SITUATION.",
+          "confidence": 0.941,
+          "text_ar": "لا بد أنهم أدركوا الموقف بالفعل."
+        },
+        {
+          "text": "VICE PRESIDENT JANG DO-HYUNG.",
+          "confidence": 0.962,
+          "text_ar": "نائب الرئيس جانغ دوهيونغ."
+        },
+        {
+          "text": "REPRIMAND ALL THE SECURITY STAFF WHO ALLOWED OUTSIDERS ONTO THE EXECUTIVE FLOOR.",
+          "confidence": 0.931,
+          "text_ar": "قم بتوبيخ جميع أفراد طاقم الأمن الذين سمحوا للغرباء بالصعود إلى طابق التنفيذيين."
+        },
+        {
+          "text": "SINCE WHEN DID SUNYANG GROUP TURN INTO A COUNTRY MARKETWHERE ANY TOM, DICK,OR HARRY CAN JUST WALTZ IN?",
+          "confidence": 0.911,
+          "text_ar": "منذ متى تحولت مجموعة سونيانغ إلى سوق شعبي يمكن لأي شخص دخوله هكذا ببساطة؟"
+        },
+        {
+          "text": "I APOLOGIZE, DIRECTOR.I WILL TAKE CARE DIRECTOK.IWILLTAKE CARE OF IT IMMEDIATELY.",
+          "confidence": 0.906,
+          "text_ar": "أنا أعتذر، أيها المدير. سأهتم بالأمر فوراً."
+        },
+        {
+          "text": "WHAT ARE YOU DOING?",
+          "confidence": 0.889,
+          "text_ar": "ما الذي تفعلونه؟"
+        },
+        {
+          "text": "WOULDN'T IT BE EMBARRASSING TO BE DRAGGED OUT BY SECURITY?",
+          "confidence": 0.953,
+          "text_ar": "ألن يكون محرجاُ أن يتم جركما إلى الخارج بواسطة الأمن؟"
+        },
+        {
+          "text": "IT LOOKS LIKE YOU STILL HAVE ENOUGH ENERGY TO WALKOUTONYOUR OWN..?",
+          "confidence": 0.943,
+          "text_ar": "يبدو أن لديك ما يكفي من الطاقة للمغادرة بمفردك...؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "n m! 王 70",
+          "confidence": 0.17,
+          "text_ar": "همم!"
+        },
+        {
+          "text": "CEO YOON HO-IL OF SUNYANG LIFE INSURANCE.",
+          "confidence": 0.956,
+          "text_ar": "الرئيس التنفيذي يون هويل لشركة سونيانغ للتأمين على الحياة."
+        },
+        {
+          "text": "YES, DIRECTOR.",
+          "confidence": 0.799,
+          "text_ar": "نعم، أيها المدير."
+        },
+        {
+          "text": "CEOYOONMUSTHAVE HAD AGUT FEELING HE WOULDBE DISMISSED AT THIS BOARDMEETING.",
+          "confidence": 0.943,
+          "text_ar": "لا بد أن الرئيس التنفيذي يون كان لديه حدس بأنه سيتم إقالته في اجتماع مجلس الإدارة هذا."
+        },
+        {
+          "text": "BUT SEEING ME SHOW UP INSTEAD OF MY TWO UNCLES, HE MUST HAVE REALIZED THE TABLES HAVE TURNED.",
+          "confidence": 0.934,
+          "text_ar": "لكن برؤيتي أظهر بدلاً من عميّ، لابد أنه أدرك أن الدفة قد انقلبت."
+        },
+        {
+          "text": "IT'S THE SAME FOR THOSE THREE.",
+          "confidence": 0.903,
+          "text_ar": "الأمر سيان بالنسبة لأولئك الثلاثة."
+        },
+        {
+          "text": "LET'S PROCEED WITH THE BOARD MEETING QUICKLY.",
+          "confidence": 0.963,
+          "text_ar": "لنعمل على مضي اجتماع مجلس الإدارة سريعاً."
+        },
+        {
+          "text": "YES.",
+          "confidence": 0.958,
+          "text_ar": "حسناً."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "WE ASK FOR YOUR UNDERSTANDING REGARDING HOLDING ANINTEGRATEDBOARD MEETING FOR SUNYANG GROUP'S FINANCIALAFFILIATESFOR THE SAKE OF CONVENIENCE,",
+          "confidence": 0.943,
+          "text_ar": "نطلب تفهمكم بشأن عقد اجتماع مجلس إدارة موحد للشركات التابعة المالية لمجموعة سونيانغ من أجل التيسير،"
+        },
+        {
+          "text": "AND I WILL NOW STATE THE AGENDA FOR THIS EXTRAORDINARY BOARD MEETING.",
+          "confidence": 0.927,
+          "text_ar": "وسأعلن الآن جدول أعمال اجتماع مجلس الإدارة الاستثنائي هذا."
+        },
+        {
+          "text": "FIRST.THE MATTER REGARDING THE DISMISSAL AND APPOINTMENT OF THE CEOS OF SUNYANG LIFEINSURANCE, SUNYANG CARD, SUNYANG FIRE & MARINE INSURANCE,AND SUNYANG SECURITIES.",
+          "confidence": 0.919,
+          "text_ar": "أولاً، مسألة إقالة وتعيين الرؤساء التنفيذيين لكل من سونيانغ للتأمين على الحياة، وبطاقات سونيانغ، وسونيانغ للتأمين البحري والحريق، وسونيانغ للأوراق المالية."
+        },
+        {
+          "text": "IF ANYONE HAS ANY OPINIONS, PLEASE SPEAK UP.",
+          "confidence": 0.946,
+          "text_ar": "إذا كان لدى أي شخص أي آراء، فليتفضل بقولها."
+        },
+        {
+          "text": "QIMANCA.COM",
+          "confidence": 0.939,
+          "text_ar": "موقع قمانكا"
+        },
+        {
+          "text": "： :JP ： 号： JHS",
+          "confidence": 0.615,
+          "text_ar": "ترجمة: جي بي، تدقيق: جي إتش إس"
+        }
+      ]
+    }
+  ]
+}
