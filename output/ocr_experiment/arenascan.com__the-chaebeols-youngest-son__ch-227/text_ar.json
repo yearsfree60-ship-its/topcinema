@@ -1,0 +1,779 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "227",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "A PLEASURE TO MEET YOU, CHIEF JINDOJUN.",
+          "confidence": 0.945,
+          "text_ar": "سرّني لقاؤك، أيها المدير جين دوجون."
+        },
+        {
+          "text": "I'M CHEON SANG-PIL.",
+          "confidence": 0.915,
+          "text_ar": "أنا تشيون سانغ-بيل."
+        },
+        {
+          "text": "I'M JIN DOJUN.",
+          "confidence": 0.95,
+          "text_ar": "أنا جين دوجون."
+        },
+        {
+          "text": "HAVE A SEAT.",
+          "confidence": 0.913,
+          "text_ar": "تفضل بالجلوس."
+        },
+        {
+          "text": "WELL,YOU CERTAINLYKNOW YOUR STUFF.",
+          "confidence": 0.957,
+          "text_ar": "حسنًا، يبدو أنك خبير فيما تفعله حقًا."
+        },
+        {
+          "text": "TO THINK YOU'D EVENPREPARE A SECRET ROOM LIKE THIS.",
+          "confidence": 0.947,
+          "text_ar": "لم أكن أتوقع أن تجهز غرفة سرية كهذه."
+        },
+        {
+          "text": "I'MGLAD IT'S TO YOUR LIKING.",
+          "confidence": 0.916,
+          "text_ar": "يسعدني أنها نالت إعجابك."
+        },
+        {
+          "text": "I TRIED IMITATING ONE OF THOSE DRAMAS ABOUT CONGLOMERATES.",
+          "confidence": 0.926,
+          "text_ar": "حاولت تقليد تلك المسلسلات المتعلقة بالشركات الكبرى."
+        },
+        {
+          "text": "AT TIMES LIKE THIS,A GLASS OF WHISKEY SUITS THE MOOD BETTER THAN COFFEE,DOESN'T IT?",
+          "confidence": 0.959,
+          "text_ar": "في أوقات كهذه، كأس من الويسكي يناسب المزاج أفضل من القهوة، أليس كذلك؟"
+        },
+        {
+          "text": "IFILIKE THE NUMBERS YOU'VE BROUGHT, I'LL SEND YOU BOXES OF BALXNIE WHISKEY.",
+          "confidence": 0.938,
+          "text_ar": "إن أعجبتني الأرقام التي جلبتها، فسأرسل لك صناديق من ويسكي بالكس."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "YOU REALLY DO KnOW YOUR STUFF.",
+          "confidence": 0.827,
+          "text_ar": "أنت حقًا تعرف ما تفعله."
+        },
+        {
+          "text": "QIMANGA.",
+          "confidence": 0.98,
+          "text_ar": "أهلاً بك."
+        },
+        {
+          "text": "LOOKS LIKE I'LL BE LOOSENING MY BELT AND DRINKING HEAVILY TONIGHT.",
+          "confidence": 0.955,
+          "text_ar": "يبدو أنني سأرخي حزامي وأشرب بتخمة الليلة."
+        },
+        {
+          "text": "LET'S NOT COUNT OUR CHICKENS JUST YET.",
+          "confidence": 0.902,
+          "text_ar": "لا تحسب الدجاج قبل أن يفقس."
+        },
+        {
+          "text": "LET'S HEAR LET'G HEAR THE NUMBERS YOU BROUGHT FIRST.",
+          "confidence": 0.799,
+          "text_ar": "دعنا نستمع للأرقام التي جلبتها أولاً."
+        },
+        {
+          "text": "I CAME TO HEAR WHAT YOU WANT.",
+          "confidence": 0.952,
+          "text_ar": "جئت لأسمع ما تريده."
+        },
+        {
+          "text": "IF IT WERE JUST ABOUT NUMBERS, I WOULDN'T HAVE SEEN A REASONFOR YOU TO SET SUCH A MASSIVE TRAP.",
+          "confidence": 0.893,
+          "text_ar": "لو كان الأمر يتعلق بالأرقام وحدها، لما وجدت سببًا يدعوك لنصب مثل هذا الفخ الضخم."
+        },
+        {
+          "text": "A MAN WHO POURED 6OO MILLION DOLLARS INTOSETTING A TRAP WANTS MONEY?",
+          "confidence": 0.92,
+          "text_ar": "رجل أنفق 600 مليون دولار لنصب فخ، يريد مالاً؟"
+        },
+        {
+          "text": "LET'S STOP WITH THE JOKES.",
+          "confidence": 0.96,
+          "text_ar": "دعنا نكف عن المزاح."
+        },
+        {
+          "text": "IT SEEMS I WASN'T ABLE TO CONVEY MY THOUGHTS CLEARLY DURING THAT SUDDEN PHONE CALL.",
+          "confidence": 0.964,
+          "text_ar": "يبدو أنني لم أتمكن من توصيل أفكاري بوضوح خلال تلك المكالمة المفاجئة."
+        },
+        {
+          "text": "NOW WE'RE TALKING. SO, WHAT IS IT THAT YOU WANT?",
+          "confidence": 0.935,
+          "text_ar": "هذا كلام معقول. إذًا، ما الذي تريده تحديدًا؟"
+        },
+        {
+          "text": "WHAT I WANT REALLY IS NUMBERS.",
+          "confidence": 0.959,
+          "text_ar": "ما أريده حقًا هو الأرقام."
+        },
+        {
+          "text": "THEY JUST WEREN'T THE NUMBERS I WANTED.",
+          "confidence": 0.956,
+          "text_ar": "لكنها لم تكن الأرقام التي أردتها."
+        },
+        {
+          "text": "EXCUSE ME?",
+          "confidence": 0.952,
+          "text_ar": "عذرًا؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "DIRECTOR CHEON SANG-PIL,",
+          "confidence": 0.99,
+          "text_ar": "المدير تشيون سانغ-بيل،"
+        },
+        {
+          "text": "I MEANT FOR YOU TO BRING THE NUMBERS \"yOU\" WANTeD.",
+          "confidence": 0.724,
+          "text_ar": "قصدت أن تحضر الأرقام التي تريدها \"أنت\"."
+        },
+        {
+          "text": "YOU WANT TO BUY ME WITH MONEY?",
+          "confidence": 0.872,
+          "text_ar": "أتريد شراء ذمتي بالمال؟"
+        },
+        {
+          "text": "WITH ALL DUE RESPECT, I'M NOT THAT VALUABLE OF A PERSON.",
+          "confidence": 0.905,
+          "text_ar": "مع كامل الاحترام، أنا لست الشخص الباهظ الثمن إلى هذا الحد."
+        },
+        {
+          "text": "MY ONLY CONNECTION IS THROUGH THE CONGLOMERATE ARTS FOUNDATION,",
+          "confidence": 0.939,
+          "text_ar": "صلتي الوحيدة هي عبر مؤسسة الفنون التابعة لمجموعة سونيانغ،"
+        },
+        {
+          "text": "AND I'M JUST A MERE LAWYER SERVING AS MADAM LEE'S LEGAL COUNSEL.",
+          "confidence": 0.947,
+          "text_ar": "وأنا مجرد محامٍ بسيط يعمل كمستشار قانوني للسيدة لي."
+        },
+        {
+          "text": "HOW MUCH DO YOU GET PAID?",
+          "confidence": 0.903,
+          "text_ar": "كم تقبض من المال؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.999,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "I ASKED,HOW MUCH DO YOU GET PAID AS MY GRANDMOTHER'S LEGAL COUNSEL?",
+          "confidence": 0.943,
+          "text_ar": "سألتُ، كم تتقاضى من أجور بصفتك المستشار القانوني لجدتي؟"
+        },
+        {
+          "text": "..YOU DOn'T NEED TO KNOW.",
+          "confidence": 0.808,
+          "text_ar": "..لا داعي لأن تعرف."
+        },
+        {
+          "text": "STOP NEEDLESSLY POKING AROUND AND JUST TELL ME WHAT YOU WANT.",
+          "confidence": 0.915,
+          "text_ar": "كف عن التدخل بلا داعٍ وأخبرني بما تريده."
+        },
+        {
+          "text": "DO WE REALLY NEED TWOMEN STAYING UP ALL NIGHT IN A HOTEL ROOM?",
+          "confidence": 0.946,
+          "text_ar": "أحقًا نحتاج لرجلين أن يسهرا طوال الليل في غرفة فندق؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "FIRST, I NEED TO LET HIM KNOW HIS CURRENT POSITION.",
+          "confidence": 0.902,
+          "text_ar": "أولاً، يجب أن أجعله يدرك موقعه الحالي."
+        },
+        {
+          "text": "INEED TOFIRMLY IMPRINT ONHIMTHATEVENGROVELINGONTHE FLOORWOULDN'TBEENOUGH TOPROPERLY HANDLE GRANDMOTHER'S ORDERS.",
+          "confidence": 0.928,
+          "text_ar": "يجب أن أرسخ في ذهنه بقوة أن حتى التمرغ على الأرض لن يكفي لتنفيذ أوامر جدتي بالشكل المطلوب."
+        },
+        {
+          "text": "EXCUSE ME FOR A MOMENT.",
+          "confidence": 0.953,
+          "text_ar": "عذرًا للحظة."
+        },
+        {
+          "text": "I JUST NEED TO MAKE A QUICK PHONE CALL.",
+          "confidence": 0.984,
+          "text_ar": "يجب أن أجري مكالمة سريعة."
+        },
+        {
+          "text": "HELLO?",
+          "confidence": 0.991,
+          "text_ar": "مرحباً؟"
+        },
+        {
+          "text": "CALLING 00:01:13",
+          "confidence": 0.82,
+          "text_ar": "جاري الاتصال 00:01:13"
+        },
+        {
+          "text": "HELLO, SENIOR DEPUTY.",
+          "confidence": 0.979,
+          "text_ar": "مرحباً، نائب الرئيس."
+        },
+        {
+          "text": "OOCOAE",
+          "confidence": 0.175,
+          "text_ar": "رنين..."
+        },
+        {
+          "text": "IT'S JIN DOJUN FROM SUNYANG.",
+          "confidence": 0.965,
+          "text_ar": "معك جين دوجون من سونيانغ."
+        },
+        {
+          "text": "OH MY, LOOK WHO IT IS! YES, CHIEF JIN. IT'S BEEN A WHILE.",
+          "confidence": 0.889,
+          "text_ar": "يا له من مفاجأة، انظر من يتصل! نعم، المدير جين. لقد مضى وقت طويل."
+        },
+        {
+          "text": "Star TAK",
+          "confidence": 0.95,
+          "text_ar": "بدء الاتصال"
+        },
+        {
+          "text": "HAVE YOU BEEN WELL, SENIOR DEPUTY?",
+          "confidence": 0.948,
+          "text_ar": "هل كنت بصحة جيدة، نائب الرئيس؟"
+        },
+        {
+          "text": "IHAVEN'T, THANKS TO THE MISERABLE LIFE OF AN OPPOSITIONPARTY MEMBER.THEMISTREATMENT IS HARSH. HAHA.",
+          "confidence": 0.921,
+          "text_ar": "لست بخير، بفضل الحياة البائسة لعضو في حزب المعارضة. المعاملة قاسية حقاً. هاها."
+        },
+        {
+          "text": "STILL, YOU WERE PROMOTED AFTER THE GENERAL ELECTION, WEREN'T YOU?",
+          "confidence": 0.949,
+          "text_ar": "مع ذلك، لقد تمت ترقيتك بعد الانتخابات العامة، أليس كذلك؟"
+        },
+        {
+          "text": "AOOE",
+          "confidence": 0.199,
+          "text_ar": "رنين..."
+        },
+        {
+          "text": "SENIOR DEPUTY FLOOR LEADER. HAHA.",
+          "confidence": 0.984,
+          "text_ar": "نائب رئيس الكتلة البرلمانية. هاها."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "SENIOR DEPUTY, I HAVE A GIFT I'D LIKE TO GIVE YOU. CONSIDER IT A PROMOTIONPRESENT.",
+          "confidence": 0.936,
+          "text_ar": "نائب الرئيس، لدي هدية أود تقديمها لك. اعتبرها هدية ترقية."
+        },
+        {
+          "text": "OH MY, WHAT GIFT... THE ORCHIDS YOU SENT WERE MORE THAN ENOUGH.",
+          "confidence": 0.919,
+          "text_ar": "يا له من أمر لطيف، أي هدية... الزهور التي أرسلتها كانت أكثر من كافية."
+        },
+        {
+          "text": "YOU'LL FIND THIS GIFT QUITE PLEASING.",
+          "confidence": 0.922,
+          "text_ar": "ستجد هذه الهدية مرضية للغاية."
+        },
+        {
+          "text": "WHAT COULD IT BE? IT HAS A SOMEWHAT IIHASASOMEWHAI DIFFERENT FEEL TO IT. DIEEEDCNTECLTOIT",
+          "confidence": 0.555,
+          "text_ar": "يا ترى ما هي؟ تبدو ذات طابع مختلف بعض الشيء."
+        },
+        {
+          "text": "I RECENTLY WENT ON A BUSINESS TRIP TO NEW YORK,",
+          "confidence": 0.939,
+          "text_ar": "ذهبت مؤخراً في رحلة عمل إلى نيويورك،"
+        },
+        {
+          "text": "AND I DISCOVERED SOME SUSPICIOUS BEHAVIOR FROM THE CONSULATE GENERAL IN NEW YORK.",
+          "confidence": 0.948,
+          "text_ar": "واكتشفت بعض التصرفات المثيرة للريبة من القنصلية العامة في نيويورك."
+        },
+        {
+          "text": "THE CONSULATE GENERAL?",
+          "confidence": 0.968,
+          "text_ar": "القنصلية العامة؟"
+        },
+        {
+          "text": "YES.IT SEEMS THE STAFF AT THE NEW YORK CONSULATE GENERAL ARE INVOLVED IN SMUGGLING OURNATIONALTREASURE-LEVEL CULTURAL ASSETS OUT OF THE COUNTRY.",
+          "confidence": 0.942,
+          "text_ar": "نعم. يبدو أن موظفي القنصلية العامة في نيويورك متورطون في تهريب أصول ثقافية وطنية بدرجة كنز وطني خارج البلاد."
+        },
+        {
+          "text": "WHAT? SMUGGLING THEM OUT? YOU MEAN ILLEGAL EXPORT?",
+          "confidence": 0.929,
+          "text_ar": "ماذا؟ تهريبها إلى الخارج؟ تقصد تصديراً غير قانوني؟"
+        },
+        {
+          "text": "YES, CLEAR-CUT SMUGGLING. AS YOU KNOW, DIPLOMATIC POUCHES AREN'T SUBJECT TO CUSTOMS INSPECTIONS.",
+          "confidence": 0.94,
+          "text_ar": "نعم، تهريب صريح. وكما تعلم، الحقائب الدبلوماسية لا تخضع لتفتيش الجمارك."
+        },
+        {
+          "text": "IT SEEMS THEY TOOK ADVANTAGE OF THAT.",
+          "confidence": 0.929,
+          "text_ar": "يبدو أنهم استغلوا ذلك."
+        },
+        {
+          "text": "THOSE CRAZY BASTARDS! I OUGHT TORIP THEM OPEN TO SEE JUST HOW MUCH NERVE THEY HAVE!",
+          "confidence": 0.92,
+          "text_ar": "أولئك الأوغاد المجانين! يجب أن أشق بطونهم لأرى مدى وقاحتهم!"
+        },
+        {
+          "text": "Star TAK",
+          "confidence": 0.963,
+          "text_ar": "بدء الاتصال"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "PLEASE CALM DOWN. I WANT TO DISCUSS THIS MATTER WITH YOU IN PRIVATE, SO LET'S HAVE DINNER TOGETHER TOMORROW.",
+          "confidence": 0.925,
+          "text_ar": "أرجوك اهدأ. أريد مناقشة هذا الأمر معك على انفراد، لذا دعنا نتناول العشاء معاً غداً."
+        },
+        {
+          "text": "AONOLOW",
+          "confidence": 0.447,
+          "text_ar": "حسنًا"
+        },
+        {
+          "text": "OF COURSE. I'LL CLEAR MY SCHEDULE EVEN IF THE SKY FALLS. LET ME HEAR THE FULL STORY THEN.",
+          "confidence": 0.923,
+          "text_ar": "بالتأكيد. سأفرغ جدول أعمالي حتى لو سقطت السماء. دعني أسمع القصة كاملة حينها."
+        },
+        {
+          "text": "YES.I'LL LET YOU GO NOW...",
+          "confidence": 0.846,
+          "text_ar": "نعم. سأتركك لشأنك الآن..."
+        },
+        {
+          "text": "WH-WHAT ARE YOU DOING?",
+          "confidence": 0.937,
+          "text_ar": "ما-ما الذي تفهله؟"
+        },
+        {
+          "text": "NATIONAL TREASURE-LEVEL CULTURAL ASSETS? WHAT THE HELL IS THIS..?!",
+          "confidence": 0.881,
+          "text_ar": "أصول ثقافية بمستوى كنوز وطنية؟ بحق الجحيم ما هذا..?!"
+        },
+        {
+          "text": "SMUGGLING CULTURAL ASSETS HAS A BIT MORE DESTRUCTIVE POWER THAN SMUGGLING ARTWORKS,YOU SEE.",
+          "confidence": 0.954,
+          "text_ar": "تهريب الأصول الثقافية يحمل قوة مدمرة أكبر قليلاً من تهريب الأعمال الفنية، كما ترى."
+        },
+        {
+          "text": "THE RESULTS WILL PROBABLY TURN OUT LIKE THIS.",
+          "confidence": 0.972,
+          "text_ar": "ستنتهي النتائج هكذا على الأرجح."
+        },
+        {
+          "text": "THE SMUGGLING OF NATIONALTREASURE-LEVEL CULTURAL ASSETS BY THE CONSULATE GENERAL IS UNFOUNDED, BUT THEY DID SMUGGLE HIGH-PRICED ARTWORKS OF EQUIVALENT VALUE.",
+          "confidence": 0.945,
+          "text_ar": "اتهام القنصلية العامة بتهريب أصول ثقافية بمستوى كنوز وطنية هو أمر لا أساس له، لكنهم هربوا بالفعل أعمالاً فنية عالية الثمن بقيمة مكافئة."
+        },
+        {
+          "text": "STOP THIS AT ONCE.",
+          "confidence": 0.933,
+          "text_ar": "توقف عن هذا فوراً."
+        },
+        {
+          "text": "IF YOU DO THIS, YOU WON'T GET A SINGLE THING YOU WANT!",
+          "confidence": 0.938,
+          "text_ar": "إن فعلت هذا، فلن تحصل على أي شيء تريده إطلاقاً!"
+        },
+        {
+          "text": "LOOK HERE, CHEON SANG-PIL.",
+          "confidence": 0.963,
+          "text_ar": "انظر إلى هنا، تشيون سانغ-بيل."
+        },
+        {
+          "text": "HOW DID YOU SURVIVE BY MY GRANDMOTHER'S SIDE WITH A BRAIN LIKE THAT?",
+          "confidence": 0.946,
+          "text_ar": "كيف نجحتَ في البقاء بجانب جدتي بعقلية كهذه؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.998,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "I'VE BEEN PUTTING UP WITH YOU,BUT..",
+          "confidence": 0.857,
+          "text_ar": "لقد كنت أتحملك، لكن..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "DO YOU STILL NOT KNOW WHAT IT IS I WANT?",
+          "confidence": 0.913,
+          "text_ar": "أما زلت لا تعرف ما أريده حقاً؟"
+        },
+        {
+          "text": "ThE YOunesT 5ni",
+          "confidence": 0.613,
+          "text_ar": "الاصغر في عائلة سونيانغ"
+        },
+        {
+          "text": "OFA CONGLOMeRATe",
+          "confidence": 0.711,
+          "text_ar": "الاصغر في عائلة سونيانغ"
+        },
+        {
+          "text": "CHAPTER227",
+          "confidence": 0.953,
+          "text_ar": "الفصل 227"
+        },
+        {
+          "text": "DAMN IT...YOU HAVE NO INTENTION OF STOPPING.",
+          "confidence": 0.912,
+          "text_ar": "لعنة الله... ليس لديك أي نية للتوقف."
+        },
+        {
+          "text": "IF YOU WERENT GOING TO STOP, WHY DID YOU EVEN MEET WITH ME?",
+          "confidence": 0.894,
+          "text_ar": "إن لم تكن ستتوقف، فلماذا التقيت بي من الأساس؟"
+        },
+        {
+          "text": "YOU COULD HAVE JUST GONE AHEAD WITH IT.",
+          "confidence": 0.899,
+          "text_ar": "كان بإمكانك المضي قدماً في الأمر وحسب."
+        },
+        {
+          "text": "NOT STOPPING IS A MOVE TO GET WHAT I WANT.",
+          "confidence": 0.92,
+          "text_ar": "عدم التوقف هو خطوة لتحقيق ما أريد."
+        },
+        {
+          "text": "THERE'S SOMETHING ELSE I WANT.",
+          "confidence": 0.981,
+          "text_ar": "هناك شيء آخر أريده."
+        },
+        {
+          "text": "LET'S STOP PLAYING WORD GAMES NOW, SHALL WE?",
+          "confidence": 0.919,
+          "text_ar": "لنتوقف عن لعب بالكلام الآن، أليس كذلك؟"
+        },
+        {
+          "text": "MY GRANDMOTHER,",
+          "confidence": 0.962,
+          "text_ar": "جدتي،"
+        },
+        {
+          "text": "MADAM LEE PHIL-OK'S EVERYTHING.",
+          "confidence": 0.939,
+          "text_ar": "كل ما تملكه المدعوة لي بيل-وك."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "NAME SOMETHING POSSIBLE.",
+          "confidence": 0.987,
+          "text_ar": "اطلب شيئاً ممكناً."
+        },
+        {
+          "text": "MADAM LEE HAS TWO SONS WHO ARE VICE CHAIRMEN OF SUNYANG.",
+          "confidence": 0.939,
+          "text_ar": "لدى السيدة لي ابنان يشغلان منصب نائبي رئيس سونيانغ."
+        },
+        {
+          "text": "THEY WON'T JUST SIT STILL.",
+          "confidence": 0.959,
+          "text_ar": "لن يجلسا مكتوفي الأيدي."
+        },
+        {
+          "text": "THEY WILL USE WHATEVER MEANS NECESSARY TO COVER THIS UP.",
+          "confidence": 0.94,
+          "text_ar": "سيستخدمان أي وسيلة ضرورية للتغطية على هذا الأمر."
+        },
+        {
+          "text": "I THINK SO, TOO.",
+          "confidence": 0.956,
+          "text_ar": "أعتقد ذلك أيضاً."
+        },
+        {
+          "text": "BECAUSE THE BOUNDARY ALLOWED FOR OUR FAMILY STOPS RIGHT AT THE PROSECUTOR'S OFFICE.",
+          "confidence": 0.94,
+          "text_ar": "لأن الحدود المسموحة لعائلتنا تتوقف عند مكتب الادعاء فحسب."
+        },
+        {
+          "text": "THEY MIGHT BE SUMMONED BY THE PROSECUTION, BUT THEY NEVER STAND TRIAL IN COURT.",
+          "confidence": 0.952,
+          "text_ar": "قد يتم استدعاؤهم من قبل الادعاء، لكنهم لا يمثلون أبداً للمحاكمة أمام القضاء."
+        },
+        {
+          "text": "THE ONES WHO ALWAYS STAND IN COURT AWAITING SENTENCING ARE THE SO-CALLED CLOSEST AIDES.",
+          "confidence": 0.945,
+          "text_ar": "أولئك الذين يقفون دائماً في المحكمة بانتظار النطق بالحالحكم هم ما يُسمَّون بالمقربين."
+        },
+        {
+          "text": "SO THEY CAN USE THEIR INFLUENCE FROM THE OUTSIDE.",
+          "confidence": 0.944,
+          "text_ar": "لذا يمكنهم استخدام نفوذهم من الخارج."
+        },
+        {
+          "text": "WHETHER IT'S A SUSPENDED SENTENCE, OR BAIL ON MEDICAL GROUNDS...",
+          "confidence": 0.941,
+          "text_ar": "سواء كان حكماً مع وقف التنفيذ، أو كفالة لأسباب صحية..."
+        },
+        {
+          "text": "WOW...YOUALREADY KNOW EVERYTHING THAT'S GOING TO UNFOLD.",
+          "confidence": 0.932,
+          "text_ar": "يا له من أمر... أنت تعلم بالفعل كل ما سيحدث."
+        },
+        {
+          "text": "HE DEFINITELY NOTICED HOW THIS WILL ALL END.",
+          "confidence": 0.935,
+          "text_ar": "لقد لاحظ بالتأكيد كيف سينتهي كل هذا."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "THE PERSON WHODRAFTED THE SECRETCONTRACTWAS CHEON SANG-PIL,",
+          "confidence": 0.941,
+          "text_ar": "الشخص الذي صاغ العقد السري هو تشيون سانغ-بيل،"
+        },
+        {
+          "text": "AND GRANDMOTHER, WHO INSISTS SHECAN'T SPEAK A WORD OFENGLISH, SIMPLYSIGNED WHERE HER TRUSTED LAWYERTOLDHER TO.",
+          "confidence": 0.922,
+          "text_ar": "والجدة التي تصر على أنها لا تستطيع التحدث بكلمة إنجليزية واحدة، وقعت ببساطة حيث أخبرها محاميها الموثوق."
+        },
+        {
+          "text": "SHE THOUGHTTHE CONTRACT WASN'T FOR SECRETLY SELLING THE PAINTINGS,",
+          "confidence": 0.921,
+          "text_ar": "ظنت أن العقد لم يكن لبيع اللوحات سراً،"
+        },
+        {
+          "text": "BUT A RENTAL AGREEMENT FOR ANEXHIBITIONATANEW YORK GALLERY.",
+          "confidence": 0.941,
+          "text_ar": "بل اتفاقية إيجار لمعرض في صالة عرض بنيويورك."
+        },
+        {
+          "text": "THE BASTARDWHO HAS BEEN SECRETLYSELLINGALLTHE PAINTINGSALLTHISTIME ISNONE OTHER THANCHEON SANG-PILL,",
+          "confidence": 0.953,
+          "text_ar": "اللعين الذي كان يبيع كل اللوحات سراً طوال هذا الوقت ليس سوى تشيون سانغ-بيل،"
+        },
+        {
+          "text": "AND MADAM LEE PHIL-OK HAS ONLY JUST LEARNEDOF THIS FACT.",
+          "confidence": 0.905,
+          "text_ar": "والسيدة لي بيل-وك قد علمت للتو بهذه الحقيقة."
+        },
+        {
+          "text": "FINALLY, COLLAPSING FROM THE SHOCK OF HER TRUSTED AIDE'S BETRAYAL, SHE WAS ADMITED TO THE HOSPITAL.",
+          "confidence": 0.888,
+          "text_ar": "وأخيراً، سقطت مغشياً عليها من صدمة خيانة مساعدها المقرب، ليتم إدخالها إلى المستشفى."
+        },
+        {
+          "text": "IT'S A VERY METICULOUSLY PAINTED PICTURE,ISN'TIT?",
+          "confidence": 0.932,
+          "text_ar": "إتها صورة مرسومة بعناية فائقة، أليس كذلك؟"
+        },
+        {
+          "text": "YOU'RE THE ONE WHO DIRECTED THE SMUGGLING OF THE FOUNDATION'S ARTWORKS THIS WHOLE TIME, AREN'T YOU?",
+          "confidence": 0.922,
+          "text_ar": "أنت هو الشخص الذي أدار تهريب أعمال المؤسسة الفنية طوال هذا الوقت، أليس كذلك؟"
+        },
+        {
+          "text": "SO WHO WILL THE ARROWS BE POINTED AT?",
+          "confidence": 0.96,
+          "text_ar": "إذن، نحو من ستتوجه أصابع الاتهام؟"
+        },
+        {
+          "text": "THE MOST FITTING TARGET IS YOU, DIRECTOR CHEON.",
+          "confidence": 0.975,
+          "text_ar": "الهدف الأنسب هو أنت، المدير تشيون."
+        },
+        {
+          "text": "WHAT IS IT?",
+          "confidence": 0.979,
+          "text_ar": "ما هذا؟"
+        },
+        {
+          "text": ".WHAT DO YOU MEAN?",
+          "confidence": 0.891,
+          "text_ar": "ماذا تعني؟"
+        },
+        {
+          "text": "THE INCREDIBLE SPIRIT OF SACRIFICE FROM PEOPLE WHO CONSIDER THEMSELVES CLOSEST AIDES.",
+          "confidence": 0.952,
+          "text_ar": "روح التضحية المذهلة من أولئك الذين يعتبرون أنفسهم مساعدين مقربين؟"
+        },
+        {
+          "text": "OR RATHER, A FALl-GUY MENTALITY?",
+          "confidence": 0.908,
+          "text_ar": "أم بالأحرى، عقلية كبش الفداء؟"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THEY'RE NOTHING MORE THANPEOPLE DRAWING A SALARY FROM SUNYANG GROUP,",
+          "confidence": 0.965,
+          "text_ar": "ليسوا أكثر من أشخاص يتقاضون راتباً من مجموعة سونيانغ،"
+        },
+        {
+          "text": "SO WHAT'S THE REASON THEY RUIN THEIR OWN LIVES TO TAKE THE BLAME INSTEAD?",
+          "confidence": 0.958,
+          "text_ar": "إذن ما السبب الذي يجعلهم يدمرون حياتهم لتحمل اللوم بدلاً من ذلك؟"
+        },
+        {
+          "text": "A KID LIKE YOU WOULDN'T KNOWEVEN IF YOU DIED AND CAME BACK TO LIFE.",
+          "confidence": 0.941,
+          "text_ar": "طفل مثلك لن يعرف حتى لو مت ورجعت إلى الحياة."
+        },
+        {
+          "text": "THE YEARS I'VE LIVED WILL SHOW YOU THE REASON WHY...",
+          "confidence": 0.845,
+          "text_ar": "السنوات التي عشتها ستبين لك سبب..."
+        },
+        {
+          "text": "PfH",
+          "confidence": 0.87,
+          "text_ar": "تباً"
+        },
+        {
+          "text": "TO THINK I'D HEAR SUCHWORDS, WHEN I'MTHEONEWHOONLYLEARNED THEREASON 'AFTER'DYINGAND COMING BACK TOLIFE.",
+          "confidence": 0.914,
+          "text_ar": "التفكير في أنني أسمع مثل هذه الكلمات، بينما أنا من عرف السبب فقط \"بعد\" أن مت وعُدت إلى الحياة."
+        },
+        {
+          "text": "EXCUSE ME.",
+          "confidence": 0.967,
+          "text_ar": "عذراً."
+        },
+        {
+          "text": "IT JUST REMINDED ME OF THE PAST...",
+          "confidence": 0.886,
+          "text_ar": "لقد ذكرني الأمر بالماضي فحسب..."
+        },
+        {
+          "text": "NOW, LET'S STOP WITH THE USELESS TALK AND NAME SOMETHING POSSIBLE.",
+          "confidence": 0.924,
+          "text_ar": "والآن، لنتوقف عن الحديث الفارغ ونطلب شيئاً ممكناً."
+        },
+        {
+          "text": "TAKING EVERYTHING FROM MADAM LEE IS IMPOSSIBLE. LET'S COMPROMISE AT A REASONABLE LINE.",
+          "confidence": 0.956,
+          "text_ar": "أخذ كل شيء من السيدة أمر مستحيل. لننتصل إلى تسوية في حدود معقولة."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "THERE IS NO COMPROMISE.",
+          "confidence": 0.957,
+          "text_ar": "لا توجد تسوية."
+        },
+        {
+          "text": "I WILL TAKE EVERYTHING FROM MY GRANDMOTHER,",
+          "confidence": 0.965,
+          "text_ar": "سأأخذ كل شيء من جدتي،"
+        },
+        {
+          "text": "AND IF MY GRANDMOTHER DOESN'T GO TO PRISON, SOMEONE ELSE WILL HAVE TO GO IN HER PLACE.",
+          "confidence": 0.925,
+          "text_ar": "وإن لم تذهب جدتي إلى السجن، فسيتعين على شخص آخر أن يذهب مكانها."
+        },
+        {
+          "text": "FORA VERYLONG TIME, AT THAT.",
+          "confidence": 0.951,
+          "text_ar": "ولفترة طويلة جداً، علاوة على ذلك."
+        },
+        {
+          "text": "I WANT BOTH OF THESE THINGS.",
+          "confidence": 0.956,
+          "text_ar": "أريد كلا هذين الامرين."
+        },
+        {
+          "text": "ESPECIALLY THE SHARES UNDER BORROWED NAMES.",
+          "confidence": 0.918,
+          "text_ar": "خصوصاً الأسهم المسجلة بأسماء مستعارة."
+        },
+        {
+          "text": "IABSOLUTELY MUST HAVE THEM.",
+          "confidence": 0.91,
+          "text_ar": "يجب أن أحصل عليها بلا شك."
+        },
+        {
+          "text": "π G 享 F",
+          "confidence": 0.091,
+          "text_ar": "ههه..."
+        },
+        {
+          "text": "HEHEHE...",
+          "confidence": 0.922,
+          "text_ar": "ههههه..."
+        },
+        {
+          "text": "SO THAT WAS YOUR GOAL!",
+          "confidence": 0.933,
+          "text_ar": "إذن كانت تلك هي غايتك!"
+        },
+        {
+          "text": "THE SHARES!",
+          "confidence": 0.968,
+          "text_ar": "الأسهم!"
+        },
+        {
+          "text": "： JHS",
+          "confidence": 0.857,
+          "text_ar": "ههه"
+        }
+      ]
+    }
+  ]
+}
