@@ -737,6 +737,21 @@
           ],
           "originalBytes": 15912956,
           "compressedBytes": 1224656
+        },
+        {
+          "label": "الفصل 34",
+          "num": "34",
+          "chNum": 34.0,
+          "sourceUrl": "https://starzmanga.com/manga/evil-prinsess/34/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-34/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-34/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-34/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-34/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-34/005.webp"
+          ],
+          "originalBytes": 17973417,
+          "compressedBytes": 1445846
         }
       ]
     }
