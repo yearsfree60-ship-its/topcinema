@@ -1,0 +1,708 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "229",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "HOWMANY PEOPLE KNOW THAT THE ARTWORKS WERE SOLD OFF BESIDES CHEON SANG-PIL?",
+          "confidence": 0.958,
+          "text_ar": "كم شخصاً يعلم ببيع الأعمال الفنية بخلاف تشيون سانغ-بيل؟"
+        },
+        {
+          "text": "ABOUT THREE OR FOUR.",
+          "confidence": 0.958,
+          "text_ar": "حوالي ثلاثة أو أربعة."
+        },
+        {
+          "text": "WHAT ABOUT THEM?",
+          "confidence": 0.973,
+          "text_ar": "وماذا عنهم؟"
+        },
+        {
+          "text": "ARE THEY ANY BETTER THAN CHEON SANG-PIL?",
+          "confidence": 0.943,
+          "text_ar": "هل هم أفضل من تشيون سانغ-بيل بأي شكل؟"
+        },
+        {
+          "text": "THERE'S AGUYNAMED CHEONSANG-PILWHOWORKED AT THE CONGLOMERATE ARTS FOUNDATION.",
+          "confidence": 0.954,
+          "text_ar": "هناك شخص يُدعى تشيون سانغ-بيل عمل في مؤسسة الفنون التابعة للمجموعة."
+        },
+        {
+          "text": "FIGURE OUT HIS PERSONAL DETAILS AND DIG UP SOME DIRT ON HIM.",
+          "confidence": 0.948,
+          "text_ar": "اعرف تفاصيله الشخصية ونقب عن أي فضائح ضده."
+        },
+        {
+          "text": "YEAH, CHEON SANG-PIL. YOU NEED TO FIND SOMETHING FATAL.",
+          "confidence": 0.951,
+          "text_ar": "أجل، تشيون سانغ-بيل. عليك إيجاد شيء قاتل."
+        },
+        {
+          "text": "SOMETHING STRONG ENOUGH TO BRING HIM TO HIS KNEES IN A SINGLE STRIKE.",
+          "confidence": 0.938,
+          "text_ar": "شيء قوي بما يكفي لإركاعه بضربة واحدة."
+        },
+        {
+          "text": "RIGHT.WE DON'T HAVE TIME. MOBILIZE ALL AVAILABLE PERSONNEL.",
+          "confidence": 0.979,
+          "text_ar": "صحيح. ليس لدينا وقت. حشدوا كل الأفراد المتاحين."
+        },
+        {
+          "text": "DID CHEON SANG-PIL MANAGE THE BORROWED-NAME SHARES, TOO?",
+          "confidence": 0.95,
+          "text_ar": "هل أدار تشيون سانغ-بيل الأسهم المستعارة أيضاً؟"
+        },
+        {
+          "text": "co∞o",
+          "confidence": 0.568,
+          "text_ar": "(صوت تشويش)"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "..YEAH.",
+          "confidence": 0.903,
+          "text_ar": "..أجل."
+        },
+        {
+          "text": "THEN PACK YOUR BAGS AND LEAVE THE COUNTRY RIGHT NOW.",
+          "confidence": 0.881,
+          "text_ar": "إذن حزم حقائبك وغادر البلاد فوراً."
+        },
+        {
+          "text": "DON'T EVEN DREAM OF COMING BACK UNTIL THIS BLOWS OVER.",
+          "confidence": 0.948,
+          "text_ar": "لا تحلم حتى بالعودة حتى تهدأ هذه العاصفة."
+        },
+        {
+          "text": "I'LL ATTACH SOME TIGHT-LIPPED GUYS TO YOU,",
+          "confidence": 0.948,
+          "text_ar": "سأرفق معك بعض الرجال الموثوقين الذين يمسكون ألسنتهم،"
+        },
+        {
+          "text": "SO MOVE WITH THEM.",
+          "confidence": 0.925,
+          "text_ar": "لذا تحرك برفقتهم."
+        },
+        {
+          "text": "...UNDERSTOOD.",
+          "confidence": 0.897,
+          "text_ar": "...فهمت."
+        },
+        {
+          "text": "CHAPTER 229",
+          "confidence": 0.992,
+          "text_ar": "الفصل 229"
+        },
+        {
+          "text": "IS THIS ACCURATE?",
+          "confidence": 0.986,
+          "text_ar": "هل هذا دقيق؟"
+        },
+        {
+          "text": "SENIOR DEPUTY FLOOR LEADER OF THE OPPOSITION PARTY",
+          "confidence": 0.942,
+          "text_ar": "نائب رئيس الكتلة البرلمانية للحزب المعارض"
+        },
+        {
+          "text": "THE TRUCK THAT LEFT THE CONSULATE ON THE DATE SHOWN IN THAT DOCUMENT,",
+          "confidence": 0.951,
+          "text_ar": "الشاحنة التي غادرت القنصلية في التاريخ الموضح في تلك الوثيقة،"
+        },
+        {
+          "text": "THE PERSON DRIVING IT WAS A CONSULATE EMPLOYEE.",
+          "confidence": 0.983,
+          "text_ar": "الشخص الذي كان يقودها هو موظف في القنصلية."
+        },
+        {
+          "text": "CHECK THE CONSULATE'SWORK LOGS THROUGHTHE MINISTRYOF FOREIGNAFFAIRS.",
+          "confidence": 0.964,
+          "text_ar": "تحقق من سجلات عمل القنصلية عبر وزارة الخارجية."
+        },
+        {
+          "text": "CHIEF JIN,",
+          "confidence": 0.971,
+          "text_ar": "الرئيس جين،"
+        },
+        {
+          "text": "IF THIS ISN'T A SURE THING, I'LL BE IN A TOUGH SPOT.",
+          "confidence": 0.938,
+          "text_ar": "إن لم يكن هذا أمراً مضموناً، فسأكون في موقف عصيب."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "SENIOR DEPUTY, WOULD I MAKE A MISTAKE LIKE THAT?",
+          "confidence": 0.961,
+          "text_ar": "أيها النائب، هل أرتكب خطأً كهذا؟"
+        },
+        {
+          "text": "TRUST ME.",
+          "confidence": 0.979,
+          "text_ar": "ثق بي."
+        },
+        {
+          "text": "CHIEF JIN, BE HONEST WITH ME.",
+          "confidence": 0.956,
+          "text_ar": "الرئيس جين، كن صادقاً معي."
+        },
+        {
+          "text": "WHAT IS THE FINAL TARGET HERE?",
+          "confidence": 0.967,
+          "text_ar": "ما هو الهدف النهائي هنا؟"
+        },
+        {
+          "text": "IF YOU'RE FEELING UNEASY, JUST FINISH YOUR MEAL AND HEAD BACK.",
+          "confidence": 0.941,
+          "text_ar": "إن كنت تشعر بالانزعاج، فتنهِ وجبتك وعد أدراجك."
+        },
+        {
+          "text": "JUST LIKE THAT? ARE YOU GOING TO BURY THIS, THEN?",
+          "confidence": 0.958,
+          "text_ar": "هكذا فحسب؟ أستدفن هذا الأمر إذن؟"
+        },
+        {
+          "text": "NO.I'LL JUST THROW IT TO A SNIPER FROM ANOTHER FACTION.",
+          "confidence": 0.934,
+          "text_ar": "لا. سألقي به إلى قناص من فصيل آخر وحسب."
+        },
+        {
+          "text": "THERE ARE PLENTY OF LAWMAKERS WHO WOULDBOW THEIR HEADS TO TAKE THIS.",
+          "confidence": 0.958,
+          "text_ar": "هناك الكثير من المشرعين الذين يحنون رؤوسهم لأخذ هذا."
+        },
+        {
+          "text": "OH MY, WHAT ARE YOU SAYING?",
+          "confidence": 0.957,
+          "text_ar": "يا الهي، ماذا تقول؟"
+        },
+        {
+          "text": "YOU SEEM TO HAVE MISUNDERSTOOD, I DIDN'T MEAN YOUWERE UNTRUSTWORTHY.",
+          "confidence": 0.931,
+          "text_ar": "تبدو وكأنك إساءت الفهم، لم أكن أعني أنك غير جدير بالثقة."
+        },
+        {
+          "text": "TT'SA HEAVY IT'S A HEAVY BLOW, SO I WAS JUST ASKING TO CONFIRM. HAHA.",
+          "confidence": 0.923,
+          "text_ar": "إنها ضربة قوية، لذا كنت أسأل فقط للتأكد. هاها."
+        },
+        {
+          "text": "I UNDERSTAND. ANYWAY, THAT INCIDENT ON THAT DATE..",
+          "confidence": 0.928,
+          "text_ar": "أنا متفهم. على أي حال، تلك الحادثة في ذلك التاريخ.."
+        },
+        {
+          "text": "IF YOU JUST DIG INTO THAT ONE THING, THE MINISTRY OF FOREIGN AFFAIRS WILL BETURNED UPSIDE DOWN.",
+          "confidence": 0.937,
+          "text_ar": "إذا نقبت في ذلك الأمر وحدَه، فستنقلب وزارة الخارجية رأساً على عقب."
+        },
+        {
+          "text": "OH, I ALSO HAVE THE NAME OF THE EMPLOYEE WHO DROVE THE TRUCK,",
+          "confidence": 0.959,
+          "text_ar": "أه، لدي أيضاً اسم الموظف الذي قاد الشاحنة،"
+        },
+        {
+          "text": "SO IF NEEDBE, YOU CAN SUMMON THAT EMPLOYEE AND PUT THEM BEFORE THE NATIONAL ASSEMBLY.",
+          "confidence": 0.928,
+          "text_ar": "لذا إن دعت الحاجة، يمكنك استدعاء ذلك الموظف والمثول به أمام الجمعية الوطنية."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "OH MY, GRANDMOTHER. SHE EVEN CALLED HER RELIABLE SON.",
+          "confidence": 0.963,
+          "text_ar": "يا الهي، الجدة. لقد اتصلت حتى بابنها الموثوق."
+        },
+        {
+          "text": "YES, UNCLE.",
+          "confidence": 0.974,
+          "text_ar": "نعم، أيها العم."
+        },
+        {
+          "text": "I DON'T KNOW WHAT YOU'RE DOING RIGHT NOW, BUT LET'S MEET UP.",
+          "confidence": 0.938,
+          "text_ar": "لا أعرف ما الذي تفعله الآن، لكن لنلتق ببعضنا."
+        },
+        {
+          "text": "I'M SORRY. I'MCURRENTLY HAVING A MEAL WITH A GUEST, SO I CAN'T LEAVE.",
+          "confidence": 0.898,
+          "text_ar": "أنا آسف. أتغذى حالياً رفقة ضيف، لذا لا يمكنني المغادرة."
+        },
+        {
+          "text": "THEN COME AFTER YOU EAT. LET'S HAVE A DRINK. YOU KNOW SAMCHEONG-DONG, RIGHT? COME THERE.",
+          "confidence": 0.946,
+          "text_ar": "إذن تعال بعد أن تفرغ من الأكل. لنحتسِ مشروباً. أنت تعرف سامتشيونغ-دونغ، أليس كذلك؟ تعال إلى هناك."
+        },
+        {
+          "text": "Tanile U",
+          "confidence": 0.36,
+          "text_ar": "(صوت حركة خفيفة)"
+        },
+        {
+          "text": "IS THIS OUR FIRST TIME MEETING? YOU LOOK FAMILIAR.",
+          "confidence": 0.974,
+          "text_ar": "أهذه هي المرة الأولى التي نلتقي فيها؟ تبدو مألوفاً."
+        },
+        {
+          "text": "I USED TO BE PART OF THE GROUP'S LEGAL TEAM. I SAW YOU A FEW TIMES BACK THEN.",
+          "confidence": 0.953,
+          "text_ar": "اعتدت أن أكون جزءاً من الفريق القانوني للمجموعة. لقد رأيتك بضع مرات في ذلك الحين."
+        },
+        {
+          "text": "I THOUGHT SO, IT DIDN'T FEEL LIKE OUR FIRST MEETING.HAHA.",
+          "confidence": 0.97,
+          "text_ar": "هذا ما كنت أظنه، لم يبدو وكأنه لقاؤنا الأول. هاها."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I HEARD YOU'VE BEEN WORKING HARD UNDER MY MOTHER, BUT I HAVEN'T EVEN SAID THANK YOU.",
+          "confidence": 0.883,
+          "text_ar": "سمعت أنك عملت بجد تحت إمرة والدتي، لكنني لم أقدم لك الشكر حتى."
+        },
+        {
+          "text": "NOT AT ALL. IT WAS JUST MY JOB.",
+          "confidence": 0.929,
+          "text_ar": "إطلاقاً. كان ذلك واجبي فحسب."
+        },
+        {
+          "text": "YOU HAVE A NEAT PERSONALITY.",
+          "confidence": 0.969,
+          "text_ar": "تتمتع بشخصية منظمة."
+        },
+        {
+          "text": "THEN LET'S CUT THE MESSY STUFF AND GET STRAIGHT TO THE POINT.",
+          "confidence": 0.882,
+          "text_ar": "إذن دعنا نتخطى الأمور الجانبية ونصل إلى صلب الموضوع مباشرة."
+        },
+        {
+          "text": "BUT WHAT ABOUT MADAM LEE..?",
+          "confidence": 0.962,
+          "text_ar": "لكن ماذا عن المدربة لي..؟"
+        },
+        {
+          "text": "AH, I PUT HER ON A PLANE JUST IN CASE.",
+          "confidence": 0.893,
+          "text_ar": "أه، لقد جعلتها ترتدي طائرة احتياطاً."
+        },
+        {
+          "text": "YOU DON'T NEED TO WORRY ABOUT MY MOTHER.",
+          "confidence": 0.784,
+          "text_ar": "لا داعي للقلق بشأن والدتي."
+        },
+        {
+          "text": "I SEE.",
+          "confidence": 0.964,
+          "text_ar": "أرى ذلك."
+        },
+        {
+          "text": "NO WONDER NOWONDLK MADAM LEE PHI-OK'S MADAM LEE PHIL-OK'S PHONE, WHICH SHE USUALLY ANSWERS IMMEDIATELY, WAS TURNED OFF...",
+          "confidence": 0.852,
+          "text_ar": "لا عجب إذن أن هاتف المدربة لي بيل-وك، والتي عادة ما ترد فوراً، كان مغلقاً..."
+        },
+        {
+          "text": "NATA",
+          "confidence": 0.998,
+          "text_ar": "(صوت حركة سريعة)"
+        },
+        {
+          "text": "AND THERE WAS NO REPLY WHEN I TEXTED HER ACCOMPANYING SECRETARY.",
+          "confidence": 0.935,
+          "text_ar": "ولم يكن هناك رد عندما أرسلت رسالة إلى سكرتيرها المرافق."
+        },
+        {
+          "text": "SO SHE LEFT THE CLEANUP TO HER SON AND RAN AWAY?",
+          "confidence": 0.935,
+          "text_ar": "إذن لقد تركت مهمة التنظيف لابنها وهربت؟"
+        },
+        {
+          "text": "FIRST OFF, FIRSTOFF, LAWYER CHEON,YOU LAWYER CHEON, YOU HAVETHEBORROWED-NAME SHARES YOU'RE MANAGING, RIGHT?",
+          "confidence": 0.952,
+          "text_ar": "أولاً وقبل كل شيء، أيها المحامي تشيون، لديك الأسهم المستعارة التي تديرها، أليس كذلك؟"
+        },
+        {
+          "text": "...YES.",
+          "confidence": 0.843,
+          "text_ar": "...نعم."
+        },
+        {
+          "text": "9./00 st:1 wr otiw stuninr J.-90 t",
+          "confidence": 0.497,
+          "text_ar": "(نص غير مفهوم)"
+        },
+        {
+          "text": "GIVE ME THE LIST OF THOSE FIRST. YOU SCATTERED THEMAMONG THE GUYS IN MYEONG-DONG, RIGHT?",
+          "confidence": 0.944,
+          "text_ar": "أعطني قائمة تلك الأسهم أولاً. لقد بعثرتها بين الرجال في ميونغ-دونغ، أليس كذلك؟"
+        },
+        {
+          "text": "I NEED TO GATHER THEM ALL UP AND CONVERT THEM TO REAL NAMES FIRST.",
+          "confidence": 0.911,
+          "text_ar": "علي جمعها كلها وتحويلها إلى أسماء حقيقية أولاً."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "WOULDYOU LOOK AT THIS?",
+          "confidence": 0.977,
+          "text_ar": "أأنت تنظر إلى هذا؟"
+        },
+        {
+          "text": "HE'S SAYING IT ASCASUALLYAS ASKING FOR ABORROWEDBOWLBACK FROM A NEIGHBOR?",
+          "confidence": 0.931,
+          "text_ar": "أأنه يقول ذلك ببساطة وكأنه يطلب إعارة وعاء من جار؟"
+        },
+        {
+          "text": "WHY?DOES IT SEEM LIKEI'M DOING THIS BEHIND MY MOTHER'S BACK?",
+          "confidence": 0.936,
+          "text_ar": "لماذا؟ أيبدو وكأنني أفعل هذا من وراء ظهر والدتي؟"
+        },
+        {
+          "text": "DO YOU NOT KNOW WHO I AM? I'M THE ELDEST SON OF THE PERSONYOU OFTHEPERSONYOU SERVED.",
+          "confidence": 0.927,
+          "text_ar": "ألا تعرف من أكون؟ أنا الابن الأكبر للشخص الذي خدمته."
+        },
+        {
+          "text": "THE ELDEST SON OF SUNYANG.",
+          "confidence": 0.914,
+          "text_ar": "الابن الأكبر لسونيانغ."
+        },
+        {
+          "text": "DOILOOK LIKE SOME BASTARD WHO WOULD SNATCH HIS MOTHER'S ASSETS?",
+          "confidence": 0.948,
+          "text_ar": "أأبدو لك كأيغوب أوغاد قد يسطو على أصول والدته؟"
+        },
+        {
+          "text": "N-NO.",
+          "confidence": 0.992,
+          "text_ar": "ل-لا."
+        },
+        {
+          "text": "IT'S JUST SO SUDDEN...",
+          "confidence": 0.927,
+          "text_ar": "الأمر فقط مفاجئ جداً..."
+        },
+        {
+          "text": "YOU KNOW THE CURRENT SITUATION, TOO.",
+          "confidence": 0.866,
+          "text_ar": "أنت تعرف الوضع الحالي أيضاً."
+        },
+        {
+          "text": "A LOOSE CANNON IN OUR FAMILY IS ON THE VERGE OF CAUSING A MASSIVE INCIDENT.",
+          "confidence": 0.883,
+          "text_ar": "أحد المتهورين في عائلتنا على وشك التسبب بحادث ضخم."
+        },
+        {
+          "text": "I'MJUST TRYING TO GET THINGS SORTED OUT BEFORE THAT HAPPENS.",
+          "confidence": 0.952,
+          "text_ar": "أنا أحاول فقط تسوية الأمور قبل أن يحدث ذلك."
+        },
+        {
+          "text": "979/0 t:1 wg stNninr oue J.-90 +1",
+          "confidence": 0.311,
+          "text_ar": "(نص غير مفهوم)"
+        },
+        {
+          "text": "OF COURSE, My MOTHER KNOWS. I'm THE ONE WHO CHARTERED HER FLIGHT.",
+          "confidence": 0.906,
+          "text_ar": "بالطبع، والدتي تعلم. أنا من استأجر طائرتها الخاصة."
+        },
+        {
+          "text": "BUT THIS IS A MATTER OF GIFTING.",
+          "confidence": 0.976,
+          "text_ar": "لكن هذه مسألة هبة."
+        },
+        {
+          "text": "BEFORE CONVERTING THEMTOYOUR REAL NAME, VICE CHAIRMAN, THE OTHER CHILDREN NEED TOKNOW AS WELL.",
+          "confidence": 0.949,
+          "text_ar": "قبل تحويلها إلى اسمك الحقيقي، أيها النائب، يجب أن يعرف الأطفال الآخرون أيضاً."
+        },
+        {
+          "text": "THAT WAY, WE CAN AVOID INHERITANCE ISSUES LATER...",
+          "confidence": 0.897,
+          "text_ar": "بهذه الطريقة، يمكننا تجنب مشكلات الميراث لاحقاً..."
+        },
+        {
+          "text": "MAN,YOU MISUNDERSTOOD.",
+          "confidence": 0.961,
+          "text_ar": "يا رجل، لقد أسأت الفهم."
+        },
+        {
+          "text": "I'M NOT SAYING WE SHOULD CONVERT THEM TO MY NAME.",
+          "confidence": 0.892,
+          "text_ar": "أنا لا أقول إنه يجب أن نحولها إلى اسمي."
+        },
+        {
+          "text": "WE'RE CONVERTING THEM FROMBORROWEDNAMES YOU MANAGE TO BORROWED NAMES THE GROUP MANAGES.",
+          "confidence": 0.943,
+          "text_ar": "نحن نحولها من الأسماء المستعارة التي تديرها إلى الأسماء المستعارة التي تديرها المجموعة."
+        },
+        {
+          "text": "YOU DON'T nEED TO WORRY ABOUT ISSUES LIKE GIFTING OR INHERITANCE.",
+          "confidence": 0.786,
+          "text_ar": "لا داعي للقلق بشأن مشكلات مثل الهبة أو الميراث."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HE'S TRYING TO TAKE AWAY THE ONLY POWER I HAVE.",
+          "confidence": 0.928,
+          "text_ar": "إنه يحاول سحب السلطة الوحيدة التي أمتلكها."
+        },
+        {
+          "text": "I CAN'T HAND OVER MY LEVERAGE IN A SITUATION LIKE THIS.",
+          "confidence": 0.933,
+          "text_ar": "لا يمكنني تسليم أوراق اعتمادي في موقف كهذا."
+        },
+        {
+          "text": "IT'DBE ONE THING IF I JUST STEPPED DOWN,",
+          "confidence": 0.923,
+          "text_ar": "كان ليون هان تنحيت جانباً فحسب، لكان أمراً مختلفاً،"
+        },
+        {
+          "text": "rO FO5. i 000",
+          "confidence": 0.3,
+          "text_ar": "(نص غير مفهوم)"
+        },
+        {
+          "text": "BUT I MUST AVOID BEING CAST ASIDE.",
+          "confidence": 0.946,
+          "text_ar": "لكن يجب أن أتجنب أن يتم رميي جانباً."
+        },
+        {
+          "text": "UNDERSTOOD. THEN I WILL PREPARE TO CHANGE THE BORROWED NAMES AND COME SEE YOU AGAIN.",
+          "confidence": 0.921,
+          "text_ar": "مفهوم. إذن سأستعد لتغيير الأسماء المستعارة وآتي لرؤيتك مرة أخرى."
+        },
+        {
+          "text": "YEAH. PUT IN SOME WORK FOR ME.",
+          "confidence": 0.938,
+          "text_ar": "أجل. ابذل بعض الجهد من أجلي."
+        },
+        {
+          "text": "WAIT A MOMENT.",
+          "confidence": 0.92,
+          "text_ar": "انتظر لحظة."
+        },
+        {
+          "text": "COME IN.",
+          "confidence": 0.961,
+          "text_ar": "ادخل."
+        },
+        {
+          "text": "MOVE WITH THESE GUYS.",
+          "confidence": 0.948,
+          "text_ar": "تحرك مع هؤلاء الرجال."
+        },
+        {
+          "text": "THEY'RE FROM THE SECRETARIAT, AND THEY'RE QUITE SHARP.",
+          "confidence": 0.96,
+          "text_ar": "إنهم من الأمانة العامة، وهم أذكياء للغاية."
+        },
+        {
+          "text": "TAKE THEM WITH YOU, HAVE THEM RUN ERRANDS, ANDMAKE THEMDOTHE DIRTYWORK.",
+          "confidence": 0.94,
+          "text_ar": "خذهم معك، واجعلهم يقضون الحوائج، وقم بتكليفهم بالأعمال القذرة."
+        },
+        {
+          "text": "WE'RE IN A HURRY, SO SHOULDN'T YOU HAVE AN EXTRA HAND?",
+          "confidence": 0.937,
+          "text_ar": "نحن في عجلة من أمرنا، أفلا ينبغي أن يكون لديك يد إضافية؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HE WANTS THEM STUCK TO ME 24/7 T0 MONITOR ME?",
+          "confidence": 0.966,
+          "text_ar": "أإنه يريد أن يلصقهم بي طوال اليوم لمراقبتي؟"
+        },
+        {
+          "text": "VICE CHAIRMAN, WHAT ARE YOU TRYNG TO DO RIGHT NOW?",
+          "confidence": 0.941,
+          "text_ar": "أيها النائب، ما الذي تحاول فعله الآن؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.999,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "WHILE BEING MONITORED,",
+          "confidence": 0.986,
+          "text_ar": "بينما تتم مراقبتي،"
+        },
+        {
+          "text": "DOYOU SEE ME AS SOME IDIOT WHO WILL JUST CLEAN UP AFTER MADAM LEE?",
+          "confidence": 0.944,
+          "text_ar": "أتراني كأحمق سيقوم بتنظيف الفوضى خلف المدربة لي فقط؟"
+        },
+        {
+          "text": "WHAT ARE YOU TALKING ABOUT? MONITORED?",
+          "confidence": 0.955,
+          "text_ar": "عن ماذا تتحدث؟ مراقبة؟"
+        },
+        {
+          "text": "I MANAGE THE BORROWED-NAME SHARES.",
+          "confidence": 0.947,
+          "text_ar": "أنا من يدير الأسهم المستعارة."
+        },
+        {
+          "text": "IF YOUR FAMILY'SLOOSE CANNON CAUSES TROUBLE, YOU HANDLÉ IT.",
+          "confidence": 0.854,
+          "text_ar": "إن تسبب متهور عائلتكم في مشكلة، فتعاملوا معها."
+        },
+        {
+          "text": "ONCE THINGS ARE NEATLY SORTED OUT AND MADAM LEE RETURNS, I WILL ORGANIZE THE BORROWED NAMES THEN.",
+          "confidence": 0.923,
+          "text_ar": "بمجرد تسوية الأمور بنظافة وعودة المدربة لي، سأقوم بتنظيم الأسماء المستعارة حينها."
+        },
+        {
+          "text": "WHETHER IT'S YOU, VICE CHAIRMAN, OR ANYONE ELSE, I'LL DO AS YOU WISH. BUT UNTIL THEN, NO CHANCE.",
+          "confidence": 0.901,
+          "text_ar": "سواء كنت أنت، أيها النائب، أو أي شخص آخر، سأفعل ما تشاؤون. ولكن حتى ذلك الحين، لا سبيل لذلك."
+        },
+        {
+          "text": "WELL NOW, YOU SURE ARE TALKING LOUD JUST BECAUSE YOU'RE HOLDING SOME SHARES.",
+          "confidence": 0.858,
+          "text_ar": "حسناً، أنت تتحدث بصوت عالٍ حقاً لمجرد أنك تحمل بعض الأسهم."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "AH,CHIEF PROSECUTOR. IT'S ME.",
+          "confidence": 0.92,
+          "text_ar": "أه، رئيس المدعين. إنه أنا."
+        },
+        {
+          "text": "LET ME ASK YOU SOMETHING.",
+          "confidence": 0.897,
+          "text_ar": "دعني أسألك شيئاً."
+        },
+        {
+          "text": "CHIEF PROSECUTOR?!",
+          "confidence": 0.996,
+          "text_ar": "رئيس المدعين؟!"
+        },
+        {
+          "text": "THEN WHO WILL THE ARROWS BE POINTED AT?",
+          "confidence": 0.984,
+          "text_ar": "إذن على من ستوجه السهام؟"
+        },
+        {
+          "text": "IF A FOUNDATION EMPLOYEE SECRETLY DISPOSES OF FOUNDATION ASSETS, HOW MANy YEARS WOULD THEY GET?",
+          "confidence": 0.927,
+          "text_ar": "إذا قام موظف في المؤسسة بالتخلص سراً من أصول المؤسسة، فكم سنة سيحصل عليها؟"
+        },
+        {
+          "text": "YEAH,THAT'S RIGHT. APPARENTLY,HE EMBEZZLED HUNDREDS OF BILLIONS. WHAT ABRAZEN BASTARD.",
+          "confidence": 0.961,
+          "text_ar": "أجل، هذا صحيح. يبدو أنه اختلس مئات المليارات. يا له من وقح حقير."
+        },
+        {
+          "text": "WHAT? LIFE? WE DON'T NEED TO GO THAT FAR,",
+          "confidence": 0.871,
+          "text_ar": "ماذا؟ السجن المؤبد؟ لا داعي للذهاب إلى هذا الحد،"
+        },
+        {
+          "text": "BUT ABOUT 15 YEARS SHOULDN'T BE A PROBLEM, RIGHT?",
+          "confidence": 0.931,
+          "text_ar": "لكن حوالي 15 عاماً لن تشكل مشكلة، أليس كذلك؟"
+        },
+        {
+          "text": "IS HE REVEALING HIS TRUE INTENTIONS LIKE THIS?",
+          "confidence": 0.945,
+          "text_ar": "أيكشف عن نواياه الحقيقية هكذا؟"
+        },
+        {
+          "text": "SOMEHOW, THE BASTARDS IN THIS FAMILY NEVER STRAY FROMMYPREDICTIONS.",
+          "confidence": 0.956,
+          "text_ar": "بطريقة ما، الأوغاد في هذه العائلة لا يحيدون أبداً عن تنبؤاتي."
+        },
+        {
+          "text": "THE ONLY ONE WHO MADE AN UNPREDICTABLE OFFER",
+          "confidence": 0.953,
+          "text_ar": "الشخص الوحيد الذي قدم عرضاً غير متوقع"
+        },
+        {
+          "text": "WAS THAT GUY...",
+          "confidence": 0.916,
+          "text_ar": "كان ذلك الرجل..."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "HEY!CHEON SANG-PIL.LISTEN CLOSELY.",
+          "confidence": 0.972,
+          "text_ar": "مهلاً! تشيون سانغ-بيل. استمع جيداً."
+        },
+        {
+          "text": "6 lag",
+          "confidence": 0.117,
+          "text_ar": "(صوت حركة)"
+        },
+        {
+          "text": "FROMNOW ON, YOU'RE GOING TOFOLLOW THE SCENARIOI WROTE.",
+          "confidence": 0.949,
+          "text_ar": "من الآن فصاعداً، ستتبع السيناريو الذي كتبته."
+        },
+        {
+          "text": "DO THAT, DOTHAT, AND YOU'LL BE OUT OF PRISON IN THREE YEARS.",
+          "confidence": 0.846,
+          "text_ar": "افعل ذلك، افعل ذلك، وستخرج من السجن في غضون ثلاث سنوات."
+        },
+        {
+          "text": "ONCE YOUFINISH YOUR SENTENCE AND GET OUT, KEEP YOUR HEAD DOWNAND LIVE QUIETLY.",
+          "confidence": 0.94,
+          "text_ar": "بمجرد أن تنهي عقوبتك وتخرج، اخفض رأسك وعش بهدوء."
+        },
+        {
+          "text": "I'LL TAKE CARE OF YOUR LIVELIHOOD, SO DON'T WORRY.",
+          "confidence": 0.952,
+          "text_ar": "سأهتم بمعيشتك، لذا لا تقلق."
+        }
+      ]
+    }
+  ]
+}
