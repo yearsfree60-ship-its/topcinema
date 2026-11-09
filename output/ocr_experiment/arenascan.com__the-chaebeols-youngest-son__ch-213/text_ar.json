@@ -1,0 +1,877 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "213",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "READATHIVETOON.COM FORFASTER UPOATES!",
+          "confidence": 0.959,
+          "text_ar": "زوروا موقعنا لقراءة الفصول أسرع!"
+        },
+        {
+          "text": "DIRECTOR. THEY SAY THE SUNYANG LIFE BOARD MEETING IS SCHEDULED FOR NEXTWEEK.",
+          "confidence": 0.921,
+          "text_ar": "أيها المدير، يقولون إن اجتماع مجلس إدارة شركة سونيانغ للحياة مقرر عقده الأسبوع القادم."
+        },
+        {
+          "text": "YOU NEED TO COME UP WITH A PLAN.",
+          "confidence": 0.951,
+          "text_ar": "عليك أن تتوصل إلى خطة."
+        },
+        {
+          "text": "THE AGENDA IS OBVIOUSLYTOREPLACE THE CEO AND THE ENTIRE BOARD,ISN'T IT?",
+          "confidence": 0.921,
+          "text_ar": "الجدول الأعمال واضح بالطبع، وهو استبدال الرئيس التنفيذي ومجلس الإدارة بأكمله، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "THIS ISN'T THE TIME TO BE LAUGHING.",
+          "confidence": 0.957,
+          "text_ar": "هذا ليس وقت الضحك."
+        },
+        {
+          "text": "竖 坚开",
+          "confidence": 0.121,
+          "text_ar": ""
+        },
+        {
+          "text": "THEN SHOULD I CRY? WHAT ELSE CANIDO?",
+          "confidence": 0.961,
+          "text_ar": "إذن هل أبكي؟ ماذا يمكنني أن أفعل غير ذلك؟"
+        },
+        {
+          "text": "ISN'TIT THE RIGHT OF THE MAJORITY SHAREHOLDERS TO REPLACE THE MANAGEMENT?",
+          "confidence": 0.935,
+          "text_ar": "أليس من حق كبار المساهمين استبدال الإدارة؟"
+        },
+        {
+          "text": "SO YOU'RE JUST GOING TO SIT BACK AND WATCH?",
+          "confidence": 0.854,
+          "text_ar": "إذن ستكتفي بالجلوس ومراقبة الوضع؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "VICE PRESIDENT JANG DOHYUNG.",
+          "confidence": 0.967,
+          "text_ar": "نائب الرئيس جانغ دوهيونغ."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "THIS IS THE LAST TIME I'M GOING TO TELL YOU TO COME UP WITH A PLAN.",
+          "confidence": 0.929,
+          "text_ar": "هذه هي المرة الأخيرة التي أقول لك فيها أن تتوصل إلى خطة."
+        },
+        {
+          "text": "FROM NOW ON, NO MATTER THE SITUATION, YOU NEED TO PRESENT ME WITH SOLUTIONS.",
+          "confidence": 0.869,
+          "text_ar": "من الآن فصاعدًا، مهما كان الوضع، يجب أن تقدم لي حلولًا."
+        },
+        {
+          "text": "B-BUT, SIR...",
+          "confidence": 0.934,
+          "text_ar": "ل-لكن يا سيدي..."
+        },
+        {
+          "text": "THIS KIND OF THING...",
+          "confidence": 0.916,
+          "text_ar": "هذا النوع من الأمور..."
+        },
+        {
+          "text": "ARE YOUSAYING THAT BECAUSE THIS IS A STRUGGLE FORMANAGEMENT RIGHTS BETWEENSHAREHOLDERS, THERE'S NOTHING THAT CAN BE DONE?",
+          "confidence": 0.959,
+          "text_ar": "هل تقول إنه بما أن هذا صراع على حقوق الإدارة بين المساهمين، فلا يمكن فعل أي شيء؟"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "HAVE YOU THOUGHT ABOUT WAYS TO DISRUPT THE BOARD MEETING?",
+          "confidence": 0.961,
+          "text_ar": "هل فكرت في طرق لتعطيل اجتماع مجلس الإدارة؟"
+        },
+        {
+          "text": "HAVE YOU EVER CONSIDERED INCITING A COLLECTIVE BACKLASH FROM THE BOARD MEMBERS?",
+          "confidence": 0.915,
+          "text_ar": "هل فكرت يومًا في تحريض رد فعل عكسي جماعي من أعضاء مجلس الإدارة؟"
+        },
+        {
+          "text": "EVERYONCE IN A WHILE,LIKE THIS,",
+          "confidence": 0.94,
+          "text_ar": "من بين الحين والآخر، هكذا..."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "YOU HAVE TO SHOW YOUR UTTER DISAPPOINTMENT AND DISDAIN.",
+          "confidence": 0.877,
+          "text_ar": "عليك أن تظهر خيبة أملك الشديدة وازدراءك."
+        },
+        {
+          "text": "RATHER THAN LETTING THEM BELIEVE THEY HAVE MY ABSOLUTE TRUST,",
+          "confidence": 0.962,
+          "text_ar": "بدلاً من تركهم يعتقدون أنهم يحظون بثقتي المطلقة،"
+        },
+        {
+          "text": "YOU MUST KEEP THEM IN A MINDSET WHERE THEY FEEL THEY MUST DO ANYTHING TO EARN IT.",
+          "confidence": 0.931,
+          "text_ar": "يجب أن تبقيهم في حالة ذهنية يشعرون فيها بأنهم يجب أن يفعلوا أي شيء كسبًا لها."
+        },
+        {
+          "text": "I WILL RESOLVE THIS BOARD MEETING ISSUE MYSELF. DO YOU UNDERSTANDWHAT THAT IMPLIES?",
+          "confidence": 0.891,
+          "text_ar": "سأحل مشكلة اجتماع مجلس الإدارة بنفسي. هل تفهم ما يعنيه ذلك؟"
+        },
+        {
+          "text": "I AM SORRY.IT IS BECAUSE OF MY INCOMPETENCE...",
+          "confidence": 0.936,
+          "text_ar": "أنا آسف. هذا بسبب عدم كفائتي..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "I'M SAVING YOU, VICE PRESIDENT JANG.",
+          "confidence": 0.942,
+          "text_ar": "أنا أنقذك يا نائب الرئيس جانغ."
+        },
+        {
+          "text": "WHEN THE BOARD MEETING DO DDTINC IS HELD,",
+          "confidence": 0.4,
+          "text_ar": "عندما يُعقد اجتماع مجلس الإدارة هذا،"
+        },
+        {
+          "text": "WHO DO YOU THINK AMONG THE CURRENT MANAGEMENT WILL BE THE FIRST TO BE FIRED?",
+          "confidence": 0.88,
+          "text_ar": "من برأيك سيكون أول من يتم طرده من الإدارة الحالية؟"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "THE PERSON WHO GOT PROMOTED THE FASTEST THANKS TO ME.",
+          "confidence": 0.969,
+          "text_ar": "الشخص الذي ترقى بشكل أسرع بفضلـي."
+        },
+        {
+          "text": "ANYWAY THAT'S ENOUGH NAGGING FROMYOUR SUPERIOR.",
+          "confidence": 0.952,
+          "text_ar": "على أي حال، يكفي توبيخًا من رئيسك."
+        },
+        {
+          "text": "LISTEN CLOSELY TO WHAT I'M ABOUT TO SAY.",
+          "confidence": 0.882,
+          "text_ar": "استمع جيدًا لما أوشك قوله."
+        },
+        {
+          "text": "I'M LISTENING.",
+          "confidence": 0.962,
+          "text_ar": "أنا أستمع."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I NEED A LOW-LEVEL PROSECUTOR.",
+          "confidence": 0.932,
+          "text_ar": "أحتاج إلى مدعٍ عام ذي رتبة منخفضة."
+        },
+        {
+          "text": "IT CAN'T BE JUST ANY PLACE WITH NO POWER,SO THE SEOUL CENTRAL DISTRICT PROSECUTORSOFFICE WOULD BE IDEAL.",
+          "confidence": 0.927,
+          "text_ar": "لا يمكن أن يكون في أي مكان بلا سلطة، لذا فإن مكتب مدعي مقاطعة سيول المركزية سيكون مثاليًا."
+        },
+        {
+          "text": "ALOW-LEVEL PROSECUTOR?",
+          "confidence": 0.969,
+          "text_ar": "مدعٍ عام ذو رتبة منخفضة؟"
+        },
+        {
+          "text": "YES. EVERYONE WITHIN MY REACH IS AT LEAST A CHIEF PROSECUTOR.",
+          "confidence": 0.964,
+          "text_ar": "نعم. كل شخص في نطاق سلطتي هو رئيس مدعين على الأقل."
+        },
+        {
+          "text": "THE MORE GUTSY AND NOTORIOUSLY STUBBORN THEY ARE, THE BETTER.",
+          "confidence": 0.925,
+          "text_ar": "كلما كان أكثر جرأة وعنادًا بشكل سيء السمعة، كان ذلك أفضل."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "JUST KEEPINMIND THATYOUMIGHTENDUP LOSINGYOURPOSITION,SO MAKE SURE TO TELL THEM THAT WE WILL TAKE RESPONSIBILITY FOR THE AFTERMATH.",
+          "confidence": 0.948,
+          "text_ar": "فقط ضع في اعتبارك أنك قد تفقد منصبك، لذا تأكد من إخبارهم أننا سنتحمل المسؤولية عن التداعيات."
+        },
+        {
+          "text": "SO, YOU'RE LOOKING FOR A SNIPER.",
+          "confidence": 0.817,
+          "text_ar": "إذن، أنت تبحث عن قناص."
+        },
+        {
+          "text": "THAT'S RIGHT.",
+          "confidence": 0.977,
+          "text_ar": "هذا صحيح."
+        },
+        {
+          "text": ".WHO DO YOU INTEND TO TARGET?",
+          "confidence": 0.914,
+          "text_ar": "من تنوي استهدافه؟"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "VICE CHAIRMAN JIN DONGGI.",
+          "confidence": 0.976,
+          "text_ar": "نائب الرئيس جين دونغجي."
+        },
+        {
+          "text": "OH, DOJUN. COME ON IN.",
+          "confidence": 0.872,
+          "text_ar": "أهلاً دوجون. تفضل بالدخلول."
+        },
+        {
+          "text": "I'M SORRY TO",
+          "confidence": 0.895,
+          "text_ar": "أنا آسف لـ"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "TAKE UPYOUR TIME WHEN YOU MUST BE SO BUSY.",
+          "confidence": 0.942,
+          "text_ar": "إضاعة وقتك بينما يجب أن تكون مشغولا للغاية."
+        },
+        {
+          "text": "DON'T TALK NONSENSE.",
+          "confidence": 0.973,
+          "text_ar": "لا تقل هراء."
+        },
+        {
+          "text": "NO MATTER HOW BUSY I AM, HOW COULD I NOT FOR MAKE TIME YOU?",
+          "confidence": 0.907,
+          "text_ar": "بغض النظر عن مدى انشغالي، كيف لا أخصص وقتا لك؟"
+        },
+        {
+          "text": "NOW, WHAT IS IT YOU NEED?",
+          "confidence": 0.839,
+          "text_ar": "والآن، ما الذي تحتاجه؟"
+        },
+        {
+          "text": "$\\frac{} {}$",
+          "confidence": 0.783,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "I'VE HEARD SOMETHING RATHER STRANGE.",
+          "confidence": 0.957,
+          "text_ar": "لقد سمعت شيئًا غريبًا إلى حد ما."
+        },
+        {
+          "text": "I HEARD THAT A BOARD MEETING FOR SUNYANG LIFE IS BEING HELD NEXTWEEK.",
+          "confidence": 0.96,
+          "text_ar": "سمعت أنه يتم عقد اجتماع مجلس إدارة لشركة سونيانغ للحياة الأسبوع القادم."
+        },
+        {
+          "text": "DO YOU HAPPEN TO KNOW ANYTHING ABOUT IT?",
+          "confidence": 0.95,
+          "text_ar": "هل تعلم أي شيء عن هذا صدفة؟"
+        },
+        {
+          "text": "HMM?",
+          "confidence": 0.99,
+          "text_ar": "ممم؟"
+        },
+        {
+          "text": "WELL,ANY DIRECTOR CAN CALL FOR ABOARDMEETING, BUTI'MA BIT TAKENABACK BECAUSE THIS ONE WAS SCHEDULED WITHOUT MY PERMISSION.",
+          "confidence": 0.947,
+          "text_ar": "حسنًا، يمكن لأي مدير الدعوة لاجتماع مجلس إدارة، لكني متفاجئ بعض الشيء لأن هذا الاجتماع تم جدولته دون إذن مني."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "I WASN'T EVEN NOTIFIED.",
+          "confidence": 0.945,
+          "text_ar": "لم يتم إخطاري حتى."
+        },
+        {
+          "text": "LEGALLY SPEAKING, YOU'RE JUST A SHAREHOLDER, NOT A DIRECTOR. THAT'S WHY YOU DIDN'T RECEIVE A MEETING NOTICE.",
+          "confidence": 0.932,
+          "text_ar": "من الناحية القانونية، أنت مجرد مساهم، لست مديرًا. ولهذا السبب لم تتلق إشعارًا بالاجتماع."
+        },
+        {
+          "text": "WHY ARE YOU ACTING SO SURPRISED?",
+          "confidence": 0.973,
+          "text_ar": "لماذا تبدو متفاجئًا هكذا؟"
+        },
+        {
+          "text": "IWONDER HOWMUCH LONGERYOU'REGOING TO KEEP PLAYING DUMB. IT DOESN'T SUIT YOU.",
+          "confidence": 0.942,
+          "text_ar": "أتساءل إلى متى ستستمر في التظاهر بالجهل. هذا لا يناسبك."
+        },
+        {
+          "text": "IS THAT SO? I SUPPOSE THE DIRECTORS AT SUNYANG HEAVY INDUSTRIESORSUNYANG CONSTRUCTION",
+          "confidence": 0.949,
+          "text_ar": "أكذلك؟ أظن أن مديري سونيانغ للصناعات الثقيلة أو سونيانغ للبناء"
+        },
+        {
+          "text": "MUST HOLD BOARD MEETINGSWITHOUT YOURPERMISSIONALL THE TIME, THEN.",
+          "confidence": 0.956,
+          "text_ar": "يعقدون اجتماعات مجلس إدارة دون إذنك طوال الوقت إذن."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "image_id": 15,
+      "sentences": [
+        {
+          "text": "FINE. YOU CLEARLY ALREADY KNOW EVERYTHING,",
+          "confidence": 0.937,
+          "text_ar": "حسنا. أنت بوضوح تعرف كل شيء بالفعل،"
+        },
+        {
+          "text": "SO WHY BEAT AROUND THE BUSH?",
+          "confidence": 0.946,
+          "text_ar": "فلماذا اللف والدوران؟"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "image_id": 16,
+      "sentences": [
+        {
+          "text": "THEN, I HAVE A FEW QUESTIONS FOR YOU.",
+          "confidence": 0.934,
+          "text_ar": "إذن، لدي بضعة أسئلة لك."
+        },
+        {
+          "text": "IS THE BOARD MEETING AGENDA FOR NEXT WEEK TO REPLACE NOT ONLY THE CEO I APPOINTED,",
+          "confidence": 0.901,
+          "text_ar": "هل جدول أعمال اجتماع مجلس الإدارة للأسبوع القادم هو استبدال ليس فقط الرئيس التنفيذي الذي عينته،"
+        },
+        {
+          "text": "BUT THE ENTIRE BOARD OF DIRECTORS AS WELL?",
+          "confidence": 0.953,
+          "text_ar": "بل مجلس الإدارة بأكمله أيضًا؟"
+        },
+        {
+          "text": "NOT EVERYONE.",
+          "confidence": 0.917,
+          "text_ar": "ليس الجميع."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "image_id": 17,
+      "sentences": [
+        {
+          "text": "A FEW WILL SURVIVE.",
+          "confidence": 0.976,
+          "text_ar": "البعض سينجو."
+        },
+        {
+          "text": "I ASSUME THE DIRECTORS WHO SURVIVE WILL,OF COURSE, BE YOUR PEOPLE,UNCLE.",
+          "confidence": 0.861,
+          "text_ar": "أفترض أن المديرين الذين سينجون سيكونون بالطبع رجالك، يا عمي."
+        },
+        {
+          "text": "I SUPPOSE THAT'S ONE WAY TO LOOK AT IT, ISN'T IT?",
+          "confidence": 0.885,
+          "text_ar": "أظن أن هذه إحدى الطرق للنظر إلى الأمر، أليست كذلك؟"
+        },
+        {
+          "text": "STARTING WITH SUNYANG LIFE INSURANCE, YOU INTEND TOCALL BOARD MEETINGS FORTHE OTHER FINANCIAL SUBSIDIARIES",
+          "confidence": 0.922,
+          "text_ar": "بدءًا من شركة سونيانغ للتأمين على الحياة، تنوي الدعوة لعقد اجتماعات مجلس إدارة للشركات التابعة المالية الأخرى"
+        },
+        {
+          "text": "AND REPLACE ALL OF THEIR MANAGEMENT TEAMS AS WELL, DON'T YOU?",
+          "confidence": 0.922,
+          "text_ar": "واستبدال جميع فرق الإدارة الخاصة بهم أيضًا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "image_id": 18,
+      "sentences": [
+        {
+          "text": "PERHAPS.",
+          "confidence": 0.993,
+          "text_ar": "ربما."
+        },
+        {
+          "text": "IS ALL OF THIS DESIGNED TOENSURE I HAVE NO INFLUENCE OVER THE FINANCIAL GROUP... OR,",
+          "confidence": 0.929,
+          "text_ar": "هل تم تصميم كل هذا لضمان ألا يكون لي أي نفوذ على المجموعة المالية... أو،"
+        },
+        {
+          "text": "TO PUT IT PLAINLY, IS THIS ALL JUSt TO FORCE ME OUT?",
+          "confidence": 0.849,
+          "text_ar": "لنقلها بصراحة، أليست هذه محاولة لإقصائي؟"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "image_id": 19,
+      "sentences": [
+        {
+          "text": "I'M SORRY TO SAY, BUT IT'S TRUE.",
+          "confidence": 0.909,
+          "text_ar": "يؤسفني قول ذلك، لكنه صحيح."
+        },
+        {
+          "text": "YOU'LL NEED TO STEP AWAY FROM MANAGEMENT AND BE CONTENT AS A SHAREHOLDER WITH A 10% STAKE IN THE GROUP",
+          "confidence": 0.922,
+          "text_ar": "س تحتاج إلى الابتعاد عن الإدارة وأن تكتفي بكونك مساهمًا تبلغ حصته 10% في المجموعة"
+        },
+        {
+          "text": "ARE YOU ACTUALLY SORRY?",
+          "confidence": 0.954,
+          "text_ar": "هل تشعر بالأسف حقًا؟"
+        },
+        {
+          "text": "OF COURSE I AM.",
+          "confidence": 0.913,
+          "text_ar": "بالطبع أفعل."
+        },
+        {
+          "text": "NOT SORRY ENOUGH TO KEEP MY HEAD DOWN IN SHAME, BUT",
+          "confidence": 0.918,
+          "text_ar": "لست آسفًا بالقدر الذي يجعلني أحني رأسي خجلاً، ولكن"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "image_id": 20,
+      "sentences": [
+        {
+          "text": "JUST A LITTLE..?",
+          "confidence": 0.949,
+          "text_ar": "فقط قليلًا...؟"
+        },
+        {
+          "text": "$\\frac{}{}$ \\",
+          "confidence": 0.422,
+          "text_ar": ""
+        },
+        {
+          "text": "HEHEHE...",
+          "confidence": 0.957,
+          "text_ar": "ههه..."
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "image_id": 21,
+      "sentences": [
+        {
+          "text": "THEN, ONE LAST QUESTION.",
+          "confidence": 0.982,
+          "text_ar": "إذن، سؤال أخير."
+        },
+        {
+          "text": "WAS THE IDEA TO OUST ME SOMETHING THAT CAME FROMMY UNCLES FIRST? TWO",
+          "confidence": 0.874,
+          "text_ar": "هل فكرة إقصائي كانت شيئًا جاء من أعمامي أولاً؟"
+        },
+        {
+          "text": "OR WAS IT GRANDMOTHER'S DEMAND?",
+          "confidence": 0.978,
+          "text_ar": "أم أنه كان طلبًا من الجدة؟"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "image_id": 22,
+      "sentences": [
+        {
+          "text": "LET'S NOT CALL IT A DEMAND. LET'S JUST CALL IT A WISH.",
+          "confidence": 0.915,
+          "text_ar": "دعنا لا نسميه طلبًا. لنسمه أمنية فقط."
+        },
+        {
+          "text": "IT'S NOT EXACTLY NEWS THATYOURGRANDMOTHER LOATHES YOU, IS IT?",
+          "confidence": 0.925,
+          "text_ar": "ليس وكأنه خبر جديد أن جدتك تمقتك، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "image_id": 23,
+      "sentences": [
+        {
+          "text": "YOU'RE NEXT, AFTER YOUR MOTHER.",
+          "confidence": 0.939,
+          "text_ar": "أنت التالي، بعد والدتك."
+        },
+        {
+          "text": "CCO",
+          "confidence": 0.88,
+          "text_ar": ""
+        },
+        {
+          "text": "I'D LOVE TO SAY THAT, BUT IT'S NOT THE TIME YET.",
+          "confidence": 0.896,
+          "text_ar": "وددت لو أقول ذلك، لكن الوقت لم يحن بعد."
+        },
+        {
+          "text": "IF MY UNCLE DOESN'T GO ALONGWITH IT, THE BOARD MEETING NEXT WEEKMIGHT NOT BE A LONG SHOT, RIGHT?",
+          "confidence": 0.935,
+          "text_ar": "إذا لم يتماشَ عمي مع الأمر، فقد لا يكون اجتماع مجلس الإدارة الأسبوع القادم أمرًا مستبعدًا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "image_id": 24,
+      "sentences": [
+        {
+          "text": "GO ALONG WITH IT?",
+          "confidence": 0.95,
+          "text_ar": "أتماشى مع الأمر؟"
+        },
+        {
+          "text": "YOU THINK I'M JUST AN ACCOMPLICE IN THIS, DON'T YOU?",
+          "confidence": 0.873,
+          "text_ar": "تظن أنني مجرد شريك في هذا، أليس كذلك؟"
+        },
+        {
+          "text": "A YOUNGER BROTHER BEING DRAGGED AROUND BY HIS OLDER BROTHER'S WHIMS,ISTHATWHATYOU THINK OF ME?",
+          "confidence": 0.936,
+          "text_ar": "أخ أصغر يجرجر خلف نزوات أخيه الأكبر، أهذا ما تظنني عليه؟"
+        },
+        {
+          "text": "I CERTAINLY HOPE SO.",
+          "confidence": 0.984,
+          "text_ar": "آمل ذلك بالتأكيد."
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "image_id": 25,
+      "sentences": [
+        {
+          "text": "THIS TIME I'MA LITTLE SORRY,",
+          "confidence": 0.923,
+          "text_ar": "هذه المرة أنا آسف قليلاً،"
+        },
+        {
+          "text": "BUT I'M A LEADER,NOT A FOLLOWER. I JUST CAN'T BRING MYSELF TO TRAIL BEHIND SOMEONE ELSE.",
+          "confidence": 0.926,
+          "text_ar": "لكنني قائد، لست تابعًا. لا يمكنني أبدًا أن أجبر نفسي على السير خلف شخص آخر."
+        },
+        {
+          "text": "ONCE THE BOARD MEETING IS OVER,",
+          "confidence": 0.882,
+          "text_ar": "بمجرد انتهاء اجتماع مجلس الإدارة،"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "image_id": 26,
+      "sentences": [
+        {
+          "text": "THERE WON'T BE A SINGLE PERSON AT SUNYANG GROUP WHO WILL TAKE YOUR ORDERS.",
+          "confidence": 0.929,
+          "text_ar": "لن يبقى شخص واحد في مجموعة سونيانغ ينفذ أوامرك."
+        },
+        {
+          "text": "I HONESTLY THOUGHT I HADN'T DONE ANYTHING TO GET ON YOUR BAD SIDE, UNCLE.",
+          "confidence": 0.927,
+          "text_ar": "اعتقدت حقًا أنني لم أفعل أي شيء لأثير غضبك، يا عمي."
+        },
+        {
+          "text": "I SUPPOSE THAT WAS JUST WISHFUL THINKINGON MY PART.",
+          "confidence": 0.951,
+          "text_ar": "أفترض أن ذلك كان مجرد تمني خاطئ من جانبي."
+        },
+        {
+          "text": "YOU WERE ON EVERYONE'S BAD SIDE THE MOMENT YOU, A GRANDSON,",
+          "confidence": 0.823,
+          "text_ar": "لقد أثرت غضب الجميع اللحظة التي قمت فيها، كحفيد،"
+        },
+        {
+          "text": "INHERITED SHARES IN THIS GROUP.",
+          "confidence": 0.897,
+          "text_ar": "بوراثة أسهم في هذه المجموعة."
+        },
+        {
+          "text": "IF YOU HAD JUST RECEIVED A BANK ACCOUNT OR A PROPERTY DEED LIKE THE OTHER GRANDCHILDREN, I WOULD HAVE PUTYOU INAPOSITIONOF REAL IMPORTANCE.",
+          "confidence": 0.916,
+          "text_ar": "لو أنك تلقيت فقط حسابًا بنكيًا أو سند ملكية عقارية مثل باقي أحفادي، لكنت وضعته في منصـب ذي أهمية حقيقية."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "image_id": 27,
+      "sentences": [
+        {
+          "text": "YOUR TALENTS ARE FAR TOO VALUABLE TO GO TO WASTE, AFTER ALL.",
+          "confidence": 0.885,
+          "text_ar": "مواهبك قيمة للغاية بحيث لا يمكن إهدارها، بعد كل شيء."
+        },
+        {
+          "text": "SO, YOU'LL TOLERATE ME AS A CLEVER NEPHEW,",
+          "confidence": 0.914,
+          "text_ar": "إذن، ستتحملني كابن أخي ذكي،"
+        },
+        {
+          "text": "BUT YOU WON'T TOLERATE ME AS A RIVAL.IS THAT IT?",
+          "confidence": 0.923,
+          "text_ar": "لكنك لن تتحملني كمنافس. أهذا كل ما في الأمر؟"
+        },
+        {
+          "text": "A RIVAL?",
+          "confidence": 0.973,
+          "text_ar": "منافس؟"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "image_id": 28,
+      "sentences": [
+        {
+          "text": "ILL ACCEPT THAT WORD FROM YOU THIRTY YEARS FROM NOW.",
+          "confidence": 0.926,
+          "text_ar": "سأقبل هذه الكلمة منك بعد ثلاثين عامًا من الآن."
+        },
+        {
+          "text": "NO MATTER HOW BRILLIANT YOU ARE, RIGHT NOW YOU'RE JUST A CHILD WHO WOULD BE HELPLESS AGAINST WHATS COMING.",
+          "confidence": 0.903,
+          "text_ar": "مهما كنت عبقريًا، فأنت الآن مجرد طفل سيكون عاجزًا أمام ما هو قادم."
+        },
+        {
+          "text": "BUSINESS ISN'T JUST ABOUT THE NUMBERS.",
+          "confidence": 0.954,
+          "text_ar": "الأعمال ليست مجرد أرقام."
+        },
+        {
+          "text": "IF YOU WANT TO UNDERSTAND THE TRUE MEANING OF THAT, YOU'LL MEANING OFTHAT, YOULL NEED ANOTHER THIRTY YEARS OF STUDY.",
+          "confidence": 0.868,
+          "text_ar": "إذا كنت تريد فهم المعنى الحقيقي لذلك، ستحتاج إلى ثلاثين عامًا أخرى من الدراسة."
+        },
+        {
+          "text": "THIS... PUTS ME IN A DIFFICULT POSITION.",
+          "confidence": 0.961,
+          "text_ar": "هذا... يضعني في موقف صعب."
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "image_id": 29,
+      "sentences": [
+        {
+          "text": "I WAS PLANNING TO FINISH MY STUDIES IN ABOUT THREE YEARS.",
+          "confidence": 0.901,
+          "text_ar": "كنت أخطط لإنهاء دراستي في غضون ثلاث سنوات تقريبًا."
+        },
+        {
+          "text": "BY THE AGE OF THIRTY,ISN'T ITTIME TO START PUTTINGWHAT I'VE LEARNED INTO PRACTICE?",
+          "confidence": 0.923,
+          "text_ar": "أليس بلوغ الثلاثين هو الوقت المناسب لبدء وضع ما تعلمته موضع التنفيذ؟"
+        },
+        {
+          "text": "WELL, THAT'S FOR YOU TO DECIDE.",
+          "confidence": 0.915,
+          "text_ar": "حسنًا، هذا يعود لك لتحديده."
+        },
+        {
+          "text": "IS THAT ALL YOU WANTED TO ASK? THEN YOU SHOULD GET GOING.",
+          "confidence": 0.952,
+          "text_ar": "أهذا كل ما أرادت سؤاله؟ إذن عليك بالانصراف."
+        },
+        {
+          "text": "OH, AND SOMEONE ELSE WILL BE USING YOUR OFFICE STARTING NEXT WEEK.",
+          "confidence": 0.946,
+          "text_ar": "أه، وشخص آخر سيستخدم مكتبك بدءًا من الأسبوع القادم."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "image_id": 30,
+      "sentences": [
+        {
+          "text": "SINCE YOU'RE ALREADY HERE, YOU MIGHT AS WELL PACK YOUR THINGS AND CLEAR IT OUT, RIGHT?",
+          "confidence": 0.928,
+          "text_ar": "بما أنك هنا بالفعل، فربما يجدر بك حزم أمتعتك وإخلاؤه، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "image_id": 31,
+      "sentences": [
+        {
+          "text": "MAKE SURE YOU DON'T MISS TONIGHT'S NEWS.",
+          "confidence": 0.764,
+          "text_ar": "احرص على ألا تفوتك أخبار الليلة."
+        },
+        {
+          "text": "YOU'LL BE ABLE TO HEAR MY ANSWER.",
+          "confidence": 0.916,
+          "text_ar": "ستتمكن من سماع إجابتي."
+        },
+        {
+          "text": "WHY? ARE YOUPLANNING TO DENOUNCE YOUR UNCLE FOR SEIZING HIS NEPHEW'S INHERITANCE?",
+          "confidence": 0.933,
+          "text_ar": "لماذا؟ أتنوي التنديد بعمك لاستيلائه على ميراث ابن أخيه؟"
+        },
+        {
+          "text": "SURE, IF IT'S YOU, THE REPORTERS WILL SWARM LIKE BEES.",
+          "confidence": 0.927,
+          "text_ar": "بالتأكيد، إن كنت أنت، فسيتدفق الصحفيون كالنحل."
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "image_id": 32,
+      "sentences": [
+        {
+          "text": "IT WOULD MAKE FOR QUITE A HOT NEWS STORY, AFTER ALL.",
+          "confidence": 0.938,
+          "text_ar": "سيكون ذلك مادة إخبارية ساخنة بحق."
+        },
+        {
+          "text": "HOWEVER...",
+          "confidence": 0.906,
+          "text_ar": "ومع ذلك..."
+        },
+        {
+          "text": "NO, DO WHATEVER YOU WANT.",
+          "confidence": 0.975,
+          "text_ar": "لا، افعل ما شئت."
+        },
+        {
+          "text": "IF DOING AT LEAST THAT MUCH HELPS YOU VENTYOUR ANGER,I SUPPOSE THAT'S A RELIEF.",
+          "confidence": 0.883,
+          "text_ar": "إذا كان فعل هذا القدر على الأقل سيساعدك في تنفيس غضبك، فأعتقد أن هذا مريح."
+        },
+        {
+          "text": "DO YOU REALLY THINK I'D APPEAR ON THE NEWS..",
+          "confidence": 0.932,
+          "text_ar": "أَتظن حقًا أنني سأظهر في الأخبار..."
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "image_id": 33,
+      "sentences": [
+        {
+          "text": "JUST TO BLOW OFF SOME STEAM?",
+          "confidence": 0.943,
+          "text_ar": "فقط لتفريغ بعض الغضب؟"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "image_id": 34,
+      "sentences": [
+        {
+          "text": "YOU'RE GOING TO WANT TO",
+          "confidence": 0.942,
+          "text_ar": "سترغب في"
+        },
+        {
+          "text": "SKIPDINNER TONIGHT.",
+          "confidence": 0.993,
+          "text_ar": "تخطي العشاء الليلة."
+        },
+        {
+          "text": "： :_ra}$ ： 号： JHS",
+          "confidence": 0.507,
+          "text_ar": ""
+        },
+        {
+          "text": "READATHIVETOON.COM FOR FASTER UPATES!",
+          "confidence": 0.943,
+          "text_ar": "زوروا موقعنا لقراءة الفصول أسرع!"
+        },
+        {
+          "text": "WARNING!! WE ARE RECRUITING NAVER RAW PROVIDERS. THE POSITION IS PAID. PLEASE CONTACT US ON OUR DISCORD SERVER IF YOU CAN PROVIDE RAW",
+          "confidence": 0.95,
+          "text_ar": "تحذير!! نحن نُتوظّف مزودي نصوص أولية لنافر. الوظيفة مدفوعة الأجر. يرجى الاتصال بنا على خادم الديسكورد إذا كنت تستطيع توفير النصوص الأولية."
+        },
+        {
+          "text": "DISCORD.GG/WSQKKQQ9R8",
+          "confidence": 0.984,
+          "text_ar": "DISCORD.GG/WSQKKQQ9R8"
+        }
+      ]
+    }
+  ]
+}
