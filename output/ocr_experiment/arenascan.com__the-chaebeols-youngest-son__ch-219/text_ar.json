@@ -1,0 +1,692 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "219",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "THISWORKISAWORKOFFICTION ANYRESEMBLANCETOACTUALPERSONS ORGANIZATIONSRELIGIONSPLACES,OR EVENTSISENTIRELYCOINCIDENTAL",
+          "confidence": 0.94,
+          "text_ar": "هذا العمل خيالي تماماً، وأي تشابه بينه وبين أشخاص حقيقيين، أو منظمات، أو ديانات، أو أماكن، أو أحداث، هو محض صدفة بحتة."
+        },
+        {
+          "text": "ARE THERE NONE?",
+          "confidence": 0.97,
+          "text_ar": "ألا يوجد غيرهم؟"
+        },
+        {
+          "text": "THEN WE WILL MOVE ON TO THE SECOND AGENDA ITEM.",
+          "confidence": 0.948,
+          "text_ar": "إذن، سننتقل إلى بند جدول الأعمال الثاني."
+        },
+        {
+          "text": "IT CONCERNS THE DISMISSAL OF THE DIRECTORS FROM OUR AFFILIATED COMPANIES.",
+          "confidence": 0.946,
+          "text_ar": "وهو يتعلق بإعفاء المديرين من الشركات التابعة لنا."
+        },
+        {
+          "text": "I WOULD LIKE TO MAKE APROCEDURAL REMARK.",
+          "confidence": 0.925,
+          "text_ar": "أود الإدلاء بملاحظة إجرائية."
+        },
+        {
+          "text": "I'D LIKE TO MAKE A PROPOSAL TO SAVE TIME.",
+          "confidence": 0.907,
+          "text_ar": "أود تقديم اقتراح لتوفير الوقت."
+        },
+        {
+          "text": "IF THERE ARENO PARTICULAR OPINIONS ON TODAY'S AGENDA, HOW ABOUT WE CONCLUDE THEBOARD MEETING HERE?",
+          "confidence": 0.932,
+          "text_ar": "إذا لم تكن هناك آراء محددة بشأن جدول أعمال اليوم، فما رأيكم أن نختتم اجتماع مجلس الإدارة هنا؟"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "SINCE THERE ARE NO FURTHER OPINIONS, I ANNOUNCE THAT TODAY'S AGENDA ITEMS ARE WITHDRAWN.",
+          "confidence": 0.942,
+          "text_ar": "بما أنه لا توجد آراء أخرى، فإنني أعلن سحب بنود جدول أعمال اليوم."
+        },
+        {
+          "text": "THIS CONCLUDES THE EXTRAORDINARY THEEXTRAORDINARY BOARD MEETING.",
+          "confidence": 0.98,
+          "text_ar": "وبهذا ينتهي اجتماع مجلس الإدارة الاستثنائي."
+        },
+        {
+          "text": "CT C",
+          "confidence": 0.104,
+          "text_ar": "نقرير"
+        },
+        {
+          "text": "WOULD THE PRESIDENTS OF THE AFFILIATES PLEASE REMAIN BEHIND FOR A MOMENT.",
+          "confidence": 0.931,
+          "text_ar": "أرجو من رؤساء الشركات التابعة البقاء خلفهم لحظة."
+        },
+        {
+          "text": "THIS IS THE NEWLY COMPILED PERSONNEL ROSTER.",
+          "confidence": 0.957,
+          "text_ar": "هذه هي قائمة الموظفين المُعدَّلة حديثاً."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "LET'S TAKE THIS OPPORTUNITY TO COMPLETELY CLEAR OUT THE TWO VICE CHAIRMEN'S PEOPLE.",
+          "confidence": 0.946,
+          "text_ar": "لنغتنم هذه الفرصة لتطهير أتباع نائبي الرئيس تماماً."
+        },
+        {
+          "text": "PLEDGING THEIR LOYALTY ELSEWHERE,",
+          "confidence": 0.984,
+          "text_ar": "بعد أن أعلنوا ولاءهم لمكان آخر،"
+        },
+        {
+          "text": "YET DRAWING THEIR SALARIES FROM OUR COmPaNY... I CAn nO LONGER STAND BY AND WATCH SUCH BRAZEN BEHAVIOR. BEHAVIOK.",
+          "confidence": 0.795,
+          "text_ar": "وما زالوا يتقاضون رواتبهم من شركتنا... لا يمكنني الوقوف مكتوف الأيدي ومراقبة هذا التصرف الوقح."
+        },
+        {
+          "text": "THEN THIS LIST IS..?.",
+          "confidence": 0.82,
+          "text_ar": "إذن هذه القائمة...؟"
+        },
+        {
+          "text": "I HANDED IT OUT FOR YOU TO DOUBLE-CHECK.",
+          "confidence": 0.904,
+          "text_ar": "لقد وزعتها لتقوموا بمراجعتها بدقة."
+        },
+        {
+          "text": "FIRST, CHECK IF ANYONE ON THERE HAS BEEN MISJUDGED.",
+          "confidence": 0.854,
+          "text_ar": "أولاً، تحققوا مما إذا كان قد تم ظلم أي شخص فيها."
+        },
+        {
+          "text": "JUST IN CASE, I WILL SAY THIS IN ADVANCE.",
+          "confidence": 0.916,
+          "text_ar": "احتياطاً، سأقول هذا مقدماً."
+        },
+        {
+          "text": "DON'T WORRY ABOUT WHAT I MIGHT THINK,",
+          "confidence": 0.956,
+          "text_ar": "لا تقلقوا بشأن ما قد أفكر فيه،"
+        },
+        {
+          "text": "AND EVALUATE THEM ACCURATELY.",
+          "confidence": 0.956,
+          "text_ar": "وقيموهم بدقة."
+        },
+        {
+          "text": "EPISODE 219",
+          "confidence": 0.97,
+          "text_ar": "الحلقة 219"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "PRO",
+          "confidence": 0.974,
+          "text_ar": "الادعاء"
+        },
+        {
+          "text": "...FAILING TO PROPERLYVERIFYTHE TIPS AND EVIDENCE,",
+          "confidence": 0.802,
+          "text_ar": "...الفشل في التحقق بشكل صحيح من النصائح والأدلة،"
+        },
+        {
+          "text": "IDEEPLYAPOLOGIZEFOR CAUSING CONFUSIONDUE TO SUCH A HASTY INVESTIGATION",
+          "confidence": 0.915,
+          "text_ar": "أعتذر بشدة لتسببي في الارتباك بسبب هذا التحقيق المتسرع."
+        },
+        {
+          "text": "IALSO WANTTO EXPRESSMY APOLOGIESTOTHOSEWHOWERESUBJECTED TOUNNECESSARYMISUNDERSTANDINGS BECAUSEOF THIS.",
+          "confidence": 0.93,
+          "text_ar": "أود أيضاً التعبير عن اعتذاري لأولئك الذين تعرضوا لسوء فهم غير لزوم بسببه."
+        },
+        {
+          "text": "I PLAN TOLEAVETHE PROSECUTION, TAKING RESPONSIBILITYFOR TARNISHINGITS HONOR WITH MYPERSONAL MISTAKES...",
+          "confidence": 0.905,
+          "text_ar": "أخطط لمغادرة النيابة، تحملًا المسؤولية عن تلويث شرفها بأخطائي الشخصية..."
+        },
+        {
+          "text": "# PROSECUTION SERVIC",
+          "confidence": 0.554,
+          "text_ar": "جهاز النيابة العامة"
+        },
+        {
+          "text": "WHAT DID WE DECIDE TO DO WITH THAT GUY?",
+          "confidence": 0.93,
+          "text_ar": "ما الذي قررنا فعله بهذا الرجل؟"
+        },
+        {
+          "text": "HE WILL JOIN MY FATHER'S LEGAL TEAM.",
+          "confidence": 0.918,
+          "text_ar": "سوانضم إلى الفريق القانوني لوالدي."
+        },
+        {
+          "text": "WE'REPAYINGHIMTEN TIMES A PROSECUTOR'S SALARY TO BRING HIM IN, SO IT'S NOT A BAD DEAL FOR HIM EITHER.",
+          "confidence": 0.898,
+          "text_ar": "نحن ندفع له عشرة أضعاف راتب المدعي العام لجلبه، لذا فهي صفقة ليست سيئة بالنسبة له أيضاً."
+        },
+        {
+          "text": "HE CHANGED HIS DESTINY WITH A SINGLE PRESS CONFERENCE.",
+          "confidence": 0.939,
+          "text_ar": "لقد غيّر مصيره بمؤتمر صحفي واحد."
+        },
+        {
+          "text": "IF H",
+          "confidence": 0.318,
+          "text_ar": "إذا هـ"
+        },
+        {
+          "text": "IFF U",
+          "confidence": 0.338,
+          "text_ar": "إذا كـ"
+        },
+        {
+          "text": "AND THE MONEY IN LABUAN?",
+          "confidence": 0.933,
+          "text_ar": "وماذا عن الأموال في لابوان؟"
+        },
+        {
+          "text": "ONCE THINGS ARE WRAPPED UP HERE, I'LL FLY WRAPPED UP HERE, ILL FLY OVER AND WITHDRAW IT MYSELF.",
+          "confidence": 0.907,
+          "text_ar": "بمجرد انتهاء الأمور هنا، سأطير إلى هناك وأسحبها بنفسي."
+        },
+        {
+          "text": "AND I WILL DESTROY ALL THE RELATED DOCUMENTS.",
+          "confidence": 0.972,
+          "text_ar": "وسأدمر جميع المستندات ذات الصلة."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "DON'T THINK ABOUT USING IT A SECOND TIME.",
+          "confidence": 0.928,
+          "text_ar": "لا تفكر في استخدامها مرة ثانية."
+        },
+        {
+          "text": "YOU'RE SMART, SO I TRUST yOU WON'T DO ANYTHING THAT FOOLISH.",
+          "confidence": 0.817,
+          "text_ar": "أنت ذكي، لذا أثق أنك لن تفعل شيئاً بهذه السذاجة."
+        },
+        {
+          "text": "YOU CAN TRUST ME.",
+          "confidence": 0.938,
+          "text_ar": "يمكنك الوثوق بي."
+        },
+        {
+          "text": "WE'RE ON THE SAME SIDE, HAVING EVEN DRAFTED A JOINT VOTING RIGHTS AGREEMENT.",
+          "confidence": 0.936,
+          "text_ar": "نحن في نفس الطرف، بل إننا صغنا اتفاقية حقوق تصويت مشتركة."
+        },
+        {
+          "text": "IT'S NOT TOO LATE FOR YOU TO CHOOSE A SIDE.",
+          "confidence": 0.958,
+          "text_ar": "لم يفت الأوان بعد لتختار صفاً."
+        },
+        {
+          "text": "TRY SWEET-TALKING DONG-KI TO LOOK AT THE BIGGER PICTURE.",
+          "confidence": 0.958,
+          "text_ar": "حاول إقناع دونغجي برؤية الصورة الكبيرة."
+        },
+        {
+          "text": "IF BOTH YOU AND I REIN IN OUR GREED A LITTLE,",
+          "confidence": 0.863,
+          "text_ar": "إذا كبحنا أنا وأنت جشعنا قليلاً،"
+        },
+        {
+          "text": "SPLITTING SUNYANG GROUP IN TWO ISN'T AN IMPOSSIBLE TASK.",
+          "confidence": 0.945,
+          "text_ar": "فإن تقسيم مجموعة سونيانغ إلى قسمين ليس بالمهمة المستحيلة."
+        },
+        {
+          "text": "I'LL THINK ABOUT IT WHEN I'm A LITTLE OLDER.",
+          "confidence": 0.865,
+          "text_ar": "سأفكر في الأمر عندما أصبح أكبر سناً بعض الشيء."
+        },
+        {
+          "text": "IT TURNS OUT BEING YOUNG IS QUITE THE HANDICAP IN MANAGEMENT.",
+          "confidence": 0.941,
+          "text_ar": "يتبين أن كون المرء صغيراً في السن يمثل عائقاً كبيراً في الإدارة."
+        },
+        {
+          "text": "I CAN'T WAIT THAT LONG. I CAN CHANGE MY MIND AT ANY TIME.",
+          "confidence": 0.933,
+          "text_ar": "لا يمكنني الانتظار طويلاً. يمكنني تغيير رأيي في أي وقت."
+        },
+        {
+          "text": "I WILL KEEP THAT IN MIND, FIRST UNCLE.",
+          "confidence": 0.905,
+          "text_ar": "سأضع ذلك في الاعتبار، أيها العمي الأول."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "YOU..!",
+          "confidence": 0.869,
+          "text_ar": "أنت...!"
+        },
+        {
+          "text": "PUNK!",
+          "confidence": 0.969,
+          "text_ar": "ايها الاحمق!"
+        },
+        {
+          "text": "JIN DONG-KI!",
+          "confidence": 0.972,
+          "text_ar": "جين دونغجي!"
+        },
+        {
+          "text": "WHAT ARE YOU DOING WITH HIM VOING WTIH HIM RIGHT NOW?",
+          "confidence": 0.855,
+          "text_ar": "ما الذي تفعل مع هذا الفتى الآن؟"
+        },
+        {
+          "text": "M-MOTHER?!",
+          "confidence": 0.996,
+          "text_ar": "أ-أمي؟!"
+        },
+        {
+          "text": "AND YOU, ARE YOU NOT'EVEN GOING TO GREET YOUR GRANDMOTHER ANYMORE?",
+          "confidence": 0.962,
+          "text_ar": "وأنت، ألا تنوي حتى تحية جدتك بعد الآن؟"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "W-WELL...",
+          "confidence": 0.915,
+          "text_ar": "ح-حسناً..."
+        },
+        {
+          "text": "MOTHER, PLEASE TAKE A SEAT FIRST.",
+          "confidence": 0.978,
+          "text_ar": "أمي، من فضلك اجلسي أولاً."
+        },
+        {
+          "text": "THERE'S NO NEED TO BE ANGRY, SO PLEASE CALM DOWN.",
+          "confidence": 0.958,
+          "text_ar": "لا داعي للغضب، لذا ارجوكِ اهدئي."
+        },
+        {
+          "text": "SUDDENLY,I WANT TO SEE GRANDFATHER.",
+          "confidence": 0.915,
+          "text_ar": "فجأة، أردت رؤية الجد."
+        },
+        {
+          "text": "Dtar TAK",
+          "confidence": 0.815,
+          "text_ar": "خطوات"
+        },
+        {
+          "text": "I'M HEADING TO GUNSAN NOW.",
+          "confidence": 0.952,
+          "text_ar": "أنا متوجه إلى غونسาน الآن."
+        },
+        {
+          "text": "GET READY.",
+          "confidence": 0.986,
+          "text_ar": "استعد."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "WHYGUNSAN ALL OF A SUDDEN?",
+          "confidence": 0.916,
+          "text_ar": "لماذا غونسาน فجأة؟"
+        },
+        {
+          "text": "DIRECTOR, YOU HAVEN'T VISITED HIS GRAVE YOURSELF YET, HAVE yOU?",
+          "confidence": 0.878,
+          "text_ar": "أيها المدير، لم تزور قبره بنفسك بعد، أليس كذلك؟"
+        },
+        {
+          "text": "I DIDN'T KNOW WHEN YOU'D GO, SO I THOUGHT I'D MAKE The TImE FOR YOU.",
+          "confidence": 0.783,
+          "text_ar": "لم أكن أعرف متى ستذهب، لذا فكرت في توفير الوقت لك."
+        },
+        {
+          "text": "IS THAT THE ONLY REASON?",
+          "confidence": 0.92,
+          "text_ar": "أهذا هو السبب الوحيد؟"
+        },
+        {
+          "text": "ARE YOU SAYING YOU DON'T BELIEVE ME?",
+          "confidence": 0.954,
+          "text_ar": "هل تقول إنك لا تصدقني؟"
+        },
+        {
+          "text": "OF COURSE...",
+          "confidence": 0.87,
+          "text_ar": "بالطبع..."
+        },
+        {
+          "text": "WELL, IT'S PARTLY TO APOLOGIZE IN ADVANCE SINCE IT SEEMS I'LL BE DOING SOMETHING I NEEDFORGIVENESS FOR,",
+          "confidence": 0.94,
+          "text_ar": "حسناً، إنه جزئياً للاعتذار مقدماً نظراً لأنني على ما يبدو سأقوم بشيء أحتاج إلى المغفرة عليه،"
+        },
+        {
+          "text": "BUT MY MAIN PURPOSE IS FOR YOU, DIRECTOR.",
+          "confidence": 0.91,
+          "text_ar": "لكن هدفي الأساسي هو من أجلك أنت، أيها المدير."
+        },
+        {
+          "text": "IS IT BECAUSE OF MADAME LEE PIL-OK?",
+          "confidence": 0.965,
+          "text_ar": "هل هذا بسبب السيدة لي بيل-وك؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "NOBODY CAN MATCH THIS MAN'S SHARP INTUITION.",
+          "confidence": 0.92,
+          "text_ar": "لا أحد يمكنه مجاراة حدس هذا الرجل الحاد."
+        },
+        {
+          "text": "IS THERE ANY PROGRESS ON WHAT I INSTRUCTED?",
+          "confidence": 0.948,
+          "text_ar": "هل هناك أي تقدم فيما أوعزت به؟"
+        },
+        {
+          "text": "YES, I WAS ACTUALLY JUST ABOUT TO REPORT TO YOU.",
+          "confidence": 0.938,
+          "text_ar": "نعم، كنت في الواقع على وشك تقديم التقرير لك."
+        },
+        {
+          "text": "YOU SEEMED PREOCCUPIED WITH THE BOARD MEETING, SO I WAITED.",
+          "confidence": 0.964,
+          "text_ar": "بدوتَ منشغالاً باجتماع مجلس الإدارة، لذا انتظرت."
+        },
+        {
+          "text": "SO IT ISN'T COMPLETELY SPOTLESS.",
+          "confidence": 0.939,
+          "text_ar": "إذن فهو ليس نظيفاً تماماً."
+        },
+        {
+          "text": "RIGHT, BUT WE DON'T HAVE THE LEVEL OF EVIDENCE YOUWANT.",
+          "confidence": 0.946,
+          "text_ar": "صحيح، لكن ليس لدينا مستوى الأدلة الذي تريده."
+        },
+        {
+          "text": "I'VE HEARD THE GENERAL GIST OF THE SITUATION FROM THE MOUTHS OF THOSE UNDERWORLD THUGS, BUT THEY WON'T TESTIFY.",
+          "confidence": 0.932,
+          "text_ar": "لقد سمعت جوهر الموقف من أفواه هؤلاء البلطجية، لكنهم لن يشهدوا."
+        },
+        {
+          "text": "IF THE JOB WAS HANDLED CLEANLY,",
+          "confidence": 0.943,
+          "text_ar": "لو تم التعامل مع العمل بنظافة،"
+        },
+        {
+          "text": "WOULDN'T THERE BE A *POINT OF CONTACT?",
+          "confidence": 0.977,
+          "text_ar": "ألم تكن هناك نقطة اتصال؟"
+        },
+        {
+          "text": "*POINTOFCONTACT, RECEPTION DESK, CIVIL SERVICE WINDOW",
+          "confidence": 0.953,
+          "text_ar": "نقطة اتصال، مكتب الاستقبال، نافذة الخدمة المدنية"
+        },
+        {
+          "text": "SOMEONE LIKE YOU, DIRECTOR.",
+          "confidence": 0.936,
+          "text_ar": "شخص مثلك، أيها المدير."
+        },
+        {
+          "text": "YES, IT'S SOMEONE WHO HAS WORKED ALONGSIDE MADAME LEE FOR A VERY LONG TIME. THEY'RE WELL KNOWN FOR BEINGGOOD AT THEIR JOB.",
+          "confidence": 0.919,
+          "text_ar": "نعم، إنه شخص عمل إلى جانب السيدة لي لفترة طويلة جداً. وهم معروفون ببراعتهم في عملهم."
+        },
+        {
+          "text": "THEN IF WE POKE AROUND THE PEOPLE WHO WORKED UNDER THEM, WON'T WE FIND SOMETHING?",
+          "confidence": 0.945,
+          "text_ar": "إذن، إذا بحثنا بين الأشخاص الذين عملوا تحت إمرتهم، ألن نجد شيئاً؟"
+        },
+        {
+          "text": "THEY WOULDN'T ACCEPT IT, EVEN FOR BILLIONSOF WON.",
+          "confidence": 0.95,
+          "text_ar": "لن يقبلوا، حتى مقابل مليارات الوون."
+        },
+        {
+          "text": "EVERYONE WANTS TO LIVE A LONG LIFE, AFTER ALL.",
+          "confidence": 0.943,
+          "text_ar": "الجميع يرغب في حياة طويلة، بعد كل شيء."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "BESIDES, APPROACHING THEM RECKLESSLY WILL RUIN EVERYTHING.",
+          "confidence": 0.957,
+          "text_ar": "إلى جانب ذلك، الاقتراب منهم بتهور سيخرب كل شيء."
+        },
+        {
+          "text": "WOULD THEYREALY REFUSE, EVEN IF I OFFERED TENS OF BILLIONS InSTEAD OF JUST BILLIONS?",
+          "confidence": 0.804,
+          "text_ar": "هل يرفضون حقاً، حتى لو عرضت عشرات المليارات بدلاً من المليارات وحدها؟"
+        },
+        {
+          "text": "THEONES WHO KILED E..",
+          "confidence": 0.808,
+          "text_ar": "أولئك الذين قتلوني..."
+        },
+        {
+          "text": "WE MIGHT BE A BIT STUPID.",
+          "confidence": 0.944,
+          "text_ar": "قد نكون أغبياء بعض الشيء."
+        },
+        {
+          "text": "BUT WE AREN'T SO STUPID AS TO BITE OFF MORE THAN WE CAN CHEW.",
+          "confidence": 0.951,
+          "text_ar": "لكننا لسنا أغبياء لدرجة قضم أكثر مما يمكننا مضغه."
+        },
+        {
+          "text": "THE ONE WHO KILLED ME REFUSED HUNDREDS OF BILLIONS.",
+          "confidence": 0.958,
+          "text_ar": "الذي قتلني رفض مئات المليارات."
+        },
+        {
+          "text": "PEOPLE ARE DIFFERENT LIKE THAT.",
+          "confidence": 0.962,
+          "text_ar": "الناس مختلفون هكذا."
+        },
+        {
+          "text": "I HAVE TO DISCARD THE IDEA THAT EVERYONE CAN BE BOUGHT WITH MONEY.",
+          "confidence": 0.92,
+          "text_ar": "يجب أن أتخلى عن فكرة أن الجميع يمكن شراؤهم بالمال."
+        },
+        {
+          "text": "Nror A",
+          "confidence": 0.257,
+          "text_ar": "لا شيء"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WELL, LET'S LOOK FORA WAY.",
+          "confidence": 0.926,
+          "text_ar": "حسناً، لنبحث عن طريقة."
+        },
+        {
+          "text": "NO MATTER HOW STURDY THE FORTRESS WALLS ARE, THERE'S BOUND TO BE A CRACK SOMEWHERE, RIGHT?",
+          "confidence": 0.933,
+          "text_ar": "مهما كانت جدران القلعة متينة، فلا بد أن تكون هناك ثغرة في مكان ما، أليس كذلك؟"
+        },
+        {
+          "text": "DON'T TELL ME THIS GUY...",
+          "confidence": 0.944,
+          "text_ar": "لا تقل لي إن هذا الرجل..."
+        },
+        {
+          "text": "IS ACTUALLY BAWLING HIS EYES OUT?",
+          "confidence": 0.938,
+          "text_ar": "يبكي حقاً بحرقة؟"
+        },
+        {
+          "text": "DIRECTOR, PLEASE GO UP FIRST.",
+          "confidence": 0.961,
+          "text_ar": "أيها المدير، تفضل بالصعود أولاً."
+        },
+        {
+          "text": "I'MGOING TO HAVE ACUPOF COFFEE AND FOLLOWSLOWLY.",
+          "confidence": 0.945,
+          "text_ar": "سأتناول فنجاناً من القهوة وأتبعك ببطء."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "THANK YOU FOR YOUR CONSIDERATION.",
+          "confidence": 0.951,
+          "text_ar": "شكراً لاهتمامك."
+        },
+        {
+          "text": "EE 早",
+          "confidence": 0.363,
+          "text_ar": "عفواً"
+        },
+        {
+          "text": "HE REALLY WAS CRYING.",
+          "confidence": 0.992,
+          "text_ar": "لقد كان يبكي حقاً."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "SO, FOR MY SAKE, ATLEAST,",
+          "confidence": 0.944,
+          "text_ar": "إذن، من أجلي أنا على الأقل،"
+        },
+        {
+          "text": "BE GENEROUS AND FORGIVE YOUR GRANDMOTHER.",
+          "confidence": 0.966,
+          "text_ar": "كن كريماً واصفح عن جدتك."
+        },
+        {
+          "text": "AS YOU ASKED, GRANDAtHER,",
+          "confidence": 0.706,
+          "text_ar": "كما طلبتِ، يا جدتي،"
+        },
+        {
+          "text": "IFORGAVE GRANDMOTHER FOR THE WRONGS SHE COMMITTED IN THE PAST.",
+          "confidence": 0.877,
+          "text_ar": "سامحت الجدة على الأخطاء التي ارتكبتها في الماضي."
+        },
+        {
+          "text": "BUT. I DON'T THINK I CAN KEEP my PROMISE.",
+          "confidence": 0.799,
+          "text_ar": "لكن، لا أعتقد أنني أستطيع الحفاظ على وعدي."
+        },
+        {
+          "text": "NOT FOR THE PAST, BUT FOR MY FUTURE.",
+          "confidence": 0.866,
+          "text_ar": "ليس من أجل الماضي، بل من أجل مستقبلي."
+        },
+        {
+          "text": "LET'S GO.",
+          "confidence": 0.952,
+          "text_ar": "لنذهب."
+        },
+        {
+          "text": "I HAVE TO MAKE AN INEVITABLE CHOICE.",
+          "confidence": 0.958,
+          "text_ar": "يجب أن أتخذ خياراً حتمياً."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "CAN YOU TELL ME WHAT KIND OFCHOICE YOU WILL BE MAKING?",
+          "confidence": 0.939,
+          "text_ar": "هل يمكنك إخباري عن نوع الخيار الذي ستتخذه؟"
+        },
+        {
+          "text": "I'LL HAVE TO SEND GRANDMOTHER BACK TOTHE VILLA IN SWITZERLAND.",
+          "confidence": 0.941,
+          "text_ar": "سيتعين علي إعادة الجدة إلى الفيلا في سويسرا."
+        },
+        {
+          "text": "SO SHE CAN LIVE THERE DOING NOTHING BUT BREATHING,",
+          "confidence": 0.923,
+          "text_ar": "لكي تعيش هناك ولا تفعل شيئاً سوى التنفس،"
+        },
+        {
+          "text": "I PLAN TO TAKE CARE OF HER IN HER LATER YEARS.",
+          "confidence": 0.937,
+          "text_ar": "أخطط لرعايتها في سنواتها الأخيرة."
+        },
+        {
+          "text": "THAT'STHE COMFORTABLE RETIREMENT MOSTPEOPLE DREAMOF. C",
+          "confidence": 0.138,
+          "text_ar": "تلك هي التقاعد المريح الذي يحلم به معظم الناس."
+        },
+        {
+          "text": "IT DOESN'T SEEM LIKE SOMETHING",
+          "confidence": 0.95,
+          "text_ar": "لا يبدو وكأنه شيء"
+        },
+        {
+          "text": "YOU NEED TO BEG THE CHAIRMAN'S FORGIVENESSFOR.",
+          "confidence": 0.953,
+          "text_ar": "تحتاج للتوسل للحصول على عفو الرئيس بشأنه."
+        },
+        {
+          "text": "ra}$ ：JP ： 0 JHS",
+          "confidence": 0.563,
+          "text_ar": "نهاية"
+        }
+      ]
+    }
+  ]
+}
