@@ -1,0 +1,862 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "231",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "WHO WERE ALL THOSE PEOPLE TODAY?",
+          "confidence": 0.988,
+          "text_ar": "من كان كل أولئك الأشخاص اليوم؟"
+        },
+        {
+          "text": "THEY ARE EMPLOYEES WHO HANDLE THE DIRTY WORK. THEY'RE GOOD AT WHAT THEY DO, SO YOU DON'T NEED TO WORRY ABOUT YOUR FAMILY.",
+          "confidence": 0.906,
+          "text_ar": "إنهم موظفون يتولون الأعمال القذرة. وهم بارعون في ما يبرعكون به، فلا داعي للقلق بشأن عائلتك."
+        },
+        {
+          "text": "RIGHT, WHERE DID MY FAMILY GO?",
+          "confidence": 0.9,
+          "text_ar": "صحيح، أين ذهبت عائلتي؟"
+        },
+        {
+          "text": "THEY WENT TO BALI, INDONESIA.",
+          "confidence": 0.949,
+          "text_ar": "لقد ذهبوا إلى بالي في إندونيسيا."
+        },
+        {
+          "text": "I'VE ARRANGED FOR THEM TO REST AT A BEACHSIDE RESORT FOR A FEW DAYS,SO PUT YOUR MIND AT EASE.",
+          "confidence": 0.914,
+          "text_ar": "لقد رتبت لهم ليرتاحوا في منتجع على الشاطئ بضع أيام، لذا أرح بالك."
+        },
+        {
+          "text": "MY SUBORDINATES ACCOMPANIED THEM,SO THEY'LL MAKE SURE THEY DON'TEXPERIENCE ANY DISCOMFORT THERE.",
+          "confidence": 0.965,
+          "text_ar": "رافقهم مرؤوسي، لذا سيحرصون على ألا يواجهوا أي إزعاج هناك."
+        },
+        {
+          "text": "TH-THEN WHAT ABOUT ME..?",
+          "confidence": 0.922,
+          "text_ar": "إ-إذاً ماذا عني..؟"
+        },
+        {
+          "text": "福 QIMANGA.COM",
+          "confidence": 0.082,
+          "text_ar": ""
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "ONCE THINGS ARE FINISHED HERE, GO WHEREVER YOU'D LIKE.",
+          "confidence": 0.947,
+          "text_ar": "بمجرد أن تنتهي الأمور هنا، اذهب إلى أي مكان تشاء."
+        },
+        {
+          "text": "I'LL SEND YOUR FAMILY THERE.",
+          "confidence": 0.955,
+          "text_ar": "سأرسل عائلتك إلى هناك."
+        },
+        {
+          "text": "DON'T TELL ME....",
+          "confidence": 0.881,
+          "text_ar": "لا تقل لي...."
+        },
+        {
+          "text": "DID YOU TAKE MY FAMILY TARE MY PAMILT HOSTAGE?!",
+          "confidence": 0.785,
+          "text_ar": "هل اتخذت عائلتي رهائن؟!"
+        },
+        {
+          "text": "DO YOU THINK I'M SOME MOB BOSS?",
+          "confidence": 0.92,
+          "text_ar": "أتظنني زعيم عصابة؟"
+        },
+        {
+          "text": "HOSTAGES? WHAT NONSENSE...",
+          "confidence": 0.956,
+          "text_ar": "رهائن؟ اي هراء..."
+        },
+        {
+          "text": "I EVACUATED THEM JUST IN CASE OF ANY DANGER.",
+          "confidence": 0.966,
+          "text_ar": "لقد أجلتهم احتياطاً لأي خطر."
+        },
+        {
+          "text": "THEY PROBABLY HAVEN'T REACHED THE AIRPORT YET. SHOULD I TURN THE CARS AROUND?",
+          "confidence": 0.967,
+          "text_ar": "ربما لم يصلوا إلى المطار بعد. هل أعيد السيارات أدراجها؟"
+        },
+        {
+          "text": "N-NO.",
+          "confidence": 0.987,
+          "text_ar": "ل-لا."
+        },
+        {
+          "text": "IT SEEMS TTEEEMC I SPOKE OUT OF TURN.",
+          "confidence": 0.754,
+          "text_ar": "يبدو أنني تجاوزت حدودي."
+        },
+        {
+          "text": "I KNOW YOUR MIND MUST BE RACING GIVEN THE SITUATION, BUT PLEASE CALM DOWN.",
+          "confidence": 0.903,
+          "text_ar": "أعلم أن بالك مشغول بالنظر إلى الموقف، ولكن ارجوك اهدأ."
+        },
+        {
+          "text": "COULD YOU PERHAPS TELL ME WHAT YOU DISCUSSED WITH THE VICE CHAIRMAN?",
+          "confidence": 0.954,
+          "text_ar": "أيمكنك إخباري بما ناقشته مع نائب الرئيس؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "VICE CHAIRMAN JIN YOUNGGI..",
+          "confidence": 0.976,
+          "text_ar": "نائب الرئيس تشيونغ يونغجي.."
+        },
+        {
+          "text": "THAT BASTARD JUST STARTED MAKING OUTRIGHT THREATS.",
+          "confidence": 0.985,
+          "text_ar": "لقد بدأ ذلك اللقيط بإطلاق تهديدات صريحة."
+        },
+        {
+          "text": "NOW THEN, LAWYER CHEON.",
+          "confidence": 0.949,
+          "text_ar": "والآن، أيها المحامي تشيون."
+        },
+        {
+          "text": "WHAT ARE YOU GOING TO DO NOW?",
+          "confidence": 0.905,
+          "text_ar": "ما الذي سترعمه الآن؟"
+        },
+        {
+          "text": "EXCUSE ME?",
+          "confidence": 0.989,
+          "text_ar": "عذراً؟"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "MAKE YOUR DECISION.",
+          "confidence": 0.973,
+          "text_ar": "اتخذ قرارك."
+        },
+        {
+          "text": "STARTING WITH WHAT YOU'LL DO WITH THE SHARES, ALL OF IT.",
+          "confidence": 0.915,
+          "text_ar": "بدءاً بما ستفعله بالأسهم، كلها."
+        },
+        {
+          "text": "…I'D RATHER YOU MAKE ME A PROPOSAL, CHIEF.",
+          "confidence": 0.854,
+          "text_ar": "...أفضل أن تقترح أنت عليّ، أيها المدير."
+        },
+        {
+          "text": "I'VE ALREADY LEAKED THE INFORMATION TO THE OPPOSITION PARTY.",
+          "confidence": 0.956,
+          "text_ar": "لقد سربت المعلومات بالفعل إلى حزب المعارضة."
+        },
+        {
+          "text": "THIS INCIDENT WILL BE EXPOSED IN TWO DAYS AT THE LATEST,",
+          "confidence": 0.967,
+          "text_ar": "سيُكشف هذا الحادث خلال يومين على أبعد تقدير،"
+        },
+        {
+          "text": "I THINK IT WOULD BE BEST IF YOU SORTED EVERYTHING OUT AND LEFT THE COUNTRY BEFORE THEN.",
+          "confidence": 0.944,
+          "text_ar": "أعتقد أنه من الأفضل أن ترتب كل الأمور وتغادر البلاد قبل ذلك الحين."
+        },
+        {
+          "text": "SORTING THEM OUT... DO YOU MEAN THE SHARES?",
+          "confidence": 0.888,
+          "text_ar": "أن أرتّبها... أتعني الأسهم؟"
+        },
+        {
+          "text": "YES.IS IT POSSIBLE TO CONVERT THEM TO REAL NAMES WITHIN TWO DAYS?",
+          "confidence": 0.964,
+          "text_ar": "نعم. هل من الممكن تحويلها إلى أسماء حقيقية خلال يومين؟"
+        },
+        {
+          "text": "IT IS, BUT...",
+          "confidence": 0.892,
+          "text_ar": "إنه ممكن، ولكن..."
+        },
+        {
+          "text": "THERE IS ONLY ONE REASON WHY HE TRAIED OFF AT THE END OF HIS ANSWER.",
+          "confidence": 0.922,
+          "text_ar": "هناك سبب واحد فقط لتردده في نهاية إجابته."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "IT'S MONEY.",
+          "confidence": 0.928,
+          "text_ar": "إنه المال."
+        },
+        {
+          "text": "ACTUALLY, YOU COUDN'T SAY IT'S SOLELY BECAUSE OF MONEY IN THIS CASE.",
+          "confidence": 0.829,
+          "text_ar": "في الواقع، لا يمكنك القول إنه بسبب المال وحده في هذه الحالة."
+        },
+        {
+          "text": "THE PRICE FOR ALIFETIME OF LOYALTY,",
+          "confidence": 0.882,
+          "text_ar": "ثمن الولاء لمدى الحياة،"
+        },
+        {
+          "text": "THE SENSE OF BETRAYAL FROM HIS SHATTERED TRUST IN GRANDMOTHER,",
+          "confidence": 0.948,
+          "text_ar": "الشعور بالخيانة جراء تحطم ثقته بالجدة،"
+        },
+        {
+          "text": "THE FEAR INSTILLED BY MY UNCLE'S THREATS.",
+          "confidence": 0.945,
+          "text_ar": "والخوف الذي زرعته تهديدات عمي."
+        },
+        {
+          "text": "UNLESS HE RECEIVES COMPENSATION FOR ALL OF THIS,",
+          "confidence": 0.894,
+          "text_ar": "ما لم يتلق تعويضاً عن كل هذا،"
+        },
+        {
+          "text": "HE'S NATURALLY GOING TO HESITATE TO GIVE UP WHAT TOHECITATETOGIVEUDWUAT HE HOLDS IN HIS HANDS.",
+          "confidence": 0.849,
+          "text_ar": "فمن الطبيعي أن يتردد في التخلي عما يمسكه بيديه."
+        },
+        {
+          "text": "LET'S DO THIS.",
+          "confidence": 0.95,
+          "text_ar": "لنقسَم الأمر هكذا."
+        },
+        {
+          "text": "IF YOU TAKE MY HAND, I WILL GIVE yOU 100 MILLION DOLLARS RIGHT NOW.",
+          "confidence": 0.891,
+          "text_ar": "إذا أخذت بيددي، فسأمنحك 100 مليون دولار حالاً."
+        },
+        {
+          "text": "USE THAT MONEY TO SETTLE DOWN WHEREVER YOU WANT.",
+          "confidence": 0.897,
+          "text_ar": "استخدم هذا المال لتستقر في أي مكان تشاء."
+        },
+        {
+          "text": "YOU DON'T THINK THAT'S LACKING FOR INITIAL SETTLEMENT FuNDS, DO YOU?",
+          "confidence": 0.821,
+          "text_ar": "ألا تظن أن هذا قليل كأموال لتأسيس حياة جديدة، أليس كذلك؟"
+        },
+        {
+          "text": "N-NO,OF COURSE NOT.",
+          "confidence": 0.98,
+          "text_ar": "ل-لا، بالطبع لا."
+        },
+        {
+          "text": "I'LL GIVE YOU THE REST AS SOON AS WE CLAIM THE INSURANCE MONEY.",
+          "confidence": 0.915,
+          "text_ar": "سأمنحك الباقي فور حصولنا على أموال التأمين."
+        },
+        {
+          "text": "HAVE YOU MADE YOUR DECISION?",
+          "confidence": 0.926,
+          "text_ar": "هل اتخذت قرارك؟"
+        },
+        {
+          "text": "EVEN IF I BREAK MY PROMISE LATER, YOU'LL STILL BE A WEALTHY MAN WITH OVER1OOBILLION WON IN ASSETS.",
+          "confidence": 0.937,
+          "text_ar": "حتى إن أخفقت في بوعدي لاحقاً، ستظل رجلاً ثرياً تملك أكثر من 100 مليار وون من الأصول."
+        },
+        {
+          "text": "IS THERE ANYTHING MORE TO CONSIDER?",
+          "confidence": 0.955,
+          "text_ar": "هل هناك ما يستدعي التفكير أكثر؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "ON ONE HAND, THREE YEARS IN PRISON AND LIVING EXPENSES.",
+          "confidence": 0.921,
+          "text_ar": "من جهة، ثلاث سنوات في السجن ونفقات المعيشة."
+        },
+        {
+          "text": "ON THE OTHER, AT LEAST 100 BILLION WON.",
+          "confidence": 0.934,
+          "text_ar": "ومن الجهة الأخرى، ما لا يقل عن 100 مليار وون."
+        },
+        {
+          "text": "CHEON SANG-PIL IS NOT A STUPID MAN.",
+          "confidence": 0.966,
+          "text_ar": "تشيون سانغ-بيل ليس رجلاً غبياً."
+        },
+        {
+          "text": "YOU'LL BEGIN CONVERTING THE SHARES TO REAL NAMES TOMORROW MORNING,RIGHT?",
+          "confidence": 0.951,
+          "text_ar": "ستبدأ بتحويل الأسهم إلى الأسماء الحقيقية صباح الغد، أليس كذلك؟"
+        },
+        {
+          "text": "YES, UNDER YOUR NAME, CHIEF...",
+          "confidence": 0.856,
+          "text_ar": "نعم، باسمك، أيها المدير..."
+        },
+        {
+          "text": "NO. THE OWNER OF THOSE SHARES IS SOMEONE ELSE.",
+          "confidence": 0.929,
+          "text_ar": "لا. مالك تلك الأسهم شخص آخر."
+        },
+        {
+          "text": "I'LL GIVE YOU THEIR PERSONAL DETAILS ANDPREPARE THE NECESSARYDOCUMENTS BY MORNING.",
+          "confidence": 0.932,
+          "text_ar": "سأعطيك تفاصيله الشخصية وأجهز المستندات اللازمة بحلول الصباح."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "WEREN'T THOSE THE SHARES GRANDMOTHER DESPERATELY COLLETED?",
+          "confidence": 0.918,
+          "text_ar": "ألم تكن تلك هي الأسهم التي جمعتها الجدة بيأس؟"
+        },
+        {
+          "text": "I. DON'T HAVE THE RIGHT TO POSSESS THOSE SHARES.",
+          "confidence": 0.84,
+          "text_ar": "ليس لدي الحق في امتلاك تلك الأسهم."
+        },
+        {
+          "text": "ThE YOunGeST n 享",
+          "confidence": 0.223,
+          "text_ar": "حفيد"
+        },
+        {
+          "text": "OFA COnGLOMERATE",
+          "confidence": 0.748,
+          "text_ar": "التكتل"
+        },
+        {
+          "text": "CHAPTER 231",
+          "confidence": 0.94,
+          "text_ar": "الفصل 231"
+        },
+        {
+          "text": "YOU STUPID BASTARDS.",
+          "confidence": 0.943,
+          "text_ar": "أيها اللقطاء الأغبياء."
+        },
+        {
+          "text": "HOW THE HELL DID YOU LOSE HIM?!",
+          "confidence": 0.958,
+          "text_ar": "كيف بحق الجحيم تركتموه يهرب؟!"
+        },
+        {
+          "text": "DAMN IT!!",
+          "confidence": 0.993,
+          "text_ar": "تباً!!"
+        },
+        {
+          "text": "CATCH HIM AND BRING HIM BACK IMMEDIATELY!",
+          "confidence": 0.994,
+          "text_ar": "امسكوا به وأحضروه فوراً!"
+        },
+        {
+          "text": "STATION PEOPLE AT THE AIRPORT JUST IN CASE!!",
+          "confidence": 0.962,
+          "text_ar": "انشروا أفراداً في المطار احتياطاً!!"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "HE RAN AWAY?",
+          "confidence": 0.963,
+          "text_ar": "لقد هرب؟"
+        },
+        {
+          "text": "Hah",
+          "confidence": 0.99,
+          "text_ar": "هاه"
+        },
+        {
+          "text": "YEAH. APPARENTLY, APPAKLNTLT, A SABOTEUR HAS APPEARED.",
+          "confidence": 0.735,
+          "text_ar": "نعم. على ما يبدو، ظهر مخرب."
+        },
+        {
+          "text": "DOJUN'S GUYS?",
+          "confidence": 0.982,
+          "text_ar": "رجال دوجون؟"
+        },
+        {
+          "text": "PROBABLY.DOJUN IS THE ONLY ONE WHO NEEDS TO TAKE CARE NレレレOTHKLCHKL OF HIM RIGHT NOW. OF HIMRIGHT NOW.",
+          "confidence": 0.608,
+          "text_ar": "على الأرجح. دوجون هو الوحيد الذي يحتاج إلى التعامل معه الآن."
+        },
+        {
+          "text": "SINCE HE'S THE BIGGEST ACCOMPLICE TO THE CRIMES OUR MOTHER COMMITTED.",
+          "confidence": 0.957,
+          "text_ar": "بما أنه الشريك الأكبر في الجرائم التي ارتكبتها والدتنا."
+        },
+        {
+          "text": "WELL, IT DOESN'T MATTER EVEN IF HE FLEES OVERSEAS.",
+          "confidence": 0.938,
+          "text_ar": "حسناً، لا يهم حتى لو هرب إلى الخارج."
+        },
+        {
+          "text": "Hmph.",
+          "confidence": 0.906,
+          "text_ar": "همف."
+        },
+        {
+          "text": "PEOPLE WILL JUST THINK HE RAN AWAY BECAUSE HE'S FACING CRIMINAL CHARGES.",
+          "confidence": 0.977,
+          "text_ar": "سيعتقد الناس فقط أنه هرب لأنه يواجه تهمًا جنائية."
+        },
+        {
+          "text": "THE SHARES ARE THE BIGGER ISSUE.",
+          "confidence": 0.967,
+          "text_ar": "الأسهم هي المشكلة الأكبر."
+        },
+        {
+          "text": "HIS WHEREABOUTS AREN'T IMPORTANT, ARE THEY?",
+          "confidence": 0.95,
+          "text_ar": "مكان وجوده ليس مهمًا حقًا، أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "I'VE ALREADY PUT THE WORDOUT TO THE GUYS WORKING IN MYEONG-DONG.",
+          "confidence": 0.936,
+          "text_ar": "لقد أبلغت الرجال العاملين في ميونغ-دونغ مسبقًا."
+        },
+        {
+          "text": "I'LL GET A CALL THE MOMENT CHEON SANG-PIL SHOWS UP.",
+          "confidence": 0.849,
+          "text_ar": "سأتلقى مكالمة بمجرد أن يظهر تشيون سانغ-بيل."
+        },
+        {
+          "text": "CHEON SANG-PIL WON'T SIDE WITH DOJUN RIGHT AWAY, EITHER.",
+          "confidence": 0.955,
+          "text_ar": "تشيون سانغ-بيل لن يقف إلى جانب دوجون فورًا أيضًا."
+        },
+        {
+          "text": "HE KNOWS HIS LIFELINE IS TIED DIRECTLY TO THOSE SHARES, SO THERE'S NO WAY HE'LL HAND THEM OVER INSTANTLY.",
+          "confidence": 0.953,
+          "text_ar": "فهو يعلم أن شريان حياته مرتبط مباشرة بتلك الأسهم، لذا لا توجد طريقة لتسليمها فورًا."
+        },
+        {
+          "text": "HE'LL HOLD ON TIGHT TO THOSE SHARES WHILE CHECKING THE NEWS UNTIL HE FINDS A WAY TO SURVIVE.",
+          "confidence": 0.95,
+          "text_ar": "سيتمسك بتلك الأسهم بقوة بينما يتابع الأخبار إلى أن يجد طريقة للنجاة."
+        },
+        {
+          "text": "WE STILL HAVE TIME.",
+          "confidence": 0.982,
+          "text_ar": "ما زال لدينا وقت."
+        },
+        {
+          "text": "HOW DID YOUR MEETING WITH DOJUN GO?",
+          "confidence": 0.927,
+          "text_ar": "كيف سار اجتماعك مع دوجون؟"
+        },
+        {
+          "text": "I'M NOT SURE IF HE KNOWS ABOUT THE BORROWED-NAME SHARES OR NOT.",
+          "confidence": 0.929,
+          "text_ar": "لست متأكدًا مما إذا كان يعرف بشأن الأسهم المستعارة الأسماء أم لا."
+        },
+        {
+          "text": "HOWEvER, HE WAS FILLED WITH NOTHING BUT HATRED FOR OUR MOTHER.",
+          "confidence": 0.827,
+          "text_ar": "مع ذلك، كان ممتلئًا بالكراهية الخالصة تجاه والدتنا."
+        },
+        {
+          "text": "MOTHER MISTREATING OUR SISTER-IN-LAW,",
+          "confidence": 0.984,
+          "text_ar": "سوء معاملة والدتنا لزوجة أبناءنا،"
+        },
+        {
+          "text": "THE TRUCK ACCIDENT...",
+          "confidence": 0.941,
+          "text_ar": "حادثة الشاحنة..."
+        },
+        {
+          "text": "BUT IT SEEMS THE CATALYST WAS",
+          "confidence": 0.967,
+          "text_ar": "ولكن يبدو أن السبب الرئيسي كان"
+        },
+        {
+          "text": "可 .w 心",
+          "confidence": 0.136,
+          "text_ar": "..."
+        },
+        {
+          "text": "MOTHER'S BLATANT ACTIONS TO KICK HIM OUT OF THE GROUP.",
+          "confidence": 0.886,
+          "text_ar": "تصرفات والدتنا السافرة لطده خارج المجموعة."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "ANYWAY, WITH MOTHER BEING THE MATRIARCH OF SUNYANG,",
+          "confidence": 0.929,
+          "text_ar": "على أي حال، بما أن والدتنا هي سيدة سونيانغ الأولى،"
+        },
+        {
+          "text": "HAVING HER RUNNING HER MOUTH EVERYWHERE MUST HAVE BEEN A BURDEN TO HIM.",
+          "confidence": 0.923,
+          "text_ar": "لا بد أن حقيقة إطلاقها لسانها في كل مكان كانت عبئًا عليه."
+        },
+        {
+          "text": "HE DOESN'T KNOW ABOUT THE BORROWED-NAME SHARES?",
+          "confidence": 0.956,
+          "text_ar": "ألا يعرف شيئًا عن الأسهم المستعارة الأسماء؟"
+        },
+        {
+          "text": "I'M NOT SURE.",
+          "confidence": 0.928,
+          "text_ar": "لست متأكدًا."
+        },
+        {
+          "text": ",hef-",
+          "confidence": 0.644,
+          "text_ar": "..."
+        },
+        {
+          "text": "WE CAN'T MATCH HOW DEVIOUS THAT BASTARD IS.",
+          "confidence": 0.952,
+          "text_ar": "لا يمكننا مجاراة مدى دهاء هذا اللقيط."
+        },
+        {
+          "text": "MAYBE HE'S AIMING FOR THE BORROWED-NAME SHARES,",
+          "confidence": 0.967,
+          "text_ar": "ربما يستهدف الأسهم المستعارة الأسماء،"
+        },
+        {
+          "text": "AND ORCHESTRATED THIS WHOLE THING FOR THEM. THAT'S A POSSIBILITY.",
+          "confidence": 0.957,
+          "text_ar": "وقد دبر هذا الأمر برمته من أجلها. تلك احتمال وارد."
+        },
+        {
+          "text": "WE HAVE TO LEAVE THE POSSIBILITY OPEN.",
+          "confidence": 0.969,
+          "text_ar": "يجب أن نترك هذا الاحتمال واردًا."
+        },
+        {
+          "text": "HMM...",
+          "confidence": 0.918,
+          "text_ar": "ممم..."
+        },
+        {
+          "text": "HEY, IF WE PLAY OUR CARDS RIGHT, THIS COULD END SO EASILY",
+          "confidence": 0.929,
+          "text_ar": "مهلا، إذا لعبنا أوراقنا بشكل صحيح، فقد ينتهي هذا الأمر بسهولة لدرجة"
+        },
+        {
+          "text": "THAT IT MIGHT ACTUALLY FEEL ANTICLIMACTIC.",
+          "confidence": 0.952,
+          "text_ar": "أن تبدو المخاوف بلا مبرر."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "WHAT ARE YOU TALKING ABOUT?",
+          "confidence": 0.938,
+          "text_ar": "عما تتحدث؟"
+        },
+        {
+          "text": "WE JUST GIVE THAT BASTARD DOJUN WHAT HE WANTS AND COVER THIS WHOLE THING UP.",
+          "confidence": 0.949,
+          "text_ar": "كل ما في الأمر أننا نعطي ذلك اللقيط دوجون ما يريد ونغطي على هذا الأمر برمته."
+        },
+        {
+          "text": "THEN WE WONT HAVE TO CORNER CHEON SANG-PIL, EITHER. HOW ABOUT IT?",
+          "confidence": 0.934,
+          "text_ar": "حينها لن نضطر لتضييق الخناق على تشيون سانغ-بيل أيضًا. ما رأيك؟"
+        },
+        {
+          "text": "WHAT?",
+          "confidence": 0.998,
+          "text_ar": "ماذا؟"
+        },
+        {
+          "text": "THINK ABOUT IT. WHAT THAT BASTARD DOJUN WANTS",
+          "confidence": 0.973,
+          "text_ar": "فكر في الأمر. ما يريده ذلك اللقيط دوجون"
+        },
+        {
+          "text": "IS A LIFE OF EXILE FOR OUR MOTHER, ISN'T IT?",
+          "confidence": 0.889,
+          "text_ar": "هو حياة المنفى لوالدتنا، أليس كذلك؟"
+        },
+        {
+          "text": "DON'T TELL ME..!",
+          "confidence": 0.909,
+          "text_ar": "لا تستهزئ بي...!"
+        },
+        {
+          "text": "HONESTLY, SPENDING THE REST OF HER DAYS TOURING A FEW EUROPEAN VILLAS WOULDN'T BE BAD FOR MOTHER, RIGHT?",
+          "confidence": 0.914,
+          "text_ar": "صراحة، قضاء ما تبقى من أيامها في جولة ببعض الفيلات الأوروبية لن يكون سيئًا لوالدتنا، أليس كذلك؟"
+        },
+        {
+          "text": "AND HOW MUCH LONGER IS SHE GOING TO LIVE ANYWAY?",
+          "confidence": 0.957,
+          "text_ar": "وكم من الوقت ستحياه على أي حال؟"
+        },
+        {
+          "text": "YOU CAN'T BE SERIOUS..!",
+          "confidence": 0.906,
+          "text_ar": "أنت لا تتحدث بجدية...!"
+        },
+        {
+          "text": "IT'S THE MINDSET OF THE ELDERLY TO WANT TO LIVE THEIR REMAINING YEARS ON THEIR HOMELAND.",
+          "confidence": 0.969,
+          "text_ar": "من طبيعة كبار السن الرغبة في قضاء سنواتهم المتبقية على وطنهم."
+        },
+        {
+          "text": "DOES IT MAKE SENSE TO SPEND THE REST OF HER LIFE IN A FOREIGN COUNTRY WHERE THE WATER IS UNFAMILIAR AND THE FOOD DOESN'T SUIT HER?!",
+          "confidence": 0.936,
+          "text_ar": "هل يصح أن تقضي ما تبقى من حياتها في بلد أجنبي مياهه غير مألوفة وطعامه لا يناسبها؟!"
+        },
+        {
+          "text": "DOESN'T SUIT HER? DON'T YOU KNOWMOTHER DON'TYOUKNOWMOTHER LIKES TOIMITATE FRENCH ARISTOCRATS?",
+          "confidence": 0.94,
+          "text_ar": "لا يناسبها؟ ألا تعلم أن والدتنا تحب تقليد الارستقراطيين الفرنسيين؟"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "Heh",
+          "confidence": 0.989,
+          "text_ar": "هيه"
+        },
+        {
+          "text": "IT'S BEENA LONG TIME SINCE SHE EVEN TOUCHED SOYBEAN PASTE STEW OR KIMCHI STEW. EUROPE WILL PROBABLY FEEL MORE LIKE HOME TO HER.",
+          "confidence": 0.95,
+          "text_ar": "لقد مر وقت طويل منذ أن لمست حساء معجون الفول الصويا أو حساء الكيمتشي حتى. ستبدو أوروبا وكأنها موطنها أكثر."
+        },
+        {
+          "text": "WHEN FATHER WAS ALIVE, THEY SPENT SEVEN YEARS LIVING STRICTLY IN SWITZERLAND.",
+          "confidence": 0.95,
+          "text_ar": "عندما كان والدي حيا، قضيا سبع سنوات يعيشان حصرا في سويسرا."
+        },
+        {
+          "text": "SO, IF MOTHER JUST STAYS OVERSEAS, EVERYTHING COMES TO AN END.",
+          "confidence": 0.854,
+          "text_ar": "إذن، إذا بقيت والدتنا في الخارج، ينتهي كل شيء."
+        },
+        {
+          "text": "ISN'T THIS EXACTLY WHAT A WIN-WIN SITUATION IS?",
+          "confidence": 0.937,
+          "text_ar": "أليست هذه هي حالة الفوز للجميع حقا؟"
+        },
+        {
+          "text": "WE SECURE SECURE WE THE SHARES,",
+          "confidence": 0.979,
+          "text_ar": "نحن نضمن الحصول على الأسهم،"
+        },
+        {
+          "text": "MOTHER GETS TO LIVE COMFORTABLY,",
+          "confidence": 0.986,
+          "text_ar": "والدتنا تعيش براحة،"
+        },
+        {
+          "text": "DOJUN GETS HIS REVENGE, CHEON SANG-PIL CONTINUES HIS NORMAL LIFE,",
+          "confidence": 0.968,
+          "text_ar": "دوجون ينال انتقامه، تشيون سانغ-بيل يواصل حياته الطبيعية،"
+        },
+        {
+          "text": "AND THE CONGLOMERATE ARTS FOUNDATION KEEPS RUNNING SMOOTHLY AS IT DOES NOW.",
+          "confidence": 0.948,
+          "text_ar": "ومؤسسة الفنون التكتل تستمر في العمل بسلاسة كما هي الآن."
+        },
+        {
+          "text": "WHAT NEED IS THERE TO MAKE A HUGE FUSS ABOUT IT TO THE WORLD?",
+          "confidence": 0.938,
+          "text_ar": "ما الحاجة لإثارة ضجة كبرى أمام العالم؟"
+        },
+        {
+          "text": "HEY! STOP PRETENDING TO BE A GOOD PERSON, TO0.",
+          "confidence": 0.926,
+          "text_ar": "مهلا! توقف عن التظاهر بأنك شخص طيب أيضًا."
+        },
+        {
+          "text": "HONESTLY, YOURE JUST ANNOYED BY MOTHER CONSTANTLY NAGGING BY YOUR SIDE. ISN'T THAT RIGHT?",
+          "confidence": 0.957,
+          "text_ar": "صراحة، أنت منزعج فقط من تذمر والدتنا المستمر بجانبك. أليس كذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "image_id": 13,
+      "sentences": [
+        {
+          "text": "ARE YOU TELLING ME TO GO TO DOJUN AND TELL HIM TO SHUT HIS MOUTH, BECAUSE WE'LL MAKE SURE HIS GRANDMOTHER NEVER SETS FOOTON KOREAN SOIL AGAIN?",
+          "confidence": 0.92,
+          "text_ar": "هل تخبرني أن أذهب إلى دوجون وأخبره أن يغلق فمه، لأننا سنحرص على ألا تطأ قدم جدته أرض كوريا مرة أخرى؟"
+        },
+        {
+          "text": "WHAT IF THAT BASTARD KNOWS ABOUT THE BORROWED-NAME SHARES?",
+          "confidence": 0.949,
+          "text_ar": "وماذا لو كان هذا اللقيط يعلم بشأن الأسهم المستعارة الأسماء؟"
+        },
+        {
+          "text": "AND WHAT ARE WE GOING TO DO IF HIS TRUE GOAL IS THOSE VERY SHARES?",
+          "confidence": 0.963,
+          "text_ar": "وماذا سنفعل إذا كان هدفه الحقيقي هو تلك الأسهم نفسها؟"
+        },
+        {
+          "text": "THEN WE' HAVE TO DESTROY HIM.",
+          "confidence": 0.944,
+          "text_ar": "حينها، سيكون علينا تدميره."
+        },
+        {
+          "text": "THAT'S WHYWE NEED TO VERIFY IT. WE NEED TO FIND OUT WHAT HIS TRUE INTENTIONS ARE.",
+          "confidence": 0.939,
+          "text_ar": "لهذا السبب نحتاج للتحقق من الأمر. نحتاج لمعرفة نواياه الحقيقية."
+        },
+        {
+          "text": "I CAN'T DO IT. I ALREADY TALKED BIG TO THAT BASTARD DOJUN ABOUT HAVING A PROPER SHOWDOWN,",
+          "confidence": 0.922,
+          "text_ar": "لا يمكنني فعل ذلك. لقد تفوهت بكلمات كبرى أمام ذلك اللقيط دوجون حول خوض مواجهة حقيقية،"
+        },
+        {
+          "text": "SO HOW CAN I GO BACK ON MY WORD NOW?",
+          "confidence": 0.945,
+          "text_ar": "فكيف لي أن أراجع كلماتي الآن؟"
+        },
+        {
+          "text": "OH MY, THAT DAMN PRIDE OF YOURS...",
+          "confidence": 0.929,
+          "text_ar": "يا الهي، كبرياؤك اللعين هذا..."
+        },
+        {
+          "text": "I1 III",
+          "confidence": 0.408,
+          "text_ar": "..."
+        },
+        {
+          "text": "1 II I",
+          "confidence": 0.283,
+          "text_ar": "..."
+        },
+        {
+          "text": "1 IFI 10 1.11 1U",
+          "confidence": 0.177,
+          "text_ar": "..."
+        },
+        {
+          "text": "II I",
+          "confidence": 0.341,
+          "text_ar": "..."
+        },
+        {
+          "text": "i 1F 11 II",
+          "confidence": 0.17,
+          "text_ar": "..."
+        },
+        {
+          "text": "FINE. I'LL DO IT.",
+          "confidence": 0.912,
+          "text_ar": "حسنا. سأفعلها."
+        },
+        {
+          "text": "WE HAVE TO HURRY IF WE WANT TO STOP THE OPPOSITIONPARTY FROM EXPOSING THIS.",
+          "confidence": 0.909,
+          "text_ar": "يجب أن نسرع إن كنَّا نريد منع حزب المعارضة من كشف هذا الأمر."
+        },
+        {
+          "text": "W m KIINO",
+          "confidence": 0.221,
+          "text_ar": "..."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "image_id": 14,
+      "sentences": [
+        {
+          "text": "Star TAK",
+          "confidence": 0.876,
+          "text_ar": "..."
+        },
+        {
+          "text": "MOTOROLY ELDESTUNCLE SEND 三 + Dlgltal 3def END 6mno 9wxyz # SEND opr CLR ENO ?",
+          "confidence": 0.102,
+          "text_ar": "..."
+        },
+        {
+          "text": "2Bbc 总 5",
+          "confidence": 0.034,
+          "text_ar": "..."
+        },
+        {
+          "text": "4 7 porB * STO RCL FCN",
+          "confidence": 0.775,
+          "text_ar": "..."
+        },
+        {
+          "text": "YES, UNCLE.",
+          "confidence": 0.941,
+          "text_ar": "أجل، أيها العم."
+        },
+        {
+          "text": "OH, OUR DOJUN. YOU'RE QUITE BUSY, VOUDC OWUTEDUCV AREN'T YOU?",
+          "confidence": 0.549,
+          "text_ar": "أوه، دوجوننا. أنت مشغول جدا، أليس كذلك؟"
+        },
+        {
+          "text": "WHAT IS THIS NOW?",
+          "confidence": 0.972,
+          "text_ar": "ما هذا الآن؟"
+        },
+        {
+          "text": "： :JPr$ ： 号： JHS",
+          "confidence": 0.497,
+          "text_ar": "..."
+        }
+      ]
+    }
+  ]
+}
