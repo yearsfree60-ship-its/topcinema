@@ -1,0 +1,765 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "226",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": ".WHAT IS IT THAT YOU WANT?",
+          "confidence": 0.924,
+          "text_ar": "ما الذي تريده حقًا؟"
+        },
+        {
+          "text": "I WILL TELL yOU OnE moRE THING.",
+          "confidence": 0.643,
+          "text_ar": "سأقول لك شيئًا آخر."
+        },
+        {
+          "text": "THE ONE HOLDING THE SWORD DOESN'T NEED TO STATE WHAT THEY WANT FIRST.",
+          "confidence": 0.947,
+          "text_ar": "من يمسك بالسيف لا يحتاج لإعلان ما يريده أولًا."
+        },
+        {
+          "text": "IF YOU WANT TO KNOW WHAT I WANT, TELL ME WHAT YOU CAN GIVE ME FIRST.",
+          "confidence": 0.899,
+          "text_ar": "إن كنت تريد معرفة ما أطلبه، فأخبرني بما يمكنك منحي إياه أولًا."
+        },
+        {
+          "text": "THAT IS THE PROPER ORDER.",
+          "confidence": 0.97,
+          "text_ar": "هذا هو الترتيب الصحيح."
+        },
+        {
+          "text": "I WILL GIVE YOU TIME TO THINK.",
+          "confidence": 0.918,
+          "text_ar": "سأمنحك بعض الوقت للتفكير."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "GO CONSULT WITH YOUR SMART SUBORDINATE,",
+          "confidence": 0.949,
+          "text_ar": "اذهب واستشر مرؤوسك الذكي،"
+        },
+        {
+          "text": "OR WITH YOUR PROUD SON.",
+          "confidence": 0.954,
+          "text_ar": "أو ابنك المتعجرف."
+        },
+        {
+          "text": "SHE PROBABLY KNOWS THAT THE ONE WHO STANDS UP FROM THEIRCHAIR AND LEAVES THE STUDY FIRST IS THE STRONGER ONE.",
+          "confidence": 0.935,
+          "text_ar": "فهي على الأرجح تعلم أن من ينهض من مقعده ويغادر غرفة الدراسة أولًا هو الطرف الأقوى."
+        },
+        {
+          "text": "MY,ISN'T IT TOO COLD-HEARTED NOT TO EVEN OFFER A CUP OF COFFEE WHEN YOUR GRANDSON VISITS?",
+          "confidence": 0.917,
+          "text_ar": "يا له من أمر قاسٍ ألا تقدم حتى فنجان قهوة لحفيدك حين يزورك؟"
+        },
+        {
+          "text": "ARE YOU REALLY My GRANDMOTHER?",
+          "confidence": 0.86,
+          "text_ar": "أأنتِ جدتي حقًا؟"
+        },
+        {
+          "text": "THAT PUNK...",
+          "confidence": 0.964,
+          "text_ar": "تلك اللقيطة..."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "CHIEF.",
+          "confidence": 0.988,
+          "text_ar": "أيها الرئيس."
+        },
+        {
+          "text": "BRING IN MORE PERSONNEL.",
+          "confidence": 0.949,
+          "text_ar": "أحضر المزيد من الحراس."
+        },
+        {
+          "text": "STARTING TODAY, WE NEED TOCHECK EVERYONE WHOENTERS AND LEAVES THIS HOUSE.",
+          "confidence": 0.958,
+          "text_ar": "بدءًا من اليوم، علينا فحص كل شخص يدخل هذا المنزل أو يغادره."
+        },
+        {
+          "text": "IF SOMEONE YOU DON'T RECOGNIZE SHOWS UP, TAIL THEM TO THE END.",
+          "confidence": 0.952,
+          "text_ar": "وإن ظهر شخص لا تعرفه، تتبعه حتى النهاية."
+        },
+        {
+          "text": "WITHOUT A SINGLE EXCEPTION,",
+          "confidence": 0.98,
+          "text_ar": "دون أي استثناء،"
+        },
+        {
+          "text": "YOU MUST FIGURE OUT THEIR IDENTITY.",
+          "confidence": 0.91,
+          "text_ar": "يجب أن تكشف عن هويته."
+        },
+        {
+          "text": "YES, CHIEF.",
+          "confidence": 0.981,
+          "text_ar": "حاضر، أيها الرئيس."
+        },
+        {
+          "text": "PLEASE TAKE CARE OF TAKECAREOF IT, THEN. IT,THEN.",
+          "confidence": 0.918,
+          "text_ar": "إذن، اعتمد على نفسك في تدبر الأمر."
+        },
+        {
+          "text": "WHOEVER ARRIVES THE FASTEST,",
+          "confidence": 0.961,
+          "text_ar": "من يصل أولًا،"
+        },
+        {
+          "text": "THAT PERSON IS MADAM LEE PHIl-OK'S BRAIN.",
+          "confidence": 0.874,
+          "text_ar": "فهذا الشخص هو عقل السيدة لي بيل-وك المدبر."
+        },
+        {
+          "text": "CHAPTER 226",
+          "confidence": 0.954,
+          "text_ar": "الفصل 226"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "JIN DOJUN?",
+          "confidence": 0.978,
+          "text_ar": "جين دوجون؟"
+        },
+        {
+          "text": "ARE YOU SAYING THIS WAS ALL A TRAP SET BY HIM?",
+          "confidence": 0.972,
+          "text_ar": "أتقول إن هذا كله كان فخًّا نصبه هو؟"
+        },
+        {
+          "text": "IT SEEMS SO.",
+          "confidence": 0.951,
+          "text_ar": "يبدو ذلك."
+        },
+        {
+          "text": "LOOK AT THAT.",
+          "confidence": 0.985,
+          "text_ar": "انظر إلى هذا."
+        },
+        {
+          "text": "HE HAD IT IN HIS HANDS.",
+          "confidence": 0.98,
+          "text_ar": "لقد كان يمسك بزمام الأمور بين يديه."
+        },
+        {
+          "text": "IT DOESN'T SEEM LIKE HE WAS LYING, EITHER.",
+          "confidence": 0.969,
+          "text_ar": "كما أنه لا يبدو كمن كان يكذب."
+        },
+        {
+          "text": "HE SAID HE WOULD LEAK THIS TO THE OPPOSITION PARTY?",
+          "confidence": 0.977,
+          "text_ar": "أقال إنه سيسرب هذا الأمر لحزب المعارضة؟"
+        },
+        {
+          "text": "YES.HE EVEN THREATENED ME, TALKING ABOUT A SPECIAL COUNSEL INVESTIGATION, PARLIAMENTARY HEARINGS,",
+          "confidence": 0.964,
+          "text_ar": "نجل. بل لقد هددني متحدثًا عن تحقيق لمستشار خاص، وجلسات استماع برلمانية،"
+        },
+        {
+          "text": "AND HOW IT WOULD BECOME A DIPLOMATIC ISSUE.",
+          "confidence": 0.933,
+          "text_ar": "وكيف سيتحول الأمر إلى قضية دبلوماسية."
+        },
+        {
+          "text": "THE OPPOSITION PARTY AND NOT THE MEDIA?",
+          "confidence": 0.954,
+          "text_ar": "حزب المعارضة وليس وسائل الإعلام؟"
+        },
+        {
+          "text": "MY GOODNESS.. HAHA.",
+          "confidence": 0.909,
+          "text_ar": "يا الهي.. هاها."
+        },
+        {
+          "text": "HE IS A SMART KID.",
+          "confidence": 0.951,
+          "text_ar": "إنه فتى ذكي."
+        },
+        {
+          "text": "HE KNOWS HOW TO GET THE MAXIMUM EFFECT OUT OF THE WEAPON IN HIS HANDS.",
+          "confidence": 0.88,
+          "text_ar": "إنه يعرف تمامًا كيف يحصل على أقصى استفادة من السلاح الذي يملكه."
+        },
+        {
+          "text": "DID I CALL YOU HERE JUST TO LISTEN TO YOU PRAISE HIM,DIRECTOR CHEON?!",
+          "confidence": 0.892,
+          "text_ar": "أهل استدعيتك إلى هنا لتمدحه فقط، أيها المدير تشيون؟!"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "I APOLOGIZE.",
+          "confidence": 0.996,
+          "text_ar": "أنا أعتذر."
+        },
+        {
+          "text": "JIN DOJUN HIT THE NAIL ON THE HEAD, SO I JUST...",
+          "confidence": 0.882,
+          "text_ar": "لكن جين دوجون أصاب كبد الحقيقة، لذا..."
+        },
+        {
+          "text": "JUST TELL ME ONE THING.",
+          "confidence": 0.871,
+          "text_ar": "أخبرني بشيء واحد فقط."
+        },
+        {
+          "text": "IF HE LEAKS THIS TO THE OPPOSITION PARTY, WILL IT REALLY BECOME A HUGE DIPLOMATIC ISSUE?",
+          "confidence": 0.941,
+          "text_ar": "إن تسرب هذا الأمر لحزب المعارضة، أسيصبح حقًا قضية دبلوماسية كبرى؟"
+        },
+        {
+          "text": "IT LIKELY WILL.",
+          "confidence": 0.986,
+          "text_ar": "على الأرجح نعم."
+        },
+        {
+          "text": "BUT THE DOMESTIC ISSUE IS EVEN MORE SERIOUS.",
+          "confidence": 0.953,
+          "text_ar": "لكن الأزمة المحلية ستكون أشد خطورة بكثير."
+        },
+        {
+          "text": "THERE WOULD BE NO BETTER OPPORTUNITY THAN THIS FOR THE OPPOSITION PARTYTHAT LOST THE GENERAL ELECTION.",
+          "confidence": 0.955,
+          "text_ar": "لن تكون هناك فرصة أفضل من هذه لحزب المعارضة الذي خسر الانتخابات العامة."
+        },
+        {
+          "text": "THEY WOULD FRANTICALLY TRY TO BLOW UP EVEN TODLOWOVLN NONEXISTENT PROBLEMS. PROBLEMS",
+          "confidence": 0.566,
+          "text_ar": "سيحاولون بجنون تضخيم حتى المشاكل الوهمية."
+        },
+        {
+          "text": "EVEN WITH ME,",
+          "confidence": 0.983,
+          "text_ar": "أحتى وأنا،"
+        },
+        {
+          "text": "THE MATRIARCH OF SUNYANG,WATCHING WITH MY EYES WIDE OPEN?",
+          "confidence": 0.953,
+          "text_ar": "مملكة سونيانغ، أراقب بعينين مفتوحتين؟"
+        },
+        {
+          "text": "UNFORTUNATELY, THE SITUATION IS BEYOND CARING ABOUT SUCH THINGS.",
+          "confidence": 0.975,
+          "text_ar": "لسوء الحظ، الوضع أكبر من أن يتم تجاهل أمور كهذه."
+        },
+        {
+          "text": "THERE ARE BY-ELECTIONS NEXT YEAR, AREN'T THERE?",
+          "confidence": 0.97,
+          "text_ar": "ألدينا انتخابات فرعية العام القادم؟"
+        },
+        {
+          "text": "IF THE OPPOSITION PARTY WINS THEN, THEY CAN SHATTER THE RULING PARTY'S MAJORITY.",
+          "confidence": 0.959,
+          "text_ar": "إن فاز حزب المعارضة فيها، فيمكنه تحطيم أغلبية حزب الحاكم."
+        },
+        {
+          "text": "THE RULING PARTY IS CURRENTLY AHEAD BY A BARE MINIMUM OF EXACTLY Z SEATS, SO A REVERSAL IS POSSIBLE.",
+          "confidence": 0.942,
+          "text_ar": "يتقدم الحزب الحاكم حاليًا بفارق ضئيل يبلغ سبعة مقاعد بالتحديد، لذا فالقلب وارد."
+        },
+        {
+          "text": "SO...YOU ARE SAYING WHAT HE SAID IS TRUE?",
+          "confidence": 0.931,
+          "text_ar": "إذن... تقصد أن ما قاله صحيح؟"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "UNFORTUNATELY, YES.",
+          "confidence": 0.953,
+          "text_ar": "للأسف، نعم."
+        },
+        {
+          "text": "UNDERSTOOD. YOU MAY LEAVE.",
+          "confidence": 0.926,
+          "text_ar": "فهمت. يمكنك الانصراف."
+        },
+        {
+          "text": "YES, MADAM CHAIRWOMAN.",
+          "confidence": 0.971,
+          "text_ar": "حاضر، سيدتي رئيسة مجلس الإدارة."
+        },
+        {
+          "text": "AND I WILL TRY MEETING WITH JIN DOJUN MYSELF.",
+          "confidence": 0.948,
+          "text_ar": "وسأحاول لقاء جين دوجون بنفسي."
+        },
+        {
+          "text": "OF COURSE YOU SHOULD.",
+          "confidence": 0.952,
+          "text_ar": "بالتأكيد يجب عليك فعل ذلك."
+        },
+        {
+          "text": "DONTEVEN THINK ABOUT SHOWING YOUR FACE TO ME UNTIL YOU RESOLVE THIS.",
+          "confidence": 0.95,
+          "text_ar": "لا تفكر حتى في إظهار وجهك أمامي قبل أن تحل هذه المشكلة."
+        },
+        {
+          "text": "WOW, THIS KID.",
+          "confidence": 0.842,
+          "text_ar": "يا له من فتى."
+        },
+        {
+          "text": "YOU DUG A 6OO MILLION DOLLAR TRAP JUST TO CATCH YOUR GRANDMOTHER?",
+          "confidence": 0.936,
+          "text_ar": "أحفرت فخًّا بقيمة ستمائة مليون دولار فقط للإيقاع بجدتك؟"
+        },
+        {
+          "text": "YOUR GRANDMOTHER IS IN HUGE TROUBLE NOW. THIS IS SOMETHING EVEN SUNYANG GROUP'S POWER CAN'T COVER UP.",
+          "confidence": 0.94,
+          "text_ar": "جدتك في ورطة كبرى الآن. هذه مشكلة لا يمكن حتى لنفوذ مجموعة سونيانغ إخفاؤها."
+        },
+        {
+          "text": "SHE WON'T BE ABLE TOAVOID APPEARING AT THE PROSECUTOR'S OFFICE IN A WHEELCHAIR, ANDIF THE OPPOSITIONPARTYSTARTS CHIRPING,SHE'LL GET ACTUAL PRISONTIME.",
+          "confidence": 0.93,
+          "text_ar": "لن تتمكن من تجنب المثول أمام مكتب المدعي العام على كرسي متحرك، وإن بدأ حزب المعارضة بالصياح، فستحصل على عقوبة سجن فعلية."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "HER ONLY WAYS OUT ARE PROBATION OR BAIL FOR MEDICAL REASONS.",
+          "confidence": 0.928,
+          "text_ar": "الملاذان الوحيدان المتبقيان لها هما وقف التنفيذ أو الكفالة لأسباب طبية."
+        },
+        {
+          "text": "SHE IS DEAD TO RIGHTS.",
+          "confidence": 0.979,
+          "text_ar": "لقد انتهت أمرها تمامًا."
+        },
+        {
+          "text": "THE CONGLOMERATE ARTS FOUNDATION WILL HAVE TO CLOSE ITS DOORS, RIGHT?",
+          "confidence": 0.964,
+          "text_ar": "ستضطر مؤسسة الفنون التابعة للمجموعة لإغلاق أبوابها، أليس كذلك؟"
+        },
+        {
+          "text": "THAT IS JUST A BONUS.",
+          "confidence": 0.922,
+          "text_ar": "هذا مجرد مكسب إضافي."
+        },
+        {
+          "text": "BUT WHO KNOWS HOW MANY YEARS IT WILL TAKE TO GO THROUGH ALL THREE TRIALS.",
+          "confidence": 0.913,
+          "text_ar": "ولكن من يدري كم من السنين ستستغرقها درجات التقاضي الثلاث."
+        },
+        {
+          "text": "ONCE NEXT YEAR'S BY-ELECTIONS ARE OVER, YOUR GRANDMOTHER'S CASE WILL FIZZLE OUT...",
+          "confidence": 0.948,
+          "text_ar": "بمجرد انتهاء انتخابات العام القادم، ستتلاشى قضية جدتك..."
+        },
+        {
+          "text": "AND IF SHE COMPLETELY CLEARS COMPLEIELYCLEARS OUT HER STAKES BEFORE THENZ YOU WON'T GATN THEN? YOU WON'T GAIN A SINGLE THING.",
+          "confidence": 0.858,
+          "text_ar": "وإن تخلصت من حصصها بالكامل قبل ذلك الحين، فلن تجني شيئًا البتة."
+        },
+        {
+          "text": "WE HAVE TO END THIS BEFORE IT GOES TO TRIAL.",
+          "confidence": 0.927,
+          "text_ar": "علينا إنهاء هذا الأمر قبل أن يصل إلى المحاكم."
+        },
+        {
+          "text": "IS THERE ANY WAY?",
+          "confidence": 0.952,
+          "text_ar": "أهناك أي سبيل؟"
+        },
+        {
+          "text": "GRANDMOTHER HAS A FIXER.",
+          "confidence": 0.945,
+          "text_ar": "لدى الجدة رجل يعتمد عليه لتسوية الأمور."
+        },
+        {
+          "text": "TAKE A LOOK AT THIS PERSON.",
+          "confidence": 0.949,
+          "text_ar": "ألق نظرة على هذا الشخص."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "DO YOU HAPPEN TO KNOW WHO THIS IS?",
+          "confidence": 0.888,
+          "text_ar": "أتصدفة تعرف من يكون هذا؟"
+        },
+        {
+          "text": "DIRECTOR CHEON SANG-PIL?",
+          "confidence": 0.98,
+          "text_ar": "المدير تشيون سانغ-بيل؟"
+        },
+        {
+          "text": "IS HE SOMEONE YOU KNOW?",
+          "confidence": 0.813,
+          "text_ar": "أتعرفه بشكل شخصي؟"
+        },
+        {
+          "text": "YEAH.IT HAS BEEN QUITE A WHILE SINCE THIS GUY QUIT, HASN'T IT?",
+          "confidence": 0.934,
+          "text_ar": "أجل. لقد مر وقت طويل منذ أن استقال هذا الرجل، أليس كذلك؟"
+        },
+        {
+          "text": "I THINK HE WAS A DIRECTOR AT THE ARTS FOUNDATION.",
+          "confidence": 0.921,
+          "text_ar": "أعتقد أنه كان مديرًا في مؤسسة الفنون."
+        },
+        {
+          "text": "WHERE IS HE FROM?",
+          "confidence": 0.952,
+          "text_ar": "من أين أتى أصلًا؟"
+        },
+        {
+          "text": "对0ì元",
+          "confidence": 0.361,
+          "text_ar": "لقد عمل في الفريق القانوني للمجموعة قبل أن يُنقل إلى المؤسسة."
+        },
+        {
+          "text": "HE WAS ON THE GROUP'S LEGAL TEAM BUT GOT DRAFTED TO THE FOUNDATION.",
+          "confidence": 0.942,
+          "text_ar": "لقد عمل في الفريق القانوني للمجموعة قبل أن يُنقل إلى المؤسسة."
+        },
+        {
+          "text": "HE WAS A SMART GUY, BUT HE QUIT AFTER ONLY WORKING FOR A FEW YEARS.",
+          "confidence": 0.946,
+          "text_ar": "كان فتى ذكيًا، لكنه استقال بعد العمل لبضع سنوات فقط."
+        },
+        {
+          "text": "I BELIEVE HE QUIT AFTER BEING PUSHEDOUT TO THE FRINGES?",
+          "confidence": 0.962,
+          "text_ar": "أعتقد أنه استقال بعد تهميشه وإبعاده للأطراف؟"
+        },
+        {
+          "text": "SINCE HE WAS ON THE LEGAL TEAM, HE MUST BE A LAWYER.",
+          "confidence": 0.952,
+          "text_ar": "بما أنه كان ضمن الفريق القانوني، فلا بد أنه محامٍ."
+        },
+        {
+          "text": "PROBABLY, RIGHT? BUT WHY THIS GUY?",
+          "confidence": 0.976,
+          "text_ar": "على الأرجح، أليس كذلك؟ ولكن لماذا هذا الرجل بالذات؟"
+        },
+        {
+          "text": "THE MOMENT I DECLARED WAR ON GRANDMOTHER, HE WAS THE FIRST ONE TO COME RUNNING.",
+          "confidence": 0.966,
+          "text_ar": "في اللحظة التي أعلنت فيها الحرب على جدتي، كان هو أول من أتى راكضًا."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "IS THAT SO?",
+          "confidence": 0.76,
+          "text_ar": "أهكذا إذن؟"
+        },
+        {
+          "text": "THEN IS THAT GUY HER CLOSEST AIDE?",
+          "confidence": 0.964,
+          "text_ar": "إذن هل هذا الرجل هو مساعدها المقرب؟"
+        },
+        {
+          "text": "HE MUST BE HER BRAIN.",
+          "confidence": 0.922,
+          "text_ar": "لا بد أنه عقلها المدبر."
+        },
+        {
+          "text": "JUST LIKE HOW YOU WERE THE FIRST PERSON CHAIRMAN JIN SOUGHT OUT WHEN HE WAS IN TROUBLE, CHAIRMAN LEE.",
+          "confidence": 0.951,
+          "text_ar": "تماما مثلما كنت الشخص الأول الذي يلجأ إليه الرئيس جين عندما كان في ورطة، أيها الرئيس لي."
+        },
+        {
+          "text": "IF YOU CUT OFF HER LIMBS, MADAM LEE PHIL-OK WON'T BE ABLE TO DO A THING.",
+          "confidence": 0.914,
+          "text_ar": "إن قطعت أطرافها، فلن تستطيع السيدة لي بيل-وك فعل أي شيء."
+        },
+        {
+          "text": "BECAUSE SHE DOESN'T HAVE ANY SPARE LIMBS.",
+          "confidence": 0.966,
+          "text_ar": "لأنه ليس لديها أطراف بديلة."
+        },
+        {
+          "text": "SHE ONLY HAS ONE HEAD TOO, RIGHT? BECAUSE DIRECTOR CHEON IS THE BRAIN.",
+          "confidence": 0.982,
+          "text_ar": "ولديها رأس واحد فقط، أليس كذلك؟ لأن المدير تشيون هو ذلك العقل."
+        },
+        {
+          "text": "IT WOULD BE TROUBLESOME IF SHE HAD SPARES.",
+          "confidence": 0.968,
+          "text_ar": "سيكون مزعجًا لو كان لديها رؤوس بديلة."
+        },
+        {
+          "text": "YOU VICIOUS BASTARD.",
+          "confidence": 0.977,
+          "text_ar": "يا لك من نذل خبيث."
+        },
+        {
+          "text": "YOU ARE SAYING YOU ARE GOING TO CUT OFF YOUR GRANDMOTHER'S HEAD AND ATTACH IT TO YOUR OWN HAND?",
+          "confidence": 0.924,
+          "text_ar": "أتقول إنك ستفصل رأس جدتك وتلصقه بيدك الخاصة؟"
+        },
+        {
+          "text": "WHY?",
+          "confidence": 0.993,
+          "text_ar": "ولماذا؟"
+        },
+        {
+          "text": "DON'T TELL ME DIRECTOR CHEON SANG-PIL HOLDS MASSIVE POWER LIKE YOU DID, CHAIRMAN LEE?",
+          "confidence": 0.923,
+          "text_ar": "ألا تخبرني أن المدير تشيون سانغ-بيل يمتلك نفوذًا هائلًا مثلما كنت تفعل، أيها الرئيس لي؟"
+        },
+        {
+          "text": "..OWER IS RELATIVE.",
+          "confidence": 0.938,
+          "text_ar": "النفوذ... أمر نسبيون."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "THE POWER TO MANIPULATE THE CONGLOMERATE ARTSFOUNDATIONHOWEVERHE WANTS ON BEHALF OF A PUPPET- LIKE GRANDMOTHER",
+          "confidence": 0.946,
+          "text_ar": "إن القدرة على التلاعب بمؤسسة الفنون التابعة للمجموعة بالطريقة التي يحلو لها بالنيابة عن جدة دمية"
+        },
+        {
+          "text": "IS NOT MUCH DIFFERENT FROMWHEN I WAS SUNYANG'S SECOND-IN-COMMAND.",
+          "confidence": 0.954,
+          "text_ar": "لا تختلف كثيرًا عن وقتما كنت الرجل الثاني في سونيانغ."
+        },
+        {
+          "text": "NO, IT IS EVEN GREATER.",
+          "confidence": 0.934,
+          "text_ar": "بل لا، إنها أعظم حتى."
+        },
+        {
+          "text": "BECAUSE I WAS THE TAIL OF A DRAGON, AND DIRECTOR CHEON IS THE HEAD OF A SNAKE.",
+          "confidence": 0.942,
+          "text_ar": "لأنني كنت ذيل تنين، بينما المدير تشيون هو رأس أفعى."
+        },
+        {
+          "text": "TO CUT OFF THE TAIL OF A DRAGON, YOU NEED A MASSIVE EXPEDITION TEAM TO CATCH THE DRAGON,",
+          "confidence": 0.91,
+          "text_ar": "لقطع ذيل تنين، أنت بحاجة إلى فريق استكشاف ضخم للقبض على التنين،"
+        },
+        {
+          "text": "BUT TO CUT OFF THE HEAD OF A SNAKE, A SINGLE SNAKE CATCHER IS ENOUGH.",
+          "confidence": 0.956,
+          "text_ar": "لكن لقطع رأس أفعى، يكفي صائد أفاعٍ واحد."
+        },
+        {
+          "text": "THAT IS THE LIMIT OF THE HEAD OF A SNAKE.",
+          "confidence": 0.952,
+          "text_ar": "تلك هي حدود رأس الأفعى."
+        },
+        {
+          "text": "AND YOU HAVE A SNAKE CATCHER?",
+          "confidence": 0.906,
+          "text_ar": "وهل لديك صائد أفاعٍ؟"
+        },
+        {
+          "text": "YES.WE HAVE A TERRIFYING SNAKE CATCHER.",
+          "confidence": 0.977,
+          "text_ar": "أجل. لدينا صائد أفاعٍ مرعب."
+        },
+        {
+          "text": "Heheher",
+          "confidence": 0.887,
+          "text_ar": "ههههه..."
+        },
+        {
+          "text": "Hah..",
+          "confidence": 0.892,
+          "text_ar": "هاه.."
+        },
+        {
+          "text": "JUST GO.",
+          "confidence": 0.976,
+          "text_ar": "اذهب فحسب."
+        },
+        {
+          "text": "CEO LEE HAKJAE",
+          "confidence": 0.946,
+          "text_ar": "الرئيس التنفيذي لي هاكجاي"
+        },
+        {
+          "text": "LOOKING AT YOU, I CAN'T EVEN TELL YOU HOW RELIEVED I AM THAT I WAS THE TAIL OF A DRAGON.",
+          "confidence": 0.923,
+          "text_ar": "حين أنظر إليك، لا أستطيع حتى أن أعبر عن مدى شعوري بالارتياح لأنني كنت ذيل تنين."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "HE WILL CONTACT ME SOON.",
+          "confidence": 0.959,
+          "text_ar": "سيتواصل معي قريبًا."
+        },
+        {
+          "text": "SINCE MADAMLEEPHIL-OK HAS NEVER EXPERIENCEDBEING CORNERED BY SOMEONE LIKE THIS,",
+          "confidence": 0.907,
+          "text_ar": "بما أن السيدة لي بيل-وك لم تختبر قط شعور الوقوع في زاوية ضيقة كهذه على يد شخص ما،"
+        },
+        {
+          "text": "SHE WILL BE NAGGING HIM TO RESOLVE IT AS QUICKLY AS POSSIBLE NO MATTER WHAT.",
+          "confidence": 0.912,
+          "text_ar": "فستظل تزعجه ليحل المشكلة بأسرع وقت ممكن مهما تكلف الأمر."
+        },
+        {
+          "text": "MR. JIN DOJUN?",
+          "confidence": 0.958,
+          "text_ar": "السيد جين دوجون؟"
+        },
+        {
+          "text": "IT'S THE HEAD OF THE SNAKE!",
+          "confidence": 0.977,
+          "text_ar": "إنه رأس الأفعى!أجل، أتحدث إليك."
+        },
+        {
+          "text": "YES, SPEAKING.",
+          "confidence": 0.987,
+          "text_ar": "أجل، أتحدث إليك."
+        },
+        {
+          "text": "I WOULDLIKE TOMEET WITH YOU REGARDING THE ISSUE WITH MADAM LEEPHIL-OK,THAT S, YOUR GRANDMOTHER.",
+          "confidence": 0.906,
+          "text_ar": "أود مقابلتك بخصوص قضية السيدة لي بيل-وك، أعني، جدتك."
+        },
+        {
+          "text": "COULD YOU SPARE SOME TIME?",
+          "confidence": 0.94,
+          "text_ar": "أيمكنك تخصيص بعض الوقت؟"
+        },
+        {
+          "text": "I DON'T KNOW WHO THIS IS, BUT LET'S SEE SOME BASIC COURTESY FIRST.",
+          "confidence": 0.881,
+          "text_ar": "لا أعرف من تكون، ولكن لنبدأ بإظهار بعض الآداب الأساسية أولًا."
+        },
+        {
+          "text": "WHO ARE YOU?",
+          "confidence": 0.91,
+          "text_ar": "من أنت؟"
+        },
+        {
+          "text": "I NEED TO MAKE SURE THE SNAKE'S HEAD CLEARLY UNDERSTANDS SNAKE'SHEADCLEARLYUNDERSTANDS THAT THE SWORD IS IN MY HANDS. THATTHE SWORD IS IN MY HANDS.",
+          "confidence": 0.935,
+          "text_ar": "علي التأكد من أن رأس الأفعى يدرك بوضوح أن السيف بين يدي."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "AH, MY APOLOGIES. IAMCHEONSANG-PILADIRECTOR ATTHECONGLOMERATEARTS FOUNDATION.",
+          "confidence": 0.937,
+          "text_ar": "آه، أعتذر. أنا تشيون سانغ-بيل، المدير السابق بمؤسسة الفنون التابعة للمجموعة."
+        },
+        {
+          "text": "CHEON SANG-PIL? I AM AWARE THAT THERE IS NO ONE NAMED CHEONSANG-PIL AMONG THE FOUNDATION'S DIRECTORS.",
+          "confidence": 0.938,
+          "text_ar": "تشيون سانغ-بيل؟ أنا على علم بأنه لا يوجد شخص يدعى تشيون سانغ-بيل بين مديري المؤسسة الحاليين."
+        },
+        {
+          "text": "WHO ARE YOU?",
+          "confidence": 0.837,
+          "text_ar": "من تكون؟"
+        },
+        {
+          "text": "AH... I LEFT OUT THE WORDS \"IN THE PAST.\" HAHA.",
+          "confidence": 0.898,
+          "text_ar": "آه... لقد أغفلت قول \"السابق\". هاها."
+        },
+        {
+          "text": "FINE.LET'S ASSUME FINE. LET'S ASSUME YOU ARE GRANDMOTHER'S PROXY.",
+          "confidence": 0.863,
+          "text_ar": "حسنًا. لنفترض أنك ممثل الجدة."
+        },
+        {
+          "text": "THINK CAREFULLY ABOUT HOWMUCHYOU NEED TOBRING,",
+          "confidence": 0.928,
+          "text_ar": "فكر مليًّا في القدر الذي يتعين عليك إحضاره،"
+        },
+        {
+          "text": "AND CONTACT ME AGAIN AFTER COORDINATING YOUR OPINIONS WITH GRANDMOTHER.",
+          "confidence": 0.949,
+          "text_ar": "وتواصل معي مجددًا بعد تنسيق آرائك مع الجدة."
+        },
+        {
+          "text": "W-WAIT A MINUTE...",
+          "confidence": 0.853,
+          "text_ar": "ا-انتظر لحظة..."
+        },
+        {
+          "text": "Star TAK",
+          "confidence": 0.957,
+          "text_ar": "ستار تاك"
+        },
+        {
+          "text": "MOTOROLY M",
+          "confidence": 0.622,
+          "text_ar": "موتورولا إم"
+        },
+        {
+          "text": "NOW LET'S SEE JUST HOW BIG THE VESSELS OF MY GRANDMOTHER AND THE SNAKE'S HEAD",
+          "confidence": 0.85,
+          "text_ar": "لنرى الآن كم يبلغ حجم طموح كل من جدتي ورأس الأفعى"
+        },
+        {
+          "text": "ACTUALLY ARE.",
+          "confidence": 0.95,
+          "text_ar": "في الواقع."
+        },
+        {
+          "text": "： :ra}}$ ： JHS",
+          "confidence": 0.524,
+          "text_ar": "زيارا"
+        }
+      ]
+    }
+  ]
+}
