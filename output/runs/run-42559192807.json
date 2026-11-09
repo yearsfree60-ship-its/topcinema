@@ -47,6 +47,22 @@
           ],
           "originalBytes": 10950527,
           "compressedBytes": 1590382
+        },
+        {
+          "label": "الفصل 3",
+          "num": "3",
+          "chNum": 3.0,
+          "sourceUrl": "https://starzmanga.com/manga/evil-prinsess/3/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-3/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-3/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-3/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-3/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-3/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-3/006.webp"
+          ],
+          "originalBytes": 10506067,
+          "compressedBytes": 1418662
         }
       ]
     }
