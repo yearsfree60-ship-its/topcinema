@@ -653,6 +653,20 @@
           ],
           "originalBytes": 15494629,
           "compressedBytes": 1156132
+        },
+        {
+          "label": "الفصل 30",
+          "num": "30",
+          "chNum": 30.0,
+          "sourceUrl": "https://starzmanga.com/manga/evil-prinsess/30/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-30/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-30/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-30/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.com__evil-prinsess/ch-30/004.webp"
+          ],
+          "originalBytes": 14936867,
+          "compressedBytes": 1290060
         }
       ]
     }
