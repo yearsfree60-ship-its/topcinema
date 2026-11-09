@@ -1,0 +1,685 @@
+{
+  "manga_id": "arenascan.com__the-chaebeols-youngest-son",
+  "chapter_num": "215",
+  "manga_title": "The Chaebeol’s Youngest Son",
+  "translation_model": "gemini-3.5-flash-lite",
+  "pages": [
+    {
+      "page": 1,
+      "image_id": 1,
+      "sentences": [
+        {
+          "text": "YOU PLANNED THIS FROM THE START.?!",
+          "confidence": 0.895,
+          "text_ar": "أكنتَ تخطط لهذا منذ البداية؟!أصحيح هذا؟!"
+        },
+        {
+          "text": "AS IF I WOULD'VE PLANNED THIS FROM THE START.",
+          "confidence": 0.934,
+          "text_ar": "كأنني كنت لأخطط لهذا منذ البداية."
+        },
+        {
+          "text": "I DIDN'T NEED THAT MONEY, SO I LET IT BE.",
+          "confidence": 0.862,
+          "text_ar": "لم أكن محتاجًا لتلك الأموال، لذا تركتها وشأنها."
+        },
+        {
+          "text": "I DIDN'T EXPECT I COULD USE IT THIS WAY EITHER.",
+          "confidence": 0.925,
+          "text_ar": "ولم أتوقع أنني قد أستفيد منها بهذه الطريقة أيضًا."
+        },
+        {
+          "text": "PRETENDING TO BE INNOCENT WON'T CONVINCE HIM.",
+          "confidence": 0.966,
+          "text_ar": "التظاهر بالبراءة لن يقنعه."
+        },
+        {
+          "text": "ALL THOSE HIDDEN DOCUMENTS ANDWITNESSES PROVEIPLOTTEDFROM THE START.",
+          "confidence": 0.976,
+          "text_ar": "كل تلك المستندات والشهود المخفيين يثبتون أنني دبرت للأمر منذ البداية."
+        },
+        {
+          "text": "YOU'RE GONNA RUIN THE LIFE OF THE PROSECUTOR WHO CAME ON THE NEWS TODAY!!",
+          "confidence": 0.945,
+          "text_ar": "ستدمر حياة المدعي العام الذي ظهر في نشرة الأخبار اليوم!!"
+        },
+        {
+          "text": "A PROSECUTOR DRIVEN INTO A RECKLESS INVESTIGATION BY AMBITION!!",
+          "confidence": 0.924,
+          "text_ar": "مدعٍ عام جُرف نحو تحقيق متهور بسبب الطموح!!"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "image_id": 2,
+      "sentences": [
+        {
+          "text": "HE'LL BE SHUNNED FOR TARNISHING THE HONOR OF A LEADING CORPORATION'S OWNER FAMILY. HE WONT EVEN BE ABLE TO OPEN A LAW PRACTICCE.",
+          "confidence": 0.886,
+          "text_ar": "سمنبوذ لتلطيخه شرف عائلة مالكي شركة كبرى. ولن يتمكن حتى من فتح مكتب محاماة."
+        },
+        {
+          "text": "UNCLE, DO YOU THINK TURNING A PROTESTING FACTORYWORKER INTO A VILLAIN",
+          "confidence": 0.904,
+          "text_ar": "أيها العم، أتعتقد أن تحويل عامل مصنع محتج إلى شرير"
+        },
+        {
+          "text": "TO COVER UP THE REAL ISSUE WILL WORK AGAIN?",
+          "confidence": 0.906,
+          "text_ar": "للتغطية على المشكلة الحقيقية سيجد نفعًا مجددًا؟"
+        },
+        {
+          "text": "THE OPPONENT IS DIFFERENT THIS TIME.",
+          "confidence": 0.944,
+          "text_ar": "الخصم مختلف هذه المرة."
+        },
+        {
+          "text": "PROSECUTOR OR WORKER, THEYRE ALL THE SAME TO ME!",
+          "confidence": 0.914,
+          "text_ar": "سواء أكان مدعيًا عامًا أم عاملًا، فهما سيان بالنسبة لي!"
+        },
+        {
+          "text": "BUT I'M BEHIND THIS PROSECUTOR.",
+          "confidence": 0.935,
+          "text_ar": "لكنني أقف خلف هذا المدعي العام."
+        },
+        {
+          "text": "I ALSO HAVE THE POWER TO TURN HIM INTO A STAR.",
+          "confidence": 0.916,
+          "text_ar": "ولدي القدرة أيضًا على تحويله إلى نجم."
+        },
+        {
+          "text": "YOU KNOW WHO CONTROLS HALF THE MEDIA IN THIS COUNTRY THIS CoUNTRY DON'T YOU?",
+          "confidence": 0.852,
+          "text_ar": "أتعلم من يسيطر على نصف الإعلام في هذا البلد؟ ألا تعرف ذلك؟"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image_id": 3,
+      "sentences": [
+        {
+          "text": "A COURAGEOUS PROSECUTOR STANDING AGAINST THE ABSOLUTE POWER OF SUNYANG GROUP.",
+          "confidence": 0.967,
+          "text_ar": "مدعٍ عام شجاع يقف في وجه السلطة المطلقة لمجموعة سونيانغ."
+        },
+        {
+          "text": "ARIGHTEOUS MAN WHO RESISTED TEMPTATION AND EXPOSED CORPORATE CORRUPTION.",
+          "confidence": 0.952,
+          "text_ar": "رجل بار مقاوم للإغراءات وفضح الفساد المؤسسي."
+        },
+        {
+          "text": "THE HERO WHO RECOVERED A TRILLIONWON IN SLUSH FUNDS FOR THE NATION.",
+          "confidence": 0.942,
+          "text_ar": "البطل الذي استعاد تريليون ون من الأموال السوداء لصالح الأمة."
+        },
+        {
+          "text": "JUST ONE WEEK OF APPEARANCES ON VARIETY SHOWS,",
+          "confidence": 0.974,
+          "text_ar": "أسبوع واحد فقط من الظهور في البرامج الترفيهية،"
+        },
+        {
+          "text": "AND HE'LL BE A NATIONAL HERO.",
+          "confidence": 0.942,
+          "text_ar": "وسيكون بطلًا قوميًا."
+        },
+        {
+          "text": "YOU KNOW ENTERTAINMENT RATINGS BEAT THE NEWS BY FAR.",
+          "confidence": 0.917,
+          "text_ar": "أنت تعلم أن نسب المشاهدة الترفيهية تتفوق على الأخبار بمراحل."
+        },
+        {
+          "text": "BY NEXT WEEK'S BOARD MEETING, I'LL HAVE MADE HIM A STAR.",
+          "confidence": 0.949,
+          "text_ar": "بحلول اجتماع مجلس الإدارة الأسبوع القادم، سأكون قد جعلت منه نجمًا."
+        },
+        {
+          "text": "SO, UNCLE, TRy TO TURN HIM INTO SCUM.",
+          "confidence": 0.793,
+          "text_ar": "لذا، أيها العم، حاول جاهداً أن تحوله إلى حثالة."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "image_id": 4,
+      "sentences": [
+        {
+          "text": "LET'S SEE WHO WINS.",
+          "confidence": 0.936,
+          "text_ar": "لنَرَ من سينتصر."
+        },
+        {
+          "text": "$frac{}{}$",
+          "confidence": 0.791,
+          "text_ar": ""
+        },
+        {
+          "text": "$\\frac{}{}$ C",
+          "confidence": 0.412,
+          "text_ar": ""
+        },
+        {
+          "text": "THINK CAREFULLY ABOUT WHAT STANCE YOU'LL TAKE",
+          "confidence": 0.975,
+          "text_ar": "فكر مليًا في الموقف الذي ستتخذه"
+        },
+        {
+          "text": "AT THE BOARD MEETING.",
+          "confidence": 0.98,
+          "text_ar": "في اجتماع مجلس الإدارة."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "image_id": 5,
+      "sentences": [
+        {
+          "text": "THE SNIPER WENT TO THE HOTEL AFTER THE PRESS CONFERENCE.",
+          "confidence": 0.955,
+          "text_ar": "ذهب القناص إلى الفندق بعد المؤتمر الصحفي."
+        },
+        {
+          "text": "I'VE GOT HIS PHONE.",
+          "confidence": 0.945,
+          "text_ar": "لقد حصلت على هاتفه."
+        },
+        {
+          "text": "THE REPORTERS?",
+          "confidence": 0.963,
+          "text_ar": "وماذا عن الصحفيين؟"
+        },
+        {
+          "text": "I GAVE PLENTY OF MONEY TO THOSE WHO JUST COPIED THE PRESS RELEASE.",
+          "confidence": 0.894,
+          "text_ar": "أعطيت الكثير من المال لأولئك الذين اكتفوا بنسخ البيان الصحفي."
+        },
+        {
+          "text": "THE BROADCAST EXECUTIVES WILL WALK A TIGHTROPE. TELL THEM TO ENDURE FOR JUST ONE WEEK.",
+          "confidence": 0.893,
+          "text_ar": "مديرو البث سيمشون على حبل مشدود. أخبرهم بأن يصبروا لأسبوع واحد فقط."
+        },
+        {
+          "text": "WARN THEM THAT IF THEY SLIP, THEY WON'T RECOVER.",
+          "confidence": 0.936,
+          "text_ar": "حذرهم من أنهم إن زلّت أقدامهم فلن يتعافوا أبداً."
+        },
+        {
+          "text": "SECURITY STAFF ARE WAITING DOWNSTAIRS, SO GO WITH THEM.",
+          "confidence": 0.936,
+          "text_ar": "موظفو الأمن ينتظرون في الأسفل، فاذهب معهم."
+        },
+        {
+          "text": "GIVE 1O BILLION TO DIRECTORS, 5 BILLION TO LOWER EXECUTIVES.",
+          "confidence": 0.933,
+          "text_ar": "امنح المديرين 10 مليارات، وللمديرين التنفيذيين الأدنى 5 مليارات."
+        },
+        {
+          "text": "TELL THEM IT'S CLEAN MONEY, SO THEY DON'T NEED TO WORRY.",
+          "confidence": 0.919,
+          "text_ar": "أخبرهم أنها أموال نظيفة لكيلا يساورهم القلق."
+        },
+        {
+          "text": "S-SIR, THAT'S TOO MUCH. THAT'S MORE THAN TEN YEARS OF SALARY FOR THEM...",
+          "confidence": 0.894,
+          "text_ar": "س-سيدي، هذا كثير للغاية. هذا يفوق راتب عشر سنوات بالنسبة لهم..."
+        },
+        {
+          "text": "THEY GOTTA POCKET THE 10 BILLION TO KICK THE 1 BILLION, NO?",
+          "confidence": 0.943,
+          "text_ar": "عليهم جيب العشر مليارات لدفع المليار، أليس كذلك؟"
+        },
+        {
+          "text": "HUH?",
+          "confidence": 0.991,
+          "text_ar": "ها؟"
+        },
+        {
+          "text": "VICE CHAIRMAN JIN DONGGI WILL SURELY USE A BILLION TO SUPPRESS COVERAGE.",
+          "confidence": 0.945,
+          "text_ar": "نائب الرئيس جين دونغجي سيستخدم بالتأكيد مليارًا لقمع التغطية الإعلامية."
+        },
+        {
+          "text": "JOURNALISTS HAVE TO CHOOSE BETWEEN TWO OFFERS. A TENFOLD DIFFERENCE MAKES THE CHOICE EASY",
+          "confidence": 0.965,
+          "text_ar": "على الصحفيين الاختيار بين عرضين. الفارق الهائل بعشرة أضعاف يجعل الاختيار سهلًا."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image_id": 6,
+      "sentences": [
+        {
+          "text": "HE'LL ALSO MAKE A BIG FUSS, PROMISING TO PUSH",
+          "confidence": 0.929,
+          "text_ar": "سيحدث ضجة كبرى أيضًا، واعدًا بضخ"
+        },
+        {
+          "text": "MASSIVE AD VOLUMES TO EVERY NETWORK.",
+          "confidence": 0.913,
+          "text_ar": "أحجام هائلة من الإعلانات لكل شبكة."
+        },
+        {
+          "text": "BUT EXECUTIVES ARE JUST SALARIED MEN.",
+          "confidence": 0.98,
+          "text_ar": "لكن المديرين التنفيذيين ما هم إلا موظفون يتقاضون رواتب."
+        },
+        {
+          "text": "THEY CARE ABOUT COMPANY PROFITS, SURE",
+          "confidence": 0.96,
+          "text_ar": "يهتمون بأرباح الشركة، بالطبع"
+        },
+        {
+          "text": "BUT WHEN 10 BILLION LANDS IN THEIR OWN POCKET,",
+          "confidence": 0.956,
+          "text_ar": "ولكن عندما تهبط 10 مليارات في جيبهم الخاص،"
+        },
+        {
+          "text": "AD REVENUE LOOKS TRIVIAL.",
+          "confidence": 0.98,
+          "text_ar": "تبدو عائدات الإعلانات تافهة."
+        },
+        {
+          "text": "SO,YOU'RE GIVING THEM ENOUGH TO FORGET COMPANY INTERESTS ENTIRELY.",
+          "confidence": 0.885,
+          "text_ar": "لذا، أنت تعقدهم بما يكفي لنسيان مصالح الشركة تمامًا."
+        },
+        {
+          "text": "ENOUGH SO THEY HAVE NO CONSCIENCE, JUST GREED.",
+          "confidence": 0.958,
+          "text_ar": "بما يكفي لتتلاشى ضمائرهم ولا يتبقى سوى الجشع."
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.993,
+          "text_ar": "حسنًا."
+        },
+        {
+          "text": "HAHAHAHA!",
+          "confidence": 0.992,
+          "text_ar": "هاهاهاها!"
+        },
+        {
+          "text": "YOU GOT INTO A PROPER FIGHT.",
+          "confidence": 0.969,
+          "text_ar": "لقد خضت معركة حقيقية بحق."
+        },
+        {
+          "text": "FATHER, HOW CAN YOU LAUGH?",
+          "confidence": 0.92,
+          "text_ar": "أبي، كيف يمكنك أن تضحك؟"
+        },
+        {
+          "text": "THIS ISN'T SOME THUG BRAWL OVER NIGHTCLUB OVDRNIOODOD TURF.",
+          "confidence": 0.635,
+          "text_ar": "هذه ليست شجار عصابات على نفوذ الملاهي الليلية."
+        },
+        {
+          "text": "THIS IS A BATTLE OVER ONE-THIRD OFSUNYANG GROUP...",
+          "confidence": 0.933,
+          "text_ar": "هذه معركة على ثلث مجموعة سونيانغ..."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "image_id": 7,
+      "sentences": [
+        {
+          "text": "ONE-THIRD? ELECTRONICS ALONE IS HALF THE GROUP.",
+          "confidence": 0.91,
+          "text_ar": "الثلث؟ قطاع الإلكترونيات وحده يشكل نصف المجموعة."
+        },
+        {
+          "text": "EVEN WITH FINANCE SUBSIDIARIES, IT'S BARELY A FIFTH.",
+          "confidence": 0.952,
+          "text_ar": "حتى مع الشركات التابعة للقطاع المالي، فهي بالكاد تمثل الخمس."
+        },
+        {
+          "text": "I DIDN'T COME RUNNING TO YOU TO ASK FOR SALES FIGURES.",
+          "confidence": 0.943,
+          "text_ar": "لم أركض إليك لأطلب أرقام المبيعات."
+        },
+        {
+          "text": "I DON'T OWN A SINGLE SHARE OF SUNYANG. SO WHAT DO YOU EXPECT DO YOUEXPECT ME TO DO?",
+          "confidence": 0.93,
+          "text_ar": "أنا لا أملك سهمًا واحدًا في سونيانغ. فماذا تتوقع مني أن أفعل إذن؟"
+        },
+        {
+          "text": "I CAN'T ATTEND THE BOARD MEETINGS, ANDI CAN'T CALLA SHAREHOLDERS' MEETING EITHER.",
+          "confidence": 0.908,
+          "text_ar": "لا يمكنني حضور اجتماعات مجلس الإدارة، ولا يمكنني الدعوة لاجتماع للمساهمين أيضًا."
+        },
+        {
+          "text": "YOU CAN STILL HELP IN ANOTHER WAY",
+          "confidence": 0.944,
+          "text_ar": "لا يزال بإمكانك المساعدة بطريقة أخرى."
+        },
+        {
+          "text": "WHAT WAY?",
+          "confidence": 0.977,
+          "text_ar": "بأي طريقة؟"
+        },
+        {
+          "text": "YOU COULD START A MEDIA WAR",
+          "confidence": 0.947,
+          "text_ar": "يمكنك إشعال حرب إعلامية"
+        },
+        {
+          "text": "WITH UNCLE DONGGI.",
+          "confidence": 0.985,
+          "text_ar": "مع العم دونغجي."
+        },
+        {
+          "text": "YOU KNOW I'M TIED TO DRAMA AND VARIETY DEPARTMENTS, NOT THE NEWS DIVISION.",
+          "confidence": 0.88,
+          "text_ar": "أنت تعلم أنني مرتبط بأقسام الدراما والمنوعات، وليس قسم الأخبار."
+        },
+        {
+          "text": "MY INFLUENCE DOESN'T REACH FAR THERE.",
+          "confidence": 0.962,
+          "text_ar": "نفوذي لا يمتد بعيدًا هناك."
+        },
+        {
+          "text": "I KNOW. THAT SIDE'S ALREADY BEEN HANDLED.",
+          "confidence": 0.967,
+          "text_ar": "أعلم. لقد تم التعامل مع هذا الجانب بالفعل."
+        },
+        {
+          "text": "ALREADY? THAT FAST? DID YOU PAY THEM?",
+          "confidence": 0.927,
+          "text_ar": "بالفعل؟ بهذه السعة؟ هل دفعت لهم؟"
+        },
+        {
+          "text": "YES, ENOUGH TO MAKE JAWS DROP.",
+          "confidence": 0.935,
+          "text_ar": "نعم، بما يكفي لتسقط الأفكار من الحيرة."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "image_id": 8,
+      "sentences": [
+        {
+          "text": "SINCE YOU'RE THE ONE PAYING,I SHOULD AT LEASTHELP WITH THINGS THAT DON'T COST MONEY.",
+          "confidence": 0.916,
+          "text_ar": "بما أنك أنت من يدفع، فيجب عليَّ على الأقل المساعدة فيما لا يكلف مالًا."
+        },
+        {
+          "text": "Manageme Manage",
+          "confidence": 0.912,
+          "text_ar": "الإدارة"
+        },
+        {
+          "text": "THAT WAY I CAN KEEP MY DIGNITY AS A FATHER.",
+          "confidence": 0.916,
+          "text_ar": "بهذه الطريقة يمكنني الحفاظ على كرامتي كأب."
+        },
+        {
+          "text": "WHATDO YOU MEAN BYTHINGS THAT DON'T COST MONEY?",
+          "confidence": 0.942,
+          "text_ar": "ماذا تقصد بما لا يكلف مالًا؟"
+        },
+        {
+          "text": "AT THE NETWORKS, WHETHERHIGH-RANKING OR LOW-RANKING,EVERYONE CAUSES TROUBLE.",
+          "confidence": 0.973,
+          "text_ar": "في شبكات البث، وسواء أكانوا من ذوي الرتب العالية أم المنخفضة، فكلهم يثيرون المشاكل."
+        },
+        {
+          "text": "THEIR WORKPLACE JUST HAPPENS TO BE A BROADCASTING STATION, BUT THEYWIELDPOWER AS IF IT WERE SOME NOBLE OFFICE.",
+          "confidence": 0.943,
+          "text_ar": "مكان عملهم مصادفة هو محطة بث، لكنهم يمارسون النفوذ كأنها مكتب نبيل."
+        },
+        {
+          "text": "I PLAN TO POLITELY ASK THOSE TyPES NOT TO THROW CHILI POWDER",
+          "confidence": 0.902,
+          "text_ar": "أخطط لطلب هؤلاء الأفراد بأدب ألا يرشوا مسحوق الفلفل الحار"
+        },
+        {
+          "text": "ON My SON's STRUGGLE.",
+          "confidence": 0.816,
+          "text_ar": "على كفاح ابني."
+        },
+        {
+          "text": "THEN I'D LIKE TO ASK ANOTHER FAVOR.",
+          "confidence": 0.958,
+          "text_ar": "إذن أود أن أطلب معروفًا آخر."
+        },
+        {
+          "text": "WHAT NOW?",
+          "confidence": 0.973,
+          "text_ar": "وماذا الآن؟"
+        },
+        {
+          "text": "FATHER, IF YOU SET YoUR MIND TO IT, yoU CAN MAKE A FLASH STAR IN NO TIME.",
+          "confidence": 0.799,
+          "text_ar": "أبي، إذا عقدت العزم، يمكنك صنع نجم لامع في لمح البصر."
+        },
+        {
+          "text": "A STAR? YOU MEAN YOURSELF?",
+          "confidence": 0.922,
+          "text_ar": "نجم؟ أتقصد نفسك؟"
+        },
+        {
+          "text": "NO.UNCLE DONGGI MIGHT SHRED THE PROSECUTORI'M BACKING INTO RAGS.",
+          "confidence": 0.96,
+          "text_ar": "لا. العم دونغجي قد يمزق المدعي العام الذي أدفعه إلى أشلاء."
+        },
+        {
+          "text": "TO PREPARE THAT,PLEASE PUT FOR - HIM ON TALK SHOWS. MAKE HIM SHINE.",
+          "confidence": 0.2,
+          "text_ar": "للتحضير لذلك، أرجو أن تشركه في البرامج الحوارية. اجعله يتألق."
+        },
+        {
+          "text": "ALRIGHT.",
+          "confidence": 0.994,
+          "text_ar": "حسناً."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "image_id": 9,
+      "sentences": [
+        {
+          "text": "BRING THE WRITERS TO MY OFFICE...",
+          "confidence": 0.886,
+          "text_ar": "أحضر الكتاب إلى مكتبي..."
+        },
+        {
+          "text": "NO,ALL OF THEM.",
+          "confidence": 0.824,
+          "text_ar": "لا، كلهم."
+        },
+        {
+          "text": "WHEN THE STAFF ARRIVE, EXPLAIN IT YOURSELF.",
+          "confidence": 0.944,
+          "text_ar": "عندما يصل الموظفون، اشرح الأمر بنفسك."
+        },
+        {
+          "text": "RIGHT NOW, IT'S IMPORTANT TO CONVEY YOUR INTENT PRECISELY",
+          "confidence": 0.895,
+          "text_ar": "الآن، من المهم نقل نيتك بدقة."
+        },
+        {
+          "text": "BETTER TO GO DIRECT THAN THROUGH A MIDDLEMAN.",
+          "confidence": 0.949,
+          "text_ar": "من الأفضل الذهاب مباشرة بدلاً من الوسيط."
+        },
+        {
+          "text": "AND I'LL INTRODUCE YOU TO THE VIP PATIENTS AT SUNYANG MEDICAL CENTER.",
+          "confidence": 0.94,
+          "text_ar": "وسأقدمك إلى مرضى كبار الشخصيات في مركز سونيانغ الطبي."
+        },
+        {
+          "text": "QUITE A FEW OF THEM ARE USEFUL PEOPLE.",
+          "confidence": 0.928,
+          "text_ar": "الكثير منهم أشخاص مفيدون."
+        },
+        {
+          "text": "MY FATHER",
+          "confidence": 0.963,
+          "text_ar": "والدي"
+        },
+        {
+          "text": "IS SO METICULOUS.",
+          "confidence": 0.948,
+          "text_ar": "دقيق للغاية حقًا."
+        },
+        {
+          "text": "ATTHISSTAGE,ISHOULDBE FLOODEDWITHCALLS ASKING ABOUTMYINTENTIONSOR CONFIRMING THEM...",
+          "confidence": 0.914,
+          "text_ar": "في هذه المرحلة، يجب أن أغرق بالاتصالات التي تسأل عن نواياي أو تؤكدها..."
+        },
+        {
+          "text": "BUT NOT A SINGLE PERSON IS CALLING. ISCALLING.",
+          "confidence": 0.906,
+          "text_ar": "ولكن ليس هناك شخص واحد يتصل. يتصل."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "image_id": 10,
+      "sentences": [
+        {
+          "text": "HEY! WHAT IS THIS? ARE THE RUMORS TRUE?",
+          "confidence": 0.907,
+          "text_ar": "مهلاً! ما هذا؟ أالشائعات صحيحة؟"
+        },
+        {
+          "text": "WHAT RUMORS?",
+          "confidence": 0.967,
+          "text_ar": "أي شائعات؟"
+        },
+        {
+          "text": "THE LABUAN SLUSH FUNDS!",
+          "confidence": 0.964,
+          "text_ar": "أموال لابوان السوداء!"
+        },
+        {
+          "text": "THEY'RE SAYING YOU USED THE MONEY FOR A GHOST-COMPANY ACQUSITION AND POCKETED IT!",
+          "confidence": 0.924,
+          "text_ar": "يقولون إنك استخدمت الأموال للاستحواذ على شركة وهمية واختلستها!"
+        },
+        {
+          "text": "IF YOU'RE GOING TO STEAL, AT LEAST DON'T GET CAUGHT.",
+          "confidence": 0.935,
+          "text_ar": "إن كنت ستسرق، فلا تقع في شرك الاكتشاف على الأقل."
+        },
+        {
+          "text": "HOW CAN YOU LET NEWS LIKE THIS BREAK AT SUCH A CRITICAL MOMENT?!",
+          "confidence": 0.953,
+          "text_ar": "كيف يمكنك السماح بخروج أخبار كهذه في مثل هذا الوقت الحرج؟!"
+        },
+        {
+          "text": "WHO SAID I'M THE ONE IN THE NEWS?",
+          "confidence": 0.956,
+          "text_ar": "ومن قال إنني أنا من في الأخبار؟"
+        },
+        {
+          "text": "EVERYONE DrTo EXCEPT YOU!",
+          "confidence": 0.332,
+          "text_ar": "الجميع يهمس بذلك سواك!"
+        },
+        {
+          "text": "EVERYONE WALKING AROUND THIS BUILDING IS WHISPERING ABOUTIT. YOU FIRED THOUSANDS OF PEOPLE DURING THE IMF CRIS1S.",
+          "confidence": 0.855,
+          "text_ar": "كل من يتجول في هذا المبنى يهمس بالأمر. لقد فصلت آلاف الأشخاص أثناء أزمة صندوق النقد الدولي."
+        },
+        {
+          "text": "AND NOW THEY HEAR YOU SIPHONED OFF A TRILLION WON!",
+          "confidence": 0.936,
+          "text_ar": "والآن يسمعون أنك اختلست تريليون ون!"
+        },
+        {
+          "text": "THEY DON'T LOOK AT YOU WITH RESPECT, THEY LOOK AT YOU LIKE YOURE A VERMIN.",
+          "confidence": 0.879,
+          "text_ar": "هم لا ينظرون إليك باحترام، بل ينظرون إليك كما لو كنت حشرة ضارة."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "image_id": 11,
+      "sentences": [
+        {
+          "text": "ENOUGH. YOUVE GOT PLENTY OF SKELETONS IN YOUR OWN CLOSET.",
+          "confidence": 0.91,
+          "text_ar": "كفى. لديك ما يكفي من الهياكل العظمية في خباياك."
+        },
+        {
+          "text": "JUST THE FOREIGN-EXCHANGE GAINS FROM SUNYANG ELECTRONICS'EXPORT PAYMENTS THAT YOUSLIPPED INTO YOUROWNPOCKET AMOUNT TO HUNDREDS OF BILLIONS.",
+          "confidence": 0.933,
+          "text_ar": "مجرد أرباح الصرف الأجنبي من صادرات سونيانغ للإلكترونيات التي دستها في جيبك الخاص تبلغ مئات المليارات."
+        },
+        {
+          "text": "DO YOU WANT ME TO LET THAT HIT THE NEWS?",
+          "confidence": 0.817,
+          "text_ar": "أتريد مني أن أترك ذلك يصل إلى الأخبار؟"
+        },
+        {
+          "text": "ANYWAY,CLEAN THIS UP QUICKLY BEFORE THE NAME \"SUNYANG\"GETS DRAGGED IN.",
+          "confidence": 0.948,
+          "text_ar": "على أي حال، أصلح هذا سريعًا قبل أن يجر اسم \"سونيانغ\" معه."
+        },
+        {
+          "text": "IF WE ANNOUNCE MAJOR PERSONNEL RESHUFFLES RIGHT NOW, THE ENTIRE GROUP WILL FALL INTO CHAOS.",
+          "confidence": 0.913,
+          "text_ar": "إذا أعلنا عن تغييرات واسعة في الموظفين الآن، ستدخل المجموعة بأكملها في حالة فوضى."
+        },
+        {
+          "text": "STOP NAGGING AND DO SOMETHING YOURSELF.",
+          "confidence": 0.964,
+          "text_ar": "توقف عن التذمر وافعل شيئًا بنفسك."
+        },
+        {
+          "text": "OR I'LL HAVE NO CHOiCE BUT TO SKIP NEXT WEEK'S BOARD MEETING.",
+          "confidence": 0.862,
+          "text_ar": " وإلا فلن يكون لدي خيار سوى تخطي اجتماع مجلس الإدارة الأسبوع المقبل."
+        },
+        {
+          "text": "WHAT ARE YOU TALKING ABOUT?!",
+          "confidence": 0.98,
+          "text_ar": "عما تتحدث؟!"
+        },
+        {
+          "text": "SKIPPING THE BOARD MEETING?!",
+          "confidence": 0.985,
+          "text_ar": "تخطي اجتماع مجلس الإدارة؟!"
+        },
+        {
+          "text": "THIS IS ALL DOJUN'S DOING!",
+          "confidence": 0.92,
+          "text_ar": "هذا كله من صنيع دوجون!"
+        },
+        {
+          "text": "HE HAS MY WEAKNESS AND IS SCHEMING TO PROTECT THE FINANCIAL GROUP USING ME!",
+          "confidence": 0.959,
+          "text_ar": "إنه يملك نقطة ضعفي ويخطط لحماية المجموعة المالية مستخدمًا إياي!"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "image_id": 12,
+      "sentences": [
+        {
+          "text": "WHAT?!",
+          "confidence": 0.994,
+          "text_ar": "ماذا؟!"
+        },
+        {
+          "text": "： :JPr ： 号： JHS",
+          "confidence": 0.55,
+          "text_ar": ""
+        }
+      ]
+    }
+  ]
+}
