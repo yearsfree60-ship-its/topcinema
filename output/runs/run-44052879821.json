@@ -524,6 +524,20 @@
           ],
           "originalBytes": 10245700,
           "compressedBytes": 1276548
+        },
+        {
+          "label": "الفصل 39",
+          "num": "39",
+          "chNum": 39.0,
+          "sourceUrl": "https://starzmanga.net/manga/i-took-over-the-system-players/39/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-39/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-39/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-39/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-39/004.webp"
+          ],
+          "originalBytes": 9757187,
+          "compressedBytes": 1221540
         }
       ]
     }
