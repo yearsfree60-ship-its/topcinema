@@ -82,6 +82,19 @@
           ],
           "originalBytes": 7554592,
           "compressedBytes": 978576
+        },
+        {
+          "label": "الفصل 7",
+          "num": "7",
+          "chNum": 7.0,
+          "sourceUrl": "https://starzmanga.net/manga/i-took-over-the-system-players/7/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-7/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-7/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-7/003.webp"
+          ],
+          "originalBytes": 7816704,
+          "compressedBytes": 1070112
         }
       ]
     }
