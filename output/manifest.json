@@ -46154,6 +46154,20 @@
           ],
           "originalBytes": 10048962,
           "compressedBytes": 1208002
+        },
+        {
+          "label": "الفصل 25",
+          "num": "25",
+          "chNum": 25.0,
+          "sourceUrl": "https://starzmanga.net/manga/i-took-over-the-system-players/25/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-25/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-25/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-25/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-25/004.webp"
+          ],
+          "originalBytes": 9146960,
+          "compressedBytes": 1208312
         }
       ]
     }
