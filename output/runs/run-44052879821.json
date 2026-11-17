@@ -1,0 +1,23 @@
+{
+  "manga": {
+    "starzmanga.net__i-took-over-the-system-players": {
+      "name": "i took over the system players",
+      "chapters": [
+        {
+          "label": "الفصل 1",
+          "num": "1",
+          "chNum": 1.0,
+          "sourceUrl": "https://starzmanga.net/manga/i-took-over-the-system-players/1/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-1/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-1/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-1/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-1/004.webp"
+          ],
+          "originalBytes": 9398156,
+          "compressedBytes": 1355532
+        }
+      ]
+    }
+  }
+}
