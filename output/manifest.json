@@ -45845,6 +45845,19 @@
           ],
           "originalBytes": 9398156,
           "compressedBytes": 1355532
+        },
+        {
+          "label": "الفصل 2",
+          "num": "2",
+          "chNum": 2.0,
+          "sourceUrl": "https://starzmanga.net/manga/i-took-over-the-system-players/2/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-2/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-2/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__i-took-over-the-system-players/ch-2/003.webp"
+          ],
+          "originalBytes": 7690590,
+          "compressedBytes": 1106296
         }
       ]
     }
