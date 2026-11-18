@@ -744,6 +744,21 @@
           ],
           "originalBytes": 15383239,
           "compressedBytes": 1954888
+        },
+        {
+          "label": "الفصل 30",
+          "num": "30",
+          "chNum": 30.0,
+          "sourceUrl": "https://starzmanga.net/manga/keep-a-low-profile-sect-leaderd/30/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__keep-a-low-profile-sect-leaderd/ch-30/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__keep-a-low-profile-sect-leaderd/ch-30/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__keep-a-low-profile-sect-leaderd/ch-30/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__keep-a-low-profile-sect-leaderd/ch-30/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__keep-a-low-profile-sect-leaderd/ch-30/005.webp"
+          ],
+          "originalBytes": 11281344,
+          "compressedBytes": 1738972
         }
       ]
     }
