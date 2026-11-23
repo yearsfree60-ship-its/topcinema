@@ -1,0 +1,31 @@
+{
+  "manga": {
+    "starzmanga.net__great-doctor-ling-ran": {
+      "name": "great doctor ling ran",
+      "chapters": [
+        {
+          "label": "الفصل 1",
+          "num": "1",
+          "chNum": 1.0,
+          "sourceUrl": "https://starzmanga.net/manga/great-doctor-ling-ran/1/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/009.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/010.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/011.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__great-doctor-ling-ran/ch-1/012.webp"
+          ],
+          "originalBytes": 2690481,
+          "compressedBytes": 870444
+        }
+      ]
+    }
+  }
+}
