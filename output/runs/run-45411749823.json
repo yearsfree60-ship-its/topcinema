@@ -991,6 +991,24 @@
           ],
           "originalBytes": 12799249,
           "compressedBytes": 2158786
+        },
+        {
+          "label": "الفصل 42",
+          "num": "42",
+          "chNum": 42.0,
+          "sourceUrl": "https://starzmanga.net/manga/unexpected-romance/42/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__unexpected-romance/ch-42/008.webp"
+          ],
+          "originalBytes": 10519492,
+          "compressedBytes": 2018204
         }
       ]
     }
