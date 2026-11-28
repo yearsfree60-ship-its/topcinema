@@ -100,6 +100,25 @@
           ],
           "originalBytes": 42398379,
           "compressedBytes": 3710368
+        },
+        {
+          "label": "الفصل 5",
+          "num": "5",
+          "chNum": 5.0,
+          "sourceUrl": "https://starzmanga.net/manga/rise-of-the-fallen-kingdoms-third-prince/5/",
+          "images": [
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/001.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/002.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/003.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/004.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/005.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/006.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/007.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/008.webp",
+            "https://raw.githubusercontent.com/yearsfree60-ship-its/topcinema/output/output/starzmanga.net__rise-of-the-fallen-kingdoms-third-prince/ch-5/009.webp"
+          ],
+          "originalBytes": 19210359,
+          "compressedBytes": 3421236
         }
       ]
     }
